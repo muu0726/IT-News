@@ -199,8 +199,9 @@ def call_gemini_rest(prompt: str, api_key: str) -> dict | None:
                 continue
 
             else:
-                print(f"[ERROR] Gemini API returned {resp.status_code}: {resp.text[:200]}")
-                return None
+                err_msg = f"{resp.status_code} {resp.text[:150]}"
+                print(f"[ERROR] Gemini API returned {err_msg}")
+                return {"error": err_msg}
 
         except requests.RequestException as e:
             print(f"[ERROR] Gemini API request failed: {e}")
@@ -209,10 +210,10 @@ def call_gemini_rest(prompt: str, api_key: str) -> dict | None:
             continue
         except (KeyError, json.JSONDecodeError) as e:
             print(f"[ERROR] Gemini response parse error: {e}")
-            return None
+            return {"error": f"Parse Error: {e}"}
 
     print(f"[ERROR] Gemini API: all {GEMINI_MAX_RETRIES} retries exhausted")
-    return None
+    return {"error": "All retries exhausted"}
 
 
 def analyze_with_gemini(articles: list[dict], start_time: float = 0) -> list[dict]:
@@ -258,7 +259,7 @@ def analyze_with_gemini(articles: list[dict], start_time: float = 0) -> list[dic
 
         result = call_gemini_rest(prompt, api_key)
 
-        if result:
+        if result and not "error" in result:
             if result.get("title"):
                 art["title"] = result["title"]
             art["summary"] = result.get("summary", "")
@@ -266,11 +267,12 @@ def analyze_with_gemini(articles: list[dict], start_time: float = 0) -> list[dic
             art["score"] = int(result.get("score", 50))
             art["score_reason"] = result.get("score_reason", "")
         else:
+            err_detail = result["error"] if result else "解析エラー"
             art.update({
                 "summary": "(解析中にエラーが発生しました)",
                 "tags": [],
                 "score": 50,
-                "score_reason": "解析エラー",
+                "score_reason": f"解析エラー: {err_detail}",
             })
         analyzed.append(art)
 

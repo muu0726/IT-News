@@ -33,11 +33,17 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python gather.py
 
+      - name: fetch available models
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          curl -s "https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}" > models.json
+
       - name: 結果を自動コミット & プッシュ
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json archive/
+          git add data.json archive/ models.json
           # 変更がある場合のみコミット
           git diff --cached --quiet || git commit -m "chore: データ更新 $(date +'%Y-%m-%d %H:%M UTC')"
           git push
