@@ -49,8 +49,10 @@ GEMINI_API_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     "{model}:generateContent?key={key}"
 )
-GEMINI_SLEEP_SEC = 4
-GEMINI_MAX_RETRIES = 3
+GEMINI_SLEEP_SEC = 1
+GEMINI_MAX_RETRIES = 2
+GEMINI_BACKOFF_MAX_SEC = 10
+GLOBAL_TIMEOUT_SEC = 600  # 全体タイムアウト: 10分
 
 SCORE_HOT_BONUS = 20
 SCORE_MAX = 100
@@ -190,8 +192,8 @@ def call_gemini_rest(prompt: str, api_key: str) -> dict | None:
                 return json.loads(text)
 
             elif resp.status_code == 429:
-                # レート制限 -- 指数バックオフでリトライ
-                wait = GEMINI_SLEEP_SEC * (2 ** attempt)
+                # レート制限 -- 指数バックオフでリトライ（上限付き）
+                wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
                 print(f"[WARN] 429 Rate limited (attempt {attempt}/{GEMINI_MAX_RETRIES}), waiting {wait}s ...")
                 time.sleep(wait)
                 continue
@@ -213,8 +215,8 @@ def call_gemini_rest(prompt: str, api_key: str) -> dict | None:
     return None
 
 
-def analyze_with_gemini(articles: list[dict]) -> list[dict]:
-    """Gemini REST API で各記事を解析"""
+def analyze_with_gemini(articles: list[dict], start_time: float = 0) -> list[dict]:
+    """Gemini REST API で各記事を解析（全体タイムアウト対応）"""
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
         print("[WARN] GEMINI_API_KEY not set -- skipping Gemini analysis")
@@ -231,6 +233,21 @@ def analyze_with_gemini(articles: list[dict]) -> list[dict]:
 
     analyzed = []
     for i, art in enumerate(articles):
+        # 全体タイムアウトチェック
+        if start_time and (time.monotonic() - start_time) > GLOBAL_TIMEOUT_SEC:
+            remaining = len(articles) - i
+            print(f"[WARN] Global timeout ({GLOBAL_TIMEOUT_SEC}s) reached. "
+                  f"Skipping remaining {remaining} articles.")
+            for skip_art in articles[i:]:
+                skip_art.update({
+                    "summary": "(タイムアウトのため解析スキップ)",
+                    "tags": [],
+                    "score": 50,
+                    "score_reason": "タイムアウト",
+                })
+                analyzed.append(skip_art)
+            break
+
         title_short = art["title"][:60] if art.get("title") else "No Title"
         print(f"[INFO] Analyzing ({i + 1}/{len(articles)}): {title_short} ...")
         prompt = ANALYSIS_PROMPT.format(
@@ -392,9 +409,12 @@ def save_results(articles: list[dict]) -> None:
 # メイン
 # ---------------------------------------------------------------------------
 def main() -> None:
+    start_time = time.monotonic()
+
     print("=" * 60)
     print("IT Info Collector -- Start")
     print(f"Time: {datetime.now(JST).isoformat()}")
+    print(f"Global timeout: {GLOBAL_TIMEOUT_SEC}s ({GLOBAL_TIMEOUT_SEC // 60}min)")
     print("=" * 60)
 
     # 1. データ取得
@@ -407,8 +427,8 @@ def main() -> None:
         print("[WARN] No articles fetched -- exiting")
         return
 
-    # 2. Gemini 解析
-    all_articles = analyze_with_gemini(all_articles)
+    # 2. Gemini 解析（タイムアウト対応）
+    all_articles = analyze_with_gemini(all_articles, start_time)
 
     # 3. スコアリング (重複検知)
     all_articles = apply_hot_scoring(all_articles)
@@ -419,8 +439,9 @@ def main() -> None:
     # 5. Discord 通知
     send_discord_notification(all_articles)
 
-    print("\n" + "=" * 60)
-    print("IT Info Collector -- Complete")
+    elapsed = time.monotonic() - start_time
+    print(f"\n{'=' * 60}")
+    print(f"IT Info Collector -- Complete ({elapsed:.1f}s)")
     print("=" * 60)
 
 
