@@ -153,7 +153,8 @@ ANALYSIS_PROMPT = """\
 情報ソース: {source}
 
 以下の指示に厳密に従い、JSON形式で回答してください。
-- 英語の記事の場合は日本語に翻訳してください。
+- 英語の記事の場合は、タイトルと内容の両方を日本語に翻訳してください。
+- title: 記事のタイトル（英語の場合は日本語に自然に翻訳、日本語の場合はそのまま）
 - summary: 記事の内容を推測し、日本語で3行の要約を作成（改行は\\nで区切る）
 - tags: 技術タグを3つ（日本語または英語）のリスト
 - score: 重要度スコア（0-100の整数）。
@@ -161,7 +162,7 @@ ANALYSIS_PROMPT = """\
 - score_reason: スコアの理由を日本語で1文
 
 回答は以下のJSON形式のみ出力してください:
-{{"summary": "...", "tags": ["tag1", "tag2", "tag3"], "score": 75, "score_reason": "..."}}
+{{"title": "日本語タイトル", "summary": "...", "tags": ["tag1", "tag2", "tag3"], "score": 75, "score_reason": "..."}}
 """
 
 
@@ -200,6 +201,9 @@ def analyze_with_gemini(articles: list[dict]) -> list[dict]:
                 ),
             )
             result = json.loads(response.text)
+            # Geminiが翻訳したタイトルがあれば上書き
+            if result.get("title"):
+                art["title"] = result.get("title")
             art["summary"] = result.get("summary", "")
             art["tags"] = result.get("tags", [])
             art["score"] = int(result.get("score", 50))
