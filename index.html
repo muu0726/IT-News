@@ -252,6 +252,58 @@
     .active-tag-filter .clear-tag:hover { opacity: 1; }
 
     /* ============================================================
+       Source Tabs
+       ============================================================ */
+    .source-tabs {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid var(--border-color);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .source-tabs::-webkit-scrollbar { display: none; }
+    .source-tab {
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      font-family: var(--font-sans);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .source-tab:hover { color: var(--text-primary); background: var(--bg-hover); }
+    .source-tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+      font-weight: 600;
+    }
+    .source-tab .tab-count {
+      font-size: 11px;
+      padding: 1px 6px;
+      border-radius: 10px;
+      background: var(--bg-tertiary);
+      color: var(--text-tertiary);
+      font-weight: 500;
+    }
+    .source-tab.active .tab-count {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* ============================================================
        Stats Bar
        ============================================================ */
     .stats-bar {
@@ -463,6 +515,8 @@
       .card { padding: 12px 14px; }
       .card-title { font-size: 14px; }
       .toolbar { padding: 10px 16px; }
+      .source-tabs { padding: 0 16px; }
+      .source-tab { padding: 8px 12px; font-size: 12px; }
       .stats-bar { padding: 6px 16px 0; }
     }
 
@@ -511,6 +565,18 @@
   </div>
 
   <!-- ============================================================
+       Source Tabs
+       ============================================================ -->
+  <nav class="source-tabs" id="sourceTabs">
+    <button class="source-tab active" data-source="">📋 すべて <span class="tab-count" id="countAll">0</span></button>
+    <button class="source-tab" data-source="Hacker News">🟧 Hacker News <span class="tab-count" id="countHN">0</span></button>
+    <button class="source-tab" data-source="Zenn">📘 Zenn <span class="tab-count" id="countZenn">0</span></button>
+    <button class="source-tab" data-source="Qiita">🟢 Qiita <span class="tab-count" id="countQiita">0</span></button>
+    <button class="source-tab" data-source="Reddit">🔴 Reddit <span class="tab-count" id="countReddit">0</span></button>
+    <button class="source-tab" data-source="はてなブックマーク">🅱️ はてブ <span class="tab-count" id="countHatena">0</span></button>
+  </nav>
+
+  <!-- ============================================================
        Stats Bar
        ============================================================ -->
   <div class="stats-bar" id="statsBar">
@@ -551,6 +617,7 @@
       let allArticles = [];
       let currentSearch = '';
       let currentTagFilter = '';
+      let currentSourceFilter = '';
       let favFilterActive = false;
       let favorites = JSON.parse(localStorage.getItem('itinfohub_favorites') || '[]');
 
@@ -634,9 +701,32 @@
         }
       }
 
+      // ── Source Tab Counts ──
+      function updateSourceCounts() {
+        const counts = { '': allArticles.length };
+        const sourceMap = {
+          'Hacker News': 'countHN',
+          'Zenn': 'countZenn',
+          'Qiita': 'countQiita',
+          'Reddit': 'countReddit',
+          'はてなブックマーク': 'countHatena',
+        };
+        for (const src of Object.keys(sourceMap)) {
+          counts[src] = allArticles.filter(a => a.source === src).length;
+          const el = $('#' + sourceMap[src]);
+          if (el) el.textContent = counts[src];
+        }
+        $('#countAll').textContent = allArticles.length;
+      }
+
       // ── Render ──
       function renderArticles() {
         let filtered = allArticles;
+
+        // Source filter
+        if (currentSourceFilter) {
+          filtered = filtered.filter(a => a.source === currentSourceFilter);
+        }
 
         // Search
         if (currentSearch) {
@@ -758,6 +848,7 @@
         $('#statTime').textContent = data.generated_at
           ? new Date(data.generated_at).toLocaleString('ja-JP')
           : '—';
+        updateSourceCounts();
         renderArticles();
       }
 
@@ -782,6 +873,7 @@
           $('#statTime').textContent = data.generated_at
             ? new Date(data.generated_at).toLocaleString('ja-JP')
             : '—';
+          updateSourceCounts();
           renderArticles();
         }
       });
@@ -794,6 +886,16 @@
 
       clearTagBtn.addEventListener('click', () => {
         setTagFilter(currentTagFilter); // toggles off
+      });
+
+      // Source tabs
+      document.querySelectorAll('.source-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.source-tab').forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          currentSourceFilter = tab.dataset.source;
+          renderArticles();
+        });
       });
 
       // OS theme change listener
