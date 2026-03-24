@@ -3,7 +3,7 @@
  * Cache First + Network Fallback 戦略
  */
 
-const CACHE_NAME = 'itinfohub-v1';
+const CACHE_NAME = 'itinfohub-v2';
 
 const PRECACHE_URLS = [
   './',
