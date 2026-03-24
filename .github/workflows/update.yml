@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - name: チェックアウト
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v6
 
       - name: Python 3.12 セットアップ
-        uses: actions/setup-python@v5.6.0
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
           cache: 'pip'
