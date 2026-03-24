@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IT技術情報を自動収集・AI分析し、重要度スコア付きで一覧表示するインテリジェントニュースダッシュボード">
+  <title>IT Info Hub — AI技術ニュースダッシュボード</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#191919">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       CSS Variables — Light & Dark Theme
+       ============================================================ */
+    :root {
+      --font-sans: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f7f7f5;
+      --bg-tertiary: #f0f0ee;
+      --bg-card: #ffffff;
+      --bg-hover: rgba(55, 53, 47, 0.04);
+      --text-primary: #37352f;
+      --text-secondary: #6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --border-color: #e8e8e5;
+      --border-light: #f0f0ee;
+      --accent: #2eaadc;
+      --accent-hover: #2593be;
+      --gold: #d4a017;
+      --gold-bg: rgba(212, 160, 23, 0.08);
+      --gold-border: rgba(212, 160, 23, 0.5);
+      --silver: #8e8e93;
+      --silver-bg: rgba(142, 142, 147, 0.06);
+      --silver-border: rgba(142, 142, 147, 0.35);
+      --hot-color: #eb5757;
+      --hot-bg: rgba(235, 87, 87, 0.06);
+      --tag-bg: #f0f0ee;
+      --tag-text: #6b6b6b;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-lg: 0 4px 16px rgba(0,0,0,0.08);
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --favorite-color: #f5a623;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #191919;
+      --bg-secondary: #202020;
+      --bg-tertiary: #2d2d2d;
+      --bg-card: #252525;
+      --bg-hover: rgba(255, 255, 255, 0.04);
+      --text-primary: #e0e0e0;
+      --text-secondary: #9b9b9b;
+      --text-tertiary: #6b6b6b;
+      --border-color: #333333;
+      --border-light: #2d2d2d;
+      --accent: #529cca;
+      --accent-hover: #6db3dc;
+      --gold-bg: rgba(212, 160, 23, 0.12);
+      --gold-border: rgba(212, 160, 23, 0.6);
+      --silver-bg: rgba(142, 142, 147, 0.1);
+      --silver-border: rgba(142, 142, 147, 0.4);
+      --hot-bg: rgba(235, 87, 87, 0.1);
+      --tag-bg: #333333;
+      --tag-text: #9b9b9b;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+      --shadow-md: 0 2px 8px rgba(0,0,0,0.3);
+      --shadow-lg: 0 4px 16px rgba(0,0,0,0.4);
+    }
+
+    /* ============================================================
+       Base Reset & Layout
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* ============================================================
+       Header
+       ============================================================ */
+    .header {
+      background: var(--bg-primary);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.85);
+    }
+    [data-theme="dark"] .header {
+      background: rgba(25,25,25,0.88);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      white-space: nowrap;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+    .logo-icon { font-size: 24px; }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    /* ============================================================
+       Controls: Buttons, Selects, Inputs
+       ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: var(--bg-primary);
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn:hover { background: var(--bg-hover); color: var(--text-primary); }
+    .btn.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .btn.active:hover { background: var(--accent-hover); }
+
+    .btn-fav { font-size: 15px; }
+    .btn-fav.active {
+      background: var(--favorite-color);
+      border-color: var(--favorite-color);
+    }
+
+    .select-wrap select {
+      padding: 6px 28px 6px 10px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-size: 13px;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+    }
+
+    .search-box {
+      position: relative;
+      flex: 1;
+      min-width: 200px;
+      max-width: 380px;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 8px 14px 8px 36px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      font-size: 14px;
+      font-family: var(--font-sans);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(46,170,220,0.15);
+    }
+    .search-box::before {
+      content: '🔍';
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      pointer-events: none;
+    }
+
+    /* ============================================================
+       Toolbar (filters bar below header)
+       ============================================================ */
+    .toolbar {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .toolbar-label {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+    .active-tag-filter {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .active-tag-filter.visible { display: inline-flex; }
+    .active-tag-filter .clear-tag {
+      cursor: pointer;
+      opacity: 0.8;
+      font-size: 14px;
+    }
+    .active-tag-filter .clear-tag:hover { opacity: 1; }
+
+    /* ============================================================
+       Stats Bar
+       ============================================================ */
+    .stats-bar {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 8px 24px 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+    .stat-item { display: flex; align-items: center; gap: 4px; }
+
+    /* ============================================================
+       Main Content
+       ============================================================ */
+    .main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 24px 60px;
+    }
+
+    /* ============================================================
+       Article Card
+       ============================================================ */
+    .card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .card {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 18px;
+      background: var(--bg-primary);
+      border-radius: var(--radius-md);
+      border: 1px solid transparent;
+      transition: all 0.18s ease;
+      cursor: default;
+      position: relative;
+    }
+    .card:hover {
+      background: var(--bg-hover);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Score-based border */
+    .card.score-gold {
+      border-left: 3px solid var(--gold);
+      background: var(--gold-bg);
+    }
+    .card.score-silver {
+      border-left: 3px solid var(--silver);
+      background: var(--silver-bg);
+    }
+    .card.is-hot {
+      border-left-color: var(--hot-color);
+    }
+
+    /* Favorite star */
+    .card-fav {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: transform 0.2s, background 0.15s;
+      color: var(--text-tertiary);
+      user-select: none;
+    }
+    .card-fav:hover { background: var(--bg-hover); transform: scale(1.1); }
+    .card-fav.favorited { color: var(--favorite-color); }
+
+    /* Score badge */
+    .score-badge {
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      font-size: 15px;
+      font-weight: 700;
+      background: var(--bg-tertiary);
+      color: var(--text-secondary);
+    }
+    .score-badge.high { background: var(--gold); color: #fff; }
+    .score-badge.mid { background: var(--silver); color: #fff; }
+
+    .card-body { flex: 1; min-width: 0; }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .card-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .card-title a:hover { color: var(--accent); }
+    .hot-badge {
+      flex-shrink: 0;
+      font-size: 11px;
+      padding: 1px 6px;
+      background: var(--hot-bg);
+      color: var(--hot-color);
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .card-summary {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: var(--radius-sm);
+      font-size: 11px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tag:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .source-label {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      font-weight: 500;
+    }
+
+    .score-reason {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      font-style: italic;
+    }
+
+    /* ============================================================
+       Empty / Loading States
+       ============================================================ */
+    .state-msg {
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--text-tertiary);
+    }
+    .state-msg .icon { font-size: 48px; margin-bottom: 12px; }
+    .state-msg .title { font-size: 18px; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary); }
+    .state-msg .desc { font-size: 14px; }
+
+    .spinner {
+      width: 36px; height: 36px; margin: 0 auto 16px;
+      border: 3px solid var(--border-color);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ============================================================
+       Footer
+       ============================================================ */
+    .footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: var(--text-tertiary);
+      border-top: 1px solid var(--border-color);
+      margin-top: 40px;
+    }
+
+    /* ============================================================
+       Responsive
+       ============================================================ */
+    @media (max-width: 768px) {
+      .header-inner { flex-wrap: wrap; padding: 12px 16px; }
+      .search-box { min-width: 100%; order: 10; }
+      .main { padding: 10px 12px 40px; }
+      .card { padding: 12px 14px; }
+      .card-title { font-size: 14px; }
+      .toolbar { padding: 10px 16px; }
+      .stats-bar { padding: 6px 16px 0; }
+    }
+
+    /* ============================================================
+       Animations
+       ============================================================ */
+    .card { animation: fadeIn 0.35s ease forwards; opacity: 0; }
+    @keyframes fadeIn { to { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <!-- ============================================================
+       Header
+       ============================================================ -->
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="#">
+        <span class="logo-icon">📡</span>
+        <span>IT Info Hub</span>
+      </a>
+      <div class="header-controls">
+        <div class="select-wrap">
+          <select id="archiveSelect" title="アーカイブ選択">
+            <option value="">📅 最新データ</option>
+          </select>
+        </div>
+        <button class="btn btn-fav" id="favFilterBtn" title="お気に入りのみ表示">★ お気に入り</button>
+        <button class="btn" id="themeToggle" title="テーマ切替">🌙</button>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="記事を検索…" autocomplete="off">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       Toolbar (active filter info)
+       ============================================================ -->
+  <div class="toolbar">
+    <span class="toolbar-label">フィルタ:</span>
+    <div class="active-tag-filter" id="activeTagFilter">
+      <span id="activeTagName"></span>
+      <span class="clear-tag" id="clearTagBtn">✕</span>
+    </div>
+    <span id="noFilterLabel" style="font-size:12px;color:var(--text-tertiary);">なし</span>
+  </div>
+
+  <!-- ============================================================
+       Stats Bar
+       ============================================================ -->
+  <div class="stats-bar" id="statsBar">
+    <div class="stat-item">📊 <span id="statTotal">—</span> 件</div>
+    <div class="stat-item">🔥 <span id="statHot">—</span> HOT</div>
+    <div class="stat-item">⭐ <span id="statHighScore">—</span> 高スコア</div>
+    <div class="stat-item" style="margin-left:auto;">🕐 <span id="statTime">—</span></div>
+  </div>
+
+  <!-- ============================================================
+       Main Content
+       ============================================================ -->
+  <main class="main">
+    <div id="cardList" class="card-list">
+      <div class="state-msg" id="loadingState">
+        <div class="spinner"></div>
+        <div class="title">データを読み込み中…</div>
+        <div class="desc">少々お待ちください</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================================================
+       Footer
+       ============================================================ -->
+  <footer class="footer">
+    IT Info Hub — Powered by Gemini 1.5 Flash &amp; GitHub Actions
+  </footer>
+
+  <!-- ============================================================
+       JavaScript
+       ============================================================ -->
+  <script>
+    (() => {
+      'use strict';
+
+      // ── State ──
+      let allArticles = [];
+      let currentSearch = '';
+      let currentTagFilter = '';
+      let favFilterActive = false;
+      let favorites = JSON.parse(localStorage.getItem('itinfohub_favorites') || '[]');
+
+      // ── DOM Elements ──
+      const $ = (sel) => document.querySelector(sel);
+      const cardList = $('#cardList');
+      const searchInput = $('#searchInput');
+      const archiveSelect = $('#archiveSelect');
+      const themeToggle = $('#themeToggle');
+      const favFilterBtn = $('#favFilterBtn');
+      const activeTagFilter = $('#activeTagFilter');
+      const activeTagName = $('#activeTagName');
+      const clearTagBtn = $('#clearTagBtn');
+      const noFilterLabel = $('#noFilterLabel');
+
+      // ── Theme ──
+      function initTheme() {
+        const saved = localStorage.getItem('itinfohub_theme');
+        if (saved) {
+          document.documentElement.setAttribute('data-theme', saved);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        updateThemeIcon();
+      }
+
+      function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('itinfohub_theme', next);
+        updateThemeIcon();
+      }
+
+      function updateThemeIcon() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        themeToggle.textContent = isDark ? '☀️' : '🌙';
+      }
+
+      // ── Favorites ──
+      function isFavorited(url) {
+        return favorites.includes(url);
+      }
+
+      function toggleFavorite(url) {
+        const idx = favorites.indexOf(url);
+        if (idx === -1) {
+          favorites.push(url);
+        } else {
+          favorites.splice(idx, 1);
+        }
+        localStorage.setItem('itinfohub_favorites', JSON.stringify(favorites));
+      }
+
+      // ── Data Fetch ──
+      async function fetchData(file = 'data.json') {
+        try {
+          const resp = await fetch(file + '?t=' + Date.now());
+          if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+          const data = await resp.json();
+          return data;
+        } catch (e) {
+          console.error('Fetch error:', e);
+          return null;
+        }
+      }
+
+      async function loadArchiveIndex() {
+        try {
+          const resp = await fetch('archive/index.json?t=' + Date.now());
+          if (!resp.ok) return;
+          const files = await resp.json();
+          files.forEach(fn => {
+            const opt = document.createElement('option');
+            opt.value = 'archive/' + fn;
+            opt.textContent = '📂 ' + fn.replace('.json', '');
+            archiveSelect.appendChild(opt);
+          });
+        } catch (e) {
+          console.log('No archive index found');
+        }
+      }
+
+      // ── Render ──
+      function renderArticles() {
+        let filtered = allArticles;
+
+        // Search
+        if (currentSearch) {
+          const q = currentSearch.toLowerCase();
+          filtered = filtered.filter(a =>
+            (a.title || '').toLowerCase().includes(q) ||
+            (a.summary || '').toLowerCase().includes(q) ||
+            (a.tags || []).some(t => t.toLowerCase().includes(q))
+          );
+        }
+
+        // Tag filter
+        if (currentTagFilter) {
+          filtered = filtered.filter(a =>
+            (a.tags || []).some(t => t === currentTagFilter)
+          );
+        }
+
+        // Favorites filter
+        if (favFilterActive) {
+          filtered = filtered.filter(a => isFavorited(a.url));
+        }
+
+        // Update stats
+        $('#statTotal').textContent = filtered.length;
+        $('#statHot').textContent = filtered.filter(a => a.is_hot).length;
+        $('#statHighScore').textContent = filtered.filter(a => (a.score || 0) >= 80).length;
+
+        if (filtered.length === 0) {
+          cardList.innerHTML = `
+            <div class="state-msg">
+              <div class="icon">🔍</div>
+              <div class="title">該当する記事がありません</div>
+              <div class="desc">検索条件やフィルタを変更してみてください</div>
+            </div>`;
+          return;
+        }
+
+        cardList.innerHTML = filtered.map((art, i) => {
+          const score = art.score || 0;
+          const scoreClass = score >= 80 ? 'high' : score >= 60 ? 'mid' : '';
+          const cardClass = score >= 80 ? 'score-gold' : score >= 60 ? 'score-silver' : '';
+          const hotClass = art.is_hot ? ' is-hot' : '';
+          const favClass = isFavorited(art.url) ? ' favorited' : '';
+          const summaryHtml = (art.summary || '').replace(/\\n/g, '<br>');
+          const tagsHtml = (art.tags || [])
+            .map(t => `<span class="tag" data-tag="${t}">${t}</span>`)
+            .join('');
+
+          return `
+            <article class="card ${cardClass}${hotClass}" style="animation-delay: ${i * 0.04}s" data-url="${art.url || ''}">
+              <div class="card-fav${favClass}" data-fav-url="${art.url || ''}" title="お気に入り">
+                ${isFavorited(art.url) ? '★' : '☆'}
+              </div>
+              <div class="score-badge ${scoreClass}">${score}</div>
+              <div class="card-body">
+                <div class="card-title">
+                  ${art.is_hot ? '<span class="hot-badge">🔥 HOT</span>' : ''}
+                  <a href="${art.url || '#'}" target="_blank" rel="noopener">${art.title || 'No Title'}</a>
+                </div>
+                <div class="card-summary">${summaryHtml}</div>
+                <div class="card-meta">
+                  ${tagsHtml}
+                  <span class="source-label">📰 ${art.source || ''}</span>
+                  ${art.score_reason ? `<span class="score-reason">💡 ${art.score_reason}</span>` : ''}
+                </div>
+              </div>
+            </article>`;
+        }).join('');
+
+        // Attach tag click handlers
+        cardList.querySelectorAll('.tag').forEach(el => {
+          el.addEventListener('click', () => {
+            setTagFilter(el.dataset.tag);
+          });
+        });
+
+        // Attach favorite handlers
+        cardList.querySelectorAll('.card-fav').forEach(el => {
+          el.addEventListener('click', () => {
+            const url = el.dataset.favUrl;
+            toggleFavorite(url);
+            renderArticles();
+          });
+        });
+      }
+
+      function setTagFilter(tag) {
+        if (currentTagFilter === tag) {
+          currentTagFilter = '';
+          activeTagFilter.classList.remove('visible');
+          noFilterLabel.style.display = '';
+        } else {
+          currentTagFilter = tag;
+          activeTagName.textContent = tag;
+          activeTagFilter.classList.add('visible');
+          noFilterLabel.style.display = 'none';
+        }
+        renderArticles();
+      }
+
+      // ── Init ──
+      async function init() {
+        initTheme();
+        await loadArchiveIndex();
+
+        const data = await fetchData();
+        if (!data) {
+          cardList.innerHTML = `
+            <div class="state-msg">
+              <div class="icon">⚠️</div>
+              <div class="title">データの読み込みに失敗しました</div>
+              <div class="desc">data.json が見つかりません。GitHub Actionsが正常に実行されていることを確認してください。</div>
+            </div>`;
+          return;
+        }
+
+        allArticles = data.articles || [];
+        $('#statTime').textContent = data.generated_at
+          ? new Date(data.generated_at).toLocaleString('ja-JP')
+          : '—';
+        renderArticles();
+      }
+
+      // ── Event Listeners ──
+      themeToggle.addEventListener('click', toggleTheme);
+
+      searchInput.addEventListener('input', (e) => {
+        currentSearch = e.target.value.trim();
+        renderArticles();
+      });
+
+      archiveSelect.addEventListener('change', async (e) => {
+        const file = e.target.value || 'data.json';
+        cardList.innerHTML = `
+          <div class="state-msg">
+            <div class="spinner"></div>
+            <div class="title">読み込み中…</div>
+          </div>`;
+        const data = await fetchData(file);
+        if (data) {
+          allArticles = data.articles || [];
+          $('#statTime').textContent = data.generated_at
+            ? new Date(data.generated_at).toLocaleString('ja-JP')
+            : '—';
+          renderArticles();
+        }
+      });
+
+      favFilterBtn.addEventListener('click', () => {
+        favFilterActive = !favFilterActive;
+        favFilterBtn.classList.toggle('active', favFilterActive);
+        renderArticles();
+      });
+
+      clearTagBtn.addEventListener('click', () => {
+        setTagFilter(currentTagFilter); // toggles off
+      });
+
+      // OS theme change listener
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('itinfohub_theme')) {
+          document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+          updateThemeIcon();
+        }
+      });
+
+      init();
+
+      // ── Service Worker Registration ──
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').catch(err =>
+          console.log('SW registration failed:', err)
+        );
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+name: IT Info Collector - 定期実行
+
+on:
+  schedule:
+    # UTC 21:00 = JST 06:00 — 1日1回実行
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python 3.12 セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: 依存パッケージ インストール
+        run: pip install -r requirements.txt
+
+      - name: gather.py 実行
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python gather.py
+
+      - name: 結果を自動コミット & プッシュ
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json archive/
+          # 変更がある場合のみコミット
+          git diff --cached --quiet || git commit -m "chore: データ更新 $(date +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: 失敗時 Discord アラート
+        if: failure()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -n "$DISCORD_WEBHOOK_URL" ]; then
+            curl -H "Content-Type: application/json" \
+              -d "{\"username\": \"🚨 GitHub Actions\", \"content\": \"❌ **IT Info Collector** のワークフローが失敗しました。\\n🔗 [ログを確認](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})\"}" \
+              "$DISCORD_WEBHOOK_URL"
+          fi
