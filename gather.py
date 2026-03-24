@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 IT情報収集・分析・通知システム - バックエンドエンジン
-Hacker News API / RSS / Gemini (google-genai SDK) / Discord Webhook
+Hacker News API / RSS / Gemini REST API / Discord Webhook
 """
 
 import json
@@ -15,8 +15,6 @@ from urllib.parse import urlparse
 
 import feedparser
 import requests
-from google import genai
-from google.genai import types
 
 
 # ---------------------------------------------------------------------------
@@ -47,7 +45,12 @@ RSS_FEEDS = {
 RSS_FETCH_COUNT = 5
 
 GEMINI_MODEL = "gemini-1.5-flash"
+GEMINI_API_URL = (
+    "https://generativelanguage.googleapis.com/v1beta/models/"
+    "{model}:generateContent?key={key}"
+)
 GEMINI_SLEEP_SEC = 4
+GEMINI_MAX_RETRIES = 3
 
 SCORE_HOT_BONUS = 20
 SCORE_MAX = 100
@@ -143,7 +146,7 @@ def fetch_rss_feeds() -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Gemini 解析
+# Gemini 解析 (REST API 直接呼び出し)
 # ---------------------------------------------------------------------------
 ANALYSIS_PROMPT = """\
 あなたはIT技術ニュースの分析AIです。以下の記事情報を分析してください。
@@ -161,13 +164,57 @@ ANALYSIS_PROMPT = """\
   IT業界への影響度、技術的新規性、実用性を総合的に評価してください。
 - score_reason: スコアの理由を日本語で1文
 
-回答は以下のJSON形式のみ出力してください:
+回答は以下のJSON形式**のみ**出力してください:
 {{"title": "日本語タイトル", "summary": "...", "tags": ["tag1", "tag2", "tag3"], "score": 75, "score_reason": "..."}}
 """
 
 
+def call_gemini_rest(prompt: str, api_key: str) -> dict | None:
+    """Gemini REST API を直接呼び出し (リトライ付き)"""
+    url = GEMINI_API_URL.format(model=GEMINI_MODEL, key=api_key)
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "temperature": 0.2,
+        },
+    }
+
+    for attempt in range(1, GEMINI_MAX_RETRIES + 1):
+        try:
+            resp = requests.post(url, json=payload, timeout=30)
+
+            if resp.status_code == 200:
+                data = resp.json()
+                text = data["candidates"][0]["content"]["parts"][0]["text"]
+                return json.loads(text)
+
+            elif resp.status_code == 429:
+                # レート制限 -- 指数バックオフでリトライ
+                wait = GEMINI_SLEEP_SEC * (2 ** attempt)
+                print(f"[WARN] 429 Rate limited (attempt {attempt}/{GEMINI_MAX_RETRIES}), waiting {wait}s ...")
+                time.sleep(wait)
+                continue
+
+            else:
+                print(f"[ERROR] Gemini API returned {resp.status_code}: {resp.text[:200]}")
+                return None
+
+        except requests.RequestException as e:
+            print(f"[ERROR] Gemini API request failed: {e}")
+            if attempt < GEMINI_MAX_RETRIES:
+                time.sleep(GEMINI_SLEEP_SEC)
+            continue
+        except (KeyError, json.JSONDecodeError) as e:
+            print(f"[ERROR] Gemini response parse error: {e}")
+            return None
+
+    print(f"[ERROR] Gemini API: all {GEMINI_MAX_RETRIES} retries exhausted")
+    return None
+
+
 def analyze_with_gemini(articles: list[dict]) -> list[dict]:
-    """Gemini で各記事を解析 (新 google-genai SDK)"""
+    """Gemini REST API で各記事を解析"""
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
         print("[WARN] GEMINI_API_KEY not set -- skipping Gemini analysis")
@@ -180,7 +227,7 @@ def analyze_with_gemini(articles: list[dict]) -> list[dict]:
             })
         return articles
 
-    client = genai.Client(api_key=api_key)
+    print(f"[INFO] Using Gemini model: {GEMINI_MODEL} (REST API)")
 
     analyzed = []
     for i, art in enumerate(articles):
@@ -191,34 +238,26 @@ def analyze_with_gemini(articles: list[dict]) -> list[dict]:
             url=art["url"],
             source=art["source"],
         )
-        try:
-            response = client.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    temperature=0.2,
-                ),
-            )
-            result = json.loads(response.text)
-            # Geminiが翻訳したタイトルがあれば上書き
+
+        result = call_gemini_rest(prompt, api_key)
+
+        if result:
             if result.get("title"):
-                art["title"] = result.get("title")
+                art["title"] = result["title"]
             art["summary"] = result.get("summary", "")
             art["tags"] = result.get("tags", [])
             art["score"] = int(result.get("score", 50))
             art["score_reason"] = result.get("score_reason", "")
-        except Exception as e:
-            print(f"[ERROR] Gemini analysis failed: {e}")
+        else:
             art.update({
                 "summary": "(解析中にエラーが発生しました)",
                 "tags": [],
                 "score": 50,
-                "score_reason": f"解析エラー: {e}",
+                "score_reason": "解析エラー",
             })
         analyzed.append(art)
 
-        # レート制限対策
+        # レート制限対策: 次のリクエストまで待機
         if i < len(articles) - 1:
             time.sleep(GEMINI_SLEEP_SEC)
 
