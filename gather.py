@@ -44,7 +44,7 @@ RSS_FEEDS = {
 }
 RSS_FETCH_COUNT = 5
 
-GEMINI_MODEL = "gemini-3-flash"
+GEMINI_MODEL = "gemini-1.5-flash"
 GEMINI_API_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     "{model}:generateContent?key={key}"
