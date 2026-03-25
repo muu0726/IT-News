@@ -1,81 +1,146 @@
 {
-  "generated_at": "2026-03-25T23:21:39.821248+09:00",
+  "generated_at": "2026-03-25T23:30:56.628185+09:00",
   "total_count": 25,
   "articles": [
     {
-      "title": "Local LLM by Ente",
-      "url": "https://ente.com/blog/ensu/",
-      "source": "Hacker News",
-      "published": "2026-03-25T12:49:14+00:00",
-      "hn_score": 88,
-      "hn_comments": 30,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "Meta told to pay $375M for misleading users over child safety",
-      "url": "https://www.bbc.com/news/articles/cql75dn07n2o",
-      "source": "Hacker News",
-      "published": "2026-03-25T08:52:50+00:00",
-      "hn_score": 293,
-      "hn_comments": 160,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "My Astrophotography in the Movie Project Hail Mary",
-      "url": "https://rpastro.square.site/s/stories/phm",
-      "source": "Hacker News",
-      "published": "2026-03-22T14:28:06+00:00",
-      "hn_score": 98,
-      "hn_comments": 37,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "TurboQuant: Redefining AI efficiency with extreme compression",
+      "title": "TurboQuant: 極限の圧縮によるAI効率の再定義",
       "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
       "source": "Hacker News",
       "published": "2026-03-25T05:00:54+00:00",
-      "hn_score": 298,
-      "hn_comments": 84,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "hn_score": 300,
+      "hn_comments": 87,
+      "summary": "Google Researchが開発したTurboQuantは、大規模言語モデル（LLM）の重みを極限まで圧縮し、メモリ使用量を大幅に削減する技術です。\n精度を維持しながら4ビット以下の量子化を実現し、モバイルデバイスやエッジ環境での高度なAI実行を可能にします。\n独自のアルゴリズムにより推論速度を向上させ、ハードウェアリソースが限られた環境でのAI普及を加速させる期待があります。",
+      "tags": [
+        "量子化",
+        "LLM",
+        "Google Research"
+      ],
+      "score": 92,
+      "score_reason": "LLMの軽量化は実用化における最大の課題の一つであり、Googleによるこの技術革新はデバイス上でのAI実行を劇的に変える可能性があるためです。",
       "is_hot": false
     },
     {
-      "title": "VitruvianOS – Desktop Linux Inspired by the BeOS",
-      "url": "https://v-os.dev",
+      "title": "Meta、子供の安全に関する誤解を招く説明で3億7500万ドルの支払いを命じられる",
+      "url": "https://www.bbc.com/news/articles/cql75dn07n2o",
       "source": "Hacker News",
-      "published": "2026-03-25T03:17:06+00:00",
-      "hn_score": 229,
-      "hn_comments": 136,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "published": "2026-03-25T08:52:50+00:00",
+      "hn_score": 305,
+      "hn_comments": 167,
+      "summary": "Metaが子供の安全に関する誤解を招く主張を行ったとして、3億7500万ドルの支払いを命じられました。\nこの訴訟は、同社のプラットフォームにおける未成年者の保護機能やリスクに関する説明が不十分であったことを巡るものです。\n大手テック企業に対する規制強化の流れを象徴しており、今後のサービス運営に大きな影響を与える可能性があります。",
+      "tags": [
+        "Meta",
+        "プライバシー",
+        "規制"
+      ],
+      "score": 85,
+      "score_reason": "大手テック企業に対する巨額の制裁金は、今後のプラットフォーム運営における子供の安全保護と規制遵守の重要性を強く示唆しているため。",
       "is_hot": false
     },
     {
-      "title": "Microsoft Learn参照させるAgent Skillsあるじゃん！",
+      "title": "【図解】2層構造→MVC→レイヤード→ヘキサゴナル→クリーンアーキテクチャ：設計思想の進化を一気に理解する",
+      "url": "https://qiita.com/yut-nagase/items/21703af242e7ebfc37a9?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-03-22T18:36:28+09:00",
+      "summary": "ソフトウェア設計の歴史を、2層構造からクリーンアーキテクチャまでの変遷を追って図解で分かりやすく解説しています。\n各設計手法が登場した背景や解決しようとした課題、それぞれのメリット・デメリットを体系的に整理しています。\n現代の開発で重要視される「関心の分離」や「依存性の逆転」といった概念の重要性を再確認できる内容となっています。",
+      "tags": [
+        "ソフトウェアアーキテクチャ",
+        "クリーンアーキテクチャ",
+        "設計思想"
+      ],
+      "score": 85,
+      "score_reason": "複雑なアーキテクチャの進化を体系的かつ視覚的に解説しており、エンジニアの設計スキル向上に非常に有用な教育的価値の高い記事であるため。",
+      "is_hot": false
+    },
+    {
+      "title": "エンジニアなら自動化すべき「日常の定型タスク」10選まとめてみた【プロンプト付き】",
+      "url": "https://qiita.com/kamome_susume/items/33729fdbbd54cdaac60e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-03-23T22:42:05+09:00",
+      "summary": "エンジニアが日常的に行う10種類の定型タスクを、LLMを活用して自動化・効率化する方法を紹介している。\nコードレビュー、テストコード生成、ドキュメント作成、コミットメッセージ作成など、具体的で即戦力となるプロンプトが掲載されている。\n生成AIを単なるチャットツールとしてではなく、開発フローに組み込むための実用的なガイドとなっている。",
+      "tags": [
+        "AI活用",
+        "生産性向上",
+        "プロンプトエンジニアリング"
+      ],
+      "score": 85,
+      "score_reason": "生成AIを実務に即座に適用できる具体的なプロンプトが豊富に紹介されており、エンジニアの生産性向上に直結する極めて実用的な内容であるため。",
+      "is_hot": false
+    },
+    {
+      "title": "プロが毎日使ってるClaude Codeの隠しコマンド＆ショートカットキー",
+      "url": "https://qiita.com/Yuuto127/items/f6b1680ede88de76d372?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-03-24T17:36:54+09:00",
+      "summary": "Anthropicが提供するCLIツール「Claude Code」を効率的に使いこなすための実践的なテクニックを紹介しています。\n履歴の要約やコンテキストのクリアなど、開発効率を劇的に向上させる隠しコマンドやショートカットを詳しく解説しています。\nターミナル上でのAI対話型コーディングを最適化し、プロの開発者が日常的に活用できる実用的なノウハウが凝縮されています。",
+      "tags": [
+        "Claude Code",
+        "CLI",
+        "Anthropic"
+      ],
+      "score": 85,
+      "score_reason": "最新のAIコーディングツールの利便性を高める具体的なテクニックは、開発者の生産性向上に大きく寄与するため高評価としました。",
+      "is_hot": false
+    },
+    {
+      "title": "WikipediaがAI生成テキストを禁止、2つの例外を除外",
+      "url": "https://www.reddit.com/r/technology/comments/1s39x77/wikipedia_has_banned_aigenerated_text_with_two/",
+      "source": "Reddit",
+      "published": "2026-03-25T12:55:00+00:00",
+      "summary": "Wikipediaは情報の正確性と信頼性を維持するため、AIによって生成されたテキストの投稿を原則禁止する新方針を決定しました。\nただし、特定の編集支援ツールや人間による厳格な検証を伴う場合など、2つの例外的なケースのみ利用が認められます。\nこの決定は、AIによる誤情報の拡散を防ぎ、ボランティア編集者による品質管理の重要性を再確認するものです。",
+      "tags": [
+        "Wikipedia",
+        "生成AI",
+        "コンテンツモデレーション"
+      ],
+      "score": 85,
+      "score_reason": "インターネット最大の知識ベースであるWikipediaがAI利用を制限したことは、情報の信頼性確保とAI学習データの質に大きな影響を与えるためです。",
+      "is_hot": false
+    },
+    {
+      "title": "Neuralinkの患者、思考だけで「World of Warcraft」をプレイしていることを認める",
+      "url": "https://www.reddit.com/r/technology/comments/1s374db/neuralink_patient_confirms_hes_playing_world_of/",
+      "source": "Reddit",
+      "published": "2026-03-25T10:38:10+00:00",
+      "summary": "Neuralinkの脳埋め込み型デバイスを装着した患者が、思考のみで人気MMORPG「World of Warcraft」をプレイ可能になったことを報告した。\n従来の入力デバイスを使用せず、脳信号を直接カーソル操作やアクションに変換することで、複雑なゲーム操作を実現している。\nこの成果は、重度の身体障害を持つ人々がデジタル世界で高度なインタラクションを行うためのBCI技術の大きな進歩を示している。",
+      "tags": [
+        "Neuralink",
+        "BCI",
+        "アクセシビリティ"
+      ],
+      "score": 85,
+      "score_reason": "脳コンピュータインターフェースが、単純な操作を超えて複雑なリアルタイムゲームを制御できるレベルに達したことを実証しており、アクセシビリティ技術の飛躍的な進歩を示しているため。",
+      "is_hot": false
+    },
+    {
+      "title": "EnteによるローカルLLMアプリ「Ensu」",
+      "url": "https://ente.com/blog/ensu/",
+      "source": "Hacker News",
+      "published": "2026-03-25T12:49:14+00:00",
+      "hn_score": 97,
+      "hn_comments": 35,
+      "summary": "プライバシー重視のフォトストレージを提供するEnteが、ローカルで動作するLLMアプリ「Ensu」を発表しました。\nユーザーのデバイス上で直接AIモデルを実行することで、データの外部送信を一切行わずに高度なプライバシーを確保します。\nオープンソースとして公開されており、透明性の高いAI利用環境を構築することを目指しています。",
+      "tags": [
+        "Local LLM",
+        "Privacy",
+        "Open Source"
+      ],
+      "score": 82,
+      "score_reason": "プライバシー保護に定評のあるEnteがローカルAI市場に参入したことは、個人データの安全なAI活用を促進する重要なステップであるためです。",
+      "is_hot": false
+    },
+    {
+      "title": "Microsoft Learnを参照可能なAgent Skillsの活用",
       "url": "https://zenn.dev/headwaters/articles/d4417cd67f7935",
       "source": "Zenn",
       "published": "Tue, 24 Mar 2026 10:32:04 GMT",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "summary": "Microsoft Copilot Studioにおいて、Microsoft Learnのコンテンツを直接参照できるAgent Skills機能が紹介されています。\n公式ドキュメントをソースとして活用することで、最新かつ正確な技術情報に基づいた回答を生成するエージェントの構築が容易になります。\nRAG（検索拡張生成）の構築手間を省き、特定の技術領域に特化したAIアシスタントを迅速に開発できる点が大きなメリットです。",
+      "tags": [
+        "Copilot Studio",
+        "Microsoft Learn",
+        "Agent Skills"
+      ],
+      "score": 82,
+      "score_reason": "公式ドキュメントを即座に知識源として統合できる機能は、エンタープライズ向けAI開発の効率を劇的に向上させるため高く評価できます。",
       "is_hot": false
     },
     {
@@ -83,10 +148,138 @@
       "url": "https://zenn.dev/hinoguma/articles/23905889418405",
       "source": "Zenn",
       "published": "Tue, 24 Mar 2026 06:14:48 GMT",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "summary": "クリーンアーキテクチャの複雑さに起因する開発の停滞を解消するため、より直感的でシンプルな設計手法を提案しています。\nGo言語を用いた具体的な実装例を通じて、依存関係の整理やレイヤー構造の最適化について解説しています。\n過剰な抽象化を避け、保守性と開発スピードのバランスを取るための実践的なアプローチを提示しています。",
+      "tags": [
+        "Clean Architecture",
+        "Go",
+        "Software Architecture"
+      ],
+      "score": 82,
+      "score_reason": "多くの開発者が直面するクリーンアーキテクチャの形骸化という課題に対し、Go言語での具体的な解決策を提示しており実用性が非常に高いため。",
+      "is_hot": false
+    },
+    {
+      "title": "「何からやれば...」を卒業する。実務の解像度を劇的に高める3ステップ",
+      "url": "https://qiita.com/masa20057/items/c841d47f35e9c04c6bee?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-03-24T11:49:31+09:00",
+      "summary": "漠然としたタスクを前に立ち止まってしまう課題に対し、実務の解像度を高めるための具体的な3つのステップを解説しています。\nゴール（成果物）を明確にし、必要な要素を洗い出した上で、実行可能な順序に落とし込む手法を提示しています。\nエンジニアが実務で直務する「何から手をつければいいか分からない」状態を解消し、生産性を向上させるための実践的なガイドです。",
+      "tags": [
+        "生産性向上",
+        "タスク管理",
+        "マインドセット"
+      ],
+      "score": 82,
+      "score_reason": "技術そのものではないが、エンジニアのソフトスキルや業務効率化において非常に汎用性が高く、実用的な知見がまとまっているため。",
+      "is_hot": false
+    },
+    {
+      "title": "AIエージェント自作のための基礎知識 - 誰かの役に立てばいいブログ",
+      "url": "https://ymmt.hatenablog.com/entry/2026/03/24/221754",
+      "source": "はてなブックマーク",
+      "published": "2026-03-24T14:12:51Z",
+      "summary": "AIエージェントを自作するために必要なLLMの基礎知識や主要な設計パターンを体系的に解説しています。\n思考プロセスと行動を組み合わせる仕組みや、外部ツールとの連携方法など、実装に不可欠な要素に焦点を当てています。\n開発者が実際にエージェントを構築する際の具体的なステップや、直面しやすい課題への対策がまとめられています。",
+      "tags": [
+        "AIエージェント",
+        "LLM",
+        "ソフトウェア開発"
+      ],
+      "score": 82,
+      "score_reason": "AIエージェントの構築手法は現在の開発トレンドにおいて極めて重要であり、実用的な知識を体系的にまとめた内容は多くのエンジニアにとって価値が高い。",
+      "is_hot": false
+    },
+    {
+      "title": "【後編】「バグが出ました。」それは報告？相談？ ― 意識の違いでシゴデキエンジニアに！！ ―",
+      "url": "https://qiita.com/hitomin_poke/items/114b2fdc1b50e3676ba8?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-03-25T12:49:01+09:00",
+      "summary": "バグ発生時の「報告」と「相談」の定義を明確にし、状況に応じた適切なコミュニケーション手法を解説しています。\n事実を伝えるだけの報告と、解決策を仰ぐ相談を使い分けることで、チーム全体の開発効率を向上させる重要性を説いています。\n若手から中堅エンジニアに向けて、周囲から信頼される「仕事ができるエンジニア」になるための具体的なマインドセットを提示しています。",
+      "tags": [
+        "コミュニケーション",
+        "エンジニアリング",
+        "チーム開発"
+      ],
+      "score": 72,
+      "score_reason": "技術的なスキルだけでなく、円滑なチーム開発に不可欠なソフトスキルの重要性を具体的に解説しており、若手エンジニアの実践的な指針となるため。",
+      "is_hot": false
+    },
+    {
+      "title": "映画『プロジェクト・ヘイル・メアリー』に採用された私の天体写真",
+      "url": "https://rpastro.square.site/s/stories/phm",
+      "source": "Hacker News",
+      "published": "2026-03-22T14:28:06+00:00",
+      "hn_score": 110,
+      "hn_comments": 42,
+      "summary": "著者の天体写真がアンディ・ウィアー原作の映画『プロジェクト・ヘイル・メアリー』の劇中で使用されることになった経緯を紹介している。\n映画制作チームとのやり取りや、科学的正確さを重視する作品において自身の作品がどのように評価されたかが綴られている。\n趣味の天体写真がハリウッド映画という大規模なプロジェクトに貢献するまでの、技術的・個人的な道のりを描いた興味深い事例である。",
+      "tags": [
+        "天体写真",
+        "プロジェクト・ヘイル・メアリー",
+        "デジタルイメージング"
+      ],
+      "score": 65,
+      "score_reason": "IT技術の直接的な革新性は限定的だが、高度なデジタル撮影技術が映画制作における科学的リアリズムの向上に寄与した興味深い事例であるため。",
+      "is_hot": false
+    },
+    {
+      "title": "VitruvianOS – BeOSにインスパイアされたデスクトップLinux",
+      "url": "https://v-os.dev",
+      "source": "Hacker News",
+      "published": "2026-03-25T03:17:06+00:00",
+      "hn_score": 235,
+      "hn_comments": 138,
+      "summary": "BeOSのユーザーインターフェースと設計思想を現代のLinuxベースで再現することを目指した新しいデスクトップOSプロジェクト。\n独自のデスクトップ環境やファイルマネージャーを備え、軽量かつ直感的な操作感の提供に焦点を当てている。\n現在は開発の初期段階にあり、レトロな操作性と現代的なハードウェア互換性の両立を試みている。",
+      "tags": [
+        "Linux",
+        "BeOS",
+        "Desktop Environment"
+      ],
+      "score": 65,
+      "score_reason": "往年のBeOSファンには非常に魅力的だが、現時点ではニッチな趣味的プロジェクトの域を出ず、広範なIT業界への影響は限定的であるため。",
+      "is_hot": false
+    },
+    {
+      "title": "Wi-Fiルーターの寿命は最長で6年。エレコムが注意を呼びかけ",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2096230.html",
+      "source": "はてなブックマーク",
+      "published": "2026-03-25T09:37:43Z",
+      "summary": "エレコムがWi-Fiルーターの買い替え時期について、通信規格の進化やセキュリティ、ハードウェアの寿命の観点から最長6年を目安とするよう注意を喚起しています。\n通信速度の低下や接続の不安定化は、経年劣化や古い規格の使用が原因である可能性が高く、適切な時期の更新が推奨されています。\n特にセキュリティサポートの終了は重大なリスクとなるため、故障していなくても定期的な製品の見直しが重要であると強調されています。",
+      "tags": [
+        "Wi-Fi",
+        "ネットワーク機器",
+        "セキュリティ"
+      ],
+      "score": 65,
+      "score_reason": "一般ユーザーのネットワーク環境維持とセキュリティ意識向上に寄与する実用的な情報であるが、技術的な新規性は限定的であるため。",
+      "is_hot": false
+    },
+    {
+      "title": "初診でChatGPTとのやり取りを50P印刷して持参した患者の事例",
+      "url": "https://togetter.com/li/2678503",
+      "source": "はてなブックマーク",
+      "published": "2026-03-25T05:54:35Z",
+      "summary": "生成AIを利用して自己診断を行い、その膨大な対話ログを医師に提示して治療方針の検討を求める患者が現れた事例が話題となっている。\n医療現場におけるAI情報の持ち込みは、医師の業務負担増大や情報の信頼性、診断プロセスへの影響など新たな課題を浮き彫りにしている。\nAIが普及する中で、専門家とAI、そして一般ユーザーの適切な距離感やコミュニケーションのあり方が改めて問われている。",
+      "tags": [
+        "生成AI",
+        "医療IT",
+        "ChatGPT"
+      ],
+      "score": 65,
+      "score_reason": "AIの普及が専門職の現場にもたらす実務上の混乱と、AIリテラシーや専門家との関係性の変化という社会的課題を示唆しているため。",
+      "is_hot": false
+    },
+    {
+      "title": "【特集】 PCリサイクルマーク不要。古くなったPCと周辺機器/小型家電を無料で一括処分！",
+      "url": "https://pc.watch.impress.co.jp/docs/topic/feature/2095929.html",
+      "source": "はてなブックマーク",
+      "published": "2026-03-24T21:13:57Z",
+      "summary": "PCリサイクルマークの有無に関わらず、古くなったPCや周辺機器を無料で一括回収・処分できるサービスを紹介しています。\n国認定の事業者による宅配便回収を利用することで、データ消去の安全性と環境負荷の低減を両立しています。\n小型家電リサイクル法に基づき、PC本体を含む箱であれば周辺機器も同梱可能で、ユーザーの利便性が非常に高いです。",
+      "tags": [
+        "PCリサイクル",
+        "小型家電リサイクル法",
+        "環境技術"
+      ],
+      "score": 65,
+      "score_reason": "ユーザーの利便性が高く、IT機器の適切な廃棄と資源循環を促進する実用的なサービスであるため。",
       "is_hot": false
     },
     {
@@ -97,7 +290,7 @@
       "summary": "(解析中にエラーが発生しました)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "score_reason": "解析エラー: All retries exhausted",
       "is_hot": false
     },
     {
@@ -108,7 +301,7 @@
       "summary": "(解析中にエラーが発生しました)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "score_reason": "解析エラー: All retries exhausted",
       "is_hot": false
     },
     {
@@ -119,73 +312,7 @@
       "summary": "(解析中にエラーが発生しました)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "【図解】2層構造→MVC→レイヤード→ヘキサゴナル→クリーンアーキテクチャ：設計思想の進化を一気に理解する",
-      "url": "https://qiita.com/yut-nagase/items/21703af242e7ebfc37a9?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-03-22T18:36:28+09:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "【後編】「バグが出ました。」それは報告？相談？ ― 意識の違いでシゴデキエンジニアに！！ ―",
-      "url": "https://qiita.com/hitomin_poke/items/114b2fdc1b50e3676ba8?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-03-25T12:49:01+09:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "エンジニアなら自動化すべき「日常の定型タスク」10選まとめてみた【プロンプト付き】",
-      "url": "https://qiita.com/kamome_susume/items/33729fdbbd54cdaac60e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-03-23T22:42:05+09:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "「何からやれば...」を卒業する。実務の解像度を劇的に高める3ステップ",
-      "url": "https://qiita.com/masa20057/items/c841d47f35e9c04c6bee?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-03-24T11:49:31+09:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "プロが毎日使ってるClaude Codeの隠しコマンド＆ショートカットキー",
-      "url": "https://qiita.com/Yuuto127/items/f6b1680ede88de76d372?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-03-24T17:36:54+09:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "Wikipedia has banned AI-generated text, with two exceptions",
-      "url": "https://www.reddit.com/r/technology/comments/1s39x77/wikipedia_has_banned_aigenerated_text_with_two/",
-      "source": "Reddit",
-      "published": "2026-03-25T12:55:00+00:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "score_reason": "解析エラー: All retries exhausted",
       "is_hot": false
     },
     {
@@ -196,7 +323,7 @@
       "summary": "(解析中にエラーが発生しました)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "score_reason": "解析エラー: All retries exhausted",
       "is_hot": false
     },
     {
@@ -207,7 +334,7 @@
       "summary": "(解析中にエラーが発生しました)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "score_reason": "解析エラー: All retries exhausted",
       "is_hot": false
     },
     {
@@ -218,73 +345,22 @@
       "summary": "(解析中にエラーが発生しました)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "score_reason": "解析エラー: All retries exhausted",
       "is_hot": false
     },
     {
-      "title": "Neuralink patient confirms he's playing World of Warcraft with his mind",
-      "url": "https://www.reddit.com/r/technology/comments/1s374db/neuralink_patient_confirms_hes_playing_world_of/",
-      "source": "Reddit",
-      "published": "2026-03-25T10:38:10+00:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "ＮＨＫ世論調査“日本の侵略だった” 半数近く「わからない」 | NHKニュース",
+      "title": "ＮＨＫ世論調査“日本の侵略だった” 半数近く「わからない」",
       "url": "https://news.web.nhk/newsweb/na/nb-5090034529",
       "source": "はてなブックマーク",
       "published": "2026-03-25T07:12:44Z",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "Wi-Fiルーターの寿命は最長で6年。エレコムが注意を呼びかけ",
-      "url": "https://pc.watch.impress.co.jp/docs/news/2096230.html",
-      "source": "はてなブックマーク",
-      "published": "2026-03-25T09:37:43Z",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "初診でChatGPTとのやり取りを50Pくらい印刷して『次回まででいいのでこれを読み込んで私に最適な治療を考えてください』と言ってきた患者が来た",
-      "url": "https://togetter.com/li/2678503",
-      "source": "はてなブックマーク",
-      "published": "2026-03-25T05:54:35Z",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "【特集】 PCリサイクルマーク不要。古くなったPCと周辺機器/小型家電を無料で一括処分！",
-      "url": "https://pc.watch.impress.co.jp/docs/topic/feature/2095929.html",
-      "source": "はてなブックマーク",
-      "published": "2026-03-24T21:13:57Z",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
-      "is_hot": false
-    },
-    {
-      "title": "AIエージェント自作のための基礎知識 - 誰かの役に立てばいいブログ",
-      "url": "https://ymmt.hatenablog.com/entry/2026/03/24/221754",
-      "source": "はてなブックマーク",
-      "published": "2026-03-24T14:12:51Z",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. ",
+      "summary": "NHKが実施した戦後80年を前にした世論調査で、過去の戦争が日本の侵略だったかについて「わからない」が4割を超えたことが判明しました。\n特に若い世代で「わからない」と回答する割合が高く、歴史認識の継承や教育の現状が課題として浮き彫りになっています。\nこの調査結果は、日本社会における歴史的出来事への関心や理解度の変化を示す重要なデータとなっています。",
+      "tags": [
+        "データ分析",
+        "世論調査",
+        "メディア"
+      ],
+      "score": 5,
+      "score_reason": "IT技術や業界への直接的な関連性が極めて低く、社会・歴史に関する一般的なニュースであるため。",
       "is_hot": false
     }
   ]
