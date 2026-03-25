@@ -2,8 +2,8 @@ name: IT Info Collector - 定期実行
 
 on:
   schedule:
-    # UTC 21:00 = JST 06:00 — 1日1回実行
-    - cron: '0 21 * * *'
+    # UTC 22:00 = JST 07:00 — 1日1回実行
+    - cron: '0 22 * * *'
   workflow_dispatch:
 
 permissions:
