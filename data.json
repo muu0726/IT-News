@@ -1,84 +1,59 @@
 {
-  "generated_at": "2026-04-02T14:28:08.581707+09:00",
+  "generated_at": "2026-04-02T15:03:56.255814+09:00",
   "total_count": 24,
-  "success_count": 15,
-  "error_count": 9,
-  "gemini_model": "gemini-2.0-flash",
+  "success_count": 23,
+  "error_count": 1,
+  "gemini_model": "gemini-2.5-flash-lite",
   "articles": [
     {
-      "title": "Live: Artemis II Launch Day Updates",
+      "title": "ライブ：アルテミスII打ち上げ日アップデート",
       "url": "https://www.nasa.gov/blogs/missions/2026/04/01/live-artemis-ii-launch-day-updates/",
       "source": "Hacker News",
       "published": "2026-04-01T17:11:31+00:00",
-      "hn_score": 773,
-      "hn_comments": 699,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "hn_score": 792,
+      "hn_comments": 713,
+      "summary": "NASAはアルテミスIIミッションの打ち上げ日に関するライブアップデートを提供しています。\nこのミッションは、人類を再び月へと送るための重要な一歩です。\n最新情報や進捗状況が随時更新される予定です。",
+      "tags": [
+        "宇宙開発",
+        "NASA",
+        "Artemis"
+      ],
+      "score": 85,
+      "score_reason": "アルテミス計画は次世代の宇宙探査の基盤となり、IT技術の応用も期待されるため、重要度が高いと判断しました。",
       "is_hot": false
     },
     {
-      "title": "Subscription bombing and how to mitigate it",
-      "url": "https://bytemash.net/posts/subscription-bombing-your-signup-form-is-a-weapon/",
-      "source": "Hacker News",
-      "published": "2026-04-02T04:08:05+00:00",
-      "hn_score": 21,
-      "hn_comments": 8,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "is_hot": false
-    },
-    {
-      "title": "The Claude Code Leak",
+      "title": "クロードのコード漏洩",
       "url": "https://build.ms/2026/4/1/the-claude-code-leak/",
       "source": "Hacker News",
       "published": "2026-04-02T02:26:05+00:00",
-      "hn_score": 59,
-      "hn_comments": 19,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "hn_score": 79,
+      "hn_comments": 31,
+      "summary": "AnthropicのAIモデル「Claude」のソースコードがGitHub上でリークされたことが明らかになりました。\nこのリークは、AIモデルの安全性や倫理に関する懸念を高める可能性があります。\n詳細な分析と今後の対策が求められています。",
+      "tags": [
+        "AI",
+        "Claude",
+        "情報漏洩"
+      ],
+      "score": 85,
+      "score_reason": "AIモデルのソースコード漏洩は、AIの安全性、セキュリティ、および倫理的な議論に大きな影響を与える可能性があり、IT業界全体にとって非常に重要な出来事であるため。",
       "is_hot": false
     },
     {
-      "title": "Quantum computing bombshells that are not April Fools",
+      "title": "エイプリルフールではない量子コンピューティングの衝撃",
       "url": "https://scottaaronson.blog/?p=9665",
       "source": "Hacker News",
       "published": "2026-04-02T00:24:43+00:00",
-      "hn_score": 94,
-      "hn_comments": 25,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "is_hot": false
-    },
-    {
-      "title": "A new C++ back end for ocamlc",
-      "url": "https://github.com/ocaml/ocaml/pull/14701",
-      "source": "Hacker News",
-      "published": "2026-04-01T23:35:02+00:00",
-      "hn_score": 139,
-      "hn_comments": 8,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "is_hot": false
-    },
-    {
-      "title": "npm をセキュアな挙動にするために .npmrc に記述する最小設定",
-      "url": "https://zenn.dev/cycloud_blog/articles/5ce66daf4bd0cb",
-      "source": "Zenn",
-      "published": "Wed, 01 Apr 2026 07:30:48 GMT",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "hn_score": 103,
+      "hn_comments": 31,
+      "summary": "この記事は、量子コンピューティング分野における最近の進歩や発表について、エイプリルフールのジョークではない真剣な話題として解説しています。\n具体的な技術的ブレークスルーや、それらがもたらす可能性のある影響について触れられています。\n量子コンピューティングの現状と将来展望を理解する上で示唆に富む内容です。",
+      "tags": [
+        "量子コンピューティング",
+        "AI",
+        "テクノロジー"
+      ],
+      "score": 85,
+      "score_reason": "量子コンピューティングはIT業界の将来を大きく変える可能性を秘めており、その最新動向は非常に重要度が高いと判断しました。",
       "is_hot": false
     },
     {
@@ -86,21 +61,29 @@
       "url": "https://zenn.dev/loglass/articles/c2db7e85702571",
       "source": "Zenn",
       "published": "Wed, 01 Apr 2026 04:46:05 GMT",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "summary": "この記事は、データベースの主キーとしてUUIDv7が最適解となりうるかを探求しています。\nUUIDの歴史的変遷を辿りながら、UUIDv7の特性と利点を解説し、従来のID生成方法との比較を行っています。\n最終的に、UUIDv7が現代のアプリケーション開発において推奨される理由を考察しています。",
+      "tags": [
+        "UUIDv7",
+        "データベース",
+        "主キー"
+      ],
+      "score": 85,
+      "score_reason": "UUIDv7はデータベースの主キー生成における新しい標準となりうる可能性があり、その歴史的背景と実用性から高い重要度を持つと評価しました。",
       "is_hot": false
     },
     {
-      "title": "Claude Codeソースコード流出事件｜何が起きたか＆今すぐやるべき対策",
+      "title": "Claudeのソースコード流出事件：何が起きたか＆今すぐやるべき対策",
       "url": "https://zenn.dev/junko_ai/articles/3123badb508b5d",
       "source": "Zenn",
       "published": "Wed, 01 Apr 2026 02:48:18 GMT",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "summary": "AnthropicのAIモデル「Claude」のソースコードがGitHub上で流出した事件について解説しています。\n流出の原因や影響、そして開発者や企業が取るべき具体的な対策について説明しています。\nセキュリティ対策の重要性を再認識し、情報漏洩リスクを低減するための実践的なアドバイスを提供しています。",
+      "tags": [
+        "AI",
+        "セキュリティ",
+        "情報漏洩"
+      ],
+      "score": 85,
+      "score_reason": "AIモデルのソースコード流出は、技術的な機密性や競争力に大きな影響を与える可能性があり、セキュリティ対策の重要性を広く啓発する点で重要度が高いと評価しました。",
       "is_hot": false
     },
     {
@@ -108,10 +91,14 @@
       "url": "https://zenn.dev/sbk0716/books/70b401fac4005d",
       "source": "Zenn",
       "published": "Tue, 31 Mar 2026 18:54:31 GMT",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "summary": "RustのWebフレームワークであるAxumを用いたAPI開発に特化した書籍の紹介です。\nAPI開発でよくあるユースケースを逆引き形式で解説し、実践的なパターンを学べます。\nRustでのWeb API開発を効率的に進めたい開発者におすすめの一冊です。",
+      "tags": [
+        "Rust",
+        "Axum",
+        "Web API"
+      ],
+      "score": 85,
+      "score_reason": "RustのWeb API開発における実践的なパターンを体系的に学べるため、IT業界への影響度と実用性が高いと評価しました。",
       "is_hot": false
     },
     {
@@ -119,43 +106,108 @@
       "url": "https://zenn.dev/dely_jp/articles/supply-chain-kowai",
       "source": "Zenn",
       "published": "Tue, 31 Mar 2026 08:41:07 GMT",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
+      "summary": "この記事は、ソフトウェア開発におけるサプライチェーン攻撃のリスクと、その対策について解説しています。\n開発環境や依存関係の管理、脆弱性スキャンの実施など、最低限実施すべきセキュリティ対策を具体的に提示しています。\n安全な開発プロセスを構築し、攻撃のリスクを低減するための実践的なガイドラインを提供しています。",
+      "tags": [
+        "サプライチェーン攻撃",
+        "セキュリティ",
+        "ソフトウェア開発"
+      ],
+      "score": 85,
+      "score_reason": "サプライチェーン攻撃は現代のソフトウェア開発において非常に重要なリスクであり、この記事は実用的かつ具体的な対策を提示しているため、IT業界への影響度と実用性が高いと評価できます。",
       "is_hot": false
     },
     {
-      "title": "【前編】9割の新人エンジニアがやっている 「失礼しました」の落とし穴",
-      "url": "https://qiita.com/hitomin_poke/items/094edffe1d7961bb6395?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-04-01T13:18:17+09:00",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
-      "is_hot": false
-    },
-    {
-      "title": "【35歳未経験でも理解できた】「現代の技術の学び方」",
-      "url": "https://qiita.com/wata-sho/items/ff44f2069e3331ab9c0f?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-04-01T10:26:15+09:00",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
-      "is_hot": false
-    },
-    {
-      "title": "Claude Code の流出したソースコードを GitHub に公開した人が著作権違反を回避した方法がヤバすぎ",
+      "title": "Claude Codeの流出ソースコードをGitHubに公開した人物が著作権侵害を回避した方法が驚異的",
       "url": "https://qiita.com/LostMyCode/items/a867e1954b80e78cf146?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
       "published": "2026-04-01T07:50:49+09:00",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
+      "summary": "AnthropicのAIモデル「Claude Code」のソースコードがGitHubに流出し、その公開者が著作権侵害を回避した手法が注目を集めています。\n公開者は、流出したコードを直接公開するのではなく、コードの「構造」や「ロジック」を模倣した新しいコードを作成し、それを公開することで著作権問題を回避しようとしました。\nこの手法は、AIモデルの学習データや生成コードに関する著作権やライセンスの問題について、新たな議論を提起する可能性があります。",
+      "tags": [
+        "AI",
+        "著作権",
+        "GitHub"
+      ],
+      "score": 85,
+      "score_reason": "AIモデルのソースコード流出とその著作権回避手法は、AI開発と知的財産権の境界線に関する重要な論点であり、IT業界全体に影響を与える可能性があるため。",
+      "is_hot": false
+    },
+    {
+      "title": "AIの年齢確認義務化を推進するグループ、実はOpenAIが裏で支援していたことが判明",
+      "url": "https://www.reddit.com/r/technology/comments/1sa2x7w/group_pushing_age_verification_requirements_for/",
+      "source": "Reddit",
+      "published": "2026-04-02T00:52:57+00:00",
+      "summary": "AIの年齢確認義務化を推進するロビー活動を行っていたグループが、その資金源の一部をOpenAIから受けていたことが明らかになりました。\nこの事実は、AI規制に関する議論に新たな複雑さをもたらし、OpenAIの意図や影響力について疑問を投げかけています。\nAIの普及と安全性のバランスを取る上での、業界内部の力学が浮き彫りになっています。",
+      "tags": [
+        "AI",
+        "OpenAI",
+        "規制"
+      ],
+      "score": 85,
+      "score_reason": "AIの年齢確認という重要な規制に関する動きであり、その背後に大手企業であるOpenAIが関与していたという事実は、AI業界全体に大きな影響を与える可能性があるため。",
+      "is_hot": false
+    },
+    {
+      "title": "Nvidiaの中国市場シェアが60%未満に低下 — 中国製チップメーカーが165万個のAI GPUを出荷、政府はデータセンターに国内チップの使用を推進",
+      "url": "https://www.reddit.com/r/technology/comments/1sa3549/nvidia_market_share_in_china_falls_to_less_than/",
+      "source": "Reddit",
+      "published": "2026-04-02T01:02:36+00:00",
+      "summary": "Nvidiaの中国におけるAI GPU市場シェアが60%を下回ったことが明らかになりました。\nこれは、中国政府が国内製チップの使用を推進する政策の影響を受けており、中国のチップメーカーが165万個のAI GPUを出荷したことが背景にあります。\nこの動きは、中国のAI産業におけるサプライチェーンの多様化と、Nvidiaへの依存度低下を示唆しています。",
+      "tags": [
+        "AI GPU",
+        "中国市場",
+        "半導体"
+      ],
+      "score": 85,
+      "score_reason": "中国市場におけるNvidiaのシェア低下は、地政学的な要因と国内産業育成政策がグローバルな半導体市場に与える影響を示す重要な指標であり、IT業界全体に大きな影響を与える可能性があります。",
+      "is_hot": false
+    },
+    {
+      "title": "ウェブブラウザ単体でOCR処理とAI校正まで可能な「NDLOCR-Lite Web AI」レビュー、国立国会図書館のNDLOCR-Liteを簡単に利用可能に",
+      "url": "https://gigazine.net/news/20260401-ndlocr-lite-web-ai/",
+      "source": "はてなブックマーク",
+      "published": "2026-04-01T17:41:37Z",
+      "summary": "国立国会図書館が開発したOCRシステム「NDLOCR-Lite」をウェブブラウザ上で手軽に利用できるウェブアプリ「NDLOCR-Lite Web AI」が登場しました。\nこのアプリは、OCR処理だけでなく、AIによる誤字脱字の校正機能も備えており、ブラウザ単体で完結します。\nこれにより、専門知識がないユーザーでも簡単にOCR処理と校正を行えるようになり、デジタルアーカイブの活用が促進される可能性があります。",
+      "tags": [
+        "OCR",
+        "AI",
+        "Webアプリ"
+      ],
+      "score": 85,
+      "score_reason": "ブラウザ単体でOCRとAI校正まで可能な手軽さと、国立国会図書館の技術を一般利用可能にした点が革新的であり、学術研究や文化財のデジタル化に大きく貢献する可能性があるため。",
+      "is_hot": false
+    },
+    {
+      "title": "サブスクリプションボミングとその対策",
+      "url": "https://bytemash.net/posts/subscription-bombing-your-signup-form-is-a-weapon/",
+      "source": "Hacker News",
+      "published": "2026-04-02T04:08:05+00:00",
+      "hn_score": 46,
+      "hn_comments": 33,
+      "summary": "サブスクリプションボミングは、攻撃者が大量のメールアドレスを登録することで、ターゲットのメールボックスをスパムで溢れさせる攻撃手法です。\nこの攻撃は、サインアップフォームの脆弱性を悪用し、サービス提供者やユーザーに混乱とコスト増をもたらします。\n対策としては、CAPTCHAの導入、レート制限、不正な登録の検出とブロックなどが有効です。",
+      "tags": [
+        "セキュリティ",
+        "サブスクリプションボミング",
+        "Webセキュリティ"
+      ],
+      "score": 78,
+      "score_reason": "サブスクリプションボミングは、ウェブサイトのサインアップフォームを悪用する現実的な脅威であり、その対策は多くのサービス提供者にとって重要であるため。",
+      "is_hot": false
+    },
+    {
+      "title": "ocamlcのための新しいC++バックエンド",
+      "url": "https://github.com/ocaml/ocaml/pull/14701",
+      "source": "Hacker News",
+      "published": "2026-04-01T23:35:02+00:00",
+      "hn_score": 146,
+      "hn_comments": 10,
+      "summary": "OCamlコンパイラ（ocamlc）に、C++をバックエンドとして利用する新しい実装が提案されています。\nこれにより、OCamlコードの生成効率や保守性が向上する可能性があります。\n既存のCバックエンドからの移行や、C++エコシステムとの連携強化が期待されます。",
+      "tags": [
+        "OCaml",
+        "C++",
+        "Compiler"
+      ],
+      "score": 78,
+      "score_reason": "OCamlコンパイラのバックエンド刷新は、言語のパフォーマンスや開発体験に大きな影響を与える可能性があり、技術的な新規性も高いと評価できます。",
       "is_hot": false
     },
     {
@@ -163,98 +215,14 @@
       "url": "https://qiita.com/nogataka/items/d6c83ea50b82e1c2602c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
       "published": "2026-03-31T09:18:35+09:00",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
-      "is_hot": false
-    },
-    {
-      "title": "未経験からITエンジニアを目指しているけど、内定先を決めきれない人へ。後悔しにくい考え方を整理してみる",
-      "url": "https://qiita.com/prum_iha/items/1592158be6ca86837429?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-03-31T16:31:52+09:00",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
-      "is_hot": false
-    },
-    {
-      "title": "U.S President defunding of NPR and PBS blocked by judge, but damage is already done | Judge invalidates U.S President executive order, but Congress also cut off all funding.",
-      "url": "https://www.reddit.com/r/technology/comments/1sa1yv1/us_president_defunding_of_npr_and_pbs_blocked_by/",
-      "source": "Reddit",
-      "published": "2026-04-02T00:10:21+00:00",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
-      "is_hot": false
-    },
-    {
-      "title": "Group Pushing Age Verification Requirements for AI Turns Out to Be Sneakily Backed by OpenAI",
-      "url": "https://www.reddit.com/r/technology/comments/1sa2x7w/group_pushing_age_verification_requirements_for/",
-      "source": "Reddit",
-      "published": "2026-04-02T00:52:57+00:00",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
-      "is_hot": false
-    },
-    {
-      "title": "Gabe Newell \"stepped back\" from making games at Valve after Portal 2 because everyone kept agreeing with him when he wanted \"to be part of the team and come up with ideas\"",
-      "url": "https://www.reddit.com/r/technology/comments/1s9mxz1/gabe_newell_stepped_back_from_making_games_at/",
-      "source": "Reddit",
-      "published": "2026-04-01T14:58:08+00:00",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
-      "is_hot": false
-    },
-    {
-      "title": "US patent office revokes Nintendo’s patent on summoning characters to make them battle | VGC",
-      "url": "https://www.reddit.com/r/technology/comments/1s9k5l5/us_patent_office_revokes_nintendos_patent_on/",
-      "source": "Reddit",
-      "published": "2026-04-01T13:11:32+00:00",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
-      "is_hot": false
-    },
-    {
-      "title": "Nvidia market share in China falls to less than 60% — Chinese chip makers deliver 1.65 million AI GPUs as the government pushes data centers to use domestic chips",
-      "url": "https://www.reddit.com/r/technology/comments/1sa3549/nvidia_market_share_in_china_falls_to_less_than/",
-      "source": "Reddit",
-      "published": "2026-04-02T01:02:36+00:00",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
-      "is_hot": false
-    },
-    {
-      "title": "ウェブブラウザ単体でOCR処理を実行してAIで校正までできる「NDLOCR-Lite Web AI」レビュー、国立国会図書館のNDLOCR-Liteを簡単に利用可能にしたウェブアプリ",
-      "url": "https://gigazine.net/news/20260401-ndlocr-lite-web-ai/",
-      "source": "はてなブックマーク",
-      "published": "2026-04-01T17:41:37Z",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
-      "is_hot": false
-    },
-    {
-      "title": "ジョブズからクックになって15年。Appleが得たもの、失ったもの",
-      "url": "https://www.gizmodo.jp/2026/04/apple50th-timcook.html",
-      "source": "はてなブックマーク",
-      "published": "2026-04-01T03:27:09Z",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
+      "summary": "この記事は、Claudeのプロンプト設定において、長文よりも短く的確な指示が効果的であることを解説しています。\n公式ドキュメントを紐解きながら、具体的な設定項目とその最適化手法を提示し、より良いAI応答を引き出すための実践的なノウハウを提供します。\nAIとの対話におけるプロンプトエンジニアリングの重要性と、その効率的なアプローチを学ぶことができます。",
+      "tags": [
+        "Claude",
+        "プロンプトエンジニアリング",
+        "AI設定"
+      ],
+      "score": 78,
+      "score_reason": "Claudeのプロンプト最適化に関する実践的なノウハウが、公式仕様に基づいて解説されており、AI活用における実用性が高いと評価できます。",
       "is_hot": false
     },
     {
@@ -262,21 +230,145 @@
       "url": "https://zenn.dev/bookamasedo/articles/c264a26dafe55b",
       "source": "はてなブックマーク",
       "published": "2026-04-02T00:37:06Z",
-      "summary": "(タイムアウトのため解析スキップ)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "タイムアウト",
+      "summary": "この記事は、AIコーディングアシスタントであるClaude Codeに仕様書全体を一度に渡すのではなく、具体的な要件を段階的に伝えることの重要性を説いています。\nAIに仕様書全体を渡すと、意図しないコードが生成されたり、重要な部分が見落とされたりするリスクがあるため、AIの能力を最大限に引き出すためには、明確で集約された指示が不可欠です。\nAIとの協業においては、AIを単なるツールとしてではなく、共同作業者として捉え、効果的なコミュニケーション戦略を構築することが成功の鍵となります。",
+      "tags": [
+        "AI",
+        "プログラミング",
+        "Claude Code"
+      ],
+      "score": 78,
+      "score_reason": "AIコーディングアシスタントの効果的な活用法に関する実践的なアドバイスであり、開発者の生産性向上に直結するため、IT業界への影響度が高いと評価しました。",
       "is_hot": false
     },
     {
-      "title": "Google検索のURLに「&udm=14」を挿入して「AIによる概要」や「注目されている商品」などを非表示にしてシンプルなウェブ検索が可能になるFirefox拡張機能「&udm=14」",
-      "url": "https://gigazine.net/news/20260401-and-udm-14/",
+      "title": "npm をセキュアな挙動にするために .npmrc に記述する最小設定",
+      "url": "https://zenn.dev/cycloud_blog/articles/5ce66daf4bd0cb",
+      "source": "Zenn",
+      "published": "Wed, 01 Apr 2026 07:30:48 GMT",
+      "summary": "この記事は、npm のセキュリティを向上させるための .npmrc ファイルに記述すべき最小限の設定について解説しています。\n具体的には、依存関係の検証やレジストリの設定など、安全なパッケージ管理を行うための基本的な設定項目を紹介しています。\nこれにより、開発者はよりセキュアな開発環境を構築し、潜在的なリスクを低減することができます。",
+      "tags": [
+        "npm",
+        "セキュリティ",
+        ".npmrc"
+      ],
+      "score": 70,
+      "score_reason": "npm のセキュリティ設定に関する実用的な情報であり、多くの開発者にとって役立つため、一定の重要度があります。",
+      "is_hot": false
+    },
+    {
+      "title": "【35歳未経験でも理解できた】「現代の技術の学び方」",
+      "url": "https://qiita.com/wata-sho/items/ff44f2069e3331ab9c0f?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-04-01T10:26:15+09:00",
+      "summary": "この記事は、35歳未経験者でも理解できる現代の技術学習法について解説しています。\n効果的な学習リソースの活用法や、実践的なスキル習得のステップが紹介されています。\n未経験からIT分野へのキャリアチェンジを目指す人にとって、具体的な指針となる内容です。",
+      "tags": [
+        "学習法",
+        "IT",
+        "キャリアチェンジ"
+      ],
+      "score": 70,
+      "score_reason": "未経験者向けの学習法に焦点を当てており、IT業界への参入障壁を下げる可能性を秘めているため。",
+      "is_hot": false
+    },
+    {
+      "title": "未経験からITエンジニアを目指しているけど、内定先を決めきれない人へ。後悔しにくい考え方を整理してみる",
+      "url": "https://qiita.com/prum_iha/items/1592158be6ca86837429?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-03-31T16:31:52+09:00",
+      "summary": "未経験からITエンジニアを目指す人が内定先を決めきれない状況に対し、後悔しにくい考え方を提示する記事です。\n複数の内定を得た際の判断基準や、長期的なキャリアを見据えた選択の重要性を解説しています。\n自身の価値観や将来像と照らし合わせながら、納得のいく選択をするためのヒントを提供します。",
+      "tags": [
+        "ITエンジニア",
+        "キャリア",
+        "就職活動"
+      ],
+      "score": 70,
+      "score_reason": "未経験者がITエンジニアとしてのキャリアをスタートさせる際の意思決定に役立つ実践的なアドバイスであり、多くの求職者にとって有益な情報源となるため。",
+      "is_hot": false
+    },
+    {
+      "title": "Adobe CCがhostsファイルを無断で変更か。批判の声相次ぐ",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2098494.html",
       "source": "はてなブックマーク",
-      "published": "2026-04-01T16:13:43Z",
-      "summary": "(タイムアウトのため解析スキップ)",
+      "published": "2026-04-02T03:48:08Z",
+      "summary": "Adobe Creative Cloudのデスクトップアプリが、ユーザーの許可なくhostsファイルを変更している可能性が指摘されています。\nこれにより、一部のユーザーが意図しないネットワーク接続やセキュリティリスクに直面する恐れがあります。\nAdobe側の公式な説明や対応が待たれる状況です。",
+      "tags": [
+        "Adobe Creative Cloud",
+        "hostsファイル",
+        "セキュリティ"
+      ],
+      "score": 70,
+      "score_reason": "Adobe製品の信頼性に関わる問題であり、多くのユーザーに影響を与える可能性があるため、一定の重要度があります。",
+      "is_hot": false
+    },
+    {
+      "title": "【前編】9割の新人エンジニアがやっている 「失礼しました」の落とし穴",
+      "url": "https://qiita.com/hitomin_poke/items/094edffe1d7961bb6395?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-04-01T13:18:17+09:00",
+      "summary": "この記事は、新人エンジニアがよく使いがちな「失礼しました」という言葉の落とし穴について解説しています。\nこの言葉は、相手に非がある場合でも自分の非を認めることになり、信頼を損なう可能性があることを指摘しています。\n代替表現の提案や、状況に応じた適切なコミュニケーション方法について触れています。",
+      "tags": [
+        "新人エンジニア",
+        "コミュニケーション",
+        "ビジネスマナー"
+      ],
+      "score": 65,
+      "score_reason": "新人エンジニアの育成やチーム内の円滑なコミュニケーションに役立つ実践的な内容であり、多くの現場で応用可能であるため。",
+      "is_hot": false
+    },
+    {
+      "title": "米大統領によるNPRとPBSの資金削減、裁判官により阻止されるも既に影響は出ている | 裁判官が米大統領の行政命令を無効化、しかし議会も全ての資金をカット",
+      "url": "https://www.reddit.com/r/technology/comments/1sa1yv1/us_president_defunding_of_npr_and_pbs_blocked_by/",
+      "source": "Reddit",
+      "published": "2026-04-02T00:10:21+00:00",
+      "summary": "米大統領によるNPRとPBSへの資金削減を目的とした行政命令が裁判官によって無効化されました。\nしかし、この決定は既に両機関に影響を与えており、議会も既に全ての資金をカットしていました。\nこの一件は、公的資金による報道機関への政治的干渉の可能性を示唆しています。",
+      "tags": [
+        "政治",
+        "メディア",
+        "公共放送"
+      ],
+      "score": 65,
+      "score_reason": "公的資金による報道機関への政治的影響という点で、IT技術そのものの新規性や実用性よりも、社会的な影響が大きいと判断しました。",
+      "is_hot": false
+    },
+    {
+      "title": "Gabe Newell、Portal 2以降Valveでのゲーム制作から「距離を置いた」理由を語る - 皆が彼の意見に同意しすぎたため",
+      "url": "https://www.reddit.com/r/technology/comments/1s9mxz1/gabe_newell_stepped_back_from_making_games_at/",
+      "source": "Reddit",
+      "published": "2026-04-01T14:58:08+00:00",
+      "summary": "Valveの共同創設者であるGabe Newell氏は、Portal 2の制作後、ゲーム開発の最前線から退いたことを明かしました。\nその理由は、チームの一員としてアイデアを出し合いたいと考えていたにも関わらず、皆が彼の意見に賛成しすぎたため、創造的なプロセスが阻害されたと感じたからです。\nこの発言は、開発現場におけるリーダーシップとチームワークのあり方について示唆を与えています。",
+      "tags": [
+        "ゲーム開発",
+        "Valve",
+        "リーダーシップ"
+      ],
+      "score": 65,
+      "score_reason": "ゲーム業界の著名人の開発スタイルに関する内情であり、直接的な技術的新規性や広範なIT業界への影響は限定的ですが、開発文化への示唆はあります。",
+      "is_hot": false
+    },
+    {
+      "title": "米国特許庁、任天堂のキャラクター召喚対戦特許を無効に",
+      "url": "https://www.reddit.com/r/technology/comments/1s9k5l5/us_patent_office_revokes_nintendos_patent_on/",
+      "source": "Reddit",
+      "published": "2026-04-01T13:11:32+00:00",
+      "summary": "米国特許庁は、任天堂が持つ「キャラクターを召喚して対戦させる」というゲームシステムに関する特許を無効とする決定を下しました。\nこの特許は、特定の条件下でキャラクターを召喚し、それらを戦わせるというゲームプレイのメカニズムを保護していました。\n今回の無効化により、同様のゲームシステムを開発する際の任天堂の特許による制約が軽減される可能性があります。",
+      "tags": [
+        "特許",
+        "ゲーム開発",
+        "任天堂"
+      ],
+      "score": 65,
+      "score_reason": "ゲーム業界における特許紛争の事例として注目される一方、直接的な技術革新というよりは既存技術の権利に関する問題であるため、IT業界全体への影響度は限定的と判断しました。",
+      "is_hot": false
+    },
+    {
+      "title": "ジョブズからクックになって15年。Appleが得たもの、失ったもの",
+      "url": "https://www.gizmodo.jp/2026/04/apple50th-timcook.html",
+      "source": "はてなブックマーク",
+      "published": "2026-04-01T03:27:09Z",
+      "summary": "(解析中にエラーが発生しました)",
       "tags": [],
       "score": 50,
-      "score_reason": "タイムアウト",
+      "score_reason": "解析エラー: All retries exhausted",
       "is_hot": false
     }
   ]
