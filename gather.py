@@ -52,9 +52,9 @@ GEMINI_API_URL = (
     "{model}:generateContent?key={key}"
 )
 GEMINI_SLEEP_SEC = 4          # リクエスト間隔（15 RPM対応: 4秒間隔）
-GEMINI_MAX_RETRIES = 5        # リトライ上限（429対策強化）
-GEMINI_BACKOFF_MAX_SEC = 60   # バックオフ上限（長めに設定）
-GLOBAL_TIMEOUT_SEC = 600      # 全体タイムアウト: 10分
+GEMINI_MAX_RETRIES = 3        # リトライ上限（タイムアウト防止のため控えめに）
+GEMINI_BACKOFF_MAX_SEC = 30   # バックオフ上限秒数
+GLOBAL_TIMEOUT_SEC = 480      # 全体タイムアウト: 8分（ジョブ12分制限に余裕を持たせる）
 
 SCORE_HOT_BONUS = 20
 SCORE_MAX = 100
