@@ -1,20 +1,106 @@
 {
-  "generated_at": "2026-04-02T07:32:36.789775+09:00",
-  "total_count": 25,
+  "generated_at": "2026-04-02T14:28:08.581707+09:00",
+  "total_count": 24,
+  "success_count": 15,
+  "error_count": 9,
+  "gemini_model": "gemini-2.0-flash",
   "articles": [
     {
-      "title": "エージェントハーネスとAIマネージドサービス",
-      "url": "https://note.com/fukkyy/n/n1d8fce44e67a",
-      "source": "はてなブックマーク",
-      "published": "2026-04-01T04:08:46Z",
-      "summary": "AIエージェントが実務で自律的に動作するための基盤となる「エージェントハーネス」の概念を提唱している。\n従来のSaaSから、AIが業務プロセスそのものを完結させる「AIマネージドサービス」への進化を予測している。\n人間とAIが協調し、安全かつ効率的に業務を遂行するための新しいソフトウェアの在り方を提示している。",
-      "tags": [
-        "AIエージェント",
-        "SaaS",
-        "LayerX"
-      ],
-      "score": 88,
-      "score_reason": "AIエージェントの社会実装における具体的なアーキテクチャとビジネスモデルの変遷を鋭く洞察しており、今後のITビジネス戦略に大きな影響を与える内容であるため。",
+      "title": "Live: Artemis II Launch Day Updates",
+      "url": "https://www.nasa.gov/blogs/missions/2026/04/01/live-artemis-ii-launch-day-updates/",
+      "source": "Hacker News",
+      "published": "2026-04-01T17:11:31+00:00",
+      "hn_score": 773,
+      "hn_comments": 699,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "is_hot": false
+    },
+    {
+      "title": "Subscription bombing and how to mitigate it",
+      "url": "https://bytemash.net/posts/subscription-bombing-your-signup-form-is-a-weapon/",
+      "source": "Hacker News",
+      "published": "2026-04-02T04:08:05+00:00",
+      "hn_score": 21,
+      "hn_comments": 8,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "is_hot": false
+    },
+    {
+      "title": "The Claude Code Leak",
+      "url": "https://build.ms/2026/4/1/the-claude-code-leak/",
+      "source": "Hacker News",
+      "published": "2026-04-02T02:26:05+00:00",
+      "hn_score": 59,
+      "hn_comments": 19,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "is_hot": false
+    },
+    {
+      "title": "Quantum computing bombshells that are not April Fools",
+      "url": "https://scottaaronson.blog/?p=9665",
+      "source": "Hacker News",
+      "published": "2026-04-02T00:24:43+00:00",
+      "hn_score": 94,
+      "hn_comments": 25,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "is_hot": false
+    },
+    {
+      "title": "A new C++ back end for ocamlc",
+      "url": "https://github.com/ocaml/ocaml/pull/14701",
+      "source": "Hacker News",
+      "published": "2026-04-01T23:35:02+00:00",
+      "hn_score": 139,
+      "hn_comments": 8,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "is_hot": false
+    },
+    {
+      "title": "npm をセキュアな挙動にするために .npmrc に記述する最小設定",
+      "url": "https://zenn.dev/cycloud_blog/articles/5ce66daf4bd0cb",
+      "source": "Zenn",
+      "published": "Wed, 01 Apr 2026 07:30:48 GMT",
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "is_hot": false
+    },
+    {
+      "title": "主キーはもう「UUIDv7」一択なのか？ 〜 ID技術の歴史的変遷と現時点の最適解 〜",
+      "url": "https://zenn.dev/loglass/articles/c2db7e85702571",
+      "source": "Zenn",
+      "published": "Wed, 01 Apr 2026 04:46:05 GMT",
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "is_hot": false
+    },
+    {
+      "title": "Claude Codeソースコード流出事件｜何が起きたか＆今すぐやるべき対策",
+      "url": "https://zenn.dev/junko_ai/articles/3123badb508b5d",
+      "source": "Zenn",
+      "published": "Wed, 01 Apr 2026 02:48:18 GMT",
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
       "is_hot": false
     },
     {
@@ -22,132 +108,10 @@
       "url": "https://zenn.dev/sbk0716/books/70b401fac4005d",
       "source": "Zenn",
       "published": "Tue, 31 Mar 2026 18:54:31 GMT",
-      "summary": "RustのWebフレームワーク「Axum」を用いたWeb API開発の実践的な手法を逆引き形式で解説する技術書です。\nデータベース接続、認証、エラーハンドリングなど、実際のプロジェクトで直面する課題への具体的な解決策を提供しています。\nRustの型安全性を活かした堅牢なバックエンド開発を学びたいエンジニアにとって、実用性の高いリソースとなっています。",
-      "tags": [
-        "Rust",
-        "Axum",
-        "Web API"
-      ],
-      "score": 85,
-      "score_reason": "RustのデファクトとなりつつあるAxumを用いた実践的な開発パターンを網羅しており、実務への即応性が非常に高いためです。",
-      "is_hot": false
-    },
-    {
-      "title": "npm をセキュアな挙動にするために .npmrc に記述する最小設定",
-      "url": "https://zenn.dev/cycloud_blog/articles/5ce66daf4bd0cb",
-      "source": "はてなブックマーク",
-      "published": "2026-04-01T11:07:34Z",
-      "summary": "npmのデフォルト設定によるセキュリティリスクを軽減するための.npmrcの最小構成を紹介している。\nignore-scriptsによる悪意あるスクリプト実行の防止や、engine-strictによる環境不整合の回避などが含まれる。\nサプライチェーン攻撃対策として、開発プロジェクトごとに設定すべき実用的なセキュリティプラクティスを解説している。",
-      "tags": [
-        "npm",
-        "Security",
-        "Node.js"
-      ],
-      "score": 85,
-      "score_reason": "npmのデフォルト設定に潜むセキュリティリスクを具体的に指摘し、即座に導入可能な設定ファイル形式で解決策を提示しているため。",
-      "is_hot": false
-    },
-    {
-      "title": "ジョブズからクックになって15年。Appleが得たもの、失ったもの",
-      "url": "https://www.gizmodo.jp/2026/04/apple50th-timcook.html",
-      "source": "はてなブックマーク",
-      "published": "2026-04-01T03:27:09Z",
-      "summary": "スティーブ・ジョブズからティム・クックへの交代から15年が経過し、Appleが遂げた巨大な経済的成長とサプライチェーンの最適化を振り返ります。\n一方で、かつての熱狂的な製品発表や破壊的イノベーションの減少といった、組織文化の変化についても鋭く分析しています。\nApple設立50周年という節目において、同社が今後どのようなビジョンを描くべきかを問い直す内容となっています。",
-      "tags": [
-        "Apple",
-        "ティム・クック",
-        "経営戦略"
-      ],
-      "score": 85,
-      "score_reason": "Appleの50周年という節目に、世界最大のIT企業の経営体制とイノベーションの変遷を総括する極めて重要な考察記事であるため。",
-      "is_hot": false
-    },
-    {
-      "title": "DRAM価格の高騰がホビー向けSBC市場を衰退させている",
-      "url": "https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market/",
-      "source": "Hacker News",
-      "published": "2026-04-01T21:36:41+00:00",
-      "hn_score": 78,
-      "hn_comments": 26,
-      "summary": "DRAMの価格上昇により、Raspberry Piなどのシングルボードコンピュータ（SBC）の製造コストが大幅に増加しています。\nかつての低価格という魅力が失われつつあり、メーカーは価格維持と利益確保の板挟みに直面しています。\nこの傾向が続けば、ホビー層が離れ、市場が産業用などの高価格帯へシフトする懸念があります。",
-      "tags": [
-        "SBC",
-        "DRAM",
-        "Raspberry Pi"
-      ],
-      "score": 82,
-      "score_reason": "半導体コストの上昇が、教育や個人開発の基盤である低価格コンピューティング市場の存続に深刻な影響を及ぼしているため。",
-      "is_hot": false
-    },
-    {
-      "title": "Swappa.comでのGrapheneOS互換デバイス購入に関する警告：利用を控えるべき理由",
-      "url": "https://discuss.grapheneos.org/d/33727-swappacom-for-grapheneos-compatible-devices-stay-away",
-      "source": "Hacker News",
-      "published": "2026-04-01T21:59:14+00:00",
-      "hn_score": 19,
-      "hn_comments": 11,
-      "summary": "中古販売サイトSwappaで「ロック解除済み」として販売されているPixel端末に、OEMロック解除が不可能なキャリア版が混入している問題が報告されています。\nGrapheneOSのインストールにはブートローダーのアンロックが必須ですが、Swappaの検品体制ではこの仕様を正確に判別できていない現状があります。\nプライバシー保護を目的とするユーザーに対し、互換性のない端末を購入してしまうリスクを避けるため、他の信頼できる入手経路を検討するよう呼びかけています。",
-      "tags": [
-        "GrapheneOS",
-        "Android Security",
-        "Swappa"
-      ],
-      "score": 65,
-      "score_reason": "特定のカスタムOS導入における中古端末購入のリスクを周知する内容であり、プライバシー意識の高いユーザーには重要ですが、IT業界全体への影響は限定的です。",
-      "is_hot": false
-    },
-    {
-      "title": "【前編】9割の新人エンジニアがやっている 「失礼しました」の落とし穴",
-      "url": "https://qiita.com/hitomin_poke/items/094edffe1d7961bb6395?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-04-01T13:18:17+09:00",
-      "summary": "新人エンジニアがミスをした際に多用しがちな「失礼しました」という言葉の危うさと、その背後にある問題点を指摘しています。\n単なる謝罪で終わらせず、原因の報告や具体的な改善策を提示することの重要性を説き、チーム開発における信頼構築の手法を解説しています。\n円滑なコミュニケーションを通じて業務効率を向上させるための、実践的なソフトスキルに関する知見がまとめられています。",
-      "tags": [
-        "新人エンジニア",
-        "コミュニケーション",
-        "ソフトスキル"
-      ],
-      "score": 65,
-      "score_reason": "技術的な新規性はないものの、新人教育やチームの生産性向上に直結する非常に実用的なコミュニケーションの知見を提供しているため。",
-      "is_hot": false
-    },
-    {
-      "title": "Signing data structures the wrong way",
-      "url": "https://blog.foks.pub/posts/domain-separation-in-idl/",
-      "source": "Hacker News",
-      "published": "2026-04-01T19:52:00+00:00",
-      "hn_score": 56,
-      "hn_comments": 32,
       "summary": "(解析中にエラーが発生しました)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a",
-      "is_hot": false
-    },
-    {
-      "title": "Show HN: Git bayesect – Bayesian Git bisection for non-deterministic bugs",
-      "url": "https://github.com/hauntsaninja/git_bayesect",
-      "source": "Hacker News",
-      "published": "2026-03-28T20:32:01+00:00",
-      "hn_score": 141,
-      "hn_comments": 18,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a",
-      "is_hot": false
-    },
-    {
-      "title": "The revenge of the data scientist",
-      "url": "https://hamel.dev/blog/posts/revenge/",
-      "source": "Hacker News",
-      "published": "2026-03-28T19:12:37+00:00",
-      "hn_score": 53,
-      "hn_comments": 8,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a",
+      "score_reason": "解析エラー: All retries exhausted",
       "is_hot": false
     },
     {
@@ -155,43 +119,21 @@
       "url": "https://zenn.dev/dely_jp/articles/supply-chain-kowai",
       "source": "Zenn",
       "published": "Tue, 31 Mar 2026 08:41:07 GMT",
-      "summary": "(解析中にエラーが発生しました)",
+      "summary": "(タイムアウトのため解析スキップ)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "score_reason": "タイムアウト",
       "is_hot": false
     },
     {
-      "title": "axiosにサプライチェーン攻撃が発生した話と、担当プロジェクトでやっていた備え",
-      "url": "https://zenn.dev/rescuenow/articles/880bf865235aaf",
-      "source": "Zenn",
-      "published": "Tue, 31 Mar 2026 06:54:31 GMT",
-      "summary": "(解析中にエラーが発生しました)",
+      "title": "【前編】9割の新人エンジニアがやっている 「失礼しました」の落とし穴",
+      "url": "https://qiita.com/hitomin_poke/items/094edffe1d7961bb6395?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-04-01T13:18:17+09:00",
+      "summary": "(タイムアウトのため解析スキップ)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a",
-      "is_hot": false
-    },
-    {
-      "title": "あつあつ流！学生団体の組織論",
-      "url": "https://zenn.dev/atsuatsu0120/books/132d3d1b3ca579",
-      "source": "Zenn",
-      "published": "Tue, 31 Mar 2026 05:57:35 GMT",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a",
-      "is_hot": false
-    },
-    {
-      "title": "Claude Code を「何となく使っている」から抜け出す——『実践 Claude Code 入門』で得た気づき",
-      "url": "https://zenn.dev/nextbeat/articles/practical-claude-code-introduction",
-      "source": "Zenn",
-      "published": "Tue, 31 Mar 2026 05:52:00 GMT",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a",
+      "score_reason": "タイムアウト",
       "is_hot": false
     },
     {
@@ -199,10 +141,10 @@
       "url": "https://qiita.com/wata-sho/items/ff44f2069e3331ab9c0f?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
       "published": "2026-04-01T10:26:15+09:00",
-      "summary": "(解析中にエラーが発生しました)",
+      "summary": "(タイムアウトのため解析スキップ)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a",
+      "score_reason": "タイムアウト",
       "is_hot": false
     },
     {
@@ -210,10 +152,10 @@
       "url": "https://qiita.com/LostMyCode/items/a867e1954b80e78cf146?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
       "published": "2026-04-01T07:50:49+09:00",
-      "summary": "(解析中にエラーが発生しました)",
+      "summary": "(タイムアウトのため解析スキップ)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a",
+      "score_reason": "タイムアウト",
       "is_hot": false
     },
     {
@@ -221,10 +163,10 @@
       "url": "https://qiita.com/nogataka/items/d6c83ea50b82e1c2602c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
       "published": "2026-03-31T09:18:35+09:00",
-      "summary": "(解析中にエラーが発生しました)",
+      "summary": "(タイムアウトのため解析スキップ)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a",
+      "score_reason": "タイムアウト",
       "is_hot": false
     },
     {
@@ -232,10 +174,32 @@
       "url": "https://qiita.com/prum_iha/items/1592158be6ca86837429?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
       "published": "2026-03-31T16:31:52+09:00",
-      "summary": "(解析中にエラーが発生しました)",
+      "summary": "(タイムアウトのため解析スキップ)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "score_reason": "タイムアウト",
+      "is_hot": false
+    },
+    {
+      "title": "U.S President defunding of NPR and PBS blocked by judge, but damage is already done | Judge invalidates U.S President executive order, but Congress also cut off all funding.",
+      "url": "https://www.reddit.com/r/technology/comments/1sa1yv1/us_president_defunding_of_npr_and_pbs_blocked_by/",
+      "source": "Reddit",
+      "published": "2026-04-02T00:10:21+00:00",
+      "summary": "(タイムアウトのため解析スキップ)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "タイムアウト",
+      "is_hot": false
+    },
+    {
+      "title": "Group Pushing Age Verification Requirements for AI Turns Out to Be Sneakily Backed by OpenAI",
+      "url": "https://www.reddit.com/r/technology/comments/1sa2x7w/group_pushing_age_verification_requirements_for/",
+      "source": "Reddit",
+      "published": "2026-04-02T00:52:57+00:00",
+      "summary": "(タイムアウトのため解析スキップ)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "タイムアウト",
       "is_hot": false
     },
     {
@@ -243,10 +207,10 @@
       "url": "https://www.reddit.com/r/technology/comments/1s9mxz1/gabe_newell_stepped_back_from_making_games_at/",
       "source": "Reddit",
       "published": "2026-04-01T14:58:08+00:00",
-      "summary": "(解析中にエラーが発生しました)",
+      "summary": "(タイムアウトのため解析スキップ)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "score_reason": "タイムアウト",
       "is_hot": false
     },
     {
@@ -254,69 +218,65 @@
       "url": "https://www.reddit.com/r/technology/comments/1s9k5l5/us_patent_office_revokes_nintendos_patent_on/",
       "source": "Reddit",
       "published": "2026-04-01T13:11:32+00:00",
-      "summary": "(解析中にエラーが発生しました)",
+      "summary": "(タイムアウトのため解析スキップ)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "score_reason": "タイムアウト",
       "is_hot": false
     },
     {
-      "title": "Anthropic issues copyright takedown requests to remove 8,000+ copies of Claude Code source code",
-      "url": "https://www.reddit.com/r/technology/comments/1s9jljp/anthropic_issues_copyright_takedown_requests_to/",
+      "title": "Nvidia market share in China falls to less than 60% — Chinese chip makers deliver 1.65 million AI GPUs as the government pushes data centers to use domestic chips",
+      "url": "https://www.reddit.com/r/technology/comments/1sa3549/nvidia_market_share_in_china_falls_to_less_than/",
       "source": "Reddit",
-      "published": "2026-04-01T12:48:59+00:00",
-      "summary": "(解析中にエラーが発生しました)",
+      "published": "2026-04-02T01:02:36+00:00",
+      "summary": "(タイムアウトのため解析スキップ)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
+      "score_reason": "タイムアウト",
       "is_hot": false
     },
     {
-      "title": "Iran War Chokes Off Helium Supply Critical for AI",
-      "url": "https://www.reddit.com/r/technology/comments/1s9oz97/iran_war_chokes_off_helium_supply_critical_for_ai/",
-      "source": "Reddit",
-      "published": "2026-04-01T16:10:26+00:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "is_hot": false
-    },
-    {
-      "title": "Kids groups say they didn’t know OpenAI was behind their child safety coalition. “A very grimy feeling”: The ChatGPT giant quietly helped build the coalition. Some members quit when they found out.",
-      "url": "https://www.reddit.com/r/technology/comments/1s9r1yd/kids_groups_say_they_didnt_know_openai_was_behind/",
-      "source": "Reddit",
-      "published": "2026-04-01T17:22:41+00:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "is_hot": false
-    },
-    {
-      "title": "Introducing EmDash — the spiritual successor to WordPress that solves plugin security",
-      "url": "https://blog.cloudflare.com/emdash-wordpress/",
+      "title": "ウェブブラウザ単体でOCR処理を実行してAIで校正までできる「NDLOCR-Lite Web AI」レビュー、国立国会図書館のNDLOCR-Liteを簡単に利用可能にしたウェブアプリ",
+      "url": "https://gigazine.net/news/20260401-ndlocr-lite-web-ai/",
       "source": "はてなブックマーク",
-      "published": "2026-04-01T16:45:03Z",
-      "summary": "(解析中にエラーが発生しました)",
+      "published": "2026-04-01T17:41:37Z",
+      "summary": "(タイムアウトのため解析スキップ)",
       "tags": [],
       "score": 50,
-      "score_reason": "解析エラー: 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a",
+      "score_reason": "タイムアウト",
       "is_hot": false
     },
     {
-      "title": "【動画】マッコウクジラの出産で驚きの発見、非血縁者も協力",
-      "url": "https://natgeo.nikkeibp.co.jp/atcl/news/26/033100182/",
+      "title": "ジョブズからクックになって15年。Appleが得たもの、失ったもの",
+      "url": "https://www.gizmodo.jp/2026/04/apple50th-timcook.html",
       "source": "はてなブックマーク",
-      "published": "2026-04-01T12:11:32Z",
-      "summary": "マッコウクジラの出産シーンが詳細に撮影され、非血縁個体が母親を助ける「共同養育」の行動が初めて確認された。\nドローンや水中カメラといった最新の観測技術が、野生動物の複雑な社会構造の解明に重要な役割を果たしている。\nこの知見は生物学に留まらず、集団行動アルゴリズムやバイオミミクリーといった分野への応用が期待される。",
-      "tags": [
-        "海洋生物学",
-        "ドローン技術",
-        "バイオミミクリー"
-      ],
-      "score": 25,
-      "score_reason": "IT業界への直接的な影響は低いが、最新の観測技術の活用事例や集団行動のデータとして学術的な価値がある。",
+      "published": "2026-04-01T03:27:09Z",
+      "summary": "(タイムアウトのため解析スキップ)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "タイムアウト",
+      "is_hot": false
+    },
+    {
+      "title": "Claude Codeに仕様書を丸ごと渡すな ── 「要件を伝える」との決定的な違い",
+      "url": "https://zenn.dev/bookamasedo/articles/c264a26dafe55b",
+      "source": "はてなブックマーク",
+      "published": "2026-04-02T00:37:06Z",
+      "summary": "(タイムアウトのため解析スキップ)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "タイムアウト",
+      "is_hot": false
+    },
+    {
+      "title": "Google検索のURLに「&udm=14」を挿入して「AIによる概要」や「注目されている商品」などを非表示にしてシンプルなウェブ検索が可能になるFirefox拡張機能「&udm=14」",
+      "url": "https://gigazine.net/news/20260401-and-udm-14/",
+      "source": "はてなブックマーク",
+      "published": "2026-04-01T16:13:43Z",
+      "summary": "(タイムアウトのため解析スキップ)",
+      "tags": [],
+      "score": 50,
+      "score_reason": "タイムアウト",
       "is_hot": false
     }
   ]
