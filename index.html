@@ -365,6 +365,14 @@
     .card.is-hot {
       border-left-color: var(--hot-color);
     }
+    .card.has-error {
+      border-left: 3px solid #e74c3c;
+      background: rgba(231, 76, 60, 0.04);
+      opacity: 0.75;
+    }
+    [data-theme="dark"] .card.has-error {
+      background: rgba(231, 76, 60, 0.08);
+    }
 
     /* Favorite star */
     .card-fav {
@@ -424,6 +432,16 @@
       padding: 1px 6px;
       background: var(--hot-bg);
       color: var(--hot-color);
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .error-badge {
+      flex-shrink: 0;
+      font-size: 11px;
+      padding: 1px 6px;
+      background: rgba(231, 76, 60, 0.1);
+      color: #e74c3c;
       border-radius: var(--radius-sm);
       font-weight: 600;
       white-space: nowrap;
@@ -583,6 +601,7 @@
     <div class="stat-item">📊 <span id="statTotal">—</span> 件</div>
     <div class="stat-item">🔥 <span id="statHot">—</span> HOT</div>
     <div class="stat-item">⭐ <span id="statHighScore">—</span> 高スコア</div>
+    <div class="stat-item">⚠️ <span id="statErrors">—</span> エラー</div>
     <div class="stat-item" style="margin-left:auto;">🕐 <span id="statTime">—</span></div>
   </div>
 
@@ -603,7 +622,7 @@
        Footer
        ============================================================ -->
   <footer class="footer">
-    IT Info Hub — Powered by Gemini 3.0 Flash &amp; GitHub Actions
+    IT Info Hub — Powered by Gemini 2.0 Flash &amp; GitHub Actions
   </footer>
 
   <!-- ============================================================
@@ -754,6 +773,7 @@
         $('#statTotal').textContent = filtered.length;
         $('#statHot').textContent = filtered.filter(a => a.is_hot).length;
         $('#statHighScore').textContent = filtered.filter(a => (a.score || 0) >= 80).length;
+        $('#statErrors').textContent = filtered.filter(a => (a.score_reason || '').includes('解析エラー')).length;
 
         if (filtered.length === 0) {
           cardList.innerHTML = `
@@ -770,14 +790,21 @@
           const scoreClass = score >= 80 ? 'high' : score >= 60 ? 'mid' : '';
           const cardClass = score >= 80 ? 'score-gold' : score >= 60 ? 'score-silver' : '';
           const hotClass = art.is_hot ? ' is-hot' : '';
+          const hasError = (art.score_reason || '').includes('解析エラー');
+          const errorClass = hasError ? ' has-error' : '';
           const favClass = isFavorited(art.url) ? ' favorited' : '';
-          const summaryHtml = (art.summary || '').replace(/\\n/g, '<br>');
+          // 改行を正しく処理: 実際の \n（リテラル）とエスケープされた \\n の両方に対応
+          const summaryHtml = (art.summary || '').replace(/\\n/g, '<br>').replace(/\n/g, '<br>');
           const tagsHtml = (art.tags || [])
             .map(t => `<span class="tag" data-tag="${t}">${t}</span>`)
             .join('');
+          // エラー記事のスコア理由はフィルター用テキストを簡潔に表示
+          const reasonDisplay = hasError
+            ? `<span class="score-reason">🔴 ${art.score_reason}</span>`
+            : art.score_reason ? `<span class="score-reason">💡 ${art.score_reason}</span>` : '';
 
           return `
-            <article class="card ${cardClass}${hotClass}" style="animation-delay: ${i * 0.04}s" data-url="${art.url || ''}">
+            <article class="card ${cardClass}${hotClass}${errorClass}" style="animation-delay: ${i * 0.04}s" data-url="${art.url || ''}">
               <div class="card-fav${favClass}" data-fav-url="${art.url || ''}" title="お気に入り">
                 ${isFavorited(art.url) ? '★' : '☆'}
               </div>
@@ -785,13 +812,14 @@
               <div class="card-body">
                 <div class="card-title">
                   ${art.is_hot ? '<span class="hot-badge">🔥 HOT</span>' : ''}
+                  ${hasError ? '<span class="error-badge">⚠️ 解析エラー</span>' : ''}
                   <a href="${art.url || '#'}" target="_blank" rel="noopener">${art.title || 'No Title'}</a>
                 </div>
                 <div class="card-summary">${summaryHtml}</div>
                 <div class="card-meta">
                   ${tagsHtml}
                   <span class="source-label">📰 ${art.source || ''}</span>
-                  ${art.score_reason ? `<span class="score-reason">💡 ${art.score_reason}</span>` : ''}
+                  ${reasonDisplay}
                 </div>
               </div>
             </article>`;

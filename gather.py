@@ -44,15 +44,17 @@ RSS_FEEDS = {
 }
 RSS_FETCH_COUNT = 5
 
-GEMINI_MODEL = "gemini-flash-latest"
+# Gemini API 設定
+# gemini-2.0-flash: 安定版・非 thinking モデル・JSON出力モード完全対応
+GEMINI_MODEL = "gemini-2.0-flash"
 GEMINI_API_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     "{model}:generateContent?key={key}"
 )
-GEMINI_SLEEP_SEC = 1
-GEMINI_MAX_RETRIES = 2
-GEMINI_BACKOFF_MAX_SEC = 10
-GLOBAL_TIMEOUT_SEC = 600  # 全体タイムアウト: 10分
+GEMINI_SLEEP_SEC = 4          # リクエスト間隔（15 RPM対応: 4秒間隔）
+GEMINI_MAX_RETRIES = 5        # リトライ上限（429対策強化）
+GEMINI_BACKOFF_MAX_SEC = 60   # バックオフ上限（長めに設定）
+GLOBAL_TIMEOUT_SEC = 600      # 全体タイムアウト: 10分
 
 SCORE_HOT_BONUS = 20
 SCORE_MAX = 100
@@ -73,6 +75,7 @@ def normalize_url(url: str) -> str:
     if not url:
         return ""
     parsed = urlparse(url)
+    # クエリパラメータとフラグメントを除去して正規化
     return f"{parsed.scheme}://{parsed.netloc}{parsed.path}".rstrip("/").lower()
 
 
@@ -88,6 +91,91 @@ def safe_get(url: str, timeout: int = 15) -> requests.Response | None:
     except requests.RequestException as e:
         print(f"[WARN] GET failed: {url} -- {e}")
         return None
+
+
+def deduplicate_articles(articles: list[dict]) -> list[dict]:
+    """URL を正規化し、重複を除去（最初に出現したものを保持）"""
+    seen_urls: set[str] = set()
+    unique: list[dict] = []
+    for art in articles:
+        norm = normalize_url(art.get("url", ""))
+        if not norm or norm not in seen_urls:
+            seen_urls.add(norm)
+            unique.append(art)
+    return unique
+
+
+def extract_text_from_gemini_response(data: dict) -> str | None:
+    """Gemini レスポンスからテキストを安全に抽出する。
+    thinking モデルの場合、thought パーツをスキップして
+    実際の回答テキストのみを返す。
+    """
+    try:
+        candidate = data["candidates"][0]
+
+        # finishReason チェック（SAFETY 等で中断された場合）
+        finish_reason = candidate.get("finishReason", "")
+        if finish_reason not in ("", "STOP", "MAX_TOKENS"):
+            print(f"[WARN] Gemini finishReason: {finish_reason}")
+            return None
+
+        parts = candidate["content"]["parts"]
+
+        # 全 parts をイテレートし、thought でないテキストを返す
+        for part in parts:
+            if part.get("thought", False):
+                continue
+            if "text" in part:
+                return part["text"]
+
+        # フォールバック: 最後のパーツのテキストを返す
+        for part in reversed(parts):
+            if "text" in part:
+                return part["text"]
+
+    except (KeyError, IndexError, TypeError) as e:
+        print(f"[WARN] Gemini response structure error: {e}")
+
+    return None
+
+
+def parse_json_safely(text: str) -> dict | None:
+    """JSON テキストを安全にパースする。
+    コードフェンス（```json ... ```）やBOMを除去してからパースを試行。
+    """
+    if not text:
+        return None
+
+    # BOM除去
+    text = text.strip().lstrip("\ufeff")
+
+    # コードフェンス除去 (```json ... ``` or ``` ... ```)
+    text = re.sub(r"^```(?:json)?\s*\n?", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\n?```\s*$", "", text)
+    text = text.strip()
+
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as e:
+        print(f"[WARN] JSON parse failed: {e}")
+        print(f"[DEBUG] Raw text (first 200 chars): {text[:200]}")
+        return None
+
+
+def validate_gemini_result(result: dict) -> bool:
+    """Gemini が返した解析結果の必須フィールドを検証する"""
+    if not isinstance(result, dict):
+        return False
+    required_keys = ("title", "summary", "tags", "score")
+    for key in required_keys:
+        if key not in result:
+            print(f"[WARN] Missing required key in Gemini result: {key}")
+            return False
+    if not isinstance(result["tags"], list):
+        return False
+    if not isinstance(result["score"], (int, float)):
+        return False
+    return True
 
 
 # ---------------------------------------------------------------------------
@@ -127,7 +215,17 @@ def fetch_rss_feeds() -> list[dict]:
     for source_name, feed_url in RSS_FEEDS.items():
         print(f"[INFO] Fetching RSS: {source_name} ...")
         try:
-            feed = feedparser.parse(feed_url)
+            # feedparser に User-Agent を設定（Reddit 等のブロック対策）
+            feed = feedparser.parse(
+                feed_url,
+                agent="IT-Info-Collector/1.0 (GitHub Actions Bot)"
+            )
+
+            # フィードエラーチェック
+            if feed.bozo and not feed.entries:
+                print(f"[WARN] RSS feed error ({source_name}): {feed.bozo_exception}")
+                continue
+
             entries = feed.entries[:RSS_FETCH_COUNT]
             for entry in entries:
                 link = entry.get("link", "")
@@ -158,16 +256,16 @@ ANALYSIS_PROMPT = """\
 情報ソース: {source}
 
 以下の指示に厳密に従い、JSON形式で回答してください。
-- 英語の記事の場合は、タイトルと内容の両方を日本語に翻訳してください。
-- title: 記事のタイトル（英語の場合は日本語に自然に翻訳、日本語の場合はそのまま）
+- 英語の記事の場合は、タイトルと要約の両方を必ず日本語に翻訳してください。
+- title: 記事のタイトル（英語の場合は自然な日本語に翻訳。日本語ならそのまま）
 - summary: 記事の内容を推測し、日本語で3行の要約を作成（改行は\\nで区切る）
 - tags: 技術タグを3つ（日本語または英語）のリスト
 - score: 重要度スコア（0-100の整数）。
   IT業界への影響度、技術的新規性、実用性を総合的に評価してください。
 - score_reason: スコアの理由を日本語で1文
 
-回答は以下のJSON形式**のみ**出力してください:
-{{"title": "日本語タイトル", "summary": "...", "tags": ["tag1", "tag2", "tag3"], "score": 75, "score_reason": "..."}}
+回答は以下のJSON形式**のみ**出力してください（余分なテキストは不要です）:
+{{"title": "日本語タイトル", "summary": "1行目\\n2行目\\n3行目", "tags": ["tag1", "tag2", "tag3"], "score": 75, "score_reason": "..."}}
 """
 
 
@@ -188,13 +286,27 @@ def call_gemini_rest(prompt: str, api_key: str) -> dict | None:
 
             if resp.status_code == 200:
                 data = resp.json()
-                text = data["candidates"][0]["content"]["parts"][0]["text"]
-                return json.loads(text)
+                text = extract_text_from_gemini_response(data)
+                if text is None:
+                    return {"error": "Gemini returned no usable text"}
+                result = parse_json_safely(text)
+                if result is None:
+                    return {"error": f"JSON parse failed: {text[:100]}"}
+                if not validate_gemini_result(result):
+                    return {"error": f"Invalid result structure: {result}"}
+                return result
 
             elif resp.status_code == 429:
                 # レート制限 -- 指数バックオフでリトライ（上限付き）
                 wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
                 print(f"[WARN] 429 Rate limited (attempt {attempt}/{GEMINI_MAX_RETRIES}), waiting {wait}s ...")
+                time.sleep(wait)
+                continue
+
+            elif resp.status_code >= 500:
+                # サーバーエラー -- 一時的な障害として再試行
+                wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
+                print(f"[WARN] {resp.status_code} Server error (attempt {attempt}/{GEMINI_MAX_RETRIES}), waiting {wait}s ...")
                 time.sleep(wait)
                 continue
 
@@ -206,11 +318,10 @@ def call_gemini_rest(prompt: str, api_key: str) -> dict | None:
         except requests.RequestException as e:
             print(f"[ERROR] Gemini API request failed: {e}")
             if attempt < GEMINI_MAX_RETRIES:
-                time.sleep(GEMINI_SLEEP_SEC)
+                wait = min(GEMINI_SLEEP_SEC * attempt, GEMINI_BACKOFF_MAX_SEC)
+                print(f"[WARN] Retrying in {wait}s (attempt {attempt}/{GEMINI_MAX_RETRIES}) ...")
+                time.sleep(wait)
             continue
-        except (KeyError, json.JSONDecodeError) as e:
-            print(f"[ERROR] Gemini response parse error: {e}")
-            return {"error": f"Parse Error: {e}"}
 
     print(f"[ERROR] Gemini API: all {GEMINI_MAX_RETRIES} retries exhausted")
     return {"error": "All retries exhausted"}
@@ -259,7 +370,7 @@ def analyze_with_gemini(articles: list[dict], start_time: float = 0) -> list[dic
 
         result = call_gemini_rest(prompt, api_key)
 
-        if result and not "error" in result:
+        if result and "error" not in result:
             if result.get("title"):
                 art["title"] = result["title"]
             art["summary"] = result.get("summary", "")
@@ -379,16 +490,24 @@ def send_discord_notification(articles: list[dict]) -> None:
 def save_results(articles: list[dict]) -> None:
     """data.json と archive/YYYY-MM-DD.json を生成"""
     now = datetime.now(JST)
+
+    # エラー・成功の集計
+    error_count = sum(1 for a in articles if "解析エラー" in a.get("score_reason", ""))
+    success_count = len(articles) - error_count
+
     output = {
         "generated_at": now.isoformat(),
         "total_count": len(articles),
+        "success_count": success_count,
+        "error_count": error_count,
+        "gemini_model": GEMINI_MODEL,
         "articles": sorted(articles, key=lambda x: x.get("score", 0), reverse=True),
     }
 
     # data.json
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
-    print(f"[INFO] Saved {DATA_FILE} ({len(articles)} articles)")
+    print(f"[INFO] Saved {DATA_FILE} ({len(articles)} articles, {error_count} errors)")
 
     # archive/YYYY-MM-DD.json
     os.makedirs(ARCHIVE_DIR, exist_ok=True)
@@ -416,6 +535,7 @@ def main() -> None:
     print("=" * 60)
     print("IT Info Collector -- Start")
     print(f"Time: {datetime.now(JST).isoformat()}")
+    print(f"Gemini model: {GEMINI_MODEL}")
     print(f"Global timeout: {GLOBAL_TIMEOUT_SEC}s ({GLOBAL_TIMEOUT_SEC // 60}min)")
     print("=" * 60)
 
@@ -429,21 +549,29 @@ def main() -> None:
         print("[WARN] No articles fetched -- exiting")
         return
 
-    # 2. Gemini 解析（タイムアウト対応）
+    # 2. 重複記事の除去（URL正規化で判定）
+    before_dedup = len(all_articles)
+    all_articles = deduplicate_articles(all_articles)
+    if before_dedup != len(all_articles):
+        print(f"[INFO] Deduplicated: {before_dedup} -> {len(all_articles)} articles")
+
+    # 3. Gemini 解析（タイムアウト対応）
     all_articles = analyze_with_gemini(all_articles, start_time)
 
-    # 3. スコアリング (重複検知)
+    # 4. スコアリング (重複検知)
     all_articles = apply_hot_scoring(all_articles)
 
-    # 4. 保存
+    # 5. 保存
     save_results(all_articles)
 
-    # 5. Discord 通知
+    # 6. Discord 通知
     send_discord_notification(all_articles)
 
     elapsed = time.monotonic() - start_time
+    error_count = sum(1 for a in all_articles if "解析エラー" in a.get("score_reason", ""))
     print(f"\n{'=' * 60}")
     print(f"IT Info Collector -- Complete ({elapsed:.1f}s)")
+    print(f"  Total: {len(all_articles)} articles, Errors: {error_count}")
     print("=" * 60)
 
 
