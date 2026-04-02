@@ -45,8 +45,8 @@ RSS_FEEDS = {
 RSS_FETCH_COUNT = 5
 
 # Gemini API 設定
-# gemini-2.0-flash: 安定版・非 thinking モデル・JSON出力モード完全対応
-GEMINI_MODEL = "gemini-2.0-flash"
+# gemini-2.5-flash-lite: 安定版・thinking デフォルトOFF・JSON出力完全対応・15RPM/1000RPD
+GEMINI_MODEL = "gemini-2.5-flash-lite"
 GEMINI_API_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     "{model}:generateContent?key={key}"
@@ -491,8 +491,13 @@ def save_results(articles: list[dict]) -> None:
     """data.json と archive/YYYY-MM-DD.json を生成"""
     now = datetime.now(JST)
 
-    # エラー・成功の集計
-    error_count = sum(1 for a in articles if "解析エラー" in a.get("score_reason", ""))
+    # エラー・タイムアウトの集計
+    error_count = sum(
+        1 for a in articles
+        if "解析エラー" in a.get("score_reason", "")
+        or "タイムアウト" in a.get("score_reason", "")
+        or "解析スキップ" in a.get("summary", "")
+    )
     success_count = len(articles) - error_count
 
     output = {
