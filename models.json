@@ -686,6 +686,20 @@
       ]
     },
     {
+      "name": "models/gemini-embedding-2",
+      "version": "2",
+      "displayName": "Gemini Embedding 2",
+      "description": "Obtain a distributed representation of multimodal content.",
+      "inputTokenLimit": 8192,
+      "outputTokenLimit": 1,
+      "supportedGenerationMethods": [
+        "embedContent",
+        "countTextTokens",
+        "countTokens",
+        "asyncBatchEmbedContent"
+      ]
+    },
+    {
       "name": "models/aqa",
       "version": "001",
       "displayName": "Model that performs Attributed Question Answering.",
@@ -786,18 +800,7 @@
       "supportedGenerationMethods": [
         "predictLongRunning"
       ]
-    },
-    {
-      "name": "models/veo-3.1-lite-generate-preview",
-      "version": "3.1",
-      "displayName": "Veo 3.1 lite",
-      "description": "Veo 3.1 lite",
-      "inputTokenLimit": 480,
-      "outputTokenLimit": 8192,
-      "supportedGenerationMethods": [
-        "predictLongRunning"
-      ]
     }
   ],
-  "nextPageToken": "CiRtb2RlbHMvdmVvLTMuMS1saXRlLWdlbmVyYXRlLXByZXZpZXc="
+  "nextPageToken": "CiRtb2RlbHMvdmVvLTMuMS1mYXN0LWdlbmVyYXRlLXByZXZpZXc="
 }
