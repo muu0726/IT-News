@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 05 Jul 2026 06:00:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 07:07:24 +0000</lastBuildDate>
     <item>
-      <title>Shadcn/UI now defaults to Base UI instead of Radix</title>
-      <link>https://ui.shadcn.com/docs/changelog</link>
-      <guid isPermaLink="false">https://ui.shadcn.com/docs/changelog</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Hacker News)</description>
-      <pubDate>Sun, 05 Jul 2026 04:46:08 +0000</pubDate>
+      <title>コードレビュー指摘300件を3ヶ月分類したら効いていたのは2種類だけだった</title>
+      <link>https://zenn.dev/kenimo49/articles/code-review-300-comments-2-effective-categories</link>
+      <guid isPermaLink="false">https://zenn.dev/kenimo49/articles/code-review-300-comments-2-effective-categories</guid>
+      <description>[Score: 90] 3ヶ月で300件のコードレビュー指摘を分析した結果、本当に効果があったのはBug指摘とSpec指摘の2種類のみでした。 / StyleやNamingなどの指摘は効果が薄く、むしろ多すぎるとレビュアーの認知負荷を高め、重要なBugを見落とす可能性が示唆されています。 / 本記事は、コードレビューの効率化と品質向上に向け、指摘内容の優先順位付けの重要性を実データに基づいて提言しています。 (Source: Zenn)</description>
+      <pubDate>Sat, 04 Jul 2026 09:57:02 +0000</pubDate>
     </item>
     <item>
-      <title>Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable</title>
-      <link>https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main</link>
-      <guid isPermaLink="false">https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Hacker News)</description>
-      <pubDate>Sat, 04 Jul 2026 19:41:10 +0000</pubDate>
+      <title>NECは即決、富士通は後に土下座、シャープは「10円やったらこうたるわ」…1978年、Microsoft BASICの営業で国内メーカーを回った西和彦氏が明かす各社の反応が濃すぎる</title>
+      <link>https://togetter.com/li/2717051</link>
+      <guid isPermaLink="false">https://togetter.com/li/2717051</guid>
+      <description>[Score: 90] 1978年、アスキーマイクロソフトの西和彦氏がMicrosoft BASICを日本の大手メーカーに売り込んだ際の各社の反応を詳細に語る記事。 / NECは即決、富士通は当初冷淡だったが後に土下座、シャープは「10円」と侮辱的な態度を取るなど、当時の日本企業のマイコンに対する認識の差が浮き彫りに。 / これは日本のIT産業黎明期の貴重な証言であり、後のMicrosoftの成功と日本企業の対応の明暗を分けた歴史的経緯を示す。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 05 Jul 2026 00:32:10 +0000</pubDate>
     </item>
     <item>
-      <title>If you're a button, you have one job</title>
-      <link>https://unsung.aresluna.org/if-youre-a-button-you-have-one-job/</link>
-      <guid isPermaLink="false">https://unsung.aresluna.org/if-youre-a-button-you-have-one-job/</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Hacker News)</description>
-      <pubDate>Sun, 05 Jul 2026 02:01:03 +0000</pubDate>
+      <title>すでに4800スター、Loop Engineeringとは — “自分の仕事はloopを書くこと”</title>
+      <link>https://zenn.dev/acntechjp/articles/0c63b5b08bbdb9</link>
+      <guid isPermaLink="false">https://zenn.dev/acntechjp/articles/0c63b5b08bbdb9</guid>
+      <description>[Score: 90] AnthropicのBoris Cherny氏が提唱する「Loop Engineering」は、AIエージェントにプロンプトを送り続ける小さなプログラム「loop」を書くことで、AIとの対話方法を根本的に変える概念です。 / これは「エージェントに指示を出す人」から「指示を出し続けるシステムを設計する人」への役割転換を意味し、AIが生成するコードの「理解負債」問題への解決策としても期待されています。 / 目的と停止条件のみを指示し、実装の詳細はloop自身が判断することで、AIの自律性を高め、人間の介入を最小限に抑えることを目指します。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 04 Jul 2026 14:15:27 +0000</pubDate>
     </item>
     <item>
-      <title>Mouse: Precision Editing Tools for AI Coding Agents</title>
+      <title>もうプロンプトは書かなくていい…管理職も活躍できる「ループ・エンジニアリング」の時代がやって来た</title>
+      <link>https://www.businessinsider.jp/article/2607-what-are-loops-ai-engineering-tips/</link>
+      <guid isPermaLink="false">https://www.businessinsider.jp/article/2607-what-are-loops-ai-engineering-tips/</guid>
+      <description>[Score: 88] Claude Code開発者ボリス・チェルニー氏らが提唱する「ループ・エンジニアリング」は、AIエージェントに自律的に反復作業を行わせるシステムで、人間が逐一プロンプトを書く手間をなくします。 / AIエージェントがプロンプトを生成し、人間は全体のコーディネート役を担うことで、AIとの対話方法が根本的に変化します。 / このアプローチにより、AIの自律性が高まり、管理職など非技術職もAI活用に貢献できる新たな時代が到来すると期待されています。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 03 Jul 2026 03:57:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mouse: AIコーディングエージェントのための高精度編集ツール</title>
       <link>https://hic-ai.com</link>
       <guid isPermaLink="false">https://hic-ai.com</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Hacker News)</description>
+      <description>[Score: 85] HIC Mouseは、AIコーディングエージェントがファイルを編集する際の精度と信頼性を大幅に向上させるツールです。 / 従来の文字列置換に代わり、座標ベースの編集、ステージングされた変更、アトミックなロールバック機能を提供します。 / INSERT、DELETE、ADJUSTなどの宣言型操作により、AIエージェントはより正確かつ安全にコードを修正できるようになります。 (Source: Hacker News)</description>
       <pubDate>Sun, 05 Jul 2026 05:01:14 +0000</pubDate>
     </item>
     <item>
-      <title>GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance</title>
+      <title>GPT-5.5 Codexの推論トークンクラスタリングが性能低下につながっている可能性</title>
       <link>https://github.com/openai/codex/issues/30364</link>
       <guid isPermaLink="false">https://github.com/openai/codex/issues/30364</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Hacker News)</description>
+      <description>[Score: 85] GPT-5.5 Codexにおいて、特定の推論トークン数（516, 1034, 1552）で応答が集中するクラスタリング現象が観測されています。 / この現象はGPT-5.5に特有で、全体的な推論トークン強度の低下と一致しており、複雑なタスクでの性能低下の原因である可能性があります。 / OpenAIは、この固定トークンクラスタリングが閾値化された推論予算の挙動と一致していると指摘しており、モデルの挙動に関する重要な洞察を提供します。 (Source: Hacker News)</description>
       <pubDate>Sat, 04 Jul 2026 21:51:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>Artful Cats: Feline-Inspired Art and Artifacts</title>
-      <link>https://www.si.edu/spotlight/art-cats</link>
-      <guid isPermaLink="false">https://www.si.edu/spotlight/art-cats</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Hacker News)</description>
-      <pubDate>Wed, 01 Jul 2026 18:23:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google Books (or similar) all book scans – $200k bounty (2025)</title>
-      <link>https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234</link>
-      <guid isPermaLink="false">https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Hacker News)</description>
-      <pubDate>Sat, 04 Jul 2026 16:51:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>Jellyfish can heal wounds in minutes. Scientists want their secrets</title>
-      <link>https://www.mbl.edu/news/jellyfish-can-heal-wounds-minutes-scientists-want-their-secrets</link>
-      <guid isPermaLink="false">https://www.mbl.edu/news/jellyfish-can-heal-wounds-minutes-scientists-want-their-secrets</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Hacker News)</description>
-      <pubDate>Sat, 04 Jul 2026 22:36:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>仕事の「モチベーション」とは何か。</title>
-      <link>https://zenn.dev/dip_techblog/articles/526cc6e6e5d5a5</link>
-      <guid isPermaLink="false">https://zenn.dev/dip_techblog/articles/526cc6e6e5d5a5</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Zenn)</description>
-      <pubDate>Sat, 04 Jul 2026 08:19:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>無料でSAR衛星画像を見る！Sentinel-1で始める0冊目の入門書</title>
-      <link>https://zenn.dev/syu_tan/books/sentinel-1-introduction</link>
-      <guid isPermaLink="false">https://zenn.dev/syu_tan/books/sentinel-1-introduction</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Zenn)</description>
-      <pubDate>Sat, 04 Jul 2026 06:19:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>就活用DirectX12アクションゲーム作成　第二十一回</title>
-      <link>https://zenn.dev/seisei89628/articles/cfec733913db02</link>
-      <guid isPermaLink="false">https://zenn.dev/seisei89628/articles/cfec733913db02</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Zenn)</description>
-      <pubDate>Sat, 04 Jul 2026 04:21:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>C++の謎めいたHello WorldをPythonで再実装して理解を深めよう</title>
-      <link>https://zenn.dev/sirasagi62/articles/59db634940ba80</link>
-      <guid isPermaLink="false">https://zenn.dev/sirasagi62/articles/59db634940ba80</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Zenn)</description>
-      <pubDate>Fri, 03 Jul 2026 12:26:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>Generative UIとそれを実現するOpenUIのイメージを掴む！</title>
-      <link>https://zenn.dev/peishim/articles/37ff4d894f8fbc</link>
-      <guid isPermaLink="false">https://zenn.dev/peishim/articles/37ff4d894f8fbc</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Zenn)</description>
-      <pubDate>Fri, 03 Jul 2026 11:30:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>手順不足と知識不足は分けて考えた方がいいと思う話</title>
-      <link>https://qiita.com/shige-h/items/97d9d9b7ed0064f7433e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/shige-h/items/97d9d9b7ed0064f7433e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Qiita)</description>
-      <pubDate>Thu, 02 Jul 2026 09:50:42 +0000</pubDate>
     </item>
     <item>
       <title>新しいHTTPメソッド「QUERY」をHono + Bunで実装してみる</title>
       <link>https://qiita.com/maaaashi/items/6eefccb7361f64607865?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/maaaashi/items/6eefccb7361f64607865?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Qiita)</description>
+      <description>[Score: 85] 新しいHTTPメソッド「QUERY」がProposed Standardとなり、RFC 10008として公開されたことが紹介されています。 / QUERYメソッドは「ボディを持てる、安全なGET」として、複雑な検索条件をボディで渡しつつ、キャッシュ可能な読み取り操作を実現します。 / HonoとBunを使って実際にQUERYメソッドのAPIを実装する手順が解説されており、その実用性が示されています。 (Source: Qiita)</description>
       <pubDate>Fri, 03 Jul 2026 11:58:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>バイブコーディングで本当にアプリはリリースできるのか？エンジニアが実際にアプリをリリースして感じたこと</title>
-      <link>https://qiita.com/yutaka_kozuka/items/cc3be5930b972130885d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yutaka_kozuka/items/cc3be5930b972130885d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Qiita)</description>
-      <pubDate>Fri, 03 Jul 2026 03:06:16 +0000</pubDate>
     </item>
     <item>
       <title>「日本企業風GitHub」のパロディに学ぶ、なぜJTC業務システムは「警告と文字」で埋め尽くされるのか</title>
       <link>https://qiita.com/Shiro_Shihi/items/4928640d01c78480962b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Shiro_Shihi/items/4928640d01c78480962b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Qiita)</description>
+      <description>[Score: 85] 「日本企業がGitHubを構築した場合」のパロディ画像が話題となり、JTC（伝統的日本企業）の業務システムUIが警告と文字で溢れる理由を考察しています。 / その原因は、ユーザーの誤操作をシステム側の責任とする文化にあり、開発者が責任回避のために注意書きを増やす結果だと分析。 / ユーザーのためのUIではなく、開発者が身を守るための「よろい」としてUIが形成されるという、組織文化に根差した問題点を指摘しています。 (Source: Qiita)</description>
       <pubDate>Sat, 04 Jul 2026 03:45:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>Meta、競合AIに不快なコンテンツを送りつけるため、数百人の契約者にティーンエイジャーのふりをさせていたと報じられる</title>
+      <link>https://www.reddit.com/r/technology/comments/1unfa9q/meta_paid_hundreds_of_contractors_to_pretend_to/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1unfa9q/meta_paid_hundreds_of_contractors_to_pretend_to/</guid>
+      <description>[Score: 85] Metaが数百人の契約者を雇い、競合他社のAIに不適切なコンテンツを送りつけるためにティーンエイジャーのふりをさせていたという報道。 / これはAIの倫理的利用、データ品質、および企業間の競争戦略における深刻な問題提起となる。 / 企業倫理とAI開発のあり方が問われる事態であり、業界全体への影響が大きい。 (Source: Reddit)</description>
+      <pubDate>Sat, 04 Jul 2026 17:45:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fable 5をトークン破産させずに使い倒す — オーケストレーターに徹させる運用</title>
+      <link>https://zenn.dev/yui/articles/740da24e9ee419</link>
+      <guid isPermaLink="false">https://zenn.dev/yui/articles/740da24e9ee419</guid>
+      <description>[Score: 85] Claude Fable 5の賢さを活かしつつ、トークン消費を抑える運用方法が紹介されています。 / Fable 5を「考えて、割り振って、まとめる」オーケストレーターに徹させ、コード生成などの泥臭い作業は安価なモデルに任せることで、トークン消費を削減し判断の質も維持します。 / この運用を容易にするため、エージェントチームのパッケージマネージャー「ccteams」CLIツールが開発・提供されています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 04 Jul 2026 11:32:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Windows上でLinuxコンテナが動く「WSL Containers」がパブリックプレビュー。Windowsファイルへのアクセスが2倍高速に</title>
+      <link>https://www.publickey1.jp/blog/26/windowslinuxwsl_containerswindows2.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/windowslinuxwsl_containerswindows2.html</guid>
+      <description>[Score: 85] MicrosoftがWSLの新機能「WSL Containers」のパブリックプレビューを開始しました。 / これにより、Windows上でLinuxコンテナ型仮想化が利用可能になり、Windowsファイルへのアクセス速度が2倍に向上します。 / WSL Containers CLIとAPIが提供され、将来的にはWSLのデフォルト機能として有効化される予定です。 (Source: Publickey)</description>
+      <pubDate>Tue, 30 Jun 2026 15:45:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIはすべてを忘れてしまう。Cogneeがそれを解決する方法</title>
+      <link>https://dev.to/divyesh5981/your-ai-forgets-everything-heres-how-cognee-fixes-it-4hoe</link>
+      <guid isPermaLink="false">https://dev.to/divyesh5981/your-ai-forgets-everything-heres-how-cognee-fixes-it-4hoe</guid>
+      <description>[Score: 85] 多くのAIモデルは過去の会話を記憶せず、毎回最初から説明が必要となる問題がある。 / Cogneeは、従来のRAGシステムが持つ「類似性検索」の限界を超え、情報間の関係性を理解するオープンソースの記憶レイヤーを提供する。 / これにより、AIはドキュメント、ファイル、ウェブサイトなどから学習した知識を会話間で記憶し、必要に応じて活用できるようになる。 (Source: Dev.to)</description>
+      <pubDate>Sun, 05 Jul 2026 06:36:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Shadcn/UIがRadixの代わりにBase UIをデフォルトとして採用</title>
+      <link>https://ui.shadcn.com/docs/changelog</link>
+      <guid isPermaLink="false">https://ui.shadcn.com/docs/changelog</guid>
+      <description>[Score: 80] Shadcn/UIが、これまでのRadixに代わり、Base UIをデフォルトのコンポーネントライブラリとして採用しました。 / Radixの開発者たちが新たに手掛けたBase UIは、Radixの経験を活かし、ヘッドレスコンポーネントの新たな標準を目指します。 / 既存のRadixユーザーは移行の必要はなく、両ライブラリが引き続きサポートされ、新規プロジェクトでは選択肢として提供されます。 (Source: Hacker News)</description>
+      <pubDate>Sun, 05 Jul 2026 04:46:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Code (Opus 4.8) が数分固まる問題、188セッション実測したら原因はAPIでもネットワークでもなかった</title>
+      <link>https://zenn.dev/yuki_fujisawa/articles/a155d388e61acc</link>
+      <guid isPermaLink="false">https://zenn.dev/yuki_fujisawa/articles/a155d388e61acc</guid>
+      <description>[Score: 80] Claude Code (Opus 4.8)で発生する数分間の応答停滞問題について、188セッションの実測ログ分析が行われました。 / APIやネットワークが原因ではないことが判明し、停滞中の状態を「待ち」と「生成中」に分類して分析。 / Opus 4.8では、Sonnet 5と比較して120秒超の停滞が約3.4倍多く発生しており、モデル内部の挙動に起因する可能性が示唆されています。 (Source: Zenn)</description>
+      <pubDate>Sat, 04 Jul 2026 10:26:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>バイブコーディングで本当にアプリはリリースできるのか？エンジニアが実際にアプリをリリースして感じたこと</title>
+      <link>https://qiita.com/yutaka_kozuka/items/cc3be5930b972130885d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yutaka_kozuka/items/cc3be5930b972130885d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] AIを活用した「バイブコーディング」でアプリをリリースした経験から、商用・セキュアなアプリ開発における非エンジニアの課題を考察しています。 / 筆者はエンジニア経験者としてClaude Codeを使いWeb/iOSアプリをリリースできたものの、実務レベルのセキュリティ維持には専門知識が不可欠だと指摘。 / AIは開発のハードルを下げるが、セキュリティやインフラ設計などの深い理解がなければ商用利用は難しいという現実的な見解を示しています。 (Source: Qiita)</description>
+      <pubDate>Fri, 03 Jul 2026 03:06:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>DNSを基盤にAIエージェントに信頼できる名前を与える「Agent Name Service（ANS）」、立ち上げ意向をLinux Foundationが発表</title>
+      <link>https://www.publickey1.jp/blog/26/dnsaiagent_name_serviceanslinux_foundation.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/dnsaiagent_name_serviceanslinux_foundation.html</guid>
+      <description>[Score: 80] Linux Foundationが、インターネット上で稼働するAIエージェントに信頼できる識別子としての名前を提供するオープンソース標準「Agent Name Service（ANS）」の立ち上げ意向を発表しました。 / ANSは既存のDNS基盤を拡張し、AIエージェントの認証、信頼性、ガバナンス、相互運用性に関する課題解決を目指します。 / これにより、AIエージェントがどの組織や人物によって提供されているか、またAIが生成したコードやシステム運用の履歴が本物であるかなどを検証できるようになります。 (Source: Publickey)</description>
+      <pubDate>Wed, 01 Jul 2026 15:04:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Node.js、Bright Data、Gemini、Playwrightでブロックされないブラウザ自動化AIエージェントを構築する方法</title>
+      <link>https://dev.to/codewithshahan/how-to-build-a-production-ready-browser-automation-ai-agent-with-nodejs-bright-data-gemini-and-39ii</link>
+      <guid isPermaLink="false">https://dev.to/codewithshahan/how-to-build-a-production-ready-browser-automation-ai-agent-with-nodejs-bright-data-gemini-and-39ii</guid>
+      <description>[Score: 80] 現代のウェブサイトは、ブラウザフィンガープリントやIPレピュテーションなどを用いて自動化されたトラフィックを積極的に検出します。 / 本記事では、これらの検出を回避し、ブロックされないAIブラウザ自動化エージェントを構築する実践的な方法を解説しています。 / Node.js、Bright Data、Gemini、Playwrightといったツールを組み合わせて、本物のブラウザと見なされるエージェントを作成する手法が紹介されています。 (Source: Dev.to)</description>
+      <pubDate>Sun, 05 Jul 2026 06:53:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>アドバイザリデータベースの内部と、脆弱性量が記録を破ったときに何が起こるか</title>
+      <link>https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/</link>
+      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/</guid>
+      <description>[Score: 80] 2026年5月、GitHub Advisory Databaseは過去最高の1,560件のレビュー済みアドバイザリを公開したが、それでも脆弱性の増加ペースには追いつかなかった。 / 脆弱性報告の量と複雑性が大幅に増加しており、システム全体が新たな運用規模に直面していることが示されている。 / GitHubは、脆弱性報告の品質と共有責任を重視し、完全な脆弱性データの提出、メンテナーとの連携、必要な場合のCVEリクエストを呼びかけている。 (Source: GitHub Blog)</description>
+      <pubDate>Mon, 29 Jun 2026 16:10:20 +0000</pubDate>
     </item>
     <item>
       <title>Fable 5の消費が激しすぎたので、設計とレビューだけに使う仕組みをClaude Codeで作ってみた</title>
       <link>https://qiita.com/fwatanab/items/e2c51c2a783915b275a9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/fwatanab/items/e2c51c2a783915b275a9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Qiita)</description>
+      <description>[Score: 78] Claude CodeのFable 5モデルのトークン消費が激しいため、効率的な運用方法として、役割に応じてモデルを使い分ける仕組みが紹介されています。 / 設計やレビューなど重要度の高いタスクにはFable 5を、調査や実装など消費量の多いタスクにはOpusを割り当てることでコストを最適化。 / サブエージェントを「judge」「builder」「worker」に分け、スキルにモデル名を直接書かないことで、モデル切り替えの柔軟性と保守性を高める方法を解説しています。 (Source: Qiita)</description>
       <pubDate>Thu, 02 Jul 2026 11:31:50 +0000</pubDate>
     </item>
     <item>
-      <title>White House deletes thousands of web pages about energy conservation as heatwave slams US</title>
-      <link>https://www.reddit.com/r/technology/comments/1und74u/white_house_deletes_thousands_of_web_pages_about/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1und74u/white_house_deletes_thousands_of_web_pages_about/</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Reddit)</description>
-      <pubDate>Sat, 04 Jul 2026 16:20:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>Meta Paid Hundreds of Contractors to Pretend to Be Teenagers While Barraging Its Competitors’ AI With Disturbing Content</title>
-      <link>https://www.reddit.com/r/technology/comments/1unfa9q/meta_paid_hundreds_of_contractors_to_pretend_to/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1unfa9q/meta_paid_hundreds_of_contractors_to_pretend_to/</guid>
-      <description>[Score: 50] (解析中にエラーが発生しました) (Source: Reddit)</description>
-      <pubDate>Sat, 04 Jul 2026 17:45:55 +0000</pubDate>
+      <title>静的サイトジェネレータ「Astro 7.0」正式リリース、ビルドシステムがVite 8/Rolldownに、Rust製コンパイラ採用で高速化</title>
+      <link>https://www.publickey1.jp/blog/26/astro_70vite_8rolldownrust.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/astro_70vite_8rolldownrust.html</guid>
+      <description>[Score: 78] 静的サイトジェネレータ「Astro」の最新版7.0が正式リリースされ、ビルドシステムがVite 8/Rolldownに更新されました。 / Vite 8ではRustで書かれた新しいバンドラ「Rolldown」が採用されており、これによりAstro 7.0はビルド速度が60%以上高速化されています。 / AstroはReactやVueなど多様なフレームワークに対応し、最小限のJavaScriptで高速なWebサイトを生成できる点が特徴です。 (Source: Publickey)</description>
+      <pubDate>Wed, 01 Jul 2026 15:01:18 +0000</pubDate>
     </item>
   </channel>
 </rss>
