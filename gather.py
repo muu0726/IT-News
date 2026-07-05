@@ -184,9 +184,15 @@ def parse_json_safely(text: str):
     if not text:
         return None
     text = text.strip().lstrip("﻿")
-    text = re.sub(r"^```(?:json)?\s*\n?", "", text, flags=re.IGNORECASE)
-    text = re.sub(r"\n?```\s*$", "", text)
-    text = text.strip()
+    # 不要なプレフィックス・サフィックス（「以下がJSONです」等）を除去するため、
+    # 最初の `[` または `{` から、最後の `]` または `}` までを抽出する
+    match = re.search(r"(\[.*\]|\{.*\})", text, re.DOTALL)
+    if match:
+        text = match.group(1)
+    else:
+        text = re.sub(r"^```(?:json)?\s*\n?", "", text, flags=re.IGNORECASE)
+        text = re.sub(r"\n?```\s*$", "", text)
+        text = text.strip()
     try:
         return json.loads(text)
     except json.JSONDecodeError as e:
