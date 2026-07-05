@@ -1,9 +1,10 @@
 /**
  * Service Worker — IT Info Hub
- * Cache First + Network Fallback 戦略
+ * HTML/JSON: Network First（常に最新優先・オフライン時のみキャッシュ）
+ * その他静的アセット: Cache First
  */
 
-const CACHE_NAME = 'itinfohub-v2';
+const CACHE_NAME = 'itinfohub-v3';
 
 const PRECACHE_URLS = [
   './',
@@ -36,21 +37,31 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Fetch: Network First for JSON data, Cache First for static assets
+// ネットワーク優先（成功時はキャッシュ更新、失敗時はキャッシュへフォールバック）
+function networkFirst(request) {
+  return fetch(request)
+    .then((response) => {
+      if (response.ok) {
+        const clone = response.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+      }
+      return response;
+    })
+    .catch(() => caches.match(request));
+}
+
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
-  // JSON データは Network First（最新データ優先）
-  if (url.pathname.endsWith('.json')) {
-    event.respondWith(
-      fetch(event.request)
-        .then((response) => {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
-          return response;
-        })
-        .catch(() => caches.match(event.request))
-    );
+  // HTML（ナビゲーション）と JSON/XML データは Network First
+  // → フロント更新やデータ更新が即時反映される
+  if (
+    event.request.mode === 'navigate' ||
+    url.pathname.endsWith('.html') ||
+    url.pathname.endsWith('.json') ||
+    url.pathname.endsWith('.xml')
+  ) {
+    event.respondWith(networkFirst(event.request));
     return;
   }
 
