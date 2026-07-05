@@ -65,8 +65,8 @@ RSS_FEEDS = {
 }
 RSS_FETCH_COUNT = 5
 
-# Gemini API 設定
-GEMINI_MODEL = "gemini-2.5-flash-lite"
+# gemini-2.5-flash: 安定版・高速応答・JSON出力完全対応
+GEMINI_MODEL = "gemini-2.5-flash"
 GEMINI_EMBED_MODEL = "gemini-embedding-001"
 GEMINI_API_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
@@ -79,7 +79,7 @@ GEMINI_EMBED_URL = (
 GEMINI_SLEEP_SEC = 4          # リクエスト間隔（15 RPM対応）
 GEMINI_MAX_RETRIES = 3        # リトライ上限
 GEMINI_BACKOFF_MAX_SEC = 30   # バックオフ上限秒数
-GLOBAL_TIMEOUT_SEC = 480      # 全体タイムアウト: 8分
+GLOBAL_TIMEOUT_SEC = 840      # 全体タイムアウト: 14分
 
 ANALYSIS_BATCH_SIZE = 6       # 1リクエストで解析する記事数
 
@@ -406,7 +406,7 @@ def call_gemini_rest(prompt: str, api_key: str) -> list | dict | None:
 
     for attempt in range(1, GEMINI_MAX_RETRIES + 1):
         try:
-            resp = requests.post(url, json=payload, timeout=60)
+            resp = requests.post(url, json=payload, timeout=120)
 
             if resp.status_code == 200:
                 data = resp.json()
@@ -585,7 +585,7 @@ def fetch_embeddings(texts: list[str], api_key: str) -> list[list[float]] | None
         ]
     }
     try:
-        resp = requests.post(url, json=payload, timeout=60)
+        resp = requests.post(url, json=payload, timeout=120)
         if resp.status_code != 200:
             print(f"[WARN] Embedding API returned {resp.status_code}: {resp.text[:120]}")
             return None
