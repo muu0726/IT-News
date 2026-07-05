@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-07-05T16:07:24.091122+09:00",
+  "week_start": "2026-06-29",
+  "week_end": "2026-07-05",
+  "article_count": 182,
+  "overview": "今週のITニュースは、AI技術の進化と実用化が引き続き大きな注目を集めました。特に「Loop Engineering」という新しい概念が提唱され、AIエージェントとの対話方法や開発アプローチに変化の兆しが見られます。同時に、AIの倫理的利用や規制に関する議論も活発化し、政府によるAIモデルの評価・禁止に関する動きや、企業による不適切なAI利用の報道がありました。また、合成生物学における人工細胞の増殖成功や、宇宙産業における大型買収など、科学技術のフロンティアでの画期的な進展も報じられています。",
+  "trends": [
+    "AIエージェントとLoop Engineeringの台頭",
+    "AIの倫理、規制、および企業競争",
+    "宇宙産業の再編と新技術の進展",
+    "合成生物学における科学的ブレイクスルー",
+    "開発効率化と基盤技術の改善"
+  ],
+  "highlights": [
+    {
+      "title": "すでに4800スター、Loop Engineeringとは — “自分の仕事はloopを書くこと” (Zenn)",
+      "url": "https://zenn.dev/acntechjp/articles/0c63b5b08bbdb9",
+      "comment": "AIエージェントとの対話方法を根本的に変える「Loop Engineering」という新しい概念が提唱され、AI開発のパラダイムシフトを示唆する重要な記事です。"
+    },
+    {
+      "title": "初めて、ゼロから構築された細胞が増殖し分裂 (Hacker News)",
+      "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
+      "comment": "合成生物学における画期的な進歩であり、生命の基本原理の理解を深め、将来的な医療やバイオテクノロジーへの応用が期待される科学的ブレイクスルーです。"
+    },
+    {
+      "title": "Rocket Lab、Iridiumを買収へ - 完全統合型宇宙サービス企業を創出する歴史的ディール (Hacker News)",
+      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
+      "comment": "宇宙産業における垂直統合型のサービス提供を加速させる大型買収であり、今後の宇宙ビジネスの構造変化に大きな影響を与える歴史的な動きです。"
+    },
+    {
+      "title": "コードレビュー指摘300件を3ヶ月分類したら効いていたのは2種類だけだった (Zenn)",
+      "url": "https://zenn.dev/kenimo49/articles/code-review-300-comments-2-effective-categories",
+      "comment": "開発現場におけるコードレビューの効率化と品質向上に直結する実践的な知見を提供しており、多くの開発チームにとって示唆に富む内容です。"
+    },
+    {
+      "title": "欧州議会に対するスパイ活動 (Hacker News)",
+      "url": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/",
+      "comment": "民主的機関に対するスパイウェアの悪用が明らかになり、政府による監視技術の倫理的利用とプライバシー保護の重要性を改めて浮き彫りにする深刻な問題です。"
+    }
+  ]
+}
