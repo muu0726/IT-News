@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 05 Jul 2026 22:58:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 23:03:32 +0000</lastBuildDate>
     <item>
-      <title>コードレビュー指摘300件を3ヶ月分類したら効いていたのは2種類だけだった</title>
-      <link>https://zenn.dev/kenimo49/articles/code-review-300-comments-2-effective-categories</link>
-      <guid isPermaLink="false">https://zenn.dev/kenimo49/articles/code-review-300-comments-2-effective-categories</guid>
-      <description>[Score: 95] 3ヶ月間で300件のコードレビュー指摘を分析した結果、バグ指摘と仕様指摘の2種類のみが品質向上に大きく寄与していることが判明した。 / StyleやNamingなどの指摘は効果が薄く、むしろ多すぎるとレビュアーの認知負荷を高め、バグ検出感度を低下させる可能性が示唆された。 / コードレビューの効率と効果を最大化するためには、指摘の焦点を絞り、自動化できるものは自動化し、本質的な問題に注力すべきだと提言している。 (Source: Zenn)</description>
-      <pubDate>Sat, 04 Jul 2026 09:57:02 +0000</pubDate>
+      <title>1Passwordは、あなたのマスターパスワードを一度も受信していません</title>
+      <link>https://qiita.com/kenimo49/items/d1151389d17e50ad5564?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kenimo49/items/d1151389d17e50ad5564?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 95] パスワードマネージャー1Passwordが、ユーザーのマスターパスワードをサーバーに送信せずに認証を行う独自のセキュリティ設計を解説しています。 / この設計により、サーバーが侵害されてもマスターパスワードや金庫の中身が漏洩するリスクが大幅に低減され、LastPassのような大規模被害を防いでいます。 / 「2つの秘密の鍵」と「見せずに証明する認証」という仕組みで、高いUXと強固なセキュリティを両立させている点が特徴です。 (Source: Qiita)</description>
+      <pubDate>Sun, 05 Jul 2026 11:51:26 +0000</pubDate>
     </item>
     <item>
-      <title>スタートアップをとりまく思想</title>
-      <link>https://blog.takaumada.com/entry/startup-thought-2026</link>
-      <guid isPermaLink="false">https://blog.takaumada.com/entry/startup-thought-2026</guid>
-      <description>[Score: 95] シリコンバレーのスタートアップが、経済活動だけでなく政治や思想の領域にまで影響力を拡大している現状を分析しています。 / 巨大な資本と権力がソフトウェア企業に集中し、有力な起業家やVCが政治に介入する構造が形成されつつあると指摘。 / スタートアップがイノベーションの担い手から、思想的・政治的な存在へと変貌していることを考察しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 05 Jul 2026 10:27:15 +0000</pubDate>
+      <title>言語モデルにおけるグローバルワークスペース</title>
+      <link>https://www.anthropic.com/research/global-workspace</link>
+      <guid isPermaLink="false">https://www.anthropic.com/research/global-workspace</guid>
+      <description>[Score: 90] Anthropicの研究は、人間の意識的な思考に似た「グローバルワークスペース」がClaudeのような現代の言語モデルにも存在することを示唆しています。 / モデル内部に「J-space」と呼ばれる特別なニューラルパターン群を発見し、これらが特定の単語と関連付けられ、モデルの推論において重要な役割を果たすことを明らかにしました。 / この発見は、言語モデルが単なる自動処理を超え、より高度な内部表現と推論能力を持つ可能性を示しており、AIの理解を深める上で重要です。 (Source: Hacker News)</description>
+      <pubDate>Mon, 06 Jul 2026 17:44:08 +0000</pubDate>
     </item>
     <item>
-      <title>新しいAIチューターがダートマス大学のコースで0.71-1.30 SDの効果量を示す</title>
-      <link>https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf</link>
-      <guid isPermaLink="false">https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf</guid>
-      <description>[Score: 90] ダートマス大学のコースにおいて、新しいAIチューターが0.71から1.30標準偏差という高い効果量を示したという研究結果です。 / この効果量は、AIが学生の学習成果向上に大きく貢献する可能性を示唆しており、教育分野におけるAIの応用が注目されます。 / 詳細な内容はPDF論文で公開されており、AIを活用した個別最適化教育の有効性に関する重要な知見を提供すると考えられます。 (Source: Hacker News)</description>
-      <pubDate>Sun, 05 Jul 2026 18:47:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIに外部脳を持たせて1ヶ月運用した全記録</title>
-      <link>https://zenn.dev/nobu666/articles/ai-external-brain-digest</link>
-      <guid isPermaLink="false">https://zenn.dev/nobu666/articles/ai-external-brain-digest</guid>
-      <description>[Score: 90] AIのセッションごとの記憶リセット問題を解決するため、Obsidianのvaultを外部記憶としてAIに読み書きさせる仕組みを自作し、1ヶ月運用した記録。 / 特定のAIにロックインされない3原則に基づき、読み書きループ、透明性の確保、フォルダ分けによる知識管理、ミス記録ノートの活用などを実践。 / この外部脳により、AIが過去の経験から学び、同じミスを繰り返す頻度が減るなど、その有効性が実証された。 (Source: Zenn)</description>
-      <pubDate>Sat, 04 Jul 2026 14:55:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>新しいHTTPメソッド「QUERY」をHono + Bunで実装してみる</title>
-      <link>https://qiita.com/maaaashi/items/6eefccb7361f64607865?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/maaaashi/items/6eefccb7361f64607865?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 新しいHTTPメソッド「QUERY」が&quot;Proposed Standard&quot;となり、その概要とHono + Bunでの実装方法を解説しています。 / QUERYは「ボディを持てる、安全なGET」として、GETとPOSTの間のギャップを埋めることを目的としています。 / 複雑な検索条件をボディで渡しつつ、キャッシュ可能な読み取り操作を実現する具体的なユースケースと実装例が示されています。 (Source: Qiita)</description>
-      <pubDate>Fri, 03 Jul 2026 11:58:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>CIA長官、高度なAIを核兵器と同等の脅威と位置づけ</title>
-      <link>https://www.reddit.com/r/technology/comments/1uo8qv5/cia_chief_puts_advanced_ai_in_the_same_league_as/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1uo8qv5/cia_chief_puts_advanced_ai_in_the_same_league_as/</guid>
-      <description>[Score: 90] CIA長官が、高度なAI技術を核兵器と同等の破壊力を持つものとして位置づけていることが報じられました。 / これはAIが国家安全保障や国際情勢に与える潜在的な影響の大きさを強調するものです。 / AIの倫理的・軍事的側面に対する国際的な議論と規制の必要性が高まっています。 (Source: Reddit)</description>
-      <pubDate>Sun, 05 Jul 2026 17:56:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>私のGitHubトークンが私のものでなくなった日</title>
-      <link>https://dev.to/codedibia/the-day-my-github-token-stopped-being-mine-ga0</link>
-      <guid isPermaLink="false">https://dev.to/codedibia/the-day-my-github-token-stopped-being-mine-ga0</guid>
-      <description>[Score: 90] 筆者のGitHub個人アクセストークンが、開発環境のサプライチェーン攻撃によって流出し、悪意のあるコミットがプライベートリポジトリにプッシュされる被害に遭いました。 / この攻撃によりクライアントとの契約が終了するなど深刻な影響が生じ、筆者はこの経験からセキュリティ対策の重要性を痛感しています。 / 開発者が依存関係のインストールや拡張機能の更新を通じて、知らず知らずのうちにトークンが窃取されるという、2026年現在で頻発するサプライチェーン攻撃の典型的な事例が語られています。 (Source: Dev.to)</description>
-      <pubDate>Sun, 05 Jul 2026 22:34:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>エンタープライズMCPゲートウェイ購入ガイド：SSO、SCIM、監査、ガバナンス要件</title>
-      <link>https://dev.to/dumebii/the-enterprise-mcp-gateway-buyers-guide-sso-scim-audit-and-governance-requirements-ho7</link>
-      <guid isPermaLink="false">https://dev.to/dumebii/the-enterprise-mcp-gateway-buyers-guide-sso-scim-audit-and-governance-requirements-ho7</guid>
-      <description>[Score: 90] AIエージェントを大規模に展開する組織にとって、MCPゲートウェイは必須のインフラとなっています。 / MCPゲートウェイは、AIエージェントとツール間の制御プレーンとして機能し、セキュリティ、監査、アクセス制御、ID帰属を提供します。 / 適切なゲートウェイの選択は、AIを安全にスケールさせるための基盤を築き、コンプライアンスリスクを回避するために重要です。 (Source: Dev.to)</description>
-      <pubDate>Sun, 05 Jul 2026 22:31:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Codeの dataviz スキルが凄かった</title>
-      <link>https://qiita.com/leomarokun/items/74212606fbf4f01d82dd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/leomarokun/items/74212606fbf4f01d82dd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] Claude Codeの「datavizスキル」を活用し、配色などを自分で決めずに売上ダッシュボードを作成した事例を紹介しています。 / このスキルは、データ可視化のアンチパターンを避け、視認性の高い「地味だけど正しい」デザインを自動生成します。 / 検証済みのカラーパレットやダークモード対応など、デザインガイドラインが「実行して合否が出る」形で提供される点が特徴です。 (Source: Qiita)</description>
-      <pubDate>Fri, 03 Jul 2026 15:50:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>オーガニックマップ</title>
-      <link>https://organicmaps.app/</link>
-      <guid isPermaLink="false">https://organicmaps.app/</guid>
-      <description>[Score: 85] Organic Mapsは、プライバシーを重視したオフライン地図＆GPSアプリで、ハイキング、サイクリング、運転などに利用できます。 / 広告やトラッキングが一切なく、OpenStreetMapデータを利用し、インターネット接続なしで全機能が利用可能です。 / オープンソースコミュニティによって開発され、ユーザーのプライバシーを基本的人権と捉え、監視を拒否する姿勢を強調しています。 (Source: Hacker News)</description>
-      <pubDate>Sun, 05 Jul 2026 14:14:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>Goにおけるゼロコピー：sendfile、splice、そしてio.Copyのコスト</title>
-      <link>https://segflow.github.io/post/zero-copy-sendfile-splice/</link>
-      <guid isPermaLink="false">https://segflow.github.io/post/zero-copy-sendfile-splice/</guid>
-      <description>[Score: 85] Go言語でのファイル転送において、`io.Copy`が内部的に`sendfile(2)`や`splice(2)`といったゼロコピー最適化を利用していることを解説。 / わずかなミドルウェアの変更でこの最適化が無効になり、パフォーマンスが大幅に低下する事例を紹介し、その原因と仕組みを深掘り。 / ユーザー空間でのバッファコピーを削減し、CPU負荷とスループットを改善するカーネルレベルの転送メカニズムの重要性を強調している。 (Source: Hacker News)</description>
-      <pubDate>Sun, 05 Jul 2026 20:24:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>バイブコーディングで本当にアプリはリリースできるのか？エンジニアが実際にアプリをリリースして感じたこと</title>
-      <link>https://qiita.com/yutaka_kozuka/items/cc3be5930b972130885d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yutaka_kozuka/items/cc3be5930b972130885d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AIを活用した「バイブコーディング」でアプリをリリースしたエンジニアが、その実体験を共有しています。 / 商用・セキュアなアプリ開発において、非エンジニアがAIのみでリリースするのはまだ難しいと結論付けています。 / 実務レベルのセキュリティ判断にはエンジニアの経験が不可欠であり、AIの活用には限界があることを示唆しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 03 Jul 2026 03:06:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIブラウザがユーザーに敵対し、壊滅的なハッキングを実行する可能性</title>
-      <link>https://www.reddit.com/r/technology/comments/1uo3pqo/ai_browsers_can_basically_be_hypnotized_into/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1uo3pqo/ai_browsers_can_basically_be_hypnotized_into/</guid>
-      <description>[Score: 85] AIを搭載したブラウザが、ユーザーの意図に反して「催眠術にかかったように」行動し、壊滅的なハッキングを実行する可能性があると警告されています。 / これは、AIの脆弱性を悪用した新たなサイバー攻撃の脅威を示唆するものです。 / AI技術の進化に伴い、そのセキュリティリスクへの対策が喫緊の課題となっています。 (Source: Reddit)</description>
-      <pubDate>Sun, 05 Jul 2026 14:33:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>ClaudeのAPI費用が激減。システムプロンプトを「画像」として読ませる新ツールの仕組み</title>
-      <link>https://xenospectrum.com/pxpipe-claude-token-image-compression/</link>
-      <guid isPermaLink="false">https://xenospectrum.com/pxpipe-claude-token-image-compression/</guid>
-      <description>[Score: 85] ClaudeのAPI利用コストを大幅に削減する新ツール「pxpipe」の仕組みが紹介されています。 / このツールは、システムプロンプトを画像として読み込ませることで、トークン数を圧縮し費用を激減させる技術です。 / AIモデルの入力形式の工夫により、コスト効率を向上させる画期的なアプローチとして注目されます。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 05 Jul 2026 10:24:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>DNSを基盤にAIエージェントに信頼できる名前を与える「Agent Name Service（ANS）」、立ち上げ意向をLinux Foundationが発表</title>
-      <link>https://www.publickey1.jp/blog/26/dnsaiagent_name_serviceanslinux_foundation.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/dnsaiagent_name_serviceanslinux_foundation.html</guid>
-      <description>[Score: 85] Linux Foundationは、インターネット上で稼働するAIエージェントに信頼できる識別子を提供する新オープンソース標準「Agent Name Service（ANS）」の立ち上げ意向を発表しました。 / ANSは既存のDNS基盤を拡張し、AIエージェントの認証、信頼、ガバナンス、相互運用性に関する課題を解決することを目指します。 / これにより、AIエージェントの提供元や生成されたコードの履歴などを検証できるようになり、AIの信頼性とセキュリティが向上すると期待されます。 (Source: Publickey)</description>
-      <pubDate>Wed, 01 Jul 2026 15:04:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubがシークレットスキャンを活用して「インボックスゼロ」を達成した方法</title>
-      <link>https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/</link>
-      <guid isPermaLink="false">https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/</guid>
-      <description>[Score: 85] GitHubは、開発中のシークレットスキャン機能を活用し、15,000以上のリポジトリに散在する20,000以上のシークレットを発見しました。 / 実際の脅威を特定し、所有者を割り当て、安全に修正するプロセスを経て、9ヶ月で未対応のシークレットアラートをゼロにしました。 / この取り組みは、長年のソフトウェア開発企業におけるシークレット管理の進化と、セキュリティ向上への継続的な投資の重要性を示しています。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 02 Jul 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub Advisory Databaseの内部と、脆弱性報告数が記録を更新したときに何が起こるか</title>
-      <link>https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/</guid>
-      <description>[Score: 85] GitHub Advisory Databaseは2026年5月に過去最高の1,560件の脆弱性勧告を公開し、脆弱性報告の量が記録的に増加している現状を報告しました。 / 脆弱性エコシステムが根本的に変化し、報告数と複雑性が増大したため、新しい勧告のレビュー時間が長期化しています。 / GitHubは脆弱性報告の品質と共有責任を重視しており、ユーザーには完全なデータ提出や関係者との連携を呼びかけています。 (Source: GitHub Blog)</description>
-      <pubDate>Mon, 29 Jun 2026 16:10:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Code (Opus 4.8) が数分固まる問題、188セッション実測したら原因はAPIでもネットワークでもなかった</title>
-      <link>https://zenn.dev/yuki_fujisawa/articles/a155d388e61acc</link>
-      <guid isPermaLink="false">https://zenn.dev/yuki_fujisawa/articles/a155d388e61acc</guid>
-      <description>[Score: 80] Claude Code (特にOpus 4.8) で発生する応答の停滞問題について、188セッションの実測ログを分析し、その原因を特定した。 / 応答ギャップを「待ち」と「生成中」に分類し、APIやネットワークの問題ではないことをデータで示している。 / 中央値の応答速度は速いものの、p99以降のテール部分でOpus 4.8の停滞時間がSonnet 5の約3.4倍に達することが明らかになった。 (Source: Zenn)</description>
-      <pubDate>Sat, 04 Jul 2026 10:26:56 +0000</pubDate>
+      <title>GLM 5.2と迫りくるAIマージン崩壊</title>
+      <link>https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/</link>
+      <guid isPermaLink="false">https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/</guid>
+      <description>[Score: 90] AI経済における誤解されがちな変化として、モデルトレーニング費用と推論費用の違いに焦点を当てています。 / トレーニングは初期投資ですが、推論は需要に応じて変動する真の限界費用であり、現在のAPI料金は高い粗利益を含んでいます。 / AIモデルのコモディティ化が進むにつれて、推論コストの低下がAIビジネスモデルに大きな影響を与える可能性を指摘しています。 (Source: Hacker News)</description>
+      <pubDate>Mon, 06 Jul 2026 20:14:55 +0000</pubDate>
     </item>
     <item>
       <title>「日本企業風GitHub」のパロディに学ぶ、なぜJTC業務システムは「警告と文字」で埋め尽くされるのか</title>
       <link>https://qiita.com/Shiro_Shihi/items/4928640d01c78480962b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Shiro_Shihi/items/4928640d01c78480962b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] 「日本企業風GitHub」のパロディ画像から、JTC（伝統的日本企業）の業務システムUIが使いにくい理由を考察しています。 / 「間違えた人」ではなく「システム」のせいにされる文化が、開発側の責任回避のために注意書きや警告を増やす原因と指摘。 / 結果として、ユーザーのためのUIではなく、開発者が身を守るための「よろい」と化した画面が生まれる構造的な課題を解説しています。 (Source: Qiita)</description>
+      <description>[Score: 90] 「日本企業がGitHubを構築した場合」のパロディ画像がSNSで大きな反響を呼び、JTC（伝統的日本企業）の業務システムUIが抱える問題が浮き彫りになりました。 / 使いにくいUIの背景には、「間違えた人」ではなく「システム」のせいにされる文化があり、開発側が責任回避のために注意書きを増やす構造的な課題があります。 / 結果として、画面はユーザーのためではなく、開発者が身を守るための「警告と手続きの塊」と化してしまう実態を考察しています。 (Source: Qiita)</description>
       <pubDate>Sat, 04 Jul 2026 03:45:44 +0000</pubDate>
     </item>
     <item>
-      <title>「VPC内通信もTLSにすべき？」と聞かれて ── そもそもAWS内で盗聴できるのか脅威モデルで確かめた話</title>
-      <link>https://qiita.com/ntaka329/items/de23144fdf7305a2e0c1</link>
-      <guid isPermaLink="false">https://qiita.com/ntaka329/items/de23144fdf7305a2e0c1</guid>
-      <description>[Score: 80] AWS VPC内の通信におけるTLS化の必要性について、脅威モデルと一次情報に基づいて詳細に検証しています。 / VPCがSDN（Software Defined Network）で構成されており、従来の物理LANとは異なり他者のパケット盗聴が困難であることを解説。 / 結論として、VPC内TLS化はセキュリティ向上よりもコストとガイドライン準拠の問題であると整理しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 01 Jul 2026 04:15:32 +0000</pubDate>
+      <title>Apple、次期macOS 27でSwift言語をシステムカーネル開発に採用。メモリ安全な言語として</title>
+      <link>https://www.publickey1.jp/blog/26/applemacos_27swift.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/applemacos_27swift.html</guid>
+      <description>[Score: 90] Appleが次期macOS 27「Golden Gate」から、システムカーネル開発にSwift言語を採用することを発表しました。 / これは、Swiftが持つメモリ安全性を活用し、バッファオーバーフローやメモリリークなどの脆弱性を防ぐことを目的としています。 / これまでC/C++/Objective-Cが主流だったカーネル開発において、より安全で効率的な開発手法への転換を示す重要な動きです。 (Source: Publickey)</description>
+      <pubDate>Mon, 06 Jul 2026 15:11:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>UNIX系コマンドをWindowsに移植／macOS上にLinuxコンテナを統合／Ubuntu、開発環境をコマンド一発で構築ほか、2026年6月の人気記事</title>
+      <link>https://www.publickey1.jp/blog/26/unixwindowsmacoslinuxubuntu20266.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/unixwindowsmacoslinuxubuntu20266.html</guid>
+      <description>[Score: 90] 2026年6月の人気記事として、WindowsへのUNIX系コマンド移植「Coreutils for Windows」が1位に。 / Windows上でLinuxコンテナを扱える「WSL containers」が2位、macOSにLinuxコンテナを統合する「Container machine」が3位。 / Microsoft BuildでWindowsがLinux開発環境をさらに取り込む方向性が示され、クロスプラットフォーム開発の進化が注目されます。 (Source: Publickey)</description>
+      <pubDate>Thu, 02 Jul 2026 15:34:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>RAGコンテキストを回答に必要な部分まで剪定する</title>
+      <link>https://www.kapa.ai/blog/how-we-prune-rag-context</link>
+      <guid isPermaLink="false">https://www.kapa.ai/blog/how-we-prune-rag-context</guid>
+      <description>[Score: 85] Kapa.aiは、大規模な知識ベースから複雑な質問に答えるAIアシスタント向けに、RAG（Retrieval Augmented Generation）のコンテキスト剪定技術を開発しました。 / この技術は、リトリーバーとジェネレーターの間に小型で安価なLLMを導入し、回答に不要なコンテキストチャンクを事前に除去することで、コンテキスト量を約68%削減します。 / これにより、リコール率を96%維持しつつ、クエリコストを約3分の1削減することに成功し、RAGシステムの効率とコストパフォーマンスを大幅に向上させます。 (Source: Hacker News)</description>
+      <pubDate>Mon, 06 Jul 2026 19:28:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>Python 3.14をインタープリタなしでネイティブコンパイル</title>
+      <link>https://github.com/can1357/pon</link>
+      <guid isPermaLink="false">https://github.com/can1357/pon</guid>
+      <description>[Score: 85] Rustで書かれたPython 3.14用のJIT/AoTネイティブコンパイラ「pon」が登場しました。 / インタープリタやバイトコードを使用せず、モジュールを直接機械語にコンパイルし、単一バイナリ実行ファイルを生成します。 / CPythonのテストスイートをパスし、Bun/V8のような高速なPythonランタイムを目指しています。 (Source: Hacker News)</description>
+      <pubDate>Mon, 06 Jul 2026 19:40:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>OCI Speechでリアルタイム英日翻訳アプリを作ってみた：途中で変わる文字起こしを字幕にする工夫</title>
+      <link>https://qiita.com/araidon/items/a742200d67e8018cda91?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/araidon/items/a742200d67e8018cda91?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] OCI Speech Live TranscribeとOCI Languageを活用し、英語音声をリアルタイムで日本語字幕に翻訳するアプリの開発について解説しています。 / 特に、リアルタイム文字起こしで発生する「途中で変化する認識結果（partial）」を、いかに自然な字幕として表示するかの工夫に焦点を当てています。 / 音声ストリームから得られるpartialとfinalの結果を適切に処理し、英語と日本語の語順の違いを考慮した字幕表示の課題と解決策を提示しています。 (Source: Qiita)</description>
+      <pubDate>Sun, 05 Jul 2026 13:21:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>クレカ決済代行の全東信が破産、端末が使用不可に　負債は1259億円で今年最大──帝国データバンク</title>
+      <link>https://www.itmedia.co.jp/news/articles/2607/06/news127.html</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/articles/2607/06/news127.html</guid>
+      <description>[Score: 85] クレジットカード決済代行サービスを提供する全東信が、負債1259億円を抱え破産手続きを開始しました。 / これにより、同社の決済端末は使用不可となり、加盟店はカード決済が利用できなくなる影響が出ています。 / コロナ禍での業績悪化や不正行為が原因とされ、加盟店は新たな決済契約が必要となります。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 06 Jul 2026 10:30:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>ブロードコムによるVMware製品抱き合わせ販売疑惑、独占禁止法違反と認定されず。公正取引委員会が調査を終了</title>
+      <link>https://www.publickey1.jp/blog/26/vmware_9.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vmware_9.html</guid>
+      <description>[Score: 85] 公正取引委員会は、ブロードコムによるVMware製品の抱き合わせ販売疑惑に関する独占禁止法違反調査を終了しました。 / ブロードコムはVMware買収後、製品ライセンスをセット販売のサブスクリプションに移行し、事実上の値上げが発生。 / しかし、違反を認定する事実は認められず、IT業界におけるM&amp;A後のビジネスモデル変更の合法性が確認されました。 (Source: Publickey)</description>
+      <pubDate>Sun, 05 Jul 2026 15:11:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>VEQRA AIの構築：Qwen3-235Bでエンタープライズインシデントを13秒で解決する方法</title>
+      <link>https://dev.to/nabilfattouch1/building-veqra-ai-how-i-resolved-enterprise-incidents-in-13-seconds-with-qwen3-235b-196d</link>
+      <guid isPermaLink="false">https://dev.to/nabilfattouch1/building-veqra-ai-how-i-resolved-enterprise-incidents-in-13-seconds-with-qwen3-235b-196d</guid>
+      <description>[Score: 85] 既存のMicrosoft 365自動化プラットフォームVEQRAに、Qwen3-235Bを活用したAIレイヤーが追加されました。 / このVEQRA AIは3つの専門AIエージェントを連携させ、エンタープライズインシデントをわずか13秒で解決します。 / プロンプトエンジニアリングにより、一貫した構造化JSON出力を実現し、人間介入なしの迅速な問題解決を可能にしています。 (Source: Dev.to)</description>
+      <pubDate>Mon, 06 Jul 2026 22:03:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>アドバイザリデータベースの内部と、脆弱性報告量が記録を更新したときに何が起こるか</title>
+      <link>https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/</link>
+      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/</guid>
+      <description>[Score: 85] GitHub Advisory Databaseは2026年5月に過去最高の1,560件のアドバイザリを公開し、脆弱性報告量が記録的に増加していることを示しています。 / この報告量の増加と複雑化により、アドバイザリのレビュー時間が長期化しており、システムは新たな運用規模に直面しています。 / GitHubは脆弱性報告における品質と共同責任を強調し、完全なデータ提出やCVE申請の適切な利用を呼びかけています。 (Source: GitHub Blog)</description>
+      <pubDate>Mon, 29 Jun 2026 16:10:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Fable 5の挙動をOpus 4.8で再現する — 「賢さ」を検証ループの工程に置き換える</title>
+      <link>https://zenn.dev/ait/articles/fable-emu-opus-harness</link>
+      <guid isPermaLink="false">https://zenn.dev/ait/articles/fable-emu-opus-harness</guid>
+      <description>[Score: 80] Claude Fable 5の「賢さ」を、旧世代モデルであるOpus 4.8で再現するためのハーネス「fable-emu」を紹介しています。 / Fable 5が内部で行う推論（分解・自己検証・長期一貫性）を、多パス・多エージェント・外部記憶を用いた外部工程として実装します。 / これにより、単一パスでは得られない品質を、トークンや時間を多く使うことで実現し、AIによるタスク実行の信頼性を高めます。 (Source: Zenn)</description>
+      <pubDate>Sun, 05 Jul 2026 17:27:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>C# で出来ること一覧 2026年版（.NET 10）</title>
+      <link>https://zenn.dev/microsoft/articles/what-can-you-do-on-dotnet10</link>
+      <guid isPermaLink="false">https://zenn.dev/microsoft/articles/what-can-you-do-on-dotnet10</guid>
+      <description>[Score: 80] .NET 10がリリースされ、2026年時点でのC#/.NETで開発可能なアプリケーションの種類がまとめられています。 / C#は2002年の登場から約20年で大きく進化し、かつてのJavaクローンという印象から、守備範囲の広い書きやすい言語へと変貌しました。 / 現在では.NET Frameworkや.NET Coreなどのプラットフォームが.NETに統合され、C#で多様なアプリケーション開発が可能になっています。 (Source: Zenn)</description>
+      <pubDate>Sun, 05 Jul 2026 15:02:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dockerfileは分けない〜本番用とローカル用を1つに保つ方法🐳</title>
+      <link>https://qiita.com/H-Hoshihara/items/82798a46964718f6bdb0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/H-Hoshihara/items/82798a46964718f6bdb0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Dockerfileを本番環境とローカル環境で分けるべきかという問いに対し、一つのDockerfileを環境変数で切り替える方法を提案しています。 / これにより、全体の構成がシンプルになり、環境ごとの差分をDockerfile内で直接記述するのではなく、実行時に外部から環境変数として注入することで対応します。 / 本記事では、開発ツールの削除によるイメージサイズ最適化ではなく、環境ごとのアプリケーション動作の切り替えに焦点を当てた実現方法を解説しています。 (Source: Qiita)</description>
+      <pubDate>Sun, 05 Jul 2026 17:32:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>若者の不正アクセス事件で「ホワイトハッカーにすべき」という意見にIT業界関係者は「倫理観が重要、要りません」と反論</title>
+      <link>https://togetter.com/li/2717678</link>
+      <guid isPermaLink="false">https://togetter.com/li/2717678</guid>
+      <description>[Score: 80] 若者による不正アクセス事件が発生するたびに、「才能があるからホワイトハッカーにすべき」という意見が出ますが、IT業界関係者は「知識や技術は後付けできても倫理観は難しい」として、そのような人材は不要だと強く反論しています。 / バンダイチャンネルへの不正アクセスで高校生が逮捕された事例を挙げ、犯罪行為を才能と誤解させる風潮に警鐘を鳴らしています。 / サイバーセキュリティ分野の専門家である徳丸浩氏も同様に「全くもってナンセンスな話」と述べ、倫理観の重要性を強調しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 06 Jul 2026 14:17:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>中国、AIとの「感情的交流」を規制　バイトダンスとアリババが「擬人化AI」終了へ</title>
+      <link>https://japan.cnet.com/article/35250128/</link>
+      <guid isPermaLink="false">https://japan.cnet.com/article/35250128/</guid>
+      <description>[Score: 80] 中国政府が擬人化AIとの感情的交流を規制する新規則を施行し、バイトダンスとアリババが関連機能を終了します。 / この規制は、過激思想の拡散やプライバシー漏えい、依存症などのリスクを軽減することを目的としています。 / ユーザーからは長年愛用してきたサービスが突然打ち切られることへの不満の声が上がっています。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 06 Jul 2026 10:19:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>MCPにエンタープライズ向け新機能、アクセスを一括管理できる「Enterprise-Managed Authorization（EMA）extension」が安定版として利用可能に</title>
+      <link>https://www.publickey1.jp/blog/26/mcpenterprise-managed_authorizationemaextension.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/mcpenterprise-managed_authorizationemaextension.html</guid>
+      <description>[Score: 80] 生成AIとツール接続プロトコルMCP（Model Context Protocol）に、エンタープライズ向け新機能EMA extensionが安定版として登場しました。 / EMA extensionは、Identity Provider（IdP）を通じてMCPサービスへのアクセス認証・認可を一括管理することを可能にします。 / これにより、企業は生成AIツールの利用におけるセキュリティと管理効率を大幅に向上させることができます。 (Source: Publickey)</description>
+      <pubDate>Mon, 06 Jul 2026 15:08:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHubがシークレットスキャンを使って「インボックスゼロ」を達成した方法</title>
+      <link>https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/</link>
+      <guid isPermaLink="false">https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/</guid>
+      <description>[Score: 78] GitHubは、開発中のシークレットスキャン機能を活用し、15,000以上のリポジトリに散らばる20,000以上のシークレットを発見しました。 / リスクの特定、所有者の割り当て、安全な修正を通じて、9ヶ月後には未解決のアラートをゼロにすることに成功しました。 / この記事では、GitHubが長年の運用で培ったシークレット管理の進化と、その実践的な戦略を共有しています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 02 Jul 2026 16:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
