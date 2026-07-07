@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Jul 2026 23:03:32 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 22:56:20 +0000</lastBuildDate>
     <item>
-      <title>1Passwordは、あなたのマスターパスワードを一度も受信していません</title>
-      <link>https://qiita.com/kenimo49/items/d1151389d17e50ad5564?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kenimo49/items/d1151389d17e50ad5564?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 95] パスワードマネージャー1Passwordが、ユーザーのマスターパスワードをサーバーに送信せずに認証を行う独自のセキュリティ設計を解説しています。 / この設計により、サーバーが侵害されてもマスターパスワードや金庫の中身が漏洩するリスクが大幅に低減され、LastPassのような大規模被害を防いでいます。 / 「2つの秘密の鍵」と「見せずに証明する認証」という仕組みで、高いUXと強固なセキュリティを両立させている点が特徴です。 (Source: Qiita)</description>
-      <pubDate>Sun, 05 Jul 2026 11:51:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>言語モデルにおけるグローバルワークスペース</title>
-      <link>https://www.anthropic.com/research/global-workspace</link>
-      <guid isPermaLink="false">https://www.anthropic.com/research/global-workspace</guid>
-      <description>[Score: 90] Anthropicの研究は、人間の意識的な思考に似た「グローバルワークスペース」がClaudeのような現代の言語モデルにも存在することを示唆しています。 / モデル内部に「J-space」と呼ばれる特別なニューラルパターン群を発見し、これらが特定の単語と関連付けられ、モデルの推論において重要な役割を果たすことを明らかにしました。 / この発見は、言語モデルが単なる自動処理を超え、より高度な内部表現と推論能力を持つ可能性を示しており、AIの理解を深める上で重要です。 (Source: Hacker News)</description>
-      <pubDate>Mon, 06 Jul 2026 17:44:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>GLM 5.2と迫りくるAIマージン崩壊</title>
-      <link>https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/</link>
-      <guid isPermaLink="false">https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/</guid>
-      <description>[Score: 90] AI経済における誤解されがちな変化として、モデルトレーニング費用と推論費用の違いに焦点を当てています。 / トレーニングは初期投資ですが、推論は需要に応じて変動する真の限界費用であり、現在のAPI料金は高い粗利益を含んでいます。 / AIモデルのコモディティ化が進むにつれて、推論コストの低下がAIビジネスモデルに大きな影響を与える可能性を指摘しています。 (Source: Hacker News)</description>
-      <pubDate>Mon, 06 Jul 2026 20:14:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>「日本企業風GitHub」のパロディに学ぶ、なぜJTC業務システムは「警告と文字」で埋め尽くされるのか</title>
-      <link>https://qiita.com/Shiro_Shihi/items/4928640d01c78480962b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Shiro_Shihi/items/4928640d01c78480962b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 「日本企業がGitHubを構築した場合」のパロディ画像がSNSで大きな反響を呼び、JTC（伝統的日本企業）の業務システムUIが抱える問題が浮き彫りになりました。 / 使いにくいUIの背景には、「間違えた人」ではなく「システム」のせいにされる文化があり、開発側が責任回避のために注意書きを増やす構造的な課題があります。 / 結果として、画面はユーザーのためではなく、開発者が身を守るための「警告と手続きの塊」と化してしまう実態を考察しています。 (Source: Qiita)</description>
-      <pubDate>Sat, 04 Jul 2026 03:45:44 +0000</pubDate>
+      <title>AI時代のObservability設計 - アプリケーション / インフラ / CI / LLMすべてを監視する（設計編）</title>
+      <link>https://zenn.dev/aircloset/articles/d4c32cff8cb230</link>
+      <guid isPermaLink="false">https://zenn.dev/aircloset/articles/d4c32cff8cb230</guid>
+      <description>[Score: 95] AI時代におけるObservability設計の重要性を説き、アプリケーション、インフラ、CI、LLMの4つの監視対象をAIに最適化された形で観測可能にする設計判断について解説しています。 / AIに渡すデータを正しい形に整形することの重要性を強調し、OpenTelemetryを用いた標準的な監視スタックの構築が前提となると述べています。 / 監視対象ごとに異なる問いに対応するため、単一のバックエンドではなく目的に応じて分割するアプローチが紹介されています。 (Source: Zenn)</description>
+      <pubDate>Mon, 06 Jul 2026 23:44:32 +0000</pubDate>
     </item>
     <item>
       <title>Apple、次期macOS 27でSwift言語をシステムカーネル開発に採用。メモリ安全な言語として</title>
       <link>https://www.publickey1.jp/blog/26/applemacos_27swift.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/applemacos_27swift.html</guid>
-      <description>[Score: 90] Appleが次期macOS 27「Golden Gate」から、システムカーネル開発にSwift言語を採用することを発表しました。 / これは、Swiftが持つメモリ安全性を活用し、バッファオーバーフローやメモリリークなどの脆弱性を防ぐことを目的としています。 / これまでC/C++/Objective-Cが主流だったカーネル開発において、より安全で効率的な開発手法への転換を示す重要な動きです。 (Source: Publickey)</description>
+      <description>[Score: 95] Appleが次期macOS 27「Golden Gate」から、システムカーネル開発にSwift言語を採用することを発表しました。 / Swiftはメモリ安全性を特徴とし、バッファオーバーフローやメモリリークなどの脆弱性を防ぐことを目的としています。 / これまでアプリ開発が主だったSwiftが、OSの低レイヤー開発にも適用されることで、システム全体のセキュリティと安定性向上が期待されます。 (Source: Publickey)</description>
       <pubDate>Mon, 06 Jul 2026 15:11:01 +0000</pubDate>
     </item>
     <item>
-      <title>UNIX系コマンドをWindowsに移植／macOS上にLinuxコンテナを統合／Ubuntu、開発環境をコマンド一発で構築ほか、2026年6月の人気記事</title>
-      <link>https://www.publickey1.jp/blog/26/unixwindowsmacoslinuxubuntu20266.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/unixwindowsmacoslinuxubuntu20266.html</guid>
-      <description>[Score: 90] 2026年6月の人気記事として、WindowsへのUNIX系コマンド移植「Coreutils for Windows」が1位に。 / Windows上でLinuxコンテナを扱える「WSL containers」が2位、macOSにLinuxコンテナを統合する「Container machine」が3位。 / Microsoft BuildでWindowsがLinux開発環境をさらに取り込む方向性が示され、クロスプラットフォーム開発の進化が注目されます。 (Source: Publickey)</description>
-      <pubDate>Thu, 02 Jul 2026 15:34:09 +0000</pubDate>
+      <title>チャットコントロール1.0と2.0の解説</title>
+      <link>https://fightchatcontrol.eu/chat-control-overview</link>
+      <guid isPermaLink="false">https://fightchatcontrol.eu/chat-control-overview</guid>
+      <description>[Score: 90] EUで並行して進む2つの「チャットコントロール」法案（一時的なものと恒久的なもの）について解説しています。 / 児童性的虐待コンテンツ検出のためのプライベートメッセージスキャンが焦点で、特にエンドツーエンド暗号化通信への影響が懸念されています。 / 議会での否決や再度の延長試みなど、法案を巡る複雑な状況が説明されています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 07 Jul 2026 14:23:15 +0000</pubDate>
     </item>
     <item>
-      <title>RAGコンテキストを回答に必要な部分まで剪定する</title>
-      <link>https://www.kapa.ai/blog/how-we-prune-rag-context</link>
-      <guid isPermaLink="false">https://www.kapa.ai/blog/how-we-prune-rag-context</guid>
-      <description>[Score: 85] Kapa.aiは、大規模な知識ベースから複雑な質問に答えるAIアシスタント向けに、RAG（Retrieval Augmented Generation）のコンテキスト剪定技術を開発しました。 / この技術は、リトリーバーとジェネレーターの間に小型で安価なLLMを導入し、回答に不要なコンテキストチャンクを事前に除去することで、コンテキスト量を約68%削減します。 / これにより、リコール率を96%維持しつつ、クエリコストを約3分の1削減することに成功し、RAGシステムの効率とコストパフォーマンスを大幅に向上させます。 (Source: Hacker News)</description>
-      <pubDate>Mon, 06 Jul 2026 19:28:24 +0000</pubDate>
+      <title>Fable時代のAI活用法を、Anthropicの開発者が公開</title>
+      <link>https://zenn.dev/knowledgesense/articles/283244af941a2d</link>
+      <guid isPermaLink="false">https://zenn.dev/knowledgesense/articles/283244af941a2d</guid>
+      <description>[Score: 90] Anthropicの開発者が「Fable 5」レベルのAIエージェントを使いこなすための新しいテクニック集を公開しました。 / AIへの指示とAIの実際の理解とのギャップ（未知）を減らすことが、AIエージェント時代のコアスキルとされています。 / 実装前・中・後の3フェーズで未知を発見し解消する具体的な手法が紹介されており、スキル化もされています。 (Source: Zenn)</description>
+      <pubDate>Tue, 07 Jul 2026 01:00:08 +0000</pubDate>
     </item>
     <item>
-      <title>Python 3.14をインタープリタなしでネイティブコンパイル</title>
-      <link>https://github.com/can1357/pon</link>
-      <guid isPermaLink="false">https://github.com/can1357/pon</guid>
-      <description>[Score: 85] Rustで書かれたPython 3.14用のJIT/AoTネイティブコンパイラ「pon」が登場しました。 / インタープリタやバイトコードを使用せず、モジュールを直接機械語にコンパイルし、単一バイナリ実行ファイルを生成します。 / CPythonのテストスイートをパスし、Bun/V8のような高速なPythonランタイムを目指しています。 (Source: Hacker News)</description>
-      <pubDate>Mon, 06 Jul 2026 19:40:22 +0000</pubDate>
+      <title>1Passwordは、あなたのマスターパスワードを一度も受信していません</title>
+      <link>https://qiita.com/kenimo49/items/d1151389d17e50ad5564?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kenimo49/items/d1151389d17e50ad5564?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] パスワードマネージャー1Passwordが、マスターパスワードをサーバーに送信せずに認証を行うセキュリティ設計を解説。 / サーバーは「正しいマスターパスワードを知っていること」のみを確認し、金庫の中身や鍵はサーバー側が知らない構造。 / LastPassのインシデントと比較し、UXの滑らかさとセキュリティの強さを両立させる「2つの秘密の鍵」と「見せずに証明する認証」の仕組みを深掘りする。 (Source: Qiita)</description>
+      <pubDate>Sun, 05 Jul 2026 11:51:26 +0000</pubDate>
     </item>
     <item>
-      <title>OCI Speechでリアルタイム英日翻訳アプリを作ってみた：途中で変わる文字起こしを字幕にする工夫</title>
-      <link>https://qiita.com/araidon/items/a742200d67e8018cda91?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/araidon/items/a742200d67e8018cda91?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] OCI Speech Live TranscribeとOCI Languageを活用し、英語音声をリアルタイムで日本語字幕に翻訳するアプリの開発について解説しています。 / 特に、リアルタイム文字起こしで発生する「途中で変化する認識結果（partial）」を、いかに自然な字幕として表示するかの工夫に焦点を当てています。 / 音声ストリームから得られるpartialとfinalの結果を適切に処理し、英語と日本語の語順の違いを考慮した字幕表示の課題と解決策を提示しています。 (Source: Qiita)</description>
-      <pubDate>Sun, 05 Jul 2026 13:21:55 +0000</pubDate>
+      <title>わずか5MBのAIモデルをウェブサイトに組み込んでユーザーにローカル操作させられる「ternlight」が登場、ウェブサイトにAIを活用した検索機能などを追加可能</title>
+      <link>https://gigazine.net/news/20260707-ternlight-webassembly-embeddings/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20260707-ternlight-webassembly-embeddings/</guid>
+      <description>[Score: 90] 「ternlight」は、わずか5MB程度の超小型AIモデルをウェブサイトに組み込み、ユーザーのCPUでローカル実行させるパッケージです。 / これにより、ウェブサイトにセマンティック検索などのAI機能をサーバー負荷なしで追加できるようになります。 / WebAssemblyを活用しており、パフォーマンスと品質の向上を目指し貢献者を募集しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 07 Jul 2026 14:04:25 +0000</pubDate>
     </item>
     <item>
-      <title>クレカ決済代行の全東信が破産、端末が使用不可に　負債は1259億円で今年最大──帝国データバンク</title>
-      <link>https://www.itmedia.co.jp/news/articles/2607/06/news127.html</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/articles/2607/06/news127.html</guid>
-      <description>[Score: 85] クレジットカード決済代行サービスを提供する全東信が、負債1259億円を抱え破産手続きを開始しました。 / これにより、同社の決済端末は使用不可となり、加盟店はカード決済が利用できなくなる影響が出ています。 / コロナ禍での業績悪化や不正行為が原因とされ、加盟店は新たな決済契約が必要となります。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 06 Jul 2026 10:30:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>ブロードコムによるVMware製品抱き合わせ販売疑惑、独占禁止法違反と認定されず。公正取引委員会が調査を終了</title>
-      <link>https://www.publickey1.jp/blog/26/vmware_9.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vmware_9.html</guid>
-      <description>[Score: 85] 公正取引委員会は、ブロードコムによるVMware製品の抱き合わせ販売疑惑に関する独占禁止法違反調査を終了しました。 / ブロードコムはVMware買収後、製品ライセンスをセット販売のサブスクリプションに移行し、事実上の値上げが発生。 / しかし、違反を認定する事実は認められず、IT業界におけるM&amp;A後のビジネスモデル変更の合法性が確認されました。 (Source: Publickey)</description>
-      <pubDate>Sun, 05 Jul 2026 15:11:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>VEQRA AIの構築：Qwen3-235Bでエンタープライズインシデントを13秒で解決する方法</title>
-      <link>https://dev.to/nabilfattouch1/building-veqra-ai-how-i-resolved-enterprise-incidents-in-13-seconds-with-qwen3-235b-196d</link>
-      <guid isPermaLink="false">https://dev.to/nabilfattouch1/building-veqra-ai-how-i-resolved-enterprise-incidents-in-13-seconds-with-qwen3-235b-196d</guid>
-      <description>[Score: 85] 既存のMicrosoft 365自動化プラットフォームVEQRAに、Qwen3-235Bを活用したAIレイヤーが追加されました。 / このVEQRA AIは3つの専門AIエージェントを連携させ、エンタープライズインシデントをわずか13秒で解決します。 / プロンプトエンジニアリングにより、一貫した構造化JSON出力を実現し、人間介入なしの迅速な問題解決を可能にしています。 (Source: Dev.to)</description>
-      <pubDate>Mon, 06 Jul 2026 22:03:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>アドバイザリデータベースの内部と、脆弱性報告量が記録を更新したときに何が起こるか</title>
-      <link>https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/</guid>
-      <description>[Score: 85] GitHub Advisory Databaseは2026年5月に過去最高の1,560件のアドバイザリを公開し、脆弱性報告量が記録的に増加していることを示しています。 / この報告量の増加と複雑化により、アドバイザリのレビュー時間が長期化しており、システムは新たな運用規模に直面しています。 / GitHubは脆弱性報告における品質と共同責任を強調し、完全なデータ提出やCVE申請の適切な利用を呼びかけています。 (Source: GitHub Blog)</description>
-      <pubDate>Mon, 29 Jun 2026 16:10:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Fable 5の挙動をOpus 4.8で再現する — 「賢さ」を検証ループの工程に置き換える</title>
-      <link>https://zenn.dev/ait/articles/fable-emu-opus-harness</link>
-      <guid isPermaLink="false">https://zenn.dev/ait/articles/fable-emu-opus-harness</guid>
-      <description>[Score: 80] Claude Fable 5の「賢さ」を、旧世代モデルであるOpus 4.8で再現するためのハーネス「fable-emu」を紹介しています。 / Fable 5が内部で行う推論（分解・自己検証・長期一貫性）を、多パス・多エージェント・外部記憶を用いた外部工程として実装します。 / これにより、単一パスでは得られない品質を、トークンや時間を多く使うことで実現し、AIによるタスク実行の信頼性を高めます。 (Source: Zenn)</description>
-      <pubDate>Sun, 05 Jul 2026 17:27:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>C# で出来ること一覧 2026年版（.NET 10）</title>
-      <link>https://zenn.dev/microsoft/articles/what-can-you-do-on-dotnet10</link>
-      <guid isPermaLink="false">https://zenn.dev/microsoft/articles/what-can-you-do-on-dotnet10</guid>
-      <description>[Score: 80] .NET 10がリリースされ、2026年時点でのC#/.NETで開発可能なアプリケーションの種類がまとめられています。 / C#は2002年の登場から約20年で大きく進化し、かつてのJavaクローンという印象から、守備範囲の広い書きやすい言語へと変貌しました。 / 現在では.NET Frameworkや.NET Coreなどのプラットフォームが.NETに統合され、C#で多様なアプリケーション開発が可能になっています。 (Source: Zenn)</description>
-      <pubDate>Sun, 05 Jul 2026 15:02:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>Dockerfileは分けない〜本番用とローカル用を1つに保つ方法🐳</title>
-      <link>https://qiita.com/H-Hoshihara/items/82798a46964718f6bdb0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/H-Hoshihara/items/82798a46964718f6bdb0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Dockerfileを本番環境とローカル環境で分けるべきかという問いに対し、一つのDockerfileを環境変数で切り替える方法を提案しています。 / これにより、全体の構成がシンプルになり、環境ごとの差分をDockerfile内で直接記述するのではなく、実行時に外部から環境変数として注入することで対応します。 / 本記事では、開発ツールの削除によるイメージサイズ最適化ではなく、環境ごとのアプリケーション動作の切り替えに焦点を当てた実現方法を解説しています。 (Source: Qiita)</description>
-      <pubDate>Sun, 05 Jul 2026 17:32:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>若者の不正アクセス事件で「ホワイトハッカーにすべき」という意見にIT業界関係者は「倫理観が重要、要りません」と反論</title>
-      <link>https://togetter.com/li/2717678</link>
-      <guid isPermaLink="false">https://togetter.com/li/2717678</guid>
-      <description>[Score: 80] 若者による不正アクセス事件が発生するたびに、「才能があるからホワイトハッカーにすべき」という意見が出ますが、IT業界関係者は「知識や技術は後付けできても倫理観は難しい」として、そのような人材は不要だと強く反論しています。 / バンダイチャンネルへの不正アクセスで高校生が逮捕された事例を挙げ、犯罪行為を才能と誤解させる風潮に警鐘を鳴らしています。 / サイバーセキュリティ分野の専門家である徳丸浩氏も同様に「全くもってナンセンスな話」と述べ、倫理観の重要性を強調しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 06 Jul 2026 14:17:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>中国、AIとの「感情的交流」を規制　バイトダンスとアリババが「擬人化AI」終了へ</title>
-      <link>https://japan.cnet.com/article/35250128/</link>
-      <guid isPermaLink="false">https://japan.cnet.com/article/35250128/</guid>
-      <description>[Score: 80] 中国政府が擬人化AIとの感情的交流を規制する新規則を施行し、バイトダンスとアリババが関連機能を終了します。 / この規制は、過激思想の拡散やプライバシー漏えい、依存症などのリスクを軽減することを目的としています。 / ユーザーからは長年愛用してきたサービスが突然打ち切られることへの不満の声が上がっています。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 06 Jul 2026 10:19:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>MCPにエンタープライズ向け新機能、アクセスを一括管理できる「Enterprise-Managed Authorization（EMA）extension」が安定版として利用可能に</title>
-      <link>https://www.publickey1.jp/blog/26/mcpenterprise-managed_authorizationemaextension.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/mcpenterprise-managed_authorizationemaextension.html</guid>
-      <description>[Score: 80] 生成AIとツール接続プロトコルMCP（Model Context Protocol）に、エンタープライズ向け新機能EMA extensionが安定版として登場しました。 / EMA extensionは、Identity Provider（IdP）を通じてMCPサービスへのアクセス認証・認可を一括管理することを可能にします。 / これにより、企業は生成AIツールの利用におけるセキュリティと管理効率を大幅に向上させることができます。 (Source: Publickey)</description>
-      <pubDate>Mon, 06 Jul 2026 15:08:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubがシークレットスキャンを使って「インボックスゼロ」を達成した方法</title>
+      <title>GitHubがシークレットスキャンを使用してインボックスゼロを達成した方法</title>
       <link>https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/</link>
       <guid isPermaLink="false">https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/</guid>
-      <description>[Score: 78] GitHubは、開発中のシークレットスキャン機能を活用し、15,000以上のリポジトリに散らばる20,000以上のシークレットを発見しました。 / リスクの特定、所有者の割り当て、安全な修正を通じて、9ヶ月後には未解決のアラートをゼロにすることに成功しました。 / この記事では、GitHubが長年の運用で培ったシークレット管理の進化と、その実践的な戦略を共有しています。 (Source: GitHub Blog)</description>
+      <description>[Score: 90] GitHub Securityは、自社のシークレットスキャン機能を用いて、20,000件以上のシークレットアラートをゼロに削減しました。 / 15,000以上のリポジトリに散らばっていたシークレットを特定し、リスク評価、所有権の割り当て、安全な修正を実施。 / この記事は、他の組織がシークレット管理を改善するための戦略と教訓を共有しています。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 02 Jul 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Code の無料セキュリティ監査プラグインで脆弱性を自動検出・修正してみる</title>
+      <link>https://qiita.com/nogataka/items/4d2a551f89f6b4f94b01?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/nogataka/items/4d2a551f89f6b4f94b01?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] Claude Codeの無料セキュリティ監査プラグイン「security-guidance」を用いて、AI生成コードの脆弱性を自動検出・修正する方法を紹介。 / AIによる高速なコード生成が人間のレビュー速度を上回る現状に対し、生成段階でセキュリティ検査を行う必要性を強調。 / プラグインの思想的背景、脅威モデルの変化、3層分析、AIによる修正のリスク、既存ツールとの棲み分けを整理する。 (Source: Qiita)</description>
+      <pubDate>Mon, 06 Jul 2026 11:00:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>KokoroによるローカルでCPUフレンドリーな高品質TTS（テキスト読み上げ）</title>
+      <link>https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/</link>
+      <guid isPermaLink="false">https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/</guid>
+      <description>[Score: 85] Kokoroは、CPUのみで動作する82Mパラメータの高品質なテキスト読み上げ（TTS）モデルです。 / 英語、中国語、ヒンディー語など多言語に対応し、約50種類の音声を提供し、プライバシーを保護します。 / Dockerコンテナで簡単にセットアップでき、OpenAI Speech API互換のインターフェースも備えています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 07 Jul 2026 18:24:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIエージェントの決済履歴は「戦略ログ」になる ─ 誰が誰に払ったかを隠す private x402 &quot;SubEtha&quot;を作った</title>
+      <link>https://zenn.dev/peaceandwhisky/articles/6f0b8b672a6f78</link>
+      <guid isPermaLink="false">https://zenn.dev/peaceandwhisky/articles/6f0b8b672a6f78</guid>
+      <description>[Score: 85] AIエージェントがAPIを呼び出すたびにオンチェーン決済するx402プロトコルにおいて、決済履歴がエージェントの行動ログやプロバイダーの売上ログとなるプライバシー課題を指摘しています。 / この課題に対し、プライバシートークンzERC20を利用して「誰が誰に払ったか」を隠すPoC「SubEtha」が開発されました。 / 高頻度で機械的なAIエージェントの決済において、公開ブロックチェーン上の履歴が戦略情報漏洩につながるリスクを解決しようとしています。 (Source: Zenn)</description>
+      <pubDate>Tue, 07 Jul 2026 00:00:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fable 5が使えなくなる前に、その「働き方」をOpus/Sonnetに引き継がせた</title>
+      <link>https://zenn.dev/yui/articles/e4f8268ab5c6c1</link>
+      <guid isPermaLink="false">https://zenn.dev/yui/articles/e4f8268ab5c6c1</guid>
+      <description>[Score: 85] Fable 5のサブスク終了に伴い、その高度なオーケストレーション能力をOpus/Sonnetに引き継がせる方法を解説。 / Fable 5の「規律・順序・検証」といった働き方を明文化し、Opus/Sonnetが同等の品質を出せるようスキルとして移植する試み。 / モデルの挙動を変えるには、具体的な禁止リストや手順の明文化が重要であることを示している。 (Source: Zenn)</description>
+      <pubDate>Mon, 06 Jul 2026 21:38:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>Windows 11で空き容量が0バイトになる恐れ、影響を確認して速やかに対策を</title>
+      <link>https://news.mynavi.jp/techplus/article/20260707-4672951/</link>
+      <guid isPermaLink="false">https://news.mynavi.jp/techplus/article/20260707-4672951/</guid>
+      <description>[Score: 85] Windows 11でCapabilityAccessManagerサービスのデータベースファイルが際限なく肥大化し、ストレージの空き容量が0バイトになる不具合が報告されている。 / この不具合は6月23日にリリースされたプレビュー更新プログラム「KB5095093」で修正済みであり、影響を受けるユーザーは速やかなインストールが推奨される。 / すでに空き容量不足でインストールできない場合は、Windows回復環境からの手動復旧が必要となるため、Microsoftサポートへの問い合わせが推奨されている。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 07 Jul 2026 09:24:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>陸上自衛隊が使用したマルウェア入りUSBメモリについてまとめてみた - piyolog</title>
+      <link>https://piyolog.hatenadiary.jp/entry/2026/07/08/002522</link>
+      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/07/08/002522</guid>
+      <description>[Score: 85] 陸上自衛隊中部方面総監部が使用していたUSBメモリからマルウェアが検知された事例について、詳細をまとめた記事です。 / マルウェアは自己増殖型で情報窃取や外部通信は確認されず、システムへの影響もなかったとされています。 / USBメモリのウイルスチェック規則不遵守が問題視されており、取得経緯については現在も調査中であると報じられています。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 07 Jul 2026 16:01:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIコーディングエージェントに永続的なメモリを2分で与える方法</title>
+      <link>https://dev.to/debragail/how-i-gave-my-ai-coding-agent-persistent-memory-in-2-minutes-581l</link>
+      <guid isPermaLink="false">https://dev.to/debragail/how-i-gave-my-ai-coding-agent-persistent-memory-in-2-minutes-581l</guid>
+      <description>[Score: 85] Engramは、AIコーディングエージェントにセッションを跨いだ永続的な記憶を与えるツールです。 / 過去の会話履歴をベクトル埋め込みで意味的に検索し、AIが関連するコンテキストを自動で引き出すことを可能にします。 / これにより、AIにプロジェクトの背景や過去の議論を毎回説明する手間が省け、開発効率が向上します。 (Source: Dev.to)</description>
+      <pubDate>Tue, 07 Jul 2026 22:38:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>2026年第1四半期イノベーショングラフ更新：オープンソースのコラボレーションが世界中で加速</title>
+      <link>https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide/</guid>
+      <description>[Score: 85] GitHubのイノベーショングラフによると、2026年第1四半期にオープンソースのコラボレーションが世界的に加速しました。 / アウトバウンドコラボレーションは前期比16%増で、2020年以降で2番目に高い成長率を記録。 / このデータは、開発者コミュニティの異なる軌跡を示し、経済成長への影響を分析する機会を提供します。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 07 Jul 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHubがオープンソース依存関係のコンプライアンスを維持する方法</title>
+      <link>https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/</link>
+      <guid isPermaLink="false">https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/</guid>
+      <description>[Score: 85] GitHubのOSPOは、新しいGitHub License Compliance機能を使って、数千ものオープンソース依存関係のライセンスコンプライアンスを管理しています。 / オープンソースライセンスの尊重の重要性と、ビジネスモデルに基づいた許容ライセンスポリシーの定義方法を説明。 / これにより、企業はオープンソースを責任を持って利用し、法的リスクを回避できます。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 30 Jun 2026 17:28:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>SwarmResearch: オープンエンドな発見のためのコーディングエージェントのオーケストレーション</title>
+      <link>https://arxiv.org/abs/2607.02807</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2607.02807</guid>
+      <description>[Score: 85] オープンエンドな問題解決や発見のために、複数のコーディングエージェントを協調させる研究です。 / 自律的なAIエージェントが連携し、複雑なタスクや未知の領域を探求するフレームワークを提案しています。 / ソフトウェア開発、科学研究、創造的タスクなど、幅広い分野での応用が期待されます。 (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 07 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>売上は DB、ログは S3、契約書は SharePoint、バラバラなデータを AI で使う方法を調べてみてみた</title>
+      <link>https://qiita.com/shirok/items/0e42854634b2c5a371fa?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/shirok/items/0e42854634b2c5a371fa?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 82] 企業内に散在する多様なデータをAIで活用するためのLakehouseアーキテクチャ、特にOracle Autonomous AI Lakehouseを解説。 / Data WarehouseとBig Dataの文脈を統合し、構造化・非構造化データを一元的に扱うLakehouseの柔軟性を示す。 / Oracle AI Databaseを中心に、Iceberg、Object Storage、SharePointなどをSQLの世界から連携させ、マルチクラウド環境でのデータ活用を可能にする。 (Source: Qiita)</description>
+      <pubDate>Mon, 06 Jul 2026 22:27:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>欧州連合で販売されるすべての新車にドライバー監視カメラの搭載が義務化</title>
+      <link>https://allaboutcookies.org/eu-mandatory-distracted-driver-system</link>
+      <guid isPermaLink="false">https://allaboutcookies.org/eu-mandatory-distracted-driver-system</guid>
+      <description>[Score: 80] EUで販売される新車に、ドライバー監視カメラの搭載が義務付けられることになりました。 / これは、ドライバーの注意散漫や居眠り運転を検知し、事故防止を目的としています。 / プライバシーへの懸念も指摘されており、今後の運用が注目されます。 (Source: Hacker News)</description>
+      <pubDate>Tue, 07 Jul 2026 20:50:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>l: KおよびQ言語のための新しいランタイム</title>
+      <link>https://lv1.sh/</link>
+      <guid isPermaLink="false">https://lv1.sh/</guid>
+      <description>[Score: 80] lは、K4、Q、qSQLコード向けの新しい高速データベースおよび配列言語インタープリタです。 / 圧縮ベクトル、SIMD、自動並列処理をデフォルトでサポートし、既存のK4/Q/qSQLコードを修正なしで高速に実行します。 / データ圧縮と透過的な実行パス選択により、現代のHPC環境で高いパフォーマンスを発揮します。 (Source: Hacker News)</description>
+      <pubDate>Tue, 07 Jul 2026 18:08:29 +0000</pubDate>
     </item>
   </channel>
 </rss>
