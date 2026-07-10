@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 09 Jul 2026 23:07:22 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 22:57:20 +0000</lastBuildDate>
     <item>
-      <title>GPT-5.6</title>
-      <link>https://openai.com/index/gpt-5-6/</link>
-      <guid isPermaLink="false">https://openai.com/index/gpt-5-6/</guid>
-      <description>[Score: 95] OpenAIがGPT-5.6ファミリーモデル「Sol」「Terra」「Luna」を発表しました。 / 「Sol」はコーディング、知識労働、サイバーセキュリティ、科学分野で新たな標準を確立し、効率性と性能を向上させています。 / 複数のエージェントを並行処理する「ultra」設定も導入し、複雑なタスクを高速化します。 (Source: Hacker News)</description>
-      <pubDate>Thu, 09 Jul 2026 17:04:14 +0000</pubDate>
+      <title>GPT-5.6 Sol Ultraがサイクル二重被覆予想の証明を生成</title>
+      <link>https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf</link>
+      <guid isPermaLink="false">https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf</guid>
+      <description>[Score: 95] OpenAIの最新AIモデル「GPT-5.6 Sol Ultra」が、数学の未解決問題である「サイクル二重被覆予想」の証明を生成したと報じられています。 / これはAIが高度な数学的推論能力を持つことを示唆し、AIの科学研究への応用可能性を大きく広げる画期的な成果です。 / 詳細な証明内容はPDFとして公開されており、数学界に大きな影響を与える可能性があります。 (Source: Hacker News)</description>
+      <pubDate>Fri, 10 Jul 2026 18:29:19 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptランタイムのBun、Claude Fable 5を11日間稼働させてZigからRustへの移植を実現。Claudeをどう使ったのか？</title>
       <link>https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html</guid>
-      <description>[Score: 95] JavaScriptランタイム「Bun」の開発者が、約53万5000行のZigコードをAI「Claude Fable 5」を使って約11日間でRustに移植したことを発表しました。 / 移植により、メモリリークの根絶、バイナリサイズの約20%削減、パフォーマンスの2%から5%向上といった改善が実現しました。 / Rustへの移行は、メモリ安全性と安定性向上が目的であり、AIが大規模なコードベースの言語移植に実用的に活用できることを示しています。 (Source: Publickey)</description>
+      <description>[Score: 95] JavaScriptランタイム「Bun」の作者が、約53万5000行のZigコードをClaude Fable 5を用いて約11日間でRustに移植したことを発表しました。 / この移植により、メモリリークの根絶、バイナリサイズの約20%削減、パフォーマンスの2%から5%向上といった改善が実現しました。 / Bunが安定したソフトウェアとなるよう、メモリ安全性の高いRustを選択したことが理由として挙げられており、AIによる大規模コード変換の成功事例として注目されます。 (Source: Publickey)</description>
       <pubDate>Thu, 09 Jul 2026 15:47:05 +0000</pubDate>
     </item>
     <item>
-      <title>クラウドから IoT デバイスへ直接メッセージを送れる AWS IoT Core の Direct Messaging を試してみた</title>
-      <link>https://zenn.dev/aws_japan/articles/8d7fbd2c819324</link>
-      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/8d7fbd2c819324</guid>
-      <description>[Score: 90] AWS IoT Coreに新機能「Direct Messaging (SendDirectMessage API)」が追加され、クラウドから特定のIoTデバイスへ直接メッセージを送れるようになりました。 / 従来のMQTTトピックではなくMQTTクライアントIDで宛先を指定でき、`confirmation=true`を設定することでメッセージがデバイスに届いたかを確認できます。 / これにより、遠隔操作コマンドの送信など、メッセージの到達確認が重要なIoTユースケースにおいて、自前での実装が不要となり、信頼性が向上します。 (Source: Zenn)</description>
-      <pubDate>Thu, 09 Jul 2026 04:06:42 +0000</pubDate>
+      <title>ミューテーションテストのススメ</title>
+      <link>https://zenn.dev/xtm_blog/articles/9b7fa5f94eae28</link>
+      <guid isPermaLink="false">https://zenn.dev/xtm_blog/articles/9b7fa5f94eae28</guid>
+      <description>[Score: 92] ミューテーションテストは、本番コードに意図的に小さな変更（変異体）を挿入し、テストがその変更を検知して失敗するかを確認する手法です。 / テストが変異体を「殺せ」なければ、そのテストはコードの誤りを検知できていない「偽陰性」の状態であり、テストの品質が低いことを示します。 / AIが生成するテストコードの品質保証や、既存テストの劣化防止に非常に有効であり、Meta社もLLMと組み合わせて実用化を進めている、現代の開発において重要なテスト手法です。 (Source: Zenn)</description>
+      <pubDate>Thu, 09 Jul 2026 12:51:51 +0000</pubDate>
     </item>
     <item>
-      <title>Zoom の文字起こし・翻訳 AI を &quot;Zoom 以外&quot; で使う — Google Meet / Teams / YouTube、どんなサイトでもリアルタイム字幕＋翻訳</title>
-      <link>https://qiita.com/shinonome_taku/items/b73cb8096af35186c2d8?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/shinonome_taku/items/b73cb8096af35186c2d8?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] Zoom AI ServicesのScribe（文字起こし）とTranslator（翻訳）はREST APIであり、Zoom会議に限定されず利用可能です。 / 本記事では、OSSのリアルタイム翻訳アプリSokujiにZoom AI Servicesを組み込み、Google MeetやYouTubeなどあらゆるサイトでリアルタイム字幕・翻訳を実現する実装を解説しています。 / ブラウザ拡張でタブ音声やマイク音声を拾い、VADで発話を区切ってAPIに送り、字幕オーバーレイとして表示する具体的な技術的アプローチとハマりどころが共有されています。 (Source: Qiita)</description>
-      <pubDate>Wed, 08 Jul 2026 22:16:40 +0000</pubDate>
+      <title>GitHub CopilotがGitHub PagesのDNS設定ゼロを可能にする方法</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/</guid>
+      <description>[Score: 92] GitHub Copilot CLIとNamecheapのコミュニティスキルを活用することで、GitHub Pagesのカスタムドメイン設定におけるDNS手動設定が不要になる方法が紹介されています。 / これにより、開発者はDNSの専門知識なしに、空のリポジトリからHTTPSで保護されたカスタムドメインのライブウェブサイトを約14分で構築できます。 / Copilot CLIに希望する結果を伝えるだけで、ランディングページの作成からGitHub Pagesの有効化、DNS自動設定までをAIが実行し、デプロイプロセスを大幅に簡素化します。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 08 Jul 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>AIがコードを書くほど、レビュー・セキュリティ・理解が追いつかなくなる——次のDevOpsボトルネックは「管理能力」だ</title>
-      <link>https://techfeed.io/entries/6a4d8404fb2ec72bcd7fd86a</link>
-      <guid isPermaLink="false">https://techfeed.io/entries/6a4d8404fb2ec72bcd7fd86a</guid>
-      <description>[Score: 90] AIコーディング支援ツールの普及により、コード生成速度が組織の管理・運用能力を上回り、新たなDevOpsボトルネックが生じると指摘。 / セキュリティレビューの容量問題、テストカバレッジの数字の罠、そしてシステムに対する「理解」の欠如が主な課題として挙げられています。 / AIはソフトウェア生成を加速するが、設計レビュー、セキュリティ検証、障害対応などの運用責任は人間が負う必要があり、その処理能力が限界に達する可能性を示唆しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 09 Jul 2026 01:13:07 +0000</pubDate>
+      <title>MiMo v2.5の推論最適化：ハイブリッドSWA効率を限界まで高める</title>
+      <link>https://mimo.xiaomi.com/blog/mimo-v2-5-inference</link>
+      <guid isPermaLink="false">https://mimo.xiaomi.com/blog/mimo-v2-5-inference</guid>
+      <description>[Score: 90] MiMo v2.5モデルは、Hybrid Sliding Window Attention (Hybrid SWA) や疎なMoE活性化、マルチモーダルエンコーダを組み合わせた効率的なアーキテクチャを採用しています。 / これにより、KVCacheストレージを大幅に削減し、トークンあたりの計算量を抑えつつ、長文コンテキストやマルチモーダルシナリオでの性能と効率を向上させています。 / 特に、長距離依存関係のモデリングと推論コストの削減という相反する目標を、理論的な利点を実用的な効率に変換することで達成しています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 07 Jul 2026 06:06:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>最近のDynamoDB設計事情：single-table偏重の見直しとGSIマルチ属性キー</title>
+      <link>https://qiita.com/Suemura/items/ce4cb4290e4e711fdc98?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Suemura/items/ce4cb4290e4e711fdc98?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] DynamoDBの設計において、これまで主流だったsingle-table designに対する見直しと、AWSが導入したGSIマルチ属性複合キーの影響について解説しています。 / 複数の属性をANDで重ねる検索がsingle-table設計の課題であったが、GSIマルチ属性キーの登場により、より柔軟な設計が可能になったことを示唆。 / 具体的なBtoBサービスを例に、single-table版とmulti-table版の両方を設計し、その違いと新しい設計アプローチの利点を比較検討しています。 (Source: Qiita)</description>
+      <pubDate>Fri, 10 Jul 2026 00:58:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Code・Codex用に、超爆速で超安全なサンドボックスを作る方法 - Qiita</title>
+      <link>https://qiita.com/Koukyosyumei/items/3bd4696237ea64c38971</link>
+      <guid isPermaLink="false">https://qiita.com/Koukyosyumei/items/3bd4696237ea64c38971</guid>
+      <description>[Score: 90] 本記事では、AIエージェントであるClaude CodeやCodexを安全に実行するためのサンドボックス技術について解説しています。 / AIエージェントが誤操作や悪意ある動作をしないよう、OSレベルのサンドボックス機能やパーミッションモデルの仕組みを詳述。 / 高性能なサンドボックス「h5i」の利用方法も紹介し、AI開発におけるセキュリティ確保の重要性を強調しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 10 Jul 2026 08:27:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>ミッチェル・ハシモト氏へのインタビュー</title>
+      <link>https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/</link>
+      <guid isPermaLink="false">https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/</guid>
+      <description>[Score: 90] HashiCorpの共同創設者であるミッチェル・ハシモト氏へのインタビュー記事で、彼のキャリア、ターミナル、Zig言語、オープンソースについて語られています。 / 彼はVagrant, Packer, Consul, Terraform, Vault, Nomad, Waypointといった著名なツールを開発し、現在はGhosttyとVouchを手がけています。 / HashiCorp退社後、AI以前のGPUプログラミング、デスクトップ/シングルノードのシステムプログラミング、そしてZig言語への関心から、ターミナルエミュレータGhosttyの開発に取り組んでいることが明かされました。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 10 Jul 2026 00:48:35 +0000</pubDate>
     </item>
     <item>
       <title>Apple、次期macOS 27でSwift言語をシステムカーネル開発に採用。メモリ安全な言語として</title>
       <link>https://www.publickey1.jp/blog/26/applemacos_27swift.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/applemacos_27swift.html</guid>
-      <description>[Score: 90] Appleが次期macOS 27「Golden Gate」から、システムカーネル開発にSwift言語を採用することを発表しました。 / Swiftはメモリ安全性を特徴とし、バッファオーバーフローやメモリリークなどの脆弱性を防ぐことを目的としています。 / これにより、macOSのセキュリティと安定性が向上し、低レイヤー開発におけるSwiftの適用範囲が拡大します。 (Source: Publickey)</description>
+      <description>[Score: 90] Appleは次期macOS 27「Golden Gate」から、システムカーネルの開発にSwift言語を採用することを発表しました。 / Swiftは元々MacやiPhoneアプリ開発用にAppleが開発した言語で、オープンソース化されWindowsやLinuxにも対応しています。 / メモリ安全性を特徴とし、バッファオーバーフローやメモリリークなどを防ぐことで、C/C++/Objective-Cの後継として低レイヤのシステムソフトウェア開発にも適しています。 (Source: Publickey)</description>
       <pubDate>Mon, 06 Jul 2026 15:11:01 +0000</pubDate>
     </item>
     <item>
-      <title>Apple containerでmacOSにLinuxコンテナ環境を作る（ハンズオン）</title>
-      <link>https://zenn.dev/var/articles/apple-container-macos-hands-on</link>
-      <guid isPermaLink="false">https://zenn.dev/var/articles/apple-container-macos-hands-on</guid>
-      <description>[Score: 88] 「Apple container」は、Docker DesktopなしでmacOS（特にApple Silicon Mac）上にLinuxコンテナ環境を構築できるコマンドラインツールです。 / 従来のDockerとは異なり、コンテナごとに軽量な仮想マシンを起動する方式を採用しており、Apple Silicon向けに最適化されています。 / OCIイメージ互換性があり、Docker経験者向けに導入から基本操作、永続的な環境構築までをハンズオン形式で解説しています。 (Source: Zenn)</description>
-      <pubDate>Thu, 09 Jul 2026 01:50:50 +0000</pubDate>
+      <title>より良いツールがCopilotのコードレビューを悪化させたが、私たちはそれを実際に改善した方法</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</guid>
+      <description>[Score: 90] GitHub Copilotのコードレビュー機能において、より優れた共有ツールを導入したにもかかわらず、レビューコストが増加し、問題検出率が低下する事態が発生しました。 / 問題はツール自体ではなく、エージェントへの指示方法にあったことが判明し、プルリクエストのレビュー方法に合わせて指示を書き直すことで改善されました。 / これにより、レビュー品質を維持しつつ、平均レビューコストを約20%削減することに成功し、エージェントのワークフロー調整の重要性が示されました。 (Source: GitHub Blog)</description>
+      <pubDate>Fri, 10 Jul 2026 15:57:47 +0000</pubDate>
     </item>
     <item>
-      <title>15個の仕込みバグで比較：ClaudeとCodexのコードレビューは、モデルより「レビュー方式」で差が出た</title>
-      <link>https://qiita.com/kunitomo926/items/7dfc85770cf5132f3d1c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kunitomo926/items/7dfc85770cf5132f3d1c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] Claude OpusとCodex gpt-5.5を用いて、15個の仕込みバグがあるURL短縮サービスコードのレビュー性能を比較検証しました。 / 異なるAIモデルを組み合わせることで「おべっか」バイアスを回避し、第三者レビューに近づけるという発想が核となっています。 / 結果として、モデル自体の差よりも、レビューの「方式」がバグ検出数に大きな影響を与えることが示唆されました。 (Source: Qiita)</description>
-      <pubDate>Tue, 07 Jul 2026 22:49:45 +0000</pubDate>
+      <title>AIが自分の結論を正当化する問題に対し、デバイアスしてFable 5にセカンドオピニオンを求めるSkillを開発</title>
+      <link>https://zenn.dev/atrae/articles/08f2b2c3f2217d</link>
+      <guid isPermaLink="false">https://zenn.dev/atrae/articles/08f2b2c3f2217d</guid>
+      <description>[Score: 88] AIによる開発で生成される大量のコードの理解や品質への不安を解消するため、AIの正当化バイアスを排除する手法が考案されました。 / メインAIの結論を隠し、誘導表現を削ぎ落とした上で、上位モデルであるFable 5に同じ問題を投げかけ、独立した見解を得るClaude CodeのSkillが作成されました。 / このSkillは、AIの判断精度を高め、開発者の認知負荷と不安を低減することを目的としており、特定の状況で自動的に発動するように設計されています。 (Source: Zenn)</description>
+      <pubDate>Thu, 09 Jul 2026 22:15:05 +0000</pubDate>
     </item>
     <item>
-      <title>GLM 5.2を低スペックPCで動作させる</title>
-      <link>https://github.com/JustVugg/colibri</link>
-      <guid isPermaLink="false">https://github.com/JustVugg/colibri</guid>
-      <description>[Score: 85] 744BパラメータのMixture-of-Expertsモデル「GLM-5.2」を、25GB RAM程度の一般消費者向けPCで動作させるプロジェクトです。 / 純粋なC言語で記述され、依存関係ゼロ、ディスクからエキスパートをストリーミングすることで実現しています。 / 高速ではないものの、H100ファンよりも安価なマシンでフロンティアクラスのモデルを動かす画期的な試みです。 (Source: Hacker News)</description>
-      <pubDate>Thu, 09 Jul 2026 08:05:04 +0000</pubDate>
+      <title>15年前の『アジャイルサムライ』、AI時代に古びたのは&quot;作るコスト&quot;の教えだけだった</title>
+      <link>https://qiita.com/tatsuya582/items/88508215a8e22b169166?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/tatsuya582/items/88508215a8e22b169166?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] アジャイル開発の古典『アジャイルサムライ』の教えが、AIがコードを書く現代においてどのように変化したかを考察しています。 / AIの登場により、テストコード生成やプロトタイプ作成、見積もりなどの「作るコスト」は劇的に低下し、本書の教えの一部は古びたと指摘。 / しかし、テストの検出力やユーザーとの認識合わせといった本質的なアジャイルの価値は変わらず重要であり、AIを新たなツールとして活用する視点を示しています。 (Source: Qiita)</description>
+      <pubDate>Fri, 10 Jul 2026 00:58:51 +0000</pubDate>
     </item>
     <item>
-      <title>HTML即公開！Cloudflare Drop が面白そう</title>
-      <link>https://zenn.dev/trans/articles/cc1c398e1f770c</link>
-      <guid isPermaLink="false">https://zenn.dev/trans/articles/cc1c398e1f770c</guid>
-      <description>[Score: 85] Cloudflareが「Drop」という新サービスを公開しました。これはHTMLや画像を含むZipファイルをドラッグ＆ドロップするだけで静的Webサイトを即座に公開できるものです。 / AIが生成したWebサイトの公開を想定しており、手軽にプレビューや一時的な公開が可能ですが、Claimしないと1時間で削除されます。 / ClaimすることでCloudflare Workersプロジェクトとして永続化され、カスタムドメイン設定など本番利用も視野に入れた詳細設定が可能になります。 (Source: Zenn)</description>
-      <pubDate>Thu, 09 Jul 2026 05:20:33 +0000</pubDate>
+      <title>GitHub Agentic Workflowsによるクロスリポジトリドキュメントの自動化</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</guid>
+      <description>[Score: 88] プロダクトチームが直面する「ドキュメントはどこ？」という問題に対し、GitHub Agentic Workflowsを活用して解決した事例が紹介されています。 / AspireチームはAIを既存の自動化に安全に組み込むことで、製品PR後の中央値44.8時間で82件の機能ドキュメントPRをマージすることに成功しました。 / これにより、追加の人員やプロセス変更なしに、異なるリポジトリ間でのドキュメント作成とレビューの自動化を実現し、開発効率を大幅に向上させました。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 08 Jul 2026 21:11:56 +0000</pubDate>
     </item>
     <item>
-      <title>Next.js 16.3でTurbopackのメモリ使用量を劇的に減らした話</title>
-      <link>https://zenn.dev/branbran/articles/2f9538ef0301c7</link>
-      <guid isPermaLink="false">https://zenn.dev/branbran/articles/2f9538ef0301c7</guid>
-      <description>[Score: 85] Next.js 16.2.6でTurbopackのメモリ使用量が急増する問題が発生し、開発体験を著しく損ねていました。 / これはCPU使用量削減のための意図的なトレードオフとして、訪問済みルートのコンパイル結果をメモリに保持し続ける設計が原因でした。 / Next.js 16.3では、このインメモリキャッシュをディスクへ退避する仕組みが導入され、メモリ使用量が大幅に改善されました。 (Source: Zenn)</description>
-      <pubDate>Thu, 09 Jul 2026 00:30:05 +0000</pubDate>
+      <title>QuadRFはドローンを検知し、壁越しにWiFiを視認できる</title>
+      <link>https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/</link>
+      <guid isPermaLink="false">https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/</guid>
+      <description>[Score: 85] Raspberry Pi 5とFPGAを搭載したフェーズドアレイ無線機「QuadRF」が開発されました。 / 壁越しにWiFiを視認し、飛行中のドローンを追跡できる高度な信号処理とビームフォーミング機能を持ちます。 / オープンソースコミュニティがこのような技術を生み出したことで、政府機関の能力についても示唆を与えています。 (Source: Hacker News)</description>
+      <pubDate>Fri, 10 Jul 2026 15:59:53 +0000</pubDate>
     </item>
     <item>
-      <title>Anthropic、Claude CodeでAIエージェントを活用するループ設計を紹介</title>
-      <link>https://gihyo.jp/article/2026/07/coding-agent-loop-design-with-claude-code</link>
-      <guid isPermaLink="false">https://gihyo.jp/article/2026/07/coding-agent-loop-design-with-claude-code</guid>
-      <description>[Score: 85] AnthropicのClaude Codeチームが、AIコーディングエージェントを効果的に使うための「ループ」設計の考え方を紹介しました。 / エージェントが停止条件を満たすまで作業を繰り返す仕組みで、ターンベース、ゴールベース、時間ベース、プロアクティブの4種類が提示されています。 / これにより、AIエージェントがより複雑で継続的な開発作業を自律的に実行できるようになり、開発効率の向上が期待されます。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 09 Jul 2026 03:52:12 +0000</pubDate>
+      <title>Cloudflareだけで独自ドメインメールをGmailから送受信できるようになった</title>
+      <link>https://zenn.dev/9m/articles/d08dcc093e1bbf</link>
+      <guid isPermaLink="false">https://zenn.dev/9m/articles/d08dcc093e1bbf</guid>
+      <description>[Score: 85] CloudflareがSMTP送信に対応したことで、独自ドメインのメールをGmailから直接送受信できるようになりました。 / これまで受信はEmail Routingで可能でしたが、送信には別途SMTPサーバーが必要で、費用や設定の手間が課題でした。 / CloudflareのEmail Sending（ベータ版）を利用することで、Google Workspaceなしで独自ドメインメールを安価かつ簡単に運用できるようになり、個人開発者にとって非常に有用です。 (Source: Zenn)</description>
+      <pubDate>Fri, 10 Jul 2026 02:33:47 +0000</pubDate>
     </item>
     <item>
-      <title>三菱自動車、国産ヒューマノイド量産へ 東大発スタートアップと合意 27年後半に月産1000台目指す</title>
-      <link>https://www.itmedia.co.jp/news/articles/2607/09/news123.html</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/articles/2607/09/news123.html</guid>
-      <description>[Score: 85] 三菱自動車と東大発スタートアップHighlandersが、国産ヒューマノイドロボットの共同開発と量産に向けた基本合意を発表しました。 / Highlandersが開発したAI制御のヒューマノイド「N（エヌ）」は、5指ハンドや複数のビジョンシステム、最新GPUを搭載し、人間用の道具を扱える設計です。 / 2027年後半には月産1000台を目指し、人手不足への対応や生産現場の高度化といった日本の製造業が抱える課題解決を目指します。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 09 Jul 2026 09:07:51 +0000</pubDate>
+      <title>ナレッジ83件を2時間で作った。でも腐るのは、もっと速かった</title>
+      <link>https://qiita.com/yamada-iknow/items/5e5ec4d5e96b12fbc75c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yamada-iknow/items/5e5ec4d5e96b12fbc75c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] LLM Wikiの概念に基づき、開発中のプロダクトのドキュメントがすぐに陳腐化する「docs drift」問題への解決策として、AIエージェントによる「生きたナレッジライブラリー」構築を試みた記録です。 / 自社プロダクトの非公開情報をLLMに学習させるため、Gitリポジトリの実コードを根拠にナレッジを生成させ、ハルシネーションを回避するアプローチを採用。 / 短時間で大量のナレッジを生成できたものの、その維持管理にはまだ人の手が必要であるという課題も示唆しています。 (Source: Qiita)</description>
+      <pubDate>Thu, 09 Jul 2026 22:00:29 +0000</pubDate>
     </item>
     <item>
-      <title>PostgreSQL 19ベータ版が登場。I/Oワーカーの自動スケール、Autovacuumの改善など新機能</title>
-      <link>https://www.publickey1.jp/blog/26/postgresql_19ioautovacuum.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresql_19ioautovacuum.html</guid>
-      <description>[Score: 85] PostgreSQL 19のベータ版がリリースされ、I/Oワーカーの自動スケール機能が導入されました。 / Autovacuumもパラレルワーカーの利用や新しいスコアリングシステムにより高速化・最適化されます。 / これらの改善により、PostgreSQLの性能と運用効率が大幅に向上することが期待されます。 (Source: Publickey)</description>
-      <pubDate>Wed, 08 Jul 2026 15:31:27 +0000</pubDate>
+      <title>OpenAIが2027年半ばまでに資金枯渇の可能性 — アナリストが財務を分析し悲観的な見通しを示す</title>
+      <link>https://www.reddit.com/r/technology/comments/1usojo6/openai_could_reportedly_run_out_of_cash_by/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1usojo6/openai_could_reportedly_run_out_of_cash_by/</guid>
+      <description>[Score: 85] アナリストの報告によると、OpenAIが2027年半ばまでに資金が尽きる可能性があると報じられています。 / これは同社の財務状況を精査した結果、悲観的な見通しが示されたものです。 / AI業界のリーダー企業であるOpenAIの資金状況は、今後のAI開発動向に大きな影響を与える可能性があります。 (Source: Reddit)</description>
+      <pubDate>Fri, 10 Jul 2026 14:00:44 +0000</pubDate>
     </item>
     <item>
-      <title>自律型データエージェントがデータ分析を行う際のコスト管理</title>
-      <link>https://dev.to/gde/guarding-the-till-while-autonomous-data-agents-do-the-digging-3nmi</link>
-      <guid isPermaLink="false">https://dev.to/gde/guarding-the-till-while-autonomous-data-agents-do-the-digging-3nmi</guid>
-      <description>[Score: 85] 自律型データエージェントは、LLMとツールを活用して複雑なビジネス上の疑問に答えるのに優れている。 / しかし、BigQueryのような大規模なデータウェアハウスでは、試行錯誤のループが高コストになりがちである。 / 本記事では、Google Antigravity SDKとData Agent Kit (DAK)拡張機能を用いて、コスト安全なエージェントを構築する方法を紹介する。 (Source: Dev.to)</description>
-      <pubDate>Thu, 09 Jul 2026 22:24:23 +0000</pubDate>
+      <title>ObsidianはAIの記憶保管には向いていない</title>
+      <link>https://note.com/shotovim/n/n40164f5b555c</link>
+      <guid isPermaLink="false">https://note.com/shotovim/n/n40164f5b555c</guid>
+      <description>[Score: 85] AIを効果的に活用するには、細かいTipsよりも「あとからAIに渡せる文脈」をどれだけ残せるかが重要だと筆者は主張しています。 / Obsidianのような人間向けのノートツールはAIの長期記憶にはノイズが多く不向きであり、独自のシステム構築やフォルダ構成・フロントマターの設計が推奨されます。 / 文脈を自動的に残す仕組みとして、作業中のPC画面を毎分スクリーンショットしOCRでテキスト化してAIに読み込ませる方法が紹介されています。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 09 Jul 2026 17:34:15 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub CopilotがGitHub PagesのDNS設定をゼロにする方法</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/</guid>
-      <description>[Score: 85] カスタムドメイン設定におけるDNSの複雑さは、多くの開発者にとってフラストレーションの原因となっている。 / GitHub Copilot CLIとNamecheapスキルを活用することで、DNSレコードを手動で編集することなく、カスタムドメインのウェブサイトを迅速に公開できる。 / この方法により、わずか14分で空のリポジトリからHTTPSで保護されたカスタムドメインのライブサイトを構築することが可能になる。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 08 Jul 2026 16:00:00 +0000</pubDate>
+      <title>Visual Studio Code、従量課金制になったGitHub Copilotの使用料を表示可能に（訂正あり）</title>
+      <link>https://www.publickey1.jp/blog/26/visual_studio_codegithub_copilot.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/visual_studio_codegithub_copilot.html</guid>
+      <description>[Score: 85] MicrosoftはVisual Studio Codeの新機能として、GitHub Copilotで消費した費用をリアルタイムで表示できるようにしました。 / GitHub Copilotは2026年6月から、生成AIチャットやAIエージェント利用時にトークン数に応じた従量課金制に移行しています。 / この機能により、ユーザーは利用料金を確認し、設定した上限に近づいた際や到達した際にアラートを受け取ることができ、コスト管理に役立ちます。 (Source: Publickey)</description>
+      <pubDate>Tue, 07 Jul 2026 15:55:48 +0000</pubDate>
     </item>
     <item>
-      <title>そのスキル、本当に効いてる？ Agent Skills を「評価」する3つのツールを比べてみた</title>
-      <link>https://qiita.com/Syoitu/items/78d45bee1160d059c972?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Syoitu/items/78d45bee1160d059c972?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 82] Anthropicが発表したAgent Skillsは、SKILL.mdで作業手順を明文化しAIエージェントに実行させる便利な機能ですが、その効果を評価・改善する難しさがあります。 / 本記事では、Anthropic公式のskill-creator、darwin-skill、MicrosoftのSkillOptという3つのスキル評価ツールを比較検証しています。 / スキルの構成要素（SKILL.md、付属ファイル）や、コンテキストを節約しつつ大規模スキルを扱う仕組みについても解説されており、AIエージェント開発者にとって有用な情報です。 (Source: Qiita)</description>
-      <pubDate>Thu, 09 Jul 2026 07:17:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>要件定義を整理する3つの手法（イベントストーミング／RDRA／ICONIX）</title>
-      <link>https://zenn.dev/tan_go238/articles/976ea64887569d</link>
-      <guid isPermaLink="false">https://zenn.dev/tan_go238/articles/976ea64887569d</guid>
-      <description>[Score: 80] 本記事では、プロジェクトの要件定義における業務整理の重要性を説き、そのための3つの手法「イベントストーミング」「RDRA」「ICONIX」を紹介しています。 / イベントストーミングは付箋で業務の流れを可視化し、関係者間の認識のズレや例外パターンを発見するワークショップ形式の手法です。 / RDRAは要件を関係性で整理し、4つのレイヤーで「なぜ必要か」を明確にすることで、抜け漏れや矛盾を見つけるのに役立ちます。 (Source: Zenn)</description>
-      <pubDate>Thu, 09 Jul 2026 02:41:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>かつては考えられなかったことだが、出版社がGoogle検索からのオプトアウトを準備中</title>
-      <link>https://www.reddit.com/r/technology/comments/1us199b/once_unimaginable_publishers_are_preparing_to_opt/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1us199b/once_unimaginable_publishers_are_preparing_to_opt/</guid>
-      <description>[Score: 80] 多くの出版社が、Google検索からのコンテンツ表示をオプトアウトする準備を進めていると報じられています。 / これは、AIによるコンテンツ生成や検索結果の表示方法の変化に対し、出版社が自社コンテンツの価値と収益を守るための動きと見られます。 / 巨大プラットフォームへの依存からの脱却と、デジタルコンテンツの未来に関する重要な転換点となる可能性があります。 (Source: Reddit)</description>
-      <pubDate>Thu, 09 Jul 2026 19:59:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>PostgreSQLをクラスタ化した分散DBでスケーリングと高可用性を実現する「Multigres v0.1」アルファ版が登場</title>
-      <link>https://www.publickey1.jp/blog/26/postgresqldbmultigres_v01.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresqldbmultigres_v01.html</guid>
-      <description>[Score: 80] Supabase社が、PostgreSQLをベースに水平スケーリングと高可用性を実現するオープンソースソフトウェア「Multigres v0.1」のアルファ版をリリースしました。 / Multigresは、MySQLの分散DB「Vitess」に匹敵する性能を目指し、PostgreSQLのレプリケーション技術を利用しつつ自動でデータシャーディングを行います。 / 独自のコンセンサスモデルにより厳密な一貫性を維持し、クラスタ稼働中でもパフォーマンスに影響を与えない分散データベースシステムです。 (Source: Publickey)</description>
-      <pubDate>Wed, 08 Jul 2026 15:33:17 +0000</pubDate>
+      <title>Next.js App Routerでよく見かける7つの間違い</title>
+      <link>https://dev.to/joodi/7-nextjs-app-router-mistakes-i-see-most-often-ai8</link>
+      <guid isPermaLink="false">https://dev.to/joodi/7-nextjs-app-router-mistakes-i-see-most-often-ai8</guid>
+      <description>[Score: 85] Next.jsのApp RouterはReactの考え方を変える素晴らしい機能ですが、従来の習慣が原因で多くの間違いが生じています。 / サーバーファーストの世界に適応し、クライアントコンポーネントの乱用や不要なデータフェッチを避けるべきです。 / パフォーマンスとバンドルサイズを最適化するための具体的な7つのヒントが紹介されています。 (Source: Dev.to)</description>
+      <pubDate>Fri, 10 Jul 2026 22:12:30 +0000</pubDate>
     </item>
   </channel>
 </rss>
