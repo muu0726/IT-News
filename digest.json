@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-07-05T16:07:24.091122+09:00",
-  "week_start": "2026-06-29",
-  "week_end": "2026-07-05",
-  "article_count": 182,
-  "overview": "今週のITニュースは、AI技術の進化と実用化が引き続き大きな注目を集めました。特に「Loop Engineering」という新しい概念が提唱され、AIエージェントとの対話方法や開発アプローチに変化の兆しが見られます。同時に、AIの倫理的利用や規制に関する議論も活発化し、政府によるAIモデルの評価・禁止に関する動きや、企業による不適切なAI利用の報道がありました。また、合成生物学における人工細胞の増殖成功や、宇宙産業における大型買収など、科学技術のフロンティアでの画期的な進展も報じられています。",
+  "generated_at": "2026-07-12T07:42:21.409617+09:00",
+  "week_start": "2026-07-06",
+  "week_end": "2026-07-12",
+  "article_count": 259,
+  "overview": "今週のITニュースは、AI技術の驚異的な進化と実用化が最も顕著なテーマでした。AIエージェントが複数アプリ連携タスクを自律的に完了したり、数学の未解決問題を証明したりと、その能力は大きく拡張しています。また、開発現場ではAIによるコード生成・レビュー・移行支援が加速し、DevOpsやセキュリティの新たな課題と解決策が議論されています。インフラ面でも、分散データベースやIoTメッセージングの新機能が登場し、技術基盤の進化も続いています。",
   "trends": [
-    "AIエージェントとLoop Engineeringの台頭",
-    "AIの倫理、規制、および企業競争",
-    "宇宙産業の再編と新技術の進展",
-    "合成生物学における科学的ブレイクスルー",
-    "開発効率化と基盤技術の改善"
+    "AIエージェントの多機能化と自律性向上",
+    "AIによる開発・運用支援の深化",
+    "AIの科学・数学分野への進出",
+    "分散DBとスケーラブルなインフラ",
+    "開発効率化と品質管理の再考"
   ],
   "highlights": [
     {
-      "title": "すでに4800スター、Loop Engineeringとは — “自分の仕事はloopを書くこと” (Zenn)",
-      "url": "https://zenn.dev/acntechjp/articles/0c63b5b08bbdb9",
-      "comment": "AIエージェントとの対話方法を根本的に変える「Loop Engineering」という新しい概念が提唱され、AI開発のパラダイムシフトを示唆する重要な記事です。"
+      "title": "JavaScriptランタイムのBun、Claude Fable 5を11日間稼働させてZigからRustへの移植を実現。Claudeをどう使ったのか？ (Publickey)",
+      "url": "https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html",
+      "comment": "大規模なコードベースの言語移植にAIが実用的に活用され、性能向上とメモリリーク根絶という具体的な成果を出した点が注目されます。"
     },
     {
-      "title": "初めて、ゼロから構築された細胞が増殖し分裂 (Hacker News)",
-      "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
-      "comment": "合成生物学における画期的な進歩であり、生命の基本原理の理解を深め、将来的な医療やバイオテクノロジーへの応用が期待される科学的ブレイクスルーです。"
+      "title": "15日目：私のAIエージェントが初の複数アプリタスクを完了。銀行アプリから残高をコピーし、WhatsAppで母に送信。2つのアプリ、1つのタスク、完全自律。タスクメモリが鍵。 (Dev.to)",
+      "url": "https://dev.to/okeke_chukwudubem_5f3bf49/day-15-my-ai-agent-just-completed-its-first-multi-app-task-it-copied-my-bank-balance-from-my-4eid",
+      "comment": "AIエージェントが単一アプリの枠を超え、複数アプリにまたがる複雑なタスクを自律的に実行したことは、実用化に向けた大きな一歩です。"
     },
     {
-      "title": "Rocket Lab、Iridiumを買収へ - 完全統合型宇宙サービス企業を創出する歴史的ディール (Hacker News)",
-      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
-      "comment": "宇宙産業における垂直統合型のサービス提供を加速させる大型買収であり、今後の宇宙ビジネスの構造変化に大きな影響を与える歴史的な動きです。"
+      "title": "GPT-5.6 Sol Ultraがサイクル二重被覆予想の証明を生成 (Hacker News)",
+      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+      "comment": "AIが数学の未解決問題の証明を生成したという報告は、AIの高度な論理的推論能力と科学研究への応用可能性を強く示唆しています。"
     },
     {
-      "title": "コードレビュー指摘300件を3ヶ月分類したら効いていたのは2種類だけだった (Zenn)",
-      "url": "https://zenn.dev/kenimo49/articles/code-review-300-comments-2-effective-categories",
-      "comment": "開発現場におけるコードレビューの効率化と品質向上に直結する実践的な知見を提供しており、多くの開発チームにとって示唆に富む内容です。"
+      "title": "MistralのRobostral Navigate：最先端のロボットナビゲーションモデル (Hacker News)",
+      "url": "https://mistral.ai/news/robostral-navigate/",
+      "comment": "単一のRGBカメラで複雑な環境を自律ナビゲートするAIモデルの登場は、ロボット工学におけるAIの進化と効率性を示しています。"
     },
     {
-      "title": "欧州議会に対するスパイ活動 (Hacker News)",
-      "url": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/",
-      "comment": "民主的機関に対するスパイウェアの悪用が明らかになり、政府による監視技術の倫理的利用とプライバシー保護の重要性を改めて浮き彫りにする深刻な問題です。"
+      "title": "Apple、次期macOS 27でSwift言語をシステムカーネル開発に採用。メモリ安全な言語として (Publickey)",
+      "url": "https://www.publickey1.jp/blog/26/applemacos_27swift.html",
+      "comment": "AppleがmacOSのシステムカーネル開発にメモリ安全なSwiftを採用することは、OSの安定性とセキュリティ向上に向けた重要な戦略的転換です。"
     }
   ]
 }
