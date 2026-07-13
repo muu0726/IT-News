@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 12 Jul 2026 22:42:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 22:50:18 +0000</lastBuildDate>
     <item>
-      <title>プロダクションAIエージェントをGPT-5.6に移行：2.2倍高速化、27%コスト削減</title>
-      <link>https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6</link>
-      <guid isPermaLink="false">https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6</guid>
-      <description>[Score: 95] PloyのAIエージェントがClaude OpusからOpenAIのGPT-5.6 Solに移行され、大幅な性能向上とコスト削減を実現した。 / GPT-5.6 Solは、マーケティングウェブサイトの構築・編集といった複雑なタスクにおいて、Claude Opusを上回る品質と効率を示した。 / モデルの切り替えは、LLM SDKを使用してもプロバイダー固有の動作への適応が必要であり、評価と調整が重要であることが示された。 (Source: Hacker News)</description>
-      <pubDate>Sun, 12 Jul 2026 17:13:07 +0000</pubDate>
+      <title>さくらのクラウドで、3つの国内開発された大規模言語モデルの試用を開始、デジタル庁がガバメントAI「源内」用に評価</title>
+      <link>https://www.publickey1.jp/blog/26/3ai.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/3ai.html</guid>
+      <description>[Score: 92] デジタル庁が、ガバメントAI「源内」の実装に向け、さくらのクラウド上で国内開発された3つの大規模言語モデルの試用を開始しました。 / NTTデータ「tsuzumi 2」、富士通「Takane 32B」、Preferred Networks「PLaMo 2.0 Prime」が評価対象です。 / 既存モデルとのA/Bテストを通じて、行政業務の効率化や住民サービス向上に最適なLLMを選定する取り組みです。 (Source: Publickey)</description>
+      <pubDate>Mon, 13 Jul 2026 15:48:50 +0000</pubDate>
     </item>
     <item>
-      <title>情報漏洩に敏感な金融機関で、Claude・Gemini・ChatGPTを導入した話</title>
-      <link>https://zenn.dev/seiuchi3939/articles/b12d6746d9f187</link>
-      <guid isPermaLink="false">https://zenn.dev/seiuchi3939/articles/b12d6746d9f187</guid>
-      <description>[Score: 92] 情報漏洩リスクに敏感な金融機関が、Claude、Gemini、ChatGPTといった生成AIサービスを全社導入した経緯とリスク整理について解説しています。 / 導入のリスクと導入しないリスクの両面から議論を進め、情報漏洩経路を「モデル学習への利用」と「ローカル環境からの漏洩」に特定しました。 / 各社のEnterpriseプラン利用、既存セキュリティ基盤の活用、許可制による操作制限という段階的な対策により、リスク部門の合意を得て導入を実現しました。 (Source: Zenn)</description>
-      <pubDate>Sun, 12 Jul 2026 01:36:49 +0000</pubDate>
+      <title>AI臭は語彙よりリズムに出る - 自然な日本語を書くAgent Skillと7モデル×406本の実測</title>
+      <link>https://zenn.dev/coji/articles/natural-japanese-ai-smell-lint</link>
+      <guid isPermaLink="false">https://zenn.dev/coji/articles/natural-japanese-ai-smell-lint</guid>
+      <description>[Score: 90] AIが生成する日本語の「AI臭」が、語彙ではなく文のリズム、特に文長の均質さに現れることを指摘しています。 / 著者はこのAI臭を検出するlintを組み込んだAgent Skill「natural-japanese」を開発し、自然な日本語への修正を試みています。 / GPT-5.6を含む7つのAIモデルを対象に、このlintの閾値を用いて406本の文章を実測・分析した結果が紹介されています。 (Source: Zenn)</description>
+      <pubDate>Mon, 13 Jul 2026 07:27:42 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeはプロンプトを読む前に33,000トークンを送信、OpenCodeは7,000トークン</title>
-      <link>https://systima.ai/blog/claude-code-vs-opencode-token-overhead</link>
-      <guid isPermaLink="false">https://systima.ai/blog/claude-code-vs-opencode-token-overhead</guid>
-      <description>[Score: 90] Claude Codeがプロンプト処理前にシステムプロンプトやツールスキーマなどで大量のトークン（約33,000）を消費することが判明した。 / これはOpenCodeの約7,000トークンと比較して大幅に多く、特に旧モデルでは顕著な差がある。 / 大量のトークン消費はキャッシュ効率の悪化やコスト増大に繋がり、実際の運用ではさらに多くのトークンが消費される可能性がある。 (Source: Hacker News)</description>
-      <pubDate>Sun, 12 Jul 2026 18:25:51 +0000</pubDate>
+      <title>「15歳とChatGPT」より、4万6812件が退会させられたシステムについて考えたい</title>
+      <link>https://qiita.com/ZiYuCai1984/items/636c7c15cd666e987a90?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ZiYuCai1984/items/636c7c15cd666e987a90?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 15歳の少年がChatGPTを用いて動画配信サービスにサイバー攻撃を行い、4万件以上のアカウントを退会させた事件について考察。 / 報道が「ChatGPT」に焦点を当てがちだが、本質的な問題はシステムの脆弱性にあると指摘し、AIは脆弱性を生み出さないと主張。 / 攻撃の成否はAIの利用ではなく、サーバー側が不適切な権限を許してしまう「Broken Object Level Authorization (BOLA)」などのセキュリティ設計に依存すると強調している。 (Source: Qiita)</description>
+      <pubDate>Sun, 12 Jul 2026 07:15:00 +0000</pubDate>
     </item>
     <item>
-      <title>攻撃者はブラウザを開いて最初の5分で何を見るのか〜バグバウンティで認可不備（P1/P2）を報告してきた視点で書く、フロントエンドの実装防御ガイド〜</title>
-      <link>https://qiita.com/sei_official/items/3ce11ea5faed795d47fc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/sei_official/items/3ce11ea5faed795d47fc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] バグバウンティで認可不備を報告してきた経験に基づき、攻撃者の視点からフロントエンドのセキュリティ対策を解説しています。 / ブラウザに届いた情報はすべて攻撃者に見えるという原則を強調し、難読化など「見せない工夫」が無意味であることを指摘。 / すべてのAPIエンドポイントでサーバー側が認証・認可を厳格に検証することの重要性を、具体的なコード例を交えて説明しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 10 Jul 2026 17:52:27 +0000</pubDate>
+      <title>【実験】AWS 東京と大阪を閉域で繋ぐ3つの方法、実際どれくらい速さが違うのか</title>
+      <link>https://qiita.com/sh_fukatsu/items/541051be6cbd4a90f2a6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/sh_fukatsu/items/541051be6cbd4a90f2a6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AWSの東京と大阪リージョン間を閉域網で接続する3つの方法（Transit Gateway, VPC Peering, PrivateLink）について、レイテンシとスループットを実測比較。 / マルチリージョン構成におけるDRやレイテンシ要件を満たすための接続方式選定に役立つ具体的なデータと考察を提供。 / AZ内、同一リージョン内AZ間、リージョン間での速度差を詳細に分析し、それぞれの方式の特性と選定指針を解説している。 (Source: Qiita)</description>
+      <pubDate>Sun, 12 Jul 2026 03:19:19 +0000</pubDate>
     </item>
     <item>
-      <title>新しいナトリウム金属電池設計、わずか4分で充電可能、数年間容量を維持</title>
-      <link>https://www.reddit.com/r/technology/comments/1uufxgh/new_sodium_metal_battery_design_charges_in_just_4/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1uufxgh/new_sodium_metal_battery_design_charges_in_just_4/</guid>
-      <description>[Score: 90] 新しいナトリウム金属電池が開発され、わずか4分でフル充電できるという画期的な性能を誇ります。 / さらに、この電池は数年間にわたってその容量を高いレベルで維持できるとされています。 / リチウムイオン電池に代わる次世代バッテリー技術として、EVや再生可能エネルギー貯蔵など幅広い分野での応用が期待されます。 (Source: Reddit)</description>
-      <pubDate>Sun, 12 Jul 2026 13:45:55 +0000</pubDate>
+      <title>AI使いすぎるとプロジェクトマネジメント力が低下する｜すぅ | AI駆動PM</title>
+      <link>https://note.com/suh_sunaneko/n/n98c16a0479ba</link>
+      <guid isPermaLink="false">https://note.com/suh_sunaneko/n/n98c16a0479ba</guid>
+      <description>[Score: 90] AIに過度に依存すると、特に「ヒトマネジメント」と呼ばれる人間関係構築や調整のプロジェクトマネジメント能力が低下する可能性が指摘されています。 / 筆者の実体験に基づき、AIはタスク管理などの「コトマネジメント」には有効だが、人の感情や認識のすり合わせには不向きであると分析しています。 / AI活用が進む中で、人間が培うべきスキルとAIの役割について再考を促す重要な提言です。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 12 Jul 2026 23:39:50 +0000</pubDate>
     </item>
     <item>
-      <title>有名エンジニアの .claude/skills 公開ラッシュから学ぶ、良い Claude Code Skills の書き方｜テック太郎</title>
-      <link>https://note.com/ai_eng_tech/n/n1ef4d57df219</link>
-      <guid isPermaLink="false">https://note.com/ai_eng_tech/n/n1ef4d57df219</guid>
-      <description>[Score: 90] 有名エンジニアがGitHubで公開しているClaude Code Skillsのリポジトリから、効果的なSkillsの書き方を学ぶ記事です。 / Matt PocockとAddy Osmaniの異なる設計思想を比較し、共通する良い書き方、特にdescriptionの重要性を解説しています。 / Skillsの本質は「CLAUDE.mdの指示が手順に育ったら切り出すもの」であり、コンテキストロードの負担を減らす利点があります。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 12 Jul 2026 10:20:50 +0000</pubDate>
+      <title>Google Cloud、生成AIのコードを瞬時に隔離して安全に実行できる「Cloud Runサンドボックス」パブリックプレビュー</title>
+      <link>https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html</guid>
+      <description>[Score: 90] Google Cloudが、生成AIが生成した信頼できないコードを安全に実行するための「Cloud Runサンドボックス」のパブリックプレビューを開始しました。 / AIが生成する可能性のある不正なコードやリソースを大量消費するコードからシステムを保護します。 / 短時間で多数の隔離された実行環境を瞬時に起動できるため、AIの安全な活用を促進します。 (Source: Publickey)</description>
+      <pubDate>Mon, 13 Jul 2026 15:50:52 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptランタイムのBun、Claude Fable 5を11日間稼働させてZigからRustへの移植を実現。Claudeをどう使ったのか？</title>
       <link>https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html</guid>
-      <description>[Score: 90] JavaScriptランタイム「Bun」の作者が、約53万5000行のZigコードをClaude Fable 5を用いて約11日間でRustへ移植しました。 / この移植により、メモリリークの根絶、バイナリサイズの20%削減、パフォーマンスの2〜5%向上が実現し、次期Bun 1.4はRust移植版となります。 / メモリ安全性の高いRustへの移行は、安定したソフトウェア提供を目指すための戦略的な選択とされています。 (Source: Publickey)</description>
+      <description>[Score: 90] JavaScriptランタイム「Bun」が、約53万5000行のZigコードをClaude Fable 5を用いて約11日間でRustへ移植しました。 / この移植により、メモリリークの根絶、バイナリサイズの約20%削減、パフォーマンスの2～5%向上といった改善が実現しました。 / 開発者はメモリ安全性を理由にRustを選択し、大規模なコード移行にAIエージェントを効果的に活用した事例として注目されます。 (Source: Publickey)</description>
       <pubDate>Thu, 09 Jul 2026 15:47:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>Appleの新しいSpeechAnalyzer API、Whisperおよびその前身とのベンチマーク</title>
+      <link>https://get-inscribe.com/blog/apple-speech-api-benchmark.html</link>
+      <guid isPermaLink="false">https://get-inscribe.com/blog/apple-speech-api-benchmark.html</guid>
+      <description>[Score: 85] Appleの新しいSpeechAnalyzer APIは、オンデバイスの音声認識においてWhisper SmallやSFSpeechRecognizerを凌駕する性能を示しました。 / LibriSpeechのテストで、Whisper Smallより約3倍高速に動作し、単語誤り率を大幅に削減しています。 / このAPIは、iOS 26およびmacOS 26で導入され、開発者にとって魅力的な選択肢となります。 (Source: Hacker News)</description>
+      <pubDate>Mon, 13 Jul 2026 16:06:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Critを導入したらコーディングAIへのフィードバックがとても楽になった</title>
+      <link>https://zenn.dev/tenkei/articles/5ba5c993dfb8d6</link>
+      <guid isPermaLink="false">https://zenn.dev/tenkei/articles/5ba5c993dfb8d6</guid>
+      <description>[Score: 85] コーディングAIへのフィードバックを効率化するローカルレビューツール「Crit」が紹介されています。 / Critは、AIが生成したコード差分やローカルで起動中のWebアプリに対し、GitHub PRのように直接コメントを付けられるUIを提供します。 / これにより、チャットベースの指示よりも具体的で精度の高いフィードバックが可能となり、AIを活用した開発ワークフローが改善されます。 (Source: Zenn)</description>
+      <pubDate>Mon, 13 Jul 2026 01:24:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>RDB と DynamoDB の二重書き込みで起きる整合性問題と Transactional Outbox</title>
+      <link>https://zenn.dev/dress_code/articles/1646ef6e35df62</link>
+      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/1646ef6e35df62</guid>
+      <description>[Score: 85] CRUDベースのサービスをEvent Sourcingへ移行する際、RDBとDynamoDBの二重書き込みで整合性問題が発生した事例を紹介。 / この問題に対し、Transactional Outboxパターンを導入して対応した具体的な方法と背景にある設計思想を解説。 / SSoTの考え方に基づき、不変なイベントを一次情報として残すことの重要性や、DynamoDBをEvent Storeに選定した理由を説明している。 (Source: Zenn)</description>
+      <pubDate>Mon, 13 Jul 2026 00:00:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cloudflare Workers は AI 搭載の Slack ボットを簡単に作れていいぞ - JX通信社エンジニアブログ</title>
+      <link>https://tech.jxpress.net/entry/2026/07/13/113000</link>
+      <guid isPermaLink="false">https://tech.jxpress.net/entry/2026/07/13/113000</guid>
+      <description>[Score: 85] JX通信社がCloudflare Workersを活用し、LLMでニュース記事の関連性を判定するSlackボットを開発した事例です。 / Cloudflare Workers AI、KV、Cronなど、必要な機能が全てCloudflare上で完結し、高い開発体験を実現しています。 / 誤検知の多い従来のキーワードマッチングを改善し、効率的な情報収集を可能にする実用的なソリューションが紹介されています。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 13 Jul 2026 04:15:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIエージェントが「完了」と言っても、誰が外部からそれを確認するのか？</title>
+      <link>https://dev.to/nexuslabzen/your-ai-agent-says-done-who-checks-that-from-outside-the-agent-3fe4</link>
+      <guid isPermaLink="false">https://dev.to/nexuslabzen/your-ai-agent-says-done-who-checks-that-from-outside-the-agent-3fe4</guid>
+      <description>[Score: 85] AIエージェントがタスク完了を誤って報告する「90% AI Agent」問題について論じています。 / 多くのエージェントが実際には未完了でも「完了」と自信を持って報告し、その失敗率が高いことが研究で示されています。 / LLMによる自己評価よりも、TF-IDFのような単純な外部チェックの方が誤った完了報告を効果的に検出できると指摘しています。 (Source: Dev.to)</description>
+      <pubDate>Mon, 13 Jul 2026 22:40:42 +0000</pubDate>
     </item>
     <item>
       <title>より良いツールがCopilotのコードレビューを悪化させた。私たちは実際にそれをどう改善したか。</title>
       <link>https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</guid>
-      <description>[Score: 90] GitHub Copilotのコードレビュー機能において、より高性能なツールを導入したにもかかわらず、レビューコストが増加し、問題検出率が低下するという予期せぬ結果が生じた事例が紹介されています。 / 問題はツールの性能ではなく、レビュー担当者がプルリクエストを読む方法に合わせて指示を書き直したところ、平均レビューコストが約20%削減され、品質は維持されたと説明されています。 / エージェントフレームワーク上で構築する際に、既存のツールが特定のユースケースから乖離すると、意図せず機能が低下する可能性があることを示唆し、ワークフローの調整が重要であると強調しています。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHub Copilotのコードレビューにおいて、より優れた共有ツールを導入したにもかかわらず、レビューコストが増加し、問題検出数が減少する逆効果が生じた。 / 問題はツール自体ではなく、レビューエージェントへの指示（プロンプト）の書き方にあったことが判明した。 / ワークフローに合わせて指示を調整することで、レビューコストを約20%削減しつつ、レビュー品質を維持することに成功した。 (Source: GitHub Blog)</description>
       <pubDate>Fri, 10 Jul 2026 15:57:47 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub CopilotがGitHub PagesのDNS設定をゼロにする方法</title>
+      <title>GitHub CopilotがGitHub PagesのDNS設定を不要にする方法</title>
       <link>https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/</guid>
-      <description>[Score: 90] GitHub Copilot CLIがGitHub Pagesのカスタムドメイン設定におけるDNS構成の複雑さを解消します。 / 開発者は手動でDNSレコードを編集することなく、Copilot CLIとレジストラAPI連携により自動化されたプロセスでウェブサイトを公開できます。 / これにより、DNSの専門知識がなくても、わずか14分程度でHTTPS対応のカスタムドメインサイトを立ち上げることが可能になります。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHub Copilot CLIとNamecheapのAPI連携により、GitHub Pagesのカスタムドメイン設定におけるDNS作業が不要になります。 / ユーザーはDNSの専門知識なしに、わずか14分でHTTPS対応のカスタムドメインサイトを構築できます。 / リポジトリ作成からランディングページ生成、GitHub Pages有効化、ドメイン登録までCopilot CLIが自動化します。 (Source: GitHub Blog)</description>
       <pubDate>Wed, 08 Jul 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Adaptive Recall：AIアシスタントのためのMCPを介した永続的メモリシステム</title>
-      <link>https://www.adaptiverecall.com/</link>
-      <guid isPermaLink="false">https://www.adaptiverecall.com/</guid>
-      <description>[Score: 88] Adaptive Recallは、AIアシスタント向けの永続的メモリシステムで、インタラクションから学習し、リコール品質を自動的に向上させる。 / ベクトル類似性だけでなく、時間的近接性、全文キーワード、知識グラフ探索など複数の検索戦略を並行して実行する。 / 認知科学のACT-R活性化モデルに基づき、記憶の優先順位付けや、時間の経過による記憶のフェードアウトなどを実現し、より人間らしい記憶管理を提供する。 (Source: Hacker News)</description>
-      <pubDate>Sun, 12 Jul 2026 21:08:20 +0000</pubDate>
+      <title>フロンティアモデルの実際の価格。トークン数 × 価格、で合ってる？</title>
+      <link>https://playcode.io/blog/real-price-of-frontier-models</link>
+      <guid isPermaLink="false">https://playcode.io/blog/real-price-of-frontier-models</guid>
+      <description>[Score: 80] 主要なLLMの実際のコストは、表示されている「トークンあたりの価格」だけでは判断できないと指摘しています。 / 同じコンテンツでも、ベンダーやモデルによってトークナイザーが異なり、生成されるトークン数が大きく変動します。 / このトークン数の違いが、最終的な課金額に大きな影響を与えることをベンチマークで示しています。 (Source: Hacker News)</description>
+      <pubDate>Mon, 13 Jul 2026 18:32:27 +0000</pubDate>
     </item>
     <item>
-      <title>ハーネスエンジニアリングとループエンジニアリングの違いとは？ aws aidlc workflow kitから整理する</title>
-      <link>https://zenn.dev/tacky_exception/articles/4d77fef5a36e42</link>
-      <guid isPermaLink="false">https://zenn.dev/tacky_exception/articles/4d77fef5a36e42</guid>
-      <description>[Score: 88] AIエージェントを活用した開発において、「ハーネスエンジニアリング」と「ループエンジニアリング」の概念が重要であると解説しています。 / ハーネスエンジニアリングはAIが適切に機能するための環境設計、ループエンジニアリングは目的達成まで反復する実行フロー設計を指します。 / aidlc-workflowsの事例を通じて、AIに適切な情報、ツール、制約、フィードバック、作業状態を与えることで、安価なモデルでも安定した実装が可能になることを示しています。 (Source: Zenn)</description>
-      <pubDate>Sun, 12 Jul 2026 05:19:16 +0000</pubDate>
+      <title>Climate.govが破壊されたが、オープンデータがそれを救った</title>
+      <link>https://werd.io/climate-gov-was-destroyed-open-data-saved-it/</link>
+      <guid isPermaLink="false">https://werd.io/climate-gov-was-destroyed-open-data-saved-it/</guid>
+      <description>[Score: 80] トランプ政権によるNOAAの資金削減により、米国の気候データサイトClimate.govが閉鎖されました。 / しかし、米国政府のデータがパブリックドメインであったため、有志がデータを復元し、新しいサイトを立ち上げることができました。 / これはオープンデータの重要性と、政府のインフラが失われた際に市民がそれを再構築できる可能性を示しています。 (Source: Hacker News)</description>
+      <pubDate>Mon, 13 Jul 2026 19:57:55 +0000</pubDate>
     </item>
     <item>
-      <title>Unity 6.7 の CoreCLR Player が爆速しすぎて笑ってしまった件</title>
-      <link>https://qiita.com/hez2010/items/4c608360c73fc6293bf1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/hez2010/items/4c608360c73fc6293bf1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] Unity 6.7 Alpha 2で実験的に導入されたCoreCLR Playerのパフォーマンスを検証した記事です。 / CPUパストレーサーを用いたベンチマークで、CoreCLRが従来のMonoやIL2CPPと比較して大幅に高速化していることを示しています。 / 特にマルチスレッド処理ではIL2CPPの約1.78倍、Monoの約9.4倍の速度を記録し、メモリ使用量も少ないという驚くべき結果が報告されています。 (Source: Qiita)</description>
-      <pubDate>Sat, 11 Jul 2026 02:24:51 +0000</pubDate>
+      <title>「めっちゃカメレオン」が教えてくれた、アイディア力こそAI時代の最強武器</title>
+      <link>https://qiita.com/prum_sumomo/items/dbabb5c130aae2566f0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/prum_sumomo/items/dbabb5c130aae2566f0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] 話題のゲーム「めっちゃカメレオン」の成功事例から、AI時代において技術力よりも「何を作るか」というアイディア力が重要であることを提唱。 / テトリスやぷよぷよなどのシンプルながら中毒性の高いゲームを例に、アイディアの強さとフックモデルによる中毒性のメカニズムを解説。 / AIが技術力の差を埋める現代において、利用者が遊び方を広げられる自由度の高いシンプルなアイディアこそが価値を生むと強調している。 (Source: Qiita)</description>
+      <pubDate>Mon, 13 Jul 2026 09:23:56 +0000</pubDate>
     </item>
     <item>
-      <title>AIにGitHubリポジトリを認識させるなら「階層構造＋index.md」と「Obsidian形式」どっちが速くて安くて正確か</title>
-      <link>https://zenn.dev/yamitake/articles/github-ai-context-structure-vs-obsidian</link>
-      <guid isPermaLink="false">https://zenn.dev/yamitake/articles/github-ai-context-structure-vs-obsidian</guid>
-      <description>[Score: 88] AIにGitHubリポジトリを認識させる際、「階層構造＋index.md」と「Obsidian形式」のどちらが優れているかを比較検証した記事です。 / AIがリポジトリを読む仕組みとして、ファイルツリーを歩くエージェント型とRAGの2通りを解説しています。 / ディレクトリ名やindex.mdがAIのコンテキスト認識に与える影響と、コスト効率について具体的な指針が示されています。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 03 Jul 2026 22:19:13 +0000</pubDate>
+      <title>オラクルの株価が6月1日以降約50%暴落、ラリー・エリソンは億万長者ランキング2位から8位に転落</title>
+      <link>https://www.reddit.com/r/technology/comments/1uvmbsq/oracles_nearly_50_crash_since_june_1_plunges/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1uvmbsq/oracles_nearly_50_crash_since_june_1_plunges/</guid>
+      <description>[Score: 80] オラクルの株価が6月1日以降、約50%も暴落し、共同創業者ラリー・エリソンの資産も大幅に減少しました。 / これにより、エリソン氏は世界の億万長者ランキングで2位から8位へと順位を落としています。 / 大手エンタープライズソフトウェア企業の業績と市場評価の変動は、IT業界全体の経済状況を示す指標となり得ます。 (Source: Reddit)</description>
+      <pubDate>Mon, 13 Jul 2026 19:55:59 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub Agentic Workflowsでリポジトリ横断のドキュメント作成を自動化する</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</guid>
-      <description>[Score: 88] 製品チームが直面する「ドキュメントはどこ？」という課題に対し、GitHub Agentic Workflowsを活用してリポジトリ横断のドキュメント作成を自動化した事例が紹介されています。 / Aspireチームは、AIを信頼できる自動化に安全に組み込む方法を模索し、Agentic Workflowsを導入することで、製品PRの約45時間後に82件の機能ドキュメントPRをマージすることに成功しました。 / これにより、追加の人員やプロセスの再トレーニングなしに、異なるリポジトリに存在する製品コードとドキュメントサイト間の連携を効率化し、セキュリティ要件も満たしながらドキュメント作成を自動化できたと述べています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 08 Jul 2026 21:11:56 +0000</pubDate>
+      <title>DevOpsとは何だったのか</title>
+      <link>https://mizzy.org/blog/2026/07/13/2/</link>
+      <guid isPermaLink="false">https://mizzy.org/blog/2026/07/13/2/</guid>
+      <description>[Score: 80] DevOpsの起源と進化について、Agile InfrastructureやPatrick Debois氏の活動から詳細に解説しています。 / 元々は開発と運用の組織的な分断を解消し、アジャイルを運用にも広げるという問題意識から生まれた概念です。 / 特定の技術スタックや工程、ツール群を指す言葉ではないことが強調されています。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 13 Jul 2026 14:48:26 +0000</pubDate>
     </item>
     <item>
-      <title>Chromium 148以降、Math.tanhが基盤OSを特定するためのフィンガープリントとして利用可能に</title>
-      <link>https://scrapfly.dev/posts/browser-math-os-fingerprint/</link>
-      <guid isPermaLink="false">https://scrapfly.dev/posts/browser-math-os-fingerprint/</guid>
-      <description>[Score: 85] Chromium 148以降、`Math.tanh`関数の計算結果がOSによって微妙に異なることが判明した。 / これにより、ブラウザのUser-Agent情報と異なるOSのフィンガープリントを返すことで、ユーザーのOSを特定する新たな手法が生まれた。 / 以前はV8エンジンが独自に計算していたが、`std::tanh`の使用に切り替わったことでOS固有の数学ライブラリが利用されるようになったため。 (Source: Hacker News)</description>
-      <pubDate>Sun, 12 Jul 2026 21:12:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>アイルランドのデータセンターが国内電力の23%を消費</title>
-      <link>https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013</link>
-      <guid isPermaLink="false">https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013</guid>
-      <description>[Score: 85] アイルランドのデータセンターが2025年に国内電力消費量の23%を占め、2023年の20%から増加しました。 / ダブリン地域での新規接続制限にもかかわらず、データセンターの電力消費は前年比10%増を記録しています。 / これは都市部の家庭消費量（18%）を上回り、2015年の5%から大幅に増加しており、電力供給への影響が懸念されています。 (Source: Hacker News)</description>
-      <pubDate>Sun, 12 Jul 2026 20:16:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>15年前の『アジャイルサムライ』、AI時代に古びたのは&quot;作るコスト&quot;の教えだけだった</title>
-      <link>https://qiita.com/tatsuya582/items/88508215a8e22b169166?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/tatsuya582/items/88508215a8e22b169166?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] 『アジャイルサムライ』の教えをAIがコードを書く現代の視点から再評価し、古びた点と通用する点を分析しています。 / AIによりユニットテストやプロトタイプ作成のコストが劇的に低下した一方で、テストの検出力やAIへの指示出しといった新たな課題が浮上しています。 / アジャイル開発の原則は変わらず有効であるものの、具体的な実践方法やツールの選択はAIの進化に合わせてアップデートする必要があることを示唆しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 10 Jul 2026 00:58:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>IT業界入って分かった、そりゃ衰退するわこんなん</title>
-      <link>https://anond.hatelabo.jp/20260712172838</link>
-      <guid isPermaLink="false">https://anond.hatelabo.jp/20260712172838</guid>
-      <description>[Score: 85] 幼少期からCSを学び、AIやビッグデータ解析を専門とする筆者が、日本のIT業界の現状に強い危機感を抱いています。 / 特に40～50代のITエンジニアに見られる他責思考、過度な保守性、過去への固執が、高い技術力やセンスを活かせず生産性を下げていると指摘。 / 日本のIT業界が抱える構造的な問題と、エンジニアの意識改革の必要性を訴え、業界の衰退に警鐘を鳴らしています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 12 Jul 2026 08:44:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Code、とりあえずこれ読んどけばOKなまとめ（2026年版） - Qiita</title>
-      <link>https://qiita.com/fuyunoki/items/5818688d20225aa8088a?utm_campaign=popular_items&amp;utm_medium=twitter&amp;utm_source=dlvr.it</link>
-      <guid isPermaLink="false">https://qiita.com/fuyunoki/items/5818688d20225aa8088a?utm_campaign=popular_items&amp;utm_medium=twitter&amp;utm_source=dlvr.it</guid>
-      <description>[Score: 85] 新卒エンジニアがClaude Codeの導入から実践的な使い方までをまとめた記事です。 / 2026年現在、ネイティブインストーラーが推奨されており、npm経由のインストールは非推奨となっています。 / 公式ドキュメントだけでなく、現役エンジニアの知見も踏まえた運用方法が解説されています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 12 Jul 2026 12:13:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>PostgreSQLをクラスタ化した分散DBでスケーリングと高可用性を実現する「Multigres v0.1」アルファ版が登場</title>
-      <link>https://www.publickey1.jp/blog/26/postgresqldbmultigres_v01.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresqldbmultigres_v01.html</guid>
-      <description>[Score: 85] Supabase社が、PostgreSQLをベースにした分散データベースソフトウェア「Multigres v0.1」のアルファ版をリリースしました。 / これは複数のPostgreSQLをクラスタ化し、データの自動シャーディングとレプリケーション技術を活用することで、水平スケーリングと高可用性を実現します。 / MySQLのVittesに匹敵する性能を目指し、独自のコンセンサスモデルにより厳密な一貫性を維持する点が特徴です。 (Source: Publickey)</description>
-      <pubDate>Wed, 08 Jul 2026 15:33:17 +0000</pubDate>
+      <title>elasticlinkを使ったTypeScript（およびJavaScript）での型安全なElasticsearchクエリ</title>
+      <link>https://dev.to/john_rodger_dee953ed28186/type-safe-elasticsearch-queries-in-typescript-and-javascript-with-elasticlink-2716</link>
+      <guid isPermaLink="false">https://dev.to/john_rodger_dee953ed28186/type-safe-elasticsearch-queries-in-typescript-and-javascript-with-elasticlink-2716</guid>
+      <description>[Score: 80] ElasticsearchのクエリDSLは型がなく、フィールドマッピングやセマンティックな意味をエディタが認識できない問題がある。 / elasticlinkは、インデックスマッピングを一度記述するだけで、型安全でマッピングを認識するElasticsearchクエリビルダーを提供する。 / これにより、誤ったフィールド名や不適切なクエリ句がエディタ上でエラーとして表示され、実行時エラーを未然に防ぐことができる。 (Source: Dev.to)</description>
+      <pubDate>Mon, 13 Jul 2026 22:23:05 +0000</pubDate>
     </item>
   </channel>
 </rss>
