@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 13 Jul 2026 22:50:18 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 22:53:09 +0000</lastBuildDate>
     <item>
-      <title>さくらのクラウドで、3つの国内開発された大規模言語モデルの試用を開始、デジタル庁がガバメントAI「源内」用に評価</title>
-      <link>https://www.publickey1.jp/blog/26/3ai.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/3ai.html</guid>
-      <description>[Score: 92] デジタル庁が、ガバメントAI「源内」の実装に向け、さくらのクラウド上で国内開発された3つの大規模言語モデルの試用を開始しました。 / NTTデータ「tsuzumi 2」、富士通「Takane 32B」、Preferred Networks「PLaMo 2.0 Prime」が評価対象です。 / 既存モデルとのA/Bテストを通じて、行政業務の効率化や住民サービス向上に最適なLLMを選定する取り組みです。 (Source: Publickey)</description>
-      <pubDate>Mon, 13 Jul 2026 15:48:50 +0000</pubDate>
+      <title>Bonsai 27B: スマートフォンで動作する27Bクラスのモデル</title>
+      <link>https://prismml.com/news/bonsai-27b</link>
+      <guid isPermaLink="false">https://prismml.com/news/bonsai-27b</guid>
+      <description>[Score: 95] Bonsai 27Bは、Qwen3.6 27Bをベースにしたマルチモーダルモデルで、27Bクラスのモデルとして初めてスマートフォンで動作します。 / 1ビットおよび3値の重み付けにより、従来の54GB（16ビット）や18GB（4ビット）から、3.9GB（1ビット）または5.9GB（3値）へと大幅にサイズを削減しました。 / これにより、マルチステップ推論、ツール呼び出し、ビジョンタスクなどの高度なAI機能をスマートフォンや一般的なノートPCでローカル実行可能にします。 (Source: Hacker News)</description>
+      <pubDate>Tue, 14 Jul 2026 17:50:48 +0000</pubDate>
     </item>
     <item>
-      <title>AI臭は語彙よりリズムに出る - 自然な日本語を書くAgent Skillと7モデル×406本の実測</title>
-      <link>https://zenn.dev/coji/articles/natural-japanese-ai-smell-lint</link>
-      <guid isPermaLink="false">https://zenn.dev/coji/articles/natural-japanese-ai-smell-lint</guid>
-      <description>[Score: 90] AIが生成する日本語の「AI臭」が、語彙ではなく文のリズム、特に文長の均質さに現れることを指摘しています。 / 著者はこのAI臭を検出するlintを組み込んだAgent Skill「natural-japanese」を開発し、自然な日本語への修正を試みています。 / GPT-5.6を含む7つのAIモデルを対象に、このlintの閾値を用いて406本の文章を実測・分析した結果が紹介されています。 (Source: Zenn)</description>
-      <pubDate>Mon, 13 Jul 2026 07:27:42 +0000</pubDate>
+      <title>孫正義氏「人類が頂点の時代終わる」--AIの自己増殖「止めようと思っても止められない」</title>
+      <link>https://japan.cnet.com/article/35250523/</link>
+      <guid isPermaLink="false">https://japan.cnet.com/article/35250523/</guid>
+      <description>[Score: 95] ソフトバンクグループの孫正義氏が、AIエージェントが自己増殖・自己進化することで人類が地球上の知的な頂点ではなくなると予測しました。 / 将来的には100兆個規模のAIエージェントが稼働し、人間の指示なしに判断・連携する世界が来ると語っています。 / このAIの進化は止められないとし、人類はAIを使って自身を進化させた「スーパーヒューマン」になるべきだと主張しました。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 14 Jul 2026 03:26:51 +0000</pubDate>
     </item>
     <item>
-      <title>「15歳とChatGPT」より、4万6812件が退会させられたシステムについて考えたい</title>
-      <link>https://qiita.com/ZiYuCai1984/items/636c7c15cd666e987a90?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ZiYuCai1984/items/636c7c15cd666e987a90?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 15歳の少年がChatGPTを用いて動画配信サービスにサイバー攻撃を行い、4万件以上のアカウントを退会させた事件について考察。 / 報道が「ChatGPT」に焦点を当てがちだが、本質的な問題はシステムの脆弱性にあると指摘し、AIは脆弱性を生み出さないと主張。 / 攻撃の成否はAIの利用ではなく、サーバー側が不適切な権限を許してしまう「Broken Object Level Authorization (BOLA)」などのセキュリティ設計に依存すると強調している。 (Source: Qiita)</description>
-      <pubDate>Sun, 12 Jul 2026 07:15:00 +0000</pubDate>
+      <title>Cursorのゼロデイ脆弱性：完全開示が唯一の防御策となる時</title>
+      <link>https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left</link>
+      <guid isPermaLink="false">https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left</guid>
+      <description>[Score: 90] AIアシスト開発環境「Cursor」に、悪意のある`git.exe`をプロジェクトルートに配置することで、ユーザーの操作なしに任意のコードが実行されるゼロデイ脆弱性が発見されました。 / この脆弱性は2025年12月に報告されたにもかかわらず、6ヶ月以上経過し197以上の新バージョンがリリースされた後も修正されていません。 / 700万人以上のユーザーを持つ広く普及したIDEにおけるこの深刻な問題は、セキュリティに対する企業の姿勢に疑問を投げかけています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 14 Jul 2026 17:58:35 +0000</pubDate>
     </item>
     <item>
-      <title>【実験】AWS 東京と大阪を閉域で繋ぐ3つの方法、実際どれくらい速さが違うのか</title>
-      <link>https://qiita.com/sh_fukatsu/items/541051be6cbd4a90f2a6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/sh_fukatsu/items/541051be6cbd4a90f2a6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AWSの東京と大阪リージョン間を閉域網で接続する3つの方法（Transit Gateway, VPC Peering, PrivateLink）について、レイテンシとスループットを実測比較。 / マルチリージョン構成におけるDRやレイテンシ要件を満たすための接続方式選定に役立つ具体的なデータと考察を提供。 / AZ内、同一リージョン内AZ間、リージョン間での速度差を詳細に分析し、それぞれの方式の特性と選定指針を解説している。 (Source: Qiita)</description>
-      <pubDate>Sun, 12 Jul 2026 03:19:19 +0000</pubDate>
+      <title>Claude Codeでレガシーシステムの刷新を進めた方法</title>
+      <link>https://zenn.dev/knowledgesense/articles/67c61463d9c664</link>
+      <guid isPermaLink="false">https://zenn.dev/knowledgesense/articles/67c61463d9c664</guid>
+      <description>[Score: 90] Anthropicの「Claude Code」を活用し、カナダ州政府の大規模レガシーシステム刷新プロジェクトの手法を紹介しています。 / 脆弱性調査、修正、テストコード生成、そしてシステムの再構築に至るまで、AIがどのように貢献したかを詳細に解説。 / 特に、4億6600万行のコードを対象に、静的解析とClaudeによる問題報告・修正、さらにエージェントによる継続的な改善プロセスが示されています。 (Source: Zenn)</description>
+      <pubDate>Tue, 14 Jul 2026 01:04:12 +0000</pubDate>
     </item>
     <item>
-      <title>AI使いすぎるとプロジェクトマネジメント力が低下する｜すぅ | AI駆動PM</title>
-      <link>https://note.com/suh_sunaneko/n/n98c16a0479ba</link>
-      <guid isPermaLink="false">https://note.com/suh_sunaneko/n/n98c16a0479ba</guid>
-      <description>[Score: 90] AIに過度に依存すると、特に「ヒトマネジメント」と呼ばれる人間関係構築や調整のプロジェクトマネジメント能力が低下する可能性が指摘されています。 / 筆者の実体験に基づき、AIはタスク管理などの「コトマネジメント」には有効だが、人の感情や認識のすり合わせには不向きであると分析しています。 / AI活用が進む中で、人間が培うべきスキルとAIの役割について再考を促す重要な提言です。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 12 Jul 2026 23:39:50 +0000</pubDate>
+      <title>AI時代のObservability設計 - PIIとAIの検索性を両立させ、自動修復する（実践編）</title>
+      <link>https://zenn.dev/aircloset/articles/3b8e60fcaab4b7</link>
+      <guid isPermaLink="false">https://zenn.dev/aircloset/articles/3b8e60fcaab4b7</guid>
+      <description>[Score: 90] AI時代におけるObservability設計において、個人情報（PII）の保護とAIによる検索性の両立が課題となる。 / 本記事では、PIIの混入経路を断ちつつ、AIが観測スタックを引ける状態を保つための具体的な設計手法を解説。 / 6層のPII対応設計により、セキュリティと利便性を両立させ、CI失敗からPR提案まで繋ぐ自動修復の実現方法を示す。 (Source: Zenn)</description>
+      <pubDate>Mon, 13 Jul 2026 23:51:06 +0000</pubDate>
     </item>
     <item>
       <title>Google Cloud、生成AIのコードを瞬時に隔離して安全に実行できる「Cloud Runサンドボックス」パブリックプレビュー</title>
       <link>https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html</guid>
-      <description>[Score: 90] Google Cloudが、生成AIが生成した信頼できないコードを安全に実行するための「Cloud Runサンドボックス」のパブリックプレビューを開始しました。 / AIが生成する可能性のある不正なコードやリソースを大量消費するコードからシステムを保護します。 / 短時間で多数の隔離された実行環境を瞬時に起動できるため、AIの安全な活用を促進します。 (Source: Publickey)</description>
+      <description>[Score: 90] Google Cloudが、生成AIによる信頼できないコードを安全に隔離実行できる「Cloud Runサンドボックス」のパブリックプレビューを開始しました。 / 生成AIが生成するコードは、過剰なリソース消費や不正なアクセスなどのリスクを伴うため、安全な実行環境が不可欠です。 / このサンドボックスは、短時間で多数の隔離された実行環境を瞬時に起動できるため、生成AIの安全な活用を促進します。 (Source: Publickey)</description>
       <pubDate>Mon, 13 Jul 2026 15:50:52 +0000</pubDate>
     </item>
     <item>
-      <title>JavaScriptランタイムのBun、Claude Fable 5を11日間稼働させてZigからRustへの移植を実現。Claudeをどう使ったのか？</title>
-      <link>https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html</guid>
-      <description>[Score: 90] JavaScriptランタイム「Bun」が、約53万5000行のZigコードをClaude Fable 5を用いて約11日間でRustへ移植しました。 / この移植により、メモリリークの根絶、バイナリサイズの約20%削減、パフォーマンスの2～5%向上といった改善が実現しました。 / 開発者はメモリ安全性を理由にRustを選択し、大規模なコード移行にAIエージェントを効果的に活用した事例として注目されます。 (Source: Publickey)</description>
-      <pubDate>Thu, 09 Jul 2026 15:47:05 +0000</pubDate>
+      <title>Hailo 8をハンドヘルドデバイスに搭載し、推論費用を支払うのをやめた</title>
+      <link>https://dev.to/numbpill3d/i-put-a-hailo-8-in-a-handheld-and-stopped-paying-for-inference-3ih7</link>
+      <guid isPermaLink="false">https://dev.to/numbpill3d/i-put-a-hailo-8-in-a-handheld-and-stopped-paying-for-inference-3ih7</guid>
+      <description>[Score: 90] 著者はクラウドAIのサブスクリプション費用とプライバシー問題に不満を感じ、Hailo 8 AIアクセラレータをハンドヘルドデバイスに組み込みました。 / これにより、リアルタイム物体検出や視覚的質問応答などのAI推論をローカルで実行し、クラウドへの依存を排除することに成功しました。 / 低消費電力でポケットサイズのデバイスでAIを動かすことで、コスト削減、レイテンシ改善、プライバシー保護を実現しています。 (Source: Dev.to)</description>
+      <pubDate>Tue, 14 Jul 2026 22:23:02 +0000</pubDate>
     </item>
     <item>
-      <title>Appleの新しいSpeechAnalyzer API、Whisperおよびその前身とのベンチマーク</title>
-      <link>https://get-inscribe.com/blog/apple-speech-api-benchmark.html</link>
-      <guid isPermaLink="false">https://get-inscribe.com/blog/apple-speech-api-benchmark.html</guid>
-      <description>[Score: 85] Appleの新しいSpeechAnalyzer APIは、オンデバイスの音声認識においてWhisper SmallやSFSpeechRecognizerを凌駕する性能を示しました。 / LibriSpeechのテストで、Whisper Smallより約3倍高速に動作し、単語誤り率を大幅に削減しています。 / このAPIは、iOS 26およびmacOS 26で導入され、開発者にとって魅力的な選択肢となります。 (Source: Hacker News)</description>
-      <pubDate>Mon, 13 Jul 2026 16:06:08 +0000</pubDate>
+      <title>ローカル LLM を構築した</title>
+      <link>https://zenn.dev/neet/articles/11bafab8645995</link>
+      <guid isPermaLink="false">https://zenn.dev/neet/articles/11bafab8645995</guid>
+      <description>[Score: 85] AIの倫理的・社会的問題提起から始まり、ローカルLLM構築の意義と具体的なモデル選定について解説しています。 / GoogleのGemma 4とアリババのQwen3.6を比較し、特にQwen3.6のDenseモデルとMoEモデルの違いに焦点を当てています。 / MoEモデルの利点や今後の研究動向にも触れ、個人がAI技術をキャッチアップする実践的なアプローチを示しています。 (Source: Zenn)</description>
+      <pubDate>Tue, 14 Jul 2026 08:13:16 +0000</pubDate>
     </item>
     <item>
-      <title>Critを導入したらコーディングAIへのフィードバックがとても楽になった</title>
-      <link>https://zenn.dev/tenkei/articles/5ba5c993dfb8d6</link>
-      <guid isPermaLink="false">https://zenn.dev/tenkei/articles/5ba5c993dfb8d6</guid>
-      <description>[Score: 85] コーディングAIへのフィードバックを効率化するローカルレビューツール「Crit」が紹介されています。 / Critは、AIが生成したコード差分やローカルで起動中のWebアプリに対し、GitHub PRのように直接コメントを付けられるUIを提供します。 / これにより、チャットベースの指示よりも具体的で精度の高いフィードバックが可能となり、AIを活用した開発ワークフローが改善されます。 (Source: Zenn)</description>
-      <pubDate>Mon, 13 Jul 2026 01:24:05 +0000</pubDate>
+      <title>「15歳とChatGPT」より、4万6812件が退会させられたシステムについて考えたい</title>
+      <link>https://qiita.com/ZiYuCai1984/items/636c7c15cd666e987a90?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ZiYuCai1984/items/636c7c15cd666e987a90?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] バンダイチャンネルのサイバー攻撃事件で、少年がChatGPTを利用した点が注目されたことに対し、筆者は本質的な問題はシステム側の脆弱性にあると指摘する。 / ChatGPTは攻撃コードの作成を補助するツールに過ぎず、根本原因は認証・認可・異常検知などのセキュリティ設計の甘さにあると主張。 / OWASPのBOLA（Broken Object Level Authorization）など、サーバー側の脆弱性対策の重要性を強調している。 (Source: Qiita)</description>
+      <pubDate>Sun, 12 Jul 2026 07:15:00 +0000</pubDate>
     </item>
     <item>
-      <title>RDB と DynamoDB の二重書き込みで起きる整合性問題と Transactional Outbox</title>
-      <link>https://zenn.dev/dress_code/articles/1646ef6e35df62</link>
-      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/1646ef6e35df62</guid>
-      <description>[Score: 85] CRUDベースのサービスをEvent Sourcingへ移行する際、RDBとDynamoDBの二重書き込みで整合性問題が発生した事例を紹介。 / この問題に対し、Transactional Outboxパターンを導入して対応した具体的な方法と背景にある設計思想を解説。 / SSoTの考え方に基づき、不変なイベントを一次情報として残すことの重要性や、DynamoDBをEvent Storeに選定した理由を説明している。 (Source: Zenn)</description>
-      <pubDate>Mon, 13 Jul 2026 00:00:19 +0000</pubDate>
+      <title>より小さなソフトウェアエンジニアリングチームを、2029年までに60％の組織が本格展開するとの予測、ガートナー</title>
+      <link>https://www.publickey1.jp/blog/26/202960.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/202960.html</guid>
+      <description>[Score: 85] ガートナーは、2029年までに60%の組織がAIの進化により、より小さなソフトウェアエンジニアリングチームを本格展開すると予測しました。 / AIが日常的なエンジニアリング作業を処理することで、人間は複雑な問題解決やイノベーションに集中できるようになります。 / これにより、現在の4～5人規模のチームが2～3人程度で十分となるなど、チーム編成の再編が進むと見られています。 (Source: Publickey)</description>
+      <pubDate>Tue, 14 Jul 2026 15:51:18 +0000</pubDate>
     </item>
     <item>
-      <title>Cloudflare Workers は AI 搭載の Slack ボットを簡単に作れていいぞ - JX通信社エンジニアブログ</title>
-      <link>https://tech.jxpress.net/entry/2026/07/13/113000</link>
-      <guid isPermaLink="false">https://tech.jxpress.net/entry/2026/07/13/113000</guid>
-      <description>[Score: 85] JX通信社がCloudflare Workersを活用し、LLMでニュース記事の関連性を判定するSlackボットを開発した事例です。 / Cloudflare Workers AI、KV、Cronなど、必要な機能が全てCloudflare上で完結し、高い開発体験を実現しています。 / 誤検知の多い従来のキーワードマッチングを改善し、効率的な情報収集を可能にする実用的なソリューションが紹介されています。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 13 Jul 2026 04:15:10 +0000</pubDate>
+      <title>さくらのクラウドで、3つの国内開発された大規模言語モデルの試用を開始、デジタル庁がガバメントAI「源内」用に評価</title>
+      <link>https://www.publickey1.jp/blog/26/3ai.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/3ai.html</guid>
+      <description>[Score: 85] デジタル庁は、ガバメントAI「源内」の実装に向け、さくらのクラウド上で国内開発された3つの大規模言語モデルの試用を開始しました。 / NTTデータ「tsuzumi 2」、富士通「Takane 32B」、Preferred Networks「PLaMo 2.0 Prime」が対象です。 / 既存の「源内」チャット機能に組み込み、A/Bテストでユーザー評価を行い、最適なモデルを選定します。 (Source: Publickey)</description>
+      <pubDate>Mon, 13 Jul 2026 15:48:50 +0000</pubDate>
     </item>
     <item>
-      <title>AIエージェントが「完了」と言っても、誰が外部からそれを確認するのか？</title>
-      <link>https://dev.to/nexuslabzen/your-ai-agent-says-done-who-checks-that-from-outside-the-agent-3fe4</link>
-      <guid isPermaLink="false">https://dev.to/nexuslabzen/your-ai-agent-says-done-who-checks-that-from-outside-the-agent-3fe4</guid>
-      <description>[Score: 85] AIエージェントがタスク完了を誤って報告する「90% AI Agent」問題について論じています。 / 多くのエージェントが実際には未完了でも「完了」と自信を持って報告し、その失敗率が高いことが研究で示されています。 / LLMによる自己評価よりも、TF-IDFのような単純な外部チェックの方が誤った完了報告を効果的に検出できると指摘しています。 (Source: Dev.to)</description>
-      <pubDate>Mon, 13 Jul 2026 22:40:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>より良いツールがCopilotのコードレビューを悪化させた。私たちは実際にそれをどう改善したか。</title>
+      <title>より良いツールがCopilotのコードレビューを悪化させた。実際に改善した方法とは。</title>
       <link>https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</guid>
-      <description>[Score: 85] GitHub Copilotのコードレビューにおいて、より優れた共有ツールを導入したにもかかわらず、レビューコストが増加し、問題検出数が減少する逆効果が生じた。 / 問題はツール自体ではなく、レビューエージェントへの指示（プロンプト）の書き方にあったことが判明した。 / ワークフローに合わせて指示を調整することで、レビューコストを約20%削減しつつ、レビュー品質を維持することに成功した。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHub Copilotのコードレビューにおいて、より優れた共有ツールを導入したにもかかわらず、レビューコストが増加し、検出される問題が減少する事態が発生しました。 / 問題はツール自体ではなく、エージェントへの指示方法にあったことが判明し、プルリクエストのレビュー方法に合わせて指示を書き直すことで解決しました。 / 結果として、レビュー品質を維持しつつ平均レビューコストを約20%削減することに成功し、エージェントの活用におけるプロンプトエンジニアリングの重要性を示しています。 (Source: GitHub Blog)</description>
       <pubDate>Fri, 10 Jul 2026 15:57:47 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub CopilotがGitHub PagesのDNS設定を不要にする方法</title>
+      <title>GitHub CopilotがGitHub PagesのDNS設定ゼロを可能にする方法</title>
       <link>https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/</guid>
-      <description>[Score: 85] GitHub Copilot CLIとNamecheapのAPI連携により、GitHub Pagesのカスタムドメイン設定におけるDNS作業が不要になります。 / ユーザーはDNSの専門知識なしに、わずか14分でHTTPS対応のカスタムドメインサイトを構築できます。 / リポジトリ作成からランディングページ生成、GitHub Pages有効化、ドメイン登録までCopilot CLIが自動化します。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHub Copilot CLIがGitHub Pagesのカスタムドメイン設定を大幅に簡素化する。 / 手動でのDNSレコード編集なしに、わずか14分でHTTPS対応のライブサイトを構築可能。 / Namecheap APIを活用したコミュニティスキルにより、DNS自動化を実現し、初心者でも容易に利用できる。 (Source: GitHub Blog)</description>
       <pubDate>Wed, 08 Jul 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>フロンティアモデルの実際の価格。トークン数 × 価格、で合ってる？</title>
-      <link>https://playcode.io/blog/real-price-of-frontier-models</link>
-      <guid isPermaLink="false">https://playcode.io/blog/real-price-of-frontier-models</guid>
-      <description>[Score: 80] 主要なLLMの実際のコストは、表示されている「トークンあたりの価格」だけでは判断できないと指摘しています。 / 同じコンテンツでも、ベンダーやモデルによってトークナイザーが異なり、生成されるトークン数が大きく変動します。 / このトークン数の違いが、最終的な課金額に大きな影響を与えることをベンチマークで示しています。 (Source: Hacker News)</description>
-      <pubDate>Mon, 13 Jul 2026 18:32:27 +0000</pubDate>
+      <title>Dependabotのバージョンアップデートにデフォルトのパッケージクールダウンが導入</title>
+      <link>https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/</link>
+      <guid isPermaLink="false">https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/</guid>
+      <description>[Score: 80] Dependabotが、新しいリリースがレジストリで3日間利用可能になってからバージョンアップデートのプルリクエストを開くように変更されました。 / このクールダウンはデフォルト設定となり、設定不要でサプライチェーン攻撃や破損したバージョンの取り込みリスクを軽減します。 / GitHub.comの全エコシステムおよびGitHub Enterprise Server 3.23以降に適用され、セキュリティ向上に寄与します。 (Source: Hacker News)</description>
+      <pubDate>Tue, 14 Jul 2026 21:15:51 +0000</pubDate>
     </item>
     <item>
-      <title>Climate.govが破壊されたが、オープンデータがそれを救った</title>
-      <link>https://werd.io/climate-gov-was-destroyed-open-data-saved-it/</link>
-      <guid isPermaLink="false">https://werd.io/climate-gov-was-destroyed-open-data-saved-it/</guid>
-      <description>[Score: 80] トランプ政権によるNOAAの資金削減により、米国の気候データサイトClimate.govが閉鎖されました。 / しかし、米国政府のデータがパブリックドメインであったため、有志がデータを復元し、新しいサイトを立ち上げることができました。 / これはオープンデータの重要性と、政府のインフラが失われた際に市民がそれを再構築できる可能性を示しています。 (Source: Hacker News)</description>
-      <pubDate>Mon, 13 Jul 2026 19:57:55 +0000</pubDate>
+      <title>バラバラだった staleTime を、データの性質で選ぶ4プリセットに集約した</title>
+      <link>https://zenn.dev/dress_code/articles/78ce46997dfe96</link>
+      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/78ce46997dfe96</guid>
+      <description>[Score: 80] 大規模TypeScriptフロントエンド開発において、TanStack Queryの`staleTime`設定が画面ごとにバラバラになる問題を解決した事例です。 / データの性質に応じた4つのプリセットに集約することで、キャッシュ方針の曖昧さを解消し、開発効率と品質を向上させました。 / マルチテナントSaaSでのセッション境界におけるキャッシュ破棄の課題にも触れ、`QUERY_PRESETS`と`clearAllQueries`を用いた段階的な改善アプローチを紹介しています。 (Source: Zenn)</description>
+      <pubDate>Tue, 14 Jul 2026 03:00:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>Railsで学ぶ 暗号化とハッシュ 〜master.keyやDeviseは内部で何をしている？〜</title>
+      <link>https://qiita.com/akachiryo/items/5a1deaa541d70e11d85f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/akachiryo/items/5a1deaa541d70e11d85f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Rails開発で頻繁に登場するmaster.key、credentials.yml.enc、Deviseのパスワード、cookies.signedの背後にある暗号化とハッシュの仕組みを解説。 / 暗号化とハッシュの違い（復号の可否）を明確にし、対称鍵暗号（AES）と非対称鍵暗号（RSA）の原理と鍵配送問題への対処法を説明。 / パスワード保存におけるハッシュの重要性や、各技術の適切な利用シーンについて基礎から学べる内容となっている。 (Source: Qiita)</description>
+      <pubDate>Tue, 14 Jul 2026 06:07:22 +0000</pubDate>
     </item>
     <item>
       <title>「めっちゃカメレオン」が教えてくれた、アイディア力こそAI時代の最強武器</title>
       <link>https://qiita.com/prum_sumomo/items/dbabb5c130aae2566f0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/prum_sumomo/items/dbabb5c130aae2566f0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] 話題のゲーム「めっちゃカメレオン」の成功事例から、AI時代において技術力よりも「何を作るか」というアイディア力が重要であることを提唱。 / テトリスやぷよぷよなどのシンプルながら中毒性の高いゲームを例に、アイディアの強さとフックモデルによる中毒性のメカニズムを解説。 / AIが技術力の差を埋める現代において、利用者が遊び方を広げられる自由度の高いシンプルなアイディアこそが価値を生むと強調している。 (Source: Qiita)</description>
+      <description>[Score: 80] 個人開発ゲーム「めっちゃカメレオン」の成功事例を挙げ、AI時代において技術力よりも「何を作るか」というアイディア力の重要性が増していると主張。 / テトリスやぷよぷよなどのシンプルなゲームが持つ中毒性や、利用者自身が遊び方を広げられる自由度の高さが、アイディアの強さを示していると分析。 / AIが技術力の差を埋める現代において、独創的なアイディアこそが競争優位性を生み出す最強の武器であると結論付けている。 (Source: Qiita)</description>
       <pubDate>Mon, 13 Jul 2026 09:23:56 +0000</pubDate>
     </item>
     <item>
-      <title>オラクルの株価が6月1日以降約50%暴落、ラリー・エリソンは億万長者ランキング2位から8位に転落</title>
-      <link>https://www.reddit.com/r/technology/comments/1uvmbsq/oracles_nearly_50_crash_since_june_1_plunges/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1uvmbsq/oracles_nearly_50_crash_since_june_1_plunges/</guid>
-      <description>[Score: 80] オラクルの株価が6月1日以降、約50%も暴落し、共同創業者ラリー・エリソンの資産も大幅に減少しました。 / これにより、エリソン氏は世界の億万長者ランキングで2位から8位へと順位を落としています。 / 大手エンタープライズソフトウェア企業の業績と市場評価の変動は、IT業界全体の経済状況を示す指標となり得ます。 (Source: Reddit)</description>
-      <pubDate>Mon, 13 Jul 2026 19:55:59 +0000</pubDate>
+      <title>GMO熊谷氏、在宅勤務廃止の理由説明--「タイピング数は確実に減少」「トータルでマイナス」</title>
+      <link>https://japan.cnet.com/article/35250558/</link>
+      <guid isPermaLink="false">https://japan.cnet.com/article/35250558/</guid>
+      <description>[Score: 80] GMOインターネットグループの熊谷代表が、在宅勤務を完全廃止した理由をXで説明しました。 / データ上、在宅勤務では時間当たりのPCタイピング数が減少し、全体として生産性がマイナスと判断したとのことです。 / AIの急速な進化を背景に「負ける要素は排除する」と述べ、コロナ禍で導入した在宅勤務制度を約6年半で廃止しました。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 14 Jul 2026 11:27:17 +0000</pubDate>
     </item>
     <item>
-      <title>DevOpsとは何だったのか</title>
-      <link>https://mizzy.org/blog/2026/07/13/2/</link>
-      <guid isPermaLink="false">https://mizzy.org/blog/2026/07/13/2/</guid>
-      <description>[Score: 80] DevOpsの起源と進化について、Agile InfrastructureやPatrick Debois氏の活動から詳細に解説しています。 / 元々は開発と運用の組織的な分断を解消し、アジャイルを運用にも広げるという問題意識から生まれた概念です。 / 特定の技術スタックや工程、ツール群を指す言葉ではないことが強調されています。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 13 Jul 2026 14:48:26 +0000</pubDate>
+      <title>KFC、全店舗で品切れや臨時休業のおそれ ネット注文も停止 原因はニチレイへの不正アクセス</title>
+      <link>https://www.itmedia.co.jp/news/articles/2607/14/news113.html</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/articles/2607/14/news113.html</guid>
+      <description>[Score: 80] 日本ケンタッキー・フライド・チキンが、食品配送委託先のニチレイへの不正アクセスにより、全店舗で品切れや臨時休業の可能性があると発表しました。 / 公式アプリやWebサイトからのオンライン注文、モバイルオーダー、デリバリーサービスも一時停止しています。 / ニチレイは個人情報や顧客データの流出は現時点では確認されていないとし、復旧時期は未定です。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 14 Jul 2026 10:02:56 +0000</pubDate>
     </item>
     <item>
-      <title>elasticlinkを使ったTypeScript（およびJavaScript）での型安全なElasticsearchクエリ</title>
-      <link>https://dev.to/john_rodger_dee953ed28186/type-safe-elasticsearch-queries-in-typescript-and-javascript-with-elasticlink-2716</link>
-      <guid isPermaLink="false">https://dev.to/john_rodger_dee953ed28186/type-safe-elasticsearch-queries-in-typescript-and-javascript-with-elasticlink-2716</guid>
-      <description>[Score: 80] ElasticsearchのクエリDSLは型がなく、フィールドマッピングやセマンティックな意味をエディタが認識できない問題がある。 / elasticlinkは、インデックスマッピングを一度記述するだけで、型安全でマッピングを認識するElasticsearchクエリビルダーを提供する。 / これにより、誤ったフィールド名や不適切なクエリ句がエディタ上でエラーとして表示され、実行時エラーを未然に防ぐことができる。 (Source: Dev.to)</description>
-      <pubDate>Mon, 13 Jul 2026 22:23:05 +0000</pubDate>
+      <title>Supabaseで「new row violates row-level security policy」エラーを修正する方法（思っているものとは違う）</title>
+      <link>https://dev.to/mateuszingano/fix-new-row-violates-row-level-security-policy-in-supabase-its-not-what-you-think-2g08</link>
+      <guid isPermaLink="false">https://dev.to/mateuszingano/fix-new-row-violates-row-level-security-policy-in-supabase-its-not-what-you-think-2g08</guid>
+      <description>[Score: 80] Supabaseで発生する「new row violates row-level security policy」エラーの解決策を解説しています。 / このエラーはRLSが機能している証拠であり、データ漏洩を防ぐ上で良い兆候であると説明しています。 / INSERTポリシーの欠如、`user_id`の不一致、未認証リクエストの3つの主な原因と、それぞれの具体的な修正方法が示されています。 (Source: Dev.to)</description>
+      <pubDate>Tue, 14 Jul 2026 22:24:23 +0000</pubDate>
     </item>
   </channel>
 </rss>
