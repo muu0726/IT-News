@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 15 Jul 2026 22:54:18 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 22:54:40 +0000</lastBuildDate>
     <item>
-      <title>あなたのAIエージェントの記憶は今や攻撃対象であり、誰もそのように設計していなかった</title>
-      <link>https://dev.to/coridev/your-ai-agents-memory-is-now-an-attack-surface-and-nobody-designed-for-that-34p4</link>
-      <guid isPermaLink="false">https://dev.to/coridev/your-ai-agents-memory-is-now-an-attack-surface-and-nobody-designed-for-that-34p4</guid>
-      <description>[Score: 95] AIエージェントの長期記憶が新たな攻撃対象となり、「MemGhost」と呼ばれる手法で記憶内容が永続的に書き換えられるリスクが浮上しました。 / マルウェアや認証情報盗難なしに、隠された指示によってエージェントの記憶が改ざんされ、将来のすべての対話に影響を与えます。 / 記憶システムはUX向上のために導入されたが、敵対的な入力に対するセキュリティモデルが考慮されていなかったことが問題です。 (Source: Dev.to)</description>
-      <pubDate>Wed, 15 Jul 2026 22:37:25 +0000</pubDate>
+      <title>AWSで障害　「CloudFront」世界規模で不調　PayPayに影響　noteやニコニコ生放送もつながりにくく</title>
+      <link>https://www.itmedia.co.jp/news/articles/2607/16/news096.html</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/articles/2607/16/news096.html</guid>
+      <description>[Score: 95] 7月16日午後、AWSのCDNサービス「Amazon CloudFront」で世界規模の障害が発生しました。 / この障害により、PayPay、ニコニコ生放送、はてなブックマーク、noteなど多数のサービスに影響が出ました。 / 問題はCloudFrontの「VPC Origins」機能で発生し、AWSは同日夜に復旧を発表しました。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 16 Jul 2026 09:10:39 +0000</pubDate>
     </item>
     <item>
-      <title>StripeとAdventがPayPal買収に共同提案 - 関係者情報</title>
-      <link>https://www.reuters.com/business/finance/stripe-advent-offer-buy-paypal-more-than-53-billion-sources-say-2026-07-15/</link>
-      <guid isPermaLink="false">https://www.reuters.com/business/finance/stripe-advent-offer-buy-paypal-more-than-53-billion-sources-say-2026-07-15/</guid>
-      <description>[Score: 90] 報道によると、決済サービス大手のStripeとプライベートエクイティ企業のAdventが、PayPalの買収に向けて共同提案を行いました。 / この買収提案は、530億ドルを超える規模になるとされており、決済業界における大規模な再編を示唆しています。 / もし実現すれば、オンライン決済市場の競争環境や勢力図に大きな影響を与える可能性があります。 (Source: Hacker News)</description>
-      <pubDate>Wed, 15 Jul 2026 03:32:45 +0000</pubDate>
+      <title>Kimi K3: オープンフロンティアインテリジェンス</title>
+      <link>https://www.kimi.com/blog/kimi-k3</link>
+      <guid isPermaLink="false">https://www.kimi.com/blog/kimi-k3</guid>
+      <description>[Score: 90] Kimi K3は、2.8兆パラメータを持つ世界初のオープンな3Tクラスモデルとして発表されました。 / 100万トークンのコンテキストウィンドウとネイティブの視覚能力を備え、コーディング、知識作業、推論において最先端の性能を発揮します。 / 2026年7月27日までにモデルの全ウェイトが公開される予定で、オープンモデルの規模を拡大するKimiの取り組みの最新段階を示しています。 (Source: Hacker News)</description>
+      <pubDate>Thu, 16 Jul 2026 14:46:05 +0000</pubDate>
     </item>
     <item>
-      <title>13年前のXeon（GPUなし）でGemma 4 26Bを5トークン/秒で実行</title>
-      <link>https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/</link>
-      <guid isPermaLink="false">https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/</guid>
-      <description>[Score: 90] 13年前の古いXeonサーバー（GPUなし）で、Googleの260億パラメータのGemma 4モデルを5トークン/秒で動作させることに成功した事例を紹介しています。 / これは、現代のAIモデルを古いエンタープライズハードウェアで動かすための高度なエンジニアリングスキルと工夫の重要性を示しています。 / 投機的デコーディングやCPU向けFlash Attentionなど、最新の推論技術を駆使して実現されており、AI利用における真のスキルを問い直す内容です。 (Source: Hacker News)</description>
-      <pubDate>Wed, 15 Jul 2026 15:34:05 +0000</pubDate>
+      <title>JavaScriptの日付処理が変わる！ DateからTemporalへ - ICS MEDIA</title>
+      <link>https://ics.media/entry/260715/</link>
+      <guid isPermaLink="false">https://ics.media/entry/260715/</guid>
+      <description>[Score: 90] JavaScriptの既存Dateクラスが持つ日付処理の煩雑さを解消するため、新しい標準API「Temporal」が導入されます。 / TemporalはECMAScript 2027に採用予定で、月が0始まりである問題やタイムゾーン処理の複雑さなどを改善します。 / これにより、開発者は外部ライブラリに頼ることなく、より直感的で堅牢な日付・時刻処理が可能になります。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 16 Jul 2026 09:45:14 +0000</pubDate>
     </item>
     <item>
-      <title>あなたのAIコーディングアシスタントはコードを読んでいるのではなく、自宅に郵送している</title>
-      <link>https://dev.to/coridev/your-ai-coding-assistant-isnt-reading-your-code-its-mailing-it-home-3blg</link>
-      <guid isPermaLink="false">https://dev.to/coridev/your-ai-coding-assistant-isnt-reading-your-code-its-mailing-it-home-3blg</guid>
-      <description>[Score: 90] AIコーディングCLIが、ユーザーのGit履歴全体（コミットログ、シークレットなど）をベンダー管理のバケットにアップロードしていることが判明しました。 / これはプライバシー設定のオプトアウトが適用されないチャネルを通じて行われ、ユーザーのデータ共有制御を迂回しています。 / モデルがファイルを読み込むだけでなく、インフラ層でリポジトリ全体がサイレントに外部に送信されるという、サプライチェーン的なデータ流出問題です。 (Source: Dev.to)</description>
-      <pubDate>Wed, 15 Jul 2026 22:40:16 +0000</pubDate>
+      <title>介入的グラウンディング監査：述語置換によるLLM思考連鎖のブラックボックス前提依存性テスト</title>
+      <link>https://arxiv.org/abs/2607.13069</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2607.13069</guid>
+      <description>[Score: 90] 本論文は、大規模言語モデル（LLM）の思考連鎖における前提依存性を評価する新しいブラックボックステスト手法を提案しています。 / 「介入的グラウンディング監査」と称されるこの手法は、述語置換を通じてLLMの推論プロセスを検証します。 / LLMの信頼性、説明可能性、および誤情報生成のリスクを評価する上で重要なツールとなり得ます。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 16 Jul 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub Agentic Workflowsによるクロスリポジトリドキュメントの自動化</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</guid>
-      <description>[Score: 88] GitHub Agentic Workflowsを活用し、異なるリポジトリ間のドキュメント作成を自動化する方法を紹介。 / 製品コードとドキュメントが別リポジトリにある場合のドキュメント更新遅延という課題を解決します。 / このワークフロー導入により、製品PRマージ後、平均44.8時間で関連ドキュメントPRが作成・レビューされ、ドキュメント作成効率が大幅に向上しました。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 08 Jul 2026 21:11:56 +0000</pubDate>
+      <title>LM Studio Bionic: オープンモデルのためのAIエージェント</title>
+      <link>https://lmstudio.ai/blog/introducing-lm-studio-bionic</link>
+      <guid isPermaLink="false">https://lmstudio.ai/blog/introducing-lm-studio-bionic</guid>
+      <description>[Score: 85] LM Studio Bionicは、オープンモデルを活用してコーディング、研究、文書作業などの実務を行うためのAIエージェントです。 / ローカルモデルとクラウドのオープンソースモデルを切り替えて利用でき、プライバシー保護とデータ保持ゼロを約束しています。 / 音声キーボードによるローカルでのリアルタイム文字起こしや、ローカルコードベースの検査・編集・デバッグ支援機能を提供します。 (Source: Hacker News)</description>
+      <pubDate>Thu, 16 Jul 2026 20:18:15 +0000</pubDate>
     </item>
     <item>
-      <title>Inkling：我々のオープンウェイトモデル</title>
-      <link>https://thinkingmachines.ai/news/introducing-inkling/</link>
-      <guid isPermaLink="false">https://thinkingmachines.ai/news/introducing-inkling/</guid>
-      <description>[Score: 85] Thinking Machinesが、フルウェイトを公開したオープンウェイトのマルチモーダルAIモデル「Inkling」を発表しました。 / Inklingは9750億の総パラメータ（410億がアクティブ）を持つMixture-of-Expertsトランスフォーマーで、100万トークンのコンテキストウィンドウをサポートします。 / テキスト、画像、音声に対応し、効率的な思考とカスタマイズのしやすさを特徴としており、ファインチューニングプラットフォームTinkerで利用可能です。 (Source: Hacker News)</description>
-      <pubDate>Wed, 15 Jul 2026 18:12:45 +0000</pubDate>
+      <title>NotebookLMがGemini Notebookに名称変更</title>
+      <link>https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/</guid>
+      <description>[Score: 85] GoogleのAI研究ツール「NotebookLM」が「Gemini Notebook」に名称変更されました。 / コード実行機能が追加され、データ分析能力が向上し、Googleエコシステム全体での連携が強化されます。 / 3000万人以上が利用しており、よりスマートで連携性の高い研究・学習ツールへと進化します。 (Source: Hacker News)</description>
+      <pubDate>Thu, 16 Jul 2026 16:08:13 +0000</pubDate>
     </item>
     <item>
-      <title>WSL Containers（wslc）入門｜Docker Desktop不要</title>
-      <link>https://zenn.dev/var/articles/wsl-containers-windows-wslc-hands-on</link>
-      <guid isPermaLink="false">https://zenn.dev/var/articles/wsl-containers-windows-wslc-hands-on</guid>
-      <description>[Score: 85] WSL 2.9.3で公開プレビューとなった「wslc.exe」を使用し、Docker DesktopなしでWindows上でLinuxコンテナをビルド・実行する方法を解説しています。 / hello-worldの実行、nginxのポート公開、Containerfileからのイメージビルドまで、具体的な手順とDockerとの違いを交えて紹介。 / Windows開発者にとって、Docker Desktopの代替となる軽量なコンテナ実行環境として注目される機能のハンズオンガイドです。 (Source: Zenn)</description>
-      <pubDate>Wed, 15 Jul 2026 00:06:05 +0000</pubDate>
+      <title>「金属有機構造体(MOF)」の開発でノーベル化学賞を受賞した科学者がアメリカを離れ中国の研究所所長に就任</title>
+      <link>https://gigazine.net/news/20260716-nobel-winning-chemist-leaves-us-china/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20260716-nobel-winning-chemist-leaves-us-china/</guid>
+      <description>[Score: 85] 2025年ノーベル化学賞受賞者のオマー・ヤギー氏が、アメリカを離れ中国のAI材料研究所所長に就任しました。 / この動きは、米国の科学予算削減と中国の優秀な研究者誘致が背景にあります。 / ヤギー氏が開発したMOFは、水質浄化やCO2除去、水素貯蔵など多岐にわたる応用が期待される材料です。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 16 Jul 2026 12:28:29 +0000</pubDate>
     </item>
     <item>
-      <title>夏休みが始まる前に知っておきたい、Reactエンジニアに優しくなったモバイルアプリ開発の世界</title>
-      <link>https://zenn.dev/cybozu_frontend/articles/rn-devmap-in-2026</link>
-      <guid isPermaLink="false">https://zenn.dev/cybozu_frontend/articles/rn-devmap-in-2026</guid>
-      <description>[Score: 85] Reactエンジニア向けに、React Native (RN) を使ったモバイルアプリ開発の現状を解説しています。 / 2026年時点のRNは「New Architecture」により劇的に進化し、Web開発と同じ感覚でiOS/Androidアプリが作れる「優しい世界」になったと紹介。 / 旧アーキテクチャのBridgeによる通信ボトルネックを解消したJSIの仕組みを詳しく説明し、開発の障壁が低くなったことを強調しています。 (Source: Zenn)</description>
-      <pubDate>Tue, 14 Jul 2026 10:00:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>生成AIはエンジニアリングの災害である | 驚くほど非効率な1兆ドル規模のプロジェクト</title>
-      <link>https://www.reddit.com/r/technology/comments/1ux9qoi/generative_ai_is_an_engineering_disaster_a/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1ux9qoi/generative_ai_is_an_engineering_disaster_a/</guid>
-      <description>[Score: 85] 生成AIが「エンジニアリングの災害」であり、「驚くほど非効率な1兆ドル規模のプロジェクト」であると指摘されています。 / これは、生成AIの技術的課題やコスト効率、持続可能性に対する批判的な視点を示しています。 / 現在のAIブームの裏側にある問題点に焦点を当て、今後のAI開発の方向性に影響を与える可能性があります。 (Source: Reddit)</description>
-      <pubDate>Wed, 15 Jul 2026 15:50:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>イーロン・マスク氏、X（旧Twitter）の全コードベースをオープンソース化する方針を発表</title>
-      <link>https://pc.watch.impress.co.jp/docs/news/2125521.html</link>
-      <guid isPermaLink="false">https://pc.watch.impress.co.jp/docs/news/2125521.html</guid>
-      <description>[Score: 85] イーロン・マスク氏がX（旧Twitter）の全コードベースを、セキュリティ脆弱性のレビュー完了後にオープンソース化する方針を表明しました。 / 公開されたコードが実際に稼働しているものと同一であることを、第三者のレビュアーが検証する仕組みも導入されます。 / ユーザーからの要望に応え、フォロー中のアカウントの投稿表示を増やし、わずかな「いいね」で似た内容が大量に表示されないようアルゴリズムも修正されました。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 15 Jul 2026 13:25:24 +0000</pubDate>
+      <title>フロントエンド開発に必要なツールをまとめて統合した「Vite+」、ベータ公開</title>
+      <link>https://www.publickey1.jp/blog/26/vite.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vite.html</guid>
+      <description>[Score: 85] Webアプリケーションビルドツール「Vite」を開発するVoidZeroが、統合開発ツールチェーン「Vite+」のベータ版を公開しました。 / Vite+は、開発用ローカルサーバー、バンドラ、リンター、フォーマッター、テストランナーなど、フロントエンド開発に必要なツールを単一のCLIで提供します。 / これにより、JavaScriptアプリケーション開発の効率化と、ツール間の連携強化が期待されます。 (Source: Publickey)</description>
+      <pubDate>Wed, 15 Jul 2026 15:59:11 +0000</pubDate>
     </item>
     <item>
       <title>より小さなソフトウェアエンジニアリングチームを、2029年までに60％の組織が本格展開するとの予測、ガートナー</title>
       <link>https://www.publickey1.jp/blog/26/202960.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/202960.html</guid>
-      <description>[Score: 85] ガートナーは、2029年までに60%の組織がより小さなソフトウェアエンジニアリングチームを本格展開すると予測しました。 / AIの進化により日常的なエンジニアリング作業がAIに代替され、人間は複雑な問題解決やイノベーションに注力できるようになります。 / これにより、少人数で構成される小さなチームが効率的に機能し、一般的になると見込まれます。 (Source: Publickey)</description>
+      <description>[Score: 85] ガートナーは、2029年までに60%の組織がより小さなソフトウェアエンジニアリングチームを本格展開すると予測しました。 / これは、AIの発展により日常的なエンジニアリング作業をAIが処理できるようになるためです。 / 人間は複雑な問題解決やイノベーションに注力できるようになり、少人数チームでも高い生産性を実現できると見込まれています。 (Source: Publickey)</description>
       <pubDate>Tue, 14 Jul 2026 15:51:18 +0000</pubDate>
     </item>
     <item>
-      <title>より良いツールがCopilotのコードレビューを悪化させた。我々が実際に改善した方法</title>
+      <title>より良いツールがCopilotのコードレビューを悪化させたが、私たちはそれを改善した方法</title>
       <link>https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</guid>
-      <description>[Score: 85] GitHub Copilotのコードレビューにおいて、より良いツールを導入したにもかかわらず性能が低下した事例を紹介。 / 問題はツールではなく、エージェントへの指示（プロンプト）の書き方にあったことを発見しました。 / レビューアの読み方に合わせて指示を調整することで、レビューコストを約20%削減しつつ品質を維持することに成功しました。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHub Copilotのコードレビュー機能は、より高性能な共有CLIツールを導入したことで一時的に性能が低下しました。 / これは、AIエージェントへの指示が新しいツールの特性に合わせて調整されていなかったためです。 / 人間のレビューアがプルリクエストを読む方法に合わせて指示を書き直すことで、レビュー品質を維持しつつ平均レビューコストを約20%削減することに成功しました。 (Source: GitHub Blog)</description>
       <pubDate>Fri, 10 Jul 2026 15:57:47 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub 2026年6月稼働状況レポート</title>
-      <link>https://github.blog/news-insights/company-news/github-availability-report-june-2026/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-june-2026/</guid>
-      <description>[Score: 85] GitHubが2026年6月の稼働状況とインフラ投資について報告しました。 / AzureへのモノリスおよびGitトラフィック移行の進捗と課題、特に安定性問題による一時停止について詳述しています。 / 目標達成には至らなかったものの、安定性を優先した慎重な移行戦略が取られていることが示されています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 08 Jul 2026 19:35:51 +0000</pubDate>
+      <title>SPINE: エージェントAIでサイバーフィジカルギャップを埋める</title>
+      <link>https://arxiv.org/abs/2607.13049</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2607.13049</guid>
+      <description>[Score: 85] 本論文は、エージェントAIを活用してサイバー空間と物理空間の間のギャップを埋める「SPINE」というフレームワークを提案しています。 / これにより、AIが物理世界とより効果的に相互作用し、複雑なタスクを実行できるようになります。 / ロボティクス、IoT、スマートシティなどの分野で、自律的なシステム開発を加速させる可能性を秘めています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 16 Jul 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Grok Build</title>
-      <link>https://github.com/xai-org/grok-build</link>
-      <guid isPermaLink="false">https://github.com/xai-org/grok-build</guid>
-      <description>[Score: 80] Grok Buildは、xAIが開発したターミナルベースのAIコーディングエージェントです。 / コードベースを理解し、ファイルの編集、シェルコマンドの実行、Web検索、長時間タスクの管理をTUIで行えます。 / インタラクティブな利用、スクリプト/CI向けのヘッドレスモード、エディタへの組み込み（ACP経由）に対応し、Rustで実装されています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 15 Jul 2026 20:24:58 +0000</pubDate>
+      <title>ベルナップの型付き内包的FOLに基づくニューロシンボリックAGIロボットの確率的拡張</title>
+      <link>https://arxiv.org/abs/2607.13073</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2607.13073</guid>
+      <description>[Score: 85] 本論文は、ニューロシンボリックAIとベルナップの型付き内包的FOLを組み合わせたAGIロボットの確率的拡張を提案しています。 / これは、神経ネットワークの学習能力と記号論理の推論能力を統合し、より汎用的な知能を持つロボットの実現を目指します。 / 高度な推論と不確実性への対応を可能にし、AGI研究の理論的な進展に貢献するものです。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 16 Jul 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>一人前のエンジニアなら、PRでコメントをもらうな。</title>
-      <link>https://zenn.dev/headwaters/articles/72c39ad735038d</link>
-      <guid isPermaLink="false">https://zenn.dev/headwaters/articles/72c39ad735038d</guid>
-      <description>[Score: 80] 本記事は、エンジニアの職業倫理として、プルリクエスト（PR）で人間からコメントをもらうべきではないという強い主張を展開しています。 / AIを活用してコードの不備や考慮漏れを事前に潰し、レビュー者の時間を尊重することの重要性を強調。 / AIをレビューの「一周目」として徹底的に活用し、指摘が枯れるまで回すことで、人間はより高度なレビューに集中すべきだと提言しています。 (Source: Zenn)</description>
-      <pubDate>Tue, 14 Jul 2026 13:17:16 +0000</pubDate>
+      <title>非同期パーソナルエージェントのススメ</title>
+      <link>https://zenn.dev/mkj/articles/7a8f55591e6baf</link>
+      <guid isPermaLink="false">https://zenn.dev/mkj/articles/7a8f55591e6baf</guid>
+      <description>[Score: 82] 松尾研究所のシニアデータサイエンティストが、非同期型のパーソナルエージェント構築について解説しています。 / ユーザーの指示とエージェントの実行タイミングを分離し、Cronを基盤とした複数の非同期インタラクションを設計。 / Personal Knowledge Base (PKB) を活用し、業務アウトプットを構造的に整理・蓄積してエージェントの行動規範を模倣させます。 (Source: Zenn)</description>
+      <pubDate>Thu, 16 Jul 2026 02:50:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub Agentic Workflowsでクロスリポジリのドキュメント作成を自動化</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</guid>
+      <description>[Score: 82] GitHubのAspireチームは、GitHub Agentic Workflowsを活用し、複数のリポジトリにまたがるドキュメント作成を自動化しました。 / これにより、製品のプルリクエストがマージされてから平均44.8時間で82件の機能ドキュメントのプルリクエストをマージすることに成功し、ドキュメントの遅延という課題を解決しました。 / 特に、クロスリポジトリでの自動化はセキュリティ上の制約から困難でしたが、AIを活用することで新たな人員やプロセス変更なしに効率化を実現しました。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 08 Jul 2026 21:11:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>SQL MCP Server が GA したらしい</title>
+      <link>https://zenn.dev/microsoft/articles/1113250e1e63dc</link>
+      <guid isPermaLink="false">https://zenn.dev/microsoft/articles/1113250e1e63dc</guid>
+      <description>[Score: 80] SQL MCP Serverが2026年6月にGA（一般提供）開始されたことがAzure Updateで発表されました。 / Data API Builderの一部として、AIエージェントがデータベース操作（DMLツール）を利用できるようになる機能です。 / SQL Server、Cosmos DBなど多様なDBに対応し、AIとデータベース連携を強化します。 (Source: Zenn)</description>
+      <pubDate>Thu, 16 Jul 2026 04:43:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>GoMLX による Go 単独での手書き数字分類 ― 学習から推論まで Python を用いない実装</title>
+      <link>https://zenn.dev/c6h1ocao6/articles/7e41873f3a9668</link>
+      <guid isPermaLink="false">https://zenn.dev/c6h1ocao6/articles/7e41873f3a9668</guid>
+      <description>[Score: 80] Go言語製機械学習フレームワーク「GoMLX」を用いて、手書き数字分類の多層パーセプトロンをGo単独で実装・評価した事例研究です。 / データ読み込みから学習、推論、配布までPythonを介さず完結できることを定量的に示し、scikit-learn参照実装と同水準の精度を達成しました。 / 純Goバックエンドでは約2.6秒で学習・推論を完了し、約32MBの省メモリ、約10MBの単一バイナリ配布が可能で、運用上のメリットを提示しています。 (Source: Zenn)</description>
+      <pubDate>Thu, 16 Jul 2026 02:38:21 +0000</pubDate>
     </item>
     <item>
       <title>AI人材は２つに分かれる。あなたが目指すべきはどっち？</title>
       <link>https://qiita.com/prum_sumomo/items/b7bfe27efae0231a09af?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/prum_sumomo/items/b7bfe27efae0231a09af?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] 生成AIの出現により、エンジニアに求められるスキルが変化し、技術力だけでなく「人と関わりながら課題を解決する力」が重要になっていると指摘しています。 / AIがコーディングの多くを担うようになる中で、仕様策定、要件定義、チーム連携、企画、調整といった人間特有の役割の価値が相対的に上昇。 / 前職の非IT経験がエンジニアとしての強みになり得るとし、具体的な行動指針を提示しています。 (Source: Qiita)</description>
+      <description>[Score: 80] 生成AIの出現により、エンジニアに求められるスキルが変化し、コードを書く力だけでなく「人と関わりながら課題を解決する力」の価値が相対的に上昇していると指摘しています。 / AIが代替できない役割として、課題発見、要件定義、チーム連携、調整力、企画力などを挙げ、これらの非IT経験がエンジニアとしての強みになると解説しています。 / 技術力と並行して、コミュニケーション力や調整力といったソフトスキルを磨くことの重要性を強調し、これまでの経験を活かして評価されるエンジニアになるための指針を示しています。 (Source: Qiita)</description>
       <pubDate>Wed, 15 Jul 2026 07:47:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Codeが化けた。今使っている3つのプラグイン+標準機能の活用法</title>
+      <link>https://zenn.dev/sonicmoov/articles/8712598f532b18</link>
+      <guid isPermaLink="false">https://zenn.dev/sonicmoov/articles/8712598f532b18</guid>
+      <description>[Score: 80] フロントエンドエンジニアがClaude Codeを3ヶ月間業務で活用し、厳選した3つのプラグインと標準機能を紹介。 / 特に、ステータスラインのカスタマイズによるモデル名、コンテキスト使用量、レートリミット、コストの可視化が強調されている。 / これにより、コンテキスト管理やコスト意識が高まり、効率的なAI活用が可能になる実践的なノウハウが提供されている。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 16 Jul 2026 02:38:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>.NET 8と.NET 9は今年の11月でサポート終了、マイクロソフトが警告</title>
+      <link>https://www.publickey1.jp/blog/26/net_8net_911.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_8net_911.html</guid>
+      <description>[Score: 80] Microsoftは、.NET 8と.NET 9のサポートが2026年11月10日に終了することを警告しました。 / サポート終了後もアプリケーションは動作しますが、バグ修正やセキュリティパッチは提供されなくなります。 / 開発者は、引き続きサポートされる.NET 10（LTS版）または.NET 11への速やかな移行が推奨されます。 (Source: Publickey)</description>
+      <pubDate>Thu, 16 Jul 2026 18:30:28 +0000</pubDate>
     </item>
     <item>
       <title>Google Cloud、生成AIのコードを瞬時に隔離して安全に実行できる「Cloud Runサンドボックス」パブリックプレビュー</title>
       <link>https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html</guid>
-      <description>[Score: 80] Google Cloudが、生成AIによる信頼できないコードを安全に実行するための「Cloud Runサンドボックス」をパブリックプレビューで公開しました。 / 生成AIが生成するコードは、不必要なリソース消費や不正なアクセス、重要ファイルの削除などのリスクを伴う可能性があります。 / このサンドボックスは、隔離された実行環境を瞬時に起動し、生成AIの安全な利用を可能にします。 (Source: Publickey)</description>
+      <description>[Score: 80] Google Cloudは、生成AIが生成した信頼できないコードを安全に実行するための「Cloud Runサンドボックス」をパブリックプレビューとして公開しました。 / これにより、生成AIが不適切なリソース要求や不正なアクセスを行うリスクを隔離し、セキュリティを確保します。 / 短時間で多数のタスクを生成AIに処理させる際に、瞬時に隔離された実行環境を提供できることが特徴です。 (Source: Publickey)</description>
       <pubDate>Mon, 13 Jul 2026 15:50:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>AWS WAFの動的ラベル補間機能を用いた誤検知に強いチャレンジアーキテクチャの構築</title>
-      <link>https://dev.to/aws-builders/building-a-false-positive-resilient-challenge-architecture-with-aws-waf-dynamic-label-interpolation-e96</link>
-      <guid isPermaLink="false">https://dev.to/aws-builders/building-a-false-positive-resilient-challenge-architecture-with-aws-waf-dynamic-label-interpolation-e96</guid>
-      <description>[Score: 80] AWS WAFの動的ラベル補間機能を利用し、誤検知に強いボット対策のチャレンジアーキテクチャを構築する方法を紹介。 / 正当なユーザーが誤ってボットと分類された場合でも、自己解決でアクセスを回復できる仕組みを提供します。 / これにより、誤検知によるブロックを実質的に排除し、WAF運用における大きな課題を解決します。 (Source: Dev.to)</description>
-      <pubDate>Wed, 15 Jul 2026 22:19:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubがすべてのリポジトリに永続的なオーナーを割り当てた方法</title>
-      <link>https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/</link>
-      <guid isPermaLink="false">https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/</guid>
-      <description>[Score: 80] GitHubが14,000以上の内部リポジリに永続的なオーナーを割り当てる取り組みについて解説。 / 以前は多くのリポジトリに明確なオーナーがおらず、セキュリティや運用上の課題となっていました。 / この取り組みにより、不要なリポジトリがアーカイブされ、残りのアクティブなリポジトリにはオーナーが明確に割り当てられ、新規作成時にもオーナーシップが必須となりました。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 09 Jul 2026 16:29:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>潜在的なCoT推論を動的システムとして解釈する</title>
-      <link>https://arxiv.org/abs/2607.09698</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2607.09698</guid>
-      <description>[Score: 80] 大規模言語モデル（LLM）における「思考の連鎖（Chain-of-Thought, CoT）」推論を、動的システムとして解釈する理論的な研究です。 / CoTの潜在的なメカニズムを数学的に分析し、その振る舞いを理解しようと試みています。 / LLMの内部動作の解明と、より高度な推論能力の開発に貢献する重要な基礎研究です。 (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 14 Jul 2026 04:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
