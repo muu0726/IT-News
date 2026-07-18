@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-07-12T07:42:21.409617+09:00",
-  "week_start": "2026-07-06",
-  "week_end": "2026-07-12",
-  "article_count": 259,
-  "overview": "今週のITニュースは、AI技術の驚異的な進化と実用化が最も顕著なテーマでした。AIエージェントが複数アプリ連携タスクを自律的に完了したり、数学の未解決問題を証明したりと、その能力は大きく拡張しています。また、開発現場ではAIによるコード生成・レビュー・移行支援が加速し、DevOpsやセキュリティの新たな課題と解決策が議論されています。インフラ面でも、分散データベースやIoTメッセージングの新機能が登場し、技術基盤の進化も続いています。",
+  "generated_at": "2026-07-19T07:43:01.246471+09:00",
+  "week_start": "2026-07-13",
+  "week_end": "2026-07-19",
+  "article_count": 250,
+  "overview": "今週は、AI技術の驚異的な進化と実用化が多方面で報じられました。GPT-5.6が未解決の数学問題を解決し、Claude Codeが開発ワークフローを劇的に加速させるなど、AIの能力が人間を凌駕する事例が相次いでいます。一方で、AIエージェントのセキュリティリスクや、AIが社会や戦争に与える影響についても深く議論され、その両面性が浮き彫りになりました。また、WordPressの深刻な脆弱性やAWSの広範囲な障害など、ITインフラの安定性とセキュリティに関する課題も引き続き注目されています。",
   "trends": [
-    "AIエージェントの多機能化と自律性向上",
-    "AIによる開発・運用支援の深化",
-    "AIの科学・数学分野への進出",
-    "分散DBとスケーラブルなインフラ",
-    "開発効率化と品質管理の再考"
+    "AIによる科学的発見と生産性向上",
+    "大規模言語モデルの進化とオープン化",
+    "AIエージェントのセキュリティと倫理的課題",
+    "深刻なサイバーセキュリティ脅威の継続",
+    "AIが変える社会と人間の役割"
   ],
   "highlights": [
     {
-      "title": "JavaScriptランタイムのBun、Claude Fable 5を11日間稼働させてZigからRustへの移植を実現。Claudeをどう使ったのか？ (Publickey)",
-      "url": "https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html",
-      "comment": "大規模なコードベースの言語移植にAIが実用的に活用され、性能向上とメモリリーク根絶という具体的な成果を出した点が注目されます。"
+      "title": "GPT-5.6がプロンプトを用いて凸最適化の30年来の未解決問題を解決 (Hacker News)",
+      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+      "comment": "AIが高度な数学的発見を成し遂げ、科学分野におけるブレイクスルーの可能性を明確に示した画期的な事例です。"
     },
     {
-      "title": "15日目：私のAIエージェントが初の複数アプリタスクを完了。銀行アプリから残高をコピーし、WhatsAppで母に送信。2つのアプリ、1つのタスク、完全自律。タスクメモリが鍵。 (Dev.to)",
-      "url": "https://dev.to/okeke_chukwudubem_5f3bf49/day-15-my-ai-agent-just-completed-its-first-multi-app-task-it-copied-my-bank-balance-from-my-4eid",
-      "comment": "AIエージェントが単一アプリの枠を超え、複数アプリにまたがる複雑なタスクを自律的に実行したことは、実用化に向けた大きな一歩です。"
+      "title": "Claude Codeのスキル×サブエージェントで開発ワークフローを丸ごと自動化したらデリバリー速度が3倍になった (Zenn)",
+      "url": "https://zenn.dev/arufian/articles/4676070054c347",
+      "comment": "AIエージェントが開発プロセス全体を自動化し、デリバリー速度を大幅に向上させた実用的な成功事例であり、開発現場の未来を示唆しています。"
     },
     {
-      "title": "GPT-5.6 Sol Ultraがサイクル二重被覆予想の証明を生成 (Hacker News)",
-      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
-      "comment": "AIが数学の未解決問題の証明を生成したという報告は、AIの高度な論理的推論能力と科学研究への応用可能性を強く示唆しています。"
+      "title": "WordPressの深刻度「緊急」脆弱性 wp2shell の概要と対応指針 - GMO Flatt Security Blog (はてなブックマーク)",
+      "url": "https://blog.flatt.tech/entry/wp2shell_wordpress",
+      "comment": "広く利用されているWordPressに認証不要でRCEを可能にする極めて危険な脆弱性が発見され、即座の対応が求められる重要なセキュリティニュースです。"
     },
     {
-      "title": "MistralのRobostral Navigate：最先端のロボットナビゲーションモデル (Hacker News)",
-      "url": "https://mistral.ai/news/robostral-navigate/",
-      "comment": "単一のRGBカメラで複雑な環境を自律ナビゲートするAIモデルの登場は、ロボット工学におけるAIの進化と効率性を示しています。"
+      "title": "Moonshot AIが2.8兆パラメータの「Kimi K3」を発表、ペリカンベンチマークから学ぶこと (Hacker News)",
+      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+      "comment": "2.8兆パラメータという大規模なモデルが発表され、一部ベンチマークで既存モデルを上回る性能を示し、LLM開発の最前線を更新しました。"
     },
     {
-      "title": "Apple、次期macOS 27でSwift言語をシステムカーネル開発に採用。メモリ安全な言語として (Publickey)",
-      "url": "https://www.publickey1.jp/blog/26/applemacos_27swift.html",
-      "comment": "AppleがmacOSのシステムカーネル開発にメモリ安全なSwiftを採用することは、OSの安定性とセキュリティ向上に向けた重要な戦略的転換です。"
+      "title": "戦場投入のロシア兵、生存時間はわずか20～30分か　アメリカCIAが分析　ウクライナAIドローン進化で (はてなブックマーク)",
+      "url": "https://www.fnn.jp/articles/-/1076813",
+      "comment": "AI搭載ドローンが戦場の様相を劇的に変化させ、軍事技術におけるAIの破壊的な影響と倫理的課題を浮き彫りにする衝撃的な報告です。"
     }
   ]
 }
