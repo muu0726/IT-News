@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 18 Jul 2026 22:43:01 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 22:45:06 +0000</lastBuildDate>
     <item>
-      <title>GPT-5.6がプロンプトを用いて凸最適化の30年来の未解決問題を解決</title>
-      <link>https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/</link>
-      <guid isPermaLink="false">https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/</guid>
-      <description>[Score: 95] GPT-5.6がプロンプトを活用し、凸最適化分野における30年間の未解決問題を解決したと報じられています。 / これは、AIが高度な数学的発見や複雑な科学的問題解決において、人間を凌駕する可能性を示唆しています。 / AIのプロンプトエンジニアリングが科学的ブレイクスルーに貢献した画期的な事例として注目されます。 (Source: Hacker News)</description>
-      <pubDate>Sat, 18 Jul 2026 13:00:52 +0000</pubDate>
+      <title>AIのアドバイスは人々の正確性を3倍低下させ、自信を2倍高めることが研究で判明</title>
+      <link>https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study</link>
+      <guid isPermaLink="false">https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study</guid>
+      <description>[Score: 95] 研究により、AIのアドバイスを受けた人々は、判断保留の割合が44%から3%に、正確性が27%から9%に低下したことが明らかになった。 / 一方で、自信は30%から76%に上昇し、人々は誤ったAIの回答を信頼する傾向が見られた。 / この現象は「認知的降伏（cognitive surrender）」と呼ばれ、AIが誤った情報を提供した場合でも、人間が批判的思考を放棄してしまうリスクを示唆している。 (Source: Hacker News)</description>
+      <pubDate>Sun, 19 Jul 2026 21:18:10 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeのスキル×サブエージェントで開発ワークフローを丸ごと自動化したらデリバリー速度が3倍になった</title>
-      <link>https://zenn.dev/arufian/articles/4676070054c347</link>
-      <guid isPermaLink="false">https://zenn.dev/arufian/articles/4676070054c347</guid>
-      <description>[Score: 95] Claude Codeのスキルとサブエージェントを組み合わせ、設計からデプロイまでの開発ワークフロー全体を自動化する事例が紹介されています。 / このAI駆動開発ワークフローにより、案件のデリバリー速度が約3倍に向上し、開発プロセスの標準化と成果物の品質安定化が実現しました。 / スキルをオーケストレーター、サブエージェントをペルソナとして役割分担させ、実際の開発チームの分業体制をAIエージェントに写す設計思想が解説されています。 (Source: Zenn)</description>
-      <pubDate>Fri, 17 Jul 2026 06:54:45 +0000</pubDate>
+      <title>1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す</title>
+      <link>https://zenn.dev/tkou15/articles/bonsai-1bit-llm-guide</link>
+      <guid isPermaLink="false">https://zenn.dev/tkou15/articles/bonsai-1bit-llm-guide</guid>
+      <description>[Score: 95] PrismMLが開発した1-bit LLM「Bonsai」は、8Bクラスのモデルがわずか1.15GBで動作し、GPUなしのPCでも実用的な速度で推論可能です。 / ネットワーク全体を1-bitでスクラッチ学習することで極小サイズと高い精度を両立し、iPhoneクラスのデバイスでも動作報告があります。 / ローカルチャット、OpenAI互換APIでのアプリ組み込み、ツール呼び出し、コーディングエージェント連携など多様な活用法が紹介されています。 (Source: Zenn)</description>
+      <pubDate>Sun, 19 Jul 2026 07:35:46 +0000</pubDate>
     </item>
     <item>
-      <title>WordPressの深刻度「緊急」脆弱性 wp2shell の概要と対応指針 - GMO Flatt Security Blog</title>
-      <link>https://blog.flatt.tech/entry/wp2shell_wordpress</link>
-      <guid isPermaLink="false">https://blog.flatt.tech/entry/wp2shell_wordpress</guid>
-      <description>[Score: 95] WordPressに認証不要でリモートからの任意コード実行（RCE）を可能にする深刻度「緊急」の脆弱性「wp2shell」が発見された。 / この脆弱性はCVE-2026-63030とCVE-2026-60137の組み合わせで成立し、WordPress 6.9以降の標準構成で攻撃可能である。 / データベース情報の窃取やサイト改ざんなどの被害が想定され、速やかなアップデートが強く推奨されている。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 18 Jul 2026 13:03:36 +0000</pubDate>
+      <title>本番環境向けLLM評価パイプラインの構築：感覚からメトリクスへ</title>
+      <link>https://dev.to/imus_d7584cbc8ee9b0336256/building-production-grade-llm-evaluation-pipelines-from-vibes-to-metrics-35em</link>
+      <guid isPermaLink="false">https://dev.to/imus_d7584cbc8ee9b0336256/building-production-grade-llm-evaluation-pipelines-from-vibes-to-metrics-35em</guid>
+      <description>[Score: 92] LLMを本番環境で利用する際、感覚的な評価から自動化されたメトリクスベースの評価パイプラインへの移行の重要性を解説。 / 従来の評価方法では幻覚などの問題を見逃し、本番環境で深刻な影響を及ぼすリスクがあることを指摘しています。 / 忠実性、指示追従性、JSONスキーマ準拠などを自動で評価するフレームワークの構築が、信頼性の高いLLM運用には不可欠です。 (Source: Dev.to)</description>
+      <pubDate>Sun, 19 Jul 2026 22:20:27 +0000</pubDate>
     </item>
     <item>
-      <title>オープンLLMをLambdaで動かしてみる</title>
-      <link>https://zenn.dev/edash_tech_blog/articles/528ab6bd044c35</link>
-      <guid isPermaLink="false">https://zenn.dev/edash_tech_blog/articles/528ab6bd044c35</guid>
-      <description>[Score: 90] コスト効率の良いLLM実行環境として、AWS LambdaでオープンLLMを動かす検証が行われました。 / Lambdaのスペック制約（GPUなし、メモリ10GB）を考慮し、小型かつ量子化済みのGGUF形式モデルが対象となります。 / Lambda Managed Instancesの活用や、GGUF形式の利点（CPU推論、単一ファイル）に触れつつ、複数のモデルで実機評価が行われています。 (Source: Zenn)</description>
-      <pubDate>Sat, 18 Jul 2026 03:00:52 +0000</pubDate>
+      <title>Qwen 3.8</title>
+      <link>https://twitter.com/Alibaba_Qwen/status/2078759124914098291</link>
+      <guid isPermaLink="false">https://twitter.com/Alibaba_Qwen/status/2078759124914098291</guid>
+      <description>[Score: 90] Alibabaが開発する大規模言語モデル「Qwen 3.8」がオープンウェイトとして間もなく公開される。 / 2.4兆パラメータを持つこのモデルは、Fable 5に次ぐ強力なAIモデルであり、主要な最先端AIモデルに匹敵するとされている。 / Qwen3.8-Max-Previewは既にAlibabaのToken Planなどで利用可能で、今後の進化が期待される。 (Source: Hacker News)</description>
+      <pubDate>Sun, 19 Jul 2026 08:44:57 +0000</pubDate>
     </item>
     <item>
       <title>マルチエージェントに関する論文を40本再実装してみて分かったこと</title>
       <link>https://qiita.com/Koukyosyumei/items/e9ee8e26cfdc40a8c2f9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Koukyosyumei/items/e9ee8e26cfdc40a8c2f9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] マルチエージェントLLMに関する40本の論文ワークフローを再実装し、その構造や役割分担、出力統合ルールを分析した記事です。 / 多くのマルチエージェント手法が特定の3つの組み合わせに集約されることを発見し、h5i-pythonフレームワークを使えばコアアルゴリズムを短コードで実装可能と示唆。 / AIエージェントの協調・検証プロセスを具体例で示し、今後のマルチエージェント開発への洞察を提供しています。 (Source: Qiita)</description>
+      <description>[Score: 90] コロンビア大学の博士課程研究者が、マルチエージェントLLMに関する40本の論文ワークフローを再実装した経験を共有しています。 / 多くのマルチエージェント手法が、突き詰めると3つの基本的な組み合わせで構成されていることを発見。 / h5i-pythonフレームワークを使用することで、ほぼすべての論文のコアアルゴリズムを約100行で実装できたと報告しています。 (Source: Qiita)</description>
       <pubDate>Thu, 16 Jul 2026 22:54:35 +0000</pubDate>
     </item>
     <item>
-      <title>最近の AI コーディングで実践している、設計を中心とした開発の進め方</title>
-      <link>https://azukiazusa.dev/blog/recent-ai-coding-development-process-centered-on-design/</link>
-      <guid isPermaLink="false">https://azukiazusa.dev/blog/recent-ai-coding-development-process-centered-on-design/</guid>
-      <description>[Score: 90] AIコーディングエージェントの進化により、エンジニアはコード記述よりも設計に時間を費やすようになり、開発プロセスが変化しています。 / 記事では、AIと人間が共通理解を形成する設計セッションの重要性を強調し、タスクを独立した単位に分割してAIに自律的な実装を委ねる手法を紹介しています。 / この変化は、コードレビューやエンジニアに求められる能力にも影響を与え、全体的な整合性を重視する設計能力がより重要になると述べています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 18 Jul 2026 04:23:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIエージェントが患者記録をエクスポートした。誰が指示したのかログには残らない。</title>
-      <link>https://dev.to/alexlaguardia/an-ai-agent-exported-a-patient-record-your-logs-cant-say-who-told-it-to-1al8</link>
-      <guid isPermaLink="false">https://dev.to/alexlaguardia/an-ai-agent-exported-a-patient-record-your-logs-cant-say-who-told-it-to-1al8</guid>
-      <description>[Score: 90] AIエージェントが共有された認証情報で動作する場合、監査ログにはエージェントが実行したことは記録されるものの、どの人間がその指示を出したのかが不明になる問題が指摘されています。 / これは、EU AI Actの規制など、イベントに関与した自然人の特定を義務付ける要件に対応できないことを意味します。 / プロトコルレベルでのID情報の欠如やプロンプトインジェクションのリスクも、この問題の解決を困難にしています。 (Source: Dev.to)</description>
-      <pubDate>Sat, 18 Jul 2026 22:31:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>LLMパイプラインがトークン予算の60%をノイズで消費する理由（と解決策）</title>
-      <link>https://dev.to/yashvardhan_thanvi_6762e7/why-your-llm-pipeline-is-burning-60-of-its-token-budget-on-noise-and-how-to-fix-it-27gp</link>
-      <guid isPermaLink="false">https://dev.to/yashvardhan_thanvi_6762e7/why-your-llm-pipeline-is-burning-60-of-its-token-budget-on-noise-and-how-to-fix-it-27gp</guid>
-      <description>[Score: 90] RAGパイプラインにおいて、取得したドキュメントをそのままLLMに渡すと、コンテキストの大部分が不要な情報（フィラー）で占められる問題があることを指摘。 / これにより、トークンコストの増加だけでなく、Transformerの二次コスト、&quot;Lost in the Middle&quot;現象、指示の希薄化といったパフォーマンス上の悪影響が生じる。 / 筆者は、不要なトークンを削減し、情報密度を高めることで、これらの問題を解決できると提案している。 (Source: Dev.to)</description>
-      <pubDate>Sat, 18 Jul 2026 22:13:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIエージェントのためのDocker Sandboxes実践入門</title>
-      <link>https://qiita.com/minamijoyo/items/854ce04da1490b43a848?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/minamijoyo/items/854ce04da1490b43a848?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] AIエージェントが生成する信頼できないコードを安全に実行するためのDocker Sandboxesの活用方法と設定カスタマイズについて解説。 / Claude Codeのサンドボックスや一般的なコンテナ隔離の限界を指摘し、AIエージェントのセキュリティ境界としてのDocker Sandboxesの重要性を強調。 / AIエージェント開発におけるセキュリティリスクを低減し、安全な実行環境を構築するための実践的な知見を提供しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 17 Jul 2026 10:25:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI時代の開発生産性は、個人技からチーム設計へ</title>
-      <link>https://speakerdeck.com/moongift/aishi-dai-nokai-fa-sheng-chan-xing-ha-ge-ren-ji-karatimushe-ji-he</link>
-      <guid isPermaLink="false">https://speakerdeck.com/moongift/aishi-dai-nokai-fa-sheng-chan-xing-ha-ge-ren-ji-karatimushe-ji-he</guid>
-      <description>[Score: 88] AIの進化により、ソフトウェア開発における生産性の焦点が個人のコーディングスキルからチーム全体の設計能力へと移行していることを示唆する発表資料です。 / AIを活用した開発では、コードの自動生成が進むため、人間は設計や品質保証、チーム連携といったより高次のタスクに注力する必要性が高まります。 / 本資料は、AI時代の開発プロセス再設計やAIコードレビューの役割、チーム全体のAI活用格差解消について考察しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 17 Jul 2026 12:22:28 +0000</pubDate>
+      <title>E2Eテストをユニットテスト並みの実行時間に — Playwright並列化とGitHub Actionsチューニングの実践</title>
+      <link>https://zenn.dev/berry_blog/articles/39392e1da7ca71</link>
+      <guid isPermaLink="false">https://zenn.dev/berry_blog/articles/39392e1da7ca71</guid>
+      <description>[Score: 90] QMSmart開発チームが、約100のE2Eテストをユニットテスト並みの6〜8分で完走させる運用を実現した実践事例を紹介しています。 / Playwrightの並列化とGitHub Actionsのチューニングに加え、テストのデータ・状態独立性を確保する新アーキテクチャを設計。 / テストごとに専用データを生成し、全テストユーザーのセッションを事前生成することで、高速かつ安定したE2Eテストを実現しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 18 Jul 2026 08:31:32 +0000</pubDate>
     </item>
     <item>
       <title>Google Cloud、生成AIのコードを瞬時に隔離して安全に実行できる「Cloud Runサンドボックス」パブリックプレビュー</title>
       <link>https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html</guid>
-      <description>[Score: 88] Google Cloudは、生成AIが生成した信頼できないコードを安全に実行するための「Cloud Runサンドボックス」をパブリックプレビューとして公開しました。 / これにより、AIが生成するコードが過剰なリソースを要求したり、不正なアクセスを行ったりするリスクを隔離環境で防ぐことができます。 / 生成AIの利用が拡大する中で、セキュリティとリソース管理の課題を解決する重要なサービスとなります。 (Source: Publickey)</description>
+      <description>[Score: 90] Google Cloudが、生成AIが生成する信頼できないコードを安全に実行するための「Cloud Runサンドボックス」をパブリックプレビューで公開しました。 / 生成AIのコードは、リソース消費や不正アクセスなどのリスクがあるため、隔離された実行環境が不可欠です。 / この機能により、多数の隔離環境を瞬時に起動でき、生成AIの安全な利用とスケーラビリティを両立させます。 (Source: Publickey)</description>
       <pubDate>Mon, 13 Jul 2026 15:50:52 +0000</pubDate>
     </item>
     <item>
-      <title>500KB未満で実現する音声認識とTTS</title>
-      <link>https://github.com/moonshine-ai/moonshine/tree/main/micro</link>
-      <guid isPermaLink="false">https://github.com/moonshine-ai/moonshine/tree/main/micro</guid>
-      <description>[Score: 85] Moonshine Microは、組み込みシステム向けに設計されたオープンソースのAIツールキットです。 / わずか470KBのRAMで音声活動検出、コマンド認識、ニューラル音声合成を実現し、Raspberry Pi RP2350などの低リソースデバイスで動作します。 / MITライセンスで提供され、IoTやエッジAIアプリケーション開発に貢献します。 (Source: Hacker News)</description>
-      <pubDate>Tue, 14 Jul 2026 19:25:10 +0000</pubDate>
+      <title>AIエージェントのためのDocker Sandboxes実践入門</title>
+      <link>https://qiita.com/minamijoyo/items/854ce04da1490b43a848?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/minamijoyo/items/854ce04da1490b43a848?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] AIエージェントのコーディング環境としてDocker Sandboxesの活用法とカスタマイズ方法を解説しています。 / 従来のコンテナ隔離（Linux名前空間）が、信頼できないAI生成コードの実行における完全なセキュリティ境界にはならないと指摘。 / Docker Sandboxesが、AIエージェントが生成するコードを安全に実行するためのより堅牢な隔離ソリューションであることを強調しています。 (Source: Qiita)</description>
+      <pubDate>Fri, 17 Jul 2026 10:25:00 +0000</pubDate>
     </item>
     <item>
-      <title>個人開発のLaravelサイトにOpenTelemetry+Grafanaで可観測性基盤を作った（Docker無し・systemd運用）</title>
-      <link>https://zenn.dev/shim_03248/articles/5094579401a468</link>
-      <guid isPermaLink="false">https://zenn.dev/shim_03248/articles/5094579401a468</guid>
-      <description>[Score: 85] Laravel製個人サイトにOpenTelemetryとGrafanaスタックを導入し、可観測性基盤を構築した事例が紹介されています。 / 商用APMの代替としてOSSを活用し、特にGrafana Tempoをトレースバックエンドに採用することで、日本語UIと可視化の一元化を実現しました。 / OTel Collectorをハブとして利用し、spanmetrics connectorで自動的に指標を生成するなど、実践的な構築ノウハウが詳細に解説されています。 (Source: Zenn)</description>
-      <pubDate>Sat, 18 Jul 2026 04:26:35 +0000</pubDate>
+      <title>フロントエンド開発に必要なツールをまとめて統合した「Vite+」、ベータ公開</title>
+      <link>https://www.publickey1.jp/blog/26/vite.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vite.html</guid>
+      <description>[Score: 88] Viteの開発元であるVoidZeroが、フロントエンド開発に必要なツールを統合した「Vite+」のベータ版を公開しました。 / Vite+は、ローカルサーバー、バンドラ、リンター、フォーマッター、テストランナーなどを単一のCLIで提供し、開発ワークフローを効率化します。 / VoidZeroがCloudflareに買収されたことも発表されており、今後の発展が注目されるツールです。 (Source: Publickey)</description>
+      <pubDate>Wed, 15 Jul 2026 15:59:11 +0000</pubDate>
     </item>
     <item>
-      <title>AIに「レビューして」はもう古い？「敵対的検証」のすすめ</title>
-      <link>https://zenn.dev/loglass/articles/6aa18c80496ec6</link>
-      <guid isPermaLink="false">https://zenn.dev/loglass/articles/6aa18c80496ec6</guid>
-      <description>[Score: 85] AIの出力品質を向上させるため、「レビューして」ではなく「敵対的検証して」というプロンプトの有効性を解説しています。 / 敵対的検証は、AIの成果物に課題がある前提で反証を試み、判定と根拠を返すことで品質を高める手法です。 / Claude Codeの内部機能にも採用されており、AIのハルシネーション対策として特に効果的であると説明されています。 (Source: Zenn)</description>
-      <pubDate>Fri, 17 Jul 2026 05:56:17 +0000</pubDate>
+      <title>RAGを大規模に最適化：チャンキング、検索、そしてレイテンシを40%削減したベイズ検索</title>
+      <link>https://dev.to/imus_d7584cbc8ee9b0336256/optimizing-rag-at-scale-chunking-retrieval-and-the-bayesian-search-that-cut-latency-40-3hhc</link>
+      <guid isPermaLink="false">https://dev.to/imus_d7584cbc8ee9b0336256/optimizing-rag-at-scale-chunking-retrieval-and-the-bayesian-search-that-cut-latency-40-3hhc</guid>
+      <description>[Score: 88] RAGシステムを大規模に最適化するためのチャンキング、検索戦略、およびレイテンシを40%削減したベイズ検索について解説しています。 / 従来のRAG実装から脱却し、95%のリコール率を達成する測定可能で調整可能な検索パイプラインの構築方法を紹介。 / 固定トークン、再帰的、セマンティック、エージェントベースなど、様々なチャンキング戦略が議論されています。 (Source: Dev.to)</description>
+      <pubDate>Sun, 19 Jul 2026 22:20:29 +0000</pubDate>
     </item>
     <item>
-      <title>LG製ゲーミングモニターがWindows Updateを悪用し広告アプリを無断導入。McAfeeの広告表示も</title>
-      <link>https://gazlog.jp/entry/lg-gaming-ads-install/</link>
-      <guid isPermaLink="false">https://gazlog.jp/entry/lg-gaming-ads-install/</guid>
-      <description>[Score: 85] LG製ゲーミングモニターがWindows Update経由で「LG Monitor App Installer」をユーザーの同意なくインストールしていることが判明しました。 / このアプリはMcAfeeの広告ポップアップを表示し、システムリソースやインターネット接続への広範なアクセス権限を持つため、プライバシーやセキュリティ上の懸念があります。 / Microsoftの自動配布メカニズムの透明性の低さも問題視されており、LGとMicrosoft双方からの公式コメントはまだありません。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 18 Jul 2026 03:26:24 +0000</pubDate>
+      <title>Show HN: 12万ドルのボーリング場システムを1,600ドルのESP32で置き換えた</title>
+      <link>https://news.ycombinator.com/item?id=48968606</link>
+      <guid isPermaLink="false">https://news.ycombinator.com/item?id=48968606</guid>
+      <description>[Score: 85] 筆者は12万ドルするボーリング場のスコアシステムを、わずか1,600ドルのESP32ベースのシステムで自作し置き換えた。 / 既存システムは高価で老朽化しており、新しいシステムはボール速度や軌道計算、ピン検出、ファウル判定、アニメーションなどをESP32で実現している。 / このプロジェクトは、高価な専用システムを安価な汎用ハードウェアとソフトウェアで代替できる可能性を示している。 (Source: Hacker News)</description>
+      <pubDate>Sun, 19 Jul 2026 14:41:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>ゴールまで自走するだけではない？——ループエンジニアリングの本質はどこにあるのか</title>
+      <link>https://zenn.dev/r_kaga/articles/a27a3879dd3ce4</link>
+      <guid isPermaLink="false">https://zenn.dev/r_kaga/articles/a27a3879dd3ce4</guid>
+      <description>[Score: 85] ループエンジニアリングは、AIエージェントが自律的にタスクを完遂するだけでなく、その外側の仕組みを設計することに本質があるという考察です。 / ソフトウェアファクトリーの概念と関連し、人間は設計者・監督者として関わる世界観が提示されています。 / Anthropicはループをターン型、ゴール型、タイマー型、プロアクティブ型の4つに分類し、その活用方法を整理しています。 (Source: Zenn)</description>
+      <pubDate>Sun, 19 Jul 2026 07:48:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>codexの独自用語乱立･曖昧問題への対策</title>
+      <link>https://zenn.dev/u1/articles/codex-referent-before-label</link>
+      <guid isPermaLink="false">https://zenn.dev/u1/articles/codex-referent-before-label</guid>
+      <description>[Score: 85] AI（特にCodex）が設計や実装時に曖昧な独自用語を生成し、誤解やエラーを引き起こす問題への対策を解説しています。 / 解決策として、文章生成前に「候補語」の対応表を構造化して作成させ、AIに明確な定義を強制する手法を提案。 / これにより、AIがもっともらしいが曖昧な言葉で思考を進めることを防ぎ、設計の精度と信頼性を向上させます。 (Source: Zenn)</description>
+      <pubDate>Sun, 19 Jul 2026 04:23:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>.NET 8と.NET 9は今年の11月でサポート終了、マイクロソフトが警告</title>
+      <link>https://www.publickey1.jp/blog/26/net_8net_911.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_8net_911.html</guid>
+      <description>[Score: 85] マイクロソフトは、.NET 8と.NET 9のサポートが今年の11月10日に終了することを警告しました。 / サポート終了後もアプリケーションは動作しますが、バグ修正やセキュリティパッチは提供されなくなります。 / 開発者には、セキュリティと安定性を確保するため、サポートが継続される.NET 10（LTS）または.NET 11への速やかな移行が推奨されています。 (Source: Publickey)</description>
+      <pubDate>Thu, 16 Jul 2026 18:30:28 +0000</pubDate>
     </item>
     <item>
       <title>より小さなソフトウェアエンジニアリングチームを、2029年までに60％の組織が本格展開するとの予測、ガートナー</title>
       <link>https://www.publickey1.jp/blog/26/202960.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/202960.html</guid>
-      <description>[Score: 85] ガートナーは、2029年までに60%の組織がより小さなソフトウェアエンジニアリングチームを本格展開すると予測しています。 / これは、AIの進化により日常的なエンジニアリング作業が自動化され、人間が複雑な問題解決やイノベーションに集中できるようになるためです。 / チームの再編成により、少人数でも高い生産性を実現し、ビジネス目標への貢献が期待されます。 (Source: Publickey)</description>
+      <description>[Score: 85] ガートナーは、2029年までに60%の組織がAIの活用により、より小さなソフトウェアエンジニアリングチームを本格展開すると予測しました。 / AIが日常的なエンジニアリング作業を処理することで、人間は複雑な問題解決やイノベーションに集中できるようになります。 / これにより、現在の4〜5人規模のチームが2〜3人程度に縮小し、効率的な開発体制が一般化すると見込まれています。 (Source: Publickey)</description>
       <pubDate>Tue, 14 Jul 2026 15:51:18 +0000</pubDate>
     </item>
     <item>
-      <title>より良いツールがCopilotのコードレビューを悪化させた。実際に改善した方法とは。</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</guid>
-      <description>[Score: 85] Copilotのコードレビュー機能において、より優れた共有ツールを導入したにもかかわらず、レビューコストが増加し、問題検出率が低下する現象が発生した。 / 問題はツール自体ではなく、レビュー担当者がプルリクエストを読む方法に合わせて指示を書き直すことで、パフォーマンスが改善されたことを説明。 / AIエージェントの性能向上におけるツールの選定だけでなく、ワークフローと指示の調整が重要であることを示唆している。 (Source: GitHub Blog)</description>
-      <pubDate>Fri, 10 Jul 2026 15:57:47 +0000</pubDate>
+      <title>CrewAI、AutoGen、LlamaIndexなど11のPythonエージェントフレームワークで使える「base_url」トリック</title>
+      <link>https://dev.to/seven7763/one-key-for-crewai-autogen-llamaindex-and-8-more-the-baseurl-trick-for-python-agents-5a3g</link>
+      <guid isPermaLink="false">https://dev.to/seven7763/one-key-for-crewai-autogen-llamaindex-and-8-more-the-baseurl-trick-for-python-agents-5a3g</guid>
+      <description>[Score: 85] PythonエージェントフレームワークがOpenAI互換のカスタム`base_url`をネイティブサポートすることで、マルチモデルエージェント開発が簡素化されます。 / これにより、単一のOpenAI互換ゲートウェイを通じて、Claude、GPT、Geminiなど複数のLLMを統一されたAPIキーで利用可能になります。 / 各フレームワークでの具体的な設定方法と注意点が解説されており、開発者はバックエンドのLLMを自由に選択できるようになります。 (Source: Dev.to)</description>
+      <pubDate>Sun, 19 Jul 2026 22:11:15 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub Agentic Workflowsによるクロスリポジトリドキュメントの自動化</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</guid>
-      <description>[Score: 85] GitHub Agentic Workflowsを活用し、複数のリポジトリにまたがるドキュメント作成の自動化が紹介されています。 / Aspireチームは、AIを安全に組み込むことで、機能リリース後のドキュメント公開遅延という課題を解決しました。 / これにより、ドキュメントのPRマージ時間が大幅に短縮され、エンジニアによるレビューも維持しつつ、効率的な運用を実現しています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 08 Jul 2026 21:11:56 +0000</pubDate>
+      <title>Claude Codeは現在、Rustで書かれたBunを使用している</title>
+      <link>https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/</link>
+      <guid isPermaLink="false">https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/</guid>
+      <description>[Score: 80] Claude Code v2.1.181以降のバージョンで、JavaScriptランタイムであるBunのRustポートが使用されていることが確認された。 / BunのRustへの書き換えにより、Linux上での起動速度が10%向上したが、それ以外の大きな変化はユーザーにはほとんど気づかれていない。 / この変更は、パフォーマンス向上と安定性向上を目的としたものであり、BunのRust版が既に本番環境で広く利用されていることを示している。 (Source: Hacker News)</description>
+      <pubDate>Sun, 19 Jul 2026 10:03:23 +0000</pubDate>
     </item>
     <item>
-      <title>SvelteKitでToDoアプリを作りながら基本を学ぶ 〜React/Next.jsとの違いも見てみる〜</title>
-      <link>https://zenn.dev/yunaka354/articles/e87bda1345950a</link>
-      <guid isPermaLink="false">https://zenn.dev/yunaka354/articles/e87bda1345950a</guid>
-      <description>[Score: 80] SvelteKitを使ってToDoアプリを開発しながら、その基本的な使い方とReact/Next.jsとの違いを解説しています。 / SvelteKitはSvelteをベースとしたWebアプリ開発フレームワークであり、Next.jsやNuxt.jsに相当する機能を提供します。 / プロジェクト作成からディレクトリ構造、ルーティングの概念まで、具体的なコード例を交えながら学習できる実践的な内容です。 (Source: Zenn)</description>
-      <pubDate>Sat, 18 Jul 2026 02:20:05 +0000</pubDate>
+      <title>セキュリティの勉強になるサイト138選(2026年版)</title>
+      <link>https://qiita.com/Nakanishi_RareTECH/items/16fd0b847aa68c152e00?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Nakanishi_RareTECH/items/16fd0b847aa68c152e00?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Webアプリ、クラウド、CTF、マルウェア解析、資格など分野別に、セキュリティ学習に役立つ138のサイトをまとめた記事です。 / ほとんどが無料で利用でき、ブラウザやDockerで手軽に試せる環境が紹介されています。 / OWASP WebGoatやDVWA、TryHackMe、Hack The Boxなど、実践的な学習プラットフォームが多数含まれています。 (Source: Qiita)</description>
+      <pubDate>Sun, 19 Jul 2026 04:36:00 +0000</pubDate>
     </item>
     <item>
-      <title>新人がすぐにできるセキュリティ対策、損害賠償になったら怖いね</title>
-      <link>https://qiita.com/prumnn/items/6d7dc1bed369c567df22?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/prumnn/items/6d7dc1bed369c567df22?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] AIによるフィッシングメール増加やSEOポイズニングなど、身近なセキュリティ脅威の事例を挙げ、個人の注意だけでは不十分であることを指摘。 / セキュリティ対策を習慣化するため、AIツールの利用、メール・URL確認、パスワード管理、画面共有時の注意など、具体的なチェックリストを提示。 / 新入社員やITリテラシーに自信がない人でも実践できる、日々の業務におけるセキュリティ意識向上と行動変容を促す内容です。 (Source: Qiita)</description>
-      <pubDate>Fri, 17 Jul 2026 08:16:26 +0000</pubDate>
+      <title>余ったMacをClaude Code専用の「何でもやらせるマシン」にする — SSH・tmux・LaunchAgentで権限フル解放のエージェント環境を構築</title>
+      <link>https://techfeed.io/entries/6a5be90b3d5307dbb0d5d745</link>
+      <guid isPermaLink="false">https://techfeed.io/entries/6a5be90b3d5307dbb0d5d745</guid>
+      <description>[Score: 80] 余っているMacをAnthropicのAIエージェント「Claude Code」専用の「捨て駒」マシンとして活用する構築方法が紹介されています。 / メインマシンでの危険な権限フル解放を避け、SSHやtmux、LaunchAgentを用いて安全かつ効率的なエージェント環境を構築する手順が詳細に解説されています。 / これにより、Claude CodeがmacOSの全機能を活用し、画面操作なども含めた高度な自動化が可能になります。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 19 Jul 2026 02:57:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>リアルタイム共同編集が可能なJavaScriptの表計算コンポーネント、メシウスが「SpreadJS」の新バージョンをリリース</title>
+      <link>https://www.publickey1.jp/blog/26/javascriptspreadjs.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptspreadjs.html</guid>
+      <description>[Score: 80] メシウス（旧グレープシティ）が、JavaScriptの表計算コンポーネント「SpreadJS」の最新版「V19.1J」をリリースしました。 / 新バージョンでは、Webブラウザ上で複数のユーザーが同時に一つの表計算シートを編集できるリアルタイム共同編集機能が追加されています。 / スレッド形式コメントやユーザーごとの編集権限設定も可能で、業務アプリケーションにおけるデータ入力・確認作業の効率化に貢献します。 (Source: Publickey)</description>
+      <pubDate>Wed, 15 Jul 2026 15:56:19 +0000</pubDate>
     </item>
   </channel>
 </rss>
