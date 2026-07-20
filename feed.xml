@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 19 Jul 2026 22:45:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 22:53:03 +0000</lastBuildDate>
     <item>
-      <title>AIのアドバイスは人々の正確性を3倍低下させ、自信を2倍高めることが研究で判明</title>
-      <link>https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study</link>
-      <guid isPermaLink="false">https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study</guid>
-      <description>[Score: 95] 研究により、AIのアドバイスを受けた人々は、判断保留の割合が44%から3%に、正確性が27%から9%に低下したことが明らかになった。 / 一方で、自信は30%から76%に上昇し、人々は誤ったAIの回答を信頼する傾向が見られた。 / この現象は「認知的降伏（cognitive surrender）」と呼ばれ、AIが誤った情報を提供した場合でも、人間が批判的思考を放棄してしまうリスクを示唆している。 (Source: Hacker News)</description>
-      <pubDate>Sun, 19 Jul 2026 21:18:10 +0000</pubDate>
+      <title>ハッカーがルーマニアの土地登記データベースを消去</title>
+      <link>https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/</link>
+      <guid isPermaLink="false">https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/</guid>
+      <description>[Score: 95] ハッカーがルーマニアの土地登記機関に侵入し、恐喝に失敗した後、国の土地登記データベース全体を消去した。 / この攻撃により、ルーマニアの不動産市場全体が停止し、公証人は取引を記録できず、市民は所有権証明を取得できない状況に。 / 攻撃者は有効な認証情報で侵入し、システムとバックアップを消去。一部の盗まれたデータはハッキングフォーラムで販売された。 (Source: Hacker News)</description>
+      <pubDate>Mon, 20 Jul 2026 13:28:33 +0000</pubDate>
     </item>
     <item>
-      <title>1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す</title>
-      <link>https://zenn.dev/tkou15/articles/bonsai-1bit-llm-guide</link>
-      <guid isPermaLink="false">https://zenn.dev/tkou15/articles/bonsai-1bit-llm-guide</guid>
-      <description>[Score: 95] PrismMLが開発した1-bit LLM「Bonsai」は、8Bクラスのモデルがわずか1.15GBで動作し、GPUなしのPCでも実用的な速度で推論可能です。 / ネットワーク全体を1-bitでスクラッチ学習することで極小サイズと高い精度を両立し、iPhoneクラスのデバイスでも動作報告があります。 / ローカルチャット、OpenAI互換APIでのアプリ組み込み、ツール呼び出し、コーディングエージェント連携など多様な活用法が紹介されています。 (Source: Zenn)</description>
-      <pubDate>Sun, 19 Jul 2026 07:35:46 +0000</pubDate>
+      <title>人間の数学者が反例発見でAIに追い抜かれている</title>
+      <link>https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/</link>
+      <guid isPermaLink="false">https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/</guid>
+      <description>[Score: 90] AIツール、特にChatGPTが数学の未解決問題であるErdősの単位距離予想の反例を発見し、数学界に衝撃を与えた。 / この反例は、Golod-Shafarevichの定理を応用したもので、後にLogical Intelligence社のシステムがLeanで自動形式化。 / AIが高度な数学的発見に貢献し、形式的検証の重要性が増していることを示唆しており、数学研究の未来に大きな影響を与える。 (Source: Hacker News)</description>
+      <pubDate>Mon, 20 Jul 2026 19:03:37 +0000</pubDate>
     </item>
     <item>
-      <title>本番環境向けLLM評価パイプラインの構築：感覚からメトリクスへ</title>
-      <link>https://dev.to/imus_d7584cbc8ee9b0336256/building-production-grade-llm-evaluation-pipelines-from-vibes-to-metrics-35em</link>
-      <guid isPermaLink="false">https://dev.to/imus_d7584cbc8ee9b0336256/building-production-grade-llm-evaluation-pipelines-from-vibes-to-metrics-35em</guid>
-      <description>[Score: 92] LLMを本番環境で利用する際、感覚的な評価から自動化されたメトリクスベースの評価パイプラインへの移行の重要性を解説。 / 従来の評価方法では幻覚などの問題を見逃し、本番環境で深刻な影響を及ぼすリスクがあることを指摘しています。 / 忠実性、指示追従性、JSONスキーマ準拠などを自動で評価するフレームワークの構築が、信頼性の高いLLM運用には不可欠です。 (Source: Dev.to)</description>
-      <pubDate>Sun, 19 Jul 2026 22:20:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>Qwen 3.8</title>
-      <link>https://twitter.com/Alibaba_Qwen/status/2078759124914098291</link>
-      <guid isPermaLink="false">https://twitter.com/Alibaba_Qwen/status/2078759124914098291</guid>
-      <description>[Score: 90] Alibabaが開発する大規模言語モデル「Qwen 3.8」がオープンウェイトとして間もなく公開される。 / 2.4兆パラメータを持つこのモデルは、Fable 5に次ぐ強力なAIモデルであり、主要な最先端AIモデルに匹敵するとされている。 / Qwen3.8-Max-Previewは既にAlibabaのToken Planなどで利用可能で、今後の進化が期待される。 (Source: Hacker News)</description>
-      <pubDate>Sun, 19 Jul 2026 08:44:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>マルチエージェントに関する論文を40本再実装してみて分かったこと</title>
-      <link>https://qiita.com/Koukyosyumei/items/e9ee8e26cfdc40a8c2f9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Koukyosyumei/items/e9ee8e26cfdc40a8c2f9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] コロンビア大学の博士課程研究者が、マルチエージェントLLMに関する40本の論文ワークフローを再実装した経験を共有しています。 / 多くのマルチエージェント手法が、突き詰めると3つの基本的な組み合わせで構成されていることを発見。 / h5i-pythonフレームワークを使用することで、ほぼすべての論文のコアアルゴリズムを約100行で実装できたと報告しています。 (Source: Qiita)</description>
-      <pubDate>Thu, 16 Jul 2026 22:54:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>E2Eテストをユニットテスト並みの実行時間に — Playwright並列化とGitHub Actionsチューニングの実践</title>
-      <link>https://zenn.dev/berry_blog/articles/39392e1da7ca71</link>
-      <guid isPermaLink="false">https://zenn.dev/berry_blog/articles/39392e1da7ca71</guid>
-      <description>[Score: 90] QMSmart開発チームが、約100のE2Eテストをユニットテスト並みの6〜8分で完走させる運用を実現した実践事例を紹介しています。 / Playwrightの並列化とGitHub Actionsのチューニングに加え、テストのデータ・状態独立性を確保する新アーキテクチャを設計。 / テストごとに専用データを生成し、全テストユーザーのセッションを事前生成することで、高速かつ安定したE2Eテストを実現しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 18 Jul 2026 08:31:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google Cloud、生成AIのコードを瞬時に隔離して安全に実行できる「Cloud Runサンドボックス」パブリックプレビュー</title>
-      <link>https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html</guid>
-      <description>[Score: 90] Google Cloudが、生成AIが生成する信頼できないコードを安全に実行するための「Cloud Runサンドボックス」をパブリックプレビューで公開しました。 / 生成AIのコードは、リソース消費や不正アクセスなどのリスクがあるため、隔離された実行環境が不可欠です。 / この機能により、多数の隔離環境を瞬時に起動でき、生成AIの安全な利用とスケーラビリティを両立させます。 (Source: Publickey)</description>
-      <pubDate>Mon, 13 Jul 2026 15:50:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIエージェントのためのDocker Sandboxes実践入門</title>
-      <link>https://qiita.com/minamijoyo/items/854ce04da1490b43a848?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/minamijoyo/items/854ce04da1490b43a848?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] AIエージェントのコーディング環境としてDocker Sandboxesの活用法とカスタマイズ方法を解説しています。 / 従来のコンテナ隔離（Linux名前空間）が、信頼できないAI生成コードの実行における完全なセキュリティ境界にはならないと指摘。 / Docker Sandboxesが、AIエージェントが生成するコードを安全に実行するためのより堅牢な隔離ソリューションであることを強調しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 17 Jul 2026 10:25:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>フロントエンド開発に必要なツールをまとめて統合した「Vite+」、ベータ公開</title>
-      <link>https://www.publickey1.jp/blog/26/vite.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vite.html</guid>
-      <description>[Score: 88] Viteの開発元であるVoidZeroが、フロントエンド開発に必要なツールを統合した「Vite+」のベータ版を公開しました。 / Vite+は、ローカルサーバー、バンドラ、リンター、フォーマッター、テストランナーなどを単一のCLIで提供し、開発ワークフローを効率化します。 / VoidZeroがCloudflareに買収されたことも発表されており、今後の発展が注目されるツールです。 (Source: Publickey)</description>
-      <pubDate>Wed, 15 Jul 2026 15:59:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>RAGを大規模に最適化：チャンキング、検索、そしてレイテンシを40%削減したベイズ検索</title>
-      <link>https://dev.to/imus_d7584cbc8ee9b0336256/optimizing-rag-at-scale-chunking-retrieval-and-the-bayesian-search-that-cut-latency-40-3hhc</link>
-      <guid isPermaLink="false">https://dev.to/imus_d7584cbc8ee9b0336256/optimizing-rag-at-scale-chunking-retrieval-and-the-bayesian-search-that-cut-latency-40-3hhc</guid>
-      <description>[Score: 88] RAGシステムを大規模に最適化するためのチャンキング、検索戦略、およびレイテンシを40%削減したベイズ検索について解説しています。 / 従来のRAG実装から脱却し、95%のリコール率を達成する測定可能で調整可能な検索パイプラインの構築方法を紹介。 / 固定トークン、再帰的、セマンティック、エージェントベースなど、様々なチャンキング戦略が議論されています。 (Source: Dev.to)</description>
-      <pubDate>Sun, 19 Jul 2026 22:20:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>Show HN: 12万ドルのボーリング場システムを1,600ドルのESP32で置き換えた</title>
-      <link>https://news.ycombinator.com/item?id=48968606</link>
-      <guid isPermaLink="false">https://news.ycombinator.com/item?id=48968606</guid>
-      <description>[Score: 85] 筆者は12万ドルするボーリング場のスコアシステムを、わずか1,600ドルのESP32ベースのシステムで自作し置き換えた。 / 既存システムは高価で老朽化しており、新しいシステムはボール速度や軌道計算、ピン検出、ファウル判定、アニメーションなどをESP32で実現している。 / このプロジェクトは、高価な専用システムを安価な汎用ハードウェアとソフトウェアで代替できる可能性を示している。 (Source: Hacker News)</description>
-      <pubDate>Sun, 19 Jul 2026 14:41:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>ゴールまで自走するだけではない？——ループエンジニアリングの本質はどこにあるのか</title>
-      <link>https://zenn.dev/r_kaga/articles/a27a3879dd3ce4</link>
-      <guid isPermaLink="false">https://zenn.dev/r_kaga/articles/a27a3879dd3ce4</guid>
-      <description>[Score: 85] ループエンジニアリングは、AIエージェントが自律的にタスクを完遂するだけでなく、その外側の仕組みを設計することに本質があるという考察です。 / ソフトウェアファクトリーの概念と関連し、人間は設計者・監督者として関わる世界観が提示されています。 / Anthropicはループをターン型、ゴール型、タイマー型、プロアクティブ型の4つに分類し、その活用方法を整理しています。 (Source: Zenn)</description>
-      <pubDate>Sun, 19 Jul 2026 07:48:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>codexの独自用語乱立･曖昧問題への対策</title>
-      <link>https://zenn.dev/u1/articles/codex-referent-before-label</link>
-      <guid isPermaLink="false">https://zenn.dev/u1/articles/codex-referent-before-label</guid>
-      <description>[Score: 85] AI（特にCodex）が設計や実装時に曖昧な独自用語を生成し、誤解やエラーを引き起こす問題への対策を解説しています。 / 解決策として、文章生成前に「候補語」の対応表を構造化して作成させ、AIに明確な定義を強制する手法を提案。 / これにより、AIがもっともらしいが曖昧な言葉で思考を進めることを防ぎ、設計の精度と信頼性を向上させます。 (Source: Zenn)</description>
-      <pubDate>Sun, 19 Jul 2026 04:23:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>.NET 8と.NET 9は今年の11月でサポート終了、マイクロソフトが警告</title>
-      <link>https://www.publickey1.jp/blog/26/net_8net_911.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_8net_911.html</guid>
-      <description>[Score: 85] マイクロソフトは、.NET 8と.NET 9のサポートが今年の11月10日に終了することを警告しました。 / サポート終了後もアプリケーションは動作しますが、バグ修正やセキュリティパッチは提供されなくなります。 / 開発者には、セキュリティと安定性を確保するため、サポートが継続される.NET 10（LTS）または.NET 11への速やかな移行が推奨されています。 (Source: Publickey)</description>
-      <pubDate>Thu, 16 Jul 2026 18:30:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>より小さなソフトウェアエンジニアリングチームを、2029年までに60％の組織が本格展開するとの予測、ガートナー</title>
-      <link>https://www.publickey1.jp/blog/26/202960.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/202960.html</guid>
-      <description>[Score: 85] ガートナーは、2029年までに60%の組織がAIの活用により、より小さなソフトウェアエンジニアリングチームを本格展開すると予測しました。 / AIが日常的なエンジニアリング作業を処理することで、人間は複雑な問題解決やイノベーションに集中できるようになります。 / これにより、現在の4〜5人規模のチームが2〜3人程度に縮小し、効率的な開発体制が一般化すると見込まれています。 (Source: Publickey)</description>
-      <pubDate>Tue, 14 Jul 2026 15:51:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>CrewAI、AutoGen、LlamaIndexなど11のPythonエージェントフレームワークで使える「base_url」トリック</title>
-      <link>https://dev.to/seven7763/one-key-for-crewai-autogen-llamaindex-and-8-more-the-baseurl-trick-for-python-agents-5a3g</link>
-      <guid isPermaLink="false">https://dev.to/seven7763/one-key-for-crewai-autogen-llamaindex-and-8-more-the-baseurl-trick-for-python-agents-5a3g</guid>
-      <description>[Score: 85] PythonエージェントフレームワークがOpenAI互換のカスタム`base_url`をネイティブサポートすることで、マルチモデルエージェント開発が簡素化されます。 / これにより、単一のOpenAI互換ゲートウェイを通じて、Claude、GPT、Geminiなど複数のLLMを統一されたAPIキーで利用可能になります。 / 各フレームワークでの具体的な設定方法と注意点が解説されており、開発者はバックエンドのLLMを自由に選択できるようになります。 (Source: Dev.to)</description>
-      <pubDate>Sun, 19 Jul 2026 22:11:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Codeは現在、Rustで書かれたBunを使用している</title>
-      <link>https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/</link>
-      <guid isPermaLink="false">https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/</guid>
-      <description>[Score: 80] Claude Code v2.1.181以降のバージョンで、JavaScriptランタイムであるBunのRustポートが使用されていることが確認された。 / BunのRustへの書き換えにより、Linux上での起動速度が10%向上したが、それ以外の大きな変化はユーザーにはほとんど気づかれていない。 / この変更は、パフォーマンス向上と安定性向上を目的としたものであり、BunのRust版が既に本番環境で広く利用されていることを示している。 (Source: Hacker News)</description>
-      <pubDate>Sun, 19 Jul 2026 10:03:23 +0000</pubDate>
+      <title>Nativ: Macで最先端のオープンモデルをローカル実行</title>
+      <link>https://blaizzy.github.io/nativ/</link>
+      <guid isPermaLink="false">https://blaizzy.github.io/nativ/</guid>
+      <description>[Score: 90] Nativは、Apple Silicon搭載MacでGoogleやCohereなどの最先端オープンモデルをローカル実行できるツールです。 / アカウント登録やサブスクリプション不要で、ストリーミング応答や詳細なパフォーマンスメトリクスを提供します。 / MLX-VLMをベースにMシリーズチップに最適化されており、LLMチャット、画像キャプション、コード補完など多機能です。 (Source: Hacker News)</description>
+      <pubDate>Mon, 20 Jul 2026 18:16:08 +0000</pubDate>
     </item>
     <item>
       <title>セキュリティの勉強になるサイト138選(2026年版)</title>
       <link>https://qiita.com/Nakanishi_RareTECH/items/16fd0b847aa68c152e00?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Nakanishi_RareTECH/items/16fd0b847aa68c152e00?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Webアプリ、クラウド、CTF、マルウェア解析、資格など分野別に、セキュリティ学習に役立つ138のサイトをまとめた記事です。 / ほとんどが無料で利用でき、ブラウザやDockerで手軽に試せる環境が紹介されています。 / OWASP WebGoatやDVWA、TryHackMe、Hack The Boxなど、実践的な学習プラットフォームが多数含まれています。 (Source: Qiita)</description>
+      <description>[Score: 90] Webアプリ、クラウド、CTF、マルウェア解析、資格など、セキュリティ学習に役立つ無料サイト138選を紹介しています。 / やられサイトや攻撃練習プラットフォームなど、実践的に学べるリソースが分野別にまとめられています。 / Dockerで簡単に環境構築できるものが多く、独学でセキュリティスキルを向上させたい人にとって非常に有用な情報源です。 (Source: Qiita)</description>
       <pubDate>Sun, 19 Jul 2026 04:36:00 +0000</pubDate>
     </item>
     <item>
-      <title>余ったMacをClaude Code専用の「何でもやらせるマシン」にする — SSH・tmux・LaunchAgentで権限フル解放のエージェント環境を構築</title>
-      <link>https://techfeed.io/entries/6a5be90b3d5307dbb0d5d745</link>
-      <guid isPermaLink="false">https://techfeed.io/entries/6a5be90b3d5307dbb0d5d745</guid>
-      <description>[Score: 80] 余っているMacをAnthropicのAIエージェント「Claude Code」専用の「捨て駒」マシンとして活用する構築方法が紹介されています。 / メインマシンでの危険な権限フル解放を避け、SSHやtmux、LaunchAgentを用いて安全かつ効率的なエージェント環境を構築する手順が詳細に解説されています。 / これにより、Claude CodeがmacOSの全機能を活用し、画面操作なども含めた高度な自動化が可能になります。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 19 Jul 2026 02:57:42 +0000</pubDate>
+      <title>AIがBlenderを勝手に操作 3D制作のハードルが一気に下がった (1/4)</title>
+      <link>https://ascii.jp/elem/000/004/420/4420739/</link>
+      <guid isPermaLink="false">https://ascii.jp/elem/000/004/420/4420739/</guid>
+      <description>[Score: 90] Anthropicの「Claude Fable 5」やOpenAIの「GPT-5.6 Sol」などのAIが、3D制作ツールBlenderを直接操作する技術が注目されています。 / MCP（モデル・コンテキスト・プロトコル）により、LLMに日本語で指示するだけでBlenderの環境整備から操作までが可能になり、3D制作のハードルが大幅に低下しました。 / AIによる3D制作はすでにAI動画制作の土台として活用が模索されており、クリエイティブ業界に大きな変革をもたらす可能性を秘めています。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 20 Jul 2026 01:21:48 +0000</pubDate>
     </item>
     <item>
-      <title>リアルタイム共同編集が可能なJavaScriptの表計算コンポーネント、メシウスが「SpreadJS」の新バージョンをリリース</title>
-      <link>https://www.publickey1.jp/blog/26/javascriptspreadjs.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptspreadjs.html</guid>
-      <description>[Score: 80] メシウス（旧グレープシティ）が、JavaScriptの表計算コンポーネント「SpreadJS」の最新版「V19.1J」をリリースしました。 / 新バージョンでは、Webブラウザ上で複数のユーザーが同時に一つの表計算シートを編集できるリアルタイム共同編集機能が追加されています。 / スレッド形式コメントやユーザーごとの編集権限設定も可能で、業務アプリケーションにおけるデータ入力・確認作業の効率化に貢献します。 (Source: Publickey)</description>
-      <pubDate>Wed, 15 Jul 2026 15:56:19 +0000</pubDate>
+      <title>Rustで書き直されたBun、早くもClaude Codeアプリに本番投入された模様</title>
+      <link>https://www.publickey1.jp/blog/26/rustbunclaude_code.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/rustbunclaude_code.html</guid>
+      <description>[Score: 90] JavaScriptランタイムのBunが、Claude Codeを使ってわずか11日間でZig言語からRust言語に移植されたことが話題になった。 / そのRust版Bunが、早くも7月17日にリリースされたClaude Code v2.1.181の内部で利用されていることが判明した。 / AIによるコード生成・移植の速度と実用性を示す事例として注目されており、開発プロセスの変革を示唆している。 (Source: Publickey)</description>
+      <pubDate>Mon, 20 Jul 2026 15:52:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>オープンソースに1億ドル：コミュニティによって築かれたマイルストーン</title>
+      <link>https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/</guid>
+      <description>[Score: 90] GitHub Sponsorsを通じて、オープンソースのメンテナーとプロジェクトに1億ドル以上が投資されました。 / このマイルストーンは、オープンソースエコシステムの持続可能性への投資が加速していることを示しています。 / 個人から企業まで28万以上のスポンサーが7万以上のメンテナーと組織を支援し、そのペースは加速しています。 (Source: GitHub Blog)</description>
+      <pubDate>Mon, 20 Jul 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>仕様駆動開発で起こる「仕様とコードのズレ」をハッシュで決定的に検出するツールを作った</title>
+      <link>https://zenn.dev/mrmtsntr/articles/artgraph-spec-code-drift</link>
+      <guid isPermaLink="false">https://zenn.dev/mrmtsntr/articles/artgraph-spec-code-drift</guid>
+      <description>[Score: 88] CLIツール「artgraph」は、仕様駆動開発における仕様・ドキュメント・コード・テスト間の乖離（ドリフト）を決定的に検出します。 / 要求IDを各層にタグ付けし、それぞれの本文をハッシュで管理することで、片側だけの変更を関数単位で特定します。 / Claude CodeのStop Hookに組み込むことで、AIエージェントによるコード変更時の仕様書とのズレを自動で検出し、開発プロセスを改善します。 (Source: Zenn)</description>
+      <pubDate>Sun, 19 Jul 2026 22:19:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>個人開発でApp Storeリリースフローを学ぶ ― UIKit + FastAPI + K8sで作るMinecraftサーバー監視アプリ「MineWatch」</title>
+      <link>https://qiita.com/jqit-yukiono/items/d33908602fd060f5e1d1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/jqit-yukiono/items/d33908602fd060f5e1d1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] Minecraftサーバー監視アプリ「MineWatch」を個人開発し、App Storeリリースフローを学ぶ過程を解説しています。 / iOS (UIKit) + FastAPI + PostgreSQL + Kubernetesという構成を採用した理由と、App Store審査を安定させるための設計判断に焦点を当てています。 / モバイルアプリの継続的なリリースにおけるバックエンドの可用性、APIの後方互換性、開発フローの重要性を強調しています。 (Source: Qiita)</description>
+      <pubDate>Sun, 19 Jul 2026 23:56:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>より良いツールがCopilotのコードレビューを悪化させた。実際に改善した方法とは。</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</guid>
+      <description>[Score: 88] GitHub Copilotのコードレビューにおいて、より優れた共有ツールを導入したにもかかわらず、レビューコストが増加し、検出される問題が減少する事態が発生しました。 / 問題はツール自体ではなく、ツールの使い方を指示するプロンプトやワークフローの設計にあったことが判明しました。 / レビュー担当者がプルリクエストを読む方法に合わせて指示を書き直した結果、平均レビューコストを約20%削減しつつ、レビュー品質を維持することに成功しました。 (Source: GitHub Blog)</description>
+      <pubDate>Fri, 10 Jul 2026 15:57:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Jenkins から TestFlight へ ― Mac 1 台で iOS リリースを半自動化した話</title>
+      <link>https://qiita.com/jqit-yukiono/items/1ebffa98b9ff2dca7a9b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/jqit-yukiono/items/1ebffa98b9ff2dca7a9b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 87] 個人開発のiOSアプリリリースにおいて、JenkinsとMac1台でTestFlightへのアップロードを半自動化した事例を紹介しています。 / xcodebuildとMakefile、Jenkins Credentialsのみを使用し、fastlaneに頼らないシンプルなCI/CDパイプラインを構築。 / 開発機をJenkinsエージェントとして活用することで、iOS署名管理の複雑さを軽減しつつ、手動リリース手順を自動化するノウハウが共有されています。 (Source: Qiita)</description>
+      <pubDate>Sun, 19 Jul 2026 23:56:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>中国のオープンウェイトAI戦略が優勢</title>
+      <link>https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/</link>
+      <guid isPermaLink="false">https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/</guid>
+      <description>[Score: 85] 中国のオープンウェイトAI戦略が、米国のクローズドなAIモデルに対する優位性を示している。 / AIモデル自体の差別化は難しく、API経由で簡単に切り替え可能であるため、オープンなモデルがインフラ採用で有利。 / 米国の輸出規制やデータ共有規制により、中国はグローバル規模の集中型サービス提供が難しいが、オープン戦略で対抗。 (Source: Hacker News)</description>
+      <pubDate>Mon, 20 Jul 2026 14:21:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Async React時代の宣言的UI 3: useActionStateでユーザーの操作を妨げないUXを作る</title>
+      <link>https://zenn.dev/uhyo/articles/async-react-action-queue</link>
+      <guid isPermaLink="false">https://zenn.dev/uhyo/articles/async-react-action-queue</guid>
+      <description>[Score: 85] React 19で導入される`useActionState`フックは、非同期版`useReducer`のような挙動を持ちます。 / このフックの真髄は、ユーザーの操作を妨げないUXを実現することにあり、副作用を伴うstate更新を宣言的に扱えます。 / アクションがキューイングされる特徴があり、前の非同期処理が完了するまで次の処理を待つことで、意図しない並行処理を防ぎます。 (Source: Zenn)</description>
+      <pubDate>Mon, 20 Jul 2026 05:29:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>検索画面のUI設計で、バックエンドエンジニアが早めに口出しすべき3つのこと</title>
+      <link>https://zenn.dev/ncdc/articles/6c8eabde83cf0a</link>
+      <guid isPermaLink="false">https://zenn.dev/ncdc/articles/6c8eabde83cf0a</guid>
+      <description>[Score: 85] 検索画面のUI設計において、バックエンドエンジニアが初期段階で考慮すべき3つのポイントを解説します。 / あいまい検索の種類とパフォーマンスへの影響、データ量に応じたインデックスの必要性について言及。 / OFFSETを使ったページネーションのパフォーマンス問題と、その解決策についても触れています。 (Source: Zenn)</description>
+      <pubDate>Sun, 19 Jul 2026 09:49:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI時代のドキュメント駆動開発のすすめ - Qiita</title>
+      <link>https://qiita.com/Asahi_tech_dev/items/5a3c6420cb0b2fa0e823</link>
+      <guid isPermaLink="false">https://qiita.com/Asahi_tech_dev/items/5a3c6420cb0b2fa0e823</guid>
+      <description>[Score: 85] AIの登場により開発現場は大きく変化し、プロダクト開発のハードルは下がったが、運用維持の難易度は上がっている。 / AI時代には、ドキュメント作成の労力が大幅に削減できるため、「仕様を書く余裕がない」という言い訳は通用しない。 / ドキュメントを起点にAIを活用してプロダクトデザインや設計書を作成し、その後にコーディングを委託する開発手法を提唱している。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 18 Jul 2026 21:43:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>フロントエンド開発に必要なツールをまとめて統合した「Vite+」、ベータ公開</title>
+      <link>https://www.publickey1.jp/blog/26/vite.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vite.html</guid>
+      <description>[Score: 85] オープンソースのWebアプリケーションビルドツール「Vite」をベースとした統合開発ツールチェーン「Vite+」がベータ公開されました。 / 開発用ローカルサーバー、バンドラ、リンター、フォーマッター、テストランナーなど、フロントエンド開発に必要なツール群を単一のCLIで提供します。 / 開発元のVoidZeroはCloudflareに買収されており、Cloudflare傘下での開発が注目されます。 (Source: Publickey)</description>
+      <pubDate>Wed, 15 Jul 2026 15:59:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>「はい」と言うコストが変わった</title>
+      <link>https://github.blog/engineering/the-cost-of-saying-yes-has-changed/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/the-cost-of-saying-yes-has-changed/</guid>
+      <description>[Score: 85] かつてはコードを書くことが小さな機能リクエストの最も高価な部分でしたが、今はそのコードを書くべきかどうかの議論が最もコストがかかります。 / エンジニアは「小さな依頼」が実際には小さくないことを知っており、テストやロールアウト計画、エッジケースの考慮が必要なため、安易に引き受けません。 / しかし、特定の種類の変更では、最初のコード記述がもはや高価なステップではなくなっており、この変化を理解することで意思決定プロセスを効率化できます。 (Source: GitHub Blog)</description>
+      <pubDate>Fri, 17 Jul 2026 16:46:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>AnovaX: LLMプランニング、型付きエグゼキュータ、適応的リカバリを備えたローカルマルチエージェント音声アシスタント</title>
+      <link>https://arxiv.org/abs/2607.15367</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2607.15367</guid>
+      <description>[Score: 85] LLMプランニング、型付きエグゼキュータ、適応的リカバリ機能を備えたローカルマルチエージェント音声アシスタント「AnovaX」を提案。 / デバイス上で動作し、複数のAIエージェントが連携して複雑なタスクを処理します。 / プライバシー保護とオフラインでの高度な機能提供を目指し、次世代の音声アシスタント技術を示唆しています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 20 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【徹底解説】文系でもわかる！機械学習に入門しよう</title>
+      <link>https://qiita.com/miruky/items/42b892805eb1d754109c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/miruky/items/42b892805eb1d754109c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] 文系出身者でも理解できるよう、機械学習の全体像から生成AIの最新研究までを平易な言葉で解説しています。 / 通常のプログラミングと機械学習の違いを、ルールベースとデータからの学習という観点から説明。 / AI、機械学習、深層学習、生成AIの用語の定義と関係性を明確にし、入門者にとってのハードルを下げています。 (Source: Qiita)</description>
+      <pubDate>Sat, 18 Jul 2026 08:14:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHubがすべてのリポジトリに永続的なオーナーを割り当てた方法</title>
+      <link>https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/</link>
+      <guid isPermaLink="false">https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/</guid>
+      <description>[Score: 80] GitHubは、内部組織内の14,000以上のリポジトリのうち、多くのリポジトリに明確なオーナーがいないという課題に直面していました。 / このオーナーシップの欠如は、シークレットスキャン後の修正作業において、リスクや混乱を引き起こす原因となっていました。 / GitHubは1ヶ月半をかけて全アクティブリポジトリのオーナーシップを検証し、約8,000の未使用リポジトリをアーカイブし、リポジトリ作成時にオーナーシップを必須とすることでこの問題を解決しました。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 09 Jul 2026 16:29:37 +0000</pubDate>
     </item>
   </channel>
 </rss>
