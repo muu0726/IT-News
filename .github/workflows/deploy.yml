@@ -5,6 +5,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+  workflow_run:
+    workflows: ["IT Info Collector - 定期実行"]
+    types:
+      - completed
 
 permissions:
   contents: read

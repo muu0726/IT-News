@@ -8,9 +8,17 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   collect:
+    environment:
+      name: github-pages
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -49,11 +57,22 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json archive/ models.json feed.xml
-          # digest.json は日曜のみ生成されるため存在チェック付きで追加
           if [ -f digest.json ]; then git add digest.json; fi
-          # 変更がある場合のみコミット
+          git pull --rebase origin main || true
           git diff --cached --quiet || git commit -m "chore: データ更新 $(date +'%Y-%m-%d %H:%M UTC')"
           git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: 失敗時 Discord アラート
         if: failure()
