@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 25 Jul 2026 22:47:50 +0000</lastBuildDate>
-    <item>
-      <title>ターミナルを自作したら、1日のコミット数が500を超えて、生産性がバグった話</title>
-      <link>https://zenn.dev/singularity/articles/diy-terminal-500-commits</link>
-      <guid isPermaLink="false">https://zenn.dev/singularity/articles/diy-terminal-500-commits</guid>
-      <description>[Score: 95] AIエージェント（Claude Code）を本格的に活用する中で、既存のターミナル環境では待ち時間が発生し、生産性が低下する課題に直面しました。 / この課題を解決するため、著者は「今どれが自分を待っているか」をひと目で把握し、画面が反応するような自分専用のターミナルを自作しました。 / 結果として、AIエージェントとの並列作業が効率化され、1日のコミット数が500を超えるほど生産性が劇的に向上した体験が語られています。 (Source: Zenn)</description>
-      <pubDate>Thu, 23 Jul 2026 20:55:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude 5世代モデルにおけるコンテキストエンジニアリングの新しいルール</title>
-      <link>https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models</link>
-      <guid isPermaLink="false">https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models</guid>
-      <description>[Score: 90] Claude 5世代モデルでは、システムプロンプトの80%以上を削減しても性能が維持されることが判明しました。 / これは、より洗練されたモデルでは、簡潔なコンテキストでも効果的に機能することを示唆しています。 / 開発者は、Claude Codeや独自のエージェントでコンテキストエンジニアリングを最適化するための新しいベストプラクティスを学ぶ必要があります。 (Source: Hacker News)</description>
-      <pubDate>Sat, 25 Jul 2026 20:42:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Terraform / Kubernetes の構築で、初心者がよく指摘されるポイントのまとめ</title>
-      <link>https://zenn.dev/scalar_sol_blog/articles/6fa517a84cb7ff</link>
-      <guid isPermaLink="false">https://zenn.dev/scalar_sol_blog/articles/6fa517a84cb7ff</guid>
-      <description>[Score: 90] AI駆動開発の普及によりTerraformやKubernetesのコード生成が加速する一方で、レビューの重要性が増していると指摘しています。 / 本記事では、ツールでは検出されにくい「planは通るが本番で壊れる」といった、初心者が陥りやすい7つの典型的な問題とその対策を解説しています。 / クラウドAPIバリデーションのタイミング、Terraformモジュールの作法、環境固有値のハードコード回避、機能フラグによるリソース制御時の注意点などが具体例として挙げられています。 (Source: Zenn)</description>
-      <pubDate>Fri, 24 Jul 2026 01:05:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>個人開発でApp Storeリリースフローを学ぶ（続編）― 3回のリジェクトと審査通過までにやったこと</title>
-      <link>https://qiita.com/jqit-yukiono/items/91755838ea8589fde90d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/jqit-yukiono/items/91755838ea8589fde90d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 個人開発アプリ「MineWatch」がApp Store審査で3回リジェクトされた経験と、その解決策を詳細に解説。 / トラッキングに関するGuideline 5.1.2(i)と、ブランド名使用に関する4.1(c)でのリジェクト事例を具体的に紹介。 / Firebase AnalyticsのIDFA対応やATTダイアログの扱い、サブタイトルでのブランド名使用の注意点など、実践的な知見を提供。 (Source: Qiita)</description>
-      <pubDate>Fri, 24 Jul 2026 23:20:24 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 26 Jul 2026 22:54:36 +0000</lastBuildDate>
     <item>
       <title>アトラシアン、JiraがAIによる要件定義の自動作成、コンテキストを保持しつつタスクをClaudeやCopilotなどのAIエージェントへアサインなど新機能</title>
       <link>https://www.publickey1.jp/blog/26/jiraaiclaudecopilotai.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/jiraaiclaudecopilotai.html</guid>
-      <description>[Score: 90] アトラシアンは、プロジェクト管理ツールJiraに生成AI機能を統合し、AIによる要件定義の自動作成、タスクの洗い出し、AIエージェントへのタスク割り当てなどの新機能を発表しました。 / 新機能「Jira Planner」は、既存のコードベースやJira履歴、Confluenceの情報からコンテキストを取得し、構造化された要件定義を自動生成します。 / 生成された要件に基づき、タスクが洗い出され、人間またはClaude CodeやGitHub CopilotなどのAIエージェントに割り当てられることで、開発プロセス全体の効率化が期待されます。 (Source: Publickey)</description>
+      <description>[Score: 95] アトラシアンのプロジェクト管理ツールJiraに生成AI機能が組み込まれ、要件定義の自動作成やタスクの洗い出しが可能になります。 / 既存コードベースやConfluenceの情報からコンテキストを取得し、ClaudeやGitHub CopilotなどのAIエージェントにタスクを割り当てられるようになります。 / これにより、開発プロセス全体の効率化が期待されます。 (Source: Publickey)</description>
       <pubDate>Wed, 22 Jul 2026 15:35:19 +0000</pubDate>
     </item>
     <item>
-      <title>クールダウンの必要性：Dependabotがバージョン更新を発行する前に待機するようになった理由</title>
-      <link>https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</guid>
-      <description>[Score: 90] ソフトウェアサプライチェーン攻撃の増加を受け、Dependabotがバージョン更新のPR発行前に待機する「クールダウン」を導入しました。 / 悪意のあるパッケージが公開直後に自動更新ツールによって取り込まれるリスクを軽減するため、非セキュリティ関連の更新では最低3日間待機します。 / これにより、メンテナーやセキュリティ研究者が悪意のあるバージョンを発見し、削除する時間を確保し、サプライチェーン攻撃からの保護を強化します。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 23 Jul 2026 16:00:00 +0000</pubDate>
+      <title>放置していた旧環境で見つけたReact2Shell攻撃の実態</title>
+      <link>https://zenn.dev/munenick/articles/b507a9848b6fdd</link>
+      <guid isPermaLink="false">https://zenn.dev/munenick/articles/b507a9848b6fdd</guid>
+      <description>[Score: 90] 筆者が放置していた旧Kubernetes環境でReact2Shell攻撃を受け、CPUと回線が占有される事態が発生しました。 / 攻撃はNext.jsワークロードを侵害し、大量のゾンビプロセスと高いCPU負荷を引き起こしていました。 / 本記事では、React Server Componentsの脆弱性を悪用した攻撃内容とその対策について詳細に解説しています。 (Source: Zenn)</description>
+      <pubDate>Sat, 25 Jul 2026 08:27:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>ニチレイ物流システムが全面復旧、なぜ10日でサイバー攻撃から復旧できたのか？</title>
+      <link>https://www.sbbit.jp/article/cont1/186262</link>
+      <guid isPermaLink="false">https://www.sbbit.jp/article/cont1/186262</guid>
+      <description>[Score: 90] ニチレイ物流システムがサイバー攻撃からわずか10日で全面復旧した事例に関する記事です。 / 破壊できないバックアップと迅速な復旧体制が成功の鍵であったと推測されます。 / 詳細な復旧プロセスや対策について解説されていると見られます。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 26 Jul 2026 02:29:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>ゲームエンジン「Unity 7」発表、ランタイム基盤がMonoから.NET CoreCLRへ移行。高速化により、開発画面からほぼ瞬時にプレイモードが起動</title>
+      <link>https://www.publickey1.jp/blog/26/unity_7mononet_coreclr.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/unity_7mononet_coreclr.html</guid>
+      <description>[Score: 90] 人気ゲームエンジン「Unity」の次世代版「Unity 7」が発表されました。 / ランタイム基盤がMonoからMicrosoft .NETのCoreCLRへ移行することが最大の変更点です。 / これにより高速化が実現し、開発画面からプレイモードがほぼ瞬時に起動可能になるとのことです。 (Source: Publickey)</description>
+      <pubDate>Sun, 26 Jul 2026 15:02:22 +0000</pubDate>
     </item>
     <item>
       <title>オープンソースに1億ドル：コミュニティによって築かれたマイルストーン</title>
       <link>https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/</link>
       <guid isPermaLink="false">https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/</guid>
-      <description>[Score: 90] GitHub Sponsorsが2019年の開始以来、オープンソースのメンテナーとプロジェクトに1億ドル以上を投資したと発表しました。 / これは、オープンソースの価値評価が変化していることを示す重要なマイルストーンであり、個人や組織からの支援が拡大しています。 / プログラムは世界103地域に拡大し、7万以上のメンテナーと組織を支援しており、資金提供のペースも加速しています。 (Source: GitHub Blog)</description>
+      <description>[Score: 90] GitHub Sponsorsを通じて、オープンソースメンテナーとプロジェクトに1億ドル以上が投資されたことが発表された。 / このプログラムは2019年に開始され、個人から企業まで幅広いスポンサーが参加し、オープンソースエコシステムの持続可能性に貢献している。 / 投資のペースは加速しており、オープンソースへの評価と支援が世界的に拡大していることを示している。 (Source: GitHub Blog)</description>
       <pubDate>Mon, 20 Jul 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>GMが米国送電網向けナトリウムイオン電池を支援</title>
-      <link>https://spectrum.ieee.org/sodium-ion-battery-peak-energy</link>
-      <guid isPermaLink="false">https://spectrum.ieee.org/sodium-ion-battery-peak-energy</guid>
-      <description>[Score: 85] GMが米国スタートアップPeak Energyを支援し、ナトリウムイオン電池による送電網向けエネルギー貯蔵技術の開発を推進しています。 / 中国CATLが既に大規模なナトリウムイオン電池供給を発表しており、米国企業は後塵を拝している状況です。 / Peak Energyは、低コストのリチウム鉄リン酸（LFP）電池と直接競合できる技術を持つと主張しています。 (Source: Hacker News)</description>
-      <pubDate>Sat, 25 Jul 2026 21:48:22 +0000</pubDate>
+      <title>【速報】Opus 5、React習熟度ベンチマークでFable 5を圧倒</title>
+      <link>https://zenn.dev/uhyo/articles/react-profession-bench-14</link>
+      <guid isPermaLink="false">https://zenn.dev/uhyo/articles/react-profession-bench-14</guid>
+      <description>[Score: 85] Claude Opus 5がReact習熟度ベンチマークでFable 5を上回り、初の90点台を達成し1位となりました。 / 特にコンポーネント設計とアクセシビリティでスコアを伸ばし、Claudeの弱点を克服しています。 / React開発における最強モデルと評価され、今後のベンチマークv2も計画されています。 (Source: Zenn)</description>
+      <pubDate>Sun, 26 Jul 2026 09:19:46 +0000</pubDate>
     </item>
     <item>
-      <title>AI時代のエンジニアリングマネージャーのあり方｜外部品質編 〜品質の可視化を、現場と経営をつなぐ形にするまで〜</title>
-      <link>https://zenn.dev/loglass/articles/ef099b123153cf</link>
-      <guid isPermaLink="false">https://zenn.dev/loglass/articles/ef099b123153cf</guid>
-      <description>[Score: 85] AIによる開発速度向上の裏で、ソフトウェア品質の担保が課題となる中、エンジニアリングマネージャーの役割変化について論じています。 / 特に「外部品質」、すなわちインシデントに関する品質KPIの可視化に焦点を当て、現場と経営をつなぐための指標整理と測定方法の見直しを解説しています。 / AIが品質課題を生む一方で、品質マネジメントのやり方自体を変える可能性も示唆し、ステークホルダーの関心に応える品質KPIの重要性を強調しています。 (Source: Zenn)</description>
-      <pubDate>Fri, 24 Jul 2026 04:40:27 +0000</pubDate>
+      <title>AIエージェントがあれば技術書なんてすぐ書けるでしょ、と思ったが無理だった</title>
+      <link>https://qiita.com/watany/items/11358e8e8966d5e48a09?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/watany/items/11358e8e8966d5e48a09?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] 筆者はAIエージェントを使って技術書を執筆しようと試みたが、AI生成文章特有の「AI臭さ」に直面し、そのままでは使えないと結論付けました。 / AI生成文章の「AIスロップ」は語彙、構文、構成の3層に分けられ、特に構成の修正が困難であると指摘しています。 / AIの利用と人間の責任の線引き、そして品質改善とロンダリングの間のジレンマについて考察しています。 (Source: Qiita)</description>
+      <pubDate>Sat, 25 Jul 2026 06:46:06 +0000</pubDate>
     </item>
     <item>
-      <title>JenkinsでGitHub Copilot CLIにPRを自動レビューさせる ― E2BIG・プロンプトインジェクション・トークン地獄との戦い</title>
-      <link>https://qiita.com/jqit-yukiono/items/21c54529410ba960c388?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/jqit-yukiono/items/21c54529410ba960c388?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] JenkinsとGitHub Copilot CLIを連携させ、PRの自動レビューシステムを構築した事例を紹介。 / Linuxのargvサイズ上限、プロンプトインジェクション、GitHub PAT権限など、CIでLLMを安全に運用する際の難所と解決策を詳述。 / 外部入力をLLMに食わせるCIを安全かつ堅牢に構築するための実践的な知見が豊富に盛り込まれている。 (Source: Qiita)</description>
-      <pubDate>Fri, 24 Jul 2026 22:20:08 +0000</pubDate>
+      <title>AI時代のポートフォリオ、転職で本当に見られているのは「言語化力」</title>
+      <link>https://qiita.com/sumomoo/items/d8c22cb512d9ba036154?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/sumomoo/items/d8c22cb512d9ba036154?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AIがコード生成を助ける現代において、エンジニアの転職で最も重視されるのは「言語化力」であると指摘しています。 / ポートフォリオ作成において、技術力そのものよりも「なぜ」その技術や設計を選んだのかを説明できる理解力が差別化の鍵となります。 / AIは隣で代わりに答えてくれないため、自分の考えを自分の言葉で説明する習慣が、面接での評価に直結すると強調しています。 (Source: Qiita)</description>
+      <pubDate>Fri, 24 Jul 2026 08:14:32 +0000</pubDate>
     </item>
     <item>
-      <title>オープンウェイトモデルが未来なら、米国のAI企業は苦戦するだろう</title>
-      <link>https://www.reddit.com/r/technology/comments/1v6g5pw/if_open_weight_models_are_the_future_us_ai/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1v6g5pw/if_open_weight_models_are_the_future_us_ai/</guid>
-      <description>[Score: 85] オープンウェイトモデルがAIの主流となる場合、米国のAI企業が競争上不利になる可能性が指摘されています。 / これは、クローズドな商用モデルに注力してきた企業が、オープンソースの台頭により市場シェアを失うことを意味するかもしれません。 / AI開発の方向性やビジネスモデルの転換が、今後の業界勢力図に大きな影響を与える可能性があります。 (Source: Reddit)</description>
-      <pubDate>Sat, 25 Jul 2026 18:36:05 +0000</pubDate>
+      <title>GoogleがSpaceX株941億ドルを公開、6%の株式保有を明らかに</title>
+      <link>https://www.reddit.com/r/technology/comments/1v7e7rf/google_discloses_941_billion_in_spacex_stock/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1v7e7rf/google_discloses_941_billion_in_spacex_stock/</guid>
+      <description>[Score: 85] GoogleがSpaceXの株式941億ドル相当を保有していることを開示し、SpaceXの約6%の株式を保有していることが明らかになりました。 / これは、Googleが宇宙技術分野への投資を強化していることを示唆しています。 / テクノロジー大手による新興宇宙産業への関与の深さを物語るものです。 (Source: Reddit)</description>
+      <pubDate>Sun, 26 Jul 2026 19:54:32 +0000</pubDate>
     </item>
     <item>
-      <title>HTML-in-Canvas コンポーネントライブラリ Canvas UI</title>
-      <link>https://azukiazusa.dev/blog/html-in-canvas-component-library-canvasui/</link>
-      <guid isPermaLink="false">https://azukiazusa.dev/blog/html-in-canvas-component-library-canvasui/</guid>
-      <description>[Score: 85] Canvas UIは、HTML-in-Canvas APIを活用し、液体シミュレーションやシェーダーなどのクリエイティブなUIを構築するコンポーネントライブラリです。 / この実験的なAPIは、&lt;canvas&gt;要素の子として配置したHTML要素の描画結果を2D CanvasやWebGL、WebGPUで利用可能にし、DOMの操作性やアクセシビリティを維持します。 / React, Solid, Vue, Svelteなど多様なフレームワークに対応し、shadcn/uiレジストリで配布されるため、カスタマイズや拡張が容易です。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 25 Jul 2026 11:25:46 +0000</pubDate>
+      <title>理解を手放さない</title>
+      <link>https://blog.shin1x1.com/entry/dont-let-go-of-understanding</link>
+      <guid isPermaLink="false">https://blog.shin1x1.com/entry/dont-let-go-of-understanding</guid>
+      <description>[Score: 85] AIコーディングエージェントの活用において、人間がシステムを理解し続けることの重要性を説く記事です。 / 速度と引き換えに、検証能力、変更のしやすさ、システム改善の元手を失うリスクを指摘しています。 / AIに任せきりにせず、人間が説明できるレベルの理解を維持することの価値を強調しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 26 Jul 2026 11:28:59 +0000</pubDate>
     </item>
     <item>
-      <title>shinyshellの作り方 — 依存関係ゼロで127のターミナル機能を実現</title>
-      <link>https://dev.to/adnanahamed66772ndpc/how-i-built-shinyshell-127-terminal-features-with-zero-dependencies-2g8a</link>
-      <guid isPermaLink="false">https://dev.to/adnanahamed66772ndpc/how-i-built-shinyshell-127-terminal-features-with-zero-dependencies-2g8a</guid>
-      <description>[Score: 85] 外部依存関係を一切持たないPython製ターミナルライブラリ「shinyshell」が開発されました。 / チャート、テーブル、ゲーム、QRコード生成、開発ツールなど127もの豊富な機能を標準ライブラリのみで実現。 / Richライブラリに匹敵する機能性を持ちながら、pip install不要で利用できる点が特徴です。 (Source: Dev.to)</description>
-      <pubDate>Sat, 25 Jul 2026 22:34:12 +0000</pubDate>
+      <title>.NET MAUI、iOS/AndroidのランタイムがMonoからCoreCLRに更新、開発者は動作確認を。.NET 11 Preview 6が公開</title>
+      <link>https://www.publickey1.jp/blog/26/net_mauiiosandoridmonocoreclrnet_11_preview_6.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_mauiiosandoridmonocoreclrnet_11_preview_6.html</guid>
+      <description>[Score: 85] Microsoft .NET 11 Preview 6が公開され、UIフレームワーク「.NET MAUI」のiOS/AndroidランタイムがMonoからCoreCLRへ完全に移行しました。 / この移行により、iOSとMac Catalystでの実行速度が向上するとされています。 / 開発者は既存アプリケーションの動作確認が推奨されています。 (Source: Publickey)</description>
+      <pubDate>Thu, 23 Jul 2026 18:22:56 +0000</pubDate>
     </item>
     <item>
-      <title>DevGuard AI: SigNoz上に構築された自己監視型マルチエージェントセキュリティパイプライン</title>
-      <link>https://dev.to/akash_b_efd6745c303bb2a81/devguard-ai-a-self-observing-multi-agent-security-pipeline-built-on-signoz-1pn0</link>
-      <guid isPermaLink="false">https://dev.to/akash_b_efd6745c303bb2a81/devguard-ai-a-self-observing-multi-agent-security-pipeline-built-on-signoz-1pn0</guid>
-      <description>[Score: 85] DevGuard AIは、手動コードレビューのコストとAIスキャナーの限界を解決する自律型セキュリティパイプラインです。 / 脆弱性を検出し、パッチを適用し、自己レビューを行い、SigNozを通じて自身の動作をリアルタイムで監視・調整します。 / 複数のエージェントが連携し、OpenTelemetryによる詳細なトレーシングとメトリクスで可視化され、修正の検証ループも含まれます。 (Source: Dev.to)</description>
-      <pubDate>Sat, 25 Jul 2026 22:16:42 +0000</pubDate>
+      <title>企業向けでAIツールで成長率トップはAnthropic、アカウント数が最も多いのはMicrosoft 365。Oktaが調査結果を発表</title>
+      <link>https://www.publickey1.jp/blog/26/aianthropicmicrosoft_365okta.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aianthropicmicrosoft_365okta.html</guid>
+      <description>[Score: 85] Oktaの調査によると、企業向けAIツールの成長率でAnthropicがトップとなり、Microsoft 365が最も多くのアカウント数を保持していることが判明しました。 / この調査は、Oktaのサービスを利用する2万社以上の匿名化されたアクセスデータに基づいています。 / Anthropicは過去4年間で急成長を遂げ、OpenAIやGoogle Workspaceなどを上回る成長率を示しました。 (Source: Publickey)</description>
+      <pubDate>Tue, 21 Jul 2026 13:51:42 +0000</pubDate>
     </item>
     <item>
-      <title>キャンバスでインタラクティブな体験を構築する方法</title>
+      <title>クールダウンの必要性：Dependabotがバージョンアップデート発行前に待機する理由</title>
+      <link>https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</link>
+      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</guid>
+      <description>[Score: 85] Dependabotがバージョンアップデートを自動適用する前に、最低3日間の「クールダウン期間」を設けるようになった。 / これは、悪意のあるパッケージが公開されてすぐに自動更新ツールによって取り込まれるサプライチェーン攻撃を防ぐため。 / この期間により、メンテナーやセキュリティ研究者が悪意のあるバージョンを発見し、取り除く時間を与える。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 23 Jul 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>詳細を他人に任せることは、力を与えることではない</title>
+      <link>https://davidnicholaswilliams.com/its-not-empowering-to-hand-off-the-details/</link>
+      <guid isPermaLink="false">https://davidnicholaswilliams.com/its-not-empowering-to-hand-off-the-details/</guid>
+      <description>[Score: 80] AIへの熱狂の背景には、詳細に踏み込まずに物事を実現したいという願望があるが、現実は詳細から逃れられない。 / 何かを新しく、あるいは良くするためには、深く、細部にまでこだわる必要がある。 / AIをうまく活用するには、まずその分野で自分自身が優れている必要があり、詳細へのこだわりこそが専門知識を育む唯一の方法である。 (Source: Hacker News)</description>
+      <pubDate>Sun, 26 Jul 2026 17:58:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Opus 5では今までのプロンプトが逆効果に。「検証して」を消して「簡潔に」と書くべし。公式プロンプトガイドを読み解く</title>
+      <link>https://zenn.dev/little_hand_s/articles/72646a09f49d2a</link>
+      <guid isPermaLink="false">https://zenn.dev/little_hand_s/articles/72646a09f49d2a</guid>
+      <description>[Score: 80] Claude Opus 5の公式プロンプトガイドが公開され、従来のOpus 4.8向けノウハウが逆効果になる点が指摘されています。 / 特に「検証して」などの指示は過剰検証を招きトークンを無駄にするため削除が推奨され、応答の長さ制御には「簡潔に」と明示的に書くべきとされています。 / Opus 5はデフォルトで思考が有効であり、思考をオフにするのではなくeffortを下げるのが良いとされています。 (Source: Zenn)</description>
+      <pubDate>Sun, 26 Jul 2026 03:40:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>ひとことで、言え。～スライドをAIで作り直したらわかりにくくなった話～</title>
+      <link>https://qiita.com/WdknWdkn/items/ba228da40b5d2fd1b612?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/WdknWdkn/items/ba228da40b5d2fd1b612?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] 筆者がAIを使ってシンプルな社内発表スライドを作り直したところ、情報過多でかえって分かりにくくなった経験を共有しています。 / AIは丁寧な説明を心がけるあまり、読み手に「理解する責任」を負わせる重厚なコンテンツを生成しがちだと指摘します。 / 情報を伝える目的は「行動を変容させること」であり、AI活用においてもその本質を見失わないことの重要性を説いています。 (Source: Qiita)</description>
+      <pubDate>Sat, 25 Jul 2026 11:22:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>人間の目はかわらない、だからJPEGは30年もつ</title>
+      <link>https://speakerdeck.com/yuzneri/ren-jian-nomu-hakawaranai-dakarajpegha30nian-motu</link>
+      <guid isPermaLink="false">https://speakerdeck.com/yuzneri/ren-jian-nomu-hakawaranai-dakarajpegha30nian-motu</guid>
+      <description>[Score: 80] 人間の視覚特性が変わらないため、JPEG形式が30年もの間、広く利用され続けているという考察が示されています。 / これは、技術の進化だけでなく、人間の認知特性がデジタルフォーマットの寿命に影響を与えるという興味深い視点を提供します。 / 画像圧縮技術の設計思想と、その長期的な持続可能性について深く考える機会を与えます。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 25 Jul 2026 03:43:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>MCP仕様が明日アップデート、7月28日版MCPからはステートレスな接続が正式仕様に。GitHub MCPサーバが早くも対応発表</title>
+      <link>https://www.publickey1.jp/blog/26/mcp728mcpgithub_mcp.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/mcp728mcpgithub_mcp.html</guid>
+      <description>[Score: 80] AIツールとサービスを接続するための通信プロトコルMCP（Model Context Protocol）の7月28日版仕様がアップデートされます。 / このアップデートにより、MCPはステートレスな接続を正式にサポートするようになります。 / GitHub MCPサーバも既に対応を発表しており、AI連携の効率化が期待されます。 (Source: Publickey)</description>
+      <pubDate>Sun, 26 Jul 2026 15:06:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>ゼロトラストが実際に機能することを証明する：Entra IDとCloudflare AccessをOIDCおよびSAMLの両方で利用</title>
+      <link>https://dev.to/darkedges/proving-zero-trust-actually-works-entra-id-cloudflare-access-over-both-oidc-and-saml-4f7d</link>
+      <guid isPermaLink="false">https://dev.to/darkedges/proving-zero-trust-actually-works-entra-id-cloudflare-access-over-both-oidc-and-saml-4f7d</guid>
+      <description>[Score: 80] ゼロトラストの実装における一般的な落とし穴（グループメンバーシップ、管理者同意、地域ルールなど）を可視化するデモが紹介されています。 / Microsoft Entra IDとCloudflare AccessをOIDCおよびSAMLの両プロトコルで連携させ、Terraformで完全に管理された環境を構築しています。 / これにより、理論だけでなく、実際の運用で発生しうる認証・認可の失敗モードを具体的に検証できることを示しています。 (Source: Dev.to)</description>
+      <pubDate>Sun, 26 Jul 2026 22:32:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>Canvasesでインタラクティブな体験を構築する方法</title>
       <link>https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases/</guid>
-      <description>[Score: 83] GitHub Copilotアプリに導入された「キャンバス」機能は、開発者とAIエージェントがリアルタイムで共同作業できるインタラクティブな視覚インターフェースです。 / 会話形式では難しいタスク、例えばバックログのトリアージや複雑な情報の可視化、複数ソースからの情報統合などに役立ちます。 / エージェントがキャンバスを更新し、ユーザーはクリックや編集で直接操作でき、Copilotにキャンバスの機能追加や改善を依頼することで継続的に進化させられます。 (Source: GitHub Blog)</description>
+      <description>[Score: 80] GitHub Copilotアプリに「Canvases」という新しいインタラクティブなワークスペース機能が導入された。 / Canvasesは、エージェントとの会話形式では扱いにくいタスクを視覚的に操作・整理できる共有インターフェース。 / 開発者はこのキャンバス上で情報を見える化し、エージェントとリアルタイムで共同作業を行い、タスクを効率的に進めることができる。 (Source: GitHub Blog)</description>
       <pubDate>Tue, 21 Jul 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>リアルタイム市場データにおけるChatGPTとPerplexityのベンチマーク：レイテンシ、精度、ハルシネーション率</title>
-      <link>https://dev.to/olayinka_adejugbe_5eed734/benchmarking-chatgpt-vs-perplexity-on-real-time-market-data-latency-accuracy-and-hallucination-5g79</link>
-      <guid isPermaLink="false">https://dev.to/olayinka_adejugbe_5eed734/benchmarking-chatgpt-vs-perplexity-on-real-time-market-data-latency-accuracy-and-hallucination-5g79</guid>
-      <description>[Score: 82] リアルタイム市場データを用いたChatGPTとPerplexityのベンチマークテストが実施されました。 / Perplexityは高速な情報検索と引用の透明性で優れ、ChatGPTはデータ変換や分析に強みがあることが判明。 / 金融分野でのLLM活用において、それぞれのツールの特性を理解し使い分ける重要性が示されています。 (Source: Dev.to)</description>
-      <pubDate>Sat, 25 Jul 2026 22:33:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>次の章：GitHubのバグバウンティプログラムの再構築</title>
-      <link>https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/</link>
-      <guid isPermaLink="false">https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/</guid>
-      <description>[Score: 82] GitHubがバグバウンティプログラムを再構築し、高品質な脆弱性報告に報いるための変更を発表しました。 / プログラムの混雑緩和と、深刻な研究者にとってより魅力的な体験を提供することを目指しています。 / 特に、高い品質と影響力を持つ研究者向けの永続的なプライベート/招待制VIPプログラムを導入し、より高い報酬と迅速な対応を提供します。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 22 Jul 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>クオンツはテクニカル分析を寄与度分解の中で見ている</title>
-      <link>https://zenn.dev/gamella/articles/7e1af53f19d94d</link>
-      <guid isPermaLink="false">https://zenn.dev/gamella/articles/7e1af53f19d94d</guid>
-      <description>[Score: 80] 生成AIを用いた検証により、テクニカル分析の定番パターンに優位性がないという議論が再燃しました。 / しかし、クオンツの世界ではテクニカル分析を「勝つための道具」ではなく「負けないための道具」として、ポートフォリオの寄与度分解の中でリスク管理に活用していると説明しています。 / Barraモデルなどのリスクモデルを用いて、市場全体や業種、スタイルファクターからリターンを分解し、特異リターンを追求するアプローチが紹介されています。 (Source: Zenn)</description>
-      <pubDate>Sat, 25 Jul 2026 01:46:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Astroで日英ブログを作って分かった5つの実装パターン</title>
-      <link>https://zenn.dev/akari1106/articles/ea85f0a245bb8b</link>
-      <guid isPermaLink="false">https://zenn.dev/akari1106/articles/ea85f0a245bb8b</guid>
-      <description>[Score: 80] Astroを用いた日英バイリンガル技術ブログの実装を通じて得られた5つの汎用的なパターンを紹介。 / クライアントJavaScriptゼロのアイランドアーキテクチャやTypeScript-firstなContent Collectionsの活用が特徴。 / AI時代のコーディングとの相性も良く、静的サイトジェネレータとしてのAstroの利点と実践的な知見を共有。 (Source: Zenn)</description>
-      <pubDate>Thu, 23 Jul 2026 14:15:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>アメリカ企業がAIへの巨額投資を突然停止する決定を下す</title>
-      <link>https://www.reddit.com/r/technology/comments/1v6djg3/corporate_america_has_suddenly_decided_to_stop/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1v6djg3/corporate_america_has_suddenly_decided_to_stop/</guid>
-      <description>[Score: 80] アメリカ企業がAI分野への大規模な投資を急に見直しているとの報道です。 / これまで過熱気味だったAI投資にブレーキがかかり、より慎重な姿勢に転換している可能性があります。 / これはAI市場の成熟、投資対効果の見直し、あるいは経済状況の変化が背景にあると推測されます。 (Source: Reddit)</description>
-      <pubDate>Sat, 25 Jul 2026 16:56:22 +0000</pubDate>
     </item>
   </channel>
 </rss>
