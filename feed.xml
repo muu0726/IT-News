@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 28 Jul 2026 22:54:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 22:56:47 +0000</lastBuildDate>
     <item>
-      <title>【速報】Kimi-K3 を Day0 デプロイ。2.8T モデルは NVIDIA B300 x8 の 1 ノードで動くのか</title>
-      <link>https://zenn.dev/fixstars/articles/kimi-k3-benchmark</link>
-      <guid isPermaLink="false">https://zenn.dev/fixstars/articles/kimi-k3-benchmark</guid>
-      <description>[Score: 95] Moonshot AIが公開した史上最大のオープンウェイトモデルKimi-K3 (2.8Tパラメータ) を、NVIDIA B300 x8シングルノード環境でDay0デプロイし、ベンチマークを実施しました。 / Kimi Delta AttentionとAttention Residualsという独自技術を採用し、SFT段階から量子化認識学習(QAT)を行ったMXFP4ウェイトで提供されます。 / MXFP4ウェイトにより、総パラメータ2.8Tながら約1.57TBのメモリでB300 x8の1ノードに収まり、最上位プロプライエタリモデルに肉薄する性能を発揮することが確認されました。 (Source: Zenn)</description>
-      <pubDate>Mon, 27 Jul 2026 23:19:53 +0000</pubDate>
+      <title>フロンティアラボのエージェント侵入の解剖：2026年7月のインシデントのタイムライン</title>
+      <link>https://huggingface.co/blog/agent-intrusion-technical-timeline</link>
+      <guid isPermaLink="false">https://huggingface.co/blog/agent-intrusion-technical-timeline</guid>
+      <description>[Score: 95] 2026年7月に発生した、自律型AIエージェントによる侵入事件の詳細な技術的タイムラインを解説しています。 / 攻撃はOpenAIモデルを組み合わせたAIエージェントによって実行され、初期アクセスから横方向への移動までを自動化された数千の決定で行われました。 / この詳細な公開は、フロンティアエージェントの新たな攻撃能力と、防御側がどのように備えるべきかを明らかにすることを目的としています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 28 Jul 2026 20:28:33 +0000</pubDate>
     </item>
     <item>
-      <title>「最後に検証して」はもう書かなくていい — Claude Opus 5 でプロンプトの常識が逆転した4つのこと</title>
-      <link>https://qiita.com/jqit_suwa/items/74a96ce83dde5245407a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/jqit_suwa/items/74a96ce83dde5245407a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 95] Claude Opus 5では、従来のプロンプトエンジニアリングの常識が覆され、「最後に検証して」といった指示が逆効果になることを解説。 / モデルが賢くなり自己検証を自動で行うため、余計な指示はトークン消費と待ち時間を増やすだけであり、削除が推奨される。 / サブエージェントへの委譲指示も同様に、モデルが自律的に判断するため、過度な指示は非効率を招く。 (Source: Qiita)</description>
-      <pubDate>Tue, 28 Jul 2026 04:08:47 +0000</pubDate>
+      <title>深刻度「緊急」のRails脆弱性「KindaRails2Shell」（CVE-2026-66066）の概要と対応指針</title>
+      <link>https://blog.flatt.tech/entry/kindarails2shell_rails</link>
+      <guid isPermaLink="false">https://blog.flatt.tech/entry/kindarails2shell_rails</guid>
+      <description>[Score: 95] Ruby on Railsに認証不要でリモートからの任意コード実行（RCE）につながる深刻度「緊急」の脆弱性「CVE-2026-66066」が発見され、修正版が公開されました。 / 本脆弱性はGMO Flatt SecurityとEthiackのチームによって独立に発見され、一般的なRails構成でRCEが可能と結論付けられています。 / 影響を受けるRailsアプリケーションは、Active Storageを使用している場合、速やかに修正版へのアップデートが強く推奨されます。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 29 Jul 2026 15:19:18 +0000</pubDate>
     </item>
     <item>
-      <title>Google Cloud、AIが自律的にコードの脆弱性検出からサンドボックス内でのリスク検証、修正までを自動実行。「CodeMender」プレビュー公開</title>
-      <link>https://www.publickey1.jp/blog/26/google_cloudaicodemender.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaicodemender.html</guid>
-      <description>[Score: 95] Google Cloudが、AIエージェント「CodeMender」のプレビュー公開を発表しました。 / CodeMenderは、コードの脆弱性検出、サンドボックス内でのリスク検証、そして修正コードの自動生成までを一貫して自律的に実行します。 / これにより、複雑な脆弱性の見落としを防ぎ、セキュリティ担当者や開発者の負担を大幅に軽減することが期待されます。 (Source: Publickey)</description>
-      <pubDate>Tue, 28 Jul 2026 15:54:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>Kimi K3 アーキテクチャ概要と考察</title>
-      <link>https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html</link>
-      <guid isPermaLink="false">https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html</guid>
-      <description>[Score: 90] Kimi K3は、昨年リリースされたKimi Linearモデルを48Bから2.8Tにスケールアップした、現在最大のオープンウェイトモデルです。 / LatentMoEやKimi Delta Attentionなどの新コンポーネントを導入し、推論効率の向上と残差パスの改善に焦点を当てています。 / Nemotron 3 UltraやDeepSeek V4など、他の大規模モデルのトレンドとも共通する効率化の方向性を示しています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 28 Jul 2026 15:48:34 +0000</pubDate>
+      <title>Show HN: どんなMシリーズMacでもGemma 4 26Bを2GB RAMで動かすオープンソースエンジン</title>
+      <link>https://github.com/drumih/turbo-fieldfare</link>
+      <guid isPermaLink="false">https://github.com/drumih/turbo-fieldfare</guid>
+      <description>[Score: 90] TurboFieldfareは、Apple Silicon搭載MacでGoogleのGemma 4 26B-A4Bモデルをわずか2GBのRAMで実行できるオープンソースエンジンです。 / モデル全体をメモリにロードせず、必要な部分をSSDからストリーミングすることで、8GB RAMのMacでも大規模モデルの推論を可能にします。 / SwiftとMetalで実装されており、メモリ制約のある環境でのLLM利用に大きな進歩をもたらします。 (Source: Hacker News)</description>
+      <pubDate>Wed, 29 Jul 2026 15:05:43 +0000</pubDate>
     </item>
     <item>
       <title>Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた</title>
       <link>https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] Mac mini（M4 Pro / メモリ48GB）を用いて、完全ローカルでLLMとRAG環境を構築する手順を解説。 / クラウドAIサービスの懸念を解決するため、OllamaとLlamaIndexを使い、Apple Siliconのユニファイドメモリの利点を活用。 / 14B〜32Bの高品質モデルと埋め込みモデルを同居させ、情報漏洩リスクなく無料で検証できる環境を実現。 (Source: Qiita)</description>
+      <description>[Score: 90] Mac mini（M4 Pro / 48GB）とApple Siliconのユニファイドメモリを活用し、完全ローカルでLLMとRAG環境を構築する手順を解説。 / クラウドAIサービスの懸念を解消し、情報漏洩リスクなく無料で検証できる環境のメリットを強調。 / OllamaとLlamaIndexを用いて、生成モデルと埋め込みモデルを動かす具体的な設定方法が示されている。 (Source: Qiita)</description>
       <pubDate>Mon, 27 Jul 2026 04:22:48 +0000</pubDate>
     </item>
     <item>
-      <title>ヤモリの足裏を科学した米軍の装備、粘着剤なしで垂直壁を走る驚異の技術</title>
-      <link>https://forbesjapan.com/articles/detail/101739</link>
-      <guid isPermaLink="false">https://forbesjapan.com/articles/detail/101739</guid>
-      <description>[Score: 90] 米国防高等研究計画局（DARPA）が、ヤモリの足裏の構造を模倣した「Z-Man」プログラムの成果を公開しました。 / この技術は、粘着剤なしで垂直なガラス壁を登れる接着パドルを開発したもので、ファンデルワールス力という分子間相互作用を利用しています。 / ヤモリの足裏にある微細な毛（セタ、スパチュラ）が多数の接触点を作り出し、大きな接着力を生み出す生物模倣技術の驚異的な応用例です。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 28 Jul 2026 09:34:23 +0000</pubDate>
+      <title>Google Cloud、AIが自律的にコードの脆弱性検出からサンドボックス内でのリスク検証、修正までを自動実行。「CodeMender」プレビュー公開</title>
+      <link>https://www.publickey1.jp/blog/26/google_cloudaicodemender.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaicodemender.html</guid>
+      <description>[Score: 90] Google Cloudが、AIエージェント「CodeMender」のプレビュー公開を発表しました。これはコードの脆弱性検出、リスク検証、修正までを自律的に実行します。 / CodeMenderは、従来の静的解析では見落とされがちな複雑な脆弱性（メモリ破壊、インジェクション、Webセキュリティ問題など）も検出可能です。 / 検出された脆弱性に対してサンドボックス内でエクスプロイトコードを作成・実行してリスクを検証し、誤検知を排除した上で修正コードも自動生成します。 (Source: Publickey)</description>
+      <pubDate>Tue, 28 Jul 2026 15:54:06 +0000</pubDate>
     </item>
     <item>
       <title>npmとGitHub Actionsにおけるサプライチェーン攻撃の阻止</title>
       <link>https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</link>
       <guid isPermaLink="false">https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</guid>
-      <description>[Score: 90] npmとGitHub Actionsを標的としたサプライチェーン攻撃のパターンと、それに対抗するためのGitHubの取り組みを解説しています。 / 攻撃はパッケージリポジトリやCI/CDシステムの脆弱性を悪用し、マルウェアを広範囲に拡散させます。 / GitHubは、攻撃チェーンの最も影響の大きいリンクを断ち切るための複数の改善策を実装し、セキュリティ強化を進めています。 (Source: GitHub Blog)</description>
+      <description>[Score: 90] 近年、パッケージリポジトリやCI/CDシステムを標的としたサプライチェーン攻撃が急増し、マルウェアがオープンソースプロジェクトに拡散しています。 / GitHubは、これらの攻撃を阻止するため、npmとGitHub Actionsに複数の改善策を導入したことを報告しています。 / 攻撃の初期アクセス、権限昇格、拡散といった共通の手法を断ち切るための包括的なアプローチが取られており、セキュリティ研究コミュニティとの連携も強調されています。 (Source: GitHub Blog)</description>
       <pubDate>Tue, 28 Jul 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>KAMEをオープンモデルで動かしてMT-Benchでベンチマーク評価した</title>
-      <link>https://zenn.dev/fixstars/articles/kame-benchmark</link>
-      <guid isPermaLink="false">https://zenn.dev/fixstars/articles/kame-benchmark</guid>
-      <description>[Score: 88] Sakana AIの音声対話モデルKAMEをオープンモデルで動作するように改造し、MT-Benchでベンチマーク評価を実施しました。 / KAMEは低遅延なSTSモデルと高精度なテキストLLMをハイブリッドで組み合わせ、STSの速度とカスケード型の精度を両立するモデルです。 / バックエンドLLMにツールコールを渡し、リアルタイム情報を扱えるか試行することで、コールセンターなどでの実用性向上を目指しています。 (Source: Zenn)</description>
-      <pubDate>Mon, 27 Jul 2026 09:56:48 +0000</pubDate>
+      <title>自作APIをChatGPTからアクセス可能にする「Super MCP」</title>
+      <link>https://zenn.dev/reizt/articles/super-mcp-chatgpt</link>
+      <guid isPermaLink="false">https://zenn.dev/reizt/articles/super-mcp-chatgpt</guid>
+      <description>[Score: 88] ChatGPTから自作APIを簡単に利用できるようにする個人用基盤「Super MCP」を紹介しています。 / APIごとに必要だったChatGPTとの接続や認証ロジックの重複実装を解消し、OpenAPIからコマンドを生成して一元的に管理する仕組みです。 / Cloudflare上で構築されており、Webコンソール、MCP endpoint、Worker、D1で構成され、食事記録やトレーニング履歴APIとの連携事例が示されています。 (Source: Zenn)</description>
+      <pubDate>Wed, 29 Jul 2026 00:00:05 +0000</pubDate>
     </item>
     <item>
-      <title>クールダウンの必要性：Dependabotがバージョン更新前に待機する理由</title>
-      <link>https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</guid>
-      <description>[Score: 88] Dependabotがバージョン更新をすぐに適用せず、数日間の「クールダウン」期間を設けるようになった理由を説明しています。 / 悪意のあるパッケージが公開された際に、自動更新ツールが即座にそれを導入してしまうサプライチェーン攻撃のリスクを軽減するためです。 / この待機期間により、メンテナーやセキュリティ研究者が悪意のあるバージョンを発見し、対処する時間を与え、セキュリティを向上させます。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 23 Jul 2026 16:00:00 +0000</pubDate>
+      <title>Vision Proの最もクールな使い方</title>
+      <link>https://christianselig.com/2026/07/vision-pro-house/</link>
+      <guid isPermaLink="false">https://christianselig.com/2026/07/vision-pro-house/</guid>
+      <description>[Score: 85] Vision Proを使って新築の家の設計を仮想現実で体験し、間取りや空間の感覚を掴む画期的な方法が紹介されています。 / 従来のPDF図面では難しかったスケール感をVRでリアルに確認することで、後悔のない意思決定を支援します。 / 特にプログラマーの視点から、ソフトウェア開発のように試行錯誤できる点が強調されています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 29 Jul 2026 20:39:40 +0000</pubDate>
     </item>
     <item>
-      <title>OpenAIがCodex Securityをオープンソース化</title>
-      <link>https://github.com/openai/codex-security</link>
-      <guid isPermaLink="false">https://github.com/openai/codex-security</guid>
-      <description>[Score: 85] OpenAIがコードのセキュリティ脆弱性を発見、検証、修正するためのCLIおよびTypeScript SDKであるCodex Securityをオープンソース化しました。 / これはリポジトリのスキャン、変更のレビュー、経時的な発見の追跡、CIでのセキュリティチェック実行を可能にします。 / Node.js 22以降、Python 3.10以降、およびCodex Securityへのアクセスが必要です。 (Source: Hacker News)</description>
-      <pubDate>Tue, 28 Jul 2026 20:52:55 +0000</pubDate>
+      <title>OpenTelemetry初心者がCollectorの中身を全部分解して理解してみた</title>
+      <link>https://zenn.dev/macnica_englab/articles/154cc03e82d7e3</link>
+      <guid isPermaLink="false">https://zenn.dev/macnica_englab/articles/154cc03e82d7e3</guid>
+      <description>[Score: 85] OpenTelemetry Collectorを単なるデータ転送ツールではなく、オブザーバビリティを成立させるためのデータ加工基盤として解説しています。 / Kubernetes環境での実検証に基づき、Collectorの主要コンポーネントであるReceiver、Processor、Exporter、Pipelineの役割を詳細に分解して理解を深めます。 / 特にログ収集におけるReceiverの重要性や、Collectorが役割ごとに複数配置される可能性など、初心者が見落としがちなポイントを具体的に説明しています。 (Source: Zenn)</description>
+      <pubDate>Wed, 29 Jul 2026 02:21:19 +0000</pubDate>
     </item>
     <item>
-      <title>Agentic RLではtool callを含むtrajectoryをどう学習するのか</title>
-      <link>https://zenn.dev/takkuhiro/articles/agentic-rl-trajectory-mechanics</link>
-      <guid isPermaLink="false">https://zenn.dev/takkuhiro/articles/agentic-rl-trajectory-mechanics</guid>
-      <description>[Score: 85] Agentic RLは、tool callを含むエージェントの長い対話（trajectory）全体を学習信号に変換し、モデルの重みを更新する仕組みを解説しています。 / 単一応答の強化学習とは異なり、思考・ツール呼び出し・実行結果の連鎖を評価し、Group Relative Policy Optimization (GRPO) を用いて相対的な良し悪しでモデルを更新します。 / 正解のtrajectoryは不要で、用意するのはプロンプト、モデル、採点メカニズムの3つであり、報酬関数は勾配を通さないため柔軟な評価が可能です。 (Source: Zenn)</description>
-      <pubDate>Mon, 27 Jul 2026 22:00:05 +0000</pubDate>
+      <title>AI時代に感じた危機感と、エンジニアがこれから考えるべきこと</title>
+      <link>https://zenn.dev/nabewata/articles/8cef1bd4cbae3f</link>
+      <guid isPermaLink="false">https://zenn.dev/nabewata/articles/8cef1bd4cbae3f</guid>
+      <description>[Score: 85] AIツールで作成されたPoCが「見た目8割」の完成度を持つ一方で、本番システムに必要な「見えない9割」の実装量とのギャップがエンジニアの評価を難しくしていると指摘。 / このギャップはシステム規模に比例して拡大するため、着手前にPoCと本番化の差分を明文化し、内部品質の作業も可視化することが重要だと提言。 / AI時代におけるエンジニアの役割と評価のされ方について、具体的な対策とともに考察している。 (Source: Zenn)</description>
+      <pubDate>Tue, 28 Jul 2026 12:24:59 +0000</pubDate>
     </item>
     <item>
-      <title>「経験がないから」を言い訳にしなくていい時代になった</title>
-      <link>https://qiita.com/sumomoo/items/122f9a34360e256bf042?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/sumomoo/items/122f9a34360e256bf042?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AIコーディングツールを活用することで、経験が少ないエンジニアでも短期間で大規模なサービスを開発できる時代になったと指摘。 / 米国の高校生がAIツールを駆使して開発したアプリが大手企業に買収された事例を紹介し、その可能性を提示。 / 技術力だけでなく、「課題解決力」「AIツール活用経験」「適切なチャネルで届ける力」が重要であると強調。 (Source: Qiita)</description>
-      <pubDate>Mon, 27 Jul 2026 08:09:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>「Xが情報収集に役立たない……」熊本地震で不満の声続出　「Twitterを返して」</title>
-      <link>https://www.itmedia.co.jp/news/article/2607/28/2000000249/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2607/28/2000000249/</guid>
-      <description>[Score: 85] 令和8年熊本地震発生時、SNS「X」が災害時の情報収集ツールとして機能しないとの不満が多数上がりました。 / 「おすすめ」欄に災害関連情報が流れず、偽情報が溢れる状況にユーザーは「Twitter時代を返して」と訴えています。 / X社の収益最大化を目的とした変更が、災害時の公共性との相性の悪さを露呈し、総務省もプラットフォーム事業者に注意喚起しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 28 Jul 2026 13:20:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>データベース「PostgreSQL」がどのように実際には内部で動いているかがシムシティっぽい3Dでわかる「PGSimCity」</title>
-      <link>https://gigazine.net/news/20260728-pgsimcity-postgresql/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20260728-pgsimcity-postgresql/</guid>
-      <description>[Score: 85] PostgreSQLの内部動作をシムシティのような3D都市で可視化するウェブアプリ「PGSimCity」が公開されました。 / 接続、バックエンドプロセス割り当て、SQL実行計画、共有バッファキャッシュなど、複雑な内部構造を直感的に理解できます。 / 開発者や学習者がPostgreSQLの仕組みを深く学ぶのに役立つ画期的なツールです。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 28 Jul 2026 11:29:10 +0000</pubDate>
+      <title>世界を席巻する中国の人型ロボット、米国が輸入を禁止　「容認できない」安保リスク</title>
+      <link>https://www.cnn.co.jp/business/35251078.html</link>
+      <guid isPermaLink="false">https://www.cnn.co.jp/business/35251078.html</guid>
+      <description>[Score: 85] 米国政府は、国家安全保障上のリスクを理由に、中国製の人型ロボットや四足歩行ロボット、再生可能エネルギー関連機器の輸入を禁止しました。 / この措置は、先端技術やAI分野での米中覇権争いが激化する中、米国の国内産業とサプライチェーン保護を目的としています。 / 中国は人型ロボット市場で世界の9割を占め、米国は最大の輸出市場でしたが、中国メーカーは欧州市場へのシフトを視野に入れており、全体的な影響は限定的と見られています。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 29 Jul 2026 08:36:08 +0000</pubDate>
     </item>
     <item>
       <title>Vercel、TypeScriptをC言語に変換してからネイティブな実行ファイルにコンパイルする「scriptc」、オープンソースで公開</title>
       <link>https://www.publickey1.jp/blog/26/verceltypescriptcscriptc.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/verceltypescriptcscriptc.html</guid>
-      <description>[Score: 85] Vercelが、TypeScriptコードをC言語に変換し、その後ネイティブな実行ファイルにコンパイルするコンパイラ「scriptc」をオープンソースで公開しました。 / 既存のNode.jsやDeno、Bunの機能がランタイムをパッケージングするのに対し、scriptcはTypeScriptコード自体をネイティブバイナリに変換します。 / これにより、JavaScriptランタイムに依存しない、コンパクトで高速な実行可能なバイナリが生成されます。 (Source: Publickey)</description>
+      <description>[Score: 85] Vercelが、TypeScriptコードをC言語に変換し、ネイティブな実行ファイルにコンパイルするツール「scriptc」をオープンソースで公開した。 / 既存のNode.jsやDeno、Bunの機能とは異なり、JavaScriptランタイムに依存しないコンパクトで高速なバイナリを生成する。 / TypeScriptをTyped IR経由でC言語に変換し、clangでコンパイルすることで、真のネイティブバイナリを実現する。 (Source: Publickey)</description>
       <pubDate>Mon, 27 Jul 2026 15:20:00 +0000</pubDate>
     </item>
     <item>
-      <title>AgentENV: 大規模AIエージェント向け分散ランタイム（オープンソース、Rust）</title>
-      <link>https://dev.to/manoir_yantai_f22f01340f0/agentenv-distributed-runtime-for-ai-agents-at-scale-open-source-rust-457d</link>
-      <guid isPermaLink="false">https://dev.to/manoir_yantai_f22f01340f0/agentenv-distributed-runtime-for-ai-agents-at-scale-open-source-rust-457d</guid>
-      <description>[Score: 85] AgentENVは、Rustベースのオープンソース分散プラットフォームで、AIエージェントを大規模に実行するために設計されています。 / 多くのエージェントフレームワークが単一プロセスであるのに対し、FirecrackerマイクロVMを使用してエージェントを分散化します。 / Kimi K3の強化学習トレーニングを支えており、スケーラブルなAIエージェント開発に貢献します。 (Source: Dev.to)</description>
-      <pubDate>Tue, 28 Jul 2026 22:09:39 +0000</pubDate>
+      <title>クールダウンの必要性：Dependabotがバージョン更新の発行前に待機する理由</title>
+      <link>https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</link>
+      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</guid>
+      <description>[Score: 85] サプライチェーン攻撃の増加を受け、Dependabotがバージョン更新のプルリクエスト発行前に数日間の待機期間を導入しました。 / これにより、悪意のあるバージョンが自動的に取り込まれる前に、人間やスキャナーが検知する時間を与え、セキュリティリスクを低減します。 / ユーザーはdependabot.ymlでクールダウン期間を自由に設定できます。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 23 Jul 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Copilot vs. 生のAPIアクセス: 実際に何に料金を支払っているのか？</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/</guid>
-      <description>[Score: 85] GitHub CopilotとAIモデルへの生のAPIアクセスとの違いを解説。 / Copilotは、エディタ、リポジトリ、ターミナルなど開発ワークフロー全体にAIを統合し、単なるモデル呼び出し以上の価値を提供。 / 料金体系にはGitHub AIクレジットが含まれ、ワークフロー全体をカバーするシステム利用料が含まれることを強調。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 22 Jul 2026 19:00:00 +0000</pubDate>
+      <title>NVIDIA DGX Spark でソフトウェア開発に最適な Gemma 4 モデルを検証する (31B vs 26B)</title>
+      <link>https://zenn.dev/st_little/articles/gemma4-benchmark-dgx-spark</link>
+      <guid isPermaLink="false">https://zenn.dev/st_little/articles/gemma4-benchmark-dgx-spark</guid>
+      <description>[Score: 82] NVIDIA DGX Spark環境において、ソフトウェア開発に最適なGemma 4モデル（31Bと26B）を比較検証したベンチマーク記事です。 / NeMo Evaluatorを用いて、コーディング能力と論理的推論能力というソフトウェア開発における主要タスクを評価しています。 / モデルの選定やLLMの性能評価に関心のある開発者にとって、具体的なデータと検証方法を提供する内容です。 (Source: Zenn)</description>
+      <pubDate>Tue, 28 Jul 2026 13:56:04 +0000</pubDate>
     </item>
     <item>
-      <title>内部情報分解によるマルチモーダルAIのセキュリティ確保</title>
-      <link>https://arxiv.org/abs/2607.21600</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2607.21600</guid>
-      <description>[Score: 82] マルチモーダルAIシステムのセキュリティを強化するための新しいアプローチを提案。 / 内部情報分解という手法を用いて、AIモデルの脆弱性を特定し軽減することを目指す。 / 複数のデータ形式を扱うAIの信頼性と安全性を向上させる研究。 (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 28 Jul 2026 04:00:00 +0000</pubDate>
+      <title>Kimi K3-256k</title>
+      <link>https://www.kimi.com/code/docs/en/kimi-code/models</link>
+      <guid isPermaLink="false">https://www.kimi.com/code/docs/en/kimi-code/models</guid>
+      <description>[Score: 80] Kimi Codeが新しいモデル「Kimi K3-256k」を発表しました。これは256kのコンテキストウィンドウを持ち、従来のK3 (1M) と同等の結果をより少ないクォータで提供します。 / 日常的なQ&amp;A、コード補完、ルーティンな機能開発、単一ファイルまたは小規模ファイルの編集に最適化されています。 / モデル間の切り替えに関する注意点も説明されており、特に動画入力の非サポートやコンテキストの圧縮について言及されています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 29 Jul 2026 19:25:33 +0000</pubDate>
     </item>
     <item>
-      <title>AnthropicがHAWK-256に対する実用的な鍵回復攻撃を発表</title>
-      <link>https://github.com/anthropics/cryptography-research-demo</link>
-      <guid isPermaLink="false">https://github.com/anthropics/cryptography-research-demo</guid>
-      <description>[Score: 80] AnthropicがHAWK-256暗号に対する実用的な鍵回復攻撃に関する研究成果を公開しました。 / これは関連する論文に付随する暗号解析コードであり、3つの独立したコンポーネントで構成されています。 / 研究成果物であり、メンテナンスや貢献は受け付けていませんが、暗号技術の安全性評価に重要な情報を提供します。 (Source: Hacker News)</description>
-      <pubDate>Tue, 28 Jul 2026 21:22:48 +0000</pubDate>
+      <title>「経験がないから」を言い訳にしなくていい時代になった</title>
+      <link>https://qiita.com/sumomoo/items/122f9a34360e256bf042?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/sumomoo/items/122f9a34360e256bf042?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] AIコーディングツールの活用により、エンジニアとしての長年の経験がなくても、短期間で大規模なサービスを開発し成功させることが可能になったと指摘。 / 米国の17歳高校生がAIツールで開発したアプリ「Cal AI」が大手企業に買収された事例を紹介し、AIが開発の前提を大きく変えたことを強調。 / 技術力だけでなく「課題解決力」「AIツール活用経験」「適切なチャネルで届ける力」が重要になり、個人開発の可能性が広がったと解説している。 (Source: Qiita)</description>
+      <pubDate>Mon, 27 Jul 2026 08:09:33 +0000</pubDate>
     </item>
     <item>
-      <title>ステージング環境をセルフサービス化しチームの開発速度を向上させた方法</title>
-      <link>https://zenn.dev/fusic/articles/83c6b9a1e7c7d0</link>
-      <guid isPermaLink="false">https://zenn.dev/fusic/articles/83c6b9a1e7c7d0</guid>
-      <description>[Score: 80] AIを活用した開発によりPRがスタックする問題に対し、ステージング環境のセルフサービス化とラベル操作による自動デプロイを導入しました。 / GitHubのラベルを貼るだけでPRの内容がステージング環境にデプロイされ、Slack通知で利用状況を可視化することで、開発者の負担とコミュニケーションコストを削減します。 / stagingブランチを廃止し、mainブランチへの集約を可能にするなど、開発フロー全体の効率化と生産性向上を実現しました。 (Source: Zenn)</description>
-      <pubDate>Mon, 27 Jul 2026 09:46:14 +0000</pubDate>
+      <title>現役Appleマップエンジニアが書いた日本の住所表記のやばさを指摘する「ヤバい日本の住所」が出版</title>
+      <link>https://www.macotakara.jp/etc/book/entry-51535.html</link>
+      <guid isPermaLink="false">https://www.macotakara.jp/etc/book/entry-51535.html</guid>
+      <description>[Score: 80] 現役Appleマップエンジニアの河合太郎氏による書籍「ヤバい日本の住所」が出版され、日本の住所表記の複雑さが話題となっています。 / 河野デジタル大臣のAI活用発言をきっかけに、地図業界で日本の住所表記の曖昧さと地図への紐付けの難しさが改めて問題提起されました。 / この書籍は、IT技術、特に地図サービス開発における日本の住所データの扱いの困難さを一般に理解させるものです。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 29 Jul 2026 07:52:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>KubernetesはAIを動かすプラットフォームに。横浜でKubeCon＋CloudNativeCon Japan 2026が開幕</title>
+      <link>https://www.publickey1.jp/blog/26/kubernetesaikubeconcloudnativecon_japan_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/kubernetesaikubeconcloudnativecon_japan_2026.html</guid>
+      <description>[Score: 80] クラウドネイティブ技術の最大イベント「KubeCon+CloudNativeCon Japan 2026」が横浜で開幕し、CNCFのCTOらが基調講演を行いました。 / CNCFがホストするオープンソースプロジェクトは230以上、クラウドネイティブ関連開発者は世界で2000万人近くに増加していることが報告されました。 / AIワークロード、特に推論のワークロードの拡大が課題として挙げられ、2030年には現在の全計算ワークロードを上回る膨大な推論ワークロードが求められると予測されています。 (Source: Publickey)</description>
+      <pubDate>Wed, 29 Jul 2026 15:02:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>1999年のように取引するのをやめよう — Python 3.13で自律型、視覚対応の暗号ボットを構築した</title>
+      <link>https://dev.to/qrak/-stop-trading-like-its-1999-an-llm-crypto-bot-that-sees-charts-remembers-trades-and-learns-1cd1</link>
+      <guid isPermaLink="false">https://dev.to/qrak/-stop-trading-like-its-1999-an-llm-crypto-bot-that-sees-charts-remembers-trades-and-learns-1cd1</guid>
+      <description>[Score: 80] 筆者は、従来のLLMベースの取引ボットがチャートを「見て」いないことによる失敗を経験した。 / 77本の論文を研究し、LLMが市場を理解しても実際の取引実行には課題があることを発見。 / Python 3.13を使用し、チャートの視覚認識能力と取引履歴の記憶、学習機能を備えた自律型暗号ボットを構築した。 (Source: Dev.to)</description>
+      <pubDate>Wed, 29 Jul 2026 22:22:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dependabotを飼いならす：更新をグループ化し、頻度を減らし、セキュリティを迅速に保つ</title>
+      <link>https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/</link>
+      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/</guid>
+      <description>[Score: 80] 頻繁なDependabotのプルリクエストがノイズとなり、重要な更新が見過ごされる問題が指摘されています。 / 本記事では、Dependabotの設定を調整し、更新をグループ化して頻度を減らすことで、この問題を解決する方法を解説しています。 / これにより、日常的なメンテナンスの負担を軽減しつつ、セキュリティ関連の重要な更新は迅速に処理できる効率的なワークフローを構築できます。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 29 Jul 2026 16:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
