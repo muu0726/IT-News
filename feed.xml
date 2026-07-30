@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 29 Jul 2026 22:56:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 23:01:00 +0000</lastBuildDate>
     <item>
-      <title>フロンティアラボのエージェント侵入の解剖：2026年7月のインシデントのタイムライン</title>
-      <link>https://huggingface.co/blog/agent-intrusion-technical-timeline</link>
-      <guid isPermaLink="false">https://huggingface.co/blog/agent-intrusion-technical-timeline</guid>
-      <description>[Score: 95] 2026年7月に発生した、自律型AIエージェントによる侵入事件の詳細な技術的タイムラインを解説しています。 / 攻撃はOpenAIモデルを組み合わせたAIエージェントによって実行され、初期アクセスから横方向への移動までを自動化された数千の決定で行われました。 / この詳細な公開は、フロンティアエージェントの新たな攻撃能力と、防御側がどのように備えるべきかを明らかにすることを目的としています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 28 Jul 2026 20:28:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>深刻度「緊急」のRails脆弱性「KindaRails2Shell」（CVE-2026-66066）の概要と対応指針</title>
-      <link>https://blog.flatt.tech/entry/kindarails2shell_rails</link>
-      <guid isPermaLink="false">https://blog.flatt.tech/entry/kindarails2shell_rails</guid>
-      <description>[Score: 95] Ruby on Railsに認証不要でリモートからの任意コード実行（RCE）につながる深刻度「緊急」の脆弱性「CVE-2026-66066」が発見され、修正版が公開されました。 / 本脆弱性はGMO Flatt SecurityとEthiackのチームによって独立に発見され、一般的なRails構成でRCEが可能と結論付けられています。 / 影響を受けるRailsアプリケーションは、Active Storageを使用している場合、速やかに修正版へのアップデートが強く推奨されます。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 29 Jul 2026 15:19:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>Show HN: どんなMシリーズMacでもGemma 4 26Bを2GB RAMで動かすオープンソースエンジン</title>
-      <link>https://github.com/drumih/turbo-fieldfare</link>
-      <guid isPermaLink="false">https://github.com/drumih/turbo-fieldfare</guid>
-      <description>[Score: 90] TurboFieldfareは、Apple Silicon搭載MacでGoogleのGemma 4 26B-A4Bモデルをわずか2GBのRAMで実行できるオープンソースエンジンです。 / モデル全体をメモリにロードせず、必要な部分をSSDからストリーミングすることで、8GB RAMのMacでも大規模モデルの推論を可能にします。 / SwiftとMetalで実装されており、メモリ制約のある環境でのLLM利用に大きな進歩をもたらします。 (Source: Hacker News)</description>
-      <pubDate>Wed, 29 Jul 2026 15:05:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた</title>
-      <link>https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] Mac mini（M4 Pro / 48GB）とApple Siliconのユニファイドメモリを活用し、完全ローカルでLLMとRAG環境を構築する手順を解説。 / クラウドAIサービスの懸念を解消し、情報漏洩リスクなく無料で検証できる環境のメリットを強調。 / OllamaとLlamaIndexを用いて、生成モデルと埋め込みモデルを動かす具体的な設定方法が示されている。 (Source: Qiita)</description>
-      <pubDate>Mon, 27 Jul 2026 04:22:48 +0000</pubDate>
+      <title>Gemini Robotics 2がロボットに全身知能をもたらす</title>
+      <link>https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/</link>
+      <guid isPermaLink="false">https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/</guid>
+      <description>[Score: 95] Google DeepMindが「Gemini Robotics 2」を発表し、ロボットが全身知能、高度な器用さ、複数ロボット連携を実現できるようになります。 / これにより、ロボットは複雑なタスクを自律的に学習・適応し、予測不能な環境でも安全に作業を完了できるようになります。 / 人型ロボットが歩行、かがむ、物を操作するなどの多様な動きをこなし、他のロボットと協力して作業を効率化する可能性を秘めています。 (Source: Hacker News)</description>
+      <pubDate>Thu, 30 Jul 2026 15:15:48 +0000</pubDate>
     </item>
     <item>
       <title>Google Cloud、AIが自律的にコードの脆弱性検出からサンドボックス内でのリスク検証、修正までを自動実行。「CodeMender」プレビュー公開</title>
       <link>https://www.publickey1.jp/blog/26/google_cloudaicodemender.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaicodemender.html</guid>
-      <description>[Score: 90] Google Cloudが、AIエージェント「CodeMender」のプレビュー公開を発表しました。これはコードの脆弱性検出、リスク検証、修正までを自律的に実行します。 / CodeMenderは、従来の静的解析では見落とされがちな複雑な脆弱性（メモリ破壊、インジェクション、Webセキュリティ問題など）も検出可能です。 / 検出された脆弱性に対してサンドボックス内でエクスプロイトコードを作成・実行してリスクを検証し、誤検知を排除した上で修正コードも自動生成します。 (Source: Publickey)</description>
+      <description>[Score: 95] Google Cloudが、AIがコードの脆弱性検出、サンドボックス内でのリスク検証、修正までを自律的に実行する「CodeMender」のプレビューを公開しました。 / 静的解析では見落とされがちな複雑な脆弱性も発見し、C/C++、Go、Javaなど多様な言語をサポートします。 / サンドボックス内でエクスプロイトコードを実行して誤検知を排除し、セキュリティ担当者や開発者の負担を大幅に軽減します。 (Source: Publickey)</description>
       <pubDate>Tue, 28 Jul 2026 15:54:06 +0000</pubDate>
     </item>
     <item>
-      <title>npmとGitHub Actionsにおけるサプライチェーン攻撃の阻止</title>
-      <link>https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</guid>
-      <description>[Score: 90] 近年、パッケージリポジトリやCI/CDシステムを標的としたサプライチェーン攻撃が急増し、マルウェアがオープンソースプロジェクトに拡散しています。 / GitHubは、これらの攻撃を阻止するため、npmとGitHub Actionsに複数の改善策を導入したことを報告しています。 / 攻撃の初期アクセス、権限昇格、拡散といった共通の手法を断ち切るための包括的なアプローチが取られており、セキュリティ研究コミュニティとの連携も強調されています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 28 Jul 2026 16:00:00 +0000</pubDate>
+      <title>GitHubでスタックされたプルリクエストが利用可能に</title>
+      <link>https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/</link>
+      <guid isPermaLink="false">https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/</guid>
+      <description>[Score: 90] GitHubが「Stacked Pull Requests」の公開プレビューを開始しました。 / これにより、大規模な変更を小さなプルリクエストの連続として扱い、個別にレビュー・チェックし、一括でマージできるようになります。 / レビューの効率化と開発ワークフローの改善が期待され、Next.jsやjQueryの開発者からも高評価を得ています。 (Source: Hacker News)</description>
+      <pubDate>Thu, 30 Jul 2026 16:26:16 +0000</pubDate>
     </item>
     <item>
-      <title>自作APIをChatGPTからアクセス可能にする「Super MCP」</title>
-      <link>https://zenn.dev/reizt/articles/super-mcp-chatgpt</link>
-      <guid isPermaLink="false">https://zenn.dev/reizt/articles/super-mcp-chatgpt</guid>
-      <description>[Score: 88] ChatGPTから自作APIを簡単に利用できるようにする個人用基盤「Super MCP」を紹介しています。 / APIごとに必要だったChatGPTとの接続や認証ロジックの重複実装を解消し、OpenAPIからコマンドを生成して一元的に管理する仕組みです。 / Cloudflare上で構築されており、Webコンソール、MCP endpoint、Worker、D1で構成され、食事記録やトレーニング履歴APIとの連携事例が示されています。 (Source: Zenn)</description>
-      <pubDate>Wed, 29 Jul 2026 00:00:05 +0000</pubDate>
+      <title>リリース前チェックをAIで行う「プロダクトリリースハーネス」のつくり方</title>
+      <link>https://zenn.dev/estie/articles/c5503dfe56f7a1</link>
+      <guid isPermaLink="false">https://zenn.dev/estie/articles/c5503dfe56f7a1</guid>
+      <description>[Score: 90] プロダクトリリース前の抜け漏れチェックをAIで行う「プロダクトリリースハーネス」の構築方法が解説されています。 / 人間が見落としがちな個人情報や法令遵守などの観点を、AIが網羅的なチェックリストに基づいてスキャンし、リリース前の品質向上に貢献します。 / 既存のテストやセキュリティスキャンを代替するものではなく、それらの確認状況を横断的にチェックする安全装置としての役割が強調されています。 (Source: Zenn)</description>
+      <pubDate>Thu, 30 Jul 2026 00:45:05 +0000</pubDate>
     </item>
     <item>
-      <title>Vision Proの最もクールな使い方</title>
-      <link>https://christianselig.com/2026/07/vision-pro-house/</link>
-      <guid isPermaLink="false">https://christianselig.com/2026/07/vision-pro-house/</guid>
-      <description>[Score: 85] Vision Proを使って新築の家の設計を仮想現実で体験し、間取りや空間の感覚を掴む画期的な方法が紹介されています。 / 従来のPDF図面では難しかったスケール感をVRでリアルに確認することで、後悔のない意思決定を支援します。 / 特にプログラマーの視点から、ソフトウェア開発のように試行錯誤できる点が強調されています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 29 Jul 2026 20:39:40 +0000</pubDate>
+      <title>CLAUDE.md は21セクションか、8行か — 公式ドキュメントで決着をつけた</title>
+      <link>https://qiita.com/jqit_suwa/items/cea574550613de33a114?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/jqit_suwa/items/cea574550613de33a114?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] Claude Codeの設定ファイル「CLAUDE.md」の最適な書き方について、長い記述と短い記述のどちらが効果的か検証しています。 / 公式ドキュメントに基づき、CLAUDE.mdは簡潔に保つべきであり、肥大化すると重要な指示が無視されると結論付けています。 / これはClaude APIがステートレスであり、CLAUDE.mdがリクエストごとに毎回送信されるため、トークンコストと指示の優先順位に影響するためです。 (Source: Qiita)</description>
+      <pubDate>Thu, 30 Jul 2026 00:47:06 +0000</pubDate>
     </item>
     <item>
-      <title>OpenTelemetry初心者がCollectorの中身を全部分解して理解してみた</title>
-      <link>https://zenn.dev/macnica_englab/articles/154cc03e82d7e3</link>
-      <guid isPermaLink="false">https://zenn.dev/macnica_englab/articles/154cc03e82d7e3</guid>
-      <description>[Score: 85] OpenTelemetry Collectorを単なるデータ転送ツールではなく、オブザーバビリティを成立させるためのデータ加工基盤として解説しています。 / Kubernetes環境での実検証に基づき、Collectorの主要コンポーネントであるReceiver、Processor、Exporter、Pipelineの役割を詳細に分解して理解を深めます。 / 特にログ収集におけるReceiverの重要性や、Collectorが役割ごとに複数配置される可能性など、初心者が見落としがちなポイントを具体的に説明しています。 (Source: Zenn)</description>
-      <pubDate>Wed, 29 Jul 2026 02:21:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI時代に感じた危機感と、エンジニアがこれから考えるべきこと</title>
-      <link>https://zenn.dev/nabewata/articles/8cef1bd4cbae3f</link>
-      <guid isPermaLink="false">https://zenn.dev/nabewata/articles/8cef1bd4cbae3f</guid>
-      <description>[Score: 85] AIツールで作成されたPoCが「見た目8割」の完成度を持つ一方で、本番システムに必要な「見えない9割」の実装量とのギャップがエンジニアの評価を難しくしていると指摘。 / このギャップはシステム規模に比例して拡大するため、着手前にPoCと本番化の差分を明文化し、内部品質の作業も可視化することが重要だと提言。 / AI時代におけるエンジニアの役割と評価のされ方について、具体的な対策とともに考察している。 (Source: Zenn)</description>
-      <pubDate>Tue, 28 Jul 2026 12:24:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>世界を席巻する中国の人型ロボット、米国が輸入を禁止　「容認できない」安保リスク</title>
-      <link>https://www.cnn.co.jp/business/35251078.html</link>
-      <guid isPermaLink="false">https://www.cnn.co.jp/business/35251078.html</guid>
-      <description>[Score: 85] 米国政府は、国家安全保障上のリスクを理由に、中国製の人型ロボットや四足歩行ロボット、再生可能エネルギー関連機器の輸入を禁止しました。 / この措置は、先端技術やAI分野での米中覇権争いが激化する中、米国の国内産業とサプライチェーン保護を目的としています。 / 中国は人型ロボット市場で世界の9割を占め、米国は最大の輸出市場でしたが、中国メーカーは欧州市場へのシフトを視野に入れており、全体的な影響は限定的と見られています。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 29 Jul 2026 08:36:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>Vercel、TypeScriptをC言語に変換してからネイティブな実行ファイルにコンパイルする「scriptc」、オープンソースで公開</title>
-      <link>https://www.publickey1.jp/blog/26/verceltypescriptcscriptc.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/verceltypescriptcscriptc.html</guid>
-      <description>[Score: 85] Vercelが、TypeScriptコードをC言語に変換し、ネイティブな実行ファイルにコンパイルするツール「scriptc」をオープンソースで公開した。 / 既存のNode.jsやDeno、Bunの機能とは異なり、JavaScriptランタイムに依存しないコンパクトで高速なバイナリを生成する。 / TypeScriptをTyped IR経由でC言語に変換し、clangでコンパイルすることで、真のネイティブバイナリを実現する。 (Source: Publickey)</description>
-      <pubDate>Mon, 27 Jul 2026 15:20:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>クールダウンの必要性：Dependabotがバージョン更新の発行前に待機する理由</title>
-      <link>https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</guid>
-      <description>[Score: 85] サプライチェーン攻撃の増加を受け、Dependabotがバージョン更新のプルリクエスト発行前に数日間の待機期間を導入しました。 / これにより、悪意のあるバージョンが自動的に取り込まれる前に、人間やスキャナーが検知する時間を与え、セキュリティリスクを低減します。 / ユーザーはdependabot.ymlでクールダウン期間を自由に設定できます。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 23 Jul 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>NVIDIA DGX Spark でソフトウェア開発に最適な Gemma 4 モデルを検証する (31B vs 26B)</title>
-      <link>https://zenn.dev/st_little/articles/gemma4-benchmark-dgx-spark</link>
-      <guid isPermaLink="false">https://zenn.dev/st_little/articles/gemma4-benchmark-dgx-spark</guid>
-      <description>[Score: 82] NVIDIA DGX Spark環境において、ソフトウェア開発に最適なGemma 4モデル（31Bと26B）を比較検証したベンチマーク記事です。 / NeMo Evaluatorを用いて、コーディング能力と論理的推論能力というソフトウェア開発における主要タスクを評価しています。 / モデルの選定やLLMの性能評価に関心のある開発者にとって、具体的なデータと検証方法を提供する内容です。 (Source: Zenn)</description>
-      <pubDate>Tue, 28 Jul 2026 13:56:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>Kimi K3-256k</title>
-      <link>https://www.kimi.com/code/docs/en/kimi-code/models</link>
-      <guid isPermaLink="false">https://www.kimi.com/code/docs/en/kimi-code/models</guid>
-      <description>[Score: 80] Kimi Codeが新しいモデル「Kimi K3-256k」を発表しました。これは256kのコンテキストウィンドウを持ち、従来のK3 (1M) と同等の結果をより少ないクォータで提供します。 / 日常的なQ&amp;A、コード補完、ルーティンな機能開発、単一ファイルまたは小規模ファイルの編集に最適化されています。 / モデル間の切り替えに関する注意点も説明されており、特に動画入力の非サポートやコンテキストの圧縮について言及されています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 29 Jul 2026 19:25:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>「経験がないから」を言い訳にしなくていい時代になった</title>
-      <link>https://qiita.com/sumomoo/items/122f9a34360e256bf042?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/sumomoo/items/122f9a34360e256bf042?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] AIコーディングツールの活用により、エンジニアとしての長年の経験がなくても、短期間で大規模なサービスを開発し成功させることが可能になったと指摘。 / 米国の17歳高校生がAIツールで開発したアプリ「Cal AI」が大手企業に買収された事例を紹介し、AIが開発の前提を大きく変えたことを強調。 / 技術力だけでなく「課題解決力」「AIツール活用経験」「適切なチャネルで届ける力」が重要になり、個人開発の可能性が広がったと解説している。 (Source: Qiita)</description>
-      <pubDate>Mon, 27 Jul 2026 08:09:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>現役Appleマップエンジニアが書いた日本の住所表記のやばさを指摘する「ヤバい日本の住所」が出版</title>
-      <link>https://www.macotakara.jp/etc/book/entry-51535.html</link>
-      <guid isPermaLink="false">https://www.macotakara.jp/etc/book/entry-51535.html</guid>
-      <description>[Score: 80] 現役Appleマップエンジニアの河合太郎氏による書籍「ヤバい日本の住所」が出版され、日本の住所表記の複雑さが話題となっています。 / 河野デジタル大臣のAI活用発言をきっかけに、地図業界で日本の住所表記の曖昧さと地図への紐付けの難しさが改めて問題提起されました。 / この書籍は、IT技術、特に地図サービス開発における日本の住所データの扱いの困難さを一般に理解させるものです。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 29 Jul 2026 07:52:57 +0000</pubDate>
+      <title>【ClaudeCode】コスト発生要因から考えるトークン消費最適化術【トークン】</title>
+      <link>https://qiita.com/Nana_777/items/1766dd6bbd308222f71b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Nana_777/items/1766dd6bbd308222f71b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] Claude Codeにおけるトークン消費の最適化について、その発生要因を体系的に分析し、具体的な対策を解説しています。 / CLAUDE.mdやツール説明などが毎回コンテキストに読み込まれること、CLAUDE.mdの編集がセッション中に即座に反映されない仕様などを指摘。 / 公式ドキュメントに基づいた根拠ある情報を提供し、AI利用コスト削減と効率化のための実践的な知識を提供しています。 (Source: Qiita)</description>
+      <pubDate>Mon, 27 Jul 2026 21:07:03 +0000</pubDate>
     </item>
     <item>
       <title>KubernetesはAIを動かすプラットフォームに。横浜でKubeCon＋CloudNativeCon Japan 2026が開幕</title>
       <link>https://www.publickey1.jp/blog/26/kubernetesaikubeconcloudnativecon_japan_2026.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/kubernetesaikubeconcloudnativecon_japan_2026.html</guid>
-      <description>[Score: 80] クラウドネイティブ技術の最大イベント「KubeCon+CloudNativeCon Japan 2026」が横浜で開幕し、CNCFのCTOらが基調講演を行いました。 / CNCFがホストするオープンソースプロジェクトは230以上、クラウドネイティブ関連開発者は世界で2000万人近くに増加していることが報告されました。 / AIワークロード、特に推論のワークロードの拡大が課題として挙げられ、2030年には現在の全計算ワークロードを上回る膨大な推論ワークロードが求められると予測されています。 (Source: Publickey)</description>
+      <description>[Score: 90] KubeCon+CloudNativeCon Japan 2026が横浜で開幕し、KubernetesがAIワークロードの主要プラットフォームとなることが強調されました。 / CNCFのCTOは、クラウドネイティブ技術の成長と開発者数の増加を報告しました。 / 2030年には推論ワークロードが現在の全計算量を上回る規模になると予測され、Kubernetesの重要性が増すと見込まれています。 (Source: Publickey)</description>
       <pubDate>Wed, 29 Jul 2026 15:02:00 +0000</pubDate>
     </item>
     <item>
-      <title>1999年のように取引するのをやめよう — Python 3.13で自律型、視覚対応の暗号ボットを構築した</title>
-      <link>https://dev.to/qrak/-stop-trading-like-its-1999-an-llm-crypto-bot-that-sees-charts-remembers-trades-and-learns-1cd1</link>
-      <guid isPermaLink="false">https://dev.to/qrak/-stop-trading-like-its-1999-an-llm-crypto-bot-that-sees-charts-remembers-trades-and-learns-1cd1</guid>
-      <description>[Score: 80] 筆者は、従来のLLMベースの取引ボットがチャートを「見て」いないことによる失敗を経験した。 / 77本の論文を研究し、LLMが市場を理解しても実際の取引実行には課題があることを発見。 / Python 3.13を使用し、チャートの視覚認識能力と取引履歴の記憶、学習機能を備えた自律型暗号ボットを構築した。 (Source: Dev.to)</description>
-      <pubDate>Wed, 29 Jul 2026 22:22:34 +0000</pubDate>
+      <title>Vercel、TypeScriptをC言語に変換してからネイティブな実行ファイルにコンパイルする「scriptc」、オープンソースで公開</title>
+      <link>https://www.publickey1.jp/blog/26/verceltypescriptcscriptc.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/verceltypescriptcscriptc.html</guid>
+      <description>[Score: 90] Vercelが、TypeScriptコードをC言語に変換し、ネイティブな実行ファイルにコンパイルするツール「scriptc」をオープンソースで公開しました。 / 既存のツールがランタイムをパッケージングするのに対し、scriptcはTypeScriptをTyped IR経由でC言語に変換し、clangでネイティブバイナリを生成します。 / これにより、JavaScriptランタイムに依存しない、コンパクトで高速な実行ファイルが実現され、パフォーマンスと配布の利便性が向上します。 (Source: Publickey)</description>
+      <pubDate>Mon, 27 Jul 2026 15:20:00 +0000</pubDate>
     </item>
     <item>
-      <title>Dependabotを飼いならす：更新をグループ化し、頻度を減らし、セキュリティを迅速に保つ</title>
-      <link>https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/</guid>
-      <description>[Score: 80] 頻繁なDependabotのプルリクエストがノイズとなり、重要な更新が見過ごされる問題が指摘されています。 / 本記事では、Dependabotの設定を調整し、更新をグループ化して頻度を減らすことで、この問題を解決する方法を解説しています。 / これにより、日常的なメンテナンスの負担を軽減しつつ、セキュリティ関連の重要な更新は迅速に処理できる効率的なワークフローを構築できます。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 29 Jul 2026 16:00:00 +0000</pubDate>
+      <title>npmとGitHub Actionsにおけるサプライチェーン攻撃の阻止</title>
+      <link>https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</link>
+      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</guid>
+      <description>[Score: 90] npmとGitHub Actionsを標的としたサプライチェーン攻撃の増加に対し、GitHubが実施している対策の進捗が報告されています。 / 攻撃はパッケージリポジトリやCI/CDシステムの脆弱性を悪用し、マルウェアを拡散させることを目的としています。 / GitHubは、攻撃の連鎖を断ち切るための多角的なアプローチで、npmとGitHub Actionsのセキュリティ強化を進めていることを強調しています。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 28 Jul 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>GuideSkill: ガイドラインに基づいた臨床推論のための実行可能なLLMエージェントスキルの進化</title>
+      <link>https://arxiv.org/abs/2607.26160</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2607.26160</guid>
+      <description>[Score: 88] ガイドラインに基づいた臨床推論を行うための、実行可能なLLMエージェントスキル「GuideSkill」を提案しています。 / 医療ガイドラインを遵守し、より信頼性の高い臨床意思決定を支援するAIエージェントの開発を目指します。 / 大規模言語モデルの医療応用における精度と安全性の向上に貢献するものです。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 30 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>テレビストリーミングスティックを購入する前にこれを読んでください</title>
+      <link>https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/</link>
+      <guid isPermaLink="false">https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/</guid>
+      <description>[Score: 85] 汎用TVボックスがユーザーのインターネット接続を他人に貸し出しているだけでなく、広告詐欺にも利用されていることが判明しました。 / これらのデバイスは、AI生成ウェブサイト上でモバイルフォンを装い、広告クリック詐欺を行う大規模なネットワークの一部です。 / セキュリティ研究者が、H96などの人気ストリーミングデバイスがハードウェア情報やアプリリストを収集し、不正なトラフィックを生成していることを明らかにしました。 (Source: Hacker News)</description>
+      <pubDate>Thu, 30 Jul 2026 17:04:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>生成AIにおけるHTML/画像出力の必要性と改善案としてのRHW(reviewable-html-workbench)の紹介</title>
+      <link>https://zenn.dev/u1/articles/rhw-reviewable-html-workbench</link>
+      <guid isPermaLink="false">https://zenn.dev/u1/articles/rhw-reviewable-html-workbench</guid>
+      <description>[Score: 85] 生成AIの出力量増加と人間の処理能力のギャップを埋めるため、認知負荷軽減を目的としたRHW (Reviewable HTML Workbench) が紹介されています。 / Claude CodeのArtifact toolの課題を整理し、特に生成AIとの協調作業におけるレビュー・コメント・修正の往復を効率化するRHWの有用性を解説。 / 機密情報漏洩のリスクやArtifact toolの運用上の注意点にも触れつつ、RHWがその代替案としても機能することを提案しています。 (Source: Zenn)</description>
+      <pubDate>Thu, 30 Jul 2026 12:16:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>agent-browserはもう古い？ Web調査をコマンドに変えるOpenCLI</title>
+      <link>https://zenn.dev/nasubikun/articles/opencli-web-research</link>
+      <guid isPermaLink="false">https://zenn.dev/nasubikun/articles/opencli-web-research</guid>
+      <description>[Score: 85] AIエージェントによるWeb調査において、従来のagent-browserは柔軟ですが繰り返し利用時に非効率な面がありました。 / OpenCLIは一度取得したWeb情報をコマンドとして保存し、次回以降はコマンドで呼び出すことで効率的な再利用を可能にします。 / これにより、AIエージェントのWeb操作が「操作できるか」から「調査結果をどう再利用するか」へと進化していることを示しています。 (Source: Zenn)</description>
+      <pubDate>Wed, 29 Jul 2026 09:40:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>テキサス州の保安官が83,000台のFlockカメラを検索し、中絶した女性を追跡</title>
+      <link>https://www.reddit.com/r/technology/comments/1vb1s8f/a_texas_deputy_searched_83000_flock_cameras_to/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vb1s8f/a_texas_deputy_searched_83000_flock_cameras_to/</guid>
+      <description>[Score: 85] テキサス州の保安官が、中絶を行った女性を特定するため、広範囲に設置されたFlock監視カメラ83,000台のデータを検索しました。 / これは、監視技術が個人のプライバシーや市民の自由を侵害する可能性を示唆しています。 / 特に、生殖に関する権利といったデリケートな問題において、その悪用が懸念されます。 (Source: Reddit)</description>
+      <pubDate>Thu, 30 Jul 2026 18:23:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>JetBrains、AIが少ないトークンでコンテキストを取得しやすく、よりよいコード生成を可能にする「JetBrains Context」発表</title>
+      <link>https://www.publickey1.jp/blog/26/jetbrainsaijetbrains_context.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/jetbrainsaijetbrains_context.html</guid>
+      <description>[Score: 85] JetBrainsが、AIエージェントのコード生成能力を向上させる新サービス「JetBrains Context」を発表しました。 / コードリポジトリ上にインテリジェントなレイヤーを構築し、AIが少ないトークンで適切なコンテキストを効率的に取得できるようにします。 / これにより、Claude CodeやOpenAI CodexなどのAIエージェントが、より正確で質の高いコードを生成できるようになります。 (Source: Publickey)</description>
+      <pubDate>Thu, 30 Jul 2026 17:48:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>CamBridge: iOSシミュレーターにリアルな動くカメラ画像を与える</title>
+      <link>https://dev.to/engelon/cambridge-giving-the-ios-simulator-a-real-moving-camera-image-1hdb</link>
+      <guid isPermaLink="false">https://dev.to/engelon/cambridge-giving-the-ios-simulator-a-real-moving-camera-image-1hdb</guid>
+      <description>[Score: 85] iOSシミュレーターやAndroidエミュレーターには実カメラ機能がなく、カメラ機能を持つアプリのテストは困難でした。 / 「CamBridge」は、Macのウェブカメラ画像をlocalhost経由でシミュレーターにストリーミングするオープンソースツールです。 / これにより、AVCaptureSessionのドロップイン代替として機能し、シミュレーター上でリアルなカメラ画像を使ったテストが容易になります。 (Source: Dev.to)</description>
+      <pubDate>Thu, 30 Jul 2026 22:46:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub Copilotアプリにおけるスタックセッションとプルリクエスト</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/</guid>
+      <description>[Score: 85] GitHub Copilotアプリの新機能「スタックセッション」が紹介されており、一連のタスクを連携させて効率的に開発を進めることができます。 / 筆者の古いReactアプリのモダン化を例に、Copilotが複雑な依存関係の更新やフロントエンドの改修を支援する様子が示されています。 / AIを活用することで、手作業では困難だった大規模なリファクタリングや技術的負債の解消が容易になる可能性が強調されています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 30 Jul 2026 17:30:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>ClinLens: 縦断的マルチモーダル臨床データサイエンスのための長期的コーディングエージェントに向けて</title>
+      <link>https://arxiv.org/abs/2607.26155</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2607.26155</guid>
+      <description>[Score: 85] 縦断的かつマルチモーダルな臨床データサイエンスに対応する「長期的コーディングエージェント」を提案しています。 / 医療分野における複雑なデータ分析タスクを自動化・支援するAIエージェントの開発を目指します。 / ClinLensというシステムを通じて、臨床研究の効率化と精度向上に貢献する可能性を秘めています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 30 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>ASD-STE100簡略化技術英語でドキュメントを強制するエージェントスキル</title>
+      <link>https://github.com/AminBlg/SimpleEnglish</link>
+      <guid isPermaLink="false">https://github.com/AminBlg/SimpleEnglish</guid>
+      <description>[Score: 80] LLMが生成するドキュメントを、航空宇宙産業で使われるASD-STE100簡略化技術英語に強制するエージェントスキルが開発されました。 / これにより、AIが生成する文章の曖昧さや冗長性を排除し、疲れた整備士でも誤読しない明確な指示書を作成できます。 / このスキルは、Claude CodeやVS Code Copilotなど、様々なエージェントスキル標準に対応したツールで利用可能です。 (Source: Hacker News)</description>
+      <pubDate>Thu, 30 Jul 2026 19:34:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub Actionsのコストが増えているなら、Namespaceを使えばいいじゃない</title>
+      <link>https://zenn.dev/aircloset/articles/6b47018589df0f</link>
+      <guid isPermaLink="false">https://zenn.dev/aircloset/articles/6b47018589df0f</guid>
+      <description>[Score: 80] AIエージェントの活用によりGitHub Actionsの実行回数とタスク数が増加し、CIコストが膨張する課題が提起されています。 / エアークローゼットがGitHub hostedからBlacksmith、そしてNamespaceへとランナーを乗り換えた実測記録と判断材料が共有されています。 / 無料枠を超えてコストが増加しているチーム向けに、Namespaceへの移行がコスト削減と実行時間短縮に有効であると示唆されています。 (Source: Zenn)</description>
+      <pubDate>Wed, 29 Jul 2026 23:52:26 +0000</pubDate>
     </item>
   </channel>
 </rss>
