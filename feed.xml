@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 01 Aug 2026 22:48:25 +0000</lastBuildDate>
-    <item>
-      <title>AIの限界は頭脳ではなく、電気と冷却にあった【宇宙のデーターセンターって何？】</title>
-      <link>https://qiita.com/sumomoo/items/8bbe719ed4de1a36def9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/sumomoo/items/8bbe719ed4de1a36def9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 95] AIの急速な発展を支えるデータセンターが、電力と冷却という物理的な制約に直面している現状を解説。 / この課題を解決する手段として、SpaceXが構想する「宇宙データセンター」プロジェクト「AI1」を紹介。 / 宇宙空間での太陽光発電と効率的な放熱という利点を挙げ、この構想が現実的な選択肢であることを説明する。 (Source: Qiita)</description>
-      <pubDate>Fri, 31 Jul 2026 05:21:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>npmとGitHub Actionsに対するサプライチェーン攻撃を阻止する</title>
-      <link>https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</guid>
-      <description>[Score: 95] npmとGitHub Actionsを標的としたサプライチェーン攻撃のパターンと、それらに対抗するためのGitHubの取り組みが説明されています。 / パッケージリポジトリやCI/CDシステムの脆弱性を悪用するマルウェアの拡散を防ぐための具体的な対策が実施されています。 / 攻撃の連鎖を断ち切るための包括的なアプローチと、セキュリティ研究コミュニティとの協力の重要性が強調されています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 28 Jul 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>KubernetesはAIを動かすプラットフォームに。横浜でKubeCon＋CloudNativeCon Japan 2026が開幕</title>
-      <link>https://www.publickey1.jp/blog/26/kubernetesaikubeconcloudnativecon_japan_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/kubernetesaikubeconcloudnativecon_japan_2026.html</guid>
-      <description>[Score: 92] KubeCon+CloudNativeCon Japan 2026が横浜で開幕し、KubernetesがAIワークロードを動かす主要なプラットフォームとして注目されていることが強調されました。 / CNCFの幹部が、クラウドネイティブ技術の急速な成長と、特に推論ワークロードにおけるAIの課題と将来の膨大な需要を指摘しています。 / 2030年には現在の全計算ワークロードを超える推論ワークロードが必要になると予測され、AIインフラにおけるKubernetesの重要性が増しています。 (Source: Publickey)</description>
-      <pubDate>Wed, 29 Jul 2026 15:02:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIのアウトプットをそのまま出すだけの人にならないために</title>
-      <link>https://qiita.com/ktdatascience/items/8d2dace07c9c7a9d0453?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ktdatascience/items/8d2dace07c9c7a9d0453?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AIエージェントが業務の大部分を担うようになった現代において、人間に残る仕事の価値と役割について考察。 / AIの出力を鵜呑みにせず、コンテキストに乗らない抽象的な問題解決や意思決定が重要であると指摘。 / AI時代にエンジニアが介在価値を高めるための具体的な視点と心構えを提示する。 (Source: Qiita)</description>
-      <pubDate>Sat, 01 Aug 2026 06:25:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>宮本佳林『アイドルがAIと配信のシステムを全部作った話』</title>
-      <link>https://ameblo.jp/miyamotokarin-official/entry-12974432505.html</link>
-      <guid isPermaLink="false">https://ameblo.jp/miyamotokarin-official/entry-12974432505.html</guid>
-      <description>[Score: 90] アイドル宮本佳林さんが、プログラミング経験ゼロながらAI（Claude, ChatGPT）を活用し、YouTube生配信のインタラクティブなシステムを自作した経緯を語っています。 / 視聴者の行動（CD購入報告、応援投稿）に応じてゲージが溜まり、衣装やグッズが解禁される仕組みや、AIによるMV再現動画の採点システムなどを構築しました。 / AIに日本語で指示を出すだけでコードを生成・修正させ、複雑なシステムを構築できたことは、ノーコード・ローコード開発の可能性とAIの強力な支援能力を示しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 01 Aug 2026 08:05:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>JetBrains、AIが少ないトークンでコンテキストを取得しやすく、よりよいコード生成を可能にする「JetBrains Context」発表</title>
-      <link>https://www.publickey1.jp/blog/26/jetbrainsaijetbrains_context.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/jetbrainsaijetbrains_context.html</guid>
-      <description>[Score: 90] JetBrainsが、AIエージェントが少ないトークンでコードのコンテキストを効率的に取得し、より高品質なコード生成を可能にする新サービス「JetBrains Context」を発表しました。 / このサービスは、コードリポジトリ上にインテリジェントなレイヤーを構築し、セマンティック検索を通じてAIに適切なコードコンテキストを提供します。 / これにより、AIによるコード生成の精度向上と、大規模コードベースにおけるコスト削減が期待されます。 (Source: Publickey)</description>
-      <pubDate>Thu, 30 Jul 2026 17:48:59 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 02 Aug 2026 22:49:37 +0000</lastBuildDate>
     <item>
       <title>Google Cloud、AIが自律的にコードの脆弱性検出からサンドボックス内でのリスク検証、修正までを自動実行。「CodeMender」プレビュー公開</title>
       <link>https://www.publickey1.jp/blog/26/google_cloudaicodemender.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaicodemender.html</guid>
-      <description>[Score: 90] Google Cloudが、AIエージェント「CodeMender」のプレビュー公開を発表しました。 / CodeMenderは、コードの脆弱性検出からサンドボックス内でのリスク検証、さらに修正コードの自動生成までを自律的に実行します。 / 複雑な脆弱性の発見や誤検知の排除、C/C++、Go、Java、Pythonなど多様な言語サポートが特徴です。 (Source: Publickey)</description>
+      <description>[Score: 95] Google Cloudが、AIエージェント「CodeMender」のプレビュー公開を発表しました。 / CodeMenderは、コードの脆弱性検出、サンドボックス内でのリスク検証、そして修正までを自律的に自動実行します。 / C/C++, Go, Java, Python, Ruby, Rust, TypeScriptなど多様な言語をサポートし、誤検知を排除しつつ、複雑な脆弱性も検出・修正可能です。 (Source: Publickey)</description>
       <pubDate>Tue, 28 Jul 2026 15:54:06 +0000</pubDate>
     </item>
     <item>
       <title>GitHub Copilotアプリにおけるスタックセッションとプルリクエスト</title>
       <link>https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/</guid>
-      <description>[Score: 90] GitHub Copilotアプリの新機能である「スタックセッション」が紹介されており、関連する一連のタスクを効率的に管理できます。 / 筆者が長年放置していた古いReactアプリのフロントエンドを、Copilotを使って現代化する具体的な事例が示されています。 / AIによるコード生成とリファクタリングが、複雑な依存関係の更新や大規模な改修作業を劇的に簡素化する可能性を強調しています。 (Source: GitHub Blog)</description>
+      <description>[Score: 95] GitHub Copilotアプリに導入された「スタックセッション」機能が紹介されています。 / これは、同じリポジトリ内で複数のタスクを積み重ねて実行し、それぞれのセッションが前のセッションの上に構築されるものです。 / 著者は、AIを活用して古い依存関係で複雑化した個人プロジェクトのフロントエンドを現代化する例を挙げ、その強力な支援能力を強調しています。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 30 Jul 2026 17:30:24 +0000</pubDate>
     </item>
     <item>
-      <title>役割を広げたらほんまに強くなれるんかみたいな話</title>
-      <link>https://qiita.com/morry_48/items/170fb14f1f9c48f115d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/morry_48/items/170fb14f1f9c48f115d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] AIの登場により、人間の仕事の抽象度が上がっているという変化について、自身の経験を交えて考察。 / システム化が進むことで、定型作業から解放された人間には、答えのない抽象的な問題解決が求められると指摘。 / ツールは「何をすべきか知っている人」の能力を加速させるものであり、役割を広げることの真の意味を問う。 (Source: Qiita)</description>
-      <pubDate>Thu, 30 Jul 2026 02:59:19 +0000</pubDate>
+      <title>npmとGitHub Actionsに対するサプライチェーン攻撃を阻止する</title>
+      <link>https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</link>
+      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</guid>
+      <description>[Score: 95] 過去1年間で、パッケージリポジトリやCI/CDシステムの脆弱性を悪用し、マルウェアを拡散させるサプライチェーン攻撃が増加しています。 / GitHubは、これらの攻撃を阻止するためにnpmとGitHub Actionsに複数の改善策を実装したことを発表しました。 / 初期アクセス、権限昇格、マルウェア拡散といった攻撃手法の連鎖を断ち切るための包括的なアプローチが取られています。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 28 Jul 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Seedance 2.5</title>
-      <link>https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5</link>
-      <guid isPermaLink="false">https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5</guid>
-      <description>[Score: 85] ByteDanceが次世代動画生成モデル「Seedance 2.5」を発表。ユーザーの期待が単なるクリップ生成から創造的な作品完成へとシフトしたことに対応。 / 統一されたマルチモーダル音声・動画共同生成アーキテクチャを基盤とし、長尺ストーリーテリング、マルチモーダル参照、編集に大きな進歩。 / 1回の生成で最大30秒の高品質なオーディオ・ビデオクリップを生成でき、複数回の拡張や参照素材の入力も可能。 (Source: Hacker News)</description>
-      <pubDate>Sat, 01 Aug 2026 20:45:12 +0000</pubDate>
+      <title>Karpathyのペリカン - Andrej Karpathy氏によるLLMの新たな活用事例</title>
+      <link>https://twitter.com/karpathy/status/2083749667410727319</link>
+      <guid isPermaLink="false">https://twitter.com/karpathy/status/2083749667410727319</guid>
+      <description>[Score: 90] Andrej Karpathy氏が、LLM（Opus 5）に「ロード・オブ・ザ・リング」の冒頭段落を与え、その3Dレンダリングを生成させた実験について語っています。 / LLMは2時間で5500行のコードを生成し、物語をプロシージャルにレンダリング。これは人間が通常行わないような超カスタムな作業をLLMが「ほぼ無料」で実行できる可能性を示唆しています。 / この実験は、LLMがゲームや仮想世界を生成する能力の高さを示す一方で、生成物の監査能力に課題があることも浮き彫りにしました。 (Source: Hacker News)</description>
+      <pubDate>Sun, 02 Aug 2026 04:05:56 +0000</pubDate>
     </item>
     <item>
       <title>GitHubにスタック型プルリクエストが登場。gh stackでPRを分割して積み上げよう</title>
       <link>https://zenn.dev/ubie_dev/articles/gh-stack-introduction</link>
       <guid isPermaLink="false">https://zenn.dev/ubie_dev/articles/gh-stack-introduction</guid>
-      <description>[Score: 85] GitHubに「スタック型プルリクエスト」が導入され、巨大なPRを意味のある小さなPRに分割し、数珠つなぎのように積み上げて管理できるようになりました。 / これにより、AIエージェントが大量のコードを生成する現代において、コードレビューの効率と品質が向上し、変更履歴の追跡も容易になります。 / 手動での数珠つなぎPRの課題（PRの向き先設定や変更反映の手間など）を解決し、開発ワークフローを改善する画期的な機能です。 (Source: Zenn)</description>
+      <description>[Score: 90] GitHubに「スタック型プルリクエスト」機能が登場し、複数のPRを数珠つなぎのように分割してレビューしやすくなりました。 / AIエージェントによる開発で巨大化しがちなPRを、意味のある粒度で分割することでレビュー効率と可読性を向上させます。 / gh stackコマンドを使うことで、PRの向き先設定や関連PRの記述、先行PRの変更反映といった課題が解決されます。 (Source: Zenn)</description>
       <pubDate>Fri, 31 Jul 2026 13:33:10 +0000</pubDate>
     </item>
     <item>
-      <title>コードベースのナレッジ化なら、LLM Wikiで十分かもしれない</title>
-      <link>https://qiita.com/Syoitu/items/ff38655fed51a2920910?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Syoitu/items/ff38655fed51a2920910?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] コーディングエージェントがコードベースを理解する際の課題として、検索コストとドキュメントの鮮度維持を指摘。 / 「LLM Wiki」というアプローチを提唱し、従来の検索型ツールの限界を克服する可能性を示す。 / OpenWikiライブラリを例に挙げ、LLM Wikiの仕組みと実践方法を紹介する。 (Source: Qiita)</description>
-      <pubDate>Thu, 30 Jul 2026 06:24:02 +0000</pubDate>
+      <title>AIのアウトプットをそのまま出すだけの人にならないために</title>
+      <link>https://qiita.com/ktdatascience/items/8d2dace07c9c7a9d0453?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ktdatascience/items/8d2dace07c9c7a9d0453?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AIエージェントが業務の多くを担う時代において、人間に残る仕事の価値について考察。 / 言語化・構造化できる仕事はAIに委譲され、人間は「まだ書けていないもの」「そもそも書けないもの」に注力すべきと提言。 / AIの出力を右から左に流すだけの「人間ルーター」にならないための、人の介在価値を5つの視点で提示。 (Source: Qiita)</description>
+      <pubDate>Sat, 01 Aug 2026 06:25:03 +0000</pubDate>
     </item>
     <item>
-      <title>宮本佳林『HANAKIN配信システムの技術構成』</title>
-      <link>https://ameblo.jp/miyamotokarin-official/entry-12974440752.html</link>
-      <guid isPermaLink="false">https://ameblo.jp/miyamotokarin-official/entry-12974440752.html</guid>
-      <description>[Score: 85] アイドル宮本佳林氏が、AIアシスタント（Claude Code）の助けを借りて構築した10時間YouTube生配信システムの技術構成を解説しています。 / Cloudflare WorkersやKV、RapidAPI、Node.js+Expressなどを活用し、当日確実に動くことを最優先に設計されました。 / コードが書けない立場から複雑なシステムを構築した事例として、AIによる開発支援の可能性を示しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 01 Aug 2026 08:05:57 +0000</pubDate>
+      <title>Windowsユーザーは「ホテルのWi-Fiは使うな」マイクロソフトが緊急警告</title>
+      <link>https://forbesjapan.com/articles/detail/102130</link>
+      <guid isPermaLink="false">https://forbesjapan.com/articles/detail/102130</guid>
+      <description>[Score: 90] マイクロソフトがWindowsユーザーに対し、ホテルのWi-Fi利用を避けるよう緊急警告を発しました。 / ロシアのサイバー攻撃グループ「Midnight Blizzard」による「CaptiveCrunch」キャンペーンが、侵害されたゲストネットワークを通じて認証情報の窃取やマルウェア配信を行っているためです。 / AIが悪用されている可能性も指摘されており、Androidデバイスも標的となる可能性があると警告されています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 02 Aug 2026 10:15:14 +0000</pubDate>
     </item>
     <item>
-      <title>Vercel、TypeScriptをC言語に変換してからネイティブな実行ファイルにコンパイルする「scriptc」、オープンソースで公開</title>
-      <link>https://www.publickey1.jp/blog/26/verceltypescriptcscriptc.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/verceltypescriptcscriptc.html</guid>
-      <description>[Score: 85] Vercelが、TypeScriptコードをC言語に変換し、ネイティブな実行ファイルにコンパイルする「scriptc」をオープンソースで公開しました。 / 既存のツールがランタイムをパッケージングするのに対し、scriptcはTypeScriptを直接ネイティブバイナリに変換します。 / これにより、JavaScriptランタイムに依存しない、コンパクトで高速な実行ファイルが生成可能になります。 (Source: Publickey)</description>
-      <pubDate>Mon, 27 Jul 2026 15:20:00 +0000</pubDate>
+      <title>AIで生成した画像や動画、EUが識別できる表示義務づけ…違反なら最大27億円か年売上高3%の制裁金</title>
+      <link>https://www.yomiuri.co.jp/economy/20260801-GYT1T00222/</link>
+      <guid isPermaLink="false">https://www.yomiuri.co.jp/economy/20260801-GYT1T00222/</guid>
+      <description>[Score: 90] EUはAIで生成・加工された画像や音声、動画などの内容に対し、AIによるものであることを示す表示を事業者に義務付けます。 / 2024年8月に発効した「AI法」に基づく規制で、違反には最大27億円または年間売上高の3%の制裁金が科されます。 / 偽情報から利用者を保護し、AIサービスの透明性を高めることを目的とした包括的なAI規制の一環です。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 01 Aug 2026 11:23:54 +0000</pubDate>
     </item>
     <item>
-      <title>早期停止しない：メモリ速度でソースコードのケースフォールディングを行う</title>
+      <title>KubernetesはAIを動かすプラットフォームに。横浜でKubeCon＋CloudNativeCon Japan 2026が開幕</title>
+      <link>https://www.publickey1.jp/blog/26/kubernetesaikubeconcloudnativecon_japan_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/kubernetesaikubeconcloudnativecon_japan_2026.html</guid>
+      <description>[Score: 90] KubeCon+CloudNativeCon Japan 2026が横浜で開幕し、Cloud Native Computing Foundation (CNCF) のCTOが基調講演を行いました。 / CNCFは230以上のオープンソースプロジェクトをホストし、クラウドネイティブ開発者が2000万人近くに増加していることを明らかにしました。 / AIワークロード、特に推論のワークロードが急増しており、KubernetesがAIプラットフォームとしての重要性を増しています。 (Source: Publickey)</description>
+      <pubDate>Wed, 29 Jul 2026 15:02:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>早期停止しない：メモリ速度でのソースコードのケースフォールディング</title>
       <link>https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/</link>
       <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/</guid>
-      <description>[Score: 85] GitHubのコード検索エンジンが、1億8000万以上のリポジトリ、480TB以上のソースコードを扱う際のケースフォールディングの最適化について解説しています。 / 大規模なテキストマッチングにおいて、大文字小文字を区別しない正規化（ケースフォールディング）の速度が重要であることを強調しています。 / 最適化の鍵は、非ASCIIバイトで早期停止するのではなく、分岐なしでバッファ全体をスキャンする方が高速であるという逆直感的な発見でした。 (Source: GitHub Blog)</description>
+      <description>[Score: 90] GitHubのコード検索エンジン「Blackbird」は、1億8千万以上のリポジトリ、480TB以上のソースコードをインデックス化しています。 / この規模では、大文字小文字を区別しない検索（ケースフォールディング）のような基本的な操作の速度が重要になります。 / GitHubは、ASCIIパスで「早期停止」という最適化を削除することで、逆にパフォーマンスを向上させ、その成果をRustクレート「casefold」としてオープンソース化しました。 (Source: GitHub Blog)</description>
       <pubDate>Fri, 31 Jul 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>64ビットアセンブリの芸術</title>
-      <link>https://nostarch.com/art-64-bit-assembly-v2</link>
-      <guid isPermaLink="false">https://nostarch.com/art-64-bit-assembly-v2</guid>
-      <description>[Score: 80] 本書は、64ビットアセンブリ言語の深い理解を目指すもので、C++、Python、Rustなどの高レベル言語の構成要素を命令レベルで解説します。 / AIによる表面的な説明ではなく、Windows環境での実際の動作や、オブジェクト、例外処理、コルーチンなどの実装をMASMで再構築することで、真の理解を促します。 / 医療機器や核システムなど、正確性が求められる分野での長年の経験を持つ著者が、実践的な知識を提供します。 (Source: Hacker News)</description>
-      <pubDate>Sat, 01 Aug 2026 14:09:00 +0000</pubDate>
+      <title>6502プロセッサ上での自己回帰型言語モデル (Autoregressive Language Model on the 6502 Processor)</title>
+      <link>https://mattbeton.com/blog/bitnet-6502.html</link>
+      <guid isPermaLink="false">https://mattbeton.com/blog/bitnet-6502.html</guid>
+      <description>[Score: 85] 1975年製の8ビットマイクロプロセッサ「MOS 6502」（BBC MicroやApple IIに搭載）上で、現代の機械学習モデルを動作させる実験が行われました。 / 25KBのメモリ制限、8ビット整数演算のみ、乗算命令の欠如といった厳しい制約の中、9KBの推論コードと13KBのモデルウェイトで自己回帰型言語モデルを実装しました。 / このプロジェクトは、レガシーハードウェアで最新のAI技術を動かすという技術的な挑戦と、その可能性を示す非常に興味深い事例です。 (Source: Hacker News)</description>
+      <pubDate>Fri, 31 Jul 2026 13:08:30 +0000</pubDate>
     </item>
     <item>
-      <title>CLAUDE.md は21セクションか、8行か — 公式ドキュメントで決着をつけた</title>
-      <link>https://qiita.com/jqit_suwa/items/cea574550613de33a114?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/jqit_suwa/items/cea574550613de33a114?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Claude Codeのエージェント指示ファイル「CLAUDE.md」の最適な書き方について、長文と短文の議論に決着をつける。 / 公式ドキュメントに基づき、CLAUDE.mdは簡潔に保つべきであり、肥大化すると指示が無視されるリスクがあることを説明。 / なぜ簡潔さが重要なのか、その仕組みと具体的な記述内容を整理して解説する。 (Source: Qiita)</description>
-      <pubDate>Thu, 30 Jul 2026 00:47:06 +0000</pubDate>
+      <title>AI フレンドリーな CLI を開発するテクニック</title>
+      <link>https://zenn.dev/shunsuke_suzuki/articles/make-cli-ai-friendly</link>
+      <guid isPermaLink="false">https://zenn.dev/shunsuke_suzuki/articles/make-cli-ai-friendly</guid>
+      <description>[Score: 85] AIエージェントがCLIツールを効率的に扱えるよう、AIフレンドリーなCLIを開発するテクニックを紹介しています。 / Web Fetchに頼らず、CLI内部でドキュメントにアクセスできる仕組みや、AIへの指示メッセージの組み込みが重要です。 / ghtknというOSSを例に、AIがドキュメントをリスト表示・閲覧できるコマンドや、機密情報扱いの注意喚起などが解説されています。 (Source: Zenn)</description>
+      <pubDate>Sat, 01 Aug 2026 01:35:46 +0000</pubDate>
     </item>
     <item>
-      <title>裁判官が、xAIによるミネソタ州の「ヌード化」アプリ禁止措置差し止め請求を却下</title>
-      <link>https://www.reddit.com/r/technology/comments/1vcxven/judge_denies_xais_request_to_block_minnesota_ban/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vcxven/judge_denies_xais_request_to_block_minnesota_ban/</guid>
-      <description>[Score: 80] 裁判官が、xAI社がミネソタ州の「ヌード化」アプリ禁止措置を差し止めるよう求めた請求を却下しました。 / これは、AIを用いた画像生成技術の倫理的・法的規制に関する重要な判例となる可能性があります。 / AI技術の悪用を防ぐための法規制と、技術開発の自由との間のバランスが問われる問題です。 (Source: Reddit)</description>
-      <pubDate>Sat, 01 Aug 2026 20:30:02 +0000</pubDate>
+      <title>メテオフォール開発</title>
+      <link>https://zenn.dev/hisaju01/books/meteorfall-development</link>
+      <guid isPermaLink="false">https://zenn.dev/hisaju01/books/meteorfall-development</guid>
+      <description>[Score: 85] AIエージェントを活用した新しい開発手法「メテオフォール開発」に関する書籍の概要。 / 開発がなぜ終わらないのか、基本原則、実践フロー、AIエージェントへの依頼設計など多岐にわたる章立て。 / プログラミングスクールRUNTEQ代表が執筆し、AI開発やChatGPT、生成AIのトピックを扱う。 (Source: Zenn)</description>
+      <pubDate>Fri, 31 Jul 2026 06:16:08 +0000</pubDate>
     </item>
     <item>
-      <title>静的HTMLとSupabaseを使ってライブグローバルスコアボードを0ドルで構築する方法</title>
-      <link>https://dev.to/naavvviiinnnn/how-i-built-a-live-global-scoreboard-for-0-using-static-html-and-supabasepublished-true-5apm</link>
-      <guid isPermaLink="false">https://dev.to/naavvviiinnnn/how-i-built-a-live-global-scoreboard-for-0-using-static-html-and-supabasepublished-true-5apm</guid>
-      <description>[Score: 80] 記事では、静的HTMLとSupabaseの無料枠を活用し、サーバーレスでライブグローバルスコアボードを構築した事例を紹介しています。 / トラフィック急増時でもデータベースが破綻しないよう、クリックごとにイベントを記録せず、国別カウントを更新する設計を採用。 / WebSocketではなく2秒ごとのポーリングと、匿名ユーザーからの直接更新を防ぐための権限設定により、コストとパフォーマンスを最適化しています。 (Source: Dev.to)</description>
-      <pubDate>Sat, 01 Aug 2026 22:15:19 +0000</pubDate>
+      <title>日本におけるクラウドネイティブコミュニティの開発者数が約100万人に、CNCFが調査結果を発表</title>
+      <link>https://www.publickey1.jp/blog/26/100cncf.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/100cncf.html</guid>
+      <description>[Score: 85] CNCFとSlashDataの調査により、日本におけるクラウドネイティブ開発者数が約100万人に到達したと発表されました。 / 世界全体のクラウドネイティブ開発者数は1990万人で、日本での導入は過去2年間で大幅に増加しています。 / Kubernetesなどのクラウドネイティブ技術が日本のソフトウェア業界全体で浸透している現状を示す重要な指標です。 (Source: Publickey)</description>
+      <pubDate>Sun, 02 Aug 2026 15:28:02 +0000</pubDate>
     </item>
     <item>
-      <title>Dependabotを飼いならす：アップデートをグループ化し、頻度を減らし、セキュリティを迅速に保つ</title>
-      <link>https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/</guid>
-      <description>[Score: 80] Dependabotによる頻繁なプルリクエストが開発者の負担となり、重要なアップデートが見過ごされる問題が指摘されています。 / `dependabot.yml`の設定を調整することで、アップデートをグループ化し、頻度を減らす具体的な方法が紹介されています。 / これにより、日常的なメンテナンスのノイズを減らしつつ、セキュリティ関連の重要なアップデートは迅速に適用できるバランスの取れた運用が可能になります。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 29 Jul 2026 16:00:00 +0000</pubDate>
+      <title>JetBrains、AIが少ないトークンでコンテキストを取得しやすく、よりよいコード生成を可能にする「JetBrains Context」発表</title>
+      <link>https://www.publickey1.jp/blog/26/jetbrainsaijetbrains_context.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/jetbrainsaijetbrains_context.html</guid>
+      <description>[Score: 85] JetBrainsが、AIエージェントによるコード生成を効率化する新サービス「JetBrains Context」を発表しました。 / このサービスは、コードリポジトリを事前に読み込み、インデックスを構築することで、AIエージェントが少ないトークンで適切なコンテキストを迅速に取得できるようにします。 / これにより、Claude CodeやOpenAI CodexなどのAIエージェントが、より正確で高品質なコードを生成できるようになります。 (Source: Publickey)</description>
+      <pubDate>Thu, 30 Jul 2026 17:48:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>269のShopifyストアでLighthouseを実行した結果、モバイルの中央値スコアは48だった</title>
+      <link>https://dev.to/bkocdur/i-ran-lighthouse-on-269-shopify-stores-the-median-mobile-score-was-48-3p3e</link>
+      <guid isPermaLink="false">https://dev.to/bkocdur/i-ran-lighthouse-on-269-shopify-stores-the-median-mobile-score-was-48-3p3e</guid>
+      <description>[Score: 85] 著者が269のShopifyストアでGoogle Lighthouseを実行したところ、モバイルの中央値スコアが48という低い結果でした。 / 大手ブランドも例外ではなく、アプリスクリプトの多重化、レンダリングをブロックするCSS/JS、過大なヒーロー画像などが主な原因です。 / 多くのストアがクローラー最適化に注力しつつも、顧客体験に直結する表示速度の改善を怠っている現状が浮き彫りになりました。 (Source: Dev.to)</description>
+      <pubDate>Sun, 02 Aug 2026 22:09:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>Show HN: Kakehashi – Linux ARM上でmacOSバイナリを実行する実験的なユーザースペース</title>
+      <link>https://github.com/wie-project/kakehashi</link>
+      <guid isPermaLink="false">https://github.com/wie-project/kakehashi</guid>
+      <description>[Score: 80] 「Kakehashi」は、macOS ARM64バイナリをLinux aarch64上で実行するための実験的なユーザースペース変換レイヤーです。 / JITなしでDarwin Mach-OをLinux上でロードし、BSDシステムコールを変換することで、clangや7-Zip、curlなどの実際のmacOSバイナリを実行可能にします。 / Docker/ColimaやUTM上で動作が検証されており、異なるOSアーキテクチャ間でのバイナリ互換性実現に向けた興味深いアプローチを示しています。 (Source: Hacker News)</description>
+      <pubDate>Sun, 02 Aug 2026 16:26:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>検証！Claude Codeのサブエージェント並列はお得なのか</title>
+      <link>https://qiita.com/tamashiro_nobuyuki/items/ff9004b66b7761c4d34c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/tamashiro_nobuyuki/items/ff9004b66b7761c4d34c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Claude Codeのサブエージェント並列実行が、所要時間、トークン消費、メイン文脈増加量に与える影響を検証。 / 独立した複数タスクを並列で実行すると、所要時間が短縮され、トークン消費も大幅に削減されることを確認。 / キャッシュ共有が効率化の鍵であり、独立タスクはまとめて並列で投げた方が「速くも安くもなる」と結論。 (Source: Qiita)</description>
+      <pubDate>Fri, 31 Jul 2026 01:46:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>カリフォルニア州のデータブローカーは8月1日から個人データ削除要求に応じる必要あり</title>
+      <link>https://www.reddit.com/r/technology/comments/1vdrugg/california_data_brokers_must_start_deleting/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vdrugg/california_data_brokers_must_start_deleting/</guid>
+      <description>[Score: 80] カリフォルニア州のデータブローカーは、8月1日より個人データの削除要求に応じることが義務付けられます。 / これは、カリフォルニア州のデータプライバシー規制がさらに強化されることを意味します。 / データブローカー業界と個人情報保護に大きな影響を与える重要な動きです。 (Source: Reddit)</description>
+      <pubDate>Sun, 02 Aug 2026 19:57:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>大阪・関西万博関連ドメインの一部で起きているドロップキャッチについてまとめてみた</title>
+      <link>https://piyolog.hatenadiary.jp/entry/2026/08/02/165033</link>
+      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/08/02/165033</guid>
+      <description>[Score: 80] 大阪・関西万博関連事業で過去に使用された複数のドメインが、運用終了後に第三者によって取得されている問題が報告されています。 / 協会はこれらのドメインが現在の事業とは無関係であると注意喚起しており、一部では旧用途と無関係なコンテンツが表示されています。 / ドメインのドロップキャッチによる情報混同やセキュリティリスクの可能性について警鐘を鳴らしています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 02 Aug 2026 09:00:51 +0000</pubDate>
     </item>
   </channel>
 </rss>
