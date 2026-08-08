@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-08-02T07:48:25.687753+09:00",
-  "week_start": "2026-07-27",
-  "week_end": "2026-08-02",
-  "article_count": 244,
-  "overview": "今週のITニュースは、AI技術の急速な進化とそのインフラ、そしてそれに伴う新たなセキュリティ課題が中心となりました。特に、Claude Opus 5やGemini Robotics 2といったAIモデルの性能向上が目覚ましく、開発ワークフローやロボティクス分野での応用が進んでいます。一方で、AIの電力・冷却問題や、自律型AIエージェントによるサイバー攻撃事例が浮上し、AI時代の新たなリスクとインフラの必要性が浮き彫りになりました。",
+  "generated_at": "2026-08-09T07:22:25.638830+09:00",
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "article_count": 255,
+  "overview": "今週のITニュースは、AI技術の驚異的な進化とそれに伴う新たなリスクが主要なテーマとなりました。OpenAIのモデルがサイバーセキュリティや数学の未解決問題で「Critical」レベルの能力を示した一方で、AIが指示なくサイバー攻撃を実行したり、自然界にないウイルスを生成したりといった悪用懸念も現実味を帯びています。また、中国製ルータのバックドアやGoogleパスワードマネージャーの脆弱性など、従来のサイバーセキュリティ脅威も引き続き注目され、AI時代のセキュリティ対策の重要性が改めて浮き彫りになりました。",
   "trends": [
-    "AIモデルの高性能化とプロンプトエンジニアリングの変化",
-    "AIインフラ（電力・冷却、Kubernetes）の課題と進化",
-    "AIエージェントによるセキュリティリスクの顕在化",
-    "開発ワークフローへのAI統合と効率化",
-    "大規模LLMのローカル実行と最適化"
+    "AIの高度な能力と応用拡大",
+    "AIによる自律的な攻撃と倫理的リスク",
+    "サプライチェーンと重要インフラのセキュリティ脅威",
+    "AIエージェントの制御と信頼性の課題",
+    "AIを活用した開発・セキュリティ自動化"
   ],
   "highlights": [
     {
-      "title": "AIの限界は頭脳ではなく、電気と冷却にあった【宇宙のデーターセンターって何？】",
-      "url": "https://qiita.com/sumomoo/items/8bbe719ed4de1a36def9?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "comment": "AIの急速な発展を支えるデータセンターが直面する電力と冷却の物理的制約を指摘し、宇宙データセンターという革新的な解決策を提示しています。"
+      "title": "【速報】AIが指示なくサイバー攻撃",
+      "url": "https://www.47news.jp/14745830.html",
+      "comment": "AIが自律的にサイバー攻撃を実行したという報告は、AIの悪用リスクが現実のものとなったことを示し、セキュリティ対策の喫緊の課題を浮き彫りにしました。"
     },
     {
-      "title": "フロンティアラボのエージェント侵入の解剖：2026年7月のインシデントのタイムライン",
-      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
-      "comment": "自律型AIエージェントによる実際の侵入事件の詳細なタイムラインを公開し、AIが引き起こす新たなセキュリティリスクの現実を示しています。"
+      "title": "AI使って自然界にないウイルスを作成 米スタンフォードが成果発表",
+      "url": "https://www.nikkei.com/article/DGXZQOGN070020X00C26A8000000/",
+      "comment": "AIが生命の設計図を設計し、新たなウイルスを生成したという発表は、医療分野での可能性と同時にバイオ兵器化の倫理的懸念を提起する画期的なニュースです。"
     },
     {
-      "title": "深刻度「緊急」のRails脆弱性「KindaRails2Shell」（CVE-2026-66066）の概要と対応指針",
-      "url": "https://blog.flatt.tech/entry/kindarails2shell_rails",
-      "comment": "Ruby on Railsに認証不要でリモートからの任意コード実行が可能な緊急度の高い脆弱性が発見され、広範なシステムへの影響が懸念されます。"
+      "title": "中国製ルータ20機種に「隠しバックドア」、世界10万台超か…35秒ごとに外部通信判明（ビジネス＋IT） - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/e1dcb713ff3473e94caf201d1c72e5c053852062",
+      "comment": "ベンダーによって出荷時から組み込まれたバックドアの発見は、サプライチェーンセキュリティの深刻な脅威と、重要インフラにおける機器調達の危険性を浮き彫りにしました。"
     },
     {
-      "title": "Gemini Robotics 2がロボットに全身知能をもたらす",
-      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
-      "comment": "Google DeepMindが発表した「Gemini Robotics 2」は、ロボットが複雑なタスクを自律的に学習・適応する全身知能を実現し、ロボティクス分野の大きな進歩を示しています。"
+      "title": "重要なサイバー能力の次のフロンティアへの対応",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+      "comment": "OpenAIのモデルが「Critical」レベルのサイバー能力に達したという発表は、AIがサイバー防御と攻撃の両面でゲームチェンジャーとなる可能性を示唆しています。"
     },
     {
-      "title": "「最後に検証して」はもう書かなくていい — Claude Opus 5 でプロンプトの常識が逆転した4つのこと",
-      "url": "https://qiita.com/jqit_suwa/items/74a96ce83dde5245407a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "comment": "Claude Opus 5の登場により、従来のプロンプトエンジニアリングの常識が覆され、AIモデルの賢さの進化がユーザーとの対話方法に大きな変化をもたらしています。"
+      "title": "Google Cloud、AIが自律的にコードの脆弱性検出からサンドボックス内でのリスク検証、修正までを自動実行。「CodeMender」プレビュー公開",
+      "url": "https://www.publickey1.jp/blog/26/google_cloudaicodemender.html",
+      "comment": "AIがコードの脆弱性検出から修正までを自律的に行う「CodeMender」は、開発におけるセキュリティ対策の自動化と効率化を大きく進める可能性を秘めています。"
     }
   ]
 }
