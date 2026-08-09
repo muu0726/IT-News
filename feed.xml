@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 08 Aug 2026 22:22:25 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 22:23:26 +0000</lastBuildDate>
     <item>
-      <title>AIで完成度を上げたい、でも人間味のない完璧すぎる作品は嫌だ</title>
-      <link>https://qiita.com/sumomoo/items/cfe3c47453968b2d3c29?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/sumomoo/items/cfe3c47453968b2d3c29?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 95] AIとの効果的な付き合い方について、「コンテキストエンジニアリング」や「ループエンジニアリング」といった概念を解説しています。 / AIの進化に伴い、人間の役割が「AIに指示を出す人」から「AIが動く仕組みを作る人」へと変化していることを指摘しています。 / AIは成果物の7〜8割を生成するのに長けているが、残りの「人間味のある完璧さ」は依然として人間の手が必要であり、今後の差別化のポイントになると考察しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 07 Aug 2026 09:20:59 +0000</pubDate>
+      <title>「Agent Plugins 1.0.0」発表、異なるAIエージェント間でもスキルやMCPサーバ設定が共通化へ。マイクロソフト、OpenAI、AWS、Googleらがサポート</title>
+      <link>https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html</guid>
+      <description>[Score: 95] AIエージェントのスキルやMCPサーバー設定を異なるエージェント間で共通化する業界標準「Agent Plugins 1.0.0」が発表されました。 / マイクロソフト、OpenAI、AWS、Googleなど主要なAI企業がこの標準をサポートし、ベンダー間の設定互換性問題を解決します。 / これにより、ユーザーはAIエージェントごとに設定を書き換える手間が省け、AIの相互運用性と利便性が大幅に向上します。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 09 Aug 2026 13:31:00 +0000</pubDate>
     </item>
     <item>
-      <title>中国製ルータ20機種に「隠しバックドア」、世界10万台超か…35秒ごとに外部通信判明（ビジネス＋IT） - Yahoo!ニュース</title>
-      <link>https://news.yahoo.co.jp/articles/e1dcb713ff3473e94caf201d1c72e5c053852062</link>
-      <guid isPermaLink="false">https://news.yahoo.co.jp/articles/e1dcb713ff3473e94caf201d1c72e5c053852062</guid>
-      <description>[Score: 95] 中国Zbtlink製ルータ20機種に、外部からroot権限で操作可能なバックドア「ENDLESSDOORS」が組み込まれていることが判明しました。 / 世界で10万台以上が展開され、35秒ごとにC2サーバへ通信する仕組みで、CVE-2026-66747が割り当てられています。 / この問題は、IT機器調達におけるファームウェアやOEM供給元の確認の重要性を改めて示しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 07 Aug 2026 21:45:02 +0000</pubDate>
+      <title>Claude Code で「ループエンジニアリング」を実践してみた</title>
+      <link>https://zenn.dev/tetsu_don/articles/e40b95dfc726ac</link>
+      <guid isPermaLink="false">https://zenn.dev/tetsu_don/articles/e40b95dfc726ac</guid>
+      <description>[Score: 90] 「ループエンジニアリング」とは、人間がプロンプトを打つ代わりに、AIエージェント自身が自律的にタスクを繰り返すシステムを設計することであると定義しています。 / Cloud Loggingのエラー検知から原因調査、仕様書・コード修正、レビュー、プッシュまでの一連のフローをClaude Codeで自律化する実践例を紹介。 / LLMの評価歪曲を防ぐため、pytestのような客観的な自動判定ゲートをループに組み込み、Maker-Checkerモデルをサブエージェント機能で実現する設計原則の重要性を強調しています。 (Source: Zenn)</description>
+      <pubDate>Sat, 08 Aug 2026 04:39:01 +0000</pubDate>
     </item>
     <item>
-      <title>Intelはついにワットあたりの性能でARMを打ち負かすことができるのか？</title>
-      <link>https://hackaday.com/2026/08/08/want-energy-efficiency-dude-youre-getting-a-dell/</link>
-      <guid isPermaLink="false">https://hackaday.com/2026/08/08/want-energy-efficiency-dude-youre-getting-a-dell/</guid>
-      <description>[Score: 90] 最新のベンチマークテストで、Intel製CPUを搭載したDell XPS 13が、Apple Silicon（ARM）を搭載したMacBook Neoをワットあたりの性能で上回る結果を出しました。 / これは、歴史的にARMが電力効率で優位に立っていた状況を覆す可能性を示唆しており、Intelの技術革新が注目されます。 / 特にHPL Linpakテストでは、DellがMacBookを大きくリードし、M4 Mac Miniに次ぐ効率性を示しました。 (Source: Hacker News)</description>
-      <pubDate>Sat, 08 Aug 2026 16:04:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>Web API設計の現在地2026</title>
-      <link>https://qiita.com/tatsuya582/items/a800739c02eadff68c70?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/tatsuya582/items/a800739c02eadff68c70?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] Web API設計に関する最新の動向を、RFCやIETFドラフトなどの一次情報に基づいて解説しています。 / 特にエラーレスポンスの標準化（RFC 9457）やOAuthのグラントタイプの変化など、過去の記事では触れられていない重要な変更点に焦点を当てています。 / 2026年時点で従うべき設計指針と、その根拠を明確に示し、現代のAPI設計者が直面する課題と解決策を提示しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 07 Aug 2026 03:06:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>「AIを全員に配った組織」の生産性が落ちるとき</title>
-      <link>https://blog.takaumada.com/entry/ai-organization-flow</link>
-      <guid isPermaLink="false">https://blog.takaumada.com/entry/ai-organization-flow</guid>
-      <description>[Score: 90] 本記事は、交通工学の「ブライスのパラドックス」を例に、組織にAIを導入する際の落とし穴について考察しています。 / 個々人がAIを最適に利用しようとすることで、かえって組織全体の生産性が低下する可能性があると指摘。 / AI時代の経営では、単にツールを導入するだけでなく、どのプロセスを「なくす」かを見極めることが重要だと提言しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 08 Aug 2026 12:08:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>Zbtlink製ルータに出荷時組み込まれていたバックドアについてまとめてみた</title>
-      <link>https://piyolog.hatenadiary.jp/entry/2026/08/08/020650</link>
-      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/08/08/020650</guid>
-      <description>[Score: 90] 中国Zbtlink製ルータの出荷時ファームウェアに、遠隔操作用バックドア「ENDLESSDOORS」が組み込まれていたとVulnCheckが発表しました。 / このバックドアは外部からの侵害ではなく、ベンダー自身によって最初から組み込まれていたとされています。 / Zbtlinkはこれに対し独自の説明をしており、両者の見解は対立しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 07 Aug 2026 20:26:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>マルウェアアドバイザリをnpm以外にも拡大した方法</title>
-      <link>https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/</guid>
-      <description>[Score: 90] GitHubのDependabotが、これまでnpmのみだったマルウェアアドバイザリ機能を8つの主要なパッケージエコシステムに拡大しました。 / OpenSSFの悪意のあるパッケージデータを利用することで、PyPI、Maven、RubyGemsなど多様な言語のサプライチェーンセキュリティが強化されます。 / これにより、開発者は依存関係に潜むマルウェアの脅威からより広範に保護されるようになります。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 06 Aug 2026 16:51:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubの法務チームがCopilot CLIを使ってワークフローを効率化した方法</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/</guid>
-      <description>[Score: 88] GitHubの法務チームが、非技術職でありながらGitHub Copilot CLIを活用して、契約レビューや法務質問対応などの反復作業を効率化しました。 / 彼らは「自分にはコードは書けない」という思い込みを乗り越え、自然言語で指示を出すだけで独自のツールを構築し、生産性を向上させました。 / この事例は、AIツールが技術者だけでなく、あらゆる職種のワークフロー改善に貢献できる可能性を示しています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 04 Aug 2026 19:02:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>早期停止せずに：メモリ速度でソースコードのケースフォールディングを行う</title>
-      <link>https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/</guid>
-      <description>[Score: 87] GitHubのコード検索エンジン「Blackbird」は、1億8000万以上のリポジトリ、480TB以上のソースコードをインデックス化しており、大文字小文字を区別しない検索のためにケースフォールディングを多用します。 / この基本操作の速度が大規模環境では重要となるため、GitHubは最適化を行い、特にASCIIパスでは「早期停止」という従来の最適化を削除することで高速化を実現しました。 / その結果、Rustクレート「casefold」としてオープンソース化され、大文字小文字変換とは異なるケースフォールディングの重要性と高速化手法が示されています。 (Source: GitHub Blog)</description>
-      <pubDate>Fri, 31 Jul 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>「コーディングは決して難しい部分ではなかった」という言葉は、すべてのプログラマーへの侮辱である</title>
-      <link>https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers</link>
-      <guid isPermaLink="false">https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers</guid>
-      <description>[Score: 85] AI革命がプログラミングを含む多くの側面を変革する中、「LLMはコーディングが得意だが、ソフトウェア開発で難しいのはコーディングではなかった」という意見が広まっています。 / 筆者はこの意見をプログラマーへの侮辱だとし、もしコーディングが簡単なら、なぜプログラマーが高給で需要が高く、ストレスや燃え尽き症候群が蔓延するのかと問いかけます。 / 『Clean Code』や『The Art of Computer Programming』のような専門書が存在する理由や、プログラミング教育の必要性を挙げ、コーディングの難しさと価値を再認識するよう主張しています。 (Source: Hacker News)</description>
-      <pubDate>Sat, 08 Aug 2026 14:32:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>Redditのヘッジファンド、クオンツトピックをGrokタスクで毎週自動収集する</title>
-      <link>https://zenn.dev/gamella/articles/1fc2949daf99de</link>
-      <guid isPermaLink="false">https://zenn.dev/gamella/articles/1fc2949daf99de</guid>
-      <description>[Score: 85] Redditのr/quantやr/algotrading、Xからヘッジファンドの実務に役立つクオンツトピックをGrokのタスク機能で自動収集する方法が紹介されています。 / 「儲けるネタ」ではなく「ヘッジファンドで採用されている」「トピックとして役立つ」という条件でフィルタリングすることで、質の高い情報を効率的に得られます。 / この自動化により、海外の実務者が何を標準とし、何に悩んでいるかを定点観測し、ディープリサーチの素材として活用できます。 (Source: Zenn)</description>
-      <pubDate>Sat, 08 Aug 2026 01:45:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>自作BIツール × DWHで挑むデータの民主化</title>
-      <link>https://zenn.dev/finatext/articles/crest-bi-dwh-data-democratization</link>
-      <guid isPermaLink="false">https://zenn.dev/finatext/articles/crest-bi-dwh-data-democratization</guid>
-      <description>[Score: 85] 社内AIコンテストにおいて、自作BIツールとSnowflake DWHを連携させ、非エンジニアがGUIでDWHにクエリできる「データの民主化」に挑んだ体験記です。 / 基盤構築チームと業務システム開発チームが連携し、分析依頼のエンジニア依存やデータアクセスの課題を解決することを目指しました。 / 業務ユースケースの解像度を高め、データ活用を促進するための具体的なアプローチと、その過程で見えてきた課題が共有されています。 (Source: Zenn)</description>
-      <pubDate>Fri, 07 Aug 2026 02:00:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>手を動かしてStacked pull requestのgh stackを理解してみた</title>
-      <link>https://zenn.dev/kesin11/articles/20260806_stacked_pr</link>
-      <guid isPermaLink="false">https://zenn.dev/kesin11/articles/20260806_stacked_pr</guid>
-      <description>[Score: 85] GitHubが公開プレビューを開始した「Stacked pull request」機能について、gh stackコマンドを用いた具体的な利用方法を解説しています。 / この機能は、大きなプルリクエストを複数の小さなプルリクエストに分割して管理する開発手法をGitHub上でサポートするものです。 / 記事ではTODOアプリの型定義を例に、gh stack initなどのセットアップ手順を詳細に紹介しています。 (Source: Zenn)</description>
-      <pubDate>Thu, 06 Aug 2026 23:00:05 +0000</pubDate>
+      <title>経費精算アプリもExcelも捨てる。Claude Desktop（MCP）＋マネーフォワードAPIで経理を完全自動化した話</title>
+      <link>https://zenn.dev/yuichirominato/articles/dc8cf3915f1c6f</link>
+      <guid isPermaLink="false">https://zenn.dev/yuichirominato/articles/dc8cf3915f1c6f</guid>
+      <description>[Score: 90] ClaudeとMCP（Model Context Protocol）を活用し、マネーフォワードAPIを直接操作することで経理業務をほぼ完全に自動化。 / 従来の経費精算アプリやExcel、マネーフォワードのUI操作が不要になり、レシート写真をチャットに投げるだけで処理が完結。 / AIによるAPIのプログラマブルな操作が、人間によるUI操作の必要性を薄め、経理業務の効率化と価値観の変革を促す。 (Source: Zenn)</description>
+      <pubDate>Sat, 08 Aug 2026 02:14:37 +0000</pubDate>
     </item>
     <item>
       <title>アプリが遅い原因をAIがトレースログから分析してくれる「Windows Performance Analyzer MCP」（WPA MCP）、マイクロソフトがプレビュー公開</title>
       <link>https://www.publickey1.jp/blog/26/aiwindows_performance_analyzer_mcpwpa_mcp.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiwindows_performance_analyzer_mcpwpa_mcp.html</guid>
-      <description>[Score: 85] Windowsアプリのパフォーマンス分析ツール「Windows Performance Analyzer」（WPA）に、AIアシスタント機能「MCP」が追加され、早期プレビューが公開されました。 / WPA MCPは、GitHub Copilot CLIを統合し、自然言語での指示や質問に基づいてトレース分析を実行し、ボトルネックを特定するのを支援します。 / これにより、専門知識がなくてもWindowsアプリのパフォーマンス問題の原因究明が容易になり、開発者の生産性向上が期待されます。 (Source: Publickey)</description>
+      <description>[Score: 90] マイクロソフトが、Windowsアプリのパフォーマンス問題をAIで分析する「Windows Performance Analyzer MCP」（WPA MCP）のプレビューを公開しました。 / GitHub Copilot CLIを統合し、自然言語でトレース分析の指示や質問が可能になり、専門知識がなくてもボトルネックを特定しやすくなります。 / CPU、ファイル処理、ネットワーク帯域など、パフォーマンス低下の原因をAIが特定し、開発者のデバッグ作業を大幅に効率化します。 (Source: Publickey)</description>
       <pubDate>Tue, 04 Aug 2026 15:36:16 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub Copilotアプリにおけるスラッシュコマンドのガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/</guid>
-      <description>[Score: 85] GitHub Copilotアプリで利用できるスラッシュコマンドは、セッション管理、プロジェクトナビゲーション、ワークフローのカスタマイズを効率化します。 / CLI版とは異なり、アプリ版では視覚的なインターフェースがあるため、ファイルアクセス関連のコマンドは不要で、ワークフロー中心の機能を提供します。 / これらのシンプルなショートカットは、Copilotとのインタラクションを大きく変え、開発者の生産性向上に貢献します。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 06 Aug 2026 19:49:34 +0000</pubDate>
+      <title>npm代替を目指すセキュリティファーストなパッケージマネージャ「vlt」バージョン1.0に到達。npmのミラーレジストリ、プライベートレジストリも提供開始</title>
+      <link>https://www.publickey1.jp/blog/26/npmvlt10npm.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/npmvlt10npm.html</guid>
+      <description>[Score: 88] npmの代替を目指すセキュリティファーストなJavaScriptパッケージマネージャ「vlt」がバージョン1.0に到達しました。 / npm互換性を持ちつつ、レジストリ層でのマルウェアブロック、高速な配信、グラフネイティブなクエリといった特徴を持ちます。 / npmミラーレジストリやプライベートレジストリ「vsr」の有料ホスティングサービスも提供開始され、セキュリティとパフォーマンスの向上に貢献します。 (Source: Publickey)</description>
+      <pubDate>Wed, 05 Aug 2026 18:03:20 +0000</pubDate>
     </item>
     <item>
-      <title>AIが生成した巨大なプルリクエストをレビュー可能なスタックに変換する方法</title>
+      <title>AIエージェントが設定を変更しました。安全にロールバックできますか？</title>
+      <link>https://dev.to/zira125/your-ai-agent-changed-its-config-can-you-roll-it-back-safely-4abk</link>
+      <guid isPermaLink="false">https://dev.to/zira125/your-ai-agent-changed-its-config-can-you-roll-it-back-safely-4abk</guid>
+      <description>[Score: 88] AIエージェントの設定変更は、その影響範囲の広さから、コードデプロイよりも危険な場合があることを指摘しています。 / 単純な設定ファイルのロールバックでは、進行中の作業に生じた副作用を元に戻せないため、不十分であると述べています。 / 安全なロールバックのためには、設定のリビジョン管理を徹底し、各変更を詳細なメタデータと共に保存し、段階的なプロモーションとカナリアテストを行うべきだと提唱しています。 (Source: Dev.to)</description>
+      <pubDate>Sun, 09 Aug 2026 21:54:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>コモンズの悲劇、AI版</title>
+      <link>https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition</link>
+      <guid isPermaLink="false">https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition</guid>
+      <description>[Score: 85] AIの急速な発展が、共有資源の過剰利用や枯渇といった「コモンズの悲劇」を引き起こす可能性について考察しています。 / AI技術の倫理的・社会的な側面、特に規制やガバナンスの必要性が議論の焦点となるでしょう。 / 持続可能なAIの発展と、その恩恵を公平に享受するための課題を提起しています。 (Source: Hacker News)</description>
+      <pubDate>Sun, 09 Aug 2026 19:43:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>Web API設計の現在地2026</title>
+      <link>https://qiita.com/tatsuya582/items/a800739c02eadff68c70?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/tatsuya582/items/a800739c02eadff68c70?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] 2015年以降のWeb API設計の進化をまとめ、2026年時点で従うべき標準やデファクトスタンダードをRFCやIETFドラフトに基づき解説。 / 特にエラーレスポンスの標準化（RFC 9457）が大きく進展し、HTTPステータスコードとアプリ固有のエラー識別子の両立が重要に。 / Java/C#系フレームワークでは標準が導入されつつあるが、JS/TS系では設計者の判断が依然として求められる現状を指摘。 (Source: Qiita)</description>
+      <pubDate>Fri, 07 Aug 2026 03:06:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Amazonの新しい7.65GWテキサスAIデータセンター発電所が米国最大のCO₂汚染源になる可能性 — カスタム35タービンガスプラントは年間3300万トンの温室効果ガス排出を許可</title>
+      <link>https://www.reddit.com/r/technology/comments/1vjwpko/amazons_new_765gw_texas_ai_data_center_power/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vjwpko/amazons_new_765gw_texas_ai_data_center_power/</guid>
+      <description>[Score: 85] Amazonがテキサス州に建設予定のAIデータセンター向け発電所が、米国最大のCO₂排出源となる可能性が指摘されています。 / 7.65GWの電力供給を目的とした35タービンのガスプラントは、年間3300万トンの温室効果ガス排出が許可されています。 / AI需要の急増が環境負荷に与える影響について、大きな懸念が提起されています。 (Source: Reddit)</description>
+      <pubDate>Sun, 09 Aug 2026 18:04:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cloudflareの学習教材</title>
+      <link>https://cloudflare-study.komiyamma.net/</link>
+      <guid isPermaLink="false">https://cloudflare-study.komiyamma.net/</guid>
+      <description>[Score: 85] Cloudflareの基本理念から主要サービス（Workers, R2, AI, Zero Trustなど）までを網羅した学習教材です。 / Webの仕組み、サーバーレス、ローカル開発、デプロイ、パフォーマンス最適化、セキュリティ、データ保存（KV, D1, R2）など広範なトピックを扱います。 / Workers AIやDurable Objects、Cron Triggersといった先進的な機能の活用法も学べ、実践的な開発スキル習得を目指します。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 05 Aug 2026 09:45:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>1Password、ダッシュボードから組織のAI支出状況を表示する新機能。ClaudeやCursor、ChatGPTなど複数AIに対応</title>
+      <link>https://www.publickey1.jp/blog/26/1passwordaiclaudecursorchatgptaii.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/1passwordaiclaudecursorchatgptaii.html</guid>
+      <description>[Score: 85] 1PasswordがSaaS ManagerにAIサービスの支出管理機能を追加しました。 / Claude、ChatGPT、Cursorなど複数のAIサービスに対する組織の支出状況をリアルタイムで表示・管理できます。 / チームやユーザー、AIサービスごとの支出把握に加え、予算設定やアラート機能も提供し、AIコストの最適化を支援します。 (Source: Publickey)</description>
+      <pubDate>Tue, 04 Aug 2026 15:38:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>マルウェアアドバイザリをnpm以外にも拡大した方法</title>
+      <link>https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/</link>
+      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/</guid>
+      <description>[Score: 85] GitHubがマルウェアアドバイザリの対象をnpmだけでなく、PyPI、Mavenなど8つの主要なパッケージエコシステムに拡大した経緯を説明しています。 / OpenSSFの悪意のあるパッケージデータをGitHub Advisory Databaseに取り込むことで、サプライチェーンセキュリティを大幅に強化。 / これにより、より広範な開発者が依存関係のマルウェアから保護されるようになります。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 06 Aug 2026 16:51:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>LLMを使って複雑なトピックを学ぶ方法</title>
+      <link>https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/</link>
+      <guid isPermaLink="false">https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/</guid>
+      <description>[Score: 80] 著者はLLMのシンプルな説明スタイルに不満を感じ、より効果的な学習方法を模索しました。 / チップ製造プロセスを学ぶために、LLMにゲーム形式での説明を依頼するフローを考案。 / その結果、視覚的で正確なアニメーション「ChipTycoon」が生成され、従来の学習法より効果的だったと報告しています。 (Source: Hacker News)</description>
+      <pubDate>Sun, 09 Aug 2026 19:16:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>C# 15+の新DIパターン: 内部はinterfaceで疎結合、公開APIはunionで型の許容範囲を制御</title>
+      <link>https://zenn.dev/inuinu/articles/csharp15-new-di-interface-union-closed</link>
+      <guid isPermaLink="false">https://zenn.dev/inuinu/articles/csharp15-new-di-interface-union-closed</guid>
+      <description>[Score: 80] C# 15以降で導入されるunion型とclosed修飾子を活用した、新しい依存性注入（DI）パターンを提案しています。 / 従来のinterfaceによるDIでは型の許容範囲が広すぎた課題に対し、union型やclosed修飾子を用いることで、公開APIで受け付ける型を特定の選択肢に限定できると解説。 / これにより、ライブラリなどでユーザーに特定の選択肢から選ばせたい場合に、より厳密な型制御が可能になるメリットと、テスト時の考慮事項について触れています。 (Source: Zenn)</description>
+      <pubDate>Sat, 08 Aug 2026 13:09:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>【AWS】Bedrock MantleがAPI キーレスで使えるっぽいのでやってみた</title>
+      <link>https://qiita.com/yakumo_09/items/210e60518b5bb7dbc4e0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yakumo_09/items/210e60518b5bb7dbc4e0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] AWS Bedrock Mantleの認証方法について、従来のAPIキーだけでなくAWS SigV4認証も利用可能であることを検証。 / APIキーの管理が不要になることで、よりセキュアかつ簡便な認証プロセスを実現できる可能性を示す。 / モデルに依存しない認証方式や、botocoreとrequestsを使ったSigV4認証の実装例を具体的に紹介。 (Source: Qiita)</description>
+      <pubDate>Sat, 08 Aug 2026 20:58:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>ミッチェル・ハシモト氏が新会社「Superlogical」を設立、あらゆる仕事に使えるマルチプレクサの開発へ</title>
+      <link>https://www.publickey1.jp/blog/26/superlogical.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/superlogical.html</guid>
+      <description>[Score: 80] HashiCorp共同創業者のミッチェル・ハシモト氏が新会社「Superlogical」を設立し、「あらゆる仕事に使えるマルチプレクサ」の開発に着手しました。 / 最初の製品はtmuxやGNU screenのようなターミナルマルチプレクサですが、より広範な用途を目指すビジョンを持っています。 / マルチプレクサは単一ターミナルで複数セッションを管理し、セッションの永続化や再接続を可能にするため、開発者の作業効率向上に貢献します。 (Source: Publickey)</description>
+      <pubDate>Thu, 06 Aug 2026 15:26:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>パターン認識：トップコーダーのためのマトリックス的思考法</title>
+      <link>https://dev.to/timevolt/pattern-recognition-the-matrix-mindset-for-top-coders-2aee</link>
+      <guid isPermaLink="false">https://dev.to/timevolt/pattern-recognition-the-matrix-mindset-for-top-coders-2aee</guid>
+      <description>[Score: 80] 優れたプログラマーは、複雑なコードの中に隠されたパターンを認識し、抽象化する能力を持つと論じています。 / 冗長なif/else ifチェーンの例を挙げ、それが「キーに基づいて適切な変換をディスパッチする」という共通のパターンに帰着することを示します。 / このパターン認識により、コードの重複を避け、ディスパッチテーブルやストラテジーパターンといった設計パターンを適用することで、保守性と拡張性の高いコードを実現できると強調しています。 (Source: Dev.to)</description>
+      <pubDate>Sun, 09 Aug 2026 21:50:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIが生成した巨大なプルリクエストをレビュー可能なスタックに分割する方法</title>
       <link>https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/</link>
       <guid isPermaLink="false">https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/</guid>
-      <description>[Score: 82] AIコーディングエージェントは高い生産性を持つ一方で、巨大なプルリクエスト（PR）を生成しがちで、そのレビューは困難を伴います。 / この記事では、巨大なPRをレビューしやすい小さなPRの「スタック」に分割する手法を紹介し、AI生成コードのレビュープロセスを効率化します。 / これにより、AIによる生産性向上と、コード品質を維持するための効果的なレビューの両立が可能になります。 (Source: GitHub Blog)</description>
+      <description>[Score: 80] AIが生成する巨大なプルリクエスト（PR）がレビューを困難にするという課題に対処する方法を提案しています。 / 「スタック型プルリクエスト」という手法を用いて、一つの大きなPRをより小さく、管理しやすく、レビューしやすい一連のPRに分割。 / これにより、AIエージェントの生産性向上に伴うコードレビューの効率化を図ります。 (Source: GitHub Blog)</description>
       <pubDate>Tue, 04 Aug 2026 16:47:18 +0000</pubDate>
     </item>
     <item>
-      <title>ドメインがDNSで売却可能であることを示せるように</title>
-      <link>https://specification.website/spec/foundations/for-sale-dns/</link>
-      <guid isPermaLink="false">https://specification.website/spec/foundations/for-sale-dns/</guid>
-      <description>[Score: 80] RFC 10023により、DNSのTXTレコードに`_for-sale`という予約名を追加することで、ドメインが売却可能であることを示す新しい標準が定義されました。 / この仕組みは、ドメインがアクティブに使用されている状態でも売却意向を表明でき、既存のサイトやメールサービスに影響を与えません。 / WHOISやRDAP情報とは異なり、ドメインブローカーや自動化されたサービスが、売却希望のドメインを効率的に発見するためのチャネルを提供します。 (Source: Hacker News)</description>
-      <pubDate>Sat, 08 Aug 2026 13:26:51 +0000</pubDate>
+      <title>HNに質問: 何に取り組んでいますか？（2026年8月）</title>
+      <link>https://news.ycombinator.com/item?id=49233423</link>
+      <guid isPermaLink="false">https://news.ycombinator.com/item?id=49233423</guid>
+      <description>[Score: 75] Hacker Newsの「今何に取り組んでいるか」という恒例の質問スレッド、2026年8月版です。 / ユーザーはAIを活用した採用プラットフォーム「Hiring Method」を開発しており、CVと職務要件を数学的にマッチングさせます。 / 他のユーザーは、AIエージェントと連携するスケウモーフィックな木工シミュレーターを構築中であると報告しています。 (Source: Hacker News)</description>
+      <pubDate>Sun, 09 Aug 2026 17:23:22 +0000</pubDate>
     </item>
     <item>
-      <title>楽観ロックの実装でおさえたいポイントと、よくあるしくじり</title>
-      <link>https://zenn.dev/levtech/articles/how-to-concrete-optimistic-lock</link>
-      <guid isPermaLink="false">https://zenn.dev/levtech/articles/how-to-concrete-optimistic-lock</guid>
-      <description>[Score: 80] 並行処理における更新データの喪失や一貫性のない読み込みといった問題を解決する「楽観ロック」の実装方法と注意点が解説されています。 / データベースのトランザクションだけでは対応できない、アプリケーション上の作業単位とDBトランザクションの粒度のずれを補完する仕組みとして重要です。 / バージョンカラムの追加や更新時のチェックなど、具体的な実装ポイントがPHP/Laravelの例を交えて説明されており、多くの開発者に役立つ内容です。 (Source: Zenn)</description>
-      <pubDate>Fri, 07 Aug 2026 03:03:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>わかるようでわからないssh接続について</title>
-      <link>https://qiita.com/hrfm1623/items/91115760e4bd66f7995a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/hrfm1623/items/91115760e4bd66f7995a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] SSH接続の仕組みについて、表面的な操作だけでなく内部で何が起きているかを深掘りして解説しています。 / 特に、鍵交換のプロセスや暗号化の仕組みといった、多くの人が疑問に感じる点を詳細なデバッグログを交えて説明しています。 / ncコマンドを使ったTCP接続の観察など、実践的なアプローチでSSHの基礎を理解するための手助けとなる記事です。 (Source: Qiita)</description>
-      <pubDate>Fri, 07 Aug 2026 11:10:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cloudflare、ボットが人間の1,000倍のインターネットトラフィックを生成し、人間が「誤差」になる可能性を指摘</title>
-      <link>https://www.reddit.com/r/technology/comments/1vivxn6/cloudflare_says_humans_could_become_a_rounding/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vivxn6/cloudflare_says_humans_could_become_a_rounding/</guid>
-      <description>[Score: 80] Cloudflareが、インターネットトラフィックの大部分がボットによって生成されており、その量が人間のトラフィックの1,000倍に達する可能性を指摘しました。 / この傾向が続けば、インターネット上での人間の活動が「誤差」程度の存在になるかもしれないと警鐘を鳴らしています。 / AIや自動化技術の進化がインターネットの利用形態に与える根本的な変化と、それに伴う課題が浮き彫りになります。 (Source: Reddit)</description>
-      <pubDate>Sat, 08 Aug 2026 13:22:43 +0000</pubDate>
+      <title>UKIさん、Hohetoさんの「勝てる戦略は誰が負けてくれるかを説明できる」をクオンツ視点で読み解く</title>
+      <link>https://zenn.dev/gamella/articles/d5ad80722d01ae</link>
+      <guid isPermaLink="false">https://zenn.dev/gamella/articles/d5ad80722d01ae</guid>
+      <description>[Score: 75] 投資戦略が成功するためには「誰が負けてくれるか」を説明できる必要があるというUKI氏の発言を、クオンツの視点から深掘りしています。 / 移動平均乖離の逆張り戦略を例に、市場のモメンタム行動とリバーサル行動の構成比が戦略の期待リターンを決定すると解説。 / オルタナティブデータの真の価値は、情報優位性だけでなく、そのデータを見ていない「負け手」を定義し、戦略の根拠を明確にすることにあると論じています。 (Source: Zenn)</description>
+      <pubDate>Sun, 09 Aug 2026 02:01:16 +0000</pubDate>
     </item>
   </channel>
 </rss>
