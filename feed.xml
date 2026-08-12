@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 11 Aug 2026 22:35:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 22:35:14 +0000</lastBuildDate>
     <item>
-      <title>プロプライエタリLLM APIから推論トレースを盗む</title>
-      <link>https://stolen-thoughts.com/</link>
-      <guid isPermaLink="false">https://stolen-thoughts.com/</guid>
-      <description>[Score: 95] 本記事は、プロプライエタリLLMのAPIから、その内部的な推論プロセス（思考トレース）を抽出する手法を解説しています。 / モデルプロバイダーがクライアントに返す暗号化された思考ブロックを、より弱い脱獄済みモデルに注入することで、強力なモデルの生推論を verbatim で抽出できることを実証しています。 / この手法は、LLMのセキュリティと透明性に関する新たな課題を提起し、モデルの内部動作を理解する上で重要な意味を持ちます。 (Source: Hacker News)</description>
-      <pubDate>Tue, 11 Aug 2026 13:22:00 +0000</pubDate>
+      <title>ドローンのカメラが中国のIPアドレスに信号を送信していることが判明、イギリス海軍がカメラのインターネット接続機能を無効化しなければいけない事態に</title>
+      <link>https://gigazine.net/news/20260812-spy-cameras-navy-drones-secretly-sent-data-china/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20260812-spy-cameras-navy-drones-secretly-sent-data-china/</guid>
+      <description>[Score: 95] イギリス海軍の無人偵察艇「K3スカウト」に搭載されたカメラが、中国のIPアドレスに信号を送信していることがサイバー脆弱性評価で判明しました。 / これを受け、イギリス海軍は当該カメラのインターネット接続機能を無効化する措置を取りました。 / 軍事利用されるIoTデバイスにおけるサプライチェーンセキュリティと国家間の情報漏洩リスクの深刻さを示す事例です。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 12 Aug 2026 13:07:16 +0000</pubDate>
     </item>
     <item>
-      <title>Mojo 1.0</title>
-      <link>https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here</link>
-      <guid isPermaLink="false">https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here</guid>
-      <description>[Score: 90] Mojo言語が正式にバージョン1.0に到達し、安定した本番環境対応の言語基盤が提供されました。 / これにより、開発者は長期的なプロジェクトを安心して構築できるようになります。 / Mojoは汎用言語として成長し、活発な開発者コミュニティがライブラリやツール、アプリケーションを構築しています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 11 Aug 2026 16:56:46 +0000</pubDate>
+      <title>コーダーからオーケストレーターへ：エージェントが開発者の役割をどう変えるか</title>
+      <link>https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/</link>
+      <guid isPermaLink="false">https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/</guid>
+      <description>[Score: 92] AIエージェントの登場により、開発者の役割が「コーダー」から「オーケストレーター」へと変化していることを論じています。 / 単一プロンプトでのデモは容易ですが、信頼性と安全性を備えたコード生成システムには、反復可能なワークフロー設計が必要です。 / GitHub Copilotは、コードの提案、検証、レビュー、デプロイを管理するコントロールプレーンとして機能し、開発者はエージェントを調整する役割を担います。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 11 Aug 2026 18:38:17 +0000</pubDate>
     </item>
     <item>
-      <title>1日500コミットを日常にするツールを作りました ── これを使えばだれでも余裕です</title>
-      <link>https://zenn.dev/singularity/articles/ever-better-pm2</link>
-      <guid isPermaLink="false">https://zenn.dev/singularity/articles/ever-better-pm2</guid>
-      <description>[Score: 90] AIを活用し、コードレビューなしで1日500コミットを可能にする自動化ツール「ever-better」が公開されました。 / このツールは、AIにコード生成と品質改善を任せ、人間は判断と確認に集中することで開発効率を劇的に向上させます。 / 既存の有名プロジェクト「pm2」をTypeScript化する事例を通じて、ツールの効果と、AIが見つけるバグの存在が示されています。 (Source: Zenn)</description>
-      <pubDate>Mon, 10 Aug 2026 23:47:57 +0000</pubDate>
+      <title>Tailscaleがデータベース破損の原因を16年前のSQLite WAL-Resetバグと特定</title>
+      <link>https://tailscale.com/blog/sqlite-wal-reset-bug</link>
+      <guid isPermaLink="false">https://tailscale.com/blog/sqlite-wal-reset-bug</guid>
+      <description>[Score: 90] Tailscaleは、数ヶ月にわたるサービス不安定性の原因が、SQLiteの16年前のWAL-Resetバグにあることを突き止めました。 / 同社は詳細な調査とフォレンジック分析を経てバグを特定し、修正したことを報告しています。 / この経験は、広く利用されているデータベースシステムにおける長年のバグの発見と、その対応の重要性を示しています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 12 Aug 2026 14:22:30 +0000</pubDate>
     </item>
     <item>
-      <title>Google、Geminiが他のどのGoogle製品よりも速く10億ユーザーに到達したと発表</title>
-      <link>https://www.reddit.com/r/technology/comments/1vls9t0/google_says_gemini_has_reached_1b_users_faster/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vls9t0/google_says_gemini_has_reached_1b_users_faster/</guid>
-      <description>[Score: 90] Googleは、AIモデル「Gemini」が史上最速で10億ユーザーに到達したと発表しました。 / これは、Geminiの急速な普及と、AI技術に対する高い需要を示しています。 / GoogleのAI戦略の成功と、市場におけるその影響力を裏付けるものです。 (Source: Reddit)</description>
-      <pubDate>Tue, 11 Aug 2026 20:00:37 +0000</pubDate>
+      <title>RAGに古い情報で答えさせないためには？&quot;コンバージド&quot;データベースから考えるAI時代のデータ基盤</title>
+      <link>https://qiita.com/yushibats/items/9dd91baaa89c919d0992?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yushibats/items/9dd91baaa89c919d0992?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 生成AIやAIエージェントの活用におけるデータ基盤として、「コンバージドデータベース」の概念を解説しています。 / リレーショナル、ドキュメント、ベクトルなど多様なデータモデルを単一のデータベースエンジンで扱うアプローチです。 / RAGシステムでAIに古い情報で答えさせないためのデータ管理の重要性と、その解決策としてのコンバージドDBの利点が示されています。 (Source: Qiita)</description>
+      <pubDate>Mon, 10 Aug 2026 13:24:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude がテキストに電子透かしを入れ始めたので、LLM ウォーターマーキングの仕組みを調べた</title>
+      <link>https://zenn.dev/hellorusk/articles/3328866ca9e922</link>
+      <guid isPermaLink="false">https://zenn.dev/hellorusk/articles/3328866ca9e922</guid>
+      <description>[Score: 90] AnthropicのClaudeが生成テキストに電子透かしを導入すると発表し、Googleも既にGeminiで実運用しているLLMウォーターマーキングの仕組みを解説。 / テキストへの電子透かしは、LLMが次の単語を選ぶ際の確率分布の「揺らぎ」を秘密鍵に基づきわずかに偏らせることで、統計的に検出可能な「癖」を埋め込む。 / KGW法を例に、テキスト品質低下や言い換えによる情報消失といった課題が、研究によりどのように解決されてきたかを紹介しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 12 Aug 2026 13:27:16 +0000</pubDate>
     </item>
     <item>
       <title>「Agent Plugins 1.0.0」発表、異なるAIエージェント間でもスキルやMCPサーバ設定が共通化へ。マイクロソフト、OpenAI、AWS、Googleらがサポート</title>
       <link>https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html</guid>
-      <description>[Score: 90] AWS、Microsoft、OpenAIなどが、AIエージェントのスキルやMCPサーバー設定を共通化する業界標準仕様「Agent Plugins 1.0.0」を発表しました。 / これにより、異なるベンダーのAIエージェント間でも設定ファイルを共有できるようになり、ユーザーの利便性が向上します。 / Googleも対応を表明しており、AIエージェントエコシステムの相互運用性を高める重要な一歩となります。 (Source: Publickey)</description>
+      <description>[Score: 90] AWS、マイクロソフト、OpenAI、Anysphere、Vercelが、異なるAIエージェント間でスキルやMCPサーバ設定を共通化する業界標準仕様「Agent Plugins 1.0.0」を発表しました。 / GoogleもこのAgent Pluginsへの対応を表明しており、主要なAI企業が連携してAIエージェントの相互運用性を高める動きが加速。 / これにより、ユーザーはベンダーごとに異なっていたAIエージェントの設定を共通のパッケージ形式で共有・利用できるようになり、開発効率と利便性が大幅に向上します。 (Source: Publickey)</description>
       <pubDate>Sun, 09 Aug 2026 15:19:33 +0000</pubDate>
     </item>
     <item>
-      <title>コーダーからオーケストレーターへ: エージェントが開発者の役割をどう変えるか</title>
-      <link>https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/</link>
-      <guid isPermaLink="false">https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/</guid>
-      <description>[Score: 90] AIエージェントの台頭が、開発者の役割を単なるコーディングからシステム全体のオーケストレーションへとシフトさせていることを論じています。 / GitHub Copilotのようなツールが、コードの提案、検証、レビュー、デプロイといったワークフロー全体を管理する「コントロールプレーン」として機能することを説明します。 / 開発者がエージェントを活用し、信頼性と再現性のあるソフトウェア開発プロセスを構築するための新しいアプローチとスキルセットについて考察しています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 11 Aug 2026 18:38:17 +0000</pubDate>
+      <title>あなたのコントリビューターはAIファーストになりました。あなたのプロジェクトもそうですか？</title>
+      <link>https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/</guid>
+      <description>[Score: 90] AIエージェントが生成したプルリクエストが急増する中で、オープンソースプロジェクトのメンテナーが直面する課題を議論しています。 / 多くのメンテナーはAI生成コードのレビュー負担を懸念する一方、AutoGPTの創設者はAIによる貢献を計算資源の節約と捉えています。 / AIエージェントはドキュメントを自律的に読まないため、エージェントが参照するディレクトリレベルに指示を配置するなどの工夫が重要です。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 12 Aug 2026 18:00:08 +0000</pubDate>
     </item>
     <item>
-      <title>npmを超えてマルウェアアドバイザリを拡大した方法</title>
-      <link>https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/</link>
-      <guid isPermaLink="false">https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/</guid>
-      <description>[Score: 90] GitHubのDependabotチームは、OpenSSFの悪意のあるパッケージデータに基づいて、マルウェアアドバイザリの対象をnpmだけでなく8つの主要なパッケージエコシステムに拡大しました。 / これにより、PyPI、Maven、RubyGems、NuGet、Go、crates.io、PHP Composerを含む幅広い依存関係でマルウェアの検出と警告が可能になります。 / サプライチェーン攻撃から開発者を保護するための重要な進展であり、GitHub Advisory Databaseが外部ソースからのマルウェアレポートを取り込む仕組みが強化されました。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 06 Aug 2026 16:51:12 +0000</pubDate>
+      <title>Qwen3.8-2.4T</title>
+      <link>https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B</link>
+      <guid isPermaLink="false">https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B</guid>
+      <description>[Score: 88] Qwen3.8は、Qwenオープンモデルファミリーの最新かつ最も高性能な大規模言語モデルです。 / コーディング、専門業務、研究、長期的エージェントタスクで大幅な性能向上を実現しています。 / Hugging Face Transformers形式でモデルウェイトが提供され、vLLMなどの推論エンジンと互換性があります。 (Source: Hacker News)</description>
+      <pubDate>Wed, 12 Aug 2026 15:01:17 +0000</pubDate>
     </item>
     <item>
-      <title>Nvidia Nemotron 3.5 LightningとNeMo Switchyard</title>
-      <link>https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/</link>
-      <guid isPermaLink="false">https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/</guid>
-      <description>[Score: 85] NVIDIAが、自律エージェントAIワークロード向けの効率的なオープンモデル「Nemotron 3.5 Lightning」を発表しました。 / これは300億パラメータのMixture-of-Expertsモデルで、よりスマートで効率的なエージェントアプリケーションの作成を支援します。 / また、エージェントツール内でリクエストを最適なモデルにルーティングするオープンソースライブラリ「NeMo Switchyard」もリリースされました。 (Source: Hacker News)</description>
-      <pubDate>Tue, 11 Aug 2026 19:35:52 +0000</pubDate>
+      <title>DeepSeek V4 Pro 0813</title>
+      <link>https://openrouter.ai/deepseek/deepseek-v4-pro-0813</link>
+      <guid isPermaLink="false">https://openrouter.ai/deepseek/deepseek-v4-pro-0813</guid>
+      <description>[Score: 85] DeepSeek V4 Pro 0813は、DeepSeekが提供する大規模な混合エキスパートモデルのGAリリースです。 / OpenRouterを通じて利用可能で、価格、コンテキスト長、スループットなどの詳細が提供されています。 / AIモデルの性能評価や実際のプロダクションワークロードでの利用状況も確認できます。 (Source: Hacker News)</description>
+      <pubDate>Wed, 12 Aug 2026 16:04:50 +0000</pubDate>
     </item>
     <item>
-      <title>WorldClaw: 大規模なエージェント型3Dオープンワールド生成</title>
-      <link>https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/</link>
-      <guid isPermaLink="false">https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/</guid>
-      <description>[Score: 85] Tencent Hunyuanが大規模なエージェント型3Dオープンワールド生成技術「WorldClaw」を発表しました。 / この技術は、AIエージェントを活用して広大な3D仮想空間を自動生成することを可能にします。 / ゲーム開発やメタバース構築など、多様な分野での応用が期待される先進的なAI技術です。 (Source: Hacker News)</description>
-      <pubDate>Tue, 11 Aug 2026 21:56:18 +0000</pubDate>
+      <title>ClaudeBotのようなAIボットを装った大規模な脆弱性スキャンが実行されている</title>
+      <link>https://knownagents.com/insights</link>
+      <guid isPermaLink="false">https://knownagents.com/insights</guid>
+      <description>[Score: 85] インターネット上でClaudeBotなどのAIボットを偽装した大規模な脆弱性スキャンが観測されています。 / AIエージェント、クローラー、スクレイパーがウェブ情報の発見・アクセス・利用方法を再構築しています。 / AIモデルのトレーニングやAIアシスタントのRAGタスクのためにウェブコンテンツを収集するボットの活動が増加しています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 12 Aug 2026 14:02:46 +0000</pubDate>
     </item>
     <item>
-      <title>BM25を使用してCodexのトークンの消費を30%抑える</title>
-      <link>https://zenn.dev/knowledgesense/articles/9e55a3bb67729c</link>
-      <guid isPermaLink="false">https://zenn.dev/knowledgesense/articles/9e55a3bb67729c</guid>
-      <description>[Score: 85] コード探索において、BM25検索を導入することでCodexのトークン消費を約30%削減できることが検証されました。 / コーディングエージェントのファイル検索効率の悪さが課題となる中、BM25が検索性能と回答品質を向上させることが示されています。 / 7,000ファイル規模のリポジトリでの実験結果に基づき、具体的なコスト削減効果と実装の工夫が解説されています。 (Source: Zenn)</description>
-      <pubDate>Tue, 11 Aug 2026 01:08:19 +0000</pubDate>
+      <title>.NET 11 Runtime Async はなぜ速いのか</title>
+      <link>https://qiita.com/hez2010/items/2aff0b2b40b9d0bfda91?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/hez2010/items/2aff0b2b40b9d0bfda91?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] .NETのasync/awaitが内部でCPS変換によって非同期処理を実現している仕組みを解説しています。 / asyncキーワードがコンパイラに非同期メソッドであることを伝え、awaitが処理の中断位置を示す役割を担います。 / ステートマシンを用いた具体的なコード例を交え、非同期処理の高速化の背景にある技術的詳細を深く掘り下げています。 (Source: Qiita)</description>
+      <pubDate>Mon, 10 Aug 2026 13:37:18 +0000</pubDate>
     </item>
     <item>
-      <title>N+1 問題を、発行される SQL を数えて理解する</title>
-      <link>https://zenn.dev/mtmtdack/articles/2026-08-11-n-plus-one-counting-queries</link>
-      <guid isPermaLink="false">https://zenn.dev/mtmtdack/articles/2026-08-11-n-plus-one-counting-queries</guid>
-      <description>[Score: 85] N+1問題とは何か、なぜ発生するのかを、PythonとSQLAlchemyを用いた具体的なコードとSQLログで解説しています。 / 著者と書籍の1対多リレーションシップを例に、素朴なコードが多数のSQLクエリを発行する様子を詳細に示し、問題の本質を理解させます。 / ORMを使用する開発者が陥りやすいパフォーマンス問題の解決策を考える上で、非常に実践的な内容となっています。 (Source: Zenn)</description>
-      <pubDate>Mon, 10 Aug 2026 16:17:55 +0000</pubDate>
+      <title>同僚女性教諭の水着画像をAIで生成 男性教諭を懲戒 神奈川県教委：朝日新聞</title>
+      <link>https://www.asahi.com/articles/ASV8D2SY0V8DULOB00HM.html</link>
+      <guid isPermaLink="false">https://www.asahi.com/articles/ASV8D2SY0V8DULOB00HM.html</guid>
+      <description>[Score: 85] 神奈川県教委が、生成AIで同僚女性教諭の水着画像を生成した男性教諭を停職6カ月の懲戒処分にしたと発表しました。 / 男性教諭は「生成AIに技術的な興味を持ち、性的な内容について、どんな指示で画像を作成する、しないの限度を調べようと思った」と供述。 / 生成された画像は生徒に閲覧され、AI技術の悪用と倫理問題、情報管理の重要性が改めて浮き彫りになりました。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 12 Aug 2026 09:34:15 +0000</pubDate>
     </item>
     <item>
-      <title>PHP8.6の新機能全部紹介するよ</title>
-      <link>https://qiita.com/rana_kualu/items/a50907007c868b807750?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/rana_kualu/items/a50907007c868b807750?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] PHP8.6のフィーチャーフリーズが完了し、2026年11月19日にリリース予定の新機能について解説しています。 / 特に「部分適用」に焦点を当て、その基本的な使い方から、無名関数やアロー関数との比較、そしてパイプライン演算子との組み合わせによるコードの簡素化効果を詳しく説明します。 / PHP開発者にとって、今後の開発効率向上に直結する重要な言語機能の変更点であり、具体的なコード例で理解を深めることができます。 (Source: Qiita)</description>
-      <pubDate>Mon, 10 Aug 2026 11:12:11 +0000</pubDate>
+      <title>ミッチェル・ハシモト氏が新会社「Superlogical」を設立、あらゆる仕事に使えるマルチプレクサの開発へ</title>
+      <link>https://www.publickey1.jp/blog/26/superlogical.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/superlogical.html</guid>
+      <description>[Score: 85] HashiCorp共同創業者ミッチェル・ハシモト氏が新会社「Superlogical」を設立しました。 / 同社は、あらゆる仕事に使えるマルチプレクサの開発を目指しており、まずはターミナルマルチプレクサから着手します。 / これは、tmuxやGNU screenのような既存のマルチプレクサをさらに優れたものにする可能性を秘めています。 (Source: Publickey)</description>
+      <pubDate>Thu, 06 Aug 2026 15:26:54 +0000</pubDate>
     </item>
     <item>
-      <title>AIに書かせた文はバレる時代へ。EU AI法にClaudeも対応、編集しても残る見えないテキスト透かしを導入 | テクノエッジ TechnoEdge</title>
-      <link>https://www.techno-edge.net/article/2026/08/11/5382.html</link>
-      <guid isPermaLink="false">https://www.techno-edge.net/article/2026/08/11/5382.html</guid>
-      <description>[Score: 85] Anthropicが、AIモデルClaudeが生成する文章に電子透かしを導入する計画を発表しました。 / これはEU AI法への対応であり、GoogleのSynthID-Textと同様に、単語の選択や並び方の統計的偏りを利用して人間には見えない形で埋め込まれます。 / コピペやある程度の編集後も検出可能ですが、校正や翻訳での利用では誰が書いたかの決定的な証拠にはならない限界もあります。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 11 Aug 2026 08:52:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google Fontsのセルフホスティング: 古典的なGDPR違反を15分で修正する方法</title>
-      <link>https://dev.to/hdevv/self-hosting-google-fonts-the-15-minute-fix-for-a-classic-gdpr-finding-mjd</link>
-      <guid isPermaLink="false">https://dev.to/hdevv/self-hosting-google-fonts-the-15-minute-fix-for-a-classic-gdpr-finding-mjd</guid>
-      <description>[Score: 85] Google Fontsを直接読み込むことがGDPR違反となるリスクと、その簡単な解決策であるセルフホスティングについて解説しています。 / ユーザーのIPアドレスがGoogleサーバーに送信されることによるプライバシー侵害の問題と、ドイツの裁判所の判決に触れています。 / わずか15分でGoogle Fontsをセルフホストし、GDPRコンプライアンスを確保するための具体的な手順とメリットを提示します。 (Source: Dev.to)</description>
-      <pubDate>Tue, 11 Aug 2026 21:52:15 +0000</pubDate>
+      <title>GitHub Copilotアプリで最初のプロンプトを作成する</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/</guid>
+      <description>[Score: 85] GitHub Copilotアプリで初めてプロンプトを作成する方法について解説しています。 / 完璧なプロンプトは不要で、まずは達成したいことを記述し、Copilotにコンテキストを与えることから始めます。 / プロジェクトを接続し、変更内容を自然言語で記述するだけで、Copilotがコードベースを分析し作業を開始します。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 12 Aug 2026 19:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Java向けGitHub Copilot SDKの利用</title>
       <link>https://github.blog/engineering/using-the-github-copilot-sdk-for-java/</link>
       <guid isPermaLink="false">https://github.blog/engineering/using-the-github-copilot-sdk-for-java/</guid>
-      <description>[Score: 85] Java開発者向けに、フレームワークに依存しないAI駆動型アプリケーション開発を可能にするGitHub Copilot SDK for Javaが登場しました。 / このSDKは、サーバーサイドJavaコードからCopilotエージェントセッションを作成し、ツールを登録し、プロンプトを送信して構造化された応答を受け取ることができます。 / Jakarta EEやSpringを含む様々なサーバー環境で動作し、CompletableFutureや仮想スレッドなどのモダンなJava機能に対応しています。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHub Copilot SDK for Javaは、Java開発者がフレームワークに依存せずAIをエンタープライズアプリに統合できる初の手段です。 / Langchain4jやSpring AIとは異なり、特定のフレームワークやAIベンダーに縛られず、サーバーサイドJavaでCopilotエージェントをプログラム制御できます。 / Jakarta EE 11などの環境で利用可能で、CompletableFutureや仮想スレッドなどJavaのモダンな機能に対応しています。 (Source: GitHub Blog)</description>
       <pubDate>Mon, 10 Aug 2026 19:30:00 +0000</pubDate>
     </item>
     <item>
-      <title>データ中心並列処理による可変長シーケンスの学習</title>
-      <link>https://arxiv.org/abs/2608.07524</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2608.07524</guid>
-      <description>[Score: 85] 本記事は、可変長シーケンスデータを効率的に学習するための新しい手法に関する論文です。 / データ中心の並列処理アプローチを用いることで、学習のパフォーマンス向上を目指しています。 / 大規模な言語モデルや時系列データ処理など、AI学習の効率化に貢献する可能性があります。 (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+      <title>Delta</title>
+      <link>https://zed.dev/blog/introducing-delta</link>
+      <guid isPermaLink="false">https://zed.dev/blog/introducing-delta</guid>
+      <description>[Score: 80] Deltaは、AIエージェントとの協調コーディングとレビューを可能にするマルチプレイヤー環境です。 / コードと会話を接続し、開発者とエージェントが完全なコンテキストで共同作業できることを目指します。 / DeltaDBという独自の技術で会話とワークツリーをリアルタイムで同期し、既存のGitリポジトリと連携します。 (Source: Hacker News)</description>
+      <pubDate>Wed, 12 Aug 2026 18:19:59 +0000</pubDate>
     </item>
     <item>
-      <title>中古サーバ用GPUでローカルLLM環境を作る試算（MI50 / P40 / P100 / V100 / CMP 170HX）</title>
-      <link>https://zenn.dev/phpmyadmin/articles/used-server-gpu-local-llm</link>
-      <guid isPermaLink="false">https://zenn.dev/phpmyadmin/articles/used-server-gpu-local-llm</guid>
-      <description>[Score: 80] データセンターやマイニングで役目を終えた中古サーバ用GPUを活用し、安価にローカルLLM環境を構築する試算が紹介されています。 / Tesla P100やV100、CMP 170HXなどのGPUを対象に、新品GPUと比較したコストパフォーマンスが詳細に分析されています。 / オフィスワーク用やDeepSeek V4-Flash動作環境など、具体的な用途に応じた構成例と価格、速度、消費電力の比較が提示されています。 (Source: Zenn)</description>
-      <pubDate>Tue, 11 Aug 2026 05:19:22 +0000</pubDate>
+      <title>Chromium(V8)のArray.prototype.copyWithinを最大約450倍高速化した</title>
+      <link>https://zenn.dev/dinii/articles/a272b7c3b60ab8</link>
+      <guid isPermaLink="false">https://zenn.dev/dinii/articles/a272b7c3b60ab8</guid>
+      <description>[Score: 80] ChromiumのV8エンジンにおいて、Array.prototype.copyWithinメソッドを最大約450倍高速化しました。 / copyWithinはES2015から存在するが影の薄いメソッドで、配列の一部をシャローコピーする機能です。 / コピー元とコピー先が重なる場合の処理など、最適化の観点から興味深い性質を持つことが解説されています。 (Source: Zenn)</description>
+      <pubDate>Wed, 12 Aug 2026 00:01:18 +0000</pubDate>
     </item>
     <item>
-      <title>AWS認定を1年延長できる維持制度の登録、延長方法について</title>
-      <link>https://qiita.com/kiwi-dev/items/60dca34eccf785744a1d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kiwi-dev/items/60dca34eccf785744a1d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] AWS認定資格の維持制度がベータ版としてリリースされ、試験の再受験なしに資格を1年間延長できるようになったことを解説しています。 / AWS Skill Builder上のトレーニングとハンズオンラボを完了することで延長が可能となり、その登録方法や必要なサブスクリプション契約について詳細に説明します。 / AWS認定資格を保有する多くのエンジニアにとって、資格維持の負担軽減に繋がる重要な情報であり、具体的な手順が示されています。 (Source: Qiita)</description>
-      <pubDate>Sun, 09 Aug 2026 01:54:00 +0000</pubDate>
+      <title>新人エンジニア、AIがないと役に立たないハリボテ人間にならないか不安</title>
+      <link>https://qiita.com/prumnn/items/b3302efec6a8d8b50197?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/prumnn/items/b3302efec6a8d8b50197?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] AIに頼りすぎた結果、自分で考える力が落ちているのではないかと不安を感じる新人エンジニアの悩みに焦点を当てています。 / エラー解決時にAIに聞く前に「10秒だけ自分の予想を声に出す」という具体的な解決策を提案しています。 / この一手間を加えることで、AIの答えから得られる学びが深まり、真の理解と成長に繋がることを示唆しています。 (Source: Qiita)</description>
+      <pubDate>Mon, 10 Aug 2026 05:46:52 +0000</pubDate>
     </item>
     <item>
-      <title>npm代替を目指すセキュリティファーストなパッケージマネージャ「vlt」バージョン1.0に到達。npmのミラーレジストリ、プライベートレジストリも提供開始</title>
-      <link>https://www.publickey1.jp/blog/26/npmvlt10npm.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/npmvlt10npm.html</guid>
-      <description>[Score: 80] npmの代替を目指すセキュリティファーストなJavaScriptパッケージマネージャ「vlt」がバージョン1.0に到達しました。 / vltは、レジストリ層でのマルウェアブロックや高速な配信を特徴とし、npm互換性も備えています。 / npmのミラーレジストリおよびプライベートレジストリソフトウェア「vsr」の有料ホスティングサービスも開始されました。 (Source: Publickey)</description>
-      <pubDate>Wed, 05 Aug 2026 18:03:20 +0000</pubDate>
+      <title>データエンジニアリングにおけるバッチ処理とストリーミング処理：本番環境でシステムを壊さずに決定する方法</title>
+      <link>https://dev.to/agusmazzeo/batch-vs-streaming-en-data-engineering-como-decidir-en-produccion-sin-romper-nada-7p3</link>
+      <guid isPermaLink="false">https://dev.to/agusmazzeo/batch-vs-streaming-en-data-engineering-como-decidir-en-produccion-sin-romper-nada-7p3</guid>
+      <description>[Score: 80] データエンジニアリングにおいて、バッチ処理とストリーミング処理のどちらを選ぶかは、解決すべき問題と許容できるトレードオフによって決まります。 / これらは概念的な違いではなく、コスト、保守性、信頼性、レイテンシに影響を与える運用上の決定です。 / 本記事では、それぞれの処理方式の特性と、販売パイプラインや不正検知などの具体的なユースケースに応じた適切な選択方法を解説しています。 (Source: Dev.to)</description>
+      <pubDate>Wed, 12 Aug 2026 22:25:43 +0000</pubDate>
     </item>
     <item>
-      <title>AGENTS.md vs CLAUDE.md: エージェントのコンテキストが実際に存在する場所</title>
-      <link>https://dev.to/mudassirworks/agentsmd-vs-claudemd-where-agent-context-actually-lives-joa</link>
-      <guid isPermaLink="false">https://dev.to/mudassirworks/agentsmd-vs-claudemd-where-agent-context-actually-lives-joa</guid>
-      <description>[Score: 80] コーディングエージェントがプロジェクトのコンテキストを読み取るためのファイル標準、AGENTS.mdとCLAUDE.mdの現状について解説しています。 / 複数のエージェントが独自のコンテキストファイルを持つことによる混乱を解消するため、AGENTS.mdがオープンなベンダーニュートラルな標準として登場した背景を説明します。 / どのファイルが優先されるか、そしてAGENTS.mdへの移行の重要性について、開発者が知るべき情報を提供します。 (Source: Dev.to)</description>
-      <pubDate>Tue, 11 Aug 2026 21:59:40 +0000</pubDate>
+      <title>GitHub稼働状況レポート：2026年7月</title>
+      <link>https://github.blog/news-insights/company-news/github-availability-report-july-2026/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-july-2026/</guid>
+      <description>[Score: 80] GitHubは2026年7月の稼働状況レポートを発表し、8月6日のGitHub Actionsの長時間停止について謝罪しました。 / この停止は顧客の生産性と信頼に大きな影響を与え、GitHubは根本原因分析を継続し、アーキテクチャのロードマップを加速しています。 / 特に、Actionsの起動サービスがデータセンターに残っていたことが容量不足の一因であり、隔離、回復性、スケーラビリティの強化を進めます。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 12 Aug 2026 22:17:32 +0000</pubDate>
     </item>
   </channel>
 </rss>
