@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 13 Aug 2026 22:36:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 22:17:20 +0000</lastBuildDate>
     <item>
-      <title>GPT-5.6 Sol Ultrafastの高速化</title>
-      <link>https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai</link>
-      <guid isPermaLink="false">https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai</guid>
-      <description>[Score: 95] OpenAIとCerebrasは、GPT-5.6 Solを搭載した「Ultrafast Mode」を発表しました。 / この新サービスティアは、品質を損なうことなく毎秒最大750トークンの出力速度を実現します。 / AIモデルの速度とインテリジェンスのトレードオフを解消し、時間制約のあるミッションクリティカルな作業を加速します。 (Source: Hacker News)</description>
-      <pubDate>Thu, 13 Aug 2026 18:10:02 +0000</pubDate>
+      <title>Googleが準同型暗号化でプライベートAIを実用化</title>
+      <link>https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/</link>
+      <guid isPermaLink="false">https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/</guid>
+      <description>[Score: 95] Googleは、暗号化されたデータ上で直接計算を可能にする準同型暗号化（HE）を用いて、プライベートAI推論を実用化するオープンソースコンパイラ「HEIR」を発表しました。 / これにより、医療や金融などの機密性の高い分野で、ユーザーデータを保護しつつAIサービスを提供することが可能になります。 / データプライバシーとAIの利便性の両立を実現し、クラウドサービスがユーザーの機密情報を見ることなくコンテンツ推薦などを提供できるようになります。 (Source: Hacker News)</description>
+      <pubDate>Fri, 14 Aug 2026 15:43:10 +0000</pubDate>
     </item>
     <item>
-      <title>Claude がテキストに電子透かしを入れ始めたので、LLM ウォーターマーキングの仕組みを調べた</title>
-      <link>https://zenn.dev/hellorusk/articles/3328866ca9e922</link>
-      <guid isPermaLink="false">https://zenn.dev/hellorusk/articles/3328866ca9e922</guid>
-      <description>[Score: 95] AnthropicがClaudeの生成テキストに電子透かしを導入すると発表し、LLMによるテキストウォーターマーキングの仕組みが注目されています。 / この技術は、LLMが次の単語を選ぶ際の確率分布の「揺らぎ」を利用し、秘密鍵に基づいた微細な偏りを埋め込むことでAI生成を識別します。 / KGW法などの初期研究から、テキスト品質の低下や改変耐性といった課題がどのように解決されてきたか、その進化の過程を解説しています。 (Source: Zenn)</description>
-      <pubDate>Wed, 12 Aug 2026 08:52:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>「Agent Plugins 1.0.0」発表、異なるAIエージェント間でもスキルやMCPサーバ設定が共通化へ。マイクロソフト、OpenAI、AWS、Googleらがサポート</title>
-      <link>https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html</guid>
-      <description>[Score: 92] マイクロソフト、OpenAI、AWS、Googleなどが、AIエージェントのスキルやMCPサーバー設定を共通化する業界標準仕様「Agent Plugins 1.0.0」を発表しました。 / これにより、これまでベンダーごとに異なっていたAIエージェントの設定方法が統一され、ユーザーは異なるAIエージェント間での設定共有が可能になります。 / AIエージェントの相互運用性を高め、開発効率と利用の利便性を大幅に向上させる重要な一歩となります。 (Source: Publickey)</description>
-      <pubDate>Sun, 09 Aug 2026 15:19:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>Gemini 3.7 Flash</title>
-      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/</link>
-      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/</guid>
-      <description>[Score: 90] Googleは、コーディングとエージェント向けに最適化された最新のAIモデル「Gemini 3.7 Flash」を発表しました。 / このモデルは、ソフトウェアエンジニアリング、知識作業、Web開発ワークフローにおいて大幅な改善をもたらし、特にコーディングタスクの精度が向上しています。 / さらに、前バージョン3.6 Flashの半額という導入価格で提供され、コストパフォーマンスも優れています。 (Source: Hacker News)</description>
-      <pubDate>Thu, 13 Aug 2026 17:23:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>DRAMのスパゲッティ化</title>
-      <link>https://github.com/xoreaxeaxeax/skitter-creek-bath-salts</link>
-      <guid isPermaLink="false">https://github.com/xoreaxeaxeax/skitter-creek-bath-salts</guid>
-      <description>[Score: 90] 「skitter-creek-bath-salts」は、DRAMコントローラーを操作して物理DRAMアドレス変換を再配線する技術です。 / これにより、カーネルからも見えない保護されたDRAM領域を露呈させ、CPU上のあらゆるセキュリティプリミティブを無効化します。 / AMD Family 16h CPUで検証され、メモリ階層の深層にある抽象化レイヤーを操作することで、システムの根幹を揺るがす可能性を示唆しています。 (Source: Hacker News)</description>
-      <pubDate>Thu, 13 Aug 2026 14:17:13 +0000</pubDate>
+      <title>あらゆるものが「闇に包まれようとしている」</title>
+      <link>https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/</link>
+      <guid isPermaLink="false">https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/</guid>
+      <description>[Score: 90] AIの進化によりソフトウェアのセキュリティが劇的に向上し、米国情報機関や法執行機関の監視能力が大幅に失われる可能性が指摘されています。 / これは、暗号化技術の普及とAIによるセキュリティ強化が、政府機関のデータアクセスを困難にするためです。 / 結果として、コンピュータセキュリティとプライバシーを重視する人々にとっても、予期せぬ影響が生じると警鐘を鳴らしています。 (Source: Hacker News)</description>
+      <pubDate>Fri, 14 Aug 2026 20:52:44 +0000</pubDate>
     </item>
     <item>
       <title>続・貧者のアークテクチャ：Next.js + Cloudflare Workers + Turso 本番運用で踏んだ罠ぜんぶ</title>
       <link>https://zenn.dev/nabettu/articles/a964f988e7cc75</link>
       <guid isPermaLink="false">https://zenn.dev/nabettu/articles/a964f988e7cc75</guid>
-      <description>[Score: 90] Next.js (App Router) + Cloudflare Workers + Turso を利用した低コストなWebサービス運用における実践的な課題と解決策を解説。 / Next.jsの画像最適化やリンク機能の制約、WorkersのTCP永続接続の欠如、TursoへのHTTP接続によるパフォーマンス問題などが挙げられています。 / Cloudflareの無料プランにおけるリクエストルーティングの課題と、Smart Placementによる改善策、およびパフォーマンス計測の重要性が示されています。 (Source: Zenn)</description>
+      <description>[Score: 90] Next.js (App Router) + Cloudflare Workers + Tursoという低コスト構成でWebサービスを本番運用する際の課題と対処法を詳細に解説しています。 / Next.jsの画像最適化やリンク機能の制約、WorkersとTurso間のHTTP接続によるDBアクセス性能問題、Cloudflareのルーティングによるレイテンシ増加などが挙げられています。 / これらの具体的な運用上の「罠」と、ESLintによる制限、Smart Placementの活用、クエリ計測などの実践的な解決策が提示されています。 (Source: Zenn)</description>
       <pubDate>Thu, 13 Aug 2026 05:44:16 +0000</pubDate>
     </item>
     <item>
       <title>パスキーはなぜ「盗まれても意味がない」と言えるのか — 公開鍵暗号方式で理解する新しい認証</title>
       <link>https://qiita.com/gts/items/8d3c14dabff88d8f1901?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/gts/items/8d3c14dabff88d8f1901?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] パスキーが従来のパスワード認証の弱点を克服し、「盗まれても意味がない」とされる理由を公開鍵暗号方式で解説しています。 / パスキーは秘密鍵をサーバーに送らずデバイス内で管理し、ログイン時には公開鍵による署名のみを行うため、フィッシングやサーバーからの情報漏洩リスクを大幅に低減。 / 生体認証はデバイスのロック解除手段であり、生体情報がサーバーに送信されることはないという、パスキーの安全性の核心を分かりやすく説明しています。 (Source: Qiita)</description>
+      <description>[Score: 90] パスキーは公開鍵暗号方式を利用し、秘密鍵をサーバーに一切送らないことで、従来のパスワード認証の弱点を克服する。 / 登録時にデバイスで鍵ペアを生成し、サーバーには公開鍵のみを送信。秘密鍵はデバイス内に安全に保管される。 / ログイン時には生体認証でデバイスのロックを解除し、秘密鍵で署名を行うため、フィッシング詐欺やサーバーからの情報漏洩リスクを大幅に低減する。 (Source: Qiita)</description>
       <pubDate>Wed, 12 Aug 2026 22:10:37 +0000</pubDate>
     </item>
     <item>
-      <title>米国、一部の民間企業にサイバー攻撃の実施を初めて許可へ</title>
-      <link>https://www.reddit.com/r/technology/comments/1vnezov/in_a_first_us_will_allow_some_private_firms_to/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vnezov/in_a_first_us_will_allow_some_private_firms_to/</guid>
-      <description>[Score: 90] 米国政府が、一部の民間企業に対してサイバー攻撃の実施を初めて許可する方針を打ち出しました。 / これはサイバーセキュリティ戦略における大きな転換点となる可能性があり、倫理的・法的な議論を呼ぶでしょう。 / 国家安全保障と民間企業の役割、そして国際法への影響が懸念される重大な政策変更です。 (Source: Reddit)</description>
-      <pubDate>Thu, 13 Aug 2026 16:05:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude文章で｢AI製｣バレる?　コピペでも残る電子透かしにネット反発 - 日本経済新聞</title>
-      <link>https://www.nikkei.com/article/DGXZQOGN139SY0T10C26A8000000/</link>
-      <guid isPermaLink="false">https://www.nikkei.com/article/DGXZQOGN139SY0T10C26A8000000/</guid>
-      <description>[Score: 90] 米新興アンソロピックが、AI「クロード」が生成した文章にAI製であることを示す「電子透かし」を導入すると発表しました。 / この技術はAIがどう使われたかを正確に検知するのが難しく、コピペしても透かしが残る可能性があり、一部ユーザーから反発を招いています。 / AI生成コンテンツの透明性確保と、ユーザーのプライバシーや利用の自由との間で議論が起こっています。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 13 Aug 2026 21:42:37 +0000</pubDate>
+      <title>「Agent Plugins 1.0.0」発表、異なるAIエージェント間でもスキルやMCPサーバ設定が共通化へ。マイクロソフト、OpenAI、AWS、Googleらがサポート</title>
+      <link>https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html</guid>
+      <description>[Score: 90] AIエージェントのスキルやMCPサーバー設定を共通化する業界標準仕様「Agent Plugins 1.0.0」が発表されました。 / Microsoft、OpenAI、AWS、Googleなど主要AI企業がサポートし、異なるAIエージェント間での設定共有が可能に。 / これにより、ユーザーはベンダーごとの設定変更の手間が省け、AIエージェントの利便性が向上します。 (Source: Publickey)</description>
+      <pubDate>Sun, 09 Aug 2026 15:19:33 +0000</pubDate>
     </item>
     <item>
       <title>貧者のエージェントモデリング：ラップトップ上で大規模LLMエージェント社会をシミュレートする</title>
       <link>https://arxiv.org/abs/2608.11215</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2608.11215</guid>
-      <description>[Score: 90] この論文は、限られたリソース（ラップトップなど）でも大規模なLLMエージェント社会をシミュレートする手法を提案しています。 / 高価な計算資源なしに、複雑なエージェント間の相互作用や集団行動を研究することを可能にします。 / これにより、LLMエージェントシステムの開発と研究の民主化に貢献する可能性があります。 (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 13 Aug 2026 04:00:00 +0000</pubDate>
+      <description>[Score: 90] 限られたリソース（ラップトップなど）で大規模なLLMエージェント社会をシミュレートする手法を提案しています。 / 高価な計算資源なしに、エージェント間の相互作用や集団行動の研究を可能にします。 / LLMエージェントの研究開発の民主化に貢献する可能性があります。 (Source: arXiv cs.AI)</description>
+      <pubDate>Fri, 14 Aug 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeに「違反できないコード」を書かせる：ガイドとセンサーの設計 - Qiita</title>
-      <link>https://qiita.com/shun123/items/7aa06b6982dfd1730af0</link>
-      <guid isPermaLink="false">https://qiita.com/shun123/items/7aa06b6982dfd1730af0</guid>
-      <description>[Score: 88] AIによるコード生成が進む中、人間の役割は「コードを書く」から「コードが規約を守る仕組みを作る」へと変化しています。 / 本記事では、AIが規約違反のコードを生成しないようにするための「ハーネス」（ガイドとセンサー）の設計と実装方法を解説しています。 / オニオンアーキテクチャのタスク管理APIを題材に、計算的センサーと推論的センサーを組み合わせ、AI生成コードの品質を担保する実践的なアプローチを提案しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 13 Aug 2026 09:06:11 +0000</pubDate>
+      <title>Qwen 3.8 27B</title>
+      <link>https://huggingface.co/Qwen/Qwen3.8-27B-FP8</link>
+      <guid isPermaLink="false">https://huggingface.co/Qwen/Qwen3.8-27B-FP8</guid>
+      <description>[Score: 85] Qwenオープンモデルファミリーの最新かつ最も高性能な「Qwen3.8」が発表されました。 / 特に27Bモデルは、FP8量子化により性能を維持しつつコンパクトでデプロイしやすい設計です。 / コーディング、専門業務、研究、長期的なエージェントタスクで大幅な改善が見られ、画像・動画理解も可能です。 (Source: Hacker News)</description>
+      <pubDate>Fri, 14 Aug 2026 15:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>理解が新たなボトルネック</title>
-      <link>https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck</link>
-      <guid isPermaLink="false">https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck</guid>
-      <description>[Score: 85] AIエージェントが生成するコードが増えるにつれて、人間がそのコードを理解することが新たなボトルネックになっていると指摘しています。 / エージェントが自己検証能力を高める一方で、人間がコードを理解する重要性は依然として高いと主張。 / コード理解のための様々なテクニックが紹介されており、AI時代のソフトウェア開発における重要な課題を提起しています。 (Source: Hacker News)</description>
-      <pubDate>Thu, 13 Aug 2026 18:47:19 +0000</pubDate>
+      <title>Toast 1の紹介</title>
+      <link>https://www.mixedbread.com/blog/toast-1</link>
+      <guid isPermaLink="false">https://www.mixedbread.com/blog/toast-1</guid>
+      <description>[Score: 85] Mixedbreadが、最先端の検索品質を提供する専門検索エージェント「Toast 1」を発表しました。 / Claude Opus 5やGPT-5.6 Solに匹敵または凌駕する性能を持ちながら、最大10倍安価で12倍高速に動作します。 / 複雑な文書コレクションからの情報収集、証拠収集、関連コンテキストのキュレーションを自動化し、AIエージェントのコスト効率とエンドツーエンドの性能を向上させます。 (Source: Hacker News)</description>
+      <pubDate>Fri, 14 Aug 2026 15:07:57 +0000</pubDate>
     </item>
     <item>
-      <title>退屈な技術を選ぼう (2015)</title>
-      <link>https://mcfunley.com/choose-boring-technology</link>
-      <guid isPermaLink="false">https://mcfunley.com/choose-boring-technology</guid>
-      <description>[Score: 85] 企業はイノベーショントークンを限られた数しか持っておらず、新しい技術の採用にはこのトークンを消費します。 / NodeJSやMongoDBのような最新技術の採用はイノベーショントークンを消費するため、本当に必要な部分に集中すべきです。 / 安定性と成熟度を優先し、コアビジネスに集中するために「退屈な（枯れた）技術」を選ぶことの重要性を説いています。 (Source: Hacker News)</description>
-      <pubDate>Thu, 13 Aug 2026 17:48:13 +0000</pubDate>
+      <title>なぜAI時代にGoが最適な言語なのか</title>
+      <link>https://zenn.dev/iwatsukayura/articles/google-go-ai</link>
+      <guid isPermaLink="false">https://zenn.dev/iwatsukayura/articles/google-go-ai</guid>
+      <description>[Score: 85] AI時代において、コードを書くことよりもレビュー、検証、保守の重要性が増している。 / Goは単なるプログラミング言語ではなく、標準ツールチェーンを備えたソフトウェアエンジニアリングプラットフォームとして位置づけられる。 / これにより、AIエージェントが自己検証・修正するLoop Engineeringや、人間によるレビュー負荷軽減に貢献し、AI時代のガードレールとしても機能する。 (Source: Zenn)</description>
+      <pubDate>Wed, 12 Aug 2026 13:05:44 +0000</pubDate>
     </item>
     <item>
-      <title>AIが実装し、AIがテストし、AIが「問題ありません」と言う時代の品質保証</title>
-      <link>https://qiita.com/y0us91/items/2feffd2cc6c672717973?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/y0us91/items/2feffd2cc6c672717973?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AIが自律的にコード実装からテスト、修正までを行うAgentic Codingの進化がソフトウェア開発を変革しています。 / しかし、AIが実装とテストを同一の最適化ループ内で完結させる場合、そのテスト結果が真の品質を保証するのかという疑問を提起。 / 従来の開発における実装と検証の分離の重要性を踏まえ、AI時代の品質保証における新たな課題と考慮すべき点を考察しています。 (Source: Qiita)</description>
-      <pubDate>Tue, 11 Aug 2026 10:42:07 +0000</pubDate>
+      <title>SKハイニックスCEO、2027年はメモリ供給にとって「史上最悪の年」になると発言</title>
+      <link>https://www.reddit.com/r/technology/comments/1vofqt7/2027_will_be_the_worst_year_in_history_for_memory/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vofqt7/2027_will_be_the_worst_year_in_history_for_memory/</guid>
+      <description>[Score: 85] SKハイニックスのCEOが、2027年にメモリ供給が「史上最悪の年」になると予測したという記事です。 / これは、半導体業界全体、特にメモリ市場における将来的な供給不足への深刻な懸念を示すものです。 / PC、サーバー、AI関連製品など、メモリを多用するあらゆる産業に広範な影響を与える可能性があります。 (Source: Reddit)</description>
+      <pubDate>Fri, 14 Aug 2026 18:43:01 +0000</pubDate>
     </item>
     <item>
-      <title>Webサービスの終わらせ方</title>
-      <link>https://zenn.dev/kibe/articles/df74c2e9fe76b6</link>
-      <guid isPermaLink="false">https://zenn.dev/kibe/articles/df74c2e9fe76b6</guid>
-      <description>[Score: 85] Webサービスを終了する際の複雑さと、作成時よりも面倒な「閉店作業」について、実体験に基づいて詳細に解説しています。 / 多数の外部SaaSを利用する現代のWeb開発において、サービス終了時の管理画面巡回、データ削除、ユーザー通知などのタスクが膨大になることを指摘。 / サービス終了方針の決定から段階的な停止、完全撤去までの具体的なプロセスと、見落とされがちな注意点がまとめられています。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 13 Aug 2026 08:51:42 +0000</pubDate>
+      <title>MicrosoftのAIターミナル「Intelligent Terminal 0.2」が公開 ～ローカルモデルに対応／「OpenCode」対応、スラッシュコマンドの拡充、WSL内エージェントなどの改善も</title>
+      <link>https://forest.watch.impress.co.jp/docs/news/2132156.html</link>
+      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2132156.html</guid>
+      <description>[Score: 85] MicrosoftがAIエージェント統合ターミナル「Intelligent Terminal 0.2」をリリースしました。 / 最大の目玉はローカルモデルへの対応で、プライベートかつオフラインでのAIワークフロー実行が可能に。 / 「OpenCode」対応やスラッシュコマンド拡充、WSL内エージェント改善なども含まれています。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 14 Aug 2026 10:43:58 +0000</pubDate>
     </item>
     <item>
-      <title>AIに同じ質問をしたら、部署ごとに違う数字が返ってきた　― いま「オントロジー」と呼ばれているもの ― - Qiita</title>
-      <link>https://qiita.com/M_Ozu/items/346f6c8ab4b662a08f3e</link>
-      <guid isPermaLink="false">https://qiita.com/M_Ozu/items/346f6c8ab4b662a08f3e</guid>
-      <description>[Score: 85] 生成AIを業務に導入した組織で、同じ質問に対して部署ごとに異なる回答が返ってくる現象が発生しています。 / これは、AIが参照するスキーマや前提が部署ごとに異なるため、「アクティブ顧客」のような言葉の定義が曖昧なことに起因します。 / 記事では、この問題の解決策として、2025年頃から主要ベンダーが注目し始めた「オントロジー」の概念と技術的役割を解説しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 13 Aug 2026 10:13:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>Arca Sophia Open-Core: 産業用SCADA/PLCシステム向けエアギャップ型ローカルAI推論の構築</title>
-      <link>https://dev.to/matiasmeza_09/arca-sophia-open-core-building-air-gapped-local-ai-inference-for-industrial-scadaplc-systems-5917</link>
-      <guid isPermaLink="false">https://dev.to/matiasmeza_09/arca-sophia-open-core-building-air-gapped-local-ai-inference-for-industrial-scadaplc-systems-5917</guid>
-      <description>[Score: 85] 産業用OT/ICSシステムへのAI統合におけるクラウド遅延とセキュリティのトレードオフを解決します。 / Arca Sophia Open-Coreは、エアギャップネットワークを維持しつつ、エッジで量子化されたLLMを直接実行するオープンソースのリファレンスアーキテクチャです。 / Dockerコンテナ化されたモジュラーセットアップにより、物理的な安全規則に縛られながら、産業環境でのAI推論を可能にします。 (Source: Dev.to)</description>
-      <pubDate>Thu, 13 Aug 2026 21:38:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>あなたのコントリビューターは今やAIファーストです。あなたのプロジェクトもそうですか？</title>
-      <link>https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/</guid>
-      <description>[Score: 85] AIエージェントが生成したプルリクエストが急増する中、オープンソースプロジェクトのメンテナーが直面する課題と対応策について議論しています。 / AutoGPTの創設AIエンジニアは、AIによるプルリクエストを「他人が計算リソースを支払ってくれる」と捉え、適切なガイドラインと指示をAIが参照できる場所に置くことの重要性を強調。 / AIエージェントはドキュメントを自ら探しに行かないため、CLAUDE.mdファイルのように、エージェントが作業するディレクトリレベルに指示を配置するアプローチが有効であると示唆しています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 12 Aug 2026 18:00:08 +0000</pubDate>
+      <title>エージェントアプリでソフトウェアデリバリーワークフローをGitHubに統合する方法</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</guid>
+      <description>[Score: 85] GitHubエージェントアプリは、ソフトウェア開発者がプルリクエスト作業中に複数のツールを切り替える手間を解消します。 / Amplitude, Endor Labs, LaunchDarkly, PagerDutyなどのサービスをGitHub内で直接利用できるようになります。 / これにより、開発者はGitHubを離れることなく、必要な情報を取得し、より効率的にタスクを完了できます。 (Source: GitHub Blog)</description>
+      <pubDate>Fri, 14 Aug 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
       <title>協調的な会話結果のためのマルチLLMエージェントシステムの動的ガバナンス</title>
       <link>https://arxiv.org/abs/2608.11207</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2608.11207</guid>
-      <description>[Score: 85] この論文は、複数の大規模言語モデル（LLM）エージェントが協調して会話を行うシステムにおける、動的なガバナンス手法を提案しています。 / エージェント間の連携を最適化し、より質の高い共同作業の結果を生み出すことを目的としています。 / 特に、複雑な対話シナリオにおけるエージェントの振る舞いを効果的に管理するフレームワークを探求しています。 (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 13 Aug 2026 04:00:00 +0000</pubDate>
+      <description>[Score: 85] 複数の大規模言語モデル（LLM）エージェントが協調して会話を行うシステムに関する研究です。 / エージェント間の動的なガバナンス（統治・管理）メカニズムに焦点を当てています。 / より効果的で一貫性のある会話結果を生成するための手法を提案しています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Fri, 14 Aug 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>ルートフリップの検出は修正すべきかを知るよりも容易である：量子化されたMixture-of-Expertsにおける因果的ルート媒介損傷</title>
+      <title>AIエージェントと進めるソフトウェア開発</title>
+      <link>https://zenn.dev/hako_hako/books/nexus-product-new-development</link>
+      <guid isPermaLink="false">https://zenn.dev/hako_hako/books/nexus-product-new-development</guid>
+      <description>[Score: 80] AIエージェントを活用したソフトウェア開発プロセス全体を解説する書籍の目次です。 / プロダクトの企画から設計、実装、運用、再設計に至るまで、AI駆動開発の具体的な手法やツール（Nexus Architect）が紹介されています。 / Spring Boot, PostgreSQL, Next.jsなどの技術スタックも言及されており、実践的なAI活用開発の知見を提供します。 (Source: Zenn)</description>
+      <pubDate>Thu, 13 Aug 2026 08:10:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>エラーレスポンス設計の現在地2026</title>
+      <link>https://qiita.com/tatsuya582/items/e5c56a2f7b976cfc17ea?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/tatsuya582/items/e5c56a2f7b976cfc17ea?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Web APIのエラーレスポンス設計は、ステータスコード、ヘッダー、ボディの3層すべてを考慮する必要がある。 / HTTPの汎用インフラが解釈する上2層と、アプリケーションが解釈するボディ層の役割分担を理解することが重要。 / エラーを200で返さない、RFC 9110に基づくステータスコードの適切な使用、必須ヘッダーの付与など、現代の標準とデファクトを解説している。 (Source: Qiita)</description>
+      <pubDate>Fri, 14 Aug 2026 04:36:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI時代におけるセキュリティについて50のオープンソースプロジェクトが教えてくれたこと</title>
+      <link>https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/</guid>
+      <description>[Score: 80] AIの進化がオープンソース開発の速度とセキュリティ課題を変化させている現状を指摘しています。 / GitHub Secure Open Source Fundは50プロジェクトに50万ドル以上を投資し、AI支援ワークフローとセキュリティ専門家を提供しました。 / AIはセキュリティ問題の調査、優先順位付け、対応を加速させるが、最終的な判断は人間が行うべきであるという結論が得られました。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 13 Aug 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>ルートフリップの検出は修正すべきかを知るよりも容易：量子化されたMixture-of-Expertsにおける因果的なルート媒介損傷</title>
       <link>https://arxiv.org/abs/2608.11212</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2608.11212</guid>
-      <description>[Score: 82] 本論文は、量子化されたMixture-of-Experts (MoE) モデルにおける「ルートフリップ」現象とその因果的損傷について分析しています。 / ルートフリップの検出は可能であるものの、それがモデル性能に与える影響を修正すべきかどうかの判断が難しいことを指摘しています。 / MoEモデルのロバスト性や信頼性に関する課題を探求し、その実用的な展開における重要な洞察を提供します。 (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 13 Aug 2026 04:00:00 +0000</pubDate>
+      <description>[Score: 80] 量子化されたMixture-of-Experts (MoE) モデルにおける「ルートフリップ」現象を分析しています。 / この現象の検出は比較的容易ですが、それがモデル性能に与える因果的な損傷を特定し修正する難しさについて議論しています。 / 大規模AIモデルの効率化と信頼性向上に関する課題を提示しています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Fri, 14 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>エラーを 3 秒で AI に丸投げする若手を見て、AI から答えを取り上げることにした</title>
+      <link>https://qiita.com/jksoft/items/65f7824679ddf171a93d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/jksoft/items/65f7824679ddf171a93d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 78] AIによるエラー解決が普及する一方で、若手エンジニアがエラーメッセージを読まずにAIに依存する問題が顕在化している。 / このAI依存は個人の学習機会を奪い、マネージャーがエンジニアの実力を評価しにくくする組織的な課題も生む。 / 筆者はこの問題に対し、答えではなく「問い」を返すAIメンター「SocraMetry」を開発し、エンジニアの自律的な思考を促す仕組みで解決を試みている。 (Source: Qiita)</description>
+      <pubDate>Fri, 14 Aug 2026 00:15:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub Copilotアプリで最初のプロンプトを書いてみよう</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/</guid>
+      <description>[Score: 78] GitHub CopilotアプリでAIツールを使い始める際の最初のプロンプト作成方法を解説しています。 / 完璧なプロンプトは不要で、達成したいことを記述し、Copilotにコンテキストを与えることから始めるのが重要です。 / CopilotをGitHubリポジトリやローカルフォルダに接続し、具体的な変更内容を記述するだけでコード生成を開始できます。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 12 Aug 2026 19:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>なぜOpus 5は使い心地が悪いと感じるのか？</title>
+      <link>https://mun-logadan.github.io/why-does-opus-5-feel-worse/</link>
+      <guid isPermaLink="false">https://mun-logadan.github.io/why-does-opus-5-feel-worse/</guid>
+      <description>[Score: 75] 筆者と同僚は、Anthropicの最新モデルOpus 5が以前のバージョン（Opus 4.7, 4.8）やFableに比べて使い心地が悪いと感じていると述べています。 / これは、Opus 5がベンチマークスコアを重視するあまり、曖昧な状況で質問する傾向が少なく、大胆な仮定をするように訓練されているためと推測されています。 / 結果として、コーディングエージェントとしてユーザーが求める「明確化を求める」挙動が失われ、より慎重な「手助け」が必要になっていると分析しています。 (Source: Hacker News)</description>
+      <pubDate>Fri, 14 Aug 2026 10:12:48 +0000</pubDate>
     </item>
   </channel>
 </rss>
