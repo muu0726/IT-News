@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 19 Aug 2026 22:19:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 22:21:06 +0000</lastBuildDate>
     <item>
       <title>Google、AIモデルをコンパイルして暗号データを復号せずに扱えるように変換する「HEIR」発表。完全準同型暗号を利用し、AIでのセキュリティやプライバシー保護など実現へ</title>
       <link>https://www.publickey1.jp/blog/26/googleaiheirai.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/googleaiheirai.html</guid>
-      <description>[Score: 95] Googleは、完全準同型暗号を利用し、暗号データを復号せずにAIモデルで処理可能にするオープンソースコンパイラ「HEIR」を発表しました。 / これにより、AIモデルが暗号化された顧客データやネットワークトラフィックを直接分析できるようになり、プライバシー保護とセキュリティが大幅に向上します。 / クラウドベンダーやサービスプロバイダーは、機密情報を保護しつつAIサービスを提供できるようになります。 (Source: Publickey)</description>
+      <description>[Score: 95] Googleが、完全準同型暗号を利用したAIモデル用オープンソースコンパイラ「HEIR」を発表しました。 / HEIRは、AIモデルが暗号化されたデータを復号せずに直接処理できるように変換し、プライバシー保護とセキュリティを強化します。 / これにより、クラウドサービスでの機密データを用いたAI分析やレコメンド提供が、データ漏洩のリスクを低減しつつ可能になります。 (Source: Publickey)</description>
       <pubDate>Tue, 18 Aug 2026 15:55:25 +0000</pubDate>
     </item>
     <item>
-      <title>OpenRouterがStripeに参画</title>
-      <link>https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/</link>
-      <guid isPermaLink="false">https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/</guid>
-      <description>[Score: 90] AIモデルのマーケットプレイス兼ゲートウェイであるOpenRouterがStripeに参画しました。 / OpenRouterは、既存のミッション、製品、ロードマップを維持し、AIモデルの発見、利用、管理のためのオープンなプラットフォームを提供し続けます。 / Stripeとの連携により、グローバルなGDP成長の次なる波を推進することを目指します。 (Source: Hacker News)</description>
-      <pubDate>Wed, 19 Aug 2026 17:32:38 +0000</pubDate>
+      <title>エージェントアプリでソフトウェアデリバリーワークフローをGitHubに取り込む方法</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</guid>
+      <description>[Score: 92] GitHubエージェントアプリが、Amplitude、Endor Labs、LaunchDarkly、PagerDutyなどの外部ツールをGitHub内に統合する方法を紹介。 / 開発者はGitHubを離れることなく、製品の課題、セキュリティ、デプロイ、運用に関する質問に答えることが可能になる。 / これにより、ソフトウェアデリバリーのワークフロー全体が効率化され、意思決定が迅速化される。 (Source: GitHub Blog)</description>
+      <pubDate>Fri, 14 Aug 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>DFlash 2: 並列ドラフティングを継続</title>
-      <link>https://inco.ai/blog/dflash2/</link>
-      <guid isPermaLink="false">https://inco.ai/blog/dflash2/</guid>
-      <description>[Score: 90] DFlash 2は、AIエージェントの推論におけるボトルネックを解消するため、並列ドラフティング技術をさらに進化させます。 / この技術は、推測デコーディングにおいて、ドラフトモデルがトークンブロック全体を並列に予測し、ターゲットモデルが一度に検証することで、スループットを大幅に向上させます。 / NVIDIAやGoogleなどの主要企業が採用し、既存の推論スタックに統合されており、LLMの効率的な運用に不可欠な技術として注目されています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 19 Aug 2026 20:28:43 +0000</pubDate>
+      <title>首掛け型ウェアラブル THINKLET と OpenAI Realtime API で「目の前を一緒に見ながら相談できる相方」を作る</title>
+      <link>https://zenn.dev/yujif/articles/90696ac3f098e2</link>
+      <guid isPermaLink="false">https://zenn.dev/yujif/articles/90696ac3f098e2</guid>
+      <description>[Score: 90] 首掛け型ウェアラブルデバイスTHINKLETとOpenAI Realtime APIを連携させ、ユーザーの視覚情報と音声に基づいてリアルタイムで対話できるAIアシスタントが開発されました。 / 料理中の相談や英語スピーキング練習など、両手が塞がっている状況や共通の話題が必要な場面での実用性が期待されます。 / このシステムは、THINKLETのカメラとマイクを活用し、目の前の状況をAIが理解して適切なアドバイスや会話を提供します。 (Source: Zenn)</description>
+      <pubDate>Wed, 19 Aug 2026 18:13:11 +0000</pubDate>
     </item>
     <item>
-      <title>YAML 1枚で開発エージェントチームを動かす — 開発基盤に Docker Agent を採用した話</title>
-      <link>https://zenn.dev/xtm_blog/articles/b9993fe1d72b17</link>
-      <guid isPermaLink="false">https://zenn.dev/xtm_blog/articles/b9993fe1d72b17</guid>
-      <description>[Score: 90] Docker Agentは、YAMLファイル1枚で隔離された実行環境を持つAIエージェントチームを立ち上げられる開発基盤です。 / Docker Inc.製のOSSで、インストールが容易。agent.yamlでエージェントの定義や開発パイプラインを構成できます。 / 要件分析からコーディング、レビュー、PR作成までを自動化する開発パイプラインの構築事例が紹介されており、開発効率向上が期待されます。 (Source: Zenn)</description>
-      <pubDate>Tue, 18 Aug 2026 01:00:06 +0000</pubDate>
+      <title>新人AI禁止のあと、「新人AI制御教育ハーネス」を配った結果（Skill原文あり）</title>
+      <link>https://qiita.com/WdknWdkn/items/fe4b1810f45e4b6df166?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/WdknWdkn/items/fe4b1810f45e4b6df166?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 新人エンジニアがAIに過度に依存する問題に対し、AI利用を一時禁止した経験から「新人AI制御教育ハーネス『newcomer』」を開発しました。 / このツールは、社内スキルマップに基づきAIの利用範囲を制御し、新人の習熟度に応じてAIの支援レベルを段階的に解放します。 / AIがコードを代筆せず、調査・説明・レビュー・誘導に限定することで、新人の自律的な学習と理解を促進する具体的な仕組みが紹介されています。 (Source: Qiita)</description>
+      <pubDate>Wed, 19 Aug 2026 14:48:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>「次の単語を当てているだけ」のAIが、なぜ数学の証明までできるのか——LLMの創発研究の現在地を調べてみた</title>
+      <link>https://note.com/fuchagi/n/n42c43cfe0ff0</link>
+      <guid isPermaLink="false">https://note.com/fuchagi/n/n42c43cfe0ff0</guid>
+      <description>[Score: 90] LLMが単なる次単語予測にもかかわらず、数学の証明まで可能な「創発能力」を持つ現象について、その研究の現在地を深掘りしています。 / 創発の定義や、モデル規模と能力の関係を示す「崖のグラフ」が紹介され、その評価指標の妥当性に関する議論が展開されています。 / 創発能力が評価方法のアーティファクトである可能性が指摘され、LLMの理解を深める上で重要な視点を提供しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 20 Aug 2026 02:28:49 +0000</pubDate>
     </item>
     <item>
       <title>Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明</title>
       <link>https://www.publickey1.jp/blog/26/pythonmojowindows.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/pythonmojowindows.html</guid>
-      <description>[Score: 90] Pythonライクな新言語「Mojo」がオープンソースとして公開され、コンパイラやツールチェーンがGitHubで利用可能になりました。 / MojoはPythonの処理速度の遅さという課題を解決し、機械学習や生成AIの高速計算に特化しています。 / Windows版の開発も表明されており、今後の普及が期待されます。 (Source: Publickey)</description>
+      <description>[Score: 90] Pythonライクな新言語「Mojo」がオープンソースとして公開され、コンパイラやツールチェーンがGitHubで利用可能になりました。 / Mojoはバージョン1.0に到達し、機械学習や生成AIにおけるPythonの処理速度の課題解決を目指します。 / Pythonの使いやすさとC/C++のような高速処理を両立させ、AI開発の効率化に貢献すると期待されています。 (Source: Publickey)</description>
       <pubDate>Wed, 19 Aug 2026 15:40:43 +0000</pubDate>
     </item>
     <item>
-      <title>AI時代のセキュリティについて50のオープンソースプロジェクトが教えてくれたこと</title>
-      <link>https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/</guid>
-      <description>[Score: 90] AIがオープンソース開発のペースとセキュリティ課題を変革しており、メンテナーは限られた時間とリソースで新たな攻撃面に対応しています。 / GitHub Secure Open Source Fundは50プロジェクトに50万ドル以上を投資し、AI支援ワークフローや専門家との連携を通じてセキュリティ強化を支援しました。 / AIはセキュリティ問題の調査、優先順位付け、対応を加速させるものの、最終的な判断と責任は人間が担うことが重要であると結論付けられています。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 13 Aug 2026 16:00:00 +0000</pubDate>
+      <title>サーバーレス方程式：リアルタイムAI推論におけるコールドスタートの克服</title>
+      <link>https://dev.to/informatiqs1/the-serverless-equation-conquering-the-cold-start-in-real-time-ai-inference-4bfd</link>
+      <guid isPermaLink="false">https://dev.to/informatiqs1/the-serverless-equation-conquering-the-cold-start-in-real-time-ai-inference-4bfd</guid>
+      <description>[Score: 90] リアルタイムAI推論、特にGCP上のサーバーレスアーキテクチャにおける「コールドスタート」問題に焦点を当てる。 / Generative AIやGNNの導入において、このレイテンシが大きな課題となることを指摘。 / Cloud RunとEventarcのオーケストレーションを通じて、初期化レイテンシを最小化する方法を数学的に分析する。 (Source: Dev.to)</description>
+      <pubDate>Thu, 20 Aug 2026 21:50:30 +0000</pubDate>
     </item>
     <item>
-      <title>AWS の新ポリシー言語 Dogwood を試す</title>
-      <link>https://zenn.dev/exwzd/articles/20260813-dogwood-agent-policy</link>
-      <guid isPermaLink="false">https://zenn.dev/exwzd/articles/20260813-dogwood-agent-policy</guid>
-      <description>[Score: 88] AWSが発表したオープンソースのポリシー言語「Dogwood」は、AIエージェントのツール呼び出しを制御するための言語です。 / 既存のCedar言語が単一リクエストの認可判定に特化しているのに対し、Dogwoodはイベント履歴を参照するtemporal条件を追加し、連続する呼び出しに対する制御を可能にします。 / これにより、従来の認可では難しかった複雑なガードレールを宣言的に記述できるようになり、AIエージェントのセキュリティと信頼性を向上させます。 (Source: Zenn)</description>
-      <pubDate>Tue, 18 Aug 2026 04:07:05 +0000</pubDate>
+      <title>キャンバスがエージェント型ワークフローを可視化し、操作可能で、コスト効率の良いものにする方法</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/</guid>
+      <description>[Score: 88] GitHub Copilotアプリの「キャンバス」機能が、エージェント型ワークフローをどのように改善するかを解説。 / キャンバスは開発者とAIエージェントが永続的で共有可能な表面で対話することを可能にし、作業の可視性、操作性、承認プロセスを向上させる。 / これにより、GenAIワークフローにおけるコンテキストの喪失やレビューの負担といった課題を解決する。 (Source: GitHub Blog)</description>
+      <pubDate>Mon, 17 Aug 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Go 1.27</title>
-      <link>https://go.dev/blog/go1.27</link>
-      <guid isPermaLink="false">https://go.dev/blog/go1.27</guid>
-      <description>[Score: 85] GoチームはGo 1.27をリリースし、言語、ツールチェーン、ランタイム、標準ライブラリに大幅な機能強化が施されました。 / 主な更新点として、ジェネリックメソッドのサポート、構造体リテラルでのネストされたフィールドの直接初期化が可能になりました。 / また、関数型推論がすべての代入コンテキストで一般化され、言語の表現力と開発者の生産性が向上します。 (Source: Hacker News)</description>
-      <pubDate>Wed, 19 Aug 2026 18:33:49 +0000</pubDate>
+      <title>8月17日の障害と今後の取り組み</title>
+      <link>https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/</guid>
+      <description>[Score: 85] GitHubで2026年8月17日に発生した7時間47分の大規模障害に関する詳細な報告です。 / トラフィックのピーク時に中央USデータセンターの重要なインフラコンポーネントがスケールできず、認証障害や複数サービス停止を引き起こしました。 / 今回の障害はコードや設定変更ではなく、キャパシティ不足が根本原因であり、GitHubは信頼性向上の取り組みを加速するとしています。 (Source: Hacker News)</description>
+      <pubDate>Thu, 20 Aug 2026 19:22:24 +0000</pubDate>
     </item>
     <item>
-      <title>ローカルLLM編成が単独のフロンティアAIを超えた日</title>
-      <link>https://zenn.dev/nrs/articles/b920540a64e1a1</link>
-      <guid isPermaLink="false">https://zenn.dev/nrs/articles/b920540a64e1a1</guid>
-      <description>[Score: 85] OpenAIやAnthropicなどのフロンティアモデルの経済性や利用制限に不満を感じた筆者が、ローカルLLMの活用を模索した経緯を解説しています。 / 約9万行のTypeScript CLIへの機能追加タスクを題材に、ローカルLLMを編成してフロンティアモデルのコード品質に肉薄、一部では凌駕する成果を達成しました。 / 人間が介入しない厳密な評価基準と採点方法を設け、ローカル環境でのAI開発の可能性と、外部サービスへの依存からの脱却の重要性を示唆しています。 (Source: Zenn)</description>
-      <pubDate>Tue, 18 Aug 2026 11:42:49 +0000</pubDate>
+      <title>Huzzah – AIによるコーディングへの新しいアプローチ</title>
+      <link>https://www.danielvaughn.dev/posts/huzzah/</link>
+      <guid isPermaLink="false">https://www.danielvaughn.dev/posts/huzzah/</guid>
+      <description>[Score: 85] AIコーディングエージェントの限界（プロンプトの長さ、命令的、一時的）を解決するため、新しいエディタ「Huzzah」が提案されています。 / Huzzahは、擬似コード、宣言的、永続的なプロンプトを用いることで、開発者がコード生成に対するより良い洞察と制御を得ることを目指します。 / FizzBuzzの例を通じて、従来のAIエージェントと比較し、Huzzahの異なるパラダイムが紹介されています。 (Source: Hacker News)</description>
+      <pubDate>Thu, 20 Aug 2026 19:05:36 +0000</pubDate>
     </item>
     <item>
-      <title>Cursor Originを触った。第一印象は「Cursor版GitHub」</title>
-      <link>https://qiita.com/Kinopee/items/639d401573c09ab24667?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Kinopee/items/639d401573c09ab24667?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] Cursor Originは、AIエージェントが大量のブランチや差分を生成することを前提としたGitホスティングサービスです。 / GitHubやGitLabと同様の役割を持ち、既存のGitHubリポジトリをOriginへ移行して利用可能で、CLIからの操作も容易です。 / 初期ベータ版が有料プラン向けに提供開始されており、AI駆動開発におけるバージョン管理の新たな選択肢として注目されます。 (Source: Qiita)</description>
-      <pubDate>Mon, 17 Aug 2026 17:44:41 +0000</pubDate>
+      <title>YANS2026 参加報告</title>
+      <link>https://zenn.dev/aishift/articles/78612006a494ca</link>
+      <guid isPermaLink="false">https://zenn.dev/aishift/articles/78612006a494ca</guid>
+      <description>[Score: 85] NLP若手の会 第21回シンポジウム(YANS2026)の参加報告記事です。 / 発表傾向として、LLM-as-a-Judgeの信頼性やマルチモーダルデータに関する研究が増加していることが報告されています。 / 特にAIエージェントのツール呼び出し性能を評価する日本語データセット「JMultiWOZ-TC」が紹介され、GitHubで公開されています。 (Source: Zenn)</description>
+      <pubDate>Wed, 19 Aug 2026 07:08:31 +0000</pubDate>
     </item>
     <item>
-      <title>当社システムへの不正アクセスに関するお知らせ（第二報）（2026年8月19日 18:40更新） | さくらインターネット</title>
-      <link>https://www.sakura.ad.jp/corporate/information/newsreleases/2026/08/19/1968225633/</link>
-      <guid isPermaLink="false">https://www.sakura.ad.jp/corporate/information/newsreleases/2026/08/19/1968225633/</guid>
-      <description>[Score: 85] さくらインターネットがシステムへの不正アクセスに関する第二報を公開しました。 / 新たに販売管理システムへの不正アクセスが判明し、約136万アカウントの会員情報に影響の可能性があります。 / ハッシュ化されたパスワード情報へのアクセスも確認されましたが、現時点でデータ外部持ち出しは確認されていません。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 19 Aug 2026 06:43:19 +0000</pubDate>
+      <title>ザッカーバーグは子どもの安全への懸念について嘘をついた、Metaの内部告発者が画期的な裁判で証言</title>
+      <link>https://www.reddit.com/r/technology/comments/1vtw7kz/zuckerberg_lied_about_concern_for_child_safety/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vtw7kz/zuckerberg_lied_about_concern_for_child_safety/</guid>
+      <description>[Score: 85] Meta（旧Facebook）のCEOマーク・ザッカーバーグが、子どもの安全に関する懸念について虚偽の発言をしていたと、内部告発者が重要な裁判で証言したという記事です。 / これは、ソーシャルメディアプラットフォームが若年層に与える影響と、企業がその責任をどのように果たしているかという問題に焦点を当てています。 / 大手テック企業の社会的責任と、ユーザー、特に未成年者の保護に関する議論をさらに深めるでしょう。 (Source: Reddit)</description>
+      <pubDate>Thu, 20 Aug 2026 21:11:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI Agentに社内知識をオンボーディングする：SkillsとEvalの設計</title>
+      <link>https://zenn.dev/mkj/articles/aad5698672aef3</link>
+      <guid isPermaLink="false">https://zenn.dev/mkj/articles/aad5698672aef3</guid>
+      <description>[Score: 85] AI Agentが社内固有の知識を習得し、実務で活用するためのオンボーディング手法と評価（Eval）設計について解説しています。 / 社内Notionの文書を基にAI Agent向けのSkillsを構築し、その効果を測るための自由回答型Evalの作成プロセスが詳細に紹介されています。 / Agentの自動生成によるSkills更新や、ドメイン専門家との連携によるEval改善など、実践的な知見が豊富に盛り込まれています。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 20 Aug 2026 08:23:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Docker社、コンテナ向けの高性能な新ハイパーバイザ「Docker VMM」パブリックベータ公開</title>
+      <link>https://www.publickey1.jp/blog/26/dockerdocker_vmm.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/dockerdocker_vmm.html</guid>
+      <description>[Score: 85] Docker社が、コンテナ向けに再構築された高性能な新ハイパーバイザ「Docker VMM」のパブリックベータを公開しました。 / これはDocker Desktopの仮想化レイヤーを刷新するもので、WindowsとmacOS版のDocker Desktop v4.86で利用可能です。 / 高速起動やファイルI/Oの劇的な改善により、Docker Desktopのパフォーマンスと安定性が向上します。 (Source: Publickey)</description>
+      <pubDate>Wed, 19 Aug 2026 17:43:24 +0000</pubDate>
     </item>
     <item>
       <title>コードからDockerfile不要でOCIコンテナをビルド。「Cloud Native Buildpacks」が十分成熟したとしてCNCFの卒業プロジェクトに</title>
       <link>https://www.publickey1.jp/blog/26/dockerfileocicloud_native_buildpackscncf.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/dockerfileocicloud_native_buildpackscncf.html</guid>
-      <description>[Score: 85] CNCFは、ソースコードから直接OCIコンテナイメージを構築する「Cloud Native Buildpacks」が卒業プロジェクトになったと発表しました。 / このツールはDockerfile不要で、プログラミング言語の自動検出や依存関係のインストールを自動化します。 / これにより、コンテナビルドの標準化と開発者の利便性向上が期待されます。 (Source: Publickey)</description>
+      <description>[Score: 85] Cloud Native BuildpacksがCNCFの卒業プロジェクトとなり、本番環境での利用が推奨される成熟度に達しました。 / このツールは、Dockerfileを記述することなく、アプリケーションのソースコードから直接OCIコンテナイメージを自動でビルドします。 / 言語検出、依存関係のインストール、イメージレイヤリングを自動化し、コンテナ開発の簡素化と標準化を促進します。 (Source: Publickey)</description>
       <pubDate>Tue, 18 Aug 2026 16:03:06 +0000</pubDate>
     </item>
     <item>
-      <title>エージェントアプリでソフトウェアデリバリーワークフローをGitHubに統合する方法</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</guid>
-      <description>[Score: 85] ソフトウェア開発において、プルリクエストの作業中に複数のツールやタブを切り替える必要があり、コンテキストの切り替えが課題となっています。 / GitHubエージェントアプリは、Amplitude、Endor Labs、LaunchDarkly、PagerDutyなどの外部サービスをGitHub内で直接利用できるようにします。 / これにより、開発者はGitHubを離れることなく、必要な情報を取得し、ソフトウェアデリバリーワークフロー全体を効率的に完結させることが可能になります。 (Source: GitHub Blog)</description>
-      <pubDate>Fri, 14 Aug 2026 16:00:00 +0000</pubDate>
+      <title>Telnyx Edge ComputeでAIモデルをランタイム時に切り替える</title>
+      <link>https://dev.to/sonam_50a41a4ced7e6b4f3fa/switch-ai-models-at-runtime-on-telnyx-edge-compute-2ncf</link>
+      <guid isPermaLink="false">https://dev.to/sonam_50a41a4ced7e6b4f3fa/switch-ai-models-at-runtime-on-telnyx-edge-compute-2ncf</guid>
+      <description>[Score: 85] Telnyx Edge Compute上でAIモデルをランタイム時に動的に切り替える方法を紹介。 / コードの再デプロイなしにモデルの変更が可能になり、AIモデルの比較や実験が容易になる。 / Telnyx KV Storageを活用し、UIやAPIから即座にモデルを切り替えられる。 (Source: Dev.to)</description>
+      <pubDate>Thu, 20 Aug 2026 22:13:11 +0000</pubDate>
     </item>
     <item>
-      <title>エージェントAIのためのランタイムガバナンス：信頼できる来歴とフェイルクローズ実行によるアクション境界制御</title>
-      <link>https://arxiv.org/abs/2608.16891</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2608.16891</guid>
-      <description>[Score: 85] 自律的なエージェントAIの安全かつ信頼性の高い運用を実現するためのランタイムガバナンスに関する研究論文です。 / 信頼できる来歴情報とフェイルクローズ実行のメカニズムにより、AIエージェントの行動範囲を厳密に制御する手法を提案しています。 / AIエージェントの自律性が高まる中で、その行動を適切に管理する重要性を示唆しており、AIの安全性確保に貢献します。 (Source: arXiv cs.AI)</description>
-      <pubDate>Wed, 19 Aug 2026 04:00:00 +0000</pubDate>
+      <title>メンタルヘルスにおける大規模言語モデル：応用、革新、倫理的課題の系統的レビュー</title>
+      <link>https://arxiv.org/abs/2608.18080</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2608.18080</guid>
+      <description>[Score: 85] メンタルヘルス分野における大規模言語モデル（LLM）の応用事例と革新的な利用法を系統的にレビューしています。 / 同時に、この技術がもたらす倫理的な課題についても深く掘り下げて分析しています。 / AIの社会実装におけるメリットとリスクの両面を考察する重要な研究です。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 20 Aug 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Unsloth Dynamic 3.0 GGUFs</title>
-      <link>https://unsloth.ai/docs/basics/dynamic-3.0-ggufs</link>
-      <guid isPermaLink="false">https://unsloth.ai/docs/basics/dynamic-3.0-ggufs</guid>
-      <description>[Score: 80] UnslothがDynamic v3.0 GGUFをリリースし、Qwen3.8-27Bモデルにおいて同サイズで他社より10%以上高い精度を実現しました。 / この新バージョンは、llama.cppなどの推論エンジンと互換性があり、より高品質なimatrixキャリブレーションデータセットと新しい量子化技術を採用しています。 / モデル品質を維持しつつサイズを抑えることで、エージェントコーディングやチャット、多言語性能が向上しています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 19 Aug 2026 18:36:45 +0000</pubDate>
+      <title>時相論理の形式仕様の Quint を使って、denoland/celld の二重 writer バグを見つけた</title>
+      <link>https://zenn.dev/mizchi/articles/quint-application-modeling</link>
+      <guid isPermaLink="false">https://zenn.dev/mizchi/articles/quint-application-modeling</guid>
+      <description>[Score: 80] 時相論理の形式仕様記述言語Quintを用いて、分散システムdenoland/celldの二重writerバグが発見・修正された事例が紹介されています。 / QuintはTLA+の思想を受け継ぎ、TypeScriptやRustに近い記述で分散システムのモデル化とバグ検査を可能にします。 / AI（Claude 5 Opus）の支援も受けつつ、モデルから反例を抽出し、実際のRust実装でバグを再現・確認するプロセスが解説されています。 (Source: Zenn)</description>
+      <pubDate>Wed, 19 Aug 2026 07:44:30 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeに見せない技術: AIに入力できないデータを分析する</title>
-      <link>https://zenn.dev/green_tea/articles/a994964786cb4f</link>
-      <guid isPermaLink="false">https://zenn.dev/green_tea/articles/a994964786cb4f</guid>
-      <description>[Score: 80] AIに機密データを誤って入力することを防ぐための多層防御設計と、その具体的な実装方法が解説されています。 / GitHubリポジトリで公開されている設定一式を用いて、AIから機密情報を遮断する仕組みを構築します。 / AI利用における情報漏洩リスクを低減し、安全な開発環境を維持するための実用的なアプローチが提供されており、定期的な検証の重要性も強調されています。 (Source: Zenn)</description>
-      <pubDate>Tue, 18 Aug 2026 02:55:05 +0000</pubDate>
+      <title>AWSでYouTube的サービスを検証してたら、電気通信事業法と著作権法の壁にぶつかった話</title>
+      <link>https://qiita.com/yama3133/items/e60cb25d3b10d7a2f316?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yama3133/items/e60cb25d3b10d7a2f316?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] AWSでYouTubeのような動画配信サービスを構築する際、技術的な実現可能性と法的な壁について検証した記事です。 / ユーザー間の通信機能（DM、コメントなど）を追加すると電気通信事業法の届出が必要になる可能性があり、著作権法や情報流通プラットフォーム対処法（旧プロバイダ責任制限法）も考慮すべき点が指摘されています。 / 個人開発者向けに、UGCプラットフォームを構築する際の法的な注意点と、誹謗中傷・著作権侵害コンテンツへの対応義務がまとめられています。 (Source: Qiita)</description>
+      <pubDate>Tue, 18 Aug 2026 04:10:47 +0000</pubDate>
     </item>
     <item>
-      <title>AIセキュリティ何から勉強すりゃええの？</title>
-      <link>https://qiita.com/mikihitooooo/items/ced6a0aa744379d338b6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/mikihitooooo/items/ced6a0aa744379d338b6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] AIの導入が進む中で、セキュリティの重要性が高まると考え、AIセキュリティの学習方法についてまとめた記事です。 / まずは良質な一次ソースに当たり、WSL+DockerでRAGやプロンプトインジェクションの実験環境を構築することを推奨しています。 / 将来的には、情報収集の自動化、コンテナやIaCを活用した検証環境の半自動化、そしてシステム構成や運用における対策検討のサイクルを回すことを目指します。 (Source: Qiita)</description>
-      <pubDate>Tue, 18 Aug 2026 15:03:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>新型AirPodsのリーク情報で内蔵カメラとビジュアルインテリジェンスが明らかに</title>
-      <link>https://www.reddit.com/r/technology/comments/1vszcww/new_airpods_leak_reveals_builtin_cameras_and/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vszcww/new_airpods_leak_reveals_builtin_cameras_and/</guid>
-      <description>[Score: 80] 新型AirPodsに内蔵カメラとビジュアルインテリジェンス機能が搭載されるというリーク情報が浮上しました。 / これにより、AirPodsが単なるオーディオデバイスから、ARやAIを活用した新たな体験を提供する可能性が示唆されています。 / ウェアラブルデバイスの進化とプライバシーに関する新たな議論を巻き起こすでしょう。 (Source: Reddit)</description>
-      <pubDate>Wed, 19 Aug 2026 21:13:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>キャンバスがエージェントワークフローを可視化し、操縦可能で、コスト効率の良いものにする方法</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/</guid>
-      <description>[Score: 80] 生成AIの進化により、ソフトウェア開発は人間とAIエージェントが協調するハイブリッドな形へと変化しています。 / しかし、現在のAIエージェントワークフローでは、コンテキストの喪失や生成されたコードのレビューに時間がかかるなどの課題があります。 / GitHub Copilotアプリの「キャンバス」機能は、開発者とエージェントが共有可能な永続的なサーフェスで協調作業を行うことで、これらの課題を解決し、ワークフローを可視化・操縦可能にします。 (Source: GitHub Blog)</description>
-      <pubDate>Mon, 17 Aug 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>コーディングエージェントが実装するUIの品質を上げるためにやったこと</title>
-      <link>https://zenn.dev/moshjp/articles/39972d023f0440</link>
-      <guid isPermaLink="false">https://zenn.dev/moshjp/articles/39972d023f0440</guid>
-      <description>[Score: 78] コーディングエージェントによるUI実装の品質が低いという課題に対し、デザインシステムの整備を通じてAI生成精度を向上させた取り組みを紹介しています。 / デザイン情報の一元化不足や、エージェントが正しいコンポーネントの使い方を理解できないといった問題点を特定し、段階的な改善策を実施しました。 / StorybookのJSDocにFigmaやNotionのURLを記載するなど、情報連携を強化することで、AIが意図通りのUIを生成できるようになり、開発効率の向上が期待されます。 (Source: Zenn)</description>
-      <pubDate>Tue, 18 Aug 2026 01:00:20 +0000</pubDate>
+      <title>AmazonがAIに学習させるため希少本を破壊していると発覚：歴史家や愛書家が激怒</title>
+      <link>https://www.reddit.com/r/technology/comments/1vtjbe5/amazon_caught_destroying_rare_books_to_feed_ai/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vtjbe5/amazon_caught_destroying_rare_books_to_feed_ai/</guid>
+      <description>[Score: 80] AmazonがAIの学習データとして利用するために希少な書籍を破壊しているという疑惑が報じられ、歴史家や愛書家から強い批判を浴びている記事です。 / これは、AI開発における倫理的な問題、特に文化財の保護と技術進歩のバランスについて深刻な問いを投げかけています。 / デジタル化とAIの進展が、物理的な文化遺産に与える影響について再考を促す事例と言えるでしょう。 (Source: Reddit)</description>
+      <pubDate>Thu, 20 Aug 2026 13:19:21 +0000</pubDate>
     </item>
   </channel>
 </rss>
