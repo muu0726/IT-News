@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-08-16T07:14:48.504327+09:00",
-  "week_start": "2026-08-10",
-  "week_end": "2026-08-16",
-  "article_count": 243,
-  "overview": "今週はAI技術の進化とそれに伴う多角的な議論が活発でした。プライバシー保護AIの実用化やLLMの高速化、エージェントLLMの登場といった進展が見られる一方で、AI生成コンテンツの透明性（ウォーターマーキング）や幻覚、記憶といった課題も浮上しています。また、パスキーのような新しい認証技術や、サプライチェーンセキュリティの重要性が改めて認識されるなど、ITセキュリティ全般への関心も高まっています。開発者の役割変化や、低コストでのシステム構築に関する実践的な知見も共有されました。",
+  "generated_at": "2026-08-23T07:15:24.497284+09:00",
+  "week_start": "2026-08-17",
+  "week_end": "2026-08-23",
+  "article_count": 258,
+  "overview": "今週は、AI技術の進化とそれに伴う新たな課題が顕著に現れました。Googleの完全準同型暗号を利用したAIモデルコンパイラ「HEIR」やOpenAIの高性能ビジョンモデル「GPT 5.6 Sol」など、AIの性能向上とセキュリティ・プライバシー保護への取り組みが進んでいます。一方で、AIが生成したコードの著作権問題や、AIアシスタントが引き起こすセキュリティ脆弱性、組織内でのAI活用格差といった、AI導入における現実的な課題も浮き彫りになりました。開発者コミュニティでは、AI時代の新たなプログラミング言語「Mojo」のオープンソース化や、AIエージェントの活用と制御に関する議論も活発です。",
   "trends": [
-    "AIのプライバシー保護と透明性",
-    "LLMの高速化とエージェント化",
-    "サイバーセキュリティの新たな脅威と対策",
-    "開発パラダイムとエンジニアの役割変化",
-    "エッジAIと軽量モデルの台頭"
+    "AIセキュリティとプライバシー強化",
+    "高性能AIモデルの登場",
+    "AI時代の開発者と組織の課題",
+    "AI生成コードの法的側面",
+    "AI特化型言語と開発基盤"
   ],
   "highlights": [
     {
-      "title": "パスキーはなぜ「盗まれても意味がない」と言えるのか — 公開鍵暗号方式で理解する新しい認証 (Qiita)",
-      "url": "https://qiita.com/gts/items/8d3c14dabff88d8f1901?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "comment": "公開鍵暗号方式を用いてパスキーの安全性を詳細に解説しており、次世代の認証技術への理解を深める上で非常に重要です。"
+      "title": "Google、AIモデルをコンパイルして暗号データを復号せずに扱えるように変換する「HEIR」発表。完全準同型暗号を利用し、AIでのセキュリティやプライバシー保護など実現へ",
+      "url": "https://www.publickey1.jp/blog/26/googleaiheirai.html",
+      "comment": "完全準同型暗号を利用してAIモデルが暗号データを直接処理できる「HEIR」は、AIにおけるセキュリティとプライバシー保護を大きく前進させる画期的な技術です。"
     },
     {
-      "title": "Googleが準同型暗号化でプライベートAIを実用化 (Hacker News)",
-      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-      "comment": "暗号化されたデータ上で直接計算を可能にする準同型暗号化の実用化は、機密性の高い分野でのAI活用を大きく前進させる画期的な発表です。"
+      "title": "GPT 5.6 SolはOpenAIがこれまでにリリースした中で最高の「ビジョン」モデル",
+      "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+      "comment": "OpenAIが発表したGPT-5.6 Solモデルは、物体検出やOCRなどのビジョンタスクで過去最高の性能を記録し、AIの視覚認識能力の大きな進化を示しています。"
     },
     {
-      "title": "Claude がテキストに電子透かしを入れ始めたので、LLM ウォーターマーキングの仕組みを調べた (Zenn)",
-      "url": "https://zenn.dev/hellorusk/articles/3328866ca9e922",
-      "comment": "AI生成コンテンツの真偽を識別するウォーターマーキング技術は、AIの倫理的利用と情報信頼性確保において極めて重要なテーマです。"
+      "title": "Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンも提供",
+      "url": "https://www.publickey1.jp/blog/26/pythonmojowindows.html",
+      "comment": "Pythonの課題を解決し、特に機械学習や生成AI分野での高速演算を目指す新言語「Mojo」のオープンソース化は、AI開発の新たな選択肢として注目されます。"
     },
     {
-      "title": "ドローンのカメラが中国のIPアドレスに信号を送信していることが判明、イギリス海軍がカメラのインターネット接続機能を無効化しなければいけない事態に (はてなブックマーク)",
-      "url": "https://gigazine.net/news/20260812-spy-cameras-navy-drones-secretly-sent-data-china/",
-      "comment": "軍事利用されるIoTデバイスにおけるサプライチェーンセキュリティの脆弱性を浮き彫りにし、国家安全保障に関わる重大な問題提起です。"
+      "title": "AI生成されたGitHub Copilotの「Autofix」がSnowflakeのJira侵害を許した",
+      "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "comment": "AIコーディングアシスタントが脆弱性を見落とし、それが実際のセキュリティ侵害につながった事例は、AI活用における新たなセキュリティリスクを浮き彫りにしました。"
     },
     {
-      "title": "プロプライエタリLLM APIから推論トレースを盗む (Hacker News)",
-      "url": "https://stolen-thoughts.com/",
-      "comment": "プロプライエタリLLMの内部推論プロセスを抽出する手法は、AIモデルの知的財産保護とセキュリティに対する新たな脅威を示しています。"
+      "title": "Your AI-Generated Code Might Not Be Yours",
+      "url": "https://dev.to/theaidownside/your-ai-generated-code-might-not-be-yours-5314",
+      "comment": "AIが生成したコードの著作権帰属に関する法的見解は不確実であり、開発者や企業にとって重要な法的・倫理的課題を提起しています。"
     }
   ]
 }
