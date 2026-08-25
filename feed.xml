@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 24 Aug 2026 22:20:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Aug 2026 22:21:23 +0000</lastBuildDate>
     <item>
-      <title>デザイナーが作る仕様駆動型デザインシステム</title>
-      <link>https://zenn.dev/katsumata/articles/014affaeb272d00aeae6</link>
-      <guid isPermaLink="false">https://zenn.dev/katsumata/articles/014affaeb272d00aeae6</guid>
-      <description>[Score: 90] デザインシステムにおけるFigmaとコードの乖離、ドキュメントの陳腐化といった課題を解決するため、デザイナーが主導する「仕様駆動型デザインシステム」を提案しています。 / Claude CodeやSpec Kitを活用し、コンポーネントの仕様を構造化してFigma、コード、ドキュメント、テストを自動生成するアプローチを紹介。 / これにより保守コストを大幅に削減し、デザイナーが実装まで関与できる生産性の向上を目指しています。 (Source: Zenn)</description>
-      <pubDate>Mon, 24 Aug 2026 01:39:09 +0000</pubDate>
+      <title>OpenAI Jalapeño: Nvidia Blackwellよりも優れている</title>
+      <link>https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia</link>
+      <guid isPermaLink="false">https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia</guid>
+      <description>[Score: 98] OpenAIが独自設計した推論用ASIC「Jalapeño」がHot Chipsで発表され、その詳細が明らかになりました。 / Jalapeñoは、Nvidia Blackwellを含む既存の主要なAIチップを複数のオープンソースモデルで上回る性能を示し、業界をリードしています。 / Broadcomとの提携により約16ヶ月という短期間で開発されたこのチップは、ハードウェアとソフトウェアの協調設計により、汎用的な推論において高いパフォーマンスを発揮します。 (Source: Hacker News)</description>
+      <pubDate>Tue, 25 Aug 2026 14:06:02 +0000</pubDate>
     </item>
     <item>
-      <title>「うるう秒」27年に事実上廃止へ　自転とのずれ「1時間」まで容認　10月に国際会議で採決</title>
-      <link>https://www.itmedia.co.jp/news/article/2608/24/2000000718/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2608/24/2000000718/</guid>
-      <description>[Score: 90] 2027年に「うるう秒」が事実上廃止され、UTCとUT1のずれが最大1時間まで許容される見込みです。 / コンピュータや通信システムへの影響を考慮し、デジタル社会のインフラ安定化が目的とされています。 / 特に「負のうるう秒」によるシステム障害リスクが懸念されており、その回避が期待されます。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 24 Aug 2026 06:36:56 +0000</pubDate>
+      <title>AppleがM6とM5 Ultraを発表</title>
+      <link>https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/</link>
+      <guid isPermaLink="false">https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/</guid>
+      <description>[Score: 95] Appleが、新しいMac miniに搭載されるM6チップと、新しいMac Studioに搭載されるM5 Ultraチップを発表しました。 / M6はApple初の2nmチップで、12コアCPUとNeural Accelerators搭載の12コアGPUを備え、日常的なパフォーマンスと電力効率を大幅に向上させます。 / M5 Ultraは、UltraFusion技術によるクアッドダイアーキテクチャを採用し、最大36コアCPUと80コアGPU、1.2TB/sのユニファイドメモリ帯域幅でプロおよびAIワークロードに比類ないパワーを提供します。 (Source: Hacker News)</description>
+      <pubDate>Tue, 25 Aug 2026 13:01:22 +0000</pubDate>
     </item>
     <item>
-      <title>AIにとって「忘れられる権利」は難しい：モデルからデータを削除することが「削除ボタン」ではない理由</title>
-      <link>https://dev.to/theaidownside/the-right-to-be-forgotten-is-hard-for-ai-why-deleting-your-data-from-a-model-isnt-a-delete-button-375d</link>
-      <guid isPermaLink="false">https://dev.to/theaidownside/the-right-to-be-forgotten-is-hard-for-ai-why-deleting-your-data-from-a-model-isnt-a-delete-button-375d</guid>
-      <description>[Score: 90] GDPRなどの「忘れられる権利」は、データベースのレコード削除のようにAIモデルには適用しにくいと指摘しています。 / ユーザーデータはモデルのパラメータに分散して溶解しており、特定のデータをきれいに削除することは困難です。 / これは単なる設定変更ではなく、AI研究における重要な課題であり、プライバシー保護の新たな挑戦となるでしょう。 (Source: Dev.to)</description>
-      <pubDate>Mon, 24 Aug 2026 21:48:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>Rustに移植された「Bun 1.4」正式リリース。Node.jsとの互換性向上でPlaywrightやvitestが動作、CPUとメモリの使用率が大幅改善、正規表現が高速化など</title>
-      <link>https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html</guid>
-      <description>[Score: 88] JavaScriptランタイム「Bun 1.4」が正式リリースされ、ZigからRustへの移植が完了しました。 / Node.jsとの互換性が大幅に向上し、Playwrightやvitestなどのツールが動作可能に。 / CPUとメモリ使用率が大幅に改善され、起動時間の高速化や正規表現の高速化も実現しています。 (Source: Publickey)</description>
-      <pubDate>Sun, 23 Aug 2026 15:58:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>Xiaomi、新CPUがシングルスレッドでAppleコアに匹敵、マルチスレッドでは大幅に高速化</title>
-      <link>https://twitter.com/lemire/status/2091894299289874926</link>
-      <guid isPermaLink="false">https://twitter.com/lemire/status/2091894299289874926</guid>
-      <description>[Score: 85] Xiaomiが新しいCPU「Xring O3」を発表し、シングルスレッド性能でAppleのコアに匹敵すると報じられました。 / マルチスレッド性能ではAppleを大幅に上回り、44MBの大量キャッシュとAI/SIMDアクセラレーションをサポートします。 / このチップは、モバイルプロセッサの性能向上とAI機能統合の重要なトレンドを示しています。 (Source: Hacker News)</description>
-      <pubDate>Mon, 24 Aug 2026 15:08:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIでイベントカタログを279件自動生成し、成果物の検証を設計した話</title>
-      <link>https://zenn.dev/tribeau/articles/d7cd180e53f719</link>
-      <guid isPermaLink="false">https://zenn.dev/tribeau/articles/d7cd180e53f719</guid>
-      <description>[Score: 85] トリビュー社がAIを活用し、4つのリポジトリから279件のイベントカタログを自動生成した事例を紹介しています。 / AIによる生成物の「揺れ」や「ハルシネーション」といった課題に対し、AIの役割を構造化JSONの抽出に限定し、決定論的なスクリプトで統合・描画・検証を行うパイプラインを設計しました。 / 特に、生成物の品質を担保するための4層にわたる検証設計が詳細に解説されており、実運用におけるAI活用の知見が共有されています。 (Source: Zenn)</description>
-      <pubDate>Mon, 24 Aug 2026 02:50:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>元ヤフーエンジニア社長が考える、AI時代のエンジニアに必要な3つのスキル</title>
-      <link>https://qiita.com/ryoheiiwamoto/items/5f21adcca8aff1b0357a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ryoheiiwamoto/items/5f21adcca8aff1b0357a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AI時代にエンジニアが生き残るためには、「AIを使いこなす力」「ビジネス戦闘力」「人間力」の3つのスキルが不可欠と提言。 / AIが指示された作業をこなすようになるため、自ら課題を発見し提案できるコンサル的な役割へのシフトを強調。 / 新しいAIツールを積極的に試し、論理的思考力や多角的な視野を持つ「仕事ができる人」の重要性を説く。 (Source: Qiita)</description>
-      <pubDate>Mon, 24 Aug 2026 07:31:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>Uber、アルゴリズムが人間のレビューなしにドライバーを停止させたとして約10億ドルの罰金</title>
-      <link>https://www.reddit.com/r/technology/comments/1vx1a0d/uber_hit_with_nearly_1_billion_fine_after/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1vx1a0d/uber_hit_with_nearly_1_billion_fine_after/</guid>
-      <description>[Score: 85] Uberが、アルゴリズムによるドライバーの停止処分に人間のレビューがなかったとして、約10億ドルもの巨額の罰金を科されました。 / AIやアルゴリズムの倫理的利用と、その決定に対する人間の介入の重要性が改めて問われる事例です。 / 自動化されたシステムにおける責任の所在や、公平性の確保がビジネスにおいて不可欠であることを示唆しています。 (Source: Reddit)</description>
-      <pubDate>Mon, 24 Aug 2026 12:22:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>謎のAI「Ox Alpha」が出現し無料テスト中、コンテキストウィンドウは100万トークンで1日数兆トークンを処理できる匿名ラボがAPIを提供</title>
-      <link>https://gigazine.net/news/20260824-ox-alpha/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20260824-ox-alpha/</guid>
-      <description>[Score: 85] 謎の匿名AI「Ox Alpha」がOpenRouterなどで無料テストを開始しました。 / 100万トークンのコンテキストウィンドウを持ち、1日数兆トークンを処理可能な大規模AIです。 / テキスト・画像・動画対応のマルチモーダルモデルで、高性能が報告されています。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 24 Aug 2026 13:32:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>Slack上の開発チームの会話をAIエージェントが把握してコーディング。ドキュメント作成もする「Slack Code」登場</title>
-      <link>https://www.publickey1.jp/blog/26/slackaislack_code.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/slackaislack_code.html</guid>
-      <description>[Score: 85] Slackが開発チーム向けの新機能「Slack Code」を発表しました。 / AIエージェントがチャットに参加し、開発チームの議論内容を把握してコーディングやドキュメント作成を行います。 / AnthropicのClaude Code、CognitionのDevin、GitHub Copilotなど複数のAIエージェントに対応予定です。 (Source: Publickey)</description>
-      <pubDate>Sun, 23 Aug 2026 15:52:28 +0000</pubDate>
+      <title>あなたのRAGデモが機能するのは、誰かがドキュメントを選んだからだ</title>
+      <link>https://dev.to/nabeelbaghoor/your-rag-demo-works-because-someone-picked-the-documents-3980</link>
+      <guid isPermaLink="false">https://dev.to/nabeelbaghoor/your-rag-demo-works-because-someone-picked-the-documents-3980</guid>
+      <description>[Score: 95] RAG（Retrieval-Augmented Generation）デモが成功するのは、事前に厳選されたドキュメントを使用しているためだと指摘しています。 / 実際の運用環境では、古い情報、矛盾する情報、多様な形式のドキュメントが混在し、RAGの精度が低下する問題に直面します。 / 筆者は、RAGの課題はモデル自体ではなく、知識ベースのキュレーションと管理にあると強調しています。 (Source: Dev.to)</description>
+      <pubDate>Tue, 25 Aug 2026 21:49:24 +0000</pubDate>
     </item>
     <item>
       <title>8月17日の障害と今後の取り組み</title>
       <link>https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/</link>
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/</guid>
-      <description>[Score: 85] GitHubは8月17日に7時間47分に及ぶ大規模な障害を経験し、認証やGitHub Actionsなど広範囲に影響が出ました。 / 障害の主な原因は、トラフィックのピーク時に中央USデータセンターの重要なインフラコンポーネントがスケールできなかったことと説明。 / GitHubは信頼性向上のための取り組みを加速させる必要性を認識しており、詳細な根本原因分析を公開しています。 (Source: GitHub Blog)</description>
+      <description>[Score: 95] 8月17日、GitHubは7時間47分にわたる大規模なサービス停止を経験し、github.com、認証、GitHub Actions、API、Copilotなど広範囲に影響が出ました。 / この障害は、トラフィックのピーク時に中央USデータセンターの重要なインフラコンポーネントがスケールできなかったことによる容量不足が原因でした。 / GitHubは、この障害がコードや設定変更ではなく容量不足に起因することを明らかにし、信頼性向上のための取り組みを加速させることを表明しています。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 20 Aug 2026 18:36:11 +0000</pubDate>
     </item>
     <item>
-      <title>エージェントアプリでソフトウェアデリバリーワークフローをGitHubに統合する方法</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</guid>
-      <description>[Score: 85] GitHubエージェントアプリは、ソフトウェアデリバリーワークフローをGitHub内で完結させるための新しいアプローチを提供します。 / プルリクエスト作業中に複数のツールを切り替える手間をなくし、AmplitudeなどのサービスをGitHub内から直接利用できます。 / これにより、開発者はコンテキストスイッチなしで必要な情報を取得し、意思決定を迅速化できます。 (Source: GitHub Blog)</description>
-      <pubDate>Fri, 14 Aug 2026 16:00:00 +0000</pubDate>
+      <title>M5 MaxとM5 Ultraを搭載した新しいMac Studio</title>
+      <link>https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/</link>
+      <guid isPermaLink="false">https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/</guid>
+      <description>[Score: 90] Appleが、M5 MaxとM5 Ultraチップを搭載した新しいMac Studioを発表し、AI性能とグラフィックス性能が大幅に向上しました。 / 新Mac Studioは、最大4.3倍高速なAI性能、2倍高速なストレージ、1.8倍高速なグラフィックス、1.3倍高速なCPU速度を実現しています。 / M5 Ultraモデルでは、最大36コアCPU、80コアGPU、512GBのユニファイドメモリを搭載し、大規模なLLMをデバイス上で実行可能で、Wi-Fi 7、Bluetooth 6、Thunderbolt 5にも対応します。 (Source: Hacker News)</description>
+      <pubDate>Tue, 25 Aug 2026 13:03:17 +0000</pubDate>
     </item>
     <item>
-      <title>IPFSメンテナーが活動終了へ</title>
-      <link>https://ipshipyard.com/blog/2026-the-end-of-ipfs-at-shipyard/</link>
-      <guid isPermaLink="false">https://ipshipyard.com/blog/2026-the-end-of-ipfs-at-shipyard/</guid>
-      <description>[Score: 80] IPFS関連のエンジニアリング、メンテナンス、インフラ運用を担ってきたShipyardが、Protocol Labsからの資金提供打ち切りにより活動を終了すると発表しました。 / Shipyardは過去3年間、IPFSエコシステムの形成に貢献し、HTTPネイティブ実装やTor経由の匿名ホスティングなど、多くの重要な開発を進めてきました。 / この活動終了はIPFSエコシステム全体に影響を及ぼす可能性があり、今後のIPFSの発展に不確実性をもたらします。 (Source: Hacker News)</description>
-      <pubDate>Mon, 24 Aug 2026 15:48:45 +0000</pubDate>
+      <title>マイクロサービス間の認可伝搬をどう解くか？独自実装と IETF Transaction Tokens を見比べてみた</title>
+      <link>https://zenn.dev/layerx/articles/e01465a15e79c2</link>
+      <guid isPermaLink="false">https://zenn.dev/layerx/articles/e01465a15e79c2</guid>
+      <description>[Score: 90] マイクロサービスアーキテクチャにおける認可情報の安全な伝搬という共通課題に対し、自社実装とIETF Transaction Tokensを比較。 / 複数のサービスを跨ぐリクエストで、入口でのユーザー検証結果や認可コンテキストが途中で失われる問題を指摘しています。 / Transaction Tokensが、短命な署名付きJWTを用いて呼び出し元の属性や処理内容を安全に引き継ぐ仕組みであることを解説しています。 (Source: Zenn)</description>
+      <pubDate>Tue, 25 Aug 2026 05:00:05 +0000</pubDate>
     </item>
     <item>
-      <title>アンソロピック、AIの使い方を学べる「Claude Academy」を日本語対応で公開</title>
-      <link>https://www.watch.impress.co.jp/docs/news/2134964.html</link>
-      <guid isPermaLink="false">https://www.watch.impress.co.jp/docs/news/2134964.html</guid>
-      <description>[Score: 80] Anthropicは、AIを安全かつ効果的に活用する方法を学べるWebサイト「Claude Academy」を公開しました。 / このサイトは、Claudeの使い方だけでなく、特定のモデルに依存しないAIの活用方法や考え方を学べる学習コンテンツを提供し、一部コンテンツは日本語にも対応しています。 / 仕事や生活上の課題に焦点を当て、AIに任せる作業と自身が行うべき作業の見極め方など、実践的なAI活用スキルを習得できます。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 24 Aug 2026 06:28:43 +0000</pubDate>
+      <title>元ヤフーエンジニア社長が考える、AI時代のエンジニアに必要な3つのスキル</title>
+      <link>https://qiita.com/ryoheiiwamoto/items/5f21adcca8aff1b0357a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ryoheiiwamoto/items/5f21adcca8aff1b0357a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AI時代にエンジニアが生き残るために必要なスキルとして、「AIを使いこなす力」「ビジネス戦闘力」「人間力」の3つを提唱。 / AIが指示された作業を自動化する中で、エンジニアは受け身ではなく、自ら提案し仕事の工程レベルを上げる必要があると指摘。 / 新しいAIツールを積極的に試し、論理的思考力や全体を俯瞰する力といったコンセプチュアルスキルが重要であると強調している。 (Source: Qiita)</description>
+      <pubDate>Mon, 24 Aug 2026 07:31:36 +0000</pubDate>
     </item>
     <item>
-      <title>シングルバイナリなOLAP DBの次期版「DuckDB 2.0」プレビュー。クライアント／サーバ機能が安定版に、スキーマレスのVARIANT型、トリガー、非同期I/Oなど新機能</title>
-      <link>https://www.publickey1.jp/blog/26/olap_dbduckdb_20variantio.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/olap_dbduckdb_20variantio.html</guid>
-      <description>[Score: 80] シングルバイナリのOLAPデータベース「DuckDB 2.0」のプレビューが公開されました。 / クライアント/サーバー機能が安定版になり、スキーマレスのVARIANT型やトリガー、非同期I/Oなどの新機能が追加されます。 / アプリケーションへの組み込みやすさと高速なデータ分析能力で注目されるデータベースです。 (Source: Publickey)</description>
-      <pubDate>Mon, 24 Aug 2026 15:29:33 +0000</pubDate>
+      <title>Apple、新しいM6とM5 Proを搭載し、さらにパワフルになったMac miniを発表</title>
+      <link>https://www.apple.com/jp/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/</link>
+      <guid isPermaLink="false">https://www.apple.com/jp/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/</guid>
+      <description>[Score: 90] Appleが、新しいM6およびM5 Proチップを搭載したMac miniを発表しました。 / M6チップはAIパフォーマンスを最大4倍高速化し、M5 Proはプロレベルのワークロードに対応します。 / Wi-Fi 7やBluetooth 6、macOS 27とApple Intelligenceに対応し、AIワークフローを強化するコンパクトなデスクトップです。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 25 Aug 2026 14:42:13 +0000</pubDate>
     </item>
     <item>
-      <title>Docker社、コンテナ向けの高性能な新ハイパーバイザ「Docker VMM」パブリックベータ公開</title>
-      <link>https://www.publickey1.jp/blog/26/dockerdocker_vmm.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/dockerdocker_vmm.html</guid>
-      <description>[Score: 80] Docker社が、コンテナ向けに独自開発した高性能な新ハイパーバイザ「Docker VMM」のパブリックベータを公開しました。 / WindowsとmacOSに対応する最新のDocker Desktop v4.86で利用可能となり、高速起動やファイルI/Oの劇的な改善が図られています。 / これにより、Docker Desktopのパフォーマンスと安定性が向上し、開発者の体験が改善されることが期待されます。 (Source: Publickey)</description>
-      <pubDate>Wed, 19 Aug 2026 17:43:24 +0000</pubDate>
+      <title>Apple新チップ2種を発表。M6は2nm、M5 Ultraは36コアCPU/80コアGPU</title>
+      <link>https://pc.watch.impress.co.jp/docs/news/2135545.html</link>
+      <guid isPermaLink="false">https://pc.watch.impress.co.jp/docs/news/2135545.html</guid>
+      <description>[Score: 90] Appleが2nmプロセス製造の新型プロセッサ「M6」と、クアッドダイアーキテクチャ採用の「M5 Ultra」を発表しました。 / M6はMac miniに搭載され、2nmプロセスとデュアル16コアNeural EngineによりAIワークフロー性能がM5比で最大2倍に向上します。 / M5 UltraはMac Studio向けで、最大36コアCPUと80コアGPU、512GBユニファイドメモリを搭載し、大規模LLMのオンデバイス実行を可能にします。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 25 Aug 2026 17:11:35 +0000</pubDate>
     </item>
     <item>
-      <title>ビューポート仮想化でCanvas JSONビューアを高速化する方法</title>
-      <link>https://dev.to/loggerhead_turtle_13b0d7e/how-i-made-a-canvas-json-viewer-fast-with-viewport-virtualization-3f4d</link>
-      <guid isPermaLink="false">https://dev.to/loggerhead_turtle_13b0d7e/how-i-made-a-canvas-json-viewer-fast-with-viewport-virtualization-3f4d</guid>
-      <description>[Score: 80] 大規模なJSONデータをCanvasで視覚化する際に発生するパフォーマンス問題を解決する手法について解説しています。 / 従来の1:1マッピングではなく、データモデルとレンダリング表面を分離するアプローチを採用。 / 全データをメモリに保持しつつ、表示領域のみをレンダリングするビューポート仮想化により高速化を実現します。 (Source: Dev.to)</description>
-      <pubDate>Mon, 24 Aug 2026 21:50:21 +0000</pubDate>
+      <title>Slack上の開発チームの会話をAIエージェントが把握してコーディング。ドキュメント作成もする「Slack Code」登場</title>
+      <link>https://www.publickey1.jp/blog/26/slackaislack_code.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/slackaislack_code.html</guid>
+      <description>[Score: 90] Slackが新機能「Slack Code」を発表し、AIエージェントが開発チームのチャットに参加できるようになりました。 / AIエージェントは会話の文脈を理解し、コーディングやドキュメント作成を支援します。 / Claude Code、Devin、GitHub Copilotなど複数のAIエージェントに対応し、開発ワークフローを効率化します。 (Source: Publickey)</description>
+      <pubDate>Sun, 23 Aug 2026 15:52:28 +0000</pubDate>
     </item>
     <item>
-      <title>キャンバスがエージェントワークフローを可視化し、操作可能でコスト効率の良いものにする方法</title>
+      <title>本番環境投入前にLLMを評価する方法</title>
+      <link>https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/</guid>
+      <description>[Score: 90] LLMはベンチマークで良好な結果を出しても、本番環境の複雑なケースでは問題が発生することがあります。 / 本番環境に近い評価では、実際の入力の曖昧さ、ラベルの不整合、コンテキストの欠如、エッジケースへの対応が重要になります。 / GitHubは、シークレットスキャンにおける誤検知削減のためのLLM評価経験を共有し、プロトタイプから本番環境への移行で役立った実践的なアプローチを紹介しています。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 25 Aug 2026 21:35:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>TanStack Start + Hono + oRPC + Cloudflare Workersで社内ERPを作った設計と学び</title>
+      <link>https://zenn.dev/yosashusaku/articles/enterprise-erp-tanstack-hono-orpc</link>
+      <guid isPermaLink="false">https://zenn.dev/yosashusaku/articles/enterprise-erp-tanstack-hono-orpc</guid>
+      <description>[Score: 88] TanStack Start, Hono, oRPC, Cloudflare Workersを組み合わせ、Full-Stack TypeScriptで建築業向け社内ERPをスクラッチ開発しました。 / プロジェクト管理、CRM、工数管理、ダッシュボード機能を持ち、特にEVM（アーンドバリューマネジメント）による原価・工期管理が要件です。 / 計算の連鎖をどこに配置するか、進捗時間と実績時間を独立管理する設計判断など、業務システム構築における具体的な学びを共有しています。 (Source: Zenn)</description>
+      <pubDate>Tue, 25 Aug 2026 00:00:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>FDAがケトン体と血糖値を同時にモニタリングする初のウェアラブルデバイスを承認</title>
+      <link>https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar</link>
+      <guid isPermaLink="false">https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar</guid>
+      <description>[Score: 85] FDAが、ケトン体と血糖値の両方を継続的にモニタリングできる初のウェアラブルデバイスを承認しました。 / このデバイスは、糖尿病患者やケトジェニックダイエット実践者など、血糖値とケトン体レベルの管理が必要な人々にとって画期的なツールとなります。 / リアルタイムのデータ提供により、個人の健康管理と医療従事者によるモニタリングがより効率的になることが期待されます。 (Source: Hacker News)</description>
+      <pubDate>Tue, 25 Aug 2026 19:07:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>Raspberry PiとQwenでローカル動作する車載AIを開発</title>
+      <link>https://github.com/ThinkOffApp/CarWatch</link>
+      <guid isPermaLink="false">https://github.com/ThinkOffApp/CarWatch</guid>
+      <description>[Score: 85] Raspberry Pi 5と35BパラメータモデルQwenを車載し、完全にオフラインで動作するAIエージェントを開発しました。 / 出発・到着通知、旅行概要、ドライブレコーダー映像クリップなどを生成し、GroupMindルームを通じてユーザーと連携します。 / OBDデータ監視やオーナーズマニュアルRAG機能も搭載し、車載AIの新たな可能性を示しています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 25 Aug 2026 15:20:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>【ローカルLLM】国産LLM「LLM-jp-4-33B」と「Qwen3.8-27B」の推論性能比較（RTX 5070 Ti + RTX 3070 Ti）</title>
+      <link>https://qiita.com/h-nabata/items/b80484406e839ee6507b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/h-nabata/items/b80484406e839ee6507b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] 国産大規模言語モデル「LLM-jp-4-33B」と中国製「Qwen3.8-27B」の推論性能を、ローカル環境で比較検証した記事。 / 両モデルのアーキテクチャの違いに触れつつ、独自に作成したテストセット（基本問題・応用問題）を用いてスコアを比較。 / 国産LLMの性能向上と、フロンティアモデルに匹敵する国産モデルの登場への期待が示されている。 (Source: Qiita)</description>
+      <pubDate>Sun, 23 Aug 2026 17:34:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>Next.js 16.3正式版リリース。Turbopackのメモリ使用量が最大90％減、SSRが最大22％高速化、TypeScript 7による型チェック高速化など</title>
+      <link>https://www.publickey1.jp/blog/26/nextjs_163turbopack90ssr22typescript_7.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/nextjs_163turbopack90ssr22typescript_7.html</guid>
+      <description>[Score: 85] Webアプリケーションフレームワーク「Next.js 16.3」が正式リリースされ、大幅な性能改善が実現しました。 / バンドルツールTurbopackのメモリ使用量が最大90%削減され、再ビルド速度が最大5倍以上高速化。SSRも最大22%高速化しています。 / TypeScript 7による型チェックの高速化や、SPA並みの高速描画を実現する「Instant Navigations」などの新機能も追加されました。 (Source: Publickey)</description>
+      <pubDate>Tue, 25 Aug 2026 17:58:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Rustに移植された「Bun 1.4」正式リリース。Node.jsとの互換性向上でPlaywrightやvitestが動作、CPUとメモリの使用率が大幅改善、正規表現が高速化など</title>
+      <link>https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html</guid>
+      <description>[Score: 85] JavaScriptランタイム「Bun 1.4」が正式リリースされ、Zig言語からRustへの移植が完了しました。 / Node.jsとの互換性が大幅に向上し、Playwrightやvitestなどのツールが動作可能になりました。 / CPUとメモリ使用率が大幅に改善され、起動時間の高速化や正規表現のパフォーマンス向上も実現しています。 (Source: Publickey)</description>
+      <pubDate>Sun, 23 Aug 2026 15:58:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub Copilotのプレミアムリクエスト：許容量、乗数、課金、そしてそれらに代わるもの</title>
+      <link>https://dev.to/rebeca_vb/github-copilot-premium-requests-allowances-multipliers-billing-and-what-replaced-them-d3p</link>
+      <guid isPermaLink="false">https://dev.to/rebeca_vb/github-copilot-premium-requests-allowances-multipliers-billing-and-what-replaced-them-d3p</guid>
+      <description>[Score: 85] GitHub Copilotのプレミアムリクエストは、高度なCopilot機能の使用量を測定する単位でしたが、2026年6月1日より使用量ベースの課金に移行しました。 / 現在は「GitHub AI Credits」に置き換えられ、1クレジットあたり1セントで課金されますが、既存の年間契約者は引き続きプレミアムリクエストで課金されます。 / この記事では、旧システムと新システムの両方の仕組みを詳細に解説し、それぞれの課金モデルを理解することの重要性を強調しています。 (Source: Dev.to)</description>
+      <pubDate>Tue, 25 Aug 2026 21:48:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>キャンバスがエージェントワークフローを可視化、操作可能、費用対効果の高いものにする方法</title>
       <link>https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/</guid>
-      <description>[Score: 80] 生成AIの進化により、エージェントと人間が協調する開発ワークフローが主流になりつつあると述べています。 / 従来のチャットベースのインターフェースでは、エージェント生成作業の追跡やレビューが困難になる課題を指摘。 / GitHub Copilotアプリの「キャンバス」機能は、エージェントとの協業を可視化し、作業の指示や承認を容易にすると紹介しています。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHub Copilotの「キャンバス」機能は、AIエージェントとの協調作業における課題を解決します。 / 開発者とエージェントが永続的で共有されたインターフェースで対話することで、ワークフローの可視性、操作性、承認プロセスを向上させます。 / これにより、コンテキストの喪失やエージェント生成コードのレビューにかかる時間を削減し、開発効率を高めます。 (Source: GitHub Blog)</description>
       <pubDate>Mon, 17 Aug 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>マルチモーダルエージェントフレームワークの基礎と最前線に関する調査：技術と応用</title>
-      <link>https://arxiv.org/abs/2608.20379</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2608.20379</guid>
-      <description>[Score: 80] マルチモーダルエージェントフレームワークの基礎から最先端技術、そしてその応用について包括的に調査した論文です。 / テキスト、画像、音声など複数のモダリティを統合して理解・推論するAIエージェントの現状と課題を整理しています。 / この分野の研究者や開発者にとって、現状を把握し、今後の研究方向性を見定める上で貴重な情報源となります。 (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 24 Aug 2026 04:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Flutter 3.47正式リリース。UIライブラリが分離され独立してアップデート可能、デフォルトでWebAssemblyを生成する方向に、など新機能</title>
-      <link>https://www.publickey1.jp/blog/26/fluter_347uiwebassembly.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/fluter_347uiwebassembly.html</guid>
-      <description>[Score: 78] Googleがマルチプラットフォーム対応のアプリケーションフレームワーク「Flutter 3.47」を正式リリースしました。 / UIライブラリのMaterialとCupertinoが独立したパッケージとして分離され、個別にアップデート可能になります。 / また、WebAssemblyのデフォルト生成やデスクトップ版Impellerのデフォルトレンダラー化など、パフォーマンスと開発効率の向上が図られています。 (Source: Publickey)</description>
-      <pubDate>Thu, 20 Aug 2026 15:02:15 +0000</pubDate>
+      <title>オンコール手当の相場を50社分調べて、1社も見つからなかった話</title>
+      <link>https://zenn.dev/cscloud_blog/articles/e0ea529d061906</link>
+      <guid isPermaLink="false">https://zenn.dev/cscloud_blog/articles/e0ea529d061906</guid>
+      <description>[Score: 80] Webサービス普及に伴う24時間365日稼働の必要性から、エンジニアのオンコール待機制度が重要になっています。 / 50社を調査した結果、オンコール手当の具体的な金額を公開しているIT企業は皆無であることが判明しました。 / 出来高制手当が改善意欲を削ぐ逆インセンティブになる可能性を指摘し、金額以外の制度設計の重要性を強調しています。 (Source: Zenn)</description>
+      <pubDate>Tue, 25 Aug 2026 01:27:28 +0000</pubDate>
     </item>
   </channel>
 </rss>
