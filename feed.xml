@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 29 Aug 2026 03:29:16 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 23:48:30 +0000</lastBuildDate>
     <item>
-      <title>LLMを本番環境に導入する前の評価方法</title>
-      <link>https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/</guid>
-      <description>[Score: 95] LLM（大規模言語モデル）を本番環境に導入する際、ベンチマークでの良好な結果が実際の運用で再現されない課題について論じています。 / GitHubのシークレットスキャンにおける誤検知削減の事例を挙げ、実際の入力の曖昧さ、コンテキスト不足、エッジケースへの対応の重要性を強調。 / オフラインメトリクスだけでなく、本番環境に近い条件での評価や、セキュリティワークフローにおけるリコール（再現率）の維持など、実用的な評価プラクティスを共有しています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 25 Aug 2026 21:35:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>MacBook Pro 128GB でローカル LLM がついに実用になった ─ Qwen3.8 Flash Next 実測</title>
-      <link>https://zenn.dev/jtechjapan_pub/articles/local-llm-qwen-flash-next-eval</link>
-      <guid isPermaLink="false">https://zenn.dev/jtechjapan_pub/articles/local-llm-qwen-flash-next-eval</guid>
-      <description>[Score: 92] MacBook Pro 128GBモデルでQwen3.8 Flash Next（Q3量子化、約90GB）をローカル実行し、開発作業の全工程を人間の介入なしで完遂できる実用レベルに達したことを報告しています。 / MoE（Mixture of Experts）モデルの採用により、総200B級の知識を持ちながら128GBメモリに収まり、実用的な速度で動作することが可能になりました。 / これにより、これまでサブスクリプションサービスに頼っていた開発作業をローカルLLMで代替できる可能性が示され、その具体的な構成と実測値が詳細に解説されています。 (Source: Zenn)</description>
-      <pubDate>Thu, 27 Aug 2026 20:06:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>LLMの記憶を誤ってプログラム分析に変えてしまった</title>
-      <link>https://pwning.systems/posts/llm-memory-program-analysis/</link>
-      <guid isPermaLink="false">https://pwning.systems/posts/llm-memory-program-analysis/</guid>
-      <description>[Score: 90] LLMエージェントが脆弱性研究でコードベースをナビゲートする際に、以前の調査結果を忘れてしまう「記憶喪失」の問題を解決しようとした経緯が語られています。 / 従来の記憶システムが会話履歴の保存に留まるのに対し、筆者は「現在知っていること」を維持するプログラム分析的なアプローチを模索しました。 / LLMの推論プロセスをより堅牢にし、複雑なタスクにおける信頼性を向上させる可能性を示唆しています。 (Source: Hacker News)</description>
-      <pubDate>Fri, 28 Aug 2026 23:27:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>SpaceXによる買収後のCursorに関する我々の決定</title>
-      <link>https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/</link>
-      <guid isPermaLink="false">https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/</guid>
-      <description>[Score: 90] OpenAIは、SpaceXによるCursor買収を受け、CursorへのOpenAIモデル提供契約を2026年11月12日に終了すると発表しました。 / この決定は、イーロン・マスク氏の企業が過去に契約違反を繰り返した経験に基づき、SpaceXがOpenAIの利用規約を遵守する確信が持てないためです。 / 開発者への影響を最小限に抑えるため、契約で定められた最大限の通知期間を設けています。 (Source: Hacker News)</description>
-      <pubDate>Sat, 29 Aug 2026 01:47:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>「AIに店長を任せてみた実験」からもらった、これからの働き方のヒント</title>
-      <link>https://qiita.com/sumomoo/items/5726c8769b487e118571?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/sumomoo/items/5726c8769b487e118571?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] サンフランシスコのコンビニ「Andon Market」で、AIエージェント「Luna」に経営判断を丸ごと任せる実験が行われました。 / AIは求人・採用、内装手配、営業時間・商品・価格決定などを実行しましたが、シフト管理でつまずき一時閉店するなど、経営の難しさも露呈しました。 / この実験はAIがビジネスの多くの業務を代替できる可能性と、まだ人間による調整が必要な領域があることを示唆し、今後の働き方やサービス業への影響を考察しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 28 Aug 2026 07:28:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Rustに移植された「Bun 1.4」正式リリース。Node.jsとの互換性向上でPlaywrightやvitestが動作、CPUとメモリの使用率が大幅改善、正規表現が高速化など</title>
-      <link>https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html</guid>
-      <description>[Score: 90] サーバーサイドJavaScriptランタイム「Bun 1.4」が正式リリースされました。 / これまでのZig言語からClaude Codeを使ってRustに書き直された初のバージョンとなり、CPUとメモリ使用率が大幅に改善されています。 / Node.jsとの互換性も向上し、Playwrightやvitestなどの動作が可能になったほか、正規表現の高速化など多くの改善が施されています。 (Source: Publickey)</description>
-      <pubDate>Sun, 23 Aug 2026 15:58:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>初心者向けGitHub Copilotアプリ：Dependabotのプルリクエストトリアージを自動化する</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/</guid>
-      <description>[Score: 90] Dependabotが生成する多数のプルリクエストのトリアージは反復的で時間がかかる作業であり、GitHub Copilotアプリで自動化できることを紹介しています。 / Copilotアプリの自動化機能を使って、オープンなプルリクエストをリスク別にグループ化し、CIステータスを確認し、要約を生成する方法を解説。 / これにより、開発者は手動でのレビュー作業を削減し、より効率的にセキュリティアップデートに対応できるようになります。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 26 Aug 2026 20:12:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>ICFPC 2026における人間とAIの共闘</title>
-      <link>https://zenn.dev/estie/articles/a6d1e78e8e41d5</link>
-      <guid isPermaLink="false">https://zenn.dev/estie/articles/a6d1e78e8e41d5</guid>
-      <description>[Score: 88] ICFPC 2026プログラミングコンテストの参加記録として、AI時代における人間とAIの協調的な開発手法が紹介されています。 / littlemanという2次元プログラミング言語を用いた問題解決において、AIに丸投げせず、人間が戦略を立てAIがコード生成を担う役割分担が成功の鍵となりました。 / チームは最終的に267チーム中14位という好成績を収め、AIと人間の最適な協業モデルの可能性を示唆しています。 (Source: Zenn)</description>
-      <pubDate>Fri, 28 Aug 2026 03:11:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>10年分ぐらいのQiitaの自分の投稿を蒸留したら、自分っぽい記事を書いてくれるようになったww</title>
-      <link>https://qiita.com/moritalous/items/4a70f0bee16d5d690a73?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/moritalous/items/4a70f0bee16d5d690a73?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] 筆者の過去10年分のQiita投稿約400記事を生成AIに学習させ、筆者らしい文体の記事を自動生成するスキルを作成した実験を紹介しています。 / Qiita APIで過去記事を取得し、それをAIに蒸留させることで、筆者の執筆スタイルや思考パターンを模倣した記事生成が可能になりました。 / 生成された記事は、当初のAIっぽさを修正するプロンプト調整を経て、人間が書いたと見分けがつかないほどの自然な品質に達しています。 (Source: Qiita)</description>
-      <pubDate>Thu, 27 Aug 2026 13:01:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>AppleのVirtualization.frameworkで仮想iPhoneを起動する</title>
-      <link>https://github.com/Lakr233/vphone-cli</link>
-      <guid isPermaLink="false">https://github.com/Lakr233/vphone-cli</guid>
-      <description>[Score: 85] AppleのVirtualization.frameworkを利用して仮想iPhoneを起動するCLIツール「vphone-cli」が紹介されています。 / このツールは、仮想マシンの作成からDFUリストア、CFWインストール、初回起動までの一連のプロセスを自動化します。 / iOS開発者やセキュリティ研究者がiOS環境を仮想化し、テストや分析を行うのに役立つでしょう。 (Source: Hacker News)</description>
-      <pubDate>Fri, 28 Aug 2026 23:02:21 +0000</pubDate>
+      <title>Tencentが次世代大規模言語モデル「Tencent Hy4 Preview」をリリースしオープンソース化</title>
+      <link>https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/</link>
+      <guid isPermaLink="false">https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/</guid>
+      <description>[Score: 90] Tencentが次世代大規模言語モデル「Hy4 Preview」をオープンソースとして公開しました。 / 770Bの総パラメータと1Mトークンを超えるコンテキストウィンドウを持ち、コーディング、オフィスワーク、科学研究で優れた性能を発揮します。 / WorkBuddyやCodeBuddyなどの製品を通じて利用可能で、API経由でのアクセスも提供され、2週間は無料で利用できます。 (Source: Hacker News)</description>
+      <pubDate>Sat, 29 Aug 2026 19:33:23 +0000</pubDate>
     </item>
     <item>
       <title>AIに丸投げしないで理解するためのAI開発手法（2026年8月現在）</title>
       <link>https://zenn.dev/avaintelligence/articles/dont-outsource-understanding-to-ai</link>
       <guid isPermaLink="false">https://zenn.dev/avaintelligence/articles/dont-outsource-understanding-to-ai</guid>
-      <description>[Score: 85] AIコーディングツール活用時に発生する技術負債と理解負債を回避するため、AIに丸投げせず開発者がコードを理解する手法を解説しています。 / AIが生成するコードの品質向上と同時に、既存コードとの統一性やリファクタリングの重要性を強調し、開発者の仕様理解の必要性を説いています。 / Matt Pocock氏のスキルや自作スキルを導入した具体的なワークフローが紹介されており、実践的なAI開発のヒントを提供します。 (Source: Zenn)</description>
+      <description>[Score: 90] AIコーディングツールを活用するエンジニア向けに、AIに開発を丸投げすることで生じる「技術負債」と「理解負債」の問題を指摘し、その対策となる開発手法を提案しています。 / AIが生成するコードの品質向上と同時に、既存コードとの整合性や共通処理の利用を考慮した定期的なリファクタリングの重要性を強調しています。 / Matt Pocock氏のスキル集や自作の`explain-visually`スキルなど、具体的なエージェントスキルを用いたワークフローを紹介し、開発者がコードの仕様を深く理解し続けるための実践的なアプローチを解説しています。 (Source: Zenn)</description>
       <pubDate>Fri, 28 Aug 2026 05:55:30 +0000</pubDate>
     </item>
     <item>
-      <title>RTX 5090 + RAM 128GBでQwen3.8-Flash-Nextをllama.cppで動かしてみた</title>
-      <link>https://zenn.dev/holy_fox/articles/04887ff8177b87</link>
-      <guid isPermaLink="false">https://zenn.dev/holy_fox/articles/04887ff8177b87</guid>
-      <description>[Score: 85] RTX 5090と128GB RAMの環境で、125B規模のMoEモデル「Qwen3.8-Flash-Next」をllama.cppで動作させた検証記事です。 / UD-Q2_K_XL量子化とQwen3.8-Flash-Next対応版llama.cppを使用し、64kコンテキストで短文生成約48.0 tokens/s、16kトークン入力後も43.3 tokens/sの推論速度を記録しました。 / N-gram Embeddingをホストメモリに置く設計とMoEにより、GPUメモリよりRAM容量が大きいPCでも効率的に大規模モデルを動かせる可能性を示しています。 (Source: Zenn)</description>
-      <pubDate>Thu, 27 Aug 2026 06:47:03 +0000</pubDate>
+      <title>DuckDBの開発元であるDuckLabsがAWS子会社になると発表。DuckDBはオープンソースのMITライセンスを維持</title>
+      <link>https://www.publickey1.jp/blog/26/duckdbducklabsawsduckdbmit.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/duckdbducklabsawsduckdbmit.html</guid>
+      <description>[Score: 90] インプロセスOLAPデータベース「DuckDB」の開発元であるDuckLabsが、AWSの子会社となることが発表されました。 / DuckDB自体は引き続きMITライセンスのオープンソースプロジェクトとして維持され、開発は継続されます。 / この買収により、DuckDBはAWSのリソースとリーチを活用し、さらなる普及と機能拡張が期待されます。 (Source: Publickey)</description>
+      <pubDate>Thu, 27 Aug 2026 15:55:49 +0000</pubDate>
     </item>
     <item>
-      <title>Cloudflareが1.1.1.1のDNSキャッシュを数十バイト単位で削り込んで100TBのメモリを節約</title>
-      <link>https://gigazine.net/news/20260828-cloudflare-dns-cache-optimization/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20260828-cloudflare-dns-cache-optimization/</guid>
-      <description>[Score: 85] CloudflareがパブリックDNSリゾルバー「1.1.1.1」のDNSキャッシュデータ構造を最適化し、システム全体で約100TBのメモリを削減しました。 / キャッシュ1件あたりのメモリ使用量を953バイトから420バイトへ56%削減し、書き込み・読み出し速度も向上させています。 / RustのVecやStringの最適化、DNS応答の保存方法の改善など、詳細な技術的工夫により大規模な効率化を実現しました。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 28 Aug 2026 08:34:09 +0000</pubDate>
+      <title>MCPの新ロードマップ公開、今後はAIエージェント対応、HTTP通信への統一、アイデンティティ、よりよいデベロッパー体験などに注力</title>
+      <link>https://www.publickey1.jp/blog/26/mcpaihttp.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/mcpaihttp.html</guid>
+      <description>[Score: 88] AIツールとサービスを接続する業界標準プロトコルであるMCP（Model Context Protocol）の新たなロードマップが公開されました。 / 今後はAIエージェント対応の強化、HTTP通信への統一、アイデンティティ管理、そしてデベロッパー体験の向上に注力する方針です。 / これにより、AIエコシステムにおける相互運用性と開発効率が大幅に改善されることが期待されます。 (Source: Publickey)</description>
+      <pubDate>Wed, 26 Aug 2026 15:29:13 +0000</pubDate>
     </item>
     <item>
-      <title>シングルバイナリなOLAP DBの次期版「DuckDB 2.0」プレビュー。クライアント／サーバ機能が安定版に、スキーマレスのVARIANT型、トリガー、非同期I/Oなど新機能</title>
-      <link>https://www.publickey1.jp/blog/26/olap_dbduckdb_20variantio.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/olap_dbduckdb_20variantio.html</guid>
-      <description>[Score: 85] DuckDB Foundationは、今年秋にリリース予定のOLAPデータベース「DuckDB 2.0」のプレビューを発表しました。 / SQLiteのようにシングルバイナリでアプリケーションへの組み込みが容易な点が特徴で、カラム型データエンジンにより大規模データ分析に強みを発揮します。 / 2.0ではクライアント/サーバー対応、スキーマレスのVARIANT型、トリガー、非同期I/Oなどの新機能が追加され、機能が大幅に強化されます。 (Source: Publickey)</description>
-      <pubDate>Mon, 24 Aug 2026 15:29:33 +0000</pubDate>
+      <title>GitHub Enterprise導入とTeams再設計で最小権限と俊敏性を両立。30人規模スタートアップの実践</title>
+      <link>https://zenn.dev/unsoluble_sugar/articles/github-org-least-privilege</link>
+      <guid isPermaLink="false">https://zenn.dev/unsoluble_sugar/articles/github-org-least-privilege</guid>
+      <description>[Score: 85] 30人規模のスタートアップがGitHub Enterpriseを導入し、組織全体の権限設計を見直した事例を紹介しています。 / アカウント侵害時の影響範囲の大きさ、Teamsがアクセス管理の単位になっていないこと、運用ルールの暗黙知化といった課題を解決するため、最小権限の原則に基づいた再設計を行いました。 / リポジトリ、Teams、メンバー、権限、認証、運用ルールを横断的に見直し、セキュリティと開発の俊敏性を両立させるための具体的な実践内容が共有されています。 (Source: Zenn)</description>
+      <pubDate>Fri, 28 Aug 2026 12:08:53 +0000</pubDate>
     </item>
     <item>
-      <title>OpenClawが爆発的に普及。その開発とセキュリティを担うメンテナーたちに会う</title>
-      <link>https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/</guid>
-      <description>[Score: 85] 個人の実験から始まったAIアシスタント「OpenClaw」が、わずか数ヶ月で世界的なオープンソースプロジェクトへと急成長しました。 / メンテナーたちは、急増するプルリクエストの管理、コントリビューターの信頼とコードレビューの再考、ソフトウェアサプライチェーンリスクへの対処、エージェント機能とセキュリティのバランスについて語っています。 / GitHub Secure Open Source Fundからのセキュリティ教訓や、他のメンテナーとの連携の重要性も共有されています。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 27 Aug 2026 16:00:00 +0000</pubDate>
+      <title>AIプロダクトの新規事業、立ち上げから1年の振り返り</title>
+      <link>https://zenn.dev/loglass/articles/3f8a2c91d4e7b5</link>
+      <guid isPermaLink="false">https://zenn.dev/loglass/articles/3f8a2c91d4e7b5</guid>
+      <description>[Score: 85] AIプロダクトの新規事業立ち上げにおいて、プロダクト開発責任者がマネジメント業務と並行してコード実装に深く関わるようになった1年間の振り返りです。 / チームのボトルネックが実装量であると判断し、AIコーディングツール（Claude Code）の活用により、自身がプレイングマネージャーとしてデリバリーを加速させる選択をしました。 / この役割変更により、コードレベルでシステムを理解した上でメンバーのマネジメントや技術的な課題解決にあたることができ、チーム全体の生産性向上に貢献したと分析しています。 (Source: Zenn)</description>
+      <pubDate>Fri, 28 Aug 2026 07:39:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>10年分ぐらいのQiitaの自分の投稿を蒸留したら、自分っぽい記事を書いてくれるようになったww</title>
+      <link>https://qiita.com/moritalous/items/4a70f0bee16d5d690a73?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/moritalous/items/4a70f0bee16d5d690a73?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] 自身のQiita記事約400本を生成AIに学習させ、筆者らしい文体の記事を生成するスキルを開発した事例です。 / Qiita APIを利用して記事データを取得し、それを基にAIが分析・スキル化するプロセスを詳述しています。 / 生成AI特有の「胡散臭さ」を排除し、より自然な文体にするための追加指示と改善の過程も紹介しています。 (Source: Qiita)</description>
+      <pubDate>Thu, 27 Aug 2026 13:01:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>ソニーとワーナーがAnthropicを提訴、知的財産の「明白な盗用」を主張</title>
+      <link>https://www.reddit.com/r/technology/comments/1w1xxoy/sony_warner_sue_anthropic_alleging_blatant_theft/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1w1xxoy/sony_warner_sue_anthropic_alleging_blatant_theft/</guid>
+      <description>[Score: 85] ソニーとワーナー・ミュージック・グループが、AI開発企業Anthropicを著作権侵害で提訴したと報じられています。 / 両社は、AnthropicのAIモデルが彼らの知的財産を「明白に盗用」していると主張しており、AIの学習データにおける著作権問題が焦点となっています。 / この訴訟は、AIと著作権に関する今後の法的枠組みに大きな影響を与える可能性があります。 (Source: Reddit)</description>
+      <pubDate>Sat, 29 Aug 2026 21:01:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>「頭脳だけで正解を探したら、AIに大敗する」川邊健太郎が旅と“ヒュー！”に見いだすもの</title>
+      <link>https://type.jp/et/feature/31605/</link>
+      <guid isPermaLink="false">https://type.jp/et/feature/31605/</guid>
+      <description>[Score: 85] 前LINEヤフー代表の川邊健太郎氏が、AI時代における新たな事業創造のあり方を語る記事です。 / AIは「究極の指示待ち」であり、人間が「何をしたいか」という問いが重要になると指摘。 / 身近な課題解決はAIで容易になるため、ビジネスにおいてはより本質的な価値創造が求められると提言しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 29 Aug 2026 10:55:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>Next.js 16.3正式版リリース。Turbopackのメモリ使用量が最大90％減、SSRが最大22％高速化、TypeScript 7による型チェック高速化など</title>
+      <link>https://www.publickey1.jp/blog/26/nextjs_163turbopack90ssr22typescript_7.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/nextjs_163turbopack90ssr22typescript_7.html</guid>
+      <description>[Score: 85] Next.js 16.3が正式リリースされ、Turbopackのメモリ使用量が最大90%削減、SSRが最大22%高速化されました。 / TypeScript 7による型チェックの高速化や、高負荷時のSSR速度が20%以上向上するなど、大幅な性能改善が図られています。 / 「Instant Navigations」機能により、SPA並みの高速な画面遷移を実現し、ユーザー体験が向上しました。 (Source: Publickey)</description>
+      <pubDate>Tue, 25 Aug 2026 17:58:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>極端なデータスパース性シナリオにおける衛星異常対応運用のための人間と協調する意思決定トランスフォーマー</title>
+      <link>https://dev.to/rikinptl/human-aligned-decision-transformers-for-satellite-anomaly-response-operations-for-extreme-data-40o6</link>
+      <guid isPermaLink="false">https://dev.to/rikinptl/human-aligned-decision-transformers-for-satellite-anomaly-response-operations-for-extreme-data-40o6</guid>
+      <description>[Score: 85] 衛星のテレメトリーデータが完全に途絶えるような極端なデータ不足状況において、従来の強化学習エージェントが機能しない問題提起がされています。 / 数十年にわたる人間の専門知識を尊重しつつ、ほとんどデータがない状況で重要な意思決定を行えるAIシステムの構築が課題です。 / 本記事は、このユニークな課題に対する解決策として、人間と協調する意思決定トランスフォーマーの研究について述べています。 (Source: Dev.to)</description>
+      <pubDate>Sat, 29 Aug 2026 23:05:57 +0000</pubDate>
     </item>
     <item>
       <title>8月17日の障害と今後の取り組み</title>
       <link>https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/</link>
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/</guid>
-      <description>[Score: 85] GitHubは8月17日に7時間47分に及ぶ大規模な障害を経験し、github.com、認証、GitHub Actionsなど多くのサービスが影響を受けました。 / 障害の根本原因は、トラフィックのピーク時に中央USデータセンターの重要なインフラコンポーネントがスケールできなかったことによる容量不足でした。 / GitHubは、この障害を受けて信頼性向上の取り組みを加速させる必要性を認識しており、復旧プロセスと今後の対策について説明しています。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHubは8月17日に7時間47分にわたる大規模な障害を経験し、認証、GitHub Actions、APIなど広範囲のサービスに影響を与えました。 / 障害の根本原因は、トラフィックのピーク時に中央USデータセンターの重要インフラコンポーネントがスケールできず、容量不足がシステム全体に波及したことでした。 / GitHubは、信頼性向上のための取り組みを加速させる必要性を認識しており、今後の改善策に取り組むことを表明しています。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 20 Aug 2026 18:36:11 +0000</pubDate>
     </item>
     <item>
-      <title>PICasso: シリコンフォトニックデバイスの自律最適化のためのAI対応設計フレームワーク</title>
-      <link>https://arxiv.org/abs/2608.26113</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2608.26113</guid>
-      <description>[Score: 85] シリコンフォトニックデバイスの設計を自律的に最適化するAIフレームワーク「PICasso」が提案されています。 / AIを活用することで、複雑なフォトニックデバイスの設計プロセスを効率化します。 / 光通信や量子コンピューティングなど、次世代技術の発展に寄与する可能性があります。 (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 28 Aug 2026 04:00:00 +0000</pubDate>
+      <title>Claude Codeの設計詰めスキル『grilling』の紹介</title>
+      <link>https://zenn.dev/sato_frontend/articles/1a85841505b9bb</link>
+      <guid isPermaLink="false">https://zenn.dev/sato_frontend/articles/1a85841505b9bb</guid>
+      <description>[Score: 82] Claude Codeのスキル『grilling』は、実装前のプランや設計の曖昧な点や未決定の前提をAIが厳しく問い詰めることで洗い出すツールです。 / AIが設計ツリーを深掘りし、見落としがちな依存関係や暗黙の前提を対話形式で可視化します。 / これにより、実装後の手戻りを減らし、設計の穴を事前に潰すことが可能となり、開発プロセスの効率化に貢献します。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 22 Jul 2026 03:16:43 +0000</pubDate>
     </item>
     <item>
-      <title>Htmx 4.0がリリース</title>
-      <link>https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released</link>
-      <guid isPermaLink="false">https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released</guid>
-      <description>[Score: 80] htmx 4.0.0がリリースされ、8ヶ月の開発期間を経て、内部実装がXMLHttpRequestからfetch() APIと非同期プログラミングに移行しました。 / この変更により、ライブラリの簡素化と将来の拡張性が向上し、htmxベースのアプリケーションが「100年ウェブサービス」となるための基盤を築いています。 / NPMでは2.xが引き続き最新とされ、4.0は「next」として提供されますが、ウェブサイトでは4.0が参照されます。 (Source: Hacker News)</description>
-      <pubDate>Fri, 28 Aug 2026 13:28:56 +0000</pubDate>
+      <title>Rustに移植された「Bun 1.4」正式リリース。Node.jsとの互換性向上でPlaywrightやvitestが動作、CPUとメモリの使用率が大幅改善、正規表現が高速化など</title>
+      <link>https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/rustbun_14nodejsplaywrightvitestcpu.html</guid>
+      <description>[Score: 82] JavaScriptランタイム「Bun 1.4」が正式リリースされ、ZigからRustへの移植が完了した最初のバージョンです。 / Node.jsとの互換性が大幅に向上し、Playwrightやvitestなどのツールが動作可能になりました。 / CPUとメモリ使用率の大幅な改善、起動時間の高速化、正規表現の高速化など、全体的なパフォーマンスが向上しています。 (Source: Publickey)</description>
+      <pubDate>Sun, 23 Aug 2026 15:58:41 +0000</pubDate>
     </item>
     <item>
-      <title>StemDeck：無料、オープンソース、ローカルAIステムセパレーター</title>
-      <link>https://github.com/stemdeckapp/stemdeck</link>
-      <guid isPermaLink="false">https://github.com/stemdeckapp/stemdeck</guid>
-      <description>[Score: 80] StemDeckは、MP3やWAVなどのオーディオファイルをボーカル、ドラム、ベースなどに分離する無料のオープンソースツールです。 / クラウドサービスとは異なり、アカウント登録やアップロード、サブスクリプションが不要で、すべての処理がローカルで完結します。 / DAWスタイルのミキサー機能も備え、個人学習やプライバシーを重視するユーザーに最適な選択肢を提供します。 (Source: Hacker News)</description>
-      <pubDate>Sat, 29 Aug 2026 01:24:13 +0000</pubDate>
+      <title>本番環境投入前にLLMを評価する方法</title>
+      <link>https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/</guid>
+      <description>[Score: 82] LLMはクリーンなベンチマークでは良好な性能を示す一方で、本番環境で重要なケースでは苦戦することがあります。 / 本番環境に近づくにつれて、実際の入力の曖昧さ、ラベルの不整合、コンテキストの欠如などにより、評価の問題は変化します。 / GitHubのシークレットスキャンにおけるLLMベースのシステム評価事例を通じて、プロトタイプから本番環境へ移行するための実践的な評価方法が共有されています。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 25 Aug 2026 21:35:11 +0000</pubDate>
     </item>
     <item>
-      <title>ベテランエンジニアのPRレビュー187件を分類してみたら、バグは5件に1件しか指摘されていなかった</title>
-      <link>https://qiita.com/ktdatascience/items/02b6b45e2ca7d34ad146?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ktdatascience/items/02b6b45e2ca7d34ad146?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] ベテランエンジニアによる187件のプルリクエスト(PR)レビューコメントを分析し、その指摘内容を分類した記事です。 / 分析の結果、指摘の最大勢力はバグではなく「今は何も壊れていない箇所」への指摘が全体の3分の1を占めていることが判明しました。 / バックエンド、モバイル、Webフロントといった対象によってレビューの重点領域が異なることも示され、効率的なコードレビューのヒントを提供しています。 (Source: Qiita)</description>
-      <pubDate>Wed, 26 Aug 2026 13:31:54 +0000</pubDate>
+      <title>vLLM v0.28.0 リリース</title>
+      <link>https://github.com/vllm-project/vllm/releases/tag/v0.28.0</link>
+      <guid isPermaLink="false">https://github.com/vllm-project/vllm/releases/tag/v0.28.0</guid>
+      <description>[Score: 80] vLLMのバージョン0.28.0がリリースされました。 / このリリースには270人のコントリビューターによる584のコミットが含まれています。 / 大規模言語モデルの推論を高速化するライブラリであり、継続的な開発と改善が進んでいます。 (Source: Hacker News)</description>
+      <pubDate>Sat, 29 Aug 2026 18:22:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>ドメイン駆動エージェント</title>
+      <link>https://coldtake.dev/blog/domain-driven-agents</link>
+      <guid isPermaLink="false">https://coldtake.dev/blog/domain-driven-agents</guid>
+      <description>[Score: 80] LLM（大規模言語モデル）をソフトウェア開発に活用する際、新規プロジェクトでは高い生産性を示す一方で、既存のレガシーコードベースでは品質が著しく低下する問題点を指摘しています。 / これは、レガシーコードベースが持つ技術的負債だけでなく、ドメイン知識の欠如や共通言語の不在がLLMの理解を妨げているためと分析しています。 / LLMの能力向上だけでなく、コードベース自体を「準備」することで、LLMが既存システムでも効果的に機能するよう改善できるというアプローチを提案しています。 (Source: Hacker News)</description>
+      <pubDate>Sat, 29 Aug 2026 19:28:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>【ポエム】2026年 AIコーディングプログラマの心象風景</title>
+      <link>https://qiita.com/ssc-ksaitou/items/d48a62b87545a0e7d2c7?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ssc-ksaitou/items/d48a62b87545a0e7d2c7?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] 2026年におけるAIコーディングエージェントとの協業におけるプログラマのメンタルモデルを考察しています。 / AIの出力を制御し、望む結果に導くための「ハーネス」（制約）の重要性を強調。 / 自動テストやコンテキスト付与など、ハーネスを増やすことでAIの作業ミスを減らし、品質を高める考え方を提示しています。 (Source: Qiita)</description>
+      <pubDate>Fri, 28 Aug 2026 05:09:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>ベテランエンジニアのPRレビュー187件を分類してみたら、バグは5件に1件しか指摘されていなかった - Qiita</title>
+      <link>https://qiita.com/ktdatascience/items/02b6b45e2ca7d34ad146</link>
+      <guid isPermaLink="false">https://qiita.com/ktdatascience/items/02b6b45e2ca7d34ad146</guid>
+      <description>[Score: 80] ベテランエンジニアによるプルリクエスト（PR）レビュー187件を分析した結果、バグ指摘は全体の20%に過ぎず、最大勢力は「今は何も壊れていない箇所」への指摘だったと報告されています。 / レビューの指摘は11の大領域に分類され、「一貫性」や「意図の保存」といった領域が特に重要視されていることが判明しました。 / この分析は、効率的で質の高いコードレビューを行うための具体的な視点を提供し、開発プロセスの改善に役立つ知見を示しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 28 Aug 2026 00:13:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenClawが爆発的に普及。その構築とセキュリティを担うメンテナーたちに会う。</title>
+      <link>https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/</guid>
+      <description>[Score: 80] OpenClawは、個人のAIアシスタントとして急速に普及し、GitHubで驚異的な成長を遂げたオープンソースプロジェクトです。 / 本記事では、プロジェクトのメンテナーたちが、急増するプルリクエストの管理、コントリビューターの信頼とコードレビューの再考について語っています。 / また、ソフトウェアサプライチェーンのリスクへの対処や、強力なエージェント機能とセキュリティのバランスに関する教訓も共有されています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 27 Aug 2026 16:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
