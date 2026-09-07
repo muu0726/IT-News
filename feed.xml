@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 06 Sep 2026 23:24:52 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 23:55:43 +0000</lastBuildDate>
     <item>
-      <title>Isar Aerospaceが2回目の飛行で軌道到達とペイロード展開に成功</title>
-      <link>https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight</link>
-      <guid isPermaLink="false">https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight</guid>
-      <description>[Score: 90] Isar Aerospaceが2回目の打ち上げで衛星を軌道に投入し、ペイロード展開に成功したヨーロッパ初の商業宇宙企業となりました。 / この成功により、ヨーロッパ大陸から宇宙へのアクセスが確立され、世界の宇宙産業における打ち上げのボトルネック解消に貢献します。 / 同社は今後、ロケット生産の迅速な拡大と、高まる需要への対応に注力していく方針です。 (Source: Hacker News)</description>
-      <pubDate>Sun, 06 Sep 2026 07:21:06 +0000</pubDate>
+      <title>WeatherNext 3</title>
+      <link>https://deepmind.google/science/weathernext/</link>
+      <guid isPermaLink="false">https://deepmind.google/science/weathernext/</guid>
+      <description>[Score: 95] DeepMindが開発した「WeatherNext 3」は、初のグローバルな時間ごとの気象予測モデルです。 / 生衛星データを直接活用し、高解像度かつ高精度な予測を可能にし、Google製品にも統合されます。 / 従来の数値予測モデルに比べ、速度、詳細度、精度が向上し、個人から企業まで幅広い意思決定を支援します。 (Source: Hacker News)</description>
+      <pubDate>Thu, 03 Sep 2026 16:06:08 +0000</pubDate>
     </item>
     <item>
-      <title>ルービックキューブを一撃で解く専用LLMを作った</title>
-      <link>https://zenn.dev/issei_y/articles/4178a603322b8e</link>
-      <guid isPermaLink="false">https://zenn.dev/issei_y/articles/4178a603322b8e</guid>
-      <description>[Score: 90] ルービックキューブを1回の生成で解く専用LLMが開発され、初見の局面の99.83%を解くことに成功しました。 / 約4.3×10^19通りの状態があるルービックキューブに対し、現在の状態と過去の手順から次の一手を自己回帰的に生成します。 / 状態をState Encoderでベクトル化し、Transformerに入力するWorld Action Modelとして実装されており、LLMの応用可能性を示しています。 (Source: Zenn)</description>
-      <pubDate>Sun, 06 Sep 2026 10:48:04 +0000</pubDate>
+      <title>AIセキュリティ短信 | 社会・産業のデジタル変革 | IPA 独立行政法人 情報処理推進機構</title>
+      <link>https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html</link>
+      <guid isPermaLink="false">https://www.ipa.go.jp/digital/ai/security/ai-security-bulletin.html</guid>
+      <description>[Score: 95] IPA（情報処理推進機構）が発行する「AIセキュリティ短信」は、国内外のAIに関する膨大な公開情報から、AIセキュリティのトレンドや事例を紹介しています。 / 特にAIシステム開発者やセキュリティ担当者向けに、業務で知っておくべき動向や注意すべきインシデント事例に焦点を当てて情報提供を行っています。 / AIの社会実装が進む中で、その安全性と信頼性を確保するための重要な指針となる情報源です。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 06 Jul 2026 09:17:22 +0000</pubDate>
     </item>
     <item>
-      <title>AIエージェント14製品を徹底比較｜暴走せず社内業務を任せられるのは？ Claude・Cursor・Devin・Manus…【中小企業の導入判断ガイド】</title>
-      <link>https://qiita.com/songchong/items/94df4fbdeabaaf8f8ef5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/94df4fbdeabaaf8f8ef5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 主要なAIエージェント14製品を、中小企業が業務で安全かつ効果的に導入できるよう「8つの独自指標」で徹底比較しています。 / AIエージェントが社内システムを直接変更するリスクに焦点を当て、暴走や情報漏洩、想定外コストを防ぐための判断材料を提供。 / 各製品の公式ドキュメントに基づき、業務内容、データ主権、自律度合い、予算体系に合わせた最適な選択肢を見極めるガイドです。 (Source: Qiita)</description>
-      <pubDate>Sun, 06 Sep 2026 16:02:59 +0000</pubDate>
+      <title>Linuxディストリビューション全体に対するトラスト・トラスト攻撃</title>
+      <link>https://arxiv.org/abs/2607.24888</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2607.24888</guid>
+      <description>[Score: 90] この論文は、Linuxディストリビューション全体を標的とした「トラスト・トラスト攻撃」の可能性について論じています。 / サプライチェーン攻撃の一種であり、コンパイラやビルドツール自体が不正なコードを挿入する危険性を指摘しています。 / オープンソースソフトウェアの信頼性モデルに根本的な疑問を投げかける、セキュリティ研究の重要なテーマです。 (Source: Hacker News)</description>
+      <pubDate>Sat, 05 Sep 2026 11:25:18 +0000</pubDate>
     </item>
     <item>
-      <title>GPT-6 AstraがPortalをクリア、費用はわずか571.18ドル</title>
-      <link>https://www.reddit.com/r/technology/comments/1w92153/gpt6_astra_beat_portal_and_it_only_cost_57118/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1w92153/gpt6_astra_beat_portal_and_it_only_cost_57118/</guid>
-      <description>[Score: 90] 最新のAIモデル「GPT-6 Astra」が、人気ゲーム「Portal」をクリアしたと報じられている。 / この偉業達成にかかった費用はわずか571.18ドルとされており、AIの効率性と能力の向上を示唆。 / AIが複雑なゲーム環境でタスクを遂行する能力が進化していることを示す事例。 (Source: Reddit)</description>
-      <pubDate>Sun, 06 Sep 2026 17:16:14 +0000</pubDate>
+      <title>WebエンジニアのためのReact Native + NativeWind v5事始め — Webの常識が通用しない18のポイント</title>
+      <link>https://zenn.dev/my_vision/articles/2bbf47bb0db842</link>
+      <guid isPermaLink="false">https://zenn.dev/my_vision/articles/2bbf47bb0db842</guid>
+      <description>[Score: 90] WebエンジニアがReact Native + NativeWind v5でモバイルアプリ開発を行う際に直面する、Webの常識が通用しない18のハマりどころを解説しています。 / NativeWindがWebのTailwind CSSと書き味は似ているものの、React NativeにはCSSエンジンがなく、スタイルがJavaScriptオブジェクトとして処理される根本原因を説明。 / サポートされないクラスがエラーにならず静かに無視される挙動や、React Native固有のレイアウト（display: flexがデフォルトでblock/inline/gridが存在しない）など、具体的な差異とデバッグの切り分け方が詳細にまとめられています。 (Source: Zenn)</description>
+      <pubDate>Mon, 07 Sep 2026 01:17:48 +0000</pubDate>
     </item>
     <item>
-      <title>Project HydraFusion: マルチモデルオーケストレーションによる最先端品質</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/</guid>
-      <description>[Score: 90] GitHub Copilotの「Project HydraFusion」は、複数のAIモデルを連携させ、タスクに応じて最適なモデルを動的に選択・実行する研究プレビューです。 / これにより、開発者はパフォーマンス、コスト、レイテンシのバランスを取りながら、複雑なAIワークフローを意識することなく利用できます。 / 単一モデル、カスケード、批評といった実行パターンを使い分け、効率的かつ高品質なコード生成や推論を実現します。 (Source: GitHub Blog)</description>
-      <pubDate>Fri, 04 Sep 2026 16:04:14 +0000</pubDate>
+      <title>HTMLを社内共有するサービスを、コードを読まずに作る - 1人で25万行を回す自動運用の記録</title>
+      <link>https://zenn.dev/coji/articles/solo-software-factory-without-reading-code</link>
+      <guid isPermaLink="false">https://zenn.dev/coji/articles/solo-software-factory-without-reading-code</guid>
+      <description>[Score: 90] AIを活用し、コードを一切読まずに25万行のTypeScript製Webサービスを一人で開発・運用する記録です。 / 開発者はAIとの壁打ちでIssueを立て、PRタイトルとCI結果のみを確認し、有料サービスとして安定稼働させています。 / 立ち上げ期に「ノーガード」でAIに開発させ、事故のたびにガードレールを構築する試行錯誤のプロセスが解説されています。 (Source: Zenn)</description>
+      <pubDate>Mon, 07 Sep 2026 00:05:00 +0000</pubDate>
     </item>
     <item>
-      <title>GPT-2-likeからQwen2-likeへの実験：第3回 絶対位置EmbeddingをRoPEに変える</title>
-      <link>https://zenn.dev/yyamamot/articles/gpt2-to-qwen2-03-rope</link>
-      <guid isPermaLink="false">https://zenn.dev/yyamamot/articles/gpt2-to-qwen2-03-rope</guid>
-      <description>[Score: 88] GPT-2ライクなモデルからQwen2ライクなモデルへの構造変更実験の第3回として、絶対位置EmbeddingをRoPEに変更しました。 / この変更により、検証LossとTop-1正解率が改善しましたが、学習時間は増加するという結果が得られました。 / RoPEはToken Embeddingに位置ベクトルを足す代わりに、Attention内でQとKを位置ごとの角度で回転させる手法であり、LLMの性能向上に寄与する一方で計算コストも考慮する必要があります。 (Source: Zenn)</description>
-      <pubDate>Sun, 06 Sep 2026 06:45:34 +0000</pubDate>
+      <title>LG製スマートTVが画面オフ時にも音声を記録し、ローカルデバイスを覗き見していたことが発覚</title>
+      <link>https://www.reddit.com/r/technology/comments/1w9jmjn/lg_smart_tvs_caught_logging_audio_with_screen_off/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1w9jmjn/lg_smart_tvs_caught_logging_audio_with_screen_off/</guid>
+      <description>[Score: 90] LG製スマートTVが、画面がオフの状態であるにもかかわらず、ユーザーの音声を記録し、さらにローカルネットワーク上のデバイス情報を収集していたことが明らかになりました。 / この事態は、スマートデバイスにおけるプライバシー侵害の深刻な問題と、ユーザーデータの不適切な収集に対する懸念を再燃させています。 / IoTデバイスのセキュリティとプライバシー保護の重要性を改めて浮き彫りにする、消費者にとって重大な事例です。 (Source: Reddit)</description>
+      <pubDate>Mon, 07 Sep 2026 05:56:11 +0000</pubDate>
     </item>
     <item>
-      <title>Show HN: Mador – わずか80行のProxyステートタプルで任意のDOMをリアクティブにする</title>
-      <link>https://github.com/marsbos/mador</link>
-      <guid isPermaLink="false">https://github.com/marsbos/mador</guid>
-      <description>[Score: 85] Madorは、わずか80行のコードで既存のDOMにリアクティブな状態バインディングを提供する軽量ライブラリです。 / コンポーネント、テンプレート、仮想DOMを使用せず、直接DOMを操作することで高いパフォーマンスとシンプルさを実現します。 / 状態の変更をバッチ処理し、DOM要素が削除された際には関連するバインディングも自動的にクリーンアップされます。 (Source: Hacker News)</description>
-      <pubDate>Sun, 06 Sep 2026 20:45:13 +0000</pubDate>
+      <title>Microsoft、“世界でもっとも高速・高精度で安価”とうたう音声認識モデルを発表、「MAI-Transcribe-2」／60言語の平均単語誤り率（WER）で比較対象中トップ、処理速度も向上</title>
+      <link>https://forest.watch.impress.co.jp/docs/news/2138699.html</link>
+      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2138699.html</guid>
+      <description>[Score: 90] Microsoftが、高速・高精度で安価な音声認識AIモデル「MAI-Transcribe-2」を発表しました。 / 60言語のベンチマークで競合モデルを上回り、処理速度も大幅に向上しています。 / 医療記録や法務文書作成、アクセシビリティなど幅広い用途が期待され、価格も大幅に引き下げられました。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 07 Sep 2026 06:35:00 +0000</pubDate>
     </item>
     <item>
-      <title>GitHubの権限管理をTerraform化すると体験がよかった</title>
-      <link>https://zenn.dev/dev_commune/articles/github-terraform-permission-management</link>
-      <guid isPermaLink="false">https://zenn.dev/dev_commune/articles/github-terraform-permission-management</guid>
-      <description>[Score: 85] GitHubの権限管理における手作業の煩雑さを解消するため、Terraformを導入した事例が紹介されています。 / Terraform Provider for GitHubを利用し、チームやメンバーの所属をコードで管理することで、運用効率が向上しました。 / これにより、権限変更依頼をPull Requestで受けられるようになり、作業の自動化と可視化が実現されています。 (Source: Zenn)</description>
-      <pubDate>Sun, 06 Sep 2026 11:50:58 +0000</pubDate>
+      <title>Geminiはしばしばウェブ検索を行わず、その事実も伝えない</title>
+      <link>https://dev.to/theaidownside/gemini-often-wont-search-the-web-and-wont-tell-you-it-didnt-4nkj</link>
+      <guid isPermaLink="false">https://dev.to/theaidownside/gemini-often-wont-search-the-web-and-wont-tell-you-it-didnt-4nkj</guid>
+      <description>[Score: 90] GoogleのAIアシスタント「Gemini」が、ウェブ検索が必要な質問に対して検索を行わず、古い情報に基づいて自信満々に回答することが指摘されています。 / Geminiは、質問に応じてウェブ検索ツールを使用するかどうかを決定するルーティングステップがあり、多くの場合、ツールが与えられないか、使用しないよう指示されます。 / ユーザーは検索が行われなかったことを知らされず、最新情報が必要な場面で誤った回答を受け取る可能性があるため、透明性の欠如が問題視されています。 (Source: Dev.to)</description>
+      <pubDate>Mon, 07 Sep 2026 23:35:03 +0000</pubDate>
     </item>
     <item>
-      <title>【歴史】Next.jsが覇権を握り、そして直面した試練の物語【動画解説】</title>
-      <link>https://qiita.com/Sicut_study/items/8fa7302bbb5bc1c897bf?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/8fa7302bbb5bc1c897bf?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] Reactの課題を解決するために誕生し、現代のフロントエンド開発でデファクトスタンダードとなったNext.jsの歴史を解説しています。 / SPAの「三重苦」（巨大なバンドルサイズ、SEOの悪夢、ローディング地獄）を克服した経緯と、ISRやVercel時代の光と影、App Routerの混乱といった試練に焦点を当てています。 / Next.jsがなぜ開発者にとって不可欠な存在であり続けるのかを深掘りしています。 (Source: Qiita)</description>
-      <pubDate>Sun, 06 Sep 2026 08:11:44 +0000</pubDate>
+      <title>BroadcomがVDDKのダウンロードを停止し、VMwareからの移行がさらに困難に</title>
+      <link>https://www.virtualizationhowto.com/2026/09/leaving-vmware-just-got-harder-after-broadcom-pulled-vddk-downloads/</link>
+      <guid isPermaLink="false">https://www.virtualizationhowto.com/2026/09/leaving-vmware-just-got-harder-after-broadcom-pulled-vddk-downloads/</guid>
+      <description>[Score: 85] BroadcomがVMwareのVirtual Disk Development Kit (VDDK) の公開ダウンロードを停止しました。 / VDDKはVMwareから他のプラットフォームへの移行ツールに不可欠なライブラリであり、今回の措置は顧客の移行を著しく妨げます。 / VMwareユーザーにとって、Broadcom買収後のプラットフォーム離れを困難にする新たな障壁となります。 (Source: Hacker News)</description>
+      <pubDate>Mon, 07 Sep 2026 20:32:55 +0000</pubDate>
     </item>
     <item>
-      <title>AIに設計を任せるときに気をつけたい。「正しく動く」と「増えても耐えられる」は別だった</title>
-      <link>https://qiita.com/adgjmptw0/items/365a4437aad4c939d1cc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/adgjmptw0/items/365a4437aad4c939d1cc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] 生成AIを活用したシステム設計において、「正しく動く」ことと「スケールに耐えられる」ことは別問題であると指摘しています。 / Push通知機能の設計例を挙げ、対象者ごとにDBアクセスが繰り返される非効率な構造を早期に発見し、改善した事例を紹介。 / AIによる開発速度向上に伴い、設計段階で「100倍になったらどうなるか」という性能面の監査がこれまで以上に重要であると強調しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 04 Sep 2026 00:39:25 +0000</pubDate>
+      <title>ドメインモデル貧血症はなぜ生まれるのか — Decision パターンで DDD トリレンマを解く</title>
+      <link>https://zenn.dev/tellernovel_inc/articles/0193eb68cabb6e</link>
+      <guid isPermaLink="false">https://zenn.dev/tellernovel_inc/articles/0193eb68cabb6e</guid>
+      <description>[Score: 85] 本記事は、DDDにおけるドメインモデル貧血症がなぜ発生するのか、その構造的な理由を深掘りし、Decisionパターンを用いて解決策を提示しています。 / ビジネスロジックがusecaseやapi層に分散し、ドメイン層が振る舞いを持たない状態になる原因として、「判断に必要なデータが、判断してみないと分からない」という循環を指摘。 / このトリレンマを解消し、ビジネスロジックをドメインに集約することで、テスタビリティ向上や仕様変更への対応力強化を図る具体的なアプローチが解説されています。 (Source: Zenn)</description>
+      <pubDate>Mon, 07 Sep 2026 03:03:17 +0000</pubDate>
     </item>
     <item>
-      <title>Redditの皆さん、私はロイターのジャーナリスト、ケイティ・ポールです。マーク・ザッカーバーグがMetaの従業員をAIに置き換える計画を明らかにし、それがどのように破綻したかについてお話しします。何でも聞いてください。</title>
+      <title>CLAUDE.mdをそろそろ見直す時期かも ── Claude 5世代向けの最適化手順・スキル・プロジェクト種類別の例</title>
+      <link>https://qiita.com/nogataka/items/d6a54f3694726b9141f3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/nogataka/items/d6a54f3694726b9141f3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] Claude 5世代モデル向けに、CLAUDE.mdの最適化手順と具体的な例が解説されています。 / Anthropicの知見に基づき、システムプロンプトやCLAUDE.mdの過度な制約を減らすことで性能が向上することが示唆されています。 / モデルの判断能力向上に伴い、メモリ・アーティファクト・スキルを活用し、ガイダンスの置き場所を見直す重要性が強調されています。 (Source: Qiita)</description>
+      <pubDate>Sat, 05 Sep 2026 03:19:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Redditの皆さん、私はロイターのジャーナリスト、ケイティ・ポールです。マーク・ザッカーバーグがMetaの従業員をAIに置き換える計画を明らかにし、それがどのように破綻したかについてAMAを行います。</title>
       <link>https://www.reddit.com/r/technology/comments/1w5k5h4/hi_reddit_im_katie_paul_a_reuters_journalist_who/</link>
       <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1w5k5h4/hi_reddit_im_katie_paul_a_reuters_journalist_who/</guid>
-      <description>[Score: 85] ロイターのジャーナリスト、ケイティ・ポール氏が、Metaのマーク・ザッカーバーグCEOによる従業員をAIに置き換える計画とその失敗について語るAMA（Ask Me Anything）セッション。 / この計画はMeta社内で大きな反発を招き、最終的に頓挫した経緯が詳細に明かされる。 / AI導入による大規模な人員削減の試みが、企業の文化や従業員の反発によってどのように阻まれたかを示す事例。 (Source: Reddit)</description>
+      <description>[Score: 85] ロイターのジャーナリスト、ケイティ・ポール氏が、Metaが従業員をAIに置き換える計画を立て、それが失敗に終わった経緯についてAMA（Ask Me Anything）を実施。 / この計画の破綻は、AI導入における現実的な課題と、大規模な企業戦略におけるAI活用の難しさを示唆しています。 / AIによる人員削減という野心的な試みが、なぜ成功しなかったのか、その詳細が語られると予想されます。 (Source: Reddit)</description>
       <pubDate>Wed, 02 Sep 2026 19:18:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>デジタル庁は、デザインシステムをAIに読ませ始めた。Markdown配布が示すこと｜How many designs</title>
-      <link>https://note.com/howmanydesigns/n/na108d69827ce</link>
-      <guid isPermaLink="false">https://note.com/howmanydesigns/n/na108d69827ce</guid>
-      <description>[Score: 85] デジタル庁がデザインシステムをMarkdown形式で配布開始し、その主な用途が「AI参照」であることが明記されました。 / これは、人間がブラウザで読むだけでなく、AIが情報を検索・抽出・参照することを想定した新しいデザインシステムの形を示唆しています。 / 大規模なデザインシステムにおいて、AIが効率的に必要な情報にアクセスできるよう、文書が構造化されている点が特徴です。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 04 Sep 2026 06:34:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>AWS、新たな太平洋海底ケーブル「Sta'O'Nuk」発表。420Tbps、2029年に稼働へ。集中リスク排除のため新たな陸揚げ拠点を採用</title>
-      <link>https://www.publickey1.jp/blog/26/awsstaonuk420tbps2029.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsstaonuk420tbps2029.html</guid>
-      <description>[Score: 85] AWSが日本と米国を結ぶ新たな太平洋海底ケーブル「Sta'O'Nuk」を発表しました。 / 2029年稼働予定で、420Tbpsの広帯域を提供し、多層的な暗号化で保護されます。 / 従来の集中リスクを避けるため、日米双方で新たな陸揚げ拠点を採用するのが大きな特徴です。 (Source: Publickey)</description>
-      <pubDate>Thu, 03 Sep 2026 01:59:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>タスク品質を犠牲にすることなくAIコーディングをより費用対効果の高いものにする方法</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/</guid>
-      <description>[Score: 85] GitHub Copilotは、AIコーディングのコスト効率を向上させつつ、タスク品質を維持するための4つの変更点を導入しました。 / トークン数削減だけでなく、タスクの進行に必要な適切なコンテキストを供給することで、全体的な効率を最適化しています。 / これにより、AIエージェントが不必要な追加呼び出しを減らし、より迅速かつ費用対効果の高いコーディング支援を実現します。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 02 Sep 2026 18:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>あなたの知的なチャックが開いている (2025)</title>
-      <link>https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/</link>
-      <guid isPermaLink="false">https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/</guid>
-      <description>[Score: 80] 著者はLinkedInが重要なSNSになったと告白しつつ、多くのユーザーがLLM（大規模言語モデル）でコンテンツを生成している現状に警鐘を鳴らしています。 / AIが生成する文章は、絵文字や単文段落、特定の構文が多用され、スタイルが不快で質が低いと指摘しています。 / AIによる安易なコンテンツ生成が、知的誠実性やコミュニケーションの質を低下させる可能性について議論しています。 (Source: Hacker News)</description>
-      <pubDate>Sun, 06 Sep 2026 11:56:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>エンベディングの普遍的な幾何学を活用する</title>
-      <link>https://arxiv.org/abs/2505.12540</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2505.12540</guid>
-      <description>[Score: 80] この論文は、機械学習におけるエンベディング（埋め込み表現）の普遍的な幾何学的特性に焦点を当てています。 / 異なるドメインやモデルで生成されたエンベディング間の関係性を理解し、それらを効果的に活用するための理論的基盤を探求します。 / エンベディングの幾何学を深く理解することで、モデルの汎化性能向上や新たな応用分野の開拓に繋がる可能性があります。 (Source: Hacker News)</description>
-      <pubDate>Sun, 06 Sep 2026 20:31:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>APIあるのに手入力？ 業務システムから分かるデータ連携の罠｜「項目名1つ1つの突合」から見えてきた現実</title>
-      <link>https://qiita.com/songchong/items/d1e1e908a1b76d6995b1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/d1e1e908a1b76d6995b1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] 「API連携対応」と謳われるSaaS製品でも、実際には手入力作業が残るデータ連携の課題を詳細に分析しています。 / 公開82システムのAPI仕様を徹底調査し、項目名の不一致、データ形式の違い、項目自体の欠如といった「3枚の壁」と、レート制限・プラン制約の運用障壁を解説。 / APIによる自動化の真の効率を測るには、個々の業務とAPI対象オブジェクトの適合性を深く見極める必要があると結論付けています。 (Source: Qiita)</description>
-      <pubDate>Sun, 06 Sep 2026 07:34:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>VS Code誕生から現在までの物語「The Story of VS Code」YouTubeで公開。作者のエリック・ガンマ氏はなぜIBMからMSへ移籍してVS Codeを作ることになったか</title>
-      <link>https://www.publickey1.jp/blog/26/vs_codethe_story_of_vs_codeyoutubeibmmsvs_code.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vs_codethe_story_of_vs_codeyoutubeibmmsvs_code.html</guid>
-      <description>[Score: 80] VS Codeの誕生から現在までの歴史を振り返る公式ドキュメンタリー「The Story of VS Code」がYouTubeで公開されました。 / 作者のエリック・ガンマ氏が、オープンソースに敵対的だった当時のマイクロソフトへIBMから移籍し、VS Codeを開発した経緯が語られます。 / ITエンジニアに最も人気のコードエディタとなったVS Codeの成功の裏側にある物語が紹介されています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 06 Sep 2026 16:58:41 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptをC言語にコンパイルする「porffor」がアルファ版に到達。ネイティブやWASMを生成可能</title>
       <link>https://www.publickey1.jp/blog/26/javascriptcporfforwasm.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptcporfforwasm.html</guid>
-      <description>[Score: 80] JavaScriptまたはTypeScriptコードをC言語に事前コンパイルし、ネイティブバイナリやWebAssemblyを生成するコンパイラ「porffor」がアルファ版に到達しました。 / これにより、JavaScriptランタイムに依存せず単体で実行可能なファイルが生成され、Node.jsバンドルと比較して最大50分の1までファイルサイズを削減できるとされています。 / まだ実用段階ではないものの、リアルワールドの依存関係が機能し始め、Node互換性が主な課題となっています。 (Source: Publickey)</description>
+      <description>[Score: 85] JavaScript/TypeScriptコードをC言語に事前コンパイルし、ネイティブバイナリやWebAssemblyを生成する「porffor」がアルファ版に到達しました。 / これにより、JavaScriptランタイムやライブラリに依存せず、単体で実行可能なファイルを生成できます。 / 生成されるバイナリは、Node.jsで実行可能なファイルと比較して最大50分の1までサイズが小さくなる可能性があります。 (Source: Publickey)</description>
       <pubDate>Sun, 06 Sep 2026 15:04:34 +0000</pubDate>
     </item>
     <item>
-      <title>初心者向けGitHub Copilotアプリ: 複数のエージェントを同時に実行</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/</guid>
-      <description>[Score: 80] GitHub Copilotアプリでは、複数のAIエージェントセッションを同時に並行して実行できるようになりました。 / 各セッションは独立しており、独自のGitワークツリーで動作するため、互いに干渉することなく複数のタスクを同時に進められます。 / これにより、開発者はエージェントの作業を待つことなく、レビューや意思決定に集中でき、開発効率が向上します。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 03 Sep 2026 16:00:00 +0000</pubDate>
+      <title>Project HydraFusion: マルチモデルオーケストレーションによる最先端の品質</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/</guid>
+      <description>[Score: 85] GitHubが「Project HydraFusion」という研究プレビューを発表しました。 / これは、複数のプロバイダーのモデルをオーケストレーションし、タスクに応じて最適なモデルを選択して実行計画を立てることで、 / 性能、コスト、レイテンシーのバランスを取りながら最先端のAIインテリジェンスを提供するものです。 (Source: GitHub Blog)</description>
+      <pubDate>Fri, 04 Sep 2026 16:04:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenClawが爆発的に普及。その開発とセキュリティを担うメンテナーたちに会う。</title>
+      <link>https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/</guid>
+      <description>[Score: 82] 個人の実験から始まったオープンソースのAIアシスタント「OpenClaw」が急速に普及し、そのメンテナーたちが直面する課題について語っています。 / 数千件のプルリクエスト管理、コントリビューターの信頼とコードレビューの再考、ソフトウェアサプライチェーンのリスク対応、 / 強力なエージェント機能とセキュリティのバランスなど、オープンソースプロジェクト運営の教訓が共有されています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 27 Aug 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>データ最適化された偶発事象スクリーニング：電力システムセキュリティへの機械学習アプローチ</title>
+      <link>https://arxiv.org/abs/2609.04300</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2609.04300</guid>
+      <description>[Score: 82] 電力システムのセキュリティを強化するための機械学習アプローチに関する研究です。 / 偶発事象（停電など）のスクリーニングをデータに基づいて最適化する手法を提案しています。 / 電力網の安定性向上や障害予測、リスク管理に貢献する技術と考えられます。 (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 07 Sep 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Show HN: Stuxnet – 悪名高いサイバー兵器の再構築されたソースコード</title>
+      <link>https://github.com/Sadpainy/Stuxnet</link>
+      <guid isPermaLink="false">https://github.com/Sadpainy/Stuxnet</guid>
+      <description>[Score: 80] 悪名高いサイバー兵器Stuxnetワームの再構築されたソースコードがGitHubで公開されました。 / これは、2010年に発見されたオリジナルのバイナリをリバースエンジニアリングした研究成果です。 / 教育、マルウェア分析トレーニング、防御研究を目的としており、産業制御システムへの攻撃手法理解に貢献します。 (Source: Hacker News)</description>
+      <pubDate>Mon, 07 Sep 2026 22:12:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Astraのリリースに合わせてAGENTS.mdを修正するなら「request_user_input」も使って体験良くチューニングしよう</title>
+      <link>https://zenn.dev/cureapp/articles/9dd3298ce84b47</link>
+      <guid isPermaLink="false">https://zenn.dev/cureapp/articles/9dd3298ce84b47</guid>
+      <description>[Score: 80] GPT-6 Astraのリリースに伴い、AGENTS.mdを新しいモデル特性に合わせて調整する際、「request_user_input」を活用して効率的にチューニングする方法を提案しています。 / 公式ガイダンスをAIに読ませるだけでなく、Codexの「request_user_input」機能を使ってAIにユーザーへヒアリングさせることで、より理想に近いAGENTS.mdを作成できると説明。 / AIが修正した理由や意図を事前に確認し、その上でユーザーの具体的な要望をAIに質問させることで、AGENTS.mdの洗練度を高める具体的なプロセスが紹介されています。 (Source: Zenn)</description>
+      <pubDate>Mon, 07 Sep 2026 00:10:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>マジックリンクでログインできない原因はメールのURLスキャンだった</title>
+      <link>https://qiita.com/kuma_3838/items/1fc232b42c344260021d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kuma_3838/items/1fc232b42c344260021d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] マジックリンクでログインできない問題の原因が、メールセキュリティ製品のURLスキャン機能にあることが判明しました。 / セキュリティ製品が利用者より先にリンクを開き、1回限りのトークンを消費してしまう構造上の問題が解説されています。 / GETリクエストに「認証トークンの消費」という副作用を持たせていたことが根本原因であり、同様の問題が起こりうるケースと症状が提示されています。 (Source: Qiita)</description>
+      <pubDate>Sun, 06 Sep 2026 21:48:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>HTMX 4.0正式リリース。内部実装がXHRからfetchに移行しStreaming HTMLが可能に、属性はデフォルトで子要素に継承されないように変更など</title>
+      <link>https://www.publickey1.jp/blog/26/htmx_40xhrfetchstreaming_html.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/htmx_40xhrfetchstreaming_html.html</guid>
+      <description>[Score: 80] JavaScriptなしで動的なWebページを実現するHTMXのバージョン4.0が正式リリースされました。 / 内部実装がXHRからfetch APIに移行し、Streaming HTMLがサポートされるようになりました。 / これにより、より効率的でモダンなWebアプリケーション開発が可能になります。 (Source: Publickey)</description>
+      <pubDate>Mon, 07 Sep 2026 15:39:27 +0000</pubDate>
     </item>
   </channel>
 </rss>
