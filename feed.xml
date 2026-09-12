@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 11 Sep 2026 23:47:06 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 23:42:44 +0000</lastBuildDate>
     <item>
       <title>AWS、AIがフルスタックAWSアプリの基本コードを、セキュリティ、可観測性、インフラまで一気通貫で生成する「Nx Plugin for AWS 1.0」、オープンソースで公開</title>
       <link>https://www.publickey1.jp/blog/26/awsaiawsnx_plugin_for_aws_10.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsaiawsnx_plugin_for_aws_10.html</guid>
-      <description>[Score: 95] AWSが、AIを活用してフルスタックAWSアプリケーションの基本コードを生成する「Nx Plugin for AWS 1.0」をオープンソースで公開しました。 / このツールは、アプリケーションコードだけでなく、セキュリティ、可観測性、インフラ構成まで一気通貫で生成します。 / データベース、Webサーバー、X-Ray、CloudWatch、ファイアウォール設定、さらにはAIエージェントの組み込みまで対応し、開発効率を大幅に向上させます。 (Source: Publickey)</description>
+      <description>[Score: 95] AWSが、AIを活用してフルスタックAWSアプリケーションの基本コードからインフラ構成まで一気通貫で生成する「Nx Plugin for AWS 1.0」をオープンソースで公開しました。 / このツールは、セキュリティ、可観測性、AI機能（Amazon Bedrock AgentCoreなど）を考慮したインフラコードも自動生成します。 / 複雑なAWS環境でのアプリケーション開発を大幅に効率化し、開発者の負担を軽減することが期待されます。 (Source: Publickey)</description>
       <pubDate>Wed, 09 Sep 2026 15:30:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>【VRChat/Udon】世界最速のC#コンパイラを開発した話</title>
-      <link>https://zenn.dev/bea4dev/articles/b7684e8d4c838e</link>
-      <guid isPermaLink="false">https://zenn.dev/bea4dev/articles/b7684e8d4c838e</guid>
-      <description>[Score: 90] Rustを用いて、C#公式コンパイラRoslynよりも最大11倍高速なC#コンパイラ「MenSharp」が開発されました。 / VRChatのUdonVM向けに、C#の主要機能（ジェネリクス、async/await、try/catchなど）をほぼ完全にサポートすることを目指しています。 / UdonSharpのC#サブセット言語としての制約を解消し、よりUnity + C#に近い開発体験をVRChatユーザーに提供することを目的としています。 (Source: Zenn)</description>
-      <pubDate>Thu, 10 Sep 2026 10:19:23 +0000</pubDate>
-    </item>
-    <item>
-      <title>GPT-6 Astraは何を待ち、いつ指示を取り込むのか — async tool callingとmid-turn steeringを実測</title>
-      <link>https://zenn.dev/peoplex_blog/articles/65768c769de4b0</link>
-      <guid isPermaLink="false">https://zenn.dev/peoplex_blog/articles/65768c769de4b0</guid>
-      <description>[Score: 90] OpenAIが公開したGPT-6 Astraの新機能「Async Tool Calling」と「Mid-turn steering」について解説しています。 / 従来のTool Callingがツール呼び出し結果を待つ必要があったのに対し、非同期処理により応答性を向上させるものです。 / ドキュメントの読み解きと実際の検証を通じて、これらの新機能の動作と利点を深掘りしています。 (Source: Zenn)</description>
-      <pubDate>Thu, 10 Sep 2026 03:14:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>デジタル庁のガバメントソリューションサービス(GSS)への不正アクセスについてまとめてみた - piyolog</title>
-      <link>https://piyolog.hatenadiary.jp/entry/2026/09/11/220855</link>
-      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/09/11/220855</guid>
-      <description>[Score: 90] デジタル庁の政府共通業務環境「ガバメントソリューションサービス(GSS)」が外部からの不正アクセスを受け、個人情報約24.6万件が漏えいした可能性があると公表された。 / 外部保守運用に利用していたVPN機器の脆弱性が悪用され、内部ネットワークに侵入されたとみられる。 / デジタル庁は脆弱性を把握していたものの、緊急度の高い他の脆弱性から対応を進めていた最中に悪用されたと説明している。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 11 Sep 2026 13:54:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>音楽生成AI「YuE2」が無料公開される、有料のSuno 5に近い性能で楽譜から楽曲生成可能＆日本語ボーカルも対応</title>
-      <link>https://gigazine.net/news/20260911-yue2-music-generation-ai/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20260911-yue2-music-generation-ai/</guid>
-      <description>[Score: 90] 音楽生成AI「YuE2」が無料で公開され、有料モデルSuno 5に近い性能を持つと発表されました。 / テキスト入力に加え、ABC記譜法による楽譜入力にも対応し、日本語ボーカル付き楽曲の生成も可能です。 / ローカル環境での実行が可能で、RTX 4090を使用した場合、214秒の楽曲を71秒で生成できる高速性も特徴です。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 11 Sep 2026 12:19:19 +0000</pubDate>
     </item>
     <item>
       <title>Project HydraFusion: マルチモデルオーケストレーションによる最先端品質の実現</title>
       <link>https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/</guid>
-      <description>[Score: 90] GitHubは、開発者に最適なモデルを提供する「Project HydraFusion」という研究プレビューを発表しました。 / HydraFusionは、複数のプロバイダーのモデルから最適なものを選択し、タスクに応じてドラフト作成、批評、修正、あるいはより強力なモデルへのカスケードといった実行計画を自動で作成します。 / 開発者は複雑さを意識することなく、パフォーマンス、コスト、レイテンシのバランスを考慮した最適なワークフローで最先端のAIを活用できるようになります。 (Source: GitHub Blog)</description>
+      <description>[Score: 95] GitHubは、タスクに最適なモデルを自動選択する「Auto model selection」に続き、「Project HydraFusion」を発表しました。 / HydraFusionは、複数のプロバイダーのモデルから最適なものを選択し、実行計画を立ててタスクを完了させるランタイムオーケストレーション技術です。 / 開発者は複雑さを意識することなく、パフォーマンス、コスト、レイテンシのバランスが取れたワークフローをHydraFusionが自動で選択します。 (Source: GitHub Blog)</description>
       <pubDate>Fri, 04 Sep 2026 16:04:14 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub Copilotアプリ初心者向け：複数のエージェントを同時に実行する方法</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/</guid>
-      <description>[Score: 90] GitHub Copilotアプリで複数のAIエージェントを並行して実行できる新機能が紹介されました。 / 各エージェントセッションは独立したGitワークツリーで動作し、互いに干渉せず、同時に複数のタスクを進められます。 / これにより、開発者はエージェントの作業を待つことなく、レビューや意思決定に集中でき、生産性が大幅に向上します。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 03 Sep 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Googleアプリ広告に220ドルを費やしたところ、インストールの60%がロボットだった</title>
-      <link>https://dayzlegame.com/blog/google-ads-bot-farm/</link>
-      <guid isPermaLink="false">https://dayzlegame.com/blog/google-ads-bot-farm/</guid>
-      <description>[Score: 85] 筆者がGoogleアプリ広告に投資したところ、報告されたインストールのうち60%がボットによるものだったと判明しました。 / Googleのレポートでは21インストールとされたが、実際には1インストールしかなく、残りの20は古いバージョンのアプリを使用するボットでした。 / 広告詐欺の実態と、Google広告プラットフォームの検出能力に関する深刻な問題提起です。 (Source: Hacker News)</description>
-      <pubDate>Fri, 11 Sep 2026 18:24:55 +0000</pubDate>
+      <title>NvidiaはAIの中央銀行である</title>
+      <link>https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai</link>
+      <guid isPermaLink="false">https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai</guid>
+      <description>[Score: 90] この記事は、NvidiaがAI業界において極めて支配的な地位を確立していることを示唆しています。 / 同社がAI開発に必要なGPUを独占的に供給し、そのエコシステム全体をコントロールしている状況を中央銀行に例えています。 / AI技術の進化と普及において、Nvidiaの存在が不可欠であることを強調していると考えられます。 (Source: Hacker News)</description>
+      <pubDate>Sat, 12 Sep 2026 15:08:27 +0000</pubDate>
     </item>
     <item>
       <title>OpenTelemetry eBPF Instrumentationの舞台裏</title>
       <link>https://zenn.dev/ymotongpoo/books/go-ebpf-primer</link>
       <guid isPermaLink="false">https://zenn.dev/ymotongpoo/books/go-ebpf-primer</guid>
-      <description>[Score: 85] OpenTelemetry eBPF Instrumentationに関する書籍の紹介で、eBPFの基礎からGo言語での利用、そして実装上の難所までを解説しています。 / コンピュータのプログラム実行、OSとカーネル、Goランタイムの仕組みなど、低レイヤーの知識も網羅しています。 / uretprobeの制約、レジスタベースの呼び出し規約、バージョン依存のフィールドオフセットなど、eBPF計測の具体的な課題と解決策に焦点を当てています。 (Source: Zenn)</description>
+      <description>[Score: 90] 本記事は、OpenTelemetryとeBPFを組み合わせたインストゥルメンテーションの技術的な深掘りを行う書籍の目次と概要です。 / eBPFの基礎からGoランタイムとの連携、そしてOpenTelemetry eBPF Instrumentation (OBI) の具体的な実装と難所について詳細に解説しています。 / オブザーバビリティやSREに関心のあるGo開発者にとって、カーネルレベルでのシステム挙動理解とトレース技術を学ぶ上で非常に価値のある情報源となるでしょう。 (Source: Zenn)</description>
       <pubDate>Fri, 11 Sep 2026 02:01:34 +0000</pubDate>
     </item>
     <item>
-      <title>うっかり世界最強のWasmコンパイラを作ってしまった件</title>
-      <link>https://qiita.com/kanryu/items/95147e22ed5ac542ba58?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kanryu/items/95147e22ed5ac542ba58?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] Goライクな構文で、わずか2.56KBの超軽量WebAssemblyバイナリを生成する自作プログラミング言語「Hike」のコンパイラが開発されました。 / 従来のWasmコンパイラが肥大化する原因であるC標準ライブラリへの依存を排除し、独自のLLVM IR内部関数で実装しています。 / これにより、ネットワーク遅延が事実上ゼロで、ブラウザでの高速なバイナリ処理を可能にする理想的なWasmコンパイル環境が実現しました。 (Source: Qiita)</description>
-      <pubDate>Wed, 09 Sep 2026 07:52:55 +0000</pubDate>
+      <title>うっかり世界最強のWasmコンパイラに並行処理（マルチスレッド）を載せたら、なぜか1.46KBまで縮んだ件</title>
+      <link>https://qiita.com/kanryu/items/a031d4928ddb7caa0784?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kanryu/items/a031d4928ddb7caa0784?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 既存のWasmコンパイラにマルチスレッド並行処理を実装した結果、Wasmバイナリサイズが驚異の1.46KBにまで縮小した事例を紹介します。 / 従来のOSスレッドモデル模倣ではなく、ブラウザのイベントループやWeb Workerといったホスト側の並行基盤を最大限活用する逆転の発想を採用。 / これにより、WASMバイナリから重厚なスケジューリングコードを排除し、極小サイズでブラウザ上での高速な並行計算を実現しました。 (Source: Qiita)</description>
+      <pubDate>Fri, 11 Sep 2026 11:50:10 +0000</pubDate>
     </item>
     <item>
-      <title>Redditの皆さん、私はロイターのジャーナリスト、ケイティ・ポールです。マーク・ザッカーバーグがMetaの従業員をAIに置き換える計画を明らかにし、それがどのように破綻したかについてお話しします。AMA。</title>
+      <title>AIが数学の難問を解決していいのか｜柞刈湯葉</title>
+      <link>https://note.com/yubais/n/nd4505991a6d6</link>
+      <guid isPermaLink="false">https://note.com/yubais/n/nd4505991a6d6</guid>
+      <description>[Score: 90] AIが数学の未解決問題を解決することに対し、数学者たちが反感を持っているという議論が紹介されています。 / 問題解決の過程で生まれる新手法や概念の発見が重要であり、AIによる「答え」だけではその芽を摘む可能性があると指摘。 / 対数の例を挙げ、計算補助だけでなく理解補助としてのツールの価値を強調し、AIによる解決が人間の理解を阻害する危険性を論じています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 12 Sep 2026 10:56:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>クロスプラットフォーム開発が解決するコスト、解決しないコスト</title>
+      <link>https://zenn.dev/nkzn/articles/cross-platform-development-costs-2026</link>
+      <guid isPermaLink="false">https://zenn.dev/nkzn/articles/cross-platform-development-costs-2026</guid>
+      <description>[Score: 90] ShopifyがReact Nativeからネイティブ開発へ回帰した事例を基に、クロスプラットフォーム開発のコスト構造を分析しています。 / 技術選定は「コード共有率」だけでなく、開発プロセス全体のコスト変化を考慮すべきだと指摘。 / AIを活用した開発効率化が、ネイティブ開発のコストを相対的に下げ、技術選定の天秤を動かす要因となる可能性を示唆しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 12 Sep 2026 22:07:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>初心者向けGitHub Copilotアプリ：diff、ターミナル、ブラウザの活用法</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/</guid>
+      <description>[Score: 90] GitHub Copilotアプリが、コード変更のレビュー、実行、結果確認をアプリ内で完結できる新機能を提供します。 / diffパネルでコードの変更点を視覚的に確認し、ターミナルパネルで直接コマンドを実行できます。 / さらに、ブラウザパネルでUIの変更を即座に確認でき、AIコーディングのワークフローが大幅に効率化されます。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 10 Sep 2026 21:31:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>Nuxt.js から Next.js へ ── フロントエンド技術リプレイスにおけるハーネスエンジニアリングと理解負債</title>
+      <link>https://zenn.dev/mediba/articles/7d0d7d70678546</link>
+      <guid isPermaLink="false">https://zenn.dev/mediba/articles/7d0d7d70678546</guid>
+      <description>[Score: 88] Nuxt.jsからNext.jsへのフロントエンド技術リプレイスプロジェクトにおいて、Claude Codeを活用したAIコーディングの事例を紹介。 / AIを効果的に利用するための「ハーネスエンジニアリング」として、ルール・コンテキスト・フィードバックの設計が重要であると解説。 / 開発フロー全体のスキル化や、AI利用による「理解負債」という新たな課題への向き合い方についても言及しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 11 Sep 2026 03:42:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>Real-SWE: プライベートな実世界のエンタープライズコードベースでAIモデルをベンチマーク</title>
+      <link>https://withspecific.com/benchmarks/real-swe</link>
+      <guid isPermaLink="false">https://withspecific.com/benchmarks/real-swe</guid>
+      <description>[Score: 85] Real-SWEは、最先端のAIモデルをプライベートな実世界のエンタープライズコードベースで評価する新しいベンチマークです。 / 実際の企業からライセンス供与された本番コードベースのタスクを使用し、ソフトウェアエンジニアの実際の業務におけるAIコーディングエージェントの能力を測定します。 / これにより、AIが現実世界の複雑な開発課題にどれだけ対応できるかを客観的に評価することが可能になります。 (Source: Hacker News)</description>
+      <pubDate>Sat, 12 Sep 2026 20:25:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>単体テストの実行時間を6割程度削減してみた</title>
+      <link>https://zenn.dev/dress_code/articles/5dd5de5020d9ef</link>
+      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/5dd5de5020d9ef</guid>
+      <description>[Score: 85] 本記事は、単体テストの実行時間がCI環境で14分30秒にも達していた問題を、6割程度削減した事例を紹介しています。 / 改善プロセスでは、AIを活用してボトルネックを特定し、主に不要なカバレッジレポートの収集を停止することで大幅な時間短縮を実現しました。 / また、ORMであるPrismaの生成コード肥大化も課題として挙げられており、開発体験向上に向けた具体的なアプローチが示されています。 (Source: Zenn)</description>
+      <pubDate>Fri, 11 Sep 2026 02:30:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>【VRChat/Udon】世界最速のC#コンパイラを開発した話</title>
+      <link>https://zenn.dev/bea4dev/articles/b7684e8d4c838e</link>
+      <guid isPermaLink="false">https://zenn.dev/bea4dev/articles/b7684e8d4c838e</guid>
+      <description>[Score: 85] Rustで開発されたC#コンパイラ「MenSharp」は、VRChatのUdonVM向けにRoslynより最大11倍高速なコンパイルを実現します。 / UdonSharpのC#サブセット言語の制約を解消し、ジェネリクスやasync/awaitなどC#のほぼ全機能をサポートします。 / これにより、VRChat開発でUnity + C#のような快適な開発体験を提供することを目指しています。 (Source: Zenn)</description>
+      <pubDate>Thu, 10 Sep 2026 10:19:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>Redditの皆さん、私はロイターのジャーナリスト、ケイティ・ポールです。マーク・ザッカーバーグがMetaの従業員をAIに置き換える計画を明らかにし、それがどのように破綻したかについてAMAを行います。</title>
       <link>https://www.reddit.com/r/technology/comments/1w5k5h4/hi_reddit_im_katie_paul_a_reuters_journalist_who/</link>
       <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1w5k5h4/hi_reddit_im_katie_paul_a_reuters_journalist_who/</guid>
-      <description>[Score: 85] ロイターのジャーナリスト、ケイティ・ポール氏が、Metaのマーク・ザッカーバーグCEOによる従業員をAIに置き換える計画について語るAMA。 / この計画がどのように立案され、最終的に破綻に至ったのか、その詳細が明かされる。 / AIによる大規模な人員削減の可能性と、その実現における課題や反発が議論される。 (Source: Reddit)</description>
+      <description>[Score: 85] Metaが従業員をAIに置き換える計画が明らかになり、その破綻についてロイターのジャーナリストがAMAを実施します。 / この計画は、AI技術の導入が企業の組織構造や雇用に与える影響を示唆しています。 / AIによる人員削減の可能性と、その実現における課題や反発が議論の焦点となるでしょう。 (Source: Reddit)</description>
       <pubDate>Wed, 02 Sep 2026 19:18:30 +0000</pubDate>
     </item>
     <item>
-      <title>GPT-6 Astraのためのスキルとプロンプトの再考 | OpenAI Developers</title>
-      <link>https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra</link>
-      <guid isPermaLink="false">https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra</guid>
-      <description>[Score: 85] GPT-6 Astraのような高性能モデルの登場により、AIエージェントのベストプラクティスが急速に変化しています。 / これまでのモデルで必要だった多くの指示や「スキル」は、新しいモデルでは過剰になる可能性があります。 / 長すぎるスキル記述や多すぎるスキルは、モデルのコンテキストを圧迫し、かえってパフォーマンスを低下させるため、再考が求められています。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 11 Sep 2026 19:46:00 +0000</pubDate>
+      <title>AI駆動開発のためのオントロジー</title>
+      <link>https://qiita.com/Syoitu/items/d41d234876e1bfadbf32</link>
+      <guid isPermaLink="false">https://qiita.com/Syoitu/items/d41d234876e1bfadbf32</guid>
+      <description>[Score: 85] AIエージェントが理解・共有できる形式の設計図として「オントロジー」が注目されています。 / これは、データドメインにおける概念・関係・ルールを記述する形式的な知識モデルです。 / AIエージェントの判断ロジックを強化し、機械的に検証・追跡可能なルールを永続化する価値があります。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 08 Sep 2026 01:34:04 +0000</pubDate>
     </item>
     <item>
       <title>AWS、自然言語でデータ分析アプリを構築可能に、「Amazon Quick」に新機能</title>
       <link>https://www.publickey1.jp/blog/26/awsamazon_quick.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsamazon_quick.html</guid>
-      <description>[Score: 85] AWSのデータ分析プラットフォーム「Amazon Quick」に、自然言語でデータ分析アプリを構築できる新機能が追加されました。 / Amazon S3や各種データベース、サードパーティデータソースなど多様なデータに対応し、生成AIによる指示でカスタムアプリを生成します。 / これにより、ビジネスユーザーがより直感的にデータ分析と可視化を行えるようになります。 (Source: Publickey)</description>
+      <description>[Score: 85] AWSのデータ分析プラットフォーム「Amazon Quick」に、自然言語の指示だけでデータ分析アプリを構築できる新機能が追加されました。 / この機能により、Amazon S3や各種データベース、Google CloudのBigQueryなど多様なデータソースから、グラフを含むビジュアルなダッシュボードやデータ処理ワークフローを生成可能です。 / 生成AIを活用し、ビジネスユーザーがプログラミング知識なしに高度なデータ分析アプリケーションを迅速に開発できるようになります。 (Source: Publickey)</description>
       <pubDate>Wed, 09 Sep 2026 15:27:47 +0000</pubDate>
     </item>
     <item>
-      <title>誰もがAIの利用状況を測定しているが、70%はそれが何をもたらしたかを測定できていない</title>
-      <link>https://dev.to/unlocked-consulting/everyone-measures-ai-usage-70-cant-measure-what-it-returned-5a6l</link>
-      <guid isPermaLink="false">https://dev.to/unlocked-consulting/everyone-measures-ai-usage-70-cant-measure-what-it-returned-5a6l</guid>
-      <description>[Score: 85] AIツールの利用率や自己申告の生産性向上は高いものの、組織全体のデリバリー指標には変化が見られないというギャップが指摘されています。 / McKinseyの調査では、AIによって削減された時間の使い道を把握しているリーダーは30%に過ぎず、70%は把握できていません。 / AIの導入効果を測る上で、利用率やトークン消費量はコストであり、真のROIを測る指標ではないと警鐘を鳴らしています。 (Source: Dev.to)</description>
-      <pubDate>Fri, 11 Sep 2026 23:15:07 +0000</pubDate>
+      <title>マーケティングオペレーションをコード化：GitHub上でイベントの計画からフォローアップまでを自動化</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/</guid>
+      <description>[Score: 85] GitHubのマーケティング担当者が、イベント運営の反復作業をGitHub Copilotと連携して自動化した事例を紹介しています。 / 手作業で数日かかっていたイベント設定、参加者スクリーニング、終了後のクリーンアップが、GitHub Issue一つで完結するようになりました。 / APIやCLIを持つツール間の反復作業は、Copilotを活用することで誰でも自動化できる可能性を示唆しています。 (Source: GitHub Blog)</description>
+      <pubDate>Fri, 11 Sep 2026 18:26:10 +0000</pubDate>
     </item>
     <item>
-      <title>Async/Awaitの設計空間探索</title>
-      <link>https://cel.cs.brown.edu/blog/design-space-async-await/</link>
-      <guid isPermaLink="false">https://cel.cs.brown.edu/blog/design-space-async-await/</guid>
-      <description>[Score: 80] 多くのプログラミング言語で採用されているasync/awaitキーワードについて、その設計が言語間で予想以上に異なっていることを探求しています。 / async/awaitは並行処理を直線的なコードのように見せることを目的としていますが、実際の動作は言語によって大きく異なります。 / 本記事は、異なる言語におけるasync/awaitのセマンティクスと実装の多様性を詳細に分析した論文に基づいています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 09 Sep 2026 13:59:50 +0000</pubDate>
+      <title>GitHub Copilotアプリ初心者向け：複数のエージェントを同時に実行</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/</guid>
+      <description>[Score: 85] GitHub Copilotアプリでは、複数のAIエージェントを同時に実行し、それぞれが独立して機能します。 / 各エージェントセッションは独自のGitワークツリーで動作し、互いに干渉することなく並行処理が可能です。 / これにより、開発者はエージェントの作業を待つことなく、レビューや意思決定に集中でき、生産性が向上します。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 03 Sep 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>ResolveHQ – Cloudflare Workers、D1、R2、Queuesで構築されたヘルプデスク</title>
-      <link>https://github.com/mirza-rizvi/ResolveHQ</link>
-      <guid isPermaLink="false">https://github.com/mirza-rizvi/ResolveHQ</guid>
-      <description>[Score: 80] Cloudflare Workers、D1、R2、Queuesを活用した、小規模サポートチーム向けのセルフホスト型ヘルプデスク「ResolveHQ」が公開されました。 / Slack風のUI、モバイル対応、Cmd/Ctrl+Kでのページ遷移など、使いやすさを考慮した設計が特徴です。 / Cloudflareの無料プランでも利用可能で、REST APIとReactアプリケーションはHonoで提供され、メール処理にはResendも利用しています。 (Source: Hacker News)</description>
-      <pubDate>Fri, 11 Sep 2026 21:48:00 +0000</pubDate>
+      <title>Apple Neural Engineから50 GB/Sの性能を取り戻す</title>
+      <link>https://eiln.github.io/posts/ane-dma.html</link>
+      <guid isPermaLink="false">https://eiln.github.io/posts/ane-dma.html</guid>
+      <description>[Score: 80] Apple M3 Neural EngineのRTL性能エラーにより、DRAMウェイトストリーミングスループットが大幅に低下する問題が発見されました。 / 特定のウェイトサイズで公称値の45-60 GB/sから17-19 GB/sに制限されるこの問題を、カーネルDMAエンジンの投機的プリフェッチリングのパスを回避することで解決しています。 / これにより、Llama 3.2やQwen3-8Bなどのモデルでトークンスループットが大幅に向上し、ANEの潜在能力を最大限に引き出すことが可能になりました。 (Source: Hacker News)</description>
+      <pubDate>Thu, 10 Sep 2026 00:16:10 +0000</pubDate>
     </item>
     <item>
-      <title>terraform plan -minimal-refreshでplanを爆速にする</title>
-      <link>https://qiita.com/minamijoyo/items/92c094b554d090b54a17?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/minamijoyo/items/92c094b554d090b54a17?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Terraformの`plan`コマンドが遅くなる問題に対し、v1.17で追加された`-minimal-refresh`フラグが有効な解決策として紹介されています。 / このフラグは、全リソースのrefreshを避け、tfファイルと差分のあるリソースのみをピンポイントでrefreshすることでplanを高速化します。 / ドリフト検出のリスクを回避しつつ、大規模なtfstateでの`plan`実行時間を大幅に短縮できる実用的なテクニックです。 (Source: Qiita)</description>
-      <pubDate>Fri, 11 Sep 2026 01:46:51 +0000</pubDate>
+      <title>デカルト積問題って知っとるか〜？　気軽にJOINでメモリ爆発するアレのヤバさ実測すぞ！</title>
+      <link>https://zenn.dev/levtech/articles/cartesian-product-doctrine-orm</link>
+      <guid isPermaLink="false">https://zenn.dev/levtech/articles/cartesian-product-doctrine-orm</guid>
+      <description>[Score: 80] 本記事は、JOINクエリで発生する「デカルト積問題」について、そのメカニズムと実際のメモリ使用量への影響を解説しています。 / 特に、親に複数の子テーブルが紐づく「子親子」リレーションシップで問題が発生しやすいことを、具体的なクエリ例と図を用いて説明。 / 実際にPHP環境でメモリ使用量を計測し、デカルト積問題がアプリケーションサーバーのメモリ枯渇にどれほど影響するかを検証しており、データベース設計やクエリ最適化の重要性を示唆しています。 (Source: Zenn)</description>
+      <pubDate>Fri, 11 Sep 2026 02:45:05 +0000</pubDate>
     </item>
     <item>
       <title>.NET 11リリース候補版が登場。.NETランタイムが非同期ネイティブ対応、プロセッサ数の上限がなくなる、AOTコンパイラによるネイティブバイナリの高速化など</title>
       <link>https://www.publickey1.jp/blog/26/net_11netaot.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_11netaot.html</guid>
-      <description>[Score: 80] Microsoftが包括的アプリケーションフレームワーク「.NET 11」の最初のリリース候補版を発表しました。 / 主な新機能として、.NETランタイムの非同期ネイティブ対応、プロセッサ数の上限撤廃、AOTコンパイラによるネイティブバイナリの高速化が挙げられます。 / これにより、デスクトップからモバイル、クラウドネイティブ、IoTまで、あらゆるアプリケーション開発の性能と効率が向上することが期待されます。 (Source: Publickey)</description>
+      <description>[Score: 80] Microsoftが包括的なアプリケーションフレームワーク「.NET 11」のリリース候補版を発表しました。 / 主な新機能として、.NETランタイムの非同期ネイティブ対応、プロセッサ数の上限撤廃、AOTコンパイラによるネイティブバイナリの高速化が含まれます。 / これにより、デスクトップからモバイル、クラウド、IoTまで幅広いアプリケーション開発におけるパフォーマンスとスケーラビリティが向上します。 (Source: Publickey)</description>
       <pubDate>Thu, 10 Sep 2026 15:42:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIツールが損害を与えた場合、誰が責任を負うのか？</title>
-      <link>https://dev.to/theaidownside/when-an-ai-tool-harms-you-whos-actually-liable-3ko3</link>
-      <guid isPermaLink="false">https://dev.to/theaidownside/when-an-ai-tool-harms-you-whos-actually-liable-3ko3</guid>
-      <description>[Score: 80] AIアシスタントが誤った情報を提供し、ユーザーが損害を被った場合、誰が法的な責任を負うのかという問題提起がされています。 / 多くの国ではAIの誤りに関する単一の法律がなく、既存の契約法や消費者保護法などに当てはめようとする動きがあります。 / AI製品のマーケティングと契約書における免責事項とのギャップが、責任の所在を曖昧にしていると指摘しています。 (Source: Dev.to)</description>
-      <pubDate>Fri, 11 Sep 2026 23:21:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub稼働状況レポート：2026年8月</title>
-      <link>https://github.blog/news-insights/company-news/github-availability-report-august-2026/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-august-2026/</guid>
-      <description>[Score: 80] 2026年8月はGitHubにとって稼働状況が厳しい月であり、複数のインシデントが発生したことが報告されています。 / GitHubは、アーキテクチャ改善とAzureへの移行に積極的に投資し、容量増強と回復性の向上を図っていることを強調しています。 / 特に、Azure上で本番MySQLプライマリの運用を開始し、段階的に移行を進めていることや、認証関連のサービスをGitから分離したことなどが進捗として挙げられています。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 10 Sep 2026 02:05:17 +0000</pubDate>
     </item>
   </channel>
 </rss>
