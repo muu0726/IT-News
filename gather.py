@@ -11,8 +11,9 @@ Hacker News API / RSS / Gemini REST API / Discord・Slack・LINE 通知
   5. HOTスコアリング (複数ソース出現で加点)
   6. 関連記事グルーピング (埋め込みベクトルのコサイン類似度)
   7. 保存 (data.json / archive / feed.xml / アーカイブローテーション)
-  8. 週間ダイジェスト (日曜のみ)
-  9. 通知 (Discord / Slack / LINE)
+  8. 通知時刻まで待機 (NOTIFY_AT_JST 設定時のみ)
+  9. 週間ダイジェスト (日曜のみ)
+  10. 通知 (Discord / Slack / LINE)
 """
 
 from __future__ import annotations
@@ -824,6 +825,33 @@ def send_line_notification(articles: list[dict]) -> None:
         print(f"[ERROR] LINE notification failed: {e}")
 
 
+def wait_until_notify_time(now: datetime | None = None) -> float:
+    """環境変数 NOTIFY_AT_JST (HH:MM) の時刻まで待機する。
+
+    GitHub Actions の schedule は遅延するため、早めに起動して通知時刻を揃える。
+    未設定なら待たない。既に時刻を過ぎていれば即時通知。戻り値は待機秒数。
+    """
+    notify_at = os.environ.get("NOTIFY_AT_JST", "").strip()
+    if not notify_at:
+        return 0.0
+    try:
+        hour, minute = (int(x) for x in notify_at.split(":"))
+    except ValueError:
+        print(f"[WARN] Invalid NOTIFY_AT_JST: {notify_at!r} -- notifying now")
+        return 0.0
+
+    now = now or datetime.now(JST)
+    target = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+    wait_sec = (target - now).total_seconds()
+    if wait_sec <= 0:
+        print(f"[INFO] Notify time {notify_at} JST already passed -- notifying now")
+        return 0.0
+
+    print(f"[INFO] Waiting {wait_sec:.0f}s until {target.isoformat()} to notify")
+    time.sleep(wait_sec)
+    return wait_sec
+
+
 def send_notifications(articles: list[dict]) -> None:
     """全通知チャネルへ送信"""
     send_discord_notification(articles)
@@ -1118,10 +1146,13 @@ def main() -> None:
     save_results(all_articles)
     generate_rss_feed(all_articles)
 
-    # 8. 週間ダイジェスト（日曜のみ）
+    # 8. 通知時刻まで待機（NOTIFY_AT_JST 設定時のみ）
+    wait_until_notify_time()
+
+    # 9. 週間ダイジェスト（日曜のみ）
     generate_weekly_digest(all_articles)
 
-    # 9. 通知
+    # 10. 通知
     send_notifications(all_articles)
 
     elapsed = time.monotonic() - start_time

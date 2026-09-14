@@ -2,8 +2,9 @@ name: IT Info Collector - 定期実行
 
 on:
   schedule:
-    # UTC 22:00 = JST 07:00 — 1日1回実行
-    - cron: '0 22 * * *'
+    # UTC 19:17 = JST 04:17 に起動（schedule の遅延対策で前倒し・毎時0分を回避）
+    # 通知は gather.py が NOTIFY_AT_JST (07:00) まで待機してから送信する
+    - cron: '17 19 * * *'
   workflow_dispatch:
 
 permissions:
@@ -20,7 +21,7 @@ jobs:
     environment:
       name: github-pages
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 240
 
     steps:
       - name: チェックアウト
@@ -44,6 +45,8 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          # 定期実行時のみ 07:00 JST まで待って通知（手動実行は即時）
+          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00' || '' }}
         run: python gather.py
 
       - name: fetch available models
