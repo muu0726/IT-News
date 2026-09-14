@@ -11,13 +11,18 @@ Hacker News API / RSS / Gemini REST API / Discord・Slack・LINE 通知
   5. HOTスコアリング (複数ソース出現で加点)
   6. 関連記事グルーピング (埋め込みベクトルのコサイン類似度)
   7. 保存 (data.json / archive / feed.xml / アーカイブローテーション)
-  8. 通知時刻まで待機 (NOTIFY_AT_JST 設定時のみ)
-  9. 週間ダイジェスト (日曜のみ)
-  10. 通知 (Discord / Slack / LINE)
+  8. 週間ダイジェスト (日曜のみ)
+  9. 通知 (Discord / Slack / LINE、NOTIFY_AT_JST 設定時はその時刻まで待機)
+
+実行モード:
+  python gather.py               収集 → 通知
+  python gather.py --no-notify   収集・保存のみ (GitHub Actions の collect ジョブ)
+  python gather.py --notify-only 保存済み data.json から通知のみ (notify ジョブ)
 """
 
 from __future__ import annotations
 
+import argparse
 import html as html_module
 import json
 import math
@@ -896,16 +901,16 @@ def load_recent_archives(days: int = 7) -> list[dict]:
     return deduplicate_articles(collected)
 
 
-def generate_weekly_digest(current_articles: list[dict]) -> None:
+def generate_weekly_digest(current_articles: list[dict]) -> dict | None:
     """日曜日に直近7日間の高スコア記事から週間ダイジェストを生成する"""
     now = datetime.now(JST)
     if now.weekday() != 6 and os.environ.get("FORCE_DIGEST") != "1":
-        return
+        return None
 
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
         print("[INFO] Weekly digest skipped (no API key)")
-        return
+        return None
 
     print("[INFO] Generating weekly digest ...")
     week_articles = load_recent_archives(7)
@@ -919,7 +924,7 @@ def generate_weekly_digest(current_articles: list[dict]) -> None:
 
     if len(top) < 3:
         print("[INFO] Weekly digest skipped (not enough high-score articles)")
-        return
+        return None
 
     blocks = [
         f"- [{a.get('score', 0)}点] {a.get('title', '')} ({a.get('source', '')})\n"
@@ -932,7 +937,7 @@ def generate_weekly_digest(current_articles: list[dict]) -> None:
     result = call_gemini_rest(prompt, api_key)
     if not isinstance(result, dict) or "overview" not in result:
         print("[WARN] Weekly digest generation failed")
-        return
+        return None
 
     digest = {
         "generated_at": now.isoformat(),
@@ -955,21 +960,38 @@ def generate_weekly_digest(current_articles: list[dict]) -> None:
     with open(DIGEST_FILE, "w", encoding="utf-8") as f:
         json.dump(digest, f, ensure_ascii=False, indent=2)
     print(f"[INFO] Saved {DIGEST_FILE}")
+    return digest
 
-    # Discord にもダイジェストを通知
+
+def load_today_digest() -> dict | None:
+    """digest.json が今日 (JST) 生成されたものなら返す"""
+    try:
+        with open(DIGEST_FILE, encoding="utf-8") as f:
+            digest = json.load(f)
+    except (OSError, ValueError):
+        return None
+    today = datetime.now(JST).strftime("%Y-%m-%d")
+    if not str(digest.get("generated_at", "")).startswith(today):
+        return None
+    return digest
+
+
+def send_digest_notification(digest: dict) -> None:
+    """週間ダイジェストを Discord に通知"""
     webhook_url = os.environ.get("DISCORD_WEBHOOK_URL", "")
     if webhook_url:
-        trends_str = "\n".join(f"・{t}" for t in digest["trends"])
+        # digest.json から読み込む場合もあるため欠損キーに備えて get を使う
+        trends_str = "\n".join(f"・{t}" for t in digest.get("trends", []))
         highlights_str = "\n".join(
-            f"[{h['title']}]({h['url']})\n└ {h['comment']}"
-            for h in digest["highlights"]
+            f"[{h.get('title', '')}]({h.get('url', '')})\n└ {h.get('comment', '')}"
+            for h in digest.get("highlights", [])
         )
         payload = {
             "username": "\U0001f4e1 IT Info Collector",
             "embeds": [{
-                "title": f"\U0001f4c5 週間ダイジェスト ({digest['week_start']} 〜 {digest['week_end']})",
+                "title": f"\U0001f4c5 週間ダイジェスト ({digest.get('week_start', '')} 〜 {digest.get('week_end', '')})",
                 "color": 0x2EAADC,
-                "description": digest["overview"][:2000],
+                "description": str(digest.get("overview", ""))[:2000] or "-",
                 "fields": [
                     {"name": "\U0001f4c8 今週のトレンド", "value": trends_str[:1024] or "-"},
                     {"name": "\U0001f31f ハイライト", "value": highlights_str[:1024] or "-"},
@@ -1104,7 +1126,39 @@ def save_results(articles: list[dict]) -> None:
 # ---------------------------------------------------------------------------
 # メイン
 # ---------------------------------------------------------------------------
+def notify_from_saved() -> None:
+    """保存済みの data.json / digest.json から通知だけを行う"""
+    try:
+        with open(DATA_FILE, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError) as e:
+        print(f"[ERROR] Failed to read {DATA_FILE}: {e}")
+        sys.exit(1)
+
+    articles = data.get("articles", [])
+    print(f"[INFO] Loaded {len(articles)} articles "
+          f"(generated_at: {data.get('generated_at', '?')})")
+
+    wait_until_notify_time()
+    send_notifications(articles)
+    digest = load_today_digest()
+    if digest:
+        send_digest_notification(digest)
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description="IT Info Collector")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--no-notify", action="store_true",
+                      help="収集・保存のみ行い通知しない")
+    mode.add_argument("--notify-only", action="store_true",
+                      help="保存済みデータから通知のみ行う")
+    args = parser.parse_args()
+
+    if args.notify_only:
+        notify_from_saved()
+        return
+
     start_time = time.monotonic()
 
     print("=" * 60)
@@ -1146,14 +1200,17 @@ def main() -> None:
     save_results(all_articles)
     generate_rss_feed(all_articles)
 
-    # 8. 通知時刻まで待機（NOTIFY_AT_JST 設定時のみ）
-    wait_until_notify_time()
+    # 8. 週間ダイジェスト（日曜のみ）
+    digest = generate_weekly_digest(all_articles)
 
-    # 9. 週間ダイジェスト（日曜のみ）
-    generate_weekly_digest(all_articles)
-
-    # 10. 通知
-    send_notifications(all_articles)
+    # 9. 通知（NOTIFY_AT_JST 設定時はその時刻まで待機）
+    if args.no_notify:
+        print("[INFO] --no-notify: skipping notifications")
+    else:
+        wait_until_notify_time()
+        send_notifications(all_articles)
+        if digest:
+            send_digest_notification(digest)
 
     elapsed = time.monotonic() - start_time
     error_count = sum(

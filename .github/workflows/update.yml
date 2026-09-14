@@ -3,7 +3,7 @@ name: IT Info Collector - 定期実行
 on:
   schedule:
     # UTC 19:17 = JST 04:17 に起動（schedule の遅延対策で前倒し・毎時0分を回避）
-    # 通知は gather.py が NOTIFY_AT_JST (07:00) まで待機してから送信する
+    # 収集・デプロイは即時、通知は notify ジョブが NOTIFY_AT_JST (07:00) まで待機してから送信する
     - cron: '17 19 * * *'
   workflow_dispatch:
 
@@ -12,16 +12,16 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   collect:
     environment:
       name: github-pages
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 20
+    # deploy.yml と同じグループ。待機を含まないこのジョブだけに掛ける
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
 
     steps:
       - name: チェックアウト
@@ -39,21 +39,26 @@ jobs:
       - name: テスト実行 (pytest)
         run: pytest test_gather.py
 
-      - name: gather.py 実行
+      - name: gather.py 実行（通知なし）
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
-          # 定期実行時のみ 07:00 JST まで待って通知（手動実行は即時）
-          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00' || '' }}
-        run: python gather.py
+        run: python gather.py --no-notify
 
       - name: fetch available models
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           curl -s "https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}" > models.json
+
+      - name: 通知用データを保存
+        uses: actions/upload-artifact@v4
+        with:
+          name: notify-data
+          path: |
+            data.json
+            digest.json
+          if-no-files-found: warn
+          retention-days: 1
 
       - name: 結果を自動コミット & プッシュ
         run: |
@@ -77,13 +82,55 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+  notify:
+    needs: collect
+    runs-on: ubuntu-latest
+    # 07:00 JST までの待機を含む
+    timeout-minutes: 240
+    permissions:
+      contents: read
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python 3.12 セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: 依存パッケージ インストール
+        run: pip install -r requirements.txt
+
+      - name: 通知用データを取得
+        uses: actions/download-artifact@v4
+        with:
+          name: notify-data
+
+      - name: 通知送信
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          # 定期実行時のみ 07:00 JST まで待って通知（手動実行は即時）
+          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00' || '' }}
+        run: python gather.py --notify-only
+
+  alert:
+    needs: [collect, notify]
+    # タイムアウト・キャンセル時も通知する
+    if: ${{ failure() || cancelled() }}
+    runs-on: ubuntu-latest
+    permissions: {}
+
+    steps:
       - name: 失敗時 Discord アラート
-        if: failure()
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           if [ -n "$DISCORD_WEBHOOK_URL" ]; then
             curl -H "Content-Type: application/json" \
-              -d "{\"username\": \"🚨 GitHub Actions\", \"content\": \"❌ **IT Info Collector** のワークフローが失敗しました。\\n🔗 [ログを確認](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})\"}" \
+              -d "{\"username\": \"🚨 GitHub Actions\", \"content\": \"❌ **IT Info Collector** のワークフローが失敗しました（collect: ${{ needs.collect.result }} / notify: ${{ needs.notify.result }}）。\\n🔗 [ログを確認](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})\"}" \
               "$DISCORD_WEBHOOK_URL"
           fi

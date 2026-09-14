@@ -1,4 +1,5 @@
 import pytest
+import json
 from datetime import datetime
 
 import gather
@@ -88,4 +89,38 @@ def test_wait_until_notify_time_invalid(monkeypatch, sleeps):
     monkeypatch.setenv("NOTIFY_AT_JST", "7時")
     now = datetime(2026, 9, 14, 4, 30, tzinfo=JST)
     assert wait_until_notify_time(now) == 0.0
+    assert sleeps == []
+
+def _write_json(path, obj):
+    path.write_text(json.dumps(obj, ensure_ascii=False), encoding="utf-8")
+
+def test_load_today_digest(monkeypatch, tmp_path):
+    digest_file = tmp_path / "digest.json"
+    monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
+    assert gather.load_today_digest() is None  # ファイルなし
+
+    _write_json(digest_file, {"generated_at": "2020-01-05T07:00:00+09:00"})
+    assert gather.load_today_digest() is None  # 古いダイジェスト
+
+    today = datetime.now(JST).isoformat()
+    _write_json(digest_file, {"generated_at": today, "overview": "x"})
+    assert gather.load_today_digest()["overview"] == "x"
+
+def test_notify_from_saved(monkeypatch, tmp_path, sleeps):
+    data_file = tmp_path / "data.json"
+    digest_file = tmp_path / "digest.json"
+    _write_json(data_file, {"generated_at": "2026-09-14T04:20:00+09:00",
+                            "articles": [{"title": "A", "score": 90}]})
+    _write_json(digest_file, {"generated_at": datetime.now(JST).isoformat()})
+    monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
+    monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
+    monkeypatch.delenv("NOTIFY_AT_JST", raising=False)
+
+    sent = {}
+    monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.setdefault("articles", arts))
+    monkeypatch.setattr(gather, "send_digest_notification", lambda d: sent.setdefault("digest", d))
+
+    gather.notify_from_saved()
+    assert sent["articles"] == [{"title": "A", "score": 90}]
+    assert "digest" in sent
     assert sleeps == []
