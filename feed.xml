@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 15 Sep 2026 22:20:50 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 22:20:46 +0000</lastBuildDate>
     <item>
-      <title>System OneモデルとJevの紹介</title>
-      <link>https://typesafe.ai/blog/introducing-system-one-models-and-jev</link>
-      <guid isPermaLink="false">https://typesafe.ai/blog/introducing-system-one-models-and-jev</guid>
-      <description>[Score: 90] TypeSafe AIが、ソフトウェアが直接利用できる高速で構造化された意思決定を行う新しいフロンティアモデル「System One Model」を発表しました。 / このモデルは、既存のLLMと同等の知能を持ちながら、2桁高速かつ効率的で、幻覚を起こさず構造化された出力を得意とします。 / ChatGPTの研究に携わった創設者が、自動化に特化した新しいモデルアーキテクチャと学習方法「RLCD」を開発しました。 (Source: Hacker News)</description>
-      <pubDate>Tue, 15 Sep 2026 19:25:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>BasetenのプロダクションGitHubに25分で管理者アクセス権を取得</title>
-      <link>https://www.strix.ai/blog/baseten-harbor-github-pat-takeover</link>
-      <guid isPermaLink="false">https://www.strix.ai/blog/baseten-harbor-github-pat-takeover</guid>
-      <description>[Score: 90] セキュリティ企業Strixが、AIプラットフォームBasetenのセキュリティ監査を実施。 / わずか25分で、Basetenの内部GitHubリポジトリに対する管理者権限を持つGitHubトークンを発見した。 / このトークンは2023年3月のもので、2026年7月時点でも有効であり、重大なセキュリティ脆弱性を示している。 (Source: Hacker News)</description>
-      <pubDate>Tue, 15 Sep 2026 18:11:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>生成AIが書いたドキュメントを読みたくない</title>
-      <link>https://qiita.com/take-yoda/items/e5d9ce6618523af1ffc5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/take-yoda/items/e5d9ce6618523af1ffc5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 生成AIが作成したドキュメントが「情報量は多いが結論が分かりにくい」という問題提起をしています。 / その原因として、網羅性と重要度の区別がない、結論が最後にくる、テンプレートを律儀に埋める、自明な項目にも両論併記する、の4点を挙げています。 / 実際のGitHub PRを例に、生成AIによるドキュメント作成の課題と改善の必要性を検証しています。 (Source: Qiita)</description>
-      <pubDate>Mon, 14 Sep 2026 04:55:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>Anthropic CEOがAI駆動型ボットネット「スウォーム」によるインターネット乗っ取りを警告 — 「6〜12ヶ月でそのようなスウォームが永続的なボットネットでインターネット全体を乗っ取る能力を持つ可能性がある」</title>
-      <link>https://www.reddit.com/r/technology/comments/1wh7x4a/anthropic_ceo_warns_of_aidriven_botnet_swarm/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wh7x4a/anthropic_ceo_warns_of_aidriven_botnet_swarm/</guid>
-      <description>[Score: 90] AI企業AnthropicのCEOが、AIによって駆動されるボットネット「スウォーム」がインターネット全体を乗っ取る可能性について警告を発しました。 / CEOは、今後6〜12ヶ月以内にこのようなボットネットがインターネットを掌握する能力を持つかもしれないと指摘しています。 / これは、AIの悪用によるサイバーセキュリティ上の深刻な脅威と、その対策の緊急性を示唆しています。 (Source: Reddit)</description>
-      <pubDate>Tue, 15 Sep 2026 18:05:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>AnthropicのMCP共同作者が来日、基調講演で語るこれからのMCP注力領域。AGNTCon＋MCPCon Japan 2026</title>
-      <link>https://www.publickey1.jp/blog/26/anthropicmcpmcpagntconmcpcon_japan_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/anthropicmcpmcpagntconmcpcon_japan_2026.html</guid>
-      <description>[Score: 90] AIエージェントとModel Context Protocol (MCP) をテーマとしたイベント「AGNTCon＋MCPCon Japan 2026」が開催されました。 / AnthropicのDavid Soria Parra氏が基調講演に登壇し、MCPの登場背景、急速な成長理由、そして今後の発展方向について語りました。 / Long-Horizon TasksにおけるAIモデルの性能向上が著しく、MCPのようなコネクティビティに関するオープン標準がAIシステムにおいてますます重要になると強調されました。 (Source: Publickey)</description>
-      <pubDate>Mon, 14 Sep 2026 15:55:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>OpenAIやAnthropicなどAIベンダごとのAPIの違いを吸収し統合する「Agent Router」、Linux Foundation傘下で業界標準へ</title>
-      <link>https://www.publickey1.jp/blog/26/openaianthropicapiagent_routerlinux_foundation.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/openaianthropicapiagent_routerlinux_foundation.html</guid>
-      <description>[Score: 90] AIベンダーごとのAPIの違いを吸収し、単一のエンドポイントでアクセス可能にする「Agent Router」がLinux Foundation傘下のAgentic AI Foundationに加わったことを発表。 / OpenAI、Anthropic、Googleなど多数のAIサービスに対応し、APIの標準化と統合を推進するもので、既にBloombergなど11社が採用している。 / AIエージェント開発の複雑性を軽減し、業界標準となることが期待される。 (Source: Publickey)</description>
-      <pubDate>Mon, 14 Sep 2026 15:51:16 +0000</pubDate>
+      <title>Claude Codeで開発期間を2.5か月から1か月に縮めた「ハーネス」の設計手法 - SmartHR Tech Blog</title>
+      <link>https://tech.smarthr.jp/entry/2026/09/16/110205</link>
+      <guid isPermaLink="false">https://tech.smarthr.jp/entry/2026/09/16/110205</guid>
+      <description>[Score: 95] SmartHRがClaude Codeを活用し、開発期間を2.5か月から1か月に短縮した「ハーネス」設計手法を紹介。 / AIエージェントの成果を最大化するため、スキルファイル、JSON、シェルスクリプトで構成されるハーネスを開発。 / コンテキストの肥大化や手戻りを防ぎ、AIによる開発効率向上を実現する具体的なアプローチを提示。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 16 Sep 2026 06:59:14 +0000</pubDate>
     </item>
     <item>
       <title>Project HydraFusion：マルチモデルオーケストレーションによる最先端品質の実現</title>
       <link>https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/</guid>
-      <description>[Score: 90] GitHubが「Project HydraFusion」を発表。複数のAIモデルをオーケストレーションして最先端の品質を提供する研究プレビュー。 / 開発者のタスクに応じて最適なモデルを選択し、ドラフト作成、批評、修正、またはより強力なモデルへのカスケード実行を自動で計画。 / 性能、コスト、レイテンシのバランスを取りながら、単一モデル、カスケード、批評の3つの実行パターンから最適なワークフローを選択する。 (Source: GitHub Blog)</description>
+      <description>[Score: 95] GitHub Copilotが、タスクに応じて最適なモデルを自動選択する「Auto model selection」に加え、複数のモデルをオーケストレーションする「Project HydraFusion」を発表しました。 / HydraFusionは、実行計画を立て、複数のプロバイダーのモデルから選択してドラフト作成、批評、修正を行い、必要に応じてより強力なモデルにタスクをカスケードします。 / 開発者には複雑さを隠蔽しつつ、パフォーマンス、コスト、レイテンシのバランスを取りながら、単一、カスケード、批評の3つの実行パターンを使い分け、最先端のAI品質を提供することを目指します。 (Source: GitHub Blog)</description>
       <pubDate>Fri, 04 Sep 2026 16:04:14 +0000</pubDate>
     </item>
     <item>
-      <title>『Lean で証明できた』は何を保証するのか？ 〜 Lean の無矛盾性と信頼の根拠 〜</title>
-      <link>https://qiita.com/kyamaz/items/7b38e5977dc97747d2d9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kyamaz/items/7b38e5977dc97747d2d9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] 生成AIがナビエ・ストークス方程式の一部を解決した際にLeanによる形式化が注目された一方で、Lean4のバグを突いたコラッツ予想の反証事例が紹介されています。 / 定理証明支援系Leanが証明の正しさを機械的に判定する仕組みと、その信頼性の根拠について疑問を呈しています。 / 「Leanで証明が通った」という結果が何を保証し、Lean自身の正しさは誰が保証するのかという、形式手法における根本的な問いを考察しています。 (Source: Qiita)</description>
-      <pubDate>Sun, 13 Sep 2026 13:27:30 +0000</pubDate>
+      <title>AWS、イランの攻撃を受けた中東施設から一部データを復元できないと発表</title>
+      <link>https://www.wsj.com/world/middle-east/aws-says-it-cant-restore-some-data-from-mideast-facilities-struck-by-iran-ddcb7e5d</link>
+      <guid isPermaLink="false">https://www.wsj.com/world/middle-east/aws-says-it-cant-restore-some-data-from-mideast-facilities-struck-by-iran-ddcb7e5d</guid>
+      <description>[Score: 90] AWSが、イランによる攻撃を受けた中東のデータセンター施設から、一部のデータを復元できない状況にあることを発表しました。 / これは、クラウドサービスのデータ永続性と災害復旧計画における重大な課題と、地政学的リスクがITインフラに与える影響を示しています。 / 企業や組織がクラウドサービスを利用する際のデータバックアップ戦略や、複数のリージョンにわたる冗長性の重要性を改めて浮き彫りにする出来事です。 (Source: Hacker News)</description>
+      <pubDate>Tue, 15 Sep 2026 21:41:42 +0000</pubDate>
     </item>
     <item>
-      <title>自己適応型物理AIに向けて：LLMエージェントは長期的な物理タスクを管理できるか？</title>
-      <link>https://arxiv.org/abs/2609.13436</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.13436</guid>
-      <description>[Score: 88] 大規模言語モデル（LLM）エージェントが / 長期にわたる物理的なタスクを管理できるかを探求する研究です。 / 自己適応型の物理AIの実現に向けた重要な課題に挑戦しています。 (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 15 Sep 2026 04:00:00 +0000</pubDate>
+      <title>2026年9月時点 Microsoft の AI 戦略について</title>
+      <link>https://qiita.com/yoshioterada/items/c42534895d5ca89b91b1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yoshioterada/items/c42534895d5ca89b91b1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] MicrosoftのAI戦略の全体像を解説し、AIモデル性能だけでなく企業の知識や経験、業務データを活用し、安全に管理しながら働く人を支えることを目指しています。 / この変革を「Frontier Transformation」と呼び、個人の効率化から業務プロセス、顧客体験の変革までを視野に入れています。 / 「Human AmbitionをIntelligence + Trustで実現する」という思想のもと、「仕事を手伝う」「情報をAIに届ける」「AIを管理し守る」の3つの役割で戦略を整理しています。 (Source: Qiita)</description>
+      <pubDate>Mon, 14 Sep 2026 01:44:21 +0000</pubDate>
     </item>
     <item>
-      <title>Gemini 3.8 Liveと3.8 Live Extended Thinking</title>
-      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/</link>
-      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/</guid>
-      <description>[Score: 85] Googleが、より自然で流動的、かつインテリジェントな音声対話を可能にする最新のライブ対話モデル「Gemini 3.8 Live」と「Gemini 3.8 Live Extended Thinking」を発表しました。 / これらのモデルは、複雑な推論、リアルタイムの視覚的コンテキスト処理、会話を中断しないバックグラウンドタスク実行などの主要なアップグレードを含みます。 / Gemini API、Google Workspace、Geminiアプリを通じて本日より利用可能で、AIとの対話をより直感的で人間らしいものへと進化させます。 (Source: Hacker News)</description>
-      <pubDate>Tue, 15 Sep 2026 17:38:18 +0000</pubDate>
+      <title>ハッカーがFlock社のカメラソフトウェアを盗み、同社がどのように車や人々を追跡しているかを暴露</title>
+      <link>https://www.reddit.com/r/technology/comments/1whthe5/hackers_stole_flocks_camera_software_revealing/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1whthe5/hackers_stole_flocks_camera_software_revealing/</guid>
+      <description>[Score: 90] ハッカーがFlock社のカメラソフトウェアを盗み出し、同社がどのように車や人々を追跡しているかの詳細が明らかになった。 / 監視技術のプライバシー侵害とセキュリティ脆弱性が問題視され、市民の自由への影響が懸念される。 / 企業におけるデータセキュリティと倫理的監視の重要性が改めて問われる事件。 (Source: Reddit)</description>
+      <pubDate>Wed, 16 Sep 2026 10:32:39 +0000</pubDate>
     </item>
     <item>
-      <title>M4 Mac Mini向けLinux GPUドライバーを1ヶ月で構築</title>
-      <link>https://codyho.dev/blog/gpu-driver/</link>
-      <guid isPermaLink="false">https://codyho.dev/blog/gpu-driver/</guid>
-      <description>[Score: 85] 通常数年かかるGPUドライバー開発を、わずか1ヶ月でM4 Mac Mini向けに実現。 / OpenGL ES 3.0に準拠し、Minecraftを200fpsで動作させるほどの性能を持つ。 / AppleのAGX GPUのファームウェアABIとユーザー空間コンポーネントをリバースエンジニアリングして開発された。 (Source: Hacker News)</description>
-      <pubDate>Tue, 15 Sep 2026 19:30:03 +0000</pubDate>
+      <title>Devinが仮想環境でmacOSの提供開始。Macの実機不要でDevinがコード生成、テスト、デバッグ、実行、AppStore配信前のベータ公開まで実行</title>
+      <link>https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html</guid>
+      <description>[Score: 90] コーディングAIエージェントDevinが、仮想環境でmacOSの提供を開始し、Ubuntu LinuxとWindowsに加えて対応OSを拡大した。 / これにより、Macの実機がなくてもDevinの仮想環境内でmacOSやiOS向けコードの生成、テスト、デバッグ、実行が可能になる。 / さらに、AppStore配信前のTestFlightによるベータ公開までDevinに任せられるようになり、開発ワークフローが大幅に効率化される。 (Source: Publickey)</description>
+      <pubDate>Wed, 16 Sep 2026 16:00:51 +0000</pubDate>
     </item>
     <item>
-      <title>仕様と実装を同じ言葉で書く ― 責務を機械的に突合し検証し続けるフロントエンド開発（要件定義〜実装・テスト）</title>
-      <link>https://zenn.dev/2_daiki_ando/articles/53c34e071b5d69</link>
-      <guid isPermaLink="false">https://zenn.dev/2_daiki_ando/articles/53c34e071b5d69</guid>
-      <description>[Score: 85] フロントエンド開発において、仕様書と実装コードが異なる言葉で書かれることによる属人化の問題を指摘しています。 / 解決策として、SOVアーキテクチャに基づく命名規則を用いて仕様と実装を同じ語彙で記述する開発プロセスを提案。 / これにより、要件定義からテストまで責務の突合を機械的に行い、開発効率と品質向上を目指します。 (Source: Zenn)</description>
-      <pubDate>Mon, 14 Sep 2026 15:27:39 +0000</pubDate>
+      <title>CVE-2026-16723: Fastjson 1.xにおける@JSONType Trust Branchを介した認証前RCE脆弱性</title>
+      <link>https://dev.to/guidance_white/cve-2026-16723-pre-auth-rce-in-fastjson-1x-via-the-jsontype-trust-branch-10bf</link>
+      <guid isPermaLink="false">https://dev.to/guidance_white/cve-2026-16723-pre-auth-rce-in-fastjson-1x-via-the-jsontype-trust-branch-10bf</guid>
+      <description>[Score: 90] Fastjson 1.xに、AutoType無効かつ既知のガジェットクラスなしでも動作する認証前RCE脆弱性「CVE-2026-16723」が発見されました。 / この脆弱性は、`@JSONType`アノテーションの信頼ブランチが悪用され、JVMのクラスローダーがリモートURLからクラスを解決する仕組みを利用します。 / 攻撃者は独自のクラスをリモートでホストし、Fastjsonがクラスの「安全性」をチェックするメカニズムを悪用することで、確定的かつ容易にRCEを引き起こすことが可能です。 (Source: Dev.to)</description>
+      <pubDate>Wed, 16 Sep 2026 22:11:34 +0000</pubDate>
     </item>
     <item>
-      <title>こんにちはReddit、私はロイターのジャーナリスト、ケイティ・ポールです。マーク・ザッカーバーグがMetaの従業員をAIに置き換える計画を明らかにし、それがどのように破綻したかについてAMAを行います。</title>
+      <title>コーディングエージェントの記憶にベクトル類似性だけでは不十分な理由</title>
+      <link>https://dev.to/aendrix03/why-vector-similarity-alone-is-not-enough-for-coding-agent-memory-26bb</link>
+      <guid isPermaLink="false">https://dev.to/aendrix03/why-vector-similarity-alone-is-not-enough-for-coding-agent-memory-26bb</guid>
+      <description>[Score: 90] コーディングエージェントの記憶システムにおいて、ベクトル類似性検索だけでは過去の学習を安全に再利用する判断が難しいと指摘しています。 / ベクトル検索は意味的に近い情報を発見するのに優れるものの、その情報が現在の状況に適用可能か、あるいは時代遅れでないかを判断する能力が欠けています。 / エージェントの記憶システムには、単なる類似性だけでなく、過去の結論を再利用する際の確実性を評価し、異なるレベルの確実性に応じた操作を提供する機能が必要であると提言しています。 (Source: Dev.to)</description>
+      <pubDate>Wed, 16 Sep 2026 21:48:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>4Bモデルを訓練してPostgresより81%高速なクエリプランを生成する</title>
+      <link>https://rohanbansal.com/qorl</link>
+      <guid isPermaLink="false">https://rohanbansal.com/qorl</guid>
+      <description>[Score: 85] 小規模なオープンウェイトモデルを強化学習で訓練し、Postgresのクエリプランよりも81%高速なプランを生成する実験について解説しています。 / クエリ最適化、特に結合順序付けはNP困難な問題であり、既存のクエリ最適化ツールには改善の余地が多く残されています。 / 言語モデルが検証可能な出力を持つタスクに優れている特性を活かし、クエリ実行時間を最適化軸としてモデルを強化するアプローチが示されています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 16 Sep 2026 18:50:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI開発チームの作り方と育て方 — マルチエージェント開発組織の設計と運用</title>
+      <link>https://zenn.dev/hampen2929/books/ai-dev-team-guide</link>
+      <guid isPermaLink="false">https://zenn.dev/hampen2929/books/ai-dev-team-guide</guid>
+      <description>[Score: 85] 本書は、AI開発チームの構築と育成に焦点を当てたガイドブックです。 / 一人で開発チームを持つという発想から、業務設計、役割設計、コミュニケーション設計、オーケストレーションまで、多岐にわたるテーマを扱っています。 / AIエージェントを活用した開発組織の設計と運用に関する実践的な知見を提供し、自律的なチームの成長を支援する内容となっています。 (Source: Zenn)</description>
+      <pubDate>Wed, 16 Sep 2026 09:54:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>バイブコーディングで GUI が壊れていく理由とその対策プロンプト</title>
+      <link>https://zenn.dev/nrs/articles/9ba91aea587bf5</link>
+      <guid isPermaLink="false">https://zenn.dev/nrs/articles/9ba91aea587bf5</guid>
+      <description>[Score: 85] AIによる「バイブコーディング」で開発されたGUIアプリが、機能追加に伴い複雑化し、画面間の連携不具合や操作不能に陥る問題点を指摘しています。 / 特に、画面コンポーネントが自律的に振る舞い、直接互いを操作することで発生する競合状態が原因であることを分析しています。 / 対策として、MVPパターン、Chain of Responsibility、Mediatorパターンを組み合わせた設計原則をAIに指示するプロンプトを提案しています。 (Source: Zenn)</description>
+      <pubDate>Tue, 15 Sep 2026 12:37:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>元ヤフーエンジニア社長が考える、AI時代の採用基準</title>
+      <link>https://qiita.com/ryoheiiwamoto/items/7f388029f8821fc3ea6c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ryoheiiwamoto/items/7f388029f8821fc3ea6c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AIの進化によりエンジニアのスキルが均一化される未来を見据え、採用で重視すべき基準を提示しています。 / 元ヤフーエンジニアの社長が「人間性」「当事者意識」「実直さ」の3点を挙げ、スキルよりもこれらが重要だと強調。 / AIがスキルを代替する時代において、チームへの貢献意欲や素直さといった人間的要素が成長と成功の鍵となると説いています。 (Source: Qiita)</description>
+      <pubDate>Wed, 16 Sep 2026 06:20:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Reddit AMA: ロイターのジャーナリスト、ケイティ・ポールが語る、マーク・ザッカーバーグによるMeta従業員のAI置き換え計画とその頓挫</title>
       <link>https://www.reddit.com/r/technology/comments/1w5k5h4/hi_reddit_im_katie_paul_a_reuters_journalist_who/</link>
       <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1w5k5h4/hi_reddit_im_katie_paul_a_reuters_journalist_who/</guid>
-      <description>[Score: 85] ロイターのジャーナリスト、ケイティ・ポール氏が、Metaのマーク・ザッカーバーグCEOによる従業員をAIに置き換える計画とその失敗について語るAMA（Ask Me Anything）がRedditで開催されました。 / この計画は、AI技術の導入による大規模な人員削減を目指すものでしたが、様々な要因により実現には至らなかったと報じられています。 / AIと企業戦略、そしてその社会的な影響について議論が交わされることが期待されます。 (Source: Reddit)</description>
+      <description>[Score: 85] ロイターのジャーナリスト、ケイティ・ポール氏が、マーク・ザッカーバーグによるMeta従業員のAI置き換え計画とその失敗についてAMAを実施。 / AIによる大規模な人員削減の試みがどのように計画され、なぜ頓挫したのか、その背景に迫る。 / AI導入における企業の課題、倫理的側面、そして従業員への影響について議論が展開される。 (Source: Reddit)</description>
       <pubDate>Wed, 02 Sep 2026 19:18:30 +0000</pubDate>
     </item>
     <item>
-      <title>AIエージェントの自己改善をどう設計するか</title>
-      <link>https://speakerdeck.com/22mi/how-to-design-self-improvement-for-ai-agents</link>
-      <guid isPermaLink="false">https://speakerdeck.com/22mi/how-to-design-self-improvement-for-ai-agents</guid>
-      <description>[Score: 85] AIエージェントが単なるプロンプト調整に留まらず、根本的な自己改善を達成するための設計手法を解説しています。 / 業務AIワークフローの課題と関連研究に基づき、深層学習の訓練ループになぞらえて「Training Data」「Optimizer」「Search Strategy」「Evaluation」の4つの観点から設計を整理。 / 特に「何を業務上の正解とするか」を定める評価設計の重要性を強調し、AIエージェントの真の能力向上を目指します。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 15 Sep 2026 09:49:31 +0000</pubDate>
+      <title>「APIキーは.envに」はもはや通用しない　AIエージェントの“内通者化”をどう防ぐ？</title>
+      <link>https://atmarkit.itmedia.co.jp/ait/articles/2609/17/news006.html</link>
+      <guid isPermaLink="false">https://atmarkit.itmedia.co.jp/ait/articles/2609/17/news006.html</guid>
+      <description>[Score: 85] AIエージェントの普及に伴い、APIキーやトークンなどの認証情報の管理方法が従来の.envファイルでは不十分になっている。 / ツールポイズニングや間接プロンプトインジェクションといった新たな攻撃手法が登場し、AIエージェントが「内通者化」するリスクが顕在化。 / 認証情報の安全な保管、動的な発行、アクセス監査の3つの対策が重要であり、シークレットマネージャーやトークンボールトの活用が推奨される。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 16 Sep 2026 07:51:41 +0000</pubDate>
     </item>
     <item>
-      <title>オラクル、Javaのセキュリティパッチを毎月提供開始、AIが脆弱性の発見を加速しているとして</title>
-      <link>https://www.publickey1.jp/blog/26/javaai.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javaai.html</guid>
-      <description>[Score: 85] OracleがJavaのセキュリティパッチ提供サイクルを3ヶ月ごとから毎月へと変更し、2026年8月から「Critical Security Patch Updates (CSPU)」として提供を開始しました。 / この変更は、AIの進化により脆弱性の発見と修正が加速している現状に対応するためのものです。 / これにより、ユーザーは高優先度の脆弱性に対してより迅速に対処できるようになり、Javaシステムのセキュリティが強化されます。 (Source: Publickey)</description>
-      <pubDate>Tue, 15 Sep 2026 15:49:38 +0000</pubDate>
+      <title>AnthropicのMCP共同作者が来日、基調講演で語るこれからのMCP注力領域。AGNTCon＋MCPCon Japan 2026</title>
+      <link>https://www.publickey1.jp/blog/26/anthropicmcpmcpagntconmcpcon_japan_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/anthropicmcpmcpagntconmcpcon_japan_2026.html</guid>
+      <description>[Score: 85] AIエージェントとModel Context Protocol (MCP)をテーマとしたイベント「AGNTCon＋MCPCon Japan 2026」が開催されました。 / AnthropicのDavid Soria Parra氏が基調講演に登壇し、MCPの登場背景、急成長の理由、今後の発展方向について語りました。 / Long-Horizon TasksにおけるAIモデルの性能向上が著しく、MCPのようなオープン標準がAIシステムで重要になると強調されました。 (Source: Publickey)</description>
+      <pubDate>Mon, 14 Sep 2026 15:55:18 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフトがRust言語をC++/C#/TSに並ぶ社内のTier 1言語にしたことを明らかに。Windowsネイティブな社内の開発環境と統合</title>
-      <link>https://www.publickey1.jp/blog/26/rustcctstier_1.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/rustcctstier_1.html</guid>
-      <description>[Score: 85] マイクロソフトがRust言語をC++、C#、TypeScriptと並ぶ社内Tier 1言語に認定したことを発表した。 / これは、Rustがマイクロソフトの定めるソフトウェアライフサイクル全体の要件を満たし、Windowsネイティブな開発環境と統合されたことを意味する。 / ファームウェアからアプリケーションまで、あらゆるレイヤーでのRust利用を拡大するため、MSVCとRustの相互運用性も実現された。 (Source: Publickey)</description>
-      <pubDate>Sun, 13 Sep 2026 15:27:57 +0000</pubDate>
+      <title>Databricksアーキテクチャ解説：コントロールプレーン、コンピュートプレーン、Delta Lake、Unity Catalog</title>
+      <link>https://dev.to/dino_david_c5d8f55f119b7f/databricks-architecture-explained-control-plane-compute-plane-delta-lake-and-unity-catalog-1167</link>
+      <guid isPermaLink="false">https://dev.to/dino_david_c5d8f55f119b7f/databricks-architecture-explained-control-plane-compute-plane-delta-lake-and-unity-catalog-1167</guid>
+      <description>[Score: 85] Databricksのアーキテクチャを、コントロールプレーン、コンピュートプレーン、Delta Lake、Unity Catalogといった主要コンポーネントに分けて解説しています。 / DatabricksはAzure、AWS、Google Cloud上で動作し、データレイク上にDelta Lakeが構築され、ACIDトランザクションやスキーマ適用機能を提供します。 / Unity Catalogはガバナンス層として機能し、権限管理やデータリネージを一元的に管理することで、データレイクハウスの実現を支えます。 (Source: Dev.to)</description>
+      <pubDate>Wed, 16 Sep 2026 21:52:00 +0000</pubDate>
     </item>
     <item>
-      <title>初心者向けGitHub Copilotアプリ：diff、ターミナル、ブラウザの活用</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/</guid>
-      <description>[Score: 85] GitHub Copilotアプリ内で、コード変更のレビュー、実行、結果確認を完結できる新機能を紹介。 / diffパネルでコードの変更点を視覚的に確認し、ターミナルパネルでコマンドを実行、ブラウザパネルでUIを確認可能。 / 開発者がエディタ、ターミナル、ブラウザ間を行き来することなく、AIによるコーディングループを効率的に回せるようになる。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 10 Sep 2026 21:31:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>初心者向けGitHub Copilotアプリ：複数のエージェントを同時に実行</title>
+      <title>GitHub Copilotアプリ（初心者向け）：複数のエージェントを同時に実行</title>
       <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/</guid>
-      <description>[Score: 85] GitHub Copilotアプリで複数のAIエージェントセッションを同時に実行できる機能を紹介。 / 各セッションは独立して動作し、独自のGitワークツリーで並行してタスクを実行できるため、開発者は複数の作業を同時に進められる。 / コンテキスト切り替えのオーバーヘッドを減らし、開発者が意思決定とレビューに集中できることで生産性を向上させる。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHub Copilotアプリで複数のAIエージェントを同時に実行できる新機能が紹介されています。 / 各エージェントセッションは独立して動作し、Gitワークツリーを活用することで並行処理が可能です。 / これにより、開発者は複数のタスクを同時に進め、生産性を大幅に向上させることができます。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 03 Sep 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>ZGCM-1: 数学とエージェント検索のための完全にオープンで極めて効率的な基盤モデル</title>
-      <link>https://arxiv.org/abs/2609.13356</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2609.13356</guid>
-      <description>[Score: 85] ZGCM-1は、数学的推論とエージェントによる検索に特化した / 完全にオープンソースで非常に効率的な基盤モデルです。 / AIの数学的応用と自律エージェント開発を加速させる可能性を秘めています。 (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 15 Sep 2026 04:00:00 +0000</pubDate>
+      <title>.NET 11のパフォーマンス改善</title>
+      <link>https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-11/</link>
+      <guid isPermaLink="false">https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-11/</guid>
+      <description>[Score: 80] 本文抜粋は映画「This Is Spinal Tap」の引用で、アンプのダイヤルが11まであるというジョークを説明しています。 / これは.NET 11が「1つ上の」パフォーマンス改善を達成したことを示唆する比喩として使われています。 / 具体的な技術的詳細は抜粋からは読み取れませんが、.NETの次期バージョンにおける性能向上がテーマであると推測されます。 (Source: Hacker News)</description>
+      <pubDate>Tue, 15 Sep 2026 12:18:16 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Code のスキルを47本運用して測った、7つのこと</title>
-      <link>https://qiita.com/suwa_nobu/items/08e3bd535dbc79e0c738?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/suwa_nobu/items/08e3bd535dbc79e0c738?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 82] Claude Codeのスキルを多数運用した結果、スキルを増やすと説明文が消え、呼ばれなくなる現象を報告しています。 / スキル一覧には文字数予算があり、それを超えると説明文が削られるため、スキルを増やしてもコンテキスト圧迫は少ないことを検証。 / 公式の評価コマンドや設定による予算調整、プロンプトキャッシュへの影響など、スキル運用の実用的な知見を7つのポイントでまとめています。 (Source: Qiita)</description>
-      <pubDate>Mon, 14 Sep 2026 00:52:44 +0000</pubDate>
+      <title>GitHub Copilot app を使いこなす</title>
+      <link>https://zenn.dev/skmkzyk/books/github-copilot-app-guide</link>
+      <guid isPermaLink="false">https://zenn.dev/skmkzyk/books/github-copilot-app-guide</guid>
+      <description>[Score: 80] 本書は、GitHub Copilot appのインストールから詳細な設定、そして日々の作業への組み込み方までを網羅的に解説するガイドです。 / composerやsessionの活用、scheduled taskの設定、slash commandの整理など、Copilotを最大限に活用するための実践的な方法が紹介されています。 / AIを活用した開発支援ツールの効果的な利用法を学ぶことで、開発効率の向上を目指すことができます。 (Source: Zenn)</description>
+      <pubDate>Tue, 15 Sep 2026 14:16:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>生成AIが書いたドキュメントを読みたくない</title>
+      <link>https://qiita.com/take-yoda/items/e5d9ce6618523af1ffc5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/take-yoda/items/e5d9ce6618523af1ffc5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] 生成AIが作成するドキュメントが読みにくい理由を「網羅と重要度を区別しない」「結論が最後に来る」など4点に集約して分析しています。 / 情報量は多いが、人間が無意識に行う取捨選択や構成の工夫が欠けているため、読み手が疲弊する原因を指摘。 / 実際のGitHub PRを用いた検証を通じて、AI生成ドキュメントの課題を具体的に示し、改善の必要性を訴えています。 (Source: Qiita)</description>
+      <pubDate>Mon, 14 Sep 2026 04:55:10 +0000</pubDate>
     </item>
   </channel>
 </rss>
