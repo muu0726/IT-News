@@ -64,6 +64,9 @@ IT 技術ニュースを 9 ソースから毎日自動収集し、記事本文�
 | `archive/YYYY-MM-DD.json` | 日次アーカイブ（自動生成、180日で自動削除） |
 | `archive/index.json` | アーカイブファイル名一覧（降順） |
 | `models.json` | Gemini の利用可能モデル一覧スナップショット（CI で取得） |
+| `gadget.py` | 最新ガジェット情報の収集・解析・保存・通知（§4.12） |
+| `gadget.html` | 最新ガジェット情報ページ（§5.5） |
+| `gadgets.json` | ガジェット情報（直近30日分を蓄積、自動生成・コミット） |
 | `.github/workflows/update.yml` | 定期実行ワークフロー |
 | `docs/SPEC.md` | 本仕様書 |
 
@@ -178,6 +181,23 @@ score ≥ 80 の上位 10 件を対象に、設定済みのチャネルすべて
 
 `archive/YYYY-MM-DD.json` のうち 180 日より古いものを毎回削除し、`index.json` を再生成する。
 
+### 4.12 最新ガジェット情報（gadget.py）
+
+`gather.py` の共通関数（本文取得・Gemini 呼び出し・URL 正規化・通知時刻待機）を import して動く別スクリプト。
+`python gadget.py [--no-notify | --notify-only]`（モードは gather.py と同じ）。
+
+| ソース | フィード |
+|---|---|
+| ITmedia Mobile / ITmedia PC USER | `rss.itmedia.co.jp/rss/2.0/{mobile,pcuser}.xml` |
+| PC Watch / ケータイ Watch / AV Watch | `*.watch.impress.co.jp/data/rss/1.0/{pcw,ktw,avw}/feed.rdf` |
+| GIZMODO Japan | `www.gizmodo.jp/index.xml` |
+
+1. **収集**: 各フィード先頭 10 件のうち公開 48 時間以内のもの。
+2. **新着抽出**: `gadgets.json` で解析済み（`analysis_status: ok`）の URL は除外。前回失敗した記事は再解析。1 回あたり最大 48 件。
+3. **解析**: 6 件/リクエストのバッチで `title` / `summary` / `product_name` / `brand` / `category`（スマートフォン・PC・タブレット・ウェアラブル・オーディオ・カメラ・ゲーム・スマートホーム・その他）/ `is_new_product`（新製品の発表・発売・予約開始なら true。レビュー・セール・アップデート等は false）/ `price` / `release_date` / `score`（注目度）/ `score_reason` を生成。解析に初めて成功した記事に `new_at`（その実行の `generated_at`）を付与。
+4. **保存**: `gadgets.json`（`schema_version: 1`、`generated_at`、`items` 新着順）。`first_seen` から 30 日を超えた記事は削除。
+5. **通知**: `new_at == generated_at` かつ `is_new_product` かつ `score >= 60` の記事を注目度順に最大 **3 件**（`product_name` を正規化して同一製品は 1 件に集約）。IT ニュースとは別メッセージで Discord / Slack / LINE に送信し、該当 0 件なら送らない。同日に再実行しても新着が無いため二重通知にならない。`generated_at` が今日（JST）でない `gadgets.json`（収集失敗日にリポジトリに残る前日分）からは通知しない。
+
 ## 5. フロントエンド仕様（index.html）
 
 依存フレームワークなしの Vanilla JS SPA。Google Fonts のみ外部依存。
@@ -226,6 +246,13 @@ score ≥ 80 の上位 10 件を対象に、設定済みのチャネルすべて
 - キャッシュ名 `itinfohub-v3`。
 - **HTML（ナビゲーション）・JSON・XML**: Network First — フロント更新・データ更新が即時反映され、オフライン時のみキャッシュを返す。
 - その他静的アセット: Cache First。
+
+### 5.5 最新ガジェット情報ページ（gadget.html）
+
+- `gadgets.json` を読み込む単一ファイルの Vanilla JS ページ。テーマは `itinfohub_theme` を index.html と共有し、XSS 対策（`esc()` / `safeUrl()`）も同方式。
+- カード: 注目度バッジ、製品名（記事リンク）、🆕 新製品 / 関連記事 バッジ、今回の新着に NEW、カテゴリ・ブランド・価格・発売日、3 行要約、ソース・公開日時・注目度の理由。
+- 絞り込み: カテゴリタブ（件数付き）、「🆕 新製品のみ」（初期 ON）、テキスト検索（製品名・ブランド・タイトル・要約）。並び替え: 新着順 / 注目度順。
+- index.html ヘッダーの「📱 ガジェット」から遷移。SW のプリキャッシュ対象（キャッシュ名 `itinfohub-v5`）。
 
 ## 6. CI/CD（.github/workflows/update.yml）
 

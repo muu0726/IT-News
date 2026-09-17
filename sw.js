@@ -4,11 +4,12 @@
  * その他静的アセット: Cache First
  */
 
-const CACHE_NAME = 'itinfohub-v4';
+const CACHE_NAME = 'itinfohub-v5';
 
 const PRECACHE_URLS = [
   './',
   './index.html',
+  './gadget.html',
   './manifest.json',
 ];
 

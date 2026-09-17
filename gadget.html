@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="国内ガジェットメディアから新製品情報を自動収集・AI分析した最新ガジェット情報">
+  <title>Gadget Hub — 最新ガジェット情報</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#191919">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* index.html と同じトークン（ライト / ダーク） */
+    :root {
+      --font-sans: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f7f7f5;
+      --bg-tertiary: #f0f0ee;
+      --bg-hover: rgba(55, 53, 47, 0.04);
+      --text-primary: #37352f;
+      --text-secondary: #6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --border-color: #e8e8e5;
+      --accent: #2eaadc;
+      --accent-hover: #2593be;
+      --gold: #d4a017;
+      --gold-bg: rgba(212, 160, 23, 0.08);
+      --silver: #8e8e93;
+      --new-color: #1baf7a;
+      --new-bg: rgba(27, 175, 122, 0.1);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --radius-sm: 4px;
+      --radius-md: 8px;
+    }
+    [data-theme="dark"] {
+      --bg-primary: #191919;
+      --bg-secondary: #202020;
+      --bg-tertiary: #2d2d2d;
+      --bg-hover: rgba(255, 255, 255, 0.04);
+      --text-primary: #e0e0e0;
+      --text-secondary: #9b9b9b;
+      --text-tertiary: #6b6b6b;
+      --border-color: #333333;
+      --accent: #529cca;
+      --accent-hover: #6db3dc;
+      --gold-bg: rgba(212, 160, 23, 0.12);
+      --new-color: #3ccf98;
+      --new-bg: rgba(60, 207, 152, 0.12);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* Header */
+    .header {
+      position: sticky; top: 0; z-index: 100;
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.85);
+    }
+    [data-theme="dark"] .header { background: rgba(25,25,25,0.88); }
+    .header-inner {
+      max-width: 1100px; margin: 0 auto; padding: 16px 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 18px; font-weight: 700; white-space: nowrap;
+      text-decoration: none; color: var(--text-primary);
+    }
+    .logo-icon { font-size: 24px; }
+    .header-controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 12px;
+      border: 1px solid var(--border-color); border-radius: var(--radius-sm);
+      background: var(--bg-primary); color: var(--text-secondary);
+      font-size: 13px; font-family: var(--font-sans);
+      cursor: pointer; transition: all 0.15s ease; white-space: nowrap; text-decoration: none;
+    }
+    .btn:hover { background: var(--bg-hover); color: var(--text-primary); }
+    .btn.active { background: var(--new-color); border-color: var(--new-color); color: #fff; }
+
+    .select-wrap select {
+      padding: 6px 28px 6px 10px;
+      border: 1px solid var(--border-color); border-radius: var(--radius-sm);
+      background: var(--bg-primary); color: var(--text-primary);
+      font-size: 13px; font-family: var(--font-sans); cursor: pointer; appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 8px center;
+    }
+
+    .search-box { position: relative; flex: 1; min-width: 200px; max-width: 320px; }
+    .search-box input {
+      width: 100%; padding: 8px 14px 8px 36px;
+      border: 1px solid var(--border-color); border-radius: var(--radius-md);
+      background: var(--bg-secondary); color: var(--text-primary);
+      font-size: 14px; font-family: var(--font-sans);
+    }
+    .search-box input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(46,170,220,0.15); }
+    .search-box::before {
+      content: '🔍'; position: absolute; left: 10px; top: 50%;
+      transform: translateY(-50%); font-size: 14px; pointer-events: none;
+    }
+
+    /* Toolbar & tabs */
+    .toolbar {
+      max-width: 1100px; margin: 0 auto; padding: 12px 24px 4px;
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    }
+    .toolbar-label {
+      font-size: 12px; color: var(--text-tertiary);
+      letter-spacing: 0.5px; font-weight: 600;
+    }
+    .tabs {
+      max-width: 1100px; margin: 8px auto 0; padding: 0 24px;
+      display: flex; overflow-x: auto; border-bottom: 1px solid var(--border-color);
+      scrollbar-width: none;
+    }
+    .tabs::-webkit-scrollbar { display: none; }
+    .tab {
+      padding: 10px 16px; font-size: 13px; font-weight: 500; color: var(--text-tertiary);
+      cursor: pointer; background: none; border: none; border-bottom: 2px solid transparent;
+      font-family: var(--font-sans); white-space: nowrap;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .tab:hover { color: var(--text-primary); background: var(--bg-hover); }
+    .tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+    .tab-count {
+      font-size: 11px; padding: 1px 6px; border-radius: 10px;
+      background: var(--bg-tertiary); color: var(--text-tertiary);
+    }
+    .tab.active .tab-count { background: var(--accent); color: #fff; }
+
+    .stats-bar {
+      max-width: 1100px; margin: 0 auto; padding: 8px 24px 0;
+      display: flex; gap: 16px; flex-wrap: wrap;
+      font-size: 12px; color: var(--text-tertiary);
+    }
+
+    /* Cards */
+    .main { max-width: 1100px; margin: 0 auto; padding: 12px 24px 60px; }
+    .card-list { display: flex; flex-direction: column; gap: 2px; }
+    .card {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 14px 18px; background: var(--bg-primary);
+      border-radius: var(--radius-md); border: 1px solid transparent;
+      transition: background 0.18s ease, box-shadow 0.18s ease;
+      animation: fadeIn 0.35s ease forwards; opacity: 0;
+    }
+    .card:hover { background: var(--bg-hover); box-shadow: var(--shadow-sm); }
+    .card.is-new-product { border-left: 3px solid var(--new-color); }
+    .card.score-high { background: var(--gold-bg); }
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    .score-badge {
+      flex-shrink: 0; width: 42px; height: 42px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      border-radius: var(--radius-md); font-size: 15px; font-weight: 700; line-height: 1.1;
+      background: var(--bg-tertiary); color: var(--text-secondary);
+    }
+    .score-badge small { font-size: 9px; font-weight: 500; opacity: 0.85; }
+    .score-badge.high { background: var(--gold); color: #fff; }
+    .score-badge.mid { background: var(--silver); color: #fff; }
+
+    .card-body { flex: 1; min-width: 0; }
+    .card-product {
+      font-size: 15px; font-weight: 700; line-height: 1.4;
+      display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+    }
+    .card-product a { color: var(--text-primary); text-decoration: none; }
+    .card-product a:hover { color: var(--accent); }
+    .card-title { font-size: 13px; color: var(--text-secondary); margin: 2px 0 6px; }
+    .badge {
+      font-size: 11px; padding: 1px 6px; border-radius: var(--radius-sm);
+      font-weight: 600; white-space: nowrap;
+    }
+    .badge-new { background: var(--new-bg); color: var(--new-color); }
+    .badge-today { background: var(--accent); color: #fff; }
+    .badge-muted { background: var(--bg-tertiary); color: var(--text-tertiary); }
+
+    .spec-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+    .spec {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 12px; padding: 1px 8px; border-radius: 20px;
+      background: var(--bg-tertiary); color: var(--text-secondary); font-weight: 500;
+    }
+    .card-summary { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 8px; }
+    .card-meta { display: flex; gap: 10px; flex-wrap: wrap; font-size: 11px; color: var(--text-tertiary); }
+    .score-reason { font-style: italic; }
+
+    .state-msg { text-align: center; padding: 80px 20px; color: var(--text-tertiary); }
+    .state-msg .icon { font-size: 48px; margin-bottom: 12px; }
+    .state-msg .title { font-size: 18px; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary); }
+    .spinner {
+      width: 36px; height: 36px; margin: 0 auto 16px;
+      border: 3px solid var(--border-color); border-top-color: var(--accent);
+      border-radius: 50%; animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .footer {
+      text-align: center; padding: 24px; font-size: 12px; color: var(--text-tertiary);
+      border-top: 1px solid var(--border-color); margin-top: 40px;
+    }
+    .footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .header-inner { flex-wrap: wrap; padding: 12px 16px; }
+      .search-box { min-width: 100%; max-width: none; order: 10; }
+      .toolbar, .stats-bar { padding-left: 16px; padding-right: 16px; }
+      .tabs { padding: 0 16px; }
+      .tab { padding: 8px 12px; font-size: 12px; }
+      .main { padding: 10px 12px 40px; }
+      .card { padding: 12px 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="gadget.html">
+        <span class="logo-icon">📱</span>
+        <span>Gadget Hub</span>
+      </a>
+      <div class="header-controls">
+        <a class="btn" href="index.html" title="IT ニュースへ">📡 IT News</a>
+        <button class="btn" id="themeToggle" title="テーマ切替">🌙</button>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="製品・ブランドを検索…" autocomplete="off">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <span class="toolbar-label">表示:</span>
+    <div class="select-wrap">
+      <select id="sortSelect" title="並び替え">
+        <option value="date">🕐 新着順</option>
+        <option value="score">📊 注目度順</option>
+      </select>
+    </div>
+    <button class="btn active" id="newOnlyBtn" title="新製品の発表・発売情報のみ表示">🆕 新製品のみ</button>
+  </div>
+
+  <nav class="tabs" id="categoryTabs" aria-label="カテゴリ"></nav>
+  <div class="stats-bar" id="statsBar"></div>
+
+  <main class="main">
+    <div class="card-list" id="cardList">
+      <div class="state-msg"><div class="spinner"></div><div class="title">読み込み中…</div></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    ITmedia / Impress Watch / GIZMODO Japan の RSS を AI で分析（直近30日分） · <a href="index.html">IT Info Hub</a>
+  </footer>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const esc = (s) => String(s ?? '').replace(/[&<>"']/g,
+        (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      const safeUrl = (u) => /^https?:\/\//i.test(String(u || '')) ? String(u) : '#';
+
+      const cardList = document.getElementById('cardList');
+      const tabsEl = document.getElementById('categoryTabs');
+      const statsBar = document.getElementById('statsBar');
+      const searchInput = document.getElementById('searchInput');
+      const sortSelect = document.getElementById('sortSelect');
+      const newOnlyBtn = document.getElementById('newOnlyBtn');
+      const themeToggle = document.getElementById('themeToggle');
+
+      const state = { items: [], generatedAt: '', category: 'all', newOnly: true, query: '', sort: 'date' };
+
+      // ── Theme（index.html と同じキーを共有）──
+      function updateThemeIcon() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        themeToggle.textContent = isDark ? '☀️' : '🌙';
+      }
+      function initTheme() {
+        let saved = null;
+        try { saved = localStorage.getItem('itinfohub_theme'); } catch (e) { /* storage 不可 */ }
+        if (saved) {
+          document.documentElement.setAttribute('data-theme', saved.replace(/"/g, ''));
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        updateThemeIcon();
+      }
+      themeToggle.addEventListener('click', () => {
+        const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('itinfohub_theme', next); } catch (e) { /* storage 不可 */ }
+        updateThemeIcon();
+      });
+
+      // ── Helpers ──
+      const timeOf = (it) => {
+        const t = Date.parse(it.published || it.first_seen || '');
+        return Number.isNaN(t) ? 0 : t;
+      };
+      const formatDate = (it) => {
+        const t = timeOf(it);
+        return t ? new Date(t).toLocaleString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
+      };
+      const summaryHtml = (s) => esc(String(s || '').replace(/\\n/g, '\n')).replace(/\n/g, '<br>');
+
+      function baseItems() {
+        return state.items.filter((it) => it.analysis_status === 'ok' && (!state.newOnly || it.is_new_product));
+      }
+
+      function renderTabs() {
+        const counts = {};
+        const base = baseItems();
+        base.forEach((it) => { counts[it.category || 'その他'] = (counts[it.category || 'その他'] || 0) + 1; });
+        const cats = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+        if (state.category !== 'all' && !counts[state.category]) state.category = 'all';
+
+        tabsEl.textContent = '';
+        const addTab = (key, label, count) => {
+          const btn = document.createElement('button');
+          btn.className = 'tab' + (state.category === key ? ' active' : '');
+          btn.textContent = label;
+          const c = document.createElement('span');
+          c.className = 'tab-count';
+          c.textContent = String(count);
+          btn.appendChild(c);
+          btn.addEventListener('click', () => { state.category = key; render(); });
+          tabsEl.appendChild(btn);
+        };
+        addTab('all', 'すべて', base.length);
+        cats.forEach((cat) => addTab(cat, cat, counts[cat]));
+      }
+
+      function filteredItems() {
+        const q = state.query.trim().toLowerCase();
+        const list = baseItems().filter((it) => {
+          if (state.category !== 'all' && (it.category || 'その他') !== state.category) return false;
+          if (!q) return true;
+          return [it.product_name, it.brand, it.title, it.summary]
+            .some((v) => String(v || '').toLowerCase().includes(q));
+        });
+        return list.sort((a, b) => state.sort === 'score'
+          ? (b.score || 0) - (a.score || 0) || timeOf(b) - timeOf(a)
+          : timeOf(b) - timeOf(a));
+      }
+
+      function renderCards(list) {
+        if (!list.length) {
+          cardList.innerHTML = `<div class="state-msg"><div class="icon">📭</div>
+            <div class="title">該当するガジェット情報はありません</div></div>`;
+          return;
+        }
+        cardList.innerHTML = list.map((it, i) => {
+          const score = Number(it.score) || 0;
+          const scoreCls = score >= 80 ? 'high' : score >= 60 ? 'mid' : '';
+          const isToday = it.new_at && it.new_at === state.generatedAt;
+          const name = it.product_name || it.title || '';
+          const specs = [
+            it.category ? `<span class="spec">🏷️ ${esc(it.category)}</span>` : '',
+            it.brand ? `<span class="spec">🏭 ${esc(it.brand)}</span>` : '',
+            it.price ? `<span class="spec">💴 ${esc(it.price)}</span>` : '',
+            it.release_date ? `<span class="spec">📅 ${esc(it.release_date)}</span>` : '',
+          ].join('');
+          return `
+            <article class="card${it.is_new_product ? ' is-new-product' : ''}${score >= 80 ? ' score-high' : ''}" style="animation-delay:${Math.min(i, 12) * 0.04}s">
+              <div class="score-badge ${scoreCls}" title="注目度">${score}<small>注目度</small></div>
+              <div class="card-body">
+                <div class="card-product">
+                  <a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener noreferrer">${esc(name)}</a>
+                  ${it.is_new_product ? '<span class="badge badge-new">🆕 新製品</span>' : '<span class="badge badge-muted">関連記事</span>'}
+                  ${isToday ? '<span class="badge badge-today">NEW</span>' : ''}
+                </div>
+                ${it.product_name ? `<div class="card-title">${esc(it.title)}</div>` : ''}
+                ${specs ? `<div class="spec-row">${specs}</div>` : ''}
+                <div class="card-summary">${summaryHtml(it.summary)}</div>
+                <div class="card-meta">
+                  <span>📰 ${esc(it.source)}</span>
+                  <span>🕐 ${esc(formatDate(it))}</span>
+                  ${it.score_reason ? `<span class="score-reason">💡 ${esc(it.score_reason)}</span>` : ''}
+                </div>
+              </div>
+            </article>`;
+        }).join('');
+      }
+
+      function renderStats(list) {
+        const updated = state.generatedAt ? new Date(state.generatedAt).toLocaleString('ja-JP') : '-';
+        const todayCount = state.items.filter((it) => it.new_at && it.new_at === state.generatedAt && it.is_new_product).length;
+        statsBar.textContent = '';
+        [`表示 ${list.length}件`, `今回の新製品 ${todayCount}件`, `最終更新 ${updated}`].forEach((text) => {
+          const span = document.createElement('span');
+          span.textContent = text;
+          statsBar.appendChild(span);
+        });
+      }
+
+      function render() {
+        renderTabs();
+        const list = filteredItems();
+        renderCards(list);
+        renderStats(list);
+      }
+
+      // ── Events ──
+      searchInput.addEventListener('input', () => { state.query = searchInput.value; render(); });
+      sortSelect.addEventListener('change', () => { state.sort = sortSelect.value; render(); });
+      newOnlyBtn.addEventListener('click', () => {
+        state.newOnly = !state.newOnly;
+        newOnlyBtn.classList.toggle('active', state.newOnly);
+        render();
+      });
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        let saved = null;
+        try { saved = localStorage.getItem('itinfohub_theme'); } catch (err) { /* storage 不可 */ }
+        if (!saved) {
+          document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+          updateThemeIcon();
+        }
+      });
+
+      async function init() {
+        initTheme();
+        try {
+          const resp = await fetch('gadgets.json?t=' + Date.now());
+          if (!resp.ok) throw new Error('HTTP ' + resp.status);
+          const data = await resp.json();
+          state.items = Array.isArray(data.items) ? data.items : [];
+          state.generatedAt = data.generated_at || '';
+          render();
+        } catch (err) {
+          cardList.innerHTML = `<div class="state-msg"><div class="icon">⚠️</div>
+            <div class="title">ガジェット情報を読み込めませんでした</div>
+            <div>${esc(err.message)}</div></div>`;
+        }
+      }
+
+      init();
+
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').catch((err) => console.log('SW registration failed:', err));
+      }
+    })();
+  </script>
+</body>
+</html>

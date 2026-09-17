@@ -37,12 +37,19 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: テスト実行 (pytest)
-        run: pytest test_gather.py
+        run: pytest
 
       - name: gather.py 実行（通知なし）
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python gather.py --no-notify
+
+      - name: gadget.py 実行（通知なし）
+        # ガジェット側の失敗で IT ニュースの更新・通知を止めない
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python gadget.py --no-notify
 
       - name: fetch available models
         env:
@@ -57,6 +64,7 @@ jobs:
           path: |
             data.json
             digest.json
+            gadgets.json
           if-no-files-found: warn
           retention-days: 1
 
@@ -66,6 +74,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json archive/ models.json feed.xml
           if [ -f digest.json ]; then git add digest.json; fi
+          if [ -f gadgets.json ]; then git add gadgets.json; fi
           git pull --rebase origin main || true
           git diff --cached --quiet || git commit -m "chore: データ更新 $(date +'%Y-%m-%d %H:%M UTC')"
           git push
@@ -116,6 +125,16 @@ jobs:
           # 定期実行時のみ 07:00 JST まで待って通知（手動実行は即時）
           NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00' || '' }}
         run: python gather.py --notify-only
+
+      - name: ガジェット通知送信
+        # 上のステップで 07:00 まで待機済みのため即時送信。失敗しても IT ニュース通知には影響させない
+        continue-on-error: true
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00' || '' }}
+        run: python gadget.py --notify-only
 
   alert:
     needs: [collect, notify]
