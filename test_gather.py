@@ -91,6 +91,29 @@ def test_wait_until_notify_time_invalid(monkeypatch, sleeps):
     assert wait_until_notify_time(now) == 0.0
     assert sleeps == []
 
+class _FakeResp:
+    status_code = 200
+    def json(self):
+        return {"candidates": [{"finishReason": "STOP", "content": {"parts": [{"text": "[]"}]}}]}
+
+def _capture_gemini_payload(monkeypatch, model):
+    captured = {}
+    def fake_post(url, json=None, timeout=None):
+        captured["payload"] = json
+        return _FakeResp()
+    monkeypatch.setattr(gather, "GEMINI_MODEL", model)
+    monkeypatch.setattr(gather.requests, "post", fake_post)
+    assert gather.call_gemini_rest("prompt", "dummy-key") == []
+    return captured["payload"]["generationConfig"]
+
+def test_call_gemini_rest_disables_thinking_for_flash(monkeypatch):
+    config = _capture_gemini_payload(monkeypatch, "gemini-2.5-flash")
+    assert config["thinkingConfig"] == {"thinkingBudget": 0}
+
+def test_call_gemini_rest_keeps_thinking_for_non_flash(monkeypatch):
+    config = _capture_gemini_payload(monkeypatch, "gemini-2.5-pro")
+    assert "thinkingConfig" not in config
+
 def _write_json(path, obj):
     path.write_text(json.dumps(obj, ensure_ascii=False), encoding="utf-8")
 

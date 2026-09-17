@@ -82,6 +82,9 @@ GEMINI_EMBED_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     "{model}:batchEmbedContents?key={key}"
 )
+# 要約・分類に推論は不要。thinking 既定 ON だと 1 リクエスト数十秒かかり
+# collect ジョブが時間切れになり得るため無効化する
+GEMINI_THINKING_BUDGET = 0
 GEMINI_SLEEP_SEC = 4          # リクエスト間隔（15 RPM対応）
 GEMINI_MAX_RETRIES = 3        # リトライ上限
 GEMINI_BACKOFF_MAX_SEC = 30   # バックオフ上限秒数
@@ -415,6 +418,11 @@ def call_gemini_rest(prompt: str, api_key: str) -> list | dict | None:
             "temperature": 0.2,
         },
     }
+    # thinking を 0 にできるのは flash 系のみ（pro 系に送ると 400 になる）
+    if "flash" in GEMINI_MODEL:
+        payload["generationConfig"]["thinkingConfig"] = {
+            "thinkingBudget": GEMINI_THINKING_BUDGET
+        }
 
     for attempt in range(1, GEMINI_MAX_RETRIES + 1):
         try:
@@ -537,7 +545,9 @@ def analyze_with_gemini(articles: list[dict], start_time: float = 0) -> list[dic
             time.sleep(GEMINI_SLEEP_SEC)
 
     ok = sum(1 for a in articles if a.get("analysis_status") == "ok")
-    print(f"[INFO] Analysis complete: {ok}/{len(articles)} succeeded")
+    elapsed = time.monotonic() - start_time if start_time else 0
+    print(f"[INFO] Analysis complete: {ok}/{len(articles)} succeeded "
+          f"(elapsed since start: {elapsed:.1f}s)")
     return articles
 
 

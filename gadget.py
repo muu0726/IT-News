@@ -278,7 +278,8 @@ def analyze_gadgets(articles: list[dict], run_at: str) -> list[dict]:
             time.sleep(GEMINI_SLEEP_SEC)
 
     ok = sum(1 for a in articles if a.get("analysis_status") == "ok")
-    print(f"[INFO] Gadget analysis complete: {ok}/{len(articles)} succeeded")
+    print(f"[INFO] Gadget analysis complete: {ok}/{len(articles)} succeeded "
+          f"({time.monotonic() - start:.1f}s)")
     return articles
 
 

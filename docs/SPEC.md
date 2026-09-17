@@ -20,7 +20,7 @@ IT 技術ニュースを 9 ソースから毎日自動収集し、記事本文�
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │ GitHub Actions (.github/workflows/update.yml)                 │
-│   毎日 UTC 22:00（JST 07:00）+ workflow_dispatch              │
+│   毎日 UTC 19:17（JST 04:17 起動、通知は 07:00）+ dispatch     │
 │                                                               │
 │  gather.py                                                    │
 │   1. 収集       Hacker News API + RSS×8                       │
@@ -63,7 +63,6 @@ IT 技術ニュースを 9 ソースから毎日自動収集し、記事本文�
 | `digest.json` | 週間ダイジェスト（毎週日曜に自動生成） |
 | `archive/YYYY-MM-DD.json` | 日次アーカイブ（自動生成、180日で自動削除） |
 | `archive/index.json` | アーカイブファイル名一覧（降順） |
-| `models.json` | Gemini の利用可能モデル一覧スナップショット（CI で取得） |
 | `gadget.py` | 最新ガジェット情報の収集・解析・保存・通知（§4.12） |
 | `gadget.html` | 最新ガジェット情報ページ（§5.5） |
 | `gadgets.json` | ガジェット情報（直近30日分を蓄積、自動生成・コミット） |
@@ -102,13 +101,13 @@ IT 技術ニュースを 9 ソースから毎日自動収集し、記事本文�
 
 ### 4.4 Gemini バッチ解析
 
-- **モデル**: `gemini-2.5-flash-lite`（REST API、`responseMimeType: application/json`、temperature 0.2）
+- **モデル**: `gemini-2.5-flash`（REST API、`responseMimeType: application/json`、temperature 0.2、`thinkingConfig.thinkingBudget: 0` で thinking 無効。flash 系モデルのときのみ付与）
 - **6 記事を 1 リクエストにまとめて解析**。約 45 記事でもリクエスト数は 8 回程度となり、無料枠 15 RPM と衝突しない（v1.0 では 1 記事 1 リクエストでエラー率 54% に達していた）。
 - 出力（記事ごと）: `id` / `title`（英語なら日本語訳）/ `summary`（3 行）/ `tags`（3 個）/ `category`（固定リストから 1 つ）/ `score`（0–100、クランプ済み）/ `score_reason`
 - カテゴリ固定リスト: AI・機械学習 / Web・フロントエンド / バックエンド・インフラ / セキュリティ / プログラミング言語 / モバイル / ハードウェア・ガジェット / ビジネス・業界動向 / その他
 - **解析状態は `analysis_status` フィールド**（`ok` / `error` / `skipped`）で管理（文字列マッチによる判定は廃止）。
 - レート制限対策: リクエスト間 4 秒、429/5xx は指数バックオフ（上限 30 秒）で最大 3 回リトライ。
-- 全体タイムアウト 480 秒。超過分は `analysis_status: "skipped"` で埋める。
+- 全体タイムアウト 840 秒。超過分は `analysis_status: "skipped"` で埋める。
 
 ### 4.5 HOT スコアリング
 
@@ -131,7 +130,7 @@ IT 技術ニュースを 9 ソースから毎日自動収集し、記事本文�
   "total_count": 45,
   "success_count": 43,
   "error_count": 2,            // analysis_status が error/skipped の合計
-  "gemini_model": "gemini-2.5-flash-lite",
+  "gemini_model": "gemini-2.5-flash",
   "articles": [
     {
       "title": "…",             // 日本語化済みタイトル
@@ -256,9 +255,11 @@ score ≥ 80 の上位 10 件を対象に、設定済みのチャネルすべて
 
 ## 6. CI/CD（.github/workflows/update.yml）
 
-- トリガー: cron `0 22 * * *`（JST 07:00）+ `workflow_dispatch`
-- `timeout-minutes: 12`、Python 3.12、pip キャッシュあり。
-- 手順: checkout → `gather.py` 実行 → `models.json` 取得 → `data.json` / `archive/` / `models.json` / `feed.xml` /（存在すれば）`digest.json` を自動コミット & push → 失敗時 Discord アラート。
+- トリガー: cron `17 19 * * *`（JST 04:17 起動。schedule の遅延対策で前倒し・毎時0分を回避）+ `workflow_dispatch`
+- Python 3.12、pip キャッシュあり。3 ジョブ構成:
+  - **collect**（timeout 20 分、concurrency `pages`）: `pytest` → `gather.py --no-notify` → `gadget.py --no-notify`（continue-on-error）→ 通知用データを artifact 保存 → `data.json` / `archive/` / `feed.xml` /（存在すれば）`digest.json`・`gadgets.json` を自動コミット & push → Pages デプロイ
+  - **notify**（timeout 240 分）: artifact を取得 → `gather.py --notify-only`（定期実行時は `NOTIFY_AT_JST=07:00` まで待機）→ `gadget.py --notify-only`（continue-on-error）
+  - **alert**: collect / notify の失敗・キャンセル時に Discord アラート
 - Secrets: `GEMINI_API_KEY`（必須）, `DISCORD_WEBHOOK_URL` / `SLACK_WEBHOOK_URL` / `LINE_CHANNEL_ACCESS_TOKEN`（任意）
 
 ## 7. 残存する制約

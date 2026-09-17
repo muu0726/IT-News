@@ -1,6 +1,6 @@
 # 📡 IT Info Hub — AI技術ニュースダッシュボード
 
-IT技術情報を 9 つの主要ソースから自動収集し、**Gemini 2.5 Flash-Lite** で本文解析・スコアリング・自動要約を行い、Notion風の PWA ダッシュボードで閲覧できるサーバーレスシステムです。
+IT技術情報を 9 つの主要ソースから自動収集し、**Gemini 2.5 Flash**（thinking 無効）で本文解析・スコアリング・自動要約を行い、Notion風の PWA ダッシュボードで閲覧できるサーバーレスシステムです。
 
 ## ✨ 主な機能
 
@@ -8,7 +8,7 @@ IT技術情報を 9 つの主要ソースから自動収集し、**Gemini 2.5 Fl
 | 機能 | 説明 |
 |------|------|
 | **マルチソース収集** | Hacker News, Zenn, Qiita, Reddit, はてなブックマーク, Publickey, Dev.to, GitHub Blog, arXiv cs.AI |
-| **本文ベースのAI解析** | 記事本文を取得し、Gemini 2.5 Flash-Lite で3行要約・タグ・カテゴリ・重要度スコア（0〜100）を生成 |
+| **本文ベースのAI解析** | 記事本文を取得し、Gemini 2.5 Flash で3行要約・タグ・カテゴリ・重要度スコア（0〜100）を生成 |
 | **バッチ解析** | 6記事を1リクエストでバッチ処理し、APIレート制限（15 RPM）との衝突を回避 |
 | **英語記事の日本語化** | 英語タイトル・要約を自動で自然な日本語に翻訳 |
 | **HOT検知** | 複数ソースに出現する注目記事を自動検知しスコア加点（+20点） |
@@ -66,7 +66,7 @@ git push -u origin main
 pip install -r requirements.txt
 
 # ユニットテストの実行
-pytest test_gather.py
+pytest
 
 # データ収集 & 解析の実行
 export GEMINI_API_KEY="your-api-key"
@@ -88,7 +88,6 @@ python -m http.server 8000
 ├── data.json                  # 最新の収集データ（自動生成・スコア降順）
 ├── feed.xml                   # RSS 2.0 フィード（スコア上位20件・自動生成）
 ├── digest.json                # 週間ダイジェスト（毎週日曜に自動生成）
-├── models.json                # Gemini 利用可能モデル一覧スナップショット（自動取得）
 ├── archive/                   # 日付別アーカイブ（自動生成・180日保持）
 │   ├── index.json             # アーカイブ一覧
 │   └── YYYY-MM-DD.json
@@ -100,14 +99,12 @@ python -m http.server 8000
 ```
 
 ## ⏰ 自動実行スケジュール
-- **毎日 午前7時（JST / UTC 22:00）** に GitHub Actions が自動実行。
+- **毎日 JST 4:17（UTC 19:17）** に GitHub Actions が起動し、通知は **JST 7:00** に送信（schedule の遅延対策で前倒し起動）。
 - 実行フロー:
-  1. `pytest test_gather.py` でユニットテストを実行
-  2. `gather.py` で 9 ソースから収集・Gemini バッチ解析・スコアリング
-  3. 利用可能モデル一覧 (`models.json`) を取得
-  4. 生成データ (`data.json`, `archive/`, `feed.xml` 等) を Git コミット & プッシュ
-  5. GitHub Pages への自動デプロイ
-  6. 実行失敗時は Discord Webhook へ失敗アラートを通知
+  1. collect ジョブ: `pytest` → `gather.py --no-notify`（9 ソース収集・Gemini バッチ解析）→ `gadget.py --no-notify`（ガジェット情報）
+  2. 生成データ (`data.json`, `archive/`, `feed.xml`, `gadgets.json` 等) を Git コミット & プッシュし、GitHub Pages へデプロイ
+  3. notify ジョブ: 7:00 まで待機して IT ニュース通知 → ガジェット通知（最大3件、別メッセージ）
+  4. 実行失敗・タイムアウト時は Discord Webhook へ失敗アラートを通知
 - **毎週日曜** は週間ダイジェスト (`digest.json`) を自動生成し Discord へ投稿。
 - **手動実行**: GitHub の Actions タブ → `IT Info Collector - 定期実行` → `Run workflow`
 
