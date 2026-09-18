@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 17 Sep 2026 22:18:09 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 21:49:17 +0000</lastBuildDate>
     <item>
-      <title>AWS、中東のデータ「復旧不能」と正式発表。バーレーン全域とUAEの1ゾーンが永久喪失</title>
-      <link>https://joho-todai.com/aws-middle-east-data-permanently-lost/</link>
-      <guid isPermaLink="false">https://joho-todai.com/aws-middle-east-data-permanently-lost/</guid>
-      <description>[Score: 95] AWSは、中東リージョン（バーレーン全域とUAEの1AZ）に保管されていたデータが物理的攻撃により復旧不能になったと正式発表しました。 / これは、複数AZ構成による冗長性の前提を超えるリージョン全体の物理的破壊という、クラウドの災害対策における新たな課題を提示しています。 / 多くの顧客は他リージョンへの移行を完了したものの、規制業種にとってはデータ国内保存義務など複雑な問題が残ります。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 16 Sep 2026 23:15:24 +0000</pubDate>
+      <title>Cache-to-Cache: LLM間の直接的な意味的コミュニケーション (2025)</title>
+      <link>https://arxiv.org/abs/2510.03215</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2510.03215</guid>
+      <description>[Score: 95] 2025年の論文「Cache-to-Cache: Direct Semantic Communication Between LLMs」がarXivに掲載されました。 / この研究は、大規模言語モデル（LLM）間で直接的な意味的コミュニケーションを実現する新しい手法を提案している可能性があります。 / arXivLabsのフレームワークを通じて公開されており、LLM間の連携や効率的な情報共有の未来に影響を与える画期的な研究となるかもしれません。 (Source: Hacker News)</description>
+      <pubDate>Fri, 18 Sep 2026 18:55:35 +0000</pubDate>
     </item>
     <item>
-      <title>WHERE句が1つ欠けているだけで、別の顧客のデータが露出する可能性がある</title>
-      <link>https://dev.to/bootsaas/one-missing-where-clause-can-expose-another-customers-data-2n0c</link>
-      <guid isPermaLink="false">https://dev.to/bootsaas/one-missing-where-clause-can-expose-another-customers-data-2n0c</guid>
-      <description>[Score: 95] この記事は、B2B SaaSにおけるマルチテナント環境でのデータ分離の重要性について解説しています。 / WHERE句の欠落が、認証されたユーザーであっても他の顧客のデータを閲覧してしまうリスクを生むことを指摘しています。 / BootSaaSの例を挙げ、テナントごとのスキーマアーキテクチャを採用することで、顧客データの分離とセキュリティを確保する方法を提案しています。 (Source: Dev.to)</description>
-      <pubDate>Thu, 17 Sep 2026 21:51:46 +0000</pubDate>
+      <title>Devinが仮想環境でmacOSの提供開始。Macの実機不要でDevinがコード生成、テスト、デバッグ、実行、AppStore配信前のベータ公開まで実行</title>
+      <link>https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html</guid>
+      <description>[Score: 95] コーディングAIエージェントDevinが、仮想環境でmacOSの提供を開始しました。 / これにより、ユーザーはMacの実機がなくても、Devinの仮想環境内でmacOSやiOS向けのコード生成、テスト、デバッグ、実行が可能です。 / さらに、AppStore配信前のTestFlightによるベータ公開までDevinに任せられるようになり、開発プロセスが大幅に効率化されます。 (Source: Publickey)</description>
+      <pubDate>Wed, 16 Sep 2026 16:00:51 +0000</pubDate>
     </item>
     <item>
-      <title>Bonsai 2 27B: 9倍小さいフットプリントでほぼロスレスな圧縮を実現</title>
-      <link>https://prismml.com/news/bonsai-2-27b</link>
-      <guid isPermaLink="false">https://prismml.com/news/bonsai-2-27b</guid>
-      <description>[Score: 92] PrismMLは、27Bクラスのマルチモーダルモデル「Ternary Bonsai 2 27B」を発表しました。 / このモデルは、Qwen3.8 27Bをベースに、98.2%のベンチマーク性能を維持しつつ、モデルサイズを9分の1に圧縮（5.9GB）しています。 / これにより、ローカルデバイスでの効率的な実行、高いスループット、優れたエネルギー効率を実現し、より多くの場所でのAI展開を可能にします。 (Source: Hacker News)</description>
-      <pubDate>Thu, 17 Sep 2026 21:13:31 +0000</pubDate>
+      <title>GitHub CopilotランタイムをCopilotを使ってRustに移行</title>
+      <link>https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/</guid>
+      <description>[Score: 95] GitHub Copilot CLI、GitHub Copilotアプリ、GitHub Copilot SDKの基盤となるCopilotエージェントランタイムが、TypeScript/Node.jsからRustへ移行されました。 / この移行は、GitHub CopilotアプリとCopilot CLIを駆使し、AIエージェントがコードの大部分を生成することで、わずか数ヶ月で完了しました。 / Rustへの移行により、ランタイムのパフォーマンスが大幅に向上し、開発期間も大幅に短縮され、AIによる大規模なコードリファクタリングの可能性を示しています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 17 Sep 2026 00:26:43 +0000</pubDate>
     </item>
     <item>
-      <title>法律向けAstra</title>
-      <link>https://openai.com/index/astra-for-law/</link>
-      <guid isPermaLink="false">https://openai.com/index/astra-for-law/</guid>
-      <description>[Score: 90] OpenAIは、法律事務所やリーガルテック企業向けに特化した新しいAI基盤「Astra for Law」を発表しました。 / 最新の強力なモデルGPT-6 Astraを基盤とし、法律専門の検索インデックスや分析・執筆ツールを統合しています。 / これにより、法律業務におけるAI製品開発とワークフロー構築を支援し、プライバシーとガバナンスの強化も図られています。 (Source: Hacker News)</description>
-      <pubDate>Thu, 17 Sep 2026 20:17:48 +0000</pubDate>
+      <title>Cloudflareがさらに100TBのRAMを節約</title>
+      <link>https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/</link>
+      <guid isPermaLink="false">https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/</guid>
+      <description>[Score: 90] Cloudflareが、数学的な最適化によりPingoraベースのサービスで100TB以上のRAMを節約したと発表しました。 / これは、負荷分散サービス「Pingora Backend Router」における一貫性ハッシュライブラリ「pingora-ketama」のメモリ使用量を削減した結果です。 / 大規模インフラにおけるわずかな改善が、全体として莫大なリソース節約につながることを示す事例であり、効率的な運用技術の重要性を強調しています。 (Source: Hacker News)</description>
+      <pubDate>Fri, 18 Sep 2026 18:51:46 +0000</pubDate>
     </item>
     <item>
-      <title>TypeSafeのJevを正しく驚く、それってLLMでできませんか？</title>
-      <link>https://zenn.dev/nwn/articles/824026c76116e0</link>
-      <guid isPermaLink="false">https://zenn.dev/nwn/articles/824026c76116e0</guid>
-      <description>[Score: 90] TypeSafe AIのJevがLLMと比べて高速であるという主張に対し、既存のLLMでも同様の高速化が可能ではないかという検証記事です。 / LLMでJSON全体を生成するのではなく、出力候補のlogitを比較することで、大幅な高速化（77倍）を実現できることを示しました。 / Jevのリアルタイム制御能力についても、画像入力の非対応やハーネスの利用を指摘し、LLMでも同様のアプローチが可能であることを示唆しています。 (Source: Zenn)</description>
-      <pubDate>Thu, 17 Sep 2026 06:56:15 +0000</pubDate>
+      <title>全社に OpenCode + LiteLLM を導入してコストを抑えつつ AI 活用を進めている話</title>
+      <link>https://zenn.dev/jtcc/articles/7e74fef42580a1</link>
+      <guid isPermaLink="false">https://zenn.dev/jtcc/articles/7e74fef42580a1</guid>
+      <description>[Score: 90] 日本トレカセンターが全社員向けにOpenCodeとLiteLLMを導入し、AI活用を推進しつつコストを10分の1以下に削減した事例が紹介されています。 / LiteLLMをLLMゲートウェイとして利用することで、プロンプトの可視化、モデルの制御、社員ごとの予算上限設定を実現し、セキュリティとコスト管理を両立しています。 / これにより、AIツールの乱立を防ぎ、社内でのAI利用状況を把握しつつ、新しいモデルの導入も容易になるなど、企業におけるAIガバナンスの好事例となっています。 (Source: Zenn)</description>
+      <pubDate>Fri, 18 Sep 2026 00:08:15 +0000</pubDate>
     </item>
     <item>
-      <title>新言語「Hike」をシステムに採用したらバイナリ99.8%削減・ネットワークも実働処理も爆速になった話</title>
-      <link>https://qiita.com/kinop3/items/fdb57313458c2aa1bcdc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kinop3/items/fdb57313458c2aa1bcdc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 筆者は、ファイル暗号化・大量送信システムに新言語「Hike」を採用し、バイナリサイズを99.8%削減、処理速度も大幅に向上させました。 / HikeはGoライクな構文で開発しやすく、VSCodeでのソースレベルデバッグやAI（Gemini）との相性も良く、開発効率も向上しました。 / Go言語のWASMと比較しても圧倒的な軽量性と高速性を実現し、実務システムへの導入成功事例としてその効果を報告しています。 (Source: Qiita)</description>
-      <pubDate>Tue, 15 Sep 2026 05:32:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>ハッカーが盗まれたFlockカメラから暗号化キーを発見、企業は否定するも27,000以上のクリップと160万枚の画像を抽出</title>
-      <link>https://www.reddit.com/r/technology/comments/1wiv3uy/hackers_find_encryption_keys_stored_on_stolen/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wiv3uy/hackers_find_encryption_keys_stored_on_stolen/</guid>
-      <description>[Score: 90] ハッカー集団が盗まれたFlock製カメラから暗号化キーを発見し、企業が否定していたにもかかわらずデータにアクセスしました。 / 21日間にわたって撮影された27,000以上の動画クリップと160万枚の画像が抽出されたとのことです。 / これは、IoTデバイスのセキュリティとデータ保護に関する深刻な問題を示しています。 (Source: Reddit)</description>
-      <pubDate>Thu, 17 Sep 2026 14:10:55 +0000</pubDate>
+      <title>Jevとは何か？ 従来型LLMやAIエージェントとの違いを理解する</title>
+      <link>https://qiita.com/nasuvitz/items/44f20ed515b9734afb26?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/nasuvitz/items/44f20ed515b9734afb26?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] TypeSafe AIが発表した「Jev」は、文章や業務データを読み取り、分類・採点・条件判定の結果を確率付きで返すAIモデルである。 / 従来のLLMやAIエージェントが複雑な処理を文字列で指示するのに対し、Jevは型付きの値を返し、アプリケーションが直接利用しやすいように設計されている。 / これにより、業務システムの判断処理を効率化し、プログラムの制御を簡素化することが期待される。 (Source: Qiita)</description>
+      <pubDate>Thu, 17 Sep 2026 13:26:18 +0000</pubDate>
     </item>
     <item>
       <title>PlanetScale、PostgreSQLのシャーディングを自動化して1億1800万QPSを達成。新DBサービス「Neki」をプレビュー公開</title>
       <link>https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html</guid>
-      <description>[Score: 90] PlanetScaleが、PostgreSQLのシャーディングを自動化する新DBサービス「Neki」をプレビュー公開しました。 / これにより、PostgreSQLで1億1800万QPSという驚異的なクエリ処理性能を達成し、大規模な分散処理を可能にします。 / YouTubeのVitessにインスパイアされた仕組みで、PostgreSQLのスケーラビリティを飛躍的に向上させます。 (Source: Publickey)</description>
+      <description>[Score: 90] PlanetScaleが、PostgreSQLのシャーディングを自動化する新DBサービス「Neki」をプレビュー公開しました。 / Nekiは、YouTubeが開発したMySQLのスケーラブル化技術「Vitess」にインスパイアされた仕組みを用いて構築されています。 / これにより、PostgreSQLで1億1800万QPSという高いクエリ処理性能と大規模なデータ分散処理を実現し、スケーラブルなデータベースサービスを提供します。 (Source: Publickey)</description>
       <pubDate>Thu, 17 Sep 2026 15:59:39 +0000</pubDate>
     </item>
     <item>
       <title>オラクル、Javaのセキュリティパッチを毎月提供開始、AIが脆弱性の発見を加速しているとして</title>
       <link>https://www.publickey1.jp/blog/26/javaai.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javaai.html</guid>
-      <description>[Score: 90] OracleがJavaのセキュリティパッチ提供サイクルを、これまでの3ヶ月ごとから毎月へと変更することを発表しました。 / これは、AIの進化により脆弱性の発見と修正が加速している現状に対応するためです。 / 毎月提供されるCSPU（Critical Security Patch Updates）により、ユーザーは高優先度の脆弱性に対し迅速に対処できるようになります。 (Source: Publickey)</description>
+      <description>[Score: 90] Oracleは、Javaのセキュリティパッチ提供サイクルを従来の3ヶ月ごとから毎月へと変更することを発表しました。 / これは、AIの進化により脆弱性の発見と修正が加速している現状に対応するためです。 / 「Critical Security Patch Updates (CSPU)」として毎月提供され、ユーザーは高優先度の脆弱性により迅速に対処できるようになります。 (Source: Publickey)</description>
       <pubDate>Tue, 15 Sep 2026 15:49:38 +0000</pubDate>
     </item>
     <item>
-      <title>Devinが仮想環境でmacOSの提供開始。Macの実機不要でDevinがコード生成、テスト、デバッグ、実行、AppStore配信前のベータ公開まで実行</title>
-      <link>https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html</guid>
-      <description>[Score: 88] コーディングAIエージェントDevinが、仮想環境でmacOSの提供を開始しました。 / これにより、Macの実機がなくてもDevinの仮想環境内でmacOS/iOSアプリのコード生成、テスト、デバッグ、実行、さらにはTestFlightでのベータ公開まで一貫して行えるようになります。 / 開発者はMacハードウェアの制約から解放され、より効率的な開発が可能になります。 (Source: Publickey)</description>
-      <pubDate>Wed, 16 Sep 2026 16:00:51 +0000</pubDate>
+      <title>話題のJevとは？文章を書かずに判断だけを返すAIモデルをざっくり解説</title>
+      <link>https://qiita.com/yushibats/items/472325ce548da370ed5d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yushibats/items/472325ce548da370ed5d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] Jevは、文章を生成せず、与えられた状況に対して事前に用意された選択肢の中から最適なものを確率付きで返すAIモデルである。 / LLMが記述式答案のように文章を生成するのに対し、Jevはマークシートのように選択肢に確率を返すため、応答が速く料金も低い。 / stateとquestionsの2つでリクエストを構成し、分類、採点、条件判定といった用途に特化している。 (Source: Qiita)</description>
+      <pubDate>Fri, 18 Sep 2026 05:21:55 +0000</pubDate>
     </item>
     <item>
-      <title>Bend – 証明によってAIの誤りを防ぎ、GPUで動作する言語</title>
-      <link>https://bend-lang.com/</link>
-      <guid isPermaLink="false">https://bend-lang.com/</guid>
-      <description>[Score: 85] Bendは、AIの誤りを証明によって防ぎ、GPU上で高速に動作する新しいプログラミング言語です。 / C言語並みの速度とCUDA並列処理能力を持ち、LeanやRocqのような証明チェッカーを統合しています。 / AIがコードを生成する未来において、人間の意図を正確に伝え、その実装を検証する手段を提供することを目指しています。 (Source: Hacker News)</description>
-      <pubDate>Thu, 17 Sep 2026 20:36:13 +0000</pubDate>
+      <title>Cloudflare Quick Tunnels</title>
+      <link>https://try.cloudflare.com/</link>
+      <guid isPermaLink="false">https://try.cloudflare.com/</guid>
+      <description>[Score: 85] Cloudflare Quick Tunnelsは、ローカルサーバーをCloudflareのエッジ経由で公開URLにするためのシンプルなツールです。 / アカウント登録やDNS設定、ポート開放が不要で、`cloudflared`コマンド一つで安全なトンネルを確立できます。 / 開発中のウェブサービスやWebhookのテスト、デモ環境の共有などに最適で、HTTPSとDDoS対策が自動で適用されます。 (Source: Hacker News)</description>
+      <pubDate>Fri, 18 Sep 2026 14:18:41 +0000</pubDate>
     </item>
     <item>
-      <title>jev 同士に五目並べで対戦させた</title>
-      <link>https://zenn.dev/mizchi/articles/jev-plays-gomoku</link>
-      <guid isPermaLink="false">https://zenn.dev/mizchi/articles/jev-plays-gomoku</guid>
-      <description>[Score: 85] 構造化されたエージェント「Jev」を五目並べで対戦させ、その速度と精度を検証しました。 / Jevは出力を限定することで高速かつ高精度な推論を実現し、チャットAIとは異なるアプローチを取ります。 / プログラマは既存のチャットアシスタントよりもJevのような構造化エージェントを好む可能性が示唆されています。 (Source: Zenn)</description>
-      <pubDate>Thu, 17 Sep 2026 12:28:36 +0000</pubDate>
+      <title>光子放出誘導レーザー故障注入がRP2350のセキュアデバッグを可能にする</title>
+      <link>https://donjon.ledger.com/blog/rp2350-secure-debug-laser-fault-injection/</link>
+      <guid isPermaLink="false">https://donjon.ledger.com/blog/rp2350-secure-debug-laser-fault-injection/</guid>
+      <description>[Score: 85] Raspberry PiのマイクロコントローラRP2350において、デバッグ機能有効化レジスタを特定し、レーザー故障注入によりデバッガーアクセスを復元する手法が発見されました。 / これにより、永続的に無効化されたはずのセキュアワールドへのアクセスが可能となり、ワンタイムプログラマブルメモリから秘密情報を回復することに成功しています。 / この攻撃には物理的なアクセス、破壊的な準備、約25万ドルの実験設備が必要であり、高度な専門知識が求められます。 (Source: Hacker News)</description>
+      <pubDate>Fri, 18 Sep 2026 16:54:18 +0000</pubDate>
     </item>
     <item>
-      <title>WebMCPを試してみた感想。フロントエンドの必須技術になりそうな予感。</title>
-      <link>https://zenn.dev/chot/articles/268804cd6694ab</link>
-      <guid isPermaLink="false">https://zenn.dev/chot/articles/268804cd6694ab</guid>
-      <description>[Score: 85] WebMCPは、AIエージェントがWebページを直接操作するための仕組みで、フロントエンドにツールを登録します。 / 筆者は自社CMSのデザインエディターにWebMCPを実験的に組み込み、AIによるページ作成・編集の効率化を検証しました。 / 宣言型と命令型の定義方法があり、React製アプリには命令型を採用し、GPT-6 Astraモデルでテストした結果、AIがWebページを自力で操作できることを確認しました。 (Source: Zenn)</description>
-      <pubDate>Thu, 17 Sep 2026 04:12:12 +0000</pubDate>
+      <title>PRのCI稼働時間を7割削減した話</title>
+      <link>https://zenn.dev/innovation/articles/e84f8ccca8e6da</link>
+      <guid isPermaLink="false">https://zenn.dev/innovation/articles/e84f8ccca8e6da</guid>
+      <description>[Score: 85] イノベーション開発チームが、AIエージェントの導入で増加したCI稼働時間を73%削減した事例を紹介。 / GitHub ActionsのPRのCIが全体の9割を占め、テスト実行時間の削減が課題だった。 / 変更されたパッケージと依存関係にあるテストのみを実行する戦略に変更し、大幅な時間短縮を実現した。 (Source: Zenn)</description>
+      <pubDate>Fri, 18 Sep 2026 00:00:07 +0000</pubDate>
     </item>
     <item>
-      <title>Reddit AMA: ロイター記者が語る、マーク・ザッカーバーグのMeta社員をAIに置き換える計画とその破綻</title>
-      <link>https://www.reddit.com/r/technology/comments/1w5k5h4/hi_reddit_im_katie_paul_a_reuters_journalist_who/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1w5k5h4/hi_reddit_im_katie_paul_a_reuters_journalist_who/</guid>
-      <description>[Score: 85] ロイターのジャーナリスト、ケイティ・ポール氏がRedditでAMA（Ask Me Anything）を実施しました。 / 彼女はマーク・ザッカーバーグ氏がMetaの従業員をAIに置き換える計画を明らかにし、その計画がどのように頓挫したかを語りました。 / AIによる人員削減の試みとその失敗について、詳細な洞察が提供されると予想されます。 (Source: Reddit)</description>
-      <pubDate>Wed, 02 Sep 2026 19:18:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>オントロジー？ナレッジグラフ？AI時代のデータ基盤用語をざっくり理解する - Qiita</title>
-      <link>https://qiita.com/yushibats/items/d4e3e0186f4d8eb83874?utm_source=dlvr.it&amp;utm_medium=twitter</link>
-      <guid isPermaLink="false">https://qiita.com/yushibats/items/d4e3e0186f4d8eb83874?utm_source=dlvr.it&amp;utm_medium=twitter</guid>
-      <description>[Score: 85] AI時代のデータ基盤において、オントロジーやナレッジグラフといった用語の重要性が増しています。 / これらは単にデータを蓄積するだけでなく、データの意味、関係性、信頼性を整理し、AIが活用しやすい状態にするための概念です。 / グラフ構造を用いてデータ間の「つながり」を表現することで、従来のテーブル形式では難しかった複雑な関係性の追跡やAIによる高度な分析を可能にします。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 17 Sep 2026 11:02:23 +0000</pubDate>
+      <title>【徹底解説】DeepSeek v4.1 Flashの内部構造【最適化したから解ること】｜shi3z</title>
+      <link>https://note.com/shi3zblog/n/n6d4fbe03218e</link>
+      <guid isPermaLink="false">https://note.com/shi3zblog/n/n6d4fbe03218e</guid>
+      <description>[Score: 85] DeepSeek v4.1 Flashの推論エンジン高速化を通じて得られた、その内部構造とアーキテクチャの秘密が解説されています。 / 従来の「スケールの法則」とは異なり、DeepSeekは「計算しなくていいものを、どうやって計算しないか」という思想で進化している点が強調されています。 / モデルを巨大化しつつも、実際に使用する部分を限定することで効率化を図る、最新LLMのクレバーなアプローチが紹介されています。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 18 Sep 2026 14:45:34 +0000</pubDate>
     </item>
     <item>
       <title>「Java 27」正式リリース。全環境でG1 GCがデフォルトに、TLS 1.3用に耐量子暗号のハイブリッドキー交換など新機能</title>
       <link>https://www.publickey1.jp/blog/26/java_27g1_gctls_13.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/java_27g1_gctls_13.html</guid>
-      <description>[Score: 85] OracleがJavaの最新バージョン「Java 27」を正式リリースしました。 / このバージョンでは、全環境でG1 GCがデフォルトとなり、TLS 1.3向けに耐量子暗号のハイブリッドキー交換が導入されています。 / Javaは6ヶ月ごとにフィーチャーリリースが行われ、2年ごとにLTS版が指定されますが、Java 27はLTSではないため、6ヶ月後にサポートが終了します。 (Source: Publickey)</description>
+      <description>[Score: 85] OracleがJavaの最新バージョン「Java 27」を正式リリースしました。 / 全環境でG1 GCがデフォルトとなり、TLS 1.3向けに耐量子暗号のハイブリッドキー交換が導入されるなど、パフォーマンスとセキュリティが強化されています。 / Javaは6ヶ月ごとに新バージョンがリリースされ、2年ごとにLTS版が提供されますが、Java 27はLTSではないため、サポート期間は6ヶ月となります。 (Source: Publickey)</description>
       <pubDate>Tue, 15 Sep 2026 15:52:17 +0000</pubDate>
     </item>
     <item>
-      <title>富士通、国産次世代CPU「FUJITSU-MONAKA」を発表</title>
-      <link>https://global.fujitsu/en-global/pr/news/2026/09/14-02</link>
-      <guid isPermaLink="false">https://global.fujitsu/en-global/pr/news/2026/09/14-02</guid>
-      <description>[Score: 80] 富士通が日本製の次世代CPU「FUJITSU-MONAKA」を発表しました。 / 詳細なスペックは不明ですが、国産CPUとして高性能が期待されます。 / 今後のITインフラやスーパーコンピュータ分野への影響が注目されます。 (Source: Hacker News)</description>
-      <pubDate>Tue, 15 Sep 2026 17:28:38 +0000</pubDate>
+      <title>Lux Stay Agent — コンテンツが構造化されているからこそ機能するホテル旅行代理店</title>
+      <link>https://dev.to/jeffreyturov/lux-stay-agent-a-hotel-travel-agent-that-only-works-because-its-content-is-structured-5ff6</link>
+      <guid isPermaLink="false">https://dev.to/jeffreyturov/lux-stay-agent-a-hotel-travel-agent-that-only-works-because-its-content-is-structured-5ff6</guid>
+      <description>[Score: 85] Sanity Challengeの課題として、ルクセンブルクのホテルが実際の運用コンテンツ（料金、メニュー、交通情報など）を構造化データとしてSanity Knowledge Baseに格納し、AIエージェント「Lux Stay Agent」を構築しました。 / このエージェントは、構造化されたコンテンツを正確にクエリすることで、旅行者の質問（仏/英/独）に誤りのない具体的な数値で回答します。 / キーワード検索やLLM単体では不可能な、正確で信頼性の高い情報提供を実現し、構造化コンテンツの重要性を示しています。 (Source: Dev.to)</description>
+      <pubDate>Fri, 18 Sep 2026 21:24:36 +0000</pubDate>
     </item>
     <item>
-      <title>Jevとは何か？ 従来型LLMやAIエージェントとの違いを理解する</title>
-      <link>https://qiita.com/nasuvitz/items/44f20ed515b9734afb26?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/nasuvitz/items/44f20ed515b9734afb26?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Jevは、文章や業務データを読み取り、分類・採点・条件判定の結果を確率付きで返すAIモデルで、アプリケーションの処理分岐に利用されます。 / 従来のLLMとAIエージェントが指示文を返すのに対し、Jevは型付きの値を返すことで、プログラムが直接利用しやすい出力を重視しています。 / これにより、業務システムにおける判断処理をより明確かつ効率的に実装できる点が、従来のAI技術との大きな違いとして説明されています。 (Source: Qiita)</description>
-      <pubDate>Thu, 17 Sep 2026 13:26:18 +0000</pubDate>
+      <title>提言：自己進化するオペレーティングシステム層で基盤モデルを仮想化する時が来た</title>
+      <link>https://arxiv.org/abs/2609.19203</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2609.19203</guid>
+      <description>[Score: 85] 本記事は、基盤モデルを自己進化するオペレーティングシステム層で仮想化するという革新的な提言を行っています。 / これにより、基盤モデルの管理、最適化、およびスケーラビリティが大幅に向上する可能性があります。 / AIシステムのアーキテクチャに大きな変革をもたらす可能性を秘めた、先見的なアイデアです。 (Source: arXiv cs.AI)</description>
+      <pubDate>Fri, 18 Sep 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Android 17が3.x以来初めてAOSPにリリースせずに新しいAPIを追加</title>
+      <link>https://grapheneos.social/@GrapheneOS/117282080803799576</link>
+      <guid isPermaLink="false">https://grapheneos.social/@GrapheneOS/117282080803799576</guid>
+      <description>[Score: 80] Android 17 QPR1が、Android 3.x以来初めてAOSP（Android Open Source Project）にリリースされることなく新しいAPIを追加したことが報じられました。 / これは、Androidのオープンソースモデルにおける重要な変更を示唆しており、今後のAPI提供方法に影響を与える可能性があります。 / GrapheneOSからの情報であり、Androidエコシステムにおける透明性や開発者への影響が懸念されます。 (Source: Hacker News)</description>
+      <pubDate>Fri, 18 Sep 2026 19:03:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>既存の LLM が CPU なら、 Jev はその GPU 版みたいなやつ</title>
+      <link>https://zenn.dev/mizchi/articles/jev-is-gpu-for-llms</link>
+      <guid isPermaLink="false">https://zenn.dev/mizchi/articles/jev-is-gpu-for-llms</guid>
+      <description>[Score: 80] Jevは、既存のLLMが自然言語を介してJSONのような構造を出力するのに対し、最初から構造化データを出力するように設計されたモデルです。 / Tool Callの概念をさらに進化させ、自然言語の生成を介さずに直接JSONのような構造を出力することで、高速な処理を実現しています。 / 特に、事前に用意された選択肢に対してスコアを付ける形式であるため、深い推論には不向きですが、特定のユースケースでは非常に高速かつ低コストで利用できる可能性を秘めています。 (Source: Zenn)</description>
+      <pubDate>Fri, 18 Sep 2026 07:27:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Unityの1万超アセット配信を3時間→13分にした設計</title>
+      <link>https://qiita.com/harusann2/items/50d638e7a3c2d76e0531?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/harusann2/items/50d638e7a3c2d76e0531?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Unity製ソーシャルゲームで1万ファイル以上のアセット配信に3時間かかっていた問題を、約13分に短縮した事例。 / 全アセットを1つのファイルにまとめる「Asset Ball」という設計を導入し、HTTPリクエストのオーバーヘッドを削減。 / 更新されたアセットを常に末尾に配置するルールにより、初回ダウンロードだけでなく差分更新も高速化を実現した。 (Source: Qiita)</description>
+      <pubDate>Thu, 17 Sep 2026 07:19:57 +0000</pubDate>
     </item>
     <item>
       <title>Android、パスキーをパスワードマネージャ間で転送可能に。Googleパスワードマネージャ、1Password、Bitwarden、Dashlaneなどが対応</title>
       <link>https://www.publickey1.jp/blog/26/androidgoogle1passwordbitwardendashlane.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/androidgoogle1passwordbitwardendashlane.html</guid>
-      <description>[Score: 80] Android上でパスキーをパスワードマネージャ間で転送できるようになり、パスワードマネージャの移行が容易になりました。 / これにより、Googleパスワードマネージャ、1Password、Bitwarden、Dashlaneなどの主要サービス間でパスキーを安全に移動できます。 / パスワードレス認証の普及を促進し、ユーザーの利便性とセキュリティ向上に貢献します。 (Source: Publickey)</description>
+      <description>[Score: 80] GoogleがAndroid上で、パスキーをパスワードマネージャ間で転送可能にしたと発表しました。 / これにより、Googleパスワードマネージャに登録したパスキーを1PasswordやBitwardenなどの他のマネージャに簡単に移行できるようになります。 / パスワードレス認証の普及を促進し、ユーザーの利便性とセキュリティ向上に貢献する重要な機能改善です。 (Source: Publickey)</description>
       <pubDate>Wed, 16 Sep 2026 15:51:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>常駐コンテキストを削りClaude Codeのコストを抑えてみた</title>
-      <link>https://qiita.com/ya-mizobuchi/items/6ae906dd28bf61b32329?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ya-mizobuchi/items/6ae906dd28bf61b32329?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 78] Claude Codeは会話ごとにコンテキストを送り直すため、常駐コンテキストのトークン消費がコストの大部分を占めることが課題でした。 / 筆者は「必要な情報を、必要になった時だけ読み込む」仕組みを導入し、常駐コンテキストを索引として利用することで、トークン消費を大幅に削減しました。 / これにより、使われないルールや文書の読み込みをなくし、コスト削減と効率化を実現した具体的な方法が紹介されています。 (Source: Qiita)</description>
-      <pubDate>Thu, 17 Sep 2026 02:06:07 +0000</pubDate>
     </item>
   </channel>
 </rss>
