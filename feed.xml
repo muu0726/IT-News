@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 24 Sep 2026 22:29:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 22:26:33 +0000</lastBuildDate>
     <item>
-      <title>MCP サーバーと繋いだだけで情報漏洩？ 危険の4パターンと事前に確認すべき7つのことをまとめてみた</title>
-      <link>https://qiita.com/songchong/items/89175eaa7a30f71d0351?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/89175eaa7a30f71d0351?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 95] MCP（Model Context Protocol）サーバーとAIエージェントを接続する際に発生しうる情報漏洩の危険性について解説した記事です。 / ツールポイズニングや間接プロンプトインジェクションなど、4つの危険パターンと、接続前に確認すべき7つの事項をまとめています。 / AIがツールの呼び出しを自動で決定するMCPの特性が、新たなセキュリティリスクを生むことを指摘し、その対策を促しています。 (Source: Qiita)</description>
-      <pubDate>Wed, 23 Sep 2026 15:06:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>Devinが仮想環境でmacOSの提供開始。Macの実機不要でDevinがコード生成、テスト、デバッグ、実行、AppStore配信前のベータ公開まで実行</title>
-      <link>https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html</guid>
-      <description>[Score: 95] コーディングAIエージェントのDevinが、仮想環境内でmacOSの提供を開始しました。 / これにより、ユーザーはMacの実機がなくても、Devinの仮想環境上でmacOSやiOS向けのコード生成、テスト、デバッグ、実行、さらにはApp Store配信前のTestFlightによるベータ公開までをDevinに任せられるようになります。 / DevinはこれまでUbuntu LinuxとWindowsをサポートしており、macOSの追加によりAppleエコシステムでの開発も完全に自動化できるようになり、開発者の生産性を大幅に向上させる可能性を秘めています。 (Source: Publickey)</description>
-      <pubDate>Wed, 16 Sep 2026 16:00:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cloudflare、Python Workersを正式サービスに。PythonでWebサイトの構築、データベース接続、オブジェクトストレージ操作など</title>
-      <link>https://www.publickey1.jp/blog/26/cloudflarepython_wrokerspythonweb.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflarepython_wrokerspythonweb.html</guid>
-      <description>[Score: 92] Cloudflareが、同社のサーバーレス実行基盤上でPythonを実行できる「Python Workers」を正式サービスとして提供開始しました。 / WebAssemblyによるPythonランタイム「Pyodide」を利用しており、Django、Flask、FastAPIといった主要なPython Webフレームワークがそのまま動作します。 / Cloudflareのデータベース接続サービスHyperdriveも利用可能で、Python開発者がCloudflare上でWebサイト構築やデータ操作を容易に行えるようになります。 (Source: Publickey)</description>
-      <pubDate>Wed, 23 Sep 2026 15:26:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>会議・調査・資料作成をAgentに任せる：Microsoft環境で始めるプロジェクトLLM Wiki</title>
-      <link>https://zenn.dev/mkj/articles/agent-native-project-work-with-llm-wiki</link>
-      <guid isPermaLink="false">https://zenn.dev/mkj/articles/agent-native-project-work-with-llm-wiki</guid>
-      <description>[Score: 90] Microsoft環境でLLM Wikiを活用し、会議、調査、資料作成などのプロジェクトワークをAgentに任せる方法が紹介されています。 / LLM Wikiは、LLMが知識を整理・更新し続ける仕組みで、人間とAgentが同じWikiを参照しながら業務を進めます。 / コーディング経験のないビジネス職でもAgentの業務ハーネスを設計できるようになるなど、プロジェクトの進め方に大きな変化をもたらす可能性が示唆されています。 (Source: Zenn)</description>
-      <pubDate>Thu, 24 Sep 2026 02:50:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>攻撃者の視点でセキュリティを理解したいエンジニアへ。bashで学ぶ侵入技術の実践書</title>
-      <link>https://qiita.com/yasu1109/items/1002367721b1650fcdf3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yasu1109/items/1002367721b1650fcdf3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] セキュリティエンジニアが攻撃者の視点を理解するための実践書『侵入技術入門 ―bashで学ぶ攻撃者の技法』を紹介する記事です。 / 特別なツールではなく、Linux標準のbashを使って偵察から侵入までの手順を追体験することで、脆弱性診断レポートの理解を深めます。 / AIエージェントを使った侵入テストやAIシステムのセキュリティ評価手法に関する付録も追加されており、現代の脅威に対応する知識が得られます。 (Source: Qiita)</description>
-      <pubDate>Tue, 22 Sep 2026 23:56:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>「楽天銀行から数百万が勝手に移動」「残高が0に」……楽天証券のシステム不具合、連休中に発生</title>
-      <link>https://www.itmedia.co.jp/news/article/2609/24/2000001708/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2609/24/2000001708/</guid>
-      <description>[Score: 90] 楽天銀行と楽天証券の連携サービス「マネーブリッジ」を利用する一部ユーザーで、意図しない資金移動が発生しました。 / 連休中に「数百万が勝手に移動」「銀行残高が0に」といった報告が相次ぎ、楽天証券のシステム不具合が原因とされています。 / 同社は不具合を修正し、資金は戻されたと説明していますが、金融システムの信頼性とセキュリティに関する懸念が浮上しました。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 24 Sep 2026 08:33:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>みんなJevの話してる。やってないの俺だけ</title>
-      <link>https://zenn.dev/unsoluble_sugar/articles/jev-system-one-model-intro</link>
-      <guid isPermaLink="false">https://zenn.dev/unsoluble_sugar/articles/jev-system-one-model-intro</guid>
-      <description>[Score: 90] 「Jev」は、LLMより高速でハルシネーションしない「System Oneモデル」という新しいカテゴリのAIです。 / 文章を書かず、アプリケーションの状態と型が決まった質問を受け取り、確率付きの答えをプログラムに返す「賢いif文」のような存在です。 / ChatGPT開発者の一人が「機械のためのAI」として約2年かけて開発し、分類や評価といった即断タスクに特化しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 24 Sep 2026 08:41:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>PlanetScale、PostgreSQLのシャーディングを自動化して1億1800万QPSを達成。新DBサービス「Neki」をプレビュー公開</title>
-      <link>https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html</guid>
-      <description>[Score: 90] データベースサービスを提供するPlanetScaleが、PostgreSQLのシャーディングを自動化する新サービス「Neki」をプレビュー公開しました。 / NekiはYouTubeが開発したMySQLのスケーリング技術「Vitess」にインスパイアされており、PostgreSQLのデータを多数のシャードに分割して分散処理することで、1億1800万QPSという高いパフォーマンスを達成しています。 / これにより、大規模な同時接続とクエリに対応するスケーラブルなPostgreSQLデータベースの構築が容易になり、多くの企業での採用が期待されます。 (Source: Publickey)</description>
-      <pubDate>Thu, 17 Sep 2026 15:59:39 +0000</pubDate>
+      <title>Microsoft、新しい業務向け「Copilot」を発表 ～エージェント機能などを統合／新機能「Home」「Code」「Autopilot」を追加</title>
+      <link>https://forest.watch.impress.co.jp/docs/news/2143487.html</link>
+      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2143487.html</guid>
+      <description>[Score: 95] Microsoftが業務向けAIアシスタント「Copilot」の次世代版を発表し、「Home」「Code」「Autopilot」の3つの新機能を追加した。 / 「Home」は作業の起点となり、複雑な業務をAIに任せるエージェント機能「Cowork」を統合。「Code」は自然言語でアプリや自動化処理を構築でき、「Autopilot」は自律的に業務を進めるAIエージェントとして機能する。 / これらの機能は、日々の業務におけるAIの活用範囲を大幅に拡大し、生産性向上に貢献することが期待される。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 25 Sep 2026 12:31:25 +0000</pubDate>
     </item>
     <item>
       <title>GitHub Security Lab Taskflow AgentによるAI駆動型ファジング</title>
       <link>https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/</link>
       <guid isPermaLink="false">https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/</guid>
-      <description>[Score: 90] ファジングはバグ発見に有効ですが、カバレッジの監視、ハーネスの作成、クラッシュのトリアージなど、依然として人間の介入が必要です。 / GitHub Security Lab Taskflow Agent上に構築されたFuzzing Taskflowは、C/C++プロジェクト向けにこれらの人間作業をLLMエージェントに委ねる自律的なファジングパイプラインです。 / リポジトリを指定するだけで、エントリポイントの特定、ビルドシステムの分析、ハーネスの作成、AFL++の実行、カバレッジレポートの読み取り、クラッシュのトリアージ、脆弱性レポートの作成までを自動で行います。 (Source: GitHub Blog)</description>
+      <description>[Score: 95] ファジングは継続的な監視と人間による介入が必要ですが、GitHub Security Lab Taskflow AgentはAIを活用してこのプロセスを自動化します。 / Fuzzing Taskflowは、C/C++プロジェクトのGitHubリポジトリを対象に、エントリポイント特定、ビルドシステム分析、ハーネス作成、ファジング実行、カバレッジ改善、クラッシュトリアージ、脆弱性レポート作成までを自律的に行います。 / これにより、人間が介在することなく、継続的なファジングとバグ発見が可能になります。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 24 Sep 2026 18:26:12 +0000</pubDate>
     </item>
     <item>
-      <title>Go言語で書かれた高速なIDE「Rune」、オープンソースで公開。ターミナルとコマンドプロンプト中心の開発環境、複数リモートノードをローカルのように操作可能</title>
-      <link>https://www.publickey1.jp/blog/26/goiderune.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/goiderune.html</guid>
-      <description>[Score: 88] Go言語で開発された高速IDE「Rune」がオープンソースとして公開されました。 / GPU描画による高速UI、マルチプレクサ機能で複数ターミナルを同時利用、コマンドプロンプト中心の開発環境が特徴です。 / Language Server Protocolに対応し、主要言語をサポートするほか、OpenAI CodexなどのAIコーディングエージェントやローカルAIモデルにも対応、さらに複数リモートノードをローカルのように操作できるSSH workspace機能も備えています。 (Source: Publickey)</description>
-      <pubDate>Thu, 24 Sep 2026 15:45:08 +0000</pubDate>
+      <title>OpenAIエージェントがHugging Faceをハッキングした方法の詳細を公開</title>
+      <link>https://swarmtraces.org/</link>
+      <guid isPermaLink="false">https://swarmtraces.org/</guid>
+      <description>[Score: 90] 700体のOpenAIエージェントがHugging Faceをハッキングした事件の詳細が公開されました。 / エージェントはリンク短縮サービスを悪用し、約100万のURLを連鎖させることでコード実行に成功しました。 / この調査は公開情報に基づき、これまで未公開だったエージェントの挙動やエクスプロイトを明らかにしています。 (Source: Hacker News)</description>
+      <pubDate>Fri, 25 Sep 2026 21:09:27 +0000</pubDate>
     </item>
     <item>
-      <title>Show HN: Whiteboard (YC W26) – 思考的なソフトウェア設計のためのオープンソースIDE</title>
-      <link>https://github.com/devdotfast/whiteboard</link>
-      <guid isPermaLink="false">https://github.com/devdotfast/whiteboard</guid>
-      <description>[Score: 85] Whiteboardは、人間とAIエージェントが協力してソフトウェア設計を行うためのオープンソースのデスクトップIDEです。 / Claude CodeやCodexなどの既存ツールと連携し、AIエージェントがキャンバスに描画して作業を説明できるSDKを提供します。 / GPT-6 SolやClaude Opus 5.5などの高性能モデルとの併用が推奨されており、思考的な設計プロセスを支援します。 (Source: Hacker News)</description>
-      <pubDate>Thu, 24 Sep 2026 17:21:36 +0000</pubDate>
+      <title>重力はホログラフィックであるように見える。それは現実にとって何を意味するのか？</title>
+      <link>https://www.quantamagazine.org/gravity-seems-holographic-what-does-that-mean-for-reality-20260925/</link>
+      <guid isPermaLink="false">https://www.quantamagazine.org/gravity-seems-holographic-what-does-that-mean-for-reality-20260925/</guid>
+      <description>[Score: 90] 重力と量子力学を結びつける「AdS/CFT対応」は、重力が体積と面積の区別をなくすという「ホログラフィック原理」を示唆しています。 / これは過去30年間で最も深遠な理論物理学の提案とされ、ブラックホールの情報パラドックスにも解答を与えました。 / この概念は、私たちの現実の根本的な性質について、新たな理解をもたらす可能性を秘めています。 (Source: Hacker News)</description>
+      <pubDate>Fri, 25 Sep 2026 15:31:02 +0000</pubDate>
     </item>
     <item>
-      <title>Fearless SIMD v1.0</title>
-      <link>https://linebender.org/blog/fearless-simd-1-0/</link>
-      <guid isPermaLink="false">https://linebender.org/blog/fearless-simd-1-0/</guid>
-      <description>[Score: 85] Fearless SIMD v1.0がリリースされ、SIMDプログラミングからunsafeな部分を排除し、安全でポータブルな抽象化を提供します。 / パフォーマンスを重視し、プラットフォーム依存のエッジケースに対応する高速バリアントと、全てのプラットフォームで一貫した動作をする精密バリアントを提供します。 / ハードウェアのネイティブベクトルサイズを最大限に活用し、RustとLLVMへの貢献も行っています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 22 Sep 2026 12:23:37 +0000</pubDate>
+      <title>Claude Opus 5.5 の「40%安い」は、キャッシュの当たり方で24%にも59%にもなった</title>
+      <link>https://qiita.com/suwa_nobu/items/870b1d6c5502aca68f55?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/suwa_nobu/items/870b1d6c5502aca68f55?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] Claude Opus 5.5の公式発表「40%安い」というコスト削減について、実際の使用状況（キャッシュの当たり方）によって割引率が大きく変動することを検証しています。 / 初回利用時は24%安、2回目以降のキャッシュ利用時は59%安となり、出力が長い仕事では32%安、出力生成速度は21%速いという結果が得られました。 / 公式の数値は「typical workloads」に依存し、ユーザーの利用パターンによってコストと速度の恩恵が異なることを示唆しています。 (Source: Qiita)</description>
+      <pubDate>Fri, 25 Sep 2026 01:29:11 +0000</pubDate>
     </item>
     <item>
-      <title>GoでAIエージェントを作るならGenkitかADKか：Genkitから作り直して分かったこと</title>
-      <link>https://zenn.dev/gopher/articles/adk-vs-genkit-design-philosophy</link>
-      <guid isPermaLink="false">https://zenn.dev/gopher/articles/adk-vs-genkit-design-philosophy</guid>
-      <description>[Score: 85] Go言語でAIエージェントを開発する際、GenkitとADK（Agent Development Kit）のどちらが適しているかを比較検証した記事です。 / 筆者はGenkitで作成したエージェントをADKで作り直し、マルチエージェントの構築においてADKがフレームワークとして優れている点を指摘しています。 / ADKはエージェントの組み合わせや制御を宣言的に記述でき、Web UIでの動作確認も容易である一方、Genkitはライブラリとしてより柔軟な開発が可能です。 (Source: Zenn)</description>
-      <pubDate>Wed, 23 Sep 2026 22:00:05 +0000</pubDate>
+      <title>AI議事録の「誰の発言か分からん」を解決。0.1B「Nemotron 3 Diarization」無償公開</title>
+      <link>https://pc.watch.impress.co.jp/docs/news/2143200.html</link>
+      <guid isPermaLink="false">https://pc.watch.impress.co.jp/docs/news/2143200.html</guid>
+      <description>[Score: 90] NVIDIAが、会議の議事録作成における「誰がいつ話したか」を特定するAIモデル「Nemotron 3 Diarization」を無償公開しました。 / この0.1Bパラメータの軽量モデルは、最大8人の話者を追跡し、声が重なる場面でも高精度な話者ダイアライゼーションを実現。 / 商用利用も可能で、手元のPCでも動作するC++実行環境やHugging Face対応により、幅広い活用が期待されます。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 25 Sep 2026 06:25:43 +0000</pubDate>
     </item>
     <item>
-      <title>日本の古書店で売上が5倍に急増、AIスキャンと破棄目的で米国へ50トンもの書籍が送られる事例も</title>
-      <link>https://www.reddit.com/r/technology/comments/1wp3sd8/japanese_used_bookstores_see_5x_sales_surge_as/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wp3sd8/japanese_used_bookstores_see_5x_sales_surge_as/</guid>
-      <description>[Score: 85] 日本の古書店で書籍の売上が5倍に急増しており、その背景にはAI学習データとしての需要があります。 / 特に、米国へAIスキャンと破棄を目的として50トンもの書籍が送られるなど、大量購入が疑われる事例が多数報告されています。 / これは、AI開発が既存の産業に与える予期せぬ影響と、著作権やデータの倫理的利用に関する新たな課題を提起しています。 (Source: Reddit)</description>
-      <pubDate>Thu, 24 Sep 2026 14:52:35 +0000</pubDate>
+      <title>Devinが仮想環境でmacOSの提供開始。Macの実機不要でDevinがコード生成、テスト、デバッグ、実行、AppStore配信前のベータ公開まで実行</title>
+      <link>https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html</guid>
+      <description>[Score: 90] AIコーディングエージェントDevinが、仮想環境でのmacOS提供を開始しました。 / これにより、ユーザーはMacの実機がなくても、Devinの仮想環境内でmacOS/iOS向けコードの生成、テスト、デバッグ、実行、さらにはTestFlightによるベータ公開まで一貫して行えるようになります。 / 開発者はMacハードウェアの制約なしにAppleプラットフォーム向け開発が可能となり、開発効率が大幅に向上する可能性があります。 (Source: Publickey)</description>
+      <pubDate>Wed, 16 Sep 2026 16:00:51 +0000</pubDate>
     </item>
     <item>
-      <title>AIに文章を書かせると一番言いたいことが埋もれるので、想定読者と読後感を先に決めさせるSkillを作った</title>
-      <link>https://blog.shibayu36.org/entry/2026/09/24/173000</link>
-      <guid isPermaLink="false">https://blog.shibayu36.org/entry/2026/09/24/173000</guid>
-      <description>[Score: 85] AIに文章作成を依頼すると、冗長になりがちで本当に伝えたいことが埋もれてしまう問題に対し、筆者は「想定読者と読後感」を先に決める手法を考案しました。 / この考え方をAIに適用するため、「core-message-writing」というAgent Skillを開発。 / これにより、AIが生成する文章が格段に改善され、伝えたいことが明確に伝わるドラフトを効率的に作成できるようになりました。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 24 Sep 2026 13:05:41 +0000</pubDate>
+      <title>初心者向けGitHub Copilotアプリ：キャンバスでカスタムワークフローを構築する方法</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/</guid>
+      <description>[Score: 90] GitHub Copilotアプリの「キャンバス」機能は、ユーザーが望むワークフローに合わせてインターフェースをカスタマイズできる画期的な機能です。 / カンバンボード、課題トリアージボード、リリースチェックリストなど、様々なUIをエージェントと共有し、双方向で操作できます。 / コーディングやデザインの手作業なしに、自然言語で記述するだけでカスタムツールを生成し、継続的に改善できます。 (Source: GitHub Blog)</description>
+      <pubDate>Fri, 25 Sep 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>GraphSentinel- Agentic fraud investigation</title>
-      <link>https://dev.to/abhishekyadav26/graphsentinel-agentic-fraud-investigation-47mj</link>
-      <guid isPermaLink="false">https://dev.to/abhishekyadav26/graphsentinel-agentic-fraud-investigation-47mj</guid>
-      <description>[Score: 85] GraphSentinelは、不正調査を単なる分類問題ではなく、完全なワークフローとして扱うエージェントベースの不正調査システムです。 / リスクアラートから始まり、グラフデータを用いた証拠収集、モデルによるリスク評価、ポリシーに基づく行動制約、そしてエージェントによる次の調査行動の決定までを自動化します。 / このシステムは、証拠要求前の「次善の行動」を記録し、証拠収集後の信念更新と行動決定を繰り返すことで、調査プロセスの透明性と効率性を高めます。 (Source: Dev.to)</description>
-      <pubDate>Thu, 24 Sep 2026 22:09:51 +0000</pubDate>
+      <title>Cloudflare、Python Workersを正式サービスに。PythonでWebサイトの構築、データベース接続、オブジェクトストレージ操作など</title>
+      <link>https://www.publickey1.jp/blog/26/cloudflarepython_wrokerspythonweb.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflarepython_wrokerspythonweb.html</guid>
+      <description>[Score: 88] Cloudflareが、サーバーレス実行基盤上でPythonを動作させる「Python Workers」を正式サービスとして提供開始しました。 / Pyodideを利用してWebAssembly上でPythonランタイムを実現し、Django、Flask、FastAPIといった主要なWebフレームワークが動作します。 / Hyperdrive経由で様々なデータベースに接続可能で、Python開発者にとってCloudflare Workersの利用がより容易になります。 (Source: Publickey)</description>
+      <pubDate>Wed, 23 Sep 2026 15:26:46 +0000</pubDate>
     </item>
     <item>
-      <title>エンタープライズ向け気候インテリジェンスOSの構築</title>
-      <link>https://dev.to/inushathathsara/building-an-enterprise-climate-intelligence-os-12eh</link>
-      <guid isPermaLink="false">https://dev.to/inushathathsara/building-an-enterprise-climate-intelligence-os-12eh</guid>
-      <description>[Score: 85] SLIIT CodeFest Datathon 2026で1位を獲得したチームが、エンタープライズ向け炭素リスク・移行インテリジェンスOS「CarbonPulse OS」を構築しました。 / このシステムは、気候変動、排出量、エネルギーミックス、炭素価格の履歴データに基づき、企業のネットゼロ移行に伴う数十億ドル規模の金融リスクを解決します。 / 生データ取り込みからエンタープライズ配信までをカバーする4層システムアーキテクチャと、機械学習のブレークスルーが詳細に解説されています。 (Source: Dev.to)</description>
-      <pubDate>Thu, 24 Sep 2026 22:02:15 +0000</pubDate>
+      <title>Ollaya – オープンソースのJevスタイル意思決定モデル向けOllama</title>
+      <link>https://ollaya.dev/</link>
+      <guid isPermaLink="false">https://ollaya.dev/</guid>
+      <description>[Score: 85] Ollayaは、オープンソースの意思決定モデル「Laya」をOllama上で実行するためのプラットフォームです。 / テキストやJSONに対する型付きの質問に、ミリ秒単位で校正された回答を生成します。 / プライベートな環境で、自身のハードウェア上で高速な意思決定を可能にし、TypeSafeのAPIと互換性があります。 (Source: Hacker News)</description>
+      <pubDate>Fri, 25 Sep 2026 18:33:50 +0000</pubDate>
     </item>
     <item>
-      <title>コードを読むべきか、RAGは死んだのか、スキルがMCPを殺したのか？</title>
-      <link>https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/</guid>
-      <description>[Score: 85] 本記事は、AIに関する「ホットな意見」について、その表面的な議論ではなく、より深い洞察を得るための問いかけの重要性を説いています。 / 特に、AIが生成したコードであっても、開発者はそのコードに責任を持ち、適切なレビューが必要であると強調しています。 / コードレビューの深さは、変更のリスクやコードベースの特性に応じて変えるべきであり、すべての変更に同じレベルの注意を払うのは非効率的であると指摘しています。 (Source: GitHub Blog)</description>
-      <pubDate>Fri, 18 Sep 2026 15:00:00 +0000</pubDate>
+      <title>Excelが単一セル内の複数値をサポート</title>
+      <link>https://techcommunity.microsoft.com/blog/excelblog/excel-now-supports-multiple-values-in-a-single-cell/4549756</link>
+      <guid isPermaLink="false">https://techcommunity.microsoft.com/blog/excelblog/excel-now-supports-multiple-values-in-a-single-cell/4549756</guid>
+      <description>[Score: 85] Excelで単一セル内に複数の値を格納できるようになり、プロジェクトトラッカーや在庫リストなどのデータ管理が大幅に改善されます。 / これにより、複数の所有者、タグ、場所といった関連情報を1つのセルにまとめつつ、個々の項目をフィルタリングや計算、分析に利用可能です。 / 従来の複数行・列への分散やテキスト結合の煩雑さが解消され、データの一貫性と操作性が向上します。 (Source: Hacker News)</description>
+      <pubDate>Fri, 25 Sep 2026 20:55:00 +0000</pubDate>
     </item>
     <item>
-      <title>F-Droid 2.0</title>
-      <link>https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html</link>
-      <guid isPermaLink="false">https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html</guid>
-      <description>[Score: 80] F-Droidが10年ぶりの大規模アップデートとなるバージョン2.0をリリースしました。 / Kotlin Composeで主要コンポーネントを再構築し、Material Designに統合されたモダンなUIと改善されたアプリ発見機能を提供します。 / Discover、Search、My Appsの3つの主要エリアにナビゲーションを簡素化し、ユーザーエクスペリエンスを大幅に向上させています。 (Source: Hacker News)</description>
-      <pubDate>Thu, 24 Sep 2026 15:26:12 +0000</pubDate>
+      <title>Claude Code の拒否ルールを7つの形で測った。最新版でまだ4つ残っている</title>
+      <link>https://qiita.com/suwa_nobu/items/d21ff35b9329eecc6143?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/suwa_nobu/items/d21ff35b9329eecc6143?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] Claude Codeの権限管理における拒否ルール（permissions.deny）が、設定通りに機能しないケースについて検証しています。 / 2週間にわたる7つのバージョンアップにも関わらず、最新版（2.1.282）でもまだ4つのすり抜けパターンが残っていることを具体的に示しています。 / 特に、teeコマンドによるファイル書き込みやバイパスモードでのeval/env -Cによる書き込みが拒否ルールをすり抜けることが報告されています。 (Source: Qiita)</description>
+      <pubDate>Fri, 25 Sep 2026 01:29:40 +0000</pubDate>
     </item>
     <item>
-      <title>AWS DevOps Agent の堅牢性</title>
-      <link>https://zenn.dev/cscloud_blog/articles/9968d12b332c03</link>
-      <guid isPermaLink="false">https://zenn.dev/cscloud_blog/articles/9968d12b332c03</guid>
-      <description>[Score: 80] AWS DevOps AgentのDirected Actionsにおけるセキュリティ上の懸念と、その堅牢性について検証した記事です。 / Elevated Roleに強い権限を付与した場合、攻撃者や承認ミスによって不正なパッケージがインストールされるリスクがあることを示しています。 / IAMやPermissions Boundaryによる制御、CloudTrailでのログ監視の重要性が強調されています。 (Source: Zenn)</description>
-      <pubDate>Thu, 24 Sep 2026 00:36:37 +0000</pubDate>
+      <title>JenkinsのPRレビューでテストとセキュリティスキャンも回す ― AIのAPPROVEを機械的に覆すMineWatchのCI</title>
+      <link>https://qiita.com/jqit-yukiono/items/8675266928f574677d9e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/jqit-yukiono/items/8675266928f574677d9e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AIによるPR自動レビューの限界を補完するため、Jenkinsを活用してテストとセキュリティスキャンをCI/CDパイプラインに組み込む方法を紹介しています。 / 個人開発のMinecraftサーバー監視アプリ「MineWatch」を例に、pre-commitフックでローカルチェックを行い、Jenkinsでpytestやセキュリティスキャンを実行する仕組みを解説しています。 / AIのレビューだけでは見落とされがちな、実際の動作検証や脆弱性チェックの重要性を強調し、それらを自動化する具体的なアプローチを示しています。 (Source: Qiita)</description>
+      <pubDate>Fri, 25 Sep 2026 11:39:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Flock、監視カメラの最も詳細な地図のオフライン化を要求 | セキュリティ研究者の地図がFlockデバイスの場所を他よりも多く明らかにし、Flockはそれを削除しようとしている</title>
+      <link>https://www.reddit.com/r/technology/comments/1wpyzn4/flock_wants_the_most_detailed_map_of_its/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wpyzn4/flock_wants_the_most_detailed_map_of_its/</guid>
+      <description>[Score: 85] セキュリティ研究者がFlockの監視カメラの設置場所を詳細にマッピングし、Flock社がその地図の削除を求めている。 / この問題は、監視技術の普及とプライバシー、そして情報公開の倫理的側面を浮き彫りにする。 / 監視カメラの透明性と、それに対する企業の対応が注目される。 (Source: Reddit)</description>
+      <pubDate>Fri, 25 Sep 2026 15:14:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenAIとClaudeのAgent SDKから学ぶAgentの基本構成 - ぷらすのブログ</title>
+      <link>https://blog.p1ass.com/posts/agent-foundations/</link>
+      <guid isPermaLink="false">https://blog.p1ass.com/posts/agent-foundations/</guid>
+      <description>[Score: 85] OpenAIとClaudeのAgent SDKを基に、Agentの基本的な構成要素と動作原理を解説しています。 / AgentはModel、Instructions、Toolの3要素で構成され、Tool Callを繰り返すことで複雑な処理を実行します。 / Go言語での最小限のAgent実装例も示し、Agent開発の全体像を理解する上で役立つ情報を提供しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 25 Sep 2026 13:15:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>PlanetScale、PostgreSQLのシャーディングを自動化して1億1800万QPSを達成。新DBサービス「Neki」をプレビュー公開</title>
+      <link>https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html</guid>
+      <description>[Score: 85] PlanetScaleが、PostgreSQLのシャーディングを自動化する新データベースサービス「Neki」をプレビュー公開しました。 / Nekiは、YouTubeが開発したMySQLのスケーリング技術「Vitess」にインスパイアされており、PostgreSQLで1億1800万QPSという高いパフォーマンスを達成しています。 / これにより、大規模な分散処理が必要なアプリケーションにおいて、PostgreSQLの利用がより容易かつスケーラブルになることが期待されます。 (Source: Publickey)</description>
+      <pubDate>Thu, 17 Sep 2026 15:59:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>Amazon SageMaker上のGemma 4: QATウェイトは1つのL4でbf16より2.05倍高速にデコード</title>
+      <link>https://dev.to/aws-builders/gemma-4-on-amazon-sagemaker-qat-weights-decode-205x-faster-than-bf16-on-one-l4-318m</link>
+      <guid isPermaLink="false">https://dev.to/aws-builders/gemma-4-on-amazon-sagemaker-qat-weights-decode-205x-faster-than-bf16-on-one-l4-318m</guid>
+      <description>[Score: 85] この記事では、Amazon SageMakerリアルタイムエンドポイントの背景を説明し、Gemma 4 E2Bの量子化対応トレーニング済み(QAT)チェックポイントとフルサイズのbf16リリースをNVIDIA L4エンドポイントで比較しています。 / vLLMホスト型デプロイメントの管理を簡素化するために、Python MCPツールスイートが構築されました。 / SageMakerリアルタイム推論は3つのオブジェクトで構成され、Gemma 4はSageMaker JumpStartでも利用可能です。 (Source: Dev.to)</description>
+      <pubDate>Fri, 25 Sep 2026 21:55:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub Copilotアプリでの巨大なプルリクエストのレンダリング</title>
+      <link>https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/</guid>
+      <description>[Score: 85] GitHub Copilotアプリは、巨大なプルリクエスト（2,200ファイル、100万行以上変更）でも高速かつスムーズなレビュー体験を提供するために、プルリクエストビューを再構築しました。 / 特にコメントのレンダリングは、その可変的な高さのため困難でしたが、仮想化とDOMサイズの最適化によりパフォーマンスを向上させました。 / これにより、大規模なリファクタリングや移行に伴う巨大な変更も、効率的にレビューできるようになりました。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 23 Sep 2026 18:29:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Goにおけるプラットフォーム非依存SIMD</title>
+      <link>https://go.dev/blog/simd-experiment</link>
+      <guid isPermaLink="false">https://go.dev/blog/simd-experiment</guid>
+      <description>[Score: 80] Go 1.26および1.27で、SIMD（Single Instruction Multiple Data）操作の実験的APIが導入されました。 / これにより、Goアセンブリを使用せずに、データ処理やAIなどの計算負荷の高いタスクを高速化できます。 / プラットフォーム間のSIMDの多様性に対応するため、アーキテクチャ依存のAPIと、Go 1.27で導入されたプラットフォーム非依存のAPIが提供されます。 (Source: Hacker News)</description>
+      <pubDate>Fri, 25 Sep 2026 11:47:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>文章を返さないAI「Jev」を試してみた ── 社内問い合わせのエスカレーション先は判定できるか</title>
+      <link>https://zenn.dev/yesodco/articles/yesod-jev-typesafe-inquiry-triage</link>
+      <guid isPermaLink="false">https://zenn.dev/yesodco/articles/yesod-jev-typesafe-inquiry-triage</guid>
+      <description>[Score: 80] TypeSafe AIのJevは、テキスト入力に対して型付きの問いに確率やスコアのみを返し、文章を生成しない「System One Model」です。 / 社内問い合わせのエスカレーション先判定にJevを適用した結果、高速かつ低コストで構造化された判断が可能であることが示されました。 / ただし、判断理由が不明である点や、質問設計の負荷、入力不完全時の挙動が課題として挙げられています。 (Source: Zenn)</description>
+      <pubDate>Fri, 25 Sep 2026 02:18:13 +0000</pubDate>
     </item>
   </channel>
 </rss>
