@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 29 Sep 2026 23:04:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 23:04:41 +0000</lastBuildDate>
     <item>
-      <title>AI開発時代だからこそ、テストの役割を見つめ直す</title>
-      <link>https://zenn.dev/ababup1192/articles/77b844dcfc1529</link>
-      <guid isPermaLink="false">https://zenn.dev/ababup1192/articles/77b844dcfc1529</guid>
-      <description>[Score: 92] AIがコードを書く時代において、テストの種類ごとの役割と活用方法を再整理しています。 / ユニットテスト、インテグレーションテスト、E2Eテストはそれぞれ検出できる不具合の種類が異なり、得意な領域で活用すべきです。 / AIとの協調開発では、高速でフィードバックが豊富なテスト（ユニットテストなど）をAIのイテレーションに組み込み、遅いテストは結合や実環境の確認に集中させることが重要です。 (Source: Zenn)</description>
-      <pubDate>Tue, 29 Sep 2026 01:00:44 +0000</pubDate>
+      <title>Gemini 4 Argon</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/</guid>
+      <description>[Score: 95] Googleは、複雑なワークフロー向けに設計された最先端のAIモデル「Gemini 4 Argon」を発表しました。 / このモデルは、ソフトウェアエンジニアリング、企業知識業務、サイバーセキュリティ防御などの分野で優れた性能を発揮します。 / Fairwindプログラムを通じてサイバー防御者に先行提供され、将来的には開発者、企業、消費者にも提供される予定です。 (Source: Hacker News)</description>
+      <pubDate>Wed, 30 Sep 2026 20:04:37 +0000</pubDate>
     </item>
     <item>
-      <title>免許証画像が漏れると何が“ヤバい”のか　タイムズカーで最大約660万件の個人情報漏えいで考えられる「3つのリスク」</title>
-      <link>https://www.itmedia.co.jp/mobile/articles/2609/29/news085.html</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/mobile/articles/2609/29/news085.html</guid>
-      <description>[Score: 92] タイムズカーで最大約660万件の個人情報漏洩が発生し、運転免許証画像データが含まれる可能性が指摘されています。 / 本記事では、免許証画像が第三者に渡った場合に想定される3つのリスクと、ユーザーが被害を防ぐための対策について解説しています。 / 漏洩した情報には氏名、住所、生年月日、電話番号、メールアドレスなどが含まれ、過去に退会したユーザーの情報も対象となっている点が重要です。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 29 Sep 2026 07:41:33 +0000</pubDate>
+      <title>OpenAI DevDay 2026 発表まとめ</title>
+      <link>https://zenn.dev/schroneko/articles/openai-devday-2026</link>
+      <guid isPermaLink="false">https://zenn.dev/schroneko/articles/openai-devday-2026</guid>
+      <description>[Score: 95] OpenAI DevDay 2026で発表された25項目をまとめた記事です。 / 特に注目されるのは、あらゆるタスクに対応するエージェント「dots」の登場です。 / dotsはGPT-6 Astraを基盤とし、24時間稼働し、4,000以上のアプリと連携可能です。 (Source: Zenn)</description>
+      <pubDate>Tue, 29 Sep 2026 17:20:46 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Code / Codexで「私のlimit、減りすぎ…？」と思ったときに見る記事</title>
-      <link>https://zenn.dev/tokium_dev/articles/ai-agent-usage-limit-long-sessions</link>
-      <guid isPermaLink="false">https://zenn.dev/tokium_dev/articles/ai-agent-usage-limit-long-sessions</guid>
-      <description>[Score: 90] Claude CodeやCodexなどのAIエージェント利用時に、トークン消費が想定以上に速い原因と対策を解説しています。 / AIエージェントは1つの指示で数十〜数百回のリクエストを送信し、各リクエストで会話履歴全体を再送信するため、トークン消費が増大します。 / プロンプトキャッシュは利用上限を減らすものの、消費量をゼロにはしないため、セッションの切り替えやサブエージェントの活用が推奨されています。 (Source: Zenn)</description>
-      <pubDate>Tue, 29 Sep 2026 03:00:09 +0000</pubDate>
+      <title>GitHub - nanaism/yomiyasu: AI生成された文章の不自然さを取り除き、人間にとって自然な日本語へ書き直すためのAgent Skill</title>
+      <link>https://github.com/nanaism/yomiyasu</link>
+      <guid isPermaLink="false">https://github.com/nanaism/yomiyasu</guid>
+      <description>[Score: 95] 『yomiyasu（よみやす）』は、AIが生成した日本語の不自然さを解消し、人間が読みやすい自然な日本語へ推敲するためのAgent Skillです。 / CodexやClaude CodeなどのAIコーディング環境に組み込んで使用することを想定しており、AI文章の品質向上に貢献します。 / 統語構造の変換原則に基づき、曖昧な表現や流行語を排除し、具体的な内容に修正することで、より高品質なAI生成文章を実現します。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 30 Sep 2026 18:28:31 +0000</pubDate>
     </item>
     <item>
-      <title>AI顔認識の誤照合で銀行窃盗の冤罪をかけられた祖母が1000万ドルを提訴</title>
-      <link>https://www.reddit.com/r/technology/comments/1wt85l9/grandmother_falsely_accused_of_bank_theft_after/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wt85l9/grandmother_falsely_accused_of_bank_theft_after/</guid>
-      <description>[Score: 90] AI顔認識システムによる誤照合が原因で、銀行窃盗の冤罪をかけられた祖母が1000万ドルの損害賠償を求めて提訴しました。 / この事件は、AI技術の精度と倫理的な問題、特に誤認識が個人の生活に与える深刻な影響を浮き彫りにしています。 / AIの社会実装における信頼性と責任の重要性が改めて問われる事例です。 (Source: Reddit)</description>
-      <pubDate>Tue, 29 Sep 2026 11:58:38 +0000</pubDate>
+      <title>WindowsでLinuxコンテナの作成や実行を可能にする「WSL Containers」正式リリース。コマンドラインとAPIから利用可能</title>
+      <link>https://www.publickey1.jp/blog/26/windowslinuxwsl_containersapi.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/windowslinuxwsl_containersapi.html</guid>
+      <description>[Score: 95] MicrosoftがWSL（Windows Subsystem for Linux）の新機能として「WSL Containers」を正式リリースしました。 / これにより、Dockerなどのサードパーティ製ソフトウェアを導入することなく、Windows上でLinuxコンテナの作成と実行が可能になります。 / コマンドライン（wslc）とAPIから操作でき、Microsoft IntuneやMicrosoft Defender for Endpointとも統合され、一括管理が可能です。 (Source: Publickey)</description>
+      <pubDate>Wed, 30 Sep 2026 02:43:18 +0000</pubDate>
     </item>
     <item>
-      <title>「タイムズカーWebサイト」への不正アクセスに関する調査結果および今後の対応について（第3報）</title>
-      <link>https://share.timescar.jp/news/2026/0929/1816.html</link>
-      <guid isPermaLink="false">https://share.timescar.jp/news/2026/0929/1816.html</guid>
-      <description>[Score: 90] タイムズカーは、Webサイトへの不正アクセスに関する第3報を発表しました。 / 約160万件の運転免許証画像や本人確認書類画像が漏洩したことを確認し、対象会員への個別案内を開始しています。 / ユーザーは、タイムズカーを装った不審なメールやSMS、電話に注意し、パスワードやクレジットカード情報を入力しないよう呼びかけられています。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 29 Sep 2026 11:48:26 +0000</pubDate>
+      <title>Launch HN: Magnitude (YC S25) – エージェント向け自己最適化推論エンジン</title>
+      <link>https://github.com/magnitudedev/magnitude</link>
+      <guid isPermaLink="false">https://github.com/magnitudedev/magnitude</guid>
+      <description>[Score: 90] Magnitudeは、エージェント向けにハードウェアに自己最適化するオープンソースの推論エンジンです。 / このエンジンは、カーネルをデバイス上でコンパイルおよびチューニングすることで、オープンモデルをllama.cppよりも最大2倍高速に実行できます。 / Apple Silicon、NVIDIA、AMD、またはCPUのみで動作し、既存のエージェントとワンクリックで接続できるため、開発者は手軽に高性能な推論環境を構築できます。 (Source: Hacker News)</description>
+      <pubDate>Wed, 30 Sep 2026 17:37:40 +0000</pubDate>
     </item>
     <item>
-      <title>オープンソースのAIセキュリティエージェントを使って24個のAndroid脆弱性を発見した方法</title>
+      <title>Web 標準動向 2026年9月版</title>
+      <link>https://zenn.dev/cybozu_frontend/articles/web_standards_trends_202609</link>
+      <guid isPermaLink="false">https://zenn.dev/cybozu_frontend/articles/web_standards_trends_202609</guid>
+      <description>[Score: 90] サイボウズがW3Cメンバーに加入し、Web標準のキャッチアップと貢献を強化していることが報告されています。 / Firefox 159でScoped Custom Element Registriesが主要ブラウザで実装され、HTML-in-CanvasがWHATNOTでStage 3に進むなど、Web標準の進化が進行中です。 / Enhanced Canvas TextMetricsやSpellCheck Custom Dictionaryなど、新たなAPIの動向も紹介されており、Web開発の未来に影響を与える情報が満載です。 (Source: Zenn)</description>
+      <pubDate>Wed, 30 Sep 2026 09:00:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>ゲーミングPC向けで LLMとデプロイ環境を最適化してみた話</title>
+      <link>https://zenn.dev/knowledgework/articles/2691721311c2e4</link>
+      <guid isPermaLink="false">https://zenn.dev/knowledgework/articles/2691721311c2e4</guid>
+      <description>[Score: 90] ゲーミングPCで翻訳特化LLMを動かすため、モデルファイル、プロセスメモリ、ランタイムの3段階で最適化を行った記録です。 / llama.cpp（ggml）ベースのランタイムとGGUFモデルを使用し、2〜3GBのVRAMで商用LLMに近い翻訳精度を実現。 / ゲーム中のVRAM制約下でのLLMデプロイという具体的な課題に対し、モデルの量子化やサイズ選定による性能比較が詳細に解説されています。 (Source: Zenn)</description>
+      <pubDate>Wed, 30 Sep 2026 00:45:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【被害者は語る】タイムズカー660万件情報漏えいはなぜ起きたのかの矮小な考察</title>
+      <link>https://qiita.com/miruky/items/6577a57b9b62c8f97e11?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/miruky/items/6577a57b9b62c8f97e11?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] タイムズカーの約660万件の情報漏えい事件について、被害者の視点から原因を考察しています。 / 公開されたHTMLや技術資料から、Teedaという古いJavaフレームワークの利用が示唆されています。 / セキュアプログラミングの観点から、古い技術スタックの利用が脆弱性につながる可能性が指摘されています。 (Source: Qiita)</description>
+      <pubDate>Tue, 29 Sep 2026 16:00:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Facebookが4300万件のプライバシー侵害で有罪判決、Metaは数十億ドルの支払い義務を負う可能性</title>
+      <link>https://www.reddit.com/r/technology/comments/1wu2ti9/a_jury_found_facebook_guilty_of_43_million/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wu2ti9/a_jury_found_facebook_guilty_of_43_million/</guid>
+      <description>[Score: 90] Facebookが4300万件のプライバシー侵害で有罪判決を受けました。 / これにより、親会社であるMetaは数十億ドル規模の賠償金を支払う可能性があります。 / 大手テクノロジー企業のプライバシー問題に対する法的責任が改めて問われる事例です。 (Source: Reddit)</description>
+      <pubDate>Wed, 30 Sep 2026 11:49:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Next.jsアプリをCloudflare WorkersやAWS LambdaなどVercel以外のサーバレス基盤へデプロイできる「Vinext 1.0」リリース</title>
+      <link>https://www.publickey1.jp/blog/26/vercelnextjscloudflare_workersaws_lambdavercelvinext_10.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vercelnextjscloudflare_workersaws_lambdavercelvinext_10.html</guid>
+      <description>[Score: 90] Cloudflareが「Vinext 1.0」をリリースし、Next.jsアプリケーションをVercel以外のCloudflare Workers、AWS Lambda、Netlifyなどのサーバレス基盤へデプロイ可能にしました。 / Next.jsのビルドツールをTurbopackからViteに変更することで、この柔軟なデプロイを実現しています。 / 高度なキャッシュウォーミング、幅広い互換性、自動テストパイプラインを提供し、Next.js開発者に新たな選択肢をもたらします。 (Source: Publickey)</description>
+      <pubDate>Wed, 30 Sep 2026 15:10:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>オープンソースAIセキュリティエージェントを使って24件のAndroid脆弱性を発見した方法</title>
       <link>https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/</link>
       <guid isPermaLink="false">https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/</guid>
-      <description>[Score: 90] GitHub Security Labは、AIを活用したセキュリティ研究を自動化・共有するためのTaskflow Agentを開発しました。 / このエージェントとカスタムタスクフロープロンプトを使用し、Androidアプリケーションで20以上の脆弱性を発見しました。 / Taskflowはオープンソースで利用可能ですが、GitHub Copilotライセンスとプレミアムモデルリクエストが必要です。 (Source: GitHub Blog)</description>
+      <description>[Score: 90] GitHub Security Labが開発したオープンソースのAIセキュリティエージェント「Taskflow Agent」を用いて、Androidアプリケーションの脆弱性を発見した事例を紹介しています。 / LLMをガイドするためのカスタムタスクフロープロンプトの有効性が示され、20件以上の脆弱性が報告されたことが述べられています。 / GitHub Copilotライセンスが必要ですが、タスクフローはオープンソースで公開されており、セキュリティ研究者が活用できることが強調されています。 (Source: GitHub Blog)</description>
       <pubDate>Mon, 28 Sep 2026 19:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Cloudflare Birthday Week 2026 Day1</title>
-      <link>https://zenn.dev/remotive/articles/cloudflare-birthday-week-2026-day1</link>
-      <guid isPermaLink="false">https://zenn.dev/remotive/articles/cloudflare-birthday-week-2026-day1</guid>
-      <description>[Score: 88] Cloudflareの16周年を記念するBirthday Week 2026のDay1発表内容がまとめられています。 / Wranglerの後継となる新しいCLIツール「cf」がOpen Betaで公開され、3,000以上のAPI操作をカバーします。 / 設定ファイルがTypeScriptベースのcloudflare.config.tsに移行し、AI Agent利用を意識したJSON出力や自然言語検索機能も導入されます。 (Source: Zenn)</description>
-      <pubDate>Tue, 29 Sep 2026 01:15:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google Cloud、AIエージェントからの大量アクセスをPostgreSQLのプライマリDBから切り離せる「PostgreSQL for agents in AlloyDB」発表</title>
-      <link>https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html</guid>
-      <description>[Score: 88] Google Cloudは、AIエージェントからの大量アクセスをPostgreSQLのプライマリDBから切り離せる新サービス「PostgreSQL for agents in AlloyDB」を発表しました。 / これにより、AIエージェントによる読み取りワークロードが本番環境のデータベース性能に悪影響を与えるのを防ぎます。 / 数秒でサンドボックス化されたPostgreSQLインスタンスをプロビジョニングでき、コアビジネスシステムを保護しつつ、高速なデータアクセスと1000以上のリーダーへのスケーリングを実現します。 (Source: Publickey)</description>
-      <pubDate>Tue, 29 Sep 2026 15:46:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>マイクロソフト、企業内アプリの実行基盤「Copilot Managed Runtime」プレビュー公開。Microsoft 365と同じテナント内でコード実行、管理者による集中管理も</title>
-      <link>https://www.publickey1.jp/blog/26/copilot_managed_runtimemicrosoft_365.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/copilot_managed_runtimemicrosoft_365.html</guid>
-      <description>[Score: 88] マイクロソフトが企業内アプリケーションの実行基盤「Copilot Managed Runtime」のプレビューを公開しました。 / これはMicrosoft Copilotなどで開発された社内アプリを安全に実行するための基盤で、Microsoft 365と同じテナント内でコードを実行できます。 / プログラミング知識がない従業員でもCopilotを使ってアプリを作成できる環境が整う中、その安全な実行とガバナンスを実現します。 (Source: Publickey)</description>
-      <pubDate>Sun, 27 Sep 2026 15:59:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>UnoDOS</title>
-      <link>https://github.com/hmofet/unodos</link>
-      <guid isPermaLink="false">https://github.com/hmofet/unodos</guid>
-      <description>[Score: 85] UnoDOSは、IBM PC/XTから最新の64ビットPCまで、22種類のマシンに対応するグラフィカルOSファミリーです。 / x86アセンブリで書かれた16ビットリアルモードOSとして始まり、現在はベアメタルで動作するpc64を旗艦としています。 / 単一のソースツリーから多様なプラットフォーム向けのイメージを生成し、エミュレータや実機での動作検証も詳細に記録されています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 29 Sep 2026 22:10:23 +0000</pubDate>
-    </item>
-    <item>
-      <title>Reddit AMA: ロイター記者が語る、マーク・ザッカーバーグのMeta社員をAIに置き換える計画とその破綻</title>
-      <link>https://www.reddit.com/r/technology/comments/1w5k5h4/hi_reddit_im_katie_paul_a_reuters_journalist_who/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1w5k5h4/hi_reddit_im_katie_paul_a_reuters_journalist_who/</guid>
-      <description>[Score: 85] ロイターのジャーナリスト、ケイティ・ポール氏がRedditでAMA（Ask Me Anything）を実施しました。 / 彼女はマーク・ザッカーバーグ氏がMetaの従業員をAIに置き換える計画を明らかにし、それがどのように頓挫したかを語りました。 / AIによる大規模な人員削減計画が、最終的に成功しなかった経緯について詳細が語られたと推測されます。 (Source: Reddit)</description>
-      <pubDate>Wed, 02 Sep 2026 19:18:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>無料でJev互換の小型高速意思決定モデル「Jeff」、ローカル環境で約22～28ミリ秒と爆速</title>
-      <link>https://gigazine.net/news/20260929-jeff/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20260929-jeff/</guid>
-      <description>[Score: 85] ChatGPT共同開発者がCEOを務めるTypeSafe AIが、小型で高速な意思決定モデル「Jeff」を無料で公開しました。 / 「Jeff」はJev互換で、RTX PRO 6000で約22ミリ秒、M4 Maxで約28ミリ秒という爆速でローカル環境で動作します。 / ゼロショット分類に対応し、Qwen3.5とGemma 4をベースにした3種類のモデルがMITライセンスとApache 2.0で提供されています。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 29 Sep 2026 13:04:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>AWS、AIエージェントを自作できるツール「Strandsハーネス」をオープンソースで公開。特定のLLMに依存せず入れ替え可能、任意のコンテナ環境にデプロイ</title>
-      <link>https://www.publickey1.jp/blog/26/awsaistrandsllm.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsaistrandsllm.html</guid>
-      <description>[Score: 85] AWSがAIエージェントを簡単に自作できるオープンソースツール「Strandsハーネス」を公開しました。 / このツールはGPTやClaudeなど主要なLLMに依存せず、入れ替え可能で任意のコンテナ環境にデプロイできます。 / AIエージェントの構築におけるツール連携、メモリ、コンテキスト処理の複雑さを解消し、効率的な開発を支援します。 (Source: Publickey)</description>
-      <pubDate>Mon, 28 Sep 2026 15:01:25 +0000</pubDate>
+      <title>BedrockのClaudeに暗黙的なプロンプトキャッシュが登場！！とドキュメントにある（暗黙的とは？）</title>
+      <link>https://qiita.com/moritalous/items/1b6a05842724fc1fff66?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/moritalous/items/1b6a05842724fc1fff66?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] Amazon BedrockのClaude Sonnet 5.5に「暗黙的なプロンプトキャッシュ」が導入されたことを検証しています。 / 明示的なキャッシュとは異なり、ユーザーが意識せずともプロンプトがキャッシュされ、コスト削減や応答速度向上が期待されます。 / 実際に長いシステムプロンプトを用いて、キャッシュが機能していることをコードで確認しています。 (Source: Qiita)</description>
+      <pubDate>Tue, 29 Sep 2026 12:34:51 +0000</pubDate>
     </item>
     <item>
       <title>GitHub Copilotアプリ初心者向け：キャンバスでカスタムワークフローを構築する方法</title>
       <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/</guid>
-      <description>[Score: 85] GitHub Copilotアプリのキャンバス機能は、ユーザーが望むワークフローに合わせてインターフェースをカスタマイズできる機能です。 / カンバンボード、課題トリアージボード、リリースチェックリストなど、様々なUIをコードなしで作成できます。 / エージェントセッションで`/create-canvas`スキルを使い、自然言語で説明するだけでカスタムツールが生成されます。 (Source: GitHub Blog)</description>
+      <description>[Score: 88] GitHub Copilotアプリの新機能「キャンバス」について解説しています。 / キャンバスは、ユーザーとAIエージェントが共有するカスタマイズ可能なインターフェースであり、ユーザーのワークフローに合わせてUIを生成できます。 / コーディング不要で、自然言語でキャンバスを記述するだけで、タスク管理ボードやリリースチェックリストなどのカスタムツールを作成できる点が特徴です。 (Source: GitHub Blog)</description>
       <pubDate>Fri, 25 Sep 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>より多くのCSSを配信することでサイトパフォーマンスを向上させる</title>
-      <link>https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/</guid>
-      <description>[Score: 85] GitHubは、CSS-in-JSソリューションが抱えていたパフォーマンス課題を解決するため、CSS Modulesへの移行を決定しました。 / これにより、クライアントとサーバーのランタイムコストを削減し、ネイティブCSSの利点を活用しつつ、コンポーネントごとのカプセル化を実現します。 / GitHubのPrimer Design Systemのパフォーマンス改善に大きく貢献し、大規模なサイトでのCSS管理の新たなアプローチを示しています。 (Source: GitHub Blog)</description>
-      <pubDate>Fri, 25 Sep 2026 15:00:00 +0000</pubDate>
+      <title>EDG C++フロントエンドが公開される</title>
+      <link>https://edgcpp.org/#transition</link>
+      <guid isPermaLink="false">https://edgcpp.org/#transition</guid>
+      <description>[Score: 85] 30年以上にわたり業界で利用されてきたEDGのC++フロントエンドがオープンソース化され、The C++ Allianceがその非営利団体としてのホームとなりました。 / これにより、EDGのC++コンパイラフロントエンドは、プロフェッショナルなメンテナンスを維持しつつ、コミュニティからの貢献を受け入れる体制に移行します。 / この動きは、C++コンパイラ技術の継続性と発展を保証し、より多くの開発者がその恩恵を受けられるようにすることを目的としています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 30 Sep 2026 19:26:37 +0000</pubDate>
     </item>
     <item>
-      <title>コーディングエージェントにGoogle Cloudの専門知識とツールを組み込む「Google Cloud Developer Plugin for AI Coding Agents」発表</title>
-      <link>https://www.publickey1.jp/blog/26/google_cloudgoogle_cloud_developer_plugin_for_ai_coding_agents.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudgoogle_cloud_developer_plugin_for_ai_coding_agents.html</guid>
-      <description>[Score: 82] Google Cloudは、コーディングエージェントにGoogle Cloudの専門知識とツールを組み込む「Google Cloud Developer Plugin for AI Coding Agents」を発表しました。 / これにより、Claude CodeなどのコーディングエージェントがGoogle Cloudのサービスやアーキテクチャに関する最新の専門知識を活用できるようになります。 / Google Cloud上での最適なシステム構築を可能にし、開発者がより効率的にクラウドネイティブなアプリケーションを開発できるよう支援します。 (Source: Publickey)</description>
-      <pubDate>Tue, 29 Sep 2026 15:44:15 +0000</pubDate>
+      <title>シンガポール政府の出会い系アプリがゲール＝シャプレーの安定結婚アルゴリズムを使用</title>
+      <link>https://twitter.com/tuakdotsol/status/2105105417760391258</link>
+      <guid isPermaLink="false">https://twitter.com/tuakdotsol/status/2105105417760391258</guid>
+      <description>[Score: 85] シンガポール政府の出会い系アプリ「FirstDate」が、ノーベル賞を受賞したゲール＝シャプレーの安定結婚アルゴリズムを採用していると報じられています。 / このアルゴリズムは、病院の研修医マッチングや腎臓交換などにも使われ、数学的に安定したマッチングを保証します。 / 商業アプリとは異なり、ユーザーをプラットフォームから卒業させることを目的として設計されており、Singpass認証による本人確認も特徴です。 (Source: Hacker News)</description>
+      <pubDate>Wed, 30 Sep 2026 09:27:04 +0000</pubDate>
     </item>
     <item>
-      <title>3分で読めるトランザクション設計のコツ</title>
-      <link>https://zenn.dev/mconfjp/articles/transaction-action-order</link>
-      <guid isPermaLink="false">https://zenn.dev/mconfjp/articles/transaction-action-order</guid>
-      <description>[Score: 80] トランザクション処理におけるアクションの実行順序の重要性を解説し、Jim Grayの論文に基づきアクションを3つに分類しています。 / メール送信のような「実アクション」をトランザクションの最後に配置することで、ロールバック時の不整合を防ぐことができます。 / これにより、ECサイトの注文確定処理のような具体的な問題例を挙げ、堅牢なシステム設計の指針を示しています。 (Source: Zenn)</description>
-      <pubDate>Tue, 29 Sep 2026 02:45:05 +0000</pubDate>
+      <title>新規プロダクトのバックエンド自動テスト戦略 ─UT 中心から API テスト中心へ─</title>
+      <link>https://zenn.dev/canary_techblog/articles/348d976da70857</link>
+      <guid isPermaLink="false">https://zenn.dev/canary_techblog/articles/348d976da70857</guid>
+      <description>[Score: 85] 新規プロダクトのバックエンド自動テスト戦略を、ユニットテスト（UT）中心からAPIテスト中心へと転換した事例を紹介しています。 / Go言語、gRPC、Cloud Spannerを用いたシステムにおいて、runnによるAPIテストを導入し、品質保証の主軸を移した経緯と効果を解説。 / UT中心の課題を克服し、API単位での仕様保証とテストの再現性を高めるための具体的なアプローチが示されています。 (Source: Zenn)</description>
+      <pubDate>Wed, 30 Sep 2026 00:45:25 +0000</pubDate>
     </item>
     <item>
-      <title>AI業界はデータセンターを正当化するために2031年までに6兆ドルを稼ぐ必要がある</title>
-      <link>https://www.reddit.com/r/technology/comments/1wt6mcm/ai_industry_needs_to_earn_6_trillion_by_2031_to/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wt6mcm/ai_industry_needs_to_earn_6_trillion_by_2031_to/</guid>
-      <description>[Score: 80] AI業界がその巨大なデータセンター投資を正当化するためには、2031年までに6兆ドルもの収益を上げる必要があると指摘されています。 / これはAI技術の発展に伴うインフラコストの増大と、それに見合う収益化のプレッシャーを示しています。 / AI産業の持続的な成長には、投資に見合う経済的価値の創出が不可欠であることが強調されています。 (Source: Reddit)</description>
-      <pubDate>Tue, 29 Sep 2026 10:33:27 +0000</pubDate>
+      <title>荒れたテストケースをコード管理で立て直してみた</title>
+      <link>https://qiita.com/hamham999/items/ebee7540a82db6933854?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/hamham999/items/ebee7540a82db6933854?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] 手動テストのテストケース管理をGoogleスプレッドシートからコードベースに移行した事例を紹介しています。 / YAMLでテストケースを管理し、CI/CDと連携してスプレッドシートに自動生成するフローを構築。 / これにより、テストケースの品質向上、レビューの効率化、重複・矛盾の検出を実現しています。 (Source: Qiita)</description>
+      <pubDate>Mon, 28 Sep 2026 23:10:50 +0000</pubDate>
     </item>
     <item>
-      <title>IIJ、新人エンジニア向け研修教材を無料公開 Web技術の基礎から生成AI活用まで20講義超</title>
-      <link>https://www.itmedia.co.jp/news/article/2609/29/2000001854/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2609/29/2000001854/</guid>
-      <description>[Score: 80] IIJが新人エンジニア向けのハンズオン研修「IIJ Bootcamp」の教材を無料で公開しました。 / Web技術の基礎からDocker、Kubernetes、React、さらには生成AIを活用したWebアプリ開発まで、20講義以上の資料が含まれています。 / この教材は、IT業界の技術者育成とスキルアップに大きく貢献するもので、CC BY-SAライセンスでGitHubでも公開されています。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 29 Sep 2026 11:47:47 +0000</pubDate>
+      <title>RedditがAIボット対策のためRSSフィードと公開APIアクセスを終了</title>
+      <link>https://www.reddit.com/r/technology/comments/1wubsf7/reddit_is_killing_rss_feeds_and_ending_public_api/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wubsf7/reddit_is_killing_rss_feeds_and_ending_public_api/</guid>
+      <description>[Score: 85] RedditがAIボットの活動を理由に、RSSフィードと公開APIアクセスを終了すると発表しました。 / これにより、外部サービスや開発者がRedditのデータにアクセスする方法が大幅に制限されます。 / AIの進化がプラットフォームのデータ利用ポリシーに与える影響を示す重要な事例です。 (Source: Reddit)</description>
+      <pubDate>Wed, 30 Sep 2026 17:53:14 +0000</pubDate>
     </item>
     <item>
-      <title>「Docker Cloud Sandboxes」発表、AIエージェント向けサンドボックスをローカルとクラウド間で自由に移動可能に</title>
-      <link>https://www.publickey1.jp/blog/26/docker_cloud_snadboxesai.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/docker_cloud_snadboxesai.html</guid>
-      <description>[Score: 80] Docker社がAIエージェント向けのクラウドサンドボックス環境「Docker Cloud Sandboxes」を発表しました。 / これにより、ローカルで動作する「Docker Sandboxes」と連携し、サンドボックス環境をローカルとクラウド間で自由に移動できるようになります。 / AIエージェントが安全にコーディング、ビルド、テストなどの作業を行える高分離レベルの仮想マシンベースの環境を提供します。 (Source: Publickey)</description>
-      <pubDate>Sun, 27 Sep 2026 16:02:18 +0000</pubDate>
+      <title>JavaScriptの統合ツールチェーン「Vite+ 1.0」正式リリース。ランタイム、パッケージマネージャー、ビルドツール、リンター、フォーマッターなどを統一</title>
+      <link>https://www.publickey1.jp/blog/26/javascriptvite_10.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptvite_10.html</guid>
+      <description>[Score: 85] JavaScriptの統合ツールチェーン「Vite+ 1.0」が正式リリースされ、Node.jsランタイム、パッケージマネージャー、フロントエンドツールチェーンを単一のCLI「vp」で管理できるようになりました。 / Vite、Vitest、Rolldown、Oxc、tsdownといった主要ツールを統合し、単一の設定ファイルで運用可能です。 / Rust製の高速なバンドラRolldownを基盤とし、Webアプリケーション開発の効率化と開発体験の向上を目指します。 (Source: Publickey)</description>
+      <pubDate>Wed, 30 Sep 2026 15:22:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Google Cloud、AIエージェントからの大量アクセスをPostgreSQLのプライマリDBから切り離せる「PostgreSQL for agents in AlloyDB」発表</title>
+      <link>https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html</guid>
+      <description>[Score: 85] Google Cloudが「PostgreSQL for agents in AlloyDB」を発表しました。 / AIエージェントからの大量の読み取りワークロードを、本番環境のPostgreSQLプライマリDBに影響を与えずに処理できます。 / 数秒でサンドボックス化されたPostgreSQLインスタンスをプロビジョニングし、最大1,000以上のリーダーにスケール可能です。 (Source: Publickey)</description>
+      <pubDate>Tue, 29 Sep 2026 15:46:18 +0000</pubDate>
     </item>
   </channel>
 </rss>
