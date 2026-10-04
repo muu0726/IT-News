@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 03 Oct 2026 22:11:23 +0000</lastBuildDate>
-    <item>
-      <title>Microsoft Digital Defense Report 2026 | Microsoft</title>
-      <link>https://www.microsoft.com/en-us/corporate-responsibility/topics/cybersecurity/reports/microsoft-digital-defense-report/</link>
-      <guid isPermaLink="false">https://www.microsoft.com/en-us/corporate-responsibility/topics/cybersecurity/reports/microsoft-digital-defense-report/</guid>
-      <description>[Score: 95] Microsoftの2026年デジタル防衛レポートは、相互接続されたリスクとAIの台頭がサイバーセキュリティに根本的な変化をもたらしていると指摘しています。 / 攻撃者はAIを活用して攻撃を加速・大規模化しており、防御側もAIを活用して検出・分析・対応を強化する必要があると強調しています。 / レポートは、AIを保護し、相互接続されたシステム全体のレジリエンスを構築するための指針を提供しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 03 Oct 2026 08:35:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google Cloud、ローカルマシンにインストールできる大規模分散型マルチモデルDB「Spanner Omni」正式版リリースを発表</title>
-      <link>https://www.publickey1.jp/blog/26/google_clouddbspanner_omni.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_clouddbspanner_omni.html</guid>
-      <description>[Score: 95] Google Cloudが、大規模分散型マルチモデルデータベース「Spanner Omni」の正式版リリースを発表しました。 / Google Cloud Spannerのソフトウェア版であり、リレーショナルだけでなくグラフ、キーバリュー、ベクトル検索など多様なモデルに対応します。 / ローカルマシン、オンプレミス、マルチクラウド環境でのデプロイが可能で、柔軟なデータ管理ソリューションを提供します。 (Source: Publickey)</description>
-      <pubDate>Thu, 01 Oct 2026 18:28:43 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 04 Oct 2026 22:22:41 +0000</lastBuildDate>
     <item>
       <title>オープンソースAIセキュリティエージェントを使って24件のAndroid脆弱性を発見した方法</title>
       <link>https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/</link>
       <guid isPermaLink="false">https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/</guid>
-      <description>[Score: 95] GitHub Security Labチームは、セキュリティ研究者がAIプロンプトとワークフローを自動化、パッケージ化、共有するためのオープンソースAIセキュリティエージェント「Taskflow Agent」を開発しました。 / このエージェントとカスタムタスクフロープロンプトを使用することで、Androidアプリケーションで20件以上の脆弱性を発見し、報告しました。 / Taskflow AgentはGitHub Copilotライセンスが必要で、LLMが複雑な脆弱性をより速く、または見逃すことなく発見できるよう、研究を段階的なステップに分割してガイドします。 (Source: GitHub Blog)</description>
+      <description>[Score: 95] GitHub Security Labは、オープンソースのAIセキュリティエージェント「Taskflow Agent」を開発し、Androidアプリケーションで24件以上の脆弱性を発見しました。 / このエージェントは、セキュリティ研究者がAIプロンプトとワークフローを自動化、パッケージ化、共有することを可能にします。 / カスタムタスクフロープロンプトを使用することで、LLMが複雑な脆弱性をより迅速に、または見逃すことなく発見できるようガイドし、高い影響力を持つ脆弱性の特定に成功しました。 (Source: GitHub Blog)</description>
       <pubDate>Mon, 28 Sep 2026 19:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>André Dias Moreira Prol: RAGでAIを社内ドキュメントに安全に接続する</title>
-      <link>https://dev.to/andr_diasmoreiraprol_b/andre-dias-moreira-prol-securely-connect-ai-to-your-company-docs-with-rag-184o</link>
-      <guid isPermaLink="false">https://dev.to/andr_diasmoreiraprol_b/andre-dias-moreira-prol-securely-connect-ai-to-your-company-docs-with-rag-184o</guid>
-      <description>[Score: 92] RAG（Retrieval-Augmented Generation）は、AIアシスタントを社内ドキュメントに安全に接続し、正確な回答を得るための効果的な方法です。 / ファインチューニングと比較して、RAGはコストが低く、更新が迅速で、機密データがモデルの重みに焼き付けられるリスクがないため、セキュリティと監査性が向上します。 / RAGシステムは、幻覚を40〜60%削減し、AIインフラコストを大幅に削減できることが実証されています。 (Source: Dev.to)</description>
-      <pubDate>Sat, 03 Oct 2026 22:04:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>André Dias Moreira Prol: RAGでAIを企業のドキュメントに接続する</title>
-      <link>https://dev.to/andr_diasmoreiraprol_b/andre-dias-moreira-prol-rag-conectando-ia-aos-documentos-da-empresa-mc7</link>
-      <guid isPermaLink="false">https://dev.to/andr_diasmoreiraprol_b/andre-dias-moreira-prol-rag-conectando-ia-aos-documentos-da-empresa-mc7</guid>
-      <description>[Score: 92] RAG（Retrieval-Augmented Generation）は、AIアシスタントを企業の契約書や内部ポリシーなどのドキュメントに接続し、機密情報を漏洩させることなく正確な回答を生成する技術です。 / RAGは、GPTやLlamaのような言語モデルが持つ内部データへの無知や「幻覚」の問題を解決し、関連するドキュメントの断片を検索して回答を生成します。 / ブラジルでは、RAGの導入により法務チームの作業時間が最大70%削減された事例があり、LGPD（一般データ保護法）遵守の観点からもセキュリティ対策が不可欠です。 (Source: Dev.to)</description>
-      <pubDate>Sat, 03 Oct 2026 22:04:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cloudflare上で次世代のGitプラットフォームを構築してほしい</title>
-      <link>https://blog.cloudflare.com/next-git-platform-on-cloudflare/</link>
-      <guid isPermaLink="false">https://blog.cloudflare.com/next-git-platform-on-cloudflare/</guid>
-      <description>[Score: 90] Cloudflareが、AIエージェントがコードを生成する次世代のソフトウェア開発に対応するGitプラットフォームの構築を呼びかけています。 / 既存のGitHubは人間中心の設計ですが、エージェントが多数同時に作業する環境では新たな基盤が必要です。 / Cloudflareのバージョン管理ファイルシステム「Artifacts」を基盤として、この課題を解決するプラットフォームのアイデアを募集しています。 (Source: Hacker News)</description>
-      <pubDate>Sat, 03 Oct 2026 19:33:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>【Cursor pstack】AIエージェントに開発を任せる環境をつくる ―月2,500件のPRを支えた開発基盤とは？</title>
-      <link>https://zenn.dev/sc30gsw/books/080faba713547b</link>
-      <guid isPermaLink="false">https://zenn.dev/sc30gsw/books/080faba713547b</guid>
-      <description>[Score: 90] AIエージェントに開発作業を委任するための環境構築と、月2,500件のプルリクエストを支えた開発基盤「pstack」について解説する書籍の目次です。 / エージェントの成果物を信頼し、検証を再現可能な仕組みにすることの重要性を強調しています。 / Playbook、Skill、Principleといった概念を通じて、AIエージェントの判断を支え、開発能力を拡張する方法が示されています。 (Source: Zenn)</description>
-      <pubDate>Fri, 02 Oct 2026 13:19:46 +0000</pubDate>
     </item>
     <item>
       <title>日本企業「ハッキングされないでくれ」ランキング</title>
       <link>https://qiita.com/konaito/items/16a6d2c5da7d144efe95?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/konaito/items/16a6d2c5da7d144efe95?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 2026年9月に相次いだ不正アクセス事例を挙げ、日本企業がハッキングされた際に私たちの生活に与える影響を業界別に考察しています。 / 銀行だけでなく、健康、家族、交友関係など、企業が預かる情報の重要性を強調し、情報漏洩の深刻度を基準にランキングを試みています。 / 企業名ではなく業界を例に挙げ、一人あたりの被害の深刻さ、巻き込まれる範囲、取り返しのつかなさなどを考慮した筆者独自の評価が示されています。 (Source: Qiita)</description>
+      <description>[Score: 92] 2026年9月以降に発生したタイムズカー、佐川急便、ヤマト運輸などの不正アクセス事例を挙げ、情報漏洩の深刻さを指摘しています。 / 企業の知名度や攻撃されやすさではなく、「情報が漏れたときに僕たちが何を失うか」を基準に、業界別の情報漏洩被害ランキングを考察しています。 / パスワードと異なり、免許証情報や病歴など一度漏洩すると取り返しがつかない情報の重要性を強調し、企業へのセキュリティ対策の強化を訴えかけています。 (Source: Qiita)</description>
       <pubDate>Fri, 02 Oct 2026 10:12:24 +0000</pubDate>
     </item>
     <item>
-      <title>米国でのロードレイジ殺人犯の判決が破棄、法廷で被害者のAI動画が使用されたため</title>
-      <link>https://www.reddit.com/r/technology/comments/1wwnhq6/us_road_rage_killers_sentence_quashed_because_ai/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wwnhq6/us_road_rage_killers_sentence_quashed_because_ai/</guid>
-      <description>[Score: 90] 米国でロードレイジ殺人事件の判決が、法廷で被害者のAI生成動画が証拠として使用されたために破棄されました。 / これは、法廷におけるAI技術の利用の適切性と倫理に関する重要な議論を提起しています。 / AI生成コンテンツの信頼性と公平性について、今後の司法判断に影響を与える可能性があります。 (Source: Reddit)</description>
-      <pubDate>Sat, 03 Oct 2026 13:38:11 +0000</pubDate>
+      <title>Qwen 3.8 Flash Next (125B)をコンシューマーハードウェア（RTX 4090）で100T/sで実行</title>
+      <link>https://github.com/Niko1221/Strata</link>
+      <guid isPermaLink="false">https://github.com/Niko1221/Strata</guid>
+      <description>[Score: 90] Strataは、通常サーバーが必要な1250億パラメータのAIモデル「Qwen3.8-Flash-Next」を、RTX 4090などの一般的なゲーミングPCで実行可能にします。 / これにより、ユーザーはチャット、コード生成、画像認識などをローカル環境で高速に利用でき、プライバシーが保護されます。 / 無料でオープンソースであり、マルチGPUにも対応し、コミュニティによって開発・テストされています。 (Source: Hacker News)</description>
+      <pubDate>Sun, 04 Oct 2026 12:51:53 +0000</pubDate>
     </item>
     <item>
-      <title>Codex Security ・ Claude Security 入門｜npaka</title>
-      <link>https://note.com/npaka/n/n2b9c36c471b6</link>
-      <guid isPermaLink="false">https://note.com/npaka/n/n2b9c36c471b6</guid>
-      <description>[Score: 90] AIを活用した自社サービスの脆弱性発見・検証ツール「Codex Security」と「Claude Security」の入門記事です。 / 従来のSASTツールとは異なり、AIがコードベース全体の文脈やデータフローを理解し、ビジネスロジックに起因する脆弱性まで検出します。 / CI/CDへの組み込みやローカルでの利用方法も紹介されており、開発者がセキュリティ対策を強化するための実践的な情報を提供します。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 01 Oct 2026 04:08:11 +0000</pubDate>
+      <title>Cloudflare の判定モデル Clef を Workers AI で触ってみた</title>
+      <link>https://zenn.dev/akari1106/articles/b6d3180cc50dfe</link>
+      <guid isPermaLink="false">https://zenn.dev/akari1106/articles/b6d3180cc50dfe</guid>
+      <description>[Score: 90] Cloudflareが発表した判定モデル「Clef」と「Clef-flash」をWorkers AI経由で利用する実験レポートです。 / Clefは文章や画像を読み込み、あらかじめ定義された選択肢の中から答えを選ぶモデルで、文章生成は行わず、選択肢ごとの確率を返します。 / Workers AIのREST APIを通じて簡単に呼び出せ、カスタマーサポートの自動分類など多様な用途が期待されます。 (Source: Zenn)</description>
+      <pubDate>Sun, 04 Oct 2026 14:36:56 +0000</pubDate>
     </item>
     <item>
-      <title>WindowsでLinuxコンテナの作成や実行を可能にする「WSL Containers」正式リリース。コマンドラインとAPIから利用可能</title>
-      <link>https://www.publickey1.jp/blog/26/windowslinuxwsl_containersapi.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/windowslinuxwsl_containersapi.html</guid>
-      <description>[Score: 90] MicrosoftがWSL（Windows Subsystem for Linux）の新機能として、「WSL Containers」を正式リリースしました。 / これにより、Windows上でDockerなどのサードパーティ製ソフトウェアなしにLinuxコンテナの作成と実行が可能になります。 / コマンドライン（wslc）またはAPIを通じて操作でき、Microsoft IntuneやDefender for Endpointとの統合により一括管理も可能です。 (Source: Publickey)</description>
-      <pubDate>Wed, 30 Sep 2026 02:43:18 +0000</pubDate>
+      <title>APIキーはどこから漏れるのか？ 1,566件の.env探しと7つの公開事例分析</title>
+      <link>https://qiita.com/songchong/items/02672765fe53f911a1a0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/02672765fe53f911a1a0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] APIキーの漏洩経路を7つに分類し、公開リポジトリへの誤公開やWebサイトの公開フォルダへの.env配置が主な原因であることを指摘しています。 / 実際にサイトに届いた.envを探すアクセスが1,566件以上あったという具体的なデータも提示し、AI利用による新たな漏洩経路の増加にも言及しています。 / 鍵の置き場所が「思ったより広く見えていた」という認識の甘さが漏洩に繋がることを強調し、対策の重要性を示唆しています。 (Source: Qiita)</description>
+      <pubDate>Sun, 04 Oct 2026 17:13:59 +0000</pubDate>
     </item>
     <item>
-      <title>AIが開発者の仕事を変える。強化すべき3つのスキル</title>
+      <title>サム・アルトマン、Decodedで語る：「AIの恩恵のために、世界はいくつかの悪い出来事を受け入れるべきだ」</title>
+      <link>https://www.reddit.com/r/technology/comments/1wxr6az/sam_altman_to_decoded_the_world_should_accept/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wxr6az/sam_altman_to_decoded_the_world_should_accept/</guid>
+      <description>[Score: 90] OpenAIのサム・アルトマン氏が、AIの進歩には一定の負の側面が伴うことを世界が受け入れるべきだと発言しました。 / AIの倫理的・社会的な影響に関する議論がさらに深まることが予想されます。 / 技術革新とリスクのバランスについて、重要な視点を提供するものです。 (Source: Reddit)</description>
+      <pubDate>Sun, 04 Oct 2026 21:30:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>日経にサイバー攻撃　情報漏洩、不審メール9000件送信 - 日本経済新聞</title>
+      <link>https://www.nikkei.com/article/DGXZQOUD02B5F0S6A001C2000000/</link>
+      <guid isPermaLink="false">https://www.nikkei.com/article/DGXZQOUD02B5F0S6A001C2000000/</guid>
+      <description>[Score: 90] 日本経済新聞社がサイバー攻撃を受け、社員のMicrosoft 365アカウントが不正ログインされました。 / 約9000件のなりすましメールが送信され、送信先のメールアドレスや氏名、一部メール内容が漏洩したとみられています。 / 日経は個人情報保護委員会に報告し、調査を進めるとともにセキュリティ対策を強化するとしています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 04 Oct 2026 08:03:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIが開発者の仕事を変えている。強化すべき3つのスキルとは。</title>
       <link>https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/</guid>
-      <description>[Score: 90] AIの進化により、開発者の仕事はコードを書くことだけでなく、AIを指示し、その出力を評価し、技術的な意思決定を行う能力が重要になっています。 / AIエージェントが実装の多くを担うようになるため、問題を明確に定義し、適切なコンテキストを提供し、AI生成コードを評価するスキルがより価値を持ちます。 / 開発者は、AIエージェントを効果的にディレクションし、複数のエージェントを調整する能力を強化することが求められます。 (Source: GitHub Blog)</description>
+      <description>[Score: 90] AIの進化により、開発者の仕事内容はコード記述からAIの指示、出力評価、技術的判断へと変化しています。 / AIエージェントを効果的に指揮し、その出力を評価し、トレードオフを理解するスキルが重要になります。 / 問題定義、適切なコンテキスト提供、AI生成コードのレビュー、そして技術的意思決定が、これからの開発者に求められる主要な能力です。 (Source: GitHub Blog)</description>
       <pubDate>Fri, 02 Oct 2026 15:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Kolibri: 主権を持つオープンウェイトモデル</title>
-      <link>https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/</link>
-      <guid isPermaLink="false">https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/</guid>
-      <description>[Score: 88] Aleph Alphaが、英語とドイツ語に特化したMixture-of-Experts Transformerモデル「Kolibri」をリリースしました。 / 78Bの総パラメータと1Mトークンのコンテキスト長を持ち、Apache 2.0ライセンスでフルウェイトが公開されています。 / 公共機関や産業分野など、規制の厳しい領域でのミッションクリティカルな作業向けに特化されており、ドイツ語、推論、数学、エージェント的振る舞いに強みがあります。 (Source: Hacker News)</description>
-      <pubDate>Sat, 03 Oct 2026 09:36:04 +0000</pubDate>
+      <title>既存OSSのnginxをOpenRestyへ差し替え、Entra IDとアプリ内ユーザーを追跡できるログを作った話</title>
+      <link>https://zenn.dev/gritio28tech/articles/7b48f4db2d2bfa</link>
+      <guid isPermaLink="false">https://zenn.dev/gritio28tech/articles/7b48f4db2d2bfa</guid>
+      <description>[Score: 88] DifyのOSS版をAzureで運用する際、既存のnginxをOpenRestyに差し替え、Entra IDとアプリ内ユーザーを追跡できるログを実装した事例です。 / 追加要件「誰がDifyを利用したのか追えるようにしたい」に対し、Easy AuthとOpenRestyのLuaスクリプトを活用して認証情報とユーザー情報を連携させました。 / PaaSやコンテナ環境での認証・ログ追跡の課題解決に役立つ実践的な内容です。 (Source: Zenn)</description>
+      <pubDate>Sun, 04 Oct 2026 12:34:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Homa: AIクラスターにおけるTCPの終焉 [ビデオ]</title>
+      <link>https://www.youtube.com/watch?v=eZ8WWZzoaR0</link>
+      <guid isPermaLink="false">https://www.youtube.com/watch?v=eZ8WWZzoaR0</guid>
+      <description>[Score: 85] このビデオは、AIクラスターにおけるTCPプロトコルの限界と、それを克服するための新しいネットワークプロトコル「Homa」について解説しています。 / Homaは、AIワークロードに特化して設計されており、低レイテンシと高スループットを実現することで、大規模AIモデルの学習効率を向上させることが期待されます。 / AIインフラストラクチャの進化において、ネットワーク層の最適化が重要な課題であることを示唆しています。 (Source: Hacker News)</description>
+      <pubDate>Sun, 04 Oct 2026 19:42:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Codeの「Claude Mods」とは？ 入れてみた3つのmodと、安全に入れる手順</title>
+      <link>https://zenn.dev/yoshihiko555/articles/ea2db6070058b3</link>
+      <guid isPermaLink="false">https://zenn.dev/yoshihiko555/articles/ea2db6070058b3</guid>
+      <description>[Score: 85] Claude Codeの公式拡張機能「Claude Mods」が正式リリースされ、TypeScript/JavaScriptで画面やプロンプト、ツール呼び出しをカスタマイズできるようになりました。 / 記事では、筆者が導入した3つのmod（prompt-rail, md-promptなど）の機能と、安全に導入するための手順を解説しています。 / modはClaude Codeのプロセス内で動作し、画面描画や組み込み機能の差し替えも可能で、開発体験を大きく向上させます。 (Source: Zenn)</description>
+      <pubDate>Sun, 04 Oct 2026 17:22:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>「シークレットスキャン」とは？漏れたAPIキー、誰が止めてくれるのか？ 業務システム65件とGitHub・GitLabを調査</title>
+      <link>https://qiita.com/songchong/items/5ee39ef5b71510e36c2a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/5ee39ef5b71510e36c2a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] GitHubの「シークレットスキャン」がAPIキーの漏洩を検知する仕組みと、その限界について解説しています。 / スキャンは鍵の「形」に基づいて行われ、提供元がGitHubに形を登録している場合にのみプッシュ保護や通知が行われることを説明しています。 / 日本の民間SaaSの鍵はほとんど対応表に載っておらず、漏洩しても通知が来ない前提で自社での管理が重要であると結論付けています。 (Source: Qiita)</description>
+      <pubDate>Sun, 04 Oct 2026 19:05:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>フロリダの女性がClaudeを日記として使用、Anthropicがその内容を警察に通報</title>
+      <link>https://www.reddit.com/r/technology/comments/1wxgn8c/florida_woman_used_claude_as_a_diary_then/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wxgn8c/florida_woman_used_claude_as_a_diary_then/</guid>
+      <description>[Score: 85] フロリダの女性がAIチャットボットClaudeを日記として利用していたところ、Anthropicがその内容を警察に通報しました。 / AIのプライバシー保護と利用規約、そして倫理的な問題が浮上しています。 / ユーザーデータの取り扱いに関するAI企業の責任が問われる事例です。 (Source: Reddit)</description>
+      <pubDate>Sun, 04 Oct 2026 14:10:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI時代に、次のベテランエンジニアは育つのか｜柴田 芳樹</title>
+      <link>https://note.com/yoshiki_shibata/n/n185f3d9e13bc</link>
+      <guid isPermaLink="false">https://note.com/yoshiki_shibata/n/n185f3d9e13bc</guid>
+      <description>[Score: 85] 長年のソフトウェア開発経験を持つ筆者が、生成AIがもたらす変化について考察しています。 / インターネットやIDEの登場とは異なり、AIは「考える主体」を人間から奪う可能性があり、ベテランエンジニアの育成に影響を与えると指摘。 / AIを道具として使いこなし、本質的な問題解決能力を持つエンジニアの重要性を強調しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 04 Oct 2026 12:43:02 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptの統合ツールチェーン「Vite+ 1.0」正式リリース。ランタイム、パッケージマネージャー、ビルドツール、リンター、フォーマッターなどを統一</title>
       <link>https://www.publickey1.jp/blog/26/javascriptvite_10.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptvite_10.html</guid>
-      <description>[Score: 88] JavaScriptの統合ツールチェーン「Vite+ 1.0」が正式リリースされました。 / Viteを基盤とし、ランタイム、パッケージマネージャー、ビルドツール、リンター、フォーマッターなどを単一のCLI「vp」で管理できます。 / Rust製の高速バンドラRolldownやOxcなどを統合し、Webアプリケーション開発の複雑さを軽減し、開発効率を向上させます。 (Source: Publickey)</description>
+      <description>[Score: 85] JavaScript開発用の統合ツールチェーン「Vite+ 1.0」が正式リリースされました。 / ランタイム、パッケージマネージャー、ビルドツール、リンター、フォーマッター、テストランナーなど、Webアプリ開発に必要な多様なツールを単一のCLIで統一的に管理できます。 / Rust製の高速なバンドラ「Rolldown」や人気のビルドツール「Vite」などを基盤とし、MITライセンスのオープンソースとして提供されます。 (Source: Publickey)</description>
       <pubDate>Wed, 30 Sep 2026 15:22:55 +0000</pubDate>
     </item>
     <item>
-      <title>Google Cloud、AIエージェントからの大量アクセスをPostgreSQLのプライマリDBから切り離せる「PostgreSQL for agents in AlloyDB」発表</title>
-      <link>https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html</guid>
-      <description>[Score: 88] Google Cloudが、AIエージェントからの大量の読み取りアクセスをPostgreSQLのプライマリデータベースから分離する新サービス「PostgreSQL for agents in AlloyDB」を発表しました。 / これにより、AIエージェントが本番環境のデータベース性能に悪影響を与えることなく、ライブ運用データに高速アクセスできるようになります。 / 数秒でサンドボックス化されたPostgreSQLインスタンスをプロビジョニングし、最大1,000以上のリーダーにスケール可能です。 (Source: Publickey)</description>
-      <pubDate>Tue, 29 Sep 2026 15:46:18 +0000</pubDate>
+      <title>Git 2.56のハイライト</title>
+      <link>https://github.blog/open-source/git/highlights-from-git-2-56/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/git/highlights-from-git-2-56/</guid>
+      <description>[Score: 85] オープンソースのGitプロジェクトがGit 2.56.0をリリースし、104人以上の貢献者による新機能とバグ修正が含まれています。 / 特に注目すべきは、マージコンフリクト解決をより安全にする新しい`git add --resolved`モードです。 / この新機能は、未マージのパスのみを対象とし、コンフリクトマーカーが残っていないかを確認することで、意図しないファイルのステージングを防ぎます。 (Source: GitHub Blog)</description>
+      <pubDate>Mon, 28 Sep 2026 17:23:33 +0000</pubDate>
     </item>
     <item>
-      <title>ClaudeおよびClaude CodeでOpus 5.5を最大限に活用する方法</title>
-      <link>https://claude.dev/blog/getting-the-most-out-of-opus-5-5/</link>
-      <guid isPermaLink="false">https://claude.dev/blog/getting-the-most-out-of-opus-5-5/</guid>
-      <description>[Score: 85] Anthropicの最新モデルOpus 5.5をClaudeアプリとClaude Codeで最大限に活用するためのガイドです。 / Opus 5.5は、特に長時間の多段階作業において、以前のモデルよりも優れた性能を発揮します。 / タスク全体を一度に与え、明確な完了目標を設定することで、モデルの自律的な作業能力を最大限に引き出すことができます。 (Source: Hacker News)</description>
-      <pubDate>Sat, 03 Oct 2026 18:29:30 +0000</pubDate>
+      <title>PythonとCasADiで学ぶLie群上の最適化</title>
+      <link>https://zenn.dev/takuya_fukatsu/articles/069f5b78d7597f</link>
+      <guid isPermaLink="false">https://zenn.dev/takuya_fukatsu/articles/069f5b78d7597f</guid>
+      <description>[Score: 82] ロボットやドローンの姿勢（回転）を変数とする最適化問題を、PythonとCasADiを使ってLie群の考え方で解く方法を解説するノートブックです。 / 回転行列が持つ制約のため直接最適化が難しい問題を、Lie群・Lie代数を用いることで「ふつうのベクトル空間での制約のない問題」に変換します。 / CasADiの自動微分機能を活用し、Lie群の基本操作からLie群上の微分、そして最適化問題の解法までを実践的に学びます。 (Source: Zenn)</description>
+      <pubDate>Sun, 04 Oct 2026 08:35:06 +0000</pubDate>
     </item>
     <item>
-      <title>FTL: クラウドのための新しいオペレーティングシステム</title>
-      <link>https://ftl-os.org/</link>
-      <guid isPermaLink="false">https://ftl-os.org/</guid>
-      <description>[Score: 85] FTLは、クラウド向けに設計された新しいオペレーティングシステムで、軽量コンテナをVM並みにセキュアにすることを目指しています。 / マイクロカーネルの柔軟性とセキュリティ、モノリシックカーネルのパフォーマンスとシンプルさを兼ね備えています。 / ユーザー空間OSと最小限のFTLカーネルにより、OSレベルの新機能をアプリケーションで利用可能にします。 (Source: Hacker News)</description>
-      <pubDate>Sat, 03 Oct 2026 15:02:36 +0000</pubDate>
+      <title>Google Cloud、ローカルマシンにインストールできる大規模分散型マルチモデルDB「Spanner Omni」正式版リリースを発表</title>
+      <link>https://www.publickey1.jp/blog/26/google_clouddbspanner_omni.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_clouddbspanner_omni.html</guid>
+      <description>[Score: 82] Google Cloudが、大規模分散型マルチモデルデータベースソフトウェア「Spanner Omni」の正式版リリースを発表しました。 / Spanner Omniは、Google Cloud Spannerのソフトウェア版で、リレーショナルだけでなくグラフ、キーバリュー、ベクトル検索、テキスト検索などマルチモデルに対応。 / Linux、macOS、Google CloudやAWSの仮想マシン、Kubernetes Podにインストール可能で、ローカルでのテストからマルチクラウド展開まで柔軟な利用が可能です。 (Source: Publickey)</description>
+      <pubDate>Thu, 01 Oct 2026 18:28:43 +0000</pubDate>
     </item>
     <item>
-      <title>glibc の strlen は文字列範囲外を読むことで高速に計算する</title>
-      <link>https://zenn.dev/peloeil/articles/glibc-strlen-2023</link>
-      <guid isPermaLink="false">https://zenn.dev/peloeil/articles/glibc-strlen-2023</guid>
-      <description>[Score: 85] glibcのstrlen関数は、文字列の終端文字\0を高速に探索するため、複数バイトをまとめて読み込む最適化を行っています。 / この最適化では、文字列の範囲外を読み込む可能性があり、特に2023年2月の変更では文字列の先頭より前から読み始める工夫が加わりました。 / 本記事では、このアルゴリズムの仕組みと、なぜ範囲外読み込みが許容されるのかを詳細に解説しています。 (Source: Zenn)</description>
-      <pubDate>Thu, 01 Oct 2026 17:56:12 +0000</pubDate>
+      <title>不適切な墨消しによりGoogleデータセンターの電力・水使用量が明らかに</title>
+      <link>https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/</link>
+      <guid isPermaLink="false">https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/</guid>
+      <description>[Score: 80] ネブラスカ州のGoogleデータセンターが提出した報告書において、電力と水の使用量が「企業秘密」として墨消しされていましたが、不適切な処理によりその内容が明らかになりました。 / リンカーンのデータセンター「Agate LLC」は、ピーク時に52.65メガワットの電力と年間1300万ガロンの水を使用していたことが判明しました。 / この情報開示は、データセンターの環境負荷に対する透明性の重要性を浮き彫りにしています。 (Source: Hacker News)</description>
+      <pubDate>Sun, 04 Oct 2026 19:37:05 +0000</pubDate>
     </item>
     <item>
-      <title>連邦判事がFlock検索を違憲と判断、AOCとバーニー・サンダースがナンバープレートリーダー禁止法案を提出</title>
-      <link>https://www.reddit.com/r/technology/comments/1wwpqg7/federal_judge_calls_flock_search_unconstitutional/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wwpqg7/federal_judge_calls_flock_search_unconstitutional/</guid>
-      <description>[Score: 85] 連邦判事がFlockの検索システムを違憲と判断しました。 / これは、ナンバープレートリーダーのプライバシー侵害に対する懸念が高まっていることを示唆しています。 / AOCとバーニー・サンダース議員が、これらのデバイスの禁止法案を提出しました。 (Source: Reddit)</description>
-      <pubDate>Sat, 03 Oct 2026 15:16:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>バーニー・サンダース、連邦政府によるFlock使用禁止法案を提出</title>
-      <link>https://www.reddit.com/r/technology/comments/1ww9lov/bernie_sanders_introduces_bill_to_ban_the_federal/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1ww9lov/bernie_sanders_introduces_bill_to_ban_the_federal/</guid>
-      <description>[Score: 85] バーニー・サンダース上院議員が、連邦政府によるFlock監視システムの利用を禁止する法案を提出しました。 / これは、ナンバープレートリーダーなどの監視技術が市民のプライバシーを侵害するとの懸念に基づいています。 / 政府による監視の範囲と市民の権利保護に関する議論が活発化する可能性があります。 (Source: Reddit)</description>
-      <pubDate>Sat, 03 Oct 2026 00:26:22 +0000</pubDate>
+      <title>ASICパズルの結果</title>
+      <link>https://blog.janestreet.com/asic-puzzle-results/</link>
+      <guid isPermaLink="false">https://blog.janestreet.com/asic-puzzle-results/</guid>
+      <description>[Score: 80] Jane Streetが公開したASICパズルの結果が発表されました。 / このパズルは、小さなチップのGDSレイアウトからその機能をリバースエンジニアリングするというもので、約400件の応募がありました。 / チップの正体は、11x11のスターバトルパズルを検証するハードウェアチェッカーでした。 (Source: Hacker News)</description>
+      <pubDate>Fri, 02 Oct 2026 14:42:44 +0000</pubDate>
     </item>
   </channel>
 </rss>
