@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 04 Oct 2026 22:22:41 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 00:52:24 +0000</lastBuildDate>
     <item>
-      <title>オープンソースAIセキュリティエージェントを使って24件のAndroid脆弱性を発見した方法</title>
-      <link>https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/</link>
-      <guid isPermaLink="false">https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/</guid>
-      <description>[Score: 95] GitHub Security Labは、オープンソースのAIセキュリティエージェント「Taskflow Agent」を開発し、Androidアプリケーションで24件以上の脆弱性を発見しました。 / このエージェントは、セキュリティ研究者がAIプロンプトとワークフローを自動化、パッケージ化、共有することを可能にします。 / カスタムタスクフロープロンプトを使用することで、LLMが複雑な脆弱性をより迅速に、または見逃すことなく発見できるようガイドし、高い影響力を持つ脆弱性の特定に成功しました。 (Source: GitHub Blog)</description>
-      <pubDate>Mon, 28 Sep 2026 19:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>日本企業「ハッキングされないでくれ」ランキング</title>
-      <link>https://qiita.com/konaito/items/16a6d2c5da7d144efe95?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/konaito/items/16a6d2c5da7d144efe95?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 92] 2026年9月以降に発生したタイムズカー、佐川急便、ヤマト運輸などの不正アクセス事例を挙げ、情報漏洩の深刻さを指摘しています。 / 企業の知名度や攻撃されやすさではなく、「情報が漏れたときに僕たちが何を失うか」を基準に、業界別の情報漏洩被害ランキングを考察しています。 / パスワードと異なり、免許証情報や病歴など一度漏洩すると取り返しがつかない情報の重要性を強調し、企業へのセキュリティ対策の強化を訴えかけています。 (Source: Qiita)</description>
-      <pubDate>Fri, 02 Oct 2026 10:12:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>Qwen 3.8 Flash Next (125B)をコンシューマーハードウェア（RTX 4090）で100T/sで実行</title>
-      <link>https://github.com/Niko1221/Strata</link>
-      <guid isPermaLink="false">https://github.com/Niko1221/Strata</guid>
-      <description>[Score: 90] Strataは、通常サーバーが必要な1250億パラメータのAIモデル「Qwen3.8-Flash-Next」を、RTX 4090などの一般的なゲーミングPCで実行可能にします。 / これにより、ユーザーはチャット、コード生成、画像認識などをローカル環境で高速に利用でき、プライバシーが保護されます。 / 無料でオープンソースであり、マルチGPUにも対応し、コミュニティによって開発・テストされています。 (Source: Hacker News)</description>
-      <pubDate>Sun, 04 Oct 2026 12:51:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cloudflare の判定モデル Clef を Workers AI で触ってみた</title>
-      <link>https://zenn.dev/akari1106/articles/b6d3180cc50dfe</link>
-      <guid isPermaLink="false">https://zenn.dev/akari1106/articles/b6d3180cc50dfe</guid>
-      <description>[Score: 90] Cloudflareが発表した判定モデル「Clef」と「Clef-flash」をWorkers AI経由で利用する実験レポートです。 / Clefは文章や画像を読み込み、あらかじめ定義された選択肢の中から答えを選ぶモデルで、文章生成は行わず、選択肢ごとの確率を返します。 / Workers AIのREST APIを通じて簡単に呼び出せ、カスタマーサポートの自動分類など多様な用途が期待されます。 (Source: Zenn)</description>
-      <pubDate>Sun, 04 Oct 2026 14:36:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>APIキーはどこから漏れるのか？ 1,566件の.env探しと7つの公開事例分析</title>
+      <title>API キーはどこから漏れるのか？ 自分のサイトに来た .env 探し 1,566 件と、公開事例を 7 つの経路に分けてみた</title>
       <link>https://qiita.com/songchong/items/02672765fe53f911a1a0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/songchong/items/02672765fe53f911a1a0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] APIキーの漏洩経路を7つに分類し、公開リポジトリへの誤公開やWebサイトの公開フォルダへの.env配置が主な原因であることを指摘しています。 / 実際にサイトに届いた.envを探すアクセスが1,566件以上あったという具体的なデータも提示し、AI利用による新たな漏洩経路の増加にも言及しています。 / 鍵の置き場所が「思ったより広く見えていた」という認識の甘さが漏洩に繋がることを強調し、対策の重要性を示唆しています。 (Source: Qiita)</description>
+      <description>[Score: 98] APIキーの漏洩経路を7つに分類し、公開リポジトリへの誤掲載やWebサイトの公開フォルダへの.envファイル配置など、具体的な事例と対策を解説しています。 / 自身のサイトへのアクセスログから、.envファイルを探す試みが多数あったことを示し、攻撃者が狙うポイントを明らかにしています。 / 各漏洩経路に対する具体的な防御策を提示し、開発者や運用者が取るべき行動を明確にしています。 (Source: Qiita)</description>
       <pubDate>Sun, 04 Oct 2026 17:13:59 +0000</pubDate>
     </item>
     <item>
-      <title>サム・アルトマン、Decodedで語る：「AIの恩恵のために、世界はいくつかの悪い出来事を受け入れるべきだ」</title>
-      <link>https://www.reddit.com/r/technology/comments/1wxr6az/sam_altman_to_decoded_the_world_should_accept/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wxr6az/sam_altman_to_decoded_the_world_should_accept/</guid>
-      <description>[Score: 90] OpenAIのサム・アルトマン氏が、AIの進歩には一定の負の側面が伴うことを世界が受け入れるべきだと発言しました。 / AIの倫理的・社会的な影響に関する議論がさらに深まることが予想されます。 / 技術革新とリスクのバランスについて、重要な視点を提供するものです。 (Source: Reddit)</description>
-      <pubDate>Sun, 04 Oct 2026 21:30:38 +0000</pubDate>
+      <title>Dust: バックプロパゲーションなしでTransformerを事前学習</title>
+      <link>https://qlabs.sh/research/dust</link>
+      <guid isPermaLink="false">https://qlabs.sh/research/dust</guid>
+      <description>[Score: 95] Qlabsが、バックプロパゲーション（誤差逆伝播法）を使用せずにTransformerモデルを事前学習する新しいアルゴリズム「Dust」を発表しました。 / これは、深層学習の根幹をなすバックプロパゲーションの制約から解放され、より汎用的で計算量にスケールする学習アルゴリズムの可能性を探るものです。 / 「The Bitter Lesson」の原則に基づき、計算量が増えるにつれて汎用的な手法が最終的に勝利するという考え方を具現化しています。 (Source: Hacker News)</description>
+      <pubDate>Mon, 05 Oct 2026 21:15:07 +0000</pubDate>
     </item>
     <item>
-      <title>日経にサイバー攻撃　情報漏洩、不審メール9000件送信 - 日本経済新聞</title>
-      <link>https://www.nikkei.com/article/DGXZQOUD02B5F0S6A001C2000000/</link>
-      <guid isPermaLink="false">https://www.nikkei.com/article/DGXZQOUD02B5F0S6A001C2000000/</guid>
-      <description>[Score: 90] 日本経済新聞社がサイバー攻撃を受け、社員のMicrosoft 365アカウントが不正ログインされました。 / 約9000件のなりすましメールが送信され、送信先のメールアドレスや氏名、一部メール内容が漏洩したとみられています。 / 日経は個人情報保護委員会に報告し、調査を進めるとともにセキュリティ対策を強化するとしています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 04 Oct 2026 08:03:25 +0000</pubDate>
+      <title>AI エージェントに API キーを渡しても大丈夫か？ 対話文・.env・環境変数・MCP・OAuth — 6 つの渡し方を Claude Code・Codex・Gemini CLI・Copilot・Cursor で調べてみた</title>
+      <link>https://qiita.com/songchong/items/873b4f14d26296176cfd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/873b4f14d26296176cfd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 95] AIエージェントにAPIキーを渡す際のセキュリティリスクと、その安全な渡し方について6つの方法を比較検証しています。 / 対話文や.envファイルに直接記述するリスク、環境変数やOAuthを利用する際の注意点と設定方法を具体的に解説しています。 / Claude Code、Codex、Gemini CLI、Copilot、Cursorといった主要なAIツールでの挙動を公式文書に基づいて詳細に分析しています。 (Source: Qiita)</description>
+      <pubDate>Mon, 05 Oct 2026 19:05:52 +0000</pubDate>
     </item>
     <item>
-      <title>AIが開発者の仕事を変えている。強化すべき3つのスキルとは。</title>
-      <link>https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/</guid>
-      <description>[Score: 90] AIの進化により、開発者の仕事内容はコード記述からAIの指示、出力評価、技術的判断へと変化しています。 / AIエージェントを効果的に指揮し、その出力を評価し、トレードオフを理解するスキルが重要になります。 / 問題定義、適切なコンテキスト提供、AI生成コードのレビュー、そして技術的意思決定が、これからの開発者に求められる主要な能力です。 (Source: GitHub Blog)</description>
-      <pubDate>Fri, 02 Oct 2026 15:00:00 +0000</pubDate>
+      <title>試験から実務へ：180BのオープンモデルがHugging Faceの公式ランキング10部門でトップに</title>
+      <link>https://dev.to/_0e3192755d4df45b92/de-los-examenes-al-trabajo-real-un-modelo-abierto-de-180b-lidera-10-clasificaciones-oficiales-de-389e</link>
+      <guid isPermaLink="false">https://dev.to/_0e3192755d4df45b92/de-los-examenes-al-trabajo-real-un-modelo-abierto-de-180b-lidera-10-clasificaciones-oficiales-de-389e</guid>
+      <description>[Score: 92] 180BのオープンモデルがHugging Faceの公式ベンチマークで10部門を制覇しました。 / このモデルは、大学院レベルの科学や数学オリンピックといった試験形式のテストだけでなく、企業が実際にモデルに求める実務能力を測るベンチマークでもトップを獲得しています。 / 特に、多言語文書の解析能力を評価するMDPBenchで高いスコアを記録し、RAGシステムなどの基盤技術としての可能性を示しています。 (Source: Dev.to)</description>
+      <pubDate>Tue, 06 Oct 2026 00:43:23 +0000</pubDate>
     </item>
     <item>
-      <title>既存OSSのnginxをOpenRestyへ差し替え、Entra IDとアプリ内ユーザーを追跡できるログを作った話</title>
-      <link>https://zenn.dev/gritio28tech/articles/7b48f4db2d2bfa</link>
-      <guid isPermaLink="false">https://zenn.dev/gritio28tech/articles/7b48f4db2d2bfa</guid>
-      <description>[Score: 88] DifyのOSS版をAzureで運用する際、既存のnginxをOpenRestyに差し替え、Entra IDとアプリ内ユーザーを追跡できるログを実装した事例です。 / 追加要件「誰がDifyを利用したのか追えるようにしたい」に対し、Easy AuthとOpenRestyのLuaスクリプトを活用して認証情報とユーザー情報を連携させました。 / PaaSやコンテナ環境での認証・ログ追跡の課題解決に役立つ実践的な内容です。 (Source: Zenn)</description>
-      <pubDate>Sun, 04 Oct 2026 12:34:49 +0000</pubDate>
+      <title>Beam: Reflectionの501Bオープンウェイトモデル</title>
+      <link>https://reflection.ai/blog/introducing-beam</link>
+      <guid isPermaLink="false">https://reflection.ai/blog/introducing-beam</guid>
+      <description>[Score: 90] Reflectionが初のオープンウェイトモデル「Beam」を発表しました。これは5010億の総パラメータを持つ疎なMixture-of-Expertsモデルです。 / コーディング、推論、エージェントワークロードに特化し、23.8兆の高品質トークンで事前学習され、高計算量の強化学習も実施されました。 / 既存のオープンモデルと比較して、推論時の効率性に優れており、今後のAI開発に貢献が期待されます。 (Source: Hacker News)</description>
+      <pubDate>Mon, 05 Oct 2026 19:16:35 +0000</pubDate>
     </item>
     <item>
-      <title>Homa: AIクラスターにおけるTCPの終焉 [ビデオ]</title>
-      <link>https://www.youtube.com/watch?v=eZ8WWZzoaR0</link>
-      <guid isPermaLink="false">https://www.youtube.com/watch?v=eZ8WWZzoaR0</guid>
-      <description>[Score: 85] このビデオは、AIクラスターにおけるTCPプロトコルの限界と、それを克服するための新しいネットワークプロトコル「Homa」について解説しています。 / Homaは、AIワークロードに特化して設計されており、低レイテンシと高スループットを実現することで、大規模AIモデルの学習効率を向上させることが期待されます。 / AIインフラストラクチャの進化において、ネットワーク層の最適化が重要な課題であることを示唆しています。 (Source: Hacker News)</description>
-      <pubDate>Sun, 04 Oct 2026 19:42:25 +0000</pubDate>
+      <title>Opus 5.5エージェントが室温磁性半導体の候補を2つ発見</title>
+      <link>https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors</link>
+      <guid isPermaLink="false">https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors</guid>
+      <description>[Score: 90] Claude Opus 5.5エージェントのチームが、次世代コンピュータメモリ向けの室温磁性半導体の候補を2つ発見しました。 / これらは正味の磁化はゼロでありながら、電子をスピンで選別する特性を持つと予測されています。 / AIエージェントが材料科学の分野で新たな化合物の設計と既存材料の特性予測に貢献した画期的な事例です。 (Source: Hacker News)</description>
+      <pubDate>Mon, 05 Oct 2026 21:00:21 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeの「Claude Mods」とは？ 入れてみた3つのmodと、安全に入れる手順</title>
-      <link>https://zenn.dev/yoshihiko555/articles/ea2db6070058b3</link>
-      <guid isPermaLink="false">https://zenn.dev/yoshihiko555/articles/ea2db6070058b3</guid>
-      <description>[Score: 85] Claude Codeの公式拡張機能「Claude Mods」が正式リリースされ、TypeScript/JavaScriptで画面やプロンプト、ツール呼び出しをカスタマイズできるようになりました。 / 記事では、筆者が導入した3つのmod（prompt-rail, md-promptなど）の機能と、安全に導入するための手順を解説しています。 / modはClaude Codeのプロセス内で動作し、画面描画や組み込み機能の差し替えも可能で、開発体験を大きく向上させます。 (Source: Zenn)</description>
-      <pubDate>Sun, 04 Oct 2026 17:22:57 +0000</pubDate>
+      <title>文章で要件定義するのをやめた。AIでモックを先に作ったら、認識ズレが実装前に全部見つかった</title>
+      <link>https://qiita.com/kazuki_ogawa/items/f1a15a199d9f91fe6080?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kazuki_ogawa/items/f1a15a199d9f91fe6080?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 社内SaaSの機能追加において、従来の文章による要件定義ではなく、AIを活用してモックを先に作成する手法を導入しました。 / このアプローチにより、実装前に3回の認識ズレを発見し、開発期間を大幅に短縮できた経験が共有されています。 / AIによるモック作成が、要件定義のプロセスと意思決定の順序を根本的に変える可能性を示唆しています。 (Source: Qiita)</description>
+      <pubDate>Mon, 05 Oct 2026 07:31:16 +0000</pubDate>
     </item>
     <item>
-      <title>「シークレットスキャン」とは？漏れたAPIキー、誰が止めてくれるのか？ 業務システム65件とGitHub・GitLabを調査</title>
-      <link>https://qiita.com/songchong/items/5ee39ef5b71510e36c2a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/5ee39ef5b71510e36c2a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] GitHubの「シークレットスキャン」がAPIキーの漏洩を検知する仕組みと、その限界について解説しています。 / スキャンは鍵の「形」に基づいて行われ、提供元がGitHubに形を登録している場合にのみプッシュ保護や通知が行われることを説明しています。 / 日本の民間SaaSの鍵はほとんど対応表に載っておらず、漏洩しても通知が来ない前提で自社での管理が重要であると結論付けています。 (Source: Qiita)</description>
-      <pubDate>Sun, 04 Oct 2026 19:05:48 +0000</pubDate>
+      <title>連日の不正アクセスの件、マジでシャレにならないが、こんなやばいの日本だけ？他の国で問題になってないん？「今世界中で起きてる」</title>
+      <link>https://togetter.com/li/2754581</link>
+      <guid isPermaLink="false">https://togetter.com/li/2754581</guid>
+      <description>[Score: 90] 日本で連日報道される不正アクセスや情報漏洩が、実は世界中で深刻な問題となっていることが指摘されています。 / アメリカ、韓国、デンマーク、フランスなど、多くの国で大規模な情報流出が発生しており、中には国家規模の被害も報告されています。 / サイバー攻撃が世界的に一段階レベルアップしており、AIも利用されている可能性が示唆されています。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 05 Oct 2026 18:31:36 +0000</pubDate>
     </item>
     <item>
-      <title>フロリダの女性がClaudeを日記として使用、Anthropicがその内容を警察に通報</title>
-      <link>https://www.reddit.com/r/technology/comments/1wxgn8c/florida_woman_used_claude_as_a_diary_then/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1wxgn8c/florida_woman_used_claude_as_a_diary_then/</guid>
-      <description>[Score: 85] フロリダの女性がAIチャットボットClaudeを日記として利用していたところ、Anthropicがその内容を警察に通報しました。 / AIのプライバシー保護と利用規約、そして倫理的な問題が浮上しています。 / ユーザーデータの取り扱いに関するAI企業の責任が問われる事例です。 (Source: Reddit)</description>
-      <pubDate>Sun, 04 Oct 2026 14:10:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI時代に、次のベテランエンジニアは育つのか｜柴田 芳樹</title>
-      <link>https://note.com/yoshiki_shibata/n/n185f3d9e13bc</link>
-      <guid isPermaLink="false">https://note.com/yoshiki_shibata/n/n185f3d9e13bc</guid>
-      <description>[Score: 85] 長年のソフトウェア開発経験を持つ筆者が、生成AIがもたらす変化について考察しています。 / インターネットやIDEの登場とは異なり、AIは「考える主体」を人間から奪う可能性があり、ベテランエンジニアの育成に影響を与えると指摘。 / AIを道具として使いこなし、本質的な問題解決能力を持つエンジニアの重要性を強調しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 04 Oct 2026 12:43:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>JavaScriptの統合ツールチェーン「Vite+ 1.0」正式リリース。ランタイム、パッケージマネージャー、ビルドツール、リンター、フォーマッターなどを統一</title>
-      <link>https://www.publickey1.jp/blog/26/javascriptvite_10.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptvite_10.html</guid>
-      <description>[Score: 85] JavaScript開発用の統合ツールチェーン「Vite+ 1.0」が正式リリースされました。 / ランタイム、パッケージマネージャー、ビルドツール、リンター、フォーマッター、テストランナーなど、Webアプリ開発に必要な多様なツールを単一のCLIで統一的に管理できます。 / Rust製の高速なバンドラ「Rolldown」や人気のビルドツール「Vite」などを基盤とし、MITライセンスのオープンソースとして提供されます。 (Source: Publickey)</description>
-      <pubDate>Wed, 30 Sep 2026 15:22:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>Git 2.56のハイライト</title>
-      <link>https://github.blog/open-source/git/highlights-from-git-2-56/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/git/highlights-from-git-2-56/</guid>
-      <description>[Score: 85] オープンソースのGitプロジェクトがGit 2.56.0をリリースし、104人以上の貢献者による新機能とバグ修正が含まれています。 / 特に注目すべきは、マージコンフリクト解決をより安全にする新しい`git add --resolved`モードです。 / この新機能は、未マージのパスのみを対象とし、コンフリクトマーカーが残っていないかを確認することで、意図しないファイルのステージングを防ぎます。 (Source: GitHub Blog)</description>
-      <pubDate>Mon, 28 Sep 2026 17:23:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>PythonとCasADiで学ぶLie群上の最適化</title>
-      <link>https://zenn.dev/takuya_fukatsu/articles/069f5b78d7597f</link>
-      <guid isPermaLink="false">https://zenn.dev/takuya_fukatsu/articles/069f5b78d7597f</guid>
-      <description>[Score: 82] ロボットやドローンの姿勢（回転）を変数とする最適化問題を、PythonとCasADiを使ってLie群の考え方で解く方法を解説するノートブックです。 / 回転行列が持つ制約のため直接最適化が難しい問題を、Lie群・Lie代数を用いることで「ふつうのベクトル空間での制約のない問題」に変換します。 / CasADiの自動微分機能を活用し、Lie群の基本操作からLie群上の微分、そして最適化問題の解法までを実践的に学びます。 (Source: Zenn)</description>
-      <pubDate>Sun, 04 Oct 2026 08:35:06 +0000</pubDate>
+      <title>ランサム集団キリンの中心メンバー、日本で拘束 アサヒにも「攻撃」</title>
+      <link>https://news.yahoo.co.jp/articles/e8c753300f37b0f2ba619bfe706422fe59ed0d6b</link>
+      <guid isPermaLink="false">https://news.yahoo.co.jp/articles/e8c753300f37b0f2ba619bfe706422fe59ed0d6b</guid>
+      <description>[Score: 90] 世界各国の企業にサイバー攻撃を仕掛けるランサムウェア集団「Qilin（キリン）」の中心メンバーであるロシア国籍の男が、日本で拘束されました。 / 男はドイツの物流会社への恐喝容疑で、日本の捜査当局により大阪市内で旅行中に拘束され、ドイツ側に引き渡されました。 / キリンは2025年にアサヒグループホールディングスへのサイバー攻撃も行っており、国際的な連携捜査が進んでいます。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 05 Oct 2026 23:08:08 +0000</pubDate>
     </item>
     <item>
       <title>Google Cloud、ローカルマシンにインストールできる大規模分散型マルチモデルDB「Spanner Omni」正式版リリースを発表</title>
       <link>https://www.publickey1.jp/blog/26/google_clouddbspanner_omni.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_clouddbspanner_omni.html</guid>
-      <description>[Score: 82] Google Cloudが、大規模分散型マルチモデルデータベースソフトウェア「Spanner Omni」の正式版リリースを発表しました。 / Spanner Omniは、Google Cloud Spannerのソフトウェア版で、リレーショナルだけでなくグラフ、キーバリュー、ベクトル検索、テキスト検索などマルチモデルに対応。 / Linux、macOS、Google CloudやAWSの仮想マシン、Kubernetes Podにインストール可能で、ローカルでのテストからマルチクラウド展開まで柔軟な利用が可能です。 (Source: Publickey)</description>
+      <description>[Score: 90] Google Cloudが大規模分散型マルチモデルデータベース「Spanner Omni」の正式版をリリースしました。 / Spanner Omniは、リレーショナルだけでなくグラフ、キーバリュー、ベクトル検索など多様なモデルに対応しています。 / ローカルマシンやマルチクラウド環境にインストール可能で、Google Cloud Spannerのソフトウェア版として提供されます。 (Source: Publickey)</description>
       <pubDate>Thu, 01 Oct 2026 18:28:43 +0000</pubDate>
     </item>
     <item>
-      <title>不適切な墨消しによりGoogleデータセンターの電力・水使用量が明らかに</title>
-      <link>https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/</link>
-      <guid isPermaLink="false">https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/</guid>
-      <description>[Score: 80] ネブラスカ州のGoogleデータセンターが提出した報告書において、電力と水の使用量が「企業秘密」として墨消しされていましたが、不適切な処理によりその内容が明らかになりました。 / リンカーンのデータセンター「Agate LLC」は、ピーク時に52.65メガワットの電力と年間1300万ガロンの水を使用していたことが判明しました。 / この情報開示は、データセンターの環境負荷に対する透明性の重要性を浮き彫りにしています。 (Source: Hacker News)</description>
-      <pubDate>Sun, 04 Oct 2026 19:37:05 +0000</pubDate>
+      <title>GPUなしノートPCで180Bモデルを動かす方法：4ビットGGUFがフル精度を維持する仕組み</title>
+      <link>https://dev.to/ginigen_ai_010d9180cbbdb1/running-a-180b-model-on-a-laptop-with-no-gpu-how-4-bit-gguf-keeps-full-accuracy-31c9</link>
+      <guid isPermaLink="false">https://dev.to/ginigen_ai_010d9180cbbdb1/running-a-180b-model-on-a-laptop-with-no-gpu-how-4-bit-gguf-keeps-full-accuracy-31c9</guid>
+      <description>[Score: 90] POCKET-Darwin-180B-GGUFは、GPUなしで動作するようパッケージ化された1800億パラメータモデルの4ビットビルドです。 / このモデルは、疎なMixture-of-Experts (MoE) アーキテクチャと選択的4ビット量子化により、ノートPCのメモリに収まります。 / llama.cppを使用して簡単に実行でき、OSのページング機能により大容量モデルも効率的に扱えます。 (Source: Dev.to)</description>
+      <pubDate>Tue, 06 Oct 2026 00:42:56 +0000</pubDate>
     </item>
     <item>
-      <title>ASICパズルの結果</title>
-      <link>https://blog.janestreet.com/asic-puzzle-results/</link>
-      <guid isPermaLink="false">https://blog.janestreet.com/asic-puzzle-results/</guid>
-      <description>[Score: 80] Jane Streetが公開したASICパズルの結果が発表されました。 / このパズルは、小さなチップのGDSレイアウトからその機能をリバースエンジニアリングするというもので、約400件の応募がありました。 / チップの正体は、11x11のスターバトルパズルを検証するハードウェアチェッカーでした。 (Source: Hacker News)</description>
-      <pubDate>Fri, 02 Oct 2026 14:42:44 +0000</pubDate>
+      <title>オープンソースのAIセキュリティエージェントを使って24件のAndroid脆弱性を発見した方法</title>
+      <link>https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/</link>
+      <guid isPermaLink="false">https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/</guid>
+      <description>[Score: 90] GitHub Security Lab Taskflow Agentは、AIを活用してセキュリティ研究者が脆弱性発見ワークフローを自動化・共有できるツールです。 / このツールを使用し、Androidアプリケーションで20件以上の脆弱性を報告しました。 / タスクフローはオープンソースで利用可能ですが、GitHub Copilotライセンスとプレミアムモデルリクエストが必要です。 (Source: GitHub Blog)</description>
+      <pubDate>Mon, 28 Sep 2026 19:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>LLMをセルフホストする実際のコストは？誰も教えてくれないバッチ処理の計算</title>
+      <link>https://dev.to/wolfsea2357/what-does-it-actually-cost-to-self-host-an-llm-the-batching-math-nobody-shows-you-4pmp</link>
+      <guid isPermaLink="false">https://dev.to/wolfsea2357/what-does-it-actually-cost-to-self-host-an-llm-the-batching-math-nobody-shows-you-4pmp</guid>
+      <description>[Score: 88] オープンウェイトLLMのセルフホスティングコストは、GPUの利用率が低いことが主な原因で高くなります。 / GPUのレンタル料金は時間固定ですが、100万トークンあたりの真のコストは、その時間内に処理するトークン数によって決まります。 / 継続的なバッチ処理や適切なサーバー設定により、コストを10倍以上削減できる可能性があります。 (Source: Dev.to)</description>
+      <pubDate>Tue, 06 Oct 2026 00:43:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>ChatGPTが実在の漫画家の署名を偽のNew Yorker漫画に追加</title>
+      <link>https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/</link>
+      <guid isPermaLink="false">https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/</guid>
+      <description>[Score: 85] ChatGPTが生成したNew Yorker風の漫画が、実在の漫画家Brendan Loperの署名「BLOPER」を無断で追加し、SNSで拡散されました。 / Loper氏自身もこの偽造について問い合わせを受け、AIによる著作権侵害と誤情報の拡散が問題となっています。 / AI生成コンテンツの真偽と帰属に関する倫理的・法的な課題が浮き彫りになっています。 (Source: Hacker News)</description>
+      <pubDate>Mon, 05 Oct 2026 22:46:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>ロボットモデルなしでアームを動かす — Claude × MCP で SO-101 を直接操作する</title>
+      <link>https://zenn.dev/oggata/articles/0893726c1ebf3d</link>
+      <guid isPermaLink="false">https://zenn.dev/oggata/articles/0893726c1ebf3d</guid>
+      <description>[Score: 85] ロボット用の学習を一切していない汎用LLM（Claude）とMCP（Model Context Protocol）を用いて、カメラ映像を見ながらロボットアームを直接操作する試みです。 / データ収集や学習、GPUを必要とせず、日本語の指示でゲームのコマを進めるなどの操作を実現しています。 / これは、RoboDojoのレポートで示されたL3構成を個人環境で再現するもので、LLMによるロボット制御の新たな可能性を示唆しています。 (Source: Zenn)</description>
+      <pubDate>Mon, 05 Oct 2026 12:19:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>オブジェクト指向UIデザインをAgent Skillにして、Claudeが作るUIはどう変わるかの検証</title>
+      <link>https://zenn.dev/emuni/articles/ooui-agent-skill</link>
+      <guid isPermaLink="false">https://zenn.dev/emuni/articles/ooui-agent-skill</guid>
+      <description>[Score: 85] AIエージェントによるUI生成において、感覚的な修正指示の課題を解決するため、オブジェクト指向UIデザインの原則をAgent Skillとして言語化しました。 / Claude CodeにこのSkillを与えることで、生成されるUIの構造がどのように変化するかを比較検証し、その結果を紹介しています。 / 本検証は、AIが生成したUIをレビューする際の具体的な評価軸としても活用できることを示唆しています。 (Source: Zenn)</description>
+      <pubDate>Mon, 05 Oct 2026 06:09:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>【速報】「多くの方々にご不便とご心配かけ、深くお詫び」大阪公立大が謝罪 ランサムウェアによるサイバー攻撃か 基盤システム障害で全授業が休講中 対面授業は9日以降再開予定</title>
+      <link>https://newsdig.tbs.co.jp/articles/-/2990268</link>
+      <guid isPermaLink="false">https://newsdig.tbs.co.jp/articles/-/2990268</guid>
+      <description>[Score: 85] 大阪公立大学は、今月2日に発生した基盤システム障害の原因がランサムウェアによるサイバー攻撃であると判断し、会見で謝罪しました。 / この攻撃により全授業が休講となり、学生や関係者に多大な不便と心配をかけています。 / 対面授業は9日以降再開予定ですが、システム復旧には時間を要する見込みです。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 05 Oct 2026 08:15:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>Supabase、1サーバあたり数百万ものSQLiteをホストする「Turso」買収を発表。AIエージェントで加速するDB需要に対応</title>
+      <link>https://www.publickey1.jp/blog/26/supabase1sqlitetursoaidb.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/supabase1sqlitetursoaidb.html</guid>
+      <description>[Score: 85] SupabaseがSQLiteベースのデータベースサービス「Turso」を買収しました。 / Tursoは1サーバーで数百万のSQLiteデータベースをホストでき、高速かつ安価なデータ提供が可能です。 / AIエージェントの普及によるデータベース需要の増加に対応するためと説明されています。 (Source: Publickey)</description>
+      <pubDate>Sun, 04 Oct 2026 15:56:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>オープンな180BモデルがHugging Faceの10の公式リーダーボードをリード、その背後にあるゼロトークン判定技術</title>
+      <link>https://dev.to/ai_openfree_b23025ef075cf/open-180b-model-leads-10-official-hugging-face-leaderboards-and-the-zero-token-judge-behind-it-2gac</link>
+      <guid isPermaLink="false">https://dev.to/ai_openfree_b23025ef075cf/open-180b-model-leads-10-official-hugging-face-leaderboards-and-the-zero-token-judge-behind-it-2gac</guid>
+      <description>[Score: 85] VIDRAFTが開発したオープンウェイトモデル「Darwin-180B-RSI」が、Hugging Faceの10の公式リーダーボードでトップを獲得しました。 / 特にExtractBenchとIFStructといった企業向けタスクでの勝利は、実用的なAIの進歩を示しています。 / 「ZTC」という、モデルの内部状態を読み取り、生成トークンなしでアクションを評価する高速な判定方法がその成功を支えています。 (Source: Dev.to)</description>
+      <pubDate>Tue, 06 Oct 2026 00:42:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>JevとClefを画像生成AIのプロダクトに組み込もう!</title>
+      <link>https://zenn.dev/radius5/articles/20261004-j3v7cl3f</link>
+      <guid isPermaLink="false">https://zenn.dev/radius5/articles/20261004-j3v7cl3f</guid>
+      <description>[Score: 80] 画像生成AIプロダクトにおいて、外部モデルへのリクエストを事前に判定し、無駄な料金発生やユーザーへのフィードバック遅延を防ぐ仕組みについて解説しています。 / TypeSafeのJevとCloudflareのClefというDecisionモデルを活用し、プロンプトと参照画像を多段階で評価することで、拒否されそうなリクエストを効率的にブロックします。 / Jevは自然言語のバリデータ、Clefは画像も扱えるバリデータとして機能し、LLMのように自由な文章生成ではなく、型の付いた質問に確率で答えることで判定精度を高めています。 (Source: Zenn)</description>
+      <pubDate>Mon, 05 Oct 2026 08:26:58 +0000</pubDate>
     </item>
   </channel>
 </rss>
