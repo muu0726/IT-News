@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 07 Oct 2026 23:37:44 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 23:47:42 +0000</lastBuildDate>
     <item>
-      <title>Strata: 1250億パラメータモデルを自分のゲーミングPCで実行する</title>
-      <link>https://dev.to/sun_young_517829fc09d0c05/strata-running-a-125-billion-parameter-model-on-your-own-gaming-pc-fmn</link>
-      <guid isPermaLink="false">https://dev.to/sun_young_517829fc09d0c05/strata-running-a-125-billion-parameter-model-on-your-own-gaming-pc-fmn</guid>
-      <description>[Score: 95] Strataは、1250億パラメータのQwen3.8-Flash-Nextモデルを、わずか12GBのVRAMを持つゲーミングPCで実行可能にする技術です。 / 低ビット量子化（Q2_0 / IQ2_XS）と専用推論エンジンを適用することで、通常サーバーが必要なモデルをコンシューマーハードウェアで動かします。 / これにより、個人や小規模チームが大規模モデルをローカルで利用できるようになり、プライバシー保護や予算制約のあるシナリオに適しています。 (Source: Dev.to)</description>
-      <pubDate>Wed, 07 Oct 2026 23:31:26 +0000</pubDate>
+      <title>AI対応生物学的データ：18億ドルの世界的なコミットメント</title>
+      <link>https://biohub.org/news/virtual-biology-initiative-expansion/</link>
+      <guid isPermaLink="false">https://biohub.org/news/virtual-biology-initiative-expansion/</guid>
+      <description>[Score: 95] Biohub、米国エネルギー省、国立衛生研究所などが、AI対応の生物学的データ生成とアクセス拡大のために18億ドルを投資すると発表しました。 / この大規模な国際的取り組みは、予測的な生物学AIモデルの基盤となるオープンリソースを構築することを目的としています。 / Google DeepMind、Isomorphic Labs、Metaも3億ドルを投資し、AIを活用したヒト疾患の理解と治療の進展を目指します。 (Source: Hacker News)</description>
+      <pubDate>Thu, 08 Oct 2026 20:46:25 +0000</pubDate>
     </item>
     <item>
-      <title>AIが開発者の仕事を変えている。強化すべき3つのスキルとは。</title>
+      <title>🔓2026年9〜10月の情報漏洩19件、公表文を全部読んで考えたこと</title>
+      <link>https://zenn.dev/bita/articles/1616afdb93c4a6</link>
+      <guid isPermaLink="false">https://zenn.dev/bita/articles/1616afdb93c4a6</guid>
+      <description>[Score: 95] 2026年9月から10月にかけて公表された19件の情報漏洩事例を分析し、その原因と対策について考察しています。 / AIによる攻撃手法の変化ではなく、脆弱性の放置や推測されやすいパスワードなど、昔からある穴を突くコストが下がっている可能性が指摘されています。 / サプライチェーン攻撃やSaaSアカウントへの不正ログインの多発、そしてパッチの早期適用と侵入される前提の設計の重要性が強調されています。 (Source: Zenn)</description>
+      <pubDate>Thu, 08 Oct 2026 00:43:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIが開発者の仕事を変える。強化すべき3つのスキル。</title>
       <link>https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/</guid>
-      <description>[Score: 95] AIの進化により、開発者の仕事内容は変化しており、コードを書くことだけでなく、AIを指示し、その出力を評価し、技術的な意思決定を行うスキルが重要になっています。 / 本記事では、AIエージェントが実装の多くを担うようになる中で、問題を明確に定義し、適切なコンテキストを提供し、AI生成コードを評価し、出荷準備を決定する能力がより価値を持つと指摘しています。 / 開発者は、AIエージェントを指揮し、複数のエージェントを調整するスキルを習得することで、AI時代において競争力を維持できると提言しています。 (Source: GitHub Blog)</description>
+      <description>[Score: 95] AIは開発者の働き方とスキル適用方法を変革しており、コードを書くことだけでなく、AIを指示し、その出力を評価し、トレードオフを伝え、技術的な意思決定を行う能力がより重要になっています。 / 優れた実行とは、問題を明確に定義し、適切なコンテキストを提供し、AI生成コードを評価し、出荷準備ができたものを決定することへと変化しています。 / 開発者は、AIエージェントを指揮し、複数のエージェントを調整するスキルを強化することで、AI時代においてより価値のある存在になれるでしょう。 (Source: GitHub Blog)</description>
       <pubDate>Fri, 02 Oct 2026 15:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表</title>
-      <link>https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html</guid>
-      <description>[Score: 92] AWSがAmazon Aurora PostgreSQLにDuckDBを統合し、ETLプロセスなしでApache Icebergなどのデータレイクから直接データを読み取れるようにしました。 / これにより、ライブデータと履歴データが別々のシステムに分かれていることによる課題を解決し、データ分析の効率を大幅に向上させます。 / AWSのCEOであるAndy Jassy氏もこの発表に非常に興奮しているとコメントしており、データ管理のパラダイムシフトを示唆しています。 (Source: Publickey)</description>
-      <pubDate>Wed, 07 Oct 2026 15:59:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>GPT-6と誰もが使えるインテリジェントUI</title>
-      <link>https://openai.com/index/gpt-6-for-everyone/</link>
-      <guid isPermaLink="false">https://openai.com/index/gpt-6-for-everyone/</guid>
-      <description>[Score: 90] OpenAIが、ChatGPTに「Intelligent UI」という新機能を搭載したGPT-6モデルを一般向けにリリースしました。 / Intelligent UIは、ChatGPTが完全にインタラクティブなユーザーインターフェースで迅速に回答し、情報を視覚化したり、複雑なトピックの学習を容易にしたり、タスク解決のためのツールを即座に作成したりできます。 / これにより、12億人以上のChatGPTユーザーが、より視覚的でインタラクティブな方法でAIを利用できるようになります。 (Source: Hacker News)</description>
-      <pubDate>Wed, 07 Oct 2026 18:00:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>文章で要件定義するのをやめた。AIでモックを先に作ったら、認識ズレが実装前に全部見つかった</title>
-      <link>https://qiita.com/kazuki_ogawa/items/f1a15a199d9f91fe6080?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kazuki_ogawa/items/f1a15a199d9f91fe6080?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AIを活用して、要件定義のプロセスを文章からモック先行型へと変更した事例が紹介されています。 / これにより、実装前に認識のズレを早期に発見し、開発期間を大幅に短縮できたと報告されています。 / AIによるモック作成が容易になったことで、従来の開発フローにおける課題を解決する新しいアプローチとして注目されます。 (Source: Qiita)</description>
-      <pubDate>Mon, 05 Oct 2026 07:31:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>2026年の情報漏洩を手口で分類してみた</title>
-      <link>https://qiita.com/yama3133/items/071119dfea9ed24d0948?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yama3133/items/071119dfea9ed24d0948?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 2026年に発生した大規模な情報漏洩事件を、その侵入手口に基づいて「脆弱性の悪用」「正規権限の悪用」「AIエージェントの悪用」「その他」の4つに分類し、詳細に分析しています。 / 各事例について一次情報源を基に整理されており、委託先経由の波及や退会後データの扱いといった横断的な課題も指摘されています。 / 情報漏洩の多様な手口と、それに対する検知・対策の難しさが浮き彫りになっています。 (Source: Qiita)</description>
-      <pubDate>Tue, 06 Oct 2026 05:19:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>IDCFクラウドへのランサムウェア攻撃についてまとめてみた - piyolog</title>
-      <link>https://piyolog.hatenadiary.jp/entry/2026/10/08/070606</link>
-      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/10/08/070606</guid>
-      <description>[Score: 90] 2026年10月7日、IDCフロンティアが提供する「IDCFクラウド」の一部システムがランサムウェア攻撃を受け、障害が発生したと公表しました。 / 東日本第1リージョンが影響を受け、495の企業や自治体の契約者が影響対象となり、個人情報流出の有無は確認中です。 / SNSでは犯行声明のような画像が拡散されており、多くの企業や自治体でサービス停止や閲覧不能の障害が発生しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 07 Oct 2026 22:19:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google、サンドボックス型コンテナランタイムの「gVisor」をCNCFに寄贈したと発表</title>
-      <link>https://www.publickey1.jp/blog/26/googlegvisorcncf.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/googlegvisorcncf.html</guid>
-      <description>[Score: 90] Googleは、サンドボックス型コンテナランタイム「gVisor」をCloud Native Computing Foundation（CNCF）に寄贈したと発表しました。 / gVisorはOCI準拠のコンテナランタイムで、コンテナ内のシステムコールを仮想カーネルで処理し、Go言語で実装されているため、高い分離レベルとセキュリティを提供します。 / Googleは、gVisorの普及を妨げていた課題を解決し、コミュニティ主導での開発を促進するためにCNCFへの寄贈を決定しました。 (Source: Publickey)</description>
-      <pubDate>Mon, 05 Oct 2026 15:27:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>7人のClaude Codeエージェントチームで一人で製品を構築する方法</title>
-      <link>https://dev.to/theducttapeio/how-i-build-a-product-alone-with-a-team-of-seven-claude-code-agents-1om2</link>
-      <guid isPermaLink="false">https://dev.to/theducttapeio/how-i-build-a-product-alone-with-a-team-of-seven-claude-code-agents-1om2</guid>
-      <description>[Score: 90] 筆者は、AIアーキテクチャの図エディタ「DuctTape.io」を、7つのClaude Codeエージェントチームと一人で開発しています。 / 各エージェントは特定の役割と担当領域を持ち、並行して作業を進め、短いメッセージで連携し、ドキュメントを真実の源として共有します。 / このアプローチにより、トークン費用を抑えつつ、複数のAIエージェントが協調して製品開発を行うことが可能になっています。 (Source: Dev.to)</description>
-      <pubDate>Wed, 07 Oct 2026 23:30:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>シークレット保護はソフトウェアと共にスケールしなければならない</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/</guid>
-      <description>[Score: 90] GitHubにおけるプルリクエストの3分の1がAIエージェントによって行われるようになり、2年以内にはほとんどのコードがAIによって書かれると予測されています。 / このAIによるコード生成の加速に伴い、シークレット漏洩の防止と対応も自動化・スケールアップする必要があることを指摘しています。 / GitHubはMicrosoft Applied Sciencesと共同で、非構造化シークレットにも対応するファインチューニングされた分類器を開発し、プッシュ保護を強化することで、漏洩防止能力を2倍以上に高めることを目指しています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 07 Oct 2026 17:45:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>Docker Agent</title>
-      <link>https://github.com/docker/docker-agent</link>
-      <guid isPermaLink="false">https://github.com/docker/docker-agent</guid>
-      <description>[Score: 88] Dockerが、宣言的なYAML設定、豊富なツールエコシステム、マルチエージェントオーケストレーションを備えたAIエージェントの構築・実行・共有ツール「docker-agent」を発表しました。 / docker-agentは、コード不要でインテリジェントなAIエージェントを作成し、複雑な問題を解決するために連携させることができます。 / OpenAI、Anthropic、Geminiなど多様なAIプロバイダーに対応し、RAGや高度な推論機能も内蔵しています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 07 Oct 2026 17:48:38 +0000</pubDate>
     </item>
     <item>
       <title>【もう無理だよ…】免許証画像まで流出する時代に、エンジニアは何をすればいいのか</title>
       <link>https://qiita.com/shinkai_/items/4c6c12324e115a125621?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/shinkai_/items/4c6c12324e115a125621?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] タイムズカーの事例を始めとする最近の個人情報漏洩の多発を受け、特に運転免許証画像が流出した際の懸念と対策について考察しています。 / 漏洩した個人情報が不正利用される可能性や、退会後もデータが保管される実態について、公式発表を基に整理されています。 / エンジニアが直面するセキュリティ課題の深刻さと、個人情報保護の重要性が強調されています。 (Source: Qiita)</description>
+      <description>[Score: 92] 近年多発する個人情報漏洩、特に運転免許証画像流出の事例を取り上げ、その影響と対策について考察しています。 / タイムズカーの事例を基に、漏洩した情報の種類、退会後のデータ保管、免許証画像による不正利用のリスクを分析。 / エンジニアが情報セキュリティに対してどのように向き合うべきか、具体的な課題を提示しています。 (Source: Qiita)</description>
       <pubDate>Tue, 06 Oct 2026 23:02:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>なぜ業界はDeepSeek 4.1 Flashに騒がないのか？</title>
+      <link>https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/</link>
+      <guid isPermaLink="false">https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/</guid>
+      <description>[Score: 90] DeepSeek 4.1 Flashは、フロンティアモデルと同等の性能を持ちながら、はるかに安価なLLMとして評価されています。 / 筆者は1ヶ月間使用し、OpenAIのOpusとの違いを感じないと述べており、そのコストパフォーマンスの高さに驚きを示しています。 / 中国製のこのモデルが、既存のフロンティアモデル市場に大きな影響を与える可能性があり、業界がその潜在的な脅威を過小評価しているのではないかと疑問を呈しています。 (Source: Hacker News)</description>
+      <pubDate>Thu, 08 Oct 2026 00:14:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>GCPとAWSの埋め込みモデル6つを比較して監視カメラ動画を日本語で検索する</title>
+      <link>https://zenn.dev/fusic/articles/89daab70352eb7</link>
+      <guid isPermaLink="false">https://zenn.dev/fusic/articles/89daab70352eb7</guid>
+      <description>[Score: 90] 監視カメラ動画から日本語の文章で特定の場面を検索する技術検証として、GCPとAWSの6つの埋め込みモデルが比較されました。 / Gemini Embedding 2やNova MMEなどのマルチモーダルモデルを含む各クラウドのモデルを使い、動画から生成された説明文を埋め込み、検索精度を評価しています。 / 構造化データを平坦化して埋め込む手法の有効性も検証されており、実用的なAI検索システムの構築に役立つ知見が提供されています。 (Source: Zenn)</description>
+      <pubDate>Thu, 08 Oct 2026 02:39:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>2026年の情報漏洩を手口で分類してみた</title>
+      <link>https://qiita.com/yama3133/items/071119dfea9ed24d0948?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yama3133/items/071119dfea9ed24d0948?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 2026年に発生した国内外の主要な情報漏洩事案を、その侵入手口に基づいて4つに分類し整理しています。 / 脆弱性の悪用、正規アカウントの悪用、AIエージェントの権限悪用といった具体的な手口を一次情報に基づき解説。 / 委託先経由の波及やデータ保持の課題など、横断的な視点も提示し、情報セキュリティの現状を深く分析しています。 (Source: Qiita)</description>
+      <pubDate>Tue, 06 Oct 2026 05:19:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>情報漏えいの公表急増――いま増えているのは「攻撃」ではなく「発覚」 | SECURITY DRIVE</title>
+      <link>https://securitydrive.jp/column/0023/</link>
+      <guid isPermaLink="false">https://securitydrive.jp/column/0023/</guid>
+      <description>[Score: 90] 2026年9月に情報漏えいの公表が急増しましたが、これは新たな攻撃の増加ではなく、以前から進行していた侵入に企業が「気づき始めた」結果であると分析されています。 / 攻撃者は正規のアプリやAPI経路を悪用し、ログイン失敗のような派手な兆候がないため、長期間気づかれないケースが多いです。 / スマホアプリの解析技術の進化により、攻撃者が短時間でアプリの脆弱性やAPI情報を特定できるようになっていることが背景にあります。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 08 Oct 2026 06:38:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>シークレット保護はソフトウェアと共にスケールしなければならない</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/</guid>
+      <description>[Score: 90] GitHubではAIエージェントが関与するプルリクエストが急増しており、2年以内にほとんどのコードがAIによって書かれる可能性があります。 / このコード生成の加速に伴い、シークレット漏洩防止の責任も増大しており、手動での対応から自動化された保護への移行が求められています。 / GitHubはMicrosoft Applied Sciencesと共同で、非構造化シークレットにも対応する新しいファインチューニングされた分類器を開発し、プッシュ保護の能力を大幅に向上させています。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 07 Oct 2026 17:45:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>すでにWEBデザイナーの8割は不要である</title>
+      <link>https://qiita.com/kotowazaman/items/74621592ace2ff968670?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kotowazaman/items/74621592ace2ff968670?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] AIの進化により、WEBデザイナーの8割が不要になるという筆者の見解を、研究データと自身の経験に基づいて論じています。 / ChatGPTや画像生成AIの登場がフリーランスのライティング・デザイン需要に与えた影響を数値で示し、単価の二極化を指摘。 / 特に業務システムUIデザインにおいて、AIがデザイナーの役割を代替し、品質とスピードを向上させている現状を解説しています。 (Source: Qiita)</description>
+      <pubDate>Wed, 07 Oct 2026 14:19:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表</title>
+      <link>https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html</guid>
+      <description>[Score: 88] AWSがAmazon Aurora PostgreSQLにDuckDBを統合し、ETLプロセスなしでApache Icebergなどのデータレイクから直接データを読み取れるようになりました。 / これにより、ライブデータと履歴データが別々のシステムに分かれていることによるデータ連携の課題が解消されます。 / データ分析の効率化とコスト削減に貢献し、リアルタイムに近いデータ活用を可能にします。 (Source: Publickey)</description>
+      <pubDate>Wed, 07 Oct 2026 15:59:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Whistle: 16.9MBの音声認識モデル</title>
+      <link>https://cactuscompute.com/blog/whistle</link>
+      <guid isPermaLink="false">https://cactuscompute.com/blog/whistle</guid>
+      <description>[Score: 85] Whistleは、モバイル、ウェアラブル、ロボット、スマートホーム、自動車、マイクロコントローラー向けに設計されたオープンソースの音声認識モデルです。 / わずか16.9MBのファイルサイズで、CPU上で動作し、依存関係がなく、Needleと同じC++エンジンにロード可能です。 / 7つの言語を転写でき、最初のトークンを11ミリ秒で生成し、デバイス上でフロントエンド、エンコーダー、デコーダーの3つの主要なタスクを実行します。 (Source: Hacker News)</description>
+      <pubDate>Thu, 08 Oct 2026 16:59:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>KaggleのようなSelf-Play RLの論文を紹介</title>
+      <link>https://zenn.dev/mkj/articles/generals-io-self-play-rl</link>
+      <guid isPermaLink="false">https://zenn.dev/mkj/articles/generals-io-self-play-rl</guid>
+      <description>[Score: 85] Kaggleのシミュレーションコンペで活用されるSelf-Play強化学習に関する論文が紹介されています。 / 特にリアルタイム戦略ゲーム「Generals.io」を題材に、AIの強さを評価する手法や環境の高速化アプローチが解説されています。 / 強化学習のゲーム開発への応用や、シミュレーション環境でのAI開発における実践的な知見が提供されています。 (Source: Zenn)</description>
+      <pubDate>Thu, 08 Oct 2026 02:50:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub ActionsとAWSでM5StickS3のファームウェアを遠隔更新する</title>
+      <link>https://qiita.com/chaochire/items/a9fbc052170d9748c9e8?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/chaochire/items/a9fbc052170d9748c9e8?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] M5StickS3のファームウェアを遠隔で更新する仕組みを、GitHub ActionsとAWSサービスを組み合わせて構築する方法を解説しています。 / 開発中のM5StickS3をPCに接続せずにプログラムを更新できるOTA（Over The Air）の仕組みを活用。 / GitHub Actionsでのビルド・デプロイ自動化、S3へのファームウェアアップロード、AWS IoT Jobsによる更新通知までの一連の流れを詳細に説明しています。 (Source: Qiita)</description>
+      <pubDate>Thu, 08 Oct 2026 03:03:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIに月3万円使えない人はその時点で負けている｜手羽先</title>
+      <link>https://note.com/teba_eleven/n/n61e5e7700881</link>
+      <guid isPermaLink="false">https://note.com/teba_eleven/n/n61e5e7700881</guid>
+      <description>[Score: 85] 筆者は、AIに月3万円を投資できない学生やエンジニアは「その時点で負けている」と主張しています。 / 月3000円と月3万円のプランではAIでできることに大きな差があり、AIへの投資が個人の能力と収益を飛躍的に向上させると説きます。 / AIを最大限活用するための積極的な投資の重要性を訴え、AI時代の競争優位性について考察を促す記事です。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 08 Oct 2026 11:49:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>さくらインターネット、GPU専有によりトークン消費量を気にせず定額で利用できる「さくらのAI Engineプライベートエディション」提供開始を発表</title>
+      <link>https://www.publickey1.jp/blog/26/gpuai_engine.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/gpuai_engine.html</guid>
+      <description>[Score: 85] さくらインターネットが、企業向けにGPUを専有できる定額制AIサービス「さくらのAI Engineプライベートエディション」の提供を開始しました。 / これにより、トークン消費量を気にせず、コストを予測しやすい形で大規模なAI利用が可能になります。 / 機密情報を扱う社内業務や自社サービスでのAI活用において、構築・運用を任せつつ開発に集中できる環境を提供します。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 08 Oct 2026 14:42:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>エージェントスケール開発のためのGitインフラストラクチャの構築</title>
+      <link>https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/</guid>
+      <description>[Score: 85] GitHubのGitインフラストラクチャは、AIエージェントによる開発の急増に対応するため、次のアーキテクチャシフトを迎えています。 / 開発者とエージェントが同時に数百万のコミットを行うリポジトリに対応するため、GitHubはGitインフラを再構築しています。 / 2026年8月には最も活発なリポジトリで約10億のリクエストがあり、Gitアクティビティ全体も前年比2倍以上に増加しており、エージェントスケール開発の需要が顕著です。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 06 Oct 2026 20:57:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIはいかにして人類を滅ぼしうるか？文明的リスクの失敗モード分析</title>
+      <link>https://arxiv.org/abs/2610.08878</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.08878</guid>
+      <description>[Score: 85] この論文は、AIが人類に壊滅的な影響を与える可能性について、失敗モード分析を通じて考察しています。 / AIの進化に伴う文明的リスクを特定し、その潜在的なシナリオを詳細に分析することを目的としています。 / 本文抜粋はarXivLabsの一般的な説明であり、具体的なリスク分析の内容は不明です。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 08 Oct 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、VS CodeにAIモデルのオーケストレーションで高品質低コストなAIを実現する「HydraFusion」をプレビュー実装</title>
       <link>https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html</guid>
-      <description>[Score: 88] マイクロソフトはVisual Studio Code 1.140に、複数のAIモデルをオーケストレーションして高品質かつ低コストなAIを実現する「HydraFusion」を研究プレビューとして実装しました。 / HydraFusionは、AIに指示されたタスクに対し、推論、コード生成、デバッグ、ツール使用などの能力シグナルを用いて最も効率的な実行パターンを選択します。 / これにより、単一モデルに依存せず、タスクに応じて最適なAIモデルを組み合わせることで、開発者の生産性向上とコスト削減が期待されます。 (Source: Publickey)</description>
+      <description>[Score: 82] マイクロソフトがVisual Studio Codeに、複数のAIモデルをオーケストレーションして高品質かつ低コストなAIを実現する「HydraFusion」をプレビュー実装しました。 / HydraFusionは、AIタスクに対して最適な実行パターン（推論、コード生成、デバッグ、ツール使用）を選択することで、効率的なAI活用を可能にします。 / これにより、開発者は様々なAIベンダーのモデルを組み合わせ、コーディングタスクの品質向上とコスト削減を図ることができます。 (Source: Publickey)</description>
       <pubDate>Tue, 06 Oct 2026 15:47:53 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Haiku 5.5</title>
-      <link>https://www.anthropic.com/claude-haiku-5-5</link>
-      <guid isPermaLink="false">https://www.anthropic.com/claude-haiku-5-5</guid>
-      <description>[Score: 85] Anthropicが、これまでで最も安価で高速、かつ高性能な小型モデル「Claude Haiku 5.5」を発表しました。 / Haiku 5.5は、高頻度でコスト重視のタスク（要約、データベースクエリ、分類など）に最適化されており、ライブカスタマーサポートのような速度が求められる用途にも適しています。 / Haiku 4.5と比較して実行コストが約75%削減され、Sonnet 5.5のキャッシュ読み取り価格も半減されるなど、モデルラインナップ全体の価値向上も図られています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 07 Oct 2026 18:01:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>ChromeでのJPEG XLの提供開始</title>
-      <link>https://developer.chrome.com/blog/jpeg-xl-in-chrome</link>
-      <guid isPermaLink="false">https://developer.chrome.com/blog/jpeg-xl-in-chrome</guid>
-      <description>[Score: 85] Chrome 155から次世代画像フォーマットJPEG XLのデコードをサポートします。 / JPEG XLはJPEGより30-50%優れた圧縮率、ロスレス圧縮、HDR対応、ロスレスJPEGトランスコーディングを提供します。 / Rustによるメモリ安全性確保やパフォーマンス最適化、開発者フィードバックの活用についても言及されています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 07 Oct 2026 11:25:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>iOSアプリ開発でGit Worktreeを使ってもCompilation Cacheを効かせたい</title>
-      <link>https://zenn.dev/sryu/articles/worktree-compilation-cache</link>
-      <guid isPermaLink="false">https://zenn.dev/sryu/articles/worktree-compilation-cache</guid>
-      <description>[Score: 85] iOSアプリ開発でGit Worktreeを使用する際に、Compilation Cacheを再利用する方法について解説しています。 / Xcode 26で追加されたCOMPILATION_CACHE_ENABLE_CACHING設定と、Prefix Mapping機能を利用することでキャッシュの再利用が可能になります。 / CASのキーがworktreeごとに異なる問題を、仮想パスに置き換えることで解決し、ビルド時間の短縮に貢献します。 (Source: Zenn)</description>
-      <pubDate>Tue, 06 Oct 2026 17:15:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>最近サイバー攻撃多いから、基本対策を見直そう</title>
-      <link>https://qiita.com/HIsui0921/items/65fba77555a13af6b8a5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/HIsui0921/items/65fba77555a13af6b8a5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] 最近のサイバー攻撃の増加背景には、AI技術の発展だけでなく、攻撃がビジネス化・プロ集団化している現状があると指摘されています。 / 従来のランサムウェア攻撃が多段階の脅迫へと進化し、企業や社会に与える影響が甚大になっていることが解説されています。 / 中小企業も標的となり得るため、基本的なセキュリティ対策の重要性が改めて強調されています。 (Source: Qiita)</description>
-      <pubDate>Mon, 05 Oct 2026 14:28:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>新しいLinux技術がRAM内でメモリを圧縮し、452倍の速度向上を実現 – 新CRAM方式が圧縮メモリ読み取りに大きなブーストを提供</title>
-      <link>https://www.reddit.com/r/technology/comments/1x0227i/new_linux_tech_compresses_memory_in_ram_as_ram/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x0227i/new_linux_tech_compresses_memory_in_ram_as_ram/</guid>
-      <description>[Score: 85] 新しいLinux技術「CRAM」が、RAM内でメモリを圧縮することで、圧縮メモリの読み取り速度を最大452倍に向上させると報じられています。 / この技術は、メモリ効率とパフォーマンスを劇的に改善する可能性を秘めています。 / 特に、メモリが限られた環境や、大量のデータを扱うシステムにおいて大きな恩恵をもたらすでしょう。 (Source: Reddit)</description>
-      <pubDate>Wed, 07 Oct 2026 17:05:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>相次ぐWEBシステムからの情報漏洩事案について | セキュリティ研究センターブログ</title>
-      <link>https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html</link>
-      <guid isPermaLink="false">https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html</guid>
-      <description>[Score: 85] 国内の法人・企業が運営するWEBシステムからの情報漏洩が相次いでおり、過去のサイバー攻撃とは異なる特徴が見られます。 / 被害公表では詳細情報が不足し、他組織が自社システムを点検するために必要な情報が限られている現状があります。 / 本記事では、2026年10月6日時点での被害や攻撃手法に関する情報をまとめ、情報共有の重要性を訴えています。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 07 Oct 2026 06:59:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cloudflare ContainersがAIエージェント向けに刷新。起動が6倍速、ファイルシステムのスナップショット機能など</title>
-      <link>https://www.publickey1.jp/blog/26/cloudflare_containersai6.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflare_containersai6.html</guid>
-      <description>[Score: 85] Cloudflareが、エッジロケーションでコンテナ型仮想マシンを実行する「Cloudflare Containers」をAIエージェント向けに刷新しました。 / 起動速度が6倍に向上し、ファイルシステムのスナップショット機能などが追加され、AIエージェントの環境構築が容易になります。 / AIエージェントの普及により、大量のコンテナ型仮想マシンの需要が高まっている状況に対応するものです。 (Source: Publickey)</description>
-      <pubDate>Mon, 05 Oct 2026 15:29:53 +0000</pubDate>
+      <title>管理外になってしまった環境変数を検出してみた</title>
+      <link>https://zenn.dev/dress_code/articles/567acf8397057f</link>
+      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/567acf8397057f</guid>
+      <description>[Score: 80] AI実装の増加に伴い増えがちな環境変数の管理課題に対し、コードベースから使用されている環境変数を洗い出す手法が紹介されています。 / 特にNestJSのようなフレームワークで複雑に参照される環境変数を、AST（抽象構文木）を利用して検出するアプローチが解説されています。 / これにより、.env.exampleへの記載漏れを防ぎ、環境変数の定義漏れを効率的に特定・整理する実践的な方法が示されています。 (Source: Zenn)</description>
+      <pubDate>Thu, 08 Oct 2026 02:35:21 +0000</pubDate>
     </item>
   </channel>
 </rss>
