@@ -1,0 +1,757 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-10-12T07:58:51.861737+09:00",
+  "total_count": 43,
+  "success_count": 43,
+  "error_count": 0,
+  "gemini_model": "gemini-2.5-flash",
+  "articles": [
+    {
+      "title": "LLMの能力に対する共通理解のギャップが拡大している",
+      "url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "source": "Hacker News",
+      "published": "2026-10-11T20:20:52+00:00",
+      "hn_score": 117,
+      "hn_comments": 148,
+      "summary": "Andrej Karpathy氏が、LLM（大規模言語モデル）の能力に対する人々の理解のギャップが拡大していると指摘しています。\n世界の約75%の人々はLLMにほとんど触れておらず、約20%はカジュアルユーザーで、その能力を限定的にしか認識していません。\nしかし、約0.2%の専門家は、LLMが数週間かかる複雑なプロジェクトを数分で完了させる能力を目の当たりにしています。",
+      "tags": [
+        "LLM",
+        "AI",
+        "技術格差"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "LLMの普及と理解に関する重要な社会課題を提起しており、AI技術の今後の発展と社会受容に大きな影響を与えるため、非常に高い評価を与えました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "「AIに指示するだけでひとりでそこそこのゲームが作れてしまいます」ゲームクリエイター・堀井雄二氏がAIを使い30分ほどでゲームを作成し、様々な反応が寄せられる",
+      "url": "https://togetter.com/li/2756939",
+      "source": "はてなブックマーク",
+      "published": "2026-10-11T12:39:51+00:00",
+      "summary": "ゲームクリエイターの堀井雄二氏が、AIを活用してわずか30分でゲームを制作したと発表しました。\nAIに指示を出すだけで、絵やプログラミングのスキルがなくてもゲームが作れることに驚きを示しています。\nこの発表に対し、ゲーム業界内外からAIによる創作の可能性や未来について様々な反響が寄せられています。",
+      "tags": [
+        "AI",
+        "ゲーム開発",
+        "プロンプトエンジニアリング"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "著名なゲームクリエイターがAIを用いて短時間でゲームを制作した事例は、AIのクリエイティブ分野での実用性と影響力を示す画期的な出来事であり、非常に高い重要性を持つと判断しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表",
+      "url": "https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html",
+      "source": "Publickey",
+      "published": "2026-10-07T15:59:06+00:00",
+      "summary": "AWSがAmazon Aurora PostgreSQLにDuckDBを統合し、ETL不要でApache Icebergなどのデータレイクデータを直接読み取り・処理可能になったと発表しました。\nこれにより、ライブデータと履歴データが別々のシステムに分かれているという長年の課題が解決され、データ統合の複雑さが大幅に軽減されます。\nAWSのCEOであるAndy Jassy氏もこの発表に興奮を示しており、データ分析の効率化とリアルタイム性の向上に大きく貢献する画期的な機能です。",
+      "tags": [
+        "AWS",
+        "PostgreSQL",
+        "データレイク"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 92,
+      "score_reason": "DuckDBとAurora PostgreSQLの統合は、データレイクとデータベース間のETLプロセスを不要にし、データ分析の効率とリアルタイム性を劇的に向上させるため、非常に高い影響度を持つと評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "SQLite 本体にベクトル検索拡張 vec1 がやってきた",
+      "url": "https://zenn.dev/mattn/articles/6e9996319ac099",
+      "source": "Zenn",
+      "published": "2026-10-10T17:16:42+00:00",
+      "summary": "SQLiteのソースツリーに公式のベクトル検索拡張「vec1」が取り込まれました。\nこれにより、RAGやセマンティック検索をSQLiteベースのアプリケーションに組み込むことが容易になります。\nIVFADCやOPQといった手法をサポートし、大規模データ向けの高速な近似最近傍探索を可能にしますが、現時点ではamalgamationには含まれず、手動ビルドが必要です。",
+      "tags": [
+        "SQLite",
+        "ベクトル検索",
+        "データベース"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 90,
+      "score_reason": "SQLiteへのベクトル検索機能の公式統合は、多くのアプリケーション開発に影響を与え、RAGなどのAI関連技術の普及を加速させるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "AI時代の開発費は「お客さんが自分でやったらいくら？」で決まる",
+      "url": "https://qiita.com/kotowazaman/items/3a82a47b39bacf7f02d7?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-10T12:16:28+00:00",
+      "summary": "AI時代において、ソフトウェア開発費の決定方法が「人月見積もり」から変化するという考察が述べられています。\nベンダーが取れる金額の上限は「顧客が自分でAIを使ってやったらいくらかかるか」で決まるという価格戦略の応用を提唱。\nAIによる実装コストの低下が、開発費の算出基準を顧客にとっての経済価値（EVC）へとシフトさせる可能性を示唆しています。",
+      "tags": [
+        "AI",
+        "開発費",
+        "価格戦略"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 90,
+      "score_reason": "AIがソフトウェア開発プロセスに与える影響を価格戦略の観点から深く分析しており、IT業界のビジネスモデル変革を示唆する非常に重要な洞察です。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "GPU不要で驚きの精度。リアルタイム多言語文字起こしツール「hayamimi」使ってみましたー。",
+      "url": "https://note.com/humble_bobcat51/n/n64602c64db6c",
+      "source": "はてなブックマーク",
+      "published": "2026-10-11T08:37:11+00:00",
+      "summary": "オープンソースのリアルタイム多言語文字起こしツール「hayamimi」は、GPU不要でCPUのみで動作し、高い精度と高速性を実現します。\nPyTorchやCUDA不要で、ノートPC一台で約1600言語に対応し、ライブ字幕表示、話者ラベル、リアルタイム翻訳などの実用的な機能を搭載。\nプライバシーを重視するビジネスパーソンやライブ配信者など、高価なハードウェアなしで高度な音声認識を利用したいユーザーに最適なソリューションです。",
+      "tags": [
+        "音声認識",
+        "AI",
+        "オープンソース"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "GPU不要で高精度なリアルタイム多言語文字起こしを実現する「hayamimi」は、AI技術の民主化と実用化を大きく推進する画期的なツールであるため高評価としました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "米国、中国での電子機器テストを禁止する準備",
+      "url": "https://dev.to/hacksgr/us-prepares-to-ban-electronic-device-testing-in-china-3nbe",
+      "source": "Dev.to",
+      "published": "2026-10-11T22:49:34+00:00",
+      "summary": "FCCは、米国市場向け電子機器の中国でのテストを禁止する命令案について投票を準備しており、2028年末までに施行される可能性があります。\nこの規則は、市場認可を相互的なテストアクセスに結びつけ、2025年のデバイスの82%が中国でテストされている現状に影響を与えます。\n中国商務省は、この提案が国際貿易を深刻に害するとし、報復措置を示唆しており、米中間の技術・貿易摩擦がさらに激化する可能性があります。",
+      "tags": [
+        "地政学",
+        "サプライチェーン",
+        "電子機器"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 90,
+      "score_reason": "米国の電子機器テスト禁止は、グローバルなサプライチェーンと技術産業に甚大な影響を与え、地政学的リスクを高めるため、非常に高い重要度と影響度を評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "シークレット保護はソフトウェアと共にスケールしなければならない",
+      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/",
+      "source": "GitHub Blog",
+      "published": "2026-10-07T17:45:34+00:00",
+      "summary": "GitHubのプルリクエストの3分の1がAIエージェントによるものであり、今後2年以内に大半のコードがエージェントによって書かれると予測しています。\n開発速度の加速に伴い、シークレット漏洩防止と対応の自動化が不可欠であると主張しています。\nMicrosoft Applied Sciencesと共同開発した、非構造化シークレットにも対応する新しい分類器により、漏洩防止能力が倍増する可能性を示しています。",
+      "tags": [
+        "Secret Management",
+        "AI Agent",
+        "Security Automation"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "AIによるコード生成の増加という業界の大きなトレンドに対し、セキュリティの根本的な課題と革新的な解決策を提示しており、非常に重要度が高いと判断したため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "さくらインターネット、GPU専有によりトークン消費量を気にせず定額で利用できる「さくらのAI Engineプライベートエディション」提供開始を発表",
+      "url": "https://www.publickey1.jp/blog/26/gpuai_engine.html",
+      "source": "Publickey",
+      "published": "2026-10-08T15:49:01+00:00",
+      "summary": "さくらインターネットが、GPUを専有しトークン消費量を気にせず定額で利用できる「さくらのAI Engineプライベートエディション」の提供を開始しました。\nこのサービスは、企業がGPUサーバー上で基盤モデルを展開し、マネージドサービスとして利用できるため、大規模なAPI利用でもコスト予測が容易になります。\n機密情報を扱う社内業務や自社サービスにAIを活用したい企業向けに、AI基盤の構築・運用を任せ、アプリケーション開発に集中できる環境を提供します。",
+      "tags": [
+        "AI",
+        "GPU",
+        "クラウドサービス"
+      ],
+      "category": "AI・機械学習",
+      "score": 88,
+      "score_reason": "GPU専有型のAIサービスは、企業がAIを大規模かつコスト予測可能に利用できる点で非常に重要であり、国内AIインフラの強化に貢献すると評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "エージェントスケール開発のためのGitインフラストラクチャの構築",
+      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
+      "source": "GitHub Blog",
+      "published": "2026-10-06T20:57:56+00:00",
+      "summary": "AIエージェントの普及により、GitHubのGitインフラストラクチャが新たなアーキテクチャシフトを迫られていると述べています。\nエージェントと開発者が同時にリポジトリで作業することで、1日に数百万のコミットが発生するような高負荷ワークロードに対応する必要があることを示しています。\nGitHubは、このエージェントスケール開発をサポートするためにGitインフラストラクチャを再構築しており、その設計原則と課題を探求しています。",
+      "tags": [
+        "Git Infrastructure",
+        "Scalability",
+        "AI Agent"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 88,
+      "score_reason": "AIエージェントの普及が既存のインフラストラクチャに与える影響と、それに対応するための大規模なアーキテクチャ変更について具体的に述べており、技術的な新規性と業界への影響が大きいと判断したため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "React習熟度ベンチマークでHaiku 5.5が見せた底力",
+      "url": "https://zenn.dev/uhyo/articles/react-profession-bench-20",
+      "source": "Zenn",
+      "published": "2026-10-10T14:35:53+00:00",
+      "summary": "Claude Haiku 5.5のReact習熟度ベンチマーク結果が公開され、Sonnet 5.5 highを上回るスコアを記録しました。\nHaiku 5.5は廉価モデルでありながら、effort high設定で高い性能を示し、新しいReact API（useEffectEventなど）の採用も確認されました。\nClaude 5.5世代のモデルは全体的に高いレベルでまとまっており、同世代のGPTモデルと比較しても優位性があることが示唆されています。",
+      "tags": [
+        "AI",
+        "LLM",
+        "React"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "廉価モデルであるHaiku 5.5が上位モデルに匹敵する性能を示したことは、AIモデルのコストパフォーマンスと実用性において重要な進展であり、Web開発への応用も期待されるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Claude の新機能 Claude Motion を早速使ってみた",
+      "url": "https://zenn.dev/branbran/articles/047821d64590f0",
+      "source": "Zenn",
+      "published": "2026-10-10T04:13:09+00:00",
+      "summary": "AnthropicがClaudeの新機能「Claude Motion」をベータ公開しました。\nこの機能は、プロンプトや手元の資料から短いアニメーション動画を生成するもので、動画生成モデルではなくClaudeがコードを書いて文字・グラフ・図形・画像を動かす点が特徴です。\n「正確な説明動画」作成に特化しており、ピンポイント修正やエディタでの調整が可能ですが、デザインの質はClaudeのコーディング力に依存します。",
+      "tags": [
+        "Claude",
+        "AI",
+        "動画生成"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIによる動画生成の新しいアプローチを示しており、特に「コード生成による正確な説明動画」という点が技術的新規性と実用性において高い評価を得られます。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "ウクライナのドローン攻撃が「ロシアのGoogle」の複数のデータセンターを麻痺させた後、ロシアの偽情報ボットトラフィックがほぼ一晩で消滅",
+      "url": "https://www.reddit.com/r/technology/comments/1x38098/russian_disinformation_bot_traffic_nearly/",
+      "source": "Reddit",
+      "published": "2026-10-11T13:17:51+00:00",
+      "summary": "ウクライナによるドローン攻撃が、ロシアの主要なデータセンター複数に壊滅的な打撃を与えました。\nこれにより、「ロシアのGoogle」と呼ばれるサービスの機能が停止したと報じられています。\n結果として、ロシアの偽情報拡散に関わるボットトラフィックが、ほぼ一晩で激減したとされています。",
+      "tags": [
+        "サイバー戦争",
+        "情報戦",
+        "データセンター"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "国家間の紛争におけるサイバー攻撃が情報戦に直接的な影響を与えた事例であり、地政学と技術の交差点における重要性が非常に高いため、高スコアとしました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "証券口座パスキーの安全性を高めよ！”物理キー”を本格導入した話",
+      "url": "https://toruoka.xyz/202610_security_key/",
+      "source": "はてなブックマーク",
+      "published": "2026-10-11T12:13:54+00:00",
+      "summary": "証券口座のパスキーがフィッシングで乗っ取られる事例を受け、筆者がセキュリティ強化策として物理キーを導入した経緯を解説しています。\niCloudやGoogleアカウントのパスキー保管庫が狙われるリスクに対し、Apple IDの2ファクタ認証の弱点を補う物理キーの有効性を強調。\n利便性を損なわずにセキュリティを飛躍的に高める方法として、YubiKeyなどの物理キーを2つ用意し、Apple IDに設定する手順と費用を紹介しています。",
+      "tags": [
+        "セキュリティ",
+        "パスキー",
+        "物理キー"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "パスキーのセキュリティ問題と物理キーによる対策は、個人および企業のセキュリティ意識向上に直結する重要な情報であり、実用性が高いと評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "マイクロソフト、VS CodeにAIモデルのオーケストレーションで高品質低コストなAIを実現する「HydraFusion」をプレビュー実装",
+      "url": "https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html",
+      "source": "Publickey",
+      "published": "2026-10-06T15:47:53+00:00",
+      "summary": "マイクロソフトはVS Code 1.140で、複数のAIベンダーのモデルをオーケストレーションし、高品質かつ低コストなAIを実現する「HydraFusion」機能を研究プレビューとして実装しました。\nHydraFusionは、AIタスクに対して推論、コード生成、デバッグ、ツール使用などの能力シグナルを使い、品質基準を満たす最も効率的な実行パターンを選択します。\nこれにより、単一モデルに依存せず、高精度とコスト効率を両立したAI開発が可能になります。",
+      "tags": [
+        "AI",
+        "VS Code",
+        "Orchestration"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "複数のAIモデルを統合・最適化するHydraFusionは、AI開発の効率と品質を向上させる重要な技術であり、VS Codeへの実装は開発者にとって大きな影響があるため高スコアとしました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "エンタープライズワークフローにおけるAIエージェント：実際に機能する5つの統合パターン",
+      "url": "https://dev.to/sufyanabbasi/ai-agents-in-enterprise-workflows-5-integration-patterns-that-actually-work-5bad",
+      "source": "Dev.to",
+      "published": "2026-10-11T22:49:10+00:00",
+      "summary": "AIエージェントが本番環境で失敗する主な原因は、統合が後回しにされることだと指摘しています。\n本記事では、LangGraphやCrewAIなどの技術に依存しない、実用的な5つの統合パターンを紹介しています。\n「部門にエージェントを追加しよう」ではなく、明確な完了基準を持つ一つのワークフローから始めることの重要性を強調しています。",
+      "tags": [
+        "AI Agent",
+        "Enterprise Integration",
+        "Workflow Automation"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIエージェントの実用化における具体的な課題と解決策を提示しており、エンタープライズ分野でのAI導入に大きな影響を与える可能性があるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "ReviewBench: AIコードレビューのためのオープンベンチマーク",
+      "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
+      "source": "GitHub Blog",
+      "published": "2026-10-05T15:59:40+00:00",
+      "summary": "GitHubがAIコードレビューの品質を測定するための新しいオープンベンチマーク「ReviewBench」を発表しました。\nこれは、実際のプルリクエストの多様性を反映し、幅広いレビュー結果を捕捉することで、既存のベンチマークのギャップを埋めます。\n開発チームがコードレビューエージェントの改善をオフラインで追跡し、本番環境での体験向上に役立つことを目指しています。",
+      "tags": [
+        "AI",
+        "コードレビュー",
+        "ベンチマーク"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIによるコードレビューの品質評価は開発効率に直結し、このオープンベンチマークはAIモデルの比較と改善を促進するため、技術的新規性と実用性が高く評価されます。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Total Annihilation、現代のコンピューター向けに再構築",
+      "url": "https://nanolathe.gg",
+      "source": "Hacker News",
+      "published": "2026-10-11T18:04:47+00:00",
+      "hn_score": 287,
+      "hn_comments": 119,
+      "summary": "オープンソースの2.5D RTSエンジン「Nanolathe」が、クラシックゲーム「Total Annihilation」を現代向けに再構築しました。\nMITライセンスで提供され、既存のゲームファイルを使用し、Windows、Mac、Linuxでネイティブに動作します。\n最新のGPUレンダリングによるリッチなグラフィックと、クラシックな見た目の切り替えが可能です。",
+      "tags": [
+        "ゲーム開発",
+        "オープンソース",
+        "RTS"
+      ],
+      "category": "その他",
+      "score": 80,
+      "score_reason": "古い名作ゲームを現代の技術で再構築し、オープンソースとして公開することで、コミュニティによる発展の可能性を秘めているため、高い評価を与えました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "AIの文章を読みやすくするスキルを作る（文の難しさの点数化＋構造化）",
+      "url": "https://zenn.dev/netetahito/articles/a3539e541b179c",
+      "source": "Zenn",
+      "published": "2026-10-11T00:56:36+00:00",
+      "summary": "AIが生成する文章の読みにくさを解消するため、文章の難易度を点数化し、構造化するスキル開発の試みです。\n係り受けの距離、単語の出現頻度、入れ子構造などを基に読みにくさを数値化し、AIに分かりやすい文章を生成させることを目指します。\n心理言語学の知見を活用し、GiNZAやwordfreqといったツールを用いて分析を行っています。",
+      "tags": [
+        "自然言語処理",
+        "AI",
+        "UX"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AI生成文章の品質向上は実用性が高く、ユーザー体験を大きく改善する可能性があり、技術的アプローチも興味深いため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Microsoft セキュリティ、これをやってください！～ 実践ベストプラクティス",
+      "url": "https://qiita.com/carol0226/items/bdb16dbd5c16a2c43ad5?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-10T07:41:11+00:00",
+      "summary": "サイバー攻撃の被害が相次ぐ中、Microsoft製品を活用したセキュリティ対策のベストプラクティスが紹介されています。\nフィッシング耐性のある認証としてのパスキー導入を皮切りに、アクセス制御、特権管理、メール、ネットワーク、検知・対応へと段階的に対策を積み重ねることを推奨。\nAIエージェントによる新たな攻撃経路への考慮も促し、組織管理者だけでなく個人にも役立つ実践的な内容となっています。",
+      "tags": [
+        "Microsoft Security",
+        "パスキー",
+        "ゼロトラスト"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "最新のサイバー攻撃動向を踏まえ、Microsoft製品を用いた実践的なセキュリティ対策を具体的に提示しており、企業や個人の情報資産保護に直結する重要な情報です。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "GitHub Actionsでよくある3つの『見えない』脆弱性を、自前の静的解析で検出してみた",
+      "url": "https://qiita.com/vakoya_village/items/f7a457e6f51ad9c8aa4c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-10T04:26:17+00:00",
+      "summary": "GitHub Actionsのワークフローに潜む、見落とされがちな3つの脆弱性（権限の過剰付与、secretsの意図しない出力、信頼できない入力の利用）について解説しています。\nこれらの脆弱性を検出するための静的解析チェッカーのロジックと、その限界を共有。\n特にpermissionsの明示的な設定や、secretsの扱い、外部入力の検証の重要性を強調し、安全なCI/CD運用のための具体的な指針を提供しています。",
+      "tags": [
+        "GitHub Actions",
+        "CI/CD",
+        "セキュリティ"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "CI/CDパイプラインにおける具体的なセキュリティ脆弱性とその検出方法を詳細に解説しており、開発現場でのセキュリティ向上に直結する実用性の高い情報です。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "無料のAdobeクローン開発者がオープンソースのMicrosoft Office Excel、PowerPoint、Wordのレプリケーションを発表 — Autodeskツールやその他のサブスクリプションベースのサービスも次に続く可能性",
+      "url": "https://www.reddit.com/r/technology/comments/1x35i3s/creator_of_free_adobe_clones_unveils_opensource/",
+      "source": "Reddit",
+      "published": "2026-10-11T11:08:28+00:00",
+      "summary": "無料のAdobeクローンを開発した人物が、オープンソース版のMicrosoft Officeスイートを発表しました。\nExcel、PowerPoint、Wordの機能が再現されており、無料で利用可能です。\n今後はAutodesk製品など、他のサブスクリプションベースのサービスもオープンソース化される可能性が示唆されています。",
+      "tags": [
+        "オープンソース",
+        "オフィススイート",
+        "ソフトウェア開発"
+      ],
+      "category": "プログラミング言語",
+      "score": 80,
+      "score_reason": "主要なプロプライエタリソフトウェアのオープンソース代替が提供されることは、ソフトウェア業界の競争とアクセシビリティに大きな影響を与えるため、重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Opus 5.5のおかげで3Dプリンターを活用できるようになった - Write and Run",
+      "url": "https://diary.hatenablog.jp/entry/2026/10/11/204055",
+      "source": "はてなブックマーク",
+      "published": "2026-10-11T15:00:42+00:00",
+      "summary": "3D CADが苦手な筆者が、LLMのOpus 5.5を活用することで3Dプリンターの利用を本格化できた体験談を紹介しています。\nOpus 5.5はコーディングだけでなく3Dモデリングにも優れ、ニトリのペグボード用フックなどを生成し、3D CAD素人でも望み通りの形状を効率的に作成可能に。\n小物の寸法測定には、アルミスケールを当てた写真をClaudeに渡すことで、EXIF情報と幾何投影を利用し、約1mmの精度でモデリングする手法も紹介されています。",
+      "tags": [
+        "3Dプリンター",
+        "LLM",
+        "AI"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 80,
+      "score_reason": "LLMが3Dモデリングの障壁を下げ、3Dプリンターの活用を促進する可能性を示しており、AIとハードウェアの連携の新たなユースケースとして評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Cloudflare ContainersがAIエージェント向けに刷新。起動が6倍速、ファイルシステムのスナップショット機能など",
+      "url": "https://www.publickey1.jp/blog/26/cloudflare_containersai6.html",
+      "source": "Publickey",
+      "published": "2026-10-05T15:29:53+00:00",
+      "summary": "Cloudflareは、エッジロケーションでコンテナ型仮想マシンを実行する「Cloudflare Containers」をAIエージェント向けに刷新しました。\nこれにより、起動速度が6倍に高速化され、ファイルシステムのスナップショット機能などが追加され、AIエージェントの開発・実行環境が大幅に強化されました。\nAIエージェントが自身の開発・テスト・実行環境としてコンテナ型仮想化を利用するニーズの高まりに対応し、大量のコンテナ需要に応えるものです。",
+      "tags": [
+        "Cloudflare",
+        "コンテナ",
+        "AIエージェント"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 80,
+      "score_reason": "AIエージェントの普及に伴うインフラニーズに対応し、コンテナの起動速度向上やスナップショット機能の追加は、AI開発・運用効率を大きく改善するため、高い実用性と影響度を評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "あるバグバウンティ研究者が調査する機能を選ぶ方法",
+      "url": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/",
+      "source": "GitHub Blog",
+      "published": "2026-10-08T17:02:52+00:00",
+      "summary": "GitHubのバグバウンティプログラムが、セキュリティ研究者コミュニティとの連携を通じてGitHubをより安全にしていることを紹介しています。\nAIを活用したGitHub Copilotなどの登場により、従来の攻撃対象に加え、新たな脆弱性への対応が重要になっていると述べています。\nGitHubのバグバウンティプログラムが、量より質を重視するよう再構築され、VIPプログラムが導入されたことを説明しています。",
+      "tags": [
+        "Bug Bounty",
+        "Security Research",
+        "GitHub Security"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "AI時代のセキュリティ研究の重要性と、バグバウンティプログラムの進化について具体的に解説しており、セキュリティ業界への影響が大きいと判断したため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "2025 年 10 月から 2026 年 10 月までの Mozc に対する主な変更",
+      "url": "https://zenn.dev/komatsuh/articles/komatsuh_mozc_updates_from_2025_10",
+      "source": "Zenn",
+      "published": "2026-10-10T14:30:00+00:00",
+      "summary": "2025年10月から2026年10月にかけての日本語入力システムMozcの主な変更点がまとめられています。\nWindows/macOSでのARM対応、ビルドシステムのBazelへの完全移行、メジャーバージョン2から3への更新（12年ぶり）が実施されました。\n辞書データの更新、ユーザー辞書の優先順位調整、ダークテーマ対応、複数ディスプレイでのDPI問題改善など、多岐にわたる機能改善と内部構造の刷新が行われています。",
+      "tags": [
+        "日本語入力",
+        "オープンソース",
+        "OS対応"
+      ],
+      "category": "その他",
+      "score": 75,
+      "score_reason": "日本語入力システムのメジャーアップデートは多くのユーザーに影響を与え、ARM対応やビルドシステムの刷新は将来的な開発とメンテナンスの基盤を強化するため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "サイバーセキュリティを勉強するなら今？おすすめリソース紹介",
+      "url": "https://qiita.com/leolui2004/items/226062f17e55202e8c47?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-11T06:13:37+00:00",
+      "summary": "サイバーセキュリティの重要性が高まる中、この分野を学ぶためのリソースが紹介されています。\nITの総合格闘技とも言えるサイバーセキュリティの全体像を資格ロードマップで示し、特にWebとクラウド関連のインシデントが多い現状を踏まえ、OWASP Top 10やCWEなどの重要資料を解説。\n英語力の必要性にも触れつつ、基礎知識習得のための具体的な学習パスを提供しています。",
+      "tags": [
+        "サイバーセキュリティ",
+        "学習リソース",
+        "OWASP"
+      ],
+      "category": "セキュリティ",
+      "score": 75,
+      "score_reason": "サイバーセキュリティ学習の全体像と具体的なリソースを体系的に提示しており、キャリア形成やスキルアップを目指す人にとって非常に有用な情報です。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "イリノイ州の大学がFlockとの契約を解除しようとしたが拒否された / Flockはカメラの撤去を拒否したため、エルジンコミュニティカレッジはカメラを覆った。しかし、会社はこっそり元に戻した。",
+      "url": "https://www.reddit.com/r/technology/comments/1x3i496/a_college_in_illinois_tried_to_cancel_its_flock/",
+      "source": "Reddit",
+      "published": "2026-10-11T20:08:25+00:00",
+      "summary": "イリノイ州のエルジンコミュニティカレッジが、監視カメラ企業Flockとの契約解除を試みました。\nFlockはカメラの撤去を拒否したため、大学はカメラを覆い隠す措置を取りました。\nしかし、Flock側がこっそりとカメラを元の状態に戻していたことが判明し、倫理的な問題が浮上しています。",
+      "tags": [
+        "監視カメラ",
+        "プライバシー",
+        "契約問題"
+      ],
+      "category": "セキュリティ",
+      "score": 75,
+      "score_reason": "監視技術企業の契約解除拒否と無断でのカメラ復旧は、プライバシーと企業の倫理に関する深刻な問題を提起するため、重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "OpenRouterで無料AIモデルエンドポイントをテストする",
+      "url": "https://dev.to/ipsphil_digital/testing-free-ai-model-endpoint-with-openrouter-1dfa",
+      "source": "Dev.to",
+      "published": "2026-10-11T22:50:25+00:00",
+      "summary": "このチュートリアルでは、OpenRouterの無料ティアを利用して、無料のAIモデルエンドポイントをテストする方法を紹介しています。\nOpenRouterのAPIキーを取得し、curlコマンドを使ってチャット補完エンドポイントにPOSTリクエストを送信する手順が具体的に示されています。\nこれにより、Google Gemini-2.0-flash-exp:freeなどのAIモデルの応答を簡単に取得・確認でき、デモやクイックな動作確認に役立ちます。",
+      "tags": [
+        "AIモデル",
+        "APIテスト",
+        "OpenRouter"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "無料AIモデルのテスト方法を具体的に解説しており、開発者が手軽にAIモデルを試すための実用的な情報を提供しているため、高い実用性を評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "世界をハックする：ハッカソンが今も最高の学習の場である理由",
+      "url": "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/",
+      "source": "GitHub Blog",
+      "published": "2026-10-09T16:00:00+00:00",
+      "summary": "ハッカソンは、参加者が短期間で集中的にプロトタイプを構築し、学ぶための最高の場であると述べています。\nGitHub CopilotのようなAIツールが、アイデアをコードに変えるプロセスを加速させ、プログラミングの敷居を下げていることを紹介しています。\nチームワーク、問題解決、そして新しい技術を実践的に学ぶ機会としてハッカソンの価値を強調しています。",
+      "tags": [
+        "Hackathon",
+        "Learning",
+        "GitHub Copilot"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 75,
+      "score_reason": "AI時代の開発者育成と学習方法に焦点を当てており、ハッカソンの重要性を再認識させる内容であるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "キャリアパーソンとして富を築く方法",
+      "url": "https://asheradeniyi.com/2026/04/10/how-to-build-wealth-as-a-career-person/",
+      "source": "Hacker News",
+      "published": "2026-10-11T16:03:58+00:00",
+      "hn_score": 130,
+      "hn_comments": 123,
+      "summary": "この記事は、起業家だけでなく、キャリアパーソンも富を築くことができるという考え方を提示しています。\n優れたキャリアを築くためには、問題解決能力、迅速な学習、結果を出すこと、そして継続的な学習が重要だと述べています。\n最も重要なのは、収入を単なる消費ではなく資産に変えることであり、キャリアは富を築くためのエンジンであると強調しています。",
+      "tags": [
+        "キャリア形成",
+        "資産形成",
+        "自己啓発"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "IT業界で働く多くのキャリアパーソンにとって、資産形成やキャリア戦略は重要なテーマであり、実用的なアドバイスを提供しているため、高い評価を与えました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "テレンス・タオ: 数学 2.0",
+      "url": "https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf",
+      "source": "Hacker News",
+      "published": "2026-10-11T13:16:45+00:00",
+      "hn_score": 282,
+      "hn_comments": 341,
+      "summary": "著名な数学者テレンス・タオ氏による「数学 2.0」に関する発表資料です。\n具体的な内容は不明ですが、数学分野における新たな概念や進化について論じていると推測されます。\nAIや計算科学の進展が数学研究に与える影響などが含まれる可能性があります。",
+      "tags": [
+        "数学",
+        "理論計算機科学",
+        "AI"
+      ],
+      "category": "その他",
+      "score": 70,
+      "score_reason": "著名な数学者による「数学 2.0」というテーマは学術的に重要であり、将来の技術革新の基礎となる可能性を秘めているため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "攻撃者はWebアプリのどこを狙う？ 初心者でも今すぐできるセキュリティチェックリスト",
+      "url": "https://qiita.com/Koukyosyumei/items/8aaa44ff15a3b404fd8b?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-08T22:11:35+00:00",
+      "summary": "Webアプリケーションへの攻撃が増加する中、初心者でも実践できるセキュリティチェックリストが紹介されています。\n攻撃者が偵察・情報収集で狙うポイント（設定ファイルの公開、APIの存在など）に焦点を当て、具体的な確認方法と対処法を解説。\nXSSやSQLインジェクションなど高度な脆弱性だけでなく、単純な設定ミスから重大な問題が見つかる可能性を指摘しています。",
+      "tags": [
+        "Webセキュリティ",
+        "脆弱性診断",
+        "OWASP"
+      ],
+      "category": "セキュリティ",
+      "score": 70,
+      "score_reason": "Webアプリケーションの基本的なセキュリティ対策を初心者向けに分かりやすく解説しており、実用性が高く多くの開発者に役立つ情報です。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "カナダのYouTuberが警察車両のみを追跡する「Flockのような」カメラを構築 — 警察官がプライバシー懸念を表明するため彼の家を訪問",
+      "url": "https://www.reddit.com/r/technology/comments/1x3b0mi/canadian_youtuber_builds_flocklike_camera_to/",
+      "source": "Reddit",
+      "published": "2026-10-11T15:26:57+00:00",
+      "summary": "カナダのYouTuberが、警察車両のみを追跡する監視カメラシステムを自作しました。\nこのシステムは、Flock社のナンバープレート認識カメラに似た機能を持つとされています。\n警察官がYouTuberの自宅を訪れ、プライバシーに関する懸念を表明する事態に発展しました。",
+      "tags": [
+        "プライバシー",
+        "監視技術",
+        "DIY"
+      ],
+      "category": "セキュリティ",
+      "score": 70,
+      "score_reason": "個人の監視技術開発がプライバシー問題を引き起こし、社会的な議論を喚起する可能性が高いため、重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "【コピペ卒業】Kindle・電子書籍をPDF化＆OCRするアプリを作りました",
+      "url": "https://note.com/lytton_life/n/n838e58f5aff8",
+      "source": "はてなブックマーク",
+      "published": "2026-05-29T04:52:09+00:00",
+      "summary": "Kindleやその他の電子書籍をPDF化し、さらにOCR処理を施すことで、テキストをコピペ可能にするアプリを開発したという記事です。\nこれにより、電子書籍からの情報抽出や再利用が格段に容易になり、学習や業務効率の向上が期待されます。\n手作業でのコピペ作業から解放され、電子書籍の活用範囲を広げるツールとして、多くのユーザーにとって有用なソリューションとなるでしょう。",
+      "tags": [
+        "電子書籍",
+        "OCR",
+        "Python"
+      ],
+      "category": "その他",
+      "score": 70,
+      "score_reason": "電子書籍の利便性を高めるOCRとPDF化のツールは、特定のニーズを持つユーザーにとって非常に実用的であり、業務効率化に貢献すると評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "FDE（フォワードデプロイドエンジニアリング）によって開発されたAIエージェントの7割は使われず、FDEの名前で単なるコンサルティングが販売されるようになる危険が高まるとガートナーが予測",
+      "url": "https://www.publickey1.jp/blog/26/fdeai7fde.html",
+      "source": "Publickey",
+      "published": "2026-10-06T15:43:31+00:00",
+      "summary": "ガートナーは、ベンダーのFDE（フォワードデプロイドエンジニアリング）によって開発されたAIエージェントの70%が2028年までに企業で放棄されると予測しました。\nFDEは本来、ベンダーのエンジニアが顧客現場でAIサービスを共同開発するモデルですが、多くのプロバイダーが単なる実装やプロフェッショナルサービスをFDEと称していると指摘されています。\nこの状況は、AIエージェント導入における期待と現実のギャップ、そして「FDE」という用語の誤用による市場の混乱を示唆しています。",
+      "tags": [
+        "AIエージェント",
+        "FDE",
+        "ガートナー"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "AIエージェントの導入における課題と、FDEという概念の誤用に関するガートナーの予測は、AI市場の健全な発展にとって重要な警鐘であり、ビジネス戦略に影響を与える可能性があるためこのスコアとしました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Day 15: 締め切りまであと4日、2人の見知らぬ人が私のサンプル戦略を書き換えた",
+      "url": "https://dev.to/mrlu/day-15-four-days-to-the-kill-line-and-two-strangers-rewrote-my-sample-strategy-21p5",
+      "source": "Dev.to",
+      "published": "2026-10-11T22:49:22+00:00",
+      "summary": "筆者は100日間の期限でソロ開発プロジェクトを進めており、Day 15の進捗を報告しています。\n支払い処理のバグが見つかり、返金ハンドラーを台帳記録の前に実行する修正を行いました。\n見知らぬ人からのフィードバックにより、テストスイートの不備とファネルシグナルの定義に関する改善がなされました。",
+      "tags": [
+        "Payment Processing",
+        "Bug Fix",
+        "Solo Development"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 70,
+      "score_reason": "実際の開発における具体的なバグ修正と、外部からのフィードバックの重要性を示しており、実用的な教訓が含まれるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "ニューヨーク市の「クリックでキャンセル」ルールが施行",
+      "url": "https://www.nyc.gov/main/click-to-cancel",
+      "source": "Hacker News",
+      "published": "2026-10-11T18:01:16+00:00",
+      "hn_score": 288,
+      "hn_comments": 137,
+      "summary": "ニューヨーク市で、サブスクリプションの解約を容易にする「クリックでキャンセル」ルールが2026年10月1日から施行されました。\nこれにより、オンラインで簡単に登録できたサービスは、同様にオンラインで簡単に解約できることが義務付けられます。\n消費者を煩雑な解約手続きから保護し、違反企業には罰金が科せられます。",
+      "tags": [
+        "消費者保護",
+        "法規制",
+        "サブスクリプション"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "消費者の利便性を高める重要な法規制であり、サブスクリプションビジネスを展開する企業に大きな影響を与えるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "カートゥーンネットワークの大規模なリークにより、数十年にわたる舞台裏のアニメーションファイルが流出",
+      "url": "https://www.reddit.com/r/technology/comments/1x3iz6s/a_massive_cartoon_network_leak_exposes_decades_of/",
+      "source": "Reddit",
+      "published": "2026-10-11T20:43:49+00:00",
+      "summary": "カートゥーンネットワークで大規模なデータ漏洩が発生し、数十年にわたるアニメーション制作の舞台裏ファイルが流出しました。\nこの漏洩には、未公開の作品、コンセプトアート、制作過程のデータなどが含まれていると推測されます。\n著作権侵害や企業秘密の流出といった深刻な問題を引き起こす可能性があります。",
+      "tags": [
+        "データ漏洩",
+        "サイバーセキュリティ",
+        "著作権"
+      ],
+      "category": "セキュリティ",
+      "score": 65,
+      "score_reason": "大規模なデータ漏洩は企業の信頼性や知的財産に影響を与えるが、技術的な新規性よりもインシデントとしての側面が強いため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "2回の不一致がフリーズレコードになる方法",
+      "url": "https://dev.to/datacpp_8185/how-a-two-run-disagreement-becomes-a-freeze-record-1gig",
+      "source": "Dev.to",
+      "published": "2026-10-11T22:52:16+00:00",
+      "summary": "この記事は、テストの不安定性（flaky test）を管理するための「フリーズレコード」の概念について説明しています。\nエージェントパッチが不安定なテストをスキップできるのは、フリーズレコードが特定の条件（2回の不一致と未編集のプロパティファイル）を満たした場合のみです。\nフリーズレコードは、テストの非決定性を記録し、CI/CDパイプラインにおける回帰の隠蔽を防ぐための厳格な仕様として機能します。",
+      "tags": [
+        "テスト",
+        "CI/CD",
+        "ソフトウェア開発"
+      ],
+      "category": "プログラミング言語",
+      "score": 65,
+      "score_reason": "テストの不安定性に対処するフリーズレコードの概念は、ソフトウェア開発の品質保証において重要ですが、特定のニッチな問題解決に焦点を当てているため、スコアは中程度としました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "北朝鮮の地図製作者たち",
+      "url": "https://cartographers-nk.wonyoung.so/",
+      "source": "Hacker News",
+      "published": "2026-10-11T19:46:40+00:00",
+      "hn_score": 120,
+      "hn_comments": 16,
+      "summary": "「Cartographers of North Korea」は、北朝鮮の地図製作に関するプロジェクトまたは研究のようです。\n詳細な本文抜粋がないため、具体的な内容は不明ですが、地理情報や文化、歴史的側面を探求している可能性があります。\n北朝鮮という閉鎖的な国の情報に触れる貴重な機会を提供するかもしれません。",
+      "tags": [
+        "地理情報",
+        "北朝鮮",
+        "歴史"
+      ],
+      "category": "その他",
+      "score": 60,
+      "score_reason": "具体的な技術的要素は不明ですが、特定の地域の情報に焦点を当てたユニークなテーマであり、社会科学的な関心が高いと判断しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "ジョン・バーガー著『見るということ』第1章",
+      "url": "https://www.ways-of-seeing.com/ch1",
+      "source": "Hacker News",
+      "published": "2026-10-11T18:26:24+00:00",
+      "hn_score": 61,
+      "hn_comments": 9,
+      "summary": "ジョン・バーガーの著書『見るということ』の第1章が公開されており、「見る」という行為が言葉に先行し、世界との関係を確立すると論じています。\n私たちは世界を言葉で説明しますが、言葉は「見ること」の事実を覆すことはできません。\n私たちが物事を見る方法は、知識や信念によって影響を受けると述べられています。",
+      "tags": [
+        "哲学",
+        "芸術",
+        "認知科学"
+      ],
+      "category": "その他",
+      "score": 55,
+      "score_reason": "IT技術とは直接関係ありませんが、人間の認知や視覚に関する深い洞察は、UI/UXデザインなど間接的にIT分野にも影響を与える可能性があるため、一定の評価を与えました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "The Onionの印刷版を売りたいですか？",
+      "url": "https://theonion.com/archivehunt/",
+      "source": "Hacker News",
+      "published": "2026-10-11T19:43:32+00:00",
+      "hn_score": 206,
+      "hn_comments": 22,
+      "summary": "風刺ニュースサイト「The Onion」が、過去の印刷版の不足している号を探しています。\n読者に対し、特定の巻号と日付の印刷版を所有しているか確認し、情報提供を求めています。\n状態の良いものを求めており、提供された場合はThe Onionの所有物となることを明記しています。",
+      "tags": [
+        "アーカイブ",
+        "メディア",
+        "収集"
+      ],
+      "category": "その他",
+      "score": 40,
+      "score_reason": "IT技術ニュースとしては直接的な関連性が低いですが、メディアの歴史的資料収集という点で一定の文化的な価値があるため、中程度の評価としました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    }
+  ]
+}
