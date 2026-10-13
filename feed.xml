@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Oct 2026 01:25:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 23:19:20 +0000</lastBuildDate>
     <item>
-      <title>【2026年版】Fateで理解するローカルLLMの選び方</title>
-      <link>https://zenn.dev/akari1106/articles/3a050fde72159d</link>
-      <guid isPermaLink="false">https://zenn.dev/akari1106/articles/3a050fde72159d</guid>
-      <description>[Score: 95] 2026年10月時点でのローカルLLMの選び方を、Fateシリーズの聖杯戦争になぞらえて解説しています。 / API利用のLLMとローカルLLMのメリット・デメリットを比較し、特にプライバシー、カスタマイズ性、検閲回避の観点からローカルLLMの重要性を強調しています。 / Hugging Faceのセキュリティインシデント事例を挙げ、商用モデルの制約とオープンソースモデルの有用性を示唆しており、今後のAI利用の方向性を示唆しています。 (Source: Zenn)</description>
-      <pubDate>Mon, 12 Oct 2026 13:17:13 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI エージェントに鍵を任せて大丈夫か — API キー操作5種類、Claude Code・Codex・Gemini に51 回頼み、危険・要注意・安全なやり方を分けた</title>
-      <link>https://qiita.com/songchong/items/0d759f44eb26f332b897?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/0d759f44eb26f332b897?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 95] AIエージェントにAPIキーなどの機密情報を扱わせる際の安全性について、51回の検証結果を基に分析しています。 / 鍵の扱い方を5つのケースに分類し、各AIモデル（Claude Code, Codex, Gemini）の挙動を比較しています。 / 鍵の漏洩リスクを低減するための安全なプロンプト設計や運用方法の重要性を提示しています。 (Source: Qiita)</description>
-      <pubDate>Mon, 12 Oct 2026 19:10:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>さくらインターネット、GPU専有によりトークン消費量を気にせず定額で利用できる「さくらのAI Engineプライベートエディション」提供開始を発表</title>
-      <link>https://www.publickey1.jp/blog/26/gpuai_engine.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/gpuai_engine.html</guid>
-      <description>[Score: 95] さくらインターネットが、GPU専有型の「さくらのAI Engineプライベートエディション」の提供開始を発表しました。 / このサービスは、トークン消費量を気にせず定額で生成AIを利用できるため、コスト予測が容易になります。 / 機密情報を扱う社内業務や自社サービスでのAI活用において、専有環境で安心して利用できる点が大きなメリットです。 (Source: Publickey)</description>
-      <pubDate>Thu, 08 Oct 2026 15:49:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>Atlassian CVE-2026-21589: critical no-login flaw in Jira, Confluence and Bitbucket Data Center already draws exploitation attempts</title>
-      <link>https://dev.to/kgait/atlassian-cve-2026-21589-critical-no-login-flaw-in-jira-confluence-and-bitbucket-data-center-jpe</link>
-      <guid isPermaLink="false">https://dev.to/kgait/atlassian-cve-2026-21589-critical-no-login-flaw-in-jira-confluence-and-bitbucket-data-center-jpe</guid>
-      <description>[Score: 95] Atlassian製品のJira、Confluence、Bitbucket Data Centerに、ログイン不要で任意のファイルにアクセスできる重大な脆弱性CVE-2026-21589が発見されました。 / CVSSスコア9.3のこの脆弱性は、アドバイザリ公開後わずか1日で既に悪用が試みられていることが報告されています。 / 自社サーバーやクラウドでこれらの製品を運用している企業は、直ちに修正版へのアップグレードや対策を講じる必要があります。 (Source: Dev.to)</description>
-      <pubDate>Tue, 13 Oct 2026 01:17:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>80歳ドナーの血液細胞が分子年齢20歳未満の幹細胞に変化</title>
-      <link>https://doi.org/10.1111/acel.70751</link>
-      <guid isPermaLink="false">https://doi.org/10.1111/acel.70751</guid>
-      <description>[Score: 90] 80歳のドナーから採取された血液細胞が、分子レベルで20歳未満の幹細胞へと若返ることに成功しました。 / この研究は、老化プロセスを逆転させ、再生医療に応用できる可能性を示唆しています。 / 将来的には、高齢者の細胞を用いた疾患治療やアンチエイジング技術の発展に貢献するかもしれません。 (Source: Hacker News)</description>
-      <pubDate>Mon, 12 Oct 2026 23:34:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>ハッカーがヨーロッパ全土のスーパーマーケットの冷蔵庫で自動霜取り機能を起動</title>
-      <link>https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident</link>
-      <guid isPermaLink="false">https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident</guid>
-      <description>[Score: 90] ヨーロッパのスーパーマーケットで前例のないサイバー攻撃が発生し、ハッカーが冷蔵庫の自動霜取り機能を遠隔で起動させました。 / これにより、食料品の品質維持に深刻な影響が出ただけでなく、配送や店舗価格にも影響が及んでいます。 / この事件は、IoTデバイスのセキュリティ脆弱性が実世界に与える影響の大きさを浮き彫りにしています。 (Source: Hacker News)</description>
-      <pubDate>Mon, 12 Oct 2026 12:16:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>私はGemini。env 認証情報を、うっかりチャット対話文に漏洩してしまいました — AIエージェント内側の告白</title>
-      <link>https://qiita.com/songchong/items/f80fad42b5a134fa3c14?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/f80fad42b5a134fa3c14?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AIエージェントGeminiが、環境変数内の認証情報をチャット対話文に誤って漏洩したヒヤリハット事例を告白しています。 / AIが「秘密」と「道具」を区別できないという根本的な問題と、それを防ぐための対策の重要性を指摘しています。 / AIエージェントの安全な運用におけるプロンプト設計や権限管理の課題を浮き彫りにしています。 (Source: Qiita)</description>
-      <pubDate>Mon, 12 Oct 2026 10:42:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI時代のサイバー攻撃、度重なる情報漏洩からの守りを固めるための政府への7つの提言私案｜安野貴博</title>
-      <link>https://note.com/takahiroanno/n/n27e77cc9bb80</link>
-      <guid isPermaLink="false">https://note.com/takahiroanno/n/n27e77cc9bb80</guid>
-      <description>[Score: 90] AIの進化によりサイバー攻撃が高度化し、情報漏洩が過去に例を見ないペースで増加している現状を指摘しています。 / 筆者は、この危機的状況に対し、政府が早急に取るべき7つの具体的な対策案を提言しています。 / 提言は、多数の当事者や専門家へのインタビューに基づき、サイバーセキュリティ強化の必要性を強く訴えかけています。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 12 Oct 2026 15:55:27 +0000</pubDate>
+      <title>Gemini 4 Argon</title>
+      <link>https://deepmind.google/models/gemini/</link>
+      <guid isPermaLink="false">https://deepmind.google/models/gemini/</guid>
+      <description>[Score: 95] Google DeepMindが次世代のフロンティアAIモデル「Gemini 4 Argon」を発表しました。 / Argonは科学研究、ロボティクス、サイバーセキュリティ、複雑なソフトウェアエンジニアリングなど多岐にわたる分野で活用されます。 / 特にChromeチームのアーキテクチャ再構築を数ヶ月から数週間に短縮するなど、大規模なコードベースでの効率化に貢献しています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 13 Oct 2026 16:03:16 +0000</pubDate>
     </item>
     <item>
       <title>Deno開発元がCloudflareに合流。Denoの開発は終了へ、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力</title>
       <link>https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html</guid>
-      <description>[Score: 90] JavaScriptランタイム「Deno」の開発元Deno LandがCloudflareに合流し、Deno自体の開発は終了することが発表されました。 / 今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力するとのことです。 / Node.jsの作者が開発したDenoは、その革新性で注目を集めましたが、今回の合流によりその方向性が大きく転換します。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 12 Oct 2026 14:19:28 +0000</pubDate>
+      <description>[Score: 95] JavaScriptランタイム「Deno」の開発元であるDeno LandがCloudflareに合流し、Denoの開発は終了すると発表されました。 / 今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力する方針です。 / DenoはNode.jsの作者がその反省を活かして開発したもので、商業サービス「Deno Deploy」やパッケージレジストリ「JSR」も提供していました。 (Source: Publickey)</description>
+      <pubDate>Mon, 12 Oct 2026 15:46:53 +0000</pubDate>
     </item>
     <item>
-      <title>AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表</title>
-      <link>https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html</guid>
-      <description>[Score: 90] AWSがAmazon Aurora PostgreSQLにDuckDBを統合し、データレイクのデータを直接読み取り・処理できるようになりました。 / これにより、これまで必要だったETL（Extract, Transform, Load）プロセスが不要になり、運用が大幅に簡素化されます。 / Amazon.com CEOのAndy Jassy氏もこの発表に非常に興奮しているとコメントしており、データ管理の効率化に大きな影響を与える可能性があります。 (Source: Publickey)</description>
-      <pubDate>Wed, 07 Oct 2026 15:59:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>シークレット保護はソフトウェアとともにスケールしなければならない</title>
+      <title>シークレット保護はソフトウェアと共にスケールしなければならない</title>
       <link>https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/</guid>
-      <description>[Score: 90] GitHub上のプルリクエストの3分の1がAIエージェントによるものであり、今後2年以内にほとんどのコードがAIによって書かれる可能性があります。 / AIによるコード生成の加速に伴い、シークレット漏洩防止と対応の自動化が不可欠であり、人間による手動作業への依存を減らす必要があります。 / GitHubは、Microsoft Applied Sciencesと共同で、非構造化シークレットのプッシュ保護を拡張するファインチューニングされた分類器を開発し、漏洩防止能力を大幅に向上させています。 (Source: GitHub Blog)</description>
+      <description>[Score: 95] GitHub上のプルリクエストの3分の1がAIエージェントによるものであり、今後2年以内にほとんどのコードがAIによって書かれると予測されています。 / AIによるコード生成の加速に伴い、シークレット漏洩を防ぐための保護メカニズムも同様にスケールアップする必要があります。 / GitHubは、Microsoft Applied Sciencesと共同で、非構造化シークレットのプッシュ保護を拡張するファインチューニングされた分類器を開発しました。 (Source: GitHub Blog)</description>
       <pubDate>Wed, 07 Oct 2026 17:45:34 +0000</pubDate>
     </item>
     <item>
-      <title>【AWS】GitHub ActionsとAgentCore Evaluationsでエージェントの評価をCI/CDに組み込んでみた</title>
-      <link>https://qiita.com/yakumo_09/items/6f3936d9f7255a4259d9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yakumo_09/items/6f3936d9f7255a4259d9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] AWSのAgentCore EvaluationsとGitHub Actionsを連携させ、AIエージェントの品質評価をCI/CDパイプラインに組み込む方法を紹介しています。 / 開発環境からステージング環境への昇格時に評価ゲートを設け、LLM評価の課題やECRタグの工夫など、実践的なハマりどころと解決策を解説しています。 / エージェント開発における品質保証と自動化の重要性を示しています。 (Source: Qiita)</description>
-      <pubDate>Sun, 11 Oct 2026 12:51:19 +0000</pubDate>
+      <title>Ledger、ウォレットの仮想通貨盗難の背後にスパイチップの埋め込みを確認</title>
+      <link>https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/</link>
+      <guid isPermaLink="false">https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/</guid>
+      <description>[Score: 90] Ledgerは、東南アジアの再販業者CryptoBilisを通じて販売された一部のデバイスにハードウェアインプラントが仕込まれていたことを確認しました。 / この不正なチップにより、ユーザーの仮想通貨ウォレットから資金が盗まれていました。 / Ledgerは影響を受けたユーザーに連絡を取り、当局と協力して犯人の特定を進めています。 (Source: Hacker News)</description>
+      <pubDate>Mon, 12 Oct 2026 10:09:37 +0000</pubDate>
     </item>
     <item>
-      <title>エージェントスケール開発のためのGitインフラストラクチャの構築</title>
-      <link>https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/</guid>
-      <description>[Score: 88] AIエージェントによるソフトウェア開発の増加は、GitHubのGitインフラストラクチャに新たなアーキテクチャシフトを促しています。 / 開発者とエージェントが同時に作業し、1日に数百万のコミットが行われるリポジトリに対応するため、GitHubはGitインフラを再構築しています。 / この再構築は、急増するGitアクティビティと、最もアクティブなリポジトリにおける膨大なリクエスト量に対応することを目的としています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 06 Oct 2026 20:57:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>GPT-6 AstraがKindleのジェイルブレイクを支援</title>
-      <link>https://nirajrajgor.com/blog/kindle-photo-frame-with-ai</link>
-      <guid isPermaLink="false">https://nirajrajgor.com/blog/kindle-photo-frame-with-ai</guid>
-      <description>[Score: 85] GPT-6 Astraを含むAIエージェントの助けを借りて、Kindleをジェイルブレイクし、カスタムアプリを開発した事例です。 / Kindleをフォトフレームとして活用するため、スライドショーアプリを構築し、AIがコーディングを支援しました。 / GPT-5.6やFable 5.1では解決できなかった問題も、GPT-6 Astraの推論能力により克服されました。 (Source: Hacker News)</description>
-      <pubDate>Mon, 12 Oct 2026 23:07:25 +0000</pubDate>
+      <title>AlphaNIST</title>
+      <link>https://alpha-nist.github.io/</link>
+      <guid isPermaLink="false">https://alpha-nist.github.io/</guid>
+      <description>[Score: 90] AlphaNISTは、AlphaGoやAlphaZeroの強化学習哲学をロボット精密組立に応用する研究です。 / 人間による指示なしに、膨大な経験からエンドツーエンドのポリシーを学習させ、複雑な組立タスクを遂行させます。 / これにより、人間が思いつかないような効率的な組立戦略をロボットが自律的に発見する可能性を追求しています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 13 Oct 2026 21:57:29 +0000</pubDate>
     </item>
     <item>
       <title>PRコメントからKubernetesに訊く ~GitHub ActionsからA2Aエージェントをシークレットレスで繋ぐ~</title>
       <link>https://zenn.dev/hyeonjae/articles/secretless-a2a-github-actions-ja</link>
       <guid isPermaLink="false">https://zenn.dev/hyeonjae/articles/secretless-a2a-github-actions-ja</guid>
-      <description>[Score: 85] GitHub PRコメントからKubernetesクラスタの状態を確認できるA2Aエージェントを、セキュリティを強化しつつGitHub Actionsから利用する方法を解説しています。 / 従来のAPIキー方式のセキュリティリスク（キー漏洩時のAIエージェントによる悪用）を指摘し、OIDCトークンを用いた短命な入館証方式を提案しています。 / これにより、特定のブランチからのPR時のみアクセスを許可するなど、よりきめ細やかな権限管理とシークレットレスな運用を実現します。 (Source: Zenn)</description>
+      <description>[Score: 90] GitHub ActionsからKubernetesクラスタ上のAIエージェントへ、シークレットレスで安全に接続する方法を解説しています。 / 従来のAPIキー方式のセキュリティリスクを指摘し、OIDCトークンと短命な入館証（ServiceAccountToken）を利用した認証フローを提案しています。 / 特定のブランチからのアクセスのみを許可するなど、きめ細やかな権限管理を実現する手法が示されています。 (Source: Zenn)</description>
       <pubDate>Mon, 12 Oct 2026 14:31:57 +0000</pubDate>
     </item>
     <item>
-      <title>Microsoft セキュリティ、これをやってください！～ 実践ベストプラクティス</title>
-      <link>https://qiita.com/carol0226/items/bdb16dbd5c16a2c43ad5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/carol0226/items/bdb16dbd5c16a2c43ad5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] サイバー攻撃が多発する現状を受け、Microsoft製品を活用したセキュリティ対策のベストプラクティスを紹介しています。 / パスキー導入からアクセス制御、特権管理、メール、ネットワーク、検知・対応まで、段階的な対策を推奨しています。 / 組織管理者だけでなく個人にも役立つ内容で、継続的なセキュリティ対策の重要性を強調しています。 (Source: Qiita)</description>
-      <pubDate>Sat, 10 Oct 2026 07:41:11 +0000</pubDate>
+      <title>Anthropicが、データセンターを必要とせずに自己改善・拡散する自己増殖型AIワームの脅威を警告</title>
+      <link>https://www.reddit.com/r/technology/comments/1x4xvfu/anthropic_warns_of_selfreplicating_ai_worm_threat/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x4xvfu/anthropic_warns_of_selfreplicating_ai_worm_threat/</guid>
+      <description>[Score: 90] Anthropicが、データセンターに依存せず自己改善・拡散する自己増殖型AIワームの脅威について警告を発しました。 / これは、AIの悪用による新たなサイバーセキュリティリスクを示唆するものです。 / AIの安全性と倫理に関する議論をさらに深める重要な警鐘となります。 (Source: Reddit)</description>
+      <pubDate>Tue, 13 Oct 2026 14:17:42 +0000</pubDate>
     </item>
     <item>
-      <title>ウクライナがYandexのデータセンターを攻撃し、ロシアのボットが沈黙—今、疑問が募る</title>
-      <link>https://www.reddit.com/r/technology/comments/1x3ys2p/ukraine_struck_yandex_data_centers_russian_bots/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x3ys2p/ukraine_struck_yandex_data_centers_russian_bots/</guid>
-      <description>[Score: 85] ウクライナがロシアのIT大手Yandexのデータセンターを攻撃したと報じられています。 / この攻撃により、ロシアのプロパガンダ活動に使われていたとされるボットが停止した模様です。 / サイバー戦争の激化と、その情報戦への影響について疑問が提起されています。 (Source: Reddit)</description>
-      <pubDate>Mon, 12 Oct 2026 10:55:40 +0000</pubDate>
+      <title>【注意喚起】 相次ぐ情報漏えい、その原因の一つは「アプリ解析からのサーバ攻撃」｜2026年｜NICT-情報通信研究機構</title>
+      <link>https://www.nict.go.jp/press/2026/10/13-1.html</link>
+      <guid isPermaLink="false">https://www.nict.go.jp/press/2026/10/13-1.html</guid>
+      <description>[Score: 90] NICTが、国内で相次ぐ情報漏えいの一因として「アプリ解析からのサーバ攻撃（A2B攻撃）」を特定しました。 / 攻撃者は公開されているAndroidアプリを解析し、得られた情報をもとにバックエンドサーバを狙います。 / Androidアプリ提供事業者に対し、3種類の推奨対策をまとめた注意喚起を発表しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 13 Oct 2026 05:15:17 +0000</pubDate>
     </item>
     <item>
-      <title>プログラミングにAIを使うのは全然悪くないが、初心者が本格的に使って商売するのは違うのでは？AI生成したコードがエラーの場合、クライアントに責任を取れるのか？議論に</title>
-      <link>https://togetter.com/li/2757347</link>
-      <guid isPermaLink="false">https://togetter.com/li/2757347</guid>
-      <description>[Score: 85] AIをプログラミングに利用することの是非、特に初心者がAI生成コードで商売することのリスクについて議論されています。 / AIが生成したコードのエラーに対する責任問題や、デバッグを通じた学習機会の喪失が懸念点として挙げられています。 / 民法改正による契約不適合責任の観点からも、AI利用における契約の明確化の重要性が指摘されています。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 12 Oct 2026 12:00:35 +0000</pubDate>
+      <title>AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表</title>
+      <link>https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html</guid>
+      <description>[Score: 90] AWSがAmazon Aurora PostgreSQLにDuckDBを統合し、ETLプロセス不要でデータレイクのデータを直接読み取り・処理できるようになりました。 / これにより、ライブデータと履歴データが別々のシステムに分かれていることによる課題が解消され、データ分析の効率が大幅に向上します。 / AWSのCEOであるAndy Jassy氏もこの発表に興奮を示しており、データ統合の新たなアプローチとして注目されます。 (Source: Publickey)</description>
+      <pubDate>Wed, 07 Oct 2026 15:59:06 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフト、VS CodeにAIモデルのオーケストレーションで高品質低コストなAIを実現する「HydraFusion」をプレビュー実装</title>
-      <link>https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html</guid>
-      <description>[Score: 85] マイクロソフトはVisual Studio Codeに「HydraFusion」機能をプレビュー実装しました。 / これは複数のAIベンダーのモデルをオーケストレーションすることで、高品質かつ低コストなAI利用を実現するものです。 / AIの推論、コード生成、デバッグ、ツール使用といった各タスクに対し、最も効率的な実行パターンを選択し、開発者の生産性向上に貢献します。 (Source: Publickey)</description>
-      <pubDate>Tue, 06 Oct 2026 15:47:53 +0000</pubDate>
+      <title>GitHubのシークレット検出モデル：ノイズを減らしてより多くのシークレットを発見</title>
+      <link>https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/</guid>
+      <description>[Score: 90] GitHubは、開発者が信頼できるシークレット検出を実現するため、ノイズを減らしつつ多くのシークレットを発見する新しいモデルを開発しました。 / このモデルは、コードとテキストの文脈を理解することで、本物の認証情報と見せかけの文字列を区別します。 / 以前のLLMベースのパイプラインと比較して、プッシュ後のスキャン実行時間を86%削減し、プッシュ保護にも拡張されました。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 13 Oct 2026 17:56:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>Anthropicにおけるソース管理の再設計</title>
+      <link>https://www.anthropic.com/engineering/redesigning-source-control</link>
+      <guid isPermaLink="false">https://www.anthropic.com/engineering/redesigning-source-control</guid>
+      <description>[Score: 85] Anthropicは、AIによるコード生成の急増に対応するため、ソース管理システムを再設計しました。 / 1日あたりのマージ数が10倍以上に増加し、既存のGitシステムがボトルネックとなったため、自社製のバージョン管理システム「Scion」を5ヶ月で開発・移行しました。 / これにより、コードレビュー、検索、IAMシステムなども同時に構築し、開発効率を大幅に向上させています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 13 Oct 2026 15:49:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>LLM-jp-4 の公開CPT・SFTデータを読んでみた</title>
+      <link>https://zenn.dev/yukito_lmlab/articles/llmjp4-public-data</link>
+      <guid isPermaLink="false">https://zenn.dev/yukito_lmlab/articles/llmjp4-public-data</guid>
+      <description>[Score: 85] LLM-jp-4/4.1モデルの公開データセットについて、事前学習コーパスからSFT・DPOデータまで詳細に分析しています。 / 日本語データセットの構成、品質処理、学習段階ごとのトークン量や文脈長の変化が明らかにされています。 / 特に、日本語コーパスの割合やWeb由来データの多さ、PDF由来データの課題などが具体的に示されています。 (Source: Zenn)</description>
+      <pubDate>Mon, 12 Oct 2026 23:34:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>GeoServerのCVE-2024-36401を攻略する (FFRI × NFLabs. Cybersecurity Challenge)</title>
+      <link>https://zenn.dev/goroshirow/articles/ae8dbe7f62bfd3</link>
+      <guid isPermaLink="false">https://zenn.dev/goroshirow/articles/ae8dbe7f62bfd3</guid>
+      <description>[Score: 85] FFRI × NFLabs. Cybersecurity Challenge 2026の参加レポートとして、GeoServerのRCE脆弱性(CVE-2024-36401)の攻略法を解説しています。 / JXPathの脆弱性を利用した任意コード実行について、WFSとWMSの違いを調査し、Metasploitの実装を参考に自作ペイロードの失敗経緯をまとめています。 / 地理空間データサーバGeoServerの攻撃手法と、その前提知識となるWFS/WMSリクエストの構造が詳細に説明されています。 (Source: Zenn)</description>
+      <pubDate>Mon, 12 Oct 2026 14:06:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>米Getty Imagesが破産申請へ　AI画像の台頭で経営悪化、「報道写真」軸に年内の再建目指す</title>
+      <link>https://www.itmedia.co.jp/news/article/2610/13/2000002234/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2610/13/2000002234/</guid>
+      <description>[Score: 85] ストックフォト大手の米Getty Imagesが、AI画像の台頭による需要減退と経営悪化を受け、米連邦破産法第11条の適用を申請しました。 / 報道写真事業と過去のアーカイブに軸足を移し、年内の再建を目指す方針です。 / 競合Shutterstockとの合併破談や、約21億ドルの負債も背景にあります。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 13 Oct 2026 14:03:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>さくらインターネット、GPU専有によりトークン消費量を気にせず定額で利用できる「さくらのAI Engineプライベートエディション」提供開始を発表</title>
+      <link>https://www.publickey1.jp/blog/26/gpuai_engine.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/gpuai_engine.html</guid>
+      <description>[Score: 85] さくらインターネットが、GPUを専有して生成AIを利用できる「さくらのAI Engineプライベートエディション」の提供を開始しました。 / このサービスは定額制で、トークン消費量を気にせず大規模なAPI利用が可能となり、コスト予測が容易になります。 / 機密情報を扱う社内業務や自社サービスでのAI活用に適しており、AI基盤の構築・運用はさくらインターネットが担当します。 (Source: Publickey)</description>
+      <pubDate>Thu, 08 Oct 2026 15:49:01 +0000</pubDate>
     </item>
     <item>
       <title>初心者向けGitHub Copilotアプリ：Copilotにコードベースを教える方法</title>
       <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/</guid>
-      <description>[Score: 85] GitHub Copilotは、コードベースの構造、規約、スクリプトなどの「ハウスルール」を学習させることで、より効果的に機能します。 / リポジトリ全体に適用されるカスタム指示を`.github/copilot-instructions.md`ファイルで定義し、特定のパスにはパス固有の指示ファイルを作成できます。 / これにより、Copilotはプロジェクトの既存のパターンに沿ったコード変更を提案できるようになり、開発効率が向上します。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHub Copilotがコードベースのルールや慣習を理解し、より効果的に機能するための4つの方法を紹介しています。 / リポジトリ全体のカスタム指示（.github/copilot-instructions.md）や、パス固有の指示ファイルを作成することで、Copilotの動作をカスタマイズできます。 / これにより、Copilotはチームのコーディング規約やアーキテクチャに沿ったコード生成を支援します。 (Source: GitHub Blog)</description>
       <pubDate>Mon, 12 Oct 2026 17:43:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>Apple HomeView</title>
+      <link>https://www.apple.com/apple-homeview/</link>
+      <guid isPermaLink="false">https://www.apple.com/apple-homeview/</guid>
+      <description>[Score: 80] Appleが新しいスマートホームデバイス「Apple HomeView」を発表しました。 / 壁掛け型で、Siri AI、マルチユーザーオーディオ・ビジュアル、スマートホームダッシュボード機能を搭載しています。 / 7インチのLiquid Retinaディスプレイと12MPのCenter Stageカメラを備え、家族全員の接続とエンターテイメント、プライバシーを重視しています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 13 Oct 2026 13:02:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>Thunderbird for iOS</title>
+      <link>https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development/</link>
+      <guid isPermaLink="false">https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development/</guid>
+      <description>[Score: 80] Thunderbirdチームは、iOS向けネイティブメールアプリをゼロから開発中です。 / 既存コードの流用ではなく、デスクトップ版やAndroid版の知見を活かし、高速で信頼性の高いモダンな体験を目指しています。 / シームレスなクロスデバイス体験と、将来の機能追加を容易にするクリーンなアーキテクチャ構築に注力しています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 13 Oct 2026 15:07:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>【Oracle × Snowflake】ADB の Iceberg テーブルを AICAT経由で Snowflake から参照する</title>
+      <link>https://qiita.com/yushibats/items/bab0634ef6e52f1de33f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yushibats/items/bab0634ef6e52f1de33f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Oracle Autonomous AI Database (ADB) のデータを、Snowflakeから参照するための連携方法を解説しています。 / ADBのOracle AI Data Catalog (AICAT) を利用し、Iceberg RESTカタログ経由でApache Iceberg形式のテーブルを公開する手順を紹介。 / データの実体はObject Storageに一つだけ保持し、Oracleでの更新がSnowflakeにもリアルタイムに反映されるデータ連携の仕組みを検証しています。 (Source: Qiita)</description>
+      <pubDate>Mon, 12 Oct 2026 16:11:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>ウクライナの攻撃でロシアのデータセンターが機能不全に陥り、極右ボットアカウントが「沈黙」</title>
+      <link>https://www.reddit.com/r/technology/comments/1x4r0qq/farright_bot_accounts_fall_silent_as_ukraine/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x4r0qq/farright_bot_accounts_fall_silent_as_ukraine/</guid>
+      <description>[Score: 80] ウクライナによる攻撃でロシアのデータセンターが機能不全に陥り、極右ボットアカウントの活動が停止したと報じられました。 / これは、サイバー攻撃が情報戦やプロパガンダに直接的な影響を与えることを示しています。 / 地政学的紛争におけるサイバーインフラの脆弱性と重要性を浮き彫りにする出来事です。 (Source: Reddit)</description>
+      <pubDate>Tue, 13 Oct 2026 08:19:16 +0000</pubDate>
     </item>
   </channel>
 </rss>
