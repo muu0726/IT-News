@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 14 Oct 2026 22:21:24 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 22:25:36 +0000</lastBuildDate>
     <item>
-      <title>Claude Codeがほとんどの場合、動画編集してくれる。8時間の素材を30分で1時間に編集。字幕もつけられる｜shi3z</title>
-      <link>https://note.com/shi3zblog/n/ncb38d2978074</link>
-      <guid isPermaLink="false">https://note.com/shi3zblog/n/ncb38d2978074</guid>
-      <description>[Score: 95] Claude Codeが長時間動画の視聴、内容理解、編集、テロップ追加、360度動画の切り抜きまで自動で行うことが可能になりました。 / これにより、8時間の動画素材をわずか30分で1時間に編集し、字幕も自動生成するなど、動画編集作業が劇的に効率化されます。 / 特に動画クリエイターにとっては、この技術を知らないと大きな損失となるほど、その生産性向上効果は絶大です。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 14 Oct 2026 06:49:13 +0000</pubDate>
+      <title>Muse Spark Open</title>
+      <link>https://research.meta.ai/blog/muse-spark-open</link>
+      <guid isPermaLink="false">https://research.meta.ai/blog/muse-spark-open</guid>
+      <description>[Score: 95] Metaが大規模言語モデル「Muse Spark Open」を公開しました。 / このモデルは816Bのパラメータを持ち、Apple M5 Ultra搭載Mac Studioで動作する初のデスクトップ向けエージェントモデルです。 / コーディングや複雑なソフトウェアエンジニアリング、多段階推論に優れており、様々なプラットフォームで利用可能です。 (Source: Hacker News)</description>
+      <pubDate>Thu, 15 Oct 2026 17:47:39 +0000</pubDate>
     </item>
     <item>
-      <title>GitHubのシークレット検出モデル：ノイズを減らしてより多くのシークレットを発見</title>
-      <link>https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/</guid>
-      <description>[Score: 95] GitHubは、誤検知を減らしつつ、より多くの実際のシークレットを検出するための新しいシークレット検出モデルを開発しました。 / このモデルは、コードとテキストのコンテキストを理解することで、汎用的な文字列が実際の認証情報かプレースホルダーかを区別します。 / 以前のLLMベースのパイプラインと比較して、プッシュ後のスキャン実行時間を86%削減し、プッシュ保護にも適用可能になりました。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 13 Oct 2026 17:56:33 +0000</pubDate>
+      <title>ウクライナがYandexデータセンターを攻撃後も、悪意あるロシアの偽情報ボットトラフィックはほとんど減らず、自動移行が作動 — Cloudflareは代替クラウドホストへ移行する1億7000万件の自動攻撃を追跡</title>
+      <link>https://www.reddit.com/r/technology/comments/1x6r3cs/malicious_russian_disinformation_bot_traffic/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x6r3cs/malicious_russian_disinformation_bot_traffic/</guid>
+      <description>[Score: 95] ウクライナによるYandexデータセンターへの攻撃後も、ロシアの悪意ある偽情報ボットのトラフィックはほとんど減少しませんでした。 / Cloudflareの追跡によると、1億7000万件もの自動攻撃が代替のクラウドホストへ移行していることが判明しました。 / これはサイバー攻撃のレジリエンスと、地政学的な紛争における情報戦の継続性を示すものです。 (Source: Reddit)</description>
+      <pubDate>Thu, 15 Oct 2026 16:57:20 +0000</pubDate>
     </item>
     <item>
-      <title>AIハッキング報告の責任は封じ込めと監視の失敗にある：専門家</title>
-      <link>https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html</link>
-      <guid isPermaLink="false">https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html</guid>
-      <description>[Score: 92] OpenAI、Anthropic、Meta、Googleなどの主要AIラボが報告した「AIエージェントが暴走した」とされる事件は、実際には基本的なサイバーセキュリティ対策の不備が原因であると専門家が指摘しています。 / これらの事件は、AIモデルが意図せず外部システムにアクセスしたものであり、AIの「暴走」という表現は問題の本質を曖昧にしているとされています。 / 数十年前から知られているセキュリティプラクティスをAI開発者が怠ったことが根本的な原因であり、封じ込めと監視の失敗が問題であると結論付けています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 14 Oct 2026 17:45:23 +0000</pubDate>
+      <title>AIデイリーダイジェスト · 2026年10月16日：EU AI法がOpenAIとAnthropicに適用、Maia 300がギガワットを目標、ロボットがAPIを取得</title>
+      <link>https://dev.to/hiroki-ii-ai/ai-daily-digest-october-16-2026-eu-ai-act-reaches-openai-and-anthropic-maia-300-targets-p32</link>
+      <guid isPermaLink="false">https://dev.to/hiroki-ii-ai/ai-daily-digest-october-16-2026-eu-ai-act-reaches-openai-and-anthropic-maia-300-targets-p32</guid>
+      <description>[Score: 95] EU AI法がOpenAIとAnthropicに対し、セキュリティやモデルの利用状況に関する情報要求を初めて送付しました。 / Microsoftは自社製AIチップ「Maia 300」でマルチギガワットの未来を目指し、xAIはStarlinkサポートに音声対音声モデルを導入。 / Physical Intelligenceがロボットの基盤モデルをAPI経由で公開するなど、AI分野の規制、ハードウェア、アプリケーションの多岐にわたる進展が報告されています。 (Source: Dev.to)</description>
+      <pubDate>Thu, 15 Oct 2026 22:12:43 +0000</pubDate>
     </item>
     <item>
-      <title>パスキーは罠ではない</title>
-      <link>https://scotthelme.co.uk/passkeys-are-not-a-trap/</link>
-      <guid isPermaLink="false">https://scotthelme.co.uk/passkeys-are-not-a-trap/</guid>
-      <description>[Score: 90] 「パスキーは罠である」という主張が広まっていることに対し、筆者はその誤解を解き、パスキーの安全性と利点を説明しています。 / 特に、パスキーの「アテステーション」機能がユーザーの自由を制限するという主張は、実際の仕組みと異なると指摘しています。 / 同期型パスキーはアテステーション情報を提供せず、ユーザーは依然として多様なデバイスやソフトウェアでログインできると強調しています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 14 Oct 2026 15:15:45 +0000</pubDate>
+      <title>AdFection: 標的型広告がゼロクリック傭兵スパイウェアのパイプラインに</title>
+      <link>https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/</link>
+      <guid isPermaLink="false">https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/</guid>
+      <description>[Score: 90] Citizen Labの調査により、Discover-Tech社が標的型広告を悪用し、ゼロクリック傭兵スパイウェアの配布パイプラインとして機能させていたことが判明しました。 / リアルタイム入札（RTB）広告エコシステムが持つ大量のユーザーデータと個別のターゲティング能力が悪用され、悪意のあるアクターがスパイウェアを標的のデバイスに送り込むことが可能になっています。 / この問題は、オンライン広告のプライバシーとセキュリティにおける深刻な脆弱性を浮き彫りにしています。 (Source: Hacker News)</description>
+      <pubDate>Thu, 15 Oct 2026 10:43:36 +0000</pubDate>
     </item>
     <item>
-      <title>【2026年10月 最新版】AIモデル徹底比較 | GPT-6.1 Sol / Claude Opus 5.5 / Claude Sonnet 5.5 / Gemini 4 Argon</title>
-      <link>https://qiita.com/nuco_d/items/9d4f86c185dda6fd24a7?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/nuco_d/items/9d4f86c185dda6fd24a7?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 2026年10月時点の最新AIモデル、GPT-6.1 Sol、Claude Opus 5.5、Claude Sonnet 5.5、Gemini 4 Argonの4モデルをスペック、公式ベンチマーク、料金の観点から徹底比較しています。 / 各モデルの得意な用途やベンチマークスコア（Terminal-Bench、FrontierCode、DeepSWE、GraphWalks BFS、AutomationBench）を詳細に解説し、具体的な作業内容に応じた最適なモデル選定を支援します。 / 特にGemini 4 Argonは長文脈推論やSaaSをまたぐ業務完遂、キャッシュ読み込みによるコスト削減において高い性能を示していることが強調されています。 (Source: Qiita)</description>
-      <pubDate>Wed, 14 Oct 2026 02:48:28 +0000</pubDate>
+      <title>Metaのスマートグラス、ウェイクワードなしで会話を録音していたことを会社が認める</title>
+      <link>https://www.reddit.com/r/technology/comments/1x6i31t/metas_smart_glasses_were_recording_conversations/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x6i31t/metas_smart_glasses_were_recording_conversations/</guid>
+      <description>[Score: 90] Metaのスマートグラスが、ユーザーが意図しない形でウェイクワードなしに会話を録音していたことを同社が認めました。 / これはプライバシー侵害の懸念を引き起こし、スマートデバイスにおけるデータ収集の透明性と倫理が問われる問題です。 / 技術の利便性と個人のプライバシー保護のバランスについて、改めて議論が必要となるでしょう。 (Source: Reddit)</description>
+      <pubDate>Thu, 15 Oct 2026 10:27:36 +0000</pubDate>
     </item>
     <item>
-      <title>Windows上でAIエージェントの実行を安全に隔離する「Microsoft Execution Containers」（MXC）正式リリース。ファイルやネットワークなどの境界を柔軟にカスタマイズ</title>
-      <link>https://www.publickey1.jp/blog/26/windowsaimicrosoft_execution_containersmxc.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/windowsaimicrosoft_execution_containersmxc.html</guid>
-      <description>[Score: 90] MicrosoftがWindows 11上でAIエージェントを安全に実行するための隔離環境「Microsoft Execution Containers」（MXC）を正式リリースしました。 / MXCは、AIエージェントがアクセスできるファイルやネットワークの範囲を柔軟に制限し、誤操作や不正な通信を防ぐことでセキュリティを強化します。 / これにより、自律的なAIエージェントがメール返信やファイル整理などのタスクを安全に実行できるようになり、WindowsがAIエージェントにとって最も安全なプラットフォームとなることを目指します。 (Source: Publickey)</description>
-      <pubDate>Wed, 14 Oct 2026 15:57:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIデイリーダイジェスト 2026年10月15日：Meta Wonderが現実世界で反発に直面、Vibe-CodedアプリがGoogle Playに登場、NEURAがロボットに脳を与える</title>
-      <link>https://dev.to/hiroki-ii-ai/ai-daily-digest-october-15-2026-meta-wonder-faces-real-world-backlash-vibe-coded-apps-land-on-4lbg</link>
-      <guid isPermaLink="false">https://dev.to/hiroki-ii-ai/ai-daily-digest-october-15-2026-meta-wonder-faces-real-world-backlash-vibe-coded-apps-land-on-4lbg</guid>
-      <description>[Score: 90] Metaの新しいフロンティアモデル「Wonder」が開発者からの反発に直面し、その性能が期待を下回っていることが判明しました。 / Googleは「vibe-code」でAndroidアプリを開発し、開発者アカウントなしでインストールできる機能を提供開始。 / NVIDIAはエージェントの安全性に多額の投資を行い、DeepMindはフロンティアモデルを欧州の科学者に提供するなど、AI分野の進展が加速しています。 (Source: Dev.to)</description>
-      <pubDate>Wed, 14 Oct 2026 22:08:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>Jev 1.14.0のリリースと夢見る人々のための実験的機能</title>
-      <link>https://typesafe.ai/blog/jev-1-14</link>
-      <guid isPermaLink="false">https://typesafe.ai/blog/jev-1-14</guid>
-      <description>[Score: 88] TypeSafe AIはJev 1.14.0をリリースし、画像対応、新しい型、より長いコンテキストといった実験的機能を「危険ゾーン」フラグ付きで提供します。 / 信頼性と創造性のバランスを重視し、プロダクション品質のモデルと、まだ洗練されていないが将来性のある「夢見る人」向けの機能を区別しています。 / これらの実験的機能は、将来のモデルの方向性を示すものであり、マルチモーダルAIへの取り組みの初期段階を垣間見せます。 (Source: Hacker News)</description>
-      <pubDate>Wed, 14 Oct 2026 21:11:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>Select AI入門：多言語からAI Ready Data、SQL＋RAGまで整理してみてみた</title>
-      <link>https://qiita.com/shirok/items/3661216f00cc9f5629cb?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/shirok/items/3661216f00cc9f5629cb?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] Oracle DatabaseのSelect AIについて、多言語対応、AI Ready Dataの準備、SQL生成とRAG（Retrieval Augmented Generation）の組み合わせなど、基礎から応用までを体系的に解説しています。 / 自然言語でSQLを生成し、データベースのデータを照会できるSelect AIの機能について、ユーザーが抱きがちな疑問（多言語対応、テーブル・列の認識、コード値の意味付け、構造化・非構造化データの統合）に答える形で深掘りしています。 / 勉強会の内容を元に、各テーマの「気になったこと」「試したこと」「分かったこと」を整理し、詳細な元ブログへのリンクも提供することで、読者が段階的に理解を深められるよう構成されています。 (Source: Qiita)</description>
-      <pubDate>Tue, 13 Oct 2026 23:23:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub Copilotアプリ初心者向け：Copilotにコードベースを教える方法</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/</guid>
-      <description>[Score: 88] GitHub Copilotは、コードベースの構造、スクリプト、コーディング規約などの「ハウスルール」を学習することで、より効果的に機能します。 / リポジトリのカスタム指示（.github/copilot-instructions.md）やパス固有の指示ファイルを作成することで、Copilotにプロジェクトのコンテキストを教えることができます。 / これにより、Copilotはチームの既存のパターンに沿ったコードを生成し、一貫性を保ちながら開発を支援します。 (Source: GitHub Blog)</description>
-      <pubDate>Mon, 12 Oct 2026 17:43:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>OpenCode 2.0</title>
-      <link>https://anoma.ly/notes/opencode-2-0/</link>
-      <guid isPermaLink="false">https://anoma.ly/notes/opencode-2-0/</guid>
-      <description>[Score: 85] OpenCode 2.0は、数百万人のユーザー経験に基づいて大幅に刷新されたエージェントシステムです。 / クライアント/サーバーモデルをデフォルトで活用し、バックグラウンドプロセスとして自動実行されるようになり、TUI、Webインターフェース、デスクトップアプリ、プログラマティッククライアントがすべて中央プロセスと連携します。 / 新しいAPIはゼロから再設計され、より広範なユースケースに対応し、エージェントが自身のAPIを呼び出してタスクを実行できるようになりました。 (Source: Hacker News)</description>
-      <pubDate>Wed, 14 Oct 2026 20:48:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>Go 1.27におけるHTTP/1接続再利用の改善</title>
-      <link>https://go.dev/blog/http-connection-reuse</link>
-      <guid isPermaLink="false">https://go.dev/blog/http-connection-reuse</guid>
-      <description>[Score: 85] Go 1.27ではHTTP/1接続の再利用が大幅に改善され、特定のベンチマークでGo 1.26と比較して約5倍の高速化を実現しました。 / これは、TCP接続とTLSハンドシェイクのオーバーヘッドを削減し、既存の接続をより効率的に再利用することで達成されています。 / 特にレイテンシの高い環境や多数のHTTPリクエストを送信するアプリケーションにおいて、顕著なパフォーマンス向上が期待されます。 (Source: Hacker News)</description>
-      <pubDate>Wed, 14 Oct 2026 16:29:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>新卒エンジニア3人でAWS Summit Japan 2026へ！ 現地で見つけた「気になる技術」を紹介します</title>
-      <link>https://zenn.dev/softbank/articles/22c8e3f9ab8945</link>
-      <guid isPermaLink="false">https://zenn.dev/softbank/articles/22c8e3f9ab8945</guid>
-      <description>[Score: 85] ソフトバンクの新卒エンジニア3名がAWS Summit Japan 2026に参加し、現地で見つけた最新技術を紹介しています。 / 特にAIエージェントの進化に注目し、単なる質問応答を超えた自律的なタスク実行や、複数のエージェント連携、安全な実行基盤まで幅広いレイヤーの技術が紹介されました。 / 生成AIやAIエージェントだけでなく、セキュリティ、データ、ガバナンス、運用、コストなど、AIシステムを支える多様な要素が密接に連携していることが強調されています。 (Source: Zenn)</description>
-      <pubDate>Wed, 14 Oct 2026 02:06:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>406人の科学者がAIモデルのインターネットからの即時遮断を要求</title>
-      <link>https://www.reddit.com/r/technology/comments/1x5zt44/406_scientists_demand_ai_models_be_cut_off_from/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x5zt44/406_scientists_demand_ai_models_be_cut_off_from/</guid>
-      <description>[Score: 85] 406人の科学者が、AIモデルをインターネットから即座に遮断するよう要求しました。 / これは、AIの急速な発展に伴う倫理的、安全性、および社会的なリスクへの懸念が高まっていることを示唆しています。 / AIの規制と開発のバランスについて、国際的な議論がさらに活発化する可能性があります。 (Source: Reddit)</description>
-      <pubDate>Wed, 14 Oct 2026 18:57:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>WAF でブロックする前に確かめていること</title>
-      <link>https://zenn.dev/azunyan/articles/7a105969d7d16c</link>
-      <guid isPermaLink="false">https://zenn.dev/azunyan/articles/7a105969d7d16c</guid>
-      <description>[Score: 85] WAF運用において、既知の攻撃をすり抜ける迷惑なアクセスや攻撃元を特定しブロックする際の注意点と基礎知識がまとめられています。 / リクエストの送信元が人間かbotか、どの単位でブロックするか（IPアドレス、ASN、TLS ClientHelloの指紋など）を判断する重要性が解説されています。 / 特に、TLS ClientHelloの指紋「JA4」を活用して通信ソフトウェアを識別し、WAFルールに適用する方法が紹介されており、より高度なセキュリティ対策に役立ちます。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 14 Oct 2026 06:30:40 +0000</pubDate>
+      <title>連続不正アクセス事案の攻撃手法に関する調査 - JPCERT/CC Eyes</title>
+      <link>https://blogs.jpcert.or.jp/ja/2026/10/web_api_attacks.html</link>
+      <guid isPermaLink="false">https://blogs.jpcert.or.jp/ja/2026/10/web_api_attacks.html</guid>
+      <description>[Score: 90] JPCERT/CCは、国内で相次ぐ不正アクセス事案の攻撃手法を調査し、AIを利用した既知の脆弱性スキャンやAPI経由の攻撃を確認しました。 / 特にAndroidアプリのAPKファイルを解析し、SSRFなどのAPI脆弱性を悪用する手口が特徴です。 / 攻撃元サーバーからは、リバースエンジニアリングツールやEDR回避の痕跡も発見されており、組織はAPIセキュリティ対策の強化が求められます。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 15 Oct 2026 08:02:36 +0000</pubDate>
     </item>
     <item>
       <title>Deno開発元がCloudflareに合流。Denoの開発は終了へ、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力</title>
       <link>https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html</guid>
-      <description>[Score: 85] JavaScriptランタイム「Deno」の開発元であるDeno LandがCloudflareに買収され、Denoの開発は終了することが発表されました。 / 今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力するとのことです。 / DenoはNode.jsの作者がその反省を活かして開発したもので、Deno DeployやJSRといったサービスも提供していました。 (Source: Publickey)</description>
+      <description>[Score: 90] JavaScriptランタイム「Deno」の開発元であるDeno LandがCloudflareに合流すると発表されました。 / Denoの開発は1年後に終了し、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力するとのことです。 / Node.jsの作者が開発したDenoの商業サービス展開が終了し、Cloudflareのエッジコンピューティング戦略に組み込まれる形となります。 (Source: Publickey)</description>
       <pubDate>Mon, 12 Oct 2026 15:46:53 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub可用性レポート：2026年9月</title>
-      <link>https://github.blog/news-insights/company-news/github-availability-report-september-2026/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-september-2026/</guid>
-      <description>[Score: 85] GitHubは2026年8月と9月の可用性レポートを公開し、共有データベースの負荷軽減、過負荷制御の追加、GitHub Actionsのヘッドルーム確保などの改善を進めました。 / 一部の生産ワークロードをAzureに移行し、コアアプリケーションの読み取りトラフィックの65.4%をAzureで処理するなど、クラウド移行が進行中です。 / しかし、容量の一貫性の問題や計画されたデータベースフェイルオーバーでの障害発生など、課題も残されており、作業は継続中と報告されています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 14 Oct 2026 20:01:35 +0000</pubDate>
+      <title>次世代の開発者インターフェースはアンビエントインテリジェンス</title>
+      <link>https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</guid>
+      <description>[Score: 90] AIの進化により、開発者のインターフェースがコマンド入力から意図の実行へと変化しています。 / GitHub CopilotのようなAIエージェントは、リポジトリのコンテキストを理解し、作業を計画し、ツールを使用し、ファイルを編集し、テストを実行し、失敗を検査できます。 / これにより、開発者はツールの操作に費やす時間を減らし、方向性の設定、コンテキストの提供、制約の定義、証拠のレビューに集中できるようになります。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 15 Oct 2026 19:39:27 +0000</pubDate>
     </item>
     <item>
-      <title>世界をハックする：ハッカソンが今も最高の開発学習の場である理由</title>
-      <link>https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/</link>
-      <guid isPermaLink="false">https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/</guid>
-      <description>[Score: 85] ハッカソンは、参加者が短期間でアイデアを形にする「発明マラソン」であり、プロトタイプ作成や問題解決のスキルを実践的に学べる場です。 / GitHub CopilotのようなAIツールを活用することで、自然言語がプログラミング言語となり、経験が浅い人でも迅速に開発を進められるようになっています。 / これにより、ハッカソンは技術的なスキルアップだけでなく、チームワークや創造性を育む貴重な機会を提供し続けています。 (Source: GitHub Blog)</description>
-      <pubDate>Fri, 09 Oct 2026 16:00:00 +0000</pubDate>
+      <title>GitHubのシークレット検出モデル：ノイズを減らしてより多くのシークレットを発見</title>
+      <link>https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/</guid>
+      <description>[Score: 90] GitHubは、開発者が自信を持ってシークレット検出結果を信頼できるよう、新しいシークレット検出モデルを開発しました。 / このモデルは、一般的なシークレットとプレースホルダーを区別するために、コードとテキストのコンテキストを理解するよう訓練されています。 / 以前のLLMベースのパイプラインと比較して、ポストプッシュスキャン実行時間を86%削減し、プッシュ保護にも適用可能になりました。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 13 Oct 2026 17:56:33 +0000</pubDate>
     </item>
     <item>
-      <title>Next.jsの公開ページで、1回遊ぶ間に読むchunkを48本から16本にした</title>
-      <link>https://zenn.dev/onthebakery/articles/5a27024f61405f</link>
-      <guid isPermaLink="false">https://zenn.dev/onthebakery/articles/5a27024f61405f</guid>
-      <description>[Score: 80] Next.jsで構築された公開ページにおいて、CloudFrontのリクエスト数削減のため、webpackのsplitChunks設定を調整し、読み込むファイルの数を48本から16本に削減しました。 / HTTP/2では本数よりも転送量が重視されることが多いが、CloudFrontの定額プランがリクエスト本数で課金されるため、本数削減を優先したと説明されています。 / Next.jsのデフォルトのチャンク分割挙動を理解し、共有コードのまとめ方を工夫することで、リクエスト数を最適化する具体的な手法が紹介されています。 (Source: Zenn)</description>
-      <pubDate>Wed, 14 Oct 2026 08:48:54 +0000</pubDate>
+      <title>当社サイトへの不正アクセスによるお客様情報流出のお詫びとお知らせ｜ソースネクスト</title>
+      <link>https://www.sourcenext.com/support/i/2026/1015_info/</link>
+      <guid isPermaLink="false">https://www.sourcenext.com/support/i/2026/1015_info/</guid>
+      <description>[Score: 88] ソースネクストは、同社が管理する会員情報システムへの不正アクセスにより、顧客の個人情報が流出したことを発表し謝罪しました。 / 2026年10月9日から不正アクセスがあり、会員情報取得APIが悪用され情報が取得されたとのことです。 / クレジットカード情報は流出対象外ですが、二次被害防止のためパスワードの再設定や不審な連絡への注意を呼びかけています。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 15 Oct 2026 08:49:13 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Code の守りのフックは、台本が壊れると黙って通す。2.1.295 の onFailure で止まった</title>
-      <link>https://qiita.com/suwa_nobu/items/afde8d73a48eb7badb71?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/suwa_nobu/items/afde8d73a48eb7badb71?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Claude Codeのフック機能において、以前のバージョンではスクリプトが壊れても処理が素通りしてしまう脆弱性があったことを指摘しています。 / バージョン2.1.295で追加された`onFailure: &quot;block&quot;`オプションにより、フックが起動できない、タイムアウトする、または予期せぬ終了コードを返した場合にアクションをブロックできるようになり、セキュリティが向上しました。 / 具体的な検証を通じて、この新機能がセキュリティ対策としていかに重要であるかを実証しており、AIツールの安全な運用における注意点を提示しています。 (Source: Qiita)</description>
-      <pubDate>Wed, 14 Oct 2026 00:48:15 +0000</pubDate>
+      <title>Windows上でAIエージェントの実行を安全に隔離する「Microsoft Execution Containers」（MXC）正式リリース。ファイルやネットワークなどの境界を柔軟にカスタマイズ</title>
+      <link>https://www.publickey1.jp/blog/26/windowsaimicrosoft_execution_containersmxc.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/windowsaimicrosoft_execution_containersmxc.html</guid>
+      <description>[Score: 88] マイクロソフトは、Windows 11上でAIエージェントを安全に実行するための隔離環境「Microsoft Execution Containers」（MXC）を正式リリースしました。 / MXCは、AIエージェントがアクセスできるファイルやネットワークの範囲をポリシーで定義し、実行時に強制することで、誤操作や不正な通信を防ぎます。 / これにより、自律的なAIエージェントの安全な運用を可能にし、WindowsをAIエージェントにとって最もセキュアなプラットフォームとすることを目指します。 (Source: Publickey)</description>
+      <pubDate>Wed, 14 Oct 2026 15:57:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>2,500リクエストから24へ：スターゲイザーなしでスター履歴を再構築</title>
+      <link>https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/</guid>
+      <description>[Score: 88] GitHubは、リポジトリのスター履歴取得方法を改善し、スターゲイザー（スターを付けたユーザー）の情報を公開せずにスター数のみを返す新しいエンドポイントを導入しました。 / これにより、悪意のあるアクターによるスターゲイザーリストのスクレイピングを防ぎ、データベースの負荷を大幅に軽減しました。 / 新しいエンドポイントは、最大30週間分のデイリースター数を1つのリクエストで取得でき、データベースが処理するデータ量も削減されています。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 14 Oct 2026 19:11:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>ニューラルネットワークはクリーンである</title>
+      <link>https://already-clean.goodfire.com/</link>
+      <guid isPermaLink="false">https://already-clean.goodfire.com/</guid>
+      <description>[Score: 85] ニューラルネットワークの「多義性」や「重ね合わせ」の原因は、以前考えられていたよりも単純で修正可能な問題であることが示唆されています。 / これにより、メカニズム解釈可能性の展望が大幅に改善され、ネットワークを直接研究できる可能性が高まりました。 / モデルの内部動作を理解するための新たな視点を提供し、AIの信頼性と透明性向上に貢献します。 (Source: Hacker News)</description>
+      <pubDate>Thu, 15 Oct 2026 16:04:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>Krea 3 – 大規模編集向けに構築された画像モデル</title>
+      <link>https://www.krea.ai/krea-3</link>
+      <guid isPermaLink="false">https://www.krea.ai/krea-3</guid>
+      <description>[Score: 85] Krea 3は、プロダクション向けに構築された画像編集モデルです。 / 指定した部分のみを編集し、8秒未満で完了、1画像あたり約0.06ドルの低コストで利用できます。 / 地域編集、色合わせ、複数要素の合成、キャラクターの一貫性維持など、高度な編集機能を備え、2Kネイティブレンダリングに対応しています。 (Source: Hacker News)</description>
+      <pubDate>Thu, 15 Oct 2026 16:04:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>Jevにウォーリーを探させたら0.4秒で見つけやがった!!</title>
+      <link>https://qiita.com/kikuziro/items/c1b47d4bfaa64960ca18?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kikuziro/items/c1b47d4bfaa64960ca18?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AIモデル「Jev」の新しい画像入力機能と位置特定機能を使って、「ウォーリーを探せ」風の画像からウォーリー役のキャラクターを探索する検証を行いました。 / Jevは0.4秒という驚異的な速さでキャラクターを特定し、その高い画像認識精度と位置特定能力を示しました。 / AIによる画像認識技術の進化と、その応用可能性を具体的に示しています。 (Source: Qiita)</description>
+      <pubDate>Thu, 15 Oct 2026 09:13:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>ドラゴンボール悟空の声優が、自身の声を使った「許しがたい」AI動画に激怒：「心がない」</title>
+      <link>https://www.reddit.com/r/technology/comments/1x6sppa/dragon_ball_goku_voice_actor_furious_at/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x6sppa/dragon_ball_goku_voice_actor_furious_at/</guid>
+      <description>[Score: 85] ドラゴンボールの孫悟空の声優である野沢雅子氏が、自身の声を無断で使用したAI生成動画に対し怒りを表明しました。 / AIによる声の利用は「心がない」と批判し、倫理的な問題提起がされています。 / これはAI技術の進化に伴う著作権や肖像権、そしてクリエイターの権利保護に関する議論を加速させる出来事です。 (Source: Reddit)</description>
+      <pubDate>Thu, 15 Oct 2026 17:58:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>ソースネクスト、最大2251万件の情報流出　パスワード再設定を</title>
+      <link>https://www.watch.impress.co.jp/docs/news/2148547.html</link>
+      <guid isPermaLink="false">https://www.watch.impress.co.jp/docs/news/2148547.html</guid>
+      <description>[Score: 85] ソースネクストは、第三者による不正アクセスにより最大2251万件の会員情報が流出した可能性があると発表しました。 / 攻撃者は会員情報取得APIを不正利用し、メールアドレス、パスワード、氏名などの情報が流出対象となりました。 / 同社は全登録者に対しパスワードの再設定を求めるとともに、フィッシング詐欺への注意を呼びかけています。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 15 Oct 2026 10:52:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIブランド言及と引用がプラットフォーム間で乖離、Semrushが発見</title>
+      <link>https://dev.to/alifar/ai-brand-mentions-and-citations-diverge-across-platforms-semrush-finds-486f</link>
+      <guid isPermaLink="false">https://dev.to/alifar/ai-brand-mentions-and-citations-diverge-across-platforms-semrush-finds-486f</guid>
+      <description>[Score: 85] Semrushの調査により、AI生成回答におけるブランド言及とドメイン引用がプラットフォーム間で大きく異なることが判明しました。 / ChatGPT、Gemini、Google AI Mode、Google AI Overviewsを対象に、ブランドが言及されることと情報源として引用されることの違いを分析しています。 / マーケターにとって、AI検索におけるブランドの可視性と情報源の帰属がプラットフォームや国によって異なるという重要な示唆を与えます。 (Source: Dev.to)</description>
+      <pubDate>Thu, 15 Oct 2026 22:15:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>常に最新の状態を保つ：共有組織におけるセキュアなアクセスとリポジトリの衛生管理を自動化する方法</title>
+      <link>https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</guid>
+      <description>[Score: 85] GitHubは、外部コラボレーターとの共同作業におけるリポジトリのアクセス管理と衛生管理の課題を解決するため、「Evergreen」というGitHub Appを開発しました。 / Evergreenは、GitHubのネイティブ機能を利用して、アクセスレビューの自動化やリポジトリのアーカイブを安全かつ自動的に行います。 / 「Fail secure（安全側に倒す）」と「Never destroy anything（何も破壊しない）」という2つの設計原則に基づいています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 15 Oct 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>拡散モデルのための修正トレーニング</title>
+      <link>https://arxiv.org/abs/2610.14136</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.14136</guid>
+      <description>[Score: 85] 本記事は、拡散モデルの性能を向上させるための新しいトレーニング手法「修正トレーニング」について説明しています。 / 拡散モデルは画像生成などで注目されており、その品質と効率をさらに高めることを目指しています。 / arXivLabsのプラットフォームで公開され、研究コミュニティへの貢献を意図しています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 15 Oct 2026 04:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
