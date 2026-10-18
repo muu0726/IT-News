@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 17 Oct 2026 21:31:10 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 21:34:00 +0000</lastBuildDate>
     <item>
       <title>Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性</title>
       <link>https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html</guid>
-      <description>[Score: 95] Linuxカーネルに深刻な脆弱性「PwnEscape」（CVE-2026-99999）が発見されました。 / この脆弱性により、悪意のある攻撃者がゲストの仮想マシンからホスト側のLinux OSに不正なコードを実行できる可能性があります。 / CVSSスコアは9.3と非常に高く、仮想化環境を利用する多くのシステムに影響を与えるため、早急な対応が求められます。 (Source: Publickey)</description>
+      <description>[Score: 95] Linuxカーネルに深刻な脆弱性「PwnEscape」（CVE-2026-99999）が発見され、悪意のある攻撃者がゲスト仮想マシンからホスト側のLinux OSに不正なコードを実行できる可能性があります。 / この脆弱性は、カーネルが検証済みのIPv4ヘッダーに対するチェックサム関連データを攻撃者によって書き換え可能な状態になっていたことに起因します。 / 深刻度は9.3（Critical）と非常に高く、仮想化環境を利用する多くのシステムに影響を与えるため、早急な対応が求められます。 (Source: Publickey)</description>
       <pubDate>Sat, 17 Oct 2026 15:27:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>ハイブリッド推論エージェント：トークンを35-55%削減し、推論速度を最大2.6倍高速化</title>
+      <link>https://arxiv.org/abs/2610.18861</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18861</guid>
+      <description>[Score: 90] arXivLabsは、arXivウェブサイト上で新しい機能の開発と共有を可能にするフレームワークです。 / このプラットフォームは、オープン性、コミュニティ、卓越性、ユーザーデータプライバシーといった価値観を重視しています。 / 本記事のタイトルは、ハイブリッド推論エージェントがトークン使用量を大幅に削減し、推論速度を向上させる可能性を示唆しています。 (Source: Hacker News)</description>
+      <pubDate>Sun, 18 Oct 2026 20:48:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>日本語の個人情報を Bedrock Guardrails, SDP, Presidio でマスキングして比較する</title>
+      <link>https://zenn.dev/fusic/articles/a77ba348115364</link>
+      <guid isPermaLink="false">https://zenn.dev/fusic/articles/a77ba348115364</guid>
+      <description>[Score: 90] 日本語の個人情報マスキングについて、Bedrock Guardrails、SDP、Presidioの3つのサービス・ツールを比較検証しています。 / 全角数字や和暦、話し言葉など日本語特有の表現を含む合成データを用いて、適合率やマスキングの精度を評価しました。 / 前処理の有無や正規表現の追加によって検出率が大きく変動すること、また検出範囲の一部が残るケースがあるなど、日本語マスキングの難しさが示されています。 (Source: Zenn)</description>
+      <pubDate>Sat, 17 Oct 2026 23:00:05 +0000</pubDate>
     </item>
     <item>
       <title>CVE-2026-99999（PwnEscape）を読み解く──「KVMの脆弱性」ではなく、Linuxネットワークスタックの脆弱性</title>
       <link>https://qiita.com/k2_naka/items/fa87685231377f15e7e3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/k2_naka/items/fa87685231377f15e7e3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] CVE-2026-99999（PwnEscape）がKVMではなくLinuxネットワークスタックの脆弱性であることを詳細に分析しています。 / 公開資料の照合に基づき、脆弱性の技術的な仕組み、修正状況、各評価主体によるCVSSスコアの違いを解説。 / 本稿は筆者個人の分析であり、所属組織や各事業者の公式見解ではない点、および基準日が2026年10月17日である点に留意が必要です。 (Source: Qiita)</description>
+      <description>[Score: 90] CVE-2026-99999（PwnEscape）に関する詳細な分析記事で、この脆弱性がKVMではなくLinuxネットワークスタックに起因することを解説しています。 / 公開資料の照合に基づき、CVSSスコアの評価の違いや、修正版の適用状況、技術的な仕組みについて深く掘り下げています。 / セキュリティ専門家やシステム管理者向けに、脆弱性の本質と対応策を理解するための重要な情報を提供しています。 (Source: Qiita)</description>
       <pubDate>Fri, 16 Oct 2026 12:48:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>ソースネクスト 暗号化されていないパスワードが流出した理由とは（山口健太）</title>
-      <link>https://news.yahoo.co.jp/expert/articles/b3e710c60d79d276a00321906fa87ac9243f5530</link>
-      <guid isPermaLink="false">https://news.yahoo.co.jp/expert/articles/b3e710c60d79d276a00321906fa87ac9243f5530</guid>
-      <description>[Score: 90] ソースネクストの不正アクセスによる情報流出で、暗号化されていないパスワードが含まれていたことが問題視されています。 / 同社はパスワードを「暗号化」していたと説明するも、暗号鍵へのアクセスにより復号可能な状態で漏洩しました。 / パスワードのハッシュ化ではなく暗号化を採用していたこと、APIの戻り値にパスワードを含めていたことが原因とみられています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 17 Oct 2026 08:05:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>コード系でOpus 5超え「DeepSeek-V4.1-Flash-1017」無償公開</title>
-      <link>https://pc.watch.impress.co.jp/docs/news/2149045.html</link>
-      <guid isPermaLink="false">https://pc.watch.impress.co.jp/docs/news/2149045.html</guid>
-      <description>[Score: 90] DeepSeekが、コード修正ベンチマークでAnthropicのClaude Opus 5を上回るAIモデル「DeepSeek-V4.1-Flash-1017」を無償公開しました。 / 総パラメータ数552BのMoE型モデルで、条件付きメモリ「Engram」と投機デコード用モジュール「DSpark」を搭載し、推論・コーディング・エージェント・画像理解の性能を向上させています。 / 商用利用可能なオープンウェイトとして提供され、Webサイト、アプリ、APIでも利用可能となり、Search APIとFetch APIも全ユーザーに開放されました。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 17 Oct 2026 14:39:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>次世代の開発者インターフェースはアンビエントインテリジェンス</title>
-      <link>https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</guid>
-      <description>[Score: 90] 開発者インターフェースがコマンドベースからアンビエントインテリジェンスへと進化していることを論じています。 / GitHub Copilotがリポジトリのコンテキストを理解し、作業を計画し、ファイルを編集し、テストを実行する能力に焦点を当てています。 / 開発者が意図を伝えるだけでシステムが実行する、より高度なAI支援開発の未来を描いています。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 15 Oct 2026 19:39:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubのシークレット検出モデル：ノイズを減らしてより多くのシークレットを発見</title>
-      <link>https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/</guid>
-      <description>[Score: 90] GitHubは、開発者が自信を持ってシークレット検出結果を信頼できるよう、新しいシークレット分類器を開発しました。 / このモデルは、実際の認証情報と見せかけの文字列を区別し、大規模なスキャンにおける速度と効率の要件を満たします。 / 以前のLLMベースのパイプラインと比較して、プッシュ後のスキャン実行時間を86%削減し、プッシュ保護にも拡張されました。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 13 Oct 2026 17:56:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>Commodore 64 ハードウェアシミュレーター：チップやピンを壊して結果を見る</title>
-      <link>https://github.com/antirez/c64-hw-simulator</link>
-      <guid isPermaLink="false">https://github.com/antirez/c64-hw-simulator</guid>
-      <description>[Score: 88] Commodore 64のハードウェアをピンレベルでシミュレートするツール「c64-hw-sim」が開発されました。 / このシミュレーターでは、チップのピンを曲げたり、ショートさせたり、部品を取り外したりして、その結果をリアルタイムで確認できます。 / 実際の故障したC64の挙動を再現し、ハードウェアの仕組みを深く理解するための教育・研究ツールとして非常に有用です。 (Source: Hacker News)</description>
-      <pubDate>Thu, 15 Oct 2026 07:18:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>AnthropicのBun、TypeScript 7よりも3倍以上高速なTypeScript型チェッカーを搭載。Bunの新バージョン1.4.3で</title>
-      <link>https://www.publickey1.jp/blog/26/anthropicbuntypescript_73typescriptbun143.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/anthropicbuntypescript_73typescriptbun143.html</guid>
-      <description>[Score: 88] Anthropicが開発するJavaScriptランタイム「Bun」のバージョン1.4.3がリリースされ、TypeScript 7よりも3倍以上高速なTypeScript型チェッカーを搭載しました。 / Bunの型チェッカーはGo言語で実装されており、TypeScript 7.0.2の適合性テストを100%パスし、主要なオープンソースのTypeScriptファイルでも高い互換性を示しています。 / これにより、TypeScriptプロジェクトのビルドや開発体験が大幅に改善されることが期待されます。 (Source: Publickey)</description>
-      <pubDate>Thu, 15 Oct 2026 15:21:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>白化したサンゴが健康な隣接サンゴに触れると数日で回復</title>
-      <link>https://www.nature.com/articles/d41586-026-03266-x</link>
-      <guid isPermaLink="false">https://www.nature.com/articles/d41586-026-03266-x</guid>
-      <description>[Score: 85] 科学者たちは、白化したサンゴを健康なサンゴ片と接触させることで、数日以内に回復させることに成功しました。 / これは、海水温上昇による広範囲なサンゴの減少を逆転させる可能性を示唆する画期的な発見です。 / 光合成を行う共生藻類がサンゴに栄養を供給しており、この研究はサンゴ礁の保全に新たな希望を与えます。 (Source: Hacker News)</description>
-      <pubDate>Fri, 16 Oct 2026 23:38:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>DeepSeek-v4.1-Flash-1017</title>
-      <link>https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017</link>
-      <guid isPermaLink="false">https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017</guid>
-      <description>[Score: 85] DeepSeek-V4.1-FlashのマイナーアップデートであるDeepSeek-V4.1-Flash-1017がリリースされました。 / 推論、コーディング、エージェントタスク、視覚ベンチマークにおいて大幅な改善を達成し、タスク実行時間と出力長を削減します。 / これにより、ユーザーはタスクをより速く、低コストで完了できるようになり、性能とコストのパレート最適フロンティアを前進させます。 (Source: Hacker News)</description>
-      <pubDate>Sat, 17 Oct 2026 08:21:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>【AWS】AWS Lambda Web Functionsから考えるAWS Lambdaとは何なのか</title>
-      <link>https://qiita.com/ymd65536/items/3bc00ba77b87808bda9b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ymd65536/items/3bc00ba77b87808bda9b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AWS Lambda Web Functionsの発表を機に、AWS Lambdaの役割と進化について深く考察しています。 / Lambdaがイベント駆動のFaaSから、HTTPサーバーを直接実行できるWeb Functionsへと拡張された背景を解説。 / S3 Scriptsとしての初期構想から、Glue Lambdaとしての利用、そして現在の多様な実行モデルに至るまでの変遷をまとめています。 (Source: Qiita)</description>
-      <pubDate>Thu, 15 Oct 2026 01:52:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>ヤンデックスのデータセンターへの攻撃後、ロシアのボット活動が84%減少</title>
-      <link>https://www.reddit.com/r/technology/comments/1x8kmu7/russian_bot_activity_collapses_by_84_after/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x8kmu7/russian_bot_activity_collapses_by_84_after/</guid>
-      <description>[Score: 85] ロシアの検索大手ヤンデックスのデータセンターが攻撃を受けた結果、ロシアのボット活動が大幅に減少しました。 / 具体的には、ボット活動が84%も減少したと報じられています。 / この事態は、サイバー攻撃が国家レベルのプロパガンダ活動に与える影響の大きさを示唆しています。 (Source: Reddit)</description>
-      <pubDate>Sat, 17 Oct 2026 20:40:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>亡くなった声優の声、AIでの再現は原則禁止 日俳連が新指針</title>
-      <link>https://japan.cnet.com/article/35253656/</link>
-      <guid isPermaLink="false">https://japan.cnet.com/article/35253656/</guid>
-      <description>[Score: 85] 日本俳優連合（日俳連）が、生成AIによる声優の声の利用に関する新ガイドラインを発表しました。 / 故人の声のAI再現は原則禁止とし、生前の同意や制作中の作品の続編など、ごく限られた例外を除きます。 / AI利用には本人の書面同意と別途対価の支払いを義務付け、無断学習や多言語化でのニュアンス改変も認めません。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 17 Oct 2026 00:21:27 +0000</pubDate>
     </item>
     <item>
       <title>Windows上でAIエージェントの実行を安全に隔離する「Microsoft Execution Containers」（MXC）正式リリース。ファイルやネットワークなどの境界を柔軟にカスタマイズ</title>
       <link>https://www.publickey1.jp/blog/26/windowsaimicrosoft_execution_containersmxc.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/windowsaimicrosoft_execution_containersmxc.html</guid>
-      <description>[Score: 85] MicrosoftはWindows 11上でAIエージェントを安全に実行するための隔離環境「Microsoft Execution Containers」（MXC）を正式リリースしました。 / MXCは、AIエージェントのファイルやネットワークへのアクセス範囲を制限し、誤操作や不正な通信を防ぐことでセキュリティを確保します。 / これにより、自律的なAIエージェントの安全な運用が可能となり、メール返信やスケジュール調整などの自動処理を安心して任せられるようになります。 (Source: Publickey)</description>
+      <description>[Score: 90] MicrosoftはWindows 11上でAIエージェントを安全に実行するための隔離環境「Microsoft Execution Containers」（MXC）を正式リリースしました。 / MXCはAIエージェントがアクセスできるファイルやネットワークの範囲を制限し、ポリシーをランタイムで強制することで、誤操作や不正な通信を防ぎます。 / これにより、AIエージェントの自律的な処理を安全に運用し、WindowsをAIエージェントにとって最もセキュアなプラットフォームにすることを目指します。 (Source: Publickey)</description>
       <pubDate>Wed, 14 Oct 2026 15:57:19 +0000</pubDate>
     </item>
     <item>
-      <title>2026年に中小企業の時間を実際に節約する7つのAIツール</title>
-      <link>https://dev.to/toolpilotpro/7-ai-tools-that-actually-save-a-small-business-time-in-2026-4og3</link>
-      <guid isPermaLink="false">https://dev.to/toolpilotpro/7-ai-tools-that-actually-save-a-small-business-time-in-2026-4og3</guid>
-      <description>[Score: 85] 中小企業が時間とリソースを節約できる7つのAIツールを紹介しています。 / ChatGPTやClaudeなど、マーケティング、サポート、デザイン、経理といった多様な業務を効率化するツールを厳選。 / 非技術者でも使いやすく、費用対効果が高く、人間のレビューを前提とした実用的なAI活用法を提案しています。 (Source: Dev.to)</description>
-      <pubDate>Sat, 17 Oct 2026 21:15:23 +0000</pubDate>
+      <title>次の開発者インターフェースはアンビエントインテリジェンスである</title>
+      <link>https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</guid>
+      <description>[Score: 90] AIの進化により、開発者とマシンの関係がコマンド入力から意図の実行へと変化していることを論じています。 / GitHub CopilotのようなAIエージェントが、リポジトリの理解、作業計画、ツール利用、ファイル編集、テスト実行、失敗検査までを自律的に行い、開発者は結果のレビューと方向付けに注力するようになります。 / これは単なる高速コーディングではなく、開発ワークフロー全体を圧縮し、より高レベルな思考に集中できる「アンビエントインテリジェンス」への移行を示唆しています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 15 Oct 2026 19:39:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>画像アップロードAPIのセキュリティ対策を、実装レベルで振り返る</title>
+      <link>https://qiita.com/vaon-luandv/items/a4719b247a0ec489e4c3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/vaon-luandv/items/a4719b247a0ec489e4c3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] 画像アップロードAPIにおけるセキュリティ対策を、実装レベルで詳細に解説しています。 / リクエストの体積、画像形式、画素数、フレーム数、デコード、再エンコード、保存といった各段階でのチェックリストと具体的なコード例（FastAPIとPillowを使用）を提供しています。 / 想定される攻撃とそれに対する防御策、適切なHTTPステータスコードの割り当て方についても言及しており、安全なAPI設計に役立つ情報が満載です。 (Source: Qiita)</description>
+      <pubDate>Sat, 17 Oct 2026 03:50:32 +0000</pubDate>
     </item>
     <item>
       <title>2,500リクエストから24へ：スターゲイザーなしでスター履歴を再構築</title>
       <link>https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/</link>
       <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/</guid>
-      <description>[Score: 85] GitHubがリポジトリのスター履歴取得方法を大幅に改善した経緯を説明しています。 / 以前はスターゲイザーのリストを大量にリクエストする必要があり、プライバシー問題やデータベース負荷の原因となっていました。 / 新しいエンドポイントでは、個人情報を含まずに最大30週間の日次スター数を単一リクエストで取得できるようになり、効率とセキュリティが向上しました。 (Source: GitHub Blog)</description>
+      <description>[Score: 88] GitHubは、リポジトリのスター履歴取得におけるパフォーマンスとプライバシーの問題を解決するため、APIを再設計しました。 / 以前はスターゲイザー（スターを付けたユーザー）のリストをページングで取得していたため、大量のリクエストとプライバシーリスクがありました。 / 新しいエンドポイントでは、ユーザーIDを含まず、最大30週間分のデイリースター数を単一リクエストで取得できるようになり、リクエスト数を大幅に削減し、データベース負荷とプライバシー問題を改善しました。 (Source: GitHub Blog)</description>
       <pubDate>Wed, 14 Oct 2026 19:11:33 +0000</pubDate>
     </item>
     <item>
-      <title>ダム撤去によりアメリカ北東部で魚が戻る</title>
-      <link>https://www.smithsonianmag.com/science-nature/dam-removals-are-bringing-fish-back-across-the-northeastern-united-states-striking-down-one-tiny-barrier-at-a-time-180989679/</link>
-      <guid isPermaLink="false">https://www.smithsonianmag.com/science-nature/dam-removals-are-bringing-fish-back-across-the-northeastern-united-states-striking-down-one-tiny-barrier-at-a-time-180989679/</guid>
-      <description>[Score: 80] アメリカ北東部で老朽化したダムの撤去が進められており、これにより河川の自然な流れが回復しています。 / ダム撤去の結果、ニシンなどの魚が大量に戻り、生態系の回復に貢献していることが報告されています。 / これは、環境保全と生態系回復におけるダム撤去の有効性を示す事例であり、今後の環境政策にも影響を与える可能性があります。 (Source: Hacker News)</description>
-      <pubDate>Fri, 16 Oct 2026 23:47:31 +0000</pubDate>
+      <title>RepRapMicron</title>
+      <link>https://github.com/VikOlliver/RepRapMicron/wiki</link>
+      <guid isPermaLink="false">https://github.com/VikOlliver/RepRapMicron/wiki</guid>
+      <description>[Score: 85] μRepRapプロジェクトは、RepRapが3Dプリントを普及させたように、マイクロスケールでのオープンな3D製造を目指しています。 / PIKA V0.02ハードウェアは、約8mm立方体内で約1μmの再現可能な位置決めと10μm以上の精度を実現しています。 / 4μmのUV樹脂液滴の堆積や9μmの樹脂ラインの硬化が可能で、マイクロエレクトロニクスやMEMSの進化に貢献する可能性があります。 (Source: Hacker News)</description>
+      <pubDate>Sun, 18 Oct 2026 13:48:48 +0000</pubDate>
     </item>
     <item>
-      <title>3Dデータの処理基盤をTemporalに全面移行した話</title>
-      <link>https://zenn.dev/bestat/articles/7106fdf2f399e1</link>
-      <guid isPermaLink="false">https://zenn.dev/bestat/articles/7106fdf2f399e1</guid>
-      <description>[Score: 80] 産業向け3Dモデル生成・活用プラットフォーム「3D.Core」が、3Dデータ処理基盤をPub/SubベースからTemporalへ全面移行しました。 / TemporalのDurable Executionにより、処理の永続化、リトライ、タイムアウト管理が容易になり、開発効率と信頼性が向上します。 / ロックインを避け、ポータビリティと柔軟性を高めるため、Temporalが最適な選択肢と判断されました。 (Source: Zenn)</description>
-      <pubDate>Fri, 16 Oct 2026 22:10:51 +0000</pubDate>
+      <title>ClaudeにiOSシミュレーターのスクリーンショットを読ませるのをやめて、操作で増えるコンテキストを43%削減した</title>
+      <link>https://zenn.dev/eai/articles/dont-let-agents-see-the-ios-sim-screen</link>
+      <guid isPermaLink="false">https://zenn.dev/eai/articles/dont-let-agents-see-the-ios-sim-screen</guid>
+      <description>[Score: 85] iOSシミュレーターを操作するAIエージェントにおいて、スクリーンショットによるコンテキスト消費が課題となっていました。 / 画面の要素を画像ではなく文字で取得する仕組みを導入することで、コンテキスト量を43%削減することに成功しました。 / ただし、コンテキスト削減と引き換えに、作業時間は34%増加するというトレードオフも発生しました。 (Source: Zenn)</description>
+      <pubDate>Sun, 18 Oct 2026 02:56:18 +0000</pubDate>
     </item>
     <item>
-      <title>伸びる動画の特徴をAIに言語化させたら、リール作りが回り始めた話</title>
-      <link>https://qiita.com/Eitaro_dotlog/items/c1e2f6d696ea88854186?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Eitaro_dotlog/items/c1e2f6d696ea88854186?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Instagramリール動画の制作において、AIを活用して「伸びる動画」の特徴を言語化し、PDCAサイクルを回す方法を紹介しています。 / 生成AIで動画コンテンツを制作し、その結果をAIに分析させて改善点を特定、次の動画制作に活かすプロセスを構築。 / 冒頭3秒の動きの数値化や、AIによる採点基準の作成など、具体的な改善策とAIの活用事例が示されています。 (Source: Qiita)</description>
-      <pubDate>Fri, 16 Oct 2026 05:47:27 +0000</pubDate>
+      <title>【2026年版】今日から使える AI との会話術 — Claude・Gemini・Codex に指示を守らせる 6 つの原則</title>
+      <link>https://qiita.com/songchong/items/351a939e2e1b673c2929?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/351a939e2e1b673c2929?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] Claude、Gemini、CodexといったAIエージェントに指示を効果的に守らせるための6つの原則を解説しています。 / 指示の書き方だけでなく、指示ファイルの活用、資料と指示の配置、指示の数、会話の長さがAIの応答に与える影響を実験結果に基づいて説明しています。 / プロンプトキャッシュの活用によるコスト削減術も紹介されており、AIをより効率的かつ正確に利用するための実践的なガイドとなっています。 (Source: Qiita)</description>
+      <pubDate>Sun, 18 Oct 2026 15:40:28 +0000</pubDate>
     </item>
     <item>
-      <title>ウェブサイトがAIエージェントへのアクセスを遮断し始めている</title>
-      <link>https://www.reddit.com/r/technology/comments/1x8g010/websites_are_closing_their_doors_to_ai_agents/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x8g010/websites_are_closing_their_doors_to_ai_agents/</guid>
-      <description>[Score: 80] 多くのウェブサイトが、AIエージェントによるコンテンツのスクレイピングやアクセスを積極的に遮断する動きを見せています。 / これは、AIによるデータ収集が著作権やサーバー負荷、コンテンツ利用の公平性といった問題を引き起こしているためです。 / ウェブサイト運営者とAI開発者の間で、コンテンツ利用に関する新たな摩擦が生じています。 (Source: Reddit)</description>
-      <pubDate>Sat, 17 Oct 2026 17:28:06 +0000</pubDate>
+      <title>ロシアのVKontakteデータセンターがドローン攻撃を受け、サービスが停止、サンクトペテルブルクは停電に直面</title>
+      <link>https://www.reddit.com/r/technology/comments/1x97vrq/drone_strike_hits_russias_vkontakte_data_center/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1x97vrq/drone_strike_hits_russias_vkontakte_data_center/</guid>
+      <description>[Score: 85] ロシアの主要SNS「VKontakte」のデータセンターがドローン攻撃を受け、サービスが一時的に停止しました。 / この攻撃はサンクトペテルブルクの停電と同時期に発生し、インフラへの影響が懸念されます。 / サイバーセキュリティと物理的セキュリティの重要性を改めて浮き彫りにする事件です。 (Source: Reddit)</description>
+      <pubDate>Sun, 18 Oct 2026 16:44:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>AnthropicのBun、TypeScript 7よりも3倍以上高速なTypeScript型チェッカーを搭載。Bunの新バージョン1.4.3で</title>
+      <link>https://www.publickey1.jp/blog/26/anthropicbuntypescript_73typescriptbun143.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/anthropicbuntypescript_73typescriptbun143.html</guid>
+      <description>[Score: 85] JavaScriptランタイム「Bun」の最新バージョン1.4.3がリリースされました。 / このバージョンでは、Go言語で実装されたTypeScript 7よりも3倍以上高速なTypeScript型チェッカーが搭載されています。 / BunはTypeScriptファイルの読み込み、トランスパイル、実行に加え、型チェック機能も提供し、TypeScript 7.0.2との互換性テストを100%パスしています。 (Source: Publickey)</description>
+      <pubDate>Thu, 15 Oct 2026 15:21:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>常に最新の状態を保つ：共有組織におけるセキュアなアクセスとリポジトリの衛生管理を自動化した方法</title>
+      <link>https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</guid>
+      <description>[Score: 85] GitHubは、外部コラボレーターとの共同作業におけるリポジトリのアクセス管理と衛生管理の課題を解決するため、GitHub App「Evergreen」を開発しました。 / Evergreenは、アクセスレビューの自動化、権限変更、リポジトリのアーカイブなどをGitHubのネイティブ機能とGo言語のWebhookサーバーで実現しています。 / 「Fail secure（安全側に倒す）」と「Never destroy anything（何も破壊しない）」という2つの設計原則に基づき、セキュリティと運用効率を両立させています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 15 Oct 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHubのシークレット検出モデル：ノイズを減らしてより多くのシークレットを発見</title>
+      <link>https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/</guid>
+      <description>[Score: 85] GitHubは、開発者が安心して利用できるシークレット検出のために、新しいコンテキストアウェアな分類器を開発しました。 / このモデルは、実際の認証情報と見せかけの文字列を区別し、大規模なスキャンにおける速度と効率性を向上させています。 / 以前のLLMベースのパイプラインと比較して、プッシュ後のスキャン実行時間を86%削減し、プッシュ保護にも適用可能になりました。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 13 Oct 2026 17:56:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Codeの.envを読ませない設定がどこまで効くのか試してみた</title>
+      <link>https://qiita.com/yakumo_09/items/5a86ca330b449db0e6bc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yakumo_09/items/5a86ca330b449db0e6bc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 82] Claude Codeの`permissions.deny`設定で`.env`ファイルを読ませない機能が、実際にどこまで有効なのかを検証した記事です。 / 公式ドキュメントで「止まらないケースもある」とされている点に着目し、偽のキーを含む`.env`ファイルを使って48回の実験を行っています。 / サンドボックスの有効化がセキュリティに与える影響についても触れており、AIエージェント利用時の機密情報保護に関する重要な考察を提供しています。 (Source: Qiita)</description>
+      <pubDate>Sun, 18 Oct 2026 12:49:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>ソフトウェアの背後にいる誰か</title>
+      <link>https://karrisaarinen.com/posts/someone-behind-the-software/</link>
+      <guid isPermaLink="false">https://karrisaarinen.com/posts/someone-behind-the-software/</guid>
+      <description>[Score: 80] 良い製品には、それを作る人々の経験、関心、考え方が反映されています。 / 業界ではソフトウェアを工場製品のように語りがちですが、実際には作り手の視点やスタイルが大きな違いを生みます。 / Linearではプロセスやデータよりも直感を重視しており、それは経験と理解を通じて培われる判断力を意味します。 (Source: Hacker News)</description>
+      <pubDate>Sun, 18 Oct 2026 16:32:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>DeepSeek検索とフェッチ – 1000件の成功リクエストあたり$0.75</title>
+      <link>https://api-docs.deepseek.com/guides/search/</link>
+      <guid isPermaLink="false">https://api-docs.deepseek.com/guides/search/</guid>
+      <description>[Score: 80] DeepSeekが提供するSearch APIとFetch APIは、エージェントやRAGアプリケーションがライブWebコンテンツにアクセスするためのツールです。 / これらのAPIは生のJSON形式で、DeepSeek APIと同じ認証メカニズムを使用します。 / クエリの例やリクエスト・レスポンスのスキーマが示されており、柔軟な検索構文とフィルタリングが可能です。 (Source: Hacker News)</description>
+      <pubDate>Sun, 18 Oct 2026 06:50:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>重要な指示は最初か最後か？ AI 大手 3 社の助言が異なるので、資料→命令→指示の並び方を 8 通り試してみた</title>
+      <link>https://qiita.com/songchong/items/542892c6d4c569c9c15f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/542892c6d4c569c9c15f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] AIに長い資料を渡す際、重要な指示を資料のどこに配置すべきかについて、Anthropic、Google、OpenAIの3社の異なる助言を検証しています。 / 資料、命令、指示の8通りの並び方を実験し、特にClaude Haiku 5.5において並び方が結果に影響を与えることを示しています。 / AIの応答精度を高めるためのプロンプト構成の最適化に関する実践的な知見を提供しています。 (Source: Qiita)</description>
+      <pubDate>Sun, 18 Oct 2026 18:30:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>『コミックシーモア』サービス再開の見通し立たず「正確な再開日時をお伝えすることが困難な状況です」（オリコン） - Yahoo!ニュース</title>
+      <link>https://news.yahoo.co.jp/articles/df7e374ecdb58831f4b5f497fdcf5407c9af4e36</link>
+      <guid isPermaLink="false">https://news.yahoo.co.jp/articles/df7e374ecdb58831f4b5f497fdcf5407c9af4e36</guid>
+      <description>[Score: 80] 電子コミックサイト『コミックシーモア』が第三者による不正アクセスを受け、一部顧客の会員情報が流出したためサービスを停止しています。 / 原因は特定され、不正アクセス防止措置は実施済みですが、さらなる安全性確保と関係機関との調整が必要なため、サービス再開の具体的な目処は立っていません。 / クレジットカード情報や購入履歴の流出は現時点では確認されていないものの、会員情報と一部システムログファイルが閲覧・取得されたことが判明しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 18 Oct 2026 14:34:10 +0000</pubDate>
     </item>
   </channel>
 </rss>
