@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 19 Oct 2026 22:56:44 +0000</lastBuildDate>
-    <item>
-      <title>Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性</title>
-      <link>https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html</guid>
-      <description>[Score: 95] Linuxカーネルに「PwnEscape」（CVE-2026-99999）という深刻な脆弱性が発見されました。 / この脆弱性を悪用すると、ゲスト仮想マシンからホスト側のLinux OSで不正なコードを実行できる可能性があります。 / CVSSスコアは9.3（Critical）と評価されており、IPv4ヘッダーのチェックサム関連データ操作が原因とされています。 (Source: Publickey)</description>
-      <pubDate>Sat, 17 Oct 2026 15:27:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>MiniMax M3.1 Flash</title>
-      <link>https://www.minimax.io/blog/minimax-m31f</link>
-      <guid isPermaLink="false">https://www.minimax.io/blog/minimax-m31f</guid>
-      <description>[Score: 90] MiniMaxが次世代Flashモデル「M3.1 Flash」をリリースしました。 / このモデルは、エージェントタスク、コーディング、コンピュータ利用、サイバーセキュリティにおいて大幅な性能向上を実現し、推論速度を約3倍に高速化し、利用コストを70%削減します。 / 複雑なタスクにおいて主要モデルと同等のパフォーマンスを低コストで提供し、APIを通じて利用可能です。 (Source: Hacker News)</description>
-      <pubDate>Mon, 19 Oct 2026 16:39:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Codeの会話を55分放っておいたら、272,422トークンが13,522に圧縮されていました ― アイドル圧縮の観測</title>
-      <link>https://zenn.dev/ojisan_ai_lab/articles/claude-code-idle-compaction-20261019</link>
-      <guid isPermaLink="false">https://zenn.dev/ojisan_ai_lab/articles/claude-code-idle-compaction-20261019</guid>
-      <description>[Score: 90] Claude Codeのターミナルで、長時間の会話がアイドル状態になると自動的にトークンが圧縮される「アイドル圧縮」を観測した記事です。 / 27万トークン超の会話が約55分後に1.3万トークンまで圧縮された具体的な事例と、その仕組みについて解説。 / 公式リリースノートの内容と実際の観測結果を比較し、Claude Codeの効率的なプロンプトキャッシュ管理の様子を伝えています。 (Source: Zenn)</description>
-      <pubDate>Mon, 19 Oct 2026 09:29:39 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 20 Oct 2026 22:21:47 +0000</lastBuildDate>
     <item>
       <title>今日から使える AI との会話術 — Claude・Gemini・Codex に指示を守らせる 6 つの原則【2026年版】</title>
       <link>https://qiita.com/songchong/items/351a939e2e1b673c2929?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/songchong/items/351a939e2e1b673c2929?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] Claude Code、Gemini、CodexといったAIエージェントに指示を確実に守らせるための6つの原則を解説しています。 / 指示の書き方だけでなく、指示ファイルの配置、資料との並べ方、指示の数、会話の長さがAIの指示遵守に影響することを実験結果に基づいて説明。 / システムプロンプト、指示ファイル、ユーザーメッセージの優先順位や、指示の数を少なく明確にすることの重要性などが示されています。 (Source: Qiita)</description>
+      <description>[Score: 95] Claude Code、Gemini、CodexといったAIエージェントに指示を確実に守らせるための6つの原則を、IT連携マップ編集部の実験結果に基づいて解説しています。 / 指示の書き方だけでなく、指示ファイルの配置場所、資料との並べ方、指示の数、会話の長さがAIの挙動に影響を与えることを指摘。 / AGENTS.mdなどの指示ファイル活用法、ファイルサイズの最適化、具体的なプロンプトエンジニアリングのコツなど、AIとの効果的な協業に必要な実践的ノウハウを提供しています。 (Source: Qiita)</description>
       <pubDate>Sun, 18 Oct 2026 15:40:28 +0000</pubDate>
     </item>
     <item>
-      <title>サイバー攻撃受け情報漏えい、中国語のＡＩエージェント悪用か…国内８０社への攻撃巡り痕跡</title>
-      <link>https://www.yomiuri.co.jp/national/20261019-GYT1T00477/</link>
-      <guid isPermaLink="false">https://www.yomiuri.co.jp/national/20261019-GYT1T00477/</guid>
-      <description>[Score: 90] 国内約80社がサイバー攻撃を受け情報漏えいした問題で、中国語のAIエージェント「ARTEX」が悪用された痕跡が確認されました。 / ARTEXはシステムの脆弱性を探索する能力が高く、今年7月に一般公開されたばかりのツールです。 / AIがサイバー攻撃に悪用される新たな脅威が現実のものとなり、セキュリティ対策の強化が急務となっています。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 19 Oct 2026 20:16:56 +0000</pubDate>
+      <title>人間のAIに対する判断移譲 - 西尾泰和の外部脳</title>
+      <link>https://scrapbox.io/nishio/%E4%BA%BA%E9%96%93%E3%81%AEAI%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E5%88%A4%E6%96%AD%E7%A7%BB%E8%AD%B2</link>
+      <guid isPermaLink="false">https://scrapbox.io/nishio/%E4%BA%BA%E9%96%93%E3%81%AEAI%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E5%88%A4%E6%96%AD%E7%A7%BB%E8%AD%B2</guid>
+      <description>[Score: 95] AIと人間の速度差が拡大し、人間の承認がボトルネックとなる中で、AIへの判断移譲が「作業」だけでなく「実行許可」や「質問判断」にまで及んでいる。 / 2024年にはDevin.aiやCursorのYolo Modeなど、AIが自律的にコードを生成・実行するツールが登場し、人間の承認なしに環境を操作するリスクが顕在化。 / 「You Only Live Once」を意味するYolo Modeは、サンドボックスなしでの自動実行の危険性をはらみつつも、AIの高速化に対応するための判断移譲の必要性を示唆している。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 20 Oct 2026 08:21:44 +0000</pubDate>
     </item>
     <item>
-      <title>ひとり会社が、AIと二人でISMSを取った話</title>
-      <link>https://note.com/timtarou/n/n5443f159e7bc</link>
-      <guid isPermaLink="false">https://note.com/timtarou/n/n5443f159e7bc</guid>
-      <description>[Score: 90] 設立1年目のひとり会社が、AI社員と二人三脚でISMS（ISO/IEC 27001:2022）認証をわずか数日の実質工数と低コストで取得しました。 / コンサルや専用SaaSに頼らず、AIに規格書や既存GRCソフトの機能を分析させ、情報資産台帳の作成まで自動化。 / AIを活用することで、ISMS取得の障壁となっていた時間とコストを大幅に削減し、セキュアで効率的な運用体制を構築した事例です。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 19 Oct 2026 14:05:36 +0000</pubDate>
+      <title>Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性</title>
+      <link>https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html</guid>
+      <description>[Score: 95] Linuxカーネルに深刻な脆弱性「PwnEscape」（CVE-2026-99999）が発見されました。 / この脆弱性は、悪意のある攻撃者がゲスト仮想マシンを不正に操作することで、仮想マシンの境界を越えてホスト側のLinux OSで不正なコードを実行できる可能性があります。 / CVSSスコアは9.3と非常に高く、緊急の対応が求められる「Critical」な脆弱性として警告されています。 (Source: Publickey)</description>
+      <pubDate>Sat, 17 Oct 2026 15:27:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Voxtral 3</title>
+      <link>https://mistral.ai/news/voxtral-3/</link>
+      <guid isPermaLink="false">https://mistral.ai/news/voxtral-3/</guid>
+      <description>[Score: 90] Mistral AIがVoxtral 3を発表しました。これは、リアルタイムで多段階の会話が可能な音声エージェントSDKです。 / 50以上の言語に対応し、正確な文字起こし、感情適応性のある自然な音声合成、深いツール統合を特徴とします。 / コンタクトセンター、仮想アシスタント、ハンズフリーコパイロット向けに、低遅延で人間のようなインタラクションを提供し、データ主権を確保します。 (Source: Hacker News)</description>
+      <pubDate>Tue, 20 Oct 2026 16:02:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>MetaのGB{2,3}00クラスター</title>
+      <link>https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/</link>
+      <guid isPermaLink="false">https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/</guid>
+      <description>[Score: 90] Metaはオハイオ州ニューアルバニーで、ギガワット級のAIスーパークラスター「Prometheus」を構築しています。 / このインフラは、次世代の基盤モデルを訓練し、数十億人に新しいAI体験を提供することを目的としています。 / システムの安定性と信頼性を向上させることで、Muse Wonderモデルの事前学習で85%以上、強化学習で90%以上の良好なスループットを達成しています。 (Source: Hacker News)</description>
+      <pubDate>Mon, 19 Oct 2026 14:23:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Codexでゲームを作っていたら、小さなAI開発組織を回す実験になった</title>
+      <link>https://qiita.com/Masato_Iwasaki/items/7e5241176f3eead2a2f5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Masato_Iwasaki/items/7e5241176f3eead2a2f5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] Codexを使ってブラウザゲーム開発を始めた筆者が、次第に複数のAIに役割を割り当て、Sprintを回す「小さなAI開発組織」として運用する実験に至った経緯を解説しています。 / ChatGPTと連携してゲームデザインやプロンプト作成を行い、Codexに実装・テスト・自己レビューを担当させることで、効率的な開発サイクルを構築。 / 共通ルールをMarkdownファイルで管理し、複数のAIエージェントを使い分けることで、AIとの協調開発における新たな可能性と課題を示唆しています。 (Source: Qiita)</description>
+      <pubDate>Mon, 19 Oct 2026 08:33:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>米国、AIデータセンターに電力を供給するため3基の閉鎖された原子炉を再稼働 — MicrosoftとGoogleの支援で2.25 GWが稼働へ</title>
+      <link>https://www.reddit.com/r/technology/comments/1xavtj4/us_restarts_three_shutdown_nuclear_reactors_to/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xavtj4/us_restarts_three_shutdown_nuclear_reactors_to/</guid>
+      <description>[Score: 90] 米国がAIデータセンターの電力需要を満たすため、閉鎖されていた3基の原子力発電所を再稼働させます。 / MicrosoftとGoogleがこのプロジェクトを支援し、合計2.25 GWの電力が供給される予定です。 / AIの急速な発展が、エネルギーインフラに与える巨大な影響と、その解決策としての原子力発電の再評価を示しています。 (Source: Reddit)</description>
+      <pubDate>Tue, 20 Oct 2026 15:52:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>ソフトウェアの産業革命 - ちなみに</title>
+      <link>https://blog.nishimu.land/entry/2026/10/20/123916</link>
+      <guid isPermaLink="false">https://blog.nishimu.land/entry/2026/10/20/123916</guid>
+      <description>[Score: 90] Anthropic社内でコーディングエージェントによるコード変更が急増し、人間のレビューがボトルネックとなっている現状が示されている。 / Addy Osmaniの「The Factory Model」は、コーディングは変わったがエンジニアリングの本質は変わらないとし、人の仕事が「製品を作る」から「製品を作る工場を作る」ことへシフトすると提唱。 / 工場長のように、エージェントに渡す作業キュー、使う道具、検査の仕組み、差し戻し経路などを設計することが、これからのソフトウェアエンジニアの役割となる。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 20 Oct 2026 04:10:49 +0000</pubDate>
     </item>
     <item>
       <title>次世代の開発者インターフェースはアンビエントインテリジェンスである</title>
       <link>https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</link>
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</guid>
-      <description>[Score: 90] GitHub Copilotが単なるコード生成ツールを超え、リポジトリを理解し、計画を立て、ツールを使用し、ファイルを編集し、テストを実行する「アンビエントインテリジェンス」へと進化していることを論じています。 / 開発者はコマンドを発行するのではなく、意図を記述することで、AIが自律的にプルリクエストを生成するレベルに達しています。 / これにより、開発者はツールの操作に費やす時間を減らし、方向性の設定、コンテキストの提供、制約の定義、結果のレビューにより集中できるようになります。 (Source: GitHub Blog)</description>
+      <description>[Score: 90] GitHubが提唱する次世代の開発者インターフェース「アンビエントインテリジェンス」について解説しています。 / AIがリポジトリを理解し、ツールを使い、ファイルを編集し、テストを実行することで、開発者はコマンドではなく意図を伝えることに集中できます。 / GitHub Copilotが開発ワークフローを根本的に変革し、開発者がより高レベルな思考に時間を費やせるようになると述べています。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 15 Oct 2026 19:39:27 +0000</pubDate>
     </item>
     <item>
-      <title>macOS上でAndroidアプリをネイティブ実行</title>
-      <link>https://github.com/kksimp/Mac.apk</link>
-      <guid isPermaLink="false">https://github.com/kksimp/Mac.apk</guid>
-      <description>[Score: 88] Mac.apkは、Apple Silicon Mac上でAndroidアプリをエミュレータや仮想マシンなしでネイティブに実行するアルファ版ソフトウェアです。 / アプリは通常のmacOSプロセスとして起動し、MacのGPUで描画され、CPUでネイティブ速度で実行されます。 / 一部のアプリは美しく動作しますが、まだ開発初期段階であり、互換性リストが提供されています。 (Source: Hacker News)</description>
-      <pubDate>Mon, 19 Oct 2026 16:45:30 +0000</pubDate>
+      <title>Google、TPU向けネイティブPyTorchバックエンド「TorchTPU」をオープンソース化</title>
+      <link>https://github.com/google-pytorch/torch_tpu</link>
+      <guid isPermaLink="false">https://github.com/google-pytorch/torch_tpu</guid>
+      <description>[Score: 88] GoogleがTorchTPUをオープンソース化しました。これは、PyTorchモデルと操作をTPUデバイスで実行するためのネイティブバックエンドです。 / カスタムATenカーネル、コンパイルキャッシュ、分散トレーニングとモデル推論の例が含まれています。 / TPU VM上で動作し、PyTorchのリリース互換性マトリックスに準拠したPython 3.11+をサポートしています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 20 Oct 2026 16:40:24 +0000</pubDate>
     </item>
     <item>
-      <title>OpenBSD 8.0リリースではLinux 6.18のinteldrm/radeondrm/amdgpuドライバーが搭載される</title>
-      <link>https://bsd.network/@brynet/117407035545900963</link>
-      <guid isPermaLink="false">https://bsd.network/@brynet/117407035545900963</guid>
-      <description>[Score: 85] OpenBSD 8.0では、Linux 6.18.y/6.18.53のinteldrm/radeondrm/amdgpuグラフィックスドライバーが搭載されます。 / これにより、Intel Arc A-Seriesカードのサポートが追加され、amd64でのKVA増加により4G以上のVRAMマッピングが可能になります。 / また、Clang/LLVM 22がベースコンパイラとなり、vmm/vmdが最大64VCPUのSMPゲストをサポートするなど、多くの機能強化が含まれます。 (Source: Hacker News)</description>
-      <pubDate>Mon, 19 Oct 2026 21:11:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIとコンテストに参加する</title>
-      <link>https://zenn.dev/attgm/articles/d28df25b88254a</link>
-      <guid isPermaLink="false">https://zenn.dev/attgm/articles/d28df25b88254a</guid>
-      <description>[Score: 85] AtCoder Heuristic Contestの生成AI利用ルール評価コンテストにAI（Codex）と参加した体験をレポートしています。 / AIを実装補助やバグ調査に活用しつつ、解法の考案・改善は自身で行うというルールの下でのAIとの協業プロセスを紹介。 / AIが指摘した実装上の誤りや、配送順最適化の試行錯誤など、具体的な開発過程が詳細に記述されています。 (Source: Zenn)</description>
-      <pubDate>Mon, 19 Oct 2026 13:42:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Code × Figma MCP で作ったデザインを別のAIに検査させる — デザインのグラフエンジニアリング</title>
-      <link>https://qiita.com/vivi-koh/items/fc957950ba9fd21c1d1b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/vivi-koh/items/fc957950ba9fd21c1d1b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] Claude Codeで生成したFigmaデザインの品質を、別のAIエージェントに検査させる仕組みを紹介しています。 / AIが生成したデザインは一見完成品でも、デザイントークンの不適用やコンポーネントの不適切な使用など、デザイナー視点では未完成な部分が多い課題を指摘。 / 本記事では、これらの「本質的ではないが機械的に判断できる部分」のレビューと修正をAIに任せることで、人間のデザイナーはUXや審美的な側面に集中できることを示しています。 (Source: Qiita)</description>
-      <pubDate>Mon, 19 Oct 2026 01:33:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Codeに全部任せて開発してたエンジニアの末路、1〜2ヶ月後ガチで地獄ですよ</title>
-      <link>https://note.com/yukiedu/n/n4d25f5e1d590</link>
-      <guid isPermaLink="false">https://note.com/yukiedu/n/n4d25f5e1d590</guid>
-      <description>[Score: 85] AIコード生成ツール「Claude Code」に開発を丸投げする現場が、1〜2ヶ月後に深刻な問題に直面すると警鐘を鳴らす記事です。 / AIは目の前のタスクには優れるが、プロジェクト全体の整合性や将来の拡張性を考慮した設計は苦手と指摘。 / AIを効果的に活用するためには、エンジニアが「AIに任せていい仕事」と「自分でやるべき仕事」の線引きを明確にすることが重要だと強調しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 19 Oct 2026 08:46:35 +0000</pubDate>
+      <title>あなたの会社は、慌てて脆弱性検査にARTEXを使わなくていい｜Yusuke Kawabata（SaaS運営）</title>
+      <link>https://note.com/uplucid/n/ncb9e3567ce2f</link>
+      <guid isPermaLink="false">https://note.com/uplucid/n/ncb9e3567ce2f</guid>
+      <description>[Score: 88] AIによる自動化攻撃ツールARTEXが大規模攻撃に利用され、多くの企業がその対策に注目しているが、安易な利用は危険である。 / ARTEXはオープンソースとして公開されたが、悪用を懸念した作者がソースコードをクローズ。しかしフォークされたコピーにはマルウェアが混入している可能性があり、素人の利用はリスクが高い。 / 守る側はホワイトボックステストを活用し、内部情報に基づいて効率的に脆弱性検査を行うべきであり、攻撃者と同じブラックボックステストをAIで行うのはコストもリスクも高い。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 20 Oct 2026 15:34:06 +0000</pubDate>
     </item>
     <item>
       <title>AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表</title>
       <link>https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html</guid>
-      <description>[Score: 85] AWSが「AWS Lambda Web Functions」を発表し、Lambda上でNext.jsやHonoなどのNode.jsフレームワークとアプリケーションを直接デプロイ・実行可能になりました。 / これにより、従来のLambda Event Functionsとは異なり、Webアプリケーション開発者はアダプターなしで既存のWebフレームワークをサーバーレス環境で利用できます。 / Webアプリケーションのサーバーレス化がさらに容易になり、開発効率と運用コストの削減に貢献すると期待されます。 (Source: Publickey)</description>
+      <description>[Score: 87] AWSが「AWS Lambda Web Functions」を発表し、Next.jsやExpress、HonoなどのNode.jsフレームワークとアプリケーションをLambda上で直接デプロイ・実行可能になった。 / 従来のLambdaでは、HTTPリクエスト処理と関数実行が分離されており、Webアプリケーションをそのまま動かすにはアダプターが必要だった。 / Web Functionsの導入により、Node.jsのWebサーバー機能がLambda上で利用可能となり、既存のWebフレームワーク資産をサーバーレス環境へ容易に移行できるようになる。 (Source: Publickey)</description>
       <pubDate>Mon, 19 Oct 2026 15:49:22 +0000</pubDate>
     </item>
     <item>
-      <title>AnthropicのBun、TypeScript 7よりも3倍以上高速なTypeScript型チェッカーを搭載。Bunの新バージョン1.4.3で</title>
-      <link>https://www.publickey1.jp/blog/26/anthropicbuntypescript_73typescriptbun143.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/anthropicbuntypescript_73typescriptbun143.html</guid>
-      <description>[Score: 85] JavaScriptランタイム「Bun」のバージョン1.4.3がリリースされ、TypeScript 7よりも3倍以上高速なTypeScript型チェッカーを搭載しました。 / Go言語で実装されたこの型チェッカーは、TypeScript 7.0.2の適合性テストを100%パスし、主要なオープンソースプロジェクトでも高い互換性を示しています。 / これにより、BunはTypeScriptのトランスパイルと実行だけでなく、型チェックにおいても開発者の生産性向上に大きく貢献すると期待されます。 (Source: Publickey)</description>
-      <pubDate>Thu, 15 Oct 2026 15:21:12 +0000</pubDate>
+      <title>DeepInfer: DeepSeekモデル向け高性能推論フレームワーク</title>
+      <link>https://github.com/deepseek-ai/DeepInfer</link>
+      <guid isPermaLink="false">https://github.com/deepseek-ai/DeepInfer</guid>
+      <description>[Score: 85] DeepInferは、DeepSeekのプロダクションサービスを支える高性能な推論フレームワークで、大規模なオフライン推論を可能にします。 / vLLM、SGLang、TensorRT-LLMから着想を得て開発され、NVIDIA GPUおよびAscendプラットフォームをサポートしています。 / DeepSeek-V4.1-Flash-1017などのモデルに対応し、Apache License 2.0でオープンソースとして公開されています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 20 Oct 2026 09:08:54 +0000</pubDate>
     </item>
     <item>
-      <title>AIエージェントが単独で動作するときにのみ現れる5つの障害（およびそれぞれ3分間のチェック）</title>
-      <link>https://dev.to/neuralalpha/5-falhas-que-so-aparecem-quando-seu-agente-de-ia-roda-sozinho-e-uma-checagem-de-3-minutos-para-2m7</link>
-      <guid isPermaLink="false">https://dev.to/neuralalpha/5-falhas-que-so-aparecem-quando-seu-agente-de-ia-roda-sozinho-e-uma-checagem-de-3-minutos-para-2m7</guid>
-      <description>[Score: 85] AIエージェントやスケジュールされたジョブが単独で実行される際に発生する特有の5つの障害について解説しています。 / 同じ内容を二重投稿したり、誤ったアカウントに投稿したり、気づかれずに停止したりするなどの問題が挙げられています。 / これらの障害を防ぐための3分間のチェックリストと、「プロンプトではなくプログラムにブレーキをかける」という根本的な対策が提案されています。 (Source: Dev.to)</description>
-      <pubDate>Mon, 19 Oct 2026 22:50:15 +0000</pubDate>
+      <title>Oxlint + Oxfmt で規約をコード化するモノレポ運用</title>
+      <link>https://zenn.dev/reality_tech/articles/oxc-monorepo-20261006</link>
+      <guid isPermaLink="false">https://zenn.dev/reality_tech/articles/oxc-monorepo-20261006</guid>
+      <description>[Score: 85] ESLint + PrettierからOxlint + Oxfmtへの移行事例が紹介され、その検証過程とモノレポでの運用方法が解説されています。 / 大規模なコードベースやAIコーディングエージェントの利用が増える現代において、linter/formatterの実行速度が開発体験に与える影響が大きくなっています。 / Rust製のOxlint + Oxfmtは既存ツールと比較して大幅な高速化を実現し、コーディング規約をコードとして強制する運用に適していると評価されています。 (Source: Zenn)</description>
+      <pubDate>Tue, 20 Oct 2026 02:00:05 +0000</pubDate>
     </item>
     <item>
-      <title>WineがOpenBSDに移植</title>
-      <link>https://marc.info/?l=openbsd-ports&amp;m=179236125692175</link>
-      <guid isPermaLink="false">https://marc.info/?l=openbsd-ports&amp;m=179236125692175</guid>
-      <description>[Score: 80] WineがOpenBSDに移植され、64ビットWindowsソフトウェアの実行が可能になりました。 / これは、%gs/gsbaseの問題に対するソフトウェアソリューションによって実現され、The Witcher 3 Remasteredを含む多数の64ビットWindowsアプリが動作します。 / ただし、WoW64が機能しないため、32ビットWindowsソフトウェアはまだサポートされていません。 (Source: Hacker News)</description>
-      <pubDate>Mon, 19 Oct 2026 13:35:34 +0000</pubDate>
+      <title>Claude Code で CI 待ち時間を 18 分から 4 分台に短縮する【GitHub Actions】</title>
+      <link>https://zenn.dev/edash_tech_blog/articles/5b90aa33bd8d49</link>
+      <guid isPermaLink="false">https://zenn.dev/edash_tech_blog/articles/5b90aa33bd8d49</guid>
+      <description>[Score: 85] 本記事では、AIコーディングエージェントClaude Codeを活用し、GitHub ActionsにおけるCIの待ち時間を18分から4分台に大幅短縮した事例を紹介しています。 / Next.js（TypeScript）アプリケーションのVitestテストにおいて、テスト実行前のオーバーヘッドが主な原因であることを特定し、Vitestのprojects機能でテスト環境を分割。 / これにより、DOMを使わないテストをnode環境で実行し、ワーカー数を最適化することで、CIの高速化を実現しました。 (Source: Zenn)</description>
+      <pubDate>Mon, 19 Oct 2026 23:00:05 +0000</pubDate>
     </item>
     <item>
-      <title>対象が広い事業・プロダクトが刺さる気がしない</title>
-      <link>https://zenn.dev/fusa_bp/articles/broad-target-reaches-no-one</link>
-      <guid isPermaLink="false">https://zenn.dev/fusa_bp/articles/broad-target-reaches-no-one</guid>
-      <description>[Score: 80] 対象が広すぎる事業やプロダクトは、具体的な課題を深掘りできず、効果的な解決策に繋がりにくいと指摘しています。 / 具体的なペルソナを設定することで、課題が明確になり、解決策を考案しやすくなるというビジネスの原則を解説。 / 筆者自身の経験に基づき、なぜ具体的なペルソナ設定が重要なのかを深掘りしています。 (Source: Zenn)</description>
-      <pubDate>Mon, 19 Oct 2026 17:05:28 +0000</pubDate>
+      <title>「侵入経路塞いだが、バックドアから……」不正アクセス105時間の攻防、分単位で報告　防災メールのアルカディア</title>
+      <link>https://www.itmedia.co.jp/news/article/2610/20/2000002426/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2610/20/2000002426/</guid>
+      <description>[Score: 85] 防災情報配信サービス「SpeeCAN RAIDEN」が不正アクセスを受け、個人情報が漏洩した事件の詳細が分単位で公表されました。 / 攻撃者はディレクトリトラバーサル脆弱性を利用して設定ファイルを取得し、バックドアを設置して約142万通のメールを送信。 / 企業がLLMを活用した脆弱性診断とコードレビューで復旧した事例であり、サイバー攻撃の生々しい実態と対策の重要性を示しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 20 Oct 2026 06:16:53 +0000</pubDate>
     </item>
     <item>
-      <title>テーブル定義書・ER図を自動生成して、AIにテーブル構造を答えさせるツールを作ってみた</title>
-      <link>https://qiita.com/ebichan_88/items/f7c44c74e437875b1399?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ebichan_88/items/f7c44c74e437875b1399?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] DBからテーブル定義書やER図をMarkdown形式で自動生成し、さらにAIがテーブル構造を理解・回答できるようにするツール「dbxray」を紹介しています。 / 既存のテーブル定義書出力ツールを改良し、AIエージェント（Claude Codeなど）がDB構造に関する質問に答えられるMCPサーバーを同梱。 / これにより、開発者が不慣れなサブシステムのDB構造を効率的にキャッチアップできるようになることを目指しています。 (Source: Qiita)</description>
-      <pubDate>Sat, 17 Oct 2026 09:15:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>最近Gemini使い始めたけど、明らかにchatGPTの方が優秀じゃないか？「Geminiはやる気あるバカってイメージ」「嘘しかつかないので使うのやめました」</title>
-      <link>https://togetter.com/li/2760356</link>
-      <guid isPermaLink="false">https://togetter.com/li/2760356</guid>
-      <description>[Score: 80] ユーザー間でGeminiとChatGPTの性能比較が行われ、多くの意見でChatGPTの優位性が指摘されています。 / Geminiは出力速度が速いものの、精度が低い、嘘をつくといった評価が見られ、「やる気あるバカ」と揶揄されることも。 / 一方で、特定の用途（スペイン語学習、文学的表現）ではGeminiも使えるという意見もあり、モデルや使い方による差が浮き彫りになりました。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 19 Oct 2026 15:50:13 +0000</pubDate>
+      <title>ウィンドウズアップデートについて調べたらめちゃめちゃ面白かった</title>
+      <link>https://anond.hatelabo.jp/20261020173628</link>
+      <guid isPermaLink="false">https://anond.hatelabo.jp/20261020173628</guid>
+      <description>[Score: 85] Windowsの強制アップデートは、ユーザーがセキュリティ更新を怠った結果、大規模なウイルス感染（Blaster, Sasser, WannaCryなど）が多発した歴史的経緯から生まれた。 / Microsoftはユーザーの自主性に任せるとアップデートしないという残酷な真実に直面し、システム側が強制的にユーザーを守る方針に転換した。 / この機能は、ユーザーの作業を中断させる「嫌がらせ」ではなく、愚かな人類をウイルスから守るための「愛と絶望の機能」である。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 20 Oct 2026 08:41:46 +0000</pubDate>
     </item>
     <item>
       <title>AWS Transform、Azure Functions用のコードをAWS Lambda用に変換など、Microsoft AzureからAWSへの移行に対応</title>
       <link>https://www.publickey1.jp/blog/26/aws_transformazure_functionsaws_lambdamicrosoft_azureaws.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws_transformazure_functionsaws_lambdamicrosoft_azureaws.html</guid>
-      <description>[Score: 80] AWS Transformに、Microsoft AzureからAWSへの移行を支援する新機能が追加されました。 / Azure SDKで書かれた.NETアプリケーションのコードをAWS SDK用に変換し、Azure FunctionsをAWS Lambdaに、Azure Blob StorageをAmazon S3に置き換えるなどが可能です。 / これにより、Azure固有のサービスを利用している.NETアプリケーションのAWSへの移行が容易になり、クラウド間のポータビリティが向上します。 (Source: Publickey)</description>
+      <description>[Score: 85] AWSが「AWS Transform」に新機能を追加し、Azure SDKで書かれた.NETアプリケーションをAWS SDKを用いたコードに変換できるようになりました。 / これにより、Azure FunctionsやAzure Blob StorageなどAzure固有のサービスを利用する.NETアプリのAWSへの移行が容易になります。 / 変換できないコードはToDoコメントやダミーコード、または別途Markdownファイルで説明されるため、移行作業の効率化が期待されます。 (Source: Publickey)</description>
       <pubDate>Mon, 19 Oct 2026 15:47:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>3人のJavaチャンピオンがGitHub Copilotを生産性向上にどう活用しているか</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
+      <description>[Score: 85] 3人のJavaチャンピオンがGitHub Copilotをどのように活用し、生産性を向上させているかを紹介しています。 / Copilotはコード生成だけでなく、分析、設計、実装の各段階で役立ち、開発期間を大幅に短縮できることが示されています。 / AIツールを効果的に利用するための実践的なヒントやベストプラクティスが共有されています。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Evergreenを維持する：共有組織におけるセキュアなアクセスとリポジトリ衛生を自動化する方法</title>
+      <link>https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</guid>
+      <description>[Score: 85] GitHubが、外部コラボレーターとの共有組織におけるリポジトリのアクセス管理と衛生管理を自動化する「Evergreen」を紹介しています。 / EvergreenはGitHub Appとして構築され、アクセスレビューの自動化やリポジトリのアーカイブを安全に行います。 / 「Fail secure」と「Never destroy anything」の2つの設計原則に基づき、GitHubのネイティブ機能を活用して実装されています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 15 Oct 2026 18:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
