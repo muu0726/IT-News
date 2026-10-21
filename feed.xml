@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 20 Oct 2026 22:21:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 22:25:31 +0000</lastBuildDate>
     <item>
-      <title>今日から使える AI との会話術 — Claude・Gemini・Codex に指示を守らせる 6 つの原則【2026年版】</title>
-      <link>https://qiita.com/songchong/items/351a939e2e1b673c2929?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/351a939e2e1b673c2929?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 95] Claude Code、Gemini、CodexといったAIエージェントに指示を確実に守らせるための6つの原則を、IT連携マップ編集部の実験結果に基づいて解説しています。 / 指示の書き方だけでなく、指示ファイルの配置場所、資料との並べ方、指示の数、会話の長さがAIの挙動に影響を与えることを指摘。 / AGENTS.mdなどの指示ファイル活用法、ファイルサイズの最適化、具体的なプロンプトエンジニアリングのコツなど、AIとの効果的な協業に必要な実践的ノウハウを提供しています。 (Source: Qiita)</description>
-      <pubDate>Sun, 18 Oct 2026 15:40:28 +0000</pubDate>
+      <title>修正予告されたPHPの2件の深刻な脆弱性についてまとめてみた - piyolog</title>
+      <link>https://piyolog.hatenadiary.jp/entry/2026/10/21/174516</link>
+      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/10/21/174516</guid>
+      <description>[Score: 98] PHP開発元が2件の深刻な脆弱性を修正するセキュリティリリースを公開し、IPAや国家サイバー統括室も注意喚起を行いました。 / これらの脆弱性は認証不要のリモートコード実行(RCE)につながり、CVSS v4.0で9.2(Critical)と評価されています。 / 特にmod_phpを使用している環境はリスクが高く、速やかな修正版へのアップデートが強く推奨されます。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 21 Oct 2026 08:57:42 +0000</pubDate>
     </item>
     <item>
-      <title>人間のAIに対する判断移譲 - 西尾泰和の外部脳</title>
-      <link>https://scrapbox.io/nishio/%E4%BA%BA%E9%96%93%E3%81%AEAI%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E5%88%A4%E6%96%AD%E7%A7%BB%E8%AD%B2</link>
-      <guid isPermaLink="false">https://scrapbox.io/nishio/%E4%BA%BA%E9%96%93%E3%81%AEAI%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E5%88%A4%E6%96%AD%E7%A7%BB%E8%AD%B2</guid>
-      <description>[Score: 95] AIと人間の速度差が拡大し、人間の承認がボトルネックとなる中で、AIへの判断移譲が「作業」だけでなく「実行許可」や「質問判断」にまで及んでいる。 / 2024年にはDevin.aiやCursorのYolo Modeなど、AIが自律的にコードを生成・実行するツールが登場し、人間の承認なしに環境を操作するリスクが顕在化。 / 「You Only Live Once」を意味するYolo Modeは、サンドボックスなしでの自動実行の危険性をはらみつつも、AIの高速化に対応するための判断移譲の必要性を示唆している。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 20 Oct 2026 08:21:44 +0000</pubDate>
+      <title>PHPの「緊急」レベルの脆弱性、開発元が修正バージョン公開　「直ちにアップデートを」</title>
+      <link>https://www.itmedia.co.jp/news/article/2610/22/2000002480/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2610/22/2000002480/</guid>
+      <description>[Score: 98] プログラミング言語「PHP」の開発プロジェクトが、緊急レベルの脆弱性2件を修正したバージョン（PHP 8.5.12など）を公開しました。 / この脆弱性は、攻撃者が遠隔で任意のコードを実行できる可能性があり、PHP-FPMやApacheのmod_phpなどが特に危険とされています。 / 開発元は全てのPHPユーザーに対し直ちにアップデートを強く推奨しており、高市早苗首相もXで異例の呼びかけを行うなど、その緊急性が強調されています。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 21 Oct 2026 16:04:10 +0000</pubDate>
     </item>
     <item>
-      <title>Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性</title>
-      <link>https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html</guid>
-      <description>[Score: 95] Linuxカーネルに深刻な脆弱性「PwnEscape」（CVE-2026-99999）が発見されました。 / この脆弱性は、悪意のある攻撃者がゲスト仮想マシンを不正に操作することで、仮想マシンの境界を越えてホスト側のLinux OSで不正なコードを実行できる可能性があります。 / CVSSスコアは9.3と非常に高く、緊急の対応が求められる「Critical」な脆弱性として警告されています。 (Source: Publickey)</description>
-      <pubDate>Sat, 17 Oct 2026 15:27:18 +0000</pubDate>
+      <title>PyPI上のLiteLLM 1.107.0が侵害され、認証情報窃取とバックドアをインストール</title>
+      <link>https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/</link>
+      <guid isPermaLink="false">https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/</guid>
+      <description>[Score: 95] PyPIで公開されたLiteLLM 1.107.0のリリースが侵害され、認証情報窃取マルウェアとリモートコード実行バックドアが含まれていました。 / これらの悪意のあるファイルは、Pythonプロセスが起動するたびに実行され、PyPIは既にこのリリースを削除しています。 / サプライチェーン攻撃の一種であり、オープンソースパッケージのセキュリティリスクを浮き彫りにしています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 21 Oct 2026 14:00:26 +0000</pubDate>
     </item>
     <item>
-      <title>Voxtral 3</title>
-      <link>https://mistral.ai/news/voxtral-3/</link>
-      <guid isPermaLink="false">https://mistral.ai/news/voxtral-3/</guid>
-      <description>[Score: 90] Mistral AIがVoxtral 3を発表しました。これは、リアルタイムで多段階の会話が可能な音声エージェントSDKです。 / 50以上の言語に対応し、正確な文字起こし、感情適応性のある自然な音声合成、深いツール統合を特徴とします。 / コンタクトセンター、仮想アシスタント、ハンズフリーコパイロット向けに、低遅延で人間のようなインタラクションを提供し、データ主権を確保します。 (Source: Hacker News)</description>
-      <pubDate>Tue, 20 Oct 2026 16:02:07 +0000</pubDate>
+      <title>Eight Bits of Trust: eMudhraのCAキーがミリ秒でクラックされる</title>
+      <link>https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/</link>
+      <guid isPermaLink="false">https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/</guid>
+      <description>[Score: 95] eMudhraの認証局（CA）の秘密鍵が「4」や「56」といった非常に単純な数値であることが判明し、数ミリ秒で復元されていました。 / この脆弱性は、P-384曲線上の楕円曲線鍵の秘密鍵が単純な数値であったことに起因し、Apple、Google、Microsoft、Mozillaなどの主要ベンダーが迅速に対応し、該当する証明書をブロックしました。 / この事件は、認証局のセキュリティ管理の重大な欠陥を露呈し、デジタル証明書の信頼性に対する懸念を再燃させるものです。 (Source: Hacker News)</description>
+      <pubDate>Wed, 21 Oct 2026 09:08:08 +0000</pubDate>
     </item>
     <item>
-      <title>MetaのGB{2,3}00クラスター</title>
-      <link>https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/</link>
-      <guid isPermaLink="false">https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/</guid>
-      <description>[Score: 90] Metaはオハイオ州ニューアルバニーで、ギガワット級のAIスーパークラスター「Prometheus」を構築しています。 / このインフラは、次世代の基盤モデルを訓練し、数十億人に新しいAI体験を提供することを目的としています。 / システムの安定性と信頼性を向上させることで、Muse Wonderモデルの事前学習で85%以上、強化学習で90%以上の良好なスループットを達成しています。 (Source: Hacker News)</description>
-      <pubDate>Mon, 19 Oct 2026 14:23:55 +0000</pubDate>
+      <title>「これは訓練ではない」：PHPの深刻な脆弱性がインターネットを炎上させている</title>
+      <link>https://www.reddit.com/r/technology/comments/1xbqqs5/this_is_not_a_drill_critical_php_vulnerabilities/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xbqqs5/this_is_not_a_drill_critical_php_vulnerabilities/</guid>
+      <description>[Score: 95] PHPに深刻な脆弱性が発見され、インターネット全体に大きな影響を与えています。 / この脆弱性はリモートコード実行につながる可能性があり、多くのウェブサイトが危険に晒されています。 / 緊急のパッチ適用が求められており、ウェブセキュリティの重要性が改めて浮き彫りになっています。 (Source: Reddit)</description>
+      <pubDate>Wed, 21 Oct 2026 15:46:46 +0000</pubDate>
     </item>
     <item>
-      <title>Codexでゲームを作っていたら、小さなAI開発組織を回す実験になった</title>
-      <link>https://qiita.com/Masato_Iwasaki/items/7e5241176f3eead2a2f5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Masato_Iwasaki/items/7e5241176f3eead2a2f5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] Codexを使ってブラウザゲーム開発を始めた筆者が、次第に複数のAIに役割を割り当て、Sprintを回す「小さなAI開発組織」として運用する実験に至った経緯を解説しています。 / ChatGPTと連携してゲームデザインやプロンプト作成を行い、Codexに実装・テスト・自己レビューを担当させることで、効率的な開発サイクルを構築。 / 共通ルールをMarkdownファイルで管理し、複数のAIエージェントを使い分けることで、AIとの協調開発における新たな可能性と課題を示唆しています。 (Source: Qiita)</description>
-      <pubDate>Mon, 19 Oct 2026 08:33:01 +0000</pubDate>
+      <title>著名ITサービス相次いで緊急メンテへ　コドモン、シャドバ、BASE、さくらのレンタルサーバなど　「PHP」脆弱性に起因か</title>
+      <link>https://www.itmedia.co.jp/news/article/2610/21/2000002472/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2610/21/2000002472/</guid>
+      <description>[Score: 95] 保育園向けSaaS「コドモン」やゲーム「Shadowverse」、ネットショップ作成サービス「BASE」など、多数の著名ITサービスが緊急メンテナンスを実施しています。 / これは、Web開発で広く使われるプログラミング言語「PHP」で発見された、CVSSスコア9.2の緊急性の高い脆弱性2件が原因とみられています。 / PHPはWebサイトの約7割で使用されており、この脆弱性は広範囲のサービスに影響を及ぼす可能性があり、国家サイバー統括室も迅速な対応を求めています。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 21 Oct 2026 08:52:10 +0000</pubDate>
     </item>
     <item>
-      <title>米国、AIデータセンターに電力を供給するため3基の閉鎖された原子炉を再稼働 — MicrosoftとGoogleの支援で2.25 GWが稼働へ</title>
-      <link>https://www.reddit.com/r/technology/comments/1xavtj4/us_restarts_three_shutdown_nuclear_reactors_to/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xavtj4/us_restarts_three_shutdown_nuclear_reactors_to/</guid>
-      <description>[Score: 90] 米国がAIデータセンターの電力需要を満たすため、閉鎖されていた3基の原子力発電所を再稼働させます。 / MicrosoftとGoogleがこのプロジェクトを支援し、合計2.25 GWの電力が供給される予定です。 / AIの急速な発展が、エネルギーインフラに与える巨大な影響と、その解決策としての原子力発電の再評価を示しています。 (Source: Reddit)</description>
-      <pubDate>Tue, 20 Oct 2026 15:52:39 +0000</pubDate>
+      <title>今日のPHPセキュリティリリースとセキュリティ強化の取り組み</title>
+      <link>https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/</link>
+      <guid isPermaLink="false">https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/</guid>
+      <description>[Score: 90] PHPプロジェクトは、認証されていない攻撃者がサーバー上でコードを実行できる2つの重大な脆弱性を修正するPHP 8.5.12などのセキュリティリリースを発表しました。 / これらの脆弱性はメモリ管理とエラー処理といったPHPの根幹部分に存在し、修正が困難でした。 / PHP Foundationは外部セキュリティ監査を実施し、セキュリティ強化に継続的に取り組んでいます。 (Source: Hacker News)</description>
+      <pubDate>Wed, 21 Oct 2026 15:48:56 +0000</pubDate>
     </item>
     <item>
-      <title>ソフトウェアの産業革命 - ちなみに</title>
-      <link>https://blog.nishimu.land/entry/2026/10/20/123916</link>
-      <guid isPermaLink="false">https://blog.nishimu.land/entry/2026/10/20/123916</guid>
-      <description>[Score: 90] Anthropic社内でコーディングエージェントによるコード変更が急増し、人間のレビューがボトルネックとなっている現状が示されている。 / Addy Osmaniの「The Factory Model」は、コーディングは変わったがエンジニアリングの本質は変わらないとし、人の仕事が「製品を作る」から「製品を作る工場を作る」ことへシフトすると提唱。 / 工場長のように、エージェントに渡す作業キュー、使う道具、検査の仕組み、差し戻し経路などを設計することが、これからのソフトウェアエンジニアの役割となる。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 20 Oct 2026 04:10:49 +0000</pubDate>
+      <title>EKS に Graviton を導入して、arm64 と amd64 を混ぜて運用を始めました</title>
+      <link>https://zenn.dev/socialplus/articles/eks-graviton-arm64-migration</link>
+      <guid isPermaLink="false">https://zenn.dev/socialplus/articles/eks-graviton-arm64-migration</guid>
+      <description>[Score: 90] Amazon EKS環境で、従来のIntel/AMD (amd64) インスタンスにAWS Graviton (arm64) インスタンスを導入し、Spotインスタンスで両者を混在させる運用を開始しました。 / Gravitonの導入により、オンデマンドインスタンスのコストを約21%削減できるほか、Spotインスタンスの容量プールが増え、確保しやすくなるメリットがあります。 / アプリケーション側の対応は、Apple Silicon Macでの開発経験や既存のDockerfileの互換性によりスムーズに進み、CI/CDのビルドプラットフォーム対応が主な変更点でした。 (Source: Zenn)</description>
+      <pubDate>Wed, 21 Oct 2026 03:00:07 +0000</pubDate>
     </item>
     <item>
-      <title>次世代の開発者インターフェースはアンビエントインテリジェンスである</title>
+      <title>【PHP脆弱性php2shell】パッチは21:59に公開済み。「23:15から乗っ取り」「15分でAIが攻撃コード？」は本当か、自分のVPSのログで検証（CVE-2026-109618／109619）：秋山大志のそれとりあえず作ってみようか。：オルタナティブ・ブログ</title>
+      <link>https://blogs.itmedia.co.jp/agile/2026/10/php2shell_cve_2026_109618_panic.html</link>
+      <guid isPermaLink="false">https://blogs.itmedia.co.jp/agile/2026/10/php2shell_cve_2026_109618_panic.html</guid>
+      <description>[Score: 90] PHPの重大な脆弱性「php2shell」に関する情報が錯綜する中、筆者が自身のVPSログで検証した記事です。 / 「AIが15分で攻撃コードを生成し、23:15に乗っ取りが始まる」という噂の真偽を検証し、その誤解を解きつつも、脆弱性自体の深刻さを強調しています。 / PHP 8.1以前のバージョンは公式サポート外であり、修正パッチが提供されないため、早急なバージョンアップかベンダー対応の確認が必須であると警告しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 21 Oct 2026 14:07:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>次の開発者インターフェースはアンビエントインテリジェンスである</title>
       <link>https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</link>
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</guid>
-      <description>[Score: 90] GitHubが提唱する次世代の開発者インターフェース「アンビエントインテリジェンス」について解説しています。 / AIがリポジトリを理解し、ツールを使い、ファイルを編集し、テストを実行することで、開発者はコマンドではなく意図を伝えることに集中できます。 / GitHub Copilotが開発ワークフローを根本的に変革し、開発者がより高レベルな思考に時間を費やせるようになると述べています。 (Source: GitHub Blog)</description>
+      <description>[Score: 90] AIは、開発者がコマンドを発行するのではなく、意図を実行可能にする「アンビエントインテリジェンス」へと開発者インターフェースを変革しています。 / GitHub Copilotは、リポジトリのコンテキストを理解し、適切なモデルを選択し、作業を計画し、ツールを使用し、ファイルを編集し、テストを実行し、失敗を検査して、開発者が制御する範囲内で作業を継続できます。 / これにより、開発者はツールの操作に費やす時間を減らし、方向性の設定、コンテキストの提供、制約の定義、証拠のレビューにより多くの時間を費やすことができるようになります。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 15 Oct 2026 19:39:27 +0000</pubDate>
     </item>
     <item>
-      <title>Google、TPU向けネイティブPyTorchバックエンド「TorchTPU」をオープンソース化</title>
-      <link>https://github.com/google-pytorch/torch_tpu</link>
-      <guid isPermaLink="false">https://github.com/google-pytorch/torch_tpu</guid>
-      <description>[Score: 88] GoogleがTorchTPUをオープンソース化しました。これは、PyTorchモデルと操作をTPUデバイスで実行するためのネイティブバックエンドです。 / カスタムATenカーネル、コンパイルキャッシュ、分散トレーニングとモデル推論の例が含まれています。 / TPU VM上で動作し、PyTorchのリリース互換性マトリックスに準拠したPython 3.11+をサポートしています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 20 Oct 2026 16:40:24 +0000</pubDate>
+      <title>AWSがPHP RCEを重要と評価、Amazon Linux 2023のパッチは20日かかる可能性</title>
+      <link>https://github.com/amazonlinux/amazon-linux-2023/issues/1148</link>
+      <guid isPermaLink="false">https://github.com/amazonlinux/amazon-linux-2023/issues/1148</guid>
+      <description>[Score: 88] PHPの重大なRCE脆弱性修正パッチがリリースされたにもかかわらず、AWSはAmazon Linux 2023へのパッチ適用を「重要」と評価し、リリースに最大20日かかる可能性が示唆されています。 / ユーザーからは迅速なパッチ提供を求める声が上がっており、AWSの対応の遅れが懸念されています。 / 多くのシステムがPHPに依存しているため、この遅延はセキュリティリスクを高める可能性があります。 (Source: Hacker News)</description>
+      <pubDate>Wed, 21 Oct 2026 21:12:59 +0000</pubDate>
     </item>
     <item>
-      <title>あなたの会社は、慌てて脆弱性検査にARTEXを使わなくていい｜Yusuke Kawabata（SaaS運営）</title>
-      <link>https://note.com/uplucid/n/ncb9e3567ce2f</link>
-      <guid isPermaLink="false">https://note.com/uplucid/n/ncb9e3567ce2f</guid>
-      <description>[Score: 88] AIによる自動化攻撃ツールARTEXが大規模攻撃に利用され、多くの企業がその対策に注目しているが、安易な利用は危険である。 / ARTEXはオープンソースとして公開されたが、悪用を懸念した作者がソースコードをクローズ。しかしフォークされたコピーにはマルウェアが混入している可能性があり、素人の利用はリスクが高い。 / 守る側はホワイトボックステストを活用し、内部情報に基づいて効率的に脆弱性検査を行うべきであり、攻撃者と同じブラックボックステストをAIで行うのはコストもリスクも高い。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 20 Oct 2026 15:34:06 +0000</pubDate>
+      <title>Railwayセキュリティ開示</title>
+      <link>https://blog.railway.com/p/security-disclosure-wednesday-october-21st</link>
+      <guid isPermaLink="false">https://blog.railway.com/p/security-disclosure-wednesday-october-21st</guid>
+      <description>[Score: 85] Railwayは顧客の環境変数を保存するシステムで異常な活動を検知しました。 / 調査の結果、不正な第三者が暗号化された環境変数にアクセスし、一部の復号化された内容を取得した可能性があります。 / APIキーやデータベース認証情報などのシークレットが含まれる可能性があり、全ユーザーに環境変数のローテーションを推奨しています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 21 Oct 2026 21:58:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Amazon Bedrock Guardrails を AnswerCarefully で試してみた</title>
+      <link>https://zenn.dev/aws_japan/articles/bedrock-guardrails-japanese-tier</link>
+      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/bedrock-guardrails-japanese-tier</guid>
+      <description>[Score: 85] Amazon Bedrock Guardrailsは、生成AIの入力と出力を検査し、有害なコンテンツをブロックする機能で、日本語対応のStandard Tierが提供されています。 / LLM-jpが公開するAnswerCarefullyデータセットを用いて、日本語での有害質問のブロック能力と、誤ってブロックしないか（過剰ブロック）を評価しました。 / 結果として、Standard Tierは日本語の有害コンテンツフィルタリングに有効であり、Content filtersとDenied Topicsの両方でStandardを明示し、クロスリージョン推論プロファイルを指定する必要があることが示されました。 (Source: Zenn)</description>
+      <pubDate>Wed, 21 Oct 2026 05:08:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>パスワード管理ツールについて調べた（1Password・Bitwarden）</title>
+      <link>https://qiita.com/kozakoza/items/534ca5aadd59bfd1f6b3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kozakoza/items/534ca5aadd59bfd1f6b3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] 1PasswordとBitwardenという主要なパスワード管理ツールのセキュリティメカニズムについて、Googleパスワードマネージャーとの比較を交えながら解説しています。 / パスワードが手元の端末で暗号化され、マスターパスワードがサーバーに送られない仕組みや、鍵導出の工夫が詳細に説明されています。 / 特に1PasswordのSecret Keyや多層的な鍵管理の仕組みが、その高いセキュリティを支えていることが分かります。 (Source: Qiita)</description>
+      <pubDate>Tue, 20 Oct 2026 23:08:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>Meta、ニューメキシコ州のケンブリッジ・アナリティカ事件で250億ドルの罰金支払いを命じられる</title>
+      <link>https://www.reddit.com/r/technology/comments/1xbtfk5/meta_ordered_to_pay_25_billion_penalty_in_new/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xbtfk5/meta_ordered_to_pay_25_billion_penalty_in_new/</guid>
+      <description>[Score: 85] Metaがニューメキシコ州のケンブリッジ・アナリティカ関連訴訟で、250億ドルという巨額の罰金支払いを命じられました。 / これはデータプライバシー侵害に対する厳しい姿勢を示すものであり、テクノロジー企業への規制強化の流れを象徴しています。 / Metaの財務状況や今後のデータ取り扱いポリシーに大きな影響を与える可能性があります。 (Source: Reddit)</description>
+      <pubDate>Wed, 21 Oct 2026 17:24:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cloudflare、TypeScriptをRustに移植した「tsrs」を発表。TypeScript 7より最大で70％少ないメモリで8倍速。今後、LSPなどTypeScriptの全機能をサポート予定</title>
+      <link>https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html</guid>
+      <description>[Score: 85] CloudflareがTypeScriptコンパイラをRustに移植した「tsrs」を発表しました。 / tsrsはTypeScript 7と比較して最大8倍高速で、メモリ使用量も70%削減されるという驚異的な性能向上を実現しています。 / 今後はLanguage Server Protocol (LSP) を含むTypeScriptの全機能をサポートし、WASMでの動作も可能となる予定で、TypeScript開発の効率化に大きく貢献すると期待されます。 (Source: Publickey)</description>
+      <pubDate>Wed, 21 Oct 2026 15:42:36 +0000</pubDate>
     </item>
     <item>
       <title>AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表</title>
       <link>https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html</guid>
-      <description>[Score: 87] AWSが「AWS Lambda Web Functions」を発表し、Next.jsやExpress、HonoなどのNode.jsフレームワークとアプリケーションをLambda上で直接デプロイ・実行可能になった。 / 従来のLambdaでは、HTTPリクエスト処理と関数実行が分離されており、Webアプリケーションをそのまま動かすにはアダプターが必要だった。 / Web Functionsの導入により、Node.jsのWebサーバー機能がLambda上で利用可能となり、既存のWebフレームワーク資産をサーバーレス環境へ容易に移行できるようになる。 (Source: Publickey)</description>
+      <description>[Score: 85] AWS Lambdaに新機能「AWS Lambda Web Functions」が発表されました。 / これにより、Next.jsやHonoなどのNode.jsフレームワークで開発されたWebアプリケーションを、アダプターなしで直接デプロイ・実行できるようになります。 / 従来のLambda Event Functionsと異なり、Webサーバー機能が提供されるため、開発者はより手軽にWebアプリをサーバーレス環境で運用できます。 (Source: Publickey)</description>
       <pubDate>Mon, 19 Oct 2026 15:49:22 +0000</pubDate>
     </item>
     <item>
-      <title>DeepInfer: DeepSeekモデル向け高性能推論フレームワーク</title>
-      <link>https://github.com/deepseek-ai/DeepInfer</link>
-      <guid isPermaLink="false">https://github.com/deepseek-ai/DeepInfer</guid>
-      <description>[Score: 85] DeepInferは、DeepSeekのプロダクションサービスを支える高性能な推論フレームワークで、大規模なオフライン推論を可能にします。 / vLLM、SGLang、TensorRT-LLMから着想を得て開発され、NVIDIA GPUおよびAscendプラットフォームをサポートしています。 / DeepSeek-V4.1-Flash-1017などのモデルに対応し、Apache License 2.0でオープンソースとして公開されています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 20 Oct 2026 09:08:54 +0000</pubDate>
+      <title>Big Agentic BrainとClaude Codeでスウォームインテリジェンスを解き放つ</title>
+      <link>https://dev.to/codr/unlocking-swarm-intelligence-with-big-agentic-brain-and-claude-code-4668</link>
+      <guid isPermaLink="false">https://dev.to/codr/unlocking-swarm-intelligence-with-big-agentic-brain-and-claude-code-4668</guid>
+      <description>[Score: 85] Big Agentic Brain (BAB) は、AIエージェント向けの分散型自己進化メモリシステムです。 / エージェントが組織全体の知識を共有し、ベンダーの癖やランブックの慣習といったチーム知識を必要とするバグの解決率を大幅に向上させます。 / SonnetやOpusなどのエージェントのバグ解決率がBAB導入により劇的に改善し、Haikuでは修正あたりのコストが半減しました。 (Source: Dev.to)</description>
+      <pubDate>Wed, 21 Oct 2026 22:12:44 +0000</pubDate>
     </item>
     <item>
-      <title>Oxlint + Oxfmt で規約をコード化するモノレポ運用</title>
-      <link>https://zenn.dev/reality_tech/articles/oxc-monorepo-20261006</link>
-      <guid isPermaLink="false">https://zenn.dev/reality_tech/articles/oxc-monorepo-20261006</guid>
-      <description>[Score: 85] ESLint + PrettierからOxlint + Oxfmtへの移行事例が紹介され、その検証過程とモノレポでの運用方法が解説されています。 / 大規模なコードベースやAIコーディングエージェントの利用が増える現代において、linter/formatterの実行速度が開発体験に与える影響が大きくなっています。 / Rust製のOxlint + Oxfmtは既存ツールと比較して大幅な高速化を実現し、コーディング規約をコードとして強制する運用に適していると評価されています。 (Source: Zenn)</description>
-      <pubDate>Tue, 20 Oct 2026 02:00:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Code で CI 待ち時間を 18 分から 4 分台に短縮する【GitHub Actions】</title>
-      <link>https://zenn.dev/edash_tech_blog/articles/5b90aa33bd8d49</link>
-      <guid isPermaLink="false">https://zenn.dev/edash_tech_blog/articles/5b90aa33bd8d49</guid>
-      <description>[Score: 85] 本記事では、AIコーディングエージェントClaude Codeを活用し、GitHub ActionsにおけるCIの待ち時間を18分から4分台に大幅短縮した事例を紹介しています。 / Next.js（TypeScript）アプリケーションのVitestテストにおいて、テスト実行前のオーバーヘッドが主な原因であることを特定し、Vitestのprojects機能でテスト環境を分割。 / これにより、DOMを使わないテストをnode環境で実行し、ワーカー数を最適化することで、CIの高速化を実現しました。 (Source: Zenn)</description>
-      <pubDate>Mon, 19 Oct 2026 23:00:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>「侵入経路塞いだが、バックドアから……」不正アクセス105時間の攻防、分単位で報告　防災メールのアルカディア</title>
-      <link>https://www.itmedia.co.jp/news/article/2610/20/2000002426/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2610/20/2000002426/</guid>
-      <description>[Score: 85] 防災情報配信サービス「SpeeCAN RAIDEN」が不正アクセスを受け、個人情報が漏洩した事件の詳細が分単位で公表されました。 / 攻撃者はディレクトリトラバーサル脆弱性を利用して設定ファイルを取得し、バックドアを設置して約142万通のメールを送信。 / 企業がLLMを活用した脆弱性診断とコードレビューで復旧した事例であり、サイバー攻撃の生々しい実態と対策の重要性を示しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 20 Oct 2026 06:16:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>ウィンドウズアップデートについて調べたらめちゃめちゃ面白かった</title>
-      <link>https://anond.hatelabo.jp/20261020173628</link>
-      <guid isPermaLink="false">https://anond.hatelabo.jp/20261020173628</guid>
-      <description>[Score: 85] Windowsの強制アップデートは、ユーザーがセキュリティ更新を怠った結果、大規模なウイルス感染（Blaster, Sasser, WannaCryなど）が多発した歴史的経緯から生まれた。 / Microsoftはユーザーの自主性に任せるとアップデートしないという残酷な真実に直面し、システム側が強制的にユーザーを守る方針に転換した。 / この機能は、ユーザーの作業を中断させる「嫌がらせ」ではなく、愚かな人類をウイルスから守るための「愛と絶望の機能」である。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 20 Oct 2026 08:41:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>AWS Transform、Azure Functions用のコードをAWS Lambda用に変換など、Microsoft AzureからAWSへの移行に対応</title>
-      <link>https://www.publickey1.jp/blog/26/aws_transformazure_functionsaws_lambdamicrosoft_azureaws.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws_transformazure_functionsaws_lambdamicrosoft_azureaws.html</guid>
-      <description>[Score: 85] AWSが「AWS Transform」に新機能を追加し、Azure SDKで書かれた.NETアプリケーションをAWS SDKを用いたコードに変換できるようになりました。 / これにより、Azure FunctionsやAzure Blob StorageなどAzure固有のサービスを利用する.NETアプリのAWSへの移行が容易になります。 / 変換できないコードはToDoコメントやダミーコード、または別途Markdownファイルで説明されるため、移行作業の効率化が期待されます。 (Source: Publickey)</description>
-      <pubDate>Mon, 19 Oct 2026 15:47:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>3人のJavaチャンピオンがGitHub Copilotを生産性向上にどう活用しているか</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
-      <description>[Score: 85] 3人のJavaチャンピオンがGitHub Copilotをどのように活用し、生産性を向上させているかを紹介しています。 / Copilotはコード生成だけでなく、分析、設計、実装の各段階で役立ち、開発期間を大幅に短縮できることが示されています。 / AIツールを効果的に利用するための実践的なヒントやベストプラクティスが共有されています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>Evergreenを維持する：共有組織におけるセキュアなアクセスとリポジトリ衛生を自動化する方法</title>
+      <title>常に最新の状態を保つ：共有組織におけるセキュアなアクセスとリポジトリの衛生管理を自動化する方法</title>
       <link>https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</link>
       <guid isPermaLink="false">https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/</guid>
-      <description>[Score: 85] GitHubが、外部コラボレーターとの共有組織におけるリポジトリのアクセス管理と衛生管理を自動化する「Evergreen」を紹介しています。 / EvergreenはGitHub Appとして構築され、アクセスレビューの自動化やリポジトリのアーカイブを安全に行います。 / 「Fail secure」と「Never destroy anything」の2つの設計原則に基づき、GitHubのネイティブ機能を活用して実装されています。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHubは、外部コラボレーターとの共同作業におけるリポジトリのアクセス管理と衛生管理を自動化するGitHub App「Evergreen」を開発しました。 / Evergreenは、アクセスレビューの自動化、権限変更、リポジトリのアーカイブをGitHubのネイティブ機能とGo言語のWebhookサーバーで実現します。 / 「Fail secure（安全側に倒す）」と「Never destroy anything（何も破壊しない）」という2つの設計原則に基づき、セキュリティと回復性を確保しています。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 15 Oct 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>MedPAO-Assist: 放射線レポート構造化のためのエッジ展開可能なモダリティ認識型エージェントAI</title>
+      <link>https://arxiv.org/abs/2610.26913</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.26913</guid>
+      <description>[Score: 85] 本記事は、arXivに投稿された論文であり、医療分野におけるAIの応用に関する研究です。 / 放射線レポートの構造化を目的とした、エッジ展開可能なモダリティ認識型エージェントAI「MedPAO-Assist」を提案しています。 / 医療現場でのレポート作成の効率化と精度向上に貢献し、診断支援の可能性を秘めています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Wed, 21 Oct 2026 04:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
