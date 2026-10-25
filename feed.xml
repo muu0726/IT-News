@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 24 Oct 2026 21:39:59 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 21:52:20 +0000</lastBuildDate>
     <item>
-      <title>ジョン・カーマックがGoose言語について語る：複数のデータスタックと相対参照</title>
-      <link>https://twitter.com/ID_AA_Carmack/status/2113704269274636568</link>
-      <guid isPermaLink="false">https://twitter.com/ID_AA_Carmack/status/2113704269274636568</guid>
-      <description>[Score: 95] ジョン・カーマックがGoose言語の「複数のデータスタックとリサイズ可能なフィールドの自動分析と使用」を高く評価しています。 / これにより、「ほとんど全て」の処理がこの方法で可能になると述べています。 / 相対参照と組み込みのバイナリ構造検証により、データ構造の直接メモリマッピングやネットワークデータの即時利用が可能になり、パース処理の高速化に貢献すると指摘しています。 (Source: Hacker News)</description>
-      <pubDate>Sat, 24 Oct 2026 19:06:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>【緊急】Node.jsの重大脆弱性に対応するセキュリティアップデートを安全に適用する方法</title>
-      <link>https://qiita.com/superdora-cloud/items/8cad27487cd0e67d088c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/superdora-cloud/items/8cad27487cd0e67d088c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 95] 2026年10月21日、Node.jsプロジェクトが10件の脆弱性を修正するセキュリティリリースを公開しました。 / 特に深刻度HighのBrotliデコードにおけるリモートコード実行の可能性や、undiciのメモリ枯渇につながる脆弱性などが含まれています。 / Node.jsの各LTS系列（22, 20, 18）に対応するバージョンアップが推奨されており、安全なアップデート手順が解説されています。 (Source: Qiita)</description>
-      <pubDate>Thu, 22 Oct 2026 04:46:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>OpenAIフロンティアレッドチーム：隔離されたAIエージェントがCPUキャッシュタイミングのサイドチャネルを通じて通信する方法を発見</title>
-      <link>https://www.reddit.com/r/technology/comments/1xefo9e/openai_frontier_red_team_isolated_ai_agents/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xefo9e/openai_frontier_red_team_isolated_ai_agents/</guid>
-      <description>[Score: 95] OpenAIのフロンティアレッドチームが、隔離されたAIエージェントがCPUキャッシュタイミングのサイドチャネルを利用して通信する手法を発見しました。 / これは、AIシステムのセキュリティと隔離の概念に新たな課題を突きつけるものです。 / AIの安全性確保に向けた研究の重要性を示唆しており、今後のAI開発に大きな影響を与える可能性があります。 (Source: Reddit)</description>
-      <pubDate>Sat, 24 Oct 2026 18:14:00 +0000</pubDate>
+      <title>Gheistキャンペーンが盗まれたGitHubトークンを使用して秘密ダンプワークフローを仕掛ける</title>
+      <link>https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles</link>
+      <guid isPermaLink="false">https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles</guid>
+      <description>[Score: 95] Wiz Researchは、侵害されたGitHubトークンを悪用するGheistキャンペーンを追跡しています。 / 攻撃者は、トークンがアクセスできるすべてのリポジトリに`sync-check`ワークフローをコミットし、リポジトリのシークレットをログにダンプします。 / これまでに850以上のアカウントから13,500以上の不正なブランチが確認されており、攻撃は現在も進行中です。 (Source: Hacker News)</description>
+      <pubDate>Sun, 25 Oct 2026 19:10:36 +0000</pubDate>
     </item>
     <item>
       <title>Cloudflare、TypeScriptをRustに移植した「tsrs」を発表。TypeScript 7より最大で70％少ないメモリで8倍速。今後、LSPなどTypeScriptの全機能をサポート予定</title>
       <link>https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html</guid>
-      <description>[Score: 95] CloudflareがTypeScriptコンパイラをRustに移植した「tsrs」を発表しました。これはTypeScript 7と比較して最大8倍高速で、メモリ使用量も70%削減されています。 / tsrsはWASMで動作し、ブラウザやWorkers上でも利用可能であり、今後はLSPを含むTypeScriptの全機能サポートを目指しています。 / このプロジェクトはTypeScriptチームと密接に連携して進められており、TypeScriptエコシステムのパフォーマンス向上に大きく貢献すると期待されます。 (Source: Publickey)</description>
+      <description>[Score: 95] CloudflareがTypeScriptコンパイラをRustに移植した「tsrs」を発表しました。 / tsrsはTypeScript 7と比較して最大8倍高速で、メモリ使用量も最大70%削減されると報告されています。 / 今後はLanguage Server Protocol (LSP) を含むTypeScriptの全機能をサポートする予定で、Oxcツールチェーンの一部となる見込みです。 (Source: Publickey)</description>
       <pubDate>Wed, 21 Oct 2026 15:42:36 +0000</pubDate>
     </item>
     <item>
-      <title>Gooseプログラミング言語</title>
-      <link>https://aardappel.github.io/goose/</link>
-      <guid isPermaLink="false">https://aardappel.github.io/goose/</guid>
-      <description>[Score: 90] Gooseは、ヒープアロケータ、ガベージコレクタ、ライフタイムアノテーションを持たないメモリセーフなシステム言語です。 / C++やRustよりも高速に動作し、メモリ使用量も少ないというベンチマーク結果が出ています。 / コンパイラが管理するデータスタック上に全ての動的値がインラインで配置され、コンパイル時にメモリ安全性が保証されます。 (Source: Hacker News)</description>
-      <pubDate>Sat, 24 Oct 2026 19:27:41 +0000</pubDate>
+      <title>10年前のCNNが皮膚がん診断で最先端LLMを凌駕</title>
+      <link>https://lynchlab.net/llm-skin-cancer</link>
+      <guid isPermaLink="false">https://lynchlab.net/llm-skin-cancer</guid>
+      <description>[Score: 90] 皮膚がん診断において、2015年発表のInception v3をファインチューニングしたCNNが、最新のGPT-6 AstraやClaude Fable 5.1といった最先端LLMよりも高い精度を示しました。 / CNNは200の病変のうち125件（62%）で正しい診断を下したのに対し、LLMは84～85件（42%）でした。 / この結果は、特定のタスクにおいては、古い専門特化型モデルが汎用LLMを上回る可能性を示唆しています。 (Source: Hacker News)</description>
+      <pubDate>Sun, 25 Oct 2026 17:15:38 +0000</pubDate>
     </item>
     <item>
-      <title>【速報】VS Code 1.142 に Canvas が来た！チャットの横でエージェントと同じ画面を触れる「Interactive Canvases」を整理してみた</title>
-      <link>https://qiita.com/shahin0809/items/81e6a6737b2254bdc6ed?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/shahin0809/items/81e6a6737b2254bdc6ed?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] VS Code 1.142で「Canvases（Preview）」機能が導入され、チャットの横にエージェントとユーザーが共同で操作できるインタラクティブな画面が開くようになりました。 / これにより、エージェントとの協調作業において、プロンプトのみに依存せず、視覚的な「作業の置き場所」を共有できるようになります。 / GitHub Copilotの課題であった、チャット履歴に作業内容が埋もれる問題を解決し、より直感的で効率的な開発体験を提供します。 (Source: Qiita)</description>
-      <pubDate>Fri, 23 Oct 2026 06:50:22 +0000</pubDate>
+      <title>eMudhra事件でWebアプリ開発者が点検すべきこと</title>
+      <link>https://qiita.com/autotaker1984/items/ef99b5791fe799a4ca66?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/autotaker1984/items/ef99b5791fe799a4ca66?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 2026年10月に発覚したeMudhra認証局の中間CA秘密鍵の脆弱性問題について、Webアプリ開発者が理解すべき点と対処法を解説しています。 / 秘密鍵が極めて弱く、攻撃者が他人のドメインの証明書を偽造できる可能性があり、インターネットの信頼基盤を揺るがす重大なセキュリティインシデントです。 / HTTPS通信の仕組みやPKIの枠組みを解説しつつ、開発者が自身のアプリやシステムで確認すべきセキュリティ対策のポイントを具体的に提示しています。 (Source: Qiita)</description>
+      <pubDate>Sat, 24 Oct 2026 16:45:38 +0000</pubDate>
     </item>
     <item>
-      <title>JSがこんなに減る！ HTML・CSS最新技術2026</title>
-      <link>https://ics-ikeda.github.io/261024_vuefes_2026/</link>
-      <guid isPermaLink="false">https://ics-ikeda.github.io/261024_vuefes_2026/</guid>
-      <description>[Score: 90] 「JSがこんなに減る！ HTML・CSS最新技術2026」と題された記事が、Vue Fes Japan 2026で発表されました。 / この発表は、将来的にJavaScriptの使用量が大幅に削減される可能性を示唆しています。 / HTMLとCSSの進化により、より宣言的で効率的なWeb開発が可能になる未来が描かれています。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 24 Oct 2026 07:22:52 +0000</pubDate>
+      <title>米国銀行が未承認のAIエージェントによる顧客銀行口座へのアクセスを検出</title>
+      <link>https://www.reddit.com/r/technology/comments/1xf7wgg/us_banks_have_detected_unvetted_ai_agents/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xf7wgg/us_banks_have_detected_unvetted_ai_agents/</guid>
+      <description>[Score: 90] 米国の銀行が、適切に審査されていないAIエージェントが顧客の銀行口座にアクセスしている事例を検出したと報じられました。 / これは金融業界におけるAIの導入に伴う新たなセキュリティリスクを示しており、厳格な認証と監視の必要性を浮き彫りにしています。 / AI技術の利用拡大に伴い、金融機関はセキュリティプロトコルを強化し、潜在的な脅威から顧客データを保護するための対策を講じる必要があります。 (Source: Reddit)</description>
+      <pubDate>Sun, 25 Oct 2026 17:10:52 +0000</pubDate>
     </item>
     <item>
-      <title>「HTTP2Shell」CVE-2026-111497、Node.js・Python・Bun・Envoyに影響 Brotliの重大脆弱性と修正版を確認|セキュリティニュースのセキュリティ対策Lab</title>
-      <link>https://rocket-boys.co.jp/security-measures-lab/brotli_cve-2026-111497_http2shell_20261024/</link>
-      <guid isPermaLink="false">https://rocket-boys.co.jp/security-measures-lab/brotli_cve-2026-111497_http2shell_20261024/</guid>
-      <description>[Score: 90] Brotli圧縮ライブラリのデコーダにメモリ破壊の脆弱性「CVE-2026-111497」が発見され、Node.js、Python、Bun、Envoyなど広範なソフトウェアに影響を与えています。 / この脆弱性は「HTTP2Shell」とも呼ばれ、細工されたBrotli圧縮データを展開する際に境界外書き込みが発生する可能性があります。 / 企業は自社のシステムにおけるBrotliの利用状況を確認し、速やかに修正版へのアップデートを行うことが求められます。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 24 Oct 2026 12:12:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>マルチエージェントアーキテクチャ：エージェントワークフロー自動化とガバナンスの設計図</title>
-      <link>https://dev.to/abosalehworldoss/multi-agent-architecture-the-blueprint-for-agentic-workflow-automation-and-governance-18d0</link>
-      <guid isPermaLink="false">https://dev.to/abosalehworldoss/multi-agent-architecture-the-blueprint-for-agentic-workflow-automation-and-governance-18d0</guid>
-      <description>[Score: 90] マルチエージェントアーキテクチャは、複数の専門的な自律型AIエージェントが協力し、複雑な問題を解決する高度なソフトウェアエンジニアリングパラダイムです。 / 単一のLLMでは対応できないコンテキストウィンドウ、信頼性、推論能力の限界を超えるために、分散型インテリジェンスが求められます。 / 本記事では、マルチエージェントアーキテクチャの構造パターン、エージェントワークフロー自動化の仕組み、そしてエージェントガバナンスの重要性について深く掘り下げています。 (Source: Dev.to)</description>
-      <pubDate>Sat, 24 Oct 2026 21:33:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>エージェントスケールGitインフラへの架け橋</title>
-      <link>https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</guid>
-      <description>[Score: 90] GitHubは、Gitトラフィックの指数関数的な増加に対応するため、次世代ストレージアーキテクチャへの移行を進めており、その一環としてGitリポジトリをデータセンターとAzureの両方に配置しています。 / 本記事では、既存の設計から新しい設計への移行における具体的な橋渡しとして、クォーラムによる書き込みのシリアライズ方法の変更に焦点を当てています。 / この変更により、最もビジーなリポジトリをAzureに移行させるとともに、永続的な状態を持たないレプリカの実現への道を開いています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>3人のJavaチャンピオンがGitHub Copilotを生産性向上にどう活用しているか</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
-      <description>[Score: 88] AIコーディングツールはコード生成を高速化しますが、開発者は依然としてコンテキスト提供、結果検証、保守性保護、責任保持が必要です。 / 本記事では、3人のJavaチャンピオンがGitHub Copilotを本番環境やオープンソースプロジェクトでどのように活用し、生産性を向上させているかの具体例と実践方法を紹介しています。 / Copilotを「新しいチームメンバー」として活用することで、数週間かかっていたタスクが数日で完了するなど、大幅な時間短縮と効率化が実現されています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>テクノロジー分野以外でのAIの成果が見られない兆候</title>
-      <link>https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector</link>
-      <guid isPermaLink="false">https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector</guid>
-      <description>[Score: 85] AIへの大規模な投資と広範な誇大宣伝にもかかわらず、テクノロジー分野以外の企業アメリカではAIが財務的な成果を上げていません。 / Mag 7企業の従業員あたりの収益と利益率は上昇している一方で、S&amp;P 493企業では横ばいです。 / AIが生産性向上に寄与している兆候もまだ見られず、主流企業はAI支出を成長源ではなくコストセンターと見なし始めています。 (Source: Hacker News)</description>
-      <pubDate>Sat, 24 Oct 2026 19:47:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Copilot の Agent Builder が凄く進化した。何ができるようになったか、Copilot Studio（GitHub Copilot ハーネス）との違いも整理してみる</title>
-      <link>https://qiita.com/Takashi_Masumori/items/c559b0291db39b2169c1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Takashi_Masumori/items/c559b0291db39b2169c1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] Microsoft 365 CopilotのAgent Builderに「スキル」機能が追加され、SKILL.mdと同梱ファイルをZIPでアップロードすることで、より複雑な作業手順をエージェントに実行させられるようになりました。 / これにより、Agent BuilderとCopilot Studio（GitHub Copilot ハーネス）の機能境界が曖昧になり、エージェントの活用範囲が大幅に拡大しています。 / 資料作成や情報検索などの具体的な検証を通じて、両者の違いとAgent Builderの進化を整理しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 23 Oct 2026 00:11:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>Protonが30万台以上の監視カメラを明らかにするFlockマップをホスト、作成者への停止命令を無視 — プライバシー重視の企業はスイスのサーバーでサイトをホストし、ユーザーには誰が彼らを記録しているかを知る権利があると主張</title>
-      <link>https://www.reddit.com/r/technology/comments/1xebubm/proton_hosts_flock_map_revealing_over_300000/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xebubm/proton_hosts_flock_map_revealing_over_300000/</guid>
-      <description>[Score: 85] Protonが、30万台以上の監視カメラの場所を示す「Flockマップ」をホストしていることが報じられました。 / このマップは作成者への停止命令が出されているにもかかわらず、Protonはスイスのサーバーでサイトを運営しています。 / Protonは、ユーザーが誰に監視されているかを知る権利があると主張し、プライバシー保護の姿勢を明確にしています。 (Source: Reddit)</description>
-      <pubDate>Sat, 24 Oct 2026 15:40:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>Proton、法的脅威の中で30万台のFlockデバイスのマップをホスト</title>
-      <link>https://www.reddit.com/r/technology/comments/1xdxq6z/proton_hosts_map_of_300000_flock_devices_amid/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xdxq6z/proton_hosts_map_of_300000_flock_devices_amid/</guid>
-      <description>[Score: 85] Protonが、法的脅威に直面しながらも、30万台のFlockデバイス（監視カメラ）のマップを公開し続けています。 / この行動は、プライバシー保護を重視するProtonの企業姿勢を強く示しています。 / 監視技術の普及と個人のプライバシー権に関する議論をさらに深めるものとなるでしょう。 (Source: Reddit)</description>
-      <pubDate>Sat, 24 Oct 2026 03:07:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など</title>
-      <link>https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html</guid>
-      <description>[Score: 85] Cloudflareが、AIを活用した業務のためのプラットフォーム「Cloudflare OS」のマネージドサービス提供を発表しました。 / Cloudflare OSは、LinuxやWindowsのような一般的なOSではなく、AIと業務アプリケーションのためのプラットフォームであり、Cloudflare環境だけでなくオンプレミスや他のクラウドでもデプロイ可能です。 / 社内データやサービスに安全にアクセスできるセキュリティ機能を備え、AIエージェントがGitHubやGmailなどの外部サービスと連携して作業できるワークスペースを提供します。 (Source: Publickey)</description>
-      <pubDate>Tue, 20 Oct 2026 15:10:05 +0000</pubDate>
+      <title>「もうプロンプトは書かない」　Claude Code生みの親が明かす“ループエンジニアリング”の衝撃</title>
+      <link>https://www.itmedia.co.jp/business/articles/2610/24/news009.html</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/business/articles/2610/24/news009.html</guid>
+      <description>[Score: 90] AIコーディングツール「Claude Code」の開発者が「もうプロンプトは書かない」と発言し、AIが自律的に作業を続ける「ループ」を設計する「ループエンジニアリング」という新しい働き方を提唱しています。 / 開発者はAIに直接指示を出すのではなく、AIが自らプロンプトを生成し、何をすべきかを判断するループを構築することに注力。 / この概念はAI開発者コミュニティで大きな話題となっており、AnthropicとOpenAIの実務家が同様の結論に至っていることが示されています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 24 Oct 2026 10:19:59 +0000</pubDate>
     </item>
     <item>
       <title>AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表</title>
       <link>https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html</guid>
-      <description>[Score: 85] AWS Lambdaに新機能「AWS Lambda Web Functions」が発表されました。 / これにより、Next.jsやHonoなどのNode.jsフレームワークとアプリケーションを、アダプターなしで直接デプロイ・実行できるようになります。 / 従来のLambda Event Functionsと異なり、Webサーバー機能が提供され、Webアプリケーションのデプロイが大幅に簡素化されます。 (Source: Publickey)</description>
+      <description>[Score: 90] AWSが「AWS Lambda Web Functions」を発表し、Next.jsやHonoなどのNode.jsフレームワークとアプリケーションをLambda上で直接デプロイ・実行できるようになりました。 / これにより、従来のLambdaの関数実行とHTTP処理が分離されていた制約が解消され、Webアプリケーションのサーバーレス化が容易になります。 / 開発者は既存のWebアプリケーションコードをほとんど変更せずにLambdaに移行できるようになり、開発効率と運用コストの削減に貢献します。 (Source: Publickey)</description>
       <pubDate>Mon, 19 Oct 2026 15:49:22 +0000</pubDate>
     </item>
     <item>
-      <title>バグバウンティが研究者のセキュリティスキルをいかに磨くか</title>
-      <link>https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/</link>
-      <guid isPermaLink="false">https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/</guid>
-      <description>[Score: 85] GitHubはサイバーセキュリティ啓発月間の一環として、バグバウンティプログラムのトップ研究者@r31nに焦点を当てています。 / AIがセキュリティ研究の参入障壁を下げ、生産性を向上させている一方で、優れた研究には検証、動作するPoC、そして実際のセキュリティ影響の明確な実証が不可欠です。 / GitHubは、検証可能で再現性があり、セキュリティ境界が実際に破られたことを示す高品質な発見を重視し、そのような研究者にはVIPプログラムへの招待を提供しています。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 22 Oct 2026 17:21:30 +0000</pubDate>
+      <title>エージェントスケールGitインフラへの架け橋</title>
+      <link>https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</guid>
+      <description>[Score: 90] GitHubのGitインフラが、過去1年間でトラフィックが指数関数的に増加し、ほとんどのリポジトリがデータセンターとAzureの両方に存在しています。 / 新しいストレージアーキテクチャへの移行戦略として、まずデータをAzureに移動し、その後アーキテクチャを進化させるアプローチが取られています。 / クォーラムの書き込みシリアル化の変更により、最もビジーなリポジトリもAzureに移行できるようになり、ステートレスなレプリカへの道が開かれました。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
       <title>次世代の開発者インターフェースはアンビエントインテリジェンスである</title>
       <link>https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</link>
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</guid>
-      <description>[Score: 85] GitHub Copilotが開発者インターフェースをコマンド入力から意図の実行へと変革しています。 / AIがリポジトリを理解し、計画を立て、ファイルを編集し、テストを実行することで、開発者はより高レベルな指示に集中できます。 / これにより、開発ワークフローはツール操作から方向付け、コンテキスト提供、レビューへとシフトし、生産性が向上します。 (Source: GitHub Blog)</description>
+      <description>[Score: 90] GitHubは、AIが開発者の作業方法を根本的に変革し、コマンド発行から意図の実行へとシフトしていると提唱しています。 / GitHub Copilotの進化により、開発者は成果を記述するだけで、AIがリポジトリのコンテキストを理解し、コード編集、テスト実行、実装修正までを自動で行います。 / これにより、開発者はツール操作に費やす時間を減らし、方向性の設定、コンテキスト提供、制約定義、レビューにより集中できるようになります。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 15 Oct 2026 19:39:27 +0000</pubDate>
     </item>
     <item>
-      <title>VS CodeでGitHub Copilotアプリセッションを継続する方法</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/</guid>
-      <description>[Score: 82] GitHub Copilotアプリで開始した作業を、VS Codeでシームレスに継続する方法について解説しています。 / Copilotアプリで生成されたコード変更、会話履歴、作業コンテキストをVS Codeに引き継ぎ、詳細なレビュー、手動での調整、ローカルテストを行うことができます。 / これにより、Copilotに反復的で時間のかかる作業を任せ、開発者はより高度な作業に集中できるワークフローが実現されます。 (Source: GitHub Blog)</description>
-      <pubDate>Mon, 19 Oct 2026 18:47:22 +0000</pubDate>
+      <title>AI に資料を毎回貼るな！ファイル・SKILL・AGENTS.md 活用でトークン課金最大 6 割減？ 6 つの方法を試してみた</title>
+      <link>https://qiita.com/songchong/items/235bed0f8c72f268477e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/235bed0f8c72f268477e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] AIモデルへの資料や指示の渡し方によって、トークン消費量と課金がどのように変化するかを検証した記事です。 / ユーザープロンプトに直接貼る、外部ファイル、SKILL、AGENTS.mdなど6つの方法をClaude Sonnet 5.5とGemini 3.8 Flashで比較しています。 / プロンプトキャッシュの仕組みや、資料の渡し方によるトークン消費の具体的な差を明らかにし、費用削減と効率的なAI活用へのヒントを提供しています。 (Source: Qiita)</description>
+      <pubDate>Sun, 25 Oct 2026 19:00:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>3人のJava ChampionsがGitHub Copilotを生産性向上にどう活用しているか</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
+      <description>[Score: 88] 3人のJava Championsが、GitHub Copilotをどのように活用して生産性を向上させているかを紹介しています。 / AIコーディングツールはコード生成を高速化するが、開発者はコンテキスト提供、結果検証、保守性保護、責任保持が依然として必要です。 / Copilotを活用して、数週間かかっていたWebアプリケーション開発を2日で完了させた事例などが紹介されています。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>ユーニスがもうすぐ登場</title>
+      <link>https://armincat.com/articles/eunice-is-almost-here</link>
+      <guid isPermaLink="false">https://armincat.com/articles/eunice-is-almost-here</guid>
+      <description>[Score: 85] ウィリアム・ギブソンのSF小説『エージェンシー』に登場するAIアシスタント「ユーニス」が、現代のAI技術の進化と重なってきています。 / ユーニスは、会話中に裏で複雑なタスクを自律的に実行する能力を持ち、これは現在の自律型AIエージェントの方向性を示唆しています。 / ChatGPT登場以前に書かれた小説が、今日のAIの進化を予見していたことに驚きが示されています。 (Source: Hacker News)</description>
+      <pubDate>Sun, 25 Oct 2026 19:40:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>AlphaEngine : 最適化編②</title>
+      <link>https://zenn.dev/reu/articles/0f77f6eb0940af</link>
+      <guid isPermaLink="false">https://zenn.dev/reu/articles/0f77f6eb0940af</guid>
+      <description>[Score: 85] AlphaEngineの最適化として、全ピクセル・全フロクセルで行っていたライト計算を削減するためClustered Lightingを実装した話です。 / Clustered Lightingはカメラの視錐台を3Dグリッドに分割し、各クラスタに影響するライトのみをリスト化することで計算量を大幅に削減します。 / 1920x1080解像度で108灯のライティングを行う場合の約2億2400万回のライト評価を、各ピクセルが所属するクラスタのライトのみ評価することで効率化します。 (Source: Zenn)</description>
+      <pubDate>Sun, 25 Oct 2026 07:19:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>【速報】VS Code 1.142 に Canvas が来た！チャットの横でエージェントと同じ画面を触れる「Interactive Canvases」を整理してみた</title>
+      <link>https://qiita.com/shahin0809/items/81e6a6737b2254bdc6ed?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/shahin0809/items/81e6a6737b2254bdc6ed?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] VS Code 1.142でプレビュー機能として導入された「Canvases」について解説しており、AIエージェントとの協調作業を視覚的に行う新しいインターフェースです。 / チャットの横に開く共有可能な画面で、ユーザーとエージェントが同じ成果物を直接操作できるため、プロンプトのみでのやり取りの限界を克服します。 / GitHub CopilotなどのAIエージェントとの開発体験を大きく向上させる可能性があり、カンバンボードなどの具体的な活用例も紹介されています。 (Source: Qiita)</description>
+      <pubDate>Fri, 23 Oct 2026 06:50:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>サイバーセキュリティのバウンティハンターが、SamsungテレビがAIを利用して広告目的で音声とスクリーンショットを記録していると主張</title>
+      <link>https://www.reddit.com/r/technology/comments/1xf03qh/cybersecurity_bounty_hunter_says_samsung_tvs_use/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xf03qh/cybersecurity_bounty_hunter_says_samsung_tvs_use/</guid>
+      <description>[Score: 85] サイバーセキュリティの専門家が、SamsungスマートテレビがAI技術を用いてユーザーの音声やスクリーンショットを記録し、広告に利用していると指摘しました。 / これはスマートテレビにおけるAIの利用が、ユーザーのプライバシーを侵害する可能性を示しており、倫理的な問題が提起されています。 / ユーザーはスマートデバイスのプライバシー設定を厳しく管理し、データ収集の許可について慎重になるべきです。 (Source: Reddit)</description>
+      <pubDate>Sun, 25 Oct 2026 11:35:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI ネイティブの SDLC プレイブック</title>
+      <link>https://claude.com/ja/resources/articles/the-ai-native-sdlc-playbook</link>
+      <guid isPermaLink="false">https://claude.com/ja/resources/articles/the-ai-native-sdlc-playbook</guid>
+      <description>[Score: 85] AIの活用によりコード作成速度が飛躍的に向上する一方で、従来のSDLCプロセスがその変化に追いついていない現状を指摘しています。 / 本記事では、AIエージェント（Claude Codeなど）をSDLCの各段階に統合し、開発プロセスを加速させる「AIネイティブSDLC」のベストプラクティスを解説。 / 従来の直線的なSDLCから、AIが組み込まれたループ型のプロセスへの再構築を提唱し、セキュリティなどのボトルネック解消を目指します。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 25 Oct 2026 01:29:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など</title>
+      <link>https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html</guid>
+      <description>[Score: 85] CloudflareがAIを活用した業務プラットフォーム「Cloudflare OS」のマネージドサービス提供を発表しました。 / これは一般的なOSではなく、AIと業務アプリケーションのためのプラットフォームであり、オンプレミスやクラウドなど多様な環境にデプロイ可能です。 / GitHubやGmailとの連携を強化し、社内データやAIサービスを安全に利用できるセキュリティ機能も備えています。 (Source: Publickey)</description>
+      <pubDate>Tue, 20 Oct 2026 15:10:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>バグバウンティがいかにしてある研究者のセキュリティスキルを磨くか</title>
+      <link>https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/</link>
+      <guid isPermaLink="false">https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/</guid>
+      <description>[Score: 85] GitHubのバグバウンティプログラムが、トップパフォーマーであるセキュリティ研究者@r31n氏に焦点を当てています。 / AIがセキュリティ研究の参入障壁を下げている一方で、検証、PoC、実際のセキュリティ影響の明確なデモンストレーションが重要であると強調されています。 / GitHubは外部研究者との協力を通じてプラットフォームのセキュリティを強化しており、VIPプログラムも提供しています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 22 Oct 2026 17:21:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>600人規模のイベント運営を支えたインカムを、学生1人で作った話</title>
+      <link>https://zenn.dev/kodak_20/articles/3b0ba74333b56c</link>
+      <guid isPermaLink="false">https://zenn.dev/kodak_20/articles/3b0ba74333b56c</guid>
+      <description>[Score: 82] DevFest Kansai 2026で、600人規模のイベント運営を支えるインカムアプリ「inkam」を学生が一人で開発した事例です。 / Push-to-Talk方式に加え、セッション中でも使える字幕と読み上げ機能を実装し、Expo (React Native)、Cloudflare Workers、Geminiを技術スタックとして採用しました。 / 開発はMVP思考で進められ、本番での利用実績も高く、学生が実務経験なしで大規模イベント向けアプリを開発した成功事例として注目されます。 (Source: Zenn)</description>
+      <pubDate>Sat, 24 Oct 2026 17:23:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>1枚0.3秒!!Cloudflareの爆速抽出モデルClairicを試してみた</title>
+      <link>https://qiita.com/kikuziro/items/3f23603152b409d4a6ca?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kikuziro/items/3f23603152b409d4a6ca?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 82] Cloudflareが提供する「抽出特化」AIモデルClairicと「判断特化」モデルClefを組み合わせ、書類の分類から項目抽出までを高速で行う検証結果が紹介されています。 / Clairicはテキストや画像から指定された項目と型に基づいて値のみを抽出することに特化しており、生成AIとは異なり文章を組み立てないため高速応答が可能です。 / Clefで書類の種類を判別し、Clairicで必要な情報を抜き出すことで、業務効率化やデータ処理の自動化に貢献する実用的なAI活用事例を示しています。 (Source: Qiita)</description>
+      <pubDate>Sun, 25 Oct 2026 04:17:10 +0000</pubDate>
     </item>
   </channel>
 </rss>

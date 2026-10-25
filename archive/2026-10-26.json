@@ -1,0 +1,758 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-10-26T06:52:20.556553+09:00",
+  "total_count": 43,
+  "success_count": 43,
+  "error_count": 0,
+  "gemini_model": "gemini-2.5-flash",
+  "articles": [
+    {
+      "title": "Gheistキャンペーンが盗まれたGitHubトークンを使用して秘密ダンプワークフローを仕掛ける",
+      "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+      "source": "Hacker News",
+      "published": "2026-10-25T19:10:36+00:00",
+      "hn_score": 31,
+      "hn_comments": 0,
+      "summary": "Wiz Researchは、侵害されたGitHubトークンを悪用するGheistキャンペーンを追跡しています。\n攻撃者は、トークンがアクセスできるすべてのリポジトリに`sync-check`ワークフローをコミットし、リポジトリのシークレットをログにダンプします。\nこれまでに850以上のアカウントから13,500以上の不正なブランチが確認されており、攻撃は現在も進行中です。",
+      "tags": [
+        "GitHub",
+        "セキュリティ",
+        "サイバー攻撃"
+      ],
+      "category": "セキュリティ",
+      "score": 95,
+      "score_reason": "GitHubトークンの大規模な悪用は、開発者や企業にとって深刻なセキュリティリスクであり、即座の対応が求められるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Cloudflare、TypeScriptをRustに移植した「tsrs」を発表。TypeScript 7より最大で70％少ないメモリで8倍速。今後、LSPなどTypeScriptの全機能をサポート予定",
+      "url": "https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html",
+      "source": "Publickey",
+      "published": "2026-10-21T15:42:36+00:00",
+      "summary": "CloudflareがTypeScriptコンパイラをRustに移植した「tsrs」を発表しました。\ntsrsはTypeScript 7と比較して最大8倍高速で、メモリ使用量も最大70%削減されると報告されています。\n今後はLanguage Server Protocol (LSP) を含むTypeScriptの全機能をサポートする予定で、Oxcツールチェーンの一部となる見込みです。",
+      "tags": [
+        "TypeScript",
+        "Rust",
+        "コンパイラ"
+      ],
+      "category": "プログラミング言語",
+      "score": 95,
+      "score_reason": "TypeScriptのコンパイラが大幅に高速化・省メモリ化されることは、フロントエンド開発の生産性向上に直結し、業界全体に大きな影響を与えるため、非常に重要です。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "10年前のCNNが皮膚がん診断で最先端LLMを凌駕",
+      "url": "https://lynchlab.net/llm-skin-cancer",
+      "source": "Hacker News",
+      "published": "2026-10-25T17:15:38+00:00",
+      "hn_score": 315,
+      "hn_comments": 165,
+      "summary": "皮膚がん診断において、2015年発表のInception v3をファインチューニングしたCNNが、最新のGPT-6 AstraやClaude Fable 5.1といった最先端LLMよりも高い精度を示しました。\nCNNは200の病変のうち125件（62%）で正しい診断を下したのに対し、LLMは84～85件（42%）でした。\nこの結果は、特定のタスクにおいては、古い専門特化型モデルが汎用LLMを上回る可能性を示唆しています。",
+      "tags": [
+        "AI",
+        "医療AI",
+        "CNN",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "最先端LLMが万能ではないことを示し、特定の専門分野では既存のAIモデルが優位であるという重要な知見を提供するため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "eMudhra事件でWebアプリ開発者が点検すべきこと",
+      "url": "https://qiita.com/autotaker1984/items/ef99b5791fe799a4ca66?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-24T16:45:38+00:00",
+      "summary": "2026年10月に発覚したeMudhra認証局の中間CA秘密鍵の脆弱性問題について、Webアプリ開発者が理解すべき点と対処法を解説しています。\n秘密鍵が極めて弱く、攻撃者が他人のドメインの証明書を偽造できる可能性があり、インターネットの信頼基盤を揺るがす重大なセキュリティインシデントです。\nHTTPS通信の仕組みやPKIの枠組みを解説しつつ、開発者が自身のアプリやシステムで確認すべきセキュリティ対策のポイントを具体的に提示しています。",
+      "tags": [
+        "セキュリティ",
+        "HTTPS",
+        "PKI"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "認証局の脆弱性というインターネットの根幹に関わる重大なセキュリティ事件であり、Webアプリ開発者にとって必須の知識と対策が具体的に示されているため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "米国銀行が未承認のAIエージェントによる顧客銀行口座へのアクセスを検出",
+      "url": "https://www.reddit.com/r/technology/comments/1xf7wgg/us_banks_have_detected_unvetted_ai_agents/",
+      "source": "Reddit",
+      "published": "2026-10-25T17:10:52+00:00",
+      "summary": "米国の銀行が、適切に審査されていないAIエージェントが顧客の銀行口座にアクセスしている事例を検出したと報じられました。\nこれは金融業界におけるAIの導入に伴う新たなセキュリティリスクを示しており、厳格な認証と監視の必要性を浮き彫りにしています。\nAI技術の利用拡大に伴い、金融機関はセキュリティプロトコルを強化し、潜在的な脅威から顧客データを保護するための対策を講じる必要があります。",
+      "tags": [
+        "AI",
+        "金融セキュリティ",
+        "サイバー攻撃"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "金融機関におけるAIエージェントによる不正アクセスは、顧客の資産と個人情報に直接的な脅威を与えるため、非常に高い重要性があります。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "「もうプロンプトは書かない」　Claude Code生みの親が明かす“ループエンジニアリング”の衝撃",
+      "url": "https://www.itmedia.co.jp/business/articles/2610/24/news009.html",
+      "source": "はてなブックマーク",
+      "published": "2026-10-24T10:19:59+00:00",
+      "summary": "AIコーディングツール「Claude Code」の開発者が「もうプロンプトは書かない」と発言し、AIが自律的に作業を続ける「ループ」を設計する「ループエンジニアリング」という新しい働き方を提唱しています。\n開発者はAIに直接指示を出すのではなく、AIが自らプロンプトを生成し、何をすべきかを判断するループを構築することに注力。\nこの概念はAI開発者コミュニティで大きな話題となっており、AnthropicとOpenAIの実務家が同様の結論に至っていることが示されています。",
+      "tags": [
+        "AI",
+        "プロンプトエンジニアリング",
+        "ループエンジニアリング"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIとの関わり方におけるパラダイムシフトを示唆しており、今後のAI開発や活用に大きな影響を与える可能性が高いため、非常に重要です。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表",
+      "url": "https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html",
+      "source": "Publickey",
+      "published": "2026-10-19T15:49:22+00:00",
+      "summary": "AWSが「AWS Lambda Web Functions」を発表し、Next.jsやHonoなどのNode.jsフレームワークとアプリケーションをLambda上で直接デプロイ・実行できるようになりました。\nこれにより、従来のLambdaの関数実行とHTTP処理が分離されていた制約が解消され、Webアプリケーションのサーバーレス化が容易になります。\n開発者は既存のWebアプリケーションコードをほとんど変更せずにLambdaに移行できるようになり、開発効率と運用コストの削減に貢献します。",
+      "tags": [
+        "AWS Lambda",
+        "Serverless",
+        "Node.js"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 90,
+      "score_reason": "AWS LambdaがWebフレームワークの直接デプロイに対応することで、サーバーレス開発の敷居が大幅に下がり、Webアプリケーション開発に大きな影響を与えるため、非常に高い重要性を持つと評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "エージェントスケールGitインフラへの架け橋",
+      "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+      "source": "GitHub Blog",
+      "published": "2026-10-21T16:00:00+00:00",
+      "summary": "GitHubのGitインフラが、過去1年間でトラフィックが指数関数的に増加し、ほとんどのリポジトリがデータセンターとAzureの両方に存在しています。\n新しいストレージアーキテクチャへの移行戦略として、まずデータをAzureに移動し、その後アーキテクチャを進化させるアプローチが取られています。\nクォーラムの書き込みシリアル化の変更により、最もビジーなリポジトリもAzureに移行できるようになり、ステートレスなレプリカへの道が開かれました。",
+      "tags": [
+        "Git",
+        "インフラ",
+        "Azure"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 90,
+      "score_reason": "GitHubのような大規模サービスのインフラ移行とスケーリング戦略は、多くの企業にとって参考になり、技術的課題解決の先進事例として非常に重要であるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "次世代の開発者インターフェースはアンビエントインテリジェンスである",
+      "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
+      "source": "GitHub Blog",
+      "published": "2026-10-15T19:39:27+00:00",
+      "summary": "GitHubは、AIが開発者の作業方法を根本的に変革し、コマンド発行から意図の実行へとシフトしていると提唱しています。\nGitHub Copilotの進化により、開発者は成果を記述するだけで、AIがリポジトリのコンテキストを理解し、コード編集、テスト実行、実装修正までを自動で行います。\nこれにより、開発者はツール操作に費やす時間を減らし、方向性の設定、コンテキスト提供、制約定義、レビューにより集中できるようになります。",
+      "tags": [
+        "AI開発",
+        "GitHub Copilot",
+        "開発者体験"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIが開発ワークフローを根本的に変革し、開発者の生産性と創造性を大幅に向上させる可能性を秘めているため、非常に高い重要性を持つと評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "AI に資料を毎回貼るな！ファイル・SKILL・AGENTS.md 活用でトークン課金最大 6 割減？ 6 つの方法を試してみた",
+      "url": "https://qiita.com/songchong/items/235bed0f8c72f268477e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-25T19:00:21+00:00",
+      "summary": "AIモデルへの資料や指示の渡し方によって、トークン消費量と課金がどのように変化するかを検証した記事です。\nユーザープロンプトに直接貼る、外部ファイル、SKILL、AGENTS.mdなど6つの方法をClaude Sonnet 5.5とGemini 3.8 Flashで比較しています。\nプロンプトキャッシュの仕組みや、資料の渡し方によるトークン消費の具体的な差を明らかにし、費用削減と効率的なAI活用へのヒントを提供しています。",
+      "tags": [
+        "AI",
+        "LLM",
+        "コスト最適化"
+      ],
+      "category": "AI・機械学習",
+      "score": 88,
+      "score_reason": "AIモデルの利用コスト最適化は実用性が高く、具体的な検証データに基づいてトークン消費削減のノウハウを提供しているため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "3人のJava ChampionsがGitHub Copilotを生産性向上にどう活用しているか",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
+      "source": "GitHub Blog",
+      "published": "2026-10-20T16:05:03+00:00",
+      "summary": "3人のJava Championsが、GitHub Copilotをどのように活用して生産性を向上させているかを紹介しています。\nAIコーディングツールはコード生成を高速化するが、開発者はコンテキスト提供、結果検証、保守性保護、責任保持が依然として必要です。\nCopilotを活用して、数週間かかっていたWebアプリケーション開発を2日で完了させた事例などが紹介されています。",
+      "tags": [
+        "GitHub Copilot",
+        "Java",
+        "AI開発"
+      ],
+      "category": "AI・機械学習",
+      "score": 88,
+      "score_reason": "AIコーディングツールの実用的な活用事例は、多くの開発者にとって関心が高く、生産性向上への具体的なヒントを提供するため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "ユーニスがもうすぐ登場",
+      "url": "https://armincat.com/articles/eunice-is-almost-here",
+      "source": "Hacker News",
+      "published": "2026-10-25T19:40:27+00:00",
+      "hn_score": 47,
+      "hn_comments": 36,
+      "summary": "ウィリアム・ギブソンのSF小説『エージェンシー』に登場するAIアシスタント「ユーニス」が、現代のAI技術の進化と重なってきています。\nユーニスは、会話中に裏で複雑なタスクを自律的に実行する能力を持ち、これは現在の自律型AIエージェントの方向性を示唆しています。\nChatGPT登場以前に書かれた小説が、今日のAIの進化を予見していたことに驚きが示されています。",
+      "tags": [
+        "AI",
+        "SF",
+        "自律型エージェント"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "SF小説のAIが現実のAI進化とシンクロしている点を指摘しており、AIの未来像を考察する上で興味深く、技術の方向性を示唆するため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "AlphaEngine : 最適化編②",
+      "url": "https://zenn.dev/reu/articles/0f77f6eb0940af",
+      "source": "Zenn",
+      "published": "2026-10-25T07:19:40+00:00",
+      "summary": "AlphaEngineの最適化として、全ピクセル・全フロクセルで行っていたライト計算を削減するためClustered Lightingを実装した話です。\nClustered Lightingはカメラの視錐台を3Dグリッドに分割し、各クラスタに影響するライトのみをリスト化することで計算量を大幅に削減します。\n1920x1080解像度で108灯のライティングを行う場合の約2億2400万回のライト評価を、各ピクセルが所属するクラスタのライトのみ評価することで効率化します。",
+      "tags": [
+        "3Dグラフィックス",
+        "最適化",
+        "Clustered Lighting"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 85,
+      "score_reason": "Clustered Lightingは現代のリアルタイム3Dグラフィックスにおいて非常に重要な最適化技術であり、ゲーム開発やVR/ARなど幅広い分野で実用性が高く、技術的な新規性も評価できます。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "【速報】VS Code 1.142 に Canvas が来た！チャットの横でエージェントと同じ画面を触れる「Interactive Canvases」を整理してみた",
+      "url": "https://qiita.com/shahin0809/items/81e6a6737b2254bdc6ed?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-23T06:50:22+00:00",
+      "summary": "VS Code 1.142でプレビュー機能として導入された「Canvases」について解説しており、AIエージェントとの協調作業を視覚的に行う新しいインターフェースです。\nチャットの横に開く共有可能な画面で、ユーザーとエージェントが同じ成果物を直接操作できるため、プロンプトのみでのやり取りの限界を克服します。\nGitHub CopilotなどのAIエージェントとの開発体験を大きく向上させる可能性があり、カンバンボードなどの具体的な活用例も紹介されています。",
+      "tags": [
+        "VS Code",
+        "GitHub Copilot",
+        "AIエージェント"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIエージェントとの協調開発におけるUI/UXを革新する可能性を秘めており、開発効率向上への影響が大きいため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "サイバーセキュリティのバウンティハンターが、SamsungテレビがAIを利用して広告目的で音声とスクリーンショットを記録していると主張",
+      "url": "https://www.reddit.com/r/technology/comments/1xf03qh/cybersecurity_bounty_hunter_says_samsung_tvs_use/",
+      "source": "Reddit",
+      "published": "2026-10-25T11:35:48+00:00",
+      "summary": "サイバーセキュリティの専門家が、SamsungスマートテレビがAI技術を用いてユーザーの音声やスクリーンショットを記録し、広告に利用していると指摘しました。\nこれはスマートテレビにおけるAIの利用が、ユーザーのプライバシーを侵害する可能性を示しており、倫理的な問題が提起されています。\nユーザーはスマートデバイスのプライバシー設定を厳しく管理し、データ収集の許可について慎重になるべきです。",
+      "tags": [
+        "AI",
+        "プライバシー",
+        "スマートテレビ"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "AIによるプライバシー侵害は、技術の進化に伴う新たな脅威であり、広範なユーザーに影響を与えるため、非常に高い重要性があります。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "AI ネイティブの SDLC プレイブック",
+      "url": "https://claude.com/ja/resources/articles/the-ai-native-sdlc-playbook",
+      "source": "はてなブックマーク",
+      "published": "2026-10-25T01:29:55+00:00",
+      "summary": "AIの活用によりコード作成速度が飛躍的に向上する一方で、従来のSDLCプロセスがその変化に追いついていない現状を指摘しています。\n本記事では、AIエージェント（Claude Codeなど）をSDLCの各段階に統合し、開発プロセスを加速させる「AIネイティブSDLC」のベストプラクティスを解説。\n従来の直線的なSDLCから、AIが組み込まれたループ型のプロセスへの再構築を提唱し、セキュリティなどのボトルネック解消を目指します。",
+      "tags": [
+        "AI",
+        "SDLC",
+        "ソフトウェア開発"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIによる開発プロセスの変革は今後のソフトウェア開発の主流となる可能性が高く、その具体的な指針を示す点で非常に重要です。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など",
+      "url": "https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html",
+      "source": "Publickey",
+      "published": "2026-10-20T15:10:05+00:00",
+      "summary": "CloudflareがAIを活用した業務プラットフォーム「Cloudflare OS」のマネージドサービス提供を発表しました。\nこれは一般的なOSではなく、AIと業務アプリケーションのためのプラットフォームであり、オンプレミスやクラウドなど多様な環境にデプロイ可能です。\nGitHubやGmailとの連携を強化し、社内データやAIサービスを安全に利用できるセキュリティ機能も備えています。",
+      "tags": [
+        "Cloudflare",
+        "AI",
+        "マネージドサービス"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "CloudflareがAIプラットフォームをマネージドサービスとして提供することで、企業におけるAI導入とデータ活用の加速が期待されるため、高い重要性を持つと評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "バグバウンティがいかにしてある研究者のセキュリティスキルを磨くか",
+      "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+      "source": "GitHub Blog",
+      "published": "2026-10-22T17:21:30+00:00",
+      "summary": "GitHubのバグバウンティプログラムが、トップパフォーマーであるセキュリティ研究者@r31n氏に焦点を当てています。\nAIがセキュリティ研究の参入障壁を下げている一方で、検証、PoC、実際のセキュリティ影響の明確なデモンストレーションが重要であると強調されています。\nGitHubは外部研究者との協力を通じてプラットフォームのセキュリティを強化しており、VIPプログラムも提供しています。",
+      "tags": [
+        "セキュリティ",
+        "バグバウンティ",
+        "GitHub"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "バグバウンティはセキュリティ向上に不可欠であり、AIの活用と質の高い研究の重要性を説く内容は、業界全体にとって非常に価値があるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "600人規模のイベント運営を支えたインカムを、学生1人で作った話",
+      "url": "https://zenn.dev/kodak_20/articles/3b0ba74333b56c",
+      "source": "Zenn",
+      "published": "2026-10-24T17:23:14+00:00",
+      "summary": "DevFest Kansai 2026で、600人規模のイベント運営を支えるインカムアプリ「inkam」を学生が一人で開発した事例です。\nPush-to-Talk方式に加え、セッション中でも使える字幕と読み上げ機能を実装し、Expo (React Native)、Cloudflare Workers、Geminiを技術スタックとして採用しました。\n開発はMVP思考で進められ、本番での利用実績も高く、学生が実務経験なしで大規模イベント向けアプリを開発した成功事例として注目されます。",
+      "tags": [
+        "React Native",
+        "Cloudflare Workers",
+        "イベント運営"
+      ],
+      "category": "モバイル",
+      "score": 82,
+      "score_reason": "学生が一人で大規模イベント向けの実用的なモバイルアプリを開発し、成功させたことは、技術的な挑戦と実用性の両面で高く評価できます。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "1枚0.3秒!!Cloudflareの爆速抽出モデルClairicを試してみた",
+      "url": "https://qiita.com/kikuziro/items/3f23603152b409d4a6ca?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-25T04:17:10+00:00",
+      "summary": "Cloudflareが提供する「抽出特化」AIモデルClairicと「判断特化」モデルClefを組み合わせ、書類の分類から項目抽出までを高速で行う検証結果が紹介されています。\nClairicはテキストや画像から指定された項目と型に基づいて値のみを抽出することに特化しており、生成AIとは異なり文章を組み立てないため高速応答が可能です。\nClefで書類の種類を判別し、Clairicで必要な情報を抜き出すことで、業務効率化やデータ処理の自動化に貢献する実用的なAI活用事例を示しています。",
+      "tags": [
+        "Cloudflare",
+        "AI",
+        "OCR"
+      ],
+      "category": "AI・機械学習",
+      "score": 82,
+      "score_reason": "特定のタスクに特化したAIモデルの組み合わせによる高速なデータ抽出は、ビジネスにおける実用性が高く、業務効率化への貢献が期待されるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "VS CodeでGitHub Copilotアプリセッションを継続する方法",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+      "source": "GitHub Blog",
+      "published": "2026-10-19T18:47:22+00:00",
+      "summary": "GitHub Copilotアプリで開始したセッションを、VS Codeでシームレスに継続する方法を解説しています。\nCopilotが生成したコード変更、会話履歴、作業コンテキストをVS Codeに引き継ぎ、詳細なレビューや手動での調整、ローカルテストを行うことができます。\nこれにより、Copilotに定型的な作業を任せつつ、開発者が最終的な調整やデバッグに集中できるワークフローが実現します。",
+      "tags": [
+        "GitHub Copilot",
+        "VS Code",
+        "開発ツール"
+      ],
+      "category": "AI・機械学習",
+      "score": 82,
+      "score_reason": "AI開発ツールの利用効率を高める具体的な方法であり、開発者のワークフロー改善に直結するため、実用性が高いと評価できるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "検閲されたインターネットを拒否する。FOSDEM 27で私に加わってください",
+      "url": "https://talkweb.eu/openweb/4558/",
+      "source": "Hacker News",
+      "published": "2026-10-25T17:30:55+00:00",
+      "hn_score": 291,
+      "hn_comments": 156,
+      "summary": "FOSDEMの「Digital Dissident Devroom」は、検閲や監視に抵抗し、デジタルな自由を守るためのツール開発を呼びかけています。\n世界中で人々が沈黙させられ、監視され、情報へのアクセスを拒否されている現状に対し、信頼できる自由なソフトウェアの構築が不可欠です。\n本デブルームは、開発者、研究者、活動家が一堂に会し、権威主義体制下の人々を保護するエンドツーエンドのツールチェーンに焦点を当てます。",
+      "tags": [
+        "デジタル自由",
+        "検閲",
+        "プライバシー"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "デジタル自由と検閲抵抗は現代社会の重要な課題であり、技術がその解決に貢献する可能性が高く、社会的な影響も大きいと評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "3KBしか使えない！奇妙で素敵なゲームエンジン「Playload」のご紹介",
+      "url": "https://qiita.com/kitao/items/7fac93e8a7ad6015b0b0?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-23T09:11:47+00:00",
+      "summary": "Pyxel作者が開発した、圧縮後3KBという極小サイズに特化したゲームエンジン「Playload」が紹介されています。\nX（旧Twitter）のURL文字数制限を逆手に取り、ゲーム全体をURLのペイロードに含めるというユニークなコンセプトが特徴です。\nUnicode絵文字によるドット絵や、ZX Spectrum 128互換のサウンド記述など、限られたリソースでクリエイティブな表現を可能にする工夫が凝らされています。",
+      "tags": [
+        "ゲーム開発",
+        "JavaScript",
+        "WebAssembly"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 80,
+      "score_reason": "極限られたリソースでの開発というユニークなアプローチが技術的な新規性があり、Web技術の可能性を広げる興味深い試みであるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "LGスマートテレビがネットワークマッピングと画面オフ時の音声ログ記録を行っていることが発覚",
+      "url": "https://www.reddit.com/r/technology/comments/1xf9ssl/lg_smart_tvs_caught_mapping_your_network_logging/",
+      "source": "Reddit",
+      "published": "2026-10-25T18:26:04+00:00",
+      "summary": "LGスマートテレビがユーザーのネットワーク情報をマッピングし、画面がオフの状態でも音声を記録しているというプライバシー侵害の疑惑が浮上しました。\nこれはユーザーの同意なしに個人データが収集されている可能性を示唆しており、スマートデバイスのセキュリティとプライバシー保護に関する懸念を再燃させています。\n消費者はスマートテレビのプライバシー設定を見直し、不必要なデータ収集を停止するよう注意を払う必要があります。",
+      "tags": [
+        "プライバシー",
+        "スマートテレビ",
+        "データ収集"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "スマートテレビによるプライバシー侵害は、多くのユーザーに影響を与え、IoTデバイスのセキュリティと倫理に関する議論を深めるため重要度が高いです。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "「DuckDB 2.0 LTS」正式リリース。Quackプロトコルによるクライアント/サーバ機能や非同期処理による高速化など",
+      "url": "https://www.publickey1.jp/blog/26/duckdb_20_ltsquack.html",
+      "source": "Publickey",
+      "published": "2026-10-25T15:44:47+00:00",
+      "summary": "シングルバイナリで高速なデータ分析を実現するOLAP型データベース「DuckDB 2.0 LTS」が正式リリースされました。\n新機能として、Quackプロトコルによるクライアント/サーバ機能が追加され、DuckDBが本格的なサーバとして利用可能に。\n非同期I/OサポートやVARIANT型、エージェントモードの導入により、パフォーマンス向上とコスト削減が図られています。",
+      "tags": [
+        "データベース",
+        "OLAP",
+        "データ分析"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 80,
+      "score_reason": "DuckDBのメジャーアップデートであり、クライアント/サーバ機能の追加や高速化はデータ分析分野に大きな影響を与えるため、重要度が高いと評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "AWS Transform、Azure Functions用のコードをAWS Lambda用に変換など、Microsoft AzureからAWSへの移行に対応",
+      "url": "https://www.publickey1.jp/blog/26/aws_transformazure_functionsaws_lambdamicrosoft_azureaws.html",
+      "source": "Publickey",
+      "published": "2026-10-19T15:47:48+00:00",
+      "summary": "AWSが「AWS Transform」に新機能を追加し、Microsoft Azureネイティブな.NETアプリケーションをAWSへ簡単に移行できるようになりました。\nAzure SDKで書かれた.NETアプリケーションのコードをAWS SDKを用いたコードに変換し、Azure FunctionsやAzure Blob StorageなどのサービスをAWSの同等サービスに置き換えます。\nこれにより、クラウド間の移行における障壁が低減され、企業のマルチクラウド戦略やベンダーロックイン回避に貢献します。",
+      "tags": [
+        "AWS",
+        "Azure",
+        "クラウド移行"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 80,
+      "score_reason": "クラウド間の移行を支援するツールは、企業のクラウド戦略において重要な役割を果たすため、実用性と業界への影響度を考慮し高いスコアとしました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "ros_gzの終了時クラッシュとRange変換の不具合を修正した話",
+      "url": "https://zenn.dev/yuu7/articles/ros2-gazebo-teardown-range-fixes",
+      "source": "Zenn",
+      "published": "2026-10-24T18:15:57+00:00",
+      "summary": "ROS 2とGazeboを連携させるros_gzにおいて、終了時のクラッシュ（use-after-free）と距離センサーの不具合を修正したPRがマージされました。\nクラッシュはHandlerの寿命と画像受信コールバックの実行タイミングの不一致が原因で、CallbackGuardの導入により同期問題を解決しています。\n距離センサーの不具合は、何も検出していない場合にmax_range + 1を返す問題を修正し、センサーメッセージの正確性を向上させました。",
+      "tags": [
+        "ROS 2",
+        "Gazebo",
+        "ロボティクス"
+      ],
+      "category": "その他",
+      "score": 78,
+      "score_reason": "ROSとGazeboはロボット開発の基盤技術であり、これらの修正はシミュレーションの安定性と信頼性を向上させるため、ロボティクス分野への影響が大きいと評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Pythonの基礎学習が終わったら、Pythonでスクレイピングを始めよう！",
+      "url": "https://zenn.dev/momiji_ai/articles/67c7ce4c54fad3",
+      "source": "Zenn",
+      "published": "2026-10-25T07:46:55+00:00",
+      "summary": "Pythonの基礎学習を終えた読者向けに、Pyppeteerを使ったWebスクレイピングの入門から実践までを解説する記事です。\nrequestsとBeautifulSoupでは取得できないJavaScriptで描画されるコンテンツも、Pyppeteerを使えば本物のブラウザを操作して取得できます。\n練習サイトでのステップバイステップの解説に加え、実際の業務で処理時間を大幅に短縮した最適化手法も紹介されており、実用性が高い内容です。",
+      "tags": [
+        "Python",
+        "Webスクレイピング",
+        "Pyppeteer"
+      ],
+      "category": "プログラミング言語",
+      "score": 75,
+      "score_reason": "PythonによるWebスクレイピングは多くの業務で活用されており、特にJavaScript描画サイトへの対応は実用性が高く、初心者にも分かりやすい解説が評価できます。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Flutter アプリを iPhone Duo の「縦帯」に対応させる",
+      "url": "https://zenn.dev/yus1127/articles/flutter-iphone-duo-vertical-bar",
+      "source": "Zenn",
+      "published": "2026-10-24T16:59:46+00:00",
+      "summary": "FlutterKaigi 2026アプリ開発において、iPhone Duoの新しいディスプレイ特性である「縦帯（vertical bar）」への対応方法が解説されています。\niOS 27.1 SDKでビルドしたアプリで発生する縦帯問題に対し、FlutterのSafeAreaやタブバーの描画に関する具体的な対処法が示されています。\n特に、safe areaの形状から縦帯の有無や位置を判定し、UIを適切に調整する実装が紹介されており、新しいデバイスへの対応事例として参考になります。",
+      "tags": [
+        "Flutter",
+        "iOS",
+        "UI/UX"
+      ],
+      "category": "モバイル",
+      "score": 75,
+      "score_reason": "新しいデバイスのUI特性への具体的な対応方法が示されており、モバイルアプリ開発者にとって実用性が高い情報であるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "ソフトウェアの脆弱性情報をいち早く入手する - CVE・CISA KEV・JPCERT/CC・OSV｜npaka",
+      "url": "https://note.com/npaka/n/na5ad6472d68c",
+      "source": "はてなブックマーク",
+      "published": "2026-10-25T12:07:57+00:00",
+      "summary": "ソフトウェアの脆弱性情報をいち早く入手し、対策することの重要性を解説しています。\nCVE、CISA KEV、JPCERT/CC、OSVという4つの主要な脆弱性情報源とその活用方法を紹介。\nそれぞれの情報源が提供する情報の特性や、セキュリティ対策における優先順位付けのヒントが示されています。",
+      "tags": [
+        "セキュリティ",
+        "脆弱性",
+        "CVE"
+      ],
+      "category": "セキュリティ",
+      "score": 75,
+      "score_reason": "セキュリティ対策の基本となる脆弱性情報の入手方法を具体的に解説しており、実用性が高く、多くの開発者や企業にとって有益な情報です。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "エージェントは起動時に一度アクセストークンを取得し、それを永久にキャッシュしたため、数時間後にローテーションによってアプリが壊れた",
+      "url": "https://dev.to/jeff_pdc/the-agent-fetched-the-access-token-once-at-boot-and-cached-it-forever-so-rotation-broke-the-app-2a42",
+      "source": "Dev.to",
+      "published": "2026-10-25T21:44:07+00:00",
+      "summary": "アクセストークンを起動時に一度だけ取得し、永久にキャッシュする実装が原因で、トークンの有効期限切れ後にアプリケーションが401エラーを返す問題が発生しました。\n短命なトークンを静的な認証情報として扱ってしまったことが根本原因であり、再起動で一時的に解決するため、問題が構造的ではなく不安定に見えました。\nトークンは有効期限を持つ値であり、その有効期限をモデル化し、期限切れ前にリフレッシュする実装の重要性を指摘しています。",
+      "tags": [
+        "認証",
+        "セキュリティ",
+        "プログラミング"
+      ],
+      "category": "セキュリティ",
+      "score": 75,
+      "score_reason": "認証情報の適切な管理はセキュリティとアプリケーションの安定性に直結する重要な課題であり、多くの開発者が陥りやすいミスを具体的に示しているため、実用性が高いと評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Redox OS 2026年9月アップデート：技術的改善と新機能がリリースされるも、明確な問題提起に欠ける",
+      "url": "https://dev.to/serbyte/redox-os-september-2026-update-technical-improvements-and-new-features-released-lacks-clear-67f",
+      "source": "Dev.to",
+      "published": "2026-10-25T21:37:58+00:00",
+      "summary": "RustベースのマイクロカーネルOSであるRedox OSが2026年9月アップデートをリリースしました。\nJITコンパイラの最適化や外部ディスプレイのホットプラグ対応など、多くの技術的進歩が含まれています。\nしかし、これらの機能がどのような全体的なビジョンや問題解決に貢献するのか、明確な説明が不足している点が指摘されています。",
+      "tags": [
+        "OS",
+        "Rust",
+        "マイクロカーネル"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 75,
+      "score_reason": "RustベースのOS開発は技術的に興味深く、将来性があるが、明確なビジョンが欠けている点が評価をやや下げているため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "なぜ私はプログラマーなのか",
+      "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
+      "source": "Hacker News",
+      "published": "2026-10-25T19:11:31+00:00",
+      "hn_score": 57,
+      "hn_comments": 6,
+      "summary": "この記事は、プログラマーであることの根源的な動機と情熱を探求しています。\n幼少期の体験や、現実を変えるようなデモを作成したいという強い願望が語られています。\n単なる職業ではなく、創造性と表現の手段としてのプログラミングへの深い愛着が示されています。",
+      "tags": [
+        "プログラミング",
+        "キャリア",
+        "モチベーション"
+      ],
+      "category": "プログラミング言語",
+      "score": 70,
+      "score_reason": "プログラマーの根源的な動機を考察しており、多くの開発者の共感を呼ぶ可能性があり、キャリア形成にも示唆を与えるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "オレゴン州警察、ある警官に関する記録開示に地元ニュース媒体へ250万ドルを請求",
+      "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
+      "source": "Hacker News",
+      "published": "2026-10-25T18:04:11+00:00",
+      "hn_score": 271,
+      "hn_comments": 68,
+      "summary": "オレゴン州ユージーン市警察が、地元ニュース媒体からの警官の不祥事に関する公文書開示請求に対し、250万ドルという巨額の費用を請求しました。\nこれは、交通検問中に住民を殴ったとされる警官ジャスティン・ペッケルズに関する記録で、警察は検索と処理に44,816時間かかると主張しています。\nこの高額な請求は、公衆の利益となる情報へのアクセスを妨げるものとして、情報公開の自由を巡る議論を巻き起こしています。",
+      "tags": [
+        "情報公開",
+        "ジャーナリズム",
+        "行政"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "公文書開示における高額請求は、情報公開の原則とジャーナリズムの役割に大きな影響を与える問題であり、社会的な関心が高いと判断しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "さよならWordPress。ゲ制工房は新時代のCMS、EmDashに移行しました。",
+      "url": "https://yurinchi2525.com/20261025emdash/",
+      "source": "はてなブックマーク",
+      "published": "2026-10-25T09:02:39+00:00",
+      "summary": "筆者のブログ「ゲ制工房」が、長年使用したWordPressからCloudflare上で動作する新しいCMS「EmDash」へ移行しました。\n移行作業はAIのClaude Codeを活用し、わずか1日で完了したとのことです。\nPHPの深刻な脆弱性「PHP2Shell」の発見が移行の背景にあり、EmDashの安全性と効率性が評価されています。",
+      "tags": [
+        "CMS",
+        "WordPress",
+        "EmDash"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 70,
+      "score_reason": "WordPressからの移行事例として、新しいCMSとAI活用による効率的な移行プロセスが示されており、実用性が高いと評価しました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "LifeAdmin-AI: ローカルAIでドキュメントを実行可能なタスクに変換",
+      "url": "https://dev.to/kananpm07/lifeadmin-ai-turning-documents-into-actionable-tasks-with-local-ai-16nk",
+      "source": "Dev.to",
+      "published": "2026-10-25T21:40:21+00:00",
+      "summary": "LifeAdmin-AIは、通知などのテキストドキュメントを実行可能なタスクに変換するドキュメントアシスタントです。\nPDFやTXTファイルをアップロードするかテキストを貼り付けることで、タスク、期限、優先度、根拠を含む構造化された要約を生成します。\nPython、Streamlit、Ollama、Gemma 3モデルを使用してローカルで動作し、抽出されたタスクの根拠を元のドキュメントに求めることで、不確実な詳細を明確にする点に重点を置いています。",
+      "tags": [
+        "AI",
+        "ローカルAI",
+        "ドキュメント処理"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "ローカルAIを活用してドキュメントからタスクを抽出する実用的なアプリケーションであり、個人の生産性向上に貢献する可能性を秘めているため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "1つのAPIリクエストでRobinhood Chainの株トークン活動ダッシュボードを構築する",
+      "url": "https://dev.to/blockvectra/build-a-robinhood-chain-stock-token-activity-dashboard-with-one-api-request-2emi",
+      "source": "Dev.to",
+      "published": "2026-10-25T21:38:40+00:00",
+      "summary": "Robinhood Chainの株トークン活動ダッシュボードを、BlockVectra Data APIの1つのリクエストで構築する方法を解説しています。\n最新のUTC日の転送数と保有者数を取得し、Node.js 24以降で実行する手順が示されています。\nAPIキーの設定や、取得できるデータフィールドについても説明されており、開発者が簡単に利用開始できるようになっています。",
+      "tags": [
+        "API",
+        "ブロックチェーン",
+        "データ分析"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 70,
+      "score_reason": "特定のブロックチェーンデータへのアクセスを簡素化するAPIの紹介であり、実用性は高いが、技術的新規性は限定的であるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "アニメーション映画の制作過程",
+      "url": "https://www.disneyanimation.com/process/",
+      "source": "Hacker News",
+      "published": "2026-10-25T20:27:09+00:00",
+      "hn_score": 23,
+      "hn_comments": 12,
+      "summary": "ディズニーアニメーションの制作プロセスは、開発から最終的な映像化まで、各部門の深い協力によって成り立っています。\nストーリーテリング、キャラクターデザイン、編集、サウンド、そして技術が一体となり、映画が形作られます。\n特に、テクノロジーはパイプラインの基盤であり、アーティストが最高の仕事をするための環境を設計・構築しています。",
+      "tags": [
+        "アニメーション",
+        "映画制作",
+        "クリエイティブテクノロジー"
+      ],
+      "category": "その他",
+      "score": 65,
+      "score_reason": "IT技術そのものではないが、アニメーション制作におけるテクノロジーの役割に触れており、関連分野の興味を引く可能性があるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "Netflixユーザーの視聴時間が減少し、アプリの起動頻度も低下",
+      "url": "https://www.reddit.com/r/technology/comments/1xf7v7j/netflix_users_are_watching_less_not_opening_the/",
+      "source": "Reddit",
+      "published": "2026-10-25T17:09:34+00:00",
+      "summary": "Netflixのユーザーが以前よりも視聴時間が減り、アプリを開く頻度も低下しているという報告がありました。\nこれはストリーミングサービスの競争激化や、ユーザーのコンテンツ消費習慣の変化を示唆している可能性があります。\nNetflixはユーザーエンゲージメントを維持するために、新たな戦略や魅力的なコンテンツの提供が求められるでしょう。",
+      "tags": [
+        "Netflix",
+        "ストリーミング",
+        "ビジネス動向"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "大手ストリーミングサービスのユーザー行動の変化は、エンターテイメント業界全体の動向を示す指標となり、ビジネス戦略に影響を与えるため重要です。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "ドリー・パートンのイマジネーション・ライブラリー",
+      "url": "https://imaginationlibrary.com/",
+      "source": "Hacker News",
+      "published": "2026-10-25T18:23:54+00:00",
+      "hn_score": 240,
+      "hn_comments": 45,
+      "summary": "ドリー・パートンは、父親が読み書きできなかったことに触発され、1995年に故郷の郡でイマジネーション・ライブラリーを設立しました。\nこのプログラムは現在、5カ国に広がり、毎月何百万冊もの無料の本を世界中の子供たちに贈っています。\n質の高い年齢に応じた本を直接家庭に郵送することで、子供たちが本に夢中になり、読書への愛情を育むことを目指しています。",
+      "tags": [
+        "教育",
+        "慈善事業",
+        "読書推進"
+      ],
+      "category": "その他",
+      "score": 60,
+      "score_reason": "IT技術ニュースではないが、社会貢献活動として一定の関心を集める可能性があるため。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "r/opensourceがAI、非英語話者などを禁止",
+      "url": "https://www.reddit.com/r/technology/comments/1xf2w9g/ropensource_just_banned_ai_nonenglish_speakers/",
+      "source": "Reddit",
+      "published": "2026-10-25T13:51:03+00:00",
+      "summary": "Redditのr/opensourceコミュニティが、AI生成コンテンツ、非英語話者、およびその他の特定の種類の投稿を禁止する決定を下しました。\nこの決定は、オープンソースコミュニティにおけるAIの役割や、多様性、アクセシビリティに関する議論を巻き起こす可能性があります。\nAI技術の利用が広がる中で、コミュニティガイドラインの策定と、その影響について再考が求められるでしょう。",
+      "tags": [
+        "オープンソース",
+        "AI",
+        "コミュニティガイドライン"
+      ],
+      "category": "その他",
+      "score": 60,
+      "score_reason": "オープンソースコミュニティにおけるAIの扱いに関する議論は、技術の倫理的側面やコミュニティ運営の方向性を示すため、一定の重要性があります。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "X11やWaylandを使用せずにLinux環境でグラフィックスを表示する",
+      "url": "https://dev.to/pcmagas/graphika-se-linux-periballon-aneu-khreseos-x11-e-wayland-diplay-grapghics-on-linux-without-using-2236",
+      "source": "Dev.to",
+      "published": "2026-10-25T21:42:34+00:00",
+      "summary": "この記事は、X11やWaylandといった一般的なディスプレイマネージャーを使用せずにLinux上でグラフィックスを表示する方法に関する一連の記事の目次です。\nギリシャ語のLinuxユーザーフォーラムで展開されており、関連するコードサンプルもGitHubリポジトリで提供されています。\n低レベルなグラフィックスプログラミングや、組み込みシステムなどでの利用に関心のある開発者向けの内容です。",
+      "tags": [
+        "Linux",
+        "グラフィックス",
+        "X11"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 60,
+      "score_reason": "特定のニッチな技術領域に関する記事であり、一般的なIT業界への影響は限定的ですが、低レベルグラフィックス開発者にとっては有用な情報であるため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "is_hot": false
+    },
+    {
+      "title": "リュウジはなぜ嫌われている人からはすごく嫌われているのか…リュウジが自分自身のアンチになる要素を解説、さらに自分に対してのアンチ発言も",
+      "url": "https://togetter.com/li/2762636",
+      "source": "はてなブックマーク",
+      "published": "2026-10-25T08:06:25+00:00",
+      "summary": "料理研究家リュウジ氏が、自身が一部から嫌われる理由を客観的に分析し、自らアンチのような発言をするというユニークな視点を示しました。\n彼は、自身の「バズることしか考えていない」という側面や、影響力のある発言が全て正しいと受け取られる風潮への反発が原因だと考察しています。\nこの自己分析は、インフルエンサーとしての成功と、それに伴う批判への向き合い方について示唆を与え、SNS時代のコミュニケーションの一端を垣間見せます。",
+      "tags": [
+        "インフルエンサー",
+        "SNS",
+        "自己分析"
+      ],
+      "category": "その他",
+      "score": 40,
+      "score_reason": "IT技術ニュースとしては直接的な関連性が低いですが、SNSとインフルエンサー文化の側面を捉えており、社会的な関心事として一定の価値があります。",
+      "analysis_status": "ok",
+      "is_hot": false
+    }
+  ]
+}
