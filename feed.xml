@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 26 Oct 2026 23:11:37 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 23:02:12 +0000</lastBuildDate>
     <item>
-      <title>指数時間仮説は偽である</title>
-      <link>https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf</link>
-      <guid isPermaLink="false">https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf</guid>
-      <description>[Score: 95] OpenAIの研究者が、計算複雑性理論における重要な未解決問題の一つである「指数時間仮説（ETH）は偽である」とする論文を発表しました。 / これは、特定のNP困難問題が指数時間よりも速く解ける可能性を示唆するもので、計算機科学の基礎に大きな影響を与える可能性があります。 / 論文はGitHubで公開されており、今後の検証と議論が注目されます。 (Source: Hacker News)</description>
-      <pubDate>Mon, 26 Oct 2026 21:59:15 +0000</pubDate>
+      <title>Genie 4</title>
+      <link>https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</link>
+      <guid isPermaLink="false">https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</guid>
+      <description>[Score: 95] Google DeepMindが、リアルタイムインタラクティブシミュレーションを可能にする新しいワールドモデル「Genie 4」を発表しました。 / Genie 4は、マルチモーダルに対応し、オーディオや対話と同時に世界を生成でき、Geminiモデルの機能も統合しています。 / ロボットの訓練環境開発や新しいインタラクティブ体験の創出に貢献し、AGI構築の重要な側面を進化させます。 (Source: Hacker News)</description>
+      <pubDate>Tue, 27 Oct 2026 16:06:01 +0000</pubDate>
     </item>
     <item>
-      <title>AWSとGoogle Cloudが「PyTorch」のAWS Trainium、Google Cloud TPU対応版をオープンソースで公開。NVIDIAからの移行に挑む</title>
-      <link>https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html</guid>
-      <description>[Score: 95] AWSとGoogle Cloudが、PyTorchの自社AIプロセッサ対応版をオープンソースで公開しました。 / AWSはTrainium対応の「TorchNeuron」、Google CloudはTPU対応の「TorchTPU」を発表。 / これはNVIDIAのGPUに依存しないAI開発環境の選択肢を広げ、AIハードウェア市場の競争を激化させる動きです。 (Source: Publickey)</description>
-      <pubDate>Mon, 26 Oct 2026 15:59:52 +0000</pubDate>
+      <title>Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026</title>
+      <link>https://www.publickey1.jp/blog/26/oracle_cloudgoogle_tpu2027oracle_ai_world_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/oracle_cloudgoogle_tpu2027oracle_ai_world_2026.html</guid>
+      <description>[Score: 95] Oracle CloudがGoogleが開発したAI専用チップ「Google TPU」を導入し、2027年からサービス提供を開始すると発表しました。 / これはOracle AI World 2026で発表され、Oracle CloudがAI市場での競争力を強化する狙いがあります。 / NVIDIA以外のAIプロセッサの選択肢を顧客に提供することで、AWS、Azure、Google Cloudといった競合他社を追撃する戦略の一環です。 (Source: Publickey)</description>
+      <pubDate>Tue, 27 Oct 2026 16:33:51 +0000</pubDate>
     </item>
     <item>
       <title>次世代の開発者インターフェースはアンビエントインテリジェンスである</title>
       <link>https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</link>
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</guid>
-      <description>[Score: 95] GitHub Copilotが開発者インターフェースをコマンド入力から意図の実行へと変革しています。 / AIがリポジトリを理解し、計画を立て、ツールを使用し、コードを編集・テストすることで、開発者は方向付けとコンテキスト提供に集中できます。 / これにより、開発ワークフローが効率化され、より本質的な問題解決に時間を費やせるようになります。 (Source: GitHub Blog)</description>
+      <description>[Score: 95] GitHub Copilotが開発者の意図を理解し、リポジトリのコンテキストに基づいてコード生成、テスト、修正を行う「アンビエントインテリジェンス」の概念を提唱しています。 / 従来のコマンドベースの開発から、AIが自律的に作業を計画・実行し、開発者は方向付けやレビューに注力するパラダイムシフトが起こると説明。 / これにより、開発者はツール操作に費やす時間を減らし、より本質的な問題解決や創造的な作業に集中できるようになると述べています。 (Source: GitHub Blog)</description>
       <pubDate>Thu, 15 Oct 2026 19:39:27 +0000</pubDate>
     </item>
     <item>
-      <title>AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表</title>
-      <link>https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws_lambdanextjshononodejsaws_lambda_web_functions.html</guid>
-      <description>[Score: 92] AWSが「AWS Lambda Web Functions」を発表し、Lambda上でNext.jsやHonoなどのNode.jsフレームワークを直接デプロイ・実行可能になりました。 / これにより、従来のLambdaの制約を解消し、Webアプリケーション開発の柔軟性が向上します。 / Web FunctionsはNode.jsと同様のWebサーバー機能を提供し、既存のWebアプリを容易に移行できます。 (Source: Publickey)</description>
-      <pubDate>Mon, 19 Oct 2026 15:49:22 +0000</pubDate>
+      <title>M6搭載の新しい14インチMacBook Pro</title>
+      <link>https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/</link>
+      <guid isPermaLink="false">https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/</guid>
+      <description>[Score: 90] AppleがM6チップを搭載した新しい14インチMacBook Proを発表しました。 / M6チップは、12コアCPUと12コアGPUを搭載し、M5と比較してグラフィック性能が最大30%向上、AIワークロードが最大25%高速化しています。 / オンデバイスAI機能と最長24時間のバッテリー駆動時間を実現し、学生、ビジネスユーザー、クリエイターにとって魅力的な製品です。 (Source: Hacker News)</description>
+      <pubDate>Tue, 27 Oct 2026 16:08:32 +0000</pubDate>
     </item>
     <item>
-      <title>GLM-5.3 Workers AIモデルにおけるクロスリクエストKVキャッシュ露出（155件の応答）</title>
-      <link>https://blog.cloudflare.com/kv-cache-exposure-remediation/</link>
-      <guid isPermaLink="false">https://blog.cloudflare.com/kv-cache-exposure-remediation/</guid>
-      <description>[Score: 90] CloudflareのWorkers AIでホストされているGLM-5.3モデルにおいて、テナント分離の脆弱性が発見されました。 / 一部の顧客のAI応答に、他の顧客のリクエストデータが含まれる事象が発生し、155件の応答が影響を受けました。 / Cloudflareは迅速に問題を修正し、SGLangとの連携で原因を特定し、セキュリティ強化を行いました。 (Source: Hacker News)</description>
-      <pubDate>Mon, 26 Oct 2026 22:41:48 +0000</pubDate>
+      <title>先週の PHP 祭りから見えた、業務システムの「止まり方」の共通点と違い — 予防的な停止・障害・計画メンテを、日本・海外・AI の告知 751 件で比べた</title>
+      <link>https://qiita.com/songchong/items/eb2e60b469a148c2fb8b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/eb2e60b469a148c2fb8b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 2026年10月に発生したPHPの脆弱性による「PHP祭り」を事例に、業務システムの停止パターンを分析しています。 / 予防的な停止、障害、計画メンテナンスの3つの停止理由について、日本・海外・AIの告知751件を比較し、その共通点と違いを明らかにしています。 / 停止の開始時刻、告知内容、影響範囲などのデータに基づき、システム運用におけるリスク管理と情報伝達の重要性を示唆しています。 (Source: Qiita)</description>
+      <pubDate>Mon, 26 Oct 2026 22:51:42 +0000</pubDate>
     </item>
     <item>
-      <title>学生2人で日本語音声LLMを作り、FT-LLM 2026 自由形タスクで1位を獲得した話</title>
-      <link>https://zenn.dev/ayutaso/articles/ftllm2026-ja-speech-llm</link>
-      <guid isPermaLink="false">https://zenn.dev/ayutaso/articles/ftllm2026-ja-speech-llm</guid>
-      <description>[Score: 90] 東京都立大学の学生2名が、LLM-jp主催のコンペ「FT-LLM 2026」の自由形タスクで、日本語音声LLMを開発し1位を獲得しました。 / LLM-jp-4 8Bをベースに、Whisperとシンプルなアダプタを組み合わせることで、日本語の音声指示に対応する汎用モデルを実現。 / 国産LLMを音声入力に対応させた初のオープンモデルであり、今後の音声対話AIの発展に貢献する成果です。 (Source: Zenn)</description>
-      <pubDate>Mon, 26 Oct 2026 13:54:50 +0000</pubDate>
+      <title>公開された情報と氏名など同一の人物、ＧＭＯクラウドサービスの利用「一度もない」</title>
+      <link>https://www.yomiuri.co.jp/national/20261027-GYT1T00367/</link>
+      <guid isPermaLink="false">https://www.yomiuri.co.jp/national/20261027-GYT1T00367/</guid>
+      <description>[Score: 90] GMOインターネットのFXクラウドサービスへの不正アクセス問題で、攻撃者が個人情報とみられる情報を公開しました。 / 公開された人物はGMOクラウドサービスの利用を否定しており、GMOは情報が利用者情報か確認を進めています。 / 攻撃者は身代金100万ドルを要求し、応じなければ毎日情報を公開し、ランサムウェア攻撃を行うと脅迫しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 27 Oct 2026 13:11:05 +0000</pubDate>
     </item>
     <item>
-      <title>eMudhra事件でWebアプリ開発者が点検すべきこと</title>
-      <link>https://qiita.com/autotaker1984/items/ef99b5791fe799a4ca66?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/autotaker1984/items/ef99b5791fe799a4ca66?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 認証局eMudhraの中間CA秘密鍵が容易に復元可能であった事件を解説し、インターネットの信頼基盤が揺らいだ背景を説明。 / HTTPS通信の仕組みやPKIの枠組みを詳細に解説し、開発者がこの事件から学ぶべきセキュリティ対策を提示。 / フィッシングサイトの脅威や、証明書検証の重要性について具体的に言及し、Webアプリ開発者への注意喚起を行っている。 (Source: Qiita)</description>
-      <pubDate>Sat, 24 Oct 2026 16:45:38 +0000</pubDate>
+      <title>米国がAIチップとサーバーの72%を確保、中国は10%に留まる</title>
+      <link>https://dev.to/fathomnews/us-grabs-72-of-ai-chips-and-servers-as-china-gets-10-46pk</link>
+      <guid isPermaLink="false">https://dev.to/fathomnews/us-grabs-72-of-ai-chips-and-servers-as-china-gets-10-46pk</guid>
+      <description>[Score: 90] 2022年以降、米国が世界のAI計算能力の72%を占め、中国は10%に留まっていることが研究で示されました。 / このAI計算能力の集中は、フロンティアAIシステムの構築において米国に大きな優位性をもたらしています。 / 米国のクラウドインフラへの集中と輸出規制が、この格差を広げている主な要因とされています。 (Source: Dev.to)</description>
+      <pubDate>Tue, 27 Oct 2026 22:49:10 +0000</pubDate>
     </item>
     <item>
-      <title>楽天トラベルに不正アクセス、顧客情報260万件流出か　クレカ3万件も - 日本経済新聞</title>
-      <link>https://www.nikkei.com/article/DGXZQOUC2686T0W6A021C2000000/</link>
-      <guid isPermaLink="false">https://www.nikkei.com/article/DGXZQOUC2686T0W6A021C2000000/</guid>
-      <description>[Score: 90] 楽天トラベルの海外ホテル予約サイトで不正アクセスが発生し、最大約260万件の顧客情報が流出した恐れがあります。 / 氏名、メールアドレス、電話番号などが漏洩し、約3万6000件のクレジットカード支払い情報（下4桁、有効期限など）も含まれていました。 / 楽天トラベルは決済に直結する情報は含まれないとし、システム改修と個人情報保護委員会への報告を完了しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 26 Oct 2026 11:57:24 +0000</pubDate>
+      <title>Raspberry Pi Zero 3WとPi 4 Model Aがデバイスツリーで発見される</title>
+      <link>https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/</link>
+      <guid isPermaLink="false">https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/</guid>
+      <description>[Score: 88] 新しいRaspberry Piボード、Raspberry Pi Zero 3 WとRaspberry Pi 4 Model AのデバイスツリーファイルがLinuxカーネルツリーで発見されました。 / Zero 3 Wは、Raspberry Pi 4と同じBroadcom BCM2711 SoCを搭載し、Zero 2 Wから大幅な性能向上が期待されます。 / 公式発表はまだですが、これらの発見は新しいPiモデルの登場が近いことを示唆しています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 27 Oct 2026 20:48:49 +0000</pubDate>
     </item>
     <item>
-      <title>Cloudflare、TypeScriptをRustに移植した「tsrs」を発表。TypeScript 7より最大で70％少ないメモリで8倍速。今後、LSPなどTypeScriptの全機能をサポート予定</title>
-      <link>https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html</guid>
-      <description>[Score: 90] CloudflareがTypeScriptコンパイラをRustに移植した「tsrs」を発表しました。 / TypeScript 7と比較して最大8倍高速で、メモリ使用量も70%削減されています。 / 今後はLSPを含むTypeScriptの全機能をサポートする予定で、WASMでも動作します。 (Source: Publickey)</description>
-      <pubDate>Wed, 21 Oct 2026 15:42:36 +0000</pubDate>
+      <title>【解説】クリーンアーキテクチャとは何か？ 炎上議論はなぜ起きるのか？</title>
+      <link>https://qiita.com/Sicut_study/items/3c1995d2a3f1695a18a7?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/3c1995d2a3f1695a18a7?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] クリーンアーキテクチャに関するSNSでの炎上議論がなぜ繰り返されるのかを、「言葉の劣化」と「具体と抽象の解像度のズレ」という観点から分析しています。 / 技術概念が広まる過程で本質が失われ、異なる解像度で議論されることが原因であると指摘し、クリーンアーキテクチャの真の意義を解説しています。 / この記事は、単にクリーンアーキテクチャを理解するだけでなく、技術的な議論の本質を見抜くための視点を提供します。 (Source: Qiita)</description>
+      <pubDate>Sun, 25 Oct 2026 13:54:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Tailscale SSH: 調査と修復の更新</title>
+      <link>https://tailscale.com/ssh-investigation-update</link>
+      <guid isPermaLink="false">https://tailscale.com/ssh-investigation-update</guid>
+      <description>[Score: 85] Tailscaleが、Tailscale SSHに影響を与えるセキュリティ脆弱性に関する調査と修復の進捗状況を更新しました。 / 主な問題は権限昇格に関するもので、一部の状況で許可されたユーザーが設定された権限を超える操作を行う可能性がありました。 / ほとんどの問題に対する修正が実装され、パッチ適用済みのクライアントリリースが間もなく予定されています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 27 Oct 2026 19:55:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>AAIFに加わったOpen ResponsesをAmazon Bedrockで試す</title>
+      <link>https://zenn.dev/exwzd/articles/20261023-open-responses</link>
+      <guid isPermaLink="false">https://zenn.dev/exwzd/articles/20261023-open-responses</guid>
+      <description>[Score: 85] Linux Foundation傘下のAgentic AI Foundation (AAIF) に、複数のLLMプロバイダーを共通の形式で呼び出すためのオープンな仕様「Open Responses」が加わりました。 / AWSもAmazon Bedrockでの対応を発表しており、OpenAIのResponses APIをベースにしたこの仕様は、LLMの相互運用性を高めます。 / これにより、プロバイダーごとの変換コードなしに、異なるLLMを簡単に切り替えて利用できるようになります。 (Source: Zenn)</description>
+      <pubDate>Tue, 27 Oct 2026 06:52:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dockerのビルドを遅くしたコミットをGrafana Tempoのトレースで見つける</title>
+      <link>https://zenn.dev/ymotongpoo/articles/20261027-buildkit-traces-tempo</link>
+      <guid isPermaLink="false">https://zenn.dev/ymotongpoo/articles/20261027-buildkit-traces-tempo</guid>
+      <description>[Score: 85] この記事では、DockerのビルドツールBuildKitが生成するOpenTelemetryトレースをGrafana Tempoに送信し、ビルドの遅延原因を特定する方法を解説しています。 / BuildKitはデフォルトでトレースを生成し、`docker buildx history trace`でJaeger UIで確認できますが、Grafana Tempoに送ることでコミットIDと紐付け、長期的なビルドパフォーマンスの監視と分析が可能になります。 / AIを活用してトレースを分析し、遅延を引き起こした特定のコミットや手順を効率的に見つけ出す実用的なアプローチが紹介されています。 (Source: Zenn)</description>
+      <pubDate>Tue, 27 Oct 2026 00:00:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIスタートアップがAnthropicを12時間でハッキング、従業員情報と内部メッセージにアクセス</title>
+      <link>https://www.reddit.com/r/technology/comments/1xh1fih/ai_startup_hacks_anthropic_in_12_hours_gains/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xh1fih/ai_startup_hacks_anthropic_in_12_hours_gains/</guid>
+      <description>[Score: 85] あるAIスタートアップが、著名なAI企業Anthropicをわずか12時間でハッキングし、従業員情報や内部メッセージにアクセスしたと報じられました。 / これはAI企業のセキュリティ対策の脆弱性を露呈するものであり、機密データ保護の重要性を改めて浮き彫りにしています。 / AI技術の進化と並行して、そのセキュリティリスクへの対応が急務であることを示唆する重大なインシデントです。 (Source: Reddit)</description>
+      <pubDate>Tue, 27 Oct 2026 19:00:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>GMO、不正アクセス実行犯の手がかりに懸賞金 1億5000万円規模</title>
+      <link>https://www.itmedia.co.jp/news/article/2610/27/2000002642/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2610/27/2000002642/</guid>
+      <description>[Score: 85] GMOインターネットグループは、FX自動売買用VPS「お名前.com デスクトップクラウド」への不正アクセス事件に対し、犯人特定に繋がる情報に総額100万ドル（約1億5000万円）の懸賞金を設けると発表しました。 / 28日正午から専用窓口で情報提供を受け付け、国内外の法人・個人からの具体的な情報を募ります。 / ただし、不正アクセス実行犯や関係者、違法な手段で情報を入手した場合は対象外で、応募者には危険な独自調査や犯人への接触を避けるよう呼びかけています。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 27 Oct 2026 11:23:36 +0000</pubDate>
     </item>
     <item>
       <title>エージェントスケールGitインフラへの架け橋</title>
       <link>https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</link>
       <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</guid>
-      <description>[Score: 90] GitHubは、Gitトラフィックの指数関数的な増加に対応するため、GitリポジトリをデータセンターとAzureの両方に配置する次世代ストレージアーキテクチャへの移行を進めています。 / この移行は、データセンターの電力容量の限界と物理的なサプライチェーンの制約、そしてエージェントシフトによるトラフィック増大によって加速されました。 / 本記事では、既存の設計から新しい設計への移行における具体的な技術的アプローチ、特にクォーラムの書き込みシリアル化の変更と、ステートレスレプリカへの道筋について解説しています。 (Source: GitHub Blog)</description>
+      <description>[Score: 85] GitHubがGitトラフィックの指数関数的増加に対応するため、次世代ストレージアーキテクチャへの移行を進めていることを解説しています。 / 最もビジーなリポジトリをAzureに移行し、レプリカが永続的な状態を持たない新しい設計への橋渡しとなる変更について説明しています。 / データセンターの電力容量の限界やサプライチェーンの制約が、この大規模な移行を加速させた要因です。 (Source: GitHub Blog)</description>
       <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>実際に試したClaude便利術20選 まとめ</title>
-      <link>https://qiita.com/N-Kyo/items/bf4a3a2185db2d28eee5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/N-Kyo/items/bf4a3a2185db2d28eee5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] AIアシスタントClaudeの作業効率を向上させる20の便利術を、Terraformコードのレビュー事例を通して具体的に紹介。 / /initやpermissions/Hooksといった機能を用いて、Claudeに仕事内容やルールを事前に設定する方法を解説。 / 構成図からTerraformコード生成、セキュリティ脆弱性修正、並列レビューまで、Claudeを活用した開発ワークフローの具体例を提示している。 (Source: Qiita)</description>
-      <pubDate>Mon, 26 Oct 2026 11:05:51 +0000</pubDate>
+      <title>Survival LLM: 自分のコンピューターで動作するAIアシスタントと緊急ライブラリ</title>
+      <link>https://www.brangus.io/survival-llm</link>
+      <guid isPermaLink="false">https://www.brangus.io/survival-llm</guid>
+      <description>[Score: 80] Survival LLMは、インターネット接続なしで完全にローカルで動作する無料のAIアシスタント兼緊急ライブラリです。 / 停電時の食品保存や火傷の治療など、緊急時の質問に信頼できる情報源から回答し、その出典も明示します。 / 医療リファレンス、FEMA/CDCガイド、Wikipediaなど約93万の記事を含み、Apple Silicon MacとWindowsに対応しています。 (Source: Hacker News)</description>
+      <pubDate>Tue, 27 Oct 2026 19:55:06 +0000</pubDate>
     </item>
     <item>
-      <title>学術コミュニティと協力して科学的理解を構築する</title>
-      <link>https://openai.com/index/building-scientific-understanding-with-academic-communities/</link>
-      <guid isPermaLink="false">https://openai.com/index/building-scientific-understanding-with-academic-communities/</guid>
-      <description>[Score: 85] OpenAIは、数学、コンピュータサイエンス、物理学における3つの新しい発見を発表しました。 / これらの「生の研究データ」を科学的理解に変換するため、外部専門家と協力し、異なる公開戦略を試行しています。 / 透明性を重視し、NDAなしで議論や成果の共有を自由に行えるよう努めています。 (Source: Hacker News)</description>
-      <pubDate>Mon, 26 Oct 2026 21:35:28 +0000</pubDate>
+      <title>Chromium(V8)のArray.prototype.lastIndexOfを最大約26000倍高速化した</title>
+      <link>https://zenn.dev/dinii/articles/2f66b147007cf8</link>
+      <guid isPermaLink="false">https://zenn.dev/dinii/articles/2f66b147007cf8</guid>
+      <description>[Score: 80] ChromiumのV8エンジンにおいて、Array.prototype.lastIndexOfメソッドを最大約26000倍高速化した取り組みが紹介されています。 / ElementsKindと探索値の型に基づいて処理を最適化し、特にdouble配列でのジェネリックなループ処理を改善しました。 / これにより、特定の条件下での配列検索性能が大幅に向上し、Webアプリケーションのパフォーマンス改善に貢献します。 (Source: Zenn)</description>
+      <pubDate>Tue, 27 Oct 2026 01:00:06 +0000</pubDate>
     </item>
     <item>
-      <title>昨今のセキュリティ情勢を踏まえて、Azure のセキュリティ系新資格 SC-500 を受けてみた【合格体験記】</title>
-      <link>https://zenn.dev/microsoft/articles/112ff28ccc30e3</link>
-      <guid isPermaLink="false">https://zenn.dev/microsoft/articles/112ff28ccc30e3</guid>
-      <description>[Score: 85] 筆者がAzureの新しいセキュリティ資格SC-500に合格した体験記を公開し、クラウドとAIのセキュリティに関する知識の重要性を強調しています。 / 最近の不正アクセスや情報漏洩事件、PHPの脆弱性などのセキュリティ情勢を踏まえ、APIセキュリティやアクセス権設計の重要性を解説。 / Microsoft Learnでの学習方法や、仕事で活かすためのポイントがまとめられており、受験者やセキュリティ担当者にとって有益な情報です。 (Source: Zenn)</description>
-      <pubDate>Mon, 26 Oct 2026 18:01:40 +0000</pubDate>
+      <title>GMO、なんでそんなに嫌われているの？→ダークパターン、対応の悪さ、同業者からの悪評と集まった反応がまるでGMOのWikiのよう</title>
+      <link>https://togetter.com/li/2763425</link>
+      <guid isPermaLink="false">https://togetter.com/li/2763425</guid>
+      <description>[Score: 80] GMOインターネットグループ、特に「お名前.com」が、ダークパターンや対応の悪さで多くのユーザーから不満を集めていることが話題になっています。 / 初年度の安さを強調し、更新料金を目立たせない、有料オプションの初期選択、自動更新・自動課金の複雑さなど、多くの具体的な事例が挙げられています。 / これは、ITサービスにおけるユーザー体験の重要性、倫理的なビジネス慣行の欠如、そして消費者保護の必要性を浮き彫りにしています。 (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 27 Oct 2026 09:08:18 +0000</pubDate>
     </item>
     <item>
-      <title>AI時代のアーキテクチャ：実装を任せるために、詳細設計を自分のものにする</title>
-      <link>https://zenn.dev/simplex/articles/f2b41d3367e9c7</link>
-      <guid isPermaLink="false">https://zenn.dev/simplex/articles/f2b41d3367e9c7</guid>
-      <description>[Score: 85] AIが実装を担う時代において、開発者は「何を、どんな構造で作るか」という詳細設計に注力すべきだと提言。 / 抽象化が進むことで開発者が意識するレイヤーは変化するが、下位の知識は依然として重要であることを指摘。 / ChatGPTの登場を節目に、開発におけるAIの役割が拡大している現状を分析し、今後の開発者の役割を考察している。 (Source: Zenn)</description>
-      <pubDate>Mon, 26 Oct 2026 07:02:56 +0000</pubDate>
+      <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
+      <link>https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</guid>
+      <description>[Score: 80] JavaScriptランタイム「Bun」の最新バージョンv1.4.4に、Prettier互換の高速フォーマッタ「bun fmt」が搭載されました。 / 「bun fmt」はPrettierのテストスイートの99%以上をクリアし、既存のPrettier設定ファイルをそのまま利用可能です。 / Prettierと比較して最大320倍高速で、メモリ消費量も5分の1以下とされており、開発効率の大幅な向上が期待されます。 (Source: Publickey)</description>
+      <pubDate>Tue, 27 Oct 2026 15:27:52 +0000</pubDate>
     </item>
     <item>
-      <title>Apple、iPad miniに史上最大のアップデートを導入</title>
-      <link>https://www.apple.com/jp/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/</link>
-      <guid isPermaLink="false">https://www.apple.com/jp/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/</guid>
-      <description>[Score: 85] Appleが新しいiPad miniを発表し、OLEDディスプレイ、A20 Proチップ、耐水・防塵性能など大幅なアップデートが施されました。 / 特にA20 ProチップとiPadOS 27に搭載される次世代Apple IntelligenceとSiri AIにより、AI機能が飛躍的に向上しています。 / 手のひらサイズで高性能なAI体験を提供し、クリエイターからビジネスユーザーまで幅広い層に訴求する製品です。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 26 Oct 2026 13:38:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>「DuckDB 2.0 LTS」正式リリース。Quackプロトコルによるクライアント/サーバ機能や非同期処理による高速化など</title>
-      <link>https://www.publickey1.jp/blog/26/duckdb_20_ltsquack.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/duckdb_20_ltsquack.html</guid>
-      <description>[Score: 85] OLAP型データベース「DuckDB 2.0 LTS」が正式リリースされました。コードネームは「Cinnamon Teal」です。 / Quackプロトコルによるクライアント/サーバ機能が追加され、非同期I/O対応による高速化も実現。 / AWS子会社となったDuckLabsが開発を主導しており、データ分析分野での活用が期待されます。 (Source: Publickey)</description>
-      <pubDate>Sun, 25 Oct 2026 15:44:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>「Cloudflare OS」のマネージドサービス提供へ。GitHubとの接続やGmailとの連携強化など</title>
-      <link>https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html</guid>
-      <description>[Score: 85] CloudflareがAIを活用した業務プラットフォーム「Cloudflare OS」のマネージドサービス提供を発表しました。 / これは一般的なOSとは異なり、AIと業務アプリケーションのためのプラットフォームです。 / GitHubやGmailとの連携を強化し、社内データに安全にアクセスできるAIエージェントワークスペースを提供します。 (Source: Publickey)</description>
-      <pubDate>Tue, 20 Oct 2026 15:10:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>マルチエージェントオーケストレーションの解説</title>
-      <link>https://dev.to/ayraix/multi-agent-orchestration-explained-2lm5</link>
-      <guid isPermaLink="false">https://dev.to/ayraix/multi-agent-orchestration-explained-2lm5</guid>
-      <description>[Score: 85] 単一のモノリシックエージェントを、プランナー、コーダー、レビューアーなどの専門サブエージェントに分割し、オーケストレーターが調整する手法が注目されています。 / これにより、長いコンテキストでの単一エージェントの限界（コンテキストの混雑、初期ミスの複合化）を克服し、各ステップの失敗を特定しやすくなります。 / 特に、研究、執筆、コード作成など複数のスキルを必要とする複雑なタスクにおいて、個々のエージェントの評価と管理が容易になる利点があります。 (Source: Dev.to)</description>
-      <pubDate>Mon, 26 Oct 2026 23:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sebastian Raschkaによる推論モデル構築のゼロからのビデオコース</title>
-      <link>https://magazine.sebastianraschka.com/p/building-reasoning-models</link>
-      <guid isPermaLink="false">https://magazine.sebastianraschka.com/p/building-reasoning-models</guid>
-      <description>[Score: 80] Sebastian Raschkaが、推論モデルをゼロから構築する11時間以上のビデオコースを公開しました。 / 評価、推論時のスケーリング、強化学習、蒸留といったトピックをPythonとPyTorchで実装しながら解説します。 / LLMの仕組みを深く理解したい開発者や研究者にとって貴重な学習リソースとなります。 (Source: Hacker News)</description>
-      <pubDate>Mon, 26 Oct 2026 15:11:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>Vue Fes Japan 2026 「 Vite+への貢献と、Team Memberになって見えてきた風景」スピーカーノート</title>
-      <link>https://zenn.dev/comm_vue_nuxt/articles/33f8491afbc66d</link>
-      <guid isPermaLink="false">https://zenn.dev/comm_vue_nuxt/articles/33f8491afbc66d</guid>
-      <description>[Score: 80] Vue Fes Japan 2026での発表内容として、Vite+へのコントリビューション経験と、Core Team Memberとしての活動を通じて得られた知見が共有されています。 / Vite+はVite、Vitest、Oxlintなどを統合したWeb開発ツールチェーンであり、筆者はIssue対応やPRレビューを通じてOSS開発に関わっています。 / 個人のコントリビューターからCore Team Memberへと立場が変わる中で、OSSに対する考え方や見方がどのように変化したかが語られており、OSS開発に興味を持つエンジニアにとって示唆に富む内容です。 (Source: Zenn)</description>
-      <pubDate>Mon, 26 Oct 2026 08:44:09 +0000</pubDate>
+      <title>3人のJava ChampionsがGitHub Copilotを生産性向上にどう活用しているか</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
+      <description>[Score: 80] 3人のJava ChampionsがGitHub Copilotをどのように活用し、生産性を向上させているかを紹介しています。 / AIコーディングツールがコード生成を高速化する一方で、開発者はコンテキスト提供、結果検証、保守性保護、責任保持が依然として重要であると述べています。 / Copilotを活用して数週間かかるタスクを数日で完了させた具体的な事例が挙げられています。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
     </item>
   </channel>
 </rss>
