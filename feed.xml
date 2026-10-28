@@ -5,146 +5,146 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 27 Oct 2026 23:02:12 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 23:16:51 +0000</lastBuildDate>
     <item>
-      <title>Genie 4</title>
-      <link>https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</link>
-      <guid isPermaLink="false">https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</guid>
-      <description>[Score: 95] Google DeepMindが、リアルタイムインタラクティブシミュレーションを可能にする新しいワールドモデル「Genie 4」を発表しました。 / Genie 4は、マルチモーダルに対応し、オーディオや対話と同時に世界を生成でき、Geminiモデルの機能も統合しています。 / ロボットの訓練環境開発や新しいインタラクティブ体験の創出に貢献し、AGI構築の重要な側面を進化させます。 (Source: Hacker News)</description>
-      <pubDate>Tue, 27 Oct 2026 16:06:01 +0000</pubDate>
+      <title>Gemini 4 Carbon</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/</guid>
+      <description>[Score: 95] Google DeepMindは、最先端のサイバーセキュリティと長期間にわたる能力を持つ最強のモデル「Gemini 4 Carbon」を発表しました。 / このモデルは、Artificial Analysis Intelligence Index v5.0で59ポイントを獲得し、コーディング、エージェントタスク、サイバーセキュリティ防御において大幅な進歩を示しています。 / 脆弱性発見、エクスプロイト、パッチ適用などのベンチマークで高いスコアを記録し、安全なコード生成やライブコーディング環境での誤認識・捏造率の低減にも貢献しています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 28 Oct 2026 17:01:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIエージェントのセキュリティ解説：2026年にAIエージェントを制御下に置く方法</title>
+      <link>https://dev.to/rashid_1371911653467f5ff2/ai-agent-security-explained-how-to-keep-ai-agents-under-control-in-2026-24ek</link>
+      <guid isPermaLink="false">https://dev.to/rashid_1371911653467f5ff2/ai-agent-security-explained-how-to-keep-ai-agents-under-control-in-2026-24ek</guid>
+      <description>[Score: 92] AIエージェントのセキュリティは、従来のチャットボットとは異なり、エージェントが実行するコマンドやAPI呼び出し、ファイル操作といった「行動」の制御が重要になります。 / OWASPが提唱する「最小限のエージェンシー」の原則に基づき、エージェントに必要なツール、権限、自律性のみを与え、サンドボックス内で実行し、不可逆な行動には人間の承認を求めることが推奨されます。 / プロンプトインジェクションなどの攻撃手法からエージェントを保護し、意図しない動作を防ぐための具体的な対策が解説されています。 (Source: Dev.to)</description>
+      <pubDate>Wed, 28 Oct 2026 23:09:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>9ビットAESキーの事例</title>
+      <link>https://v12.sh/blog/the-case-of-the-9bit-aes-key</link>
+      <guid isPermaLink="false">https://v12.sh/blog/the-case-of-the-9bit-aes-key</guid>
+      <description>[Score: 90] 複数のPDF実装において、AES-256ファイルキーが列挙可能なほど小さな状態空間から生成されていることが判明しました。 / MuPDFでは、わずか9ビットのランダム状態しか実際のAES-256キーに影響を与えず、Foxitなどの他のPDFエディタも時間ベースのランダム性を使用しているため、キーの回復が容易です。 / これにより、パスワードで保護されたPDFがパスワードなしで復号化される可能性があり、PDF暗号化のセキュリティ上の脆弱性が露呈しています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 28 Oct 2026 20:51:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>人間が見るのは設計書だけ ― PdM不在・バグ修正中心のチームで、AI-DLCを開発フローごと作り直した話</title>
+      <link>https://zenn.dev/canly/articles/85dc645c252832</link>
+      <guid isPermaLink="false">https://zenn.dev/canly/articles/85dc645c252832</guid>
+      <description>[Score: 90] PdM不在でバグ修正が中心のチームにおいて、AI-DLC（AI-Driven Development Life Cycle）を導入し、開発フローを再構築した事例です。 / AIをコーディングだけでなく、要件定義・設計・実装・テストまで開発ライフサイクル全体で活用し、人間とAIの役割を入れ替えるというAI-DLCの本質を追求しています。 / 少人数体制や保守フェーズといった特殊な状況下で、AIを最大限に活用するための具体的なアプローチと課題解決のプロセスが示されています。 (Source: Zenn)</description>
+      <pubDate>Wed, 28 Oct 2026 07:55:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>【PHP2Shell】PHP公式の発表『本日のセキュリティリリースと、セキュリティ対策について』</title>
+      <link>https://qiita.com/rana_kualu/items/f5a44b09241bdb21907e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/rana_kualu/items/f5a44b09241bdb21907e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] PHPの深刻な脆弱性「PHP2Shell」に関するPHP財団公式ブログ記事の概要が解説されています。 / この脆弱性は、特定の条件下で攻撃者がサーバ上でコードを実行できてしまうRemote Code Execution (RCE) であり、PHP 8.5.12などの修正版がリリースされました。 / PHP財団は、協調的脆弱性開示プロセスの破綻が騒動拡大の一因であるとし、今後のセキュリティ対策強化について言及しています。 (Source: Qiita)</description>
+      <pubDate>Mon, 26 Oct 2026 11:58:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>てんかん患者がChatGPTの医療アドバイスに従い死亡、家族がOpenAIを提訴</title>
+      <link>https://www.reddit.com/r/technology/comments/1xhv532/epileptic_woman_dies_after_going_to_chatgpt_for/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xhv532/epileptic_woman_dies_after_going_to_chatgpt_for/</guid>
+      <description>[Score: 90] てんかんを患う女性がChatGPTの医療アドバイスに従った結果死亡し、その家族がOpenAIを提訴しました。 / AIが提供する情報の信頼性と、特に医療分野におけるその利用の危険性が浮き彫りになっています。 / AI開発企業は、生成AIの利用における倫理的責任と免責事項の明確化が求められます。 (Source: Reddit)</description>
+      <pubDate>Wed, 28 Oct 2026 17:48:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>GMO熊谷正寿事件の概要と雑感｜山本一郎（やまもといちろう）</title>
+      <link>https://note.com/kirik/n/n72f93c8a2819</link>
+      <guid isPermaLink="false">https://note.com/kirik/n/n72f93c8a2819</guid>
+      <description>[Score: 90] GMOインターネットの「お名前.com デスクトップクラウド」で発生した不正アクセス事件について、山本一郎氏が概要と雑感をまとめています。 / FX自動売買向け仮想デスクトップサービスが標的となり、一部利用者のサーバーに不正プログラムが置かれ、情報持ち出しや不正取引の可能性が指摘されています。 / GMOの対応や情報公開の状況、SNSでの反応など、事件の多角的な側面が論じられています。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 28 Oct 2026 10:33:01 +0000</pubDate>
     </item>
     <item>
       <title>Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026</title>
       <link>https://www.publickey1.jp/blog/26/oracle_cloudgoogle_tpu2027oracle_ai_world_2026.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/oracle_cloudgoogle_tpu2027oracle_ai_world_2026.html</guid>
-      <description>[Score: 95] Oracle CloudがGoogleが開発したAI専用チップ「Google TPU」を導入し、2027年からサービス提供を開始すると発表しました。 / これはOracle AI World 2026で発表され、Oracle CloudがAI市場での競争力を強化する狙いがあります。 / NVIDIA以外のAIプロセッサの選択肢を顧客に提供することで、AWS、Azure、Google Cloudといった競合他社を追撃する戦略の一環です。 (Source: Publickey)</description>
+      <description>[Score: 90] オラクルは「Oracle AI World 2026」で、Googleが開発したAI専用チップ「Google TPU」をOracle Cloud Infrastructureに導入し、2027年からサービス提供を開始すると発表しました。 / Oracle Cloudは、Google TPUを大規模に展開するための電力、冷却、データセンターネットワークなどを提供します。 / これにより、Oracle Cloudの顧客はNVIDIA以外のAIプロセッサの選択肢も利用できるようになります。 (Source: Publickey)</description>
       <pubDate>Tue, 27 Oct 2026 16:33:51 +0000</pubDate>
     </item>
     <item>
-      <title>次世代の開発者インターフェースはアンビエントインテリジェンスである</title>
-      <link>https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/</guid>
-      <description>[Score: 95] GitHub Copilotが開発者の意図を理解し、リポジトリのコンテキストに基づいてコード生成、テスト、修正を行う「アンビエントインテリジェンス」の概念を提唱しています。 / 従来のコマンドベースの開発から、AIが自律的に作業を計画・実行し、開発者は方向付けやレビューに注力するパラダイムシフトが起こると説明。 / これにより、開発者はツール操作に費やす時間を減らし、より本質的な問題解決や創造的な作業に集中できるようになると述べています。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 15 Oct 2026 19:39:27 +0000</pubDate>
+      <title>AWSとGoogle Cloudが「PyTorch」のAWS Trainium、Google Cloud TPU対応版をオープンソースで公開。NVIDIAからの移行に挑む</title>
+      <link>https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html</guid>
+      <description>[Score: 90] AWSとGoogle Cloudが、自社AIプロセッサであるAWS TrainiumとGoogle Cloud TPUに対応したPyTorch版をオープンソースで公開しました。 / これはNVIDIAのGPUに依存しないAI開発環境を提供し、AIインフラの選択肢を広げることを目的としています。 / TorchNeuronとTorchTPUとして公開され、誰でも利用可能になったことで、AI開発の多様化と競争促進が期待されます。 (Source: Publickey)</description>
+      <pubDate>Mon, 26 Oct 2026 15:59:52 +0000</pubDate>
     </item>
     <item>
-      <title>M6搭載の新しい14インチMacBook Pro</title>
-      <link>https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/</link>
-      <guid isPermaLink="false">https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/</guid>
-      <description>[Score: 90] AppleがM6チップを搭載した新しい14インチMacBook Proを発表しました。 / M6チップは、12コアCPUと12コアGPUを搭載し、M5と比較してグラフィック性能が最大30%向上、AIワークロードが最大25%高速化しています。 / オンデバイスAI機能と最長24時間のバッテリー駆動時間を実現し、学生、ビジネスユーザー、クリエイターにとって魅力的な製品です。 (Source: Hacker News)</description>
-      <pubDate>Tue, 27 Oct 2026 16:08:32 +0000</pubDate>
+      <title>GitHub Universe 2026: スタックのあらゆる層を進化させる</title>
+      <link>https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/</guid>
+      <description>[Score: 90] GitHub Universe 2026では、開発者の仕事がAIアシスタントやエージェントとの協調作業へと変化している現状が語られました。 / GitHubは、世界で最も包括的なソフトウェアデリバリーシステムを目指し、そのビジョンを実現する新製品とインフラの再構築を発表。 / SDLCが線形ではなくなり、開発者が方向性を定め、エージェントが実装と検証を行う「エージェント型ソフトウェアデリバリーシステム」を提唱しています。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 28 Oct 2026 16:09:28 +0000</pubDate>
     </item>
     <item>
-      <title>先週の PHP 祭りから見えた、業務システムの「止まり方」の共通点と違い — 予防的な停止・障害・計画メンテを、日本・海外・AI の告知 751 件で比べた</title>
-      <link>https://qiita.com/songchong/items/eb2e60b469a148c2fb8b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/eb2e60b469a148c2fb8b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 2026年10月に発生したPHPの脆弱性による「PHP祭り」を事例に、業務システムの停止パターンを分析しています。 / 予防的な停止、障害、計画メンテナンスの3つの停止理由について、日本・海外・AIの告知751件を比較し、その共通点と違いを明らかにしています。 / 停止の開始時刻、告知内容、影響範囲などのデータに基づき、システム運用におけるリスク管理と情報伝達の重要性を示唆しています。 (Source: Qiita)</description>
-      <pubDate>Mon, 26 Oct 2026 22:51:42 +0000</pubDate>
+      <title>AIがより優れているときに科学をなぜ、どのように行うべきか：人間の理解と方向性に基づいたフレームワーク</title>
+      <link>https://arxiv.org/abs/2610.36116</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.36116</guid>
+      <description>[Score: 90] 本記事は、AIが科学的発見において人間よりも優れるようになった場合に、人間が科学を続ける意義と方法について考察しています。 / AIの能力が向上する中で、人間の役割や科学的探求のあり方を再定義するフレームワークを提案していると推測されます。 / AIと人間の協調関係、そして科学の未来に関する哲学的な問いに答える重要な議論を提供します。 (Source: arXiv cs.AI)</description>
+      <pubDate>Wed, 28 Oct 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>公開された情報と氏名など同一の人物、ＧＭＯクラウドサービスの利用「一度もない」</title>
-      <link>https://www.yomiuri.co.jp/national/20261027-GYT1T00367/</link>
-      <guid isPermaLink="false">https://www.yomiuri.co.jp/national/20261027-GYT1T00367/</guid>
-      <description>[Score: 90] GMOインターネットのFXクラウドサービスへの不正アクセス問題で、攻撃者が個人情報とみられる情報を公開しました。 / 公開された人物はGMOクラウドサービスの利用を否定しており、GMOは情報が利用者情報か確認を進めています。 / 攻撃者は身代金100万ドルを要求し、応じなければ毎日情報を公開し、ランサムウェア攻撃を行うと脅迫しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 27 Oct 2026 13:11:05 +0000</pubDate>
+      <title>Dayjob: 税務 – 50の専門的な税務課題でAIエージェントを評価</title>
+      <link>https://surgehq.ai/blog/dayjob-tax</link>
+      <guid isPermaLink="false">https://surgehq.ai/blog/dayjob-tax</guid>
+      <description>[Score: 88] Surge AIは、専門的な税務課題におけるAIエージェントの能力を評価する新しいベンチマーク「DAYJOB: Tax」を発表しました。 / このベンチマークは、専門知識、複雑な資料、および初期指示では完全に指定されていない意思決定を必要とするタスクでAIをテストします。 / AIエージェントが税務上の重要なデッドラインを見落とす事例が示されており、AIがプロフェッショナルな判断を下す上での課題と、その評価の重要性を浮き彫りにしています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 28 Oct 2026 15:46:30 +0000</pubDate>
     </item>
     <item>
-      <title>米国がAIチップとサーバーの72%を確保、中国は10%に留まる</title>
-      <link>https://dev.to/fathomnews/us-grabs-72-of-ai-chips-and-servers-as-china-gets-10-46pk</link>
-      <guid isPermaLink="false">https://dev.to/fathomnews/us-grabs-72-of-ai-chips-and-servers-as-china-gets-10-46pk</guid>
-      <description>[Score: 90] 2022年以降、米国が世界のAI計算能力の72%を占め、中国は10%に留まっていることが研究で示されました。 / このAI計算能力の集中は、フロンティアAIシステムの構築において米国に大きな優位性をもたらしています。 / 米国のクラウドインフラへの集中と輸出規制が、この格差を広げている主な要因とされています。 (Source: Dev.to)</description>
-      <pubDate>Tue, 27 Oct 2026 22:49:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>Raspberry Pi Zero 3WとPi 4 Model Aがデバイスツリーで発見される</title>
-      <link>https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/</link>
-      <guid isPermaLink="false">https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/</guid>
-      <description>[Score: 88] 新しいRaspberry Piボード、Raspberry Pi Zero 3 WとRaspberry Pi 4 Model AのデバイスツリーファイルがLinuxカーネルツリーで発見されました。 / Zero 3 Wは、Raspberry Pi 4と同じBroadcom BCM2711 SoCを搭載し、Zero 2 Wから大幅な性能向上が期待されます。 / 公式発表はまだですが、これらの発見は新しいPiモデルの登場が近いことを示唆しています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 27 Oct 2026 20:48:49 +0000</pubDate>
-    </item>
-    <item>
-      <title>【解説】クリーンアーキテクチャとは何か？ 炎上議論はなぜ起きるのか？</title>
-      <link>https://qiita.com/Sicut_study/items/3c1995d2a3f1695a18a7?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/3c1995d2a3f1695a18a7?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] クリーンアーキテクチャに関するSNSでの炎上議論がなぜ繰り返されるのかを、「言葉の劣化」と「具体と抽象の解像度のズレ」という観点から分析しています。 / 技術概念が広まる過程で本質が失われ、異なる解像度で議論されることが原因であると指摘し、クリーンアーキテクチャの真の意義を解説しています。 / この記事は、単にクリーンアーキテクチャを理解するだけでなく、技術的な議論の本質を見抜くための視点を提供します。 (Source: Qiita)</description>
-      <pubDate>Sun, 25 Oct 2026 13:54:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Tailscale SSH: 調査と修復の更新</title>
-      <link>https://tailscale.com/ssh-investigation-update</link>
-      <guid isPermaLink="false">https://tailscale.com/ssh-investigation-update</guid>
-      <description>[Score: 85] Tailscaleが、Tailscale SSHに影響を与えるセキュリティ脆弱性に関する調査と修復の進捗状況を更新しました。 / 主な問題は権限昇格に関するもので、一部の状況で許可されたユーザーが設定された権限を超える操作を行う可能性がありました。 / ほとんどの問題に対する修正が実装され、パッチ適用済みのクライアントリリースが間もなく予定されています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 27 Oct 2026 19:55:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>AAIFに加わったOpen ResponsesをAmazon Bedrockで試す</title>
-      <link>https://zenn.dev/exwzd/articles/20261023-open-responses</link>
-      <guid isPermaLink="false">https://zenn.dev/exwzd/articles/20261023-open-responses</guid>
-      <description>[Score: 85] Linux Foundation傘下のAgentic AI Foundation (AAIF) に、複数のLLMプロバイダーを共通の形式で呼び出すためのオープンな仕様「Open Responses」が加わりました。 / AWSもAmazon Bedrockでの対応を発表しており、OpenAIのResponses APIをベースにしたこの仕様は、LLMの相互運用性を高めます。 / これにより、プロバイダーごとの変換コードなしに、異なるLLMを簡単に切り替えて利用できるようになります。 (Source: Zenn)</description>
-      <pubDate>Tue, 27 Oct 2026 06:52:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>Dockerのビルドを遅くしたコミットをGrafana Tempoのトレースで見つける</title>
-      <link>https://zenn.dev/ymotongpoo/articles/20261027-buildkit-traces-tempo</link>
-      <guid isPermaLink="false">https://zenn.dev/ymotongpoo/articles/20261027-buildkit-traces-tempo</guid>
-      <description>[Score: 85] この記事では、DockerのビルドツールBuildKitが生成するOpenTelemetryトレースをGrafana Tempoに送信し、ビルドの遅延原因を特定する方法を解説しています。 / BuildKitはデフォルトでトレースを生成し、`docker buildx history trace`でJaeger UIで確認できますが、Grafana Tempoに送ることでコミットIDと紐付け、長期的なビルドパフォーマンスの監視と分析が可能になります。 / AIを活用してトレースを分析し、遅延を引き起こした特定のコミットや手順を効率的に見つけ出す実用的なアプローチが紹介されています。 (Source: Zenn)</description>
-      <pubDate>Tue, 27 Oct 2026 00:00:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIスタートアップがAnthropicを12時間でハッキング、従業員情報と内部メッセージにアクセス</title>
-      <link>https://www.reddit.com/r/technology/comments/1xh1fih/ai_startup_hacks_anthropic_in_12_hours_gains/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xh1fih/ai_startup_hacks_anthropic_in_12_hours_gains/</guid>
-      <description>[Score: 85] あるAIスタートアップが、著名なAI企業Anthropicをわずか12時間でハッキングし、従業員情報や内部メッセージにアクセスしたと報じられました。 / これはAI企業のセキュリティ対策の脆弱性を露呈するものであり、機密データ保護の重要性を改めて浮き彫りにしています。 / AI技術の進化と並行して、そのセキュリティリスクへの対応が急務であることを示唆する重大なインシデントです。 (Source: Reddit)</description>
-      <pubDate>Tue, 27 Oct 2026 19:00:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>GMO、不正アクセス実行犯の手がかりに懸賞金 1億5000万円規模</title>
-      <link>https://www.itmedia.co.jp/news/article/2610/27/2000002642/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2610/27/2000002642/</guid>
-      <description>[Score: 85] GMOインターネットグループは、FX自動売買用VPS「お名前.com デスクトップクラウド」への不正アクセス事件に対し、犯人特定に繋がる情報に総額100万ドル（約1億5000万円）の懸賞金を設けると発表しました。 / 28日正午から専用窓口で情報提供を受け付け、国内外の法人・個人からの具体的な情報を募ります。 / ただし、不正アクセス実行犯や関係者、違法な手段で情報を入手した場合は対象外で、応募者には危険な独自調査や犯人への接触を避けるよう呼びかけています。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 27 Oct 2026 11:23:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>エージェントスケールGitインフラへの架け橋</title>
-      <link>https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</guid>
-      <description>[Score: 85] GitHubがGitトラフィックの指数関数的増加に対応するため、次世代ストレージアーキテクチャへの移行を進めていることを解説しています。 / 最もビジーなリポジトリをAzureに移行し、レプリカが永続的な状態を持たない新しい設計への橋渡しとなる変更について説明しています。 / データセンターの電力容量の限界やサプライチェーンの制約が、この大規模な移行を加速させた要因です。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Survival LLM: 自分のコンピューターで動作するAIアシスタントと緊急ライブラリ</title>
-      <link>https://www.brangus.io/survival-llm</link>
-      <guid isPermaLink="false">https://www.brangus.io/survival-llm</guid>
-      <description>[Score: 80] Survival LLMは、インターネット接続なしで完全にローカルで動作する無料のAIアシスタント兼緊急ライブラリです。 / 停電時の食品保存や火傷の治療など、緊急時の質問に信頼できる情報源から回答し、その出典も明示します。 / 医療リファレンス、FEMA/CDCガイド、Wikipediaなど約93万の記事を含み、Apple Silicon MacとWindowsに対応しています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 27 Oct 2026 19:55:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>Chromium(V8)のArray.prototype.lastIndexOfを最大約26000倍高速化した</title>
-      <link>https://zenn.dev/dinii/articles/2f66b147007cf8</link>
-      <guid isPermaLink="false">https://zenn.dev/dinii/articles/2f66b147007cf8</guid>
-      <description>[Score: 80] ChromiumのV8エンジンにおいて、Array.prototype.lastIndexOfメソッドを最大約26000倍高速化した取り組みが紹介されています。 / ElementsKindと探索値の型に基づいて処理を最適化し、特にdouble配列でのジェネリックなループ処理を改善しました。 / これにより、特定の条件下での配列検索性能が大幅に向上し、Webアプリケーションのパフォーマンス改善に貢献します。 (Source: Zenn)</description>
-      <pubDate>Tue, 27 Oct 2026 01:00:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>GMO、なんでそんなに嫌われているの？→ダークパターン、対応の悪さ、同業者からの悪評と集まった反応がまるでGMOのWikiのよう</title>
-      <link>https://togetter.com/li/2763425</link>
-      <guid isPermaLink="false">https://togetter.com/li/2763425</guid>
-      <description>[Score: 80] GMOインターネットグループ、特に「お名前.com」が、ダークパターンや対応の悪さで多くのユーザーから不満を集めていることが話題になっています。 / 初年度の安さを強調し、更新料金を目立たせない、有料オプションの初期選択、自動更新・自動課金の複雑さなど、多くの具体的な事例が挙げられています。 / これは、ITサービスにおけるユーザー体験の重要性、倫理的なビジネス慣行の欠如、そして消費者保護の必要性を浮き彫りにしています。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 27 Oct 2026 09:08:18 +0000</pubDate>
+      <title>実際に試したClaude便利術20選 まとめ</title>
+      <link>https://qiita.com/N-Kyo/items/bf4a3a2185db2d28eee5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/N-Kyo/items/bf4a3a2185db2d28eee5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] Claudeを使い始めた著者が、作業効率を向上させる20の便利術をまとめています。 / Terraformコードのレビューを題材に、構成図からコード生成、セキュリティ脆弱性修正、サブエージェントによる並列レビューまでの一連の流れをスクショ付きで解説。 / 特に、Claudeの初期設定ファイル「CLAUDE.md」や、強制力のあるルールを設定できる「permissions / Hooks」の活用法が詳細に紹介されています。 (Source: Qiita)</description>
+      <pubDate>Mon, 26 Oct 2026 11:05:51 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
       <link>https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</guid>
-      <description>[Score: 80] JavaScriptランタイム「Bun」の最新バージョンv1.4.4に、Prettier互換の高速フォーマッタ「bun fmt」が搭載されました。 / 「bun fmt」はPrettierのテストスイートの99%以上をクリアし、既存のPrettier設定ファイルをそのまま利用可能です。 / Prettierと比較して最大320倍高速で、メモリ消費量も5分の1以下とされており、開発効率の大幅な向上が期待されます。 (Source: Publickey)</description>
+      <description>[Score: 88] JavaScriptランタイム「Bun」の最新バージョンv1.4.4に、Prettier互換の高速フォーマッタ「bun fmt」が搭載されました。 / 「bun fmt」はPrettierのテストスイートの99%以上をクリアし、既存のPrettier設定ファイルをそのまま利用可能です。 / Prettierと比較して最大320倍高速で、メモリ消費量も5分の1以下とされており、開発効率の大幅な向上が期待されます。 (Source: Publickey)</description>
       <pubDate>Tue, 27 Oct 2026 15:27:52 +0000</pubDate>
     </item>
     <item>
-      <title>3人のJava ChampionsがGitHub Copilotを生産性向上にどう活用しているか</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
-      <description>[Score: 80] 3人のJava ChampionsがGitHub Copilotをどのように活用し、生産性を向上させているかを紹介しています。 / AIコーディングツールがコード生成を高速化する一方で、開発者はコンテキスト提供、結果検証、保守性保護、責任保持が依然として重要であると述べています。 / Copilotを活用して数週間かかるタスクを数日で完了させた具体的な事例が挙げられています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
+      <title>エージェントスケールGitインフラへの架け橋</title>
+      <link>https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</guid>
+      <description>[Score: 88] 過去1年間でGitトラフィックが指数関数的に増加する中、GitHubのGitリポジトリの99.99999%が自社データセンターとAzureの両方に存在するように移行しました。 / この移行は、エージェントシフトによる急速なトラフィック増加、データセンターの電力容量の限界、物理的なサプライチェーンの制約によって推進されました。 / GitHubは、まずデータを移行し、その後アーキテクチャを進化させるという慎重なアプローチを取り、Gitインフラのスケーラビリティを確保しています。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>【宇宙最速書評】AWSでRAGとAIエージェントをがっつり業務実践できる名著「Amazon Bedrock実践ガイド」</title>
+      <link>https://qiita.com/minorun365/items/84cd50fda97df62cff88?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/minorun365/items/84cd50fda97df62cff88?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 87] 『Amazon Bedrock実践ガイド 〜RAGとAIエージェントで進める業務効率化』の書評が掲載されています。 / 本書は、RAGやAIエージェントを業務で本格的に活用したいAWSエンジニア向けに、問い合わせ対応システムを題材に実践的なノウハウを提供。 / 特に、Bedrockの全体像、RAGの運用面、AgentCoreによるエージェント構築、評価・運用までを網羅している点が評価されています。 (Source: Qiita)</description>
+      <pubDate>Tue, 27 Oct 2026 14:30:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>なぜこのフィンガープリントスクリプトは生物兵器を作成しているのか？</title>
+      <link>https://nullpt.rs/fingerprinting-bioweapons</link>
+      <guid isPermaLink="false">https://nullpt.rs/fingerprinting-bioweapons</guid>
+      <description>[Score: 85] ブラウザのフィンガープリントスクリプトをリバースエンジニアリングする中で、筆者はウェブをクロールし、フィンガープリント関連のブラウザAPIコールを傍受してマッピングするアイデアを思いつきました。 / PlaywrightとTranco Top Sitesリストを使用して10,000のウェブサイトをクロールした結果、多様なキャンバスのコレクションを蓄積し、fingerprint.gardenで公開しました。 / その中には、FingerprintJSやCastleなどの既知のフィンガープリントソリューションだけでなく、これまで知られていなかった多くのフィンガープリントも含まれていました。 (Source: Hacker News)</description>
+      <pubDate>Wed, 28 Oct 2026 17:13:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>MCPツールの引数と結果に入った個人番号を、AgentCore Gatewayのインターセプターでマスクする</title>
+      <link>https://zenn.dev/aws_japan/articles/49bf6abcee64bc</link>
+      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/49bf6abcee64bc</guid>
+      <description>[Score: 85] Amazon Bedrock Guardrailsがツールの引数と結果の個人番号を評価しない問題に対し、AgentCore Gatewayのインターセプターでマスクする手法を検証しています。 / 日本の個人番号（マイナンバー）を対象に、リクエストとレスポンスの両方でGuardrailsを呼び出し、PIIを匿名化する構成を詳細に解説しています。 / 製造業の現場でのエージェント利用を想定し、引数側でのマスク、ツールごとのマスク分離、インターセプター失敗時の挙動など、実用的な観点から検証結果を共有しています。 (Source: Zenn)</description>
+      <pubDate>Wed, 28 Oct 2026 07:55:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>図で理解する Dagster on ECS の構成と、失敗に気づく仕組み</title>
+      <link>https://zenn.dev/safie_inc/articles/dagster_on_ecs</link>
+      <guid isPermaLink="false">https://zenn.dev/safie_inc/articles/dagster_on_ecs</guid>
+      <description>[Score: 85] データ分析基盤におけるデータ取り込み処理のオーケストレーションツールとして、DagsterをECS上で動作させる構成と、その失敗検知の仕組みを図解しています。 / dlt（data load tool）とDagsterを組み合わせ、プロダクトDBからSnowflakeへのデータ取り込みを自動化する具体的なアーキテクチャが示されています。 / AWS WAF、ALB、Cognito、ECS Fargate、Aurora PostgreSQL、S3など、複数のAWSサービスを連携させた複雑なシステム構成が視覚的に分かりやすく解説されています。 (Source: Zenn)</description>
+      <pubDate>Wed, 28 Oct 2026 03:00:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Flutter やめました。電話アプリを Native にした理由</title>
+      <link>https://zenn.dev/ivry/articles/d155267331a3ca</link>
+      <guid isPermaLink="false">https://zenn.dev/ivry/articles/d155267331a3ca</guid>
+      <description>[Score: 85] 株式会社IVRyが電話アプリのFlutterからNative（iOSはSwift/SwiftUI、AndroidはKotlin/Jetpack Compose）への移行を完了しました。 / 移行の主な目的は、中核機能である音声通話の品質・安定性向上と、アーキテクチャのシンプル化による開発生産性・保守性の向上です。 / 当初はFlutterのクロスプラットフォーム開発が合理的でしたが、プロダクト成長に伴うOS固有機能の重要性増大と、モバイルエンジニア増員・AIコーディングツールの進化がNative移行を後押ししました。 (Source: Zenn)</description>
+      <pubDate>Wed, 28 Oct 2026 02:39:36 +0000</pubDate>
     </item>
   </channel>
 </rss>
