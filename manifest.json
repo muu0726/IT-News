@@ -4,12 +4,12 @@
   "description": "IT技術情報をAIで自動収集・分析し、重要度スコア付きで一覧表示",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#191919",
-  "theme_color": "#191919",
+  "background_color": "#141413",
+  "theme_color": "#141413",
   "orientation": "any",
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>",
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none'%3E%3Crect width='64' height='64' rx='14' fill='%23141413'/%3E%3Crect x='14' y='14' width='14' height='14' rx='3' fill='%232eaadc'/%3E%3Crect x='34' y='14' width='16' height='6' rx='2' fill='%23f7f7f5'/%3E%3Crect x='34' y='24' width='10' height='4' rx='2' fill='%238e8e93'/%3E%3Crect x='14' y='34' width='36' height='6' rx='2' fill='%23f7f7f5' opacity='0.85'/%3E%3Crect x='14' y='44' width='26' height='6' rx='2' fill='%232eaadc' opacity='0.75'/%3E%3C/svg%3E",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"

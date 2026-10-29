@@ -34,7 +34,7 @@ import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from email.utils import format_datetime
-from urllib.parse import urlparse
+from urllib.parse import parse_qsl, urlencode, urlparse
 
 import feedparser
 import requests
@@ -117,9 +117,14 @@ TOPIC_SIM_THRESHOLD = 0.82    # 関連記事とみなすコサイン類似度
 EMBED_DIMENSIONS = 256
 
 ARCHIVE_KEEP_DAYS = 180       # アーカイブ保持日数
+PAST_SEEN_DAYS = 3            # 既出記事の判定・解析再利用に参照する過去アーカイブ日数
+
+HATENA_COUNT_URL = "https://bookmark.hatenaapis.com/count/entries"
+HATENA_BATCH_SIZE = 50
 
 DATA_FILE = "data.json"
 ARCHIVE_DIR = "archive"
+SEARCH_INDEX_FILE = os.path.join(ARCHIVE_DIR, "search_index.json")
 FEED_FILE = "feed.xml"
 DIGEST_FILE = "digest.json"
 FEED_TOP_N = 20
@@ -127,16 +132,77 @@ SITE_URL = "https://muu0726.github.io/IT-News/"
 
 JST = timezone(timedelta(hours=9))
 
+BATCH_ANALYSIS_SCHEMA = {
+    "type": "ARRAY",
+    "items": {
+        "type": "OBJECT",
+        "properties": {
+            "id": {"type": "INTEGER"},
+            "title": {"type": "STRING"},
+            "summary": {"type": "STRING"},
+            "tags": {"type": "ARRAY", "items": {"type": "STRING"}},
+            "category": {"type": "STRING", "enum": CATEGORIES},
+            "score": {"type": "INTEGER"},
+            "score_reason": {"type": "STRING"},
+        },
+        "required": ["id", "title", "summary", "tags", "category", "score", "score_reason"],
+    },
+}
+
+DIGEST_RESPONSE_SCHEMA = {
+    "type": "OBJECT",
+    "properties": {
+        "overview": {"type": "STRING"},
+        "trends": {"type": "ARRAY", "items": {"type": "STRING"}},
+        "highlights": {
+            "type": "ARRAY",
+            "items": {
+                "type": "OBJECT",
+                "properties": {
+                    "title": {"type": "STRING"},
+                    "url": {"type": "STRING"},
+                    "comment": {"type": "STRING"},
+                },
+                "required": ["title", "url", "comment"],
+            },
+        },
+    },
+    "required": ["overview", "trends", "highlights"],
+}
+
+BRIEFING_SCHEMA = {
+    "type": "OBJECT",
+    "properties": {
+        "edition": {"type": "STRING"},
+        "summary_lines": {"type": "ARRAY", "items": {"type": "STRING"}},
+        "focus_tags": {"type": "ARRAY", "items": {"type": "STRING"}},
+    },
+    "required": ["summary_lines", "focus_tags"],
+}
+
 
 # ---------------------------------------------------------------------------
 # ユーティリティ
 # ---------------------------------------------------------------------------
+_KEEP_QUERY_KEYS = {"id", "v", "p"}
+
+
 def normalize_url(url: str) -> str:
-    """URL を正規化して重複比較に使う"""
+    """URL を正規化して重複比較に使う（トラッキングクエリは除去し、識別子パラメータは保持）"""
     if not url:
         return ""
     parsed = urlparse(url)
-    return f"{parsed.scheme}://{parsed.netloc}{parsed.path}".rstrip("/").lower()
+    base = f"{parsed.scheme}://{parsed.netloc}{parsed.path}".rstrip("/").lower()
+    if parsed.query:
+        kept = [
+            (k.lower(), v)
+            for k, v in parse_qsl(parsed.query)
+            if k.lower() in _KEEP_QUERY_KEYS and v
+        ]
+        if kept:
+            kept.sort()
+            return f"{base}?{urlencode(kept)}"
+    return base
 
 
 def safe_get(url: str, timeout: int = 15) -> requests.Response | None:
@@ -253,64 +319,135 @@ def xml_escape(text: str) -> str:
 # ---------------------------------------------------------------------------
 # データソース取得
 # ---------------------------------------------------------------------------
+def _fetch_one_hn_item(sid: int) -> dict | None:
+    """Hacker News の個別アイテムを1件取得する"""
+    item_resp = safe_get(HN_ITEM_URL.format(sid))
+    if not item_resp:
+        return None
+    item = item_resp.json()
+    if not isinstance(item, dict):
+        return None
+    return {
+        "title": item.get("title", ""),
+        "url": item.get("url", f"https://news.ycombinator.com/item?id={sid}"),
+        "source": "Hacker News",
+        "published": datetime.fromtimestamp(
+            item.get("time", 0), tz=timezone.utc
+        ).isoformat(),
+        "hn_score": item.get("score", 0),
+        "hn_comments": item.get("descendants", 0),
+    }
+
+
 def fetch_hackernews() -> list[dict]:
-    """Hacker News Top Stories 上位 N 件を取得"""
+    """Hacker News Top Stories 上位 N 件を並列取得（並び順維持）"""
     print("[INFO] Fetching Hacker News Top Stories ...")
     resp = safe_get(HN_TOP_URL)
     if not resp:
         return []
 
     story_ids = resp.json()[:HN_FETCH_COUNT]
-    articles = []
-    for sid in story_ids:
-        item_resp = safe_get(HN_ITEM_URL.format(sid))
-        if not item_resp:
-            continue
-        item = item_resp.json()
-        articles.append({
-            "title": item.get("title", ""),
-            "url": item.get("url", f"https://news.ycombinator.com/item?id={sid}"),
-            "source": "Hacker News",
-            "published": datetime.fromtimestamp(
-                item.get("time", 0), tz=timezone.utc
-            ).isoformat(),
-            "hn_score": item.get("score", 0),
-            "hn_comments": item.get("descendants", 0),
-        })
+    if not story_ids:
+        return []
+
+    workers = min(8, len(story_ids))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        results = list(pool.map(_fetch_one_hn_item, story_ids))
+    articles = [a for a in results if a is not None]
     print(f"[INFO] Hacker News: {len(articles)} articles fetched")
     return articles
 
 
-def fetch_rss_feeds() -> list[dict]:
-    """各 RSS/Atom フィードから最新 N 件を取得"""
-    all_articles = []
-    for source_name, feed_url in RSS_FEEDS.items():
-        print(f"[INFO] Fetching RSS: {source_name} ...")
-        try:
-            feed = feedparser.parse(
-                feed_url,
-                agent="IT-Info-Collector/1.0 (GitHub Actions Bot)"
-            )
-            if feed.bozo and not feed.entries:
-                print(f"[WARN] RSS feed error ({source_name}): {feed.bozo_exception}")
-                continue
+def _fetch_one_rss_feed(item: tuple[str, str]) -> list[dict]:
+    """1つの RSS/Atom フィードから最新 N 件を取得する"""
+    source_name, feed_url = item
+    print(f"[INFO] Fetching RSS: {source_name} ...")
+    fetched: list[dict] = []
+    try:
+        feed = feedparser.parse(
+            feed_url,
+            agent="IT-Info-Collector/1.0 (GitHub Actions Bot)"
+        )
+        if feed.bozo and not feed.entries:
+            print(f"[WARN] RSS feed error ({source_name}): {feed.bozo_exception}")
+            return fetched
 
-            entries = feed.entries[:RSS_FETCH_COUNT]
-            for entry in entries:
-                link = entry.get("link", "")
-                title = entry.get("title", "")
-                if hasattr(title, "replace"):
-                    title = re.sub(r"<[^>]+>", "", title).strip()
-                all_articles.append({
-                    "title": title,
-                    "url": link,
-                    "source": source_name,
-                    "published": parse_published(entry),
-                })
-            print(f"[INFO] {source_name}: {len(entries)} articles fetched")
-        except Exception as e:
-            print(f"[ERROR] RSS fetch failed ({source_name}): {e}")
+        entries = feed.entries[:RSS_FETCH_COUNT]
+        for entry in entries:
+            link = entry.get("link", "")
+            title = entry.get("title", "")
+            if hasattr(title, "replace"):
+                title = re.sub(r"<[^>]+>", "", title).strip()
+            fetched.append({
+                "title": title,
+                "url": link,
+                "source": source_name,
+                "published": parse_published(entry),
+            })
+        print(f"[INFO] {source_name}: {len(entries)} articles fetched")
+    except Exception as e:
+        print(f"[ERROR] RSS fetch failed ({source_name}): {e}")
+    return fetched
+
+
+def fetch_rss_feeds() -> list[dict]:
+    """各 RSS/Atom フィードから最新 N 件を並列取得（ソース順維持）"""
+    feed_items = list(RSS_FEEDS.items())
+    if not feed_items:
+        return []
+    workers = min(8, len(feed_items))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        per_feed = list(pool.map(_fetch_one_rss_feed, feed_items))
+    all_articles: list[dict] = []
+    for chunk in per_feed:
+        all_articles.extend(chunk)
     return all_articles
+
+
+def fetch_hatena_counts(articles: list[dict]) -> None:
+    """はてなブックマーク件数取得APIで最大50件ずつ一括取得して hatena_count に格納する"""
+    urls = [
+        a.get("url", "")
+        for a in articles
+        if str(a.get("url", "")).startswith(("http://", "https://"))
+    ]
+    if not urls:
+        return
+    unique_urls = list(dict.fromkeys(urls))
+    counts: dict[str, int] = {}
+    headers = {"User-Agent": "IT-Info-Collector/1.0 (GitHub Actions Bot)"}
+    for i in range(0, len(unique_urls), HATENA_BATCH_SIZE):
+        chunk = unique_urls[i:i + HATENA_BATCH_SIZE]
+        try:
+            resp = requests.get(
+                HATENA_COUNT_URL,
+                params=[("url", u) for u in chunk],
+                headers=headers,
+                timeout=10,
+            )
+            if resp.status_code == 200:
+                data = resp.json()
+                if isinstance(data, dict):
+                    for u, c in data.items():
+                        if isinstance(c, (int, float)) and not isinstance(c, bool):
+                            counts[u] = int(c)
+        except (requests.RequestException, ValueError) as e:
+            print(f"[WARN] Hatena bookmark count fetch failed: {e}")
+
+    norm_counts: dict[str, int] = {}
+    for u, c in counts.items():
+        nu = normalize_url(u)
+        if nu:
+            norm_counts[nu] = max(norm_counts.get(nu, 0), c)
+
+    for art in articles:
+        raw_u = art.get("url", "")
+        nu = normalize_url(raw_u)
+        c = counts.get(raw_u, norm_counts.get(nu, art.get("hatena_count", 0)))
+        art["hatena_count"] = int(c or 0)
+
+    got = sum(1 for a in articles if a.get("hatena_count", 0) > 0)
+    print(f"[INFO] Hatena bookmark counts: {got}/{len(articles)} articles have bookmarks")
 
 
 # ---------------------------------------------------------------------------
@@ -324,11 +461,54 @@ _TAG_RE = re.compile(r"<[^>]+>")
 _WS_RE = re.compile(r"\s+")
 
 
-def extract_main_text(html: str) -> str:
-    """HTML から本文らしきテキストを抽出する（依存パッケージなしの簡易版）"""
+def _extract_meta_and_ld_text(html: str) -> str:
+    """HTML から OGP / meta description / JSON-LD の本文・説明文を抽出する"""
+    snippets: list[str] = []
+    # meta og:description / description / twitter:description
+    for m in re.finditer(r"<meta\s+[^>]*>", html, re.IGNORECASE):
+        tag = m.group(0)
+        if not re.search(r'(?:property|name)\s*=\s*["\'](?:og:description|twitter:description|description)["\']', tag, re.IGNORECASE):
+            continue
+        cm = re.search(r'content\s*=\s*["\']([^"\']+)["\']', tag, re.IGNORECASE)
+        if cm:
+            val = html_module.unescape(cm.group(1)).strip()
+            if val and val not in snippets:
+                snippets.append(val)
+
+    # JSON-LD articleBody / description
+    for m in re.finditer(
+        r'<script[^>]*type\s*=\s*["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        html,
+        re.IGNORECASE | re.DOTALL,
+    ):
+        raw_ld = m.group(1).strip()
+        parsed_ld = parse_json_safely(raw_ld)
+        items = parsed_ld if isinstance(parsed_ld, list) else [parsed_ld] if isinstance(parsed_ld, dict) else []
+        for obj in items:
+            if not isinstance(obj, dict):
+                continue
+            for key in ("articleBody", "description"):
+                val = obj.get(key)
+                if isinstance(val, str) and val.strip():
+                    clean_val = _WS_RE.sub(" ", html_module.unescape(_TAG_RE.sub(" ", val))).strip()
+                    if clean_val and clean_val not in snippets:
+                        snippets.append(clean_val)
+
+    return " ".join(snippets).strip()
+
+
+def _extract_clean_text_full(html: str) -> str:
+    """HTML から本文テキスト全体（切り詰め前）を抽出する（OGP・JSON-LD フォールバック付き）"""
     if not html:
         return ""
+    meta_text = _extract_meta_and_ld_text(html)
     text = _BODY_STRIP_RE.sub(" ", html)
+    # <article> または <main> があればその内部を優先対象にする
+    main_blocks = re.findall(r"<(article|main)[^>]*>(.*?)</\1>", text, re.IGNORECASE | re.DOTALL)
+    if main_blocks:
+        candidate = " ".join(b[1] for b in main_blocks)
+        if len(_TAG_RE.sub("", candidate).strip()) > 200:
+            text = candidate
     # <p> 系ブロックを優先的に抽出（本文である可能性が高い）
     paragraphs = re.findall(r"<p[^>]*>(.*?)</p>", text, re.IGNORECASE | re.DOTALL)
     if paragraphs and sum(len(p) for p in paragraphs) > 300:
@@ -336,11 +516,36 @@ def extract_main_text(html: str) -> str:
     text = _TAG_RE.sub(" ", text)
     text = html_module.unescape(text)
     text = _WS_RE.sub(" ", text).strip()
-    return text[:BODY_MAX_CHARS]
+
+    if len(text) < 250 and meta_text:
+        return f"{meta_text} {text}".strip() if text else meta_text
+    return text
+
+
+def extract_main_text(html: str) -> str:
+    """HTML から本文らしきテキストを抽出する（OGP・JSON-LD フォールバック付き）"""
+    return _extract_clean_text_full(html)[:BODY_MAX_CHARS]
+
+
+def estimate_reading_minutes(text: str) -> int:
+    """本文テキストから推定読了時間（分、1〜60）を算出する"""
+    cleaned = (text or "").strip()
+    if not cleaned:
+        return 1
+    non_ws = re.sub(r"\s+", "", cleaned)
+    if not non_ws:
+        return 1
+    ascii_chars = sum(1 for ch in non_ws if ord(ch) < 128)
+    if ascii_chars / len(non_ws) > 0.7:
+        words = len(cleaned.split())
+        minutes = round(words / 220)
+    else:
+        minutes = round(len(non_ws) / 600)
+    return max(1, min(60, minutes))
 
 
 def _fetch_one_body(art: dict) -> None:
-    """1記事の本文を取得して art['_body'] に格納する"""
+    """1記事の本文を取得して art['_body'] および推定読了時間 art['reading_min'] に格納する"""
     url = art.get("url", "")
     if not url.startswith(("http://", "https://")):
         return
@@ -352,7 +557,10 @@ def _fetch_one_body(art: dict) -> None:
         )
         content_type = resp.headers.get("Content-Type", "")
         if resp.ok and "html" in content_type.lower():
-            art["_body"] = extract_main_text(resp.text)
+            full_text = _extract_clean_text_full(resp.text)
+            art["_body"] = full_text[:BODY_MAX_CHARS]
+            if len(full_text) >= 200:
+                art["reading_min"] = estimate_reading_minutes(full_text)
     except requests.RequestException:
         pass  # 本文が取れなくてもタイトルベースで解析を続行
 
@@ -408,21 +616,28 @@ def build_batch_prompt(chunk: list[dict]) -> str:
     )
 
 
-def call_gemini_rest(prompt: str, api_key: str) -> list | dict | None:
-    """Gemini REST API を直接呼び出し (リトライ付き)"""
+def call_gemini_rest(
+    prompt: str,
+    api_key: str,
+    response_schema: dict | None = None,
+) -> list | dict | None:
+    """Gemini REST API を直接呼び出し (リトライ・responseSchema 対応)"""
     url = GEMINI_API_URL.format(model=GEMINI_MODEL, key=api_key)
-    payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "responseMimeType": "application/json",
-            "temperature": 0.2,
-        },
+    gen_config: dict = {
+        "responseMimeType": "application/json",
+        "temperature": 0.2,
     }
+    if response_schema is not None:
+        gen_config["responseSchema"] = response_schema
     # thinking を 0 にできるのは flash 系のみ（pro 系に送ると 400 になる）
     if "flash" in GEMINI_MODEL:
-        payload["generationConfig"]["thinkingConfig"] = {
+        gen_config["thinkingConfig"] = {
             "thinkingBudget": GEMINI_THINKING_BUDGET
         }
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": gen_config,
+    }
 
     for attempt in range(1, GEMINI_MAX_RETRIES + 1):
         try:
@@ -480,12 +695,147 @@ def _mark_analysis_failed(art: dict, reason: str, status: str = "error") -> None
     })
 
 
-def analyze_with_gemini(articles: list[dict], start_time: float = 0) -> list[dict]:
+def load_today_existing_articles(now: datetime | None = None) -> list[dict]:
+    """当日 (JST) すでに保存されている data.json / archive/YYYY-MM-DD.json の記事を読み込む"""
+    now = now or datetime.now(JST)
+    today_prefix = now.strftime("%Y-%m-%d")
+    collected: list[dict] = []
+
+    archive_file = os.path.join(ARCHIVE_DIR, f"{today_prefix}.json")
+    for path in (DATA_FILE, archive_file):
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+            if path == DATA_FILE and not str(data.get("generated_at", "")).startswith(today_prefix):
+                continue
+            if isinstance(data.get("articles"), list):
+                collected.extend(data["articles"])
+        except (OSError, ValueError):
+            pass
+    return deduplicate_articles(collected)
+
+
+def load_recent_past_articles(
+    now: datetime | None = None,
+    days: int = PAST_SEEN_DAYS,
+) -> dict[str, dict]:
+    """直近 days 日間（当日を除く）のアーカイブから解析済み記事を URL 正規化キーで返す"""
+    now = now or datetime.now(JST)
+    today = now.date()
+    past_map: dict[str, dict] = {}
+    if not os.path.exists(ARCHIVE_DIR):
+        return past_map
+
+    for d in range(1, days + 1):
+        target_date = (today - timedelta(days=d)).strftime("%Y-%m-%d")
+        fpath = os.path.join(ARCHIVE_DIR, f"{target_date}.json")
+        if not os.path.exists(fpath):
+            continue
+        try:
+            with open(fpath, encoding="utf-8") as f:
+                data = json.load(f)
+        except (OSError, ValueError):
+            continue
+        fallback_ts = str(data.get("generated_at") or f"{target_date}T00:00:00+09:00")
+        for art in data.get("articles", []):
+            if art.get("analysis_status") != "ok":
+                continue
+            norm = normalize_url(art.get("url", ""))
+            if norm and norm not in past_map:
+                copied = dict(art)
+                if not copied.get("new_at"):
+                    copied["new_at"] = fallback_ts
+                past_map[norm] = copied
+    return past_map
+
+
+def reuse_analyzed_articles(
+    fetched: list[dict],
+    existing_today: list[dict],
+    past_seen_map: dict[str, dict] | None = None,
+) -> tuple[list[dict], list[dict]]:
+    """当日または直近数日間に解析済み (analysis_status == 'ok') の記事を再利用し、未解析の記事のみを抽出する"""
+    ok_by_url: dict[str, dict] = {
+        normalize_url(a.get("url", "")): a
+        for a in existing_today
+        if a.get("analysis_status") == "ok" and normalize_url(a.get("url", ""))
+    }
+    past_map = past_seen_map or {}
+    reused: list[dict] = []
+    to_analyze: list[dict] = []
+    for art in fetched:
+        norm = normalize_url(art.get("url", ""))
+        cached = ok_by_url.get(norm)
+        if cached:
+            merged = dict(cached)
+            # HN スコア・コメント等の最新値は引き継ぐ
+            for k in ("hn_score", "hn_comments", "published"):
+                if k in art:
+                    merged[k] = art[k]
+            reused.append(merged)
+        elif norm in past_map:
+            past_art = past_map[norm]
+            merged = dict(past_art)
+            for k in ("hn_score", "hn_comments", "published", "source", "url"):
+                if k in art and art[k]:
+                    merged[k] = art[k]
+            merged["is_prev_seen"] = True
+            merged["new_at"] = past_art.get("new_at") or past_art.get("first_seen") or "past"
+            reused.append(merged)
+        else:
+            to_analyze.append(art)
+    return reused, to_analyze
+
+
+def merge_today_articles(
+    existing_today: list[dict],
+    current_articles: list[dict],
+    run_at: str,
+) -> list[dict]:
+    """当日の既存記事と今回の記事をマージする（朝のみ出現した記事も日次アーカイブに保持）"""
+    by_url: dict[str, dict] = {}
+    for old in existing_today:
+        norm = normalize_url(old.get("url", ""))
+        if norm:
+            by_url[norm] = dict(old)
+
+    for art in current_articles:
+        norm = normalize_url(art.get("url", ""))
+        if not norm:
+            continue
+        prev = by_url.get(norm)
+        if prev and prev.get("analysis_status") == "ok":
+            art["first_seen"] = prev.get("first_seen") or prev.get("new_at") or run_at
+            art["new_at"] = prev.get("new_at") or prev.get("first_seen") or run_at
+            if prev.get("is_prev_seen") and "is_prev_seen" not in art:
+                art["is_prev_seen"] = True
+        elif art.get("is_prev_seen"):
+            art["first_seen"] = art.get("first_seen") or art.get("new_at") or run_at
+            art["new_at"] = art.get("new_at") or "past"
+        else:
+            art["first_seen"] = (prev.get("first_seen") if prev else None) or run_at
+            if art.get("analysis_status") == "ok":
+                art["new_at"] = art.get("new_at") or run_at
+        by_url[norm] = art
+
+    return list(by_url.values())
+
+
+def analyze_with_gemini(
+    articles: list[dict],
+    start_time: float = 0,
+    run_at: str | None = None,
+) -> list[dict]:
     """Gemini REST API で記事をバッチ解析する（全体タイムアウト対応）
 
     1リクエストで ANALYSIS_BATCH_SIZE 件をまとめて解析することで
     リクエスト数を大幅に削減し、レート制限 (15 RPM) との衝突を防ぐ。
     """
+    if not articles:
+        return articles
+
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
         print("[WARN] GEMINI_API_KEY not set -- skipping Gemini analysis")
@@ -515,7 +865,11 @@ def analyze_with_gemini(articles: list[dict], start_time: float = 0) -> list[dic
 
         print(f"[INFO] Analyzing batch {ci + 1}/{len(chunks)} "
               f"({len(chunk)} articles) ...")
-        result = call_gemini_rest(build_batch_prompt(chunk), api_key)
+        result = call_gemini_rest(
+            build_batch_prompt(chunk),
+            api_key,
+            response_schema=BATCH_ANALYSIS_SCHEMA,
+        )
 
         if isinstance(result, list):
             by_id = {
@@ -534,6 +888,8 @@ def analyze_with_gemini(articles: list[dict], start_time: float = 0) -> list[dic
                     art["score"] = max(0, min(int(item.get("score", 50)), SCORE_MAX))
                     art["score_reason"] = str(item.get("score_reason", ""))
                     art["analysis_status"] = "ok"
+                    if run_at:
+                        art["new_at"] = run_at
                 else:
                     _mark_analysis_failed(art, "解析エラー: バッチ応答に含まれず")
         else:
@@ -725,26 +1081,26 @@ def send_discord_notification(articles: list[dict]) -> None:
             color = 0xFF4500
 
         tags_str = " / ".join(art.get("tags", []))
-        hot_icon = "\U0001f525 " if art.get("is_hot") else ""
+        hot_prefix = "[HOT] " if art.get("is_hot") else ""
 
         embeds.append({
-            "title": f"{hot_icon}{art.get('title', 'No Title')}"[:256],
+            "title": f"{hot_prefix}{art.get('title', 'No Title')}"[:256],
             "url": art.get("url", ""),
             "color": color,
             "description": art.get("summary", "").replace("\\n", "\n"),
             "fields": [
-                {"name": "\U0001f4ca Score", "value": str(score), "inline": True},
-                {"name": "\U0001f3f7️ Tags", "value": tags_str or "-", "inline": True},
-                {"name": "\U0001f4f0 Source", "value": art.get("source", ""), "inline": True},
-                {"name": "\U0001f4a1 Reason", "value": art.get("score_reason", "")[:1024], "inline": False},
+                {"name": "Score", "value": str(score), "inline": True},
+                {"name": "Tags", "value": tags_str or "-", "inline": True},
+                {"name": "Source", "value": art.get("source", ""), "inline": True},
+                {"name": "Reason", "value": art.get("score_reason", "")[:1024], "inline": False},
             ],
             "footer": {"text": "IT Info Collector"},
             "timestamp": datetime.now(timezone.utc).isoformat(),
         })
 
     payload = {
-        "username": "\U0001f4e1 IT Info Collector",
-        "content": f"## \U0001f680 本日の最重要IT記事 TOP {len(top_articles)}",
+        "username": "IT Info Collector",
+        "content": f"## 本日の最重要IT記事 TOP {len(top_articles)}",
         "embeds": embeds,
     }
 
@@ -773,10 +1129,10 @@ def send_slack_notification(articles: list[dict]) -> None:
     blocks = [{
         "type": "header",
         "text": {"type": "plain_text",
-                 "text": f"🚀 本日の最重要IT記事 TOP {len(top_articles)}"},
+                 "text": f"本日の最重要IT記事 TOP {len(top_articles)}"},
     }]
     for art in top_articles:
-        hot = "🔥 " if art.get("is_hot") else ""
+        hot = "[HOT] " if art.get("is_hot") else ""
         summary = art.get("summary", "").replace("\\n", "\n")
         blocks.append({
             "type": "section",
@@ -784,8 +1140,8 @@ def send_slack_notification(articles: list[dict]) -> None:
                 "type": "mrkdwn",
                 "text": (f"*<{art.get('url', '')}|{hot}{art.get('title', 'No Title')}>*"
                          f"  `{art.get('score', 0)}点`\n{summary}\n"
-                         f"_📰 {art.get('source', '')} / "
-                         f"🏷️ {' · '.join(art.get('tags', []))}_"),
+                         f"_{art.get('source', '')} / "
+                         f"{' · '.join(art.get('tags', []))}_"),
             },
         })
 
@@ -814,9 +1170,9 @@ def send_line_notification(articles: list[dict]) -> None:
     if not top_articles:
         return
 
-    lines = [f"🚀 本日の最重要IT記事 TOP {len(top_articles)}", ""]
+    lines = [f"本日の最重要IT記事 TOP {len(top_articles)}", ""]
     for art in top_articles:
-        hot = "🔥" if art.get("is_hot") else "・"
+        hot = "[HOT]" if art.get("is_hot") else "・"
         lines.append(f"{hot} [{art.get('score', 0)}点] {art.get('title', '')}")
         lines.append(art.get("url", ""))
         lines.append("")
@@ -841,27 +1197,45 @@ def send_line_notification(articles: list[dict]) -> None:
 
 
 def wait_until_notify_time(now: datetime | None = None) -> float:
-    """環境変数 NOTIFY_AT_JST (HH:MM) の時刻まで待機する。
+    """環境変数 NOTIFY_AT_JST (HH:MM または カンマ区切り HH:MM,HH:MM) の時刻まで待機する。
 
     GitHub Actions の schedule は遅延するため、早めに起動して通知時刻を揃える。
-    未設定なら待たない。既に時刻を過ぎていれば即時通知。戻り値は待機秒数。
+    複数指定時は現在時刻以降の最も近い目標時刻まで待機する。
+    未設定なら待たない。全目標時刻を過ぎていれば即時通知。戻り値は待機秒数。
     """
     notify_at = os.environ.get("NOTIFY_AT_JST", "").strip()
     if not notify_at:
         return 0.0
-    try:
-        hour, minute = (int(x) for x in notify_at.split(":"))
-    except ValueError:
-        print(f"[WARN] Invalid NOTIFY_AT_JST: {notify_at!r} -- notifying now")
+
+    slots: list[tuple[int, int]] = []
+    for raw in notify_at.split(","):
+        part = raw.strip()
+        if not part:
+            continue
+        try:
+            hour, minute = (int(x) for x in part.split(":"))
+            if not (0 <= hour <= 23 and 0 <= minute <= 59):
+                raise ValueError
+            slots.append((hour, minute))
+        except ValueError:
+            print(f"[WARN] Invalid NOTIFY_AT_JST: {notify_at!r} -- notifying now")
+            return 0.0
+
+    if not slots:
         return 0.0
 
     now = now or datetime.now(JST)
-    target = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
-    wait_sec = (target - now).total_seconds()
-    if wait_sec <= 0:
+    upcoming = [
+        now.replace(hour=h, minute=m, second=0, microsecond=0)
+        for h, m in sorted(slots)
+    ]
+    future_targets = [t for t in upcoming if (t - now).total_seconds() > 0]
+    if not future_targets:
         print(f"[INFO] Notify time {notify_at} JST already passed -- notifying now")
         return 0.0
 
+    target = future_targets[0]
+    wait_sec = (target - now).total_seconds()
     print(f"[INFO] Waiting {wait_sec:.0f}s until {target.isoformat()} to notify")
     time.sleep(wait_sec)
     return wait_sec
@@ -911,10 +1285,16 @@ def load_recent_archives(days: int = 7) -> list[dict]:
     return deduplicate_articles(collected)
 
 
-def generate_weekly_digest(current_articles: list[dict]) -> dict | None:
+def generate_weekly_digest(
+    current_articles: list[dict],
+    run_at: str | None = None,
+) -> dict | None:
     """日曜日に直近7日間の高スコア記事から週間ダイジェストを生成する"""
     now = datetime.now(JST)
     if now.weekday() != 6 and os.environ.get("FORCE_DIGEST") != "1":
+        return None
+    if load_today_digest() is not None and os.environ.get("FORCE_DIGEST") != "1":
+        print("[INFO] Weekly digest already generated today -- skipping")
         return None
 
     api_key = os.environ.get("GEMINI_API_KEY", "")
@@ -944,13 +1324,13 @@ def generate_weekly_digest(current_articles: list[dict]) -> dict | None:
     prompt = DIGEST_PROMPT.format(articles_block="\n".join(blocks))
 
     time.sleep(GEMINI_SLEEP_SEC)
-    result = call_gemini_rest(prompt, api_key)
+    result = call_gemini_rest(prompt, api_key, response_schema=DIGEST_RESPONSE_SCHEMA)
     if not isinstance(result, dict) or "overview" not in result:
         print("[WARN] Weekly digest generation failed")
         return None
 
     digest = {
-        "generated_at": now.isoformat(),
+        "generated_at": run_at or now.isoformat(),
         "week_start": (now - timedelta(days=6)).strftime("%Y-%m-%d"),
         "week_end": now.strftime("%Y-%m-%d"),
         "article_count": len(week_articles),
@@ -997,14 +1377,14 @@ def send_digest_notification(digest: dict) -> None:
             for h in digest.get("highlights", [])
         )
         payload = {
-            "username": "\U0001f4e1 IT Info Collector",
+            "username": "IT Info Collector",
             "embeds": [{
-                "title": f"\U0001f4c5 週間ダイジェスト ({digest.get('week_start', '')} 〜 {digest.get('week_end', '')})",
+                "title": f"週間ダイジェスト ({digest.get('week_start', '')} 〜 {digest.get('week_end', '')})",
                 "color": 0x2EAADC,
                 "description": str(digest.get("overview", ""))[:2000] or "-",
                 "fields": [
-                    {"name": "\U0001f4c8 今週のトレンド", "value": trends_str[:1024] or "-"},
-                    {"name": "\U0001f31f ハイライト", "value": highlights_str[:1024] or "-"},
+                    {"name": "今週のトレンド", "value": trends_str[:1024] or "-"},
+                    {"name": "ハイライト", "value": highlights_str[:1024] or "-"},
                 ],
             }],
         }
@@ -1089,9 +1469,147 @@ def rotate_archives() -> None:
               f"(older than {ARCHIVE_KEEP_DAYS} days)")
 
 
-def save_results(articles: list[dict]) -> None:
-    """data.json と archive/YYYY-MM-DD.json を生成"""
+def _strip_emojis(text: str) -> str:
+    """文字列から絵文字コードポイントを除去する"""
+    return re.sub(
+        r"[\U0001F300-\U0001FAFF\U00002600-\U000027BF\U0001F1E6-\U0001F1FF\uFE0F]",
+        "",
+        text or "",
+    ).strip()
+
+
+def generate_daily_briefing(
+    articles: list[dict],
+    run_at: str | None = None,
+) -> dict | None:
+    """当日の上位記事から3行ブリーフィングと注目トピックタグを生成する"""
+    ok_articles = sorted(
+        [a for a in articles if a.get("analysis_status") == "ok" and not a.get("is_prev_seen")],
+        key=lambda x: x.get("score", 0),
+        reverse=True,
+    )[:10]
+    if not ok_articles:
+        ok_articles = sorted(
+            [a for a in articles if a.get("analysis_status") == "ok"],
+            key=lambda x: x.get("score", 0),
+            reverse=True,
+        )[:10]
+    if not ok_articles:
+        return None
+
+    now_dt = datetime.now(JST)
+    if run_at:
+        try:
+            now_dt = datetime.fromisoformat(run_at.replace("Z", "+00:00")).astimezone(JST)
+        except ValueError:
+            pass
+    edition = "朝刊" if now_dt.hour < 12 else "夕刊"
+
+    # 頻出タグ上位をフォールバック用に集計
+    tag_freq: dict[str, int] = {}
+    for a in ok_articles:
+        for t in a.get("tags", []):
+            ts = str(t).strip()
+            if ts:
+                tag_freq[ts] = tag_freq.get(ts, 0) + 1
+    fallback_tags = [
+        k for k, _ in sorted(tag_freq.items(), key=lambda kv: (-kv[1], kv[0]))[:5]
+    ]
+
+    api_key = os.environ.get("GEMINI_API_KEY", "")
+    if api_key:
+        blocks = [
+            f"- [{a.get('score', 0)}点 / {a.get('category', '')}] {a.get('title', '')} "
+            f"(タグ: {', '.join(str(t) for t in a.get('tags', []))})"
+            for a in ok_articles
+        ]
+        prompt = (
+            f"あなたはIT技術ニュースの編集長です。以下の上位記事リストから、"
+            f"本日の「{edition}ブリーフィング」を作成してください。絵文字は一切使用しないでください。\n\n"
+            f"{chr(10).join(blocks)}\n\n"
+            f"以下のJSON形式で出力してください:\n"
+            f"- edition: \"{edition}\"\n"
+            f"- summary_lines: 今日の技術トレンド・注目動向を端的にまとめた日本語の箇条書き3文のリスト（各60文字前後、絵文字禁止）\n"
+            f"- focus_tags: 注目キーワード・技術タグを3〜5個のリスト（絵文字禁止）"
+        )
+        result = call_gemini_rest(prompt, api_key, response_schema=BRIEFING_SCHEMA)
+        if isinstance(result, dict) and isinstance(result.get("summary_lines"), list):
+            lines = [_strip_emojis(str(s)) for s in result["summary_lines"] if str(s).strip()][:3]
+            tags = [_strip_emojis(str(t)) for t in result.get("focus_tags", []) if str(t).strip()][:5]
+            if lines:
+                return {
+                    "edition": edition,
+                    "generated_at": run_at or now_dt.isoformat(),
+                    "summary_lines": lines,
+                    "focus_tags": tags or fallback_tags,
+                }
+
+    # APIキー未設定または呼び出し失敗時の決定論的フォールバック
+    fallback_lines = [
+        _strip_emojis(f"{a.get('title', '')}（{a.get('source', '')}・スコア{a.get('score', 0)}）")
+        for a in ok_articles[:3]
+    ]
+    return {
+        "edition": edition,
+        "generated_at": run_at or now_dt.isoformat(),
+        "summary_lines": fallback_lines,
+        "focus_tags": fallback_tags,
+    }
+
+
+def build_search_index(archive_dir: str = ARCHIVE_DIR, out_file: str | None = None) -> dict:
+    """全アーカイブを重複除去して1つにまとめた軽量検索インデックス (archive/search_index.json) を生成する"""
+    out_file = out_file or os.path.join(archive_dir, "search_index.json")
+    if not os.path.exists(archive_dir):
+        return {"days_count": 0, "total_count": 0, "articles": []}
+
+    date_files = sorted(
+        [fn for fn in os.listdir(archive_dir) if re.match(r"^\d{4}-\d{2}-\d{2}\.json$", fn)],
+        reverse=True,
+    )
+    seen: set[str] = set()
+    merged: list[dict] = []
+    keep_keys = (
+        "title", "url", "source", "published", "summary", "tags", "category",
+        "score", "score_reason", "analysis_status", "is_hot", "hn_score",
+        "hn_comments", "topic_group", "topic_size", "hatena_count",
+        "reading_min", "is_prev_seen",
+    )
+    for fn in date_files:
+        fpath = os.path.join(archive_dir, fn)
+        try:
+            with open(fpath, encoding="utf-8") as f:
+                data = json.load(f)
+        except (OSError, ValueError):
+            continue
+        for art in data.get("articles", []):
+            norm = normalize_url(art.get("url", ""))
+            if not norm or norm in seen:
+                continue
+            seen.add(norm)
+            compact = {k: art[k] for k in keep_keys if k in art}
+            merged.append(compact)
+
+    payload = {
+        "generated_at": datetime.now(JST).isoformat(),
+        "days_count": len(date_files),
+        "total_count": len(merged),
+        "articles": merged,
+    }
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"[INFO] Updated {out_file} ({len(merged)} unique articles across {len(date_files)} days)")
+    return payload
+
+
+def save_results(
+    articles: list[dict],
+    run_at: str | None = None,
+    briefing: dict | None = None,
+) -> str:
+    """data.json と archive/YYYY-MM-DD.json を生成し、生成時刻 (ISO文字列) を返す"""
     now = datetime.now(JST)
+    generated_at = run_at or now.isoformat()
 
     # 一時フィールド (_body) を出力から除去
     for art in articles:
@@ -1102,15 +1620,17 @@ def save_results(articles: list[dict]) -> None:
     )
     success_count = len(articles) - error_count
 
-    output = {
+    output: dict = {
         "schema_version": 2,
-        "generated_at": now.isoformat(),
+        "generated_at": generated_at,
         "total_count": len(articles),
         "success_count": success_count,
         "error_count": error_count,
         "gemini_model": GEMINI_MODEL,
         "articles": sorted(articles, key=lambda x: x.get("score", 0), reverse=True),
     }
+    if briefing:
+        output["briefing"] = briefing
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
@@ -1125,19 +1645,25 @@ def save_results(articles: list[dict]) -> None:
     rotate_archives()
 
     archive_files = sorted(
-        [fn for fn in os.listdir(ARCHIVE_DIR) if fn.endswith(".json") and fn != "index.json"],
+        [
+            fn for fn in os.listdir(ARCHIVE_DIR)
+            if re.match(r"^\d{4}-\d{2}-\d{2}\.json$", fn)
+        ],
         reverse=True,
     )
     with open(os.path.join(ARCHIVE_DIR, "index.json"), "w", encoding="utf-8") as f:
         json.dump(archive_files, f, ensure_ascii=False, indent=2)
     print(f"[INFO] Updated archive/index.json ({len(archive_files)} files)")
 
+    build_search_index(ARCHIVE_DIR, SEARCH_INDEX_FILE)
+    return generated_at
+
 
 # ---------------------------------------------------------------------------
 # メイン
 # ---------------------------------------------------------------------------
 def notify_from_saved() -> None:
-    """保存済みの data.json / digest.json から通知だけを行う"""
+    """保存済みの data.json / digest.json から通知だけを行う（今回新規解析された記事のみ対象）"""
     try:
         with open(DATA_FILE, encoding="utf-8") as f:
             data = json.load(f)
@@ -1146,11 +1672,17 @@ def notify_from_saved() -> None:
         sys.exit(1)
 
     articles = data.get("articles", [])
-    print(f"[INFO] Loaded {len(articles)} articles "
-          f"(generated_at: {data.get('generated_at', '?')})")
+    run_at = data.get("generated_at", "")
+    # new_at がある場合は今回の実行 (run_at) で新規解析された記事のみ通知対象にする（旧形式は全件対象）
+    fresh_articles = [
+        a for a in articles
+        if not run_at or not a.get("new_at") or a.get("new_at") == run_at
+    ]
+    print(f"[INFO] Loaded {len(articles)} articles ({len(fresh_articles)} new in this run, "
+          f"generated_at: {run_at or '?'})")
 
     wait_until_notify_time()
-    send_notifications(articles)
+    send_notifications(fresh_articles)
     digest = load_today_digest()
     if digest:
         send_digest_notification(digest)
@@ -1170,10 +1702,12 @@ def main() -> None:
         return
 
     start_time = time.monotonic()
+    now = datetime.now(JST)
+    run_at = now.isoformat()
 
     print("=" * 60)
     print("IT Info Collector -- Start")
-    print(f"Time: {datetime.now(JST).isoformat()}")
+    print(f"Time: {run_at}")
     print(f"Gemini model: {GEMINI_MODEL}")
     print(f"Global timeout: {GLOBAL_TIMEOUT_SEC}s ({GLOBAL_TIMEOUT_SEC // 60}min)")
     print("=" * 60)
@@ -1188,37 +1722,65 @@ def main() -> None:
         print("[WARN] No articles fetched -- exiting")
         return
 
-    # 2. 重複記事の除去（URL正規化で判定）
+    # 2. 複数ソース出現の検知用に生リストから HOT 判定 URL を抽出してから重複除去
+    raw_for_hot = list(all_articles)
     before_dedup = len(all_articles)
     all_articles = deduplicate_articles(all_articles)
     if before_dedup != len(all_articles):
         print(f"[INFO] Deduplicated: {before_dedup} -> {len(all_articles)} articles")
 
-    # 3. 記事本文の取得（要約精度向上）
-    fetch_article_bodies(all_articles)
+    # 3. 当日および直近数日間に解析済みの記事があれば再利用（1日2回実行時の差分解析・既出抑制）
+    existing_today = load_today_existing_articles(now)
+    past_seen_map = load_recent_past_articles(now)
+    reused_articles, to_analyze = reuse_analyzed_articles(
+        all_articles, existing_today, past_seen_map
+    )
+    if reused_articles:
+        prev_cnt = sum(1 for a in reused_articles if a.get("is_prev_seen"))
+        print(f"[INFO] Reused {len(reused_articles)} already-analyzed articles "
+              f"({prev_cnt} from past days); {len(to_analyze)} new articles to analyze")
 
-    # 4. Gemini バッチ解析
-    all_articles = analyze_with_gemini(all_articles, start_time)
+    # 4. 未解析記事のみ本文取得 & Gemini バッチ解析
+    if to_analyze:
+        fetch_article_bodies(to_analyze)
+        analyze_with_gemini(to_analyze, start_time, run_at=run_at)
 
-    # 5. スコアリング（複数ソース出現の検知）
-    all_articles = apply_hot_scoring(all_articles)
+    # 5. 当日の既存記事とマージ（朝のみ出現した記事も日次アーカイブに保持）
+    all_articles = merge_today_articles(existing_today, reused_articles + to_analyze, run_at)
 
-    # 6. 関連記事グルーピング
+    # 6. スコアリング（複数ソース出現の検知）& はてなブックマーク件数の一括取得
+    hot_norms = {
+        normalize_url(a.get("url", ""))
+        for a in apply_hot_scoring(raw_for_hot)
+        if a.get("is_hot")
+    }
+    for art in all_articles:
+        if normalize_url(art.get("url", "")) in hot_norms and not art.get("is_hot"):
+            art["is_hot"] = True
+            art["score"] = min(art.get("score", 50) + SCORE_HOT_BONUS, SCORE_MAX)
+        elif "is_hot" not in art:
+            art["is_hot"] = False
+
+    fetch_hatena_counts(all_articles)
+
+    # 7. 関連記事グルーピング & デイリーブリーフィング生成
     all_articles = apply_topic_grouping(all_articles)
+    briefing = generate_daily_briefing(all_articles, run_at=run_at)
 
-    # 7. 保存 + RSS フィード出力
-    save_results(all_articles)
+    # 8. 保存 + RSS フィード出力
+    save_results(all_articles, run_at=run_at, briefing=briefing)
     generate_rss_feed(all_articles)
 
-    # 8. 週間ダイジェスト（日曜のみ）
-    digest = generate_weekly_digest(all_articles)
+    # 9. 週間ダイジェスト（日曜のみ・1日1回）
+    digest = generate_weekly_digest(all_articles, run_at=run_at)
 
-    # 9. 通知（NOTIFY_AT_JST 設定時はその時刻まで待機）
+    # 10. 通知（NOTIFY_AT_JST 設定時はその時刻まで待機）
     if args.no_notify:
         print("[INFO] --no-notify: skipping notifications")
     else:
         wait_until_notify_time()
-        send_notifications(all_articles)
+        fresh = [a for a in all_articles if a.get("new_at") == run_at]
+        send_notifications(fresh)
         if digest:
             send_digest_notification(digest)
 

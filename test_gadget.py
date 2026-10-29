@@ -134,3 +134,65 @@ def test_notify_only_uses_saved_file(monkeypatch, tmp_path):
     gadget.save_gadgets([_item("a", score=90)], RUN_AT, path=str(path))
     data = gadget.load_gadgets(str(path))
     assert [it["url"] for it in pick_gadget_notifications(data)] == ["a"]
+
+
+def test_generate_gadget_rss_feed(tmp_path):
+    feed_path = tmp_path / "gadget_feed.xml"
+    items = [
+        {
+            "url": "https://example.com/p1?a=1&b=2",
+            "title": "ソニーが新型ヘッドホンを発表",
+            "product_name": "WH-1000XM7",
+            "brand": "Sony & Co.",
+            "category": "オーディオ",
+            "is_new_product": True,
+            "price": "5万9400円",
+            "release_date": "2026年11月10日",
+            "score": 92,
+            "summary": "第1行\n第2行",
+            "source": "AV Watch",
+            "published": "2026-10-29T03:00:00+00:00",
+            "analysis_status": "ok",
+        },
+        {
+            "url": "https://example.com/review",
+            "title": "長期レビュー記事",
+            "product_name": "Old Phone",
+            "is_new_product": False,
+            "score": 95,
+            "analysis_status": "ok",
+        },
+    ]
+    gadget.generate_gadget_rss_feed(items, path=str(feed_path))
+    xml_text = feed_path.read_text(encoding="utf-8")
+    assert "<rss version=\"2.0\">" in xml_text
+    assert "WH-1000XM7" in xml_text
+    assert "Sony &amp; Co." in xml_text
+    assert "https://example.com/p1?a=1&amp;b=2" in xml_text
+    assert "5万9400円" in xml_text
+    assert "長期レビュー記事" not in xml_text
+
+
+def test_fetch_gadget_feeds_parallel_preserves_order(monkeypatch):
+    now = datetime(2026, 10, 29, 6, 0, tzinfo=timezone.utc)
+    monkeypatch.setattr(
+        gadget,
+        "GADGET_FEEDS",
+        {"FeedA": "https://a.example/rss", "FeedB": "https://b.example/rss"},
+    )
+
+    class _FakeFeed:
+        bozo = False
+
+        def __init__(self, entries):
+            self.entries = entries
+
+    def fake_parse(url, agent=None):
+        if "a.example" in url:
+            return _FakeFeed([{"title": "Item A", "link": "https://a.example/1", "published": "2026-10-29T01:00:00+00:00"}])
+        return _FakeFeed([{"title": "Item B", "link": "https://b.example/1", "published": "2026-10-29T02:00:00+00:00"}])
+
+    monkeypatch.setattr(gadget.feedparser, "parse", fake_parse)
+    items = gadget.fetch_gadget_feeds(now)
+    assert [it["title"] for it in items] == ["Item A", "Item B"]
+

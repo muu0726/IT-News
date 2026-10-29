@@ -6,253 +6,1086 @@
   <meta name="description" content="国内ガジェットメディアから新製品情報を自動収集・AI分析した最新ガジェット情報">
   <title>Gadget Hub — 最新ガジェット情報</title>
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#191919">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+  <meta name="theme-color" content="#141413">
+  <link rel="alternate" type="application/rss+xml" title="Gadget Hub RSS" href="gadget_feed.xml">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none'%3E%3Crect width='64' height='64' rx='14' fill='%23141413'/%3E%3Crect x='18' y='10' width='28' height='44' rx='6' stroke='%2314b8a6' stroke-width='4'/%3E%3Ccircle cx='32' cy='46' r='2.5' fill='%23f7f7f5'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* index.html と同じトークン（ライト / ダーク） */
     :root {
       --font-sans: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       --bg-primary: #ffffff;
-      --bg-secondary: #f7f7f5;
-      --bg-tertiary: #f0f0ee;
-      --bg-hover: rgba(55, 53, 47, 0.04);
-      --text-primary: #37352f;
-      --text-secondary: #6b6b6b;
-      --text-tertiary: #9b9b9b;
-      --border-color: #e8e8e5;
-      --accent: #2eaadc;
-      --accent-hover: #2593be;
-      --gold: #d4a017;
-      --gold-bg: rgba(212, 160, 23, 0.08);
-      --silver: #8e8e93;
-      --new-color: #1baf7a;
-      --new-bg: rgba(27, 175, 122, 0.1);
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-      --radius-sm: 4px;
+      --bg-secondary: #f6f6f4;
+      --bg-tertiary: #ededeb;
+      --bg-elevated: #ffffff;
+      --bg-hover: rgba(24, 24, 22, 0.04);
+      --text-primary: #181816;
+      --text-secondary: #575653;
+      --text-tertiary: #878681;
+      --border-color: #e4e4e0;
+      --border-strong: #cfcfc9;
+      --border-light: #efefec;
+      --accent: #0f766e;
+      --accent-hover: #0d635c;
+      --accent-subtle: rgba(15, 118, 110, 0.08);
+      --accent-border: rgba(15, 118, 110, 0.35);
+      --gold: #b45309;
+      --gold-badge: #d97706;
+      --gold-bg: rgba(217, 119, 6, 0.06);
+      --gold-border: rgba(217, 119, 6, 0.4);
+      --silver: #52525b;
+      --silver-bg: rgba(82, 82, 91, 0.04);
+      --silver-border: rgba(82, 82, 91, 0.25);
+      --new-color: #0f766e;
+      --new-bg: rgba(15, 118, 110, 0.09);
+      --new-border: rgba(15, 118, 110, 0.35);
+      --today-color: #2563eb;
+      --today-bg: rgba(37, 99, 235, 0.1);
+      --today-border: rgba(37, 99, 235, 0.35);
+      --favorite-color: #d97706;
+      --favorite-bg: rgba(217, 119, 6, 0.1);
+      --hl-bg: rgba(234, 179, 8, 0.28);
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.03);
+      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
+      --radius-xs: 4px;
+      --radius-sm: 6px;
       --radius-md: 8px;
+      --radius-lg: 12px;
     }
+
     [data-theme="dark"] {
-      --bg-primary: #191919;
-      --bg-secondary: #202020;
-      --bg-tertiary: #2d2d2d;
-      --bg-hover: rgba(255, 255, 255, 0.04);
-      --text-primary: #e0e0e0;
-      --text-secondary: #9b9b9b;
-      --text-tertiary: #6b6b6b;
-      --border-color: #333333;
-      --accent: #529cca;
-      --accent-hover: #6db3dc;
-      --gold-bg: rgba(212, 160, 23, 0.12);
-      --new-color: #3ccf98;
-      --new-bg: rgba(60, 207, 152, 0.12);
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+      --bg-primary: #141413;
+      --bg-secondary: #0d0d0c;
+      --bg-tertiary: #222220;
+      --bg-elevated: #1c1c1a;
+      --bg-hover: rgba(255, 255, 255, 0.045);
+      --text-primary: #eceae5;
+      --text-secondary: #a1a09a;
+      --text-tertiary: #6e6d68;
+      --border-color: #282826;
+      --border-strong: #3a3a36;
+      --border-light: #1f1f1d;
+      --accent: #14b8a6;
+      --accent-hover: #2dd4bf;
+      --accent-subtle: rgba(20, 184, 166, 0.12);
+      --accent-border: rgba(20, 184, 166, 0.4);
+      --gold: #f59e0b;
+      --gold-badge: #d97706;
+      --gold-bg: rgba(245, 158, 11, 0.08);
+      --gold-border: rgba(245, 158, 11, 0.45);
+      --silver: #a1a1aa;
+      --silver-bg: rgba(161, 161, 170, 0.06);
+      --silver-border: rgba(161, 161, 170, 0.3);
+      --new-color: #2dd4bf;
+      --new-bg: rgba(45, 212, 191, 0.12);
+      --new-border: rgba(45, 212, 191, 0.4);
+      --today-color: #60a5fa;
+      --today-bg: rgba(96, 165, 250, 0.14);
+      --today-border: rgba(96, 165, 250, 0.4);
+      --favorite-color: #fbbf24;
+      --favorite-bg: rgba(251, 191, 36, 0.14);
+      --hl-bg: rgba(250, 204, 21, 0.25);
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.25);
+      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.6);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: var(--font-sans);
       background: var(--bg-secondary);
       color: var(--text-primary);
-      line-height: 1.65;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
-      transition: background 0.3s ease, color 0.3s ease;
+      font-variant-numeric: tabular-nums;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .icon-svg {
+      width: 15px;
+      height: 15px;
+      stroke: currentColor;
+      stroke-width: 1.85;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      flex-shrink: 0;
+    }
+    .icon-svg.sm { width: 13px; height: 13px; }
+
+    mark.hl {
+      background: var(--hl-bg);
+      color: inherit;
+      padding: 0 2px;
+      border-radius: 2px;
     }
 
     /* Header */
     .header {
-      position: sticky; top: 0; z-index: 100;
+      position: sticky;
+      top: 0;
+      z-index: 100;
       border-bottom: 1px solid var(--border-color);
       backdrop-filter: blur(12px);
-      background: rgba(255,255,255,0.85);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.88);
     }
-    [data-theme="dark"] .header { background: rgba(25,25,25,0.88); }
+    [data-theme="dark"] .header { background: rgba(20, 20, 19, 0.88); }
     .header-inner {
-      max-width: 1100px; margin: 0 auto; padding: 16px 24px;
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
     }
     .logo {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 18px; font-weight: 700; white-space: nowrap;
-      text-decoration: none; color: var(--text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+      text-decoration: none;
+      color: var(--text-primary);
     }
-    .logo-icon { font-size: 24px; }
-    .header-controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .logo-mark {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: var(--text-primary);
+      color: var(--bg-primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-mark svg {
+      width: 15px;
+      height: 15px;
+      stroke: currentColor;
+      stroke-width: 2.1;
+      fill: none;
+    }
+    .nav-switch {
+      display: inline-flex;
+      align-items: center;
+      background: var(--bg-tertiary);
+      padding: 3px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+    .nav-switch a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: var(--radius-xs);
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-secondary);
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .nav-switch a:hover { color: var(--text-primary); }
+    .nav-switch a.active {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      box-shadow: var(--shadow-xs);
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 1;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
 
     .btn {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 6px 12px;
-      border: 1px solid var(--border-color); border-radius: var(--radius-sm);
-      background: var(--bg-primary); color: var(--text-secondary);
-      font-size: 13px; font-family: var(--font-sans);
-      cursor: pointer; transition: all 0.15s ease; white-space: nowrap; text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 6px 11px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: var(--bg-primary);
+      color: var(--text-secondary);
+      font-size: 12.5px;
+      font-weight: 500;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      transition: all 0.14s ease;
+      white-space: nowrap;
+      text-decoration: none;
+      height: 32px;
     }
-    .btn:hover { background: var(--bg-hover); color: var(--text-primary); }
-    .btn.active { background: var(--new-color); border-color: var(--new-color); color: #fff; }
+    .btn:hover { background: var(--bg-hover); color: var(--text-primary); border-color: var(--border-strong); }
+    .btn.icon-only { padding: 0; width: 32px; }
+    .btn.active {
+      background: var(--accent-subtle);
+      border-color: var(--accent-border);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .btn-fav.active {
+      background: var(--favorite-bg);
+      color: var(--favorite-color);
+      border-color: var(--gold-border);
+    }
+    .btn-count {
+      font-size: 11px;
+      padding: 1px 5px;
+      border-radius: 999px;
+      background: var(--bg-tertiary);
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+    .btn.active .btn-count {
+      background: rgba(15, 118, 110, 0.16);
+      color: var(--accent);
+    }
 
     .select-wrap select {
-      padding: 6px 28px 6px 10px;
-      border: 1px solid var(--border-color); border-radius: var(--radius-sm);
-      background: var(--bg-primary); color: var(--text-primary);
-      font-size: 13px; font-family: var(--font-sans); cursor: pointer; appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-      background-repeat: no-repeat; background-position: right 8px center;
+      height: 32px;
+      padding: 0 26px 0 10px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-size: 12.5px;
+      font-weight: 500;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23878681' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      max-width: 185px;
     }
+    .select-wrap select:hover { border-color: var(--border-strong); }
+    .select-wrap select:focus { outline: none; border-color: var(--accent); }
 
-    .search-box { position: relative; flex: 1; min-width: 200px; max-width: 320px; }
+    .search-box {
+      position: relative;
+      flex: 1;
+      min-width: 220px;
+      max-width: 360px;
+      display: flex;
+      align-items: center;
+    }
+    .search-box .search-icon {
+      position: absolute;
+      left: 10px;
+      color: var(--text-tertiary);
+      pointer-events: none;
+    }
     .search-box input {
-      width: 100%; padding: 8px 14px 8px 36px;
-      border: 1px solid var(--border-color); border-radius: var(--radius-md);
-      background: var(--bg-secondary); color: var(--text-primary);
-      font-size: 14px; font-family: var(--font-sans);
+      width: 100%;
+      height: 32px;
+      padding: 0 54px 0 32px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      font-size: 13px;
+      font-family: var(--font-sans);
     }
-    .search-box input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(46,170,220,0.15); }
-    .search-box::before {
-      content: '🔍'; position: absolute; left: 10px; top: 50%;
-      transform: translateY(-50%); font-size: 14px; pointer-events: none;
+    .search-box input:focus {
+      outline: none;
+      background: var(--bg-primary);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-subtle);
     }
+    .search-kbd {
+      position: absolute;
+      right: 8px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 1px 5px;
+      border: 1px solid var(--border-color);
+      border-radius: 3px;
+      color: var(--text-tertiary);
+      background: var(--bg-primary);
+      pointer-events: none;
+    }
+    .search-clear {
+      position: absolute;
+      right: 6px;
+      width: 20px;
+      height: 20px;
+      border: none;
+      background: var(--bg-tertiary);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+    .search-clear.visible { display: inline-flex; }
 
-    /* Toolbar & tabs */
+    /* Toolbar & Tabs */
     .toolbar {
-      max-width: 1100px; margin: 0 auto; padding: 12px 24px 4px;
-      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 10px 24px 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
     }
-    .toolbar-label {
-      font-size: 12px; color: var(--text-tertiary);
-      letter-spacing: 0.5px; font-weight: 600;
+    .toolbar-divider {
+      width: 1px;
+      height: 18px;
+      background: var(--border-color);
+      margin: 0 2px;
     }
+    .toolbar-spacer { margin-left: auto; }
+    .reset-all-btn {
+      display: none;
+      align-items: center;
+      gap: 4px;
+      height: 28px;
+      padding: 0 8px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      background: transparent;
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-xs);
+      cursor: pointer;
+      font-family: var(--font-sans);
+    }
+    .reset-all-btn.visible { display: inline-flex; }
+    .reset-all-btn:hover { color: var(--text-primary); border-style: solid; }
+
     .tabs {
-      max-width: 1100px; margin: 8px auto 0; padding: 0 24px;
-      display: flex; overflow-x: auto; border-bottom: 1px solid var(--border-color);
+      max-width: 1160px;
+      margin: 4px auto 0;
+      padding: 0 24px;
+      display: flex;
+      gap: 2px;
+      overflow-x: auto;
+      border-bottom: 1px solid var(--border-color);
       scrollbar-width: none;
     }
     .tabs::-webkit-scrollbar { display: none; }
     .tab {
-      padding: 10px 16px; font-size: 13px; font-weight: 500; color: var(--text-tertiary);
-      cursor: pointer; background: none; border: none; border-bottom: 2px solid transparent;
-      font-family: var(--font-sans); white-space: nowrap;
-      display: flex; align-items: center; gap: 6px;
+      padding: 9px 13px;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      font-family: var(--font-sans);
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.14s ease;
     }
     .tab:hover { color: var(--text-primary); background: var(--bg-hover); }
-    .tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+    .tab.active { color: var(--text-primary); border-bottom-color: var(--accent); font-weight: 600; }
     .tab-count {
-      font-size: 11px; padding: 1px 6px; border-radius: 10px;
-      background: var(--bg-tertiary); color: var(--text-tertiary);
+      font-size: 11px;
+      padding: 1px 6px;
+      border-radius: 999px;
+      background: var(--bg-tertiary);
+      color: var(--text-tertiary);
+      font-weight: 600;
     }
-    .tab.active .tab-count { background: var(--accent); color: #fff; }
+    .tab.active .tab-count { background: var(--accent-subtle); color: var(--accent); }
 
+    /* Interactive Stats Bar */
     .stats-bar {
-      max-width: 1100px; margin: 0 auto; padding: 8px 24px 0;
-      display: flex; gap: 16px; flex-wrap: wrap;
-      font-size: 12px; color: var(--text-tertiary);
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 10px 24px 2px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+    .stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-primary);
+      color: var(--text-secondary);
+      font-size: 11.5px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.14s ease;
+      font-family: var(--font-sans);
+    }
+    .stat-pill:hover { border-color: var(--border-strong); color: var(--text-primary); }
+    .stat-pill.active {
+      background: var(--accent-subtle);
+      border-color: var(--accent-border);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .stat-pill strong { font-weight: 700; color: var(--text-primary); }
+    .stat-pill.active strong { color: var(--accent); }
+    .stat-meta {
+      margin-left: auto;
+      color: var(--text-tertiary);
+      font-size: 11.5px;
     }
 
     /* Cards */
-    .main { max-width: 1100px; margin: 0 auto; padding: 12px 24px 60px; }
-    .card-list { display: flex; flex-direction: column; gap: 2px; }
+    .main { max-width: 1160px; margin: 0 auto; padding: 10px 24px 64px; }
+    .card-list { display: flex; flex-direction: column; gap: 6px; }
+    .card-list.compact { gap: 3px; }
     .card {
-      display: flex; align-items: flex-start; gap: 14px;
-      padding: 14px 18px; background: var(--bg-primary);
-      border-radius: var(--radius-md); border: 1px solid transparent;
-      transition: background 0.18s ease, box-shadow 0.18s ease;
-      animation: fadeIn 0.35s ease forwards; opacity: 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 16px;
+      background: var(--bg-primary);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+      animation: fadeIn 0.25s ease forwards;
+      opacity: 0;
     }
-    .card:hover { background: var(--bg-hover); box-shadow: var(--shadow-sm); }
+    .card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-xs); }
+    .card.kb-focus { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-subtle); }
     .card.is-new-product { border-left: 3px solid var(--new-color); }
-    .card.score-high { background: var(--gold-bg); }
+    .card.score-high { border-left: 3px solid var(--gold-badge); }
+    .card.is-read { opacity: 0.6; background: var(--bg-secondary); }
+    .card.is-read:hover { opacity: 0.85; }
     @keyframes fadeIn { to { opacity: 1; } }
 
-    .score-badge {
-      flex-shrink: 0; width: 42px; height: 42px;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      border-radius: var(--radius-md); font-size: 15px; font-weight: 700; line-height: 1.1;
-      background: var(--bg-tertiary); color: var(--text-secondary);
+    .card-rail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
     }
-    .score-badge small { font-size: 9px; font-weight: 500; opacity: 0.85; }
-    .score-badge.high { background: var(--gold); color: #fff; }
-    .score-badge.mid { background: var(--silver); color: #fff; }
+    .score-badge {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      background: var(--bg-tertiary);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+    }
+    .score-badge small {
+      font-size: 8px;
+      font-weight: 600;
+      margin-top: 2px;
+      opacity: 0.8;
+    }
+    .score-badge.high { background: var(--gold-bg); color: var(--gold); border-color: var(--gold-border); }
+    .score-badge.mid { background: var(--silver-bg); color: var(--text-primary); border-color: var(--silver-border); }
+
+    .card-fav {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: var(--radius-xs);
+      border: none;
+      background: transparent;
+      color: var(--text-tertiary);
+      transition: all 0.15s ease;
+    }
+    .card-fav:hover { background: var(--bg-hover); color: var(--text-primary); }
+    .card-fav.favorited { color: var(--favorite-color); }
+    .card-fav.favorited svg { fill: currentColor; }
 
     .card-body { flex: 1; min-width: 0; }
+    .card-top-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+      font-size: 11.5px;
+      color: var(--text-tertiary);
+    }
+    .source-label { font-weight: 600; color: var(--text-secondary); }
+
     .card-product {
-      font-size: 15px; font-weight: 700; line-height: 1.4;
-      display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.45;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
     }
     .card-product a { color: var(--text-primary); text-decoration: none; }
     .card-product a:hover { color: var(--accent); }
-    .card-title { font-size: 13px; color: var(--text-secondary); margin: 2px 0 6px; }
+    .card.is-read .card-product a { color: var(--text-secondary); }
+    .card-title { font-size: 12.5px; color: var(--text-secondary); margin-bottom: 6px; }
+
     .badge {
-      font-size: 11px; padding: 1px 6px; border-radius: var(--radius-sm);
-      font-weight: 600; white-space: nowrap;
+      font-size: 10.5px;
+      padding: 1px 6px;
+      border-radius: var(--radius-xs);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
     }
-    .badge-new { background: var(--new-bg); color: var(--new-color); }
-    .badge-today { background: var(--accent); color: #fff; }
+    .badge-new { background: var(--new-bg); color: var(--new-color); border: 1px solid var(--new-border); }
+    .badge-today { background: var(--today-bg); color: var(--today-color); border: 1px solid var(--today-border); }
     .badge-muted { background: var(--bg-tertiary); color: var(--text-tertiary); }
 
-    .spec-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+    .spec-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
     .spec {
-      display: inline-flex; align-items: center; gap: 4px;
-      font-size: 12px; padding: 1px 8px; border-radius: 20px;
-      background: var(--bg-tertiary); color: var(--text-secondary); font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11.5px;
+      padding: 2px 8px;
+      border-radius: var(--radius-xs);
+      background: var(--bg-tertiary);
+      color: var(--text-secondary);
+      font-weight: 500;
+      border: 1px solid transparent;
     }
-    .card-summary { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 8px; }
-    .card-meta { display: flex; gap: 10px; flex-wrap: wrap; font-size: 11px; color: var(--text-tertiary); }
-    .score-reason { font-style: italic; }
+    .spec-label {
+      font-size: 10px;
+      color: var(--text-tertiary);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .spec.clickable { cursor: pointer; }
+    .spec.clickable:hover {
+      border-color: var(--accent-border);
+      color: var(--accent);
+      background: var(--accent-subtle);
+    }
 
-    .state-msg { text-align: center; padding: 80px 20px; color: var(--text-tertiary); }
-    .state-msg .icon { font-size: 48px; margin-bottom: 12px; }
-    .state-msg .title { font-size: 18px; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary); }
+    .card-summary {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .summary-line {
+      position: relative;
+      padding-left: 12px;
+    }
+    .summary-line::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 9px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--border-strong);
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: 11.5px;
+      color: var(--text-tertiary);
+    }
+    .score-reason {
+      padding: 3px 9px;
+      border-left: 2px solid var(--border-strong);
+      background: var(--bg-secondary);
+      border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+    }
+    .card-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: auto;
+    }
+    .card-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 7px;
+      border: 1px solid transparent;
+      border-radius: var(--radius-xs);
+      background: transparent;
+      color: var(--text-tertiary);
+      font-size: 11px;
+      font-family: var(--font-sans);
+      cursor: pointer;
+    }
+    .card-action-btn:hover {
+      background: var(--bg-hover);
+      border-color: var(--border-color);
+      color: var(--text-primary);
+    }
+    .card-action-btn.compared {
+      background: var(--accent-subtle);
+      border-color: var(--accent-border);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Spec Comparison Bar & Modal (A-4) */
+    .compare-bar {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      z-index: 520;
+      display: none;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--accent-border);
+      border-radius: 999px;
+      box-shadow: var(--shadow-lg);
+      max-width: calc(100vw - 24px);
+      flex-wrap: wrap;
+    }
+    .compare-bar.visible { display: inline-flex; }
+    .compare-bar-count {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    .compare-bar-chips {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .compare-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--bg-tertiary);
+      color: var(--text-primary);
+      border-radius: 999px;
+      max-width: 150px;
+    }
+    .compare-chip-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .compare-chip-rm {
+      cursor: pointer;
+      color: var(--text-tertiary);
+      font-weight: 700;
+    }
+    .compare-chip-rm:hover { color: var(--text-primary); }
+
+    .modal.compare-modal {
+      max-width: 980px;
+      max-height: 86vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .compare-table-wrap {
+      overflow: auto;
+      flex: 1;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      min-width: 560px;
+    }
+    .compare-table th,
+    .compare-table td {
+      border: 1px solid var(--border-color);
+      padding: 9px 11px;
+      vertical-align: top;
+      text-align: left;
+      line-height: 1.5;
+    }
+    .compare-table th {
+      width: 100px;
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .compare-table thead td {
+      background: var(--bg-secondary);
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .compare-col-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .compare-col-head a {
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+    .compare-col-head a:hover { color: var(--accent); text-decoration: underline; }
+
+    /* Compact mode */
+    .card-list.compact .card { padding: 9px 14px; align-items: center; }
+    .card-list.compact .card-rail { flex-direction: row; gap: 8px; }
+    .card-list.compact .score-badge { width: 32px; height: 26px; font-size: 12.5px; }
+    .card-list.compact .score-badge small { display: none; }
+    .card-list.compact .card-details { display: none; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-light); }
+    .card-list.compact .card.expanded { align-items: flex-start; }
+    .card-list.compact .card.expanded .card-details { display: block; }
+    .card-list.compact .card-product { margin-bottom: 0; }
+
+    .state-msg {
+      text-align: center;
+      padding: 72px 20px;
+      color: var(--text-tertiary);
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+    }
+    .state-msg .state-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .state-msg .state-icon svg {
+      width: 36px;
+      height: 36px;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      fill: none;
+    }
+    .state-msg .title { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: var(--text-primary); }
     .spinner {
-      width: 36px; height: 36px; margin: 0 auto 16px;
-      border: 3px solid var(--border-color); border-top-color: var(--accent);
-      border-radius: 50%; animation: spin 0.8s linear infinite;
+      width: 32px;
+      height: 32px;
+      margin: 0 auto 14px;
+      border: 2.5px solid var(--border-color);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    .footer {
-      text-align: center; padding: 24px; font-size: 12px; color: var(--text-tertiary);
-      border-top: 1px solid var(--border-color); margin-top: 40px;
+    /* Product Multi-Media Coverage Box (B-5) */
+    .product-coverage-box {
+      margin: 6px 0 8px;
+      padding: 6px 10px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius-xs);
+      font-size: 12px;
     }
-    .footer a { color: var(--accent); text-decoration: none; }
+    .product-coverage-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-tertiary);
+      margin-bottom: 4px;
+    }
+    .product-coverage-links {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .product-coverage-item {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      line-height: 1.4;
+    }
+    .product-coverage-src {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+    .product-coverage-item a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .product-coverage-item a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .toast-wrap {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 600;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      pointer-events: none;
+    }
+    .toast {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: var(--text-primary);
+      color: var(--bg-primary);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-lg);
+      font-size: 12.5px;
+      font-weight: 500;
+    }
+    .toast-action {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: transparent;
+      color: inherit;
+      padding: 2px 8px;
+      border-radius: var(--radius-xs);
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 550;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(2px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-backdrop.visible { display: flex; }
+    .modal {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      max-width: 460px;
+      width: 100%;
+      padding: 20px;
+    }
+    .modal-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .modal-head h2 { font-size: 15px; font-weight: 700; }
+    .shortcut-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 16px;
+      font-size: 12.5px;
+    }
+    .shortcut-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-secondary);
+    }
+    .shortcut-item kbd {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 2px 6px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-xs);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: var(--text-tertiary);
+      border-top: 1px solid var(--border-color);
+      margin-top: 40px;
+    }
+    .footer a { color: var(--accent); text-decoration: none; font-weight: 500; }
+    .footer a:hover { text-decoration: underline; }
 
     @media (max-width: 768px) {
-      .header-inner { flex-wrap: wrap; padding: 12px 16px; }
+      .header-inner { flex-wrap: wrap; padding: 10px 16px; }
       .search-box { min-width: 100%; max-width: none; order: 10; }
       .toolbar, .stats-bar { padding-left: 16px; padding-right: 16px; }
       .tabs { padding: 0 16px; }
-      .tab { padding: 8px 12px; font-size: 12px; }
-      .main { padding: 10px 12px 40px; }
-      .card { padding: 12px 14px; }
+      .tab { padding: 8px 10px; font-size: 12px; }
+      .main { padding: 10px 12px 48px; }
+      .card { padding: 12px; gap: 10px; }
+      .shortcut-list { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
   <header class="header">
     <div class="header-inner">
-      <a class="logo" href="gadget.html">
-        <span class="logo-icon">📱</span>
-        <span>Gadget Hub</span>
-      </a>
+      <div class="brand-group">
+        <a class="logo" href="gadget.html">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </span>
+          <span>Gadget Hub</span>
+        </a>
+        <nav class="nav-switch" aria-label="ページ切替">
+          <a href="index.html">IT News</a>
+          <a href="gadget.html" class="active">Gadget Hub</a>
+        </nav>
+      </div>
+
       <div class="header-controls">
-        <a class="btn" href="index.html" title="IT ニュースへ">📡 IT News</a>
-        <button class="btn" id="themeToggle" title="テーマ切替">🌙</button>
         <div class="search-box">
-          <input type="text" id="searchInput" placeholder="製品・ブランドを検索…" autocomplete="off">
+          <svg class="icon-svg search-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="製品名・ブランド・仕様を検索 (例: ソニー -セール)" autocomplete="off">
+          <span class="search-kbd" id="searchKbd">/</span>
+          <button type="button" class="search-clear" id="searchClearBtn" title="検索をクリア" aria-label="検索をクリア">×</button>
         </div>
+        <button type="button" class="btn icon-only" id="themeToggle" title="テーマ切替 (d)" aria-label="テーマ切替"></button>
+        <button type="button" class="btn icon-only" id="shortcutHelpBtn" title="キーボードショートカット (?)" aria-label="ショートカット一覧">
+          <span style="font-family:var(--font-mono);font-weight:700;font-size:13px;">?</span>
+        </button>
       </div>
     </div>
   </header>
 
   <div class="toolbar">
-    <span class="toolbar-label">表示:</span>
     <div class="select-wrap">
-      <select id="sortSelect" title="並び替え">
-        <option value="date">🕐 新着順</option>
-        <option value="score">📊 注目度順</option>
+      <select id="sortSelect" title="並び替え" aria-label="並び替え">
+        <option value="date">新着順</option>
+        <option value="score">注目度順</option>
+        <option value="brand">ブランド順</option>
+        <option value="price_asc">価格が安い順</option>
+        <option value="price_desc">価格が高い順</option>
       </select>
     </div>
-    <button class="btn active" id="newOnlyBtn" title="新製品の発表・発売情報のみ表示">🆕 新製品のみ</button>
+
+    <div class="select-wrap">
+      <select id="brandSelect" title="ブランドで絞り込み" aria-label="ブランドで絞り込み">
+        <option value="">全ブランド</option>
+      </select>
+    </div>
+
+    <div class="select-wrap">
+      <select id="priceSelect" title="価格帯で絞り込み" aria-label="価格帯で絞り込み">
+        <option value="">全価格帯</option>
+        <option value="under10k">1万円以下</option>
+        <option value="10k_50k">1万〜5万円</option>
+        <option value="50k_150k">5万〜15万円</option>
+        <option value="over150k">15万円以上</option>
+        <option value="has_price">価格記載あり</option>
+      </select>
+    </div>
+
+    <div class="select-wrap">
+      <select id="sourceSelect" title="メディアで絞り込み" aria-label="メディアで絞り込み">
+        <option value="">全メディア</option>
+      </select>
+    </div>
+
+    <span class="toolbar-divider"></span>
+
+    <button type="button" class="btn active" id="newOnlyBtn" title="新製品の発表・発売情報のみ表示">
+      <span>新製品のみ</span>
+    </button>
+
+    <button type="button" class="btn active" id="groupProductBtn" title="同一製品の別メディア記事を1つのカードに名寄せ表示">
+      <span>製品名寄せ</span>
+    </button>
+
+    <button type="button" class="btn" id="unreadFilterBtn" title="未読のみ表示 (u)">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="8"/>
+      </svg>
+      <span>未読のみ</span>
+      <span class="btn-count" id="unreadCountBadge">0</span>
+    </button>
+
+    <button type="button" class="btn btn-fav" id="favFilterBtn" title="お気に入りのみ表示">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+      </svg>
+      <span>お気に入り</span>
+      <span class="btn-count" id="favCountBadge">0</span>
+    </button>
+
+    <button type="button" class="reset-all-btn" id="resetAllBtn" title="すべてのフィルタをリセット">
+      フィルタ解除
+    </button>
+
+    <span class="toolbar-spacer"></span>
+
+    <button type="button" class="btn" id="densityBtn" title="表示密度切替: 標準 / コンパクト (v)">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+      <span id="densityLabel">コンパクト</span>
+    </button>
+
+    <button type="button" class="btn" id="markVisibleReadBtn" title="表示中のガジェット記事を既読にする">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+      <span>表示中を既読</span>
+    </button>
+
+    <button type="button" class="btn" id="exportMdBtn" title="表示中のガジェット一覧をMarkdown形式でコピー">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/>
+      </svg>
+      <span>MD出力</span>
+    </button>
+
+    <a class="btn" href="gadget_feed.xml" target="_blank" rel="noopener" title="新製品ガジェット専用RSSフィード">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/>
+      </svg>
+      <span>RSS</span>
+    </a>
   </div>
 
   <nav class="tabs" id="categoryTabs" aria-label="カテゴリ"></nav>
@@ -264,8 +1097,59 @@
     </div>
   </main>
 
+  <div class="compare-bar" id="compareBar" role="region" aria-label="スペック比較バー">
+    <span class="compare-bar-count" id="compareBarCount">比較 0/4</span>
+    <div class="compare-bar-chips" id="compareBarChips"></div>
+    <button type="button" class="btn active" id="openCompareModalBtn">スペック比較表を開く</button>
+    <button type="button" class="btn" id="clearCompareBtn">クリア</button>
+  </div>
+
+  <div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
+
+  <!-- Spec Comparison Modal (A-4) -->
+  <div class="modal-backdrop" id="compareModal" role="dialog" aria-modal="true" aria-labelledby="compareModalTitle">
+    <div class="modal compare-modal">
+      <div class="modal-head">
+        <h2 id="compareModalTitle">製品スペック横並び比較</h2>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <button type="button" class="btn" id="copyCompareMdBtn">比較表をMDコピー</button>
+          <button type="button" class="btn icon-only" id="closeCompareModalBtn" aria-label="閉じる">×</button>
+        </div>
+      </div>
+      <div class="compare-table-wrap" id="compareTableWrap"></div>
+    </div>
+  </div>
+
+  <!-- Keyboard Shortcuts Modal -->
+  <div class="modal-backdrop" id="shortcutModal" role="dialog" aria-modal="true" aria-labelledby="shortcutModalTitle">
+    <div class="modal">
+      <div class="modal-head">
+        <h2 id="shortcutModalTitle">キーボードショートカット</h2>
+        <button type="button" class="btn icon-only" id="closeShortcutModalBtn" aria-label="閉じる">×</button>
+      </div>
+      <div class="shortcut-list">
+        <div class="shortcut-item"><span>次の製品へ移動</span><kbd>j</kbd></div>
+        <div class="shortcut-item"><span>前の製品へ移動</span><kbd>k</kbd></div>
+        <div class="shortcut-item"><span>記事を開く</span><kbd>o / Enter</kbd></div>
+        <div class="shortcut-item"><span>お気に入り切替</span><kbd>f</kbd></div>
+        <div class="shortcut-item"><span>比較リストに追加/解除</span><kbd>b</kbd></div>
+        <div class="shortcut-item"><span>既読 / 未読切替</span><kbd>m</kbd></div>
+        <div class="shortcut-item"><span>URLをコピー</span><kbd>c</kbd></div>
+        <div class="shortcut-item"><span>Markdownコピー</span><kbd>y</kbd></div>
+        <div class="shortcut-item"><span>詳細の展開 (コンパクト時)</span><kbd>x</kbd></div>
+        <div class="shortcut-item"><span>検索ボックスへ移動</span><kbd>/</kbd></div>
+        <div class="shortcut-item"><span>未読のみフィルタ</span><kbd>u</kbd></div>
+        <div class="shortcut-item"><span>表示密度切替</span><kbd>v</kbd></div>
+        <div class="shortcut-item"><span>テーマ切替</span><kbd>d</kbd></div>
+        <div class="shortcut-item"><span>閉じる / 解除</span><kbd>Esc</kbd></div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
-    ITmedia / Impress Watch / GIZMODO Japan の RSS を AI で分析（直近30日分） · <a href="index.html">IT Info Hub</a>
+    ITmedia / Impress Watch / GIZMODO Japan の RSS を AI で分析（直近30日分） ·
+    <a href="index.html">IT Info Hub</a> ·
+    <a href="gadget_feed.xml">Gadget RSS Feed</a>
   </footer>
 
   <script>
@@ -276,24 +1160,95 @@
         (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
       const safeUrl = (u) => /^https?:\/\//i.test(String(u || '')) ? String(u) : '#';
 
-      const cardList = document.getElementById('cardList');
-      const tabsEl = document.getElementById('categoryTabs');
-      const statsBar = document.getElementById('statsBar');
-      const searchInput = document.getElementById('searchInput');
-      const sortSelect = document.getElementById('sortSelect');
-      const newOnlyBtn = document.getElementById('newOnlyBtn');
-      const themeToggle = document.getElementById('themeToggle');
+      const $ = (sel) => document.querySelector(sel);
+      const cardList = $('#cardList');
+      const tabsEl = $('#categoryTabs');
+      const statsBar = $('#statsBar');
+      const searchInput = $('#searchInput');
+      const searchKbd = $('#searchKbd');
+      const searchClearBtn = $('#searchClearBtn');
+      const sortSelect = $('#sortSelect');
+      const brandSelect = $('#brandSelect');
+      const priceSelect = $('#priceSelect');
+      const sourceSelect = $('#sourceSelect');
+      const newOnlyBtn = $('#newOnlyBtn');
+      const groupProductBtn = $('#groupProductBtn');
+      const unreadFilterBtn = $('#unreadFilterBtn');
+      const favFilterBtn = $('#favFilterBtn');
+      const resetAllBtn = $('#resetAllBtn');
+      const themeToggle = $('#themeToggle');
+      const toastWrap = $('#toastWrap');
+      const shortcutModal = $('#shortcutModal');
+      const compareBar = $('#compareBar');
+      const compareModal = $('#compareModal');
 
-      const state = { items: [], generatedAt: '', category: 'all', newOnly: true, query: '', sort: 'date' };
+      const store = {
+        get(key, fallback) {
+          try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
+          catch { return fallback; }
+        },
+        set(key, value) {
+          try { localStorage.setItem(key, JSON.stringify(value)); }
+          catch { /* ignore */ }
+        },
+      };
 
-      // ── Theme（index.html と同じキーを共有）──
+      let favorites = store.get('itinfohub_gadget_favorites', []);
+      let readUrls = new Set(store.get('itinfohub_gadget_read', []));
+      let viewDensity = store.get('itinfohub_density', 'standard');
+      let compareUrls = store.get('itinfohub_gadget_compare', []);
+      let lastRendered = [];
+      let focusedIdx = -1;
+
+      const state = {
+        items: [],
+        generatedAt: '',
+        category: 'all',
+        brand: '',
+        priceRange: '',
+        source: '',
+        newOnly: true,
+        groupByProduct: store.get('itinfohub_gadget_group', true),
+        todayOnly: false,
+        highScoreOnly: false,
+        unreadOnly: false,
+        favOnly: false,
+        query: '',
+        sort: 'date',
+      };
+
+      function showToast(message, actionLabel = null, onAction = null) {
+        const el = document.createElement('div');
+        el.className = 'toast';
+        const span = document.createElement('span');
+        span.textContent = message;
+        el.appendChild(span);
+        if (actionLabel && onAction) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'toast-action';
+          btn.textContent = actionLabel;
+          btn.addEventListener('click', () => {
+            onAction();
+            el.remove();
+          });
+          el.appendChild(btn);
+        }
+        toastWrap.appendChild(el);
+        setTimeout(() => { if (el.parentNode) el.remove(); }, 4000);
+      }
+
+      // ── Theme ──
+      const SUN_SVG = `<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>`;
+      const MOON_SVG = `<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+
       function updateThemeIcon() {
         const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        themeToggle.textContent = isDark ? '☀️' : '🌙';
+        themeToggle.innerHTML = isDark ? SUN_SVG : MOON_SVG;
       }
       function initTheme() {
         let saved = null;
-        try { saved = localStorage.getItem('itinfohub_theme'); } catch (e) { /* storage 不可 */ }
+        try { saved = localStorage.getItem('itinfohub_theme'); } catch { /* ignore */ }
         if (saved) {
           document.documentElement.setAttribute('data-theme', saved.replace(/"/g, ''));
         } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -301,14 +1256,75 @@
         }
         updateThemeIcon();
       }
-      themeToggle.addEventListener('click', () => {
+      function toggleTheme() {
         const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', next);
-        try { localStorage.setItem('itinfohub_theme', next); } catch (e) { /* storage 不可 */ }
+        try { localStorage.setItem('itinfohub_theme', next); } catch { /* ignore */ }
         updateThemeIcon();
-      });
+      }
+      themeToggle.addEventListener('click', toggleTheme);
 
-      // ── Helpers ──
+      // ── Density ──
+      function applyDensityUI() {
+        const isCompact = viewDensity === 'compact';
+        cardList.classList.toggle('compact', isCompact);
+        $('#densityBtn').classList.toggle('active', isCompact);
+        $('#densityLabel').textContent = isCompact ? '標準表示' : 'コンパクト';
+      }
+      function toggleDensity() {
+        viewDensity = viewDensity === 'compact' ? 'standard' : 'compact';
+        store.set('itinfohub_density', viewDensity);
+        applyDensityUI();
+      }
+
+      // ── Favorites & Read ──
+      const isFavorited = (url) => favorites.includes(url);
+      function toggleFavorite(url) {
+        if (!url) return;
+        const idx = favorites.indexOf(url);
+        if (idx === -1) {
+          favorites.push(url);
+          showToast('お気に入りに追加しました');
+        } else {
+          favorites.splice(idx, 1);
+          showToast('お気に入りを解除しました');
+        }
+        store.set('itinfohub_gadget_favorites', favorites);
+      }
+
+      function saveReadSet() {
+        const arr = [...readUrls].slice(-3000);
+        readUrls = new Set(arr);
+        store.set('itinfohub_gadget_read', arr);
+      }
+      function markRead(url) {
+        if (!url || readUrls.has(url)) return;
+        readUrls.add(url);
+        saveReadSet();
+      }
+      function toggleReadState(url) {
+        if (!url) return;
+        if (readUrls.has(url)) readUrls.delete(url);
+        else readUrls.add(url);
+        saveReadSet();
+      }
+      function markVisibleAsRead() {
+        const unreadInView = lastRendered.filter((it) => it.url && !readUrls.has(it.url)).map((it) => it.url);
+        if (!unreadInView.length) {
+          showToast('表示中の未読記事はありません');
+          return;
+        }
+        unreadInView.forEach((u) => readUrls.add(u));
+        saveReadSet();
+        render();
+        showToast(`${unreadInView.length}件を既読にしました`, '元に戻す', () => {
+          unreadInView.forEach((u) => readUrls.delete(u));
+          saveReadSet();
+          render();
+        });
+      }
+
+      // ── Helpers & Price/Product Normalization (B-4 / B-5) ──
       const timeOf = (it) => {
         const t = Date.parse(it.published || it.first_seen || '');
         return Number.isNaN(t) ? 0 : t;
@@ -317,10 +1333,276 @@
         const t = timeOf(it);
         return t ? new Date(t).toLocaleString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
       };
-      const summaryHtml = (s) => esc(String(s || '').replace(/\\n/g, '\n')).replace(/\n/g, '<br>');
+
+      function parsePriceYen(priceStr) {
+        if (!priceStr) return null;
+        const s = String(priceStr)
+          .replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
+          .replace(/,/g, '');
+        const manMatch = s.match(/(\d+(?:\.\d+)?)\s*万\s*(\d+)?\s*円?/);
+        if (manMatch) {
+          const man = parseFloat(manMatch[1]) * 10000;
+          const rest = manMatch[2] ? parseInt(manMatch[2], 10) : 0;
+          return Math.round(man + rest);
+        }
+        const yenMatch = s.match(/(?:¥|￥)?\s*(\d{3,8})\s*円?/);
+        if (yenMatch) {
+          return parseInt(yenMatch[1], 10);
+        }
+        const usdMatch = s.match(/\$\s*(\d+(?:\.\d+)?)/);
+        if (usdMatch) {
+          return Math.round(parseFloat(usdMatch[1]) * 150);
+        }
+        return null;
+      }
+
+      function matchesPriceRange(it, rangeKey) {
+        if (!rangeKey) return true;
+        const yen = parsePriceYen(it.price);
+        if (rangeKey === 'has_price') return yen !== null;
+        if (yen === null) return false;
+        if (rangeKey === 'under10k') return yen <= 10000;
+        if (rangeKey === '10k_50k') return yen > 10000 && yen <= 50000;
+        if (rangeKey === '50k_150k') return yen > 50000 && yen <= 150000;
+        if (rangeKey === 'over150k') return yen > 150000;
+        return true;
+      }
+
+      function normalizeProductKey(it) {
+        const raw = String(it.product_name || '').trim();
+        if (!raw || raw.length < 3) return '';
+        return raw
+          .toLowerCase()
+          .replace(/[「」『』【】（）()\[\]\s・\-_/]+/g, '')
+          .replace(/[０-９Ａ-Ｚａ-ｚ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xFEE0));
+      }
+
+      function itemToMarkdown(it) {
+        const name = String(it.product_name || it.title || 'No Title').replace(/\r?\n/g, ' ');
+        const url = safeUrl(it.url);
+        const meta = [
+          it.brand ? `メーカー: ${it.brand}` : '',
+          it.category ? `分類: ${it.category}` : '',
+          it.price ? `価格: ${it.price}` : '',
+          it.release_date ? `発売: ${it.release_date}` : '',
+          `注目度: ${it.score || 0}`,
+        ].filter(Boolean).join(' / ');
+        const summaryLines = String(it.summary || '')
+          .replace(/\\n/g, '\n')
+          .split('\n')
+          .map((l) => l.trim())
+          .filter(Boolean)
+          .map((l) => `  - ${l}`)
+          .join('\n');
+        return `- **[${name}](${url})** (${meta})${summaryLines ? '\n' + summaryLines : ''}`;
+      }
+
+      function exportVisibleToMarkdown() {
+        if (!lastRendered.length) {
+          showToast('出力対象のガジェット記事がありません');
+          return;
+        }
+        const dateStr = new Date().toLocaleDateString('ja-JP');
+        const header = `## Gadget Hub 新製品まとめ (${dateStr} / ${lastRendered.length}件)\n\n`;
+        const body = lastRendered.map((it) => itemToMarkdown(it)).join('\n');
+        const md = header + body + '\n';
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(md).then(() =>
+            showToast(`表示中の ${lastRendered.length} 件をMarkdownでコピーしました`)
+          );
+        }
+      }
+
+      // ── Side-by-Side Spec Comparison (A-4) ──
+      const isCompared = (url) => Boolean(url && compareUrls.includes(url));
+
+      function getCompareItems() {
+        const byUrl = new Map();
+        state.items.forEach((it) => { if (it.url) byUrl.set(it.url, it); });
+        lastRendered.forEach((it) => { if (it.url) byUrl.set(it.url, it); });
+        return compareUrls.map((u) => byUrl.get(u)).filter(Boolean);
+      }
+
+      function toggleCompare(url) {
+        if (!url) return;
+        const idx = compareUrls.indexOf(url);
+        if (idx !== -1) {
+          compareUrls.splice(idx, 1);
+          showToast('比較リストから外しました');
+        } else {
+          if (compareUrls.length >= 4) {
+            showToast('スペック比較は最大4製品まで選択できます');
+            return;
+          }
+          compareUrls.push(url);
+          showToast(`比較リストに追加しました (${compareUrls.length}/4)`);
+        }
+        store.set('itinfohub_gadget_compare', compareUrls);
+        updateCompareBar();
+      }
+
+      function updateCompareBar() {
+        const items = getCompareItems();
+        if (items.length !== compareUrls.length && state.items.length > 0) {
+          compareUrls = items.map((it) => it.url);
+          store.set('itinfohub_gadget_compare', compareUrls);
+        }
+        if (!items.length) {
+          compareBar.classList.remove('visible');
+          return;
+        }
+        $('#compareBarCount').textContent = `比較 ${items.length}/4`;
+        const chipsWrap = $('#compareBarChips');
+        chipsWrap.textContent = '';
+        items.forEach((it) => {
+          const chip = document.createElement('span');
+          chip.className = 'compare-chip';
+          const lbl = document.createElement('span');
+          lbl.className = 'compare-chip-name';
+          lbl.textContent = it.product_name || it.title || '';
+          const rm = document.createElement('span');
+          rm.className = 'compare-chip-rm';
+          rm.textContent = '×';
+          rm.title = '比較から外す';
+          rm.addEventListener('click', () => {
+            toggleCompare(it.url);
+            render();
+          });
+          chip.appendChild(lbl);
+          chip.appendChild(rm);
+          chipsWrap.appendChild(chip);
+        });
+        compareBar.classList.add('visible');
+      }
+
+      function renderCompareModal() {
+        const items = getCompareItems();
+        if (!items.length) {
+          compareModal.classList.remove('visible');
+          return;
+        }
+        const rows = [
+          { label: 'メーカー', fn: (it) => esc(it.brand || '—') },
+          { label: '分類', fn: (it) => esc(it.category || '—') },
+          { label: '価格', fn: (it) => esc(it.price || '—') },
+          { label: '発売日', fn: (it) => esc(it.release_date || '—') },
+          { label: '注目度', fn: (it) => `<strong>${Number(it.score) || 0}</strong> / 100` },
+          { label: 'メディア', fn: (it) => esc(it.source || '—') },
+          {
+            label: 'AI要約',
+            fn: (it) => esc(String(it.summary || '').replace(/\\n/g, '\n')).replace(/\n/g, '<br>'),
+          },
+        ];
+
+        const headCols = items.map((it) => {
+          const name = it.product_name || it.title || 'No Title';
+          return `<td>
+            <div class="compare-col-head">
+              <a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener noreferrer">${esc(name)}</a>
+              <button type="button" class="btn icon-only rm-compare-col" data-url="${esc(it.url)}" title="比較から外す" style="width:24px;height:24px;">×</button>
+            </div>
+          </td>`;
+        }).join('');
+
+        const bodyRows = rows.map((r) =>
+          `<tr><th>${esc(r.label)}</th>${items.map((it) => `<td>${r.fn(it)}</td>`).join('')}</tr>`
+        ).join('');
+
+        $('#compareTableWrap').innerHTML = `
+          <table class="compare-table">
+            <thead><tr><th>項目</th>${headCols}</tr></thead>
+            <tbody>${bodyRows}</tbody>
+          </table>`;
+
+        $('#compareTableWrap').querySelectorAll('.rm-compare-col').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            toggleCompare(btn.dataset.url);
+            render();
+            renderCompareModal();
+          });
+        });
+        compareModal.classList.add('visible');
+      }
+
+      function copyCompareMarkdown() {
+        const items = getCompareItems();
+        if (!items.length || !navigator.clipboard) return;
+        const cleanCell = (v) => String(v ?? '—').replace(/\\n/g, ' ').replace(/\r?\n/g, ' ').replace(/\|/g, '\\|').trim() || '—';
+        const headers = ['項目', ...items.map((it) => `[${cleanCell(it.product_name || it.title)}](${safeUrl(it.url)})`)];
+        const sep = headers.map(() => '---');
+        const rows = [
+          ['メーカー', ...items.map((it) => cleanCell(it.brand))],
+          ['分類', ...items.map((it) => cleanCell(it.category))],
+          ['価格', ...items.map((it) => cleanCell(it.price))],
+          ['発売日', ...items.map((it) => cleanCell(it.release_date))],
+          ['注目度', ...items.map((it) => `${Number(it.score) || 0}`)],
+          ['メディア', ...items.map((it) => cleanCell(it.source))],
+          ['要約', ...items.map((it) => cleanCell(it.summary))],
+        ];
+        const md = [
+          `| ${headers.join(' | ')} |`,
+          `| ${sep.join(' | ')} |`,
+          ...rows.map((r) => `| ${r.join(' | ')} |`),
+        ].join('\n') + '\n';
+        navigator.clipboard.writeText(md).then(() =>
+          showToast('スペック比較表をMarkdown形式でコピーしました')
+        );
+      }
+
+      function parseSearchQuery(raw) {
+        const tokens = String(raw || '').trim().split(/\s+/).filter(Boolean);
+        const include = [];
+        const exclude = [];
+        tokens.forEach((t) => {
+          if (t.startsWith('-') && t.length > 1) exclude.push(t.slice(1).toLowerCase());
+          else include.push(t.toLowerCase());
+        });
+        return { include, exclude };
+      }
+
+      function highlightEscapedText(escapedText, terms) {
+        if (!terms.length || !escapedText) return escapedText;
+        const safeTerms = terms
+          .map((t) => esc(t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+          .filter(Boolean);
+        if (!safeTerms.length) return escapedText;
+        const re = new RegExp(`(${safeTerms.join('|')})`, 'gi');
+        return escapedText.replace(re, '<mark class="hl">$1</mark>');
+      }
 
       function baseItems() {
         return state.items.filter((it) => it.analysis_status === 'ok' && (!state.newOnly || it.is_new_product));
+      }
+
+      function buildDropdowns() {
+        const base = baseItems();
+        const brandCounts = new Map();
+        const sourceCounts = new Map();
+        base.forEach((it) => {
+          if (it.brand) brandCounts.set(it.brand, (brandCounts.get(it.brand) || 0) + 1);
+          if (it.source) sourceCounts.set(it.source, (sourceCounts.get(it.source) || 0) + 1);
+        });
+
+        while (brandSelect.options.length > 1) brandSelect.remove(1);
+        [...brandCounts.keys()].sort((a, b) => brandCounts.get(b) - brandCounts.get(a)).forEach((b) => {
+          const opt = document.createElement('option');
+          opt.value = b;
+          opt.textContent = `${b} (${brandCounts.get(b)})`;
+          brandSelect.appendChild(opt);
+        });
+        if (state.brand && !brandCounts.has(state.brand)) state.brand = '';
+        brandSelect.value = state.brand;
+        priceSelect.value = state.priceRange;
+
+        while (sourceSelect.options.length > 1) sourceSelect.remove(1);
+        [...sourceCounts.keys()].sort((a, b) => sourceCounts.get(b) - sourceCounts.get(a)).forEach((s) => {
+          const opt = document.createElement('option');
+          opt.value = s;
+          opt.textContent = `${s} (${sourceCounts.get(s)})`;
+          sourceSelect.appendChild(opt);
+        });
+        if (state.source && !sourceCounts.has(state.source)) state.source = '';
+        sourceSelect.value = state.source;
       }
 
       function renderTabs() {
@@ -333,8 +1615,11 @@
         tabsEl.textContent = '';
         const addTab = (key, label, count) => {
           const btn = document.createElement('button');
+          btn.type = 'button';
           btn.className = 'tab' + (state.category === key ? ' active' : '');
-          btn.textContent = label;
+          const lbl = document.createElement('span');
+          lbl.textContent = label;
+          btn.appendChild(lbl);
           const c = document.createElement('span');
           c.className = 'tab-count';
           c.textContent = String(count);
@@ -347,86 +1632,509 @@
       }
 
       function filteredItems() {
-        const q = state.query.trim().toLowerCase();
+        const { include, exclude } = parseSearchQuery(state.query);
         const list = baseItems().filter((it) => {
           if (state.category !== 'all' && (it.category || 'その他') !== state.category) return false;
-          if (!q) return true;
-          return [it.product_name, it.brand, it.title, it.summary]
-            .some((v) => String(v || '').toLowerCase().includes(q));
+          if (state.brand && it.brand !== state.brand) return false;
+          if (state.priceRange && !matchesPriceRange(it, state.priceRange)) return false;
+          if (state.source && it.source !== state.source) return false;
+          if (state.todayOnly && !(it.new_at && it.new_at === state.generatedAt)) return false;
+          if (state.highScoreOnly && (it.score || 0) < 80) return false;
+          if (state.unreadOnly && readUrls.has(it.url)) return false;
+          if (state.favOnly && !isFavorited(it.url)) return false;
+          if (!include.length && !exclude.length) return true;
+          const haystack = [it.product_name, it.brand, it.title, it.summary, it.category, it.price]
+            .map((v) => String(v || '').toLowerCase())
+            .join(' ');
+          if (exclude.some((ex) => haystack.includes(ex))) return false;
+          return include.every((inc) => haystack.includes(inc));
         });
-        return list.sort((a, b) => state.sort === 'score'
-          ? (b.score || 0) - (a.score || 0) || timeOf(b) - timeOf(a)
-          : timeOf(b) - timeOf(a));
+
+        const sorted = list.sort((a, b) => {
+          if (state.sort === 'score') {
+            return (b.score || 0) - (a.score || 0) || timeOf(b) - timeOf(a);
+          }
+          if (state.sort === 'brand') {
+            return String(a.brand || 'ん').localeCompare(String(b.brand || 'ん'), 'ja') || timeOf(b) - timeOf(a);
+          }
+          if (state.sort === 'price_asc') {
+            const pa = parsePriceYen(a.price) ?? Number.MAX_SAFE_INTEGER;
+            const pb = parsePriceYen(b.price) ?? Number.MAX_SAFE_INTEGER;
+            return pa - pb || (b.score || 0) - (a.score || 0);
+          }
+          if (state.sort === 'price_desc') {
+            const pa = parsePriceYen(a.price) ?? -1;
+            const pb = parsePriceYen(b.price) ?? -1;
+            return pb - pa || (b.score || 0) - (a.score || 0);
+          }
+          return timeOf(b) - timeOf(a);
+        });
+
+        if (!state.groupByProduct) {
+          return sorted.map((it) => ({ ...it, _otherArticles: [] }));
+        }
+
+        // Same-product grouping (B-5)
+        const grouped = [];
+        const keyMap = new Map();
+        sorted.forEach((it) => {
+          const pKey = normalizeProductKey(it);
+          if (!pKey) {
+            grouped.push({ ...it, _otherArticles: [] });
+            return;
+          }
+          if (!keyMap.has(pKey)) {
+            const clone = { ...it, _otherArticles: [] };
+            keyMap.set(pKey, clone);
+            grouped.push(clone);
+          } else {
+            const rep = keyMap.get(pKey);
+            if (!rep.price && it.price) rep.price = it.price;
+            if (!rep.release_date && it.release_date) rep.release_date = it.release_date;
+            if (!rep.brand && it.brand) rep.brand = it.brand;
+            rep._otherArticles.push(it);
+          }
+        });
+        return grouped;
+      }
+
+      function hasActiveFilters() {
+        return Boolean(
+          state.category !== 'all' ||
+          state.brand ||
+          state.priceRange ||
+          state.source ||
+          state.todayOnly ||
+          state.highScoreOnly ||
+          state.unreadOnly ||
+          state.favOnly ||
+          state.query
+        );
+      }
+
+      function resetAllFilters() {
+        state.category = 'all';
+        state.brand = '';
+        state.priceRange = '';
+        state.source = '';
+        state.todayOnly = false;
+        state.highScoreOnly = false;
+        state.unreadOnly = false;
+        state.favOnly = false;
+        state.query = '';
+        searchInput.value = '';
+        priceSelect.value = '';
+        searchClearBtn.classList.remove('visible');
+        searchKbd.style.display = '';
+        unreadFilterBtn.classList.remove('active');
+        favFilterBtn.classList.remove('active');
+        render();
       }
 
       function renderCards(list) {
+        lastRendered = list;
+        focusedIdx = -1;
+
+        const base = baseItems();
+        $('#unreadCountBadge').textContent = base.filter((it) => !readUrls.has(it.url)).length;
+        $('#favCountBadge').textContent = favorites.length;
+        resetAllBtn.classList.toggle('visible', hasActiveFilters());
+
         if (!list.length) {
-          cardList.innerHTML = `<div class="state-msg"><div class="icon">📭</div>
-            <div class="title">該当するガジェット情報はありません</div></div>`;
+          cardList.innerHTML = `<div class="state-msg">
+            <div class="state-icon">
+              <svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div class="title">該当するガジェット情報はありません</div>
+          </div>`;
           return;
         }
+
+        const { include } = parseSearchQuery(state.query);
+
         cardList.innerHTML = list.map((it, i) => {
           const score = Number(it.score) || 0;
           const scoreCls = score >= 80 ? 'high' : score >= 60 ? 'mid' : '';
           const isToday = it.new_at && it.new_at === state.generatedAt;
+          const isRead = readUrls.has(it.url);
+          const fav = isFavorited(it.url);
           const name = it.product_name || it.title || '';
+          const nameHtml = highlightEscapedText(esc(name), include);
+          const titleHtml = it.product_name ? highlightEscapedText(esc(it.title || ''), include) : '';
+          const otherArts = it._otherArticles || [];
+
+          const summaryLines = String(it.summary || '')
+            .replace(/\\n/g, '\n')
+            .split('\n')
+            .map((l) => l.trim())
+            .filter(Boolean);
+          const summaryHtml = summaryLines
+            .map((line) => `<div class="summary-line">${highlightEscapedText(esc(line), include)}</div>`)
+            .join('');
+
           const specs = [
-            it.category ? `<span class="spec">🏷️ ${esc(it.category)}</span>` : '',
-            it.brand ? `<span class="spec">🏭 ${esc(it.brand)}</span>` : '',
-            it.price ? `<span class="spec">💴 ${esc(it.price)}</span>` : '',
-            it.release_date ? `<span class="spec">📅 ${esc(it.release_date)}</span>` : '',
-          ].join('');
-          return `
-            <article class="card${it.is_new_product ? ' is-new-product' : ''}${score >= 80 ? ' score-high' : ''}" style="animation-delay:${Math.min(i, 12) * 0.04}s">
-              <div class="score-badge ${scoreCls}" title="注目度">${score}<small>注目度</small></div>
-              <div class="card-body">
-                <div class="card-product">
-                  <a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener noreferrer">${esc(name)}</a>
-                  ${it.is_new_product ? '<span class="badge badge-new">🆕 新製品</span>' : '<span class="badge badge-muted">関連記事</span>'}
-                  ${isToday ? '<span class="badge badge-today">NEW</span>' : ''}
+            it.category ? `<span class="spec"><span class="spec-label">分類</span>${esc(it.category)}</span>` : '',
+            it.brand ? `<span class="spec clickable brand-spec" data-brand="${esc(it.brand)}" title="このブランドで絞り込む"><span class="spec-label">メーカー</span>${ highlightEscapedText(esc(it.brand), include) }</span>` : '',
+            it.price ? `<span class="spec"><span class="spec-label">価格</span>${esc(it.price)}</span>` : '',
+            it.release_date ? `<span class="spec"><span class="spec-label">発売</span>${esc(it.release_date)}</span>` : '',
+          ].filter(Boolean).join('');
+
+          const otherCoverageHtml = otherArts.length > 0
+            ? `<div class="product-coverage-box">
+                <div class="product-coverage-title">他メディア・関連記事 (${otherArts.length}件)</div>
+                <div class="product-coverage-links">
+                  ${otherArts.map((oa) => `
+                    <div class="product-coverage-item">
+                      <span class="product-coverage-src">[${esc(oa.source || '')}]</span>
+                      <a href="${esc(safeUrl(oa.url))}" target="_blank" rel="noopener noreferrer" data-url="${esc(oa.url || '')}" class="coverage-link">${esc(oa.title || oa.product_name || '')}</a>
+                    </div>
+                  `).join('')}
                 </div>
-                ${it.product_name ? `<div class="card-title">${esc(it.title)}</div>` : ''}
-                ${specs ? `<div class="spec-row">${specs}</div>` : ''}
-                <div class="card-summary">${summaryHtml(it.summary)}</div>
-                <div class="card-meta">
-                  <span>📰 ${esc(it.source)}</span>
-                  <span>🕐 ${esc(formatDate(it))}</span>
-                  ${it.score_reason ? `<span class="score-reason">💡 ${esc(it.score_reason)}</span>` : ''}
+              </div>`
+            : '';
+
+          return `
+            <article class="card${it.is_new_product ? ' is-new-product' : ''}${score >= 80 ? ' score-high' : ''}${isRead ? ' is-read' : ''}" data-card-idx="${i}" style="animation-delay:${Math.min(i, 12) * 0.025}s">
+              <div class="card-rail">
+                <div class="score-badge ${scoreCls}" title="注目度">${score}<small>注目度</small></div>
+                <button type="button" class="card-fav${fav ? ' favorited' : ''}" data-idx="${i}" title="お気に入り (f)" aria-label="お気に入り">
+                  <svg class="icon-svg" viewBox="0 0 24 24">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="card-top-meta">
+                  <span class="source-label">${esc(it.source)}</span>
+                  <span>${esc(formatDate(it))}</span>
+                </div>
+                <div class="card-product">
+                  ${it.is_new_product ? '<span class="badge badge-new">新製品</span>' : '<span class="badge badge-muted">関連記事</span>'}
+                  ${isToday ? '<span class="badge badge-today">NEW</span>' : ''}
+                  ${otherArts.length > 0 ? `<span class="badge badge-muted">${otherArts.length + 1}記事集約</span>` : ''}
+                  <a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener noreferrer" data-idx="${i}" class="gadget-link">${nameHtml}</a>
+                </div>
+                <div class="card-details">
+                  ${titleHtml ? `<div class="card-title">${titleHtml}</div>` : ''}
+                  ${specs ? `<div class="spec-row">${specs}</div>` : ''}
+                  <div class="card-summary">${summaryHtml}</div>
+                  ${otherCoverageHtml}
+                  <div class="card-footer">
+                    ${it.score_reason ? `<span class="score-reason">${esc(it.score_reason)}</span>` : '<span></span>'}
+                    <div class="card-actions">
+                      <button type="button" class="card-action-btn compare-btn${isCompared(it.url) ? ' compared' : ''}" data-idx="${i}" title="スペック比較リストに追加/解除 (b)">
+                        ${isCompared(it.url) ? '比較中' : '比較に追加'}
+                      </button>
+                      <button type="button" class="card-action-btn toggle-read-btn" data-idx="${i}" title="既読/未読切替 (m)">
+                        ${isRead ? '未読に戻す' : '既読にする'}
+                      </button>
+                      <button type="button" class="card-action-btn copy-url-btn" data-idx="${i}" title="URLをコピー (c)">
+                        URLコピー
+                      </button>
+                      <button type="button" class="card-action-btn copy-md-btn" data-idx="${i}" title="Markdown形式でコピー (y)">
+                        MDコピー
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </article>`;
         }).join('');
+
+        // Event bindings
+        cardList.querySelectorAll('.card-fav').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const it = lastRendered[+el.dataset.idx];
+            if (!it) return;
+            toggleFavorite(it.url);
+            render();
+          });
+        });
+        cardList.querySelectorAll('.gadget-link').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const it = lastRendered[+el.dataset.idx];
+            if (!it) return;
+            markRead(it.url);
+            setTimeout(render, 250);
+          });
+        });
+        cardList.querySelectorAll('.coverage-link').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (el.dataset.url) markRead(el.dataset.url);
+          });
+        });
+        cardList.querySelectorAll('.compare-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const it = lastRendered[+el.dataset.idx];
+            if (!it?.url) return;
+            toggleCompare(it.url);
+            render();
+          });
+        });
+        cardList.querySelectorAll('.toggle-read-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const it = lastRendered[+el.dataset.idx];
+            if (!it) return;
+            toggleReadState(it.url);
+            render();
+          });
+        });
+        cardList.querySelectorAll('.copy-url-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const it = lastRendered[+el.dataset.idx];
+            if (!it?.url || !navigator.clipboard) return;
+            navigator.clipboard.writeText(it.url).then(() => showToast('URLをクリップボードにコピーしました'));
+          });
+        });
+        cardList.querySelectorAll('.copy-md-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const it = lastRendered[+el.dataset.idx];
+            if (!it || !navigator.clipboard) return;
+            navigator.clipboard.writeText(itemToMarkdown(it)).then(() =>
+              showToast('製品情報をMarkdown形式でコピーしました')
+            );
+          });
+        });
+        cardList.querySelectorAll('.brand-spec').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const b = el.dataset.brand;
+            state.brand = state.brand === b ? '' : b;
+            render();
+          });
+        });
+        cardList.querySelectorAll('.card').forEach((cardEl) => {
+          cardEl.addEventListener('click', (e) => {
+            if (!cardList.classList.contains('compact')) return;
+            if (e.target.closest('a, button, .brand-spec, .product-coverage-box')) return;
+            cardEl.classList.toggle('expanded');
+          });
+        });
       }
 
       function renderStats(list) {
         const updated = state.generatedAt ? new Date(state.generatedAt).toLocaleString('ja-JP') : '-';
-        const todayCount = state.items.filter((it) => it.new_at && it.new_at === state.generatedAt && it.is_new_product).length;
-        statsBar.textContent = '';
-        [`表示 ${list.length}件`, `今回の新製品 ${todayCount}件`, `最終更新 ${updated}`].forEach((text) => {
-          const span = document.createElement('span');
-          span.textContent = text;
-          statsBar.appendChild(span);
+        const base = baseItems();
+        const todayCount = base.filter((it) => it.new_at && it.new_at === state.generatedAt).length;
+        const highCount = base.filter((it) => (it.score || 0) >= 80).length;
+
+        statsBar.innerHTML = `
+          <button type="button" class="stat-pill${!hasActiveFilters() ? ' active' : ''}" id="statAllBtn">
+            <span>表示</span><strong>${list.length}</strong><span>件</span>
+          </button>
+          <button type="button" class="stat-pill${state.todayOnly ? ' active' : ''}" id="statTodayBtn">
+            <span>今回の新着</span><strong>${todayCount}</strong><span>件</span>
+          </button>
+          <button type="button" class="stat-pill${state.highScoreOnly ? ' active' : ''}" id="statHighBtn">
+            <span>高注目度 80+</span><strong>${highCount}</strong><span>件</span>
+          </button>
+          <span class="stat-meta">最終更新: ${esc(updated)}</span>
+        `;
+
+        $('#statAllBtn')?.addEventListener('click', resetAllFilters);
+        $('#statTodayBtn')?.addEventListener('click', () => {
+          state.todayOnly = !state.todayOnly;
+          render();
+        });
+        $('#statHighBtn')?.addEventListener('click', () => {
+          state.highScoreOnly = !state.highScoreOnly;
+          render();
         });
       }
 
       function render() {
+        buildDropdowns();
         renderTabs();
         const list = filteredItems();
         renderCards(list);
         renderStats(list);
+        updateCompareBar();
       }
 
+      // ── Keyboard Navigation ──
+      function updateCardFocus(nextIdx) {
+        const cards = cardList.querySelectorAll('.card');
+        if (!cards.length) return;
+        focusedIdx = Math.max(0, Math.min(cards.length - 1, nextIdx));
+        cards.forEach((c, i) => c.classList.toggle('kb-focus', i === focusedIdx));
+        cards[focusedIdx].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        const activeTag = document.activeElement?.tagName;
+        const inInput = activeTag === 'INPUT' || activeTag === 'TEXTAREA' || activeTag === 'SELECT';
+
+        if (e.key === 'Escape') {
+          if (compareModal.classList.contains('visible')) {
+            compareModal.classList.remove('visible');
+            return;
+          }
+          if (shortcutModal.classList.contains('visible')) {
+            shortcutModal.classList.remove('visible');
+            return;
+          }
+          if (inInput) {
+            document.activeElement.blur();
+            return;
+          }
+          if (focusedIdx !== -1) {
+            cardList.querySelectorAll('.card').forEach((c) => c.classList.remove('kb-focus'));
+            focusedIdx = -1;
+          }
+          return;
+        }
+        if (inInput) return;
+
+        if (e.key === '/') {
+          e.preventDefault();
+          searchInput.focus();
+          searchInput.select();
+        } else if (e.key === '?') {
+          e.preventDefault();
+          shortcutModal.classList.toggle('visible');
+        } else if (e.key === 'j' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          updateCardFocus(focusedIdx + 1);
+        } else if (e.key === 'k' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          updateCardFocus(focusedIdx <= 0 ? 0 : focusedIdx - 1);
+        } else if ((e.key === 'o' || e.key === 'Enter') && focusedIdx >= 0) {
+          e.preventDefault();
+          const it = lastRendered[focusedIdx];
+          if (it?.url) {
+            markRead(it.url);
+            window.open(safeUrl(it.url), '_blank', 'noopener,noreferrer');
+            render();
+            updateCardFocus(focusedIdx);
+          }
+        } else if (e.key === 'f' && focusedIdx >= 0) {
+          e.preventDefault();
+          const it = lastRendered[focusedIdx];
+          if (it) {
+            const keep = focusedIdx;
+            toggleFavorite(it.url);
+            render();
+            updateCardFocus(keep);
+          }
+        } else if (e.key === 'b' && focusedIdx >= 0) {
+          e.preventDefault();
+          const it = lastRendered[focusedIdx];
+          if (it?.url) {
+            const keep = focusedIdx;
+            toggleCompare(it.url);
+            render();
+            updateCardFocus(keep);
+          }
+        } else if (e.key === 'm' && focusedIdx >= 0) {
+          e.preventDefault();
+          const it = lastRendered[focusedIdx];
+          if (it) {
+            const keep = focusedIdx;
+            toggleReadState(it.url);
+            render();
+            updateCardFocus(keep);
+          }
+        } else if (e.key === 'c' && focusedIdx >= 0) {
+          e.preventDefault();
+          const it = lastRendered[focusedIdx];
+          if (it?.url && navigator.clipboard) {
+            navigator.clipboard.writeText(it.url).then(() => showToast('URLをコピーしました'));
+          }
+        } else if (e.key === 'y' && focusedIdx >= 0) {
+          e.preventDefault();
+          const it = lastRendered[focusedIdx];
+          if (it && navigator.clipboard) {
+            navigator.clipboard.writeText(itemToMarkdown(it)).then(() => showToast('Markdown形式でコピーしました'));
+          }
+        } else if (e.key === 'x' && focusedIdx >= 0) {
+          e.preventDefault();
+          cardList.querySelectorAll('.card')[focusedIdx]?.classList.toggle('expanded');
+        } else if (e.key === 'u') {
+          e.preventDefault();
+          unreadFilterBtn.click();
+        } else if (e.key === 'v') {
+          e.preventDefault();
+          toggleDensity();
+        } else if (e.key === 'd') {
+          e.preventDefault();
+          toggleTheme();
+        }
+      });
+
       // ── Events ──
-      searchInput.addEventListener('input', () => { state.query = searchInput.value; render(); });
+      searchInput.addEventListener('input', () => {
+        state.query = searchInput.value.trim();
+        searchClearBtn.classList.toggle('visible', state.query.length > 0);
+        searchKbd.style.display = state.query.length > 0 ? 'none' : '';
+        render();
+      });
+      searchClearBtn.addEventListener('click', () => {
+        state.query = '';
+        searchInput.value = '';
+        searchClearBtn.classList.remove('visible');
+        searchKbd.style.display = '';
+        searchInput.focus();
+        render();
+      });
       sortSelect.addEventListener('change', () => { state.sort = sortSelect.value; render(); });
+      brandSelect.addEventListener('change', () => { state.brand = brandSelect.value; render(); });
+      priceSelect.addEventListener('change', () => { state.priceRange = priceSelect.value; render(); });
+      sourceSelect.addEventListener('change', () => { state.source = sourceSelect.value; render(); });
       newOnlyBtn.addEventListener('click', () => {
         state.newOnly = !state.newOnly;
         newOnlyBtn.classList.toggle('active', state.newOnly);
         render();
       });
+      groupProductBtn.addEventListener('click', () => {
+        state.groupByProduct = !state.groupByProduct;
+        store.set('itinfohub_gadget_group', state.groupByProduct);
+        groupProductBtn.classList.toggle('active', state.groupByProduct);
+        render();
+        showToast(state.groupByProduct ? '同一製品の名寄せを有効にしました' : '製品名寄せを解除しました');
+      });
+      unreadFilterBtn.addEventListener('click', () => {
+        state.unreadOnly = !state.unreadOnly;
+        unreadFilterBtn.classList.toggle('active', state.unreadOnly);
+        render();
+      });
+      favFilterBtn.addEventListener('click', () => {
+        state.favOnly = !state.favOnly;
+        favFilterBtn.classList.toggle('active', state.favOnly);
+        render();
+      });
+      resetAllBtn.addEventListener('click', resetAllFilters);
+      $('#densityBtn').addEventListener('click', toggleDensity);
+      $('#markVisibleReadBtn').addEventListener('click', markVisibleAsRead);
+      $('#exportMdBtn').addEventListener('click', exportVisibleToMarkdown);
+      $('#openCompareModalBtn').addEventListener('click', renderCompareModal);
+      $('#clearCompareBtn').addEventListener('click', () => {
+        compareUrls = [];
+        store.set('itinfohub_gadget_compare', compareUrls);
+        updateCompareBar();
+        render();
+        showToast('比較リストをクリアしました');
+      });
+      $('#copyCompareMdBtn').addEventListener('click', copyCompareMarkdown);
+      $('#closeCompareModalBtn').addEventListener('click', () => compareModal.classList.remove('visible'));
+      compareModal.addEventListener('click', (e) => {
+        if (e.target === compareModal) compareModal.classList.remove('visible');
+      });
+      $('#shortcutHelpBtn').addEventListener('click', () => shortcutModal.classList.add('visible'));
+      $('#closeShortcutModalBtn').addEventListener('click', () => shortcutModal.classList.remove('visible'));
+      shortcutModal.addEventListener('click', (e) => {
+        if (e.target === shortcutModal) shortcutModal.classList.remove('visible');
+      });
+
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         let saved = null;
-        try { saved = localStorage.getItem('itinfohub_theme'); } catch (err) { /* storage 不可 */ }
+        try { saved = localStorage.getItem('itinfohub_theme'); } catch { /* ignore */ }
         if (!saved) {
           document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
           updateThemeIcon();
@@ -435,6 +2143,8 @@
 
       async function init() {
         initTheme();
+        applyDensityUI();
+        groupProductBtn.classList.toggle('active', Boolean(state.groupByProduct));
         try {
           const resp = await fetch('gadgets.json?t=' + Date.now());
           if (!resp.ok) throw new Error('HTTP ' + resp.status);
@@ -443,9 +2153,13 @@
           state.generatedAt = data.generated_at || '';
           render();
         } catch (err) {
-          cardList.innerHTML = `<div class="state-msg"><div class="icon">⚠️</div>
+          cardList.innerHTML = `<div class="state-msg">
+            <div class="state-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
             <div class="title">ガジェット情報を読み込めませんでした</div>
-            <div>${esc(err.message)}</div></div>`;
+            <div>${esc(err.message)}</div>
+          </div>`;
         }
       }
 

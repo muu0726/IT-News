@@ -2,9 +2,12 @@ name: IT Info Collector - 定期実行
 
 on:
   schedule:
-    # UTC 19:17 = JST 04:17 に起動（schedule の遅延対策で前倒し・毎時0分を回避）
-    # 収集・デプロイは即時、通知は notify ジョブが NOTIFY_AT_JST (07:00) まで待機してから送信する
-    - cron: '17 19 * * *'
+    # 1日2回（JST 07:00 / 15:00 通知）
+    # GitHub Actions schedule の遅延を吸収しつつランナー待機時間を抑えるため約48分前倒し起動
+    # ① UTC 21:12 = JST 06:12 起動 → JST 07:00 通知
+    - cron: '12 21 * * *'
+    # ② UTC 05:12 = JST 14:12 起動 → JST 15:00 通知
+    - cron: '12 5 * * *'
   workflow_dispatch:
 
 permissions:
@@ -69,6 +72,7 @@ jobs:
           git add data.json archive/ feed.xml
           if [ -f digest.json ]; then git add digest.json; fi
           if [ -f gadgets.json ]; then git add gadgets.json; fi
+          if [ -f gadget_feed.xml ]; then git add gadget_feed.xml; fi
           git pull --rebase origin main || true
           git diff --cached --quiet || git commit -m "chore: データ更新 $(date +'%Y-%m-%d %H:%M UTC')"
           git push
@@ -88,8 +92,8 @@ jobs:
   notify:
     needs: collect
     runs-on: ubuntu-latest
-    # 07:00 JST までの待機を含む
-    timeout-minutes: 240
+    # 07:00 / 15:00 JST までの待機を含む（約48分＋バッファ）
+    timeout-minutes: 90
     permissions:
       contents: read
 
@@ -116,18 +120,18 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
-          # 定期実行時のみ 07:00 JST まで待って通知（手動実行は即時）
-          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00' || '' }}
+          # 定期実行時のみ 07:00 または 15:00 JST まで待って通知（手動実行は即時）
+          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00,15:00' || '' }}
         run: python gather.py --notify-only
 
       - name: ガジェット通知送信
-        # 上のステップで 07:00 まで待機済みのため即時送信。失敗しても IT ニュース通知には影響させない
+        # 上のステップで通知時刻まで待機済みのため即時送信。失敗しても IT ニュース通知には影響させない
         continue-on-error: true
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
-          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00' || '' }}
+          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00,15:00' || '' }}
         run: python gadget.py --notify-only
 
   alert:
@@ -144,6 +148,6 @@ jobs:
         run: |
           if [ -n "$DISCORD_WEBHOOK_URL" ]; then
             curl -H "Content-Type: application/json" \
-              -d "{\"username\": \"🚨 GitHub Actions\", \"content\": \"❌ **IT Info Collector** のワークフローが失敗しました（collect: ${{ needs.collect.result }} / notify: ${{ needs.notify.result }}）。\\n🔗 [ログを確認](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})\"}" \
+              -d "{\"username\": \"GitHub Actions Alert\", \"content\": \"**[ERROR] IT Info Collector** のワークフローが失敗しました（collect: ${{ needs.collect.result }} / notify: ${{ needs.notify.result }}）。\\n[ログを確認](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})\"}" \
               "$DISCORD_WEBHOOK_URL"
           fi

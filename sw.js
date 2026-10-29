@@ -4,7 +4,7 @@
  * その他静的アセット: Cache First
  */
 
-const CACHE_NAME = 'itinfohub-v5';
+const CACHE_NAME = 'itinfohub-v7';
 
 const PRECACHE_URLS = [
   './',

@@ -6,8 +6,8 @@
   <meta name="description" content="IT技術情報を自動収集・AI分析し、重要度スコア付きで一覧表示するインテリジェントニュースダッシュボード">
   <title>IT Info Hub — AI技術ニュースダッシュボード</title>
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#191919">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+  <meta name="theme-color" content="#141413">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none'%3E%3Crect width='64' height='64' rx='14' fill='%23141413'/%3E%3Crect x='14' y='14' width='14' height='14' rx='3' fill='%232eaadc'/%3E%3Crect x='34' y='14' width='16' height='6' rx='2' fill='%23f7f7f5'/%3E%3Crect x='34' y='24' width='10' height='4' rx='2' fill='%238e8e93'/%3E%3Crect x='14' y='34' width='36' height='6' rx='2' fill='%23f7f7f5' opacity='0.85'/%3E%3Crect x='14' y='44' width='26' height='6' rx='2' fill='%232eaadc' opacity='0.75'/%3E%3C/svg%3E">
   <link rel="alternate" type="application/rss+xml" title="IT Info Hub RSS" href="feed.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,294 +18,504 @@
        ============================================================ */
     :root {
       --font-sans: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       --bg-primary: #ffffff;
-      --bg-secondary: #f7f7f5;
-      --bg-tertiary: #f0f0ee;
-      --bg-card: #ffffff;
-      --bg-hover: rgba(55, 53, 47, 0.04);
-      --text-primary: #37352f;
-      --text-secondary: #6b6b6b;
-      --text-tertiary: #9b9b9b;
-      --border-color: #e8e8e5;
-      --border-light: #f0f0ee;
-      --accent: #2eaadc;
-      --accent-hover: #2593be;
-      --gold: #d4a017;
-      --gold-bg: rgba(212, 160, 23, 0.08);
-      --gold-border: rgba(212, 160, 23, 0.5);
-      --silver: #8e8e93;
-      --silver-bg: rgba(142, 142, 147, 0.06);
-      --silver-border: rgba(142, 142, 147, 0.35);
-      --hot-color: #eb5757;
-      --hot-bg: rgba(235, 87, 87, 0.06);
-      --tag-bg: #f0f0ee;
-      --tag-text: #6b6b6b;
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-      --shadow-md: 0 2px 8px rgba(0,0,0,0.06);
-      --shadow-lg: 0 4px 16px rgba(0,0,0,0.08);
-      --radius-sm: 4px;
+      --bg-secondary: #f6f6f4;
+      --bg-tertiary: #ededeb;
+      --bg-elevated: #ffffff;
+      --bg-hover: rgba(24, 24, 22, 0.04);
+      --bg-active: rgba(24, 24, 22, 0.07);
+      --text-primary: #181816;
+      --text-secondary: #575653;
+      --text-tertiary: #878681;
+      --border-color: #e4e4e0;
+      --border-strong: #cfcfc9;
+      --border-light: #efefec;
+      --accent: #0f766e;
+      --accent-hover: #0d635c;
+      --accent-subtle: rgba(15, 118, 110, 0.08);
+      --accent-border: rgba(15, 118, 110, 0.35);
+      --gold: #b45309;
+      --gold-badge: #d97706;
+      --gold-bg: rgba(217, 119, 6, 0.06);
+      --gold-border: rgba(217, 119, 6, 0.4);
+      --silver: #52525b;
+      --silver-bg: rgba(82, 82, 91, 0.04);
+      --silver-border: rgba(82, 82, 91, 0.25);
+      --hot-color: #dc2626;
+      --hot-bg: rgba(220, 38, 38, 0.08);
+      --hot-border: rgba(220, 38, 38, 0.35);
+      --error-color: #dc2626;
+      --error-bg: rgba(220, 38, 38, 0.06);
+      --tag-bg: #f1f1ee;
+      --tag-text: #4b4a46;
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.03);
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
+      --radius-xs: 4px;
+      --radius-sm: 6px;
       --radius-md: 8px;
       --radius-lg: 12px;
-      --favorite-color: #f5a623;
-      --keyword-color: #7c5cd6;
-      --keyword-bg: rgba(124, 92, 214, 0.08);
+      --favorite-color: #d97706;
+      --favorite-bg: rgba(217, 119, 6, 0.1);
+      --keyword-color: #6d28d9;
+      --keyword-bg: rgba(109, 40, 217, 0.08);
+      --keyword-border: rgba(109, 40, 217, 0.35);
+      --hl-bg: rgba(234, 179, 8, 0.28);
+      --hl-text: inherit;
       /* dataviz palette (light) */
-      --viz-series-1: #2a78d6;
-      --viz-series-2: #1baf7a;
-      --viz-grid: #e1e0d9;
-      --viz-axis: #c3c2b7;
-      --viz-ink: #0b0b0b;
-      --viz-ink-2: #52514e;
-      --viz-muted: #898781;
-      --viz-surface: #fcfcfb;
+      --viz-series-1: #0f766e;
+      --viz-series-2: #2563eb;
+      --viz-series-3: #d97706;
+      --viz-grid: #e4e4e0;
+      --viz-axis: #c7c7c1;
+      --viz-ink: #181816;
+      --viz-ink-2: #575653;
+      --viz-muted: #878681;
+      --viz-surface: #fafaf9;
     }
 
     [data-theme="dark"] {
-      --bg-primary: #191919;
-      --bg-secondary: #202020;
-      --bg-tertiary: #2d2d2d;
-      --bg-card: #252525;
-      --bg-hover: rgba(255, 255, 255, 0.04);
-      --text-primary: #e0e0e0;
-      --text-secondary: #9b9b9b;
-      --text-tertiary: #6b6b6b;
-      --border-color: #333333;
-      --border-light: #2d2d2d;
-      --accent: #529cca;
-      --accent-hover: #6db3dc;
-      --gold-bg: rgba(212, 160, 23, 0.12);
-      --gold-border: rgba(212, 160, 23, 0.6);
-      --silver-bg: rgba(142, 142, 147, 0.1);
-      --silver-border: rgba(142, 142, 147, 0.4);
-      --hot-bg: rgba(235, 87, 87, 0.1);
-      --tag-bg: #333333;
-      --tag-text: #9b9b9b;
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
-      --shadow-md: 0 2px 8px rgba(0,0,0,0.3);
-      --shadow-lg: 0 4px 16px rgba(0,0,0,0.4);
-      --keyword-bg: rgba(124, 92, 214, 0.16);
+      --bg-primary: #141413;
+      --bg-secondary: #0d0d0c;
+      --bg-tertiary: #222220;
+      --bg-elevated: #1c1c1a;
+      --bg-hover: rgba(255, 255, 255, 0.045);
+      --bg-active: rgba(255, 255, 255, 0.08);
+      --text-primary: #eceae5;
+      --text-secondary: #a1a09a;
+      --text-tertiary: #6e6d68;
+      --border-color: #282826;
+      --border-strong: #3a3a36;
+      --border-light: #1f1f1d;
+      --accent: #14b8a6;
+      --accent-hover: #2dd4bf;
+      --accent-subtle: rgba(20, 184, 166, 0.12);
+      --accent-border: rgba(20, 184, 166, 0.4);
+      --gold: #f59e0b;
+      --gold-badge: #d97706;
+      --gold-bg: rgba(245, 158, 11, 0.08);
+      --gold-border: rgba(245, 158, 11, 0.45);
+      --silver: #a1a1aa;
+      --silver-bg: rgba(161, 161, 170, 0.06);
+      --silver-border: rgba(161, 161, 170, 0.3);
+      --hot-color: #f87171;
+      --hot-bg: rgba(248, 113, 113, 0.12);
+      --hot-border: rgba(248, 113, 113, 0.4);
+      --error-color: #f87171;
+      --error-bg: rgba(248, 113, 113, 0.09);
+      --tag-bg: #222220;
+      --tag-text: #a1a09a;
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.25);
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.6);
+      --favorite-color: #fbbf24;
+      --favorite-bg: rgba(251, 191, 36, 0.14);
+      --keyword-color: #a78bfa;
+      --keyword-bg: rgba(167, 139, 250, 0.14);
+      --keyword-border: rgba(167, 139, 250, 0.4);
+      --hl-bg: rgba(250, 204, 21, 0.25);
       /* dataviz palette (dark) */
-      --viz-series-1: #3987e5;
-      --viz-series-2: #199e70;
-      --viz-grid: #2c2c2a;
-      --viz-axis: #383835;
-      --viz-ink: #ffffff;
-      --viz-ink-2: #c3c2b7;
-      --viz-muted: #898781;
-      --viz-surface: #1a1a19;
+      --viz-series-1: #14b8a6;
+      --viz-series-2: #60a5fa;
+      --viz-series-3: #f59e0b;
+      --viz-grid: #262624;
+      --viz-axis: #3a3a37;
+      --viz-ink: #eceae5;
+      --viz-ink-2: #a1a09a;
+      --viz-muted: #6e6d68;
+      --viz-surface: #181816;
     }
 
     /* ============================================================
        Base Reset & Layout
        ============================================================ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
-
     body {
       font-family: var(--font-sans);
       background: var(--bg-secondary);
       color: var(--text-primary);
-      line-height: 1.65;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
-      transition: background 0.3s ease, color 0.3s ease;
+      font-variant-numeric: tabular-nums;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .icon-svg {
+      width: 15px;
+      height: 15px;
+      stroke: currentColor;
+      stroke-width: 1.85;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      flex-shrink: 0;
+    }
+    .icon-svg.sm { width: 13px; height: 13px; }
+    .icon-svg.lg { width: 18px; height: 18px; }
+
+    mark.hl {
+      background: var(--hl-bg);
+      color: var(--hl-text);
+      padding: 0 2px;
+      border-radius: 2px;
     }
 
     /* ============================================================
        Header
        ============================================================ */
     .header {
-      background: var(--bg-primary);
+      background: rgba(255, 255, 255, 0.88);
       border-bottom: 1px solid var(--border-color);
       position: sticky;
       top: 0;
       z-index: 100;
       backdrop-filter: blur(12px);
-      background: rgba(255,255,255,0.85);
+      -webkit-backdrop-filter: blur(12px);
     }
     [data-theme="dark"] .header {
-      background: rgba(25,25,25,0.88);
+      background: rgba(20, 20, 19, 0.88);
     }
 
     .header-inner {
-      max-width: 1100px;
+      max-width: 1160px;
       margin: 0 auto;
-      padding: 16px 24px;
+      padding: 12px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 14px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
     }
 
     .logo {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 10px;
-      font-size: 18px;
+      gap: 9px;
+      font-size: 16px;
       font-weight: 700;
+      letter-spacing: -0.02em;
       white-space: nowrap;
       text-decoration: none;
       color: var(--text-primary);
     }
-    .logo-icon { font-size: 24px; }
+    .logo-mark {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: var(--text-primary);
+      color: var(--bg-primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-mark svg {
+      width: 15px;
+      height: 15px;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      fill: none;
+    }
+
+    .nav-switch {
+      display: inline-flex;
+      align-items: center;
+      background: var(--bg-tertiary);
+      padding: 3px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+    .nav-switch a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: var(--radius-xs);
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-secondary);
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .nav-switch a:hover { color: var(--text-primary); }
+    .nav-switch a.active {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      box-shadow: var(--shadow-xs);
+    }
 
     .header-controls {
       display: flex;
       align-items: center;
       gap: 8px;
+      flex: 1;
+      justify-content: flex-end;
       flex-wrap: wrap;
     }
 
     /* ============================================================
-       Controls: Buttons, Selects, Inputs
+       Controls: Buttons, Selects, Search
        ============================================================ */
     .btn {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 6px;
-      padding: 6px 12px;
+      padding: 6px 11px;
       border: 1px solid var(--border-color);
       border-radius: var(--radius-sm);
       background: var(--bg-primary);
       color: var(--text-secondary);
-      font-size: 13px;
+      font-size: 12.5px;
+      font-weight: 500;
       font-family: var(--font-sans);
       cursor: pointer;
-      transition: all 0.15s ease;
+      transition: all 0.14s ease;
       white-space: nowrap;
+      text-decoration: none;
+      line-height: 1.2;
+      height: 32px;
     }
-    .btn:hover { background: var(--bg-hover); color: var(--text-primary); }
+    .btn:hover {
+      background: var(--bg-hover);
+      color: var(--text-primary);
+      border-color: var(--border-strong);
+    }
+    .btn.icon-only {
+      padding: 0;
+      width: 32px;
+    }
     .btn.active {
-      background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
+      background: var(--accent-subtle);
+      color: var(--accent);
+      border-color: var(--accent-border);
+      font-weight: 600;
     }
-    .btn.active:hover { background: var(--accent-hover); }
-
     .btn-fav.active {
-      background: var(--favorite-color);
-      border-color: var(--favorite-color);
+      background: var(--favorite-bg);
+      color: var(--favorite-color);
+      border-color: var(--gold-border);
     }
     .btn-keyword.active {
-      background: var(--keyword-color);
-      border-color: var(--keyword-color);
+      background: var(--keyword-bg);
+      color: var(--keyword-color);
+      border-color: var(--keyword-border);
+    }
+    .btn-count {
+      font-size: 11px;
+      padding: 1px 5px;
+      border-radius: 999px;
+      background: var(--bg-tertiary);
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+    .btn.active .btn-count {
+      background: rgba(15, 118, 110, 0.16);
+      color: var(--accent);
     }
 
+    .select-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
     .select-wrap select {
-      padding: 6px 28px 6px 10px;
+      height: 32px;
+      padding: 0 26px 0 10px;
       border: 1px solid var(--border-color);
       border-radius: var(--radius-sm);
       background: var(--bg-primary);
       color: var(--text-primary);
-      font-size: 13px;
+      font-size: 12.5px;
+      font-weight: 500;
       font-family: var(--font-sans);
       cursor: pointer;
       appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23878681' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: right 8px center;
-      max-width: 180px;
+      max-width: 190px;
+      transition: border-color 0.15s;
     }
+    .select-wrap select:hover { border-color: var(--border-strong); }
+    .select-wrap select:focus { outline: none; border-color: var(--accent); }
 
+    .search-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex: 1;
+      min-width: 220px;
+      max-width: 400px;
+    }
     .search-box {
       position: relative;
       flex: 1;
-      min-width: 200px;
-      max-width: 380px;
       display: flex;
-      gap: 6px;
       align-items: center;
+    }
+    .search-box .search-icon {
+      position: absolute;
+      left: 10px;
+      color: var(--text-tertiary);
+      pointer-events: none;
     }
     .search-box input {
       width: 100%;
-      padding: 8px 14px 8px 36px;
+      height: 32px;
+      padding: 0 54px 0 32px;
       border: 1px solid var(--border-color);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius-sm);
       background: var(--bg-secondary);
       color: var(--text-primary);
-      font-size: 14px;
+      font-size: 13px;
       font-family: var(--font-sans);
-      transition: border-color 0.2s, box-shadow 0.2s;
+      transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
     }
     .search-box input:focus {
       outline: none;
+      background: var(--bg-primary);
       border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(46,170,220,0.15);
+      box-shadow: 0 0 0 3px var(--accent-subtle);
     }
-    .search-box::before {
-      content: '🔍';
+    .search-kbd {
       position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 14px;
+      right: 8px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 1px 5px;
+      border: 1px solid var(--border-color);
+      border-radius: 3px;
+      color: var(--text-tertiary);
+      background: var(--bg-primary);
       pointer-events: none;
     }
+    .search-clear {
+      position: absolute;
+      right: 6px;
+      width: 20px;
+      height: 20px;
+      border: none;
+      background: var(--bg-tertiary);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      line-height: 1;
+    }
+    .search-clear.visible { display: inline-flex; }
+    .search-clear:hover { color: var(--text-primary); }
 
     /* ============================================================
        Toolbar (filters bar below header)
        ============================================================ */
     .toolbar {
-      max-width: 1100px;
+      max-width: 1160px;
       margin: 0 auto;
-      padding: 12px 24px 4px;
+      padding: 10px 24px 6px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       flex-wrap: wrap;
     }
-    .toolbar-label {
-      font-size: 12px;
-      color: var(--text-tertiary);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      font-weight: 600;
+    .toolbar-divider {
+      width: 1px;
+      height: 18px;
+      background: var(--border-color);
+      margin: 0 2px;
     }
     .toolbar-spacer { margin-left: auto; }
+
     .filter-chip {
       display: none;
       align-items: center;
       gap: 6px;
-      padding: 4px 10px;
-      background: var(--accent);
-      color: #fff;
-      border-radius: var(--radius-sm);
+      height: 28px;
+      padding: 0 9px;
+      background: var(--accent-subtle);
+      color: var(--accent);
+      border: 1px solid var(--accent-border);
+      border-radius: var(--radius-xs);
       font-size: 12px;
-      font-weight: 500;
+      font-weight: 600;
     }
     .filter-chip.visible { display: inline-flex; }
     .filter-chip .clear-chip {
       cursor: pointer;
-      opacity: 0.8;
-      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      opacity: 0.75;
     }
     .filter-chip .clear-chip:hover { opacity: 1; }
-    .filter-chip.group-chip { background: var(--hot-color); }
+    .filter-chip.group-chip {
+      background: var(--hot-bg);
+      color: var(--hot-color);
+      border-color: var(--hot-border);
+    }
+    .reset-all-btn {
+      display: none;
+      align-items: center;
+      gap: 4px;
+      height: 28px;
+      padding: 0 8px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      background: transparent;
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-xs);
+      cursor: pointer;
+      font-family: var(--font-sans);
+    }
+    .reset-all-btn.visible { display: inline-flex; }
+    .reset-all-btn:hover { color: var(--text-primary); border-style: solid; }
 
     /* ============================================================
-       Settings Panel
+       Settings & Trend Panels
        ============================================================ */
     .panel {
-      max-width: 1100px;
+      max-width: 1160px;
       margin: 8px auto 0;
-      padding: 14px 24px;
+      padding: 0 24px;
       display: none;
     }
     .panel.visible { display: block; }
     .panel-inner {
       background: var(--bg-primary);
       border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 16px 18px;
-      box-shadow: var(--shadow-sm);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-xs);
+    }
+    .panel-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 820px) {
+      .panel-grid { grid-template-columns: 1fr; }
     }
     .panel-title {
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
-      margin-bottom: 10px;
+      color: var(--text-primary);
+      margin-bottom: 8px;
       display: flex;
       align-items: center;
       gap: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
     }
     .panel-row {
       display: flex;
@@ -315,38 +525,66 @@
       margin-bottom: 10px;
     }
     .panel-row:last-child { margin-bottom: 0; }
-    .panel-note { font-size: 11px; color: var(--text-tertiary); }
+    .panel-note { font-size: 12px; color: var(--text-tertiary); line-height: 1.5; }
     .keyword-input {
-      padding: 6px 10px;
+      height: 32px;
+      padding: 0 10px;
       border: 1px solid var(--border-color);
       border-radius: var(--radius-sm);
       background: var(--bg-secondary);
       color: var(--text-primary);
       font-size: 13px;
       font-family: var(--font-sans);
-      min-width: 160px;
+      min-width: 200px;
+      flex: 1;
     }
-    .keyword-input:focus { outline: none; border-color: var(--accent); }
+    .keyword-input:focus { outline: none; border-color: var(--accent); background: var(--bg-primary); }
     .keyword-chip {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
-      padding: 3px 9px;
+      gap: 6px;
+      padding: 3px 10px;
       background: var(--keyword-bg);
       color: var(--keyword-color);
-      border: 1px solid var(--keyword-color);
-      border-radius: 20px;
+      border: 1px solid var(--keyword-border);
+      border-radius: 999px;
       font-size: 12px;
       font-weight: 600;
     }
-    .keyword-chip .remove-kw { cursor: pointer; opacity: 0.7; }
+    .keyword-chip .remove-kw {
+      cursor: pointer;
+      opacity: 0.7;
+      display: inline-flex;
+      align-items: center;
+    }
     .keyword-chip .remove-kw:hover { opacity: 1; }
+
+    .import-box {
+      display: none;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-light);
+    }
+    .import-box.visible { display: block; }
+    .import-box textarea {
+      width: 100%;
+      height: 64px;
+      padding: 8px;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      resize: vertical;
+      margin-bottom: 6px;
+    }
 
     /* ============================================================
        Digest Banner
        ============================================================ */
     .digest {
-      max-width: 1100px;
+      max-width: 1160px;
       margin: 10px auto 0;
       padding: 0 24px;
       display: none;
@@ -355,34 +593,91 @@
     .digest-inner {
       background: var(--bg-primary);
       border: 1px solid var(--gold-border);
-      border-left: 4px solid var(--gold);
-      border-radius: var(--radius-lg);
-      padding: 14px 18px;
+      border-left: 3px solid var(--gold-badge);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
     }
     .digest-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 700;
+      user-select: none;
     }
-    .digest-body { display: none; margin-top: 10px; font-size: 13px; }
-    .digest.open .digest-body { display: block; }
-    .digest-overview { color: var(--text-secondary); margin-bottom: 10px; }
-    .digest-trends { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
-    .digest-trend {
-      padding: 2px 10px;
+    .digest-header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .digest-badge {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 2px 7px;
+      border-radius: var(--radius-xs);
       background: var(--gold-bg);
       color: var(--gold);
-      border-radius: 20px;
-      font-size: 12px;
+      border: 1px solid var(--gold-border);
+    }
+    .digest-chevron {
+      transition: transform 0.2s ease;
+      color: var(--text-tertiary);
+    }
+    .digest.open .digest-chevron { transform: rotate(180deg); }
+    .digest-body {
+      display: none;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-light);
+      font-size: 13px;
+    }
+    .digest.open .digest-body { display: block; }
+    .digest-overview { color: var(--text-secondary); margin-bottom: 12px; line-height: 1.65; }
+    .digest-trends { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+    .digest-trend {
+      padding: 3px 10px;
+      background: var(--gold-bg);
+      color: var(--gold);
+      border: 1px solid var(--gold-border);
+      border-radius: 999px;
+      font-size: 11.5px;
       font-weight: 600;
     }
-    .digest-highlight { margin-bottom: 6px; }
-    .digest-highlight a { color: var(--accent); text-decoration: none; font-weight: 600; }
-    .digest-highlight a:hover { text-decoration: underline; }
-    .digest-highlight .hl-comment { color: var(--text-tertiary); font-size: 12px; }
+    .digest-highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 8px;
+    }
+    .digest-highlight {
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-light);
+    }
+    .digest-highlight-head {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 3px;
+    }
+    .digest-hl-num {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+    .digest-highlight a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 12.5px;
+      line-height: 1.4;
+    }
+    .digest-highlight a:hover { color: var(--accent); text-decoration: underline; }
+    .digest-highlight .hl-comment { color: var(--text-tertiary); font-size: 11.5px; line-height: 1.45; }
 
     /* ============================================================
        Trend Panel (dataviz)
@@ -390,34 +685,46 @@
     .trend-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
+      gap: 12px;
       margin-top: 10px;
     }
     .trend-card {
       background: var(--viz-surface);
       border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 14px 16px;
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
       overflow-x: auto;
     }
     .trend-card.wide { grid-column: 1 / -1; }
-    .trend-card h3 {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--viz-ink-2);
+    .trend-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 8px;
     }
+    .trend-card h3 {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--viz-ink-2);
+    }
+    .trend-card-hint {
+      font-size: 11px;
+      color: var(--text-tertiary);
+    }
     .trend-card svg { display: block; width: 100%; height: auto; }
+    .trend-bar-row { cursor: pointer; transition: opacity 0.15s; }
+    .trend-bar-row:hover { opacity: 0.82; }
     .viz-tooltip {
       position: fixed;
       z-index: 500;
       pointer-events: none;
-      background: var(--bg-primary);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-sm);
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-xs);
       box-shadow: var(--shadow-md);
-      padding: 6px 10px;
-      font-size: 12px;
+      padding: 5px 9px;
+      font-size: 11.5px;
+      font-weight: 500;
       color: var(--text-primary);
       display: none;
       white-space: nowrap;
@@ -430,11 +737,11 @@
        Source Tabs
        ============================================================ */
     .source-tabs {
-      max-width: 1100px;
-      margin: 0 auto;
+      max-width: 1160px;
+      margin: 4px auto 0;
       padding: 0 24px;
       display: flex;
-      gap: 0;
+      gap: 2px;
       border-bottom: 1px solid var(--border-color);
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
@@ -442,280 +749,750 @@
     }
     .source-tabs::-webkit-scrollbar { display: none; }
     .source-tab {
-      padding: 10px 16px;
-      font-size: 13px;
+      padding: 9px 13px;
+      font-size: 12.5px;
       font-weight: 500;
-      color: var(--text-tertiary);
+      color: var(--text-secondary);
       cursor: pointer;
       border-bottom: 2px solid transparent;
-      transition: all 0.2s ease;
+      transition: all 0.15s ease;
       white-space: nowrap;
       background: none;
       border-top: none;
       border-left: none;
       border-right: none;
       font-family: var(--font-sans);
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 7px;
     }
     .source-tab:hover { color: var(--text-primary); background: var(--bg-hover); }
     .source-tab.active {
-      color: var(--accent);
+      color: var(--text-primary);
       border-bottom-color: var(--accent);
       font-weight: 600;
+    }
+    .source-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--src-color, var(--text-tertiary));
+      flex-shrink: 0;
     }
     .source-tab .tab-count {
       font-size: 11px;
       padding: 1px 6px;
-      border-radius: 10px;
+      border-radius: 999px;
       background: var(--bg-tertiary);
       color: var(--text-tertiary);
-      font-weight: 500;
+      font-weight: 600;
     }
     .source-tab.active .tab-count {
-      background: var(--accent);
-      color: #fff;
+      background: var(--accent-subtle);
+      color: var(--accent);
     }
 
     /* ============================================================
-       Stats Bar
+       Interactive KPI / Stats Bar
        ============================================================ */
     .stats-bar {
-      max-width: 1100px;
+      max-width: 1160px;
       margin: 0 auto;
-      padding: 8px 24px 0;
+      padding: 10px 24px 2px;
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 6px;
       font-size: 12px;
-      color: var(--text-tertiary);
+      color: var(--text-secondary);
       flex-wrap: wrap;
     }
-    .stat-item { display: flex; align-items: center; gap: 4px; }
+    .stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-primary);
+      color: var(--text-secondary);
+      font-size: 11.5px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.14s ease;
+      user-select: none;
+      font-family: var(--font-sans);
+    }
+    .stat-pill:hover {
+      border-color: var(--border-strong);
+      color: var(--text-primary);
+    }
+    .stat-pill.active {
+      background: var(--accent-subtle);
+      border-color: var(--accent-border);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .stat-pill strong {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .stat-pill.active strong { color: var(--accent); }
+    .stat-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+    .stat-dot.hot { background: var(--hot-color); }
+    .stat-dot.gold { background: var(--gold-badge); }
+    .stat-dot.unread { background: var(--accent); }
+    .stat-dot.err { background: var(--error-color); }
 
-    /* ============================================================
-       Main Content
-       ============================================================ */
-    .main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 12px 24px 60px;
+    .stat-meta {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text-tertiary);
+      font-size: 11.5px;
     }
 
     /* ============================================================
-       Article Card
+       Main Content & Article Cards
        ============================================================ */
+    .main {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 10px 24px 64px;
+    }
+
     .card-list {
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      gap: 6px;
+    }
+    .card-list.compact {
+      gap: 3px;
     }
 
     .card {
       display: flex;
       align-items: flex-start;
       gap: 14px;
-      padding: 14px 18px;
+      padding: 14px 16px;
       background: var(--bg-primary);
       border-radius: var(--radius-md);
-      border: 1px solid transparent;
-      transition: all 0.18s ease;
-      cursor: default;
+      border: 1px solid var(--border-color);
+      transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
       position: relative;
+      animation: fadeIn 0.25s ease forwards;
+      opacity: 0;
     }
     .card:hover {
-      background: var(--bg-hover);
-      box-shadow: var(--shadow-sm);
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-xs);
+    }
+    .card.kb-focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-subtle);
     }
 
-    /* Score-based border */
+    /* Score-based accents */
     .card.score-gold {
-      border-left: 3px solid var(--gold);
-      background: var(--gold-bg);
+      border-left: 3px solid var(--gold-badge);
     }
     .card.score-silver {
       border-left: 3px solid var(--silver);
-      background: var(--silver-bg);
     }
     .card.is-hot {
-      border-left-color: var(--hot-color);
+      border-left: 3px solid var(--hot-color);
     }
     .card.has-error {
-      border-left: 3px solid #e74c3c;
-      background: rgba(231, 76, 60, 0.04);
-      opacity: 0.75;
+      border-left: 3px solid var(--error-color);
+      background: var(--error-bg);
     }
-    [data-theme="dark"] .card.has-error {
-      background: rgba(231, 76, 60, 0.08);
+    .card.is-read {
+      opacity: 0.6;
+      background: var(--bg-secondary);
     }
-    .card.is-read { opacity: 0.55; }
-    .card.is-read .card-title a { color: var(--text-secondary); }
+    .card.is-read:hover { opacity: 0.85; }
     .card.keyword-match {
-      border-right: 3px solid var(--keyword-color);
+      box-shadow: inset -3px 0 0 var(--keyword-color);
     }
 
-    /* Favorite star */
-    .card-fav {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
+    /* Left Rail: Score + Bookmark */
+    .card-rail {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: transform 0.2s, background 0.15s;
-      color: var(--text-tertiary);
-      user-select: none;
+      gap: 6px;
+      flex-shrink: 0;
     }
-    .card-fav:hover { background: var(--bg-hover); transform: scale(1.1); }
-    .card-fav.favorited { color: var(--favorite-color); }
 
-    /* Score badge */
     .score-badge {
-      flex-shrink: 0;
-      width: 42px;
-      height: 42px;
+      width: 40px;
+      height: 40px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      border-radius: var(--radius-md);
-      font-size: 15px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
       font-weight: 700;
+      line-height: 1;
       background: var(--bg-tertiary);
       color: var(--text-secondary);
+      border: 1px solid var(--border-color);
     }
-    .score-badge.high { background: var(--gold); color: #fff; }
-    .score-badge.mid { background: var(--silver); color: #fff; }
-
-    .card-body { flex: 1; min-width: 0; }
-
-    .card-title {
-      font-size: 15px;
+    .score-badge small {
+      font-size: 8.5px;
       font-weight: 600;
-      line-height: 1.4;
-      margin-bottom: 4px;
-      display: flex;
-      align-items: flex-start;
-      gap: 6px;
-      flex-wrap: wrap;
+      letter-spacing: 0.04em;
+      margin-top: 2px;
+      opacity: 0.8;
+      text-transform: uppercase;
     }
-    .card-title a {
-      color: var(--text-primary);
-      text-decoration: none;
-      transition: color 0.15s;
+    .score-badge.high {
+      background: var(--gold-bg);
+      color: var(--gold);
+      border-color: var(--gold-border);
     }
-    .card-title a:hover { color: var(--accent); }
-    .hot-badge {
-      flex-shrink: 0;
-      font-size: 11px;
-      padding: 1px 6px;
-      background: var(--hot-bg);
-      color: var(--hot-color);
-      border-radius: var(--radius-sm);
-      font-weight: 600;
-      white-space: nowrap;
-    }
-    .error-badge {
-      flex-shrink: 0;
-      font-size: 11px;
-      padding: 1px 6px;
-      background: rgba(231, 76, 60, 0.1);
-      color: #e74c3c;
-      border-radius: var(--radius-sm);
-      font-weight: 600;
-      white-space: nowrap;
-    }
-    .skip-badge {
-      flex-shrink: 0;
-      font-size: 11px;
-      padding: 1px 6px;
+    .score-badge.mid {
       background: var(--silver-bg);
-      color: var(--silver);
-      border-radius: var(--radius-sm);
-      font-weight: 600;
-      white-space: nowrap;
+      color: var(--text-primary);
+      border-color: var(--silver-border);
     }
-    .keyword-badge {
-      flex-shrink: 0;
-      font-size: 11px;
-      padding: 1px 6px;
-      background: var(--keyword-bg);
-      color: var(--keyword-color);
-      border-radius: var(--radius-sm);
-      font-weight: 600;
-      white-space: nowrap;
-    }
-    .group-badge {
-      flex-shrink: 0;
-      font-size: 11px;
-      padding: 1px 6px;
-      background: var(--hot-bg);
-      color: var(--hot-color);
-      border: 1px solid var(--hot-color);
-      border-radius: var(--radius-sm);
-      font-weight: 600;
-      white-space: nowrap;
+
+    .card-fav {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       cursor: pointer;
+      border-radius: var(--radius-xs);
+      border: none;
+      background: transparent;
+      color: var(--text-tertiary);
+      transition: all 0.15s ease;
+    }
+    .card-fav:hover {
+      background: var(--bg-hover);
+      color: var(--text-primary);
+    }
+    .card-fav.favorited {
+      color: var(--favorite-color);
+    }
+    .card-fav.favorited svg {
+      fill: currentColor;
+    }
+
+    .card-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .card-top-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+      font-size: 11.5px;
+      color: var(--text-tertiary);
+    }
+    .source-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    .domain-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-tertiary);
     }
     .category-badge {
       display: inline-flex;
       align-items: center;
-      padding: 1px 8px;
+      padding: 1px 7px;
       background: var(--bg-tertiary);
       color: var(--text-secondary);
-      border-radius: 20px;
+      border-radius: var(--radius-xs);
       font-size: 11px;
       font-weight: 600;
     }
+    .hn-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 1px 6px;
+      border-radius: var(--radius-xs);
+      background: rgba(255, 102, 0, 0.1);
+      color: #ea580c;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    [data-theme="dark"] .hn-badge {
+      color: #fb923c;
+    }
+    .hatena-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 1px 6px;
+      border-radius: var(--radius-xs);
+      background: rgba(0, 164, 222, 0.1);
+      color: #0284c7;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: var(--font-mono);
+    }
+    [data-theme="dark"] .hatena-badge {
+      color: #38bdf8;
+    }
+    .reading-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 1px 6px;
+      border-radius: var(--radius-xs);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-light);
+      color: var(--text-tertiary);
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    .card-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.45;
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.14s;
+    }
+    .card-title:hover { color: var(--accent); }
+    .card.is-read .card-title { color: var(--text-secondary); }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      padding: 1px 6px;
+      border-radius: var(--radius-xs);
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+    .badge-hot {
+      background: var(--hot-bg);
+      color: var(--hot-color);
+      border: 1px solid var(--hot-border);
+    }
+    .badge-error {
+      background: var(--error-bg);
+      color: var(--error-color);
+      border: 1px solid var(--hot-border);
+    }
+    .badge-skip {
+      background: var(--silver-bg);
+      color: var(--silver);
+      border: 1px solid var(--silver-border);
+    }
+    .badge-kw {
+      background: var(--keyword-bg);
+      color: var(--keyword-color);
+      border: 1px solid var(--keyword-border);
+    }
+    .badge-group {
+      background: var(--accent-subtle);
+      color: var(--accent);
+      border: 1px solid var(--accent-border);
+      cursor: pointer;
+    }
+    .badge-group:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+    .badge-new-run {
+      background: var(--accent-subtle);
+      color: var(--accent);
+      border: 1px solid var(--accent-border);
+    }
+    .badge-prev-seen {
+      background: var(--silver-bg);
+      color: var(--text-tertiary);
+      border: 1px solid var(--border-color);
+    }
+    .badge-foryou {
+      background: var(--accent-subtle);
+      color: var(--accent);
+      border: 1px dashed var(--accent-border);
+    }
+
+    /* Daily Briefing Banner (A-1) */
+    .briefing {
+      max-width: 1160px;
+      margin: 10px auto 0;
+      padding: 0 24px;
+      display: none;
+    }
+    .briefing.visible { display: block; }
+    .briefing-inner {
+      background: var(--bg-primary);
+      border: 1px solid var(--accent-border);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+    }
+    .briefing-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 13.5px;
+      font-weight: 700;
+      user-select: none;
+    }
+    .briefing-header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .briefing-badge {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 2px 7px;
+      border-radius: var(--radius-xs);
+      background: var(--accent-subtle);
+      color: var(--accent);
+      border: 1px solid var(--accent-border);
+    }
+    .briefing-edition {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      padding: 1px 6px;
+      background: var(--bg-tertiary);
+      border-radius: var(--radius-xs);
+    }
+    .briefing-chevron {
+      transition: transform 0.2s ease;
+      color: var(--text-tertiary);
+    }
+    .briefing.open .briefing-chevron { transform: rotate(180deg); }
+    .briefing-body {
+      display: none;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-light);
+      font-size: 13px;
+    }
+    .briefing.open .briefing-body { display: block; }
+    .briefing-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+    .briefing-line {
+      position: relative;
+      padding-left: 14px;
+      line-height: 1.55;
+    }
+    .briefing-line::before {
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 8px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .briefing-tags {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .briefing-tags-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+    }
+    .briefing-tag {
+      padding: 2px 9px;
+      background: var(--accent-subtle);
+      color: var(--accent);
+      border: 1px solid var(--accent-border);
+      border-radius: 999px;
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.14s ease;
+    }
+    .briefing-tag:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* Inline Personal Memo (A-3) */
+    .card-memo-box {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+      padding: 6px 10px;
+      background: var(--favorite-bg);
+      border-left: 2px solid var(--favorite-color);
+      border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+      font-size: 12px;
+      color: var(--text-primary);
+    }
+    .card-memo-label {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--favorite-color);
+      margin-right: 6px;
+    }
+    .card-memo-editor {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .card-memo-editor.visible {
+      display: flex;
+    }
+    .card-memo-input {
+      flex: 1;
+      min-width: 180px;
+      height: 30px;
+      padding: 0 9px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-xs);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-size: 12.5px;
+      font-family: var(--font-sans);
+    }
+    .card-memo-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .card-action-btn.has-memo {
+      color: var(--favorite-color);
+      font-weight: 600;
+    }
+
+    /* Topic Thread Box (B-3) */
+    .topic-thread-box {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      padding: 8px 12px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius-xs);
+    }
+    .topic-thread-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+      user-select: none;
+    }
+    .topic-thread-head:hover {
+      color: var(--accent);
+    }
+    .topic-thread-list {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--border-color);
+    }
+    .topic-thread-box.open .topic-thread-list {
+      display: flex;
+    }
+    .topic-thread-item {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      font-size: 12.5px;
+      line-height: 1.4;
+    }
+    .topic-thread-item .thread-score {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-tertiary);
+      flex-shrink: 0;
+    }
+    .topic-thread-item .thread-source {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+    .topic-thread-item a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .topic-thread-item a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .keyword-chip.muted-chip {
+      background: var(--error-bg);
+      color: var(--error-color);
+      border-color: var(--hot-border);
+    }
+    .stat-dot.muted { background: var(--text-tertiary); }
 
     .card-summary {
       font-size: 13px;
       color: var(--text-secondary);
-      line-height: 1.6;
+      line-height: 1.65;
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .summary-line {
+      position: relative;
+      padding-left: 12px;
+    }
+    .summary-line::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 9px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--border-strong);
+    }
+
+    .score-reason-box {
+      font-size: 11.5px;
+      color: var(--text-tertiary);
+      padding: 4px 10px;
+      border-left: 2px solid var(--border-strong);
+      background: var(--bg-secondary);
+      border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
       margin-bottom: 8px;
     }
 
-    .card-meta {
+    .card-footer {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 10px;
       flex-wrap: wrap;
     }
-
+    .card-tags {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
     .tag {
       display: inline-flex;
       align-items: center;
       padding: 2px 8px;
       background: var(--tag-bg);
       color: var(--tag-text);
-      border-radius: var(--radius-sm);
+      border-radius: var(--radius-xs);
       font-size: 11px;
       font-weight: 500;
       cursor: pointer;
-      transition: all 0.15s;
+      transition: all 0.14s;
+      border: 1px solid transparent;
     }
-    .tag:hover {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    .source-label {
-      font-size: 11px;
-      color: var(--text-tertiary);
-      font-weight: 500;
-    }
-    .date-label {
-      font-size: 11px;
-      color: var(--text-tertiary);
+    .tag:hover, .tag.active {
+      background: var(--accent-subtle);
+      color: var(--accent);
+      border-color: var(--accent-border);
     }
 
-    .score-reason {
-      font-size: 11px;
+    .card-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: auto;
+    }
+    .card-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 7px;
+      border: 1px solid transparent;
+      border-radius: var(--radius-xs);
+      background: transparent;
       color: var(--text-tertiary);
-      font-style: italic;
+      font-size: 11px;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      transition: all 0.14s;
+    }
+    .card-action-btn:hover {
+      background: var(--bg-hover);
+      border-color: var(--border-color);
+      color: var(--text-primary);
+    }
+
+    /* Compact Mode */
+    .card-list.compact .card {
+      padding: 9px 14px;
+      align-items: center;
+    }
+    .card-list.compact .card-rail {
+      flex-direction: row;
+      gap: 8px;
+    }
+    .card-list.compact .score-badge {
+      width: 32px;
+      height: 26px;
+      font-size: 12.5px;
+    }
+    .card-list.compact .score-badge small { display: none; }
+    .card-list.compact .card-details {
+      display: none;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border-light);
+    }
+    .card-list.compact .card.expanded {
+      align-items: flex-start;
+    }
+    .card-list.compact .card.expanded .card-details {
+      display: block;
+    }
+    .card-list.compact .card-title-row {
+      margin-bottom: 0;
     }
 
     /* ============================================================
@@ -723,24 +1500,142 @@
        ============================================================ */
     .state-msg {
       text-align: center;
-      padding: 80px 20px;
+      padding: 72px 20px;
       color: var(--text-tertiary);
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
     }
-    .state-msg .icon { font-size: 48px; margin-bottom: 12px; }
-    .state-msg .title { font-size: 18px; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary); }
-    .state-msg .desc { font-size: 14px; }
+    .state-msg .state-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 12px;
+      color: var(--text-tertiary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .state-msg .state-icon svg {
+      width: 36px;
+      height: 36px;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      fill: none;
+    }
+    .state-msg .title { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: var(--text-primary); }
+    .state-msg .desc { font-size: 13px; color: var(--text-secondary); }
 
     .spinner {
-      width: 36px; height: 36px; margin: 0 auto 16px;
-      border: 3px solid var(--border-color);
+      width: 32px;
+      height: 32px;
+      margin: 0 auto 14px;
+      border: 2.5px solid var(--border-color);
       border-top-color: var(--accent);
       border-radius: 50%;
-      animation: spin 0.8s linear infinite;
+      animation: spin 0.75s linear infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes fadeIn { to { opacity: 1; } }
+    .card.is-read { animation: fadeInRead 0.25s ease forwards; }
+    @keyframes fadeInRead { to { opacity: 0.6; } }
 
     /* ============================================================
-       Footer
+       Toast Notification & Modal
+       ============================================================ */
+    .toast-wrap {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 600;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      pointer-events: none;
+    }
+    .toast {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: var(--text-primary);
+      color: var(--bg-primary);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-lg);
+      font-size: 12.5px;
+      font-weight: 500;
+      animation: fadeIn 0.18s ease forwards;
+    }
+    .toast-action {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: transparent;
+      color: inherit;
+      padding: 2px 8px;
+      border-radius: var(--radius-xs);
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: var(--font-sans);
+    }
+    [data-theme="dark"] .toast-action {
+      border-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 550;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(2px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-backdrop.visible { display: flex; }
+    .modal {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      max-width: 480px;
+      width: 100%;
+      padding: 20px;
+    }
+    .modal-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .modal-head h2 { font-size: 15px; font-weight: 700; }
+    .shortcut-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 16px;
+      font-size: 12.5px;
+    }
+    .shortcut-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-secondary);
+    }
+    .shortcut-item kbd {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 2px 6px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-xs);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    /* ============================================================
+       Footer & Responsive
        ============================================================ */
     .footer {
       text-align: center;
@@ -750,110 +1645,255 @@
       border-top: 1px solid var(--border-color);
       margin-top: 40px;
     }
-    .footer a { color: var(--accent); text-decoration: none; }
+    .footer a { color: var(--accent); text-decoration: none; font-weight: 500; }
+    .footer a:hover { text-decoration: underline; }
 
-    /* ============================================================
-       Responsive
-       ============================================================ */
     @media (max-width: 768px) {
-      .header-inner { flex-wrap: wrap; padding: 12px 16px; }
-      .search-box { min-width: 100%; order: 10; }
-      .main { padding: 10px 12px 40px; }
-      .card { padding: 12px 14px; }
+      .header-inner { flex-wrap: wrap; padding: 10px 16px; }
+      .search-group { min-width: 100%; max-width: none; order: 10; }
+      .main { padding: 10px 12px 48px; }
+      .card { padding: 12px; gap: 10px; }
       .card-title { font-size: 14px; }
-      .toolbar { padding: 10px 16px 4px; }
+      .toolbar { padding: 8px 16px 4px; }
       .source-tabs { padding: 0 16px; }
-      .source-tab { padding: 8px 12px; font-size: 12px; }
-      .stats-bar { padding: 6px 16px 0; }
-      .panel, .digest { padding-left: 16px; padding-right: 16px; }
+      .source-tab { padding: 8px 10px; font-size: 12px; }
+      .stats-bar { padding: 8px 16px 0; }
+      .panel, .digest, .briefing { padding-left: 16px; padding-right: 16px; }
+      .shortcut-list { grid-template-columns: 1fr; }
     }
-
-    /* ============================================================
-       Animations
-       ============================================================ */
-    .card { animation: fadeIn 0.35s ease forwards; opacity: 0; }
-    .card.is-read { animation: fadeInRead 0.35s ease forwards; }
-    @keyframes fadeIn { to { opacity: 1; } }
-    @keyframes fadeInRead { to { opacity: 0.55; } }
   </style>
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="header-inner">
-      <a class="logo" href="#">
-        <span class="logo-icon">📡</span>
-        <span>IT Info Hub</span>
-      </a>
+      <div class="brand-group">
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h14"/></svg>
+          </span>
+          <span>IT Info Hub</span>
+        </a>
+        <nav class="nav-switch" aria-label="ページ切替">
+          <a href="index.html" class="active">IT News</a>
+          <a href="gadget.html">Gadget Hub</a>
+        </nav>
+      </div>
+
       <div class="header-controls">
-        <a class="btn" href="gadget.html" title="最新ガジェット情報" style="text-decoration:none">📱 ガジェット</a>
+        <div class="search-group">
+          <div class="search-box">
+            <svg class="icon-svg search-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
+            </svg>
+            <input type="text" id="searchInput" placeholder="タイトル・要約・タグ・ドメインを検索 (例: AI -広告)" autocomplete="off">
+            <span class="search-kbd" id="searchKbd">/</span>
+            <button type="button" class="search-clear" id="searchClearBtn" title="検索をクリア" aria-label="検索をクリア">×</button>
+          </div>
+          <button type="button" class="btn" id="globalSearchBtn" title="全アーカイブを横断検索">
+            <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>
+            </svg>
+            <span>全期間</span>
+          </button>
+        </div>
+
         <div class="select-wrap">
-          <select id="archiveSelect" title="アーカイブ選択">
-            <option value="">📅 最新データ</option>
+          <select id="archiveSelect" title="アーカイブ選択" aria-label="アーカイブ選択">
+            <option value="">最新データ</option>
           </select>
         </div>
-        <button class="btn btn-fav" id="favFilterBtn" title="お気に入りのみ表示">★ お気に入り</button>
-        <button class="btn" id="themeToggle" title="テーマ切替">🌙</button>
-        <div class="search-box">
-          <input type="text" id="searchInput" placeholder="記事を検索…" autocomplete="off">
-          <button class="btn" id="globalSearchBtn" title="全アーカイブを横断検索">🌐</button>
-        </div>
+
+        <button type="button" class="btn icon-only" id="themeToggle" title="テーマ切替 (d)" aria-label="テーマ切替"></button>
+        <button type="button" class="btn icon-only" id="shortcutHelpBtn" title="キーボードショートカット (?)" aria-label="ショートカット一覧">
+          <span style="font-family:var(--font-mono);font-weight:700;font-size:13px;">?</span>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Toolbar -->
+  <!-- Secondary Toolbar -->
   <div class="toolbar">
-    <span class="toolbar-label">表示:</span>
     <div class="select-wrap">
-      <select id="sortSelect" title="並び替え">
-        <option value="score">📊 スコア順</option>
-        <option value="date">🕐 新着順</option>
-        <option value="source">📰 ソース順</option>
+      <select id="sortSelect" title="並び替え" aria-label="並び替え">
+        <option value="score">スコア順</option>
+        <option value="foryou">おすすめ順</option>
+        <option value="date">新着順</option>
+        <option value="hatena">はてブ数順</option>
+        <option value="hn">HN注目度順</option>
+        <option value="source">ソース順</option>
       </select>
     </div>
+
     <div class="select-wrap">
-      <select id="categorySelect" title="カテゴリで絞り込み">
-        <option value="">🗂 全カテゴリ</option>
+      <select id="categorySelect" title="カテゴリで絞り込み" aria-label="カテゴリで絞り込み">
+        <option value="">全カテゴリ</option>
       </select>
     </div>
-    <button class="btn" id="unreadFilterBtn" title="未読のみ表示">👁 未読のみ</button>
-    <button class="btn btn-keyword" id="keywordFilterBtn" title="登録キーワードにマッチする記事のみ" style="display:none;">📌 注目</button>
+
+    <div class="select-wrap">
+      <select id="scoreFilterSelect" title="スコア閾値で絞り込み" aria-label="スコア閾値">
+        <option value="0">全スコア</option>
+        <option value="80">高スコア (80+)</option>
+        <option value="60">中スコア以上 (60+)</option>
+      </select>
+    </div>
+
+    <span class="toolbar-divider"></span>
+
+    <button type="button" class="btn" id="unreadFilterBtn" title="未読のみ表示 (u)">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="8"/>
+      </svg>
+      <span>未読のみ</span>
+      <span class="btn-count" id="unreadCountBadge">0</span>
+    </button>
+
+    <button type="button" class="btn btn-fav" id="favFilterBtn" title="お気に入りのみ表示">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+      </svg>
+      <span>お気に入り</span>
+      <span class="btn-count" id="favCountBadge">0</span>
+    </button>
+
+    <button type="button" class="btn btn-keyword" id="keywordFilterBtn" title="登録キーワードにマッチする記事のみ" style="display:none;">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/>
+      </svg>
+      <span>注目ワード</span>
+      <span class="btn-count" id="kwCountBadge">0</span>
+    </button>
+
     <div class="filter-chip" id="activeTagFilter">
-      <span id="activeTagName"></span>
-      <span class="clear-chip" id="clearTagBtn">✕</span>
+      <span>タグ: <strong id="activeTagName"></strong></span>
+      <span class="clear-chip" id="clearTagBtn" title="タグ絞り込みを解除">×</span>
     </div>
+
     <div class="filter-chip group-chip" id="activeGroupFilter">
-      <span>🔗 関連記事グループ</span>
-      <span class="clear-chip" id="clearGroupBtn">✕</span>
+      <span>関連記事グループ</span>
+      <span class="clear-chip" id="clearGroupBtn" title="グループ絞り込みを解除">×</span>
     </div>
+
+    <button type="button" class="reset-all-btn" id="resetAllFiltersBtn" title="すべてのフィルタをリセット">
+      フィルタ解除
+    </button>
+
     <span class="toolbar-spacer"></span>
-    <button class="btn" id="trendBtn" title="トレンド統計を表示">📈 トレンド</button>
-    <button class="btn" id="settingsBtn" title="設定">⚙️ 設定</button>
+
+    <button type="button" class="btn" id="topicCollapseBtn" title="同一トピックの関連記事を代表カードに集約表示">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="6" rx="1"/><path d="M6 14h12M8 18h8"/>
+      </svg>
+      <span>トピック集約</span>
+    </button>
+
+    <button type="button" class="btn" id="hidePrevSeenBtn" title="過去数日間にすでに掲載された既出記事を非表示にする">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/>
+      </svg>
+      <span>既出を隠す</span>
+    </button>
+
+    <button type="button" class="btn" id="densityBtn" title="表示密度切替: 標準 / コンパクト (v)">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+      <span id="densityLabel">コンパクト</span>
+    </button>
+
+    <button type="button" class="btn" id="markVisibleReadBtn" title="現在表示中の記事をすべて既読にする">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+      <span>表示中を既読</span>
+    </button>
+
+    <button type="button" class="btn" id="exportMdBtn" title="現在表示中の記事一覧をMarkdown形式でクリップボードにコピー">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/>
+      </svg>
+      <span>MD出力</span>
+    </button>
+
+    <button type="button" class="btn" id="trendBtn" title="トレンド統計を表示">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+      </svg>
+      <span>トレンド</span>
+    </button>
+
+    <button type="button" class="btn" id="settingsBtn" title="設定パネルを開く">
+      <svg class="icon-svg sm" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.08a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.08a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.08a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+      </svg>
+      <span>設定</span>
+    </button>
   </div>
 
   <!-- Settings Panel -->
   <div class="panel" id="settingsPanel">
     <div class="panel-inner">
-      <div class="panel-title">📌 キーワード購読（マイフィード）</div>
-      <div class="panel-row">
-        <input type="text" class="keyword-input" id="keywordInput" placeholder="例: Rust, LLM, Kubernetes" autocomplete="off">
-        <button class="btn" id="addKeywordBtn">＋ 追加</button>
-        <span class="panel-note">マッチした記事に 📌 が付き、「📌 注目」で絞り込めます</span>
+      <div class="panel-grid">
+        <div>
+          <div class="panel-title">キーワード購読（マイフィード）</div>
+          <div class="panel-row">
+            <input type="text" class="keyword-input" id="keywordInput" placeholder="例: Rust, LLM, Kubernetes" autocomplete="off">
+            <button type="button" class="btn" id="addKeywordBtn">追加</button>
+          </div>
+          <div class="panel-row" id="keywordChips"></div>
+          <div class="panel-note">登録語を含む記事にマッチバッジを表示し、「注目ワード」ボタンで絞り込めます（最大20件）。</div>
+        </div>
+
+        <div>
+          <div class="panel-title">ミュート設定（NGワード・ドメイン・タグ）</div>
+          <div class="panel-row">
+            <input type="text" class="keyword-input" id="muteInput" placeholder="例: PR, セール, example.com" autocomplete="off">
+            <button type="button" class="btn" id="addMuteBtn">追加</button>
+          </div>
+          <div class="panel-row" id="muteChips"></div>
+          <div class="panel-note">タイトル・要約・タグ・ドメインに一致する記事を一覧から非表示にします（最大30件）。</div>
+        </div>
+
+        <div>
+          <div class="panel-title">通知・データ管理</div>
+          <div class="panel-row">
+            <button type="button" class="btn" id="notifyBtn">新着高スコア通知</button>
+            <button type="button" class="btn" id="exportBtn">設定を書き出し</button>
+            <button type="button" class="btn" id="importBtn">設定を読み込み</button>
+            <a class="btn" href="feed.xml" target="_blank" rel="noopener">RSSフィード</a>
+          </div>
+          <div class="panel-note">
+            お気に入り・キーワード・ミュート設定・既読履歴をコードとしてコピー、または別ブラウザからインポートして統合できます。
+          </div>
+          <div class="import-box" id="importBox">
+            <textarea id="importCodeInput" placeholder="書き出した設定コードをここに貼り付けてください"></textarea>
+            <div class="panel-row">
+              <button type="button" class="btn active" id="applyImportBtn">適用する</button>
+              <button type="button" class="btn" id="cancelImportBtn">閉じる</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="panel-row" id="keywordChips"></div>
-      <div class="panel-title" style="margin-top:14px;">🔔 通知・データ管理</div>
-      <div class="panel-row">
-        <button class="btn" id="notifyBtn">🔔 新着高スコア通知</button>
-        <button class="btn" id="exportBtn">⤴ 設定を書き出し</button>
-        <button class="btn" id="importBtn">⤵ 設定を読み込み</button>
-        <a class="btn" href="feed.xml" target="_blank" rel="noopener">📡 RSSフィード</a>
+    </div>
+  </div>
+
+  <!-- Daily Briefing Banner (A-1) -->
+  <div class="briefing open" id="briefingBanner">
+    <div class="briefing-inner">
+      <div class="briefing-header" id="briefingHeader">
+        <div class="briefing-header-left">
+          <span class="briefing-badge">DAILY BRIEFING</span>
+          <span class="briefing-edition" id="briefingEdition">朝刊</span>
+          <span id="briefingTitle">本日のAIブリーフィング</span>
+        </div>
+        <svg class="icon-svg briefing-chevron" viewBox="0 0 24 24" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
       </div>
-      <div class="panel-row">
-        <span class="panel-note">
-          通知はこのページを開いた時に、前回以降の新着高スコア記事（80点以上）をブラウザ通知します。
-          書き出し/読み込みで お気に入り・キーワード・既読 を他ブラウザへ移行できます。
-        </span>
+      <div class="briefing-body">
+        <div class="briefing-lines" id="briefingLines"></div>
+        <div class="briefing-tags" id="briefingTags"></div>
       </div>
     </div>
   </div>
@@ -862,13 +1902,18 @@
   <div class="digest" id="digestBanner">
     <div class="digest-inner">
       <div class="digest-header" id="digestHeader">
-        <span id="digestTitle">📅 週間ダイジェスト</span>
-        <span id="digestToggleIcon">▼</span>
+        <div class="digest-header-left">
+          <span class="digest-badge">WEEKLY DIGEST</span>
+          <span id="digestTitle">週間ダイジェスト</span>
+        </div>
+        <svg class="icon-svg digest-chevron" id="digestToggleIcon" viewBox="0 0 24 24" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
       </div>
       <div class="digest-body">
         <div class="digest-overview" id="digestOverview"></div>
         <div class="digest-trends" id="digestTrends"></div>
-        <div id="digestHighlights"></div>
+        <div class="digest-highlights-grid" id="digestHighlights"></div>
       </div>
     </div>
   </div>
@@ -876,36 +1921,77 @@
   <!-- Trend Panel -->
   <div class="panel" id="trendPanel">
     <div class="panel-inner">
-      <div class="panel-title">📈 トレンド統計（直近30日のアーカイブ）</div>
+      <div class="panel-title">トレンド統計（直近30日のアーカイブ）</div>
       <div id="trendLoading" class="panel-note">アーカイブを読み込み中…</div>
       <div class="trend-grid" id="trendGrid" style="display:none;">
         <div class="trend-card wide">
-          <h3>日別 収集記事数</h3>
+          <div class="trend-card-head">
+            <h3>日別 収集記事数</h3>
+            <span class="trend-card-hint">直近30日間の推移</span>
+          </div>
           <div id="chartDaily"></div>
         </div>
         <div class="trend-card">
-          <h3>頻出タグ TOP 10</h3>
+          <div class="trend-card-head">
+            <h3>頻出タグ TOP 10</h3>
+            <span class="trend-card-hint">クリックでタグ絞り込み</span>
+          </div>
           <div id="chartTags"></div>
         </div>
         <div class="trend-card">
-          <h3>ソース別 平均スコア</h3>
+          <div class="trend-card-head">
+            <h3>ソース別 平均スコア</h3>
+            <span class="trend-card-hint">クリックでソース絞り込み</span>
+          </div>
           <div id="chartSources"></div>
+        </div>
+        <div class="trend-card wide">
+          <div class="trend-card-head">
+            <h3>カテゴリ別 記事数</h3>
+            <span class="trend-card-hint">クリックでカテゴリ絞り込み</span>
+          </div>
+          <div id="chartCategories"></div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Source Tabs (dynamic) -->
-  <nav class="source-tabs" id="sourceTabs"></nav>
+  <nav class="source-tabs" id="sourceTabs" aria-label="ソース別タブ"></nav>
 
-  <!-- Stats Bar -->
+  <!-- Interactive Stats Bar -->
   <div class="stats-bar" id="statsBar">
-    <div class="stat-item">📊 <span id="statTotal">—</span> 件</div>
-    <div class="stat-item">🔥 <span id="statHot">—</span> HOT</div>
-    <div class="stat-item">⭐ <span id="statHighScore">—</span> 高スコア</div>
-    <div class="stat-item">⚠️ <span id="statErrors">—</span> エラー</div>
-    <div class="stat-item" id="statScopeWrap" style="display:none;">🌐 <span id="statScope"></span></div>
-    <div class="stat-item" style="margin-left:auto;">🕐 <span id="statTime">—</span></div>
+    <button type="button" class="stat-pill" id="statPillAll" title="フィルタを解除して全件表示">
+      <span>表示</span>
+      <strong id="statTotal">—</strong>
+      <span>件</span>
+    </button>
+    <button type="button" class="stat-pill" id="statPillHot" title="複数ソース出現のHOT記事のみ表示">
+      <span class="stat-dot hot"></span>
+      <span>HOT</span>
+      <strong id="statHot">—</strong>
+    </button>
+    <button type="button" class="stat-pill" id="statPillHigh" title="高スコア (80点以上) のみ表示">
+      <span class="stat-dot gold"></span>
+      <span>高スコア 80+</span>
+      <strong id="statHighScore">—</strong>
+    </button>
+    <button type="button" class="stat-pill" id="statPillErrors" title="解析エラー・スキップ記事を表示" style="display:none;">
+      <span class="stat-dot err"></span>
+      <span>未解析/エラー</span>
+      <strong id="statErrors">0</strong>
+    </button>
+    <button type="button" class="stat-pill" id="statPillMuted" title="ミュート設定により非表示にした記事を一時的に表示" style="display:none;">
+      <span class="stat-dot muted"></span>
+      <span>ミュート除外</span>
+      <strong id="statMuted">0</strong>
+    </button>
+    <span class="stat-pill" id="statScopeWrap" style="display:none;cursor:default;">
+      <strong id="statScope"></strong>
+    </span>
+    <div class="stat-meta">
+      <span>最終更新: <span id="statTime">—</span></span>
+    </div>
   </div>
 
   <!-- Main Content -->
@@ -920,11 +2006,39 @@
   </main>
 
   <div class="viz-tooltip" id="vizTooltip"></div>
+  <div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
+
+  <!-- Keyboard Shortcuts Modal -->
+  <div class="modal-backdrop" id="shortcutModal" role="dialog" aria-modal="true" aria-labelledby="shortcutModalTitle">
+    <div class="modal">
+      <div class="modal-head">
+        <h2 id="shortcutModalTitle">キーボードショートカット</h2>
+        <button type="button" class="btn icon-only" id="closeShortcutModalBtn" aria-label="閉じる">×</button>
+      </div>
+      <div class="shortcut-list">
+        <div class="shortcut-item"><span>次の記事へ移動</span><kbd>j</kbd></div>
+        <div class="shortcut-item"><span>前の記事へ移動</span><kbd>k</kbd></div>
+        <div class="shortcut-item"><span>記事を開く</span><kbd>o / Enter</kbd></div>
+        <div class="shortcut-item"><span>お気に入り切替</span><kbd>f</kbd></div>
+        <div class="shortcut-item"><span>既読 / 未読切替</span><kbd>m</kbd></div>
+        <div class="shortcut-item"><span>URLをコピー</span><kbd>c</kbd></div>
+        <div class="shortcut-item"><span>Markdownコピー</span><kbd>y</kbd></div>
+        <div class="shortcut-item"><span>一言メモを編集</span><kbd>n</kbd></div>
+        <div class="shortcut-item"><span>詳細の展開 (コンパクト時)</span><kbd>x</kbd></div>
+        <div class="shortcut-item"><span>検索ボックスにフォーカス</span><kbd>/</kbd></div>
+        <div class="shortcut-item"><span>未読のみフィルタ</span><kbd>u</kbd></div>
+        <div class="shortcut-item"><span>表示密度切替</span><kbd>v</kbd></div>
+        <div class="shortcut-item"><span>テーマ切替</span><kbd>d</kbd></div>
+        <div class="shortcut-item"><span>閉じる / 解除</span><kbd>Esc</kbd></div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
-    IT Info Hub — Powered by Gemini 2.5 Flash-Lite &amp; GitHub Actions ·
-    <a href="feed.xml">RSS</a>
+    IT Info Hub — Powered by Gemini 2.5 Flash &amp; GitHub Actions ·
+    <a href="gadget.html">Gadget Hub</a> ·
+    <a href="feed.xml">RSS Feed</a>
   </footer>
 
   <script>
@@ -933,20 +2047,26 @@
 
       // ── State ──
       let allArticles = [];
+      let latestGeneratedAt = '';
       let lastRendered = [];
       let currentSearch = '';
       let currentTagFilter = '';
       let currentSourceFilter = '';
       let currentCategoryFilter = '';
       let currentGroupFilter = null;
+      let currentScoreThreshold = 0;
+      let hotFilterActive = false;
+      let errorFilterActive = false;
+      let showMutedActive = false;
       let currentSort = 'score';
       let favFilterActive = false;
       let unreadFilterActive = false;
       let keywordFilterActive = false;
       let globalSearchActive = false;
+      let focusedCardIdx = -1;
       let archiveIndex = [];
-      const archiveCache = new Map();   // filename -> data
-      let globalArticles = null;        // 全アーカイブ横断のマージ結果
+      const archiveCache = new Map();
+      let globalArticles = null;
 
       // ── localStorage ──
       const store = {
@@ -954,17 +2074,29 @@
           try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
           catch { return fallback; }
         },
-        set(key, value) { localStorage.setItem(key, JSON.stringify(value)); },
+        set(key, value) {
+          try { localStorage.setItem(key, JSON.stringify(value)); }
+          catch { /* storage unavailable */ }
+        },
       };
       let favorites = store.get('itinfohub_favorites', []);
       let readUrls = new Set(store.get('itinfohub_read', []));
       let keywords = store.get('itinfohub_keywords', []);
+      let mutedTerms = store.get('itinfohub_muted', []);
+      let memoMap = store.get('itinfohub_memos', {});
       let notifiedUrls = new Set(store.get('itinfohub_notified', []));
+      let viewDensity = store.get('itinfohub_density', 'standard');
+      let topicCollapse = store.get('itinfohub_topic_collapse', false);
+      let hidePrevSeen = store.get('itinfohub_hide_seen', false);
+      let briefingOpen = store.get('itinfohub_briefing_open', true);
+      let editingMemoUrl = null;
 
       // ── DOM Elements ──
       const $ = (sel) => document.querySelector(sel);
       const cardList = $('#cardList');
       const searchInput = $('#searchInput');
+      const searchKbd = $('#searchKbd');
+      const searchClearBtn = $('#searchClearBtn');
       const archiveSelect = $('#archiveSelect');
       const themeToggle = $('#themeToggle');
       const favFilterBtn = $('#favFilterBtn');
@@ -973,22 +2105,62 @@
       const globalSearchBtn = $('#globalSearchBtn');
       const sortSelect = $('#sortSelect');
       const categorySelect = $('#categorySelect');
+      const scoreFilterSelect = $('#scoreFilterSelect');
       const activeTagFilter = $('#activeTagFilter');
       const activeTagName = $('#activeTagName');
       const activeGroupFilter = $('#activeGroupFilter');
+      const resetAllFiltersBtn = $('#resetAllFiltersBtn');
       const sourceTabs = $('#sourceTabs');
       const settingsPanel = $('#settingsPanel');
       const trendPanel = $('#trendPanel');
       const vizTooltip = $('#vizTooltip');
+      const toastWrap = $('#toastWrap');
+      const shortcutModal = $('#shortcutModal');
 
-      // ── Security helpers (XSS対策) ──
+      // ── Security & Formatting helpers ──
       const esc = (s) => String(s ?? '').replace(/[&<>"']/g,
         (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
       const safeUrl = (u) => /^https?:\/\//i.test(String(u || '')) ? String(u) : '#';
 
+      function extractDomain(url) {
+        try {
+          return new URL(url).hostname.replace(/^www\./, '');
+        } catch {
+          return '';
+        }
+      }
+
+      // ── Toast Notification ──
+      function showToast(message, actionLabel = null, onAction = null) {
+        const el = document.createElement('div');
+        el.className = 'toast';
+        const span = document.createElement('span');
+        span.textContent = message;
+        el.appendChild(span);
+        if (actionLabel && onAction) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'toast-action';
+          btn.textContent = actionLabel;
+          btn.addEventListener('click', () => {
+            onAction();
+            el.remove();
+          });
+          el.appendChild(btn);
+        }
+        toastWrap.appendChild(el);
+        setTimeout(() => {
+          if (el.parentNode) el.remove();
+        }, 4000);
+      }
+
       // ── Theme ──
+      const SUN_SVG = `<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>`;
+      const MOON_SVG = `<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+
       function initTheme() {
-        const saved = localStorage.getItem('itinfohub_theme');
+        let saved = null;
+        try { saved = localStorage.getItem('itinfohub_theme'); } catch { /* ignore */ }
         if (saved) {
           document.documentElement.setAttribute('data-theme', saved.replace(/"/g, ''));
         } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -1001,42 +2173,241 @@
         const current = document.documentElement.getAttribute('data-theme');
         const next = current === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('itinfohub_theme', next);
+        try { localStorage.setItem('itinfohub_theme', next); } catch { /* ignore */ }
         updateThemeIcon();
         if (trendPanel.classList.contains('visible')) renderTrendCharts();
       }
 
       function updateThemeIcon() {
         const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        themeToggle.textContent = isDark ? '☀️' : '🌙';
+        themeToggle.innerHTML = isDark ? SUN_SVG : MOON_SVG;
+      }
+
+      // ── Density & Topic Collapse Mode ──
+      function applyDensityUI() {
+        const isCompact = viewDensity === 'compact';
+        cardList.classList.toggle('compact', isCompact);
+        $('#densityBtn').classList.toggle('active', isCompact);
+        $('#densityLabel').textContent = isCompact ? '標準表示' : 'コンパクト';
+      }
+
+      function toggleDensity() {
+        viewDensity = viewDensity === 'compact' ? 'standard' : 'compact';
+        store.set('itinfohub_density', viewDensity);
+        applyDensityUI();
+      }
+
+      function applyTopicCollapseUI() {
+        $('#topicCollapseBtn').classList.toggle('active', Boolean(topicCollapse));
+      }
+
+      function toggleTopicCollapse() {
+        topicCollapse = !topicCollapse;
+        store.set('itinfohub_topic_collapse', topicCollapse);
+        applyTopicCollapseUI();
+        renderArticles();
+        showToast(topicCollapse ? '同一トピックの関連記事を集約表示しました' : 'トピック集約を解除しました');
+      }
+
+      function applyHidePrevSeenUI() {
+        $('#hidePrevSeenBtn').classList.toggle('active', Boolean(hidePrevSeen));
+      }
+
+      function toggleHidePrevSeen() {
+        hidePrevSeen = !hidePrevSeen;
+        store.set('itinfohub_hide_seen', hidePrevSeen);
+        applyHidePrevSeenUI();
+        renderArticles();
+        showToast(hidePrevSeen ? '過去数日の既出記事を非表示にしました' : '既出記事を再表示しました');
+      }
+
+      // ── Personal Memo Helpers (A-3) ──
+      function getMemo(url) {
+        return (url && memoMap && typeof memoMap[url] === 'string') ? memoMap[url] : '';
+      }
+
+      function setMemo(url, text) {
+        if (!url) return;
+        const cleaned = String(text || '').trim().slice(0, 300);
+        if (cleaned) {
+          memoMap[url] = cleaned;
+        } else {
+          delete memoMap[url];
+        }
+        store.set('itinfohub_memos', memoMap);
+      }
+
+      // ── Personalized Affinity Profile (A-2) ──
+      function buildAffinityProfile() {
+        const tagWeights = new Map();
+        const catWeights = new Map();
+        const srcWeights = new Map();
+        const favSet = new Set(favorites);
+        const pool = globalArticles || allArticles;
+        let signalCount = 0;
+
+        pool.forEach((a) => {
+          if (!a || !a.url) return;
+          let w = 0;
+          if (favSet.has(a.url)) w += 3;
+          if (readUrls.has(a.url)) w += 1;
+          if (!w) return;
+          signalCount += w;
+          (a.tags || []).forEach((t) => {
+            const key = String(t).toLowerCase();
+            if (key) tagWeights.set(key, (tagWeights.get(key) || 0) + w);
+          });
+          if (a.category) {
+            catWeights.set(a.category, (catWeights.get(a.category) || 0) + w);
+          }
+          if (a.source) {
+            srcWeights.set(a.source, (srcWeights.get(a.source) || 0) + w);
+          }
+        });
+
+        return { tagWeights, catWeights, srcWeights, signalCount };
+      }
+
+      function calcAffinityBonus(art, profile) {
+        let bonus = 0;
+        if (matchesKeywords(art)) bonus += 10;
+        if (!profile || profile.signalCount === 0) return bonus;
+
+        let tagBoost = 0;
+        (art.tags || []).forEach((t) => {
+          const w = profile.tagWeights.get(String(t).toLowerCase()) || 0;
+          if (w > 0) tagBoost += Math.min(6, Math.log2(w + 1) * 2.5);
+        });
+        bonus += Math.min(12, tagBoost);
+
+        const cw = profile.catWeights.get(art.category) || 0;
+        if (cw > 0) bonus += Math.min(4, Math.log2(cw + 1) * 1.4);
+
+        const sw = profile.srcWeights.get(art.source) || 0;
+        if (sw > 0) bonus += Math.min(3, Math.log2(sw + 1) * 1.0);
+
+        return Math.min(28, Math.round(bonus * 10) / 10);
+      }
+
+      // ── Mute & Markdown Helpers (B-2 / B-4) ──
+      function isMuted(art) {
+        if (!mutedTerms.length) return false;
+        const haystack = [
+          art.title || '',
+          art.summary || '',
+          (art.tags || []).join(' '),
+          extractDomain(art.url),
+          art.source || '',
+        ].join(' ').toLowerCase();
+        return mutedTerms.some((term) => haystack.includes(term.toLowerCase()));
+      }
+
+      function articleToMarkdown(art) {
+        const title = String(art.title || 'No Title').replace(/\r?\n/g, ' ');
+        const url = safeUrl(art.url);
+        const score = art.score ?? 0;
+        const src = art.source || '';
+        const cat = art.category ? ` · ${art.category}` : '';
+        const tags = (art.tags || []).length ? ` [${art.tags.map((t) => `#${t}`).join(' ')}]` : '';
+        const summaryLines = String(art.summary || '')
+          .replace(/\\n/g, '\n')
+          .split('\n')
+          .map((l) => l.trim())
+          .filter(Boolean)
+          .map((l) => `  - ${l}`)
+          .join('\n');
+        const memo = getMemo(art.url);
+        const memoLine = memo ? `\n  - Memo: ${memo.replace(/\r?\n/g, ' ')}` : '';
+        return `- **[${title}](${url})** (${src}${cat} / Score: ${score})${tags}${summaryLines ? '\n' + summaryLines : ''}${memoLine}`;
+      }
+
+      function exportVisibleToMarkdown() {
+        if (!lastRendered.length) {
+          showToast('出力対象の記事がありません');
+          return;
+        }
+        const dateStr = new Date().toLocaleDateString('ja-JP');
+        const header = `## IT Info Hub 記事まとめ (${dateStr} / ${lastRendered.length}件)\n\n`;
+        const body = lastRendered.map((a) => articleToMarkdown(a)).join('\n');
+        const md = header + body + '\n';
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(md).then(() =>
+            showToast(`表示中の ${lastRendered.length} 件をMarkdownでコピーしました`)
+          );
+        }
       }
 
       // ── Favorites / Read / Keywords ──
       const isFavorited = (url) => favorites.includes(url);
 
       function toggleFavorite(url) {
+        if (!url) return;
         const idx = favorites.indexOf(url);
-        if (idx === -1) favorites.push(url);
-        else favorites.splice(idx, 1);
+        if (idx === -1) {
+          favorites.push(url);
+          showToast('お気に入りに追加しました');
+        } else {
+          favorites.splice(idx, 1);
+          showToast('お気に入りを解除しました');
+        }
         store.set('itinfohub_favorites', favorites);
+        updateFilterBadges();
       }
 
-      function markRead(url) {
-        if (!url || readUrls.has(url)) return;
-        readUrls.add(url);
+      function saveReadSet() {
         const arr = [...readUrls].slice(-3000);
         readUrls = new Set(arr);
         store.set('itinfohub_read', arr);
       }
 
-      function matchesKeywords(art) {
-        if (!keywords.length) return false;
-        const text = ((art.title || '') + ' ' + (art.summary || '') + ' '
-          + (art.tags || []).join(' ')).toLowerCase();
-        return keywords.some((kw) => text.includes(kw.toLowerCase()));
+      function markRead(url) {
+        if (!url || readUrls.has(url)) return;
+        readUrls.add(url);
+        saveReadSet();
+        updateFilterBadges();
       }
 
-      // ── Analysis status（旧スキーマ互換） ──
+      function toggleReadState(url) {
+        if (!url) return;
+        if (readUrls.has(url)) {
+          readUrls.delete(url);
+        } else {
+          readUrls.add(url);
+        }
+        saveReadSet();
+        updateFilterBadges();
+      }
+
+      function markVisibleAsRead() {
+        const unreadInView = lastRendered.filter((a) => a.url && !readUrls.has(a.url)).map((a) => a.url);
+        if (!unreadInView.length) {
+          showToast('表示中の未読記事はありません');
+          return;
+        }
+        unreadInView.forEach((u) => readUrls.add(u));
+        saveReadSet();
+        updateFilterBadges();
+        renderArticles();
+        showToast(`${unreadInView.length}件を既読にしました`, '元に戻す', () => {
+          unreadInView.forEach((u) => readUrls.delete(u));
+          saveReadSet();
+          updateFilterBadges();
+          renderArticles();
+        });
+      }
+
+      function getMatchedKeyword(art) {
+        if (!keywords.length) return null;
+        const text = ((art.title || '') + ' ' + (art.summary || '') + ' '
+          + (art.tags || []).join(' ')).toLowerCase();
+        return keywords.find((kw) => text.includes(kw.toLowerCase())) || null;
+      }
+
+      function matchesKeywords(art) {
+        return getMatchedKeyword(art) !== null;
+      }
+
+      // ── Analysis status ──
       function analysisStatus(art) {
         if (art.analysis_status) return art.analysis_status;
         const reason = art.score_reason || '';
@@ -1075,19 +2446,25 @@
           archiveIndex.forEach((fn) => {
             const opt = document.createElement('option');
             opt.value = 'archive/' + fn;
-            opt.textContent = '📂 ' + fn.replace('.json', '');
+            opt.textContent = fn.replace('.json', '');
             archiveSelect.appendChild(opt);
           });
-        } catch (e) {
+        } catch {
           console.log('No archive index found');
         }
       }
 
-      // ── Source Tabs（データから動的生成） ──
-      const SOURCE_ICONS = {
-        'Hacker News': '🟧', 'Zenn': '📘', 'Qiita': '🟢', 'Reddit': '🔴',
-        'はてなブックマーク': '🅱️', 'Publickey': '🔑', 'Dev.to': '👩‍💻',
-        'GitHub Blog': '🐙', 'arXiv cs.AI': '🎓',
+      // ── Source Tabs & Brand Colors ──
+      const SOURCE_COLORS = {
+        'Hacker News': '#ff6600',
+        'Zenn': '#3ea8ff',
+        'Qiita': '#55c500',
+        'Reddit': '#ff4500',
+        'はてなブックマーク': '#00a4de',
+        'Publickey': '#0ea5e9',
+        'Dev.to': '#6366f1',
+        'GitHub Blog': '#8b5cf6',
+        'arXiv cs.AI': '#b91c1c',
       };
 
       function buildSourceTabs(articles) {
@@ -1097,11 +2474,20 @@
           counts.set(src, (counts.get(src) || 0) + 1);
         });
         sourceTabs.textContent = '';
-        const makeTab = (label, source, count) => {
+        const makeTab = (label, source, count, color = null) => {
           const btn = document.createElement('button');
+          btn.type = 'button';
           btn.className = 'source-tab' + (source === currentSourceFilter ? ' active' : '');
           btn.dataset.source = source;
-          btn.textContent = label + ' ';
+          if (color) {
+            const dot = document.createElement('span');
+            dot.className = 'source-dot';
+            dot.style.setProperty('--src-color', color);
+            btn.appendChild(dot);
+          }
+          const lbl = document.createElement('span');
+          lbl.textContent = label;
+          btn.appendChild(lbl);
           const span = document.createElement('span');
           span.className = 'tab-count';
           span.textContent = count;
@@ -1114,12 +2500,11 @@
           });
           return btn;
         };
-        sourceTabs.appendChild(makeTab('📋 すべて', '', articles.length));
+        sourceTabs.appendChild(makeTab('すべて', '', articles.length));
         [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a)).forEach((src) => {
-          const icon = SOURCE_ICONS[src] || '📰';
-          sourceTabs.appendChild(makeTab(`${icon} ${src}`, src, counts.get(src)));
+          sourceTabs.appendChild(makeTab(src, src, counts.get(src), SOURCE_COLORS[src] || '#878681'));
         });
-        if (!counts.has(currentSourceFilter)) currentSourceFilter = '';
+        if (currentSourceFilter && !counts.has(currentSourceFilter)) currentSourceFilter = '';
       }
 
       // ── Category Select ──
@@ -1142,32 +2527,135 @@
         categorySelect.value = currentCategoryFilter;
       }
 
-      // ── Sorting ──
+      // ── Sorting & Search Parsing ──
       function publishedTime(art) {
         const t = Date.parse(art.published || '');
         return Number.isNaN(t) ? 0 : t;
       }
 
-      function sortArticles(list) {
+      function sortArticles(list, affinityProfile = null) {
         const sorted = [...list];
-        if (currentSort === 'date') {
-          sorted.sort((a, b) => publishedTime(b) - publishedTime(a));
+        if (currentSort === 'foryou') {
+          const prof = affinityProfile || buildAffinityProfile();
+          sorted.sort((a, b) =>
+            ((b.score || 0) + calcAffinityBonus(b, prof)) - ((a.score || 0) + calcAffinityBonus(a, prof))
+            || publishedTime(b) - publishedTime(a)
+          );
+        } else if (currentSort === 'date') {
+          sorted.sort((a, b) => publishedTime(b) - publishedTime(a) || (b.score || 0) - (a.score || 0));
         } else if (currentSort === 'source') {
           sorted.sort((a, b) => (a.source || '').localeCompare(b.source || '')
             || (b.score || 0) - (a.score || 0));
+        } else if (currentSort === 'hatena') {
+          sorted.sort((a, b) => (b.hatena_count || 0) - (a.hatena_count || 0)
+            || (b.score || 0) - (a.score || 0));
+        } else if (currentSort === 'hn') {
+          sorted.sort((a, b) => (b.hn_score || 0) - (a.hn_score || 0)
+            || (b.score || 0) - (a.score || 0));
         } else {
-          sorted.sort((a, b) => (b.score || 0) - (a.score || 0));
+          sorted.sort((a, b) => (b.score || 0) - (a.score || 0) || publishedTime(b) - publishedTime(a));
         }
         return sorted;
       }
 
-      // ── Render ──
+      function parseSearchQuery(raw) {
+        const tokens = String(raw || '').trim().split(/\s+/).filter(Boolean);
+        const include = [];
+        const exclude = [];
+        tokens.forEach((t) => {
+          if (t.startsWith('-') && t.length > 1) exclude.push(t.slice(1).toLowerCase());
+          else include.push(t.toLowerCase());
+        });
+        return { include, exclude };
+      }
+
+      function highlightEscapedText(escapedText, terms) {
+        if (!terms.length || !escapedText) return escapedText;
+        const safeTerms = terms
+          .map((t) => esc(t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+          .filter(Boolean);
+        if (!safeTerms.length) return escapedText;
+        const re = new RegExp(`(${safeTerms.join('|')})`, 'gi');
+        return escapedText.replace(re, '<mark class="hl">$1</mark>');
+      }
+
+      // ── Badge Counts & Reset State ──
       function currentDataset() {
         return ((globalSearchActive || favFilterActive) && globalArticles) ? globalArticles : allArticles;
       }
 
+      function updateFilterBadges() {
+        const ds = currentDataset();
+        const unreadCount = ds.filter((a) => !readUrls.has(a.url)).length;
+        $('#unreadCountBadge').textContent = unreadCount;
+        $('#favCountBadge').textContent = favorites.length;
+        const kwCount = keywords.length ? ds.filter((a) => matchesKeywords(a)).length : 0;
+        $('#kwCountBadge').textContent = kwCount;
+      }
+
+      function hasAnyActiveFilter() {
+        return Boolean(
+          currentSearch ||
+          currentTagFilter ||
+          currentSourceFilter ||
+          currentCategoryFilter ||
+          currentGroupFilter !== null ||
+          currentScoreThreshold > 0 ||
+          hotFilterActive ||
+          errorFilterActive ||
+          favFilterActive ||
+          unreadFilterActive ||
+          keywordFilterActive
+        );
+      }
+
+      function resetAllFilters() {
+        currentSearch = '';
+        searchInput.value = '';
+        searchClearBtn.classList.remove('visible');
+        searchKbd.style.display = '';
+        currentTagFilter = '';
+        activeTagFilter.classList.remove('visible');
+        currentSourceFilter = '';
+        currentCategoryFilter = '';
+        categorySelect.value = '';
+        currentGroupFilter = null;
+        activeGroupFilter.classList.remove('visible');
+        currentScoreThreshold = 0;
+        scoreFilterSelect.value = '0';
+        hotFilterActive = false;
+        errorFilterActive = false;
+        favFilterActive = false;
+        favFilterBtn.classList.remove('active');
+        unreadFilterActive = false;
+        unreadFilterBtn.classList.remove('active');
+        keywordFilterActive = false;
+        keywordFilterBtn.classList.remove('active');
+        if (!globalSearchActive) {
+          $('#statScopeWrap').style.display = 'none';
+        }
+        buildSourceTabs(currentDataset());
+        buildCategorySelect(currentDataset());
+        renderArticles();
+      }
+
+      // ── Render ──
       function renderArticles() {
-        let filtered = currentDataset();
+        const dataset = currentDataset();
+        let filtered = dataset;
+
+        // Calculate muted count before applying mute filter
+        const mutedCount = mutedTerms.length ? dataset.filter((a) => isMuted(a)).length : 0;
+        $('#statMuted').textContent = mutedCount;
+        $('#statPillMuted').style.display = mutedCount > 0 ? '' : 'none';
+        $('#statPillMuted').classList.toggle('active', showMutedActive);
+
+        if (mutedTerms.length && !showMutedActive) {
+          filtered = filtered.filter((a) => !isMuted(a));
+        }
+        if (hidePrevSeen) {
+          filtered = filtered.filter((a) => !a.is_prev_seen);
+        }
 
         if (currentSourceFilter) {
           filtered = filtered.filter((a) => a.source === currentSourceFilter);
@@ -1175,14 +2663,33 @@
         if (currentCategoryFilter) {
           filtered = filtered.filter((a) => (a.category || 'その他') === currentCategoryFilter);
         }
-        if (currentSearch) {
-          const q = currentSearch.toLowerCase();
-          filtered = filtered.filter((a) =>
-            (a.title || '').toLowerCase().includes(q) ||
-            (a.summary || '').toLowerCase().includes(q) ||
-            (a.tags || []).some((t) => String(t).toLowerCase().includes(q))
-          );
+        if (currentScoreThreshold > 0) {
+          filtered = filtered.filter((a) => (a.score || 0) >= currentScoreThreshold);
         }
+        if (hotFilterActive) {
+          filtered = filtered.filter((a) => Boolean(a.is_hot));
+        }
+        if (errorFilterActive) {
+          filtered = filtered.filter((a) => analysisStatus(a) !== 'ok');
+        }
+
+        const { include, exclude } = parseSearchQuery(currentSearch);
+        if (include.length || exclude.length) {
+          filtered = filtered.filter((a) => {
+            const haystack = [
+              a.title || '',
+              a.summary || '',
+              (a.tags || []).join(' '),
+              a.category || '',
+              a.source || '',
+              extractDomain(a.url),
+              getMemo(a.url),
+            ].join(' ').toLowerCase();
+            if (exclude.some((ex) => haystack.includes(ex))) return false;
+            return include.every((inc) => haystack.includes(inc));
+          });
+        }
+
         if (currentTagFilter) {
           filtered = filtered.filter((a) => (a.tags || []).some((t) => t === currentTagFilter));
         }
@@ -1199,24 +2706,62 @@
           filtered = filtered.filter((a) => matchesKeywords(a));
         }
 
-        filtered = sortArticles(filtered);
-        lastRendered = filtered;
+        const affinityProfile = currentSort === 'foryou' ? buildAffinityProfile() : null;
+        filtered = sortArticles(filtered, affinityProfile);
 
-        // Update stats
+        // Topic Thread Collapsing (B-3)
+        const threadChildrenMap = new Map();
+        if (topicCollapse && currentGroupFilter === null) {
+          const collapsedList = [];
+          const groupRepMap = new Map();
+          filtered.forEach((art) => {
+            const gid = art.topic_group;
+            if (gid != null && (art.topic_size || 0) > 1) {
+              if (!groupRepMap.has(gid)) {
+                groupRepMap.set(gid, art);
+                threadChildrenMap.set(gid, []);
+                collapsedList.push(art);
+              } else {
+                threadChildrenMap.get(gid).push(art);
+              }
+            } else {
+              collapsedList.push(art);
+            }
+          });
+          filtered = collapsedList;
+        }
+
+        lastRendered = filtered;
+        focusedCardIdx = -1;
+
+        // Update stats & interactive pills
         $('#statTotal').textContent = filtered.length;
         $('#statHot').textContent = filtered.filter((a) => a.is_hot).length;
         $('#statHighScore').textContent = filtered.filter((a) => (a.score || 0) >= 80).length;
-        $('#statErrors').textContent = filtered.filter((a) => analysisStatus(a) !== 'ok').length;
+        const errCount = dataset.filter((a) => analysisStatus(a) !== 'ok').length;
+        $('#statErrors').textContent = errCount;
+        $('#statPillErrors').style.display = errCount > 0 ? '' : 'none';
+
+        $('#statPillAll').classList.toggle('active', !hasAnyActiveFilter());
+        $('#statPillHot').classList.toggle('active', hotFilterActive);
+        $('#statPillHigh').classList.toggle('active', currentScoreThreshold === 80);
+        $('#statPillErrors').classList.toggle('active', errorFilterActive);
+        resetAllFiltersBtn.classList.toggle('visible', hasAnyActiveFilter());
+        updateFilterBadges();
 
         if (filtered.length === 0) {
           cardList.innerHTML = `
             <div class="state-msg">
-              <div class="icon">🔍</div>
+              <div class="state-icon">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+              </div>
               <div class="title">該当する記事がありません</div>
-              <div class="desc">検索条件やフィルタを変更してみてください</div>
+              <div class="desc">検索キーワードや絞り込み条件を変更してみてください</div>
             </div>`;
           return;
         }
+
+        const hlTerms = [...include];
 
         cardList.innerHTML = filtered.map((art, i) => {
           const score = art.score || 0;
@@ -1225,50 +2770,165 @@
           const hotClass = art.is_hot ? ' is-hot' : '';
           const status = analysisStatus(art);
           const errorClass = status === 'error' ? ' has-error' : '';
-          const readClass = readUrls.has(art.url) ? ' is-read' : '';
-          const kwMatch = matchesKeywords(art);
-          const kwClass = kwMatch ? ' keyword-match' : '';
-          const favClass = isFavorited(art.url) ? ' favorited' : '';
-          const summaryHtml = esc(art.summary || '')
-            .replace(/\\n/g, '<br>').replace(/\n/g, '<br>');
-          const tagsHtml = (art.tags || [])
-            .map((t, ti) => `<span class="tag" data-idx="${i}" data-tag-idx="${ti}">${esc(t)}</span>`)
+          const isRead = readUrls.has(art.url);
+          const readClass = isRead ? ' is-read' : '';
+          const matchedKw = getMatchedKeyword(art);
+          const kwClass = matchedKw ? ' keyword-match' : '';
+          const fav = isFavorited(art.url);
+          const favClass = fav ? ' favorited' : '';
+          const srcColor = SOURCE_COLORS[art.source] || '#878681';
+          const domain = extractDomain(art.url);
+          const isNewRun = Boolean(art.new_at && latestGeneratedAt && art.new_at === latestGeneratedAt);
+
+          const cardHlTerms = matchedKw ? [...new Set([...hlTerms, matchedKw])] : hlTerms;
+          const titleHtml = highlightEscapedText(esc(art.title || 'No Title'), cardHlTerms);
+
+          const summaryLines = String(art.summary || '')
+            .replace(/\\n/g, '\n')
+            .split('\n')
+            .map((l) => l.trim())
+            .filter(Boolean);
+          const summaryHtml = summaryLines
+            .map((line) => `<div class="summary-line">${highlightEscapedText(esc(line), cardHlTerms)}</div>`)
             .join('');
-          const reasonDisplay = status === 'error'
-            ? `<span class="score-reason">🔴 ${esc(art.score_reason)}</span>`
-            : art.score_reason ? `<span class="score-reason">💡 ${esc(art.score_reason)}</span>` : '';
+
+          const tagsHtml = (art.tags || [])
+            .map((t, ti) => {
+              const isAct = t === currentTagFilter ? ' active' : '';
+              return `<span class="tag${isAct}" data-idx="${i}" data-tag-idx="${ti}">${esc(t)}</span>`;
+            })
+            .join('');
+
+          const reasonHtml = art.score_reason
+            ? `<div class="score-reason-box">${esc(art.score_reason)}</div>`
+            : '';
+
+          const children = (art.topic_group != null && threadChildrenMap.get(art.topic_group)) || [];
           const groupBadge = (art.topic_size || 0) > 1
-            ? `<span class="group-badge" data-idx="${i}" title="同じ話題の記事を表示">🔗 関連 ${art.topic_size}件</span>`
+            ? `<span class="badge badge-group" data-idx="${i}" title="同じ話題の記事を絞り込む">関連 ${art.topic_size}件</span>`
             : '';
-          const dateLabel = publishedTime(art)
-            ? `<span class="date-label">🕐 ${new Date(publishedTime(art)).toLocaleDateString('ja-JP')}</span>`
+
+          const threadHtml = children.length > 0
+            ? `<div class="topic-thread-box">
+                <div class="topic-thread-head" data-thread-toggle="1">
+                  <span>同一トピックの関連記事 (${children.length}件) を表示</span>
+                  <span>▼</span>
+                </div>
+                <div class="topic-thread-list">
+                  ${children.map((c) => `
+                    <div class="topic-thread-item">
+                      <span class="thread-score">[${c.score || 0}]</span>
+                      <span class="thread-source">${esc(c.source || '')}</span>
+                      <a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener noreferrer" data-url="${esc(c.url || '')}" class="thread-link">${esc(c.title || '')}</a>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>`
             : '';
+
+          const pubTs = publishedTime(art);
+          const dateLabel = pubTs
+            ? `<span>${new Date(pubTs).toLocaleDateString('ja-JP')}</span>`
+            : '';
+
+          const hnBadge = art.hn_score != null
+            ? `<span class="hn-badge" title="Hacker News スコア / コメント数">HN ${Number(art.hn_score)} pts${art.hn_comments != null ? ` · ${Number(art.hn_comments)} comments` : ''}</span>`
+            : '';
+
+          const hatenaBadge = (art.hatena_count || 0) > 0
+            ? `<span class="hatena-badge" title="はてなブックマーク数">B! ${Number(art.hatena_count)}</span>`
+            : '';
+
+          const readingBadge = (art.reading_min || 0) > 0
+            ? `<span class="reading-badge" title="本文文字数から算出した推定読了時間">読了 約${Number(art.reading_min)}分</span>`
+            : '';
+
+          const affinityBonus = affinityProfile ? calcAffinityBonus(art, affinityProfile) : 0;
+          const forYouBadge = (currentSort === 'foryou' && affinityBonus >= 6)
+            ? `<span class="badge badge-foryou" title="あなたの閲覧・お気に入り傾向から +${affinityBonus}pt 加点">FOR YOU</span>`
+            : '';
+
+          const memoText = getMemo(art.url);
+          const isEditingMemo = Boolean(editingMemoUrl && art.url && editingMemoUrl === art.url);
+          const memoBoxHtml = memoText && !isEditingMemo
+            ? `<div class="card-memo-box">
+                <div><span class="card-memo-label">MEMO</span>${highlightEscapedText(esc(memoText), cardHlTerms)}</div>
+              </div>`
+            : '';
+          const memoEditorHtml = `
+            <div class="card-memo-editor${isEditingMemo ? ' visible' : ''}" data-memo-editor="${i}">
+              <input type="text" class="card-memo-input" data-memo-input="${i}" maxlength="300" placeholder="この記事への一言メモ（検索・MD出力にも反映）" value="${esc(memoText)}">
+              <button type="button" class="btn save-memo-btn" data-idx="${i}">保存</button>
+              ${memoText ? `<button type="button" class="btn delete-memo-btn" data-idx="${i}">削除</button>` : ''}
+              <button type="button" class="btn cancel-memo-btn" data-idx="${i}">閉じる</button>
+            </div>`;
+
           const categoryBadge = art.category
             ? `<span class="category-badge">${esc(art.category)}</span>` : '';
-          const delay = Math.min(i, 12) * 0.04;
+          const delay = Math.min(i, 12) * 0.025;
 
           return `
-            <article class="card ${cardClass}${hotClass}${errorClass}${readClass}${kwClass}" style="animation-delay: ${delay}s">
-              <div class="card-fav${favClass}" data-idx="${i}" title="お気に入り">
-                ${isFavorited(art.url) ? '★' : '☆'}
-              </div>
-              <div class="score-badge ${scoreClass}">${score}</div>
-              <div class="card-body">
-                <div class="card-title">
-                  ${art.is_hot ? '<span class="hot-badge">🔥 HOT</span>' : ''}
-                  ${status === 'error' ? '<span class="error-badge">⚠️ 解析エラー</span>' : ''}
-                  ${status === 'skipped' ? '<span class="skip-badge">⏭ 未解析</span>' : ''}
-                  ${kwMatch ? '<span class="keyword-badge">📌</span>' : ''}
-                  ${groupBadge}
-                  <a href="${esc(safeUrl(art.url))}" target="_blank" rel="noopener" data-idx="${i}" class="article-link">${esc(art.title || 'No Title')}</a>
+            <article class="card ${cardClass}${hotClass}${errorClass}${readClass}${kwClass}" data-card-idx="${i}" style="animation-delay: ${delay}s">
+              <div class="card-rail">
+                <div class="score-badge ${scoreClass}" title="AI重要度スコア">
+                  <span>${score}</span>
+                  <small>SCORE</small>
                 </div>
-                <div class="card-summary">${summaryHtml}</div>
-                <div class="card-meta">
+                <button type="button" class="card-fav${favClass}" data-idx="${i}" title="お気に入り (f)" aria-label="お気に入り">
+                  <svg class="icon-svg" viewBox="0 0 24 24">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="card-top-meta">
+                  <span class="source-pill">
+                    <span class="source-dot" style="--src-color:${srcColor}"></span>
+                    ${esc(art.source || '')}
+                  </span>
+                  ${domain ? `<span class="domain-label">${esc(domain)}</span>` : ''}
                   ${categoryBadge}
-                  ${tagsHtml}
-                  <span class="source-label">📰 ${esc(art.source || '')}</span>
                   ${dateLabel}
-                  ${reasonDisplay}
+                  ${readingBadge}
+                  ${hatenaBadge}
+                  ${hnBadge}
+                </div>
+
+                <div class="card-title-row">
+                  ${art.is_hot ? '<span class="badge badge-hot">HOT</span>' : ''}
+                  ${isNewRun && !art.is_prev_seen ? '<span class="badge badge-new-run" title="最新回の実行で新着">NEW</span>' : ''}
+                  ${art.is_prev_seen ? '<span class="badge badge-prev-seen" title="直近数日間のアーカイブに既出の記事">既出</span>' : ''}
+                  ${forYouBadge}
+                  ${status === 'error' ? '<span class="badge badge-error">解析エラー</span>' : ''}
+                  ${status === 'skipped' ? '<span class="badge badge-skip">未解析</span>' : ''}
+                  ${matchedKw ? `<span class="badge badge-kw">KW: ${esc(matchedKw)}</span>` : ''}
+                  ${groupBadge}
+                  <a href="${esc(safeUrl(art.url))}" target="_blank" rel="noopener noreferrer" data-idx="${i}" class="card-title article-link">${titleHtml}</a>
+                </div>
+
+                <div class="card-details">
+                  <div class="card-summary">${summaryHtml}</div>
+                  ${reasonHtml}
+                  ${memoBoxHtml}
+                  ${memoEditorHtml}
+                  ${threadHtml}
+                  <div class="card-footer">
+                    <div class="card-tags">${tagsHtml}</div>
+                    <div class="card-actions">
+                      <button type="button" class="card-action-btn edit-memo-btn${memoText ? ' has-memo' : ''}" data-idx="${i}" title="一言メモを追加・編集 (n)">
+                        ${memoText ? 'メモ編集' : 'メモ'}
+                      </button>
+                      <button type="button" class="card-action-btn toggle-read-btn" data-idx="${i}" title="既読/未読を切り替え (m)">
+                        ${isRead ? '未読に戻す' : '既読にする'}
+                      </button>
+                      <button type="button" class="card-action-btn copy-url-btn" data-idx="${i}" title="URLをコピー (c)">
+                        URLコピー
+                      </button>
+                      <button type="button" class="card-action-btn copy-md-btn" data-idx="${i}" title="タイトル・要約・URLをMarkdown形式でコピー (y)">
+                        MDコピー
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </article>`;
@@ -1276,7 +2936,8 @@
 
         // Tag click
         cardList.querySelectorAll('.tag').forEach((el) => {
-          el.addEventListener('click', () => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
             const art = lastRendered[+el.dataset.idx];
             const tag = (art?.tags || [])[+el.dataset.tagIdx];
             if (tag) setTagFilter(tag);
@@ -1284,7 +2945,8 @@
         });
         // Favorite click
         cardList.querySelectorAll('.card-fav').forEach((el) => {
-          el.addEventListener('click', () => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
             const art = lastRendered[+el.dataset.idx];
             if (!art) return;
             toggleFavorite(art.url);
@@ -1292,25 +2954,143 @@
           });
         });
         // Group badge click
-        cardList.querySelectorAll('.group-badge').forEach((el) => {
-          el.addEventListener('click', () => {
+        cardList.querySelectorAll('.badge-group').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
             const art = lastRendered[+el.dataset.idx];
             if (art?.topic_group != null) setGroupFilter(art.topic_group);
           });
         });
-        // Read tracking
+        // Topic thread toggle & link read tracking
+        cardList.querySelectorAll('[data-thread-toggle]').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            el.closest('.topic-thread-box')?.classList.toggle('open');
+          });
+        });
+        cardList.querySelectorAll('.thread-link').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (el.dataset.url) markRead(el.dataset.url);
+          });
+        });
+        // Read tracking on article link click
         cardList.querySelectorAll('.article-link').forEach((el) => {
-          el.addEventListener('click', () => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
             const art = lastRendered[+el.dataset.idx];
             if (!art) return;
             markRead(art.url);
-            setTimeout(renderArticles, 300);
+            setTimeout(renderArticles, 250);
+          });
+        });
+        // Manual Read/Unread toggle
+        cardList.querySelectorAll('.toggle-read-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const art = lastRendered[+el.dataset.idx];
+            if (!art) return;
+            toggleReadState(art.url);
+            renderArticles();
+          });
+        });
+        // Copy URL
+        cardList.querySelectorAll('.copy-url-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const art = lastRendered[+el.dataset.idx];
+            if (!art?.url) return;
+            if (navigator.clipboard) {
+              navigator.clipboard.writeText(art.url).then(() => showToast('URLをクリップボードにコピーしました'));
+            }
+          });
+        });
+        // Copy Markdown (B-4)
+        cardList.querySelectorAll('.copy-md-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const art = lastRendered[+el.dataset.idx];
+            if (!art || !navigator.clipboard) return;
+            navigator.clipboard.writeText(articleToMarkdown(art)).then(() =>
+              showToast('記事をMarkdown形式でコピーしました')
+            );
+          });
+        });
+        // Memo actions (A-3)
+        cardList.querySelectorAll('.edit-memo-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const art = lastRendered[+el.dataset.idx];
+            if (!art?.url) return;
+            editingMemoUrl = editingMemoUrl === art.url ? null : art.url;
+            renderArticles();
+            if (editingMemoUrl) {
+              const inp = cardList.querySelector(`[data-memo-input="${el.dataset.idx}"]`);
+              inp?.focus();
+            }
+          });
+        });
+        cardList.querySelectorAll('.save-memo-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const art = lastRendered[+el.dataset.idx];
+            const inp = cardList.querySelector(`[data-memo-input="${el.dataset.idx}"]`);
+            if (!art?.url || !inp) return;
+            setMemo(art.url, inp.value);
+            editingMemoUrl = null;
+            renderArticles();
+            showToast(getMemo(art.url) ? 'メモを保存しました' : 'メモを削除しました');
+          });
+        });
+        cardList.querySelectorAll('.delete-memo-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const art = lastRendered[+el.dataset.idx];
+            if (!art?.url) return;
+            setMemo(art.url, '');
+            editingMemoUrl = null;
+            renderArticles();
+            showToast('メモを削除しました');
+          });
+        });
+        cardList.querySelectorAll('.cancel-memo-btn').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            editingMemoUrl = null;
+            renderArticles();
+          });
+        });
+        cardList.querySelectorAll('.card-memo-input').forEach((inp) => {
+          inp.addEventListener('click', (e) => e.stopPropagation());
+          inp.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              const idx = inp.dataset.memoInput;
+              const art = lastRendered[+idx];
+              if (!art?.url) return;
+              setMemo(art.url, inp.value);
+              editingMemoUrl = null;
+              renderArticles();
+              showToast(getMemo(art.url) ? 'メモを保存しました' : 'メモを削除しました');
+            } else if (e.key === 'Escape') {
+              e.stopPropagation();
+              editingMemoUrl = null;
+              renderArticles();
+            }
+          });
+        });
+        // Compact mode card click to expand/collapse details
+        cardList.querySelectorAll('.card').forEach((cardEl) => {
+          cardEl.addEventListener('click', (e) => {
+            if (!cardList.classList.contains('compact')) return;
+            if (e.target.closest('a, button, input, .tag, .badge-group, .topic-thread-box, .card-memo-editor')) return;
+            cardEl.classList.toggle('expanded');
           });
         });
       }
 
       function setTagFilter(tag) {
-        if (currentTagFilter === tag) {
+        if (currentTagFilter === tag || !tag) {
           currentTagFilter = '';
           activeTagFilter.classList.remove('visible');
         } else {
@@ -1322,7 +3102,7 @@
       }
 
       function setGroupFilter(groupId) {
-        if (currentGroupFilter === groupId) {
+        if (currentGroupFilter === groupId || groupId === null) {
           currentGroupFilter = null;
           activeGroupFilter.classList.remove('visible');
         } else {
@@ -1332,17 +3112,18 @@
         renderArticles();
       }
 
-      // ── Keywords UI ──
+      // ── Keywords & Mute UI ──
       function renderKeywordChips() {
         const wrap = $('#keywordChips');
         wrap.textContent = '';
         keywords.forEach((kw, i) => {
           const chip = document.createElement('span');
           chip.className = 'keyword-chip';
-          chip.textContent = kw + ' ';
+          chip.textContent = kw;
           const x = document.createElement('span');
           x.className = 'remove-kw';
-          x.textContent = '✕';
+          x.textContent = '×';
+          x.title = '削除';
           x.addEventListener('click', () => {
             keywords.splice(i, 1);
             store.set('itinfohub_keywords', keywords);
@@ -1359,6 +3140,47 @@
           note.textContent = 'キーワード未登録';
           wrap.appendChild(note);
         }
+      }
+
+      function renderMuteChips() {
+        const wrap = $('#muteChips');
+        if (!wrap) return;
+        wrap.textContent = '';
+        mutedTerms.forEach((term, i) => {
+          const chip = document.createElement('span');
+          chip.className = 'keyword-chip muted-chip';
+          chip.textContent = term;
+          const x = document.createElement('span');
+          x.className = 'remove-kw';
+          x.textContent = '×';
+          x.title = '削除';
+          x.addEventListener('click', () => {
+            mutedTerms.splice(i, 1);
+            store.set('itinfohub_muted', mutedTerms);
+            renderMuteChips();
+            renderArticles();
+          });
+          chip.appendChild(x);
+          wrap.appendChild(chip);
+        });
+        if (!mutedTerms.length) {
+          const note = document.createElement('span');
+          note.className = 'panel-note';
+          note.textContent = 'ミュート語未登録';
+          wrap.appendChild(note);
+        }
+      }
+
+      function addMuteTerm() {
+        const input = $('#muteInput');
+        const term = input.value.trim();
+        if (!term || mutedTerms.includes(term) || mutedTerms.length >= 30) return;
+        mutedTerms.push(term);
+        store.set('itinfohub_muted', mutedTerms);
+        input.value = '';
+        renderMuteChips();
+        renderArticles();
+        showToast(`ミュート条件「${term}」を追加しました`);
       }
 
       function updateKeywordFilterBtn() {
@@ -1379,6 +3201,7 @@
         renderKeywordChips();
         updateKeywordFilterBtn();
         renderArticles();
+        showToast(`キーワード「${kw}」を追加しました`);
       }
 
       // ── Notifications (ローカル通知) ──
@@ -1390,14 +3213,16 @@
 
       async function toggleNotify() {
         if (!('Notification' in window)) {
-          alert('このブラウザは通知に対応していません');
+          showToast('このブラウザは通知機能に対応していません');
           return;
         }
         if (store.get('itinfohub_notify', false)) {
           store.set('itinfohub_notify', false);
+          showToast('新着通知をオフにしました');
         } else {
           const perm = await Notification.requestPermission();
           store.set('itinfohub_notify', perm === 'granted');
+          showToast(perm === 'granted' ? '新着高スコア通知をオンにしました' : '通知の権限が許可されませんでした');
         }
         updateNotifyBtn();
       }
@@ -1413,31 +3238,39 @@
           ? `${top.title}\nほか ${fresh.length - 1} 件の高スコア記事`
           : String(top.title || '');
         try {
-          new Notification('📡 IT Info Hub — 新着高スコア記事', { body });
-        } catch (e) { /* モバイル等では SW 経由が必要なため黙殺 */ }
+          new Notification('IT Info Hub — 新着高スコア記事', { body });
+        } catch { /* ignore on mobile where SW is required */ }
         fresh.forEach((a) => notifiedUrls.add(a.url));
         store.set('itinfohub_notified', [...notifiedUrls].slice(-500));
       }
 
-      // ── Export / Import (お気に入り等の移行) ──
+      // ── Export / Import ──
       function exportSettings() {
         const payload = {
-          favorites, keywords, read: [...readUrls],
+          favorites, keywords, muted: mutedTerms, memos: memoMap, read: [...readUrls],
           exported_at: new Date().toISOString(),
         };
         const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
-        const doCopy = () => navigator.clipboard.writeText(encoded)
-          .then(() => alert('設定コードをクリップボードにコピーしました。\n別ブラウザの「設定を読み込み」に貼り付けてください。'))
-          .catch(() => prompt('以下のコードをコピーしてください:', encoded));
-        if (navigator.clipboard) doCopy();
-        else prompt('以下のコードをコピーしてください:', encoded);
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(encoded)
+            .then(() => showToast('設定コードをクリップボードにコピーしました'))
+            .catch(() => {
+              $('#importBox').classList.add('visible');
+              $('#importCodeInput').value = encoded;
+              $('#importCodeInput').select();
+            });
+        } else {
+          $('#importBox').classList.add('visible');
+          $('#importCodeInput').value = encoded;
+          $('#importCodeInput').select();
+        }
       }
 
-      function importSettings() {
-        const code = prompt('「設定を書き出し」で取得したコードを貼り付けてください:');
+      function applyImportSettings() {
+        const code = $('#importCodeInput').value.trim();
         if (!code) return;
         try {
-          const payload = JSON.parse(decodeURIComponent(escape(atob(code.trim()))));
+          const payload = JSON.parse(decodeURIComponent(escape(atob(code))));
           if (Array.isArray(payload.favorites)) {
             favorites = [...new Set([...favorites, ...payload.favorites])];
             store.set('itinfohub_favorites', favorites);
@@ -1446,17 +3279,111 @@
             keywords = [...new Set([...keywords, ...payload.keywords])].slice(0, 20);
             store.set('itinfohub_keywords', keywords);
           }
+          if (Array.isArray(payload.muted)) {
+            mutedTerms = [...new Set([...mutedTerms, ...payload.muted])].slice(0, 30);
+            store.set('itinfohub_muted', mutedTerms);
+          }
+          if (payload.memos && typeof payload.memos === 'object' && !Array.isArray(payload.memos)) {
+            Object.entries(payload.memos).forEach(([u, txt]) => {
+              if (u && typeof txt === 'string' && txt.trim()) {
+                memoMap[u] = txt.trim().slice(0, 300);
+              }
+            });
+            store.set('itinfohub_memos', memoMap);
+          }
           if (Array.isArray(payload.read)) {
             readUrls = new Set([...readUrls, ...payload.read].slice(-3000));
             store.set('itinfohub_read', [...readUrls]);
           }
+          $('#importCodeInput').value = '';
+          $('#importBox').classList.remove('visible');
           renderKeywordChips();
+          renderMuteChips();
           updateKeywordFilterBtn();
           renderArticles();
-          alert('設定を読み込みました。');
-        } catch (e) {
-          alert('コードの形式が正しくありません。');
+          showToast('設定を読み込みました');
+        } catch {
+          showToast('設定コードの形式が正しくありません');
         }
+      }
+
+      // ── Daily Briefing (A-1) ──
+      function renderBriefing(data) {
+        const banner = $('#briefingBanner');
+        const articles = data?.articles || [];
+        let bf = data?.briefing;
+
+        // 旧スキーマのアーカイブや初回デプロイ前でも上位記事から要約ブリーフィングを構築
+        if ((!bf || !Array.isArray(bf.summary_lines) || !bf.summary_lines.length) && articles.length >= 3) {
+          const top = [...articles]
+            .filter((a) => analysisStatus(a) === 'ok')
+            .sort((a, b) => (b.score || 0) - (a.score || 0))
+            .slice(0, 8);
+          if (top.length >= 3) {
+            const genDate = data?.generated_at ? new Date(data.generated_at) : new Date();
+            const jstHour = new Date(genDate.getTime() + 9 * 3600 * 1000).getUTCHours();
+            const freq = new Map();
+            top.forEach((a) => (a.tags || []).forEach((t) => {
+              const k = String(t).trim();
+              if (k) freq.set(k, (freq.get(k) || 0) + 1);
+            }));
+            bf = {
+              edition: jstHour < 12 ? '朝刊' : '夕刊',
+              summary_lines: top.slice(0, 3).map(
+                (a) => `${a.title || ''}（${a.source || ''}・スコア ${a.score || 0}）`
+              ),
+              focus_tags: [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5).map(([k]) => k),
+            };
+          }
+        }
+
+        if (!bf || !Array.isArray(bf.summary_lines) || !bf.summary_lines.length) {
+          banner.classList.remove('visible');
+          return;
+        }
+
+        $('#briefingEdition').textContent = bf.edition || '最新号';
+        const linesWrap = $('#briefingLines');
+        linesWrap.textContent = '';
+        bf.summary_lines.slice(0, 3).forEach((line) => {
+          const div = document.createElement('div');
+          div.className = 'briefing-line';
+          div.textContent = line;
+          linesWrap.appendChild(div);
+        });
+
+        const tagsWrap = $('#briefingTags');
+        tagsWrap.textContent = '';
+        const tags = Array.isArray(bf.focus_tags) ? bf.focus_tags.filter(Boolean).slice(0, 6) : [];
+        if (tags.length) {
+          const lbl = document.createElement('span');
+          lbl.className = 'briefing-tags-label';
+          lbl.textContent = '注目トピック:';
+          tagsWrap.appendChild(lbl);
+          tags.forEach((tag) => {
+            const chip = document.createElement('button');
+            chip.type = 'button';
+            chip.className = 'briefing-tag';
+            chip.textContent = tag;
+            chip.addEventListener('click', () => {
+              const hasExactTag = allArticles.some((a) => (a.tags || []).includes(tag));
+              if (hasExactTag) {
+                setTagFilter(tag);
+              } else {
+                currentSearch = tag;
+                searchInput.value = tag;
+                searchClearBtn.classList.add('visible');
+                searchKbd.style.display = 'none';
+                renderArticles();
+              }
+              showToast(`トピック「${tag}」で絞り込みました`);
+            });
+            tagsWrap.appendChild(chip);
+          });
+        }
+
+        banner.classList.toggle('open', Boolean(briefingOpen));
+        banner.classList.add('visible');
       }
 
       // ── Weekly Digest ──
@@ -1468,7 +3395,7 @@
             && Date.now() - generated > 8 * 24 * 3600 * 1000) return;
 
         $('#digestTitle').textContent =
-          `📅 週間ダイジェスト（${digest.week_start} 〜 ${digest.week_end}）`;
+          `週間ダイジェスト（${digest.week_start} 〜 ${digest.week_end}）`;
         $('#digestOverview').textContent = digest.overview;
 
         const trendsWrap = $('#digestTrends');
@@ -1482,18 +3409,25 @@
 
         const hlWrap = $('#digestHighlights');
         hlWrap.textContent = '';
-        (digest.highlights || []).forEach((h) => {
+        (digest.highlights || []).forEach((h, idx) => {
           const div = document.createElement('div');
           div.className = 'digest-highlight';
+          const head = document.createElement('div');
+          head.className = 'digest-highlight-head';
+          const num = document.createElement('span');
+          num.className = 'digest-hl-num';
+          num.textContent = String(idx + 1).padStart(2, '0');
           const a = document.createElement('a');
           a.href = safeUrl(h.url);
           a.target = '_blank';
-          a.rel = 'noopener';
-          a.textContent = '🌟 ' + (h.title || '');
+          a.rel = 'noopener noreferrer';
+          a.textContent = h.title || '';
+          head.appendChild(num);
+          head.appendChild(a);
           const comment = document.createElement('div');
           comment.className = 'hl-comment';
           comment.textContent = h.comment || '';
-          div.appendChild(a);
+          div.appendChild(head);
           div.appendChild(comment);
           hlWrap.appendChild(div);
         });
@@ -1501,15 +3435,34 @@
         $('#digestBanner').classList.add('visible');
       }
 
-      // ── Global (all-archive) search ──
+      // ── Global (all-archive) search (B-1: single index file with fallback) ──
       async function ensureGlobalArticles() {
         $('#statScopeWrap').style.display = '';
         if (globalArticles) return;
-        $('#statScope').textContent = '全期間データを読み込み中…';
+        $('#statScope').textContent = '全期間インデックスを読み込み中…';
+
+        // Try unified lightweight index first (1 request instead of N archive requests)
+        const idxData = await fetchData('archive/search_index.json');
+        if (idxData && Array.isArray(idxData.articles)) {
+          const seen = new Set();
+          const merged = [];
+          [...allArticles, ...idxData.articles].forEach((a) => {
+            const key = (a.url || '').toLowerCase();
+            if (!key || !seen.has(key)) {
+              seen.add(key);
+              merged.push(a);
+            }
+          });
+          globalArticles = merged;
+          const daysCount = idxData.days_count || idxData.days || archiveIndex.length;
+          $('#statScope').textContent = `全期間 ${daysCount} 日分 (${merged.length}件)`;
+          return;
+        }
+
+        // Fallback: fetch each archive file
         const results = await Promise.all(archiveIndex.map((fn) => fetchArchive(fn)));
         const seen = new Set();
         const merged = [];
-        // 未アーカイブの最新データも含める（URL で重複排除）
         [{ articles: allArticles }, ...results].forEach((data) => {
           (data?.articles || []).forEach((a) => {
             const key = (a.url || '').toLowerCase();
@@ -1520,7 +3473,7 @@
           });
         });
         globalArticles = merged;
-        $('#statScope').textContent = `全期間 ${archiveIndex.length} 日分`;
+        $('#statScope').textContent = `全期間 ${archiveIndex.length} 日分 (${merged.length}件)`;
       }
 
       async function toggleGlobalSearch() {
@@ -1539,7 +3492,7 @@
       }
 
       // ══════════════════════════════════════════════════════════
-      //  Trend Dashboard (SVG charts)
+      //  Trend Dashboard (Interactive SVG charts)
       // ══════════════════════════════════════════════════════════
       const SVG_NS = 'http://www.w3.org/2000/svg';
       let trendData = null;
@@ -1557,16 +3510,15 @@
       function showTooltip(x, y, text) {
         vizTooltip.textContent = text;
         vizTooltip.style.display = 'block';
-        vizTooltip.style.left = Math.min(x + 12, window.innerWidth - 180) + 'px';
+        vizTooltip.style.left = Math.min(x + 12, window.innerWidth - 200) + 'px';
         vizTooltip.style.top = (y - 34) + 'px';
       }
       function hideTooltip() { vizTooltip.style.display = 'none'; }
 
-      // 横棒グラフ: マーク≤24px・4px丸めデータ端・値はバー先端に表示
-      function renderHBarChart(container, rows, colorVar) {
+      function renderHBarChart(container, rows, colorVar, onClickRow = null) {
         container.textContent = '';
         if (!rows.length) return;
-        const W = 560, rowH = 28, barH = 16, labelW = 150, valueW = 46;
+        const W = 560, rowH = 28, barH = 16, labelW = 150, valueW = 54;
         const H = rows.length * rowH + 8;
         const maxV = Math.max(...rows.map((r) => r.value)) || 1;
         const chartW = W - labelW - valueW - 12;
@@ -1576,34 +3528,42 @@
         rows.forEach((r, i) => {
           const y = i * rowH + 6;
           const w = Math.max((r.value / maxV) * chartW, 2);
+          const g = svgEl('g', { class: onClickRow ? 'trend-bar-row' : '' });
+
           const label = svgEl('text', {
             x: labelW - 8, y: y + barH / 2 + 4, 'text-anchor': 'end',
             'font-size': '11', fill: vizVar('--viz-ink-2'),
           });
           label.textContent = r.label.length > 14 ? r.label.slice(0, 13) + '…' : r.label;
-          svg.appendChild(label);
+          g.appendChild(label);
 
           const rr = 4;
-          // データ端のみ4px丸め・ベースライン側は直角
           const path = svgEl('path', {
             d: `M ${labelW} ${y} h ${Math.max(w - rr, 0)} q ${rr} 0 ${rr} ${rr} `
               + `v ${barH - 2 * rr} q 0 ${rr} ${-rr} ${rr} h ${-Math.max(w - rr, 0)} Z`,
             fill: color,
           });
-          path.addEventListener('mousemove', (e) =>
-            showTooltip(e.clientX, e.clientY, `${r.label}: ${r.display ?? r.value}`));
-          path.addEventListener('mouseleave', hideTooltip);
-          svg.appendChild(path);
+          g.appendChild(path);
 
           const val = svgEl('text', {
             x: labelW + w + 6, y: y + barH / 2 + 4,
             'font-size': '11', fill: vizVar('--viz-ink-2'),
           });
           val.textContent = r.display ?? r.value;
-          svg.appendChild(val);
+          g.appendChild(val);
+
+          g.addEventListener('mousemove', (e) =>
+            showTooltip(e.clientX, e.clientY, `${r.label}: ${r.display ?? r.value}`));
+          g.addEventListener('mouseleave', hideTooltip);
+          if (onClickRow) {
+            g.addEventListener('click', () => {
+              hideTooltip();
+              onClickRow(r.label);
+            });
+          }
+          svg.appendChild(g);
         });
 
-        // ベースライン
         svg.appendChild(svgEl('line', {
           x1: labelW, y1: 0, x2: labelW, y2: H,
           stroke: vizVar('--viz-axis'), 'stroke-width': 1,
@@ -1611,11 +3571,10 @@
         container.appendChild(svg);
       }
 
-      // 折れ線グラフ: 2px線 + 10%ウォッシュ + 終端ドット（サーフェスリング付き）
       function renderLineChart(container, points, colorVar) {
         container.textContent = '';
         if (points.length < 2) return;
-        const W = 900, H = 220, padL = 40, padR = 60, padT = 14, padB = 28;
+        const W = 900, H = 210, padL = 40, padR = 60, padT = 14, padB = 28;
         const chartW = W - padL - padR, chartH = H - padT - padB;
         const maxV = Math.max(...points.map((p) => p.value));
         const yMax = Math.max(Math.ceil(maxV / 10) * 10, 10);
@@ -1624,7 +3583,6 @@
         const yAt = (v) => padT + chartH - (v / yMax) * chartH;
         const svg = svgEl('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img' });
 
-        // ヘアライングリッド + Y軸ラベル
         [0, 0.5, 1].forEach((f) => {
           const v = yMax * f;
           const y = yAt(v);
@@ -1641,7 +3599,6 @@
           svg.appendChild(lbl);
         });
 
-        // X軸ラベル（先頭・中間・末尾のみ）
         [0, Math.floor((points.length - 1) / 2), points.length - 1].forEach((i) => {
           const lbl = svgEl('text', {
             x: xAt(i), y: H - 8, 'text-anchor': 'middle',
@@ -1653,7 +3610,6 @@
 
         const lineD = points.map((p, i) =>
           `${i === 0 ? 'M' : 'L'} ${xAt(i).toFixed(1)} ${yAt(p.value).toFixed(1)}`).join(' ');
-        // エリアウォッシュ (~10%)
         svg.appendChild(svgEl('path', {
           d: `${lineD} L ${xAt(points.length - 1)} ${yAt(0)} L ${xAt(0)} ${yAt(0)} Z`,
           fill: color, opacity: 0.1,
@@ -1663,10 +3619,9 @@
           'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round',
         }));
 
-        // 終端ドット（2pxサーフェスリング）+ 終端値ラベル
         const last = points.length - 1;
         svg.appendChild(svgEl('circle', {
-          cx: xAt(last), cy: yAt(points[last].value), r: 5.5,
+          cx: xAt(last), cy: yAt(points[last].value), r: 5,
           fill: color, stroke: vizVar('--viz-surface'), 'stroke-width': 2,
         }));
         const endLbl = svgEl('text', {
@@ -1676,7 +3631,6 @@
         endLbl.textContent = points[last].value;
         svg.appendChild(endLbl);
 
-        // ホバー: 最近傍ポイントをツールチップ表示
         const hoverDot = svgEl('circle', {
           r: 5, fill: color, stroke: vizVar('--viz-surface'),
           'stroke-width': 2, style: 'display:none',
@@ -1704,14 +3658,15 @@
       }
 
       async function loadTrendData() {
-        const files = archiveIndex.slice(0, 30).reverse(); // 古い→新しい
+        const files = archiveIndex.slice(0, 30).reverse();
         const results = await Promise.all(files.map((fn) => fetchArchive(fn)));
         const daily = [];
         const tagCounts = new Map();
         const sourceStats = new Map();
+        const catCounts = new Map();
         results.forEach((data, i) => {
           if (!data) return;
-          const date = files[i].replace('.json', '').slice(5); // MM-DD
+          const date = files[i].replace('.json', '').slice(5);
           const articles = data.articles || [];
           daily.push({ label: date, value: articles.length });
           articles.forEach((a) => {
@@ -1724,6 +3679,9 @@
             s.sum += a.score || 0;
             s.n += 1;
             sourceStats.set(src, s);
+
+            const cat = a.category || 'その他';
+            catCounts.set(cat, (catCounts.get(cat) || 0) + 1);
           });
         });
         const topTags = [...tagCounts.entries()]
@@ -1735,14 +3693,31 @@
             display: (s.sum / s.n).toFixed(1),
           }))
           .sort((a, b) => b.value - a.value);
-        return { daily, topTags, sources };
+        const categories = [...catCounts.entries()]
+          .sort((a, b) => b[1] - a[1])
+          .map(([label, value]) => ({ label, value, display: `${value}件` }));
+        return { daily, topTags, sources, categories };
       }
 
       function renderTrendCharts() {
         if (!trendData) return;
         renderLineChart($('#chartDaily'), trendData.daily, '--viz-series-1');
-        renderHBarChart($('#chartTags'), trendData.topTags, '--viz-series-1');
-        renderHBarChart($('#chartSources'), trendData.sources, '--viz-series-2');
+        renderHBarChart($('#chartTags'), trendData.topTags, '--viz-series-1', (tag) => {
+          setTagFilter(tag);
+          showToast(`タグ「${tag}」で絞り込みました`);
+        });
+        renderHBarChart($('#chartSources'), trendData.sources, '--viz-series-2', (src) => {
+          currentSourceFilter = src;
+          buildSourceTabs(currentDataset());
+          renderArticles();
+          showToast(`ソース「${src}」で絞り込みました`);
+        });
+        renderHBarChart($('#chartCategories'), trendData.categories, '--viz-series-3', (cat) => {
+          currentCategoryFilter = cat;
+          categorySelect.value = cat;
+          renderArticles();
+          showToast(`カテゴリ「${cat}」で絞り込みました`);
+        });
       }
 
       async function toggleTrendPanel() {
@@ -1753,7 +3728,7 @@
           $('#trendLoading').style.display = '';
           try {
             trendData = await loadTrendData();
-          } catch (e) {
+          } catch {
             $('#trendLoading').textContent = 'アーカイブの読み込みに失敗しました';
             return;
           }
@@ -1763,12 +3738,138 @@
         renderTrendCharts();
       }
 
+      // ── Keyboard Navigation ──
+      function updateCardFocus(nextIdx) {
+        const cards = cardList.querySelectorAll('.card');
+        if (!cards.length) return;
+        focusedCardIdx = Math.max(0, Math.min(cards.length - 1, nextIdx));
+        cards.forEach((c, i) => c.classList.toggle('kb-focus', i === focusedCardIdx));
+        cards[focusedCardIdx].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        const activeTag = document.activeElement?.tagName;
+        const inInput = activeTag === 'INPUT' || activeTag === 'TEXTAREA' || activeTag === 'SELECT';
+
+        if (e.key === 'Escape') {
+          if (shortcutModal.classList.contains('visible')) {
+            shortcutModal.classList.remove('visible');
+            return;
+          }
+          if (inInput) {
+            document.activeElement.blur();
+            return;
+          }
+          if (settingsPanel.classList.contains('visible')) {
+            settingsPanel.classList.remove('visible');
+            $('#settingsBtn').classList.remove('active');
+            return;
+          }
+          if (trendPanel.classList.contains('visible')) {
+            trendPanel.classList.remove('visible');
+            $('#trendBtn').classList.remove('active');
+            return;
+          }
+          if (focusedCardIdx !== -1) {
+            cardList.querySelectorAll('.card').forEach((c) => c.classList.remove('kb-focus'));
+            focusedCardIdx = -1;
+          }
+          return;
+        }
+
+        if (inInput) return;
+
+        if (e.key === '/') {
+          e.preventDefault();
+          searchInput.focus();
+          searchInput.select();
+        } else if (e.key === '?') {
+          e.preventDefault();
+          shortcutModal.classList.toggle('visible');
+        } else if (e.key === 'j' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          updateCardFocus(focusedCardIdx + 1);
+        } else if (e.key === 'k' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          updateCardFocus(focusedCardIdx <= 0 ? 0 : focusedCardIdx - 1);
+        } else if ((e.key === 'o' || e.key === 'Enter') && focusedCardIdx >= 0) {
+          e.preventDefault();
+          const art = lastRendered[focusedCardIdx];
+          if (art?.url) {
+            markRead(art.url);
+            window.open(safeUrl(art.url), '_blank', 'noopener,noreferrer');
+            renderArticles();
+            updateCardFocus(focusedCardIdx);
+          }
+        } else if (e.key === 'f' && focusedCardIdx >= 0) {
+          e.preventDefault();
+          const art = lastRendered[focusedCardIdx];
+          if (art) {
+            const keepIdx = focusedCardIdx;
+            toggleFavorite(art.url);
+            renderArticles();
+            updateCardFocus(keepIdx);
+          }
+        } else if (e.key === 'm' && focusedCardIdx >= 0) {
+          e.preventDefault();
+          const art = lastRendered[focusedCardIdx];
+          if (art) {
+            const keepIdx = focusedCardIdx;
+            toggleReadState(art.url);
+            renderArticles();
+            updateCardFocus(keepIdx);
+          }
+        } else if (e.key === 'c' && focusedCardIdx >= 0) {
+          e.preventDefault();
+          const art = lastRendered[focusedCardIdx];
+          if (art?.url && navigator.clipboard) {
+            navigator.clipboard.writeText(art.url).then(() => showToast('URLをコピーしました'));
+          }
+        } else if (e.key === 'y' && focusedCardIdx >= 0) {
+          e.preventDefault();
+          const art = lastRendered[focusedCardIdx];
+          if (art && navigator.clipboard) {
+            navigator.clipboard.writeText(articleToMarkdown(art)).then(() => showToast('Markdown形式でコピーしました'));
+          }
+        } else if (e.key === 'n' && focusedCardIdx >= 0) {
+          e.preventDefault();
+          const art = lastRendered[focusedCardIdx];
+          if (art?.url) {
+            const keepIdx = focusedCardIdx;
+            editingMemoUrl = art.url;
+            if (cardList.classList.contains('compact')) {
+              viewDensity = 'standard';
+              applyDensityUI();
+            }
+            renderArticles();
+            updateCardFocus(keepIdx);
+            const inp = cardList.querySelector(`[data-memo-input="${keepIdx}"]`);
+            inp?.focus();
+          }
+        } else if (e.key === 'x' && focusedCardIdx >= 0) {
+          e.preventDefault();
+          const cards = cardList.querySelectorAll('.card');
+          cards[focusedCardIdx]?.classList.toggle('expanded');
+        } else if (e.key === 'u') {
+          e.preventDefault();
+          unreadFilterBtn.click();
+        } else if (e.key === 'v') {
+          e.preventDefault();
+          toggleDensity();
+        } else if (e.key === 'd') {
+          e.preventDefault();
+          toggleTheme();
+        }
+      });
+
       // ── Data application ──
       function applyData(data) {
         allArticles = data.articles || [];
+        latestGeneratedAt = data.generated_at || '';
         $('#statTime').textContent = data.generated_at
           ? new Date(data.generated_at).toLocaleString('ja-JP')
           : '—';
+        renderBriefing(data);
         buildSourceTabs(allArticles);
         buildCategorySelect(allArticles);
         renderArticles();
@@ -1777,7 +3878,11 @@
       // ── Init ──
       async function init() {
         initTheme();
+        applyDensityUI();
+        applyTopicCollapseUI();
+        applyHidePrevSeenUI();
         renderKeywordChips();
+        renderMuteChips();
         updateKeywordFilterBtn();
         updateNotifyBtn();
         await loadArchiveIndex();
@@ -1786,7 +3891,9 @@
         if (!data) {
           cardList.innerHTML = `
             <div class="state-msg">
-              <div class="icon">⚠️</div>
+              <div class="state-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
               <div class="title">データの読み込みに失敗しました</div>
               <div class="desc">data.json が見つかりません。GitHub Actionsが正常に実行されていることを確認してください。</div>
             </div>`;
@@ -1799,9 +3906,26 @@
 
       // ── Event Listeners ──
       themeToggle.addEventListener('click', toggleTheme);
+      $('#topicCollapseBtn').addEventListener('click', toggleTopicCollapse);
+      $('#hidePrevSeenBtn').addEventListener('click', toggleHidePrevSeen);
+      $('#densityBtn').addEventListener('click', toggleDensity);
+      $('#markVisibleReadBtn').addEventListener('click', markVisibleAsRead);
+      $('#exportMdBtn').addEventListener('click', exportVisibleToMarkdown);
+      resetAllFiltersBtn.addEventListener('click', resetAllFilters);
 
       searchInput.addEventListener('input', (e) => {
         currentSearch = e.target.value.trim();
+        searchClearBtn.classList.toggle('visible', currentSearch.length > 0);
+        searchKbd.style.display = currentSearch.length > 0 ? 'none' : '';
+        renderArticles();
+      });
+
+      searchClearBtn.addEventListener('click', () => {
+        currentSearch = '';
+        searchInput.value = '';
+        searchClearBtn.classList.remove('visible');
+        searchKbd.style.display = '';
+        searchInput.focus();
         renderArticles();
       });
 
@@ -1820,7 +3944,6 @@
         favFilterActive = !favFilterActive;
         favFilterBtn.classList.toggle('active', favFilterActive);
         if (favFilterActive) {
-          // お気に入りは日付をまたいで全期間から表示する
           await ensureGlobalArticles();
           buildSourceTabs(currentDataset());
           buildCategorySelect(currentDataset());
@@ -1856,8 +3979,34 @@
         renderArticles();
       });
 
-      $('#clearTagBtn').addEventListener('click', () => setTagFilter(currentTagFilter));
-      $('#clearGroupBtn').addEventListener('click', () => setGroupFilter(currentGroupFilter));
+      scoreFilterSelect.addEventListener('change', (e) => {
+        currentScoreThreshold = Number(e.target.value) || 0;
+        renderArticles();
+      });
+
+      // Interactive Stats Bar Pills
+      $('#statPillAll').addEventListener('click', resetAllFilters);
+      $('#statPillHot').addEventListener('click', () => {
+        hotFilterActive = !hotFilterActive;
+        renderArticles();
+      });
+      $('#statPillHigh').addEventListener('click', () => {
+        currentScoreThreshold = currentScoreThreshold === 80 ? 0 : 80;
+        scoreFilterSelect.value = String(currentScoreThreshold);
+        renderArticles();
+      });
+      $('#statPillErrors').addEventListener('click', () => {
+        errorFilterActive = !errorFilterActive;
+        renderArticles();
+      });
+      $('#statPillMuted').addEventListener('click', () => {
+        showMutedActive = !showMutedActive;
+        renderArticles();
+        showToast(showMutedActive ? 'ミュート対象記事を一時的に表示しています' : 'ミュート対象記事を非表示にしました');
+      });
+
+      $('#clearTagBtn').addEventListener('click', () => setTagFilter(''));
+      $('#clearGroupBtn').addEventListener('click', () => setGroupFilter(null));
 
       $('#settingsBtn').addEventListener('click', () => {
         const visible = settingsPanel.classList.toggle('visible');
@@ -1868,26 +4017,51 @@
       $('#keywordInput').addEventListener('keydown', (e) => {
         if (e.key === 'Enter') addKeyword();
       });
+      $('#addMuteBtn').addEventListener('click', addMuteTerm);
+      $('#muteInput').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') addMuteTerm();
+      });
       $('#notifyBtn').addEventListener('click', toggleNotify);
       $('#exportBtn').addEventListener('click', exportSettings);
-      $('#importBtn').addEventListener('click', importSettings);
-      $('#digestHeader').addEventListener('click', () => {
-        const banner = $('#digestBanner');
-        banner.classList.toggle('open');
-        $('#digestToggleIcon').textContent = banner.classList.contains('open') ? '▲' : '▼';
+      $('#importBtn').addEventListener('click', () => {
+        $('#importBox').classList.toggle('visible');
+      });
+      $('#applyImportBtn').addEventListener('click', applyImportSettings);
+      $('#cancelImportBtn').addEventListener('click', () => {
+        $('#importBox').classList.remove('visible');
       });
 
-      // OS theme change listener
+      $('#briefingHeader').addEventListener('click', () => {
+        const isOpen = $('#briefingBanner').classList.toggle('open');
+        briefingOpen = isOpen;
+        store.set('itinfohub_briefing_open', isOpen);
+      });
+
+      $('#digestHeader').addEventListener('click', () => {
+        $('#digestBanner').classList.toggle('open');
+      });
+
+      $('#shortcutHelpBtn').addEventListener('click', () => {
+        shortcutModal.classList.add('visible');
+      });
+      $('#closeShortcutModalBtn').addEventListener('click', () => {
+        shortcutModal.classList.remove('visible');
+      });
+      shortcutModal.addEventListener('click', (e) => {
+        if (e.target === shortcutModal) shortcutModal.classList.remove('visible');
+      });
+
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!localStorage.getItem('itinfohub_theme')) {
-          document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
-          updateThemeIcon();
-        }
+        try {
+          if (!localStorage.getItem('itinfohub_theme')) {
+            document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+            updateThemeIcon();
+          }
+        } catch { /* ignore */ }
       });
 
       init();
 
-      // ── Service Worker Registration ──
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js').catch((err) =>
           console.log('SW registration failed:', err)

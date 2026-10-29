@@ -24,7 +24,9 @@ import os
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
+from email.utils import format_datetime
 
 import feedparser
 import requests
@@ -41,6 +43,7 @@ from gather import (
     normalize_url,
     parse_published,
     wait_until_notify_time,
+    xml_escape,
 )
 
 
@@ -65,6 +68,8 @@ GADGET_NOTIFY_MAX = 3
 GADGET_NOTIFY_SCORE = 60
 
 GADGET_FILE = "gadgets.json"
+GADGET_FEED_FILE = "gadget_feed.xml"
+GADGET_FEED_TOP_N = 20
 GADGET_PAGE_URL = SITE_URL + "gadget.html"
 
 GADGET_CATEGORIES = [
@@ -78,6 +83,27 @@ GADGET_CATEGORIES = [
     "スマートホーム",
     "その他",
 ]
+
+GADGET_ANALYSIS_SCHEMA = {
+    "type": "ARRAY",
+    "items": {
+        "type": "OBJECT",
+        "properties": {
+            "id": {"type": "INTEGER"},
+            "title": {"type": "STRING"},
+            "summary": {"type": "STRING"},
+            "product_name": {"type": "STRING", "nullable": True},
+            "brand": {"type": "STRING", "nullable": True},
+            "category": {"type": "STRING", "enum": GADGET_CATEGORIES},
+            "is_new_product": {"type": "BOOLEAN"},
+            "price": {"type": "STRING", "nullable": True},
+            "release_date": {"type": "STRING", "nullable": True},
+            "score": {"type": "INTEGER"},
+            "score_reason": {"type": "STRING"},
+        },
+        "required": ["id", "title", "summary", "category", "is_new_product", "score", "score_reason"],
+    },
+}
 
 
 # ---------------------------------------------------------------------------
@@ -94,36 +120,50 @@ def is_recent(published: str, now: datetime, hours: int = GADGET_MAX_AGE_HOURS) 
     return now - dt <= timedelta(hours=hours)
 
 
-def fetch_gadget_feeds(now: datetime | None = None) -> list[dict]:
-    """ガジェット系 RSS から公開48時間以内の記事を取得"""
-    now = now or datetime.now(timezone.utc)
-    articles = []
-    for source_name, feed_url in GADGET_FEEDS.items():
-        print(f"[INFO] Fetching gadget RSS: {source_name} ...")
-        try:
-            feed = feedparser.parse(
-                feed_url, agent="IT-Info-Collector/1.0 (GitHub Actions Bot)"
-            )
-            if feed.bozo and not feed.entries:
-                print(f"[WARN] RSS feed error ({source_name}): {feed.bozo_exception}")
-                continue
+def _fetch_one_gadget_feed(item: tuple[str, str], now: datetime) -> list[dict]:
+    """1つのガジェット系 RSS から公開48時間以内の記事を取得"""
+    source_name, feed_url = item
+    print(f"[INFO] Fetching gadget RSS: {source_name} ...")
+    fetched: list[dict] = []
+    try:
+        feed = feedparser.parse(
+            feed_url, agent="IT-Info-Collector/1.0 (GitHub Actions Bot)"
+        )
+        if feed.bozo and not feed.entries:
+            print(f"[WARN] RSS feed error ({source_name}): {feed.bozo_exception}")
+            return fetched
 
-            count = 0
-            for entry in feed.entries[:GADGET_FETCH_PER_FEED]:
-                published = parse_published(entry)
-                if not is_recent(published, now):
-                    continue
-                title = re.sub(r"<[^>]+>", "", str(entry.get("title", ""))).strip()
-                articles.append({
-                    "title": title,
-                    "url": entry.get("link", ""),
-                    "source": source_name,
-                    "published": published,
-                })
-                count += 1
-            print(f"[INFO] {source_name}: {count} recent articles")
-        except Exception as e:
-            print(f"[ERROR] RSS fetch failed ({source_name}): {e}")
+        count = 0
+        for entry in feed.entries[:GADGET_FETCH_PER_FEED]:
+            published = parse_published(entry)
+            if not is_recent(published, now):
+                continue
+            title = re.sub(r"<[^>]+>", "", str(entry.get("title", ""))).strip()
+            fetched.append({
+                "title": title,
+                "url": entry.get("link", ""),
+                "source": source_name,
+                "published": published,
+            })
+            count += 1
+        print(f"[INFO] {source_name}: {count} recent articles")
+    except Exception as e:
+        print(f"[ERROR] RSS fetch failed ({source_name}): {e}")
+    return fetched
+
+
+def fetch_gadget_feeds(now: datetime | None = None) -> list[dict]:
+    """ガジェット系 RSS から公開48時間以内の記事を並列取得（ソース順維持）"""
+    now = now or datetime.now(timezone.utc)
+    feed_items = list(GADGET_FEEDS.items())
+    if not feed_items:
+        return []
+    workers = min(6, len(feed_items))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        per_feed = list(pool.map(lambda it: _fetch_one_gadget_feed(it, now), feed_items))
+    articles: list[dict] = []
+    for chunk in per_feed:
+        articles.extend(chunk)
     return deduplicate_articles(articles)
 
 
@@ -261,7 +301,11 @@ def analyze_gadgets(articles: list[dict], run_at: str) -> list[dict]:
             break
 
         print(f"[INFO] Analyzing gadget batch {ci + 1}/{len(chunks)} ({len(chunk)} articles) ...")
-        result = call_gemini_rest(build_gadget_prompt(chunk), api_key)
+        result = call_gemini_rest(
+            build_gadget_prompt(chunk),
+            api_key,
+            response_schema=GADGET_ANALYSIS_SCHEMA,
+        )
         if isinstance(result, list):
             by_id = {it["id"]: it for it in result if validate_gadget_item(it)}
             for i, art in enumerate(chunk):
@@ -324,6 +368,86 @@ def save_gadgets(items: list[dict], run_at: str, path: str = GADGET_FILE) -> Non
     print(f"[INFO] Saved {path} ({len(items)} items)")
 
 
+def generate_gadget_rss_feed(items: list[dict], path: str = GADGET_FEED_FILE) -> None:
+    """新製品ガジェット記事を RSS 2.0 フィード (gadget_feed.xml) として出力する"""
+    now = datetime.now(timezone.utc)
+    new_products = sorted(
+        [
+            it for it in items
+            if it.get("analysis_status") == "ok" and it.get("is_new_product") is True
+        ],
+        key=lambda x: (x.get("published") or x.get("first_seen") or "", x.get("score", 0)),
+        reverse=True,
+    )[:GADGET_FEED_TOP_N]
+
+    rss_items: list[str] = []
+    for it in new_products:
+        pub_date = ""
+        published = it.get("published") or it.get("first_seen") or ""
+        if published:
+            try:
+                dt = datetime.fromisoformat(str(published).replace("Z", "+00:00"))
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+                pub_date = f"      <pubDate>{format_datetime(dt)}</pubDate>\n"
+            except ValueError:
+                pass
+
+        product = it.get("product_name")
+        brand = it.get("brand")
+        base_title = it.get("title", "")
+        if product and product not in base_title:
+            head = f"[{brand}] {product}" if brand else product
+            full_title = f"{head} — {base_title}"
+        elif brand and brand not in base_title:
+            full_title = f"[{brand}] {base_title}"
+        else:
+            full_title = base_title
+
+        detail = _detail_line(it)
+        summary = (it.get("summary") or "").replace("\\n", " / ").replace("\n", " / ")
+        desc_parts = [f"[注目度: {it.get('score', 0)}]"]
+        if detail:
+            desc_parts.append(detail)
+        if summary:
+            desc_parts.append(summary)
+        desc_parts.append(f"(Source: {it.get('source', '')})")
+        desc = " ".join(desc_parts)
+
+        url = xml_escape(it.get("url", ""))
+        cat_tag = (
+            f"      <category>{xml_escape(str(it.get('category')))}</category>\n"
+            if it.get("category") else ""
+        )
+        rss_items.append(
+            "    <item>\n"
+            f"      <title>{xml_escape(full_title)}</title>\n"
+            f"      <link>{url}</link>\n"
+            f"      <guid isPermaLink=\"false\">{url}</guid>\n"
+            f"{cat_tag}"
+            f"      <description>{xml_escape(desc)}</description>\n"
+            f"{pub_date}"
+            "    </item>"
+        )
+
+    feed_xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0">\n'
+        "  <channel>\n"
+        "    <title>IT Info Hub — 最新ガジェット新製品フィード</title>\n"
+        f"    <link>{xml_escape(GADGET_PAGE_URL)}</link>\n"
+        "    <description>国内ガジェットメディアから新製品の発表・発売情報をAIで抽出して配信</description>\n"
+        "    <language>ja</language>\n"
+        f"    <lastBuildDate>{format_datetime(now)}</lastBuildDate>\n"
+        + ("\n".join(rss_items) + "\n" if rss_items else "")
+        + "  </channel>\n"
+        "</rss>\n"
+    )
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(feed_xml)
+    print(f"[INFO] Saved {path} ({len(new_products)} items)")
+
+
 # ---------------------------------------------------------------------------
 # 通知
 # ---------------------------------------------------------------------------
@@ -374,17 +498,17 @@ def send_gadget_discord(items: list[dict]) -> None:
     embeds = []
     for it in items:
         fields = [
-            {"name": "🏷️ カテゴリ", "value": it.get("category") or "-", "inline": True},
-            {"name": "📊 注目度", "value": str(it.get("score", 0)), "inline": True},
-            {"name": "📰 ソース", "value": it.get("source") or "-", "inline": True},
+            {"name": "カテゴリ", "value": it.get("category") or "-", "inline": True},
+            {"name": "注目度", "value": str(it.get("score", 0)), "inline": True},
+            {"name": "ソース", "value": it.get("source") or "-", "inline": True},
         ]
         if it.get("price"):
-            fields.append({"name": "💴 価格", "value": str(it["price"])[:1024], "inline": True})
+            fields.append({"name": "価格", "value": str(it["price"])[:1024], "inline": True})
         if it.get("release_date"):
-            fields.append({"name": "📅 発売", "value": str(it["release_date"])[:1024], "inline": True})
+            fields.append({"name": "発売", "value": str(it["release_date"])[:1024], "inline": True})
         name = it.get("product_name")
         embeds.append({
-            "title": (f"📱 {name}" if name else it.get("title", "No Title"))[:256],
+            "title": (name if name else it.get("title", "No Title"))[:256],
             "url": it.get("url", ""),
             "color": 0x2EAADC,
             "description": (f"**{it.get('title', '')}**\n" if name else "")
@@ -395,8 +519,8 @@ def send_gadget_discord(items: list[dict]) -> None:
         })
 
     payload = {
-        "username": "\U0001f4e1 IT Info Collector",
-        "content": f"## 📱 最新ガジェット情報 {len(items)}件\n{GADGET_PAGE_URL}",
+        "username": "IT Info Collector",
+        "content": f"## 最新ガジェット情報 {len(items)}件\n{GADGET_PAGE_URL}",
         "embeds": embeds,
     }
     try:
@@ -417,7 +541,7 @@ def send_gadget_slack(items: list[dict]) -> None:
 
     blocks = [{
         "type": "header",
-        "text": {"type": "plain_text", "text": f"📱 最新ガジェット情報 {len(items)}件"},
+        "text": {"type": "plain_text", "text": f"最新ガジェット情報 {len(items)}件"},
     }]
     for it in items:
         name = it.get("product_name") or it.get("title", "")
@@ -429,7 +553,7 @@ def send_gadget_slack(items: list[dict]) -> None:
                 "type": "mrkdwn",
                 "text": (f"*<{it.get('url', '')}|{name}>*  `{it.get('score', 0)}点`\n"
                          + (f"{detail}\n" if detail else "")
-                         + f"{summary}\n_📰 {it.get('source', '')} / 🏷️ {it.get('category', '')}_"),
+                         + f"{summary}\n_{it.get('source', '')} / {it.get('category', '')}_"),
             },
         })
     blocks.append({
@@ -452,7 +576,7 @@ def send_gadget_line(items: list[dict]) -> None:
         print("[INFO] LINE_CHANNEL_ACCESS_TOKEN not set -- skipping LINE")
         return
 
-    lines = [f"📱 最新ガジェット情報 {len(items)}件", ""]
+    lines = [f"最新ガジェット情報 {len(items)}件", ""]
     for it in items:
         lines.append(f"・{it.get('product_name') or it.get('title', '')}")
         detail = _detail_line(it)
@@ -522,6 +646,7 @@ def collect() -> dict:
 
     items = merge_gadgets(existing, targets, run_at)
     save_gadgets(items, run_at)
+    generate_gadget_rss_feed(items)
     return load_gadgets()
 
 
