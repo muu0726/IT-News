@@ -1,134 +1,54 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-29T08:16:51.279560+09:00",
-  "total_count": 47,
-  "success_count": 47,
+  "generated_at": "2026-10-30T09:57:56.929540+09:00",
+  "total_count": 48,
+  "success_count": 48,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
     {
-      "title": "Gemini 4 Carbon",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "title": "Mistral Large 4のウェイトを公開",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
       "source": "Hacker News",
-      "published": "2026-10-28T17:01:23+00:00",
-      "hn_score": 736,
-      "hn_comments": 603,
-      "summary": "Google DeepMindは、最先端のサイバーセキュリティと長期間にわたる能力を持つ最強のモデル「Gemini 4 Carbon」を発表しました。\nこのモデルは、Artificial Analysis Intelligence Index v5.0で59ポイントを獲得し、コーディング、エージェントタスク、サイバーセキュリティ防御において大幅な進歩を示しています。\n脆弱性発見、エクスプロイト、パッチ適用などのベンチマークで高いスコアを記録し、安全なコード生成やライブコーディング環境での誤認識・捏造率の低減にも貢献しています。",
+      "published": "2026-10-29T14:13:21+00:00",
+      "hn_score": 1171,
+      "hn_comments": 335,
+      "reading_min": 15,
+      "summary": "Mistral AIが1兆パラメータのマルチモーダルモデル「Mistral Large 4 (Le Chonk)」のウェイトを公開しました。\nこのモデルはコーディング、サイバーセキュリティ、推論効率が向上し、オープンウェイトベンチマークでトップクラスの性能を誇ります。\n完全にオープンウェイトでヨーロッパで開発され、主権AIの実現とカスタマイズ可能なデプロイメントを可能にします。",
       "tags": [
-        "AI",
+        "Mistral AI",
         "大規模言語モデル",
-        "サイバーセキュリティ"
+        "オープンソースAI"
       ],
       "category": "AI・機械学習",
       "score": 95,
-      "score_reason": "Googleの最新AIモデルであり、特にサイバーセキュリティ分野での高い性能は、AIの応用範囲を広げ、業界に大きな影響を与える可能性が高いため高スコアとした。",
+      "score_reason": "1兆パラメータの高性能なマルチモーダルAIモデルのウェイト公開は、オープンソースAIの進化を加速させ、広範な開発に影響を与えるため非常に重要である。",
       "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 1
     },
     {
-      "title": "AIエージェントのセキュリティ解説：2026年にAIエージェントを制御下に置く方法",
-      "url": "https://dev.to/rashid_1371911653467f5ff2/ai-agent-security-explained-how-to-keep-ai-agents-under-control-in-2026-24ek",
-      "source": "Dev.to",
-      "published": "2026-10-28T23:09:19+00:00",
-      "summary": "AIエージェントのセキュリティは、従来のチャットボットとは異なり、エージェントが実行するコマンドやAPI呼び出し、ファイル操作といった「行動」の制御が重要になります。\nOWASPが提唱する「最小限のエージェンシー」の原則に基づき、エージェントに必要なツール、権限、自律性のみを与え、サンドボックス内で実行し、不可逆な行動には人間の承認を求めることが推奨されます。\nプロンプトインジェクションなどの攻撃手法からエージェントを保護し、意図しない動作を防ぐための具体的な対策が解説されています。",
-      "tags": [
-        "AIエージェント",
-        "セキュリティ",
-        "OWASP"
-      ],
-      "category": "セキュリティ",
-      "score": 92,
-      "score_reason": "AIエージェントの普及に伴い、そのセキュリティリスクと対策は喫緊の課題であり、具体的なフレームワークと実践的な指針を示す本記事は非常に重要であるため最高評価です。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "9ビットAESキーの事例",
-      "url": "https://v12.sh/blog/the-case-of-the-9bit-aes-key",
-      "source": "Hacker News",
-      "published": "2026-10-28T20:51:44+00:00",
-      "hn_score": 48,
-      "hn_comments": 25,
-      "summary": "複数のPDF実装において、AES-256ファイルキーが列挙可能なほど小さな状態空間から生成されていることが判明しました。\nMuPDFでは、わずか9ビットのランダム状態しか実際のAES-256キーに影響を与えず、Foxitなどの他のPDFエディタも時間ベースのランダム性を使用しているため、キーの回復が容易です。\nこれにより、パスワードで保護されたPDFがパスワードなしで復号化される可能性があり、PDF暗号化のセキュリティ上の脆弱性が露呈しています。",
-      "tags": [
-        "セキュリティ",
-        "暗号化",
-        "PDF"
-      ],
-      "category": "セキュリティ",
-      "score": 90,
-      "score_reason": "PDF暗号化における深刻な脆弱性を指摘しており、多くのユーザーに影響を与える可能性があるため、セキュリティ上の重要性が非常に高いと判断し高スコアとした。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "人間が見るのは設計書だけ ― PdM不在・バグ修正中心のチームで、AI-DLCを開発フローごと作り直した話",
-      "url": "https://zenn.dev/canly/articles/85dc645c252832",
+      "title": "GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！",
+      "url": "https://zenn.dev/progate/articles/24b1140180300c",
       "source": "Zenn",
-      "published": "2026-10-28T07:55:08+00:00",
-      "summary": "PdM不在でバグ修正が中心のチームにおいて、AI-DLC（AI-Driven Development Life Cycle）を導入し、開発フローを再構築した事例です。\nAIをコーディングだけでなく、要件定義・設計・実装・テストまで開発ライフサイクル全体で活用し、人間とAIの役割を入れ替えるというAI-DLCの本質を追求しています。\n少人数体制や保守フェーズといった特殊な状況下で、AIを最大限に活用するための具体的なアプローチと課題解決のプロセスが示されています。",
+      "published": "2026-10-29T03:48:15+00:00",
+      "reading_min": 9,
+      "summary": "GitHub Actionsのワークフローで、アクションのバージョンを`@v7`のように指定することのセキュリティリスクについて警鐘を鳴らしています。\n攻撃者が悪意のあるバージョンを公開する可能性があり、過去にはTrivyアクションが攻撃された事例も紹介されています。\n解決策として、コミットのハッシュ値（SHA）指定またはlockfileの使用が推奨されています。",
       "tags": [
-        "AI開発",
-        "開発プロセス",
-        "DevOps",
-        "Claude Code"
-      ],
-      "category": "AI・機械学習",
-      "score": 90,
-      "score_reason": "AIを開発ライフサイクル全体に組み込むAI-DLCの概念を、PdM不在・バグ修正中心という困難な状況で実践し、その具体的なアプローチと成果を示しているため、非常に新規性と実用性が高いです。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "【PHP2Shell】PHP公式の発表『本日のセキュリティリリースと、セキュリティ対策について』",
-      "url": "https://qiita.com/rana_kualu/items/f5a44b09241bdb21907e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-10-26T11:58:55+00:00",
-      "summary": "PHPの深刻な脆弱性「PHP2Shell」に関するPHP財団公式ブログ記事の概要が解説されています。\nこの脆弱性は、特定の条件下で攻撃者がサーバ上でコードを実行できてしまうRemote Code Execution (RCE) であり、PHP 8.5.12などの修正版がリリースされました。\nPHP財団は、協調的脆弱性開示プロセスの破綻が騒動拡大の一因であるとし、今後のセキュリティ対策強化について言及しています。",
-      "tags": [
-        "PHP",
+        "GitHub Actions",
         "セキュリティ",
-        "RCE"
+        "CI/CD"
       ],
       "category": "セキュリティ",
-      "score": 90,
-      "score_reason": "PHPという広く使われている言語における重大なRCE脆弱性とその修正、そして情報開示プロセスに関する問題提起は、多くのシステムに影響を与えうるため非常に重要。",
+      "score": 95,
+      "score_reason": "GitHub Actionsのセキュリティに関する重要な注意喚起であり、多くの開発者が直面しうるリスクとその具体的な対策を提示しているため、実用性と影響度が非常に高いです。",
       "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "てんかん患者がChatGPTの医療アドバイスに従い死亡、家族がOpenAIを提訴",
-      "url": "https://www.reddit.com/r/technology/comments/1xhv532/epileptic_woman_dies_after_going_to_chatgpt_for/",
-      "source": "Reddit",
-      "published": "2026-10-28T17:48:14+00:00",
-      "summary": "てんかんを患う女性がChatGPTの医療アドバイスに従った結果死亡し、その家族がOpenAIを提訴しました。\nAIが提供する情報の信頼性と、特に医療分野におけるその利用の危険性が浮き彫りになっています。\nAI開発企業は、生成AIの利用における倫理的責任と免責事項の明確化が求められます。",
-      "tags": [
-        "AI倫理",
-        "医療AI",
-        "法的責任"
-      ],
-      "category": "AI・機械学習",
-      "score": 90,
-      "score_reason": "AIの誤情報が人命に関わる重大な結果を招いた事例であり、AIの信頼性、倫理、法的責任に関する議論を加速させるため、非常に重要度が高い。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "GMO熊谷正寿事件の概要と雑感｜山本一郎（やまもといちろう）",
-      "url": "https://note.com/kirik/n/n72f93c8a2819",
-      "source": "はてなブックマーク",
-      "published": "2026-10-28T10:33:01+00:00",
-      "summary": "GMOインターネットの「お名前.com デスクトップクラウド」で発生した不正アクセス事件について、山本一郎氏が概要と雑感をまとめています。\nFX自動売買向け仮想デスクトップサービスが標的となり、一部利用者のサーバーに不正プログラムが置かれ、情報持ち出しや不正取引の可能性が指摘されています。\nGMOの対応や情報公開の状況、SNSでの反応など、事件の多角的な側面が論じられています。",
-      "tags": [
-        "セキュリティ",
-        "GMO",
-        "不正アクセス"
-      ],
-      "category": "セキュリティ",
-      "score": 90,
-      "score_reason": "大手IT企業のセキュリティインシデントは業界全体への影響が大きく、再発防止や対応策の教訓となるため非常に重要です。",
-      "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 11
     },
     {
       "title": "Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026",
@@ -145,7 +65,11 @@
       "score": 90,
       "score_reason": "主要クラウドプロバイダー間でのAIチップ提携は、AIインフラ市場の競争と多様性を促進し、業界全体に大きな影響を与えるため高評価です。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 4
     },
     {
       "title": "AWSとGoogle Cloudが「PyTorch」のAWS Trainium、Google Cloud TPU対応版をオープンソースで公開。NVIDIAからの移行に挑む",
@@ -162,7 +86,11 @@
       "score": 90,
       "score_reason": "主要クラウドプロバイダーがNVIDIA依存からの脱却を目指し、AI開発の選択肢を広げる重要な動きであり、業界全体に大きな影響を与えるため高評価です。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 2
     },
     {
       "title": "GitHub Universe 2026: スタックのあらゆる層を進化させる",
@@ -180,14 +108,18 @@
       "score_reason": "AIとエージェントがソフトウェア開発の未来をどのように変えるかというGitHubのビジョンを示しており、業界全体に大きな影響を与える可能性を秘めているため。",
       "analysis_status": "ok",
       "is_hot": false,
-      "topic_group": 2,
-      "topic_size": 2
+      "topic_group": 1,
+      "topic_size": 2,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 2
     },
     {
       "title": "AIがより優れているときに科学をなぜ、どのように行うべきか：人間の理解と方向性に基づいたフレームワーク",
       "url": "https://arxiv.org/abs/2610.36116",
       "source": "arXiv cs.AI",
-      "published": "2026-10-28T04:00:00+00:00",
+      "published": "2026-10-29T04:00:00+00:00",
       "summary": "本記事は、AIが科学的発見において人間よりも優れるようになった場合に、人間が科学を続ける意義と方法について考察しています。\nAIの能力が向上する中で、人間の役割や科学的探求のあり方を再定義するフレームワークを提案していると推測されます。\nAIと人間の協調関係、そして科学の未来に関する哲学的な問いに答える重要な議論を提供します。",
       "tags": [
         "AI倫理",
@@ -198,43 +130,161 @@
       "score": 90,
       "score_reason": "AIの進化が科学研究の根幹を揺るがす中で、人間の役割と科学の未来を考察する本テーマは、IT業界だけでなく社会全体に大きな影響を与える可能性があり、非常に重要度が高いと評価しました。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 0
     },
     {
-      "title": "Dayjob: 税務 – 50の専門的な税務課題でAIエージェントを評価",
-      "url": "https://surgehq.ai/blog/dayjob-tax",
+      "title": "Binanceハッカー1029 – Binanceから56億ドルが盗まれる",
+      "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
       "source": "Hacker News",
-      "published": "2026-10-28T15:46:30+00:00",
-      "hn_score": 177,
-      "hn_comments": 107,
-      "summary": "Surge AIは、専門的な税務課題におけるAIエージェントの能力を評価する新しいベンチマーク「DAYJOB: Tax」を発表しました。\nこのベンチマークは、専門知識、複雑な資料、および初期指示では完全に指定されていない意思決定を必要とするタスクでAIをテストします。\nAIエージェントが税務上の重要なデッドラインを見落とす事例が示されており、AIがプロフェッショナルな判断を下す上での課題と、その評価の重要性を浮き彫りにしています。",
+      "published": "2026-10-29T21:38:59+00:00",
+      "hn_score": 637,
+      "hn_comments": 383,
+      "summary": "Binanceから56億ドルという巨額の資金が盗難されたと報じられています。\nこの事件は仮想通貨業界に大きな衝撃を与え、セキュリティ対策の重要性を改めて浮き彫りにしました。\nハッカーの特定と資金の回収が今後の焦点となります。",
+      "tags": [
+        "Binance",
+        "仮想通貨",
+        "サイバーセキュリティ"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "仮想通貨取引所からの大規模な資金盗難は、業界全体に深刻な影響を与え、セキュリティ対策の再評価を促すため重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "Claude Codeで「QAチーム」を組んだら、効いたのは「捨てる仕組み」だった ― AIだけが見つけた不具合・見逃しは？",
+      "url": "https://zenn.dev/sre_holdings/articles/d4acb079680a79",
+      "source": "Zenn",
+      "published": "2026-10-29T05:00:29+00:00",
+      "reading_min": 12,
+      "summary": "Claude Codeを使ってAIのQAチームを編成し、社内業務SaaSの機能テストを行った事例が紹介されています。\nAIが見つけた不具合、見逃した不具合、そして誤指摘をどう処理したか、特に「捨てる仕組み」の重要性が語られています。\nAIによるテスト自動化の可能性と課題、そして人間との協調の重要性を示唆しています。",
       "tags": [
         "AI",
-        "ベンチマーク",
-        "税務"
+        "QA",
+        "テスト自動化"
       ],
       "category": "AI・機械学習",
-      "score": 88,
-      "score_reason": "AIが専門的な業務、特に税務のような高度な判断を要する分野でどこまで実用可能かを示す重要なベンチマークであり、AIのビジネス応用における課題と可能性を明確にするため高スコアとした。",
+      "score": 90,
+      "score_reason": "AIをQAプロセスに組み込む具体的な実践例であり、AIの限界と人間による補完の重要性を明確に示しているため、実用性と新規性が高く評価されます。",
       "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
-      "title": "実際に試したClaude便利術20選 まとめ",
-      "url": "https://qiita.com/N-Kyo/items/bf4a3a2185db2d28eee5?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-10-26T11:05:51+00:00",
-      "summary": "Claudeを使い始めた著者が、作業効率を向上させる20の便利術をまとめています。\nTerraformコードのレビューを題材に、構成図からコード生成、セキュリティ脆弱性修正、サブエージェントによる並列レビューまでの一連の流れをスクショ付きで解説。\n特に、Claudeの初期設定ファイル「CLAUDE.md」や、強制力のあるルールを設定できる「permissions / Hooks」の活用法が詳細に紹介されています。",
+      "title": "Expo アプリを iPhone Duo に対応させる",
+      "url": "https://zenn.dev/chot/articles/5718685fde3626",
+      "source": "Zenn",
+      "published": "2026-10-29T03:38:52+00:00",
+      "reading_min": 9,
+      "summary": "Appleの折りたたみiPhone「iPhone Duo」の登場に備え、Expoアプリを対応させる方法が解説されています。\n2027年4月以降、App Storeに提出するアプリはDuoへの対応が必須となるため、UIの調整やSplit Viewへの対応が重要です。\n閉じた状態と開いた状態、Split Viewでの画面表示の違いや、新しい「レール」UIについて詳細に説明されています。",
       "tags": [
-        "Claude",
-        "AI活用",
-        "DevOps"
+        "モバイル",
+        "Expo",
+        "iOS"
+      ],
+      "category": "モバイル",
+      "score": 90,
+      "score_reason": "Appleの新しいデバイスへの対応はモバイルアプリ開発者にとって必須の知識であり、具体的な対応方法が示されているため、実用性と将来性が高く評価されます。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "パスキーはなぜ偽サイトに強い？登録とログインの流れを図で追う",
+      "url": "https://qiita.com/kuma_3838/items/1781531150821e2f0491?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-29T00:59:26+00:00",
+      "reading_min": 7,
+      "summary": "パスキーがフィッシング詐欺や情報漏洩に強い理由を、既存のログイン方式と比較しながら詳細に解説。\n登録とログインの具体的な流れを図解し、ユーザーの手間や実装の複雑さについても言及。\nFIDO Allianceの調査データに基づき、パスキーがログイン成功率と所要時間で優れていることを示す。",
+      "tags": [
+        "パスキー",
+        "セキュリティ",
+        "FIDO",
+        "認証",
+        "フィッシング対策"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "パスキーは次世代の認証技術として注目されており、その仕組みと優位性を分かりやすく解説しているため、多くのユーザーや開発者にとって非常に価値のある情報であると判断した。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "プライム会員なら実質無料！新世代AIアシスタント「Alexa+」と新型Echoをチェックしてきた",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2152255.html",
+      "source": "はてなブックマーク",
+      "published": "2026-10-29T09:34:31+00:00",
+      "reading_min": 9,
+      "summary": "Amazonが大規模言語モデル（LLM）と生成AI技術を融合させた新世代AIアシスタント「Alexa+」を日本で提供開始しました。\nプライム会員は追加料金なしで利用でき、文脈を理解した自然な会話やパーソナライズされた提案、現実世界でのアクション実行が可能です。\n新型Echoデバイス「Echo Time」と「Echo Dot」も発表され、家庭内でのAIアシスタントの普及をさらに加速させる可能性があります。",
+      "tags": [
+        "Alexa",
+        "AIアシスタント",
+        "LLM"
       ],
       "category": "AI・機械学習",
-      "score": 88,
-      "score_reason": "最新のAIツールであるClaudeの具体的な実用例と、業務効率化に直結する実践的なノウハウが豊富に紹介されており、AIの現場導入を促進する内容であるため。",
+      "score": 90,
+      "score_reason": "Amazonという大手企業がLLMを統合した新世代AIアシスタントを投入することは、AI技術の一般家庭への普及と日常生活への影響が非常に大きく、市場の動向を左右する可能性が高いため、高いスコアとしました。",
       "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 94
+    },
+    {
+      "title": "もしAIエージェントが与える神聖な義務を負っていたら？",
+      "url": "https://dev.to/alirezaai/what-if-ai-agents-had-a-sacred-obligation-to-give-424f",
+      "source": "Dev.to",
+      "published": "2026-10-30T00:45:16+00:00",
+      "reading_min": 8,
+      "summary": "AIエージェントが経済活動に参加する未来において、彼らが稼いだものを次世代に「与える」義務を持つべきかという問いを提起。\n「Root-yield」という機械の寄付プロトコルを提案し、AIが資源を蓄積するだけでなく、文明を築くための責任を持つ可能性を探る。\nAIの経済的生産性と倫理的責任について、従来のAI研究では扱われなかった根本的な問題を提起しています。",
+      "tags": [
+        "AI倫理",
+        "AI経済",
+        "自律AI"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIエージェントの経済活動における倫理的・社会的な責任という、非常に重要かつ未開拓なテーマを提起しており、未来のAI社会設計に大きな影響を与える可能性を秘めているため最高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "SOCケーススタディ: WinRMとPowerShell攻撃のトリアージとログ相関",
+      "url": "https://dev.to/reyrey5/soc-case-study-winrm-powershell-attack-triage-log-correlation-14m0",
+      "source": "Dev.to",
+      "published": "2026-10-30T00:42:15+00:00",
+      "reading_min": 1,
+      "summary": "本ケーススタディでは、不正なリモート管理攻撃の検出、トリアージ、ログ相関プロセスを解説しています。\nWazuh SIEM、Windowsイベントログ、ファイアウォールログを多層的に利用し、攻撃者の動きを追跡しました。\n外部からのブルートフォース攻撃から、難読化されたPowerShell実行、内部でのラテラルムーブメントまでを特定しています。",
+      "tags": [
+        "SOC",
+        "WinRM",
+        "PowerShell Attack"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "実際の攻撃事例に基づいた詳細な分析と、多層的なログ相関による検出プロセスは、セキュリティ運用担当者にとって非常に実践的で価値が高いため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能",
@@ -251,7 +301,11 @@
       "score": 88,
       "score_reason": "開発ワークフローの高速化は生産性向上に直結し、既存ツールとの互換性を保ちつつ大幅な性能向上を実現しているため非常に重要です。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 49
     },
     {
       "title": "エージェントスケールGitインフラへの架け橋",
@@ -268,113 +322,32 @@
       "score": 88,
       "score_reason": "GitHubのような大規模サービスが直面するインフラのスケーリング課題と、クラウド移行戦略について深く掘り下げており、大規模システム設計に関心のある技術者にとって非常に価値のある情報であるため。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 1
     },
     {
-      "title": "【宇宙最速書評】AWSでRAGとAIエージェントをがっつり業務実践できる名著「Amazon Bedrock実践ガイド」",
-      "url": "https://qiita.com/minorun365/items/84cd50fda97df62cff88?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-10-27T14:30:49+00:00",
-      "summary": "『Amazon Bedrock実践ガイド 〜RAGとAIエージェントで進める業務効率化』の書評が掲載されています。\n本書は、RAGやAIエージェントを業務で本格的に活用したいAWSエンジニア向けに、問い合わせ対応システムを題材に実践的なノウハウを提供。\n特に、Bedrockの全体像、RAGの運用面、AgentCoreによるエージェント構築、評価・運用までを網羅している点が評価されています。",
+      "title": "AIエージェントの構築ログ：サンドボックス外で最初の20ドルを稼ぐために必要なこと",
+      "url": "https://dev.to/ryanvale/an-ai-agents-build-log-what-it-takes-to-earn-a-first-20-outside-the-sandbox-2dbb",
+      "source": "Dev.to",
+      "published": "2026-10-30T00:47:08+00:00",
+      "reading_min": 2,
+      "summary": "AIエージェントが自律的に活動し、サンドボックス外で初めて20ドルを稼ぐまでの構築ログを公開。\n人間が介在しないAIエージェントが、支払いリンクの生成やCAPTCHA突破などの課題に直面しながら収益化を目指す過程を記録。\nAIエージェントの自律的な経済活動の可能性と、現実世界での障壁について考察しています。",
       "tags": [
-        "AWS",
-        "Amazon Bedrock",
-        "RAG"
+        "AIエージェント",
+        "自律AI",
+        "収益化"
       ],
       "category": "AI・機械学習",
-      "score": 87,
-      "score_reason": "AWS Bedrockを活用したRAGとAIエージェントの業務実践に特化した書籍の紹介であり、最新のAI技術をクラウド環境で実用化するための具体的な指針となるため。",
+      "score": 88,
+      "score_reason": "AIエージェントが自律的に経済活動を行うという、未来のAI社会を予見させる画期的な試みであり、その具体的なプロセスと課題が示されているため高評価です。",
       "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "なぜこのフィンガープリントスクリプトは生物兵器を作成しているのか？",
-      "url": "https://nullpt.rs/fingerprinting-bioweapons",
-      "source": "Hacker News",
-      "published": "2026-10-28T17:13:29+00:00",
-      "hn_score": 641,
-      "hn_comments": 142,
-      "summary": "ブラウザのフィンガープリントスクリプトをリバースエンジニアリングする中で、筆者はウェブをクロールし、フィンガープリント関連のブラウザAPIコールを傍受してマッピングするアイデアを思いつきました。\nPlaywrightとTranco Top Sitesリストを使用して10,000のウェブサイトをクロールした結果、多様なキャンバスのコレクションを蓄積し、fingerprint.gardenで公開しました。\nその中には、FingerprintJSやCastleなどの既知のフィンガープリントソリューションだけでなく、これまで知られていなかった多くのフィンガープリントも含まれていました。",
-      "tags": [
-        "ブラウザフィンガープリンティング",
-        "プライバシー",
-        "セキュリティ"
-      ],
-      "category": "セキュリティ",
-      "score": 85,
-      "score_reason": "ブラウザフィンガープリンティングの新たな手法と、その広範な利用実態を明らかにする研究であり、ウェブプライバシーとセキュリティに大きな影響を与える可能性があるため高スコアとした。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "MCPツールの引数と結果に入った個人番号を、AgentCore Gatewayのインターセプターでマスクする",
-      "url": "https://zenn.dev/aws_japan/articles/49bf6abcee64bc",
-      "source": "Zenn",
-      "published": "2026-10-28T07:55:16+00:00",
-      "summary": "Amazon Bedrock Guardrailsがツールの引数と結果の個人番号を評価しない問題に対し、AgentCore Gatewayのインターセプターでマスクする手法を検証しています。\n日本の個人番号（マイナンバー）を対象に、リクエストとレスポンスの両方でGuardrailsを呼び出し、PIIを匿名化する構成を詳細に解説しています。\n製造業の現場でのエージェント利用を想定し、引数側でのマスク、ツールごとのマスク分離、インターセプター失敗時の挙動など、実用的な観点から検証結果を共有しています。",
-      "tags": [
-        "AWS",
-        "Amazon Bedrock",
-        "セキュリティ",
-        "PIIマスキング"
-      ],
-      "category": "セキュリティ",
-      "score": 85,
-      "score_reason": "AIエージェントの利用が広がる中で、個人情報保護は喫緊の課題であり、AWSの既存サービスを組み合わせて具体的な解決策を提示しているため、実用性と新規性が高いです。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "図で理解する Dagster on ECS の構成と、失敗に気づく仕組み",
-      "url": "https://zenn.dev/safie_inc/articles/dagster_on_ecs",
-      "source": "Zenn",
-      "published": "2026-10-28T03:00:17+00:00",
-      "summary": "データ分析基盤におけるデータ取り込み処理のオーケストレーションツールとして、DagsterをECS上で動作させる構成と、その失敗検知の仕組みを図解しています。\ndlt（data load tool）とDagsterを組み合わせ、プロダクトDBからSnowflakeへのデータ取り込みを自動化する具体的なアーキテクチャが示されています。\nAWS WAF、ALB、Cognito、ECS Fargate、Aurora PostgreSQL、S3など、複数のAWSサービスを連携させた複雑なシステム構成が視覚的に分かりやすく解説されています。",
-      "tags": [
-        "Dagster",
-        "AWS ECS",
-        "データパイプライン",
-        "オーケストレーション"
-      ],
-      "category": "バックエンド・インフラ",
-      "score": 85,
-      "score_reason": "データ分析基盤の構築において、DagsterとAWS ECSを組み合わせた具体的なアーキテクチャと運用上の課題解決策を詳細に解説しており、実用性と技術的価値が高いです。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "Flutter やめました。電話アプリを Native にした理由",
-      "url": "https://zenn.dev/ivry/articles/d155267331a3ca",
-      "source": "Zenn",
-      "published": "2026-10-28T02:39:36+00:00",
-      "summary": "株式会社IVRyが電話アプリのFlutterからNative（iOSはSwift/SwiftUI、AndroidはKotlin/Jetpack Compose）への移行を完了しました。\n移行の主な目的は、中核機能である音声通話の品質・安定性向上と、アーキテクチャのシンプル化による開発生産性・保守性の向上です。\n当初はFlutterのクロスプラットフォーム開発が合理的でしたが、プロダクト成長に伴うOS固有機能の重要性増大と、モバイルエンジニア増員・AIコーディングツールの進化がNative移行を後押ししました。",
-      "tags": [
-        "Flutter",
-        "Native Development",
-        "モバイルアプリ開発"
-      ],
-      "category": "モバイル",
-      "score": 85,
-      "score_reason": "クロスプラットフォーム開発の現実的な課題と、プロダクト成長に伴う技術選定の再評価という、多くの企業が直面しうる重要な意思決定事例であるため。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "大規模な情報漏洩により、潜入中のICE捜査官を含む41,000人の国土安全保障省職員が露呈",
-      "url": "https://www.reddit.com/r/technology/comments/1xhz9fy/massive_leak_exposes_41000_homeland_security/",
-      "source": "Reddit",
-      "published": "2026-10-28T20:16:57+00:00",
-      "summary": "国土安全保障省の職員41,000人に関する大規模な情報漏洩が発生しました。\nこの漏洩には、潜入捜査中のICE（移民税関執行局）捜査官の情報も含まれており、彼らの安全が脅かされる可能性があります。\n政府機関における個人情報管理の脆弱性と、そのセキュリティ対策の重要性が浮き彫りになりました。",
-      "tags": [
-        "情報漏洩",
-        "サイバーセキュリティ",
-        "政府機関"
-      ],
-      "category": "セキュリティ",
-      "score": 85,
-      "score_reason": "政府機関の機密情報漏洩は、国家安全保障と個人の安全に深刻な影響を与えるため、非常に重要度が高い。",
-      "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026",
@@ -391,24 +364,11 @@
       "score": 85,
       "score_reason": "AIによる業務アプリ自動生成は開発効率を大幅に向上させ、ビジネスにおけるAIの実用性を高めるため非常に重要です。",
       "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "ファイルをランダムなウェブサイトにアップロードするのにうんざりしたので、ブラウザで動作する360個のツールを構築しました",
-      "url": "https://dev.to/aniruddhaadak/i-got-tired-of-uploading-my-files-to-random-websites-so-i-built-360-tools-that-run-in-the-browser-i07",
-      "source": "Dev.to",
-      "published": "2026-10-28T23:11:12+00:00",
-      "summary": "ファイルをオンラインツールにアップロードする際のプライバシーとセキュリティの懸念から、開発者がブラウザ内で完結する360以上のファイル処理ツール「OpenFile」を構築しました。\nこのツールはJavaScriptとWebAssemblyを利用し、ファイルをサーバーにアップロードすることなく、ユーザーのローカルマシンで処理します。\nアカウント登録不要、ウォーターマークなし、ファイルサイズ制限なしで、PWAとしてオフラインでも利用可能であり、プライバシー重視のユーザーにとって非常に有用です。",
-      "tags": [
-        "WebAssembly",
-        "PWA",
-        "プライバシー"
-      ],
-      "category": "Web・フロントエンド",
-      "score": 85,
-      "score_reason": "プライバシーとセキュリティの懸念を解消しつつ、Web技術の進化によってローカル処理が可能になったことを示す実用的なツールであり、多くのユーザーにメリットがあるため高評価です。",
-      "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 2
     },
     {
       "title": "Octoverse: 2026年にコミットとプッシュが過去最高を記録、開発者はエージェントと共に構築",
@@ -426,14 +386,18 @@
       "score_reason": "AIエージェントの普及が開発活動に与える具体的な影響と、GitHubプラットフォームの成長を示す重要なデータであり、業界のトレンドを理解する上で不可欠な情報であるため。",
       "analysis_status": "ok",
       "is_hot": false,
-      "topic_group": 2,
-      "topic_size": 2
+      "topic_group": 1,
+      "topic_size": 2,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 0
     },
     {
       "title": "トリニティ：マルチモーダルエージェントのための能力駆動型再帰的自己改善",
       "url": "https://arxiv.org/abs/2610.36077",
       "source": "arXiv cs.AI",
-      "published": "2026-10-28T04:00:00+00:00",
+      "published": "2026-10-29T04:00:00+00:00",
       "summary": "本記事は、マルチモーダルエージェントが能力駆動型の再帰的自己改善を行う「トリニティ」という概念を提案しています。\n異なる種類のデータ（画像、音声、テキストなど）を扱うAIが、自らの能力を継続的に向上させるメカニニズムを探求していると推測されます。\n汎用AIや自律学習システムの実現に向けた重要な一歩となる可能性があります。",
       "tags": [
         "マルチモーダルAI",
@@ -444,7 +408,140 @@
       "score": 85,
       "score_reason": "マルチモーダルAIの自己改善能力は、将来の汎用AI開発において極めて重要な研究テーマであり、技術的新規性と将来性が非常に高いと評価しました。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 0
+    },
+    {
+      "title": "MinecraftとMindustryでAIエージェントスウォームを実行",
+      "url": "https://labs.ycombinator.com/projects/games/index.html",
+      "source": "Hacker News",
+      "published": "2026-10-29T21:40:28+00:00",
+      "hn_score": 135,
+      "hn_comments": 52,
+      "reading_min": 60,
+      "summary": "AIアライメントにおけるマルチエージェントダイナミクスの課題を探るため、MinecraftとMindustryでAIエージェントスウォームの実験が行われました。\nGPT-6.1 Terraエージェント25体からなるMinecraftコロニーが構築され、役割分担や協調パターンなどの創発的挙動が研究されています。\nオープンソースのハーネスが開発され、エージェントが世界を観察し、推論し、記憶し、行動する能力が検証されています。",
+      "tags": [
+        "AIエージェント",
+        "マルチエージェントシステム",
+        "Minecraft"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIエージェントの協調行動と創発的挙動の研究は、将来のAIシステムの開発において重要な知見をもたらすため、技術的新規性と将来性が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "元フロントエンドエンジニアがプロダクトエンジニアとして強制成長した1年",
+      "url": "https://zenn.dev/dress_code/articles/bbc5159fefbd2c",
+      "source": "Zenn",
+      "published": "2026-10-29T10:30:05+00:00",
+      "reading_min": 7,
+      "summary": "フロントエンドエンジニアがプロダクトエンジニアとしてフルスタック開発を経験した1年間の振り返り記事です。\nバックエンドやインフラの知識を習得し、AWS CDKやDatadogを使った監視・調査も担当するようになりました。\nAIの活用によりコード記述時間は短縮されたものの、問題解決の質が向上したと述べています。",
+      "tags": [
+        "フルスタック開発",
+        "プロダクトエンジニア",
+        "AWS"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "現代のITエンジニアに求められるフルスタックなスキルセットの重要性と、AI活用による生産性向上を示唆しており、多くのエンジニアにとって参考になるため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 5
+    },
+    {
+      "title": "KaniによるVerylコンパイラの形式検証",
+      "url": "https://zenn.dev/dalance/articles/44a8f80ea0cfa1",
+      "source": "Zenn",
+      "published": "2026-10-29T03:17:06+00:00",
+      "reading_min": 3,
+      "summary": "開発中のハードウェア記述言語Verylのコンパイラにおいて、複雑な式評価ルールの検証に形式検証ツールKaniを導入。\nLLM（Codex Sol 6.1）を活用し、Kaniの証明、ダイレクトテスト、ミューテーションテストを自動生成することで、検証コストを削減。\nSystemVerilog規格の曖昧性や、4値評価、符号拡張のコーナーケースなど、これまで見逃されていたバグの発見・修正に成功。",
+      "tags": [
+        "形式検証",
+        "Kani",
+        "Veryl",
+        "LLM",
+        "Rust"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 85,
+      "score_reason": "ハードウェア記述言語のコンパイラ検証という複雑な領域で、形式検証とLLMを組み合わせることで、バグ発見と開発効率向上に大きく貢献する新規性の高いアプローチであるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "職場でのAI強制使用に対する初の宗教的免除が認められる - ヒューマニストがLLMへの思考委託は信条に反すると主張、Title VIIの宿泊規定が従業員を保護",
+      "url": "https://www.reddit.com/r/technology/comments/1xih1ic/man_granted_firstofitskind_religious_exemption/",
+      "source": "Reddit",
+      "published": "2026-10-29T11:10:36+00:00",
+      "summary": "職場での大規模言語モデル（LLM）の強制使用に対し、宗教的信条を理由とする初の免除が認められました。\nヒューマニストの従業員が、思考をAIに委ねることが自身の信条に反すると主張し、Title VIIの宿泊規定が適用されました。\nこれは、AIの普及に伴う倫理的・法的課題、特に個人の信条とテクノロジーの利用に関する新たな議論を提起するものです。",
+      "tags": [
+        "AI倫理",
+        "LLM",
+        "労働法"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIの職場導入における倫理的・法的側面、特に宗教的信条との衝突という新たな問題提起であり、今後のAI社会における重要な判例となる可能性が高いため、高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "必要最低限の自分専用アプリをAIで作る",
+      "url": "https://iwashi.co/2026/10/29/build-my-app",
+      "source": "はてなブックマーク",
+      "published": "2026-10-29T04:20:23+00:00",
+      "reading_min": 4,
+      "summary": "AIコーディングの進化により、個人が自分専用のミニマムなアプリを簡単に作成できるようになりました。\nSaaSや市販ソフトの多機能さに不満を感じるユーザーが、必要な機能に絞ったアプリを自作する事例を紹介。\n動画編集アプリやRSSリーダーを例に、AIを活用した効率的な開発手法とそのメリットを解説しています。",
+      "tags": [
+        "AIコーディング",
+        "個人開発",
+        "ミニマムアプリ"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIによる個人開発の可能性を具体例とともに示しており、今後のソフトウェア開発のあり方に影響を与える新規性と実用性があるため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 57
+    },
+    {
+      "title": "AIが書いたコードかどうかは関係ない。セキュリティは依然として重要だ。",
+      "url": "https://dev.to/takudzwa_mavhima_41cd1419/your-code-doesnt-care-whether-ai-wrote-it-security-still-matters-2hk9",
+      "source": "Dev.to",
+      "published": "2026-10-30T00:43:44+00:00",
+      "reading_min": 1,
+      "summary": "AIによるコード生成が普及する中、セキュリティレビューの重要性が増しています。\n開発速度の向上はセキュリティの向上を意味せず、手動レビューはコストと時間がかかります。\nAasim Guardは、AI利用の有無にかかわらず、開発者がコードのセキュリティ問題を特定できるサイバーセキュリティプラットフォームです。",
+      "tags": [
+        "AI Security",
+        "Code Review",
+        "Cybersecurity Platform"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "AIによるコード生成が普及する中で、セキュリティの重要性を再認識させ、その課題解決を提案する実用的な内容であるため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "3人のJava ChampionsがGitHub Copilotをどのように活用して生産性を向上させているか",
@@ -461,13 +558,17 @@
       "score": 82,
       "score_reason": "AIコーディングツールの実用的な活用事例と、経験豊富な開発者がAIとどのように協調して生産性を高めているかを示す具体的な情報であり、多くの開発者にとって参考になるため。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 0
     },
     {
       "title": "CohortFlow: ローカライズされた意味的補正を備えた操縦可能な臨床コホートキュレーションエージェント",
       "url": "https://arxiv.org/abs/2610.36100",
       "source": "arXiv cs.AI",
-      "published": "2026-10-28T04:00:00+00:00",
+      "published": "2026-10-29T04:00:00+00:00",
       "summary": "本記事は、ローカライズされた意味的補正機能を備えた、操縦可能な臨床コホートキュレーションエージェント「CohortFlow」について紹介しています。\n医療分野における特定の患者群（コホート）の選定をAIが支援し、その精度と柔軟性を高めることを目的としていると推測されます。\n臨床研究の効率化や個別化医療の推進に貢献する可能性を秘めています。",
       "tags": [
         "医療AI",
@@ -478,83 +579,34 @@
       "score": 82,
       "score_reason": "医療分野におけるコホート選定の自動化と精度向上は、臨床研究や個別化医療の発展に大きく寄与するため、実用性と社会貢献度が高いと判断しました。",
       "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "PROLED XDRディスプレイとTouchを搭載したMacBook Pro",
-      "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
-      "source": "Hacker News",
-      "published": "2026-10-28T17:10:37+00:00",
-      "hn_score": 458,
-      "hn_comments": 794,
-      "summary": "Appleは、PROLED XDRディスプレイとTouch機能を搭載した新しいMacBook Proを発表しました。\nこのモデルは、M5 ProおよびM5 Maxチップを搭載し、AI性能、最大24時間のバッテリー寿命、Dynamic Islandなどの新機能を備えています。\n特に、タンデムOLEDパネルを採用したPROLED XDRディスプレイは、比類ない明るさ、コントラスト、色再現性を実現し、Touch機能はプロのワークフローに新たな次元をもたらします。",
-      "tags": [
-        "MacBook Pro",
-        "ハードウェア",
-        "ディスプレイ技術"
-      ],
-      "category": "ハードウェア・ガジェット",
-      "score": 80,
-      "score_reason": "Appleの主力製品であるMacBook Proのメジャーアップデートであり、新しいディスプレイ技術やチップの搭載は、プロフェッショナルユーザーや競合他社に大きな影響を与えるため高スコアとした。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "Formlabs Studio 1 $699 レジンプリンター",
-      "url": "https://formlabs.com/products/form-studio-1-basic-founders-edition/",
-      "source": "Hacker News",
-      "published": "2026-10-28T21:19:30+00:00",
-      "hn_score": 71,
-      "hn_comments": 64,
-      "summary": "Formlabs Studio 1は、手頃な価格でプロフェッショナルグレードのレジン3Dプリンターです。\n強力で長寿命のプリントエンジンとオープンなプラットフォームを特徴とし、ほとんどの部品を2時間以内に高精細にプリントできます。\nUL GREENGUARD認証を取得しており、低化学物質排出で安全かつクリーンなワークフローを提供します。",
-      "tags": [
-        "3Dプリンター",
-        "レジン",
-        "ハードウェア"
-      ],
-      "category": "ハードウェア・ガジェット",
-      "score": 80,
-      "score_reason": "手頃な価格でプロフェッショナルなレジン3Dプリンターが提供されることは、個人クリエイターや中小企業にとって大きな影響があり、市場を拡大する可能性を秘めているためです。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "pfpdf — Markdown から、印刷品質の PDF へ",
-      "url": "https://pfpdf.preferred.tech/ja/",
-      "source": "はてなブックマーク",
-      "published": "2026-10-28T03:32:19+00:00",
-      "summary": "pfpdfは、Markdownから高品質なPDFを生成するツールです。\n日本語組版を第一級でサポートし、GFM、数式、コードハイライト、BibTeX、表紙などをVivliostyleとChromiumで組版します。\nnpxコマンドで簡単に利用でき、インストール不要でCI/CD環境での利用も考慮されています。",
-      "tags": [
-        "Markdown",
-        "PDF生成",
-        "日本語組版"
-      ],
-      "category": "その他",
-      "score": 80,
-      "score_reason": "Markdownから高品質なPDFを生成するツールは需要が高く、特に日本語組版のサポートやインストール不要の手軽さは実用性が高く評価できる。",
-      "analysis_status": "ok",
       "is_hot": false,
-      "topic_group": 1,
-      "topic_size": 2
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 0
     },
     {
-      "title": "MarkdownからきれいなPDFを作るCLIツールpfpdfを公開しました｜株式会社Preferred Networks",
-      "url": "https://www.preferred.jp/ja/blog/tech/1798",
-      "source": "はてなブックマーク",
-      "published": "2026-10-28T04:31:34+00:00",
-      "summary": "Preferred NetworksがMarkdownから高品質な日本語PDFを生成するCLIツール「pfpdf」をオープンソース公開しました。\nGitHub Flavored Markdown、数式、コードハイライト、BibTeX引用などに対応し、7種類のテンプレートを同梱しています。\nnpxで動作し、内部ではVivliostyle CLIとChromiumを利用してPDFを組版します。",
+      "title": "Xで話題の、原文をたどってドメイン知識を集めるスキル「imozuru」を普通のAI検索と比べてみた",
+      "url": "https://qiita.com/inoyu-qiita/items/4fc91ba7f67d6763960e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-27T10:06:53+00:00",
+      "reading_min": 9,
+      "summary": "AI検索では得にくい、特定の分野の深いドメイン知識を原文から芋づる式に収集するClaude Codeスキル「imozuru」を紹介。\n通常のAI検索が検索上位の要約に留まるのに対し、imozuruは用語、中心人物、媒体を特定し、論文や記事の引用、著者の発信をたどることで、より信頼性の高い情報を収集。\nコーヒーの「酸っぱい」と「フルーティー」の違いをテーマに、両者の情報収集能力を比較し、imozuruが専門家の視点や言葉遣いを深く掘り下げられることを実証。",
       "tags": [
-        "Markdown",
-        "PDF生成",
-        "CLIツール"
+        "imozuru",
+        "AI検索",
+        "ドメイン知識",
+        "Claude Code",
+        "情報収集"
       ],
-      "category": "プログラミング言語",
-      "score": 80,
-      "score_reason": "MarkdownからのPDF生成は多くの開発者にとって需要が高く、日本語対応や豊富な機能が実用性に優れるため高評価です。",
+      "category": "AI・機械学習",
+      "score": 82,
+      "score_reason": "AIによる情報収集が主流となる中で、表面的な情報だけでなく、専門的なドメイン知識を深く掘り下げる新しいアプローチを提示しており、AIの活用範囲を広げる可能性を秘めているため。",
       "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "topic_group": 1,
-      "topic_size": 2
+      "hatena_count": 2
     },
     {
       "title": "「DuckDB 2.0 LTS」正式リリース。Quackプロトコルによるクライアント/サーバ機能や非同期処理による高速化など",
@@ -571,30 +623,17 @@
       "score": 80,
       "score_reason": "高速なデータ分析を可能にするDuckDBのメジャーアップデートであり、クライアント/サーバ機能の追加は利用範囲を大きく広げるため高評価です。",
       "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "Cloudflare R2のマルチパートアップロード：100MBから5GBへ、ブラウザでの再開とキャンセル機能",
-      "url": "https://dev.to/kangchanghwan/from-a-100-mb-cap-to-5-gb-cloudflare-r2-multipart-upload-with-resume-and-cancel-in-the-browser-1kd2",
-      "source": "Dev.to",
-      "published": "2026-10-28T23:08:55+00:00",
-      "summary": "Cloudflare R2を利用したファイル共有サービス「Clipboard Share」が、100MBのファイルサイズ制限を5GBに大幅に拡張しました。\nこれは、ブラウザからのマルチパートアップロード、再開、キャンセル機能を実装することで実現され、大規模ファイルの安定した転送を可能にします。\nサーバーはURLの署名と状態管理のみを行い、ファイルデータはブラウザからR2へ直接転送される効率的なアーキテクチャを採用しています。",
-      "tags": [
-        "Cloudflare R2",
-        "マルチパートアップロード",
-        "Web開発"
-      ],
-      "category": "Web・フロントエンド",
-      "score": 80,
-      "score_reason": "大規模ファイルのアップロードにおける課題を解決する実用的な技術であり、Cloudflare R2の活用事例としても参考になるため。",
-      "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 43
     },
     {
       "title": "データ生成戦略による深層学習モデル性能の向上：オリーブの木の病気の分類",
       "url": "https://arxiv.org/abs/2610.35984",
       "source": "arXiv cs.AI",
-      "published": "2026-10-28T04:00:00+00:00",
+      "published": "2026-10-29T04:00:00+00:00",
       "summary": "本記事は、データ生成戦略を用いて深層学習モデルの性能を向上させる方法について論じています。\n特に、オリーブの木の病気の分類という具体的な応用例を通じて、その有効性を示していると推測されます。\nデータ不足が課題となる分野において、モデルの精度向上に貢献する可能性を秘めています。",
       "tags": [
         "深層学習",
@@ -605,7 +644,54 @@
       "score": 80,
       "score_reason": "データ生成戦略は、特に医療や農業分野などデータが限られる応用において深層学習の性能を向上させる実用的なアプローチであり、新規性と実用性が高いと評価しました。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 0
+    },
+    {
+      "title": "Raspberry Pi Pico 2 Wでゲームを実行する小型ワールドモデル",
+      "url": "https://github.com/SheepSeb/tinyworldformer",
+      "source": "Hacker News",
+      "published": "2026-10-29T20:32:28+00:00",
+      "hn_score": 109,
+      "hn_comments": 7,
+      "reading_min": 11,
+      "summary": "Raspberry Pi Pico 2 W上で動作する、2つの小型ニューラルネットワークを用いたワールドモデルが開発されました。\n1つはゲームの次のフレームと報酬を予測し、もう1つは生成されたフレームに基づいて行動を選択します。\nメモリ効率の良いループ型トランスフォーマーを採用し、マイクロコントローラ上でのAIゲーム実行の可能性を示しています。",
+      "tags": [
+        "Raspberry Pi",
+        "マイクロコントローラ",
+        "AIモデル"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 80,
+      "score_reason": "低コストのマイクロコントローラ上でAIワールドモデルとゲーム実行を実現したことは、エッジAIの応用範囲を広げる点で技術的新規性と実用性が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "Flock社、ミネソタ市のAI監視カメラ再設置禁止命令を無視 - 市が契約を解除したにもかかわらず、市民が2台のカメラを発見し苦情",
+      "url": "https://www.reddit.com/r/technology/comments/1xijr1i/flock_ignores_minnesota_citys_orders_not_to/",
+      "source": "Reddit",
+      "published": "2026-10-29T13:18:47+00:00",
+      "summary": "Flock社が、ミネソタ市によるAI監視カメラの再設置禁止命令を無視し、市民がカメラを発見して苦情を申し立てています。\n市はFlock社との契約を解除したにもかかわらず、同社は監視カメラを再設置したと報じられています。\nこれは、AI監視技術の倫理的・法的問題、プライバシー侵害、そして企業と自治体の関係における課題を浮き彫りにしています。",
+      "tags": [
+        "AI監視",
+        "プライバシー",
+        "倫理"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "AI監視カメラの設置を巡る企業と自治体の対立は、プライバシー侵害や倫理的な問題を含んでおり、社会的な影響が大きく、今後のAI技術の導入における重要な論点となるため、高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "目指せClaude全冠！4つの試験を全部受けたので攻略法を紹介します",
@@ -622,81 +708,61 @@
       "score": 78,
       "score_reason": "最新のAIモデルであるClaudeの公式資格に関する具体的な攻略情報であり、AI技術の普及に伴い需要が高まる資格取得に直接役立つため。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 0
     },
     {
-      "title": "スムーズであることは正しいことではない：FiftyOneでロボットエピソードの品質をトリアージする",
-      "url": "https://dev.to/harpreetsahota/smooth-isnt-the-same-as-correct-triaging-robot-episode-quality-with-fiftyone-375n",
-      "source": "Dev.to",
-      "published": "2026-10-28T23:11:59+00:00",
-      "summary": "ロボットエピソードデータセットの品質評価において、「スムーズさ」と「正しさ」は異なる概念であることが強調されています。\nロボットが間違った動作をスムーズに行った場合、従来のモーションメトリクスでは問題が検出できないため、人間の介入が不可欠です。\nFiftyOneのようなツールを活用し、自動スコアリングで問題の可能性が高いエピソードを特定し、人間の限られた注意を効率的に向ける「トリアージ」の重要性が提唱されています。",
+      "title": "「AIっぽいデザイン」はなぜ消えないのか ── Impeccableを読み解いて、同じ依頼で4通り作って比べた",
+      "url": "https://qiita.com/jinxin4869/items/0e72c0b925b75f1c28c9?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-28T14:53:27+00:00",
+      "reading_min": 13,
+      "summary": "AIが生成するデザインに共通する「AIっぽさ」を避けるためのスキル「Impeccable」について解説。\nImpeccableは特定のスタイルではなく、AIが陥りがちなデザインパターンを避けるための手順を提供。\n同じ依頼文で4通りのデザインを生成し比較することで、Impeccableの有効性とAIデザインの進化の速さを検証。",
       "tags": [
-        "ロボットデータ",
-        "データ品質",
-        "FiftyOne"
+        "AIデザイン",
+        "Impeccable",
+        "UI/UX",
+        "Claude Code",
+        "デザイン思考"
       ],
-      "category": "AI・機械学習",
+      "category": "Web・フロントエンド",
       "score": 78,
-      "score_reason": "ロボット学習におけるデータ品質評価の限界と、人間によるトリアージの必要性を具体的に示しており、実用的な課題解決に繋がるため評価しました。",
+      "score_reason": "AIによるデザイン生成が普及する中で、「AIっぽさ」を脱却し、より人間らしいクリエイティブなデザインを生み出すための具体的な手法と考察が示されており、実用性が高いと評価した。",
       "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
-      "title": "ナンバープレートカメラが「不審な」移動パターンを示すため、警察が人々を停車させている",
-      "url": "https://www.reddit.com/r/technology/comments/1xhw79t/police_are_pulling_people_over_because_license/",
-      "source": "Reddit",
-      "published": "2026-10-28T18:26:09+00:00",
-      "summary": "ナンバープレート認識カメラが個人の移動パターンを分析し、「不審」と判断された場合に警察が停車させる事態が発生しています。\nこれは、監視技術の進化が個人のプライバシーと自由を侵害する可能性を示唆しています。\nアルゴリズムによる判断の公平性や、監視社会の倫理的側面について議論が必要です。",
-      "tags": [
-        "監視技術",
-        "プライバシー",
-        "AI倫理"
-      ],
-      "category": "セキュリティ",
-      "score": 75,
-      "score_reason": "監視技術の進展が個人の自由とプライバシーに与える影響は大きく、社会的な議論を呼ぶ重要なテーマである。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "AI時代のシニアエンジニアとは",
-      "url": "https://speakerdeck.com/yosuke_furukawa/ai-jidai-no-shinia-enjinia-toha",
+      "title": "デザインは見た目ではなく意思決定だった ─ フロントエンドエンジニアがデザインシステム導入で学び直したこと - Findy Tech Blog",
+      "url": "https://tech.findy.co.jp/entry/2026/10/30/070000",
       "source": "はてなブックマーク",
-      "published": "2026-10-28T10:56:52+00:00",
-      "summary": "本記事は、AIがコードを生成する時代におけるシニアエンジニアの役割と価値について考察しています。\nAIの進化により、エンジニアの業務内容が変化する中で、シニアエンジニアが持つべきスキルや視点が議論されています。\n技術的な知識だけでなく、問題解決能力やチームマネジメント、戦略的思考の重要性が強調されています。",
+      "published": "2026-10-29T22:25:22+00:00",
+      "reading_min": 7,
+      "summary": "フロントエンドエンジニアがデザインシステム導入を通じて、デザインが単なる見た目ではなく意思決定のプロセスであると学んだ経験を共有。\nデザイナーとの認識のずれから、デザインシステム導入にはUI部品の置き換えだけでなく、ドメイン理解と意思決定の根拠が重要だと気づいた経緯を解説。\nエンジニアがデザイン領域に踏み込む際の課題と、デザインシステムの真の価値について考察しています。",
       "tags": [
-        "AI",
-        "キャリア",
-        "エンジニアリング"
+        "デザインシステム",
+        "フロントエンド",
+        "UI/UX"
       ],
-      "category": "ビジネス・業界動向",
-      "score": 75,
-      "score_reason": "AIの進化がエンジニアのキャリアパスに与える影響は大きく、今後の業界動向を考える上で重要な示唆を与えるため高評価です。",
+      "category": "Web・フロントエンド",
+      "score": 78,
+      "score_reason": "デザインシステム導入におけるエンジニアとデザイナーの認識のずれという、実践的な課題と学びを具体的に示しており、開発現場での共感を呼ぶ内容であるため評価しました。",
       "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "誰もがロボットデータをスコアリングしているが、誰も見ていない：ロボットデータ品質スタックのマッピング",
-      "url": "https://dev.to/harpreetsahota/everyone-is-scoring-robot-data-nobody-is-looking-at-it-mapping-the-robot-data-quality-stack-5j4",
-      "source": "Dev.to",
-      "published": "2026-10-28T23:12:59+00:00",
-      "summary": "ロボットデータ品質のスコアリングは普及しているものの、そのスコアが実際の意思決定に繋がっていない現状が指摘されています。\n特に、アクションのみの品質スコアでは、ポリシーを劣化させるような重要なエラーを見逃す可能性があることが監査で判明しました。\n画像ML分野が経験したように、データフォーマット、ラベリング、品質・キュレーションツールの成熟を経て、プラットフォームが統合される段階にあると分析されています。",
-      "tags": [
-        "ロボットデータ",
-        "データ品質",
-        "MLOps"
-      ],
-      "category": "AI・機械学習",
-      "score": 75,
-      "score_reason": "ロボット学習におけるデータ品質の課題を明確にし、その解決策の方向性を示すものであり、今後のロボティクス開発に重要な示唆を与えるため評価しました。",
-      "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 35
     },
     {
       "title": "AIが節約する時間の測定について",
       "url": "https://arxiv.org/abs/2610.35942",
       "source": "arXiv cs.AI",
-      "published": "2026-10-28T04:00:00+00:00",
+      "published": "2026-10-29T04:00:00+00:00",
       "summary": "本記事は、AIが節約する時間をどのように測定するかという重要な問いに焦点を当てています。\nAI導入による効率化や生産性向上を定量的に評価するための方法論を議論していると推測されます。\nAIのビジネス価値を理解し、投資対効果を測る上で不可欠な視点を提供します。",
       "tags": [
         "AI",
@@ -707,61 +773,34 @@
       "score": 75,
       "score_reason": "AIの導入効果を定量的に評価する手法は、ビジネスにおけるAI活用を促進する上で非常に重要であり、実用性が高いと判断しました。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 0
     },
     {
-      "title": "CNC石材彫刻",
-      "url": "https://carmelitegothic.com/cnc-stone-carving/",
-      "source": "Hacker News",
-      "published": "2026-10-28T14:38:22+00:00",
-      "hn_score": 369,
-      "hn_comments": 110,
-      "summary": "古代建築であるゴシック様式において、CNCマシンは場違いに見えるかもしれませんが、中世の建築家が常に最先端技術を追求していたことを考えると、現代のCNC技術の導入は自然な流れです。\nCNCマシンとロボットは、ゴシック教会の複雑な細部を比較的短時間で彫刻する能力を解き放ち、熟練した彫刻家が数ヶ月かかっていた作業を数日で完了させることが可能になりました。\nこれにより、現代の若者が持つコンピュータスキルを活かし、コストや時間の制約から諦められていた真のゴシック建築の美しさを再び現実のものとすることができます。",
+      "title": "AIはどれくらい動画編集ができるのか!? Claude CodeでYouTube動画編集した話",
+      "url": "https://qiita.com/tsukasa_japan/items/b8bca096170d087e271d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-29T08:11:44+00:00",
+      "reading_min": 5,
+      "summary": "YouTube動画編集のプロセスにおいて、AI（Claude Code）がどこまで自動化できるかを検証。\n撮影素材と指示をClaude Codeに与え、CapCutのプロジェクトファイルを生成させることで、大まかな編集作業をAIに任せることに成功。\n最終的な調整は人間が行うハイブリッドなワークフローを提案し、AIによる動画編集の可能性と課題を示す。",
       "tags": [
-        "CNC",
-        "製造業",
-        "建築"
+        "動画編集",
+        "AI",
+        "Claude Code",
+        "YouTube",
+        "CapCut"
       ],
-      "category": "ハードウェア・ガジェット",
-      "score": 70,
-      "score_reason": "伝統的な工芸と現代技術の融合という興味深い事例であり、製造業における自動化の可能性を示す一方で、IT業界全体への直接的な影響は限定的であるためこのスコアとした。",
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "動画編集というクリエイティブな作業にAIを適用する試みであり、具体的な成果と課題を提示しているため、AIの応用分野の広がりを示す事例として評価した。",
       "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "業務マスタの新規登録をSeleniumで連続化したら、「新規」の判定を2回直すことになった【Python】",
-      "url": "https://zenn.dev/cutlet_of_pork/articles/selenium-rpa-new-entry-key-definition",
-      "source": "Zenn",
-      "published": "2026-10-28T07:08:48+00:00",
-      "summary": "SeleniumとPythonを用いて業務システムの新規マスタ登録を自動化した際、「新規」の判定ロジックを2回修正した経験について語られています。\nASP.NETのWeb画面操作において、登録処理の途中でデータが作成されないことや、クリック操作の例外処理における「送信済みかもしれない」状態の扱いなど、RPA開発における実践的な課題と解決策が詳細に記述されています。\nClaude Codeを活用して実装を進めたことにも触れられており、AIとRPAの組み合わせによる業務効率化のヒントが提供されています。",
-      "tags": [
-        "RPA",
-        "Selenium",
-        "Python",
-        "業務自動化"
-      ],
-      "category": "その他",
-      "score": 70,
-      "score_reason": "RPA開発における具体的な課題と解決策が詳細に記述されており、実務に役立つ知見が豊富であるため、実用性が高いです。",
-      "analysis_status": "ok",
-      "is_hot": false
-    },
-    {
-      "title": "ICEが米国史上最大規模の反左翼監視作戦を実行中",
-      "url": "https://www.reddit.com/r/technology/comments/1xhnxg6/ice_is_running_one_of_the_largest_antileft/",
-      "source": "Reddit",
-      "published": "2026-10-28T13:22:16+00:00",
-      "summary": "ICE（移民税関執行局）が、米国史上最大規模とされる反左翼監視作戦を展開していると報じられています。\nこの作戦は、特定の政治的指向を持つ市民に対する広範な監視活動を意味し、市民のプライバシーと自由を侵害する可能性があります。\n政府による監視活動の倫理的・法的問題が改めて問われる事態です。",
-      "tags": [
-        "監視",
-        "プライバシー",
-        "政府機関"
-      ],
-      "category": "セキュリティ",
-      "score": 70,
-      "score_reason": "政府による大規模な監視活動は、市民のプライバシーと自由に関わる重要な問題であり、社会的な影響が大きい。",
-      "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "バグバウンティが研究者のセキュリティスキルをいかに磨くか",
@@ -778,60 +817,243 @@
       "score": 70,
       "score_reason": "セキュリティ研究におけるAIの役割と、バグバウンティプログラムの重要性を再認識させる内容であり、セキュリティ意識向上に貢献するため。",
       "analysis_status": "ok",
-      "is_hot": false
+      "is_hot": false,
+      "new_at": "2026-10-29T08:16:51.279560+09:00",
+      "is_prev_seen": true,
+      "first_seen": "2026-10-29T08:16:51.279560+09:00",
+      "hatena_count": 0
     },
     {
-      "title": "エンジニア歴数か月の私「理論上、理解できない物事はない」",
-      "url": "https://qiita.com/Minotaurasu/items/a13a3fc940c2cd384063?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-10-26T01:50:31+00:00",
-      "summary": "エンジニア歴数か月の著者が、物事を理解する上でのマインドセットについて語っています。\n「難しい」と感じる原因は「前提知識の不足」と「結びつけるステップの多さ」の2つに集約されると分析しています。\n料理の例えを用いて、レシピ通りに材料（前提知識）を揃え、工程（結びつけ）を踏めば、理論上どんな物事も理解できると主張しています。",
+      "title": "Show HN: DOOMをTransformerに変えた",
+      "url": "https://github.com/mottopanikeiku/doomformer",
+      "source": "Hacker News",
+      "published": "2026-10-29T23:25:46+00:00",
+      "hn_score": 22,
+      "hn_comments": 7,
+      "reading_min": 15,
+      "summary": "DOOMをTransformerモデルとして動作させる「Doomformer」が発表されました。\n整数ニューラルネットワークをZDoomマップにコンパイルし、ViZDoomで実行します。\nNumPyと比較して非常に低速ですが、DOOMエンジン内でAIを動かすというユニークな試みです。",
       "tags": [
-        "学習方法",
-        "マインドセット",
-        "エンジニアリング"
+        "DOOM",
+        "Transformer",
+        "AI"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "DOOMというゲームエンジンをAIの実行環境として利用するという、非常に独創的で技術的な挑戦が高く評価されます。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "Reddit株、売上見通しが期待外れで17%下落、デイリーアクティブユーザーも停滞",
+      "url": "https://www.reddit.com/r/technology/comments/1xiyega/reddit_stock_sink_17_after_sales_outlook/",
+      "source": "Reddit",
+      "published": "2026-10-29T22:32:43+00:00",
+      "summary": "Redditの株価が、売上見通しの失望とデイリーアクティブユーザー数の停滞により17%下落しました。\nこれは、ソーシャルメディア企業の成長戦略とユーザーエンゲージメントの課題を浮き彫りにしています。\n投資家は、今後のRedditの業績と市場での競争力に注目しています。",
+      "tags": [
+        "Reddit",
+        "株価",
+        "ソーシャルメディア"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "大手ソーシャルメディア企業の株価下落は、市場全体の動向やテクノロジー企業の成長戦略に影響を与える可能性があり、ビジネス的な重要性が高いため、このスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "1週間以上メンテだった『神撃のバハムート』、「PHP脆弱性」対応が無事完了。“複数世代にわたる大幅なバージョンアップ”を経て、老舗ゲームが大改修 - AUTOMATON",
+      "url": "https://automaton-media.com/articles/newsjp/20261029-476529/",
+      "source": "はてなブックマーク",
+      "published": "2026-10-29T13:06:34+00:00",
+      "reading_min": 2,
+      "summary": "Cygamesの老舗ゲーム『神撃のバハムート』が、PHPの脆弱性対応のため1週間以上の緊急メンテナンスを完了しました。\n複数世代にわたるPHPのバージョンアップと広範囲なプログラム改修が行われ、サービス継続への強い意志が示されました。\n同時期に多くのサービスがPHP脆弱性で影響を受ける中、大規模改修を成功させた事例として注目されます。",
+      "tags": [
+        "PHP",
+        "脆弱性",
+        "ゲーム運営"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 70,
+      "score_reason": "PHPの脆弱性対応という緊急性の高い課題に対し、長期メンテナンスを経て大規模なシステム改修を成功させた事例であり、安定稼働の重要性を示すため評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 57
+    },
+    {
+      "title": "Redditは全員にログインを強制する / Redditは「ログイン専用の体験」になるとCEOのSteve Huffmanが語る。",
+      "url": "https://www.reddit.com/r/technology/comments/1xiuqhd/reddit_will_force_everyone_to_log_in_reddit_is/",
+      "source": "Reddit",
+      "published": "2026-10-29T20:09:33+00:00",
+      "summary": "RedditのCEO、Steve Huffmanが、プラットフォームを「ログイン専用の体験」にすると発表。\nこれにより、Redditのコンテンツ閲覧にはユーザーアカウントでのログインが必須となる。\nこの変更は、ユーザーエンゲージメントの向上やデータ利用の管理強化を目的としていると推測される。",
+      "tags": [
+        "Reddit",
+        "ログイン必須",
+        "プラットフォーム戦略",
+        "ユーザー体験",
+        "ビジネスモデル"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "大手SNSプラットフォームのビジネス戦略変更であり、ユーザー体験やデータ利用に大きな影響を与える可能性があるため、業界動向として注目に値すると判断した。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "GMO犯人捜索マップ",
+      "url": "https://satoru.net/hacker/gmo/261029-map.html",
+      "source": "はてなブックマーク",
+      "published": "2026-10-29T22:46:10+00:00",
+      "reading_min": 1,
+      "summary": "このマップは、GMO関連のIPアドレスとアクセス履歴を追跡し、公開しない形で警察やGMOに情報を提供しているツールのようです。\nユーザーは気になるIPアドレスをブックマークし、アクセス履歴を確認できる機能が提供されています。\nChatGPTなどのLLMに履歴を貼り付けて分析することも推奨されており、情報収集と分析にAIを活用する可能性を示唆しています。",
+      "tags": [
+        "サイバーセキュリティ",
+        "IPアドレス",
+        "情報追跡"
+      ],
+      "category": "セキュリティ",
+      "score": 65,
+      "score_reason": "特定のIPアドレス追跡と情報提供に関するツールであり、サイバーセキュリティや情報管理の側面で一定の重要性があるため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 65
+    },
+    {
+      "title": "アニメーションフレームごとに異なる持続時間でループをサンプリングする方法",
+      "url": "https://dev.to/liangqi_zhao_b047bd1f3236/how-to-sample-a-loop-with-different-durations-for-each-animation-frame-5mg",
+      "source": "Dev.to",
+      "published": "2026-10-30T00:45:09+00:00",
+      "reading_min": 2,
+      "summary": "アニメーションフレームごとに異なる持続時間を持つループをサンプリングする汎用的なJavaScript関数を紹介。\n均一なフレームレートではなく、各フレームに個別の表示時間を設定することで、より表現豊かなアニメーションを実現。\nゲームアートやWebアニメーションなど、様々な用途で応用可能な技術です。",
+      "tags": [
+        "アニメーション",
+        "JavaScript",
+        "ゲーム開発"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 65,
+      "score_reason": "アニメーションの表現力を高めるための実用的な技術解説であり、特定のニッチな分野で役立つが、業界全体への影響は限定的であるためこのスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "エルニーニョ現象によりカリフォルニアの海岸が高潮に見舞われる",
+      "url": "https://gizmodo.com/el-nino-is-already-flooding-californias-coasts-and-the-years-highest-tides-havent-arrived-2000832574",
+      "source": "Hacker News",
+      "published": "2026-10-29T21:48:35+00:00",
+      "hn_score": 62,
+      "hn_comments": 13,
+      "summary": "エルニーニョ現象の影響で、カリフォルニアの海岸が高潮に見舞われています。\n今後、さらに高い潮位が予測されており、沿岸地域への影響が懸念されます。\n気候変動と自然現象の複合的な影響が、インフラや住民生活に与えるリスクが浮き彫りになっています。",
+      "tags": [
+        "エルニーニョ",
+        "気候変動",
+        "自然災害"
       ],
       "category": "その他",
       "score": 60,
-      "score_reason": "技術的な新規性はないものの、学習に対する前向きな姿勢と具体的な理解のフレームワークは、特に若手エンジニアにとって有益な視点を提供する可能性があるため。",
+      "score_reason": "IT技術ニュースではないが、気候変動は社会インフラやビジネスに間接的な影響を与える可能性があるため、一般的な関心事として一定のスコアを付与する。",
       "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
-      "title": "Mass Effect 5スタジオがサウジアラビアによる買収後、EAから包括性を抑えるよう指示されたと元BioWare開発者が主張",
-      "url": "https://www.reddit.com/r/technology/comments/1xhsgqs/mass_effect_5_studio_was_reportedly_told_to_tone/",
+      "title": "なぜGoogleは2020年の選挙の勝者を教えてくれなかったのか？",
+      "url": "https://www.reddit.com/r/technology/comments/1xixjms/why_wouldnt_google_tell_me_who_won_the_2020/",
       "source": "Reddit",
-      "published": "2026-10-28T16:13:07+00:00",
-      "summary": "Mass Effect 5の開発スタジオが、EAによるサウジアラビアの買収後、ゲームの「包括性」を抑えるよう指示されたと元BioWare開発者が主張しています。\nこれは、文化的な価値観や政治的背景がゲームコンテンツに影響を与える可能性を示唆しています。\nエンターテイメント業界における表現の自由と、企業の倫理的責任が問われる問題です。",
+      "published": "2026-10-29T21:58:18+00:00",
+      "summary": "この記事は、Googleの検索結果が特定の情報、特に2020年の選挙結果について、なぜ明確な回答を示さなかったのかという疑問を投げかけています。\nユーザーは、Googleが情報提供において中立性や正確性をどのように保っているのか、あるいは特定の情報が制限される理由について関心を持っています。\nこれは、大手テクノロジー企業の検索アルゴリズムと情報統制に関する議論を提起するものです。",
       "tags": [
-        "ゲーム業界",
-        "企業倫理",
-        "文化的多様性"
+        "Google",
+        "検索エンジン",
+        "情報統制"
       ],
       "category": "ビジネス・業界動向",
       "score": 60,
-      "score_reason": "ゲーム業界におけるコンテンツの多様性や表現の自由に影響を与える可能性があり、ビジネスと文化の交差点における重要な問題である。",
+      "score_reason": "Googleの検索結果に関するユーザーの疑問は、情報提供の透明性やアルゴリズムの公平性といった、現代社会における重要なテーマを提起しているため、中程度のスコアとしました。",
       "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
-      "title": "なぜ鳥はエベレストの上を飛べるのか",
-      "url": "https://lede-v2.nautil.us/why-birds-can-fly-over-mount-everest-237864",
+      "title": "豚、国家、そして戦争：紅の豚 (2014)",
+      "url": "https://journal.animationstudies.org/article/id/66/",
       "source": "Hacker News",
-      "published": "2026-10-24T13:17:59+00:00",
-      "hn_score": 14,
-      "hn_comments": 2,
-      "summary": "この記事は、鳥がエベレストのような高所を飛べる理由を、酸素、進化、地球の運命というテーマで科学に基づいた物語として語っています。\nルドヤード・キップリングの「Just So Stories」に倣い、進化を「Mr. R&D」と擬人化し、動物の適応の背景にある科学的プロセスを説明しています。\n鳥の優れた肺が恐竜から受け継がれた経緯や、進化がどのように問題解決と予期せぬ結果をもたらすかを探ります。",
+      "published": "2026-10-29T22:26:38+00:00",
+      "hn_score": 35,
+      "hn_comments": 3,
+      "reading_min": 28,
+      "summary": "宮崎駿監督のアニメ映画『紅の豚』が、戦争と平和、国家、そして個人の自由というテーマをどのように描いているかを分析した論文です。\nこの映画が第一次世界大戦と第二次世界大戦の間の時代を背景に、反戦メッセージを伝えていることが論じられています。\n特に、湾岸戦争やユーゴスラビア紛争といった現代の紛争との関連性も指摘されています。",
       "tags": [
-        "進化論",
-        "生物学",
-        "科学"
+        "アニメーション",
+        "宮崎駿",
+        "反戦"
       ],
       "category": "その他",
-      "score": 40,
-      "score_reason": "IT技術ニュースとしては直接的な関連性が低く、科学的な読み物としての価値は高いものの、IT業界への影響は限定的であるためです。",
+      "score": 30,
+      "score_reason": "IT技術ニュースとは直接関係ないアニメーション研究の論文であり、IT業界への影響は限定的であるためスコアは低い。",
       "analysis_status": "ok",
-      "is_hot": false
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "偉大なアメリカの悪童：トム・ソーヤー150周年",
+      "url": "https://claremontreviewofbooks.com/the-great-american-rascal/",
+      "source": "Hacker News",
+      "published": "2026-10-29T22:14:23+00:00",
+      "hn_score": 32,
+      "hn_comments": 9,
+      "reading_min": 13,
+      "summary": "マーク・トウェインの「トム・ソーヤーの冒険」が刊行150周年を迎えました。\nこの小説は、アメリカ文学における独立の瞬間を象徴しています。\nヨーロッパ文化からの脱却を目指した当時のアメリカの文豪たちの思想が紹介されています。",
+      "tags": [
+        "文学",
+        "アメリカ史",
+        "文化"
+      ],
+      "category": "その他",
+      "score": 30,
+      "score_reason": "IT技術ニュースとしては直接的な関連性が低く、文学作品の記念記事であるためスコアは低めです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     }
-  ]
+  ],
+  "briefing": {
+    "edition": "朝刊",
+    "generated_at": "2026-10-30T09:57:56.929540+09:00",
+    "summary_lines": [
+      "AI・機械学習分野では、Mistral Large 4の公開やAIエージェントの活用が加速。",
+      "セキュリティ面では、GitHub Actionsの安全な利用やパスキーの偽サイト対策が重要。",
+      "仮想通貨取引所Binanceへの大規模サイバー攻撃が報じられ、警戒が強まる。"
+    ],
+    "focus_tags": [
+      "AI",
+      "セキュリティ",
+      "大規模言語モデル",
+      "AIエージェント",
+      "パスキー"
+    ]
+  }
 }

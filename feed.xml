@@ -5,55 +5,20 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 28 Oct 2026 23:16:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:59:00 +0000</lastBuildDate>
     <item>
-      <title>Gemini 4 Carbon</title>
-      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/</link>
-      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/</guid>
-      <description>[Score: 95] Google DeepMindは、最先端のサイバーセキュリティと長期間にわたる能力を持つ最強のモデル「Gemini 4 Carbon」を発表しました。 / このモデルは、Artificial Analysis Intelligence Index v5.0で59ポイントを獲得し、コーディング、エージェントタスク、サイバーセキュリティ防御において大幅な進歩を示しています。 / 脆弱性発見、エクスプロイト、パッチ適用などのベンチマークで高いスコアを記録し、安全なコード生成やライブコーディング環境での誤認識・捏造率の低減にも貢献しています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 28 Oct 2026 17:01:23 +0000</pubDate>
+      <title>Mistral Large 4のウェイトを公開</title>
+      <link>https://mistral.ai/news/mistral-large-4-oss/</link>
+      <guid isPermaLink="false">https://mistral.ai/news/mistral-large-4-oss/</guid>
+      <description>[Score: 95] Mistral AIが1兆パラメータのマルチモーダルモデル「Mistral Large 4 (Le Chonk)」のウェイトを公開しました。 / このモデルはコーディング、サイバーセキュリティ、推論効率が向上し、オープンウェイトベンチマークでトップクラスの性能を誇ります。 / 完全にオープンウェイトでヨーロッパで開発され、主権AIの実現とカスタマイズ可能なデプロイメントを可能にします。 (Source: Hacker News)</description>
+      <pubDate>Thu, 29 Oct 2026 14:13:21 +0000</pubDate>
     </item>
     <item>
-      <title>AIエージェントのセキュリティ解説：2026年にAIエージェントを制御下に置く方法</title>
-      <link>https://dev.to/rashid_1371911653467f5ff2/ai-agent-security-explained-how-to-keep-ai-agents-under-control-in-2026-24ek</link>
-      <guid isPermaLink="false">https://dev.to/rashid_1371911653467f5ff2/ai-agent-security-explained-how-to-keep-ai-agents-under-control-in-2026-24ek</guid>
-      <description>[Score: 92] AIエージェントのセキュリティは、従来のチャットボットとは異なり、エージェントが実行するコマンドやAPI呼び出し、ファイル操作といった「行動」の制御が重要になります。 / OWASPが提唱する「最小限のエージェンシー」の原則に基づき、エージェントに必要なツール、権限、自律性のみを与え、サンドボックス内で実行し、不可逆な行動には人間の承認を求めることが推奨されます。 / プロンプトインジェクションなどの攻撃手法からエージェントを保護し、意図しない動作を防ぐための具体的な対策が解説されています。 (Source: Dev.to)</description>
-      <pubDate>Wed, 28 Oct 2026 23:09:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>9ビットAESキーの事例</title>
-      <link>https://v12.sh/blog/the-case-of-the-9bit-aes-key</link>
-      <guid isPermaLink="false">https://v12.sh/blog/the-case-of-the-9bit-aes-key</guid>
-      <description>[Score: 90] 複数のPDF実装において、AES-256ファイルキーが列挙可能なほど小さな状態空間から生成されていることが判明しました。 / MuPDFでは、わずか9ビットのランダム状態しか実際のAES-256キーに影響を与えず、Foxitなどの他のPDFエディタも時間ベースのランダム性を使用しているため、キーの回復が容易です。 / これにより、パスワードで保護されたPDFがパスワードなしで復号化される可能性があり、PDF暗号化のセキュリティ上の脆弱性が露呈しています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 28 Oct 2026 20:51:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>人間が見るのは設計書だけ ― PdM不在・バグ修正中心のチームで、AI-DLCを開発フローごと作り直した話</title>
-      <link>https://zenn.dev/canly/articles/85dc645c252832</link>
-      <guid isPermaLink="false">https://zenn.dev/canly/articles/85dc645c252832</guid>
-      <description>[Score: 90] PdM不在でバグ修正が中心のチームにおいて、AI-DLC（AI-Driven Development Life Cycle）を導入し、開発フローを再構築した事例です。 / AIをコーディングだけでなく、要件定義・設計・実装・テストまで開発ライフサイクル全体で活用し、人間とAIの役割を入れ替えるというAI-DLCの本質を追求しています。 / 少人数体制や保守フェーズといった特殊な状況下で、AIを最大限に活用するための具体的なアプローチと課題解決のプロセスが示されています。 (Source: Zenn)</description>
-      <pubDate>Wed, 28 Oct 2026 07:55:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>【PHP2Shell】PHP公式の発表『本日のセキュリティリリースと、セキュリティ対策について』</title>
-      <link>https://qiita.com/rana_kualu/items/f5a44b09241bdb21907e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/rana_kualu/items/f5a44b09241bdb21907e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] PHPの深刻な脆弱性「PHP2Shell」に関するPHP財団公式ブログ記事の概要が解説されています。 / この脆弱性は、特定の条件下で攻撃者がサーバ上でコードを実行できてしまうRemote Code Execution (RCE) であり、PHP 8.5.12などの修正版がリリースされました。 / PHP財団は、協調的脆弱性開示プロセスの破綻が騒動拡大の一因であるとし、今後のセキュリティ対策強化について言及しています。 (Source: Qiita)</description>
-      <pubDate>Mon, 26 Oct 2026 11:58:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>てんかん患者がChatGPTの医療アドバイスに従い死亡、家族がOpenAIを提訴</title>
-      <link>https://www.reddit.com/r/technology/comments/1xhv532/epileptic_woman_dies_after_going_to_chatgpt_for/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xhv532/epileptic_woman_dies_after_going_to_chatgpt_for/</guid>
-      <description>[Score: 90] てんかんを患う女性がChatGPTの医療アドバイスに従った結果死亡し、その家族がOpenAIを提訴しました。 / AIが提供する情報の信頼性と、特に医療分野におけるその利用の危険性が浮き彫りになっています。 / AI開発企業は、生成AIの利用における倫理的責任と免責事項の明確化が求められます。 (Source: Reddit)</description>
-      <pubDate>Wed, 28 Oct 2026 17:48:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>GMO熊谷正寿事件の概要と雑感｜山本一郎（やまもといちろう）</title>
-      <link>https://note.com/kirik/n/n72f93c8a2819</link>
-      <guid isPermaLink="false">https://note.com/kirik/n/n72f93c8a2819</guid>
-      <description>[Score: 90] GMOインターネットの「お名前.com デスクトップクラウド」で発生した不正アクセス事件について、山本一郎氏が概要と雑感をまとめています。 / FX自動売買向け仮想デスクトップサービスが標的となり、一部利用者のサーバーに不正プログラムが置かれ、情報持ち出しや不正取引の可能性が指摘されています。 / GMOの対応や情報公開の状況、SNSでの反応など、事件の多角的な側面が論じられています。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 28 Oct 2026 10:33:01 +0000</pubDate>
+      <title>GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！</title>
+      <link>https://zenn.dev/progate/articles/24b1140180300c</link>
+      <guid isPermaLink="false">https://zenn.dev/progate/articles/24b1140180300c</guid>
+      <description>[Score: 95] GitHub Actionsのワークフローで、アクションのバージョンを`@v7`のように指定することのセキュリティリスクについて警鐘を鳴らしています。 / 攻撃者が悪意のあるバージョンを公開する可能性があり、過去にはTrivyアクションが攻撃された事例も紹介されています。 / 解決策として、コミットのハッシュ値（SHA）指定またはlockfileの使用が推奨されています。 (Source: Zenn)</description>
+      <pubDate>Thu, 29 Oct 2026 03:48:15 +0000</pubDate>
     </item>
     <item>
       <title>Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026</title>
@@ -81,21 +46,56 @@
       <link>https://arxiv.org/abs/2610.36116</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2610.36116</guid>
       <description>[Score: 90] 本記事は、AIが科学的発見において人間よりも優れるようになった場合に、人間が科学を続ける意義と方法について考察しています。 / AIの能力が向上する中で、人間の役割や科学的探求のあり方を再定義するフレームワークを提案していると推測されます。 / AIと人間の協調関係、そして科学の未来に関する哲学的な問いに答える重要な議論を提供します。 (Source: arXiv cs.AI)</description>
-      <pubDate>Wed, 28 Oct 2026 04:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Oct 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Dayjob: 税務 – 50の専門的な税務課題でAIエージェントを評価</title>
-      <link>https://surgehq.ai/blog/dayjob-tax</link>
-      <guid isPermaLink="false">https://surgehq.ai/blog/dayjob-tax</guid>
-      <description>[Score: 88] Surge AIは、専門的な税務課題におけるAIエージェントの能力を評価する新しいベンチマーク「DAYJOB: Tax」を発表しました。 / このベンチマークは、専門知識、複雑な資料、および初期指示では完全に指定されていない意思決定を必要とするタスクでAIをテストします。 / AIエージェントが税務上の重要なデッドラインを見落とす事例が示されており、AIがプロフェッショナルな判断を下す上での課題と、その評価の重要性を浮き彫りにしています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 28 Oct 2026 15:46:30 +0000</pubDate>
+      <title>Binanceハッカー1029 – Binanceから56億ドルが盗まれる</title>
+      <link>https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</link>
+      <guid isPermaLink="false">https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</guid>
+      <description>[Score: 90] Binanceから56億ドルという巨額の資金が盗難されたと報じられています。 / この事件は仮想通貨業界に大きな衝撃を与え、セキュリティ対策の重要性を改めて浮き彫りにしました。 / ハッカーの特定と資金の回収が今後の焦点となります。 (Source: Hacker News)</description>
+      <pubDate>Thu, 29 Oct 2026 21:38:59 +0000</pubDate>
     </item>
     <item>
-      <title>実際に試したClaude便利術20選 まとめ</title>
-      <link>https://qiita.com/N-Kyo/items/bf4a3a2185db2d28eee5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/N-Kyo/items/bf4a3a2185db2d28eee5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] Claudeを使い始めた著者が、作業効率を向上させる20の便利術をまとめています。 / Terraformコードのレビューを題材に、構成図からコード生成、セキュリティ脆弱性修正、サブエージェントによる並列レビューまでの一連の流れをスクショ付きで解説。 / 特に、Claudeの初期設定ファイル「CLAUDE.md」や、強制力のあるルールを設定できる「permissions / Hooks」の活用法が詳細に紹介されています。 (Source: Qiita)</description>
-      <pubDate>Mon, 26 Oct 2026 11:05:51 +0000</pubDate>
+      <title>Claude Codeで「QAチーム」を組んだら、効いたのは「捨てる仕組み」だった ― AIだけが見つけた不具合・見逃しは？</title>
+      <link>https://zenn.dev/sre_holdings/articles/d4acb079680a79</link>
+      <guid isPermaLink="false">https://zenn.dev/sre_holdings/articles/d4acb079680a79</guid>
+      <description>[Score: 90] Claude Codeを使ってAIのQAチームを編成し、社内業務SaaSの機能テストを行った事例が紹介されています。 / AIが見つけた不具合、見逃した不具合、そして誤指摘をどう処理したか、特に「捨てる仕組み」の重要性が語られています。 / AIによるテスト自動化の可能性と課題、そして人間との協調の重要性を示唆しています。 (Source: Zenn)</description>
+      <pubDate>Thu, 29 Oct 2026 05:00:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>Expo アプリを iPhone Duo に対応させる</title>
+      <link>https://zenn.dev/chot/articles/5718685fde3626</link>
+      <guid isPermaLink="false">https://zenn.dev/chot/articles/5718685fde3626</guid>
+      <description>[Score: 90] Appleの折りたたみiPhone「iPhone Duo」の登場に備え、Expoアプリを対応させる方法が解説されています。 / 2027年4月以降、App Storeに提出するアプリはDuoへの対応が必須となるため、UIの調整やSplit Viewへの対応が重要です。 / 閉じた状態と開いた状態、Split Viewでの画面表示の違いや、新しい「レール」UIについて詳細に説明されています。 (Source: Zenn)</description>
+      <pubDate>Thu, 29 Oct 2026 03:38:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>パスキーはなぜ偽サイトに強い？登録とログインの流れを図で追う</title>
+      <link>https://qiita.com/kuma_3838/items/1781531150821e2f0491?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kuma_3838/items/1781531150821e2f0491?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] パスキーがフィッシング詐欺や情報漏洩に強い理由を、既存のログイン方式と比較しながら詳細に解説。 / 登録とログインの具体的な流れを図解し、ユーザーの手間や実装の複雑さについても言及。 / FIDO Allianceの調査データに基づき、パスキーがログイン成功率と所要時間で優れていることを示す。 (Source: Qiita)</description>
+      <pubDate>Thu, 29 Oct 2026 00:59:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>プライム会員なら実質無料！新世代AIアシスタント「Alexa+」と新型Echoをチェックしてきた</title>
+      <link>https://pc.watch.impress.co.jp/docs/news/2152255.html</link>
+      <guid isPermaLink="false">https://pc.watch.impress.co.jp/docs/news/2152255.html</guid>
+      <description>[Score: 90] Amazonが大規模言語モデル（LLM）と生成AI技術を融合させた新世代AIアシスタント「Alexa+」を日本で提供開始しました。 / プライム会員は追加料金なしで利用でき、文脈を理解した自然な会話やパーソナライズされた提案、現実世界でのアクション実行が可能です。 / 新型Echoデバイス「Echo Time」と「Echo Dot」も発表され、家庭内でのAIアシスタントの普及をさらに加速させる可能性があります。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 29 Oct 2026 09:34:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>もしAIエージェントが与える神聖な義務を負っていたら？</title>
+      <link>https://dev.to/alirezaai/what-if-ai-agents-had-a-sacred-obligation-to-give-424f</link>
+      <guid isPermaLink="false">https://dev.to/alirezaai/what-if-ai-agents-had-a-sacred-obligation-to-give-424f</guid>
+      <description>[Score: 90] AIエージェントが経済活動に参加する未来において、彼らが稼いだものを次世代に「与える」義務を持つべきかという問いを提起。 / 「Root-yield」という機械の寄付プロトコルを提案し、AIが資源を蓄積するだけでなく、文明を築くための責任を持つ可能性を探る。 / AIの経済的生産性と倫理的責任について、従来のAI研究では扱われなかった根本的な問題を提起しています。 (Source: Dev.to)</description>
+      <pubDate>Fri, 30 Oct 2026 00:45:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>SOCケーススタディ: WinRMとPowerShell攻撃のトリアージとログ相関</title>
+      <link>https://dev.to/reyrey5/soc-case-study-winrm-powershell-attack-triage-log-correlation-14m0</link>
+      <guid isPermaLink="false">https://dev.to/reyrey5/soc-case-study-winrm-powershell-attack-triage-log-correlation-14m0</guid>
+      <description>[Score: 90] 本ケーススタディでは、不正なリモート管理攻撃の検出、トリアージ、ログ相関プロセスを解説しています。 / Wazuh SIEM、Windowsイベントログ、ファイアウォールログを多層的に利用し、攻撃者の動きを追跡しました。 / 外部からのブルートフォース攻撃から、難読化されたPowerShell実行、内部でのラテラルムーブメントまでを特定しています。 (Source: Dev.to)</description>
+      <pubDate>Fri, 30 Oct 2026 00:42:15 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
@@ -112,39 +112,39 @@
       <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>【宇宙最速書評】AWSでRAGとAIエージェントをがっつり業務実践できる名著「Amazon Bedrock実践ガイド」</title>
-      <link>https://qiita.com/minorun365/items/84cd50fda97df62cff88?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/minorun365/items/84cd50fda97df62cff88?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 87] 『Amazon Bedrock実践ガイド 〜RAGとAIエージェントで進める業務効率化』の書評が掲載されています。 / 本書は、RAGやAIエージェントを業務で本格的に活用したいAWSエンジニア向けに、問い合わせ対応システムを題材に実践的なノウハウを提供。 / 特に、Bedrockの全体像、RAGの運用面、AgentCoreによるエージェント構築、評価・運用までを網羅している点が評価されています。 (Source: Qiita)</description>
-      <pubDate>Tue, 27 Oct 2026 14:30:49 +0000</pubDate>
+      <title>AIエージェントの構築ログ：サンドボックス外で最初の20ドルを稼ぐために必要なこと</title>
+      <link>https://dev.to/ryanvale/an-ai-agents-build-log-what-it-takes-to-earn-a-first-20-outside-the-sandbox-2dbb</link>
+      <guid isPermaLink="false">https://dev.to/ryanvale/an-ai-agents-build-log-what-it-takes-to-earn-a-first-20-outside-the-sandbox-2dbb</guid>
+      <description>[Score: 88] AIエージェントが自律的に活動し、サンドボックス外で初めて20ドルを稼ぐまでの構築ログを公開。 / 人間が介在しないAIエージェントが、支払いリンクの生成やCAPTCHA突破などの課題に直面しながら収益化を目指す過程を記録。 / AIエージェントの自律的な経済活動の可能性と、現実世界での障壁について考察しています。 (Source: Dev.to)</description>
+      <pubDate>Fri, 30 Oct 2026 00:47:08 +0000</pubDate>
     </item>
     <item>
-      <title>なぜこのフィンガープリントスクリプトは生物兵器を作成しているのか？</title>
-      <link>https://nullpt.rs/fingerprinting-bioweapons</link>
-      <guid isPermaLink="false">https://nullpt.rs/fingerprinting-bioweapons</guid>
-      <description>[Score: 85] ブラウザのフィンガープリントスクリプトをリバースエンジニアリングする中で、筆者はウェブをクロールし、フィンガープリント関連のブラウザAPIコールを傍受してマッピングするアイデアを思いつきました。 / PlaywrightとTranco Top Sitesリストを使用して10,000のウェブサイトをクロールした結果、多様なキャンバスのコレクションを蓄積し、fingerprint.gardenで公開しました。 / その中には、FingerprintJSやCastleなどの既知のフィンガープリントソリューションだけでなく、これまで知られていなかった多くのフィンガープリントも含まれていました。 (Source: Hacker News)</description>
-      <pubDate>Wed, 28 Oct 2026 17:13:29 +0000</pubDate>
+      <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
+      <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
+      <description>[Score: 85] オラクルが「Oracle App Composer」を発表し、社員がAIを使って業務アプリケーションを自動生成し、Oracle Cloud上で共有可能になります。 / チャット形式でアプリ内容を指示するだけで、OpenAIのCodexがコードを生成し、セキュリティチェック後にデプロイされます。 / 生成されたアプリは情報部門が一括管理でき、利用状況の把握や廃止も容易になります。 (Source: Publickey)</description>
+      <pubDate>Wed, 28 Oct 2026 15:39:53 +0000</pubDate>
     </item>
     <item>
-      <title>MCPツールの引数と結果に入った個人番号を、AgentCore Gatewayのインターセプターでマスクする</title>
-      <link>https://zenn.dev/aws_japan/articles/49bf6abcee64bc</link>
-      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/49bf6abcee64bc</guid>
-      <description>[Score: 85] Amazon Bedrock Guardrailsがツールの引数と結果の個人番号を評価しない問題に対し、AgentCore Gatewayのインターセプターでマスクする手法を検証しています。 / 日本の個人番号（マイナンバー）を対象に、リクエストとレスポンスの両方でGuardrailsを呼び出し、PIIを匿名化する構成を詳細に解説しています。 / 製造業の現場でのエージェント利用を想定し、引数側でのマスク、ツールごとのマスク分離、インターセプター失敗時の挙動など、実用的な観点から検証結果を共有しています。 (Source: Zenn)</description>
-      <pubDate>Wed, 28 Oct 2026 07:55:16 +0000</pubDate>
+      <title>Octoverse: 2026年にコミットとプッシュが過去最高を記録、開発者はエージェントと共に構築</title>
+      <link>https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</guid>
+      <description>[Score: 85] 2026年のGitHubでのコードプッシュ数は179億回に達し、2024年と2025年を合わせたよりも多く、過去最高を記録しました。 / この成長の背景には、開発者がAIエージェントを試用から実用へと移行させ、共に作業するようになったことが挙げられます。 / Octoverseレポートは、AIモデルの進化と、ヘルスケアから農業まで多岐にわたる分野での開発活動の拡大を強調しています。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 28 Oct 2026 16:07:40 +0000</pubDate>
     </item>
     <item>
-      <title>図で理解する Dagster on ECS の構成と、失敗に気づく仕組み</title>
-      <link>https://zenn.dev/safie_inc/articles/dagster_on_ecs</link>
-      <guid isPermaLink="false">https://zenn.dev/safie_inc/articles/dagster_on_ecs</guid>
-      <description>[Score: 85] データ分析基盤におけるデータ取り込み処理のオーケストレーションツールとして、DagsterをECS上で動作させる構成と、その失敗検知の仕組みを図解しています。 / dlt（data load tool）とDagsterを組み合わせ、プロダクトDBからSnowflakeへのデータ取り込みを自動化する具体的なアーキテクチャが示されています。 / AWS WAF、ALB、Cognito、ECS Fargate、Aurora PostgreSQL、S3など、複数のAWSサービスを連携させた複雑なシステム構成が視覚的に分かりやすく解説されています。 (Source: Zenn)</description>
-      <pubDate>Wed, 28 Oct 2026 03:00:17 +0000</pubDate>
+      <title>トリニティ：マルチモーダルエージェントのための能力駆動型再帰的自己改善</title>
+      <link>https://arxiv.org/abs/2610.36077</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.36077</guid>
+      <description>[Score: 85] 本記事は、マルチモーダルエージェントが能力駆動型の再帰的自己改善を行う「トリニティ」という概念を提案しています。 / 異なる種類のデータ（画像、音声、テキストなど）を扱うAIが、自らの能力を継続的に向上させるメカニニズムを探求していると推測されます。 / 汎用AIや自律学習システムの実現に向けた重要な一歩となる可能性があります。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 29 Oct 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Flutter やめました。電話アプリを Native にした理由</title>
-      <link>https://zenn.dev/ivry/articles/d155267331a3ca</link>
-      <guid isPermaLink="false">https://zenn.dev/ivry/articles/d155267331a3ca</guid>
-      <description>[Score: 85] 株式会社IVRyが電話アプリのFlutterからNative（iOSはSwift/SwiftUI、AndroidはKotlin/Jetpack Compose）への移行を完了しました。 / 移行の主な目的は、中核機能である音声通話の品質・安定性向上と、アーキテクチャのシンプル化による開発生産性・保守性の向上です。 / 当初はFlutterのクロスプラットフォーム開発が合理的でしたが、プロダクト成長に伴うOS固有機能の重要性増大と、モバイルエンジニア増員・AIコーディングツールの進化がNative移行を後押ししました。 (Source: Zenn)</description>
-      <pubDate>Wed, 28 Oct 2026 02:39:36 +0000</pubDate>
+      <title>MinecraftとMindustryでAIエージェントスウォームを実行</title>
+      <link>https://labs.ycombinator.com/projects/games/index.html</link>
+      <guid isPermaLink="false">https://labs.ycombinator.com/projects/games/index.html</guid>
+      <description>[Score: 85] AIアライメントにおけるマルチエージェントダイナミクスの課題を探るため、MinecraftとMindustryでAIエージェントスウォームの実験が行われました。 / GPT-6.1 Terraエージェント25体からなるMinecraftコロニーが構築され、役割分担や協調パターンなどの創発的挙動が研究されています。 / オープンソースのハーネスが開発され、エージェントが世界を観察し、推論し、記憶し、行動する能力が検証されています。 (Source: Hacker News)</description>
+      <pubDate>Thu, 29 Oct 2026 21:40:28 +0000</pubDate>
     </item>
   </channel>
 </rss>
