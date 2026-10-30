@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 30 Oct 2026 00:59:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 04:11:59 +0000</lastBuildDate>
     <item>
       <title>Mistral Large 4のウェイトを公開</title>
       <link>https://mistral.ai/news/mistral-large-4-oss/</link>
@@ -98,6 +98,13 @@
       <pubDate>Fri, 30 Oct 2026 00:42:15 +0000</pubDate>
     </item>
     <item>
+      <title>攻撃者がBinanceから最大30億ドルを奪取</title>
+      <link>https://www.reddit.com/r/technology/comments/1xj351g/attacker_gets_away_with_up_to_3_billion_from/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xj351g/attacker_gets_away_with_up_to_3_billion_from/</guid>
+      <description>[Score: 90] Binanceが大規模なサイバー攻撃を受け、最大30億ドルが盗まれたと報じられています。 / この事件は仮想通貨取引所のセキュリティ対策に大きな疑問を投げかけるものです。 / ユーザー資産の安全性と、今後の取引所の対応が注目されます。 (Source: Reddit)</description>
+      <pubDate>Fri, 30 Oct 2026 02:06:31 +0000</pubDate>
+    </item>
+    <item>
       <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
       <link>https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</guid>
@@ -138,13 +145,6 @@
       <guid isPermaLink="false">https://arxiv.org/abs/2610.36077</guid>
       <description>[Score: 85] 本記事は、マルチモーダルエージェントが能力駆動型の再帰的自己改善を行う「トリニティ」という概念を提案しています。 / 異なる種類のデータ（画像、音声、テキストなど）を扱うAIが、自らの能力を継続的に向上させるメカニニズムを探求していると推測されます。 / 汎用AIや自律学習システムの実現に向けた重要な一歩となる可能性があります。 (Source: arXiv cs.AI)</description>
       <pubDate>Thu, 29 Oct 2026 04:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>MinecraftとMindustryでAIエージェントスウォームを実行</title>
-      <link>https://labs.ycombinator.com/projects/games/index.html</link>
-      <guid isPermaLink="false">https://labs.ycombinator.com/projects/games/index.html</guid>
-      <description>[Score: 85] AIアライメントにおけるマルチエージェントダイナミクスの課題を探るため、MinecraftとMindustryでAIエージェントスウォームの実験が行われました。 / GPT-6.1 Terraエージェント25体からなるMinecraftコロニーが構築され、役割分担や協調パターンなどの創発的挙動が研究されています。 / オープンソースのハーネスが開発され、エージェントが世界を観察し、推論し、記憶し、行動する能力が検証されています。 (Source: Hacker News)</description>
-      <pubDate>Thu, 29 Oct 2026 21:40:28 +0000</pubDate>
     </item>
   </channel>
 </rss>

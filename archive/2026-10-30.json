@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-30T09:57:56.929540+09:00",
-  "total_count": 48,
-  "success_count": 48,
+  "generated_at": "2026-10-30T13:11:07.712051+09:00",
+  "total_count": 61,
+  "success_count": 61,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -11,8 +11,8 @@
       "url": "https://mistral.ai/news/mistral-large-4-oss/",
       "source": "Hacker News",
       "published": "2026-10-29T14:13:21+00:00",
-      "hn_score": 1171,
-      "hn_comments": 335,
+      "hn_score": 1260,
+      "hn_comments": 355,
       "reading_min": 15,
       "summary": "Mistral AIが1兆パラメータのマルチモーダルモデル「Mistral Large 4 (Le Chonk)」のウェイトを公開しました。\nこのモデルはコーディング、サイバーセキュリティ、推論効率が向上し、オープンウェイトベンチマークでトップクラスの性能を誇ります。\n完全にオープンウェイトでヨーロッパで開発され、主権AIの実現とカスタマイズ可能なデプロイメントを可能にします。",
       "tags": [
@@ -48,7 +48,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 11
+      "hatena_count": 43
     },
     {
       "title": "Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026",
@@ -141,8 +141,8 @@
       "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
       "source": "Hacker News",
       "published": "2026-10-29T21:38:59+00:00",
-      "hn_score": 637,
-      "hn_comments": 383,
+      "hn_score": 918,
+      "hn_comments": 540,
       "summary": "Binanceから56億ドルという巨額の資金が盗難されたと報じられています。\nこの事件は仮想通貨業界に大きな衝撃を与え、セキュリティ対策の重要性を改めて浮き彫りにしました。\nハッカーの特定と資金の回収が今後の焦点となります。",
       "tags": [
         "Binance",
@@ -156,7 +156,9 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 1,
+      "topic_group": 2,
+      "topic_size": 2
     },
     {
       "title": "Claude Codeで「QAチーム」を組んだら、効いたのは「捨てる仕組み」だった ― AIだけが見つけた不具合・見逃しは？",
@@ -242,7 +244,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 94
+      "hatena_count": 131
     },
     {
       "title": "もしAIエージェントが与える神聖な義務を負っていたら？",
@@ -285,6 +287,28 @@
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "攻撃者がBinanceから最大30億ドルを奪取",
+      "url": "https://www.reddit.com/r/technology/comments/1xj351g/attacker_gets_away_with_up_to_3_billion_from/",
+      "source": "Reddit",
+      "published": "2026-10-30T02:06:31+00:00",
+      "summary": "Binanceが大規模なサイバー攻撃を受け、最大30億ドルが盗まれたと報じられています。\nこの事件は仮想通貨取引所のセキュリティ対策に大きな疑問を投げかけるものです。\nユーザー資産の安全性と、今後の取引所の対応が注目されます。",
+      "tags": [
+        "サイバー攻撃",
+        "仮想通貨",
+        "セキュリティ侵害"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "仮想通貨業界に甚大な影響を与える可能性のある大規模なセキュリティ侵害であり、その影響度と重要性は非常に高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 2
     },
     {
       "title": "JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能",
@@ -419,8 +443,8 @@
       "url": "https://labs.ycombinator.com/projects/games/index.html",
       "source": "Hacker News",
       "published": "2026-10-29T21:40:28+00:00",
-      "hn_score": 135,
-      "hn_comments": 52,
+      "hn_score": 215,
+      "hn_comments": 68,
       "reading_min": 60,
       "summary": "AIアライメントにおけるマルチエージェントダイナミクスの課題を探るため、MinecraftとMindustryでAIエージェントスウォームの実験が行われました。\nGPT-6.1 Terraエージェント25体からなるMinecraftコロニーが構築され、役割分担や協調パターンなどの創発的挙動が研究されています。\nオープンソースのハーネスが開発され、エージェントが世界を観察し、推論し、記憶し、行動する能力が検証されています。",
       "tags": [
@@ -435,7 +459,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 2
     },
     {
       "title": "元フロントエンドエンジニアがプロダクトエンジニアとして強制成長した1年",
@@ -456,7 +480,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 5
+      "hatena_count": 11
     },
     {
       "title": "KaniによるVerylコンパイラの形式検証",
@@ -520,7 +544,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 57
+      "hatena_count": 112
     },
     {
       "title": "AIが書いたコードかどうかは関係ない。セキュリティは依然として重要だ。",
@@ -542,6 +566,47 @@
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "Polymarket、ハッカーがアカウントを枯渇させた後、国際取引を停止",
+      "url": "https://www.reddit.com/r/technology/comments/1xiwd7z/polymarket_halted_international_trading_after/",
+      "source": "Reddit",
+      "published": "2026-10-29T21:11:32+00:00",
+      "summary": "Polymarketがハッカーによる攻撃を受け、ユーザーアカウントから資金が流出したため、国際取引を停止しました。\nこの事件は、予測市場プラットフォームのセキュリティ脆弱性を露呈しています。\nユーザーの信頼回復と、今後のセキュリティ強化が急務となります。",
+      "tags": [
+        "サイバー攻撃",
+        "仮想通貨",
+        "セキュリティ侵害"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "予測市場プラットフォームにおけるセキュリティ侵害であり、ユーザー資産の安全性と業界の信頼性に大きな影響を与えるため重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "読んでいないコードを私たちはどれだけ信頼できるのか - YAMAGUCHI::weblog",
+      "url": "https://ymotongpoo.hatenablog.com/entry/2026/10/30/093000",
+      "source": "はてなブックマーク",
+      "published": "2026-10-30T00:38:15+00:00",
+      "reading_min": 22,
+      "summary": "生成AIが書いたコードの信頼性について、SREの観点から考察しています。\nテストが通ったコードでも、人間がすべてを読んでいない現状での課題を提示。\nTDDやオブザーバビリティの重要性を強調し、AI開発における品質保証のあり方を論じています。",
+      "tags": [
+        "AI",
+        "SRE",
+        "TDD"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "生成AIによるコード生成が普及する中で、その信頼性と品質保証は喫緊の課題であり、SREやTDDといった実践的な解決策を提示しているため重要度が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 78
     },
     {
       "title": "3人のJava ChampionsがGitHub Copilotをどのように活用して生産性を向上させているか",
@@ -655,8 +720,8 @@
       "url": "https://github.com/SheepSeb/tinyworldformer",
       "source": "Hacker News",
       "published": "2026-10-29T20:32:28+00:00",
-      "hn_score": 109,
-      "hn_comments": 7,
+      "hn_score": 163,
+      "hn_comments": 9,
       "reading_min": 11,
       "summary": "Raspberry Pi Pico 2 W上で動作する、2つの小型ニューラルネットワークを用いたワールドモデルが開発されました。\n1つはゲームの次のフレームと報酬を予測し、もう1つは生成されたフレームに基づいて行動を選択します。\nメモリ効率の良いループ型トランスフォーマーを採用し、マイクロコントローラ上でのAIゲーム実行の可能性を示しています。",
       "tags": [
@@ -671,7 +736,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 3
     },
     {
       "title": "Flock社、ミネソタ市のAI監視カメラ再設置禁止命令を無視 - 市が契約を解除したにもかかわらず、市民が2台のカメラを発見し苦情",
@@ -692,6 +757,27 @@
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "Figmaを離れてClaude CodeでUIデザインをするようになった話｜🐰",
+      "url": "https://note.com/hgffdgn654/n/n92467b83a1c1",
+      "source": "はてなブックマーク",
+      "published": "2026-10-29T14:57:36+00:00",
+      "reading_min": 7,
+      "summary": "FigmaからClaude Codeを活用したUIデザインワークフローへの移行事例を紹介。\nAIが生成した動くモックを基に、コードでデザインを進める具体的な運用方法を解説しています。\n「指示は削る、文脈は盛る」というAIとの協業における効果的なプロンプト戦略を提案しています。",
+      "tags": [
+        "UIデザイン",
+        "生成AI",
+        "Claude Code"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 80,
+      "score_reason": "AIを活用したUIデザインの新しいワークフローは、デザインと開発の連携を強化し、生産性向上に寄与する可能性が高く、実用的な知見を提供しています。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 73
     },
     {
       "title": "目指せClaude全冠！4つの試験を全部受けたので攻略法を紹介します",
@@ -756,7 +842,28 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 35
+      "hatena_count": 57
+    },
+    {
+      "title": "再利用可能なClaudeスキルファイルを使って日々の業務を効率化する方法",
+      "url": "https://dev.to/joekurt/how-i-use-reusable-claude-skill-files-to-run-my-daily-work-1ep",
+      "source": "Dev.to",
+      "published": "2026-10-30T04:05:36+00:00",
+      "reading_min": 6,
+      "summary": "ClaudeなどのAIチャットでプロンプトが破綻する問題と、その解決策としてスキルファイルの利用を提案。\n単一目的のMarkdownファイルとしてスキルを定義することで、AIの指示追従性を高め、トークン消費を抑える方法を解説しています。\n複雑なプロンプトを小さな再利用可能なコンポーネントに分割する利点を説明しています。",
+      "tags": [
+        "AI",
+        "プロンプトエンジニアリング",
+        "Claude"
+      ],
+      "category": "AI・機械学習",
+      "score": 78,
+      "score_reason": "AIとの効果的な対話方法、特にプロンプト管理の課題に対する実践的な解決策を提示しており、AIツールの日常的な利用効率向上に直結するため有用です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "AIが節約する時間の測定について",
@@ -799,6 +906,50 @@
       "analysis_status": "ok",
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Herdrがネイティブアプリをリリース",
+      "url": "https://github.com/herdrdev/herdr-app",
+      "source": "Hacker News",
+      "published": "2026-10-30T00:42:41+00:00",
+      "hn_score": 60,
+      "hn_comments": 48,
+      "reading_min": 5,
+      "summary": "Herdrは、ターミナルとコーディングエージェントのためのデスクトップアプリです。\n作業をスペースに整理し、エージェントの状況を確認、ウィンドウを閉じてもターミナルを実行し続けられます。\nLinux、macOS、Windowsに対応しており、簡単なインストールで利用可能です。",
+      "tags": [
+        "開発ツール",
+        "ターミナル",
+        "デスクトップアプリ"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 75,
+      "score_reason": "開発者の生産性向上に貢献する新しいタイプのデスクトップアプリであり、複数のOSに対応している点が評価できます。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "WAFは有用だが、完全な保護を提供するわけではない：WAFとは何か？インシデントからの教訓",
+      "url": "https://dev.to/nabbisen/waf-is-useful-but-it-does-not-provide-complete-protection-what-is-a-waf-lessons-from-incidents-41gg",
+      "source": "Dev.to",
+      "published": "2026-10-30T04:05:44+00:00",
+      "reading_min": 4,
+      "summary": "WAF（Web Application Firewall）がHTTP/HTTPSトラフィックを検査し、既知の攻撃パターンをブロックする仕組みを解説。\nWAFがウェブサイトの入り口での防御に有効である一方で、サーバーやアプリケーション全体の完全な保護ではないことを強調しています。\nSQLインジェクションやXSSなどの攻撃からウェブアプリケーションを保護する役割と限界を説明しています。",
+      "tags": [
+        "WAF",
+        "セキュリティ",
+        "Webアプリケーション"
+      ],
+      "category": "セキュリティ",
+      "score": 75,
+      "score_reason": "WAFの基本的な機能と限界を明確に説明しており、セキュリティ対策を検討する上で重要な知識を提供しているため、実用性が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -885,7 +1036,72 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 57
+      "hatena_count": 91
+    },
+    {
+      "title": "Cuis: モダンなSmalltalk-80",
+      "url": "https://cuis.st/",
+      "source": "Hacker News",
+      "published": "2026-10-27T06:33:16+00:00",
+      "hn_score": 23,
+      "hn_comments": 6,
+      "reading_min": 1,
+      "summary": "Cuisは、シンプルでパワフル、かつポータブルなSmalltalk-80環境です。\n高速で効率的であり、様々なプラットフォームで動作します。\n2026年にはSmalltalksイベントが開催され、Cuisコミュニティからの発表も多数予定されています。",
+      "tags": [
+        "Smalltalk",
+        "プログラミング言語",
+        "開発環境"
+      ],
+      "category": "プログラミング言語",
+      "score": 70,
+      "score_reason": "Smalltalk-80の現代的な実装であり、シンプルさと効率性を追求している点が評価できます。コミュニティ活動も活発です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 8
+    },
+    {
+      "title": "本当に機能する仮想通貨取引ボット：正直な見分け方",
+      "url": "https://dev.to/botlab/crypto-trading-bots-that-work-how-to-tell-honestly-577j",
+      "source": "Dev.to",
+      "published": "2026-10-30T04:06:22+00:00",
+      "reading_min": 5,
+      "summary": "「機能する」仮想通貨取引ボットを見分けるための実践的なガイドを提供しています。\nバックテストの落とし穴、特に取引手数料やスリッページを考慮しないことの危険性を指摘。\n十分な取引数と多様な市場環境での検証の重要性を強調し、客観的な評価基準を提示しています。",
+      "tags": [
+        "Crypto",
+        "Trading Bot",
+        "Backtesting"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "仮想通貨取引ボットの選定において、誤解されがちな「機能する」の定義を明確にし、客観的な評価方法を提示しているため、投資家にとって実用的な価値があります。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "3時間かかるバグ修正を取り戻そう",
+      "url": "https://dev.to/grinushka/bring-back-the-three-hour-bug-36a3",
+      "source": "Dev.to",
+      "published": "2026-10-30T04:04:35+00:00",
+      "reading_min": 4,
+      "summary": "AIが数秒でバグを修正する現代において、かつて3時間かけてバグと格闘した経験の価値を問い直す記事です。\nAIによる効率化の恩恵を認めつつも、自力でのデバッグがもたらす深い学習と成長の機会が失われていると指摘しています。\n心理学の「望ましい困難」や「生成効果」に触れ、苦労して得た知識こそが真に身につくと論じています。",
+      "tags": [
+        "AI",
+        "Debugging",
+        "Learning"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "AIによる開発効率化の裏で失われつつある、エンジニアの学習機会と成長の重要性について示唆に富む議論を提供しており、多くの開発者にとって共感を呼ぶテーマであるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "Redditは全員にログインを強制する / Redditは「ログイン専用の体験」になるとCEOのSteve Huffmanが語る。",
@@ -928,7 +1144,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 65
+      "hatena_count": 131
     },
     {
       "title": "アニメーションフレームごとに異なる持続時間でループをサンプリングする方法",
@@ -948,6 +1164,50 @@
       "analysis_status": "ok",
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Astroterm: ターミナル用プラネタリウム",
+      "url": "https://github.com/da-luce/astroterm",
+      "source": "Hacker News",
+      "published": "2026-10-28T08:29:55+00:00",
+      "hn_score": 27,
+      "hn_comments": 1,
+      "reading_min": 5,
+      "summary": "AstrotermはC言語で書かれたターミナルベースの星図アプリケーションです。\nリアルタイムの星、惑星、星座の位置をターミナルに表示します。\n日付、時刻、場所を設定して、精密なASCIIレンダリングで夜空を観察できます。",
+      "tags": [
+        "C言語",
+        "CLIツール",
+        "天文学"
+      ],
+      "category": "その他",
+      "score": 65,
+      "score_reason": "ターミナルで動作するユニークなプラネタリウムであり、技術的な興味深さと実用性を兼ね備えています。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "LEDライトの点灯に数秒かかるのはLEDではなくドライバーのコンデンサが原因",
+      "url": "https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/your-led-light-takes-a-few-seconds-to-turn-on-its-the-driver-capacitor-not-the-leds-1521",
+      "source": "Dev.to",
+      "published": "2026-10-30T04:07:11+00:00",
+      "reading_min": 5,
+      "summary": "LEDライトの点灯が遅れる原因は、LEDチップではなくドライバーのコンデンサの劣化にあることを解説。\nソフトスタート機能とコンデンサの経年劣化による症状の違いを明確に説明しています。\nスマートスイッチなどによる微小電流漏れが原因となるケースも紹介し、診断方法を提示しています。",
+      "tags": [
+        "LED",
+        "ハードウェア",
+        "トラブルシューティング"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 65,
+      "score_reason": "日常生活で遭遇する可能性のあるLED照明のトラブルシューティングに関する具体的な情報であり、技術的な理解を深める上で有用です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -992,6 +1252,29 @@
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "ビリヤードが下手すぎて双曲平面にたどり着いた [動画]",
+      "url": "https://www.youtube.com/watch?v=kL9BTbIGxLg",
+      "source": "Hacker News",
+      "published": "2026-10-28T13:20:05+00:00",
+      "hn_score": 24,
+      "hn_comments": 2,
+      "reading_min": 1,
+      "summary": "この動画は、ビリヤードのプレイを通じて双曲平面という数学的な概念を視覚的に表現しています。\n通常のビリヤードとは異なる、非ユークリッド幾何学の世界でのボールの動きが示されます。\nエンターテイメント性と教育的要素を兼ね備えた興味深いコンテンツです。",
+      "tags": [
+        "数学",
+        "幾何学",
+        "エンターテイメント"
+      ],
+      "category": "その他",
+      "score": 55,
+      "score_reason": "技術的な新規性や業界への影響は小さいものの、数学的な概念を面白く視覚化した点で評価できます。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T13:11:07.712051+09:00",
+      "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 1
     },
     {
       "title": "豚、国家、そして戦争：紅の豚 (2014)",
@@ -1041,19 +1324,19 @@
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-10-30T09:57:56.929540+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-10-30T13:11:07.712051+09:00",
     "summary_lines": [
-      "AI・機械学習分野では、Mistral Large 4の公開やAIエージェントの活用が加速。",
-      "セキュリティ面では、GitHub Actionsの安全な利用やパスキーの偽サイト対策が重要。",
-      "仮想通貨取引所Binanceへの大規模サイバー攻撃が報じられ、警戒が強まる。"
+      "Mistral Large 4のウェイト公開でオープンソースAIが進化。",
+      "GitHub Actionsのセキュリティ強化とパスキーのフィッシング対策。",
+      "Binanceへの大規模サイバー攻撃とAIアシスタントの最新動向。"
     ],
     "focus_tags": [
-      "AI",
+      "AI・機械学習",
       "セキュリティ",
       "大規模言語モデル",
-      "AIエージェント",
-      "パスキー"
+      "仮想通貨",
+      "GitHub Actions"
     ]
   }
 }
