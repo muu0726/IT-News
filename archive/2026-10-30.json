@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-30T13:11:07.712051+09:00",
-  "total_count": 61,
-  "success_count": 61,
+  "generated_at": "2026-10-30T20:21:28.989872+09:00",
+  "total_count": 86,
+  "success_count": 86,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -11,8 +11,8 @@
       "url": "https://mistral.ai/news/mistral-large-4-oss/",
       "source": "Hacker News",
       "published": "2026-10-29T14:13:21+00:00",
-      "hn_score": 1260,
-      "hn_comments": 355,
+      "hn_score": 1520,
+      "hn_comments": 401,
       "reading_min": 15,
       "summary": "Mistral AIが1兆パラメータのマルチモーダルモデル「Mistral Large 4 (Le Chonk)」のウェイトを公開しました。\nこのモデルはコーディング、サイバーセキュリティ、推論効率が向上し、オープンウェイトベンチマークでトップクラスの性能を誇ります。\n完全にオープンウェイトでヨーロッパで開発され、主権AIの実現とカスタマイズ可能なデプロイメントを可能にします。",
       "tags": [
@@ -48,7 +48,50 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 43
+      "hatena_count": 67
+    },
+    {
+      "title": "北朝鮮が史上最大のハッキングでBinanceから63.6億ドルを盗む",
+      "url": "https://www.reddit.com/r/technology/comments/1xj6gwl/north_korea_steals_usd_636_billion_from_binance/",
+      "source": "Reddit",
+      "published": "2026-10-30T04:59:26+00:00",
+      "summary": "北朝鮮がBinanceから63.6億ドルを盗んだと報じられており、これは史上最大のハッキング事件とされています。\nこの大規模なサイバー攻撃は、国家レベルでのサイバー犯罪の脅威と、暗号資産取引所のセキュリティ対策の重要性を浮き彫りにしています。\n国際的な金融システムとサイバーセキュリティに対する深刻な影響が懸念されます。",
+      "tags": [
+        "サイバーセキュリティ",
+        "暗号資産",
+        "国家支援ハッキング"
+      ],
+      "category": "セキュリティ",
+      "score": 95,
+      "score_reason": "史上最大規模の暗号資産ハッキング事件であり、国家が関与している可能性が高く、金融システムとサイバーセキュリティに甚大な影響を与えるため、非常に重要度が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 3
+    },
+    {
+      "title": "信頼できないコンテンツは指示ではない",
+      "url": "https://dev.to/tridaai/untrusted-content-is-not-instructions-35jh",
+      "source": "Dev.to",
+      "published": "2026-10-30T11:17:56+00:00",
+      "reading_min": 5,
+      "summary": "AIエージェントがユーザーからの入力を指示として解釈してしまう「プロンプトインジェクション」の危険性について解説しています。\nモデルはシステムプロンプトとユーザー入力を区別できず、信頼できないコンテンツが指示として実行される可能性があります。\nOWASPのLLMアプリケーション脆弱性リストのトップに位置するこの問題に対し、モデルに区別を求めず、システム設計で権限とコンテンツの分離を推奨しています。",
+      "tags": [
+        "AIセキュリティ",
+        "プロンプトインジェクション",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "LLMの普及に伴いプロンプトインジェクションは深刻なセキュリティリスクであり、その本質と対策の重要性を明確に指摘しているため非常に高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026",
@@ -141,8 +184,8 @@
       "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
       "source": "Hacker News",
       "published": "2026-10-29T21:38:59+00:00",
-      "hn_score": 918,
-      "hn_comments": 540,
+      "hn_score": 1433,
+      "hn_comments": 929,
       "summary": "Binanceから56億ドルという巨額の資金が盗難されたと報じられています。\nこの事件は仮想通貨業界に大きな衝撃を与え、セキュリティ対策の重要性を改めて浮き彫りにしました。\nハッカーの特定と資金の回収が今後の焦点となります。",
       "tags": [
         "Binance",
@@ -158,7 +201,7 @@
       "is_hot": false,
       "hatena_count": 1,
       "topic_group": 2,
-      "topic_size": 2
+      "topic_size": 3
     },
     {
       "title": "Claude Codeで「QAチーム」を組んだら、効いたのは「捨てる仕組み」だった ― AIだけが見つけた不具合・見逃しは？",
@@ -179,7 +222,9 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 0,
+      "topic_group": 3,
+      "topic_size": 2
     },
     {
       "title": "Expo アプリを iPhone Duo に対応させる",
@@ -244,7 +289,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 131
+      "hatena_count": 149
     },
     {
       "title": "もしAIエージェントが与える神聖な義務を負っていたら？",
@@ -308,7 +353,28 @@
       "is_hot": false,
       "hatena_count": 0,
       "topic_group": 2,
-      "topic_size": 2
+      "topic_size": 3
+    },
+    {
+      "title": "Linuxカーネルの重大な脆弱性（CVE-2026-98432）によるカーリルへの影響について",
+      "url": "https://blog.calil.jp/2026/10/linux-kernel.html",
+      "source": "はてなブックマーク",
+      "published": "2026-10-30T03:40:04+00:00",
+      "reading_min": 3,
+      "summary": "Linuxカーネルのネットワーク処理に重大な脆弱性（CVE-2026-98432）が公表され、細工したパケットでサーバー停止やリモートコード実行の恐れがあります。\nカーリルは影響を受けるサーバーが含まれるものの、現時点で攻撃や被害は確認されておらず、修正版の適用などの対応を実施しています。\n図書館関係者に対し、一般的なセキュリティ対策だけでなく、リスク許容度を明確にし、脆弱性への理解を深めることの重要性を訴えています。",
+      "tags": [
+        "Linux",
+        "脆弱性",
+        "セキュリティ"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "Linuxカーネルの重大な脆弱性は広範囲のシステムに影響を与え、その対応とセキュリティ意識向上の提言が非常に重要であるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 108
     },
     {
       "title": "JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能",
@@ -480,7 +546,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 11
+      "hatena_count": 14
     },
     {
       "title": "KaniによるVerylコンパイラの形式検証",
@@ -544,7 +610,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 112
+      "hatena_count": 155
     },
     {
       "title": "AIが書いたコードかどうかは関係ない。セキュリティは依然として重要だ。",
@@ -606,7 +672,93 @@
       "new_at": "2026-10-30T13:11:07.712051+09:00",
       "first_seen": "2026-10-30T13:11:07.712051+09:00",
       "is_hot": false,
-      "hatena_count": 78
+      "hatena_count": 205
+    },
+    {
+      "title": "ブラックホールの撮影方法とは？",
+      "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
+      "source": "Hacker News",
+      "published": "2026-10-30T09:49:02+00:00",
+      "hn_score": 18,
+      "hn_comments": 11,
+      "reading_min": 47,
+      "summary": "ブラックホールを撮影するという困難な課題に、ハーバード大学の天体物理学者シェプ・ドーレマン氏と250人の研究チームが挑みました。\n彼らはイベント・ホライズン・テレスコープという世界中の電波望遠鏡ネットワークを連携させ、M87銀河の超大質量ブラックホールと天の川銀河中心のブラックホールの画像を初めて撮影しました。\nこの偉業は、理論だけでは得られない洞察を提供し、2030年代初頭にはブラックホールの動画も可能になる見込みです。",
+      "tags": [
+        "天文学",
+        "ブラックホール",
+        "イベント・ホライズン・テレスコープ"
+      ],
+      "category": "その他",
+      "score": 85,
+      "score_reason": "科学的発見として非常に重要であり、大規模な国際協力と高度な技術が結集された成果です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "デバッグコードを脆弱性にしない方法",
+      "url": "https://zenn.dev/yasuakiomokawa/articles/5a7188483acfe7",
+      "source": "Zenn",
+      "published": "2026-10-29T11:30:33+00:00",
+      "reading_min": 8,
+      "summary": "デバッグAPIが本番環境で動作することで生じる脆弱性（CWE-489 Active Debug Code）を防ぐための設計について解説しています。\n以前の環境変数による判定ではなく、ビルド時にデバッグコードを完全に除去するアプローチを採用することで、人為的なミスによるセキュリティリスクを排除します。\nこの方法は、OWASP Top 10にも関連する脆弱性への対策として、安全と利便性を両立させるための具体的な実装例を示しています。",
+      "tags": [
+        "セキュリティ",
+        "デバッグ",
+        "CWE-489"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "デバッグコードが本番環境で脆弱性となる問題は広く存在し、その根本的な解決策を提示しているため、多くの開発者にとって実用性が高く重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "無印良品、「MUJIアプリ」の利用者情報最大約2726万件が不正アクセスにより流出の可能性",
+      "url": "https://internet.watch.impress.co.jp/docs/news/2152666.html",
+      "source": "はてなブックマーク",
+      "published": "2026-10-30T06:32:44+00:00",
+      "reading_min": 1,
+      "summary": "無印良品の公式アプリ「MUJIアプリ」で、最大約2726万件の利用者情報が不正アクセスにより流出した可能性があります。\n流出した可能性のある情報はメールアドレス、生年月日、性別で、クレジットカード情報や氏名、住所などは含まれません。\n同社は対象利用者に順次連絡するとしており、アプリやネットストアは正常に利用可能です。",
+      "tags": [
+        "セキュリティ",
+        "情報漏洩",
+        "不正アクセス"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "大規模な個人情報流出の可能性があり、企業のセキュリティ対策の重要性を再認識させるためスコアを高くしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 127
+    },
+    {
+      "title": "TigerBeetle: お金を失うことのできないデータベースが必要なときに実際に何が起こるか",
+      "url": "https://dev.to/syed_anzar/tigerbeetle-what-actually-happens-when-you-need-a-database-that-cant-lose-money-4pg",
+      "source": "Dev.to",
+      "published": "2026-10-30T11:16:52+00:00",
+      "reading_min": 5,
+      "summary": "TigerBeetleは、金融取引に特化した高性能データベースです。\n一般的なデータベースとは異なり、JOINやクエリプランナーを持たず、厳格なスキーマで毎秒100万件の転送を処理します。\nディスク破損やネットワーク障害にも耐える堅牢性を持ち、現代のトランザクション量の多いシステムに適しています。",
+      "tags": [
+        "TigerBeetle",
+        "Database",
+        "Financial Transactions"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "金融インフラにおけるミッションクリティカルなトランザクション処理に特化したデータベースであり、その性能と堅牢性は非常に高く、特定の分野で大きな影響を与える可能性があるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "3人のJava ChampionsがGitHub Copilotをどのように活用して生産性を向上させているか",
@@ -692,7 +844,7 @@
       "new_at": "2026-10-29T08:16:51.279560+09:00",
       "is_prev_seen": true,
       "first_seen": "2026-10-29T08:16:51.279560+09:00",
-      "hatena_count": 43
+      "hatena_count": 42
     },
     {
       "title": "データ生成戦略による深層学習モデル性能の向上：オリーブの木の病気の分類",
@@ -777,7 +929,93 @@
       "new_at": "2026-10-30T13:11:07.712051+09:00",
       "first_seen": "2026-10-30T13:11:07.712051+09:00",
       "is_hot": false,
-      "hatena_count": 73
+      "hatena_count": 173
+    },
+    {
+      "title": "yoroによろしくぅ！Ai Workforce 事業部のリモートコーディングエージェント環境 yoro のご紹介",
+      "url": "https://zenn.dev/layerx/articles/a277f83a93d300",
+      "source": "Zenn",
+      "published": "2026-10-30T02:11:36+00:00",
+      "reading_min": 12,
+      "summary": "LayerXのAi Workforce事業部が開発したリモートコーディングエージェント環境「yoro」を紹介しています。\nyoroは、Coderを基盤にAnthropicのClaude CodeやOpenAIのCodexを連携させ、本人専用のリモート開発環境で自動的にPRやレビューを生成します。\nセキュリティ要件に合わせて隔離と監視を自社で構築し、YOLOモード（許可を待たずに実行）での開発を可能にしています。",
+      "tags": [
+        "AIエージェント",
+        "リモート開発",
+        "SRE"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AIを活用した開発効率化の具体的な事例であり、リモート開発環境とセキュリティの両面で先進的な取り組みが示されています。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "WASIではない、もう一つのインターフェース「WALI」という提案",
+      "url": "https://zenn.dev/progate/articles/wali-webassembly-linux-interface",
+      "source": "Zenn",
+      "published": "2026-10-30T00:45:50+00:00",
+      "reading_min": 16,
+      "summary": "WebAssembly (wasm) でLinuxプログラムを動かす際のシステムコール問題を解決するため、WALI (WebAssembly Linux Interface) という新しい提案が注目されています。\nWALIはWASIのような新しいAPIではなく、Linuxのシステムコールを直接wasmに公開することで、既存のLinuxプログラムの移植性を高めることを目指しています。\nLLVMやRustでもターゲットとして採用されており、forkやシグナル、mmapといった機能の欠如に悩む開発者にとって有望な選択肢となる可能性があります。",
+      "tags": [
+        "WebAssembly",
+        "WASI",
+        "WALI"
+      ],
+      "category": "プログラミング言語",
+      "score": 80,
+      "score_reason": "WebAssemblyの利用範囲を広げ、既存のLinuxプログラムの移植性を大幅に向上させる可能性があり、開発効率に大きな影響を与えるため重要度が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "Codex のいいところだけを、Claude Code や Muse から使う",
+      "url": "https://qiita.com/tatsuya582/items/4d79021c9f78f4015992?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-30T03:58:43+00:00",
+      "reading_min": 9,
+      "summary": "CodexのComputer UseやMeetingsといった便利な機能を、Claude CodeやMeta Museなどの他のAIツールから直接利用する方法が紹介されています。\n「codex app-server」を使用することで、Codexのモデルを介さずにJSON-RPCでCodexの機能を呼び出し、Codexのトークン消費なしで利用できます。\nこれにより、複数のAIツールを連携させ、それぞれの得意な機能を組み合わせることで、より効率的な作業環境を構築することが可能になります。",
+      "tags": [
+        "AI",
+        "Codex",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "複数のAIツールを連携させ、それぞれの強みを活かすための具体的な方法を提示しており、AIの活用範囲を広げ、開発者の生産性向上に寄与する可能性が高いためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIワークフロー自動化のテスト：仕込まれた解答キーによる引用チェック",
+      "url": "https://dev.to/kimolsen/testing-ai-workflow-automation-on-a-tender-a-cite-check-with-a-planted-answer-key-c3g",
+      "source": "Dev.to",
+      "published": "2026-10-30T11:17:48+00:00",
+      "reading_min": 11,
+      "summary": "AIワークフロー自動化を信頼する前にテストする方法として、意図的にエラーを仕込んだ文書と解答キーを用いた引用チェックの事例を紹介しています。\nAnthropicの法務向けAIツール「artifacts」の引用チェック機能を参考に、Claude Codeで同様のスキルとテストハーネスを構築し、GitHubワークフローでAPI呼び出しを行いました。\nこのテスト手法は、AIが文書チェックを正確に行えるか検証するために重要であり、独自の文書で再現可能です。",
+      "tags": [
+        "AIテスト",
+        "ワークフロー自動化",
+        "Claude"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AIの信頼性検証は実用化において不可欠であり、具体的なテスト手法を提示している点で実用性が高く評価できます。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 3,
+      "topic_size": 2
     },
     {
       "title": "目指せClaude全冠！4つの試験を全部受けたので攻略法を紹介します",
@@ -842,7 +1080,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 57
+      "hatena_count": 90
     },
     {
       "title": "再利用可能なClaudeスキルファイルを使って日々の業務を効率化する方法",
@@ -864,6 +1102,27 @@
       "first_seen": "2026-10-30T13:11:07.712051+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "2026年自分流AIエージェント環境構築の秋",
+      "url": "https://zenn.dev/rescuenow/articles/49826fc6cc2713",
+      "source": "Zenn",
+      "published": "2026-10-30T00:55:31+00:00",
+      "reading_min": 5,
+      "summary": "筆者が自身のAIエージェント環境を構築し、タスク管理と作業のオーケストレーションを効率化した事例を紹介しています。\nFableを司令塔、Opusを作業役としてClaude Codeを動かし、Notionでタスクを管理し、Orcaでエージェントの起動と人間への確認を行っています。\n人間が方向性を判断し、エージェントが実行する「Reliability by Default」の思想を取り入れた環境です。",
+      "tags": [
+        "AIエージェント",
+        "オーケストレーション",
+        "Claude Code"
+      ],
+      "category": "AI・機械学習",
+      "score": 78,
+      "score_reason": "個人レベルでのAIエージェント活用とオーケストレーションの具体的な方法が示されており、AI開発の効率化に役立つ情報です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 1
     },
     {
       "title": "AIが節約する時間の測定について",
@@ -914,8 +1173,8 @@
       "url": "https://github.com/herdrdev/herdr-app",
       "source": "Hacker News",
       "published": "2026-10-30T00:42:41+00:00",
-      "hn_score": 60,
-      "hn_comments": 48,
+      "hn_score": 230,
+      "hn_comments": 150,
       "reading_min": 5,
       "summary": "Herdrは、ターミナルとコーディングエージェントのためのデスクトップアプリです。\n作業をスペースに整理し、エージェントの状況を確認、ウィンドウを閉じてもターミナルを実行し続けられます。\nLinux、macOS、Windowsに対応しており、簡単なインストールで利用可能です。",
       "tags": [
@@ -950,6 +1209,69 @@
       "analysis_status": "ok",
       "new_at": "2026-10-30T13:11:07.712051+09:00",
       "first_seen": "2026-10-30T13:11:07.712051+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "IVRyのSREの取り組み 2026冬",
+      "url": "https://zenn.dev/ivry/articles/70d4f05ce4ae5c",
+      "source": "Zenn",
+      "published": "2026-10-30T07:50:00+00:00",
+      "reading_min": 11,
+      "summary": "IVRyのSREチームが2024年秋からの2年間で取り組んできた内容と、その変化について紹介しています。\nSREの役割を「SREが張り付いて守る信頼性」から「仕組みとして最初から備わっている信頼性(Reliability by Default)」へと移行させる戦略を推進しています。\nチームトポロジーにおけるHub & Spokeモデルへの移行を進め、プロダクトごとの信頼性向上を目指しています。",
+      "tags": [
+        "SRE",
+        "DevOps",
+        "信頼性エンジニアリング"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 75,
+      "score_reason": "SRE組織の変革と信頼性向上の具体的な取り組みが詳細に解説されており、多くの企業にとって参考になる実践的な内容です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "0から学ぶセキュリティの基礎 ~XSS編~",
+      "url": "https://qiita.com/Pigeon_gate/items/3ce4e1c1a39db64c5c32?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-30T02:24:34+00:00",
+      "reading_min": 6,
+      "summary": "XSS（クロスサイトスクリプティング）は、悪意あるスクリプトを他のユーザーのブラウザで実行させる攻撃であり、サイバー攻撃で頻繁に見られます。\n攻撃は、ユーザーが罠のURLを踏む、または汚染されたページにアクセスすることで成立し、反射型、格納型、DOM Based型など多様な手法があります。\n対策としては、入力値の適切なエスケープ処理が不可欠であり、データと命令が混ざることで脆弱性が生じるという根本的な理解が重要です。",
+      "tags": [
+        "セキュリティ",
+        "XSS",
+        "サイバー攻撃"
+      ],
+      "category": "セキュリティ",
+      "score": 75,
+      "score_reason": "XSSはWebアプリケーションの基本的な脆弱性であり、その仕組みと対策を基礎から解説しているため、セキュリティ初学者にとって非常に有用な情報です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "BMIのデプロイを自動化し、その動作を監視する：モニタリングとログの第一歩",
+      "url": "https://dev.to/hanatole/automatiser-le-deploiement-de-bmi-et-observer-son-fonctionnement-premiers-pas-avec-le-monitoring-1m0l",
+      "source": "Dev.to",
+      "published": "2026-10-30T11:17:20+00:00",
+      "reading_min": 5,
+      "summary": "K3sクラスターにBMI計算アプリケーションをデプロイし、その動作を監視するためのモニタリングとログの導入について解説しています。\nGitLab CI/CDパイプラインとKubernetesを連携させ、アプリケーションのデプロイ状況だけでなく、その後の挙動や問題診断の重要性を強調しています。\nGitLab RunnerをKubernetesクラスター内にデプロイし、ログ収集と監視の基盤を構築する具体的な設定例も示されています。",
+      "tags": [
+        "Kubernetes",
+        "CI/CD",
+        "モニタリング"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 75,
+      "score_reason": "CI/CDとモニタリングは現代のソフトウェア開発・運用において不可欠な要素であり、実践的な内容であるため重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -1036,15 +1358,15 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 91
+      "hatena_count": 117
     },
     {
       "title": "Cuis: モダンなSmalltalk-80",
       "url": "https://cuis.st/",
       "source": "Hacker News",
       "published": "2026-10-27T06:33:16+00:00",
-      "hn_score": 23,
-      "hn_comments": 6,
+      "hn_score": 131,
+      "hn_comments": 16,
       "reading_min": 1,
       "summary": "Cuisは、シンプルでパワフル、かつポータブルなSmalltalk-80環境です。\n高速で効率的であり、様々なプラットフォームで動作します。\n2026年にはSmalltalksイベントが開催され、Cuisコミュニティからの発表も多数予定されています。",
       "tags": [
@@ -1104,6 +1426,90 @@
       "hatena_count": 0
     },
     {
+      "title": "GA4 のイベントが「gtag.js の読み込み前」に静かに消えていた：Next.js の2サイトで見つけた3つの壊れ方と直し方",
+      "url": "https://qiita.com/yamadagenki/items/d35d769e9771997de3be?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-28T12:08:10+00:00",
+      "reading_min": 11,
+      "summary": "Next.jsサイトでGA4のカスタムイベントが計測されない問題が発生し、原因はgtag.jsの読み込み前にイベントを送信していたことでした。\ngtag()関数はdataLayerが定義されれば呼び出し可能ですが、gtag.js本体の読み込み完了前にイベントを送信すると、イベントが失われるケースがあることを指摘しています。\n記事では、GA4計測タグの3つの部品（本体、初期化、gtag()関数）の役割を詳細に解説し、具体的な壊れ方と正しい修正方法を提示しています。",
+      "tags": [
+        "GA4",
+        "Next.js",
+        "gtag.js"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 70,
+      "score_reason": "GA4の計測はWebサイト運営において重要であり、Next.jsなどのモダンなフレームワークでの実装時に陥りやすい具体的な問題とその解決策を提示しているため、多くのWeb開発者にとって役立つ情報です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "メルセンヌ・ツイスタ。PythonやC++でも使われる、世界標準「擬似乱数」の設計思想【松本眞】",
+      "url": "https://levtech.jp/media/detail_959/",
+      "source": "はてなブックマーク",
+      "published": "2026-10-30T00:24:37+00:00",
+      "reading_min": 19,
+      "summary": "1996年に松本眞氏と西村拓士氏が発表した「メルセンヌ・ツイスタ」は、PythonやC++などで使われる世界標準の擬似乱数生成法です。\n本記事では、その設計思想と誕生の経緯について、開発者の一人である松本眞氏が語っています。\nメルセンヌ・ツイスタは主にゲームやシミュレーションに利用され、暗号への応用も提案されています。",
+      "tags": [
+        "擬似乱数",
+        "アルゴリズム",
+        "Python"
+      ],
+      "category": "プログラミング言語",
+      "score": 70,
+      "score_reason": "擬似乱数生成の基礎技術であり、多くのプログラミング言語で利用されているため、技術的な重要性が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 177
+    },
+    {
+      "title": "14個のjsonbカラム、20個の$typeキャスト、そして本体が「return this」だけのORMメソッド",
+      "url": "https://dev.to/daniel_pertu/fourteen-jsonb-columns-twenty-type-casts-and-the-orm-method-whose-entire-body-is-return-this-bhn",
+      "source": "Dev.to",
+      "published": "2026-10-30T11:16:50+00:00",
+      "reading_min": 6,
+      "summary": "PostgreSQLのjsonbカラムとDrizzle ORMの$typeメソッドを使った型安全なJSONデータの扱いについて解説しています。\n$typeメソッドはTypeScriptの型チェックのためだけに存在し、実際のSQLには影響しません。\nZodなどのバリデーションライブラリと組み合わせることで、実行時のデータ整合性を確保する重要性が示されています。",
+      "tags": [
+        "PostgreSQL",
+        "jsonb",
+        "TypeScript"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 70,
+      "score_reason": "jsonbカラムとORMの型付けに関する実践的な知見を提供しており、開発者が直面するデータ管理と型安全性の課題に対する具体的な解決策を示しているためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "WebAnything: ワイルドなウェブからスケーラブルなエージェント環境へ",
+      "url": "https://arxiv.org/abs/2610.37786",
+      "source": "arXiv cs.AI",
+      "published": "2026-10-30T04:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この記事は、WebAnythingという新しいフレームワークについて紹介しています。\nこれは、ウェブ上の多様な情報を活用し、スケーラブルなエージェント環境を構築することを目指しています。\narXivLabsの理念に基づき、オープン性、コミュニティ、卓越性、ユーザーデータプライバシーを重視しています。",
+      "tags": [
+        "AI",
+        "Agent",
+        "Web Scraping"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "ウェブ情報を活用したAIエージェント環境の構築は、今後のAI応用の可能性を広げる点で重要度が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "Redditは全員にログインを強制する / Redditは「ログイン専用の体験」になるとCEOのSteve Huffmanが語る。",
       "url": "https://www.reddit.com/r/technology/comments/1xiuqhd/reddit_will_force_everyone_to_log_in_reddit_is/",
       "source": "Reddit",
@@ -1144,7 +1550,7 @@
       "new_at": "2026-10-30T09:57:56.929540+09:00",
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
-      "hatena_count": 131
+      "hatena_count": 179
     },
     {
       "title": "アニメーションフレームごとに異なる持続時間でループをサンプリングする方法",
@@ -1212,6 +1618,48 @@
       "hatena_count": 0
     },
     {
+      "title": "LRMoE: メモリ制約のあるノードでの効率的なMoEトレーニングのための需要側負荷再キャリブレーション",
+      "url": "https://arxiv.org/abs/2610.37720",
+      "source": "arXiv cs.AI",
+      "published": "2026-10-30T04:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、メモリ制約のあるノードでMoE（Mixture-of-Experts）モデルを効率的にトレーニングするための新しい手法「LRMoE」を提案しています。\n需要側負荷再キャリブレーションを通じて、トレーニングの効率化と性能向上を目指します。\narXivLabsの紹介が主な内容であり、論文自体の詳細な説明は本文抜粋にはありません。",
+      "tags": [
+        "MoE",
+        "Machine Learning",
+        "Resource Management"
+      ],
+      "category": "AI・機械学習",
+      "score": 65,
+      "score_reason": "MoEモデルのトレーニング効率化はAI分野の重要な課題であり、メモリ制約下での最適化は実用的な価値が高いですが、本文抜粋が論文内容に直接触れていないため評価は中程度です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "OpenFrontiers: オープンな研究課題のコレクションと科学的再発見のためのベンチマーク",
+      "url": "https://arxiv.org/abs/2610.37739",
+      "source": "arXiv cs.AI",
+      "published": "2026-10-30T04:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、オープンな研究課題のコレクションと、科学的再発見のためのベンチマーク「OpenFrontiers」を紹介しています。\n研究コミュニティにおける知識共有と進歩を促進することを目的としています。\narXivLabsの紹介が主な内容であり、論文自体の詳細な説明は本文抜粋にはありません。",
+      "tags": [
+        "Open Science",
+        "Research",
+        "Benchmark"
+      ],
+      "category": "その他",
+      "score": 65,
+      "score_reason": "オープンサイエンスと研究課題の共有は学術コミュニティにとって重要であり、新しいベンチマークの提供は研究の進展に貢献する可能性がありますが、本文抜粋が論文内容に直接触れていないため評価は中程度です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "エルニーニョ現象によりカリフォルニアの海岸が高潮に見舞われる",
       "url": "https://gizmodo.com/el-nino-is-already-flooding-californias-coasts-and-the-years-highest-tides-havent-arrived-2000832574",
       "source": "Hacker News",
@@ -1254,12 +1702,54 @@
       "hatena_count": 0
     },
     {
+      "title": "海洋乱流閉鎖への応用を伴うモデルキャリブレーションのための償却局所事後推論",
+      "url": "https://arxiv.org/abs/2610.37731",
+      "source": "arXiv cs.AI",
+      "published": "2026-10-30T04:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、モデルキャリブレーションのための償却局所事後推論手法について述べています。\n特に海洋乱流閉鎖モデルへの応用が焦点となっています。\narXivLabsの紹介が主な内容であり、論文自体の詳細な説明は本文抜粋にはありません。",
+      "tags": [
+        "Bayesian Inference",
+        "Model Calibration",
+        "Oceanography"
+      ],
+      "category": "AI・機械学習",
+      "score": 60,
+      "score_reason": "モデルキャリブレーションと事後推論はAIモデルの信頼性向上に不可欠な技術であり、特定の科学分野への応用は興味深いですが、本文抜粋が論文内容に直接触れていないため評価は中程度です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ThinkJev: キャリブレーションされた型付き決定のための、あらゆる予算に対応する一つの思考",
+      "url": "https://arxiv.org/abs/2610.37732",
+      "source": "arXiv cs.AI",
+      "published": "2026-10-30T04:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、キャリブレーションされた型付き決定を行うための「ThinkJev」という概念を提案しています。\n様々な予算制約の下で、意思決定プロセスを最適化することを目指します。\narXivLabsの紹介が主な内容であり、論文自体の詳細な説明は本文抜粋にはありません。",
+      "tags": [
+        "Decision Making",
+        "Type Systems",
+        "Optimization"
+      ],
+      "category": "AI・機械学習",
+      "score": 60,
+      "score_reason": "意思決定と型システム、予算管理の組み合わせは、AIの応用範囲を広げる可能性を秘めていますが、本文抜粋が論文内容に直接触れていないため評価は中程度です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "ビリヤードが下手すぎて双曲平面にたどり着いた [動画]",
       "url": "https://www.youtube.com/watch?v=kL9BTbIGxLg",
       "source": "Hacker News",
       "published": "2026-10-28T13:20:05+00:00",
-      "hn_score": 24,
-      "hn_comments": 2,
+      "hn_score": 149,
+      "hn_comments": 18,
       "reading_min": 1,
       "summary": "この動画は、ビリヤードのプレイを通じて双曲平面という数学的な概念を視覚的に表現しています。\n通常のビリヤードとは異なる、非ユークリッド幾何学の世界でのボールの動きが示されます。\nエンターテイメント性と教育的要素を兼ね備えた興味深いコンテンツです。",
       "tags": [
@@ -1275,6 +1765,29 @@
       "first_seen": "2026-10-30T13:11:07.712051+09:00",
       "is_hot": false,
       "hatena_count": 1
+    },
+    {
+      "title": "elect.horse",
+      "url": "https://elect.horse/",
+      "source": "Hacker News",
+      "published": "2026-10-30T09:14:34+00:00",
+      "hn_score": 26,
+      "hn_comments": 4,
+      "reading_min": 1,
+      "summary": "日替わりのゲリマンダーパズルゲームです。\nプレイヤーは馬が農場の動物たちに勝つように、六角形の地図上に均等な選挙区を引きます。\n無料で登録不要、毎日新しいパズルが提供されます。",
+      "tags": [
+        "Puzzle Game",
+        "Gerrymandering",
+        "Daily Challenge"
+      ],
+      "category": "その他",
+      "score": 40,
+      "score_reason": "政治的なテーマを扱ったパズルゲームであり、技術的な新規性や業界への影響は限定的です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "豚、国家、そして戦争：紅の豚 (2014)",
@@ -1321,22 +1834,45 @@
       "first_seen": "2026-10-30T09:57:56.929540+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "サイモン・アーミテージによるギルガメシュのレビュー – 古代叙事詩が見事に翻訳される",
+      "url": "https://www.theguardian.com/books/2026/oct/20/gilgamesh-by-simon-armitage-review-an-ancient-epic-is-brilliantly-translated-for-our-times",
+      "source": "Hacker News",
+      "published": "2026-10-27T17:54:57+00:00",
+      "hn_score": 51,
+      "hn_comments": 18,
+      "reading_min": 6,
+      "summary": "桂冠詩人サイモン・アーミテージによる古代メソポタミアの叙事詩「ギルガメシュ」の翻訳レビューです。\nこの翻訳は、伝説的な英雄ギルガメシュの冒険を現代に鮮やかに蘇らせています。\n王の不正行為も描かれており、文学作品として高い評価を受けています。",
+      "tags": [
+        "文学",
+        "叙事詩",
+        "翻訳"
+      ],
+      "category": "その他",
+      "score": 30,
+      "score_reason": "文学作品のレビューであり、IT技術や業界への直接的な影響はほとんどありません。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T20:21:28.989872+09:00",
+      "first_seen": "2026-10-30T20:21:28.989872+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     }
   ],
   "briefing": {
     "edition": "夕刊",
-    "generated_at": "2026-10-30T13:11:07.712051+09:00",
+    "generated_at": "2026-10-30T20:21:28.989872+09:00",
     "summary_lines": [
-      "Mistral Large 4のウェイト公開でオープンソースAIが進化。",
-      "GitHub Actionsのセキュリティ強化とパスキーのフィッシング対策。",
-      "Binanceへの大規模サイバー攻撃とAIアシスタントの最新動向。"
+      "AI分野ではMistral Large 4の公開やAIエージェントの倫理が注目されています。",
+      "サイバーセキュリティでは北朝鮮による大規模ハッキングやGitHub Actionsの安全な利用法が話題です。",
+      "パスキーによるフィッシング対策やAIアシスタントの進化も重要な動向です。"
     ],
     "focus_tags": [
       "AI・機械学習",
       "セキュリティ",
       "大規模言語モデル",
-      "仮想通貨",
-      "GitHub Actions"
+      "サイバーセキュリティ",
+      "認証"
     ]
   }
 }

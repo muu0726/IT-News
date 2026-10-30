@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 30 Oct 2026 04:11:59 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 11:22:21 +0000</lastBuildDate>
     <item>
       <title>Mistral Large 4のウェイトを公開</title>
       <link>https://mistral.ai/news/mistral-large-4-oss/</link>
@@ -19,6 +19,20 @@
       <guid isPermaLink="false">https://zenn.dev/progate/articles/24b1140180300c</guid>
       <description>[Score: 95] GitHub Actionsのワークフローで、アクションのバージョンを`@v7`のように指定することのセキュリティリスクについて警鐘を鳴らしています。 / 攻撃者が悪意のあるバージョンを公開する可能性があり、過去にはTrivyアクションが攻撃された事例も紹介されています。 / 解決策として、コミットのハッシュ値（SHA）指定またはlockfileの使用が推奨されています。 (Source: Zenn)</description>
       <pubDate>Thu, 29 Oct 2026 03:48:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>北朝鮮が史上最大のハッキングでBinanceから63.6億ドルを盗む</title>
+      <link>https://www.reddit.com/r/technology/comments/1xj6gwl/north_korea_steals_usd_636_billion_from_binance/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xj6gwl/north_korea_steals_usd_636_billion_from_binance/</guid>
+      <description>[Score: 95] 北朝鮮がBinanceから63.6億ドルを盗んだと報じられており、これは史上最大のハッキング事件とされています。 / この大規模なサイバー攻撃は、国家レベルでのサイバー犯罪の脅威と、暗号資産取引所のセキュリティ対策の重要性を浮き彫りにしています。 / 国際的な金融システムとサイバーセキュリティに対する深刻な影響が懸念されます。 (Source: Reddit)</description>
+      <pubDate>Fri, 30 Oct 2026 04:59:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>信頼できないコンテンツは指示ではない</title>
+      <link>https://dev.to/tridaai/untrusted-content-is-not-instructions-35jh</link>
+      <guid isPermaLink="false">https://dev.to/tridaai/untrusted-content-is-not-instructions-35jh</guid>
+      <description>[Score: 95] AIエージェントがユーザーからの入力を指示として解釈してしまう「プロンプトインジェクション」の危険性について解説しています。 / モデルはシステムプロンプトとユーザー入力を区別できず、信頼できないコンテンツが指示として実行される可能性があります。 / OWASPのLLMアプリケーション脆弱性リストのトップに位置するこの問題に対し、モデルに区別を求めず、システム設計で権限とコンテンツの分離を推奨しています。 (Source: Dev.to)</description>
+      <pubDate>Fri, 30 Oct 2026 11:17:56 +0000</pubDate>
     </item>
     <item>
       <title>Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026</title>
@@ -105,6 +119,13 @@
       <pubDate>Fri, 30 Oct 2026 02:06:31 +0000</pubDate>
     </item>
     <item>
+      <title>Linuxカーネルの重大な脆弱性（CVE-2026-98432）によるカーリルへの影響について</title>
+      <link>https://blog.calil.jp/2026/10/linux-kernel.html</link>
+      <guid isPermaLink="false">https://blog.calil.jp/2026/10/linux-kernel.html</guid>
+      <description>[Score: 90] Linuxカーネルのネットワーク処理に重大な脆弱性（CVE-2026-98432）が公表され、細工したパケットでサーバー停止やリモートコード実行の恐れがあります。 / カーリルは影響を受けるサーバーが含まれるものの、現時点で攻撃や被害は確認されておらず、修正版の適用などの対応を実施しています。 / 図書館関係者に対し、一般的なセキュリティ対策だけでなく、リスク許容度を明確にし、脆弱性への理解を深めることの重要性を訴えています。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 30 Oct 2026 03:40:04 +0000</pubDate>
+    </item>
+    <item>
       <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
       <link>https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</guid>
@@ -124,27 +145,6 @@
       <guid isPermaLink="false">https://dev.to/ryanvale/an-ai-agents-build-log-what-it-takes-to-earn-a-first-20-outside-the-sandbox-2dbb</guid>
       <description>[Score: 88] AIエージェントが自律的に活動し、サンドボックス外で初めて20ドルを稼ぐまでの構築ログを公開。 / 人間が介在しないAIエージェントが、支払いリンクの生成やCAPTCHA突破などの課題に直面しながら収益化を目指す過程を記録。 / AIエージェントの自律的な経済活動の可能性と、現実世界での障壁について考察しています。 (Source: Dev.to)</description>
       <pubDate>Fri, 30 Oct 2026 00:47:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
-      <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
-      <description>[Score: 85] オラクルが「Oracle App Composer」を発表し、社員がAIを使って業務アプリケーションを自動生成し、Oracle Cloud上で共有可能になります。 / チャット形式でアプリ内容を指示するだけで、OpenAIのCodexがコードを生成し、セキュリティチェック後にデプロイされます。 / 生成されたアプリは情報部門が一括管理でき、利用状況の把握や廃止も容易になります。 (Source: Publickey)</description>
-      <pubDate>Wed, 28 Oct 2026 15:39:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>Octoverse: 2026年にコミットとプッシュが過去最高を記録、開発者はエージェントと共に構築</title>
-      <link>https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</guid>
-      <description>[Score: 85] 2026年のGitHubでのコードプッシュ数は179億回に達し、2024年と2025年を合わせたよりも多く、過去最高を記録しました。 / この成長の背景には、開発者がAIエージェントを試用から実用へと移行させ、共に作業するようになったことが挙げられます。 / Octoverseレポートは、AIモデルの進化と、ヘルスケアから農業まで多岐にわたる分野での開発活動の拡大を強調しています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 28 Oct 2026 16:07:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>トリニティ：マルチモーダルエージェントのための能力駆動型再帰的自己改善</title>
-      <link>https://arxiv.org/abs/2610.36077</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.36077</guid>
-      <description>[Score: 85] 本記事は、マルチモーダルエージェントが能力駆動型の再帰的自己改善を行う「トリニティ」という概念を提案しています。 / 異なる種類のデータ（画像、音声、テキストなど）を扱うAIが、自らの能力を継続的に向上させるメカニニズムを探求していると推測されます。 / 汎用AIや自律学習システムの実現に向けた重要な一歩となる可能性があります。 (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 29 Oct 2026 04:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
