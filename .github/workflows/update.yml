@@ -131,13 +131,13 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
-          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00,15:00' || '' }}
+          NOTIFY_AT_JST: ''
         run: python gadget.py --notify-only
 
   alert:
     needs: [collect, notify]
-    # タイムアウト・キャンセル時も通知する
-    if: ${{ failure() || cancelled() }}
+    # collect または notify が失敗・キャンセル（タイムアウト含む）された場合に確実に実行
+    if: always() && (needs.collect.result == 'failure' || needs.collect.result == 'cancelled' || needs.notify.result == 'failure' || needs.notify.result == 'cancelled')
     runs-on: ubuntu-latest
     permissions: {}
 

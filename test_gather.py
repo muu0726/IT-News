@@ -75,6 +75,22 @@ def test_wait_until_notify_time_unset(monkeypatch, sleeps):
 
 def test_wait_until_notify_time_before(monkeypatch, sleeps):
     monkeypatch.setenv("NOTIFY_AT_JST", "07:00")
+    # 06:15 -> 07:00 まで 45分 (2700秒 <= 3600秒) 待機
+    now = datetime(2026, 9, 14, 6, 15, tzinfo=JST)
+    assert wait_until_notify_time(now) == 45 * 60
+    assert sleeps == [45 * 60]
+
+def test_wait_until_notify_time_exceeds_max_wait(monkeypatch, sleeps):
+    monkeypatch.setenv("NOTIFY_AT_JST", "07:00")
+    # 04:30 -> 07:00 は 2.5時間 (> デフォルト 1時間) のため待機せず即時通知
+    now = datetime(2026, 9, 14, 4, 30, tzinfo=JST)
+    assert wait_until_notify_time(now) == 0.0
+    assert sleeps == []
+
+def test_wait_until_notify_time_custom_max_wait(monkeypatch, sleeps):
+    monkeypatch.setenv("NOTIFY_AT_JST", "07:00")
+    monkeypatch.setenv("NOTIFY_MAX_WAIT_SEC", "10800")
+    # max_wait_sec が 3時間の場合は 2.5時間待機する
     now = datetime(2026, 9, 14, 4, 30, tzinfo=JST)
     assert wait_until_notify_time(now) == 2.5 * 3600
     assert sleeps == [2.5 * 3600]
@@ -87,22 +103,25 @@ def test_wait_until_notify_time_after(monkeypatch, sleeps):
 
 def test_wait_until_notify_time_invalid(monkeypatch, sleeps):
     monkeypatch.setenv("NOTIFY_AT_JST", "7時")
-    now = datetime(2026, 9, 14, 4, 30, tzinfo=JST)
+    now = datetime(2026, 9, 14, 6, 15, tzinfo=JST)
     assert wait_until_notify_time(now) == 0.0
     assert sleeps == []
 
 def test_wait_until_notify_time_multiple_slots(monkeypatch, sleeps):
     monkeypatch.setenv("NOTIFY_AT_JST", "07:00,15:00")
-    # 04:30 -> 07:00 まで 2.5時間待機
-    now_morning = datetime(2026, 9, 14, 4, 30, tzinfo=JST)
-    assert wait_until_notify_time(now_morning) == 2.5 * 3600
-    # 12:30 -> 07:00 は過ぎているので 15:00 まで 2.5時間待機
-    now_afternoon = datetime(2026, 9, 14, 12, 30, tzinfo=JST)
-    assert wait_until_notify_time(now_afternoon) == 2.5 * 3600
+    # 06:15 -> 07:00 まで 45分待機 (<= 1h)
+    now_morning = datetime(2026, 9, 14, 6, 15, tzinfo=JST)
+    assert wait_until_notify_time(now_morning) == 45 * 60
+    # 09:57 -> 07:00 は過ぎており、15:00 までは 5時間 (> 1h) なので遅延とみなし即時通知
+    now_delay = datetime(2026, 9, 14, 9, 57, tzinfo=JST)
+    assert wait_until_notify_time(now_delay) == 0.0
+    # 14:15 -> 15:00 まで 45分待機 (<= 1h)
+    now_afternoon = datetime(2026, 9, 14, 14, 15, tzinfo=JST)
+    assert wait_until_notify_time(now_afternoon) == 45 * 60
     # 15:30 -> 両方過ぎているので即時 (0秒)
     now_evening = datetime(2026, 9, 14, 15, 30, tzinfo=JST)
     assert wait_until_notify_time(now_evening) == 0.0
-    assert sleeps == [2.5 * 3600, 2.5 * 3600]
+    assert sleeps == [45 * 60, 45 * 60]
 
 class _FakeResp:
     status_code = 200
@@ -430,8 +449,8 @@ def test_generate_daily_briefing_ai_and_fallback(monkeypatch):
         "call_gemini_rest",
         lambda prompt, key, response_schema=None: {
             "edition": "夕刊",
-            "summary_lines": ["🚀 LLM推論最適化が急進", "Rust採用事例が拡大", "ゼロトラスト運用が標準化"],
-            "focus_tags": ["🔥LLM", "Rust"],
+            "summary_lines": ["\U0001F680 LLM推論最適化が急進", "Rust採用事例が拡大", "ゼロトラスト運用が標準化"],
+            "focus_tags": ["\U0001F525LLM", "Rust"],
         },
     )
     bf_ai = gather.generate_daily_briefing(articles, run_at="2026-10-29T14:30:00+09:00")

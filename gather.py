@@ -1196,16 +1196,27 @@ def send_line_notification(articles: list[dict]) -> None:
         print(f"[ERROR] LINE notification failed: {e}")
 
 
-def wait_until_notify_time(now: datetime | None = None) -> float:
+def wait_until_notify_time(
+    now: datetime | None = None,
+    max_wait_sec: float | None = None,
+) -> float:
     """環境変数 NOTIFY_AT_JST (HH:MM または カンマ区切り HH:MM,HH:MM) の時刻まで待機する。
 
     GitHub Actions の schedule は遅延するため、早めに起動して通知時刻を揃える。
     複数指定時は現在時刻以降の最も近い目標時刻まで待機する。
+    ただし、目標時刻までの待機時間が max_wait_sec (環境変数 NOTIFY_MAX_WAIT_SEC、
+    デフォルト 3600秒 = 1時間) を超える場合は、遅延起動や時間外実行と判断して待たずに即時通知する。
     未設定なら待たない。全目標時刻を過ぎていれば即時通知。戻り値は待機秒数。
     """
     notify_at = os.environ.get("NOTIFY_AT_JST", "").strip()
     if not notify_at:
         return 0.0
+
+    if max_wait_sec is None:
+        try:
+            max_wait_sec = float(os.environ.get("NOTIFY_MAX_WAIT_SEC", "3600"))
+        except ValueError:
+            max_wait_sec = 3600.0
 
     slots: list[tuple[int, int]] = []
     for raw in notify_at.split(","):
@@ -1236,6 +1247,13 @@ def wait_until_notify_time(now: datetime | None = None) -> float:
 
     target = future_targets[0]
     wait_sec = (target - now).total_seconds()
+    if wait_sec > max_wait_sec:
+        print(
+            f"[INFO] Target time {target.strftime('%H:%M')} is {wait_sec:.0f}s away (> max {max_wait_sec:.0f}s) "
+            f"-- likely delayed or out of schedule window. Notifying immediately."
+        )
+        return 0.0
+
     print(f"[INFO] Waiting {wait_sec:.0f}s until {target.isoformat()} to notify")
     time.sleep(wait_sec)
     return wait_sec

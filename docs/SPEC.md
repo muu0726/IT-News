@@ -249,8 +249,8 @@ score ≥ 80 の上位 10 件を対象に、設定済みのチャネルすべて
 - トリガー: cron `12 21 * * *`（JST 06:12 起動 → 07:00 通知）および `12 5 * * *`（JST 14:12 起動 → 15:00 通知）の 1 日 2 回 + `workflow_dispatch`
 - Python 3.12、pip キャッシュあり。3 ジョブ構成:
   - **collect**（timeout 20 分、concurrency `pages`）: `pytest` → `gather.py --no-notify` → `gadget.py --no-notify`（continue-on-error）→ 通知用データを artifact 保存 → `data.json` / `archive/` / `feed.xml` / `digest.json` / `gadgets.json` / `gadget_feed.xml` を自動コミット & push → Pages デプロイ
-  - **notify**（timeout 90 分）: artifact を取得 → `gather.py --notify-only`（定期実行時は `NOTIFY_AT_JST=07:00,15:00` で次の目標時刻まで待機）→ `gadget.py --notify-only`（continue-on-error）
-  - **alert**: collect / notify の失敗・キャンセル時に Discord アラート
+  - **notify**（timeout 90 分）: artifact を取得 → `gather.py --notify-only`（定期実行時は `NOTIFY_AT_JST=07:00,15:00` かつ最大 1 時間ガード付きで待機。遅延時は即時送信）→ `gadget.py --notify-only`（二重待機なし即時送信・continue-on-error）
+  - **alert**: collect / notify のいずれかが失敗またはキャンセルされた場合に確実に Discord アラート送信
 - Secrets: `GEMINI_API_KEY`（必須）, `DISCORD_WEBHOOK_URL` / `SLACK_WEBHOOK_URL` / `LINE_CHANNEL_ACCESS_TOKEN`（任意）
 
 ## 7. 残存する制約
