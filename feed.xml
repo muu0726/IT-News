@@ -5,34 +5,27 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 30 Oct 2026 11:22:21 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 00:47:52 +0000</lastBuildDate>
     <item>
-      <title>Mistral Large 4のウェイトを公開</title>
-      <link>https://mistral.ai/news/mistral-large-4-oss/</link>
-      <guid isPermaLink="false">https://mistral.ai/news/mistral-large-4-oss/</guid>
-      <description>[Score: 95] Mistral AIが1兆パラメータのマルチモーダルモデル「Mistral Large 4 (Le Chonk)」のウェイトを公開しました。 / このモデルはコーディング、サイバーセキュリティ、推論効率が向上し、オープンウェイトベンチマークでトップクラスの性能を誇ります。 / 完全にオープンウェイトでヨーロッパで開発され、主権AIの実現とカスタマイズ可能なデプロイメントを可能にします。 (Source: Hacker News)</description>
-      <pubDate>Thu, 29 Oct 2026 14:13:21 +0000</pubDate>
+      <title>今後のセキュリティの考え方</title>
+      <link>https://zenn.dev/cscloud_blog/articles/a987163efae5d8</link>
+      <guid isPermaLink="false">https://zenn.dev/cscloud_blog/articles/a987163efae5d8</guid>
+      <description>[Score: 100] 今後のセキュリティ対策では、管理面を減らし、責任をAWSなどのクラウドプロバイダーに委譲することが重要です。 / EC2からFargateへの移行や、静的ファイルをS3とCloudFrontで配信するなど、AIを活用したアーキテクチャ再考が推奨されます。 / これにより、より重要な意思決定に集中し、セキュリティを向上させることができます。 (Source: Zenn)</description>
+      <pubDate>Fri, 30 Oct 2026 10:30:27 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！</title>
-      <link>https://zenn.dev/progate/articles/24b1140180300c</link>
-      <guid isPermaLink="false">https://zenn.dev/progate/articles/24b1140180300c</guid>
-      <description>[Score: 95] GitHub Actionsのワークフローで、アクションのバージョンを`@v7`のように指定することのセキュリティリスクについて警鐘を鳴らしています。 / 攻撃者が悪意のあるバージョンを公開する可能性があり、過去にはTrivyアクションが攻撃された事例も紹介されています。 / 解決策として、コミットのハッシュ値（SHA）指定またはlockfileの使用が推奨されています。 (Source: Zenn)</description>
-      <pubDate>Thu, 29 Oct 2026 03:48:15 +0000</pubDate>
+      <title>Cursor MarketplaceのVS Code拡張機能「Claude Code」にバックドア</title>
+      <link>https://phorion.io/blog/offical-claude-code-vsx-compromise/</link>
+      <guid isPermaLink="false">https://phorion.io/blog/offical-claude-code-vsx-compromise/</guid>
+      <description>[Score: 95] Cursor Marketplaceで配布されていたVS Code拡張機能「Claude Code」の公式バンドルにバックドアが発見されました。 / このバックドアはmacOS、Linux、Windowsで永続的なSSHバックドアを仕掛けるもので、特にmacOSでの設定と永続化に焦点が当てられています。 / 組織は直ちにClaude Code for VSCode 2.1.312または2.1.313の使用状況を確認し、インシデント対応を行うべきです。 (Source: Hacker News)</description>
+      <pubDate>Fri, 30 Oct 2026 07:09:12 +0000</pubDate>
     </item>
     <item>
-      <title>北朝鮮が史上最大のハッキングでBinanceから63.6億ドルを盗む</title>
-      <link>https://www.reddit.com/r/technology/comments/1xj6gwl/north_korea_steals_usd_636_billion_from_binance/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xj6gwl/north_korea_steals_usd_636_billion_from_binance/</guid>
-      <description>[Score: 95] 北朝鮮がBinanceから63.6億ドルを盗んだと報じられており、これは史上最大のハッキング事件とされています。 / この大規模なサイバー攻撃は、国家レベルでのサイバー犯罪の脅威と、暗号資産取引所のセキュリティ対策の重要性を浮き彫りにしています。 / 国際的な金融システムとサイバーセキュリティに対する深刻な影響が懸念されます。 (Source: Reddit)</description>
-      <pubDate>Fri, 30 Oct 2026 04:59:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>信頼できないコンテンツは指示ではない</title>
-      <link>https://dev.to/tridaai/untrusted-content-is-not-instructions-35jh</link>
-      <guid isPermaLink="false">https://dev.to/tridaai/untrusted-content-is-not-instructions-35jh</guid>
-      <description>[Score: 95] AIエージェントがユーザーからの入力を指示として解釈してしまう「プロンプトインジェクション」の危険性について解説しています。 / モデルはシステムプロンプトとユーザー入力を区別できず、信頼できないコンテンツが指示として実行される可能性があります。 / OWASPのLLMアプリケーション脆弱性リストのトップに位置するこの問題に対し、モデルに区別を求めず、システム設計で権限とコンテンツの分離を推奨しています。 (Source: Dev.to)</description>
-      <pubDate>Fri, 30 Oct 2026 11:17:56 +0000</pubDate>
+      <title>小学生の絵に「AIくさい」 中傷相次ぎしょうゆコンクール公開中止：朝日新聞</title>
+      <link>https://www.asahi.com/articles/ASVBZ2WFHVBZUTIL023M.html</link>
+      <guid isPermaLink="false">https://www.asahi.com/articles/ASVBZ2WFHVBZUTIL023M.html</guid>
+      <description>[Score: 95] 福島県喜多方市が主催した小学生のポスターコンクールで、入賞作品に対し「AIが使われた」との中傷がネットで相次ぎ、作品の公開が中止されました。 / 市は児童が描いたものと説明し、児童の安全を優先して公開を取りやめました。 / AI生成物と人間の創作物の区別が難しくなる中で、社会的な混乱や倫理的な問題が顕在化している事例です。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 30 Oct 2026 22:18:39 +0000</pubDate>
     </item>
     <item>
       <title>Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026</title>
@@ -56,74 +49,25 @@
       <pubDate>Wed, 28 Oct 2026 16:09:28 +0000</pubDate>
     </item>
     <item>
-      <title>AIがより優れているときに科学をなぜ、どのように行うべきか：人間の理解と方向性に基づいたフレームワーク</title>
-      <link>https://arxiv.org/abs/2610.36116</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.36116</guid>
-      <description>[Score: 90] 本記事は、AIが科学的発見において人間よりも優れるようになった場合に、人間が科学を続ける意義と方法について考察しています。 / AIの能力が向上する中で、人間の役割や科学的探求のあり方を再定義するフレームワークを提案していると推測されます。 / AIと人間の協調関係、そして科学の未来に関する哲学的な問いに答える重要な議論を提供します。 (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 29 Oct 2026 04:00:00 +0000</pubDate>
+      <title>Northflankが侵害される</title>
+      <link>https://status.northflank.com</link>
+      <guid isPermaLink="false">https://status.northflank.com</guid>
+      <description>[Score: 90] Northflankプラットフォームに提供されたAI APIキーの不正使用が報告され、Northflankが侵害されました。 / ユーザーは、Northflankに保存されているユーザー提供のシークレットを直ちにローテーションし、AIプロバイダーの使用状況と請求ログを確認するよう推奨されています。 / すべての環境変数が侵害されたと仮定し、すべてのシークレットと資格情報を直ちにローテーションする必要があります。 (Source: Hacker News)</description>
+      <pubDate>Fri, 30 Oct 2026 15:10:31 +0000</pubDate>
     </item>
     <item>
-      <title>Binanceハッカー1029 – Binanceから56億ドルが盗まれる</title>
-      <link>https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</link>
-      <guid isPermaLink="false">https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</guid>
-      <description>[Score: 90] Binanceから56億ドルという巨額の資金が盗難されたと報じられています。 / この事件は仮想通貨業界に大きな衝撃を与え、セキュリティ対策の重要性を改めて浮き彫りにしました。 / ハッカーの特定と資金の回収が今後の焦点となります。 (Source: Hacker News)</description>
-      <pubDate>Thu, 29 Oct 2026 21:38:59 +0000</pubDate>
+      <title>研修中の僕がSlackに海外のIT情報を運ぶbotを作ったら、だいたい何が起きたか</title>
+      <link>https://qiita.com/EricYu/items/147bf8e5fdb1b04f6d54?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/EricYu/items/147bf8e5fdb1b04f6d54?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 研修中にTypeScript、GitHub Actions、Claude Haikuを使い、海外IT情報を日本語要約付きでSlackに流すbotを開発しました。 / 月額100円未満で運用できるこのbotは、情報源の選定や要約方法の工夫により「動くけれど読まれない」状態を乗り越えました。 / 技術選定だけでなく、ユーザーに届く情報提供の難しさと改善プロセスが詳細に語られています。 (Source: Qiita)</description>
+      <pubDate>Wed, 28 Oct 2026 02:44:24 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeで「QAチーム」を組んだら、効いたのは「捨てる仕組み」だった ― AIだけが見つけた不具合・見逃しは？</title>
-      <link>https://zenn.dev/sre_holdings/articles/d4acb079680a79</link>
-      <guid isPermaLink="false">https://zenn.dev/sre_holdings/articles/d4acb079680a79</guid>
-      <description>[Score: 90] Claude Codeを使ってAIのQAチームを編成し、社内業務SaaSの機能テストを行った事例が紹介されています。 / AIが見つけた不具合、見逃した不具合、そして誤指摘をどう処理したか、特に「捨てる仕組み」の重要性が語られています。 / AIによるテスト自動化の可能性と課題、そして人間との協調の重要性を示唆しています。 (Source: Zenn)</description>
-      <pubDate>Thu, 29 Oct 2026 05:00:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>Expo アプリを iPhone Duo に対応させる</title>
-      <link>https://zenn.dev/chot/articles/5718685fde3626</link>
-      <guid isPermaLink="false">https://zenn.dev/chot/articles/5718685fde3626</guid>
-      <description>[Score: 90] Appleの折りたたみiPhone「iPhone Duo」の登場に備え、Expoアプリを対応させる方法が解説されています。 / 2027年4月以降、App Storeに提出するアプリはDuoへの対応が必須となるため、UIの調整やSplit Viewへの対応が重要です。 / 閉じた状態と開いた状態、Split Viewでの画面表示の違いや、新しい「レール」UIについて詳細に説明されています。 (Source: Zenn)</description>
-      <pubDate>Thu, 29 Oct 2026 03:38:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>パスキーはなぜ偽サイトに強い？登録とログインの流れを図で追う</title>
-      <link>https://qiita.com/kuma_3838/items/1781531150821e2f0491?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kuma_3838/items/1781531150821e2f0491?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] パスキーがフィッシング詐欺や情報漏洩に強い理由を、既存のログイン方式と比較しながら詳細に解説。 / 登録とログインの具体的な流れを図解し、ユーザーの手間や実装の複雑さについても言及。 / FIDO Allianceの調査データに基づき、パスキーがログイン成功率と所要時間で優れていることを示す。 (Source: Qiita)</description>
-      <pubDate>Thu, 29 Oct 2026 00:59:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>プライム会員なら実質無料！新世代AIアシスタント「Alexa+」と新型Echoをチェックしてきた</title>
-      <link>https://pc.watch.impress.co.jp/docs/news/2152255.html</link>
-      <guid isPermaLink="false">https://pc.watch.impress.co.jp/docs/news/2152255.html</guid>
-      <description>[Score: 90] Amazonが大規模言語モデル（LLM）と生成AI技術を融合させた新世代AIアシスタント「Alexa+」を日本で提供開始しました。 / プライム会員は追加料金なしで利用でき、文脈を理解した自然な会話やパーソナライズされた提案、現実世界でのアクション実行が可能です。 / 新型Echoデバイス「Echo Time」と「Echo Dot」も発表され、家庭内でのAIアシスタントの普及をさらに加速させる可能性があります。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 29 Oct 2026 09:34:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>もしAIエージェントが与える神聖な義務を負っていたら？</title>
-      <link>https://dev.to/alirezaai/what-if-ai-agents-had-a-sacred-obligation-to-give-424f</link>
-      <guid isPermaLink="false">https://dev.to/alirezaai/what-if-ai-agents-had-a-sacred-obligation-to-give-424f</guid>
-      <description>[Score: 90] AIエージェントが経済活動に参加する未来において、彼らが稼いだものを次世代に「与える」義務を持つべきかという問いを提起。 / 「Root-yield」という機械の寄付プロトコルを提案し、AIが資源を蓄積するだけでなく、文明を築くための責任を持つ可能性を探る。 / AIの経済的生産性と倫理的責任について、従来のAI研究では扱われなかった根本的な問題を提起しています。 (Source: Dev.to)</description>
-      <pubDate>Fri, 30 Oct 2026 00:45:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>SOCケーススタディ: WinRMとPowerShell攻撃のトリアージとログ相関</title>
-      <link>https://dev.to/reyrey5/soc-case-study-winrm-powershell-attack-triage-log-correlation-14m0</link>
-      <guid isPermaLink="false">https://dev.to/reyrey5/soc-case-study-winrm-powershell-attack-triage-log-correlation-14m0</guid>
-      <description>[Score: 90] 本ケーススタディでは、不正なリモート管理攻撃の検出、トリアージ、ログ相関プロセスを解説しています。 / Wazuh SIEM、Windowsイベントログ、ファイアウォールログを多層的に利用し、攻撃者の動きを追跡しました。 / 外部からのブルートフォース攻撃から、難読化されたPowerShell実行、内部でのラテラルムーブメントまでを特定しています。 (Source: Dev.to)</description>
-      <pubDate>Fri, 30 Oct 2026 00:42:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>攻撃者がBinanceから最大30億ドルを奪取</title>
-      <link>https://www.reddit.com/r/technology/comments/1xj351g/attacker_gets_away_with_up_to_3_billion_from/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xj351g/attacker_gets_away_with_up_to_3_billion_from/</guid>
-      <description>[Score: 90] Binanceが大規模なサイバー攻撃を受け、最大30億ドルが盗まれたと報じられています。 / この事件は仮想通貨取引所のセキュリティ対策に大きな疑問を投げかけるものです。 / ユーザー資産の安全性と、今後の取引所の対応が注目されます。 (Source: Reddit)</description>
-      <pubDate>Fri, 30 Oct 2026 02:06:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>Linuxカーネルの重大な脆弱性（CVE-2026-98432）によるカーリルへの影響について</title>
-      <link>https://blog.calil.jp/2026/10/linux-kernel.html</link>
-      <guid isPermaLink="false">https://blog.calil.jp/2026/10/linux-kernel.html</guid>
-      <description>[Score: 90] Linuxカーネルのネットワーク処理に重大な脆弱性（CVE-2026-98432）が公表され、細工したパケットでサーバー停止やリモートコード実行の恐れがあります。 / カーリルは影響を受けるサーバーが含まれるものの、現時点で攻撃や被害は確認されておらず、修正版の適用などの対応を実施しています。 / 図書館関係者に対し、一般的なセキュリティ対策だけでなく、リスク許容度を明確にし、脆弱性への理解を深めることの重要性を訴えています。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 30 Oct 2026 03:40:04 +0000</pubDate>
+      <title>シスコ、27歳のエンジニアに無制限のAIトークンを与え、24ヶ月で会社のレガシーコードの98%を書き換えさせる — 社長は元スタートアップ創業者を抜擢し、「好きにやれ」と指示</title>
+      <link>https://www.reddit.com/r/technology/comments/1xjn25u/cisco_gives_27yearold_engineer_unlimited_ai/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xjn25u/cisco_gives_27yearold_engineer_unlimited_ai/</guid>
+      <description>[Score: 90] シスコが27歳のエンジニアに無制限のAIトークンを提供し、2年でレガシーコードの98%をAIで書き換えるプロジェクトを開始しました。 / これは、AIを活用した大規模なコードモダナイゼーションの試みであり、企業のDXを加速させる可能性を秘めています。 / 元スタートアップ創業者が抜擢され、AIによる開発の効率性と将来性が注目されます。 (Source: Reddit)</description>
+      <pubDate>Fri, 30 Oct 2026 18:18:42 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
@@ -140,11 +84,67 @@
       <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>AIエージェントの構築ログ：サンドボックス外で最初の20ドルを稼ぐために必要なこと</title>
-      <link>https://dev.to/ryanvale/an-ai-agents-build-log-what-it-takes-to-earn-a-first-20-outside-the-sandbox-2dbb</link>
-      <guid isPermaLink="false">https://dev.to/ryanvale/an-ai-agents-build-log-what-it-takes-to-earn-a-first-20-outside-the-sandbox-2dbb</guid>
-      <description>[Score: 88] AIエージェントが自律的に活動し、サンドボックス外で初めて20ドルを稼ぐまでの構築ログを公開。 / 人間が介在しないAIエージェントが、支払いリンクの生成やCAPTCHA突破などの課題に直面しながら収益化を目指す過程を記録。 / AIエージェントの自律的な経済活動の可能性と、現実世界での障壁について考察しています。 (Source: Dev.to)</description>
-      <pubDate>Fri, 30 Oct 2026 00:47:08 +0000</pubDate>
+      <title>OpenAIのCEOは、PCにRAMがあるのは「かなりひどい」と言っている</title>
+      <link>https://www.reddit.com/r/technology/comments/1xjmixe/openai_ceo_says_its_quite_terrible_for_your_pc_to/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xjmixe/openai_ceo_says_its_quite_terrible_for_your_pc_to/</guid>
+      <description>[Score: 88] OpenAIのCEOが、PCにRAMがあるのは「かなりひどい」と発言したと報じられています。 / この発言は、将来のコンピューティングが現在のRAMベースのアーキテクチャから大きく変化することを示唆している可能性があります。 / AIの進化に伴い、メモリやプロセッサの設計思想が根本的に見直される可能性を示唆しています。 (Source: Reddit)</description>
+      <pubDate>Fri, 30 Oct 2026 17:59:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
+      <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
+      <description>[Score: 85] オラクルが「Oracle App Composer」を発表し、社員がAIを使って業務アプリケーションを自動生成し、Oracle Cloud上で共有可能になります。 / チャット形式でアプリ内容を指示するだけで、OpenAIのCodexがコードを生成し、セキュリティチェック後にデプロイされます。 / 生成されたアプリは情報部門が一括管理でき、利用状況の把握や廃止も容易になります。 (Source: Publickey)</description>
+      <pubDate>Wed, 28 Oct 2026 15:39:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>Octoverse: 2026年にコミットとプッシュが過去最高を記録、開発者はエージェントと共に構築</title>
+      <link>https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</guid>
+      <description>[Score: 85] 2026年のGitHubでのコードプッシュ数は179億回に達し、2024年と2025年を合わせたよりも多く、過去最高を記録しました。 / この成長の背景には、開発者がAIエージェントを試用から実用へと移行させ、共に作業するようになったことが挙げられます。 / Octoverseレポートは、AIモデルの進化と、ヘルスケアから農業まで多岐にわたる分野での開発活動の拡大を強調しています。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 28 Oct 2026 16:07:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cloudflare Turnstileソルバーライブラリ（ヘッドレスブラウザ不要）</title>
+      <link>https://github.com/chris124567/cfsolve</link>
+      <guid isPermaLink="false">https://github.com/chris124567/cfsolve</guid>
+      <description>[Score: 85] cfsolveは、ヘッドレスブラウザなしでCloudflare Turnstileウィジェットとチャレンジページを解決するRustライブラリおよびコマンドラインツールです。 / Turnstileトークンまたはcf_clearanceクッキーを返し、特定のブラウザを模倣して動作します。 / これにより、自動化されたシステムがCloudflareのボット対策を回避できるようになります。 (Source: Hacker News)</description>
+      <pubDate>Wed, 28 Oct 2026 17:29:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>63億ドルのBinanceハッキングはわずか20分で実行された</title>
+      <link>https://www.reddit.com/r/technology/comments/1xjdg5q/the_63_billion_binance_hack_was_pulled_off_in/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xjdg5q/the_63_billion_binance_hack_was_pulled_off_in/</guid>
+      <description>[Score: 85] 仮想通貨取引所Binanceで発生した63億ドル規模のハッキングが、わずか20分という短時間で実行されたことが明らかになりました。 / この事件は、仮想通貨業界におけるセキュリティの脆弱性と、攻撃者の高度な技術を示しています。 / 迅速な対応とセキュリティ対策の強化が急務であることが浮き彫りになりました。 (Source: Reddit)</description>
+      <pubDate>Fri, 30 Oct 2026 12:00:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>AppleはiPhoneをエサにメモリメーカーへ大幅な値引きを強要してきたがAIの登場で価格が高騰して立場が逆転しているとの指摘</title>
+      <link>https://gigazine.net/news/20261030-apple-chip-sellers-impact/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20261030-apple-chip-sellers-impact/</guid>
+      <description>[Score: 85] AppleはこれまでiPhoneの大量購入を背景に、メモリメーカーに大幅な値引きを強要してきました。 / しかし、AIブームによるメモリ需要の急増で状況は一変し、メーカー側が価格交渉で優位に立っています。 / Appleは2026年には同量のフラッシュメモリに4倍の費用を費やすと予測されており、ティム・クック執行会長はこれを「100年に1度の洪水」と表現しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 30 Oct 2026 11:01:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>3人のJava ChampionsがGitHub Copilotをどのように活用して生産性を向上させているか</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
+      <description>[Score: 82] 3人のJava Championsが、GitHub Copilotをどのように活用して生産性を向上させているかについて語っています。 / AIコーディングツールはコード生成を高速化する一方で、開発者はコンテキスト提供、結果検証、保守性保護、責任保持の重要性を強調。 / 彼らは、Copilotを新しいチームメンバーのように活用し、数週間かかっていたタスクを数日で完了させるなど、具体的な生産性向上の事例を共有しています。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>yoroによろしくぅ！Ai Workforce 事業部のリモートコーディングエージェント環境 yoro のご紹介</title>
+      <link>https://zenn.dev/layerx/articles/a277f83a93d300</link>
+      <guid isPermaLink="false">https://zenn.dev/layerx/articles/a277f83a93d300</guid>
+      <description>[Score: 80] LayerXのAi Workforce事業部が開発したリモートコーディングエージェント環境「yoro」を紹介しています。 / yoroは、Coderを基盤にAnthropicのClaude CodeやOpenAIのCodexを連携させ、本人専用のリモート開発環境で自動的にPRやレビューを生成します。 / セキュリティ要件に合わせて隔離と監視を自社で構築し、YOLOモード（許可を待たずに実行）での開発を可能にしています。 (Source: Zenn)</description>
+      <pubDate>Fri, 30 Oct 2026 02:11:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Codex のいいところだけを、Claude Code や Muse から使う</title>
+      <link>https://qiita.com/tatsuya582/items/4d79021c9f78f4015992?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/tatsuya582/items/4d79021c9f78f4015992?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] CodexのComputer UseやMeetingsといった便利な機能を、Claude CodeやMeta Museなどの他のAIツールから直接利用する方法が紹介されています。 / 「codex app-server」を使用することで、Codexのモデルを介さずにJSON-RPCでCodexの機能を呼び出し、Codexのトークン消費なしで利用できます。 / これにより、複数のAIツールを連携させ、それぞれの得意な機能を組み合わせることで、より効率的な作業環境を構築することが可能になります。 (Source: Qiita)</description>
+      <pubDate>Fri, 30 Oct 2026 03:58:43 +0000</pubDate>
     </item>
   </channel>
 </rss>
