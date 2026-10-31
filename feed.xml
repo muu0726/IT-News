@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 31 Oct 2026 00:47:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 10:54:27 +0000</lastBuildDate>
     <item>
       <title>今後のセキュリティの考え方</title>
       <link>https://zenn.dev/cscloud_blog/articles/a987163efae5d8</link>
@@ -70,6 +70,34 @@
       <pubDate>Fri, 30 Oct 2026 18:18:42 +0000</pubDate>
     </item>
     <item>
+      <title>63億ドルのBinanceハッキングはわずか20分で実行された</title>
+      <link>https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/</link>
+      <guid isPermaLink="false">https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/</guid>
+      <description>[Score: 90] 史上最大規模とされる63億ドル相当のBinanceハッキングが、わずか20分間で実行された事件について報じています。 / ハッカーは複数のブロックチェーンにまたがるBinanceのウォレットから資金を流出させました。 / 北朝鮮のハッカー集団が関与している可能性が指摘されており、一部の資金は凍結されています。 (Source: Hacker News)</description>
+      <pubDate>Fri, 30 Oct 2026 12:50:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>SSM Session Managerを使ってDBに接続する</title>
+      <link>https://qiita.com/j-yasukawa/items/701554f14fe8b02ff34e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/j-yasukawa/items/701554f14fe8b02ff34e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AWS Systems Manager (SSM) Session Managerを利用して、プライベートサブネットのRDS/Auroraに安全に接続する方法を解説。 / 従来のSSH踏み台EC2運用が抱えるセキュリティリスク（22番ポート露出、SSH鍵管理）を解消します。 / SSM Agentを介したアウトバウンド接続により、インバウンドポートを開けずにDBへのポートフォワードを実現する手順が示されています。 (Source: Qiita)</description>
+      <pubDate>Fri, 30 Oct 2026 06:39:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>NvidiaストアがRTX 5090に続きRTX 5080を静かに撤去 — 市場価格は希望小売価格の2.2倍に高騰 | 制御不能な価格設定と間もなく完全な在庫切れ</title>
+      <link>https://www.reddit.com/r/technology/comments/1xk1j63/nvidia_store_quietly_pulls_the_rtx_5080_following/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xk1j63/nvidia_store_quietly_pulls_the_rtx_5080_following/</guid>
+      <description>[Score: 90] Nvidiaの公式ストアからRTX 5090に続きRTX 5080も撤去されたと報じられています。 / これにより、市場でのRTX 50シリーズの価格が希望小売価格の2.2倍にまで高騰しています。 / 供給不足と需要過多が原因で、製品が市場から完全に姿を消す可能性が指摘されています。 (Source: Reddit)</description>
+      <pubDate>Sat, 31 Oct 2026 05:03:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>GMO不正侵入、システム脆弱性を2年前に把握 子会社指摘も対策後手 - 日本経済新聞</title>
+      <link>https://www.nikkei.com/article/DGXZQOUC30A460Q6A031C2000000/</link>
+      <guid isPermaLink="false">https://www.nikkei.com/article/DGXZQOUC30A460Q6A031C2000000/</guid>
+      <description>[Score: 90] GMOインターネットグループが不正アクセスを受けた問題で、子会社のセキュリティ企業が2年前にシステムの脆弱性を指摘していました。 / しかし、GMOは十分な対策を講じず、結果として不正侵入を招いたことが判明。 / この事態は、企業におけるセキュリティ対策の優先順位と、子会社からの警告への対応の重要性を浮き彫りにしています。 (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 31 Oct 2026 08:05:25 +0000</pubDate>
+    </item>
+    <item>
       <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
       <link>https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</guid>
@@ -117,34 +145,6 @@
       <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xjdg5q/the_63_billion_binance_hack_was_pulled_off_in/</guid>
       <description>[Score: 85] 仮想通貨取引所Binanceで発生した63億ドル規模のハッキングが、わずか20分という短時間で実行されたことが明らかになりました。 / この事件は、仮想通貨業界におけるセキュリティの脆弱性と、攻撃者の高度な技術を示しています。 / 迅速な対応とセキュリティ対策の強化が急務であることが浮き彫りになりました。 (Source: Reddit)</description>
       <pubDate>Fri, 30 Oct 2026 12:00:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>AppleはiPhoneをエサにメモリメーカーへ大幅な値引きを強要してきたがAIの登場で価格が高騰して立場が逆転しているとの指摘</title>
-      <link>https://gigazine.net/news/20261030-apple-chip-sellers-impact/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261030-apple-chip-sellers-impact/</guid>
-      <description>[Score: 85] AppleはこれまでiPhoneの大量購入を背景に、メモリメーカーに大幅な値引きを強要してきました。 / しかし、AIブームによるメモリ需要の急増で状況は一変し、メーカー側が価格交渉で優位に立っています。 / Appleは2026年には同量のフラッシュメモリに4倍の費用を費やすと予測されており、ティム・クック執行会長はこれを「100年に1度の洪水」と表現しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 30 Oct 2026 11:01:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>3人のJava ChampionsがGitHub Copilotをどのように活用して生産性を向上させているか</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
-      <description>[Score: 82] 3人のJava Championsが、GitHub Copilotをどのように活用して生産性を向上させているかについて語っています。 / AIコーディングツールはコード生成を高速化する一方で、開発者はコンテキスト提供、結果検証、保守性保護、責任保持の重要性を強調。 / 彼らは、Copilotを新しいチームメンバーのように活用し、数週間かかっていたタスクを数日で完了させるなど、具体的な生産性向上の事例を共有しています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>yoroによろしくぅ！Ai Workforce 事業部のリモートコーディングエージェント環境 yoro のご紹介</title>
-      <link>https://zenn.dev/layerx/articles/a277f83a93d300</link>
-      <guid isPermaLink="false">https://zenn.dev/layerx/articles/a277f83a93d300</guid>
-      <description>[Score: 80] LayerXのAi Workforce事業部が開発したリモートコーディングエージェント環境「yoro」を紹介しています。 / yoroは、Coderを基盤にAnthropicのClaude CodeやOpenAIのCodexを連携させ、本人専用のリモート開発環境で自動的にPRやレビューを生成します。 / セキュリティ要件に合わせて隔離と監視を自社で構築し、YOLOモード（許可を待たずに実行）での開発を可能にしています。 (Source: Zenn)</description>
-      <pubDate>Fri, 30 Oct 2026 02:11:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>Codex のいいところだけを、Claude Code や Muse から使う</title>
-      <link>https://qiita.com/tatsuya582/items/4d79021c9f78f4015992?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/tatsuya582/items/4d79021c9f78f4015992?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] CodexのComputer UseやMeetingsといった便利な機能を、Claude CodeやMeta Museなどの他のAIツールから直接利用する方法が紹介されています。 / 「codex app-server」を使用することで、Codexのモデルを介さずにJSON-RPCでCodexの機能を呼び出し、Codexのトークン消費なしで利用できます。 / これにより、複数のAIツールを連携させ、それぞれの得意な機能を組み合わせることで、より効率的な作業環境を構築することが可能になります。 (Source: Qiita)</description>
-      <pubDate>Fri, 30 Oct 2026 03:58:43 +0000</pubDate>
     </item>
   </channel>
 </rss>

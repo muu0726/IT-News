@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-31T09:46:56.640296+09:00",
-  "total_count": 47,
-  "success_count": 47,
+  "generated_at": "2026-10-31T19:53:45.109957+09:00",
+  "total_count": 70,
+  "success_count": 70,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -25,7 +25,7 @@
       "new_at": "2026-10-31T09:46:56.640296+09:00",
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": true,
-      "hatena_count": 132
+      "hatena_count": 201
     },
     {
       "title": "Cursor MarketplaceのVS Code拡張機能「Claude Code」にバックドア",
@@ -69,7 +69,9 @@
       "new_at": "2026-10-31T09:46:56.640296+09:00",
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": false,
-      "hatena_count": 48
+      "hatena_count": 254,
+      "topic_group": 1,
+      "topic_size": 2
     },
     {
       "title": "Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026",
@@ -129,7 +131,7 @@
       "score_reason": "AIとエージェントがソフトウェア開発の未来をどのように変えるかというGitHubのビジョンを示しており、業界全体に大きな影響を与える可能性を秘めているため。",
       "analysis_status": "ok",
       "is_hot": false,
-      "topic_group": 1,
+      "topic_group": 2,
       "topic_size": 2,
       "new_at": "2026-10-29T08:16:51.279560+09:00",
       "is_prev_seen": true,
@@ -141,8 +143,8 @@
       "url": "https://status.northflank.com",
       "source": "Hacker News",
       "published": "2026-10-30T15:10:31+00:00",
-      "hn_score": 348,
-      "hn_comments": 271,
+      "hn_score": 439,
+      "hn_comments": 316,
       "reading_min": 1,
       "summary": "Northflankプラットフォームに提供されたAI APIキーの不正使用が報告され、Northflankが侵害されました。\nユーザーは、Northflankに保存されているユーザー提供のシークレットを直ちにローテーションし、AIプロバイダーの使用状況と請求ログを確認するよう推奨されています。\nすべての環境変数が侵害されたと仮定し、すべてのシークレットと資格情報を直ちにローテーションする必要があります。",
       "tags": [
@@ -199,6 +201,93 @@
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "63億ドルのBinanceハッキングはわずか20分で実行された",
+      "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+      "source": "Hacker News",
+      "published": "2026-10-30T12:50:01+00:00",
+      "hn_score": 461,
+      "hn_comments": 314,
+      "reading_min": 5,
+      "summary": "史上最大規模とされる63億ドル相当のBinanceハッキングが、わずか20分間で実行された事件について報じています。\nハッカーは複数のブロックチェーンにまたがるBinanceのウォレットから資金を流出させました。\n北朝鮮のハッカー集団が関与している可能性が指摘されており、一部の資金は凍結されています。",
+      "tags": [
+        "サイバーセキュリティ",
+        "仮想通貨",
+        "ハッキング"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "仮想通貨業界における史上最大級のハッキング事件であり、その手口と影響はセキュリティ分野に大きな警鐘を鳴らすため非常に高いスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 4,
+      "topic_size": 2
+    },
+    {
+      "title": "SSM Session Managerを使ってDBに接続する",
+      "url": "https://qiita.com/j-yasukawa/items/701554f14fe8b02ff34e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-30T06:39:46+00:00",
+      "reading_min": 12,
+      "summary": "AWS Systems Manager (SSM) Session Managerを利用して、プライベートサブネットのRDS/Auroraに安全に接続する方法を解説。\n従来のSSH踏み台EC2運用が抱えるセキュリティリスク（22番ポート露出、SSH鍵管理）を解消します。\nSSM Agentを介したアウトバウンド接続により、インバウンドポートを開けずにDBへのポートフォワードを実現する手順が示されています。",
+      "tags": [
+        "AWS",
+        "SSM",
+        "セキュリティ"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 90,
+      "score_reason": "AWS環境におけるDB接続のセキュリティと運用効率を大幅に向上させる実践的な技術であり、多くの企業にとって有用な情報であるため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "NvidiaストアがRTX 5090に続きRTX 5080を静かに撤去 — 市場価格は希望小売価格の2.2倍に高騰 | 制御不能な価格設定と間もなく完全な在庫切れ",
+      "url": "https://www.reddit.com/r/technology/comments/1xk1j63/nvidia_store_quietly_pulls_the_rtx_5080_following/",
+      "source": "Reddit",
+      "published": "2026-10-31T05:03:18+00:00",
+      "summary": "Nvidiaの公式ストアからRTX 5090に続きRTX 5080も撤去されたと報じられています。\nこれにより、市場でのRTX 50シリーズの価格が希望小売価格の2.2倍にまで高騰しています。\n供給不足と需要過多が原因で、製品が市場から完全に姿を消す可能性が指摘されています。",
+      "tags": [
+        "Nvidia",
+        "GPU",
+        "半導体市場"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 90,
+      "score_reason": "主要なGPU製品の供給不足と価格高騰は、ゲーマーだけでなくAI開発者やデータセンターにも大きな影響を与えるため、業界全体への影響度が非常に高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "GMO不正侵入、システム脆弱性を2年前に把握 子会社指摘も対策後手 - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUC30A460Q6A031C2000000/",
+      "source": "はてなブックマーク",
+      "published": "2026-10-31T08:05:25+00:00",
+      "reading_min": 1,
+      "summary": "GMOインターネットグループが不正アクセスを受けた問題で、子会社のセキュリティ企業が2年前にシステムの脆弱性を指摘していました。\nしかし、GMOは十分な対策を講じず、結果として不正侵入を招いたことが判明。\nこの事態は、企業におけるセキュリティ対策の優先順位と、子会社からの警告への対応の重要性を浮き彫りにしています。",
+      "tags": [
+        "セキュリティ",
+        "脆弱性",
+        "不正アクセス"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "大手企業のセキュリティ対策の不備が露呈し、顧客情報やサービスへの影響が大きいため、業界全体への警鐘となる重要度の高いニュースである。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 95
     },
     {
       "title": "JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能",
@@ -261,8 +350,8 @@
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 2,
-      "topic_size": 3
+      "topic_group": 3,
+      "topic_size": 4
     },
     {
       "title": "オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026",
@@ -301,7 +390,7 @@
       "score_reason": "AIエージェントの普及が開発活動に与える具体的な影響と、GitHubプラットフォームの成長を示す重要なデータであり、業界のトレンドを理解する上で不可欠な情報であるため。",
       "analysis_status": "ok",
       "is_hot": false,
-      "topic_group": 1,
+      "topic_group": 2,
       "topic_size": 2,
       "new_at": "2026-10-29T08:16:51.279560+09:00",
       "is_prev_seen": true,
@@ -313,8 +402,8 @@
       "url": "https://github.com/chris124567/cfsolve",
       "source": "Hacker News",
       "published": "2026-10-28T17:29:23+00:00",
-      "hn_score": 51,
-      "hn_comments": 14,
+      "hn_score": 217,
+      "hn_comments": 64,
       "reading_min": 5,
       "summary": "cfsolveは、ヘッドレスブラウザなしでCloudflare Turnstileウィジェットとチャレンジページを解決するRustライブラリおよびコマンドラインツールです。\nTurnstileトークンまたはcf_clearanceクッキーを返し、特定のブラウザを模倣して動作します。\nこれにより、自動化されたシステムがCloudflareのボット対策を回避できるようになります。",
       "tags": [
@@ -349,7 +438,9 @@
       "new_at": "2026-10-31T09:46:56.640296+09:00",
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 0,
+      "topic_group": 4,
+      "topic_size": 2
     },
     {
       "title": "AppleはiPhoneをエサにメモリメーカーへ大幅な値引きを強要してきたがAIの登場で価格が高騰して立場が逆転しているとの指摘",
@@ -372,7 +463,72 @@
       "new_at": "2026-10-31T09:46:56.640296+09:00",
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": false,
-      "hatena_count": 54
+      "hatena_count": 81
+    },
+    {
+      "title": "TelegrafをARMv6で使う",
+      "url": "https://zenn.dev/nauh_blog/articles/3bf7430510d30a",
+      "source": "Zenn",
+      "published": "2026-10-30T09:00:05+00:00",
+      "reading_min": 20,
+      "summary": "Raspberry Pi Zero W (ARMv6) でTelegrafを効率的に利用するための方法について解説しています。\n公式配布物のサイズが大きいため、必要なプラグインのみをカスタムビルドする手順を紹介しています。\nリソースが限られたエッジデバイスでのメトリクス収集におけるTelegrafの利点と課題を考察しています。",
+      "tags": [
+        "Telegraf",
+        "ARMv6",
+        "Raspberry Pi"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "エッジデバイスでのリソース効率的な監視システム構築という実用的な課題に対し、Telegrafのカスタムビルドという具体的な解決策を提示しており、IoTや組み込み分野で非常に有用な情報であるため高いスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "刑事告訴を予告されたとき、AIに「無実の証明」をさせない設計――GMO事案で考えた証拠と判断の境界",
+      "url": "https://zenn.dev/c_a_p_engineer/articles/gmo-legal-threat-ai-evidence-20261030",
+      "source": "Zenn",
+      "published": "2026-10-30T04:49:33+00:00",
+      "reading_min": 4,
+      "summary": "GMOインターネットグループからの刑事告訴予告事案を例に、AIエージェントの調査設計について考察しています。\nAIが精巧な誤認を生み出さないよう、「結論生成」ではなく「判断可能な状態の生成」に制限する設計を提案。\n情報源、確認事項、未解決の問いを分離し、反証探索の重要性を説いています。",
+      "tags": [
+        "AI倫理",
+        "AIエージェント",
+        "証拠分析"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIの信頼性と倫理的な利用に関する重要な議論であり、実社会でのAI活用における設計思想に大きな影響を与える可能性があるため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "OpenAI CEOが個人PCにメモリを積むのは「かなりひどい」と発言。DRAMはクラウドに集約すべきと主張",
+      "url": "https://gazlog.jp/entry/open-ai-ceo-memory-should-go-to-dc/",
+      "source": "はてなブックマーク",
+      "published": "2026-10-31T02:56:44+00:00",
+      "reading_min": 2,
+      "summary": "OpenAIのSam Altman CEOが、個人PCにDRAMを積むのは非効率であり、クラウドに集約すべきだと主張しました。\nPCのDRAMはほとんど活用されておらず、AIデータセンター向けの需要増と供給不足の中で、クラウドでのDRAM利用率最大化を提唱。\nこの発言は、今後のDRAM市場やAI開発の方向性に大きな影響を与える可能性があります。",
+      "tags": [
+        "DRAM",
+        "クラウド",
+        "AIデータセンター"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AI開発の最前線に立つ人物の発言であり、今後のハードウェア戦略やクラウド利用のトレンドに大きな影響を与える可能性があるため重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 98,
+      "topic_group": 3,
+      "topic_size": 4
     },
     {
       "title": "3人のJava ChampionsがGitHub Copilotをどのように活用して生産性を向上させているか",
@@ -414,7 +570,7 @@
       "new_at": "2026-10-30T20:21:28.989872+09:00",
       "first_seen": "2026-10-30T20:21:28.989872+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 3,
       "is_prev_seen": true
     },
     {
@@ -458,7 +614,7 @@
       "new_at": "2026-10-29T08:16:51.279560+09:00",
       "is_prev_seen": true,
       "first_seen": "2026-10-29T08:16:51.279560+09:00",
-      "hatena_count": 42
+      "hatena_count": 43
     },
     {
       "title": "フロントエンドカンファレンス関西2026に参加しました！",
@@ -500,7 +656,7 @@
       "new_at": "2026-10-31T09:46:56.640296+09:00",
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": false,
-      "hatena_count": 144
+      "hatena_count": 308
     },
     {
       "title": "WordPressのオートロードとは？肥大化したwp_optionsテーブルがすべてのリクエストを重くする仕組み",
@@ -520,6 +676,94 @@
       "analysis_status": "ok",
       "new_at": "2026-10-31T09:46:56.640296+09:00",
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "GCCにおけるSwitch文の最適化",
+      "url": "https://xoranth.net/gcc-switch/",
+      "source": "Hacker News",
+      "published": "2026-10-31T08:02:26+00:00",
+      "hn_score": 66,
+      "hn_comments": 6,
+      "reading_min": 23,
+      "summary": "GCCコンパイラがswitch文をどのように最適化するかを詳細に解説しています。\n特に、switch文がジャンプテーブルに変換される過程や、その他の最適化手法に焦点を当てています。\n-O3最適化フラグ使用時の挙動や、clangとの共通点についても触れられています。",
+      "tags": [
+        "GCC",
+        "コンパイラ",
+        "最適化"
+      ],
+      "category": "プログラミング言語",
+      "score": 80,
+      "score_reason": "コンパイラの内部動作と最適化に関する深い技術的洞察を提供し、プログラミング言語の効率化に直接関連するため高いスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "マルチタスクが苦手なので、Slack の返信と PR レビューを Claude Code に定時で下ごしらえさせている",
+      "url": "https://qiita.com/generoKoki/items/81ca4042e30c42ffe4a7?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-30T11:21:08+00:00",
+      "reading_min": 7,
+      "summary": "マルチタスクが苦手なエンジニアが、Claude Codeを活用してSlack返信の下書き作成とPRレビューの下準備を自動化する事例を紹介。\nMacのlaunchdからClaude Codeをヘッドレス実行し、GitHubやSlackと連携して定時処理を行っています。\nこれにより、人間はAIが生成した結果を確認・修正するだけで済むようになり、業務効率が向上します。",
+      "tags": [
+        "AI活用",
+        "業務効率化",
+        "Claude Code"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AIを個人の業務効率化に具体的に活用する実践的な事例であり、AIツールの実用性と生産性向上への貢献度が高いため評価できます。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "喜多方市の児童ポスターコンクール、入賞作品が「生成AIでは」と物議 審査員は「本人が描画した」と判断 - モデルプレス",
+      "url": "https://mdpr.jp/news/detail/4862863",
+      "source": "はてなブックマーク",
+      "published": "2026-10-31T02:23:28+00:00",
+      "reading_min": 3,
+      "summary": "喜多方市の児童ポスターコンクールで、入賞作品が生成AIによるものではないかと物議を醸しています。\n実行委員会は「本人が描画した作品」と判断しましたが、AI使用に関する明確な規定はありませんでした。\nこの問題は、AI生成技術の普及に伴う著作権や倫理、コンクールにおける審査基準の課題を浮き彫りにしています。",
+      "tags": [
+        "生成AI",
+        "著作権",
+        "倫理"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "生成AIの普及に伴う社会的な課題を象徴する事例であり、今後のAI利用に関するルール作りや倫理的議論に大きな影響を与えるため重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 67,
+      "topic_group": 1,
+      "topic_size": 2
+    },
+    {
+      "title": "私たちのテストスイートにはDOMがない：266のテストを603ミリ秒で実行し、チェックする2つのコンポーネントは文字列にレンダリングされる",
+      "url": "https://dev.to/daniel_pertu/our-test-suite-has-no-dom-266-tests-in-603-milliseconds-and-the-two-components-it-checks-are-31e4",
+      "source": "Dev.to",
+      "published": "2026-10-31T10:51:03+00:00",
+      "reading_min": 6,
+      "summary": "この記事は、Next.jsアプリケーション「PubTrivia」のテストスイートがDOM環境なしで動作する仕組みを解説しています。\njsdomやTesting Libraryを使用せず、Vitestのnode環境とサーバーサイドレンダリングを活用することで、高速なテストを実現しています。\n266のテストが603ミリ秒で完了し、Reactコンポーネントも文字列としてテストされる効率的なアプローチを紹介しています。",
+      "tags": [
+        "Next.js",
+        "Vitest",
+        "Testing"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 80,
+      "score_reason": "DOMなしで高速なフロントエンドテストを実現する革新的なアプローチであり、開発効率向上に大きく貢献する可能性が高いため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -570,6 +814,27 @@
       "is_prev_seen": true
     },
     {
+      "title": "あなたのコーディングエージェントのサンドボックスはオフです。すべてを壊さずにオンにする方法。",
+      "url": "https://dev.to/hardikverma22/your-coding-agents-sandbox-is-off-heres-how-to-turn-it-on-without-breaking-everything-54mg",
+      "source": "Dev.to",
+      "published": "2026-10-31T10:50:48+00:00",
+      "reading_min": 3,
+      "summary": "主要なコーディングエージェントに搭載されているサンドボックス機能が、デフォルト拒否のポリシーにより利用されにくい現状を指摘しています。\nサンドボックスを有効にする際に発生する権限エラーを回避するため、過去のセッション履歴から必要な許可リストを自動生成するツール「sandfit」を紹介しています。\nsandfitは、サンドボックスポリシーを適用する前に何が壊れるかを予測し、安全な導入を支援します。",
+      "tags": [
+        "Security",
+        "AI Agent",
+        "Sandbox"
+      ],
+      "category": "セキュリティ",
+      "score": 78,
+      "score_reason": "AIコーディングエージェントのサンドボックス利用における課題解決策を提示しており、セキュリティと利便性の両面で実用性が高いため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "IVRyのSREの取り組み 2026冬",
       "url": "https://zenn.dev/ivry/articles/70d4f05ce4ae5c",
       "source": "Zenn",
@@ -588,7 +853,7 @@
       "new_at": "2026-10-30T20:21:28.989872+09:00",
       "first_seen": "2026-10-30T20:21:28.989872+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 24,
       "is_prev_seen": true
     },
     {
@@ -655,8 +920,8 @@
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 2,
-      "topic_size": 3
+      "topic_group": 3,
+      "topic_size": 4
     },
     {
       "title": "CipheraがCDNとしてBunnyCDNを選んだ理由",
@@ -701,6 +966,94 @@
       "analysis_status": "ok",
       "new_at": "2026-10-31T09:46:56.640296+09:00",
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIはどれくらい動画編集ができるのか!? Claude CodeでYouTube動画編集した話",
+      "url": "https://qiita.com/tsukasa_japan/items/b8bca096170d087e271d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-29T08:11:44+00:00",
+      "reading_min": 5,
+      "summary": "YouTube動画編集のプロセスにおいて、AI（Claude Code）がどこまで自動化できるかを検証。\n撮影素材と指示をClaude Codeに与え、CapCutのプロジェクトファイルを生成させることで、大まかな編集作業をAIに任せることに成功。\n最終的な調整は人間が行うハイブリッドなワークフローを提案し、AIによる動画編集の可能性と課題を示す。",
+      "tags": [
+        "動画編集",
+        "AI",
+        "Claude Code",
+        "YouTube",
+        "CapCut"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "動画編集というクリエイティブな作業にAIを適用する試みであり、具体的な成果と課題を提示しているため、AIの応用分野の広がりを示す事例として評価した。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-30T09:57:56.929540+09:00",
+      "first_seen": "2026-10-30T09:57:56.929540+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "is_prev_seen": true
+    },
+    {
+      "title": "Show HN: Marelleo、ESP32を使って子供のために作ったオープンソースのストーリーボックス",
+      "url": "https://zebra.rodeo/en/blog/marelleo/",
+      "source": "Hacker News",
+      "published": "2026-10-27T15:24:36+00:00",
+      "hn_score": 67,
+      "hn_comments": 25,
+      "reading_min": 21,
+      "summary": "ESP32を使って子供向けのオープンソースのストーリーボックス「Marelleo」を自作したプロジェクトです。\n市販のストーリーボックスのビジネスモデルに不満を感じ、電子工作未経験から学びながら開発しました。\nフィギュアを置くと物語が再生されるシンプルな操作性と、オープンソースである点が特徴です。",
+      "tags": [
+        "ESP32",
+        "IoT",
+        "電子工作"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 75,
+      "score_reason": "ESP32を活用したDIYプロジェクトであり、オープンソースで実用的なガジェットを開発した点で技術的な興味と応用性があるため高いスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AnthropicがClaudeを再びナーフし、ユーザーが「特定の既存ゲーム」からAIスロップを作成するのを阻止",
+      "url": "https://www.reddit.com/r/technology/comments/1xjvvfc/anthropic_nerfs_claude_again_to_stop_users_from/",
+      "source": "Reddit",
+      "published": "2026-10-31T00:17:25+00:00",
+      "summary": "Anthropicが、AIモデルClaudeの機能を再び制限したと報じられています。\nこれは、ユーザーが既存のゲームコンテンツから「AIスロップ」（低品質な生成物）を作成するのを防ぐためです。\nAIによる著作権侵害やコンテンツの質の低下への懸念に対応する動きと推測されます。",
+      "tags": [
+        "AI倫理",
+        "コンテンツ生成",
+        "著作権"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AIモデルの利用制限は、著作権やコンテンツの質に関するAI業界の課題を反映しており、今後のAI開発と規制の動向に影響を与える可能性があるため評価できます。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "GhostTales AI",
+      "url": "https://dev.to/priyanka_6da443d7d9cae66e/ghosttales-ai-3169",
+      "source": "Dev.to",
+      "published": "2026-10-31T10:53:04+00:00",
+      "reading_min": 2,
+      "summary": "GhostTales AIは、Google AI StudioとGemmaモデルを活用したAI駆動の不気味な物語ジェネレーターです。\nユーザーはホラー、ミステリー、超常現象の3つのカテゴリから選択し、アイデアを没入感のある物語に変換できます。\nHacktoberfestのオープンソースAIチャレンジの一環として開発され、オープンイノベーションの重要性を示しています。",
+      "tags": [
+        "AI",
+        "Story Generation",
+        "Gemma"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AIを活用した物語生成という創造的なアプリケーションであり、GoogleのGemmaモデルの活用例として新規性と実用性があるため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -751,7 +1104,7 @@
       "title": "WebAnything: ワイルドなウェブからスケーラブルなエージェント環境へ",
       "url": "https://arxiv.org/abs/2610.37786",
       "source": "arXiv cs.AI",
-      "published": "2026-10-30T04:00:00+00:00",
+      "published": "2026-10-31T04:00:00+00:00",
       "reading_min": 1,
       "summary": "この記事は、WebAnythingという新しいフレームワークについて紹介しています。\nこれは、ウェブ上の多様な情報を活用し、スケーラブルなエージェント環境を構築することを目指しています。\narXivLabsの理念に基づき、オープン性、コミュニティ、卓越性、ユーザーデータプライバシーを重視しています。",
       "tags": [
@@ -811,8 +1164,8 @@
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 2,
-      "topic_size": 3
+      "topic_group": 3,
+      "topic_size": 4
     },
     {
       "title": "GMO不正アクセスの件で見つけた不審なXアカウントと「被害者フォーラム」について",
@@ -835,7 +1188,7 @@
       "new_at": "2026-10-31T09:46:56.640296+09:00",
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": false,
-      "hatena_count": 21
+      "hatena_count": 100
     },
     {
       "title": "SEOのためのCMS評価方法：実践的な受け入れチェックリスト",
@@ -861,10 +1214,94 @@
       "hatena_count": 0
     },
     {
+      "title": "人生初ライブラリunder-liquid-glassを公開しました！",
+      "url": "https://qiita.com/ocean6954/items/3e826fbb5b26aedbc887?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-29T11:37:23+00:00",
+      "reading_min": 9,
+      "summary": "Safariのタブバーの裏にコンテンツを描画可能にするJavaScriptライブラリ「under-liquid-glass」が公開されました。\n依存ゼロ、フレームワーク非依存、軽量（gzipで約2.8kB）で、npmから利用可能です。\nタブバー領域を開発者が管理下に置き、スクロール位置に関わらず任意のコンテンツを表示できる仕組みを提供します。",
+      "tags": [
+        "JavaScript",
+        "Web開発",
+        "Safari"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 70,
+      "score_reason": "特定のブラウザのUI制限を克服するユニークなライブラリであり、Webデザインの表現力を高める可能性を秘めているため評価できます。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "もう無理｜ひでと",
+      "url": "https://note.com/happy_dahlia405/n/n1b16c06e71e6",
+      "source": "はてなブックマーク",
+      "published": "2026-10-31T01:30:40+00:00",
+      "reading_min": 5,
+      "summary": "精神的に限界な時に開くためのWebページが作成されました。\nこのページは、安易な慰めの言葉を避け、ユーザーが「次の数分をやり過ごす」ことに特化しています。\nシンプルな選択肢と視覚的な呼吸ガイド、書き捨て欄を提供し、限界状態のユーザーに寄り添う新しいアプローチを提案しています。",
+      "tags": [
+        "メンタルヘルス",
+        "Webデザイン",
+        "UX"
+      ],
+      "category": "その他",
+      "score": 70,
+      "score_reason": "メンタルヘルスケアにおける新しいアプローチであり、Web技術の応用例として興味深いが、IT業界全体への直接的な影響は限定的であるため中程度のスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 90
+    },
+    {
+      "title": "Our example env file documents 19 variables, the code reads 15 of them, and its longest comment describes a design we deleted",
+      "url": "https://dev.to/daniel_pertu/our-example-env-file-documents-19-variables-the-code-reads-15-of-them-and-its-longest-comment-3ogp",
+      "source": "Dev.to",
+      "published": "2026-10-31T10:53:06+00:00",
+      "reading_min": 6,
+      "summary": "開発プロジェクトの.env.exampleファイルが、実際のコードで使われる変数と乖離している問題が指摘されています。\n19個の変数がドキュメントされているにもかかわらず、コードで読み込まれているのは15個のみで、最長のコメントは削除された設計について記述。\nこれは、開発におけるドキュメントとコードの同期の重要性、およびメンテナンスの課題を示しています。",
+      "tags": [
+        "開発プロセス",
+        "ドキュメンテーション",
+        "環境変数"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 70,
+      "score_reason": "開発現場でよくある課題を具体的に示しており、開発効率やコード品質に影響を与えるため、多くの開発者にとって参考になる情報である。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "エレガントなオブジェクトでヘキサゴナルアーキテクチャを再考する",
+      "url": "https://dev.to/roroche/rethinking-hexagonal-architecture-with-elegant-objects-278j",
+      "source": "Dev.to",
+      "published": "2026-10-31T10:50:03+00:00",
+      "reading_min": 9,
+      "summary": "ヘキサゴナルアーキテクチャにおいて、ビジネスロジックをユースケースやサービスに集中させる一般的な実装を再考しています。\n「Elegant Objects」の原則に基づき、ドメインオブジェクトが自身の状態に依存する振る舞いをより多く所有する設計を提案しています。\nこれにより、単一の操作に多くの型が関与する複雑さを軽減し、より凝集度の高い設計を目指します。",
+      "tags": [
+        "Architecture",
+        "Domain Driven Design",
+        "Object-Oriented"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 70,
+      "score_reason": "ヘキサゴナルアーキテクチャとElegant Objectsの原則を組み合わせた設計思想の提案であり、ソフトウェア設計の品質向上に寄与する可能性が高いため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "LRMoE: メモリ制約のあるノードでの効率的なMoEトレーニングのための需要側負荷再キャリブレーション",
       "url": "https://arxiv.org/abs/2610.37720",
       "source": "arXiv cs.AI",
-      "published": "2026-10-30T04:00:00+00:00",
+      "published": "2026-10-31T04:00:00+00:00",
       "reading_min": 1,
       "summary": "本記事は、メモリ制約のあるノードでMoE（Mixture-of-Experts）モデルを効率的にトレーニングするための新しい手法「LRMoE」を提案しています。\n需要側負荷再キャリブレーションを通じて、トレーニングの効率化と性能向上を目指します。\narXivLabsの紹介が主な内容であり、論文自体の詳細な説明は本文抜粋にはありません。",
       "tags": [
@@ -886,7 +1323,7 @@
       "title": "OpenFrontiers: オープンな研究課題のコレクションと科学的再発見のためのベンチマーク",
       "url": "https://arxiv.org/abs/2610.37739",
       "source": "arXiv cs.AI",
-      "published": "2026-10-30T04:00:00+00:00",
+      "published": "2026-10-31T04:00:00+00:00",
       "reading_min": 1,
       "summary": "本記事は、オープンな研究課題のコレクションと、科学的再発見のためのベンチマーク「OpenFrontiers」を紹介しています。\n研究コミュニティにおける知識共有と進歩を促進することを目的としています。\narXivLabsの紹介が主な内容であり、論文自体の詳細な説明は本文抜粋にはありません。",
       "tags": [
@@ -928,10 +1365,53 @@
       "hatena_count": 0
     },
     {
+      "title": "デジタルミニマリズム",
+      "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+      "source": "Hacker News",
+      "published": "2026-10-31T06:16:36+00:00",
+      "hn_score": 57,
+      "hn_comments": 33,
+      "reading_min": 11,
+      "summary": "物理的なミニマリズムに続き、デジタル時代における「デジタルミニマリズム」の概念を提唱しています。\nデジタルテクノロジーとの関わり方を意識的に選択し、無意識に引き込まれることを避けることを目的としています。\nTwitter (X) の利用経験を例に挙げ、デジタルデトックスの実験について述べています。",
+      "tags": [
+        "デジタルライフ",
+        "ミニマリズム",
+        "ウェルビーイング"
+      ],
+      "category": "その他",
+      "score": 65,
+      "score_reason": "現代のデジタル社会における個人の生活習慣や精神衛生に関わるテーマであり、IT利用のあり方を考える上で重要であるため中程度のスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "Apple、iPhoneのディスプレイひび割れ問題について店舗に警告",
+      "url": "https://www.reddit.com/r/technology/comments/1xk487v/apple_alerts_stores_to_iphone_duos_display/",
+      "source": "Reddit",
+      "published": "2026-10-31T07:49:40+00:00",
+      "summary": "AppleがiPhone Duoのディスプレイひび割れ問題について、店舗に警告を発しました。\nこの問題は、特定のiPhoneモデルで発生しているディスプレイの耐久性に関する懸念を示唆しています。\nユーザーは、今後の対応や修理オプションについてAppleからの公式発表を注視する必要があります。",
+      "tags": [
+        "iPhone",
+        "ディスプレイ",
+        "品質問題"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 65,
+      "score_reason": "Apple製品の品質問題はユーザーに大きな影響を与えるが、具体的な影響範囲や原因が不明なためスコアは中程度とした。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "海洋乱流閉鎖への応用を伴うモデルキャリブレーションのための償却局所事後推論",
       "url": "https://arxiv.org/abs/2610.37731",
       "source": "arXiv cs.AI",
-      "published": "2026-10-30T04:00:00+00:00",
+      "published": "2026-10-31T04:00:00+00:00",
       "reading_min": 1,
       "summary": "本記事は、モデルキャリブレーションのための償却局所事後推論手法について述べています。\n特に海洋乱流閉鎖モデルへの応用が焦点となっています。\narXivLabsの紹介が主な内容であり、論文自体の詳細な説明は本文抜粋にはありません。",
       "tags": [
@@ -953,7 +1433,7 @@
       "title": "ThinkJev: キャリブレーションされた型付き決定のための、あらゆる予算に対応する一つの思考",
       "url": "https://arxiv.org/abs/2610.37732",
       "source": "arXiv cs.AI",
-      "published": "2026-10-30T04:00:00+00:00",
+      "published": "2026-10-31T04:00:00+00:00",
       "reading_min": 1,
       "summary": "本記事は、キャリブレーションされた型付き決定を行うための「ThinkJev」という概念を提案しています。\n様々な予算制約の下で、意思決定プロセスを最適化することを目指します。\narXivLabsの紹介が主な内容であり、論文自体の詳細な説明は本文抜粋にはありません。",
       "tags": [
@@ -976,8 +1456,8 @@
       "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
       "source": "Hacker News",
       "published": "2026-10-30T17:25:15+00:00",
-      "hn_score": 229,
-      "hn_comments": 61,
+      "hn_score": 311,
+      "hn_comments": 90,
       "summary": "この記事は、Nintendo WiiをPowerMacとして利用するというユニークな視点を提供しています。\nWiiのハードウェアが持つ可能性や、レトロコンピューティングの楽しみ方について考察していると推測されます。\n古いハードウェアを新しい方法で活用する創造的なアプローチが示唆されています。",
       "tags": [
         "Nintendo Wii",
@@ -1037,22 +1517,44 @@
       "first_seen": "2026-10-31T09:46:56.640296+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "セルビアが世界で最も賢い議会を選出した",
+      "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
+      "source": "Hacker News",
+      "published": "2026-10-31T10:21:30+00:00",
+      "hn_score": 67,
+      "hn_comments": 29,
+      "summary": "セルビアが「世界で最も賢い議会」を選出したというニュースです。\nこの記事は、政治と知性の関連性について考察を促します。\n具体的な内容については、元記事の本文がないため推測となります。",
+      "tags": [
+        "政治",
+        "国際情勢",
+        "社会"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 40,
+      "score_reason": "IT技術とは直接関係ないが、社会情勢として興味深いニュースであるため中程度のスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-10-31T09:46:56.640296+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-10-31T19:53:45.109957+09:00",
     "summary_lines": [
-      "AIとセキュリティが今日の主要な技術トレンドを形成しています。",
-      "AIの進化は倫理問題やレガシーコードの刷新に影響を与えています。",
-      "セキュリティ侵害とデータ漏洩が引き続き重要な課題となっています。"
+      "AIの倫理問題とセキュリティ侵害が今日の主要なトピックです。",
+      "AIによるコード生成とDX推進の可能性が注目されています。",
+      "Nvidia GPUの価格高騰と品薄が市場に影響を与えています。"
     ],
     "focus_tags": [
-      "AI",
       "セキュリティ",
-      "クラウドセキュリティ",
-      "データ漏洩",
-      "倫理"
+      "AI",
+      "サイバーセキュリティ",
+      "DX",
+      "GPU"
     ]
   }
 }
