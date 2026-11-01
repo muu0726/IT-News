@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 01 Nov 2026 00:07:57 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 11:48:53 +0000</lastBuildDate>
     <item>
       <title>TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8</title>
       <link>https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf</link>
@@ -67,7 +67,35 @@
       <link>https://zenn.dev/kauche/articles/f3736c660aab77</link>
       <guid isPermaLink="false">https://zenn.dev/kauche/articles/f3736c660aab77</guid>
       <description>[Score: 90] 3人チームがISUCON2026にClaude Codeを導入し、最終スコア207,039点を達成しました。 / 各メンバーが個別のClaude Codeエージェントを動かし、Slackを通じて連携させ、人間は方針決定と調整に注力しました。 / AIエージェントに具体的な手順ではなくゴールを指示する「/goal」コマンドの活用が、高スコア達成の鍵となりました。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 31 Oct 2026 15:02:52 +0000</pubDate>
+      <pubDate>Sat, 31 Oct 2026 12:31:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>SSM Session Managerを使ってDBに接続する</title>
+      <link>https://qiita.com/j-yasukawa/items/701554f14fe8b02ff34e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/j-yasukawa/items/701554f14fe8b02ff34e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AWS Systems Manager (SSM) Session Managerを利用して、プライベートサブネットのRDS/Auroraに安全に接続する方法を解説。 / 従来のSSH踏み台EC2運用が抱えるセキュリティリスク（22番ポート露出、SSH鍵管理）を解消します。 / SSM Agentを介したアウトバウンド接続により、インバウンドポートを開けずにDBへのポートフォワードを実現する手順が示されています。 (Source: Qiita)</description>
+      <pubDate>Fri, 30 Oct 2026 06:39:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>ブラジルの裁判所、裁判書類へのプロンプトインジェクションで弁護士を制裁</title>
+      <link>https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/</link>
+      <guid isPermaLink="false">https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/</guid>
+      <description>[Score: 90] ブラジルの労働裁判所が、裁判書類に隠されたプロンプトインジェクションを仕込んだ弁護士2名に制裁を科しました。 / これは、AIシステムを悪用した初の司法判断とみられ、AIと法律の倫理的・技術的課題を浮き彫りにしています。 / AIの普及に伴う新たなセキュリティリスクと法的責任について重要な先例となります。 (Source: Hacker News)</description>
+      <pubDate>Sun, 01 Nov 2026 02:19:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>誤ってマルウェアを実行してしまった私が、AIとREA（Reverse Engineer Anything）に救われた話</title>
+      <link>https://qiita.com/TOMOSIA-LinhND/items/3dec10762fcc224d9133?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/TOMOSIA-LinhND/items/3dec10762fcc224d9133?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 誤ってマルウェアを実行してしまった筆者が、AIとオープンソースツールREA（Reverse Engineer Anything）を使って解析した体験談です。 / Redditで見つけたアクティベーターを装ったマルウェアをダウンロード・実行してしまい、その危険性を認識しました。 / REAとAIの組み合わせにより、マルウェアの正体を解明し、防御側の視点での活用価値を強調しています。 (Source: Qiita)</description>
+      <pubDate>Fri, 30 Oct 2026 09:45:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI学習への利用拒否をrobots.txtで一括指定へ OpenAIやGoogleなどが対応表明</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/01/2000002776/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/01/2000002776/</guid>
+      <description>[Score: 90] OpenAI、Google、Microsoftなどが、Webサイト運営者がAI学習へのコンテンツ利用意向をrobots.txtで一括指定できる共通の仕組みに対応すると発表。 / IETFに提出されたInternet-Draftに基づき、User-Agentに「__usage_ai-training」トークンを使用。 / これにより、AI企業ごとにルールを書き分ける手間が省け、運営者の負担が軽減される。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 01 Nov 2026 00:58:30 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
@@ -91,6 +119,13 @@
       <pubDate>Sat, 31 Oct 2026 07:41:11 +0000</pubDate>
     </item>
     <item>
+      <title>ISUCON2026に人間1人＋AIエージェント軍団で出て19.6万点、ループは閉じたけど中身が弱かった反省文😇</title>
+      <link>https://zenn.dev/tak848/articles/20261031-isucon2026-writeup</link>
+      <guid isPermaLink="false">https://zenn.dev/tak848/articles/20261031-isucon2026-writeup</guid>
+      <description>[Score: 88] ISUCON2026に人間1人とAIエージェント軍団で参加し、19.6万点を獲得した反省文です。 / 計測、仮説、実装、ベンチマーク、判定のループをAIに任せる体制を構築しました。 / 最終スコアは初期実装の約67倍でしたが、上位には及ばず、AIの指示出しの課題も浮き彫りになりました。 (Source: Zenn)</description>
+      <pubDate>Sat, 31 Oct 2026 10:53:26 +0000</pubDate>
+    </item>
+    <item>
       <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
       <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
@@ -110,41 +145,6 @@
       <guid isPermaLink="false">https://zenn.dev/michiharu/articles/9562dfd249c8e3</guid>
       <description>[Score: 85] NoSQLデータベースにおけるスキーマ変更の課題と解決策を解説します。 / データにスキーマバージョンを持たせ、読み込み時に古いバージョンを最新に変換する「Schema Versioningパターン」を紹介。 / TypeScriptとZodを使った具体的なコード例を交え、システムを停止せずにスキーマ変更を導入する方法を提示します。 (Source: Zenn)</description>
       <pubDate>Fri, 30 Oct 2026 16:53:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIデータセンターが2030年までにアメリカの15年分の気候変動対策の進捗を帳消しにする可能性</title>
-      <link>https://www.reddit.com/r/technology/comments/1xkfac2/ai_data_centers_could_erase_15_years_of_americas/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xkfac2/ai_data_centers_could_erase_15_years_of_americas/</guid>
-      <description>[Score: 85] AIデータセンターの急速な拡大が、エネルギー消費量の増加を通じて環境に深刻な影響を与える可能性が指摘されています。 / 2030年までに、アメリカの過去15年間の気候変動対策の成果を打ち消すほどの電力消費増が見込まれています。 / 持続可能なAI開発とエネルギー効率の改善が喫緊の課題となっています。 (Source: Reddit)</description>
-      <pubDate>Sat, 31 Oct 2026 16:56:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>3人のJava ChampionsがGitHub Copilotをどのように活用して生産性を向上させているか</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
-      <description>[Score: 82] 3人のJava Championsが、GitHub Copilotをどのように活用して生産性を向上させているかについて語っています。 / AIコーディングツールはコード生成を高速化する一方で、開発者はコンテキスト提供、結果検証、保守性保護、責任保持の重要性を強調。 / 彼らは、Copilotを新しいチームメンバーのように活用し、数週間かかっていたタスクを数日で完了させるなど、具体的な生産性向上の事例を共有しています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>「DuckDB 2.0 LTS」正式リリース。Quackプロトコルによるクライアント/サーバ機能や非同期処理による高速化など</title>
-      <link>https://www.publickey1.jp/blog/26/duckdb_20_ltsquack.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/duckdb_20_ltsquack.html</guid>
-      <description>[Score: 80] シングルバイナリで高速なデータ分析を実現するOLAP型データベース「DuckDB 2.0 LTS」が正式リリースされました。 / 新機能として、Quackプロトコルによるクライアント/サーバ機能が追加され、より柔軟な利用が可能になります。 / 非同期I/Oサポートによるパフォーマンス向上や、拡張機能開発者向けのAPI強化も含まれており、データ分析基盤としての利便性が向上します。 (Source: Publickey)</description>
-      <pubDate>Sun, 25 Oct 2026 15:44:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>メモリレイテンシが重要だ、愚か者め</title>
-      <link>https://pivotlake.io/blog/its-the-memory-latency-stupid/</link>
-      <guid isPermaLink="false">https://pivotlake.io/blog/its-the-memory-latency-stupid/</guid>
-      <description>[Score: 80] データベースのCPU使用率が100%でも、実際にはメモリレイテンシがボトルネックとなり、CPUがフル活用されていないことが多いと指摘しています。 / CPU内部の処理速度に比べ、RAMへのアクセスは桁違いに遅く、CPUキャッシュがこの問題を緩和する役割を果たします。 / L1キャッシュはRAMの50-100倍高速ですが、容量が小さいため、メモリレイテンシの最適化がシステム性能向上に不可欠です。 (Source: Hacker News)</description>
-      <pubDate>Sat, 31 Oct 2026 18:38:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>FlutterKaigi 2026 で生字幕を映像に載せて会場スクリーンに投影しました</title>
-      <link>https://zenn.dev/hiro_pon/articles/2f3b68ec60ddae</link>
-      <guid isPermaLink="false">https://zenn.dev/hiro_pon/articles/2f3b68ec60ddae</guid>
-      <description>[Score: 80] FlutterKaigi 2026で、登壇者の話をリアルタイムで文字起こし・翻訳し、映像に字幕として合成するシステムを構築。 / Amazon TranscribeとTranslateを活用し、専門用語の認識精度向上や字幕のちらつき防止に工夫を凝らした。 / このシステムは他のイベントでも利用可能にすることを目指しており、技術的な詳細が解説されている。 (Source: Zenn)</description>
-      <pubDate>Sat, 31 Oct 2026 06:40:40 +0000</pubDate>
     </item>
   </channel>
 </rss>

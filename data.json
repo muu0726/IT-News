@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-01T09:06:46.330783+09:00",
-  "total_count": 48,
-  "success_count": 48,
+  "generated_at": "2026-11-01T20:48:10.541035+09:00",
+  "total_count": 71,
+  "success_count": 71,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -11,8 +11,8 @@
       "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
       "source": "Hacker News",
       "published": "2026-10-31T19:16:30+00:00",
-      "hn_score": 275,
-      "hn_comments": 137,
+      "hn_score": 531,
+      "hn_comments": 248,
       "reading_min": 9,
       "summary": "LinuxカーネルのIPv4 TCPハンドシェイクに、リモートから認証なしで悪用可能なUse-After-Freeの脆弱性CVE-2026-98432が発見されました。\nCVSSスコア9.8のCriticalな脆弱性で、Linux 4.4以降の多くのバージョンに影響し、Anthropicの研究者がPoCエクスプロイトを作成済みです。\n特にGoプログラムがデフォルトでマルチパスTCPリスナーを開くため、多くのLinuxサーバーがroot権限でのコマンド実行リスクに晒されています。",
       "tags": [
@@ -27,7 +27,7 @@
       "new_at": "2026-11-01T09:06:46.330783+09:00",
       "first_seen": "2026-11-01T09:06:46.330783+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "Claude Code 拡張機能のバックドア事件まとめ（2.1.312・2.1.313・Cursor のマーケットプレイス）",
@@ -185,7 +185,7 @@
       "title": "3 人それぞれの Claude Code を Slack でつないで ISUCON2026 に参加した（207,039 点）",
       "url": "https://zenn.dev/kauche/articles/f3736c660aab77",
       "source": "はてなブックマーク",
-      "published": "2026-10-31T15:02:52+00:00",
+      "published": "2026-10-31T12:31:11+00:00",
       "reading_min": 6,
       "summary": "3人チームがISUCON2026にClaude Codeを導入し、最終スコア207,039点を達成しました。\n各メンバーが個別のClaude Codeエージェントを動かし、Slackを通じて連携させ、人間は方針決定と調整に注力しました。\nAIエージェントに具体的な手順ではなくゴールを指示する「/goal」コマンドの活用が、高スコア達成の鍵となりました。",
       "tags": [
@@ -200,7 +200,96 @@
       "new_at": "2026-11-01T09:06:46.330783+09:00",
       "first_seen": "2026-11-01T09:06:46.330783+09:00",
       "is_hot": false,
-      "hatena_count": 30
+      "hatena_count": 112,
+      "topic_group": 2,
+      "topic_size": 5
+    },
+    {
+      "title": "SSM Session Managerを使ってDBに接続する",
+      "url": "https://qiita.com/j-yasukawa/items/701554f14fe8b02ff34e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-30T06:39:46+00:00",
+      "reading_min": 12,
+      "summary": "AWS Systems Manager (SSM) Session Managerを利用して、プライベートサブネットのRDS/Auroraに安全に接続する方法を解説。\n従来のSSH踏み台EC2運用が抱えるセキュリティリスク（22番ポート露出、SSH鍵管理）を解消します。\nSSM Agentを介したアウトバウンド接続により、インバウンドポートを開けずにDBへのポートフォワードを実現する手順が示されています。",
+      "tags": [
+        "AWS",
+        "SSM",
+        "セキュリティ"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 90,
+      "score_reason": "AWS環境におけるDB接続のセキュリティと運用効率を大幅に向上させる実践的な技術であり、多くの企業にとって有用な情報であるため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-10-31T19:53:45.109957+09:00",
+      "first_seen": "2026-10-31T19:53:45.109957+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "is_prev_seen": true
+    },
+    {
+      "title": "ブラジルの裁判所、裁判書類へのプロンプトインジェクションで弁護士を制裁",
+      "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+      "source": "Hacker News",
+      "published": "2026-11-01T02:19:53+00:00",
+      "hn_score": 148,
+      "hn_comments": 60,
+      "reading_min": 2,
+      "summary": "ブラジルの労働裁判所が、裁判書類に隠されたプロンプトインジェクションを仕込んだ弁護士2名に制裁を科しました。\nこれは、AIシステムを悪用した初の司法判断とみられ、AIと法律の倫理的・技術的課題を浮き彫りにしています。\nAIの普及に伴う新たなセキュリティリスクと法的責任について重要な先例となります。",
+      "tags": [
+        "AIセキュリティ",
+        "プロンプトインジェクション",
+        "法務"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "AIの悪用に関する初の司法判断であり、AIセキュリティ、法務、倫理の交差点における重要な先例となるため、IT業界への影響が非常に大きいです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "誤ってマルウェアを実行してしまった私が、AIとREA（Reverse Engineer Anything）に救われた話",
+      "url": "https://qiita.com/TOMOSIA-LinhND/items/3dec10762fcc224d9133?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-10-30T09:45:50+00:00",
+      "reading_min": 11,
+      "summary": "誤ってマルウェアを実行してしまった筆者が、AIとオープンソースツールREA（Reverse Engineer Anything）を使って解析した体験談です。\nRedditで見つけたアクティベーターを装ったマルウェアをダウンロード・実行してしまい、その危険性を認識しました。\nREAとAIの組み合わせにより、マルウェアの正体を解明し、防御側の視点での活用価値を強調しています。",
+      "tags": [
+        "マルウェア解析",
+        "リバースエンジニアリング",
+        "AI"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "AIと最新のリバースエンジニアリングツール「REA」を組み合わせたマルウェア解析の具体的な事例であり、セキュリティ分野におけるAIの強力な応用可能性と、一般ユーザーへの注意喚起の重要性を示しているため非常に高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AI学習への利用拒否をrobots.txtで一括指定へ OpenAIやGoogleなどが対応表明",
+      "url": "https://www.itmedia.co.jp/news/article/2611/01/2000002776/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-01T00:58:30+00:00",
+      "reading_min": 6,
+      "summary": "OpenAI、Google、Microsoftなどが、Webサイト運営者がAI学習へのコンテンツ利用意向をrobots.txtで一括指定できる共通の仕組みに対応すると発表。\nIETFに提出されたInternet-Draftに基づき、User-Agentに「__usage_ai-training」トークンを使用。\nこれにより、AI企業ごとにルールを書き分ける手間が省け、運営者の負担が軽減される。",
+      "tags": [
+        "robots.txt",
+        "AI学習",
+        "コンテンツ制御"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AI学習における著作権や利用許諾の問題に対し、業界標準となる可能性のある重要な技術的解決策であり、Webコンテンツの未来に大きな影響を与える。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 186
     },
     {
       "title": "JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能",
@@ -263,7 +352,30 @@
       "new_at": "2026-11-01T09:06:46.330783+09:00",
       "first_seen": "2026-11-01T09:06:46.330783+09:00",
       "is_hot": false,
-      "hatena_count": 215
+      "hatena_count": 256
+    },
+    {
+      "title": "ISUCON2026に人間1人＋AIエージェント軍団で出て19.6万点、ループは閉じたけど中身が弱かった反省文😇",
+      "url": "https://zenn.dev/tak848/articles/20261031-isucon2026-writeup",
+      "source": "Zenn",
+      "published": "2026-10-31T10:53:26+00:00",
+      "reading_min": 24,
+      "summary": "ISUCON2026に人間1人とAIエージェント軍団で参加し、19.6万点を獲得した反省文です。\n計測、仮説、実装、ベンチマーク、判定のループをAIに任せる体制を構築しました。\n最終スコアは初期実装の約67倍でしたが、上位には及ばず、AIの指示出しの課題も浮き彫りになりました。",
+      "tags": [
+        "ISUCON",
+        "AIエージェント",
+        "自動化"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 88,
+      "score_reason": "ISUCONという実践的な場でAIエージェントを本格的に活用し、パフォーマンスチューニングのループを自動化した試みは非常に先進的であり、AIと人間の協調による開発の未来を示唆しているため高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 1,
+      "topic_group": 2,
+      "topic_size": 5
     },
     {
       "title": "オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026",
@@ -351,6 +463,91 @@
       "hatena_count": 0
     },
     {
+      "title": "ISUCON 2026 参加記",
+      "url": "https://zenn.dev/catatsuy/articles/159edffe202c0c",
+      "source": "Zenn",
+      "published": "2026-11-01T03:40:42+00:00",
+      "reading_min": 2,
+      "summary": "ISUCON 2026にAIを活用して一人で参加した際の記録です。\nChatGPTやCodexを使い、方針決定、ベンチマーク、ログ分析、デプロイを分担し、多くの最適化を進めました。\nAIの活用がコンテストのあり方や、今後のISUCONの継続性について重要な示唆を与えています。",
+      "tags": [
+        "ISUCON",
+        "AI活用",
+        "パフォーマンスチューニング"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIを競技プログラミングに活用する先進的な試みであり、AIの能力と限界、そして今後のコンテストや開発現場におけるAIの役割について深く考察されているためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 5
+    },
+    {
+      "title": "AI主導のレイオフが新たなブーメラン社員を生み出している—企業は「早急に手を引きすぎた」と気づき始めている",
+      "url": "https://www.reddit.com/r/technology/comments/1xknfsr/aidriven_layoffs_are_creating_a_new_class_of/",
+      "source": "Reddit",
+      "published": "2026-10-31T22:41:00+00:00",
+      "summary": "AIの導入によるレイオフが、企業にとって予期せぬ結果をもたらし、「ブーメラン社員」という新たな現象を生み出しています。\n多くの企業がAIによる効率化を急ぐあまり、人材を削減しすぎたことに気づき、元従業員を再雇用する動きが見られます。\nこれは、AIと人間の労働力のバランスをいかに取るかという、現代の企業が直面する重要な課題を浮き彫りにしています。",
+      "tags": [
+        "AI",
+        "レイオフ",
+        "雇用"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 85,
+      "score_reason": "AIの急速な導入が雇用市場に与える影響と、企業がその影響を過小評価していた可能性を示唆する記事であり、AIと労働力の関係性という現代社会の重要なテーマを扱っているため高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIエージェント向けの業務手順書（Agent Skills）の設計方法",
+      "url": "https://techblog.kazaneya.com/20261030-agent-skills/",
+      "source": "はてなブックマーク",
+      "published": "2026-10-30T10:18:57+00:00",
+      "reading_min": 21,
+      "summary": "AIエージェントに業務を効率的に実行させるための「Agent Skills」の設計方法を解説。\n新入社員に業務を教えるように、業務手順とドメイン知識をAIに渡すことが重要。\nミーティング日程調整を例に、スキル設計の8つのコツとファイル構成を紹介。",
+      "tags": [
+        "AIエージェント",
+        "Agent Skills",
+        "業務自動化"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIエージェントの実用性を高める具体的な設計手法であり、多くの企業でのAI導入に役立つため重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 563
+    },
+    {
+      "title": "Di-HydroがAIとデジタルツインで水力発電所の運用を改善する方法を示す",
+      "url": "https://dev.to/alifar/di-hydro-shows-how-ai-and-digital-twins-can-improve-hydropower-operations-2b97",
+      "source": "Dev.to",
+      "published": "2026-11-01T11:45:30+00:00",
+      "reading_min": 4,
+      "summary": "EUが資金提供するDi-Hydroプロジェクトは、AI、デジタルツイン、予測、センサーネットワークを活用し、水力発電所の運用意思決定を改善する。\nDi-Hydro意思決定プラットフォームは、流入予測、エネルギー市場シグナル、技術的制約、運用データを統合し、最適な生産スケジュールとシナリオ分析を支援する。\nこのプロジェクトは、水力発電所の複雑な運用課題に対し、AIを活用した予測と最適化を通じて、より統合された視点を提供する。",
+      "tags": [
+        "AI",
+        "Digital Twin",
+        "Hydropower"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIとデジタルツインを組み合わせた水力発電所の最適化は、再生可能エネルギー分野における効率向上と持続可能性に大きく貢献する可能性があり、技術的新規性と実用性が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "3人のJava ChampionsがGitHub Copilotをどのように活用して生産性を向上させているか",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
       "source": "GitHub Blog",
@@ -370,6 +567,29 @@
       "is_prev_seen": true,
       "first_seen": "2026-10-29T08:16:51.279560+09:00",
       "hatena_count": 0
+    },
+    {
+      "title": "ISUCONに初めて出たら、直すたびに次のボトルネックが出てきて、超面白かった",
+      "url": "https://zenn.dev/paraponera/articles/2026-10-31-isucon-2026-isureal",
+      "source": "Zenn",
+      "published": "2026-10-31T12:17:24+00:00",
+      "reading_min": 10,
+      "summary": "ISUCON2026に初参加し、AIエージェントを活用しながらパフォーマンスチューニングに挑戦した記録です。\n事前の準備として過去問演習や一次情報収集ダッシュボードの構築、当日手順の策定を行いました。\n最終スコアは63,243点と健闘し、ボトルネックが次々と現れる過程を楽しんだ様子が伺えます。",
+      "tags": [
+        "ISUCON",
+        "AIエージェント",
+        "パフォーマンスチューニング"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 82,
+      "score_reason": "ISUCON初参加者がAIエージェントを積極的に活用し、体系的な準備と分析を通じてスコアを向上させた過程が詳細に記述されており、AIと人間の協調作業の可能性を示唆しているため高評価としました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 5
     },
     {
       "title": "「DuckDB 2.0 LTS」正式リリース。Quackプロトコルによるクライアント/サーバ機能や非同期処理による高速化など",
@@ -499,6 +719,115 @@
       "hatena_count": 0
     },
     {
+      "title": "兄弟で20年間ブートストラップSaaSを運営",
+      "url": "https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons/",
+      "source": "Hacker News",
+      "published": "2026-10-30T13:58:42+00:00",
+      "hn_score": 112,
+      "hn_comments": 28,
+      "reading_min": 3,
+      "summary": "2006年に兄弟でZamzarというファイル変換SaaSを立ち上げ、20年間ブートストラップで運営してきた経験が語られています。\n7億6600万ファイル以上の変換実績と、1日100万件以上のAPIリクエストを処理するまでに成長しました。\n長期的なビジネス運営、顧客との関係構築、そして技術的進化への適応の重要性を示しています。",
+      "tags": [
+        "SaaS",
+        "ブートストラップ",
+        "ビジネス成長"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 80,
+      "score_reason": "20年間のブートストラップSaaS運営は、持続可能なビジネスモデルや長期的な視点でのプロダクト開発に関する貴重な知見を提供し、多くの起業家や開発者にとって参考になるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "ISUCON2026 本番に出た",
+      "url": "https://zenn.dev/ntk221/articles/98b17a773669a1",
+      "source": "Zenn",
+      "published": "2026-10-31T13:14:45+00:00",
+      "reading_min": 6,
+      "summary": "ISUCON2026に初参加し、Claude Codeを活用してパフォーマンスチューニングに挑んだ体験記です。\nAWS上に練習環境を構築し、ボトルネック特定のためのデータ収集を事前準備しました。\n地域をまたぐDBアクセスが主要なボトルネックであり、その削減がスコア改善に大きく寄与しました。",
+      "tags": [
+        "ISUCON",
+        "パフォーマンスチューニング",
+        "Claude Code"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 80,
+      "score_reason": "ISUCONという実践的な競技プログラミングイベントの参加記であり、AIツールの活用や具体的なチューニング戦略が詳細に記述されており、技術的な学びが多いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 5
+    },
+    {
+      "title": "ブラウザでMediaPipeを使って顔を測定する：壊れた3つのこと",
+      "url": "https://dev.to/jeff_li_deee6ec68274e6300/measuring-faces-in-the-browser-with-mediapipe-three-things-that-broke-3mk",
+      "source": "Dev.to",
+      "published": "2026-11-01T11:45:49+00:00",
+      "reading_min": 3,
+      "summary": "ブラウザ内で顔の測定を行うツール「FacialRatio」の開発過程で直面した3つの課題と解決策を解説。\nMediaPipeのポーズ出力のバイアス、顔の回転による左右非対称性の測定誤差、そしてそれらの修正方法について詳述。\n写真がブラウザ外に出ず、常に同じ結果を返す、計算式が公開されているという特徴を持つ。",
+      "tags": [
+        "MediaPipe",
+        "顔認識",
+        "Web開発"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "MediaPipeを用いた顔認識の実装における具体的な課題と解決策が示されており、同様の技術を扱う開発者にとって非常に実践的な情報となる。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "TVerにおけるテスト自動化の歩み",
+      "url": "https://techblog.tver.co.jp/entry/shiroma/history-of-test-automation",
+      "source": "はてなブックマーク",
+      "published": "2026-05-28T10:38:24+00:00",
+      "reading_min": 15,
+      "summary": "TVerがリリースサイクルの短縮のため、手動だったリグレッションテストの自動化に着手。\nテストピラミッドの考え方を参考に、正常系ユーザーシナリオとログ系の整合性確認に焦点を当てた。\n約1年間で戦略策定から運用まで段階的に進め、迅速かつ安定した検証基盤を構築した過程を紹介。",
+      "tags": [
+        "テスト自動化",
+        "リリーストレイン",
+        "QA"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 78,
+      "score_reason": "大規模サービスにおけるテスト自動化の具体的な取り組みと課題解決プロセスが詳細に解説されており、多くの開発組織にとって参考になる。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 28
+    },
+    {
+      "title": "Agentic Finance Graphの10月：署名付きパス、マークルサム台帳、そして公開された修正",
+      "url": "https://dev.to/agenticfinancegraph/october-at-agentic-finance-graph-signed-passes-a-merkle-sum-ledger-and-the-corrections-we-made-2jf8",
+      "source": "Dev.to",
+      "published": "2026-11-01T11:42:54+00:00",
+      "reading_min": 2,
+      "summary": "Agentic Finance Graphは、AIエージェントが保有・使用する資金をブロックチェーンから測定する独立した台帳を運営している。\n10月には、エージェントパスがEd25519で署名されるようになり、約25,000のエージェントがパスを保有している。\n合計はマークルサムツリーで管理され、約290万の支払い記録が葉として存在し、署名されたヘッドにより検証可能である。",
+      "tags": [
+        "Blockchain",
+        "AI Agents",
+        "Merkle Tree"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 78,
+      "score_reason": "AIエージェントの金融取引をブロックチェーン上で追跡・検証するシステムは、分散型金融とAIの融合におけるセキュリティと透明性を高める点で新規性と実用性がある。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "AIはどれくらい動画編集ができるのか!? Claude CodeでYouTube動画編集した話",
       "url": "https://qiita.com/tsukasa_japan/items/b8bca096170d087e271d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
@@ -527,8 +856,8 @@
       "url": "https://karpathy.bearblog.dev/hacker-tube/",
       "source": "Hacker News",
       "published": "2026-10-31T19:56:53+00:00",
-      "hn_score": 544,
-      "hn_comments": 201,
+      "hn_score": 1436,
+      "hn_comments": 391,
       "reading_min": 1,
       "summary": "YouTubeのレコメンデーションに不満を感じた著者が、Hacker Newsで推薦された動画のみを集めた「HackerTube」を開発しました。\nOpus 5.5というAIを活用し、HNのコメントから6,454本のYouTube動画を抽出し、独自のUIで提供しています。\nこれにより、質の高いコンテンツのみを視聴できる新しい動画プラットフォームが誕生しました。",
       "tags": [
@@ -543,7 +872,7 @@
       "new_at": "2026-11-01T09:06:46.330783+09:00",
       "first_seen": "2026-11-01T09:06:46.330783+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 2
     },
     {
       "title": "【Apple Vision Pro】Immersive Spaceを閉じた後のonDisappear、シミュレーターと実機で桁違いだった件",
@@ -606,7 +935,7 @@
       "new_at": "2026-11-01T09:06:46.330783+09:00",
       "first_seen": "2026-11-01T09:06:46.330783+09:00",
       "is_hot": false,
-      "hatena_count": 193
+      "hatena_count": 346
     },
     {
       "title": "AIClaw 3.7.29が実行の進行状況を最終回答から除外する方法",
@@ -628,6 +957,49 @@
       "first_seen": "2026-11-01T09:06:46.330783+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "小さな太平洋の国がユニバーサルベーシックインカムを導入",
+      "url": "https://www.economist.com/asia/2026/10/29/a-tiny-pacific-country-rolls-out-universal-basic-income",
+      "source": "Hacker News",
+      "published": "2026-11-01T10:05:09+00:00",
+      "hn_score": 26,
+      "hn_comments": 7,
+      "summary": "太平洋の小国がユニバーサルベーシックインカム（UBI）の導入に踏み切りました。\nこの試みは、経済的安定と貧困削減への新たなアプローチとして注目されます。\nその成果は、今後の国際的な政策議論に大きな影響を与える可能性があります。",
+      "tags": [
+        "UBI",
+        "経済政策",
+        "社会実験"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 75,
+      "score_reason": "ユニバーサルベーシックインカムは世界的に注目される社会経済実験であり、その導入事例はビジネスや政策に大きな示唆を与えるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "FF14が「毎日ログイン前提」を見直す。吉田直樹が挑む、プレイヤーの時間を奪わないゲーム設計",
+      "url": "https://type.jp/et/feature/32071/",
+      "source": "はてなブックマーク",
+      "published": "2026-10-31T23:39:53+00:00",
+      "reading_min": 6,
+      "summary": "MMORPG『ファイナルファンタジーXIV』が、プレイヤーの時間を奪わないゲーム設計を目指し、「毎日ログイン前提」のシステムを見直す。\nデイリーからウィークリーへの変更や、アクティビティポイント導入により、自分のペースで楽しめるようにする。\n多忙なプレイヤーでも継続しやすいよう、前週のポイントを取り戻せる仕組みも導入される。",
+      "tags": [
+        "FF14",
+        "ゲームデザイン",
+        "MMORPG"
+      ],
+      "category": "その他",
+      "score": 75,
+      "score_reason": "オンラインゲームのビジネスモデルとユーザー体験に大きな影響を与える設計思想の転換であり、ゲーム業界のトレンドを示す興味深い事例である。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 62
     },
     {
       "title": "バグバウンティが研究者のセキュリティスキルをいかに磨くか",
@@ -773,7 +1145,7 @@
       "new_at": "2026-11-01T09:06:46.330783+09:00",
       "first_seen": "2026-11-01T09:06:46.330783+09:00",
       "is_hot": false,
-      "hatena_count": 65
+      "hatena_count": 171
     },
     {
       "title": "機械の中の幽霊",
@@ -793,6 +1165,68 @@
       "analysis_status": "ok",
       "new_at": "2026-11-01T09:06:46.330783+09:00",
       "first_seen": "2026-11-01T09:06:46.330783+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "SpaceX、メンフィスのデータセンターによる大気汚染に関するNAACPの訴訟却下を棄却される",
+      "url": "https://www.reddit.com/r/technology/comments/1xktg1e/spacex_loses_bid_to_toss_naacp_lawsuit_over/",
+      "source": "Reddit",
+      "published": "2026-11-01T03:54:37+00:00",
+      "summary": "SpaceXがメンフィスに建設予定のデータセンターを巡り、NAACP（全米黒人地位向上協会）が提起した大気汚染に関する訴訟で、SpaceXの訴訟却下申し立てが棄却されました。\nこれは、環境問題と地域社会への影響が、テクノロジー企業の事業展開において重要な課題であることを示しています。\n今後、SpaceXは訴訟に対応しつつ、データセンター建設を進めることになります。",
+      "tags": [
+        "SpaceX",
+        "データセンター",
+        "環境問題"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "大手テクノロジー企業SpaceXの事業展開が環境問題と地域社会の反発に直面している事例であり、IT業界が直面する社会的責任の側面を示しているため評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "いらすとや、ファンが生息域踏査 AIに押されサイト訪問者は減少",
+      "url": "https://www.nikkei.com/article/DGXZQOUC284ZY0Y6A021C2000000/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-01T00:48:55+00:00",
+      "reading_min": 2,
+      "summary": "フリー素材サイト「いらすとや」が生成AIの台頭によりサイト利用者数が2割減少。\nファンによる活用例の収集や人気IPとのコラボで対抗を試みている。\nコロナ禍で急伸したいらすとやが、AI時代にどう生き残るかが焦点となっている。",
+      "tags": [
+        "いらすとや",
+        "生成AI",
+        "ビジネスモデル"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "生成AIが既存のビジネスモデルに与える影響を示す具体例であり、業界全体の動向を理解する上で参考になる。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 120
+    },
+    {
+      "title": "SAML RelayStateは状態であり、認可クレームではない",
+      "url": "https://dev.to/johnettagaweraks/saml-relaystate-is-state-not-an-authorization-claim-d4j",
+      "source": "Dev.to",
+      "published": "2026-11-01T11:41:54+00:00",
+      "reading_min": 2,
+      "summary": "SAMLのRelayStateは、IDプロバイダからのアサーション後にユーザーの元のリクエストを再開するために使用されるトランスポート状態である。\nRelayStateは認可の証拠として扱われるべきではなく、また任意の転送先として受け入れるべきではない。\n安全な設計では、サービスプロバイダのトランザクションをサーバーに保存し、ブラウザには不透明なランダムなハンドルを渡すことで、リダイレクトの安全性を確保する。",
+      "tags": [
+        "SAML",
+        "Security",
+        "Authentication"
+      ],
+      "category": "セキュリティ",
+      "score": 70,
+      "score_reason": "SAML RelayStateの適切な理解と安全な実装は、Webアプリケーションの認証・認可におけるセキュリティ脆弱性を防ぐ上で非常に重要であり、実用性が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -903,7 +1337,7 @@
       "new_at": "2026-11-01T09:06:46.330783+09:00",
       "first_seen": "2026-11-01T09:06:46.330783+09:00",
       "is_hot": false,
-      "hatena_count": 40
+      "hatena_count": 115
     },
     {
       "title": "YouTubeの視聴履歴を一時停止してホームを空にすると登録チャンネルも非表示になる問題：iPhoneでShortsなしの登録チャンネルのみを視聴する方法（2026年）",
@@ -923,6 +1357,29 @@
       "analysis_status": "ok",
       "new_at": "2026-11-01T09:06:46.330783+09:00",
       "first_seen": "2026-11-01T09:06:46.330783+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIなし、52分。C言語でLinuxファイルユーティリティをゼロから構築 [動画]",
+      "url": "https://www.youtube.com/watch?v=gQRmSlcTq9c",
+      "source": "Hacker News",
+      "published": "2026-10-29T15:20:04+00:00",
+      "hn_score": 48,
+      "hn_comments": 39,
+      "reading_min": 1,
+      "summary": "AIを使わずに、C言語でLinuxのファイルユーティリティをゼロから構築する52分の動画です。\nプログラミングの基礎とシステムプログラミングのスキルを学ぶのに役立ちます。\nAIに頼らない純粋なコーディングの価値と技術的深さを強調しています。",
+      "tags": [
+        "C言語",
+        "Linux",
+        "システムプログラミング"
+      ],
+      "category": "プログラミング言語",
+      "score": 65,
+      "score_reason": "AIが主流となる中で、C言語による低レベルなシステムプログラミングの基礎を学ぶ価値は高く、教育的な意義があるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -1015,12 +1472,56 @@
       "hatena_count": 0
     },
     {
+      "title": "短縮URLを使用する際のソーシャル投稿におけるアフィリエイトリンクの開示方法",
+      "url": "https://dev.to/yutotanaka/how-to-disclose-affiliate-links-in-social-posts-when-using-short-urls-11ml",
+      "source": "Dev.to",
+      "published": "2026-11-01T11:44:00+00:00",
+      "reading_min": 5,
+      "summary": "短縮URLは文字数制限への対応とリンク先の隠蔽という二つの役割を持つが、後者がアフィリエイトリンク開示を困難にする。\nアフィリエイトリンクの開示は、投稿本文に直接記載する方法、開示を表示する中間リダイレクト、CIチェックによる未開示投稿の防止の3つがある。\nFTCなどの規制により、アフィリエイトリンクは明確かつ目立つように開示する必要があり、短縮URL使用時もこの要件は変わらない。",
+      "tags": [
+        "Affiliate Marketing",
+        "Short URL",
+        "Disclosure"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 60,
+      "score_reason": "アフィリエイトリンクの適切な開示は、デジタルマーケティングにおける法的遵守と信頼性に関わる重要な課題であり、実用性が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ノルウェーが「最高の公衆トイレ」を再び実現",
+      "url": "https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/",
+      "source": "Hacker News",
+      "published": "2026-11-01T10:47:58+00:00",
+      "hn_score": 102,
+      "hn_comments": 42,
+      "reading_min": 4,
+      "summary": "ノルウェーの景勝ルート沿いにある公衆トイレが、そのデザインと景観の美しさで注目を集めています。\n特にStegastein展望台のトイレは世界トップ10に選ばれ、Ureddplassenの波型トイレも多くのメディアで紹介されています。\nこれらのトイレは単なる休憩所ではなく、訪れる人々に景色を楽しむ時間を提供する観光名所となっています。",
+      "tags": [
+        "観光",
+        "デザイン",
+        "建築"
+      ],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "IT技術ニュースではないため、IT業界への直接的な影響は低いですが、デザインや公共インフラの観点から一定の興味を引きます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-01T20:48:10.541035+09:00",
+      "first_seen": "2026-11-01T20:48:10.541035+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
       "title": "イタリアの農家が屋根裏で見つけた未知の種を植えた結果",
       "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
       "source": "Hacker News",
       "published": "2026-10-31T22:41:06+00:00",
-      "hn_score": 57,
-      "hn_comments": 15,
+      "hn_score": 485,
+      "hn_comments": 150,
       "reading_min": 11,
       "summary": "1990年代初頭、イタリアの農家クラウディオ・グロッシが屋根裏で未知の種を発見し、試しに植えてみました。\nその結果、通常の2倍の高さで、1つの茎に7つの穂をつける珍しい小麦が育ちました。\nこの小麦は様々な色の粒を持ち、彼の農場で「奇跡の穀物」として栽培されています。",
       "tags": [
@@ -1039,19 +1540,19 @@
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-01T09:06:46.330783+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-01T20:48:10.541035+09:00",
     "summary_lines": [
-      "Linuxカーネルの重大なTCP脆弱性が発見され、緊急の対応が求められています。",
-      "AIの進化が雇用市場に影響を与え、特にコンピュータ工学分野で失業率が上昇しています。",
-      "AIデータセンターの電力消費が環境に与える影響が懸念されています。"
+      "LinuxカーネルのTCPに深刻な脆弱性CVE-2026-98432が発見されました。",
+      "AIの進化が雇用市場に影響を与え、特にコンピュータ工学卒業生の失業率が上昇しています。",
+      "AIによるコード生成やマルウェア解析、そしてAI学習のコンテンツ制御が注目を集めています。"
     ],
     "focus_tags": [
       "Security",
       "AI",
       "Linux Kernel",
-      "雇用",
-      "環境問題"
+      "Employment",
+      "Code Generation"
     ]
   }
 }
