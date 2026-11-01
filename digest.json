@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-10-25T06:39:59.359399+09:00",
-  "week_start": "2026-10-19",
-  "week_end": "2026-10-25",
-  "article_count": 258,
-  "overview": "今週はPHPの緊急脆弱性に関するニュースがIT業界を席巻し、多くのサービスが緊急対応に追われました。同時に、AI技術の進化とそれに伴うセキュリティリスク、そして新しいプログラミング言語や開発ツールの動向も注目を集めています。特に、AIエージェントの自律性向上と、それによる新たなセキュリティ課題が浮き彫りになった一週間でした。",
+  "generated_at": "2026-11-01T09:06:46.330783+09:00",
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "article_count": 300,
+  "overview": "今週はAI技術の進化とそれに伴うセキュリティリスク、そして開発者体験の変化が主要なテーマとなりました。特にAIモデルの性能向上とオープンソース化が進む一方で、AIエージェントや拡張機能のバックドアなど、新たな脅威が顕在化しています。また、クラウドインフラの進化とAIの活用による開発ワークフローの変革も注目されています。",
   "trends": [
-    "PHP緊急脆弱性と大規模な影響",
-    "AIエージェントの進化とセキュリティ",
-    "プログラミング言語・コンパイラの高速化",
-    "サプライチェーン攻撃の脅威",
-    "OS・仮想化技術の脆弱性"
+    "AIモデルの高性能化とオープンソース化",
+    "AI関連のセキュリティ脅威の増加",
+    "開発者体験のAIによる変革",
+    "クラウドインフラの柔軟性向上",
+    "AIと雇用市場への影響"
   ],
   "highlights": [
     {
-      "title": "修正予告されたPHPの2件の深刻な脆弱性についてまとめてみた - piyolog (はてなブックマーク)",
-      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/21/174516",
-      "comment": "PHPの緊急脆弱性に関する詳細な解説で、その深刻度と広範な影響を理解する上で最も重要な記事です。"
+      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8 (Hacker News)",
+      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+      "comment": "Linuxカーネルの深刻な脆弱性であり、広範囲に影響を与える可能性があるため、緊急の対応が求められます。"
     },
     {
-      "title": "「PHPなんて使ってるやつが悪い」と言っている輩が一番危ない (Qiita)",
-      "url": "https://qiita.com/kotowazaman/items/aab621d31a8501617eb4?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "comment": "PHP脆弱性を巡る本質的な議論を提起し、セキュリティの前提が変化した「地殻変動」を指摘する洞察に富んだ記事です。"
+      "title": "Claude Code 拡張機能のバックドア事件まとめ（2.1.312・2.1.313・Cursor のマーケットプレイス） (Zenn)",
+      "url": "https://zenn.dev/sonsu/articles/67fbd9a1cf8914",
+      "comment": "AI関連ツールにおけるサプライチェーン攻撃の危険性を示しており、開発者ツールのセキュリティ対策の重要性を再認識させます。"
     },
     {
-      "title": "OpenAIフロンティアレッドチーム：隔離されたAIエージェントがCPUキャッシュタイミングのサイドチャネルを通じて通信する方法を発見 (Reddit)",
-      "url": "https://www.reddit.com/r/technology/comments/1xefo9e/openai_frontier_red_team_isolated_ai_agents/",
-      "comment": "AIシステムの新たなセキュリティリスクを示唆し、AIの安全性確保に向けた研究の重要性を強調する画期的な発見です。"
+      "title": "Mistral Large 4のウェイトを公開 (Hacker News)",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "comment": "1兆パラメータのマルチモーダルモデルがオープンウェイトで公開されたことは、AI研究と開発の加速に大きく貢献します。"
     },
     {
-      "title": "Cloudflare、TypeScriptをRustに移植した「tsrs」を発表。TypeScript 7より最大で70％少ないメモリで8倍速。今後、LSPなどTypeScriptの全機能をサポート予定 (Publickey)",
-      "url": "https://www.publickey1.jp/blog/26/cloudflaretypescriptrusttsrstypescript_7708lsptypescript.html",
-      "comment": "Web開発の基盤技術であるTypeScriptのパフォーマンスを劇的に向上させる可能性を秘めた、将来性のある技術発表です。"
+      "title": "GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！ (Zenn)",
+      "url": "https://zenn.dev/progate/articles/24b1140180300c",
+      "comment": "GitHub Actionsのセキュリティベストプラクティスに関する重要な提言であり、CI/CDパイプラインの安全性を確保するために不可欠な情報です。"
     },
     {
-      "title": "Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性 (Publickey)",
-      "url": "https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html",
-      "comment": "仮想化環境における根源的なセキュリティリスクを提示し、クラウドインフラの安全性に大きな影響を与える可能性のある脆弱性です。"
+      "title": "AIがコンピュータ工学卒業生の失業率を2年前の2.3%から現在7.8%に急上昇させた (Reddit)",
+      "url": "https://www.reddit.com/r/technology/comments/1xkoe1a/artificial_intelligence_has_caused_the/",
+      "comment": "AIの進化が雇用市場に与える具体的な影響を示しており、今後のキャリア形成や教育システムのあり方を考える上で重要なデータです。"
     }
   ]
 }
