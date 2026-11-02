@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Nov 2026 00:43:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 13:27:10 +0000</lastBuildDate>
     <item>
       <title>新しい3D熱不可視クロークが赤外線カメラから物体を消す</title>
       <link>https://www.sciencedaily.com/releases/2026/10/261025073051.htm</link>
@@ -26,6 +26,13 @@
       <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xl8de6/proposed_data_centre_would_release_23/</guid>
       <description>[Score: 95] 新たなデータセンターの建設計画に対し、物理学者がそのエネルギー消費量を警告。 / 1日あたり「広島型原爆23個分」に相当する膨大なエネルギーが放出されると指摘。 / データセンターの環境負荷と持続可能性に関する議論が活発化する可能性。 (Source: Reddit)</description>
       <pubDate>Sun, 01 Nov 2026 17:06:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>ヨーロッパ全土のスーパーマーケットの冷凍庫が2度目の壊滅的なサイバー攻撃を受け、ハッカーはベルギーとスウェーデンで温度を50℃に上昇させ、食品在庫を破壊</title>
+      <link>https://www.reddit.com/r/technology/comments/1xlu8t2/supermarket_freezers_across_europe_struck_in/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xlu8t2/supermarket_freezers_across_europe_struck_in/</guid>
+      <description>[Score: 95] ヨーロッパのスーパーマーケットの冷凍庫がサイバー攻撃を受け、食品在庫が破壊されました。 / ハッカーは冷凍庫の温度を50℃まで上昇させ、大規模な被害を引き起こしました。 / これは2度目の壊滅的な攻撃であり、サプライチェーンへの深刻な影響が懸念されます。 (Source: Reddit)</description>
+      <pubDate>Mon, 02 Nov 2026 11:01:58 +0000</pubDate>
     </item>
     <item>
       <title>誤ってマルウェアを実行してしまった私が、AIとREA（Reverse Engineer Anything）に救われた話</title>
@@ -98,6 +105,27 @@
       <pubDate>Mon, 02 Nov 2026 00:24:35 +0000</pubDate>
     </item>
     <item>
+      <title>Snowflake: Optima Clustering による 1KB クラスタリングキーでの日本語フィルタの改善</title>
+      <link>https://zenn.dev/snowflakejp/articles/d907c02698d748</link>
+      <guid isPermaLink="false">https://zenn.dev/snowflakejp/articles/d907c02698d748</guid>
+      <description>[Score: 90] SnowflakeのOptima Clusteringが全アカウントで有効化され、クラスタリングキー長が1KBまで拡張されました。 / これにより、従来の5バイト制限で日本語のフィルタリングが困難だった問題が解決されます。 / 特に日本語の住所データなど、マルチバイト文字を含むカラムでのデータプルーニング効率が大幅に向上し、クエリ性能の改善が期待されます。 (Source: Zenn)</description>
+      <pubDate>Mon, 02 Nov 2026 04:03:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>【未来を解説】AIでエンジニア格差を生み出す質とスピードの考え方</title>
+      <link>https://qiita.com/Sicut_study/items/b9e38c0584d4aa720d31?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b9e38c0584d4aa720d31?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AIエージェントによる開発が普及する中で、エンジニアのスキル格差が拡大している現状を指摘しています。 / AIに依存しすぎると思考停止に陥り、質を犠牲にしたコードが増え、結果的に開発が遅くなる負のループに陥る可能性があります。 / AI時代にエンジニアが成長し続けるためには、設計思考や本質的な学習が不可欠であると提言しています。 (Source: Qiita)</description>
+      <pubDate>Sun, 01 Nov 2026 08:41:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>GMO熊谷代表、涙の謝罪会見でも“熊谷節”さく裂──「31年間、もうけるという言葉は使ったことがない」</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/02/2000002823/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/02/2000002823/</guid>
+      <description>[Score: 90] GMOインターネットグループの熊谷正寿代表が不正アクセス問題の会見で、AIの発展がサイバー攻撃の増加原因だと指摘しました。 / 「31年間、もうけるという言葉は使ったことがない」と述べ、顧客の笑顔が目的だと強調しました。 / 犯罪者がAIを使い攻撃が加速しているとし、身代金は支払わないと断言、レジリエンスへの転換の遅れを反省点としました。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 02 Nov 2026 09:54:02 +0000</pubDate>
+    </item>
+    <item>
       <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
       <link>https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</guid>
@@ -112,39 +140,11 @@
       <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>ISUCON 2026 参加記</title>
-      <link>https://zenn.dev/catatsuy/articles/159edffe202c0c</link>
-      <guid isPermaLink="false">https://zenn.dev/catatsuy/articles/159edffe202c0c</guid>
-      <description>[Score: 85] ISUCON 2026にAIを活用して一人で参加した際の記録です。 / ChatGPTやCodexを使い、方針決定、ベンチマーク、ログ分析、デプロイを分担し、多くの最適化を進めました。 / AIの活用がコンテストのあり方や、今後のISUCONの継続性について重要な示唆を与えています。 (Source: Zenn)</description>
-      <pubDate>Sun, 01 Nov 2026 03:40:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
-      <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
-      <description>[Score: 85] オラクルが「Oracle App Composer」を発表し、社員がAIを使って業務アプリケーションを自動生成し、Oracle Cloud上で共有可能になります。 / チャット形式でアプリ内容を指示するだけで、OpenAIのCodexがコードを生成し、セキュリティチェック後にデプロイされます。 / 生成されたアプリは情報部門が一括管理でき、利用状況の把握や廃止も容易になります。 (Source: Publickey)</description>
-      <pubDate>Wed, 28 Oct 2026 15:39:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>Octoverse: 2026年にコミットとプッシュが過去最高を記録、開発者はエージェントと共に構築</title>
-      <link>https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</guid>
-      <description>[Score: 85] 2026年のGitHubでのコードプッシュ数は179億回に達し、2024年と2025年を合わせたよりも多く、過去最高を記録しました。 / この成長の背景には、開発者がAIエージェントを試用から実用へと移行させ、共に作業するようになったことが挙げられます。 / Octoverseレポートは、AIモデルの進化と、ヘルスケアから農業まで多岐にわたる分野での開発活動の拡大を強調しています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 28 Oct 2026 16:07:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>Nibnib: 極めて高速なデコード速度を持つ画像圧縮</title>
-      <link>https://github.com/raphlinus/nibnib</link>
-      <guid isPermaLink="false">https://github.com/raphlinus/nibnib</guid>
-      <description>[Score: 85] Nibnibは、極めて高速なデコード速度に特化した画像フォーマットです。 / RP2350マイクロコントローラでのDVI出力向けに開発され、1ピクセルあたり約6サイクルの制約下で動作します。 / パレットとデルタエンコーディングを組み合わせることで、低ビット深度ながら高品質な画像を効率的に処理します。 (Source: Hacker News)</description>
-      <pubDate>Fri, 30 Oct 2026 04:17:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>compact の使い方、間違えるとトークン代 2.75 倍？ Claude Code で測ってわかった 5 つの結論【2026年版】</title>
-      <link>https://qiita.com/songchong/items/ac9779bb8e8838b546b9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/ac9779bb8e8838b546b9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AIエージェントのトークン代節約のため、Claude Codeのcompact機能の費用対効果を検証しました。 / compactは会話履歴を要約し、プロンプトキャッシュを効率的に使うことで費用を削減できます。 / しかし、作業を中断せずに頻繁にcompactすると、かえって費用が2.75倍に増加する可能性があることが判明しました。 (Source: Qiita)</description>
-      <pubDate>Sun, 01 Nov 2026 19:05:20 +0000</pubDate>
+      <title>Anthropicがゲームクローン防止のため新しいClaude Codeの制限を確認 — ユーザーはOpus 5.5もリバースエンジニアリングタスクを積極的にブロックしていると報告</title>
+      <link>https://www.reddit.com/r/technology/comments/1xlwaqx/anthropic_confirms_new_claude_code_limits_to/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xlwaqx/anthropic_confirms_new_claude_code_limits_to/</guid>
+      <description>[Score: 88] Anthropicは、ゲームのクローン作成を防ぐため、Claude Codeに新たな制限を設けたことを確認しました。 / ユーザーからは、Claude Opus 5.5もリバースエンジニアリング関連のタスクを積極的にブロックしているとの報告があります。 / これは、AIによるコンテンツ生成や知的財産保護に関する新たな課題と対策を示唆しています。 (Source: Reddit)</description>
+      <pubDate>Mon, 02 Nov 2026 12:49:42 +0000</pubDate>
     </item>
   </channel>
 </rss>
