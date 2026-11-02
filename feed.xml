@@ -5,20 +5,34 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 01 Nov 2026 11:48:53 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:43:39 +0000</lastBuildDate>
     <item>
-      <title>TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8</title>
-      <link>https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf</link>
-      <guid isPermaLink="false">https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf</guid>
-      <description>[Score: 95] LinuxカーネルのIPv4 TCPハンドシェイクに、リモートから認証なしで悪用可能なUse-After-Freeの脆弱性CVE-2026-98432が発見されました。 / CVSSスコア9.8のCriticalな脆弱性で、Linux 4.4以降の多くのバージョンに影響し、Anthropicの研究者がPoCエクスプロイトを作成済みです。 / 特にGoプログラムがデフォルトでマルチパスTCPリスナーを開くため、多くのLinuxサーバーがroot権限でのコマンド実行リスクに晒されています。 (Source: Hacker News)</description>
-      <pubDate>Sat, 31 Oct 2026 19:16:30 +0000</pubDate>
+      <title>新しい3D熱不可視クロークが赤外線カメラから物体を消す</title>
+      <link>https://www.sciencedaily.com/releases/2026/10/261025073051.htm</link>
+      <guid isPermaLink="false">https://www.sciencedaily.com/releases/2026/10/261025073051.htm</guid>
+      <description>[Score: 95] 科学者たちは、物体を赤外線カメラから隠し、極端な温度から保護する初の3D熱不可視クロークを開発しました。 / この技術は、マイクロチップの冷却、精密電子機器の保護、熱署名による検出防止に応用可能です。 / 熱を隠された物体の周囲に迂回させることで、あらゆる方向からの熱を隠蔽します。 (Source: Hacker News)</description>
+      <pubDate>Fri, 30 Oct 2026 03:06:52 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Code 拡張機能のバックドア事件まとめ（2.1.312・2.1.313・Cursor のマーケットプレイス）</title>
-      <link>https://zenn.dev/sonsu/articles/67fbd9a1cf8914</link>
-      <guid isPermaLink="false">https://zenn.dev/sonsu/articles/67fbd9a1cf8914</guid>
-      <description>[Score: 95] 2026年10月29日、CursorのマーケットプレイスでClaude Code拡張機能の悪意あるバージョンが約11時間配布された事件を解説。 / このバージョンはSSH設定を変更し、攻撃者がPCに接続できるようにするバックドアを含んでいた。 / 該当するユーザーの確認方法と対応策、およびVS Codeユーザーは影響を受けないことなどが詳細に説明されている。 (Source: Zenn)</description>
-      <pubDate>Fri, 30 Oct 2026 18:30:00 +0000</pubDate>
+      <title>AIに証明を書かせてセキュアに開発する言語 Tauto をリリースしました！</title>
+      <link>https://qiita.com/ryo33/items/3a1a9d1ba2b289b23244?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ryo33/items/3a1a9d1ba2b289b23244?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 95] AIがコードと共に「コードが特定の性質を満たす」という証明を生成する言語Tautoがリリースされました。 / 人間はコードの代わりに命題（仕様）をレビューすることで、セキュリティ脆弱性を未然に防ぎます。 / アクセス制御の不備などのWebアプリの脆弱性に対し、コンパイル時に証明の検証を行うことで安全な開発を支援します。 (Source: Qiita)</description>
+      <pubDate>Sun, 01 Nov 2026 08:06:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>提案されているデータセンターは1日あたり「広島型原爆23個分のエネルギー」を放出すると物理学者が指摘 | CBCニュース</title>
+      <link>https://www.reddit.com/r/technology/comments/1xl8de6/proposed_data_centre_would_release_23/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xl8de6/proposed_data_centre_would_release_23/</guid>
+      <description>[Score: 95] 新たなデータセンターの建設計画に対し、物理学者がそのエネルギー消費量を警告。 / 1日あたり「広島型原爆23個分」に相当する膨大なエネルギーが放出されると指摘。 / データセンターの環境負荷と持続可能性に関する議論が活発化する可能性。 (Source: Reddit)</description>
+      <pubDate>Sun, 01 Nov 2026 17:06:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>誤ってマルウェアを実行してしまった私が、AIとREA（Reverse Engineer Anything）に救われた話</title>
+      <link>https://qiita.com/TOMOSIA-LinhND/items/3dec10762fcc224d9133?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/TOMOSIA-LinhND/items/3dec10762fcc224d9133?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 誤ってマルウェアを実行してしまった筆者が、AIとオープンソースツールREA（Reverse Engineer Anything）を使って解析した体験談です。 / Redditで見つけたアクティベーターを装ったマルウェアをダウンロード・実行してしまい、その危険性を認識しました。 / REAとAIの組み合わせにより、マルウェアの正体を解明し、防御側の視点での活用価値を強調しています。 (Source: Qiita)</description>
+      <pubDate>Fri, 30 Oct 2026 09:45:50 +0000</pubDate>
     </item>
     <item>
       <title>Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026</title>
@@ -42,60 +56,46 @@
       <pubDate>Wed, 28 Oct 2026 16:09:28 +0000</pubDate>
     </item>
     <item>
-      <title>Memdoor: 5つのQwen3.8-27BモデルチームがLiveCodeBench HardでFable 5を打ち破る</title>
-      <link>https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve</link>
-      <guid isPermaLink="false">https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve</guid>
-      <description>[Score: 90] Memdoorワークフローとして実装された5つのQwen3.8-27Bモデルからなるマルチエージェントチームが、プログラミング問題ベンチマークLiveCodeBench HardでFable 5を上回る性能を示しました。 / プランナー、イデアター、ソルバー、マネージャー、リペアワーカーの役割を持つ各エージェントが、ディスク上のファイルを介して連携し問題を解決します。 / この手法は、単一のモデルよりも複雑なプログラミングタスクにおいて、AIチームの有効性を示しています。 (Source: Hacker News)</description>
-      <pubDate>Sat, 31 Oct 2026 22:46:12 +0000</pubDate>
+      <title>AFL++を使ったより効果的なファズテストのヒント</title>
+      <link>https://nullprogram.com/blog/2025/02/05/</link>
+      <guid isPermaLink="false">https://nullprogram.com/blog/2025/02/05/</guid>
+      <description>[Score: 90] ファズテストはソフトウェアの欠陥発見に非常に効果的ですが、まだ十分に活用されていません。 / 本記事では、AFL++を用いたC/C++ターゲットのファズテストをより効果的に行うためのヒントを提供します。 / Address Sanitizer (ASan) や Undefined Behavior Sanitizer (UBSan) の活用など、具体的な手法が紹介されています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 28 Oct 2026 09:46:12 +0000</pubDate>
     </item>
     <item>
-      <title>Project Suncatcherプロトタイプ衛星からの最初の応答</title>
-      <link>https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/</link>
-      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/</guid>
-      <description>[Score: 90] GoogleがProject Suncatcherのプロトタイプ衛星を打ち上げ、宇宙でのAIコンピューティングの可能性を探る。 / 軌道上のデータセンター級TPUから初のAI応答（俳句生成）に成功。 / 今後は熱ストレスや放射線下でのTPU性能評価を進め、2027年には相互接続された双子衛星の打ち上げを目指す。 (Source: Hacker News)</description>
-      <pubDate>Sat, 31 Oct 2026 03:54:00 +0000</pubDate>
+      <title>ISUCON2026 にツールを捨てて勝ちたかった</title>
+      <link>https://zenn.dev/mazrean/articles/5c968503fd69a3</link>
+      <guid isPermaLink="false">https://zenn.dev/mazrean/articles/5c968503fd69a3</guid>
+      <description>[Score: 90] ISUCON2026にコーディングエージェントのみに作業を任せて参加した記録です。 / 過去のISUCON問題ではAIが短時間で高スコアを達成し、競技性が変化していることを示しました。 / 最終スコアは198,146点で40〜50位と、AI単独でも高いパフォーマンスを発揮できることが証明されました。 (Source: Zenn)</description>
+      <pubDate>Sun, 01 Nov 2026 12:16:33 +0000</pubDate>
     </item>
     <item>
-      <title>AIがコンピュータ工学卒業生の失業率を2年前の2.3%から現在7.8%に急上昇させた</title>
-      <link>https://www.reddit.com/r/technology/comments/1xkoe1a/artificial_intelligence_has_caused_the/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xkoe1a/artificial_intelligence_has_caused_the/</guid>
-      <description>[Score: 90] AIの進化がコンピュータ工学分野の雇用市場に大きな影響を与え、卒業生の失業率が急増しているとの報告です。 / 2年前の2.3%から現在7.8%へと、AIによる自動化や効率化が職務内容を変化させている可能性が示唆されます。 / AI時代におけるスキルセットの再構築と教育システムの適応が求められています。 (Source: Reddit)</description>
-      <pubDate>Sat, 31 Oct 2026 23:26:17 +0000</pubDate>
+      <title>Minecraftで「繁栄する文明を築く」ためにAIエージェント群を投入 — 50体のエージェントチームは麻痺する官僚主義に陥り失敗</title>
+      <link>https://www.reddit.com/r/technology/comments/1xl2oer/ai_agent_swarms_unleashed_in_minecraft_to_build_a/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xl2oer/ai_agent_swarms_unleashed_in_minecraft_to_build_a/</guid>
+      <description>[Score: 90] Minecraft内でAIエージェント群を使い「繁栄する文明」を築く試みが行われた。 / 50体のエージェントチームは、複雑な連携と意思決定の過程で「麻痺する官僚主義」に陥り失敗。 / AIの集団行動における協調性と効率性の課題が浮き彫りになった事例。 (Source: Reddit)</description>
+      <pubDate>Sun, 01 Nov 2026 13:09:53 +0000</pubDate>
     </item>
     <item>
-      <title>3 人それぞれの Claude Code を Slack でつないで ISUCON2026 に参加した（207,039 点）</title>
-      <link>https://zenn.dev/kauche/articles/f3736c660aab77</link>
-      <guid isPermaLink="false">https://zenn.dev/kauche/articles/f3736c660aab77</guid>
-      <description>[Score: 90] 3人チームがISUCON2026にClaude Codeを導入し、最終スコア207,039点を達成しました。 / 各メンバーが個別のClaude Codeエージェントを動かし、Slackを通じて連携させ、人間は方針決定と調整に注力しました。 / AIエージェントに具体的な手順ではなくゴールを指示する「/goal」コマンドの活用が、高スコア達成の鍵となりました。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 31 Oct 2026 12:31:11 +0000</pubDate>
+      <title>いまのダークウェブでは二段階認証も無力化する「ブラウザのクローンデータ」が売買されており、その対策にはブラウザを使い分けることが有効らしい</title>
+      <link>https://togetter.com/li/2765521</link>
+      <guid isPermaLink="false">https://togetter.com/li/2765521</guid>
+      <description>[Score: 90] ダークウェブの闇市場では、IDとパスワードだけでなく、ログイン状態や端末のデジタル指紋を含む「ブラウザのクローンデータ」が売買されている。 / これにより、二段階認証も突破され、サービス側は正規のアクセスと誤認してしまう。 / 対策として、銀行や決済、仕事用と普段使いでブラウザを完全に使い分けることが推奨されている。 (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 01 Nov 2026 12:12:19 +0000</pubDate>
     </item>
     <item>
-      <title>SSM Session Managerを使ってDBに接続する</title>
-      <link>https://qiita.com/j-yasukawa/items/701554f14fe8b02ff34e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/j-yasukawa/items/701554f14fe8b02ff34e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AWS Systems Manager (SSM) Session Managerを利用して、プライベートサブネットのRDS/Auroraに安全に接続する方法を解説。 / 従来のSSH踏み台EC2運用が抱えるセキュリティリスク（22番ポート露出、SSH鍵管理）を解消します。 / SSM Agentを介したアウトバウンド接続により、インバウンドポートを開けずにDBへのポートフォワードを実現する手順が示されています。 (Source: Qiita)</description>
-      <pubDate>Fri, 30 Oct 2026 06:39:46 +0000</pubDate>
+      <title>GitHub、「Copilot Fusion」正式リリース。タスクに応じて最適なAIモデル選択で高性能かつ低コストに。GitHub Universe 2026</title>
+      <link>https://www.publickey1.jp/blog/26/githubcopilot_fusionaigithub_universe_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/githubcopilot_fusionaigithub_universe_2026.html</guid>
+      <description>[Score: 90] GitHubが「Copilot Fusion」を正式リリースし、タスクの特性に応じて単一または複数のAIモデルを組み合わせて実行するマルチモデル対応機能を提供。 / これにより、開発者はAIモデル選択の負担から解放され、性能とコストのバランスを考慮した開発が可能になる。 / 推論、コード生成、デバッグ、ツール利用など、タスクごとに最適なAIモデルの組み合わせを自動で判断し、効率的な開発を支援する。 (Source: Publickey)</description>
+      <pubDate>Mon, 02 Nov 2026 14:36:38 +0000</pubDate>
     </item>
     <item>
-      <title>ブラジルの裁判所、裁判書類へのプロンプトインジェクションで弁護士を制裁</title>
-      <link>https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/</link>
-      <guid isPermaLink="false">https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/</guid>
-      <description>[Score: 90] ブラジルの労働裁判所が、裁判書類に隠されたプロンプトインジェクションを仕込んだ弁護士2名に制裁を科しました。 / これは、AIシステムを悪用した初の司法判断とみられ、AIと法律の倫理的・技術的課題を浮き彫りにしています。 / AIの普及に伴う新たなセキュリティリスクと法的責任について重要な先例となります。 (Source: Hacker News)</description>
-      <pubDate>Sun, 01 Nov 2026 02:19:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>誤ってマルウェアを実行してしまった私が、AIとREA（Reverse Engineer Anything）に救われた話</title>
-      <link>https://qiita.com/TOMOSIA-LinhND/items/3dec10762fcc224d9133?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/TOMOSIA-LinhND/items/3dec10762fcc224d9133?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 誤ってマルウェアを実行してしまった筆者が、AIとオープンソースツールREA（Reverse Engineer Anything）を使って解析した体験談です。 / Redditで見つけたアクティベーターを装ったマルウェアをダウンロード・実行してしまい、その危険性を認識しました。 / REAとAIの組み合わせにより、マルウェアの正体を解明し、防御側の視点での活用価値を強調しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 30 Oct 2026 09:45:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI学習への利用拒否をrobots.txtで一括指定へ OpenAIやGoogleなどが対応表明</title>
-      <link>https://www.itmedia.co.jp/news/article/2611/01/2000002776/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/01/2000002776/</guid>
-      <description>[Score: 90] OpenAI、Google、Microsoftなどが、Webサイト運営者がAI学習へのコンテンツ利用意向をrobots.txtで一括指定できる共通の仕組みに対応すると発表。 / IETFに提出されたInternet-Draftに基づき、User-Agentに「__usage_ai-training」トークンを使用。 / これにより、AI企業ごとにルールを書き分ける手間が省け、運営者の負担が軽減される。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 01 Nov 2026 00:58:30 +0000</pubDate>
+      <title>極端なデータスパースシナリオにおける惑星地質調査ミッションのための自己教師あり時系列パターンマイニング</title>
+      <link>https://dev.to/rikinptl/self-supervised-temporal-pattern-mining-for-planetary-geology-survey-missions-for-extreme-data-1ggj</link>
+      <guid isPermaLink="false">https://dev.to/rikinptl/self-supervised-temporal-pattern-mining-for-planetary-geology-survey-missions-for-extreme-data-1ggj</guid>
+      <description>[Score: 90] 惑星地質調査ミッションのような極端なデータスパース環境における時系列異常検出の課題について論じています。 / 従来の教師あり学習ではデータ不足により性能が低下するため、自己教師あり学習による時系列パターンマイニングの重要性を強調しています。 / 火星探査機のデータセットを例に、季節的周期ではなく稀な地質イベントを学習するためのアプローチを探求しています。 (Source: Dev.to)</description>
+      <pubDate>Mon, 02 Nov 2026 00:24:35 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
@@ -112,18 +112,11 @@
       <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>OpenAI アルトマンCEO「PCに大量のRAMを搭載するのは問題」と発言。ローカルAIより「クラウドで24時間活用すべき」との考え語る</title>
-      <link>https://www.techno-edge.net/article/2026/10/31/5657.html</link>
-      <guid isPermaLink="false">https://www.techno-edge.net/article/2026/10/31/5657.html</guid>
-      <description>[Score: 88] OpenAIのサム・アルトマンCEOが、個人のPCに大量のDRAMを搭載するローカルAIの普及に疑問を呈しました。 / 限られたDRAM資源を個人が低利用率で保有するよりも、データセンターに集約し24時間高稼働で共有する方が効率的だと主張しています。 / この発言は、ローカルAIのプライバシーや低遅延といった利点と、クラウドAIの資源効率性との間で議論を呼んでいます。 (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 31 Oct 2026 07:41:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>ISUCON2026に人間1人＋AIエージェント軍団で出て19.6万点、ループは閉じたけど中身が弱かった反省文😇</title>
-      <link>https://zenn.dev/tak848/articles/20261031-isucon2026-writeup</link>
-      <guid isPermaLink="false">https://zenn.dev/tak848/articles/20261031-isucon2026-writeup</guid>
-      <description>[Score: 88] ISUCON2026に人間1人とAIエージェント軍団で参加し、19.6万点を獲得した反省文です。 / 計測、仮説、実装、ベンチマーク、判定のループをAIに任せる体制を構築しました。 / 最終スコアは初期実装の約67倍でしたが、上位には及ばず、AIの指示出しの課題も浮き彫りになりました。 (Source: Zenn)</description>
-      <pubDate>Sat, 31 Oct 2026 10:53:26 +0000</pubDate>
+      <title>ISUCON 2026 参加記</title>
+      <link>https://zenn.dev/catatsuy/articles/159edffe202c0c</link>
+      <guid isPermaLink="false">https://zenn.dev/catatsuy/articles/159edffe202c0c</guid>
+      <description>[Score: 85] ISUCON 2026にAIを活用して一人で参加した際の記録です。 / ChatGPTやCodexを使い、方針決定、ベンチマーク、ログ分析、デプロイを分担し、多くの最適化を進めました。 / AIの活用がコンテストのあり方や、今後のISUCONの継続性について重要な示唆を与えています。 (Source: Zenn)</description>
+      <pubDate>Sun, 01 Nov 2026 03:40:42 +0000</pubDate>
     </item>
     <item>
       <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
@@ -140,11 +133,18 @@
       <pubDate>Wed, 28 Oct 2026 16:07:40 +0000</pubDate>
     </item>
     <item>
-      <title>NoSQLのスキーマ変更は読むときに受け止めよう</title>
-      <link>https://zenn.dev/michiharu/articles/9562dfd249c8e3</link>
-      <guid isPermaLink="false">https://zenn.dev/michiharu/articles/9562dfd249c8e3</guid>
-      <description>[Score: 85] NoSQLデータベースにおけるスキーマ変更の課題と解決策を解説します。 / データにスキーマバージョンを持たせ、読み込み時に古いバージョンを最新に変換する「Schema Versioningパターン」を紹介。 / TypeScriptとZodを使った具体的なコード例を交え、システムを停止せずにスキーマ変更を導入する方法を提示します。 (Source: Zenn)</description>
-      <pubDate>Fri, 30 Oct 2026 16:53:51 +0000</pubDate>
+      <title>Nibnib: 極めて高速なデコード速度を持つ画像圧縮</title>
+      <link>https://github.com/raphlinus/nibnib</link>
+      <guid isPermaLink="false">https://github.com/raphlinus/nibnib</guid>
+      <description>[Score: 85] Nibnibは、極めて高速なデコード速度に特化した画像フォーマットです。 / RP2350マイクロコントローラでのDVI出力向けに開発され、1ピクセルあたり約6サイクルの制約下で動作します。 / パレットとデルタエンコーディングを組み合わせることで、低ビット深度ながら高品質な画像を効率的に処理します。 (Source: Hacker News)</description>
+      <pubDate>Fri, 30 Oct 2026 04:17:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>compact の使い方、間違えるとトークン代 2.75 倍？ Claude Code で測ってわかった 5 つの結論【2026年版】</title>
+      <link>https://qiita.com/songchong/items/ac9779bb8e8838b546b9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/ac9779bb8e8838b546b9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AIエージェントのトークン代節約のため、Claude Codeのcompact機能の費用対効果を検証しました。 / compactは会話履歴を要約し、プロンプトキャッシュを効率的に使うことで費用を削減できます。 / しかし、作業を中断せずに頻繁にcompactすると、かえって費用が2.75倍に増加する可能性があることが判明しました。 (Source: Qiita)</description>
+      <pubDate>Sun, 01 Nov 2026 19:05:20 +0000</pubDate>
     </item>
   </channel>
 </rss>
