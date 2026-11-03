@@ -5,13 +5,13 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Nov 2026 13:27:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 02:54:46 +0000</lastBuildDate>
     <item>
-      <title>新しい3D熱不可視クロークが赤外線カメラから物体を消す</title>
-      <link>https://www.sciencedaily.com/releases/2026/10/261025073051.htm</link>
-      <guid isPermaLink="false">https://www.sciencedaily.com/releases/2026/10/261025073051.htm</guid>
-      <description>[Score: 95] 科学者たちは、物体を赤外線カメラから隠し、極端な温度から保護する初の3D熱不可視クロークを開発しました。 / この技術は、マイクロチップの冷却、精密電子機器の保護、熱署名による検出防止に応用可能です。 / 熱を隠された物体の周囲に迂回させることで、あらゆる方向からの熱を隠蔽します。 (Source: Hacker News)</description>
-      <pubDate>Fri, 30 Oct 2026 03:06:52 +0000</pubDate>
+      <title>ISUCON2026で優勝しました（当日編）</title>
+      <link>https://zenn.dev/luvtechno/articles/isucon2026-competition-day</link>
+      <guid isPermaLink="false">https://zenn.dev/luvtechno/articles/isucon2026-competition-day</guid>
+      <description>[Score: 100] ISUCON2026に完全自律型競技エージェント「HOOTL」で参加し、優勝した体験記です。 / 3ヶ月かけてエージェントを準備し、当日は人間が介入することなく競技を完遂しました。 / 競技サーバーの構成やスコア計算式、エージェントの起動プロセスなどが詳細に記述されています。 (Source: Zenn)</description>
+      <pubDate>Mon, 02 Nov 2026 13:26:09 +0000</pubDate>
     </item>
     <item>
       <title>AIに証明を書かせてセキュアに開発する言語 Tauto をリリースしました！</title>
@@ -21,25 +21,39 @@
       <pubDate>Sun, 01 Nov 2026 08:06:32 +0000</pubDate>
     </item>
     <item>
-      <title>提案されているデータセンターは1日あたり「広島型原爆23個分のエネルギー」を放出すると物理学者が指摘 | CBCニュース</title>
-      <link>https://www.reddit.com/r/technology/comments/1xl8de6/proposed_data_centre_would_release_23/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xl8de6/proposed_data_centre_would_release_23/</guid>
-      <description>[Score: 95] 新たなデータセンターの建設計画に対し、物理学者がそのエネルギー消費量を警告。 / 1日あたり「広島型原爆23個分」に相当する膨大なエネルギーが放出されると指摘。 / データセンターの環境負荷と持続可能性に関する議論が活発化する可能性。 (Source: Reddit)</description>
-      <pubDate>Sun, 01 Nov 2026 17:06:43 +0000</pubDate>
+      <title>AstraはQwenを改善するために重みを読み書きできる</title>
+      <link>https://rikiyat.github.io/blog/weight-space-programming/</link>
+      <guid isPermaLink="false">https://rikiyat.github.io/blog/weight-space-programming/</guid>
+      <description>[Score: 95] LLMがニューラルネットワークの重みを直接読み書きできるという画期的な研究です。 / GPT-6 AstraがQwenの重みを編集し、数学スコアを大幅に向上させました。 / 最適化と解釈可能性の両面で大きな可能性を秘めています。 (Source: Hacker News)</description>
+      <pubDate>Mon, 02 Nov 2026 18:21:28 +0000</pubDate>
     </item>
     <item>
-      <title>ヨーロッパ全土のスーパーマーケットの冷凍庫が2度目の壊滅的なサイバー攻撃を受け、ハッカーはベルギーとスウェーデンで温度を50℃に上昇させ、食品在庫を破壊</title>
-      <link>https://www.reddit.com/r/technology/comments/1xlu8t2/supermarket_freezers_across_europe_struck_in/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xlu8t2/supermarket_freezers_across_europe_struck_in/</guid>
-      <description>[Score: 95] ヨーロッパのスーパーマーケットの冷凍庫がサイバー攻撃を受け、食品在庫が破壊されました。 / ハッカーは冷凍庫の温度を50℃まで上昇させ、大規模な被害を引き起こしました。 / これは2度目の壊滅的な攻撃であり、サプライチェーンへの深刻な影響が懸念されます。 (Source: Reddit)</description>
-      <pubDate>Mon, 02 Nov 2026 11:01:58 +0000</pubDate>
+      <title>冷凍庫にサイバー攻撃、食品溶け大量廃棄 欧州各地のスーパー - 日本経済新聞</title>
+      <link>https://www.nikkei.com/article/DGXZQOGN02B1R0S6A101C2000000/</link>
+      <guid isPermaLink="false">https://www.nikkei.com/article/DGXZQOGN02B1R0S6A101C2000000/</guid>
+      <description>[Score: 92] 欧州各地のスーパーがサイバー攻撃を受け、冷蔵・冷凍設備の温度が上昇し、大量の食品が廃棄されました。 / ベルギー、スウェーデン、アイルランド、エストニアなどで同様の被害が発生し、設定が除霜モードに切り替えられたことが原因です。 / EUは食品供給体制を意図的に混乱させる試みと批判し、当局が捜査を開始しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 02 Nov 2026 23:12:33 +0000</pubDate>
     </item>
     <item>
-      <title>誤ってマルウェアを実行してしまった私が、AIとREA（Reverse Engineer Anything）に救われた話</title>
-      <link>https://qiita.com/TOMOSIA-LinhND/items/3dec10762fcc224d9133?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/TOMOSIA-LinhND/items/3dec10762fcc224d9133?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 誤ってマルウェアを実行してしまった筆者が、AIとオープンソースツールREA（Reverse Engineer Anything）を使って解析した体験談です。 / Redditで見つけたアクティベーターを装ったマルウェアをダウンロード・実行してしまい、その危険性を認識しました。 / REAとAIの組み合わせにより、マルウェアの正体を解明し、防御側の視点での活用価値を強調しています。 (Source: Qiita)</description>
-      <pubDate>Fri, 30 Oct 2026 09:45:50 +0000</pubDate>
+      <title>Snowflake: Optima Clustering による 1KB クラスタリングキーでの日本語フィルタの改善</title>
+      <link>https://zenn.dev/snowflakejp/articles/d907c02698d748</link>
+      <guid isPermaLink="false">https://zenn.dev/snowflakejp/articles/d907c02698d748</guid>
+      <description>[Score: 90] SnowflakeのOptima Clusteringが全アカウントで有効化され、クラスタリングキー長が1KBまで拡張されました。 / これにより、従来の5バイト制限で日本語のフィルタリングが困難だった問題が解決されます。 / 特に日本語の住所データなど、マルチバイト文字を含むカラムでのデータプルーニング効率が大幅に向上し、クエリ性能の改善が期待されます。 (Source: Zenn)</description>
+      <pubDate>Mon, 02 Nov 2026 04:03:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>【未来を解説】AIでエンジニア格差を生み出す質とスピードの考え方</title>
+      <link>https://qiita.com/Sicut_study/items/b9e38c0584d4aa720d31?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b9e38c0584d4aa720d31?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AIエージェントによる開発が普及する中で、エンジニアのスキル格差が拡大している現状を指摘しています。 / AIに依存しすぎると思考停止に陥り、質を犠牲にしたコードが増え、結果的に開発が遅くなる負のループに陥る可能性があります。 / AI時代にエンジニアが成長し続けるためには、設計思考や本質的な学習が不可欠であると提言しています。 (Source: Qiita)</description>
+      <pubDate>Sun, 01 Nov 2026 08:41:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub、「Copilot Fusion」正式リリース。タスクに応じて最適なAIモデル選択で高性能かつ低コストに。GitHub Universe 2026</title>
+      <link>https://www.publickey1.jp/blog/26/githubcopilot_fusionaigithub_universe_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/githubcopilot_fusionaigithub_universe_2026.html</guid>
+      <description>[Score: 90] GitHubが「Copilot Fusion」を正式リリースし、タスクの特性に応じて単一または複数のAIモデルを組み合わせて実行するマルチモデル対応機能を提供。 / これにより、開発者はAIモデル選択の負担から解放され、性能とコストのバランスを考慮した開発が可能になる。 / 推論、コード生成、デバッグ、ツール利用など、タスクごとに最適なAIモデルの組み合わせを自動で判断し、効率的な開発を支援する。 (Source: Publickey)</description>
+      <pubDate>Mon, 02 Nov 2026 14:36:38 +0000</pubDate>
     </item>
     <item>
       <title>Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026</title>
@@ -63,67 +77,25 @@
       <pubDate>Wed, 28 Oct 2026 16:09:28 +0000</pubDate>
     </item>
     <item>
-      <title>AFL++を使ったより効果的なファズテストのヒント</title>
-      <link>https://nullprogram.com/blog/2025/02/05/</link>
-      <guid isPermaLink="false">https://nullprogram.com/blog/2025/02/05/</guid>
-      <description>[Score: 90] ファズテストはソフトウェアの欠陥発見に非常に効果的ですが、まだ十分に活用されていません。 / 本記事では、AFL++を用いたC/C++ターゲットのファズテストをより効果的に行うためのヒントを提供します。 / Address Sanitizer (ASan) や Undefined Behavior Sanitizer (UBSan) の活用など、具体的な手法が紹介されています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 28 Oct 2026 09:46:12 +0000</pubDate>
+      <title>Launch HN: Momentic (YC W24) – アプリを使ってバグを捕捉するエージェント</title>
+      <link>https://momentic.ai/</link>
+      <guid isPermaLink="false">https://momentic.ai/</guid>
+      <description>[Score: 90] Momenticは、AIを活用したQAエンジニアで、アプリのE2Eテストを自動化します。 / プロンプトから重要なフローを検証し、バグを発見することで、開発チームの生産性を大幅に向上させます。 / NotionやWebflowなどの主要企業で採用され、テスト作成とメンテナンスの時間を最大3倍短縮します。 (Source: Hacker News)</description>
+      <pubDate>Mon, 02 Nov 2026 17:05:25 +0000</pubDate>
     </item>
     <item>
-      <title>ISUCON2026 にツールを捨てて勝ちたかった</title>
-      <link>https://zenn.dev/mazrean/articles/5c968503fd69a3</link>
-      <guid isPermaLink="false">https://zenn.dev/mazrean/articles/5c968503fd69a3</guid>
-      <description>[Score: 90] ISUCON2026にコーディングエージェントのみに作業を任せて参加した記録です。 / 過去のISUCON問題ではAIが短時間で高スコアを達成し、競技性が変化していることを示しました。 / 最終スコアは198,146点で40〜50位と、AI単独でも高いパフォーマンスを発揮できることが証明されました。 (Source: Zenn)</description>
-      <pubDate>Sun, 01 Nov 2026 12:16:33 +0000</pubDate>
+      <title>AI顔認識システムによる万引き冤罪の数が憂慮すべきレベルに</title>
+      <link>https://www.reddit.com/r/technology/comments/1xmbuoh/the_number_of_innocent_people_being_accused_of/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xmbuoh/the_number_of_innocent_people_being_accused_of/</guid>
+      <description>[Score: 90] AI顔認識システムが万引きの冤罪を引き起こすケースが多発しており、その数が懸念されています。 / 誤認識による無実の人々への不当な告発が社会問題化している状況です。 / AI技術の倫理的・社会的な課題と、その実用化におけるリスクが浮き彫りになっています。 (Source: Reddit)</description>
+      <pubDate>Mon, 02 Nov 2026 22:37:45 +0000</pubDate>
     </item>
     <item>
-      <title>Minecraftで「繁栄する文明を築く」ためにAIエージェント群を投入 — 50体のエージェントチームは麻痺する官僚主義に陥り失敗</title>
-      <link>https://www.reddit.com/r/technology/comments/1xl2oer/ai_agent_swarms_unleashed_in_minecraft_to_build_a/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xl2oer/ai_agent_swarms_unleashed_in_minecraft_to_build_a/</guid>
-      <description>[Score: 90] Minecraft内でAIエージェント群を使い「繁栄する文明」を築く試みが行われた。 / 50体のエージェントチームは、複雑な連携と意思決定の過程で「麻痺する官僚主義」に陥り失敗。 / AIの集団行動における協調性と効率性の課題が浮き彫りになった事例。 (Source: Reddit)</description>
-      <pubDate>Sun, 01 Nov 2026 13:09:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>いまのダークウェブでは二段階認証も無力化する「ブラウザのクローンデータ」が売買されており、その対策にはブラウザを使い分けることが有効らしい</title>
-      <link>https://togetter.com/li/2765521</link>
-      <guid isPermaLink="false">https://togetter.com/li/2765521</guid>
-      <description>[Score: 90] ダークウェブの闇市場では、IDとパスワードだけでなく、ログイン状態や端末のデジタル指紋を含む「ブラウザのクローンデータ」が売買されている。 / これにより、二段階認証も突破され、サービス側は正規のアクセスと誤認してしまう。 / 対策として、銀行や決済、仕事用と普段使いでブラウザを完全に使い分けることが推奨されている。 (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 01 Nov 2026 12:12:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub、「Copilot Fusion」正式リリース。タスクに応じて最適なAIモデル選択で高性能かつ低コストに。GitHub Universe 2026</title>
-      <link>https://www.publickey1.jp/blog/26/githubcopilot_fusionaigithub_universe_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/githubcopilot_fusionaigithub_universe_2026.html</guid>
-      <description>[Score: 90] GitHubが「Copilot Fusion」を正式リリースし、タスクの特性に応じて単一または複数のAIモデルを組み合わせて実行するマルチモデル対応機能を提供。 / これにより、開発者はAIモデル選択の負担から解放され、性能とコストのバランスを考慮した開発が可能になる。 / 推論、コード生成、デバッグ、ツール利用など、タスクごとに最適なAIモデルの組み合わせを自動で判断し、効率的な開発を支援する。 (Source: Publickey)</description>
-      <pubDate>Mon, 02 Nov 2026 14:36:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>極端なデータスパースシナリオにおける惑星地質調査ミッションのための自己教師あり時系列パターンマイニング</title>
-      <link>https://dev.to/rikinptl/self-supervised-temporal-pattern-mining-for-planetary-geology-survey-missions-for-extreme-data-1ggj</link>
-      <guid isPermaLink="false">https://dev.to/rikinptl/self-supervised-temporal-pattern-mining-for-planetary-geology-survey-missions-for-extreme-data-1ggj</guid>
-      <description>[Score: 90] 惑星地質調査ミッションのような極端なデータスパース環境における時系列異常検出の課題について論じています。 / 従来の教師あり学習ではデータ不足により性能が低下するため、自己教師あり学習による時系列パターンマイニングの重要性を強調しています。 / 火星探査機のデータセットを例に、季節的周期ではなく稀な地質イベントを学習するためのアプローチを探求しています。 (Source: Dev.to)</description>
-      <pubDate>Mon, 02 Nov 2026 00:24:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Snowflake: Optima Clustering による 1KB クラスタリングキーでの日本語フィルタの改善</title>
-      <link>https://zenn.dev/snowflakejp/articles/d907c02698d748</link>
-      <guid isPermaLink="false">https://zenn.dev/snowflakejp/articles/d907c02698d748</guid>
-      <description>[Score: 90] SnowflakeのOptima Clusteringが全アカウントで有効化され、クラスタリングキー長が1KBまで拡張されました。 / これにより、従来の5バイト制限で日本語のフィルタリングが困難だった問題が解決されます。 / 特に日本語の住所データなど、マルチバイト文字を含むカラムでのデータプルーニング効率が大幅に向上し、クエリ性能の改善が期待されます。 (Source: Zenn)</description>
-      <pubDate>Mon, 02 Nov 2026 04:03:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>【未来を解説】AIでエンジニア格差を生み出す質とスピードの考え方</title>
-      <link>https://qiita.com/Sicut_study/items/b9e38c0584d4aa720d31?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b9e38c0584d4aa720d31?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AIエージェントによる開発が普及する中で、エンジニアのスキル格差が拡大している現状を指摘しています。 / AIに依存しすぎると思考停止に陥り、質を犠牲にしたコードが増え、結果的に開発が遅くなる負のループに陥る可能性があります。 / AI時代にエンジニアが成長し続けるためには、設計思考や本質的な学習が不可欠であると提言しています。 (Source: Qiita)</description>
-      <pubDate>Sun, 01 Nov 2026 08:41:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>GMO熊谷代表、涙の謝罪会見でも“熊谷節”さく裂──「31年間、もうけるという言葉は使ったことがない」</title>
-      <link>https://www.itmedia.co.jp/news/article/2611/02/2000002823/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/02/2000002823/</guid>
-      <description>[Score: 90] GMOインターネットグループの熊谷正寿代表が不正アクセス問題の会見で、AIの発展がサイバー攻撃の増加原因だと指摘しました。 / 「31年間、もうけるという言葉は使ったことがない」と述べ、顧客の笑顔が目的だと強調しました。 / 犯罪者がAIを使い攻撃が加速しているとし、身代金は支払わないと断言、レジリエンスへの転換の遅れを反省点としました。 (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 02 Nov 2026 09:54:02 +0000</pubDate>
+      <title>Anthropicがゲームクローン防止のため新しいClaude Codeの制限を確認 — ユーザーはOpus 5.5もリバースエンジニアリングタスクを積極的にブロックしていると報告</title>
+      <link>https://www.reddit.com/r/technology/comments/1xlwaqx/anthropic_confirms_new_claude_code_limits_to/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xlwaqx/anthropic_confirms_new_claude_code_limits_to/</guid>
+      <description>[Score: 88] Anthropicは、ゲームのクローン作成を防ぐため、Claude Codeに新たな制限を設けたことを確認しました。 / ユーザーからは、Claude Opus 5.5もリバースエンジニアリング関連のタスクを積極的にブロックしているとの報告があります。 / これは、AIによるコンテンツ生成や知的財産保護に関する新たな課題と対策を示唆しています。 (Source: Reddit)</description>
+      <pubDate>Mon, 02 Nov 2026 12:49:42 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
@@ -140,11 +112,39 @@
       <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Anthropicがゲームクローン防止のため新しいClaude Codeの制限を確認 — ユーザーはOpus 5.5もリバースエンジニアリングタスクを積極的にブロックしていると報告</title>
-      <link>https://www.reddit.com/r/technology/comments/1xlwaqx/anthropic_confirms_new_claude_code_limits_to/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xlwaqx/anthropic_confirms_new_claude_code_limits_to/</guid>
-      <description>[Score: 88] Anthropicは、ゲームのクローン作成を防ぐため、Claude Codeに新たな制限を設けたことを確認しました。 / ユーザーからは、Claude Opus 5.5もリバースエンジニアリング関連のタスクを積極的にブロックしているとの報告があります。 / これは、AIによるコンテンツ生成や知的財産保護に関する新たな課題と対策を示唆しています。 (Source: Reddit)</description>
-      <pubDate>Mon, 02 Nov 2026 12:49:42 +0000</pubDate>
+      <title>日本の全法令をgitの履歴にしてみた</title>
+      <link>https://zenn.dev/koheiwada/articles/houritsu-japanese-laws-as-git</link>
+      <guid isPermaLink="false">https://zenn.dev/koheiwada/articles/houritsu-japanese-laws-as-git</guid>
+      <description>[Score: 88] 日本の全法令をGitリポジトリで管理し、改正履歴をdiffで追えるようにする試みです。 / e-Gov法令API v2を元にRustで変換プログラムを作成し、法令の変更点を視覚化します。 / これにより、複雑な法令改正の経緯や影響範囲を容易に把握できるようになります。 (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 02 Nov 2026 05:17:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
+      <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
+      <description>[Score: 85] オラクルが「Oracle App Composer」を発表し、社員がAIを使って業務アプリケーションを自動生成し、Oracle Cloud上で共有可能になります。 / チャット形式でアプリ内容を指示するだけで、OpenAIのCodexがコードを生成し、セキュリティチェック後にデプロイされます。 / 生成されたアプリは情報部門が一括管理でき、利用状況の把握や廃止も容易になります。 (Source: Publickey)</description>
+      <pubDate>Wed, 28 Oct 2026 15:39:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>Octoverse: 2026年にコミットとプッシュが過去最高を記録、開発者はエージェントと共に構築</title>
+      <link>https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</guid>
+      <description>[Score: 85] 2026年のGitHubでのコードプッシュ数は179億回に達し、2024年と2025年を合わせたよりも多く、過去最高を記録しました。 / この成長の背景には、開発者がAIエージェントを試用から実用へと移行させ、共に作業するようになったことが挙げられます。 / Octoverseレポートは、AIモデルの進化と、ヘルスケアから農業まで多岐にわたる分野での開発活動の拡大を強調しています。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 28 Oct 2026 16:07:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>弊社がAIでPlaywrightテストコードを生成するために調整したこと</title>
+      <link>https://zenn.dev/castingone_dev/articles/casone_playwright_for_claude</link>
+      <guid isPermaLink="false">https://zenn.dev/castingone_dev/articles/casone_playwright_for_claude</guid>
+      <description>[Score: 85] AIでPlaywrightテストコードを生成する際に直面した品質問題と、その解決のために行った調整について解説しています。 / 初期のAI生成コードに多く見られた不要な固定待機（waitForTimeout）の問題を指摘し、Playwrightの自動待機機能を活用するルールを導入しました。 / 要素の出現待ちや状態確認など、状態ベースの待機を明示的に実装する具体的なガイドラインが示されています。 (Source: Zenn)</description>
+      <pubDate>Mon, 02 Nov 2026 02:58:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>Intel株の暴落が悪化、3.5兆ドルのチップ市場の低迷が拡大</title>
+      <link>https://www.reddit.com/r/technology/comments/1xm9jey/the_intel_stock_collapse_is_getting_worse_and_the/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xm9jey/the_intel_stock_collapse_is_getting_worse_and_the/</guid>
+      <description>[Score: 85] Intelの株価が大幅に下落しており、その影響が半導体市場全体に波及している状況です。 / 3.5兆ドル規模のチップ市場全体が低迷期に入りつつあることが示唆されています。 / 半導体業界の経済状況と主要企業の動向に関する懸念が報じられています。 (Source: Reddit)</description>
+      <pubDate>Mon, 02 Nov 2026 21:07:07 +0000</pubDate>
     </item>
   </channel>
 </rss>
