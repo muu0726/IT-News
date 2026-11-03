@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Nov 2026 02:54:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 12:45:29 +0000</lastBuildDate>
     <item>
       <title>ISUCON2026で優勝しました（当日編）</title>
       <link>https://zenn.dev/luvtechno/articles/isucon2026-competition-day</link>
@@ -91,6 +91,34 @@
       <pubDate>Mon, 02 Nov 2026 22:37:45 +0000</pubDate>
     </item>
     <item>
+      <title>Human-out-of-the-loop(もどき)で戦うISUCON2026</title>
+      <link>https://zenn.dev/ponyo877/articles/2a8a24acc2ea3b</link>
+      <guid isPermaLink="false">https://zenn.dev/ponyo877/articles/2a8a24acc2ea3b</guid>
+      <description>[Score: 90] ISUCON2026に、人間が方針を伝え、Claude Codeがコード修正からデプロイまでを自動で行う「ヒューマン・アウト・オブ・ザ・ループ」で参加しました。 / 結果は856チーム中12位という好成績を収め、AIエージェントの活用可能性を示しました。 / 知識カードや監査役エージェントなど、AIを効果的に活用するための工夫が紹介されています。 (Source: Zenn)</description>
+      <pubDate>Mon, 02 Nov 2026 14:52:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIによる人員削減実験は裏目に出ており、企業は密かに人間を再雇用している</title>
+      <link>https://www.reddit.com/r/technology/comments/1xmnf96/the_ai_layoff_experiment_is_backfiring_and/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xmnf96/the_ai_layoff_experiment_is_backfiring_and/</guid>
+      <description>[Score: 90] AI導入による人員削減が期待通りの効果を上げず、むしろ裏目に出ている。 / 多くの企業がAIで削減した人員を密かに再雇用している状況が示唆される。 / AIの限界と人間の労働力の価値が再認識されている可能性が高い。 (Source: Reddit)</description>
+      <pubDate>Tue, 03 Nov 2026 08:19:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI Evals: エージェントの「完了」を信用するのをやめる</title>
+      <link>https://dev.to/arif_sefa_f2d991d373eb93e/ai-evals-stop-trusting-your-agents-done-334d</link>
+      <guid isPermaLink="false">https://dev.to/arif_sefa_f2d991d373eb93e/ai-evals-stop-trusting-your-agents-done-334d</guid>
+      <description>[Score: 90] AIエージェントはタスクを完了したと報告しても、それが正しく実行されたとは限りません。 / Evals（評価）は、AIエージェントがタスクを正確に完了したかを確認するための重要な手法です。 / 特に自律型エージェントやマルチエージェントワークフローにおいて、Evalsの実装がAIエンジニアリングの鍵となります。 (Source: Dev.to)</description>
+      <pubDate>Tue, 03 Nov 2026 12:42:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>Text-to-SQLの再考: 大規模言語モデルのアーキテクチャと戦略に関する調査</title>
+      <link>https://arxiv.org/abs/2611.00171</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.00171</guid>
+      <description>[Score: 90] Text-to-SQLタスクにおける大規模言語モデル（LLM）のアーキテクチャと戦略に関する包括的な調査です。 / 自然言語からSQLクエリを生成する技術の現状と将来の方向性を分析しています。 / データベース操作の自動化や自然言語インターフェースの発展に大きく貢献する可能性を秘めています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 03 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Anthropicがゲームクローン防止のため新しいClaude Codeの制限を確認 — ユーザーはOpus 5.5もリバースエンジニアリングタスクを積極的にブロックしていると報告</title>
       <link>https://www.reddit.com/r/technology/comments/1xlwaqx/anthropic_confirms_new_claude_code_limits_to/</link>
       <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xlwaqx/anthropic_confirms_new_claude_code_limits_to/</guid>
@@ -117,34 +145,6 @@
       <guid isPermaLink="false">https://zenn.dev/koheiwada/articles/houritsu-japanese-laws-as-git</guid>
       <description>[Score: 88] 日本の全法令をGitリポジトリで管理し、改正履歴をdiffで追えるようにする試みです。 / e-Gov法令API v2を元にRustで変換プログラムを作成し、法令の変更点を視覚化します。 / これにより、複雑な法令改正の経緯や影響範囲を容易に把握できるようになります。 (Source: はてなブックマーク)</description>
       <pubDate>Mon, 02 Nov 2026 05:17:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
-      <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
-      <description>[Score: 85] オラクルが「Oracle App Composer」を発表し、社員がAIを使って業務アプリケーションを自動生成し、Oracle Cloud上で共有可能になります。 / チャット形式でアプリ内容を指示するだけで、OpenAIのCodexがコードを生成し、セキュリティチェック後にデプロイされます。 / 生成されたアプリは情報部門が一括管理でき、利用状況の把握や廃止も容易になります。 (Source: Publickey)</description>
-      <pubDate>Wed, 28 Oct 2026 15:39:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>Octoverse: 2026年にコミットとプッシュが過去最高を記録、開発者はエージェントと共に構築</title>
-      <link>https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</guid>
-      <description>[Score: 85] 2026年のGitHubでのコードプッシュ数は179億回に達し、2024年と2025年を合わせたよりも多く、過去最高を記録しました。 / この成長の背景には、開発者がAIエージェントを試用から実用へと移行させ、共に作業するようになったことが挙げられます。 / Octoverseレポートは、AIモデルの進化と、ヘルスケアから農業まで多岐にわたる分野での開発活動の拡大を強調しています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 28 Oct 2026 16:07:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>弊社がAIでPlaywrightテストコードを生成するために調整したこと</title>
-      <link>https://zenn.dev/castingone_dev/articles/casone_playwright_for_claude</link>
-      <guid isPermaLink="false">https://zenn.dev/castingone_dev/articles/casone_playwright_for_claude</guid>
-      <description>[Score: 85] AIでPlaywrightテストコードを生成する際に直面した品質問題と、その解決のために行った調整について解説しています。 / 初期のAI生成コードに多く見られた不要な固定待機（waitForTimeout）の問題を指摘し、Playwrightの自動待機機能を活用するルールを導入しました。 / 要素の出現待ちや状態確認など、状態ベースの待機を明示的に実装する具体的なガイドラインが示されています。 (Source: Zenn)</description>
-      <pubDate>Mon, 02 Nov 2026 02:58:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>Intel株の暴落が悪化、3.5兆ドルのチップ市場の低迷が拡大</title>
-      <link>https://www.reddit.com/r/technology/comments/1xm9jey/the_intel_stock_collapse_is_getting_worse_and_the/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xm9jey/the_intel_stock_collapse_is_getting_worse_and_the/</guid>
-      <description>[Score: 85] Intelの株価が大幅に下落しており、その影響が半導体市場全体に波及している状況です。 / 3.5兆ドル規模のチップ市場全体が低迷期に入りつつあることが示唆されています。 / 半導体業界の経済状況と主要企業の動向に関する懸念が報じられています。 (Source: Reddit)</description>
-      <pubDate>Mon, 02 Nov 2026 21:07:07 +0000</pubDate>
     </item>
   </channel>
 </rss>
