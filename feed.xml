@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 04 Nov 2026 01:20:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 12:58:05 +0000</lastBuildDate>
     <item>
       <title>私のラップトップ上のQwen 3.8 27Bもモデルの重みを解釈できる</title>
       <link>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</link>
@@ -19,6 +19,27 @@
       <guid isPermaLink="false">https://disconinja.hatenablog.com/entry/2026/11/03/230647</guid>
       <description>[Score: 95] アダルト動画サイトのHTMLに、非表示iframeとJavaScriptを動的に追加する情報窃取スクリプトが確認されました。 / Cookie、Web Storage、IndexedDB、キー入力、フォーム、Web3プロバイダー、ブラウザ指紋など、広範な情報を収集しようとします。 / 特に偽MetaMask画面を用いたウォレット資産移転要求が実装されており、深刻なセキュリティリスクを提示しています。 (Source: はてなブックマーク)</description>
       <pubDate>Tue, 03 Nov 2026 17:23:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenCode+Docker+GitHub Actionsで全自動AIペネトレーションテストはじめました</title>
+      <link>https://zenn.dev/team_zenn/articles/opencode-docker-actions-ai-pentest</link>
+      <guid isPermaLink="false">https://zenn.dev/team_zenn/articles/opencode-docker-actions-ai-pentest</guid>
+      <description>[Score: 95] ZennチームがAIを活用したセキュリティチェックの仕組みを構築し、全自動AIペネトレーションテストを毎週GitHub Actionsで実施しています。 / Pull RequestごとのAIレビューと、OpenCode、Docker、OSSツールを組み合わせた自動ペネトレーションテストを紹介。 / サイバー攻撃激化に対応するため、人間による診断では追いつかない現状への対策として、AIの活用が強調されています。 (Source: Zenn)</description>
+      <pubDate>Wed, 04 Nov 2026 01:19:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>ハッカーがフランスの血液プラズマ冷凍庫を乗っ取り、温度設定を-30°Cから110°Cに変更</title>
+      <link>https://www.reddit.com/r/technology/comments/1xnf7mc/hackers_hijacked_french_blood_plasma_freezers/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xnf7mc/hackers_hijacked_french_blood_plasma_freezers/</guid>
+      <description>[Score: 95] フランスの血液プラズマ冷凍庫がハッカーに乗っ取られ、温度設定が異常値に変更された。 / 医療インフラに対するサイバー攻撃の深刻な脅威が浮き彫りになった。 / 人命に関わるシステムへのセキュリティ対策の重要性が再認識される。 (Source: Reddit)</description>
+      <pubDate>Wed, 04 Nov 2026 04:44:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>中国メーカー、出荷前のAndroid端末に犯罪用のバックドアを設置か Googleが取引停止</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/04/2000002884/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/04/2000002884/</guid>
+      <description>[Score: 95] 中国のOEM/ODMメーカーVideostrong Technologyが、出荷前のAndroid端末に遠隔操作可能なバックドア「x.cpe」を意図的に組み込み、犯罪者にアクセス権を販売していたことが発覚しました。 / Googleは同社との取引を停止し、Google認証済みAndroid端末の製造・販売を禁じました。この不正ソフトは広告詐欺や不正な通信中継などに悪用され、130万台以上の端末が影響を受けました。 / Googleは国際的な協力のもとボットネット「XCPE」の運用を妨害し、再発防止のため審査プロセスを強化するとしています。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 04 Nov 2026 10:13:30 +0000</pubDate>
     </item>
     <item>
       <title>【未来を解説】AIでエンジニア格差を生み出す質とスピードの考え方</title>
@@ -77,6 +98,27 @@
       <pubDate>Tue, 03 Nov 2026 15:16:22 +0000</pubDate>
     </item>
     <item>
+      <title>HNに伝える：Geminiは購読者（個人アカウント）のチャット履歴も学習している</title>
+      <link>https://news.ycombinator.com/item?id=50363461</link>
+      <guid isPermaLink="false">https://news.ycombinator.com/item?id=50363461</guid>
+      <description>[Score: 90] GoogleのAIモデルGeminiが、有料購読者を含む個人アカウントのチャット履歴を学習データとして利用しているとの情報が共有されました。 / これはユーザーのプライバシーに関する懸念を引き起こす可能性があります。 / AIサービスの利用規約やデータポリシーの透明性が改めて問われる事態です。 (Source: Hacker News)</description>
+      <pubDate>Wed, 04 Nov 2026 10:10:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>SigLIP2に匹敵する画像エンコーダーをフルスクラッチで開発した話</title>
+      <link>https://zenn.dev/noetra_techblog/articles/0cea39ce67d2c2</link>
+      <guid isPermaLink="false">https://zenn.dev/noetra_techblog/articles/0cea39ce67d2c2</guid>
+      <description>[Score: 90] NoetraがフィジカルAI実現に向け、国産マルチモーダルLLMの基盤技術として画像エンコーダーをフルスクラッチ開発しました。 / 非公開データに依存しない透明性と安全性を確保し、英語ベンチマークでSigLIP2と同等、日本語・中国語でより高い性能を達成。 / 大規模画像・テキストデータ収集から学習手法、モデル構造まで詳細に解説し、マルチモーダルLLMへの適用結果も示しています。 (Source: Zenn)</description>
+      <pubDate>Wed, 04 Nov 2026 05:42:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>良品計画 クレカ番号の全桁 約109万件が漏えいのおそれ | NHKニュース</title>
+      <link>https://news.web.nhk/newsweb/na/nd-20261104de70494</link>
+      <guid isPermaLink="false">https://news.web.nhk/newsweb/na/nd-20261104de70494</guid>
+      <description>[Score: 90] 良品計画で約109万件のクレジットカード番号全桁が漏えいした可能性があると発表された。 / 大規模な個人情報漏えい事件であり、顧客への影響が懸念される。 / 企業のセキュリティ対策の不備と、その社会的責任が問われる事態。 (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 04 Nov 2026 09:17:59 +0000</pubDate>
+    </item>
+    <item>
       <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
       <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
@@ -103,48 +145,6 @@
       <guid isPermaLink="false">https://webkit.org/blog/18541/introducing-adaptive-dark-mode/</guid>
       <description>[Score: 85] Safari 27.3ベータ版でアダプティブダークモードが導入されました。 / これにより、ダークモードをサポートしないウェブサイトも自動的にダーク表示に変換されます。 / ユーザーは一貫したダークモード体験を享受できるようになります。 (Source: Hacker News)</description>
       <pubDate>Tue, 03 Nov 2026 21:39:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>Aurora とDynamoDBとTimestreamとBigQueryを2400万レコードで性能比較してみた</title>
-      <link>https://zenn.dev/ncdc/articles/c47df2c1f32e0c</link>
-      <guid isPermaLink="false">https://zenn.dev/ncdc/articles/c47df2c1f32e0c</guid>
-      <description>[Score: 85] 2400万レコードのデータを用いて、Aurora、DynamoDB、Timestream、BigQueryのDB性能比較を行った記事です。 / IoTセンサーデータの蓄積を想定し、各DBの読み取り系クエリの処理時間を比較検証しています。 / DB選定の難しさや、ベンチマークにおける注意点、各DBの特性に関する知見が共有されています。 (Source: Zenn)</description>
-      <pubDate>Tue, 03 Nov 2026 09:39:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>「⚪︎⚪︎はしないで」は効かない？AI Agentの危険行動を制限する5つの方法と守られる強さで比べた</title>
-      <link>https://qiita.com/songchong/items/945479177d4dcbb80f69?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/945479177d4dcbb80f69?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AIエージェントの危険行動を制限する5つの方法について、その効果の強さを比較検証した記事です。 / 「〜しないで」という禁止命令だけでは不十分であり、代替コマンドの提示やシステム設定、フックの利用などが有効と結論付けています。 / APIキーなどの機密情報を扱う際のAIエージェントの安全な運用方法について、具体的な実験結果と考察が示されています。 (Source: Qiita)</description>
-      <pubDate>Tue, 03 Nov 2026 19:35:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>英国のフィンテック企業Revolut、Claudeを廃止し自社ホスティングに移行することでAIコーディングコストを10分の1に削減</title>
-      <link>https://www.reddit.com/r/technology/comments/1xn6grp/british_fintech_revolut_slashes_ai_coding_costs/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xn6grp/british_fintech_revolut_slashes_ai_coding_costs/</guid>
-      <description>[Score: 85] 英国のフィンテック企業Revolutが、AIコーディングコストを大幅に削減しました。 / 外部AIサービスClaudeの利用を停止し、自社ホスティングに切り替えたことが要因です。 / これにより、コストを10分の1に抑えることに成功し、効率的なAI活用モデルを示しました。 (Source: Reddit)</description>
-      <pubDate>Tue, 03 Nov 2026 21:56:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub、より高度なコードレビューを行う「Copilot Code Review Max」発表。GitHub Universe 2026</title>
-      <link>https://www.publickey1.jp/blog/26/githubcopilot_code_review_maxgithub_universe_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/githubcopilot_code_review_maxgithub_universe_2026.html</guid>
-      <description>[Score: 85] GitHubは「GitHub Universe 2026」で、より高度なコードレビュー機能「Copilot Code Review Max」を発表しました。 / これは複数のAIモデルと独立したレビューエージェントを活用し、従来のCopilot Code Reviewよりも詳細なレビューを提供します。 / AI生成コードの増加に伴い、ソフトウェア品質維持のためのコードレビューの重要性が高まっています。 (Source: Publickey)</description>
-      <pubDate>Tue, 03 Nov 2026 15:14:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>DevArmoryを開発しました：15の日常的な開発ツール（JSON、コード差分、cURL-to-code、SQL、JWT）がブラウザで100%動作します。</title>
-      <link>https://dev.to/jarrod_avery_cc3497036525/i-built-devarmory-15-everyday-dev-tools-json-code-diff-curl-to-code-sql-jwt-running-100-in-2o3p</link>
-      <guid isPermaLink="false">https://dev.to/jarrod_avery_cc3497036525/i-built-devarmory-15-everyday-dev-tools-json-code-diff-curl-to-code-sql-jwt-running-100-in-2o3p</guid>
-      <description>[Score: 85] DevArmoryは、JSON整形、コード差分、cURL変換、SQL、JWTツールなど15種類の開発ツールを提供します。 / これらのツールはすべてブラウザ上で完結し、サーバーへのデータアップロードは一切ありません。 / オフラインでも動作し、完全に無料で利用できるため、開発者の日常業務を効率化します。 (Source: Dev.to)</description>
-      <pubDate>Wed, 04 Nov 2026 01:13:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>生成 AI が進化する今こそ、「人材育成」が経営の重要課題ではないか</title>
-      <link>https://qiita.com/Takashi_Masumori/items/3c3091a6142d3e05385b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Takashi_Masumori/items/3c3091a6142d3e05385b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] 生成AIの進化に伴い、企業における人材育成の重要性が増していると指摘。 / AIを使いこなすには専門性、判断力、伝える力が不可欠であり、マネジメントの延長線上にあると提言。 / AIによる生産性向上と人材育成のバランスが、将来の組織力に影響すると警鐘を鳴らす。 (Source: Qiita)</description>
-      <pubDate>Sun, 01 Nov 2026 23:53:15 +0000</pubDate>
     </item>
   </channel>
 </rss>

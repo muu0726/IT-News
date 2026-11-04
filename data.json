@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-04T10:19:44.157764+09:00",
-  "total_count": 48,
-  "success_count": 48,
+  "generated_at": "2026-11-04T21:57:03.490743+09:00",
+  "total_count": 79,
+  "success_count": 79,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -48,7 +48,69 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 254
+      "hatena_count": 518
+    },
+    {
+      "title": "OpenCode+Docker+GitHub Actionsで全自動AIペネトレーションテストはじめました",
+      "url": "https://zenn.dev/team_zenn/articles/opencode-docker-actions-ai-pentest",
+      "source": "Zenn",
+      "published": "2026-11-04T01:19:56+00:00",
+      "reading_min": 12,
+      "summary": "ZennチームがAIを活用したセキュリティチェックの仕組みを構築し、全自動AIペネトレーションテストを毎週GitHub Actionsで実施しています。\nPull RequestごとのAIレビューと、OpenCode、Docker、OSSツールを組み合わせた自動ペネトレーションテストを紹介。\nサイバー攻撃激化に対応するため、人間による診断では追いつかない現状への対策として、AIの活用が強調されています。",
+      "tags": [
+        "AIセキュリティ",
+        "DevSecOps",
+        "GitHub Actions"
+      ],
+      "category": "セキュリティ",
+      "score": 95,
+      "score_reason": "AIを活用した全自動ペネトレーションテストは、現代のサイバー攻撃の激化に対応する先進的なDevSecOpsの取り組みであり、技術的新規性、実用性、業界への影響度が高く非常に重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 52
+    },
+    {
+      "title": "ハッカーがフランスの血液プラズマ冷凍庫を乗っ取り、温度設定を-30°Cから110°Cに変更",
+      "url": "https://www.reddit.com/r/technology/comments/1xnf7mc/hackers_hijacked_french_blood_plasma_freezers/",
+      "source": "Reddit",
+      "published": "2026-11-04T04:44:17+00:00",
+      "summary": "フランスの血液プラズマ冷凍庫がハッカーに乗っ取られ、温度設定が異常値に変更された。\n医療インフラに対するサイバー攻撃の深刻な脅威が浮き彫りになった。\n人命に関わるシステムへのセキュリティ対策の重要性が再認識される。",
+      "tags": [
+        "サイバー攻撃",
+        "医療システム",
+        "IoTセキュリティ"
+      ],
+      "category": "セキュリティ",
+      "score": 95,
+      "score_reason": "医療インフラへのサイバー攻撃は人命に直結する重大な脅威であり、IoTデバイスのセキュリティの脆弱性を浮き彫りにした点で極めて重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "中国メーカー、出荷前のAndroid端末に犯罪用のバックドアを設置か Googleが取引停止",
+      "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002884/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-04T10:13:30+00:00",
+      "reading_min": 4,
+      "summary": "中国のOEM/ODMメーカーVideostrong Technologyが、出荷前のAndroid端末に遠隔操作可能なバックドア「x.cpe」を意図的に組み込み、犯罪者にアクセス権を販売していたことが発覚しました。\nGoogleは同社との取引を停止し、Google認証済みAndroid端末の製造・販売を禁じました。この不正ソフトは広告詐欺や不正な通信中継などに悪用され、130万台以上の端末が影響を受けました。\nGoogleは国際的な協力のもとボットネット「XCPE」の運用を妨害し、再発防止のため審査プロセスを強化するとしています。",
+      "tags": [
+        "セキュリティ",
+        "Android",
+        "バックドア"
+      ],
+      "category": "セキュリティ",
+      "score": 95,
+      "score_reason": "サプライチェーンにおける深刻なセキュリティ侵害であり、広範なユーザーに影響を与えるため、IT業界全体にとって非常に重要なニュースである。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 74
     },
     {
       "title": "【未来を解説】AIでエンジニア格差を生み出す質とスピードの考え方",
@@ -69,7 +131,7 @@
       "new_at": "2026-11-02T22:26:18.204079+09:00",
       "first_seen": "2026-11-02T22:26:18.204079+09:00",
       "is_hot": false,
-      "hatena_count": 0,
+      "hatena_count": 1,
       "is_prev_seen": true,
       "topic_group": 2,
       "topic_size": 2
@@ -93,7 +155,7 @@
       "new_at": "2026-11-02T09:42:44.361319+09:00",
       "first_seen": "2026-11-02T09:42:44.361319+09:00",
       "is_hot": false,
-      "hatena_count": 46,
+      "hatena_count": 48,
       "is_prev_seen": true,
       "topic_group": 1,
       "topic_size": 5
@@ -227,9 +289,72 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 24,
+      "hatena_count": 37,
       "topic_group": 1,
       "topic_size": 5
+    },
+    {
+      "title": "HNに伝える：Geminiは購読者（個人アカウント）のチャット履歴も学習している",
+      "url": "https://news.ycombinator.com/item?id=50363461",
+      "source": "Hacker News",
+      "published": "2026-11-04T10:10:27+00:00",
+      "hn_score": 124,
+      "hn_comments": 41,
+      "summary": "GoogleのAIモデルGeminiが、有料購読者を含む個人アカウントのチャット履歴を学習データとして利用しているとの情報が共有されました。\nこれはユーザーのプライバシーに関する懸念を引き起こす可能性があります。\nAIサービスの利用規約やデータポリシーの透明性が改めて問われる事態です。",
+      "tags": [
+        "Gemini",
+        "Privacy",
+        "AI Ethics"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "大手AIモデルによるユーザーデータ学習はプライバシー侵害の可能性があり、AI倫理やデータガバナンスに関する重要な議論を提起するため、非常に高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "SigLIP2に匹敵する画像エンコーダーをフルスクラッチで開発した話",
+      "url": "https://zenn.dev/noetra_techblog/articles/0cea39ce67d2c2",
+      "source": "Zenn",
+      "published": "2026-11-04T05:42:59+00:00",
+      "reading_min": 8,
+      "summary": "NoetraがフィジカルAI実現に向け、国産マルチモーダルLLMの基盤技術として画像エンコーダーをフルスクラッチ開発しました。\n非公開データに依存しない透明性と安全性を確保し、英語ベンチマークでSigLIP2と同等、日本語・中国語でより高い性能を達成。\n大規模画像・テキストデータ収集から学習手法、モデル構造まで詳細に解説し、マルチモーダルLLMへの適用結果も示しています。",
+      "tags": [
+        "AI",
+        "マルチモーダルLLM",
+        "画像エンコーダー"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "国産のマルチモーダルLLM基盤技術として、既存の高性能モデルに匹敵する画像エンコーダーをフルスクラッチで開発した点は、技術的新規性と実用性が高く評価されます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "良品計画 クレカ番号の全桁 約109万件が漏えいのおそれ | NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261104de70494",
+      "source": "はてなブックマーク",
+      "published": "2026-11-04T09:17:59+00:00",
+      "summary": "良品計画で約109万件のクレジットカード番号全桁が漏えいした可能性があると発表された。\n大規模な個人情報漏えい事件であり、顧客への影響が懸念される。\n企業のセキュリティ対策の不備と、その社会的責任が問われる事態。",
+      "tags": [
+        "情報漏えい",
+        "クレジットカード",
+        "セキュリティインシデント"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "大規模なクレジットカード情報漏えいは、多くの個人に直接的な被害をもたらす可能性があり、企業のセキュリティ対策の重要性を改めて示す点で非常に重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 253
     },
     {
       "title": "オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026",
@@ -318,7 +443,7 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 2
     },
     {
       "title": "Aurora とDynamoDBとTimestreamとBigQueryを2400万レコードで性能比較してみた",
@@ -401,7 +526,7 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 24,
+      "hatena_count": 34,
       "topic_group": 1,
       "topic_size": 5
     },
@@ -422,6 +547,92 @@
       "analysis_status": "ok",
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIが40年分の技術的負債の解消を迫る",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "source": "Hacker News",
+      "published": "2026-11-04T11:52:17+00:00",
+      "hn_score": 150,
+      "hn_comments": 58,
+      "reading_min": 5,
+      "summary": "AIの進化により、過去40年間にわたって蓄積されたレガシーソフトウェアの技術的負債が露呈しています。\n最近発見されたPHP2Shellの脆弱性は、AI時代におけるサイバーセキュリティの新たな脅威を示唆しています。\nAIを活用した攻撃は、既存の脆弱性を悪用し、大規模なシステムに影響を与える可能性があります。",
+      "tags": [
+        "AI",
+        "Cybersecurity",
+        "Technical Debt"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "AIが既存の技術的負債を悪用する新たなセキュリティリスクを提示しており、業界全体に大きな影響を与える可能性があるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "どっちが人間？ AIで声をクローンして、本人と聞き比べてみた",
+      "url": "https://qiita.com/nakata-sapeet/items/f883c3cf009785c51bcc?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-04T00:30:10+00:00",
+      "reading_min": 7,
+      "summary": "AI音声クローンアプリ「VoiceStudio」を使用し、本人の声とAIが生成した声を比較検証。\n15秒の録音から感情表現まで真似るAIの精度に驚き。\nクラウドサービス不要で手元のMacで動作する手軽さも特徴。",
+      "tags": [
+        "AI音声合成",
+        "VoiceStudio",
+        "音声クローン"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIによる音声クローン技術の進化と、その手軽な利用方法が示されており、今後の応用範囲の広さから高い重要性を持つ。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ローカルAI最強エンジン「Strata」初心者向けガイド【チャットAIで動画やマンガを自動生成】 | ちもろぐ",
+      "url": "https://chimolog.co/strata-guide/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-04T09:44:17+00:00",
+      "reading_min": 31,
+      "summary": "ローカル生成AIの推論エンジン「Strata」の初心者向けガイドが公開され、その使い方と「凄さ」が解説されています。\nStrataは、クラウドAIに近い性能を持つオープンウェイトモデルをローカルPCで利用可能にし、月額費用なしで使い放題というコストパフォーマンスの高さが特徴です。\nクラウドAIの「ガードレール」や「検閲」といった社会的制約を受けずに、成年向けコンテンツやセキュリティ監査など、幅広いタスクでAIを自由に活用できる点が強調されています。",
+      "tags": [
+        "ローカルAI",
+        "生成AI",
+        "Strata"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "ローカルAIの普及を促進する技術であり、クラウドAIの制約を回避できる点で、AI利用の新たな可能性を広げるため重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 66
+    },
+    {
+      "title": "OnePassAppsのスタイルシート: 403のカスタムプロパティ、コンテナクエリ、強制カラー",
+      "url": "https://dev.to/onepassapps/the-onepassapps-stylesheet-403-custom-properties-container-queries-and-forced-colours-5de5",
+      "source": "Dev.to",
+      "published": "2026-11-04T12:54:40+00:00",
+      "reading_min": 3,
+      "summary": "この記事では、OnePassAppsのライブサイトで実際に使用されているCSSスタイルシートを詳細に分析しています。\n403のCSSカスタムプロパティ、コンテナクエリ、可変フォントの使用など、最新のCSS技術が駆使されています。\nパフォーマンス最適化と保守性の高い設計思想が読み取れる、実践的なフロントエンド開発の事例です。",
+      "tags": [
+        "CSS",
+        "Frontend",
+        "Web Development"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 85,
+      "score_reason": "最新のCSS技術（カスタムプロパティ、コンテナクエリ、可変フォント）の実践的な使用例が詳細に分析されており、フロントエンド開発者にとって非常に参考になるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -487,7 +698,9 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 2
     },
     {
       "title": "E2Eテスト大全（あなたの知らない、E2Eテスト周辺の理論）",
@@ -508,7 +721,7 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 183
+      "hatena_count": 562
     },
     {
       "title": "薄く・軽く。画質も「プロ級」になった新iPad mini【西田宗千佳のRandomTracking】",
@@ -529,7 +742,49 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 61
+      "hatena_count": 99
+    },
+    {
+      "title": "NIKKE PCランチャーのサプライチェーン攻撃、IT学生が自分のPCを調べてみた",
+      "url": "https://zenn.dev/nanana_sk/articles/nikke-launcher-incident",
+      "source": "Zenn",
+      "published": "2026-11-04T02:23:44+00:00",
+      "reading_min": 7,
+      "summary": "NIKKE PC版ランチャーへのサプライチェーン攻撃について、IT学生が自身のPCを調査した記録です。\n攻撃者のスクリプトは読み込まれたものの、遠隔操作ツールの実行痕跡は見つからなかったと報告。\nインシデント発生時の初動対応、アカウント保護、PC調査の手順が具体的に解説されています。",
+      "tags": [
+        "サプライチェーン攻撃",
+        "セキュリティ調査",
+        "マルウェア"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "実際のサプライチェーン攻撃事例に対する個人レベルでの詳細な調査と対応記録であり、セキュリティ意識向上と実用的な対策に役立つため高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "マッキンゼーが国に納品した資料2,446ページ、全部数えたらパターンは7つだけだった｜うちた",
+      "url": "https://note.com/uchita_success/n/nfc53d1ef5f81",
+      "source": "はてなブックマーク",
+      "published": "2026-11-03T15:24:33+00:00",
+      "reading_min": 29,
+      "summary": "マッキンゼーが国に納品した2,446ページもの資料を分析した結果、使われている資料のパターンはわずか7種類であることが判明しました。\n一流のコンサルタントは、多くのフレームワークを使いこなすのではなく、基本的な型を深く使いこなすことに長けていると筆者は考察しています。\nAIを活用して全ページを分析し、そのパターンを言語化して再現プロンプトも作成されており、コンサル資料作成の効率化に役立つ知見が提供されています。",
+      "tags": [
+        "コンサルティング",
+        "資料作成",
+        "AI活用"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 80,
+      "score_reason": "一流コンサルの資料作成術を具体的なデータに基づき分析しており、ビジネスパーソンにとって実践的な価値が高い。AIによる分析手法も興味深い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 352
     },
     {
       "title": "PatchScout: 情報探索によるテーマ別Webデータ収集",
@@ -638,7 +893,7 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 55
+      "hatena_count": 66
     },
     {
       "title": "AIの「ゴッドファーザー」ジェフリー・ヒントン、AIがない方が人類は良かったかもしれないと語る",
@@ -679,7 +934,7 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 85
+      "hatena_count": 158
     },
     {
       "title": "世界最高のAIが実際の仕事でわずか12%のスコアを記録",
@@ -699,6 +954,94 @@
       "analysis_status": "ok",
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "プルリクエスト、Git操作、およびIssueに関するインシデント",
+      "url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
+      "source": "Hacker News",
+      "published": "2026-11-04T10:00:06+00:00",
+      "hn_score": 115,
+      "hn_comments": 56,
+      "reading_min": 2,
+      "summary": "GitHubでプルリクエスト、Git操作、およびIssueに影響を与えるインシデントが発生しました。\n一部のAPIリクエストやGit操作でエラーや断続的な障害が報告されましたが、現在は緩和されています。\nGitHubはインシデントを解決し、安定性を監視しており、詳細な根本原因分析を後日共有する予定です。",
+      "tags": [
+        "GitHub",
+        "Incident",
+        "Git"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 75,
+      "score_reason": "GitHubのサービス障害は多くの開発者に直接影響を与えるため重要度が高く、迅速な対応と解決が評価されるためこのスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ISUCON2026で126,634点でした",
+      "url": "https://zenn.dev/o8n/articles/isucon2026-app-agent-retrospective",
+      "source": "Zenn",
+      "published": "2026-11-04T01:46:01+00:00",
+      "reading_min": 12,
+      "summary": "ISUCON2026に参加し、126,634点を獲得したチームの振り返り記事です。\n題材はSNS「ISUReal」で、複数リージョンとDB構成におけるデータ配置が鍵となる問題でした。\n事前の準備、当日の戦略、ハーネスの活用、そしてClaude CodeなどのAIツールの利用状況が詳細に記述されています。",
+      "tags": [
+        "ISUCON",
+        "パフォーマンスチューニング",
+        "Go"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 75,
+      "score_reason": "ISUCONという実践的な競技プログラミングの事例であり、パフォーマンスチューニングやインフラ構築のノウハウが詳細に共有されているため、実用性が高く評価されます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 2
+    },
+    {
+      "title": "精度が低下する前にインプットドリフトを検出する：PSIウォークスルー",
+      "url": "https://dev.to/mr_thankyou_58b14997d0c77/catching-input-drift-before-accuracy-falls-a-psi-walkthrough-pm7",
+      "source": "Dev.to",
+      "published": "2026-11-04T12:55:39+00:00",
+      "reading_min": 4,
+      "summary": "デプロイされた機械学習モデルは、コードや重みを変更しなくても、入力データの変化（インプットドリフト）により性能が低下する可能性があります。\nこの記事では、モデルの精度が低下する前にインプットドリフトを早期に検出する手法として、Population Stability Index (PSI) を用いてライブ入力の分布を基準ウィンドウと比較する方法を解説しています。\nPSIは、モデルのパフォーマンス監視と組み合わせて使用することで、問題の早期発見と対応を可能にし、モデルの信頼性を維持するために重要です。",
+      "tags": [
+        "機械学習",
+        "モデル監視",
+        "データドリフト"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "機械学習モデルの運用において不可欠なデータドリフト検出手法を具体的に解説しており、実用的な価値が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "機能グループの知識は、話される前に言語モデル内で構造化されている",
+      "url": "https://arxiv.org/abs/2611.03684",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-04T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、言語モデルが機能グループの知識を、それが表現される前に内部で構造化していることを示唆しています。\narXivLabsの紹介文のみが提供されており、具体的な研究内容は不明です。\n言語モデルの内部メカニズムと知識表現に関する基礎研究と考えられます。",
+      "tags": [
+        "AI",
+        "Natural Language Processing",
+        "Language Models"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "言語モデルの内部動作、特に知識表現に関する基礎的な研究であり、今後のAI開発の理解を深める上で重要な示唆を与える可能性があるため、高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -872,6 +1215,112 @@
       "hatena_count": 0
     },
     {
+      "title": "Nvidia RTX Sparkの暗号化ファームウェアがLinuxでの推論速度を35%に低下させる",
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "source": "Hacker News",
+      "published": "2026-11-04T08:46:29+00:00",
+      "hn_score": 186,
+      "hn_comments": 99,
+      "reading_min": 6,
+      "summary": "Nvidia RTX Spark搭載ノートPCはLinuxでも動作しますが、電源接続時にGPUクロックが大幅に制限されます。\nこれにより、Windowsと比較してAI推論速度が最大35%まで低下し、開発者の利用に大きな支障をきたします。\n原因はLinuxが読み取れない電力管理ファームウェアにあり、AI開発者にとってOS選択の課題となっています。",
+      "tags": [
+        "Nvidia",
+        "Linux",
+        "AI Inference"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 70,
+      "score_reason": "Nvidiaの最新ハードウェアがLinux環境で性能を発揮できない問題は、AI開発コミュニティにとって重要な課題であり、今後の対応が注目されるためこのスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "テキサス州知事選の結果がデータセンターのリスクを高め、AI株が下落",
+      "url": "https://www.reddit.com/r/technology/comments/1xnh94y/ai_stocks_slide_as_texas_governor_result_raises/",
+      "source": "Reddit",
+      "published": "2026-11-04T06:38:50+00:00",
+      "summary": "テキサス州知事選の結果が、データセンター関連のリスクを高めるとの懸念からAI関連株が下落した。\n特定の州の政治結果が、AI産業のインフラ投資に影響を与える可能性が示唆される。\nAI技術の発展には安定したインフラが不可欠であり、そのリスクが顕在化した。",
+      "tags": [
+        "AI株",
+        "データセンター",
+        "政治リスク"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "AI産業の成長を支えるデータセンターへの政治的リスクが顕在化し、AI関連株価に直接影響を与えた点で、業界への影響度が大きい。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "決定論的エージェント vs 自律型エージェント",
+      "url": "https://dev.to/bfdev/deterministic-vs-autonomous-agents-2iee",
+      "source": "Dev.to",
+      "published": "2026-11-04T12:56:05+00:00",
+      "reading_min": 2,
+      "summary": "筆者はユーザーのカレンダー管理を行う自律型エージェントシステムを構築しましたが、データベースへの頻繁なアクセスと大量のコンテキスト送信により、コストと効率の面で失敗しました。\nこの経験から、単一の自律型AI脳ではなく、複数のAIゲートやスイッチがそれぞれのツールを管理し、メッセージをルーティングする「決定論的システム」を設計しました。\nこの新しいアーキテクチャは、AIのシステムに対する自律性を原則的に減らすことで、より持続可能でコスト効率の良いエージェントシステムを実現することを目指しています。",
+      "tags": [
+        "AIエージェント",
+        "システムアーキテクチャ",
+        "コスト最適化"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIエージェントの設計における重要な課題と解決策を提示しており、実用的なAIシステム開発に役立つ知見を提供している。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "私たちはAIによってより良い開発者になっているのか？",
+      "url": "https://dev.to/mounir_maimouni_f8ba2fb19/are-we-better-developers-with-ai-2a51",
+      "source": "Dev.to",
+      "published": "2026-11-04T12:54:15+00:00",
+      "reading_min": 1,
+      "summary": "AIがコード生成や問題解決を助ける中で、開発者は本当にスキルアップしているのかという問いを投げかけています。\nAIを単なるコピーペーストツールとして使うのではなく、問題解決能力を高めるために活用すべきだと主張しています。\nAIとの協業における開発者の役割と成長について、深い議論を促す内容です。",
+      "tags": [
+        "AI",
+        "Developer Productivity",
+        "Software Engineering"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIが開発プロセスに与える影響と、開発者自身の成長に関する本質的な問いを提起しており、今後の開発者のあり方を考える上で重要な視点を提供しているため、このスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "LOLPlay: リーグ・オブ・レジェンドにおけるリアルタイム視覚エージェントのベンチマーク",
+      "url": "https://arxiv.org/abs/2611.03685",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-04T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、人気ゲーム「リーグ・オブ・レジェンド」におけるリアルタイム視覚エージェントのベンチマークに関する研究「LOLPlay」を紹介しています。\nゲームAIの性能評価と、複雑なゲーム環境での視覚情報処理能力の向上に焦点を当てています。\narXivLabsの紹介文が本文抜粋として提供されていますが、記事の主要な内容はLOLPlayに関するものです。",
+      "tags": [
+        "Game AI",
+        "Reinforcement Learning",
+        "Computer Vision"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "ゲームAIの進化とリアルタイム視覚処理のベンチマークは、AI研究において新規性と実用性があり、今後のAI開発に影響を与える可能性があるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "営業こそコミュニティでは「No sell」でいよう",
       "url": "https://qiita.com/sadabon444/items/83535ce9f3dd7d56600e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
@@ -936,7 +1385,7 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "Aterm設定画面、「PHP使ってないのに.php」なぜ？ NECに聞いた",
@@ -957,7 +1406,7 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 150
+      "hatena_count": 352
     },
     {
       "title": "バイリンガルAIメニューとパッケージラベルのための印刷対応チェックリスト",
@@ -977,6 +1426,113 @@
       "analysis_status": "ok",
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "検証は知識ではない：科学には答え以上のものが必要",
+      "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
+      "source": "Hacker News",
+      "published": "2026-11-04T09:01:58+00:00",
+      "hn_score": 87,
+      "hn_comments": 45,
+      "reading_min": 14,
+      "summary": "科学におけるAIの役割について、人間による理解とAIが導き出す答えの間の緊張関係が議論されています。\nAIが正確な答えを生成しても、その過程や原理を人間が理解することの重要性が強調されています。\n科学の進歩には、単なる検証可能な結果だけでなく、人間の洞察と理解が不可欠であると主張されています。",
+      "tags": [
+        "AI Ethics",
+        "Science",
+        "Knowledge"
+      ],
+      "category": "AI・機械学習",
+      "score": 65,
+      "score_reason": "AIの科学分野への応用における哲学的な議論であり、技術的な新規性よりも倫理的・概念的な側面が強いため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "5000以上の期末広告の地図",
+      "url": "https://admap.org/",
+      "source": "Hacker News",
+      "published": "2026-11-04T12:18:35+00:00",
+      "hn_score": 17,
+      "hn_comments": 2,
+      "summary": "2026年の知事選、上院選、下院選のビデオ広告をまとめた地図サイトです。\n5000以上の広告が地域やレースごとに分類されています。\n政治広告の透明性を高めるための情報提供ツールとして機能します。",
+      "tags": [
+        "政治広告",
+        "データ可視化",
+        "選挙"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "政治広告の透明性向上に貢献するデータ可視化ツールであり、社会的な意義はありますが、技術的な新規性は中程度です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "中間選挙で民主党が大勝し、データセンターの建設が減速するとの憶測で株価先物が下落",
+      "url": "https://www.reddit.com/r/technology/comments/1xnec0k/stock_futures_fall_on_speculation_democrats_to/",
+      "source": "Reddit",
+      "published": "2026-11-04T03:58:32+00:00",
+      "summary": "中間選挙での民主党大勝の憶測により、株価先物が下落した。\n民主党の政策がデータセンター建設に影響を与え、業界の成長が減速する懸念がある。\n政治動向がITインフラ投資に与える影響の大きさが示唆される。",
+      "tags": [
+        "株価",
+        "データセンター",
+        "政治"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "政治的な選挙結果がデータセンター建設という具体的なITインフラ投資に影響を与え、株価に反映された点で、業界への影響度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "15分でリードの取りこぼしを知らせる予約ツールを構築した方法",
+      "url": "https://dev.to/hadi_kashif_03cb37314f8d9/how-i-built-a-booking-tool-that-flags-a-missed-lead-in-15-minutes-915",
+      "source": "Dev.to",
+      "published": "2026-11-04T12:54:41+00:00",
+      "reading_min": 1,
+      "summary": "筆者は、サロンのリード取りこぼし問題を解決するため、15分で予約ツールを構築しました。\nこのツールは、顧客からの問い合わせを予約フォームで受け付け、すぐにフォローアップメッセージのプレビューを生成し、オーナーの受信箱に表示します。\n15分以内に対応されないリードには「取りこぼし」バッジを付けて通知することで、オーナーが迅速に対応できるよう支援し、ビジネス機会の損失を防ぎます。",
+      "tags": [
+        "Web開発",
+        "Python",
+        "業務効率化"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 65,
+      "score_reason": "小規模ビジネスの課題をシンプルなWebツールで解決する具体例であり、開発の迅速性と実用性が評価できる。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "MCPGuard: デュアルトラック分析と動的裁定によるMCP SDKの適合性ギャップの発見",
+      "url": "https://arxiv.org/abs/2611.03662",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-04T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、デュアルトラック分析と動的裁定を用いてMCP SDKの適合性ギャップを発見する「MCPGuard」について述べています。\narXivLabsの紹介文のみが提供されており、具体的な研究内容は不明です。\nSDKの品質保証やセキュリティ監査に関連する技術と考えられます。",
+      "tags": [
+        "Security",
+        "SDK",
+        "Conformance Testing"
+      ],
+      "category": "セキュリティ",
+      "score": 65,
+      "score_reason": "タイトルからSDKのセキュリティや適合性検証に関する実用的な研究であると推測されますが、本文抜粋がarXivLabsの定型文のみで具体的な内容が不明なため、やや高めのスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -1024,6 +1580,113 @@
       "hatena_count": 0
     },
     {
+      "title": "Kitty 0.50",
+      "url": "https://sw.kovidgoyal.net/kitty/changelog/#",
+      "source": "Hacker News",
+      "published": "2026-11-04T08:57:10+00:00",
+      "hn_score": 208,
+      "hn_comments": 129,
+      "reading_min": 60,
+      "summary": "GPUベースの高速ターミナルエミュレータKittyがバージョン0.50にアップデートされました。\n新機能として、ウィンドウのドッキング、セッションの保存と復元、カスタムシェーダーの公式サポートが追加されました。\nパフォーマンスも大幅に向上し、スループットが15-35%改善され、より高速なターミナル体験を提供します。",
+      "tags": [
+        "Terminal Emulator",
+        "GPU",
+        "Productivity"
+      ],
+      "category": "その他",
+      "score": 60,
+      "score_reason": "ターミナルエミュレータのアップデートとしては機能追加やパフォーマンス改善が顕著ですが、IT業界全体への影響は限定的であるため中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "中間選挙の教訓：民主党が共和党を大勝し、テクノロジー億万長者がひどい夜を過ごす",
+      "url": "https://www.reddit.com/r/technology/comments/1xnjbg9/midterm_takeaways_tech_billionaires_suffer/",
+      "source": "Reddit",
+      "published": "2026-11-04T08:49:19+00:00",
+      "summary": "中間選挙で民主党が共和党に大勝した結果、テクノロジー業界の億万長者たちが大きな影響を受けた。\n政治情勢がテクノロジー企業のビジネス環境に与える影響の大きさが示唆される。\n特に、政策変更が投資や市場に与える潜在的なリスクが浮上。",
+      "tags": [
+        "政治",
+        "テクノロジー",
+        "ビジネス"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 60,
+      "score_reason": "政治的な選挙結果がテクノロジー業界の主要人物に直接的な影響を与えたという点で、ビジネス動向として一定の重要性がある。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "アライメントの偽装はモデルだけでなく値にも依存する",
+      "url": "https://arxiv.org/abs/2611.03650",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-04T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、アライメントの偽装がモデルだけでなく、その値にも依存するという研究テーマを扱っています。\narXivLabsの紹介文のみが提供されており、具体的な研究内容は不明です。\nAIモデルの振る舞いに関する深い洞察を提供する可能性を秘めています。",
+      "tags": [
+        "AI",
+        "Machine Learning",
+        "Alignment"
+      ],
+      "category": "AI・機械学習",
+      "score": 60,
+      "score_reason": "タイトルからAIモデルの振る舞いに関する重要な研究であると推測されますが、本文抜粋がarXivLabsの定型文のみで具体的な内容が不明なため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "CARD: 相対測定グラフのための証明携行型証明書-アクションインターフェース",
+      "url": "https://arxiv.org/abs/2611.03651",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-04T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、相対測定グラフのための証明携行型証明書-アクションインターフェース「CARD」について論じています。\narXivLabsの紹介文のみが提供されており、具体的な研究内容は不明です。\nセキュリティやデータ検証の分野で応用される可能性のある技術です。",
+      "tags": [
+        "Security",
+        "Graph Theory",
+        "Verification"
+      ],
+      "category": "セキュリティ",
+      "score": 60,
+      "score_reason": "タイトルからセキュリティやデータ検証に関する高度な技術研究であると推測されますが、本文抜粋がarXivLabsの定型文のみで具体的な内容が不明なため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ジェリーシート",
+      "url": "https://mrdoob.github.io/codevember-2026/01/",
+      "source": "Hacker News",
+      "published": "2026-11-04T03:40:50+00:00",
+      "hn_score": 301,
+      "hn_comments": 77,
+      "summary": "Codevember 2006のプロジェクト「Jelly Sheet」が公開されました。\nプラスチックの準備をする様子が描かれています。\nシンプルなアニメーションやインタラクションのデモンストレーションと推測されます。",
+      "tags": [
+        "Codevember",
+        "Animation",
+        "Web実験"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 40,
+      "score_reason": "古いCodevemberの作品であり、技術的な新規性や業界への影響は限定的であるため、スコアは低めです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-04T21:57:03.490743+09:00",
+      "first_seen": "2026-11-04T21:57:03.490743+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
       "title": "2026年の日本の「地味な」ハロウィンコスチューム",
       "url": "https://spoon-tamago.com/japan-jimi-mundane-halloween-costumes-2026/",
       "source": "Hacker News",
@@ -1044,23 +1707,23 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 3
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-04T10:19:44.157764+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-04T21:57:03.490743+09:00",
     "summary_lines": [
-      "AI・機械学習分野では、LLMのローカル実行やRAGの進化が注目されます。",
-      "バックエンド・インフラでは、GitHubの大幅な性能向上やDB比較が話題です。",
-      "セキュリティ面では、情報窃取スクリプトやAIエージェントの安全対策が重要です。"
+      "AIモデルの内部構造解析や新しいRAG技術が登場し、AI開発が加速しています。",
+      "サイバー攻撃が医療システムやAndroid端末に及び、セキュリティ脅威が深刻化しています。",
+      "GitHubがAIエージェント時代に向けた大幅な性能向上を発表しました。"
     ],
     "focus_tags": [
       "AI",
-      "LLM",
-      "GitHub",
       "セキュリティ",
-      "Database"
+      "LLM",
+      "サイバー攻撃",
+      "GitHub"
     ]
   }
 }
