@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-05T10:27:36.401297+09:00",
-  "total_count": 47,
-  "success_count": 47,
-  "error_count": 0,
+  "generated_at": "2026-11-05T22:08:35.248243+09:00",
+  "total_count": 75,
+  "success_count": 53,
+  "error_count": 22,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
     {
@@ -11,8 +11,8 @@
       "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
       "source": "Hacker News",
       "published": "2026-11-04T23:33:14+00:00",
-      "hn_score": 71,
-      "hn_comments": 49,
+      "hn_score": 406,
+      "hn_comments": 284,
       "reading_min": 18,
       "summary": "OpenAIは、Linuxカーネルの脆弱性を自律的に発見、悪用、パッチ適用するパイプラインを開発しました。\nこのシステムは、948件のローカル権限昇格の脆弱性を特定し、パッチを生成しました。\nセキュリティ研究の自動化は、脆弱性対応の効率を大幅に向上させる可能性を秘めています。",
       "tags": [
@@ -27,7 +27,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 3
     },
     {
       "title": "AI駆動開発の次の段階: ソフトウェアファクトリー",
@@ -48,7 +48,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": true,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "SigLIP2に匹敵する画像エンコーダーをフルスクラッチで開発した話",
@@ -91,7 +91,7 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 39,
+      "hatena_count": 41,
       "topic_group": 1,
       "topic_size": 5,
       "is_prev_seen": true
@@ -124,8 +124,8 @@
       "url": "https://openai.com/index/introducing-images-2-6/",
       "source": "Hacker News",
       "published": "2026-11-04T23:35:44+00:00",
-      "hn_score": 74,
-      "hn_comments": 60,
+      "hn_score": 331,
+      "hn_comments": 198,
       "reading_min": 4,
       "summary": "ChatGPT、Codex、APIにImages 2.6が導入され、画像生成が50%高速化されました。\nGIFアニメーションの生成や、編集時のキャラクター・製品の一貫性維持など、より高度な制御が可能になります。\nFlareとSunburstの2つのモデルが提供され、品質と速度に応じて選択できます。",
       "tags": [
@@ -140,7 +140,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 4
     },
     {
       "title": "Ripple-65B Preview: エージェント型コーディングで米国オープンウェイトSOTAを達成",
@@ -186,7 +186,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 2
     },
     {
       "title": "極端なデータスパース性シナリオにおける精密腫瘍学臨床ワークフローのためのEdge-to-Cloudスウォーム協調",
@@ -208,6 +208,48 @@
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "データ転送量が約4倍となる新規格「Bluetooth HDT」正式承認。ロスレスオーディオの標準化へ - PHILE WEB",
+      "url": "https://www.phileweb.com/news/d-av/202611/05/66309.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-05T06:36:03+00:00",
+      "reading_min": 3,
+      "summary": "Bluetooth SIGが、データ転送量が約4倍となる新規格「Bluetooth HDT（High Data Throughput）」を正式に承認しました。\nこの新規格は、ロスレスオーディオの標準化を可能にし、高音質ワイヤレスオーディオ体験を向上させます。\n通信効率の向上により、バッテリー消費の削減や通信安定性の強化も期待されます。",
+      "tags": [
+        "Bluetooth HDT",
+        "ロスレスオーディオ",
+        "ワイヤレス通信"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 90,
+      "score_reason": "Bluetoothの主要な進化であり、ワイヤレスオーディオ市場に大きな影響を与え、高音質化と利便性向上に貢献するため、非常に高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-05T22:08:35.248243+09:00",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 90
+    },
+    {
+      "title": "「勝利の女神：NIKKE」のPCランチャー経由の不正プログラム配布についてまとめてみた - piyolog",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/05/133509",
+      "source": "はてなブックマーク",
+      "published": "2026-11-05T04:48:15+00:00",
+      "reading_min": 6,
+      "summary": "人気ゲーム「勝利の女神：NIKKE」のPCランチャーの一部ファイルが改ざんされ、不正プログラムが配布された可能性が公表されました。\n公式CDNのスクリプトが第三者によって改ざんされ、特定のドメインへの不正な接続コードが挿入されていたとのことです。\nこのインシデントは、サプライチェーン攻撃の危険性と、ゲーム業界におけるセキュリティ対策の課題を示しています。",
+      "tags": [
+        "NIKKE",
+        "不正プログラム",
+        "サプライチェーン攻撃"
+      ],
+      "category": "セキュリティ",
+      "score": 88,
+      "score_reason": "人気ゲームのPCランチャーを介したサプライチェーン攻撃であり、多くのユーザーに影響を与える可能性と、巧妙な手口が使われているため、非常に高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-05T22:08:35.248243+09:00",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 89
     },
     {
       "title": "AIが40年分の技術的負債の解消を迫る",
@@ -274,7 +316,7 @@
       "new_at": "2026-11-04T10:19:44.157764+09:00",
       "first_seen": "2026-11-04T10:19:44.157764+09:00",
       "is_hot": false,
-      "hatena_count": 35,
+      "hatena_count": 36,
       "topic_group": 1,
       "topic_size": 5,
       "is_prev_seen": true
@@ -300,15 +342,15 @@
       "new_at": "2026-10-29T08:16:51.279560+09:00",
       "is_prev_seen": true,
       "first_seen": "2026-10-29T08:16:51.279560+09:00",
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "ホワイトハウスのネットワークで住宅用プロキシが検出される",
       "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
       "source": "Hacker News",
       "published": "2026-11-04T20:45:18+00:00",
-      "hn_score": 614,
-      "hn_comments": 197,
+      "hn_score": 1145,
+      "hn_comments": 372,
       "reading_min": 2,
       "summary": "Layer3 Intelの観測により、ホワイトハウスのネットワーク（AS2650）で住宅用プロキシの利用が確認されました。\nこれは、デバイスがプロキシSDKに感染している可能性を示唆しており、夜間の活動パターンから個人による利用が疑われます。\nこの事実は、誰でも数ドルで利用できる公開プロキシサービスを通じて偶然発見されました。",
       "tags": [
@@ -365,7 +407,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 3
     },
     {
       "title": "[AWS]日本語OCRがついにきちゃー！ ~Textractにいろいろ読ませてみた~",
@@ -407,7 +449,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 20
+      "hatena_count": 70
     },
     {
       "title": "GitHub Copilot Dreaming」発表。作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理、アップデート。GitHub Universe 2026",
@@ -431,6 +473,26 @@
       "hatena_count": 2,
       "topic_group": 1,
       "topic_size": 5
+    },
+    {
+      "title": "三井住友G保証会社 個人情報最大32万人分漏えい 住所や年収も | NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261105de71024",
+      "source": "はてなブックマーク",
+      "published": "2026-11-05T08:11:57+00:00",
+      "summary": "三井住友フィナンシャルグループの保証会社で、最大32万人分の個人情報が漏えいしたことが明らかになりました。\n漏えいした情報には、住所や年収といった機密性の高いデータも含まれているとのことです。\nこの事態は、企業のセキュリティ対策の重要性と、個人情報保護の課題を改めて浮き彫りにしています。",
+      "tags": [
+        "個人情報漏えい",
+        "セキュリティ",
+        "三井住友"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "大規模な個人情報漏えい事件であり、金融機関の信頼性やセキュリティ対策の重要性に警鐘を鳴らすため、非常に高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-05T22:08:35.248243+09:00",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 68
     },
     {
       "title": "生成 AI が進化する今こそ、「人材育成」が経営の重要課題ではないか",
@@ -475,7 +537,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "AIにいきなり実装させない — kintoneカスタマイズ開発Skillのヒアリング設計",
@@ -517,7 +579,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 62
+      "hatena_count": 377
     },
     {
       "title": "ElevenLabsでAIポッドキャストジェネレーターを作成する",
@@ -537,6 +599,26 @@
       "analysis_status": "ok",
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "サム・アルトマン、AIの進歩のために社会は「悪いこと」を受け入れるべきだと発言し、激しい反発に直面",
+      "url": "https://www.reddit.com/r/technology/comments/1xo9x5p/sam_altman_faces_fierce_backlash_after_saying/",
+      "source": "Reddit",
+      "published": "2026-11-05T04:49:00+00:00",
+      "summary": "OpenAIのCEOサム・アルトマンが、AIの進歩のためには社会が「悪いこと」を受け入れる必要があると発言し、激しい批判を浴びています。\nこの発言は、AI開発における倫理的側面と、その社会への影響に関する議論を再燃させました。\nAIの安全性と進歩のバランスについて、改めて問いかけられる形となっています。",
+      "tags": [
+        "Sam Altman",
+        "AI倫理",
+        "OpenAI"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AI開発の倫理的側面と社会受容に関する重要な議論を提起しており、AI業界のリーダーの発言として大きな影響力を持つため、高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-05T22:08:35.248243+09:00",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -644,7 +726,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 83
+      "hatena_count": 187
     },
     {
       "title": "HAProxyのメトリクスは、統計パスが理解されている場合にのみ有用である",
@@ -731,7 +813,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "娘とのクイズ遊びをアプリにしたら、日本語の奥深さを体感した話",
@@ -793,7 +875,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 24
+      "hatena_count": 56
     },
     {
       "title": "GEDからSIGADへ：Laravel、Vue、PostgreSQLにおけるアーキテクチャの決定",
@@ -813,6 +895,26 @@
       "analysis_status": "ok",
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Googleの巨大なミネソタAIデータセンター、2つの市議会が抗議で閉鎖された後、承認される",
+      "url": "https://www.reddit.com/r/technology/comments/1xo77az/googles_massive_minnesota_ai_data_center_got/",
+      "source": "Reddit",
+      "published": "2026-11-05T02:29:20+00:00",
+      "summary": "Googleがミネソタ州に建設予定の巨大なAIデータセンターが、住民の抗議活動により2度の市議会が中止された後、最終的に承認されました。\nこのデータセンターは、GoogleのAIインフラ拡大に不可欠な施設となる見込みです。\n地域社会と大規模テクノロジー企業の開発計画との間の摩擦が浮き彫りになっています。",
+      "tags": [
+        "Google",
+        "データセンター",
+        "AIインフラ"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "GoogleのAIインフラ拡大と、それに伴う地域社会との摩擦を示す事例であり、AIの発展における物理的基盤の重要性を考慮し、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-05T22:08:35.248243+09:00",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -921,7 +1023,27 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 54
+      "hatena_count": 330
+    },
+    {
+      "title": "ゾーラン・マムダニ市長、学校が検索とAIを分離できないと告げられた後、Googleを非難",
+      "url": "https://www.reddit.com/r/technology/comments/1xo75pk/mayor_zohran_mamdani_blasts_google_after_schools/",
+      "source": "Reddit",
+      "published": "2026-11-05T02:27:12+00:00",
+      "summary": "ゾーラン・マムダニ市長が、学校がGoogle検索とAI機能を分離できないというGoogleの決定を強く批判しました。\nこの問題は、教育現場におけるAIの統合と、その管理に関する懸念を浮き彫りにしています。\nGoogleのAI戦略が、公共機関に与える影響について議論が巻き起こっています。",
+      "tags": [
+        "Google",
+        "AI",
+        "教育"
+      ],
+      "category": "AI・機械学習",
+      "score": 65,
+      "score_reason": "教育現場におけるAI利用のガバナンスに関する問題提起であり、GoogleのAI戦略の社会的な影響を示すため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-05T22:08:35.248243+09:00",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "アライメントの偽装はモデルだけでなく値にも依存する",
@@ -1006,7 +1128,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 36
+      "hatena_count": 102
     },
     {
       "title": "テキサス州が民主党支持に転じ、テック業界の富豪たちは悲しむ",
@@ -1027,22 +1149,384 @@
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "Sshole",
+      "url": "https://sshhole.com",
+      "source": "Hacker News",
+      "published": "2026-11-05T12:19:02+00:00",
+      "hn_score": 207,
+      "hn_comments": 32,
+      "reading_min": 4,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "Baidu released ERNIE 5.5 Flash Base",
+      "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+      "source": "Hacker News",
+      "published": "2026-11-05T09:29:12+00:00",
+      "hn_score": 89,
+      "hn_comments": 39,
+      "reading_min": 9,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Awesome repositories are no longer awesome",
+      "url": "https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/",
+      "source": "Hacker News",
+      "published": "2026-11-05T11:16:51+00:00",
+      "hn_score": 77,
+      "hn_comments": 37,
+      "reading_min": 3,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Lemmings CSS Animation",
+      "url": "https://markblah.github.io/lemmings/",
+      "source": "Hacker News",
+      "published": "2026-11-05T04:54:10+00:00",
+      "hn_score": 256,
+      "hn_comments": 49,
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "OpenSSH 10.6p2 Critical workaround for alpine without PAM",
+      "url": "https://www.openssh.org/releasenotes.html#10.6p2",
+      "source": "Hacker News",
+      "published": "2026-11-05T11:40:30+00:00",
+      "hn_score": 10,
+      "hn_comments": 1,
+      "reading_min": 60,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Xで積み重ねた日々をmixi2へ。過去ポストのインポート機能ができるまで",
+      "url": "https://zenn.dev/mixi/articles/bcf2363e83b0a2",
+      "source": "Zenn",
+      "published": "2026-11-05T04:29:39+00:00",
+      "reading_min": 11,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "Siri AIにアプリをつなぎ、振る舞いを評価する",
+      "url": "https://zenn.dev/d_date/articles/e8e2c5d53b424e",
+      "source": "Zenn",
+      "published": "2026-11-05T03:51:50+00:00",
+      "reading_min": 35,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "Editorはもう古い。新ロールへ安全に移る768試行",
+      "url": "https://zenn.dev/acntechjp/articles/zenn-gcp-basic-roles-migration",
+      "source": "Zenn",
+      "published": "2026-11-04T14:13:58+00:00",
+      "reading_min": 12,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "レガシーVBA処理をWSL×C#でモダンに再構築した話",
+      "url": "https://zenn.dev/nickelth/articles/vbatocsharponwsl",
+      "source": "Zenn",
+      "published": "2026-11-04T13:02:11+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Stored Procedureはじめました。データベースのパフォーマンスリスクを可視化するDB360がついにGA！",
+      "url": "https://qiita.com/nr_ishibashi/items/20fd011c21cd671ffb54?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-05T07:38:27+00:00",
+      "reading_min": 3,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Oracle AI World 2026 振り返り：Larry Ellison、Sam Altmanらの6講演から、AIに仕事を任せる仕組みを整理してみてみた",
+      "url": "https://qiita.com/shirok/items/8225fd0ff29603549ab8?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-03T22:40:08+00:00",
+      "reading_min": 35,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "そろそろ共通鍵暗号・公開鍵暗号についてちゃんと理解する",
+      "url": "https://qiita.com/tomo-ryo/items/7cbf2881a9c8c8cf3656?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-04T00:40:41+00:00",
+      "reading_min": 13,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "The PHP2Shell Postmortem: What CVE-2026-109618 and CVE-2026-109619 Actually Tell Us",
+      "url": "https://dev.to/the_dev_stack/the-php2shell-postmortem-what-cve-2026-109618-and-cve-2026-109619-actually-tell-us-10lp",
+      "source": "Dev.to",
+      "published": "2026-11-05T13:02:00+00:00",
+      "reading_min": 5,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "5 Common Security Mistakes in Python Scripts and How to Avoid Them",
+      "url": "https://dev.to/sergio_gmez_9533652d3b3c/5-common-security-mistakes-in-python-scripts-and-how-to-avoid-them-3b1c",
+      "source": "Dev.to",
+      "published": "2026-11-05T13:01:44+00:00",
+      "reading_min": 2,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Cisco ISE CVE-2026-20241 turns certificate issuance into an authorization decision",
+      "url": "https://dev.to/andreagomez/cisco-ise-cve-2026-20241-turns-certificate-issuance-into-an-authorization-decision-22km",
+      "source": "Dev.to",
+      "published": "2026-11-05T13:01:40+00:00",
+      "reading_min": 4,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Don't Let Claude Review Claude's Code. Models That Think Alike Make the Same Mistakes",
+      "url": "https://dev.to/gabrielanhaia/dont-let-claude-review-claudes-code-models-that-think-alike-make-the-same-mistakes-55bp",
+      "source": "Dev.to",
+      "published": "2026-11-05T13:01:23+00:00",
+      "reading_min": 7,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Three ways into a client's on-prem server, and where the client's switch sits",
+      "url": "https://dev.to/panthpatel/three-ways-into-a-clients-on-prem-server-and-where-the-clients-switch-sits-1dj7",
+      "source": "Dev.to",
+      "published": "2026-11-05T13:01:05+00:00",
+      "reading_min": 3,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions",
+      "url": "https://arxiv.org/abs/2611.05390",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-05T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Agent Harness Awareness: Turning Verified Telemetry into Operational Control for Tool-Using Agents",
+      "url": "https://arxiv.org/abs/2611.05391",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-05T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Uncertainty-Aware Resource Orchestration for Agentic AI Systems",
+      "url": "https://arxiv.org/abs/2611.05392",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-05T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Challenge-Aware Knowledge Recruitment with Meta-Agent Supervision for Medical Multi-Agent Reasoning",
+      "url": "https://arxiv.org/abs/2611.05393",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-05T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "A Feasibility Condition for Confidence-Gated Tiered LLM Inference",
+      "url": "https://arxiv.org/abs/2611.05394",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-05T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-05T22:08:35.248243+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-05T10:27:36.401297+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-05T22:08:35.248243+09:00",
     "summary_lines": [
-      "ルートへのパスを1000少なくする（Hacker News・スコア95）",
-      "AI駆動開発の次の段階: ソフトウェアファクトリー（Qiita・スコア95）",
-      "Images 2.6（Hacker News・スコア90）"
+      "AI駆動開発と大規模言語モデルの進化がソフトウェア開発の未来を形作っています。",
+      "セキュリティ分野では、Linuxカーネルの脆弱性対策とサプライチェーン攻撃への警戒が重要です。",
+      "Bluetooth HDTの承認により、ロスレスオーディオのワイヤレス通信が標準化されます。"
     ],
     "focus_tags": [
-      "LLM",
-      "AI",
-      "AI Model",
       "AI駆動開発",
-      "AWS"
+      "LLM",
+      "Vulnerability",
+      "Bluetooth HDT",
+      "サプライチェーン攻撃"
     ]
   }
 }
