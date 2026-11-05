@@ -482,4 +482,146 @@ def test_fetch_hackernews_preserves_story_order(monkeypatch):
     assert [a["title"] for a in res] == ["HN-101", "HN-102", "HN-103"]
 
 
+def test_extract_github_repo():
+    # URL 判定
+    assert gather.extract_github_repo("https://github.com/facebook/react") == "facebook/react"
+    assert gather.extract_github_repo("https://github.com/astral-sh/uv/releases/tag/0.1.0") == "astral-sh/uv"
+    assert gather.extract_github_repo("https://github.com/torvalds/linux.git") == "torvalds/linux"
+    # 予約語の除外
+    assert gather.extract_github_repo("https://github.com/features") is None
+    assert gather.extract_github_repo("https://github.com/pricing") is None
+    # 本文テキストからの抽出
+    body = "詳細は https://github.com/huggingface/transformers を参照してください。"
+    assert gather.extract_github_repo("https://example.com/article", body) == "huggingface/transformers"
+
+
+def test_batch_analysis_schema_and_item_mapping():
+    props = gather.BATCH_ANALYSIS_SCHEMA["items"]["properties"]
+    required = gather.BATCH_ANALYSIS_SCHEMA["items"]["required"]
+    assert "actionable_takeaway" in props
+    assert "github_repo" in props
+    assert "actionable_takeaway" in required
+    assert "github_repo" in required
+
+
+def test_generate_rss_feed_category_and_overall(tmp_path, monkeypatch):
+    feed_file = tmp_path / "feed.xml"
+    monkeypatch.setattr(gather, "FEED_FILE", str(feed_file))
+
+    cat_feeds = {
+        str(tmp_path / "feed_ai.xml"): {
+            "title": "IT Info Hub — AI・機械学習",
+            "description": "AI関連",
+            "categories": ["AI・機械学習"],
+            "top_n": 10,
+        },
+        str(tmp_path / "feed_security.xml"): {
+            "title": "IT Info Hub — セキュリティ",
+            "description": "セキュリティ関連",
+            "categories": ["セキュリティ"],
+            "top_n": 10,
+        },
+    }
+    monkeypatch.setattr(gather, "CATEGORY_FEEDS", cat_feeds)
+
+    articles = [
+        {
+            "title": "AI Article",
+            "url": "https://example.com/ai",
+            "category": "AI・機械学習",
+            "score": 95,
+            "summary": "AI summary",
+            "actionable_takeaway": "Try the new model weights",
+            "github_repo": "owner/ai-repo",
+            "published": "2026-11-01T00:00:00+00:00",
+        },
+        {
+            "title": "Sec Article",
+            "url": "https://example.com/sec",
+            "category": "セキュリティ",
+            "score": 88,
+            "summary": "Sec summary",
+            "actionable_takeaway": "Update lockfile immediately",
+            "published": "2026-11-01T01:00:00+00:00",
+        },
+    ]
+
+    gather.generate_rss_feed(articles)
+
+    assert feed_file.exists()
+    feed_content = feed_file.read_text(encoding="utf-8")
+    assert "AI Article" in feed_content
+    assert "Sec Article" in feed_content
+    assert "実務示唆: Try the new model weights" in feed_content
+
+    ai_feed = tmp_path / "feed_ai.xml"
+    assert ai_feed.exists()
+    ai_content = ai_feed.read_text(encoding="utf-8")
+    assert "AI Article" in ai_content
+    assert "Sec Article" not in ai_content
+
+    sec_feed = tmp_path / "feed_security.xml"
+    assert sec_feed.exists()
+    sec_content = sec_feed.read_text(encoding="utf-8")
+    assert "Sec Article" in sec_content
+    assert "AI Article" not in sec_content
+
+
+def test_parse_iso_datetime():
+    # 有効な ISO8601 UTC
+    dt = gather.parse_iso_datetime("2026-11-05T12:30:00Z")
+    assert dt is not None
+    assert dt.year == 2026 and dt.month == 11 and dt.day == 5 and dt.hour == 12
+
+    # タイムゾーンオフセット付き
+    dt_jst = gather.parse_iso_datetime("2026-11-05T21:30:00+09:00")
+    assert dt_jst is not None
+    assert dt_jst.utcoffset().total_seconds() == 9 * 3600
+
+    # 無効な入力
+    assert gather.parse_iso_datetime("") is None
+    assert gather.parse_iso_datetime(None) is None
+    assert gather.parse_iso_datetime("invalid-date-string") is None
+
+
+def test_format_pub_date():
+    # 有効な日時文字列
+    tag = gather.format_pub_date("2026-11-05T12:00:00Z")
+    assert "<pubDate>" in tag
+    assert "2026" in tag
+
+    # 空文字・無効文字の場合は空文字
+    assert gather.format_pub_date("") == ""
+    assert gather.format_pub_date("not-a-date") == ""
+
+
+def test_post_webhook_success(monkeypatch):
+    called = []
+    class DummyResponse:
+        status_code = 200
+        text = "ok"
+
+    def fake_post(url, json=None, headers=None, timeout=None):
+        called.append((url, json, headers, timeout))
+        return DummyResponse()
+
+    monkeypatch.setattr(gather.requests, "post", fake_post)
+    res = gather.post_webhook("https://example.com/webhook", {"msg": "hello"}, "TestWebhook")
+    assert res is True
+    assert len(called) == 1
+    assert called[0][0] == "https://example.com/webhook"
+    assert called[0][1] == {"msg": "hello"}
+    assert called[0][2]["Content-Type"] == "application/json"
+
+
+def test_post_webhook_failure(monkeypatch):
+    class DummyResponse:
+        status_code = 500
+        text = "internal error"
+
+    monkeypatch.setattr(gather.requests, "post", lambda *a, **k: DummyResponse())
+    assert gather.post_webhook("https://example.com/webhook", {}, "FailedWebhook") is False
+
+    # 空 URL の場合はリクエストせず False
+    assert gather.post_webhook("", {}, "EmptyUrl") is False
 

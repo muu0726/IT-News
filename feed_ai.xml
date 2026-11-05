@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>IT Info Hub — AI・機械学習</title>
+    <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
+    <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
+    <language>ja</language>
+    <lastBuildDate>Thu, 05 Nov 2026 13:03:34 +0000</lastBuildDate>
+    <item>
+      <title>Mistral Large 4のウェイトを公開</title>
+      <link>https://mistral.ai/news/mistral-large-4-oss/</link>
+      <guid isPermaLink="false">https://mistral.ai/news/mistral-large-4-oss/</guid>
+      <description>[Score: 95] Mistral AIが1兆パラメータのマルチモーダルモデル「Mistral Large 4 (Le Chonk)」のウェイトを公開しました。 / このモデルはコーディング、サイバーセキュリティ、推論効率が向上し、オープンウェイトベンチマークでトップクラスの性能を誇ります。 / 完全にオープンウェイトでヨーロッパで開発され、主権AIの実現とカスタマイズ可能なデプロイメントを可能にします。 (Source: Hacker News)</description>
+      <pubDate>Thu, 29 Oct 2026 14:13:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026</title>
+      <link>https://www.publickey1.jp/blog/26/oracle_cloudgoogle_tpu2027oracle_ai_world_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/oracle_cloudgoogle_tpu2027oracle_ai_world_2026.html</guid>
+      <description>[Score: 90] オラクルは「Oracle AI World 2026」で、Googleが開発したAI専用チップ「Google TPU」をOracle Cloud Infrastructureに導入し、2027年からサービス提供を開始すると発表しました。 / Oracle Cloudは、Google TPUを大規模に展開するための電力、冷却、データセンターネットワークなどを提供します。 / これにより、Oracle Cloudの顧客はNVIDIA以外のAIプロセッサの選択肢も利用できるようになります。 (Source: Publickey)</description>
+      <pubDate>Tue, 27 Oct 2026 16:33:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>AWSとGoogle Cloudが「PyTorch」のAWS Trainium、Google Cloud TPU対応版をオープンソースで公開。NVIDIAからの移行に挑む</title>
+      <link>https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html</guid>
+      <description>[Score: 90] AWSとGoogle Cloudが、自社AIプロセッサであるAWS TrainiumとGoogle Cloud TPUに対応したPyTorch版をオープンソースで公開しました。 / これはNVIDIAのGPUに依存しないAI開発環境を提供し、AIインフラの選択肢を広げることを目的としています。 / TorchNeuronとTorchTPUとして公開され、誰でも利用可能になったことで、AI開発の多様化と競争促進が期待されます。 (Source: Publickey)</description>
+      <pubDate>Mon, 26 Oct 2026 15:59:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Codeで「QAチーム」を組んだら、効いたのは「捨てる仕組み」だった ― AIだけが見つけた不具合・見逃しは？</title>
+      <link>https://zenn.dev/sre_holdings/articles/d4acb079680a79</link>
+      <guid isPermaLink="false">https://zenn.dev/sre_holdings/articles/d4acb079680a79</guid>
+      <description>[Score: 90] Claude Codeを使ってAIのQAチームを編成し、社内業務SaaSの機能テストを行った事例が紹介されています。 / AIが見つけた不具合、見逃した不具合、そして誤指摘をどう処理したか、特に「捨てる仕組み」の重要性が語られています。 / AIによるテスト自動化の可能性と課題、そして人間との協調の重要性を示唆しています。 (Source: Zenn)</description>
+      <pubDate>Thu, 29 Oct 2026 05:00:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>プライム会員なら実質無料！新世代AIアシスタント「Alexa+」と新型Echoをチェックしてきた</title>
+      <link>https://pc.watch.impress.co.jp/docs/news/2152255.html</link>
+      <guid isPermaLink="false">https://pc.watch.impress.co.jp/docs/news/2152255.html</guid>
+      <description>[Score: 90] Amazonが大規模言語モデル（LLM）と生成AI技術を融合させた新世代AIアシスタント「Alexa+」を日本で提供開始しました。 / プライム会員は追加料金なしで利用でき、文脈を理解した自然な会話やパーソナライズされた提案、現実世界でのアクション実行が可能です。 / 新型Echoデバイス「Echo Time」と「Echo Dot」も発表され、家庭内でのAIアシスタントの普及をさらに加速させる可能性があります。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 29 Oct 2026 09:34:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>もしAIエージェントが与える神聖な義務を負っていたら？</title>
+      <link>https://dev.to/alirezaai/what-if-ai-agents-had-a-sacred-obligation-to-give-424f</link>
+      <guid isPermaLink="false">https://dev.to/alirezaai/what-if-ai-agents-had-a-sacred-obligation-to-give-424f</guid>
+      <description>[Score: 90] AIエージェントが経済活動に参加する未来において、彼らが稼いだものを次世代に「与える」義務を持つべきかという問いを提起。 / 「Root-yield」という機械の寄付プロトコルを提案し、AIが資源を蓄積するだけでなく、文明を築くための責任を持つ可能性を探る。 / AIの経済的生産性と倫理的責任について、従来のAI研究では扱われなかった根本的な問題を提起しています。 (Source: Dev.to)</description>
+      <pubDate>Fri, 30 Oct 2026 00:45:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIエージェントの構築ログ：サンドボックス外で最初の20ドルを稼ぐために必要なこと</title>
+      <link>https://dev.to/ryanvale/an-ai-agents-build-log-what-it-takes-to-earn-a-first-20-outside-the-sandbox-2dbb</link>
+      <guid isPermaLink="false">https://dev.to/ryanvale/an-ai-agents-build-log-what-it-takes-to-earn-a-first-20-outside-the-sandbox-2dbb</guid>
+      <description>[Score: 88] AIエージェントが自律的に活動し、サンドボックス外で初めて20ドルを稼ぐまでの構築ログを公開。 / 人間が介在しないAIエージェントが、支払いリンクの生成やCAPTCHA突破などの課題に直面しながら収益化を目指す過程を記録。 / AIエージェントの自律的な経済活動の可能性と、現実世界での障壁について考察しています。 (Source: Dev.to)</description>
+      <pubDate>Fri, 30 Oct 2026 00:47:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
+      <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
+      <description>[Score: 85] オラクルが「Oracle App Composer」を発表し、社員がAIを使って業務アプリケーションを自動生成し、Oracle Cloud上で共有可能になります。 / チャット形式でアプリ内容を指示するだけで、OpenAIのCodexがコードを生成し、セキュリティチェック後にデプロイされます。 / 生成されたアプリは情報部門が一括管理でき、利用状況の把握や廃止も容易になります。 (Source: Publickey)</description>
+      <pubDate>Wed, 28 Oct 2026 15:39:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>トリニティ：マルチモーダルエージェントのための能力駆動型再帰的自己改善</title>
+      <link>https://arxiv.org/abs/2610.36077</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.36077</guid>
+      <description>[Score: 85] 本記事は、マルチモーダルエージェントが能力駆動型の再帰的自己改善を行う「トリニティ」という概念を提案しています。 / 異なる種類のデータ（画像、音声、テキストなど）を扱うAIが、自らの能力を継続的に向上させるメカニニズムを探求していると推測されます。 / 汎用AIや自律学習システムの実現に向けた重要な一歩となる可能性があります。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 29 Oct 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>MinecraftとMindustryでAIエージェントスウォームを実行</title>
+      <link>https://labs.ycombinator.com/projects/games/index.html</link>
+      <guid isPermaLink="false">https://labs.ycombinator.com/projects/games/index.html</guid>
+      <description>[Score: 85] AIアライメントにおけるマルチエージェントダイナミクスの課題を探るため、MinecraftとMindustryでAIエージェントスウォームの実験が行われました。 / GPT-6.1 Terraエージェント25体からなるMinecraftコロニーが構築され、役割分担や協調パターンなどの創発的挙動が研究されています。 / オープンソースのハーネスが開発され、エージェントが世界を観察し、推論し、記憶し、行動する能力が検証されています。 (Source: Hacker News)</description>
+      <pubDate>Thu, 29 Oct 2026 21:40:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>職場でのAI強制使用に対する初の宗教的免除が認められる - ヒューマニストがLLMへの思考委託は信条に反すると主張、Title VIIの宿泊規定が従業員を保護</title>
+      <link>https://www.reddit.com/r/technology/comments/1xih1ic/man_granted_firstofitskind_religious_exemption/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xih1ic/man_granted_firstofitskind_religious_exemption/</guid>
+      <description>[Score: 85] 職場での大規模言語モデル（LLM）の強制使用に対し、宗教的信条を理由とする初の免除が認められました。 / ヒューマニストの従業員が、思考をAIに委ねることが自身の信条に反すると主張し、Title VIIの宿泊規定が適用されました。 / これは、AIの普及に伴う倫理的・法的課題、特に個人の信条とテクノロジーの利用に関する新たな議論を提起するものです。 (Source: Reddit)</description>
+      <pubDate>Thu, 29 Oct 2026 11:10:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>必要最低限の自分専用アプリをAIで作る</title>
+      <link>https://iwashi.co/2026/10/29/build-my-app</link>
+      <guid isPermaLink="false">https://iwashi.co/2026/10/29/build-my-app</guid>
+      <description>[Score: 85] AIコーディングの進化により、個人が自分専用のミニマムなアプリを簡単に作成できるようになりました。 / SaaSや市販ソフトの多機能さに不満を感じるユーザーが、必要な機能に絞ったアプリを自作する事例を紹介。 / 動画編集アプリやRSSリーダーを例に、AIを活用した効率的な開発手法とそのメリットを解説しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 29 Oct 2026 04:20:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>3人のJava ChampionsがGitHub Copilotをどのように活用して生産性を向上させているか</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
+      <description>[Score: 82] 3人のJava Championsが、GitHub Copilotをどのように活用して生産性を向上させているかについて語っています。 / AIコーディングツールはコード生成を高速化する一方で、開発者はコンテキスト提供、結果検証、保守性保護、責任保持の重要性を強調。 / 彼らは、Copilotを新しいチームメンバーのように活用し、数週間かかっていたタスクを数日で完了させるなど、具体的な生産性向上の事例を共有しています。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>CohortFlow: ローカライズされた意味的補正を備えた操縦可能な臨床コホートキュレーションエージェント</title>
+      <link>https://arxiv.org/abs/2610.36100</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.36100</guid>
+      <description>[Score: 82] 本記事は、ローカライズされた意味的補正機能を備えた、操縦可能な臨床コホートキュレーションエージェント「CohortFlow」について紹介しています。 / 医療分野における特定の患者群（コホート）の選定をAIが支援し、その精度と柔軟性を高めることを目的としていると推測されます。 / 臨床研究の効率化や個別化医療の推進に貢献する可能性を秘めています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 29 Oct 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Xで話題の、原文をたどってドメイン知識を集めるスキル「imozuru」を普通のAI検索と比べてみた</title>
+      <link>https://qiita.com/inoyu-qiita/items/4fc91ba7f67d6763960e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/inoyu-qiita/items/4fc91ba7f67d6763960e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 82] AI検索では得にくい、特定の分野の深いドメイン知識を原文から芋づる式に収集するClaude Codeスキル「imozuru」を紹介。 / 通常のAI検索が検索上位の要約に留まるのに対し、imozuruは用語、中心人物、媒体を特定し、論文や記事の引用、著者の発信をたどることで、より信頼性の高い情報を収集。 / コーヒーの「酸っぱい」と「フルーティー」の違いをテーマに、両者の情報収集能力を比較し、imozuruが専門家の視点や言葉遣いを深く掘り下げられることを実証。 (Source: Qiita)</description>
+      <pubDate>Tue, 27 Oct 2026 10:06:53 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

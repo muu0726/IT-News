@@ -1,6 +1,6 @@
 # IT Info Hub — 仕様書
 
-- **バージョン**: 3.0（2026-10-29 アップデート）
+- **バージョン**: 3.1（2026-11-05 アップデート: 実務示唆・GitHub連携・モデル環境変数化・カテゴリ別RSS・CI待機時間削減）
 - **リポジトリ**: https://github.com/muu0726/IT-News
 - **ライセンス**: MIT
 - **UIデザイン方針**: 絵文字不使用（SVGアイコン・タイポグラフィ・テキストバッジに統一）
@@ -9,25 +9,25 @@
 
 ## 1. 概要
 
-IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収集し、記事本文・OGP/JSON-LD・はてなブックマーク件数を取得したうえで **Gemini 2.5 Flash**（Structured Outputs対応）により要約・翻訳・タグ付け・カテゴリ分類・重要度スコアリング・デイリーブリーフィング生成を行い、静的サイト（PWA）として GitHub Pages 上で閲覧できるシステム。高スコアの新着記事は Discord / Slack / LINE に自動通知され、収集結果は ITニュース用 (`feed.xml`) とガジェット新製品用 (`gadget_feed.xml`) の2系統の RSS フィードとして配信される。
+IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収集し、記事本文・OGP/JSON-LD・はてなブックマーク件数を取得したうえで **Gemini 2.5 Flash**（Structured Outputs対応、環境変数 `GEMINI_MODEL` で変更可）により要約・実務示唆・GitHub連携・翻訳・タグ付け・カテゴリ分類・重要度スコアリング・デイリーブリーフィング生成を行い、静的サイト（PWA）として GitHub Pages 上で閲覧できるシステム。高スコアの新着記事は Discord / Slack / LINE に自動通知され、収集結果は ITニュース総合 (`feed.xml`)、AI・機械学習 (`feed_ai.xml`)、セキュリティ (`feed_security.xml`)、Web & インフラ (`feed_web.xml`)、ガジェット新製品 (`gadget_feed.xml`) のマルチ系統 RSS フィードとして配信される。
 
 ## 2. システム構成
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │ GitHub Actions (.github/workflows/update.yml)                 │
-│   毎日2回（JST 06:12→07:00通知 / 14:12→15:00通知）+ dispatch │
+│   毎日2回（JST 06:45→07:00通知 / 14:45→15:00通知）+ dispatch │
 │                                                               │
 │  gather.py                                                    │
 │   1. 並列収集   Hacker News API + RSS×8 (ThreadPoolExecutor)  │
 │   2. 重複除去   URL正規化（トラッキング除去・IDクエリ保持）     │
 │   3. 差分再利用 当日分 + 過去3日分の解析済み記事を再利用        │
 │   4. 本文取得   並列8ワーカーでHTML・OGP・読了時間を抽出        │
-│   5. AI解析     Gemini バッチ解析（responseSchema 強制）       │
+│   5. AI解析     Gemini バッチ解析（要約・実務示唆・GitHub連携） │
 │   6. 指標付加   複数ソースHOT加点 + はてなブックマーク一括取得  │
 │   7. 関連記事   埋め込みベクトルで同一話題をグルーピング        │
 │   8. 総括生成   朝刊/夕刊 AIデイリーブリーフィング生成          │
-│   9. 保存       data.json / archive/ / search_index / feed.xml│
+│   9. 保存       data.json / archive/ / search_index / 各種RSS │
 │  10. 通知       Discord / Slack / LINE（新規かつ score>=80）   │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -123,6 +123,8 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
       "hn_score": 48,           // HN のみ
       "hn_comments": 4,         // HN のみ
       "summary": "1行目\n2行目\n3行目",
+      "actionable_takeaway": "エンジニア実務への影響・実践的示唆",
+      "github_repo": "owner/repo", // 該当記事のみ
       "tags": ["AI", "LLM", "GPT"],
       "category": "AI・機械学習",
       "score": 85,              // 0-100
@@ -138,9 +140,9 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 
 フロントエンドは旧スキーマ（v1: `analysis_status`/`category` なし）のアーカイブも文字列マッチへのフォールバックで表示できる。
 
-### 4.8 RSS フィード出力（feed.xml）
+### 4.8 RSS フィード出力（feed.xml & カテゴリ別RSS）
 
-スコア上位 20 件を RSS 2.0 として出力。タイトル・リンク・要約（スコア付き）・pubDate を含み、全テキストは XML エスケープ済み。`index.html` の `<link rel="alternate">` からも参照される。
+総合スコア上位 20 件を `feed.xml` として出力するほか、カテゴリ別フィード（`feed_ai.xml`: AI・機械学習、`feed_security.xml`: セキュリティ、`feed_web.xml`: Web & インフラ）を自動配信。タイトル・リンク・要約・実務示唆・GitHubリンク・pubDate を含み、全テキストは XML エスケープ済み。`index.html` の `<link rel="alternate">` および設定パネルからも参照可能。
 
 ### 4.9 週間ダイジェスト（digest.json）
 
@@ -246,10 +248,10 @@ score ≥ 80 の上位 10 件を対象に、設定済みのチャネルすべて
 
 ## 6. CI/CD（.github/workflows/update.yml）
 
-- トリガー: cron `12 21 * * *`（JST 06:12 起動 → 07:00 通知）および `12 5 * * *`（JST 14:12 起動 → 15:00 通知）の 1 日 2 回 + `workflow_dispatch`
+- トリガー: cron `45 21 * * *`（JST 06:45 起動 → 07:00 通知）および `45 5 * * *`（JST 14:45 起動 → 15:00 通知）の 1 日 2 回 + `workflow_dispatch`
 - Python 3.12、pip キャッシュあり。3 ジョブ構成:
-  - **collect**（timeout 20 分、concurrency `pages`）: `pytest` → `gather.py --no-notify` → `gadget.py --no-notify`（continue-on-error）→ 通知用データを artifact 保存 → `data.json` / `archive/` / `feed.xml` / `digest.json` / `gadgets.json` / `gadget_feed.xml` を自動コミット & push → Pages デプロイ
-  - **notify**（timeout 90 分）: artifact を取得 → `gather.py --notify-only`（定期実行時は `NOTIFY_AT_JST=07:00,15:00` かつ最大 1 時間ガード付きで待機。遅延時は即時送信）→ `gadget.py --notify-only`（二重待機なし即時送信・continue-on-error）
+  - **collect**（timeout 20 分、concurrency `pages`）: `pytest` → `gather.py --no-notify` → `gadget.py --no-notify`（continue-on-error）→ 通知用データを artifact 保存 → `data.json` / `archive/` / `feed.xml` / `feed_*.xml` / `digest.json` / `gadgets.json` / `gadget_feed.xml` を自動コミット & push → Pages デプロイ
+  - **notify**（timeout 35 分）: artifact を取得 → `gather.py --notify-only`（定期実行時は `NOTIFY_AT_JST=07:00,15:00` かつ待機時間を約10分に抑えて実行。遅延時は即時送信）→ `gadget.py --notify-only`（二重待機なし即時送信・continue-on-error）
   - **alert**: collect / notify のいずれかが失敗またはキャンセルされた場合に確実に Discord アラート送信
 - Secrets: `GEMINI_API_KEY`（必須）, `DISCORD_WEBHOOK_URL` / `SLACK_WEBHOOK_URL` / `LINE_CHANNEL_ACCESS_TOKEN`（任意）
 

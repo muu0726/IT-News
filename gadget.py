@@ -40,8 +40,10 @@ from gather import (
     call_gemini_rest,
     deduplicate_articles,
     fetch_article_bodies,
+    format_pub_date,
     normalize_url,
     parse_published,
+    post_webhook,
     wait_until_notify_time,
     xml_escape,
 )
@@ -382,16 +384,7 @@ def generate_gadget_rss_feed(items: list[dict], path: str = GADGET_FEED_FILE) ->
 
     rss_items: list[str] = []
     for it in new_products:
-        pub_date = ""
-        published = it.get("published") or it.get("first_seen") or ""
-        if published:
-            try:
-                dt = datetime.fromisoformat(str(published).replace("Z", "+00:00"))
-                if dt.tzinfo is None:
-                    dt = dt.replace(tzinfo=timezone.utc)
-                pub_date = f"      <pubDate>{format_datetime(dt)}</pubDate>\n"
-            except ValueError:
-                pass
+        pub_date = format_pub_date(it.get("published") or it.get("first_seen") or "")
 
         product = it.get("product_name")
         brand = it.get("brand")
@@ -523,14 +516,7 @@ def send_gadget_discord(items: list[dict]) -> None:
         "content": f"## 最新ガジェット情報 {len(items)}件\n{GADGET_PAGE_URL}",
         "embeds": embeds,
     }
-    try:
-        resp = requests.post(webhook_url, json=payload, timeout=15)
-        if resp.status_code in (200, 204):
-            print(f"[INFO] Gadget Discord notification sent ({len(items)} items)")
-        else:
-            print(f"[WARN] Discord webhook returned {resp.status_code}: {resp.text[:120]}")
-    except requests.RequestException as e:
-        print(f"[ERROR] Gadget Discord notification failed: {e}")
+    post_webhook(webhook_url, payload, f"Gadget Discord notification ({len(items)} items)")
 
 
 def send_gadget_slack(items: list[dict]) -> None:
@@ -560,14 +546,7 @@ def send_gadget_slack(items: list[dict]) -> None:
         "type": "context",
         "elements": [{"type": "mrkdwn", "text": f"<{GADGET_PAGE_URL}|ガジェット情報ページを開く>"}],
     })
-    try:
-        resp = requests.post(webhook_url, json={"blocks": blocks}, timeout=15)
-        if resp.status_code == 200:
-            print(f"[INFO] Gadget Slack notification sent ({len(items)} items)")
-        else:
-            print(f"[WARN] Slack webhook returned {resp.status_code}: {resp.text[:120]}")
-    except requests.RequestException as e:
-        print(f"[ERROR] Gadget Slack notification failed: {e}")
+    post_webhook(webhook_url, {"blocks": blocks}, f"Gadget Slack notification ({len(items)} items)")
 
 
 def send_gadget_line(items: list[dict]) -> None:
@@ -585,19 +564,12 @@ def send_gadget_line(items: list[dict]) -> None:
         lines.append(it.get("url", ""))
         lines.append("")
     lines.append(GADGET_PAGE_URL)
-    try:
-        resp = requests.post(
-            "https://api.line.me/v2/bot/message/broadcast",
-            headers={"Content-Type": "application/json", "Authorization": f"Bearer {token}"},
-            json={"messages": [{"type": "text", "text": "\n".join(lines)[:4900]}]},
-            timeout=15,
-        )
-        if resp.status_code == 200:
-            print(f"[INFO] Gadget LINE notification sent ({len(items)} items)")
-        else:
-            print(f"[WARN] LINE API returned {resp.status_code}: {resp.text[:120]}")
-    except requests.RequestException as e:
-        print(f"[ERROR] Gadget LINE notification failed: {e}")
+    post_webhook(
+        "https://api.line.me/v2/bot/message/broadcast",
+        {"messages": [{"type": "text", "text": "\n".join(lines)[:4900]}]},
+        f"Gadget LINE notification ({len(items)} items)",
+        headers={"Authorization": f"Bearer {token}"},
+    )
 
 
 def is_generated_today(data: dict, now: datetime | None = None) -> bool:

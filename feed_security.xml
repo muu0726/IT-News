@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>IT Info Hub — セキュリティ</title>
+    <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
+    <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
+    <language>ja</language>
+    <lastBuildDate>Thu, 05 Nov 2026 13:03:34 +0000</lastBuildDate>
+    <item>
+      <title>GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！</title>
+      <link>https://zenn.dev/progate/articles/24b1140180300c</link>
+      <guid isPermaLink="false">https://zenn.dev/progate/articles/24b1140180300c</guid>
+      <description>[Score: 95] GitHub Actionsのワークフローで、アクションのバージョンを`@v7`のように指定することのセキュリティリスクについて警鐘を鳴らしています。 / 攻撃者が悪意のあるバージョンを公開する可能性があり、過去にはTrivyアクションが攻撃された事例も紹介されています。 / 解決策として、コミットのハッシュ値（SHA）指定またはlockfileの使用が推奨されています。 (Source: Zenn)</description>
+      <pubDate>Thu, 29 Oct 2026 03:48:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>Binanceハッカー1029 – Binanceから56億ドルが盗まれる</title>
+      <link>https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</link>
+      <guid isPermaLink="false">https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</guid>
+      <description>[Score: 90] Binanceから56億ドルという巨額の資金が盗難されたと報じられています。 / この事件は仮想通貨業界に大きな衝撃を与え、セキュリティ対策の重要性を改めて浮き彫りにしました。 / ハッカーの特定と資金の回収が今後の焦点となります。 (Source: Hacker News)</description>
+      <pubDate>Thu, 29 Oct 2026 21:38:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>パスキーはなぜ偽サイトに強い？登録とログインの流れを図で追う</title>
+      <link>https://qiita.com/kuma_3838/items/1781531150821e2f0491?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kuma_3838/items/1781531150821e2f0491?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] パスキーがフィッシング詐欺や情報漏洩に強い理由を、既存のログイン方式と比較しながら詳細に解説。 / 登録とログインの具体的な流れを図解し、ユーザーの手間や実装の複雑さについても言及。 / FIDO Allianceの調査データに基づき、パスキーがログイン成功率と所要時間で優れていることを示す。 (Source: Qiita)</description>
+      <pubDate>Thu, 29 Oct 2026 00:59:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>SOCケーススタディ: WinRMとPowerShell攻撃のトリアージとログ相関</title>
+      <link>https://dev.to/reyrey5/soc-case-study-winrm-powershell-attack-triage-log-correlation-14m0</link>
+      <guid isPermaLink="false">https://dev.to/reyrey5/soc-case-study-winrm-powershell-attack-triage-log-correlation-14m0</guid>
+      <description>[Score: 90] 本ケーススタディでは、不正なリモート管理攻撃の検出、トリアージ、ログ相関プロセスを解説しています。 / Wazuh SIEM、Windowsイベントログ、ファイアウォールログを多層的に利用し、攻撃者の動きを追跡しました。 / 外部からのブルートフォース攻撃から、難読化されたPowerShell実行、内部でのラテラルムーブメントまでを特定しています。 (Source: Dev.to)</description>
+      <pubDate>Fri, 30 Oct 2026 00:42:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIが書いたコードかどうかは関係ない。セキュリティは依然として重要だ。</title>
+      <link>https://dev.to/takudzwa_mavhima_41cd1419/your-code-doesnt-care-whether-ai-wrote-it-security-still-matters-2hk9</link>
+      <guid isPermaLink="false">https://dev.to/takudzwa_mavhima_41cd1419/your-code-doesnt-care-whether-ai-wrote-it-security-still-matters-2hk9</guid>
+      <description>[Score: 85] AIによるコード生成が普及する中、セキュリティレビューの重要性が増しています。 / 開発速度の向上はセキュリティの向上を意味せず、手動レビューはコストと時間がかかります。 / Aasim Guardは、AI利用の有無にかかわらず、開発者がコードのセキュリティ問題を特定できるサイバーセキュリティプラットフォームです。 (Source: Dev.to)</description>
+      <pubDate>Fri, 30 Oct 2026 00:43:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>Flock社、ミネソタ市のAI監視カメラ再設置禁止命令を無視 - 市が契約を解除したにもかかわらず、市民が2台のカメラを発見し苦情</title>
+      <link>https://www.reddit.com/r/technology/comments/1xijr1i/flock_ignores_minnesota_citys_orders_not_to/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xijr1i/flock_ignores_minnesota_citys_orders_not_to/</guid>
+      <description>[Score: 80] Flock社が、ミネソタ市によるAI監視カメラの再設置禁止命令を無視し、市民がカメラを発見して苦情を申し立てています。 / 市はFlock社との契約を解除したにもかかわらず、同社は監視カメラを再設置したと報じられています。 / これは、AI監視技術の倫理的・法的問題、プライバシー侵害、そして企業と自治体の関係における課題を浮き彫りにしています。 (Source: Reddit)</description>
+      <pubDate>Thu, 29 Oct 2026 13:18:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>バグバウンティが研究者のセキュリティスキルをいかに磨くか</title>
+      <link>https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/</link>
+      <guid isPermaLink="false">https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/</guid>
+      <description>[Score: 70] GitHubは、サイバーセキュリティ啓発月間の一環として、バグバウンティプログラムのトップセキュリティ研究者@r31nに焦点を当てています。 / AIがセキュリティ研究の参入障壁を下げ、生産性を向上させている一方で、検証、PoC、実際のセキュリティ影響の明確な実証が優れた研究の鍵であると強調。 / GitHubは、外部研究者との協力がプラットフォームのセキュリティ向上に不可欠であると考えており、質の高い発見を奨励しています。 (Source: GitHub Blog)</description>
+      <pubDate>Thu, 22 Oct 2026 17:21:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>GMO犯人捜索マップ</title>
+      <link>https://satoru.net/hacker/gmo/261029-map.html</link>
+      <guid isPermaLink="false">https://satoru.net/hacker/gmo/261029-map.html</guid>
+      <description>[Score: 65] このマップは、GMO関連のIPアドレスとアクセス履歴を追跡し、公開しない形で警察やGMOに情報を提供しているツールのようです。 / ユーザーは気になるIPアドレスをブックマークし、アクセス履歴を確認できる機能が提供されています。 / ChatGPTなどのLLMに履歴を貼り付けて分析することも推奨されており、情報収集と分析にAIを活用する可能性を示唆しています。 (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 29 Oct 2026 22:46:10 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

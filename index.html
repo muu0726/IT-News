@@ -8,7 +8,10 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#141413">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none'%3E%3Crect width='64' height='64' rx='14' fill='%23141413'/%3E%3Crect x='14' y='14' width='14' height='14' rx='3' fill='%232eaadc'/%3E%3Crect x='34' y='14' width='16' height='6' rx='2' fill='%23f7f7f5'/%3E%3Crect x='34' y='24' width='10' height='4' rx='2' fill='%238e8e93'/%3E%3Crect x='14' y='34' width='36' height='6' rx='2' fill='%23f7f7f5' opacity='0.85'/%3E%3Crect x='14' y='44' width='26' height='6' rx='2' fill='%232eaadc' opacity='0.75'/%3E%3C/svg%3E">
-  <link rel="alternate" type="application/rss+xml" title="IT Info Hub RSS" href="feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="IT Info Hub (総合)" href="feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="IT Info Hub (AI・機械学習)" href="feed_ai.xml">
+  <link rel="alternate" type="application/rss+xml" title="IT Info Hub (セキュリティ)" href="feed_security.xml">
+  <link rel="alternate" type="application/rss+xml" title="IT Info Hub (Web &amp; インフラ)" href="feed_web.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -896,18 +899,7 @@
       box-shadow: 0 0 0 2px var(--accent-subtle);
     }
 
-    /* Score-based accents */
-    .card.score-gold {
-      border-left: 3px solid var(--gold-badge);
-    }
-    .card.score-silver {
-      border-left: 3px solid var(--silver);
-    }
-    .card.is-hot {
-      border-left: 3px solid var(--hot-color);
-    }
     .card.has-error {
-      border-left: 3px solid var(--error-color);
       background: var(--error-bg);
     }
     .card.is-read {
@@ -1247,6 +1239,64 @@
     .briefing-tag:hover {
       background: var(--accent);
       color: #fff;
+    }
+
+    /* Actionable Takeaway (A-1) */
+    .card-takeaway-box {
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+      margin-bottom: 8px;
+      padding: 6px 10px;
+      background: var(--bg-secondary);
+      border-left: 2px solid var(--accent);
+      border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+      font-size: 12px;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+    .card-takeaway-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      padding: 1px 5px;
+      border-radius: var(--radius-xs);
+      background: var(--accent);
+      color: #ffffff;
+      flex-shrink: 0;
+    }
+    .card-takeaway-text {
+      flex: 1;
+    }
+
+    /* GitHub Repo Link (A-2) */
+    .github-repo-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 1px 7px;
+      border-radius: var(--radius-xs);
+      border: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.15s ease;
+      line-height: 1.4;
+      vertical-align: middle;
+    }
+    .github-repo-chip:hover {
+      border-color: var(--text-primary);
+      color: var(--text-primary);
+      background: var(--card-hover-bg);
+    }
+    .github-repo-chip svg {
+      width: 12px;
+      height: 12px;
+      fill: currentColor;
+      flex-shrink: 0;
     }
 
     /* Inline Personal Memo (A-3) */
@@ -1861,7 +1911,10 @@
             <button type="button" class="btn" id="notifyBtn">新着高スコア通知</button>
             <button type="button" class="btn" id="exportBtn">設定を書き出し</button>
             <button type="button" class="btn" id="importBtn">設定を読み込み</button>
-            <a class="btn" href="feed.xml" target="_blank" rel="noopener">RSSフィード</a>
+            <a class="btn" href="feed.xml" target="_blank" rel="noopener">RSS (総合)</a>
+            <a class="btn" href="feed_ai.xml" target="_blank" rel="noopener">RSS (AI)</a>
+            <a class="btn" href="feed_security.xml" target="_blank" rel="noopener">RSS (セキュリティ)</a>
+            <a class="btn" href="feed_web.xml" target="_blank" rel="noopener">RSS (Web/インフラ)</a>
           </div>
           <div class="panel-note">
             お気に入り・キーワード・ミュート設定・既読履歴をコードとしてコピー、または別ブラウザからインポートして統合できます。
@@ -2036,9 +2089,12 @@
 
   <!-- Footer -->
   <footer class="footer">
-    IT Info Hub — Powered by Gemini 2.5 Flash &amp; GitHub Actions ·
+    IT Info Hub — Powered by Gemini &amp; GitHub Actions ·
     <a href="gadget.html">Gadget Hub</a> ·
-    <a href="feed.xml">RSS Feed</a>
+    <a href="feed.xml">RSS (総合)</a> ·
+    <a href="feed_ai.xml">AI</a> ·
+    <a href="feed_security.xml">セキュリティ</a> ·
+    <a href="feed_web.xml">Web/インフラ</a>
   </footer>
 
   <script>
@@ -2295,6 +2351,8 @@
         const haystack = [
           art.title || '',
           art.summary || '',
+          art.actionable_takeaway || '',
+          art.github_repo || '',
           (art.tags || []).join(' '),
           extractDomain(art.url),
           art.source || '',
@@ -2316,9 +2374,11 @@
           .filter(Boolean)
           .map((l) => `  - ${l}`)
           .join('\n');
+        const takeawayLine = art.actionable_takeaway ? `\n  - 実務示唆: ${art.actionable_takeaway.replace(/\r?\n/g, ' ')}` : '';
+        const ghLine = art.github_repo ? `\n  - GitHub: https://github.com/${art.github_repo}` : '';
         const memo = getMemo(art.url);
         const memoLine = memo ? `\n  - Memo: ${memo.replace(/\r?\n/g, ' ')}` : '';
-        return `- **[${title}](${url})** (${src}${cat} / Score: ${score})${tags}${summaryLines ? '\n' + summaryLines : ''}${memoLine}`;
+        return `- **[${title}](${url})** (${src}${cat} / Score: ${score})${tags}${summaryLines ? '\n' + summaryLines : ''}${takeawayLine}${ghLine}${memoLine}`;
       }
 
       function exportVisibleToMarkdown() {
@@ -2639,24 +2699,15 @@
         renderArticles();
       }
 
-      // ── Render ──
-      function renderArticles() {
-        const dataset = currentDataset();
+      // ── Render Helpers ──
+      function applyFilters(dataset) {
         let filtered = dataset;
-
-        // Calculate muted count before applying mute filter
-        const mutedCount = mutedTerms.length ? dataset.filter((a) => isMuted(a)).length : 0;
-        $('#statMuted').textContent = mutedCount;
-        $('#statPillMuted').style.display = mutedCount > 0 ? '' : 'none';
-        $('#statPillMuted').classList.toggle('active', showMutedActive);
-
         if (mutedTerms.length && !showMutedActive) {
           filtered = filtered.filter((a) => !isMuted(a));
         }
         if (hidePrevSeen) {
           filtered = filtered.filter((a) => !a.is_prev_seen);
         }
-
         if (currentSourceFilter) {
           filtered = filtered.filter((a) => a.source === currentSourceFilter);
         }
@@ -2679,6 +2730,8 @@
             const haystack = [
               a.title || '',
               a.summary || '',
+              a.actionable_takeaway || '',
+              a.github_repo || '',
               (a.tags || []).join(' '),
               a.category || '',
               a.source || '',
@@ -2705,36 +2758,39 @@
         if (keywordFilterActive) {
           filtered = filtered.filter((a) => matchesKeywords(a));
         }
+        return filtered;
+      }
 
-        const affinityProfile = currentSort === 'foryou' ? buildAffinityProfile() : null;
-        filtered = sortArticles(filtered, affinityProfile);
-
-        // Topic Thread Collapsing (B-3)
+      function collapseThreads(filtered) {
         const threadChildrenMap = new Map();
-        if (topicCollapse && currentGroupFilter === null) {
-          const collapsedList = [];
-          const groupRepMap = new Map();
-          filtered.forEach((art) => {
-            const gid = art.topic_group;
-            if (gid != null && (art.topic_size || 0) > 1) {
-              if (!groupRepMap.has(gid)) {
-                groupRepMap.set(gid, art);
-                threadChildrenMap.set(gid, []);
-                collapsedList.push(art);
-              } else {
-                threadChildrenMap.get(gid).push(art);
-              }
-            } else {
-              collapsedList.push(art);
-            }
-          });
-          filtered = collapsedList;
+        if (!topicCollapse || currentGroupFilter !== null) {
+          return { list: filtered, threadChildrenMap };
         }
+        const collapsedList = [];
+        const groupRepMap = new Map();
+        filtered.forEach((art) => {
+          const gid = art.topic_group;
+          if (gid != null && (art.topic_size || 0) > 1) {
+            if (!groupRepMap.has(gid)) {
+              groupRepMap.set(gid, art);
+              threadChildrenMap.set(gid, []);
+              collapsedList.push(art);
+            } else {
+              threadChildrenMap.get(gid).push(art);
+            }
+          } else {
+            collapsedList.push(art);
+          }
+        });
+        return { list: collapsedList, threadChildrenMap };
+      }
 
-        lastRendered = filtered;
-        focusedCardIdx = -1;
+      function updateStatsPills(dataset, filtered) {
+        const mutedCount = mutedTerms.length ? dataset.filter((a) => isMuted(a)).length : 0;
+        $('#statMuted').textContent = mutedCount;
+        $('#statPillMuted').style.display = mutedCount > 0 ? '' : 'none';
+        $('#statPillMuted').classList.toggle('active', showMutedActive);
 
-        // Update stats & interactive pills
         $('#statTotal').textContent = filtered.length;
         $('#statHot').textContent = filtered.filter((a) => a.is_hot).length;
         $('#statHighScore').textContent = filtered.filter((a) => (a.score || 0) >= 80).length;
@@ -2748,192 +2804,208 @@
         $('#statPillErrors').classList.toggle('active', errorFilterActive);
         resetAllFiltersBtn.classList.toggle('visible', hasAnyActiveFilter());
         updateFilterBadges();
+      }
 
-        if (filtered.length === 0) {
-          cardList.innerHTML = `
-            <div class="state-msg">
-              <div class="state-icon">
-                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      function renderEmptyState() {
+        cardList.innerHTML = `
+          <div class="state-msg">
+            <div class="state-icon">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            </div>
+            <div class="title">該当する記事がありません</div>
+            <div class="desc">検索キーワードや絞り込み条件を変更してみてください</div>
+          </div>`;
+      }
+
+      function renderCard(art, i, hlTerms, threadChildrenMap, affinityProfile) {
+        const score = art.score || 0;
+        const scoreClass = score >= 80 ? 'high' : score >= 60 ? 'mid' : '';
+        const cardClass = score >= 80 ? 'score-gold' : score >= 60 ? 'score-silver' : '';
+        const hotClass = art.is_hot ? ' is-hot' : '';
+        const status = analysisStatus(art);
+        const errorClass = status === 'error' ? ' has-error' : '';
+        const isRead = readUrls.has(art.url);
+        const readClass = isRead ? ' is-read' : '';
+        const matchedKw = getMatchedKeyword(art);
+        const kwClass = matchedKw ? ' keyword-match' : '';
+        const fav = isFavorited(art.url);
+        const favClass = fav ? ' favorited' : '';
+        const srcColor = SOURCE_COLORS[art.source] || '#878681';
+        const domain = extractDomain(art.url);
+        const isNewRun = Boolean(art.new_at && latestGeneratedAt && art.new_at === latestGeneratedAt);
+
+        const cardHlTerms = matchedKw ? [...new Set([...hlTerms, matchedKw])] : hlTerms;
+        const titleHtml = highlightEscapedText(esc(art.title || 'No Title'), cardHlTerms);
+
+        const summaryLines = String(art.summary || '')
+          .replace(/\\n/g, '\n')
+          .split('\n')
+          .map((l) => l.trim())
+          .filter(Boolean);
+        const summaryHtml = summaryLines
+          .map((line) => `<div class="summary-line">${highlightEscapedText(esc(line), cardHlTerms)}</div>`)
+          .join('');
+
+        const tagsHtml = (art.tags || [])
+          .map((t, ti) => {
+            const isAct = t === currentTagFilter ? ' active' : '';
+            return `<span class="tag${isAct}" data-idx="${i}" data-tag-idx="${ti}">${esc(t)}</span>`;
+          })
+          .join('');
+
+        const reasonHtml = art.score_reason
+          ? `<div class="score-reason-box">${esc(art.score_reason)}</div>`
+          : '';
+
+        const children = (art.topic_group != null && threadChildrenMap.get(art.topic_group)) || [];
+        const groupBadge = (art.topic_size || 0) > 1
+          ? `<span class="badge badge-group" data-idx="${i}" title="同じ話題の記事を絞り込む">関連 ${art.topic_size}件</span>`
+          : '';
+
+        const threadHtml = children.length > 0
+          ? `<div class="topic-thread-box">
+              <div class="topic-thread-head" data-thread-toggle="1">
+                <span>同一トピックの関連記事 (${children.length}件) を表示</span>
+                <span>▼</span>
               </div>
-              <div class="title">該当する記事がありません</div>
-              <div class="desc">検索キーワードや絞り込み条件を変更してみてください</div>
-            </div>`;
-          return;
-        }
-
-        const hlTerms = [...include];
-
-        cardList.innerHTML = filtered.map((art, i) => {
-          const score = art.score || 0;
-          const scoreClass = score >= 80 ? 'high' : score >= 60 ? 'mid' : '';
-          const cardClass = score >= 80 ? 'score-gold' : score >= 60 ? 'score-silver' : '';
-          const hotClass = art.is_hot ? ' is-hot' : '';
-          const status = analysisStatus(art);
-          const errorClass = status === 'error' ? ' has-error' : '';
-          const isRead = readUrls.has(art.url);
-          const readClass = isRead ? ' is-read' : '';
-          const matchedKw = getMatchedKeyword(art);
-          const kwClass = matchedKw ? ' keyword-match' : '';
-          const fav = isFavorited(art.url);
-          const favClass = fav ? ' favorited' : '';
-          const srcColor = SOURCE_COLORS[art.source] || '#878681';
-          const domain = extractDomain(art.url);
-          const isNewRun = Boolean(art.new_at && latestGeneratedAt && art.new_at === latestGeneratedAt);
-
-          const cardHlTerms = matchedKw ? [...new Set([...hlTerms, matchedKw])] : hlTerms;
-          const titleHtml = highlightEscapedText(esc(art.title || 'No Title'), cardHlTerms);
-
-          const summaryLines = String(art.summary || '')
-            .replace(/\\n/g, '\n')
-            .split('\n')
-            .map((l) => l.trim())
-            .filter(Boolean);
-          const summaryHtml = summaryLines
-            .map((line) => `<div class="summary-line">${highlightEscapedText(esc(line), cardHlTerms)}</div>`)
-            .join('');
-
-          const tagsHtml = (art.tags || [])
-            .map((t, ti) => {
-              const isAct = t === currentTagFilter ? ' active' : '';
-              return `<span class="tag${isAct}" data-idx="${i}" data-tag-idx="${ti}">${esc(t)}</span>`;
-            })
-            .join('');
-
-          const reasonHtml = art.score_reason
-            ? `<div class="score-reason-box">${esc(art.score_reason)}</div>`
-            : '';
-
-          const children = (art.topic_group != null && threadChildrenMap.get(art.topic_group)) || [];
-          const groupBadge = (art.topic_size || 0) > 1
-            ? `<span class="badge badge-group" data-idx="${i}" title="同じ話題の記事を絞り込む">関連 ${art.topic_size}件</span>`
-            : '';
-
-          const threadHtml = children.length > 0
-            ? `<div class="topic-thread-box">
-                <div class="topic-thread-head" data-thread-toggle="1">
-                  <span>同一トピックの関連記事 (${children.length}件) を表示</span>
-                  <span>▼</span>
-                </div>
-                <div class="topic-thread-list">
-                  ${children.map((c) => `
-                    <div class="topic-thread-item">
-                      <span class="thread-score">[${c.score || 0}]</span>
-                      <span class="thread-source">${esc(c.source || '')}</span>
-                      <a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener noreferrer" data-url="${esc(c.url || '')}" class="thread-link">${esc(c.title || '')}</a>
-                    </div>
-                  `).join('')}
-                </div>
-              </div>`
-            : '';
-
-          const pubTs = publishedTime(art);
-          const dateLabel = pubTs
-            ? `<span>${new Date(pubTs).toLocaleDateString('ja-JP')}</span>`
-            : '';
-
-          const hnBadge = art.hn_score != null
-            ? `<span class="hn-badge" title="Hacker News スコア / コメント数">HN ${Number(art.hn_score)} pts${art.hn_comments != null ? ` · ${Number(art.hn_comments)} comments` : ''}</span>`
-            : '';
-
-          const hatenaBadge = (art.hatena_count || 0) > 0
-            ? `<span class="hatena-badge" title="はてなブックマーク数">B! ${Number(art.hatena_count)}</span>`
-            : '';
-
-          const readingBadge = (art.reading_min || 0) > 0
-            ? `<span class="reading-badge" title="本文文字数から算出した推定読了時間">読了 約${Number(art.reading_min)}分</span>`
-            : '';
-
-          const affinityBonus = affinityProfile ? calcAffinityBonus(art, affinityProfile) : 0;
-          const forYouBadge = (currentSort === 'foryou' && affinityBonus >= 6)
-            ? `<span class="badge badge-foryou" title="あなたの閲覧・お気に入り傾向から +${affinityBonus}pt 加点">FOR YOU</span>`
-            : '';
-
-          const memoText = getMemo(art.url);
-          const isEditingMemo = Boolean(editingMemoUrl && art.url && editingMemoUrl === art.url);
-          const memoBoxHtml = memoText && !isEditingMemo
-            ? `<div class="card-memo-box">
-                <div><span class="card-memo-label">MEMO</span>${highlightEscapedText(esc(memoText), cardHlTerms)}</div>
-              </div>`
-            : '';
-          const memoEditorHtml = `
-            <div class="card-memo-editor${isEditingMemo ? ' visible' : ''}" data-memo-editor="${i}">
-              <input type="text" class="card-memo-input" data-memo-input="${i}" maxlength="300" placeholder="この記事への一言メモ（検索・MD出力にも反映）" value="${esc(memoText)}">
-              <button type="button" class="btn save-memo-btn" data-idx="${i}">保存</button>
-              ${memoText ? `<button type="button" class="btn delete-memo-btn" data-idx="${i}">削除</button>` : ''}
-              <button type="button" class="btn cancel-memo-btn" data-idx="${i}">閉じる</button>
-            </div>`;
-
-          const categoryBadge = art.category
-            ? `<span class="category-badge">${esc(art.category)}</span>` : '';
-          const delay = Math.min(i, 12) * 0.025;
-
-          return `
-            <article class="card ${cardClass}${hotClass}${errorClass}${readClass}${kwClass}" data-card-idx="${i}" style="animation-delay: ${delay}s">
-              <div class="card-rail">
-                <div class="score-badge ${scoreClass}" title="AI重要度スコア">
-                  <span>${score}</span>
-                  <small>SCORE</small>
-                </div>
-                <button type="button" class="card-fav${favClass}" data-idx="${i}" title="お気に入り (f)" aria-label="お気に入り">
-                  <svg class="icon-svg" viewBox="0 0 24 24">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                  </svg>
-                </button>
+              <div class="topic-thread-list">
+                ${children.map((c) => `
+                  <div class="topic-thread-item">
+                    <span class="thread-score">[${c.score || 0}]</span>
+                    <span class="thread-source">${esc(c.source || '')}</span>
+                    <a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener noreferrer" data-url="${esc(c.url || '')}" class="thread-link">${esc(c.title || '')}</a>
+                  </div>
+                `).join('')}
               </div>
-              <div class="card-body">
-                <div class="card-top-meta">
-                  <span class="source-pill">
-                    <span class="source-dot" style="--src-color:${srcColor}"></span>
-                    ${esc(art.source || '')}
-                  </span>
-                  ${domain ? `<span class="domain-label">${esc(domain)}</span>` : ''}
-                  ${categoryBadge}
-                  ${dateLabel}
-                  ${readingBadge}
-                  ${hatenaBadge}
-                  ${hnBadge}
-                </div>
+            </div>`
+          : '';
 
-                <div class="card-title-row">
-                  ${art.is_hot ? '<span class="badge badge-hot">HOT</span>' : ''}
-                  ${isNewRun && !art.is_prev_seen ? '<span class="badge badge-new-run" title="最新回の実行で新着">NEW</span>' : ''}
-                  ${art.is_prev_seen ? '<span class="badge badge-prev-seen" title="直近数日間のアーカイブに既出の記事">既出</span>' : ''}
-                  ${forYouBadge}
-                  ${status === 'error' ? '<span class="badge badge-error">解析エラー</span>' : ''}
-                  ${status === 'skipped' ? '<span class="badge badge-skip">未解析</span>' : ''}
-                  ${matchedKw ? `<span class="badge badge-kw">KW: ${esc(matchedKw)}</span>` : ''}
-                  ${groupBadge}
-                  <a href="${esc(safeUrl(art.url))}" target="_blank" rel="noopener noreferrer" data-idx="${i}" class="card-title article-link">${titleHtml}</a>
-                </div>
+        const pubTs = publishedTime(art);
+        const dateLabel = pubTs
+          ? `<span>${new Date(pubTs).toLocaleDateString('ja-JP')}</span>`
+          : '';
 
-                <div class="card-details">
-                  <div class="card-summary">${summaryHtml}</div>
-                  ${reasonHtml}
-                  ${memoBoxHtml}
-                  ${memoEditorHtml}
-                  ${threadHtml}
-                  <div class="card-footer">
-                    <div class="card-tags">${tagsHtml}</div>
-                    <div class="card-actions">
-                      <button type="button" class="card-action-btn edit-memo-btn${memoText ? ' has-memo' : ''}" data-idx="${i}" title="一言メモを追加・編集 (n)">
-                        ${memoText ? 'メモ編集' : 'メモ'}
-                      </button>
-                      <button type="button" class="card-action-btn toggle-read-btn" data-idx="${i}" title="既読/未読を切り替え (m)">
-                        ${isRead ? '未読に戻す' : '既読にする'}
-                      </button>
-                      <button type="button" class="card-action-btn copy-url-btn" data-idx="${i}" title="URLをコピー (c)">
-                        URLコピー
-                      </button>
-                      <button type="button" class="card-action-btn copy-md-btn" data-idx="${i}" title="タイトル・要約・URLをMarkdown形式でコピー (y)">
-                        MDコピー
-                      </button>
-                    </div>
+        const hnBadge = art.hn_score != null
+          ? `<span class="hn-badge" title="Hacker News スコア / コメント数">HN ${Number(art.hn_score)} pts${art.hn_comments != null ? ` · ${Number(art.hn_comments)} comments` : ''}</span>`
+          : '';
+
+        const hatenaBadge = (art.hatena_count || 0) > 0
+          ? `<span class="hatena-badge" title="はてなブックマーク数">B! ${Number(art.hatena_count)}</span>`
+          : '';
+
+        const readingBadge = (art.reading_min || 0) > 0
+          ? `<span class="reading-badge" title="本文文字数から算出した推定読了時間">読了 約${Number(art.reading_min)}分</span>`
+          : '';
+
+        const affinityBonus = affinityProfile ? calcAffinityBonus(art, affinityProfile) : 0;
+        const forYouBadge = (currentSort === 'foryou' && affinityBonus >= 6)
+          ? `<span class="badge badge-foryou" title="あなたの閲覧・お気に入り傾向から +${affinityBonus}pt 加点">FOR YOU</span>`
+          : '';
+
+        const memoText = getMemo(art.url);
+        const isEditingMemo = Boolean(editingMemoUrl && art.url && editingMemoUrl === art.url);
+        const memoBoxHtml = memoText && !isEditingMemo
+          ? `<div class="card-memo-box">
+              <div><span class="card-memo-label">MEMO</span>${highlightEscapedText(esc(memoText), cardHlTerms)}</div>
+            </div>`
+          : '';
+        const memoEditorHtml = `
+          <div class="card-memo-editor${isEditingMemo ? ' visible' : ''}" data-memo-editor="${i}">
+            <input type="text" class="card-memo-input" data-memo-input="${i}" maxlength="300" placeholder="この記事への一言メモ（検索・MD出力にも反映）" value="${esc(memoText)}">
+            <button type="button" class="btn save-memo-btn" data-idx="${i}">保存</button>
+            ${memoText ? `<button type="button" class="btn delete-memo-btn" data-idx="${i}">削除</button>` : ''}
+            <button type="button" class="btn cancel-memo-btn" data-idx="${i}">閉じる</button>
+          </div>`;
+
+        const categoryBadge = art.category
+          ? `<span class="category-badge">${esc(art.category)}</span>` : '';
+
+        const githubBadge = art.github_repo
+          ? `<a href="https://github.com/${esc(art.github_repo)}" target="_blank" rel="noopener noreferrer" class="github-repo-chip" title="GitHub リポジトリを開く">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              <span>${esc(art.github_repo)}</span>
+            </a>`
+          : '';
+
+        const takeawayHtml = art.actionable_takeaway
+          ? `<div class="card-takeaway-box">
+              <span class="card-takeaway-label">実務示唆</span>
+              <span class="card-takeaway-text">${highlightEscapedText(esc(art.actionable_takeaway), cardHlTerms)}</span>
+            </div>`
+          : '';
+
+        const delay = Math.min(i, 12) * 0.025;
+
+        return `
+          <article class="card ${cardClass}${hotClass}${errorClass}${readClass}${kwClass}" data-card-idx="${i}" style="animation-delay: ${delay}s">
+            <div class="card-rail">
+              <div class="score-badge ${scoreClass}" title="AI重要度スコア">
+                <span>${score}</span>
+                <small>SCORE</small>
+              </div>
+              <button type="button" class="card-fav${favClass}" data-idx="${i}" title="お気に入り (f)" aria-label="お気に入り">
+                <svg class="icon-svg" viewBox="0 0 24 24">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="card-top-meta">
+                <span class="source-pill">
+                  <span class="source-dot" style="--src-color:${srcColor}"></span>
+                  ${esc(art.source || '')}
+                </span>
+                ${domain ? `<span class="domain-label">${esc(domain)}</span>` : ''}
+                ${categoryBadge}
+                ${githubBadge}
+                ${dateLabel}
+                ${readingBadge}
+                ${hatenaBadge}
+                ${hnBadge}
+              </div>
+
+              <div class="card-title-row">
+                ${art.is_hot ? '<span class="badge badge-hot">HOT</span>' : ''}
+                ${isNewRun && !art.is_prev_seen ? '<span class="badge badge-new-run" title="最新回の実行で新着">NEW</span>' : ''}
+                ${art.is_prev_seen ? '<span class="badge badge-prev-seen" title="直近数日間のアーカイブに既出の記事">既出</span>' : ''}
+                ${forYouBadge}
+                ${status === 'error' ? '<span class="badge badge-error">解析エラー</span>' : ''}
+                ${status === 'skipped' ? '<span class="badge badge-skip">未解析</span>' : ''}
+                ${matchedKw ? `<span class="badge badge-kw">KW: ${esc(matchedKw)}</span>` : ''}
+                ${groupBadge}
+                <a href="${esc(safeUrl(art.url))}" target="_blank" rel="noopener noreferrer" data-idx="${i}" class="card-title article-link">${titleHtml}</a>
+              </div>
+
+              <div class="card-details">
+                <div class="card-summary">${summaryHtml}</div>
+                ${takeawayHtml}
+                ${reasonHtml}
+                ${memoBoxHtml}
+                ${memoEditorHtml}
+                ${threadHtml}
+                <div class="card-footer">
+                  <div class="card-tags">${tagsHtml}</div>
+                  <div class="card-actions">
+                    <button type="button" class="card-action-btn edit-memo-btn${memoText ? ' has-memo' : ''}" data-idx="${i}" title="一言メモを追加・編集 (n)">
+                      ${memoText ? 'メモ編集' : 'メモ'}
+                    </button>
+                    <button type="button" class="card-action-btn toggle-read-btn" data-idx="${i}" title="既読/未読を切り替え (m)">
+                      ${isRead ? '未読に戻す' : '既読にする'}
+                    </button>
+                    <button type="button" class="card-action-btn copy-url-btn" data-idx="${i}" title="URLをコピー (c)">
+                      URLコピー
+                    </button>
+                    <button type="button" class="card-action-btn copy-md-btn" data-idx="${i}" title="タイトル・要約・URLをMarkdown形式でコピー (y)">
+                      MDコピー
+                    </button>
                   </div>
                 </div>
               </div>
-            </article>`;
-        }).join('');
+            </div>
+          </article>`;
+      }
 
+      function attachCardEventListeners() {
         // Tag click
         cardList.querySelectorAll('.tag').forEach((el) => {
           el.addEventListener('click', (e) => {
@@ -3087,6 +3159,36 @@
             cardEl.classList.toggle('expanded');
           });
         });
+      }
+
+      // ── Render ──
+      function renderArticles() {
+        const dataset = currentDataset();
+        let filtered = applyFilters(dataset);
+
+        const affinityProfile = currentSort === 'foryou' ? buildAffinityProfile() : null;
+        filtered = sortArticles(filtered, affinityProfile);
+
+        const { list: collapsedList, threadChildrenMap } = collapseThreads(filtered);
+        filtered = collapsedList;
+
+        lastRendered = filtered;
+        focusedCardIdx = -1;
+
+        updateStatsPills(dataset, filtered);
+
+        if (filtered.length === 0) {
+          renderEmptyState();
+          return;
+        }
+
+        const { include } = parseSearchQuery(currentSearch);
+        const hlTerms = [...include];
+
+        cardList.innerHTML = filtered
+          .map((art, i) => renderCard(art, i, hlTerms, threadChildrenMap, affinityProfile))
+          .join('');
+        attachCardEventListeners();
       }
 
       function setTagFilter(tag) {

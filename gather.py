@@ -71,9 +71,9 @@ RSS_FEEDS = {
 }
 RSS_FETCH_COUNT = 5
 
-# gemini-2.5-flash: 安定版・高速応答・JSON出力完全対応
-GEMINI_MODEL = "gemini-2.5-flash"
-GEMINI_EMBED_MODEL = "gemini-embedding-001"
+# gemini-2.5-flash: 安定版・高速応答・JSON出力完全対応（環境変数 GEMINI_MODEL で変更可）
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_EMBED_MODEL = os.environ.get("GEMINI_EMBED_MODEL", "gemini-embedding-001")
 GEMINI_API_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     "{model}:generateContent?key={key}"
@@ -130,6 +130,28 @@ DIGEST_FILE = "digest.json"
 FEED_TOP_N = 20
 SITE_URL = "https://muu0726.github.io/IT-News/"
 
+# カテゴリ別 RSS フィード設定 (E-2)
+CATEGORY_FEEDS = {
+    "feed_ai.xml": {
+        "title": "IT Info Hub — AI・機械学習",
+        "description": "AI・機械学習・LLMに関する最新技術ニュース（スコア上位）",
+        "categories": ["AI・機械学習"],
+        "top_n": 15,
+    },
+    "feed_security.xml": {
+        "title": "IT Info Hub — セキュリティ",
+        "description": "セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）",
+        "categories": ["セキュリティ"],
+        "top_n": 15,
+    },
+    "feed_web.xml": {
+        "title": "IT Info Hub — Web & クラウド・インフラ",
+        "description": "Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）",
+        "categories": ["Web・フロントエンド", "バックエンド・インフラ"],
+        "top_n": 15,
+    },
+}
+
 JST = timezone(timedelta(hours=9))
 
 BATCH_ANALYSIS_SCHEMA = {
@@ -140,12 +162,17 @@ BATCH_ANALYSIS_SCHEMA = {
             "id": {"type": "INTEGER"},
             "title": {"type": "STRING"},
             "summary": {"type": "STRING"},
+            "actionable_takeaway": {"type": "STRING"},
+            "github_repo": {"type": "STRING"},
             "tags": {"type": "ARRAY", "items": {"type": "STRING"}},
             "category": {"type": "STRING", "enum": CATEGORIES},
             "score": {"type": "INTEGER"},
             "score_reason": {"type": "STRING"},
         },
-        "required": ["id", "title", "summary", "tags", "category", "score", "score_reason"],
+        "required": [
+            "id", "title", "summary", "actionable_takeaway", "github_repo",
+            "tags", "category", "score", "score_reason"
+        ],
     },
 }
 
@@ -186,6 +213,58 @@ BRIEFING_SCHEMA = {
 # ---------------------------------------------------------------------------
 _KEEP_QUERY_KEYS = {"id", "v", "p"}
 
+_GITHUB_RESERVED_PATHS = {
+    "about", "collections", "contact", "customer-stories", "enterprise",
+    "events", "explore", "features", "issues", "join", "login", "marketplace",
+    "notifications", "organizations", "orgs", "pricing", "pulls", "readme",
+    "security", "settings", "site", "sponsors", "team", "topics", "trending",
+    "users", "blog"
+}
+
+
+def extract_github_repo(url: str, text: str = "") -> str | None:
+    """記事URLまたは本文抜粋から関連する GitHub リポジトリ名 (owner/repo) を抽出する (A-2)"""
+    # 1. 記事URL自体の検証
+    if url:
+        parsed = urlparse(url)
+        if "github.com" in parsed.netloc.lower():
+            parts = [p for p in parsed.path.strip("/").split("/") if p]
+            if len(parts) >= 2:
+                owner, repo = parts[0], parts[1]
+                if repo.endswith(".git"):
+                    repo = repo[:-4]
+                repo = repo.rstrip(".,;)\"'>")
+                if (
+                    owner.lower() not in _GITHUB_RESERVED_PATHS
+                    and repo
+                    and not repo.endswith((".html", ".xml", ".png", ".jpg", ".md"))
+                    and re.match(r"^[a-zA-Z0-9_.-]+$", owner)
+                    and re.match(r"^[a-zA-Z0-9_.-]+$", repo)
+                ):
+                    return f"{owner}/{repo}"
+
+    # 2. 本文またはURLテキスト内の github.com/owner/repo パターン検索
+    combined = f"{url} {text}"
+    matches = re.findall(
+        r"https?://(?:www\.)?github\.com/([a-zA-Z0-9_\.-]+)/([a-zA-Z0-9_\.-]+)",
+        combined,
+    )
+    for owner, repo in matches:
+        if owner.lower() in _GITHUB_RESERVED_PATHS:
+            continue
+        if repo.endswith(".git"):
+            repo = repo[:-4]
+        repo = repo.rstrip(".,;)\"'>")
+        if (
+            repo
+            and not repo.endswith((".html", ".xml", ".png", ".jpg", ".md"))
+            and re.match(r"^[a-zA-Z0-9_.-]+$", owner)
+            and re.match(r"^[a-zA-Z0-9_.-]+$", repo)
+        ):
+            return f"{owner}/{repo}"
+
+    return None
+
 
 def normalize_url(url: str) -> str:
     """URL を正規化して重複比較に使う（トラッキングクエリは除去し、識別子パラメータは保持）"""
@@ -217,6 +296,50 @@ def safe_get(url: str, timeout: int = 15) -> requests.Response | None:
     except requests.RequestException as e:
         print(f"[WARN] GET failed: {url} -- {e}")
         return None
+
+
+def parse_iso_datetime(dt_str: str) -> datetime | None:
+    """ISO8601 文字列を UTC の aware な datetime に安全に変換する"""
+    if not dt_str:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(dt_str).replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except (ValueError, TypeError):
+        return None
+
+
+def format_pub_date(dt_str: str) -> str:
+    """ISO8601 日時文字列から RSS 用の <pubDate> タグ文字列を生成する"""
+    dt = parse_iso_datetime(dt_str)
+    return f"      <pubDate>{format_datetime(dt)}</pubDate>\n" if dt else ""
+
+
+def post_webhook(
+    url: str,
+    payload: dict,
+    service_name: str,
+    headers: dict | None = None,
+    timeout: int = 15,
+) -> bool:
+    """汎用 Webhook 送信ヘルパー（共通ヘッダー、タイムアウト、エラーハンドリング）"""
+    if not url:
+        return False
+    req_headers = {"Content-Type": "application/json"}
+    if headers:
+        req_headers.update(headers)
+    try:
+        resp = requests.post(url, json=payload, headers=req_headers, timeout=timeout)
+        if resp.status_code in (200, 204):
+            print(f"[INFO] {service_name} sent")
+            return True
+        print(f"[WARN] {service_name} returned {resp.status_code}: {resp.text[:120]}")
+        return False
+    except requests.RequestException as e:
+        print(f"[ERROR] {service_name} failed: {e}")
+        return False
 
 
 def deduplicate_articles(articles: list[dict]) -> list[dict]:
@@ -605,6 +728,8 @@ def build_batch_prompt(chunk: list[dict]) -> str:
         f"- title: 記事タイトル（英語の場合は自然な日本語に翻訳。日本語ならそのまま）\n"
         f"- summary: 日本語で3行の要約（改行は\\nで区切る）。本文抜粋がある場合はそれに基づき、"
         f"ない場合はタイトルから内容を推測して作成\n"
+        f"- actionable_takeaway: エンジニアの実務への影響や実践的示唆、試すべきこと（例: アップデート時の注意点、検証推奨コマンド、開発への具体的影響など）を日本語1文（80文字程度）で提示\n"
+        f"- github_repo: 記事が特定のオープンソースソフトウェアやGitHub上のリポジトリに関する場合、その 'owner/repo' 名（例: 'facebook/react'）。関連するリポジトリがない場合は空文字 \"\"\n"
         f"- tags: 技術タグを3つ（日本語または英語）のリスト\n"
         f"- category: 次のリストから必ず1つだけ選択: {categories}\n"
         f"- score: 重要度スコア（0-100の整数）。IT業界への影響度、技術的新規性、実用性を総合評価\n"
@@ -612,6 +737,7 @@ def build_batch_prompt(chunk: list[dict]) -> str:
         f"{articles_block}\n\n"
         f"回答は全{len(chunk)}件分のオブジェクトを含むJSON配列**のみ**を出力してください:\n"
         f'[{{"id": 0, "title": "...", "summary": "1行目\\n2行目\\n3行目", '
+        f'"actionable_takeaway": "...", "github_repo": "", '
         f'"tags": ["a", "b", "c"], "category": "...", "score": 75, "score_reason": "..."}}, ...]'
     )
 
@@ -630,7 +756,7 @@ def call_gemini_rest(
     if response_schema is not None:
         gen_config["responseSchema"] = response_schema
     # thinking を 0 にできるのは flash 系のみ（pro 系に送ると 400 になる）
-    if "flash" in GEMINI_MODEL:
+    if "flash" in GEMINI_MODEL.lower():
         gen_config["thinkingConfig"] = {
             "thinkingBudget": GEMINI_THINKING_BUDGET
         }
@@ -774,6 +900,10 @@ def reuse_analyzed_articles(
             for k in ("hn_score", "hn_comments", "published"):
                 if k in art:
                     merged[k] = art[k]
+            if not merged.get("github_repo"):
+                extracted = extract_github_repo(merged.get("url", ""))
+                if extracted:
+                    merged["github_repo"] = extracted
             reused.append(merged)
         elif norm in past_map:
             past_art = past_map[norm]
@@ -783,6 +913,10 @@ def reuse_analyzed_articles(
                     merged[k] = art[k]
             merged["is_prev_seen"] = True
             merged["new_at"] = past_art.get("new_at") or past_art.get("first_seen") or "past"
+            if not merged.get("github_repo"):
+                extracted = extract_github_repo(merged.get("url", ""))
+                if extracted:
+                    merged["github_repo"] = extracted
             reused.append(merged)
         else:
             to_analyze.append(art)
@@ -882,6 +1016,17 @@ def analyze_with_gemini(
                     if item.get("title"):
                         art["title"] = str(item["title"])
                     art["summary"] = str(item.get("summary", ""))
+                    if item.get("actionable_takeaway"):
+                        art["actionable_takeaway"] = str(item["actionable_takeaway"]).strip()
+                    gh_repo = str(item.get("github_repo", "")).strip()
+                    if gh_repo and re.match(r"^[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+$", gh_repo):
+                        owner = gh_repo.split("/")[0].lower()
+                        if owner not in _GITHUB_RESERVED_PATHS:
+                            art["github_repo"] = gh_repo
+                    if not art.get("github_repo"):
+                        extracted = extract_github_repo(art.get("url", ""), art.get("_body", ""))
+                        if extracted:
+                            art["github_repo"] = extracted
                     art["tags"] = [str(t) for t in item.get("tags", [])][:5]
                     category = str(item.get("category", ""))
                     art["category"] = category if category in CATEGORIES else "その他"
@@ -1083,17 +1228,23 @@ def send_discord_notification(articles: list[dict]) -> None:
         tags_str = " / ".join(art.get("tags", []))
         hot_prefix = "[HOT] " if art.get("is_hot") else ""
 
+        fields = [
+            {"name": "Score", "value": str(score), "inline": True},
+            {"name": "Tags", "value": tags_str or "-", "inline": True},
+            {"name": "Source", "value": art.get("source", ""), "inline": True},
+        ]
+        if art.get("github_repo"):
+            fields.append({"name": "GitHub", "value": f"[{art['github_repo']}](https://github.com/{art['github_repo']})", "inline": True})
+        if art.get("actionable_takeaway"):
+            fields.append({"name": "実務ポイント", "value": art["actionable_takeaway"][:1024], "inline": False})
+        fields.append({"name": "Reason", "value": art.get("score_reason", "")[:1024], "inline": False})
+
         embeds.append({
             "title": f"{hot_prefix}{art.get('title', 'No Title')}"[:256],
             "url": art.get("url", ""),
             "color": color,
             "description": art.get("summary", "").replace("\\n", "\n"),
-            "fields": [
-                {"name": "Score", "value": str(score), "inline": True},
-                {"name": "Tags", "value": tags_str or "-", "inline": True},
-                {"name": "Source", "value": art.get("source", ""), "inline": True},
-                {"name": "Reason", "value": art.get("score_reason", "")[:1024], "inline": False},
-            ],
+            "fields": fields,
             "footer": {"text": "IT Info Collector"},
             "timestamp": datetime.now(timezone.utc).isoformat(),
         })
@@ -1103,16 +1254,7 @@ def send_discord_notification(articles: list[dict]) -> None:
         "content": f"## 本日の最重要IT記事 TOP {len(top_articles)}",
         "embeds": embeds,
     }
-
-    try:
-        resp = requests.post(webhook_url, json=payload,
-                             headers={"Content-Type": "application/json"}, timeout=15)
-        if resp.status_code in (200, 204):
-            print(f"[INFO] Discord notification sent ({len(top_articles)} articles)")
-        else:
-            print(f"[WARN] Discord webhook returned {resp.status_code}: {resp.text}")
-    except requests.RequestException as e:
-        print(f"[ERROR] Discord notification failed: {e}")
+    post_webhook(webhook_url, payload, f"Discord notification ({len(top_articles)} articles)")
 
 
 def send_slack_notification(articles: list[dict]) -> None:
@@ -1134,25 +1276,20 @@ def send_slack_notification(articles: list[dict]) -> None:
     for art in top_articles:
         hot = "[HOT] " if art.get("is_hot") else ""
         summary = art.get("summary", "").replace("\\n", "\n")
+        takeaway_line = f"\n💡 *実務示唆*: {art['actionable_takeaway']}" if art.get("actionable_takeaway") else ""
+        gh_line = f" · <https://github.com/{art['github_repo']}|GitHub: {art['github_repo']}>" if art.get("github_repo") else ""
         blocks.append({
             "type": "section",
             "text": {
                 "type": "mrkdwn",
                 "text": (f"*<{art.get('url', '')}|{hot}{art.get('title', 'No Title')}>*"
-                         f"  `{art.get('score', 0)}点`\n{summary}\n"
-                         f"_{art.get('source', '')} / "
+                         f"  `{art.get('score', 0)}点`\n{summary}{takeaway_line}\n"
+                         f"_{art.get('source', '')}{gh_line} / "
                          f"{' · '.join(art.get('tags', []))}_"),
             },
         })
 
-    try:
-        resp = requests.post(webhook_url, json={"blocks": blocks[:50]}, timeout=15)
-        if resp.status_code == 200:
-            print(f"[INFO] Slack notification sent ({len(top_articles)} articles)")
-        else:
-            print(f"[WARN] Slack webhook returned {resp.status_code}: {resp.text[:120]}")
-    except requests.RequestException as e:
-        print(f"[ERROR] Slack notification failed: {e}")
+    post_webhook(webhook_url, {"blocks": blocks[:50]}, f"Slack notification ({len(top_articles)} articles)")
 
 
 def send_line_notification(articles: list[dict]) -> None:
@@ -1174,26 +1311,20 @@ def send_line_notification(articles: list[dict]) -> None:
     for art in top_articles:
         hot = "[HOT]" if art.get("is_hot") else "・"
         lines.append(f"{hot} [{art.get('score', 0)}点] {art.get('title', '')}")
+        if art.get("actionable_takeaway"):
+            lines.append(f"💡 {art['actionable_takeaway']}")
+        if art.get("github_repo"):
+            lines.append(f"GH: https://github.com/{art['github_repo']}")
         lines.append(art.get("url", ""))
         lines.append("")
     text = "\n".join(lines)[:4900]
 
-    try:
-        resp = requests.post(
-            "https://api.line.me/v2/bot/message/broadcast",
-            headers={
-                "Content-Type": "application/json",
-                "Authorization": f"Bearer {token}",
-            },
-            json={"messages": [{"type": "text", "text": text}]},
-            timeout=15,
-        )
-        if resp.status_code == 200:
-            print(f"[INFO] LINE notification sent ({len(top_articles)} articles)")
-        else:
-            print(f"[WARN] LINE API returned {resp.status_code}: {resp.text[:120]}")
-    except requests.RequestException as e:
-        print(f"[ERROR] LINE notification failed: {e}")
+    post_webhook(
+        "https://api.line.me/v2/bot/message/broadcast",
+        {"messages": [{"type": "text", "text": text}]},
+        f"LINE notification ({len(top_articles)} articles)",
+        headers={"Authorization": f"Bearer {token}"},
+    )
 
 
 def wait_until_notify_time(
@@ -1406,23 +1537,22 @@ def send_digest_notification(digest: dict) -> None:
                 ],
             }],
         }
-        try:
-            requests.post(webhook_url, json=payload, timeout=15)
-            print("[INFO] Weekly digest posted to Discord")
-        except requests.RequestException as e:
-            print(f"[WARN] Digest Discord post failed: {e}")
+        post_webhook(webhook_url, payload, "Weekly digest Discord")
 
 
 # ---------------------------------------------------------------------------
 # RSS フィード出力
 # ---------------------------------------------------------------------------
-def generate_rss_feed(articles: list[dict]) -> None:
-    """収集結果を RSS 2.0 フィード (feed.xml) として出力する"""
-    now = datetime.now(timezone.utc)
-    top = sorted(articles, key=lambda x: x.get("score", 0), reverse=True)[:FEED_TOP_N]
-
+def _format_rss_channel(
+    title: str,
+    description: str,
+    feed_url: str,
+    articles: list[dict],
+    now: datetime,
+) -> str:
+    """RSS 2.0 XML チャンネル文字列を構築する"""
     items = []
-    for art in top:
+    for art in articles:
         pub_date = ""
         published = art.get("published", "")
         if published:
@@ -1432,7 +1562,9 @@ def generate_rss_feed(articles: list[dict]) -> None:
             except ValueError:
                 pass
         summary = (art.get("summary") or "").replace("\\n", " / ").replace("\n", " / ")
-        desc = (f"[Score: {art.get('score', 0)}] {summary} "
+        takeaway = f" [実務示唆: {art['actionable_takeaway']}]" if art.get("actionable_takeaway") else ""
+        repo = f" [GitHub: {art['github_repo']}]" if art.get("github_repo") else ""
+        desc = (f"[Score: {art.get('score', 0)}] {summary}{takeaway}{repo} "
                 f"(Source: {art.get('source', '')})")
         url = xml_escape(art.get("url", ""))
         items.append(
@@ -1445,13 +1577,13 @@ def generate_rss_feed(articles: list[dict]) -> None:
             "    </item>"
         )
 
-    feed = (
+    return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<rss version="2.0">\n'
         "  <channel>\n"
-        "    <title>IT Info Hub — AI技術ニュースダッシュボード</title>\n"
-        f"    <link>{xml_escape(SITE_URL)}</link>\n"
-        "    <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>\n"
+        f"    <title>{xml_escape(title)}</title>\n"
+        f"    <link>{xml_escape(feed_url)}</link>\n"
+        f"    <description>{xml_escape(description)}</description>\n"
         "    <language>ja</language>\n"
         f"    <lastBuildDate>{format_datetime(now)}</lastBuildDate>\n"
         + "\n".join(items) + "\n"
@@ -1459,9 +1591,42 @@ def generate_rss_feed(articles: list[dict]) -> None:
         "</rss>\n"
     )
 
+
+def generate_rss_feed(articles: list[dict]) -> None:
+    """収集結果を総合およびカテゴリ別の RSS 2.0 フィードとして出力する (E-2)"""
+    now = datetime.now(timezone.utc)
+    # 総合フィード (feed.xml)
+    top = sorted(articles, key=lambda x: x.get("score", 0), reverse=True)[:FEED_TOP_N]
+    xml_overall = _format_rss_channel(
+        title="IT Info Hub — AI技術ニュースダッシュボード",
+        description="IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信",
+        feed_url=SITE_URL,
+        articles=top,
+        now=now,
+    )
     with open(FEED_FILE, "w", encoding="utf-8") as f:
-        f.write(feed)
+        f.write(xml_overall)
     print(f"[INFO] Saved {FEED_FILE} ({len(top)} items)")
+
+    # カテゴリ別フィード (feed_ai.xml, feed_security.xml, feed_web.xml)
+    for filename, conf in CATEGORY_FEEDS.items():
+        allowed_cats = set(conf.get("categories", []))
+        top_n = conf.get("top_n", 15)
+        cat_articles = [
+            a for a in articles
+            if a.get("category") in allowed_cats
+        ]
+        cat_top = sorted(cat_articles, key=lambda x: x.get("score", 0), reverse=True)[:top_n]
+        cat_xml = _format_rss_channel(
+            title=conf["title"],
+            description=conf["description"],
+            feed_url=f"{SITE_URL.rstrip('/')}/{filename}",
+            articles=cat_top,
+            now=now,
+        )
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(cat_xml)
+        print(f"[INFO] Saved {filename} ({len(cat_top)} items)")
 
 
 # ---------------------------------------------------------------------------
@@ -1591,7 +1756,7 @@ def build_search_index(archive_dir: str = ARCHIVE_DIR, out_file: str | None = No
         "title", "url", "source", "published", "summary", "tags", "category",
         "score", "score_reason", "analysis_status", "is_hot", "hn_score",
         "hn_comments", "topic_group", "topic_size", "hatena_count",
-        "reading_min", "is_prev_seen",
+        "reading_min", "is_prev_seen", "actionable_takeaway", "github_repo",
     )
     for fn in date_files:
         fpath = os.path.join(archive_dir, fn)
