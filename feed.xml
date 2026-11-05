@@ -5,104 +5,20 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 04 Nov 2026 12:58:05 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 01:29:36 +0000</lastBuildDate>
     <item>
-      <title>私のラップトップ上のQwen 3.8 27Bもモデルの重みを解釈できる</title>
-      <link>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</link>
-      <guid isPermaLink="false">https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</guid>
-      <description>[Score: 95] LLMがニューラルネットワークの生重みを解釈・修正できる「Weight-Space Programming」に関する論文を紹介しています。 / 特にGPT-6 Astraの驚異的な能力が示されていますが、筆者のラップトップ上のQwen 3.8 27Bでも同様の機能が確認されました。 / これにより、モデルの内部動作理解や、勾配なしでの性能改善の可能性が示唆されています。 (Source: Hacker News)</description>
-      <pubDate>Tue, 03 Nov 2026 17:40:00 +0000</pubDate>
+      <title>ルートへのパスを1000少なくする</title>
+      <link>https://openai.com/index/a-thousand-fewer-paths-to-root/</link>
+      <guid isPermaLink="false">https://openai.com/index/a-thousand-fewer-paths-to-root/</guid>
+      <description>[Score: 95] OpenAIは、Linuxカーネルの脆弱性を自律的に発見、悪用、パッチ適用するパイプラインを開発しました。 / このシステムは、948件のローカル権限昇格の脆弱性を特定し、パッチを生成しました。 / セキュリティ研究の自動化は、脆弱性対応の効率を大幅に向上させる可能性を秘めています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 04 Nov 2026 23:33:14 +0000</pubDate>
     </item>
     <item>
-      <title>アダルト動画サイトに組み込まれた情報窃取スクリプト群を追う</title>
-      <link>https://disconinja.hatenablog.com/entry/2026/11/03/230647</link>
-      <guid isPermaLink="false">https://disconinja.hatenablog.com/entry/2026/11/03/230647</guid>
-      <description>[Score: 95] アダルト動画サイトのHTMLに、非表示iframeとJavaScriptを動的に追加する情報窃取スクリプトが確認されました。 / Cookie、Web Storage、IndexedDB、キー入力、フォーム、Web3プロバイダー、ブラウザ指紋など、広範な情報を収集しようとします。 / 特に偽MetaMask画面を用いたウォレット資産移転要求が実装されており、深刻なセキュリティリスクを提示しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 03 Nov 2026 17:23:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>OpenCode+Docker+GitHub Actionsで全自動AIペネトレーションテストはじめました</title>
-      <link>https://zenn.dev/team_zenn/articles/opencode-docker-actions-ai-pentest</link>
-      <guid isPermaLink="false">https://zenn.dev/team_zenn/articles/opencode-docker-actions-ai-pentest</guid>
-      <description>[Score: 95] ZennチームがAIを活用したセキュリティチェックの仕組みを構築し、全自動AIペネトレーションテストを毎週GitHub Actionsで実施しています。 / Pull RequestごとのAIレビューと、OpenCode、Docker、OSSツールを組み合わせた自動ペネトレーションテストを紹介。 / サイバー攻撃激化に対応するため、人間による診断では追いつかない現状への対策として、AIの活用が強調されています。 (Source: Zenn)</description>
-      <pubDate>Wed, 04 Nov 2026 01:19:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>ハッカーがフランスの血液プラズマ冷凍庫を乗っ取り、温度設定を-30°Cから110°Cに変更</title>
-      <link>https://www.reddit.com/r/technology/comments/1xnf7mc/hackers_hijacked_french_blood_plasma_freezers/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xnf7mc/hackers_hijacked_french_blood_plasma_freezers/</guid>
-      <description>[Score: 95] フランスの血液プラズマ冷凍庫がハッカーに乗っ取られ、温度設定が異常値に変更された。 / 医療インフラに対するサイバー攻撃の深刻な脅威が浮き彫りになった。 / 人命に関わるシステムへのセキュリティ対策の重要性が再認識される。 (Source: Reddit)</description>
-      <pubDate>Wed, 04 Nov 2026 04:44:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>中国メーカー、出荷前のAndroid端末に犯罪用のバックドアを設置か Googleが取引停止</title>
-      <link>https://www.itmedia.co.jp/news/article/2611/04/2000002884/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/04/2000002884/</guid>
-      <description>[Score: 95] 中国のOEM/ODMメーカーVideostrong Technologyが、出荷前のAndroid端末に遠隔操作可能なバックドア「x.cpe」を意図的に組み込み、犯罪者にアクセス権を販売していたことが発覚しました。 / Googleは同社との取引を停止し、Google認証済みAndroid端末の製造・販売を禁じました。この不正ソフトは広告詐欺や不正な通信中継などに悪用され、130万台以上の端末が影響を受けました。 / Googleは国際的な協力のもとボットネット「XCPE」の運用を妨害し、再発防止のため審査プロセスを強化するとしています。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 04 Nov 2026 10:13:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>【未来を解説】AIでエンジニア格差を生み出す質とスピードの考え方</title>
-      <link>https://qiita.com/Sicut_study/items/b9e38c0584d4aa720d31?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b9e38c0584d4aa720d31?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AIエージェントによる開発が普及する中で、エンジニアのスキル格差が拡大している現状を指摘しています。 / AIに依存しすぎると思考停止に陥り、質を犠牲にしたコードが増え、結果的に開発が遅くなる負のループに陥る可能性があります。 / AI時代にエンジニアが成長し続けるためには、設計思考や本質的な学習が不可欠であると提言しています。 (Source: Qiita)</description>
-      <pubDate>Sun, 01 Nov 2026 08:41:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub、「Copilot Fusion」正式リリース。タスクに応じて最適なAIモデル選択で高性能かつ低コストに。GitHub Universe 2026</title>
-      <link>https://www.publickey1.jp/blog/26/githubcopilot_fusionaigithub_universe_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/githubcopilot_fusionaigithub_universe_2026.html</guid>
-      <description>[Score: 90] GitHubが「Copilot Fusion」を正式リリースし、タスクの特性に応じて単一または複数のAIモデルを組み合わせて実行するマルチモデル対応機能を提供。 / これにより、開発者はAIモデル選択の負担から解放され、性能とコストのバランスを考慮した開発が可能になる。 / 推論、コード生成、デバッグ、ツール利用など、タスクごとに最適なAIモデルの組み合わせを自動で判断し、効率的な開発を支援する。 (Source: Publickey)</description>
-      <pubDate>Mon, 02 Nov 2026 14:36:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026</title>
-      <link>https://www.publickey1.jp/blog/26/oracle_cloudgoogle_tpu2027oracle_ai_world_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/oracle_cloudgoogle_tpu2027oracle_ai_world_2026.html</guid>
-      <description>[Score: 90] オラクルは「Oracle AI World 2026」で、Googleが開発したAI専用チップ「Google TPU」をOracle Cloud Infrastructureに導入し、2027年からサービス提供を開始すると発表しました。 / Oracle Cloudは、Google TPUを大規模に展開するための電力、冷却、データセンターネットワークなどを提供します。 / これにより、Oracle Cloudの顧客はNVIDIA以外のAIプロセッサの選択肢も利用できるようになります。 (Source: Publickey)</description>
-      <pubDate>Tue, 27 Oct 2026 16:33:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub Universe 2026: スタックのあらゆる層を進化させる</title>
-      <link>https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/</guid>
-      <description>[Score: 90] GitHub Universe 2026では、開発者の仕事がAIアシスタントやエージェントとの協調作業へと変化している現状が語られました。 / GitHubは、世界で最も包括的なソフトウェアデリバリーシステムを目指し、そのビジョンを実現する新製品とインフラの再構築を発表。 / SDLCが線形ではなくなり、開発者が方向性を定め、エージェントが実装と検証を行う「エージェント型ソフトウェアデリバリーシステム」を提唱しています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 28 Oct 2026 16:09:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>Text-to-SQLの再考: 大規模言語モデルのアーキテクチャと戦略に関する調査</title>
-      <link>https://arxiv.org/abs/2611.00171</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.00171</guid>
-      <description>[Score: 90] Text-to-SQLタスクにおける大規模言語モデル（LLM）のアーキテクチャと戦略に関する包括的な調査です。 / 自然言語からSQLクエリを生成する技術の現状と将来の方向性を分析しています。 / データベース操作の自動化や自然言語インターフェースの発展に大きく貢献する可能性を秘めています。 (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 03 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>PostgreSQLの内部構造</title>
-      <link>https://www.interdb.jp/pg/index.html</link>
-      <guid isPermaLink="false">https://www.interdb.jp/pg/index.html</guid>
-      <description>[Score: 90] PostgreSQLの内部メカニズムを詳細に解説するドキュメントです。 / 各サブシステムの動作原理とPostgreSQL全体の構造を理解することを目的としています。 / バージョン19ベータ以前のPostgreSQLの管理と統合に不可欠な知識を提供します。 (Source: Hacker News)</description>
-      <pubDate>Tue, 03 Nov 2026 21:51:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>新しいRAG「Decision RAG」は速い！安い！上手い！🍜</title>
-      <link>https://qiita.com/kikuziro/items/cc82e6e4e4c215eac99f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kikuziro/items/cc82e6e4e4c215eac99f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 判断特化型モデルを活用した新しいRAG（Retrieval-Augmented Generation）である「Decision RAG」を紹介しています。 / 従来のRAGの課題である検索精度やコスト、速度を改善し、階層構造データに対して効率的な検索を実現します。 / 検証結果も示されており、NaiveRAGと比較して速度と精度が向上することが示唆されています。 (Source: Qiita)</description>
-      <pubDate>Sun, 01 Nov 2026 14:05:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
-      <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</guid>
-      <description>[Score: 90] GitHubは来年初頭に、従来比180倍のスループット性能向上を実現すると発表しました。 / これはMicrosoft Azureへの基盤移行と新アーキテクチャ採用により、AIエージェント時代に対応するためです。 / 大規模なエンジニアリング投資により、急増する負荷に対応し、信頼性を強化します。 (Source: Publickey)</description>
-      <pubDate>Tue, 03 Nov 2026 15:16:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>HNに伝える：Geminiは購読者（個人アカウント）のチャット履歴も学習している</title>
-      <link>https://news.ycombinator.com/item?id=50363461</link>
-      <guid isPermaLink="false">https://news.ycombinator.com/item?id=50363461</guid>
-      <description>[Score: 90] GoogleのAIモデルGeminiが、有料購読者を含む個人アカウントのチャット履歴を学習データとして利用しているとの情報が共有されました。 / これはユーザーのプライバシーに関する懸念を引き起こす可能性があります。 / AIサービスの利用規約やデータポリシーの透明性が改めて問われる事態です。 (Source: Hacker News)</description>
-      <pubDate>Wed, 04 Nov 2026 10:10:27 +0000</pubDate>
+      <title>AI駆動開発の次の段階: ソフトウェアファクトリー</title>
+      <link>https://qiita.com/Syoitu/items/9364a0a175893bb15219?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Syoitu/items/9364a0a175893bb15219?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 95] AI駆動開発の進化形として「ソフトウェアファクトリー」という概念を提唱しています。 / アイデアをチケットとして渡すと、アプリ開発を進めてくれる仕組みであり、DevinやCodex cloudなどの既存サービスとの関連性も示唆されています。 / Matt Pocock氏が提唱するソフトウェアファクトリーの用語集を紹介し、その定義や動作原理について解説しています。 (Source: Qiita)</description>
+      <pubDate>Wed, 04 Nov 2026 11:38:50 +0000</pubDate>
     </item>
     <item>
       <title>SigLIP2に匹敵する画像エンコーダーをフルスクラッチで開発した話</title>
@@ -112,18 +28,67 @@
       <pubDate>Wed, 04 Nov 2026 05:42:59 +0000</pubDate>
     </item>
     <item>
-      <title>良品計画 クレカ番号の全桁 約109万件が漏えいのおそれ | NHKニュース</title>
-      <link>https://news.web.nhk/newsweb/na/nd-20261104de70494</link>
-      <guid isPermaLink="false">https://news.web.nhk/newsweb/na/nd-20261104de70494</guid>
-      <description>[Score: 90] 良品計画で約109万件のクレジットカード番号全桁が漏えいした可能性があると発表された。 / 大規模な個人情報漏えい事件であり、顧客への影響が懸念される。 / 企業のセキュリティ対策の不備と、その社会的責任が問われる事態。 (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 04 Nov 2026 09:17:59 +0000</pubDate>
+      <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
+      <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</guid>
+      <description>[Score: 90] GitHubは来年初頭に、従来比180倍のスループット性能向上を実現すると発表しました。 / これはMicrosoft Azureへの基盤移行と新アーキテクチャ採用により、AIエージェント時代に対応するためです。 / 大規模なエンジニアリング投資により、急増する負荷に対応し、信頼性を強化します。 (Source: Publickey)</description>
+      <pubDate>Tue, 03 Nov 2026 15:16:22 +0000</pubDate>
     </item>
     <item>
-      <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
-      <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
-      <description>[Score: 85] オラクルが「Oracle App Composer」を発表し、社員がAIを使って業務アプリケーションを自動生成し、Oracle Cloud上で共有可能になります。 / チャット形式でアプリ内容を指示するだけで、OpenAIのCodexがコードを生成し、セキュリティチェック後にデプロイされます。 / 生成されたアプリは情報部門が一括管理でき、利用状況の把握や廃止も容易になります。 (Source: Publickey)</description>
-      <pubDate>Wed, 28 Oct 2026 15:39:53 +0000</pubDate>
+      <title>GitHub Universe 2026: スタックのあらゆる層を進化させる</title>
+      <link>https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/</guid>
+      <description>[Score: 90] GitHub Universe 2026では、開発者の仕事がAIアシスタントやエージェントとの協調作業へと変化している現状が語られました。 / GitHubは、世界で最も包括的なソフトウェアデリバリーシステムを目指し、そのビジョンを実現する新製品とインフラの再構築を発表。 / SDLCが線形ではなくなり、開発者が方向性を定め、エージェントが実装と検証を行う「エージェント型ソフトウェアデリバリーシステム」を提唱しています。 (Source: GitHub Blog)</description>
+      <pubDate>Wed, 28 Oct 2026 16:09:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>Images 2.6</title>
+      <link>https://openai.com/index/introducing-images-2-6/</link>
+      <guid isPermaLink="false">https://openai.com/index/introducing-images-2-6/</guid>
+      <description>[Score: 90] ChatGPT、Codex、APIにImages 2.6が導入され、画像生成が50%高速化されました。 / GIFアニメーションの生成や、編集時のキャラクター・製品の一貫性維持など、より高度な制御が可能になります。 / FlareとSunburstの2つのモデルが提供され、品質と速度に応じて選択できます。 (Source: Hacker News)</description>
+      <pubDate>Wed, 04 Nov 2026 23:35:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ripple-65B Preview: エージェント型コーディングで米国オープンウェイトSOTAを達成</title>
+      <link>https://www.ricursive.com/ripple</link>
+      <guid isPermaLink="false">https://www.ricursive.com/ripple</guid>
+      <description>[Score: 90] Ricursive Intelligenceは、エージェント型コーディングにおいて米国オープンウェイトSOTAを達成した言語モデル「Ripple-65B Preview」をリリースしました。 / このモデルは12兆トークンで事前学習され、最大1Mのコンテキスト長をサポートし、TerminalBench 2.1で80.52という高いスコアを記録しています。 / 効率的なモデルアーキテクチャにより、低遅延のトークン生成とローカルデバイスでの効率的な実行が可能です。 (Source: Hacker News)</description>
+      <pubDate>Wed, 04 Nov 2026 18:53:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>Kimi K3.1 Proモデルの重みが公開</title>
+      <link>https://huggingface.co/moonshotai/Kimi-K3.1-Pro</link>
+      <guid isPermaLink="false">https://huggingface.co/moonshotai/Kimi-K3.1-Pro</guid>
+      <description>[Score: 90] Kimi K3.1 Proは、オープンウェイトのマルチモーダルエージェントモデルです。 / 100万トークンのコンテキストウィンドウを持ち、コーディングや3D作成などで大幅な改善を実現しています。 / 効率的な長文コンテキストモデリングのため、Gated DeepSeek Sparse Attentionレイヤーを採用しています。 (Source: Hacker News)</description>
+      <pubDate>Wed, 04 Nov 2026 15:30:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>極端なデータスパース性シナリオにおける精密腫瘍学臨床ワークフローのためのEdge-to-Cloudスウォーム協調</title>
+      <link>https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-precision-oncology-clinical-workflows-for-extreme-data-2i2i</link>
+      <guid isPermaLink="false">https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-precision-oncology-clinical-workflows-for-extreme-data-2i2i</guid>
+      <description>[Score: 90] 精密腫瘍学におけるデータスパース性の課題に対し、Edge-to-Cloudのスウォーム協調アプローチを提案しています。 / 各エッジノードの軽量なエージェントが集合的に問題を推論し、クラウド層がグローバルな一貫性と監査証跡を提供します。 / これにより、単一ノードでは解決できない、分散した異種データを統合した臨床的意思決定が可能になります。 (Source: Dev.to)</description>
+      <pubDate>Thu, 05 Nov 2026 01:21:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIが40年分の技術的負債の解消を迫る</title>
+      <link>https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability</link>
+      <guid isPermaLink="false">https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability</guid>
+      <description>[Score: 85] AIの進化により、過去40年間にわたって蓄積されたレガシーソフトウェアの技術的負債が露呈しています。 / 最近発見されたPHP2Shellの脆弱性は、AI時代におけるサイバーセキュリティの新たな脅威を示唆しています。 / AIを活用した攻撃は、既存の脆弱性を悪用し、大規模なシステムに影響を与える可能性があります。 (Source: Hacker News)</description>
+      <pubDate>Wed, 04 Nov 2026 11:52:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>どっちが人間？ AIで声をクローンして、本人と聞き比べてみた</title>
+      <link>https://qiita.com/nakata-sapeet/items/f883c3cf009785c51bcc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/nakata-sapeet/items/f883c3cf009785c51bcc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AI音声クローンアプリ「VoiceStudio」を使用し、本人の声とAIが生成した声を比較検証。 / 15秒の録音から感情表現まで真似るAIの精度に驚き。 / クラウドサービス不要で手元のMacで動作する手軽さも特徴。 (Source: Qiita)</description>
+      <pubDate>Wed, 04 Nov 2026 00:30:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub、より高度なコードレビューを行う「Copilot Code Review Max」発表。GitHub Universe 2026</title>
+      <link>https://www.publickey1.jp/blog/26/githubcopilot_code_review_maxgithub_universe_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/githubcopilot_code_review_maxgithub_universe_2026.html</guid>
+      <description>[Score: 85] GitHubは「GitHub Universe 2026」で、より高度なコードレビュー機能「Copilot Code Review Max」を発表しました。 / これは複数のAIモデルと独立したレビューエージェントを活用し、従来のCopilot Code Reviewよりも詳細なレビューを提供します。 / AI生成コードの増加に伴い、ソフトウェア品質維持のためのコードレビューの重要性が高まっています。 (Source: Publickey)</description>
+      <pubDate>Tue, 03 Nov 2026 15:14:57 +0000</pubDate>
     </item>
     <item>
       <title>Octoverse: 2026年にコミットとプッシュが過去最高を記録、開発者はエージェントと共に構築</title>
@@ -133,18 +98,53 @@
       <pubDate>Wed, 28 Oct 2026 16:07:40 +0000</pubDate>
     </item>
     <item>
-      <title>大規模推論モデルにおける早期停止: 効率と信頼性に関する調査と実証的監査</title>
-      <link>https://arxiv.org/abs/2611.00166</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.00166</guid>
-      <description>[Score: 85] 大規模推論モデルにおける早期停止手法の包括的な調査です。 / モデルの効率性と信頼性を向上させるための実証的な監査を行っています。 / AIモデルの最適化と性能改善に関心のある研究者や開発者にとって有用な情報を提供します。 (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 03 Nov 2026 05:00:00 +0000</pubDate>
+      <title>ホワイトハウスのネットワークで住宅用プロキシが検出される</title>
+      <link>https://layer3intel.com/blog/residential-proxies-white-house-network</link>
+      <guid isPermaLink="false">https://layer3intel.com/blog/residential-proxies-white-house-network</guid>
+      <description>[Score: 85] Layer3 Intelの観測により、ホワイトハウスのネットワーク（AS2650）で住宅用プロキシの利用が確認されました。 / これは、デバイスがプロキシSDKに感染している可能性を示唆しており、夜間の活動パターンから個人による利用が疑われます。 / この事実は、誰でも数ドルで利用できる公開プロキシサービスを通じて偶然発見されました。 (Source: Hacker News)</description>
+      <pubDate>Wed, 04 Nov 2026 20:45:18 +0000</pubDate>
     </item>
     <item>
-      <title>Safari 27.3でアダプティブダークモードを導入</title>
-      <link>https://webkit.org/blog/18541/introducing-adaptive-dark-mode/</link>
-      <guid isPermaLink="false">https://webkit.org/blog/18541/introducing-adaptive-dark-mode/</guid>
-      <description>[Score: 85] Safari 27.3ベータ版でアダプティブダークモードが導入されました。 / これにより、ダークモードをサポートしないウェブサイトも自動的にダーク表示に変換されます。 / ユーザーは一貫したダークモード体験を享受できるようになります。 (Source: Hacker News)</description>
-      <pubDate>Tue, 03 Nov 2026 21:39:05 +0000</pubDate>
+      <title>C/Rust/Julia/Go/Java/JS/PyPy/LuaJIT 実行速度ベンチマーク ― 競プロと科学計算のあいだ</title>
+      <link>https://zenn.dev/trbx304/articles/34fec79781e39c</link>
+      <guid isPermaLink="false">https://zenn.dev/trbx304/articles/34fec79781e39c</guid>
+      <description>[Score: 85] C、Rust、Julia、Go、Java、Node、Bun、PyPy、LuaJITの9処理系で実行速度を比較するベンチマーク記事です。 / エラトステネスの篩、ビット全探索、方程式、行列積の4種目で測定し、言語ごとの特性や最適化の違いを分析しています。 / 特にビット全探索ではCとRustが分岐予測の最適化によりGoに大差をつけたことが示され、低レベル最適化の重要性が浮き彫りになりました。 (Source: Zenn)</description>
+      <pubDate>Wed, 04 Nov 2026 13:20:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHubのruleset移行時に注意したい、environment secretのブランチ保護仕様</title>
+      <link>https://zenn.dev/loglass/articles/a89a8d4ee86559</link>
+      <guid isPermaLink="false">https://zenn.dev/loglass/articles/a89a8d4ee86559</guid>
+      <description>[Score: 85] GitHubのrulesetとenvironment secretのブランチ保護機能に関する注意点を解説しています。 / write権限を持つユーザーがworkflowを通じてsecretにアクセスできるセキュリティリスクと、その対策としてのenvironment secretの利用が紹介されています。 / rulesetで保護されたブランチが「Protected branches only」設定で期待通りに扱われない可能性を検証し、セキュリティ設定の落とし穴を指摘しています。 (Source: Zenn)</description>
+      <pubDate>Wed, 04 Nov 2026 06:26:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>[AWS]日本語OCRがついにきちゃー！ ~Textractにいろいろ読ませてみた~</title>
+      <link>https://qiita.com/kikuziro/items/9aff0fefe89cfa13192e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kikuziro/items/9aff0fefe89cfa13192e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AWSのAmazon Textractが日本語OCRに対応し、東京リージョンで利用可能になりました。 / これにより、S3からTextract、Bedrockへのデータ連携がAWS内で完結し、運用が簡素化されます。 / 横書き印刷文字の認識精度は非常に高く、コスト面でもLLMより優位性があることが示されています。 (Source: Qiita)</description>
+      <pubDate>Tue, 03 Nov 2026 13:54:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research</title>
+      <link>https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</guid>
+      <description>[Score: 85] 2026年第3四半期のクラウドインフラ市場は前年比55%増と過去最高の成長率を記録し、市場規模は1680億ドルに達しました。 / AWSのシェアは2ポイント後退して26%となり、Microsoft Azureは1ポイント減の19%、Google Cloudは1ポイント増の16%となりました。 / AIワークロードに特化した「ネオクラウド」ベンダーが台頭し、市場競争が激化しています。 (Source: Publickey)</description>
+      <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub Copilot Dreaming」発表。作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理、アップデート。GitHub Universe 2026</title>
+      <link>https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</guid>
+      <description>[Score: 85] GitHubは「GitHub Copilot Dreaming」を発表しました。 / これは、AIモデルへの指示内容が作業の進行や環境の変化によって古くなる問題を解決する新機能です。 / バックグラウンドで自動的にパーソナルメモリやガイダンスを整理・更新し、常に最適なAIアシスタンスを提供します。 (Source: Publickey)</description>
+      <pubDate>Wed, 04 Nov 2026 15:15:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>生成 AI が進化する今こそ、「人材育成」が経営の重要課題ではないか</title>
+      <link>https://qiita.com/Takashi_Masumori/items/3c3091a6142d3e05385b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Takashi_Masumori/items/3c3091a6142d3e05385b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] 生成AIの進化に伴い、企業における人材育成の重要性が増していると指摘。 / AIを使いこなすには専門性、判断力、伝える力が不可欠であり、マネジメントの延長線上にあると提言。 / AIによる生産性向上と人材育成のバランスが、将来の組織力に影響すると警鐘を鳴らす。 (Source: Qiita)</description>
+      <pubDate>Sun, 01 Nov 2026 23:53:15 +0000</pubDate>
     </item>
   </channel>
 </rss>
