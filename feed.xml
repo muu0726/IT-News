@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 01:53:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 13:17:48 +0000</lastBuildDate>
     <item>
       <title>AI駆動開発の次の段階: ソフトウェアファクトリー</title>
       <link>https://qiita.com/Syoitu/items/9364a0a175893bb15219?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
@@ -70,11 +70,53 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
+      <title>マーク・キューバンがFacebookがAIディープフェイク詐欺広告を意図的に実行していると発言、Metaの文書は160億ドルの詐欺関連収益を明らかに</title>
+      <link>https://www.reddit.com/r/technology/comments/1xoqri7/mark_cuban_says_facebook_knowingly_runs_ai/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xoqri7/mark_cuban_says_facebook_knowingly_runs_ai/</guid>
+      <description>[Score: 90] マーク・キューバンが、FacebookがAIディープフェイク詐欺広告を意図的に掲載していると主張しました。 / Metaの内部文書からは、詐欺関連で160億ドルもの収益があったことが示唆されています。 / これは、AI技術の悪用とプラットフォームの責任に関する深刻な問題提起です。 [実務示唆: AI技術を用いたディープフェイク詐欺広告の横行は、プラットフォームの信頼性を損なうため、広告主は掲載先の選定に注意し、プラットフォーム側はAIによる検出と対策を強化すべきです。] (Source: Reddit)</description>
+      <pubDate>Thu, 05 Nov 2026 18:47:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claudeを使いこなす人に、MagicPodは要るのか。知らないアプリでPlaywrightと比べた記録</title>
+      <link>https://zenn.dev/genda_jp/articles/7b423bcd20b532</link>
+      <guid isPermaLink="false">https://zenn.dev/genda_jp/articles/7b423bcd20b532</guid>
+      <description>[Score: 90] 本記事は、Claudeを使ってMagicPodとPlaywrightでE2Eテストを生成し、その違いを比較検証した記録です。 / ClaudeがMagicPod MCPサーバーを通じてテストケースを作成・編集・実行できるようになったことを受け、「ClaudeにPlaywrightのテストを書かせれば良いのでは？」という疑問から検証が始まりました。 / 結果として、Claudeによるテスト生成段階では両者に決定的な差はなく、テストの保守・運用フェーズでMagicPodの価値が見出される可能性が示唆されました。 [実務示唆: AIによるテストコード生成を検討する際は、生成されたコードの保守性や、チームでの運用体制を考慮し、MagicPodのようなツールとPlaywrightのようなフレームワークのどちらが適しているか評価しましょう。] (Source: Zenn)</description>
+      <pubDate>Fri, 06 Nov 2026 05:13:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>spec as code ではなく、code as spec — 仕様書のように書かれたコードを正にする</title>
+      <link>https://zenn.dev/ruri/articles/code-as-spec</link>
+      <guid isPermaLink="false">https://zenn.dev/ruri/articles/code-as-spec</guid>
+      <description>[Score: 90] 厳密な仕様書がコードに似ていく問題提起から、「仕様書のように読めるコード」を仕様の正（SSoT）とするアプローチを提唱しています。 / ドメインモデリングされた可読性の高いコードを重視し、コンパイラやテストによる検証可能性を強調。 / 自然言語の仕様書はコードに現れない目的やスコープに限定し、ユースケースや要件はテストで記述することを推奨しています。 [実務示唆: 仕様書はコードに現れない情報に限定し、ドメインモデリングされた可読性の高いコードを仕様の正とすることで、保守性と信頼性の高いシステム開発を目指しましょう。] (Source: Zenn)</description>
+      <pubDate>Thu, 05 Nov 2026 23:00:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>セキュリティ啓発団体に不正アクセス 個人情報最大1.5万件漏えいか</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/06/2000002978/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/06/2000002978/</guid>
+      <description>[Score: 90] 日本ネットワークセキュリティ協会（JNSA）が運営する「情報セキュリティ理解度チェックサービス」が不正アクセスを受けました。 / 最大1万5128件の個人情報（ID、ハッシュ化パスワード、氏名、企業名など）が漏えいした可能性があり、サービスは停止中です。 / セキュリティ啓発団体自身が被害に遭ったことで、改めて情報セキュリティ対策の重要性が浮き彫りになっています。 [実務示唆: 自身のサービスや利用している外部サービスのセキュリティ対策状況を再確認し、多要素認証の導入やパスワードの使い回し停止を徹底すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 06 Nov 2026 08:41:42 +0000</pubDate>
+    </item>
+    <item>
       <title>Inkling 2 Small発表：594BパラメータのMixture-of-Expertsモデル</title>
       <link>https://thinkingmachines.ai/news/inkling-2-small/</link>
       <guid isPermaLink="false">https://thinkingmachines.ai/news/inkling-2-small/</guid>
       <description>[Score: 88] Thinking Machinesは、第2世代モデル「Inkling 2 Small」を発表しました。これは594Bの総パラメータと17Bのアクティブパラメータを持つMixture-of-Expertsモデルです。 / 画像入力と可変の計算努力をサポートし、エージェントコーディング、ビジョン、知識作業、推論において大幅な性能向上を達成しています。 / 当初はTinkerを通じてクローズドウェイトで提供されますが、外部の安全性テスト完了後、Apache 2.0ライセンスでフルウェイトが公開される予定です。 [実務示唆: AI開発者は、Inkling 2 Smallの公開ウェイトリリースに注目し、その高度なエージェント機能とビジョン能力を自身のプロジェクトや研究に活用することを検討してください。] (Source: Hacker News)</description>
       <pubDate>Fri, 06 Nov 2026 00:00:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>そろそろ共通鍵暗号・公開鍵暗号についてちゃんと理解する</title>
+      <link>https://qiita.com/tomo-ryo/items/7cbf2881a9c8c8cf3656?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/tomo-ryo/items/7cbf2881a9c8c8cf3656?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] 共通鍵暗号方式と公開鍵暗号方式の基本から、それぞれの課題と解決策を体系的に解説しています。 / 鍵配送問題、ハイブリッド暗号方式、中間者攻撃、デジタル署名、電子証明書といった関連技術を順を追って説明。 / 最終的に、これら全てを組み合わせた実例としてTLSの仕組みに触れ、暗号技術全体の理解を深めることを目的としています。 [実務示唆: 暗号技術の基本原理と課題、そしてそれらを解決する技術（ハイブリッド暗号、デジタル署名、電子証明書）を理解し、TLSなどの実用的なセキュリティプロトコルの仕組みを把握しましょう。] (Source: Qiita)</description>
+      <pubDate>Wed, 04 Nov 2026 00:40:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>osFoundryとは何か、そしてこのデスクトップAIワークスペースはどのように機能するのか？</title>
+      <link>https://dev.to/tauchi-hi/osfoundry-kyaa-hai-aur-yh-ddeskttonp-ai-vrkspes-kaise-kaam-krtaa-hai-3fig</link>
+      <guid isPermaLink="false">https://dev.to/tauchi-hi/osfoundry-kyaa-hai-aur-yh-ddeskttonp-ai-vrkspes-kaise-kaam-krtaa-hai-3fig</guid>
+      <description>[Score: 88] osFoundryは、AIモデルとのチャット、エージェントへのタスク割り当て、ノート管理、ローカルモデル実行、カスタムアプリ作成が可能なデスクトップAIワークスペースです。 / 複数のAIツールや情報源が散在する現状の課題を解決し、一貫したコンテキストとメモリを共有する統合環境を提供します。 / VS Codeに似たインターフェースで、チャット、ワークステーション、ナレッジ、ローカルモデル、カスタムアプリ、ディスカバーのカテゴリに分かれています。 [実務示唆: AIを活用した開発や作業の効率化を目指すエンジニアは、osFoundryのような統合型AIワークスペースを試用し、複数のAIツールや情報源を横断する際のコンテキスト管理の改善を検討しましょう。] (Source: Dev.to)</description>
+      <pubDate>Fri, 06 Nov 2026 13:12:02 +0000</pubDate>
     </item>
     <item>
       <title>クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research</title>
@@ -103,48 +145,6 @@
       <guid isPermaLink="false">https://zenn.dev/kkoch5t2/articles/aws-iceberg-lakehouse-lab</guid>
       <description>[Score: 85] 本記事では、AWS上でデータレイクハウスを構築し、Amazon S3、AWS Glue Data Catalog、Amazon Athena、Apache Icebergを組み合わせて検証した事例を紹介しています。 / テーブルの作成からデータの追加・更新・削除、過去のスナップショット参照（Version Travel）、ファイルの最適化まで一連の操作を試行し、SQL実行結果とS3上のParquetファイル、メタデータを確認しながら仕組みを整理しました。 / Apache IcebergがS3上のデータファイルを直接管理するのではなく、メタデータを通してテーブルの状態を管理する仕組みが重要であると解説しています。 [実務示唆: データレイクハウス構築を検討するエンジニアは、Apache IcebergとAWSサービスを組み合わせたデータ管理の仕組みを理解し、履歴管理や更新処理の要件に合わせて導入を検討すべきです。] (Source: Zenn)</description>
       <pubDate>Thu, 05 Nov 2026 17:56:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>Linuxカーネルの深刻な脆弱性／FDEの名前で単なるコンサルティングが販売／TypeScriptをRustに移植した「tsrs」発表ほか、2026年10月の人気記事</title>
-      <link>https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</guid>
-      <description>[Score: 85] 2026年10月の人気記事として、Linuxカーネルの深刻な脆弱性「PwnEscape」が報じられました。 / また、FDE（フォワードデプロイエンジニアリング）の名目でコンサルティングが販売されるリスクが指摘されています。 / CloudflareがTypeScriptをRustに移植した「tsrs」を発表し、メモリ使用量と速度で大幅な改善が見られます。 [実務示唆: Linuxカーネルの脆弱性「PwnEscape」はゲストVMからホストOSへの不正コード実行の可能性があるため、速やかにパッチ適用やセキュリティ対策の確認を行うべきです。] [GitHub: cloudflare/tsrs] (Source: Publickey)</description>
-      <pubDate>Thu, 05 Nov 2026 15:37:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>オープンモデル vs Claude: Kimi K3、GLM 5.3、DeepSeek V4 ProとSonnet 5.5、Opus 5.5の比較</title>
-      <link>https://dev.to/xiun_xiao_6eae2df5c108c5f/open-models-vs-claude-kimi-k3-glm-53-and-deepseek-v4-pro-against-sonnet-55-and-opus-55-3f1d</link>
-      <guid isPermaLink="false">https://dev.to/xiun_xiao_6eae2df5c108c5f/open-models-vs-claude-kimi-k3-glm-53-and-deepseek-v4-pro-against-sonnet-55-and-opus-55-3f1d</guid>
-      <description>[Score: 85] この記事では、オープンモデルとClaudeモデルの性能とコストを比較しています。 / QuickSilver Proの価格設定により、Claudeモデルのコストが大幅に削減されたため、オープンモデルを選択する従来の理由が再検討されています。 / 17のタスクセット（コード、JSON、数学）を用いて、Kimi K3、GLM 5.3、DeepSeek V4 ProとClaude Sonnet 5.5、Opus 5.5が評価されました。 [実務示唆: LLM選定時には、価格だけでなく、特定のタスクにおける性能とコスト効率を詳細に比較検討し、自社のユースケースに最適なモデルを選択すること。] (Source: Dev.to)</description>
-      <pubDate>Fri, 06 Nov 2026 01:44:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>Slurm は Kaggle で役に立つ</title>
-      <link>https://zenn.dev/pomcho555/articles/c455d086ec47af</link>
-      <guid isPermaLink="false">https://zenn.dev/pomcho555/articles/c455d086ec47af</guid>
-      <description>[Score: 82] Slurmはスパコンや研究室のGPUクラスタで使われるジョブスケジューラですが、自宅のGPU1枚でのKaggle実験でも非常に有用であることが紹介されています。 / 筆者はKaggleのコンペでRTX 3090を使い、41日間で253本の学習ジョブをSlurmで管理し、GPUを延べ469時間活用しました。 / Slurmの導入はAI（Claude CodeやCodex）に任せることで約25分で完了し、AIエージェントと組み合わせることでセッションが切れても学習が継続される利点も強調されています。 [実務示唆: KaggleやGPUを使った個人開発でジョブ管理に課題を感じる場合、Slurmを導入し、AIアシスタントを活用してセットアップを自動化することで、効率的な実験環境を構築できます。] (Source: Zenn)</description>
-      <pubDate>Thu, 05 Nov 2026 11:54:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>オープンソースAIのためのMCPプロトコルの解明</title>
-      <link>https://dev.to/tercelyi/demystifying-the-mcp-protocol-for-open-source-ai-39da</link>
-      <guid isPermaLink="false">https://dev.to/tercelyi/demystifying-the-mcp-protocol-for-open-source-ai-39da</guid>
-      <description>[Score: 80] MCPプロトコルは多くのオープンソースAIワークフローにおける接続基盤ですが、しばしばブラックボックスとして扱われます。 / 本記事では、MCPの重要性、A2AやCLIアダプターとの関連、apcoreのようなランタイムがガバナンスや監査、マルチプロトコルギャップを埋める役割を解説します。 / エージェントやモデルがリモートツールを発見、記述、呼び出す方法を定義し、責任あるエージェント開発にはガバナンス層が不可欠です。 [実務示唆: オープンソースAIエージェント開発者は、MCPプロトコル準拠だけでなく、ガバナンス、テスト可能性、エンタープライズ対応を考慮したモジュール設計を心がけ、apcoreのようなランタイムの活用を検討すべきです。] (Source: Dev.to)</description>
-      <pubDate>Fri, 06 Nov 2026 01:44:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>Inkling 2 Smallが登場 — ウェイトはまだ。今どうすべきか</title>
-      <link>https://dev.to/paullovelace/inkling-2-small-is-here-the-weights-arent-what-to-do-now-3292</link>
-      <guid isPermaLink="false">https://dev.to/paullovelace/inkling-2-small-is-here-the-weights-arent-what-to-do-now-3292</guid>
-      <description>[Score: 80] Thinking Machines Labが5940億パラメータのInkling 2 Smallを発表しましたが、ダウンロード可能なウェイトはまだ公開されていません。 / このモデルは長期間の自律作業、コーディング、ビジョン、知識タスクを目的とし、Artificial Analysis Intelligence Indexで31点を獲得しています。 / ウェイトは外部の安全性テストとレッドチーム評価が完了次第、Apache 2.0ライセンスで公開される予定です。 [実務示唆: Inkling 2 Smallのような高性能モデルの発表時は、ウェイトの公開状況やライセンスを確認し、すぐに利用できない場合はTinkerプラットフォームでの試用を検討すること。] (Source: Dev.to)</description>
-      <pubDate>Fri, 06 Nov 2026 01:43:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>信頼度ゲート付き階層型LLM推論の実現可能性条件</title>
-      <link>https://arxiv.org/abs/2611.05394</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.05394</guid>
-      <description>[Score: 80] 本記事は、信頼度に基づいて推論を制御する階層型LLM（大規模言語モデル）の実現可能性について考察しています。 / 推論の効率性と精度を両立させるための条件を分析しています。 / arXivLabsの紹介文が本文抜粋として提供されていますが、記事内容はタイトルから推測されます。 [実務示唆: LLMの推論コストと性能のバランスを最適化するため、信頼度ゲート付き階層型推論の導入を検討し、その実現可能性条件を評価してください。] (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 05 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

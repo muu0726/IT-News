@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 01:53:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 13:17:48 +0000</lastBuildDate>
     <item>
       <title>sshole: Unixパスワード認証の歴史とmusl libcの挙動</title>
       <link>https://sshhole.com</link>
@@ -26,6 +26,34 @@
       <guid isPermaLink="false">https://www.cve.org/CVERecord?id=CVE-2026-83844</guid>
       <description>[Score: 90] Microsoft Paintにリモートコード実行の脆弱性(CVE-2026-83844)が発見されました。 / この脆弱性は、攻撃者が悪意のあるファイルを介してユーザーのシステム上で任意のコードを実行できる可能性があります。 / 詳細な情報はCVEのレコードで確認できますが、早期の対応が推奨されます。 [実務示唆: MS Paintを使用しているWindowsユーザーは、この脆弱性に対するパッチがリリースされ次第、速やかにシステムをアップデートし、セキュリティリスクを軽減してください。] (Source: Hacker News)</description>
       <pubDate>Thu, 05 Nov 2026 20:43:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>マーク・キューバンがFacebookがAIディープフェイク詐欺広告を意図的に実行していると発言、Metaの文書は160億ドルの詐欺関連収益を明らかに</title>
+      <link>https://www.reddit.com/r/technology/comments/1xoqri7/mark_cuban_says_facebook_knowingly_runs_ai/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xoqri7/mark_cuban_says_facebook_knowingly_runs_ai/</guid>
+      <description>[Score: 90] マーク・キューバンが、FacebookがAIディープフェイク詐欺広告を意図的に掲載していると主張しました。 / Metaの内部文書からは、詐欺関連で160億ドルもの収益があったことが示唆されています。 / これは、AI技術の悪用とプラットフォームの責任に関する深刻な問題提起です。 [実務示唆: AI技術を用いたディープフェイク詐欺広告の横行は、プラットフォームの信頼性を損なうため、広告主は掲載先の選定に注意し、プラットフォーム側はAIによる検出と対策を強化すべきです。] (Source: Reddit)</description>
+      <pubDate>Thu, 05 Nov 2026 18:47:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>セキュリティ啓発団体に不正アクセス 個人情報最大1.5万件漏えいか</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/06/2000002978/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/06/2000002978/</guid>
+      <description>[Score: 90] 日本ネットワークセキュリティ協会（JNSA）が運営する「情報セキュリティ理解度チェックサービス」が不正アクセスを受けました。 / 最大1万5128件の個人情報（ID、ハッシュ化パスワード、氏名、企業名など）が漏えいした可能性があり、サービスは停止中です。 / セキュリティ啓発団体自身が被害に遭ったことで、改めて情報セキュリティ対策の重要性が浮き彫りになっています。 [実務示唆: 自身のサービスや利用している外部サービスのセキュリティ対策状況を再確認し、多要素認証の導入やパスワードの使い回し停止を徹底すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 06 Nov 2026 08:41:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>そろそろ共通鍵暗号・公開鍵暗号についてちゃんと理解する</title>
+      <link>https://qiita.com/tomo-ryo/items/7cbf2881a9c8c8cf3656?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/tomo-ryo/items/7cbf2881a9c8c8cf3656?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] 共通鍵暗号方式と公開鍵暗号方式の基本から、それぞれの課題と解決策を体系的に解説しています。 / 鍵配送問題、ハイブリッド暗号方式、中間者攻撃、デジタル署名、電子証明書といった関連技術を順を追って説明。 / 最終的に、これら全てを組み合わせた実例としてTLSの仕組みに触れ、暗号技術全体の理解を深めることを目的としています。 [実務示唆: 暗号技術の基本原理と課題、そしてそれらを解決する技術（ハイブリッド暗号、デジタル署名、電子証明書）を理解し、TLSなどの実用的なセキュリティプロトコルの仕組みを把握しましょう。] (Source: Qiita)</description>
+      <pubDate>Wed, 04 Nov 2026 00:40:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>インプレス、セキュリティ書籍9冊を全文無料公開。11月9日まで</title>
+      <link>https://pc.watch.impress.co.jp/docs/news/2153924.html</link>
+      <guid isPermaLink="false">https://pc.watch.impress.co.jp/docs/news/2153924.html</guid>
+      <description>[Score: 75] インプレスが、セキュリティ関連の書籍9冊を11月5日から9日までの期間限定で全文無料公開しています。 / 不正アクセスやランサムウェア攻撃への関心の高まりを受け、情報セキュリティの普及啓発を目的とした施策です。 / 会員登録不要でWebブラウザから閲覧可能で、「ゼロトラスト」「Webアプリのセキュアコーディング」など多岐にわたるテーマが含まれます。 [実務示唆: セキュリティ知識の習得や最新動向のキャッチアップのため、無料公開期間中にこれらの書籍を読み、自身の開発や運用に役立つ情報を得るべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 05 Nov 2026 07:40:34 +0000</pubDate>
     </item>
   </channel>
 </rss>

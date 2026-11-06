@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 01:53:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 13:17:48 +0000</lastBuildDate>
     <item>
       <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
       <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
@@ -49,11 +49,39 @@
       <pubDate>Thu, 05 Nov 2026 15:37:44 +0000</pubDate>
     </item>
     <item>
+      <title>11年間オープンソースのフィーチャーフラグサーバーを構築してきました</title>
+      <link>https://github.com/Unleash/unleash</link>
+      <guid isPermaLink="false">https://github.com/Unleash/unleash</guid>
+      <description>[Score: 85] Unleashは、11年間開発されてきた強力なオープンソースのフィーチャーマネジメントソリューションです。 / 開発ワークフローを効率化し、ソフトウェアデリバリーを加速させ、新機能のロールアウトを制御する能力をチームに与えます。 / 15以上の公式SDKと15以上のコミュニティSDKをサポートし、あらゆる言語とフレームワークに対応しています。 [実務示唆: フィーチャーフラグ導入を検討しているチームは、Unleashのオープンソース版またはエンタープライズ版を試用し、リスクの少ないリリースと並行開発を実現しましょう。] [GitHub: Unleash/unleash] (Source: Hacker News)</description>
+      <pubDate>Fri, 06 Nov 2026 11:40:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>リモートのエージェントが起動した dev server を手元でプレビュー：VS Code 1.145 の Remote browser proxy を試した</title>
+      <link>https://qiita.com/shahin0809/items/a1bd931855f392806ee6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/shahin0809/items/a1bd931855f392806ee6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] VS Code 1.145で、リモートエージェントが起動した開発サーバーをローカルのAgentsウィンドウで直接プレビューできるようになりました。 / ポート転送なしでリモートホストのWebアプリにアクセス可能になり、開発体験が向上します。 / Azure VMとSSH接続で検証した結果と、Preview機能としての制限やセキュリティ上の注意点も解説されています。 [実務示唆: VS CodeのRemote Agents機能を利用している開発者は、1.145以降でポート転送なしのプレビューが可能になったため、開発環境のセットアップを簡素化できるか検証を推奨します。] [GitHub: microsoft/vscode] (Source: Qiita)</description>
+      <pubDate>Fri, 06 Nov 2026 07:28:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>手動キャプション作成をやめる：ElevenLabsのタイムスタンプからRemotionで単語ごとのキャプションを生成</title>
+      <link>https://dev.to/heynstudio/stop-hand-timing-captions-word-by-word-remotion-captions-from-elevenlabs-timestamps-1ell</link>
+      <guid isPermaLink="false">https://dev.to/heynstudio/stop-hand-timing-captions-word-by-word-remotion-captions-from-elevenlabs-timestamps-1ell</guid>
+      <description>[Score: 80] ElevenLabsで生成された音声とRemotionでキャプションを作成する際、手動でのキャプションタイミング調整は非効率的でエラーが発生しやすいです。 / ElevenLabsのwith-timestampsエンドポイントは、音声と文字ごとの開始・終了時間を同時に提供します。 / これにより、正確な単語ごとのキャプションを自動生成でき、スクリプト変更時の再調整や音声認識の不一致問題を解消できます。 [実務示唆: 動画コンテンツのキャプション作成において、ElevenLabsのwith-timestamps機能とRemotionを組み合わせることで、手動調整なしで高精度な単語ごとのキャプションを自動生成し、作業効率を大幅に向上させましょう。] (Source: Dev.to)</description>
+      <pubDate>Fri, 06 Nov 2026 13:12:57 +0000</pubDate>
+    </item>
+    <item>
       <title>アクセシビリティステートメントがGitHubに登場</title>
       <link>https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</link>
       <guid isPermaLink="false">https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</guid>
       <description>[Score: 75] GitHubは、リポジトリの概要ページにACCESSIBILITY.mdファイルを表示する機能を追加しました。 / これにより、プロジェクトのアクセシビリティ目標、貢献者の期待、既知の制限などを一元的に説明できるようになります。 / ACCESSIBILITY.mdファイルは、リポジトリのルート、.github/ディレクトリ、またはdocs/ディレクトリに配置でき、組織の.github/リポジトリから継承することも可能です。 [実務示唆: 自身のGitHubリポジトリにACCESSIBILITY.mdファイルを追加し、プロジェクトのアクセシビリティに関する情報を明確にすることで、より多くのユーザーと貢献者にとって利用しやすい環境を整備すること。] [GitHub: github/docs] (Source: GitHub Blog)</description>
       <pubDate>Thu, 05 Nov 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>請求書エクスポートのリトライキュー：月全体を再実行しない</title>
+      <link>https://dev.to/browser_act_e2505dbdf454a/a-retry-queue-for-invoice-exports-dont-rerun-the-entire-month-4da1</link>
+      <guid isPermaLink="false">https://dev.to/browser_act_e2505dbdf454a/a-retry-queue-for-invoice-exports-dont-rerun-the-entire-month-4da1</guid>
+      <description>[Score: 75] 請求書エクスポート処理でエラーが発生した場合、月全体を再実行するのではなく、失敗した特定の請求書のみをリトライする仕組みが有効です。 / リトライの単位は「期待される請求書」とし、(サプライヤー、アカウント参照、ドキュメントタイプ、請求書番号)のような識別子で管理します。 / パスワードや機密情報をリトライログに含めず、各請求書の期待される状態と実際の状態を明確に区別して記録することが重要です。 [実務示唆: バッチ処理やデータエクスポート機能の実装において、エラー発生時のリカバリ効率を高めるため、処理単位を細分化し、特定の失敗項目のみをリトライできる堅牢なキューシステムを設計・導入しましょう。] (Source: Dev.to)</description>
+      <pubDate>Fri, 06 Nov 2026 13:11:18 +0000</pubDate>
     </item>
     <item>
       <title>JavaScriptとHTML5 Canvasでブラウザベースのジグソーパズルゲームを構築する方法</title>
