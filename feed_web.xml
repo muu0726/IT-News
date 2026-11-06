@@ -5,62 +5,62 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 05 Nov 2026 13:03:34 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 01:53:55 +0000</lastBuildDate>
     <item>
-      <title>JavaScriptランタイムの「Bun」がPrettier互換で300倍以上高速なフォーマッタに。Prettier設定ファイルもそのまま利用可能</title>
-      <link>https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/javascriptbunprettier300prettier.html</guid>
-      <description>[Score: 88] JavaScriptランタイム「Bun」の最新バージョンv1.4.4に、Prettier互換の高速フォーマッタ「bun fmt」が搭載されました。 / 「bun fmt」はPrettierのテストスイートの99%以上をクリアし、既存のPrettier設定ファイルをそのまま利用可能です。 / Prettierと比較して最大320倍高速で、メモリ消費量も5分の1以下とされており、開発効率の大幅な向上が期待されます。 (Source: Publickey)</description>
-      <pubDate>Tue, 27 Oct 2026 15:27:52 +0000</pubDate>
+      <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
+      <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</guid>
+      <description>[Score: 90] GitHubは来年初頭に、従来比180倍のスループット性能向上を実現すると発表しました。 / これはMicrosoft Azureへの基盤移行と新アーキテクチャ採用により、AIエージェント時代に対応するためです。 / 大規模なエンジニアリング投資により、急増する負荷に対応し、信頼性を強化します。 (Source: Publickey)</description>
+      <pubDate>Tue, 03 Nov 2026 15:16:22 +0000</pubDate>
     </item>
     <item>
-      <title>エージェントスケールGitインフラへの架け橋</title>
-      <link>https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</guid>
-      <description>[Score: 88] 過去1年間でGitトラフィックが指数関数的に増加する中、GitHubのGitリポジトリの99.99999%が自社データセンターとAzureの両方に存在するように移行しました。 / この移行は、エージェントシフトによる急速なトラフィック増加、データセンターの電力容量の限界、物理的なサプライチェーンの制約によって推進されました。 / GitHubは、まずデータを移行し、その後アーキテクチャを進化させるという慎重なアプローチを取り、Gitインフラのスケーラビリティを確保しています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 21 Oct 2026 16:00:00 +0000</pubDate>
+      <title>AI生成コードを本番品質に保つためのフロントエンド開発の仕組み</title>
+      <link>https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99</link>
+      <guid isPermaLink="false">https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99</guid>
+      <description>[Score: 90] AI生成コードの品質は、プロンプトの工夫よりもAIの外側に用意された「仕組み」で決まると筆者は主張し、Next.jsとTypeScriptのフロントエンド開発を例に本番品質を保つための4つの層を紹介しています。 / AIに渡すコンテキスト、機械的なガードレール、テスト、CIと人間のレビューという層を通じて、AIが推測で埋める範囲を減らし、プロジェクトの慣習に沿わないコードを早期に検出・修正する仕組みを構築します。 / AI共作コードは人のみのコードに比べて指摘事項が多いというレポートも引用し、AIの導入がデリバリーの安定性を損なわないよう「制御の仕組み」の重要性を強調しています。 [実務示唆: AI生成コードを開発に導入する際は、AIに与えるコンテキストの明確化、Lintや型チェックなどの機械的ガードレール、自動テスト、CI/CDと人間のレビューを組み合わせた多層的な品質保証体制を構築すべきです。] (Source: Zenn)</description>
+      <pubDate>Thu, 05 Nov 2026 09:00:55 +0000</pubDate>
     </item>
     <item>
-      <title>元フロントエンドエンジニアがプロダクトエンジニアとして強制成長した1年</title>
-      <link>https://zenn.dev/dress_code/articles/bbc5159fefbd2c</link>
-      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/bbc5159fefbd2c</guid>
-      <description>[Score: 85] フロントエンドエンジニアがプロダクトエンジニアとしてフルスタック開発を経験した1年間の振り返り記事です。 / バックエンドやインフラの知識を習得し、AWS CDKやDatadogを使った監視・調査も担当するようになりました。 / AIの活用によりコード記述時間は短縮されたものの、問題解決の質が向上したと述べています。 (Source: Zenn)</description>
-      <pubDate>Thu, 29 Oct 2026 10:30:05 +0000</pubDate>
+      <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
+      <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
+      <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>「DuckDB 2.0 LTS」正式リリース。Quackプロトコルによるクライアント/サーバ機能や非同期処理による高速化など</title>
-      <link>https://www.publickey1.jp/blog/26/duckdb_20_ltsquack.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/duckdb_20_ltsquack.html</guid>
-      <description>[Score: 80] シングルバイナリで高速なデータ分析を実現するOLAP型データベース「DuckDB 2.0 LTS」が正式リリースされました。 / 新機能として、Quackプロトコルによるクライアント/サーバ機能が追加され、より柔軟な利用が可能になります。 / 非同期I/Oサポートによるパフォーマンス向上や、拡張機能開発者向けのAPI強化も含まれており、データ分析基盤としての利便性が向上します。 (Source: Publickey)</description>
-      <pubDate>Sun, 25 Oct 2026 15:44:47 +0000</pubDate>
+      <title>クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research</title>
+      <link>https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</guid>
+      <description>[Score: 85] 2026年第3四半期のクラウドインフラ市場は前年比55%増と過去最高の成長率を記録し、市場規模は1680億ドルに達しました。 / AWSのシェアは2ポイント後退して26%となり、Microsoft Azureは1ポイント減の19%、Google Cloudは1ポイント増の16%となりました。 / AIワークロードに特化した「ネオクラウド」ベンダーが台頭し、市場競争が激化しています。 (Source: Publickey)</description>
+      <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>「AIっぽいデザイン」はなぜ消えないのか ── Impeccableを読み解いて、同じ依頼で4通り作って比べた</title>
-      <link>https://qiita.com/jinxin4869/items/0e72c0b925b75f1c28c9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/jinxin4869/items/0e72c0b925b75f1c28c9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 78] AIが生成するデザインに共通する「AIっぽさ」を避けるためのスキル「Impeccable」について解説。 / Impeccableは特定のスタイルではなく、AIが陥りがちなデザインパターンを避けるための手順を提供。 / 同じ依頼文で4通りのデザインを生成し比較することで、Impeccableの有効性とAIデザインの進化の速さを検証。 (Source: Qiita)</description>
-      <pubDate>Wed, 28 Oct 2026 14:53:27 +0000</pubDate>
+      <title>AWSでデータレイクハウスを構築してApache Icebergの更新・履歴管理を検証した</title>
+      <link>https://zenn.dev/kkoch5t2/articles/aws-iceberg-lakehouse-lab</link>
+      <guid isPermaLink="false">https://zenn.dev/kkoch5t2/articles/aws-iceberg-lakehouse-lab</guid>
+      <description>[Score: 85] 本記事では、AWS上でデータレイクハウスを構築し、Amazon S3、AWS Glue Data Catalog、Amazon Athena、Apache Icebergを組み合わせて検証した事例を紹介しています。 / テーブルの作成からデータの追加・更新・削除、過去のスナップショット参照（Version Travel）、ファイルの最適化まで一連の操作を試行し、SQL実行結果とS3上のParquetファイル、メタデータを確認しながら仕組みを整理しました。 / Apache IcebergがS3上のデータファイルを直接管理するのではなく、メタデータを通してテーブルの状態を管理する仕組みが重要であると解説しています。 [実務示唆: データレイクハウス構築を検討するエンジニアは、Apache IcebergとAWSサービスを組み合わせたデータ管理の仕組みを理解し、履歴管理や更新処理の要件に合わせて導入を検討すべきです。] (Source: Zenn)</description>
+      <pubDate>Thu, 05 Nov 2026 17:56:30 +0000</pubDate>
     </item>
     <item>
-      <title>デザインは見た目ではなく意思決定だった ─ フロントエンドエンジニアがデザインシステム導入で学び直したこと - Findy Tech Blog</title>
-      <link>https://tech.findy.co.jp/entry/2026/10/30/070000</link>
-      <guid isPermaLink="false">https://tech.findy.co.jp/entry/2026/10/30/070000</guid>
-      <description>[Score: 78] フロントエンドエンジニアがデザインシステム導入を通じて、デザインが単なる見た目ではなく意思決定のプロセスであると学んだ経験を共有。 / デザイナーとの認識のずれから、デザインシステム導入にはUI部品の置き換えだけでなく、ドメイン理解と意思決定の根拠が重要だと気づいた経緯を解説。 / エンジニアがデザイン領域に踏み込む際の課題と、デザインシステムの真の価値について考察しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 29 Oct 2026 22:25:22 +0000</pubDate>
+      <title>Linuxカーネルの深刻な脆弱性／FDEの名前で単なるコンサルティングが販売／TypeScriptをRustに移植した「tsrs」発表ほか、2026年10月の人気記事</title>
+      <link>https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</guid>
+      <description>[Score: 85] 2026年10月の人気記事として、Linuxカーネルの深刻な脆弱性「PwnEscape」が報じられました。 / また、FDE（フォワードデプロイエンジニアリング）の名目でコンサルティングが販売されるリスクが指摘されています。 / CloudflareがTypeScriptをRustに移植した「tsrs」を発表し、メモリ使用量と速度で大幅な改善が見られます。 [実務示唆: Linuxカーネルの脆弱性「PwnEscape」はゲストVMからホストOSへの不正コード実行の可能性があるため、速やかにパッチ適用やセキュリティ対策の確認を行うべきです。] [GitHub: cloudflare/tsrs] (Source: Publickey)</description>
+      <pubDate>Thu, 05 Nov 2026 15:37:44 +0000</pubDate>
     </item>
     <item>
-      <title>1週間以上メンテだった『神撃のバハムート』、「PHP脆弱性」対応が無事完了。“複数世代にわたる大幅なバージョンアップ”を経て、老舗ゲームが大改修 - AUTOMATON</title>
-      <link>https://automaton-media.com/articles/newsjp/20261029-476529/</link>
-      <guid isPermaLink="false">https://automaton-media.com/articles/newsjp/20261029-476529/</guid>
-      <description>[Score: 70] Cygamesの老舗ゲーム『神撃のバハムート』が、PHPの脆弱性対応のため1週間以上の緊急メンテナンスを完了しました。 / 複数世代にわたるPHPのバージョンアップと広範囲なプログラム改修が行われ、サービス継続への強い意志が示されました。 / 同時期に多くのサービスがPHP脆弱性で影響を受ける中、大規模改修を成功させた事例として注目されます。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 29 Oct 2026 13:06:34 +0000</pubDate>
+      <title>アクセシビリティステートメントがGitHubに登場</title>
+      <link>https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</guid>
+      <description>[Score: 75] GitHubは、リポジトリの概要ページにACCESSIBILITY.mdファイルを表示する機能を追加しました。 / これにより、プロジェクトのアクセシビリティ目標、貢献者の期待、既知の制限などを一元的に説明できるようになります。 / ACCESSIBILITY.mdファイルは、リポジトリのルート、.github/ディレクトリ、またはdocs/ディレクトリに配置でき、組織の.github/リポジトリから継承することも可能です。 [実務示唆: 自身のGitHubリポジトリにACCESSIBILITY.mdファイルを追加し、プロジェクトのアクセシビリティに関する情報を明確にすることで、より多くのユーザーと貢献者にとって利用しやすい環境を整備すること。] [GitHub: github/docs] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 05 Nov 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>アニメーションフレームごとに異なる持続時間でループをサンプリングする方法</title>
-      <link>https://dev.to/liangqi_zhao_b047bd1f3236/how-to-sample-a-loop-with-different-durations-for-each-animation-frame-5mg</link>
-      <guid isPermaLink="false">https://dev.to/liangqi_zhao_b047bd1f3236/how-to-sample-a-loop-with-different-durations-for-each-animation-frame-5mg</guid>
-      <description>[Score: 65] アニメーションフレームごとに異なる持続時間を持つループをサンプリングする汎用的なJavaScript関数を紹介。 / 均一なフレームレートではなく、各フレームに個別の表示時間を設定することで、より表現豊かなアニメーションを実現。 / ゲームアートやWebアニメーションなど、様々な用途で応用可能な技術です。 (Source: Dev.to)</description>
-      <pubDate>Fri, 30 Oct 2026 00:45:09 +0000</pubDate>
+      <title>JavaScriptとHTML5 Canvasでブラウザベースのジグソーパズルゲームを構築する方法</title>
+      <link>https://dev.to/cliffwang/how-to-build-a-browser-based-jigsaw-puzzle-game-with-javascript-and-html5-canvas-33gm</link>
+      <guid isPermaLink="false">https://dev.to/cliffwang/how-to-build-a-browser-based-jigsaw-puzzle-game-with-javascript-and-html5-canvas-33gm</guid>
+      <description>[Score: 70] 本記事はJavaScriptとHTML5 Canvasを使ってブラウザベースのジグソーパズルゲームを構築するチュートリアルです。 / 幾何学、グラフィックスプログラミング、インタラクティブゲーム開発の要素を組み合わせます。 / ピースの生成、レンダリング、インタラクション、パフォーマンス最適化について解説し、ダウンロード不要なゲーム作成を目指します。 [実務示唆: HTML5 CanvasとJavaScriptを用いたゲーム開発は、Web技術の応用範囲を広げる良い機会です。既存のWebアプリケーションにインタラクティブな要素を追加する際の参考にし、パフォーマンス最適化のテクニックを習得しましょう。] (Source: Dev.to)</description>
+      <pubDate>Fri, 06 Nov 2026 01:47:01 +0000</pubDate>
     </item>
   </channel>
 </rss>

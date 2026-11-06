@@ -5,62 +5,27 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 05 Nov 2026 13:03:34 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 01:53:55 +0000</lastBuildDate>
     <item>
-      <title>GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！</title>
-      <link>https://zenn.dev/progate/articles/24b1140180300c</link>
-      <guid isPermaLink="false">https://zenn.dev/progate/articles/24b1140180300c</guid>
-      <description>[Score: 95] GitHub Actionsのワークフローで、アクションのバージョンを`@v7`のように指定することのセキュリティリスクについて警鐘を鳴らしています。 / 攻撃者が悪意のあるバージョンを公開する可能性があり、過去にはTrivyアクションが攻撃された事例も紹介されています。 / 解決策として、コミットのハッシュ値（SHA）指定またはlockfileの使用が推奨されています。 (Source: Zenn)</description>
-      <pubDate>Thu, 29 Oct 2026 03:48:15 +0000</pubDate>
+      <title>sshole: Unixパスワード認証の歴史とmusl libcの挙動</title>
+      <link>https://sshhole.com</link>
+      <guid isPermaLink="false">https://sshhole.com</guid>
+      <description>[Score: 95] 本記事は、Unixにおけるパスワード認証の歴史と、特に/etc/passwdや/etc/shadowファイルでのパスワードハッシュの扱いの変遷を解説しています。 / 1980年代の/etc/passwdに平文に近い形でパスワードが置かれていた時代から、現代の/etc/shadowでのハッシュ化されたパスワード管理までを概観します。 / 特に、musl libcがcrypt()関数のNULL戻り値を防ぐために「*」を返す挙動が、後のOpenSSHの脆弱性につながる可能性を示唆しています。 [実務示唆: システム管理者やセキュリティエンジニアは、パスワード認証の仕組みとlibcの実装詳細を理解し、特にmusl libc環境での認証挙動に注意を払うべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 05 Nov 2026 12:19:02 +0000</pubDate>
     </item>
     <item>
-      <title>Binanceハッカー1029 – Binanceから56億ドルが盗まれる</title>
-      <link>https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</link>
-      <guid isPermaLink="false">https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</guid>
-      <description>[Score: 90] Binanceから56億ドルという巨額の資金が盗難されたと報じられています。 / この事件は仮想通貨業界に大きな衝撃を与え、セキュリティ対策の重要性を改めて浮き彫りにしました。 / ハッカーの特定と資金の回収が今後の焦点となります。 (Source: Hacker News)</description>
-      <pubDate>Thu, 29 Oct 2026 21:38:59 +0000</pubDate>
+      <title>Alpine Linuxセキュリティアドバイザリ: OpenSSH-serverパスワード認証バイパスの脆弱性</title>
+      <link>https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/</link>
+      <guid isPermaLink="false">https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/</guid>
+      <description>[Score: 95] Alpine LinuxのOpenSSHサーバーに、パスワード認証をバイパスできる重大な脆弱性が発見されました。 / この脆弱性は、パスワードフィールドが「*」のアカウント（キー認証専用アカウントなど）が存在し、かつ$5$または$6$のパスワードハッシュを持つ別のアカウントが少なくとも1つ存在する場合に悪用されます。 / 攻撃者は、非常に長いパスワードを送信することで、パスワードを知らなくてもSSHポートにログインできてしまいます。 [実務示唆: Alpine Linuxでsshdを運用している場合は、直ちにopensshパッケージを更新し、sshdサービスを再起動してください。更新できない場合は、PasswordAuthentication noを設定してパスワードログインを無効にしてください。] (Source: Hacker News)</description>
+      <pubDate>Thu, 05 Nov 2026 14:44:20 +0000</pubDate>
     </item>
     <item>
-      <title>パスキーはなぜ偽サイトに強い？登録とログインの流れを図で追う</title>
-      <link>https://qiita.com/kuma_3838/items/1781531150821e2f0491?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kuma_3838/items/1781531150821e2f0491?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] パスキーがフィッシング詐欺や情報漏洩に強い理由を、既存のログイン方式と比較しながら詳細に解説。 / 登録とログインの具体的な流れを図解し、ユーザーの手間や実装の複雑さについても言及。 / FIDO Allianceの調査データに基づき、パスキーがログイン成功率と所要時間で優れていることを示す。 (Source: Qiita)</description>
-      <pubDate>Thu, 29 Oct 2026 00:59:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>SOCケーススタディ: WinRMとPowerShell攻撃のトリアージとログ相関</title>
-      <link>https://dev.to/reyrey5/soc-case-study-winrm-powershell-attack-triage-log-correlation-14m0</link>
-      <guid isPermaLink="false">https://dev.to/reyrey5/soc-case-study-winrm-powershell-attack-triage-log-correlation-14m0</guid>
-      <description>[Score: 90] 本ケーススタディでは、不正なリモート管理攻撃の検出、トリアージ、ログ相関プロセスを解説しています。 / Wazuh SIEM、Windowsイベントログ、ファイアウォールログを多層的に利用し、攻撃者の動きを追跡しました。 / 外部からのブルートフォース攻撃から、難読化されたPowerShell実行、内部でのラテラルムーブメントまでを特定しています。 (Source: Dev.to)</description>
-      <pubDate>Fri, 30 Oct 2026 00:42:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIが書いたコードかどうかは関係ない。セキュリティは依然として重要だ。</title>
-      <link>https://dev.to/takudzwa_mavhima_41cd1419/your-code-doesnt-care-whether-ai-wrote-it-security-still-matters-2hk9</link>
-      <guid isPermaLink="false">https://dev.to/takudzwa_mavhima_41cd1419/your-code-doesnt-care-whether-ai-wrote-it-security-still-matters-2hk9</guid>
-      <description>[Score: 85] AIによるコード生成が普及する中、セキュリティレビューの重要性が増しています。 / 開発速度の向上はセキュリティの向上を意味せず、手動レビューはコストと時間がかかります。 / Aasim Guardは、AI利用の有無にかかわらず、開発者がコードのセキュリティ問題を特定できるサイバーセキュリティプラットフォームです。 (Source: Dev.to)</description>
-      <pubDate>Fri, 30 Oct 2026 00:43:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>Flock社、ミネソタ市のAI監視カメラ再設置禁止命令を無視 - 市が契約を解除したにもかかわらず、市民が2台のカメラを発見し苦情</title>
-      <link>https://www.reddit.com/r/technology/comments/1xijr1i/flock_ignores_minnesota_citys_orders_not_to/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xijr1i/flock_ignores_minnesota_citys_orders_not_to/</guid>
-      <description>[Score: 80] Flock社が、ミネソタ市によるAI監視カメラの再設置禁止命令を無視し、市民がカメラを発見して苦情を申し立てています。 / 市はFlock社との契約を解除したにもかかわらず、同社は監視カメラを再設置したと報じられています。 / これは、AI監視技術の倫理的・法的問題、プライバシー侵害、そして企業と自治体の関係における課題を浮き彫りにしています。 (Source: Reddit)</description>
-      <pubDate>Thu, 29 Oct 2026 13:18:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>バグバウンティが研究者のセキュリティスキルをいかに磨くか</title>
-      <link>https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/</link>
-      <guid isPermaLink="false">https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/</guid>
-      <description>[Score: 70] GitHubは、サイバーセキュリティ啓発月間の一環として、バグバウンティプログラムのトップセキュリティ研究者@r31nに焦点を当てています。 / AIがセキュリティ研究の参入障壁を下げ、生産性を向上させている一方で、検証、PoC、実際のセキュリティ影響の明確な実証が優れた研究の鍵であると強調。 / GitHubは、外部研究者との協力がプラットフォームのセキュリティ向上に不可欠であると考えており、質の高い発見を奨励しています。 (Source: GitHub Blog)</description>
-      <pubDate>Thu, 22 Oct 2026 17:21:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>GMO犯人捜索マップ</title>
-      <link>https://satoru.net/hacker/gmo/261029-map.html</link>
-      <guid isPermaLink="false">https://satoru.net/hacker/gmo/261029-map.html</guid>
-      <description>[Score: 65] このマップは、GMO関連のIPアドレスとアクセス履歴を追跡し、公開しない形で警察やGMOに情報を提供しているツールのようです。 / ユーザーは気になるIPアドレスをブックマークし、アクセス履歴を確認できる機能が提供されています。 / ChatGPTなどのLLMに履歴を貼り付けて分析することも推奨されており、情報収集と分析にAIを活用する可能性を示唆しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 29 Oct 2026 22:46:10 +0000</pubDate>
+      <title>MS Paintのリモートコード実行の脆弱性 (CVE-2026-83844)</title>
+      <link>https://www.cve.org/CVERecord?id=CVE-2026-83844</link>
+      <guid isPermaLink="false">https://www.cve.org/CVERecord?id=CVE-2026-83844</guid>
+      <description>[Score: 90] Microsoft Paintにリモートコード実行の脆弱性(CVE-2026-83844)が発見されました。 / この脆弱性は、攻撃者が悪意のあるファイルを介してユーザーのシステム上で任意のコードを実行できる可能性があります。 / 詳細な情報はCVEのレコードで確認できますが、早期の対応が推奨されます。 [実務示唆: MS Paintを使用しているWindowsユーザーは、この脆弱性に対するパッチがリリースされ次第、速やかにシステムをアップデートし、セキュリティリスクを軽減してください。] (Source: Hacker News)</description>
+      <pubDate>Thu, 05 Nov 2026 20:43:42 +0000</pubDate>
     </item>
   </channel>
 </rss>

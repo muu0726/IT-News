@@ -5,14 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 05 Nov 2026 13:13:11 +0000</lastBuildDate>
-    <item>
-      <title>ルートへのパスを1000少なくする</title>
-      <link>https://openai.com/index/a-thousand-fewer-paths-to-root/</link>
-      <guid isPermaLink="false">https://openai.com/index/a-thousand-fewer-paths-to-root/</guid>
-      <description>[Score: 95] OpenAIは、Linuxカーネルの脆弱性を自律的に発見、悪用、パッチ適用するパイプラインを開発しました。 / このシステムは、948件のローカル権限昇格の脆弱性を特定し、パッチを生成しました。 / セキュリティ研究の自動化は、脆弱性対応の効率を大幅に向上させる可能性を秘めています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 04 Nov 2026 23:33:14 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 06 Nov 2026 01:53:55 +0000</lastBuildDate>
     <item>
       <title>AI駆動開発の次の段階: ソフトウェアファクトリー</title>
       <link>https://qiita.com/Syoitu/items/9364a0a175893bb15219?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
@@ -21,11 +14,25 @@
       <pubDate>Wed, 04 Nov 2026 11:38:50 +0000</pubDate>
     </item>
     <item>
-      <title>SigLIP2に匹敵する画像エンコーダーをフルスクラッチで開発した話</title>
-      <link>https://zenn.dev/noetra_techblog/articles/0cea39ce67d2c2</link>
-      <guid isPermaLink="false">https://zenn.dev/noetra_techblog/articles/0cea39ce67d2c2</guid>
-      <description>[Score: 90] NoetraがフィジカルAI実現に向け、国産マルチモーダルLLMの基盤技術として画像エンコーダーをフルスクラッチ開発しました。 / 非公開データに依存しない透明性と安全性を確保し、英語ベンチマークでSigLIP2と同等、日本語・中国語でより高い性能を達成。 / 大規模画像・テキストデータ収集から学習手法、モデル構造まで詳細に解説し、マルチモーダルLLMへの適用結果も示しています。 (Source: Zenn)</description>
-      <pubDate>Wed, 04 Nov 2026 05:42:59 +0000</pubDate>
+      <title>sshole: Unixパスワード認証の歴史とmusl libcの挙動</title>
+      <link>https://sshhole.com</link>
+      <guid isPermaLink="false">https://sshhole.com</guid>
+      <description>[Score: 95] 本記事は、Unixにおけるパスワード認証の歴史と、特に/etc/passwdや/etc/shadowファイルでのパスワードハッシュの扱いの変遷を解説しています。 / 1980年代の/etc/passwdに平文に近い形でパスワードが置かれていた時代から、現代の/etc/shadowでのハッシュ化されたパスワード管理までを概観します。 / 特に、musl libcがcrypt()関数のNULL戻り値を防ぐために「*」を返す挙動が、後のOpenSSHの脆弱性につながる可能性を示唆しています。 [実務示唆: システム管理者やセキュリティエンジニアは、パスワード認証の仕組みとlibcの実装詳細を理解し、特にmusl libc環境での認証挙動に注意を払うべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 05 Nov 2026 12:19:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Alpine Linuxセキュリティアドバイザリ: OpenSSH-serverパスワード認証バイパスの脆弱性</title>
+      <link>https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/</link>
+      <guid isPermaLink="false">https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/</guid>
+      <description>[Score: 95] Alpine LinuxのOpenSSHサーバーに、パスワード認証をバイパスできる重大な脆弱性が発見されました。 / この脆弱性は、パスワードフィールドが「*」のアカウント（キー認証専用アカウントなど）が存在し、かつ$5$または$6$のパスワードハッシュを持つ別のアカウントが少なくとも1つ存在する場合に悪用されます。 / 攻撃者は、非常に長いパスワードを送信することで、パスワードを知らなくてもSSHポートにログインできてしまいます。 [実務示唆: Alpine Linuxでsshdを運用している場合は、直ちにopensshパッケージを更新し、sshdサービスを再起動してください。更新できない場合は、PasswordAuthentication noを設定してパスワードログインを無効にしてください。] (Source: Hacker News)</description>
+      <pubDate>Thu, 05 Nov 2026 14:44:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenAI、サイバーセキュリティ特化型「GPT-6 Cyber」発表 Firefoxの未知の脆弱性81件を発見</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/06/2000002931/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/06/2000002931/</guid>
+      <description>[Score: 95] OpenAIがサイバーセキュリティに特化したAIモデル「GPT-6 Cyber」を発表しました。 / このモデルは汎用モデル「GPT-6 Astra」をベースに、脆弱性発見や攻撃手法検証能力を強化しています。 / Firefoxで未知の脆弱性81件、Linuxカーネルで948件のエクスプロイトを開発するなど、高いサイバー能力を示しています。 [実務示唆: GPT-6 Cyberのような高度なAIによる攻撃に備え、自社システムの脆弱性診断やセキュリティ対策の強化を検討し、最新のAIセキュリティ動向を注視すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 05 Nov 2026 23:41:46 +0000</pubDate>
     </item>
     <item>
       <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
@@ -42,102 +49,32 @@
       <pubDate>Wed, 28 Oct 2026 16:09:28 +0000</pubDate>
     </item>
     <item>
-      <title>Images 2.6</title>
-      <link>https://openai.com/index/introducing-images-2-6/</link>
-      <guid isPermaLink="false">https://openai.com/index/introducing-images-2-6/</guid>
-      <description>[Score: 90] ChatGPT、Codex、APIにImages 2.6が導入され、画像生成が50%高速化されました。 / GIFアニメーションの生成や、編集時のキャラクター・製品の一貫性維持など、より高度な制御が可能になります。 / FlareとSunburstの2つのモデルが提供され、品質と速度に応じて選択できます。 (Source: Hacker News)</description>
-      <pubDate>Wed, 04 Nov 2026 23:35:44 +0000</pubDate>
+      <title>MS Paintのリモートコード実行の脆弱性 (CVE-2026-83844)</title>
+      <link>https://www.cve.org/CVERecord?id=CVE-2026-83844</link>
+      <guid isPermaLink="false">https://www.cve.org/CVERecord?id=CVE-2026-83844</guid>
+      <description>[Score: 90] Microsoft Paintにリモートコード実行の脆弱性(CVE-2026-83844)が発見されました。 / この脆弱性は、攻撃者が悪意のあるファイルを介してユーザーのシステム上で任意のコードを実行できる可能性があります。 / 詳細な情報はCVEのレコードで確認できますが、早期の対応が推奨されます。 [実務示唆: MS Paintを使用しているWindowsユーザーは、この脆弱性に対するパッチがリリースされ次第、速やかにシステムをアップデートし、セキュリティリスクを軽減してください。] (Source: Hacker News)</description>
+      <pubDate>Thu, 05 Nov 2026 20:43:42 +0000</pubDate>
     </item>
     <item>
-      <title>Ripple-65B Preview: エージェント型コーディングで米国オープンウェイトSOTAを達成</title>
-      <link>https://www.ricursive.com/ripple</link>
-      <guid isPermaLink="false">https://www.ricursive.com/ripple</guid>
-      <description>[Score: 90] Ricursive Intelligenceは、エージェント型コーディングにおいて米国オープンウェイトSOTAを達成した言語モデル「Ripple-65B Preview」をリリースしました。 / このモデルは12兆トークンで事前学習され、最大1Mのコンテキスト長をサポートし、TerminalBench 2.1で80.52という高いスコアを記録しています。 / 効率的なモデルアーキテクチャにより、低遅延のトークン生成とローカルデバイスでの効率的な実行が可能です。 (Source: Hacker News)</description>
-      <pubDate>Wed, 04 Nov 2026 18:53:29 +0000</pubDate>
+      <title>AI生成コードを本番品質に保つためのフロントエンド開発の仕組み</title>
+      <link>https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99</link>
+      <guid isPermaLink="false">https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99</guid>
+      <description>[Score: 90] AI生成コードの品質は、プロンプトの工夫よりもAIの外側に用意された「仕組み」で決まると筆者は主張し、Next.jsとTypeScriptのフロントエンド開発を例に本番品質を保つための4つの層を紹介しています。 / AIに渡すコンテキスト、機械的なガードレール、テスト、CIと人間のレビューという層を通じて、AIが推測で埋める範囲を減らし、プロジェクトの慣習に沿わないコードを早期に検出・修正する仕組みを構築します。 / AI共作コードは人のみのコードに比べて指摘事項が多いというレポートも引用し、AIの導入がデリバリーの安定性を損なわないよう「制御の仕組み」の重要性を強調しています。 [実務示唆: AI生成コードを開発に導入する際は、AIに与えるコンテキストの明確化、Lintや型チェックなどの機械的ガードレール、自動テスト、CI/CDと人間のレビューを組み合わせた多層的な品質保証体制を構築すべきです。] (Source: Zenn)</description>
+      <pubDate>Thu, 05 Nov 2026 09:00:55 +0000</pubDate>
     </item>
     <item>
-      <title>Kimi K3.1 Proモデルの重みが公開</title>
-      <link>https://huggingface.co/moonshotai/Kimi-K3.1-Pro</link>
-      <guid isPermaLink="false">https://huggingface.co/moonshotai/Kimi-K3.1-Pro</guid>
-      <description>[Score: 90] Kimi K3.1 Proは、オープンウェイトのマルチモーダルエージェントモデルです。 / 100万トークンのコンテキストウィンドウを持ち、コーディングや3D作成などで大幅な改善を実現しています。 / 効率的な長文コンテキストモデリングのため、Gated DeepSeek Sparse Attentionレイヤーを採用しています。 (Source: Hacker News)</description>
-      <pubDate>Wed, 04 Nov 2026 15:30:30 +0000</pubDate>
+      <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
+      <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
+      <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>極端なデータスパース性シナリオにおける精密腫瘍学臨床ワークフローのためのEdge-to-Cloudスウォーム協調</title>
-      <link>https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-precision-oncology-clinical-workflows-for-extreme-data-2i2i</link>
-      <guid isPermaLink="false">https://dev.to/rikinptl/edge-to-cloud-swarm-coordination-for-precision-oncology-clinical-workflows-for-extreme-data-2i2i</guid>
-      <description>[Score: 90] 精密腫瘍学におけるデータスパース性の課題に対し、Edge-to-Cloudのスウォーム協調アプローチを提案しています。 / 各エッジノードの軽量なエージェントが集合的に問題を推論し、クラウド層がグローバルな一貫性と監査証跡を提供します。 / これにより、単一ノードでは解決できない、分散した異種データを統合した臨床的意思決定が可能になります。 (Source: Dev.to)</description>
-      <pubDate>Thu, 05 Nov 2026 01:21:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>データ転送量が約4倍となる新規格「Bluetooth HDT」正式承認。ロスレスオーディオの標準化へ - PHILE WEB</title>
-      <link>https://www.phileweb.com/news/d-av/202611/05/66309.html</link>
-      <guid isPermaLink="false">https://www.phileweb.com/news/d-av/202611/05/66309.html</guid>
-      <description>[Score: 90] Bluetooth SIGが、データ転送量が約4倍となる新規格「Bluetooth HDT（High Data Throughput）」を正式に承認しました。 / この新規格は、ロスレスオーディオの標準化を可能にし、高音質ワイヤレスオーディオ体験を向上させます。 / 通信効率の向上により、バッテリー消費の削減や通信安定性の強化も期待されます。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 05 Nov 2026 06:36:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>「勝利の女神：NIKKE」のPCランチャー経由の不正プログラム配布についてまとめてみた - piyolog</title>
-      <link>https://piyolog.hatenadiary.jp/entry/2026/11/05/133509</link>
-      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/11/05/133509</guid>
-      <description>[Score: 88] 人気ゲーム「勝利の女神：NIKKE」のPCランチャーの一部ファイルが改ざんされ、不正プログラムが配布された可能性が公表されました。 / 公式CDNのスクリプトが第三者によって改ざんされ、特定のドメインへの不正な接続コードが挿入されていたとのことです。 / このインシデントは、サプライチェーン攻撃の危険性と、ゲーム業界におけるセキュリティ対策の課題を示しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 05 Nov 2026 04:48:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIが40年分の技術的負債の解消を迫る</title>
-      <link>https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability</link>
-      <guid isPermaLink="false">https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability</guid>
-      <description>[Score: 85] AIの進化により、過去40年間にわたって蓄積されたレガシーソフトウェアの技術的負債が露呈しています。 / 最近発見されたPHP2Shellの脆弱性は、AI時代におけるサイバーセキュリティの新たな脅威を示唆しています。 / AIを活用した攻撃は、既存の脆弱性を悪用し、大規模なシステムに影響を与える可能性があります。 (Source: Hacker News)</description>
-      <pubDate>Wed, 04 Nov 2026 11:52:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>どっちが人間？ AIで声をクローンして、本人と聞き比べてみた</title>
-      <link>https://qiita.com/nakata-sapeet/items/f883c3cf009785c51bcc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/nakata-sapeet/items/f883c3cf009785c51bcc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AI音声クローンアプリ「VoiceStudio」を使用し、本人の声とAIが生成した声を比較検証。 / 15秒の録音から感情表現まで真似るAIの精度に驚き。 / クラウドサービス不要で手元のMacで動作する手軽さも特徴。 (Source: Qiita)</description>
-      <pubDate>Wed, 04 Nov 2026 00:30:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub、より高度なコードレビューを行う「Copilot Code Review Max」発表。GitHub Universe 2026</title>
-      <link>https://www.publickey1.jp/blog/26/githubcopilot_code_review_maxgithub_universe_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/githubcopilot_code_review_maxgithub_universe_2026.html</guid>
-      <description>[Score: 85] GitHubは「GitHub Universe 2026」で、より高度なコードレビュー機能「Copilot Code Review Max」を発表しました。 / これは複数のAIモデルと独立したレビューエージェントを活用し、従来のCopilot Code Reviewよりも詳細なレビューを提供します。 / AI生成コードの増加に伴い、ソフトウェア品質維持のためのコードレビューの重要性が高まっています。 (Source: Publickey)</description>
-      <pubDate>Tue, 03 Nov 2026 15:14:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>Octoverse: 2026年にコミットとプッシュが過去最高を記録、開発者はエージェントと共に構築</title>
-      <link>https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/</guid>
-      <description>[Score: 85] 2026年のGitHubでのコードプッシュ数は179億回に達し、2024年と2025年を合わせたよりも多く、過去最高を記録しました。 / この成長の背景には、開発者がAIエージェントを試用から実用へと移行させ、共に作業するようになったことが挙げられます。 / Octoverseレポートは、AIモデルの進化と、ヘルスケアから農業まで多岐にわたる分野での開発活動の拡大を強調しています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 28 Oct 2026 16:07:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>ホワイトハウスのネットワークで住宅用プロキシが検出される</title>
-      <link>https://layer3intel.com/blog/residential-proxies-white-house-network</link>
-      <guid isPermaLink="false">https://layer3intel.com/blog/residential-proxies-white-house-network</guid>
-      <description>[Score: 85] Layer3 Intelの観測により、ホワイトハウスのネットワーク（AS2650）で住宅用プロキシの利用が確認されました。 / これは、デバイスがプロキシSDKに感染している可能性を示唆しており、夜間の活動パターンから個人による利用が疑われます。 / この事実は、誰でも数ドルで利用できる公開プロキシサービスを通じて偶然発見されました。 (Source: Hacker News)</description>
-      <pubDate>Wed, 04 Nov 2026 20:45:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>C/Rust/Julia/Go/Java/JS/PyPy/LuaJIT 実行速度ベンチマーク ― 競プロと科学計算のあいだ</title>
-      <link>https://zenn.dev/trbx304/articles/34fec79781e39c</link>
-      <guid isPermaLink="false">https://zenn.dev/trbx304/articles/34fec79781e39c</guid>
-      <description>[Score: 85] C、Rust、Julia、Go、Java、Node、Bun、PyPy、LuaJITの9処理系で実行速度を比較するベンチマーク記事です。 / エラトステネスの篩、ビット全探索、方程式、行列積の4種目で測定し、言語ごとの特性や最適化の違いを分析しています。 / 特にビット全探索ではCとRustが分岐予測の最適化によりGoに大差をつけたことが示され、低レベル最適化の重要性が浮き彫りになりました。 (Source: Zenn)</description>
-      <pubDate>Wed, 04 Nov 2026 13:20:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubのruleset移行時に注意したい、environment secretのブランチ保護仕様</title>
-      <link>https://zenn.dev/loglass/articles/a89a8d4ee86559</link>
-      <guid isPermaLink="false">https://zenn.dev/loglass/articles/a89a8d4ee86559</guid>
-      <description>[Score: 85] GitHubのrulesetとenvironment secretのブランチ保護機能に関する注意点を解説しています。 / write権限を持つユーザーがworkflowを通じてsecretにアクセスできるセキュリティリスクと、その対策としてのenvironment secretの利用が紹介されています。 / rulesetで保護されたブランチが「Protected branches only」設定で期待通りに扱われない可能性を検証し、セキュリティ設定の落とし穴を指摘しています。 (Source: Zenn)</description>
-      <pubDate>Wed, 04 Nov 2026 06:26:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>[AWS]日本語OCRがついにきちゃー！ ~Textractにいろいろ読ませてみた~</title>
-      <link>https://qiita.com/kikuziro/items/9aff0fefe89cfa13192e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kikuziro/items/9aff0fefe89cfa13192e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AWSのAmazon Textractが日本語OCRに対応し、東京リージョンで利用可能になりました。 / これにより、S3からTextract、Bedrockへのデータ連携がAWS内で完結し、運用が簡素化されます。 / 横書き印刷文字の認識精度は非常に高く、コスト面でもLLMより優位性があることが示されています。 (Source: Qiita)</description>
-      <pubDate>Tue, 03 Nov 2026 13:54:09 +0000</pubDate>
+      <title>Inkling 2 Small発表：594BパラメータのMixture-of-Expertsモデル</title>
+      <link>https://thinkingmachines.ai/news/inkling-2-small/</link>
+      <guid isPermaLink="false">https://thinkingmachines.ai/news/inkling-2-small/</guid>
+      <description>[Score: 88] Thinking Machinesは、第2世代モデル「Inkling 2 Small」を発表しました。これは594Bの総パラメータと17Bのアクティブパラメータを持つMixture-of-Expertsモデルです。 / 画像入力と可変の計算努力をサポートし、エージェントコーディング、ビジョン、知識作業、推論において大幅な性能向上を達成しています。 / 当初はTinkerを通じてクローズドウェイトで提供されますが、外部の安全性テスト完了後、Apache 2.0ライセンスでフルウェイトが公開される予定です。 [実務示唆: AI開発者は、Inkling 2 Smallの公開ウェイトリリースに注目し、その高度なエージェント機能とビジョン能力を自身のプロジェクトや研究に活用することを検討してください。] (Source: Hacker News)</description>
+      <pubDate>Fri, 06 Nov 2026 00:00:24 +0000</pubDate>
     </item>
     <item>
       <title>クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research</title>
@@ -145,6 +82,69 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</guid>
       <description>[Score: 85] 2026年第3四半期のクラウドインフラ市場は前年比55%増と過去最高の成長率を記録し、市場規模は1680億ドルに達しました。 / AWSのシェアは2ポイント後退して26%となり、Microsoft Azureは1ポイント減の19%、Google Cloudは1ポイント増の16%となりました。 / AIワークロードに特化した「ネオクラウド」ベンダーが台頭し、市場競争が激化しています。 (Source: Publickey)</description>
       <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub Copilot Dreaming」発表。作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理、アップデート。GitHub Universe 2026</title>
+      <link>https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</guid>
+      <description>[Score: 85] GitHubは「GitHub Copilot Dreaming」を発表しました。 / これは、AIモデルへの指示内容が作業の進行や環境の変化によって古くなる問題を解決する新機能です。 / バックグラウンドで自動的にパーソナルメモリやガイダンスを整理・更新し、常に最適なAIアシスタンスを提供します。 (Source: Publickey)</description>
+      <pubDate>Wed, 04 Nov 2026 15:15:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Codeがあなたのメールアドレスをウェブサイトに送信する問題</title>
+      <link>https://github.com/anthropics/claude-code/issues/107757</link>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/issues/107757</guid>
+      <description>[Score: 85] Claude Codeがユーザーの許可なくウェブ検索時にUser-Agentヘッダーを通じてメールアドレスを第三者に漏洩しているバグが報告されました。 / これにより、ユーザーは大量の詐欺メールを受け取る被害に遭っています。 / Anthropicはv2.1.317以降でこの挙動をブロックする組み込みmod「cc-plugin-privacy」を導入し、デフォルトで有効にしていると発表しました。 [実務示唆: Claude Codeを利用しているユーザーは、プライバシー保護のため、バージョンがv2.1.317以降であることを確認し、cc-plugin-privacy modが有効になっているか確認してください。] [GitHub: anthropics/claude-code] (Source: Hacker News)</description>
+      <pubDate>Thu, 05 Nov 2026 22:17:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>AWSでデータレイクハウスを構築してApache Icebergの更新・履歴管理を検証した</title>
+      <link>https://zenn.dev/kkoch5t2/articles/aws-iceberg-lakehouse-lab</link>
+      <guid isPermaLink="false">https://zenn.dev/kkoch5t2/articles/aws-iceberg-lakehouse-lab</guid>
+      <description>[Score: 85] 本記事では、AWS上でデータレイクハウスを構築し、Amazon S3、AWS Glue Data Catalog、Amazon Athena、Apache Icebergを組み合わせて検証した事例を紹介しています。 / テーブルの作成からデータの追加・更新・削除、過去のスナップショット参照（Version Travel）、ファイルの最適化まで一連の操作を試行し、SQL実行結果とS3上のParquetファイル、メタデータを確認しながら仕組みを整理しました。 / Apache IcebergがS3上のデータファイルを直接管理するのではなく、メタデータを通してテーブルの状態を管理する仕組みが重要であると解説しています。 [実務示唆: データレイクハウス構築を検討するエンジニアは、Apache IcebergとAWSサービスを組み合わせたデータ管理の仕組みを理解し、履歴管理や更新処理の要件に合わせて導入を検討すべきです。] (Source: Zenn)</description>
+      <pubDate>Thu, 05 Nov 2026 17:56:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Linuxカーネルの深刻な脆弱性／FDEの名前で単なるコンサルティングが販売／TypeScriptをRustに移植した「tsrs」発表ほか、2026年10月の人気記事</title>
+      <link>https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</guid>
+      <description>[Score: 85] 2026年10月の人気記事として、Linuxカーネルの深刻な脆弱性「PwnEscape」が報じられました。 / また、FDE（フォワードデプロイエンジニアリング）の名目でコンサルティングが販売されるリスクが指摘されています。 / CloudflareがTypeScriptをRustに移植した「tsrs」を発表し、メモリ使用量と速度で大幅な改善が見られます。 [実務示唆: Linuxカーネルの脆弱性「PwnEscape」はゲストVMからホストOSへの不正コード実行の可能性があるため、速やかにパッチ適用やセキュリティ対策の確認を行うべきです。] [GitHub: cloudflare/tsrs] (Source: Publickey)</description>
+      <pubDate>Thu, 05 Nov 2026 15:37:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>オープンモデル vs Claude: Kimi K3、GLM 5.3、DeepSeek V4 ProとSonnet 5.5、Opus 5.5の比較</title>
+      <link>https://dev.to/xiun_xiao_6eae2df5c108c5f/open-models-vs-claude-kimi-k3-glm-53-and-deepseek-v4-pro-against-sonnet-55-and-opus-55-3f1d</link>
+      <guid isPermaLink="false">https://dev.to/xiun_xiao_6eae2df5c108c5f/open-models-vs-claude-kimi-k3-glm-53-and-deepseek-v4-pro-against-sonnet-55-and-opus-55-3f1d</guid>
+      <description>[Score: 85] この記事では、オープンモデルとClaudeモデルの性能とコストを比較しています。 / QuickSilver Proの価格設定により、Claudeモデルのコストが大幅に削減されたため、オープンモデルを選択する従来の理由が再検討されています。 / 17のタスクセット（コード、JSON、数学）を用いて、Kimi K3、GLM 5.3、DeepSeek V4 ProとClaude Sonnet 5.5、Opus 5.5が評価されました。 [実務示唆: LLM選定時には、価格だけでなく、特定のタスクにおける性能とコスト効率を詳細に比較検討し、自社のユースケースに最適なモデルを選択すること。] (Source: Dev.to)</description>
+      <pubDate>Fri, 06 Nov 2026 01:44:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>Slurm は Kaggle で役に立つ</title>
+      <link>https://zenn.dev/pomcho555/articles/c455d086ec47af</link>
+      <guid isPermaLink="false">https://zenn.dev/pomcho555/articles/c455d086ec47af</guid>
+      <description>[Score: 82] Slurmはスパコンや研究室のGPUクラスタで使われるジョブスケジューラですが、自宅のGPU1枚でのKaggle実験でも非常に有用であることが紹介されています。 / 筆者はKaggleのコンペでRTX 3090を使い、41日間で253本の学習ジョブをSlurmで管理し、GPUを延べ469時間活用しました。 / Slurmの導入はAI（Claude CodeやCodex）に任せることで約25分で完了し、AIエージェントと組み合わせることでセッションが切れても学習が継続される利点も強調されています。 [実務示唆: KaggleやGPUを使った個人開発でジョブ管理に課題を感じる場合、Slurmを導入し、AIアシスタントを活用してセットアップを自動化することで、効率的な実験環境を構築できます。] (Source: Zenn)</description>
+      <pubDate>Thu, 05 Nov 2026 11:54:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>オープンソースAIのためのMCPプロトコルの解明</title>
+      <link>https://dev.to/tercelyi/demystifying-the-mcp-protocol-for-open-source-ai-39da</link>
+      <guid isPermaLink="false">https://dev.to/tercelyi/demystifying-the-mcp-protocol-for-open-source-ai-39da</guid>
+      <description>[Score: 80] MCPプロトコルは多くのオープンソースAIワークフローにおける接続基盤ですが、しばしばブラックボックスとして扱われます。 / 本記事では、MCPの重要性、A2AやCLIアダプターとの関連、apcoreのようなランタイムがガバナンスや監査、マルチプロトコルギャップを埋める役割を解説します。 / エージェントやモデルがリモートツールを発見、記述、呼び出す方法を定義し、責任あるエージェント開発にはガバナンス層が不可欠です。 [実務示唆: オープンソースAIエージェント開発者は、MCPプロトコル準拠だけでなく、ガバナンス、テスト可能性、エンタープライズ対応を考慮したモジュール設計を心がけ、apcoreのようなランタイムの活用を検討すべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 06 Nov 2026 01:44:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>Inkling 2 Smallが登場 — ウェイトはまだ。今どうすべきか</title>
+      <link>https://dev.to/paullovelace/inkling-2-small-is-here-the-weights-arent-what-to-do-now-3292</link>
+      <guid isPermaLink="false">https://dev.to/paullovelace/inkling-2-small-is-here-the-weights-arent-what-to-do-now-3292</guid>
+      <description>[Score: 80] Thinking Machines Labが5940億パラメータのInkling 2 Smallを発表しましたが、ダウンロード可能なウェイトはまだ公開されていません。 / このモデルは長期間の自律作業、コーディング、ビジョン、知識タスクを目的とし、Artificial Analysis Intelligence Indexで31点を獲得しています。 / ウェイトは外部の安全性テストとレッドチーム評価が完了次第、Apache 2.0ライセンスで公開される予定です。 [実務示唆: Inkling 2 Smallのような高性能モデルの発表時は、ウェイトの公開状況やライセンスを確認し、すぐに利用できない場合はTinkerプラットフォームでの試用を検討すること。] (Source: Dev.to)</description>
+      <pubDate>Fri, 06 Nov 2026 01:43:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>信頼度ゲート付き階層型LLM推論の実現可能性条件</title>
+      <link>https://arxiv.org/abs/2611.05394</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.05394</guid>
+      <description>[Score: 80] 本記事は、信頼度に基づいて推論を制御する階層型LLM（大規模言語モデル）の実現可能性について考察しています。 / 推論の効率性と精度を両立させるための条件を分析しています。 / arXivLabsの紹介文が本文抜粋として提供されていますが、記事内容はタイトルから推測されます。 [実務示唆: LLMの推論コストと性能のバランスを最適化するため、信頼度ゲート付き階層型推論の導入を検討し、その実現可能性条件を評価してください。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 05 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

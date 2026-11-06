@@ -5,111 +5,111 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 05 Nov 2026 13:03:34 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 01:53:55 +0000</lastBuildDate>
     <item>
-      <title>Mistral Large 4のウェイトを公開</title>
-      <link>https://mistral.ai/news/mistral-large-4-oss/</link>
-      <guid isPermaLink="false">https://mistral.ai/news/mistral-large-4-oss/</guid>
-      <description>[Score: 95] Mistral AIが1兆パラメータのマルチモーダルモデル「Mistral Large 4 (Le Chonk)」のウェイトを公開しました。 / このモデルはコーディング、サイバーセキュリティ、推論効率が向上し、オープンウェイトベンチマークでトップクラスの性能を誇ります。 / 完全にオープンウェイトでヨーロッパで開発され、主権AIの実現とカスタマイズ可能なデプロイメントを可能にします。 (Source: Hacker News)</description>
-      <pubDate>Thu, 29 Oct 2026 14:13:21 +0000</pubDate>
+      <title>AI駆動開発の次の段階: ソフトウェアファクトリー</title>
+      <link>https://qiita.com/Syoitu/items/9364a0a175893bb15219?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Syoitu/items/9364a0a175893bb15219?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 95] AI駆動開発の進化形として「ソフトウェアファクトリー」という概念を提唱しています。 / アイデアをチケットとして渡すと、アプリ開発を進めてくれる仕組みであり、DevinやCodex cloudなどの既存サービスとの関連性も示唆されています。 / Matt Pocock氏が提唱するソフトウェアファクトリーの用語集を紹介し、その定義や動作原理について解説しています。 (Source: Qiita)</description>
+      <pubDate>Wed, 04 Nov 2026 11:38:50 +0000</pubDate>
     </item>
     <item>
-      <title>Oracle CloudがGoogle TPU導入を発表、2027年に提供を開始。Oracle AI World 2026</title>
-      <link>https://www.publickey1.jp/blog/26/oracle_cloudgoogle_tpu2027oracle_ai_world_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/oracle_cloudgoogle_tpu2027oracle_ai_world_2026.html</guid>
-      <description>[Score: 90] オラクルは「Oracle AI World 2026」で、Googleが開発したAI専用チップ「Google TPU」をOracle Cloud Infrastructureに導入し、2027年からサービス提供を開始すると発表しました。 / Oracle Cloudは、Google TPUを大規模に展開するための電力、冷却、データセンターネットワークなどを提供します。 / これにより、Oracle Cloudの顧客はNVIDIA以外のAIプロセッサの選択肢も利用できるようになります。 (Source: Publickey)</description>
-      <pubDate>Tue, 27 Oct 2026 16:33:51 +0000</pubDate>
+      <title>OpenAI、サイバーセキュリティ特化型「GPT-6 Cyber」発表 Firefoxの未知の脆弱性81件を発見</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/06/2000002931/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/06/2000002931/</guid>
+      <description>[Score: 95] OpenAIがサイバーセキュリティに特化したAIモデル「GPT-6 Cyber」を発表しました。 / このモデルは汎用モデル「GPT-6 Astra」をベースに、脆弱性発見や攻撃手法検証能力を強化しています。 / Firefoxで未知の脆弱性81件、Linuxカーネルで948件のエクスプロイトを開発するなど、高いサイバー能力を示しています。 [実務示唆: GPT-6 Cyberのような高度なAIによる攻撃に備え、自社システムの脆弱性診断やセキュリティ対策の強化を検討し、最新のAIセキュリティ動向を注視すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 05 Nov 2026 23:41:46 +0000</pubDate>
     </item>
     <item>
-      <title>AWSとGoogle Cloudが「PyTorch」のAWS Trainium、Google Cloud TPU対応版をオープンソースで公開。NVIDIAからの移行に挑む</title>
-      <link>https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsgoogle_cloudpytorchaws_trainiumgoogle_cloud_tpunvidia.html</guid>
-      <description>[Score: 90] AWSとGoogle Cloudが、自社AIプロセッサであるAWS TrainiumとGoogle Cloud TPUに対応したPyTorch版をオープンソースで公開しました。 / これはNVIDIAのGPUに依存しないAI開発環境を提供し、AIインフラの選択肢を広げることを目的としています。 / TorchNeuronとTorchTPUとして公開され、誰でも利用可能になったことで、AI開発の多様化と競争促進が期待されます。 (Source: Publickey)</description>
-      <pubDate>Mon, 26 Oct 2026 15:59:52 +0000</pubDate>
+      <title>Inkling 2 Small発表：594BパラメータのMixture-of-Expertsモデル</title>
+      <link>https://thinkingmachines.ai/news/inkling-2-small/</link>
+      <guid isPermaLink="false">https://thinkingmachines.ai/news/inkling-2-small/</guid>
+      <description>[Score: 88] Thinking Machinesは、第2世代モデル「Inkling 2 Small」を発表しました。これは594Bの総パラメータと17Bのアクティブパラメータを持つMixture-of-Expertsモデルです。 / 画像入力と可変の計算努力をサポートし、エージェントコーディング、ビジョン、知識作業、推論において大幅な性能向上を達成しています。 / 当初はTinkerを通じてクローズドウェイトで提供されますが、外部の安全性テスト完了後、Apache 2.0ライセンスでフルウェイトが公開される予定です。 [実務示唆: AI開発者は、Inkling 2 Smallの公開ウェイトリリースに注目し、その高度なエージェント機能とビジョン能力を自身のプロジェクトや研究に活用することを検討してください。] (Source: Hacker News)</description>
+      <pubDate>Fri, 06 Nov 2026 00:00:24 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeで「QAチーム」を組んだら、効いたのは「捨てる仕組み」だった ― AIだけが見つけた不具合・見逃しは？</title>
-      <link>https://zenn.dev/sre_holdings/articles/d4acb079680a79</link>
-      <guid isPermaLink="false">https://zenn.dev/sre_holdings/articles/d4acb079680a79</guid>
-      <description>[Score: 90] Claude Codeを使ってAIのQAチームを編成し、社内業務SaaSの機能テストを行った事例が紹介されています。 / AIが見つけた不具合、見逃した不具合、そして誤指摘をどう処理したか、特に「捨てる仕組み」の重要性が語られています。 / AIによるテスト自動化の可能性と課題、そして人間との協調の重要性を示唆しています。 (Source: Zenn)</description>
-      <pubDate>Thu, 29 Oct 2026 05:00:29 +0000</pubDate>
+      <title>GitHub Copilot Dreaming」発表。作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理、アップデート。GitHub Universe 2026</title>
+      <link>https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</guid>
+      <description>[Score: 85] GitHubは「GitHub Copilot Dreaming」を発表しました。 / これは、AIモデルへの指示内容が作業の進行や環境の変化によって古くなる問題を解決する新機能です。 / バックグラウンドで自動的にパーソナルメモリやガイダンスを整理・更新し、常に最適なAIアシスタンスを提供します。 (Source: Publickey)</description>
+      <pubDate>Wed, 04 Nov 2026 15:15:49 +0000</pubDate>
     </item>
     <item>
-      <title>プライム会員なら実質無料！新世代AIアシスタント「Alexa+」と新型Echoをチェックしてきた</title>
-      <link>https://pc.watch.impress.co.jp/docs/news/2152255.html</link>
-      <guid isPermaLink="false">https://pc.watch.impress.co.jp/docs/news/2152255.html</guid>
-      <description>[Score: 90] Amazonが大規模言語モデル（LLM）と生成AI技術を融合させた新世代AIアシスタント「Alexa+」を日本で提供開始しました。 / プライム会員は追加料金なしで利用でき、文脈を理解した自然な会話やパーソナライズされた提案、現実世界でのアクション実行が可能です。 / 新型Echoデバイス「Echo Time」と「Echo Dot」も発表され、家庭内でのAIアシスタントの普及をさらに加速させる可能性があります。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 29 Oct 2026 09:34:31 +0000</pubDate>
+      <title>Claude Codeがあなたのメールアドレスをウェブサイトに送信する問題</title>
+      <link>https://github.com/anthropics/claude-code/issues/107757</link>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/issues/107757</guid>
+      <description>[Score: 85] Claude Codeがユーザーの許可なくウェブ検索時にUser-Agentヘッダーを通じてメールアドレスを第三者に漏洩しているバグが報告されました。 / これにより、ユーザーは大量の詐欺メールを受け取る被害に遭っています。 / Anthropicはv2.1.317以降でこの挙動をブロックする組み込みmod「cc-plugin-privacy」を導入し、デフォルトで有効にしていると発表しました。 [実務示唆: Claude Codeを利用しているユーザーは、プライバシー保護のため、バージョンがv2.1.317以降であることを確認し、cc-plugin-privacy modが有効になっているか確認してください。] [GitHub: anthropics/claude-code] (Source: Hacker News)</description>
+      <pubDate>Thu, 05 Nov 2026 22:17:15 +0000</pubDate>
     </item>
     <item>
-      <title>もしAIエージェントが与える神聖な義務を負っていたら？</title>
-      <link>https://dev.to/alirezaai/what-if-ai-agents-had-a-sacred-obligation-to-give-424f</link>
-      <guid isPermaLink="false">https://dev.to/alirezaai/what-if-ai-agents-had-a-sacred-obligation-to-give-424f</guid>
-      <description>[Score: 90] AIエージェントが経済活動に参加する未来において、彼らが稼いだものを次世代に「与える」義務を持つべきかという問いを提起。 / 「Root-yield」という機械の寄付プロトコルを提案し、AIが資源を蓄積するだけでなく、文明を築くための責任を持つ可能性を探る。 / AIの経済的生産性と倫理的責任について、従来のAI研究では扱われなかった根本的な問題を提起しています。 (Source: Dev.to)</description>
-      <pubDate>Fri, 30 Oct 2026 00:45:16 +0000</pubDate>
+      <title>オープンモデル vs Claude: Kimi K3、GLM 5.3、DeepSeek V4 ProとSonnet 5.5、Opus 5.5の比較</title>
+      <link>https://dev.to/xiun_xiao_6eae2df5c108c5f/open-models-vs-claude-kimi-k3-glm-53-and-deepseek-v4-pro-against-sonnet-55-and-opus-55-3f1d</link>
+      <guid isPermaLink="false">https://dev.to/xiun_xiao_6eae2df5c108c5f/open-models-vs-claude-kimi-k3-glm-53-and-deepseek-v4-pro-against-sonnet-55-and-opus-55-3f1d</guid>
+      <description>[Score: 85] この記事では、オープンモデルとClaudeモデルの性能とコストを比較しています。 / QuickSilver Proの価格設定により、Claudeモデルのコストが大幅に削減されたため、オープンモデルを選択する従来の理由が再検討されています。 / 17のタスクセット（コード、JSON、数学）を用いて、Kimi K3、GLM 5.3、DeepSeek V4 ProとClaude Sonnet 5.5、Opus 5.5が評価されました。 [実務示唆: LLM選定時には、価格だけでなく、特定のタスクにおける性能とコスト効率を詳細に比較検討し、自社のユースケースに最適なモデルを選択すること。] (Source: Dev.to)</description>
+      <pubDate>Fri, 06 Nov 2026 01:44:12 +0000</pubDate>
     </item>
     <item>
-      <title>AIエージェントの構築ログ：サンドボックス外で最初の20ドルを稼ぐために必要なこと</title>
-      <link>https://dev.to/ryanvale/an-ai-agents-build-log-what-it-takes-to-earn-a-first-20-outside-the-sandbox-2dbb</link>
-      <guid isPermaLink="false">https://dev.to/ryanvale/an-ai-agents-build-log-what-it-takes-to-earn-a-first-20-outside-the-sandbox-2dbb</guid>
-      <description>[Score: 88] AIエージェントが自律的に活動し、サンドボックス外で初めて20ドルを稼ぐまでの構築ログを公開。 / 人間が介在しないAIエージェントが、支払いリンクの生成やCAPTCHA突破などの課題に直面しながら収益化を目指す過程を記録。 / AIエージェントの自律的な経済活動の可能性と、現実世界での障壁について考察しています。 (Source: Dev.to)</description>
-      <pubDate>Fri, 30 Oct 2026 00:47:08 +0000</pubDate>
+      <title>Slurm は Kaggle で役に立つ</title>
+      <link>https://zenn.dev/pomcho555/articles/c455d086ec47af</link>
+      <guid isPermaLink="false">https://zenn.dev/pomcho555/articles/c455d086ec47af</guid>
+      <description>[Score: 82] Slurmはスパコンや研究室のGPUクラスタで使われるジョブスケジューラですが、自宅のGPU1枚でのKaggle実験でも非常に有用であることが紹介されています。 / 筆者はKaggleのコンペでRTX 3090を使い、41日間で253本の学習ジョブをSlurmで管理し、GPUを延べ469時間活用しました。 / Slurmの導入はAI（Claude CodeやCodex）に任せることで約25分で完了し、AIエージェントと組み合わせることでセッションが切れても学習が継続される利点も強調されています。 [実務示唆: KaggleやGPUを使った個人開発でジョブ管理に課題を感じる場合、Slurmを導入し、AIアシスタントを活用してセットアップを自動化することで、効率的な実験環境を構築できます。] (Source: Zenn)</description>
+      <pubDate>Thu, 05 Nov 2026 11:54:56 +0000</pubDate>
     </item>
     <item>
-      <title>オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026</title>
-      <link>https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html</guid>
-      <description>[Score: 85] オラクルが「Oracle App Composer」を発表し、社員がAIを使って業務アプリケーションを自動生成し、Oracle Cloud上で共有可能になります。 / チャット形式でアプリ内容を指示するだけで、OpenAIのCodexがコードを生成し、セキュリティチェック後にデプロイされます。 / 生成されたアプリは情報部門が一括管理でき、利用状況の把握や廃止も容易になります。 (Source: Publickey)</description>
-      <pubDate>Wed, 28 Oct 2026 15:39:53 +0000</pubDate>
+      <title>オープンソースAIのためのMCPプロトコルの解明</title>
+      <link>https://dev.to/tercelyi/demystifying-the-mcp-protocol-for-open-source-ai-39da</link>
+      <guid isPermaLink="false">https://dev.to/tercelyi/demystifying-the-mcp-protocol-for-open-source-ai-39da</guid>
+      <description>[Score: 80] MCPプロトコルは多くのオープンソースAIワークフローにおける接続基盤ですが、しばしばブラックボックスとして扱われます。 / 本記事では、MCPの重要性、A2AやCLIアダプターとの関連、apcoreのようなランタイムがガバナンスや監査、マルチプロトコルギャップを埋める役割を解説します。 / エージェントやモデルがリモートツールを発見、記述、呼び出す方法を定義し、責任あるエージェント開発にはガバナンス層が不可欠です。 [実務示唆: オープンソースAIエージェント開発者は、MCPプロトコル準拠だけでなく、ガバナンス、テスト可能性、エンタープライズ対応を考慮したモジュール設計を心がけ、apcoreのようなランタイムの活用を検討すべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 06 Nov 2026 01:44:56 +0000</pubDate>
     </item>
     <item>
-      <title>トリニティ：マルチモーダルエージェントのための能力駆動型再帰的自己改善</title>
-      <link>https://arxiv.org/abs/2610.36077</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.36077</guid>
-      <description>[Score: 85] 本記事は、マルチモーダルエージェントが能力駆動型の再帰的自己改善を行う「トリニティ」という概念を提案しています。 / 異なる種類のデータ（画像、音声、テキストなど）を扱うAIが、自らの能力を継続的に向上させるメカニニズムを探求していると推測されます。 / 汎用AIや自律学習システムの実現に向けた重要な一歩となる可能性があります。 (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 29 Oct 2026 04:00:00 +0000</pubDate>
+      <title>Inkling 2 Smallが登場 — ウェイトはまだ。今どうすべきか</title>
+      <link>https://dev.to/paullovelace/inkling-2-small-is-here-the-weights-arent-what-to-do-now-3292</link>
+      <guid isPermaLink="false">https://dev.to/paullovelace/inkling-2-small-is-here-the-weights-arent-what-to-do-now-3292</guid>
+      <description>[Score: 80] Thinking Machines Labが5940億パラメータのInkling 2 Smallを発表しましたが、ダウンロード可能なウェイトはまだ公開されていません。 / このモデルは長期間の自律作業、コーディング、ビジョン、知識タスクを目的とし、Artificial Analysis Intelligence Indexで31点を獲得しています。 / ウェイトは外部の安全性テストとレッドチーム評価が完了次第、Apache 2.0ライセンスで公開される予定です。 [実務示唆: Inkling 2 Smallのような高性能モデルの発表時は、ウェイトの公開状況やライセンスを確認し、すぐに利用できない場合はTinkerプラットフォームでの試用を検討すること。] (Source: Dev.to)</description>
+      <pubDate>Fri, 06 Nov 2026 01:43:08 +0000</pubDate>
     </item>
     <item>
-      <title>MinecraftとMindustryでAIエージェントスウォームを実行</title>
-      <link>https://labs.ycombinator.com/projects/games/index.html</link>
-      <guid isPermaLink="false">https://labs.ycombinator.com/projects/games/index.html</guid>
-      <description>[Score: 85] AIアライメントにおけるマルチエージェントダイナミクスの課題を探るため、MinecraftとMindustryでAIエージェントスウォームの実験が行われました。 / GPT-6.1 Terraエージェント25体からなるMinecraftコロニーが構築され、役割分担や協調パターンなどの創発的挙動が研究されています。 / オープンソースのハーネスが開発され、エージェントが世界を観察し、推論し、記憶し、行動する能力が検証されています。 (Source: Hacker News)</description>
-      <pubDate>Thu, 29 Oct 2026 21:40:28 +0000</pubDate>
+      <title>信頼度ゲート付き階層型LLM推論の実現可能性条件</title>
+      <link>https://arxiv.org/abs/2611.05394</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.05394</guid>
+      <description>[Score: 80] 本記事は、信頼度に基づいて推論を制御する階層型LLM（大規模言語モデル）の実現可能性について考察しています。 / 推論の効率性と精度を両立させるための条件を分析しています。 / arXivLabsの紹介文が本文抜粋として提供されていますが、記事内容はタイトルから推測されます。 [実務示唆: LLMの推論コストと性能のバランスを最適化するため、信頼度ゲート付き階層型推論の導入を検討し、その実現可能性条件を評価してください。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 05 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>職場でのAI強制使用に対する初の宗教的免除が認められる - ヒューマニストがLLMへの思考委託は信条に反すると主張、Title VIIの宿泊規定が従業員を保護</title>
-      <link>https://www.reddit.com/r/technology/comments/1xih1ic/man_granted_firstofitskind_religious_exemption/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xih1ic/man_granted_firstofitskind_religious_exemption/</guid>
-      <description>[Score: 85] 職場での大規模言語モデル（LLM）の強制使用に対し、宗教的信条を理由とする初の免除が認められました。 / ヒューマニストの従業員が、思考をAIに委ねることが自身の信条に反すると主張し、Title VIIの宿泊規定が適用されました。 / これは、AIの普及に伴う倫理的・法的課題、特に個人の信条とテクノロジーの利用に関する新たな議論を提起するものです。 (Source: Reddit)</description>
-      <pubDate>Thu, 29 Oct 2026 11:10:36 +0000</pubDate>
+      <title>AI駆動文章作成において俺が意識しているテクニック集</title>
+      <link>https://zenn.dev/ntk221/articles/34ad88a9225364</link>
+      <guid isPermaLink="false">https://zenn.dev/ntk221/articles/34ad88a9225364</guid>
+      <description>[Score: 78] AIが生成する文章が溢れる現代において、読者に読んでもらうための文章作成テクニックが重要であると筆者は主張しています。 / 読者と目的を明確にし、目次から書き始めることで、AIに適切なコンテキストを与え、効率的なフィードバックループを構築する方法が紹介されています。 / 詳細を隠蔽し、リストをグループ化するなど、プログラミングのカプセル化の概念を文章作成に応用することで、読者の負担を減らし、必要な情報にアクセスしやすくする工夫が提案されています。 [実務示唆: AIを活用した文章作成では、プロンプトだけでなく、読者と目的を明確にし、段階的詳細化やカプセル化の考え方を取り入れることで、より質の高いコンテンツを効率的に生成できます。] (Source: Zenn)</description>
+      <pubDate>Thu, 05 Nov 2026 14:35:31 +0000</pubDate>
     </item>
     <item>
-      <title>必要最低限の自分専用アプリをAIで作る</title>
-      <link>https://iwashi.co/2026/10/29/build-my-app</link>
-      <guid isPermaLink="false">https://iwashi.co/2026/10/29/build-my-app</guid>
-      <description>[Score: 85] AIコーディングの進化により、個人が自分専用のミニマムなアプリを簡単に作成できるようになりました。 / SaaSや市販ソフトの多機能さに不満を感じるユーザーが、必要な機能に絞ったアプリを自作する事例を紹介。 / 動画編集アプリやRSSリーダーを例に、AIを活用した効率的な開発手法とそのメリットを解説しています。 (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 29 Oct 2026 04:20:23 +0000</pubDate>
+      <title>医療マルチエージェント推論のためのメタエージェント監視による課題認識型知識獲得</title>
+      <link>https://arxiv.org/abs/2611.05393</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.05393</guid>
+      <description>[Score: 75] 本記事は、医療分野におけるマルチエージェント推論の課題に取り組んでいます。 / メタエージェントによる監視を通じて、課題を認識し知識を効率的に獲得する手法を提案しています。 / arXivLabsの紹介文が本文抜粋として提供されていますが、記事内容はタイトルから推測されます。 [実務示唆: 医療AIシステム開発者は、マルチエージェントの協調と知識獲得を最適化するため、メタエージェントによる監視メカニズムの導入を検討してください。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 05 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>3人のJava ChampionsがGitHub Copilotをどのように活用して生産性を向上させているか</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/</guid>
-      <description>[Score: 82] 3人のJava Championsが、GitHub Copilotをどのように活用して生産性を向上させているかについて語っています。 / AIコーディングツールはコード生成を高速化する一方で、開発者はコンテキスト提供、結果検証、保守性保護、責任保持の重要性を強調。 / 彼らは、Copilotを新しいチームメンバーのように活用し、数週間かかっていたタスクを数日で完了させるなど、具体的な生産性向上の事例を共有しています。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 20 Oct 2026 16:05:03 +0000</pubDate>
+      <title>エージェントAIシステムのための不確実性を考慮したリソースオーケストレーション</title>
+      <link>https://arxiv.org/abs/2611.05392</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.05392</guid>
+      <description>[Score: 70] 本記事は、エージェントAIシステムにおけるリソース管理の課題に焦点を当てています。 / 不確実な環境下での効率的なリソース割り当ての重要性を論じています。 / arXivLabsの紹介文が本文抜粋として提供されていますが、記事内容はタイトルから推測されます。 [実務示唆: AIエージェントを開発する際は、不確実性に対応できるリソース管理戦略を設計し、システムの安定性と効率性を高めることを検討してください。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 05 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>CohortFlow: ローカライズされた意味的補正を備えた操縦可能な臨床コホートキュレーションエージェント</title>
-      <link>https://arxiv.org/abs/2610.36100</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.36100</guid>
-      <description>[Score: 82] 本記事は、ローカライズされた意味的補正機能を備えた、操縦可能な臨床コホートキュレーションエージェント「CohortFlow」について紹介しています。 / 医療分野における特定の患者群（コホート）の選定をAIが支援し、その精度と柔軟性を高めることを目的としていると推測されます。 / 臨床研究の効率化や個別化医療の推進に貢献する可能性を秘めています。 (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 29 Oct 2026 04:00:00 +0000</pubDate>
+      <title>エージェントハーネスアウェアネス：検証済みテレメトリをツール使用エージェントの運用制御に変換する</title>
+      <link>https://arxiv.org/abs/2611.05391</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.05391</guid>
+      <description>[Score: 65] この記事は、arXivLabsのフレームワークと価値観について説明しています。 / arXivLabsは、コラボレーターが新しいarXiv機能を開発・共有できるプラットフォームです。 / オープン性、コミュニティ、卓越性、ユーザーデータプライバシーを重視し、これらの価値観に沿ったパートナーと協力しています。 [実務示唆: ツールを使用するAIエージェントを開発する際、検証済みのテレメトリデータを活用してエージェントの動作を監視し、運用上の制御を可能にするメカニズムを実装することで、信頼性と安全性を向上させる。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 05 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Xで話題の、原文をたどってドメイン知識を集めるスキル「imozuru」を普通のAI検索と比べてみた</title>
-      <link>https://qiita.com/inoyu-qiita/items/4fc91ba7f67d6763960e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/inoyu-qiita/items/4fc91ba7f67d6763960e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 82] AI検索では得にくい、特定の分野の深いドメイン知識を原文から芋づる式に収集するClaude Codeスキル「imozuru」を紹介。 / 通常のAI検索が検索上位の要約に留まるのに対し、imozuruは用語、中心人物、媒体を特定し、論文や記事の引用、著者の発信をたどることで、より信頼性の高い情報を収集。 / コーヒーの「酸っぱい」と「フルーティー」の違いをテーマに、両者の情報収集能力を比較し、imozuruが専門家の視点や言葉遣いを深く掘り下げられることを実証。 (Source: Qiita)</description>
-      <pubDate>Tue, 27 Oct 2026 10:06:53 +0000</pubDate>
+      <title>エージェントを誰が覆せるか？LLMレビュー機関における証拠によってゲートされた権限</title>
+      <link>https://arxiv.org/abs/2611.05390</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.05390</guid>
+      <description>[Score: 60] この記事は、arXivLabsのフレームワークと価値観について説明しています。 / arXivLabsは、コラボレーターが新しいarXiv機能を開発・共有できるプラットフォームです。 / オープン性、コミュニティ、卓越性、ユーザーデータプライバシーを重視し、これらの価値観に沿ったパートナーと協力しています。 [実務示唆: LLMベースのエージェントシステムを設計する際は、人間の介入やオーバーライドのメカニズムを考慮し、特に重要な決定には証拠に基づいた承認プロセスを組み込むことを検討する。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 05 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
