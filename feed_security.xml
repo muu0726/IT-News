@@ -5,41 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 13:17:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 01:16:54 +0000</lastBuildDate>
     <item>
-      <title>sshole: Unixパスワード認証の歴史とmusl libcの挙動</title>
-      <link>https://sshhole.com</link>
-      <guid isPermaLink="false">https://sshhole.com</guid>
-      <description>[Score: 95] 本記事は、Unixにおけるパスワード認証の歴史と、特に/etc/passwdや/etc/shadowファイルでのパスワードハッシュの扱いの変遷を解説しています。 / 1980年代の/etc/passwdに平文に近い形でパスワードが置かれていた時代から、現代の/etc/shadowでのハッシュ化されたパスワード管理までを概観します。 / 特に、musl libcがcrypt()関数のNULL戻り値を防ぐために「*」を返す挙動が、後のOpenSSHの脆弱性につながる可能性を示唆しています。 [実務示唆: システム管理者やセキュリティエンジニアは、パスワード認証の仕組みとlibcの実装詳細を理解し、特にmusl libc環境での認証挙動に注意を払うべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 05 Nov 2026 12:19:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>Alpine Linuxセキュリティアドバイザリ: OpenSSH-serverパスワード認証バイパスの脆弱性</title>
-      <link>https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/</link>
-      <guid isPermaLink="false">https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/</guid>
-      <description>[Score: 95] Alpine LinuxのOpenSSHサーバーに、パスワード認証をバイパスできる重大な脆弱性が発見されました。 / この脆弱性は、パスワードフィールドが「*」のアカウント（キー認証専用アカウントなど）が存在し、かつ$5$または$6$のパスワードハッシュを持つ別のアカウントが少なくとも1つ存在する場合に悪用されます。 / 攻撃者は、非常に長いパスワードを送信することで、パスワードを知らなくてもSSHポートにログインできてしまいます。 [実務示唆: Alpine Linuxでsshdを運用している場合は、直ちにopensshパッケージを更新し、sshdサービスを再起動してください。更新できない場合は、PasswordAuthentication noを設定してパスワードログインを無効にしてください。] (Source: Hacker News)</description>
-      <pubDate>Thu, 05 Nov 2026 14:44:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>MS Paintのリモートコード実行の脆弱性 (CVE-2026-83844)</title>
-      <link>https://www.cve.org/CVERecord?id=CVE-2026-83844</link>
-      <guid isPermaLink="false">https://www.cve.org/CVERecord?id=CVE-2026-83844</guid>
-      <description>[Score: 90] Microsoft Paintにリモートコード実行の脆弱性(CVE-2026-83844)が発見されました。 / この脆弱性は、攻撃者が悪意のあるファイルを介してユーザーのシステム上で任意のコードを実行できる可能性があります。 / 詳細な情報はCVEのレコードで確認できますが、早期の対応が推奨されます。 [実務示唆: MS Paintを使用しているWindowsユーザーは、この脆弱性に対するパッチがリリースされ次第、速やかにシステムをアップデートし、セキュリティリスクを軽減してください。] (Source: Hacker News)</description>
-      <pubDate>Thu, 05 Nov 2026 20:43:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>マーク・キューバンがFacebookがAIディープフェイク詐欺広告を意図的に実行していると発言、Metaの文書は160億ドルの詐欺関連収益を明らかに</title>
-      <link>https://www.reddit.com/r/technology/comments/1xoqri7/mark_cuban_says_facebook_knowingly_runs_ai/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xoqri7/mark_cuban_says_facebook_knowingly_runs_ai/</guid>
-      <description>[Score: 90] マーク・キューバンが、FacebookがAIディープフェイク詐欺広告を意図的に掲載していると主張しました。 / Metaの内部文書からは、詐欺関連で160億ドルもの収益があったことが示唆されています。 / これは、AI技術の悪用とプラットフォームの責任に関する深刻な問題提起です。 [実務示唆: AI技術を用いたディープフェイク詐欺広告の横行は、プラットフォームの信頼性を損なうため、広告主は掲載先の選定に注意し、プラットフォーム側はAIによる検出と対策を強化すべきです。] (Source: Reddit)</description>
-      <pubDate>Thu, 05 Nov 2026 18:47:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>セキュリティ啓発団体に不正アクセス 個人情報最大1.5万件漏えいか</title>
-      <link>https://www.itmedia.co.jp/news/article/2611/06/2000002978/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/06/2000002978/</guid>
-      <description>[Score: 90] 日本ネットワークセキュリティ協会（JNSA）が運営する「情報セキュリティ理解度チェックサービス」が不正アクセスを受けました。 / 最大1万5128件の個人情報（ID、ハッシュ化パスワード、氏名、企業名など）が漏えいした可能性があり、サービスは停止中です。 / セキュリティ啓発団体自身が被害に遭ったことで、改めて情報セキュリティ対策の重要性が浮き彫りになっています。 [実務示唆: 自身のサービスや利用している外部サービスのセキュリティ対策状況を再確認し、多要素認証の導入やパスワードの使い回し停止を徹底すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 06 Nov 2026 08:41:42 +0000</pubDate>
+      <title>Firecracker VM Escape: PwnEscape Part 2</title>
+      <link>https://pwn.ai/blog/firecracker-escape</link>
+      <guid isPermaLink="false">https://pwn.ai/blog/firecracker-escape</guid>
+      <description>[Score: 95] FirecrackerマイクロVMからのエスケープに成功し、ホスト上でroot権限でのコード実行が達成されました。 / KVMからの復帰時にレジスタの保存方法を変更し、任意のコードを実行させることでエスケープを実現しています。 / この脆弱性はCVE-2026-99999として示されており、Firecrackerのセキュリティモデルに深刻な影響を与えます。 [実務示唆: Firecrackerを使用しているシステムでは、CVE-2026-99999に対するパッチ適用状況を確認し、速やかにセキュリティアップデートを適用することを強く推奨します。] [GitHub: firecracker-microvm/firecracker] (Source: Hacker News)</description>
+      <pubDate>Fri, 06 Nov 2026 19:33:38 +0000</pubDate>
     </item>
     <item>
       <title>そろそろ共通鍵暗号・公開鍵暗号についてちゃんと理解する</title>
@@ -49,11 +21,11 @@
       <pubDate>Wed, 04 Nov 2026 00:40:41 +0000</pubDate>
     </item>
     <item>
-      <title>インプレス、セキュリティ書籍9冊を全文無料公開。11月9日まで</title>
-      <link>https://pc.watch.impress.co.jp/docs/news/2153924.html</link>
-      <guid isPermaLink="false">https://pc.watch.impress.co.jp/docs/news/2153924.html</guid>
-      <description>[Score: 75] インプレスが、セキュリティ関連の書籍9冊を11月5日から9日までの期間限定で全文無料公開しています。 / 不正アクセスやランサムウェア攻撃への関心の高まりを受け、情報セキュリティの普及啓発を目的とした施策です。 / 会員登録不要でWebブラウザから閲覧可能で、「ゼロトラスト」「Webアプリのセキュアコーディング」など多岐にわたるテーマが含まれます。 [実務示唆: セキュリティ知識の習得や最新動向のキャッチアップのため、無料公開期間中にこれらの書籍を読み、自身の開発や運用に役立つ情報を得るべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 05 Nov 2026 07:40:34 +0000</pubDate>
+      <title>Claude Codeに.envを貼り付ける代わりに、dotvaultサービス・トークンを1つ与える</title>
+      <link>https://dev.to/uehara/pasting-env-into-claude-code-give-the-agent-one-dotvault-service-token-instead-1fii</link>
+      <guid isPermaLink="false">https://dev.to/uehara/pasting-env-into-claude-code-give-the-agent-one-dotvault-service-token-instead-1fii</guid>
+      <description>[Score: 85] 本記事は、AIエージェントに機密情報（.envファイル）を安全に渡すためのdotvaultサービス・トークンの利用方法について解説しています。 / Claude Codeにプロジェクトと環境に限定されたdotvaultサービス・トークンのみを与え、.envファイルを直接渡すことなく機密情報のインポートと利用を成功させました。 / トークンを失効させるとエージェントが認証失敗することを検証し、AIエージェントとの安全なシークレット管理の重要性を示しています。 [実務示唆: AIエージェントに機密情報を扱うタスクを任せる際は、直接.envファイルを渡すのではなく、dotvaultのような専用のシークレット管理ツールを活用し、最小権限のサービス・トークンを使用することでセキュリティリスクを低減しましょう。] (Source: Dev.to)</description>
+      <pubDate>Sat, 07 Nov 2026 01:02:42 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,14 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 13:17:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 01:16:54 +0000</lastBuildDate>
+    <item>
+      <title>[破壊的変更] 明治時代の開始日が変更になって単体テストが失敗した件</title>
+      <link>https://zenn.dev/xin9le/articles/9a1cf8e10494d6</link>
+      <guid isPermaLink="false">https://zenn.dev/xin9le/articles/9a1cf8e10494d6</guid>
+      <description>[Score: 100] Ubuntu 26.04に同梱されるICUの更新により、明治時代の開始日が1868年9月8日から10月23日に変更されました。 / これにより、和暦を扱うC#/.NETのコードでArgumentOutOfRangeExceptionが発生し、単体テストが失敗する事態が発生しました。 / CI/CD環境でOSのバージョンアップが行われた際に、予期せぬ破壊的変更が引き起こされる可能性を示唆しています。 [実務示唆: 和暦や日付計算を扱うシステムでは、OSやライブラリのアップデート時に日付関連の破壊的変更がないか、特にCI環境での詳細なテストと検証を徹底してください。] (Source: Zenn)</description>
+      <pubDate>Fri, 06 Nov 2026 14:39:45 +0000</pubDate>
+    </item>
     <item>
       <title>AI駆動開発の次の段階: ソフトウェアファクトリー</title>
       <link>https://qiita.com/Syoitu/items/9364a0a175893bb15219?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
@@ -14,67 +21,25 @@
       <pubDate>Wed, 04 Nov 2026 11:38:50 +0000</pubDate>
     </item>
     <item>
-      <title>sshole: Unixパスワード認証の歴史とmusl libcの挙動</title>
-      <link>https://sshhole.com</link>
-      <guid isPermaLink="false">https://sshhole.com</guid>
-      <description>[Score: 95] 本記事は、Unixにおけるパスワード認証の歴史と、特に/etc/passwdや/etc/shadowファイルでのパスワードハッシュの扱いの変遷を解説しています。 / 1980年代の/etc/passwdに平文に近い形でパスワードが置かれていた時代から、現代の/etc/shadowでのハッシュ化されたパスワード管理までを概観します。 / 特に、musl libcがcrypt()関数のNULL戻り値を防ぐために「*」を返す挙動が、後のOpenSSHの脆弱性につながる可能性を示唆しています。 [実務示唆: システム管理者やセキュリティエンジニアは、パスワード認証の仕組みとlibcの実装詳細を理解し、特にmusl libc環境での認証挙動に注意を払うべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 05 Nov 2026 12:19:02 +0000</pubDate>
+      <title>Firecracker VM Escape: PwnEscape Part 2</title>
+      <link>https://pwn.ai/blog/firecracker-escape</link>
+      <guid isPermaLink="false">https://pwn.ai/blog/firecracker-escape</guid>
+      <description>[Score: 95] FirecrackerマイクロVMからのエスケープに成功し、ホスト上でroot権限でのコード実行が達成されました。 / KVMからの復帰時にレジスタの保存方法を変更し、任意のコードを実行させることでエスケープを実現しています。 / この脆弱性はCVE-2026-99999として示されており、Firecrackerのセキュリティモデルに深刻な影響を与えます。 [実務示唆: Firecrackerを使用しているシステムでは、CVE-2026-99999に対するパッチ適用状況を確認し、速やかにセキュリティアップデートを適用することを強く推奨します。] [GitHub: firecracker-microvm/firecracker] (Source: Hacker News)</description>
+      <pubDate>Fri, 06 Nov 2026 19:33:38 +0000</pubDate>
     </item>
     <item>
-      <title>Alpine Linuxセキュリティアドバイザリ: OpenSSH-serverパスワード認証バイパスの脆弱性</title>
-      <link>https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/</link>
-      <guid isPermaLink="false">https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/</guid>
-      <description>[Score: 95] Alpine LinuxのOpenSSHサーバーに、パスワード認証をバイパスできる重大な脆弱性が発見されました。 / この脆弱性は、パスワードフィールドが「*」のアカウント（キー認証専用アカウントなど）が存在し、かつ$5$または$6$のパスワードハッシュを持つ別のアカウントが少なくとも1つ存在する場合に悪用されます。 / 攻撃者は、非常に長いパスワードを送信することで、パスワードを知らなくてもSSHポートにログインできてしまいます。 [実務示唆: Alpine Linuxでsshdを運用している場合は、直ちにopensshパッケージを更新し、sshdサービスを再起動してください。更新できない場合は、PasswordAuthentication noを設定してパスワードログインを無効にしてください。] (Source: Hacker News)</description>
-      <pubDate>Thu, 05 Nov 2026 14:44:20 +0000</pubDate>
+      <title>タスク管理までAIエージェントに任せたら、確認待ちに答えるだけになった</title>
+      <link>https://zenn.dev/rescuenow/articles/4c03a548cd6589</link>
+      <guid isPermaLink="false">https://zenn.dev/rescuenow/articles/4c03a548cd6589</guid>
+      <description>[Score: 95] AIエージェントにタスク管理と作業実行を任せることで、人間は「確認待ち」に答えるだけの働き方に変化した事例が紹介されています。 / 司令塔エージェントがGitHubやNotionのタスクを整理し、人間の判断が必要なものだけを「確認待ち」パネルに表示します。 / これにより、タスクの優先順位付けや作業役への指示出しが不要になり、効率的な業務遂行が可能になっています。 [実務示唆: AIエージェントによるタスク管理と自動化を自社業務に導入できないか検討し、特に定型的な判断や情報整理の自動化から試行することで、開発者の生産性向上を目指してください。] (Source: Zenn)</description>
+      <pubDate>Fri, 06 Nov 2026 08:59:24 +0000</pubDate>
     </item>
     <item>
-      <title>OpenAI、サイバーセキュリティ特化型「GPT-6 Cyber」発表 Firefoxの未知の脆弱性81件を発見</title>
-      <link>https://www.itmedia.co.jp/news/article/2611/06/2000002931/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/06/2000002931/</guid>
-      <description>[Score: 95] OpenAIがサイバーセキュリティに特化したAIモデル「GPT-6 Cyber」を発表しました。 / このモデルは汎用モデル「GPT-6 Astra」をベースに、脆弱性発見や攻撃手法検証能力を強化しています。 / Firefoxで未知の脆弱性81件、Linuxカーネルで948件のエクスプロイトを開発するなど、高いサイバー能力を示しています。 [実務示唆: GPT-6 Cyberのような高度なAIによる攻撃に備え、自社システムの脆弱性診断やセキュリティ対策の強化を検討し、最新のAIセキュリティ動向を注視すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 05 Nov 2026 23:41:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
-      <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</guid>
-      <description>[Score: 90] GitHubは来年初頭に、従来比180倍のスループット性能向上を実現すると発表しました。 / これはMicrosoft Azureへの基盤移行と新アーキテクチャ採用により、AIエージェント時代に対応するためです。 / 大規模なエンジニアリング投資により、急増する負荷に対応し、信頼性を強化します。 (Source: Publickey)</description>
-      <pubDate>Tue, 03 Nov 2026 15:16:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub Universe 2026: スタックのあらゆる層を進化させる</title>
-      <link>https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/</guid>
-      <description>[Score: 90] GitHub Universe 2026では、開発者の仕事がAIアシスタントやエージェントとの協調作業へと変化している現状が語られました。 / GitHubは、世界で最も包括的なソフトウェアデリバリーシステムを目指し、そのビジョンを実現する新製品とインフラの再構築を発表。 / SDLCが線形ではなくなり、開発者が方向性を定め、エージェントが実装と検証を行う「エージェント型ソフトウェアデリバリーシステム」を提唱しています。 (Source: GitHub Blog)</description>
-      <pubDate>Wed, 28 Oct 2026 16:09:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>MS Paintのリモートコード実行の脆弱性 (CVE-2026-83844)</title>
-      <link>https://www.cve.org/CVERecord?id=CVE-2026-83844</link>
-      <guid isPermaLink="false">https://www.cve.org/CVERecord?id=CVE-2026-83844</guid>
-      <description>[Score: 90] Microsoft Paintにリモートコード実行の脆弱性(CVE-2026-83844)が発見されました。 / この脆弱性は、攻撃者が悪意のあるファイルを介してユーザーのシステム上で任意のコードを実行できる可能性があります。 / 詳細な情報はCVEのレコードで確認できますが、早期の対応が推奨されます。 [実務示唆: MS Paintを使用しているWindowsユーザーは、この脆弱性に対するパッチがリリースされ次第、速やかにシステムをアップデートし、セキュリティリスクを軽減してください。] (Source: Hacker News)</description>
-      <pubDate>Thu, 05 Nov 2026 20:43:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI生成コードを本番品質に保つためのフロントエンド開発の仕組み</title>
-      <link>https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99</link>
-      <guid isPermaLink="false">https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99</guid>
-      <description>[Score: 90] AI生成コードの品質は、プロンプトの工夫よりもAIの外側に用意された「仕組み」で決まると筆者は主張し、Next.jsとTypeScriptのフロントエンド開発を例に本番品質を保つための4つの層を紹介しています。 / AIに渡すコンテキスト、機械的なガードレール、テスト、CIと人間のレビューという層を通じて、AIが推測で埋める範囲を減らし、プロジェクトの慣習に沿わないコードを早期に検出・修正する仕組みを構築します。 / AI共作コードは人のみのコードに比べて指摘事項が多いというレポートも引用し、AIの導入がデリバリーの安定性を損なわないよう「制御の仕組み」の重要性を強調しています。 [実務示唆: AI生成コードを開発に導入する際は、AIに与えるコンテキストの明確化、Lintや型チェックなどの機械的ガードレール、自動テスト、CI/CDと人間のレビューを組み合わせた多層的な品質保証体制を構築すべきです。] (Source: Zenn)</description>
-      <pubDate>Thu, 05 Nov 2026 09:00:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
-      <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
-      <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>マーク・キューバンがFacebookがAIディープフェイク詐欺広告を意図的に実行していると発言、Metaの文書は160億ドルの詐欺関連収益を明らかに</title>
-      <link>https://www.reddit.com/r/technology/comments/1xoqri7/mark_cuban_says_facebook_knowingly_runs_ai/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xoqri7/mark_cuban_says_facebook_knowingly_runs_ai/</guid>
-      <description>[Score: 90] マーク・キューバンが、FacebookがAIディープフェイク詐欺広告を意図的に掲載していると主張しました。 / Metaの内部文書からは、詐欺関連で160億ドルもの収益があったことが示唆されています。 / これは、AI技術の悪用とプラットフォームの責任に関する深刻な問題提起です。 [実務示唆: AI技術を用いたディープフェイク詐欺広告の横行は、プラットフォームの信頼性を損なうため、広告主は掲載先の選定に注意し、プラットフォーム側はAIによる検出と対策を強化すべきです。] (Source: Reddit)</description>
-      <pubDate>Thu, 05 Nov 2026 18:47:12 +0000</pubDate>
+      <title>もう検索エンジンに戻れない</title>
+      <link>https://anond.hatelabo.jp/20260930202455</link>
+      <guid isPermaLink="false">https://anond.hatelabo.jp/20260930202455</guid>
+      <description>[Score: 95] 筆者は、AIチャットボットの登場により、従来の検索エンジンの利用方法から脱却したと述べています。 / Unityのエラー解決や情報収集において、AIが文脈を理解し、対話形式で最適な答えを導き出す体験が「当たり前」になったと強調しています。 / AIが一次情報への入り口となり、検索エンジンはAIの回答の「確認」に使うという、情報探索の主従関係の逆転を指摘しています。 [実務示唆: エンジニアは、AIを情報探索の主要なツールとして活用し、AIの回答を公式ドキュメントや信頼できる情報源で検証するスキルを磨くべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 30 Sep 2026 11:35:51 +0000</pubDate>
     </item>
     <item>
       <title>Claudeを使いこなす人に、MagicPodは要るのか。知らないアプリでPlaywrightと比べた記録</title>
@@ -84,25 +49,39 @@
       <pubDate>Fri, 06 Nov 2026 05:13:04 +0000</pubDate>
     </item>
     <item>
-      <title>spec as code ではなく、code as spec — 仕様書のように書かれたコードを正にする</title>
-      <link>https://zenn.dev/ruri/articles/code-as-spec</link>
-      <guid isPermaLink="false">https://zenn.dev/ruri/articles/code-as-spec</guid>
-      <description>[Score: 90] 厳密な仕様書がコードに似ていく問題提起から、「仕様書のように読めるコード」を仕様の正（SSoT）とするアプローチを提唱しています。 / ドメインモデリングされた可読性の高いコードを重視し、コンパイラやテストによる検証可能性を強調。 / 自然言語の仕様書はコードに現れない目的やスコープに限定し、ユースケースや要件はテストで記述することを推奨しています。 [実務示唆: 仕様書はコードに現れない情報に限定し、ドメインモデリングされた可読性の高いコードを仕様の正とすることで、保守性と信頼性の高いシステム開発を目指しましょう。] (Source: Zenn)</description>
-      <pubDate>Thu, 05 Nov 2026 23:00:05 +0000</pubDate>
+      <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
+      <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</guid>
+      <description>[Score: 90] GitHubは来年初頭に、従来比180倍のスループット性能向上を実現すると発表しました。 / これはMicrosoft Azureへの基盤移行と新アーキテクチャ採用により、AIエージェント時代に対応するためです。 / 大規模なエンジニアリング投資により、急増する負荷に対応し、信頼性を強化します。 (Source: Publickey)</description>
+      <pubDate>Tue, 03 Nov 2026 15:16:22 +0000</pubDate>
     </item>
     <item>
-      <title>セキュリティ啓発団体に不正アクセス 個人情報最大1.5万件漏えいか</title>
-      <link>https://www.itmedia.co.jp/news/article/2611/06/2000002978/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/06/2000002978/</guid>
-      <description>[Score: 90] 日本ネットワークセキュリティ協会（JNSA）が運営する「情報セキュリティ理解度チェックサービス」が不正アクセスを受けました。 / 最大1万5128件の個人情報（ID、ハッシュ化パスワード、氏名、企業名など）が漏えいした可能性があり、サービスは停止中です。 / セキュリティ啓発団体自身が被害に遭ったことで、改めて情報セキュリティ対策の重要性が浮き彫りになっています。 [実務示唆: 自身のサービスや利用している外部サービスのセキュリティ対策状況を再確認し、多要素認証の導入やパスワードの使い回し停止を徹底すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 06 Nov 2026 08:41:42 +0000</pubDate>
+      <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
+      <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
+      <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>Inkling 2 Small発表：594BパラメータのMixture-of-Expertsモデル</title>
-      <link>https://thinkingmachines.ai/news/inkling-2-small/</link>
-      <guid isPermaLink="false">https://thinkingmachines.ai/news/inkling-2-small/</guid>
-      <description>[Score: 88] Thinking Machinesは、第2世代モデル「Inkling 2 Small」を発表しました。これは594Bの総パラメータと17Bのアクティブパラメータを持つMixture-of-Expertsモデルです。 / 画像入力と可変の計算努力をサポートし、エージェントコーディング、ビジョン、知識作業、推論において大幅な性能向上を達成しています。 / 当初はTinkerを通じてクローズドウェイトで提供されますが、外部の安全性テスト完了後、Apache 2.0ライセンスでフルウェイトが公開される予定です。 [実務示唆: AI開発者は、Inkling 2 Smallの公開ウェイトリリースに注目し、その高度なエージェント機能とビジョン能力を自身のプロジェクトや研究に活用することを検討してください。] (Source: Hacker News)</description>
-      <pubDate>Fri, 06 Nov 2026 00:00:24 +0000</pubDate>
+      <title>Libghostty 1.0 リリース</title>
+      <link>https://mitchellh.com/writing/libghostty-1-0</link>
+      <guid isPermaLink="false">https://mitchellh.com/writing/libghostty-1-0</guid>
+      <description>[Score: 90] libghostty-vt 1.0がリリースされ、ポータブルで高性能なC言語のターミナルエミュレーションライブラリとして安定版となりました。 / このライブラリはGhosttyのコアから抽出され、C ABIの安定性が保証されています。 / JetBrains IDEやNeovimなど、すでに数百万人のユーザーが利用する製品に採用されており、その広範な影響力が示されています。 [実務示唆: 既存のターミナルエミュレーションに課題を抱える開発者は、libghostty-vt 1.0の導入を検討し、その性能と安定性を評価することを推奨します。] [GitHub: mitchellh/ghostty] (Source: Hacker News)</description>
+      <pubDate>Fri, 06 Nov 2026 23:30:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIがAI研究を劇的に加速させている</title>
+      <link>https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai</link>
+      <guid isPermaLink="false">https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai</guid>
+      <description>[Score: 90] Anthropicの報告によると、AIがAI研究開発を劇的に加速させており、その進捗速度は以前の2倍に達しています。 / これは、AIがAI R&amp;Dを自動化していることに起因すると考えられています。 / METRの調査でも、Anthropicの能力進捗が過去12ヶ月間で約2倍になったことが確認されています。 [実務示唆: AIを活用した研究開発プロセスの自動化や効率化を自社のR&amp;D部門で検討し、AIによる加速効果を最大化するための戦略を立案することを推奨します。] (Source: Hacker News)</description>
+      <pubDate>Fri, 06 Nov 2026 20:27:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</guid>
+      <description>[Score: 90] GitHubのコミット数が大幅に増加する一方で、開発者の生産性がそれに比例して向上していない現状を指摘し、AIによるコード生成だけでは不十分であると述べています。 / AIエージェントは、ソフトウェア開発の計画、構築、検証、監視といった全ステージにおいて、開発者の効率を向上させる可能性を秘めています。 / 特に、散在する情報を集約し、API変更の計画立案を支援するなど、開発プロセスのボトルネックを解消する具体的な活用例が紹介されています。 [実務示唆: AIを単なるコード生成ツールとしてではなく、開発プロセスの計画、検証、監視といった広範なタスクを支援するエージェントとして活用することで、開発全体の生産性向上を目指しましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
     </item>
     <item>
       <title>そろそろ共通鍵暗号・公開鍵暗号についてちゃんと理解する</title>
@@ -112,11 +91,25 @@
       <pubDate>Wed, 04 Nov 2026 00:40:41 +0000</pubDate>
     </item>
     <item>
-      <title>osFoundryとは何か、そしてこのデスクトップAIワークスペースはどのように機能するのか？</title>
-      <link>https://dev.to/tauchi-hi/osfoundry-kyaa-hai-aur-yh-ddeskttonp-ai-vrkspes-kaise-kaam-krtaa-hai-3fig</link>
-      <guid isPermaLink="false">https://dev.to/tauchi-hi/osfoundry-kyaa-hai-aur-yh-ddeskttonp-ai-vrkspes-kaise-kaam-krtaa-hai-3fig</guid>
-      <description>[Score: 88] osFoundryは、AIモデルとのチャット、エージェントへのタスク割り当て、ノート管理、ローカルモデル実行、カスタムアプリ作成が可能なデスクトップAIワークスペースです。 / 複数のAIツールや情報源が散在する現状の課題を解決し、一貫したコンテキストとメモリを共有する統合環境を提供します。 / VS Codeに似たインターフェースで、チャット、ワークステーション、ナレッジ、ローカルモデル、カスタムアプリ、ディスカバーのカテゴリに分かれています。 [実務示唆: AIを活用した開発や作業の効率化を目指すエンジニアは、osFoundryのような統合型AIワークスペースを試用し、複数のAIツールや情報源を横断する際のコンテキスト管理の改善を検討しましょう。] (Source: Dev.to)</description>
-      <pubDate>Fri, 06 Nov 2026 13:12:02 +0000</pubDate>
+      <title>C#の型制約とボックス化をハックする — ILと手動スタック配置</title>
+      <link>https://zenn.dev/aakei/articles/csharp-stack-box</link>
+      <guid isPermaLink="false">https://zenn.dev/aakei/articles/csharp-stack-box</guid>
+      <description>[Score: 85] この記事では、C#における型制約なしでのDispose呼び出しと、オブジェクトの手動スタック配置について深掘りしています。 / 特に、IL（中間言語）を直接操作して型制約を回避する方法や、ボックス化を伴う値型をスタックに配置する実験について解説。 / .NET 10/11 RCとUnity 6.3/7 alphaでの検証結果が示されており、パフォーマンス最適化の可能性を探っています。 [実務示唆: C#でパフォーマンスが重要な処理を行う際、IL操作や手動スタック配置によるボックス化回避を検討し、実験コードを参考に検証を推奨します。] [GitHub: Akeit0/csharp-boxing-research] (Source: Zenn)</description>
+      <pubDate>Fri, 06 Nov 2026 03:01:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>リモートのエージェントが起動した dev server を手元でプレビュー：VS Code 1.145 の Remote browser proxy を試した</title>
+      <link>https://qiita.com/shahin0809/items/a1bd931855f392806ee6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/shahin0809/items/a1bd931855f392806ee6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] VS Code 1.145で、リモートエージェントが起動した開発サーバーをローカルのAgentsウィンドウで直接プレビューできるようになりました。 / ポート転送なしでリモートホストのWebアプリにアクセス可能になり、開発体験が向上します。 / Azure VMとSSH接続で検証した結果と、Preview機能としての制限やセキュリティ上の注意点も解説されています。 [実務示唆: VS CodeのRemote Agents機能を利用している開発者は、1.145以降でポート転送なしのプレビューが可能になったため、開発環境のセットアップを簡素化できるか検証を推奨します。] [GitHub: microsoft/vscode] (Source: Qiita)</description>
+      <pubDate>Fri, 06 Nov 2026 07:28:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>Linuxカーネルの深刻な脆弱性／FDEの名前で単なるコンサルティングが販売／TypeScriptをRustに移植した「tsrs」発表ほか、2026年10月の人気記事</title>
+      <link>https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</guid>
+      <description>[Score: 85] 2026年10月の人気記事として、Linuxカーネルの深刻な脆弱性「PwnEscape」が報じられました。 / また、FDE（フォワードデプロイエンジニアリング）の名目でコンサルティングが販売されるリスクが指摘されています。 / CloudflareがTypeScriptをRustに移植した「tsrs」を発表し、メモリ使用量と速度で大幅な改善が見られます。 [実務示唆: Linuxカーネルの脆弱性「PwnEscape」はゲストVMからホストOSへの不正コード実行の可能性があるため、速やかにパッチ適用やセキュリティ対策の確認を行うべきです。] [GitHub: cloudflare/tsrs] (Source: Publickey)</description>
+      <pubDate>Thu, 05 Nov 2026 15:37:44 +0000</pubDate>
     </item>
     <item>
       <title>クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research</title>
@@ -133,18 +126,25 @@
       <pubDate>Wed, 04 Nov 2026 15:15:49 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeがあなたのメールアドレスをウェブサイトに送信する問題</title>
-      <link>https://github.com/anthropics/claude-code/issues/107757</link>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/issues/107757</guid>
-      <description>[Score: 85] Claude Codeがユーザーの許可なくウェブ検索時にUser-Agentヘッダーを通じてメールアドレスを第三者に漏洩しているバグが報告されました。 / これにより、ユーザーは大量の詐欺メールを受け取る被害に遭っています。 / Anthropicはv2.1.317以降でこの挙動をブロックする組み込みmod「cc-plugin-privacy」を導入し、デフォルトで有効にしていると発表しました。 [実務示唆: Claude Codeを利用しているユーザーは、プライバシー保護のため、バージョンがv2.1.317以降であることを確認し、cc-plugin-privacy modが有効になっているか確認してください。] [GitHub: anthropics/claude-code] (Source: Hacker News)</description>
-      <pubDate>Thu, 05 Nov 2026 22:17:15 +0000</pubDate>
+      <title>BlockLock: 固定バッチジオメトリによる再現可能なLLM推論</title>
+      <link>https://arxiv.org/abs/2611.06977</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.06977</guid>
+      <description>[Score: 85] 本記事は、大規模言語モデル（LLM）の推論において、再現性を確保するための「BlockLock」という手法を提案しています。 / 固定バッチジオメトリを用いることで、推論結果の一貫性を高めることを目的としています。 / LLMの信頼性とデバッグの向上に貢献する技術として注目されます。 [実務示唆: LLMの推論結果の再現性が求められるシステムでは、BlockLockのような固定バッチジオメトリ手法の導入を検討し、信頼性向上を図るべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Fri, 06 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>AWSでデータレイクハウスを構築してApache Icebergの更新・履歴管理を検証した</title>
-      <link>https://zenn.dev/kkoch5t2/articles/aws-iceberg-lakehouse-lab</link>
-      <guid isPermaLink="false">https://zenn.dev/kkoch5t2/articles/aws-iceberg-lakehouse-lab</guid>
-      <description>[Score: 85] 本記事では、AWS上でデータレイクハウスを構築し、Amazon S3、AWS Glue Data Catalog、Amazon Athena、Apache Icebergを組み合わせて検証した事例を紹介しています。 / テーブルの作成からデータの追加・更新・削除、過去のスナップショット参照（Version Travel）、ファイルの最適化まで一連の操作を試行し、SQL実行結果とS3上のParquetファイル、メタデータを確認しながら仕組みを整理しました。 / Apache IcebergがS3上のデータファイルを直接管理するのではなく、メタデータを通してテーブルの状態を管理する仕組みが重要であると解説しています。 [実務示唆: データレイクハウス構築を検討するエンジニアは、Apache IcebergとAWSサービスを組み合わせたデータ管理の仕組みを理解し、履歴管理や更新処理の要件に合わせて導入を検討すべきです。] (Source: Zenn)</description>
-      <pubDate>Thu, 05 Nov 2026 17:56:30 +0000</pubDate>
+      <title>Opusの精度を4倍の低コストで実現するJev</title>
+      <link>https://hightouch.com/blog/llm-judges-identity-resolution</link>
+      <guid isPermaLink="false">https://hightouch.com/blog/llm-judges-identity-resolution</guid>
+      <description>[Score: 85] JevとGPT-6 Lunaのような高速で安価な意思決定モデルが、フロンティアLLMと同等の精度でID解決を評価できるかテストされました。 / JevとClaude Opusを組み合わせたハイブリッドモデルは、Opusレベルの精度に近づき、コストを4分の1以下に削減できることが判明しました。 / ID解決は、顧客のデータから単一の人物を特定する基礎的なプロセスであり、この技術は顧客分析やパーソナライゼーションに不可欠です。 [実務示唆: LLMを活用したID解決のコスト削減と精度向上を検討し、JevとOpusのハイブリッドモデルを自社システムに導入できないか検証することを推奨します。] (Source: Hacker News)</description>
+      <pubDate>Fri, 06 Nov 2026 19:48:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>アウトバウンドSIP通話がすべての組織で利用可能に</title>
+      <link>https://developers.openai.com/api/docs/guides/voice-sip</link>
+      <guid isPermaLink="false">https://developers.openai.com/api/docs/guides/voice-sip</guid>
+      <description>[Score: 85] OpenAIがGPT-Live向けにアウトバウンドSIP通話機能を提供開始しました。 / SIPトランクを介して電話とGPT-Liveを接続し、バックエンドでセッション設定や通話制御を行います。 / TLSによるSIPシグナリングとSRTPによる通話音声が必須で、セッションイベントやコマンド送信にはサイドバンド接続を利用します。 [実務示唆: OpenAIの音声APIとSIP連携を検討し、顧客対応や自動応答システムへのAI導入を加速させるため、既存のSIPインフラとの接続検証を推奨します。] (Source: Hacker News)</description>
+      <pubDate>Fri, 06 Nov 2026 23:03:55 +0000</pubDate>
     </item>
   </channel>
 </rss>

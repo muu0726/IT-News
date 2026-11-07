@@ -5,20 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 13:17:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 01:16:54 +0000</lastBuildDate>
     <item>
       <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
       <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</guid>
       <description>[Score: 90] GitHubは来年初頭に、従来比180倍のスループット性能向上を実現すると発表しました。 / これはMicrosoft Azureへの基盤移行と新アーキテクチャ採用により、AIエージェント時代に対応するためです。 / 大規模なエンジニアリング投資により、急増する負荷に対応し、信頼性を強化します。 (Source: Publickey)</description>
       <pubDate>Tue, 03 Nov 2026 15:16:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI生成コードを本番品質に保つためのフロントエンド開発の仕組み</title>
-      <link>https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99</link>
-      <guid isPermaLink="false">https://zenn.dev/sun_asterisk/articles/d4e4bc24974b99</guid>
-      <description>[Score: 90] AI生成コードの品質は、プロンプトの工夫よりもAIの外側に用意された「仕組み」で決まると筆者は主張し、Next.jsとTypeScriptのフロントエンド開発を例に本番品質を保つための4つの層を紹介しています。 / AIに渡すコンテキスト、機械的なガードレール、テスト、CIと人間のレビューという層を通じて、AIが推測で埋める範囲を減らし、プロジェクトの慣習に沿わないコードを早期に検出・修正する仕組みを構築します。 / AI共作コードは人のみのコードに比べて指摘事項が多いというレポートも引用し、AIの導入がデリバリーの安定性を損なわないよう「制御の仕組み」の重要性を強調しています。 [実務示唆: AI生成コードを開発に導入する際は、AIに与えるコンテキストの明確化、Lintや型チェックなどの機械的ガードレール、自動テスト、CI/CDと人間のレビューを組み合わせた多層的な品質保証体制を構築すべきです。] (Source: Zenn)</description>
-      <pubDate>Thu, 05 Nov 2026 09:00:55 +0000</pubDate>
     </item>
     <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
@@ -28,18 +21,11 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research</title>
-      <link>https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</guid>
-      <description>[Score: 85] 2026年第3四半期のクラウドインフラ市場は前年比55%増と過去最高の成長率を記録し、市場規模は1680億ドルに達しました。 / AWSのシェアは2ポイント後退して26%となり、Microsoft Azureは1ポイント減の19%、Google Cloudは1ポイント増の16%となりました。 / AIワークロードに特化した「ネオクラウド」ベンダーが台頭し、市場競争が激化しています。 (Source: Publickey)</description>
-      <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>AWSでデータレイクハウスを構築してApache Icebergの更新・履歴管理を検証した</title>
-      <link>https://zenn.dev/kkoch5t2/articles/aws-iceberg-lakehouse-lab</link>
-      <guid isPermaLink="false">https://zenn.dev/kkoch5t2/articles/aws-iceberg-lakehouse-lab</guid>
-      <description>[Score: 85] 本記事では、AWS上でデータレイクハウスを構築し、Amazon S3、AWS Glue Data Catalog、Amazon Athena、Apache Icebergを組み合わせて検証した事例を紹介しています。 / テーブルの作成からデータの追加・更新・削除、過去のスナップショット参照（Version Travel）、ファイルの最適化まで一連の操作を試行し、SQL実行結果とS3上のParquetファイル、メタデータを確認しながら仕組みを整理しました。 / Apache IcebergがS3上のデータファイルを直接管理するのではなく、メタデータを通してテーブルの状態を管理する仕組みが重要であると解説しています。 [実務示唆: データレイクハウス構築を検討するエンジニアは、Apache IcebergとAWSサービスを組み合わせたデータ管理の仕組みを理解し、履歴管理や更新処理の要件に合わせて導入を検討すべきです。] (Source: Zenn)</description>
-      <pubDate>Thu, 05 Nov 2026 17:56:30 +0000</pubDate>
+      <title>リモートのエージェントが起動した dev server を手元でプレビュー：VS Code 1.145 の Remote browser proxy を試した</title>
+      <link>https://qiita.com/shahin0809/items/a1bd931855f392806ee6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/shahin0809/items/a1bd931855f392806ee6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] VS Code 1.145で、リモートエージェントが起動した開発サーバーをローカルのAgentsウィンドウで直接プレビューできるようになりました。 / ポート転送なしでリモートホストのWebアプリにアクセス可能になり、開発体験が向上します。 / Azure VMとSSH接続で検証した結果と、Preview機能としての制限やセキュリティ上の注意点も解説されています。 [実務示唆: VS CodeのRemote Agents機能を利用している開発者は、1.145以降でポート転送なしのプレビューが可能になったため、開発環境のセットアップを簡素化できるか検証を推奨します。] [GitHub: microsoft/vscode] (Source: Qiita)</description>
+      <pubDate>Fri, 06 Nov 2026 07:28:29 +0000</pubDate>
     </item>
     <item>
       <title>Linuxカーネルの深刻な脆弱性／FDEの名前で単なるコンサルティングが販売／TypeScriptをRustに移植した「tsrs」発表ほか、2026年10月の人気記事</title>
@@ -49,25 +35,11 @@
       <pubDate>Thu, 05 Nov 2026 15:37:44 +0000</pubDate>
     </item>
     <item>
-      <title>11年間オープンソースのフィーチャーフラグサーバーを構築してきました</title>
-      <link>https://github.com/Unleash/unleash</link>
-      <guid isPermaLink="false">https://github.com/Unleash/unleash</guid>
-      <description>[Score: 85] Unleashは、11年間開発されてきた強力なオープンソースのフィーチャーマネジメントソリューションです。 / 開発ワークフローを効率化し、ソフトウェアデリバリーを加速させ、新機能のロールアウトを制御する能力をチームに与えます。 / 15以上の公式SDKと15以上のコミュニティSDKをサポートし、あらゆる言語とフレームワークに対応しています。 [実務示唆: フィーチャーフラグ導入を検討しているチームは、Unleashのオープンソース版またはエンタープライズ版を試用し、リスクの少ないリリースと並行開発を実現しましょう。] [GitHub: Unleash/unleash] (Source: Hacker News)</description>
-      <pubDate>Fri, 06 Nov 2026 11:40:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>リモートのエージェントが起動した dev server を手元でプレビュー：VS Code 1.145 の Remote browser proxy を試した</title>
-      <link>https://qiita.com/shahin0809/items/a1bd931855f392806ee6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/shahin0809/items/a1bd931855f392806ee6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] VS Code 1.145で、リモートエージェントが起動した開発サーバーをローカルのAgentsウィンドウで直接プレビューできるようになりました。 / ポート転送なしでリモートホストのWebアプリにアクセス可能になり、開発体験が向上します。 / Azure VMとSSH接続で検証した結果と、Preview機能としての制限やセキュリティ上の注意点も解説されています。 [実務示唆: VS CodeのRemote Agents機能を利用している開発者は、1.145以降でポート転送なしのプレビューが可能になったため、開発環境のセットアップを簡素化できるか検証を推奨します。] [GitHub: microsoft/vscode] (Source: Qiita)</description>
-      <pubDate>Fri, 06 Nov 2026 07:28:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>手動キャプション作成をやめる：ElevenLabsのタイムスタンプからRemotionで単語ごとのキャプションを生成</title>
-      <link>https://dev.to/heynstudio/stop-hand-timing-captions-word-by-word-remotion-captions-from-elevenlabs-timestamps-1ell</link>
-      <guid isPermaLink="false">https://dev.to/heynstudio/stop-hand-timing-captions-word-by-word-remotion-captions-from-elevenlabs-timestamps-1ell</guid>
-      <description>[Score: 80] ElevenLabsで生成された音声とRemotionでキャプションを作成する際、手動でのキャプションタイミング調整は非効率的でエラーが発生しやすいです。 / ElevenLabsのwith-timestampsエンドポイントは、音声と文字ごとの開始・終了時間を同時に提供します。 / これにより、正確な単語ごとのキャプションを自動生成でき、スクリプト変更時の再調整や音声認識の不一致問題を解消できます。 [実務示唆: 動画コンテンツのキャプション作成において、ElevenLabsのwith-timestamps機能とRemotionを組み合わせることで、手動調整なしで高精度な単語ごとのキャプションを自動生成し、作業効率を大幅に向上させましょう。] (Source: Dev.to)</description>
-      <pubDate>Fri, 06 Nov 2026 13:12:57 +0000</pubDate>
+      <title>クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research</title>
+      <link>https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</guid>
+      <description>[Score: 85] 2026年第3四半期のクラウドインフラ市場は前年比55%増と過去最高の成長率を記録し、市場規模は1680億ドルに達しました。 / AWSのシェアは2ポイント後退して26%となり、Microsoft Azureは1ポイント減の19%、Google Cloudは1ポイント増の16%となりました。 / AIワークロードに特化した「ネオクラウド」ベンダーが台頭し、市場競争が激化しています。 (Source: Publickey)</description>
+      <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
     </item>
     <item>
       <title>アクセシビリティステートメントがGitHubに登場</title>
@@ -77,18 +49,25 @@
       <pubDate>Thu, 05 Nov 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>請求書エクスポートのリトライキュー：月全体を再実行しない</title>
-      <link>https://dev.to/browser_act_e2505dbdf454a/a-retry-queue-for-invoice-exports-dont-rerun-the-entire-month-4da1</link>
-      <guid isPermaLink="false">https://dev.to/browser_act_e2505dbdf454a/a-retry-queue-for-invoice-exports-dont-rerun-the-entire-month-4da1</guid>
-      <description>[Score: 75] 請求書エクスポート処理でエラーが発生した場合、月全体を再実行するのではなく、失敗した特定の請求書のみをリトライする仕組みが有効です。 / リトライの単位は「期待される請求書」とし、(サプライヤー、アカウント参照、ドキュメントタイプ、請求書番号)のような識別子で管理します。 / パスワードや機密情報をリトライログに含めず、各請求書の期待される状態と実際の状態を明確に区別して記録することが重要です。 [実務示唆: バッチ処理やデータエクスポート機能の実装において、エラー発生時のリカバリ効率を高めるため、処理単位を細分化し、特定の失敗項目のみをリトライできる堅牢なキューシステムを設計・導入しましょう。] (Source: Dev.to)</description>
-      <pubDate>Fri, 06 Nov 2026 13:11:18 +0000</pubDate>
+      <title>Web 標準動向 2026年10月版</title>
+      <link>https://zenn.dev/cybozu_frontend/articles/web-standards-trends-202610</link>
+      <guid isPermaLink="false">https://zenn.dev/cybozu_frontend/articles/web-standards-trends-202610</guid>
+      <description>[Score: 70] サイボウズがW3Cメンバーに加入し、Web標準のキャッチアップと標準化プロセスへの関与を強化しています。 / SVG2のCandidate Recommendation Snapshotが更新され、focusresetイベントのIntent to Prototypeが発表されました。 / document.advanceFocus()やbeforeinputイベントなど、UI/UX改善に繋がる新たなWeb標準の議論が進められています。 [実務示唆: Webフロントエンド開発者は、focusresetやdocument.advanceFocus()などの新しいWeb標準動向を定期的に確認し、将来的なUIライブラリの改善やアクセシビリティ向上に役立てるべきです。] (Source: Zenn)</description>
+      <pubDate>Fri, 06 Nov 2026 09:08:06 +0000</pubDate>
     </item>
     <item>
-      <title>JavaScriptとHTML5 Canvasでブラウザベースのジグソーパズルゲームを構築する方法</title>
-      <link>https://dev.to/cliffwang/how-to-build-a-browser-based-jigsaw-puzzle-game-with-javascript-and-html5-canvas-33gm</link>
-      <guid isPermaLink="false">https://dev.to/cliffwang/how-to-build-a-browser-based-jigsaw-puzzle-game-with-javascript-and-html5-canvas-33gm</guid>
-      <description>[Score: 70] 本記事はJavaScriptとHTML5 Canvasを使ってブラウザベースのジグソーパズルゲームを構築するチュートリアルです。 / 幾何学、グラフィックスプログラミング、インタラクティブゲーム開発の要素を組み合わせます。 / ピースの生成、レンダリング、インタラクション、パフォーマンス最適化について解説し、ダウンロード不要なゲーム作成を目指します。 [実務示唆: HTML5 CanvasとJavaScriptを用いたゲーム開発は、Web技術の応用範囲を広げる良い機会です。既存のWebアプリケーションにインタラクティブな要素を追加する際の参考にし、パフォーマンス最適化のテクニックを習得しましょう。] (Source: Dev.to)</description>
-      <pubDate>Fri, 06 Nov 2026 01:47:01 +0000</pubDate>
+      <title>Playwrightのconnect_over_cdpが100秒間ハングアップ？デッドタブをチェック！</title>
+      <link>https://dev.to/sungwoo_lee_e0f26be4a29fd/playwright-connectovercdp-hangs-100s-check-for-one-dead-tab-4ikc</link>
+      <guid isPermaLink="false">https://dev.to/sungwoo_lee_e0f26be4a29fd/playwright-connectovercdp-hangs-100s-check-for-one-dead-tab-4ikc</guid>
+      <description>[Score: 70] Playwrightの`connect_over_cdp`が100秒間ハングアップし、`/json/version`は即座に応答する場合、Chrome自体はクラッシュしていません。 / この問題は、開いているタブのいずれかにハングしたレンダラーが存在し、Playwrightの自動アタッチ機能がそのタブを待機していることが原因です。 / 解決策として、生のブラウザレベルWebSocket経由で問題のタブを特定し、そのタブのみを閉じてから再接続することが推奨されています。 [実務示唆: Playwrightで`connect_over_cdp`がタイムアウトする際は、Chromeを再起動する前に、ブラウザのデバッグポート経由でハングしたタブを特定し、個別に閉じることで問題を解決できます。] [GitHub: microsoft/playwright] (Source: Dev.to)</description>
+      <pubDate>Sat, 07 Nov 2026 01:06:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>私の人生を歩ける街に変える：World 001の構築</title>
+      <link>https://dev.to/chaseintech/i-turned-my-life-into-a-city-you-can-walk-building-world-001-1gn9</link>
+      <guid isPermaLink="false">https://dev.to/chaseintech/i-turned-my-life-into-a-city-you-can-walk-building-world-001-1gn9</guid>
+      <description>[Score: 70] 著者は、履歴書では伝わらない自身の経験やスキル習得の過程を表現するため、インタラクティブな3Dマップ「World 001」を開発しました。 / このマップはロンドンの風景を背景に、著者の人生の転機となった10の場所（ボクシング、ランニングクラブ、AI開発など）を巡ることができます。 / ブラウザ上で動作し、各スポットをクリックするとそのエピソードが語られ、スキルがどのように形成されたかを示すユニークなポートフォリオとなっています。 [実務示唆: 自身のキャリアパスやスキルセットを物語形式で可視化するインタラクティブなポートフォリオは、採用やクライアント獲得において差別化要因となるため、個人プロジェクトとして検討する価値があります。] (Source: Dev.to)</description>
+      <pubDate>Sat, 07 Nov 2026 01:04:41 +0000</pubDate>
     </item>
   </channel>
 </rss>
