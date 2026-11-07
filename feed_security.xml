@@ -5,13 +5,20 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 01:16:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 11:57:27 +0000</lastBuildDate>
     <item>
       <title>Firecracker VM Escape: PwnEscape Part 2</title>
       <link>https://pwn.ai/blog/firecracker-escape</link>
       <guid isPermaLink="false">https://pwn.ai/blog/firecracker-escape</guid>
       <description>[Score: 95] FirecrackerマイクロVMからのエスケープに成功し、ホスト上でroot権限でのコード実行が達成されました。 / KVMからの復帰時にレジスタの保存方法を変更し、任意のコードを実行させることでエスケープを実現しています。 / この脆弱性はCVE-2026-99999として示されており、Firecrackerのセキュリティモデルに深刻な影響を与えます。 [実務示唆: Firecrackerを使用しているシステムでは、CVE-2026-99999に対するパッチ適用状況を確認し、速やかにセキュリティアップデートを適用することを強く推奨します。] [GitHub: firecracker-microvm/firecracker] (Source: Hacker News)</description>
       <pubDate>Fri, 06 Nov 2026 19:33:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>GMO 管理者が全情報アクセス可能 リスク指摘も十分対策されず</title>
+      <link>https://news.web.nhk/newsweb/na/nd-20261107de72062</link>
+      <guid isPermaLink="false">https://news.web.nhk/newsweb/na/nd-20261107de72062</guid>
+      <description>[Score: 90] GMOのシステムにおいて、管理者が全ての情報にアクセスできる状態であり、そのリスクが指摘されています。 / しかし、十分な対策が講じられていない可能性があると報じられています。 / これは、企業における情報セキュリティと内部統制の重要性を浮き彫りにする問題です。 [実務示唆: システム管理者権限の厳格な管理とアクセスログの監視を徹底し、最小権限の原則に基づいたアクセス制御を再評価・強化することが不可欠です。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 07 Nov 2026 03:30:33 +0000</pubDate>
     </item>
     <item>
       <title>そろそろ共通鍵暗号・公開鍵暗号についてちゃんと理解する</title>
@@ -26,6 +33,13 @@
       <guid isPermaLink="false">https://dev.to/uehara/pasting-env-into-claude-code-give-the-agent-one-dotvault-service-token-instead-1fii</guid>
       <description>[Score: 85] 本記事は、AIエージェントに機密情報（.envファイル）を安全に渡すためのdotvaultサービス・トークンの利用方法について解説しています。 / Claude Codeにプロジェクトと環境に限定されたdotvaultサービス・トークンのみを与え、.envファイルを直接渡すことなく機密情報のインポートと利用を成功させました。 / トークンを失効させるとエージェントが認証失敗することを検証し、AIエージェントとの安全なシークレット管理の重要性を示しています。 [実務示唆: AIエージェントに機密情報を扱うタスクを任せる際は、直接.envファイルを渡すのではなく、dotvaultのような専用のシークレット管理ツールを活用し、最小権限のサービス・トークンを使用することでセキュリティリスクを低減しましょう。] (Source: Dev.to)</description>
       <pubDate>Sat, 07 Nov 2026 01:02:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>すべてのMacには（文書化されていない）家族分類器が搭載されている</title>
+      <link>https://8rank.ai/game/apple-intelligence-personal-knowledge-graph</link>
+      <guid isPermaLink="false">https://8rank.ai/game/apple-intelligence-personal-knowledge-graph</guid>
+      <description>[Score: 85] macOS 13以降のすべてのMacには、ユーザーとその周囲の人々に関する詳細な個人情報グラフを構築するデーモンが搭載されています。 / このシステムは、連絡先、カレンダー、写真、メッセージ、位置情報など、デバイス上のほぼすべてのデータを相互参照して機能します。 / 構築されたグラフはクエリ可能なストアとして保持され、LLMが情報を取得するために利用される可能性があります。 [実務示唆: macOS 13以降のMacユーザーは、プライバシー設定を見直し、個人データがどのように利用されているかを確認することを推奨します。] (Source: Hacker News)</description>
+      <pubDate>Sat, 07 Nov 2026 09:46:03 +0000</pubDate>
     </item>
   </channel>
 </rss>

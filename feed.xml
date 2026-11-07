@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 01:16:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 11:57:27 +0000</lastBuildDate>
     <item>
       <title>[破壊的変更] 明治時代の開始日が変更になって単体テストが失敗した件</title>
       <link>https://zenn.dev/xin9le/articles/9a1cf8e10494d6</link>
@@ -84,11 +84,46 @@
       <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
     </item>
     <item>
+      <title>エージェントメモリのコンポーネント</title>
+      <link>https://www.anthropic.com/research/components-of-agent-memory</link>
+      <guid isPermaLink="false">https://www.anthropic.com/research/components-of-agent-memory</guid>
+      <description>[Score: 90] Anthropicの研究者が、AIエージェントのメモリ設計における課題と解決策について論じています。 / 人間の記憶形成プロセス（短期記憶から長期記憶への統合）を参考に、エージェントメモリのコンポーネントを設計しています。 / 特に「夢を見る（dreaming）」という概念を導入し、エージェントがアイドル時に経験を整理・統合することで、より効果的な記憶を実現しています。 [実務示唆: AIエージェント開発者は、長期的な対話や複雑なタスク処理のために、エージェントの記憶メカニズムを設計する際に「dreaming」のようなオフライン処理の導入を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Sat, 07 Nov 2026 06:39:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>Weight-Space Programming をやってみた（やらせてみた）</title>
+      <link>https://zenn.dev/nwn/articles/cf9fe78aa33861</link>
+      <guid isPermaLink="false">https://zenn.dev/nwn/articles/cf9fe78aa33861</guid>
+      <description>[Score: 90] GPT-6 AstraがQwen3.5-0.8Bの重みを編集し、モデルの挙動を修正する論文が話題になっています。 / 本記事では、ChatGPTのCodex機能を使って同様の実験を行い、Qwen3.5-0.8Bの語尾をずんだもん風に修正することに成功しました。 / AIがモデルの重みを直接編集し、特定のタスクを達成する過程を自動化できる可能性を示しています。 [実務示唆: AIによるモデルの重み編集は、プロンプトやファインチューニングでは難しい細かな挙動修正に有効な可能性があり、今後のLLM開発で注目すべき技術です。] [GitHub: auhulu/Qwen3.5-0.8B-Zundamon] (Source: Zenn)</description>
+      <pubDate>Sat, 07 Nov 2026 00:57:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>GMO 管理者が全情報アクセス可能 リスク指摘も十分対策されず</title>
+      <link>https://news.web.nhk/newsweb/na/nd-20261107de72062</link>
+      <guid isPermaLink="false">https://news.web.nhk/newsweb/na/nd-20261107de72062</guid>
+      <description>[Score: 90] GMOのシステムにおいて、管理者が全ての情報にアクセスできる状態であり、そのリスクが指摘されています。 / しかし、十分な対策が講じられていない可能性があると報じられています。 / これは、企業における情報セキュリティと内部統制の重要性を浮き彫りにする問題です。 [実務示唆: システム管理者権限の厳格な管理とアクセスログの監視を徹底し、最小権限の原則に基づいたアクセス制御を再評価・強化することが不可欠です。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 07 Nov 2026 03:30:33 +0000</pubDate>
+    </item>
+    <item>
       <title>そろそろ共通鍵暗号・公開鍵暗号についてちゃんと理解する</title>
       <link>https://qiita.com/tomo-ryo/items/7cbf2881a9c8c8cf3656?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/tomo-ryo/items/7cbf2881a9c8c8cf3656?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 88] 共通鍵暗号方式と公開鍵暗号方式の基本から、それぞれの課題と解決策を体系的に解説しています。 / 鍵配送問題、ハイブリッド暗号方式、中間者攻撃、デジタル署名、電子証明書といった関連技術を順を追って説明。 / 最終的に、これら全てを組み合わせた実例としてTLSの仕組みに触れ、暗号技術全体の理解を深めることを目的としています。 [実務示唆: 暗号技術の基本原理と課題、そしてそれらを解決する技術（ハイブリッド暗号、デジタル署名、電子証明書）を理解し、TLSなどの実用的なセキュリティプロトコルの仕組みを把握しましょう。] (Source: Qiita)</description>
       <pubDate>Wed, 04 Nov 2026 00:40:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>シン・ウルトラモード</title>
+      <link>https://zenn.dev/aws_japan/articles/kiro-crew-ultra-mode</link>
+      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/kiro-crew-ultra-mode</guid>
+      <description>[Score: 88] AWS Japanのソリューションアーキテクトが、オープンソースツールKiro Crewの「Ultra Mode」を紹介しています。 / Ultra Modeは、指揮役のエージェントが大きなゴールを複数の作業に分割し、それぞれをワーカーエージェントに割り当てることで、複雑なタスクを効率的に処理します。 / これにより、コンテキストの限界や進捗管理の課題を解決し、大規模なAIエージェントタスクの実行を容易にします。 [実務示唆: 大規模なAIエージェントシステムを構築する際、Kiro CrewのUltra Modeのようなマルチエージェント協調フレームワークを導入し、タスク分割と進捗管理の効率化を図ることを推奨します。] [GitHub: kirodotdev/KiroCrew] (Source: Zenn)</description>
+      <pubDate>Sat, 07 Nov 2026 01:09:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Figmaのリアルタイム同期の仕組みを、Node.js + WebSocketの最小構成で実装してみた</title>
+      <link>https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] Figmaのなめらかなリアルタイム同期の仕組みについて、公式ブログの情報を基にNode.jsとWebSocketで最小構成を実装し検証しました。 / 特に「サーバーに届いた順を使うので、タイムスタンプが不要」という点に注目し、楽観的更新とflickering防止の重要性をデモで示しています。 / 合意アルゴリズムやベクタークロックを使わず、単一サーバーでの単純な上書き処理で同期を実現する設計の理解を深めることを目的としています。 [実務示唆: リアルタイム共同編集機能を持つWebアプリケーション開発において、Figmaの同期設計（楽観的更新、サーバー受信順の採用）は実装の複雑さを軽減しつつ高いUXを実現するヒントとなるため、類似機能の実装時に参考にすべきです。] [GitHub: keishin-nishiura/figma-sync-demo] (Source: Qiita)</description>
+      <pubDate>Fri, 06 Nov 2026 03:11:21 +0000</pubDate>
     </item>
     <item>
       <title>C#の型制約とボックス化をハックする — ILと手動スタック配置</title>
@@ -110,41 +145,6 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</guid>
       <description>[Score: 85] 2026年10月の人気記事として、Linuxカーネルの深刻な脆弱性「PwnEscape」が報じられました。 / また、FDE（フォワードデプロイエンジニアリング）の名目でコンサルティングが販売されるリスクが指摘されています。 / CloudflareがTypeScriptをRustに移植した「tsrs」を発表し、メモリ使用量と速度で大幅な改善が見られます。 [実務示唆: Linuxカーネルの脆弱性「PwnEscape」はゲストVMからホストOSへの不正コード実行の可能性があるため、速やかにパッチ適用やセキュリティ対策の確認を行うべきです。] [GitHub: cloudflare/tsrs] (Source: Publickey)</description>
       <pubDate>Thu, 05 Nov 2026 15:37:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research</title>
-      <link>https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</guid>
-      <description>[Score: 85] 2026年第3四半期のクラウドインフラ市場は前年比55%増と過去最高の成長率を記録し、市場規模は1680億ドルに達しました。 / AWSのシェアは2ポイント後退して26%となり、Microsoft Azureは1ポイント減の19%、Google Cloudは1ポイント増の16%となりました。 / AIワークロードに特化した「ネオクラウド」ベンダーが台頭し、市場競争が激化しています。 (Source: Publickey)</description>
-      <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub Copilot Dreaming」発表。作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理、アップデート。GitHub Universe 2026</title>
-      <link>https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</guid>
-      <description>[Score: 85] GitHubは「GitHub Copilot Dreaming」を発表しました。 / これは、AIモデルへの指示内容が作業の進行や環境の変化によって古くなる問題を解決する新機能です。 / バックグラウンドで自動的にパーソナルメモリやガイダンスを整理・更新し、常に最適なAIアシスタンスを提供します。 (Source: Publickey)</description>
-      <pubDate>Wed, 04 Nov 2026 15:15:49 +0000</pubDate>
-    </item>
-    <item>
-      <title>BlockLock: 固定バッチジオメトリによる再現可能なLLM推論</title>
-      <link>https://arxiv.org/abs/2611.06977</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.06977</guid>
-      <description>[Score: 85] 本記事は、大規模言語モデル（LLM）の推論において、再現性を確保するための「BlockLock」という手法を提案しています。 / 固定バッチジオメトリを用いることで、推論結果の一貫性を高めることを目的としています。 / LLMの信頼性とデバッグの向上に貢献する技術として注目されます。 [実務示唆: LLMの推論結果の再現性が求められるシステムでは、BlockLockのような固定バッチジオメトリ手法の導入を検討し、信頼性向上を図るべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 06 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Opusの精度を4倍の低コストで実現するJev</title>
-      <link>https://hightouch.com/blog/llm-judges-identity-resolution</link>
-      <guid isPermaLink="false">https://hightouch.com/blog/llm-judges-identity-resolution</guid>
-      <description>[Score: 85] JevとGPT-6 Lunaのような高速で安価な意思決定モデルが、フロンティアLLMと同等の精度でID解決を評価できるかテストされました。 / JevとClaude Opusを組み合わせたハイブリッドモデルは、Opusレベルの精度に近づき、コストを4分の1以下に削減できることが判明しました。 / ID解決は、顧客のデータから単一の人物を特定する基礎的なプロセスであり、この技術は顧客分析やパーソナライゼーションに不可欠です。 [実務示唆: LLMを活用したID解決のコスト削減と精度向上を検討し、JevとOpusのハイブリッドモデルを自社システムに導入できないか検証することを推奨します。] (Source: Hacker News)</description>
-      <pubDate>Fri, 06 Nov 2026 19:48:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>アウトバウンドSIP通話がすべての組織で利用可能に</title>
-      <link>https://developers.openai.com/api/docs/guides/voice-sip</link>
-      <guid isPermaLink="false">https://developers.openai.com/api/docs/guides/voice-sip</guid>
-      <description>[Score: 85] OpenAIがGPT-Live向けにアウトバウンドSIP通話機能を提供開始しました。 / SIPトランクを介して電話とGPT-Liveを接続し、バックエンドでセッション設定や通話制御を行います。 / TLSによるSIPシグナリングとSRTPによる通話音声が必須で、セッションイベントやコマンド送信にはサイドバンド接続を利用します。 [実務示唆: OpenAIの音声APIとSIP連携を検討し、顧客対応や自動応答システムへのAI導入を加速させるため、既存のSIPインフラとの接続検証を推奨します。] (Source: Hacker News)</description>
-      <pubDate>Fri, 06 Nov 2026 23:03:55 +0000</pubDate>
     </item>
   </channel>
 </rss>

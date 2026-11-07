@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-07T10:15:45.859363+09:00",
-  "total_count": 47,
-  "success_count": 47,
+  "generated_at": "2026-11-07T20:56:29.573901+09:00",
+  "total_count": 68,
+  "success_count": 68,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -26,7 +26,7 @@
       "new_at": "2026-11-07T10:15:45.859363+09:00",
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
       "is_hot": true,
-      "hatena_count": 94
+      "hatena_count": 135
     },
     {
       "title": "AI駆動開発の次の段階: ソフトウェアファクトリー",
@@ -95,7 +95,7 @@
       "new_at": "2026-11-07T10:15:45.859363+09:00",
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 52
     },
     {
       "title": "もう検索エンジンに戻れない",
@@ -117,7 +117,7 @@
       "new_at": "2026-11-07T10:15:45.859363+09:00",
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
       "is_hot": false,
-      "hatena_count": 123
+      "hatena_count": 423
     },
     {
       "title": "Claudeを使いこなす人に、MagicPodは要るのか。知らないアプリでPlaywrightと比べた記録",
@@ -187,7 +187,7 @@
       "new_at": "2026-11-06T10:49:33.378115+09:00",
       "first_seen": "2026-11-06T10:49:33.378115+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 2,
       "topic_group": 1,
       "topic_size": 2,
       "is_prev_seen": true
@@ -197,8 +197,8 @@
       "url": "https://mitchellh.com/writing/libghostty-1-0",
       "source": "Hacker News",
       "published": "2026-11-06T23:30:52+00:00",
-      "hn_score": 94,
-      "hn_comments": 8,
+      "hn_score": 703,
+      "hn_comments": 116,
       "reading_min": 7,
       "summary": "libghostty-vt 1.0がリリースされ、ポータブルで高性能なC言語のターミナルエミュレーションライブラリとして安定版となりました。\nこのライブラリはGhosttyのコアから抽出され、C ABIの安定性が保証されています。\nJetBrains IDEやNeovimなど、すでに数百万人のユーザーが利用する製品に採用されており、その広範な影響力が示されています。",
       "actionable_takeaway": "既存のターミナルエミュレーションに課題を抱える開発者は、libghostty-vt 1.0の導入を検討し、その性能と安定性を評価することを推奨します。",
@@ -215,7 +215,7 @@
       "new_at": "2026-11-07T10:15:45.859363+09:00",
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 2
     },
     {
       "title": "AIがAI研究を劇的に加速させている",
@@ -239,7 +239,7 @@
       "new_at": "2026-11-07T10:15:45.859363+09:00",
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 13
     },
     {
       "title": "コード生成を超えて：エージェント指向エンジニアリング開発者ガイド",
@@ -264,6 +264,74 @@
       "hatena_count": 1
     },
     {
+      "title": "エージェントメモリのコンポーネント",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "source": "Hacker News",
+      "published": "2026-11-07T06:39:04+00:00",
+      "hn_score": 60,
+      "hn_comments": 31,
+      "reading_min": 17,
+      "summary": "Anthropicの研究者が、AIエージェントのメモリ設計における課題と解決策について論じています。\n人間の記憶形成プロセス（短期記憶から長期記憶への統合）を参考に、エージェントメモリのコンポーネントを設計しています。\n特に「夢を見る（dreaming）」という概念を導入し、エージェントがアイドル時に経験を整理・統合することで、より効果的な記憶を実現しています。",
+      "actionable_takeaway": "AIエージェント開発者は、長期的な対話や複雑なタスク処理のために、エージェントの記憶メカニズムを設計する際に「dreaming」のようなオフライン処理の導入を検討すべきです。",
+      "tags": [
+        "AI",
+        "エージェント",
+        "記憶"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIエージェントの性能を向上させる上で、記憶メカニズムの設計は極めて重要であり、Anthropicの「dreaming」の概念は新規性と実用性が高いため、高いスコアを付けました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 9
+    },
+    {
+      "title": "Weight-Space Programming をやってみた（やらせてみた）",
+      "url": "https://zenn.dev/nwn/articles/cf9fe78aa33861",
+      "source": "Zenn",
+      "published": "2026-11-07T00:57:13+00:00",
+      "reading_min": 7,
+      "summary": "GPT-6 AstraがQwen3.5-0.8Bの重みを編集し、モデルの挙動を修正する論文が話題になっています。\n本記事では、ChatGPTのCodex機能を使って同様の実験を行い、Qwen3.5-0.8Bの語尾をずんだもん風に修正することに成功しました。\nAIがモデルの重みを直接編集し、特定のタスクを達成する過程を自動化できる可能性を示しています。",
+      "actionable_takeaway": "AIによるモデルの重み編集は、プロンプトやファインチューニングでは難しい細かな挙動修正に有効な可能性があり、今後のLLM開発で注目すべき技術です。",
+      "github_repo": "auhulu/Qwen3.5-0.8B-Zundamon",
+      "tags": [
+        "LLM",
+        "Weight-Space Programming",
+        "AI"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIが直接モデルの重みを編集し、特定の挙動を修正できるという技術は、LLMのカスタマイズと自動化において非常に高い新規性と実用性を持つため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "GMO 管理者が全情報アクセス可能 リスク指摘も十分対策されず",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261107de72062",
+      "source": "はてなブックマーク",
+      "published": "2026-11-07T03:30:33+00:00",
+      "summary": "GMOのシステムにおいて、管理者が全ての情報にアクセスできる状態であり、そのリスクが指摘されています。\nしかし、十分な対策が講じられていない可能性があると報じられています。\nこれは、企業における情報セキュリティと内部統制の重要性を浮き彫りにする問題です。",
+      "actionable_takeaway": "システム管理者権限の厳格な管理とアクセスログの監視を徹底し、最小権限の原則に基づいたアクセス制御を再評価・強化することが不可欠です。",
+      "tags": [
+        "セキュリティ",
+        "情報漏洩",
+        "内部統制"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "管理者による全情報アクセスは重大なセキュリティリスクであり、企業の情報資産保護において極めて重要な問題であるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 101
+    },
+    {
       "title": "そろそろ共通鍵暗号・公開鍵暗号についてちゃんと理解する",
       "url": "https://qiita.com/tomo-ryo/items/7cbf2881a9c8c8cf3656?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
@@ -285,6 +353,52 @@
       "is_hot": false,
       "hatena_count": 0,
       "is_prev_seen": true
+    },
+    {
+      "title": "シン・ウルトラモード",
+      "url": "https://zenn.dev/aws_japan/articles/kiro-crew-ultra-mode",
+      "source": "Zenn",
+      "published": "2026-11-07T01:09:30+00:00",
+      "reading_min": 9,
+      "summary": "AWS Japanのソリューションアーキテクトが、オープンソースツールKiro Crewの「Ultra Mode」を紹介しています。\nUltra Modeは、指揮役のエージェントが大きなゴールを複数の作業に分割し、それぞれをワーカーエージェントに割り当てることで、複雑なタスクを効率的に処理します。\nこれにより、コンテキストの限界や進捗管理の課題を解決し、大規模なAIエージェントタスクの実行を容易にします。",
+      "actionable_takeaway": "大規模なAIエージェントシステムを構築する際、Kiro CrewのUltra Modeのようなマルチエージェント協調フレームワークを導入し、タスク分割と進捗管理の効率化を図ることを推奨します。",
+      "github_repo": "kirodotdev/KiroCrew",
+      "tags": [
+        "AWS",
+        "AIエージェント",
+        "オープンソース"
+      ],
+      "category": "AI・機械学習",
+      "score": 88,
+      "score_reason": "AIエージェントの複雑なタスク処理における課題を解決する具体的なソリューションであり、オープンソースとして提供されているため、実用性と影響度が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Figmaのリアルタイム同期の仕組みを、Node.js + WebSocketの最小構成で実装してみた",
+      "url": "https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-06T03:11:21+00:00",
+      "reading_min": 12,
+      "summary": "Figmaのなめらかなリアルタイム同期の仕組みについて、公式ブログの情報を基にNode.jsとWebSocketで最小構成を実装し検証しました。\n特に「サーバーに届いた順を使うので、タイムスタンプが不要」という点に注目し、楽観的更新とflickering防止の重要性をデモで示しています。\n合意アルゴリズムやベクタークロックを使わず、単一サーバーでの単純な上書き処理で同期を実現する設計の理解を深めることを目的としています。",
+      "actionable_takeaway": "リアルタイム共同編集機能を持つWebアプリケーション開発において、Figmaの同期設計（楽観的更新、サーバー受信順の採用）は実装の複雑さを軽減しつつ高いUXを実現するヒントとなるため、類似機能の実装時に参考にすべきです。",
+      "github_repo": "keishin-nishiura/figma-sync-demo",
+      "tags": [
+        "WebSocket",
+        "Node.js",
+        "リアルタイム同期"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 88,
+      "score_reason": "Figmaのような複雑なリアルタイム同期システムの核心的な仕組みを、最小構成で再現・解説しており、Webアプリケーション開発者にとって非常に実践的で理解を深める価値が高いため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "C#の型制約とボックス化をハックする — ILと手動スタック配置",
@@ -432,8 +546,8 @@
       "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
       "source": "Hacker News",
       "published": "2026-11-06T19:48:51+00:00",
-      "hn_score": 316,
-      "hn_comments": 68,
+      "hn_score": 501,
+      "hn_comments": 118,
       "reading_min": 9,
       "summary": "JevとGPT-6 Lunaのような高速で安価な意思決定モデルが、フロンティアLLMと同等の精度でID解決を評価できるかテストされました。\nJevとClaude Opusを組み合わせたハイブリッドモデルは、Opusレベルの精度に近づき、コストを4分の1以下に削減できることが判明しました。\nID解決は、顧客のデータから単一の人物を特定する基礎的なプロセスであり、この技術は顧客分析やパーソナライゼーションに不可欠です。",
       "actionable_takeaway": "LLMを活用したID解決のコスト削減と精度向上を検討し、JevとOpusのハイブリッドモデルを自社システムに導入できないか検証することを推奨します。",
@@ -449,7 +563,7 @@
       "new_at": "2026-11-07T10:15:45.859363+09:00",
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "アウトバウンドSIP通話がすべての組織で利用可能に",
@@ -495,7 +609,7 @@
       "new_at": "2026-11-07T10:15:45.859363+09:00",
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
       "is_hot": false,
-      "hatena_count": 64
+      "hatena_count": 334
     },
     {
       "title": "Claude Codeに.envを貼り付ける代わりに、dotvaultサービス・トークンを1つ与える",
@@ -516,6 +630,97 @@
       "analysis_status": "ok",
       "new_at": "2026-11-07T10:15:45.859363+09:00",
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "すべてのMacには（文書化されていない）家族分類器が搭載されている",
+      "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+      "source": "Hacker News",
+      "published": "2026-11-07T09:46:03+00:00",
+      "hn_score": 113,
+      "hn_comments": 33,
+      "reading_min": 21,
+      "summary": "macOS 13以降のすべてのMacには、ユーザーとその周囲の人々に関する詳細な個人情報グラフを構築するデーモンが搭載されています。\nこのシステムは、連絡先、カレンダー、写真、メッセージ、位置情報など、デバイス上のほぼすべてのデータを相互参照して機能します。\n構築されたグラフはクエリ可能なストアとして保持され、LLMが情報を取得するために利用される可能性があります。",
+      "actionable_takeaway": "macOS 13以降のMacユーザーは、プライバシー設定を見直し、個人データがどのように利用されているかを確認することを推奨します。",
+      "tags": [
+        "macOS",
+        "プライバシー",
+        "データ収集"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "Apple製品における未公開の個人情報収集メカニズムの存在は、ユーザーのプライバシーとセキュリティに大きな影響を与えるため、重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ISUCON 2026参加記",
+      "url": "https://zenn.dev/smasui/articles/1e38c0d5881ac9",
+      "source": "Zenn",
+      "published": "2026-11-06T11:39:40+00:00",
+      "reading_min": 3,
+      "summary": "ISUCON 2026に3人チーム「pythonista」として参加し、856チーム中274位、Python利用チームでは最高スコアを達成しました。\n問題の定石と異なる作りで戸惑いつつも、署名計算の最適化、nginxの画像キャッシュ、DBクエリ改善、ロック戦略の見直しなど多岐にわたるチューニングを実施。\n最終的に60,719点を記録し、パフォーマンスチューニングの具体的な手法と試行錯誤の過程が詳細に記されています。",
+      "actionable_takeaway": "ISUCON参加記は、実践的なパフォーマンスチューニングの具体例が豊富であり、Webアプリケーションのボトルネック特定と改善策を学ぶ上で非常に参考になるため、自身の開発環境で同様の最適化を検討する際に役立ちます。",
+      "tags": [
+        "ISUCON",
+        "Python",
+        "パフォーマンスチューニング"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "ISUCONは実践的なWebアプリケーションのパフォーマンスチューニングスキルを競う大会であり、その参加記は具体的な改善手法や思考プロセスが詳細に記述されており、実務への応用可能性が非常に高いため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ArtCraft: 13の無料Adobe代替ソフトウェア (2026年版ガイド)",
+      "url": "https://dev.to/theglitchfixer/artcraft-13-free-adobe-alternatives-2026-guide-43p0",
+      "source": "Dev.to",
+      "published": "2026-11-07T11:55:29+00:00",
+      "reading_min": 3,
+      "summary": "ArtCraftは、Adobe Creative Suiteの主要アプリを代替する13の無料オープンソースソフトウェアスイートです。\nサブスクリプションやクラウドロックインなしで、macOS、Windows、Linuxのネイティブデスクトップアプリとして動作します。\n2026年10月にGitHubで公開され、短期間で数万のスターを獲得するなど大きな注目を集めています。",
+      "actionable_takeaway": "Adobe製品の代替を検討している場合、ArtCraftのようなオープンソースの無料ツールを評価し、コスト削減とベンダーロックイン回避の可能性を探るべきです。",
+      "github_repo": "ArtCraft/ArtCraft",
+      "tags": [
+        "オープンソース",
+        "デザインツール",
+        "Adobe代替"
+      ],
+      "category": "その他",
+      "score": 85,
+      "score_reason": "Adobe製品の代替となるオープンソースソフトウェアの登場は、クリエイティブ業界に大きな影響を与える可能性があり、実用性と新規性が高いため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Gemini Omni 1.2 Flash: 15秒のAI動画を無料で作成",
+      "url": "https://dev.to/theglitchfixer/gemini-omni-12-flash-make-15-second-ai-videos-free-3241",
+      "source": "Dev.to",
+      "published": "2026-11-07T11:54:30+00:00",
+      "reading_min": 7,
+      "summary": "GoogleのGemini Omni 1.2 Flashが一般公開され、最大15秒のAI動画生成・編集が可能になりました。\nGoogleアカウントがあればGoogle Vidsで毎月3本まで無料で作成でき、API経由では1秒あたり0.07ドルで利用可能です。\n旧バージョンから動画の長さが延長され、会話による編集機能も追加されています。",
+      "actionable_takeaway": "AI動画生成を試したいエンジニアは、GoogleアカウントでGoogle Vidsを利用し、Gemini Omni 1.2 Flashの無料枠でプロトタイプ作成を検討しましょう。",
+      "tags": [
+        "AI",
+        "Video Generation",
+        "Google Gemini"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIによる動画生成・編集機能の進化はコンテンツ制作に大きな影響を与え、無料枠の提供は幅広いユーザーに利用機会を提供するため、高い実用性と新規性があります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -564,6 +769,27 @@
       "is_hot": false,
       "hatena_count": 0,
       "is_prev_seen": true
+    },
+    {
+      "title": "Claude Codeを使ってApple AirPods 3をリバースエンジニアリングし、Linuxでヘッドトラッキングが動作",
+      "url": "https://www.reddit.com/r/technology/comments/1xq2xd3/someone_used_claude_code_to_reverseengineer_the/",
+      "source": "Reddit",
+      "published": "2026-11-07T10:05:07+00:00",
+      "summary": "AIツール「Claude Code」がApple AirPods 3のリバースエンジニアリングに活用されました。\nこれにより、AirPods 3のヘッドトラッキング機能がLinux環境で利用可能になったとのことです。\nAIによるハードウェア解析とオープンソースコミュニティの技術力が融合した事例です。",
+      "actionable_takeaway": "AIを活用したリバースエンジニアリングは、既存デバイスの互換性拡張や新機能開発の可能性を広げるため、AIツールの活用を検討する価値があります。",
+      "tags": [
+        "リバースエンジニアリング",
+        "AirPods",
+        "Linux"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 80,
+      "score_reason": "AIを活用したリバースエンジニアリングは技術的に新規性が高く、特定のハードウェアの互換性を広げる実用性があるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "Arnisは地球上のあらゆる場所をMinecraftの世界に変える",
@@ -631,7 +857,52 @@
       "new_at": "2026-11-07T10:15:45.859363+09:00",
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
       "is_hot": false,
-      "hatena_count": 24
+      "hatena_count": 71
+    },
+    {
+      "title": "M365 Copilot Agent BuilderにSKILL.mdを登録してみた",
+      "url": "https://qiita.com/rhaya/items/2ea7620235c7199db852?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-05T06:48:25+00:00",
+      "reading_min": 9,
+      "summary": "Microsoft 365 Copilot Agent Builderでスキルが利用可能になり、特定のキャラクターの描画に一貫性を持たせるSKILL.mdを登録した事例が紹介されています。\nSKILL.mdはAIエージェントの仕事の手順やルールを定義するMarkdown形式の設定ファイルで、フロントマターと本文で構成されます。\nこれにより、AIエージェントが特定のタスクを常に一定の品質で実行できるようになり、キャラクター描画のブレを解消する効果が確認されました。",
+      "actionable_takeaway": "M365 Copilot Agent BuilderのSKILL.mdを活用することで、AIエージェントの出力品質と一貫性を向上させられるため、自身の業務でCopilotを利用する際は、特定のタスクに対するカスタムスキル定義を検討し、AIの精度向上を図るべきです。",
+      "tags": [
+        "M365 Copilot",
+        "AIエージェント",
+        "スキル定義"
+      ],
+      "category": "AI・機械学習",
+      "score": 78,
+      "score_reason": "M365 Copilotのカスタマイズ機能であるSKILL.mdの具体的な活用事例であり、AIエージェントの出力品質向上に直結するため、実用性が高く、ビジネスにおけるAI活用を促進する情報であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "あらゆる詐欺師を記憶するAIおばあちゃんを構築した",
+      "url": "https://dev.to/remochi/i-built-an-ai-grandmother-that-remembers-every-scammer-9hj",
+      "source": "Dev.to",
+      "published": "2026-11-07T11:53:51+00:00",
+      "reading_min": 6,
+      "summary": "詐欺師の時間を浪費させるため、過去の会話を記憶するAIチャットボット「ScamSathi」が開発されました。\nこのAIは、詐欺師が以前と異なる情報を話した場合にそれを指摘し、詐欺師のスクリプトを崩すことを目的としています。\n詐欺被害者が毎回ゼロから対応する非対称性を解消し、AIが記憶を持つことで詐欺対策の有効性を高めます。",
+      "actionable_takeaway": "AIチャットボット開発者は、長期記憶や過去の対話履歴を活用したパーソナライズされた対話システムを構築することで、ユーザー体験向上や特定課題解決への応用を検討しましょう。",
+      "github_repo": "SanayKrishna/ScamSathi",
+      "tags": [
+        "AI",
+        "Scam Detection",
+        "Chatbot"
+      ],
+      "category": "AI・機械学習",
+      "score": 78,
+      "score_reason": "AIの記憶能力を詐欺対策に応用するという発想は新規性が高く、社会問題解決への貢献が期待できるため、実用性と影響度を評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "アクセシビリティステートメントがGitHubに登場",
@@ -745,7 +1016,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 58,
+      "hatena_count": 60,
       "is_prev_seen": true
     },
     {
@@ -799,8 +1070,8 @@
       "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
       "source": "Hacker News",
       "published": "2026-11-06T12:13:51+00:00",
-      "hn_score": 829,
-      "hn_comments": 1670,
+      "hn_score": 1032,
+      "hn_comments": 1884,
       "reading_min": 3,
       "summary": "テスラは、2027年半ばにテキサス州のギガファクトリーでのサイバートラック生産を終了する予定です。\n販売不振と、新たに発表されたCybercabモデルの生産拡大に対応するためとされています。\nサイバートラックは2023年後半に納車が開始されたばかりで、イーロン・マスクCEOは「テスラ史上最高の車両」と評していました。",
       "actionable_takeaway": "自動車業界の動向を注視し、EV市場における製品戦略や生産計画の柔軟性について、自社のビジネスモデルへの影響を考察することを推奨します。",
@@ -907,6 +1178,94 @@
       "hatena_count": 0
     },
     {
+      "title": "Need for Speed Underground 2がブラウザでオンラインプレイ可能に",
+      "url": "https://nfsu2.xyz/",
+      "source": "Hacker News",
+      "published": "2026-11-07T09:36:36+00:00",
+      "hn_score": 48,
+      "hn_comments": 8,
+      "summary": "人気レーシングゲーム「Need for Speed Underground 2」が、ブラウザ上でオンラインプレイ可能になりました。\nこれにより、特別なクライアントのインストールなしに、手軽に懐かしのゲームを楽しむことができます。\nウェブ技術の進化により、古いゲームが現代のプラットフォームで蘇る事例として注目されます。",
+      "actionable_takeaway": "WebAssemblyやクラウドゲーミング技術の進化を追跡し、レガシーアプリケーションのWeb移行可能性について検討する良い機会です。",
+      "tags": [
+        "WebAssembly",
+        "レトロゲーム",
+        "オンラインゲーム"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 70,
+      "score_reason": "懐かしのゲームがブラウザでプレイ可能になったことは、Web技術の可能性を示す興味深い事例であり、ユーザー体験の向上に寄与します。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "耳で聞く！Python で学ぶ マクロ経済学 入門 全40回総復習",
+      "url": "https://qiita.com/maskot1977/items/1580f010f2a43225c0f7?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-06T09:46:19+00:00",
+      "reading_min": 3,
+      "summary": "YouTubeチャンネル「PythonEc」の動画が、Qiita記事『Pythonで学ぶマクロ経済学入門 全40回総復習』の内容を基にしたPodcastとして公開されました。\n本コンテンツは、Pythonによるデータ分析と動学シミュレーションを用いて、財政赤字や税金に関する一般的な誤解を解き明かします。\n税金を「3つの機能を持つ調整装置」と定義し、AIによる自動需要管理アルゴリズムへの財政の舵取りを委ねる思考実験も提示されています。",
+      "actionable_takeaway": "Pythonを使った経済学の動学シミュレーションは、複雑な経済現象をデータに基づいて理解するのに役立つため、データサイエンスやAIのスキルを社会科学に応用する際の参考にし、自身の専門分野での応用可能性を探るべきです。",
+      "tags": [
+        "Python",
+        "マクロ経済学",
+        "データ分析"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "Pythonを用いたマクロ経済学の解説は、プログラミングと経済学の融合という点で新規性があり、データ分析の応用例として実用性も高いが、直接的なIT技術の進展への影響は限定的であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "LG、スマートTVによるスパイ行為疑惑で法的措置に直面 - 他のメーカーもACRオプトアウト無視で標的にされる可能性",
+      "url": "https://www.reddit.com/r/technology/comments/1xpv2c2/lg_faces_legal_action_over_alleged_smart_tv/",
+      "source": "Reddit",
+      "published": "2026-11-07T02:22:45+00:00",
+      "summary": "LGがスマートTVによるユーザーの視聴データ収集疑惑で法的措置に直面しています。\nこれは、自動コンテンツ認識（ACR）機能のオプトアウト設定を無視している可能性が指摘されており、他のテレビメーカーにも同様の問題が波及する可能性があります。\nユーザープライバシーとデータ収集に関する企業の責任が問われる事例です。",
+      "actionable_takeaway": "スマートTVのプライバシー設定、特にACR機能のデータ収集設定を確認し、不要なデータ送信は無効にすることを推奨します。",
+      "tags": [
+        "プライバシー",
+        "スマートTV",
+        "データ収集"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "スマートTVのプライバシー問題は広範なユーザーに影響を与え、法的・倫理的な議論を巻き起こすため重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "あらゆるAMMファミリーの数学的比較",
+      "url": "https://dev.to/blazephoenix_0bfac717a952/the-mathematics-of-every-amm-family-compared-3dej",
+      "source": "Dev.to",
+      "published": "2026-11-07T11:53:44+00:00",
+      "reading_min": 5,
+      "summary": "この記事は、自動マーケットメーカー（AMM）の主要な3つのファミリー（定積型、集中流動性型、ステーブルインバリアント型）の数学的特性を比較しています。\nそれぞれのAMM設計が、出力関数、流動性の深さの測定方法、および設計の限界にどのように影響するかを詳細に解説しています。\nAMMファミリーを交換可能と見なすことが統合エラーの一般的な原因であり、その算術的な違いを理解することの重要性を強調しています。",
+      "actionable_takeaway": "DeFi開発者は、AMMを統合する際に、各AMMファミリーの数学的特性と限界を深く理解し、プロジェクトの要件に最適なモデルを選択することで、予期せぬエラーや非効率性を回避しましょう。",
+      "tags": [
+        "DeFi",
+        "AMM",
+        "Blockchain"
+      ],
+      "category": "その他",
+      "score": 70,
+      "score_reason": "DeFi分野におけるAMMの数学的基礎を深く掘り下げた内容は、この分野の技術者にとって重要ですが、ニッチな領域であるためスコアは中程度としました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "Game Off 2026: テーマはSHIFT",
       "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
       "source": "GitHub Blog",
@@ -994,6 +1353,72 @@
       "hatena_count": 0
     },
     {
+      "title": "ポート0: 存在しないポート",
+      "url": "https://acid.vegas/blog/the-port-that-does-not-exist/",
+      "source": "Hacker News",
+      "published": "2026-11-07T09:38:26+00:00",
+      "hn_score": 10,
+      "hn_comments": 3,
+      "summary": "TCP/IPネットワークにおけるポート0の特殊性について解説しています。\nポート0は予約されており、通常はアプリケーションが直接使用することはありません。\nしかし、特定の状況下では、システム内部で特殊な意味を持つことがあります。",
+      "actionable_takeaway": "ネットワークプログラミングを行う際は、予約済みポートや特殊なポート番号の挙動を理解し、意図しない挙動を避けるよう注意してください。",
+      "tags": [
+        "ネットワーク",
+        "TCP/IP",
+        "ポート"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 65,
+      "score_reason": "ポート0の概念はネットワークの基礎知識として重要であり、特定の状況で問題を引き起こす可能性があるため、エンジニアにとっての学習価値があります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "米国、Nvidiaのファン氏が中国のスパイとされる人物と恋愛関係にあったと見ている",
+      "url": "https://www.reddit.com/r/technology/comments/1xpvi73/us_believes_nvidias_huang_had_romantic/",
+      "source": "Reddit",
+      "published": "2026-11-07T02:45:20+00:00",
+      "summary": "米国政府は、NvidiaのCEOであるジェンスン・ファン氏が、中国のスパイとされる人物と恋愛関係にあったと見ているという報道です。\nこの情報は、Nvidiaのような主要なテクノロジー企業のトップと、国家安全保障に関わる人物との関係性について懸念を示唆しています。\n具体的な詳細や証拠は不明ですが、地政学的な緊張が高まる中で、ハイテク企業のセキュリティと情報管理の重要性を浮き彫りにする可能性があります。",
+      "actionable_takeaway": "ハイテク企業の幹部と外国政府関係者との個人的な関係は、企業秘密や国家安全保障に関わるリスクを増大させる可能性があるため、企業は従業員に対するセキュリティ教育を強化し、潜在的な情報漏洩リスクを常に評価・管理すべきです。",
+      "tags": [
+        "Nvidia",
+        "地政学",
+        "セキュリティ"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "NvidiaのCEOに関する報道は、ハイテク業界の地政学的リスクとセキュリティの重要性を示すものであり、ビジネス戦略や情報管理に影響を与える可能性があるが、技術的な新規性や直接的な開発への影響は限定的であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Ping Huntの構築: iOS向けGPS宝探しアプリ",
+      "url": "https://dev.to/sorenbeckjensen/building-ping-hunt-a-gps-treasure-hunt-app-for-ios-1k97",
+      "source": "Dev.to",
+      "published": "2026-11-07T11:55:15+00:00",
+      "reading_min": 1,
+      "summary": "Ping Huntは、通常の散歩をGPS宝探しに変えるiOSアプリです。\nユーザーはウェイポイントをたどって実際の場所に行き、ビューファインダーで見たものと一致させます。\n開発者は、従来のジオキャッシングの煩雑さを排除し、「遊び」の要素に焦点を当てて開発を進めています。",
+      "actionable_takeaway": "iOSアプリ開発者は、Ping Huntの「building in public」アプローチを参考に、開発プロセスや課題を公開することでコミュニティからのフィードバックや協力を得られる可能性があります。",
+      "tags": [
+        "iOS開発",
+        "GPS",
+        "モバイルアプリ"
+      ],
+      "category": "モバイル",
+      "score": 65,
+      "score_reason": "特定のモバイルアプリ開発事例であり、技術的な新規性は中程度ですが、開発プロセスを公開するアプローチは参考になるため中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "「AIであってほしかった」近所の書店にいったらBLのエロ本が子供向けの本のすぐ近くに平積みされている。子供への性加害は辞めるべきだ。",
       "url": "https://posfie.com/@Acg3C2/p/NF0FdOe",
       "source": "はてなブックマーク",
@@ -1013,7 +1438,29 @@
       "new_at": "2026-11-07T10:15:45.859363+09:00",
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
       "is_hot": false,
-      "hatena_count": 29
+      "hatena_count": 239
+    },
+    {
+      "title": "ワイヤレス主流時代になぜ？「有線イヤホン」再流行のワケ【THE TIME,】",
+      "url": "https://newsdig.tbs.co.jp/articles/-/3068819",
+      "source": "はてなブックマーク",
+      "published": "2026-11-07T04:39:14+00:00",
+      "reading_min": 1,
+      "summary": "ワイヤレスイヤホンが主流の現代において、有線イヤホンが再流行している現象が報じられています。\nBOSEが11年ぶりに有線タイプを発売するなど、その人気は高まっています。\n音質の良さや充電不要といった点が再評価されている可能性があります。",
+      "actionable_takeaway": "オーディオ製品の選定において、ワイヤレスだけでなく有線イヤホンの音質や安定性、充電不要といったメリットも再評価し、用途に応じて選択肢に含めるべきです。",
+      "tags": [
+        "有線イヤホン",
+        "ワイヤレスイヤホン",
+        "オーディオ"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 60,
+      "score_reason": "技術的な新規性やIT業界への直接的な影響は限定的ですが、消費者のトレンド変化を示す興味深い動向であるため中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 67
     },
     {
       "title": "RIP Cybertruck。あなたは愛されず、望まれず、全くもって不合理だった",
@@ -1077,22 +1524,46 @@
       "first_seen": "2026-11-07T10:15:45.859363+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "RAMをアップロードする",
+      "url": "https://uploadyourram.org",
+      "source": "Hacker News",
+      "published": "2026-11-07T10:15:26+00:00",
+      "hn_score": 82,
+      "hn_comments": 52,
+      "reading_min": 1,
+      "summary": "Sam AltmanがRAMの非効率性を指摘する中、未使用のRAMを「アップロード」して有効活用する革新的な技術が提案されています。\nこの技術は、ユーザーがコンピュータ内のアイドル状態のRAMを寄付し、より良い目的に役立てることを可能にします。\n実際にはジョークサイトであり、RAMを物理的にアップロードすることはできません。",
+      "actionable_takeaway": "技術的な主張の真偽を常に確認し、特に非現実的なサービスや製品には注意を払うべきです。",
+      "tags": [
+        "ジョーク",
+        "RAM",
+        "クラウド"
+      ],
+      "category": "その他",
+      "score": 10,
+      "score_reason": "記事はジョークであり、技術的な実用性や新規性は皆無であるため、スコアは非常に低いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-07T20:56:29.573901+09:00",
+      "first_seen": "2026-11-07T20:56:29.573901+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-07T10:15:45.859363+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-07T20:56:29.573901+09:00",
     "summary_lines": [
-      "AIエージェントによるタスク管理と情報探索の進化が注目を集めています。",
-      "FirecrackerのVMエスケープ脆弱性などセキュリティ動向に要警戒です。",
-      "和暦の変更がプログラミングに与える影響が話題となっています。"
+      "AIエージェントがタスク管理や情報探索を自動化し、開発・研究を加速させています。",
+      "セキュリティ分野では、FirecrackerのVMエスケープやGMOの情報アクセス問題が浮上。",
+      "プログラミング言語では、和暦の破壊的変更やターミナルエミュレータのライブラリリリースが話題です。"
     ],
     "focus_tags": [
       "AIエージェント",
       "セキュリティ脆弱性",
-      "AI開発",
       "自動化",
-      "和暦"
+      "AI開発",
+      "プログラミング言語"
     ]
   }
 }

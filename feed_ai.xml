@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 01:16:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 11:57:27 +0000</lastBuildDate>
     <item>
       <title>AI駆動開発の次の段階: ソフトウェアファクトリー</title>
       <link>https://qiita.com/Syoitu/items/9364a0a175893bb15219?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
@@ -49,6 +49,27 @@
       <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
     </item>
     <item>
+      <title>エージェントメモリのコンポーネント</title>
+      <link>https://www.anthropic.com/research/components-of-agent-memory</link>
+      <guid isPermaLink="false">https://www.anthropic.com/research/components-of-agent-memory</guid>
+      <description>[Score: 90] Anthropicの研究者が、AIエージェントのメモリ設計における課題と解決策について論じています。 / 人間の記憶形成プロセス（短期記憶から長期記憶への統合）を参考に、エージェントメモリのコンポーネントを設計しています。 / 特に「夢を見る（dreaming）」という概念を導入し、エージェントがアイドル時に経験を整理・統合することで、より効果的な記憶を実現しています。 [実務示唆: AIエージェント開発者は、長期的な対話や複雑なタスク処理のために、エージェントの記憶メカニズムを設計する際に「dreaming」のようなオフライン処理の導入を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Sat, 07 Nov 2026 06:39:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>Weight-Space Programming をやってみた（やらせてみた）</title>
+      <link>https://zenn.dev/nwn/articles/cf9fe78aa33861</link>
+      <guid isPermaLink="false">https://zenn.dev/nwn/articles/cf9fe78aa33861</guid>
+      <description>[Score: 90] GPT-6 AstraがQwen3.5-0.8Bの重みを編集し、モデルの挙動を修正する論文が話題になっています。 / 本記事では、ChatGPTのCodex機能を使って同様の実験を行い、Qwen3.5-0.8Bの語尾をずんだもん風に修正することに成功しました。 / AIがモデルの重みを直接編集し、特定のタスクを達成する過程を自動化できる可能性を示しています。 [実務示唆: AIによるモデルの重み編集は、プロンプトやファインチューニングでは難しい細かな挙動修正に有効な可能性があり、今後のLLM開発で注目すべき技術です。] [GitHub: auhulu/Qwen3.5-0.8B-Zundamon] (Source: Zenn)</description>
+      <pubDate>Sat, 07 Nov 2026 00:57:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>シン・ウルトラモード</title>
+      <link>https://zenn.dev/aws_japan/articles/kiro-crew-ultra-mode</link>
+      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/kiro-crew-ultra-mode</guid>
+      <description>[Score: 88] AWS Japanのソリューションアーキテクトが、オープンソースツールKiro Crewの「Ultra Mode」を紹介しています。 / Ultra Modeは、指揮役のエージェントが大きなゴールを複数の作業に分割し、それぞれをワーカーエージェントに割り当てることで、複雑なタスクを効率的に処理します。 / これにより、コンテキストの限界や進捗管理の課題を解決し、大規模なAIエージェントタスクの実行を容易にします。 [実務示唆: 大規模なAIエージェントシステムを構築する際、Kiro CrewのUltra Modeのようなマルチエージェント協調フレームワークを導入し、タスク分割と進捗管理の効率化を図ることを推奨します。] [GitHub: kirodotdev/KiroCrew] (Source: Zenn)</description>
+      <pubDate>Sat, 07 Nov 2026 01:09:30 +0000</pubDate>
+    </item>
+    <item>
       <title>GitHub Copilot Dreaming」発表。作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理、アップデート。GitHub Universe 2026</title>
       <link>https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</guid>
@@ -77,32 +98,18 @@
       <pubDate>Fri, 06 Nov 2026 23:03:55 +0000</pubDate>
     </item>
     <item>
+      <title>Gemini Omni 1.2 Flash: 15秒のAI動画を無料で作成</title>
+      <link>https://dev.to/theglitchfixer/gemini-omni-12-flash-make-15-second-ai-videos-free-3241</link>
+      <guid isPermaLink="false">https://dev.to/theglitchfixer/gemini-omni-12-flash-make-15-second-ai-videos-free-3241</guid>
+      <description>[Score: 85] GoogleのGemini Omni 1.2 Flashが一般公開され、最大15秒のAI動画生成・編集が可能になりました。 / GoogleアカウントがあればGoogle Vidsで毎月3本まで無料で作成でき、API経由では1秒あたり0.07ドルで利用可能です。 / 旧バージョンから動画の長さが延長され、会話による編集機能も追加されています。 [実務示唆: AI動画生成を試したいエンジニアは、GoogleアカウントでGoogle Vidsを利用し、Gemini Omni 1.2 Flashの無料枠でプロトタイプ作成を検討しましょう。] (Source: Dev.to)</description>
+      <pubDate>Sat, 07 Nov 2026 11:54:30 +0000</pubDate>
+    </item>
+    <item>
       <title>【マンガ】はじめてのインデータベースAI～ベクトル検索・RAGからAIエージェントまで～（コミカライズ版）</title>
       <link>https://qiita.com/yuji-arakawa/items/1c6d0ae4400ca2b4bae3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/yuji-arakawa/items/1c6d0ae4400ca2b4bae3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 82] 保守窓口支援システムを題材に、インデータベースAIの設計と活用方法をマンガ形式で解説しています。 / Oracle AI Databaseの機能を使い、文書の意味検索、業務データ照会、AIエージェントの構築プロセスを紹介。 / ベクトル検索、RAG、NL2SQL、AIエージェントのツール利用など、具体的なAI機能の実装例が分かりやすく描かれています。 [実務示唆: Oracle AI Databaseを活用し、データのそばでAI機能を統合することで、保守支援システムのような複雑な業務アプリケーションを効率的に開発できる可能性を探りましょう。] (Source: Qiita)</description>
       <pubDate>Wed, 04 Nov 2026 23:04:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>Resource-Efficient Reinforcement Learning Post-Training through Elastic Expert Parallelism</title>
-      <link>https://arxiv.org/abs/2611.06984</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.06984</guid>
-      <description>[Score: 80] 本記事は、強化学習の学習後段階におけるリソース効率を向上させる「Elastic Expert Parallelism」について述べています。 / 専門家並列処理を柔軟に適用することで、計算リソースを効率的に利用し、コスト削減と高速化を実現します。 / 大規模な強化学習モデルの運用コスト削減に貢献する技術です。 [実務示唆: 大規模な強化学習モデルの運用コスト削減と効率化のため、Elastic Expert Parallelismのような学習後最適化手法の導入を検討し、リソース利用を最適化すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 06 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI時代の逆問題の形式化：可能性、落とし穴、そして招待</title>
-      <link>https://arxiv.org/abs/2611.06962</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.06962</guid>
-      <description>[Score: 70] arXivLabsは、arXivウェブサイト上で新しい機能の開発と共有を可能にするフレームワークです。 / このフレームワークは、オープン性、コミュニティ、卓越性、ユーザーデータプライバシーといったarXivの価値観を共有する協力者によって支えられています。 / 本記事は、AI時代における逆問題の形式化に関する可能性と課題について議論し、関連するプロジェクトへの参加を促すものです。 [実務示唆: AIと逆問題の交差点に関心のある研究者や開発者は、arXivLabsの取り組みを調査し、自身のプロジェクトがarXivコミュニティに価値をもたらす可能性を探り、共同研究や機能開発への参加を検討しましょう。] (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 06 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>KDASO: 責任裁定タスクのための知識データ二重駆動型自動スキル最適化</title>
-      <link>https://arxiv.org/abs/2611.06972</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.06972</guid>
-      <description>[Score: 70] 本記事は、責任裁定タスクにおける自動スキル最適化手法「KDASO」について解説しています。 / 知識とデータの両方を活用することで、複雑な裁定プロセスを効率化することを目指しています。 / AIによる法務・規制遵守分野への応用が期待される研究です。 [実務示唆: 法務や規制遵守の自動化を検討する際、知識とデータを組み合わせたAIモデルの導入可能性を評価し、業務効率化に役立てるべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 06 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

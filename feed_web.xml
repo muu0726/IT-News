@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 01:16:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 11:57:27 +0000</lastBuildDate>
     <item>
       <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
       <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
@@ -19,6 +19,13 @@
       <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
       <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>Figmaのリアルタイム同期の仕組みを、Node.js + WebSocketの最小構成で実装してみた</title>
+      <link>https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] Figmaのなめらかなリアルタイム同期の仕組みについて、公式ブログの情報を基にNode.jsとWebSocketで最小構成を実装し検証しました。 / 特に「サーバーに届いた順を使うので、タイムスタンプが不要」という点に注目し、楽観的更新とflickering防止の重要性をデモで示しています。 / 合意アルゴリズムやベクタークロックを使わず、単一サーバーでの単純な上書き処理で同期を実現する設計の理解を深めることを目的としています。 [実務示唆: リアルタイム共同編集機能を持つWebアプリケーション開発において、Figmaの同期設計（楽観的更新、サーバー受信順の採用）は実装の複雑さを軽減しつつ高いUXを実現するヒントとなるため、類似機能の実装時に参考にすべきです。] [GitHub: keishin-nishiura/figma-sync-demo] (Source: Qiita)</description>
+      <pubDate>Fri, 06 Nov 2026 03:11:21 +0000</pubDate>
     </item>
     <item>
       <title>リモートのエージェントが起動した dev server を手元でプレビュー：VS Code 1.145 の Remote browser proxy を試した</title>
@@ -40,6 +47,13 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</guid>
       <description>[Score: 85] 2026年第3四半期のクラウドインフラ市場は前年比55%増と過去最高の成長率を記録し、市場規模は1680億ドルに達しました。 / AWSのシェアは2ポイント後退して26%となり、Microsoft Azureは1ポイント減の19%、Google Cloudは1ポイント増の16%となりました。 / AIワークロードに特化した「ネオクラウド」ベンダーが台頭し、市場競争が激化しています。 (Source: Publickey)</description>
       <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>ISUCON 2026参加記</title>
+      <link>https://zenn.dev/smasui/articles/1e38c0d5881ac9</link>
+      <guid isPermaLink="false">https://zenn.dev/smasui/articles/1e38c0d5881ac9</guid>
+      <description>[Score: 85] ISUCON 2026に3人チーム「pythonista」として参加し、856チーム中274位、Python利用チームでは最高スコアを達成しました。 / 問題の定石と異なる作りで戸惑いつつも、署名計算の最適化、nginxの画像キャッシュ、DBクエリ改善、ロック戦略の見直しなど多岐にわたるチューニングを実施。 / 最終的に60,719点を記録し、パフォーマンスチューニングの具体的な手法と試行錯誤の過程が詳細に記されています。 [実務示唆: ISUCON参加記は、実践的なパフォーマンスチューニングの具体例が豊富であり、Webアプリケーションのボトルネック特定と改善策を学ぶ上で非常に参考になるため、自身の開発環境で同様の最適化を検討する際に役立ちます。] (Source: Zenn)</description>
+      <pubDate>Fri, 06 Nov 2026 11:39:40 +0000</pubDate>
     </item>
     <item>
       <title>アクセシビリティステートメントがGitHubに登場</title>
@@ -68,6 +82,20 @@
       <guid isPermaLink="false">https://dev.to/chaseintech/i-turned-my-life-into-a-city-you-can-walk-building-world-001-1gn9</guid>
       <description>[Score: 70] 著者は、履歴書では伝わらない自身の経験やスキル習得の過程を表現するため、インタラクティブな3Dマップ「World 001」を開発しました。 / このマップはロンドンの風景を背景に、著者の人生の転機となった10の場所（ボクシング、ランニングクラブ、AI開発など）を巡ることができます。 / ブラウザ上で動作し、各スポットをクリックするとそのエピソードが語られ、スキルがどのように形成されたかを示すユニークなポートフォリオとなっています。 [実務示唆: 自身のキャリアパスやスキルセットを物語形式で可視化するインタラクティブなポートフォリオは、採用やクライアント獲得において差別化要因となるため、個人プロジェクトとして検討する価値があります。] (Source: Dev.to)</description>
       <pubDate>Sat, 07 Nov 2026 01:04:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>Need for Speed Underground 2がブラウザでオンラインプレイ可能に</title>
+      <link>https://nfsu2.xyz/</link>
+      <guid isPermaLink="false">https://nfsu2.xyz/</guid>
+      <description>[Score: 70] 人気レーシングゲーム「Need for Speed Underground 2」が、ブラウザ上でオンラインプレイ可能になりました。 / これにより、特別なクライアントのインストールなしに、手軽に懐かしのゲームを楽しむことができます。 / ウェブ技術の進化により、古いゲームが現代のプラットフォームで蘇る事例として注目されます。 [実務示唆: WebAssemblyやクラウドゲーミング技術の進化を追跡し、レガシーアプリケーションのWeb移行可能性について検討する良い機会です。] (Source: Hacker News)</description>
+      <pubDate>Sat, 07 Nov 2026 09:36:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>ポート0: 存在しないポート</title>
+      <link>https://acid.vegas/blog/the-port-that-does-not-exist/</link>
+      <guid isPermaLink="false">https://acid.vegas/blog/the-port-that-does-not-exist/</guid>
+      <description>[Score: 65] TCP/IPネットワークにおけるポート0の特殊性について解説しています。 / ポート0は予約されており、通常はアプリケーションが直接使用することはありません。 / しかし、特定の状況下では、システム内部で特殊な意味を持つことがあります。 [実務示唆: ネットワークプログラミングを行う際は、予約済みポートや特殊なポート番号の挙動を理解し、意図しない挙動を避けるよう注意してください。] (Source: Hacker News)</description>
+      <pubDate>Sat, 07 Nov 2026 09:38:26 +0000</pubDate>
     </item>
   </channel>
 </rss>
