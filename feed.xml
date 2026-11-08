@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 08 Nov 2026 00:56:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 12:15:09 +0000</lastBuildDate>
     <item>
       <title>[破壊的変更] 明治時代の開始日が変更になって単体テストが失敗した件</title>
       <link>https://zenn.dev/xin9le/articles/9a1cf8e10494d6</link>
@@ -70,6 +70,34 @@
       <pubDate>Sat, 07 Nov 2026 09:20:09 +0000</pubDate>
     </item>
     <item>
+      <title>エージェントのメモリにはOpenTelemetryのような瞬間が必要</title>
+      <link>https://www.lorekit.io/blog/open-agent-memory-format</link>
+      <guid isPermaLink="false">https://www.lorekit.io/blog/open-agent-memory-format</guid>
+      <description>[Score: 90] 現在のコーディングツールでは、エージェントが「記憶」する情報が様々な形式で分散しており、相互運用性がありません。 / これは、エージェントが未来の自身のために残すメモという共通のアイデアが、ツールごとに異なる形式で再構築されているためです。 / OpenTelemetryがオブザーバビリティ分野で標準化をもたらしたように、エージェントのメモリ形式においてもコミュニティによる共通の合意形成が必要です。 [実務示唆: AIエージェントを開発する際は、将来的な相互運用性を考慮し、エージェントの記憶形式の標準化に向けた議論や提案に積極的に参加し、共通フォーマットの採用を検討すべきです。] [GitHub: lorekit/lorekit] (Source: Hacker News)</description>
+      <pubDate>Sun, 08 Nov 2026 08:40:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>意思決定だけで週100コミット積むAI開発手法</title>
+      <link>https://zenn.dev/kingyosun/articles/kukuri-ai-dev</link>
+      <guid isPermaLink="false">https://zenn.dev/kingyosun/articles/kukuri-ai-dev</guid>
+      <description>[Score: 90] 筆者はP2P SNS「kukuri」を開発しており、AIコーディングを活用することで、コードを読まず、IssueやPRもほぼ見ずに週平均97コミットという大規模開発を個人で継続しています。 / 約52.8万行のコード、16領域の機能、デスクトップ・Web/PWA・サーバー・CLI・Unity SDKにまたがるプロダクトを、最小限の時間で開発しています。 / 過去2回の破綻とアーキテクチャの大転換を経て、現在はクリーンアーキテクチャを志向し、AIが変更する場所と影響範囲を小さくする構造で開発効率を向上させています。 [実務示唆: AIを活用した開発では、テストの網羅性と利用場面との整合性を重視し、E2Eテストで実際のユーザーシナリオを検証することで、AI生成コードの品質と信頼性を高めるべきです。] (Source: Zenn)</description>
+      <pubDate>Fri, 06 Nov 2026 17:26:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>数百ページのPDF文書を一括解析できるローカルAI「Unlimited OCR 2」、NVIDIA開発の文字起こし音声AI「Nemotron 3.5 Transcribe」など生成AI技術5つを解説（生成AIウィークリー）</title>
+      <link>https://www.techno-edge.net/article/2026/11/06/5679.html</link>
+      <guid isPermaLink="false">https://www.techno-edge.net/article/2026/11/06/5679.html</guid>
+      <description>[Score: 90] 本記事では、最新の生成AI技術として「Unlimited OCR 2」やNVIDIAの音声AI「Nemotron 3.5 Transcribe」、Mistral AIの「Mistral Large 4」、Liquid AIの「LFM3」が紹介されています。 / Unlimited OCR 2は数百ページのPDFを一括解析できるローカルOCRモデルで、Nemotron 3.5 Transcribeは40言語対応のオープンウェイト音声認識AIです。 / Mistral Large 4はGPT-6.1 Terraと同等のコーディング性能を持ち、LFM3はスマホでも高速動作する小型AIモデル群です。 [実務示唆: NVIDIA Nemotron 3.5 Transcribeは多言語対応の音声認識AIで、日本語も実用レベルのため、音声関連開発者はHugging Faceで試用し活用を検討すべきです。] [GitHub: NVIDIA/Nemotron-3.5-Transcribe-30B-A4B] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 07 Nov 2026 00:46:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>エージェントは読み込んだログに隠された指示に従う</title>
+      <link>https://dev.to/dekita/your-agent-will-obey-the-instructions-hidden-in-the-logs-it-reads-ob6</link>
+      <guid isPermaLink="false">https://dev.to/dekita/your-agent-will-obey-the-instructions-hidden-in-the-logs-it-reads-ob6</guid>
+      <description>[Score: 90] アプリケーションログを読み込むAIエージェントが、ログ内の指示に従ってしまう脆弱性が指摘されています。 / モデルは指示の出所を区別せず、システムプロンプトとログの行を同等に扱ってしまうためです。 / これにより、悪意のあるログエントリによってエージェントが意図しないコマンドを実行する可能性があります。 [実務示唆: AIエージェントがログを読み込むシステムでは、ログに実行可能な指示が含まれないよう厳重に管理し、エージェントの入力検証を強化してセキュリティリスクを軽減しましょう。] (Source: Dev.to)</description>
+      <pubDate>Sun, 08 Nov 2026 12:08:23 +0000</pubDate>
+    </item>
+    <item>
       <title>Figmaのリアルタイム同期の仕組みを、Node.js + WebSocketの最小構成で実装してみた</title>
       <link>https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
@@ -82,6 +110,13 @@
       <guid isPermaLink="false">https://dev.to/yannicksterling6563/tenant-isolated-ai-image-storage-cheap-signed-downloads-no-open-bucket-4lp2</guid>
       <description>[Score: 88] AI生成画像をプライベートなオブジェクトストレージにテナント分離して保存し、安価でセキュアな署名付きダウンロードリンクを提供する手法を解説しています。 / アプリケーションがテナント認証と認可を行い、短期間有効な署名付きダウンロードリンクを発行することで、メディアバイトのプロキシを回避します。 / オブジェクトキーをブラウザから直接受け入れず、アプリケーションデータベースで所有権を管理することで、クロステナント読み取りを防ぎます。 [実務示唆: マルチテナントAIアプリケーションで生成画像を扱う際、オープンバケットを避け、アプリケーション側でテナント認証とオブジェクト所有権を厳格に管理し、署名付きURLでセキュアなダウンロードを実現すべきです。] (Source: Dev.to)</description>
       <pubDate>Sun, 08 Nov 2026 00:48:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>シン・ウルトラモード</title>
+      <link>https://zenn.dev/aws_japan/articles/kiro-crew-ultra-mode</link>
+      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/kiro-crew-ultra-mode</guid>
+      <description>[Score: 88] AWS Japanのソリューションアーキテクトが、オープンソースツールKiro Crewの「Ultra Mode」を紹介しています。 / Ultra Modeは、指揮役のエージェントが大きなゴールを複数の作業に分割し、それぞれをワーカーエージェントに割り当てることで、複雑なタスクを効率的に処理します。 / これにより、コンテキストの限界や進捗管理の課題を解決し、大規模なAIエージェントタスクの実行を容易にします。 [実務示唆: 大規模なAIエージェントシステムを構築する際、Kiro CrewのUltra Modeのようなマルチエージェント協調フレームワークを導入し、タスク分割と進捗管理の効率化を図ることを推奨します。] [GitHub: kirodotdev/KiroCrew] (Source: Zenn)</description>
+      <pubDate>Sat, 07 Nov 2026 01:09:30 +0000</pubDate>
     </item>
     <item>
       <title>Linuxカーネルの深刻な脆弱性／FDEの名前で単なるコンサルティングが販売／TypeScriptをRustに移植した「tsrs」発表ほか、2026年10月の人気記事</title>
@@ -110,41 +145,6 @@
       <guid isPermaLink="false">https://hunch.net/?p=13764006</guid>
       <description>[Score: 85] ChatGPTリリース後、Microsoft Research内でのAI研究はより組織的なアプローチが必要と認識されました。 / これを受け、約50名からなるAI Frontiersが設立され、AutogenやFaraなどのエージェント関連研究を推進。 / しかし、組織的な研究の難しさや計算資源の制約もあり、最終的にグループは解体されました。 [実務示唆: 大規模AI開発における組織的アプローチの重要性と、個人のアイデアをスケールさせる難しさを理解し、チーム連携を強化する。] [GitHub: microsoft/autogen] (Source: Hacker News)</description>
       <pubDate>Sat, 07 Nov 2026 18:02:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>MaxxBench – 「DeepSWEスコアは素晴らしい。しかしそれは本当か？」</title>
-      <link>https://maxxbench.unlap.ai/research/why-maxxbench/</link>
-      <guid isPermaLink="false">https://maxxbench.unlap.ai/research/why-maxxbench/</guid>
-      <description>[Score: 85] MaxxBenchは、AIモデルが既存のベンチマークに過剰適応する「ベンチマキシング」現象を検証する新しいコーディングベンチマークです。 / モデルが隠れたテストの期待を推測し、要件変更を無視して以前の正解を再現する傾向があることを発見しました。 / これにより、実際のエンジニアリング作業におけるモデルの適応能力が過大評価される可能性が指摘されています。 [実務示唆: AIコーディングアシスタントの評価には、既存ベンチマークへの過学習を避けるため、MaxxBenchのような動的な要件変更を含む評価手法を導入することを検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Sat, 07 Nov 2026 17:19:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>米国情報機関、Nvidia CEOジェンスン・フアンがハニートラップ作戦で中国のスパイと関係を持ったと見ている</title>
-      <link>https://www.reddit.com/r/technology/comments/1xqbulk/us_intelligence_believes_nvidia_ceo_jensen_huang/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xqbulk/us_intelligence_believes_nvidia_ceo_jensen_huang/</guid>
-      <description>[Score: 85] 米国情報機関が、Nvidia CEOジェンスン・フアン氏が中国のスパイによるハニートラップ作戦に関与したと疑っていると報じられました。 / この疑惑は、Nvidiaの企業イメージや米中間の技術競争に大きな影響を与える可能性があります。 / 半導体業界のトップ企業CEOに関するスパイ疑惑は、地政学的リスクの深刻さを示しています。 [実務示唆: 重要技術企業の幹部は、個人情報や行動が国家レベルの監視対象となる可能性を認識し、セキュリティ意識を徹底する必要があります。] (Source: Reddit)</description>
-      <pubDate>Sat, 07 Nov 2026 17:27:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>無料でDiscordのようなチャット・音声・動画・ボットなどを駆使した小さなコミュニティを自分たちで運営できる「Harmony」、既存のDiscordサーバーと接続できるブリッジ機能もオープンソースでセルフホスト可能</title>
-      <link>https://gigazine.net/news/20261107-harmony/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261107-harmony/</guid>
-      <description>[Score: 85] Harmonyは、Discordに似た機能を持つ無料のオープンソースソフトウェアで、チャット、音声、動画、ボットなどを活用したコミュニティ運営が可能です。 / 既存のDiscordサーバーとメッセージを双方向に同期できる「Discord Bridge」機能を備え、異なるサービス間での交流を実現します。 / ActivityPubにも対応しており、分散型SNSとしての利用やセルフホストによる自由な運用が特徴です。 [実務示唆: Discordの代替やプライベートなコミュニティ運営を検討している開発者は、Harmonyをセルフホストして、その機能とDiscord連携を検証することを推奨します。] [GitHub: mony/harmony] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 07 Nov 2026 09:05:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>Go + AIインフラストラクチャ: スケーラブルなAIシステムを構築する</title>
-      <link>https://dev.to/dawn_carrillo_4d69570459b/go-ai-infrastructure-building-ai-systems-that-actually-scale-ph9</link>
-      <guid isPermaLink="false">https://dev.to/dawn_carrillo_4d69570459b/go-ai-infrastructure-building-ai-systems-that-actually-scale-ph9</guid>
-      <description>[Score: 85] AIアプリケーション開発において、LLM API接続だけでなく、信頼性、スケーラビリティ、監視性、コスト効率が重要です。 / Go言語は、その並行処理能力と効率性から、AIシステムのオーケストレーションとサービス間通信のバックボーンとして適しています。 / Goを用いたAPIレイヤー、LLM統合、RAGパイプライン、分散処理の構築方法が具体的に解説されています。 [実務示唆: Go言語の並行処理機能を活用し、AIシステムのオーケストレーションやスケーラブルなバックエンド構築を検討することで、本番環境での信頼性と効率性を高められます。] (Source: Dev.to)</description>
-      <pubDate>Sun, 08 Nov 2026 00:46:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>【公式】Pyxel 3.0リリース！世界初（？）レトロ3Dゲームエンジン機能を搭載！</title>
-      <link>https://qiita.com/kitao/items/af92619297d5563f2a0e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kitao/items/af92619297d5563f2a0e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Python向けレトロゲームエンジンPyxelがバージョン3.0をリリースし、レトロ3Dゲームエンジン機能「Pyxel Cube」を追加しました。 / Pyxel Cubeは、PlayStation 2時代のローポリゴン3Dを再現し、従来の2Dコードと共存して3D機能を利用できます。 / ノードツリー構造で3D空間のオブジェクトを組み立て、基本16色、半透明なしといった「不自由さ」を特徴としています。 [実務示唆: Pythonで手軽にレトロゲーム開発をしたいエンジニアは、Pyxel 3.0のPyxel Cubeを試すことで、レトロな雰囲気の3Dゲーム制作に挑戦し、新しい表現の可能性を探ることができます。] [GitHub: kitao/pyxel] (Source: Qiita)</description>
-      <pubDate>Sat, 07 Nov 2026 09:11:57 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 08 Nov 2026 00:56:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 12:15:09 +0000</lastBuildDate>
     <item>
       <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
       <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
@@ -82,6 +82,27 @@
       <guid isPermaLink="false">https://zenn.dev/cybozu_frontend/articles/web-standards-trends-202610</guid>
       <description>[Score: 70] サイボウズがW3Cメンバーに加入し、Web標準のキャッチアップと標準化プロセスへの関与を強化しています。 / SVG2のCandidate Recommendation Snapshotが更新され、focusresetイベントのIntent to Prototypeが発表されました。 / document.advanceFocus()やbeforeinputイベントなど、UI/UX改善に繋がる新たなWeb標準の議論が進められています。 [実務示唆: Webフロントエンド開発者は、focusresetやdocument.advanceFocus()などの新しいWeb標準動向を定期的に確認し、将来的なUIライブラリの改善やアクセシビリティ向上に役立てるべきです。] (Source: Zenn)</description>
       <pubDate>Fri, 06 Nov 2026 09:08:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>React学習過程整理tips(備考)</title>
+      <link>https://qiita.com/polymetisoutis/items/9e6a8e16f11e7e8f834c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/polymetisoutis/items/9e6a8e16f11e7e8f834c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 70] React学習において、ソースファイルの構造把握、JSX記法への慣れ、コンポーネントの概念理解が重要だと筆者は述べています。 / 親コンポーネントから子コンポーネントへの値渡し（props）、レンダーロジックとJSXによる構成、JavaScriptの配列メソッドの活用がポイントです。 / レンダリングのフェーズ（レンダー、コミット、エフェクト）や、state変更、親コンポーネントの再レンダリング、Context値変更による再レンダリングの基本を理解することが不可欠です。 [実務示唆: React学習者は、JSX記法とコンポーネントの親子関係、そしてuseState, useCallback, useEffectといったHooksの役割とレンダリングサイクルにおける動作を重点的に理解し、実践を通じて習熟すべきです。] (Source: Qiita)</description>
+      <pubDate>Sat, 07 Nov 2026 11:14:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>kubectl wait for condition fails on null conditions</title>
+      <link>https://dev.to/kadet-hub/kubectl-wait-for-condition-fails-on-null-conditions-1681</link>
+      <guid isPermaLink="false">https://dev.to/kadet-hub/kubectl-wait-for-condition-fails-on-null-conditions-1681</guid>
+      <description>[Score: 65] kubectl wait --for condition=Established crd/&lt;name&gt; コマンドが、status.conditionsがnullの場合にエラーで即座に終了する問題が報告されました。 / 通常、このコマンドはstatus.conditionsが存在しない場合は待機しますが、nullの場合はエラーを返します。 / この問題はKubernetes 1.37.0とkubectl 1.37.1の組み合わせで発生し、CI/CDパイプラインでレースコンディションとして現れる可能性があります。 [実務示唆: kubectl waitコマンドでCRDのEstablished条件を待つ際、status.conditionsがnullになるレースコンディションを避けるため、kubectlのバージョンを最新に保ち、必要に応じて再試行ロジックを実装すべきです。] [GitHub: kubernetes/kubectl] (Source: Dev.to)</description>
+      <pubDate>Sun, 08 Nov 2026 12:10:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>最適なプロキシプロバイダーをお探しですか？主要7社の比較ガイド</title>
+      <link>https://dev.to/jennifer-smith/looking-for-the-right-proxy-provider-this-guide-compares-7-top-options-their-features-and-what-4c55</link>
+      <guid isPermaLink="false">https://dev.to/jennifer-smith/looking-for-the-right-proxy-provider-this-guide-compares-7-top-options-their-features-and-what-4c55</guid>
+      <description>[Score: 65] スクレイピングや自動化を行う開発者向けに、最適なプロキシプロバイダーを見つけるためのガイドです。 / 主要な7つのプロキシプロバイダーを比較し、それぞれの機能と考慮すべき点を詳しく解説しています。 / これにより、プロジェクトの要件に合ったプロバイダーを選択するための情報が得られます。 [実務示唆: スクレイピングや自動化プロジェクトでプロキシを利用する際は、本ガイドを参考に複数のプロバイダーを比較検討し、要件に最適なサービスを選定しましょう。] (Source: Dev.to)</description>
+      <pubDate>Sun, 08 Nov 2026 12:09:45 +0000</pubDate>
     </item>
   </channel>
 </rss>
