@@ -5,41 +5,34 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 11:57:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 00:56:08 +0000</lastBuildDate>
     <item>
-      <title>Firecracker VM Escape: PwnEscape Part 2</title>
-      <link>https://pwn.ai/blog/firecracker-escape</link>
-      <guid isPermaLink="false">https://pwn.ai/blog/firecracker-escape</guid>
-      <description>[Score: 95] FirecrackerマイクロVMからのエスケープに成功し、ホスト上でroot権限でのコード実行が達成されました。 / KVMからの復帰時にレジスタの保存方法を変更し、任意のコードを実行させることでエスケープを実現しています。 / この脆弱性はCVE-2026-99999として示されており、Firecrackerのセキュリティモデルに深刻な影響を与えます。 [実務示唆: Firecrackerを使用しているシステムでは、CVE-2026-99999に対するパッチ適用状況を確認し、速やかにセキュリティアップデートを適用することを強く推奨します。] [GitHub: firecracker-microvm/firecracker] (Source: Hacker News)</description>
-      <pubDate>Fri, 06 Nov 2026 19:33:38 +0000</pubDate>
+      <title>Cloudflare Zero Wire × GitHub Actions × Claude で公開サーバーの脆弱性チェックを自動化</title>
+      <link>https://zenn.dev/tomipetit/articles/zero-wire-github-actions</link>
+      <guid isPermaLink="false">https://zenn.dev/tomipetit/articles/zero-wire-github-actions</guid>
+      <description>[Score: 100] Cloudflare Zero WireとGitHub Actions、Claudeを連携させ、公開サーバーの脆弱性チェックを自動化する仕組みが紹介されています。 / Zero Wireが提供する「外向きのソフトウェアの重大なCVE」に特化した脆弱性情報をClaudeで分析し、サーバーへの影響を判定します。 / SSHでサーバーのインベントリ情報を収集し、Node.jsのバージョン取得など、非対話シェルでのハマりどころとその解決策も解説されています。 [実務示唆: 公開サーバーの脆弱性管理を効率化するため、Cloudflare Zero WireとGitHub Actions、LLMを組み合わせた自動チェックシステムを構築し、日々の運用に組み込むことを推奨します。] (Source: Zenn)</description>
+      <pubDate>Sat, 07 Nov 2026 06:44:47 +0000</pubDate>
     </item>
     <item>
-      <title>GMO 管理者が全情報アクセス可能 リスク指摘も十分対策されず</title>
-      <link>https://news.web.nhk/newsweb/na/nd-20261107de72062</link>
-      <guid isPermaLink="false">https://news.web.nhk/newsweb/na/nd-20261107de72062</guid>
-      <description>[Score: 90] GMOのシステムにおいて、管理者が全ての情報にアクセスできる状態であり、そのリスクが指摘されています。 / しかし、十分な対策が講じられていない可能性があると報じられています。 / これは、企業における情報セキュリティと内部統制の重要性を浮き彫りにする問題です。 [実務示唆: システム管理者権限の厳格な管理とアクセスログの監視を徹底し、最小権限の原則に基づいたアクセス制御を再評価・強化することが不可欠です。] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 07 Nov 2026 03:30:33 +0000</pubDate>
+      <title>Claude Codeの「Don't Ask Again」が1,122件の公開GitHubファイルでパスワードを漏洩</title>
+      <link>https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</link>
+      <guid isPermaLink="false">https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</guid>
+      <description>[Score: 90] AIコーディングエージェント「Claude Code」の機能「Don't Ask Again」が、GitHub上の公開ファイルから機密情報を漏洩させていることが判明しました。 / 具体的には、1,122件の公開GitHubファイルでパスワードなどの秘密情報が露出しているとのことです。 / これは、AIエージェントが意図せず開発者の機密情報を公開してしまうリスクを示しています。 [実務示唆: AIコーディングエージェント利用時は、機密情報が意図せず公開されないよう、厳格なセキュリティレビューとアクセス制御を徹底する。] (Source: Hacker News)</description>
+      <pubDate>Sat, 07 Nov 2026 20:45:32 +0000</pubDate>
     </item>
     <item>
-      <title>そろそろ共通鍵暗号・公開鍵暗号についてちゃんと理解する</title>
-      <link>https://qiita.com/tomo-ryo/items/7cbf2881a9c8c8cf3656?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/tomo-ryo/items/7cbf2881a9c8c8cf3656?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] 共通鍵暗号方式と公開鍵暗号方式の基本から、それぞれの課題と解決策を体系的に解説しています。 / 鍵配送問題、ハイブリッド暗号方式、中間者攻撃、デジタル署名、電子証明書といった関連技術を順を追って説明。 / 最終的に、これら全てを組み合わせた実例としてTLSの仕組みに触れ、暗号技術全体の理解を深めることを目的としています。 [実務示唆: 暗号技術の基本原理と課題、そしてそれらを解決する技術（ハイブリッド暗号、デジタル署名、電子証明書）を理解し、TLSなどの実用的なセキュリティプロトコルの仕組みを把握しましょう。] (Source: Qiita)</description>
-      <pubDate>Wed, 04 Nov 2026 00:40:41 +0000</pubDate>
+      <title>Show HN: Coldframe、スーパーマーケットの冷蔵庫コントローラーを装うハニーポット</title>
+      <link>https://github.com/hedgerow-dev/coldframe</link>
+      <guid isPermaLink="false">https://github.com/hedgerow-dev/coldframe</guid>
+      <description>[Score: 90] Coldframeは、スーパーマーケットの冷蔵庫コントローラーを模倣したハニーポットです。 / デフォルトパスワードや未パッチのファームウェアを狙う攻撃者を誘引し、接続情報、試行パスワード、エクスプロイトを記録します。 / DanfossとDixellの2つの実在するコントローラーのペルソナを再現し、攻撃者に偽のダッシュボードを提供します。 [実務示唆: IoTデバイスのセキュリティ対策として、Coldframeのようなハニーポットを導入し、攻撃者の手口を分析することで、実際のシステム防御戦略を強化するのに役立ちます。] [GitHub: hedgerow-dev/coldframe] (Source: Hacker News)</description>
+      <pubDate>Sat, 07 Nov 2026 17:27:30 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeに.envを貼り付ける代わりに、dotvaultサービス・トークンを1つ与える</title>
-      <link>https://dev.to/uehara/pasting-env-into-claude-code-give-the-agent-one-dotvault-service-token-instead-1fii</link>
-      <guid isPermaLink="false">https://dev.to/uehara/pasting-env-into-claude-code-give-the-agent-one-dotvault-service-token-instead-1fii</guid>
-      <description>[Score: 85] 本記事は、AIエージェントに機密情報（.envファイル）を安全に渡すためのdotvaultサービス・トークンの利用方法について解説しています。 / Claude Codeにプロジェクトと環境に限定されたdotvaultサービス・トークンのみを与え、.envファイルを直接渡すことなく機密情報のインポートと利用を成功させました。 / トークンを失効させるとエージェントが認証失敗することを検証し、AIエージェントとの安全なシークレット管理の重要性を示しています。 [実務示唆: AIエージェントに機密情報を扱うタスクを任せる際は、直接.envファイルを渡すのではなく、dotvaultのような専用のシークレット管理ツールを活用し、最小権限のサービス・トークンを使用することでセキュリティリスクを低減しましょう。] (Source: Dev.to)</description>
-      <pubDate>Sat, 07 Nov 2026 01:02:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>すべてのMacには（文書化されていない）家族分類器が搭載されている</title>
-      <link>https://8rank.ai/game/apple-intelligence-personal-knowledge-graph</link>
-      <guid isPermaLink="false">https://8rank.ai/game/apple-intelligence-personal-knowledge-graph</guid>
-      <description>[Score: 85] macOS 13以降のすべてのMacには、ユーザーとその周囲の人々に関する詳細な個人情報グラフを構築するデーモンが搭載されています。 / このシステムは、連絡先、カレンダー、写真、メッセージ、位置情報など、デバイス上のほぼすべてのデータを相互参照して機能します。 / 構築されたグラフはクエリ可能なストアとして保持され、LLMが情報を取得するために利用される可能性があります。 [実務示唆: macOS 13以降のMacユーザーは、プライバシー設定を見直し、個人データがどのように利用されているかを確認することを推奨します。] (Source: Hacker News)</description>
-      <pubDate>Sat, 07 Nov 2026 09:46:03 +0000</pubDate>
+      <title>米国情報機関、Nvidia CEOジェンスン・フアンがハニートラップ作戦で中国のスパイと関係を持ったと見ている</title>
+      <link>https://www.reddit.com/r/technology/comments/1xqbulk/us_intelligence_believes_nvidia_ceo_jensen_huang/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xqbulk/us_intelligence_believes_nvidia_ceo_jensen_huang/</guid>
+      <description>[Score: 85] 米国情報機関が、Nvidia CEOジェンスン・フアン氏が中国のスパイによるハニートラップ作戦に関与したと疑っていると報じられました。 / この疑惑は、Nvidiaの企業イメージや米中間の技術競争に大きな影響を与える可能性があります。 / 半導体業界のトップ企業CEOに関するスパイ疑惑は、地政学的リスクの深刻さを示しています。 [実務示唆: 重要技術企業の幹部は、個人情報や行動が国家レベルの監視対象となる可能性を認識し、セキュリティ意識を徹底する必要があります。] (Source: Reddit)</description>
+      <pubDate>Sat, 07 Nov 2026 17:27:57 +0000</pubDate>
     </item>
   </channel>
 </rss>
