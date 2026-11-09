@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 01:17:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 14:25:22 +0000</lastBuildDate>
     <item>
       <title>AWSから4.3億円の課金が...バグと思われる高額請求された際にまずすること</title>
       <link>https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610</link>
@@ -19,6 +19,13 @@
       <guid isPermaLink="false">https://qiita.com/songchong/items/41a88eb41845af761b19?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 95] AIがソフトウェア部品の脆弱性を発見するようになり、一つの部品の脆弱性が多くの製品に影響を及ぼすことが調査で明らかになりました。 / OpenSSLの脆弱性は20製品、SQLiteは16製品、PHPは11製品に影響する可能性があり、サプライチェーン全体のリスクが浮き彫りになっています。 / この問題に対処するため、SBOM（ソフトウェア部品表）の活用と、AIや脆弱性管理ツールによるコンポーネントレベルでの脆弱性管理が推奨されています。 [実務示唆: 自社製品のSBOMを導入・活用し、使用しているオープンソースコンポーネントの脆弱性情報をAIや自動化ツールで継続的に監視し、サプライチェーン全体のリスクを可視化・管理すること。] (Source: Qiita)</description>
       <pubDate>Sun, 08 Nov 2026 19:10:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>ShopifyのReact Native→ネイティブ移行を支える「Reflex」をSwiftとKotlinで試す</title>
+      <link>https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin</link>
+      <guid isPermaLink="false">https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin</guid>
+      <description>[Score: 95] ShopifyがReact NativeからSwift/Kotlinネイティブへの移行を進める中で生まれたモバイルアプリアーキテクチャ「Reflex」について解説しています。 / ReflexはMVVMをベースにロジックをUIから切り離し、TypeScriptで共通の振る舞いテストを書くことで、iOSとAndroid両プラットフォームの挙動を揃えることを目的としています。 / コーディングエージェントの進化がネイティブ移行の決め手となった背景も紹介されています。 [実務示唆: クロスプラットフォーム開発からネイティブ移行を検討している企業は、Reflexの設計思想を参考に、ロジックとUIの分離、共通テストによる品質保証の仕組みを導入し、開発効率と品質向上を図るべきです。] (Source: Zenn)</description>
+      <pubDate>Mon, 09 Nov 2026 01:38:40 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -61,6 +68,34 @@
       <guid isPermaLink="false">https://dev.to/joshuaer/when-your-data-breaks-on-aws-ha-dr-part-2-rto-rpo-point-in-time-recovery-and-choosing-a-dr-49g3</guid>
       <description>[Score: 90] AWS環境でのデータ破損に備え、RPO（Recovery Point Objective）とRTO（Recovery Time Objective）の重要性を解説しています。 / RPOは許容できるデータ損失量、RTOは許容できるダウンタイムを指し、これらはビジネス要件に基づいて設定されます。 / これらの指標を基に、ポイントインタイムリカバリや適切な災害復旧（DR）戦略を選択する必要があることを強調しています。 [実務示唆: AWS環境でシステムを構築する際は、ビジネス要件に基づきRPOとRTOを明確に定義し、それに応じたDR戦略とポイントインタイムリカバリを設計・実装すべきです。] (Source: Dev.to)</description>
       <pubDate>Mon, 09 Nov 2026 01:03:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>LLMアプリケーションのプロンプトをどこで管理するか</title>
+      <link>https://zenn.dev/painter/articles/663816c3195cec</link>
+      <guid isPermaLink="false">https://zenn.dev/painter/articles/663816c3195cec</guid>
+      <description>[Score: 90] LLMアプリケーションの本番運用において、プロンプトをコードと共にリポジトリで管理するか、Langfuseのようなプロンプト管理ツールで管理するかの選択肢を比較しています。 / OpenAIがダッシュボードでのプロンプト管理サービスを終了し、コードでの管理を推奨している背景も紹介されています。 / プロンプトとコードの密結合性や、変更時の整合性維持の重要性について、具体的な例を挙げて解説しています。 [実務示唆: LLMアプリケーション開発者は、プロンプト管理の戦略を早期に決定し、プロンプトとコードの密結合度に応じて、リポジトリ管理か専用ツール利用かを検討し、バージョン管理とデプロイフローを確立すべきです。] (Source: Zenn)</description>
+      <pubDate>Mon, 09 Nov 2026 03:11:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIエージェントに自分の開発環境を作らせ続けた2か月</title>
+      <link>https://zenn.dev/otar/articles/switchboard-own-dev-environment</link>
+      <guid isPermaLink="false">https://zenn.dev/otar/articles/switchboard-own-dev-environment</guid>
+      <description>[Score: 90] 筆者が2ヶ月間、AIエージェント（Claude CodeとCodex）に自身の開発環境「Switchboard」を構築・改善させ続けた経験を共有しています。 / AIエージェントがコードの大部分を書き、要望からマージまでを自動で進める仕組みを構築し、開発コストと修正コストの削減に成功しています。 / コミット数やPR数、PBIのクローズ時間など、具体的な開発実績の数字も公開されています。 [実務示唆: 開発者は、AIエージェントを活用して自身の開発環境を自動化・最適化する可能性を探り、ルーティンワークや環境構築のコスト削減に繋がるツールやスクリプトをAIに作成させることを検討すべきです。] [GitHub: otar/switchboard] (Source: Zenn)</description>
+      <pubDate>Sun, 08 Nov 2026 21:41:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>東京リージョンで使っていてもバージニア北部に依存しているもの</title>
+      <link>https://qiita.com/yama3133/items/5416c243e14a5406dd6f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yama3133/items/5416c243e14a5406dd6f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AWSの東京リージョンでシステムを運用していても、一部のサービスはus-east-1（バージニア北部）にコントロールプレーンが依存していることが判明しました。 / 2025年10月20日のus-east-1での大規模障害が東京リージョンにも影響を与えた原因は、このグローバルサービスのコントロールプレーンの配置にあります。 / 記事では、AWSの公式ドキュメントと障害報告に基づき、us-east-1にコントロールプレーンがあるサービスや、us-east-1でしか提供されていないサービスが具体的に整理されています。 [実務示唆: AWS利用者は、東京リージョン利用時でもus-east-1に依存するサービスを把握し、障害発生時の影響範囲を考慮したDR戦略を検討すべきです。] (Source: Qiita)</description>
+      <pubDate>Fri, 06 Nov 2026 13:18:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>ソフトウェア産業が消滅する日──小さなローカルAIが暴く「プログラムを売る」という商売の終焉</title>
+      <link>https://wirelesswire.jp/2026/11/94903/</link>
+      <guid isPermaLink="false">https://wirelesswire.jp/2026/11/94903/</guid>
+      <description>[Score: 90] 小さなローカルLLM「mightyCode」がApple Silicon Mac上で動作し、Claude CodeのAPIをローカルLLM向けに変換することで、外部APIに依存しないプログラミングエージェントを実現しました。 / これにより、プログラムの読み書き、コマンド実行、テスト、修正といった一連の作業がローカルで完結し、利用料金や時間制限なしで試行錯誤が可能になります。 / NVIDIAの「You don’t need long context」論文に基づく仕組みも取り入れられており、ソフトウェア産業のビジネスモデルに大きな変革をもたらす可能性が示唆されています。 [実務示唆: ローカルLLMを活用した開発環境の構築を検討し、外部API依存を減らすことでコスト削減と開発効率向上を図るべきです。] [GitHub: shi3z/mightyCode] (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 09 Nov 2026 03:53:21 +0000</pubDate>
     </item>
     <item>
       <title>SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話</title>
@@ -110,41 +145,6 @@
       <guid isPermaLink="false">https://www.itmedia.co.jp/aiplus/article/2611/09/2000002916/</guid>
       <description>[Score: 85] 都内のクリニックが患者情報を外部に送らないローカルLLMを導入し、話題となっています。 / 院長がMac Studioで自作した予約システムやVLMによる問診票処理など、AIを多岐にわたって活用。 / これにより、医療情報のセキュリティを確保しつつ、業務効率化を実現しています。 [実務示唆: 機微な情報を扱うシステムでは、ローカルLLMやVLMの導入を検討し、セキュリティと効率化を両立させる方法を模索すべきです。] (Source: はてなブックマーク)</description>
       <pubDate>Sun, 08 Nov 2026 23:17:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>マージンレイヤー — あるいは、「合格」は「失敗に程遠い」と同じではない</title>
-      <link>https://dev.to/goodpa/the-margin-layer-or-it-passed-is-not-the-same-as-it-was-nowhere-near-failing-462k</link>
-      <guid isPermaLink="false">https://dev.to/goodpa/the-margin-layer-or-it-passed-is-not-the-same-as-it-was-nowhere-near-failing-462k</guid>
-      <description>[Score: 85] システムが「合格」と報告されていても、その裏で性能が限界に近づいている可能性があることを指摘しています。 / テストやジョブの実行結果が「合格/不合格」の二値でしか評価されない場合、システムが許容範囲内であっても、その余裕（マージン）がどれだけ残っているかが見えなくなります。 / マージンレイヤーとは、システムが停止するまでの距離を記録し、その余裕を数値化する実践であり、これにより潜在的な問題を早期に発見し、対応できるようになります。 [実務示唆: システム監視において、単なる合否だけでなく、性能マージンを具体的な単位で計測・記録し、潜在的なボトルネックを早期に特定する仕組みを導入することを推奨します。] (Source: Dev.to)</description>
-      <pubDate>Mon, 09 Nov 2026 01:02:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>【公式】Pyxel 3.0リリース！世界初（？）レトロ3Dゲームエンジン機能を搭載！</title>
-      <link>https://qiita.com/kitao/items/af92619297d5563f2a0e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kitao/items/af92619297d5563f2a0e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Python向けレトロゲームエンジンPyxelがバージョン3.0をリリースし、レトロ3Dゲームエンジン機能「Pyxel Cube」を追加しました。 / Pyxel Cubeは、PlayStation 2時代のローポリゴン3Dを再現し、従来の2Dコードと共存して3D機能を利用できます。 / ノードツリー構造で3D空間のオブジェクトを組み立て、基本16色、半透明なしといった「不自由さ」を特徴としています。 [実務示唆: Pythonで手軽にレトロゲーム開発をしたいエンジニアは、Pyxel 3.0のPyxel Cubeを試すことで、レトロな雰囲気の3Dゲーム制作に挑戦し、新しい表現の可能性を探ることができます。] [GitHub: kitao/pyxel] (Source: Qiita)</description>
-      <pubDate>Sat, 07 Nov 2026 09:11:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>宣言的なドラッグ</title>
-      <link>https://declarative-dragging.github.io/</link>
-      <guid isPermaLink="false">https://declarative-dragging.github.io/</guid>
-      <description>[Score: 80] 本記事は、ドラッグ＆ドロップ操作をより簡単に実装するための「宣言的なドラッグ」という新しいアプローチを提案しています。 / 従来のドラッグ実装が複雑な幾何学、フィードバック、アニメーション処理を必要とするのに対し、この手法では要素が到達しうる未来の状態を宣言するだけで済みます。 / システムがこれらの状態を推測的にレンダリングし、スムーズで応答性の高いドラッグ＆ドロップインタラクションを自動生成します。 [実務示唆: 複雑なドラッグ＆ドロップ機能を実装する際は、宣言的なアプローチを検討し、UI開発の効率化とコードの簡素化を図るべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 04 Nov 2026 17:05:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>Arnisは地球上のあらゆる場所をMinecraftの世界に変える</title>
-      <link>https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/</guid>
-      <description>[Score: 78] Arnisは、OpenStreetMapなどの現実世界のデータを利用して、地球上のあらゆる場所をMinecraftの世界に変換するオープンソースプロジェクトです。 / 開発者のLouis Erbkamm氏が2022年に開始し、GitHubから90万回近くダウンロードされ、約70人のコントリビューターがいます。 / 地理空間データとゲームを組み合わせることで、ユーザーは現実の場所をMinecraft内で自由に探索できるようになります。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 03 Nov 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>MCP仕様を完全にサポートしたMCP公式のRuby SDKが登場。「MCP SDK Tier 1」に到達と</title>
-      <link>https://www.publickey1.jp/blog/26/mcpmcpruby_sdkmcp_sdk_tier_1.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/mcpmcpruby_sdkmcp_sdk_tier_1.html</guid>
-      <description>[Score: 78] Agentic AI Foundation (AAIF) が、MCP（Model Context Protocol）公式のRuby SDKが「MCP SDK Tier 1」に到達したことを発表しました。 / これにより、Ruby開発者はMCPの最新機能を完全に利用できるようになり、本番環境でのアプリケーション開発が安心して行えます。 / RubyはTypeScript、Python、C#、Go、Rustに続き、Tier 1対応言語となりました。 [実務示唆: RubyでAIエージェント開発を行うエンジニアは、MCP SDK Tier 1の登場により、より安定した環境で最新のMCP機能を活用できるようになります。] (Source: Publickey)</description>
-      <pubDate>Sun, 08 Nov 2026 15:12:29 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 01:17:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 14:25:22 +0000</lastBuildDate>
     <item>
       <title>AWSから4.3億円の課金が...バグと思われる高額請求された際にまずすること</title>
       <link>https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610</link>
@@ -26,6 +26,13 @@
       <guid isPermaLink="false">https://dev.to/joshuaer/when-your-data-breaks-on-aws-ha-dr-part-2-rto-rpo-point-in-time-recovery-and-choosing-a-dr-49g3</guid>
       <description>[Score: 90] AWS環境でのデータ破損に備え、RPO（Recovery Point Objective）とRTO（Recovery Time Objective）の重要性を解説しています。 / RPOは許容できるデータ損失量、RTOは許容できるダウンタイムを指し、これらはビジネス要件に基づいて設定されます。 / これらの指標を基に、ポイントインタイムリカバリや適切な災害復旧（DR）戦略を選択する必要があることを強調しています。 [実務示唆: AWS環境でシステムを構築する際は、ビジネス要件に基づきRPOとRTOを明確に定義し、それに応じたDR戦略とポイントインタイムリカバリを設計・実装すべきです。] (Source: Dev.to)</description>
       <pubDate>Mon, 09 Nov 2026 01:03:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>東京リージョンで使っていてもバージニア北部に依存しているもの</title>
+      <link>https://qiita.com/yama3133/items/5416c243e14a5406dd6f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yama3133/items/5416c243e14a5406dd6f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AWSの東京リージョンでシステムを運用していても、一部のサービスはus-east-1（バージニア北部）にコントロールプレーンが依存していることが判明しました。 / 2025年10月20日のus-east-1での大規模障害が東京リージョンにも影響を与えた原因は、このグローバルサービスのコントロールプレーンの配置にあります。 / 記事では、AWSの公式ドキュメントと障害報告に基づき、us-east-1にコントロールプレーンがあるサービスや、us-east-1でしか提供されていないサービスが具体的に整理されています。 [実務示唆: AWS利用者は、東京リージョン利用時でもus-east-1に依存するサービスを把握し、障害発生時の影響範囲を考慮したDR戦略を検討すべきです。] (Source: Qiita)</description>
+      <pubDate>Fri, 06 Nov 2026 13:18:11 +0000</pubDate>
     </item>
     <item>
       <title>SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話</title>
@@ -63,6 +70,13 @@
       <pubDate>Mon, 09 Nov 2026 01:02:14 +0000</pubDate>
     </item>
     <item>
+      <title>KetchUp – RustとWebGPUで構築されたオープンソースのSketchUp代替品</title>
+      <link>https://ketchup3d.github.io/app/</link>
+      <guid isPermaLink="false">https://ketchup3d.github.io/app/</guid>
+      <description>[Score: 85] KetchUpは、RustとWebGPUで開発された無料のオープンソース3Dモデリングアプリケーションです。 / 主に木工や家具デザイン向けに設計されており、Windows、macOS、Linux、デスクトップブラウザで利用できます。 / SketchUpのジオメトリをインポートしたり、OBJ形式でエクスポートしたりする機能も備えています。 [実務示唆: 3Dモデリングツールを探している木工家やDIY愛好家は、KetchUpを試用し、その機能と使いやすさを評価してプロジェクトに活用することを推奨します。] [GitHub: ketchup3d/app] (Source: Hacker News)</description>
+      <pubDate>Sun, 08 Nov 2026 22:35:35 +0000</pubDate>
+    </item>
+    <item>
       <title>宣言的なドラッグ</title>
       <link>https://declarative-dragging.github.io/</link>
       <guid isPermaLink="false">https://declarative-dragging.github.io/</guid>
@@ -75,6 +89,27 @@
       <guid isPermaLink="false">https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</guid>
       <description>[Score: 75] GitHubは、リポジトリの概要ページにACCESSIBILITY.mdファイルを表示する機能を追加しました。 / これにより、プロジェクトのアクセシビリティ目標、貢献者の期待、既知の制限などを一元的に説明できるようになります。 / ACCESSIBILITY.mdファイルは、リポジトリのルート、.github/ディレクトリ、またはdocs/ディレクトリに配置でき、組織の.github/リポジトリから継承することも可能です。 [実務示唆: 自身のGitHubリポジトリにACCESSIBILITY.mdファイルを追加し、プロジェクトのアクセシビリティに関する情報を明確にすることで、より多くのユーザーと貢献者にとって利用しやすい環境を整備すること。] [GitHub: github/docs] (Source: GitHub Blog)</description>
       <pubDate>Thu, 05 Nov 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Signature Makerを開発しました：署名を入力、描画、アップロードしてきれいなファイルを保存</title>
+      <link>https://dev.to/pyxl/we-built-signature-maker-type-draw-or-upload-a-signature-and-save-a-clean-file-3bb6</link>
+      <guid isPermaLink="false">https://dev.to/pyxl/we-built-signature-maker-type-draw-or-upload-a-signature-and-save-a-clean-file-3bb6</guid>
+      <description>[Score: 70] Signature Makerは、手書き署名をデジタル化し、透過PNG、JPG、SVG形式で出力する無料のオンラインツールです。 / アカウント登録やウォーターマークなしで、ブラウザ内で全ての処理が完結するため、プライバシーが保護されます。 / Next.jsとVercelで構築されており、ファイルサイズ調整や自然な手書き効果などの機能を提供します。 [実務示唆: 急な署名ファイル作成ニーズに対応できる便利なツールとして、Signature Makerをブックマークし、必要に応じて活用を検討すると良いでしょう。] (Source: Dev.to)</description>
+      <pubDate>Mon, 09 Nov 2026 14:22:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>VM/370 CEマシンでできる楽しいこと – 大型コンピューターで遊ぶ</title>
+      <link>https://rbanffy.github.io/fun-with-big-computers/fun-with-vm370/</link>
+      <guid isPermaLink="false">https://rbanffy.github.io/fun-with-big-computers/fun-with-vm370/</guid>
+      <description>[Score: 65] この記事は、VM/370 Community Edition (CE) を使って遊ぶ方法について解説しています。 / VM/370 CEは、IBMがライセンス制限なしでリリースしたVM/370の最終版に、多くの改善と修正が加えられたものです。 / DockerやPodmanを使って簡単に環境を構築し、古いメインフレームOSの機能を体験できることが示されています。 [実務示唆: Dockerコマンド一つでVM/370 CE環境を構築し、メインフレームOSの仕組みや歴史的背景を体験することで、現代のOSとの違いや進化を理解する良い機会となります。] [GitHub: rbanffy/vm370ce] (Source: Hacker News)</description>
+      <pubDate>Mon, 09 Nov 2026 10:11:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>タグ: #cloudcomputing #iaas #aws #devops #beginners #technology</title>
+      <link>https://dev.to/nahsang_lilian_8af99996c9/tags-cloudcomputing-iaas-aws-devops-beginners-technology-1kb4</link>
+      <guid isPermaLink="false">https://dev.to/nahsang_lilian_8af99996c9/tags-cloudcomputing-iaas-aws-devops-beginners-technology-1kb4</guid>
+      <description>[Score: 65] Infrastructure as a Service (IaaS)は、物理サーバーの購入・維持ではなく、インターネット経由で仮想化されたコンピューティングリソースをレンタルするクラウドコンピューティングモデルです。 / IaaSを利用することで、サーバー、ストレージ、ネットワークなどのインフラを柔軟に調達でき、運用コストと時間を削減し、スケーラビリティを向上させることができます。 / Amazon Web Services (AWS) のElastic Compute Cloud (EC2) は、IaaSの代表的なサービスであり、その仕組みや利点、課題について解説されています。 [実務示唆: クラウド移行を検討している企業や開発者は、IaaSの概念とAWS EC2の具体的な利用方法を理解し、自社のインフラ要件に合わせた最適なクラウド戦略を策定すべきです。] (Source: Dev.to)</description>
+      <pubDate>Mon, 09 Nov 2026 14:22:50 +0000</pubDate>
     </item>
   </channel>
 </rss>

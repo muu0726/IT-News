@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 01:17:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 14:25:22 +0000</lastBuildDate>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
       <link>https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</link>
@@ -19,6 +19,27 @@
       <guid isPermaLink="false">https://www.techno-edge.net/article/2026/11/09/5686.html</guid>
       <description>[Score: 90] 「Craft Anything」は、既存のWebサイト、アプリ、ゲームの仕組みを解析し、AIが類似バージョンを生成するオープンソースツールです。 / コード非公開の対象でも、スクリーンショットやレイアウト情報から「外から観察」または内部コードまで読み取る「中まで解析」の2つのモードで動作します。 / 外部AIエージェント（Claude Codeなど）と連携し、自動でプロジェクトを生成・修正し、オリジナルに近づくまで手直しを重ねる点が特徴です。 [実務示唆: 開発者は、Craft Anythingのようなツールを活用して、既存のUI/UXを参考に新しいアプリケーションのプロトタイプを迅速に作成したり、レガシーシステムの再構築のヒントを得たりすることを検討すべきです。] [GitHub: seamless-ai/craft-anything] (Source: はてなブックマーク)</description>
       <pubDate>Sun, 08 Nov 2026 22:49:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>LLMアプリケーションのプロンプトをどこで管理するか</title>
+      <link>https://zenn.dev/painter/articles/663816c3195cec</link>
+      <guid isPermaLink="false">https://zenn.dev/painter/articles/663816c3195cec</guid>
+      <description>[Score: 90] LLMアプリケーションの本番運用において、プロンプトをコードと共にリポジトリで管理するか、Langfuseのようなプロンプト管理ツールで管理するかの選択肢を比較しています。 / OpenAIがダッシュボードでのプロンプト管理サービスを終了し、コードでの管理を推奨している背景も紹介されています。 / プロンプトとコードの密結合性や、変更時の整合性維持の重要性について、具体的な例を挙げて解説しています。 [実務示唆: LLMアプリケーション開発者は、プロンプト管理の戦略を早期に決定し、プロンプトとコードの密結合度に応じて、リポジトリ管理か専用ツール利用かを検討し、バージョン管理とデプロイフローを確立すべきです。] (Source: Zenn)</description>
+      <pubDate>Mon, 09 Nov 2026 03:11:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIエージェントに自分の開発環境を作らせ続けた2か月</title>
+      <link>https://zenn.dev/otar/articles/switchboard-own-dev-environment</link>
+      <guid isPermaLink="false">https://zenn.dev/otar/articles/switchboard-own-dev-environment</guid>
+      <description>[Score: 90] 筆者が2ヶ月間、AIエージェント（Claude CodeとCodex）に自身の開発環境「Switchboard」を構築・改善させ続けた経験を共有しています。 / AIエージェントがコードの大部分を書き、要望からマージまでを自動で進める仕組みを構築し、開発コストと修正コストの削減に成功しています。 / コミット数やPR数、PBIのクローズ時間など、具体的な開発実績の数字も公開されています。 [実務示唆: 開発者は、AIエージェントを活用して自身の開発環境を自動化・最適化する可能性を探り、ルーティンワークや環境構築のコスト削減に繋がるツールやスクリプトをAIに作成させることを検討すべきです。] [GitHub: otar/switchboard] (Source: Zenn)</description>
+      <pubDate>Sun, 08 Nov 2026 21:41:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>ソフトウェア産業が消滅する日──小さなローカルAIが暴く「プログラムを売る」という商売の終焉</title>
+      <link>https://wirelesswire.jp/2026/11/94903/</link>
+      <guid isPermaLink="false">https://wirelesswire.jp/2026/11/94903/</guid>
+      <description>[Score: 90] 小さなローカルLLM「mightyCode」がApple Silicon Mac上で動作し、Claude CodeのAPIをローカルLLM向けに変換することで、外部APIに依存しないプログラミングエージェントを実現しました。 / これにより、プログラムの読み書き、コマンド実行、テスト、修正といった一連の作業がローカルで完結し、利用料金や時間制限なしで試行錯誤が可能になります。 / NVIDIAの「You don’t need long context」論文に基づく仕組みも取り入れられており、ソフトウェア産業のビジネスモデルに大きな変革をもたらす可能性が示唆されています。 [実務示唆: ローカルLLMを活用した開発環境の構築を検討し、外部API依存を減らすことでコスト削減と開発効率向上を図るべきです。] [GitHub: shi3z/mightyCode] (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 09 Nov 2026 03:53:21 +0000</pubDate>
     </item>
     <item>
       <title>自宅サーバーにClaude Codeを常駐させ、スマホから24時間指示を出す（Remote Control＋systemd）</title>
@@ -42,11 +63,32 @@
       <pubDate>Sun, 08 Nov 2026 23:17:44 +0000</pubDate>
     </item>
     <item>
+      <title>Herdr.app と hc の上で Claude Code の司令塔を回している</title>
+      <link>https://zenn.dev/hoshinotsuyoshi/articles/c994c29833f36c</link>
+      <guid isPermaLink="false">https://zenn.dev/hoshinotsuyoshi/articles/c994c29833f36c</guid>
+      <description>[Score: 85] Herdr.appとhc（herdr-core）上でClaude Codeを「司令塔」として運用する個人のメモです。 / 筆者は複数のAIエージェントと直接やり取りする手間を省くため、司令塔となるClaude Code 1体とだけ会話し、他のエージェントの管理を司令塔に任せています。 / 司令塔は自身では手を動かさず、子エージェントにタスクを委任し、その報告を要約する役割を担っています。 [実務示唆: 複数のAIエージェントを扱う開発者は、司令塔となるAIエージェントを導入し、タスクの委任と報告の集約を行うことで、自身の管理負担を軽減し、より効率的なAI活用を目指すべきです。] (Source: Zenn)</description>
+      <pubDate>Sun, 08 Nov 2026 16:00:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>NormGym: 社会的相互作用を通じた規範的コンピテンシーの評価</title>
+      <link>https://arxiv.org/abs/2611.08613</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.08613</guid>
+      <description>[Score: 80] 本論文は、社会的相互作用を通じてAIの規範的コンピテンシーを評価するためのフレームワーク「NormGym」を提案しています。 / 規範的コンピテンシーとは、AIが社会的なルールや倫理を理解し、適切に行動する能力を指します。 / arXivLabsは、研究者が新しいarXiv機能を開発・共有するためのフレームワークを提供しています。 [実務示唆: AI倫理や安全性に関わる研究者は、NormGymのような評価フレームワークを活用し、AIが社会規範を遵守する能力を客観的に測定・改善するアプローチを検討すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 09 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Claude Codeに最初のターンより前に失敗したテストを渡すSessionStartフック</title>
       <link>https://dev.to/gabrielanhaia/a-sessionstart-hook-that-hands-claude-code-the-failing-tests-before-its-first-turn-3gl3</link>
       <guid isPermaLink="false">https://dev.to/gabrielanhaia/a-sessionstart-hook-that-hands-claude-code-the-failing-tests-before-its-first-turn-3gl3</guid>
       <description>[Score: 78] Claude CodeのようなAI開発アシスタントに、セッション開始時に失敗しているテストの情報を事前に渡すSessionStartフックの活用方法を紹介しています。 / これにより、AIがバグ修正に取り掛かる前に、どのテストが失敗しているかを把握するための時間とリソースの無駄を省くことができます。 / Pythonのpytestと標準ライブラリのみを使用し、高速なテストの失敗を抽出し、Claude Codeにコンテキストとして提供するスクリプトの例が示されています。 [実務示唆: AI開発アシスタント利用時、SessionStartフックを活用して失敗テスト情報を事前に渡し、AIのデバッグ効率を向上させるためのスクリプトを導入することを検討してください。] (Source: Dev.to)</description>
       <pubDate>Mon, 09 Nov 2026 01:01:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>多基準在庫分類のためのLLMベース特徴抽出</title>
+      <link>https://arxiv.org/abs/2611.08626</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.08626</guid>
+      <description>[Score: 78] 本論文は、大規模言語モデル（LLM）を用いた特徴抽出を多基準在庫分類に応用する研究です。 / LLMが持つ高度なテキスト理解能力を活用し、複雑な在庫データを効率的に分類する手法を提案しています。 / arXivLabsは、研究者が新しいarXiv機能を開発・共有するためのフレームワークを提供しています。 [実務示唆: サプライチェーンや在庫管理システムの開発者は、LLMを活用した特徴抽出を導入することで、多種多様な在庫アイテムの分類精度と効率を大幅に向上させる可能性を探るべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 09 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>周回遅れ？インフラエンジニア、今さら GitHub Copilot app を使い始める！？</title>

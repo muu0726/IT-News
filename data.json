@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T10:14:13.428049+09:00",
-  "total_count": 43,
-  "success_count": 37,
-  "error_count": 6,
+  "generated_at": "2026-11-09T23:24:09.236189+09:00",
+  "total_count": 74,
+  "success_count": 69,
+  "error_count": 5,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
     {
@@ -26,7 +26,7 @@
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 3
     },
     {
       "title": "部品の脆弱性は、どこまで広がるのか？ 主要 64 製品と 8 部品の依存関係をたどったら、OpenSSL は 20、SQLite は 16、PHP は 11 だった",
@@ -49,6 +49,28 @@
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "ShopifyのReact Native→ネイティブ移行を支える「Reflex」をSwiftとKotlinで試す",
+      "url": "https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin",
+      "source": "Zenn",
+      "published": "2026-11-09T01:38:40+00:00",
+      "reading_min": 18,
+      "summary": "ShopifyがReact NativeからSwift/Kotlinネイティブへの移行を進める中で生まれたモバイルアプリアーキテクチャ「Reflex」について解説しています。\nReflexはMVVMをベースにロジックをUIから切り離し、TypeScriptで共通の振る舞いテストを書くことで、iOSとAndroid両プラットフォームの挙動を揃えることを目的としています。\nコーディングエージェントの進化がネイティブ移行の決め手となった背景も紹介されています。",
+      "actionable_takeaway": "クロスプラットフォーム開発からネイティブ移行を検討している企業は、Reflexの設計思想を参考に、ロジックとUIの分離、共通テストによる品質保証の仕組みを導入し、開発効率と品質向上を図るべきです。",
+      "tags": [
+        "モバイル開発",
+        "アーキテクチャ",
+        "React Native"
+      ],
+      "category": "モバイル",
+      "score": 95,
+      "score_reason": "Shopifyという大手企業がReact Nativeからネイティブへ移行する際の具体的なアーキテクチャと課題解決策が提示されており、モバイル開発のトレンドと実務に与える影響が非常に大きいため、高いスコアを付けました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 3
     },
     {
       "title": "コード生成を超えて：エージェント指向エンジニアリング開発者ガイド",
@@ -121,7 +143,7 @@
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 2
     },
     {
       "title": "脆弱性の情報は間に合っている？ 英語は 2 時間以内、悪用は 4 割が 1 日以内、日本語は中央値 4.6 日後。悪用された 74 件を調べて分かった",
@@ -166,7 +188,7 @@
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 34
+      "hatena_count": 249
     },
     {
       "title": "AWSでデータが壊れたとき（HA & DR パート2）：RTO、RPO、ポイントインタイムリカバリ、DR戦略の選択",
@@ -190,6 +212,96 @@
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "LLMアプリケーションのプロンプトをどこで管理するか",
+      "url": "https://zenn.dev/painter/articles/663816c3195cec",
+      "source": "Zenn",
+      "published": "2026-11-09T03:11:23+00:00",
+      "reading_min": 8,
+      "summary": "LLMアプリケーションの本番運用において、プロンプトをコードと共にリポジトリで管理するか、Langfuseのようなプロンプト管理ツールで管理するかの選択肢を比較しています。\nOpenAIがダッシュボードでのプロンプト管理サービスを終了し、コードでの管理を推奨している背景も紹介されています。\nプロンプトとコードの密結合性や、変更時の整合性維持の重要性について、具体的な例を挙げて解説しています。",
+      "actionable_takeaway": "LLMアプリケーション開発者は、プロンプト管理の戦略を早期に決定し、プロンプトとコードの密結合度に応じて、リポジトリ管理か専用ツール利用かを検討し、バージョン管理とデプロイフローを確立すべきです。",
+      "tags": [
+        "LLM",
+        "プロンプトエンジニアリング",
+        "開発運用"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "LLMアプリケーション開発におけるプロンプト管理は実務上非常に重要な課題であり、具体的な管理パターンと考慮事項が詳細に解説されているため、実用性と業界への影響度を高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIエージェントに自分の開発環境を作らせ続けた2か月",
+      "url": "https://zenn.dev/otar/articles/switchboard-own-dev-environment",
+      "source": "Zenn",
+      "published": "2026-11-08T21:41:08+00:00",
+      "reading_min": 12,
+      "summary": "筆者が2ヶ月間、AIエージェント（Claude CodeとCodex）に自身の開発環境「Switchboard」を構築・改善させ続けた経験を共有しています。\nAIエージェントがコードの大部分を書き、要望からマージまでを自動で進める仕組みを構築し、開発コストと修正コストの削減に成功しています。\nコミット数やPR数、PBIのクローズ時間など、具体的な開発実績の数字も公開されています。",
+      "actionable_takeaway": "開発者は、AIエージェントを活用して自身の開発環境を自動化・最適化する可能性を探り、ルーティンワークや環境構築のコスト削減に繋がるツールやスクリプトをAIに作成させることを検討すべきです。",
+      "github_repo": "otar/switchboard",
+      "tags": [
+        "AIエージェント",
+        "開発環境",
+        "自動化"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIエージェントによる開発環境の自律的な構築・改善という先進的な取り組みであり、開発プロセスの未来を示す可能性を秘めているため、技術的新規性と実用性を高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "東京リージョンで使っていてもバージニア北部に依存しているもの",
+      "url": "https://qiita.com/yama3133/items/5416c243e14a5406dd6f?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-06T13:18:11+00:00",
+      "reading_min": 5,
+      "summary": "AWSの東京リージョンでシステムを運用していても、一部のサービスはus-east-1（バージニア北部）にコントロールプレーンが依存していることが判明しました。\n2025年10月20日のus-east-1での大規模障害が東京リージョンにも影響を与えた原因は、このグローバルサービスのコントロールプレーンの配置にあります。\n記事では、AWSの公式ドキュメントと障害報告に基づき、us-east-1にコントロールプレーンがあるサービスや、us-east-1でしか提供されていないサービスが具体的に整理されています。",
+      "actionable_takeaway": "AWS利用者は、東京リージョン利用時でもus-east-1に依存するサービスを把握し、障害発生時の影響範囲を考慮したDR戦略を検討すべきです。",
+      "tags": [
+        "AWS",
+        "クラウドインフラ",
+        "障害対策"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 90,
+      "score_reason": "AWSのリージョン依存性という、多くの企業にとって重要なインフラ設計上の盲点を指摘しており、実務への影響が大きいため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ソフトウェア産業が消滅する日──小さなローカルAIが暴く「プログラムを売る」という商売の終焉",
+      "url": "https://wirelesswire.jp/2026/11/94903/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-09T03:53:21+00:00",
+      "reading_min": 21,
+      "summary": "小さなローカルLLM「mightyCode」がApple Silicon Mac上で動作し、Claude CodeのAPIをローカルLLM向けに変換することで、外部APIに依存しないプログラミングエージェントを実現しました。\nこれにより、プログラムの読み書き、コマンド実行、テスト、修正といった一連の作業がローカルで完結し、利用料金や時間制限なしで試行錯誤が可能になります。\nNVIDIAの「You don’t need long context」論文に基づく仕組みも取り入れられており、ソフトウェア産業のビジネスモデルに大きな変革をもたらす可能性が示唆されています。",
+      "actionable_takeaway": "ローカルLLMを活用した開発環境の構築を検討し、外部API依存を減らすことでコスト削減と開発効率向上を図るべきです。",
+      "github_repo": "shi3z/mightyCode",
+      "tags": [
+        "ローカルLLM",
+        "AIエージェント",
+        "ソフトウェア開発"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "ローカルLLMによるプログラミングエージェントは、開発コスト削減とデータプライバシー保護に大きく貢献し、ソフトウェア産業のビジネスモデルを根本から変える可能性を秘めているため、非常に重要度が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 196
     },
     {
       "title": "SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話",
@@ -278,7 +390,7 @@
       "new_at": "2026-11-05T10:27:36.401297+09:00",
       "first_seen": "2026-11-05T10:27:36.401297+09:00",
       "is_hot": false,
-      "hatena_count": 72,
+      "hatena_count": 75,
       "is_prev_seen": true
     },
     {
@@ -323,7 +435,7 @@
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 119
+      "hatena_count": 226
     },
     {
       "title": "ローカルLLM利用のクリニックを受診してみた PCマニアの院長が自力で構築、その導入効果は？",
@@ -345,7 +457,7 @@
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 29
+      "hatena_count": 292
     },
     {
       "title": "マージンレイヤー — あるいは、「合格」は「失敗に程遠い」と同じではない",
@@ -366,6 +478,166 @@
       "analysis_status": "ok",
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "KetchUp – RustとWebGPUで構築されたオープンソースのSketchUp代替品",
+      "url": "https://ketchup3d.github.io/app/",
+      "source": "Hacker News",
+      "published": "2026-11-08T22:35:35+00:00",
+      "hn_score": 605,
+      "hn_comments": 181,
+      "reading_min": 2,
+      "summary": "KetchUpは、RustとWebGPUで開発された無料のオープンソース3Dモデリングアプリケーションです。\n主に木工や家具デザイン向けに設計されており、Windows、macOS、Linux、デスクトップブラウザで利用できます。\nSketchUpのジオメトリをインポートしたり、OBJ形式でエクスポートしたりする機能も備えています。",
+      "actionable_takeaway": "3Dモデリングツールを探している木工家やDIY愛好家は、KetchUpを試用し、その機能と使いやすさを評価してプロジェクトに活用することを推奨します。",
+      "github_repo": "ketchup3d/app",
+      "tags": [
+        "Rust",
+        "WebGPU",
+        "3Dモデリング"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 85,
+      "score_reason": "RustとWebGPUというモダンな技術スタックで構築されたオープンソースの3Dモデリングツールであり、Webベースでの利用可能性と将来性を高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T10:14:13.428049+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "mallocは何をしているのか？",
+      "url": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
+      "source": "Hacker News",
+      "published": "2026-11-09T11:31:05+00:00",
+      "hn_score": 49,
+      "hn_comments": 8,
+      "reading_min": 16,
+      "summary": "この記事は、C言語の`malloc`関数が内部でどのようにメモリを割り当てているかを詳細に解説しています。\n`malloc`がユーザー空間プログラムとして、カーネルのシステムコール（`brk`や`mmap`）を介してメモリを要求していることを説明しています。\n多数の小さなブロックを割り当てる際に、システムコールのコストを抑えるためにバックグラウンドでブックキーピングが行われていることを`strace`の出力例と共に示しています。",
+      "actionable_takeaway": "メモリ割り当ての仕組みを理解することで、プログラムのパフォーマンス最適化やメモリリークのデバッグに役立つため、`malloc`の内部動作を深く掘り下げて学習し、`strace`などのツールで挙動を観察することを推奨します。",
+      "tags": [
+        "C言語",
+        "メモリ管理",
+        "システムコール"
+      ],
+      "category": "プログラミング言語",
+      "score": 85,
+      "score_reason": "C言語の根幹であるメモリ管理の仕組みを深く解説しており、低レベルプログラミングの理解を深める上で非常に重要かつ実用的な情報であるため、高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Herdr.app と hc の上で Claude Code の司令塔を回している",
+      "url": "https://zenn.dev/hoshinotsuyoshi/articles/c994c29833f36c",
+      "source": "Zenn",
+      "published": "2026-11-08T16:00:51+00:00",
+      "reading_min": 2,
+      "summary": "Herdr.appとhc（herdr-core）上でClaude Codeを「司令塔」として運用する個人のメモです。\n筆者は複数のAIエージェントと直接やり取りする手間を省くため、司令塔となるClaude Code 1体とだけ会話し、他のエージェントの管理を司令塔に任せています。\n司令塔は自身では手を動かさず、子エージェントにタスクを委任し、その報告を要約する役割を担っています。",
+      "actionable_takeaway": "複数のAIエージェントを扱う開発者は、司令塔となるAIエージェントを導入し、タスクの委任と報告の集約を行うことで、自身の管理負担を軽減し、より効率的なAI活用を目指すべきです。",
+      "tags": [
+        "AIエージェント",
+        "開発ワークフロー",
+        "Claude Code"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIエージェントを効率的に活用するための具体的な運用方法（司令塔モデル）が示されており、実務におけるAIエージェントの導入・管理の参考になるため、実用性を高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 14
+    },
+    {
+      "title": "米下院共和党、Nvidia CEOに中国スパイ疑惑に関する回答を要求",
+      "url": "https://www.reddit.com/r/technology/comments/1xrpqpq/house_republicans_demand_answers_from_nvidia_ceo/",
+      "source": "Reddit",
+      "published": "2026-11-09T11:54:21+00:00",
+      "summary": "米下院共和党がNvidiaのCEOに対し、中国とのスパイ活動疑惑について説明を求めています。\nこれは、Nvidiaが中国政府や軍事関連企業との関係を深めていることへの懸念が背景にあると推測されます。\n米中間の技術覇権争いが激化する中、Nvidiaの事業戦略と地政学的リスクが注目されています。",
+      "actionable_takeaway": "Nvidia製品をサプライチェーンに持つ企業は、米中関係の動向とNvidiaの事業戦略変更リスクを注視し、代替案を検討する準備が必要です。",
+      "tags": [
+        "Nvidia",
+        "地政学",
+        "半導体"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 85,
+      "score_reason": "NvidiaはAI半導体市場のリーダーであり、米中関係の緊張はサプライチェーンや技術開発に大きな影響を与えるため、重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 1,
+      "topic_size": 4
+    },
+    {
+      "title": "「ITエンジニアの仕事を探しています」実務経験25年の50歳のエンジニアが書類選考を全く通過できずにXで求職活動した投稿が話題に「年齢足切りとAIのダブルパンチか」",
+      "url": "https://togetter.com/li/2768439",
+      "source": "はてなブックマーク",
+      "published": "2026-11-09T06:10:18+00:00",
+      "reading_min": 3,
+      "summary": "実務経験25年の50歳ITエンジニアが、書類選考を全く通過できない現状をX（旧Twitter）で訴え、大きな話題となっています。\n投稿では、年齢による足切りとAIによる選考のダブルパンチが原因ではないかとの推測がなされています。\nこの事例は、IT業界における中高年エンジニアのキャリアパスや、AIを活用した採用プロセスの課題を浮き彫りにしています。",
+      "actionable_takeaway": "中高年エンジニアは、最新技術の習得とGitHubでの実績公開、SNSでの積極的な情報発信を通じて、市場価値を可視化する戦略が重要です。",
+      "tags": [
+        "キャリア",
+        "転職",
+        "AI採用"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 85,
+      "score_reason": "IT業界における中高年エンジニアのキャリア問題とAI採用の課題は、多くのエンジニアにとって切実な問題であり、業界全体で考えるべきテーマであるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 167
+    },
+    {
+      "title": "サカナAIが27年秋にも上場へ スタートアップ国内最大級、生成AI初 - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUC067MH0W6A101C2000000/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-09T08:10:58+00:00",
+      "reading_min": 1,
+      "summary": "AI開発のSakana AI（サカナAI）が、2027年秋にも日米市場での新規株式公開（IPO）を準備していることが明らかになりました。\n計画通りに進めば、生成AI専業として国内初の上場となり、初値の時価総額はメルカリを超える国内スタートアップ過去最大級の案件となる可能性があります。\nIPOの助言役として米ゴールドマン・サックスを起用しており、今後の動向が注目されます。",
+      "actionable_takeaway": "生成AI分野の成長性を示す指標として、Sakana AIのIPO動向を注視し、関連技術や市場トレンドへの理解を深めるべきです。",
+      "tags": [
+        "生成AI",
+        "スタートアップ",
+        "IPO"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 85,
+      "score_reason": "国内初の生成AI専業スタートアップによる大規模IPOは、日本のAI産業の成熟度と将来性を測る上で極めて重要な指標となるため、高いスコアを付けました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 87
+    },
+    {
+      "title": "業界の誰もが今自問している問い",
+      "url": "https://dev.to/psznicx/these-are-questions-everyone-in-the-industry-are-asking-themselves-now-iij",
+      "source": "Dev.to",
+      "published": "2026-11-09T14:22:35+00:00",
+      "reading_min": 1,
+      "summary": "AIが自己を代替する時代において、私たちはどのような計画を持つべきか。\n新しい技術の導入には隠れた罠が存在する。\nこれらの問いは、現在のIT業界全体で議論されている重要なテーマである。",
+      "actionable_takeaway": "AI技術の導入を検討する際は、単なる効率化だけでなく、長期的なキャリアパスや組織戦略への影響を深く考察すべきである。",
+      "tags": [
+        "AI",
+        "キャリア",
+        "未来予測"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 85,
+      "score_reason": "AIによる自己代替という、IT業界全体に影響を与える本質的な問いを提起しており、今後の技術動向やキャリア形成を考える上で非常に重要であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -415,7 +687,72 @@
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 3
+    },
+    {
+      "title": "AMDがGPUドライバーのバグを認め、SSDの寿命を縮める連続書き込み問題を修正へ",
+      "url": "https://www.reddit.com/r/technology/comments/1xrrhg7/amd_admits_gpu_driver_bug_is_writing_data/",
+      "source": "Reddit",
+      "published": "2026-11-09T13:20:40+00:00",
+      "summary": "AMDがGPUドライバーのバグにより、SSDに連続的にデータが書き込まれ、寿命を縮めていることを認めました。\nRadeonユーザーからは、このバグによりSSDの健康状態が毎月1%ずつ低下しているとの報告があり、AMDは早急な修正を約束しています。\nこの問題は、GPUドライバーの不具合がハードウェアの寿命に直接影響を与える深刻なケースとして注目されています。",
+      "actionable_takeaway": "AMD GPUユーザーは、最新のドライバーアップデートを速やかに適用し、SSDの健康状態を定期的に監視してデータ損失リスクに備えるべきです。",
+      "tags": [
+        "AMD",
+        "GPUドライバー",
+        "SSD寿命"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 80,
+      "score_reason": "GPUドライバーのバグがSSDの寿命に直接影響するという具体的なハードウェア問題であり、多くのPCユーザーに影響を与えるため重要度が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "【速報】ニトリ 最大3762万件の会員情報が流出の可能性 今月6日不正アクセスを確認 客の氏名、住所、電話番号など流出か カード情報やパスワード含まれず（TBS NEWS DIG Powered by JNN） - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/ec14e72be9639e846f42978f9e81da07fdd05687",
+      "source": "はてなブックマーク",
+      "published": "2026-11-09T08:57:55+00:00",
+      "reading_min": 2,
+      "summary": "家具大手のニトリホールディングスが、第三者による不正アクセスを受け、最大3762万件の会員情報が流出した可能性があると発表しました。\n流出した可能性のある情報は、顧客の氏名、住所、電話番号などで、クレジットカード情報やパスワードは含まれていないとのことです。\nニトリは、会社を装った不審なメールや電話に注意するよう呼びかけています。",
+      "actionable_takeaway": "ニトリのサービスを利用しているユーザーは、不審なメールや電話に警戒し、個人情報の悪用リスクに備えるため、他のサービスでのパスワード使い回しを避けるべきです。",
+      "tags": [
+        "情報漏洩",
+        "サイバーセキュリティ",
+        "個人情報"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "大規模な個人情報漏洩は、多くのユーザーに直接的な影響を及ぼし、企業に対する信頼性にも関わるため、社会的な重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 72
+    },
+    {
+      "title": "NormGym: 社会的相互作用を通じた規範的コンピテンシーの評価",
+      "url": "https://arxiv.org/abs/2611.08613",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-09T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本論文は、社会的相互作用を通じてAIの規範的コンピテンシーを評価するためのフレームワーク「NormGym」を提案しています。\n規範的コンピテンシーとは、AIが社会的なルールや倫理を理解し、適切に行動する能力を指します。\narXivLabsは、研究者が新しいarXiv機能を開発・共有するためのフレームワークを提供しています。",
+      "actionable_takeaway": "AI倫理や安全性に関わる研究者は、NormGymのような評価フレームワークを活用し、AIが社会規範を遵守する能力を客観的に測定・改善するアプローチを検討すべきです。",
+      "tags": [
+        "AI倫理",
+        "強化学習",
+        "社会的AI"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AIの倫理的側面と社会的行動の評価という、今後のAI開発において非常に重要な課題に取り組む研究であり、その評価手法の提案は価値が高いと判断したため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "Arnisは地球上のあらゆる場所をMinecraftの世界に変える",
@@ -459,7 +796,7 @@
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 10
+      "hatena_count": 52
     },
     {
       "title": "Claude Codeに最初のターンより前に失敗したテストを渡すSessionStartフック",
@@ -480,6 +817,28 @@
       "analysis_status": "ok",
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "多基準在庫分類のためのLLMベース特徴抽出",
+      "url": "https://arxiv.org/abs/2611.08626",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-09T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本論文は、大規模言語モデル（LLM）を用いた特徴抽出を多基準在庫分類に応用する研究です。\nLLMが持つ高度なテキスト理解能力を活用し、複雑な在庫データを効率的に分類する手法を提案しています。\narXivLabsは、研究者が新しいarXiv機能を開発・共有するためのフレームワークを提供しています。",
+      "actionable_takeaway": "サプライチェーンや在庫管理システムの開発者は、LLMを活用した特徴抽出を導入することで、多種多様な在庫アイテムの分類精度と効率を大幅に向上させる可能性を探るべきです。",
+      "tags": [
+        "LLM",
+        "特徴抽出",
+        "在庫管理"
+      ],
+      "category": "AI・機械学習",
+      "score": 78,
+      "score_reason": "LLMの応用範囲をビジネスの具体的な課題である在庫管理に広げる研究であり、実務におけるAIの活用可能性を示す点で重要であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -596,7 +955,7 @@
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 41
+      "hatena_count": 100
     },
     {
       "title": "ターミナル用ライブラリ［Libghostty 1.0」リリース。Windows版マルチプレクサ「Rex」もまもなく登場予定",
@@ -618,7 +977,94 @@
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 12
+      "hatena_count": 41
+    },
+    {
+      "title": "Huawei、100%中国製PCを開発したと発表",
+      "url": "https://www.reddit.com/r/technology/comments/1xrn67u/huawei_says_its_made_a_100_percent_chinese_pc/",
+      "source": "Reddit",
+      "published": "2026-11-09T09:19:46+00:00",
+      "summary": "Huaweiが、部品からソフトウェアまで全てを中国製で構成したPCを開発したと発表しました。\nこれは、米国の制裁措置に対抗し、サプライチェーンの自給自足を目指す中国の戦略の一環と見られます。\nこの動きは、世界のPC市場における地政学的分断を加速させる可能性を秘めています。",
+      "actionable_takeaway": "中国市場で事業展開する企業は、サプライチェーンの中国国産化の動向を注視し、将来的な技術標準や製品選択肢の変化に対応できるよう準備を進めるべきです。",
+      "tags": [
+        "Huawei",
+        "中国製PC",
+        "サプライチェーン"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 75,
+      "score_reason": "Huaweiの完全中国製PCは、米中技術覇権争いの象徴であり、今後のグローバルなサプライチェーンや技術標準に影響を与える可能性があるため、重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Macにはユーザーの人間関係をグラフ化する常駐プログラムが搭載されている",
+      "url": "https://gigazine.net/news/20261109-macos-personal-knowledge-graph/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-09T07:02:52+00:00",
+      "reading_min": 5,
+      "summary": "macOS Ventura以降のMacには、ユーザーの人間関係をグラフ化する2つのデーモン（常駐プログラム）が搭載されていることがセキュリティ研究者によって明らかにされました。\nこれらのプログラムは、連絡先、カレンダー、写真、メッセージ、メール、位置情報など、端末上のほぼすべての情報を相互参照し、ユーザーのパーソナルナレッジグラフを作成します。\n生成された情報はSQLiteデータベースにプレーンテキストで保存され、AIがそこから情報を取得できるようになっており、Appleのプライバシーポリシーとの整合性が注目されます。",
+      "actionable_takeaway": "Macユーザーは、自身のデータがどのように収集・利用されているかを理解し、プライバシー設定を見直すなど、個人情報保護への意識を高める必要があります。",
+      "tags": [
+        "macOS",
+        "プライバシー",
+        "データ収集"
+      ],
+      "category": "セキュリティ",
+      "score": 75,
+      "score_reason": "ユーザーのプライバシーに関わる重要な情報であり、Apple製品の利用者が自身のデータがどのように扱われているかを知る上で非常に価値があるため、高いスコアを付けました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 119
+    },
+    {
+      "title": "ケースベース推論による学術アドバイスの強化",
+      "url": "https://arxiv.org/abs/2611.08572",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-09T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本論文は、ケースベース推論（CBR）を用いて学術アドバイスシステムを強化する可能性について探求しています。\nCBRは過去の成功事例や失敗事例を基に、新たな問題に対する解決策を導き出すAI手法です。\narXivLabsは、研究者が新しいarXiv機能を開発・共有するためのフレームワークを提供しています。",
+      "actionable_takeaway": "教育分野のAI開発者は、ケースベース推論を学術アドバイスシステムに応用することで、学生個々の状況に合わせたパーソナライズされた支援を提供できる可能性を検討すべきです。",
+      "tags": [
+        "AI",
+        "ケースベース推論",
+        "教育技術"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "ケースベース推論というAI技術を教育分野の具体的な課題に応用する研究であり、実用的なAIシステムの開発に貢献する可能性があるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "意思決定コンテキスト: AIエージェントのための永続的な行動学習",
+      "url": "https://arxiv.org/abs/2611.08644",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-09T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、AIエージェントが永続的に行動を学習するための「意思決定コンテキスト」という概念を提案しています。\nこれにより、エージェントは過去の経験や環境から得られた情報を長期的に保持し、より賢明な意思決定が可能になります。\n特に、強化学習や適応型システムにおけるエージェントの性能向上に貢献する可能性があります。",
+      "actionable_takeaway": "AIエージェントの長期的な行動学習能力向上を目指す開発者は、意思決定コンテキストの概念を参考に、エージェントの記憶メカニズムや学習アーキテクチャの設計を見直すことを推奨する。",
+      "tags": [
+        "AI",
+        "強化学習",
+        "行動学習"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AIエージェントの永続的な学習能力向上は、より汎用的なAIの実現に不可欠であり、強化学習などの分野に大きな影響を与える可能性があるため、高めのスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "「私が知事になったらそれは止まる」：テキサス州知事候補（民主党）、ビッグテックに警告",
@@ -662,7 +1108,7 @@
       "is_hot": false,
       "hatena_count": 0,
       "topic_group": 1,
-      "topic_size": 3
+      "topic_size": 4
     },
     {
       "title": "Excelで帳票レイアウトを作成、CSVデータから簡単に単票や明細付きの帳票を生成できる「AS-DataReport」が新登場［PR］",
@@ -705,6 +1151,140 @@
       "analysis_status": "ok",
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "人間は二度とウィキペディアのようなプロジェクトを作成しないだろう",
+      "url": "https://www.economist.com/culture/2026/10/29/humans-will-never-again-create-a-project-quite-like-wikipedia",
+      "source": "Hacker News",
+      "published": "2026-11-09T12:30:20+00:00",
+      "hn_score": 192,
+      "hn_comments": 130,
+      "summary": "この記事は、人間がウィキペディアのような大規模な共同プロジェクトを今後作成することはないだろうと予測しています。\nAIの進化や社会の変化により、このようなボランティアベースの知識集約型プロジェクトの実現が困難になるという視点です。\n未来の知識共有のあり方について考察を促す内容となっています。",
+      "actionable_takeaway": "AIによる情報生成が加速する中で、人間が主導する大規模な知識共有プロジェクトの意義と限界を再評価し、AIとの協調の可能性を検討すべきです。",
+      "tags": [
+        "AI",
+        "社会",
+        "知識共有"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "AIの進化が人類の共同作業に与える影響という、示唆に富むテーマを扱っており、今後の技術と社会の関係性を考える上で重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Next-Concept Modeling: 高速で並列な粗密テキスト生成",
+      "url": "https://arxiv.org/abs/2610.14162",
+      "source": "Hacker News",
+      "published": "2026-11-09T07:20:37+00:00",
+      "hn_score": 137,
+      "hn_comments": 28,
+      "reading_min": 1,
+      "summary": "本記事は、高速かつ並列に粗密なテキスト生成を行う「Next-Concept Modeling」という手法について紹介しています。\narXivLabsは、arXivの新しい機能を開発・共有するためのフレームワークであり、オープンネス、コミュニティ、卓越性、ユーザーデータプライバシーの価値を重視しています。\nこの技術は、大規模言語モデルにおけるテキスト生成の効率化に貢献する可能性があります。",
+      "actionable_takeaway": "大規模言語モデルを用いたテキスト生成の効率化に関心がある場合、Next-Concept Modelingの論文を読み、その手法を自身のプロジェクトに応用できないか検討すべきです。",
+      "tags": [
+        "LLM",
+        "テキスト生成",
+        "AIモデル"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "新しいテキスト生成手法の提案であり、LLMの効率化に貢献する可能性を秘めているため、技術的新規性と将来的な実用性を評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 4
+    },
+    {
+      "title": "物議を醸すナンバープレートリーダー製造元Flock、地方政治家への献金を開始",
+      "url": "https://www.reddit.com/r/technology/comments/1xrisbg/flock_maker_of_controversial_license_plate/",
+      "source": "Reddit",
+      "published": "2026-11-09T04:54:15+00:00",
+      "summary": "物議を醸しているナンバープレートリーダーの製造元Flockが、地方政治家への献金を開始したと報じられています。\nこれは、同社の監視技術に対するプライバシー懸念や倫理的議論が高まる中で行われています。\n企業が政治献金を通じて自社製品の普及を図ろうとする動きは、監視社会の進展と市民の権利保護のバランスに影響を与える可能性があります。",
+      "actionable_takeaway": "監視技術を導入する際は、技術的側面だけでなく、倫理的・法的側面も深く考慮し、市民のプライバシー保護を最優先する姿勢が求められます。",
+      "tags": [
+        "監視技術",
+        "プライバシー",
+        "政治献金"
+      ],
+      "category": "セキュリティ",
+      "score": 70,
+      "score_reason": "監視技術の倫理的側面と政治的影響は社会全体に関わる問題であり、IT技術の利用における責任を考える上で重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "私のClaude Codeツール呼び出しの49%がコマンドを実行していました",
+      "url": "https://dev.to/dspv/49-of-my-claude-code-tool-calls-ran-commands-494g",
+      "source": "Dev.to",
+      "published": "2026-11-09T14:22:56+00:00",
+      "reading_min": 2,
+      "summary": "Claude Codeの利用状況を分析した結果、58日間のセッションでツール呼び出しの49%がシェルコマンドの実行であったことが判明しました。\nこれは、コードの編集や書き込みよりも、テスト、ビルド、検索、Git操作といったコマンド実行が頻繁に行われていたことを示しています。\nAPI利用料金はAnthropicのリスト価格で月額200ドルのプランに対し、10,513ドル相当（58日間）に達する可能性があり、キャッシュヒット率99%により入力コストが89%削減されていました。",
+      "actionable_takeaway": "AIプログラミングエージェントの利用においては、コード生成だけでなく、コマンド実行によるワークフロー自動化の可能性を最大限に活用し、コスト効率も考慮して利用計画を立てるべきです。",
+      "tags": [
+        "AIプログラミング",
+        "Claude Code",
+        "シェルコマンド"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIプログラミングエージェントの実際の利用パターンとコスト効率に関する具体的なデータを提供しており、開発者がAIツールをより効果的に活用するための示唆に富むため、有用性が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Signature Makerを開発しました：署名を入力、描画、アップロードしてきれいなファイルを保存",
+      "url": "https://dev.to/pyxl/we-built-signature-maker-type-draw-or-upload-a-signature-and-save-a-clean-file-3bb6",
+      "source": "Dev.to",
+      "published": "2026-11-09T14:22:28+00:00",
+      "reading_min": 1,
+      "summary": "Signature Makerは、手書き署名をデジタル化し、透過PNG、JPG、SVG形式で出力する無料のオンラインツールです。\nアカウント登録やウォーターマークなしで、ブラウザ内で全ての処理が完結するため、プライバシーが保護されます。\nNext.jsとVercelで構築されており、ファイルサイズ調整や自然な手書き効果などの機能を提供します。",
+      "actionable_takeaway": "急な署名ファイル作成ニーズに対応できる便利なツールとして、Signature Makerをブックマークし、必要に応じて活用を検討すると良いでしょう。",
+      "tags": [
+        "Webツール",
+        "Next.js",
+        "画像処理"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 70,
+      "score_reason": "特定のニッチなニーズに応える実用的なWebツールであり、Next.jsとVercelの活用例としても参考になるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "テスト時選択のための側面ごとのペアワイズトーナメント",
+      "url": "https://arxiv.org/abs/2611.08640",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-09T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、テスト時選択における新しいアプローチ「側面ごとのペアワイズトーナメント」について提案しています。\nこの手法は、複数の側面を考慮しながら最適なモデルや設定を選択する際に有効であると考えられます。\n特に、AIモデルの評価や選択プロセスを改善するための理論的基盤を提供する可能性があります。",
+      "actionable_takeaway": "AIモデルのテスト時選択において、複数の評価軸を考慮した最適なモデル選定のために、このペアワイズトーナメント手法の適用を検討し、既存手法との比較検証を行う。",
+      "tags": [
+        "AI",
+        "機械学習",
+        "モデル選択"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIモデルの評価・選択に関する理論的な新規性があり、実用化されればモデルの信頼性向上に寄与する可能性があるため、中程度のスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -774,7 +1354,7 @@
       "is_hot": false,
       "hatena_count": 0,
       "topic_group": 1,
-      "topic_size": 3
+      "topic_size": 4
     },
     {
       "title": "ハッカーがリークしたロシア統計局の記録により、最大45万人のロシア人戦死者が明らかに",
@@ -794,6 +1374,75 @@
       "analysis_status": "ok",
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "VM/370 CEマシンでできる楽しいこと – 大型コンピューターで遊ぶ",
+      "url": "https://rbanffy.github.io/fun-with-big-computers/fun-with-vm370/",
+      "source": "Hacker News",
+      "published": "2026-11-09T10:11:47+00:00",
+      "hn_score": 64,
+      "hn_comments": 7,
+      "reading_min": 25,
+      "summary": "この記事は、VM/370 Community Edition (CE) を使って遊ぶ方法について解説しています。\nVM/370 CEは、IBMがライセンス制限なしでリリースしたVM/370の最終版に、多くの改善と修正が加えられたものです。\nDockerやPodmanを使って簡単に環境を構築し、古いメインフレームOSの機能を体験できることが示されています。",
+      "actionable_takeaway": "Dockerコマンド一つでVM/370 CE環境を構築し、メインフレームOSの仕組みや歴史的背景を体験することで、現代のOSとの違いや進化を理解する良い機会となります。",
+      "github_repo": "rbanffy/vm370ce",
+      "tags": [
+        "メインフレーム",
+        "エミュレーション",
+        "Docker"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 65,
+      "score_reason": "古いメインフレームOSを現代の環境で手軽に体験できるという点で、歴史的技術への理解を深める機会を提供し、技術的な興味を刺激する価値があるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "タグ: #cloudcomputing #iaas #aws #devops #beginners #technology",
+      "url": "https://dev.to/nahsang_lilian_8af99996c9/tags-cloudcomputing-iaas-aws-devops-beginners-technology-1kb4",
+      "source": "Dev.to",
+      "published": "2026-11-09T14:22:50+00:00",
+      "reading_min": 5,
+      "summary": "Infrastructure as a Service (IaaS)は、物理サーバーの購入・維持ではなく、インターネット経由で仮想化されたコンピューティングリソースをレンタルするクラウドコンピューティングモデルです。\nIaaSを利用することで、サーバー、ストレージ、ネットワークなどのインフラを柔軟に調達でき、運用コストと時間を削減し、スケーラビリティを向上させることができます。\nAmazon Web Services (AWS) のElastic Compute Cloud (EC2) は、IaaSの代表的なサービスであり、その仕組みや利点、課題について解説されています。",
+      "actionable_takeaway": "クラウド移行を検討している企業や開発者は、IaaSの概念とAWS EC2の具体的な利用方法を理解し、自社のインフラ要件に合わせた最適なクラウド戦略を策定すべきです。",
+      "tags": [
+        "IaaS",
+        "AWS",
+        "クラウドコンピューティング"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 65,
+      "score_reason": "IaaSとAWS EC2の基本的な概念を初心者向けに解説しており、クラウドインフラの基礎を学ぶ上で有用な情報であるため、一定のスコアを付けました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Firefoxのタブを実際に整理する方法（30個も開いたままにしないために）",
+      "url": "https://dev.to/weatherclockdash/how-to-actually-organize-firefox-tabs-without-keeping-30-open-2cjn",
+      "source": "Dev.to",
+      "published": "2026-11-09T14:22:10+00:00",
+      "reading_min": 1,
+      "summary": "ブラウザのタブは本来、アクティブなページ間の切り替えのために設計されていますが、多くのユーザーがストレージとして誤用しています。\nタブを閉じることは情報を失うことではなく、後で再度見つけられるという信頼を持つことが重要です。\nFirefoxの拡張機能「Tab Manager and Session Saver」を使うことで、タブのグループをセッションとして保存し、必要な時に復元できます。",
+      "actionable_takeaway": "Firefoxユーザーは「Tab Manager and Session Saver」を導入し、タブをセッションとして保存する習慣を身につけることで、ブラウザのパフォーマンス向上と情報整理を効率化できます。",
+      "tags": [
+        "Firefox",
+        "ブラウザ",
+        "生産性"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 65,
+      "score_reason": "多くのユーザーが抱えるタブ管理の課題に対する具体的な解決策を提示しており、生産性向上に直結するため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -818,7 +1467,7 @@
       "is_hot": false,
       "hatena_count": 0,
       "topic_group": 1,
-      "topic_size": 3
+      "topic_size": 4
     },
     {
       "title": "「エントロピーを下げれる奴が偉い」、｜ラクビル株式会社",
@@ -840,25 +1489,7 @@
       "new_at": "2026-11-09T10:14:13.428049+09:00",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 109
-    },
-    {
-      "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
-      "url": "https://ketchup3d.github.io/app/",
-      "source": "Hacker News",
-      "published": "2026-11-08T22:35:35+00:00",
-      "hn_score": 160,
-      "hn_comments": 30,
-      "reading_min": 2,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-09T10:14:13.428049+09:00",
-      "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 308
     },
     {
       "title": "Herb Sutter: When a language's creator and its owners strongly disagree [pdf]",
@@ -875,7 +1506,7 @@
       "analysis_status": "error",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "Chimera Vocal Synth",
@@ -892,7 +1523,7 @@
       "analysis_status": "error",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "Unlocking any car from X brand in most of the world",
@@ -945,23 +1576,95 @@
       "analysis_status": "error",
       "first_seen": "2026-11-09T10:14:13.428049+09:00",
       "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "トゥモロー・ワールド：未来は現在の鏡である",
+      "url": "https://reactormag.com/children-of-men-the-future-is-a-mirror-for-the-present/",
+      "source": "Hacker News",
+      "published": "2026-11-09T13:27:01+00:00",
+      "hn_score": 36,
+      "hn_comments": 10,
+      "reading_min": 21,
+      "summary": "この記事は、映画『トゥモロー・ワールド』が21世紀最高のSF映画の一つであると評価しています。\n全てのSFは政治的であり、未来の物語は常に現在について語っているという視点から映画を分析しています。\n公開から20年経った今でも、そのメッセージがより重要になっていると述べています。",
+      "actionable_takeaway": "SF作品を通じて社会や技術の未来を考察し、現在の課題に対する洞察を深めることで、技術開発の倫理的側面や社会的影響を考慮する視点を養うべきです。",
+      "tags": [
+        "SF",
+        "映画",
+        "社会批評"
+      ],
+      "category": "その他",
+      "score": 30,
+      "score_reason": "IT技術そのものに関する記事ではないが、SF映画を通じて未来の社会や技術のあり方を考察する視点は、エンジニアにとっても示唆に富むため、一定のスコアを付けました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "証拠を埋める：タイムカプセルの10個中9個が行方不明になる",
+      "url": "https://longreads.com/2026/11/05/time-capsules-ashley-stimpson/",
+      "source": "Hacker News",
+      "published": "2026-11-07T16:51:17+00:00",
+      "hn_score": 33,
+      "hn_comments": 15,
+      "reading_min": 23,
+      "summary": "この記事は、タイムカプセルの多くが行方不明になるという現象について掘り下げています。\nアメリカ建国200周年を記念したバイセンテニアル・ワゴン・トレインの事例を挙げ、タイムカプセルの埋設と発見の難しさを描写しています。\n時間の経過とともに、意図されたメッセージが失われたり、忘れ去られたりする運命にあることを示唆しています。",
+      "actionable_takeaway": "長期的な情報保存やデータ永続性に関するプロジェクトでは、物理的なタイムカプセルの失敗事例から学び、デジタルアーカイブの堅牢性やアクセス可能性を確保するための戦略を再考すべきです。",
+      "tags": [
+        "歴史",
+        "情報保存",
+        "文化"
+      ],
+      "category": "その他",
+      "score": 20,
+      "score_reason": "IT技術ニュースとしては直接的な関連性が低いですが、情報保存というテーマはデジタルアーカイブの文脈で間接的に関連するため、低めのスコアを付けました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "壮大な紙飛行機を折る",
+      "url": "https://www.foldableflight.com",
+      "source": "Hacker News",
+      "published": "2026-11-09T12:19:22+00:00",
+      "hn_score": 229,
+      "hn_comments": 50,
+      "reading_min": 12,
+      "summary": "このウェブサイトは、様々な種類の紙飛行機の折り方を提供しています。\n世界記録を樹立したモデルや、飛行性能に優れたデザインなど、109種類の紙飛行機が紹介されています。\n速度、滑空、精度などの特性が示されており、初心者から上級者まで楽しめる内容です。",
+      "actionable_takeaway": "気分転換や創造性向上のために、紹介されている紙飛行機の折り方を試すことで、物理的な設計と実践の楽しさを再発見できます。",
+      "tags": [
+        "趣味",
+        "DIY",
+        "デザイン"
+      ],
+      "category": "その他",
+      "score": 10,
+      "score_reason": "IT技術ニュースとしては直接的な関連性が低く、実務への影響も限定的であるため、スコアは低めです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-09T23:24:09.236189+09:00",
+      "first_seen": "2026-11-09T23:24:09.236189+09:00",
+      "is_hot": false,
       "hatena_count": 0
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-09T10:14:13.428049+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-09T23:24:09.236189+09:00",
     "summary_lines": [
-      "AWS高額請求やデータ破損対策、PostgreSQLロック問題などインフラ運用課題が注目。",
-      "サプライチェーン、DMARC、脆弱性情報伝達速度などセキュリティ動向が活発。",
-      "生成AIによるリバースエンジニアリングや音声対話モデルの進化に注目が集まる。"
+      "AWSの高額請求やリージョン依存性など、クラウドインフラの運用リスク管理が重要です。",
+      "サプライチェーンの脆弱性やDMARCによるメール拒否など、セキュリティ対策の強化が求められます。",
+      "生成AIによるコード生成やAIエージェントによる開発環境自動化など、AIの活用が進んでいます。"
     ],
     "focus_tags": [
       "AWS",
       "セキュリティ",
-      "脆弱性管理",
       "生成AI",
-      "バックエンド・インフラ"
+      "脆弱性管理",
+      "モバイル開発"
     ]
   }
 }
