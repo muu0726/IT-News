@@ -5,13 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 08 Nov 2026 12:15:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 01:17:43 +0000</lastBuildDate>
     <item>
-      <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
-      <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</guid>
-      <description>[Score: 90] GitHubは来年初頭に、従来比180倍のスループット性能向上を実現すると発表しました。 / これはMicrosoft Azureへの基盤移行と新アーキテクチャ採用により、AIエージェント時代に対応するためです。 / 大規模なエンジニアリング投資により、急増する負荷に対応し、信頼性を強化します。 (Source: Publickey)</description>
-      <pubDate>Tue, 03 Nov 2026 15:16:22 +0000</pubDate>
+      <title>AWSから4.3億円の課金が...バグと思われる高額請求された際にまずすること</title>
+      <link>https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610</link>
+      <guid isPermaLink="false">https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610</guid>
+      <description>[Score: 95] AWS OpenSearch ServerlessのIntelligent ingestion利用中に、Nova 2 Liteのトークン料金が約4.3億円という異常な高額請求が発生した事例です。 / 原因はトークン数が100万倍で計上される課金バグと推測され、AWSサポートへの英語チャットでの迅速な連絡が解決の鍵となりました。 / 高額請求に遭遇した場合の初動対応として、英語チャットでのサポート連絡の重要性が強調されています。 [実務示唆: AWSで異常な高額請求が発生した際は、事象を簡潔にまとめて英語チャットでAWSサポートに連絡し、迅速な調査と修正を依頼することが最重要です。] (Source: Zenn)</description>
+      <pubDate>Sun, 08 Nov 2026 08:56:07 +0000</pubDate>
     </item>
     <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
@@ -21,18 +21,25 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>Figmaのリアルタイム同期の仕組みを、Node.js + WebSocketの最小構成で実装してみた</title>
-      <link>https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] Figmaのなめらかなリアルタイム同期の仕組みについて、公式ブログの情報を基にNode.jsとWebSocketで最小構成を実装し検証しました。 / 特に「サーバーに届いた順を使うので、タイムスタンプが不要」という点に注目し、楽観的更新とflickering防止の重要性をデモで示しています。 / 合意アルゴリズムやベクタークロックを使わず、単一サーバーでの単純な上書き処理で同期を実現する設計の理解を深めることを目的としています。 [実務示唆: リアルタイム共同編集機能を持つWebアプリケーション開発において、Figmaの同期設計（楽観的更新、サーバー受信順の採用）は実装の複雑さを軽減しつつ高いUXを実現するヒントとなるため、類似機能の実装時に参考にすべきです。] [GitHub: keishin-nishiura/figma-sync-demo] (Source: Qiita)</description>
-      <pubDate>Fri, 06 Nov 2026 03:11:21 +0000</pubDate>
+      <title>AWSでデータが壊れたとき（HA &amp; DR パート2）：RTO、RPO、ポイントインタイムリカバリ、DR戦略の選択</title>
+      <link>https://dev.to/joshuaer/when-your-data-breaks-on-aws-ha-dr-part-2-rto-rpo-point-in-time-recovery-and-choosing-a-dr-49g3</link>
+      <guid isPermaLink="false">https://dev.to/joshuaer/when-your-data-breaks-on-aws-ha-dr-part-2-rto-rpo-point-in-time-recovery-and-choosing-a-dr-49g3</guid>
+      <description>[Score: 90] AWS環境でのデータ破損に備え、RPO（Recovery Point Objective）とRTO（Recovery Time Objective）の重要性を解説しています。 / RPOは許容できるデータ損失量、RTOは許容できるダウンタイムを指し、これらはビジネス要件に基づいて設定されます。 / これらの指標を基に、ポイントインタイムリカバリや適切な災害復旧（DR）戦略を選択する必要があることを強調しています。 [実務示唆: AWS環境でシステムを構築する際は、ビジネス要件に基づきRPOとRTOを明確に定義し、それに応じたDR戦略とポイントインタイムリカバリを設計・実装すべきです。] (Source: Dev.to)</description>
+      <pubDate>Mon, 09 Nov 2026 01:03:02 +0000</pubDate>
     </item>
     <item>
-      <title>Tenant-Isolated AI Image Storage: Cheap Signed Downloads, No Open Bucket</title>
-      <link>https://dev.to/yannicksterling6563/tenant-isolated-ai-image-storage-cheap-signed-downloads-no-open-bucket-4lp2</link>
-      <guid isPermaLink="false">https://dev.to/yannicksterling6563/tenant-isolated-ai-image-storage-cheap-signed-downloads-no-open-bucket-4lp2</guid>
-      <description>[Score: 88] AI生成画像をプライベートなオブジェクトストレージにテナント分離して保存し、安価でセキュアな署名付きダウンロードリンクを提供する手法を解説しています。 / アプリケーションがテナント認証と認可を行い、短期間有効な署名付きダウンロードリンクを発行することで、メディアバイトのプロキシを回避します。 / オブジェクトキーをブラウザから直接受け入れず、アプリケーションデータベースで所有権を管理することで、クロステナント読み取りを防ぎます。 [実務示唆: マルチテナントAIアプリケーションで生成画像を扱う際、オープンバケットを避け、アプリケーション側でテナント認証とオブジェクト所有権を厳格に管理し、署名付きURLでセキュアなダウンロードを実現すべきです。] (Source: Dev.to)</description>
-      <pubDate>Sun, 08 Nov 2026 00:48:42 +0000</pubDate>
+      <title>SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話</title>
+      <link>https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763</link>
+      <guid isPermaLink="false">https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763</guid>
+      <description>[Score: 88] PostgreSQLのマイグレーションが、一見無害なSELECT文のみのトランザクションによってロック待ちで失敗した事例が紹介されています。 / 当初はDatastreamやCONCURRENTLYオプションの欠如が疑われましたが、最終的な原因は「idle in transaction」状態のセッションでした。 / 外部API呼び出しなどでトランザクションが長時間開いたままになることが、DBロックの原因となることが示されています。 [実務示唆: PostgreSQLでマイグレーションがロック待ちで失敗する場合、アプリケーションコードの「idle in transaction」状態のセッションを疑い、トランザクションの適切な管理と早期コミットを徹底してください。] (Source: Zenn)</description>
+      <pubDate>Sun, 08 Nov 2026 08:41:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>最も美しいダッシュボードは嘘をついている（そしてGrafanaは決して教えてくれない）</title>
+      <link>https://dev.to/honeykiran/your-prettiest-dashboard-is-lying-to-you-and-grafana-will-never-tell-you-2p7a</link>
+      <guid isPermaLink="false">https://dev.to/honeykiran/your-prettiest-dashboard-is-lying-to-you-and-grafana-will-never-tell-you-2p7a</guid>
+      <description>[Score: 88] Grafanaなどのダッシュボードは、クエリがデータを返さない場合でも、エラーを表示せず平坦な線として描画することがあります。 / これは、メトリック名変更やスクレイプジョブの変更などにより、クエリが死んでいることが原因です。 / ダッシュボードが「嘘」をつくことを防ぐため、手動監査やアラート設定による「嘘発見器」の導入が推奨されます。 [実務示唆: Grafanaなどの監視ダッシュボードの信頼性を確保するため、定期的なクエリの健全性チェックと、データ欠損を検知するアラート設定を導入すべきです。] (Source: Dev.to)</description>
+      <pubDate>Mon, 09 Nov 2026 01:03:03 +0000</pubDate>
     </item>
     <item>
       <title>Linuxカーネルの深刻な脆弱性／FDEの名前で単なるコンサルティングが販売／TypeScriptをRustに移植した「tsrs」発表ほか、2026年10月の人気記事</title>
@@ -49,18 +56,18 @@
       <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>無料でDiscordのようなチャット・音声・動画・ボットなどを駆使した小さなコミュニティを自分たちで運営できる「Harmony」、既存のDiscordサーバーと接続できるブリッジ機能もオープンソースでセルフホスト可能</title>
-      <link>https://gigazine.net/news/20261107-harmony/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261107-harmony/</guid>
-      <description>[Score: 85] Harmonyは、Discordに似た機能を持つ無料のオープンソースソフトウェアで、チャット、音声、動画、ボットなどを活用したコミュニティ運営が可能です。 / 既存のDiscordサーバーとメッセージを双方向に同期できる「Discord Bridge」機能を備え、異なるサービス間での交流を実現します。 / ActivityPubにも対応しており、分散型SNSとしての利用やセルフホストによる自由な運用が特徴です。 [実務示唆: Discordの代替やプライベートなコミュニティ運営を検討している開発者は、Harmonyをセルフホストして、その機能とDiscord連携を検証することを推奨します。] [GitHub: mony/harmony] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 07 Nov 2026 09:05:57 +0000</pubDate>
+      <title>マージンレイヤー — あるいは、「合格」は「失敗に程遠い」と同じではない</title>
+      <link>https://dev.to/goodpa/the-margin-layer-or-it-passed-is-not-the-same-as-it-was-nowhere-near-failing-462k</link>
+      <guid isPermaLink="false">https://dev.to/goodpa/the-margin-layer-or-it-passed-is-not-the-same-as-it-was-nowhere-near-failing-462k</guid>
+      <description>[Score: 85] システムが「合格」と報告されていても、その裏で性能が限界に近づいている可能性があることを指摘しています。 / テストやジョブの実行結果が「合格/不合格」の二値でしか評価されない場合、システムが許容範囲内であっても、その余裕（マージン）がどれだけ残っているかが見えなくなります。 / マージンレイヤーとは、システムが停止するまでの距離を記録し、その余裕を数値化する実践であり、これにより潜在的な問題を早期に発見し、対応できるようになります。 [実務示唆: システム監視において、単なる合否だけでなく、性能マージンを具体的な単位で計測・記録し、潜在的なボトルネックを早期に特定する仕組みを導入することを推奨します。] (Source: Dev.to)</description>
+      <pubDate>Mon, 09 Nov 2026 01:02:14 +0000</pubDate>
     </item>
     <item>
-      <title>Browser Direct Uploads to Private Object Storage — Node.js, Express, and React</title>
-      <link>https://dev.to/jedidiahrhodes8293/browser-direct-uploads-to-private-object-storage-nodejs-express-and-react-5gab</link>
-      <guid isPermaLink="false">https://dev.to/jedidiahrhodes8293/browser-direct-uploads-to-private-object-storage-nodejs-express-and-react-5gab</guid>
-      <description>[Score: 80] ブラウザからプライベートなオブジェクトストレージへ直接ファイルをアップロードする安全な方法について解説しています。 / Node.js/Expressサーバーが署名付きPUT URLを発行し、Reactクライアントが直接ストレージにアップロードするアーキテクチャを提案しています。 / これにより、サーバーがファイルバイトをプロキシすることなく、認証後に短期間有効なダウンロードURLを発行することで、セキュリティと効率性を両立させます。 [実務示唆: 機密性の高いファイルをブラウザからオブジェクトストレージにアップロードする際は、サーバーサイドで署名付きURLを生成し、直接アップロードさせることで、サーバー負荷軽減とセキュリティ向上を図るべきです。] (Source: Dev.to)</description>
-      <pubDate>Sun, 08 Nov 2026 00:49:06 +0000</pubDate>
+      <title>宣言的なドラッグ</title>
+      <link>https://declarative-dragging.github.io/</link>
+      <guid isPermaLink="false">https://declarative-dragging.github.io/</guid>
+      <description>[Score: 80] 本記事は、ドラッグ＆ドロップ操作をより簡単に実装するための「宣言的なドラッグ」という新しいアプローチを提案しています。 / 従来のドラッグ実装が複雑な幾何学、フィードバック、アニメーション処理を必要とするのに対し、この手法では要素が到達しうる未来の状態を宣言するだけで済みます。 / システムがこれらの状態を推測的にレンダリングし、スムーズで応答性の高いドラッグ＆ドロップインタラクションを自動生成します。 [実務示唆: 複雑なドラッグ＆ドロップ機能を実装する際は、宣言的なアプローチを検討し、UI開発の効率化とコードの簡素化を図るべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 04 Nov 2026 17:05:07 +0000</pubDate>
     </item>
     <item>
       <title>アクセシビリティステートメントがGitHubに登場</title>
@@ -68,41 +75,6 @@
       <guid isPermaLink="false">https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</guid>
       <description>[Score: 75] GitHubは、リポジトリの概要ページにACCESSIBILITY.mdファイルを表示する機能を追加しました。 / これにより、プロジェクトのアクセシビリティ目標、貢献者の期待、既知の制限などを一元的に説明できるようになります。 / ACCESSIBILITY.mdファイルは、リポジトリのルート、.github/ディレクトリ、またはdocs/ディレクトリに配置でき、組織の.github/リポジトリから継承することも可能です。 [実務示唆: 自身のGitHubリポジトリにACCESSIBILITY.mdファイルを追加し、プロジェクトのアクセシビリティに関する情報を明確にすることで、より多くのユーザーと貢献者にとって利用しやすい環境を整備すること。] [GitHub: github/docs] (Source: GitHub Blog)</description>
       <pubDate>Thu, 05 Nov 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubの新しいプルリクエスト概要ページがパブリックプレビューに</title>
-      <link>https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/</link>
-      <guid isPermaLink="false">https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/</guid>
-      <description>[Score: 75] GitHubがプルリクエストの新しい概要ページをパブリックプレビューとして公開しました。 / この新機能は、長いプルリクエストでマージのブロック要因や次のアクションを見つけやすくすることを目的としています。 / マージステータスと次のアクションがページ上部にコンパクトに表示され、レビュー体験が向上します。 [実務示唆: GitHubの新しいプルリクエスト概要ページを試用し、チームのコードレビュー効率向上に役立つか評価する。] [GitHub: github/roadmap] (Source: Hacker News)</description>
-      <pubDate>Sat, 07 Nov 2026 23:09:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>Web 標準動向 2026年10月版</title>
-      <link>https://zenn.dev/cybozu_frontend/articles/web-standards-trends-202610</link>
-      <guid isPermaLink="false">https://zenn.dev/cybozu_frontend/articles/web-standards-trends-202610</guid>
-      <description>[Score: 70] サイボウズがW3Cメンバーに加入し、Web標準のキャッチアップと標準化プロセスへの関与を強化しています。 / SVG2のCandidate Recommendation Snapshotが更新され、focusresetイベントのIntent to Prototypeが発表されました。 / document.advanceFocus()やbeforeinputイベントなど、UI/UX改善に繋がる新たなWeb標準の議論が進められています。 [実務示唆: Webフロントエンド開発者は、focusresetやdocument.advanceFocus()などの新しいWeb標準動向を定期的に確認し、将来的なUIライブラリの改善やアクセシビリティ向上に役立てるべきです。] (Source: Zenn)</description>
-      <pubDate>Fri, 06 Nov 2026 09:08:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>React学習過程整理tips(備考)</title>
-      <link>https://qiita.com/polymetisoutis/items/9e6a8e16f11e7e8f834c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/polymetisoutis/items/9e6a8e16f11e7e8f834c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 70] React学習において、ソースファイルの構造把握、JSX記法への慣れ、コンポーネントの概念理解が重要だと筆者は述べています。 / 親コンポーネントから子コンポーネントへの値渡し（props）、レンダーロジックとJSXによる構成、JavaScriptの配列メソッドの活用がポイントです。 / レンダリングのフェーズ（レンダー、コミット、エフェクト）や、state変更、親コンポーネントの再レンダリング、Context値変更による再レンダリングの基本を理解することが不可欠です。 [実務示唆: React学習者は、JSX記法とコンポーネントの親子関係、そしてuseState, useCallback, useEffectといったHooksの役割とレンダリングサイクルにおける動作を重点的に理解し、実践を通じて習熟すべきです。] (Source: Qiita)</description>
-      <pubDate>Sat, 07 Nov 2026 11:14:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>kubectl wait for condition fails on null conditions</title>
-      <link>https://dev.to/kadet-hub/kubectl-wait-for-condition-fails-on-null-conditions-1681</link>
-      <guid isPermaLink="false">https://dev.to/kadet-hub/kubectl-wait-for-condition-fails-on-null-conditions-1681</guid>
-      <description>[Score: 65] kubectl wait --for condition=Established crd/&lt;name&gt; コマンドが、status.conditionsがnullの場合にエラーで即座に終了する問題が報告されました。 / 通常、このコマンドはstatus.conditionsが存在しない場合は待機しますが、nullの場合はエラーを返します。 / この問題はKubernetes 1.37.0とkubectl 1.37.1の組み合わせで発生し、CI/CDパイプラインでレースコンディションとして現れる可能性があります。 [実務示唆: kubectl waitコマンドでCRDのEstablished条件を待つ際、status.conditionsがnullになるレースコンディションを避けるため、kubectlのバージョンを最新に保ち、必要に応じて再試行ロジックを実装すべきです。] [GitHub: kubernetes/kubectl] (Source: Dev.to)</description>
-      <pubDate>Sun, 08 Nov 2026 12:10:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>最適なプロキシプロバイダーをお探しですか？主要7社の比較ガイド</title>
-      <link>https://dev.to/jennifer-smith/looking-for-the-right-proxy-provider-this-guide-compares-7-top-options-their-features-and-what-4c55</link>
-      <guid isPermaLink="false">https://dev.to/jennifer-smith/looking-for-the-right-proxy-provider-this-guide-compares-7-top-options-their-features-and-what-4c55</guid>
-      <description>[Score: 65] スクレイピングや自動化を行う開発者向けに、最適なプロキシプロバイダーを見つけるためのガイドです。 / 主要な7つのプロキシプロバイダーを比較し、それぞれの機能と考慮すべき点を詳しく解説しています。 / これにより、プロジェクトの要件に合ったプロバイダーを選択するための情報が得られます。 [実務示唆: スクレイピングや自動化プロジェクトでプロキシを利用する際は、本ガイドを参考に複数のプロバイダーを比較検討し、要件に最適なサービスを選定しましょう。] (Source: Dev.to)</description>
-      <pubDate>Sun, 08 Nov 2026 12:09:45 +0000</pubDate>
     </item>
   </channel>
 </rss>

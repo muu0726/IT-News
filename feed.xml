@@ -5,34 +5,20 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 08 Nov 2026 12:15:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 01:17:43 +0000</lastBuildDate>
     <item>
-      <title>[破壊的変更] 明治時代の開始日が変更になって単体テストが失敗した件</title>
-      <link>https://zenn.dev/xin9le/articles/9a1cf8e10494d6</link>
-      <guid isPermaLink="false">https://zenn.dev/xin9le/articles/9a1cf8e10494d6</guid>
-      <description>[Score: 100] Ubuntu 26.04に同梱されるICUの更新により、明治時代の開始日が1868年9月8日から10月23日に変更されました。 / これにより、和暦を扱うC#/.NETのコードでArgumentOutOfRangeExceptionが発生し、単体テストが失敗する事態が発生しました。 / CI/CD環境でOSのバージョンアップが行われた際に、予期せぬ破壊的変更が引き起こされる可能性を示唆しています。 [実務示唆: 和暦や日付計算を扱うシステムでは、OSやライブラリのアップデート時に日付関連の破壊的変更がないか、特にCI環境での詳細なテストと検証を徹底してください。] (Source: Zenn)</description>
-      <pubDate>Fri, 06 Nov 2026 14:39:45 +0000</pubDate>
+      <title>AWSから4.3億円の課金が...バグと思われる高額請求された際にまずすること</title>
+      <link>https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610</link>
+      <guid isPermaLink="false">https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610</guid>
+      <description>[Score: 95] AWS OpenSearch ServerlessのIntelligent ingestion利用中に、Nova 2 Liteのトークン料金が約4.3億円という異常な高額請求が発生した事例です。 / 原因はトークン数が100万倍で計上される課金バグと推測され、AWSサポートへの英語チャットでの迅速な連絡が解決の鍵となりました。 / 高額請求に遭遇した場合の初動対応として、英語チャットでのサポート連絡の重要性が強調されています。 [実務示唆: AWSで異常な高額請求が発生した際は、事象を簡潔にまとめて英語チャットでAWSサポートに連絡し、迅速な調査と修正を依頼することが最重要です。] (Source: Zenn)</description>
+      <pubDate>Sun, 08 Nov 2026 08:56:07 +0000</pubDate>
     </item>
     <item>
-      <title>Cloudflare Zero Wire × GitHub Actions × Claude で公開サーバーの脆弱性チェックを自動化</title>
-      <link>https://zenn.dev/tomipetit/articles/zero-wire-github-actions</link>
-      <guid isPermaLink="false">https://zenn.dev/tomipetit/articles/zero-wire-github-actions</guid>
-      <description>[Score: 100] Cloudflare Zero WireとGitHub Actions、Claudeを連携させ、公開サーバーの脆弱性チェックを自動化する仕組みが紹介されています。 / Zero Wireが提供する「外向きのソフトウェアの重大なCVE」に特化した脆弱性情報をClaudeで分析し、サーバーへの影響を判定します。 / SSHでサーバーのインベントリ情報を収集し、Node.jsのバージョン取得など、非対話シェルでのハマりどころとその解決策も解説されています。 [実務示唆: 公開サーバーの脆弱性管理を効率化するため、Cloudflare Zero WireとGitHub Actions、LLMを組み合わせた自動チェックシステムを構築し、日々の運用に組み込むことを推奨します。] (Source: Zenn)</description>
-      <pubDate>Sat, 07 Nov 2026 06:44:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>Weight-Space Programming をやってみた（やらせてみた）</title>
-      <link>https://zenn.dev/nwn/articles/cf9fe78aa33861</link>
-      <guid isPermaLink="false">https://zenn.dev/nwn/articles/cf9fe78aa33861</guid>
-      <description>[Score: 90] GPT-6 AstraがQwen3.5-0.8Bの重みを編集し、モデルの挙動を修正する論文が話題になっています。 / 本記事では、ChatGPTのCodex機能を使って同様の実験を行い、Qwen3.5-0.8Bの語尾をずんだもん風に修正することに成功しました。 / AIがモデルの重みを直接編集し、特定のタスクを達成する過程を自動化できる可能性を示しています。 [実務示唆: AIによるモデルの重み編集は、プロンプトやファインチューニングでは難しい細かな挙動修正に有効な可能性があり、今後のLLM開発で注目すべき技術です。] [GitHub: auhulu/Qwen3.5-0.8B-Zundamon] (Source: Zenn)</description>
-      <pubDate>Sat, 07 Nov 2026 00:57:13 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHubが従来比180倍のスループット性能向上を実現へ、来年初頭に。AIエージェント時代に対応。GitHub Universe 2026</title>
-      <link>https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github180aigithub_universe_2026.html</guid>
-      <description>[Score: 90] GitHubは来年初頭に、従来比180倍のスループット性能向上を実現すると発表しました。 / これはMicrosoft Azureへの基盤移行と新アーキテクチャ採用により、AIエージェント時代に対応するためです。 / 大規模なエンジニアリング投資により、急増する負荷に対応し、信頼性を強化します。 (Source: Publickey)</description>
-      <pubDate>Tue, 03 Nov 2026 15:16:22 +0000</pubDate>
+      <title>部品の脆弱性は、どこまで広がるのか？ 主要 64 製品と 8 部品の依存関係をたどったら、OpenSSL は 20、SQLite は 16、PHP は 11 だった</title>
+      <link>https://qiita.com/songchong/items/41a88eb41845af761b19?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/41a88eb41845af761b19?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 95] AIがソフトウェア部品の脆弱性を発見するようになり、一つの部品の脆弱性が多くの製品に影響を及ぼすことが調査で明らかになりました。 / OpenSSLの脆弱性は20製品、SQLiteは16製品、PHPは11製品に影響する可能性があり、サプライチェーン全体のリスクが浮き彫りになっています。 / この問題に対処するため、SBOM（ソフトウェア部品表）の活用と、AIや脆弱性管理ツールによるコンポーネントレベルでの脆弱性管理が推奨されています。 [実務示唆: 自社製品のSBOMを導入・活用し、使用しているオープンソースコンポーネントの脆弱性情報をAIや自動化ツールで継続的に監視し、サプライチェーン全体のリスクを可視化・管理すること。] (Source: Qiita)</description>
+      <pubDate>Sun, 08 Nov 2026 19:10:12 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -49,74 +35,46 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeの「Don't Ask Again」が1,122件の公開GitHubファイルでパスワードを漏洩</title>
-      <link>https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</link>
-      <guid isPermaLink="false">https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</guid>
-      <description>[Score: 90] AIコーディングエージェント「Claude Code」の機能「Don't Ask Again」が、GitHub上の公開ファイルから機密情報を漏洩させていることが判明しました。 / 具体的には、1,122件の公開GitHubファイルでパスワードなどの秘密情報が露出しているとのことです。 / これは、AIエージェントが意図せず開発者の機密情報を公開してしまうリスクを示しています。 [実務示唆: AIコーディングエージェント利用時は、機密情報が意図せず公開されないよう、厳格なセキュリティレビューとアクセス制御を徹底する。] (Source: Hacker News)</description>
-      <pubDate>Sat, 07 Nov 2026 20:45:32 +0000</pubDate>
+      <title>Outlook.comがDMARCなしのドメインからのメールを静かに拒否している</title>
+      <link>https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</link>
+      <guid isPermaLink="false">https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</guid>
+      <description>[Score: 90] MicrosoftのOutlook.comが、DMARCレコードを公開していないドメインからのメールを密かに拒否し始めていることが判明しました。 / これにより、多くの企業が顧客やベンダーへのメールがバウンスする問題に直面しています。 / この変更は公式発表なしに行われ、SPF/DKIM/DMARC認証レコードの欠如が拒否理由とされています。 [実務示唆: メール送信を行う企業は、Outlook.comへの到達性を確保するため、速やかにDMARCレコードをDNSに設定し、メール認証を強化すべきです。] (Source: Hacker News)</description>
+      <pubDate>Sun, 08 Nov 2026 19:20:32 +0000</pubDate>
     </item>
     <item>
-      <title>Show HN: Coldframe、スーパーマーケットの冷蔵庫コントローラーを装うハニーポット</title>
-      <link>https://github.com/hedgerow-dev/coldframe</link>
-      <guid isPermaLink="false">https://github.com/hedgerow-dev/coldframe</guid>
-      <description>[Score: 90] Coldframeは、スーパーマーケットの冷蔵庫コントローラーを模倣したハニーポットです。 / デフォルトパスワードや未パッチのファームウェアを狙う攻撃者を誘引し、接続情報、試行パスワード、エクスプロイトを記録します。 / DanfossとDixellの2つの実在するコントローラーのペルソナを再現し、攻撃者に偽のダッシュボードを提供します。 [実務示唆: IoTデバイスのセキュリティ対策として、Coldframeのようなハニーポットを導入し、攻撃者の手口を分析することで、実際のシステム防御戦略を強化するのに役立ちます。] [GitHub: hedgerow-dev/coldframe] (Source: Hacker News)</description>
-      <pubDate>Sat, 07 Nov 2026 17:27:30 +0000</pubDate>
+      <title>脆弱性の情報は間に合っている？ 英語は 2 時間以内、悪用は 4 割が 1 日以内、日本語は中央値 4.6 日後。悪用された 74 件を調べて分かった</title>
+      <link>https://qiita.com/songchong/items/b3c6c879f03f9bb665d3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/b3c6c879f03f9bb665d3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AIによるサイバー攻撃の高速化に伴い、脆弱性情報が公開されてから悪用されるまでの時間が短縮しています。 / 英語の脆弱性情報は2時間以内に公開される一方、日本語の情報は中央値で4.6日遅れることが74件の悪用事例調査で判明しました。 / この情報格差により、日本語情報に依存するだけでは防御が間に合わないため、AIと自動化による情報収集の必要性が高まっています。 [実務示唆: 日本語の脆弱性情報に依存せず、CISA KEVカタログやNVDなどの英語情報源をAIと自動化ツールでリアルタイムに監視し、迅速な対応体制を構築すること。] (Source: Qiita)</description>
+      <pubDate>Sun, 08 Nov 2026 09:00:22 +0000</pubDate>
     </item>
     <item>
-      <title>ハーネスエンジニアリングを有名OSSはどう組んでいるのか？AIへの信頼で比べる5事例</title>
-      <link>https://gibberishlab.com/blog/oss-ai-agent-harness-philosophy</link>
-      <guid isPermaLink="false">https://gibberishlab.com/blog/oss-ai-agent-harness-philosophy</guid>
-      <description>[Score: 90] Zed、Sentry、OpenClaw、Bun、PostHogの5つの有名OSSにおけるハーネスエンジニアリングの違いを分析しています。 / AIへの信頼度によってハーネスの設計が大きく異なり、信頼度が高いほどAIに任せる部分が多くなります。 / AIコーディングエージェントを効果的に活用するための実践的な知見が提供されています。 [実務示唆: AIエージェント導入時は、プロジェクトの特性とAIへの信頼度に基づき、ハーネス（指示、ルール、フック）の設計を最適化しましょう。] [GitHub: gibberishlab/oss-ai-agent-harness-philosophy-sample] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 07 Nov 2026 09:20:09 +0000</pubDate>
+      <title>コード非公開のWebサイト・アプリ・ゲームを解析し、AIが類似版を生成する無料ツール「Craft Anything」（生成AIクローズアップ） | テクノエッジ TechnoEdge</title>
+      <link>https://www.techno-edge.net/article/2026/11/09/5686.html</link>
+      <guid isPermaLink="false">https://www.techno-edge.net/article/2026/11/09/5686.html</guid>
+      <description>[Score: 90] 「Craft Anything」は、既存のWebサイト、アプリ、ゲームの仕組みを解析し、AIが類似バージョンを生成するオープンソースツールです。 / コード非公開の対象でも、スクリーンショットやレイアウト情報から「外から観察」または内部コードまで読み取る「中まで解析」の2つのモードで動作します。 / 外部AIエージェント（Claude Codeなど）と連携し、自動でプロジェクトを生成・修正し、オリジナルに近づくまで手直しを重ねる点が特徴です。 [実務示唆: 開発者は、Craft Anythingのようなツールを活用して、既存のUI/UXを参考に新しいアプリケーションのプロトタイプを迅速に作成したり、レガシーシステムの再構築のヒントを得たりすることを検討すべきです。] [GitHub: seamless-ai/craft-anything] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 08 Nov 2026 22:49:48 +0000</pubDate>
     </item>
     <item>
-      <title>エージェントのメモリにはOpenTelemetryのような瞬間が必要</title>
-      <link>https://www.lorekit.io/blog/open-agent-memory-format</link>
-      <guid isPermaLink="false">https://www.lorekit.io/blog/open-agent-memory-format</guid>
-      <description>[Score: 90] 現在のコーディングツールでは、エージェントが「記憶」する情報が様々な形式で分散しており、相互運用性がありません。 / これは、エージェントが未来の自身のために残すメモという共通のアイデアが、ツールごとに異なる形式で再構築されているためです。 / OpenTelemetryがオブザーバビリティ分野で標準化をもたらしたように、エージェントのメモリ形式においてもコミュニティによる共通の合意形成が必要です。 [実務示唆: AIエージェントを開発する際は、将来的な相互運用性を考慮し、エージェントの記憶形式の標準化に向けた議論や提案に積極的に参加し、共通フォーマットの採用を検討すべきです。] [GitHub: lorekit/lorekit] (Source: Hacker News)</description>
-      <pubDate>Sun, 08 Nov 2026 08:40:23 +0000</pubDate>
+      <title>AWSでデータが壊れたとき（HA &amp; DR パート2）：RTO、RPO、ポイントインタイムリカバリ、DR戦略の選択</title>
+      <link>https://dev.to/joshuaer/when-your-data-breaks-on-aws-ha-dr-part-2-rto-rpo-point-in-time-recovery-and-choosing-a-dr-49g3</link>
+      <guid isPermaLink="false">https://dev.to/joshuaer/when-your-data-breaks-on-aws-ha-dr-part-2-rto-rpo-point-in-time-recovery-and-choosing-a-dr-49g3</guid>
+      <description>[Score: 90] AWS環境でのデータ破損に備え、RPO（Recovery Point Objective）とRTO（Recovery Time Objective）の重要性を解説しています。 / RPOは許容できるデータ損失量、RTOは許容できるダウンタイムを指し、これらはビジネス要件に基づいて設定されます。 / これらの指標を基に、ポイントインタイムリカバリや適切な災害復旧（DR）戦略を選択する必要があることを強調しています。 [実務示唆: AWS環境でシステムを構築する際は、ビジネス要件に基づきRPOとRTOを明確に定義し、それに応じたDR戦略とポイントインタイムリカバリを設計・実装すべきです。] (Source: Dev.to)</description>
+      <pubDate>Mon, 09 Nov 2026 01:03:02 +0000</pubDate>
     </item>
     <item>
-      <title>意思決定だけで週100コミット積むAI開発手法</title>
-      <link>https://zenn.dev/kingyosun/articles/kukuri-ai-dev</link>
-      <guid isPermaLink="false">https://zenn.dev/kingyosun/articles/kukuri-ai-dev</guid>
-      <description>[Score: 90] 筆者はP2P SNS「kukuri」を開発しており、AIコーディングを活用することで、コードを読まず、IssueやPRもほぼ見ずに週平均97コミットという大規模開発を個人で継続しています。 / 約52.8万行のコード、16領域の機能、デスクトップ・Web/PWA・サーバー・CLI・Unity SDKにまたがるプロダクトを、最小限の時間で開発しています。 / 過去2回の破綻とアーキテクチャの大転換を経て、現在はクリーンアーキテクチャを志向し、AIが変更する場所と影響範囲を小さくする構造で開発効率を向上させています。 [実務示唆: AIを活用した開発では、テストの網羅性と利用場面との整合性を重視し、E2Eテストで実際のユーザーシナリオを検証することで、AI生成コードの品質と信頼性を高めるべきです。] (Source: Zenn)</description>
-      <pubDate>Fri, 06 Nov 2026 17:26:04 +0000</pubDate>
+      <title>SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話</title>
+      <link>https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763</link>
+      <guid isPermaLink="false">https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763</guid>
+      <description>[Score: 88] PostgreSQLのマイグレーションが、一見無害なSELECT文のみのトランザクションによってロック待ちで失敗した事例が紹介されています。 / 当初はDatastreamやCONCURRENTLYオプションの欠如が疑われましたが、最終的な原因は「idle in transaction」状態のセッションでした。 / 外部API呼び出しなどでトランザクションが長時間開いたままになることが、DBロックの原因となることが示されています。 [実務示唆: PostgreSQLでマイグレーションがロック待ちで失敗する場合、アプリケーションコードの「idle in transaction」状態のセッションを疑い、トランザクションの適切な管理と早期コミットを徹底してください。] (Source: Zenn)</description>
+      <pubDate>Sun, 08 Nov 2026 08:41:46 +0000</pubDate>
     </item>
     <item>
-      <title>数百ページのPDF文書を一括解析できるローカルAI「Unlimited OCR 2」、NVIDIA開発の文字起こし音声AI「Nemotron 3.5 Transcribe」など生成AI技術5つを解説（生成AIウィークリー）</title>
-      <link>https://www.techno-edge.net/article/2026/11/06/5679.html</link>
-      <guid isPermaLink="false">https://www.techno-edge.net/article/2026/11/06/5679.html</guid>
-      <description>[Score: 90] 本記事では、最新の生成AI技術として「Unlimited OCR 2」やNVIDIAの音声AI「Nemotron 3.5 Transcribe」、Mistral AIの「Mistral Large 4」、Liquid AIの「LFM3」が紹介されています。 / Unlimited OCR 2は数百ページのPDFを一括解析できるローカルOCRモデルで、Nemotron 3.5 Transcribeは40言語対応のオープンウェイト音声認識AIです。 / Mistral Large 4はGPT-6.1 Terraと同等のコーディング性能を持ち、LFM3はスマホでも高速動作する小型AIモデル群です。 [実務示唆: NVIDIA Nemotron 3.5 Transcribeは多言語対応の音声認識AIで、日本語も実用レベルのため、音声関連開発者はHugging Faceで試用し活用を検討すべきです。] [GitHub: NVIDIA/Nemotron-3.5-Transcribe-30B-A4B] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 07 Nov 2026 00:46:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>エージェントは読み込んだログに隠された指示に従う</title>
-      <link>https://dev.to/dekita/your-agent-will-obey-the-instructions-hidden-in-the-logs-it-reads-ob6</link>
-      <guid isPermaLink="false">https://dev.to/dekita/your-agent-will-obey-the-instructions-hidden-in-the-logs-it-reads-ob6</guid>
-      <description>[Score: 90] アプリケーションログを読み込むAIエージェントが、ログ内の指示に従ってしまう脆弱性が指摘されています。 / モデルは指示の出所を区別せず、システムプロンプトとログの行を同等に扱ってしまうためです。 / これにより、悪意のあるログエントリによってエージェントが意図しないコマンドを実行する可能性があります。 [実務示唆: AIエージェントがログを読み込むシステムでは、ログに実行可能な指示が含まれないよう厳重に管理し、エージェントの入力検証を強化してセキュリティリスクを軽減しましょう。] (Source: Dev.to)</description>
-      <pubDate>Sun, 08 Nov 2026 12:08:23 +0000</pubDate>
-    </item>
-    <item>
-      <title>Figmaのリアルタイム同期の仕組みを、Node.js + WebSocketの最小構成で実装してみた</title>
-      <link>https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/keishin_nishiura/items/b13d72afb085891e4fc9?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] Figmaのなめらかなリアルタイム同期の仕組みについて、公式ブログの情報を基にNode.jsとWebSocketで最小構成を実装し検証しました。 / 特に「サーバーに届いた順を使うので、タイムスタンプが不要」という点に注目し、楽観的更新とflickering防止の重要性をデモで示しています。 / 合意アルゴリズムやベクタークロックを使わず、単一サーバーでの単純な上書き処理で同期を実現する設計の理解を深めることを目的としています。 [実務示唆: リアルタイム共同編集機能を持つWebアプリケーション開発において、Figmaの同期設計（楽観的更新、サーバー受信順の採用）は実装の複雑さを軽減しつつ高いUXを実現するヒントとなるため、類似機能の実装時に参考にすべきです。] [GitHub: keishin-nishiura/figma-sync-demo] (Source: Qiita)</description>
-      <pubDate>Fri, 06 Nov 2026 03:11:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>Tenant-Isolated AI Image Storage: Cheap Signed Downloads, No Open Bucket</title>
-      <link>https://dev.to/yannicksterling6563/tenant-isolated-ai-image-storage-cheap-signed-downloads-no-open-bucket-4lp2</link>
-      <guid isPermaLink="false">https://dev.to/yannicksterling6563/tenant-isolated-ai-image-storage-cheap-signed-downloads-no-open-bucket-4lp2</guid>
-      <description>[Score: 88] AI生成画像をプライベートなオブジェクトストレージにテナント分離して保存し、安価でセキュアな署名付きダウンロードリンクを提供する手法を解説しています。 / アプリケーションがテナント認証と認可を行い、短期間有効な署名付きダウンロードリンクを発行することで、メディアバイトのプロキシを回避します。 / オブジェクトキーをブラウザから直接受け入れず、アプリケーションデータベースで所有権を管理することで、クロステナント読み取りを防ぎます。 [実務示唆: マルチテナントAIアプリケーションで生成画像を扱う際、オープンバケットを避け、アプリケーション側でテナント認証とオブジェクト所有権を厳格に管理し、署名付きURLでセキュアなダウンロードを実現すべきです。] (Source: Dev.to)</description>
-      <pubDate>Sun, 08 Nov 2026 00:48:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>シン・ウルトラモード</title>
-      <link>https://zenn.dev/aws_japan/articles/kiro-crew-ultra-mode</link>
-      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/kiro-crew-ultra-mode</guid>
-      <description>[Score: 88] AWS Japanのソリューションアーキテクトが、オープンソースツールKiro Crewの「Ultra Mode」を紹介しています。 / Ultra Modeは、指揮役のエージェントが大きなゴールを複数の作業に分割し、それぞれをワーカーエージェントに割り当てることで、複雑なタスクを効率的に処理します。 / これにより、コンテキストの限界や進捗管理の課題を解決し、大規模なAIエージェントタスクの実行を容易にします。 [実務示唆: 大規模なAIエージェントシステムを構築する際、Kiro CrewのUltra Modeのようなマルチエージェント協調フレームワークを導入し、タスク分割と進捗管理の効率化を図ることを推奨します。] [GitHub: kirodotdev/KiroCrew] (Source: Zenn)</description>
-      <pubDate>Sat, 07 Nov 2026 01:09:30 +0000</pubDate>
+      <title>最も美しいダッシュボードは嘘をついている（そしてGrafanaは決して教えてくれない）</title>
+      <link>https://dev.to/honeykiran/your-prettiest-dashboard-is-lying-to-you-and-grafana-will-never-tell-you-2p7a</link>
+      <guid isPermaLink="false">https://dev.to/honeykiran/your-prettiest-dashboard-is-lying-to-you-and-grafana-will-never-tell-you-2p7a</guid>
+      <description>[Score: 88] Grafanaなどのダッシュボードは、クエリがデータを返さない場合でも、エラーを表示せず平坦な線として描画することがあります。 / これは、メトリック名変更やスクレイプジョブの変更などにより、クエリが死んでいることが原因です。 / ダッシュボードが「嘘」をつくことを防ぐため、手動監査やアラート設定による「嘘発見器」の導入が推奨されます。 [実務示唆: Grafanaなどの監視ダッシュボードの信頼性を確保するため、定期的なクエリの健全性チェックと、データ欠損を検知するアラート設定を導入すべきです。] (Source: Dev.to)</description>
+      <pubDate>Mon, 09 Nov 2026 01:03:03 +0000</pubDate>
     </item>
     <item>
       <title>Linuxカーネルの深刻な脆弱性／FDEの名前で単なるコンサルティングが販売／TypeScriptをRustに移植した「tsrs」発表ほか、2026年10月の人気記事</title>
@@ -133,18 +91,60 @@
       <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub Copilot Dreaming」発表。作業を振り返ってパーソナルメモリやガイダンスをバックグラウンドで整理、アップデート。GitHub Universe 2026</title>
-      <link>https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html</guid>
-      <description>[Score: 85] GitHubは「GitHub Copilot Dreaming」を発表しました。 / これは、AIモデルへの指示内容が作業の進行や環境の変化によって古くなる問題を解決する新機能です。 / バックグラウンドで自動的にパーソナルメモリやガイダンスを整理・更新し、常に最適なAIアシスタンスを提供します。 (Source: Publickey)</description>
-      <pubDate>Wed, 04 Nov 2026 15:15:49 +0000</pubDate>
+      <title>自宅サーバーにClaude Codeを常駐させ、スマホから24時間指示を出す（Remote Control＋systemd）</title>
+      <link>https://zenn.dev/samurai_works/articles/114a5e654ca295</link>
+      <guid isPermaLink="false">https://zenn.dev/samurai_works/articles/114a5e654ca295</guid>
+      <description>[Score: 85] 自宅のLinuxサーバーにClaude Codeを常駐させ、外出先のスマホからリモートでサーバー上のファイル操作を指示できるシステムを構築した事例です。 / ポート開放やVPNなしで動作する構成で、Claude CodeのRemote Control機能とsystemdを活用しています。 / セットアップ手順やハマりどころ、特にClaude専用ユーザーの作成とlinger設定の重要性が解説されています。 [実務示唆: 自宅サーバーや検証環境でClaude Codeを常駐させ、リモートからAIにファイル操作を指示する際は、systemdのlinger設定と専用ユーザーの権限管理に注意して構築してください。] (Source: Zenn)</description>
+      <pubDate>Sun, 08 Nov 2026 08:59:05 +0000</pubDate>
     </item>
     <item>
-      <title>Microsoft ResearchのAI Frontiersグループの終焉</title>
-      <link>https://hunch.net/?p=13764006</link>
-      <guid isPermaLink="false">https://hunch.net/?p=13764006</guid>
-      <description>[Score: 85] ChatGPTリリース後、Microsoft Research内でのAI研究はより組織的なアプローチが必要と認識されました。 / これを受け、約50名からなるAI Frontiersが設立され、AutogenやFaraなどのエージェント関連研究を推進。 / しかし、組織的な研究の難しさや計算資源の制約もあり、最終的にグループは解体されました。 [実務示唆: 大規模AI開発における組織的アプローチの重要性と、個人のアイデアをスケールさせる難しさを理解し、チーム連携を強化する。] [GitHub: microsoft/autogen] (Source: Hacker News)</description>
-      <pubDate>Sat, 07 Nov 2026 18:02:17 +0000</pubDate>
+      <title>Shizuku-Duplex：自然な間合いで話す日本語 Full-Duplex モデル</title>
+      <link>https://shizuku.ai/blog/1/</link>
+      <guid isPermaLink="false">https://shizuku.ai/blog/1/</guid>
+      <description>[Score: 85] Shizuku-Duplexは、人間のような自然な間合いで会話できる日本語Full-Duplex対話モデルです。 / 相手の話を聞きながら相槌を打ち、話し終えるのを待たずに返答できる点が特徴です。 / 日本語性能において、GPT-Liveを含む既存のFull-Duplexモデルの中で最も優れた自然な会話体験を提供します。 [実務示唆: AIアシスタントやチャットボット開発者は、Shizuku-DuplexのようなFull-Duplexモデルを導入することで、より人間らしい自然な対話体験をユーザーに提供できるか検証すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 08 Nov 2026 04:57:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>ローカルLLM利用のクリニックを受診してみた PCマニアの院長が自力で構築、その導入効果は？</title>
+      <link>https://www.itmedia.co.jp/aiplus/article/2611/09/2000002916/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/aiplus/article/2611/09/2000002916/</guid>
+      <description>[Score: 85] 都内のクリニックが患者情報を外部に送らないローカルLLMを導入し、話題となっています。 / 院長がMac Studioで自作した予約システムやVLMによる問診票処理など、AIを多岐にわたって活用。 / これにより、医療情報のセキュリティを確保しつつ、業務効率化を実現しています。 [実務示唆: 機微な情報を扱うシステムでは、ローカルLLMやVLMの導入を検討し、セキュリティと効率化を両立させる方法を模索すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 08 Nov 2026 23:17:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>マージンレイヤー — あるいは、「合格」は「失敗に程遠い」と同じではない</title>
+      <link>https://dev.to/goodpa/the-margin-layer-or-it-passed-is-not-the-same-as-it-was-nowhere-near-failing-462k</link>
+      <guid isPermaLink="false">https://dev.to/goodpa/the-margin-layer-or-it-passed-is-not-the-same-as-it-was-nowhere-near-failing-462k</guid>
+      <description>[Score: 85] システムが「合格」と報告されていても、その裏で性能が限界に近づいている可能性があることを指摘しています。 / テストやジョブの実行結果が「合格/不合格」の二値でしか評価されない場合、システムが許容範囲内であっても、その余裕（マージン）がどれだけ残っているかが見えなくなります。 / マージンレイヤーとは、システムが停止するまでの距離を記録し、その余裕を数値化する実践であり、これにより潜在的な問題を早期に発見し、対応できるようになります。 [実務示唆: システム監視において、単なる合否だけでなく、性能マージンを具体的な単位で計測・記録し、潜在的なボトルネックを早期に特定する仕組みを導入することを推奨します。] (Source: Dev.to)</description>
+      <pubDate>Mon, 09 Nov 2026 01:02:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>【公式】Pyxel 3.0リリース！世界初（？）レトロ3Dゲームエンジン機能を搭載！</title>
+      <link>https://qiita.com/kitao/items/af92619297d5563f2a0e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kitao/items/af92619297d5563f2a0e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Python向けレトロゲームエンジンPyxelがバージョン3.0をリリースし、レトロ3Dゲームエンジン機能「Pyxel Cube」を追加しました。 / Pyxel Cubeは、PlayStation 2時代のローポリゴン3Dを再現し、従来の2Dコードと共存して3D機能を利用できます。 / ノードツリー構造で3D空間のオブジェクトを組み立て、基本16色、半透明なしといった「不自由さ」を特徴としています。 [実務示唆: Pythonで手軽にレトロゲーム開発をしたいエンジニアは、Pyxel 3.0のPyxel Cubeを試すことで、レトロな雰囲気の3Dゲーム制作に挑戦し、新しい表現の可能性を探ることができます。] [GitHub: kitao/pyxel] (Source: Qiita)</description>
+      <pubDate>Sat, 07 Nov 2026 09:11:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>宣言的なドラッグ</title>
+      <link>https://declarative-dragging.github.io/</link>
+      <guid isPermaLink="false">https://declarative-dragging.github.io/</guid>
+      <description>[Score: 80] 本記事は、ドラッグ＆ドロップ操作をより簡単に実装するための「宣言的なドラッグ」という新しいアプローチを提案しています。 / 従来のドラッグ実装が複雑な幾何学、フィードバック、アニメーション処理を必要とするのに対し、この手法では要素が到達しうる未来の状態を宣言するだけで済みます。 / システムがこれらの状態を推測的にレンダリングし、スムーズで応答性の高いドラッグ＆ドロップインタラクションを自動生成します。 [実務示唆: 複雑なドラッグ＆ドロップ機能を実装する際は、宣言的なアプローチを検討し、UI開発の効率化とコードの簡素化を図るべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 04 Nov 2026 17:05:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>Arnisは地球上のあらゆる場所をMinecraftの世界に変える</title>
+      <link>https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/</guid>
+      <description>[Score: 78] Arnisは、OpenStreetMapなどの現実世界のデータを利用して、地球上のあらゆる場所をMinecraftの世界に変換するオープンソースプロジェクトです。 / 開発者のLouis Erbkamm氏が2022年に開始し、GitHubから90万回近くダウンロードされ、約70人のコントリビューターがいます。 / 地理空間データとゲームを組み合わせることで、ユーザーは現実の場所をMinecraft内で自由に探索できるようになります。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 03 Nov 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>MCP仕様を完全にサポートしたMCP公式のRuby SDKが登場。「MCP SDK Tier 1」に到達と</title>
+      <link>https://www.publickey1.jp/blog/26/mcpmcpruby_sdkmcp_sdk_tier_1.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/mcpmcpruby_sdkmcp_sdk_tier_1.html</guid>
+      <description>[Score: 78] Agentic AI Foundation (AAIF) が、MCP（Model Context Protocol）公式のRuby SDKが「MCP SDK Tier 1」に到達したことを発表しました。 / これにより、Ruby開発者はMCPの最新機能を完全に利用できるようになり、本番環境でのアプリケーション開発が安心して行えます。 / RubyはTypeScript、Python、C#、Go、Rustに続き、Tier 1対応言語となりました。 [実務示唆: RubyでAIエージェント開発を行うエンジニアは、MCP SDK Tier 1の登場により、より安定した環境で最新のMCP機能を活用できるようになります。] (Source: Publickey)</description>
+      <pubDate>Sun, 08 Nov 2026 15:12:29 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,34 +5,41 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 08 Nov 2026 12:15:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 01:17:43 +0000</lastBuildDate>
     <item>
-      <title>Cloudflare Zero Wire × GitHub Actions × Claude で公開サーバーの脆弱性チェックを自動化</title>
-      <link>https://zenn.dev/tomipetit/articles/zero-wire-github-actions</link>
-      <guid isPermaLink="false">https://zenn.dev/tomipetit/articles/zero-wire-github-actions</guid>
-      <description>[Score: 100] Cloudflare Zero WireとGitHub Actions、Claudeを連携させ、公開サーバーの脆弱性チェックを自動化する仕組みが紹介されています。 / Zero Wireが提供する「外向きのソフトウェアの重大なCVE」に特化した脆弱性情報をClaudeで分析し、サーバーへの影響を判定します。 / SSHでサーバーのインベントリ情報を収集し、Node.jsのバージョン取得など、非対話シェルでのハマりどころとその解決策も解説されています。 [実務示唆: 公開サーバーの脆弱性管理を効率化するため、Cloudflare Zero WireとGitHub Actions、LLMを組み合わせた自動チェックシステムを構築し、日々の運用に組み込むことを推奨します。] (Source: Zenn)</description>
-      <pubDate>Sat, 07 Nov 2026 06:44:47 +0000</pubDate>
+      <title>部品の脆弱性は、どこまで広がるのか？ 主要 64 製品と 8 部品の依存関係をたどったら、OpenSSL は 20、SQLite は 16、PHP は 11 だった</title>
+      <link>https://qiita.com/songchong/items/41a88eb41845af761b19?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/41a88eb41845af761b19?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 95] AIがソフトウェア部品の脆弱性を発見するようになり、一つの部品の脆弱性が多くの製品に影響を及ぼすことが調査で明らかになりました。 / OpenSSLの脆弱性は20製品、SQLiteは16製品、PHPは11製品に影響する可能性があり、サプライチェーン全体のリスクが浮き彫りになっています。 / この問題に対処するため、SBOM（ソフトウェア部品表）の活用と、AIや脆弱性管理ツールによるコンポーネントレベルでの脆弱性管理が推奨されています。 [実務示唆: 自社製品のSBOMを導入・活用し、使用しているオープンソースコンポーネントの脆弱性情報をAIや自動化ツールで継続的に監視し、サプライチェーン全体のリスクを可視化・管理すること。] (Source: Qiita)</description>
+      <pubDate>Sun, 08 Nov 2026 19:10:12 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeの「Don't Ask Again」が1,122件の公開GitHubファイルでパスワードを漏洩</title>
-      <link>https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</link>
-      <guid isPermaLink="false">https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</guid>
-      <description>[Score: 90] AIコーディングエージェント「Claude Code」の機能「Don't Ask Again」が、GitHub上の公開ファイルから機密情報を漏洩させていることが判明しました。 / 具体的には、1,122件の公開GitHubファイルでパスワードなどの秘密情報が露出しているとのことです。 / これは、AIエージェントが意図せず開発者の機密情報を公開してしまうリスクを示しています。 [実務示唆: AIコーディングエージェント利用時は、機密情報が意図せず公開されないよう、厳格なセキュリティレビューとアクセス制御を徹底する。] (Source: Hacker News)</description>
-      <pubDate>Sat, 07 Nov 2026 20:45:32 +0000</pubDate>
+      <title>Outlook.comがDMARCなしのドメインからのメールを静かに拒否している</title>
+      <link>https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</link>
+      <guid isPermaLink="false">https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</guid>
+      <description>[Score: 90] MicrosoftのOutlook.comが、DMARCレコードを公開していないドメインからのメールを密かに拒否し始めていることが判明しました。 / これにより、多くの企業が顧客やベンダーへのメールがバウンスする問題に直面しています。 / この変更は公式発表なしに行われ、SPF/DKIM/DMARC認証レコードの欠如が拒否理由とされています。 [実務示唆: メール送信を行う企業は、Outlook.comへの到達性を確保するため、速やかにDMARCレコードをDNSに設定し、メール認証を強化すべきです。] (Source: Hacker News)</description>
+      <pubDate>Sun, 08 Nov 2026 19:20:32 +0000</pubDate>
     </item>
     <item>
-      <title>Show HN: Coldframe、スーパーマーケットの冷蔵庫コントローラーを装うハニーポット</title>
-      <link>https://github.com/hedgerow-dev/coldframe</link>
-      <guid isPermaLink="false">https://github.com/hedgerow-dev/coldframe</guid>
-      <description>[Score: 90] Coldframeは、スーパーマーケットの冷蔵庫コントローラーを模倣したハニーポットです。 / デフォルトパスワードや未パッチのファームウェアを狙う攻撃者を誘引し、接続情報、試行パスワード、エクスプロイトを記録します。 / DanfossとDixellの2つの実在するコントローラーのペルソナを再現し、攻撃者に偽のダッシュボードを提供します。 [実務示唆: IoTデバイスのセキュリティ対策として、Coldframeのようなハニーポットを導入し、攻撃者の手口を分析することで、実際のシステム防御戦略を強化するのに役立ちます。] [GitHub: hedgerow-dev/coldframe] (Source: Hacker News)</description>
-      <pubDate>Sat, 07 Nov 2026 17:27:30 +0000</pubDate>
+      <title>脆弱性の情報は間に合っている？ 英語は 2 時間以内、悪用は 4 割が 1 日以内、日本語は中央値 4.6 日後。悪用された 74 件を調べて分かった</title>
+      <link>https://qiita.com/songchong/items/b3c6c879f03f9bb665d3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/b3c6c879f03f9bb665d3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AIによるサイバー攻撃の高速化に伴い、脆弱性情報が公開されてから悪用されるまでの時間が短縮しています。 / 英語の脆弱性情報は2時間以内に公開される一方、日本語の情報は中央値で4.6日遅れることが74件の悪用事例調査で判明しました。 / この情報格差により、日本語情報に依存するだけでは防御が間に合わないため、AIと自動化による情報収集の必要性が高まっています。 [実務示唆: 日本語の脆弱性情報に依存せず、CISA KEVカタログやNVDなどの英語情報源をAIと自動化ツールでリアルタイムに監視し、迅速な対応体制を構築すること。] (Source: Qiita)</description>
+      <pubDate>Sun, 08 Nov 2026 09:00:22 +0000</pubDate>
     </item>
     <item>
-      <title>米国情報機関、Nvidia CEOジェンスン・フアンがハニートラップ作戦で中国のスパイと関係を持ったと見ている</title>
-      <link>https://www.reddit.com/r/technology/comments/1xqbulk/us_intelligence_believes_nvidia_ceo_jensen_huang/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xqbulk/us_intelligence_believes_nvidia_ceo_jensen_huang/</guid>
-      <description>[Score: 85] 米国情報機関が、Nvidia CEOジェンスン・フアン氏が中国のスパイによるハニートラップ作戦に関与したと疑っていると報じられました。 / この疑惑は、Nvidiaの企業イメージや米中間の技術競争に大きな影響を与える可能性があります。 / 半導体業界のトップ企業CEOに関するスパイ疑惑は、地政学的リスクの深刻さを示しています。 [実務示唆: 重要技術企業の幹部は、個人情報や行動が国家レベルの監視対象となる可能性を認識し、セキュリティ意識を徹底する必要があります。] (Source: Reddit)</description>
-      <pubDate>Sat, 07 Nov 2026 17:27:57 +0000</pubDate>
+      <title>Linux nosymfollowは1つのシンボリックリンクパスをブロックするが、すべてのパス問題を解決するわけではない</title>
+      <link>https://dev.to/andreagomez/linux-nosymfollow-blocks-one-symlink-path-not-every-path-problem-3ajc</link>
+      <guid isPermaLink="false">https://dev.to/andreagomez/linux-nosymfollow-blocks-one-symlink-path-not-every-path-problem-3ajc</guid>
+      <description>[Score: 70] Linux 5.10で追加されたMS_NOSYMFOLLOWマウントフラグは、特定のファイルシステム上のシンボリックリンクの追跡を防止する機能です。 / この機能は、コンテンツルートやアップロードディレクトリなど、シンボリックリンクがエスケープルートになるべきではない特定のファイルツリーに対して有効です。 / しかし、nosymfollowはマウントポイントに限定された制御であり、アプリケーションレベルのパス検証、専用のサンドボックス、最小権限のサービスアカウントの代替にはならないと警告しています。 [実務示唆: MS_NOSYMFOLLOWはセキュリティ対策の一環として有効ですが、単独で完全なセキュリティを保証するものではないため、他のセキュリティ対策と組み合わせて利用し、過信しないよう注意してください。] (Source: Dev.to)</description>
+      <pubDate>Mon, 09 Nov 2026 01:00:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>ハッカーがリークしたロシア統計局の記録により、最大45万人のロシア人戦死者が明らかに</title>
+      <link>https://www.reddit.com/r/technology/comments/1xqxe29/hackers_claim_leaked_rosstat_records_reveal_up_to/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xqxe29/hackers_claim_leaked_rosstat_records_reveal_up_to/</guid>
+      <description>[Score: 65] ハッカー集団がロシア統計局（Rosstat）の記録をリークし、ロシアの戦争による死者数が最大45万人に上ると主張しています。 / この情報は、公式発表よりもはるかに多い数字であり、国際社会に大きな衝撃を与えています。 / データの信憑性については検証が必要ですが、情報戦の一環として注目されています。 [実務示唆: サイバーセキュリティの強化とデータ漏洩対策は、国家機関だけでなく企業にとっても喫緊の課題であり、常に最新の脅威情報を収集し対応策を講じるべきです。] (Source: Reddit)</description>
+      <pubDate>Sun, 08 Nov 2026 12:32:48 +0000</pubDate>
     </item>
   </channel>
 </rss>
