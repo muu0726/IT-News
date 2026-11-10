@@ -5,13 +5,13 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 14:25:22 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 03:51:27 +0000</lastBuildDate>
     <item>
-      <title>AWSから4.3億円の課金が...バグと思われる高額請求された際にまずすること</title>
-      <link>https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610</link>
-      <guid isPermaLink="false">https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610</guid>
-      <description>[Score: 95] AWS OpenSearch ServerlessのIntelligent ingestion利用中に、Nova 2 Liteのトークン料金が約4.3億円という異常な高額請求が発生した事例です。 / 原因はトークン数が100万倍で計上される課金バグと推測され、AWSサポートへの英語チャットでの迅速な連絡が解決の鍵となりました。 / 高額請求に遭遇した場合の初動対応として、英語チャットでのサポート連絡の重要性が強調されています。 [実務示唆: AWSで異常な高額請求が発生した際は、事象を簡潔にまとめて英語チャットでAWSサポートに連絡し、迅速な調査と修正を依頼することが最重要です。] (Source: Zenn)</description>
-      <pubDate>Sun, 08 Nov 2026 08:56:07 +0000</pubDate>
+      <title>Claude Fable 5.2とMythos 5.2</title>
+      <link>https://www.anthropic.com/claude-fable-and-mythos-5-2</link>
+      <guid isPermaLink="false">https://www.anthropic.com/claude-fable-and-mythos-5-2</guid>
+      <description>[Score: 100] Anthropicは、高度な技術的課題に対応するよう設計された大規模言語モデル「Claude Fable 5.2」と「Claude Mythos 5.2」をリリースしました。 / これらのモデルは、コーディング、推論、視覚能力が向上し、ソフトウェア移行、電子デバイス設計、物理学の問題解決などで顕著な成果を上げています。 / Fable 5.2は一般利用可能で、Mythos 5.2はサイバーセキュリティや生物医学研究向けの検証プログラムを通じてアクセス可能であり、旧モデルより最大30%高速化され、価格も引き下げられています。 [実務示唆: 最新のClaude Fable 5.2/Mythos 5.2は、コーディングや推論能力が向上し、コストも削減されたため、開発プロジェクトでのAI活用を積極的に検討し、既存のワークフローへの統合を試すべきです。] (Source: Hacker News)</description>
+      <pubDate>Mon, 09 Nov 2026 18:01:10 +0000</pubDate>
     </item>
     <item>
       <title>部品の脆弱性は、どこまで広がるのか？ 主要 64 製品と 8 部品の依存関係をたどったら、OpenSSL は 20、SQLite は 16、PHP は 11 だった</title>
@@ -21,11 +21,18 @@
       <pubDate>Sun, 08 Nov 2026 19:10:12 +0000</pubDate>
     </item>
     <item>
-      <title>ShopifyのReact Native→ネイティブ移行を支える「Reflex」をSwiftとKotlinで試す</title>
-      <link>https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin</link>
-      <guid isPermaLink="false">https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin</guid>
-      <description>[Score: 95] ShopifyがReact NativeからSwift/Kotlinネイティブへの移行を進める中で生まれたモバイルアプリアーキテクチャ「Reflex」について解説しています。 / ReflexはMVVMをベースにロジックをUIから切り離し、TypeScriptで共通の振る舞いテストを書くことで、iOSとAndroid両プラットフォームの挙動を揃えることを目的としています。 / コーディングエージェントの進化がネイティブ移行の決め手となった背景も紹介されています。 [実務示唆: クロスプラットフォーム開発からネイティブ移行を検討している企業は、Reflexの設計思想を参考に、ロジックとUIの分離、共通テストによる品質保証の仕組みを導入し、開発効率と品質向上を図るべきです。] (Source: Zenn)</description>
-      <pubDate>Mon, 09 Nov 2026 01:38:40 +0000</pubDate>
+      <title>転送ヘッダーは信頼できる入力ではない：トンネルの背後にあるX-Forwarded-For、Proto、Host</title>
+      <link>https://dev.to/instatunnel/forwarded-headers-are-not-trusted-input-x-forwarded-for-proto-and-host-behind-a-tunnel-8bn</link>
+      <guid isPermaLink="false">https://dev.to/instatunnel/forwarded-headers-are-not-trusted-input-x-forwarded-for-proto-and-host-behind-a-tunnel-8bn</guid>
+      <description>[Score: 95] アプリケーションをトンネルの背後に配置する際、X-Forwarded-For、X-Forwarded-Proto、X-Forwarded-Hostといった転送ヘッダーがアプリケーションの動作に影響を与えることを解説しています。 / これらのヘッダーを誤って信頼すると、リダイレクトループやレートリミッターの誤動作といった無害な問題から、攻撃者によるセキュリティチェックの回避といった有害な問題まで発生する可能性があります。 / FastifyやExpressの過去の脆弱性を例に挙げ、Express、Fastify、Django、Railsでの正しい設定方法を説明しています。 [実務示唆: プロキシやロードバランサーを使用するシステムでは、X-Forwardedヘッダーを信頼する範囲を厳密に設定し、アプリケーションが信頼できるソースからのヘッダーのみを処理するように構成することで、セキュリティリスクを軽減すべきです。] (Source: Dev.to)</description>
+      <pubDate>Tue, 10 Nov 2026 03:47:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>脆弱性の情報は間に合っている？ 英語は 2 時間以内、悪用は 4 割が 1 日以内、日本語は中央値 4.6 日後。悪用された 74 件を調べて分かった</title>
+      <link>https://qiita.com/songchong/items/b3c6c879f03f9bb665d3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/b3c6c879f03f9bb665d3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AIによるサイバー攻撃の高速化に伴い、脆弱性情報が公開されてから悪用されるまでの時間が短縮しています。 / 英語の脆弱性情報は2時間以内に公開される一方、日本語の情報は中央値で4.6日遅れることが74件の悪用事例調査で判明しました。 / この情報格差により、日本語情報に依存するだけでは防御が間に合わないため、AIと自動化による情報収集の必要性が高まっています。 [実務示唆: 日本語の脆弱性情報に依存せず、CISA KEVカタログやNVDなどの英語情報源をAIと自動化ツールでリアルタイムに監視し、迅速な対応体制を構築すること。] (Source: Qiita)</description>
+      <pubDate>Sun, 08 Nov 2026 09:00:22 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -42,109 +49,102 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>Outlook.comがDMARCなしのドメインからのメールを静かに拒否している</title>
-      <link>https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</link>
-      <guid isPermaLink="false">https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</guid>
-      <description>[Score: 90] MicrosoftのOutlook.comが、DMARCレコードを公開していないドメインからのメールを密かに拒否し始めていることが判明しました。 / これにより、多くの企業が顧客やベンダーへのメールがバウンスする問題に直面しています。 / この変更は公式発表なしに行われ、SPF/DKIM/DMARC認証レコードの欠如が拒否理由とされています。 [実務示唆: メール送信を行う企業は、Outlook.comへの到達性を確保するため、速やかにDMARCレコードをDNSに設定し、メール認証を強化すべきです。] (Source: Hacker News)</description>
-      <pubDate>Sun, 08 Nov 2026 19:20:32 +0000</pubDate>
+      <title>E-means: k-meansを10分の1のエポックで凌駕</title>
+      <link>https://e-means.github.io/</link>
+      <guid isPermaLink="false">https://e-means.github.io/</guid>
+      <description>[Score: 90] E-meansは、k-meansクラスタリングアルゴリズムの現代的な最適化手法であり、従来のLloydアルゴリズムを大幅に上回る性能を発揮します。 / GPUで10〜45倍、CPUで8〜15倍の高速化を実現しつつ、より優れたテスト損失を達成します。 / ミニバッチ更新と指数移動平均を採用し、ハイパーパラメータチューニングが不要な自動設定機能を備えています。 [実務示唆: E-meansはk-meansクラスタリングを高速化し、品質も向上させるため、大規模データセットのクラスタリングタスクにおいて、既存のk-means実装をE-meansに置き換えることを検討し、その性能を検証すべきです。] [GitHub: e-means/e-means.github.io] (Source: Hacker News)</description>
+      <pubDate>Mon, 09 Nov 2026 18:45:43 +0000</pubDate>
     </item>
     <item>
-      <title>脆弱性の情報は間に合っている？ 英語は 2 時間以内、悪用は 4 割が 1 日以内、日本語は中央値 4.6 日後。悪用された 74 件を調べて分かった</title>
-      <link>https://qiita.com/songchong/items/b3c6c879f03f9bb665d3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/b3c6c879f03f9bb665d3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AIによるサイバー攻撃の高速化に伴い、脆弱性情報が公開されてから悪用されるまでの時間が短縮しています。 / 英語の脆弱性情報は2時間以内に公開される一方、日本語の情報は中央値で4.6日遅れることが74件の悪用事例調査で判明しました。 / この情報格差により、日本語情報に依存するだけでは防御が間に合わないため、AIと自動化による情報収集の必要性が高まっています。 [実務示唆: 日本語の脆弱性情報に依存せず、CISA KEVカタログやNVDなどの英語情報源をAIと自動化ツールでリアルタイムに監視し、迅速な対応体制を構築すること。] (Source: Qiita)</description>
-      <pubDate>Sun, 08 Nov 2026 09:00:22 +0000</pubDate>
+      <title>ソフトバンク社長「自社システムをGPT-6 Astraで診断したら3.5万件の追加脆弱性を発見」と明かす</title>
+      <link>https://japan.cnet.com/article/35254620/</link>
+      <guid isPermaLink="false">https://japan.cnet.com/article/35254620/</guid>
+      <description>[Score: 90] ソフトバンクの宮川社長は、AIの悪用によるサイバー攻撃の急増と、それへの対応状況を説明しました。 / 自社システムをOpenAIのGPT-6 Astraで診断したところ、以前の診断では見つからなかった3万5000件もの脆弱性が新たに発見されたことを明らかにしました。 / AIによる脆弱性診断は効果的であるものの、新たなAIモデルの登場により、常に最新の対策が求められる現状が浮き彫りになっています。 [実務示唆: AIを活用した脆弱性診断は非常に有効だが、AIモデルの進化が速いため、常に最新のモデルでシステムを再診断し、継続的なセキュリティ対策を講じるべき。] (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 09 Nov 2026 22:53:05 +0000</pubDate>
     </item>
     <item>
-      <title>コード非公開のWebサイト・アプリ・ゲームを解析し、AIが類似版を生成する無料ツール「Craft Anything」（生成AIクローズアップ） | テクノエッジ TechnoEdge</title>
-      <link>https://www.techno-edge.net/article/2026/11/09/5686.html</link>
-      <guid isPermaLink="false">https://www.techno-edge.net/article/2026/11/09/5686.html</guid>
-      <description>[Score: 90] 「Craft Anything」は、既存のWebサイト、アプリ、ゲームの仕組みを解析し、AIが類似バージョンを生成するオープンソースツールです。 / コード非公開の対象でも、スクリーンショットやレイアウト情報から「外から観察」または内部コードまで読み取る「中まで解析」の2つのモードで動作します。 / 外部AIエージェント（Claude Codeなど）と連携し、自動でプロジェクトを生成・修正し、オリジナルに近づくまで手直しを重ねる点が特徴です。 [実務示唆: 開発者は、Craft Anythingのようなツールを活用して、既存のUI/UXを参考に新しいアプリケーションのプロトタイプを迅速に作成したり、レガシーシステムの再構築のヒントを得たりすることを検討すべきです。] [GitHub: seamless-ai/craft-anything] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 08 Nov 2026 22:49:48 +0000</pubDate>
+      <title>1.8% CPU停止：AIエージェントランタイムがコネクションプールを枯渇させる理由</title>
+      <link>https://dev.to/sahil_5eec7e7c6004ad71a7b/the-18-cpu-outage-why-ai-agent-runtimes-starve-connection-pools-1an</link>
+      <guid isPermaLink="false">https://dev.to/sahil_5eec7e7c6004ad71a7b/the-18-cpu-outage-why-ai-agent-runtimes-starve-connection-pools-1an</guid>
+      <description>[Score: 90] AIエージェントやバックグラウンドワーカーが外部システムからの応答を待つ間、コネクションプールを長時間占有し、データベースCPU使用率が低いにもかかわらずサービス停止を引き起こす問題について解説しています。 / この問題は、データベースだけでなく、Redis、HTTPクライアント、Kafkaなど、有限なリソースを保持するあらゆるシステムで発生し得ます。 / ボトルネックはCPUではなく、外部システムへの未バッファ呼び出し中にリソースが保持される待機時間（W）にあると指摘し、その検出方法も提示しています。 [実務示唆: AIエージェントや外部API連携を含むシステムでは、コネクションプールの枯渇を避けるため、リソースの保持時間を最小化する設計を検討し、CI/CDパイプラインで接続プールの健全性を監視するテストを導入すべきです。] (Source: Dev.to)</description>
+      <pubDate>Tue, 10 Nov 2026 03:47:43 +0000</pubDate>
     </item>
     <item>
-      <title>AWSでデータが壊れたとき（HA &amp; DR パート2）：RTO、RPO、ポイントインタイムリカバリ、DR戦略の選択</title>
-      <link>https://dev.to/joshuaer/when-your-data-breaks-on-aws-ha-dr-part-2-rto-rpo-point-in-time-recovery-and-choosing-a-dr-49g3</link>
-      <guid isPermaLink="false">https://dev.to/joshuaer/when-your-data-breaks-on-aws-ha-dr-part-2-rto-rpo-point-in-time-recovery-and-choosing-a-dr-49g3</guid>
-      <description>[Score: 90] AWS環境でのデータ破損に備え、RPO（Recovery Point Objective）とRTO（Recovery Time Objective）の重要性を解説しています。 / RPOは許容できるデータ損失量、RTOは許容できるダウンタイムを指し、これらはビジネス要件に基づいて設定されます。 / これらの指標を基に、ポイントインタイムリカバリや適切な災害復旧（DR）戦略を選択する必要があることを強調しています。 [実務示唆: AWS環境でシステムを構築する際は、ビジネス要件に基づきRPOとRTOを明確に定義し、それに応じたDR戦略とポイントインタイムリカバリを設計・実装すべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 09 Nov 2026 01:03:02 +0000</pubDate>
+      <title>Payments Canadaがカナダのリアルタイム決済システム（RTR）の稼働を発表</title>
+      <link>https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy</link>
+      <guid isPermaLink="false">https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy</guid>
+      <description>[Score: 85] Payments Canadaが、カナダの新しいリアルタイム決済システム「Real-Time Rail（RTR）」の稼働を発表しました。 / このシステムにより、参加金融サービスプロバイダーは24時間365日、リアルタイムでの決済清算・決済が可能になります。 / カナダ経済の基盤となる重要なインフラの近代化であり、将来のイノベーションと成長のプラットフォームとなることが期待されます。 [実務示唆: カナダのリアルタイム決済システムRTRの導入は、金融サービス開発に大きな影響を与えるため、カナダ市場向けの決済システムを開発するエンジニアは、RTRへの対応と新たなサービス機会を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Mon, 09 Nov 2026 16:00:45 +0000</pubDate>
     </item>
     <item>
-      <title>LLMアプリケーションのプロンプトをどこで管理するか</title>
-      <link>https://zenn.dev/painter/articles/663816c3195cec</link>
-      <guid isPermaLink="false">https://zenn.dev/painter/articles/663816c3195cec</guid>
-      <description>[Score: 90] LLMアプリケーションの本番運用において、プロンプトをコードと共にリポジトリで管理するか、Langfuseのようなプロンプト管理ツールで管理するかの選択肢を比較しています。 / OpenAIがダッシュボードでのプロンプト管理サービスを終了し、コードでの管理を推奨している背景も紹介されています。 / プロンプトとコードの密結合性や、変更時の整合性維持の重要性について、具体的な例を挙げて解説しています。 [実務示唆: LLMアプリケーション開発者は、プロンプト管理の戦略を早期に決定し、プロンプトとコードの密結合度に応じて、リポジトリ管理か専用ツール利用かを検討し、バージョン管理とデプロイフローを確立すべきです。] (Source: Zenn)</description>
-      <pubDate>Mon, 09 Nov 2026 03:11:23 +0000</pubDate>
+      <title>AIチップの「探す」機能を構築する競争</title>
+      <link>https://spectrum.ieee.org/find-my-ai-chip</link>
+      <guid isPermaLink="false">https://spectrum.ieee.org/find-my-ai-chip</guid>
+      <description>[Score: 85] 米国はAIチップの中国への密輸・転用を阻止するため輸出規制を強化していますが、依然としてチップが中国で発見されています。 / この問題に対処するため、米国はAIチップの所在確認技術に注目しており、位置情報検証を義務付ける法案が検討されています。 / チップメーカーは、改ざん防止ハードウェア、暗号署名、チップの指紋認証などの技術でこれに対応する可能性があります。 [実務示唆: AIチップのサプライチェーンに関わる企業は、将来的な位置情報検証義務化に備え、改ざん防止技術や追跡システムの導入を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Mon, 09 Nov 2026 14:09:02 +0000</pubDate>
     </item>
     <item>
-      <title>AIエージェントに自分の開発環境を作らせ続けた2か月</title>
-      <link>https://zenn.dev/otar/articles/switchboard-own-dev-environment</link>
-      <guid isPermaLink="false">https://zenn.dev/otar/articles/switchboard-own-dev-environment</guid>
-      <description>[Score: 90] 筆者が2ヶ月間、AIエージェント（Claude CodeとCodex）に自身の開発環境「Switchboard」を構築・改善させ続けた経験を共有しています。 / AIエージェントがコードの大部分を書き、要望からマージまでを自動で進める仕組みを構築し、開発コストと修正コストの削減に成功しています。 / コミット数やPR数、PBIのクローズ時間など、具体的な開発実績の数字も公開されています。 [実務示唆: 開発者は、AIエージェントを活用して自身の開発環境を自動化・最適化する可能性を探り、ルーティンワークや環境構築のコスト削減に繋がるツールやスクリプトをAIに作成させることを検討すべきです。] [GitHub: otar/switchboard] (Source: Zenn)</description>
-      <pubDate>Sun, 08 Nov 2026 21:41:08 +0000</pubDate>
+      <title>AI「テスト通りました」← これ､本当？ Stryker でテストの穴を塞いだ話</title>
+      <link>https://qiita.com/Dingu-suke/items/b5318ef2040a9f59224a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Dingu-suke/items/b5318ef2040a9f59224a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AIが生成したテストが本当にコードの品質を保証しているか疑問視される中、ミューテーションテストが注目されています。 / Strykerはコードを意図的に破壊（変異）し、テストがその破壊を検知できるかを検証するツールです。 / これにより、テストのカバレッジだけでは見つけられないテストの弱点や穴を特定し、より堅牢なテストスイートを構築できます。 [実務示唆: AI生成テストの品質保証のため、Strykerなどのミューテーションテストツールを導入し、テストの網羅性と堅牢性を定期的に検証することを推奨します。] [GitHub: stryker-mutator/stryker] (Source: Qiita)</description>
+      <pubDate>Mon, 09 Nov 2026 07:45:09 +0000</pubDate>
     </item>
     <item>
-      <title>東京リージョンで使っていてもバージニア北部に依存しているもの</title>
-      <link>https://qiita.com/yama3133/items/5416c243e14a5406dd6f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yama3133/items/5416c243e14a5406dd6f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AWSの東京リージョンでシステムを運用していても、一部のサービスはus-east-1（バージニア北部）にコントロールプレーンが依存していることが判明しました。 / 2025年10月20日のus-east-1での大規模障害が東京リージョンにも影響を与えた原因は、このグローバルサービスのコントロールプレーンの配置にあります。 / 記事では、AWSの公式ドキュメントと障害報告に基づき、us-east-1にコントロールプレーンがあるサービスや、us-east-1でしか提供されていないサービスが具体的に整理されています。 [実務示唆: AWS利用者は、東京リージョン利用時でもus-east-1に依存するサービスを把握し、障害発生時の影響範囲を考慮したDR戦略を検討すべきです。] (Source: Qiita)</description>
-      <pubDate>Fri, 06 Nov 2026 13:18:11 +0000</pubDate>
+      <title>Google、Kubernetesで10倍高密度にAIエージェントを実行可能にする「Agent Sustrate」と「gVisor」、オープンソースとしてCNCFに寄贈と発表</title>
+      <link>https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</guid>
+      <description>[Score: 85] Googleは、Kubernetes上でAIエージェントを10倍高密度に実行可能にするオープンソースソフトウェア「Agent Substrate」と「gVisor」をCNCFに寄贈しました。 / AIエージェントはアイドル時間が長く、Kubernetes単体では効率的な実行が困難であるという課題を解決します。 / これにより、AIエージェントの実行基盤としてのKubernetesの効率と密度が大幅に向上し、AI開発のコスト削減とスケーラビリティに貢献します。 [実務示唆: Kubernetes上でAIエージェントを運用している、または検討している開発者は、Agent SubstrateとgVisorを導入し、リソース効率とコスト削減効果を検証すべき。] [GitHub: google/gvisor] (Source: Publickey)</description>
+      <pubDate>Mon, 09 Nov 2026 15:25:30 +0000</pubDate>
     </item>
     <item>
-      <title>ソフトウェア産業が消滅する日──小さなローカルAIが暴く「プログラムを売る」という商売の終焉</title>
-      <link>https://wirelesswire.jp/2026/11/94903/</link>
-      <guid isPermaLink="false">https://wirelesswire.jp/2026/11/94903/</guid>
-      <description>[Score: 90] 小さなローカルLLM「mightyCode」がApple Silicon Mac上で動作し、Claude CodeのAPIをローカルLLM向けに変換することで、外部APIに依存しないプログラミングエージェントを実現しました。 / これにより、プログラムの読み書き、コマンド実行、テスト、修正といった一連の作業がローカルで完結し、利用料金や時間制限なしで試行錯誤が可能になります。 / NVIDIAの「You don’t need long context」論文に基づく仕組みも取り入れられており、ソフトウェア産業のビジネスモデルに大きな変革をもたらす可能性が示唆されています。 [実務示唆: ローカルLLMを活用した開発環境の構築を検討し、外部API依存を減らすことでコスト削減と開発効率向上を図るべきです。] [GitHub: shi3z/mightyCode] (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 09 Nov 2026 03:53:21 +0000</pubDate>
+      <title>マイクロソフト、150以上のオープンソースUIコンポーネントがBlazorに寄贈されたことを発表。InfragisticsとSyncfusionから</title>
+      <link>https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</guid>
+      <description>[Score: 85] マイクロソフトは、C#などの.NETテクノロジーでWebアプリ開発を可能にするフレームワーク「Blazor」に、150以上のオープンソースUIコンポーネントが寄贈されたと発表しました。 / これはInfragisticsとSyncfusionとの協力によるもので、それぞれ50以上、100以上のBlazor対応UIコンポーネントがMITライセンスで提供されます。 / チャート、ボタン、カレンダー、グリッドなど、ビジネスアプリケーション開発に役立つ多様なコンポーネントが含まれています。 [実務示唆: Blazor開発者は、InfragisticsとSyncfusionから寄贈されたMITライセンスの豊富なUIコンポーネントを活用し、開発効率とアプリケーション品質の向上を図るべきです。] (Source: Publickey)</description>
+      <pubDate>Mon, 09 Nov 2026 15:22:44 +0000</pubDate>
     </item>
     <item>
-      <title>SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話</title>
-      <link>https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763</link>
-      <guid isPermaLink="false">https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763</guid>
-      <description>[Score: 88] PostgreSQLのマイグレーションが、一見無害なSELECT文のみのトランザクションによってロック待ちで失敗した事例が紹介されています。 / 当初はDatastreamやCONCURRENTLYオプションの欠如が疑われましたが、最終的な原因は「idle in transaction」状態のセッションでした。 / 外部API呼び出しなどでトランザクションが長時間開いたままになることが、DBロックの原因となることが示されています。 [実務示唆: PostgreSQLでマイグレーションがロック待ちで失敗する場合、アプリケーションコードの「idle in transaction」状態のセッションを疑い、トランザクションの適切な管理と早期コミットを徹底してください。] (Source: Zenn)</description>
-      <pubDate>Sun, 08 Nov 2026 08:41:46 +0000</pubDate>
+      <title>ゼロから作ったMamba3言語モデルを日本語で話せる全二重音声対話モデルに拡張するまで</title>
+      <link>https://zenn.dev/taaroo/articles/47f8d1ac55d4af</link>
+      <guid isPermaLink="false">https://zenn.dev/taaroo/articles/47f8d1ac55d4af</guid>
+      <description>[Score: 82] Mamba3言語モデル（NanoMambaLM）をベースに、日本語対応の全二重音声対話モデル「NanoMamba-Duplex」を開発した事例です。 / 全二重対話は、ユーザーの音声を聞きながら同時に応答できるため、より自然な会話体験を実現します。 / 既存の全二重モデルと比較して非常に小型（0.26B）でありながら、意味のある返答が可能な最小級モデルとして注目されます。 [実務示唆: 全二重音声対話モデルの構築を検討する際、特にリソースが限られる環境では、小型モデルであるMambaベースのアーキテクチャを検討し、日本語データでの学習戦略を参考にすべきです。] (Source: Zenn)</description>
+      <pubDate>Mon, 09 Nov 2026 14:48:35 +0000</pubDate>
     </item>
     <item>
-      <title>最も美しいダッシュボードは嘘をついている（そしてGrafanaは決して教えてくれない）</title>
-      <link>https://dev.to/honeykiran/your-prettiest-dashboard-is-lying-to-you-and-grafana-will-never-tell-you-2p7a</link>
-      <guid isPermaLink="false">https://dev.to/honeykiran/your-prettiest-dashboard-is-lying-to-you-and-grafana-will-never-tell-you-2p7a</guid>
-      <description>[Score: 88] Grafanaなどのダッシュボードは、クエリがデータを返さない場合でも、エラーを表示せず平坦な線として描画することがあります。 / これは、メトリック名変更やスクレイプジョブの変更などにより、クエリが死んでいることが原因です。 / ダッシュボードが「嘘」をつくことを防ぐため、手動監査やアラート設定による「嘘発見器」の導入が推奨されます。 [実務示唆: Grafanaなどの監視ダッシュボードの信頼性を確保するため、定期的なクエリの健全性チェックと、データ欠損を検知するアラート設定を導入すべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 09 Nov 2026 01:03:03 +0000</pubDate>
+      <title>【公式】Pyxel 3.0リリース！世界初（？）レトロ3Dゲームエンジン機能を搭載！</title>
+      <link>https://qiita.com/kitao/items/af92619297d5563f2a0e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kitao/items/af92619297d5563f2a0e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Python向けレトロゲームエンジンPyxelがバージョン3.0をリリースし、レトロ3Dゲームエンジン機能「Pyxel Cube」を追加しました。 / Pyxel Cubeは、PlayStation 2時代のローポリゴン3Dを再現し、従来の2Dコードと共存して3D機能を利用できます。 / ノードツリー構造で3D空間のオブジェクトを組み立て、基本16色、半透明なしといった「不自由さ」を特徴としています。 [実務示唆: Pythonで手軽にレトロゲーム開発をしたいエンジニアは、Pyxel 3.0のPyxel Cubeを試すことで、レトロな雰囲気の3Dゲーム制作に挑戦し、新しい表現の可能性を探ることができます。] [GitHub: kitao/pyxel] (Source: Qiita)</description>
+      <pubDate>Sat, 07 Nov 2026 09:11:57 +0000</pubDate>
     </item>
     <item>
-      <title>Linuxカーネルの深刻な脆弱性／FDEの名前で単なるコンサルティングが販売／TypeScriptをRustに移植した「tsrs」発表ほか、2026年10月の人気記事</title>
-      <link>https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</guid>
-      <description>[Score: 85] 2026年10月の人気記事として、Linuxカーネルの深刻な脆弱性「PwnEscape」が報じられました。 / また、FDE（フォワードデプロイエンジニアリング）の名目でコンサルティングが販売されるリスクが指摘されています。 / CloudflareがTypeScriptをRustに移植した「tsrs」を発表し、メモリ使用量と速度で大幅な改善が見られます。 [実務示唆: Linuxカーネルの脆弱性「PwnEscape」はゲストVMからホストOSへの不正コード実行の可能性があるため、速やかにパッチ適用やセキュリティ対策の確認を行うべきです。] [GitHub: cloudflare/tsrs] (Source: Publickey)</description>
-      <pubDate>Thu, 05 Nov 2026 15:37:44 +0000</pubDate>
+      <title>NormGym: 社会的相互作用を通じた規範的コンピテンシーの評価</title>
+      <link>https://arxiv.org/abs/2611.08613</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.08613</guid>
+      <description>[Score: 80] 本論文は、社会的相互作用を通じてAIの規範的コンピテンシーを評価するためのフレームワーク「NormGym」を提案しています。 / 規範的コンピテンシーとは、AIが社会的なルールや倫理を理解し、適切に行動する能力を指します。 / arXivLabsは、研究者が新しいarXiv機能を開発・共有するためのフレームワークを提供しています。 [実務示唆: AI倫理や安全性に関わる研究者は、NormGymのような評価フレームワークを活用し、AIが社会規範を遵守する能力を客観的に測定・改善するアプローチを検討すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 09 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research</title>
-      <link>https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</guid>
-      <description>[Score: 85] 2026年第3四半期のクラウドインフラ市場は前年比55%増と過去最高の成長率を記録し、市場規模は1680億ドルに達しました。 / AWSのシェアは2ポイント後退して26%となり、Microsoft Azureは1ポイント減の19%、Google Cloudは1ポイント増の16%となりました。 / AIワークロードに特化した「ネオクラウド」ベンダーが台頭し、市場競争が激化しています。 (Source: Publickey)</description>
-      <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
+      <title>Nvidiaにはジェンスン・フアン氏の後継者がいない</title>
+      <link>https://www.reddit.com/r/technology/comments/1xs4bvx/nvidia_has_no_obvious_successor_to_jensen_huang/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xs4bvx/nvidia_has_no_obvious_successor_to_jensen_huang/</guid>
+      <description>[Score: 80] NvidiaのCEOであるジェンスン・フアン氏には、明確な後継者がいないと報じられています。 / これは、Nvidiaの将来のリーダーシップと方向性に関する懸念を引き起こす可能性があります。 / フアン氏の強力なリーダーシップがNvidiaの成功に不可欠であったため、後継者問題は投資家や業界関係者にとって重要な関心事です。 [実務示唆: Nvidiaの投資家やビジネスパートナーは、同社の将来のリーダーシップ計画に注意を払い、経営体制の安定性や戦略の継続性について情報収集を行うべきです。] (Source: Reddit)</description>
+      <pubDate>Mon, 09 Nov 2026 21:28:19 +0000</pubDate>
     </item>
     <item>
-      <title>自宅サーバーにClaude Codeを常駐させ、スマホから24時間指示を出す（Remote Control＋systemd）</title>
-      <link>https://zenn.dev/samurai_works/articles/114a5e654ca295</link>
-      <guid isPermaLink="false">https://zenn.dev/samurai_works/articles/114a5e654ca295</guid>
-      <description>[Score: 85] 自宅のLinuxサーバーにClaude Codeを常駐させ、外出先のスマホからリモートでサーバー上のファイル操作を指示できるシステムを構築した事例です。 / ポート開放やVPNなしで動作する構成で、Claude CodeのRemote Control機能とsystemdを活用しています。 / セットアップ手順やハマりどころ、特にClaude専用ユーザーの作成とlinger設定の重要性が解説されています。 [実務示唆: 自宅サーバーや検証環境でClaude Codeを常駐させ、リモートからAIにファイル操作を指示する際は、systemdのlinger設定と専用ユーザーの権限管理に注意して構築してください。] (Source: Zenn)</description>
-      <pubDate>Sun, 08 Nov 2026 08:59:05 +0000</pubDate>
+      <title>Claude Fable 5.2へのプロンプト</title>
+      <link>https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5-2</link>
+      <guid isPermaLink="false">https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5-2</guid>
+      <description>[Score: 80] Claude Fable 5.2は、以前のモデルとは異なるプロンプトパターンとエフォートレベルの調整が必要です。 / エフォートレベルはモデルの思考量、時間、トークン使用量を制御し、ユースケースに応じてhigh、medium、lowを選択します。 / 長い複数ステップのタスクでモデルが途中で停止する問題には、システムプロンプトに特定の指示を追加することで対応できます。 [実務示唆: Claude Fable 5.2を利用する際は、エフォートレベルを慎重に調整し、長いタスクでの停止を防ぐためシステムプロンプトに指示を追加して検証すること。] (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 09 Nov 2026 22:21:33 +0000</pubDate>
     </item>
     <item>
-      <title>Shizuku-Duplex：自然な間合いで話す日本語 Full-Duplex モデル</title>
-      <link>https://shizuku.ai/blog/1/</link>
-      <guid isPermaLink="false">https://shizuku.ai/blog/1/</guid>
-      <description>[Score: 85] Shizuku-Duplexは、人間のような自然な間合いで会話できる日本語Full-Duplex対話モデルです。 / 相手の話を聞きながら相槌を打ち、話し終えるのを待たずに返答できる点が特徴です。 / 日本語性能において、GPT-Liveを含む既存のFull-Duplexモデルの中で最も優れた自然な会話体験を提供します。 [実務示唆: AIアシスタントやチャットボット開発者は、Shizuku-DuplexのようなFull-Duplexモデルを導入することで、より人間らしい自然な対話体験をユーザーに提供できるか検証すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 08 Nov 2026 04:57:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>ローカルLLM利用のクリニックを受診してみた PCマニアの院長が自力で構築、その導入効果は？</title>
-      <link>https://www.itmedia.co.jp/aiplus/article/2611/09/2000002916/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/aiplus/article/2611/09/2000002916/</guid>
-      <description>[Score: 85] 都内のクリニックが患者情報を外部に送らないローカルLLMを導入し、話題となっています。 / 院長がMac Studioで自作した予約システムやVLMによる問診票処理など、AIを多岐にわたって活用。 / これにより、医療情報のセキュリティを確保しつつ、業務効率化を実現しています。 [実務示唆: 機微な情報を扱うシステムでは、ローカルLLMやVLMの導入を検討し、セキュリティと効率化を両立させる方法を模索すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 08 Nov 2026 23:17:44 +0000</pubDate>
+      <title>TextractとBedrockを使ってAWS上にスマートな請求書・領収書スキャナーを構築する</title>
+      <link>https://dev.to/omayrashraf/building-a-smart-invoice-receipt-scanner-on-aws-with-textract-and-bedrock-j2f</link>
+      <guid isPermaLink="false">https://dev.to/omayrashraf/building-a-smart-invoice-receipt-scanner-on-aws-with-textract-and-bedrock-j2f</guid>
+      <description>[Score: 80] 手作業による請求書・領収書処理の課題を解決するため、AWSのTextractとBedrockを活用したスマートスキャナーの構築方法を解説しています。 / このソリューションは、Amazon S3、AWS Lambda、EventBridge、DynamoDB、Step Functionsなどを組み合わせたイベント駆動型アーキテクチャを採用しています。 / 単なるテキスト抽出に留まらず、重複検出、順不同処理、情報検証、人間によるレビューへのルーティングなど、信頼性の高い財務文書ワークフローの構築を目指します。 [実務示唆: 財務文書処理の自動化を検討している企業は、AWS TextractとBedrockを組み合わせたソリューションを導入し、手作業によるエラー削減と業務効率向上を図るべきです。] (Source: Dev.to)</description>
+      <pubDate>Tue, 10 Nov 2026 03:47:27 +0000</pubDate>
     </item>
   </channel>
 </rss>

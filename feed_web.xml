@@ -5,14 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 14:25:22 +0000</lastBuildDate>
-    <item>
-      <title>AWSから4.3億円の課金が...バグと思われる高額請求された際にまずすること</title>
-      <link>https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610</link>
-      <guid isPermaLink="false">https://zenn.dev/tsumita7/articles/aoss-intelligent-ingestion-billing-202610</guid>
-      <description>[Score: 95] AWS OpenSearch ServerlessのIntelligent ingestion利用中に、Nova 2 Liteのトークン料金が約4.3億円という異常な高額請求が発生した事例です。 / 原因はトークン数が100万倍で計上される課金バグと推測され、AWSサポートへの英語チャットでの迅速な連絡が解決の鍵となりました。 / 高額請求に遭遇した場合の初動対応として、英語チャットでのサポート連絡の重要性が強調されています。 [実務示唆: AWSで異常な高額請求が発生した際は、事象を簡潔にまとめて英語チャットでAWSサポートに連絡し、迅速な調査と修正を依頼することが最重要です。] (Source: Zenn)</description>
-      <pubDate>Sun, 08 Nov 2026 08:56:07 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 10 Nov 2026 03:51:27 +0000</lastBuildDate>
     <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
       <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
@@ -21,67 +14,25 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>AWSでデータが壊れたとき（HA &amp; DR パート2）：RTO、RPO、ポイントインタイムリカバリ、DR戦略の選択</title>
-      <link>https://dev.to/joshuaer/when-your-data-breaks-on-aws-ha-dr-part-2-rto-rpo-point-in-time-recovery-and-choosing-a-dr-49g3</link>
-      <guid isPermaLink="false">https://dev.to/joshuaer/when-your-data-breaks-on-aws-ha-dr-part-2-rto-rpo-point-in-time-recovery-and-choosing-a-dr-49g3</guid>
-      <description>[Score: 90] AWS環境でのデータ破損に備え、RPO（Recovery Point Objective）とRTO（Recovery Time Objective）の重要性を解説しています。 / RPOは許容できるデータ損失量、RTOは許容できるダウンタイムを指し、これらはビジネス要件に基づいて設定されます。 / これらの指標を基に、ポイントインタイムリカバリや適切な災害復旧（DR）戦略を選択する必要があることを強調しています。 [実務示唆: AWS環境でシステムを構築する際は、ビジネス要件に基づきRPOとRTOを明確に定義し、それに応じたDR戦略とポイントインタイムリカバリを設計・実装すべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 09 Nov 2026 01:03:02 +0000</pubDate>
+      <title>1.8% CPU停止：AIエージェントランタイムがコネクションプールを枯渇させる理由</title>
+      <link>https://dev.to/sahil_5eec7e7c6004ad71a7b/the-18-cpu-outage-why-ai-agent-runtimes-starve-connection-pools-1an</link>
+      <guid isPermaLink="false">https://dev.to/sahil_5eec7e7c6004ad71a7b/the-18-cpu-outage-why-ai-agent-runtimes-starve-connection-pools-1an</guid>
+      <description>[Score: 90] AIエージェントやバックグラウンドワーカーが外部システムからの応答を待つ間、コネクションプールを長時間占有し、データベースCPU使用率が低いにもかかわらずサービス停止を引き起こす問題について解説しています。 / この問題は、データベースだけでなく、Redis、HTTPクライアント、Kafkaなど、有限なリソースを保持するあらゆるシステムで発生し得ます。 / ボトルネックはCPUではなく、外部システムへの未バッファ呼び出し中にリソースが保持される待機時間（W）にあると指摘し、その検出方法も提示しています。 [実務示唆: AIエージェントや外部API連携を含むシステムでは、コネクションプールの枯渇を避けるため、リソースの保持時間を最小化する設計を検討し、CI/CDパイプラインで接続プールの健全性を監視するテストを導入すべきです。] (Source: Dev.to)</description>
+      <pubDate>Tue, 10 Nov 2026 03:47:43 +0000</pubDate>
     </item>
     <item>
-      <title>東京リージョンで使っていてもバージニア北部に依存しているもの</title>
-      <link>https://qiita.com/yama3133/items/5416c243e14a5406dd6f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yama3133/items/5416c243e14a5406dd6f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AWSの東京リージョンでシステムを運用していても、一部のサービスはus-east-1（バージニア北部）にコントロールプレーンが依存していることが判明しました。 / 2025年10月20日のus-east-1での大規模障害が東京リージョンにも影響を与えた原因は、このグローバルサービスのコントロールプレーンの配置にあります。 / 記事では、AWSの公式ドキュメントと障害報告に基づき、us-east-1にコントロールプレーンがあるサービスや、us-east-1でしか提供されていないサービスが具体的に整理されています。 [実務示唆: AWS利用者は、東京リージョン利用時でもus-east-1に依存するサービスを把握し、障害発生時の影響範囲を考慮したDR戦略を検討すべきです。] (Source: Qiita)</description>
-      <pubDate>Fri, 06 Nov 2026 13:18:11 +0000</pubDate>
+      <title>Google、Kubernetesで10倍高密度にAIエージェントを実行可能にする「Agent Sustrate」と「gVisor」、オープンソースとしてCNCFに寄贈と発表</title>
+      <link>https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</guid>
+      <description>[Score: 85] Googleは、Kubernetes上でAIエージェントを10倍高密度に実行可能にするオープンソースソフトウェア「Agent Substrate」と「gVisor」をCNCFに寄贈しました。 / AIエージェントはアイドル時間が長く、Kubernetes単体では効率的な実行が困難であるという課題を解決します。 / これにより、AIエージェントの実行基盤としてのKubernetesの効率と密度が大幅に向上し、AI開発のコスト削減とスケーラビリティに貢献します。 [実務示唆: Kubernetes上でAIエージェントを運用している、または検討している開発者は、Agent SubstrateとgVisorを導入し、リソース効率とコスト削減効果を検証すべき。] [GitHub: google/gvisor] (Source: Publickey)</description>
+      <pubDate>Mon, 09 Nov 2026 15:25:30 +0000</pubDate>
     </item>
     <item>
-      <title>SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話</title>
-      <link>https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763</link>
-      <guid isPermaLink="false">https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763</guid>
-      <description>[Score: 88] PostgreSQLのマイグレーションが、一見無害なSELECT文のみのトランザクションによってロック待ちで失敗した事例が紹介されています。 / 当初はDatastreamやCONCURRENTLYオプションの欠如が疑われましたが、最終的な原因は「idle in transaction」状態のセッションでした。 / 外部API呼び出しなどでトランザクションが長時間開いたままになることが、DBロックの原因となることが示されています。 [実務示唆: PostgreSQLでマイグレーションがロック待ちで失敗する場合、アプリケーションコードの「idle in transaction」状態のセッションを疑い、トランザクションの適切な管理と早期コミットを徹底してください。] (Source: Zenn)</description>
-      <pubDate>Sun, 08 Nov 2026 08:41:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>最も美しいダッシュボードは嘘をついている（そしてGrafanaは決して教えてくれない）</title>
-      <link>https://dev.to/honeykiran/your-prettiest-dashboard-is-lying-to-you-and-grafana-will-never-tell-you-2p7a</link>
-      <guid isPermaLink="false">https://dev.to/honeykiran/your-prettiest-dashboard-is-lying-to-you-and-grafana-will-never-tell-you-2p7a</guid>
-      <description>[Score: 88] Grafanaなどのダッシュボードは、クエリがデータを返さない場合でも、エラーを表示せず平坦な線として描画することがあります。 / これは、メトリック名変更やスクレイプジョブの変更などにより、クエリが死んでいることが原因です。 / ダッシュボードが「嘘」をつくことを防ぐため、手動監査やアラート設定による「嘘発見器」の導入が推奨されます。 [実務示唆: Grafanaなどの監視ダッシュボードの信頼性を確保するため、定期的なクエリの健全性チェックと、データ欠損を検知するアラート設定を導入すべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 09 Nov 2026 01:03:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>Linuxカーネルの深刻な脆弱性／FDEの名前で単なるコンサルティングが販売／TypeScriptをRustに移植した「tsrs」発表ほか、2026年10月の人気記事</title>
-      <link>https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/linuxfdetypescriptrusttsrs202610.html</guid>
-      <description>[Score: 85] 2026年10月の人気記事として、Linuxカーネルの深刻な脆弱性「PwnEscape」が報じられました。 / また、FDE（フォワードデプロイエンジニアリング）の名目でコンサルティングが販売されるリスクが指摘されています。 / CloudflareがTypeScriptをRustに移植した「tsrs」を発表し、メモリ使用量と速度で大幅な改善が見られます。 [実務示唆: Linuxカーネルの脆弱性「PwnEscape」はゲストVMからホストOSへの不正コード実行の可能性があるため、速やかにパッチ適用やセキュリティ対策の確認を行うべきです。] [GitHub: cloudflare/tsrs] (Source: Publickey)</description>
-      <pubDate>Thu, 05 Nov 2026 15:37:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research</title>
-      <link>https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html</guid>
-      <description>[Score: 85] 2026年第3四半期のクラウドインフラ市場は前年比55%増と過去最高の成長率を記録し、市場規模は1680億ドルに達しました。 / AWSのシェアは2ポイント後退して26%となり、Microsoft Azureは1ポイント減の19%、Google Cloudは1ポイント増の16%となりました。 / AIワークロードに特化した「ネオクラウド」ベンダーが台頭し、市場競争が激化しています。 (Source: Publickey)</description>
-      <pubDate>Wed, 04 Nov 2026 15:23:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>マージンレイヤー — あるいは、「合格」は「失敗に程遠い」と同じではない</title>
-      <link>https://dev.to/goodpa/the-margin-layer-or-it-passed-is-not-the-same-as-it-was-nowhere-near-failing-462k</link>
-      <guid isPermaLink="false">https://dev.to/goodpa/the-margin-layer-or-it-passed-is-not-the-same-as-it-was-nowhere-near-failing-462k</guid>
-      <description>[Score: 85] システムが「合格」と報告されていても、その裏で性能が限界に近づいている可能性があることを指摘しています。 / テストやジョブの実行結果が「合格/不合格」の二値でしか評価されない場合、システムが許容範囲内であっても、その余裕（マージン）がどれだけ残っているかが見えなくなります。 / マージンレイヤーとは、システムが停止するまでの距離を記録し、その余裕を数値化する実践であり、これにより潜在的な問題を早期に発見し、対応できるようになります。 [実務示唆: システム監視において、単なる合否だけでなく、性能マージンを具体的な単位で計測・記録し、潜在的なボトルネックを早期に特定する仕組みを導入することを推奨します。] (Source: Dev.to)</description>
-      <pubDate>Mon, 09 Nov 2026 01:02:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>KetchUp – RustとWebGPUで構築されたオープンソースのSketchUp代替品</title>
-      <link>https://ketchup3d.github.io/app/</link>
-      <guid isPermaLink="false">https://ketchup3d.github.io/app/</guid>
-      <description>[Score: 85] KetchUpは、RustとWebGPUで開発された無料のオープンソース3Dモデリングアプリケーションです。 / 主に木工や家具デザイン向けに設計されており、Windows、macOS、Linux、デスクトップブラウザで利用できます。 / SketchUpのジオメトリをインポートしたり、OBJ形式でエクスポートしたりする機能も備えています。 [実務示唆: 3Dモデリングツールを探している木工家やDIY愛好家は、KetchUpを試用し、その機能と使いやすさを評価してプロジェクトに活用することを推奨します。] [GitHub: ketchup3d/app] (Source: Hacker News)</description>
-      <pubDate>Sun, 08 Nov 2026 22:35:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>宣言的なドラッグ</title>
-      <link>https://declarative-dragging.github.io/</link>
-      <guid isPermaLink="false">https://declarative-dragging.github.io/</guid>
-      <description>[Score: 80] 本記事は、ドラッグ＆ドロップ操作をより簡単に実装するための「宣言的なドラッグ」という新しいアプローチを提案しています。 / 従来のドラッグ実装が複雑な幾何学、フィードバック、アニメーション処理を必要とするのに対し、この手法では要素が到達しうる未来の状態を宣言するだけで済みます。 / システムがこれらの状態を推測的にレンダリングし、スムーズで応答性の高いドラッグ＆ドロップインタラクションを自動生成します。 [実務示唆: 複雑なドラッグ＆ドロップ機能を実装する際は、宣言的なアプローチを検討し、UI開発の効率化とコードの簡素化を図るべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 04 Nov 2026 17:05:07 +0000</pubDate>
+      <title>マイクロソフト、150以上のオープンソースUIコンポーネントがBlazorに寄贈されたことを発表。InfragisticsとSyncfusionから</title>
+      <link>https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</guid>
+      <description>[Score: 85] マイクロソフトは、C#などの.NETテクノロジーでWebアプリ開発を可能にするフレームワーク「Blazor」に、150以上のオープンソースUIコンポーネントが寄贈されたと発表しました。 / これはInfragisticsとSyncfusionとの協力によるもので、それぞれ50以上、100以上のBlazor対応UIコンポーネントがMITライセンスで提供されます。 / チャート、ボタン、カレンダー、グリッドなど、ビジネスアプリケーション開発に役立つ多様なコンポーネントが含まれています。 [実務示唆: Blazor開発者は、InfragisticsとSyncfusionから寄贈されたMITライセンスの豊富なUIコンポーネントを活用し、開発効率とアプリケーション品質の向上を図るべきです。] (Source: Publickey)</description>
+      <pubDate>Mon, 09 Nov 2026 15:22:44 +0000</pubDate>
     </item>
     <item>
       <title>アクセシビリティステートメントがGitHubに登場</title>
@@ -91,25 +42,11 @@
       <pubDate>Thu, 05 Nov 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Signature Makerを開発しました：署名を入力、描画、アップロードしてきれいなファイルを保存</title>
-      <link>https://dev.to/pyxl/we-built-signature-maker-type-draw-or-upload-a-signature-and-save-a-clean-file-3bb6</link>
-      <guid isPermaLink="false">https://dev.to/pyxl/we-built-signature-maker-type-draw-or-upload-a-signature-and-save-a-clean-file-3bb6</guid>
-      <description>[Score: 70] Signature Makerは、手書き署名をデジタル化し、透過PNG、JPG、SVG形式で出力する無料のオンラインツールです。 / アカウント登録やウォーターマークなしで、ブラウザ内で全ての処理が完結するため、プライバシーが保護されます。 / Next.jsとVercelで構築されており、ファイルサイズ調整や自然な手書き効果などの機能を提供します。 [実務示唆: 急な署名ファイル作成ニーズに対応できる便利なツールとして、Signature Makerをブックマークし、必要に応じて活用を検討すると良いでしょう。] (Source: Dev.to)</description>
-      <pubDate>Mon, 09 Nov 2026 14:22:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>VM/370 CEマシンでできる楽しいこと – 大型コンピューターで遊ぶ</title>
-      <link>https://rbanffy.github.io/fun-with-big-computers/fun-with-vm370/</link>
-      <guid isPermaLink="false">https://rbanffy.github.io/fun-with-big-computers/fun-with-vm370/</guid>
-      <description>[Score: 65] この記事は、VM/370 Community Edition (CE) を使って遊ぶ方法について解説しています。 / VM/370 CEは、IBMがライセンス制限なしでリリースしたVM/370の最終版に、多くの改善と修正が加えられたものです。 / DockerやPodmanを使って簡単に環境を構築し、古いメインフレームOSの機能を体験できることが示されています。 [実務示唆: Dockerコマンド一つでVM/370 CE環境を構築し、メインフレームOSの仕組みや歴史的背景を体験することで、現代のOSとの違いや進化を理解する良い機会となります。] [GitHub: rbanffy/vm370ce] (Source: Hacker News)</description>
-      <pubDate>Mon, 09 Nov 2026 10:11:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>タグ: #cloudcomputing #iaas #aws #devops #beginners #technology</title>
-      <link>https://dev.to/nahsang_lilian_8af99996c9/tags-cloudcomputing-iaas-aws-devops-beginners-technology-1kb4</link>
-      <guid isPermaLink="false">https://dev.to/nahsang_lilian_8af99996c9/tags-cloudcomputing-iaas-aws-devops-beginners-technology-1kb4</guid>
-      <description>[Score: 65] Infrastructure as a Service (IaaS)は、物理サーバーの購入・維持ではなく、インターネット経由で仮想化されたコンピューティングリソースをレンタルするクラウドコンピューティングモデルです。 / IaaSを利用することで、サーバー、ストレージ、ネットワークなどのインフラを柔軟に調達でき、運用コストと時間を削減し、スケーラビリティを向上させることができます。 / Amazon Web Services (AWS) のElastic Compute Cloud (EC2) は、IaaSの代表的なサービスであり、その仕組みや利点、課題について解説されています。 [実務示唆: クラウド移行を検討している企業や開発者は、IaaSの概念とAWS EC2の具体的な利用方法を理解し、自社のインフラ要件に合わせた最適なクラウド戦略を策定すべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 09 Nov 2026 14:22:50 +0000</pubDate>
+      <title>dev.toの429エラーを実際にクリアするもの：リトライループか、次のスケジュール実行か</title>
+      <link>https://dev.to/enjoy_kumawat/what-actually-clears-a-devto-429-here-my-retry-loop-or-the-next-scheduled-run-21a5</link>
+      <guid isPermaLink="false">https://dev.to/enjoy_kumawat/what-actually-clears-a-devto-429-here-my-retry-loop-or-the-next-scheduled-run-21a5</guid>
+      <description>[Score: 75] 筆者のDEV.toコメント返信パイプラインがAPIの429エラーに頻繁に遭遇し、その解決策について検証しています。 / 当初はリトライループが機能していると考えていましたが、実際にはリトライが成功するのは半分のケースで、残りの半分は次のスケジュール実行まで待つ必要がありました。 / このパイプラインにはリトライコードが実装されておらず、バックオフ時間はその都度手動で設定されていたことが判明しました。 [実務示唆: APIレート制限エラー(429)への対応では、単なるリトライだけでなく、バックオフ戦略の適切性や、システム全体のリトライメカニズムを明確に設計・実装し、ログで効果を検証すべきです。] (Source: Dev.to)</description>
+      <pubDate>Tue, 10 Nov 2026 03:48:05 +0000</pubDate>
     </item>
   </channel>
 </rss>

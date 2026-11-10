@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 14:25:22 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 03:51:27 +0000</lastBuildDate>
     <item>
       <title>部品の脆弱性は、どこまで広がるのか？ 主要 64 製品と 8 部品の依存関係をたどったら、OpenSSL は 20、SQLite は 16、PHP は 11 だった</title>
       <link>https://qiita.com/songchong/items/41a88eb41845af761b19?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
@@ -14,11 +14,11 @@
       <pubDate>Sun, 08 Nov 2026 19:10:12 +0000</pubDate>
     </item>
     <item>
-      <title>Outlook.comがDMARCなしのドメインからのメールを静かに拒否している</title>
-      <link>https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</link>
-      <guid isPermaLink="false">https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</guid>
-      <description>[Score: 90] MicrosoftのOutlook.comが、DMARCレコードを公開していないドメインからのメールを密かに拒否し始めていることが判明しました。 / これにより、多くの企業が顧客やベンダーへのメールがバウンスする問題に直面しています。 / この変更は公式発表なしに行われ、SPF/DKIM/DMARC認証レコードの欠如が拒否理由とされています。 [実務示唆: メール送信を行う企業は、Outlook.comへの到達性を確保するため、速やかにDMARCレコードをDNSに設定し、メール認証を強化すべきです。] (Source: Hacker News)</description>
-      <pubDate>Sun, 08 Nov 2026 19:20:32 +0000</pubDate>
+      <title>転送ヘッダーは信頼できる入力ではない：トンネルの背後にあるX-Forwarded-For、Proto、Host</title>
+      <link>https://dev.to/instatunnel/forwarded-headers-are-not-trusted-input-x-forwarded-for-proto-and-host-behind-a-tunnel-8bn</link>
+      <guid isPermaLink="false">https://dev.to/instatunnel/forwarded-headers-are-not-trusted-input-x-forwarded-for-proto-and-host-behind-a-tunnel-8bn</guid>
+      <description>[Score: 95] アプリケーションをトンネルの背後に配置する際、X-Forwarded-For、X-Forwarded-Proto、X-Forwarded-Hostといった転送ヘッダーがアプリケーションの動作に影響を与えることを解説しています。 / これらのヘッダーを誤って信頼すると、リダイレクトループやレートリミッターの誤動作といった無害な問題から、攻撃者によるセキュリティチェックの回避といった有害な問題まで発生する可能性があります。 / FastifyやExpressの過去の脆弱性を例に挙げ、Express、Fastify、Django、Railsでの正しい設定方法を説明しています。 [実務示唆: プロキシやロードバランサーを使用するシステムでは、X-Forwardedヘッダーを信頼する範囲を厳密に設定し、アプリケーションが信頼できるソースからのヘッダーのみを処理するように構成することで、セキュリティリスクを軽減すべきです。] (Source: Dev.to)</description>
+      <pubDate>Tue, 10 Nov 2026 03:47:31 +0000</pubDate>
     </item>
     <item>
       <title>脆弱性の情報は間に合っている？ 英語は 2 時間以内、悪用は 4 割が 1 日以内、日本語は中央値 4.6 日後。悪用された 74 件を調べて分かった</title>
@@ -28,39 +28,18 @@
       <pubDate>Sun, 08 Nov 2026 09:00:22 +0000</pubDate>
     </item>
     <item>
-      <title>【速報】ニトリ 最大3762万件の会員情報が流出の可能性 今月6日不正アクセスを確認 客の氏名、住所、電話番号など流出か カード情報やパスワード含まれず（TBS NEWS DIG Powered by JNN） - Yahoo!ニュース</title>
-      <link>https://news.yahoo.co.jp/articles/ec14e72be9639e846f42978f9e81da07fdd05687</link>
-      <guid isPermaLink="false">https://news.yahoo.co.jp/articles/ec14e72be9639e846f42978f9e81da07fdd05687</guid>
-      <description>[Score: 80] 家具大手のニトリホールディングスが、第三者による不正アクセスを受け、最大3762万件の会員情報が流出した可能性があると発表しました。 / 流出した可能性のある情報は、顧客の氏名、住所、電話番号などで、クレジットカード情報やパスワードは含まれていないとのことです。 / ニトリは、会社を装った不審なメールや電話に注意するよう呼びかけています。 [実務示唆: ニトリのサービスを利用しているユーザーは、不審なメールや電話に警戒し、個人情報の悪用リスクに備えるため、他のサービスでのパスワード使い回しを避けるべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 09 Nov 2026 08:57:55 +0000</pubDate>
+      <title>ソフトバンク社長「自社システムをGPT-6 Astraで診断したら3.5万件の追加脆弱性を発見」と明かす</title>
+      <link>https://japan.cnet.com/article/35254620/</link>
+      <guid isPermaLink="false">https://japan.cnet.com/article/35254620/</guid>
+      <description>[Score: 90] ソフトバンクの宮川社長は、AIの悪用によるサイバー攻撃の急増と、それへの対応状況を説明しました。 / 自社システムをOpenAIのGPT-6 Astraで診断したところ、以前の診断では見つからなかった3万5000件もの脆弱性が新たに発見されたことを明らかにしました。 / AIによる脆弱性診断は効果的であるものの、新たなAIモデルの登場により、常に最新の対策が求められる現状が浮き彫りになっています。 [実務示唆: AIを活用した脆弱性診断は非常に有効だが、AIモデルの進化が速いため、常に最新のモデルでシステムを再診断し、継続的なセキュリティ対策を講じるべき。] (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 09 Nov 2026 22:53:05 +0000</pubDate>
     </item>
     <item>
-      <title>Macにはユーザーの人間関係をグラフ化する常駐プログラムが搭載されている</title>
-      <link>https://gigazine.net/news/20261109-macos-personal-knowledge-graph/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261109-macos-personal-knowledge-graph/</guid>
-      <description>[Score: 75] macOS Ventura以降のMacには、ユーザーの人間関係をグラフ化する2つのデーモン（常駐プログラム）が搭載されていることがセキュリティ研究者によって明らかにされました。 / これらのプログラムは、連絡先、カレンダー、写真、メッセージ、メール、位置情報など、端末上のほぼすべての情報を相互参照し、ユーザーのパーソナルナレッジグラフを作成します。 / 生成された情報はSQLiteデータベースにプレーンテキストで保存され、AIがそこから情報を取得できるようになっており、Appleのプライバシーポリシーとの整合性が注目されます。 [実務示唆: Macユーザーは、自身のデータがどのように収集・利用されているかを理解し、プライバシー設定を見直すなど、個人情報保護への意識を高める必要があります。] (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 09 Nov 2026 07:02:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>Linux nosymfollowは1つのシンボリックリンクパスをブロックするが、すべてのパス問題を解決するわけではない</title>
-      <link>https://dev.to/andreagomez/linux-nosymfollow-blocks-one-symlink-path-not-every-path-problem-3ajc</link>
-      <guid isPermaLink="false">https://dev.to/andreagomez/linux-nosymfollow-blocks-one-symlink-path-not-every-path-problem-3ajc</guid>
-      <description>[Score: 70] Linux 5.10で追加されたMS_NOSYMFOLLOWマウントフラグは、特定のファイルシステム上のシンボリックリンクの追跡を防止する機能です。 / この機能は、コンテンツルートやアップロードディレクトリなど、シンボリックリンクがエスケープルートになるべきではない特定のファイルツリーに対して有効です。 / しかし、nosymfollowはマウントポイントに限定された制御であり、アプリケーションレベルのパス検証、専用のサンドボックス、最小権限のサービスアカウントの代替にはならないと警告しています。 [実務示唆: MS_NOSYMFOLLOWはセキュリティ対策の一環として有効ですが、単独で完全なセキュリティを保証するものではないため、他のセキュリティ対策と組み合わせて利用し、過信しないよう注意してください。] (Source: Dev.to)</description>
-      <pubDate>Mon, 09 Nov 2026 01:00:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>物議を醸すナンバープレートリーダー製造元Flock、地方政治家への献金を開始</title>
-      <link>https://www.reddit.com/r/technology/comments/1xrisbg/flock_maker_of_controversial_license_plate/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xrisbg/flock_maker_of_controversial_license_plate/</guid>
-      <description>[Score: 70] 物議を醸しているナンバープレートリーダーの製造元Flockが、地方政治家への献金を開始したと報じられています。 / これは、同社の監視技術に対するプライバシー懸念や倫理的議論が高まる中で行われています。 / 企業が政治献金を通じて自社製品の普及を図ろうとする動きは、監視社会の進展と市民の権利保護のバランスに影響を与える可能性があります。 [実務示唆: 監視技術を導入する際は、技術的側面だけでなく、倫理的・法的側面も深く考慮し、市民のプライバシー保護を最優先する姿勢が求められます。] (Source: Reddit)</description>
-      <pubDate>Mon, 09 Nov 2026 04:54:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>ハッカーがリークしたロシア統計局の記録により、最大45万人のロシア人戦死者が明らかに</title>
-      <link>https://www.reddit.com/r/technology/comments/1xqxe29/hackers_claim_leaked_rosstat_records_reveal_up_to/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xqxe29/hackers_claim_leaked_rosstat_records_reveal_up_to/</guid>
-      <description>[Score: 65] ハッカー集団がロシア統計局（Rosstat）の記録をリークし、ロシアの戦争による死者数が最大45万人に上ると主張しています。 / この情報は、公式発表よりもはるかに多い数字であり、国際社会に大きな衝撃を与えています。 / データの信憑性については検証が必要ですが、情報戦の一環として注目されています。 [実務示唆: サイバーセキュリティの強化とデータ漏洩対策は、国家機関だけでなく企業にとっても喫緊の課題であり、常に最新の脅威情報を収集し対応策を講じるべきです。] (Source: Reddit)</description>
-      <pubDate>Sun, 08 Nov 2026 12:32:48 +0000</pubDate>
+      <title>恐ろしい公開鍵のトリック</title>
+      <link>https://maurycyz.com/projects/badcert/</link>
+      <guid isPermaLink="false">https://maurycyz.com/projects/badcert/</guid>
+      <description>[Score: 60] この記事は、SSL/TLS証明書システムに対する不満と、その「抗議」としての「悪い証明書」の作成について述べています。 / 著者は、ACMEによる証明書管理の複雑さや、証明書が平文接続で発行される問題点を指摘しています。 / 公開鍵を意図的に脆弱なものにすることで、SSL/TLSの仕組みへの疑問を投げかける試みです。 [実務示唆: SSL/TLSの複雑性や脆弱性に関する議論は重要ですが、本記事のような「悪い証明書」の利用はセキュリティリスクを高めるため、実務では正規の証明書管理とセキュリティベストプラクティスを遵守し、システムの堅牢性を維持すべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 10 Nov 2026 00:07:17 +0000</pubDate>
     </item>
   </channel>
 </rss>
