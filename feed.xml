@@ -5,13 +5,20 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Nov 2026 03:51:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 13:49:02 +0000</lastBuildDate>
     <item>
       <title>Claude Fable 5.2とMythos 5.2</title>
       <link>https://www.anthropic.com/claude-fable-and-mythos-5-2</link>
       <guid isPermaLink="false">https://www.anthropic.com/claude-fable-and-mythos-5-2</guid>
       <description>[Score: 100] Anthropicは、高度な技術的課題に対応するよう設計された大規模言語モデル「Claude Fable 5.2」と「Claude Mythos 5.2」をリリースしました。 / これらのモデルは、コーディング、推論、視覚能力が向上し、ソフトウェア移行、電子デバイス設計、物理学の問題解決などで顕著な成果を上げています。 / Fable 5.2は一般利用可能で、Mythos 5.2はサイバーセキュリティや生物医学研究向けの検証プログラムを通じてアクセス可能であり、旧モデルより最大30%高速化され、価格も引き下げられています。 [実務示唆: 最新のClaude Fable 5.2/Mythos 5.2は、コーディングや推論能力が向上し、コストも削減されたため、開発プロジェクトでのAI活用を積極的に検討し、既存のワークフローへの統合を試すべきです。] (Source: Hacker News)</description>
       <pubDate>Mon, 09 Nov 2026 18:01:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>退屈なCoding AgentはMuseにやらせよう</title>
+      <link>https://zenn.dev/watany/articles/342b9815dd0553</link>
+      <guid isPermaLink="false">https://zenn.dev/watany/articles/342b9815dd0553</guid>
+      <description>[Score: 100] Metaが開発したパーソナルAIエージェント「Muse」が、コーディングを含む多様なタスクに非常に有用であると紹介されています。 / MuseのSpace機能により、VM上でローカルLLMを動かすアプリを無料で作成・利用できる点が強調されています。 / OpenAIの「Sign in with ChatGPT」とPi Coding Agentを組み合わせることで、Museをコーディングエージェントとして効率的に活用する方法が提案されています。 [実務示唆: MuseのようなパーソナルAIエージェントのSpace機能を活用し、ローカルLLMや外部APIと連携させることで、開発タスクの自動化やプロトタイプ作成を効率化し、AI活用の幅を広げましょう。] [GitHub: pi-ai/pi-coding-agent] (Source: Zenn)</description>
+      <pubDate>Tue, 10 Nov 2026 02:35:05 +0000</pubDate>
     </item>
     <item>
       <title>部品の脆弱性は、どこまで広がるのか？ 主要 64 製品と 8 部品の依存関係をたどったら、OpenSSL は 20、SQLite は 16、PHP は 11 だった</title>
@@ -26,6 +33,20 @@
       <guid isPermaLink="false">https://dev.to/instatunnel/forwarded-headers-are-not-trusted-input-x-forwarded-for-proto-and-host-behind-a-tunnel-8bn</guid>
       <description>[Score: 95] アプリケーションをトンネルの背後に配置する際、X-Forwarded-For、X-Forwarded-Proto、X-Forwarded-Hostといった転送ヘッダーがアプリケーションの動作に影響を与えることを解説しています。 / これらのヘッダーを誤って信頼すると、リダイレクトループやレートリミッターの誤動作といった無害な問題から、攻撃者によるセキュリティチェックの回避といった有害な問題まで発生する可能性があります。 / FastifyやExpressの過去の脆弱性を例に挙げ、Express、Fastify、Django、Railsでの正しい設定方法を説明しています。 [実務示唆: プロキシやロードバランサーを使用するシステムでは、X-Forwardedヘッダーを信頼する範囲を厳密に設定し、アプリケーションが信頼できるソースからのヘッダーのみを処理するように構成することで、セキュリティリスクを軽減すべきです。] (Source: Dev.to)</description>
       <pubDate>Tue, 10 Nov 2026 03:47:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIでテストカバレッジを23%から84%に引き上げた方法</title>
+      <link>https://zenn.dev/litalico/articles/20261029-test-with-ai</link>
+      <guid isPermaLink="false">https://zenn.dev/litalico/articles/20261029-test-with-ai</guid>
+      <description>[Score: 95] LITALICOナーシングネット開発チームが、AIを活用してテストカバレッジを23%から84%に大幅に向上させた取り組みを紹介しています。 / CI導入や手書きテストの限界を経て、生成AIを用いたテストコード生成に注力し、プロンプトエンジニアリングやスキル構築の重要性を強調しています。 / AI導入前後の具体的な課題と解決策、そしてテスト文化醸成へのアプローチが詳細に説明されています。 [実務示唆: テストカバレッジ向上に課題を抱えるチームは、生成AIを活用したテストコード生成を検討し、効果的なプロンプト設計とAIに合わせた開発プロセスを構築することで、品質向上と開発効率化を図りましょう。] [GitHub: litalico/github-actions-rspec] (Source: Zenn)</description>
+      <pubDate>Tue, 10 Nov 2026 02:50:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Opus 5.5の推論能力が11月3日から急激に低下したとの指摘、1400件の利用履歴から変化が判明</title>
+      <link>https://gigazine.net/news/20261110-claude-opus-nerf/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20261110-claude-opus-nerf/</guid>
+      <description>[Score: 95] AnthropicのAIモデル「Claude Opus 5.5」の推論能力が2026年11月3日頃から急激に低下した可能性が指摘されています。 / 開発者のシェーン・メロー氏が約1400件のClaude Code利用履歴を分析した結果、モデル名変更なしにAIの思考プロセスやエラー率に大きな変化が見られました。 / 特に、思考トークン数の減少やエラー指標の増加が確認されており、AIモデルの品質管理における課題が浮き彫りになっています。 [実務示唆: Claude Opus 5.5を利用している開発者は、AIの出力品質が低下していないか注意深く監視し、必要に応じてプロンプトの調整や他のモデルの検討を行うべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 10 Nov 2026 08:05:52 +0000</pubDate>
     </item>
     <item>
       <title>脆弱性の情報は間に合っている？ 英語は 2 時間以内、悪用は 4 割が 1 日以内、日本語は中央値 4.6 日後。悪用された 74 件を調べて分かった</title>
@@ -70,6 +91,48 @@
       <pubDate>Tue, 10 Nov 2026 03:47:43 +0000</pubDate>
     </item>
     <item>
+      <title>AlphaProof Code</title>
+      <link>https://deepmind.google/blog/introducing-alphaproof-code/</link>
+      <guid isPermaLink="false">https://deepmind.google/blog/introducing-alphaproof-code/</guid>
+      <description>[Score: 90] Google DeepMindの研究者が、Signalプロトコルの暗号コードを形式的に検証する新しいエージェントフレームワーク「AlphaProof Code」を発表しました。 / これは、AIエージェントと人間の専門知識を組み合わせることで、これまで困難とされてきた大規模な暗号プロトコルの実装コードの形式検証を初めて実現しました。 / この技術は、数十億のプライベートな会話を保護するSignalやGoogle Messagesなどのアプリのセキュリティを数学的に証明する画期的な進歩です。 [実務示唆: AIによる形式検証の進展は、特にセキュリティが重要なシステム開発において、コードの信頼性向上とバグ削減に貢献するため、将来的な導入可能性を注視し、既存の検証プロセスとの統合を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 10 Nov 2026 12:11:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI ネイティブなデータ分析基盤を作った話（後編）</title>
+      <link>https://zenn.dev/pksha/articles/laplace-build-guide</link>
+      <guid isPermaLink="false">https://zenn.dev/pksha/articles/laplace-build-guide</guid>
+      <description>[Score: 90] PKSHA Technologyが構築したAIネイティブなデータ分析基盤「Laplace」の設計思想について解説しています。 / 「すぐに・誰でも・安全に」データを扱えるようにするため、人、プロダクト、権限、AIの4つの境界を明確に定義しています。 / 長期鍵を発行しない認証方針や、CI/CDの権限を最小限に絞るなど、セキュリティと運用効率を両立させる工夫が紹介されています。 [実務示唆: データ分析基盤を構築する際は、技術スタックだけでなく「誰が何を決め、どこに境界を引くか」という設計思想を明確にし、セキュリティと運用のバランスを考慮した認証・権限管理を導入しましょう。] (Source: Zenn)</description>
+      <pubDate>Tue, 10 Nov 2026 07:38:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>実践：JevをClaudeに5分で連携する！ 〜仕組みから実装、実際の使いどころ〜</title>
+      <link>https://qiita.com/ryosuke_ohori/items/ada543a0201752023e25?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ryosuke_ohori/items/ada543a0201752023e25?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] TypeSafe AIが公開した「Jev」は、LLMが生成する自由な文章ではなく、定義された質問に対して型の決まった値を返すSystem One Modelです。 / 本記事では、Jevの仕組み、Claudeとの連携方法、Pythonによる独自の問い合わせ振り分け実装、確率評価、AIエージェントへの応用までを解説。 / 短く明確な判断が必要なタスクにおいて、従来のLLMよりも効率的かつコストを抑えられる可能性を示唆しています。 [実務示唆: 短文での判断や分類が必要なAIアプリケーション開発において、Jevのような特化型モデルの導入を検討し、コストと性能のバランスを評価しましょう。] (Source: Qiita)</description>
+      <pubDate>Mon, 09 Nov 2026 13:46:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>大学1年生がつくったOSSがGitHub Star 1万超。AIに渡す「画面の設計図」はどう生まれた？ - レバテックLAB</title>
+      <link>https://levtech.jp/media/detail_965/</link>
+      <guid isPermaLink="false">https://levtech.jp/media/detail_965/</guid>
+      <description>[Score: 90] 大学1年生のinori氏が開発したOSS「M3E Canvas」が、公開から約2ヶ月でGitHub Star 1万超えを達成しました。 / このツールは、ブラウザ上でアプリの画面を組み立て、AIに渡すプロンプトを生成するもので、AIによるバイブコーディングの効率化を目指しています。 / MITライセンスで公開され、Android以外の開発にも活用されるなど、その汎用性と開発者のオープンな姿勢が大きな反響を呼んでいます。 [実務示唆: AIを活用したUI開発に興味があるエンジニアは、M3E Canvasを試用し、AIへのプロンプト生成効率化の可能性を探ることで、開発ワークフロー改善のヒントを得られます。] [GitHub: inori/M3E-Canvas] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 10 Nov 2026 01:12:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>日本は本当にサイバー緊急事態を宣言したのか？実際に何が起こったのか</title>
+      <link>https://dev.to/hisashispace/did-japan-really-declare-a-cyber-emergency-what-actually-happened-441p</link>
+      <guid isPermaLink="false">https://dev.to/hisashispace/did-japan-really-declare-a-cyber-emergency-what-actually-happened-441p</guid>
+      <description>[Score: 90] 日本がサイバー緊急事態を宣言したという報道は誤りであり、実際には宣言されていません。 / 自民党の会議での発言や政府の文書内容を詳細に分析し、誤解を解いています。 / クラウドプロバイダーからの通知や最終報告書の内容も検証し、正確な情報を提供しています。 [実務示唆: サイバーセキュリティに関するニュースは、一次情報源（政府機関の公式発表など）を確認し、誤解や誇張された情報に惑わされないよう注意しましょう。] (Source: Dev.to)</description>
+      <pubDate>Tue, 10 Nov 2026 13:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>LoRazor: 効率的なMulti-LoRAサービングのためのアダプター実行のトリミング</title>
+      <link>https://arxiv.org/abs/2611.10049</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.10049</guid>
+      <description>[Score: 88] 複数のLoRA（Low-Rank Adaptation）モデルを効率的にサービングするための新しい手法「LoRazor」を提案しています。 / アダプターの実行を最適化し、計算コストを削減することで、Multi-LoRA環境でのパフォーマンス向上を目指しています。 / 大規模なAIモデルのデプロイメントにおける課題解決に貢献する可能性があります。 (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Payments Canadaがカナダのリアルタイム決済システム（RTR）の稼働を発表</title>
       <link>https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy</link>
       <guid isPermaLink="false">https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy</guid>
@@ -82,69 +145,6 @@
       <guid isPermaLink="false">https://spectrum.ieee.org/find-my-ai-chip</guid>
       <description>[Score: 85] 米国はAIチップの中国への密輸・転用を阻止するため輸出規制を強化していますが、依然としてチップが中国で発見されています。 / この問題に対処するため、米国はAIチップの所在確認技術に注目しており、位置情報検証を義務付ける法案が検討されています。 / チップメーカーは、改ざん防止ハードウェア、暗号署名、チップの指紋認証などの技術でこれに対応する可能性があります。 [実務示唆: AIチップのサプライチェーンに関わる企業は、将来的な位置情報検証義務化に備え、改ざん防止技術や追跡システムの導入を検討すべきです。] (Source: Hacker News)</description>
       <pubDate>Mon, 09 Nov 2026 14:09:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI「テスト通りました」← これ､本当？ Stryker でテストの穴を塞いだ話</title>
-      <link>https://qiita.com/Dingu-suke/items/b5318ef2040a9f59224a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Dingu-suke/items/b5318ef2040a9f59224a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AIが生成したテストが本当にコードの品質を保証しているか疑問視される中、ミューテーションテストが注目されています。 / Strykerはコードを意図的に破壊（変異）し、テストがその破壊を検知できるかを検証するツールです。 / これにより、テストのカバレッジだけでは見つけられないテストの弱点や穴を特定し、より堅牢なテストスイートを構築できます。 [実務示唆: AI生成テストの品質保証のため、Strykerなどのミューテーションテストツールを導入し、テストの網羅性と堅牢性を定期的に検証することを推奨します。] [GitHub: stryker-mutator/stryker] (Source: Qiita)</description>
-      <pubDate>Mon, 09 Nov 2026 07:45:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google、Kubernetesで10倍高密度にAIエージェントを実行可能にする「Agent Sustrate」と「gVisor」、オープンソースとしてCNCFに寄贈と発表</title>
-      <link>https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</guid>
-      <description>[Score: 85] Googleは、Kubernetes上でAIエージェントを10倍高密度に実行可能にするオープンソースソフトウェア「Agent Substrate」と「gVisor」をCNCFに寄贈しました。 / AIエージェントはアイドル時間が長く、Kubernetes単体では効率的な実行が困難であるという課題を解決します。 / これにより、AIエージェントの実行基盤としてのKubernetesの効率と密度が大幅に向上し、AI開発のコスト削減とスケーラビリティに貢献します。 [実務示唆: Kubernetes上でAIエージェントを運用している、または検討している開発者は、Agent SubstrateとgVisorを導入し、リソース効率とコスト削減効果を検証すべき。] [GitHub: google/gvisor] (Source: Publickey)</description>
-      <pubDate>Mon, 09 Nov 2026 15:25:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>マイクロソフト、150以上のオープンソースUIコンポーネントがBlazorに寄贈されたことを発表。InfragisticsとSyncfusionから</title>
-      <link>https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</guid>
-      <description>[Score: 85] マイクロソフトは、C#などの.NETテクノロジーでWebアプリ開発を可能にするフレームワーク「Blazor」に、150以上のオープンソースUIコンポーネントが寄贈されたと発表しました。 / これはInfragisticsとSyncfusionとの協力によるもので、それぞれ50以上、100以上のBlazor対応UIコンポーネントがMITライセンスで提供されます。 / チャート、ボタン、カレンダー、グリッドなど、ビジネスアプリケーション開発に役立つ多様なコンポーネントが含まれています。 [実務示唆: Blazor開発者は、InfragisticsとSyncfusionから寄贈されたMITライセンスの豊富なUIコンポーネントを活用し、開発効率とアプリケーション品質の向上を図るべきです。] (Source: Publickey)</description>
-      <pubDate>Mon, 09 Nov 2026 15:22:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>ゼロから作ったMamba3言語モデルを日本語で話せる全二重音声対話モデルに拡張するまで</title>
-      <link>https://zenn.dev/taaroo/articles/47f8d1ac55d4af</link>
-      <guid isPermaLink="false">https://zenn.dev/taaroo/articles/47f8d1ac55d4af</guid>
-      <description>[Score: 82] Mamba3言語モデル（NanoMambaLM）をベースに、日本語対応の全二重音声対話モデル「NanoMamba-Duplex」を開発した事例です。 / 全二重対話は、ユーザーの音声を聞きながら同時に応答できるため、より自然な会話体験を実現します。 / 既存の全二重モデルと比較して非常に小型（0.26B）でありながら、意味のある返答が可能な最小級モデルとして注目されます。 [実務示唆: 全二重音声対話モデルの構築を検討する際、特にリソースが限られる環境では、小型モデルであるMambaベースのアーキテクチャを検討し、日本語データでの学習戦略を参考にすべきです。] (Source: Zenn)</description>
-      <pubDate>Mon, 09 Nov 2026 14:48:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>【公式】Pyxel 3.0リリース！世界初（？）レトロ3Dゲームエンジン機能を搭載！</title>
-      <link>https://qiita.com/kitao/items/af92619297d5563f2a0e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kitao/items/af92619297d5563f2a0e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Python向けレトロゲームエンジンPyxelがバージョン3.0をリリースし、レトロ3Dゲームエンジン機能「Pyxel Cube」を追加しました。 / Pyxel Cubeは、PlayStation 2時代のローポリゴン3Dを再現し、従来の2Dコードと共存して3D機能を利用できます。 / ノードツリー構造で3D空間のオブジェクトを組み立て、基本16色、半透明なしといった「不自由さ」を特徴としています。 [実務示唆: Pythonで手軽にレトロゲーム開発をしたいエンジニアは、Pyxel 3.0のPyxel Cubeを試すことで、レトロな雰囲気の3Dゲーム制作に挑戦し、新しい表現の可能性を探ることができます。] [GitHub: kitao/pyxel] (Source: Qiita)</description>
-      <pubDate>Sat, 07 Nov 2026 09:11:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>NormGym: 社会的相互作用を通じた規範的コンピテンシーの評価</title>
-      <link>https://arxiv.org/abs/2611.08613</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.08613</guid>
-      <description>[Score: 80] 本論文は、社会的相互作用を通じてAIの規範的コンピテンシーを評価するためのフレームワーク「NormGym」を提案しています。 / 規範的コンピテンシーとは、AIが社会的なルールや倫理を理解し、適切に行動する能力を指します。 / arXivLabsは、研究者が新しいarXiv機能を開発・共有するためのフレームワークを提供しています。 [実務示唆: AI倫理や安全性に関わる研究者は、NormGymのような評価フレームワークを活用し、AIが社会規範を遵守する能力を客観的に測定・改善するアプローチを検討すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 09 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Nvidiaにはジェンスン・フアン氏の後継者がいない</title>
-      <link>https://www.reddit.com/r/technology/comments/1xs4bvx/nvidia_has_no_obvious_successor_to_jensen_huang/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xs4bvx/nvidia_has_no_obvious_successor_to_jensen_huang/</guid>
-      <description>[Score: 80] NvidiaのCEOであるジェンスン・フアン氏には、明確な後継者がいないと報じられています。 / これは、Nvidiaの将来のリーダーシップと方向性に関する懸念を引き起こす可能性があります。 / フアン氏の強力なリーダーシップがNvidiaの成功に不可欠であったため、後継者問題は投資家や業界関係者にとって重要な関心事です。 [実務示唆: Nvidiaの投資家やビジネスパートナーは、同社の将来のリーダーシップ計画に注意を払い、経営体制の安定性や戦略の継続性について情報収集を行うべきです。] (Source: Reddit)</description>
-      <pubDate>Mon, 09 Nov 2026 21:28:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Fable 5.2へのプロンプト</title>
-      <link>https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5-2</link>
-      <guid isPermaLink="false">https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5-2</guid>
-      <description>[Score: 80] Claude Fable 5.2は、以前のモデルとは異なるプロンプトパターンとエフォートレベルの調整が必要です。 / エフォートレベルはモデルの思考量、時間、トークン使用量を制御し、ユースケースに応じてhigh、medium、lowを選択します。 / 長い複数ステップのタスクでモデルが途中で停止する問題には、システムプロンプトに特定の指示を追加することで対応できます。 [実務示唆: Claude Fable 5.2を利用する際は、エフォートレベルを慎重に調整し、長いタスクでの停止を防ぐためシステムプロンプトに指示を追加して検証すること。] (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 09 Nov 2026 22:21:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>TextractとBedrockを使ってAWS上にスマートな請求書・領収書スキャナーを構築する</title>
-      <link>https://dev.to/omayrashraf/building-a-smart-invoice-receipt-scanner-on-aws-with-textract-and-bedrock-j2f</link>
-      <guid isPermaLink="false">https://dev.to/omayrashraf/building-a-smart-invoice-receipt-scanner-on-aws-with-textract-and-bedrock-j2f</guid>
-      <description>[Score: 80] 手作業による請求書・領収書処理の課題を解決するため、AWSのTextractとBedrockを活用したスマートスキャナーの構築方法を解説しています。 / このソリューションは、Amazon S3、AWS Lambda、EventBridge、DynamoDB、Step Functionsなどを組み合わせたイベント駆動型アーキテクチャを採用しています。 / 単なるテキスト抽出に留まらず、重複検出、順不同処理、情報検証、人間によるレビューへのルーティングなど、信頼性の高い財務文書ワークフローの構築を目指します。 [実務示唆: 財務文書処理の自動化を検討している企業は、AWS TextractとBedrockを組み合わせたソリューションを導入し、手作業によるエラー削減と業務効率向上を図るべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 10 Nov 2026 03:47:27 +0000</pubDate>
     </item>
   </channel>
 </rss>

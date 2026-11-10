@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Nov 2026 03:51:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 13:49:02 +0000</lastBuildDate>
     <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
       <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
@@ -21,6 +21,13 @@
       <pubDate>Tue, 10 Nov 2026 03:47:43 +0000</pubDate>
     </item>
     <item>
+      <title>AI ネイティブなデータ分析基盤を作った話（後編）</title>
+      <link>https://zenn.dev/pksha/articles/laplace-build-guide</link>
+      <guid isPermaLink="false">https://zenn.dev/pksha/articles/laplace-build-guide</guid>
+      <description>[Score: 90] PKSHA Technologyが構築したAIネイティブなデータ分析基盤「Laplace」の設計思想について解説しています。 / 「すぐに・誰でも・安全に」データを扱えるようにするため、人、プロダクト、権限、AIの4つの境界を明確に定義しています。 / 長期鍵を発行しない認証方針や、CI/CDの権限を最小限に絞るなど、セキュリティと運用効率を両立させる工夫が紹介されています。 [実務示唆: データ分析基盤を構築する際は、技術スタックだけでなく「誰が何を決め、どこに境界を引くか」という設計思想を明確にし、セキュリティと運用のバランスを考慮した認証・権限管理を導入しましょう。] (Source: Zenn)</description>
+      <pubDate>Tue, 10 Nov 2026 07:38:37 +0000</pubDate>
+    </item>
+    <item>
       <title>Google、Kubernetesで10倍高密度にAIエージェントを実行可能にする「Agent Sustrate」と「gVisor」、オープンソースとしてCNCFに寄贈と発表</title>
       <link>https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</guid>
@@ -33,6 +40,41 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</guid>
       <description>[Score: 85] マイクロソフトは、C#などの.NETテクノロジーでWebアプリ開発を可能にするフレームワーク「Blazor」に、150以上のオープンソースUIコンポーネントが寄贈されたと発表しました。 / これはInfragisticsとSyncfusionとの協力によるもので、それぞれ50以上、100以上のBlazor対応UIコンポーネントがMITライセンスで提供されます。 / チャート、ボタン、カレンダー、グリッドなど、ビジネスアプリケーション開発に役立つ多様なコンポーネントが含まれています。 [実務示唆: Blazor開発者は、InfragisticsとSyncfusionから寄贈されたMITライセンスの豊富なUIコンポーネントを活用し、開発効率とアプリケーション品質の向上を図るべきです。] (Source: Publickey)</description>
       <pubDate>Mon, 09 Nov 2026 15:22:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>MySQLがインデックスを使用しない3つの理由を区別する</title>
+      <link>https://dev.to/shinagawa-web/telling-apart-3-reasons-mysql-isnt-using-your-index-3hi8</link>
+      <guid isPermaLink="false">https://dev.to/shinagawa-web/telling-apart-3-reasons-mysql-isnt-using-your-index-3hi8</guid>
+      <description>[Score: 85] この記事では、MySQLがインデックスを使用しない一般的な3つの理由について解説しています。 / 具体的には、DATE()関数によるカラム変換、VARCHARカラムと数値の型不一致、そしてJOIN時の文字セット不一致が挙げられています。 / これらのケースは、EXPLAINコマンドでALLタイプが表示されることで確認でき、それぞれの原因と対処法が示されています。 [実務示唆: MySQLのクエリ最適化を行う際は、DATE()関数使用、型不一致、文字セット不一致の3点に注意し、EXPLAINコマンドでインデックスが適切に使用されているか確認することで、パフォーマンス低下を防げます。] (Source: Dev.to)</description>
+      <pubDate>Tue, 10 Nov 2026 13:03:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>GoHighLevel n8nとZapierの統合：GHLを実際のワークフローと接続する方法 (2026)</title>
+      <link>https://dev.to/arslanautomates/gohighlevel-n8n-and-zapier-integration-how-to-connect-ghl-with-real-workflows-2026-1oe3</link>
+      <guid isPermaLink="false">https://dev.to/arslanautomates/gohighlevel-n8n-and-zapier-integration-how-to-connect-ghl-with-real-workflows-2026-1oe3</guid>
+      <description>[Score: 85] GoHighLevelとn8n、Zapierを統合する方法について、具体的なワークフローを交えて解説しています。 / n8nのHighLevelノードやOAuth2 Marketplaceアプリ、Webhookアクションの活用が推奨されています。 / API v2への対応や、エラーハンドリング、リクエスト制限の遵守など、実践的な注意点も示されています。 [実務示唆: GoHighLevelと外部サービス連携時には、n8nやZapierの公式連携機能に加え、WebhookやHTTP Requestノードを組み合わせることで柔軟な自動化を実現しましょう。] (Source: Dev.to)</description>
+      <pubDate>Tue, 10 Nov 2026 13:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Show HN: メディアサーバー用の15MBのセルフホスト型NetflixとSpotify</title>
+      <link>https://github.com/HolyArrs/HolyArrs</link>
+      <guid isPermaLink="false">https://github.com/HolyArrs/HolyArrs</guid>
+      <description>[Score: 80] HolyArrsは、映画、テレビ番組、音楽を管理するための軽量なセルフホスト型アプリケーションです。 / NetflixやSpotifyのようなストリーミングアプリのインターフェースでメディアを閲覧し、リクエストに応じて自動的にコンテンツを処理します。 / Sonarr、Radarr、Lidarrなど、通常6つのアプリが必要なメディアサーバー機能を1つのアプリに統合し、約15MBのダウンロードサイズと低メモリ消費を実現しています。 [実務示唆: メディアサーバーを運用しているエンジニアは、HolyArrsを導入することで、複数のアプリ管理の手間を省き、リソース消費を抑えつつ、統合されたユーザーフレンドリーなメディア管理環境を構築できるため、試用を検討すべきです。] [GitHub: HolyArrs/HolyArrs] (Source: Hacker News)</description>
+      <pubDate>Tue, 10 Nov 2026 11:51:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub rulesetのON/OFFで「マージ禁止期間」を作る</title>
+      <link>https://zenn.dev/yesodco/articles/yesod-github-ruleset-merge-freeze</link>
+      <guid isPermaLink="false">https://zenn.dev/yesodco/articles/yesod-github-ruleset-merge-freeze</guid>
+      <description>[Score: 80] GitHubのrulesetを活用し、特定の期間だけブランチへのマージをシステム的に禁止する「マージ凍結」の仕組みが紹介されています。 / リリース判定からリリースブランチ作成までの間に意図しない変更がマージされるのを防ぐ目的で考案されました。 / required status check案の課題を指摘し、rulesetのenforcement機能を使った実現方法が解説されています。 [実務示唆: リリース前の重要な期間に意図しないコードマージを防ぐため、GitHub rulesetのenforcement機能を活用し、GitHub ActionsでON/OFFを切り替える自動化されたマージ凍結プロセスを導入しましょう。] (Source: Zenn)</description>
+      <pubDate>Tue, 10 Nov 2026 02:45:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>Webhookが発火しない？ボットのためのクロスプラットフォームデバッグガイド</title>
+      <link>https://dev.to/conferbot/webhook-not-firing-a-cross-platform-debugging-guide-for-bots-7bg</link>
+      <guid isPermaLink="false">https://dev.to/conferbot/webhook-not-firing-a-cross-platform-debugging-guide-for-bots-7bg</guid>
+      <description>[Score: 80] この記事は、Webhookが期待通りに動作しない場合のクロスプラットフォームなデバッグガイドです。 / Webhookの不具合は、プラットフォームからのリクエスト送信、サーバーでのリクエスト拒否、サーバーでの処理失敗の3つの原因に分類されます。 / デバッグの第一歩として、ハンドラーの最上部で生のHTTPリクエストをログに記録することが推奨されており、主要なプラットフォームごとの具体的なデバッグ手順も紹介されています。 [実務示唆: Webhookのデバッグ時には、まずハンドラーの最上部で生のHTTPリクエストをログに記録し、プラットフォームのエラーコードと照合することで、問題の特定を迅速に行うことができます。] (Source: Dev.to)</description>
+      <pubDate>Tue, 10 Nov 2026 13:30:00 +0000</pubDate>
     </item>
     <item>
       <title>アクセシビリティステートメントがGitHubに登場</title>
