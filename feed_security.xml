@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 01:30:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 13:00:01 +0000</lastBuildDate>
     <item>
       <title>氏名や電話番号、聞きません　漏洩問題で企業側、個人情報手放す動き：朝日新聞</title>
       <link>https://www.asahi.com/articles/ASVCB0H13VCBUTIL009M.html</link>
@@ -19,6 +19,13 @@
       <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
       <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>macOS Secure EnclaveでSSHキーを保護する</title>
+      <link>https://gatezh.com/posts/macos-secure-enclave-ssh-keys/</link>
+      <guid isPermaLink="false">https://gatezh.com/posts/macos-secure-enclave-ssh-keys/</guid>
+      <description>[Score: 80] SSHキーのセキュリティ対策として、macOS Secure Enclaveを利用する方法について解説しています。 / ファイルパーミッションのみに依存する既存のSSHキー管理の脆弱性を指摘し、ハードウェアベースのセキュリティの重要性を強調。 / YubiKeyや1Passwordなどの代替案と比較しつつ、ネイティブなSecure Enclaveの活用を模索する内容です。 [実務示唆: SSHキーのセキュリティ強化のため、macOS Secure EnclaveやYubiKeyなどのハードウェアベースの保護を検討し、悪意あるスクリプトからの漏洩リスクを低減しましょう。] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 04:28:57 +0000</pubDate>
     </item>
     <item>
       <title>There Are Likely More Spies at AI Companies, Says Security Executive Lisa Thiergart</title>

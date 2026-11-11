@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-11T10:29:14.082495+09:00",
-  "total_count": 48,
-  "success_count": 48,
+  "generated_at": "2026-11-11T21:58:51.554394+09:00",
+  "total_count": 74,
+  "success_count": 74,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -26,7 +26,7 @@
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
-      "hatena_count": 83
+      "hatena_count": 179
     },
     {
       "title": "Gitのセキュリティ脆弱性が発表されました",
@@ -50,6 +50,54 @@
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
       "hatena_count": 1
+    },
+    {
+      "title": "Google SWEがNASAライダーに48のAIエージェントを投入し、72時間で未発見のマヤのピラミッドを発見",
+      "url": "https://pietromiotti.com/latest/maya-site/?maya",
+      "source": "Hacker News",
+      "published": "2026-11-11T12:05:22+00:00",
+      "hn_score": 8,
+      "hn_comments": 1,
+      "reading_min": 5,
+      "summary": "Googleのソフトウェアエンジニアが48のAIエージェントをNASAのLidarデータに適用し、72時間以内に未発見のマヤ遺跡を発見しました。\nAIエージェントがLidarデータを分析し、ジャングルに隠された遺跡を特定するプロセスを日記形式で紹介しています。\nこの事例は、AIが考古学や探査分野に与える大きな影響と、その驚異的なスピードを示しています。",
+      "actionable_takeaway": "AIエージェントを活用したデータ分析は、これまで困難だった大規模なデータセットからのパターン発見を加速させるため、自身の専門分野でのAI適用可能性を検討し、新たな発見や効率化に繋げましょう。",
+      "tags": [
+        "AI",
+        "Lidar",
+        "Archaeology"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "AIエージェントが短期間で未発見の遺跡を見つけるという具体的な成果は、AIの応用可能性と社会へのインパクトの大きさを示しており、非常に高い新規性と実用性を持つと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ジェンスン・フアンCEOの不倫関係を利用して1兆円分以上のNVIDIA製半導体が中国に出荷されていた疑い",
+      "url": "https://gigazine.net/news/20261111-nvidia-spy-affair-ai-chip-shipments-to-china/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-11T03:34:04+00:00",
+      "reading_min": 4,
+      "summary": "NVIDIAのジェンスン・フアンCEOが「中国のスパイ」と断定された女性と不倫関係にあり、その関係を利用して1兆円以上のNVIDIA製半導体が中国に出荷されていた疑いが報じられています。\nこの女性は、2023年10月のアメリカによるAIチップ輸出制限強化後も、NVIDIAの「優先クラウドパートナー」の立場を利用して半導体を確保し、中国へ出荷したとされています。\nFBIがこの件を捜査しており、国際的な技術規制と企業倫理、セキュリティに関する重大な問題として注目されています。",
+      "actionable_takeaway": "AIチップの輸出規制強化とサプライチェーンの透明性に関する国際情勢を注視し、企業はコンプライアンス体制を再確認し、不正な取引リスクを排除するための対策を強化すべきです。",
+      "tags": [
+        "NVIDIA",
+        "AIチップ",
+        "輸出規制"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 95,
+      "score_reason": "NVIDIAという業界のキープレイヤーが関わる国際的な輸出規制違反の疑いであり、AI半導体市場、地政学リスク、企業倫理に与える影響が極めて大きく、重要度が非常に高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 117,
+      "topic_group": 3,
+      "topic_size": 2
     },
     {
       "title": "コード生成を超えて：エージェント指向エンジニアリング開発者ガイド",
@@ -123,7 +171,7 @@
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "Clojureのマクロによるメタプログラミングで業務ルールのDSLを作る",
@@ -188,7 +236,7 @@
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
-      "hatena_count": 377
+      "hatena_count": 576
     },
     {
       "title": ".NET 8と.NET 9のサポートは昨日で終了。脆弱性が社会問題化している現在、.NET 10への移行を推奨",
@@ -211,7 +259,75 @@
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 3
+    },
+    {
+      "title": "電圧グリッチングを用いてマイニングカードのA100を解き放つ",
+      "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
+      "source": "Hacker News",
+      "published": "2026-11-11T10:48:40+00:00",
+      "hn_score": 33,
+      "hn_comments": 9,
+      "reading_min": 18,
+      "summary": "GA100ダイの電圧フォルトインジェクション脆弱性を利用し、CMP 170HX 8GBカードをA100-80G相当に変換した事例が報告されました。\nこの手法により、小売版A100よりも約1.2倍高速な性能を実現し、NVLinkやPCIe Gen4などの無効化された機能も解除可能に。\nハードウェアレベルでのセキュリティ脆弱性と、それを利用した性能向上・機能解放の可能性を示しています。",
+      "actionable_takeaway": "ハードウェアの電圧グリッチングによる脆弱性悪用は、デバイスの意図しない機能解放や性能向上を可能にするため、セキュリティ設計者は物理的な攻撃手法にも注意を払うべきです。",
+      "tags": [
+        "GPU",
+        "Hardware Hacking",
+        "Voltage Glitching"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 90,
+      "score_reason": "ハードウェアの物理的な脆弱性を突いて、製品の意図しない性能を引き出すという技術的新規性とインパクトが非常に大きいと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Fable 5.2でGTA 6 Osaka Cityを作ってみた",
+      "url": "https://qiita.com/7mpy/items/5710fef43ba0e59204c6?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-10T13:38:25+00:00",
+      "reading_min": 6,
+      "summary": "Claude Fable 5.2を用いて、大阪を舞台にした3Dサンドボックスゲーム「VELA BAY」が開発されました。\n実際の大阪の地図データからワールドを生成し、車や歩行者AI、手配度システム、ミッションなどを実装しています。\nThree.jsを主要ライブラリとして使用し、独自の衝突判定を実装している点が特徴です。",
+      "actionable_takeaway": "LLMと地図データを組み合わせたゲーム開発の可能性を探るため、Three.jsとOpenStreetMapデータを用いたプロトタイプ開発を検討する。",
+      "tags": [
+        "Claude Fable 5.2",
+        "ゲーム開発",
+        "Three.js"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "LLMと既存技術を組み合わせた具体的なアプリケーション開発事例として非常に興味深く、その実現度も高いため、AIの応用可能性を示す点で評価が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ISUCON2026で優勝しました（準備編）",
+      "url": "https://zenn.dev/luvtechno/articles/isucon2026-preparation",
+      "source": "はてなブックマーク",
+      "published": "2026-11-11T05:38:12+00:00",
+      "reading_min": 28,
+      "summary": "この記事は、ISUCON2026でAIエージェントを完全自律（HOOTL）で参加させ、優勝するまでの3ヶ月間の準備期間を振り返るものです。\n人間が介入しないAIエージェントによるソフトウェア開発の可能性を探るため、ISUCONを題材に選定しました。\nAWS環境の整備、過去問の分析、自律ハーネスの構築など、具体的な準備プロセスと知見が詳細に記述されています。",
+      "actionable_takeaway": "AIエージェントによる開発自動化の可能性を探るため、ISUCONのような明確な指標がある課題でHOOTLアプローチを試すことを検討し、その知見を業務に活かすべきです。",
+      "tags": [
+        "ISUCON",
+        "AIエージェント",
+        "HOOTL"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIエージェントによる完全自律開発という先進的なアプローチをISUCONという具体的な課題で実践し、その準備プロセスと知見が詳細に共有されており、技術的な新規性と実用性が非常に高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 316
     },
     {
       "title": "LoRazor: 効率的なMulti-LoRAサービングのためのアダプター実行のトリミング",
@@ -328,7 +444,7 @@
       "new_at": "2026-11-10T12:49:55.721573+09:00",
       "first_seen": "2026-11-10T12:49:55.721573+09:00",
       "is_hot": false,
-      "hatena_count": 34,
+      "hatena_count": 35,
       "is_prev_seen": true
     },
     {
@@ -351,7 +467,7 @@
       "new_at": "2026-11-10T12:49:55.721573+09:00",
       "first_seen": "2026-11-10T12:49:55.721573+09:00",
       "is_hot": false,
-      "hatena_count": 12,
+      "hatena_count": 13,
       "is_prev_seen": true
     },
     {
@@ -359,8 +475,8 @@
       "url": "https://docodethatmatters.com/home-automation-overnight-success/",
       "source": "Hacker News",
       "published": "2026-11-10T15:25:20+00:00",
-      "hn_score": 695,
-      "hn_comments": 251,
+      "hn_score": 1045,
+      "hn_comments": 367,
       "reading_min": 8,
       "summary": "筆者は、スマートホームの中核機能がベンダーのサーバーに依存せず、インターネットがダウンしても動作し続けることを原則としています。\nGoogle Nest APIの停止や、Wi-Fi接続を必要とするスマート家電の例を挙げ、クラウド依存のリスクを指摘しています。\nTasmotaを導入したESPボード、MQTTブローカー、Node-REDをRaspberry Piで運用し、ローカルでの制御を重視するシステムを構築しています。",
       "actionable_takeaway": "スマートホームシステムを構築する際は、インターネット接続なしでも主要機能が動作するよう、ローカル制御可能なデバイスやオープンソースソリューションの採用を検討し、ベンダーロックインを避けるべきです。",
@@ -465,7 +581,7 @@
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
-      "hatena_count": 36
+      "hatena_count": 110
     },
     {
       "title": "マイクロソフト、.NET 11正式リリース。C#に共用型を導入、JITやAOTコンパイラの高速化、コマンドラインツール強化など新機能",
@@ -488,7 +604,7 @@
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 13,
       "topic_group": 2,
       "topic_size": 2
     },
@@ -511,6 +627,96 @@
       "analysis_status": "ok",
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "線形計画法は重み空間プログラミングを実行できるか？",
+      "url": "https://nathan.rs/posts/weight-space-lp/",
+      "source": "Hacker News",
+      "published": "2026-11-11T12:30:17+00:00",
+      "hn_score": 4,
+      "hn_comments": 0,
+      "reading_min": 8,
+      "summary": "MIT CSAILが提唱する「重み空間プログラミング」は、GPT-6 Astraがネットワークの重みから学習ゲームを特定したり、ゲームルールからネットワークの重みを生成したりする技術です。\nAstraがQwen3.5-0.8Bの数学能力を向上させた事例では、重みの0.016%変更で精度が大幅に向上しました。\n筆者は、Astraの重み編集プロセスが線形計画法（LP）の解法に似ていることを指摘し、LPで同様の最適化が可能であることを示唆しています。",
+      "actionable_takeaway": "大規模言語モデルの重み編集による性能改善は、線形計画法のような最適化手法で効率化できる可能性があるため、AIモデルの微調整や最適化において、従来の最適化アルゴリズムの適用を検討してみましょう。",
+      "tags": [
+        "AI",
+        "Linear Programming",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "LLMの重み空間プログラミングという新しい概念と、それが線形計画法と関連するという洞察は、AI研究の進展に重要な示唆を与えるため、高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Claude Fable 5.2のプロンプトガイドを読んで正直に思ったことを書く",
+      "url": "https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2",
+      "source": "Zenn",
+      "published": "2026-11-10T12:44:52+00:00",
+      "reading_min": 7,
+      "summary": "Claude Fable 5.2のプロンプトガイドを読んだ所感がまとめられています。\n特に、エフォートレベルの調整や、コードの所有権に関するモデルの挙動、最終レポート作成時の注意点などが印象的とのことです。\nデフォルトのhighエフォートが推奨され、xhighやmaxとの差は小さいと述べられています。",
+      "actionable_takeaway": "Claude Fable 5.2利用時は、コードの所有権を明示的にプロンプトに含め、モデルが積極的に修正するよう促す。",
+      "tags": [
+        "Claude Fable 5.2",
+        "プロンプトエンジニアリング",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "最新のLLMであるClaude Fable 5.2の具体的な利用ガイドラインと実践的な知見が提供されており、AI開発者にとって非常に有用性が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "「またAIの見え方変わった」ダウン症で知的障害のある弟とのやりとりに、AIを活用したら解決できることが増えたという話に注目が集まる",
+      "url": "https://togetter.com/li/2769126",
+      "source": "はてなブックマーク",
+      "published": "2026-11-11T03:28:52+00:00",
+      "reading_min": 4,
+      "summary": "ダウン症で知的障害のある弟とのコミュニケーションにAI（Gemini）を活用した事例が紹介され、大きな注目を集めています。\nAIが異なる知能間の「眼鏡」として機能し、知的障害者と健常者の間の仲介役を果たす可能性が示唆されています。\n感情的・体力的に困難な対話をAIが継続することで、知のバリアフリーが実現し、多くの人々を助ける可能性が議論されています。",
+      "actionable_takeaway": "AIをコミュニケーション支援ツールとして活用し、多様なニーズを持つ人々との対話の質を向上させる可能性を検討し、アクセシビリティ向上に役立てるべきです。",
+      "tags": [
+        "AI",
+        "アクセシビリティ",
+        "知的障害"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIがコミュニケーションのバリアフリーに貢献するという、社会的な意義と実用性が非常に高い事例であり、AIの新たな活用方法を示すものとして高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 244
+    },
+    {
+      "title": "JSON抽出プロンプトのテスト方法：パース、形状、値のチェック",
+      "url": "https://dev.to/litmiq/how-to-test-json-extraction-prompts-parse-shape-and-value-checks-472n",
+      "source": "Dev.to",
+      "published": "2026-11-11T12:55:27+00:00",
+      "reading_min": 10,
+      "summary": "本記事では、JSON抽出プロンプトのテストにおける3つの失敗パターン（パース、形状、値）と、それぞれの修正方法について解説しています。\nOpenAI APIのJSONモードやStructured Outputs機能も紹介し、テストケースと評価基準を提供しています。\n正確なJSON出力を得るための具体的なテスト戦略と注意点が示されています。",
+      "actionable_takeaway": "JSON抽出プロンプトを開発する際は、パース、形状、値の各層でテストケースを作成し、OpenAIのJSONモードやStructured Outputsを適切に活用して堅牢性を確保しましょう。",
+      "tags": [
+        "JSON",
+        "Prompt Engineering",
+        "Testing"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "LLMからのJSON抽出は多くの開発で利用されており、そのテスト方法と失敗パターンへの対処法は実用性が高く、開発者の生産性向上に直結するため重要度が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -603,7 +809,7 @@
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
-      "hatena_count": 52
+      "hatena_count": 185
     },
     {
       "title": "「.NET MAUI 11」がついにXamarin由来のMonoランタイムから脱却、CoreCLRに統一",
@@ -626,9 +832,98 @@
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 7,
       "topic_group": 2,
       "topic_size": 2
+    },
+    {
+      "title": "macOS Secure EnclaveでSSHキーを保護する",
+      "url": "https://gatezh.com/posts/macos-secure-enclave-ssh-keys/",
+      "source": "Hacker News",
+      "published": "2026-11-11T04:28:57+00:00",
+      "hn_score": 265,
+      "hn_comments": 94,
+      "reading_min": 6,
+      "summary": "SSHキーのセキュリティ対策として、macOS Secure Enclaveを利用する方法について解説しています。\nファイルパーミッションのみに依存する既存のSSHキー管理の脆弱性を指摘し、ハードウェアベースのセキュリティの重要性を強調。\nYubiKeyや1Passwordなどの代替案と比較しつつ、ネイティブなSecure Enclaveの活用を模索する内容です。",
+      "actionable_takeaway": "SSHキーのセキュリティ強化のため、macOS Secure EnclaveやYubiKeyなどのハードウェアベースの保護を検討し、悪意あるスクリプトからの漏洩リスクを低減しましょう。",
+      "tags": [
+        "SSH",
+        "macOS",
+        "Secure Enclave"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "SSHキーのセキュリティは多くの開発者にとって重要であり、macOSのネイティブ機能で強化できる点は実用性が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "Firefoxの無料内蔵VPN、2027年1月までデータ制限を撤廃 | Mozillaブログ",
+      "url": "https://www.reddit.com/r/technology/comments/1xt8xae/firefoxs_free_builtin_vpn_uncaps_data_limit/",
+      "source": "Reddit",
+      "published": "2026-11-11T04:55:59+00:00",
+      "summary": "Firefoxブラウザに内蔵されている無料VPNサービスが、2027年1月までデータ制限を撤廃すると発表されました。\nこれにより、ユーザーはより自由に、かつ長期間にわたってVPN機能を利用できるようになります。\nMozillaはユーザーのプライバシー保護とインターネットの自由を重視していることを示しています。",
+      "actionable_takeaway": "プライバシー保護とセキュリティ強化のため、Firefoxの無料VPN機能を活用し、特に公共Wi-Fi利用時などには積極的に利用を検討する。",
+      "tags": [
+        "Firefox",
+        "VPN",
+        "プライバシー"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 80,
+      "score_reason": "主要ブラウザが提供するVPNサービスのデータ制限撤廃は、ユーザーのプライバシー保護とセキュリティ向上に大きく貢献し、Web利用の安全性に影響を与えるため重要。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Nuxt 3はEOL：今すぐNuxt 4に移行すべきか、Nuxt 5を待つべきか？",
+      "url": "https://dev.to/dipeshba/nuxt-3-is-end-of-life-migrate-to-nuxt-4-now-or-wait-for-nuxt-5-358m",
+      "source": "Dev.to",
+      "published": "2026-11-11T12:55:31+00:00",
+      "reading_min": 8,
+      "summary": "Nuxt 3は2026年7月31日にEOL（End of Life）を迎え、セキュリティやバグ修正のサポートが終了しました。Nuxt 5はまだリリースされていません。\nほとんどのプロダクションアプリケーションでは、Nuxt 4への移行が推奨されます。Nuxt 4はNuxt 3からの移行が容易で、Nuxt 5リリース後も少なくとも6ヶ月間はサポートされます。\nクリティカルなモジュールのブロック、変更凍結期間、またはアプリケーションの廃止予定がある場合にのみ、有償の延長サポートと具体的な計画があればNuxt 5を待つ選択肢も考えられます。",
+      "actionable_takeaway": "Nuxt 3を使用している開発者は、セキュリティリスクを避けるため、速やかにNuxt 4への移行計画を立て、実行に移すべきです。移行は比較的容易であり、早期対応が推奨されます。",
+      "github_repo": "nuxt/nuxt",
+      "tags": [
+        "Nuxt.js",
+        "EOL",
+        "マイグレーション"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 80,
+      "score_reason": "主要なWebフレームワークであるNuxt.jsのEOLとバージョンアップに関する重要な情報であり、多くのWeb開発者に直接的な影響を与えるため、実用性と影響度を高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "EarthRecord: 40年間の衛星画像からマルチモーダルエージェントによる土地変化をピクセルから検出",
+      "url": "https://arxiv.org/abs/2611.12934",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-11T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、40年以上にわたる衛星画像データを用いて、マルチモーダルAIエージェントが土地変化をピクセルレベルで検出する研究論文です。\n地球規模の環境モニタリングや土地利用変化の分析にAIを応用する可能性を探っています。\narXivLabsを通じて公開されており、大規模な地理空間データ解析におけるAIの進化を示しています。",
+      "tags": [
+        "AI",
+        "衛星画像",
+        "地理空間データ"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "長期間の衛星画像データから土地変化を検出するマルチモーダルAIは、環境モニタリングや災害予測など、社会的に大きな影響を持つ応用が期待でき、技術的な新規性も高いため重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "Arnisは地球上のあらゆる場所をMinecraftの世界に変える",
@@ -672,6 +967,49 @@
       "analysis_status": "ok",
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "請求書が土曜日の日付の場合、どのECB為替レートを使用すべきか？ (Python)",
+      "url": "https://dev.to/fast_data_asap/your-invoice-is-dated-on-a-saturday-which-ecb-exchange-rate-do-you-use-python-1jfg",
+      "source": "Dev.to",
+      "published": "2026-11-11T12:55:00+00:00",
+      "reading_min": 4,
+      "summary": "土曜日の日付の請求書に対するECB為替レートの取得に関する課題とPythonでの解決策を提示しています。\nECBは週末にレートを公開しないため、適切なレート選択が重要であり、誤った選択は最大€10以上の誤差を生む可能性があります。\nApifyのECB為替レートAPIを活用し、正確なレートを取得する方法がコード例と共に解説されています。",
+      "actionable_takeaway": "為替レートを扱うシステムを開発する際は、週末や祝日のレート欠損に注意し、ECBの公開ルールに基づいた適切なレート選択ロジックを実装するか、信頼できるAPIを利用して誤差を最小限に抑えましょう。",
+      "tags": [
+        "Python",
+        "API",
+        "Finance"
+      ],
+      "category": "プログラミング言語",
+      "score": 78,
+      "score_reason": "金融関連のシステム開発において為替レートの正確な扱いは非常に重要であり、実務で直面しがちな具体的な問題とその解決策をPythonコードで示しているため、実用性が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "プレフィルで学習し、デコード時に監視：トピック監視のためのスパースオートエンコーダの利用",
+      "url": "https://arxiv.org/abs/2611.12935",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-11T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、スパースオートエンコーダを用いてトピック監視を行う新しい手法に関する研究論文です。\nモデルのプレフィル段階で学習を行い、デコード時に監視することで、効率的かつ高精度なトピック検出を目指しています。\narXivLabsで公開されており、大規模言語モデルの解釈可能性と監視能力向上に貢献する可能性を秘めています。",
+      "tags": [
+        "AI",
+        "オートエンコーダ",
+        "トピック監視"
+      ],
+      "category": "AI・機械学習",
+      "score": 77,
+      "score_reason": "スパースオートエンコーダを用いたトピック監視は、LLMの振る舞いを理解し、異常検出やコンテンツフィルタリングに応用できる可能性があり、AIの信頼性と安全性を高める上で重要な研究です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -816,6 +1154,114 @@
       "hatena_count": 0
     },
     {
+      "title": "Snowflake Dashboards 2.0が最高な理由と、これからBIに求められること",
+      "url": "https://zenn.dev/dataheroes/articles/snowflake-dashboards-2-and-future-of-bi",
+      "source": "Zenn",
+      "published": "2026-11-11T00:21:10+00:00",
+      "reading_min": 14,
+      "summary": "Snowflakeからリリースされた新しいDashboards 2.0は、Snowflake内で完結する可視化環境として高く評価されています。\n旧Dashboardsの課題（共有、フィルター、コード管理の不足）を解決し、定型的な数字の確認やAIによる質問応答のニーズに応えます。\nこれにより、BIツールを別途導入することなく、Snowflake上でデータ分析と可視化がシームレスに行えるようになり、今後のBIのあり方に影響を与える可能性を秘めています。",
+      "actionable_takeaway": "Snowflakeユーザーは、Dashboards 2.0を活用してBIツールへの依存を減らし、データ可視化と分析をSnowflake内で完結させることで、コスト削減と効率化を図りましょう。",
+      "tags": [
+        "Snowflake",
+        "BI",
+        "Dashboard"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 75,
+      "score_reason": "Snowflakeの新しいダッシュボード機能は、データ分析と可視化のワークフローを効率化し、BI業界に影響を与える可能性があるため、実用性と影響度を考慮して評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 3
+    },
+    {
+      "title": "学生ゲーム開発コンテスト、AI生成の粗悪な作品が多すぎて中止に",
+      "url": "https://www.reddit.com/r/technology/comments/1xt23ga/student_game_development_competition_shut_down/",
+      "source": "Reddit",
+      "published": "2026-11-10T23:27:32+00:00",
+      "summary": "学生向けのゲーム開発コンテストが、AIによって生成された低品質な作品の応募が多すぎたため中止されました。\nこれは、AI技術の普及がクリエイティブな分野における評価基準やコンテストのあり方に影響を与えていることを示唆しています。\nAIツールの利用とオリジナリティのバランスが課題となっています。",
+      "actionable_takeaway": "AI生成コンテンツの増加に対応するため、コンテストや作品評価の場では、AI利用に関する明確なガイドラインや評価基準を設けることを検討する。",
+      "tags": [
+        "AI",
+        "ゲーム開発",
+        "コンテスト"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 75,
+      "score_reason": "AI技術の普及がクリエイティブな分野に与える負の側面を具体的に示しており、今後のAIと人間の協調、評価基準の再定義の必要性を提起する点で重要。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Google版AirTag『Pixel Tag』発売、10億台のAndroid端末で探す紛失防止トラッカー　UWBと新技術『Bluetooth CS』採用 | テクノエッジ TechnoEdge",
+      "url": "https://www.techno-edge.net/article/2026/11/11/5701.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-11T03:49:30+00:00",
+      "reading_min": 2,
+      "summary": "Googleが忘れ物防止トラッカー「Pixel Tag」を国内で発売しました。価格は5010円で、AppleのAirTagよりやや安価です。\n世界10億台のAndroid端末が連携する「Find Hub」ネットワークと、UWB、そして新技術Bluetooth 6.0の「Bluetooth Channel Sounding (CS)」に対応します。\nBluetooth CSによりセンチメートル単位での距離計測が可能となり、紛失物の発見精度が向上することが期待されます。",
+      "actionable_takeaway": "AndroidユーザーはPixel Tagの導入を検討し、特にBluetooth CS対応の最新端末であれば、より高精度な紛失防止機能の恩恵を受けられるか検証すべきです。",
+      "tags": [
+        "Pixel Tag",
+        "UWB",
+        "Bluetooth CS"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 75,
+      "score_reason": "GoogleがAirTag対抗製品を投入し、Androidエコシステム全体での紛失防止ネットワークを強化する点で重要です。特にBluetooth CSという新技術の採用は技術的な新規性があります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 66
+    },
+    {
+      "title": "自律型X線実験のための監査可能な人間-エージェントチーム",
+      "url": "https://arxiv.org/abs/2611.12933",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-11T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、自律型X線実験における人間とAIエージェントの協調に関する研究論文です。\n監査可能性を重視した人間-エージェントチームのフレームワークを提案しており、実験の透明性と信頼性向上を目指しています。\narXivLabsの取り組みの一環として公開されており、AIと科学実験の融合における新たなアプローチを示唆しています。",
+      "tags": [
+        "AI",
+        "X線実験",
+        "Human-Agent Team"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AIが科学実験の自動化に貢献する可能性を示しており、特に監査可能性という側面は信頼性の高いAIシステム構築において重要です。ただし、現時点では研究段階の論文であるため、実用化には時間がかかると考えられます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "大規模言語モデルにおける心理測定学的推論の追跡",
+      "url": "https://arxiv.org/abs/2611.12937",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-11T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、大規模言語モデル（LLM）がどのように心理測定学的な推論を行うかを追跡する研究に関するものです。\nLLMが人間の心理特性をどの程度理解し、模倣できるのかを分析しています。\nこれにより、LLMの内部メカニズムと倫理的側面への理解を深めることを目的としています。",
+      "actionable_takeaway": "LLMを応用した心理分析ツールや対話システムを開発する際は、モデルの心理測定学的推論能力と限界を理解し、倫理的な利用ガイドラインを策定することが重要です。",
+      "tags": [
+        "大規模言語モデル",
+        "心理測定学",
+        "AI倫理"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "LLMの内部動作と倫理的側面に関する重要な研究であり、今後のAI開発における信頼性や安全性向上に貢献する可能性が高いため、高いスコアを付けました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "Nvidiaとジェンスン・フアン氏が中国のスパイとの関係疑惑で株主から訴えられる",
       "url": "https://www.reddit.com/r/technology/comments/1xsjbxl/nvidia_and_jensen_huang_sued_by_shareholders_over/",
       "source": "Reddit",
@@ -835,8 +1281,8 @@
       "first_seen": "2026-11-10T22:47:48.457472+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 1,
-      "topic_size": 3,
+      "topic_group": 3,
+      "topic_size": 2,
       "is_prev_seen": true
     },
     {
@@ -867,8 +1313,8 @@
       "url": "https://neil.fraser.name/news/2026/11/10/",
       "source": "Hacker News",
       "published": "2026-11-10T16:37:44+00:00",
-      "hn_score": 675,
-      "hn_comments": 156,
+      "hn_score": 881,
+      "hn_comments": 191,
       "reading_min": 1,
       "summary": "Verisignが計画していた22,000件の.nameドメイン名とメールリダイレクトの終了計画が撤回されました。\n既存のドメインとメールリダイレクトは無期限に維持されることになりますが、3rdレベルの.nameドメインの新規登録は終了します。\nこれは多くの関係者の協力と努力によって勝ち取られた成果であり、ICANNの決定に対する異議申し立てが成功した事例です。",
       "actionable_takeaway": "ドメイン管理ポリシーの変更はユーザーに大きな影響を与えるため、関連するアナウンスには常に注意を払い、必要に応じて異議申し立てなどの行動を起こす準備をしておくべきです。",
@@ -950,7 +1396,7 @@
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
-      "hatena_count": 59
+      "hatena_count": 450
     },
     {
       "title": "Google AI Classroom Part 6: 低帯域幅での教室画面ブロードキャストとGemini 4 Argonによる単一パス全講義字幕",
@@ -971,6 +1417,73 @@
       "analysis_status": "ok",
       "new_at": "2026-11-11T10:29:14.082495+09:00",
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ABC482で入青しました！",
+      "url": "https://qiita.com/yoniha/items/c5e23c033bf3e09d0f20?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-10T10:59:38+00:00",
+      "reading_min": 4,
+      "summary": "AtCoderの競技プログラミングで青色レーティングを達成した筆者の経験談です。\n主にAtCoder Daily Training (ADT)を活用し、自分のRatingと同じくらいのDifficultyの問題を重点的に解いたことが成功の鍵とされています。\n早解きだけでなく、多くの問題を解くための精進の重要性も強調されています。",
+      "actionable_takeaway": "競技プログラミングのスキル向上には、自分のレーティングに合った難易度の問題を反復練習し、解けなかった問題は解説を見て理解するサイクルを徹底する。",
+      "tags": [
+        "AtCoder",
+        "競技プログラミング",
+        "アルゴリズム"
+      ],
+      "category": "プログラミング言語",
+      "score": 70,
+      "score_reason": "競技プログラミングにおける具体的な学習方法と成功体験が共有されており、特に初心者や中級者にとってモチベーション向上と学習指針となるため有用。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Kapitanジェネレーターリリース、2026年11月2日〜8日",
+      "url": "https://dev.to/kadet-hub/kapitan-generator-releases-2-to-8-november-2026-4ai9",
+      "source": "Dev.to",
+      "published": "2026-11-11T12:55:01+00:00",
+      "reading_min": 8,
+      "summary": "Kapitanジェネレーターの2026年11月2日から8日までのリリース情報が公開されました。\nArgo CD 3.5.6のレンダリング、Kapitan設定管理プラグインの追加、trust-manager 0.26.0のサポートなどが含まれます。\n各バージョンは署名され、出力差分やSBOMが提供されており、信頼性と透明性が重視されています。",
+      "actionable_takeaway": "Kapitanを利用しているユーザーは、最新のリリース情報を確認し、特にArgo CDやtrust-managerとの連携機能、およびライセンス情報の変更点に注意してアップデートを検討しましょう。",
+      "github_repo": "kadet-hub/registry",
+      "tags": [
+        "Kapitan",
+        "Argo CD",
+        "Configuration Management"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 70,
+      "score_reason": "Kapitanは特定のニッチな設定管理ツールであり、今回のリリースは既存ユーザーにとって重要ですが、業界全体への影響は限定的であるためこのスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "LandslideFM: 統一的な地滑り認識と理解に向けた基盤モデル",
+      "url": "https://arxiv.org/abs/2611.12936",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-11T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、地滑りの認識と理解を統一的に行うための基盤モデル「LandslideFM」に関するものです。\n地滑り検知や予測といったタスクを単一モデルで処理することを目指しています。\nこれにより、災害予測や防災分野におけるAI活用の可能性を広げます。",
+      "actionable_takeaway": "地滑り予測や災害監視システム開発に携わるエンジニアは、LandslideFMのような基盤モデルの応用可能性を検討し、既存システムへの統合を試みるべきです。",
+      "tags": [
+        "基盤モデル",
+        "地滑り検知",
+        "災害予測"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "地滑りという特定の分野に特化した基盤モデルであり、災害対策への応用が期待されるため、新規性と実用性を評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -1044,12 +1557,55 @@
       "hatena_count": 0
     },
     {
+      "title": "ペンタゴン、F-35部品の追跡ができないと監視機関が指摘",
+      "url": "https://www.reddit.com/r/technology/comments/1xt11pq/pentagon_cannot_track_all_of_its_f35_parts/",
+      "source": "Reddit",
+      "published": "2026-11-10T22:42:08+00:00",
+      "summary": "米国防総省がF-35戦闘機の部品をすべて追跡できていないと、監視機関が指摘しました。\nこれは、サプライチェーン管理の課題と、高価な軍事装備品の維持管理における透明性の欠如を示しています。\n部品の追跡不能は、コスト増加や整備遅延、さらには国家安全保障上のリスクにつながる可能性があります。",
+      "actionable_takeaway": "大規模なシステムや複雑なサプライチェーンを持つプロジェクトでは、部品や資産の追跡管理システムを厳格に導入し、透明性と効率性を確保する。",
+      "tags": [
+        "サプライチェーン",
+        "国防",
+        "F-35"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "IT技術ニュースというよりは、サプライチェーン管理や国家安全保障に関する問題提起であり、直接的なIT技術への影響は限定的だが、大規模システムにおける管理の重要性を示す点で一定の価値がある。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ベッドからのプリント剥がれ：反りか、それとも最初から定着しなかったのか？",
+      "url": "https://dev.to/primeracapa/print-lifting-off-the-bed-warping-or-a-first-layer-that-never-stuck-54em",
+      "source": "Dev.to",
+      "published": "2026-11-11T12:55:33+00:00",
+      "reading_min": 4,
+      "summary": "3Dプリントで造形物がベッドから剥がれる現象には、「反り（warping）」と「初期層の定着不良（poor adhesion）」の2つの主な原因があります。\n反りはノズル温度と周囲温度の急激な差によるプラスチックの収縮が原因で、PC BlendやABSなどの高温材料や大型オブジェクトで発生しやすいです。\n初期層の定着不良は、ビルドプレートの油汚れ、損傷、ノズル距離の不適切さ、スライサーでのプレートタイプ選択ミスなどが原因で起こります。",
+      "actionable_takeaway": "3Dプリントの剥がれ問題に直面した場合、まず反りか定着不良かを特定し、材料に応じたベッド温度調整、適切なノズル距離設定、ビルドプレートの清掃・管理を徹底して試すべきです。",
+      "tags": [
+        "3Dプリンター",
+        "Warping",
+        "Adhesion"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 65,
+      "score_reason": "3Dプリンターユーザーにとって一般的な問題とその解決策を具体的に解説しており、実用性は高いですが、技術的な新規性や業界への影響は限定的であるため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "サイオンが復活し、アメリカで軽トラックを販売する",
       "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
       "source": "Hacker News",
       "published": "2026-11-10T19:50:46+00:00",
-      "hn_score": 319,
-      "hn_comments": 237,
+      "hn_score": 498,
+      "hn_comments": 325,
       "reading_min": 4,
       "summary": "トヨタは若者向けブランドとして2003年にサイオンを立ち上げましたが、販売不振により2016年に撤退しました。\n今回「Scion by Toyota」として復活し、「モビリティに関する既成概念に挑戦する自由なラボ」と位置づけられます。\n最初の生産車両は、日本の軽トラックであるダイハツ・ハイゼットのOEM車「KEI-01」をアメリカ市場で販売する予定です。",
       "actionable_takeaway": "自動車業界の新たな動向として、コンパクトで実用的な軽トラックがアメリカ市場に投入されることで、物流や個人利用の選択肢が広がる可能性があります。",
@@ -1089,6 +1645,29 @@
       "hatena_count": 0
     },
     {
+      "title": "Tinfoil (YC P25) がサンフランシスコで応用AIセキュリティエンジニアを募集",
+      "url": "https://news.ycombinator.com/item?id=50452404",
+      "source": "Hacker News",
+      "published": "2026-11-11T12:00:35+00:00",
+      "hn_score": 1,
+      "hn_comments": 0,
+      "summary": "Tinfoil (YC P25) がサンフランシスコで応用AIセキュリティエンジニアの求人を行っています。\nAI技術とセキュリティの交差点で働く機会を提供しており、最先端の技術に携わることができます。\nAIシステムのセキュリティ確保が重要視される中で、専門知識を持つエンジニアの需要が高まっていることを示唆しています。",
+      "actionable_takeaway": "AIシステムのセキュリティは今後ますます重要になるため、AIとセキュリティの両方の知識を深め、この分野でのキャリア機会を探ることを検討しましょう。",
+      "tags": [
+        "AI Security",
+        "Hiring",
+        "Career"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 60,
+      "score_reason": "求人情報であり、直接的な技術的進展ではないものの、AIセキュリティという成長分野の需要を示す点で一定の重要性があると判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-11T21:58:51.554394+09:00",
+      "first_seen": "2026-11-11T21:58:51.554394+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "テレンス・タオによる数学の6つのエッセンス",
       "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
       "source": "Hacker News",
@@ -1114,19 +1693,19 @@
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-11T10:29:14.082495+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-11T21:58:51.554394+09:00",
     "summary_lines": [
-      "個人情報保護の動きが加速、企業はデータ保持を見直す傾向に。",
-      "Gitの脆弱性や.NETサポート終了など、セキュリティ対策が急務。",
-      "Nvidia AIチップの地政学的な動きとオープンデータ活用に注目。"
+      "個人情報保護の動きが加速、企業はデータ漏洩対策を強化。",
+      "AIが考古学に貢献、未発見のマヤ遺跡発見でその可能性を示す。",
+      "NVIDIA製AIチップの不正輸出疑惑が浮上、地政学リスクが顕在化。"
     ],
     "focus_tags": [
-      "セキュリティ",
       "個人情報保護",
-      "AIチップ",
-      "オープンデータ",
-      ".NET"
+      "AI",
+      "データセキュリティ",
+      "NVIDIA",
+      "輸出規制"
     ]
   }
 }

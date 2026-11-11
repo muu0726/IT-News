@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 01:30:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 13:00:01 +0000</lastBuildDate>
     <item>
       <title>氏名や電話番号、聞きません　漏洩問題で企業側、個人情報手放す動き：朝日新聞</title>
       <link>https://www.asahi.com/articles/ASVCB0H13VCBUTIL009M.html</link>
@@ -19,6 +19,20 @@
       <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
       <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Google SWEがNASAライダーに48のAIエージェントを投入し、72時間で未発見のマヤのピラミッドを発見</title>
+      <link>https://pietromiotti.com/latest/maya-site/?maya</link>
+      <guid isPermaLink="false">https://pietromiotti.com/latest/maya-site/?maya</guid>
+      <description>[Score: 95] Googleのソフトウェアエンジニアが48のAIエージェントをNASAのLidarデータに適用し、72時間以内に未発見のマヤ遺跡を発見しました。 / AIエージェントがLidarデータを分析し、ジャングルに隠された遺跡を特定するプロセスを日記形式で紹介しています。 / この事例は、AIが考古学や探査分野に与える大きな影響と、その驚異的なスピードを示しています。 [実務示唆: AIエージェントを活用したデータ分析は、これまで困難だった大規模なデータセットからのパターン発見を加速させるため、自身の専門分野でのAI適用可能性を検討し、新たな発見や効率化に繋げましょう。] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 12:05:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>ジェンスン・フアンCEOの不倫関係を利用して1兆円分以上のNVIDIA製半導体が中国に出荷されていた疑い</title>
+      <link>https://gigazine.net/news/20261111-nvidia-spy-affair-ai-chip-shipments-to-china/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20261111-nvidia-spy-affair-ai-chip-shipments-to-china/</guid>
+      <description>[Score: 95] NVIDIAのジェンスン・フアンCEOが「中国のスパイ」と断定された女性と不倫関係にあり、その関係を利用して1兆円以上のNVIDIA製半導体が中国に出荷されていた疑いが報じられています。 / この女性は、2023年10月のアメリカによるAIチップ輸出制限強化後も、NVIDIAの「優先クラウドパートナー」の立場を利用して半導体を確保し、中国へ出荷したとされています。 / FBIがこの件を捜査しており、国際的な技術規制と企業倫理、セキュリティに関する重大な問題として注目されています。 [実務示唆: AIチップの輸出規制強化とサプライチェーンの透明性に関する国際情勢を注視し、企業はコンプライアンス体制を再確認し、不正な取引リスクを排除するための対策を強化すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 11 Nov 2026 03:34:04 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -70,6 +84,27 @@
       <pubDate>Tue, 10 Nov 2026 17:45:42 +0000</pubDate>
     </item>
     <item>
+      <title>電圧グリッチングを用いてマイニングカードのA100を解き放つ</title>
+      <link>https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/</link>
+      <guid isPermaLink="false">https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/</guid>
+      <description>[Score: 90] GA100ダイの電圧フォルトインジェクション脆弱性を利用し、CMP 170HX 8GBカードをA100-80G相当に変換した事例が報告されました。 / この手法により、小売版A100よりも約1.2倍高速な性能を実現し、NVLinkやPCIe Gen4などの無効化された機能も解除可能に。 / ハードウェアレベルでのセキュリティ脆弱性と、それを利用した性能向上・機能解放の可能性を示しています。 [実務示唆: ハードウェアの電圧グリッチングによる脆弱性悪用は、デバイスの意図しない機能解放や性能向上を可能にするため、セキュリティ設計者は物理的な攻撃手法にも注意を払うべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 10:48:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fable 5.2でGTA 6 Osaka Cityを作ってみた</title>
+      <link>https://qiita.com/7mpy/items/5710fef43ba0e59204c6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/7mpy/items/5710fef43ba0e59204c6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] Claude Fable 5.2を用いて、大阪を舞台にした3Dサンドボックスゲーム「VELA BAY」が開発されました。 / 実際の大阪の地図データからワールドを生成し、車や歩行者AI、手配度システム、ミッションなどを実装しています。 / Three.jsを主要ライブラリとして使用し、独自の衝突判定を実装している点が特徴です。 [実務示唆: LLMと地図データを組み合わせたゲーム開発の可能性を探るため、Three.jsとOpenStreetMapデータを用いたプロトタイプ開発を検討する。] (Source: Qiita)</description>
+      <pubDate>Tue, 10 Nov 2026 13:38:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>ISUCON2026で優勝しました（準備編）</title>
+      <link>https://zenn.dev/luvtechno/articles/isucon2026-preparation</link>
+      <guid isPermaLink="false">https://zenn.dev/luvtechno/articles/isucon2026-preparation</guid>
+      <description>[Score: 90] この記事は、ISUCON2026でAIエージェントを完全自律（HOOTL）で参加させ、優勝するまでの3ヶ月間の準備期間を振り返るものです。 / 人間が介入しないAIエージェントによるソフトウェア開発の可能性を探るため、ISUCONを題材に選定しました。 / AWS環境の整備、過去問の分析、自律ハーネスの構築など、具体的な準備プロセスと知見が詳細に記述されています。 [実務示唆: AIエージェントによる開発自動化の可能性を探るため、ISUCONのような明確な指標がある課題でHOOTLアプローチを試すことを検討し、その知見を業務に活かすべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 11 Nov 2026 05:38:12 +0000</pubDate>
+    </item>
+    <item>
       <title>LoRazor: 効率的なMulti-LoRAサービングのためのアダプター実行のトリミング</title>
       <link>https://arxiv.org/abs/2611.10049</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.10049</guid>
@@ -110,41 +145,6 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</guid>
       <description>[Score: 85] マイクロソフトは、C#などの.NETテクノロジーでWebアプリ開発を可能にするフレームワーク「Blazor」に、150以上のオープンソースUIコンポーネントが寄贈されたと発表しました。 / これはInfragisticsとSyncfusionとの協力によるもので、それぞれ50以上、100以上のBlazor対応UIコンポーネントがMITライセンスで提供されます。 / チャート、ボタン、カレンダー、グリッドなど、ビジネスアプリケーション開発に役立つ多様なコンポーネントが含まれています。 [実務示唆: Blazor開発者は、InfragisticsとSyncfusionから寄贈されたMITライセンスの豊富なUIコンポーネントを活用し、開発効率とアプリケーション品質の向上を図るべきです。] (Source: Publickey)</description>
       <pubDate>Mon, 09 Nov 2026 15:22:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>スマートホームデバイスはインターネットなしで動作すべき</title>
-      <link>https://docodethatmatters.com/home-automation-overnight-success/</link>
-      <guid isPermaLink="false">https://docodethatmatters.com/home-automation-overnight-success/</guid>
-      <description>[Score: 85] 筆者は、スマートホームの中核機能がベンダーのサーバーに依存せず、インターネットがダウンしても動作し続けることを原則としています。 / Google Nest APIの停止や、Wi-Fi接続を必要とするスマート家電の例を挙げ、クラウド依存のリスクを指摘しています。 / Tasmotaを導入したESPボード、MQTTブローカー、Node-REDをRaspberry Piで運用し、ローカルでの制御を重視するシステムを構築しています。 [実務示唆: スマートホームシステムを構築する際は、インターネット接続なしでも主要機能が動作するよう、ローカル制御可能なデバイスやオープンソースソリューションの採用を検討し、ベンダーロックインを避けるべきです。] (Source: Hacker News)</description>
-      <pubDate>Tue, 10 Nov 2026 15:25:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>LiteLLM Adaptive Routerを検証する（後編）：学習シグナルと運用上の注意</title>
-      <link>https://zenn.dev/aws_japan/articles/4399262cf00559</link>
-      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/4399262cf00559</guid>
-      <description>[Score: 85] LiteLLM Adaptive Routerの後編では、会話からのモデル品質学習条件と運用上の注意点が検証されました。 / ユーザーの満足度評価は、同じ会話として記録された3ターン目以降かつ直前のターンが記録されている場合に直前の応答モデルに加算されます。 / 日本語の「ありがとう」や「やっぱりいいです」はシグナルとして検出されず、英語のthanksやnever mindが必要であることが判明しました。 [実務示唆: LiteLLM Adaptive Routerを利用する際は、ユーザーの反応を学習シグナルとして活用するために、会話のターン数や特定の英語表現の使用を促すプロンプト設計を検討し、モデルの選択精度向上に努めるべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 14:30:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Code を新しい Fable 5.2 に切り替えると速く安くなるのか。36回測ったら、Fable 5.1 より2割速く3割安く、費用は Opus 5.5 の1.6倍だった</title>
-      <link>https://qiita.com/suwa_nobu/items/a6a104575596915dac2e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/suwa_nobu/items/a6a104575596915dac2e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] Anthropicが発表したClaude Fable 5.2が、Claude Codeのデフォルトモデルとして導入されました。 / 本記事は、Fable 5.2がFable 5.1と比較して約2割高速化し、約3割コスト削減されることを36回のテストで検証。 / ただし、費用面ではOpus 5.5が最も安価であることも示され、モデル選択の際の費用対効果が明確に比較されています。 [実務示唆: Claude Code利用者は、Fable 5.2への切り替えで開発効率とコスト削減が期待できるため、積極的に導入を検討し、自身のユースケースでの性能と費用を検証すべき。] (Source: Qiita)</description>
-      <pubDate>Mon, 09 Nov 2026 23:50:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Anthropicの創業者7人全員がIPOでそれぞれ約2億5000万ドルを現金化へ</title>
-      <link>https://www.reddit.com/r/technology/comments/1xt1vrf/all_7_anthropic_founders_will_each_cash_out_about/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xt1vrf/all_7_anthropic_founders_will_each_cash_out_about/</guid>
-      <description>[Score: 85] AI企業Anthropicの創業者7人が、同社の新規株式公開（IPO）により、それぞれ約2億5000万ドル（約375億円）を現金化する見込みです。 / これは、AIスタートアップの急成長と、その成功が創業者にもたらす莫大な経済的利益を示しています。 / AnthropicはOpenAIの競合として注目されており、今後の動向が注目されます。 [実務示唆: AIスタートアップのIPOは創業者に巨額の富をもたらす可能性があり、今後のAI業界の資金調達や企業価値評価の動向に注目し、投資機会を検討しましょう。] (Source: Reddit)</description>
-      <pubDate>Tue, 10 Nov 2026 23:18:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>「盗撮」→「法律で規制」が話題のAI眼鏡　海外では大ヒットなのに、日本での普及は限定的　ビジネスでの活用事例を探る</title>
-      <link>https://www.itmedia.co.jp/news/article/2611/11/2000002913/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/11/2000002913/</guid>
-      <description>[Score: 85] AI眼鏡（AIグラス）は海外で急速に普及していますが、日本では盗撮などのプライバシー懸念から普及が限定的です。 / MetaがRay-BanとコラボしたAIグラスは、通常の眼鏡と見分けがつかないデザインで、撮影やAI会話機能を提供しています。 / ノルウェー政府が公共の場での使用規制を計画するなど、世界的にプライバシーと技術革新のバランスが課題となっています。 [実務示唆: AIグラスのビジネス活用を検討する際は、プライバシー保護と倫理的利用に関する国内外の規制動向を常に把握し、透明性の高い運用ガイドラインを策定しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 10 Nov 2026 20:34:16 +0000</pubDate>
     </item>
   </channel>
 </rss>

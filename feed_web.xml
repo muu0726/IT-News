@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 01:30:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 13:00:01 +0000</lastBuildDate>
     <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
       <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
@@ -35,6 +35,20 @@
       <pubDate>Sun, 08 Nov 2026 21:44:47 +0000</pubDate>
     </item>
     <item>
+      <title>Firefoxの無料内蔵VPN、2027年1月までデータ制限を撤廃 | Mozillaブログ</title>
+      <link>https://www.reddit.com/r/technology/comments/1xt8xae/firefoxs_free_builtin_vpn_uncaps_data_limit/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xt8xae/firefoxs_free_builtin_vpn_uncaps_data_limit/</guid>
+      <description>[Score: 80] Firefoxブラウザに内蔵されている無料VPNサービスが、2027年1月までデータ制限を撤廃すると発表されました。 / これにより、ユーザーはより自由に、かつ長期間にわたってVPN機能を利用できるようになります。 / Mozillaはユーザーのプライバシー保護とインターネットの自由を重視していることを示しています。 [実務示唆: プライバシー保護とセキュリティ強化のため、Firefoxの無料VPN機能を活用し、特に公共Wi-Fi利用時などには積極的に利用を検討する。] (Source: Reddit)</description>
+      <pubDate>Wed, 11 Nov 2026 04:55:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>Nuxt 3はEOL：今すぐNuxt 4に移行すべきか、Nuxt 5を待つべきか？</title>
+      <link>https://dev.to/dipeshba/nuxt-3-is-end-of-life-migrate-to-nuxt-4-now-or-wait-for-nuxt-5-358m</link>
+      <guid isPermaLink="false">https://dev.to/dipeshba/nuxt-3-is-end-of-life-migrate-to-nuxt-4-now-or-wait-for-nuxt-5-358m</guid>
+      <description>[Score: 80] Nuxt 3は2026年7月31日にEOL（End of Life）を迎え、セキュリティやバグ修正のサポートが終了しました。Nuxt 5はまだリリースされていません。 / ほとんどのプロダクションアプリケーションでは、Nuxt 4への移行が推奨されます。Nuxt 4はNuxt 3からの移行が容易で、Nuxt 5リリース後も少なくとも6ヶ月間はサポートされます。 / クリティカルなモジュールのブロック、変更凍結期間、またはアプリケーションの廃止予定がある場合にのみ、有償の延長サポートと具体的な計画があればNuxt 5を待つ選択肢も考えられます。 [実務示唆: Nuxt 3を使用している開発者は、セキュリティリスクを避けるため、速やかにNuxt 4への移行計画を立て、実行に移すべきです。移行は比較的容易であり、早期対応が推奨されます。] [GitHub: nuxt/nuxt] (Source: Dev.to)</description>
+      <pubDate>Wed, 11 Nov 2026 12:55:31 +0000</pubDate>
+    </item>
+    <item>
       <title>すべてのコンテナに独自のHTTPS名を — 静かなDockerエンジンとデスクトップ</title>
       <link>https://dev.to/mrcatz/every-container-on-its-own-https-name-a-quiet-docker-engine-and-desktop-f5i</link>
       <guid isPermaLink="false">https://dev.to/mrcatz/every-container-on-its-own-https-name-a-quiet-docker-engine-and-desktop-f5i</guid>
@@ -47,6 +61,20 @@
       <guid isPermaLink="false">https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</guid>
       <description>[Score: 75] GitHubは、リポジトリの概要ページにACCESSIBILITY.mdファイルを表示する機能を追加しました。 / これにより、プロジェクトのアクセシビリティ目標、貢献者の期待、既知の制限などを一元的に説明できるようになります。 / ACCESSIBILITY.mdファイルは、リポジトリのルート、.github/ディレクトリ、またはdocs/ディレクトリに配置でき、組織の.github/リポジトリから継承することも可能です。 [実務示唆: 自身のGitHubリポジトリにACCESSIBILITY.mdファイルを追加し、プロジェクトのアクセシビリティに関する情報を明確にすることで、より多くのユーザーと貢献者にとって利用しやすい環境を整備すること。] [GitHub: github/docs] (Source: GitHub Blog)</description>
       <pubDate>Thu, 05 Nov 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Snowflake Dashboards 2.0が最高な理由と、これからBIに求められること</title>
+      <link>https://zenn.dev/dataheroes/articles/snowflake-dashboards-2-and-future-of-bi</link>
+      <guid isPermaLink="false">https://zenn.dev/dataheroes/articles/snowflake-dashboards-2-and-future-of-bi</guid>
+      <description>[Score: 75] Snowflakeからリリースされた新しいDashboards 2.0は、Snowflake内で完結する可視化環境として高く評価されています。 / 旧Dashboardsの課題（共有、フィルター、コード管理の不足）を解決し、定型的な数字の確認やAIによる質問応答のニーズに応えます。 / これにより、BIツールを別途導入することなく、Snowflake上でデータ分析と可視化がシームレスに行えるようになり、今後のBIのあり方に影響を与える可能性を秘めています。 [実務示唆: Snowflakeユーザーは、Dashboards 2.0を活用してBIツールへの依存を減らし、データ可視化と分析をSnowflake内で完結させることで、コスト削減と効率化を図りましょう。] (Source: Zenn)</description>
+      <pubDate>Wed, 11 Nov 2026 00:21:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>Kapitanジェネレーターリリース、2026年11月2日〜8日</title>
+      <link>https://dev.to/kadet-hub/kapitan-generator-releases-2-to-8-november-2026-4ai9</link>
+      <guid isPermaLink="false">https://dev.to/kadet-hub/kapitan-generator-releases-2-to-8-november-2026-4ai9</guid>
+      <description>[Score: 70] Kapitanジェネレーターの2026年11月2日から8日までのリリース情報が公開されました。 / Argo CD 3.5.6のレンダリング、Kapitan設定管理プラグインの追加、trust-manager 0.26.0のサポートなどが含まれます。 / 各バージョンは署名され、出力差分やSBOMが提供されており、信頼性と透明性が重視されています。 [実務示唆: Kapitanを利用しているユーザーは、最新のリリース情報を確認し、特にArgo CDやtrust-managerとの連携機能、およびライセンス情報の変更点に注意してアップデートを検討しましょう。] [GitHub: kadet-hub/registry] (Source: Dev.to)</description>
+      <pubDate>Wed, 11 Nov 2026 12:55:01 +0000</pubDate>
     </item>
     <item>
       <title>Val Townがサービス終了へ</title>
