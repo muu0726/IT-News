@@ -5,27 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Nov 2026 13:49:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 01:30:38 +0000</lastBuildDate>
     <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
       <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
       <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
       <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>1.8% CPU停止：AIエージェントランタイムがコネクションプールを枯渇させる理由</title>
-      <link>https://dev.to/sahil_5eec7e7c6004ad71a7b/the-18-cpu-outage-why-ai-agent-runtimes-starve-connection-pools-1an</link>
-      <guid isPermaLink="false">https://dev.to/sahil_5eec7e7c6004ad71a7b/the-18-cpu-outage-why-ai-agent-runtimes-starve-connection-pools-1an</guid>
-      <description>[Score: 90] AIエージェントやバックグラウンドワーカーが外部システムからの応答を待つ間、コネクションプールを長時間占有し、データベースCPU使用率が低いにもかかわらずサービス停止を引き起こす問題について解説しています。 / この問題は、データベースだけでなく、Redis、HTTPクライアント、Kafkaなど、有限なリソースを保持するあらゆるシステムで発生し得ます。 / ボトルネックはCPUではなく、外部システムへの未バッファ呼び出し中にリソースが保持される待機時間（W）にあると指摘し、その検出方法も提示しています。 [実務示唆: AIエージェントや外部API連携を含むシステムでは、コネクションプールの枯渇を避けるため、リソースの保持時間を最小化する設計を検討し、CI/CDパイプラインで接続プールの健全性を監視するテストを導入すべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 10 Nov 2026 03:47:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI ネイティブなデータ分析基盤を作った話（後編）</title>
-      <link>https://zenn.dev/pksha/articles/laplace-build-guide</link>
-      <guid isPermaLink="false">https://zenn.dev/pksha/articles/laplace-build-guide</guid>
-      <description>[Score: 90] PKSHA Technologyが構築したAIネイティブなデータ分析基盤「Laplace」の設計思想について解説しています。 / 「すぐに・誰でも・安全に」データを扱えるようにするため、人、プロダクト、権限、AIの4つの境界を明確に定義しています。 / 長期鍵を発行しない認証方針や、CI/CDの権限を最小限に絞るなど、セキュリティと運用効率を両立させる工夫が紹介されています。 [実務示唆: データ分析基盤を構築する際は、技術スタックだけでなく「誰が何を決め、どこに境界を引くか」という設計思想を明確にし、セキュリティと運用のバランスを考慮した認証・権限管理を導入しましょう。] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 07:38:37 +0000</pubDate>
     </item>
     <item>
       <title>Google、Kubernetesで10倍高密度にAIエージェントを実行可能にする「Agent Sustrate」と「gVisor」、オープンソースとしてCNCFに寄贈と発表</title>
@@ -42,39 +28,18 @@
       <pubDate>Mon, 09 Nov 2026 15:22:44 +0000</pubDate>
     </item>
     <item>
-      <title>MySQLがインデックスを使用しない3つの理由を区別する</title>
-      <link>https://dev.to/shinagawa-web/telling-apart-3-reasons-mysql-isnt-using-your-index-3hi8</link>
-      <guid isPermaLink="false">https://dev.to/shinagawa-web/telling-apart-3-reasons-mysql-isnt-using-your-index-3hi8</guid>
-      <description>[Score: 85] この記事では、MySQLがインデックスを使用しない一般的な3つの理由について解説しています。 / 具体的には、DATE()関数によるカラム変換、VARCHARカラムと数値の型不一致、そしてJOIN時の文字セット不一致が挙げられています。 / これらのケースは、EXPLAINコマンドでALLタイプが表示されることで確認でき、それぞれの原因と対処法が示されています。 [実務示唆: MySQLのクエリ最適化を行う際は、DATE()関数使用、型不一致、文字セット不一致の3点に注意し、EXPLAINコマンドでインデックスが適切に使用されているか確認することで、パフォーマンス低下を防げます。] (Source: Dev.to)</description>
-      <pubDate>Tue, 10 Nov 2026 13:03:00 +0000</pubDate>
+      <title>WEBで画像を破くツールを作った</title>
+      <link>https://qiita.com/ishi720/items/6d13fdce2a31fe630840?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ishi720/items/6d13fdce2a31fe630840?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Svelteを使って、画像をなぞった線に沿って破れるWebアプリが開発されました。 / 破れた紙の破片（ピース）を多角形ではなく、「元の紙」と「破り線のどちら側か」の組み合わせで表現する独自のアプローチを採用。 / Canvasのclip()機能を活用することで、複雑な多角形交差計算を避け、効率的にピースの形状を描画する仕組みを解説しています。 [実務示唆: Canvasのclip()機能やSvelteの活用事例として、複雑な図形処理を効率的に実装する際の参考になるため、同様の描画処理を検討する際に参考にすべき。] (Source: Qiita)</description>
+      <pubDate>Sun, 08 Nov 2026 21:44:47 +0000</pubDate>
     </item>
     <item>
-      <title>GoHighLevel n8nとZapierの統合：GHLを実際のワークフローと接続する方法 (2026)</title>
-      <link>https://dev.to/arslanautomates/gohighlevel-n8n-and-zapier-integration-how-to-connect-ghl-with-real-workflows-2026-1oe3</link>
-      <guid isPermaLink="false">https://dev.to/arslanautomates/gohighlevel-n8n-and-zapier-integration-how-to-connect-ghl-with-real-workflows-2026-1oe3</guid>
-      <description>[Score: 85] GoHighLevelとn8n、Zapierを統合する方法について、具体的なワークフローを交えて解説しています。 / n8nのHighLevelノードやOAuth2 Marketplaceアプリ、Webhookアクションの活用が推奨されています。 / API v2への対応や、エラーハンドリング、リクエスト制限の遵守など、実践的な注意点も示されています。 [実務示唆: GoHighLevelと外部サービス連携時には、n8nやZapierの公式連携機能に加え、WebhookやHTTP Requestノードを組み合わせることで柔軟な自動化を実現しましょう。] (Source: Dev.to)</description>
-      <pubDate>Tue, 10 Nov 2026 13:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Show HN: メディアサーバー用の15MBのセルフホスト型NetflixとSpotify</title>
-      <link>https://github.com/HolyArrs/HolyArrs</link>
-      <guid isPermaLink="false">https://github.com/HolyArrs/HolyArrs</guid>
-      <description>[Score: 80] HolyArrsは、映画、テレビ番組、音楽を管理するための軽量なセルフホスト型アプリケーションです。 / NetflixやSpotifyのようなストリーミングアプリのインターフェースでメディアを閲覧し、リクエストに応じて自動的にコンテンツを処理します。 / Sonarr、Radarr、Lidarrなど、通常6つのアプリが必要なメディアサーバー機能を1つのアプリに統合し、約15MBのダウンロードサイズと低メモリ消費を実現しています。 [実務示唆: メディアサーバーを運用しているエンジニアは、HolyArrsを導入することで、複数のアプリ管理の手間を省き、リソース消費を抑えつつ、統合されたユーザーフレンドリーなメディア管理環境を構築できるため、試用を検討すべきです。] [GitHub: HolyArrs/HolyArrs] (Source: Hacker News)</description>
-      <pubDate>Tue, 10 Nov 2026 11:51:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub rulesetのON/OFFで「マージ禁止期間」を作る</title>
-      <link>https://zenn.dev/yesodco/articles/yesod-github-ruleset-merge-freeze</link>
-      <guid isPermaLink="false">https://zenn.dev/yesodco/articles/yesod-github-ruleset-merge-freeze</guid>
-      <description>[Score: 80] GitHubのrulesetを活用し、特定の期間だけブランチへのマージをシステム的に禁止する「マージ凍結」の仕組みが紹介されています。 / リリース判定からリリースブランチ作成までの間に意図しない変更がマージされるのを防ぐ目的で考案されました。 / required status check案の課題を指摘し、rulesetのenforcement機能を使った実現方法が解説されています。 [実務示唆: リリース前の重要な期間に意図しないコードマージを防ぐため、GitHub rulesetのenforcement機能を活用し、GitHub ActionsでON/OFFを切り替える自動化されたマージ凍結プロセスを導入しましょう。] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 02:45:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>Webhookが発火しない？ボットのためのクロスプラットフォームデバッグガイド</title>
-      <link>https://dev.to/conferbot/webhook-not-firing-a-cross-platform-debugging-guide-for-bots-7bg</link>
-      <guid isPermaLink="false">https://dev.to/conferbot/webhook-not-firing-a-cross-platform-debugging-guide-for-bots-7bg</guid>
-      <description>[Score: 80] この記事は、Webhookが期待通りに動作しない場合のクロスプラットフォームなデバッグガイドです。 / Webhookの不具合は、プラットフォームからのリクエスト送信、サーバーでのリクエスト拒否、サーバーでの処理失敗の3つの原因に分類されます。 / デバッグの第一歩として、ハンドラーの最上部で生のHTTPリクエストをログに記録することが推奨されており、主要なプラットフォームごとの具体的なデバッグ手順も紹介されています。 [実務示唆: Webhookのデバッグ時には、まずハンドラーの最上部で生のHTTPリクエストをログに記録し、プラットフォームのエラーコードと照合することで、問題の特定を迅速に行うことができます。] (Source: Dev.to)</description>
-      <pubDate>Tue, 10 Nov 2026 13:30:00 +0000</pubDate>
+      <title>すべてのコンテナに独自のHTTPS名を — 静かなDockerエンジンとデスクトップ</title>
+      <link>https://dev.to/mrcatz/every-container-on-its-own-https-name-a-quiet-docker-engine-and-desktop-f5i</link>
+      <guid isPermaLink="false">https://dev.to/mrcatz/every-container-on-its-own-https-name-a-quiet-docker-engine-and-desktop-f5i</guid>
+      <description>[Score: 78] DoCatzは、macOS、Windows、Linux向けの無料オープンソースDockerエンジンおよびコンテナマネージャーです。 / ローカル開発におけるポート管理の煩雑さや、コンテナリストの検索性を改善します。 / 各コンテナは独自のHTTPS名でアクセス可能で、Composeプロジェクトごとにグループ化され、ログやターミナル、ファイル管理機能も提供されます。 [実務示唆: ローカル開発環境でのDockerコンテナ管理を効率化したい開発者は、DoCatzを試用し、HTTPSアクセスやプロジェクトごとのグループ化による利便性を評価しましょう。] [GitHub: mrcatz/docatz] (Source: Dev.to)</description>
+      <pubDate>Wed, 11 Nov 2026 01:24:41 +0000</pubDate>
     </item>
     <item>
       <title>アクセシビリティステートメントがGitHubに登場</title>
@@ -84,11 +49,18 @@
       <pubDate>Thu, 05 Nov 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>dev.toの429エラーを実際にクリアするもの：リトライループか、次のスケジュール実行か</title>
-      <link>https://dev.to/enjoy_kumawat/what-actually-clears-a-devto-429-here-my-retry-loop-or-the-next-scheduled-run-21a5</link>
-      <guid isPermaLink="false">https://dev.to/enjoy_kumawat/what-actually-clears-a-devto-429-here-my-retry-loop-or-the-next-scheduled-run-21a5</guid>
-      <description>[Score: 75] 筆者のDEV.toコメント返信パイプラインがAPIの429エラーに頻繁に遭遇し、その解決策について検証しています。 / 当初はリトライループが機能していると考えていましたが、実際にはリトライが成功するのは半分のケースで、残りの半分は次のスケジュール実行まで待つ必要がありました。 / このパイプラインにはリトライコードが実装されておらず、バックオフ時間はその都度手動で設定されていたことが判明しました。 [実務示唆: APIレート制限エラー(429)への対応では、単なるリトライだけでなく、バックオフ戦略の適切性や、システム全体のリトライメカニズムを明確に設計・実装し、ログで効果を検証すべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 10 Nov 2026 03:48:05 +0000</pubDate>
+      <title>Val Townがサービス終了へ</title>
+      <link>https://blog.val.town/winding-down</link>
+      <guid isPermaLink="false">https://blog.val.town/winding-down</guid>
+      <description>[Score: 65] Val Townは、クラウドコンピューティング分野での競争に敗れ、サービスを終了することを発表しました。 / ユーザーはCloudflare, Vercel, Netlify, Renderなどへの移行ガイドが提供されており、LLMを活用した移行も推奨されています。 / 本日より課金は停止され、既存のサブスクリプションは無料で提供、年間プランの事前支払い者には一部返金が行われます。 [実務示唆: Val Townユーザーは、提供される移行ガイドやLLMを活用し、速やかに他のホスティングプロバイダへの移行計画を立て、データ損失やサービス停止を回避すべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 10 Nov 2026 17:31:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>プロパティクリーンアップ: API制限下でのバックグラウンド処理のためのNode.jsバッチエンキュー</title>
+      <link>https://dev.to/theophilushawkins9265/property-cleanup-nodejs-batch-enqueue-for-background-processing-under-api-limits-2fo7</link>
+      <guid isPermaLink="false">https://dev.to/theophilushawkins9265/property-cleanup-nodejs-batch-enqueue-for-background-processing-under-api-limits-2fo7</guid>
+      <description>[Score: 65] API制限下でバックグラウンド処理を行う際、各プロパティレコードに対して独立したべき等なクリーンアップジョブをエンキューし、バックグラウンドワーカーがレート制限を適用すべきです。 / バッチ処理は転送最適化でありトランザクションではないため、個々のジョブの独立性と再試行可能性を確保することが重要です。 / プロデューサーが承認を、ワーカーが正確性を担当するという役割分担を明確にし、安定したIDと一意性制約を用いて重複処理を防ぎます。 [実務示唆: APIレート制限のあるバックグラウンド処理を実装する際は、各ジョブをべき等かつ独立に設計し、ワーカー側でレート制限を管理することで、堅牢性と信頼性を向上させるべきです。] (Source: Dev.to)</description>
+      <pubDate>Wed, 11 Nov 2026 01:26:55 +0000</pubDate>
     </item>
   </channel>
 </rss>

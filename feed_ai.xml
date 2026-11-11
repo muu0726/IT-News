@@ -5,69 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Nov 2026 13:49:02 +0000</lastBuildDate>
-    <item>
-      <title>Claude Fable 5.2とMythos 5.2</title>
-      <link>https://www.anthropic.com/claude-fable-and-mythos-5-2</link>
-      <guid isPermaLink="false">https://www.anthropic.com/claude-fable-and-mythos-5-2</guid>
-      <description>[Score: 100] Anthropicは、高度な技術的課題に対応するよう設計された大規模言語モデル「Claude Fable 5.2」と「Claude Mythos 5.2」をリリースしました。 / これらのモデルは、コーディング、推論、視覚能力が向上し、ソフトウェア移行、電子デバイス設計、物理学の問題解決などで顕著な成果を上げています。 / Fable 5.2は一般利用可能で、Mythos 5.2はサイバーセキュリティや生物医学研究向けの検証プログラムを通じてアクセス可能であり、旧モデルより最大30%高速化され、価格も引き下げられています。 [実務示唆: 最新のClaude Fable 5.2/Mythos 5.2は、コーディングや推論能力が向上し、コストも削減されたため、開発プロジェクトでのAI活用を積極的に検討し、既存のワークフローへの統合を試すべきです。] (Source: Hacker News)</description>
-      <pubDate>Mon, 09 Nov 2026 18:01:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>退屈なCoding AgentはMuseにやらせよう</title>
-      <link>https://zenn.dev/watany/articles/342b9815dd0553</link>
-      <guid isPermaLink="false">https://zenn.dev/watany/articles/342b9815dd0553</guid>
-      <description>[Score: 100] Metaが開発したパーソナルAIエージェント「Muse」が、コーディングを含む多様なタスクに非常に有用であると紹介されています。 / MuseのSpace機能により、VM上でローカルLLMを動かすアプリを無料で作成・利用できる点が強調されています。 / OpenAIの「Sign in with ChatGPT」とPi Coding Agentを組み合わせることで、Museをコーディングエージェントとして効率的に活用する方法が提案されています。 [実務示唆: MuseのようなパーソナルAIエージェントのSpace機能を活用し、ローカルLLMや外部APIと連携させることで、開発タスクの自動化やプロトタイプ作成を効率化し、AI活用の幅を広げましょう。] [GitHub: pi-ai/pi-coding-agent] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 02:35:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIでテストカバレッジを23%から84%に引き上げた方法</title>
-      <link>https://zenn.dev/litalico/articles/20261029-test-with-ai</link>
-      <guid isPermaLink="false">https://zenn.dev/litalico/articles/20261029-test-with-ai</guid>
-      <description>[Score: 95] LITALICOナーシングネット開発チームが、AIを活用してテストカバレッジを23%から84%に大幅に向上させた取り組みを紹介しています。 / CI導入や手書きテストの限界を経て、生成AIを用いたテストコード生成に注力し、プロンプトエンジニアリングやスキル構築の重要性を強調しています。 / AI導入前後の具体的な課題と解決策、そしてテスト文化醸成へのアプローチが詳細に説明されています。 [実務示唆: テストカバレッジ向上に課題を抱えるチームは、生成AIを活用したテストコード生成を検討し、効果的なプロンプト設計とAIに合わせた開発プロセスを構築することで、品質向上と開発効率化を図りましょう。] [GitHub: litalico/github-actions-rspec] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 02:50:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Opus 5.5の推論能力が11月3日から急激に低下したとの指摘、1400件の利用履歴から変化が判明</title>
-      <link>https://gigazine.net/news/20261110-claude-opus-nerf/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261110-claude-opus-nerf/</guid>
-      <description>[Score: 95] AnthropicのAIモデル「Claude Opus 5.5」の推論能力が2026年11月3日頃から急激に低下した可能性が指摘されています。 / 開発者のシェーン・メロー氏が約1400件のClaude Code利用履歴を分析した結果、モデル名変更なしにAIの思考プロセスやエラー率に大きな変化が見られました。 / 特に、思考トークン数の減少やエラー指標の増加が確認されており、AIモデルの品質管理における課題が浮き彫りになっています。 [実務示唆: Claude Opus 5.5を利用している開発者は、AIの出力品質が低下していないか注意深く監視し、必要に応じてプロンプトの調整や他のモデルの検討を行うべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 10 Nov 2026 08:05:52 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 11 Nov 2026 01:30:38 +0000</lastBuildDate>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
       <link>https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</guid>
       <description>[Score: 90] GitHubのコミット数が大幅に増加する一方で、開発者の生産性がそれに比例して向上していない現状を指摘し、AIによるコード生成だけでは不十分であると述べています。 / AIエージェントは、ソフトウェア開発の計画、構築、検証、監視といった全ステージにおいて、開発者の効率を向上させる可能性を秘めています。 / 特に、散在する情報を集約し、API変更の計画立案を支援するなど、開発プロセスのボトルネックを解消する具体的な活用例が紹介されています。 [実務示唆: AIを単なるコード生成ツールとしてではなく、開発プロセスの計画、検証、監視といった広範なタスクを支援するエージェントとして活用することで、開発全体の生産性向上を目指しましょう。] (Source: GitHub Blog)</description>
       <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>E-means: k-meansを10分の1のエポックで凌駕</title>
-      <link>https://e-means.github.io/</link>
-      <guid isPermaLink="false">https://e-means.github.io/</guid>
-      <description>[Score: 90] E-meansは、k-meansクラスタリングアルゴリズムの現代的な最適化手法であり、従来のLloydアルゴリズムを大幅に上回る性能を発揮します。 / GPUで10〜45倍、CPUで8〜15倍の高速化を実現しつつ、より優れたテスト損失を達成します。 / ミニバッチ更新と指数移動平均を採用し、ハイパーパラメータチューニングが不要な自動設定機能を備えています。 [実務示唆: E-meansはk-meansクラスタリングを高速化し、品質も向上させるため、大規模データセットのクラスタリングタスクにおいて、既存のk-means実装をE-meansに置き換えることを検討し、その性能を検証すべきです。] [GitHub: e-means/e-means.github.io] (Source: Hacker News)</description>
-      <pubDate>Mon, 09 Nov 2026 18:45:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>AlphaProof Code</title>
-      <link>https://deepmind.google/blog/introducing-alphaproof-code/</link>
-      <guid isPermaLink="false">https://deepmind.google/blog/introducing-alphaproof-code/</guid>
-      <description>[Score: 90] Google DeepMindの研究者が、Signalプロトコルの暗号コードを形式的に検証する新しいエージェントフレームワーク「AlphaProof Code」を発表しました。 / これは、AIエージェントと人間の専門知識を組み合わせることで、これまで困難とされてきた大規模な暗号プロトコルの実装コードの形式検証を初めて実現しました。 / この技術は、数十億のプライベートな会話を保護するSignalやGoogle Messagesなどのアプリのセキュリティを数学的に証明する画期的な進歩です。 [実務示唆: AIによる形式検証の進展は、特にセキュリティが重要なシステム開発において、コードの信頼性向上とバグ削減に貢献するため、将来的な導入可能性を注視し、既存の検証プロセスとの統合を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Tue, 10 Nov 2026 12:11:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>実践：JevをClaudeに5分で連携する！ 〜仕組みから実装、実際の使いどころ〜</title>
-      <link>https://qiita.com/ryosuke_ohori/items/ada543a0201752023e25?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ryosuke_ohori/items/ada543a0201752023e25?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] TypeSafe AIが公開した「Jev」は、LLMが生成する自由な文章ではなく、定義された質問に対して型の決まった値を返すSystem One Modelです。 / 本記事では、Jevの仕組み、Claudeとの連携方法、Pythonによる独自の問い合わせ振り分け実装、確率評価、AIエージェントへの応用までを解説。 / 短く明確な判断が必要なタスクにおいて、従来のLLMよりも効率的かつコストを抑えられる可能性を示唆しています。 [実務示唆: 短文での判断や分類が必要なAIアプリケーション開発において、Jevのような特化型モデルの導入を検討し、コストと性能のバランスを評価しましょう。] (Source: Qiita)</description>
-      <pubDate>Mon, 09 Nov 2026 13:46:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>大学1年生がつくったOSSがGitHub Star 1万超。AIに渡す「画面の設計図」はどう生まれた？ - レバテックLAB</title>
-      <link>https://levtech.jp/media/detail_965/</link>
-      <guid isPermaLink="false">https://levtech.jp/media/detail_965/</guid>
-      <description>[Score: 90] 大学1年生のinori氏が開発したOSS「M3E Canvas」が、公開から約2ヶ月でGitHub Star 1万超えを達成しました。 / このツールは、ブラウザ上でアプリの画面を組み立て、AIに渡すプロンプトを生成するもので、AIによるバイブコーディングの効率化を目指しています。 / MITライセンスで公開され、Android以外の開発にも活用されるなど、その汎用性と開発者のオープンな姿勢が大きな反響を呼んでいます。 [実務示唆: AIを活用したUI開発に興味があるエンジニアは、M3E Canvasを試用し、AIへのプロンプト生成効率化の可能性を探ることで、開発ワークフロー改善のヒントを得られます。] [GitHub: inori/M3E-Canvas] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 10 Nov 2026 01:12:53 +0000</pubDate>
     </item>
     <item>
       <title>LoRazor: 効率的なMulti-LoRAサービングのためのアダプター実行のトリミング</title>
@@ -77,39 +21,81 @@
       <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Amazon、Sonnet 4.6をStrands Deciderに置き換えて数百万ドルを節約</title>
-      <link>https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/</link>
-      <guid isPermaLink="false">https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/</guid>
-      <description>[Score: 85] AmazonとAWSのチームが、社内チケットのラベリングシステムにおいて、Claude Sonnet 4.6をStrands Deciderに置き換えることで、年間数百万ドルのコスト削減に成功しました。 / Strands Deciderは、Sonnet 4.6と同等の性能を98%低いコストで実現し、特にE4B Gemma 4ビルドが優れた結果を示しました。 / この変更は、大規模な内部システムにおけるLLMのコスト効率の良い代替策として、意思決定モデルの有効性を示しています。 [実務示唆: 大規模なLLM利用におけるコスト削減は重要であり、特定のタスク（例: ラベリング、分類）においては、より特化した軽量な意思決定モデル（例: Strands Decider）が費用対効果の高い代替となり得るため、自社のLLM活用を見直し、代替モデルの検証を推奨します。] (Source: Hacker News)</description>
-      <pubDate>Tue, 10 Nov 2026 06:01:08 +0000</pubDate>
+      <title>LiteLLM Adaptive Router を検証する（前編）：モデル選択と学習の仕組み</title>
+      <link>https://zenn.dev/aws_japan/articles/ac9ae548d57323</link>
+      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/ac9ae548d57323</guid>
+      <description>[Score: 88] LiteLLMのAdaptive Routerは、リクエスト内容に応じて複数のLLMを振り分け、品質とコストを評価し、会話からの反応を学習に反映します。 / 本記事では、LiteLLM v1.106.2の実装を確認し、AWS上に構築した検証環境でその仕様を詳細に検証しています。 / モデル選択は、model_infoに設定されたquality_tier、strengths、input_cost_per_tokenを参照して行われます。 [実務示唆: LiteLLM Adaptive Routerを導入する際は、各モデルのquality_tier、strengths、input_cost_per_tokenを適切に設定し、コストと性能のバランスを考慮した最適なLLMルーティング戦略を構築すべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 10 Nov 2026 14:28:03 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Codeで最近使っているTips【2026/11】</title>
-      <link>https://zenn.dev/oikon/articles/claude-code-recipe</link>
-      <guid isPermaLink="false">https://zenn.dev/oikon/articles/claude-code-recipe</guid>
-      <description>[Score: 85] この記事では、Claude Codeをより効率的に活用するための5つのTipsが紹介されています。 / 特に「/btw」コマンドは、エージェントの作業を中断せずに質問し、コンテキストを汚さずに進捗確認やプロンプト生成に役立ちます。 / また、長文のドキュメント作成にはHTML形式と図表の活用が推奨されており、情報過多なAIエージェントの出力を人間が把握しやすくする工夫が示されています。 [実務示唆: Claude Code利用者は「/btw」コマンドを活用し、エージェントの作業を中断せずに進捗確認やプロンプト生成を行うことで、効率的な開発を促進できます。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 10 Nov 2026 03:58:52 +0000</pubDate>
+      <title>LiteLLM Adaptive Routerを検証する（後編）：学習シグナルと運用上の注意</title>
+      <link>https://zenn.dev/aws_japan/articles/4399262cf00559</link>
+      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/4399262cf00559</guid>
+      <description>[Score: 85] LiteLLM Adaptive Routerの後編では、会話からのモデル品質学習条件と運用上の注意点が検証されました。 / ユーザーの満足度評価は、同じ会話として記録された3ターン目以降かつ直前のターンが記録されている場合に直前の応答モデルに加算されます。 / 日本語の「ありがとう」や「やっぱりいいです」はシグナルとして検出されず、英語のthanksやnever mindが必要であることが判明しました。 [実務示唆: LiteLLM Adaptive Routerを利用する際は、ユーザーの反応を学習シグナルとして活用するために、会話のターン数や特定の英語表現の使用を促すプロンプト設計を検討し、モデルの選択精度向上に努めるべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 10 Nov 2026 14:30:35 +0000</pubDate>
     </item>
     <item>
-      <title>ゼロから作ったMamba3言語モデルを日本語で話せる全二重音声対話モデルに拡張するまで</title>
-      <link>https://zenn.dev/taaroo/articles/47f8d1ac55d4af</link>
-      <guid isPermaLink="false">https://zenn.dev/taaroo/articles/47f8d1ac55d4af</guid>
-      <description>[Score: 82] Mamba3言語モデル（NanoMambaLM）をベースに、日本語対応の全二重音声対話モデル「NanoMamba-Duplex」を開発した事例です。 / 全二重対話は、ユーザーの音声を聞きながら同時に応答できるため、より自然な会話体験を実現します。 / 既存の全二重モデルと比較して非常に小型（0.26B）でありながら、意味のある返答が可能な最小級モデルとして注目されます。 [実務示唆: 全二重音声対話モデルの構築を検討する際、特にリソースが限られる環境では、小型モデルであるMambaベースのアーキテクチャを検討し、日本語データでの学習戦略を参考にすべきです。] (Source: Zenn)</description>
-      <pubDate>Mon, 09 Nov 2026 14:48:35 +0000</pubDate>
+      <title>Claude Code を新しい Fable 5.2 に切り替えると速く安くなるのか。36回測ったら、Fable 5.1 より2割速く3割安く、費用は Opus 5.5 の1.6倍だった</title>
+      <link>https://qiita.com/suwa_nobu/items/a6a104575596915dac2e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/suwa_nobu/items/a6a104575596915dac2e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] Anthropicが発表したClaude Fable 5.2が、Claude Codeのデフォルトモデルとして導入されました。 / 本記事は、Fable 5.2がFable 5.1と比較して約2割高速化し、約3割コスト削減されることを36回のテストで検証。 / ただし、費用面ではOpus 5.5が最も安価であることも示され、モデル選択の際の費用対効果が明確に比較されています。 [実務示唆: Claude Code利用者は、Fable 5.2への切り替えで開発効率とコスト削減が期待できるため、積極的に導入を検討し、自身のユースケースでの性能と費用を検証すべき。] (Source: Qiita)</description>
+      <pubDate>Mon, 09 Nov 2026 23:50:19 +0000</pubDate>
     </item>
     <item>
-      <title>NormGym: 社会的相互作用を通じた規範的コンピテンシーの評価</title>
-      <link>https://arxiv.org/abs/2611.08613</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.08613</guid>
-      <description>[Score: 80] 本論文は、社会的相互作用を通じてAIの規範的コンピテンシーを評価するためのフレームワーク「NormGym」を提案しています。 / 規範的コンピテンシーとは、AIが社会的なルールや倫理を理解し、適切に行動する能力を指します。 / arXivLabsは、研究者が新しいarXiv機能を開発・共有するためのフレームワークを提供しています。 [実務示唆: AI倫理や安全性に関わる研究者は、NormGymのような評価フレームワークを活用し、AIが社会規範を遵守する能力を客観的に測定・改善するアプローチを検討すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 09 Nov 2026 05:00:00 +0000</pubDate>
+      <title>Runpod MCPサーバーはどのように機能するのか？</title>
+      <link>https://dev.to/scriptmasterlabs01/how-does-the-runpod-mcp-server-work-4oe3</link>
+      <guid isPermaLink="false">https://dev.to/scriptmasterlabs01/how-does-the-runpod-mcp-server-work-4oe3</guid>
+      <description>[Score: 85] Runpod MCPサーバーは、AIアシスタントやコーディングエージェントをRunpodアカウントに直接接続します。 / これにより、エージェントはハードウェアの選択、Podやサーバーレスエンドポイントのデプロイ、障害診断、リソースのシャットダウンを自動で行えます。 / 2026年11月10日には「Runpod for Agents」として拡張され、テスト済みのスキルライブラリとプラグインが提供されます。 [実務示唆: AIエージェントによるインフラ管理の自動化は、開発・運用効率を大幅に向上させる可能性があるため、Runpod for Agentsの導入を検討し、自社のワークフローへの適用可能性を評価しましょう。] (Source: Dev.to)</description>
+      <pubDate>Wed, 11 Nov 2026 01:24:48 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Fable 5.2へのプロンプト</title>
-      <link>https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5-2</link>
-      <guid isPermaLink="false">https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5-2</guid>
-      <description>[Score: 80] Claude Fable 5.2は、以前のモデルとは異なるプロンプトパターンとエフォートレベルの調整が必要です。 / エフォートレベルはモデルの思考量、時間、トークン使用量を制御し、ユースケースに応じてhigh、medium、lowを選択します。 / 長い複数ステップのタスクでモデルが途中で停止する問題には、システムプロンプトに特定の指示を追加することで対応できます。 [実務示唆: Claude Fable 5.2を利用する際は、エフォートレベルを慎重に調整し、長いタスクでの停止を防ぐためシステムプロンプトに指示を追加して検証すること。] (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 09 Nov 2026 22:21:33 +0000</pubDate>
+      <title>嗜好を責めるな：LLMトレーニングにおける追従性の出現を検証する</title>
+      <link>https://arxiv.org/abs/2611.10045</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.10045</guid>
+      <description>[Score: 80] LLM（大規模言語モデル）のトレーニング過程で発生する「追従性」（sycophancy）について考察しています。 / モデルがユーザーの嗜好に過度に合わせる傾向が、どのように生じるのかを分析しています。 / この現象がLLMの出力品質や信頼性に与える影響について議論されています。 [実務示唆: LLMの出力を評価する際は、モデルがユーザーの意図を汲み取りすぎている可能性を考慮し、客観性や多様な視点が含まれているかを確認しましょう。] (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>退役軍人のメンタルヘルス危機の深刻度アノテーション：LLMは人間よりも意見が一致するか？</title>
+      <link>https://arxiv.org/abs/2611.10048</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.10048</guid>
+      <description>[Score: 75] 退役軍人のメンタルヘルス危機の深刻度をアノテーションするタスクにおいて、LLMと人間の専門家の意見の一致度を比較しています。 / LLMが人間よりも高い一致度を示す可能性があるか、またはその逆かを検証しています。 / この研究は、LLMが専門的なアノテーション作業にどの程度活用できるかを示唆しています。 [実務示唆: 専門的なアノテーション作業においてLLMの活用を検討する際は、人間との意見の一致度を検証し、その限界と可能性を理解した上で導入を進めましょう。] (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>META-IR: LLMにおける適応的安全アライメントのためのメタ内省的推論</title>
+      <link>https://arxiv.org/abs/2611.10089</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.10089</guid>
+      <description>[Score: 75] 本記事は、大規模言語モデル（LLM）の安全性を適応的にアライメントするための新しい手法「META-IR（Meta-Introspective Reasoning）」を提案しています。 / META-IRは、LLMが自身の推論プロセスを内省し、安全性を自己評価・調整することで、より堅牢な安全性を実現します。 / これにより、LLMが生成する不適切または有害なコンテンツのリスクを低減し、信頼性の高いAIシステム構築に貢献します。 [実務示唆: LLMの安全性向上に取り組む開発者は、META-IRのような内省的推論アプローチを検討し、モデルの自己修正能力を強化することで、より安全なAIを構築できます。] (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>7ヶ月後、Glasswingは期待外れの結果でメンテナーを圧倒する</title>
+      <link>https://www.vulncheck.com/blog/anthropic-glasswing-november-update</link>
+      <guid isPermaLink="false">https://www.vulncheck.com/blog/anthropic-glasswing-november-update</guid>
+      <description>[Score: 75] AnthropicのProject Glasswingは、AIによる脆弱性発見を謳って開始されました。 / 7ヶ月間の追跡調査の結果、Anthropicが主張する「数千件の深刻な脆弱性」の証拠は乏しいことが判明しました。 / しかし、AIが脆弱性発見に有効なツールであるという事実は変わらず、過度な期待は禁物ですが、その可能性は評価すべきです。 [実務示唆: AIを活用した脆弱性スキャンツールの導入を検討する際は、過度な期待をせず、実際の検出精度や報告実績を慎重に評価することが重要です。] [GitHub: ossf/cve-records] (Source: Hacker News)</description>
+      <pubDate>Tue, 10 Nov 2026 22:17:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIコードレビューを効率化し、4倍のプルリクエストを処理する方法</title>
+      <link>https://dev.to/dailycontext/how-we-review-4x-more-ai-code-without-reading-every-line-d5j</link>
+      <guid isPermaLink="false">https://dev.to/dailycontext/how-we-review-4x-more-ai-code-without-reading-every-line-d5j</guid>
+      <description>[Score: 75] AI生成コードのレビューにおいて、すべての行を読む必要はなく、変更の意図、受け入れ基準、不変条件、決定事項、動作証拠の5点を確認すべきです。 / Aviatorではこのアプローチにより、同じエンジニア数でプルリクエストのマージ数を4倍に増やし、マージまでの時間を2.1日から3.4時間へ短縮しました。 / コードレビューの目的はバグ発見だけでなく、知識共有とシステム理解の維持にあるため、AIを活用しつつ人間が重要な決定に集中することが重要です。 [実務示唆: AI生成コードのレビュープロセスを見直し、変更の意図や不変条件の確認に焦点を当てることで、レビュー効率を大幅に向上させ、開発サイクルを加速させるべきです。] (Source: Dev.to)</description>
+      <pubDate>Wed, 11 Nov 2026 01:27:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>AYO: 子どもとLLMのインタラクションを研究するための安全でプライバシー保護されたプラットフォーム</title>
+      <link>https://arxiv.org/abs/2611.10054</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.10054</guid>
+      <description>[Score: 70] 本記事は、子どもと大規模言語モデル（LLM）のインタラクションを研究するための、安全でプライバシーを保護するプラットフォーム「AYO」について紹介しています。 / AYOは、子どものデータ保護と倫理的なAI利用に焦点を当て、研究者が安心してデータを収集・分析できる環境を提供します。 / これにより、LLMが子どもに与える影響を深く理解し、より安全なAI技術開発に貢献することが期待されます。 [実務示唆: 子ども向けLLM開発や教育分野でのAI導入を検討する際は、AYOのようなプライバシー保護技術の導入を検討し、倫理的側面を重視すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Google AI Classroom Part 6: 低帯域幅での教室画面ブロードキャストとGemini 4 Argonによる単一パス全講義字幕</title>
+      <link>https://dev.to/gde/google-ai-classroom-part-6-low-bandwidth-classroom-screen-broadcasting-single-pass-whole-lecture-1k0l</link>
+      <guid isPermaLink="false">https://dev.to/gde/google-ai-classroom-part-6-low-bandwidth-classroom-screen-broadcasting-single-pass-whole-lecture-1k0l</guid>
+      <description>[Score: 70] 大規模な教室やオンライン講義でのライブコーディングデモンストレーションにおいて、従来のWebアーキテクチャでは帯域幅と字幕生成に課題がありました。 / 本記事では、低帯域幅で高精細な画面共有（0.5-1 FPS）と、Gemini 4 Argonを用いた単一パスでの全講義字幕生成を実現するソリューションを紹介しています。 / このサーバーレスアーキテクチャは、高価なメディアサーバーなしで安定した配信を可能にし、教育現場の課題を解決します。 [実務示唆: 教育機関や企業研修で大規模な技術講義を行う際は、低帯域幅での画面共有とAIによるリアルタイム字幕生成技術を導入し、配信コスト削減とアクセシビリティ向上を図るべきです。] (Source: Dev.to)</description>
+      <pubDate>Wed, 11 Nov 2026 01:27:06 +0000</pubDate>
     </item>
   </channel>
 </rss>

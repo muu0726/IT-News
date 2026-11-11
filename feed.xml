@@ -5,55 +5,20 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Nov 2026 13:49:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 01:30:38 +0000</lastBuildDate>
     <item>
-      <title>Claude Fable 5.2とMythos 5.2</title>
-      <link>https://www.anthropic.com/claude-fable-and-mythos-5-2</link>
-      <guid isPermaLink="false">https://www.anthropic.com/claude-fable-and-mythos-5-2</guid>
-      <description>[Score: 100] Anthropicは、高度な技術的課題に対応するよう設計された大規模言語モデル「Claude Fable 5.2」と「Claude Mythos 5.2」をリリースしました。 / これらのモデルは、コーディング、推論、視覚能力が向上し、ソフトウェア移行、電子デバイス設計、物理学の問題解決などで顕著な成果を上げています。 / Fable 5.2は一般利用可能で、Mythos 5.2はサイバーセキュリティや生物医学研究向けの検証プログラムを通じてアクセス可能であり、旧モデルより最大30%高速化され、価格も引き下げられています。 [実務示唆: 最新のClaude Fable 5.2/Mythos 5.2は、コーディングや推論能力が向上し、コストも削減されたため、開発プロジェクトでのAI活用を積極的に検討し、既存のワークフローへの統合を試すべきです。] (Source: Hacker News)</description>
-      <pubDate>Mon, 09 Nov 2026 18:01:10 +0000</pubDate>
+      <title>氏名や電話番号、聞きません　漏洩問題で企業側、個人情報手放す動き：朝日新聞</title>
+      <link>https://www.asahi.com/articles/ASVCB0H13VCBUTIL009M.html</link>
+      <guid isPermaLink="false">https://www.asahi.com/articles/ASVCB0H13VCBUTIL009M.html</guid>
+      <description>[Score: 95] 個人情報漏洩問題が相次ぐ中、企業が顧客の個人情報を必要以上に集めない動きが広がっています。 / 焼肉きんぐはアプリ登録に氏名・電話番号を不要とし、タイムズカーは本人確認書類の画像データを即時削除する運用に変更しました。 / AIの台頭によるサイバー攻撃の高度化を受け、「守るべき個人情報そのものを持たないこと」が最大の安全策との認識が背景にあります。 [実務示唆: 個人情報を取り扱うシステム設計において、最小限のデータ収集と短期保存を原則とし、不要な個人情報は速やかに削除する「データミニマイゼーション」を徹底しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 10 Nov 2026 09:02:35 +0000</pubDate>
     </item>
     <item>
-      <title>退屈なCoding AgentはMuseにやらせよう</title>
-      <link>https://zenn.dev/watany/articles/342b9815dd0553</link>
-      <guid isPermaLink="false">https://zenn.dev/watany/articles/342b9815dd0553</guid>
-      <description>[Score: 100] Metaが開発したパーソナルAIエージェント「Muse」が、コーディングを含む多様なタスクに非常に有用であると紹介されています。 / MuseのSpace機能により、VM上でローカルLLMを動かすアプリを無料で作成・利用できる点が強調されています。 / OpenAIの「Sign in with ChatGPT」とPi Coding Agentを組み合わせることで、Museをコーディングエージェントとして効率的に活用する方法が提案されています。 [実務示唆: MuseのようなパーソナルAIエージェントのSpace機能を活用し、ローカルLLMや外部APIと連携させることで、開発タスクの自動化やプロトタイプ作成を効率化し、AI活用の幅を広げましょう。] [GitHub: pi-ai/pi-coding-agent] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 02:35:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>部品の脆弱性は、どこまで広がるのか？ 主要 64 製品と 8 部品の依存関係をたどったら、OpenSSL は 20、SQLite は 16、PHP は 11 だった</title>
-      <link>https://qiita.com/songchong/items/41a88eb41845af761b19?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/41a88eb41845af761b19?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 95] AIがソフトウェア部品の脆弱性を発見するようになり、一つの部品の脆弱性が多くの製品に影響を及ぼすことが調査で明らかになりました。 / OpenSSLの脆弱性は20製品、SQLiteは16製品、PHPは11製品に影響する可能性があり、サプライチェーン全体のリスクが浮き彫りになっています。 / この問題に対処するため、SBOM（ソフトウェア部品表）の活用と、AIや脆弱性管理ツールによるコンポーネントレベルでの脆弱性管理が推奨されています。 [実務示唆: 自社製品のSBOMを導入・活用し、使用しているオープンソースコンポーネントの脆弱性情報をAIや自動化ツールで継続的に監視し、サプライチェーン全体のリスクを可視化・管理すること。] (Source: Qiita)</description>
-      <pubDate>Sun, 08 Nov 2026 19:10:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>転送ヘッダーは信頼できる入力ではない：トンネルの背後にあるX-Forwarded-For、Proto、Host</title>
-      <link>https://dev.to/instatunnel/forwarded-headers-are-not-trusted-input-x-forwarded-for-proto-and-host-behind-a-tunnel-8bn</link>
-      <guid isPermaLink="false">https://dev.to/instatunnel/forwarded-headers-are-not-trusted-input-x-forwarded-for-proto-and-host-behind-a-tunnel-8bn</guid>
-      <description>[Score: 95] アプリケーションをトンネルの背後に配置する際、X-Forwarded-For、X-Forwarded-Proto、X-Forwarded-Hostといった転送ヘッダーがアプリケーションの動作に影響を与えることを解説しています。 / これらのヘッダーを誤って信頼すると、リダイレクトループやレートリミッターの誤動作といった無害な問題から、攻撃者によるセキュリティチェックの回避といった有害な問題まで発生する可能性があります。 / FastifyやExpressの過去の脆弱性を例に挙げ、Express、Fastify、Django、Railsでの正しい設定方法を説明しています。 [実務示唆: プロキシやロードバランサーを使用するシステムでは、X-Forwardedヘッダーを信頼する範囲を厳密に設定し、アプリケーションが信頼できるソースからのヘッダーのみを処理するように構成することで、セキュリティリスクを軽減すべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 10 Nov 2026 03:47:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIでテストカバレッジを23%から84%に引き上げた方法</title>
-      <link>https://zenn.dev/litalico/articles/20261029-test-with-ai</link>
-      <guid isPermaLink="false">https://zenn.dev/litalico/articles/20261029-test-with-ai</guid>
-      <description>[Score: 95] LITALICOナーシングネット開発チームが、AIを活用してテストカバレッジを23%から84%に大幅に向上させた取り組みを紹介しています。 / CI導入や手書きテストの限界を経て、生成AIを用いたテストコード生成に注力し、プロンプトエンジニアリングやスキル構築の重要性を強調しています。 / AI導入前後の具体的な課題と解決策、そしてテスト文化醸成へのアプローチが詳細に説明されています。 [実務示唆: テストカバレッジ向上に課題を抱えるチームは、生成AIを活用したテストコード生成を検討し、効果的なプロンプト設計とAIに合わせた開発プロセスを構築することで、品質向上と開発効率化を図りましょう。] [GitHub: litalico/github-actions-rspec] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 02:50:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Opus 5.5の推論能力が11月3日から急激に低下したとの指摘、1400件の利用履歴から変化が判明</title>
-      <link>https://gigazine.net/news/20261110-claude-opus-nerf/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261110-claude-opus-nerf/</guid>
-      <description>[Score: 95] AnthropicのAIモデル「Claude Opus 5.5」の推論能力が2026年11月3日頃から急激に低下した可能性が指摘されています。 / 開発者のシェーン・メロー氏が約1400件のClaude Code利用履歴を分析した結果、モデル名変更なしにAIの思考プロセスやエラー率に大きな変化が見られました。 / 特に、思考トークン数の減少やエラー指標の増加が確認されており、AIモデルの品質管理における課題が浮き彫りになっています。 [実務示唆: Claude Opus 5.5を利用している開発者は、AIの出力品質が低下していないか注意深く監視し、必要に応じてプロンプトの調整や他のモデルの検討を行うべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 10 Nov 2026 08:05:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>脆弱性の情報は間に合っている？ 英語は 2 時間以内、悪用は 4 割が 1 日以内、日本語は中央値 4.6 日後。悪用された 74 件を調べて分かった</title>
-      <link>https://qiita.com/songchong/items/b3c6c879f03f9bb665d3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/b3c6c879f03f9bb665d3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AIによるサイバー攻撃の高速化に伴い、脆弱性情報が公開されてから悪用されるまでの時間が短縮しています。 / 英語の脆弱性情報は2時間以内に公開される一方、日本語の情報は中央値で4.6日遅れることが74件の悪用事例調査で判明しました。 / この情報格差により、日本語情報に依存するだけでは防御が間に合わないため、AIと自動化による情報収集の必要性が高まっています。 [実務示唆: 日本語の脆弱性情報に依存せず、CISA KEVカタログやNVDなどの英語情報源をAIと自動化ツールでリアルタイムに監視し、迅速な対応体制を構築すること。] (Source: Qiita)</description>
-      <pubDate>Sun, 08 Nov 2026 09:00:22 +0000</pubDate>
+      <title>Gitのセキュリティ脆弱性が発表されました</title>
+      <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
+      <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -70,60 +35,39 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>E-means: k-meansを10分の1のエポックで凌駕</title>
-      <link>https://e-means.github.io/</link>
-      <guid isPermaLink="false">https://e-means.github.io/</guid>
-      <description>[Score: 90] E-meansは、k-meansクラスタリングアルゴリズムの現代的な最適化手法であり、従来のLloydアルゴリズムを大幅に上回る性能を発揮します。 / GPUで10〜45倍、CPUで8〜15倍の高速化を実現しつつ、より優れたテスト損失を達成します。 / ミニバッチ更新と指数移動平均を採用し、ハイパーパラメータチューニングが不要な自動設定機能を備えています。 [実務示唆: E-meansはk-meansクラスタリングを高速化し、品質も向上させるため、大規模データセットのクラスタリングタスクにおいて、既存のk-means実装をE-meansに置き換えることを検討し、その性能を検証すべきです。] [GitHub: e-means/e-means.github.io] (Source: Hacker News)</description>
-      <pubDate>Mon, 09 Nov 2026 18:45:43 +0000</pubDate>
+      <title>Synapticsの特許主張によりDisplayLinkドライバーの開発が停止</title>
+      <link>https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/</link>
+      <guid isPermaLink="false">https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/</guid>
+      <description>[Score: 90] DisplayLinkチップセット搭載ドックのLinuxドライバー改善を試みていた開発者が、Synaptics（DisplayLinkの買収元）から特許侵害の主張を受けました。 / Synapticsは、開発者に対してDisplayLink技術の無許可実装を停止するよう要求し、法的措置を示唆しました。 / これにより、LinuxユーザーはDisplayLinkドックの機能が他のプラットフォームと同等になることを期待できなくなり、オープンソース開発への企業の姿勢が問われています。 [実務示唆: オープンソースプロジェクトに貢献する際は、関連する特許やライセンスについて事前に調査し、企業の知的財産権に関する方針を理解しておくことが重要です。] (Source: Hacker News)</description>
+      <pubDate>Tue, 10 Nov 2026 18:02:02 +0000</pubDate>
     </item>
     <item>
-      <title>ソフトバンク社長「自社システムをGPT-6 Astraで診断したら3.5万件の追加脆弱性を発見」と明かす</title>
-      <link>https://japan.cnet.com/article/35254620/</link>
-      <guid isPermaLink="false">https://japan.cnet.com/article/35254620/</guid>
-      <description>[Score: 90] ソフトバンクの宮川社長は、AIの悪用によるサイバー攻撃の急増と、それへの対応状況を説明しました。 / 自社システムをOpenAIのGPT-6 Astraで診断したところ、以前の診断では見つからなかった3万5000件もの脆弱性が新たに発見されたことを明らかにしました。 / AIによる脆弱性診断は効果的であるものの、新たなAIモデルの登場により、常に最新の対策が求められる現状が浮き彫りになっています。 [実務示唆: AIを活用した脆弱性診断は非常に有効だが、AIモデルの進化が速いため、常に最新のモデルでシステムを再診断し、継続的なセキュリティ対策を講じるべき。] (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 09 Nov 2026 22:53:05 +0000</pubDate>
+      <title>Clojureのマクロによるメタプログラミングで業務ルールのDSLを作る</title>
+      <link>https://zenn.dev/pksha/articles/b7e4c1a9d38f52</link>
+      <guid isPermaLink="false">https://zenn.dev/pksha/articles/b7e4c1a9d38f52</guid>
+      <description>[Score: 90] Clojureのマクロを活用し、設備点検の条件式から判定関数と根拠収集のための参照一覧を自動生成するDSLが開発されました。 / これにより、条件式を一度書くだけで判定と根拠収集に必要な定義が揃い、ルールの保守・拡張が容易になります。 / Pythonで実装された内部DSLを題材に、Clojureのマクロによるメタプログラミングの具体的な実装と利点が解説されています。 [実務示唆: 複雑な業務ルールを持つシステム開発において、ClojureのようなLisp系言語のマクロを用いたDSL構築を検討することで、コードの記述量を減らし、保守性と拡張性の高いシステムを実現できる可能性があります。] (Source: Zenn)</description>
+      <pubDate>Tue, 10 Nov 2026 12:55:14 +0000</pubDate>
     </item>
     <item>
-      <title>1.8% CPU停止：AIエージェントランタイムがコネクションプールを枯渇させる理由</title>
-      <link>https://dev.to/sahil_5eec7e7c6004ad71a7b/the-18-cpu-outage-why-ai-agent-runtimes-starve-connection-pools-1an</link>
-      <guid isPermaLink="false">https://dev.to/sahil_5eec7e7c6004ad71a7b/the-18-cpu-outage-why-ai-agent-runtimes-starve-connection-pools-1an</guid>
-      <description>[Score: 90] AIエージェントやバックグラウンドワーカーが外部システムからの応答を待つ間、コネクションプールを長時間占有し、データベースCPU使用率が低いにもかかわらずサービス停止を引き起こす問題について解説しています。 / この問題は、データベースだけでなく、Redis、HTTPクライアント、Kafkaなど、有限なリソースを保持するあらゆるシステムで発生し得ます。 / ボトルネックはCPUではなく、外部システムへの未バッファ呼び出し中にリソースが保持される待機時間（W）にあると指摘し、その検出方法も提示しています。 [実務示唆: AIエージェントや外部API連携を含むシステムでは、コネクションプールの枯渇を避けるため、リソースの保持時間を最小化する設計を検討し、CI/CDパイプラインで接続プールの健全性を監視するテストを導入すべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 10 Nov 2026 03:47:43 +0000</pubDate>
+      <title>Alice Huang reportedly instrumental in securing over $7.5 billion of Nvidia AI GPU imports during three-year relationship with Jensen Huang — helped move 240,000 banned chips into China, mostly H100 and H200</title>
+      <link>https://www.reddit.com/r/technology/comments/1xt0mny/alice_huang_reportedly_instrumental_in_securing/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xt0mny/alice_huang_reportedly_instrumental_in_securing/</guid>
+      <description>[Score: 90] Alice HuangがJensen Huangとの関係を通じて、NvidiaのAI GPUの輸入に深く関与したと報じられています。 / 3年間で75億ドル以上のNvidia AI GPUの輸入を確保し、その中には中国への輸出が禁止されているH100やH200チップ24万個が含まれていたとされます。 / これは、米国の輸出規制を回避して中国市場にAIチップが供給された可能性を示唆しています。 [実務示唆: AIチップの国際的なサプライチェーンと輸出規制の動向は、AI開発やデータセンター構築に直接影響するため、関連企業は地政学的リスクと規制遵守を常に意識すべき。] (Source: Reddit)</description>
+      <pubDate>Tue, 10 Nov 2026 22:24:36 +0000</pubDate>
     </item>
     <item>
-      <title>AlphaProof Code</title>
-      <link>https://deepmind.google/blog/introducing-alphaproof-code/</link>
-      <guid isPermaLink="false">https://deepmind.google/blog/introducing-alphaproof-code/</guid>
-      <description>[Score: 90] Google DeepMindの研究者が、Signalプロトコルの暗号コードを形式的に検証する新しいエージェントフレームワーク「AlphaProof Code」を発表しました。 / これは、AIエージェントと人間の専門知識を組み合わせることで、これまで困難とされてきた大規模な暗号プロトコルの実装コードの形式検証を初めて実現しました。 / この技術は、数十億のプライベートな会話を保護するSignalやGoogle Messagesなどのアプリのセキュリティを数学的に証明する画期的な進歩です。 [実務示唆: AIによる形式検証の進展は、特にセキュリティが重要なシステム開発において、コードの信頼性向上とバグ削減に貢献するため、将来的な導入可能性を注視し、既存の検証プロセスとの統合を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Tue, 10 Nov 2026 12:11:12 +0000</pubDate>
+      <title>【国のデータをしゃぶり尽くせ！】無料で使える公共データ100選【永久保存版】 - Qiita</title>
+      <link>https://qiita.com/Retro-Maid/items/d99e436fe0b19e151709</link>
+      <guid isPermaLink="false">https://qiita.com/Retro-Maid/items/d99e436fe0b19e151709</guid>
+      <description>[Score: 90] この記事では、日本の充実したオープンデータの中から、開発者や分析者が活用しやすい公共データ100選を紹介しています。 / 地図、統計、気象、防災、企業情報など多岐にわたるデータが、Webサービス開発やAIアプリ、BIダッシュボード、GIS分析に利用可能です。 / デジタル庁の横断データポータルを中心に、CKAN準拠のデータモデルや活用事例も解説されています。 [実務示唆: 無料で利用可能な公共データ100選を参考に、自身の開発プロジェクトや分析業務に活用できるデータセットを見つけ、新たなサービスや知見の創出に挑戦しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 11 Jul 2026 16:28:07 +0000</pubDate>
     </item>
     <item>
-      <title>AI ネイティブなデータ分析基盤を作った話（後編）</title>
-      <link>https://zenn.dev/pksha/articles/laplace-build-guide</link>
-      <guid isPermaLink="false">https://zenn.dev/pksha/articles/laplace-build-guide</guid>
-      <description>[Score: 90] PKSHA Technologyが構築したAIネイティブなデータ分析基盤「Laplace」の設計思想について解説しています。 / 「すぐに・誰でも・安全に」データを扱えるようにするため、人、プロダクト、権限、AIの4つの境界を明確に定義しています。 / 長期鍵を発行しない認証方針や、CI/CDの権限を最小限に絞るなど、セキュリティと運用効率を両立させる工夫が紹介されています。 [実務示唆: データ分析基盤を構築する際は、技術スタックだけでなく「誰が何を決め、どこに境界を引くか」という設計思想を明確にし、セキュリティと運用のバランスを考慮した認証・権限管理を導入しましょう。] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 07:38:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>実践：JevをClaudeに5分で連携する！ 〜仕組みから実装、実際の使いどころ〜</title>
-      <link>https://qiita.com/ryosuke_ohori/items/ada543a0201752023e25?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ryosuke_ohori/items/ada543a0201752023e25?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] TypeSafe AIが公開した「Jev」は、LLMが生成する自由な文章ではなく、定義された質問に対して型の決まった値を返すSystem One Modelです。 / 本記事では、Jevの仕組み、Claudeとの連携方法、Pythonによる独自の問い合わせ振り分け実装、確率評価、AIエージェントへの応用までを解説。 / 短く明確な判断が必要なタスクにおいて、従来のLLMよりも効率的かつコストを抑えられる可能性を示唆しています。 [実務示唆: 短文での判断や分類が必要なAIアプリケーション開発において、Jevのような特化型モデルの導入を検討し、コストと性能のバランスを評価しましょう。] (Source: Qiita)</description>
-      <pubDate>Mon, 09 Nov 2026 13:46:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>大学1年生がつくったOSSがGitHub Star 1万超。AIに渡す「画面の設計図」はどう生まれた？ - レバテックLAB</title>
-      <link>https://levtech.jp/media/detail_965/</link>
-      <guid isPermaLink="false">https://levtech.jp/media/detail_965/</guid>
-      <description>[Score: 90] 大学1年生のinori氏が開発したOSS「M3E Canvas」が、公開から約2ヶ月でGitHub Star 1万超えを達成しました。 / このツールは、ブラウザ上でアプリの画面を組み立て、AIに渡すプロンプトを生成するもので、AIによるバイブコーディングの効率化を目指しています。 / MITライセンスで公開され、Android以外の開発にも活用されるなど、その汎用性と開発者のオープンな姿勢が大きな反響を呼んでいます。 [実務示唆: AIを活用したUI開発に興味があるエンジニアは、M3E Canvasを試用し、AIへのプロンプト生成効率化の可能性を探ることで、開発ワークフロー改善のヒントを得られます。] [GitHub: inori/M3E-Canvas] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 10 Nov 2026 01:12:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>日本は本当にサイバー緊急事態を宣言したのか？実際に何が起こったのか</title>
-      <link>https://dev.to/hisashispace/did-japan-really-declare-a-cyber-emergency-what-actually-happened-441p</link>
-      <guid isPermaLink="false">https://dev.to/hisashispace/did-japan-really-declare-a-cyber-emergency-what-actually-happened-441p</guid>
-      <description>[Score: 90] 日本がサイバー緊急事態を宣言したという報道は誤りであり、実際には宣言されていません。 / 自民党の会議での発言や政府の文書内容を詳細に分析し、誤解を解いています。 / クラウドプロバイダーからの通知や最終報告書の内容も検証し、正確な情報を提供しています。 [実務示唆: サイバーセキュリティに関するニュースは、一次情報源（政府機関の公式発表など）を確認し、誤解や誇張された情報に惑わされないよう注意しましょう。] (Source: Dev.to)</description>
-      <pubDate>Tue, 10 Nov 2026 13:00:00 +0000</pubDate>
+      <title>.NET 8と.NET 9のサポートは昨日で終了。脆弱性が社会問題化している現在、.NET 10への移行を推奨</title>
+      <link>https://www.publickey1.jp/blog/26/net_8net_9net_10.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_8net_9net_10.html</guid>
+      <description>[Score: 90] マイクロソフトのソフトウェアフレームワーク「.NET 8」と「.NET 9」のサポートが2026年11月10日に終了しました。 / サポート終了後もアプリケーションは動作しますが、バグ修正やセキュリティパッチ、テクニカルサポートは提供されなくなります。 / 脆弱性が社会問題化している現状を鑑み、最新のLTS版である「.NET 10」への速やかな移行が強く推奨されます。 [実務示唆: .NET 8または.NET 9を使用しているプロジェクトは、セキュリティリスクを避けるため、直ちに.NET 10へのアップグレード計画を策定し実行すべきです。] [GitHub: dotnet/runtime] (Source: Publickey)</description>
+      <pubDate>Tue, 10 Nov 2026 17:45:42 +0000</pubDate>
     </item>
     <item>
       <title>LoRazor: 効率的なMulti-LoRAサービングのためのアダプター実行のトリミング</title>
@@ -133,18 +77,74 @@
       <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Payments Canadaがカナダのリアルタイム決済システム（RTR）の稼働を発表</title>
-      <link>https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy</link>
-      <guid isPermaLink="false">https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy</guid>
-      <description>[Score: 85] Payments Canadaが、カナダの新しいリアルタイム決済システム「Real-Time Rail（RTR）」の稼働を発表しました。 / このシステムにより、参加金融サービスプロバイダーは24時間365日、リアルタイムでの決済清算・決済が可能になります。 / カナダ経済の基盤となる重要なインフラの近代化であり、将来のイノベーションと成長のプラットフォームとなることが期待されます。 [実務示唆: カナダのリアルタイム決済システムRTRの導入は、金融サービス開発に大きな影響を与えるため、カナダ市場向けの決済システムを開発するエンジニアは、RTRへの対応と新たなサービス機会を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Mon, 09 Nov 2026 16:00:45 +0000</pubDate>
+      <title>LiteLLM Adaptive Router を検証する（前編）：モデル選択と学習の仕組み</title>
+      <link>https://zenn.dev/aws_japan/articles/ac9ae548d57323</link>
+      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/ac9ae548d57323</guid>
+      <description>[Score: 88] LiteLLMのAdaptive Routerは、リクエスト内容に応じて複数のLLMを振り分け、品質とコストを評価し、会話からの反応を学習に反映します。 / 本記事では、LiteLLM v1.106.2の実装を確認し、AWS上に構築した検証環境でその仕様を詳細に検証しています。 / モデル選択は、model_infoに設定されたquality_tier、strengths、input_cost_per_tokenを参照して行われます。 [実務示唆: LiteLLM Adaptive Routerを導入する際は、各モデルのquality_tier、strengths、input_cost_per_tokenを適切に設定し、コストと性能のバランスを考慮した最適なLLMルーティング戦略を構築すべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 10 Nov 2026 14:28:03 +0000</pubDate>
     </item>
     <item>
-      <title>AIチップの「探す」機能を構築する競争</title>
-      <link>https://spectrum.ieee.org/find-my-ai-chip</link>
-      <guid isPermaLink="false">https://spectrum.ieee.org/find-my-ai-chip</guid>
-      <description>[Score: 85] 米国はAIチップの中国への密輸・転用を阻止するため輸出規制を強化していますが、依然としてチップが中国で発見されています。 / この問題に対処するため、米国はAIチップの所在確認技術に注目しており、位置情報検証を義務付ける法案が検討されています。 / チップメーカーは、改ざん防止ハードウェア、暗号署名、チップの指紋認証などの技術でこれに対応する可能性があります。 [実務示唆: AIチップのサプライチェーンに関わる企業は、将来的な位置情報検証義務化に備え、改ざん防止技術や追跡システムの導入を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Mon, 09 Nov 2026 14:09:02 +0000</pubDate>
+      <title>AI「テスト通りました」← これ､本当？ Stryker でテストの穴を塞いだ話</title>
+      <link>https://qiita.com/Dingu-suke/items/b5318ef2040a9f59224a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Dingu-suke/items/b5318ef2040a9f59224a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AIが生成したテストが本当にコードの品質を保証しているか疑問視される中、ミューテーションテストが注目されています。 / Strykerはコードを意図的に破壊（変異）し、テストがその破壊を検知できるかを検証するツールです。 / これにより、テストのカバレッジだけでは見つけられないテストの弱点や穴を特定し、より堅牢なテストスイートを構築できます。 [実務示唆: AI生成テストの品質保証のため、Strykerなどのミューテーションテストツールを導入し、テストの網羅性と堅牢性を定期的に検証することを推奨します。] [GitHub: stryker-mutator/stryker] (Source: Qiita)</description>
+      <pubDate>Mon, 09 Nov 2026 07:45:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>ひとりで作るOSSを、チームの基準でレビューする（Codex・Claude・CodeRabbit）</title>
+      <link>https://qiita.com/figueiredoluiz/items/1a043190d8f00d2ebda6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/1a043190d8f00d2ebda6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] 本記事は、個人で開発するOSSの品質を向上させるため、AIツール（Codex, Claude, CodeRabbit）を活用したレビュープロセスを紹介しています。 / テストの重複検出ツールを例に、AIによるコード生成とレビューを開発の中心に据え、品質保証の自動化と効率化を図る方法を解説。 / 一人開発でも複数の視点を取り入れ、CI/CDパイプラインに組み込むことで、高品質なOSSを維持する重要性を強調しています。 [実務示唆: 個人開発のOSSでもAIレビューツールを導入し、CI/CDに組み込むことで、品質と信頼性を向上させ、将来のチーム開発に備えましょう。] [GitHub: vitest-dev/vitest-dedup] (Source: Qiita)</description>
+      <pubDate>Mon, 09 Nov 2026 16:24:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>Google、Kubernetesで10倍高密度にAIエージェントを実行可能にする「Agent Sustrate」と「gVisor」、オープンソースとしてCNCFに寄贈と発表</title>
+      <link>https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</guid>
+      <description>[Score: 85] Googleは、Kubernetes上でAIエージェントを10倍高密度に実行可能にするオープンソースソフトウェア「Agent Substrate」と「gVisor」をCNCFに寄贈しました。 / AIエージェントはアイドル時間が長く、Kubernetes単体では効率的な実行が困難であるという課題を解決します。 / これにより、AIエージェントの実行基盤としてのKubernetesの効率と密度が大幅に向上し、AI開発のコスト削減とスケーラビリティに貢献します。 [実務示唆: Kubernetes上でAIエージェントを運用している、または検討している開発者は、Agent SubstrateとgVisorを導入し、リソース効率とコスト削減効果を検証すべき。] [GitHub: google/gvisor] (Source: Publickey)</description>
+      <pubDate>Mon, 09 Nov 2026 15:25:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>マイクロソフト、150以上のオープンソースUIコンポーネントがBlazorに寄贈されたことを発表。InfragisticsとSyncfusionから</title>
+      <link>https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</guid>
+      <description>[Score: 85] マイクロソフトは、C#などの.NETテクノロジーでWebアプリ開発を可能にするフレームワーク「Blazor」に、150以上のオープンソースUIコンポーネントが寄贈されたと発表しました。 / これはInfragisticsとSyncfusionとの協力によるもので、それぞれ50以上、100以上のBlazor対応UIコンポーネントがMITライセンスで提供されます。 / チャート、ボタン、カレンダー、グリッドなど、ビジネスアプリケーション開発に役立つ多様なコンポーネントが含まれています。 [実務示唆: Blazor開発者は、InfragisticsとSyncfusionから寄贈されたMITライセンスの豊富なUIコンポーネントを活用し、開発効率とアプリケーション品質の向上を図るべきです。] (Source: Publickey)</description>
+      <pubDate>Mon, 09 Nov 2026 15:22:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>スマートホームデバイスはインターネットなしで動作すべき</title>
+      <link>https://docodethatmatters.com/home-automation-overnight-success/</link>
+      <guid isPermaLink="false">https://docodethatmatters.com/home-automation-overnight-success/</guid>
+      <description>[Score: 85] 筆者は、スマートホームの中核機能がベンダーのサーバーに依存せず、インターネットがダウンしても動作し続けることを原則としています。 / Google Nest APIの停止や、Wi-Fi接続を必要とするスマート家電の例を挙げ、クラウド依存のリスクを指摘しています。 / Tasmotaを導入したESPボード、MQTTブローカー、Node-REDをRaspberry Piで運用し、ローカルでの制御を重視するシステムを構築しています。 [実務示唆: スマートホームシステムを構築する際は、インターネット接続なしでも主要機能が動作するよう、ローカル制御可能なデバイスやオープンソースソリューションの採用を検討し、ベンダーロックインを避けるべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 10 Nov 2026 15:25:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>LiteLLM Adaptive Routerを検証する（後編）：学習シグナルと運用上の注意</title>
+      <link>https://zenn.dev/aws_japan/articles/4399262cf00559</link>
+      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/4399262cf00559</guid>
+      <description>[Score: 85] LiteLLM Adaptive Routerの後編では、会話からのモデル品質学習条件と運用上の注意点が検証されました。 / ユーザーの満足度評価は、同じ会話として記録された3ターン目以降かつ直前のターンが記録されている場合に直前の応答モデルに加算されます。 / 日本語の「ありがとう」や「やっぱりいいです」はシグナルとして検出されず、英語のthanksやnever mindが必要であることが判明しました。 [実務示唆: LiteLLM Adaptive Routerを利用する際は、ユーザーの反応を学習シグナルとして活用するために、会話のターン数や特定の英語表現の使用を促すプロンプト設計を検討し、モデルの選択精度向上に努めるべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 10 Nov 2026 14:30:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Code を新しい Fable 5.2 に切り替えると速く安くなるのか。36回測ったら、Fable 5.1 より2割速く3割安く、費用は Opus 5.5 の1.6倍だった</title>
+      <link>https://qiita.com/suwa_nobu/items/a6a104575596915dac2e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/suwa_nobu/items/a6a104575596915dac2e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] Anthropicが発表したClaude Fable 5.2が、Claude Codeのデフォルトモデルとして導入されました。 / 本記事は、Fable 5.2がFable 5.1と比較して約2割高速化し、約3割コスト削減されることを36回のテストで検証。 / ただし、費用面ではOpus 5.5が最も安価であることも示され、モデル選択の際の費用対効果が明確に比較されています。 [実務示唆: Claude Code利用者は、Fable 5.2への切り替えで開発効率とコスト削減が期待できるため、積極的に導入を検討し、自身のユースケースでの性能と費用を検証すべき。] (Source: Qiita)</description>
+      <pubDate>Mon, 09 Nov 2026 23:50:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>Anthropicの創業者7人全員がIPOでそれぞれ約2億5000万ドルを現金化へ</title>
+      <link>https://www.reddit.com/r/technology/comments/1xt1vrf/all_7_anthropic_founders_will_each_cash_out_about/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xt1vrf/all_7_anthropic_founders_will_each_cash_out_about/</guid>
+      <description>[Score: 85] AI企業Anthropicの創業者7人が、同社の新規株式公開（IPO）により、それぞれ約2億5000万ドル（約375億円）を現金化する見込みです。 / これは、AIスタートアップの急成長と、その成功が創業者にもたらす莫大な経済的利益を示しています。 / AnthropicはOpenAIの競合として注目されており、今後の動向が注目されます。 [実務示唆: AIスタートアップのIPOは創業者に巨額の富をもたらす可能性があり、今後のAI業界の資金調達や企業価値評価の動向に注目し、投資機会を検討しましょう。] (Source: Reddit)</description>
+      <pubDate>Tue, 10 Nov 2026 23:18:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>「盗撮」→「法律で規制」が話題のAI眼鏡　海外では大ヒットなのに、日本での普及は限定的　ビジネスでの活用事例を探る</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/11/2000002913/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/11/2000002913/</guid>
+      <description>[Score: 85] AI眼鏡（AIグラス）は海外で急速に普及していますが、日本では盗撮などのプライバシー懸念から普及が限定的です。 / MetaがRay-BanとコラボしたAIグラスは、通常の眼鏡と見分けがつかないデザインで、撮影やAI会話機能を提供しています。 / ノルウェー政府が公共の場での使用規制を計画するなど、世界的にプライバシーと技術革新のバランスが課題となっています。 [実務示唆: AIグラスのビジネス活用を検討する際は、プライバシー保護と倫理的利用に関する国内外の規制動向を常に把握し、透明性の高い運用ガイドラインを策定しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 10 Nov 2026 20:34:16 +0000</pubDate>
     </item>
   </channel>
 </rss>
