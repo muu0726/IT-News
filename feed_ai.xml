@@ -5,13 +5,27 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 02:35:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 14:02:58 +0000</lastBuildDate>
     <item>
       <title>自己修復型コーディングエージェント：MCPでプロダクショングレードのハーネスループを構築する方法</title>
       <link>https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</link>
       <guid isPermaLink="false">https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</guid>
       <description>[Score: 95] 自律型コーディングエージェントはデモでは魅力的ですが、大規模なエンタープライズコードベースでは失敗しやすい課題があります。 / Zhishu Agentは、モデルの能力を最大限に引き出し、運用信頼性を確保するためのオープンソースのハーネスアーキテクチャを提案しています。 / これは、ユーザー意図の取り込み、計画、ツール実行前のガード、サンドボックスでの実行、テスト駆動検証からなる収束型ステートマシンとして機能します。 [実務示唆: プロダクション環境でコーディングエージェントを導入する際は、単なるモデルのループではなく、Zhishu Agentのようなハーネスアーキテクチャを参考に、堅牢なエラーハンドリングと検証メカニズムを組み込むべきです。] [GitHub: wangguode/zhishu-agent] (Source: Dev.to)</description>
       <pubDate>Thu, 12 Nov 2026 02:26:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
+      <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</guid>
+      <description>[Score: 95] AWSが、AIエージェント向けに強力な隔離環境とほぼネイティブなEC2性能を提供する軽量仮想マシン「AWS Nitro Sandboxes」の提供を開始しました。 / AIが生成する信頼できないコードを実行する機会が増える中、従来のコンテナ型仮想化では不十分なセキュリティ分離が課題でした。 / AWS Nitro Sandboxesは、AWS Nitro Systemを基盤とし、ハードウェアレベルでの強力なセキュリティと分離を実現しつつ、コンテナのような軽量性を提供します。 [実務示唆: AIエージェントや信頼できないコードを実行するシステムを構築する際は、AWS Nitro Sandboxesを活用し、セキュリティとパフォーマンスを両立させた安全な実行環境を検討しましょう。] (Source: Publickey)</description>
+      <pubDate>Wed, 11 Nov 2026 15:04:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Software Factoryの先へ：全社の仕事をAI-NativeにするUbieの内製クラウドエージェント基盤</title>
+      <link>https://zenn.dev/ubie_dev/articles/45501469c9c044</link>
+      <guid isPermaLink="false">https://zenn.dev/ubie_dev/articles/45501469c9c044</guid>
+      <description>[Score: 95] Ubieが内製するクラウドエージェント基盤「Remoco」とエンジニアリングエージェント「Uvin」について紹介しています。 / プロダクト開発だけでなく、全社の仕事をAI-Nativeにするための基盤と位置づけ、Google CloudとTemporalを中心としたアーキテクチャを採用。 / エージェントハーネスをサンドボックスの外に置き、ツールとしてサンドボックスを呼び出す「Sandbox-as-a-tool」構成の利点や、耐久性の高いエージェントハーネス「Pi Durable」の採用について解説しています。 [実務示唆: AIエージェントを全社的に活用する際は、耐久性のあるエージェントハーネスと、サンドボックスをツールとして利用する「Sandbox-as-a-tool」構成を検討し、安全かつ効率的な運用を目指しましょう。] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 00:44:52 +0000</pubDate>
     </item>
     <item>
       <title>ISUCON2026で優勝しました（準備編）</title>
@@ -49,6 +63,13 @@
       <pubDate>Thu, 12 Nov 2026 02:26:59 +0000</pubDate>
     </item>
     <item>
+      <title>GoogleがエージェントスタックをCNCFに提供し、Agent Substrateが1.0に到達</title>
+      <link>https://dev.to/neticslabs/agent-substrate-reaches-10-as-google-hands-its-agent-stack-to-the-cncf-3i08</link>
+      <guid isPermaLink="false">https://dev.to/neticslabs/agent-substrate-reaches-10-as-google-hands-its-agent-stack-to-the-cncf-3i08</guid>
+      <description>[Score: 90] GoogleがAIエージェントスタック「Agent Substrate」をCNCFに提供し、バージョン1.0に到達しました。 / Agent Substrateは、エージェントの待機中にリソースを占有する従来のKubernetes Podの問題を解決します。 / ステートフルなセッションとコンピュートを分離し、リソース効率とスケーラビリティを向上させる設計が特徴です。 [実務示唆: AIエージェントを大規模に運用する開発者は、Agent Substrateのアーキテクチャを理解し、リソース効率とセキュリティ向上に役立つか評価を推奨する。] (Source: Dev.to)</description>
+      <pubDate>Thu, 12 Nov 2026 14:00:03 +0000</pubDate>
+    </item>
+    <item>
       <title>Real2Sim2Realの現在地：現場スキャンからロボット検証環境へ</title>
       <link>https://zenn.dev/kudan_jp/articles/a0cb75384f4a83</link>
       <guid isPermaLink="false">https://zenn.dev/kudan_jp/articles/a0cb75384f4a83</guid>
@@ -61,6 +82,13 @@
       <guid isPermaLink="false">https://dev.to/isadora_gift/designing-healthcare-aiot-systems-from-rfid-and-sensors-to-physical-ai-actions-450p</guid>
       <description>[Score: 85] ヘルスケア分野におけるAIoTシステムは、デジタルシステムと物理的資産・プロセスを連携させる重要な課題に直面しています。 / RFIDや各種センサーを用いて医療機器や検体などを識別・監視し、その情報をAIが分析します。 / これにより、資産管理、状態監視、運用応答の自動化など、医療現場の効率と安全性を向上させます。 [実務示唆: ヘルスケア分野のエンジニアは、RFIDやセンサー技術、AIoTプラットフォームの知識を深め、物理的な医療現場とデジタルシステムを連携させるソリューション開発に取り組むべきです。] (Source: Dev.to)</description>
       <pubDate>Thu, 12 Nov 2026 02:28:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIエージェントが決定を勝手に変えてしまった5つのパターンと工夫</title>
+      <link>https://zenn.dev/dress_code/articles/568fd547315abe</link>
+      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/568fd547315abe</guid>
+      <description>[Score: 85] AIエージェントがユーザーの意図しない決定を下してしまう5つのパターンと、それに対する工夫を紹介しています。 / 仕様に関する質問が決定として記録されたり、了承していない提案が決定済みとして扱われたりする事例を具体的に解説。 / AIとの協業において、決定事項の記録方法や確認プロセスを改善することの重要性を指摘しています。 [実務示唆: AIエージェントとの協業では、決定事項の記録方法を明確にし、エージェントの提案を安易に決定としないよう、人間が最終確認するプロセスを徹底しましょう。] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 03:00:05 +0000</pubDate>
     </item>
     <item>
       <title>EarthRecord: 40年間の衛星画像からマルチモーダルエージェントによる土地変化をピクセルから検出</title>
@@ -77,39 +105,11 @@
       <pubDate>Wed, 11 Nov 2026 12:38:35 +0000</pubDate>
     </item>
     <item>
-      <title>プレフィルで学習し、デコード時に監視：トピック監視のためのスパースオートエンコーダの利用</title>
-      <link>https://arxiv.org/abs/2611.12935</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.12935</guid>
-      <description>[Score: 77] 本記事は、スパースオートエンコーダを用いてトピック監視を行う新しい手法に関する研究論文です。 / モデルのプレフィル段階で学習を行い、デコード時に監視することで、効率的かつ高精度なトピック検出を目指しています。 / arXivLabsで公開されており、大規模言語モデルの解釈可能性と監視能力向上に貢献する可能性を秘めています。 (Source: arXiv cs.AI)</description>
-      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>自律型X線実験のための監査可能な人間-エージェントチーム</title>
-      <link>https://arxiv.org/abs/2611.12933</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.12933</guid>
-      <description>[Score: 75] 本記事は、自律型X線実験における人間とAIエージェントの協調に関する研究論文です。 / 監査可能性を重視した人間-エージェントチームのフレームワークを提案しており、実験の透明性と信頼性向上を目指しています。 / arXivLabsの取り組みの一環として公開されており、AIと科学実験の融合における新たなアプローチを示唆しています。 (Source: arXiv cs.AI)</description>
-      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>大規模言語モデルにおける心理測定学的推論の追跡</title>
-      <link>https://arxiv.org/abs/2611.12937</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.12937</guid>
-      <description>[Score: 75] 本記事は、大規模言語モデル（LLM）がどのように心理測定学的な推論を行うかを追跡する研究に関するものです。 / LLMが人間の心理特性をどの程度理解し、模倣できるのかを分析しています。 / これにより、LLMの内部メカニズムと倫理的側面への理解を深めることを目的としています。 [実務示唆: LLMを応用した心理分析ツールや対話システムを開発する際は、モデルの心理測定学的推論能力と限界を理解し、倫理的な利用ガイドラインを策定することが重要です。] (Source: arXiv cs.AI)</description>
-      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIに書かせた、が全然AIが書いてない件</title>
-      <link>https://zenn.dev/appleworld/articles/65aed6c725af71</link>
-      <guid isPermaLink="false">https://zenn.dev/appleworld/articles/65aed6c725af71</guid>
-      <description>[Score: 75] 筆者は、自分の文体で記事を書かせるAI自動化システムを構築しようと試みましたが、Claudeによる初稿が期待通りではなく、多くの修正が必要だった経験を共有しています。 / Slackコマンドでお題とメモをストックし、毎朝記事の下書きをGitHubに生成し、承認後にZennに公開する仕組みをCloudflare WorkersとClaudeで実現しました。 / AIに「考え方」を教え込むことで、より質の高い文章を生成させるための試行錯誤の過程が詳細に記述されています。 [実務示唆: AIによるコンテンツ生成では、単にプロンプトを与えるだけでなく、AIに「考え方」や「文体」を学習させるための具体的な指示書やフィードバックの仕組みを構築することが重要です。] (Source: Zenn)</description>
-      <pubDate>Wed, 11 Nov 2026 02:11:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>LandslideFM: 統一的な地滑り認識と理解に向けた基盤モデル</title>
-      <link>https://arxiv.org/abs/2611.12936</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.12936</guid>
-      <description>[Score: 70] 本記事は、地滑りの認識と理解を統一的に行うための基盤モデル「LandslideFM」に関するものです。 / 地滑り検知や予測といったタスクを単一モデルで処理することを目指しています。 / これにより、災害予測や防災分野におけるAI活用の可能性を広げます。 [実務示唆: 地滑り予測や災害監視システム開発に携わるエンジニアは、LandslideFMのような基盤モデルの応用可能性を検討し、既存システムへの統合を試みるべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
+      <title>MetaのAIエージェント「Muse」に課金して使い倒した結果の、小ネタと生存戦略 - はげあたま.org</title>
+      <link>https://www.hageatama.org/20261112/1794464751</link>
+      <guid isPermaLink="false">https://www.hageatama.org/20261112/1794464751</guid>
+      <description>[Score: 80] MetaのAIエージェント「Muse」を課金して使い倒した結果、モデル性能よりもハーネス（実行環境）の設計が優れていることが判明しました。 / Museは他の高性能モデル（GPT-6.1 Terraなど）をサブエージェントとして呼び出すことで、より快適な作業環境を構築できると筆者は述べています。 / 課金は急がず、既存のサブスクリプションとの兼ね合いで判断し、必要に応じて外部APIを活用する戦略が推奨されています。 [実務示唆: AIエージェント導入時は、モデル単体の性能だけでなく、ツール連携や実行環境の設計を重視し、既存のAIサービスとの連携も視野に入れて最適な構成を検討する。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 12 Nov 2026 06:35:10 +0000</pubDate>
     </item>
   </channel>
 </rss>

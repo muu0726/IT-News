@@ -5,13 +5,55 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 02:35:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 14:02:58 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
       <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
       <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Apache HTTP Serverに深刻なRCE脆弱性</title>
+      <link>https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability</link>
+      <guid isPermaLink="false">https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability</guid>
+      <description>[Score: 95] Apache HTTP ServerのHTTP/2モジュール(mod_http2)に、深刻な同期脆弱性(CVE-2026-119618)が発見されました。 / この脆弱性は、共有リソース処理における競合状態に起因し、リモートの認証されていない攻撃者がヒープメモリを破損させ、任意のコード実行(RCE)を可能にする可能性があります。 / Wizのデータによると、クラウド環境の64%がこの脆弱性の影響を受けるリソースを抱えているとのことです。 [実務示唆: Apache HTTP Serverのユーザーは、直ちにmod_http2モジュールの更新または無効化を検討し、システムへのパッチ適用を最優先で実施すべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 02:11:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>無印良品「21年までクレカ番号で顧客を識別していた」 “全ケタ保有＆漏えい“巡り謝罪 削除漏れなぜ発生</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/12/2000003144/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/12/2000003144/</guid>
+      <description>[Score: 90] 無印良品が不正アクセスによる顧客情報流出で謝罪し、2021年までクレジットカード番号全桁を顧客識別に使用し、削除漏れがあったことを認めました。 / 本来削除すべきカード番号が保管され、マスキングや暗号化もされていなかったことが判明し、データ運用管理の不備が指摘されています。 / リスト型攻撃とは異なる経路でクレジットカード情報へのアクセスがあった可能性も示唆されており、原因究明と情報管理体制の見直しが急務です。 [実務示唆: 企業は個人情報、特にクレジットカード情報の保持・削除ポリシーを厳格化し、PCI DSS準拠や非保持化の徹底、定期的な監査と従業員教育を強化する。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 12 Nov 2026 08:34:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>暗号通貨決済を受け入れるマーチャントのためのセキュリティチェックリスト</title>
+      <link>https://dev.to/cigalpay/security-checklist-for-merchants-accepting-crypto-payments-1ah5</link>
+      <guid isPermaLink="false">https://dev.to/cigalpay/security-checklist-for-merchants-accepting-crypto-payments-1ah5</guid>
+      <description>[Score: 85] 暗号通貨決済はチャージバックがない反面、誤送金や詐欺の取り消しが困難です。 / セキュリティインシデントの多くは暗号技術の破綻ではなく、鍵の漏洩や誤った情報信頼、誤ったアドレスへの送金が原因です。 / 本チェックリストは、これらの一般的な脆弱性に対処し、安全な決済処理のための実践的な指針を提供します。 [実務示唆: 暗号通貨決済を導入する際は、支払い通知の署名検証を徹底し、OWASP API Security Top 10に基づいたAPIセキュリティレビューを必ず実施すること。] (Source: Dev.to)</description>
+      <pubDate>Thu, 12 Nov 2026 14:00:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>個人情報流出ニュースが怖いので、パスワード対策をガチで見直してみた</title>
+      <link>https://qiita.com/koshiro_esaki/items/22b7e355068ac0dad571?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/koshiro_esaki/items/22b7e355068ac0dad571?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] 個人情報流出のニュースを受け、個人でできるパスワード対策を根本から見直した記事です。 / パスワードの使い回しをやめ、サービスごとに異なる15文字以上のパスワードを設定することを推奨しています。 / パスワードマネージャーの活用や、多要素認証の導入、フィッシング詐欺対策の重要性についても解説しています。 [実務示唆: 全サービスで15文字以上の異なるパスワードを設定し、パスワードマネージャーと多要素認証を導入して、フィッシング詐欺にも注意を払いましょう。] (Source: Qiita)</description>
+      <pubDate>Tue, 10 Nov 2026 02:10:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>libsignal のグループ暗号化を追って、署名改ざんのテストを追加した</title>
+      <link>https://zenn.dev/under_michi/articles/7791295efdb23e</link>
+      <guid isPermaLink="false">https://zenn.dev/under_michi/articles/7791295efdb23e</guid>
+      <description>[Score: 75] 東京大学の実験レポートとして、libsignalのグループ暗号化機能について深掘りしています。 / 既存のテストでカバーされていない署名改ざんのケースを発見し、そのテストコードを追加するPRを提出・マージされた経緯を解説。 / グループメッセージの送受信におけるSenderKeyの作成・送信・処理の流れをコード例と共に示しています。 [実務示唆: オープンソースライブラリのセキュリティ強化に貢献するため、既存テストの網羅性を確認し、未カバーの脆弱性シナリオに対するテストケースを積極的に追加することを検討しましょう。] [GitHub: signalapp/libsignal] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 01:12:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>セキュリティ・キャンプ 2026 応募課題晒し</title>
+      <link>https://zenn.dev/uvu/articles/758ee227a614ea</link>
+      <guid isPermaLink="false">https://zenn.dev/uvu/articles/758ee227a614ea</guid>
+      <description>[Score: 70] 筆者がセキュリティ・キャンプ修了後、プロダクトセキュリティクラスでの学びを振り返る記事です。 / 特にAIを活用した開発とインフラ・ネットワークセキュリティに関する講義に強い関心を示しています。 / ProxmoxやKubernetesなどを活用した実運用に近いシステム構築経験から、安全なシステム設計の重要性を強調しています。 [実務示唆: AI生成コードのセキュリティ評価や、攻撃者視点での外部公開リソースのリスク分析手法を学び、自身の開発・運用に活かすことを検討しましょう。] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 06:45:01 +0000</pubDate>
     </item>
   </channel>
 </rss>

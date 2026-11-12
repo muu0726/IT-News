@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 02:35:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 14:02:58 +0000</lastBuildDate>
     <item>
       <title>AWSエミュレーター</title>
       <link>https://github.com/aws/aws-emulator</link>
@@ -33,6 +33,27 @@
       <guid isPermaLink="false">https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</guid>
       <description>[Score: 95] 自律型コーディングエージェントはデモでは魅力的ですが、大規模なエンタープライズコードベースでは失敗しやすい課題があります。 / Zhishu Agentは、モデルの能力を最大限に引き出し、運用信頼性を確保するためのオープンソースのハーネスアーキテクチャを提案しています。 / これは、ユーザー意図の取り込み、計画、ツール実行前のガード、サンドボックスでの実行、テスト駆動検証からなる収束型ステートマシンとして機能します。 [実務示唆: プロダクション環境でコーディングエージェントを導入する際は、単なるモデルのループではなく、Zhishu Agentのようなハーネスアーキテクチャを参考に、堅牢なエラーハンドリングと検証メカニズムを組み込むべきです。] [GitHub: wangguode/zhishu-agent] (Source: Dev.to)</description>
       <pubDate>Thu, 12 Nov 2026 02:26:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
+      <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</guid>
+      <description>[Score: 95] AWSが、AIエージェント向けに強力な隔離環境とほぼネイティブなEC2性能を提供する軽量仮想マシン「AWS Nitro Sandboxes」の提供を開始しました。 / AIが生成する信頼できないコードを実行する機会が増える中、従来のコンテナ型仮想化では不十分なセキュリティ分離が課題でした。 / AWS Nitro Sandboxesは、AWS Nitro Systemを基盤とし、ハードウェアレベルでの強力なセキュリティと分離を実現しつつ、コンテナのような軽量性を提供します。 [実務示唆: AIエージェントや信頼できないコードを実行するシステムを構築する際は、AWS Nitro Sandboxesを活用し、セキュリティとパフォーマンスを両立させた安全な実行環境を検討しましょう。] (Source: Publickey)</description>
+      <pubDate>Wed, 11 Nov 2026 15:04:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Apache HTTP Serverに深刻なRCE脆弱性</title>
+      <link>https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability</link>
+      <guid isPermaLink="false">https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability</guid>
+      <description>[Score: 95] Apache HTTP ServerのHTTP/2モジュール(mod_http2)に、深刻な同期脆弱性(CVE-2026-119618)が発見されました。 / この脆弱性は、共有リソース処理における競合状態に起因し、リモートの認証されていない攻撃者がヒープメモリを破損させ、任意のコード実行(RCE)を可能にする可能性があります。 / Wizのデータによると、クラウド環境の64%がこの脆弱性の影響を受けるリソースを抱えているとのことです。 [実務示唆: Apache HTTP Serverのユーザーは、直ちにmod_http2モジュールの更新または無効化を検討し、システムへのパッチ適用を最優先で実施すべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 02:11:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Software Factoryの先へ：全社の仕事をAI-NativeにするUbieの内製クラウドエージェント基盤</title>
+      <link>https://zenn.dev/ubie_dev/articles/45501469c9c044</link>
+      <guid isPermaLink="false">https://zenn.dev/ubie_dev/articles/45501469c9c044</guid>
+      <description>[Score: 95] Ubieが内製するクラウドエージェント基盤「Remoco」とエンジニアリングエージェント「Uvin」について紹介しています。 / プロダクト開発だけでなく、全社の仕事をAI-Nativeにするための基盤と位置づけ、Google CloudとTemporalを中心としたアーキテクチャを採用。 / エージェントハーネスをサンドボックスの外に置き、ツールとしてサンドボックスを呼び出す「Sandbox-as-a-tool」構成の利点や、耐久性の高いエージェントハーネス「Pi Durable」の採用について解説しています。 [実務示唆: AIエージェントを全社的に活用する際は、耐久性のあるエージェントハーネスと、サンドボックスをツールとして利用する「Sandbox-as-a-tool」構成を検討し、安全かつ効率的な運用を目指しましょう。] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 00:44:52 +0000</pubDate>
     </item>
     <item>
       <title>ISUCON2026で優勝しました（準備編）</title>
@@ -77,74 +98,53 @@
       <pubDate>Thu, 12 Nov 2026 02:26:59 +0000</pubDate>
     </item>
     <item>
-      <title>AI「テスト通りました」← これ､本当？ Stryker でテストの穴を塞いだ話</title>
-      <link>https://qiita.com/Dingu-suke/items/b5318ef2040a9f59224a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Dingu-suke/items/b5318ef2040a9f59224a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AIが生成したテストが本当にコードの品質を保証しているか疑問視される中、ミューテーションテストが注目されています。 / Strykerはコードを意図的に破壊（変異）し、テストがその破壊を検知できるかを検証するツールです。 / これにより、テストのカバレッジだけでは見つけられないテストの弱点や穴を特定し、より堅牢なテストスイートを構築できます。 [実務示唆: AI生成テストの品質保証のため、Strykerなどのミューテーションテストツールを導入し、テストの網羅性と堅牢性を定期的に検証することを推奨します。] [GitHub: stryker-mutator/stryker] (Source: Qiita)</description>
-      <pubDate>Mon, 09 Nov 2026 07:45:09 +0000</pubDate>
+      <title>独占 | NvidiaはCEOジェンスン・フアンを解任する準備をしている</title>
+      <link>https://www.reddit.com/r/technology/comments/1xtvw5q/exclusive_nvidia_is_preparing_to_oust_ceo_jensen/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xtvw5q/exclusive_nvidia_is_preparing_to_oust_ceo_jensen/</guid>
+      <description>[Score: 90] NvidiaがCEOのジェンスン・フアン氏を解任する準備をしているという独占報道です。 / もしこれが事実であれば、Nvidiaの経営戦略や株価に大きな影響を与える可能性があります。 / フアン氏はNvidiaの成長を牽引してきた人物であり、その交代は半導体業界全体にも波紋を広げるでしょう。 [実務示唆: NvidiaのCEO交代に関する報道は、半導体市場やAI関連技術の動向に大きな影響を与える可能性があるため、関連ニュースを継続的に追跡し、投資やビジネス戦略への影響を評価すること。] (Source: Reddit)</description>
+      <pubDate>Wed, 11 Nov 2026 22:36:18 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフト、.NET 11正式リリース。C#に共用型を導入、JITやAOTコンパイラの高速化、コマンドラインツール強化など新機能</title>
-      <link>https://www.publickey1.jp/blog/26/net_11cjitaot.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_11cjitaot.html</guid>
-      <description>[Score: 85] マイクロソフトがオンラインイベント「.NET Conf 2026」で、統合アプリケーションフレームワークの最新版「.NET 11」を正式リリースしました。 / C# 15での共用型の導入、JITおよびAOTコンパイラの高速化、開発者ツールの強化など、多岐にわたる新機能と性能向上が含まれています。 / Web、モバイル、デスクトップ、AIアプリ開発に対応し、クロスプラットフォーム開発をさらに強力にサポートします。 [実務示唆: .NET 11へのアップグレードを検討し、C# 15の新機能やコンパイラの高速化を活用して開発効率とアプリケーション性能の向上を図るべきです。] [GitHub: dotnet/runtime] (Source: Publickey)</description>
-      <pubDate>Tue, 10 Nov 2026 17:58:43 +0000</pubDate>
+      <title>NVIDIAがCEO交代を発表</title>
+      <link>https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition</link>
+      <guid isPermaLink="false">https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition</guid>
+      <description>[Score: 90] NVIDIAは、長年CEOを務めたジェンスン・フアン氏が社長兼CEOおよび取締役を辞任したことを発表しました。 / 暫定CEOには、現CFOのコレット・クレス氏が就任し、後任のCEOを社内外から選定するとのことです。 / この人事は、NVIDIAの経営体制に大きな変化をもたらす可能性があります。 [実務示唆: NVIDIAの経営層の変更は、今後の製品戦略や市場動向に影響を与える可能性があるため、同社の発表や市場の反応を注視すべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 13:52:29 +0000</pubDate>
     </item>
     <item>
-      <title>ティム・ピーターズ氏が死去</title>
-      <link>https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028</link>
-      <guid isPermaLink="false">https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028</guid>
-      <description>[Score: 85] Pythonコミュニティに多大な影響を与えたTim Peters氏が、今年の7月15日に亡くなりました。 / 彼は「Pythonの禅」（PEP 20）の著者として最もよく知られ、Pythonの初期開発においてGuido van Rossum氏のメンターであり共同設計者でした。 / Timsortアルゴリズムの開発や、Pythonメーリングリストでの丁寧な回答を通じて、Pythonの発展に大きく貢献しました。 [実務示唆: Python開発者は、Tim Peters氏の貢献を再認識し、彼の設計哲学やTimsortのようなアルゴリズムの理解を深めることで、より良いコードを書くヒントを得られる。] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 07:03:17 +0000</pubDate>
+      <title>Node.js 22 / 24 / 26 の脆弱性、自分のアプリが影響を受けるか確認する方法【2026年11月】</title>
+      <link>https://zenn.dev/rakko_inc/articles/nodejs-security-nov-2026-proxy</link>
+      <guid isPermaLink="false">https://zenn.dev/rakko_inc/articles/nodejs-security-nov-2026-proxy</guid>
+      <description>[Score: 90] Node.js 22・24・26系のセキュリティリリースで修正された脆弱性について解説しています。 / 深刻度Highの7件はHTTP/2とTLS処理に関するもので、ロードバランサーやnginxの後ろでNode.jsを動かす構成では影響を受けにくいことを説明。 / 自身のアプリがこれらの脆弱性の影響を受けるかどうかの判断基準を提示しています。 [実務示唆: Node.jsの脆弱性対応では、ロードバランサーやリバースプロキシの有無を確認し、TLS/HTTP/2終端がNode.js自身か手前の機器かによって影響範囲を判断しましょう。] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 02:31:30 +0000</pubDate>
     </item>
     <item>
-      <title>Real2Sim2Realの現在地：現場スキャンからロボット検証環境へ</title>
-      <link>https://zenn.dev/kudan_jp/articles/a0cb75384f4a83</link>
-      <guid isPermaLink="false">https://zenn.dev/kudan_jp/articles/a0cb75384f4a83</guid>
-      <description>[Score: 85] 自律移動ロボット開発において、実際の現場をスキャンしてシミュレーション環境を構築するReal2Sim2Realのアプローチが一般的になっています。 / 現場スキャンからロボットが動ける環境への変換、検証条件の多様化、計算効率、構築コストが主要な論点です。 / Kudanでは、このプロセスにおける技術動向を整理し、特に構築コスト削減のためにLLMやVLMの活用が進んでいる現状を解説しています。 [実務示唆: 自律移動ロボット開発者は、Real2Sim2Realの各ステップにおける最新技術動向を把握し、特にLLM/VLMを活用したシミュレーション環境構築の自動化を検討すべきです。] (Source: Zenn)</description>
-      <pubDate>Wed, 11 Nov 2026 09:46:24 +0000</pubDate>
+      <title>無印良品「21年までクレカ番号で顧客を識別していた」 “全ケタ保有＆漏えい“巡り謝罪 削除漏れなぜ発生</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/12/2000003144/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/12/2000003144/</guid>
+      <description>[Score: 90] 無印良品が不正アクセスによる顧客情報流出で謝罪し、2021年までクレジットカード番号全桁を顧客識別に使用し、削除漏れがあったことを認めました。 / 本来削除すべきカード番号が保管され、マスキングや暗号化もされていなかったことが判明し、データ運用管理の不備が指摘されています。 / リスト型攻撃とは異なる経路でクレジットカード情報へのアクセスがあった可能性も示唆されており、原因究明と情報管理体制の見直しが急務です。 [実務示唆: 企業は個人情報、特にクレジットカード情報の保持・削除ポリシーを厳格化し、PCI DSS準拠や非保持化の徹底、定期的な監査と従業員教育を強化する。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 12 Nov 2026 08:34:31 +0000</pubDate>
     </item>
     <item>
-      <title>ヘルスケアAIoTシステムの設計：RFIDとセンサーから物理的なAIアクションまで</title>
-      <link>https://dev.to/isadora_gift/designing-healthcare-aiot-systems-from-rfid-and-sensors-to-physical-ai-actions-450p</link>
-      <guid isPermaLink="false">https://dev.to/isadora_gift/designing-healthcare-aiot-systems-from-rfid-and-sensors-to-physical-ai-actions-450p</guid>
-      <description>[Score: 85] ヘルスケア分野におけるAIoTシステムは、デジタルシステムと物理的資産・プロセスを連携させる重要な課題に直面しています。 / RFIDや各種センサーを用いて医療機器や検体などを識別・監視し、その情報をAIが分析します。 / これにより、資産管理、状態監視、運用応答の自動化など、医療現場の効率と安全性を向上させます。 [実務示唆: ヘルスケア分野のエンジニアは、RFIDやセンサー技術、AIoTプラットフォームの知識を深め、物理的な医療現場とデジタルシステムを連携させるソリューション開発に取り組むべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 02:28:05 +0000</pubDate>
+      <title>そのヤバいDockerイメージをいつまで使うのか</title>
+      <link>https://scrapbox.io/keroxp/%E3%81%9D%E3%81%AE%E3%83%A4%E3%83%90%E3%81%84Docker%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%82%92%E3%81%84%E3%81%A4%E3%81%BE%E3%81%A7%E4%BD%BF%E3%81%86%E3%81%AE%E3%81%8B</link>
+      <guid isPermaLink="false">https://scrapbox.io/keroxp/%E3%81%9D%E3%81%AE%E3%83%A4%E3%83%90%E3%81%84Docker%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%82%92%E3%81%84%E3%81%A4%E3%81%BE%E3%81%A7%E4%BD%BF%E3%81%86%E3%81%AE%E3%81%8B</guid>
+      <description>[Score: 90] Dockerコンテナは環境構築やデプロイの容易さから広く普及していますが、「Dockerだから安全」という神話は誤りです。 / コンテナはホスト昇格の脆弱性がないとしても、サーバー・アプリケーションレベルの危険性は解決されていません。 / RCE攻撃においてシェルスクリプトは最も単純かつ強力なツールであり、本番環境でのシェル利用は他のコマンド実行を助長し、予期せぬ挙動を引き起こす危険性があります。 [実務示唆: 本番環境のDockerイメージには必要最小限のツールのみを含め、シェルや不要なコマンドを削除し、PATH環境変数を厳格に管理してRCEリスクを低減しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 12 Nov 2026 10:43:51 +0000</pubDate>
     </item>
     <item>
-      <title>WEBで画像を破くツールを作った</title>
-      <link>https://qiita.com/ishi720/items/6d13fdce2a31fe630840?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ishi720/items/6d13fdce2a31fe630840?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Svelteを使って、画像をなぞった線に沿って破れるWebアプリが開発されました。 / 破れた紙の破片（ピース）を多角形ではなく、「元の紙」と「破り線のどちら側か」の組み合わせで表現する独自のアプローチを採用。 / Canvasのclip()機能を活用することで、複雑な多角形交差計算を避け、効率的にピースの形状を描画する仕組みを解説しています。 [実務示唆: Canvasのclip()機能やSvelteの活用事例として、複雑な図形処理を効率的に実装する際の参考になるため、同様の描画処理を検討する際に参考にすべき。] (Source: Qiita)</description>
-      <pubDate>Sun, 08 Nov 2026 21:44:47 +0000</pubDate>
+      <title>GoogleがエージェントスタックをCNCFに提供し、Agent Substrateが1.0に到達</title>
+      <link>https://dev.to/neticslabs/agent-substrate-reaches-10-as-google-hands-its-agent-stack-to-the-cncf-3i08</link>
+      <guid isPermaLink="false">https://dev.to/neticslabs/agent-substrate-reaches-10-as-google-hands-its-agent-stack-to-the-cncf-3i08</guid>
+      <description>[Score: 90] GoogleがAIエージェントスタック「Agent Substrate」をCNCFに提供し、バージョン1.0に到達しました。 / Agent Substrateは、エージェントの待機中にリソースを占有する従来のKubernetes Podの問題を解決します。 / ステートフルなセッションとコンピュートを分離し、リソース効率とスケーラビリティを向上させる設計が特徴です。 [実務示唆: AIエージェントを大規模に運用する開発者は、Agent Substrateのアーキテクチャを理解し、リソース効率とセキュリティ向上に役立つか評価を推奨する。] (Source: Dev.to)</description>
+      <pubDate>Thu, 12 Nov 2026 14:00:03 +0000</pubDate>
     </item>
     <item>
-      <title>「.NET MAUI 11」がついにXamarin由来のMonoランタイムから脱却、CoreCLRに統一</title>
-      <link>https://www.publickey1.jp/blog/26/net_maui_11xamarinmonocoreclr.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_maui_11xamarinmonocoreclr.html</guid>
-      <description>[Score: 80] マイクロソフトは.NET 11と同時にリリースされたUIフレームワーク「.NET MAUI 11」で、長らく使用されてきたXamarin由来のMonoランタイムから脱却しました。 / これにより、iOS、Android、Mac Catalystを含むすべてのプラットフォームで.NET標準のランタイムであるCoreCLRに統一されます。 / ランタイムの統一により、開発の一貫性が向上し、性能や安定性の改善が期待されます。 [実務示唆: .NET MAUI 11への移行を検討し、CoreCLRへの統一による性能向上や開発体験の改善を評価し、既存のXamarinベースのプロジェクトをアップデートする計画を立てるべきです。] [GitHub: dotnet/maui] (Source: Publickey)</description>
-      <pubDate>Tue, 10 Nov 2026 17:51:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>EarthRecord: 40年間の衛星画像からマルチモーダルエージェントによる土地変化をピクセルから検出</title>
-      <link>https://arxiv.org/abs/2611.12934</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.12934</guid>
-      <description>[Score: 80] 本記事は、40年以上にわたる衛星画像データを用いて、マルチモーダルAIエージェントが土地変化をピクセルレベルで検出する研究論文です。 / 地球規模の環境モニタリングや土地利用変化の分析にAIを応用する可能性を探っています。 / arXivLabsを通じて公開されており、大規模な地理空間データ解析におけるAIの進化を示しています。 (Source: arXiv cs.AI)</description>
-      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>OpenCodeを拡張して、複数の担当と定期実行をひとつのチャットにまとめる「いちょまる」を作った</title>
-      <link>https://zenn.dev/theoj/articles/opencode-development-log</link>
-      <guid isPermaLink="false">https://zenn.dev/theoj/articles/opencode-development-log</guid>
-      <description>[Score: 80] AIに依頼するタスクが増える中で、会話の管理や進捗追跡の煩雑さを解消するため、OpenCodeを拡張した「いちょまる」が開発されました。 / 「いちょまる」は、利用者が常に同じ親セッションに話しかけ、親が子セッション（担当）に仕事を振り分け、途中経過や結果を利用者に伝える仕組みです。 / 定期実行機能も備え、既存のOpenCode機能を活用しつつ、ひとつの窓口から複数のAIタスクを効率的に管理することを目指しています。 [実務示唆: AIエージェントを活用した開発において、タスク管理の効率化は重要であり、OpenCodeのような既存ツールを拡張して独自のAIワークフローを構築するアプローチは参考になります。] [GitHub: opencode-ai/opencode] (Source: Zenn)</description>
-      <pubDate>Wed, 11 Nov 2026 12:38:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Arnisは地球上のあらゆる場所をMinecraftの世界に変える</title>
-      <link>https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/</guid>
-      <description>[Score: 78] Arnisは、OpenStreetMapなどの現実世界のデータを利用して、地球上のあらゆる場所をMinecraftの世界に変換するオープンソースプロジェクトです。 / 開発者のLouis Erbkamm氏が2022年に開始し、GitHubから90万回近くダウンロードされ、約70人のコントリビューターがいます。 / 地理空間データとゲームを組み合わせることで、ユーザーは現実の場所をMinecraft内で自由に探索できるようになります。 (Source: GitHub Blog)</description>
-      <pubDate>Tue, 03 Nov 2026 16:00:00 +0000</pubDate>
+      <title>DynamoDBの楽観的ロック：Lambdaとバージョン番号による実装</title>
+      <link>https://dev.to/sascha-ms/dynamodb-optimistic-locking-version-numbers-with-lambda-1foc</link>
+      <guid isPermaLink="false">https://dev.to/sascha-ms/dynamodb-optimistic-locking-version-numbers-with-lambda-1foc</guid>
+      <description>[Score: 88] DynamoDBにおける楽観的ロックは、複数のリクエストが同時に同じアイテムを更新しようとした際に発生する「ロストアップデート」問題を解決する実用的な手法です。 / この手法では、アイテムにバージョン番号を保存し、書き込み時にそのバージョン番号が読み込み時と一致する場合のみ更新を許可します。 / Lambda環境では並列実行により衝突が発生しやすいため、バージョン番号と条件付き書き込み、そして再読み込みを伴うリトライ処理が重要となります。 [実務示唆: DynamoDBとLambdaを使用するアプリケーションでデータの整合性を確保するため、楽観的ロックパターンを導入し、バージョン番号とConditionalCheckFailedExceptionハンドリングを実装しましょう。] (Source: Dev.to)</description>
+      <pubDate>Thu, 12 Nov 2026 14:00:07 +0000</pubDate>
     </item>
   </channel>
 </rss>

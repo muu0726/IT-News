@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-12T11:31:34.700109+09:00",
-  "total_count": 47,
-  "success_count": 35,
-  "error_count": 12,
+  "generated_at": "2026-11-12T23:00:13.455693+09:00",
+  "total_count": 73,
+  "success_count": 67,
+  "error_count": 6,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
     {
@@ -29,7 +29,9 @@
       "new_at": "2026-11-12T11:31:34.700109+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": true,
-      "hatena_count": 80
+      "hatena_count": 163,
+      "topic_group": 1,
+      "topic_size": 3
     },
     {
       "title": "Gitのセキュリティ脆弱性が発表されました",
@@ -78,7 +80,7 @@
       "new_at": "2026-11-12T11:31:34.700109+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "自己修復型コーディングエージェント：MCPでプロダクショングレードのハーネスループを構築する方法",
@@ -104,6 +106,75 @@
       "hatena_count": 0
     },
     {
+      "title": "AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始",
+      "url": "https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html",
+      "source": "Publickey",
+      "published": "2026-11-11T15:04:47+00:00",
+      "reading_min": 6,
+      "summary": "AWSが、AIエージェント向けに強力な隔離環境とほぼネイティブなEC2性能を提供する軽量仮想マシン「AWS Nitro Sandboxes」の提供を開始しました。\nAIが生成する信頼できないコードを実行する機会が増える中、従来のコンテナ型仮想化では不十分なセキュリティ分離が課題でした。\nAWS Nitro Sandboxesは、AWS Nitro Systemを基盤とし、ハードウェアレベルでの強力なセキュリティと分離を実現しつつ、コンテナのような軽量性を提供します。",
+      "actionable_takeaway": "AIエージェントや信頼できないコードを実行するシステムを構築する際は、AWS Nitro Sandboxesを活用し、セキュリティとパフォーマンスを両立させた安全な実行環境を検討しましょう。",
+      "tags": [
+        "AWS",
+        "AI",
+        "セキュリティ"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "AIエージェントの普及に伴うセキュリティ課題に対し、AWSがハードウェアレベルで解決策を提示したことは、今後のAI開発の安全性と信頼性を高める上で極めて重要であるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T11:31:34.700109+09:00",
+      "is_hot": false,
+      "hatena_count": 21
+    },
+    {
+      "title": "Apache HTTP Serverに深刻なRCE脆弱性",
+      "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+      "source": "Hacker News",
+      "published": "2026-11-12T02:11:11+00:00",
+      "hn_score": 281,
+      "hn_comments": 136,
+      "reading_min": 2,
+      "summary": "Apache HTTP ServerのHTTP/2モジュール(mod_http2)に、深刻な同期脆弱性(CVE-2026-119618)が発見されました。\nこの脆弱性は、共有リソース処理における競合状態に起因し、リモートの認証されていない攻撃者がヒープメモリを破損させ、任意のコード実行(RCE)を可能にする可能性があります。\nWizのデータによると、クラウド環境の64%がこの脆弱性の影響を受けるリソースを抱えているとのことです。",
+      "actionable_takeaway": "Apache HTTP Serverのユーザーは、直ちにmod_http2モジュールの更新または無効化を検討し、システムへのパッチ適用を最優先で実施すべきです。",
+      "tags": [
+        "Apache",
+        "脆弱性",
+        "RCE",
+        "セキュリティ"
+      ],
+      "category": "セキュリティ",
+      "score": 95,
+      "score_reason": "Apache HTTP Serverは広く利用されており、RCE脆弱性は非常に深刻な影響をもたらすため、緊急性が高く、重要度も非常に高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "Software Factoryの先へ：全社の仕事をAI-NativeにするUbieの内製クラウドエージェント基盤",
+      "url": "https://zenn.dev/ubie_dev/articles/45501469c9c044",
+      "source": "Zenn",
+      "published": "2026-11-12T00:44:52+00:00",
+      "reading_min": 10,
+      "summary": "Ubieが内製するクラウドエージェント基盤「Remoco」とエンジニアリングエージェント「Uvin」について紹介しています。\nプロダクト開発だけでなく、全社の仕事をAI-Nativeにするための基盤と位置づけ、Google CloudとTemporalを中心としたアーキテクチャを採用。\nエージェントハーネスをサンドボックスの外に置き、ツールとしてサンドボックスを呼び出す「Sandbox-as-a-tool」構成の利点や、耐久性の高いエージェントハーネス「Pi Durable」の採用について解説しています。",
+      "actionable_takeaway": "AIエージェントを全社的に活用する際は、耐久性のあるエージェントハーネスと、サンドボックスをツールとして利用する「Sandbox-as-a-tool」構成を検討し、安全かつ効率的な運用を目指しましょう。",
+      "tags": [
+        "AI",
+        "クラウドエージェント",
+        "Temporal"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "AIエージェントを単なる開発ツールに留めず、全社的な業務変革の基盤として捉え、具体的なアーキテクチャと技術選定の思想が詳細に解説されており、先進性と実用性が非常に高いため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 132
+    },
+    {
       "title": "ISUCON2026で優勝しました（準備編）",
       "url": "https://zenn.dev/luvtechno/articles/isucon2026-preparation",
       "source": "Zenn",
@@ -123,7 +194,7 @@
       "new_at": "2026-11-11T21:58:51.554394+09:00",
       "first_seen": "2026-11-11T21:58:51.554394+09:00",
       "is_hot": false,
-      "hatena_count": 478,
+      "hatena_count": 494,
       "is_prev_seen": true
     },
     {
@@ -220,7 +291,7 @@
       "new_at": "2026-11-12T11:31:34.700109+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 12
     },
     {
       "title": "ClaudeにApp StoreとGoogle Playのライブレビューを1つのMCPサーバーで提供した",
@@ -241,6 +312,165 @@
       "analysis_status": "ok",
       "new_at": "2026-11-12T11:31:34.700109+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "独占 | NvidiaはCEOジェンスン・フアンを解任する準備をしている",
+      "url": "https://www.reddit.com/r/technology/comments/1xtvw5q/exclusive_nvidia_is_preparing_to_oust_ceo_jensen/",
+      "source": "Reddit",
+      "published": "2026-11-11T22:36:18+00:00",
+      "summary": "NvidiaがCEOのジェンスン・フアン氏を解任する準備をしているという独占報道です。\nもしこれが事実であれば、Nvidiaの経営戦略や株価に大きな影響を与える可能性があります。\nフアン氏はNvidiaの成長を牽引してきた人物であり、その交代は半導体業界全体にも波紋を広げるでしょう。",
+      "actionable_takeaway": "NvidiaのCEO交代に関する報道は、半導体市場やAI関連技術の動向に大きな影響を与える可能性があるため、関連ニュースを継続的に追跡し、投資やビジネス戦略への影響を評価すること。",
+      "tags": [
+        "Nvidia",
+        "CEO",
+        "半導体"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 90,
+      "score_reason": "NvidiaはAI・半導体業界の主要プレイヤーであり、CEOの交代は企業の将来性や市場全体に極めて大きな影響を与えるため、非常に重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T11:31:34.700109+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 3,
+      "topic_size": 3
+    },
+    {
+      "title": "NVIDIAがCEO交代を発表",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "source": "Hacker News",
+      "published": "2026-11-12T13:52:29+00:00",
+      "hn_score": 82,
+      "hn_comments": 10,
+      "reading_min": 2,
+      "summary": "NVIDIAは、長年CEOを務めたジェンスン・フアン氏が社長兼CEOおよび取締役を辞任したことを発表しました。\n暫定CEOには、現CFOのコレット・クレス氏が就任し、後任のCEOを社内外から選定するとのことです。\nこの人事は、NVIDIAの経営体制に大きな変化をもたらす可能性があります。",
+      "actionable_takeaway": "NVIDIAの経営層の変更は、今後の製品戦略や市場動向に影響を与える可能性があるため、同社の発表や市場の反応を注視すべきです。",
+      "tags": [
+        "NVIDIA",
+        "経営",
+        "半導体"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 90,
+      "score_reason": "NVIDIAはAI・半導体業界のリーダーであり、CEO交代は業界全体に大きな影響を与える可能性があるため、非常に重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 3,
+      "topic_size": 3
+    },
+    {
+      "title": "Node.js 22 / 24 / 26 の脆弱性、自分のアプリが影響を受けるか確認する方法【2026年11月】",
+      "url": "https://zenn.dev/rakko_inc/articles/nodejs-security-nov-2026-proxy",
+      "source": "Zenn",
+      "published": "2026-11-12T02:31:30+00:00",
+      "reading_min": 7,
+      "summary": "Node.js 22・24・26系のセキュリティリリースで修正された脆弱性について解説しています。\n深刻度Highの7件はHTTP/2とTLS処理に関するもので、ロードバランサーやnginxの後ろでNode.jsを動かす構成では影響を受けにくいことを説明。\n自身のアプリがこれらの脆弱性の影響を受けるかどうかの判断基準を提示しています。",
+      "actionable_takeaway": "Node.jsの脆弱性対応では、ロードバランサーやリバースプロキシの有無を確認し、TLS/HTTP/2終端がNode.js自身か手前の機器かによって影響範囲を判断しましょう。",
+      "tags": [
+        "Node.js",
+        "セキュリティ",
+        "脆弱性"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 90,
+      "score_reason": "Node.jsの最新脆弱性に関する具体的な情報と、自身のシステムへの影響を判断するための明確なガイドラインが提供されており、実務におけるセキュリティ対応に直結するため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "無印良品「21年までクレカ番号で顧客を識別していた」 “全ケタ保有＆漏えい“巡り謝罪 削除漏れなぜ発生",
+      "url": "https://www.itmedia.co.jp/news/article/2611/12/2000003144/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-12T08:34:31+00:00",
+      "reading_min": 4,
+      "summary": "無印良品が不正アクセスによる顧客情報流出で謝罪し、2021年までクレジットカード番号全桁を顧客識別に使用し、削除漏れがあったことを認めました。\n本来削除すべきカード番号が保管され、マスキングや暗号化もされていなかったことが判明し、データ運用管理の不備が指摘されています。\nリスト型攻撃とは異なる経路でクレジットカード情報へのアクセスがあった可能性も示唆されており、原因究明と情報管理体制の見直しが急務です。",
+      "actionable_takeaway": "企業は個人情報、特にクレジットカード情報の保持・削除ポリシーを厳格化し、PCI DSS準拠や非保持化の徹底、定期的な監査と従業員教育を強化する。",
+      "tags": [
+        "セキュリティ",
+        "情報漏洩",
+        "データ管理"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "クレジットカード情報の全桁保持と漏洩は重大なセキュリティインシデントであり、多くの企業にとってデータ管理と法令遵守の重要性を再認識させるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 438
+    },
+    {
+      "title": "そのヤバいDockerイメージをいつまで使うのか",
+      "url": "https://scrapbox.io/keroxp/%E3%81%9D%E3%81%AE%E3%83%A4%E3%83%90%E3%81%84Docker%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%82%92%E3%81%84%E3%81%A4%E3%81%BE%E3%81%A7%E4%BD%BF%E3%81%86%E3%81%AE%E3%81%8B",
+      "source": "はてなブックマーク",
+      "published": "2026-11-12T10:43:51+00:00",
+      "reading_min": 6,
+      "summary": "Dockerコンテナは環境構築やデプロイの容易さから広く普及していますが、「Dockerだから安全」という神話は誤りです。\nコンテナはホスト昇格の脆弱性がないとしても、サーバー・アプリケーションレベルの危険性は解決されていません。\nRCE攻撃においてシェルスクリプトは最も単純かつ強力なツールであり、本番環境でのシェル利用は他のコマンド実行を助長し、予期せぬ挙動を引き起こす危険性があります。",
+      "actionable_takeaway": "本番環境のDockerイメージには必要最小限のツールのみを含め、シェルや不要なコマンドを削除し、PATH環境変数を厳格に管理してRCEリスクを低減しましょう。",
+      "tags": [
+        "Docker",
+        "セキュリティ",
+        "RCE"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 90,
+      "score_reason": "Docker利用におけるRCEリスクとシェルの危険性について具体的に解説しており、実務に直結するセキュリティ対策の重要性を強く訴えているため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 56
+    },
+    {
+      "title": "GoogleがエージェントスタックをCNCFに提供し、Agent Substrateが1.0に到達",
+      "url": "https://dev.to/neticslabs/agent-substrate-reaches-10-as-google-hands-its-agent-stack-to-the-cncf-3i08",
+      "source": "Dev.to",
+      "published": "2026-11-12T14:00:03+00:00",
+      "reading_min": 7,
+      "summary": "GoogleがAIエージェントスタック「Agent Substrate」をCNCFに提供し、バージョン1.0に到達しました。\nAgent Substrateは、エージェントの待機中にリソースを占有する従来のKubernetes Podの問題を解決します。\nステートフルなセッションとコンピュートを分離し、リソース効率とスケーラビリティを向上させる設計が特徴です。",
+      "actionable_takeaway": "AIエージェントを大規模に運用する開発者は、Agent Substrateのアーキテクチャを理解し、リソース効率とセキュリティ向上に役立つか評価を推奨する。",
+      "tags": [
+        "AI",
+        "Kubernetes",
+        "CNCF"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "GoogleがAIエージェントの基盤技術をCNCFに提供したことは、AIエージェント開発の標準化と普及を加速させる可能性があり、業界への影響が大きいため高スコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "DynamoDBの楽観的ロック：Lambdaとバージョン番号による実装",
+      "url": "https://dev.to/sascha-ms/dynamodb-optimistic-locking-version-numbers-with-lambda-1foc",
+      "source": "Dev.to",
+      "published": "2026-11-12T14:00:07+00:00",
+      "reading_min": 29,
+      "summary": "DynamoDBにおける楽観的ロックは、複数のリクエストが同時に同じアイテムを更新しようとした際に発生する「ロストアップデート」問題を解決する実用的な手法です。\nこの手法では、アイテムにバージョン番号を保存し、書き込み時にそのバージョン番号が読み込み時と一致する場合のみ更新を許可します。\nLambda環境では並列実行により衝突が発生しやすいため、バージョン番号と条件付き書き込み、そして再読み込みを伴うリトライ処理が重要となります。",
+      "actionable_takeaway": "DynamoDBとLambdaを使用するアプリケーションでデータの整合性を確保するため、楽観的ロックパターンを導入し、バージョン番号とConditionalCheckFailedExceptionハンドリングを実装しましょう。",
+      "tags": [
+        "DynamoDB",
+        "Lambda",
+        "楽観的ロック"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 88,
+      "score_reason": "DynamoDBとLambdaというAWSの主要サービスにおけるデータ整合性問題の解決策を具体的に提示しており、多くの開発者にとって直接的な実務的価値があるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -290,7 +520,7 @@
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
       "hatena_count": 17,
-      "topic_group": 1,
+      "topic_group": 2,
       "topic_size": 2,
       "is_prev_seen": true
     },
@@ -299,8 +529,8 @@
       "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
       "source": "Hacker News",
       "published": "2026-11-11T07:03:17+00:00",
-      "hn_score": 886,
-      "hn_comments": 94,
+      "hn_score": 1300,
+      "hn_comments": 153,
       "reading_min": 15,
       "summary": "Pythonコミュニティに多大な影響を与えたTim Peters氏が、今年の7月15日に亡くなりました。\n彼は「Pythonの禅」（PEP 20）の著者として最もよく知られ、Pythonの初期開発においてGuido van Rossum氏のメンターであり共同設計者でした。\nTimsortアルゴリズムの開発や、Pythonメーリングリストでの丁寧な回答を通じて、Pythonの発展に大きく貢献しました。",
       "actionable_takeaway": "Python開発者は、Tim Peters氏の貢献を再認識し、彼の設計哲学やTimsortのようなアルゴリズムの理解を深めることで、より良いコードを書くヒントを得られる。",
@@ -338,7 +568,7 @@
       "new_at": "2026-11-12T11:31:34.700109+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "ヘルスケアAIoTシステムの設計：RFIDとセンサーから物理的なAIアクションまで",
@@ -359,6 +589,121 @@
       "analysis_status": "ok",
       "new_at": "2026-11-12T11:31:34.700109+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に",
+      "url": "https://www.publickey1.jp/blog/26/playwrightbun.html",
+      "source": "Publickey",
+      "published": "2026-11-11T15:07:35+00:00",
+      "reading_min": 6,
+      "summary": "Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンv1.65.0でBunでのテストランナー実行を正式にサポートしました。\nこれにより、PlaywrightのテストランナーはNode.jsに加えてBun環境でも動作可能になります。\nBunがTypeScriptテストファイルを直接トランスパイルするため、Babelやコンパイルキャッシュが不要となり、システムがシンプルになる利点があります。",
+      "actionable_takeaway": "PlaywrightユーザーはBunを導入することで、TypeScriptテストのトランスパイルプロセスを簡素化し、テスト実行の高速化や開発環境の効率化を検討しましょう。",
+      "github_repo": "microsoft/playwright",
+      "tags": [
+        "Playwright",
+        "Bun",
+        "TypeScript"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 85,
+      "score_reason": "主要なテストフレームワークが新しいJavaScriptランタイムをサポートしたことは、開発効率向上と技術スタック選択肢の拡大に繋がり、Web開発者にとって重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T11:31:34.700109+09:00",
+      "is_hot": false,
+      "hatena_count": 32
+    },
+    {
+      "title": "AIエージェントが決定を勝手に変えてしまった5つのパターンと工夫",
+      "url": "https://zenn.dev/dress_code/articles/568fd547315abe",
+      "source": "Zenn",
+      "published": "2026-11-12T03:00:05+00:00",
+      "reading_min": 8,
+      "summary": "AIエージェントがユーザーの意図しない決定を下してしまう5つのパターンと、それに対する工夫を紹介しています。\n仕様に関する質問が決定として記録されたり、了承していない提案が決定済みとして扱われたりする事例を具体的に解説。\nAIとの協業において、決定事項の記録方法や確認プロセスを改善することの重要性を指摘しています。",
+      "actionable_takeaway": "AIエージェントとの協業では、決定事項の記録方法を明確にし、エージェントの提案を安易に決定としないよう、人間が最終確認するプロセスを徹底しましょう。",
+      "tags": [
+        "AIエージェント",
+        "プロンプトエンジニアリング",
+        "開発プロセス"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIエージェントの活用が広がる中で、その「勝手な決定」という具体的な課題と、それに対する実践的な対策が提示されており、多くの開発者にとって有益な情報であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】",
+      "url": "https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-11T23:39:20+00:00",
+      "reading_min": 23,
+      "summary": "AWS Emulatorは、AWSアカウントなしでローカルやCI上でAWS SDK/CLIの呼び出しをエミュレートするツールです。\n本記事では、特にCDK/TerraformなどのIaCツールがAWS Emulator上でどこまで動作するかを検証しています。\n公式ドキュメントではIaCツールへの対応はサービスによって異なるとされており、その実態をWindows 11 + Docker環境で試した結果がまとめられています。",
+      "actionable_takeaway": "AWS Emulatorの導入を検討する際は、利用するAWSサービスがIaCツールでどこまでサポートされているか、忠実度テストの結果を確認し、事前に検証すること。",
+      "tags": [
+        "AWS",
+        "Emulator",
+        "IaC"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "AWS Emulatorは開発・テスト効率を大幅に向上させる可能性があり、IaCとの連携検証は実務での導入判断に直結するため重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 1,
+      "topic_size": 3
+    },
+    {
+      "title": "AWS Emulator がリリースされたので試してみた | DevelopersIO",
+      "url": "https://dev.classmethod.jp/articles/aws-emulator-local-try/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-12T03:47:53+00:00",
+      "reading_min": 7,
+      "summary": "AWSがローカル用のエミュレータ「AWS Emulator」をリリースし、Dockerで起動してS3、SQS、DynamoDB、Lambdaの基本操作を試した記事です。\nOSSのローカルエミュレーターFlociと比較し、起動時間、メモリ使用量、イメージサイズを検証しています。\nビルド済みイメージはなく、Dockerfileからビルドする必要がある点や、aarch64とx86_64でDockerfileのRPMが異なる点に注意が必要です。",
+      "actionable_takeaway": "AWS開発者は、AWS Emulatorをローカル環境に導入し、開発・テストサイクルを高速化するために、既存のOSSエミュレータと比較検討して活用する。",
+      "tags": [
+        "AWS",
+        "エミュレータ",
+        "Docker"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "AWS公式のローカルエミュレータは開発効率を大幅に向上させる可能性があり、多くのAWS開発者にとって実用性が非常に高いため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 58,
+      "topic_group": 1,
+      "topic_size": 3
+    },
+    {
+      "title": "暗号通貨決済を受け入れるマーチャントのためのセキュリティチェックリスト",
+      "url": "https://dev.to/cigalpay/security-checklist-for-merchants-accepting-crypto-payments-1ah5",
+      "source": "Dev.to",
+      "published": "2026-11-12T14:00:05+00:00",
+      "reading_min": 2,
+      "summary": "暗号通貨決済はチャージバックがない反面、誤送金や詐欺の取り消しが困難です。\nセキュリティインシデントの多くは暗号技術の破綻ではなく、鍵の漏洩や誤った情報信頼、誤ったアドレスへの送金が原因です。\n本チェックリストは、これらの一般的な脆弱性に対処し、安全な決済処理のための実践的な指針を提供します。",
+      "actionable_takeaway": "暗号通貨決済を導入する際は、支払い通知の署名検証を徹底し、OWASP API Security Top 10に基づいたAPIセキュリティレビューを必ず実施すること。",
+      "tags": [
+        "セキュリティ",
+        "暗号通貨",
+        "決済システム"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "暗号通貨決済における具体的なセキュリティリスクと対策が詳細に解説されており、実務に直結する重要な情報であるため高スコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -407,7 +752,7 @@
       "first_seen": "2026-11-11T10:29:14.082495+09:00",
       "is_hot": false,
       "hatena_count": 7,
-      "topic_group": 1,
+      "topic_group": 2,
       "topic_size": 2,
       "is_prev_seen": true
     },
@@ -457,6 +802,96 @@
       "hatena_count": 0
     },
     {
+      "title": "個人情報流出ニュースが怖いので、パスワード対策をガチで見直してみた",
+      "url": "https://qiita.com/koshiro_esaki/items/22b7e355068ac0dad571?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-10T02:10:06+00:00",
+      "reading_min": 4,
+      "summary": "個人情報流出のニュースを受け、個人でできるパスワード対策を根本から見直した記事です。\nパスワードの使い回しをやめ、サービスごとに異なる15文字以上のパスワードを設定することを推奨しています。\nパスワードマネージャーの活用や、多要素認証の導入、フィッシング詐欺対策の重要性についても解説しています。",
+      "actionable_takeaway": "全サービスで15文字以上の異なるパスワードを設定し、パスワードマネージャーと多要素認証を導入して、フィッシング詐欺にも注意を払いましょう。",
+      "tags": [
+        "セキュリティ",
+        "パスワード",
+        "多要素認証"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "個人レベルで実践できるセキュリティ対策として、パスワードの使い回し防止、長文パスワードの推奨、パスワードマネージャーと多要素認証の活用など、具体的かつ効果的な方法が分かりやすく解説されており、多くのユーザーにとって実用性が高いため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T11:31:34.700109+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "なぜ正しいソフトウェアを書くのが難しいのか",
+      "url": "https://pron.github.io/posts/correctness-and-complexity",
+      "source": "Hacker News",
+      "published": "2026-11-12T10:28:26+00:00",
+      "hn_score": 151,
+      "hn_comments": 64,
+      "reading_min": 50,
+      "summary": "本記事は、ソフトウェアの正しさを確保することの難しさについて、計算可能性理論と計算量理論の観点から考察しています。\nプログラムと完全な理解が根本的に矛盾していることを示し、正しいソフトウェアを生産することの本質的な困難さをまとめています。\n一部のツールは役立つものの、正しさには計算の「自然法則」に起因する大きなコストが伴うと主張しています。",
+      "actionable_takeaway": "ソフトウェアの設計・開発において、ツールの導入だけでなく、計算理論に基づいた根本的な複雑性を理解し、コストを考慮した品質保証戦略を立てるべきです。",
+      "tags": [
+        "ソフトウェア工学",
+        "計算理論",
+        "品質保証"
+      ],
+      "category": "プログラミング言語",
+      "score": 80,
+      "score_reason": "ソフトウェア開発の根源的な課題を理論的に解説しており、エンジニアの深い理解を促す点で重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "MetaのAIエージェント「Muse」に課金して使い倒した結果の、小ネタと生存戦略 - はげあたま.org",
+      "url": "https://www.hageatama.org/20261112/1794464751",
+      "source": "はてなブックマーク",
+      "published": "2026-11-12T06:35:10+00:00",
+      "reading_min": 7,
+      "summary": "MetaのAIエージェント「Muse」を課金して使い倒した結果、モデル性能よりもハーネス（実行環境）の設計が優れていることが判明しました。\nMuseは他の高性能モデル（GPT-6.1 Terraなど）をサブエージェントとして呼び出すことで、より快適な作業環境を構築できると筆者は述べています。\n課金は急がず、既存のサブスクリプションとの兼ね合いで判断し、必要に応じて外部APIを活用する戦略が推奨されています。",
+      "actionable_takeaway": "AIエージェント導入時は、モデル単体の性能だけでなく、ツール連携や実行環境の設計を重視し、既存のAIサービスとの連携も視野に入れて最適な構成を検討する。",
+      "tags": [
+        "AIエージェント",
+        "Meta",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AIエージェントの実用的な活用方法と、モデル性能だけでなく実行環境の重要性を指摘しており、今後のAI開発・導入戦略に示唆を与えるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 197
+    },
+    {
+      "title": "文書データ抽出方法の比較：テンプレート、OCRルール、機械学習、LLM",
+      "url": "https://dev.to/devaland/document-data-extraction-methods-compared-templates-ocr-rules-machine-learning-and-llms-3ha7",
+      "source": "Dev.to",
+      "published": "2026-11-12T14:00:10+00:00",
+      "reading_min": 4,
+      "summary": "文書からのデータ抽出方法には、固定テンプレート、OCRルール、機械学習モデル、大規模言語モデル（LLM）の4つの主要なアプローチがあります。\nテンプレートとOCRルールはレイアウトが固定された文書に安価で予測可能ですが、変動には対応できません。\n機械学習モデルは既知の文書タイプ内の変動に対応し、LLMは最も多様な文書に対応しますが、誤情報のリスクがあるため引用元と人間のレビューが必要です。",
+      "actionable_takeaway": "文書データ抽出システムを設計する際は、文書の種類、変動性、精度要件を考慮し、複数の抽出方法（テンプレート、OCR、ML、LLM）を組み合わせて最適なソリューションを構築しましょう。",
+      "tags": [
+        "データ抽出",
+        "OCR",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "文書データ抽出の各手法の特性と適用範囲を明確に比較しており、実務における適切な技術選択の指針となるため、実用性が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "Arnisは地球上のあらゆる場所をMinecraftの世界に変える",
       "url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
       "source": "GitHub Blog",
@@ -477,6 +912,28 @@
       "is_hot": false,
       "hatena_count": 0,
       "is_prev_seen": true
+    },
+    {
+      "title": "PRの脆弱性をAIが直す「CodeMender」を見て、新卒が基礎を学ぶ理由を考えた",
+      "url": "https://qiita.com/N-Kyo/items/23697fc1e92c288b426b?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-11T15:47:28+00:00",
+      "reading_min": 3,
+      "summary": "Google CloudのAIエージェント「CodeMender」は、GitHubのPRでコードの脆弱性を見つけて修正案を提示します。\nしかし、現状は限定的なプレビューであり、AIが全てを自動で解決するわけではなく、人間のレビューや判断が依然として重要です。\n筆者は、AIに頼りすぎると自分で判断する力が育たなくなる可能性を指摘し、新卒エンジニアが基礎を学ぶ重要性を考察しています。",
+      "actionable_takeaway": "AIによるコード修正支援ツールは便利だが、その出力を鵜呑みにせず、セキュリティやコード品質に関する自身の知識と判断力を常に磨き続けること。",
+      "tags": [
+        "AI",
+        "セキュリティ",
+        "Code Review"
+      ],
+      "category": "AI・機械学習",
+      "score": 78,
+      "score_reason": "AIによるコード修正は開発効率向上に期待されるが、その限界と人間の役割について深く考察されており、実務におけるAIツールの活用姿勢に示唆を与える。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "プレフィルで学習し、デコード時に監視：トピック監視のためのスパースオートエンコーダの利用",
@@ -591,7 +1048,7 @@
       "new_at": "2026-11-12T11:31:34.700109+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "AIに書かせた、が全然AIが書いてない件",
@@ -636,6 +1093,77 @@
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "Jane Street: ソクラテス式チューター",
+      "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
+      "source": "Hacker News",
+      "published": "2026-11-10T10:18:22+00:00",
+      "hn_score": 415,
+      "hn_comments": 96,
+      "reading_min": 1,
+      "summary": "Jane Streetが公開した「ソクラテス式チューター」は、ユーザーを真の習熟レベルに導くためのAIパーソナルチューターです。\n講義形式ではなく、質問を通じてユーザーに推論、予測、説明を促すことで学習を深めます。\n各サブスキルの習熟度を0-5のレベルで追跡し、ASCIIアートで進捗を表示する機能も備えています。",
+      "actionable_takeaway": "AIを活用した教育ツール開発の参考に、ソクラテス式対話による学習促進や進捗可視化のアイデアを自身のプロジェクトに取り入れることを検討すべきです。",
+      "github_repo": "janestreet/agent_skills",
+      "tags": [
+        "AI",
+        "教育",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AIを教育に応用する具体的な手法として興味深く、LLMの活用事例としても参考になるため、高いスコアを付けました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "libsignal のグループ暗号化を追って、署名改ざんのテストを追加した",
+      "url": "https://zenn.dev/under_michi/articles/7791295efdb23e",
+      "source": "Zenn",
+      "published": "2026-11-12T01:12:25+00:00",
+      "reading_min": 13,
+      "summary": "東京大学の実験レポートとして、libsignalのグループ暗号化機能について深掘りしています。\n既存のテストでカバーされていない署名改ざんのケースを発見し、そのテストコードを追加するPRを提出・マージされた経緯を解説。\nグループメッセージの送受信におけるSenderKeyの作成・送信・処理の流れをコード例と共に示しています。",
+      "actionable_takeaway": "オープンソースライブラリのセキュリティ強化に貢献するため、既存テストの網羅性を確認し、未カバーの脆弱性シナリオに対するテストケースを積極的に追加することを検討しましょう。",
+      "github_repo": "signalapp/libsignal",
+      "tags": [
+        "libsignal",
+        "暗号化",
+        "セキュリティテスト"
+      ],
+      "category": "セキュリティ",
+      "score": 75,
+      "score_reason": "大規模ソフトウェアのセキュリティテストに貢献する具体的な事例であり、暗号化ライブラリの堅牢性向上に直接寄与する活動であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Mozkey（もずきー）| 書くことに集中できる、日本語入力。",
+      "url": "https://koyasi777.com/mozkey/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-12T02:13:52+00:00",
+      "reading_min": 6,
+      "summary": "Mozkeyは、書くことに集中できるオープンソースの日本語IMEです。\nスペースキー不要の自動ライブ変換や、ローカルAI「Zenz」による文脈補正が特徴で、使うほどユーザーの入力スタイルに馴染みます。\nオフライン動作を重視し、テレメトリ送信や自動更新機能を排除することで、プライバシー保護とセキュリティを多層的に実現しています。",
+      "actionable_takeaway": "プライバシー重視の日本語IMEを探している開発者は、Mozkeyを試用し、そのオフラインAI補正機能やカスタマイズ性を評価して導入を検討する。",
+      "github_repo": "koyasi777/mozkey",
+      "tags": [
+        "IME",
+        "日本語入力",
+        "AI"
+      ],
+      "category": "プログラミング言語",
+      "score": 75,
+      "score_reason": "プライバシー重視のオフラインAI搭載IMEという点で新規性があり、日本語入力環境の改善に貢献する可能性が高いため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 633
     },
     {
       "title": "LandslideFM: 統一的な地滑り認識と理解に向けた基盤モデル",
@@ -729,6 +1257,97 @@
       "hatena_count": 0
     },
     {
+      "title": "ブートコンソール上のsystemdジョブのライブツリー",
+      "url": "https://codeberg.org/wvhulle/bootvine",
+      "source": "Hacker News",
+      "published": "2026-11-09T13:02:44+00:00",
+      "hn_score": 194,
+      "hn_comments": 68,
+      "reading_min": 1,
+      "summary": "bootvineは、Linuxのブートコンソールでsystemdジョブのライブツリーを表示するツールです。\n従来のログの羅列ではなく、保留中のユニットや実行時間の長いユニットのタイムラインを視覚的に表示します。\nシャットダウン時やLUKSパスフレーズ入力時にも機能し、ユニットの失敗理由も表示します。",
+      "actionable_takeaway": "Linuxシステムの起動トラブルシューティングやパフォーマンス分析を効率化するため、bootvineを導入し、ブートプロセスの可視化を試すべきです。",
+      "github_repo": "wvhulle/bootvine",
+      "tags": [
+        "Linux",
+        "systemd",
+        "ブート"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 70,
+      "score_reason": "Linuxのブートプロセス可視化は、システム管理やトラブルシューティングにおいて実用性が高く、既存の課題を解決するツールとして評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "セキュリティ・キャンプ 2026 応募課題晒し",
+      "url": "https://zenn.dev/uvu/articles/758ee227a614ea",
+      "source": "Zenn",
+      "published": "2026-11-12T06:45:01+00:00",
+      "reading_min": 20,
+      "summary": "筆者がセキュリティ・キャンプ修了後、プロダクトセキュリティクラスでの学びを振り返る記事です。\n特にAIを活用した開発とインフラ・ネットワークセキュリティに関する講義に強い関心を示しています。\nProxmoxやKubernetesなどを活用した実運用に近いシステム構築経験から、安全なシステム設計の重要性を強調しています。",
+      "actionable_takeaway": "AI生成コードのセキュリティ評価や、攻撃者視点での外部公開リソースのリスク分析手法を学び、自身の開発・運用に活かすことを検討しましょう。",
+      "tags": [
+        "セキュリティ",
+        "AI",
+        "Kubernetes"
+      ],
+      "category": "セキュリティ",
+      "score": 70,
+      "score_reason": "セキュリティ・キャンプの応募課題を通じて、AIとセキュリティの融合、攻撃者視点での防御の重要性といった現代的なセキュリティ課題への意識が高く、実務への示唆に富むため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "「良いチームほどミスの報告が多い」— 心理的安全性を論文とGoogle調査から正しく理解する",
+      "url": "https://qiita.com/teppei19980914/items/2e0fa85f1cc32a62fb0d?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-09T11:13:44+00:00",
+      "reading_min": 7,
+      "summary": "病院の看護チームの調査で、チームワークが良いチームほど医療ミスの報告が多いという、一見矛盾した結果が示されました。\nこれは「心理的安全性」という概念で説明され、チームが対人関係のリスクをとっても安全であるという共有された信念を指します。\n本記事では、心理的安全性を「仲良しチーム」や「ぬるい職場」と誤解しないよう、論文やGoogleの調査に基づきその本質を解説しています。",
+      "actionable_takeaway": "チームリーダーやマネージャーは、心理的安全性を高めるために、ミスや失敗を非難せず、学習の機会として捉える文化を醸成し、メンバーが安心して意見を言える環境を構築すること。",
+      "tags": [
+        "心理的安全性",
+        "チームビルディング",
+        "組織論"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "心理的安全性は開発チームの生産性や学習能力に直結する重要な概念であり、その正しい理解はマネジメント層にとって不可欠であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Next.js向け配管工ウェブサイトテンプレート：問い合わせに繋がる10のブロック",
+      "url": "https://dev.to/marcoschulz123/plumber-website-template-for-nextjs-the-10-blocks-that-get-calls-321c",
+      "source": "Dev.to",
+      "published": "2026-11-12T14:00:05+00:00",
+      "reading_min": 6,
+      "summary": "Next.jsで配管工のウェブサイトを構築する際、訪問者を電話問い合わせに繋げるための効果的な10のブロック構成が紹介されています。\nウェブサイトの目的は、緊急事態やリフォーム計画中の訪問者の疑問に答え、信頼を築き、行動を促すことです。\nヒーローセクション、サービス、レビュー、FAQなど、顧客が求める情報を適切な順序で配置することが重要であり、これによりコンバージョン率を高めます。",
+      "actionable_takeaway": "Next.jsでサービス業のウェブサイトを構築する際は、顧客のニーズと行動フローを深く理解し、問い合わせに直結する情報（サービス、信頼性、連絡先）を戦略的に配置したテンプレートを活用しましょう。",
+      "tags": [
+        "Next.js",
+        "Webデザイン",
+        "コンバージョン率最適化"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 70,
+      "score_reason": "特定の業種に特化したウェブサイト構築のベストプラクティスをNext.jsの文脈で解説しており、実用的な知見を提供するものの、技術的な新規性や汎用性は中程度と判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "集中力散漫＆過集中持ちエンジニアがAWS DEAを突破した「過集中スイッチ」の入れ方",
       "url": "https://qiita.com/kohYoung_I/items/cce40cb5b9cdfc1f8787?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
@@ -775,6 +1394,27 @@
       "hatena_count": 2
     },
     {
+      "title": "CBCの調査後、LinkedInとMonsterが1,000件以上の偽の求人広告を削除",
+      "url": "https://www.reddit.com/r/technology/comments/1xu8zyk/linkedin_monster_take_down_over_1000_fake_job/",
+      "source": "Reddit",
+      "published": "2026-11-12T10:06:40+00:00",
+      "summary": "CBCの調査により、LinkedInとMonsterが1,000件以上の偽の求人広告を削除したことが報じられました。\nこれはオンライン求人プラットフォームにおける詐欺行為の蔓延と、その対策の必要性を示しています。\n求職者は偽の求人広告に注意し、プラットフォーム側はより厳格な審査体制を構築する必要があります。",
+      "actionable_takeaway": "求人プラットフォームを利用する際は、企業や求人情報の信頼性を多角的に確認し、不審な点があれば報告する習慣を身につける。",
+      "tags": [
+        "セキュリティ",
+        "求人",
+        "詐欺"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "オンライン求人プラットフォームの信頼性に関わる問題であり、多くのユーザーに直接的な影響があるため、スコアは中程度とした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "ITエンジニアが選ぶ「ITエンジニア本大賞2027」投票スタート",
       "url": "https://www.publickey1.jp/blog/26/itit2027.html",
       "source": "Publickey",
@@ -794,78 +1434,81 @@
       "new_at": "2026-11-12T11:31:34.700109+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
-      "title": "個人情報流出ニュースが怖いので、パスワード対策をガチで見直してみた",
-      "url": "https://qiita.com/koshiro_esaki/items/22b7e355068ac0dad571?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-11-10T02:10:06+00:00",
-      "reading_min": 4,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
+      "title": "研究者が8分ごとに電波信号を発する珍しい連星系を発見",
+      "url": "https://www.curtin.edu.au/news/media-release/researchers-discover-rare-star-system-that-emits-radio-signals-every-eight-minutes/",
+      "source": "Hacker News",
+      "published": "2026-11-12T10:46:20+00:00",
+      "hn_score": 32,
+      "hn_comments": 8,
+      "reading_min": 3,
+      "summary": "カーティン大学の研究者が、8分ごとに電波パルスを発する珍しい連星系「GPM J071507−114153」を発見しました。\nこのシステムは、死んだ星である白色矮星と太陽に似たG型星のペアで構成されています。\n白色矮星が太陽型星を周回する系から電波パルスが検出されたのは初めてであり、天文学の新たな知見をもたらします。",
+      "actionable_takeaway": "この発見は天文学の基礎研究における進展であり、直接的なエンジニアリングへの影響は少ないですが、科学技術の進歩として注目し、新たな観測技術やデータ解析手法の可能性を認識すべきです。",
+      "tags": [
+        "天文学",
+        "白色矮星",
+        "電波天文学"
+      ],
       "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-12T11:31:34.700109+09:00",
+      "score": 60,
+      "score_reason": "科学的な発見として興味深いものの、IT技術やエンジニアリングへの直接的な影響は限定的であるため、スコアは中程度としました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
     {
-      "title": "Jensen Huang Said to Have Had Relationship With Nvidia Executive Who Reports to Him",
+      "title": "民主党の中間選挙勝利後、Palantir CEOのアレックス・カープは今や自身を「進歩主義者」と語る",
+      "url": "https://www.reddit.com/r/technology/comments/1xu1goo/after_democrats_midterm_wins_palantir_ceo_alex/",
+      "source": "Reddit",
+      "published": "2026-11-12T02:52:08+00:00",
+      "summary": "民主党の中間選挙での勝利後、PalantirのCEOであるアレックス・カープが自身を「進歩主義者」と称したというニュースです。\nこれは、Palantirが政府機関との契約が多い企業であるため、政治的スタンスの変化が注目されています。\n企業のリーダーが政治情勢に応じて自身のイデオロギーを表明することの背景や意図が議論の対象となるでしょう。",
+      "actionable_takeaway": "テクノロジー企業のリーダーの政治的発言は、企業のビジネス戦略や公共イメージに影響を与えるため、その動向を注視し、潜在的な影響を評価すること。",
+      "tags": [
+        "Palantir",
+        "政治",
+        "ビジネス"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 60,
+      "score_reason": "テクノロジー企業のCEOの政治的発言は、企業の方向性や市場評価に影響を与える可能性があり、業界の動向を理解する上で重要である。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
+      "first_seen": "2026-11-12T23:00:13.455693+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ジェンスン・フアンが、彼に報告するNvidia幹部と関係を持っていたとされる",
       "url": "https://www.reddit.com/r/technology/comments/1xtv8dn/jensen_huang_said_to_have_had_relationship_with/",
       "source": "Reddit",
       "published": "2026-11-11T22:09:03+00:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
+      "summary": "NvidiaのCEOであるジェンスン・フアン氏が、彼に直属するNvidiaの幹部と個人的な関係を持っていたという報道です。\nこのような報道は、企業のガバナンスや倫理、職場環境に影響を与える可能性があります。\n特にリーダーシップ層の個人的な関係は、組織内の公平性や信頼性に疑問を投げかけることがあります。",
+      "actionable_takeaway": "企業のリーダーシップ層は、個人的な関係が職務上の公平性や透明性に影響を与えないよう、厳格な倫理規定とガバナンス体制を遵守・確立すること。",
+      "tags": [
+        "Nvidia",
+        "企業倫理",
+        "ガバナンス"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 55,
+      "score_reason": "企業トップの個人的な関係は、企業の信頼性やガバナンスに影響を与える可能性があり、特にNvidiaのような大手企業では注目される。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 2,
-      "topic_size": 2
-    },
-    {
-      "title": "Exclusive | Nvidia is Preparing to Oust CEO Jensen Huang",
-      "url": "https://www.reddit.com/r/technology/comments/1xtvw5q/exclusive_nvidia_is_preparing_to_oust_ceo_jensen/",
-      "source": "Reddit",
-      "published": "2026-11-11T22:36:18+00:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-12T11:31:34.700109+09:00",
-      "is_hot": false,
-      "hatena_count": 0,
-      "topic_group": 2,
-      "topic_size": 2
+      "topic_group": 3,
+      "topic_size": 3
     },
     {
       "title": "Reddit resisted giving users' personal data to the U.S. government over critical ICE posts",
       "url": "https://www.reddit.com/r/technology/comments/1xtoaur/reddit_resisted_giving_users_personal_data_to_the/",
       "source": "Reddit",
       "published": "2026-11-11T17:42:50+00:00",
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-12T11:31:34.700109+09:00",
-      "is_hot": false,
-      "hatena_count": 0
-    },
-    {
-      "title": "State Dept. official took Mediterranean trip paid for by tech billionaire",
-      "url": "https://www.reddit.com/r/technology/comments/1xtys4s/state_dept_official_took_mediterranean_trip_paid/",
-      "source": "Reddit",
-      "published": "2026-11-12T00:43:05+00:00",
       "summary": "(解析中にエラーが発生しました)",
       "tags": [],
       "category": "その他",
@@ -905,7 +1548,7 @@
       "analysis_status": "error",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 238
+      "hatena_count": 354
     },
     {
       "title": "【特集】 AIが“ダチ”になった。Meta「Muse」と過ごした2週間",
@@ -921,7 +1564,7 @@
       "analysis_status": "error",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 137
+      "hatena_count": 478
     },
     {
       "title": "software-factory-mode-2026aki skill - 橋本商会",
@@ -937,7 +1580,7 @@
       "analysis_status": "error",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 118
+      "hatena_count": 183
     },
     {
       "title": "2026 年、すべての主要ブラウザで使えるようになった CSS 機能",
@@ -953,47 +1596,36 @@
       "analysis_status": "error",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 51
+      "hatena_count": 123
     },
     {
-      "title": "テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に",
-      "url": "https://www.publickey1.jp/blog/26/playwrightbun.html",
-      "source": "Publickey",
-      "published": "2026-11-11T15:07:35+00:00",
-      "reading_min": 6,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
+      "title": "国務省高官がテクノロジー億万長者から地中海旅行の費用を受け取った",
+      "url": "https://www.reddit.com/r/technology/comments/1xtys4s/state_dept_official_took_mediterranean_trip_paid/",
+      "source": "Reddit",
+      "published": "2026-11-12T00:43:05+00:00",
+      "summary": "国務省高官がテクノロジー界の億万長者から地中海旅行の費用を賄ってもらっていたというニュースです。\nこれは倫理的な問題や利益相反の可能性を示唆しており、公務員の行動規範に疑問を投げかけています。\nテクノロジー業界と政府間の関係の透明性について議論を呼ぶ可能性があります。",
+      "actionable_takeaway": "公務員と民間企業、特にテクノロジー業界との倫理的な関係性について、企業はより厳格なガイドラインを設けるべきか検討する。",
+      "tags": [
+        "倫理",
+        "政治",
+        "テクノロジー"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 40,
+      "score_reason": "直接的な技術的影響は低いが、テクノロジー業界と政治の癒着という点で社会的な関心はあり、今後の規制議論に影響する可能性もあるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-12T23:00:13.455693+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 19
-    },
-    {
-      "title": "AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始",
-      "url": "https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html",
-      "source": "Publickey",
-      "published": "2026-11-11T15:04:47+00:00",
-      "reading_min": 6,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-12T11:31:34.700109+09:00",
-      "is_hot": false,
-      "hatena_count": 7
+      "hatena_count": 0
     },
     {
       "title": "ペンキの飛び散りの93%は有効なPerlプログラムである (2019)",
       "url": "https://www.mcmillen.dev/sigbovik/",
       "source": "Hacker News",
       "published": "2026-11-11T22:34:23+00:00",
-      "hn_score": 177,
-      "hn_comments": 26,
+      "hn_score": 497,
+      "hn_comments": 64,
       "reading_min": 2,
       "summary": "2019年4月1日に発表された研究で、ペンキの飛び散りの93%が有効なPerlプログラムとして解析されることが判明しました。\nOCRソフトウェアを用いて実証的にアプローチし、有効なPerlプログラムにならない7つの例も提示されています。\nこの研究はSIGBOVIK 2019で発表され、プログラミング言語コミュニティの長年の未解決問題に答えるものです。",
       "actionable_takeaway": "この研究はエイプリルフールのジョーク論文であり、実務的な示唆はないが、プログラミング言語の柔軟性とユーモアを理解する一助となる。",
@@ -1009,23 +1641,23 @@
       "new_at": "2026-11-12T11:31:34.700109+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 12
+      "hatena_count": 13
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-12T11:31:34.700109+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-12T23:00:13.455693+09:00",
     "summary_lines": [
-      "AWSエミュレーター（Hacker News・スコア100）",
-      "GitHub Actionsをロックする（Hacker News・スコア95）",
-      "自己修復型コーディングエージェント：MCPでプロダクショングレードのハーネスループを構築する方法（Dev.to・スコア95）"
+      "AWSがAIエージェント向けに強力な隔離環境を提供するNitro Sandboxesを発表。",
+      "GitHub Actionsのセキュリティ強化と自己修復型コーディングエージェントが注目。",
+      "Apache HTTP Serverに深刻なRCE脆弱性が発見され、対応が急務。"
     ],
     "focus_tags": [
-      "AI Agent",
-      "AIoT",
-      "API",
       "AWS",
-      "App Store"
+      "AI",
+      "セキュリティ",
+      "コーディングエージェント",
+      "GitHub Actions"
     ]
   }
 }
