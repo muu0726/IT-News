@@ -5,20 +5,20 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 13:00:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 02:35:13 +0000</lastBuildDate>
     <item>
-      <title>Google SWEがNASAライダーに48のAIエージェントを投入し、72時間で未発見のマヤのピラミッドを発見</title>
-      <link>https://pietromiotti.com/latest/maya-site/?maya</link>
-      <guid isPermaLink="false">https://pietromiotti.com/latest/maya-site/?maya</guid>
-      <description>[Score: 95] Googleのソフトウェアエンジニアが48のAIエージェントをNASAのLidarデータに適用し、72時間以内に未発見のマヤ遺跡を発見しました。 / AIエージェントがLidarデータを分析し、ジャングルに隠された遺跡を特定するプロセスを日記形式で紹介しています。 / この事例は、AIが考古学や探査分野に与える大きな影響と、その驚異的なスピードを示しています。 [実務示唆: AIエージェントを活用したデータ分析は、これまで困難だった大規模なデータセットからのパターン発見を加速させるため、自身の専門分野でのAI適用可能性を検討し、新たな発見や効率化に繋げましょう。] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 12:05:22 +0000</pubDate>
+      <title>自己修復型コーディングエージェント：MCPでプロダクショングレードのハーネスループを構築する方法</title>
+      <link>https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</link>
+      <guid isPermaLink="false">https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</guid>
+      <description>[Score: 95] 自律型コーディングエージェントはデモでは魅力的ですが、大規模なエンタープライズコードベースでは失敗しやすい課題があります。 / Zhishu Agentは、モデルの能力を最大限に引き出し、運用信頼性を確保するためのオープンソースのハーネスアーキテクチャを提案しています。 / これは、ユーザー意図の取り込み、計画、ツール実行前のガード、サンドボックスでの実行、テスト駆動検証からなる収束型ステートマシンとして機能します。 [実務示唆: プロダクション環境でコーディングエージェントを導入する際は、単なるモデルのループではなく、Zhishu Agentのようなハーネスアーキテクチャを参考に、堅牢なエラーハンドリングと検証メカニズムを組み込むべきです。] [GitHub: wangguode/zhishu-agent] (Source: Dev.to)</description>
+      <pubDate>Thu, 12 Nov 2026 02:26:41 +0000</pubDate>
     </item>
     <item>
-      <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</guid>
-      <description>[Score: 90] GitHubのコミット数が大幅に増加する一方で、開発者の生産性がそれに比例して向上していない現状を指摘し、AIによるコード生成だけでは不十分であると述べています。 / AIエージェントは、ソフトウェア開発の計画、構築、検証、監視といった全ステージにおいて、開発者の効率を向上させる可能性を秘めています。 / 特に、散在する情報を集約し、API変更の計画立案を支援するなど、開発プロセスのボトルネックを解消する具体的な活用例が紹介されています。 [実務示唆: AIを単なるコード生成ツールとしてではなく、開発プロセスの計画、検証、監視といった広範なタスクを支援するエージェントとして活用することで、開発全体の生産性向上を目指しましょう。] (Source: GitHub Blog)</description>
-      <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
+      <title>ISUCON2026で優勝しました（準備編）</title>
+      <link>https://zenn.dev/luvtechno/articles/isucon2026-preparation</link>
+      <guid isPermaLink="false">https://zenn.dev/luvtechno/articles/isucon2026-preparation</guid>
+      <description>[Score: 90] この記事は、ISUCON2026でAIエージェントを完全自律（HOOTL）で参加させ、優勝するまでの3ヶ月間の準備期間を振り返るものです。 / 人間が介入しないAIエージェントによるソフトウェア開発の可能性を探るため、ISUCONを題材に選定しました。 / AWS環境の整備、過去問の分析、自律ハーネスの構築など、具体的な準備プロセスと知見が詳細に記述されています。 [実務示唆: AIエージェントによる開発自動化の可能性を探るため、ISUCONのような明確な指標がある課題でHOOTLアプローチを試すことを検討し、その知見を業務に活かすべきです。] (Source: Zenn)</description>
+      <pubDate>Wed, 11 Nov 2026 05:05:46 +0000</pubDate>
     </item>
     <item>
       <title>Fable 5.2でGTA 6 Osaka Cityを作ってみた</title>
@@ -28,87 +28,87 @@
       <pubDate>Tue, 10 Nov 2026 13:38:25 +0000</pubDate>
     </item>
     <item>
-      <title>ISUCON2026で優勝しました（準備編）</title>
-      <link>https://zenn.dev/luvtechno/articles/isucon2026-preparation</link>
-      <guid isPermaLink="false">https://zenn.dev/luvtechno/articles/isucon2026-preparation</guid>
-      <description>[Score: 90] この記事は、ISUCON2026でAIエージェントを完全自律（HOOTL）で参加させ、優勝するまでの3ヶ月間の準備期間を振り返るものです。 / 人間が介入しないAIエージェントによるソフトウェア開発の可能性を探るため、ISUCONを題材に選定しました。 / AWS環境の整備、過去問の分析、自律ハーネスの構築など、具体的な準備プロセスと知見が詳細に記述されています。 [実務示唆: AIエージェントによる開発自動化の可能性を探るため、ISUCONのような明確な指標がある課題でHOOTLアプローチを試すことを検討し、その知見を業務に活かすべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 11 Nov 2026 05:38:12 +0000</pubDate>
+      <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</guid>
+      <description>[Score: 90] GitHubのコミット数が大幅に増加する一方で、開発者の生産性がそれに比例して向上していない現状を指摘し、AIによるコード生成だけでは不十分であると述べています。 / AIエージェントは、ソフトウェア開発の計画、構築、検証、監視といった全ステージにおいて、開発者の効率を向上させる可能性を秘めています。 / 特に、散在する情報を集約し、API変更の計画立案を支援するなど、開発プロセスのボトルネックを解消する具体的な活用例が紹介されています。 [実務示唆: AIを単なるコード生成ツールとしてではなく、開発プロセスの計画、検証、監視といった広範なタスクを支援するエージェントとして活用することで、開発全体の生産性向上を目指しましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
     </item>
     <item>
-      <title>LoRazor: 効率的なMulti-LoRAサービングのためのアダプター実行のトリミング</title>
-      <link>https://arxiv.org/abs/2611.10049</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.10049</guid>
-      <description>[Score: 88] 複数のLoRA（Low-Rank Adaptation）モデルを効率的にサービングするための新しい手法「LoRazor」を提案しています。 / アダプターの実行を最適化し、計算コストを削減することで、Multi-LoRA環境でのパフォーマンス向上を目指しています。 / 大規模なAIモデルのデプロイメントにおける課題解決に貢献する可能性があります。 (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
+      <title>Gemini Decisions API</title>
+      <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</guid>
+      <description>[Score: 90] Googleが新しいGemini Decision 1モデルを搭載したGemini Decisions APIを発表しました。 / このAPIは、テキスト、画像、音声、動画、PDFなど、様々なマルチモーダル入力に対して、最大1,000のYes/No、選択、ルーブリック採点質問を高速かつ単一パスで評価できます。 / ツール選択、ポリシーチェック、モデルルーティング、コンテキストグレーディングなど、閉じた選択肢の意思決定を効率的に行うための専用プリミティブを提供します。 [実務示唆: Gemini Decisions APIを活用し、マルチモーダル入力に基づく高速な意思決定システムを構築することで、コンテンツのルーティングやポリシーチェックの自動化を検討しましょう。] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 18:32:42 +0000</pubDate>
     </item>
     <item>
-      <title>LiteLLM Adaptive Router を検証する（前編）：モデル選択と学習の仕組み</title>
-      <link>https://zenn.dev/aws_japan/articles/ac9ae548d57323</link>
-      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/ac9ae548d57323</guid>
-      <description>[Score: 88] LiteLLMのAdaptive Routerは、リクエスト内容に応じて複数のLLMを振り分け、品質とコストを評価し、会話からの反応を学習に反映します。 / 本記事では、LiteLLM v1.106.2の実装を確認し、AWS上に構築した検証環境でその仕様を詳細に検証しています。 / モデル選択は、model_infoに設定されたquality_tier、strengths、input_cost_per_tokenを参照して行われます。 [実務示唆: LiteLLM Adaptive Routerを導入する際は、各モデルのquality_tier、strengths、input_cost_per_tokenを適切に設定し、コストと性能のバランスを考慮した最適なLLMルーティング戦略を構築すべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 14:28:03 +0000</pubDate>
+      <title>ClaudeにApp StoreとGoogle Playのライブレビューを1つのMCPサーバーで提供した</title>
+      <link>https://dev.to/rasareka/i-gave-claude-live-app-store-and-google-play-reviews-with-one-mcp-server-46jl</link>
+      <guid isPermaLink="false">https://dev.to/rasareka/i-gave-claude-live-app-store-and-google-play-reviews-with-one-mcp-server-46jl</guid>
+      <description>[Score: 90] ClaudeのようなLLMは古い学習データに基づいて回答するため、最新のアプリレビューをリアルタイムで分析できません。 / 筆者は、App StoreとGoogle Playのライブレビューを読み込み、コンパクトな要約をモデルに渡すMCPサーバーを構築しました。 / これにより、最新のユーザーフィードバックに基づいた、より正確な製品分析が可能になります。 [実務示唆: LLMを活用した製品分析を行う際は、古い学習データに依存せず、Apifyなどのツールでリアルタイムデータを取得・要約し、最新のユーザーインサイトを反映させる仕組みを構築することを検討してください。] (Source: Dev.to)</description>
+      <pubDate>Thu, 12 Nov 2026 02:26:59 +0000</pubDate>
     </item>
     <item>
-      <title>LiteLLM Adaptive Routerを検証する（後編）：学習シグナルと運用上の注意</title>
-      <link>https://zenn.dev/aws_japan/articles/4399262cf00559</link>
-      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/4399262cf00559</guid>
-      <description>[Score: 85] LiteLLM Adaptive Routerの後編では、会話からのモデル品質学習条件と運用上の注意点が検証されました。 / ユーザーの満足度評価は、同じ会話として記録された3ターン目以降かつ直前のターンが記録されている場合に直前の応答モデルに加算されます。 / 日本語の「ありがとう」や「やっぱりいいです」はシグナルとして検出されず、英語のthanksやnever mindが必要であることが判明しました。 [実務示唆: LiteLLM Adaptive Routerを利用する際は、ユーザーの反応を学習シグナルとして活用するために、会話のターン数や特定の英語表現の使用を促すプロンプト設計を検討し、モデルの選択精度向上に努めるべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 14:30:35 +0000</pubDate>
+      <title>Real2Sim2Realの現在地：現場スキャンからロボット検証環境へ</title>
+      <link>https://zenn.dev/kudan_jp/articles/a0cb75384f4a83</link>
+      <guid isPermaLink="false">https://zenn.dev/kudan_jp/articles/a0cb75384f4a83</guid>
+      <description>[Score: 85] 自律移動ロボット開発において、実際の現場をスキャンしてシミュレーション環境を構築するReal2Sim2Realのアプローチが一般的になっています。 / 現場スキャンからロボットが動ける環境への変換、検証条件の多様化、計算効率、構築コストが主要な論点です。 / Kudanでは、このプロセスにおける技術動向を整理し、特に構築コスト削減のためにLLMやVLMの活用が進んでいる現状を解説しています。 [実務示唆: 自律移動ロボット開発者は、Real2Sim2Realの各ステップにおける最新技術動向を把握し、特にLLM/VLMを活用したシミュレーション環境構築の自動化を検討すべきです。] (Source: Zenn)</description>
+      <pubDate>Wed, 11 Nov 2026 09:46:24 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Code を新しい Fable 5.2 に切り替えると速く安くなるのか。36回測ったら、Fable 5.1 より2割速く3割安く、費用は Opus 5.5 の1.6倍だった</title>
-      <link>https://qiita.com/suwa_nobu/items/a6a104575596915dac2e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/suwa_nobu/items/a6a104575596915dac2e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] Anthropicが発表したClaude Fable 5.2が、Claude Codeのデフォルトモデルとして導入されました。 / 本記事は、Fable 5.2がFable 5.1と比較して約2割高速化し、約3割コスト削減されることを36回のテストで検証。 / ただし、費用面ではOpus 5.5が最も安価であることも示され、モデル選択の際の費用対効果が明確に比較されています。 [実務示唆: Claude Code利用者は、Fable 5.2への切り替えで開発効率とコスト削減が期待できるため、積極的に導入を検討し、自身のユースケースでの性能と費用を検証すべき。] (Source: Qiita)</description>
-      <pubDate>Mon, 09 Nov 2026 23:50:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Runpod MCPサーバーはどのように機能するのか？</title>
-      <link>https://dev.to/scriptmasterlabs01/how-does-the-runpod-mcp-server-work-4oe3</link>
-      <guid isPermaLink="false">https://dev.to/scriptmasterlabs01/how-does-the-runpod-mcp-server-work-4oe3</guid>
-      <description>[Score: 85] Runpod MCPサーバーは、AIアシスタントやコーディングエージェントをRunpodアカウントに直接接続します。 / これにより、エージェントはハードウェアの選択、Podやサーバーレスエンドポイントのデプロイ、障害診断、リソースのシャットダウンを自動で行えます。 / 2026年11月10日には「Runpod for Agents」として拡張され、テスト済みのスキルライブラリとプラグインが提供されます。 [実務示唆: AIエージェントによるインフラ管理の自動化は、開発・運用効率を大幅に向上させる可能性があるため、Runpod for Agentsの導入を検討し、自社のワークフローへの適用可能性を評価しましょう。] (Source: Dev.to)</description>
-      <pubDate>Wed, 11 Nov 2026 01:24:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>線形計画法は重み空間プログラミングを実行できるか？</title>
-      <link>https://nathan.rs/posts/weight-space-lp/</link>
-      <guid isPermaLink="false">https://nathan.rs/posts/weight-space-lp/</guid>
-      <description>[Score: 85] MIT CSAILが提唱する「重み空間プログラミング」は、GPT-6 Astraがネットワークの重みから学習ゲームを特定したり、ゲームルールからネットワークの重みを生成したりする技術です。 / AstraがQwen3.5-0.8Bの数学能力を向上させた事例では、重みの0.016%変更で精度が大幅に向上しました。 / 筆者は、Astraの重み編集プロセスが線形計画法（LP）の解法に似ていることを指摘し、LPで同様の最適化が可能であることを示唆しています。 [実務示唆: 大規模言語モデルの重み編集による性能改善は、線形計画法のような最適化手法で効率化できる可能性があるため、AIモデルの微調整や最適化において、従来の最適化アルゴリズムの適用を検討してみましょう。] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 12:30:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Fable 5.2のプロンプトガイドを読んで正直に思ったことを書く</title>
-      <link>https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2</link>
-      <guid isPermaLink="false">https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2</guid>
-      <description>[Score: 85] Claude Fable 5.2のプロンプトガイドを読んだ所感がまとめられています。 / 特に、エフォートレベルの調整や、コードの所有権に関するモデルの挙動、最終レポート作成時の注意点などが印象的とのことです。 / デフォルトのhighエフォートが推奨され、xhighやmaxとの差は小さいと述べられています。 [実務示唆: Claude Fable 5.2利用時は、コードの所有権を明示的にプロンプトに含め、モデルが積極的に修正するよう促す。] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 12:44:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>「またAIの見え方変わった」ダウン症で知的障害のある弟とのやりとりに、AIを活用したら解決できることが増えたという話に注目が集まる</title>
-      <link>https://togetter.com/li/2769126</link>
-      <guid isPermaLink="false">https://togetter.com/li/2769126</guid>
-      <description>[Score: 85] ダウン症で知的障害のある弟とのコミュニケーションにAI（Gemini）を活用した事例が紹介され、大きな注目を集めています。 / AIが異なる知能間の「眼鏡」として機能し、知的障害者と健常者の間の仲介役を果たす可能性が示唆されています。 / 感情的・体力的に困難な対話をAIが継続することで、知のバリアフリーが実現し、多くの人々を助ける可能性が議論されています。 [実務示唆: AIをコミュニケーション支援ツールとして活用し、多様なニーズを持つ人々との対話の質を向上させる可能性を検討し、アクセシビリティ向上に役立てるべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 11 Nov 2026 03:28:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>JSON抽出プロンプトのテスト方法：パース、形状、値のチェック</title>
-      <link>https://dev.to/litmiq/how-to-test-json-extraction-prompts-parse-shape-and-value-checks-472n</link>
-      <guid isPermaLink="false">https://dev.to/litmiq/how-to-test-json-extraction-prompts-parse-shape-and-value-checks-472n</guid>
-      <description>[Score: 85] 本記事では、JSON抽出プロンプトのテストにおける3つの失敗パターン（パース、形状、値）と、それぞれの修正方法について解説しています。 / OpenAI APIのJSONモードやStructured Outputs機能も紹介し、テストケースと評価基準を提供しています。 / 正確なJSON出力を得るための具体的なテスト戦略と注意点が示されています。 [実務示唆: JSON抽出プロンプトを開発する際は、パース、形状、値の各層でテストケースを作成し、OpenAIのJSONモードやStructured Outputsを適切に活用して堅牢性を確保しましょう。] (Source: Dev.to)</description>
-      <pubDate>Wed, 11 Nov 2026 12:55:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>嗜好を責めるな：LLMトレーニングにおける追従性の出現を検証する</title>
-      <link>https://arxiv.org/abs/2611.10045</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.10045</guid>
-      <description>[Score: 80] LLM（大規模言語モデル）のトレーニング過程で発生する「追従性」（sycophancy）について考察しています。 / モデルがユーザーの嗜好に過度に合わせる傾向が、どのように生じるのかを分析しています。 / この現象がLLMの出力品質や信頼性に与える影響について議論されています。 [実務示唆: LLMの出力を評価する際は、モデルがユーザーの意図を汲み取りすぎている可能性を考慮し、客観性や多様な視点が含まれているかを確認しましょう。] (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
+      <title>ヘルスケアAIoTシステムの設計：RFIDとセンサーから物理的なAIアクションまで</title>
+      <link>https://dev.to/isadora_gift/designing-healthcare-aiot-systems-from-rfid-and-sensors-to-physical-ai-actions-450p</link>
+      <guid isPermaLink="false">https://dev.to/isadora_gift/designing-healthcare-aiot-systems-from-rfid-and-sensors-to-physical-ai-actions-450p</guid>
+      <description>[Score: 85] ヘルスケア分野におけるAIoTシステムは、デジタルシステムと物理的資産・プロセスを連携させる重要な課題に直面しています。 / RFIDや各種センサーを用いて医療機器や検体などを識別・監視し、その情報をAIが分析します。 / これにより、資産管理、状態監視、運用応答の自動化など、医療現場の効率と安全性を向上させます。 [実務示唆: ヘルスケア分野のエンジニアは、RFIDやセンサー技術、AIoTプラットフォームの知識を深め、物理的な医療現場とデジタルシステムを連携させるソリューション開発に取り組むべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 12 Nov 2026 02:28:05 +0000</pubDate>
     </item>
     <item>
       <title>EarthRecord: 40年間の衛星画像からマルチモーダルエージェントによる土地変化をピクセルから検出</title>
       <link>https://arxiv.org/abs/2611.12934</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.12934</guid>
       <description>[Score: 80] 本記事は、40年以上にわたる衛星画像データを用いて、マルチモーダルAIエージェントが土地変化をピクセルレベルで検出する研究論文です。 / 地球規模の環境モニタリングや土地利用変化の分析にAIを応用する可能性を探っています。 / arXivLabsを通じて公開されており、大規模な地理空間データ解析におけるAIの進化を示しています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenCodeを拡張して、複数の担当と定期実行をひとつのチャットにまとめる「いちょまる」を作った</title>
+      <link>https://zenn.dev/theoj/articles/opencode-development-log</link>
+      <guid isPermaLink="false">https://zenn.dev/theoj/articles/opencode-development-log</guid>
+      <description>[Score: 80] AIに依頼するタスクが増える中で、会話の管理や進捗追跡の煩雑さを解消するため、OpenCodeを拡張した「いちょまる」が開発されました。 / 「いちょまる」は、利用者が常に同じ親セッションに話しかけ、親が子セッション（担当）に仕事を振り分け、途中経過や結果を利用者に伝える仕組みです。 / 定期実行機能も備え、既存のOpenCode機能を活用しつつ、ひとつの窓口から複数のAIタスクを効率的に管理することを目指しています。 [実務示唆: AIエージェントを活用した開発において、タスク管理の効率化は重要であり、OpenCodeのような既存ツールを拡張して独自のAIワークフローを構築するアプローチは参考になります。] [GitHub: opencode-ai/opencode] (Source: Zenn)</description>
+      <pubDate>Wed, 11 Nov 2026 12:38:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>プレフィルで学習し、デコード時に監視：トピック監視のためのスパースオートエンコーダの利用</title>
+      <link>https://arxiv.org/abs/2611.12935</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.12935</guid>
+      <description>[Score: 77] 本記事は、スパースオートエンコーダを用いてトピック監視を行う新しい手法に関する研究論文です。 / モデルのプレフィル段階で学習を行い、デコード時に監視することで、効率的かつ高精度なトピック検出を目指しています。 / arXivLabsで公開されており、大規模言語モデルの解釈可能性と監視能力向上に貢献する可能性を秘めています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>自律型X線実験のための監査可能な人間-エージェントチーム</title>
+      <link>https://arxiv.org/abs/2611.12933</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.12933</guid>
+      <description>[Score: 75] 本記事は、自律型X線実験における人間とAIエージェントの協調に関する研究論文です。 / 監査可能性を重視した人間-エージェントチームのフレームワークを提案しており、実験の透明性と信頼性向上を目指しています。 / arXivLabsの取り組みの一環として公開されており、AIと科学実験の融合における新たなアプローチを示唆しています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>大規模言語モデルにおける心理測定学的推論の追跡</title>
+      <link>https://arxiv.org/abs/2611.12937</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.12937</guid>
+      <description>[Score: 75] 本記事は、大規模言語モデル（LLM）がどのように心理測定学的な推論を行うかを追跡する研究に関するものです。 / LLMが人間の心理特性をどの程度理解し、模倣できるのかを分析しています。 / これにより、LLMの内部メカニズムと倫理的側面への理解を深めることを目的としています。 [実務示唆: LLMを応用した心理分析ツールや対話システムを開発する際は、モデルの心理測定学的推論能力と限界を理解し、倫理的な利用ガイドラインを策定することが重要です。] (Source: arXiv cs.AI)</description>
+      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIに書かせた、が全然AIが書いてない件</title>
+      <link>https://zenn.dev/appleworld/articles/65aed6c725af71</link>
+      <guid isPermaLink="false">https://zenn.dev/appleworld/articles/65aed6c725af71</guid>
+      <description>[Score: 75] 筆者は、自分の文体で記事を書かせるAI自動化システムを構築しようと試みましたが、Claudeによる初稿が期待通りではなく、多くの修正が必要だった経験を共有しています。 / Slackコマンドでお題とメモをストックし、毎朝記事の下書きをGitHubに生成し、承認後にZennに公開する仕組みをCloudflare WorkersとClaudeで実現しました。 / AIに「考え方」を教え込むことで、より質の高い文章を生成させるための試行錯誤の過程が詳細に記述されています。 [実務示唆: AIによるコンテンツ生成では、単にプロンプトを与えるだけでなく、AIに「考え方」や「文体」を学習させるための具体的な指示書やフィードバックの仕組みを構築することが重要です。] (Source: Zenn)</description>
+      <pubDate>Wed, 11 Nov 2026 02:11:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>LandslideFM: 統一的な地滑り認識と理解に向けた基盤モデル</title>
+      <link>https://arxiv.org/abs/2611.12936</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.12936</guid>
+      <description>[Score: 70] 本記事は、地滑りの認識と理解を統一的に行うための基盤モデル「LandslideFM」に関するものです。 / 地滑り検知や予測といったタスクを単一モデルで処理することを目指しています。 / これにより、災害予測や防災分野におけるAI活用の可能性を広げます。 [実務示唆: 地滑り予測や災害監視システム開発に携わるエンジニアは、LandslideFMのような基盤モデルの応用可能性を検討し、既存システムへの統合を試みるべきです。] (Source: arXiv cs.AI)</description>
       <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>

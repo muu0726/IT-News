@@ -5,27 +5,27 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 13:00:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 02:35:13 +0000</lastBuildDate>
+    <item>
+      <title>AWSエミュレーター</title>
+      <link>https://github.com/aws/aws-emulator</link>
+      <guid isPermaLink="false">https://github.com/aws/aws-emulator</guid>
+      <description>[Score: 100] AWS Emulatorは、AWS APIをローカルでエミュレートするツールです。 / これにより、AWSアカウントなしで開発マシン、開発サーバー、CI環境でソフトウェアをテストできます。 / AWS CLIやSDKからエミュレーターのエンドポイントを指すように環境変数を設定するだけで利用可能です。 [実務示唆: AWS開発者は、aws-emulatorを導入し、ローカル環境でのテストを強化することで、開発サイクルを高速化しコストを削減できる。] [GitHub: aws/aws-emulator] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 18:21:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub Actionsをロックする</title>
+      <link>https://hugovk.dev/blog/2026/lock-github-actions/</link>
+      <guid isPermaLink="false">https://hugovk.dev/blog/2026/lock-github-actions/</guid>
+      <description>[Score: 95] GitHub Actionsがワークフローロックファイルをサポートし、サプライチェーン攻撃のリスクを軽減できるようになりました。 / 以前はタグではなくフルSHAにピン留めすることが推奨されていましたが、ロックファイルによりタグを使用しつつ安全性を確保できます。 / gh CLIのgh-actions-lock拡張機能を使って簡単にロックファイルを生成・管理できます。 [実務示唆: GitHub Actionsを利用する開発者は、gh-actions-lock拡張機能を導入し、ワークフローをロックすることで、サプライチェーン攻撃のリスクを低減しセキュリティを強化すべきである。] [GitHub: github/gh-actions-lock] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 22:16:41 +0000</pubDate>
+    </item>
     <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
       <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
       <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
       <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google、Kubernetesで10倍高密度にAIエージェントを実行可能にする「Agent Sustrate」と「gVisor」、オープンソースとしてCNCFに寄贈と発表</title>
-      <link>https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</guid>
-      <description>[Score: 85] Googleは、Kubernetes上でAIエージェントを10倍高密度に実行可能にするオープンソースソフトウェア「Agent Substrate」と「gVisor」をCNCFに寄贈しました。 / AIエージェントはアイドル時間が長く、Kubernetes単体では効率的な実行が困難であるという課題を解決します。 / これにより、AIエージェントの実行基盤としてのKubernetesの効率と密度が大幅に向上し、AI開発のコスト削減とスケーラビリティに貢献します。 [実務示唆: Kubernetes上でAIエージェントを運用している、または検討している開発者は、Agent SubstrateとgVisorを導入し、リソース効率とコスト削減効果を検証すべき。] [GitHub: google/gvisor] (Source: Publickey)</description>
-      <pubDate>Mon, 09 Nov 2026 15:25:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>マイクロソフト、150以上のオープンソースUIコンポーネントがBlazorに寄贈されたことを発表。InfragisticsとSyncfusionから</title>
-      <link>https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</guid>
-      <description>[Score: 85] マイクロソフトは、C#などの.NETテクノロジーでWebアプリ開発を可能にするフレームワーク「Blazor」に、150以上のオープンソースUIコンポーネントが寄贈されたと発表しました。 / これはInfragisticsとSyncfusionとの協力によるもので、それぞれ50以上、100以上のBlazor対応UIコンポーネントがMITライセンスで提供されます。 / チャート、ボタン、カレンダー、グリッドなど、ビジネスアプリケーション開発に役立つ多様なコンポーネントが含まれています。 [実務示唆: Blazor開発者は、InfragisticsとSyncfusionから寄贈されたMITライセンスの豊富なUIコンポーネントを活用し、開発効率とアプリケーション品質の向上を図るべきです。] (Source: Publickey)</description>
-      <pubDate>Mon, 09 Nov 2026 15:22:44 +0000</pubDate>
     </item>
     <item>
       <title>WEBで画像を破くツールを作った</title>
@@ -35,27 +35,6 @@
       <pubDate>Sun, 08 Nov 2026 21:44:47 +0000</pubDate>
     </item>
     <item>
-      <title>Firefoxの無料内蔵VPN、2027年1月までデータ制限を撤廃 | Mozillaブログ</title>
-      <link>https://www.reddit.com/r/technology/comments/1xt8xae/firefoxs_free_builtin_vpn_uncaps_data_limit/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xt8xae/firefoxs_free_builtin_vpn_uncaps_data_limit/</guid>
-      <description>[Score: 80] Firefoxブラウザに内蔵されている無料VPNサービスが、2027年1月までデータ制限を撤廃すると発表されました。 / これにより、ユーザーはより自由に、かつ長期間にわたってVPN機能を利用できるようになります。 / Mozillaはユーザーのプライバシー保護とインターネットの自由を重視していることを示しています。 [実務示唆: プライバシー保護とセキュリティ強化のため、Firefoxの無料VPN機能を活用し、特に公共Wi-Fi利用時などには積極的に利用を検討する。] (Source: Reddit)</description>
-      <pubDate>Wed, 11 Nov 2026 04:55:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>Nuxt 3はEOL：今すぐNuxt 4に移行すべきか、Nuxt 5を待つべきか？</title>
-      <link>https://dev.to/dipeshba/nuxt-3-is-end-of-life-migrate-to-nuxt-4-now-or-wait-for-nuxt-5-358m</link>
-      <guid isPermaLink="false">https://dev.to/dipeshba/nuxt-3-is-end-of-life-migrate-to-nuxt-4-now-or-wait-for-nuxt-5-358m</guid>
-      <description>[Score: 80] Nuxt 3は2026年7月31日にEOL（End of Life）を迎え、セキュリティやバグ修正のサポートが終了しました。Nuxt 5はまだリリースされていません。 / ほとんどのプロダクションアプリケーションでは、Nuxt 4への移行が推奨されます。Nuxt 4はNuxt 3からの移行が容易で、Nuxt 5リリース後も少なくとも6ヶ月間はサポートされます。 / クリティカルなモジュールのブロック、変更凍結期間、またはアプリケーションの廃止予定がある場合にのみ、有償の延長サポートと具体的な計画があればNuxt 5を待つ選択肢も考えられます。 [実務示唆: Nuxt 3を使用している開発者は、セキュリティリスクを避けるため、速やかにNuxt 4への移行計画を立て、実行に移すべきです。移行は比較的容易であり、早期対応が推奨されます。] [GitHub: nuxt/nuxt] (Source: Dev.to)</description>
-      <pubDate>Wed, 11 Nov 2026 12:55:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>すべてのコンテナに独自のHTTPS名を — 静かなDockerエンジンとデスクトップ</title>
-      <link>https://dev.to/mrcatz/every-container-on-its-own-https-name-a-quiet-docker-engine-and-desktop-f5i</link>
-      <guid isPermaLink="false">https://dev.to/mrcatz/every-container-on-its-own-https-name-a-quiet-docker-engine-and-desktop-f5i</guid>
-      <description>[Score: 78] DoCatzは、macOS、Windows、Linux向けの無料オープンソースDockerエンジンおよびコンテナマネージャーです。 / ローカル開発におけるポート管理の煩雑さや、コンテナリストの検索性を改善します。 / 各コンテナは独自のHTTPS名でアクセス可能で、Composeプロジェクトごとにグループ化され、ログやターミナル、ファイル管理機能も提供されます。 [実務示唆: ローカル開発環境でのDockerコンテナ管理を効率化したい開発者は、DoCatzを試用し、HTTPSアクセスやプロジェクトごとのグループ化による利便性を評価しましょう。] [GitHub: mrcatz/docatz] (Source: Dev.to)</description>
-      <pubDate>Wed, 11 Nov 2026 01:24:41 +0000</pubDate>
-    </item>
-    <item>
       <title>アクセシビリティステートメントがGitHubに登場</title>
       <link>https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</link>
       <guid isPermaLink="false">https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</guid>
@@ -63,32 +42,11 @@
       <pubDate>Thu, 05 Nov 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Snowflake Dashboards 2.0が最高な理由と、これからBIに求められること</title>
-      <link>https://zenn.dev/dataheroes/articles/snowflake-dashboards-2-and-future-of-bi</link>
-      <guid isPermaLink="false">https://zenn.dev/dataheroes/articles/snowflake-dashboards-2-and-future-of-bi</guid>
-      <description>[Score: 75] Snowflakeからリリースされた新しいDashboards 2.0は、Snowflake内で完結する可視化環境として高く評価されています。 / 旧Dashboardsの課題（共有、フィルター、コード管理の不足）を解決し、定型的な数字の確認やAIによる質問応答のニーズに応えます。 / これにより、BIツールを別途導入することなく、Snowflake上でデータ分析と可視化がシームレスに行えるようになり、今後のBIのあり方に影響を与える可能性を秘めています。 [実務示唆: Snowflakeユーザーは、Dashboards 2.0を活用してBIツールへの依存を減らし、データ可視化と分析をSnowflake内で完結させることで、コスト削減と効率化を図りましょう。] (Source: Zenn)</description>
-      <pubDate>Wed, 11 Nov 2026 00:21:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>Kapitanジェネレーターリリース、2026年11月2日〜8日</title>
-      <link>https://dev.to/kadet-hub/kapitan-generator-releases-2-to-8-november-2026-4ai9</link>
-      <guid isPermaLink="false">https://dev.to/kadet-hub/kapitan-generator-releases-2-to-8-november-2026-4ai9</guid>
-      <description>[Score: 70] Kapitanジェネレーターの2026年11月2日から8日までのリリース情報が公開されました。 / Argo CD 3.5.6のレンダリング、Kapitan設定管理プラグインの追加、trust-manager 0.26.0のサポートなどが含まれます。 / 各バージョンは署名され、出力差分やSBOMが提供されており、信頼性と透明性が重視されています。 [実務示唆: Kapitanを利用しているユーザーは、最新のリリース情報を確認し、特にArgo CDやtrust-managerとの連携機能、およびライセンス情報の変更点に注意してアップデートを検討しましょう。] [GitHub: kadet-hub/registry] (Source: Dev.to)</description>
-      <pubDate>Wed, 11 Nov 2026 12:55:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>Val Townがサービス終了へ</title>
-      <link>https://blog.val.town/winding-down</link>
-      <guid isPermaLink="false">https://blog.val.town/winding-down</guid>
-      <description>[Score: 65] Val Townは、クラウドコンピューティング分野での競争に敗れ、サービスを終了することを発表しました。 / ユーザーはCloudflare, Vercel, Netlify, Renderなどへの移行ガイドが提供されており、LLMを活用した移行も推奨されています。 / 本日より課金は停止され、既存のサブスクリプションは無料で提供、年間プランの事前支払い者には一部返金が行われます。 [実務示唆: Val Townユーザーは、提供される移行ガイドやLLMを活用し、速やかに他のホスティングプロバイダへの移行計画を立て、データ損失やサービス停止を回避すべきです。] (Source: Hacker News)</description>
-      <pubDate>Tue, 10 Nov 2026 17:31:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>プロパティクリーンアップ: API制限下でのバックグラウンド処理のためのNode.jsバッチエンキュー</title>
-      <link>https://dev.to/theophilushawkins9265/property-cleanup-nodejs-batch-enqueue-for-background-processing-under-api-limits-2fo7</link>
-      <guid isPermaLink="false">https://dev.to/theophilushawkins9265/property-cleanup-nodejs-batch-enqueue-for-background-processing-under-api-limits-2fo7</guid>
-      <description>[Score: 65] API制限下でバックグラウンド処理を行う際、各プロパティレコードに対して独立したべき等なクリーンアップジョブをエンキューし、バックグラウンドワーカーがレート制限を適用すべきです。 / バッチ処理は転送最適化でありトランザクションではないため、個々のジョブの独立性と再試行可能性を確保することが重要です。 / プロデューサーが承認を、ワーカーが正確性を担当するという役割分担を明確にし、安定したIDと一意性制約を用いて重複処理を防ぎます。 [実務示唆: APIレート制限のあるバックグラウンド処理を実装する際は、各ジョブをべき等かつ独立に設計し、ワーカー側でレート制限を管理することで、堅牢性と信頼性を向上させるべきです。] (Source: Dev.to)</description>
-      <pubDate>Wed, 11 Nov 2026 01:26:55 +0000</pubDate>
+      <title>誤報の火災報知器がJane Street唯一のNYCデータセンターをほぼ水没させかけた</title>
+      <link>https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/</link>
+      <guid isPermaLink="false">https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/</guid>
+      <description>[Score: 75] Jane Streetのニューヨーク市にある唯一のデータセンターが、誤報の火災報知器によって水没の危機に瀕したという実話です。 / 同社は知的財産保護と技術リスク管理のため、データセンターをトレーディングフロアの近くに設置していました。 / システムのチームが迅速に対応し、幸運にも大きな被害を免れた経緯が語られています。 [実務示唆: データセンターの物理的セキュリティと災害対策は、どんなに高度な技術を持つ企業でも重要であり、冗長性確保や緊急時対応計画の定期的な見直しを徹底すべきである。] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 16:38:44 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,13 +5,13 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 13:00:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 02:35:13 +0000</lastBuildDate>
     <item>
-      <title>氏名や電話番号、聞きません　漏洩問題で企業側、個人情報手放す動き：朝日新聞</title>
-      <link>https://www.asahi.com/articles/ASVCB0H13VCBUTIL009M.html</link>
-      <guid isPermaLink="false">https://www.asahi.com/articles/ASVCB0H13VCBUTIL009M.html</guid>
-      <description>[Score: 95] 個人情報漏洩問題が相次ぐ中、企業が顧客の個人情報を必要以上に集めない動きが広がっています。 / 焼肉きんぐはアプリ登録に氏名・電話番号を不要とし、タイムズカーは本人確認書類の画像データを即時削除する運用に変更しました。 / AIの台頭によるサイバー攻撃の高度化を受け、「守るべき個人情報そのものを持たないこと」が最大の安全策との認識が背景にあります。 [実務示唆: 個人情報を取り扱うシステム設計において、最小限のデータ収集と短期保存を原則とし、不要な個人情報は速やかに削除する「データミニマイゼーション」を徹底しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 10 Nov 2026 09:02:35 +0000</pubDate>
+      <title>AWSエミュレーター</title>
+      <link>https://github.com/aws/aws-emulator</link>
+      <guid isPermaLink="false">https://github.com/aws/aws-emulator</guid>
+      <description>[Score: 100] AWS Emulatorは、AWS APIをローカルでエミュレートするツールです。 / これにより、AWSアカウントなしで開発マシン、開発サーバー、CI環境でソフトウェアをテストできます。 / AWS CLIやSDKからエミュレーターのエンドポイントを指すように環境変数を設定するだけで利用可能です。 [実務示唆: AWS開発者は、aws-emulatorを導入し、ローカル環境でのテストを強化することで、開発サイクルを高速化しコストを削減できる。] [GitHub: aws/aws-emulator] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 18:21:38 +0000</pubDate>
     </item>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
@@ -21,18 +21,32 @@
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Google SWEがNASAライダーに48のAIエージェントを投入し、72時間で未発見のマヤのピラミッドを発見</title>
-      <link>https://pietromiotti.com/latest/maya-site/?maya</link>
-      <guid isPermaLink="false">https://pietromiotti.com/latest/maya-site/?maya</guid>
-      <description>[Score: 95] Googleのソフトウェアエンジニアが48のAIエージェントをNASAのLidarデータに適用し、72時間以内に未発見のマヤ遺跡を発見しました。 / AIエージェントがLidarデータを分析し、ジャングルに隠された遺跡を特定するプロセスを日記形式で紹介しています。 / この事例は、AIが考古学や探査分野に与える大きな影響と、その驚異的なスピードを示しています。 [実務示唆: AIエージェントを活用したデータ分析は、これまで困難だった大規模なデータセットからのパターン発見を加速させるため、自身の専門分野でのAI適用可能性を検討し、新たな発見や効率化に繋げましょう。] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 12:05:22 +0000</pubDate>
+      <title>GitHub Actionsをロックする</title>
+      <link>https://hugovk.dev/blog/2026/lock-github-actions/</link>
+      <guid isPermaLink="false">https://hugovk.dev/blog/2026/lock-github-actions/</guid>
+      <description>[Score: 95] GitHub Actionsがワークフローロックファイルをサポートし、サプライチェーン攻撃のリスクを軽減できるようになりました。 / 以前はタグではなくフルSHAにピン留めすることが推奨されていましたが、ロックファイルによりタグを使用しつつ安全性を確保できます。 / gh CLIのgh-actions-lock拡張機能を使って簡単にロックファイルを生成・管理できます。 [実務示唆: GitHub Actionsを利用する開発者は、gh-actions-lock拡張機能を導入し、ワークフローをロックすることで、サプライチェーン攻撃のリスクを低減しセキュリティを強化すべきである。] [GitHub: github/gh-actions-lock] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 22:16:41 +0000</pubDate>
     </item>
     <item>
-      <title>ジェンスン・フアンCEOの不倫関係を利用して1兆円分以上のNVIDIA製半導体が中国に出荷されていた疑い</title>
-      <link>https://gigazine.net/news/20261111-nvidia-spy-affair-ai-chip-shipments-to-china/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261111-nvidia-spy-affair-ai-chip-shipments-to-china/</guid>
-      <description>[Score: 95] NVIDIAのジェンスン・フアンCEOが「中国のスパイ」と断定された女性と不倫関係にあり、その関係を利用して1兆円以上のNVIDIA製半導体が中国に出荷されていた疑いが報じられています。 / この女性は、2023年10月のアメリカによるAIチップ輸出制限強化後も、NVIDIAの「優先クラウドパートナー」の立場を利用して半導体を確保し、中国へ出荷したとされています。 / FBIがこの件を捜査しており、国際的な技術規制と企業倫理、セキュリティに関する重大な問題として注目されています。 [実務示唆: AIチップの輸出規制強化とサプライチェーンの透明性に関する国際情勢を注視し、企業はコンプライアンス体制を再確認し、不正な取引リスクを排除するための対策を強化すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 11 Nov 2026 03:34:04 +0000</pubDate>
+      <title>自己修復型コーディングエージェント：MCPでプロダクショングレードのハーネスループを構築する方法</title>
+      <link>https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</link>
+      <guid isPermaLink="false">https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</guid>
+      <description>[Score: 95] 自律型コーディングエージェントはデモでは魅力的ですが、大規模なエンタープライズコードベースでは失敗しやすい課題があります。 / Zhishu Agentは、モデルの能力を最大限に引き出し、運用信頼性を確保するためのオープンソースのハーネスアーキテクチャを提案しています。 / これは、ユーザー意図の取り込み、計画、ツール実行前のガード、サンドボックスでの実行、テスト駆動検証からなる収束型ステートマシンとして機能します。 [実務示唆: プロダクション環境でコーディングエージェントを導入する際は、単なるモデルのループではなく、Zhishu Agentのようなハーネスアーキテクチャを参考に、堅牢なエラーハンドリングと検証メカニズムを組み込むべきです。] [GitHub: wangguode/zhishu-agent] (Source: Dev.to)</description>
+      <pubDate>Thu, 12 Nov 2026 02:26:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>ISUCON2026で優勝しました（準備編）</title>
+      <link>https://zenn.dev/luvtechno/articles/isucon2026-preparation</link>
+      <guid isPermaLink="false">https://zenn.dev/luvtechno/articles/isucon2026-preparation</guid>
+      <description>[Score: 90] この記事は、ISUCON2026でAIエージェントを完全自律（HOOTL）で参加させ、優勝するまでの3ヶ月間の準備期間を振り返るものです。 / 人間が介入しないAIエージェントによるソフトウェア開発の可能性を探るため、ISUCONを題材に選定しました。 / AWS環境の整備、過去問の分析、自律ハーネスの構築など、具体的な準備プロセスと知見が詳細に記述されています。 [実務示唆: AIエージェントによる開発自動化の可能性を探るため、ISUCONのような明確な指標がある課題でHOOTLアプローチを試すことを検討し、その知見を業務に活かすべきです。] (Source: Zenn)</description>
+      <pubDate>Wed, 11 Nov 2026 05:05:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fable 5.2でGTA 6 Osaka Cityを作ってみた</title>
+      <link>https://qiita.com/7mpy/items/5710fef43ba0e59204c6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/7mpy/items/5710fef43ba0e59204c6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] Claude Fable 5.2を用いて、大阪を舞台にした3Dサンドボックスゲーム「VELA BAY」が開発されました。 / 実際の大阪の地図データからワールドを生成し、車や歩行者AI、手配度システム、ミッションなどを実装しています。 / Three.jsを主要ライブラリとして使用し、独自の衝突判定を実装している点が特徴です。 [実務示唆: LLMと地図データを組み合わせたゲーム開発の可能性を探るため、Three.jsとOpenStreetMapデータを用いたプロトタイプ開発を検討する。] (Source: Qiita)</description>
+      <pubDate>Tue, 10 Nov 2026 13:38:25 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -49,74 +63,18 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>Synapticsの特許主張によりDisplayLinkドライバーの開発が停止</title>
-      <link>https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/</link>
-      <guid isPermaLink="false">https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/</guid>
-      <description>[Score: 90] DisplayLinkチップセット搭載ドックのLinuxドライバー改善を試みていた開発者が、Synaptics（DisplayLinkの買収元）から特許侵害の主張を受けました。 / Synapticsは、開発者に対してDisplayLink技術の無許可実装を停止するよう要求し、法的措置を示唆しました。 / これにより、LinuxユーザーはDisplayLinkドックの機能が他のプラットフォームと同等になることを期待できなくなり、オープンソース開発への企業の姿勢が問われています。 [実務示唆: オープンソースプロジェクトに貢献する際は、関連する特許やライセンスについて事前に調査し、企業の知的財産権に関する方針を理解しておくことが重要です。] (Source: Hacker News)</description>
-      <pubDate>Tue, 10 Nov 2026 18:02:02 +0000</pubDate>
+      <title>Gemini Decisions API</title>
+      <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</guid>
+      <description>[Score: 90] Googleが新しいGemini Decision 1モデルを搭載したGemini Decisions APIを発表しました。 / このAPIは、テキスト、画像、音声、動画、PDFなど、様々なマルチモーダル入力に対して、最大1,000のYes/No、選択、ルーブリック採点質問を高速かつ単一パスで評価できます。 / ツール選択、ポリシーチェック、モデルルーティング、コンテキストグレーディングなど、閉じた選択肢の意思決定を効率的に行うための専用プリミティブを提供します。 [実務示唆: Gemini Decisions APIを活用し、マルチモーダル入力に基づく高速な意思決定システムを構築することで、コンテンツのルーティングやポリシーチェックの自動化を検討しましょう。] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 18:32:42 +0000</pubDate>
     </item>
     <item>
-      <title>Clojureのマクロによるメタプログラミングで業務ルールのDSLを作る</title>
-      <link>https://zenn.dev/pksha/articles/b7e4c1a9d38f52</link>
-      <guid isPermaLink="false">https://zenn.dev/pksha/articles/b7e4c1a9d38f52</guid>
-      <description>[Score: 90] Clojureのマクロを活用し、設備点検の条件式から判定関数と根拠収集のための参照一覧を自動生成するDSLが開発されました。 / これにより、条件式を一度書くだけで判定と根拠収集に必要な定義が揃い、ルールの保守・拡張が容易になります。 / Pythonで実装された内部DSLを題材に、Clojureのマクロによるメタプログラミングの具体的な実装と利点が解説されています。 [実務示唆: 複雑な業務ルールを持つシステム開発において、ClojureのようなLisp系言語のマクロを用いたDSL構築を検討することで、コードの記述量を減らし、保守性と拡張性の高いシステムを実現できる可能性があります。] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 12:55:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Alice Huang reportedly instrumental in securing over $7.5 billion of Nvidia AI GPU imports during three-year relationship with Jensen Huang — helped move 240,000 banned chips into China, mostly H100 and H200</title>
-      <link>https://www.reddit.com/r/technology/comments/1xt0mny/alice_huang_reportedly_instrumental_in_securing/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xt0mny/alice_huang_reportedly_instrumental_in_securing/</guid>
-      <description>[Score: 90] Alice HuangがJensen Huangとの関係を通じて、NvidiaのAI GPUの輸入に深く関与したと報じられています。 / 3年間で75億ドル以上のNvidia AI GPUの輸入を確保し、その中には中国への輸出が禁止されているH100やH200チップ24万個が含まれていたとされます。 / これは、米国の輸出規制を回避して中国市場にAIチップが供給された可能性を示唆しています。 [実務示唆: AIチップの国際的なサプライチェーンと輸出規制の動向は、AI開発やデータセンター構築に直接影響するため、関連企業は地政学的リスクと規制遵守を常に意識すべき。] (Source: Reddit)</description>
-      <pubDate>Tue, 10 Nov 2026 22:24:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>【国のデータをしゃぶり尽くせ！】無料で使える公共データ100選【永久保存版】 - Qiita</title>
-      <link>https://qiita.com/Retro-Maid/items/d99e436fe0b19e151709</link>
-      <guid isPermaLink="false">https://qiita.com/Retro-Maid/items/d99e436fe0b19e151709</guid>
-      <description>[Score: 90] この記事では、日本の充実したオープンデータの中から、開発者や分析者が活用しやすい公共データ100選を紹介しています。 / 地図、統計、気象、防災、企業情報など多岐にわたるデータが、Webサービス開発やAIアプリ、BIダッシュボード、GIS分析に利用可能です。 / デジタル庁の横断データポータルを中心に、CKAN準拠のデータモデルや活用事例も解説されています。 [実務示唆: 無料で利用可能な公共データ100選を参考に、自身の開発プロジェクトや分析業務に活用できるデータセットを見つけ、新たなサービスや知見の創出に挑戦しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 11 Jul 2026 16:28:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>.NET 8と.NET 9のサポートは昨日で終了。脆弱性が社会問題化している現在、.NET 10への移行を推奨</title>
-      <link>https://www.publickey1.jp/blog/26/net_8net_9net_10.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_8net_9net_10.html</guid>
-      <description>[Score: 90] マイクロソフトのソフトウェアフレームワーク「.NET 8」と「.NET 9」のサポートが2026年11月10日に終了しました。 / サポート終了後もアプリケーションは動作しますが、バグ修正やセキュリティパッチ、テクニカルサポートは提供されなくなります。 / 脆弱性が社会問題化している現状を鑑み、最新のLTS版である「.NET 10」への速やかな移行が強く推奨されます。 [実務示唆: .NET 8または.NET 9を使用しているプロジェクトは、セキュリティリスクを避けるため、直ちに.NET 10へのアップグレード計画を策定し実行すべきです。] [GitHub: dotnet/runtime] (Source: Publickey)</description>
-      <pubDate>Tue, 10 Nov 2026 17:45:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>電圧グリッチングを用いてマイニングカードのA100を解き放つ</title>
-      <link>https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/</link>
-      <guid isPermaLink="false">https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/</guid>
-      <description>[Score: 90] GA100ダイの電圧フォルトインジェクション脆弱性を利用し、CMP 170HX 8GBカードをA100-80G相当に変換した事例が報告されました。 / この手法により、小売版A100よりも約1.2倍高速な性能を実現し、NVLinkやPCIe Gen4などの無効化された機能も解除可能に。 / ハードウェアレベルでのセキュリティ脆弱性と、それを利用した性能向上・機能解放の可能性を示しています。 [実務示唆: ハードウェアの電圧グリッチングによる脆弱性悪用は、デバイスの意図しない機能解放や性能向上を可能にするため、セキュリティ設計者は物理的な攻撃手法にも注意を払うべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 10:48:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>Fable 5.2でGTA 6 Osaka Cityを作ってみた</title>
-      <link>https://qiita.com/7mpy/items/5710fef43ba0e59204c6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/7mpy/items/5710fef43ba0e59204c6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] Claude Fable 5.2を用いて、大阪を舞台にした3Dサンドボックスゲーム「VELA BAY」が開発されました。 / 実際の大阪の地図データからワールドを生成し、車や歩行者AI、手配度システム、ミッションなどを実装しています。 / Three.jsを主要ライブラリとして使用し、独自の衝突判定を実装している点が特徴です。 [実務示唆: LLMと地図データを組み合わせたゲーム開発の可能性を探るため、Three.jsとOpenStreetMapデータを用いたプロトタイプ開発を検討する。] (Source: Qiita)</description>
-      <pubDate>Tue, 10 Nov 2026 13:38:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>ISUCON2026で優勝しました（準備編）</title>
-      <link>https://zenn.dev/luvtechno/articles/isucon2026-preparation</link>
-      <guid isPermaLink="false">https://zenn.dev/luvtechno/articles/isucon2026-preparation</guid>
-      <description>[Score: 90] この記事は、ISUCON2026でAIエージェントを完全自律（HOOTL）で参加させ、優勝するまでの3ヶ月間の準備期間を振り返るものです。 / 人間が介入しないAIエージェントによるソフトウェア開発の可能性を探るため、ISUCONを題材に選定しました。 / AWS環境の整備、過去問の分析、自律ハーネスの構築など、具体的な準備プロセスと知見が詳細に記述されています。 [実務示唆: AIエージェントによる開発自動化の可能性を探るため、ISUCONのような明確な指標がある課題でHOOTLアプローチを試すことを検討し、その知見を業務に活かすべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 11 Nov 2026 05:38:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>LoRazor: 効率的なMulti-LoRAサービングのためのアダプター実行のトリミング</title>
-      <link>https://arxiv.org/abs/2611.10049</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.10049</guid>
-      <description>[Score: 88] 複数のLoRA（Low-Rank Adaptation）モデルを効率的にサービングするための新しい手法「LoRazor」を提案しています。 / アダプターの実行を最適化し、計算コストを削減することで、Multi-LoRA環境でのパフォーマンス向上を目指しています。 / 大規模なAIモデルのデプロイメントにおける課題解決に貢献する可能性があります。 (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>LiteLLM Adaptive Router を検証する（前編）：モデル選択と学習の仕組み</title>
-      <link>https://zenn.dev/aws_japan/articles/ac9ae548d57323</link>
-      <guid isPermaLink="false">https://zenn.dev/aws_japan/articles/ac9ae548d57323</guid>
-      <description>[Score: 88] LiteLLMのAdaptive Routerは、リクエスト内容に応じて複数のLLMを振り分け、品質とコストを評価し、会話からの反応を学習に反映します。 / 本記事では、LiteLLM v1.106.2の実装を確認し、AWS上に構築した検証環境でその仕様を詳細に検証しています。 / モデル選択は、model_infoに設定されたquality_tier、strengths、input_cost_per_tokenを参照して行われます。 [実務示唆: LiteLLM Adaptive Routerを導入する際は、各モデルのquality_tier、strengths、input_cost_per_tokenを適切に設定し、コストと性能のバランスを考慮した最適なLLMルーティング戦略を構築すべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 10 Nov 2026 14:28:03 +0000</pubDate>
+      <title>ClaudeにApp StoreとGoogle Playのライブレビューを1つのMCPサーバーで提供した</title>
+      <link>https://dev.to/rasareka/i-gave-claude-live-app-store-and-google-play-reviews-with-one-mcp-server-46jl</link>
+      <guid isPermaLink="false">https://dev.to/rasareka/i-gave-claude-live-app-store-and-google-play-reviews-with-one-mcp-server-46jl</guid>
+      <description>[Score: 90] ClaudeのようなLLMは古い学習データに基づいて回答するため、最新のアプリレビューをリアルタイムで分析できません。 / 筆者は、App StoreとGoogle Playのライブレビューを読み込み、コンパクトな要約をモデルに渡すMCPサーバーを構築しました。 / これにより、最新のユーザーフィードバックに基づいた、より正確な製品分析が可能になります。 [実務示唆: LLMを活用した製品分析を行う際は、古い学習データに依存せず、Apifyなどのツールでリアルタイムデータを取得・要約し、最新のユーザーインサイトを反映させる仕組みを構築することを検討してください。] (Source: Dev.to)</description>
+      <pubDate>Thu, 12 Nov 2026 02:26:59 +0000</pubDate>
     </item>
     <item>
       <title>AI「テスト通りました」← これ､本当？ Stryker でテストの穴を塞いだ話</title>
@@ -126,25 +84,67 @@
       <pubDate>Mon, 09 Nov 2026 07:45:09 +0000</pubDate>
     </item>
     <item>
-      <title>ひとりで作るOSSを、チームの基準でレビューする（Codex・Claude・CodeRabbit）</title>
-      <link>https://qiita.com/figueiredoluiz/items/1a043190d8f00d2ebda6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/1a043190d8f00d2ebda6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] 本記事は、個人で開発するOSSの品質を向上させるため、AIツール（Codex, Claude, CodeRabbit）を活用したレビュープロセスを紹介しています。 / テストの重複検出ツールを例に、AIによるコード生成とレビューを開発の中心に据え、品質保証の自動化と効率化を図る方法を解説。 / 一人開発でも複数の視点を取り入れ、CI/CDパイプラインに組み込むことで、高品質なOSSを維持する重要性を強調しています。 [実務示唆: 個人開発のOSSでもAIレビューツールを導入し、CI/CDに組み込むことで、品質と信頼性を向上させ、将来のチーム開発に備えましょう。] [GitHub: vitest-dev/vitest-dedup] (Source: Qiita)</description>
-      <pubDate>Mon, 09 Nov 2026 16:24:42 +0000</pubDate>
+      <title>マイクロソフト、.NET 11正式リリース。C#に共用型を導入、JITやAOTコンパイラの高速化、コマンドラインツール強化など新機能</title>
+      <link>https://www.publickey1.jp/blog/26/net_11cjitaot.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_11cjitaot.html</guid>
+      <description>[Score: 85] マイクロソフトがオンラインイベント「.NET Conf 2026」で、統合アプリケーションフレームワークの最新版「.NET 11」を正式リリースしました。 / C# 15での共用型の導入、JITおよびAOTコンパイラの高速化、開発者ツールの強化など、多岐にわたる新機能と性能向上が含まれています。 / Web、モバイル、デスクトップ、AIアプリ開発に対応し、クロスプラットフォーム開発をさらに強力にサポートします。 [実務示唆: .NET 11へのアップグレードを検討し、C# 15の新機能やコンパイラの高速化を活用して開発効率とアプリケーション性能の向上を図るべきです。] [GitHub: dotnet/runtime] (Source: Publickey)</description>
+      <pubDate>Tue, 10 Nov 2026 17:58:43 +0000</pubDate>
     </item>
     <item>
-      <title>Google、Kubernetesで10倍高密度にAIエージェントを実行可能にする「Agent Sustrate」と「gVisor」、オープンソースとしてCNCFに寄贈と発表</title>
-      <link>https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/googlekubernetes10aiagent_sustrategvisorcncf.html</guid>
-      <description>[Score: 85] Googleは、Kubernetes上でAIエージェントを10倍高密度に実行可能にするオープンソースソフトウェア「Agent Substrate」と「gVisor」をCNCFに寄贈しました。 / AIエージェントはアイドル時間が長く、Kubernetes単体では効率的な実行が困難であるという課題を解決します。 / これにより、AIエージェントの実行基盤としてのKubernetesの効率と密度が大幅に向上し、AI開発のコスト削減とスケーラビリティに貢献します。 [実務示唆: Kubernetes上でAIエージェントを運用している、または検討している開発者は、Agent SubstrateとgVisorを導入し、リソース効率とコスト削減効果を検証すべき。] [GitHub: google/gvisor] (Source: Publickey)</description>
-      <pubDate>Mon, 09 Nov 2026 15:25:30 +0000</pubDate>
+      <title>ティム・ピーターズ氏が死去</title>
+      <link>https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028</link>
+      <guid isPermaLink="false">https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028</guid>
+      <description>[Score: 85] Pythonコミュニティに多大な影響を与えたTim Peters氏が、今年の7月15日に亡くなりました。 / 彼は「Pythonの禅」（PEP 20）の著者として最もよく知られ、Pythonの初期開発においてGuido van Rossum氏のメンターであり共同設計者でした。 / Timsortアルゴリズムの開発や、Pythonメーリングリストでの丁寧な回答を通じて、Pythonの発展に大きく貢献しました。 [実務示唆: Python開発者は、Tim Peters氏の貢献を再認識し、彼の設計哲学やTimsortのようなアルゴリズムの理解を深めることで、より良いコードを書くヒントを得られる。] (Source: Hacker News)</description>
+      <pubDate>Wed, 11 Nov 2026 07:03:17 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフト、150以上のオープンソースUIコンポーネントがBlazorに寄贈されたことを発表。InfragisticsとSyncfusionから</title>
-      <link>https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/150uiblazorinfragisticssyncfusion.html</guid>
-      <description>[Score: 85] マイクロソフトは、C#などの.NETテクノロジーでWebアプリ開発を可能にするフレームワーク「Blazor」に、150以上のオープンソースUIコンポーネントが寄贈されたと発表しました。 / これはInfragisticsとSyncfusionとの協力によるもので、それぞれ50以上、100以上のBlazor対応UIコンポーネントがMITライセンスで提供されます。 / チャート、ボタン、カレンダー、グリッドなど、ビジネスアプリケーション開発に役立つ多様なコンポーネントが含まれています。 [実務示唆: Blazor開発者は、InfragisticsとSyncfusionから寄贈されたMITライセンスの豊富なUIコンポーネントを活用し、開発効率とアプリケーション品質の向上を図るべきです。] (Source: Publickey)</description>
-      <pubDate>Mon, 09 Nov 2026 15:22:44 +0000</pubDate>
+      <title>Real2Sim2Realの現在地：現場スキャンからロボット検証環境へ</title>
+      <link>https://zenn.dev/kudan_jp/articles/a0cb75384f4a83</link>
+      <guid isPermaLink="false">https://zenn.dev/kudan_jp/articles/a0cb75384f4a83</guid>
+      <description>[Score: 85] 自律移動ロボット開発において、実際の現場をスキャンしてシミュレーション環境を構築するReal2Sim2Realのアプローチが一般的になっています。 / 現場スキャンからロボットが動ける環境への変換、検証条件の多様化、計算効率、構築コストが主要な論点です。 / Kudanでは、このプロセスにおける技術動向を整理し、特に構築コスト削減のためにLLMやVLMの活用が進んでいる現状を解説しています。 [実務示唆: 自律移動ロボット開発者は、Real2Sim2Realの各ステップにおける最新技術動向を把握し、特にLLM/VLMを活用したシミュレーション環境構築の自動化を検討すべきです。] (Source: Zenn)</description>
+      <pubDate>Wed, 11 Nov 2026 09:46:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>ヘルスケアAIoTシステムの設計：RFIDとセンサーから物理的なAIアクションまで</title>
+      <link>https://dev.to/isadora_gift/designing-healthcare-aiot-systems-from-rfid-and-sensors-to-physical-ai-actions-450p</link>
+      <guid isPermaLink="false">https://dev.to/isadora_gift/designing-healthcare-aiot-systems-from-rfid-and-sensors-to-physical-ai-actions-450p</guid>
+      <description>[Score: 85] ヘルスケア分野におけるAIoTシステムは、デジタルシステムと物理的資産・プロセスを連携させる重要な課題に直面しています。 / RFIDや各種センサーを用いて医療機器や検体などを識別・監視し、その情報をAIが分析します。 / これにより、資産管理、状態監視、運用応答の自動化など、医療現場の効率と安全性を向上させます。 [実務示唆: ヘルスケア分野のエンジニアは、RFIDやセンサー技術、AIoTプラットフォームの知識を深め、物理的な医療現場とデジタルシステムを連携させるソリューション開発に取り組むべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 12 Nov 2026 02:28:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>WEBで画像を破くツールを作った</title>
+      <link>https://qiita.com/ishi720/items/6d13fdce2a31fe630840?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ishi720/items/6d13fdce2a31fe630840?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Svelteを使って、画像をなぞった線に沿って破れるWebアプリが開発されました。 / 破れた紙の破片（ピース）を多角形ではなく、「元の紙」と「破り線のどちら側か」の組み合わせで表現する独自のアプローチを採用。 / Canvasのclip()機能を活用することで、複雑な多角形交差計算を避け、効率的にピースの形状を描画する仕組みを解説しています。 [実務示唆: Canvasのclip()機能やSvelteの活用事例として、複雑な図形処理を効率的に実装する際の参考になるため、同様の描画処理を検討する際に参考にすべき。] (Source: Qiita)</description>
+      <pubDate>Sun, 08 Nov 2026 21:44:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>「.NET MAUI 11」がついにXamarin由来のMonoランタイムから脱却、CoreCLRに統一</title>
+      <link>https://www.publickey1.jp/blog/26/net_maui_11xamarinmonocoreclr.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/net_maui_11xamarinmonocoreclr.html</guid>
+      <description>[Score: 80] マイクロソフトは.NET 11と同時にリリースされたUIフレームワーク「.NET MAUI 11」で、長らく使用されてきたXamarin由来のMonoランタイムから脱却しました。 / これにより、iOS、Android、Mac Catalystを含むすべてのプラットフォームで.NET標準のランタイムであるCoreCLRに統一されます。 / ランタイムの統一により、開発の一貫性が向上し、性能や安定性の改善が期待されます。 [実務示唆: .NET MAUI 11への移行を検討し、CoreCLRへの統一による性能向上や開発体験の改善を評価し、既存のXamarinベースのプロジェクトをアップデートする計画を立てるべきです。] [GitHub: dotnet/maui] (Source: Publickey)</description>
+      <pubDate>Tue, 10 Nov 2026 17:51:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>EarthRecord: 40年間の衛星画像からマルチモーダルエージェントによる土地変化をピクセルから検出</title>
+      <link>https://arxiv.org/abs/2611.12934</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.12934</guid>
+      <description>[Score: 80] 本記事は、40年以上にわたる衛星画像データを用いて、マルチモーダルAIエージェントが土地変化をピクセルレベルで検出する研究論文です。 / 地球規模の環境モニタリングや土地利用変化の分析にAIを応用する可能性を探っています。 / arXivLabsを通じて公開されており、大規模な地理空間データ解析におけるAIの進化を示しています。 (Source: arXiv cs.AI)</description>
+      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenCodeを拡張して、複数の担当と定期実行をひとつのチャットにまとめる「いちょまる」を作った</title>
+      <link>https://zenn.dev/theoj/articles/opencode-development-log</link>
+      <guid isPermaLink="false">https://zenn.dev/theoj/articles/opencode-development-log</guid>
+      <description>[Score: 80] AIに依頼するタスクが増える中で、会話の管理や進捗追跡の煩雑さを解消するため、OpenCodeを拡張した「いちょまる」が開発されました。 / 「いちょまる」は、利用者が常に同じ親セッションに話しかけ、親が子セッション（担当）に仕事を振り分け、途中経過や結果を利用者に伝える仕組みです。 / 定期実行機能も備え、既存のOpenCode機能を活用しつつ、ひとつの窓口から複数のAIタスクを効率的に管理することを目指しています。 [実務示唆: AIエージェントを活用した開発において、タスク管理の効率化は重要であり、OpenCodeのような既存ツールを拡張して独自のAIワークフローを構築するアプローチは参考になります。] [GitHub: opencode-ai/opencode] (Source: Zenn)</description>
+      <pubDate>Wed, 11 Nov 2026 12:38:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>Arnisは地球上のあらゆる場所をMinecraftの世界に変える</title>
+      <link>https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/</guid>
+      <description>[Score: 78] Arnisは、OpenStreetMapなどの現実世界のデータを利用して、地球上のあらゆる場所をMinecraftの世界に変換するオープンソースプロジェクトです。 / 開発者のLouis Erbkamm氏が2022年に開始し、GitHubから90万回近くダウンロードされ、約70人のコントリビューターがいます。 / 地理空間データとゲームを組み合わせることで、ユーザーは現実の場所をMinecraft内で自由に探索できるようになります。 (Source: GitHub Blog)</description>
+      <pubDate>Tue, 03 Nov 2026 16:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

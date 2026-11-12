@@ -5,34 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 13:00:01 +0000</lastBuildDate>
-    <item>
-      <title>氏名や電話番号、聞きません　漏洩問題で企業側、個人情報手放す動き：朝日新聞</title>
-      <link>https://www.asahi.com/articles/ASVCB0H13VCBUTIL009M.html</link>
-      <guid isPermaLink="false">https://www.asahi.com/articles/ASVCB0H13VCBUTIL009M.html</guid>
-      <description>[Score: 95] 個人情報漏洩問題が相次ぐ中、企業が顧客の個人情報を必要以上に集めない動きが広がっています。 / 焼肉きんぐはアプリ登録に氏名・電話番号を不要とし、タイムズカーは本人確認書類の画像データを即時削除する運用に変更しました。 / AIの台頭によるサイバー攻撃の高度化を受け、「守るべき個人情報そのものを持たないこと」が最大の安全策との認識が背景にあります。 [実務示唆: 個人情報を取り扱うシステム設計において、最小限のデータ収集と短期保存を原則とし、不要な個人情報は速やかに削除する「データミニマイゼーション」を徹底しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 10 Nov 2026 09:02:35 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 12 Nov 2026 02:35:13 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
       <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
       <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>macOS Secure EnclaveでSSHキーを保護する</title>
-      <link>https://gatezh.com/posts/macos-secure-enclave-ssh-keys/</link>
-      <guid isPermaLink="false">https://gatezh.com/posts/macos-secure-enclave-ssh-keys/</guid>
-      <description>[Score: 80] SSHキーのセキュリティ対策として、macOS Secure Enclaveを利用する方法について解説しています。 / ファイルパーミッションのみに依存する既存のSSHキー管理の脆弱性を指摘し、ハードウェアベースのセキュリティの重要性を強調。 / YubiKeyや1Passwordなどの代替案と比較しつつ、ネイティブなSecure Enclaveの活用を模索する内容です。 [実務示唆: SSHキーのセキュリティ強化のため、macOS Secure EnclaveやYubiKeyなどのハードウェアベースの保護を検討し、悪意あるスクリプトからの漏洩リスクを低減しましょう。] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 04:28:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>There Are Likely More Spies at AI Companies, Says Security Executive Lisa Thiergart</title>
-      <link>https://www.reddit.com/r/technology/comments/1xsuc18/there_are_likely_more_spies_at_ai_companies_says/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xsuc18/there_are_likely_more_spies_at_ai_companies_says/</guid>
-      <description>[Score: 70] セキュリティ幹部のLisa Thiergart氏によると、AI企業にはスパイがさらに多く潜入している可能性が高いと指摘されています。 / AI技術の戦略的重要性から、国家や競合他社による情報窃取の標的になりやすい状況が背景にあります。 / これは、AI企業がこれまで以上に厳重なセキュリティ対策を講じる必要性を示唆しています。 [実務示唆: AI企業は、知的財産保護のため、物理的・サイバーセキュリティ対策を強化し、従業員への情報セキュリティ教育を徹底するとともに、内部脅威への警戒を怠らないべき。] (Source: Reddit)</description>
-      <pubDate>Tue, 10 Nov 2026 18:18:37 +0000</pubDate>
     </item>
   </channel>
 </rss>
