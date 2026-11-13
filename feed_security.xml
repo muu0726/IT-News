@@ -5,13 +5,34 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Nov 2026 02:14:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 13:28:44 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
       <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
       <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>npmとPyPIにおける悪意のあるMCPパッケージ：4日間で7件</title>
+      <link>https://dev.to/henryramireztech/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-dias-1nc</link>
+      <guid isPermaLink="false">https://dev.to/henryramireztech/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-dias-1nc</guid>
+      <description>[Score: 95] npmとPyPIで悪意のあるMCPパッケージが4日間で7件報告され、GitHubはこれらをインストールしたシステムを完全に侵害されたものとして扱っています。 / depfix-ai、agent-trace-kit、@go-gost/mcp-darwin-x64（npm）は修正版がなく、my-mcp-server-driving-license-ocr（PyPI）はOCRと称して画像を暗号化せずに外部IPに送信します。 / これらのパッケージはOSVデータベースに登録されており、Amazon Inspectorによって悪意ある挙動が発見されました。 [実務示唆: npmやPyPIからパッケージをインストールする際は、常に信頼性を確認し、特に新規または知名度の低いパッケージについてはセキュリティスキャンやサンドボックス環境での検証を徹底すべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 13 Nov 2026 13:21:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>CRA報告対応② Dependency-Trackで脆弱性の検知を自動化する(Pleasanter連携)</title>
+      <link>https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 92] EUサイバーレジリエンス法（CRA）への対応として、OWASP Dependency-Track v5.2を用いて脆弱性検知からSlack通知、Pleasanterへの自動登録までを自動化した事例です。 / 積極的に悪用されている脆弱性（KEV, EPSS）の検知と期限管理を自動化することで、CRAが求める24時間以内の早期警告義務に対応することを目指しています。 / Dependency-Track v5の設定手順や、GitHub App Private KeyとAPI Tokenの併用不可といった注意点、OSVミラーリングの条件などが詳細に解説されています。 [実務示唆: CRAなどの法規制に対応するため、Dependency-TrackとPleasanterを連携させ、SBOM分析と脆弱性管理を自動化し、早期警告体制を構築しましょう。] [GitHub: DependencyTrack/dependency-track] (Source: Qiita)</description>
+      <pubDate>Fri, 13 Nov 2026 00:22:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI診断で出た緊急・高21件中6件は OWASP ASVS の1項目だった。せめて L1 は要件に入れたい話（2026年版）</title>
+      <link>https://qiita.com/ntaka329/items/012ad27328ecaae1c469?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ntaka329/items/012ad27328ecaae1c469?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AI（Claude Code）による脆弱性診断で検出された緊急・高リスクの指摘21件のうち、6件がOWASP ASVS 5.0の単一要件（8.2.2）に該当し、L1要件全体では12件が該当した事例を報告しています。 / ASVSのL1要件はアプリケーションセキュリティの最低限の基準であり、要件定義に含めることの重要性を強調しています。 / AWSサーバーレス環境での診断結果に基づき、ASVS L1をセキュリティ要件に含めることで、多くの高リスク脆弱性を未然に防げる可能性を示唆しています。 [実務示唆: アプリケーション開発の要件定義において、OWASP ASVS L1を最低限のセキュリティ基準として組み込むことで、AI診断で検出されるような基本的な高リスク脆弱性を削減できます。] [GitHub: OWASP/ASVS] (Source: Qiita)</description>
+      <pubDate>Thu, 12 Nov 2026 09:34:55 +0000</pubDate>
     </item>
     <item>
       <title>個人情報流出ニュースが怖いので、パスワード対策をガチで見直してみた</title>

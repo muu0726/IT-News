@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Nov 2026 02:14:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 13:28:44 +0000</lastBuildDate>
     <item>
       <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
@@ -40,6 +40,34 @@
       <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/</guid>
       <description>[Score: 95] Microsoft 365で大規模な障害が発生し、Outlook、Teams、Copilotといった主要サービスが世界中で利用できなくなりました。 / この障害は多くの企業や個人の業務に深刻な影響を与えたと推測されます。 / クラウドサービスの安定性と、障害発生時の対応の重要性が改めて浮き彫りになりました。 [実務示唆: Microsoft 365の障害は業務に大きな影響を与えるため、代替手段の検討や、障害発生時の情報収集・対応プロセスの確認を定期的に行うべきです。] (Source: Reddit)</description>
       <pubDate>Thu, 12 Nov 2026 23:37:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>最強オープンウェイトモデル Kimi-K3.1-Pro をセルフホストして独自ベンチで比べてみた</title>
+      <link>https://zenn.dev/fixstars/articles/kimi-k31-pro-benchmark</link>
+      <guid isPermaLink="false">https://zenn.dev/fixstars/articles/kimi-k31-pro-benchmark</guid>
+      <description>[Score: 95] Moonshot AIが開発したオープンウェイトの大規模言語モデルKimi-K3.1-Proは、2.8T-A104Bという最大級のサイズを誇り、高いベンチマークスコアを記録しています。 / 本記事では、Kimi-K3.1-Proをセルフホストし、推論速度や未知アーキテクチャのアセンブリ高速化性能を独自ベンチマークで検証しています。 / Kimi-K3からの大規模な事後学習とGated DSA層へのアーキテクチャ改良により、長文処理の計算量が削減されていることが示唆されています。 [実務示唆: 大規模言語モデルの導入を検討する企業は、Kimi-K3.1-Proのような高性能オープンウェイトモデルをセルフホストし、独自のワークロードで性能評価を行うことで、最適なモデル選定とコスト削減を図る。] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 23:50:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>npmとPyPIにおける悪意のあるMCPパッケージ：4日間で7件</title>
+      <link>https://dev.to/henryramireztech/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-dias-1nc</link>
+      <guid isPermaLink="false">https://dev.to/henryramireztech/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-dias-1nc</guid>
+      <description>[Score: 95] npmとPyPIで悪意のあるMCPパッケージが4日間で7件報告され、GitHubはこれらをインストールしたシステムを完全に侵害されたものとして扱っています。 / depfix-ai、agent-trace-kit、@go-gost/mcp-darwin-x64（npm）は修正版がなく、my-mcp-server-driving-license-ocr（PyPI）はOCRと称して画像を暗号化せずに外部IPに送信します。 / これらのパッケージはOSVデータベースに登録されており、Amazon Inspectorによって悪意ある挙動が発見されました。 [実務示唆: npmやPyPIからパッケージをインストールする際は、常に信頼性を確認し、特に新規または知名度の低いパッケージについてはセキュリティスキャンやサンドボックス環境での検証を徹底すべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 13 Nov 2026 13:21:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
+      <link>https://www.publickey1.jp/blog/26/awsawsaws_1.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsawsaws_1.html</guid>
+      <description>[Score: 92] AWSが、ローカルマシン上でAWSのAPIをエミュレートする公式ツール「AWSエミュレータ」を正式リリースしました。 / このエミュレータは無料で利用でき、AWSアカウントなしでオフラインでのアプリケーション構築・テストが可能です。 / 特筆すべきは、エミュレータのコードがAmazon Bedrock AgentCore上の自律型AIエージェントによって生成・テスト・修正された点です。 [実務示唆: AWS環境での開発・テストコスト削減と高速化のため、AWSエミュレータを導入し、ローカル環境でのオフライン開発・テストフローを構築することを推奨します。] (Source: Publickey)</description>
+      <pubDate>Thu, 12 Nov 2026 15:09:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>CRA報告対応② Dependency-Trackで脆弱性の検知を自動化する(Pleasanter連携)</title>
+      <link>https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 92] EUサイバーレジリエンス法（CRA）への対応として、OWASP Dependency-Track v5.2を用いて脆弱性検知からSlack通知、Pleasanterへの自動登録までを自動化した事例です。 / 積極的に悪用されている脆弱性（KEV, EPSS）の検知と期限管理を自動化することで、CRAが求める24時間以内の早期警告義務に対応することを目指しています。 / Dependency-Track v5の設定手順や、GitHub App Private KeyとAPI Tokenの併用不可といった注意点、OSVミラーリングの条件などが詳細に解説されています。 [実務示唆: CRAなどの法規制に対応するため、Dependency-TrackとPleasanterを連携させ、SBOM分析と脆弱性管理を自動化し、早期警告体制を構築しましょう。] [GitHub: DependencyTrack/dependency-track] (Source: Qiita)</description>
+      <pubDate>Fri, 13 Nov 2026 00:22:46 +0000</pubDate>
     </item>
     <item>
       <title>Fable 5.2でGTA 6 Osaka Cityを作ってみた</title>
@@ -77,74 +105,46 @@
       <pubDate>Thu, 12 Nov 2026 07:50:38 +0000</pubDate>
     </item>
     <item>
+      <title>仕組み編：Two-Towerによる検索システム（学習・推論・配信）</title>
+      <link>https://zenn.dev/ca_kagglers/articles/two-tower-mechanism</link>
+      <guid isPermaLink="false">https://zenn.dev/ca_kagglers/articles/two-tower-mechanism</guid>
+      <description>[Score: 90] Two-Towerモデルは、検索・推薦タスクでクエリとアイテムを別々のニューラルネットワークでベクトル化し、類似度で関連度を評価するモデルです。 / アイテム側のベクトルを事前に計算できるため、大量の候補から効率的な検索が可能です。 / 本記事では、Two-Towerの構造、推論、学習（特に負例サンプリング）、配信までを詳細に解説しています。 [実務示唆: 検索・推薦システムを構築する際、Two-Towerモデルの導入を検討し、特に負例サンプリングの手法を理解してモデルの精度向上に役立てる。] (Source: Zenn)</description>
+      <pubDate>Fri, 13 Nov 2026 01:55:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI診断で出た緊急・高21件中6件は OWASP ASVS の1項目だった。せめて L1 は要件に入れたい話（2026年版）</title>
+      <link>https://qiita.com/ntaka329/items/012ad27328ecaae1c469?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/ntaka329/items/012ad27328ecaae1c469?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AI（Claude Code）による脆弱性診断で検出された緊急・高リスクの指摘21件のうち、6件がOWASP ASVS 5.0の単一要件（8.2.2）に該当し、L1要件全体では12件が該当した事例を報告しています。 / ASVSのL1要件はアプリケーションセキュリティの最低限の基準であり、要件定義に含めることの重要性を強調しています。 / AWSサーバーレス環境での診断結果に基づき、ASVS L1をセキュリティ要件に含めることで、多くの高リスク脆弱性を未然に防げる可能性を示唆しています。 [実務示唆: アプリケーション開発の要件定義において、OWASP ASVS L1を最低限のセキュリティ基準として組み込むことで、AI診断で検出されるような基本的な高リスク脆弱性を削減できます。] [GitHub: OWASP/ASVS] (Source: Qiita)</description>
+      <pubDate>Thu, 12 Nov 2026 09:34:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>2026年11月に発生したMicrosoft 365の接続障害についてまとめてみた - piyolog</title>
+      <link>https://piyolog.hatenadiary.jp/entry/2026/11/13/114230</link>
+      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/11/13/114230</guid>
+      <description>[Score: 90] 2026年11月13日、Microsoft 365サービスで大規模な接続障害が発生し、Exchange Onlineを中心に複数のサービスに影響が出ました。 / 障害はExchange Onlineのメールボックス接続問題から始まり、Teams、SharePoint Online、Microsoft 365 Copilotなど20サービスに拡大しました。 / 当初は負荷上昇が原因とされましたが、後に多数のサーバーが自動ヘルスチェックに失敗し、残りのインフラに負荷が集中したためと説明が更新されました。 [実務示唆: クラウドサービスを利用する際は、単一障害点のリスクを理解し、依存関係にあるサービスが停止した場合の代替策や影響範囲を事前に確認しておくべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 03:20:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
+      <link>https://www.publickey1.jp/blog/26/google_antigravityaiai.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_antigravityaiai.html</guid>
+      <description>[Score: 88] Googleが提供するAIエージェント開発環境「Antigravity」に、クラウド上でAIエージェントが動作する「リモートエージェント」機能が搭載されました。 / これにより、ユーザーのローカルPCの電源がオフでも、AIエージェントは独立したクラウド仮想マシン上でタスクを継続できます。 / 開発者は、AIエージェントに指示を出した後、PCを閉じても作業が進行し、テスト完了やプルリクエスト作成までを自動化できるようになります。 [実務示唆: AIエージェントを活用した開発プロセスを検討する際、Google Antigravityのリモートエージェント機能を利用し、開発効率の向上と継続的な作業自動化を試すことを推奨します。] (Source: Publickey)</description>
+      <pubDate>Thu, 12 Nov 2026 15:13:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Microsoftがサービス復旧に苦戦、OutlookとTeamsに世界的な障害が発生</title>
+      <link>https://www.reddit.com/r/technology/comments/1xuwsip/microsoft_struggling_to_restore_service_as_global/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xuwsip/microsoft_struggling_to_restore_service_as_global/</guid>
+      <description>[Score: 88] MicrosoftのOutlookとTeamsを含むグローバルなサービス障害が発生し、Microsoftは復旧に苦戦しています。 / この障害は世界中のユーザーに影響を及ぼし、コミュニケーションや業務に大きな支障が出ています。 / 具体的な原因は不明ですが、迅速な復旧が求められています。 [実務示唆: OutlookやTeamsに依存する業務プロセスを見直し、障害発生時の代替コミュニケーション手段を確保する。] (Source: Reddit)</description>
+      <pubDate>Fri, 13 Nov 2026 03:05:32 +0000</pubDate>
+    </item>
+    <item>
       <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
       <link>https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 85] AWS Emulatorは、AWSアカウントなしでローカルやCI上でAWS SDK/CLIの呼び出しをエミュレートするツールです。 / 本記事では、特にCDK/TerraformなどのIaCツールがAWS Emulator上でどこまで動作するかを検証しています。 / 公式ドキュメントではIaCツールへの対応はサービスによって異なるとされており、その実態をWindows 11 + Docker環境で試した結果がまとめられています。 [実務示唆: AWS Emulatorの導入を検討する際は、利用するAWSサービスがIaCツールでどこまでサポートされているか、忠実度テストの結果を確認し、事前に検証すること。] (Source: Qiita)</description>
       <pubDate>Wed, 11 Nov 2026 23:39:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
-      <link>https://www.publickey1.jp/blog/26/playwrightbun.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/playwrightbun.html</guid>
-      <description>[Score: 85] Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンv1.65.0でBunでのテストランナー実行を正式にサポートしました。 / これにより、PlaywrightのテストランナーはNode.jsに加えてBun環境でも動作可能になります。 / BunがTypeScriptテストファイルを直接トランスパイルするため、Babelやコンパイルキャッシュが不要となり、システムがシンプルになる利点があります。 [実務示唆: PlaywrightユーザーはBunを導入することで、TypeScriptテストのトランスパイルプロセスを簡素化し、テスト実行の高速化や開発環境の効率化を検討しましょう。] [GitHub: microsoft/playwright] (Source: Publickey)</description>
-      <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Rust 1.100</title>
-      <link>https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/</link>
-      <guid isPermaLink="false">https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/</guid>
-      <description>[Score: 85] Rustチームはプログラミング言語Rustのバージョン1.100.0をリリースしました。 / このバージョンでは、10年越しで「never type」（!）が安定化され、制御フローを終了する式がこの型を持つようになります。 / これにより、コードの安全性と表現力が向上し、より堅牢なソフトウェア開発が可能になります。 [実務示唆: Rust開発者は、`rustup update stable`で1.100.0に更新し、never type `!`の安定化によるコードの改善点や新たなパターンを検証し、活用を検討すべきです。] [GitHub: rust-lang/rust] (Source: Hacker News)</description>
-      <pubDate>Thu, 12 Nov 2026 18:39:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>AWS EmulatorはAWS Blocksのモックを置き換えるのか？実際に動かして見えた「三つ目の層」</title>
-      <link>https://zenn.dev/genda_jp/articles/18d1f780f6b41f</link>
-      <guid isPermaLink="false">https://zenn.dev/genda_jp/articles/18d1f780f6b41f</guid>
-      <description>[Score: 85] AWSがリリースしたAWS Emulatorが、既存のAWS Blocksのモックを置き換えるのかという疑問について検証しています。 / 結論として、Emulatorはモックを置き換えるのではなく、モックとサンドボックスの間に位置する「三つ目の層」として機能する可能性が示唆されています。 / EmulatorはAWS SDKやCLIの呼び出しをローカルでエミュレートし、Blocksのテスト環境での活用が効果的であると分析されています。 [実務示唆: AWS Blocksを利用する開発者は、AWS Emulatorを導入し、ローカル開発環境でのテストやデバッグの効率化を図ることを検討する。] [GitHub: aws/aws-emulator] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 05:20:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIに書かせる時代だからこそ、コード1行を読む</title>
-      <link>https://qiita.com/yukegineer/items/e8fa851317846aa24de6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yukegineer/items/e8fa851317846aa24de6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AIがコードを生成する現代において、プログラマーがコードを1行ずつ読み込み、その意味を深く理解することの重要性を説いています。 / 「動けばOK」ではなく、NullPointerExceptionのような潜在的なバグを見つけるためにも、コードの挙動を予測できるレベルでの理解が不可欠です。 / コードレビューの経験から、この習慣がプログラマーとしての成長の土台になると筆者は主張しています。 [実務示唆: AI生成コードであっても、潜在的なバグを見つけるため、常に1行ずつコードを読み込み、その挙動を予測できるレベルまで理解する習慣を身につけるべきです。] (Source: Qiita)</description>
-      <pubDate>Tue, 10 Nov 2026 00:38:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>個人情報流出ニュースが怖いので、パスワード対策をガチで見直してみた</title>
-      <link>https://qiita.com/koshiro_esaki/items/22b7e355068ac0dad571?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/koshiro_esaki/items/22b7e355068ac0dad571?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] 個人情報流出のニュースを受け、個人でできるパスワード対策を根本から見直した記事です。 / パスワードの使い回しをやめ、サービスごとに異なる15文字以上のパスワードを設定することを推奨しています。 / パスワードマネージャーの活用や、多要素認証の導入、フィッシング詐欺対策の重要性についても解説しています。 [実務示唆: 全サービスで15文字以上の異なるパスワードを設定し、パスワードマネージャーと多要素認証を導入して、フィッシング詐欺にも注意を払いましょう。] (Source: Qiita)</description>
-      <pubDate>Tue, 10 Nov 2026 02:10:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>【備忘録】Transformerを数式レベルからnumpyのみで実装して理解する（②Backward Propagation編）</title>
-      <link>https://zenn.dev/matsu8/articles/a01ba3fc713e03</link>
-      <guid isPermaLink="false">https://zenn.dev/matsu8/articles/a01ba3fc713e03</guid>
-      <description>[Score: 80] Transformerの各部品の誤差逆伝播法（Back Propagation）をNumPyのみで実装し、損失から全パラメータへの勾配の流れを確認する記事です。 / 前回のForward Propagationに続き、今回はBackward Propagationの実装に焦点を当て、具体的なコードと数式レベルでの解説が行われています。 / AIツールが普及する中でも、自らの手で実装することで得られる「イメージを自分の中に保存する」という学習価値を強調しています。 [実務示唆: Transformerの内部動作を深く理解するため、NumPyによるBackward Propagationの実装を実際に手を動かして追体験し、理論と実践を結びつける。] [GitHub: matsu8/transformer-numpy-implementation] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 13:30:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>Show HN: 300ドルの刺繍機にサブスクが必要だったので、自作アプリを開発した</title>
-      <link>https://github.com/simpsoka/zigzag</link>
-      <guid isPermaLink="false">https://github.com/simpsoka/zigzag</guid>
-      <description>[Score: 75] ユーザーが300ドルの刺繍機にサブスクリプションが必要だったため、Rustで独自のビジュアル刺繍エディタ「ZigZag」を開発しました。 / ZigZagはSVGアートワークをステッチに変換し、エディタで調整、PES/DST/EXP/JEF/VP3形式でエクスポート可能です。 / AIエージェントがデザイン作成・編集を支援するMCP（Model Context Protocol）もサポートしており、MacとWindowsで利用できます。 [実務示唆: 刺繍機ユーザーやDIY愛好家は、ZigZagアプリをダウンロードして、サブスク不要でSVGから刺繍デザインを作成・編集し、AI支援機能の可能性を探るべきです。] [GitHub: simpsoka/zigzag] (Source: Hacker News)</description>
-      <pubDate>Thu, 12 Nov 2026 17:02:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>週刊Cloudflare - 2026/11/08週</title>
-      <link>https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107</link>
-      <guid isPermaLink="false">https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107</guid>
-      <description>[Score: 75] Cloudflareの2026年11月08週のアップデートがまとめられています。 / Workerの設定比較時の権限確認の省略や、Wrangler deploy時のroute/custom domain metadata取得の改善など、開発者体験向上が図られています。 / 新しいプロジェクト作成時のcompatibility dateのデフォルト値更新や、WranglerによるContainer application削除提案機能の追加も含まれています。 [実務示唆: Cloudflare Workersを利用する開発者は、最新のWranglerや関連ライブラリにアップデートし、新しい機能や改善点を開発ワークフローに組み込む。] [GitHub: cloudflare/workers-sdk] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 04:54:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>セキュリティ・キャンプ 2026 応募課題晒し</title>
-      <link>https://zenn.dev/uvu/articles/758ee227a614ea</link>
-      <guid isPermaLink="false">https://zenn.dev/uvu/articles/758ee227a614ea</guid>
-      <description>[Score: 70] 筆者がセキュリティ・キャンプ修了後、プロダクトセキュリティクラスでの学びを振り返る記事です。 / 特にAIを活用した開発とインフラ・ネットワークセキュリティに関する講義に強い関心を示しています。 / ProxmoxやKubernetesなどを活用した実運用に近いシステム構築経験から、安全なシステム設計の重要性を強調しています。 [実務示唆: AI生成コードのセキュリティ評価や、攻撃者視点での外部公開リソースのリスク分析手法を学び、自身の開発・運用に活かすことを検討しましょう。] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 06:45:01 +0000</pubDate>
     </item>
   </channel>
 </rss>

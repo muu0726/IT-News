@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Nov 2026 02:14:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 13:28:44 +0000</lastBuildDate>
     <item>
       <title>大規模なMicrosoft 365の障害がOutlook、Teams、Copilotに世界中で影響</title>
       <link>https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/</link>
@@ -14,11 +14,32 @@
       <pubDate>Thu, 12 Nov 2026 23:37:54 +0000</pubDate>
     </item>
     <item>
+      <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
+      <link>https://www.publickey1.jp/blog/26/awsawsaws_1.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsawsaws_1.html</guid>
+      <description>[Score: 92] AWSが、ローカルマシン上でAWSのAPIをエミュレートする公式ツール「AWSエミュレータ」を正式リリースしました。 / このエミュレータは無料で利用でき、AWSアカウントなしでオフラインでのアプリケーション構築・テストが可能です。 / 特筆すべきは、エミュレータのコードがAmazon Bedrock AgentCore上の自律型AIエージェントによって生成・テスト・修正された点です。 [実務示唆: AWS環境での開発・テストコスト削減と高速化のため、AWSエミュレータを導入し、ローカル環境でのオフライン開発・テストフローを構築することを推奨します。] (Source: Publickey)</description>
+      <pubDate>Thu, 12 Nov 2026 15:09:51 +0000</pubDate>
+    </item>
+    <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
       <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
       <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
       <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>2026年11月に発生したMicrosoft 365の接続障害についてまとめてみた - piyolog</title>
+      <link>https://piyolog.hatenadiary.jp/entry/2026/11/13/114230</link>
+      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/11/13/114230</guid>
+      <description>[Score: 90] 2026年11月13日、Microsoft 365サービスで大規模な接続障害が発生し、Exchange Onlineを中心に複数のサービスに影響が出ました。 / 障害はExchange Onlineのメールボックス接続問題から始まり、Teams、SharePoint Online、Microsoft 365 Copilotなど20サービスに拡大しました。 / 当初は負荷上昇が原因とされましたが、後に多数のサーバーが自動ヘルスチェックに失敗し、残りのインフラに負荷が集中したためと説明が更新されました。 [実務示唆: クラウドサービスを利用する際は、単一障害点のリスクを理解し、依存関係にあるサービスが停止した場合の代替策や影響範囲を事前に確認しておくべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 03:20:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>Microsoftがサービス復旧に苦戦、OutlookとTeamsに世界的な障害が発生</title>
+      <link>https://www.reddit.com/r/technology/comments/1xuwsip/microsoft_struggling_to_restore_service_as_global/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xuwsip/microsoft_struggling_to_restore_service_as_global/</guid>
+      <description>[Score: 88] MicrosoftのOutlookとTeamsを含むグローバルなサービス障害が発生し、Microsoftは復旧に苦戦しています。 / この障害は世界中のユーザーに影響を及ぼし、コミュニケーションや業務に大きな支障が出ています。 / 具体的な原因は不明ですが、迅速な復旧が求められています。 [実務示唆: OutlookやTeamsに依存する業務プロセスを見直し、障害発生時の代替コミュニケーション手段を確保する。] (Source: Reddit)</description>
+      <pubDate>Fri, 13 Nov 2026 03:05:32 +0000</pubDate>
     </item>
     <item>
       <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
@@ -42,11 +63,53 @@
       <pubDate>Thu, 12 Nov 2026 05:20:41 +0000</pubDate>
     </item>
     <item>
+      <title>Brave Search APIがx402プロトコルによるエージェント決済に対応</title>
+      <link>https://brave.com/blog/search-api-agentic-payments/</link>
+      <guid isPermaLink="false">https://brave.com/blog/search-api-agentic-payments/</guid>
+      <description>[Score: 85] Brave Search APIが、オープンなx402決済プロトコルを介した即時・従量課金のエージェント決済に対応しました。 / これにより、開発者や自律型AIエージェントは、従来のAPIキー管理なしにプログラムでBraveの検索インデックスを利用できます。 / USDCステーブルコインをBaseブロックチェーン経由で支払い、LLMのコンテキスト取得や一般的なウェブ検索をオンデマンドで利用可能です。 [実務示唆: AIエージェント開発者は、Brave Search APIとx402プロトコルを組み合わせることで、APIキー管理不要なオンデマンド検索機能を実装し、開発効率と柔軟性を向上させる。] (Source: Hacker News)</description>
+      <pubDate>Fri, 13 Nov 2026 03:08:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>大容量データのアップロードを止めるな：tusによる再開できるアップロード</title>
+      <link>https://zenn.dev/hololab/articles/7c2d34e9711ddf</link>
+      <guid isPermaLink="false">https://zenn.dev/hololab/articles/7c2d34e9711ddf</guid>
+      <description>[Score: 85] CADや3Dスキャンデータなど、GB単位の大容量ファイルをWebアプリケーションで扱う際のアップロード課題を解決する記事です。 / tusプロトコル、tusd（Go製サーバー実装）、Uppy（ブラウザクライアント）を組み合わせることで、通信断やサーバー再起動後も途中からアップロードを再開できることを検証しました。 / Windows Server + IIS環境で30GiB・150ファイルを約4分37秒で転送し、共有フォルダへのコピーと同等の速度と安定性を確認しています。 [実務示唆: 大容量ファイルアップロードが必要なシステムでは、tusプロトコルとtusd/Uppyの導入を検討し、中断からの再開機能でユーザー体験を向上させましょう。] [GitHub: tus/tusd] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 23:00:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>MicrosoftのM365大規模障害が15時間以上続き、修正が失敗し続けている</title>
+      <link>https://www.reddit.com/r/technology/comments/1xv6c5l/microsofts_massive_m365_outage_stretches_past_15/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xv6c5l/microsofts_massive_m365_outage_stretches_past_15/</guid>
+      <description>[Score: 85] Microsoft 365で大規模なサービス障害が発生し、15時間以上にわたって継続しています。 / Microsoftは復旧を試みていますが、度重なる修正が失敗に終わっている模様です。 / この障害は多くのユーザーに影響を与え、業務に支障をきたしています。 [実務示唆: Microsoft 365の障害発生時は、代替サービスやオフラインでの作業体制を事前に検討し、事業継続計画を見直す。] (Source: Reddit)</description>
+      <pubDate>Fri, 13 Nov 2026 12:15:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Microsoft、グローバル障害の修正が「期待通りに進んでいない」と発表</title>
+      <link>https://www.reddit.com/r/technology/comments/1xuzvn8/microsoft_says_attempts_to_fix_global_outage_not/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xuzvn8/microsoft_says_attempts_to_fix_global_outage_not/</guid>
+      <description>[Score: 80] Microsoftがグローバル規模のサービス障害に見舞われ、その復旧作業が「期待通りに進んでいない」と発表したことを伝えるニュースです。 / 具体的な障害の原因や影響範囲の詳細は不明ですが、大規模なシステム障害が発生している状況を示唆しています。 / Microsoftの主要サービスに依存する企業やユーザーに広範な影響が出ている可能性があります。 [実務示唆: クラウドサービスに依存するシステムでは、単一障害点のリスクを考慮し、マルチクラウド戦略やオフラインでの代替手段の検討など、障害発生時の事業継続計画を見直しましょう。] (Source: Reddit)</description>
+      <pubDate>Fri, 13 Nov 2026 05:49:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI生成UIレイアウトのレビューとデバッグ：一貫性のないコンポーネント階層の検出</title>
+      <link>https://dev.to/mspk97/reviewing-and-debugging-ai-generated-ui-layouts-detecting-inconsistent-component-hierarchies-18fo</link>
+      <guid isPermaLink="false">https://dev.to/mspk97/reviewing-and-debugging-ai-generated-ui-layouts-detecting-inconsistent-component-hierarchies-18fo</guid>
+      <description>[Score: 80] AIが生成したUIコードでは、コンポーネント階層の不整合やスタイルの衝突により、レイアウトが崩れる問題が発生しがちです。 / AIは短時間でコンポーネントツリーを生成できますが、ボタンがカードの外に出るなど、視覚的な破損や予期せぬ動作を引き起こすことがあります。 / 手動でのデバッグは困難なため、コンポーネントツリーを走査し、デザインシステムやUIパターンに基づいたルールを適用して自動的に異常を検出するツールの開発が推奨されています。 [実務示唆: AI生成UIコードを導入する際は、デザインシステムのルールをコード化し、自動でコンポーネント階層の不整合やスタイル衝突を検出する仕組みを構築し、品質を担保すべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 13 Nov 2026 13:22:59 +0000</pubDate>
+    </item>
+    <item>
       <title>週刊Cloudflare - 2026/11/08週</title>
       <link>https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107</link>
       <guid isPermaLink="false">https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107</guid>
       <description>[Score: 75] Cloudflareの2026年11月08週のアップデートがまとめられています。 / Workerの設定比較時の権限確認の省略や、Wrangler deploy時のroute/custom domain metadata取得の改善など、開発者体験向上が図られています。 / 新しいプロジェクト作成時のcompatibility dateのデフォルト値更新や、WranglerによるContainer application削除提案機能の追加も含まれています。 [実務示唆: Cloudflare Workersを利用する開発者は、最新のWranglerや関連ライブラリにアップデートし、新しい機能や改善点を開発ワークフローに組み込む。] [GitHub: cloudflare/workers-sdk] (Source: Zenn)</description>
       <pubDate>Thu, 12 Nov 2026 04:54:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub稼働状況レポート: 2026年10月</title>
+      <link>https://github.blog/news-insights/company-news/github-availability-report-october-2026/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-october-2026/</guid>
+      <description>[Score: 75] GitHubは2026年10月の稼働状況レポートを公開し、可用性と信頼性向上の取り組みを報告しました。 / Azure Central USへの大幅な容量追加と障害エスカレーション経路の削減を進めました。 / しかし、書き込み停止、データ移行中の監視ギャップ、地域ネットワーク障害が発生し、容量増強と並行して安全な運用と分離、地域復旧の検証の必要性が強調されました。 [実務示唆: 大規模なサービスを運用するエンジニアは、GitHubの事例から、容量増強だけでなく、運用手順の安全性、システムの分離、災害復旧計画の定期的な検証の重要性を学び、自社システムに適用すべきです。] [GitHub: github/docs] (Source: GitHub Blog)</description>
+      <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
     </item>
   </channel>
 </rss>

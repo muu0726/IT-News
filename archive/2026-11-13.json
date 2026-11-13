@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T11:09:14.720822+09:00",
-  "total_count": 42,
-  "success_count": 28,
-  "error_count": 14,
+  "generated_at": "2026-11-13T22:27:29.271819+09:00",
+  "total_count": 73,
+  "success_count": 63,
+  "error_count": 10,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
     {
@@ -26,7 +26,7 @@
       "new_at": "2026-11-12T23:00:13.455693+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 22,
+      "hatena_count": 23,
       "is_prev_seen": true
     },
     {
@@ -77,7 +77,7 @@
       "new_at": "2026-11-13T11:09:14.720822+09:00",
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "Edge0-145B: あなたのコンピューターで最先端のAI機能を実現",
@@ -124,8 +124,99 @@
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
       "hatena_count": 0,
+      "topic_group": 1,
+      "topic_size": 10
+    },
+    {
+      "title": "最強オープンウェイトモデル Kimi-K3.1-Pro をセルフホストして独自ベンチで比べてみた",
+      "url": "https://zenn.dev/fixstars/articles/kimi-k31-pro-benchmark",
+      "source": "Zenn",
+      "published": "2026-11-12T23:50:35+00:00",
+      "reading_min": 15,
+      "summary": "Moonshot AIが開発したオープンウェイトの大規模言語モデルKimi-K3.1-Proは、2.8T-A104Bという最大級のサイズを誇り、高いベンチマークスコアを記録しています。\n本記事では、Kimi-K3.1-Proをセルフホストし、推論速度や未知アーキテクチャのアセンブリ高速化性能を独自ベンチマークで検証しています。\nKimi-K3からの大規模な事後学習とGated DSA層へのアーキテクチャ改良により、長文処理の計算量が削減されていることが示唆されています。",
+      "actionable_takeaway": "大規模言語モデルの導入を検討する企業は、Kimi-K3.1-Proのような高性能オープンウェイトモデルをセルフホストし、独自のワークロードで性能評価を行うことで、最適なモデル選定とコスト削減を図る。",
+      "tags": [
+        "LLM",
+        "オープンソースAI",
+        "ベンチマーク"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "最新の高性能オープンウェイトLLMのセルフホストと詳細なベンチマークは、AI開発者にとって非常に実践的で価値が高く、業界への影響も大きい。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "npmとPyPIにおける悪意のあるMCPパッケージ：4日間で7件",
+      "url": "https://dev.to/henryramireztech/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-dias-1nc",
+      "source": "Dev.to",
+      "published": "2026-11-13T13:21:49+00:00",
+      "reading_min": 1,
+      "summary": "npmとPyPIで悪意のあるMCPパッケージが4日間で7件報告され、GitHubはこれらをインストールしたシステムを完全に侵害されたものとして扱っています。\ndepfix-ai、agent-trace-kit、@go-gost/mcp-darwin-x64（npm）は修正版がなく、my-mcp-server-driving-license-ocr（PyPI）はOCRと称して画像を暗号化せずに外部IPに送信します。\nこれらのパッケージはOSVデータベースに登録されており、Amazon Inspectorによって悪意ある挙動が発見されました。",
+      "actionable_takeaway": "npmやPyPIからパッケージをインストールする際は、常に信頼性を確認し、特に新規または知名度の低いパッケージについてはセキュリティスキャンやサンドボックス環境での検証を徹底すべきです。",
+      "tags": [
+        "npm",
+        "PyPI",
+        "サプライチェーン攻撃"
+      ],
+      "category": "セキュリティ",
+      "score": 95,
+      "score_reason": "ソフトウェアサプライチェーン攻撃の具体的な事例であり、多くの開発者が利用するパッケージマネージャーのセキュリティリスクを直接的に警告しているため、非常に重要度が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース",
+      "url": "https://www.publickey1.jp/blog/26/awsawsaws_1.html",
+      "source": "Publickey",
+      "published": "2026-11-12T15:09:51+00:00",
+      "reading_min": 5,
+      "summary": "AWSが、ローカルマシン上でAWSのAPIをエミュレートする公式ツール「AWSエミュレータ」を正式リリースしました。\nこのエミュレータは無料で利用でき、AWSアカウントなしでオフラインでのアプリケーション構築・テストが可能です。\n特筆すべきは、エミュレータのコードがAmazon Bedrock AgentCore上の自律型AIエージェントによって生成・テスト・修正された点です。",
+      "actionable_takeaway": "AWS環境での開発・テストコスト削減と高速化のため、AWSエミュレータを導入し、ローカル環境でのオフライン開発・テストフローを構築することを推奨します。",
+      "tags": [
+        "AWS",
+        "エミュレータ",
+        "ローカル開発"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 92,
+      "score_reason": "AWS公式のエミュレータは、開発・テストの効率とコストを大幅に改善する可能性があり、さらにAIエージェントによるコード生成という先進的な開発手法が用いられている点で非常に重要度が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T11:09:14.720822+09:00",
+      "is_hot": false,
+      "hatena_count": 139,
       "topic_group": 3,
-      "topic_size": 5
+      "topic_size": 3
+    },
+    {
+      "title": "CRA報告対応② Dependency-Trackで脆弱性の検知を自動化する(Pleasanter連携)",
+      "url": "https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-13T00:22:46+00:00",
+      "reading_min": 16,
+      "summary": "EUサイバーレジリエンス法（CRA）への対応として、OWASP Dependency-Track v5.2を用いて脆弱性検知からSlack通知、Pleasanterへの自動登録までを自動化した事例です。\n積極的に悪用されている脆弱性（KEV, EPSS）の検知と期限管理を自動化することで、CRAが求める24時間以内の早期警告義務に対応することを目指しています。\nDependency-Track v5の設定手順や、GitHub App Private KeyとAPI Tokenの併用不可といった注意点、OSVミラーリングの条件などが詳細に解説されています。",
+      "actionable_takeaway": "CRAなどの法規制に対応するため、Dependency-TrackとPleasanterを連携させ、SBOM分析と脆弱性管理を自動化し、早期警告体制を構築しましょう。",
+      "github_repo": "DependencyTrack/dependency-track",
+      "tags": [
+        "SBOM",
+        "脆弱性管理",
+        "CRA"
+      ],
+      "category": "セキュリティ",
+      "score": 92,
+      "score_reason": "EUのCRAは今後多くの企業に影響を与えるため、その対応策として具体的なツール連携による脆弱性管理自動化の事例は非常に実用性が高く、重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "Fable 5.2でGTA 6 Osaka Cityを作ってみた",
@@ -194,7 +285,7 @@
       "new_at": "2026-11-06T10:49:33.378115+09:00",
       "first_seen": "2026-11-06T10:49:33.378115+09:00",
       "is_hot": false,
-      "hatena_count": 20,
+      "hatena_count": 21,
       "topic_group": 1,
       "topic_size": 2,
       "is_prev_seen": true
@@ -204,8 +295,8 @@
       "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
       "source": "Hacker News",
       "published": "2026-11-12T18:52:01+00:00",
-      "hn_score": 310,
-      "hn_comments": 73,
+      "hn_score": 443,
+      "hn_comments": 130,
       "reading_min": 2,
       "summary": "Google Antigravity内でGemini 4 Hydrogenと新しいOrchestratorモデルオプションが展開されました。\nOrchestratorはHydrogenと強力なモデル（Gemini 4 Carbonなど）を組み合わせて、長期間のタスクにおいて品質、効率、レイテンシーの最適バランスを実現します。\nこれは、動的なアプローチでタスクの複雑性に応じてモデルを切り替えることで、大規模なエンジニアリングタスクを効率的に処理することを目的としています。",
       "actionable_takeaway": "Google Antigravityユーザーは、Orchestratorオプションを試用し、大規模なマルチワークツリータスクや複雑なエンジニアリング問題に対するAIエージェントの効率と品質向上を評価すべきです。",
@@ -221,7 +312,9 @@
       "new_at": "2026-11-13T11:09:14.720822+09:00",
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 1,
+      "topic_group": 2,
+      "topic_size": 2
     },
     {
       "title": "VS Code の Local harness は2027年2月に削除：Copilot harness へ移行する手順とつまずきポイント",
@@ -247,6 +340,120 @@
       "hatena_count": 0
     },
     {
+      "title": "仕組み編：Two-Towerによる検索システム（学習・推論・配信）",
+      "url": "https://zenn.dev/ca_kagglers/articles/two-tower-mechanism",
+      "source": "Zenn",
+      "published": "2026-11-13T01:55:36+00:00",
+      "reading_min": 9,
+      "summary": "Two-Towerモデルは、検索・推薦タスクでクエリとアイテムを別々のニューラルネットワークでベクトル化し、類似度で関連度を評価するモデルです。\nアイテム側のベクトルを事前に計算できるため、大量の候補から効率的な検索が可能です。\n本記事では、Two-Towerの構造、推論、学習（特に負例サンプリング）、配信までを詳細に解説しています。",
+      "actionable_takeaway": "検索・推薦システムを構築する際、Two-Towerモデルの導入を検討し、特に負例サンプリングの手法を理解してモデルの精度向上に役立てる。",
+      "tags": [
+        "推薦システム",
+        "機械学習",
+        "Two-Tower"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "Two-Towerモデルは検索・推薦システムで広く使われる重要な技術であり、その仕組みと実装に関する詳細な解説は実務に直結する価値が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "AI診断で出た緊急・高21件中6件は OWASP ASVS の1項目だった。せめて L1 は要件に入れたい話（2026年版）",
+      "url": "https://qiita.com/ntaka329/items/012ad27328ecaae1c469?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-12T09:34:55+00:00",
+      "reading_min": 19,
+      "summary": "AI（Claude Code）による脆弱性診断で検出された緊急・高リスクの指摘21件のうち、6件がOWASP ASVS 5.0の単一要件（8.2.2）に該当し、L1要件全体では12件が該当した事例を報告しています。\nASVSのL1要件はアプリケーションセキュリティの最低限の基準であり、要件定義に含めることの重要性を強調しています。\nAWSサーバーレス環境での診断結果に基づき、ASVS L1をセキュリティ要件に含めることで、多くの高リスク脆弱性を未然に防げる可能性を示唆しています。",
+      "actionable_takeaway": "アプリケーション開発の要件定義において、OWASP ASVS L1を最低限のセキュリティ基準として組み込むことで、AI診断で検出されるような基本的な高リスク脆弱性を削減できます。",
+      "github_repo": "OWASP/ASVS",
+      "tags": [
+        "セキュリティ",
+        "OWASP ASVS",
+        "AI診断"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "AI診断の活用とOWASP ASVSの重要性を結びつけ、具体的な要件定義への落とし込みを提案しており、セキュリティ対策の実践に直結する価値が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "2026年11月に発生したMicrosoft 365の接続障害についてまとめてみた - piyolog",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/13/114230",
+      "source": "はてなブックマーク",
+      "published": "2026-11-13T03:20:28+00:00",
+      "reading_min": 4,
+      "summary": "2026年11月13日、Microsoft 365サービスで大規模な接続障害が発生し、Exchange Onlineを中心に複数のサービスに影響が出ました。\n障害はExchange Onlineのメールボックス接続問題から始まり、Teams、SharePoint Online、Microsoft 365 Copilotなど20サービスに拡大しました。\n当初は負荷上昇が原因とされましたが、後に多数のサーバーが自動ヘルスチェックに失敗し、残りのインフラに負荷が集中したためと説明が更新されました。",
+      "actionable_takeaway": "クラウドサービスを利用する際は、単一障害点のリスクを理解し、依存関係にあるサービスが停止した場合の代替策や影響範囲を事前に確認しておくべきです。",
+      "tags": [
+        "Microsoft 365",
+        "障害",
+        "クラウドサービス"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 90,
+      "score_reason": "大規模なクラウドサービスの障害事例であり、その原因と影響範囲の分析は、システム設計や運用における信頼性向上に直結するため、非常に重要度が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 172,
+      "topic_group": 1,
+      "topic_size": 10
+    },
+    {
+      "title": "Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける",
+      "url": "https://www.publickey1.jp/blog/26/google_antigravityaiai.html",
+      "source": "Publickey",
+      "published": "2026-11-12T15:13:43+00:00",
+      "reading_min": 5,
+      "summary": "Googleが提供するAIエージェント開発環境「Antigravity」に、クラウド上でAIエージェントが動作する「リモートエージェント」機能が搭載されました。\nこれにより、ユーザーのローカルPCの電源がオフでも、AIエージェントは独立したクラウド仮想マシン上でタスクを継続できます。\n開発者は、AIエージェントに指示を出した後、PCを閉じても作業が進行し、テスト完了やプルリクエスト作成までを自動化できるようになります。",
+      "actionable_takeaway": "AIエージェントを活用した開発プロセスを検討する際、Google Antigravityのリモートエージェント機能を利用し、開発効率の向上と継続的な作業自動化を試すことを推奨します。",
+      "tags": [
+        "Google Antigravity",
+        "AIエージェント",
+        "クラウド開発"
+      ],
+      "category": "AI・機械学習",
+      "score": 88,
+      "score_reason": "AIエージェントがクラウド上で自律的に動作し続ける機能は、開発プロセスの自動化と効率化を大きく進める可能性があり、技術的新規性と実用性が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T11:09:14.720822+09:00",
+      "is_hot": false,
+      "hatena_count": 7
+    },
+    {
+      "title": "Microsoftがサービス復旧に苦戦、OutlookとTeamsに世界的な障害が発生",
+      "url": "https://www.reddit.com/r/technology/comments/1xuwsip/microsoft_struggling_to_restore_service_as_global/",
+      "source": "Reddit",
+      "published": "2026-11-13T03:05:32+00:00",
+      "summary": "MicrosoftのOutlookとTeamsを含むグローバルなサービス障害が発生し、Microsoftは復旧に苦戦しています。\nこの障害は世界中のユーザーに影響を及ぼし、コミュニケーションや業務に大きな支障が出ています。\n具体的な原因は不明ですが、迅速な復旧が求められています。",
+      "actionable_takeaway": "OutlookやTeamsに依存する業務プロセスを見直し、障害発生時の代替コミュニケーション手段を確保する。",
+      "tags": [
+        "Microsoft",
+        "Outlook",
+        "Teams"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 88,
+      "score_reason": "世界規模での主要ビジネスコミュニケーションツールの障害は、多くの企業に直接的な影響を与えるため非常に重要。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 1,
+      "topic_size": 10
+    },
+    {
       "title": "【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】",
       "url": "https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
@@ -267,7 +474,7 @@
       "first_seen": "2026-11-12T23:00:13.455693+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 1,
+      "topic_group": 3,
       "topic_size": 3,
       "is_prev_seen": true
     },
@@ -292,7 +499,7 @@
       "new_at": "2026-11-12T23:00:13.455693+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 33,
+      "hatena_count": 35,
       "is_prev_seen": true
     },
     {
@@ -300,8 +507,8 @@
       "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
       "source": "Hacker News",
       "published": "2026-11-12T18:39:05+00:00",
-      "hn_score": 438,
-      "hn_comments": 178,
+      "hn_score": 750,
+      "hn_comments": 277,
       "reading_min": 9,
       "summary": "Rustチームはプログラミング言語Rustのバージョン1.100.0をリリースしました。\nこのバージョンでは、10年越しで「never type」（!）が安定化され、制御フローを終了する式がこの型を持つようになります。\nこれにより、コードの安全性と表現力が向上し、より堅牢なソフトウェア開発が可能になります。",
       "actionable_takeaway": "Rust開発者は、`rustup update stable`で1.100.0に更新し、never type `!`の安定化によるコードの改善点や新たなパターンを検証し、活用を検討すべきです。",
@@ -318,7 +525,7 @@
       "new_at": "2026-11-13T11:09:14.720822+09:00",
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
-      "hatena_count": 22
+      "hatena_count": 31
     },
     {
       "title": "AWS EmulatorはAWS Blocksのモックを置き換えるのか？実際に動かして見えた「三つ目の層」",
@@ -342,7 +549,7 @@
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 1,
+      "topic_group": 3,
       "topic_size": 3
     },
     {
@@ -366,6 +573,122 @@
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "Brave Search APIがx402プロトコルによるエージェント決済に対応",
+      "url": "https://brave.com/blog/search-api-agentic-payments/",
+      "source": "Hacker News",
+      "published": "2026-11-13T03:08:08+00:00",
+      "hn_score": 165,
+      "hn_comments": 92,
+      "reading_min": 2,
+      "summary": "Brave Search APIが、オープンなx402決済プロトコルを介した即時・従量課金のエージェント決済に対応しました。\nこれにより、開発者や自律型AIエージェントは、従来のAPIキー管理なしにプログラムでBraveの検索インデックスを利用できます。\nUSDCステーブルコインをBaseブロックチェーン経由で支払い、LLMのコンテキスト取得や一般的なウェブ検索をオンデマンドで利用可能です。",
+      "actionable_takeaway": "AIエージェント開発者は、Brave Search APIとx402プロトコルを組み合わせることで、APIキー管理不要なオンデマンド検索機能を実装し、開発効率と柔軟性を向上させる。",
+      "tags": [
+        "Web3",
+        "API",
+        "AIエージェント"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 85,
+      "score_reason": "AIエージェントとWeb3決済の統合は、今後の分散型アプリケーション開発に大きな影響を与える可能性があり、技術的新規性が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "大容量データのアップロードを止めるな：tusによる再開できるアップロード",
+      "url": "https://zenn.dev/hololab/articles/7c2d34e9711ddf",
+      "source": "Zenn",
+      "published": "2026-11-12T23:00:05+00:00",
+      "reading_min": 9,
+      "summary": "CADや3Dスキャンデータなど、GB単位の大容量ファイルをWebアプリケーションで扱う際のアップロード課題を解決する記事です。\ntusプロトコル、tusd（Go製サーバー実装）、Uppy（ブラウザクライアント）を組み合わせることで、通信断やサーバー再起動後も途中からアップロードを再開できることを検証しました。\nWindows Server + IIS環境で30GiB・150ファイルを約4分37秒で転送し、共有フォルダへのコピーと同等の速度と安定性を確認しています。",
+      "actionable_takeaway": "大容量ファイルアップロードが必要なシステムでは、tusプロトコルとtusd/Uppyの導入を検討し、中断からの再開機能でユーザー体験を向上させましょう。",
+      "github_repo": "tus/tusd",
+      "tags": [
+        "tus",
+        "Uppy",
+        "ファイルアップロード"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "大容量ファイル転送は多くのWebサービスで課題となるため、tusプロトコルと具体的な実装例の紹介は実用性が高く、多くの開発者にとって有用です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "MicrosoftのM365大規模障害が15時間以上続き、修正が失敗し続けている",
+      "url": "https://www.reddit.com/r/technology/comments/1xv6c5l/microsofts_massive_m365_outage_stretches_past_15/",
+      "source": "Reddit",
+      "published": "2026-11-13T12:15:06+00:00",
+      "summary": "Microsoft 365で大規模なサービス障害が発生し、15時間以上にわたって継続しています。\nMicrosoftは復旧を試みていますが、度重なる修正が失敗に終わっている模様です。\nこの障害は多くのユーザーに影響を与え、業務に支障をきたしています。",
+      "actionable_takeaway": "Microsoft 365の障害発生時は、代替サービスやオフラインでの作業体制を事前に検討し、事業継続計画を見直す。",
+      "tags": [
+        "Microsoft 365",
+        "障害",
+        "クラウドサービス"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "Microsoftの主要サービスであるM365の長時間障害は、広範囲の企業活動に影響を与えるため重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 1,
+      "topic_size": 10
+    },
+    {
+      "title": "私のClaude Codeの使い方",
+      "url": "https://speakerdeck.com/falken/boku-no-claude-code-no-tsukaikata",
+      "source": "はてなブックマーク",
+      "published": "2026-11-12T15:11:52+00:00",
+      "reading_min": 2,
+      "summary": "本記事は、Claude Codeを自身のマシンで常時起動し、Discordと連携させて利用する方法について解説しています。\nセキュリティを考慮し、Claude専用ユーザーや最小限の権限設定の重要性も強調されています。\n開発フローでは、Issueからブランチ作成、CI/CD、Codexレビュー、そしてClaudeによるマージまでが自動化されている事例が紹介されています。",
+      "actionable_takeaway": "AIエージェントを開発環境に導入する際は、専用ユーザーの作成や最小権限の付与など、セキュリティ対策を徹底的に行うべきです。",
+      "tags": [
+        "Claude Code",
+        "AIエージェント",
+        "開発環境"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIエージェントを実務に組み込む具体的な方法とセキュリティ対策が詳細に解説されており、実用性が非常に高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 165
+    },
+    {
+      "title": "Orchestratorが24%のクォータを節約するも、12月1日にCarbonの料金が2倍に：GoogleのAIの計算は合っているのか？",
+      "url": "https://dev.to/techlift-solutions/orchestrator-saves-24-quota-then-carbon-doubles-100-on-dec-1-does-googles-ai-math-add-up-3bd5",
+      "source": "Dev.to",
+      "published": "2026-11-13T13:22:05+00:00",
+      "reading_min": 2,
+      "summary": "Googleは、マルチモデルエージェントパイプライン向けにOrchestratorモードを導入しました。\nOrchestratorはGemini 4 CarbonとHydrogenを動的に切り替え、24%のクォータ節約と19%の高速化を実現します。\nしかし、12月1日以降、Gemini 4 CarbonのAPI料金が2倍になるため、実質的なコストメリットは疑問視されています。",
+      "actionable_takeaway": "Google Gemini APIを利用している開発者は、12月1日からの料金改定を考慮し、Orchestrator導入によるコストメリットを再評価すべきです。",
+      "tags": [
+        "Google Gemini",
+        "AI Cost",
+        "Orchestrator"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "GoogleのAIモデル利用コストに直接影響する情報であり、開発者の費用計画に大きな影響を与えるため重要度が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 2
     },
     {
       "title": "個人情報流出ニュースが怖いので、パスワード対策をガチで見直してみた",
@@ -414,12 +737,190 @@
       "hatena_count": 0
     },
     {
+      "title": "一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド",
+      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
+      "source": "GitHub Blog",
+      "published": "2026-11-12T22:54:52+00:00",
+      "reading_min": 6,
+      "summary": "GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。\nスキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。\nこれにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。",
+      "actionable_takeaway": "AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。",
+      "github_repo": "github/copilot",
+      "tags": [
+        "AIエージェント",
+        "GitHub Copilot",
+        "スキル共有"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AIエージェントの活用における重要な課題である知識の再利用と標準化に対する具体的な解決策を提示しており、今後のAI開発の効率化に貢献する情報です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T11:09:14.720822+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Microsoft、グローバル障害の修正が「期待通りに進んでいない」と発表",
+      "url": "https://www.reddit.com/r/technology/comments/1xuzvn8/microsoft_says_attempts_to_fix_global_outage_not/",
+      "source": "Reddit",
+      "published": "2026-11-13T05:49:00+00:00",
+      "summary": "Microsoftがグローバル規模のサービス障害に見舞われ、その復旧作業が「期待通りに進んでいない」と発表したことを伝えるニュースです。\n具体的な障害の原因や影響範囲の詳細は不明ですが、大規模なシステム障害が発生している状況を示唆しています。\nMicrosoftの主要サービスに依存する企業やユーザーに広範な影響が出ている可能性があります。",
+      "actionable_takeaway": "クラウドサービスに依存するシステムでは、単一障害点のリスクを考慮し、マルチクラウド戦略やオフラインでの代替手段の検討など、障害発生時の事業継続計画を見直しましょう。",
+      "tags": [
+        "Microsoft",
+        "クラウド障害",
+        "SRE"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 80,
+      "score_reason": "大手クラウドプロバイダーの障害は広範囲に影響を及ぼすため、その状況と復旧の難航は、システム運用におけるリスク管理の重要性を再認識させる点で高いスコアです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 1,
+      "topic_size": 10
+    },
+    {
+      "title": "AI生成UIレイアウトのレビューとデバッグ：一貫性のないコンポーネント階層の検出",
+      "url": "https://dev.to/mspk97/reviewing-and-debugging-ai-generated-ui-layouts-detecting-inconsistent-component-hierarchies-18fo",
+      "source": "Dev.to",
+      "published": "2026-11-13T13:22:59+00:00",
+      "reading_min": 4,
+      "summary": "AIが生成したUIコードでは、コンポーネント階層の不整合やスタイルの衝突により、レイアウトが崩れる問題が発生しがちです。\nAIは短時間でコンポーネントツリーを生成できますが、ボタンがカードの外に出るなど、視覚的な破損や予期せぬ動作を引き起こすことがあります。\n手動でのデバッグは困難なため、コンポーネントツリーを走査し、デザインシステムやUIパターンに基づいたルールを適用して自動的に異常を検出するツールの開発が推奨されています。",
+      "actionable_takeaway": "AI生成UIコードを導入する際は、デザインシステムのルールをコード化し、自動でコンポーネント階層の不整合やスタイル衝突を検出する仕組みを構築し、品質を担保すべきです。",
+      "tags": [
+        "AI生成UI",
+        "UI/UX",
+        "デバッグ"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 80,
+      "score_reason": "AIによるUI生成の課題と、それを解決するための具体的なデバッグ手法が提示されており、AIを活用したフロントエンド開発の実践において非常に有用な情報であると評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Windsurfレビュー2026: Cursorからの乗り換えは価値があるか？",
+      "url": "https://dev.to/guang_diyuzhi_74b0fec2c09/windsurf-review-2026-worth-switching-from-cursor-269d",
+      "source": "Dev.to",
+      "published": "2026-11-13T13:21:50+00:00",
+      "reading_min": 6,
+      "summary": "2026年のAI搭載IDE市場では、CodeiumのWindsurfとAnysphereのCursorが主要な存在です。\nWindsurfはVS Codeベースでありながら、コードを提案するだけでなく自律的なアクションを実行する「エージェント的」アプローチが特徴です。\n本記事はWindsurfの機能とCursorとの比較を通じて、開発者が乗り換えを検討する際の判断材料を提供します。",
+      "actionable_takeaway": "AIを活用した開発環境の導入を検討しているエンジニアは、Windsurfのようなエージェント型IDEが提供する自律的なコード生成・修正機能を評価し、既存ワークフローとの適合性を検証すべきです。",
+      "tags": [
+        "AI IDE",
+        "Codeium Windsurf",
+        "Cursor"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AIを活用した開発環境の進化と、具体的な製品比較を通じて、開発者の生産性向上に直結する情報を提供しているためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Together Compiler: AI推論のための継続的コンパイル",
+      "url": "https://arxiv.org/abs/2611.14681",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-13T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本論文は、AI推論の効率化を目指す「Together Compiler」について述べています。\n継続的コンパイルという概念を導入し、AIモデルの推論性能を最適化します。\n特に、動的な環境やモデルの更新に対応し、リアルタイムでの高性能推論を実現することを目指します。",
+      "actionable_takeaway": "AIモデルのデプロイメントにおいて、推論性能の継続的な最適化が求められる場合、継続的コンパイル技術の導入を検討し、レイテンシとスループットの改善を図るべきです。",
+      "tags": [
+        "AI推論",
+        "コンパイラ",
+        "最適化"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AI推論の効率化は多くのAIアプリケーションにとって重要であり、継続的コンパイルというアプローチは実用的な価値が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIで膨らみ続けるテストケースを、リスクベースドテストで選んで回すまでの記録",
+      "url": "https://zenn.dev/pivotmedia/articles/risk-based-testing-for-uat",
+      "source": "Zenn",
+      "published": "2026-11-12T11:41:36+00:00",
+      "reading_min": 6,
+      "summary": "AIによるテストケース生成で増加するテストケースに対し、リスクベースドテスト（RBT）を導入してUATの効率化を図った事例です。\n「影響度 × 発生確率」の原則に基づき、機能単位からケースの種類単位へと影響度評価の粒度を調整し、過去の不具合検出率を検証しました。\nテストケースを仕様書としても活用しつつ、実行対象のケースを絞り込むことで、品質を維持しながらテスト工数削減に成功した経緯が詳細に記録されています。",
+      "actionable_takeaway": "AI活用でテストケースが増加する際は、リスクベースドテストを導入し、影響度と発生確率を基準にテスト範囲を最適化することで効率的な品質保証を実現しましょう。",
+      "tags": [
+        "QA",
+        "テスト自動化",
+        "リスクベースドテスト"
+      ],
+      "category": "その他",
+      "score": 78,
+      "score_reason": "AIによるテストケース生成は今後のトレンドであり、それによって生じる課題と、リスクベースドテストによる解決策は多くのQAエンジニアにとって参考になります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "Claude Codeのおすすめ環境を全体図で解説。ハーネス・スキル・MCPの仕組みと実例",
+      "url": "https://ktlog.net/posts/claude-code-ai-ecosystem",
+      "source": "はてなブックマーク",
+      "published": "2026-11-13T05:21:58+00:00",
+      "reading_min": 40,
+      "summary": "Claude Codeを活用する上で最適な環境構築について、全体図と具体例を交えて解説しています。\nClaude Codeをハブとして、ハーネス、スキル、MCP、外部APIを連携させることで、複雑なタスクを自動化する仕組みが紹介されています。\nプロンプトの書き方だけでなく、周辺環境を整備することの重要性が強調されています。",
+      "actionable_takeaway": "Claude CodeなどのAIを活用する際は、単体利用だけでなく、ハーネスや外部API連携によるエコシステム構築を検討し、自動化の幅を広げる。",
+      "tags": [
+        "Claude Code",
+        "AI",
+        "エコシステム"
+      ],
+      "category": "AI・機械学習",
+      "score": 78,
+      "score_reason": "AIモデルを実務で効果的に活用するための具体的な環境構築方法を提示しており、実践的な価値が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 112
+    },
+    {
+      "title": "SynthCorp: データエージェントのベンチマーク作成プラットフォーム",
+      "url": "https://arxiv.org/abs/2611.14765",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-13T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本論文は、データエージェントの性能評価のためのベンチマーク作成プラットフォーム「SynthCorp」を紹介しています。\n多様なシナリオとデータセットを生成し、エージェントの頑健性や汎用性を評価することを可能にします。\nこれにより、データエージェントの研究開発を加速し、実用的なAIの進歩に貢献します。",
+      "actionable_takeaway": "データエージェントやAIモデルの評価を行う際、SynthCorpのようなプラットフォームを活用して多様なベンチマークを生成し、モデルの汎用性と堅牢性を多角的に検証すべきです。",
+      "tags": [
+        "データエージェント",
+        "ベンチマーク",
+        "AI評価"
+      ],
+      "category": "AI・機械学習",
+      "score": 78,
+      "score_reason": "AIエージェントの評価は実用化において不可欠であり、ベンチマーク作成プラットフォームは業界全体の進歩に大きく貢献します。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "Show HN: 300ドルの刺繍機にサブスクが必要だったので、自作アプリを開発した",
       "url": "https://github.com/simpsoka/zigzag",
       "source": "Hacker News",
       "published": "2026-11-12T17:02:42+00:00",
-      "hn_score": 347,
-      "hn_comments": 142,
+      "hn_score": 590,
+      "hn_comments": 198,
       "reading_min": 21,
       "summary": "ユーザーが300ドルの刺繍機にサブスクリプションが必要だったため、Rustで独自のビジュアル刺繍エディタ「ZigZag」を開発しました。\nZigZagはSVGアートワークをステッチに変換し、エディタで調整、PES/DST/EXP/JEF/VP3形式でエクスポート可能です。\nAIエージェントがデザイン作成・編集を支援するMCP（Model Context Protocol）もサポートしており、MacとWindowsで利用できます。",
       "actionable_takeaway": "刺繍機ユーザーやDIY愛好家は、ZigZagアプリをダウンロードして、サブスク不要でSVGから刺繍デザインを作成・編集し、AI支援機能の可能性を探るべきです。",
@@ -463,6 +964,51 @@
       "hatena_count": 0
     },
     {
+      "title": "GitHub稼働状況レポート: 2026年10月",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
+      "source": "GitHub Blog",
+      "published": "2026-11-13T00:20:16+00:00",
+      "reading_min": 9,
+      "summary": "GitHubは2026年10月の稼働状況レポートを公開し、可用性と信頼性向上の取り組みを報告しました。\nAzure Central USへの大幅な容量追加と障害エスカレーション経路の削減を進めました。\nしかし、書き込み停止、データ移行中の監視ギャップ、地域ネットワーク障害が発生し、容量増強と並行して安全な運用と分離、地域復旧の検証の必要性が強調されました。",
+      "actionable_takeaway": "大規模なサービスを運用するエンジニアは、GitHubの事例から、容量増強だけでなく、運用手順の安全性、システムの分離、災害復旧計画の定期的な検証の重要性を学び、自社システムに適用すべきです。",
+      "github_repo": "github/docs",
+      "tags": [
+        "GitHub",
+        "可用性",
+        "Azure"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 75,
+      "score_reason": "GitHubのような大規模サービスの運用における課題と改善策が具体的に示されており、インフラエンジニアにとって実践的な学びが多いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T11:09:14.720822+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "セマンティック事前知識は部分的に特定された因果発見にいつ導入すべきか？",
+      "url": "https://arxiv.org/abs/2611.14736",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-13T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本論文は、因果関係の発見においてセマンティックな事前知識をいつ、どのように活用すべきかを探求しています。\n特に、データのみでは因果関係が完全に特定できない「部分的に特定された」状況に焦点を当てています。\n事前知識の適切な導入が、より正確な因果推論に繋がる可能性を示唆しています。",
+      "actionable_takeaway": "因果推論モデルを構築する際、ドメイン知識やセマンティックな事前情報をモデルに組み込むタイミングと方法を慎重に検討し、推論の精度向上に役立てるべきです。",
+      "tags": [
+        "因果推論",
+        "AI",
+        "セマンティクス"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "因果推論はAIの応用範囲を広げる重要な分野であり、事前知識の活用は実世界の問題解決において非常に有用なアプローチです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "セキュリティ・キャンプ 2026 応募課題晒し",
       "url": "https://zenn.dev/uvu/articles/758ee227a614ea",
       "source": "Zenn",
@@ -490,8 +1036,8 @@
       "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
       "source": "Hacker News",
       "published": "2026-11-12T13:52:29+00:00",
-      "hn_score": 2984,
-      "hn_comments": 2813,
+      "hn_score": 3702,
+      "hn_comments": 3230,
       "summary": "NVIDIAのCEOであるジェンスン・フアン氏が辞任したと報じられています。\nこのニュースはHacker Newsで話題になっていますが、詳細な本文は取得できませんでした。\nNVIDIAの今後の経営戦略や株価に影響を与える可能性があります。",
       "actionable_takeaway": "NVIDIAの経営層の変更は、同社の製品ロードマップや市場戦略に影響を与える可能性があるため、今後の公式発表に注目し、投資判断や技術選定の参考にすべきです。",
       "tags": [
@@ -507,8 +1053,8 @@
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 2,
-      "topic_size": 2
+      "topic_group": 4,
+      "topic_size": 4
     },
     {
       "title": "Tauri の MSI インストーラーが更新のたびに削除済みデスクトップショートカットを復活させる問題を直した話",
@@ -555,22 +1101,211 @@
       "hatena_count": 0
     },
     {
-      "title": "AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース",
-      "url": "https://www.publickey1.jp/blog/26/awsawsaws_1.html",
-      "source": "はてなブックマーク",
-      "published": "2026-11-12T14:37:20+00:00",
-      "reading_min": 5,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
+      "title": "IceWM",
+      "url": "https://ice-wm.org/",
+      "source": "Hacker News",
+      "published": "2026-11-13T04:54:53+00:00",
+      "hn_score": 252,
+      "hn_comments": 124,
+      "reading_min": 2,
+      "summary": "IceWMはX Window System用の軽量で高速なウィンドウマネージャーです。\nタスクバー、キーバインディング、動的メニューシステムなど、豊富な機能を持ちながらもシンプルさを追求しています。\nC++で開発され、多くのLinuxディストリビューションやBSDで利用可能で、GitHubでメンテナンスされています。",
+      "actionable_takeaway": "リソースが限られた環境や古いハードウェアで快適なデスクトップ環境を構築したい場合、IceWMの導入を検討し、その軽量性を評価する。",
+      "github_repo": "icem-wm/icewm",
+      "tags": [
+        "Linux",
+        "ウィンドウマネージャー",
+        "X Window System"
+      ],
+      "category": "バックエンド・インフラ",
       "score": 70,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-13T11:09:14.720822+09:00",
-      "is_hot": true,
-      "hatena_count": 50,
+      "score_reason": "軽量なウィンドウマネージャーとして長年利用されており、特定の環境での需要が高く、継続的な開発が行われているため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "財源幻想はなぜ生き残るのか——三層防衛構造という設計バグ : システム設計視点の行動経済学 (61)",
+      "url": "https://qiita.com/maskot1977/items/0f8816d5e85ba791176f?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-12T08:43:00+00:00",
+      "reading_min": 36,
+      "summary": "本記事は「システム設計視点の行動経済学」シリーズの第61回で、社会制度をコードと見なし、問題の原因を「人」ではなく「インセンティブ構造やルール設計のバグ」として捉えるアプローチを提唱しています。\n社会の自己修復を阻む「二重ロック構造」を指摘し、これを解除するには批判の主語を「人」から「制度のバグ」へ置換することが鍵だと論じています。\n個人の道徳や勇気に頼るのではなく、合理的な損益計算に基づいて正しい行動が自発的に行われるような制度設計の重要性を強調しています。",
+      "actionable_takeaway": "組織や社会の問題解決において、個人の責任追及ではなく、制度やインセンティブ設計のバグに焦点を当て、行動経済学の視点からシステムをデバッグするアプローチを取り入れましょう。",
+      "tags": [
+        "行動経済学",
+        "システム設計",
+        "社会制度"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "技術的な内容ではないものの、システム設計の思考法を社会問題に応用する視点はユニークで、エンジニアが広い視野を持つ上で示唆に富んでいます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Microsoft 365の障害で上司が事業部の部長から「こうなる事を予想して事前に対処しておくのがシステム部だろうが！」と言われ、反抗して早退…連絡の受け手は必然的に私に",
+      "url": "https://togetter.com/li/2770045",
+      "source": "はてなブックマーク",
+      "published": "2026-11-13T09:58:17+00:00",
+      "reading_min": 2,
+      "summary": "Microsoft 365の障害発生時、システム部の上司が事業部長から無茶な責任追及を受け、反発して早退しました。\n結果として、障害対応の連絡窓口が部下である筆者に集中する事態となりました。\nクラウドサービスの障害に対する社内での認識のギャップと、情シス部門の苦悩が浮き彫りになっています。",
+      "actionable_takeaway": "クラウドサービスの障害は避けられないため、SLA確認、代替策の検討、社内への影響範囲と責任範囲の明確化を徹底する。",
+      "tags": [
+        "Microsoft 365",
+        "情シス",
+        "障害対応"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "クラウド障害時の社内コミュニケーションや責任範囲の問題は多くの企業で発生しうるため、実務的な示唆に富む。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 108,
       "topic_group": 1,
-      "topic_size": 3
+      "topic_size": 10
+    },
+    {
+      "title": "総務省が新しい無料オンライン講座「統計解析プログラミング」を1月に開講 Pythonでのデータ分析が4週間で学べる",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/13/news013.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-13T00:15:26+00:00",
+      "reading_min": 9,
+      "summary": "総務省が2027年1月12日から、Pythonを使った統計解析プログラミングの無料オンライン講座を開講します。\nこの講座は「社会人のためのデータサイエンス入門」と「社会人のためのデータサイエンス応用」に続く新しい内容です。\n4週間のカリキュラムで、主成分分析、回帰分析、ランダムフォレストなどの主要な分析手法を実践的に学べます。",
+      "actionable_takeaway": "Pythonでのデータ分析スキルを習得したいエンジニアは、総務省の無料オンライン講座を活用し、統計解析の基礎から応用までを学ぶことを推奨します。",
+      "tags": [
+        "Python",
+        "データ分析",
+        "統計解析"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "Pythonと統計解析の基礎を無料で学べる機会は、データサイエンス分野への参入障壁を下げる点で重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 113
+    },
+    {
+      "title": "ローカルWhisperキャプションがプロジェクトに直接書き込まれない理由",
+      "url": "https://dev.to/frankshan001/why-my-local-whisper-captions-never-write-straight-into-the-project-5n6",
+      "source": "Dev.to",
+      "published": "2026-11-13T13:21:53+00:00",
+      "reading_min": 2,
+      "summary": "オープンソースのローカル動画エディタCutVokeの開発者が、音声認識結果をプロジェクトに直接書き込まない設計について解説しています。\nこれは、人間とAIエージェントが同時に編集する際に、競合や意図しない変更を防ぐためです。\n音声認識結果はまずドラフトとして生成され、ユーザーが確認・修正後にプロジェクトにコミットするワークフローを採用しています。",
+      "actionable_takeaway": "AIモデルの出力結果をアプリケーションに統合する際は、直接的な書き込みを避け、ユーザーやエージェントが確認・承認できる中間ステップを設けるべきです。",
+      "github_repo": "mcp-agent/cutvoke",
+      "tags": [
+        "Whisper",
+        "音声認識",
+        "UI/UX"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIと人間の協調作業におけるデータ整合性の課題と解決策を提示しており、実用的な設計思想として参考になります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "エージェントの履歴をクリーンアップすることは、世界がまだエラーを保持している場合に悪影響を及ぼす",
+      "url": "https://arxiv.org/abs/2611.14654",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-13T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本論文は、AIエージェントの履歴を消去することが、必ずしもパフォーマンス向上に繋がらないことを示唆しています。\n特に、環境自体に誤りが残っている場合、履歴の消去はエージェントの学習を妨げる可能性があります。\nエージェントの学習と環境の相互作用の複雑性について考察しています。",
+      "actionable_takeaway": "AIエージェントのデバッグや最適化において、エージェントの内部状態だけでなく、外部環境の状態も考慮したエラーハンドリング戦略を検討すべきです。",
+      "tags": [
+        "強化学習",
+        "AI倫理",
+        "エージェント"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIエージェントの学習メカニズムに関する基礎的な知見を提供し、より堅牢なAIシステム設計に貢献する可能性があります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "claude.ai、Claude Code、platform.claude.comでエラー発生",
+      "url": "https://status.claude.com/incidents/nn11wk485zfn",
+      "source": "Hacker News",
+      "published": "2026-11-13T10:18:13+00:00",
+      "hn_score": 299,
+      "hn_comments": 245,
+      "reading_min": 1,
+      "summary": "AnthropicのAIサービスであるclaude.ai、Claude Code、platform.claude.comでエラーが発生しました。\nユーザー認証に問題が生じ、サービスが一時的に利用できない状態となりました。\n問題は迅速に調査・修正され、現在は解決済みであることが報告されています。",
+      "actionable_takeaway": "AIサービス利用者は、障害発生時に公式ステータスページを確認し、サービス復旧まで待機するか代替手段を検討する。",
+      "tags": [
+        "AI",
+        "障害情報",
+        "クラウドサービス"
+      ],
+      "category": "AI・機械学習",
+      "score": 65,
+      "score_reason": "主要なAIサービスにおける障害は多くのユーザーに影響を与えるため重要だが、迅速に解決されたためスコアは中程度。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "「私は役立たずだ」：ジェンスン・フアンのNvidia CEOとしての最後の時間",
+      "url": "https://www.reddit.com/r/technology/comments/1xux28w/im_a_piece_of_sh_jensen_huangs_last_hours_as/",
+      "source": "Reddit",
+      "published": "2026-11-13T03:18:50+00:00",
+      "summary": "NvidiaのCEOであるジェンスン・フアン氏が、CEOとしての最後の時間を過ごしているようです。\n記事タイトルからは、フアン氏が自らを「役立たず」と表現していることが示唆されており、退任の背景に何らかの感情的な葛藤がある可能性があります。\nこの退任はNvidiaの将来に大きな影響を与える可能性があります。",
+      "actionable_takeaway": "主要企業のCEO交代は、その企業の技術戦略や製品ロードマップに影響を与えるため、今後の発表に注目する。",
+      "tags": [
+        "Nvidia",
+        "ジェンスン・フアン",
+        "CEO"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "NvidiaのCEO交代は業界に大きな影響を与える可能性があるが、技術的な内容ではないため中程度のスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 4,
+      "topic_size": 4
+    },
+    {
+      "title": "Zugwise: 手書きのチェス棋譜をデジタル化するためのドメイン認識型ゲーム再構築",
+      "url": "https://arxiv.org/abs/2611.14544",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-13T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本論文は、手書きのチェス棋譜をデジタル化する新しい手法「Zugwise」を提案しています。\nドメイン知識を活用し、棋譜の画像から正確にゲームを再構築することを目指します。\nこれにより、歴史的なチェスデータをデジタルアーカイブ化し、分析に利用可能にします。",
+      "actionable_takeaway": "手書き文書のデジタル化を検討する際、ドメイン固有の知識をAIモデルに組み込むことで認識精度を向上させるアプローチを検討すべきです。",
+      "tags": [
+        "画像認識",
+        "AI",
+        "チェス"
+      ],
+      "category": "AI・機械学習",
+      "score": 65,
+      "score_reason": "特定のニッチな分野における画像認識技術の応用であり、汎用的な影響は限定的ですが、ドメイン知識活用のアプローチは参考になります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "ITエンジニアが選ぶ「ITエンジニア本大賞2027」投票スタート",
@@ -592,7 +1327,7 @@
       "new_at": "2026-11-12T11:31:34.700109+09:00",
       "first_seen": "2026-11-12T11:31:34.700109+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 2,
       "is_prev_seen": true
     },
     {
@@ -641,9 +1376,32 @@
       "new_at": "2026-11-13T11:09:14.720822+09:00",
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
-      "hatena_count": 31,
-      "topic_group": 3,
-      "topic_size": 5
+      "hatena_count": 35,
+      "topic_group": 1,
+      "topic_size": 10
+    },
+    {
+      "title": "「ボスを呼び戻せ」：Nvidia従業員がジェンスン・フアンの復帰を要請",
+      "url": "https://www.reddit.com/r/technology/comments/1xv44nm/bring_back_the_boss_nvidia_employees_requesting/",
+      "source": "Reddit",
+      "published": "2026-11-13T10:11:08+00:00",
+      "summary": "Nvidiaの従業員が、CEOであるジェンスン・フアン氏の復帰を強く求めているようです。\n記事タイトルからは、フアン氏が一時的にNvidiaを離れている、あるいはその可能性が示唆されています。\n従業員からのこのような要請は、リーダーシップに対する強い信頼と期待の表れと考えられます。",
+      "actionable_takeaway": "企業のリーダーシップ交代や主要人物の動向は、株価や事業戦略に影響するため、関連企業の動向を注視する。",
+      "tags": [
+        "Nvidia",
+        "ジェンスン・フアン",
+        "経営"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 60,
+      "score_reason": "Nvidiaの経営層に関するニュースであり、直接的な技術的影響は少ないが、企業の方向性に影響を与える可能性がある。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 4,
+      "topic_size": 4
     },
     {
       "title": "NEWS: Jensen Huang has agreed to testify before Congress by Thanksgiving",
@@ -673,9 +1431,9 @@
       "analysis_status": "error",
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
-      "hatena_count": 175,
-      "topic_group": 3,
-      "topic_size": 5
+      "hatena_count": 336,
+      "topic_group": 1,
+      "topic_size": 10
     },
     {
       "title": "マイクロソフト、「365」世界で大規模障害　メール送れずビジネスに影響 - 日本経済新聞",
@@ -691,9 +1449,9 @@
       "analysis_status": "error",
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
-      "hatena_count": 109,
-      "topic_group": 3,
-      "topic_size": 5
+      "hatena_count": 174,
+      "topic_group": 1,
+      "topic_size": 10
     },
     {
       "title": "Microsoft 365で大規模障害　「Outlook」でメールにアクセスできず、「Teams」など複数サービスに影響",
@@ -709,9 +1467,9 @@
       "analysis_status": "error",
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
-      "hatena_count": 56,
-      "topic_group": 3,
-      "topic_size": 5
+      "hatena_count": 92,
+      "topic_group": 1,
+      "topic_size": 10
     },
     {
       "title": "インシデント調査報告書チェックリスト",
@@ -727,23 +1485,7 @@
       "analysis_status": "error",
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
-      "hatena_count": 26
-    },
-    {
-      "title": "Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける",
-      "url": "https://www.publickey1.jp/blog/26/google_antigravityaiai.html",
-      "source": "Publickey",
-      "published": "2026-11-12T15:13:43+00:00",
-      "reading_min": 5,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-13T11:09:14.720822+09:00",
-      "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 64
     },
     {
       "title": "Após excluir uma VM: discos não anexados, IPs e snapshots que continuam na fatura",
@@ -826,38 +1568,6 @@
       "hatena_count": 0
     },
     {
-      "title": "GitHub availability report: October 2026",
-      "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
-      "source": "GitHub Blog",
-      "published": "2026-11-13T00:20:16+00:00",
-      "reading_min": 9,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-13T11:09:14.720822+09:00",
-      "is_hot": false,
-      "hatena_count": 0
-    },
-    {
-      "title": "Build once, run on any agent: A practical guide to agent skills",
-      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
-      "source": "GitHub Blog",
-      "published": "2026-11-12T22:54:52+00:00",
-      "reading_min": 6,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-13T11:09:14.720822+09:00",
-      "is_hot": false,
-      "hatena_count": 0
-    },
-    {
       "title": "米国大統領、ティム・クックに次期NVIDIA CEO就任を要請",
       "url": "https://www.reddit.com/r/technology/comments/1xugqh5/us_president_calls_on_tim_cook_to_be_next_nvidia/",
       "source": "Reddit",
@@ -898,24 +1608,47 @@
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 2,
-      "topic_size": 2
+      "topic_group": 4,
+      "topic_size": 4
+    },
+    {
+      "title": "終末の日: 2026年11月13日金曜日 (1960)",
+      "url": "https://www.science.org/doi/10.1126/science.132.3436.1291",
+      "source": "Hacker News",
+      "published": "2026-11-13T12:10:24+00:00",
+      "hn_score": 115,
+      "hn_comments": 56,
+      "summary": "この記事は1960年の科学論文で、2026年11月13日金曜日を「終末の日」と題しています。\n具体的な内容は不明ですが、過去の科学的予測や未来に関する考察がテーマと推測されます。\n現代の技術進歩と比較すると、当時の予測の精度や背景に興味が持たれます。",
+      "actionable_takeaway": "過去の技術予測や社会情勢を振り返り、現在の技術トレンドが将来に与える影響について多角的に考察する機会と捉える。",
+      "tags": [
+        "歴史",
+        "科学",
+        "未来予測"
+      ],
+      "category": "その他",
+      "score": 30,
+      "score_reason": "技術的な新規性や実用性は低いが、過去の科学的視点から未来を考察する点で一定の興味深さがあるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-13T22:27:29.271819+09:00",
+      "first_seen": "2026-11-13T22:27:29.271819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-13T11:09:14.720822+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-13T22:27:29.271819+09:00",
     "summary_lines": [
-      "Foundation Modelsフレームワーク（Hacker News・スコア95）",
-      "Edge0-145B: あなたのコンピューターで最先端のAI機能を実現（Hacker News・スコア95）",
-      "大規模なMicrosoft 365の障害がOutlook、Teams、Copilotに世界中で影響（Reddit・スコア95）"
+      "AI・機械学習分野では、AppleのFoundation ModelsやEdge0-145Bなど、オンデバイスAIの進化が顕著です。",
+      "Microsoft 365の大規模障害が発生し、クラウドサービスの安定性が改めて問われています。",
+      "サプライチェーン攻撃の脅威が増しており、npmやPyPIでの悪意あるパッケージが報告されています。"
     ],
     "focus_tags": [
       "AI",
-      "Rust",
-      "AWS",
-      "AWS Blocks",
-      "Apple"
+      "LLM",
+      "クラウド",
+      "セキュリティ",
+      "オンデバイスAI"
     ]
   }
 }
