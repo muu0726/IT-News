@@ -5,20 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 14:02:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 02:14:05 +0000</lastBuildDate>
     <item>
-      <title>AWSエミュレーター</title>
-      <link>https://github.com/aws/aws-emulator</link>
-      <guid isPermaLink="false">https://github.com/aws/aws-emulator</guid>
-      <description>[Score: 100] AWS Emulatorは、AWS APIをローカルでエミュレートするツールです。 / これにより、AWSアカウントなしで開発マシン、開発サーバー、CI環境でソフトウェアをテストできます。 / AWS CLIやSDKからエミュレーターのエンドポイントを指すように環境変数を設定するだけで利用可能です。 [実務示唆: AWS開発者は、aws-emulatorを導入し、ローカル環境でのテストを強化することで、開発サイクルを高速化しコストを削減できる。] [GitHub: aws/aws-emulator] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 18:21:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub Actionsをロックする</title>
-      <link>https://hugovk.dev/blog/2026/lock-github-actions/</link>
-      <guid isPermaLink="false">https://hugovk.dev/blog/2026/lock-github-actions/</guid>
-      <description>[Score: 95] GitHub Actionsがワークフローロックファイルをサポートし、サプライチェーン攻撃のリスクを軽減できるようになりました。 / 以前はタグではなくフルSHAにピン留めすることが推奨されていましたが、ロックファイルによりタグを使用しつつ安全性を確保できます。 / gh CLIのgh-actions-lock拡張機能を使って簡単にロックファイルを生成・管理できます。 [実務示唆: GitHub Actionsを利用する開発者は、gh-actions-lock拡張機能を導入し、ワークフローをロックすることで、サプライチェーン攻撃のリスクを低減しセキュリティを強化すべきである。] [GitHub: github/gh-actions-lock] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 22:16:41 +0000</pubDate>
+      <title>大規模なMicrosoft 365の障害がOutlook、Teams、Copilotに世界中で影響</title>
+      <link>https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/</guid>
+      <description>[Score: 95] Microsoft 365で大規模な障害が発生し、Outlook、Teams、Copilotといった主要サービスが世界中で利用できなくなりました。 / この障害は多くの企業や個人の業務に深刻な影響を与えたと推測されます。 / クラウドサービスの安定性と、障害発生時の対応の重要性が改めて浮き彫りになりました。 [実務示唆: Microsoft 365の障害は業務に大きな影響を与えるため、代替手段の検討や、障害発生時の情報収集・対応プロセスの確認を定期的に行うべきです。] (Source: Reddit)</description>
+      <pubDate>Thu, 12 Nov 2026 23:37:54 +0000</pubDate>
     </item>
     <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
@@ -28,25 +21,11 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>Node.js 22 / 24 / 26 の脆弱性、自分のアプリが影響を受けるか確認する方法【2026年11月】</title>
-      <link>https://zenn.dev/rakko_inc/articles/nodejs-security-nov-2026-proxy</link>
-      <guid isPermaLink="false">https://zenn.dev/rakko_inc/articles/nodejs-security-nov-2026-proxy</guid>
-      <description>[Score: 90] Node.js 22・24・26系のセキュリティリリースで修正された脆弱性について解説しています。 / 深刻度Highの7件はHTTP/2とTLS処理に関するもので、ロードバランサーやnginxの後ろでNode.jsを動かす構成では影響を受けにくいことを説明。 / 自身のアプリがこれらの脆弱性の影響を受けるかどうかの判断基準を提示しています。 [実務示唆: Node.jsの脆弱性対応では、ロードバランサーやリバースプロキシの有無を確認し、TLS/HTTP/2終端がNode.js自身か手前の機器かによって影響範囲を判断しましょう。] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 02:31:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>そのヤバいDockerイメージをいつまで使うのか</title>
-      <link>https://scrapbox.io/keroxp/%E3%81%9D%E3%81%AE%E3%83%A4%E3%83%90%E3%81%84Docker%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%82%92%E3%81%84%E3%81%A4%E3%81%BE%E3%81%A7%E4%BD%BF%E3%81%86%E3%81%AE%E3%81%8B</link>
-      <guid isPermaLink="false">https://scrapbox.io/keroxp/%E3%81%9D%E3%81%AE%E3%83%A4%E3%83%90%E3%81%84Docker%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%82%92%E3%81%84%E3%81%A4%E3%81%BE%E3%81%A7%E4%BD%BF%E3%81%86%E3%81%AE%E3%81%8B</guid>
-      <description>[Score: 90] Dockerコンテナは環境構築やデプロイの容易さから広く普及していますが、「Dockerだから安全」という神話は誤りです。 / コンテナはホスト昇格の脆弱性がないとしても、サーバー・アプリケーションレベルの危険性は解決されていません。 / RCE攻撃においてシェルスクリプトは最も単純かつ強力なツールであり、本番環境でのシェル利用は他のコマンド実行を助長し、予期せぬ挙動を引き起こす危険性があります。 [実務示唆: 本番環境のDockerイメージには必要最小限のツールのみを含め、シェルや不要なコマンドを削除し、PATH環境変数を厳格に管理してRCEリスクを低減しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 12 Nov 2026 10:43:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>DynamoDBの楽観的ロック：Lambdaとバージョン番号による実装</title>
-      <link>https://dev.to/sascha-ms/dynamodb-optimistic-locking-version-numbers-with-lambda-1foc</link>
-      <guid isPermaLink="false">https://dev.to/sascha-ms/dynamodb-optimistic-locking-version-numbers-with-lambda-1foc</guid>
-      <description>[Score: 88] DynamoDBにおける楽観的ロックは、複数のリクエストが同時に同じアイテムを更新しようとした際に発生する「ロストアップデート」問題を解決する実用的な手法です。 / この手法では、アイテムにバージョン番号を保存し、書き込み時にそのバージョン番号が読み込み時と一致する場合のみ更新を許可します。 / Lambda環境では並列実行により衝突が発生しやすいため、バージョン番号と条件付き書き込み、そして再読み込みを伴うリトライ処理が重要となります。 [実務示唆: DynamoDBとLambdaを使用するアプリケーションでデータの整合性を確保するため、楽観的ロックパターンを導入し、バージョン番号とConditionalCheckFailedExceptionハンドリングを実装しましょう。] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 14:00:07 +0000</pubDate>
+      <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
+      <link>https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AWS Emulatorは、AWSアカウントなしでローカルやCI上でAWS SDK/CLIの呼び出しをエミュレートするツールです。 / 本記事では、特にCDK/TerraformなどのIaCツールがAWS Emulator上でどこまで動作するかを検証しています。 / 公式ドキュメントではIaCツールへの対応はサービスによって異なるとされており、その実態をWindows 11 + Docker環境で試した結果がまとめられています。 [実務示唆: AWS Emulatorの導入を検討する際は、利用するAWSサービスがIaCツールでどこまでサポートされているか、忠実度テストの結果を確認し、事前に検証すること。] (Source: Qiita)</description>
+      <pubDate>Wed, 11 Nov 2026 23:39:20 +0000</pubDate>
     </item>
     <item>
       <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
@@ -56,53 +35,18 @@
       <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
     </item>
     <item>
-      <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
-      <link>https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AWS Emulatorは、AWSアカウントなしでローカルやCI上でAWS SDK/CLIの呼び出しをエミュレートするツールです。 / 本記事では、特にCDK/TerraformなどのIaCツールがAWS Emulator上でどこまで動作するかを検証しています。 / 公式ドキュメントではIaCツールへの対応はサービスによって異なるとされており、その実態をWindows 11 + Docker環境で試した結果がまとめられています。 [実務示唆: AWS Emulatorの導入を検討する際は、利用するAWSサービスがIaCツールでどこまでサポートされているか、忠実度テストの結果を確認し、事前に検証すること。] (Source: Qiita)</description>
-      <pubDate>Wed, 11 Nov 2026 23:39:20 +0000</pubDate>
+      <title>AWS EmulatorはAWS Blocksのモックを置き換えるのか？実際に動かして見えた「三つ目の層」</title>
+      <link>https://zenn.dev/genda_jp/articles/18d1f780f6b41f</link>
+      <guid isPermaLink="false">https://zenn.dev/genda_jp/articles/18d1f780f6b41f</guid>
+      <description>[Score: 85] AWSがリリースしたAWS Emulatorが、既存のAWS Blocksのモックを置き換えるのかという疑問について検証しています。 / 結論として、Emulatorはモックを置き換えるのではなく、モックとサンドボックスの間に位置する「三つ目の層」として機能する可能性が示唆されています。 / EmulatorはAWS SDKやCLIの呼び出しをローカルでエミュレートし、Blocksのテスト環境での活用が効果的であると分析されています。 [実務示唆: AWS Blocksを利用する開発者は、AWS Emulatorを導入し、ローカル開発環境でのテストやデバッグの効率化を図ることを検討する。] [GitHub: aws/aws-emulator] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 05:20:41 +0000</pubDate>
     </item>
     <item>
-      <title>AWS Emulator がリリースされたので試してみた | DevelopersIO</title>
-      <link>https://dev.classmethod.jp/articles/aws-emulator-local-try/</link>
-      <guid isPermaLink="false">https://dev.classmethod.jp/articles/aws-emulator-local-try/</guid>
-      <description>[Score: 85] AWSがローカル用のエミュレータ「AWS Emulator」をリリースし、Dockerで起動してS3、SQS、DynamoDB、Lambdaの基本操作を試した記事です。 / OSSのローカルエミュレーターFlociと比較し、起動時間、メモリ使用量、イメージサイズを検証しています。 / ビルド済みイメージはなく、Dockerfileからビルドする必要がある点や、aarch64とx86_64でDockerfileのRPMが異なる点に注意が必要です。 [実務示唆: AWS開発者は、AWS Emulatorをローカル環境に導入し、開発・テストサイクルを高速化するために、既存のOSSエミュレータと比較検討して活用する。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 12 Nov 2026 03:47:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>WEBで画像を破くツールを作った</title>
-      <link>https://qiita.com/ishi720/items/6d13fdce2a31fe630840?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ishi720/items/6d13fdce2a31fe630840?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Svelteを使って、画像をなぞった線に沿って破れるWebアプリが開発されました。 / 破れた紙の破片（ピース）を多角形ではなく、「元の紙」と「破り線のどちら側か」の組み合わせで表現する独自のアプローチを採用。 / Canvasのclip()機能を活用することで、複雑な多角形交差計算を避け、効率的にピースの形状を描画する仕組みを解説しています。 [実務示唆: Canvasのclip()機能やSvelteの活用事例として、複雑な図形処理を効率的に実装する際の参考になるため、同様の描画処理を検討する際に参考にすべき。] (Source: Qiita)</description>
-      <pubDate>Sun, 08 Nov 2026 21:44:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>アクセシビリティステートメントがGitHubに登場</title>
-      <link>https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/</guid>
-      <description>[Score: 75] GitHubは、リポジトリの概要ページにACCESSIBILITY.mdファイルを表示する機能を追加しました。 / これにより、プロジェクトのアクセシビリティ目標、貢献者の期待、既知の制限などを一元的に説明できるようになります。 / ACCESSIBILITY.mdファイルは、リポジトリのルート、.github/ディレクトリ、またはdocs/ディレクトリに配置でき、組織の.github/リポジトリから継承することも可能です。 [実務示唆: 自身のGitHubリポジトリにACCESSIBILITY.mdファイルを追加し、プロジェクトのアクセシビリティに関する情報を明確にすることで、より多くのユーザーと貢献者にとって利用しやすい環境を整備すること。] [GitHub: github/docs] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 05 Nov 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>誤報の火災報知器がJane Street唯一のNYCデータセンターをほぼ水没させかけた</title>
-      <link>https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/</link>
-      <guid isPermaLink="false">https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/</guid>
-      <description>[Score: 75] Jane Streetのニューヨーク市にある唯一のデータセンターが、誤報の火災報知器によって水没の危機に瀕したという実話です。 / 同社は知的財産保護と技術リスク管理のため、データセンターをトレーディングフロアの近くに設置していました。 / システムのチームが迅速に対応し、幸運にも大きな被害を免れた経緯が語られています。 [実務示唆: データセンターの物理的セキュリティと災害対策は、どんなに高度な技術を持つ企業でも重要であり、冗長性確保や緊急時対応計画の定期的な見直しを徹底すべきである。] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 16:38:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>ブートコンソール上のsystemdジョブのライブツリー</title>
-      <link>https://codeberg.org/wvhulle/bootvine</link>
-      <guid isPermaLink="false">https://codeberg.org/wvhulle/bootvine</guid>
-      <description>[Score: 70] bootvineは、Linuxのブートコンソールでsystemdジョブのライブツリーを表示するツールです。 / 従来のログの羅列ではなく、保留中のユニットや実行時間の長いユニットのタイムラインを視覚的に表示します。 / シャットダウン時やLUKSパスフレーズ入力時にも機能し、ユニットの失敗理由も表示します。 [実務示唆: Linuxシステムの起動トラブルシューティングやパフォーマンス分析を効率化するため、bootvineを導入し、ブートプロセスの可視化を試すべきです。] [GitHub: wvhulle/bootvine] (Source: Hacker News)</description>
-      <pubDate>Mon, 09 Nov 2026 13:02:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>Next.js向け配管工ウェブサイトテンプレート：問い合わせに繋がる10のブロック</title>
-      <link>https://dev.to/marcoschulz123/plumber-website-template-for-nextjs-the-10-blocks-that-get-calls-321c</link>
-      <guid isPermaLink="false">https://dev.to/marcoschulz123/plumber-website-template-for-nextjs-the-10-blocks-that-get-calls-321c</guid>
-      <description>[Score: 70] Next.jsで配管工のウェブサイトを構築する際、訪問者を電話問い合わせに繋げるための効果的な10のブロック構成が紹介されています。 / ウェブサイトの目的は、緊急事態やリフォーム計画中の訪問者の疑問に答え、信頼を築き、行動を促すことです。 / ヒーローセクション、サービス、レビュー、FAQなど、顧客が求める情報を適切な順序で配置することが重要であり、これによりコンバージョン率を高めます。 [実務示唆: Next.jsでサービス業のウェブサイトを構築する際は、顧客のニーズと行動フローを深く理解し、問い合わせに直結する情報（サービス、信頼性、連絡先）を戦略的に配置したテンプレートを活用しましょう。] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 14:00:05 +0000</pubDate>
+      <title>週刊Cloudflare - 2026/11/08週</title>
+      <link>https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107</link>
+      <guid isPermaLink="false">https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107</guid>
+      <description>[Score: 75] Cloudflareの2026年11月08週のアップデートがまとめられています。 / Workerの設定比較時の権限確認の省略や、Wrangler deploy時のroute/custom domain metadata取得の改善など、開発者体験向上が図られています。 / 新しいプロジェクト作成時のcompatibility dateのデフォルト値更新や、WranglerによるContainer application削除提案機能の追加も含まれています。 [実務示唆: Cloudflare Workersを利用する開発者は、最新のWranglerや関連ライブラリにアップデートし、新しい機能や改善点を開発ワークフローに組み込む。] [GitHub: cloudflare/workers-sdk] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 04:54:55 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,13 +5,13 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 14:02:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 02:14:05 +0000</lastBuildDate>
     <item>
-      <title>AWSエミュレーター</title>
-      <link>https://github.com/aws/aws-emulator</link>
-      <guid isPermaLink="false">https://github.com/aws/aws-emulator</guid>
-      <description>[Score: 100] AWS Emulatorは、AWS APIをローカルでエミュレートするツールです。 / これにより、AWSアカウントなしで開発マシン、開発サーバー、CI環境でソフトウェアをテストできます。 / AWS CLIやSDKからエミュレーターのエンドポイントを指すように環境変数を設定するだけで利用可能です。 [実務示唆: AWS開発者は、aws-emulatorを導入し、ローカル環境でのテストを強化することで、開発サイクルを高速化しコストを削減できる。] [GitHub: aws/aws-emulator] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 18:21:38 +0000</pubDate>
+      <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
+      <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</guid>
+      <description>[Score: 95] AWSが、AIエージェント向けに強力な隔離環境とほぼネイティブなEC2性能を提供する軽量仮想マシン「AWS Nitro Sandboxes」の提供を開始しました。 / AIが生成する信頼できないコードを実行する機会が増える中、従来のコンテナ型仮想化では不十分なセキュリティ分離が課題でした。 / AWS Nitro Sandboxesは、AWS Nitro Systemを基盤とし、ハードウェアレベルでの強力なセキュリティと分離を実現しつつ、コンテナのような軽量性を提供します。 [実務示唆: AIエージェントや信頼できないコードを実行するシステムを構築する際は、AWS Nitro Sandboxesを活用し、セキュリティとパフォーマンスを両立させた安全な実行環境を検討しましょう。] (Source: Publickey)</description>
+      <pubDate>Wed, 11 Nov 2026 15:04:47 +0000</pubDate>
     </item>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
@@ -21,46 +21,25 @@
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub Actionsをロックする</title>
-      <link>https://hugovk.dev/blog/2026/lock-github-actions/</link>
-      <guid isPermaLink="false">https://hugovk.dev/blog/2026/lock-github-actions/</guid>
-      <description>[Score: 95] GitHub Actionsがワークフローロックファイルをサポートし、サプライチェーン攻撃のリスクを軽減できるようになりました。 / 以前はタグではなくフルSHAにピン留めすることが推奨されていましたが、ロックファイルによりタグを使用しつつ安全性を確保できます。 / gh CLIのgh-actions-lock拡張機能を使って簡単にロックファイルを生成・管理できます。 [実務示唆: GitHub Actionsを利用する開発者は、gh-actions-lock拡張機能を導入し、ワークフローをロックすることで、サプライチェーン攻撃のリスクを低減しセキュリティを強化すべきである。] [GitHub: github/gh-actions-lock] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 22:16:41 +0000</pubDate>
+      <title>Foundation Modelsフレームワーク</title>
+      <link>https://developer.apple.com/foundation-models-framework/</link>
+      <guid isPermaLink="false">https://developer.apple.com/foundation-models-framework/</guid>
+      <description>[Score: 95] AppleがFoundation Modelsフレームワークを発表しました。これは、あらゆる大規模言語モデル（LLM）をアプリに統合するためのネイティブSwift APIです。 / Apple Intelligenceの中核をなすオンデバイスモデルやPrivate Cloud Computeへの直接アクセスに加え、ClaudeやGeminiなどのサーバーモデルも同じSwift APIで利用できます。 / ガイド付き生成、ツール呼び出し、画像理解、Dynamic Profilesなどの強力な機能が組み込まれており、マルチモーダルプロンプトやVisionフレームワークとの統合も可能です。 [実務示唆: iOS開発者は、Foundation Modelsフレームワークを積極的に採用し、オンデバイスおよびクラウドLLMを活用したAI機能（画像理解、ツール呼び出しなど）をアプリに組み込み、ユーザー体験を革新すべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 21:13:26 +0000</pubDate>
     </item>
     <item>
-      <title>自己修復型コーディングエージェント：MCPでプロダクショングレードのハーネスループを構築する方法</title>
-      <link>https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</link>
-      <guid isPermaLink="false">https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</guid>
-      <description>[Score: 95] 自律型コーディングエージェントはデモでは魅力的ですが、大規模なエンタープライズコードベースでは失敗しやすい課題があります。 / Zhishu Agentは、モデルの能力を最大限に引き出し、運用信頼性を確保するためのオープンソースのハーネスアーキテクチャを提案しています。 / これは、ユーザー意図の取り込み、計画、ツール実行前のガード、サンドボックスでの実行、テスト駆動検証からなる収束型ステートマシンとして機能します。 [実務示唆: プロダクション環境でコーディングエージェントを導入する際は、単なるモデルのループではなく、Zhishu Agentのようなハーネスアーキテクチャを参考に、堅牢なエラーハンドリングと検証メカニズムを組み込むべきです。] [GitHub: wangguode/zhishu-agent] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 02:26:41 +0000</pubDate>
+      <title>Edge0-145B: あなたのコンピューターで最先端のAI機能を実現</title>
+      <link>https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</link>
+      <guid isPermaLink="false">https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</guid>
+      <description>[Score: 95] Edge0が1450億パラメータを持つ世界初のオープンソースオンデバイスAIモデル「Edge0-145B」を公開しました。 / これにより、コーディング、推論、エージェント機能が個人のPCで利用可能になり、クラウドAIに匹敵する能力を提供します。 / モデルは大幅なメモリ効率化と高速処理を実現し、開発者はフルスタックでモデルの評価や統合が可能です。 [実務示唆: Edge0-145Bをローカル環境に導入し、オフラインでのAI開発や機密データを扱うアプリケーションでの活用を検討する。] [GitHub: edge0-ai/edge0] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 23:06:17 +0000</pubDate>
     </item>
     <item>
-      <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
-      <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</guid>
-      <description>[Score: 95] AWSが、AIエージェント向けに強力な隔離環境とほぼネイティブなEC2性能を提供する軽量仮想マシン「AWS Nitro Sandboxes」の提供を開始しました。 / AIが生成する信頼できないコードを実行する機会が増える中、従来のコンテナ型仮想化では不十分なセキュリティ分離が課題でした。 / AWS Nitro Sandboxesは、AWS Nitro Systemを基盤とし、ハードウェアレベルでの強力なセキュリティと分離を実現しつつ、コンテナのような軽量性を提供します。 [実務示唆: AIエージェントや信頼できないコードを実行するシステムを構築する際は、AWS Nitro Sandboxesを活用し、セキュリティとパフォーマンスを両立させた安全な実行環境を検討しましょう。] (Source: Publickey)</description>
-      <pubDate>Wed, 11 Nov 2026 15:04:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>Apache HTTP Serverに深刻なRCE脆弱性</title>
-      <link>https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability</link>
-      <guid isPermaLink="false">https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability</guid>
-      <description>[Score: 95] Apache HTTP ServerのHTTP/2モジュール(mod_http2)に、深刻な同期脆弱性(CVE-2026-119618)が発見されました。 / この脆弱性は、共有リソース処理における競合状態に起因し、リモートの認証されていない攻撃者がヒープメモリを破損させ、任意のコード実行(RCE)を可能にする可能性があります。 / Wizのデータによると、クラウド環境の64%がこの脆弱性の影響を受けるリソースを抱えているとのことです。 [実務示唆: Apache HTTP Serverのユーザーは、直ちにmod_http2モジュールの更新または無効化を検討し、システムへのパッチ適用を最優先で実施すべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 12 Nov 2026 02:11:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>Software Factoryの先へ：全社の仕事をAI-NativeにするUbieの内製クラウドエージェント基盤</title>
-      <link>https://zenn.dev/ubie_dev/articles/45501469c9c044</link>
-      <guid isPermaLink="false">https://zenn.dev/ubie_dev/articles/45501469c9c044</guid>
-      <description>[Score: 95] Ubieが内製するクラウドエージェント基盤「Remoco」とエンジニアリングエージェント「Uvin」について紹介しています。 / プロダクト開発だけでなく、全社の仕事をAI-Nativeにするための基盤と位置づけ、Google CloudとTemporalを中心としたアーキテクチャを採用。 / エージェントハーネスをサンドボックスの外に置き、ツールとしてサンドボックスを呼び出す「Sandbox-as-a-tool」構成の利点や、耐久性の高いエージェントハーネス「Pi Durable」の採用について解説しています。 [実務示唆: AIエージェントを全社的に活用する際は、耐久性のあるエージェントハーネスと、サンドボックスをツールとして利用する「Sandbox-as-a-tool」構成を検討し、安全かつ効率的な運用を目指しましょう。] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 00:44:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>ISUCON2026で優勝しました（準備編）</title>
-      <link>https://zenn.dev/luvtechno/articles/isucon2026-preparation</link>
-      <guid isPermaLink="false">https://zenn.dev/luvtechno/articles/isucon2026-preparation</guid>
-      <description>[Score: 90] この記事は、ISUCON2026でAIエージェントを完全自律（HOOTL）で参加させ、優勝するまでの3ヶ月間の準備期間を振り返るものです。 / 人間が介入しないAIエージェントによるソフトウェア開発の可能性を探るため、ISUCONを題材に選定しました。 / AWS環境の整備、過去問の分析、自律ハーネスの構築など、具体的な準備プロセスと知見が詳細に記述されています。 [実務示唆: AIエージェントによる開発自動化の可能性を探るため、ISUCONのような明確な指標がある課題でHOOTLアプローチを試すことを検討し、その知見を業務に活かすべきです。] (Source: Zenn)</description>
-      <pubDate>Wed, 11 Nov 2026 05:05:46 +0000</pubDate>
+      <title>大規模なMicrosoft 365の障害がOutlook、Teams、Copilotに世界中で影響</title>
+      <link>https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/</guid>
+      <description>[Score: 95] Microsoft 365で大規模な障害が発生し、Outlook、Teams、Copilotといった主要サービスが世界中で利用できなくなりました。 / この障害は多くの企業や個人の業務に深刻な影響を与えたと推測されます。 / クラウドサービスの安定性と、障害発生時の対応の重要性が改めて浮き彫りになりました。 [実務示唆: Microsoft 365の障害は業務に大きな影響を与えるため、代替手段の検討や、障害発生時の情報収集・対応プロセスの確認を定期的に行うべきです。] (Source: Reddit)</description>
+      <pubDate>Thu, 12 Nov 2026 23:37:54 +0000</pubDate>
     </item>
     <item>
       <title>Fable 5.2でGTA 6 Osaka Cityを作ってみた</title>
@@ -84,67 +63,88 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>Gemini Decisions API</title>
-      <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</link>
-      <guid isPermaLink="false">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</guid>
-      <description>[Score: 90] Googleが新しいGemini Decision 1モデルを搭載したGemini Decisions APIを発表しました。 / このAPIは、テキスト、画像、音声、動画、PDFなど、様々なマルチモーダル入力に対して、最大1,000のYes/No、選択、ルーブリック採点質問を高速かつ単一パスで評価できます。 / ツール選択、ポリシーチェック、モデルルーティング、コンテキストグレーディングなど、閉じた選択肢の意思決定を効率的に行うための専用プリミティブを提供します。 [実務示唆: Gemini Decisions APIを活用し、マルチモーダル入力に基づく高速な意思決定システムを構築することで、コンテンツのルーティングやポリシーチェックの自動化を検討しましょう。] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 18:32:42 +0000</pubDate>
+      <title>Gemini 4 HydrogenとOrchestrator</title>
+      <link>https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/</link>
+      <guid isPermaLink="false">https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/</guid>
+      <description>[Score: 90] Google Antigravity内でGemini 4 Hydrogenと新しいOrchestratorモデルオプションが展開されました。 / OrchestratorはHydrogenと強力なモデル（Gemini 4 Carbonなど）を組み合わせて、長期間のタスクにおいて品質、効率、レイテンシーの最適バランスを実現します。 / これは、動的なアプローチでタスクの複雑性に応じてモデルを切り替えることで、大規模なエンジニアリングタスクを効率的に処理することを目的としています。 [実務示唆: Google Antigravityユーザーは、Orchestratorオプションを試用し、大規模なマルチワークツリータスクや複雑なエンジニアリング問題に対するAIエージェントの効率と品質向上を評価すべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 18:52:01 +0000</pubDate>
     </item>
     <item>
-      <title>ClaudeにApp StoreとGoogle Playのライブレビューを1つのMCPサーバーで提供した</title>
-      <link>https://dev.to/rasareka/i-gave-claude-live-app-store-and-google-play-reviews-with-one-mcp-server-46jl</link>
-      <guid isPermaLink="false">https://dev.to/rasareka/i-gave-claude-live-app-store-and-google-play-reviews-with-one-mcp-server-46jl</guid>
-      <description>[Score: 90] ClaudeのようなLLMは古い学習データに基づいて回答するため、最新のアプリレビューをリアルタイムで分析できません。 / 筆者は、App StoreとGoogle Playのライブレビューを読み込み、コンパクトな要約をモデルに渡すMCPサーバーを構築しました。 / これにより、最新のユーザーフィードバックに基づいた、より正確な製品分析が可能になります。 [実務示唆: LLMを活用した製品分析を行う際は、古い学習データに依存せず、Apifyなどのツールでリアルタイムデータを取得・要約し、最新のユーザーインサイトを反映させる仕組みを構築することを検討してください。] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 02:26:59 +0000</pubDate>
+      <title>VS Code の Local harness は2027年2月に削除：Copilot harness へ移行する手順とつまずきポイント</title>
+      <link>https://qiita.com/shahin0809/items/ccb8a8ddf11d6cb4113d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/shahin0809/items/ccb8a8ddf11d6cb4113d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] VS CodeのLocal harnessが2027年2月に削除され、Copilot harnessへの移行が必須となることが発表されました。 / 本記事では、公式ドキュメントや海外ユーザーの反応をまとめつつ、デモリポジトリで実際に移行を試した手順と注意点を解説しています。 / 特に、古いカスタマイズファイル（.vscode/mcp.jsonなど）は自動移行されないため、手動での対応が必要であることを強調しています。 [実務示唆: VS Codeユーザーは2027年2月までにLocal harnessからCopilot harnessへの移行を完了し、既存のカスタマイズが正しく機能するか検証してください。] [GitHub: microsoft/vscode] (Source: Qiita)</description>
+      <pubDate>Thu, 12 Nov 2026 07:50:38 +0000</pubDate>
     </item>
     <item>
-      <title>独占 | NvidiaはCEOジェンスン・フアンを解任する準備をしている</title>
-      <link>https://www.reddit.com/r/technology/comments/1xtvw5q/exclusive_nvidia_is_preparing_to_oust_ceo_jensen/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xtvw5q/exclusive_nvidia_is_preparing_to_oust_ceo_jensen/</guid>
-      <description>[Score: 90] NvidiaがCEOのジェンスン・フアン氏を解任する準備をしているという独占報道です。 / もしこれが事実であれば、Nvidiaの経営戦略や株価に大きな影響を与える可能性があります。 / フアン氏はNvidiaの成長を牽引してきた人物であり、その交代は半導体業界全体にも波紋を広げるでしょう。 [実務示唆: NvidiaのCEO交代に関する報道は、半導体市場やAI関連技術の動向に大きな影響を与える可能性があるため、関連ニュースを継続的に追跡し、投資やビジネス戦略への影響を評価すること。] (Source: Reddit)</description>
-      <pubDate>Wed, 11 Nov 2026 22:36:18 +0000</pubDate>
+      <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
+      <link>https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AWS Emulatorは、AWSアカウントなしでローカルやCI上でAWS SDK/CLIの呼び出しをエミュレートするツールです。 / 本記事では、特にCDK/TerraformなどのIaCツールがAWS Emulator上でどこまで動作するかを検証しています。 / 公式ドキュメントではIaCツールへの対応はサービスによって異なるとされており、その実態をWindows 11 + Docker環境で試した結果がまとめられています。 [実務示唆: AWS Emulatorの導入を検討する際は、利用するAWSサービスがIaCツールでどこまでサポートされているか、忠実度テストの結果を確認し、事前に検証すること。] (Source: Qiita)</description>
+      <pubDate>Wed, 11 Nov 2026 23:39:20 +0000</pubDate>
     </item>
     <item>
-      <title>NVIDIAがCEO交代を発表</title>
-      <link>https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition</link>
-      <guid isPermaLink="false">https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition</guid>
-      <description>[Score: 90] NVIDIAは、長年CEOを務めたジェンスン・フアン氏が社長兼CEOおよび取締役を辞任したことを発表しました。 / 暫定CEOには、現CFOのコレット・クレス氏が就任し、後任のCEOを社内外から選定するとのことです。 / この人事は、NVIDIAの経営体制に大きな変化をもたらす可能性があります。 [実務示唆: NVIDIAの経営層の変更は、今後の製品戦略や市場動向に影響を与える可能性があるため、同社の発表や市場の反応を注視すべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 12 Nov 2026 13:52:29 +0000</pubDate>
+      <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
+      <link>https://www.publickey1.jp/blog/26/playwrightbun.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/playwrightbun.html</guid>
+      <description>[Score: 85] Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンv1.65.0でBunでのテストランナー実行を正式にサポートしました。 / これにより、PlaywrightのテストランナーはNode.jsに加えてBun環境でも動作可能になります。 / BunがTypeScriptテストファイルを直接トランスパイルするため、Babelやコンパイルキャッシュが不要となり、システムがシンプルになる利点があります。 [実務示唆: PlaywrightユーザーはBunを導入することで、TypeScriptテストのトランスパイルプロセスを簡素化し、テスト実行の高速化や開発環境の効率化を検討しましょう。] [GitHub: microsoft/playwright] (Source: Publickey)</description>
+      <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
     </item>
     <item>
-      <title>Node.js 22 / 24 / 26 の脆弱性、自分のアプリが影響を受けるか確認する方法【2026年11月】</title>
-      <link>https://zenn.dev/rakko_inc/articles/nodejs-security-nov-2026-proxy</link>
-      <guid isPermaLink="false">https://zenn.dev/rakko_inc/articles/nodejs-security-nov-2026-proxy</guid>
-      <description>[Score: 90] Node.js 22・24・26系のセキュリティリリースで修正された脆弱性について解説しています。 / 深刻度Highの7件はHTTP/2とTLS処理に関するもので、ロードバランサーやnginxの後ろでNode.jsを動かす構成では影響を受けにくいことを説明。 / 自身のアプリがこれらの脆弱性の影響を受けるかどうかの判断基準を提示しています。 [実務示唆: Node.jsの脆弱性対応では、ロードバランサーやリバースプロキシの有無を確認し、TLS/HTTP/2終端がNode.js自身か手前の機器かによって影響範囲を判断しましょう。] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 02:31:30 +0000</pubDate>
+      <title>Rust 1.100</title>
+      <link>https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/</link>
+      <guid isPermaLink="false">https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/</guid>
+      <description>[Score: 85] Rustチームはプログラミング言語Rustのバージョン1.100.0をリリースしました。 / このバージョンでは、10年越しで「never type」（!）が安定化され、制御フローを終了する式がこの型を持つようになります。 / これにより、コードの安全性と表現力が向上し、より堅牢なソフトウェア開発が可能になります。 [実務示唆: Rust開発者は、`rustup update stable`で1.100.0に更新し、never type `!`の安定化によるコードの改善点や新たなパターンを検証し、活用を検討すべきです。] [GitHub: rust-lang/rust] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 18:39:05 +0000</pubDate>
     </item>
     <item>
-      <title>無印良品「21年までクレカ番号で顧客を識別していた」 “全ケタ保有＆漏えい“巡り謝罪 削除漏れなぜ発生</title>
-      <link>https://www.itmedia.co.jp/news/article/2611/12/2000003144/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/12/2000003144/</guid>
-      <description>[Score: 90] 無印良品が不正アクセスによる顧客情報流出で謝罪し、2021年までクレジットカード番号全桁を顧客識別に使用し、削除漏れがあったことを認めました。 / 本来削除すべきカード番号が保管され、マスキングや暗号化もされていなかったことが判明し、データ運用管理の不備が指摘されています。 / リスト型攻撃とは異なる経路でクレジットカード情報へのアクセスがあった可能性も示唆されており、原因究明と情報管理体制の見直しが急務です。 [実務示唆: 企業は個人情報、特にクレジットカード情報の保持・削除ポリシーを厳格化し、PCI DSS準拠や非保持化の徹底、定期的な監査と従業員教育を強化する。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 12 Nov 2026 08:34:31 +0000</pubDate>
+      <title>AWS EmulatorはAWS Blocksのモックを置き換えるのか？実際に動かして見えた「三つ目の層」</title>
+      <link>https://zenn.dev/genda_jp/articles/18d1f780f6b41f</link>
+      <guid isPermaLink="false">https://zenn.dev/genda_jp/articles/18d1f780f6b41f</guid>
+      <description>[Score: 85] AWSがリリースしたAWS Emulatorが、既存のAWS Blocksのモックを置き換えるのかという疑問について検証しています。 / 結論として、Emulatorはモックを置き換えるのではなく、モックとサンドボックスの間に位置する「三つ目の層」として機能する可能性が示唆されています。 / EmulatorはAWS SDKやCLIの呼び出しをローカルでエミュレートし、Blocksのテスト環境での活用が効果的であると分析されています。 [実務示唆: AWS Blocksを利用する開発者は、AWS Emulatorを導入し、ローカル開発環境でのテストやデバッグの効率化を図ることを検討する。] [GitHub: aws/aws-emulator] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 05:20:41 +0000</pubDate>
     </item>
     <item>
-      <title>そのヤバいDockerイメージをいつまで使うのか</title>
-      <link>https://scrapbox.io/keroxp/%E3%81%9D%E3%81%AE%E3%83%A4%E3%83%90%E3%81%84Docker%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%82%92%E3%81%84%E3%81%A4%E3%81%BE%E3%81%A7%E4%BD%BF%E3%81%86%E3%81%AE%E3%81%8B</link>
-      <guid isPermaLink="false">https://scrapbox.io/keroxp/%E3%81%9D%E3%81%AE%E3%83%A4%E3%83%90%E3%81%84Docker%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%82%92%E3%81%84%E3%81%A4%E3%81%BE%E3%81%A7%E4%BD%BF%E3%81%86%E3%81%AE%E3%81%8B</guid>
-      <description>[Score: 90] Dockerコンテナは環境構築やデプロイの容易さから広く普及していますが、「Dockerだから安全」という神話は誤りです。 / コンテナはホスト昇格の脆弱性がないとしても、サーバー・アプリケーションレベルの危険性は解決されていません。 / RCE攻撃においてシェルスクリプトは最も単純かつ強力なツールであり、本番環境でのシェル利用は他のコマンド実行を助長し、予期せぬ挙動を引き起こす危険性があります。 [実務示唆: 本番環境のDockerイメージには必要最小限のツールのみを含め、シェルや不要なコマンドを削除し、PATH環境変数を厳格に管理してRCEリスクを低減しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 12 Nov 2026 10:43:51 +0000</pubDate>
+      <title>AIに書かせる時代だからこそ、コード1行を読む</title>
+      <link>https://qiita.com/yukegineer/items/e8fa851317846aa24de6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yukegineer/items/e8fa851317846aa24de6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AIがコードを生成する現代において、プログラマーがコードを1行ずつ読み込み、その意味を深く理解することの重要性を説いています。 / 「動けばOK」ではなく、NullPointerExceptionのような潜在的なバグを見つけるためにも、コードの挙動を予測できるレベルでの理解が不可欠です。 / コードレビューの経験から、この習慣がプログラマーとしての成長の土台になると筆者は主張しています。 [実務示唆: AI生成コードであっても、潜在的なバグを見つけるため、常に1行ずつコードを読み込み、その挙動を予測できるレベルまで理解する習慣を身につけるべきです。] (Source: Qiita)</description>
+      <pubDate>Tue, 10 Nov 2026 00:38:48 +0000</pubDate>
     </item>
     <item>
-      <title>GoogleがエージェントスタックをCNCFに提供し、Agent Substrateが1.0に到達</title>
-      <link>https://dev.to/neticslabs/agent-substrate-reaches-10-as-google-hands-its-agent-stack-to-the-cncf-3i08</link>
-      <guid isPermaLink="false">https://dev.to/neticslabs/agent-substrate-reaches-10-as-google-hands-its-agent-stack-to-the-cncf-3i08</guid>
-      <description>[Score: 90] GoogleがAIエージェントスタック「Agent Substrate」をCNCFに提供し、バージョン1.0に到達しました。 / Agent Substrateは、エージェントの待機中にリソースを占有する従来のKubernetes Podの問題を解決します。 / ステートフルなセッションとコンピュートを分離し、リソース効率とスケーラビリティを向上させる設計が特徴です。 [実務示唆: AIエージェントを大規模に運用する開発者は、Agent Substrateのアーキテクチャを理解し、リソース効率とセキュリティ向上に役立つか評価を推奨する。] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 14:00:03 +0000</pubDate>
+      <title>個人情報流出ニュースが怖いので、パスワード対策をガチで見直してみた</title>
+      <link>https://qiita.com/koshiro_esaki/items/22b7e355068ac0dad571?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/koshiro_esaki/items/22b7e355068ac0dad571?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] 個人情報流出のニュースを受け、個人でできるパスワード対策を根本から見直した記事です。 / パスワードの使い回しをやめ、サービスごとに異なる15文字以上のパスワードを設定することを推奨しています。 / パスワードマネージャーの活用や、多要素認証の導入、フィッシング詐欺対策の重要性についても解説しています。 [実務示唆: 全サービスで15文字以上の異なるパスワードを設定し、パスワードマネージャーと多要素認証を導入して、フィッシング詐欺にも注意を払いましょう。] (Source: Qiita)</description>
+      <pubDate>Tue, 10 Nov 2026 02:10:06 +0000</pubDate>
     </item>
     <item>
-      <title>DynamoDBの楽観的ロック：Lambdaとバージョン番号による実装</title>
-      <link>https://dev.to/sascha-ms/dynamodb-optimistic-locking-version-numbers-with-lambda-1foc</link>
-      <guid isPermaLink="false">https://dev.to/sascha-ms/dynamodb-optimistic-locking-version-numbers-with-lambda-1foc</guid>
-      <description>[Score: 88] DynamoDBにおける楽観的ロックは、複数のリクエストが同時に同じアイテムを更新しようとした際に発生する「ロストアップデート」問題を解決する実用的な手法です。 / この手法では、アイテムにバージョン番号を保存し、書き込み時にそのバージョン番号が読み込み時と一致する場合のみ更新を許可します。 / Lambda環境では並列実行により衝突が発生しやすいため、バージョン番号と条件付き書き込み、そして再読み込みを伴うリトライ処理が重要となります。 [実務示唆: DynamoDBとLambdaを使用するアプリケーションでデータの整合性を確保するため、楽観的ロックパターンを導入し、バージョン番号とConditionalCheckFailedExceptionハンドリングを実装しましょう。] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 14:00:07 +0000</pubDate>
+      <title>【備忘録】Transformerを数式レベルからnumpyのみで実装して理解する（②Backward Propagation編）</title>
+      <link>https://zenn.dev/matsu8/articles/a01ba3fc713e03</link>
+      <guid isPermaLink="false">https://zenn.dev/matsu8/articles/a01ba3fc713e03</guid>
+      <description>[Score: 80] Transformerの各部品の誤差逆伝播法（Back Propagation）をNumPyのみで実装し、損失から全パラメータへの勾配の流れを確認する記事です。 / 前回のForward Propagationに続き、今回はBackward Propagationの実装に焦点を当て、具体的なコードと数式レベルでの解説が行われています。 / AIツールが普及する中でも、自らの手で実装することで得られる「イメージを自分の中に保存する」という学習価値を強調しています。 [実務示唆: Transformerの内部動作を深く理解するため、NumPyによるBackward Propagationの実装を実際に手を動かして追体験し、理論と実践を結びつける。] [GitHub: matsu8/transformer-numpy-implementation] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 13:30:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>Show HN: 300ドルの刺繍機にサブスクが必要だったので、自作アプリを開発した</title>
+      <link>https://github.com/simpsoka/zigzag</link>
+      <guid isPermaLink="false">https://github.com/simpsoka/zigzag</guid>
+      <description>[Score: 75] ユーザーが300ドルの刺繍機にサブスクリプションが必要だったため、Rustで独自のビジュアル刺繍エディタ「ZigZag」を開発しました。 / ZigZagはSVGアートワークをステッチに変換し、エディタで調整、PES/DST/EXP/JEF/VP3形式でエクスポート可能です。 / AIエージェントがデザイン作成・編集を支援するMCP（Model Context Protocol）もサポートしており、MacとWindowsで利用できます。 [実務示唆: 刺繍機ユーザーやDIY愛好家は、ZigZagアプリをダウンロードして、サブスク不要でSVGから刺繍デザインを作成・編集し、AI支援機能の可能性を探るべきです。] [GitHub: simpsoka/zigzag] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 17:02:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>週刊Cloudflare - 2026/11/08週</title>
+      <link>https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107</link>
+      <guid isPermaLink="false">https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107</guid>
+      <description>[Score: 75] Cloudflareの2026年11月08週のアップデートがまとめられています。 / Workerの設定比較時の権限確認の省略や、Wrangler deploy時のroute/custom domain metadata取得の改善など、開発者体験向上が図られています。 / 新しいプロジェクト作成時のcompatibility dateのデフォルト値更新や、WranglerによるContainer application削除提案機能の追加も含まれています。 [実務示唆: Cloudflare Workersを利用する開発者は、最新のWranglerや関連ライブラリにアップデートし、新しい機能や改善点を開発ワークフローに組み込む。] [GitHub: cloudflare/workers-sdk] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 04:54:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>セキュリティ・キャンプ 2026 応募課題晒し</title>
+      <link>https://zenn.dev/uvu/articles/758ee227a614ea</link>
+      <guid isPermaLink="false">https://zenn.dev/uvu/articles/758ee227a614ea</guid>
+      <description>[Score: 70] 筆者がセキュリティ・キャンプ修了後、プロダクトセキュリティクラスでの学びを振り返る記事です。 / 特にAIを活用した開発とインフラ・ネットワークセキュリティに関する講義に強い関心を示しています。 / ProxmoxやKubernetesなどを活用した実運用に近いシステム構築経験から、安全なシステム設計の重要性を強調しています。 [実務示唆: AI生成コードのセキュリティ評価や、攻撃者視点での外部公開リソースのリスク分析手法を学び、自身の開発・運用に活かすことを検討しましょう。] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 06:45:01 +0000</pubDate>
     </item>
   </channel>
 </rss>

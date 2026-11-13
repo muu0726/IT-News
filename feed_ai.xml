@@ -5,14 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 14:02:58 +0000</lastBuildDate>
-    <item>
-      <title>自己修復型コーディングエージェント：MCPでプロダクショングレードのハーネスループを構築する方法</title>
-      <link>https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</link>
-      <guid isPermaLink="false">https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9</guid>
-      <description>[Score: 95] 自律型コーディングエージェントはデモでは魅力的ですが、大規模なエンタープライズコードベースでは失敗しやすい課題があります。 / Zhishu Agentは、モデルの能力を最大限に引き出し、運用信頼性を確保するためのオープンソースのハーネスアーキテクチャを提案しています。 / これは、ユーザー意図の取り込み、計画、ツール実行前のガード、サンドボックスでの実行、テスト駆動検証からなる収束型ステートマシンとして機能します。 [実務示唆: プロダクション環境でコーディングエージェントを導入する際は、単なるモデルのループではなく、Zhishu Agentのようなハーネスアーキテクチャを参考に、堅牢なエラーハンドリングと検証メカニズムを組み込むべきです。] [GitHub: wangguode/zhishu-agent] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 02:26:41 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 13 Nov 2026 02:14:05 +0000</lastBuildDate>
     <item>
       <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
@@ -21,18 +14,18 @@
       <pubDate>Wed, 11 Nov 2026 15:04:47 +0000</pubDate>
     </item>
     <item>
-      <title>Software Factoryの先へ：全社の仕事をAI-NativeにするUbieの内製クラウドエージェント基盤</title>
-      <link>https://zenn.dev/ubie_dev/articles/45501469c9c044</link>
-      <guid isPermaLink="false">https://zenn.dev/ubie_dev/articles/45501469c9c044</guid>
-      <description>[Score: 95] Ubieが内製するクラウドエージェント基盤「Remoco」とエンジニアリングエージェント「Uvin」について紹介しています。 / プロダクト開発だけでなく、全社の仕事をAI-Nativeにするための基盤と位置づけ、Google CloudとTemporalを中心としたアーキテクチャを採用。 / エージェントハーネスをサンドボックスの外に置き、ツールとしてサンドボックスを呼び出す「Sandbox-as-a-tool」構成の利点や、耐久性の高いエージェントハーネス「Pi Durable」の採用について解説しています。 [実務示唆: AIエージェントを全社的に活用する際は、耐久性のあるエージェントハーネスと、サンドボックスをツールとして利用する「Sandbox-as-a-tool」構成を検討し、安全かつ効率的な運用を目指しましょう。] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 00:44:52 +0000</pubDate>
+      <title>Foundation Modelsフレームワーク</title>
+      <link>https://developer.apple.com/foundation-models-framework/</link>
+      <guid isPermaLink="false">https://developer.apple.com/foundation-models-framework/</guid>
+      <description>[Score: 95] AppleがFoundation Modelsフレームワークを発表しました。これは、あらゆる大規模言語モデル（LLM）をアプリに統合するためのネイティブSwift APIです。 / Apple Intelligenceの中核をなすオンデバイスモデルやPrivate Cloud Computeへの直接アクセスに加え、ClaudeやGeminiなどのサーバーモデルも同じSwift APIで利用できます。 / ガイド付き生成、ツール呼び出し、画像理解、Dynamic Profilesなどの強力な機能が組み込まれており、マルチモーダルプロンプトやVisionフレームワークとの統合も可能です。 [実務示唆: iOS開発者は、Foundation Modelsフレームワークを積極的に採用し、オンデバイスおよびクラウドLLMを活用したAI機能（画像理解、ツール呼び出しなど）をアプリに組み込み、ユーザー体験を革新すべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 21:13:26 +0000</pubDate>
     </item>
     <item>
-      <title>ISUCON2026で優勝しました（準備編）</title>
-      <link>https://zenn.dev/luvtechno/articles/isucon2026-preparation</link>
-      <guid isPermaLink="false">https://zenn.dev/luvtechno/articles/isucon2026-preparation</guid>
-      <description>[Score: 90] この記事は、ISUCON2026でAIエージェントを完全自律（HOOTL）で参加させ、優勝するまでの3ヶ月間の準備期間を振り返るものです。 / 人間が介入しないAIエージェントによるソフトウェア開発の可能性を探るため、ISUCONを題材に選定しました。 / AWS環境の整備、過去問の分析、自律ハーネスの構築など、具体的な準備プロセスと知見が詳細に記述されています。 [実務示唆: AIエージェントによる開発自動化の可能性を探るため、ISUCONのような明確な指標がある課題でHOOTLアプローチを試すことを検討し、その知見を業務に活かすべきです。] (Source: Zenn)</description>
-      <pubDate>Wed, 11 Nov 2026 05:05:46 +0000</pubDate>
+      <title>Edge0-145B: あなたのコンピューターで最先端のAI機能を実現</title>
+      <link>https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</link>
+      <guid isPermaLink="false">https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</guid>
+      <description>[Score: 95] Edge0が1450億パラメータを持つ世界初のオープンソースオンデバイスAIモデル「Edge0-145B」を公開しました。 / これにより、コーディング、推論、エージェント機能が個人のPCで利用可能になり、クラウドAIに匹敵する能力を提供します。 / モデルは大幅なメモリ効率化と高速処理を実現し、開発者はフルスタックでモデルの評価や統合が可能です。 [実務示唆: Edge0-145Bをローカル環境に導入し、オフラインでのAI開発や機密データを扱うアプリケーションでの活用を検討する。] [GitHub: edge0-ai/edge0] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 23:06:17 +0000</pubDate>
     </item>
     <item>
       <title>Fable 5.2でGTA 6 Osaka Cityを作ってみた</title>
@@ -49,67 +42,25 @@
       <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
     </item>
     <item>
-      <title>Gemini Decisions API</title>
-      <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</link>
-      <guid isPermaLink="false">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</guid>
-      <description>[Score: 90] Googleが新しいGemini Decision 1モデルを搭載したGemini Decisions APIを発表しました。 / このAPIは、テキスト、画像、音声、動画、PDFなど、様々なマルチモーダル入力に対して、最大1,000のYes/No、選択、ルーブリック採点質問を高速かつ単一パスで評価できます。 / ツール選択、ポリシーチェック、モデルルーティング、コンテキストグレーディングなど、閉じた選択肢の意思決定を効率的に行うための専用プリミティブを提供します。 [実務示唆: Gemini Decisions APIを活用し、マルチモーダル入力に基づく高速な意思決定システムを構築することで、コンテンツのルーティングやポリシーチェックの自動化を検討しましょう。] (Source: Hacker News)</description>
-      <pubDate>Wed, 11 Nov 2026 18:32:42 +0000</pubDate>
+      <title>Gemini 4 HydrogenとOrchestrator</title>
+      <link>https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/</link>
+      <guid isPermaLink="false">https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/</guid>
+      <description>[Score: 90] Google Antigravity内でGemini 4 Hydrogenと新しいOrchestratorモデルオプションが展開されました。 / OrchestratorはHydrogenと強力なモデル（Gemini 4 Carbonなど）を組み合わせて、長期間のタスクにおいて品質、効率、レイテンシーの最適バランスを実現します。 / これは、動的なアプローチでタスクの複雑性に応じてモデルを切り替えることで、大規模なエンジニアリングタスクを効率的に処理することを目的としています。 [実務示唆: Google Antigravityユーザーは、Orchestratorオプションを試用し、大規模なマルチワークツリータスクや複雑なエンジニアリング問題に対するAIエージェントの効率と品質向上を評価すべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 12 Nov 2026 18:52:01 +0000</pubDate>
     </item>
     <item>
-      <title>ClaudeにApp StoreとGoogle Playのライブレビューを1つのMCPサーバーで提供した</title>
-      <link>https://dev.to/rasareka/i-gave-claude-live-app-store-and-google-play-reviews-with-one-mcp-server-46jl</link>
-      <guid isPermaLink="false">https://dev.to/rasareka/i-gave-claude-live-app-store-and-google-play-reviews-with-one-mcp-server-46jl</guid>
-      <description>[Score: 90] ClaudeのようなLLMは古い学習データに基づいて回答するため、最新のアプリレビューをリアルタイムで分析できません。 / 筆者は、App StoreとGoogle Playのライブレビューを読み込み、コンパクトな要約をモデルに渡すMCPサーバーを構築しました。 / これにより、最新のユーザーフィードバックに基づいた、より正確な製品分析が可能になります。 [実務示唆: LLMを活用した製品分析を行う際は、古い学習データに依存せず、Apifyなどのツールでリアルタイムデータを取得・要約し、最新のユーザーインサイトを反映させる仕組みを構築することを検討してください。] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 02:26:59 +0000</pubDate>
+      <title>VS Code の Local harness は2027年2月に削除：Copilot harness へ移行する手順とつまずきポイント</title>
+      <link>https://qiita.com/shahin0809/items/ccb8a8ddf11d6cb4113d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/shahin0809/items/ccb8a8ddf11d6cb4113d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] VS CodeのLocal harnessが2027年2月に削除され、Copilot harnessへの移行が必須となることが発表されました。 / 本記事では、公式ドキュメントや海外ユーザーの反応をまとめつつ、デモリポジトリで実際に移行を試した手順と注意点を解説しています。 / 特に、古いカスタマイズファイル（.vscode/mcp.jsonなど）は自動移行されないため、手動での対応が必要であることを強調しています。 [実務示唆: VS Codeユーザーは2027年2月までにLocal harnessからCopilot harnessへの移行を完了し、既存のカスタマイズが正しく機能するか検証してください。] [GitHub: microsoft/vscode] (Source: Qiita)</description>
+      <pubDate>Thu, 12 Nov 2026 07:50:38 +0000</pubDate>
     </item>
     <item>
-      <title>GoogleがエージェントスタックをCNCFに提供し、Agent Substrateが1.0に到達</title>
-      <link>https://dev.to/neticslabs/agent-substrate-reaches-10-as-google-hands-its-agent-stack-to-the-cncf-3i08</link>
-      <guid isPermaLink="false">https://dev.to/neticslabs/agent-substrate-reaches-10-as-google-hands-its-agent-stack-to-the-cncf-3i08</guid>
-      <description>[Score: 90] GoogleがAIエージェントスタック「Agent Substrate」をCNCFに提供し、バージョン1.0に到達しました。 / Agent Substrateは、エージェントの待機中にリソースを占有する従来のKubernetes Podの問題を解決します。 / ステートフルなセッションとコンピュートを分離し、リソース効率とスケーラビリティを向上させる設計が特徴です。 [実務示唆: AIエージェントを大規模に運用する開発者は、Agent Substrateのアーキテクチャを理解し、リソース効率とセキュリティ向上に役立つか評価を推奨する。] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 14:00:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>Real2Sim2Realの現在地：現場スキャンからロボット検証環境へ</title>
-      <link>https://zenn.dev/kudan_jp/articles/a0cb75384f4a83</link>
-      <guid isPermaLink="false">https://zenn.dev/kudan_jp/articles/a0cb75384f4a83</guid>
-      <description>[Score: 85] 自律移動ロボット開発において、実際の現場をスキャンしてシミュレーション環境を構築するReal2Sim2Realのアプローチが一般的になっています。 / 現場スキャンからロボットが動ける環境への変換、検証条件の多様化、計算効率、構築コストが主要な論点です。 / Kudanでは、このプロセスにおける技術動向を整理し、特に構築コスト削減のためにLLMやVLMの活用が進んでいる現状を解説しています。 [実務示唆: 自律移動ロボット開発者は、Real2Sim2Realの各ステップにおける最新技術動向を把握し、特にLLM/VLMを活用したシミュレーション環境構築の自動化を検討すべきです。] (Source: Zenn)</description>
-      <pubDate>Wed, 11 Nov 2026 09:46:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>ヘルスケアAIoTシステムの設計：RFIDとセンサーから物理的なAIアクションまで</title>
-      <link>https://dev.to/isadora_gift/designing-healthcare-aiot-systems-from-rfid-and-sensors-to-physical-ai-actions-450p</link>
-      <guid isPermaLink="false">https://dev.to/isadora_gift/designing-healthcare-aiot-systems-from-rfid-and-sensors-to-physical-ai-actions-450p</guid>
-      <description>[Score: 85] ヘルスケア分野におけるAIoTシステムは、デジタルシステムと物理的資産・プロセスを連携させる重要な課題に直面しています。 / RFIDや各種センサーを用いて医療機器や検体などを識別・監視し、その情報をAIが分析します。 / これにより、資産管理、状態監視、運用応答の自動化など、医療現場の効率と安全性を向上させます。 [実務示唆: ヘルスケア分野のエンジニアは、RFIDやセンサー技術、AIoTプラットフォームの知識を深め、物理的な医療現場とデジタルシステムを連携させるソリューション開発に取り組むべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 12 Nov 2026 02:28:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIエージェントが決定を勝手に変えてしまった5つのパターンと工夫</title>
-      <link>https://zenn.dev/dress_code/articles/568fd547315abe</link>
-      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/568fd547315abe</guid>
-      <description>[Score: 85] AIエージェントがユーザーの意図しない決定を下してしまう5つのパターンと、それに対する工夫を紹介しています。 / 仕様に関する質問が決定として記録されたり、了承していない提案が決定済みとして扱われたりする事例を具体的に解説。 / AIとの協業において、決定事項の記録方法や確認プロセスを改善することの重要性を指摘しています。 [実務示唆: AIエージェントとの協業では、決定事項の記録方法を明確にし、エージェントの提案を安易に決定としないよう、人間が最終確認するプロセスを徹底しましょう。] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 03:00:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>EarthRecord: 40年間の衛星画像からマルチモーダルエージェントによる土地変化をピクセルから検出</title>
-      <link>https://arxiv.org/abs/2611.12934</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.12934</guid>
-      <description>[Score: 80] 本記事は、40年以上にわたる衛星画像データを用いて、マルチモーダルAIエージェントが土地変化をピクセルレベルで検出する研究論文です。 / 地球規模の環境モニタリングや土地利用変化の分析にAIを応用する可能性を探っています。 / arXivLabsを通じて公開されており、大規模な地理空間データ解析におけるAIの進化を示しています。 (Source: arXiv cs.AI)</description>
-      <pubDate>Wed, 11 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>OpenCodeを拡張して、複数の担当と定期実行をひとつのチャットにまとめる「いちょまる」を作った</title>
-      <link>https://zenn.dev/theoj/articles/opencode-development-log</link>
-      <guid isPermaLink="false">https://zenn.dev/theoj/articles/opencode-development-log</guid>
-      <description>[Score: 80] AIに依頼するタスクが増える中で、会話の管理や進捗追跡の煩雑さを解消するため、OpenCodeを拡張した「いちょまる」が開発されました。 / 「いちょまる」は、利用者が常に同じ親セッションに話しかけ、親が子セッション（担当）に仕事を振り分け、途中経過や結果を利用者に伝える仕組みです。 / 定期実行機能も備え、既存のOpenCode機能を活用しつつ、ひとつの窓口から複数のAIタスクを効率的に管理することを目指しています。 [実務示唆: AIエージェントを活用した開発において、タスク管理の効率化は重要であり、OpenCodeのような既存ツールを拡張して独自のAIワークフローを構築するアプローチは参考になります。] [GitHub: opencode-ai/opencode] (Source: Zenn)</description>
-      <pubDate>Wed, 11 Nov 2026 12:38:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>MetaのAIエージェント「Muse」に課金して使い倒した結果の、小ネタと生存戦略 - はげあたま.org</title>
-      <link>https://www.hageatama.org/20261112/1794464751</link>
-      <guid isPermaLink="false">https://www.hageatama.org/20261112/1794464751</guid>
-      <description>[Score: 80] MetaのAIエージェント「Muse」を課金して使い倒した結果、モデル性能よりもハーネス（実行環境）の設計が優れていることが判明しました。 / Museは他の高性能モデル（GPT-6.1 Terraなど）をサブエージェントとして呼び出すことで、より快適な作業環境を構築できると筆者は述べています。 / 課金は急がず、既存のサブスクリプションとの兼ね合いで判断し、必要に応じて外部APIを活用する戦略が推奨されています。 [実務示唆: AIエージェント導入時は、モデル単体の性能だけでなく、ツール連携や実行環境の設計を重視し、既存のAIサービスとの連携も視野に入れて最適な構成を検討する。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 12 Nov 2026 06:35:10 +0000</pubDate>
+      <title>【備忘録】Transformerを数式レベルからnumpyのみで実装して理解する（②Backward Propagation編）</title>
+      <link>https://zenn.dev/matsu8/articles/a01ba3fc713e03</link>
+      <guid isPermaLink="false">https://zenn.dev/matsu8/articles/a01ba3fc713e03</guid>
+      <description>[Score: 80] Transformerの各部品の誤差逆伝播法（Back Propagation）をNumPyのみで実装し、損失から全パラメータへの勾配の流れを確認する記事です。 / 前回のForward Propagationに続き、今回はBackward Propagationの実装に焦点を当て、具体的なコードと数式レベルでの解説が行われています。 / AIツールが普及する中でも、自らの手で実装することで得られる「イメージを自分の中に保存する」という学習価値を強調しています。 [実務示唆: Transformerの内部動作を深く理解するため、NumPyによるBackward Propagationの実装を実際に手を動かして追体験し、理論と実践を結びつける。] [GitHub: matsu8/transformer-numpy-implementation] (Source: Zenn)</description>
+      <pubDate>Thu, 12 Nov 2026 13:30:40 +0000</pubDate>
     </item>
   </channel>
 </rss>
