@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Nov 2026 01:51:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 12:32:33 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
@@ -19,6 +19,27 @@
       <guid isPermaLink="false">https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 92] EUサイバーレジリエンス法（CRA）への対応として、OWASP Dependency-Track v5.2を用いて脆弱性検知からSlack通知、Pleasanterへの自動登録までを自動化した事例です。 / 積極的に悪用されている脆弱性（KEV, EPSS）の検知と期限管理を自動化することで、CRAが求める24時間以内の早期警告義務に対応することを目指しています。 / Dependency-Track v5の設定手順や、GitHub App Private KeyとAPI Tokenの併用不可といった注意点、OSVミラーリングの条件などが詳細に解説されています。 [実務示唆: CRAなどの法規制に対応するため、Dependency-TrackとPleasanterを連携させ、SBOM分析と脆弱性管理を自動化し、早期警告体制を構築しましょう。] [GitHub: DependencyTrack/dependency-track] (Source: Qiita)</description>
       <pubDate>Fri, 13 Nov 2026 00:22:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>【速報】マネックス証券、マイナカード画像漏えいか</title>
+      <link>https://www.47news.jp/15227159.html</link>
+      <guid isPermaLink="false">https://www.47news.jp/15227159.html</guid>
+      <description>[Score: 90] マネックス証券は、委託先が運営・管理する口座開設システムが不正アクセスを受けたと発表しました。 / 運転免許証やマイナンバーカードといった本人確認書類の画像1592件と、最大113万件のメールアドレスが漏えいした恐れがあるとのことです。 / この事態は、個人情報保護の重要性と、金融機関におけるセキュリティ対策の強化の必要性を改めて浮き彫りにしています。 [実務示唆: 個人情報を取り扱うシステムでは、委託先のセキュリティ対策も厳格に評価し、多層防御と定期的な脆弱性診断を徹底して実施すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 15:36:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>AWSでゼロトラスト構成を作る手順を5つのパートに分けて整理してみた</title>
+      <link>https://qiita.com/yama3133/items/11a360fc97ed3ec09742</link>
+      <guid isPermaLink="false">https://qiita.com/yama3133/items/11a360fc97ed3ec09742</guid>
+      <description>[Score: 85] AWSでゼロトラスト構成を構築する具体的な手順を5つのパートに分けて解説しています。 / 各パートで必要なAWSサービスとリソース、AWS CLIコマンドが整理されており、実践的な内容です。 / 「誰が」「何を」「どこから」「記録」というゼロトラストの原則に対応し、独立したパートとして利用可能です。 [実務示唆: AWS環境でゼロトラスト導入を検討している場合、記事の5つのパートを参考に、IAM Roles AnywhereやAWS Verified Accessなどのサービスを検証し、自社環境への適用可能性を評価してください。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 22:56:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>WordPressマルウェア駆除：ハッキングされたウェブサイトを修正するための開発者向けステップバイステップガイド</title>
+      <link>https://dev.to/nithurshan_suthakara/wordpress-malware-removal-a-developers-step-by-step-guide-to-fixing-a-hacked-website-3de5</link>
+      <guid isPermaLink="false">https://dev.to/nithurshan_suthakara/wordpress-malware-removal-a-developers-step-by-step-guide-to-fixing-a-hacked-website-3de5</guid>
+      <description>[Score: 75] ハッキングされたWordPressサイトのマルウェア駆除に関する開発者向けのステップバイステップガイドです。 / マルウェア感染の兆候確認から、調査、封じ込め、クリーンアップ、復旧後の検証まで、体系的なアプローチを解説しています。 / WP-CLIコマンドの活用など、実践的な対応策が具体的に示されています。 [実務示唆: WordPressサイトのマルウェア感染が疑われる場合、この記事のチェックリストとWP-CLIコマンドを参考に、迅速かつ体系的なインシデント対応プロセスを実行し、再発防止策を講じてください。] (Source: Dev.to)</description>
+      <pubDate>Sat, 14 Nov 2026 12:29:17 +0000</pubDate>
     </item>
     <item>
       <title>Firefoxの内蔵VPNを無料＆データ通信量無制限で全ユーザーに提供するとMozillaが発表、2027年1月31日まで</title>

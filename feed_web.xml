@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Nov 2026 01:51:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 12:32:33 +0000</lastBuildDate>
     <item>
       <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
       <link>https://www.publickey1.jp/blog/26/awsawsaws_1.html</link>
@@ -19,6 +19,13 @@
       <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
       <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>AWS Emulatorで、CloudFront＋API Gateway＋Cognitoの構成をローカルで動かしてみた</title>
+      <link>https://zenn.dev/visionarray/articles/2978284b5a9706</link>
+      <guid isPermaLink="false">https://zenn.dev/visionarray/articles/2978284b5a9706</guid>
+      <description>[Score: 90] AWS Emulatorが一般公開され、CloudFront、API Gateway、Cognitoを含む複雑なAWS構成をローカルでエミュレートした検証記事です。 / S3、DynamoDB、Lambdaなども組み合わせ、CognitoオーソライザーとIAM認証でAPIを保護する構成の動作を確認しています。 / セキュリティテストには本物のAWSを使うべきという注意点も明記されています。 [実務示唆: AWS Emulatorを活用し、複雑なAWS構成のローカル開発・テスト環境を構築することで、開発効率を向上させるが、セキュリティテストは本番AWSで行う。] (Source: Zenn)</description>
+      <pubDate>Fri, 13 Nov 2026 11:31:59 +0000</pubDate>
     </item>
     <item>
       <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
@@ -63,6 +70,13 @@
       <pubDate>Sat, 14 Nov 2026 01:46:20 +0000</pubDate>
     </item>
     <item>
+      <title>Helmfile vs Kapitan: 環境ごとの値とリリース順序</title>
+      <link>https://dev.to/kadet-hub/helmfile-vs-kapitan-per-environment-values-and-release-order-15id</link>
+      <guid isPermaLink="false">https://dev.to/kadet-hub/helmfile-vs-kapitan-per-environment-values-and-release-order-15id</guid>
+      <description>[Score: 80] HelmfileとKapitanという2つのツールを比較し、Kubernetesクラスタにおける環境ごとの値管理とリリース順序の扱いについて解説しています。 / 複数のHelmチャートを異なる環境でデプロイする際の課題に焦点を当て、両ツールの設定方法やCI/CDでの検証結果を提示しています。 / 具体的なプロジェクト例（podinfoとValkey）を用いて、それぞれのツールの特徴と違いを詳細に比較しています。 [実務示唆: Kubernetes環境でHelmチャートのデプロイを管理しているエンジニアは、HelmfileとKapitanの比較を参考に、環境ごとの設定管理やリリース順序の要件に最適なツールを選定し、CI/CDパイプラインへの統合を検討してください。] [GitHub: kadet-hub/examples] (Source: Dev.to)</description>
+      <pubDate>Sat, 14 Nov 2026 12:27:37 +0000</pubDate>
+    </item>
+    <item>
       <title>セルを消費しないターミナルボーダー</title>
       <link>https://www.joshka.net/cell-borders/</link>
       <guid isPermaLink="false">https://www.joshka.net/cell-borders/</guid>
@@ -96,13 +110,6 @@
       <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xvk949/faa_issues_nationwide_ground_stop_for_all_flights/</guid>
       <description>[Score: 72] 米国連邦航空局（FAA）が、すべてのフライトに対して全国的な地上停止命令を発令しました。 / この措置は、航空管制システムの技術的な問題が原因であると見られています。 / 結果として、多数のフライトが遅延または欠航となり、旅行者や航空会社に甚大な影響を与えています。 [実務示唆: ミッションクリティカルなシステムを扱うエンジニアは、障害発生時の影響を最小限に抑えるためのフォールトトレランス設計や、迅速な復旧手順を再評価すべきです。] (Source: Reddit)</description>
       <pubDate>Fri, 13 Nov 2026 21:26:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>ライブアップデート: 全国的な地上停止の解決時期は未定、欠航便が増加</title>
-      <link>https://www.reddit.com/r/technology/comments/1xvnevv/live_updates_no_timeline_for_resolving_nationwide/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xvnevv/live_updates_no_timeline_for_resolving_nationwide/</guid>
-      <description>[Score: 70] 米国連邦航空局（FAA）が全国的な航空機の地上停止を発令し、その解決時期は未定です。 / この事態により、多数のフライトが欠航しており、混乱が広がっています。 / 技術的な問題が原因と推測され、航空業界全体に大きな影響を与えています。 [実務示唆: 航空関連システムに携わるエンジニアは、類似のシステム障害発生時の影響範囲と復旧プロセスについて、自社システムへの影響を評価し対策を検討すべきです。] (Source: Reddit)</description>
-      <pubDate>Fri, 13 Nov 2026 23:40:21 +0000</pubDate>
     </item>
   </channel>
 </rss>

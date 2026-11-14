@@ -5,13 +5,20 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Nov 2026 01:51:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 12:32:33 +0000</lastBuildDate>
     <item>
       <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</guid>
       <description>[Score: 95] AWSが、AIエージェント向けに強力な隔離環境とほぼネイティブなEC2性能を提供する軽量仮想マシン「AWS Nitro Sandboxes」の提供を開始しました。 / AIが生成する信頼できないコードを実行する機会が増える中、従来のコンテナ型仮想化では不十分なセキュリティ分離が課題でした。 / AWS Nitro Sandboxesは、AWS Nitro Systemを基盤とし、ハードウェアレベルでの強力なセキュリティと分離を実現しつつ、コンテナのような軽量性を提供します。 [実務示唆: AIエージェントや信頼できないコードを実行するシステムを構築する際は、AWS Nitro Sandboxesを活用し、セキュリティとパフォーマンスを両立させた安全な実行環境を検討しましょう。] (Source: Publickey)</description>
       <pubDate>Wed, 11 Nov 2026 15:04:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Google、高速・高効率な「Gemini 4 Hydrogen」を発表 ～「Claude Sonnet 5.5」「GPT-6.1 Terra」のライバル</title>
+      <link>https://forest.watch.impress.co.jp/docs/news/2156117.html</link>
+      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2156117.html</guid>
+      <description>[Score: 95] Googleが高速・高効率なAIモデル「Gemini 4 Hydrogen」を発表しました。 / 前世代の「Gemini 3.8 Flash」より2.5倍高速で、日常的なコーディングやエージェント型ワークフローに最適化されています。 / 「Claude Sonnet 5.5」や「GPT-6.1 Terra」の競合と位置づけられ、開発者、企業、一般ユーザーに提供されます。 [実務示唆: Gemini 4 HydrogenのAPIを試用し、既存のAIワークフローやコーディングタスクへの統合可能性、特にOrchestratorによるコスト削減効果を検証することを推奨します。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 02:57:17 +0000</pubDate>
     </item>
     <item>
       <title>仕組み編：Two-Towerによる検索システム（学習・推論・配信）</title>
@@ -56,6 +63,27 @@
       <pubDate>Sat, 14 Nov 2026 01:43:05 +0000</pubDate>
     </item>
     <item>
+      <title>Ggml v1.0.0</title>
+      <link>https://github.com/ggml-org/ggml/releases/tag/v1.0.0</link>
+      <guid isPermaLink="false">https://github.com/ggml-org/ggml/releases/tag/v1.0.0</guid>
+      <description>[Score: 85] Ggmlがv1.0.0をリリースし、非推奨APIの削除、YaRNの構成可能な切り捨て、FP8サポートなどの新機能が追加されました。 / CUDA/Metalでの量子化行列乗算やMoE融合、VulkanでのFlashAttention、SYCLでのMoEスケジューラなど、様々なバックエンドで広範なパフォーマンス改善が図られています。 / WebGPUカーネルの追加、Hexagonの演算カバレッジ拡大、未使用入力のアップロードを回避するスケジューラ改善など、幅広い最適化が含まれています。 [実務示唆: Ggmlを利用している開発者は、v1.0.0へのアップデートを検討し、FP8サポートや各バックエンドでのパフォーマンス改善を活用して、AIモデルの効率化を図るべきです。] [GitHub: ggml-org/ggml] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 02:28:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Duet を Team プランで触ってみた（組織で使うときの注意点つき）</title>
+      <link>https://zenn.dev/canly/articles/e2bd67c9a4c18b</link>
+      <guid isPermaLink="false">https://zenn.dev/canly/articles/e2bd67c9a4c18b</guid>
+      <description>[Score: 85] Claude DuetがTeamプランで利用可能になり、組織での活用方法と注意点が解説されています。 / Duetはクラウド上の仮想マシンで動作し、既存のClaudeアカウントのコネクタやスキルを継承して先回りして動作します。 / 利用量消費や管理者側の設定、日本語対応の状況についても詳細に説明されています。 [実務示唆: Claude Duetを組織で導入する際は、既存のClaude設定が引き継がれることを理解し、利用量消費やセキュリティ設定を事前に確認する。] (Source: Zenn)</description>
+      <pubDate>Fri, 13 Nov 2026 23:45:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>幻覚がひどいAIでも言葉遣いが洗練されていれば人を簡単に騙せることが判明</title>
+      <link>https://gigazine.net/news/20261114-llm-fluency-credible/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20261114-llm-fluency-credible/</guid>
+      <description>[Score: 85] 大規模言語モデル（LLM）は、事実ではないことを事実のように話す「幻覚（ハルシネーション）」の問題を抱えています。 / 新たな研究により、AIの回答に幻覚があっても、流暢で洗練された言葉遣いであれば人間はそれを信用しやすいことが分かりました。 / これは、AIの生成する情報の信頼性を評価する際に、内容だけでなく表現形式にも注意が必要であることを示唆しています。 [実務示唆: AIが生成する情報を利用する際は、その表現の流暢さに惑わされず、必ず事実確認を行い、複数の情報源でクロスチェックする習慣を身につけるべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 23:05:57 +0000</pubDate>
+    </item>
+    <item>
       <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
       <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
@@ -77,39 +105,11 @@
       <pubDate>Fri, 13 Nov 2026 02:48:24 +0000</pubDate>
     </item>
     <item>
-      <title>SynthCorp: データエージェントのベンチマーク作成プラットフォーム</title>
-      <link>https://arxiv.org/abs/2611.14765</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.14765</guid>
-      <description>[Score: 78] 本論文は、データエージェントの性能評価のためのベンチマーク作成プラットフォーム「SynthCorp」を紹介しています。 / 多様なシナリオとデータセットを生成し、エージェントの頑健性や汎用性を評価することを可能にします。 / これにより、データエージェントの研究開発を加速し、実用的なAIの進歩に貢献します。 [実務示唆: データエージェントやAIモデルの評価を行う際、SynthCorpのようなプラットフォームを活用して多様なベンチマークを生成し、モデルの汎用性と堅牢性を多角的に検証すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 13 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Fable 5.2はOpusの単価2倍、でも1タスクは約半額!? Mythos5.2との違いと使いどころ</title>
-      <link>https://qiita.com/ryosuke_ohori/items/17995524b433cf04fd55?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ryosuke_ohori/items/17995524b433cf04fd55?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 78] Claude Fable 5.2のAPI単価はOpus 5.5の2倍ですが、特定のタスク（OSSコード変更評価）ではOpusより平均費用が安くなる可能性が示されています。 / 同じ基盤モデルでもFableとMythosは提供形態や安全対策が異なり、Mythosは特定の利用者向けです。 / モデルの性能や費用は設定や利用方法によって大きく変動するため、自身の使い方に合わせた比較が重要です。 [実務示唆: Claude Fable 5.2の導入を検討する際は、単価だけでなく実際のタスクにおける平均費用や利用枠、設定による変動を考慮し、自社のユースケースで試算・検証すべきです。] (Source: Qiita)</description>
-      <pubDate>Fri, 13 Nov 2026 04:26:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>セマンティック事前知識は部分的に特定された因果発見にいつ導入すべきか？</title>
-      <link>https://arxiv.org/abs/2611.14736</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.14736</guid>
-      <description>[Score: 75] 本論文は、因果関係の発見においてセマンティックな事前知識をいつ、どのように活用すべきかを探求しています。 / 特に、データのみでは因果関係が完全に特定できない「部分的に特定された」状況に焦点を当てています。 / 事前知識の適切な導入が、より正確な因果推論に繋がる可能性を示唆しています。 [実務示唆: 因果推論モデルを構築する際、ドメイン知識やセマンティックな事前情報をモデルに組み込むタイミングと方法を慎重に検討し、推論の精度向上に役立てるべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 13 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>エージェントの履歴をクリーンアップすることは、世界がまだエラーを保持している場合に悪影響を及ぼす</title>
-      <link>https://arxiv.org/abs/2611.14654</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.14654</guid>
-      <description>[Score: 70] 本論文は、AIエージェントの履歴を消去することが、必ずしもパフォーマンス向上に繋がらないことを示唆しています。 / 特に、環境自体に誤りが残っている場合、履歴の消去はエージェントの学習を妨げる可能性があります。 / エージェントの学習と環境の相互作用の複雑性について考察しています。 [実務示唆: AIエージェントのデバッグや最適化において、エージェントの内部状態だけでなく、外部環境の状態も考慮したエラーハンドリング戦略を検討すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 13 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Zugwise: 手書きのチェス棋譜をデジタル化するためのドメイン認識型ゲーム再構築</title>
-      <link>https://arxiv.org/abs/2611.14544</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.14544</guid>
-      <description>[Score: 65] 本論文は、手書きのチェス棋譜をデジタル化する新しい手法「Zugwise」を提案しています。 / ドメイン知識を活用し、棋譜の画像から正確にゲームを再構築することを目指します。 / これにより、歴史的なチェスデータをデジタルアーカイブ化し、分析に利用可能にします。 [実務示唆: 手書き文書のデジタル化を検討する際、ドメイン固有の知識をAIモデルに組み込むことで認識精度を向上させるアプローチを検討すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 13 Nov 2026 05:00:00 +0000</pubDate>
+      <title>Unsloth Qwen3.8-27B 量子化 – Dynamic v3.1 アップデート</title>
+      <link>https://unsloth.ai/docs/models/qwen3.8</link>
+      <guid isPermaLink="false">https://unsloth.ai/docs/models/qwen3.8</guid>
+      <description>[Score: 80] UnslothがQwen3.8-27Bモデルの量子化において、Dynamic V3.1アルゴリズムを導入し、平均精度を5-10%向上させたと発表しました。 / Qwen3.8-27Bは、270億パラメータの密なモデルで、ビジョン、推論、エージェントコーディング、チャットタスクに優れ、256Kのコンテキストウィンドウを持ち、17GBのRAM/VRAMでローカル実行可能です。 / 新しいGGUFは、Terminal BenchやDeepSWEなどのベンチマークでクラス最高の性能を発揮し、今後のQwen4や他のモデルにも適用される予定です。 [実務示唆: Qwen3.8-27Bモデルを利用している開発者は、Unsloth Dynamic V3.1によるGGUFへのアップデートを検討し、精度向上と効率的なローカル実行の恩恵を受けるべきです。] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 00:06:04 +0000</pubDate>
     </item>
   </channel>
 </rss>

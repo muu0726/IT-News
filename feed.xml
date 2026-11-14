@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Nov 2026 01:51:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 12:32:33 +0000</lastBuildDate>
     <item>
       <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
@@ -19,6 +19,13 @@
       <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
       <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Google、高速・高効率な「Gemini 4 Hydrogen」を発表 ～「Claude Sonnet 5.5」「GPT-6.1 Terra」のライバル</title>
+      <link>https://forest.watch.impress.co.jp/docs/news/2156117.html</link>
+      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2156117.html</guid>
+      <description>[Score: 95] Googleが高速・高効率なAIモデル「Gemini 4 Hydrogen」を発表しました。 / 前世代の「Gemini 3.8 Flash」より2.5倍高速で、日常的なコーディングやエージェント型ワークフローに最適化されています。 / 「Claude Sonnet 5.5」や「GPT-6.1 Terra」の競合と位置づけられ、開発者、企業、一般ユーザーに提供されます。 [実務示唆: Gemini 4 HydrogenのAPIを試用し、既存のAIワークフローやコーディングタスクへの統合可能性、特にOrchestratorによるコスト削減効果を検証することを推奨します。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 02:57:17 +0000</pubDate>
     </item>
     <item>
       <title>CRA報告対応② Dependency-Trackで脆弱性の検知を自動化する(Pleasanter連携)</title>
@@ -77,6 +84,27 @@
       <pubDate>Fri, 13 Nov 2026 10:50:54 +0000</pubDate>
     </item>
     <item>
+      <title>Nvidia、AIスタートアップに資金提供してGPUを購入させ、意図的に供給不足を演出した疑い</title>
+      <link>https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus</link>
+      <guid isPermaLink="false">https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus</guid>
+      <description>[Score: 90] NVIDIAが、AIスタートアップに資金提供し、その資金でNVIDIA製GPUを購入させることで、GPUとメモリの供給不足を人為的に作り出したという疑惑が報じられました。 / この行為は、TSMCからの半導体過剰供給を捌き、高い需要の認識を維持することを目的としていたとされています。 / ウォール・ストリート・ジャーナル紙の報道によると、元CEOのジェンセン・フアン氏が、循環融資契約の削減を求めるCFOに強く反発したとされています。 [実務示唆: NVIDIAのGPU供給戦略に関するこの疑惑は、AIハードウェア市場の透明性と公正な競争に影響を与える可能性があり、今後の市場動向や規制当局の動きを注視すべきです。] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 02:52:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>AWS Emulatorで、CloudFront＋API Gateway＋Cognitoの構成をローカルで動かしてみた</title>
+      <link>https://zenn.dev/visionarray/articles/2978284b5a9706</link>
+      <guid isPermaLink="false">https://zenn.dev/visionarray/articles/2978284b5a9706</guid>
+      <description>[Score: 90] AWS Emulatorが一般公開され、CloudFront、API Gateway、Cognitoを含む複雑なAWS構成をローカルでエミュレートした検証記事です。 / S3、DynamoDB、Lambdaなども組み合わせ、CognitoオーソライザーとIAM認証でAPIを保護する構成の動作を確認しています。 / セキュリティテストには本物のAWSを使うべきという注意点も明記されています。 [実務示唆: AWS Emulatorを活用し、複雑なAWS構成のローカル開発・テスト環境を構築することで、開発効率を向上させるが、セキュリティテストは本番AWSで行う。] (Source: Zenn)</description>
+      <pubDate>Fri, 13 Nov 2026 11:31:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>【速報】マネックス証券、マイナカード画像漏えいか</title>
+      <link>https://www.47news.jp/15227159.html</link>
+      <guid isPermaLink="false">https://www.47news.jp/15227159.html</guid>
+      <description>[Score: 90] マネックス証券は、委託先が運営・管理する口座開設システムが不正アクセスを受けたと発表しました。 / 運転免許証やマイナンバーカードといった本人確認書類の画像1592件と、最大113万件のメールアドレスが漏えいした恐れがあるとのことです。 / この事態は、個人情報保護の重要性と、金融機関におけるセキュリティ対策の強化の必要性を改めて浮き彫りにしています。 [実務示唆: 個人情報を取り扱うシステムでは、委託先のセキュリティ対策も厳格に評価し、多層防御と定期的な脆弱性診断を徹底して実施すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 15:36:10 +0000</pubDate>
+    </item>
+    <item>
       <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
       <link>https://www.publickey1.jp/blog/26/google_antigravityaiai.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_antigravityaiai.html</guid>
@@ -117,34 +145,6 @@
       <guid isPermaLink="false">https://english.nv.ua/nation/thirteen-day-drone-blitz-paralyzes-36-of-moscow-s-oil-50658616.html</guid>
       <description>[Score: 85] ウクライナのドローン攻撃により、2週間足らずでロシアの石油精製能力の36%が破壊されました。 / 10月30日から11月11日の間に少なくとも9つの主要な製油所が攻撃され、年間1億2000万トン以上の原油処理能力が失われました。 / これはロシアの国内石油精製能力全体の3分の1以上に相当し、燃料不足を引き起こしています。 [実務示唆: 地政学的リスクがサプライチェーンに与える影響を常に監視し、エネルギー価格の変動や供給不安に備えた事業継続計画を検討すべきです。] (Source: Hacker News)</description>
       <pubDate>Sat, 14 Nov 2026 01:10:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>「ざっくり工数どのくらい？」に「ざっくり工数このくらい」で答えてはいけない</title>
-      <link>https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] プロジェクトの概算工数見積もりにおいて、根拠のない数字で答えることの危険性を指摘しています。 / 事業責任者や経営者の迅速な判断ニーズに応えつつ、後々のトラブルを避けるためには、見積もりの根拠を明確にすることが重要です。 / 「数量 × 単位あたりの規模」という式を用い、ステークホルダーと意思疎通できる単位（例: 画面数）で見積もる方法を提案しています。 [実務示唆: 概算見積もりでは「数量 × 単位あたりの規模」の式と、合意形成しやすい単位（例: 画面数）を用いて、根拠を明確に説明できるように準備すべきです。] (Source: Qiita)</description>
-      <pubDate>Fri, 13 Nov 2026 02:03:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>Fable 5.2は物理モデリング音源の実装も作曲もすごい</title>
-      <link>https://nowokay.hatenablog.com/entry/2026/11/13/101644</link>
-      <guid isPermaLink="false">https://nowokay.hatenablog.com/entry/2026/11/13/101644</guid>
-      <description>[Score: 85] Fable 5.2がリリースされ、物理モデリング音源の生成能力と作曲能力が大幅に向上しました。 / 弦楽器、ピアノ、金管、木管、クラシックギター、エレキギター、ボーカルなど多様な楽器のシミュレーションが可能で、特にピアノの再現度が高いです。 / 指示なしでソナタ形式の曲を生成したり、弦の共鳴を再現したりと、AIによる音楽制作の進化が示されています。 [実務示唆: 音楽制作に携わるエンジニアは、Fable 5.2のようなAIツールを試用し、物理モデリング音源の品質と作曲支援機能を評価してワークフローへの導入を検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 14:22:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>オンライン学習検索：根拠のあるチューター回答のためのチャンク境界</title>
-      <link>https://dev.to/vespasianblack3884/online-learning-search-chunk-boundaries-for-grounded-tutor-answers-2357</link>
-      <guid isPermaLink="false">https://dev.to/vespasianblack3884/online-learning-search-chunk-boundaries-for-grounded-tutor-answers-2357</guid>
-      <description>[Score: 85] オンラインコースのチューター回答において、構造を意識した重複チャンクとセクション・レッスンメタデータによる再ランク付けが重要です。 / チャンクは引用をサポートする十分なコンテキストを持ちつつ、再ランク付けのために小さく保つ必要があります。 / セマンティックな境界で分割し、安定したソーススパンを付与し、より広い候補セットを取得して質問に対して再ランク付けする2パスパイプラインが有効です。 [実務示唆: RAGシステム構築において、チャンク分割は単なる前処理ではなく、セマンティックな境界とコンテキストを考慮した設計が、回答の精度と引用の信頼性を高める鍵となります。] (Source: Dev.to)</description>
-      <pubDate>Sat, 14 Nov 2026 01:43:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
-      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
     </item>
   </channel>
 </rss>
