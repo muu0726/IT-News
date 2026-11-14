@@ -5,14 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Nov 2026 13:28:44 +0000</lastBuildDate>
-    <item>
-      <title>大規模なMicrosoft 365の障害がOutlook、Teams、Copilotに世界中で影響</title>
-      <link>https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/</guid>
-      <description>[Score: 95] Microsoft 365で大規模な障害が発生し、Outlook、Teams、Copilotといった主要サービスが世界中で利用できなくなりました。 / この障害は多くの企業や個人の業務に深刻な影響を与えたと推測されます。 / クラウドサービスの安定性と、障害発生時の対応の重要性が改めて浮き彫りになりました。 [実務示唆: Microsoft 365の障害は業務に大きな影響を与えるため、代替手段の検討や、障害発生時の情報収集・対応プロセスの確認を定期的に行うべきです。] (Source: Reddit)</description>
-      <pubDate>Thu, 12 Nov 2026 23:37:54 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 14 Nov 2026 01:51:18 +0000</lastBuildDate>
     <item>
       <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
       <link>https://www.publickey1.jp/blog/26/awsawsaws_1.html</link>
@@ -28,53 +21,11 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>2026年11月に発生したMicrosoft 365の接続障害についてまとめてみた - piyolog</title>
-      <link>https://piyolog.hatenadiary.jp/entry/2026/11/13/114230</link>
-      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/11/13/114230</guid>
-      <description>[Score: 90] 2026年11月13日、Microsoft 365サービスで大規模な接続障害が発生し、Exchange Onlineを中心に複数のサービスに影響が出ました。 / 障害はExchange Onlineのメールボックス接続問題から始まり、Teams、SharePoint Online、Microsoft 365 Copilotなど20サービスに拡大しました。 / 当初は負荷上昇が原因とされましたが、後に多数のサーバーが自動ヘルスチェックに失敗し、残りのインフラに負荷が集中したためと説明が更新されました。 [実務示唆: クラウドサービスを利用する際は、単一障害点のリスクを理解し、依存関係にあるサービスが停止した場合の代替策や影響範囲を事前に確認しておくべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 03:20:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>Microsoftがサービス復旧に苦戦、OutlookとTeamsに世界的な障害が発生</title>
-      <link>https://www.reddit.com/r/technology/comments/1xuwsip/microsoft_struggling_to_restore_service_as_global/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xuwsip/microsoft_struggling_to_restore_service_as_global/</guid>
-      <description>[Score: 88] MicrosoftのOutlookとTeamsを含むグローバルなサービス障害が発生し、Microsoftは復旧に苦戦しています。 / この障害は世界中のユーザーに影響を及ぼし、コミュニケーションや業務に大きな支障が出ています。 / 具体的な原因は不明ですが、迅速な復旧が求められています。 [実務示唆: OutlookやTeamsに依存する業務プロセスを見直し、障害発生時の代替コミュニケーション手段を確保する。] (Source: Reddit)</description>
-      <pubDate>Fri, 13 Nov 2026 03:05:32 +0000</pubDate>
-    </item>
-    <item>
       <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
       <link>https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 85] AWS Emulatorは、AWSアカウントなしでローカルやCI上でAWS SDK/CLIの呼び出しをエミュレートするツールです。 / 本記事では、特にCDK/TerraformなどのIaCツールがAWS Emulator上でどこまで動作するかを検証しています。 / 公式ドキュメントではIaCツールへの対応はサービスによって異なるとされており、その実態をWindows 11 + Docker環境で試した結果がまとめられています。 [実務示唆: AWS Emulatorの導入を検討する際は、利用するAWSサービスがIaCツールでどこまでサポートされているか、忠実度テストの結果を確認し、事前に検証すること。] (Source: Qiita)</description>
       <pubDate>Wed, 11 Nov 2026 23:39:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
-      <link>https://www.publickey1.jp/blog/26/playwrightbun.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/playwrightbun.html</guid>
-      <description>[Score: 85] Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンv1.65.0でBunでのテストランナー実行を正式にサポートしました。 / これにより、PlaywrightのテストランナーはNode.jsに加えてBun環境でも動作可能になります。 / BunがTypeScriptテストファイルを直接トランスパイルするため、Babelやコンパイルキャッシュが不要となり、システムがシンプルになる利点があります。 [実務示唆: PlaywrightユーザーはBunを導入することで、TypeScriptテストのトランスパイルプロセスを簡素化し、テスト実行の高速化や開発環境の効率化を検討しましょう。] [GitHub: microsoft/playwright] (Source: Publickey)</description>
-      <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>AWS EmulatorはAWS Blocksのモックを置き換えるのか？実際に動かして見えた「三つ目の層」</title>
-      <link>https://zenn.dev/genda_jp/articles/18d1f780f6b41f</link>
-      <guid isPermaLink="false">https://zenn.dev/genda_jp/articles/18d1f780f6b41f</guid>
-      <description>[Score: 85] AWSがリリースしたAWS Emulatorが、既存のAWS Blocksのモックを置き換えるのかという疑問について検証しています。 / 結論として、Emulatorはモックを置き換えるのではなく、モックとサンドボックスの間に位置する「三つ目の層」として機能する可能性が示唆されています。 / EmulatorはAWS SDKやCLIの呼び出しをローカルでエミュレートし、Blocksのテスト環境での活用が効果的であると分析されています。 [実務示唆: AWS Blocksを利用する開発者は、AWS Emulatorを導入し、ローカル開発環境でのテストやデバッグの効率化を図ることを検討する。] [GitHub: aws/aws-emulator] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 05:20:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>Brave Search APIがx402プロトコルによるエージェント決済に対応</title>
-      <link>https://brave.com/blog/search-api-agentic-payments/</link>
-      <guid isPermaLink="false">https://brave.com/blog/search-api-agentic-payments/</guid>
-      <description>[Score: 85] Brave Search APIが、オープンなx402決済プロトコルを介した即時・従量課金のエージェント決済に対応しました。 / これにより、開発者や自律型AIエージェントは、従来のAPIキー管理なしにプログラムでBraveの検索インデックスを利用できます。 / USDCステーブルコインをBaseブロックチェーン経由で支払い、LLMのコンテキスト取得や一般的なウェブ検索をオンデマンドで利用可能です。 [実務示唆: AIエージェント開発者は、Brave Search APIとx402プロトコルを組み合わせることで、APIキー管理不要なオンデマンド検索機能を実装し、開発効率と柔軟性を向上させる。] (Source: Hacker News)</description>
-      <pubDate>Fri, 13 Nov 2026 03:08:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>大容量データのアップロードを止めるな：tusによる再開できるアップロード</title>
-      <link>https://zenn.dev/hololab/articles/7c2d34e9711ddf</link>
-      <guid isPermaLink="false">https://zenn.dev/hololab/articles/7c2d34e9711ddf</guid>
-      <description>[Score: 85] CADや3Dスキャンデータなど、GB単位の大容量ファイルをWebアプリケーションで扱う際のアップロード課題を解決する記事です。 / tusプロトコル、tusd（Go製サーバー実装）、Uppy（ブラウザクライアント）を組み合わせることで、通信断やサーバー再起動後も途中からアップロードを再開できることを検証しました。 / Windows Server + IIS環境で30GiB・150ファイルを約4分37秒で転送し、共有フォルダへのコピーと同等の速度と安定性を確認しています。 [実務示唆: 大容量ファイルアップロードが必要なシステムでは、tusプロトコルとtusd/Uppyの導入を検討し、中断からの再開機能でユーザー体験を向上させましょう。] [GitHub: tus/tusd] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 23:00:05 +0000</pubDate>
     </item>
     <item>
       <title>MicrosoftのM365大規模障害が15時間以上続き、修正が失敗し続けている</title>
@@ -84,25 +35,39 @@
       <pubDate>Fri, 13 Nov 2026 12:15:06 +0000</pubDate>
     </item>
     <item>
-      <title>Microsoft、グローバル障害の修正が「期待通りに進んでいない」と発表</title>
-      <link>https://www.reddit.com/r/technology/comments/1xuzvn8/microsoft_says_attempts_to_fix_global_outage_not/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xuzvn8/microsoft_says_attempts_to_fix_global_outage_not/</guid>
-      <description>[Score: 80] Microsoftがグローバル規模のサービス障害に見舞われ、その復旧作業が「期待通りに進んでいない」と発表したことを伝えるニュースです。 / 具体的な障害の原因や影響範囲の詳細は不明ですが、大規模なシステム障害が発生している状況を示唆しています。 / Microsoftの主要サービスに依存する企業やユーザーに広範な影響が出ている可能性があります。 [実務示唆: クラウドサービスに依存するシステムでは、単一障害点のリスクを考慮し、マルチクラウド戦略やオフラインでの代替手段の検討など、障害発生時の事業継続計画を見直しましょう。] (Source: Reddit)</description>
-      <pubDate>Fri, 13 Nov 2026 05:49:00 +0000</pubDate>
+      <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
+      <link>https://www.publickey1.jp/blog/26/playwrightbun.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/playwrightbun.html</guid>
+      <description>[Score: 85] Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンv1.65.0でBunでのテストランナー実行を正式にサポートしました。 / これにより、PlaywrightのテストランナーはNode.jsに加えてBun環境でも動作可能になります。 / BunがTypeScriptテストファイルを直接トランスパイルするため、Babelやコンパイルキャッシュが不要となり、システムがシンプルになる利点があります。 [実務示唆: PlaywrightユーザーはBunを導入することで、TypeScriptテストのトランスパイルプロセスを簡素化し、テスト実行の高速化や開発環境の効率化を検討しましょう。] [GitHub: microsoft/playwright] (Source: Publickey)</description>
+      <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
     </item>
     <item>
-      <title>AI生成UIレイアウトのレビューとデバッグ：一貫性のないコンポーネント階層の検出</title>
-      <link>https://dev.to/mspk97/reviewing-and-debugging-ai-generated-ui-layouts-detecting-inconsistent-component-hierarchies-18fo</link>
-      <guid isPermaLink="false">https://dev.to/mspk97/reviewing-and-debugging-ai-generated-ui-layouts-detecting-inconsistent-component-hierarchies-18fo</guid>
-      <description>[Score: 80] AIが生成したUIコードでは、コンポーネント階層の不整合やスタイルの衝突により、レイアウトが崩れる問題が発生しがちです。 / AIは短時間でコンポーネントツリーを生成できますが、ボタンがカードの外に出るなど、視覚的な破損や予期せぬ動作を引き起こすことがあります。 / 手動でのデバッグは困難なため、コンポーネントツリーを走査し、デザインシステムやUIパターンに基づいたルールを適用して自動的に異常を検出するツールの開発が推奨されています。 [実務示唆: AI生成UIコードを導入する際は、デザインシステムのルールをコード化し、自動でコンポーネント階層の不整合やスタイル衝突を検出する仕組みを構築し、品質を担保すべきです。] (Source: Dev.to)</description>
-      <pubDate>Fri, 13 Nov 2026 13:22:59 +0000</pubDate>
+      <title>FAAが全国的な地上停止を発令</title>
+      <link>https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247</link>
+      <guid isPermaLink="false">https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247</guid>
+      <description>[Score: 85] 米国連邦航空局（FAA）は「異常な状況と安全上の理由」により、全出発便の全国的な地上停止を命じました。 / これにより、米国内の航空交通の大部分が突然停止し、4,042便が影響を受けました。 / 国土安全保障長官は、現時点では通信障害が原因であり、悪意のある活動の兆候はないと述べています。 [実務示唆: 航空管制システムや大規模インフラの障害は広範囲に影響するため、システム設計時には冗長性やフェイルセーフ機構を考慮し、障害発生時の影響範囲を最小限に抑える対策を講じるべきです。] (Source: Hacker News)</description>
+      <pubDate>Fri, 13 Nov 2026 21:05:53 +0000</pubDate>
     </item>
     <item>
-      <title>週刊Cloudflare - 2026/11/08週</title>
-      <link>https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107</link>
-      <guid isPermaLink="false">https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1101-1107</guid>
-      <description>[Score: 75] Cloudflareの2026年11月08週のアップデートがまとめられています。 / Workerの設定比較時の権限確認の省略や、Wrangler deploy時のroute/custom domain metadata取得の改善など、開発者体験向上が図られています。 / 新しいプロジェクト作成時のcompatibility dateのデフォルト値更新や、WranglerによるContainer application削除提案機能の追加も含まれています。 [実務示唆: Cloudflare Workersを利用する開発者は、最新のWranglerや関連ライブラリにアップデートし、新しい機能や改善点を開発ワークフローに組み込む。] [GitHub: cloudflare/workers-sdk] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 04:54:55 +0000</pubDate>
+      <title>全国的なFAA地上停止の中、Amtrakの予約システムが大規模な問題を経験</title>
+      <link>https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026</link>
+      <guid isPermaLink="false">https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026</guid>
+      <description>[Score: 80] 全国的なFAA地上停止が発生している中、Amtrakのチケット予約システムが大規模な障害に見舞われました。 / ユーザーはウェブサイトやアプリでエラーメッセージに遭遇し、DownDetectorでも多数の報告がありました。 / Amtrakはシステム全体のアップデートが原因と説明していますが、FAAの地上停止との関連性は不明確です。 [実務示唆: 大規模なシステム障害が発生した場合、関連する他システムへの影響を考慮し、自社サービスへの波及効果を評価するとともに、顧客への適切な情報提供体制を確立すべきです。] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 00:52:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>スラッグジェネレーター：ブログURLからアポストロフィ、アンパサンド、末尾のハイフンを除去する</title>
+      <link>https://dev.to/meng_meng_56f17e28e55f140/slug-generator-cleaning-apostrophes-ampersands-and-trailing-hyphens-out-of-my-blog-urls-21kl</link>
+      <guid isPermaLink="false">https://dev.to/meng_meng_56f17e28e55f140/slug-generator-cleaning-apostrophes-ampersands-and-trailing-hyphens-out-of-my-blog-urls-21kl</guid>
+      <description>[Score: 80] WordPressからEleventyへのブログ移行時、URLスラッグの自動生成で特殊文字が原因のソフト404エラーが発生しました。 / アポストロフィやアンパサンド、emダッシュなどがURLに含まれることで、リンクのエンコード方法によって異なるURLが生成される問題です。 / Pythonの`python-slugify`ライブラリを使用し、衝突処理も考慮した堅牢なスラッグ生成スクリプトでこの問題を解決しました。 [実務示唆: ブログやWebサイトのURLスラッグ生成では、特殊文字の処理とURL衝突対策を徹底し、`python-slugify`のようなライブラリ活用を検討しましょう。] [GitHub: unidecode/python-slugify] (Source: Dev.to)</description>
+      <pubDate>Sat, 14 Nov 2026 01:46:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>セルを消費しないターミナルボーダー</title>
+      <link>https://www.joshka.net/cell-borders/</link>
+      <guid isPermaLink="false">https://www.joshka.net/cell-borders/</guid>
+      <description>[Score: 78] 本記事は、AIの助けを借りて書かれた、ターミナルUIにおけるボーダー表示の新しいアプローチについて解説しています。 / 従来のUnicodeボックス描画文字では表現が限定的であるという課題に対し、セルの端に細い線を描画するターミナルプロトコルを提案しています。 / Ghosttyへのパッチとして実装され、Ratatuiを使ったデモアプリも公開されており、ターミナルおよびTUI開発者からのフィードバックを求めています。 [実務示唆: TUI開発者は、提案されている新しいターミナルプロトコルを評価し、より洗練されたUIデザインを実現するために、自作のTUIやRatatuiなどのライブラリへの導入を検討すべきです。] [GitHub: joshka/cell-borders] (Source: Hacker News)</description>
+      <pubDate>Fri, 13 Nov 2026 23:06:40 +0000</pubDate>
     </item>
     <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
@@ -110,6 +75,34 @@
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-october-2026/</guid>
       <description>[Score: 75] GitHubは2026年10月の稼働状況レポートを公開し、可用性と信頼性向上の取り組みを報告しました。 / Azure Central USへの大幅な容量追加と障害エスカレーション経路の削減を進めました。 / しかし、書き込み停止、データ移行中の監視ギャップ、地域ネットワーク障害が発生し、容量増強と並行して安全な運用と分離、地域復旧の検証の必要性が強調されました。 [実務示唆: 大規模なサービスを運用するエンジニアは、GitHubの事例から、容量増強だけでなく、運用手順の安全性、システムの分離、災害復旧計画の定期的な検証の重要性を学び、自社システムに適用すべきです。] [GitHub: github/docs] (Source: GitHub Blog)</description>
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>FAAが0119Zに全国的な地上停止を解除</title>
+      <link>https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&amp;advn=5</link>
+      <guid isPermaLink="false">https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&amp;advn=5</guid>
+      <description>[Score: 75] 米国連邦航空局（FAA）は、以前発令していた全国的な地上停止を0119Zに解除しました。 / この情報はFAAのアドバイザリデータベースに掲載されています。 / 詳細な原因や復旧プロセスについては、この抜粋からは確認できません。 [実務示唆: 大規模システム障害からの復旧プロセスを理解し、今後のシステム設計や運用において、迅速な状況把握と情報共有の重要性を考慮に入れるべきです。] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 01:30:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>FAAが「異常な状況」により全国的な地上停止を発令</title>
+      <link>https://www.reddit.com/r/technology/comments/1xvjsxv/faa_issues_nationwide_ground_stop_due_to/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xvjsxv/faa_issues_nationwide_ground_stop_due_to/</guid>
+      <description>[Score: 75] 米国連邦航空局（FAA）が「異常な状況」を理由に、全国の航空機に対して地上停止命令を出しました。 / この緊急措置は、航空管制システムにおける何らかの問題に起因すると考えられます。 / これにより、米国内の航空交通が麻痺し、広範囲にわたる影響が出ています。 [実務示唆: 大規模システム障害の発生メカニズムと影響範囲を理解し、自社のシステムが同様の事態に陥った際の緊急対応計画や冗長性確保について再確認すべきです。] (Source: Reddit)</description>
+      <pubDate>Fri, 13 Nov 2026 21:08:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>FAAが全フライトに対して全国的な地上停止を発令</title>
+      <link>https://www.reddit.com/r/technology/comments/1xvk949/faa_issues_nationwide_ground_stop_for_all_flights/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xvk949/faa_issues_nationwide_ground_stop_for_all_flights/</guid>
+      <description>[Score: 72] 米国連邦航空局（FAA）が、すべてのフライトに対して全国的な地上停止命令を発令しました。 / この措置は、航空管制システムの技術的な問題が原因であると見られています。 / 結果として、多数のフライトが遅延または欠航となり、旅行者や航空会社に甚大な影響を与えています。 [実務示唆: ミッションクリティカルなシステムを扱うエンジニアは、障害発生時の影響を最小限に抑えるためのフォールトトレランス設計や、迅速な復旧手順を再評価すべきです。] (Source: Reddit)</description>
+      <pubDate>Fri, 13 Nov 2026 21:26:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>ライブアップデート: 全国的な地上停止の解決時期は未定、欠航便が増加</title>
+      <link>https://www.reddit.com/r/technology/comments/1xvnevv/live_updates_no_timeline_for_resolving_nationwide/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xvnevv/live_updates_no_timeline_for_resolving_nationwide/</guid>
+      <description>[Score: 70] 米国連邦航空局（FAA）が全国的な航空機の地上停止を発令し、その解決時期は未定です。 / この事態により、多数のフライトが欠航しており、混乱が広がっています。 / 技術的な問題が原因と推測され、航空業界全体に大きな影響を与えています。 [実務示唆: 航空関連システムに携わるエンジニアは、類似のシステム障害発生時の影響範囲と復旧プロセスについて、自社システムへの影響を評価し対策を検討すべきです。] (Source: Reddit)</description>
+      <pubDate>Fri, 13 Nov 2026 23:40:21 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,20 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Nov 2026 13:28:44 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 01:51:18 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
       <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
       <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>npmとPyPIにおける悪意のあるMCPパッケージ：4日間で7件</title>
-      <link>https://dev.to/henryramireztech/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-dias-1nc</link>
-      <guid isPermaLink="false">https://dev.to/henryramireztech/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-dias-1nc</guid>
-      <description>[Score: 95] npmとPyPIで悪意のあるMCPパッケージが4日間で7件報告され、GitHubはこれらをインストールしたシステムを完全に侵害されたものとして扱っています。 / depfix-ai、agent-trace-kit、@go-gost/mcp-darwin-x64（npm）は修正版がなく、my-mcp-server-driving-license-ocr（PyPI）はOCRと称して画像を暗号化せずに外部IPに送信します。 / これらのパッケージはOSVデータベースに登録されており、Amazon Inspectorによって悪意ある挙動が発見されました。 [実務示唆: npmやPyPIからパッケージをインストールする際は、常に信頼性を確認し、特に新規または知名度の低いパッケージについてはセキュリティスキャンやサンドボックス環境での検証を徹底すべきです。] (Source: Dev.to)</description>
-      <pubDate>Fri, 13 Nov 2026 13:21:49 +0000</pubDate>
     </item>
     <item>
       <title>CRA報告対応② Dependency-Trackで脆弱性の検知を自動化する(Pleasanter連携)</title>
@@ -28,25 +21,18 @@
       <pubDate>Fri, 13 Nov 2026 00:22:46 +0000</pubDate>
     </item>
     <item>
-      <title>AI診断で出た緊急・高21件中6件は OWASP ASVS の1項目だった。せめて L1 は要件に入れたい話（2026年版）</title>
-      <link>https://qiita.com/ntaka329/items/012ad27328ecaae1c469?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ntaka329/items/012ad27328ecaae1c469?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AI（Claude Code）による脆弱性診断で検出された緊急・高リスクの指摘21件のうち、6件がOWASP ASVS 5.0の単一要件（8.2.2）に該当し、L1要件全体では12件が該当した事例を報告しています。 / ASVSのL1要件はアプリケーションセキュリティの最低限の基準であり、要件定義に含めることの重要性を強調しています。 / AWSサーバーレス環境での診断結果に基づき、ASVS L1をセキュリティ要件に含めることで、多くの高リスク脆弱性を未然に防げる可能性を示唆しています。 [実務示唆: アプリケーション開発の要件定義において、OWASP ASVS L1を最低限のセキュリティ基準として組み込むことで、AI診断で検出されるような基本的な高リスク脆弱性を削減できます。] [GitHub: OWASP/ASVS] (Source: Qiita)</description>
-      <pubDate>Thu, 12 Nov 2026 09:34:55 +0000</pubDate>
+      <title>Firefoxの内蔵VPNを無料＆データ通信量無制限で全ユーザーに提供するとMozillaが発表、2027年1月31日まで</title>
+      <link>https://gigazine.net/news/20261113-firefox-vpn/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20261113-firefox-vpn/</guid>
+      <description>[Score: 70] MozillaがFirefoxブラウザの内蔵VPNを、2026年11月10日から2027年1月31日までの期間限定で、データ通信量無制限で提供すると発表しました。 / この機能はFirefox 149から実装されており、IPアドレスを隠蔽しプライバシーとセキュリティを保護します。 / 公衆Wi-Fi利用時や機密情報検索時など、ユーザーが安心してインターネットを利用できる環境を提供することが目的です。 [実務示唆: Firefoxユーザーは、この期間限定の無料無制限VPNを活用し、公衆Wi-Fi利用時やプライバシー保護が必要な場面で積極的に利用してセキュリティを強化すべきです。] [GitHub: mozilla/firefox-browser-vpn] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 09:17:59 +0000</pubDate>
     </item>
     <item>
-      <title>個人情報流出ニュースが怖いので、パスワード対策をガチで見直してみた</title>
-      <link>https://qiita.com/koshiro_esaki/items/22b7e355068ac0dad571?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/koshiro_esaki/items/22b7e355068ac0dad571?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] 個人情報流出のニュースを受け、個人でできるパスワード対策を根本から見直した記事です。 / パスワードの使い回しをやめ、サービスごとに異なる15文字以上のパスワードを設定することを推奨しています。 / パスワードマネージャーの活用や、多要素認証の導入、フィッシング詐欺対策の重要性についても解説しています。 [実務示唆: 全サービスで15文字以上の異なるパスワードを設定し、パスワードマネージャーと多要素認証を導入して、フィッシング詐欺にも注意を払いましょう。] (Source: Qiita)</description>
-      <pubDate>Tue, 10 Nov 2026 02:10:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>セキュリティ・キャンプ 2026 応募課題晒し</title>
-      <link>https://zenn.dev/uvu/articles/758ee227a614ea</link>
-      <guid isPermaLink="false">https://zenn.dev/uvu/articles/758ee227a614ea</guid>
-      <description>[Score: 70] 筆者がセキュリティ・キャンプ修了後、プロダクトセキュリティクラスでの学びを振り返る記事です。 / 特にAIを活用した開発とインフラ・ネットワークセキュリティに関する講義に強い関心を示しています。 / ProxmoxやKubernetesなどを活用した実運用に近いシステム構築経験から、安全なシステム設計の重要性を強調しています。 [実務示唆: AI生成コードのセキュリティ評価や、攻撃者視点での外部公開リソースのリスク分析手法を学び、自身の開発・運用に活かすことを検討しましょう。] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 06:45:01 +0000</pubDate>
+      <title>Apache Zeppelin: ノートブックの露出は誤った前提から始まる</title>
+      <link>https://dev.to/andreagomez/apache-zeppelin-notebook-exposure-starts-with-the-wrong-assumption-5d3c</link>
+      <guid isPermaLink="false">https://dev.to/andreagomez/apache-zeppelin-notebook-exposure-starts-with-the-wrong-assumption-5d3c</guid>
+      <description>[Score: 70] Apache Zeppelinはインタラクティブなデータ作業のためのノートブックインターフェースとして知られていますが、その露出状況の評価は複雑です。 / アプリケーションラベルとページタイトルが一致しない場合があり、単なるタイトル検索では実際の露出を過小評価する可能性があります。 / Zeppelinのセキュリティは認証と隔離が重要であり、外部からのサービス検出は、認証の有無や利用可能なインタープリター、アクセス可能な資格情報を確認する必要があります。 [実務示唆: Apache Zeppelinなどのノートブック環境をデプロイする際は、デフォルトの認証設定に依存せず、厳格な認証とアクセス制御を実装し、定期的なセキュリティ監査を実施しましょう。] [GitHub: apache/zeppelin] (Source: Dev.to)</description>
+      <pubDate>Sat, 14 Nov 2026 01:41:02 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Nov 2026 13:28:44 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 01:51:18 +0000</lastBuildDate>
     <item>
       <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
@@ -21,39 +21,11 @@
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Foundation Modelsフレームワーク</title>
-      <link>https://developer.apple.com/foundation-models-framework/</link>
-      <guid isPermaLink="false">https://developer.apple.com/foundation-models-framework/</guid>
-      <description>[Score: 95] AppleがFoundation Modelsフレームワークを発表しました。これは、あらゆる大規模言語モデル（LLM）をアプリに統合するためのネイティブSwift APIです。 / Apple Intelligenceの中核をなすオンデバイスモデルやPrivate Cloud Computeへの直接アクセスに加え、ClaudeやGeminiなどのサーバーモデルも同じSwift APIで利用できます。 / ガイド付き生成、ツール呼び出し、画像理解、Dynamic Profilesなどの強力な機能が組み込まれており、マルチモーダルプロンプトやVisionフレームワークとの統合も可能です。 [実務示唆: iOS開発者は、Foundation Modelsフレームワークを積極的に採用し、オンデバイスおよびクラウドLLMを活用したAI機能（画像理解、ツール呼び出しなど）をアプリに組み込み、ユーザー体験を革新すべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 12 Nov 2026 21:13:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>Edge0-145B: あなたのコンピューターで最先端のAI機能を実現</title>
-      <link>https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</link>
-      <guid isPermaLink="false">https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</guid>
-      <description>[Score: 95] Edge0が1450億パラメータを持つ世界初のオープンソースオンデバイスAIモデル「Edge0-145B」を公開しました。 / これにより、コーディング、推論、エージェント機能が個人のPCで利用可能になり、クラウドAIに匹敵する能力を提供します。 / モデルは大幅なメモリ効率化と高速処理を実現し、開発者はフルスタックでモデルの評価や統合が可能です。 [実務示唆: Edge0-145Bをローカル環境に導入し、オフラインでのAI開発や機密データを扱うアプリケーションでの活用を検討する。] [GitHub: edge0-ai/edge0] (Source: Hacker News)</description>
-      <pubDate>Thu, 12 Nov 2026 23:06:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>大規模なMicrosoft 365の障害がOutlook、Teams、Copilotに世界中で影響</title>
-      <link>https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/</guid>
-      <description>[Score: 95] Microsoft 365で大規模な障害が発生し、Outlook、Teams、Copilotといった主要サービスが世界中で利用できなくなりました。 / この障害は多くの企業や個人の業務に深刻な影響を与えたと推測されます。 / クラウドサービスの安定性と、障害発生時の対応の重要性が改めて浮き彫りになりました。 [実務示唆: Microsoft 365の障害は業務に大きな影響を与えるため、代替手段の検討や、障害発生時の情報収集・対応プロセスの確認を定期的に行うべきです。] (Source: Reddit)</description>
-      <pubDate>Thu, 12 Nov 2026 23:37:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>最強オープンウェイトモデル Kimi-K3.1-Pro をセルフホストして独自ベンチで比べてみた</title>
-      <link>https://zenn.dev/fixstars/articles/kimi-k31-pro-benchmark</link>
-      <guid isPermaLink="false">https://zenn.dev/fixstars/articles/kimi-k31-pro-benchmark</guid>
-      <description>[Score: 95] Moonshot AIが開発したオープンウェイトの大規模言語モデルKimi-K3.1-Proは、2.8T-A104Bという最大級のサイズを誇り、高いベンチマークスコアを記録しています。 / 本記事では、Kimi-K3.1-Proをセルフホストし、推論速度や未知アーキテクチャのアセンブリ高速化性能を独自ベンチマークで検証しています。 / Kimi-K3からの大規模な事後学習とGated DSA層へのアーキテクチャ改良により、長文処理の計算量が削減されていることが示唆されています。 [実務示唆: 大規模言語モデルの導入を検討する企業は、Kimi-K3.1-Proのような高性能オープンウェイトモデルをセルフホストし、独自のワークロードで性能評価を行うことで、最適なモデル選定とコスト削減を図る。] (Source: Zenn)</description>
-      <pubDate>Thu, 12 Nov 2026 23:50:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>npmとPyPIにおける悪意のあるMCPパッケージ：4日間で7件</title>
-      <link>https://dev.to/henryramireztech/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-dias-1nc</link>
-      <guid isPermaLink="false">https://dev.to/henryramireztech/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-dias-1nc</guid>
-      <description>[Score: 95] npmとPyPIで悪意のあるMCPパッケージが4日間で7件報告され、GitHubはこれらをインストールしたシステムを完全に侵害されたものとして扱っています。 / depfix-ai、agent-trace-kit、@go-gost/mcp-darwin-x64（npm）は修正版がなく、my-mcp-server-driving-license-ocr（PyPI）はOCRと称して画像を暗号化せずに外部IPに送信します。 / これらのパッケージはOSVデータベースに登録されており、Amazon Inspectorによって悪意ある挙動が発見されました。 [実務示唆: npmやPyPIからパッケージをインストールする際は、常に信頼性を確認し、特に新規または知名度の低いパッケージについてはセキュリティスキャンやサンドボックス環境での検証を徹底すべきです。] (Source: Dev.to)</description>
-      <pubDate>Fri, 13 Nov 2026 13:21:49 +0000</pubDate>
+      <title>CRA報告対応② Dependency-Trackで脆弱性の検知を自動化する(Pleasanter連携)</title>
+      <link>https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 92] EUサイバーレジリエンス法（CRA）への対応として、OWASP Dependency-Track v5.2を用いて脆弱性検知からSlack通知、Pleasanterへの自動登録までを自動化した事例です。 / 積極的に悪用されている脆弱性（KEV, EPSS）の検知と期限管理を自動化することで、CRAが求める24時間以内の早期警告義務に対応することを目指しています。 / Dependency-Track v5の設定手順や、GitHub App Private KeyとAPI Tokenの併用不可といった注意点、OSVミラーリングの条件などが詳細に解説されています。 [実務示唆: CRAなどの法規制に対応するため、Dependency-TrackとPleasanterを連携させ、SBOM分析と脆弱性管理を自動化し、早期警告体制を構築しましょう。] [GitHub: DependencyTrack/dependency-track] (Source: Qiita)</description>
+      <pubDate>Fri, 13 Nov 2026 00:22:46 +0000</pubDate>
     </item>
     <item>
       <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
@@ -63,18 +35,11 @@
       <pubDate>Thu, 12 Nov 2026 15:09:51 +0000</pubDate>
     </item>
     <item>
-      <title>CRA報告対応② Dependency-Trackで脆弱性の検知を自動化する(Pleasanter連携)</title>
-      <link>https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 92] EUサイバーレジリエンス法（CRA）への対応として、OWASP Dependency-Track v5.2を用いて脆弱性検知からSlack通知、Pleasanterへの自動登録までを自動化した事例です。 / 積極的に悪用されている脆弱性（KEV, EPSS）の検知と期限管理を自動化することで、CRAが求める24時間以内の早期警告義務に対応することを目指しています。 / Dependency-Track v5の設定手順や、GitHub App Private KeyとAPI Tokenの併用不可といった注意点、OSVミラーリングの条件などが詳細に解説されています。 [実務示唆: CRAなどの法規制に対応するため、Dependency-TrackとPleasanterを連携させ、SBOM分析と脆弱性管理を自動化し、早期警告体制を構築しましょう。] [GitHub: DependencyTrack/dependency-track] (Source: Qiita)</description>
-      <pubDate>Fri, 13 Nov 2026 00:22:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>Fable 5.2でGTA 6 Osaka Cityを作ってみた</title>
-      <link>https://qiita.com/7mpy/items/5710fef43ba0e59204c6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/7mpy/items/5710fef43ba0e59204c6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] Claude Fable 5.2を用いて、大阪を舞台にした3Dサンドボックスゲーム「VELA BAY」が開発されました。 / 実際の大阪の地図データからワールドを生成し、車や歩行者AI、手配度システム、ミッションなどを実装しています。 / Three.jsを主要ライブラリとして使用し、独自の衝突判定を実装している点が特徴です。 [実務示唆: LLMと地図データを組み合わせたゲーム開発の可能性を探るため、Three.jsとOpenStreetMapデータを用いたプロトタイプ開発を検討する。] (Source: Qiita)</description>
-      <pubDate>Tue, 10 Nov 2026 13:38:25 +0000</pubDate>
+      <title>仕組み編：Two-Towerによる検索システム（学習・推論・配信）</title>
+      <link>https://zenn.dev/ca_kagglers/articles/two-tower-mechanism</link>
+      <guid isPermaLink="false">https://zenn.dev/ca_kagglers/articles/two-tower-mechanism</guid>
+      <description>[Score: 90] Two-Towerモデルは、検索・推薦タスクでクエリとアイテムを別々のニューラルネットワークでベクトル化し、類似度で関連度を評価するモデルです。 / アイテム側のベクトルを事前に計算できるため、大量の候補から効率的な検索が可能です。 / 本記事では、Two-Towerの構造、推論、学習（特に負例サンプリング）、配信までを詳細に解説しています。 [実務示唆: 検索・推薦システムを構築する際、Two-Towerモデルの導入を検討し、特に負例サンプリングの手法を理解してモデルの精度向上に役立てる。] (Source: Zenn)</description>
+      <pubDate>Fri, 13 Nov 2026 01:55:36 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -91,39 +56,25 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>Gemini 4 HydrogenとOrchestrator</title>
-      <link>https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/</link>
-      <guid isPermaLink="false">https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/</guid>
-      <description>[Score: 90] Google Antigravity内でGemini 4 Hydrogenと新しいOrchestratorモデルオプションが展開されました。 / OrchestratorはHydrogenと強力なモデル（Gemini 4 Carbonなど）を組み合わせて、長期間のタスクにおいて品質、効率、レイテンシーの最適バランスを実現します。 / これは、動的なアプローチでタスクの複雑性に応じてモデルを切り替えることで、大規模なエンジニアリングタスクを効率的に処理することを目的としています。 [実務示唆: Google Antigravityユーザーは、Orchestratorオプションを試用し、大規模なマルチワークツリータスクや複雑なエンジニアリング問題に対するAIエージェントの効率と品質向上を評価すべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 12 Nov 2026 18:52:01 +0000</pubDate>
+      <title>5年後のエンジニアは、何に責任を持つのだろうか</title>
+      <link>https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now</link>
+      <guid isPermaLink="false">https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now</guid>
+      <description>[Score: 90] AIエージェントによるコード生成が日常化する中で、5年後のエンジニアはコードを書く頻度が減り、より多くのソフトウェアに責任を持つようになると予測されています。 / AIへの委任が機能やプロダクト単位に広がることで、エンジニアはサービス全体の設計や、予期せぬ問題発生時の説明・対応に責任を負うことになります。 / ソフトウェアをブラックボックスとして扱わず、その仕組みを理解し、責任を果たせる開発プロセスやAI実行環境を設計する能力が重要になると提言されています。 [実務示唆: AIによる開発が加速する中で、エンジニアはコード実装だけでなく、サービス全体の設計、品質保証、リスク管理、ユーザーへの説明責任といったより広範な領域に責任を持つ準備をすべきです。] (Source: Zenn)</description>
+      <pubDate>Fri, 13 Nov 2026 05:03:44 +0000</pubDate>
     </item>
     <item>
-      <title>VS Code の Local harness は2027年2月に削除：Copilot harness へ移行する手順とつまずきポイント</title>
-      <link>https://qiita.com/shahin0809/items/ccb8a8ddf11d6cb4113d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/shahin0809/items/ccb8a8ddf11d6cb4113d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] VS CodeのLocal harnessが2027年2月に削除され、Copilot harnessへの移行が必須となることが発表されました。 / 本記事では、公式ドキュメントや海外ユーザーの反応をまとめつつ、デモリポジトリで実際に移行を試した手順と注意点を解説しています。 / 特に、古いカスタマイズファイル（.vscode/mcp.jsonなど）は自動移行されないため、手動での対応が必要であることを強調しています。 [実務示唆: VS Codeユーザーは2027年2月までにLocal harnessからCopilot harnessへの移行を完了し、既存のカスタマイズが正しく機能するか検証してください。] [GitHub: microsoft/vscode] (Source: Qiita)</description>
-      <pubDate>Thu, 12 Nov 2026 07:50:38 +0000</pubDate>
+      <title>「画面数×人月」はもう通じない？見積もり単位の変遷と、バイブコーディング時代の見積もり書</title>
+      <link>https://qiita.com/TH_stickey/items/f55fb76055988cf9d0ad?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/TH_stickey/items/f55fb76055988cf9d0ad?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AIの進化により「画面数×人月」のような実装量起点の見積もりは通用しなくなりつつあると指摘しています。 / 要件定義や合意形成など「個数にならない作業」がAI時代には相対的に重要度を増し、見積もりから見落とされがちです。 / 今後は「何を数えるか」よりも「工程ごとに何が残るか」を積み上げる見積もり方法が、説明しやすく現実的であると提案しています。 [実務示唆: AIを活用した開発では、実装工程だけでなく要件定義、設計、レビュー、テスト、PMなど各工程の工数を個別に積み上げる見積もり方法に切り替えることを検討すべきです。] (Source: Qiita)</description>
+      <pubDate>Wed, 11 Nov 2026 02:25:25 +0000</pubDate>
     </item>
     <item>
-      <title>仕組み編：Two-Towerによる検索システム（学習・推論・配信）</title>
-      <link>https://zenn.dev/ca_kagglers/articles/two-tower-mechanism</link>
-      <guid isPermaLink="false">https://zenn.dev/ca_kagglers/articles/two-tower-mechanism</guid>
-      <description>[Score: 90] Two-Towerモデルは、検索・推薦タスクでクエリとアイテムを別々のニューラルネットワークでベクトル化し、類似度で関連度を評価するモデルです。 / アイテム側のベクトルを事前に計算できるため、大量の候補から効率的な検索が可能です。 / 本記事では、Two-Towerの構造、推論、学習（特に負例サンプリング）、配信までを詳細に解説しています。 [実務示唆: 検索・推薦システムを構築する際、Two-Towerモデルの導入を検討し、特に負例サンプリングの手法を理解してモデルの精度向上に役立てる。] (Source: Zenn)</description>
-      <pubDate>Fri, 13 Nov 2026 01:55:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI診断で出た緊急・高21件中6件は OWASP ASVS の1項目だった。せめて L1 は要件に入れたい話（2026年版）</title>
-      <link>https://qiita.com/ntaka329/items/012ad27328ecaae1c469?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ntaka329/items/012ad27328ecaae1c469?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AI（Claude Code）による脆弱性診断で検出された緊急・高リスクの指摘21件のうち、6件がOWASP ASVS 5.0の単一要件（8.2.2）に該当し、L1要件全体では12件が該当した事例を報告しています。 / ASVSのL1要件はアプリケーションセキュリティの最低限の基準であり、要件定義に含めることの重要性を強調しています。 / AWSサーバーレス環境での診断結果に基づき、ASVS L1をセキュリティ要件に含めることで、多くの高リスク脆弱性を未然に防げる可能性を示唆しています。 [実務示唆: アプリケーション開発の要件定義において、OWASP ASVS L1を最低限のセキュリティ基準として組み込むことで、AI診断で検出されるような基本的な高リスク脆弱性を削減できます。] [GitHub: OWASP/ASVS] (Source: Qiita)</description>
-      <pubDate>Thu, 12 Nov 2026 09:34:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>2026年11月に発生したMicrosoft 365の接続障害についてまとめてみた - piyolog</title>
-      <link>https://piyolog.hatenadiary.jp/entry/2026/11/13/114230</link>
-      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/11/13/114230</guid>
-      <description>[Score: 90] 2026年11月13日、Microsoft 365サービスで大規模な接続障害が発生し、Exchange Onlineを中心に複数のサービスに影響が出ました。 / 障害はExchange Onlineのメールボックス接続問題から始まり、Teams、SharePoint Online、Microsoft 365 Copilotなど20サービスに拡大しました。 / 当初は負荷上昇が原因とされましたが、後に多数のサーバーが自動ヘルスチェックに失敗し、残りのインフラに負荷が集中したためと説明が更新されました。 [実務示唆: クラウドサービスを利用する際は、単一障害点のリスクを理解し、依存関係にあるサービスが停止した場合の代替策や影響範囲を事前に確認しておくべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 03:20:28 +0000</pubDate>
+      <title>『検索システム』『推薦システム』とLLM時代の検索推薦</title>
+      <link>https://joisino.hatenablog.com/entry/searchrecbook</link>
+      <guid isPermaLink="false">https://joisino.hatenablog.com/entry/searchrecbook</guid>
+      <description>[Score: 90] 著書『検索システム』『推薦システム』が発売され、LLM時代の検索・推薦システムについて解説されています。 / RAGと全文プロンプトの使い分けや、LLMの文脈長拡大が検索・推薦システムに与える影響が議論されています。 / LLMを活用した推薦システムが、説明生成や説得まで可能になるなど、応用範囲が広がっていることが示されています。 [実務示唆: LLMを活用した検索・推薦システムを開発するエンジニアは、RAGと全文プロンプトの特性を理解し、文脈長やLLMの基礎能力を考慮した最適な設計を検討すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 10:50:54 +0000</pubDate>
     </item>
     <item>
       <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
@@ -133,18 +84,67 @@
       <pubDate>Thu, 12 Nov 2026 15:13:43 +0000</pubDate>
     </item>
     <item>
-      <title>Microsoftがサービス復旧に苦戦、OutlookとTeamsに世界的な障害が発生</title>
-      <link>https://www.reddit.com/r/technology/comments/1xuwsip/microsoft_struggling_to_restore_service_as_global/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xuwsip/microsoft_struggling_to_restore_service_as_global/</guid>
-      <description>[Score: 88] MicrosoftのOutlookとTeamsを含むグローバルなサービス障害が発生し、Microsoftは復旧に苦戦しています。 / この障害は世界中のユーザーに影響を及ぼし、コミュニケーションや業務に大きな支障が出ています。 / 具体的な原因は不明ですが、迅速な復旧が求められています。 [実務示唆: OutlookやTeamsに依存する業務プロセスを見直し、障害発生時の代替コミュニケーション手段を確保する。] (Source: Reddit)</description>
-      <pubDate>Fri, 13 Nov 2026 03:05:32 +0000</pubDate>
-    </item>
-    <item>
       <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
       <link>https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 85] AWS Emulatorは、AWSアカウントなしでローカルやCI上でAWS SDK/CLIの呼び出しをエミュレートするツールです。 / 本記事では、特にCDK/TerraformなどのIaCツールがAWS Emulator上でどこまで動作するかを検証しています。 / 公式ドキュメントではIaCツールへの対応はサービスによって異なるとされており、その実態をWindows 11 + Docker環境で試した結果がまとめられています。 [実務示唆: AWS Emulatorの導入を検討する際は、利用するAWSサービスがIaCツールでどこまでサポートされているか、忠実度テストの結果を確認し、事前に検証すること。] (Source: Qiita)</description>
       <pubDate>Wed, 11 Nov 2026 23:39:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>MicrosoftのM365大規模障害が15時間以上続き、修正が失敗し続けている</title>
+      <link>https://www.reddit.com/r/technology/comments/1xv6c5l/microsofts_massive_m365_outage_stretches_past_15/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xv6c5l/microsofts_massive_m365_outage_stretches_past_15/</guid>
+      <description>[Score: 85] Microsoft 365で大規模なサービス障害が発生し、15時間以上にわたって継続しています。 / Microsoftは復旧を試みていますが、度重なる修正が失敗に終わっている模様です。 / この障害は多くのユーザーに影響を与え、業務に支障をきたしています。 [実務示唆: Microsoft 365の障害発生時は、代替サービスやオフラインでの作業体制を事前に検討し、事業継続計画を見直す。] (Source: Reddit)</description>
+      <pubDate>Fri, 13 Nov 2026 12:15:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
+      <link>https://www.publickey1.jp/blog/26/playwrightbun.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/playwrightbun.html</guid>
+      <description>[Score: 85] Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンv1.65.0でBunでのテストランナー実行を正式にサポートしました。 / これにより、PlaywrightのテストランナーはNode.jsに加えてBun環境でも動作可能になります。 / BunがTypeScriptテストファイルを直接トランスパイルするため、Babelやコンパイルキャッシュが不要となり、システムがシンプルになる利点があります。 [実務示唆: PlaywrightユーザーはBunを導入することで、TypeScriptテストのトランスパイルプロセスを簡素化し、テスト実行の高速化や開発環境の効率化を検討しましょう。] [GitHub: microsoft/playwright] (Source: Publickey)</description>
+      <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>FAAが全国的な地上停止を発令</title>
+      <link>https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247</link>
+      <guid isPermaLink="false">https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247</guid>
+      <description>[Score: 85] 米国連邦航空局（FAA）は「異常な状況と安全上の理由」により、全出発便の全国的な地上停止を命じました。 / これにより、米国内の航空交通の大部分が突然停止し、4,042便が影響を受けました。 / 国土安全保障長官は、現時点では通信障害が原因であり、悪意のある活動の兆候はないと述べています。 [実務示唆: 航空管制システムや大規模インフラの障害は広範囲に影響するため、システム設計時には冗長性やフェイルセーフ機構を考慮し、障害発生時の影響範囲を最小限に抑える対策を講じるべきです。] (Source: Hacker News)</description>
+      <pubDate>Fri, 13 Nov 2026 21:05:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>ウクライナ、2週間足らずでロシアの石油精製能力の36%を無力化</title>
+      <link>https://english.nv.ua/nation/thirteen-day-drone-blitz-paralyzes-36-of-moscow-s-oil-50658616.html</link>
+      <guid isPermaLink="false">https://english.nv.ua/nation/thirteen-day-drone-blitz-paralyzes-36-of-moscow-s-oil-50658616.html</guid>
+      <description>[Score: 85] ウクライナのドローン攻撃により、2週間足らずでロシアの石油精製能力の36%が破壊されました。 / 10月30日から11月11日の間に少なくとも9つの主要な製油所が攻撃され、年間1億2000万トン以上の原油処理能力が失われました。 / これはロシアの国内石油精製能力全体の3分の1以上に相当し、燃料不足を引き起こしています。 [実務示唆: 地政学的リスクがサプライチェーンに与える影響を常に監視し、エネルギー価格の変動や供給不安に備えた事業継続計画を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 01:10:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>「ざっくり工数どのくらい？」に「ざっくり工数このくらい」で答えてはいけない</title>
+      <link>https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] プロジェクトの概算工数見積もりにおいて、根拠のない数字で答えることの危険性を指摘しています。 / 事業責任者や経営者の迅速な判断ニーズに応えつつ、後々のトラブルを避けるためには、見積もりの根拠を明確にすることが重要です。 / 「数量 × 単位あたりの規模」という式を用い、ステークホルダーと意思疎通できる単位（例: 画面数）で見積もる方法を提案しています。 [実務示唆: 概算見積もりでは「数量 × 単位あたりの規模」の式と、合意形成しやすい単位（例: 画面数）を用いて、根拠を明確に説明できるように準備すべきです。] (Source: Qiita)</description>
+      <pubDate>Fri, 13 Nov 2026 02:03:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fable 5.2は物理モデリング音源の実装も作曲もすごい</title>
+      <link>https://nowokay.hatenablog.com/entry/2026/11/13/101644</link>
+      <guid isPermaLink="false">https://nowokay.hatenablog.com/entry/2026/11/13/101644</guid>
+      <description>[Score: 85] Fable 5.2がリリースされ、物理モデリング音源の生成能力と作曲能力が大幅に向上しました。 / 弦楽器、ピアノ、金管、木管、クラシックギター、エレキギター、ボーカルなど多様な楽器のシミュレーションが可能で、特にピアノの再現度が高いです。 / 指示なしでソナタ形式の曲を生成したり、弦の共鳴を再現したりと、AIによる音楽制作の進化が示されています。 [実務示唆: 音楽制作に携わるエンジニアは、Fable 5.2のようなAIツールを試用し、物理モデリング音源の品質と作曲支援機能を評価してワークフローへの導入を検討すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 14:22:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>オンライン学習検索：根拠のあるチューター回答のためのチャンク境界</title>
+      <link>https://dev.to/vespasianblack3884/online-learning-search-chunk-boundaries-for-grounded-tutor-answers-2357</link>
+      <guid isPermaLink="false">https://dev.to/vespasianblack3884/online-learning-search-chunk-boundaries-for-grounded-tutor-answers-2357</guid>
+      <description>[Score: 85] オンラインコースのチューター回答において、構造を意識した重複チャンクとセクション・レッスンメタデータによる再ランク付けが重要です。 / チャンクは引用をサポートする十分なコンテキストを持ちつつ、再ランク付けのために小さく保つ必要があります。 / セマンティックな境界で分割し、安定したソーススパンを付与し、より広い候補セットを取得して質問に対して再ランク付けする2パスパイプラインが有効です。 [実務示唆: RAGシステム構築において、チャンク分割は単なる前処理ではなく、セマンティックな境界とコンテキストを考慮した設計が、回答の精度と引用の信頼性を高める鍵となります。] (Source: Dev.to)</description>
+      <pubDate>Sat, 14 Nov 2026 01:43:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
+      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
     </item>
   </channel>
 </rss>
