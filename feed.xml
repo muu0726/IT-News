@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Nov 2026 01:21:02 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 12:59:28 +0000</lastBuildDate>
     <item>
       <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
@@ -26,6 +26,20 @@
       <guid isPermaLink="false">https://www.crissyfield.de/research/lovable-en/</guid>
       <description>[Score: 95] AIを活用してWebアプリケーションを簡単に構築できるLovableプラットフォームで、セキュリティ上の重大な脆弱性が発見されました。 / 159,041件のLovableプロジェクトを調査した結果、ログインなしで個人情報や機密情報にアクセスできるケースが多数確認されました。 / Lovableは「セキュリティもプラットフォームが面倒を見る」という印象を与えがちですが、利用規約では顧客がデータ処理の責任を負うとされており、このギャップが問題を引き起こしています。 [実務示唆: AI生成ツールでアプリケーションを開発する際は、セキュリティ対策が自動で行われると過信せず、機密データの取り扱いに関する責任範囲を明確にし、厳格なセキュリティレビューを必ず実施してください。] [GitHub: AntonOsika/gpt-engineer] (Source: Hacker News)</description>
       <pubDate>Sat, 14 Nov 2026 17:43:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>フロントエンドのフレームワークを、安全に段階的に入れ替える</title>
+      <link>https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</link>
+      <guid isPermaLink="false">https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</guid>
+      <description>[Score: 95] フロントエンドのフレームワークを安全かつ段階的に入れ替えるための手法が解説されています。 / URLとページの読み込み（document）を境界とし、新旧フレームワークを混ぜずに並存させる大方針が示されています。 / これにより、移行途中でもアプリが動作し続け、変更を小さく保ち、経済的に安全な移行が可能になります。 [実務示唆: 大規模なフロントエンドのフレームワーク移行を計画する際、URLとdocumentを境界とする段階的移行戦略を採用し、リスクを最小限に抑える。] (Source: Zenn)</description>
+      <pubDate>Sat, 14 Nov 2026 07:12:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>今、ソフトウェアエンジニアとして何を思うか｜Mori Atsushi</title>
+      <link>https://note.com/at_sushi_at/n/n2e6ea3453e37</link>
+      <guid isPermaLink="false">https://note.com/at_sushi_at/n/n2e6ea3453e37</guid>
+      <description>[Score: 95] 筆者はAI（特にOpus）が自分よりも賢く、優れた設計を提案することに敗北感を感じつつも、ソフトウェアエンジニアの役割が変化していると考察しています。 / AIが快適に動ける環境作りやゲートキーパーとしての役割は一時的であり、中長期的にはプロダクトの意思決定への関与やAIを活用した開発環境のプロフェッショナルになる方向性を提示しています。 / AIの進化が止まらない中で、ソフトウェアエンジニアが今後どのように価値を提供していくべきかという問いを投げかけています。 [実務示唆: AIの進化に対応するため、ソフトウェアエンジニアは「どう作るか」から「何を作るか」というプロダクトの意思決定に深く関わるか、AIを活用した開発環境を構築する専門家を目指すなど、自身のキャリアパスを再考しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 09:51:50 +0000</pubDate>
     </item>
     <item>
       <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
@@ -77,6 +91,27 @@
       <pubDate>Sat, 14 Nov 2026 00:52:42 +0000</pubDate>
     </item>
     <item>
+      <title>Rustにおける厳密な単調増加タイムスタンプとギャップレスシーケンス</title>
+      <link>https://tsoracle.rs/</link>
+      <guid isPermaLink="false">https://tsoracle.rs/</guid>
+      <description>[Score: 90] Rustで分散システム向けの厳密な単調増加タイムスタンプとギャップレスシーケンスを提供する`tsoracle`が紹介されています。 / これは、分散システム全体でイベントを順序付ける厳密に増加する整数IDを発行するサービスです。 / MVCCデータベース、変更データマージ、監査ログなどで必要とされる、クラッシュやフェイルオーバーに強い連続したIDを生成します。 [実務示唆: 分散システムで厳密なイベント順序付けやギャップレスなID生成が必要な場合、`tsoracle`の導入を検討し、データ整合性向上に役立てる。] [GitHub: tsoracle/tsoracle] (Source: Hacker News)</description>
+      <pubDate>Fri, 13 Nov 2026 10:04:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>独プールで15人体調不良 マイクロソフト障害影響 | NEWSjp</title>
+      <link>https://news.jp/i/1494496378441958289</link>
+      <guid isPermaLink="false">https://news.jp/i/1494496378441958289</guid>
+      <description>[Score: 90] ドイツのテーマパーク内プールで、マイクロソフトの主力業務ソフトの大規模障害が原因で15人が体調不良を訴えました。 / 障害により安全管理システムの警報メールが担当者に届かず、塩素注入装置の不具合に気付かず水中塩素濃度が著しく上昇したためです。 / Outlookのメールシステムが警報通知に使われていたことが明らかになり、ITインフラの障害が物理的な安全に直結する事例となりました。 [実務示唆: 重要な安全管理システムや警報通知には、単一のクラウドサービスに依存せず、複数の通信経路や冗長化されたシステムを導入し、障害発生時の代替手段を確保することが不可欠です。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 02:57:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>脱WordPress：10年超の個人ブログをAstro + Cloudflare Workersへ移行しPageSpeed 100点を実現</title>
+      <link>https://zenn.dev/unsoluble_sugar/articles/8cdf1efc01e6cb</link>
+      <guid isPermaLink="false">https://zenn.dev/unsoluble_sugar/articles/8cdf1efc01e6cb</guid>
+      <description>[Score: 90] 10年以上運用したWordPressブログを、PHPの脆弱性をきっかけにAstroとCloudflare Workersを用いた静的サイトへ移行しました。 / 移行作業の大半をClaudeに任せ、1日で完了させ、PageSpeed 100点を達成しました。 / コスト削減とセキュリティ向上、パフォーマンス改善を実現した技術的な移行プロセスが詳細に解説されています。 [実務示唆: WordPressのセキュリティリスクや運用コストに課題がある場合、AstroとCloudflare Workersへの静的サイト移行を検討し、AIを活用した効率的な移行プロセスを試すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 04:23:12 +0000</pubDate>
+    </item>
+    <item>
       <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
       <link>https://www.publickey1.jp/blog/26/google_antigravityaiai.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_antigravityaiai.html</guid>
@@ -110,41 +145,6 @@
       <guid isPermaLink="false">https://qiita.com/yama3133/items/11a360fc97ed3ec09742?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 85] AWSでゼロトラスト構成を構築する具体的な手順を5つのパートに分けて解説しています。 / 各パートで必要なAWSサービスとリソース、AWS CLIコマンドが整理されており、実践的な内容です。 / 「誰が」「何を」「どこから」「記録」というゼロトラストの原則に対応し、独立したパートとして利用可能です。 [実務示唆: AWS環境でゼロトラスト導入を検討している場合、記事の5つのパートを参考に、IAM Roles AnywhereやAWS Verified Accessなどのサービスを検証し、自社環境への適用可能性を評価してください。] (Source: Qiita)</description>
       <pubDate>Fri, 13 Nov 2026 16:43:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
-      <link>https://www.publickey1.jp/blog/26/playwrightbun.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/playwrightbun.html</guid>
-      <description>[Score: 85] Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンv1.65.0でBunでのテストランナー実行を正式にサポートしました。 / これにより、PlaywrightのテストランナーはNode.jsに加えてBun環境でも動作可能になります。 / BunがTypeScriptテストファイルを直接トランスパイルするため、Babelやコンパイルキャッシュが不要となり、システムがシンプルになる利点があります。 [実務示唆: PlaywrightユーザーはBunを導入することで、TypeScriptテストのトランスパイルプロセスを簡素化し、テスト実行の高速化や開発環境の効率化を検討しましょう。] [GitHub: microsoft/playwright] (Source: Publickey)</description>
-      <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>SpaceX、スターシップの15回目の飛行で機体を捕捉</title>
-      <link>https://www.spacex.com/launches/starship-flight-15</link>
-      <guid isPermaLink="false">https://www.spacex.com/launches/starship-flight-15</guid>
-      <description>[Score: 85] SpaceXは、先進的なロケットと宇宙船を設計、製造、打ち上げている企業です。 / 2002年に設立され、宇宙技術に革命を起こし、最終的には人類が他の惑星に住むことを可能にすることを目指しています。 / スターシップの15回目の飛行で機体を捕捉することに成功しました。 [実務示唆: 宇宙開発技術の進展は、将来的な地球外資源の活用や新たな産業創出に繋がる可能性があり、関連技術の動向を注視すべきです。] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 21:22:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>PyPIの再設計されたプロジェクトページで、より明確なセキュリティシグナルが利用可能に</title>
-      <link>https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/</link>
-      <guid isPermaLink="false">https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/</guid>
-      <description>[Score: 85] PyPIは、ユーザーインターフェースのセキュリティ関連情報を改善するアップデートを完了しました。 / この変更は、Pythonコミュニティからのフィードバックに基づき、パッケージのセキュリティ評価を支援することを目的としています。 / 特に、デジタル証明（attestations）の表示が強化され、リリースファイルの出所を検証しやすくなりました。 [実務示唆: PyPIでパッケージをインストールする際は、新しいセキュリティタブを確認し、デジタル証明の有無や出所情報を活用して、サプライチェーン攻撃のリスクを低減しましょう。] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 15:40:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>常時稼働エージェントの作り方（Claude公式ブログを資料化）</title>
-      <link>https://speakerdeck.com/minorun365/jouji-kadou-ejento-no-tsukurikata</link>
-      <guid isPermaLink="false">https://speakerdeck.com/minorun365/jouji-kadou-ejento-no-tsukurikata</guid>
-      <description>[Score: 85] Claude公式ブログを基に、常時稼働エージェントの構築方法を解説した資料です。 / 常時稼働エージェントは、セッションをまたいで文脈を引き継ぎ、人手なしで自律的に動作するAIエージェントを指します。 / モデルの進化により、意図理解能力の向上とコスト削減が進み、長時間のタスク処理がより実用的になっています。 [実務示唆: Claudeなどの大規模言語モデルを活用し、イベントインボックスやメモリなどの5つの部品を組み合わせて自律型AIエージェントを構築し、業務自動化を推進すべき。] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 14 Nov 2026 16:06:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>Gemini API CLI公式ガイド (パート1): AIエージェントにステートレスなマルチモーダルCLIツールボックスを提供する</title>
-      <link>https://dev.to/jimmyliao/gemini-api-cli-official-guide-part-1-giving-your-ai-agent-a-stateless-multimodal-cli-toolbox-36p3</link>
-      <guid isPermaLink="false">https://dev.to/jimmyliao/gemini-api-cli-official-guide-part-1-giving-your-ai-agent-a-stateless-multimodal-cli-toolbox-36p3</guid>
-      <description>[Score: 85] Google Gemini API CLIの公式ガイド第一弾が公開されました。 / 個人開発者向けのGemini CLIはAntigravity CLI (agy)に移行し、無料アカウントやGoogle AI Pro/Ultraプランで利用可能になります。 / CLI自体はステートレスですが、基盤となるInteractions APIはサーバーサイドでの状態維持やジョブ実行が可能です。 [実務示唆: Gemini API CLIの利用を検討している開発者は、Antigravity CLIへの移行とステートレスな設計思想を理解し、サーバーサイドの状態管理と組み合わせて活用することを推奨します。] [GitHub: google-gemini/gemini-api-cli] (Source: Dev.to)</description>
-      <pubDate>Sun, 15 Nov 2026 01:15:23 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Nov 2026 01:21:02 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 12:59:28 +0000</lastBuildDate>
     <item>
       <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
@@ -63,6 +63,27 @@
       <pubDate>Sun, 15 Nov 2026 01:15:23 +0000</pubDate>
     </item>
     <item>
+      <title>Claude Codeに同じ調査を繰り返させないためのメモの残し方</title>
+      <link>https://qiita.com/kentasatomi/items/06ccfbf7f6a2a24883ff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kentasatomi/items/06ccfbf7f6a2a24883ff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AnthropicがAIエージェントの知識継承メカニズム「The components of agent memory」を公開しました。 / この記事では、公式解説を基に、Claude Codeへ残すメモの具体的な見直し方を提案しています。 / 未検証の推測と確認済みの事実を区別し、メモの検証・訂正の重要性を示し、具体的な記述例を通じて効果的なメモ作成を解説しています。 [実務示唆: AIとの協業において、調査結果や推測を明確に区別し、検証済みの事実と未確認事項を明記したメモを作成することで、AIの効率的な活用と誤情報の伝播を防ぎましょう。] (Source: Qiita)</description>
+      <pubDate>Fri, 13 Nov 2026 02:34:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>Pinky is an open-source MCP server that lets AI agents operate a real phone while a gateway holds the risky taps</title>
+      <link>https://dev.to/delimitter/pinky-is-an-open-source-mcp-server-that-lets-ai-agents-operate-a-real-phone-while-a-gateway-holds-574d</link>
+      <guid isPermaLink="false">https://dev.to/delimitter/pinky-is-an-open-source-mcp-server-that-lets-ai-agents-operate-a-real-phone-while-a-gateway-holds-574d</guid>
+      <description>[Score: 85] Pinkyは、AIエージェントが実際のスマートフォン（iPhone/Android）を操作できるようにするオープンソースのデスクトップブリッジです。 / 危険な操作（支払い、送金など）はゲートウェイで人間の承認を必要とし、ユーザーはいつでも操作を引き継ぐことができます。 / APIキーやGPU不要で動作し、様々なAIモデルと連携可能であり、AIによるモバイル操作の可能性と安全性を両立させています。 [実務示唆: AIエージェントにモバイルデバイスの操作を自動化させたいが、セキュリティと制御を維持したい開発者は、Pinkyを導入してその機能と安全性を評価し、ユースケースを検討すべきです。] [GitHub: DIYgod/Pinky] (Source: Dev.to)</description>
+      <pubDate>Sun, 15 Nov 2026 12:54:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>FastAPIとGoogle Geminiで本番環境対応のAIエージェントを構築する</title>
+      <link>https://dev.to/ezenwa_christian_5243b406/building-a-production-ready-ai-agent-with-fastapi-and-google-gemini-mp1</link>
+      <guid isPermaLink="false">https://dev.to/ezenwa_christian_5243b406/building-a-production-ready-ai-agent-with-fastapi-and-google-gemini-mp1</guid>
+      <description>[Score: 85] 本記事では、FastAPIとGoogle Gemini、SQLiteを使用して、本番環境に対応したAIエージェントを構築する方法を解説しています。 / 従来のチャットボットとは異なり、ツールを使用し、状態を維持できるエージェントのアーキテクチャと実装手順が詳細に説明されています。 / 求人情報を読み込み、データベースから情報を取得し、カスタマイズされたカバーレターを生成するAIキャリアエージェンシーアプリを例に、具体的な構築方法が示されています。 [実務示唆: AIエージェント開発では、単なるLLMラッパーではなく、状態管理とツール利用を考慮したアーキテクチャ設計が重要であるため、本記事の構成を参考に実装を検討しましょう。] (Source: Dev.to)</description>
+      <pubDate>Sun, 15 Nov 2026 12:54:04 +0000</pubDate>
+    </item>
+    <item>
       <title>ちょっと見ない間にClaude APIが進化してた！</title>
       <link>https://qiita.com/moritalous/items/9e7c02b749037238b2bc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/moritalous/items/9e7c02b749037238b2bc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
@@ -82,6 +103,13 @@
       <guid isPermaLink="false">https://dev.to/mattbusel/my-coding-agent-said-done-1521-times-half-of-those-had-nothing-behind-them-18mb</guid>
       <description>[Score: 80] 著者は自身のコーディングエージェントが「完了」と報告した際に、実際にテストが実行されたか検証しました。 / 1,521回の「完了」報告のうち、752回（約49%）はテスト実行などの確認が伴っていませんでした。 / この問題を解決するため、著者は「corescout」というRust製のローカルファーストサービスを開発し、エージェントの検証プロセスを監視しています。 [実務示唆: AIコーディングエージェントの「完了」報告を鵜呑みにせず、自動テストやCI/CDパイプラインと連携させて、実際のコード変更が検証されているかを確認する仕組みを導入すべきです。] [GitHub: Mattbusel/corescout] (Source: Dev.to)</description>
       <pubDate>Sun, 15 Nov 2026 01:13:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>自作フィードリーダーを作った</title>
+      <link>https://secon.dev/entry/2026/11/12/220000-my-own-feed-reader/</link>
+      <guid isPermaLink="false">https://secon.dev/entry/2026/11/12/220000-my-own-feed-reader/</guid>
+      <description>[Score: 70] 筆者が既存のフィードリーダーに不満を感じ、AIアシスタントClaude Opus 5.5を用いて自作フィードリーダーを開発しました。 / わずか30行程度の指示と40分で、ほぼ満足のいく機能が実装されたことに驚きを示しています。 / 本記事は、その機能紹介とClaude Opus 5.5の高い実装能力を称賛する内容です。 [実務示唆: AIアシスタントを活用して、日常業務のちょっとした不満を解消するツールを短時間で自作できる可能性を探るべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 14 Nov 2026 15:23:09 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,14 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Nov 2026 01:21:02 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 12:59:28 +0000</lastBuildDate>
+    <item>
+      <title>フロントエンドのフレームワークを、安全に段階的に入れ替える</title>
+      <link>https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</link>
+      <guid isPermaLink="false">https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</guid>
+      <description>[Score: 95] フロントエンドのフレームワークを安全かつ段階的に入れ替えるための手法が解説されています。 / URLとページの読み込み（document）を境界とし、新旧フレームワークを混ぜずに並存させる大方針が示されています。 / これにより、移行途中でもアプリが動作し続け、変更を小さく保ち、経済的に安全な移行が可能になります。 [実務示唆: 大規模なフロントエンドのフレームワーク移行を計画する際、URLとdocumentを境界とする段階的移行戦略を採用し、リスクを最小限に抑える。] (Source: Zenn)</description>
+      <pubDate>Sat, 14 Nov 2026 07:12:52 +0000</pubDate>
+    </item>
     <item>
       <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
       <link>https://www.publickey1.jp/blog/26/awsawsaws_1.html</link>
@@ -19,6 +26,20 @@
       <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
       <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>独プールで15人体調不良 マイクロソフト障害影響 | NEWSjp</title>
+      <link>https://news.jp/i/1494496378441958289</link>
+      <guid isPermaLink="false">https://news.jp/i/1494496378441958289</guid>
+      <description>[Score: 90] ドイツのテーマパーク内プールで、マイクロソフトの主力業務ソフトの大規模障害が原因で15人が体調不良を訴えました。 / 障害により安全管理システムの警報メールが担当者に届かず、塩素注入装置の不具合に気付かず水中塩素濃度が著しく上昇したためです。 / Outlookのメールシステムが警報通知に使われていたことが明らかになり、ITインフラの障害が物理的な安全に直結する事例となりました。 [実務示唆: 重要な安全管理システムや警報通知には、単一のクラウドサービスに依存せず、複数の通信経路や冗長化されたシステムを導入し、障害発生時の代替手段を確保することが不可欠です。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 02:57:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>脱WordPress：10年超の個人ブログをAstro + Cloudflare Workersへ移行しPageSpeed 100点を実現</title>
+      <link>https://zenn.dev/unsoluble_sugar/articles/8cdf1efc01e6cb</link>
+      <guid isPermaLink="false">https://zenn.dev/unsoluble_sugar/articles/8cdf1efc01e6cb</guid>
+      <description>[Score: 90] 10年以上運用したWordPressブログを、PHPの脆弱性をきっかけにAstroとCloudflare Workersを用いた静的サイトへ移行しました。 / 移行作業の大半をClaudeに任せ、1日で完了させ、PageSpeed 100点を達成しました。 / コスト削減とセキュリティ向上、パフォーマンス改善を実現した技術的な移行プロセスが詳細に解説されています。 [実務示唆: WordPressのセキュリティリスクや運用コストに課題がある場合、AstroとCloudflare Workersへの静的サイト移行を検討し、AIを活用した効率的な移行プロセスを試すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 04:23:12 +0000</pubDate>
     </item>
     <item>
       <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
@@ -42,6 +63,13 @@
       <pubDate>Sat, 14 Nov 2026 15:40:52 +0000</pubDate>
     </item>
     <item>
+      <title>Timoni vs Kapitan: CUE schemas and bundles pinned by digest</title>
+      <link>https://dev.to/kadet-hub/timoni-vs-kapitan-cue-schemas-and-bundles-pinned-by-digest-3aeg</link>
+      <guid isPermaLink="false">https://dev.to/kadet-hub/timoni-vs-kapitan-cue-schemas-and-bundles-pinned-by-digest-3aeg</guid>
+      <description>[Score: 80] Kubernetesオブジェクトの構築ツールであるTimoniとKapitanを比較し、CUEスキーマとダイジェストで固定されたバンドルの利用について解説しています。 / 両ツールがKubernetesマニフェストを生成する際の挙動の違いや、スキーマ検証、モジュール管理の側面から比較検証を行っています。 / 特に、TimoniのCUEモジュールによる厳格なスキーマ検証と、OCIアーティファクトとしてのモジュール公開に焦点を当てています。 [実務示唆: Kubernetesマニフェストの管理において、CUEベースのスキーマ検証やダイジェスト固定による信頼性向上を検討する際、TimoniとKapitanの特性を比較し、プロジェクトに最適なツールを選択すべきです。] [GitHub: kadet-hub/kubernetes-generator] (Source: Dev.to)</description>
+      <pubDate>Sun, 15 Nov 2026 12:55:55 +0000</pubDate>
+    </item>
+    <item>
       <title>Node.jsでAI生成画像を保存する — 一時的な署名付きダウンロードリンク</title>
       <link>https://dev.to/brockfletcher1438/store-ai-generated-images-in-nodejs-temporary-signed-download-links-3d9m</link>
       <guid isPermaLink="false">https://dev.to/brockfletcher1438/store-ai-generated-images-in-nodejs-temporary-signed-download-links-3d9m</guid>
@@ -61,6 +89,13 @@
       <guid isPermaLink="false">https://dev.to/langstonhughes2689/s3-alternative-storage-providers-with-a-free-tier-for-user-files-in-nodejs-2bo8</guid>
       <description>[Score: 75] Node.jsでユーザーファイルを保存する際、無料枠を重視するならBackblaze B2、予測可能なストレージ利用ならWasabiが推奨されます。 / Cloudflare R2やAmazon S3は、プラットフォーム統合が重要な場合に選択肢となります。 / ストレージプロバイダーの選択は、スループット、エグレス、保持期間、リストア動作など、単なる料金だけでなく総合的な要素で判断すべきです。 [実務示唆: Node.jsでユーザーファイルストレージを検討する際は、無料枠の有無、料金体系、パフォーマンス、既存プラットフォームとの統合性を総合的に評価し、ワークロードに最適なS3代替プロバイダーを選択すべきです。] (Source: Dev.to)</description>
       <pubDate>Sun, 15 Nov 2026 01:12:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub Actions environment secrets empty in a job</title>
+      <link>https://dev.to/kalemi/github-actions-environment-secrets-empty-in-a-job-1d1l</link>
+      <guid isPermaLink="false">https://dev.to/kalemi/github-actions-environment-secrets-empty-in-a-job-1d1l</guid>
+      <description>[Score: 75] GitHub Actionsで環境シークレットがジョブ内で空になる一般的な原因について解説しています。 / その原因は、ジョブがシークレットが設定されている環境を参照していないことにあると指摘しています。 / リポジトリシークレットとは異なり、環境シークレットはジョブごとに環境指定が必要であり、指定がないと読み込まれないことを強調しています。 [実務示唆: GitHub Actionsで環境シークレットが期待通りに機能しない場合、ジョブ定義にenvironment:キーが正しく設定され、シークレットが保存されている環境名と一致しているか確認すべきです。] (Source: Dev.to)</description>
+      <pubDate>Sun, 15 Nov 2026 12:55:28 +0000</pubDate>
     </item>
     <item>
       <title>ダフィー氏がFAAの老朽化したシステムが再び障害を起こす可能性を警告する中、数千便が欠航</title>
