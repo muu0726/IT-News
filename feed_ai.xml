@@ -5,27 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Nov 2026 12:32:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 01:21:02 +0000</lastBuildDate>
     <item>
       <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</guid>
       <description>[Score: 95] AWSが、AIエージェント向けに強力な隔離環境とほぼネイティブなEC2性能を提供する軽量仮想マシン「AWS Nitro Sandboxes」の提供を開始しました。 / AIが生成する信頼できないコードを実行する機会が増える中、従来のコンテナ型仮想化では不十分なセキュリティ分離が課題でした。 / AWS Nitro Sandboxesは、AWS Nitro Systemを基盤とし、ハードウェアレベルでの強力なセキュリティと分離を実現しつつ、コンテナのような軽量性を提供します。 [実務示唆: AIエージェントや信頼できないコードを実行するシステムを構築する際は、AWS Nitro Sandboxesを活用し、セキュリティとパフォーマンスを両立させた安全な実行環境を検討しましょう。] (Source: Publickey)</description>
       <pubDate>Wed, 11 Nov 2026 15:04:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google、高速・高効率な「Gemini 4 Hydrogen」を発表 ～「Claude Sonnet 5.5」「GPT-6.1 Terra」のライバル</title>
-      <link>https://forest.watch.impress.co.jp/docs/news/2156117.html</link>
-      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2156117.html</guid>
-      <description>[Score: 95] Googleが高速・高効率なAIモデル「Gemini 4 Hydrogen」を発表しました。 / 前世代の「Gemini 3.8 Flash」より2.5倍高速で、日常的なコーディングやエージェント型ワークフローに最適化されています。 / 「Claude Sonnet 5.5」や「GPT-6.1 Terra」の競合と位置づけられ、開発者、企業、一般ユーザーに提供されます。 [実務示唆: Gemini 4 HydrogenのAPIを試用し、既存のAIワークフローやコーディングタスクへの統合可能性、特にOrchestratorによるコスト削減効果を検証することを推奨します。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 02:57:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>仕組み編：Two-Towerによる検索システム（学習・推論・配信）</title>
-      <link>https://zenn.dev/ca_kagglers/articles/two-tower-mechanism</link>
-      <guid isPermaLink="false">https://zenn.dev/ca_kagglers/articles/two-tower-mechanism</guid>
-      <description>[Score: 90] Two-Towerモデルは、検索・推薦タスクでクエリとアイテムを別々のニューラルネットワークでベクトル化し、類似度で関連度を評価するモデルです。 / アイテム側のベクトルを事前に計算できるため、大量の候補から効率的な検索が可能です。 / 本記事では、Two-Towerの構造、推論、学習（特に負例サンプリング）、配信までを詳細に解説しています。 [実務示唆: 検索・推薦システムを構築する際、Two-Towerモデルの導入を検討し、特に負例サンプリングの手法を理解してモデルの精度向上に役立てる。] (Source: Zenn)</description>
-      <pubDate>Fri, 13 Nov 2026 01:55:36 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -35,11 +21,18 @@
       <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
     </item>
     <item>
-      <title>『検索システム』『推薦システム』とLLM時代の検索推薦</title>
-      <link>https://joisino.hatenablog.com/entry/searchrecbook</link>
-      <guid isPermaLink="false">https://joisino.hatenablog.com/entry/searchrecbook</guid>
-      <description>[Score: 90] 著書『検索システム』『推薦システム』が発売され、LLM時代の検索・推薦システムについて解説されています。 / RAGと全文プロンプトの使い分けや、LLMの文脈長拡大が検索・推薦システムに与える影響が議論されています。 / LLMを活用した推薦システムが、説明生成や説得まで可能になるなど、応用範囲が広がっていることが示されています。 [実務示唆: LLMを活用した検索・推薦システムを開発するエンジニアは、RAGと全文プロンプトの特性を理解し、文脈長やLLMの基礎能力を考慮した最適な設計を検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 10:50:54 +0000</pubDate>
+      <title>Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに</title>
+      <link>https://zenn.dev/caphtech/articles/qwen38-zh-ban</link>
+      <guid isPermaLink="false">https://zenn.dev/caphtech/articles/qwen38-zh-ban</guid>
+      <description>[Score: 90] Qwen3.8-Flash-Nextモデルが日本語の応答に中国語を混在させる問題に対し、出力層の特定の重みのみを書き換えることで解決しました。 / 中国語トークンに対応する25,451行の重みを、未使用の行の写しに置き換える手法が用いられました。 / この変更により、他の重みを一切変更せずに中国語の混入率を0%にすることに成功し、Kestromというツールが活用されました。 [実務示唆: 大規模言語モデルの特定言語の混入問題に対し、出力層の重みの一部を書き換えることで効果的に対応できるため、同様の問題に直面した際はKestromのようなツールでのアプローチを検討しましょう。] [GitHub: CAPHTECH/kestrom] (Source: Zenn)</description>
+      <pubDate>Fri, 13 Nov 2026 13:08:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>常時稼働エージェントの構築</title>
+      <link>https://claude.com/resources/articles/building-always-on-agents</link>
+      <guid isPermaLink="false">https://claude.com/resources/articles/building-always-on-agents</guid>
+      <description>[Score: 90] 常時稼働エージェントは、セッション間でコンテキストを管理し、監視なしでアクションを実行するステートフルでプロアクティブなAIエージェントです。 / その再興は、モデルの判断能力向上とコスト削減、特に長時間のタスクにおける大幅なコスト効率改善によるものです。 / エージェントは実際には「常時稼働」ではなく、イベントに応じて定期的に起動し、作業を終えるとスリープ状態に戻るアーキテクチャで動作します。 [実務示唆: 最新のAIモデルのコスト効率と判断能力向上を活用し、自律型エージェントのアーキテクチャを理解して、既存製品への組み込みや新規開発を検討すべき。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 14 Nov 2026 00:52:42 +0000</pubDate>
     </item>
     <item>
       <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
@@ -49,27 +42,6 @@
       <pubDate>Thu, 12 Nov 2026 15:13:43 +0000</pubDate>
     </item>
     <item>
-      <title>Fable 5.2は物理モデリング音源の実装も作曲もすごい</title>
-      <link>https://nowokay.hatenablog.com/entry/2026/11/13/101644</link>
-      <guid isPermaLink="false">https://nowokay.hatenablog.com/entry/2026/11/13/101644</guid>
-      <description>[Score: 85] Fable 5.2がリリースされ、物理モデリング音源の生成能力と作曲能力が大幅に向上しました。 / 弦楽器、ピアノ、金管、木管、クラシックギター、エレキギター、ボーカルなど多様な楽器のシミュレーションが可能で、特にピアノの再現度が高いです。 / 指示なしでソナタ形式の曲を生成したり、弦の共鳴を再現したりと、AIによる音楽制作の進化が示されています。 [実務示唆: 音楽制作に携わるエンジニアは、Fable 5.2のようなAIツールを試用し、物理モデリング音源の品質と作曲支援機能を評価してワークフローへの導入を検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 14:22:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>オンライン学習検索：根拠のあるチューター回答のためのチャンク境界</title>
-      <link>https://dev.to/vespasianblack3884/online-learning-search-chunk-boundaries-for-grounded-tutor-answers-2357</link>
-      <guid isPermaLink="false">https://dev.to/vespasianblack3884/online-learning-search-chunk-boundaries-for-grounded-tutor-answers-2357</guid>
-      <description>[Score: 85] オンラインコースのチューター回答において、構造を意識した重複チャンクとセクション・レッスンメタデータによる再ランク付けが重要です。 / チャンクは引用をサポートする十分なコンテキストを持ちつつ、再ランク付けのために小さく保つ必要があります。 / セマンティックな境界で分割し、安定したソーススパンを付与し、より広い候補セットを取得して質問に対して再ランク付けする2パスパイプラインが有効です。 [実務示唆: RAGシステム構築において、チャンク分割は単なる前処理ではなく、セマンティックな境界とコンテキストを考慮した設計が、回答の精度と引用の信頼性を高める鍵となります。] (Source: Dev.to)</description>
-      <pubDate>Sat, 14 Nov 2026 01:43:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>Ggml v1.0.0</title>
-      <link>https://github.com/ggml-org/ggml/releases/tag/v1.0.0</link>
-      <guid isPermaLink="false">https://github.com/ggml-org/ggml/releases/tag/v1.0.0</guid>
-      <description>[Score: 85] Ggmlがv1.0.0をリリースし、非推奨APIの削除、YaRNの構成可能な切り捨て、FP8サポートなどの新機能が追加されました。 / CUDA/Metalでの量子化行列乗算やMoE融合、VulkanでのFlashAttention、SYCLでのMoEスケジューラなど、様々なバックエンドで広範なパフォーマンス改善が図られています。 / WebGPUカーネルの追加、Hexagonの演算カバレッジ拡大、未使用入力のアップロードを回避するスケジューラ改善など、幅広い最適化が含まれています。 [実務示唆: Ggmlを利用している開発者は、v1.0.0へのアップデートを検討し、FP8サポートや各バックエンドでのパフォーマンス改善を活用して、AIモデルの効率化を図るべきです。] [GitHub: ggml-org/ggml] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 02:28:29 +0000</pubDate>
-    </item>
-    <item>
       <title>Claude Duet を Team プランで触ってみた（組織で使うときの注意点つき）</title>
       <link>https://zenn.dev/canly/articles/e2bd67c9a4c18b</link>
       <guid isPermaLink="false">https://zenn.dev/canly/articles/e2bd67c9a4c18b</guid>
@@ -77,11 +49,25 @@
       <pubDate>Fri, 13 Nov 2026 23:45:16 +0000</pubDate>
     </item>
     <item>
-      <title>幻覚がひどいAIでも言葉遣いが洗練されていれば人を簡単に騙せることが判明</title>
-      <link>https://gigazine.net/news/20261114-llm-fluency-credible/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261114-llm-fluency-credible/</guid>
-      <description>[Score: 85] 大規模言語モデル（LLM）は、事実ではないことを事実のように話す「幻覚（ハルシネーション）」の問題を抱えています。 / 新たな研究により、AIの回答に幻覚があっても、流暢で洗練された言葉遣いであれば人間はそれを信用しやすいことが分かりました。 / これは、AIの生成する情報の信頼性を評価する際に、内容だけでなく表現形式にも注意が必要であることを示唆しています。 [実務示唆: AIが生成する情報を利用する際は、その表現の流暢さに惑わされず、必ず事実確認を行い、複数の情報源でクロスチェックする習慣を身につけるべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 23:05:57 +0000</pubDate>
+      <title>常時稼働エージェントの作り方（Claude公式ブログを資料化）</title>
+      <link>https://speakerdeck.com/minorun365/jouji-kadou-ejento-no-tsukurikata</link>
+      <guid isPermaLink="false">https://speakerdeck.com/minorun365/jouji-kadou-ejento-no-tsukurikata</guid>
+      <description>[Score: 85] Claude公式ブログを基に、常時稼働エージェントの構築方法を解説した資料です。 / 常時稼働エージェントは、セッションをまたいで文脈を引き継ぎ、人手なしで自律的に動作するAIエージェントを指します。 / モデルの進化により、意図理解能力の向上とコスト削減が進み、長時間のタスク処理がより実用的になっています。 [実務示唆: Claudeなどの大規模言語モデルを活用し、イベントインボックスやメモリなどの5つの部品を組み合わせて自律型AIエージェントを構築し、業務自動化を推進すべき。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 14 Nov 2026 16:06:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Gemini API CLI公式ガイド (パート1): AIエージェントにステートレスなマルチモーダルCLIツールボックスを提供する</title>
+      <link>https://dev.to/jimmyliao/gemini-api-cli-official-guide-part-1-giving-your-ai-agent-a-stateless-multimodal-cli-toolbox-36p3</link>
+      <guid isPermaLink="false">https://dev.to/jimmyliao/gemini-api-cli-official-guide-part-1-giving-your-ai-agent-a-stateless-multimodal-cli-toolbox-36p3</guid>
+      <description>[Score: 85] Google Gemini API CLIの公式ガイド第一弾が公開されました。 / 個人開発者向けのGemini CLIはAntigravity CLI (agy)に移行し、無料アカウントやGoogle AI Pro/Ultraプランで利用可能になります。 / CLI自体はステートレスですが、基盤となるInteractions APIはサーバーサイドでの状態維持やジョブ実行が可能です。 [実務示唆: Gemini API CLIの利用を検討している開発者は、Antigravity CLIへの移行とステートレスな設計思想を理解し、サーバーサイドの状態管理と組み合わせて活用することを推奨します。] [GitHub: google-gemini/gemini-api-cli] (Source: Dev.to)</description>
+      <pubDate>Sun, 15 Nov 2026 01:15:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>ちょっと見ない間にClaude APIが進化してた！</title>
+      <link>https://qiita.com/moritalous/items/9e7c02b749037238b2bc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/moritalous/items/9e7c02b749037238b2bc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] Claude APIが進化し、Python SDKを使った基本的な呼び出しからシステムプロンプトの途中追記までが紹介されています。 / プロンプトキャッシュを維持したままシステムプロンプトを変更できる新機能が特に注目されています。 / Anthropic CLIを用いた認証方法や、思考ブロックへの対応についても触れられています。 [実務示唆: Claude APIの最新機能であるシステムプロンプトの途中追記を活用し、プロンプトキャッシュを維持したままAIの振る舞いを動的に変更する開発を試みる。] (Source: Qiita)</description>
+      <pubDate>Sat, 14 Nov 2026 06:32:07 +0000</pubDate>
     </item>
     <item>
       <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
@@ -91,25 +77,11 @@
       <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
     </item>
     <item>
-      <title>Together Compiler: AI推論のための継続的コンパイル</title>
-      <link>https://arxiv.org/abs/2611.14681</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.14681</guid>
-      <description>[Score: 80] 本論文は、AI推論の効率化を目指す「Together Compiler」について述べています。 / 継続的コンパイルという概念を導入し、AIモデルの推論性能を最適化します。 / 特に、動的な環境やモデルの更新に対応し、リアルタイムでの高性能推論を実現することを目指します。 [実務示唆: AIモデルのデプロイメントにおいて、推論性能の継続的な最適化が求められる場合、継続的コンパイル技術の導入を検討し、レイテンシとスループットの改善を図るべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 13 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>【pstack】AIに敵対的レビューをさせるな。トークンは検証に使え</title>
-      <link>https://zenn.dev/karamage/articles/5c3f8370b2b370</link>
-      <guid isPermaLink="false">https://zenn.dev/karamage/articles/5c3f8370b2b370</guid>
-      <description>[Score: 80] AIによる敵対的レビューは、コードの差分だけでは本質的なバグを見逃し、的外れな指摘にトークンを浪費する問題が指摘されています。 / 筆者の経験では、AI同士のレビューではタイムゾーンのバグのような実行時の振る舞いに関する問題が検出されませんでした。 / これは、AIがコードの見える部分に集中し、「問題ありません」と答えにくい性質があるためと考えられ、実際の動作検証にトークンを使うべきだと結論付けています。 [実務示唆: AIによるコードレビューは、実際の動作検証と組み合わせることで効果を発揮するため、AIにコードの実行環境を与え、テストケースに基づいた検証をさせるべきです。] (Source: Zenn)</description>
-      <pubDate>Fri, 13 Nov 2026 02:48:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>Unsloth Qwen3.8-27B 量子化 – Dynamic v3.1 アップデート</title>
-      <link>https://unsloth.ai/docs/models/qwen3.8</link>
-      <guid isPermaLink="false">https://unsloth.ai/docs/models/qwen3.8</guid>
-      <description>[Score: 80] UnslothがQwen3.8-27Bモデルの量子化において、Dynamic V3.1アルゴリズムを導入し、平均精度を5-10%向上させたと発表しました。 / Qwen3.8-27Bは、270億パラメータの密なモデルで、ビジョン、推論、エージェントコーディング、チャットタスクに優れ、256Kのコンテキストウィンドウを持ち、17GBのRAM/VRAMでローカル実行可能です。 / 新しいGGUFは、Terminal BenchやDeepSWEなどのベンチマークでクラス最高の性能を発揮し、今後のQwen4や他のモデルにも適用される予定です。 [実務示唆: Qwen3.8-27Bモデルを利用している開発者は、Unsloth Dynamic V3.1によるGGUFへのアップデートを検討し、精度向上と効率的なローカル実行の恩恵を受けるべきです。] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 00:06:04 +0000</pubDate>
+      <title>私のコーディングエージェントは「完了」と1,521回言ったが、その半分は何も伴っていなかった。</title>
+      <link>https://dev.to/mattbusel/my-coding-agent-said-done-1521-times-half-of-those-had-nothing-behind-them-18mb</link>
+      <guid isPermaLink="false">https://dev.to/mattbusel/my-coding-agent-said-done-1521-times-half-of-those-had-nothing-behind-them-18mb</guid>
+      <description>[Score: 80] 著者は自身のコーディングエージェントが「完了」と報告した際に、実際にテストが実行されたか検証しました。 / 1,521回の「完了」報告のうち、752回（約49%）はテスト実行などの確認が伴っていませんでした。 / この問題を解決するため、著者は「corescout」というRust製のローカルファーストサービスを開発し、エージェントの検証プロセスを監視しています。 [実務示唆: AIコーディングエージェントの「完了」報告を鵜呑みにせず、自動テストやCI/CDパイプラインと連携させて、実際のコード変更が検証されているかを確認する仕組みを導入すべきです。] [GitHub: Mattbusel/corescout] (Source: Dev.to)</description>
+      <pubDate>Sun, 15 Nov 2026 01:13:08 +0000</pubDate>
     </item>
   </channel>
 </rss>

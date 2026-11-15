@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Nov 2026 12:32:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 01:21:02 +0000</lastBuildDate>
     <item>
       <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
       <link>https://www.publickey1.jp/blog/26/awsawsaws_1.html</link>
@@ -21,25 +21,11 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>AWS Emulatorで、CloudFront＋API Gateway＋Cognitoの構成をローカルで動かしてみた</title>
-      <link>https://zenn.dev/visionarray/articles/2978284b5a9706</link>
-      <guid isPermaLink="false">https://zenn.dev/visionarray/articles/2978284b5a9706</guid>
-      <description>[Score: 90] AWS Emulatorが一般公開され、CloudFront、API Gateway、Cognitoを含む複雑なAWS構成をローカルでエミュレートした検証記事です。 / S3、DynamoDB、Lambdaなども組み合わせ、CognitoオーソライザーとIAM認証でAPIを保護する構成の動作を確認しています。 / セキュリティテストには本物のAWSを使うべきという注意点も明記されています。 [実務示唆: AWS Emulatorを活用し、複雑なAWS構成のローカル開発・テスト環境を構築することで、開発効率を向上させるが、セキュリティテストは本番AWSで行う。] (Source: Zenn)</description>
-      <pubDate>Fri, 13 Nov 2026 11:31:59 +0000</pubDate>
-    </item>
-    <item>
       <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
       <link>https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 85] AWS Emulatorは、AWSアカウントなしでローカルやCI上でAWS SDK/CLIの呼び出しをエミュレートするツールです。 / 本記事では、特にCDK/TerraformなどのIaCツールがAWS Emulator上でどこまで動作するかを検証しています。 / 公式ドキュメントではIaCツールへの対応はサービスによって異なるとされており、その実態をWindows 11 + Docker環境で試した結果がまとめられています。 [実務示唆: AWS Emulatorの導入を検討する際は、利用するAWSサービスがIaCツールでどこまでサポートされているか、忠実度テストの結果を確認し、事前に検証すること。] (Source: Qiita)</description>
       <pubDate>Wed, 11 Nov 2026 23:39:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>MicrosoftのM365大規模障害が15時間以上続き、修正が失敗し続けている</title>
-      <link>https://www.reddit.com/r/technology/comments/1xv6c5l/microsofts_massive_m365_outage_stretches_past_15/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xv6c5l/microsofts_massive_m365_outage_stretches_past_15/</guid>
-      <description>[Score: 85] Microsoft 365で大規模なサービス障害が発生し、15時間以上にわたって継続しています。 / Microsoftは復旧を試みていますが、度重なる修正が失敗に終わっている模様です。 / この障害は多くのユーザーに影響を与え、業務に支障をきたしています。 [実務示唆: Microsoft 365の障害発生時は、代替サービスやオフラインでの作業体制を事前に検討し、事業継続計画を見直す。] (Source: Reddit)</description>
-      <pubDate>Fri, 13 Nov 2026 12:15:06 +0000</pubDate>
     </item>
     <item>
       <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
@@ -49,39 +35,18 @@
       <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
     </item>
     <item>
-      <title>FAAが全国的な地上停止を発令</title>
-      <link>https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247</link>
-      <guid isPermaLink="false">https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247</guid>
-      <description>[Score: 85] 米国連邦航空局（FAA）は「異常な状況と安全上の理由」により、全出発便の全国的な地上停止を命じました。 / これにより、米国内の航空交通の大部分が突然停止し、4,042便が影響を受けました。 / 国土安全保障長官は、現時点では通信障害が原因であり、悪意のある活動の兆候はないと述べています。 [実務示唆: 航空管制システムや大規模インフラの障害は広範囲に影響するため、システム設計時には冗長性やフェイルセーフ機構を考慮し、障害発生時の影響範囲を最小限に抑える対策を講じるべきです。] (Source: Hacker News)</description>
-      <pubDate>Fri, 13 Nov 2026 21:05:53 +0000</pubDate>
+      <title>PyPIの再設計されたプロジェクトページで、より明確なセキュリティシグナルが利用可能に</title>
+      <link>https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/</link>
+      <guid isPermaLink="false">https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/</guid>
+      <description>[Score: 85] PyPIは、ユーザーインターフェースのセキュリティ関連情報を改善するアップデートを完了しました。 / この変更は、Pythonコミュニティからのフィードバックに基づき、パッケージのセキュリティ評価を支援することを目的としています。 / 特に、デジタル証明（attestations）の表示が強化され、リリースファイルの出所を検証しやすくなりました。 [実務示唆: PyPIでパッケージをインストールする際は、新しいセキュリティタブを確認し、デジタル証明の有無や出所情報を活用して、サプライチェーン攻撃のリスクを低減しましょう。] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 15:40:52 +0000</pubDate>
     </item>
     <item>
-      <title>全国的なFAA地上停止の中、Amtrakの予約システムが大規模な問題を経験</title>
-      <link>https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026</link>
-      <guid isPermaLink="false">https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026</guid>
-      <description>[Score: 80] 全国的なFAA地上停止が発生している中、Amtrakのチケット予約システムが大規模な障害に見舞われました。 / ユーザーはウェブサイトやアプリでエラーメッセージに遭遇し、DownDetectorでも多数の報告がありました。 / Amtrakはシステム全体のアップデートが原因と説明していますが、FAAの地上停止との関連性は不明確です。 [実務示唆: 大規模なシステム障害が発生した場合、関連する他システムへの影響を考慮し、自社サービスへの波及効果を評価するとともに、顧客への適切な情報提供体制を確立すべきです。] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 00:52:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>スラッグジェネレーター：ブログURLからアポストロフィ、アンパサンド、末尾のハイフンを除去する</title>
-      <link>https://dev.to/meng_meng_56f17e28e55f140/slug-generator-cleaning-apostrophes-ampersands-and-trailing-hyphens-out-of-my-blog-urls-21kl</link>
-      <guid isPermaLink="false">https://dev.to/meng_meng_56f17e28e55f140/slug-generator-cleaning-apostrophes-ampersands-and-trailing-hyphens-out-of-my-blog-urls-21kl</guid>
-      <description>[Score: 80] WordPressからEleventyへのブログ移行時、URLスラッグの自動生成で特殊文字が原因のソフト404エラーが発生しました。 / アポストロフィやアンパサンド、emダッシュなどがURLに含まれることで、リンクのエンコード方法によって異なるURLが生成される問題です。 / Pythonの`python-slugify`ライブラリを使用し、衝突処理も考慮した堅牢なスラッグ生成スクリプトでこの問題を解決しました。 [実務示唆: ブログやWebサイトのURLスラッグ生成では、特殊文字の処理とURL衝突対策を徹底し、`python-slugify`のようなライブラリ活用を検討しましょう。] [GitHub: unidecode/python-slugify] (Source: Dev.to)</description>
-      <pubDate>Sat, 14 Nov 2026 01:46:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>Helmfile vs Kapitan: 環境ごとの値とリリース順序</title>
-      <link>https://dev.to/kadet-hub/helmfile-vs-kapitan-per-environment-values-and-release-order-15id</link>
-      <guid isPermaLink="false">https://dev.to/kadet-hub/helmfile-vs-kapitan-per-environment-values-and-release-order-15id</guid>
-      <description>[Score: 80] HelmfileとKapitanという2つのツールを比較し、Kubernetesクラスタにおける環境ごとの値管理とリリース順序の扱いについて解説しています。 / 複数のHelmチャートを異なる環境でデプロイする際の課題に焦点を当て、両ツールの設定方法やCI/CDでの検証結果を提示しています。 / 具体的なプロジェクト例（podinfoとValkey）を用いて、それぞれのツールの特徴と違いを詳細に比較しています。 [実務示唆: Kubernetes環境でHelmチャートのデプロイを管理しているエンジニアは、HelmfileとKapitanの比較を参考に、環境ごとの設定管理やリリース順序の要件に最適なツールを選定し、CI/CDパイプラインへの統合を検討してください。] [GitHub: kadet-hub/examples] (Source: Dev.to)</description>
-      <pubDate>Sat, 14 Nov 2026 12:27:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>セルを消費しないターミナルボーダー</title>
-      <link>https://www.joshka.net/cell-borders/</link>
-      <guid isPermaLink="false">https://www.joshka.net/cell-borders/</guid>
-      <description>[Score: 78] 本記事は、AIの助けを借りて書かれた、ターミナルUIにおけるボーダー表示の新しいアプローチについて解説しています。 / 従来のUnicodeボックス描画文字では表現が限定的であるという課題に対し、セルの端に細い線を描画するターミナルプロトコルを提案しています。 / Ghosttyへのパッチとして実装され、Ratatuiを使ったデモアプリも公開されており、ターミナルおよびTUI開発者からのフィードバックを求めています。 [実務示唆: TUI開発者は、提案されている新しいターミナルプロトコルを評価し、より洗練されたUIデザインを実現するために、自作のTUIやRatatuiなどのライブラリへの導入を検討すべきです。] [GitHub: joshka/cell-borders] (Source: Hacker News)</description>
-      <pubDate>Fri, 13 Nov 2026 23:06:40 +0000</pubDate>
+      <title>Node.jsでAI生成画像を保存する — 一時的な署名付きダウンロードリンク</title>
+      <link>https://dev.to/brockfletcher1438/store-ai-generated-images-in-nodejs-temporary-signed-download-links-3d9m</link>
+      <guid isPermaLink="false">https://dev.to/brockfletcher1438/store-ai-generated-images-in-nodejs-temporary-signed-download-links-3d9m</guid>
+      <description>[Score: 78] Node.jsアプリケーションでAI生成画像をプライベートオブジェクトとして保存し、一時的な署名付きダウンロードURLを発行する方法が解説されています。 / 各テナントの画像をプライベートに保ち、アプリケーションでアクセスを認証した上で短命なURLを提供することが推奨されます。 / ストレージコストは、保存バイト数、読み書き操作、エクスポート作業、ダウンロードトラフィックによって決まるため、ワークロードに応じた設計が重要です。 [実務示唆: AI生成画像を扱うNode.js開発者は、セキュリティとコスト効率を考慮し、プライベートなオブジェクトストレージと一時的な署名付きURLを活用してアクセス管理を実装すべきです。] (Source: Dev.to)</description>
+      <pubDate>Sun, 15 Nov 2026 01:13:30 +0000</pubDate>
     </item>
     <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
@@ -91,25 +56,25 @@
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
     </item>
     <item>
-      <title>FAAが0119Zに全国的な地上停止を解除</title>
-      <link>https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&amp;advn=5</link>
-      <guid isPermaLink="false">https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&amp;advn=5</guid>
-      <description>[Score: 75] 米国連邦航空局（FAA）は、以前発令していた全国的な地上停止を0119Zに解除しました。 / この情報はFAAのアドバイザリデータベースに掲載されています。 / 詳細な原因や復旧プロセスについては、この抜粋からは確認できません。 [実務示唆: 大規模システム障害からの復旧プロセスを理解し、今後のシステム設計や運用において、迅速な状況把握と情報共有の重要性を考慮に入れるべきです。] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 01:30:01 +0000</pubDate>
+      <title>Node.jsでユーザーファイル用の無料枠があるS3代替ストレージプロバイダー</title>
+      <link>https://dev.to/langstonhughes2689/s3-alternative-storage-providers-with-a-free-tier-for-user-files-in-nodejs-2bo8</link>
+      <guid isPermaLink="false">https://dev.to/langstonhughes2689/s3-alternative-storage-providers-with-a-free-tier-for-user-files-in-nodejs-2bo8</guid>
+      <description>[Score: 75] Node.jsでユーザーファイルを保存する際、無料枠を重視するならBackblaze B2、予測可能なストレージ利用ならWasabiが推奨されます。 / Cloudflare R2やAmazon S3は、プラットフォーム統合が重要な場合に選択肢となります。 / ストレージプロバイダーの選択は、スループット、エグレス、保持期間、リストア動作など、単なる料金だけでなく総合的な要素で判断すべきです。 [実務示唆: Node.jsでユーザーファイルストレージを検討する際は、無料枠の有無、料金体系、パフォーマンス、既存プラットフォームとの統合性を総合的に評価し、ワークロードに最適なS3代替プロバイダーを選択すべきです。] (Source: Dev.to)</description>
+      <pubDate>Sun, 15 Nov 2026 01:12:57 +0000</pubDate>
     </item>
     <item>
-      <title>FAAが「異常な状況」により全国的な地上停止を発令</title>
-      <link>https://www.reddit.com/r/technology/comments/1xvjsxv/faa_issues_nationwide_ground_stop_due_to/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xvjsxv/faa_issues_nationwide_ground_stop_due_to/</guid>
-      <description>[Score: 75] 米国連邦航空局（FAA）が「異常な状況」を理由に、全国の航空機に対して地上停止命令を出しました。 / この緊急措置は、航空管制システムにおける何らかの問題に起因すると考えられます。 / これにより、米国内の航空交通が麻痺し、広範囲にわたる影響が出ています。 [実務示唆: 大規模システム障害の発生メカニズムと影響範囲を理解し、自社のシステムが同様の事態に陥った際の緊急対応計画や冗長性確保について再確認すべきです。] (Source: Reddit)</description>
-      <pubDate>Fri, 13 Nov 2026 21:08:46 +0000</pubDate>
+      <title>ダフィー氏がFAAの老朽化したシステムが再び障害を起こす可能性を警告する中、数千便が欠航</title>
+      <link>https://www.reddit.com/r/technology/comments/1xw6t73/thousands_more_flights_canceled_as_duffy_warns/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xw6t73/thousands_more_flights_canceled_as_duffy_warns/</guid>
+      <description>[Score: 70] ダフィー氏が、FAAの老朽化したシステムが再び障害を起こす可能性について警告を発し、その結果として数千便が欠航しました。 / この状況は、航空管制システムのインフラが抱える深刻な問題を浮き彫りにしています。 / システムの老朽化は、安全性と信頼性に直接的な影響を与え、経済活動にも大きな打撃を与えます。 [実務示唆: 老朽化したシステムが運用されている場合、潜在的な障害リスクを常に認識し、予防保全、冗長性の確保、そして最新技術への段階的な移行計画を策定・実行することが不可欠です。] (Source: Reddit)</description>
+      <pubDate>Sat, 14 Nov 2026 16:38:52 +0000</pubDate>
     </item>
     <item>
-      <title>FAAが全フライトに対して全国的な地上停止を発令</title>
-      <link>https://www.reddit.com/r/technology/comments/1xvk949/faa_issues_nationwide_ground_stop_for_all_flights/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xvk949/faa_issues_nationwide_ground_stop_for_all_flights/</guid>
-      <description>[Score: 72] 米国連邦航空局（FAA）が、すべてのフライトに対して全国的な地上停止命令を発令しました。 / この措置は、航空管制システムの技術的な問題が原因であると見られています。 / 結果として、多数のフライトが遅延または欠航となり、旅行者や航空会社に甚大な影響を与えています。 [実務示唆: ミッションクリティカルなシステムを扱うエンジニアは、障害発生時の影響を最小限に抑えるためのフォールトトレランス設計や、迅速な復旧手順を再評価すべきです。] (Source: Reddit)</description>
-      <pubDate>Fri, 13 Nov 2026 21:26:16 +0000</pubDate>
+      <title>96の地域ビジネスサイトに対する単一実行ラボ監査: 数字が実際に示すもの</title>
+      <link>https://dev.to/sirajahmadzai/single-run-lab-audits-of-96-local-business-sites-what-the-numbers-actually-say-4h34</link>
+      <guid isPermaLink="false">https://dev.to/sirajahmadzai/single-run-lab-audits-of-96-local-business-sites-what-the-numbers-actually-say-4h34</guid>
+      <description>[Score: 70] 2026年3月と11月に、96のオタワ地域のサービス業ウェブサイトに対しPageSpeed Insights API監査が実施されました。 / モバイルのPageSpeedスコアの中央値は65.5で、ほとんどのサイトが「改善が必要」な50-89の範囲にありました。 / デスクトップの中央値は86とモバイルより高く、ラボテストの条件下でのパフォーマンス差が顕著です。 [実務示唆: ウェブサイトのパフォーマンス改善はモバイルを優先し、PageSpeed Insightsの「改善が必要」な項目に焦点を当てて、ユーザー体験向上に努めるべきです。] (Source: Dev.to)</description>
+      <pubDate>Sun, 15 Nov 2026 01:14:15 +0000</pubDate>
     </item>
   </channel>
 </rss>

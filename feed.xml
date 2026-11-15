@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Nov 2026 12:32:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 01:21:02 +0000</lastBuildDate>
     <item>
       <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
@@ -21,18 +21,11 @@
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Google、高速・高効率な「Gemini 4 Hydrogen」を発表 ～「Claude Sonnet 5.5」「GPT-6.1 Terra」のライバル</title>
-      <link>https://forest.watch.impress.co.jp/docs/news/2156117.html</link>
-      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2156117.html</guid>
-      <description>[Score: 95] Googleが高速・高効率なAIモデル「Gemini 4 Hydrogen」を発表しました。 / 前世代の「Gemini 3.8 Flash」より2.5倍高速で、日常的なコーディングやエージェント型ワークフローに最適化されています。 / 「Claude Sonnet 5.5」や「GPT-6.1 Terra」の競合と位置づけられ、開発者、企業、一般ユーザーに提供されます。 [実務示唆: Gemini 4 HydrogenのAPIを試用し、既存のAIワークフローやコーディングタスクへの統合可能性、特にOrchestratorによるコスト削減効果を検証することを推奨します。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 02:57:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>CRA報告対応② Dependency-Trackで脆弱性の検知を自動化する(Pleasanter連携)</title>
-      <link>https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yyoshida15/items/4ea6a0752ff2ba942dff?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 92] EUサイバーレジリエンス法（CRA）への対応として、OWASP Dependency-Track v5.2を用いて脆弱性検知からSlack通知、Pleasanterへの自動登録までを自動化した事例です。 / 積極的に悪用されている脆弱性（KEV, EPSS）の検知と期限管理を自動化することで、CRAが求める24時間以内の早期警告義務に対応することを目指しています。 / Dependency-Track v5の設定手順や、GitHub App Private KeyとAPI Tokenの併用不可といった注意点、OSVミラーリングの条件などが詳細に解説されています。 [実務示唆: CRAなどの法規制に対応するため、Dependency-TrackとPleasanterを連携させ、SBOM分析と脆弱性管理を自動化し、早期警告体制を構築しましょう。] [GitHub: DependencyTrack/dependency-track] (Source: Qiita)</description>
-      <pubDate>Fri, 13 Nov 2026 00:22:46 +0000</pubDate>
+      <title>Lovableアプリがパスポート情報と20万件以上のプライベートメッセージを公開</title>
+      <link>https://www.crissyfield.de/research/lovable-en/</link>
+      <guid isPermaLink="false">https://www.crissyfield.de/research/lovable-en/</guid>
+      <description>[Score: 95] AIを活用してWebアプリケーションを簡単に構築できるLovableプラットフォームで、セキュリティ上の重大な脆弱性が発見されました。 / 159,041件のLovableプロジェクトを調査した結果、ログインなしで個人情報や機密情報にアクセスできるケースが多数確認されました。 / Lovableは「セキュリティもプラットフォームが面倒を見る」という印象を与えがちですが、利用規約では顧客がデータ処理の責任を負うとされており、このギャップが問題を引き起こしています。 [実務示唆: AI生成ツールでアプリケーションを開発する際は、セキュリティ対策が自動で行われると過信せず、機密データの取り扱いに関する責任範囲を明確にし、厳格なセキュリティレビューを必ず実施してください。] [GitHub: AntonOsika/gpt-engineer] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 17:43:10 +0000</pubDate>
     </item>
     <item>
       <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
@@ -42,11 +35,11 @@
       <pubDate>Thu, 12 Nov 2026 15:09:51 +0000</pubDate>
     </item>
     <item>
-      <title>仕組み編：Two-Towerによる検索システム（学習・推論・配信）</title>
-      <link>https://zenn.dev/ca_kagglers/articles/two-tower-mechanism</link>
-      <guid isPermaLink="false">https://zenn.dev/ca_kagglers/articles/two-tower-mechanism</guid>
-      <description>[Score: 90] Two-Towerモデルは、検索・推薦タスクでクエリとアイテムを別々のニューラルネットワークでベクトル化し、類似度で関連度を評価するモデルです。 / アイテム側のベクトルを事前に計算できるため、大量の候補から効率的な検索が可能です。 / 本記事では、Two-Towerの構造、推論、学習（特に負例サンプリング）、配信までを詳細に解説しています。 [実務示唆: 検索・推薦システムを構築する際、Two-Towerモデルの導入を検討し、特に負例サンプリングの手法を理解してモデルの精度向上に役立てる。] (Source: Zenn)</description>
-      <pubDate>Fri, 13 Nov 2026 01:55:36 +0000</pubDate>
+      <title>5年後のエンジニアは、何に責任を持つのだろうか</title>
+      <link>https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now</link>
+      <guid isPermaLink="false">https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now</guid>
+      <description>[Score: 90] AIエージェントによるコード生成が日常化する中で、5年後のエンジニアはコードを書く頻度が減り、より多くのソフトウェアに責任を持つようになると予測されています。 / AIへの委任が機能やプロダクト単位に広がることで、エンジニアはサービス全体の設計や、予期せぬ問題発生時の説明・対応に責任を負うことになります。 / ソフトウェアをブラックボックスとして扱わず、その仕組みを理解し、責任を果たせる開発プロセスやAI実行環境を設計する能力が重要になると提言されています。 [実務示唆: AIによる開発が加速する中で、エンジニアはコード実装だけでなく、サービス全体の設計、品質保証、リスク管理、ユーザーへの説明責任といったより広範な領域に責任を持つ準備をすべきです。] (Source: Zenn)</description>
+      <pubDate>Fri, 13 Nov 2026 05:03:44 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -63,46 +56,25 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>5年後のエンジニアは、何に責任を持つのだろうか</title>
-      <link>https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now</link>
-      <guid isPermaLink="false">https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now</guid>
-      <description>[Score: 90] AIエージェントによるコード生成が日常化する中で、5年後のエンジニアはコードを書く頻度が減り、より多くのソフトウェアに責任を持つようになると予測されています。 / AIへの委任が機能やプロダクト単位に広がることで、エンジニアはサービス全体の設計や、予期せぬ問題発生時の説明・対応に責任を負うことになります。 / ソフトウェアをブラックボックスとして扱わず、その仕組みを理解し、責任を果たせる開発プロセスやAI実行環境を設計する能力が重要になると提言されています。 [実務示唆: AIによる開発が加速する中で、エンジニアはコード実装だけでなく、サービス全体の設計、品質保証、リスク管理、ユーザーへの説明責任といったより広範な領域に責任を持つ準備をすべきです。] (Source: Zenn)</description>
-      <pubDate>Fri, 13 Nov 2026 05:03:44 +0000</pubDate>
+      <title>Nvidiaは循環的な資金調達取引を通じてGPU価格を意図的に高く維持していた</title>
+      <link>https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html</link>
+      <guid isPermaLink="false">https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html</guid>
+      <description>[Score: 90] NvidiaがAIブームに乗じてGPU価格を意図的に高く維持するため、顧客企業への循環的な資金調達を行っていた疑惑が報じられました。 / 元CEOのジェンセン・フアン氏のビジネス戦略が、TSMCウェハーの過剰供給を吸収し、GPU価格を高止まりさせることを目的としていたとされています。 / この戦略は、エンロンの不正会計手法と比較されるなど、倫理的な問題が指摘されており、Nvidiaの財務健全性や市場操作の疑念が浮上しています。 [実務示唆: GPUの調達コストはAI開発の重要な要素であるため、Nvidiaの市場戦略や価格動向を注視し、代替となるハードウェアやクラウドサービスの選択肢も検討することで、コスト最適化を図るべきです。] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 22:26:30 +0000</pubDate>
     </item>
     <item>
-      <title>「画面数×人月」はもう通じない？見積もり単位の変遷と、バイブコーディング時代の見積もり書</title>
-      <link>https://qiita.com/TH_stickey/items/f55fb76055988cf9d0ad?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/TH_stickey/items/f55fb76055988cf9d0ad?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AIの進化により「画面数×人月」のような実装量起点の見積もりは通用しなくなりつつあると指摘しています。 / 要件定義や合意形成など「個数にならない作業」がAI時代には相対的に重要度を増し、見積もりから見落とされがちです。 / 今後は「何を数えるか」よりも「工程ごとに何が残るか」を積み上げる見積もり方法が、説明しやすく現実的であると提案しています。 [実務示唆: AIを活用した開発では、実装工程だけでなく要件定義、設計、レビュー、テスト、PMなど各工程の工数を個別に積み上げる見積もり方法に切り替えることを検討すべきです。] (Source: Qiita)</description>
-      <pubDate>Wed, 11 Nov 2026 02:25:25 +0000</pubDate>
+      <title>Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに</title>
+      <link>https://zenn.dev/caphtech/articles/qwen38-zh-ban</link>
+      <guid isPermaLink="false">https://zenn.dev/caphtech/articles/qwen38-zh-ban</guid>
+      <description>[Score: 90] Qwen3.8-Flash-Nextモデルが日本語の応答に中国語を混在させる問題に対し、出力層の特定の重みのみを書き換えることで解決しました。 / 中国語トークンに対応する25,451行の重みを、未使用の行の写しに置き換える手法が用いられました。 / この変更により、他の重みを一切変更せずに中国語の混入率を0%にすることに成功し、Kestromというツールが活用されました。 [実務示唆: 大規模言語モデルの特定言語の混入問題に対し、出力層の重みの一部を書き換えることで効果的に対応できるため、同様の問題に直面した際はKestromのようなツールでのアプローチを検討しましょう。] [GitHub: CAPHTECH/kestrom] (Source: Zenn)</description>
+      <pubDate>Fri, 13 Nov 2026 13:08:40 +0000</pubDate>
     </item>
     <item>
-      <title>『検索システム』『推薦システム』とLLM時代の検索推薦</title>
-      <link>https://joisino.hatenablog.com/entry/searchrecbook</link>
-      <guid isPermaLink="false">https://joisino.hatenablog.com/entry/searchrecbook</guid>
-      <description>[Score: 90] 著書『検索システム』『推薦システム』が発売され、LLM時代の検索・推薦システムについて解説されています。 / RAGと全文プロンプトの使い分けや、LLMの文脈長拡大が検索・推薦システムに与える影響が議論されています。 / LLMを活用した推薦システムが、説明生成や説得まで可能になるなど、応用範囲が広がっていることが示されています。 [実務示唆: LLMを活用した検索・推薦システムを開発するエンジニアは、RAGと全文プロンプトの特性を理解し、文脈長やLLMの基礎能力を考慮した最適な設計を検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 10:50:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>Nvidia、AIスタートアップに資金提供してGPUを購入させ、意図的に供給不足を演出した疑い</title>
-      <link>https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus</link>
-      <guid isPermaLink="false">https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus</guid>
-      <description>[Score: 90] NVIDIAが、AIスタートアップに資金提供し、その資金でNVIDIA製GPUを購入させることで、GPUとメモリの供給不足を人為的に作り出したという疑惑が報じられました。 / この行為は、TSMCからの半導体過剰供給を捌き、高い需要の認識を維持することを目的としていたとされています。 / ウォール・ストリート・ジャーナル紙の報道によると、元CEOのジェンセン・フアン氏が、循環融資契約の削減を求めるCFOに強く反発したとされています。 [実務示唆: NVIDIAのGPU供給戦略に関するこの疑惑は、AIハードウェア市場の透明性と公正な競争に影響を与える可能性があり、今後の市場動向や規制当局の動きを注視すべきです。] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 02:52:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>AWS Emulatorで、CloudFront＋API Gateway＋Cognitoの構成をローカルで動かしてみた</title>
-      <link>https://zenn.dev/visionarray/articles/2978284b5a9706</link>
-      <guid isPermaLink="false">https://zenn.dev/visionarray/articles/2978284b5a9706</guid>
-      <description>[Score: 90] AWS Emulatorが一般公開され、CloudFront、API Gateway、Cognitoを含む複雑なAWS構成をローカルでエミュレートした検証記事です。 / S3、DynamoDB、Lambdaなども組み合わせ、CognitoオーソライザーとIAM認証でAPIを保護する構成の動作を確認しています。 / セキュリティテストには本物のAWSを使うべきという注意点も明記されています。 [実務示唆: AWS Emulatorを活用し、複雑なAWS構成のローカル開発・テスト環境を構築することで、開発効率を向上させるが、セキュリティテストは本番AWSで行う。] (Source: Zenn)</description>
-      <pubDate>Fri, 13 Nov 2026 11:31:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>【速報】マネックス証券、マイナカード画像漏えいか</title>
-      <link>https://www.47news.jp/15227159.html</link>
-      <guid isPermaLink="false">https://www.47news.jp/15227159.html</guid>
-      <description>[Score: 90] マネックス証券は、委託先が運営・管理する口座開設システムが不正アクセスを受けたと発表しました。 / 運転免許証やマイナンバーカードといった本人確認書類の画像1592件と、最大113万件のメールアドレスが漏えいした恐れがあるとのことです。 / この事態は、個人情報保護の重要性と、金融機関におけるセキュリティ対策の強化の必要性を改めて浮き彫りにしています。 [実務示唆: 個人情報を取り扱うシステムでは、委託先のセキュリティ対策も厳格に評価し、多層防御と定期的な脆弱性診断を徹底して実施すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 15:36:10 +0000</pubDate>
+      <title>常時稼働エージェントの構築</title>
+      <link>https://claude.com/resources/articles/building-always-on-agents</link>
+      <guid isPermaLink="false">https://claude.com/resources/articles/building-always-on-agents</guid>
+      <description>[Score: 90] 常時稼働エージェントは、セッション間でコンテキストを管理し、監視なしでアクションを実行するステートフルでプロアクティブなAIエージェントです。 / その再興は、モデルの判断能力向上とコスト削減、特に長時間のタスクにおける大幅なコスト効率改善によるものです。 / エージェントは実際には「常時稼働」ではなく、イベントに応じて定期的に起動し、作業を終えるとスリープ状態に戻るアーキテクチャで動作します。 [実務示唆: 最新のAIモデルのコスト効率と判断能力向上を活用し、自律型エージェントのアーキテクチャを理解して、既存製品への組み込みや新規開発を検討すべき。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 14 Nov 2026 00:52:42 +0000</pubDate>
     </item>
     <item>
       <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
@@ -112,6 +84,20 @@
       <pubDate>Thu, 12 Nov 2026 15:13:43 +0000</pubDate>
     </item>
     <item>
+      <title>Claude Duet を Team プランで触ってみた（組織で使うときの注意点つき）</title>
+      <link>https://zenn.dev/canly/articles/e2bd67c9a4c18b</link>
+      <guid isPermaLink="false">https://zenn.dev/canly/articles/e2bd67c9a4c18b</guid>
+      <description>[Score: 85] Claude DuetがTeamプランで利用可能になり、組織での活用方法と注意点が解説されています。 / Duetはクラウド上の仮想マシンで動作し、既存のClaudeアカウントのコネクタやスキルを継承して先回りして動作します。 / 利用量消費や管理者側の設定、日本語対応の状況についても詳細に説明されています。 [実務示唆: Claude Duetを組織で導入する際は、既存のClaude設定が引き継がれることを理解し、利用量消費やセキュリティ設定を事前に確認する。] (Source: Zenn)</description>
+      <pubDate>Fri, 13 Nov 2026 23:45:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>「ざっくり工数どのくらい？」に「ざっくり工数このくらい」で答えてはいけない</title>
+      <link>https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] プロジェクトの概算工数見積もりにおいて、根拠のない数字で答えることの危険性を指摘しています。 / 事業責任者や経営者の迅速な判断ニーズに応えつつ、後々のトラブルを避けるためには、見積もりの根拠を明確にすることが重要です。 / 「数量 × 単位あたりの規模」という式を用い、ステークホルダーと意思疎通できる単位（例: 画面数）で見積もる方法を提案しています。 [実務示唆: 概算見積もりでは「数量 × 単位あたりの規模」の式と、合意形成しやすい単位（例: 画面数）を用いて、根拠を明確に説明できるように準備すべきです。] (Source: Qiita)</description>
+      <pubDate>Fri, 13 Nov 2026 02:03:33 +0000</pubDate>
+    </item>
+    <item>
       <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
       <link>https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
@@ -119,11 +105,11 @@
       <pubDate>Wed, 11 Nov 2026 23:39:20 +0000</pubDate>
     </item>
     <item>
-      <title>MicrosoftのM365大規模障害が15時間以上続き、修正が失敗し続けている</title>
-      <link>https://www.reddit.com/r/technology/comments/1xv6c5l/microsofts_massive_m365_outage_stretches_past_15/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xv6c5l/microsofts_massive_m365_outage_stretches_past_15/</guid>
-      <description>[Score: 85] Microsoft 365で大規模なサービス障害が発生し、15時間以上にわたって継続しています。 / Microsoftは復旧を試みていますが、度重なる修正が失敗に終わっている模様です。 / この障害は多くのユーザーに影響を与え、業務に支障をきたしています。 [実務示唆: Microsoft 365の障害発生時は、代替サービスやオフラインでの作業体制を事前に検討し、事業継続計画を見直す。] (Source: Reddit)</description>
-      <pubDate>Fri, 13 Nov 2026 12:15:06 +0000</pubDate>
+      <title>AWSでゼロトラスト構成を作る手順を5つのパートに分けて整理してみた</title>
+      <link>https://qiita.com/yama3133/items/11a360fc97ed3ec09742?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yama3133/items/11a360fc97ed3ec09742?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AWSでゼロトラスト構成を構築する具体的な手順を5つのパートに分けて解説しています。 / 各パートで必要なAWSサービスとリソース、AWS CLIコマンドが整理されており、実践的な内容です。 / 「誰が」「何を」「どこから」「記録」というゼロトラストの原則に対応し、独立したパートとして利用可能です。 [実務示唆: AWS環境でゼロトラスト導入を検討している場合、記事の5つのパートを参考に、IAM Roles AnywhereやAWS Verified Accessなどのサービスを検証し、自社環境への適用可能性を評価してください。] (Source: Qiita)</description>
+      <pubDate>Fri, 13 Nov 2026 16:43:26 +0000</pubDate>
     </item>
     <item>
       <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
@@ -133,18 +119,32 @@
       <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
     </item>
     <item>
-      <title>FAAが全国的な地上停止を発令</title>
-      <link>https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247</link>
-      <guid isPermaLink="false">https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247</guid>
-      <description>[Score: 85] 米国連邦航空局（FAA）は「異常な状況と安全上の理由」により、全出発便の全国的な地上停止を命じました。 / これにより、米国内の航空交通の大部分が突然停止し、4,042便が影響を受けました。 / 国土安全保障長官は、現時点では通信障害が原因であり、悪意のある活動の兆候はないと述べています。 [実務示唆: 航空管制システムや大規模インフラの障害は広範囲に影響するため、システム設計時には冗長性やフェイルセーフ機構を考慮し、障害発生時の影響範囲を最小限に抑える対策を講じるべきです。] (Source: Hacker News)</description>
-      <pubDate>Fri, 13 Nov 2026 21:05:53 +0000</pubDate>
+      <title>SpaceX、スターシップの15回目の飛行で機体を捕捉</title>
+      <link>https://www.spacex.com/launches/starship-flight-15</link>
+      <guid isPermaLink="false">https://www.spacex.com/launches/starship-flight-15</guid>
+      <description>[Score: 85] SpaceXは、先進的なロケットと宇宙船を設計、製造、打ち上げている企業です。 / 2002年に設立され、宇宙技術に革命を起こし、最終的には人類が他の惑星に住むことを可能にすることを目指しています。 / スターシップの15回目の飛行で機体を捕捉することに成功しました。 [実務示唆: 宇宙開発技術の進展は、将来的な地球外資源の活用や新たな産業創出に繋がる可能性があり、関連技術の動向を注視すべきです。] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 21:22:24 +0000</pubDate>
     </item>
     <item>
-      <title>ウクライナ、2週間足らずでロシアの石油精製能力の36%を無力化</title>
-      <link>https://english.nv.ua/nation/thirteen-day-drone-blitz-paralyzes-36-of-moscow-s-oil-50658616.html</link>
-      <guid isPermaLink="false">https://english.nv.ua/nation/thirteen-day-drone-blitz-paralyzes-36-of-moscow-s-oil-50658616.html</guid>
-      <description>[Score: 85] ウクライナのドローン攻撃により、2週間足らずでロシアの石油精製能力の36%が破壊されました。 / 10月30日から11月11日の間に少なくとも9つの主要な製油所が攻撃され、年間1億2000万トン以上の原油処理能力が失われました。 / これはロシアの国内石油精製能力全体の3分の1以上に相当し、燃料不足を引き起こしています。 [実務示唆: 地政学的リスクがサプライチェーンに与える影響を常に監視し、エネルギー価格の変動や供給不安に備えた事業継続計画を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 01:10:22 +0000</pubDate>
+      <title>PyPIの再設計されたプロジェクトページで、より明確なセキュリティシグナルが利用可能に</title>
+      <link>https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/</link>
+      <guid isPermaLink="false">https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/</guid>
+      <description>[Score: 85] PyPIは、ユーザーインターフェースのセキュリティ関連情報を改善するアップデートを完了しました。 / この変更は、Pythonコミュニティからのフィードバックに基づき、パッケージのセキュリティ評価を支援することを目的としています。 / 特に、デジタル証明（attestations）の表示が強化され、リリースファイルの出所を検証しやすくなりました。 [実務示唆: PyPIでパッケージをインストールする際は、新しいセキュリティタブを確認し、デジタル証明の有無や出所情報を活用して、サプライチェーン攻撃のリスクを低減しましょう。] (Source: Hacker News)</description>
+      <pubDate>Sat, 14 Nov 2026 15:40:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>常時稼働エージェントの作り方（Claude公式ブログを資料化）</title>
+      <link>https://speakerdeck.com/minorun365/jouji-kadou-ejento-no-tsukurikata</link>
+      <guid isPermaLink="false">https://speakerdeck.com/minorun365/jouji-kadou-ejento-no-tsukurikata</guid>
+      <description>[Score: 85] Claude公式ブログを基に、常時稼働エージェントの構築方法を解説した資料です。 / 常時稼働エージェントは、セッションをまたいで文脈を引き継ぎ、人手なしで自律的に動作するAIエージェントを指します。 / モデルの進化により、意図理解能力の向上とコスト削減が進み、長時間のタスク処理がより実用的になっています。 [実務示唆: Claudeなどの大規模言語モデルを活用し、イベントインボックスやメモリなどの5つの部品を組み合わせて自律型AIエージェントを構築し、業務自動化を推進すべき。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 14 Nov 2026 16:06:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Gemini API CLI公式ガイド (パート1): AIエージェントにステートレスなマルチモーダルCLIツールボックスを提供する</title>
+      <link>https://dev.to/jimmyliao/gemini-api-cli-official-guide-part-1-giving-your-ai-agent-a-stateless-multimodal-cli-toolbox-36p3</link>
+      <guid isPermaLink="false">https://dev.to/jimmyliao/gemini-api-cli-official-guide-part-1-giving-your-ai-agent-a-stateless-multimodal-cli-toolbox-36p3</guid>
+      <description>[Score: 85] Google Gemini API CLIの公式ガイド第一弾が公開されました。 / 個人開発者向けのGemini CLIはAntigravity CLI (agy)に移行し、無料アカウントやGoogle AI Pro/Ultraプランで利用可能になります。 / CLI自体はステートレスですが、基盤となるInteractions APIはサーバーサイドでの状態維持やジョブ実行が可能です。 [実務示唆: Gemini API CLIの利用を検討している開発者は、Antigravity CLIへの移行とステートレスな設計思想を理解し、サーバーサイドの状態管理と組み合わせて活用することを推奨します。] [GitHub: google-gemini/gemini-api-cli] (Source: Dev.to)</description>
+      <pubDate>Sun, 15 Nov 2026 01:15:23 +0000</pubDate>
     </item>
   </channel>
 </rss>
