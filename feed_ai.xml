@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 01:25:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 14:06:13 +0000</lastBuildDate>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
       <link>https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</link>
@@ -19,6 +19,13 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_antigravityaiai.html</guid>
       <description>[Score: 88] Googleが提供するAIエージェント開発環境「Antigravity」に、クラウド上でAIエージェントが動作する「リモートエージェント」機能が搭載されました。 / これにより、ユーザーのローカルPCの電源がオフでも、AIエージェントは独立したクラウド仮想マシン上でタスクを継続できます。 / 開発者は、AIエージェントに指示を出した後、PCを閉じても作業が進行し、テスト完了やプルリクエスト作成までを自動化できるようになります。 [実務示唆: AIエージェントを活用した開発プロセスを検討する際、Google Antigravityのリモートエージェント機能を利用し、開発効率の向上と継続的な作業自動化を試すことを推奨します。] (Source: Publickey)</description>
       <pubDate>Thu, 12 Nov 2026 15:13:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>ランキングは維持されるか？小型・量子化・オンデバイスLLMにおける幻覚検出器の実践者向け監査</title>
+      <link>https://arxiv.org/abs/2611.17339</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.17339</guid>
+      <description>[Score: 88] この論文は、小型で量子化されたオンデバイスLLMにおける幻覚検出器の有効性について、実践的な観点から監査を行っています。 / 特に、リソースが限られた環境でのLLMの信頼性を評価し、幻覚（ハルシネーション）問題への対策を検討しています。 / arXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。 [実務示唆: オンデバイスLLMを導入する際、幻覚検出器の性能を小型・量子化モデルの特性に合わせて厳密に評価し、実用環境での信頼性を確保するための対策を講じるべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Cloudflare、AI専用でタブやテーマや拡張などない軽量ヘッドレスブラウザ「Kitesurf」、オープンソースで公開</title>
@@ -47,6 +54,27 @@
       <guid isPermaLink="false">https://dev.to/crbro/a-prompt-cant-see-the-second-copy-of-a-bug-a-program-can-1okj</guid>
       <description>[Score: 80] AIコーディングエージェントがバグ修正において、同じバグの複数のインスタンスを見落とす可能性について論じています。 / エージェントはプロンプトに基づいて1つの修正を行うが、コードベース全体に存在する同じバグの他のコピーを見つけることができません。 / 著者は、AIエージェントに「何を伝えるか」によってその能力がどう変わるかを検証するプラグイン「Ockham」を開発しており、その測定結果を共有しています。 [実務示唆: AIコーディングエージェントを利用する際は、単一の修正だけでなく、コードベース全体にわたる類似のバグの検出と修正を促すための追加ツールやプロセスを検討し、テストカバレッジを強化すべきです。] (Source: Dev.to)</description>
       <pubDate>Mon, 16 Nov 2026 01:15:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>LLMエージェントはいつ忘れるべきか？クエリに重要なリゾルバーエラー下でのメモリフィルタリング</title>
+      <link>https://arxiv.org/abs/2611.17338</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.17338</guid>
+      <description>[Score: 80] この論文は、LLMエージェントがクエリ処理中に発生する重要なエラー状況下で、いつどのように記憶を忘れるべきか（メモリフィルタリング）について研究しています。 / LLMエージェントの効率性と信頼性を向上させるためのメモリ管理戦略に焦点を当てています。 / arXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。 [実務示唆: LLMエージェントを開発する際、クエリ処理の失敗時に不適切な情報を記憶から効果的に削除するメモリフィルタリング戦略を検討し、エージェントの堅牢性を高めるべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>EHR投薬セット予測のための構造化検索としての表形式母集団事前分布</title>
+      <link>https://arxiv.org/abs/2611.17341</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.17341</guid>
+      <description>[Score: 75] 本論文は、電子カルテ（EHR）における投薬セット予測に焦点を当てています。 / 表形式の母集団事前分布を構造化検索として利用する新しいアプローチを提案しています。 / これにより、医療分野でのAI応用、特に個別化医療の精度向上に貢献する可能性があります。 [実務示唆: 医療AI開発者は、EHRデータを用いた投薬予測モデル構築において、本論文の構造化検索アプローチを参考にし、モデルの精度向上や解釈性向上を試みるべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>LoRAWeaver: LoRA表現空間における方向性アダプタルーティング</title>
+      <link>https://arxiv.org/abs/2611.17340</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.17340</guid>
+      <description>[Score: 70] LoRAWeaverは、LoRA表現空間における方向性アダプタルーティングに関する研究論文です。 / この技術は、大規模言語モデルの効率的なファインチューニングに寄与する可能性があります。 / 具体的な手法や実験結果については、論文本文で詳細が述べられていると推測されます。 [実務示唆: LoRAベースのモデルを扱うエンジニアは、LoRAWeaverの概念を理解し、モデルの効率的な適応やルーティングに応用できないか検討すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

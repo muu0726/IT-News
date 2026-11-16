@@ -5,13 +5,20 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 01:25:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 14:06:13 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
       <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
       <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Microsoftの11月Patch Tuesdayで1,093件の修正が提供され、そのうち4件が今週の注目</title>
+      <link>https://dev.to/echakiri/microsofts-november-patch-tuesday-ships-1093-fixes-four-of-them-set-the-week-3921</link>
+      <guid isPermaLink="false">https://dev.to/echakiri/microsofts-november-patch-tuesday-ships-1093-fixes-four-of-them-set-the-week-3921</guid>
+      <description>[Score: 95] Microsoftが2026年11月のPatch Tuesdayで1,093件の脆弱性修正をリリースしたことを報じています。 / 特に、SQL Serverのヒープベースのバッファオーバーフロー（CVE-2026-116945）を含む4件の深刻な脆弱性が注目されています。 / 修正された脆弱性の約半数が権限昇格、約3分の1がリモートコード実行に関連していると分析しています。 [実務示唆: Microsoft製品を使用している組織は、速やかに11月のPatch Tuesdayの更新プログラムを適用し、特にSQL Serverの脆弱性には優先的に対応すべきです。] (Source: Dev.to)</description>
+      <pubDate>Mon, 16 Nov 2026 14:00:02 +0000</pubDate>
     </item>
     <item>
       <title>日本語の脆弱性DBは4.6日かかる。待てないので、46秒でセキュリティ情報が載るようにした</title>

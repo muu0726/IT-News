@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 01:25:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 14:06:13 +0000</lastBuildDate>
     <item>
       <title>フロントエンドのフレームワークを、安全に段階的に入れ替える</title>
       <link>https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</link>
@@ -56,6 +56,13 @@
       <pubDate>Sun, 15 Nov 2026 15:07:26 +0000</pubDate>
     </item>
     <item>
+      <title>Microsoftが隠れたWindowsバグがMicrosoft 365サービスを世界的に停止させた経緯を明かす</title>
+      <link>https://www.reddit.com/r/technology/comments/1xxnmnr/microsoft_reveals_how_a_hidden_windows_bug_took/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xxnmnr/microsoft_reveals_how_a_hidden_windows_bug_took/</guid>
+      <description>[Score: 85] Microsoftは、隠れたWindowsのバグが原因でMicrosoft 365サービスが世界的に停止した事態について詳細を明らかにしました。 / このバグはシステムの安定性に深刻な影響を与え、広範囲なサービス障害を引き起こしたと推測されます。 / 根本原因の特定と対策が今後のシステム信頼性向上に不可欠となります。 [実務示唆: Windows環境で重要なサービスを運用する際は、OSレベルの潜在的なバグによる障害リスクを考慮し、冗長性やフェイルオーバー戦略を強化すべきです。] (Source: Reddit)</description>
+      <pubDate>Mon, 16 Nov 2026 12:02:31 +0000</pubDate>
+    </item>
+    <item>
       <title>Protomaps: マップタイルのセルフホスティングが安価で容易に</title>
       <link>https://bruceroettgers.eu/blog/protomaps/</link>
       <guid isPermaLink="false">https://bruceroettgers.eu/blog/protomaps/</guid>
@@ -89,6 +96,13 @@
       <guid isPermaLink="false">https://dev.to/knutberg8412/edtech-cost-attribution-go-failure-alerting-via-metrics-api-poll-queries-23e0</guid>
       <description>[Score: 70] Edtech分野におけるAIエージェントのコストアトリビューションと障害アラートについて解説しています。 / メトリクスAPIポーリングは、コスト帰属が重要で、スケジューラ、重複排除、通知経路を自社で管理する際に有効です。 / 組み込みアラートは、ページ自体が製品要件である場合に適しており、障害検出には60秒のポーリング間隔と連続した失敗ループの閾値が推奨されます。 [実務示唆: AIエージェントのコスト管理と障害検知を強化するため、メトリクスAPIポーリングを導入し、コースレベルのコストラベルを付与することで、予算レビューとインシデントレビューの精度を向上させるべきです。] (Source: Dev.to)</description>
       <pubDate>Mon, 16 Nov 2026 01:16:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>Reactでの住宅査定リードファネル: 私の家の価値は？</title>
+      <link>https://dev.to/marcoschulz123/home-valuation-lead-funnel-in-react-whats-my-home-worth-5779</link>
+      <guid isPermaLink="false">https://dev.to/marcoschulz123/home-valuation-lead-funnel-in-react-whats-my-home-worth-5779</guid>
+      <description>[Score: 70] Reactで不動産売却リード獲得のための住宅査定ファネルを構築する方法について解説しています。 / 訪問者の尊重とリード獲得を両立させるためのUI/UX設計の重要性を強調。 / 特に、最初の入力フィールドの選択がコンバージョン率に大きく影響することを指摘しています。 [実務示唆: リード獲得フォームを設計する際は、ユーザー体験を最優先し、最初の質問を「住所」にするなど、心理的ハードルの低い情報から求めることでコンバージョン率向上を図るべきです。] (Source: Dev.to)</description>
+      <pubDate>Mon, 16 Nov 2026 14:00:02 +0000</pubDate>
     </item>
   </channel>
 </rss>

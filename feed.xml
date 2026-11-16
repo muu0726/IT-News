@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 01:25:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 14:06:13 +0000</lastBuildDate>
     <item>
       <title>フロントエンドのフレームワークを、安全に段階的に入れ替える</title>
       <link>https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</link>
@@ -26,6 +26,13 @@
       <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
       <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Microsoftの11月Patch Tuesdayで1,093件の修正が提供され、そのうち4件が今週の注目</title>
+      <link>https://dev.to/echakiri/microsofts-november-patch-tuesday-ships-1093-fixes-four-of-them-set-the-week-3921</link>
+      <guid isPermaLink="false">https://dev.to/echakiri/microsofts-november-patch-tuesday-ships-1093-fixes-four-of-them-set-the-week-3921</guid>
+      <description>[Score: 95] Microsoftが2026年11月のPatch Tuesdayで1,093件の脆弱性修正をリリースしたことを報じています。 / 特に、SQL Serverのヒープベースのバッファオーバーフロー（CVE-2026-116945）を含む4件の深刻な脆弱性が注目されています。 / 修正された脆弱性の約半数が権限昇格、約3分の1がリモートコード実行に関連していると分析しています。 [実務示唆: Microsoft製品を使用している組織は、速やかに11月のPatch Tuesdayの更新プログラムを適用し、特にSQL Serverの脆弱性には優先的に対応すべきです。] (Source: Dev.to)</description>
+      <pubDate>Mon, 16 Nov 2026 14:00:02 +0000</pubDate>
     </item>
     <item>
       <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
@@ -98,6 +105,13 @@
       <pubDate>Sun, 15 Nov 2026 14:50:18 +0000</pubDate>
     </item>
     <item>
+      <title>ランキングは維持されるか？小型・量子化・オンデバイスLLMにおける幻覚検出器の実践者向け監査</title>
+      <link>https://arxiv.org/abs/2611.17339</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.17339</guid>
+      <description>[Score: 88] この論文は、小型で量子化されたオンデバイスLLMにおける幻覚検出器の有効性について、実践的な観点から監査を行っています。 / 特に、リソースが限られた環境でのLLMの信頼性を評価し、幻覚（ハルシネーション）問題への対策を検討しています。 / arXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。 [実務示唆: オンデバイスLLMを導入する際、幻覚検出器の性能を小型・量子化モデルの特性に合わせて厳密に評価し、実用環境での信頼性を確保するための対策を講じるべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>「ざっくり工数どのくらい？」に「ざっくり工数このくらい」で答えてはいけない</title>
       <link>https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
@@ -131,20 +145,6 @@
       <guid isPermaLink="false">https://zenn.dev/microsoft/articles/aspnetcore-blazor-dotnet11-scale</guid>
       <description>[Score: 85] .NET 11のASP.NET Core Blazor InteractiveServerモードで、スケールイン時の回路（Circuit）移行が可能になりました。 / これにより、サーバー側の状態をクライアント側に保存し、別のサーバーに再接続することで柔軟なスケールアウト・インが実現します。 / 公式ドキュメントの「サーバーによって引き起こされる回線の一時停止」機能を利用し、Aspireダッシュボードを使った検証方法が紹介されています。 [実務示唆: .NET 11へのアップグレードを検討し、Blazor InteractiveServerアプリケーションでスケールイン対応機能を実装することで、システムの可用性と運用効率を向上させる。] (Source: Zenn)</description>
       <pubDate>Sun, 15 Nov 2026 07:58:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
-      <link>https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AI開発が加速する現代において、セキュリティは後から追加するものではなく、設計段階で組み込むべきであると提唱されています。 / 従来の認証やファイアウォールといった防御策だけでなく、業務であり得ない操作を設計で許さないことが重要です。 / OpenAIやAnthropicの事例から、モデルの賢さだけでは安全が確保されず、設計による境界設定が被害の大きさを左右することが示されています。 [実務示唆: AIを活用した開発では、セキュリティを設計段階から考慮し、業務上あり得ない操作を許さないようなシステム設計を徹底することで、将来的な脆弱性リスクを低減すべきです。] (Source: Qiita)</description>
-      <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>ジェンセン・ファンがNvidia CEOとしての復帰を議論、支持者がロビー活動</title>
-      <link>https://www.reddit.com/r/technology/comments/1xx4ou6/jensen_huang_discusses_comeback_as_nvidia_ceo/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xx4ou6/jensen_huang_discusses_comeback_as_nvidia_ceo/</guid>
-      <description>[Score: 85] Nvidiaの元CEOジェンセン・ファン氏が、中国のスパイとされる人物との関係を理由に辞任した後、CEOへの復帰を検討していると報じられています。 / 彼の支持者たちは、Nvidiaの取締役会に対し、ファン氏をCEOに再任するようロビー活動を行っているとのことです。 / この動きは、Nvidiaの将来のリーダーシップと戦略に大きな影響を与える可能性があります。 [実務示唆: Nvidiaのリーダーシップ変更の可能性は、半導体業界の動向やNvidia製品のロードマップに影響を与えるため、今後の発表に注目すべきです。] (Source: Reddit)</description>
-      <pubDate>Sun, 15 Nov 2026 19:42:01 +0000</pubDate>
     </item>
   </channel>
 </rss>

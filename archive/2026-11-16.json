@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-16T10:24:51.482440+09:00",
-  "total_count": 43,
-  "success_count": 43,
-  "error_count": 0,
+  "generated_at": "2026-11-16T23:01:53.696235+09:00",
+  "total_count": 76,
+  "success_count": 58,
+  "error_count": 18,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
     {
@@ -49,7 +49,7 @@
       "new_at": "2026-11-15T21:58:42.747174+09:00",
       "first_seen": "2026-11-15T21:58:42.747174+09:00",
       "is_hot": false,
-      "hatena_count": 413,
+      "hatena_count": 478,
       "is_prev_seen": true
     },
     {
@@ -77,6 +77,28 @@
       "is_prev_seen": true
     },
     {
+      "title": "Microsoftの11月Patch Tuesdayで1,093件の修正が提供され、そのうち4件が今週の注目",
+      "url": "https://dev.to/echakiri/microsofts-november-patch-tuesday-ships-1093-fixes-four-of-them-set-the-week-3921",
+      "source": "Dev.to",
+      "published": "2026-11-16T14:00:02+00:00",
+      "reading_min": 3,
+      "summary": "Microsoftが2026年11月のPatch Tuesdayで1,093件の脆弱性修正をリリースしたことを報じています。\n特に、SQL Serverのヒープベースのバッファオーバーフロー（CVE-2026-116945）を含む4件の深刻な脆弱性が注目されています。\n修正された脆弱性の約半数が権限昇格、約3分の1がリモートコード実行に関連していると分析しています。",
+      "actionable_takeaway": "Microsoft製品を使用している組織は、速やかに11月のPatch Tuesdayの更新プログラムを適用し、特にSQL Serverの脆弱性には優先的に対応すべきです。",
+      "tags": [
+        "Microsoft",
+        "セキュリティ",
+        "Patch Tuesday"
+      ],
+      "category": "セキュリティ",
+      "score": 95,
+      "score_reason": "Microsoft製品の脆弱性修正は広範なシステムに影響を与えるため非常に重要であり、特に深刻な脆弱性への注意喚起と迅速な対応の必要性は高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース",
       "url": "https://www.publickey1.jp/blog/26/awsawsaws_1.html",
       "source": "Publickey",
@@ -96,7 +118,7 @@
       "new_at": "2026-11-13T22:27:29.271819+09:00",
       "first_seen": "2026-11-13T11:09:14.720822+09:00",
       "is_hot": false,
-      "hatena_count": 153,
+      "hatena_count": 154,
       "topic_group": 1,
       "topic_size": 2,
       "is_prev_seen": true
@@ -121,7 +143,9 @@
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
-      "hatena_count": 32
+      "hatena_count": 75,
+      "topic_group": 1,
+      "topic_size": 2
     },
     {
       "title": "コード生成を超えて：エージェント指向エンジニアリング開発者ガイド",
@@ -177,8 +201,8 @@
       "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
       "source": "Hacker News",
       "published": "2026-11-15T23:55:55+00:00",
-      "hn_score": 30,
-      "hn_comments": 17,
+      "hn_score": 338,
+      "hn_comments": 414,
       "reading_min": 7,
       "summary": "Nvidiaの共同創業者であるジェンスン・フアンCEOが33年ぶりに辞任したと報じられ、その後のNvidiaの行方が議論されています。\nフアン氏はCUDA、ディープラーニング、Mellanox買収を通じてNvidiaを3度再発明し、グラフィックボードベンダーからシステム企業へと変革させました。\nビジョナリーなCEOの不在は企業のイノベーションを停滞させるリスクがあり、Nvidiaの取締役会は今後の戦略を慎重に検討する必要があります。",
       "actionable_takeaway": "Nvidiaの今後の動向はAI・機械学習業界全体に影響を与えるため、同社のリーダーシップ交代とそれに伴う戦略変更には注視が必要です。",
@@ -195,7 +219,7 @@
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 1,
+      "topic_group": 2,
       "topic_size": 2
     },
     {
@@ -262,7 +286,7 @@
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
-      "hatena_count": 276
+      "hatena_count": 410
     },
     {
       "title": "Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける",
@@ -307,7 +331,29 @@
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
-      "hatena_count": 78
+      "hatena_count": 157
+    },
+    {
+      "title": "ランキングは維持されるか？小型・量子化・オンデバイスLLMにおける幻覚検出器の実践者向け監査",
+      "url": "https://arxiv.org/abs/2611.17339",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-16T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、小型で量子化されたオンデバイスLLMにおける幻覚検出器の有効性について、実践的な観点から監査を行っています。\n特に、リソースが限られた環境でのLLMの信頼性を評価し、幻覚（ハルシネーション）問題への対策を検討しています。\narXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。",
+      "actionable_takeaway": "オンデバイスLLMを導入する際、幻覚検出器の性能を小型・量子化モデルの特性に合わせて厳密に評価し、実用環境での信頼性を確保するための対策を講じるべきです。",
+      "tags": [
+        "LLM",
+        "量子化",
+        "オンデバイスAI"
+      ],
+      "category": "AI・機械学習",
+      "score": 88,
+      "score_reason": "小型・量子化LLMはエッジAIの重要なトレンドであり、その幻覚問題の検出と対策は、実用化における大きな課題であるため、この研究は非常に重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "「ざっくり工数どのくらい？」に「ざっくり工数このくらい」で答えてはいけない",
@@ -467,7 +513,7 @@
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 1,
+      "topic_group": 2,
       "topic_size": 2
     },
     {
@@ -491,7 +537,52 @@
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
-      "hatena_count": 13
+      "hatena_count": 72
+    },
+    {
+      "title": "Microsoftが隠れたWindowsバグがMicrosoft 365サービスを世界的に停止させた経緯を明かす",
+      "url": "https://www.reddit.com/r/technology/comments/1xxnmnr/microsoft_reveals_how_a_hidden_windows_bug_took/",
+      "source": "Reddit",
+      "published": "2026-11-16T12:02:31+00:00",
+      "summary": "Microsoftは、隠れたWindowsのバグが原因でMicrosoft 365サービスが世界的に停止した事態について詳細を明らかにしました。\nこのバグはシステムの安定性に深刻な影響を与え、広範囲なサービス障害を引き起こしたと推測されます。\n根本原因の特定と対策が今後のシステム信頼性向上に不可欠となります。",
+      "actionable_takeaway": "Windows環境で重要なサービスを運用する際は、OSレベルの潜在的なバグによる障害リスクを考慮し、冗長性やフェイルオーバー戦略を強化すべきです。",
+      "tags": [
+        "Windows",
+        "Microsoft 365",
+        "障害対応"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "Microsoft 365のような大規模サービスの世界的な停止は、多くの企業やユーザーに影響を与え、OSの潜在的なバグの重要性を示すためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 1,
+      "topic_size": 2
+    },
+    {
+      "title": "IEEE-754の落とし穴なしにクライアントサイドJavaScriptで207のExcel財務・統計関数を実装する",
+      "url": "https://dev.to/mincho_milev_c7753077d5af/implementing-207-excel-financial-and-statistical-formulas-in-client-side-javascript-without-4l5o",
+      "source": "Dev.to",
+      "published": "2026-11-16T14:00:09+00:00",
+      "reading_min": 6,
+      "summary": "この記事は、クライアントサイドJavaScriptでExcel互換の財務・統計関数を実装する際の課題について解説しています。\n特に、IEEE-754浮動小数点数の精度問題が、財務計算で予期せぬ結果を引き起こすことを指摘。\nこの問題を回避するためのNeumaier Sumなどの技術的解決策と、信頼性の高い数値エンジンの構築方法を紹介しています。",
+      "actionable_takeaway": "JavaScriptで財務計算を扱う際は、IEEE-754浮動小数点数の精度問題に注意し、Neumaier Sumなどの補償アルゴリズムの導入を検討すべきです。",
+      "tags": [
+        "JavaScript",
+        "Excel",
+        "IEEE-754"
+      ],
+      "category": "プログラミング言語",
+      "score": 85,
+      "score_reason": "JavaScriptでの数値計算の精度問題は多くの開発者が直面する課題であり、Excel互換の関数実装は実用性が高く、技術的解決策の提示も具体的で有用性が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "ちょっと見ない間にClaude APIが進化してた！",
@@ -563,7 +654,7 @@
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 7
     },
     {
       "title": "FTDで実装するTLS Decryption",
@@ -608,7 +699,7 @@
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
-      "hatena_count": 16
+      "hatena_count": 42
     },
     {
       "title": "プロンプトはバグの2つ目のコピーを見つけられない。プログラムならできる。",
@@ -629,6 +720,28 @@
       "analysis_status": "ok",
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "LLMエージェントはいつ忘れるべきか？クエリに重要なリゾルバーエラー下でのメモリフィルタリング",
+      "url": "https://arxiv.org/abs/2611.17338",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-16T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、LLMエージェントがクエリ処理中に発生する重要なエラー状況下で、いつどのように記憶を忘れるべきか（メモリフィルタリング）について研究しています。\nLLMエージェントの効率性と信頼性を向上させるためのメモリ管理戦略に焦点を当てています。\narXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。",
+      "actionable_takeaway": "LLMエージェントを開発する際、クエリ処理の失敗時に不適切な情報を記憶から効果的に削除するメモリフィルタリング戦略を検討し、エージェントの堅牢性を高めるべきです。",
+      "tags": [
+        "LLM",
+        "AI",
+        "Memory Management"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "LLMエージェントのメモリ管理は、性能と信頼性に直結する重要な研究テーマであり、実用的なAIシステムの構築において不可欠な要素です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -702,7 +815,7 @@
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "Vulcanロケットが失敗し、AmazonのLeo衛星40基を破壊",
@@ -770,6 +883,73 @@
       "hatena_count": 0
     },
     {
+      "title": "日報mdをどの画面からもワンボタン表示！ Raycast × Obsidian",
+      "url": "https://qiita.com/kuma_3838/items/e8a11dd95f319a1545d6?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-15T23:34:57+00:00",
+      "reading_min": 5,
+      "summary": "Obsidianで日報を管理しているユーザー向けに、RaycastとObsidianプラグイン「Floating Notes」を連携させ、どの画面からでもワンボタンで日報をポップアップ表示・編集する方法を紹介。\nRaycastの拡張機能では編集ができないため、Obsidian側のプラグインとローカルHTTPサーバーを利用するアプローチが解説されています。\nこれにより、Raycast Notesのように手軽に日報にアクセスし、作業効率を向上させることが可能になります。",
+      "actionable_takeaway": "Obsidianで日報やメモを頻繁に参照・編集するエンジニアは、Floating NotesプラグインとRaycast連携を導入し、作業効率向上を試すべきです。",
+      "github_repo": "haotiencheng/obsidian-floating-notes",
+      "tags": [
+        "Obsidian",
+        "Raycast",
+        "生産性向上"
+      ],
+      "category": "その他",
+      "score": 75,
+      "score_reason": "ObsidianとRaycastの連携による生産性向上は多くの開発者にとって実用性が高く、具体的な導入方法が示されているためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "アナリストを増やさずにSEOエージェンシーをスケールする方法",
+      "url": "https://dev.to/avansledright/how-to-scale-an-seo-agency-without-hiring-more-analysts-4nlb",
+      "source": "Dev.to",
+      "published": "2026-11-16T14:00:02+00:00",
+      "reading_min": 4,
+      "summary": "SEOエージェンシーがアナリストを増やすことなく事業を拡大するための自動化戦略について解説しています。\nSEO業務の60-70%が機械的な作業であり、これらを自動化することで大幅な時間削減が可能と指摘。\nAPIを活用したバッチ監査の例を挙げ、手動作業から自動化への移行を推奨しています。",
+      "actionable_takeaway": "SEO業務において、監査やレポート作成などの定型作業をAPIやスクリプトで自動化することで、アナリストの専門知識を戦略立案に集中させ、効率的な事業拡大を目指すべきです。",
+      "tags": [
+        "SEO",
+        "自動化",
+        "API"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 75,
+      "score_reason": "SEO業務の自動化は、効率化とコスト削減に直結するため、多くの企業にとって関心が高いテーマです。具体的な自動化手法の提示も実用的です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "EHR投薬セット予測のための構造化検索としての表形式母集団事前分布",
+      "url": "https://arxiv.org/abs/2611.17341",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-16T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本論文は、電子カルテ（EHR）における投薬セット予測に焦点を当てています。\n表形式の母集団事前分布を構造化検索として利用する新しいアプローチを提案しています。\nこれにより、医療分野でのAI応用、特に個別化医療の精度向上に貢献する可能性があります。",
+      "actionable_takeaway": "医療AI開発者は、EHRデータを用いた投薬予測モデル構築において、本論文の構造化検索アプローチを参考にし、モデルの精度向上や解釈性向上を試みるべきです。",
+      "tags": [
+        "EHR",
+        "医療AI",
+        "機械学習"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "医療分野におけるAIの応用は社会的な影響が大きく、投薬予測の精度向上は患者の治療に直結するため重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "30年間のSalonジャーナリズムの保存",
       "url": "https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/",
       "source": "Hacker News",
@@ -816,7 +996,7 @@
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "Redditのトラフィックが13%減少、一部はAI Overviewsが原因",
@@ -858,6 +1038,92 @@
       "analysis_status": "ok",
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Intel、株価29%急落を受け株主から提訴される",
+      "url": "https://www.reddit.com/r/technology/comments/1xxe75e/intel_sued_by_shareholders_following_29_stock/",
+      "source": "Reddit",
+      "published": "2026-11-16T02:47:05+00:00",
+      "summary": "Intelが株価の29%急落を受けて株主から提訴されたというニュースです。\n株価急落の原因は不明ですが、業績不振や市場での競争力低下が背景にあると推測されます。\nこれは半導体業界におけるIntelの立ち位置や将来性に懸念を抱かせる出来事です。",
+      "actionable_takeaway": "半導体業界の動向を注視し、Intelの業績や技術ロードマップの変化が、関連するハードウェアやソフトウェア開発に与える影響を評価すべきです。",
+      "tags": [
+        "Intel",
+        "半導体",
+        "ビジネス"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "Intelの株価急落と提訴は、半導体業界全体の動向やサプライチェーンに影響を与える可能性があり、IT業界のビジネス動向として重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Reactでの住宅査定リードファネル: 私の家の価値は？",
+      "url": "https://dev.to/marcoschulz123/home-valuation-lead-funnel-in-react-whats-my-home-worth-5779",
+      "source": "Dev.to",
+      "published": "2026-11-16T14:00:02+00:00",
+      "reading_min": 7,
+      "summary": "Reactで不動産売却リード獲得のための住宅査定ファネルを構築する方法について解説しています。\n訪問者の尊重とリード獲得を両立させるためのUI/UX設計の重要性を強調。\n特に、最初の入力フィールドの選択がコンバージョン率に大きく影響することを指摘しています。",
+      "actionable_takeaway": "リード獲得フォームを設計する際は、ユーザー体験を最優先し、最初の質問を「住所」にするなど、心理的ハードルの低い情報から求めることでコンバージョン率向上を図るべきです。",
+      "tags": [
+        "React",
+        "UI/UX",
+        "Lead Generation"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 70,
+      "score_reason": "Reactを用いたリードファネル構築はWeb開発の一般的なニーズであり、ユーザー心理に基づいたUI/UXの考察は実務に役立つ示唆を提供します。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "LoRAWeaver: LoRA表現空間における方向性アダプタルーティング",
+      "url": "https://arxiv.org/abs/2611.17340",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-16T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "LoRAWeaverは、LoRA表現空間における方向性アダプタルーティングに関する研究論文です。\nこの技術は、大規模言語モデルの効率的なファインチューニングに寄与する可能性があります。\n具体的な手法や実験結果については、論文本文で詳細が述べられていると推測されます。",
+      "actionable_takeaway": "LoRAベースのモデルを扱うエンジニアは、LoRAWeaverの概念を理解し、モデルの効率的な適応やルーティングに応用できないか検討すべきです。",
+      "tags": [
+        "LoRA",
+        "Adapter",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "LoRAの効率化はAI開発において重要であり、新しいルーティング手法はモデルの性能向上やリソース削減に貢献する可能性があるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "YouTuber MKBHD、Cybertruckの生産中止について「Roadsterには良い兆候ではない」とコメント",
+      "url": "https://www.reddit.com/r/technology/comments/1xximlk/youtuber_mkbhd_on_the_cybertrucks_discontinuation/",
+      "source": "Reddit",
+      "published": "2026-11-16T06:51:31+00:00",
+      "summary": "人気YouTuberのMKBHDが、Tesla Cybertruckの生産中止（または一時停止）について、Roadsterの将来に悪影響を与える可能性を示唆しました。\nこれはTeslaの生産戦略や新製品開発における課題を浮き彫りにするものです。\n特にEV市場における競争激化と、新モデル投入の難しさを示唆しています。",
+      "actionable_takeaway": "EV業界の技術動向やTeslaの生産戦略を注視し、自動運転技術やバッテリー技術の進化が、関連するソフトウェアやインフラ開発に与える影響を評価すべきです。",
+      "tags": [
+        "Tesla",
+        "EV",
+        "自動車産業"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 65,
+      "score_reason": "Teslaの主要製品に関する動向は、EV市場や関連技術開発に大きな影響を与える可能性があり、ハードウェア・ガジェットのカテゴリとして重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -925,7 +1191,7 @@
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
-      "hatena_count": 76
+      "hatena_count": 172
     },
     {
       "title": "私にできるなら、誰にでもできる",
@@ -946,6 +1212,71 @@
       "analysis_status": "ok",
       "new_at": "2026-11-16T10:24:51.482440+09:00",
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "『なぜ、あなたの仕事は終わらないのか』で学んだ目的意識と時間の使い方",
+      "url": "https://qiita.com/kuma_3838/items/a5145ee73f86646c64ec?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-15T23:34:43+00:00",
+      "reading_min": 15,
+      "summary": "中島聡氏の著書『なぜ、あなたの仕事は終わらないのか スピードは最強の武器である』を読んだ筆者の読書記録です。\n本書は単なる時間術ではなく、「人生を楽しむ」という目的のために時間を制することの重要性を説いています。\nビル・ゲイツの「花の例」などを引用し、タスクの目的を深く理解することの重要性を強調しています。",
+      "actionable_takeaway": "タスクの目的を常に意識し、最終ゴール達成のために最適な手段を選択する思考法を身につけ、効率的な業務遂行を目指すべきです。",
+      "tags": [
+        "生産性",
+        "時間管理",
+        "ビジネススキル"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 60,
+      "score_reason": "技術的な内容ではないものの、エンジニアの生産性向上やキャリア形成に役立つ普遍的なビジネススキルに関する示唆が含まれているためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "不透明な直列深度の操作化",
+      "url": "https://arxiv.org/abs/2611.17495",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-16T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は「不透明な直列深度」という概念の操作化について論じています。\n具体的な技術分野は不明ですが、抽象的な計算理論やシステム設計に関連する可能性があります。\n概念の明確化や測定方法の提案が主な内容であると推測されます。",
+      "actionable_takeaway": "システム設計やセキュリティ分野のエンジニアは、不透明性や複雑性を評価する際の新たな視点として、本論文の概念を理解し、自身の設計や分析に応用できないか検討すべきです。",
+      "tags": [
+        "計算理論",
+        "システム設計",
+        "抽象化"
+      ],
+      "category": "その他",
+      "score": 60,
+      "score_reason": "タイトルから具体的な技術的応用が不明瞭だが、抽象的な概念の操作化は広範な分野で基礎的な知見となり得るため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "FDA、中国製肺がん治療薬の承認を却下",
+      "url": "https://www.reddit.com/r/technology/comments/1xxh1wn/fda_rejects_closely_watched_lung_cancer_drug_from/",
+      "source": "Reddit",
+      "published": "2026-11-16T05:18:34+00:00",
+      "summary": "米国食品医薬品局（FDA）が、中国製の注目されていた肺がん治療薬の承認を却下したというニュースです。\nこの却下は、医薬品開発における規制当局の厳格な審査基準と、国際的な医薬品市場への影響を示唆しています。\n特に中国製医薬品の品質や臨床データの信頼性に対する懸念が背景にある可能性があります。",
+      "actionable_takeaway": "医薬品開発に関わる技術者は、各国の規制要件や臨床試験の基準を深く理解し、データ品質と透明性の確保に努めるべきです。",
+      "tags": [
+        "FDA",
+        "医薬品",
+        "規制"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 55,
+      "score_reason": "直接的なIT技術ニュースではないものの、バイオテクノロジーやヘルスケアIT分野における規制動向として間接的な影響があるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-16T23:01:53.696235+09:00",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -993,22 +1324,321 @@
       "first_seen": "2026-11-16T10:24:51.482440+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+      "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
+      "source": "Hacker News",
+      "published": "2026-11-16T11:39:31+00:00",
+      "hn_score": 74,
+      "hn_comments": 28,
+      "reading_min": 48,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "How to make almost anything",
+      "url": "https://pub.cba.mit.edu/863.26/site/",
+      "source": "Hacker News",
+      "published": "2026-11-16T05:50:37+00:00",
+      "hn_score": 471,
+      "hn_comments": 86,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Coffeehouses and the Rise of Science [pdf]",
+      "url": "https://www.monirbounadi.com/Bounadi_JMP.pdf",
+      "source": "Hacker News",
+      "published": "2026-11-16T11:03:16+00:00",
+      "hn_score": 98,
+      "hn_comments": 57,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Universal XSS in uBlock Origin from website-driven element picker",
+      "url": "https://iter.ca/post/ubo-uxss/",
+      "source": "Hacker News",
+      "published": "2026-11-16T02:04:48+00:00",
+      "hn_score": 474,
+      "hn_comments": 137,
+      "reading_min": 4,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Researchers track whole body movement with just a smartwatch",
+      "url": "https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch",
+      "source": "Hacker News",
+      "published": "2026-11-13T17:29:49+00:00",
+      "hn_score": 103,
+      "hn_comments": 31,
+      "reading_min": 4,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "OOS – an open operating system for the Rigol Scopes",
+      "url": "https://www.eevblog.com/forum/testgear/oos-an-open-operating-system-for-the-rigol-scopes/",
+      "source": "Hacker News",
+      "published": "2026-11-13T21:36:59+00:00",
+      "hn_score": 43,
+      "hn_comments": 11,
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Qwen4-Max",
+      "url": "https://qwen.ai/blog?id=qwen4-max",
+      "source": "Hacker News",
+      "published": "2026-11-16T02:14:44+00:00",
+      "hn_score": 668,
+      "hn_comments": 311,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 2
+    },
+    {
+      "title": "物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門",
+      "url": "https://zenn.dev/turing_motors/articles/cea9e3c85611b2",
+      "source": "Zenn",
+      "published": "2026-11-16T08:00:05+00:00",
+      "reading_min": 26,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "mizchi/mutator を入れてみた",
+      "url": "https://zenn.dev/polyco/articles/e05cb28c569801",
+      "source": "Zenn",
+      "published": "2026-11-16T03:49:18+00:00",
+      "reading_min": 9,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "GitHub IssueにArtifactとしてHTMLとMarkdownを添付できるようになった",
+      "url": "https://zenn.dev/kesin11/articles/20261114_github_issue_artifact",
+      "source": "Zenn",
+      "published": "2026-11-15T23:00:07+00:00",
+      "reading_min": 7,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "AIエージェントは悪意ある指示を記憶するのか？— AgentCore MemoryとGuardrailsで検証",
+      "url": "https://zenn.dev/takuyousou/articles/agentcore-memory-poisoning-guardrails",
+      "source": "Zenn",
+      "published": "2026-11-15T15:40:12+00:00",
+      "reading_min": 11,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "はじめてのAPIログ設計 — 「ログはあるのに調べられない」を防ぐには？",
+      "url": "https://qiita.com/masashige0904/items/22f2836485ecc25ee527?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-16T00:37:01+00:00",
+      "reading_min": 8,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "パスワードより安全なはずが……パスキー対応103サイトを検証→全てに脆弱性　独大学の調査結果",
+      "url": "https://www.itmedia.co.jp/news/article/2611/16/2000003199/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-16T03:03:29+00:00",
+      "reading_min": 4,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 335
+    },
+    {
+      "title": "OpenAIもAnthropicも勧めるのになぜ流行らない？「AIへの指示は99%音声入力」のPdMに聞く活用術 - レバテックLAB",
+      "url": "https://levtech.jp/media/detail_972/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-16T01:34:47+00:00",
+      "reading_min": 7,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 412
+    },
+    {
+      "title": "「年齢で断らない」賃貸アパート　全戸に見守りWi-Fi　電波の変化で安否を検知",
+      "url": "https://japan.cnet.com/article/35254951/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-16T07:53:04+00:00",
+      "reading_min": 2,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 119
+    },
+    {
+      "title": "もういい加減\"技術勉強会\"やめませんか？ - Qiita",
+      "url": "https://qiita.com/kotowazaman/items/9ee7c475a475e7527b0e",
+      "source": "はてなブックマーク",
+      "published": "2026-11-16T11:51:33+00:00",
+      "reading_min": 8,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 55
+    },
+    {
+      "title": "グーグルのAI認定講座、1万人に無料提供　「Google AI Pro」3カ月利用権も",
+      "url": "https://www.watch.impress.co.jp/docs/news/2156720.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-16T05:22:52+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 113
+    },
+    {
+      "title": "Local Inference: Running Models on Your Own Machine",
+      "url": "https://dev.to/internals_decoded/local-inference-running-models-on-your-own-machine-1dnb",
+      "source": "Dev.to",
+      "published": "2026-11-16T14:00:11+00:00",
+      "reading_min": 12,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: All retries exhausted",
+      "analysis_status": "error",
+      "first_seen": "2026-11-16T23:01:53.696235+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-16T10:24:51.482440+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-16T23:01:53.696235+09:00",
     "summary_lines": [
-      "Microsoft 365の長期障害から学ぶクラウドSLAと技術的自立の重要性。",
-      "NvidiaのAI戦略と金融機関向けブロックチェーンが業界の注目を集める。",
-      "脆弱性情報の迅速な共有とAI開発におけるセキュア設計が急務。"
+      "Microsoftの月例パッチで多数の修正が提供され、セキュリティが焦点に。",
+      "Microsoft 365の障害原因と対応、SLA請求方法が詳細に解説。",
+      "Nvidiaの次なる戦略や金融向けブロックチェーンに注目が集まる。"
     ],
     "focus_tags": [
+      "セキュリティ",
+      "Microsoft",
       "クラウド障害",
       "AI",
-      "ブロックチェーン",
-      "セキュリティ",
-      "SLA"
+      "ブロックチェーン"
     ]
   }
 }
