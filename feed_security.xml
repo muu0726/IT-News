@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Nov 2026 12:59:28 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 01:25:59 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
@@ -14,18 +14,39 @@
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Lovableアプリがパスポート情報と20万件以上のプライベートメッセージを公開</title>
-      <link>https://www.crissyfield.de/research/lovable-en/</link>
-      <guid isPermaLink="false">https://www.crissyfield.de/research/lovable-en/</guid>
-      <description>[Score: 95] AIを活用してWebアプリケーションを簡単に構築できるLovableプラットフォームで、セキュリティ上の重大な脆弱性が発見されました。 / 159,041件のLovableプロジェクトを調査した結果、ログインなしで個人情報や機密情報にアクセスできるケースが多数確認されました。 / Lovableは「セキュリティもプラットフォームが面倒を見る」という印象を与えがちですが、利用規約では顧客がデータ処理の責任を負うとされており、このギャップが問題を引き起こしています。 [実務示唆: AI生成ツールでアプリケーションを開発する際は、セキュリティ対策が自動で行われると過信せず、機密データの取り扱いに関する責任範囲を明確にし、厳格なセキュリティレビューを必ず実施してください。] [GitHub: AntonOsika/gpt-engineer] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 17:43:10 +0000</pubDate>
+      <title>日本語の脆弱性DBは4.6日かかる。待てないので、46秒でセキュリティ情報が載るようにした</title>
+      <link>https://qiita.com/songchong/items/fa50cc82e49b24925fe3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/fa50cc82e49b24925fe3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 日本語の脆弱性データベース（JVN iPedia）は、CVE公開から平均4.6日後に情報が掲載され、その間に攻撃が悪用されるリスクがあります。 / 攻撃者はAIを使い、企業規模を問わず短期間で脆弱性を悪用するため、迅速な情報収集と対応が不可欠です。 / 本記事では、この課題を解決するため、セキュリティ情報を46秒で提供する「IT連携マップ」の取り組みを紹介しています。 [実務示唆: OSSや外部ライブラリの脆弱性情報は日本語DBを待たず、CISAなどの一次情報を迅速に確認し、SBOMを活用して自社システムへの影響を早期に評価する体制を構築すべきです。] (Source: Qiita)</description>
+      <pubDate>Sun, 15 Nov 2026 08:20:40 +0000</pubDate>
     </item>
     <item>
-      <title>AWSでゼロトラスト構成を作る手順を5つのパートに分けて整理してみた</title>
-      <link>https://qiita.com/yama3133/items/11a360fc97ed3ec09742?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yama3133/items/11a360fc97ed3ec09742?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AWSでゼロトラスト構成を構築する具体的な手順を5つのパートに分けて解説しています。 / 各パートで必要なAWSサービスとリソース、AWS CLIコマンドが整理されており、実践的な内容です。 / 「誰が」「何を」「どこから」「記録」というゼロトラストの原則に対応し、独立したパートとして利用可能です。 [実務示唆: AWS環境でゼロトラスト導入を検討している場合、記事の5つのパートを参考に、IAM Roles AnywhereやAWS Verified Accessなどのサービスを検証し、自社環境への適用可能性を評価してください。] (Source: Qiita)</description>
-      <pubDate>Fri, 13 Nov 2026 16:43:26 +0000</pubDate>
+      <title>マイクロソフト障害、インド政府機関ほぼ影響なし…印メディア「技術的自立の正しさ証明」</title>
+      <link>https://www.yomiuri.co.jp/world/20261115-GYT1T00190/</link>
+      <guid isPermaLink="false">https://www.yomiuri.co.jp/world/20261115-GYT1T00190/</guid>
+      <description>[Score: 88] 世界的なマイクロソフトサービスの大規模障害にもかかわらず、インドの政府機関はほぼ影響を受けなかったと報じられています。 / インド政府がサイバー安全保障の観点から独自の業務システムへの移行を進めていたことが功を奏しました。 / 印メディアはこれを「技術的自立の正しさの証明」と自賛し、世界がインドに注目していると伝えています。 [実務示唆: 企業や政府機関は、クラウドサービスへの過度な依存リスクを再評価し、重要なシステムについては技術的自立やマルチクラウド戦略の検討を強化すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 14:50:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>古いBitlyリンクが乗っ取られている</title>
+      <link>https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</link>
+      <guid isPermaLink="false">https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</guid>
+      <description>[Score: 85] Bitlyの古い非アクティブなリンクが悪意のある第三者によって悪用され、無関係なコンテンツにリダイレクトされる問題が発生しています。 / ビル・ゲイツ、ジャスティン・トルドー、FBIなどの著名人や機関の過去の投稿に含まれるリンクも影響を受けています。 / Bitlyはこの問題を認識し、関連アカウントを停止し、影響を受けるリンクを無効化する措置を講じています。 [実務示唆: 過去にBitlyリンクを使用した場合は、そのリンクが悪用されていないか確認し、可能であれば短縮URLの使用を避けるか、信頼できる代替サービスを検討してください。] (Source: Hacker News)</description>
+      <pubDate>Sun, 15 Nov 2026 22:11:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
+      <link>https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AI開発が加速する現代において、セキュリティは後から追加するものではなく、設計段階で組み込むべきであると提唱されています。 / 従来の認証やファイアウォールといった防御策だけでなく、業務であり得ない操作を設計で許さないことが重要です。 / OpenAIやAnthropicの事例から、モデルの賢さだけでは安全が確保されず、設計による境界設定が被害の大きさを左右することが示されています。 [実務示唆: AIを活用した開発では、セキュリティを設計段階から考慮し、業務上あり得ない操作を許さないようなシステム設計を徹底することで、将来的な脆弱性リスクを低減すべきです。] (Source: Qiita)</description>
+      <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>FTDで実装するTLS Decryption</title>
+      <link>https://zenn.dev/5x4x7/articles/92a962f3cd6cb6</link>
+      <guid isPermaLink="false">https://zenn.dev/5x4x7/articles/92a962f3cd6cb6</guid>
+      <description>[Score: 80] FTD（Firepower Threat Defense）を用いたTLS Decryptionの実装方法について解説しています。 / 現代の暗号化されたトラフィックからマルウェアを検出するために、Deep Inspectionでペイロードを検査する重要性が強調されています。 / FTDがクライアントとサーバー間のTLS通信をプロキシし、CA証明書を用いて再署名することで復号処理を行う仕組みが説明されています。 [実務示唆: FTDを導入している企業は、TLS Decryption機能を活用して暗号化された通信内の脅威を可視化し、セキュリティ対策を強化することを検討する。] (Source: Zenn)</description>
+      <pubDate>Sun, 15 Nov 2026 13:49:46 +0000</pubDate>
     </item>
   </channel>
 </rss>

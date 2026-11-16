@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Nov 2026 12:59:28 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 01:25:59 +0000</lastBuildDate>
     <item>
       <title>フロントエンドのフレームワークを、安全に段階的に入れ替える</title>
       <link>https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</link>
@@ -21,6 +21,13 @@
       <pubDate>Thu, 12 Nov 2026 15:09:51 +0000</pubDate>
     </item>
     <item>
+      <title>Microsoft 365障害はなぜ長引いたのか？ 原因・タイムラインと「SLAクレジット」請求方法まとめ</title>
+      <link>https://www.itmedia.co.jp/pcuser/articles/2611/16/news045.html</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/pcuser/articles/2611/16/news045.html</guid>
+      <description>[Score: 92] Microsoft 365の大規模障害が長引いた原因とタイムライン、そしてSLAクレジットの請求方法について解説しています。 / 日本時間11月13日朝に発生し、14日午後まで影響が続いたこの障害は、多くの企業に多大な影響を与えました。 / Microsoftは事後報告（PIR）を公開予定であり、ユーザーはSLAに基づきサービスクレジットを請求できる可能性があります。 [実務示唆: Microsoft 365ユーザーは、今回の障害のPIRを注視し、SLAに基づいたサービスクレジット請求の可能性を検討するとともに、自社のBCPを見直すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 21:12:32 +0000</pubDate>
+    </item>
+    <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
       <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
       <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
@@ -28,25 +35,11 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>独プールで15人体調不良 マイクロソフト障害影響 | NEWSjp</title>
-      <link>https://news.jp/i/1494496378441958289</link>
-      <guid isPermaLink="false">https://news.jp/i/1494496378441958289</guid>
-      <description>[Score: 90] ドイツのテーマパーク内プールで、マイクロソフトの主力業務ソフトの大規模障害が原因で15人が体調不良を訴えました。 / 障害により安全管理システムの警報メールが担当者に届かず、塩素注入装置の不具合に気付かず水中塩素濃度が著しく上昇したためです。 / Outlookのメールシステムが警報通知に使われていたことが明らかになり、ITインフラの障害が物理的な安全に直結する事例となりました。 [実務示唆: 重要な安全管理システムや警報通知には、単一のクラウドサービスに依存せず、複数の通信経路や冗長化されたシステムを導入し、障害発生時の代替手段を確保することが不可欠です。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 02:57:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>脱WordPress：10年超の個人ブログをAstro + Cloudflare Workersへ移行しPageSpeed 100点を実現</title>
-      <link>https://zenn.dev/unsoluble_sugar/articles/8cdf1efc01e6cb</link>
-      <guid isPermaLink="false">https://zenn.dev/unsoluble_sugar/articles/8cdf1efc01e6cb</guid>
-      <description>[Score: 90] 10年以上運用したWordPressブログを、PHPの脆弱性をきっかけにAstroとCloudflare Workersを用いた静的サイトへ移行しました。 / 移行作業の大半をClaudeに任せ、1日で完了させ、PageSpeed 100点を達成しました。 / コスト削減とセキュリティ向上、パフォーマンス改善を実現した技術的な移行プロセスが詳細に解説されています。 [実務示唆: WordPressのセキュリティリスクや運用コストに課題がある場合、AstroとCloudflare Workersへの静的サイト移行を検討し、AIを活用した効率的な移行プロセスを試すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 04:23:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
-      <link>https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AWS Emulatorは、AWSアカウントなしでローカルやCI上でAWS SDK/CLIの呼び出しをエミュレートするツールです。 / 本記事では、特にCDK/TerraformなどのIaCツールがAWS Emulator上でどこまで動作するかを検証しています。 / 公式ドキュメントではIaCツールへの対応はサービスによって異なるとされており、その実態をWindows 11 + Docker環境で試した結果がまとめられています。 [実務示唆: AWS Emulatorの導入を検討する際は、利用するAWSサービスがIaCツールでどこまでサポートされているか、忠実度テストの結果を確認し、事前に検証すること。] (Source: Qiita)</description>
-      <pubDate>Wed, 11 Nov 2026 23:39:20 +0000</pubDate>
+      <title>こんなに変わった！ AWSネットワークの常識</title>
+      <link>https://speakerdeck.com/shotashiratori/nw-jaws-10th-keynote</link>
+      <guid isPermaLink="false">https://speakerdeck.com/shotashiratori/nw-jaws-10th-keynote</guid>
+      <description>[Score: 90] AWSネットワークの常識が大きく変化していることを解説する資料です。 / 2016年のベストプラクティスが2026年にはアンチパターンとなる可能性を指摘しています。 / 最新のAWSネットワークサービスや機能の進化、そしてそれらがもたらす設計思想の変化について深く掘り下げています。 [実務示唆: AWSネットワーク設計者は、過去のベストプラクティスが現在のアンチパターンになっていないか定期的に見直し、最新のサービスや機能の活用を検討すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 12:30:54 +0000</pubDate>
     </item>
     <item>
       <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
@@ -56,25 +49,18 @@
       <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
     </item>
     <item>
-      <title>PyPIの再設計されたプロジェクトページで、より明確なセキュリティシグナルが利用可能に</title>
-      <link>https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/</link>
-      <guid isPermaLink="false">https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/</guid>
-      <description>[Score: 85] PyPIは、ユーザーインターフェースのセキュリティ関連情報を改善するアップデートを完了しました。 / この変更は、Pythonコミュニティからのフィードバックに基づき、パッケージのセキュリティ評価を支援することを目的としています。 / 特に、デジタル証明（attestations）の表示が強化され、リリースファイルの出所を検証しやすくなりました。 [実務示唆: PyPIでパッケージをインストールする際は、新しいセキュリティタブを確認し、デジタル証明の有無や出所情報を活用して、サプライチェーン攻撃のリスクを低減しましょう。] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 15:40:52 +0000</pubDate>
+      <title>Lightdashで作れるグラフを試してみた【dbt v2】</title>
+      <link>https://zenn.dev/ryatora/articles/lightdash-chart-catalog</link>
+      <guid isPermaLink="false">https://zenn.dev/ryatora/articles/lightdash-chart-catalog</guid>
+      <description>[Score: 85] オープンソースBIツールLightdashとdbt v2を連携させ、NBAデータを用いて様々なグラフ作成を試した記事です。 / LightdashのグラフはYAMLで定義可能で、dbtのプロジェクトと連携してメトリック定義からグラフを生成できます。 / MotherDuckとDuckDBを利用したデータ構成や、Lightdashのデプロイ方法についても解説されています。 [実務示唆: dbtユーザーはLightdashを導入し、YAML定義によるデータ可視化とBIダッシュボード構築を試すことで、データ分析ワークフローを効率化できる。] [GitHub: ryatora/lightdash-chart-catalog] (Source: Zenn)</description>
+      <pubDate>Sun, 15 Nov 2026 15:07:26 +0000</pubDate>
     </item>
     <item>
-      <title>Timoni vs Kapitan: CUE schemas and bundles pinned by digest</title>
-      <link>https://dev.to/kadet-hub/timoni-vs-kapitan-cue-schemas-and-bundles-pinned-by-digest-3aeg</link>
-      <guid isPermaLink="false">https://dev.to/kadet-hub/timoni-vs-kapitan-cue-schemas-and-bundles-pinned-by-digest-3aeg</guid>
-      <description>[Score: 80] Kubernetesオブジェクトの構築ツールであるTimoniとKapitanを比較し、CUEスキーマとダイジェストで固定されたバンドルの利用について解説しています。 / 両ツールがKubernetesマニフェストを生成する際の挙動の違いや、スキーマ検証、モジュール管理の側面から比較検証を行っています。 / 特に、TimoniのCUEモジュールによる厳格なスキーマ検証と、OCIアーティファクトとしてのモジュール公開に焦点を当てています。 [実務示唆: Kubernetesマニフェストの管理において、CUEベースのスキーマ検証やダイジェスト固定による信頼性向上を検討する際、TimoniとKapitanの特性を比較し、プロジェクトに最適なツールを選択すべきです。] [GitHub: kadet-hub/kubernetes-generator] (Source: Dev.to)</description>
-      <pubDate>Sun, 15 Nov 2026 12:55:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>Node.jsでAI生成画像を保存する — 一時的な署名付きダウンロードリンク</title>
-      <link>https://dev.to/brockfletcher1438/store-ai-generated-images-in-nodejs-temporary-signed-download-links-3d9m</link>
-      <guid isPermaLink="false">https://dev.to/brockfletcher1438/store-ai-generated-images-in-nodejs-temporary-signed-download-links-3d9m</guid>
-      <description>[Score: 78] Node.jsアプリケーションでAI生成画像をプライベートオブジェクトとして保存し、一時的な署名付きダウンロードURLを発行する方法が解説されています。 / 各テナントの画像をプライベートに保ち、アプリケーションでアクセスを認証した上で短命なURLを提供することが推奨されます。 / ストレージコストは、保存バイト数、読み書き操作、エクスポート作業、ダウンロードトラフィックによって決まるため、ワークロードに応じた設計が重要です。 [実務示唆: AI生成画像を扱うNode.js開発者は、セキュリティとコスト効率を考慮し、プライベートなオブジェクトストレージと一時的な署名付きURLを活用してアクセス管理を実装すべきです。] (Source: Dev.to)</description>
-      <pubDate>Sun, 15 Nov 2026 01:13:30 +0000</pubDate>
+      <title>Protomaps: マップタイルのセルフホスティングが安価で容易に</title>
+      <link>https://bruceroettgers.eu/blog/protomaps/</link>
+      <guid isPermaLink="false">https://bruceroettgers.eu/blog/protomaps/</guid>
+      <description>[Score: 80] Protomapsエコシステムの一部であるPMTilesは、HTTP Rangeリクエストを介して機能するタイル形式で、単一ファイルとしてストレージバケットにデプロイ可能です。 / これにより、Mapboxなどの商用APIが高価になる非商用プロジェクトでも、安価かつ容易にマップタイルをセルフホストできるようになります。 / PMTilesはCLIツールで特定の範囲やズームレベルのデータを抽出でき、Bunny.netのようなCDNと組み合わせることで効率的に利用できます。 [実務示唆: マップタイルを自社でホストしたい開発者は、PMTilesを検討し、特にコスト削減やデータプライバシーが重要なプロジェクトでその有効性を検証してください。] [GitHub: protomaps/PMTiles] (Source: Hacker News)</description>
+      <pubDate>Sun, 15 Nov 2026 19:26:22 +0000</pubDate>
     </item>
     <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
@@ -84,32 +70,25 @@
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
     </item>
     <item>
-      <title>Node.jsでユーザーファイル用の無料枠があるS3代替ストレージプロバイダー</title>
-      <link>https://dev.to/langstonhughes2689/s3-alternative-storage-providers-with-a-free-tier-for-user-files-in-nodejs-2bo8</link>
-      <guid isPermaLink="false">https://dev.to/langstonhughes2689/s3-alternative-storage-providers-with-a-free-tier-for-user-files-in-nodejs-2bo8</guid>
-      <description>[Score: 75] Node.jsでユーザーファイルを保存する際、無料枠を重視するならBackblaze B2、予測可能なストレージ利用ならWasabiが推奨されます。 / Cloudflare R2やAmazon S3は、プラットフォーム統合が重要な場合に選択肢となります。 / ストレージプロバイダーの選択は、スループット、エグレス、保持期間、リストア動作など、単なる料金だけでなく総合的な要素で判断すべきです。 [実務示唆: Node.jsでユーザーファイルストレージを検討する際は、無料枠の有無、料金体系、パフォーマンス、既存プラットフォームとの統合性を総合的に評価し、ワークロードに最適なS3代替プロバイダーを選択すべきです。] (Source: Dev.to)</description>
-      <pubDate>Sun, 15 Nov 2026 01:12:57 +0000</pubDate>
+      <title>TerserとUglifyJSの難読化はビルドステップであり、セキュリティ制御ではない</title>
+      <link>https://dev.to/veilvm/terser-and-uglifyjs-mangling-is-a-build-step-not-a-security-control-22b0</link>
+      <guid isPermaLink="false">https://dev.to/veilvm/terser-and-uglifyjs-mangling-is-a-build-step-not-a-security-control-22b0</guid>
+      <description>[Score: 75] TerserやUglifyJSによるJavaScriptの難読化（mangling）は、ファイルサイズ削減とキャッシュ効率向上のためのビルドステップであり、セキュリティ制御ではないと指摘しています。 / 難読化されたコードも、整形ツールを使えば容易に元の構造を復元でき、アルゴリズムや定数、制御フローはそのまま残ります。 / プロパティ名や文字列リテラルなども通常は残るため、より強力な保護が必要な場合は別の手段を講じるべきだと述べています。 [実務示唆: フロントエンド開発者は、TerserやUglifyJSによる難読化をセキュリティ対策として過信せず、機密性の高いロジックやデータを保護するためには、サーバーサイドでの処理や適切な暗号化など、より強固なセキュリティ対策を講じるべきです。] (Source: Dev.to)</description>
+      <pubDate>Mon, 16 Nov 2026 01:14:15 +0000</pubDate>
     </item>
     <item>
-      <title>GitHub Actions environment secrets empty in a job</title>
-      <link>https://dev.to/kalemi/github-actions-environment-secrets-empty-in-a-job-1d1l</link>
-      <guid isPermaLink="false">https://dev.to/kalemi/github-actions-environment-secrets-empty-in-a-job-1d1l</guid>
-      <description>[Score: 75] GitHub Actionsで環境シークレットがジョブ内で空になる一般的な原因について解説しています。 / その原因は、ジョブがシークレットが設定されている環境を参照していないことにあると指摘しています。 / リポジトリシークレットとは異なり、環境シークレットはジョブごとに環境指定が必要であり、指定がないと読み込まれないことを強調しています。 [実務示唆: GitHub Actionsで環境シークレットが期待通りに機能しない場合、ジョブ定義にenvironment:キーが正しく設定され、シークレットが保存されている環境名と一致しているか確認すべきです。] (Source: Dev.to)</description>
-      <pubDate>Sun, 15 Nov 2026 12:55:28 +0000</pubDate>
+      <title>シード生成地形を持つWebGLフライトシミュレーター</title>
+      <link>https://baron.by.dai.studio/</link>
+      <guid isPermaLink="false">https://baron.by.dai.studio/</guid>
+      <description>[Score: 70] WebGL 2を利用したフライトシミュレーターで、シード値に基づいて地形がリアルタイムに生成されます。 / ブラウザ上で動作し、離陸から着陸までを体験できるインタラクティブなデモです。 / 最新のChrome, Edge, Firefox, Safariでの動作が推奨されており、ハードウェアアクセラレーションが必要です。 [実務示唆: WebGL 2の最新機能を活用した3Dグラフィックス開発の参考にし、ブラウザベースの高性能アプリケーションの可能性を探る。] (Source: Hacker News)</description>
+      <pubDate>Sun, 15 Nov 2026 20:20:05 +0000</pubDate>
     </item>
     <item>
-      <title>ダフィー氏がFAAの老朽化したシステムが再び障害を起こす可能性を警告する中、数千便が欠航</title>
-      <link>https://www.reddit.com/r/technology/comments/1xw6t73/thousands_more_flights_canceled_as_duffy_warns/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xw6t73/thousands_more_flights_canceled_as_duffy_warns/</guid>
-      <description>[Score: 70] ダフィー氏が、FAAの老朽化したシステムが再び障害を起こす可能性について警告を発し、その結果として数千便が欠航しました。 / この状況は、航空管制システムのインフラが抱える深刻な問題を浮き彫りにしています。 / システムの老朽化は、安全性と信頼性に直接的な影響を与え、経済活動にも大きな打撃を与えます。 [実務示唆: 老朽化したシステムが運用されている場合、潜在的な障害リスクを常に認識し、予防保全、冗長性の確保、そして最新技術への段階的な移行計画を策定・実行することが不可欠です。] (Source: Reddit)</description>
-      <pubDate>Sat, 14 Nov 2026 16:38:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>96の地域ビジネスサイトに対する単一実行ラボ監査: 数字が実際に示すもの</title>
-      <link>https://dev.to/sirajahmadzai/single-run-lab-audits-of-96-local-business-sites-what-the-numbers-actually-say-4h34</link>
-      <guid isPermaLink="false">https://dev.to/sirajahmadzai/single-run-lab-audits-of-96-local-business-sites-what-the-numbers-actually-say-4h34</guid>
-      <description>[Score: 70] 2026年3月と11月に、96のオタワ地域のサービス業ウェブサイトに対しPageSpeed Insights API監査が実施されました。 / モバイルのPageSpeedスコアの中央値は65.5で、ほとんどのサイトが「改善が必要」な50-89の範囲にありました。 / デスクトップの中央値は86とモバイルより高く、ラボテストの条件下でのパフォーマンス差が顕著です。 [実務示唆: ウェブサイトのパフォーマンス改善はモバイルを優先し、PageSpeed Insightsの「改善が必要」な項目に焦点を当てて、ユーザー体験向上に努めるべきです。] (Source: Dev.to)</description>
-      <pubDate>Sun, 15 Nov 2026 01:14:15 +0000</pubDate>
+      <title>Edtechのコストアトリビューション: メトリクスAPIポーリングクエリによるGoの障害アラート</title>
+      <link>https://dev.to/knutberg8412/edtech-cost-attribution-go-failure-alerting-via-metrics-api-poll-queries-23e0</link>
+      <guid isPermaLink="false">https://dev.to/knutberg8412/edtech-cost-attribution-go-failure-alerting-via-metrics-api-poll-queries-23e0</guid>
+      <description>[Score: 70] Edtech分野におけるAIエージェントのコストアトリビューションと障害アラートについて解説しています。 / メトリクスAPIポーリングは、コスト帰属が重要で、スケジューラ、重複排除、通知経路を自社で管理する際に有効です。 / 組み込みアラートは、ページ自体が製品要件である場合に適しており、障害検出には60秒のポーリング間隔と連続した失敗ループの閾値が推奨されます。 [実務示唆: AIエージェントのコスト管理と障害検知を強化するため、メトリクスAPIポーリングを導入し、コースレベルのコストラベルを付与することで、予算レビューとインシデントレビューの精度を向上させるべきです。] (Source: Dev.to)</description>
+      <pubDate>Mon, 16 Nov 2026 01:16:52 +0000</pubDate>
     </item>
   </channel>
 </rss>

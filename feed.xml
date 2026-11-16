@@ -5,28 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Nov 2026 12:59:28 +0000</lastBuildDate>
-    <item>
-      <title>AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始</title>
-      <link>https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html</guid>
-      <description>[Score: 95] AWSが、AIエージェント向けに強力な隔離環境とほぼネイティブなEC2性能を提供する軽量仮想マシン「AWS Nitro Sandboxes」の提供を開始しました。 / AIが生成する信頼できないコードを実行する機会が増える中、従来のコンテナ型仮想化では不十分なセキュリティ分離が課題でした。 / AWS Nitro Sandboxesは、AWS Nitro Systemを基盤とし、ハードウェアレベルでの強力なセキュリティと分離を実現しつつ、コンテナのような軽量性を提供します。 [実務示唆: AIエージェントや信頼できないコードを実行するシステムを構築する際は、AWS Nitro Sandboxesを活用し、セキュリティとパフォーマンスを両立させた安全な実行環境を検討しましょう。] (Source: Publickey)</description>
-      <pubDate>Wed, 11 Nov 2026 15:04:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>Gitのセキュリティ脆弱性が発表されました</title>
-      <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
-      <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
-      <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Lovableアプリがパスポート情報と20万件以上のプライベートメッセージを公開</title>
-      <link>https://www.crissyfield.de/research/lovable-en/</link>
-      <guid isPermaLink="false">https://www.crissyfield.de/research/lovable-en/</guid>
-      <description>[Score: 95] AIを活用してWebアプリケーションを簡単に構築できるLovableプラットフォームで、セキュリティ上の重大な脆弱性が発見されました。 / 159,041件のLovableプロジェクトを調査した結果、ログインなしで個人情報や機密情報にアクセスできるケースが多数確認されました。 / Lovableは「セキュリティもプラットフォームが面倒を見る」という印象を与えがちですが、利用規約では顧客がデータ処理の責任を負うとされており、このギャップが問題を引き起こしています。 [実務示唆: AI生成ツールでアプリケーションを開発する際は、セキュリティ対策が自動で行われると過信せず、機密データの取り扱いに関する責任範囲を明確にし、厳格なセキュリティレビューを必ず実施してください。] [GitHub: AntonOsika/gpt-engineer] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 17:43:10 +0000</pubDate>
-    </item>
+    <lastBuildDate>Mon, 16 Nov 2026 01:25:59 +0000</lastBuildDate>
     <item>
       <title>フロントエンドのフレームワークを、安全に段階的に入れ替える</title>
       <link>https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</link>
@@ -42,6 +21,13 @@
       <pubDate>Sun, 15 Nov 2026 09:51:50 +0000</pubDate>
     </item>
     <item>
+      <title>Gitのセキュリティ脆弱性が発表されました</title>
+      <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
+      <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
       <link>https://www.publickey1.jp/blog/26/awsawsaws_1.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsawsaws_1.html</guid>
@@ -49,11 +35,11 @@
       <pubDate>Thu, 12 Nov 2026 15:09:51 +0000</pubDate>
     </item>
     <item>
-      <title>5年後のエンジニアは、何に責任を持つのだろうか</title>
-      <link>https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now</link>
-      <guid isPermaLink="false">https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now</guid>
-      <description>[Score: 90] AIエージェントによるコード生成が日常化する中で、5年後のエンジニアはコードを書く頻度が減り、より多くのソフトウェアに責任を持つようになると予測されています。 / AIへの委任が機能やプロダクト単位に広がることで、エンジニアはサービス全体の設計や、予期せぬ問題発生時の説明・対応に責任を負うことになります。 / ソフトウェアをブラックボックスとして扱わず、その仕組みを理解し、責任を果たせる開発プロセスやAI実行環境を設計する能力が重要になると提言されています。 [実務示唆: AIによる開発が加速する中で、エンジニアはコード実装だけでなく、サービス全体の設計、品質保証、リスク管理、ユーザーへの説明責任といったより広範な領域に責任を持つ準備をすべきです。] (Source: Zenn)</description>
-      <pubDate>Fri, 13 Nov 2026 05:03:44 +0000</pubDate>
+      <title>Microsoft 365障害はなぜ長引いたのか？ 原因・タイムラインと「SLAクレジット」請求方法まとめ</title>
+      <link>https://www.itmedia.co.jp/pcuser/articles/2611/16/news045.html</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/pcuser/articles/2611/16/news045.html</guid>
+      <description>[Score: 92] Microsoft 365の大規模障害が長引いた原因とタイムライン、そしてSLAクレジットの請求方法について解説しています。 / 日本時間11月13日朝に発生し、14日午後まで影響が続いたこの障害は、多くの企業に多大な影響を与えました。 / Microsoftは事後報告（PIR）を公開予定であり、ユーザーはSLAに基づきサービスクレジットを請求できる可能性があります。 [実務示唆: Microsoft 365ユーザーは、今回の障害のPIRを注視し、SLAに基づいたサービスクレジット請求の可能性を検討するとともに、自社のBCPを見直すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 21:12:32 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -70,46 +56,32 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>Nvidiaは循環的な資金調達取引を通じてGPU価格を意図的に高く維持していた</title>
-      <link>https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html</link>
-      <guid isPermaLink="false">https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html</guid>
-      <description>[Score: 90] NvidiaがAIブームに乗じてGPU価格を意図的に高く維持するため、顧客企業への循環的な資金調達を行っていた疑惑が報じられました。 / 元CEOのジェンセン・フアン氏のビジネス戦略が、TSMCウェハーの過剰供給を吸収し、GPU価格を高止まりさせることを目的としていたとされています。 / この戦略は、エンロンの不正会計手法と比較されるなど、倫理的な問題が指摘されており、Nvidiaの財務健全性や市場操作の疑念が浮上しています。 [実務示唆: GPUの調達コストはAI開発の重要な要素であるため、Nvidiaの市場戦略や価格動向を注視し、代替となるハードウェアやクラウドサービスの選択肢も検討することで、コスト最適化を図るべきです。] (Source: Hacker News)</description>
-      <pubDate>Sat, 14 Nov 2026 22:26:30 +0000</pubDate>
+      <title>Nvidiaの次なる一手は？</title>
+      <link>https://steveblank.com/2026/11/15/whats-next-for-nvidia/</link>
+      <guid isPermaLink="false">https://steveblank.com/2026/11/15/whats-next-for-nvidia/</guid>
+      <description>[Score: 90] Nvidiaの共同創業者であるジェンスン・フアンCEOが33年ぶりに辞任したと報じられ、その後のNvidiaの行方が議論されています。 / フアン氏はCUDA、ディープラーニング、Mellanox買収を通じてNvidiaを3度再発明し、グラフィックボードベンダーからシステム企業へと変革させました。 / ビジョナリーなCEOの不在は企業のイノベーションを停滞させるリスクがあり、Nvidiaの取締役会は今後の戦略を慎重に検討する必要があります。 [実務示唆: Nvidiaの今後の動向はAI・機械学習業界全体に影響を与えるため、同社のリーダーシップ交代とそれに伴う戦略変更には注視が必要です。] (Source: Hacker News)</description>
+      <pubDate>Sun, 15 Nov 2026 23:55:55 +0000</pubDate>
     </item>
     <item>
-      <title>Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに</title>
-      <link>https://zenn.dev/caphtech/articles/qwen38-zh-ban</link>
-      <guid isPermaLink="false">https://zenn.dev/caphtech/articles/qwen38-zh-ban</guid>
-      <description>[Score: 90] Qwen3.8-Flash-Nextモデルが日本語の応答に中国語を混在させる問題に対し、出力層の特定の重みのみを書き換えることで解決しました。 / 中国語トークンに対応する25,451行の重みを、未使用の行の写しに置き換える手法が用いられました。 / この変更により、他の重みを一切変更せずに中国語の混入率を0%にすることに成功し、Kestromというツールが活用されました。 [実務示唆: 大規模言語モデルの特定言語の混入問題に対し、出力層の重みの一部を書き換えることで効果的に対応できるため、同様の問題に直面した際はKestromのようなツールでのアプローチを検討しましょう。] [GitHub: CAPHTECH/kestrom] (Source: Zenn)</description>
-      <pubDate>Fri, 13 Nov 2026 13:08:40 +0000</pubDate>
+      <title>Canton Networkとは何か――金融機関が「見せる相手を選べる」ブロックチェーンに集まる理由</title>
+      <link>https://zenn.dev/komlock_lab/articles/canton-network-evm-comparison-2026</link>
+      <guid isPermaLink="false">https://zenn.dev/komlock_lab/articles/canton-network-evm-comparison-2026</guid>
+      <description>[Score: 90] Canton Networkは、金融機関間の取引のために設計された、プライバシー保護に特化したブロックチェーンネットワークです。 / 取引内容を関係者のみに開示できる点が特徴で、Ethereumのようなパブリックチェーンとは異なり、金融機関の機密性要件を満たします。 / DTCCやJ.P. Morganといった大手金融機関が、証券のトークン化やデジタル預金の発行にCanton Networkを活用する動きが進んでいます。 [実務示唆: 金融業界のブロックチェーン技術者は、Canton Networkのプライバシーモデルと金融機関での採用事例を調査し、自社のデジタル資産戦略への応用可能性を検討する。] (Source: Zenn)</description>
+      <pubDate>Sun, 15 Nov 2026 09:06:22 +0000</pubDate>
     </item>
     <item>
-      <title>常時稼働エージェントの構築</title>
-      <link>https://claude.com/resources/articles/building-always-on-agents</link>
-      <guid isPermaLink="false">https://claude.com/resources/articles/building-always-on-agents</guid>
-      <description>[Score: 90] 常時稼働エージェントは、セッション間でコンテキストを管理し、監視なしでアクションを実行するステートフルでプロアクティブなAIエージェントです。 / その再興は、モデルの判断能力向上とコスト削減、特に長時間のタスクにおける大幅なコスト効率改善によるものです。 / エージェントは実際には「常時稼働」ではなく、イベントに応じて定期的に起動し、作業を終えるとスリープ状態に戻るアーキテクチャで動作します。 [実務示唆: 最新のAIモデルのコスト効率と判断能力向上を活用し、自律型エージェントのアーキテクチャを理解して、既存製品への組み込みや新規開発を検討すべき。] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 14 Nov 2026 00:52:42 +0000</pubDate>
+      <title>日本語の脆弱性DBは4.6日かかる。待てないので、46秒でセキュリティ情報が載るようにした</title>
+      <link>https://qiita.com/songchong/items/fa50cc82e49b24925fe3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/fa50cc82e49b24925fe3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] 日本語の脆弱性データベース（JVN iPedia）は、CVE公開から平均4.6日後に情報が掲載され、その間に攻撃が悪用されるリスクがあります。 / 攻撃者はAIを使い、企業規模を問わず短期間で脆弱性を悪用するため、迅速な情報収集と対応が不可欠です。 / 本記事では、この課題を解決するため、セキュリティ情報を46秒で提供する「IT連携マップ」の取り組みを紹介しています。 [実務示唆: OSSや外部ライブラリの脆弱性情報は日本語DBを待たず、CISAなどの一次情報を迅速に確認し、SBOMを活用して自社システムへの影響を早期に評価する体制を構築すべきです。] (Source: Qiita)</description>
+      <pubDate>Sun, 15 Nov 2026 08:20:40 +0000</pubDate>
     </item>
     <item>
-      <title>Rustにおける厳密な単調増加タイムスタンプとギャップレスシーケンス</title>
-      <link>https://tsoracle.rs/</link>
-      <guid isPermaLink="false">https://tsoracle.rs/</guid>
-      <description>[Score: 90] Rustで分散システム向けの厳密な単調増加タイムスタンプとギャップレスシーケンスを提供する`tsoracle`が紹介されています。 / これは、分散システム全体でイベントを順序付ける厳密に増加する整数IDを発行するサービスです。 / MVCCデータベース、変更データマージ、監査ログなどで必要とされる、クラッシュやフェイルオーバーに強い連続したIDを生成します。 [実務示唆: 分散システムで厳密なイベント順序付けやギャップレスなID生成が必要な場合、`tsoracle`の導入を検討し、データ整合性向上に役立てる。] [GitHub: tsoracle/tsoracle] (Source: Hacker News)</description>
-      <pubDate>Fri, 13 Nov 2026 10:04:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>独プールで15人体調不良 マイクロソフト障害影響 | NEWSjp</title>
-      <link>https://news.jp/i/1494496378441958289</link>
-      <guid isPermaLink="false">https://news.jp/i/1494496378441958289</guid>
-      <description>[Score: 90] ドイツのテーマパーク内プールで、マイクロソフトの主力業務ソフトの大規模障害が原因で15人が体調不良を訴えました。 / 障害により安全管理システムの警報メールが担当者に届かず、塩素注入装置の不具合に気付かず水中塩素濃度が著しく上昇したためです。 / Outlookのメールシステムが警報通知に使われていたことが明らかになり、ITインフラの障害が物理的な安全に直結する事例となりました。 [実務示唆: 重要な安全管理システムや警報通知には、単一のクラウドサービスに依存せず、複数の通信経路や冗長化されたシステムを導入し、障害発生時の代替手段を確保することが不可欠です。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 02:57:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>脱WordPress：10年超の個人ブログをAstro + Cloudflare Workersへ移行しPageSpeed 100点を実現</title>
-      <link>https://zenn.dev/unsoluble_sugar/articles/8cdf1efc01e6cb</link>
-      <guid isPermaLink="false">https://zenn.dev/unsoluble_sugar/articles/8cdf1efc01e6cb</guid>
-      <description>[Score: 90] 10年以上運用したWordPressブログを、PHPの脆弱性をきっかけにAstroとCloudflare Workersを用いた静的サイトへ移行しました。 / 移行作業の大半をClaudeに任せ、1日で完了させ、PageSpeed 100点を達成しました。 / コスト削減とセキュリティ向上、パフォーマンス改善を実現した技術的な移行プロセスが詳細に解説されています。 [実務示唆: WordPressのセキュリティリスクや運用コストに課題がある場合、AstroとCloudflare Workersへの静的サイト移行を検討し、AIを活用した効率的な移行プロセスを試すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 04:23:12 +0000</pubDate>
+      <title>こんなに変わった！ AWSネットワークの常識</title>
+      <link>https://speakerdeck.com/shotashiratori/nw-jaws-10th-keynote</link>
+      <guid isPermaLink="false">https://speakerdeck.com/shotashiratori/nw-jaws-10th-keynote</guid>
+      <description>[Score: 90] AWSネットワークの常識が大きく変化していることを解説する資料です。 / 2016年のベストプラクティスが2026年にはアンチパターンとなる可能性を指摘しています。 / 最新のAWSネットワークサービスや機能の進化、そしてそれらがもたらす設計思想の変化について深く掘り下げています。 [実務示唆: AWSネットワーク設計者は、過去のベストプラクティスが現在のアンチパターンになっていないか定期的に見直し、最新のサービスや機能の活用を検討すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 12:30:54 +0000</pubDate>
     </item>
     <item>
       <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
@@ -119,11 +91,11 @@
       <pubDate>Thu, 12 Nov 2026 15:13:43 +0000</pubDate>
     </item>
     <item>
-      <title>Claude Duet を Team プランで触ってみた（組織で使うときの注意点つき）</title>
-      <link>https://zenn.dev/canly/articles/e2bd67c9a4c18b</link>
-      <guid isPermaLink="false">https://zenn.dev/canly/articles/e2bd67c9a4c18b</guid>
-      <description>[Score: 85] Claude DuetがTeamプランで利用可能になり、組織での活用方法と注意点が解説されています。 / Duetはクラウド上の仮想マシンで動作し、既存のClaudeアカウントのコネクタやスキルを継承して先回りして動作します。 / 利用量消費や管理者側の設定、日本語対応の状況についても詳細に説明されています。 [実務示唆: Claude Duetを組織で導入する際は、既存のClaude設定が引き継がれることを理解し、利用量消費やセキュリティ設定を事前に確認する。] (Source: Zenn)</description>
-      <pubDate>Fri, 13 Nov 2026 23:45:16 +0000</pubDate>
+      <title>マイクロソフト障害、インド政府機関ほぼ影響なし…印メディア「技術的自立の正しさ証明」</title>
+      <link>https://www.yomiuri.co.jp/world/20261115-GYT1T00190/</link>
+      <guid isPermaLink="false">https://www.yomiuri.co.jp/world/20261115-GYT1T00190/</guid>
+      <description>[Score: 88] 世界的なマイクロソフトサービスの大規模障害にもかかわらず、インドの政府機関はほぼ影響を受けなかったと報じられています。 / インド政府がサイバー安全保障の観点から独自の業務システムへの移行を進めていたことが功を奏しました。 / 印メディアはこれを「技術的自立の正しさの証明」と自賛し、世界がインドに注目していると伝えています。 [実務示唆: 企業や政府機関は、クラウドサービスへの過度な依存リスクを再評価し、重要なシステムについては技術的自立やマルチクラウド戦略の検討を強化すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 15 Nov 2026 14:50:18 +0000</pubDate>
     </item>
     <item>
       <title>「ざっくり工数どのくらい？」に「ざっくり工数このくらい」で答えてはいけない</title>
@@ -133,18 +105,46 @@
       <pubDate>Fri, 13 Nov 2026 02:03:33 +0000</pubDate>
     </item>
     <item>
-      <title>【AWS】AWS EmulatorでCDK/Terraformのスタックはどこまで動くか【AWSEmulator】</title>
-      <link>https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Nana_777/items/3f3c71525d867b22c9f2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AWS Emulatorは、AWSアカウントなしでローカルやCI上でAWS SDK/CLIの呼び出しをエミュレートするツールです。 / 本記事では、特にCDK/TerraformなどのIaCツールがAWS Emulator上でどこまで動作するかを検証しています。 / 公式ドキュメントではIaCツールへの対応はサービスによって異なるとされており、その実態をWindows 11 + Docker環境で試した結果がまとめられています。 [実務示唆: AWS Emulatorの導入を検討する際は、利用するAWSサービスがIaCツールでどこまでサポートされているか、忠実度テストの結果を確認し、事前に検証すること。] (Source: Qiita)</description>
-      <pubDate>Wed, 11 Nov 2026 23:39:20 +0000</pubDate>
+      <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
+      <link>https://www.publickey1.jp/blog/26/playwrightbun.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/playwrightbun.html</guid>
+      <description>[Score: 85] Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンv1.65.0でBunでのテストランナー実行を正式にサポートしました。 / これにより、PlaywrightのテストランナーはNode.jsに加えてBun環境でも動作可能になります。 / BunがTypeScriptテストファイルを直接トランスパイルするため、Babelやコンパイルキャッシュが不要となり、システムがシンプルになる利点があります。 [実務示唆: PlaywrightユーザーはBunを導入することで、TypeScriptテストのトランスパイルプロセスを簡素化し、テスト実行の高速化や開発環境の効率化を検討しましょう。] [GitHub: microsoft/playwright] (Source: Publickey)</description>
+      <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
     </item>
     <item>
-      <title>AWSでゼロトラスト構成を作る手順を5つのパートに分けて整理してみた</title>
-      <link>https://qiita.com/yama3133/items/11a360fc97ed3ec09742?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yama3133/items/11a360fc97ed3ec09742?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AWSでゼロトラスト構成を構築する具体的な手順を5つのパートに分けて解説しています。 / 各パートで必要なAWSサービスとリソース、AWS CLIコマンドが整理されており、実践的な内容です。 / 「誰が」「何を」「どこから」「記録」というゼロトラストの原則に対応し、独立したパートとして利用可能です。 [実務示唆: AWS環境でゼロトラスト導入を検討している場合、記事の5つのパートを参考に、IAM Roles AnywhereやAWS Verified Accessなどのサービスを検証し、自社環境への適用可能性を評価してください。] (Source: Qiita)</description>
-      <pubDate>Fri, 13 Nov 2026 16:43:26 +0000</pubDate>
+      <title>古いBitlyリンクが乗っ取られている</title>
+      <link>https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</link>
+      <guid isPermaLink="false">https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</guid>
+      <description>[Score: 85] Bitlyの古い非アクティブなリンクが悪意のある第三者によって悪用され、無関係なコンテンツにリダイレクトされる問題が発生しています。 / ビル・ゲイツ、ジャスティン・トルドー、FBIなどの著名人や機関の過去の投稿に含まれるリンクも影響を受けています。 / Bitlyはこの問題を認識し、関連アカウントを停止し、影響を受けるリンクを無効化する措置を講じています。 [実務示唆: 過去にBitlyリンクを使用した場合は、そのリンクが悪用されていないか確認し、可能であれば短縮URLの使用を避けるか、信頼できる代替サービスを検討してください。] (Source: Hacker News)</description>
+      <pubDate>Sun, 15 Nov 2026 22:11:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Lightdashで作れるグラフを試してみた【dbt v2】</title>
+      <link>https://zenn.dev/ryatora/articles/lightdash-chart-catalog</link>
+      <guid isPermaLink="false">https://zenn.dev/ryatora/articles/lightdash-chart-catalog</guid>
+      <description>[Score: 85] オープンソースBIツールLightdashとdbt v2を連携させ、NBAデータを用いて様々なグラフ作成を試した記事です。 / LightdashのグラフはYAMLで定義可能で、dbtのプロジェクトと連携してメトリック定義からグラフを生成できます。 / MotherDuckとDuckDBを利用したデータ構成や、Lightdashのデプロイ方法についても解説されています。 [実務示唆: dbtユーザーはLightdashを導入し、YAML定義によるデータ可視化とBIダッシュボード構築を試すことで、データ分析ワークフローを効率化できる。] [GitHub: ryatora/lightdash-chart-catalog] (Source: Zenn)</description>
+      <pubDate>Sun, 15 Nov 2026 15:07:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>.NET 11 の ASP.NET Core Blazor の新機能のスケールイン対応機能！</title>
+      <link>https://zenn.dev/microsoft/articles/aspnetcore-blazor-dotnet11-scale</link>
+      <guid isPermaLink="false">https://zenn.dev/microsoft/articles/aspnetcore-blazor-dotnet11-scale</guid>
+      <description>[Score: 85] .NET 11のASP.NET Core Blazor InteractiveServerモードで、スケールイン時の回路（Circuit）移行が可能になりました。 / これにより、サーバー側の状態をクライアント側に保存し、別のサーバーに再接続することで柔軟なスケールアウト・インが実現します。 / 公式ドキュメントの「サーバーによって引き起こされる回線の一時停止」機能を利用し、Aspireダッシュボードを使った検証方法が紹介されています。 [実務示唆: .NET 11へのアップグレードを検討し、Blazor InteractiveServerアプリケーションでスケールイン対応機能を実装することで、システムの可用性と運用効率を向上させる。] (Source: Zenn)</description>
+      <pubDate>Sun, 15 Nov 2026 07:58:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
+      <link>https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AI開発が加速する現代において、セキュリティは後から追加するものではなく、設計段階で組み込むべきであると提唱されています。 / 従来の認証やファイアウォールといった防御策だけでなく、業務であり得ない操作を設計で許さないことが重要です。 / OpenAIやAnthropicの事例から、モデルの賢さだけでは安全が確保されず、設計による境界設定が被害の大きさを左右することが示されています。 [実務示唆: AIを活用した開発では、セキュリティを設計段階から考慮し、業務上あり得ない操作を許さないようなシステム設計を徹底することで、将来的な脆弱性リスクを低減すべきです。] (Source: Qiita)</description>
+      <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>ジェンセン・ファンがNvidia CEOとしての復帰を議論、支持者がロビー活動</title>
+      <link>https://www.reddit.com/r/technology/comments/1xx4ou6/jensen_huang_discusses_comeback_as_nvidia_ceo/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xx4ou6/jensen_huang_discusses_comeback_as_nvidia_ceo/</guid>
+      <description>[Score: 85] Nvidiaの元CEOジェンセン・ファン氏が、中国のスパイとされる人物との関係を理由に辞任した後、CEOへの復帰を検討していると報じられています。 / 彼の支持者たちは、Nvidiaの取締役会に対し、ファン氏をCEOに再任するようロビー活動を行っているとのことです。 / この動きは、Nvidiaの将来のリーダーシップと戦略に大きな影響を与える可能性があります。 [実務示唆: Nvidiaのリーダーシップ変更の可能性は、半導体業界の動向やNvidia製品のロードマップに影響を与えるため、今後の発表に注目すべきです。] (Source: Reddit)</description>
+      <pubDate>Sun, 15 Nov 2026 19:42:01 +0000</pubDate>
     </item>
   </channel>
 </rss>
