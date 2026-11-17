@@ -5,13 +5,20 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 14:06:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 04:17:01 +0000</lastBuildDate>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
       <link>https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</guid>
       <description>[Score: 90] GitHubのコミット数が大幅に増加する一方で、開発者の生産性がそれに比例して向上していない現状を指摘し、AIによるコード生成だけでは不十分であると述べています。 / AIエージェントは、ソフトウェア開発の計画、構築、検証、監視といった全ステージにおいて、開発者の効率を向上させる可能性を秘めています。 / 特に、散在する情報を集約し、API変更の計画立案を支援するなど、開発プロセスのボトルネックを解消する具体的な活用例が紹介されています。 [実務示唆: AIを単なるコード生成ツールとしてではなく、開発プロセスの計画、検証、監視といった広範なタスクを支援するエージェントとして活用することで、開発全体の生産性向上を目指しましょう。] (Source: GitHub Blog)</description>
       <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>QA生産性を爆上げさせるためのQA AIプラットフォーム構築</title>
+      <link>https://zenn.dev/gatechnologies/articles/8bdea59269eb10</link>
+      <guid isPermaLink="false">https://zenn.dev/gatechnologies/articles/8bdea59269eb10</guid>
+      <description>[Score: 90] GA technologiesのQAチームが、AIエージェントを活用したQA AIプラットフォーム「GAQ」を構築し、QA生産性を向上させた事例を紹介しています。 / 開発スループットの向上に対しQAがボトルネックになっていた課題や、AI活用が進んでいなかった状況を改善するためにGAQを導入しました。 / GAQは「AIが工程を回し、人が判断する」ことを前提に設計され、テスト計画から品質レポートまでほぼ全ての工程をAIエージェントの「Skill」で自動化しています。 [実務示唆: QAエンジニアや開発チームは、AIエージェントを活用したQA自動化プラットフォームの導入を検討し、テスト計画、テストケース作成、品質レポート生成などの定型業務をAIに任せることで、QAのボトルネック解消と生産性向上を図るべきです。] (Source: Zenn)</description>
+      <pubDate>Mon, 16 Nov 2026 09:12:44 +0000</pubDate>
     </item>
     <item>
       <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
@@ -28,6 +35,13 @@
       <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門</title>
+      <link>https://zenn.dev/turing_motors/articles/cea9e3c85611b2</link>
+      <guid isPermaLink="false">https://zenn.dev/turing_motors/articles/cea9e3c85611b2</guid>
+      <description>[Score: 88] この記事は、自動運転AIやフィジカルAI開発において、AIの予測をカメラ映像に重ねて可視化することの重要性を解説しています。 / 可視化にはカメラ、座標系、運動制御の理解が不可欠であり、これらがAIと物理世界をつなぐ技術力の指標となると述べています。 / End-to-End (E2E) 自動運転モデルやVLAモデルの台頭により、AIの内部状態がブラックボックス化する中で、可視化がデバッグや評価の要となることを強調しています。 [実務示唆: フィジカルAIや自動運転AIを開発するエンジニアは、AIの予測結果を物理世界（カメラ映像など）に正確に可視化する技術を習得し、デバッグ、評価、およびAIの振る舞い理解に活用することを推奨します。] (Source: Zenn)</description>
+      <pubDate>Mon, 16 Nov 2026 08:00:05 +0000</pubDate>
+    </item>
+    <item>
       <title>Cloudflare、AI専用でタブやテーマや拡張などない軽量ヘッドレスブラウザ「Kitesurf」、オープンソースで公開</title>
       <link>https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html</guid>
@@ -35,11 +49,18 @@
       <pubDate>Sun, 15 Nov 2026 15:30:19 +0000</pubDate>
     </item>
     <item>
-      <title>ちょっと見ない間にClaude APIが進化してた！</title>
-      <link>https://qiita.com/moritalous/items/9e7c02b749037238b2bc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/moritalous/items/9e7c02b749037238b2bc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] Claude APIが進化し、Python SDKを使った基本的な呼び出しからシステムプロンプトの途中追記までが紹介されています。 / プロンプトキャッシュを維持したままシステムプロンプトを変更できる新機能が特に注目されています。 / Anthropic CLIを用いた認証方法や、思考ブロックへの対応についても触れられています。 [実務示唆: Claude APIの最新機能であるシステムプロンプトの途中追記を活用し、プロンプトキャッシュを維持したままAIの振る舞いを動的に変更する開発を試みる。] (Source: Qiita)</description>
-      <pubDate>Sat, 14 Nov 2026 06:32:07 +0000</pubDate>
+      <title>カーネギーメロン大学がコンピュータサイエンスのコースをYouTubeで無料公開</title>
+      <link>https://www.cs.cmu.edu/learn/</link>
+      <guid isPermaLink="false">https://www.cs.cmu.edu/learn/</guid>
+      <description>[Score: 85] カーネギーメロン大学がAI、ロボティクス、システム、生物学など、主要分野のコンピュータサイエンスコースをYouTubeで無料公開しました。 / これにより、世界中の誰もが最先端の教育コンテンツにアクセスできるようになります。 / 将来的には、AIチューター機能や公式の資格取得プログラムも提供される予定です。 [実務示唆: 最先端のコンピュータサイエンス教育に無料でアクセスできるため、自身のスキルアップや新しい技術分野の学習に積極的に活用することを推奨します。] (Source: Hacker News)</description>
+      <pubDate>Mon, 16 Nov 2026 20:43:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>中編 LLM推論エンジンを作る</title>
+      <link>https://zenn.dev/shozotanaka/articles/632191056c62f4</link>
+      <guid isPermaLink="false">https://zenn.dev/shozotanaka/articles/632191056c62f4</guid>
+      <description>[Score: 85] 本記事では、Llamaの計算グラフを組み立てるLlamaArch::BuildGraphのコードを詳細に解説しています。 / LlamaはggmlLMが扱うモデルの中で最もシンプルな形をしており、Gemmaやgpt-ossもLlamaとの違いとして説明できるため、本章が本書の中心となります。 / 対応するソースはArch/LlamaArch.cppと共通部品を集めたGraphOps.cppで、Llamaのデコードにおける計算グラフの構造が示されています。 [実務示唆: LLMの推論エンジンの内部構造を理解することで、モデルの最適化やカスタム実装の際に具体的な改善点を見つけやすくなるため、関連コードを深く読み込むことを推奨します。] (Source: Zenn)</description>
+      <pubDate>Mon, 16 Nov 2026 07:46:05 +0000</pubDate>
     </item>
     <item>
       <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
@@ -49,18 +70,25 @@
       <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
     </item>
     <item>
-      <title>プロンプトはバグの2つ目のコピーを見つけられない。プログラムならできる。</title>
-      <link>https://dev.to/crbro/a-prompt-cant-see-the-second-copy-of-a-bug-a-program-can-1okj</link>
-      <guid isPermaLink="false">https://dev.to/crbro/a-prompt-cant-see-the-second-copy-of-a-bug-a-program-can-1okj</guid>
-      <description>[Score: 80] AIコーディングエージェントがバグ修正において、同じバグの複数のインスタンスを見落とす可能性について論じています。 / エージェントはプロンプトに基づいて1つの修正を行うが、コードベース全体に存在する同じバグの他のコピーを見つけることができません。 / 著者は、AIエージェントに「何を伝えるか」によってその能力がどう変わるかを検証するプラグイン「Ockham」を開発しており、その測定結果を共有しています。 [実務示唆: AIコーディングエージェントを利用する際は、単一の修正だけでなく、コードベース全体にわたる類似のバグの検出と修正を促すための追加ツールやプロセスを検討し、テストカバレッジを強化すべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 16 Nov 2026 01:15:41 +0000</pubDate>
-    </item>
-    <item>
       <title>LLMエージェントはいつ忘れるべきか？クエリに重要なリゾルバーエラー下でのメモリフィルタリング</title>
       <link>https://arxiv.org/abs/2611.17338</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.17338</guid>
       <description>[Score: 80] この論文は、LLMエージェントがクエリ処理中に発生する重要なエラー状況下で、いつどのように記憶を忘れるべきか（メモリフィルタリング）について研究しています。 / LLMエージェントの効率性と信頼性を向上させるためのメモリ管理戦略に焦点を当てています。 / arXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。 [実務示唆: LLMエージェントを開発する際、クエリ処理の失敗時に不適切な情報を記憶から効果的に削除するメモリフィルタリング戦略を検討し、エージェントの堅牢性を高めるべきです。] (Source: arXiv cs.AI)</description>
       <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenCode Browse</title>
+      <link>https://opencode.ai/product/browse</link>
+      <guid isPermaLink="false">https://opencode.ai/product/browse</guid>
+      <description>[Score: 80] OpenCode Browseは、AIエージェントが実際のブラウザを操作できるようにするMCPサーバーとChromium拡張機能です。 / エージェントはバックグラウンドでタブを開き、ページを読み込み、クリック、入力、スクリーンショット撮影、タブ録画を行います。 / ログインや2FA認証、支払いなどユーザーの操作が必要な場合は、タブをユーザーに渡し、完了後に作業を再開します。 [実務示唆: AIエージェントにブラウザ操作を自動化させたい開発者は、OpenCode BrowseのChrome拡張機能を導入し、その機能とセキュリティモデルを検証することを推奨します。] (Source: Hacker News)</description>
+      <pubDate>Mon, 16 Nov 2026 21:20:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>認証情報を渡さずにコーディングエージェントを実行する方法</title>
+      <link>https://blog.antonio.cx/running-agents-with-lend</link>
+      <guid isPermaLink="false">https://blog.antonio.cx/running-agents-with-lend</guid>
+      <description>[Score: 78] 著者は、リモートエージェントが自身の承認を得てローカルツールを使用できるようにする「lend」というツールを開発しました。 / これにより、SSHキーやパスワードマネージャーなどの機密情報をエージェントに直接渡すことなく、安全に利用できます。 / 複数のコーディングエージェントを並行して実行し、互いの作業をレビューさせるワークフローを構築しています。 [実務示唆: 機密情報を保護しつつAIコーディングエージェントを効率的に活用するため、lendのようなツールや、VM上でエージェントを実行しローカルリソースへのアクセスを制御する手法の導入を検討してください。] [GitHub: antonio-cx/lend] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 01:18:56 +0000</pubDate>
     </item>
     <item>
       <title>EHR投薬セット予測のための構造化検索としての表形式母集団事前分布</title>

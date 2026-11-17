@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 14:06:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 04:17:01 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
@@ -14,32 +14,18 @@
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Microsoftの11月Patch Tuesdayで1,093件の修正が提供され、そのうち4件が今週の注目</title>
-      <link>https://dev.to/echakiri/microsofts-november-patch-tuesday-ships-1093-fixes-four-of-them-set-the-week-3921</link>
-      <guid isPermaLink="false">https://dev.to/echakiri/microsofts-november-patch-tuesday-ships-1093-fixes-four-of-them-set-the-week-3921</guid>
-      <description>[Score: 95] Microsoftが2026年11月のPatch Tuesdayで1,093件の脆弱性修正をリリースしたことを報じています。 / 特に、SQL Serverのヒープベースのバッファオーバーフロー（CVE-2026-116945）を含む4件の深刻な脆弱性が注目されています。 / 修正された脆弱性の約半数が権限昇格、約3分の1がリモートコード実行に関連していると分析しています。 [実務示唆: Microsoft製品を使用している組織は、速やかに11月のPatch Tuesdayの更新プログラムを適用し、特にSQL Serverの脆弱性には優先的に対応すべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 16 Nov 2026 14:00:02 +0000</pubDate>
+      <title>Optimizelyが侵害され、ZoomやGitLabなどでマルウェアが配信される</title>
+      <link>https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</link>
+      <guid isPermaLink="false">https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</guid>
+      <description>[Score: 95] OptimizelyのWeb実験プラットフォームが侵害され、Zoom、BBC、CNN、GitLabなど178の組織の訪問者に悪意のあるJavaScriptが配信されました。 / このマルウェアは、仮想通貨ウォレットアドレスの書き換え、決済カード情報のスキミング、クッキー窃盗、iOSエクスプロイトキットの配信など、多目的な攻撃を行いました。 / サードパーティのJavaScriptが信頼できないものになるリスクを浮き彫りにし、CSPなどのセキュリティ対策の重要性を示しています。 [実務示唆: サードパーティスクリプトの脆弱性によるサプライチェーン攻撃のリスクを認識し、CSP (Content Security Policy) の厳格な適用や、Report URIのような監視ツールの導入を強く推奨します。] (Source: Hacker News)</description>
+      <pubDate>Mon, 16 Nov 2026 23:00:34 +0000</pubDate>
     </item>
     <item>
-      <title>日本語の脆弱性DBは4.6日かかる。待てないので、46秒でセキュリティ情報が載るようにした</title>
-      <link>https://qiita.com/songchong/items/fa50cc82e49b24925fe3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/fa50cc82e49b24925fe3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 日本語の脆弱性データベース（JVN iPedia）は、CVE公開から平均4.6日後に情報が掲載され、その間に攻撃が悪用されるリスクがあります。 / 攻撃者はAIを使い、企業規模を問わず短期間で脆弱性を悪用するため、迅速な情報収集と対応が不可欠です。 / 本記事では、この課題を解決するため、セキュリティ情報を46秒で提供する「IT連携マップ」の取り組みを紹介しています。 [実務示唆: OSSや外部ライブラリの脆弱性情報は日本語DBを待たず、CISAなどの一次情報を迅速に確認し、SBOMを活用して自社システムへの影響を早期に評価する体制を構築すべきです。] (Source: Qiita)</description>
-      <pubDate>Sun, 15 Nov 2026 08:20:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>マイクロソフト障害、インド政府機関ほぼ影響なし…印メディア「技術的自立の正しさ証明」</title>
-      <link>https://www.yomiuri.co.jp/world/20261115-GYT1T00190/</link>
-      <guid isPermaLink="false">https://www.yomiuri.co.jp/world/20261115-GYT1T00190/</guid>
-      <description>[Score: 88] 世界的なマイクロソフトサービスの大規模障害にもかかわらず、インドの政府機関はほぼ影響を受けなかったと報じられています。 / インド政府がサイバー安全保障の観点から独自の業務システムへの移行を進めていたことが功を奏しました。 / 印メディアはこれを「技術的自立の正しさの証明」と自賛し、世界がインドに注目していると伝えています。 [実務示唆: 企業や政府機関は、クラウドサービスへの過度な依存リスクを再評価し、重要なシステムについては技術的自立やマルチクラウド戦略の検討を強化すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 14:50:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>古いBitlyリンクが乗っ取られている</title>
-      <link>https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</link>
-      <guid isPermaLink="false">https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</guid>
-      <description>[Score: 85] Bitlyの古い非アクティブなリンクが悪意のある第三者によって悪用され、無関係なコンテンツにリダイレクトされる問題が発生しています。 / ビル・ゲイツ、ジャスティン・トルドー、FBIなどの著名人や機関の過去の投稿に含まれるリンクも影響を受けています。 / Bitlyはこの問題を認識し、関連アカウントを停止し、影響を受けるリンクを無効化する措置を講じています。 [実務示唆: 過去にBitlyリンクを使用した場合は、そのリンクが悪用されていないか確認し、可能であれば短縮URLの使用を避けるか、信頼できる代替サービスを検討してください。] (Source: Hacker News)</description>
-      <pubDate>Sun, 15 Nov 2026 22:11:43 +0000</pubDate>
+      <title>実践パスキー認証設計</title>
+      <link>https://zenn.dev/yasuakiomokawa/articles/89f5c46e8effe9</link>
+      <guid isPermaLink="false">https://zenn.dev/yasuakiomokawa/articles/89f5c46e8effe9</guid>
+      <description>[Score: 95] この記事は、パスキー認証をサービスに導入する際の設計上の考慮事項を、筆者の認証基盤taimei-authの事例を交えて解説しています。 / 単にログイン手段を追加するだけでなく、ビジネス要件、システム要件、運用要件の3層で事前に決めるべき事項を詳細に説明しています。 / 特にフィッシング耐性の仕組みや、ユーザー体験、開発・運用上の課題解決に焦点を当てた実践的な内容です。 [実務示唆: パスキー認証の導入を検討している開発者は、設計の3層（ビジネス、システム、運用）を考慮し、特にフィッシング対策や既存認証との共存、エラーハンドリングについて事前に詳細な設計を行うべきです。] [GitHub: yasuakiomokawa/taimei-auth] (Source: Zenn)</description>
+      <pubDate>Mon, 16 Nov 2026 12:53:34 +0000</pubDate>
     </item>
     <item>
       <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
@@ -49,11 +35,11 @@
       <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
     </item>
     <item>
-      <title>FTDで実装するTLS Decryption</title>
-      <link>https://zenn.dev/5x4x7/articles/92a962f3cd6cb6</link>
-      <guid isPermaLink="false">https://zenn.dev/5x4x7/articles/92a962f3cd6cb6</guid>
-      <description>[Score: 80] FTD（Firepower Threat Defense）を用いたTLS Decryptionの実装方法について解説しています。 / 現代の暗号化されたトラフィックからマルウェアを検出するために、Deep Inspectionでペイロードを検査する重要性が強調されています。 / FTDがクライアントとサーバー間のTLS通信をプロキシし、CA証明書を用いて再署名することで復号処理を行う仕組みが説明されています。 [実務示唆: FTDを導入している企業は、TLS Decryption機能を活用して暗号化された通信内の脅威を可視化し、セキュリティ対策を強化することを検討する。] (Source: Zenn)</description>
-      <pubDate>Sun, 15 Nov 2026 13:49:46 +0000</pubDate>
+      <title>Windows 11がコーディングエージェントと開発ツールの使用状況データを収集</title>
+      <link>https://xusheng.dev/posts/windows-coding-agent-telemetry/</link>
+      <guid isPermaLink="false">https://xusheng.dev/posts/windows-coding-agent-telemetry/</guid>
+      <description>[Score: 70] Windows 11のシステムDLLが、ユーザーが使用するコーディングエージェントや開発ツールの情報を収集し、Microsoftに送信していることが判明しました。 / このデータ収集はデフォルトで有効な「オプションの診断データ」の一部として行われます。 / プライバシーを懸念するユーザーは、設定で診断データの送信を無効にする必要があります。 [実務示唆: Windows 11ユーザーは、プライバシー保護のため、設定から「オプションの診断データ」の送信を無効にすることを検討し、使用する開発ツールのテレメトリ設定も確認してください。] (Source: Hacker News)</description>
+      <pubDate>Mon, 16 Nov 2026 22:58:20 +0000</pubDate>
     </item>
   </channel>
 </rss>

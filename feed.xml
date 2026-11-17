@@ -5,21 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 14:06:13 +0000</lastBuildDate>
-    <item>
-      <title>フロントエンドのフレームワークを、安全に段階的に入れ替える</title>
-      <link>https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</link>
-      <guid isPermaLink="false">https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</guid>
-      <description>[Score: 95] フロントエンドのフレームワークを安全かつ段階的に入れ替えるための手法が解説されています。 / URLとページの読み込み（document）を境界とし、新旧フレームワークを混ぜずに並存させる大方針が示されています。 / これにより、移行途中でもアプリが動作し続け、変更を小さく保ち、経済的に安全な移行が可能になります。 [実務示唆: 大規模なフロントエンドのフレームワーク移行を計画する際、URLとdocumentを境界とする段階的移行戦略を採用し、リスクを最小限に抑える。] (Source: Zenn)</description>
-      <pubDate>Sat, 14 Nov 2026 07:12:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>今、ソフトウェアエンジニアとして何を思うか｜Mori Atsushi</title>
-      <link>https://note.com/at_sushi_at/n/n2e6ea3453e37</link>
-      <guid isPermaLink="false">https://note.com/at_sushi_at/n/n2e6ea3453e37</guid>
-      <description>[Score: 95] 筆者はAI（特にOpus）が自分よりも賢く、優れた設計を提案することに敗北感を感じつつも、ソフトウェアエンジニアの役割が変化していると考察しています。 / AIが快適に動ける環境作りやゲートキーパーとしての役割は一時的であり、中長期的にはプロダクトの意思決定への関与やAIを活用した開発環境のプロフェッショナルになる方向性を提示しています。 / AIの進化が止まらない中で、ソフトウェアエンジニアが今後どのように価値を提供していくべきかという問いを投げかけています。 [実務示唆: AIの進化に対応するため、ソフトウェアエンジニアは「どう作るか」から「何を作るか」というプロダクトの意思決定に深く関わるか、AIを活用した開発環境を構築する専門家を目指すなど、自身のキャリアパスを再考しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 09:51:50 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 17 Nov 2026 04:17:01 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
@@ -28,25 +14,18 @@
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Microsoftの11月Patch Tuesdayで1,093件の修正が提供され、そのうち4件が今週の注目</title>
-      <link>https://dev.to/echakiri/microsofts-november-patch-tuesday-ships-1093-fixes-four-of-them-set-the-week-3921</link>
-      <guid isPermaLink="false">https://dev.to/echakiri/microsofts-november-patch-tuesday-ships-1093-fixes-four-of-them-set-the-week-3921</guid>
-      <description>[Score: 95] Microsoftが2026年11月のPatch Tuesdayで1,093件の脆弱性修正をリリースしたことを報じています。 / 特に、SQL Serverのヒープベースのバッファオーバーフロー（CVE-2026-116945）を含む4件の深刻な脆弱性が注目されています。 / 修正された脆弱性の約半数が権限昇格、約3分の1がリモートコード実行に関連していると分析しています。 [実務示唆: Microsoft製品を使用している組織は、速やかに11月のPatch Tuesdayの更新プログラムを適用し、特にSQL Serverの脆弱性には優先的に対応すべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 16 Nov 2026 14:00:02 +0000</pubDate>
+      <title>Optimizelyが侵害され、ZoomやGitLabなどでマルウェアが配信される</title>
+      <link>https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</link>
+      <guid isPermaLink="false">https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</guid>
+      <description>[Score: 95] OptimizelyのWeb実験プラットフォームが侵害され、Zoom、BBC、CNN、GitLabなど178の組織の訪問者に悪意のあるJavaScriptが配信されました。 / このマルウェアは、仮想通貨ウォレットアドレスの書き換え、決済カード情報のスキミング、クッキー窃盗、iOSエクスプロイトキットの配信など、多目的な攻撃を行いました。 / サードパーティのJavaScriptが信頼できないものになるリスクを浮き彫りにし、CSPなどのセキュリティ対策の重要性を示しています。 [実務示唆: サードパーティスクリプトの脆弱性によるサプライチェーン攻撃のリスクを認識し、CSP (Content Security Policy) の厳格な適用や、Report URIのような監視ツールの導入を強く推奨します。] (Source: Hacker News)</description>
+      <pubDate>Mon, 16 Nov 2026 23:00:34 +0000</pubDate>
     </item>
     <item>
-      <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
-      <link>https://www.publickey1.jp/blog/26/awsawsaws_1.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsawsaws_1.html</guid>
-      <description>[Score: 92] AWSが、ローカルマシン上でAWSのAPIをエミュレートする公式ツール「AWSエミュレータ」を正式リリースしました。 / このエミュレータは無料で利用でき、AWSアカウントなしでオフラインでのアプリケーション構築・テストが可能です。 / 特筆すべきは、エミュレータのコードがAmazon Bedrock AgentCore上の自律型AIエージェントによって生成・テスト・修正された点です。 [実務示唆: AWS環境での開発・テストコスト削減と高速化のため、AWSエミュレータを導入し、ローカル環境でのオフライン開発・テストフローを構築することを推奨します。] (Source: Publickey)</description>
-      <pubDate>Thu, 12 Nov 2026 15:09:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>Microsoft 365障害はなぜ長引いたのか？ 原因・タイムラインと「SLAクレジット」請求方法まとめ</title>
-      <link>https://www.itmedia.co.jp/pcuser/articles/2611/16/news045.html</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/pcuser/articles/2611/16/news045.html</guid>
-      <description>[Score: 92] Microsoft 365の大規模障害が長引いた原因とタイムライン、そしてSLAクレジットの請求方法について解説しています。 / 日本時間11月13日朝に発生し、14日午後まで影響が続いたこの障害は、多くの企業に多大な影響を与えました。 / Microsoftは事後報告（PIR）を公開予定であり、ユーザーはSLAに基づきサービスクレジットを請求できる可能性があります。 [実務示唆: Microsoft 365ユーザーは、今回の障害のPIRを注視し、SLAに基づいたサービスクレジット請求の可能性を検討するとともに、自社のBCPを見直すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 21:12:32 +0000</pubDate>
+      <title>実践パスキー認証設計</title>
+      <link>https://zenn.dev/yasuakiomokawa/articles/89f5c46e8effe9</link>
+      <guid isPermaLink="false">https://zenn.dev/yasuakiomokawa/articles/89f5c46e8effe9</guid>
+      <description>[Score: 95] この記事は、パスキー認証をサービスに導入する際の設計上の考慮事項を、筆者の認証基盤taimei-authの事例を交えて解説しています。 / 単にログイン手段を追加するだけでなく、ビジネス要件、システム要件、運用要件の3層で事前に決めるべき事項を詳細に説明しています。 / 特にフィッシング耐性の仕組みや、ユーザー体験、開発・運用上の課題解決に焦点を当てた実践的な内容です。 [実務示唆: パスキー認証の導入を検討している開発者は、設計の3層（ビジネス、システム、運用）を考慮し、特にフィッシング対策や既存認証との共存、エラーハンドリングについて事前に詳細な設計を行うべきです。] [GitHub: yasuakiomokawa/taimei-auth] (Source: Zenn)</description>
+      <pubDate>Mon, 16 Nov 2026 12:53:34 +0000</pubDate>
     </item>
     <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
@@ -63,32 +42,11 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>Nvidiaの次なる一手は？</title>
-      <link>https://steveblank.com/2026/11/15/whats-next-for-nvidia/</link>
-      <guid isPermaLink="false">https://steveblank.com/2026/11/15/whats-next-for-nvidia/</guid>
-      <description>[Score: 90] Nvidiaの共同創業者であるジェンスン・フアンCEOが33年ぶりに辞任したと報じられ、その後のNvidiaの行方が議論されています。 / フアン氏はCUDA、ディープラーニング、Mellanox買収を通じてNvidiaを3度再発明し、グラフィックボードベンダーからシステム企業へと変革させました。 / ビジョナリーなCEOの不在は企業のイノベーションを停滞させるリスクがあり、Nvidiaの取締役会は今後の戦略を慎重に検討する必要があります。 [実務示唆: Nvidiaの今後の動向はAI・機械学習業界全体に影響を与えるため、同社のリーダーシップ交代とそれに伴う戦略変更には注視が必要です。] (Source: Hacker News)</description>
-      <pubDate>Sun, 15 Nov 2026 23:55:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>Canton Networkとは何か――金融機関が「見せる相手を選べる」ブロックチェーンに集まる理由</title>
-      <link>https://zenn.dev/komlock_lab/articles/canton-network-evm-comparison-2026</link>
-      <guid isPermaLink="false">https://zenn.dev/komlock_lab/articles/canton-network-evm-comparison-2026</guid>
-      <description>[Score: 90] Canton Networkは、金融機関間の取引のために設計された、プライバシー保護に特化したブロックチェーンネットワークです。 / 取引内容を関係者のみに開示できる点が特徴で、Ethereumのようなパブリックチェーンとは異なり、金融機関の機密性要件を満たします。 / DTCCやJ.P. Morganといった大手金融機関が、証券のトークン化やデジタル預金の発行にCanton Networkを活用する動きが進んでいます。 [実務示唆: 金融業界のブロックチェーン技術者は、Canton Networkのプライバシーモデルと金融機関での採用事例を調査し、自社のデジタル資産戦略への応用可能性を検討する。] (Source: Zenn)</description>
-      <pubDate>Sun, 15 Nov 2026 09:06:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>日本語の脆弱性DBは4.6日かかる。待てないので、46秒でセキュリティ情報が載るようにした</title>
-      <link>https://qiita.com/songchong/items/fa50cc82e49b24925fe3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/fa50cc82e49b24925fe3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] 日本語の脆弱性データベース（JVN iPedia）は、CVE公開から平均4.6日後に情報が掲載され、その間に攻撃が悪用されるリスクがあります。 / 攻撃者はAIを使い、企業規模を問わず短期間で脆弱性を悪用するため、迅速な情報収集と対応が不可欠です。 / 本記事では、この課題を解決するため、セキュリティ情報を46秒で提供する「IT連携マップ」の取り組みを紹介しています。 [実務示唆: OSSや外部ライブラリの脆弱性情報は日本語DBを待たず、CISAなどの一次情報を迅速に確認し、SBOMを活用して自社システムへの影響を早期に評価する体制を構築すべきです。] (Source: Qiita)</description>
-      <pubDate>Sun, 15 Nov 2026 08:20:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>こんなに変わった！ AWSネットワークの常識</title>
-      <link>https://speakerdeck.com/shotashiratori/nw-jaws-10th-keynote</link>
-      <guid isPermaLink="false">https://speakerdeck.com/shotashiratori/nw-jaws-10th-keynote</guid>
-      <description>[Score: 90] AWSネットワークの常識が大きく変化していることを解説する資料です。 / 2016年のベストプラクティスが2026年にはアンチパターンとなる可能性を指摘しています。 / 最新のAWSネットワークサービスや機能の進化、そしてそれらがもたらす設計思想の変化について深く掘り下げています。 [実務示唆: AWSネットワーク設計者は、過去のベストプラクティスが現在のアンチパターンになっていないか定期的に見直し、最新のサービスや機能の活用を検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 12:30:54 +0000</pubDate>
+      <title>QA生産性を爆上げさせるためのQA AIプラットフォーム構築</title>
+      <link>https://zenn.dev/gatechnologies/articles/8bdea59269eb10</link>
+      <guid isPermaLink="false">https://zenn.dev/gatechnologies/articles/8bdea59269eb10</guid>
+      <description>[Score: 90] GA technologiesのQAチームが、AIエージェントを活用したQA AIプラットフォーム「GAQ」を構築し、QA生産性を向上させた事例を紹介しています。 / 開発スループットの向上に対しQAがボトルネックになっていた課題や、AI活用が進んでいなかった状況を改善するためにGAQを導入しました。 / GAQは「AIが工程を回し、人が判断する」ことを前提に設計され、テスト計画から品質レポートまでほぼ全ての工程をAIエージェントの「Skill」で自動化しています。 [実務示唆: QAエンジニアや開発チームは、AIエージェントを活用したQA自動化プラットフォームの導入を検討し、テスト計画、テストケース作成、品質レポート生成などの定型業務をAIに任せることで、QAのボトルネック解消と生産性向上を図るべきです。] (Source: Zenn)</description>
+      <pubDate>Mon, 16 Nov 2026 09:12:44 +0000</pubDate>
     </item>
     <item>
       <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
@@ -98,13 +56,6 @@
       <pubDate>Thu, 12 Nov 2026 15:13:43 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフト障害、インド政府機関ほぼ影響なし…印メディア「技術的自立の正しさ証明」</title>
-      <link>https://www.yomiuri.co.jp/world/20261115-GYT1T00190/</link>
-      <guid isPermaLink="false">https://www.yomiuri.co.jp/world/20261115-GYT1T00190/</guid>
-      <description>[Score: 88] 世界的なマイクロソフトサービスの大規模障害にもかかわらず、インドの政府機関はほぼ影響を受けなかったと報じられています。 / インド政府がサイバー安全保障の観点から独自の業務システムへの移行を進めていたことが功を奏しました。 / 印メディアはこれを「技術的自立の正しさの証明」と自賛し、世界がインドに注目していると伝えています。 [実務示唆: 企業や政府機関は、クラウドサービスへの過度な依存リスクを再評価し、重要なシステムについては技術的自立やマルチクラウド戦略の検討を強化すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 14:50:18 +0000</pubDate>
-    </item>
-    <item>
       <title>ランキングは維持されるか？小型・量子化・オンデバイスLLMにおける幻覚検出器の実践者向け監査</title>
       <link>https://arxiv.org/abs/2611.17339</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.17339</guid>
@@ -112,39 +63,88 @@
       <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>「ざっくり工数どのくらい？」に「ざっくり工数このくらい」で答えてはいけない</title>
-      <link>https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/tsutorm/items/c9ab1e1c64474c341d77?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] プロジェクトの概算工数見積もりにおいて、根拠のない数字で答えることの危険性を指摘しています。 / 事業責任者や経営者の迅速な判断ニーズに応えつつ、後々のトラブルを避けるためには、見積もりの根拠を明確にすることが重要です。 / 「数量 × 単位あたりの規模」という式を用い、ステークホルダーと意思疎通できる単位（例: 画面数）で見積もる方法を提案しています。 [実務示唆: 概算見積もりでは「数量 × 単位あたりの規模」の式と、合意形成しやすい単位（例: 画面数）を用いて、根拠を明確に説明できるように準備すべきです。] (Source: Qiita)</description>
-      <pubDate>Fri, 13 Nov 2026 02:03:33 +0000</pubDate>
+      <title>物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門</title>
+      <link>https://zenn.dev/turing_motors/articles/cea9e3c85611b2</link>
+      <guid isPermaLink="false">https://zenn.dev/turing_motors/articles/cea9e3c85611b2</guid>
+      <description>[Score: 88] この記事は、自動運転AIやフィジカルAI開発において、AIの予測をカメラ映像に重ねて可視化することの重要性を解説しています。 / 可視化にはカメラ、座標系、運動制御の理解が不可欠であり、これらがAIと物理世界をつなぐ技術力の指標となると述べています。 / End-to-End (E2E) 自動運転モデルやVLAモデルの台頭により、AIの内部状態がブラックボックス化する中で、可視化がデバッグや評価の要となることを強調しています。 [実務示唆: フィジカルAIや自動運転AIを開発するエンジニアは、AIの予測結果を物理世界（カメラ映像など）に正確に可視化する技術を習得し、デバッグ、評価、およびAIの振る舞い理解に活用することを推奨します。] (Source: Zenn)</description>
+      <pubDate>Mon, 16 Nov 2026 08:00:05 +0000</pubDate>
     </item>
     <item>
-      <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
-      <link>https://www.publickey1.jp/blog/26/playwrightbun.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/playwrightbun.html</guid>
-      <description>[Score: 85] Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンv1.65.0でBunでのテストランナー実行を正式にサポートしました。 / これにより、PlaywrightのテストランナーはNode.jsに加えてBun環境でも動作可能になります。 / BunがTypeScriptテストファイルを直接トランスパイルするため、Babelやコンパイルキャッシュが不要となり、システムがシンプルになる利点があります。 [実務示唆: PlaywrightユーザーはBunを導入することで、TypeScriptテストのトランスパイルプロセスを簡素化し、テスト実行の高速化や開発環境の効率化を検討しましょう。] [GitHub: microsoft/playwright] (Source: Publickey)</description>
-      <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
+      <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
+      <link>https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AI開発が加速する現代において、セキュリティは後から追加するものではなく、設計段階で組み込むべきであると提唱されています。 / 従来の認証やファイアウォールといった防御策だけでなく、業務であり得ない操作を設計で許さないことが重要です。 / OpenAIやAnthropicの事例から、モデルの賢さだけでは安全が確保されず、設計による境界設定が被害の大きさを左右することが示されています。 [実務示唆: AIを活用した開発では、セキュリティを設計段階から考慮し、業務上あり得ない操作を許さないようなシステム設計を徹底することで、将来的な脆弱性リスクを低減すべきです。] (Source: Qiita)</description>
+      <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
     </item>
     <item>
-      <title>古いBitlyリンクが乗っ取られている</title>
-      <link>https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</link>
-      <guid isPermaLink="false">https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</guid>
-      <description>[Score: 85] Bitlyの古い非アクティブなリンクが悪意のある第三者によって悪用され、無関係なコンテンツにリダイレクトされる問題が発生しています。 / ビル・ゲイツ、ジャスティン・トルドー、FBIなどの著名人や機関の過去の投稿に含まれるリンクも影響を受けています。 / Bitlyはこの問題を認識し、関連アカウントを停止し、影響を受けるリンクを無効化する措置を講じています。 [実務示唆: 過去にBitlyリンクを使用した場合は、そのリンクが悪用されていないか確認し、可能であれば短縮URLの使用を避けるか、信頼できる代替サービスを検討してください。] (Source: Hacker News)</description>
-      <pubDate>Sun, 15 Nov 2026 22:11:43 +0000</pubDate>
+      <title>Cloudflare、AI専用でタブやテーマや拡張などない軽量ヘッドレスブラウザ「Kitesurf」、オープンソースで公開</title>
+      <link>https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html</guid>
+      <description>[Score: 85] CloudflareがAIエージェント向けに設計された軽量ヘッドレスブラウザ「Kitesurf」をオープンソースで公開しました。 / これは、AIがWebブラウザを操作して情報収集やWebアプリケーション処理を行うシナリオが増加していることに対応するものです。 / 人間用ブラウザとは異なり、タブやブックマーク、拡張機能などが不要で、軽量かつ高速な動作が求められるAIエージェントの要件を満たします。 [実務示唆: AIエージェントによるWeb操作を検討している開発者は、Kitesurfを導入し、AI専用の効率的なWebインタラクションを構築することで、パフォーマンス向上とリソース削減を図るべきです。] [GitHub: cloudflare/kitesurf] (Source: Publickey)</description>
+      <pubDate>Sun, 15 Nov 2026 15:30:19 +0000</pubDate>
     </item>
     <item>
-      <title>Lightdashで作れるグラフを試してみた【dbt v2】</title>
-      <link>https://zenn.dev/ryatora/articles/lightdash-chart-catalog</link>
-      <guid isPermaLink="false">https://zenn.dev/ryatora/articles/lightdash-chart-catalog</guid>
-      <description>[Score: 85] オープンソースBIツールLightdashとdbt v2を連携させ、NBAデータを用いて様々なグラフ作成を試した記事です。 / LightdashのグラフはYAMLで定義可能で、dbtのプロジェクトと連携してメトリック定義からグラフを生成できます。 / MotherDuckとDuckDBを利用したデータ構成や、Lightdashのデプロイ方法についても解説されています。 [実務示唆: dbtユーザーはLightdashを導入し、YAML定義によるデータ可視化とBIダッシュボード構築を試すことで、データ分析ワークフローを効率化できる。] [GitHub: ryatora/lightdash-chart-catalog] (Source: Zenn)</description>
-      <pubDate>Sun, 15 Nov 2026 15:07:26 +0000</pubDate>
+      <title>カーネギーメロン大学がコンピュータサイエンスのコースをYouTubeで無料公開</title>
+      <link>https://www.cs.cmu.edu/learn/</link>
+      <guid isPermaLink="false">https://www.cs.cmu.edu/learn/</guid>
+      <description>[Score: 85] カーネギーメロン大学がAI、ロボティクス、システム、生物学など、主要分野のコンピュータサイエンスコースをYouTubeで無料公開しました。 / これにより、世界中の誰もが最先端の教育コンテンツにアクセスできるようになります。 / 将来的には、AIチューター機能や公式の資格取得プログラムも提供される予定です。 [実務示唆: 最先端のコンピュータサイエンス教育に無料でアクセスできるため、自身のスキルアップや新しい技術分野の学習に積極的に活用することを推奨します。] (Source: Hacker News)</description>
+      <pubDate>Mon, 16 Nov 2026 20:43:36 +0000</pubDate>
     </item>
     <item>
-      <title>.NET 11 の ASP.NET Core Blazor の新機能のスケールイン対応機能！</title>
-      <link>https://zenn.dev/microsoft/articles/aspnetcore-blazor-dotnet11-scale</link>
-      <guid isPermaLink="false">https://zenn.dev/microsoft/articles/aspnetcore-blazor-dotnet11-scale</guid>
-      <description>[Score: 85] .NET 11のASP.NET Core Blazor InteractiveServerモードで、スケールイン時の回路（Circuit）移行が可能になりました。 / これにより、サーバー側の状態をクライアント側に保存し、別のサーバーに再接続することで柔軟なスケールアウト・インが実現します。 / 公式ドキュメントの「サーバーによって引き起こされる回線の一時停止」機能を利用し、Aspireダッシュボードを使った検証方法が紹介されています。 [実務示唆: .NET 11へのアップグレードを検討し、Blazor InteractiveServerアプリケーションでスケールイン対応機能を実装することで、システムの可用性と運用効率を向上させる。] (Source: Zenn)</description>
-      <pubDate>Sun, 15 Nov 2026 07:58:03 +0000</pubDate>
+      <title>Kotlin Fest 2026 参加記</title>
+      <link>https://zenn.dev/0st_ts/articles/d55862e1a134c2</link>
+      <guid isPermaLink="false">https://zenn.dev/0st_ts/articles/d55862e1a134c2</guid>
+      <description>[Score: 85] Kotlin Fest 2026の参加記で、Kotlin 2.5.0-RCで導入される実験的な新機能について解説しています。 / 特に、companion objectのインスタンスなしでクラスに紐づく関数を書く機能と、Value Classに複数のプロパティを持たせるFull Value Classに焦点が当てられています。 / Value ClassのIdentity（同一性）の概念や、JavaのProject Valhalla、不変性についても触れ、パフォーマンス改善の可能性を示唆しています。 [実務示唆: Kotlin開発者は、Kotlin 2.5.0-RCで導入されるValue Classや関連する新機能を早期に検証し、コードの安全性向上やパフォーマンス最適化に活用できるか評価することを推奨します。] (Source: Zenn)</description>
+      <pubDate>Mon, 16 Nov 2026 10:00:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>中編 LLM推論エンジンを作る</title>
+      <link>https://zenn.dev/shozotanaka/articles/632191056c62f4</link>
+      <guid isPermaLink="false">https://zenn.dev/shozotanaka/articles/632191056c62f4</guid>
+      <description>[Score: 85] 本記事では、Llamaの計算グラフを組み立てるLlamaArch::BuildGraphのコードを詳細に解説しています。 / LlamaはggmlLMが扱うモデルの中で最もシンプルな形をしており、Gemmaやgpt-ossもLlamaとの違いとして説明できるため、本章が本書の中心となります。 / 対応するソースはArch/LlamaArch.cppと共通部品を集めたGraphOps.cppで、Llamaのデコードにおける計算グラフの構造が示されています。 [実務示唆: LLMの推論エンジンの内部構造を理解することで、モデルの最適化やカスタム実装の際に具体的な改善点を見つけやすくなるため、関連コードを深く読み込むことを推奨します。] (Source: Zenn)</description>
+      <pubDate>Mon, 16 Nov 2026 07:46:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>PostgreSQL 19リリース延期の背景。β4で多くの新機能取り下げが発生、原因はAIによるコードレビューか</title>
+      <link>https://www.publickey1.jp/blog/26/postgresql_194ai.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresql_194ai.html</guid>
+      <description>[Score: 80] PostgreSQL 19のリリースが延期され、β4で多くの新機能が取り下げられた背景について解説しています。 / 例年9月か10月に行われるメジャーバージョンアップが遅れた原因として、AIによるコードレビュー支援がバグ発見を加速させた可能性が指摘されています。 / これにより、より厳密なレビューが必要となり、リリーススケジュールに影響が出たと考えられています。 [実務示唆: AIによるコードレビューは品質向上に寄与する一方で、開発プロセスやリリーススケジュールに影響を与える可能性があるため、導入時にはその影響を考慮した計画が必要です。] [GitHub: postgres/postgres] (Source: Publickey)</description>
+      <pubDate>Sun, 15 Nov 2026 15:31:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
+      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>LLMエージェントはいつ忘れるべきか？クエリに重要なリゾルバーエラー下でのメモリフィルタリング</title>
+      <link>https://arxiv.org/abs/2611.17338</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.17338</guid>
+      <description>[Score: 80] この論文は、LLMエージェントがクエリ処理中に発生する重要なエラー状況下で、いつどのように記憶を忘れるべきか（メモリフィルタリング）について研究しています。 / LLMエージェントの効率性と信頼性を向上させるためのメモリ管理戦略に焦点を当てています。 / arXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。 [実務示唆: LLMエージェントを開発する際、クエリ処理の失敗時に不適切な情報を記憶から効果的に削除するメモリフィルタリング戦略を検討し、エージェントの堅牢性を高めるべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenCode Browse</title>
+      <link>https://opencode.ai/product/browse</link>
+      <guid isPermaLink="false">https://opencode.ai/product/browse</guid>
+      <description>[Score: 80] OpenCode Browseは、AIエージェントが実際のブラウザを操作できるようにするMCPサーバーとChromium拡張機能です。 / エージェントはバックグラウンドでタブを開き、ページを読み込み、クリック、入力、スクリーンショット撮影、タブ録画を行います。 / ログインや2FA認証、支払いなどユーザーの操作が必要な場合は、タブをユーザーに渡し、完了後に作業を再開します。 [実務示唆: AIエージェントにブラウザ操作を自動化させたい開発者は、OpenCode BrowseのChrome拡張機能を導入し、その機能とセキュリティモデルを検証することを推奨します。] (Source: Hacker News)</description>
+      <pubDate>Mon, 16 Nov 2026 21:20:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>はじめてのAPIログ設計 — 「ログはあるのに調べられない」を防ぐには？</title>
+      <link>https://qiita.com/masashige0904/items/22f2836485ecc25ee527?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/masashige0904/items/22f2836485ecc25ee527?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] APIログ設計において、「ログはあるのに調べられない」という課題を解決するための考え方と具体的な設計方法を解説しています。 / 後から何を手がかりに調べたいかを考慮し、requestIdのような識別子をログに残すことで、複数のログを関連付けて追跡可能にすることが重要です。 / ログの出力項目、レベル、形式、ライブラリ選定、そしてCloudWatch Logs Insightsでの検索例まで、実践的な内容が網羅されています。 [実務示唆: APIログ設計時には、requestIdなどの一意な識別子を必ず含め、ログの出力ルールを統一することで、障害発生時の迅速な原因特定と調査を可能にするよう改善を推奨します。] (Source: Qiita)</description>
+      <pubDate>Mon, 16 Nov 2026 00:37:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>認証情報を渡さずにコーディングエージェントを実行する方法</title>
+      <link>https://blog.antonio.cx/running-agents-with-lend</link>
+      <guid isPermaLink="false">https://blog.antonio.cx/running-agents-with-lend</guid>
+      <description>[Score: 78] 著者は、リモートエージェントが自身の承認を得てローカルツールを使用できるようにする「lend」というツールを開発しました。 / これにより、SSHキーやパスワードマネージャーなどの機密情報をエージェントに直接渡すことなく、安全に利用できます。 / 複数のコーディングエージェントを並行して実行し、互いの作業をレビューさせるワークフローを構築しています。 [実務示唆: 機密情報を保護しつつAIコーディングエージェントを効率的に活用するため、lendのようなツールや、VM上でエージェントを実行しローカルリソースへのアクセスを制御する手法の導入を検討してください。] [GitHub: antonio-cx/lend] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 01:18:56 +0000</pubDate>
     </item>
   </channel>
 </rss>

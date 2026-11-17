@@ -5,28 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 14:06:13 +0000</lastBuildDate>
-    <item>
-      <title>フロントエンドのフレームワークを、安全に段階的に入れ替える</title>
-      <link>https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</link>
-      <guid isPermaLink="false">https://zenn.dev/yasuakiomokawa/articles/de83bb4c4ea928</guid>
-      <description>[Score: 95] フロントエンドのフレームワークを安全かつ段階的に入れ替えるための手法が解説されています。 / URLとページの読み込み（document）を境界とし、新旧フレームワークを混ぜずに並存させる大方針が示されています。 / これにより、移行途中でもアプリが動作し続け、変更を小さく保ち、経済的に安全な移行が可能になります。 [実務示唆: 大規模なフロントエンドのフレームワーク移行を計画する際、URLとdocumentを境界とする段階的移行戦略を採用し、リスクを最小限に抑える。] (Source: Zenn)</description>
-      <pubDate>Sat, 14 Nov 2026 07:12:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>AWSをローカルマシン上でエミュレートする、AWS公式の「AWSエミュレータ」正式リリース</title>
-      <link>https://www.publickey1.jp/blog/26/awsawsaws_1.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsawsaws_1.html</guid>
-      <description>[Score: 92] AWSが、ローカルマシン上でAWSのAPIをエミュレートする公式ツール「AWSエミュレータ」を正式リリースしました。 / このエミュレータは無料で利用でき、AWSアカウントなしでオフラインでのアプリケーション構築・テストが可能です。 / 特筆すべきは、エミュレータのコードがAmazon Bedrock AgentCore上の自律型AIエージェントによって生成・テスト・修正された点です。 [実務示唆: AWS環境での開発・テストコスト削減と高速化のため、AWSエミュレータを導入し、ローカル環境でのオフライン開発・テストフローを構築することを推奨します。] (Source: Publickey)</description>
-      <pubDate>Thu, 12 Nov 2026 15:09:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>Microsoft 365障害はなぜ長引いたのか？ 原因・タイムラインと「SLAクレジット」請求方法まとめ</title>
-      <link>https://www.itmedia.co.jp/pcuser/articles/2611/16/news045.html</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/pcuser/articles/2611/16/news045.html</guid>
-      <description>[Score: 92] Microsoft 365の大規模障害が長引いた原因とタイムライン、そしてSLAクレジットの請求方法について解説しています。 / 日本時間11月13日朝に発生し、14日午後まで影響が続いたこの障害は、多くの企業に多大な影響を与えました。 / Microsoftは事後報告（PIR）を公開予定であり、ユーザーはSLAに基づきサービスクレジットを請求できる可能性があります。 [実務示唆: Microsoft 365ユーザーは、今回の障害のPIRを注視し、SLAに基づいたサービスクレジット請求の可能性を検討するとともに、自社のBCPを見直すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 21:12:32 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 17 Nov 2026 04:17:01 +0000</lastBuildDate>
     <item>
       <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
       <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
@@ -35,39 +14,11 @@
       <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
     </item>
     <item>
-      <title>こんなに変わった！ AWSネットワークの常識</title>
-      <link>https://speakerdeck.com/shotashiratori/nw-jaws-10th-keynote</link>
-      <guid isPermaLink="false">https://speakerdeck.com/shotashiratori/nw-jaws-10th-keynote</guid>
-      <description>[Score: 90] AWSネットワークの常識が大きく変化していることを解説する資料です。 / 2016年のベストプラクティスが2026年にはアンチパターンとなる可能性を指摘しています。 / 最新のAWSネットワークサービスや機能の進化、そしてそれらがもたらす設計思想の変化について深く掘り下げています。 [実務示唆: AWSネットワーク設計者は、過去のベストプラクティスが現在のアンチパターンになっていないか定期的に見直し、最新のサービスや機能の活用を検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 15 Nov 2026 12:30:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に</title>
-      <link>https://www.publickey1.jp/blog/26/playwrightbun.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/playwrightbun.html</guid>
-      <description>[Score: 85] Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンv1.65.0でBunでのテストランナー実行を正式にサポートしました。 / これにより、PlaywrightのテストランナーはNode.jsに加えてBun環境でも動作可能になります。 / BunがTypeScriptテストファイルを直接トランスパイルするため、Babelやコンパイルキャッシュが不要となり、システムがシンプルになる利点があります。 [実務示唆: PlaywrightユーザーはBunを導入することで、TypeScriptテストのトランスパイルプロセスを簡素化し、テスト実行の高速化や開発環境の効率化を検討しましょう。] [GitHub: microsoft/playwright] (Source: Publickey)</description>
-      <pubDate>Wed, 11 Nov 2026 15:07:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Lightdashで作れるグラフを試してみた【dbt v2】</title>
-      <link>https://zenn.dev/ryatora/articles/lightdash-chart-catalog</link>
-      <guid isPermaLink="false">https://zenn.dev/ryatora/articles/lightdash-chart-catalog</guid>
-      <description>[Score: 85] オープンソースBIツールLightdashとdbt v2を連携させ、NBAデータを用いて様々なグラフ作成を試した記事です。 / LightdashのグラフはYAMLで定義可能で、dbtのプロジェクトと連携してメトリック定義からグラフを生成できます。 / MotherDuckとDuckDBを利用したデータ構成や、Lightdashのデプロイ方法についても解説されています。 [実務示唆: dbtユーザーはLightdashを導入し、YAML定義によるデータ可視化とBIダッシュボード構築を試すことで、データ分析ワークフローを効率化できる。] [GitHub: ryatora/lightdash-chart-catalog] (Source: Zenn)</description>
-      <pubDate>Sun, 15 Nov 2026 15:07:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>Microsoftが隠れたWindowsバグがMicrosoft 365サービスを世界的に停止させた経緯を明かす</title>
-      <link>https://www.reddit.com/r/technology/comments/1xxnmnr/microsoft_reveals_how_a_hidden_windows_bug_took/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xxnmnr/microsoft_reveals_how_a_hidden_windows_bug_took/</guid>
-      <description>[Score: 85] Microsoftは、隠れたWindowsのバグが原因でMicrosoft 365サービスが世界的に停止した事態について詳細を明らかにしました。 / このバグはシステムの安定性に深刻な影響を与え、広範囲なサービス障害を引き起こしたと推測されます。 / 根本原因の特定と対策が今後のシステム信頼性向上に不可欠となります。 [実務示唆: Windows環境で重要なサービスを運用する際は、OSレベルの潜在的なバグによる障害リスクを考慮し、冗長性やフェイルオーバー戦略を強化すべきです。] (Source: Reddit)</description>
-      <pubDate>Mon, 16 Nov 2026 12:02:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>Protomaps: マップタイルのセルフホスティングが安価で容易に</title>
-      <link>https://bruceroettgers.eu/blog/protomaps/</link>
-      <guid isPermaLink="false">https://bruceroettgers.eu/blog/protomaps/</guid>
-      <description>[Score: 80] Protomapsエコシステムの一部であるPMTilesは、HTTP Rangeリクエストを介して機能するタイル形式で、単一ファイルとしてストレージバケットにデプロイ可能です。 / これにより、Mapboxなどの商用APIが高価になる非商用プロジェクトでも、安価かつ容易にマップタイルをセルフホストできるようになります。 / PMTilesはCLIツールで特定の範囲やズームレベルのデータを抽出でき、Bunny.netのようなCDNと組み合わせることで効率的に利用できます。 [実務示唆: マップタイルを自社でホストしたい開発者は、PMTilesを検討し、特にコスト削減やデータプライバシーが重要なプロジェクトでその有効性を検証してください。] [GitHub: protomaps/PMTiles] (Source: Hacker News)</description>
-      <pubDate>Sun, 15 Nov 2026 19:26:22 +0000</pubDate>
+      <title>はじめてのAPIログ設計 — 「ログはあるのに調べられない」を防ぐには？</title>
+      <link>https://qiita.com/masashige0904/items/22f2836485ecc25ee527?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/masashige0904/items/22f2836485ecc25ee527?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] APIログ設計において、「ログはあるのに調べられない」という課題を解決するための考え方と具体的な設計方法を解説しています。 / 後から何を手がかりに調べたいかを考慮し、requestIdのような識別子をログに残すことで、複数のログを関連付けて追跡可能にすることが重要です。 / ログの出力項目、レベル、形式、ライブラリ選定、そしてCloudWatch Logs Insightsでの検索例まで、実践的な内容が網羅されています。 [実務示唆: APIログ設計時には、requestIdなどの一意な識別子を必ず含め、ログの出力ルールを統一することで、障害発生時の迅速な原因特定と調査を可能にするよう改善を推奨します。] (Source: Qiita)</description>
+      <pubDate>Mon, 16 Nov 2026 00:37:01 +0000</pubDate>
     </item>
     <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
@@ -75,34 +26,6 @@
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-october-2026/</guid>
       <description>[Score: 75] GitHubは2026年10月の稼働状況レポートを公開し、可用性と信頼性向上の取り組みを報告しました。 / Azure Central USへの大幅な容量追加と障害エスカレーション経路の削減を進めました。 / しかし、書き込み停止、データ移行中の監視ギャップ、地域ネットワーク障害が発生し、容量増強と並行して安全な運用と分離、地域復旧の検証の必要性が強調されました。 [実務示唆: 大規模なサービスを運用するエンジニアは、GitHubの事例から、容量増強だけでなく、運用手順の安全性、システムの分離、災害復旧計画の定期的な検証の重要性を学び、自社システムに適用すべきです。] [GitHub: github/docs] (Source: GitHub Blog)</description>
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>TerserとUglifyJSの難読化はビルドステップであり、セキュリティ制御ではない</title>
-      <link>https://dev.to/veilvm/terser-and-uglifyjs-mangling-is-a-build-step-not-a-security-control-22b0</link>
-      <guid isPermaLink="false">https://dev.to/veilvm/terser-and-uglifyjs-mangling-is-a-build-step-not-a-security-control-22b0</guid>
-      <description>[Score: 75] TerserやUglifyJSによるJavaScriptの難読化（mangling）は、ファイルサイズ削減とキャッシュ効率向上のためのビルドステップであり、セキュリティ制御ではないと指摘しています。 / 難読化されたコードも、整形ツールを使えば容易に元の構造を復元でき、アルゴリズムや定数、制御フローはそのまま残ります。 / プロパティ名や文字列リテラルなども通常は残るため、より強力な保護が必要な場合は別の手段を講じるべきだと述べています。 [実務示唆: フロントエンド開発者は、TerserやUglifyJSによる難読化をセキュリティ対策として過信せず、機密性の高いロジックやデータを保護するためには、サーバーサイドでの処理や適切な暗号化など、より強固なセキュリティ対策を講じるべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 16 Nov 2026 01:14:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>シード生成地形を持つWebGLフライトシミュレーター</title>
-      <link>https://baron.by.dai.studio/</link>
-      <guid isPermaLink="false">https://baron.by.dai.studio/</guid>
-      <description>[Score: 70] WebGL 2を利用したフライトシミュレーターで、シード値に基づいて地形がリアルタイムに生成されます。 / ブラウザ上で動作し、離陸から着陸までを体験できるインタラクティブなデモです。 / 最新のChrome, Edge, Firefox, Safariでの動作が推奨されており、ハードウェアアクセラレーションが必要です。 [実務示唆: WebGL 2の最新機能を活用した3Dグラフィックス開発の参考にし、ブラウザベースの高性能アプリケーションの可能性を探る。] (Source: Hacker News)</description>
-      <pubDate>Sun, 15 Nov 2026 20:20:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>Edtechのコストアトリビューション: メトリクスAPIポーリングクエリによるGoの障害アラート</title>
-      <link>https://dev.to/knutberg8412/edtech-cost-attribution-go-failure-alerting-via-metrics-api-poll-queries-23e0</link>
-      <guid isPermaLink="false">https://dev.to/knutberg8412/edtech-cost-attribution-go-failure-alerting-via-metrics-api-poll-queries-23e0</guid>
-      <description>[Score: 70] Edtech分野におけるAIエージェントのコストアトリビューションと障害アラートについて解説しています。 / メトリクスAPIポーリングは、コスト帰属が重要で、スケジューラ、重複排除、通知経路を自社で管理する際に有効です。 / 組み込みアラートは、ページ自体が製品要件である場合に適しており、障害検出には60秒のポーリング間隔と連続した失敗ループの閾値が推奨されます。 [実務示唆: AIエージェントのコスト管理と障害検知を強化するため、メトリクスAPIポーリングを導入し、コースレベルのコストラベルを付与することで、予算レビューとインシデントレビューの精度を向上させるべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 16 Nov 2026 01:16:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>Reactでの住宅査定リードファネル: 私の家の価値は？</title>
-      <link>https://dev.to/marcoschulz123/home-valuation-lead-funnel-in-react-whats-my-home-worth-5779</link>
-      <guid isPermaLink="false">https://dev.to/marcoschulz123/home-valuation-lead-funnel-in-react-whats-my-home-worth-5779</guid>
-      <description>[Score: 70] Reactで不動産売却リード獲得のための住宅査定ファネルを構築する方法について解説しています。 / 訪問者の尊重とリード獲得を両立させるためのUI/UX設計の重要性を強調。 / 特に、最初の入力フィールドの選択がコンバージョン率に大きく影響することを指摘しています。 [実務示唆: リード獲得フォームを設計する際は、ユーザー体験を最優先し、最初の質問を「住所」にするなど、心理的ハードルの低い情報から求めることでコンバージョン率向上を図るべきです。] (Source: Dev.to)</description>
-      <pubDate>Mon, 16 Nov 2026 14:00:02 +0000</pubDate>
     </item>
   </channel>
 </rss>
