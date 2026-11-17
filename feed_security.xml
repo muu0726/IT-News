@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Nov 2026 04:17:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 14:57:18 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
@@ -28,6 +28,27 @@
       <pubDate>Mon, 16 Nov 2026 12:53:34 +0000</pubDate>
     </item>
     <item>
+      <title>当社お客様の情報漏えいの可能性に関するお詫びとお知らせ:楽天証券</title>
+      <link>https://www.rakuten-sec.co.jp/web/info/info20261117-02.html</link>
+      <guid isPermaLink="false">https://www.rakuten-sec.co.jp/web/info/info20261117-02.html</guid>
+      <description>[Score: 90] 楽天証券は、第三者による不正アクセスを受け、お客様情報の一部が漏えいした可能性があることを発表しました。 / ログインパスワードや暗証番号の漏えいは確認されていませんが、お客様には注意を呼びかけています。 / 影響を受けたお客様には個別に連絡し、引き続き調査を進めるとしています。 [実務示唆: 楽天証券の利用者は、不審なメールやSMS、電話に注意し、パスキー認証の設定を推奨します。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 17 Nov 2026 08:41:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>楽天証券に不正アクセス 最大1125万口座の情報漏えい可能性</title>
+      <link>https://www.watch.impress.co.jp/docs/news/2157207.html</link>
+      <guid isPermaLink="false">https://www.watch.impress.co.jp/docs/news/2157207.html</guid>
+      <description>[Score: 90] 楽天証券が第三者による不正アクセスを受け、最大1125万口座のログインIDを含む顧客情報が漏えいした可能性があると発表しました。 / テスト環境のシステムから情報が流出したとみられ、氏名、住所、出金先口座情報なども含まれる可能性があります。 / パスワードや暗証番号の漏えいは確認されていませんが、同社はパスキー認証の利用を推奨しています。 [実務示唆: 楽天証券の利用者は、パスキー認証を設定し、不審な連絡には応じないよう注意喚起を徹底すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 17 Nov 2026 09:23:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>楽天証券に不正アクセス、最大1125万口座のログインIDなど漏えいのおそれ（CNET Japan） - Yahoo!ニュース</title>
+      <link>https://news.yahoo.co.jp/articles/141fe69b0f33952604cde710494bbdff584f269a</link>
+      <guid isPermaLink="false">https://news.yahoo.co.jp/articles/141fe69b0f33952604cde710494bbdff584f269a</guid>
+      <description>[Score: 90] 楽天証券が不正アクセスを受け、最大1125万口座のログインIDと、最大447万口座の氏名や住所、出金先口座情報などが漏えいした可能性があると発表しました。 / テスト環境からの情報流出が原因とみられ、退会者の情報も含まれています。 / パスワードの漏えいは確認されていませんが、パスキー認証の利用と不審な連絡への注意を呼びかけています。 [実務示唆: 楽天証券のユーザーは、パスキー認証を有効にし、フィッシング詐欺に警戒するとともに、自身の口座状況を定期的に確認することが重要です。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 17 Nov 2026 09:33:35 +0000</pubDate>
+    </item>
+    <item>
       <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
       <link>https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
@@ -35,11 +56,25 @@
       <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
     </item>
     <item>
+      <title>Optimizelyを利用したサイバー攻撃により、IKEA、Salesforce、GitLab、Zoomを含む178の主要ウェブサイトが被害に</title>
+      <link>https://www.reddit.com/r/technology/comments/1xykxww/cyber_attack_hits_178_major_websites_including/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xykxww/cyber_attack_hits_178_major_websites_including/</guid>
+      <description>[Score: 85] Optimizelyを悪用したサイバー攻撃により、IKEAやSalesforceなど多数の主要ウェブサイトが影響を受けました。 / この攻撃は広範囲にわたり、178ものサイトが被害に遭ったと報じられています。 / 具体的な攻撃手法や被害の詳細は不明ですが、サプライチェーン攻撃の可能性が示唆されます。 [実務示唆: 利用しているウェブサービスがOptimizelyを使用している場合、セキュリティ設定と最新の脆弱性情報を確認し、必要に応じて対策を講じるべきです。] (Source: Reddit)</description>
+      <pubDate>Tue, 17 Nov 2026 13:50:49 +0000</pubDate>
+    </item>
+    <item>
       <title>Windows 11がコーディングエージェントと開発ツールの使用状況データを収集</title>
       <link>https://xusheng.dev/posts/windows-coding-agent-telemetry/</link>
       <guid isPermaLink="false">https://xusheng.dev/posts/windows-coding-agent-telemetry/</guid>
       <description>[Score: 70] Windows 11のシステムDLLが、ユーザーが使用するコーディングエージェントや開発ツールの情報を収集し、Microsoftに送信していることが判明しました。 / このデータ収集はデフォルトで有効な「オプションの診断データ」の一部として行われます。 / プライバシーを懸念するユーザーは、設定で診断データの送信を無効にする必要があります。 [実務示唆: Windows 11ユーザーは、プライバシー保護のため、設定から「オプションの診断データ」の送信を無効にすることを検討し、使用する開発ツールのテレメトリ設定も確認してください。] (Source: Hacker News)</description>
       <pubDate>Mon, 16 Nov 2026 22:58:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIやクローラーが読みにくいGo言語製のモーションCAPTCHAを構築</title>
+      <link>https://dev.to/ravi_kumar_7ec5add2202ec2/i-built-a-motion-captcha-in-go-that-is-harder-for-ai-and-crawlers-to-read-ek3</link>
+      <guid isPermaLink="false">https://dev.to/ravi_kumar_7ec5add2202ec2/i-built-a-motion-captcha-in-go-that-is-harder-for-ai-and-crawlers-to-read-ek3</guid>
+      <description>[Score: 70] 従来のCAPTCHAが自動システムに解読されやすくなっている現状に対し、Go言語でモーションCAPTCHAライブラリ「Gotcha」が開発されました。 / Gotchaは動く視覚ノイズの中に数字の課題を隠し、アニメーション再生時にのみ答えが読み取れるようにします。 / これにより、基本的なOCRや単一フレーム分析、シンプルなクローラーによる自動解読を困難にすることを目的としています。 [実務示唆: 既存のCAPTCHAのAIによる突破に懸念がある場合、Go言語製アプリケーションでGotchaのようなモーションCAPTCHAの導入を検討し、セキュリティ強化を図るべきです。] [GitHub: ravikumariitk/gotcha] (Source: Dev.to)</description>
+      <pubDate>Tue, 17 Nov 2026 14:46:28 +0000</pubDate>
     </item>
   </channel>
 </rss>

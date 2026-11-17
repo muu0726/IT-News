@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-17T13:12:07.771871+09:00",
-  "total_count": 47,
-  "success_count": 34,
-  "error_count": 13,
+  "generated_at": "2026-11-17T23:55:51.995633+09:00",
+  "total_count": 81,
+  "success_count": 64,
+  "error_count": 17,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
     {
@@ -52,7 +52,9 @@
       "new_at": "2026-11-17T13:12:07.771871+09:00",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 0,
+      "topic_group": 1,
+      "topic_size": 2
     },
     {
       "title": "実践パスキー認証設計",
@@ -74,6 +76,28 @@
       "analysis_status": "ok",
       "new_at": "2026-11-17T13:12:07.771871+09:00",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "お問い合わせの8割を、AIボットが解決するようになった話",
+      "url": "https://zenn.dev/rimo/articles/701d18b7764669",
+      "source": "Zenn",
+      "published": "2026-11-17T01:05:13+00:00",
+      "reading_min": 7,
+      "summary": "Rimo社が、増加するカスタマーサポート問い合わせに対応するため、AIボットを内製開発した事例を紹介しています。\n既存のRAG（検索拡張生成）システムを応用し、ヘルプ記事を検索対象とすることで、問い合わせの8割を自動解決。\n契約プランに応じた回答の出し分けや、記事にない運用上の暗黙知への対応など、実用的な工夫が凝らされています。",
+      "actionable_takeaway": "カスタマーサポートの効率化を目指す企業は、既存のRAGシステムやヘルプ記事を活用したAIボットの内製を検討し、契約プランに応じた回答や暗黙知の取り込みで解決率向上を図るべきです。",
+      "tags": [
+        "AIチャットボット",
+        "カスタマーサポート",
+        "RAG"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "AIをビジネス課題解決に具体的に適用し、問い合わせの8割を自動化という顕著な成果を出している点が非常に高く評価できます。内製化のメリットや実用的な工夫も詳細に解説されており、多くの企業にとって参考になるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -146,7 +170,123 @@
       "new_at": "2026-11-17T13:12:07.771871+09:00",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
-      "hatena_count": 48
+      "hatena_count": 85
+    },
+    {
+      "title": "毎月6,000 AI Agentsを捌くためにキーボードを捨てた話",
+      "url": "https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce",
+      "source": "Zenn",
+      "published": "2026-11-17T03:13:36+00:00",
+      "reading_min": 11,
+      "summary": "開発統括者が、毎月6,000セッションものAI Agentを効率的に活用するため、開発スタイルを大幅に刷新した事例を紹介しています。\n認知負荷と意思決定コスト、AI指示コストを極限まで減らすことを目的に、Orca ADEや自作のiOS/Apple Watchアプリを導入。\nClaude CodeのTask Toolsを活用し、AIが自律的にタスク進捗を出力する環境を構築することで、大量のAI Agentを管理しています。",
+      "actionable_takeaway": "AIを活用した開発効率化を目指すエンジニアは、認知負荷軽減とAIとの連携コスト削減を意識し、Orca ADEやClaude CodeのTask Toolsのようなツール導入・自作を検討すべきです。",
+      "github_repo": "andoshin11/orca-milestone",
+      "tags": [
+        "AI開発",
+        "開発効率化",
+        "Agentic AI"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AI Agentを大量に活用する先進的な開発手法と、そのための具体的な環境構築ノウハウが詳細に解説されており、開発効率化への示唆が非常に大きいため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 42
+    },
+    {
+      "title": "AI音楽会社がミュージシャン自身の録音に著作権を主張し、YouTube動画が削除される",
+      "url": "https://www.reddit.com/r/technology/comments/1xyi3bu/ai_music_company_claims_copyright_over_musicians/",
+      "source": "Reddit",
+      "published": "2026-11-17T11:29:38+00:00",
+      "summary": "AI音楽会社が、ミュージシャン自身のオリジナル録音に対して著作権を主張し、その結果YouTube動画が削除された事例が報告されました。\nこれはAI生成コンテンツと既存著作物の権利関係における複雑な問題を示唆しています。\nAI技術の進化に伴い、著作権侵害や誤った権利主張のリスクが高まっている現状が浮き彫りになっています。",
+      "actionable_takeaway": "AIツールを利用するクリエイターは、著作権侵害のリスクを理解し、自身の作品が不当に主張されないよう、プラットフォームのポリシーを確認しましょう。",
+      "tags": [
+        "AI",
+        "著作権",
+        "音楽"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 90,
+      "score_reason": "AIと著作権に関する深刻な問題提起であり、クリエイターやプラットフォーム、AI開発者にとって喫緊の課題であるため、非常に重要度が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "当社お客様の情報漏えいの可能性に関するお詫びとお知らせ:楽天証券",
+      "url": "https://www.rakuten-sec.co.jp/web/info/info20261117-02.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-17T08:41:53+00:00",
+      "reading_min": 8,
+      "summary": "楽天証券は、第三者による不正アクセスを受け、お客様情報の一部が漏えいした可能性があることを発表しました。\nログインパスワードや暗証番号の漏えいは確認されていませんが、お客様には注意を呼びかけています。\n影響を受けたお客様には個別に連絡し、引き続き調査を進めるとしています。",
+      "actionable_takeaway": "楽天証券の利用者は、不審なメールやSMS、電話に注意し、パスキー認証の設定を推奨します。",
+      "tags": [
+        "情報漏えい",
+        "セキュリティ",
+        "楽天証券"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "大手証券会社の情報漏えいは、顧客の資産に直結する重大なセキュリティインシデントであり、広範囲に影響を及ぼす可能性があるため、非常に高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 558,
+      "topic_group": 3,
+      "topic_size": 3
+    },
+    {
+      "title": "楽天証券に不正アクセス 最大1125万口座の情報漏えい可能性",
+      "url": "https://www.watch.impress.co.jp/docs/news/2157207.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-17T09:23:14+00:00",
+      "reading_min": 1,
+      "summary": "楽天証券が第三者による不正アクセスを受け、最大1125万口座のログインIDを含む顧客情報が漏えいした可能性があると発表しました。\nテスト環境のシステムから情報が流出したとみられ、氏名、住所、出金先口座情報なども含まれる可能性があります。\nパスワードや暗証番号の漏えいは確認されていませんが、同社はパスキー認証の利用を推奨しています。",
+      "actionable_takeaway": "楽天証券の利用者は、パスキー認証を設定し、不審な連絡には応じないよう注意喚起を徹底すべきです。",
+      "tags": [
+        "情報漏えい",
+        "セキュリティ",
+        "楽天証券"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "大規模な顧客情報漏えいの可能性があり、金融機関の信頼性に関わる重大なインシデントであるため、非常に高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 125,
+      "topic_group": 3,
+      "topic_size": 3
+    },
+    {
+      "title": "楽天証券に不正アクセス、最大1125万口座のログインIDなど漏えいのおそれ（CNET Japan） - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/141fe69b0f33952604cde710494bbdff584f269a",
+      "source": "はてなブックマーク",
+      "published": "2026-11-17T09:33:35+00:00",
+      "reading_min": 2,
+      "summary": "楽天証券が不正アクセスを受け、最大1125万口座のログインIDと、最大447万口座の氏名や住所、出金先口座情報などが漏えいした可能性があると発表しました。\nテスト環境からの情報流出が原因とみられ、退会者の情報も含まれています。\nパスワードの漏えいは確認されていませんが、パスキー認証の利用と不審な連絡への注意を呼びかけています。",
+      "actionable_takeaway": "楽天証券のユーザーは、パスキー認証を有効にし、フィッシング詐欺に警戒するとともに、自身の口座状況を定期的に確認することが重要です。",
+      "tags": [
+        "情報漏えい",
+        "セキュリティ",
+        "楽天証券"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "金融機関における大規模な顧客情報漏えいは、社会的な影響が大きく、ユーザーへの直接的なリスクも高いため、高いスコアをつけました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 88,
+      "topic_group": 3,
+      "topic_size": 3
     },
     {
       "title": "Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける",
@@ -214,7 +354,7 @@
       "new_at": "2026-11-17T13:12:07.771871+09:00",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
-      "hatena_count": 7
+      "hatena_count": 13
     },
     {
       "title": "AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説",
@@ -268,8 +408,8 @@
       "url": "https://www.cs.cmu.edu/learn/",
       "source": "Hacker News",
       "published": "2026-11-16T20:43:36+00:00",
-      "hn_score": 930,
-      "hn_comments": 145,
+      "hn_score": 1913,
+      "hn_comments": 263,
       "reading_min": 1,
       "summary": "カーネギーメロン大学がAI、ロボティクス、システム、生物学など、主要分野のコンピュータサイエンスコースをYouTubeで無料公開しました。\nこれにより、世界中の誰もが最先端の教育コンテンツにアクセスできるようになります。\n将来的には、AIチューター機能や公式の資格取得プログラムも提供される予定です。",
       "actionable_takeaway": "最先端のコンピュータサイエンス教育に無料でアクセスできるため、自身のスキルアップや新しい技術分野の学習に積極的に活用することを推奨します。",
@@ -285,7 +425,7 @@
       "new_at": "2026-11-17T13:12:07.771871+09:00",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
-      "hatena_count": 3
+      "hatena_count": 5
     },
     {
       "title": "Kotlin Fest 2026 参加記",
@@ -330,6 +470,116 @@
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "軽量なマイクロVMでネイティブよりアプリを高速起動できる「Hyperlight-Unikraft」登場",
+      "url": "https://www.publickey1.jp/blog/26/vmhyperlight-unikraft.html",
+      "source": "Publickey",
+      "published": "2026-11-16T18:30:31+00:00",
+      "reading_min": 9,
+      "summary": "Cloud Native Computing Foundationが「Hyperlight-Unikraft」を発表しました。\nこれは軽量な仮想マシンマネージャ「Hyperlight」とUnikernel向けツールキット「Unikraft」を組み合わせたものです。\nLinuxアプリケーションを再コンパイルなしで、Unikernelのような軽量かつセキュアな実行環境でMicroVMとして実行できます。",
+      "actionable_takeaway": "アプリケーションの起動高速化やセキュリティ強化のため、Hyperlight-Unikraftの導入を検討し、既存Linuxアプリの動作検証を行うと良いでしょう。",
+      "tags": [
+        "MicroVM",
+        "Unikernel",
+        "Cloud Native"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "軽量VMとUnikernelの組み合わせにより、アプリケーションの起動速度とセキュリティを大幅に向上させる可能性があり、クラウドネイティブ開発に大きな影響を与えるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T13:12:07.771871+09:00",
+      "is_hot": false,
+      "hatena_count": 78
+    },
+    {
+      "title": "ローカルLLM入門",
+      "url": "https://zenn.dev/port_inc/articles/ff974c7456f4db",
+      "source": "Zenn",
+      "published": "2026-11-17T07:17:24+00:00",
+      "reading_min": 10,
+      "summary": "この記事は、手元のPCやブラウザでLLMを動かす仕組みについて解説しています。\nLLMの「重み」がモデルの正体であり、これをローカルで動かすことで情報漏洩リスクを低減できると説明。\nオープンウェイトモデルの性能向上が著しく、フロンティアモデルとの差が縮まっている現状も紹介しています。",
+      "actionable_takeaway": "情報セキュリティが重要なプロジェクトでは、ローカルLLMの導入を検討し、機密データを外部に送信せずにAIを活用する環境を構築すべきです。",
+      "tags": [
+        "LLM",
+        "ローカルAI",
+        "プライバシー"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "ローカルLLMの具体的な仕組みとメリット、最新の性能動向を分かりやすく解説しており、実務での活用を検討する上で非常に有用な情報を提供しているため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "社長の一言は重い。RAGにも忖度させてみた（重み付け検索）",
+      "url": "https://qiita.com/kikuziro/items/43b360420d0cdcbf190c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-14T15:30:41+00:00",
+      "reading_min": 6,
+      "summary": "人間が情報に「誰が言ったか」で重みをつけるように、RAG（Retrieval-Augmented Generation）でも情報の重要度を考慮する手法を提案しています。\nチャンクに「社長」「重要」といったメタデータを付与し、検索結果に重み付けをすることで、より適切な情報を上位に表示させます。\nAmazon Bedrock Managed Knowledge Baseを用いた実装例が紹介されており、RAGの精度向上に貢献する可能性を示しています。",
+      "actionable_takeaway": "RAGシステム導入時は、情報の信頼性や重要度を示すメタデータを付与し、重み付け検索を実装することで回答精度を向上させましょう。",
+      "tags": [
+        "RAG",
+        "LLM",
+        "Amazon Bedrock"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "RAGの精度向上という実用的な課題に対し、メタデータによる重み付けという具体的な解決策を提示しており、技術的な新規性と実用性が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "米国、アメリカ人労働者を解雇してから2年以内に同じまたは類似の職種で外国人労働者を雇用することを雇用主に禁止する法案を提案",
+      "url": "https://www.reddit.com/r/technology/comments/1xy9znd/us_proposes_blocking_employers_from_sponsoring/",
+      "source": "Reddit",
+      "published": "2026-11-17T03:32:18+00:00",
+      "summary": "米国政府が、アメリカ人労働者を解雇した企業が2年以内に同じまたは類似の職種で外国人労働者を雇用することを禁止する法案を提案しました。\nこの法案は、国内労働者の保護を目的としており、企業の外国人労働者雇用戦略に大きな影響を与える可能性があります。\n技術系企業を含む多くの業界で、人材採用や配置に関する規制が強化される見込みです。",
+      "actionable_takeaway": "米国で事業を展開する企業は、外国人労働者の雇用に関する規制強化の動向を注視し、採用戦略や人員計画を見直す必要があります。",
+      "tags": [
+        "労働法",
+        "米国",
+        "雇用"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 85,
+      "score_reason": "米国の労働市場と技術系企業の採用戦略に直接的な影響を与える可能性があり、ビジネス・業界動向として非常に重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Optimizelyを利用したサイバー攻撃により、IKEA、Salesforce、GitLab、Zoomを含む178の主要ウェブサイトが被害に",
+      "url": "https://www.reddit.com/r/technology/comments/1xykxww/cyber_attack_hits_178_major_websites_including/",
+      "source": "Reddit",
+      "published": "2026-11-17T13:50:49+00:00",
+      "summary": "Optimizelyを悪用したサイバー攻撃により、IKEAやSalesforceなど多数の主要ウェブサイトが影響を受けました。\nこの攻撃は広範囲にわたり、178ものサイトが被害に遭ったと報じられています。\n具体的な攻撃手法や被害の詳細は不明ですが、サプライチェーン攻撃の可能性が示唆されます。",
+      "actionable_takeaway": "利用しているウェブサービスがOptimizelyを使用している場合、セキュリティ設定と最新の脆弱性情報を確認し、必要に応じて対策を講じるべきです。",
+      "tags": [
+        "Cybersecurity",
+        "Supply Chain Attack",
+        "Optimizely"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "Optimizelyを介したサプライチェーン攻撃は広範囲に影響を及ぼす可能性があり、多くの企業にとって重要なセキュリティリスクであるため、スコアを高くしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 1,
+      "topic_size": 2
     },
     {
       "title": "PostgreSQL 19リリース延期の背景。β4で多くの新機能取り下げが発生、原因はAIによるコードレビューか",
@@ -424,7 +674,7 @@
       "new_at": "2026-11-17T13:12:07.771871+09:00",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 5
     },
     {
       "title": "はじめてのAPIログ設計 — 「ログはあるのに調べられない」を防ぐには？",
@@ -445,6 +695,96 @@
       "analysis_status": "ok",
       "new_at": "2026-11-17T13:12:07.771871+09:00",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Node.jsとnpmをWebブラウザ上で実行可能にする「OpenVessel」、神戸ソフトがオープンソースで公開",
+      "url": "https://www.publickey1.jp/blog/26/nodejsnpmwebopenvessel.html",
+      "source": "Publickey",
+      "published": "2026-11-16T15:23:28+00:00",
+      "reading_min": 5,
+      "summary": "神戸ソフトが、Webブラウザ上でNode.jsとnpm、およびNode.js対応フレームワーク（Astroなど）を実行できる「OpenVessel」をオープンソースで公開しました。\nOpenVesselは、Webブラウザ上にインメモリのファイルシステムやプロセスなど、Node.jsを動かすための最小限のOSの仕組みを実装しています。\nNode.jsのテストの多くがブラウザ上でパスしており、デモサイトではAstroがブラウザ上で動作する様子が確認できます。",
+      "actionable_takeaway": "Webブラウザ上でのNode.js開発環境構築や、インタラクティブな学習・デモ環境としてOpenVesselの活用を検討し、その可能性を探ると良いでしょう。",
+      "tags": [
+        "Node.js",
+        "WebAssembly",
+        "npm"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 80,
+      "score_reason": "Node.jsをブラウザ上で実行できる技術は、開発環境のポータビリティ向上や学習コスト削減に繋がり、Web開発のあり方に影響を与える可能性があるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T13:12:07.771871+09:00",
+      "is_hot": false,
+      "hatena_count": 101
+    },
+    {
+      "title": "BaiduとXiaomiのCEOがAIの誇大広告とリターンの間のギャップ拡大を警告",
+      "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+      "source": "Hacker News",
+      "published": "2026-11-17T14:19:59+00:00",
+      "hn_score": 21,
+      "hn_comments": 2,
+      "summary": "BaiduとXiaomiのCEOが、AI分野における過度な期待と実際の投資収益の間に大きな隔たりがあることを指摘しました。\nこれは、AI技術の商業化や実用化における課題が浮き彫りになっていることを示唆しています。\nAI投資の意思決定において、より現実的な視点と慎重な評価が求められるでしょう。",
+      "actionable_takeaway": "AIプロジェクトを計画する際は、技術的な実現可能性だけでなく、明確なビジネス価値とROIを事前に厳密に評価し、過度な期待を避けるべきです。",
+      "tags": [
+        "AI",
+        "ビジネス",
+        "投資"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 80,
+      "score_reason": "AI業界の現状と将来性に関する重要な警鐘であり、ビジネス戦略や投資判断に大きな影響を与える可能性があるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "mise + gh skill で、dotfiles から Agent Skills を管理する",
+      "url": "https://zenn.dev/dress_code/articles/30bd78e1a67f87",
+      "source": "Zenn",
+      "published": "2026-11-17T03:00:08+00:00",
+      "reading_min": 14,
+      "summary": "dotfilesとmise、gh skillを組み合わせて、開発環境とAI Agent Skillsを一元管理する方法を紹介しています。\nHomebrewパッケージ、言語ツール、設定ファイルに加え、Claude CodeやCursor用のAgent Skillsもmiseで管理。\nこれにより、新しいMacでも`make install`一発で開発環境とAIスキルを再現できる効率的な仕組みを構築しています。",
+      "actionable_takeaway": "AI Agent Skillsが増加する開発環境では、dotfilesとmise、gh skillを活用してスキル管理を自動化し、環境構築の効率化と再現性向上を図るべきです。",
+      "github_repo": "yug1224/skills",
+      "tags": [
+        "dotfiles",
+        "mise",
+        "Agent Skills"
+      ],
+      "category": "プログラミング言語",
+      "score": 80,
+      "score_reason": "開発環境の自動化とAI Agent Skillsの管理という、現代の開発者にとって重要な課題に対する具体的な解決策を提示しており、実用性が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 23
+    },
+    {
+      "title": "AIを介したやり取りは、放っておくとAI Slopを加速させるかも",
+      "url": "https://qiita.com/inukai-masanori/items/141e960b0bab8015bdae?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-16T00:52:08+00:00",
+      "reading_min": 5,
+      "summary": "AIを使ったコミュニケーションが、読み手の認知負荷を高め「AI Slop」と呼ばれる質の低い文章を増やす可能性を指摘しています。\nAIが生成した文章をそのまま使うことで、書き手の工夫が失われ、読み手にとって本質が伝わりにくくなります。\n人と人のやり取りにおいて、AI生成物を介する際の「ひと手間」の重要性を強調しています。",
+      "actionable_takeaway": "AIで生成した文章を共有する際は、必ず自分の言葉で要点を加え、読み手の視点に立って内容を推敲する習慣をつけましょう。",
+      "tags": [
+        "AI",
+        "コミュニケーション",
+        "生産性"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 80,
+      "score_reason": "AIの普及に伴う新たなコミュニケーション課題を提起し、その解決策を具体的に示しており、多くのビジネスパーソンにとって重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -590,6 +930,120 @@
       "hatena_count": 0
     },
     {
+      "title": "行と列：実際どれくらい違うのか？",
+      "url": "https://spiraldb.com/blog/rows-vs-columns",
+      "source": "Hacker News",
+      "published": "2026-11-12T17:04:41+00:00",
+      "hn_score": 69,
+      "hn_comments": 24,
+      "reading_min": 23,
+      "summary": "構造化データを考える際、通常は行指向で考えますが、列指向との違いについて解説しています。\n行指向は個々のレコードの情報をまとめるのに適しており、多くのアプリケーションで利用されます。\n一方、列指向は特定の属性に対する集計処理などに優れており、データウェアハウスなどで活用されます。",
+      "actionable_takeaway": "データベース設計者は、アプリケーションのアクセスパターンやクエリの特性を考慮し、行指向と列指向のどちらがパフォーマンスとスケーラビリティに適しているかを慎重に選択すべきです。",
+      "tags": [
+        "データベース",
+        "データ構造",
+        "パフォーマンス"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 75,
+      "score_reason": "データベースの基本的なデータ構造に関する深い洞察を提供し、実務における設計判断に直接的な影響を与えるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "スマホ内蔵のセンサーを使って周辺光取得を試す",
+      "url": "https://zenn.dev/aldagram_tech/articles/f7b57935e31070",
+      "source": "Zenn",
+      "published": "2026-11-17T00:37:04+00:00",
+      "reading_min": 13,
+      "summary": "スマホ内蔵センサーを利用して周辺光を取得し、アプリのユーザー体験向上に活用する可能性を探る記事です。\nAndroidでは標準機能で照度（ルクス）を直接取得できる一方、iOSではリアルタイムでの直接取得が難しく、カメラを使った推定値で代替する必要があることを解説。\nCompose Multiplatformでの実装例や、OSごとの値の単位の違いについても触れています。",
+      "actionable_takeaway": "モバイルアプリ開発者は、AndroidとiOSで周辺光センサーの取得方法が異なることを理解し、ARKitやSensorManagerを活用してユーザー体験を向上させる機能を検討すべきです。",
+      "tags": [
+        "モバイル開発",
+        "センサー",
+        "iOS",
+        "Android"
+      ],
+      "category": "モバイル",
+      "score": 75,
+      "score_reason": "モバイルアプリ開発におけるセンサー活用という具体的な技術課題に対し、OSごとの違いや実装方法を詳細に解説しており、実用的な情報を提供しているため中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "部下がClaudeっぽいスライドしか出してこなくてウンザリしてる上司はこれを使わせなさい",
+      "url": "https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-17T00:58:19+00:00",
+      "reading_min": 14,
+      "summary": "AIが生成するスライドが「Claudeっぽい」と見なされる理由を解説しています。\nこれは生成AIの「分布収束」という仕組みによるもので、無難なデザインを生成しやすい傾向があります。\nAIに依存せず、聞き手や目的に合わせた資料作成スキルを部下に習得させる重要性を説いています。",
+      "actionable_takeaway": "AI生成資料の品質向上には、目的やターゲットを明確にし、AIに具体的な指示を与えるプロンプトエンジニアリングスキルを習得させましょう。",
+      "tags": [
+        "AI",
+        "プレゼンテーション",
+        "プロンプトエンジニアリング"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AIによる資料作成の課題と、その解決策としての人間側のスキル向上に焦点を当てており、実務に直結する示唆が多いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "おい、Mutation Test をやれ。テスト品質を、測るために",
+      "url": "https://zenn.dev/mizchi/articles/mutation-test-quality",
+      "source": "はてなブックマーク",
+      "published": "2026-11-17T09:59:42+00:00",
+      "reading_min": 9,
+      "summary": "AIがコードを生成する現代において、テストカバレッジだけではテスト品質を十分に担保できないと指摘しています。\nテスト品質を高める手法として、Mutation Testの重要性を強調し、その有効性を解説しています。\nMC/DCカバレッジなど、より厳密なテスト手法にも触れ、テストの限界と課題についても考察しています。",
+      "actionable_takeaway": "AI生成コードの品質保証のため、Mutation Testの導入を検討し、テストカバレッジだけでなくテストの有効性を評価する指標として活用すべきです。",
+      "github_repo": "rust-lang/goals",
+      "tags": [
+        "Mutation Testing",
+        "テスト品質",
+        "AI開発"
+      ],
+      "category": "プログラミング言語",
+      "score": 75,
+      "score_reason": "AIによるコード生成が普及する中で、テストの質を担保する新たな手法としてMutation Testの重要性を説いており、実務への示唆が大きいためスコアを高くしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 164
+    },
+    {
+      "title": ".NETでHTMLをHtmlAgilityPackやAngleSharpより10〜30倍高速にパース：DOMではなくタグのリスト",
+      "url": "https://dev.to/romanti3172/parsing-html-in-net-10-30x-faster-than-htmlagilitypack-and-anglesharp-a-list-of-tags-instead-of-a-2cab",
+      "source": "Dev.to",
+      "published": "2026-11-17T14:46:26+00:00",
+      "reading_min": 6,
+      "summary": "著者が長年使用してきたHTMLパーサー「z3l.FastHtmlParser」がオープンソースとして公開されました。\nこのパーサーは、HtmlAgilityPackやAngleSharpと比較して10〜30倍高速にHTMLをパースできます。\nDOMツリーを構築せず、タグのフラットなリストとして扱うことで、スクレイピングに必要な最小限の機能に特化し高速化を実現しています。",
+      "actionable_takeaway": "高負荷なスクレイピング処理を行う.NETアプリケーションにおいて、z3l.FastHtmlParserの導入を検討し、パフォーマンス改善とコスト削減を図るべきです。",
+      "tags": [
+        ".NET",
+        "HTML Parsing",
+        "Performance"
+      ],
+      "category": "プログラミング言語",
+      "score": 75,
+      "score_reason": "既存ライブラリと比較して大幅な高速化を実現しており、特に高負荷なスクレイピング処理を行う開発者にとって実用性が高く、パフォーマンス改善に直結するため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "LoRAWeaver: LoRA表現空間における方向性アダプタルーティング",
       "url": "https://arxiv.org/abs/2611.17340",
       "source": "arXiv cs.AI",
@@ -659,20 +1113,94 @@
       "hatena_count": 0
     },
     {
-      "title": "Node.jsとnpmをWebブラウザ上で実行可能にする「OpenVessel」、神戸ソフトがオープンソースで公開",
-      "url": "https://www.publickey1.jp/blog/26/nodejsnpmwebopenvessel.html",
-      "source": "はてなブックマーク",
-      "published": "2026-11-16T19:25:09+00:00",
-      "reading_min": 5,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
+      "title": "桿菌の極の初の写真",
+      "url": "https://nautil.us/check-out-the-first-photos-of-the-poles-of-a-rod-shaped-bacterium-1286664",
+      "source": "Hacker News",
+      "published": "2026-11-16T15:02:20+00:00",
+      "hn_score": 14,
+      "hn_comments": 0,
+      "reading_min": 2,
+      "summary": "科学者たちは、桿菌の極の鮮明な画像を初めて撮影することに成功しました。\nこれは、新しいカメラではなく、微生物を長時間静止させて生きたまま維持する技術革新によるものです。\nこのブレークスルーは、原子間力顕微鏡とグルタルアルデヒドによる固定化技術を用いて実現されました。",
+      "actionable_takeaway": "微生物学研究者は、新しい観察技術や固定化手法を積極的に取り入れ、これまで不可能だった微細構造の解明に挑戦すべきです。",
+      "tags": [
+        "微生物学",
+        "顕微鏡",
+        "バイオテクノロジー"
+      ],
       "category": "その他",
       "score": 70,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-17T13:12:07.771871+09:00",
-      "is_hot": true,
-      "hatena_count": 68
+      "score_reason": "基礎科学における重要な発見であり、今後の微生物研究に大きな影響を与える可能性があるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "流出した法案により、オハイオ州のデータセンターが土地を収用できるようになる可能性。流出したオハイオ州の法案は、データセンターが「公共事業」として認定され、私有地を収用する権限を持つことを許可する可能性がある。",
+      "url": "https://www.reddit.com/r/technology/comments/1xygq7s/leaked_bill_could_allow_ohio_data_centers_to/",
+      "source": "Reddit",
+      "published": "2026-11-17T10:09:03+00:00",
+      "summary": "オハイオ州で流出した法案によると、データセンターが「公共事業」として認定され、私有地を収用する権限を持つ可能性が浮上しました。\nこれは、データセンター建設のための土地確保を容易にする一方で、住民の財産権に影響を与える可能性があります。\nデータセンター業界の拡大に伴うインフラ整備と地域社会との摩擦が顕在化する事例です。",
+      "actionable_takeaway": "データセンター関連企業は、土地収用権限付与の動向を注視し、事業計画への影響を評価するとともに、地域社会との関係構築に努めましょう。",
+      "tags": [
+        "データセンター",
+        "法案",
+        "インフラ"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "データセンターのインフラ整備と地域社会の権利に関する重要な問題提起であり、今後の業界動向に影響を与える可能性があります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIやクローラーが読みにくいGo言語製のモーションCAPTCHAを構築",
+      "url": "https://dev.to/ravi_kumar_7ec5add2202ec2/i-built-a-motion-captcha-in-go-that-is-harder-for-ai-and-crawlers-to-read-ek3",
+      "source": "Dev.to",
+      "published": "2026-11-17T14:46:28+00:00",
+      "reading_min": 2,
+      "summary": "従来のCAPTCHAが自動システムに解読されやすくなっている現状に対し、Go言語でモーションCAPTCHAライブラリ「Gotcha」が開発されました。\nGotchaは動く視覚ノイズの中に数字の課題を隠し、アニメーション再生時にのみ答えが読み取れるようにします。\nこれにより、基本的なOCRや単一フレーム分析、シンプルなクローラーによる自動解読を困難にすることを目的としています。",
+      "actionable_takeaway": "既存のCAPTCHAのAIによる突破に懸念がある場合、Go言語製アプリケーションでGotchaのようなモーションCAPTCHAの導入を検討し、セキュリティ強化を図るべきです。",
+      "github_repo": "ravikumariitk/gotcha",
+      "tags": [
+        "CAPTCHA",
+        "Go",
+        "Security"
+      ],
+      "category": "セキュリティ",
+      "score": 70,
+      "score_reason": "AIによるCAPTCHA突破が課題となる中で、新しいアプローチのモーションCAPTCHAはセキュリティ対策として有用であり、Go言語での実装も実用性が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "生トランザクションからビジネスインテリジェンスへ; 12,000件のトランザクションからデータが語るものとは？",
+      "url": "https://dev.to/nithya_srid/from-raw-transactions-to-business-intelligence-12000-transactions-but-what-is-the-data-actually-p0d",
+      "source": "Dev.to",
+      "published": "2026-11-17T14:44:56+00:00",
+      "reading_min": 2,
+      "summary": "Python、Pandas、PostgreSQL、SQL、Streamlitを用いて開発されたビジネス・顧客分析プロジェクト「RevenueIQ 360」について紹介しています。\n12,000件の合成小売トランザクションデータから、収益、収益性、顧客購買パターンを分析し、生データを構造化された分析情報に変換しました。\nRFM顧客セグメンテーションやコホート維持率分析を実装し、顧客行動やビジネスパフォーマンスの全体像を把握することの重要性を強調しています。",
+      "actionable_takeaway": "ビジネスデータの分析を行う際は、単なる収益だけでなく、RFM分析やコホート分析などの手法を組み合わせ、多角的に顧客行動を理解することで、より深いビジネスインテリジェンスを得るべきです。",
+      "tags": [
+        "データ分析",
+        "ビジネスインテリジェンス",
+        "Python"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "生データからビジネスインテリジェンスを導き出す具体的な手法とツールを紹介しており、データドリブンな意思決定を支援する上で非常に実践的で有用な情報であるため評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "高齢者が「完全自動運転」のためにテスラを購入している。これは問題だ",
@@ -692,6 +1220,51 @@
       "analysis_status": "ok",
       "new_at": "2026-11-17T13:12:07.771871+09:00",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "学校での携帯電話禁止がテストの成績を徐々に向上させているという新たな証拠",
+      "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+      "source": "Hacker News",
+      "published": "2026-11-17T11:45:51+00:00",
+      "hn_score": 440,
+      "hn_comments": 217,
+      "summary": "新たな研究により、学校での携帯電話禁止が生徒のテスト成績向上に寄与していることが示されました。\nこれは、生徒の集中力向上や学習環境の改善に繋がっている可能性が高いです。\n教育現場におけるテクノロジー利用のあり方について再考を促す結果と言えます。",
+      "actionable_takeaway": "教育機関は、生徒の学習効果を最大化するため、携帯電話の利用制限を検討し、その効果を定期的に評価すべきです。",
+      "tags": [
+        "教育",
+        "テクノロジー",
+        "学習効果"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "教育分野におけるテクノロジー利用の議論に一石を投じる内容であり、社会的な関心が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ORA-00054 Resource Busy: セッションの特定と待機するDDLの把握",
+      "url": "https://dev.to/uptimearchitect/ora-00054-resource-busy-find-the-session-and-know-which-ddl-will-wait-5eee",
+      "source": "Dev.to",
+      "published": "2026-11-17T14:44:56+00:00",
+      "reading_min": 10,
+      "summary": "Oracleデータベースで発生する「ORA-00054: resource busy」エラーの原因と対処法について解説しています。\nこのエラーは、未コミットのトランザクションがテーブルロックを保持している場合にDDLが実行できないことで発生します。\nエラーメッセージにセッションが特定されない場合の特定方法や、一部のDDLは待機する挙動、DDL_LOCK_TIMEOUTの影響などが説明されています。",
+      "actionable_takeaway": "ORA-00054エラー発生時は、記事で紹介されているSQLクエリを用いてロックを保持しているセッションを特定し、適切な対処（コミット、ロールバック、セッション切断など）を行うべきです。",
+      "tags": [
+        "Oracle",
+        "Database",
+        "DDL"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 65,
+      "score_reason": "Oracleデータベースの運用で頻繁に遭遇する可能性のあるエラーに対する具体的な解決策と深い洞察を提供しており、実務での問題解決に直接役立つため評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -786,6 +1359,97 @@
       "hatena_count": 0
     },
     {
+      "title": "Turbo Pascalで書かれたTurbo Pascalコンパイラ",
+      "url": "https://turbo51.com/compiler-design/tpc16-turbo-pascal-compiler-written-in-turbo-pascal",
+      "source": "Hacker News",
+      "published": "2026-11-15T18:40:57+00:00",
+      "hn_score": 52,
+      "hn_comments": 18,
+      "summary": "Turbo Pascalで書かれたTurbo Pascalコンパイラに関する記事です。\nこれは、自己ホスティングコンパイラの古典的な例であり、コンパイラ設計の興味深い側面を示しています。\nコンパイラの内部構造や、特定の言語でその言語自身のコンパイラを実装する技術的挑戦について考察できます。",
+      "actionable_takeaway": "コンパイラ開発に興味のあるエンジニアは、自己ホスティングコンパイラの概念を理解し、レガシーなコンパイラのソースコードを分析することで、深い洞察を得られるでしょう。",
+      "tags": [
+        "コンパイラ",
+        "Turbo Pascal",
+        "プログラミング言語"
+      ],
+      "category": "プログラミング言語",
+      "score": 60,
+      "score_reason": "コンパイラ設計というニッチな分野ではあるものの、自己ホスティングという技術的興味深さがあり、教育的価値も高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "韓国、大学入試不正行為で全国的な緊急警報を発令へ",
+      "url": "https://apnews.com/article/south-korea-exam-cheating-ai-college-e25b5612dbf4bd09fdf9197254c4547e",
+      "source": "Hacker News",
+      "published": "2026-11-17T14:00:47+00:00",
+      "hn_score": 25,
+      "hn_comments": 22,
+      "summary": "韓国が大学入試における不正行為に対し、全国規模の緊急警報システムを導入する予定です。\nこれは、AIなどの新技術を用いた不正行為の増加に対応するための措置と考えられます。\n教育の公平性を保つための政府の強い意志を示すものです。",
+      "actionable_takeaway": "AI技術の悪用は社会問題化しており、AI開発者は倫理的な利用と悪用防止策を考慮したシステム設計を常に意識すべきです。",
+      "tags": [
+        "AI倫理",
+        "教育",
+        "社会問題"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 60,
+      "score_reason": "AIの悪用という社会的な側面を扱っており、技術そのものの新規性よりもその影響に焦点を当てているため、スコアは中程度としました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "メルカリ、Google Play ストアでアプリが検索・ダウンロードできない状態に",
+      "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003274/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-17T10:58:03+00:00",
+      "reading_min": 2,
+      "summary": "11月17日午後6時40分ごろから、Google Play ストアでフリマアプリ「メルカリ」が検索・ダウンロードできない状態になりました。\nWebブラウザからアプリページにアクセスしてもエラーが表示され、メルカリ社は原因と詳細を調査中です。\nユーザーに対しては、すでにインストール済みのアプリを削除しないよう呼びかけています。",
+      "actionable_takeaway": "アプリ開発者は、Google Playストアでのアプリ公開状況を定期的に監視し、問題発生時には迅速な原因究明とユーザーへの情報提供体制を確立すべきです。",
+      "tags": [
+        "Google Play",
+        "アプリストア",
+        "メルカリ"
+      ],
+      "category": "モバイル",
+      "score": 60,
+      "score_reason": "大手アプリがストアから一時的に消える事象は、ユーザー体験に直接影響し、原因によっては技術的な問題やストア側のポリシー変更など、開発者にとって重要な示唆があるため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 41
+    },
+    {
+      "title": "VisualBasic.World: 1997年から2012年までのPlanet Source Codeプログラムのギャラリー",
+      "url": "https://visualbasic.world/",
+      "source": "Hacker News",
+      "published": "2026-11-15T23:08:30+00:00",
+      "hn_score": 140,
+      "hn_comments": 47,
+      "summary": "VisualBasic.Worldは、1997年から2012年までのVisual Basicプロジェクトのアーカイブギャラリーです。\nオリジナルのスクリーンショットを通じて、当時のVisual Basicプログラムを視覚的に探索できます。\nこれは、過去のプログラミング文化や開発の歴史を振り返る貴重な資料となります。",
+      "actionable_takeaway": "レガシーシステムの保守や移行に携わるエンジニアは、過去のコードベースや開発文化を理解する上で、このようなアーカイブを参考にすると良いでしょう。",
+      "tags": [
+        "Visual Basic",
+        "レガシーコード",
+        "プログラミング歴史"
+      ],
+      "category": "プログラミング言語",
+      "score": 55,
+      "score_reason": "特定のプログラミング言語の歴史的アーカイブであり、直接的な技術革新ではないものの、歴史的価値は高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
       "title": "Chase and other major banks hit by online outages",
       "url": "https://www.reddit.com/r/technology/comments/1xxyqfz/chase_and_other_major_banks_hit_by_online_outages/",
       "source": "Reddit",
@@ -814,7 +1478,7 @@
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
       "hatena_count": 0,
-      "topic_group": 1,
+      "topic_group": 2,
       "topic_size": 2
     },
     {
@@ -831,7 +1495,7 @@
       "analysis_status": "error",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
-      "hatena_count": 91
+      "hatena_count": 188
     },
     {
       "title": "AIが文学界を揺るがしている",
@@ -847,7 +1511,7 @@
       "analysis_status": "error",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
-      "hatena_count": 110
+      "hatena_count": 169
     },
     {
       "title": "「Microsoft 365」大規模障害、7月の修正で混入した不具合が原因　負荷増と容量減が重なり世界に波及",
@@ -863,8 +1527,8 @@
       "analysis_status": "error",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
-      "hatena_count": 89,
-      "topic_group": 1,
+      "hatena_count": 130,
+      "topic_group": 2,
       "topic_size": 2
     },
     {
@@ -881,23 +1545,7 @@
       "analysis_status": "error",
       "first_seen": "2026-11-17T13:12:07.771871+09:00",
       "is_hot": false,
-      "hatena_count": 67
-    },
-    {
-      "title": "軽量なマイクロVMでネイティブよりアプリを高速起動できる「Hyperlight-Unikraft」登場",
-      "url": "https://www.publickey1.jp/blog/26/vmhyperlight-unikraft.html",
-      "source": "Publickey",
-      "published": "2026-11-16T18:30:31+00:00",
-      "reading_min": 9,
-      "summary": "(解析中にエラーが発生しました)",
-      "tags": [],
-      "category": "その他",
-      "score": 50,
-      "score_reason": "解析エラー: All retries exhausted",
-      "analysis_status": "error",
-      "first_seen": "2026-11-17T13:12:07.771871+09:00",
-      "is_hot": false,
-      "hatena_count": 48
+      "hatena_count": 105
     },
     {
       "title": "Why the Lowest Unit Price Costs $403 More: Auditing Supplier Quotes for MOQ, Reel Multiples, and MOV in Excel",
@@ -980,6 +1628,102 @@
       "hatena_count": 0
     },
     {
+      "title": "Fake Delivery Text Scam: How It Works and How to Check Safely",
+      "url": "https://dev.to/dsg319/fake-delivery-text-scam-how-it-works-and-how-to-check-safely-1le6",
+      "source": "Dev.to",
+      "published": "2026-11-17T14:44:33+00:00",
+      "reading_min": 4,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: JSON parse failed: [\n  {\n    \"id\": 0,\n    \"title\": \"偽の配達テキスト詐欺：その仕組みと安全な確認方法\",\n    \"summary\": \"偽の配達テキスト詐欺は、荷物の到着を待つ心理を悪",
+      "analysis_status": "error",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Agents Cannot Hand Over What They Have Not Yet Understood",
+      "url": "https://arxiv.org/abs/2611.18642",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-17T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: JSON parse failed: [\n  {\n    \"id\": 0,\n    \"title\": \"偽の配達テキスト詐欺：その仕組みと安全な確認方法\",\n    \"summary\": \"偽の配達テキスト詐欺は、荷物の到着を待つ心理を悪",
+      "analysis_status": "error",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "How to make a moral agent: sentimentalism and rationalism as lenses on AI",
+      "url": "https://arxiv.org/abs/2611.18714",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-17T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: JSON parse failed: [\n  {\n    \"id\": 0,\n    \"title\": \"偽の配達テキスト詐欺：その仕組みと安全な確認方法\",\n    \"summary\": \"偽の配達テキスト詐欺は、荷物の到着を待つ心理を悪",
+      "analysis_status": "error",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Video-as-Experience: Learning Computer Use via Audio-Visual Understanding",
+      "url": "https://arxiv.org/abs/2611.18747",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-17T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: JSON parse failed: [\n  {\n    \"id\": 0,\n    \"title\": \"偽の配達テキスト詐欺：その仕組みと安全な確認方法\",\n    \"summary\": \"偽の配達テキスト詐欺は、荷物の到着を待つ心理を悪",
+      "analysis_status": "error",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Multimodal Fusion: A Review of Breast Cancer Advanced and Traditional Modalities",
+      "url": "https://arxiv.org/abs/2611.18793",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-17T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: JSON parse failed: [\n  {\n    \"id\": 0,\n    \"title\": \"偽の配達テキスト詐欺：その仕組みと安全な確認方法\",\n    \"summary\": \"偽の配達テキスト詐欺は、荷物の到着を待つ心理を悪",
+      "analysis_status": "error",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "D\\'ecoupage: Directorial Audio-Visual Control for Long Multi-Shot Video Generation",
+      "url": "https://arxiv.org/abs/2611.18866",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-17T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "(解析中にエラーが発生しました)",
+      "tags": [],
+      "category": "その他",
+      "score": 50,
+      "score_reason": "解析エラー: JSON parse failed: [\n  {\n    \"id\": 0,\n    \"title\": \"偽の配達テキスト詐欺：その仕組みと安全な確認方法\",\n    \"summary\": \"偽の配達テキスト詐欺は、荷物の到着を待つ心理を悪",
+      "analysis_status": "error",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "BugMeNotが閉鎖",
       "url": "https://www.bugmenot.com/",
       "source": "Hacker News",
@@ -1006,18 +1750,18 @@
   ],
   "briefing": {
     "edition": "夕刊",
-    "generated_at": "2026-11-17T13:12:07.771871+09:00",
+    "generated_at": "2026-11-17T23:55:51.995633+09:00",
     "summary_lines": [
-      "Optimizelyが侵害され、ZoomやGitLabなどでマルウェアが配信される（Hacker News・スコア95）",
-      "実践パスキー認証設計（Zenn・スコア95）",
-      "QA生産性を爆上げさせるためのQA AIプラットフォーム構築（Zenn・スコア90）"
+      "サプライチェーン攻撃によりOptimizely経由でマルウェアが拡散。",
+      "楽天証券で大規模な情報漏えいの可能性が判明し、セキュリティ対策が急務。",
+      "AIチャットボットやAIエージェントによる業務効率化が進展。"
     ],
     "focus_tags": [
-      "AI",
       "セキュリティ",
-      "AI Agent",
-      "AIエージェント",
-      "API"
+      "情報漏えい",
+      "AIチャットボット",
+      "サプライチェーン攻撃",
+      "AI開発"
     ]
   }
 }

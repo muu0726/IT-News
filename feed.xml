@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Nov 2026 04:17:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 14:57:18 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
@@ -28,6 +28,13 @@
       <pubDate>Mon, 16 Nov 2026 12:53:34 +0000</pubDate>
     </item>
     <item>
+      <title>お問い合わせの8割を、AIボットが解決するようになった話</title>
+      <link>https://zenn.dev/rimo/articles/701d18b7764669</link>
+      <guid isPermaLink="false">https://zenn.dev/rimo/articles/701d18b7764669</guid>
+      <description>[Score: 95] Rimo社が、増加するカスタマーサポート問い合わせに対応するため、AIボットを内製開発した事例を紹介しています。 / 既存のRAG（検索拡張生成）システムを応用し、ヘルプ記事を検索対象とすることで、問い合わせの8割を自動解決。 / 契約プランに応じた回答の出し分けや、記事にない運用上の暗黙知への対応など、実用的な工夫が凝らされています。 [実務示唆: カスタマーサポートの効率化を目指す企業は、既存のRAGシステムやヘルプ記事を活用したAIボットの内製を検討し、契約プランに応じた回答や暗黙知の取り込みで解決率向上を図るべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 17 Nov 2026 01:05:13 +0000</pubDate>
+    </item>
+    <item>
       <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
       <link>https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</link>
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</guid>
@@ -47,6 +54,41 @@
       <guid isPermaLink="false">https://zenn.dev/gatechnologies/articles/8bdea59269eb10</guid>
       <description>[Score: 90] GA technologiesのQAチームが、AIエージェントを活用したQA AIプラットフォーム「GAQ」を構築し、QA生産性を向上させた事例を紹介しています。 / 開発スループットの向上に対しQAがボトルネックになっていた課題や、AI活用が進んでいなかった状況を改善するためにGAQを導入しました。 / GAQは「AIが工程を回し、人が判断する」ことを前提に設計され、テスト計画から品質レポートまでほぼ全ての工程をAIエージェントの「Skill」で自動化しています。 [実務示唆: QAエンジニアや開発チームは、AIエージェントを活用したQA自動化プラットフォームの導入を検討し、テスト計画、テストケース作成、品質レポート生成などの定型業務をAIに任せることで、QAのボトルネック解消と生産性向上を図るべきです。] (Source: Zenn)</description>
       <pubDate>Mon, 16 Nov 2026 09:12:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>毎月6,000 AI Agentsを捌くためにキーボードを捨てた話</title>
+      <link>https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce</link>
+      <guid isPermaLink="false">https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce</guid>
+      <description>[Score: 90] 開発統括者が、毎月6,000セッションものAI Agentを効率的に活用するため、開発スタイルを大幅に刷新した事例を紹介しています。 / 認知負荷と意思決定コスト、AI指示コストを極限まで減らすことを目的に、Orca ADEや自作のiOS/Apple Watchアプリを導入。 / Claude CodeのTask Toolsを活用し、AIが自律的にタスク進捗を出力する環境を構築することで、大量のAI Agentを管理しています。 [実務示唆: AIを活用した開発効率化を目指すエンジニアは、認知負荷軽減とAIとの連携コスト削減を意識し、Orca ADEやClaude CodeのTask Toolsのようなツール導入・自作を検討すべきです。] [GitHub: andoshin11/orca-milestone] (Source: Zenn)</description>
+      <pubDate>Tue, 17 Nov 2026 03:13:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI音楽会社がミュージシャン自身の録音に著作権を主張し、YouTube動画が削除される</title>
+      <link>https://www.reddit.com/r/technology/comments/1xyi3bu/ai_music_company_claims_copyright_over_musicians/</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xyi3bu/ai_music_company_claims_copyright_over_musicians/</guid>
+      <description>[Score: 90] AI音楽会社が、ミュージシャン自身のオリジナル録音に対して著作権を主張し、その結果YouTube動画が削除された事例が報告されました。 / これはAI生成コンテンツと既存著作物の権利関係における複雑な問題を示唆しています。 / AI技術の進化に伴い、著作権侵害や誤った権利主張のリスクが高まっている現状が浮き彫りになっています。 [実務示唆: AIツールを利用するクリエイターは、著作権侵害のリスクを理解し、自身の作品が不当に主張されないよう、プラットフォームのポリシーを確認しましょう。] (Source: Reddit)</description>
+      <pubDate>Tue, 17 Nov 2026 11:29:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>当社お客様の情報漏えいの可能性に関するお詫びとお知らせ:楽天証券</title>
+      <link>https://www.rakuten-sec.co.jp/web/info/info20261117-02.html</link>
+      <guid isPermaLink="false">https://www.rakuten-sec.co.jp/web/info/info20261117-02.html</guid>
+      <description>[Score: 90] 楽天証券は、第三者による不正アクセスを受け、お客様情報の一部が漏えいした可能性があることを発表しました。 / ログインパスワードや暗証番号の漏えいは確認されていませんが、お客様には注意を呼びかけています。 / 影響を受けたお客様には個別に連絡し、引き続き調査を進めるとしています。 [実務示唆: 楽天証券の利用者は、不審なメールやSMS、電話に注意し、パスキー認証の設定を推奨します。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 17 Nov 2026 08:41:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>楽天証券に不正アクセス 最大1125万口座の情報漏えい可能性</title>
+      <link>https://www.watch.impress.co.jp/docs/news/2157207.html</link>
+      <guid isPermaLink="false">https://www.watch.impress.co.jp/docs/news/2157207.html</guid>
+      <description>[Score: 90] 楽天証券が第三者による不正アクセスを受け、最大1125万口座のログインIDを含む顧客情報が漏えいした可能性があると発表しました。 / テスト環境のシステムから情報が流出したとみられ、氏名、住所、出金先口座情報なども含まれる可能性があります。 / パスワードや暗証番号の漏えいは確認されていませんが、同社はパスキー認証の利用を推奨しています。 [実務示唆: 楽天証券の利用者は、パスキー認証を設定し、不審な連絡には応じないよう注意喚起を徹底すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 17 Nov 2026 09:23:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>楽天証券に不正アクセス、最大1125万口座のログインIDなど漏えいのおそれ（CNET Japan） - Yahoo!ニュース</title>
+      <link>https://news.yahoo.co.jp/articles/141fe69b0f33952604cde710494bbdff584f269a</link>
+      <guid isPermaLink="false">https://news.yahoo.co.jp/articles/141fe69b0f33952604cde710494bbdff584f269a</guid>
+      <description>[Score: 90] 楽天証券が不正アクセスを受け、最大1125万口座のログインIDと、最大447万口座の氏名や住所、出金先口座情報などが漏えいした可能性があると発表しました。 / テスト環境からの情報流出が原因とみられ、退会者の情報も含まれています。 / パスワードの漏えいは確認されていませんが、パスキー認証の利用と不審な連絡への注意を呼びかけています。 [実務示唆: 楽天証券のユーザーは、パスキー認証を有効にし、フィッシング詐欺に警戒するとともに、自身の口座状況を定期的に確認することが重要です。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 17 Nov 2026 09:33:35 +0000</pubDate>
     </item>
     <item>
       <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
@@ -103,48 +145,6 @@
       <guid isPermaLink="false">https://zenn.dev/shozotanaka/articles/632191056c62f4</guid>
       <description>[Score: 85] 本記事では、Llamaの計算グラフを組み立てるLlamaArch::BuildGraphのコードを詳細に解説しています。 / LlamaはggmlLMが扱うモデルの中で最もシンプルな形をしており、Gemmaやgpt-ossもLlamaとの違いとして説明できるため、本章が本書の中心となります。 / 対応するソースはArch/LlamaArch.cppと共通部品を集めたGraphOps.cppで、Llamaのデコードにおける計算グラフの構造が示されています。 [実務示唆: LLMの推論エンジンの内部構造を理解することで、モデルの最適化やカスタム実装の際に具体的な改善点を見つけやすくなるため、関連コードを深く読み込むことを推奨します。] (Source: Zenn)</description>
       <pubDate>Mon, 16 Nov 2026 07:46:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>PostgreSQL 19リリース延期の背景。β4で多くの新機能取り下げが発生、原因はAIによるコードレビューか</title>
-      <link>https://www.publickey1.jp/blog/26/postgresql_194ai.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresql_194ai.html</guid>
-      <description>[Score: 80] PostgreSQL 19のリリースが延期され、β4で多くの新機能が取り下げられた背景について解説しています。 / 例年9月か10月に行われるメジャーバージョンアップが遅れた原因として、AIによるコードレビュー支援がバグ発見を加速させた可能性が指摘されています。 / これにより、より厳密なレビューが必要となり、リリーススケジュールに影響が出たと考えられています。 [実務示唆: AIによるコードレビューは品質向上に寄与する一方で、開発プロセスやリリーススケジュールに影響を与える可能性があるため、導入時にはその影響を考慮した計画が必要です。] [GitHub: postgres/postgres] (Source: Publickey)</description>
-      <pubDate>Sun, 15 Nov 2026 15:31:49 +0000</pubDate>
-    </item>
-    <item>
-      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
-      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>LLMエージェントはいつ忘れるべきか？クエリに重要なリゾルバーエラー下でのメモリフィルタリング</title>
-      <link>https://arxiv.org/abs/2611.17338</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.17338</guid>
-      <description>[Score: 80] この論文は、LLMエージェントがクエリ処理中に発生する重要なエラー状況下で、いつどのように記憶を忘れるべきか（メモリフィルタリング）について研究しています。 / LLMエージェントの効率性と信頼性を向上させるためのメモリ管理戦略に焦点を当てています。 / arXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。 [実務示唆: LLMエージェントを開発する際、クエリ処理の失敗時に不適切な情報を記憶から効果的に削除するメモリフィルタリング戦略を検討し、エージェントの堅牢性を高めるべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>OpenCode Browse</title>
-      <link>https://opencode.ai/product/browse</link>
-      <guid isPermaLink="false">https://opencode.ai/product/browse</guid>
-      <description>[Score: 80] OpenCode Browseは、AIエージェントが実際のブラウザを操作できるようにするMCPサーバーとChromium拡張機能です。 / エージェントはバックグラウンドでタブを開き、ページを読み込み、クリック、入力、スクリーンショット撮影、タブ録画を行います。 / ログインや2FA認証、支払いなどユーザーの操作が必要な場合は、タブをユーザーに渡し、完了後に作業を再開します。 [実務示唆: AIエージェントにブラウザ操作を自動化させたい開発者は、OpenCode BrowseのChrome拡張機能を導入し、その機能とセキュリティモデルを検証することを推奨します。] (Source: Hacker News)</description>
-      <pubDate>Mon, 16 Nov 2026 21:20:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>はじめてのAPIログ設計 — 「ログはあるのに調べられない」を防ぐには？</title>
-      <link>https://qiita.com/masashige0904/items/22f2836485ecc25ee527?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/masashige0904/items/22f2836485ecc25ee527?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] APIログ設計において、「ログはあるのに調べられない」という課題を解決するための考え方と具体的な設計方法を解説しています。 / 後から何を手がかりに調べたいかを考慮し、requestIdのような識別子をログに残すことで、複数のログを関連付けて追跡可能にすることが重要です。 / ログの出力項目、レベル、形式、ライブラリ選定、そしてCloudWatch Logs Insightsでの検索例まで、実践的な内容が網羅されています。 [実務示唆: APIログ設計時には、requestIdなどの一意な識別子を必ず含め、ログの出力ルールを統一することで、障害発生時の迅速な原因特定と調査を可能にするよう改善を推奨します。] (Source: Qiita)</description>
-      <pubDate>Mon, 16 Nov 2026 00:37:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>認証情報を渡さずにコーディングエージェントを実行する方法</title>
-      <link>https://blog.antonio.cx/running-agents-with-lend</link>
-      <guid isPermaLink="false">https://blog.antonio.cx/running-agents-with-lend</guid>
-      <description>[Score: 78] 著者は、リモートエージェントが自身の承認を得てローカルツールを使用できるようにする「lend」というツールを開発しました。 / これにより、SSHキーやパスワードマネージャーなどの機密情報をエージェントに直接渡すことなく、安全に利用できます。 / 複数のコーディングエージェントを並行して実行し、互いの作業をレビューさせるワークフローを構築しています。 [実務示唆: 機密情報を保護しつつAIコーディングエージェントを効率的に活用するため、lendのようなツールや、VM上でエージェントを実行しローカルリソースへのアクセスを制御する手法の導入を検討してください。] [GitHub: antonio-cx/lend] (Source: Hacker News)</description>
-      <pubDate>Tue, 17 Nov 2026 01:18:56 +0000</pubDate>
     </item>
   </channel>
 </rss>
