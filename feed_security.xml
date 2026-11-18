@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Nov 2026 14:57:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 03:10:04 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
@@ -14,39 +14,18 @@
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Optimizelyが侵害され、ZoomやGitLabなどでマルウェアが配信される</title>
-      <link>https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</link>
-      <guid isPermaLink="false">https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</guid>
-      <description>[Score: 95] OptimizelyのWeb実験プラットフォームが侵害され、Zoom、BBC、CNN、GitLabなど178の組織の訪問者に悪意のあるJavaScriptが配信されました。 / このマルウェアは、仮想通貨ウォレットアドレスの書き換え、決済カード情報のスキミング、クッキー窃盗、iOSエクスプロイトキットの配信など、多目的な攻撃を行いました。 / サードパーティのJavaScriptが信頼できないものになるリスクを浮き彫りにし、CSPなどのセキュリティ対策の重要性を示しています。 [実務示唆: サードパーティスクリプトの脆弱性によるサプライチェーン攻撃のリスクを認識し、CSP (Content Security Policy) の厳格な適用や、Report URIのような監視ツールの導入を強く推奨します。] (Source: Hacker News)</description>
-      <pubDate>Mon, 16 Nov 2026 23:00:34 +0000</pubDate>
+      <title>Java4Shell: Base64処理時のOpenJDKにおけるRCE</title>
+      <link>https://calif.io/java4shell/</link>
+      <guid isPermaLink="false">https://calif.io/java4shell/</guid>
+      <description>[Score: 95] OpenJDKのBase64デコーダにメモリ破損の脆弱性「Java4Shell」（CVE-2026-114938）が発見されました。 / この脆弱性はCVSS 4.0で9.2のクリティカルなスコアを持ち、認証なしのリモート攻撃者がヒープメモリを上書きし、リモートコード実行に至る可能性があります。 / Javaは金融、航空、通信など多くの基幹システムで利用されており、この脆弱性は広範な影響を及ぼす恐れがあります。 [実務示唆: OpenJDKを使用しているシステムでは、速やかにセキュリティパッチを適用し、Base64デコード処理を含むアプリケーションのセキュリティレビューを強化してください。] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 21:11:28 +0000</pubDate>
     </item>
     <item>
-      <title>実践パスキー認証設計</title>
-      <link>https://zenn.dev/yasuakiomokawa/articles/89f5c46e8effe9</link>
-      <guid isPermaLink="false">https://zenn.dev/yasuakiomokawa/articles/89f5c46e8effe9</guid>
-      <description>[Score: 95] この記事は、パスキー認証をサービスに導入する際の設計上の考慮事項を、筆者の認証基盤taimei-authの事例を交えて解説しています。 / 単にログイン手段を追加するだけでなく、ビジネス要件、システム要件、運用要件の3層で事前に決めるべき事項を詳細に説明しています。 / 特にフィッシング耐性の仕組みや、ユーザー体験、開発・運用上の課題解決に焦点を当てた実践的な内容です。 [実務示唆: パスキー認証の導入を検討している開発者は、設計の3層（ビジネス、システム、運用）を考慮し、特にフィッシング対策や既存認証との共存、エラーハンドリングについて事前に詳細な設計を行うべきです。] [GitHub: yasuakiomokawa/taimei-auth] (Source: Zenn)</description>
-      <pubDate>Mon, 16 Nov 2026 12:53:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>当社お客様の情報漏えいの可能性に関するお詫びとお知らせ:楽天証券</title>
-      <link>https://www.rakuten-sec.co.jp/web/info/info20261117-02.html</link>
-      <guid isPermaLink="false">https://www.rakuten-sec.co.jp/web/info/info20261117-02.html</guid>
-      <description>[Score: 90] 楽天証券は、第三者による不正アクセスを受け、お客様情報の一部が漏えいした可能性があることを発表しました。 / ログインパスワードや暗証番号の漏えいは確認されていませんが、お客様には注意を呼びかけています。 / 影響を受けたお客様には個別に連絡し、引き続き調査を進めるとしています。 [実務示唆: 楽天証券の利用者は、不審なメールやSMS、電話に注意し、パスキー認証の設定を推奨します。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 17 Nov 2026 08:41:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>楽天証券に不正アクセス 最大1125万口座の情報漏えい可能性</title>
-      <link>https://www.watch.impress.co.jp/docs/news/2157207.html</link>
-      <guid isPermaLink="false">https://www.watch.impress.co.jp/docs/news/2157207.html</guid>
-      <description>[Score: 90] 楽天証券が第三者による不正アクセスを受け、最大1125万口座のログインIDを含む顧客情報が漏えいした可能性があると発表しました。 / テスト環境のシステムから情報が流出したとみられ、氏名、住所、出金先口座情報なども含まれる可能性があります。 / パスワードや暗証番号の漏えいは確認されていませんが、同社はパスキー認証の利用を推奨しています。 [実務示唆: 楽天証券の利用者は、パスキー認証を設定し、不審な連絡には応じないよう注意喚起を徹底すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 17 Nov 2026 09:23:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>楽天証券に不正アクセス、最大1125万口座のログインIDなど漏えいのおそれ（CNET Japan） - Yahoo!ニュース</title>
-      <link>https://news.yahoo.co.jp/articles/141fe69b0f33952604cde710494bbdff584f269a</link>
-      <guid isPermaLink="false">https://news.yahoo.co.jp/articles/141fe69b0f33952604cde710494bbdff584f269a</guid>
-      <description>[Score: 90] 楽天証券が不正アクセスを受け、最大1125万口座のログインIDと、最大447万口座の氏名や住所、出金先口座情報などが漏えいした可能性があると発表しました。 / テスト環境からの情報流出が原因とみられ、退会者の情報も含まれています。 / パスワードの漏えいは確認されていませんが、パスキー認証の利用と不審な連絡への注意を呼びかけています。 [実務示唆: 楽天証券のユーザーは、パスキー認証を有効にし、フィッシング詐欺に警戒するとともに、自身の口座状況を定期的に確認することが重要です。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 17 Nov 2026 09:33:35 +0000</pubDate>
+      <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
+      <link>https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</guid>
+      <description>[Score: 95] AIは脆弱性の発見を高速化しましたが、修正には人間の判断が必要です。 / オープンソースのメンテナーは、AI生成のセキュリティレポート（重複や誤報を含む）に既に圧倒されています。 / GitHubとMicrosoftは、AIが修正を支援するパイロットプログラム「Codename MDASH」を実施し、検証済みの重要な発見のみをメンテナーに提供しました。 [実務示唆: AIツールで脆弱性を報告する際は、単なる発見だけでなく、具体的な修正案やプルリクエストを添えることで、オープンソースプロジェクトのメンテナーの負担を軽減し、より建設的な貢献を心がけましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
       <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
@@ -54,27 +33,6 @@
       <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 85] AI開発が加速する現代において、セキュリティは後から追加するものではなく、設計段階で組み込むべきであると提唱されています。 / 従来の認証やファイアウォールといった防御策だけでなく、業務であり得ない操作を設計で許さないことが重要です。 / OpenAIやAnthropicの事例から、モデルの賢さだけでは安全が確保されず、設計による境界設定が被害の大きさを左右することが示されています。 [実務示唆: AIを活用した開発では、セキュリティを設計段階から考慮し、業務上あり得ない操作を許さないようなシステム設計を徹底することで、将来的な脆弱性リスクを低減すべきです。] (Source: Qiita)</description>
       <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>Optimizelyを利用したサイバー攻撃により、IKEA、Salesforce、GitLab、Zoomを含む178の主要ウェブサイトが被害に</title>
-      <link>https://www.reddit.com/r/technology/comments/1xykxww/cyber_attack_hits_178_major_websites_including/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xykxww/cyber_attack_hits_178_major_websites_including/</guid>
-      <description>[Score: 85] Optimizelyを悪用したサイバー攻撃により、IKEAやSalesforceなど多数の主要ウェブサイトが影響を受けました。 / この攻撃は広範囲にわたり、178ものサイトが被害に遭ったと報じられています。 / 具体的な攻撃手法や被害の詳細は不明ですが、サプライチェーン攻撃の可能性が示唆されます。 [実務示唆: 利用しているウェブサービスがOptimizelyを使用している場合、セキュリティ設定と最新の脆弱性情報を確認し、必要に応じて対策を講じるべきです。] (Source: Reddit)</description>
-      <pubDate>Tue, 17 Nov 2026 13:50:49 +0000</pubDate>
-    </item>
-    <item>
-      <title>Windows 11がコーディングエージェントと開発ツールの使用状況データを収集</title>
-      <link>https://xusheng.dev/posts/windows-coding-agent-telemetry/</link>
-      <guid isPermaLink="false">https://xusheng.dev/posts/windows-coding-agent-telemetry/</guid>
-      <description>[Score: 70] Windows 11のシステムDLLが、ユーザーが使用するコーディングエージェントや開発ツールの情報を収集し、Microsoftに送信していることが判明しました。 / このデータ収集はデフォルトで有効な「オプションの診断データ」の一部として行われます。 / プライバシーを懸念するユーザーは、設定で診断データの送信を無効にする必要があります。 [実務示唆: Windows 11ユーザーは、プライバシー保護のため、設定から「オプションの診断データ」の送信を無効にすることを検討し、使用する開発ツールのテレメトリ設定も確認してください。] (Source: Hacker News)</description>
-      <pubDate>Mon, 16 Nov 2026 22:58:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIやクローラーが読みにくいGo言語製のモーションCAPTCHAを構築</title>
-      <link>https://dev.to/ravi_kumar_7ec5add2202ec2/i-built-a-motion-captcha-in-go-that-is-harder-for-ai-and-crawlers-to-read-ek3</link>
-      <guid isPermaLink="false">https://dev.to/ravi_kumar_7ec5add2202ec2/i-built-a-motion-captcha-in-go-that-is-harder-for-ai-and-crawlers-to-read-ek3</guid>
-      <description>[Score: 70] 従来のCAPTCHAが自動システムに解読されやすくなっている現状に対し、Go言語でモーションCAPTCHAライブラリ「Gotcha」が開発されました。 / Gotchaは動く視覚ノイズの中に数字の課題を隠し、アニメーション再生時にのみ答えが読み取れるようにします。 / これにより、基本的なOCRや単一フレーム分析、シンプルなクローラーによる自動解読を困難にすることを目的としています。 [実務示唆: 既存のCAPTCHAのAIによる突破に懸念がある場合、Go言語製アプリケーションでGotchaのようなモーションCAPTCHAの導入を検討し、セキュリティ強化を図るべきです。] [GitHub: ravikumariitk/gotcha] (Source: Dev.to)</description>
-      <pubDate>Tue, 17 Nov 2026 14:46:28 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,76 +5,34 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Nov 2026 14:57:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 03:10:04 +0000</lastBuildDate>
     <item>
-      <title>お問い合わせの8割を、AIボットが解決するようになった話</title>
-      <link>https://zenn.dev/rimo/articles/701d18b7764669</link>
-      <guid isPermaLink="false">https://zenn.dev/rimo/articles/701d18b7764669</guid>
-      <description>[Score: 95] Rimo社が、増加するカスタマーサポート問い合わせに対応するため、AIボットを内製開発した事例を紹介しています。 / 既存のRAG（検索拡張生成）システムを応用し、ヘルプ記事を検索対象とすることで、問い合わせの8割を自動解決。 / 契約プランに応じた回答の出し分けや、記事にない運用上の暗黙知への対応など、実用的な工夫が凝らされています。 [実務示唆: カスタマーサポートの効率化を目指す企業は、既存のRAGシステムやヘルプ記事を活用したAIボットの内製を検討し、契約プランに応じた回答や暗黙知の取り込みで解決率向上を図るべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 17 Nov 2026 01:05:13 +0000</pubDate>
+      <title>［速報］マイクロソフト、コーディング用AIモデルとして高性能かつ低価格「MAI Code 2」「MAI Code 2 Flash」発表</title>
+      <link>https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html</guid>
+      <description>[Score: 95] マイクロソフトが年次イベント「Microsoft Ignite 2026」で、コーディング用AIモデル「MAI Code 2」と「MAI Code 2 Flash」を発表しました。 / これらのモデルは、競合製品と同等の性能をより低価格で提供することを特徴としています。 / MAI Code 2は本番環境のコード生成やデバッグ、リポジトリ推論に優れ、MAI Code 2 Flashはコード説明や局所的な編集、ルーチンワークの修正に適しています。 [実務示唆: Microsoftの新しいコーディング用AIモデルは、既存のAIツールと比較してコストパフォーマンスが高いため、開発者はMAI Code 2/Flashを導入し、開発効率とコスト削減効果を検証すべきです。] (Source: Publickey)</description>
+      <pubDate>Tue, 17 Nov 2026 21:48:15 +0000</pubDate>
     </item>
     <item>
-      <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</guid>
-      <description>[Score: 90] GitHubのコミット数が大幅に増加する一方で、開発者の生産性がそれに比例して向上していない現状を指摘し、AIによるコード生成だけでは不十分であると述べています。 / AIエージェントは、ソフトウェア開発の計画、構築、検証、監視といった全ステージにおいて、開発者の効率を向上させる可能性を秘めています。 / 特に、散在する情報を集約し、API変更の計画立案を支援するなど、開発プロセスのボトルネックを解消する具体的な活用例が紹介されています。 [実務示唆: AIを単なるコード生成ツールとしてではなく、開発プロセスの計画、検証、監視といった広範なタスクを支援するエージェントとして活用することで、開発全体の生産性向上を目指しましょう。] (Source: GitHub Blog)</description>
-      <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
+      <title>GPT-6.2 AstraとSolの紹介</title>
+      <link>https://openai.com/index/introducing-gpt-6-2-astra-sol/</link>
+      <guid isPermaLink="false">https://openai.com/index/introducing-gpt-6-2-astra-sol/</guid>
+      <description>[Score: 90] OpenAIが次世代モデル「GPT-6.2 Astra」と「Sol」を発表しました。 / これらのモデルは、既存のGPTシリーズをさらに進化させ、より高度な推論能力と多様なタスク処理能力を持つと期待されます。 / 具体的な機能や性能の詳細は不明ですが、AI技術の新たなブレークスルーとなる可能性があります。 [実務示唆: 最新のAIモデルの動向を注視し、公開され次第、その性能やAPIを評価し、自社のAI活用戦略やアプリケーション開発への導入可能性を探るべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 17:46:43 +0000</pubDate>
     </item>
     <item>
-      <title>QA生産性を爆上げさせるためのQA AIプラットフォーム構築</title>
-      <link>https://zenn.dev/gatechnologies/articles/8bdea59269eb10</link>
-      <guid isPermaLink="false">https://zenn.dev/gatechnologies/articles/8bdea59269eb10</guid>
-      <description>[Score: 90] GA technologiesのQAチームが、AIエージェントを活用したQA AIプラットフォーム「GAQ」を構築し、QA生産性を向上させた事例を紹介しています。 / 開発スループットの向上に対しQAがボトルネックになっていた課題や、AI活用が進んでいなかった状況を改善するためにGAQを導入しました。 / GAQは「AIが工程を回し、人が判断する」ことを前提に設計され、テスト計画から品質レポートまでほぼ全ての工程をAIエージェントの「Skill」で自動化しています。 [実務示唆: QAエンジニアや開発チームは、AIエージェントを活用したQA自動化プラットフォームの導入を検討し、テスト計画、テストケース作成、品質レポート生成などの定型業務をAIに任せることで、QAのボトルネック解消と生産性向上を図るべきです。] (Source: Zenn)</description>
-      <pubDate>Mon, 16 Nov 2026 09:12:44 +0000</pubDate>
+      <title>L40S 1台で社内RAGは何人まで使えるか</title>
+      <link>https://zenn.dev/epicai_techblog/articles/29b509117755af</link>
+      <guid isPermaLink="false">https://zenn.dev/epicai_techblog/articles/29b509117755af</guid>
+      <description>[Score: 90] L40S GPU 1台で社内RAG（検索拡張生成）システムが何人まで利用可能か、実測に基づき検証した記事です。 / 26B程度の日本語LLMと業務向けGPU 1枚での運用を想定し、量子化形式や推論基盤による利用人数の違いを詳細に比較しています。 / 正答率の評価も行い、実用的な導入におけるパフォーマンスと精度のバランスについて具体的なデータが示されています。 [実務示唆: 社内RAGシステム導入を検討する際は、L40Sでの検証結果を参考に、モデルの量子化形式や推論基盤（vLLM/llama.cpp）の選択が利用人数と正答率に与える影響を評価し、要件に合った構成を検討すること。] (Source: Zenn)</description>
+      <pubDate>Tue, 17 Nov 2026 10:00:06 +0000</pubDate>
     </item>
     <item>
-      <title>毎月6,000 AI Agentsを捌くためにキーボードを捨てた話</title>
-      <link>https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce</link>
-      <guid isPermaLink="false">https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce</guid>
-      <description>[Score: 90] 開発統括者が、毎月6,000セッションものAI Agentを効率的に活用するため、開発スタイルを大幅に刷新した事例を紹介しています。 / 認知負荷と意思決定コスト、AI指示コストを極限まで減らすことを目的に、Orca ADEや自作のiOS/Apple Watchアプリを導入。 / Claude CodeのTask Toolsを活用し、AIが自律的にタスク進捗を出力する環境を構築することで、大量のAI Agentを管理しています。 [実務示唆: AIを活用した開発効率化を目指すエンジニアは、認知負荷軽減とAIとの連携コスト削減を意識し、Orca ADEやClaude CodeのTask Toolsのようなツール導入・自作を検討すべきです。] [GitHub: andoshin11/orca-milestone] (Source: Zenn)</description>
-      <pubDate>Tue, 17 Nov 2026 03:13:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
-      <link>https://www.publickey1.jp/blog/26/google_antigravityaiai.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_antigravityaiai.html</guid>
-      <description>[Score: 88] Googleが提供するAIエージェント開発環境「Antigravity」に、クラウド上でAIエージェントが動作する「リモートエージェント」機能が搭載されました。 / これにより、ユーザーのローカルPCの電源がオフでも、AIエージェントは独立したクラウド仮想マシン上でタスクを継続できます。 / 開発者は、AIエージェントに指示を出した後、PCを閉じても作業が進行し、テスト完了やプルリクエスト作成までを自動化できるようになります。 [実務示唆: AIエージェントを活用した開発プロセスを検討する際、Google Antigravityのリモートエージェント機能を利用し、開発効率の向上と継続的な作業自動化を試すことを推奨します。] (Source: Publickey)</description>
-      <pubDate>Thu, 12 Nov 2026 15:13:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>ランキングは維持されるか？小型・量子化・オンデバイスLLMにおける幻覚検出器の実践者向け監査</title>
-      <link>https://arxiv.org/abs/2611.17339</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.17339</guid>
-      <description>[Score: 88] この論文は、小型で量子化されたオンデバイスLLMにおける幻覚検出器の有効性について、実践的な観点から監査を行っています。 / 特に、リソースが限られた環境でのLLMの信頼性を評価し、幻覚（ハルシネーション）問題への対策を検討しています。 / arXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。 [実務示唆: オンデバイスLLMを導入する際、幻覚検出器の性能を小型・量子化モデルの特性に合わせて厳密に評価し、実用環境での信頼性を確保するための対策を講じるべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門</title>
-      <link>https://zenn.dev/turing_motors/articles/cea9e3c85611b2</link>
-      <guid isPermaLink="false">https://zenn.dev/turing_motors/articles/cea9e3c85611b2</guid>
-      <description>[Score: 88] この記事は、自動運転AIやフィジカルAI開発において、AIの予測をカメラ映像に重ねて可視化することの重要性を解説しています。 / 可視化にはカメラ、座標系、運動制御の理解が不可欠であり、これらがAIと物理世界をつなぐ技術力の指標となると述べています。 / End-to-End (E2E) 自動運転モデルやVLAモデルの台頭により、AIの内部状態がブラックボックス化する中で、可視化がデバッグや評価の要となることを強調しています。 [実務示唆: フィジカルAIや自動運転AIを開発するエンジニアは、AIの予測結果を物理世界（カメラ映像など）に正確に可視化する技術を習得し、デバッグ、評価、およびAIの振る舞い理解に活用することを推奨します。] (Source: Zenn)</description>
-      <pubDate>Mon, 16 Nov 2026 08:00:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cloudflare、AI専用でタブやテーマや拡張などない軽量ヘッドレスブラウザ「Kitesurf」、オープンソースで公開</title>
-      <link>https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html</guid>
-      <description>[Score: 85] CloudflareがAIエージェント向けに設計された軽量ヘッドレスブラウザ「Kitesurf」をオープンソースで公開しました。 / これは、AIがWebブラウザを操作して情報収集やWebアプリケーション処理を行うシナリオが増加していることに対応するものです。 / 人間用ブラウザとは異なり、タブやブックマーク、拡張機能などが不要で、軽量かつ高速な動作が求められるAIエージェントの要件を満たします。 [実務示唆: AIエージェントによるWeb操作を検討している開発者は、Kitesurfを導入し、AI専用の効率的なWebインタラクションを構築することで、パフォーマンス向上とリソース削減を図るべきです。] [GitHub: cloudflare/kitesurf] (Source: Publickey)</description>
-      <pubDate>Sun, 15 Nov 2026 15:30:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>カーネギーメロン大学がコンピュータサイエンスのコースをYouTubeで無料公開</title>
-      <link>https://www.cs.cmu.edu/learn/</link>
-      <guid isPermaLink="false">https://www.cs.cmu.edu/learn/</guid>
-      <description>[Score: 85] カーネギーメロン大学がAI、ロボティクス、システム、生物学など、主要分野のコンピュータサイエンスコースをYouTubeで無料公開しました。 / これにより、世界中の誰もが最先端の教育コンテンツにアクセスできるようになります。 / 将来的には、AIチューター機能や公式の資格取得プログラムも提供される予定です。 [実務示唆: 最先端のコンピュータサイエンス教育に無料でアクセスできるため、自身のスキルアップや新しい技術分野の学習に積極的に活用することを推奨します。] (Source: Hacker News)</description>
-      <pubDate>Mon, 16 Nov 2026 20:43:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>中編 LLM推論エンジンを作る</title>
-      <link>https://zenn.dev/shozotanaka/articles/632191056c62f4</link>
-      <guid isPermaLink="false">https://zenn.dev/shozotanaka/articles/632191056c62f4</guid>
-      <description>[Score: 85] 本記事では、Llamaの計算グラフを組み立てるLlamaArch::BuildGraphのコードを詳細に解説しています。 / LlamaはggmlLMが扱うモデルの中で最もシンプルな形をしており、Gemmaやgpt-ossもLlamaとの違いとして説明できるため、本章が本書の中心となります。 / 対応するソースはArch/LlamaArch.cppと共通部品を集めたGraphOps.cppで、Llamaのデコードにおける計算グラフの構造が示されています。 [実務示唆: LLMの推論エンジンの内部構造を理解することで、モデルの最適化やカスタム実装の際に具体的な改善点を見つけやすくなるため、関連コードを深く読み込むことを推奨します。] (Source: Zenn)</description>
-      <pubDate>Mon, 16 Nov 2026 07:46:05 +0000</pubDate>
+      <title>デバイス間で継続するセッションのためのAgent Host Protocolの構築</title>
+      <link>https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</guid>
+      <description>[Score: 90] AIエージェントのセッションをデバイス間で継続させるためのオープン標準「Agent Host Protocol (AHP)」がGitHubによって開発されました。 / GitHub Copilotでは、このAHPにより、VS Codeやモバイルアプリなど異なる環境でエージェントセッションを中断なく引き継ぐことが可能です。 / AHPは、エージェントのライフタイムを特定のアプリケーションに縛らず、作業の継続性を実現します。 [実務示唆: マルチデバイス環境でAIエージェントのセッション継続性を実現したい開発者は、GitHubが提唱するAgent Host Protocol (AHP)の仕様を調査し、自身のアプリケーションやワークフローへの導入を検討しましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
     </item>
     <item>
       <title>ローカルLLM入門</title>
@@ -84,11 +42,18 @@
       <pubDate>Tue, 17 Nov 2026 07:17:24 +0000</pubDate>
     </item>
     <item>
-      <title>社長の一言は重い。RAGにも忖度させてみた（重み付け検索）</title>
-      <link>https://qiita.com/kikuziro/items/43b360420d0cdcbf190c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kikuziro/items/43b360420d0cdcbf190c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] 人間が情報に「誰が言ったか」で重みをつけるように、RAG（Retrieval-Augmented Generation）でも情報の重要度を考慮する手法を提案しています。 / チャンクに「社長」「重要」といったメタデータを付与し、検索結果に重み付けをすることで、より適切な情報を上位に表示させます。 / Amazon Bedrock Managed Knowledge Baseを用いた実装例が紹介されており、RAGの精度向上に貢献する可能性を示しています。 [実務示唆: RAGシステム導入時は、情報の信頼性や重要度を示すメタデータを付与し、重み付け検索を実装することで回答精度を向上させましょう。] (Source: Qiita)</description>
-      <pubDate>Sat, 14 Nov 2026 15:30:41 +0000</pubDate>
+      <title>Google「Gemini Notebook」、業務ツールを生成できる新機能</title>
+      <link>https://japan.cnet.com/article/35254996/</link>
+      <guid isPermaLink="false">https://japan.cnet.com/article/35254996/</guid>
+      <description>[Score: 85] GoogleのAIノートツール「Gemini Notebook」に、取り込んだ資料から操作可能なウェブサイトを生成する新機能が追加されました。 / この機能により、試験勉強教材、売上データダッシュボード、タスク管理ツールなどをチャットで指示するだけで自動生成できます。 / 生成されたサイトは新しいタブで操作可能で、他者との共有もサポートされており、モバイルアプリ版にも近日導入予定です。 [実務示唆: Gemini Notebookの新機能は、資料から業務ツールを迅速にプロトタイプ作成できるため、業務効率化や情報共有の新しいアプローチとして試用を推奨します。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 17 Nov 2026 07:22:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>モーションプランニングとナビゲーション — 第10章: Navigation2 Stack [KR]</title>
+      <link>https://dev.to/richard_minsoogo/motion-planning-and-navigation-ch10-navigation2-stack-kr-54dg</link>
+      <guid isPermaLink="false">https://dev.to/richard_minsoogo/motion-planning-and-navigation-ch10-navigation2-stack-kr-54dg</guid>
+      <description>[Score: 85] Navigation2（Nav2）は、ROS 2ベースの自律移動ロボット向けナビゲーションフレームワークです。 / 単一アルゴリズムではなく、経路計画、制御、復旧などを担当する複数のサーバーが連携する分散型アーキテクチャを採用しています。 / 行動ツリー（Behavior Tree）によりナビゲーション動作を調整し、複雑なミッション動作を柔軟に設定・変更できます。 [実務示唆: ROS 2で自律移動ロボットを開発する際は、Nav2の分散アーキテクチャと行動ツリーによる柔軟なナビゲーションポリシー設計を検討し、GitHubリポジトリのサンプルコードを参考に実装を進めましょう。] [GitHub: Statera-Library/08_Vol_15_Motion_Planning_and_Navigation] (Source: Dev.to)</description>
+      <pubDate>Wed, 18 Nov 2026 03:01:58 +0000</pubDate>
     </item>
     <item>
       <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
@@ -98,18 +63,32 @@
       <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
     </item>
     <item>
-      <title>LLMエージェントはいつ忘れるべきか？クエリに重要なリゾルバーエラー下でのメモリフィルタリング</title>
-      <link>https://arxiv.org/abs/2611.17338</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.17338</guid>
-      <description>[Score: 80] この論文は、LLMエージェントがクエリ処理中に発生する重要なエラー状況下で、いつどのように記憶を忘れるべきか（メモリフィルタリング）について研究しています。 / LLMエージェントの効率性と信頼性を向上させるためのメモリ管理戦略に焦点を当てています。 / arXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。 [実務示唆: LLMエージェントを開発する際、クエリ処理の失敗時に不適切な情報を記憶から効果的に削除するメモリフィルタリング戦略を検討し、エージェントの堅牢性を高めるべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
+      <title>MicrosoftのONNX RuntimeがGitHubから消滅</title>
+      <link>https://github.com/microsoft/onnxruntime</link>
+      <guid isPermaLink="false">https://github.com/microsoft/onnxruntime</guid>
+      <description>[Score: 80] MicrosoftのONNX RuntimeリポジトリがGitHubから突然消滅したと報じられました。 / この動きは、ONNX Runtimeの将来性やMicrosoftのオープンソース戦略に疑問を投げかけています。 / 開発者コミュニティでは、その理由と今後の対応について懸念が広がっています。 [実務示唆: ONNX Runtimeを利用中のプロジェクトは、代替手段の検討や公式アナウンスの注視が必要。今後の動向に注意し、影響を評価すること。] [GitHub: microsoft/onnxruntime] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 23:18:49 +0000</pubDate>
     </item>
     <item>
-      <title>OpenCode Browse</title>
-      <link>https://opencode.ai/product/browse</link>
-      <guid isPermaLink="false">https://opencode.ai/product/browse</guid>
-      <description>[Score: 80] OpenCode Browseは、AIエージェントが実際のブラウザを操作できるようにするMCPサーバーとChromium拡張機能です。 / エージェントはバックグラウンドでタブを開き、ページを読み込み、クリック、入力、スクリーンショット撮影、タブ録画を行います。 / ログインや2FA認証、支払いなどユーザーの操作が必要な場合は、タブをユーザーに渡し、完了後に作業を再開します。 [実務示唆: AIエージェントにブラウザ操作を自動化させたい開発者は、OpenCode BrowseのChrome拡張機能を導入し、その機能とセキュリティモデルを検証することを推奨します。] (Source: Hacker News)</description>
-      <pubDate>Mon, 16 Nov 2026 21:20:37 +0000</pubDate>
+      <title>モーションプランニングとナビゲーション — 第9章: AIベースのプランニング [KR]</title>
+      <link>https://dev.to/richard_minsoogo/motion-planning-and-navigation-ch09-ai-based-planning-kr-3dg5</link>
+      <guid isPermaLink="false">https://dev.to/richard_minsoogo/motion-planning-and-navigation-ch09-ai-based-planning-kr-3dg5</guid>
+      <description>[Score: 80] 学習ベースのモーションプランニングは、データ駆動型モデルを導入し、ロボットの動きを生成する新しいアプローチです。 / 従来の幾何学モデルや探索アルゴリズムに依存する手法と異なり、過去の経験からプランニング知識を学習します。 / これにより、複雑な環境でのプランニング効率、適応性、対応能力の向上が期待されます。 [実務示唆: ロボットのモーションプランニングにおいて、従来のアルゴリズムの限界を感じる場合は、強化学習や模倣学習などのAIベースのプランニング手法を導入し、効率と適応性の向上を図りましょう。] [GitHub: Statera-Library/08_Vol_15_Motion_Planning_and_Navigation] (Source: Dev.to)</description>
+      <pubDate>Wed, 18 Nov 2026 03:01:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>部下がClaudeっぽいスライドしか出してこなくてウンザリしてる上司はこれを使わせなさい</title>
+      <link>https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 75] AIが生成するスライドが「Claudeっぽい」と見なされる理由を解説しています。 / これは生成AIの「分布収束」という仕組みによるもので、無難なデザインを生成しやすい傾向があります。 / AIに依存せず、聞き手や目的に合わせた資料作成スキルを部下に習得させる重要性を説いています。 [実務示唆: AI生成資料の品質向上には、目的やターゲットを明確にし、AIに具体的な指示を与えるプロンプトエンジニアリングスキルを習得させましょう。] (Source: Qiita)</description>
+      <pubDate>Tue, 17 Nov 2026 00:58:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>エージェントはまだ理解していないものを引き継ぐことはできない</title>
+      <link>https://arxiv.org/abs/2611.18642</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.18642</guid>
+      <description>[Score: 70] arXivLabsは、arXivの新しい機能を開発・共有するためのフレームワークです。 / この論文は、AIエージェントがタスクを引き継ぐ際に、そのタスクを完全に理解している必要があるという概念を探求しています。 / エージェントが不完全な理解でタスクを引き継ぐことの限界と課題について議論している可能性があります。 [実務示唆: AIエージェントを設計・導入する際は、エージェントがタスクのコンテキストや目的をどの程度理解しているかを常に評価し、不完全な理解による誤動作や非効率を防ぐためのメカニズムを組み込みましょう。] (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 17 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

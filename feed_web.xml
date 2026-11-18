@@ -5,34 +5,62 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Nov 2026 14:57:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 03:10:04 +0000</lastBuildDate>
     <item>
-      <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
-      <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
-      <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
+      <title>AIがOracle DBからPostgreSQLへの移行を支援、「Azure Database Migration Service」プレビュー</title>
+      <link>https://www.publickey1.jp/blog/26/aioracle_dbpostgresqlazure_database_migration_service.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_dbpostgresqlazure_database_migration_service.html</guid>
+      <description>[Score: 90] Microsoftは「Microsoft Ignite 2026」で、Azure Database Migration Service (Azure DMS) にOracle DBからPostgreSQLへのデータ移行機能のプレビューを発表しました。 / この機能は、VS CodeのPostgreSQL拡張機能とAIサポートを組み合わせ、スキーマ変換やPL/SQLパッケージの移行を支援します。 / ダウンタイムを最小限に抑えつつ、OracleからAzure上のPostgreSQLサービスへの移行を効率化します。 [実務示唆: Oracle DBからPostgreSQLへの移行を検討している企業は、Azure DMSのAI支援機能を活用し、移行作業の複雑性とコスト削減の可能性を評価すべきです。] (Source: Publickey)</description>
+      <pubDate>Tue, 17 Nov 2026 21:40:32 +0000</pubDate>
     </item>
     <item>
-      <title>軽量なマイクロVMでネイティブよりアプリを高速起動できる「Hyperlight-Unikraft」登場</title>
-      <link>https://www.publickey1.jp/blog/26/vmhyperlight-unikraft.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/vmhyperlight-unikraft.html</guid>
-      <description>[Score: 85] Cloud Native Computing Foundationが「Hyperlight-Unikraft」を発表しました。 / これは軽量な仮想マシンマネージャ「Hyperlight」とUnikernel向けツールキット「Unikraft」を組み合わせたものです。 / Linuxアプリケーションを再コンパイルなしで、Unikernelのような軽量かつセキュアな実行環境でMicroVMとして実行できます。 [実務示唆: アプリケーションの起動高速化やセキュリティ強化のため、Hyperlight-Unikraftの導入を検討し、既存Linuxアプリの動作検証を行うと良いでしょう。] (Source: Publickey)</description>
-      <pubDate>Mon, 16 Nov 2026 18:30:31 +0000</pubDate>
+      <title>Varnish Cache 7 VCLエンジニアリング: Grace Mode, ESI Fragment Caching &amp; XKey Instant Purging</title>
+      <link>https://dev.to/hostingpodium/varnish-cache-7-vcl-engineering-grace-mode-esi-fragment-caching-xkey-instant-purging-2h5f</link>
+      <guid isPermaLink="false">https://dev.to/hostingpodium/varnish-cache-7-vcl-engineering-grace-mode-esi-fragment-caching-xkey-instant-purging-2h5f</guid>
+      <description>[Score: 90] Varnish Cache 7の設定ガイドで、Grace Mode、ESI Fragment Caching、X-Keyによるミリ秒単位のキャッシュ無効化について解説しています。 / これらのVCL拡張機能により、バックエンド障害時のキャッシュミススパイクを排除し、きめ細かいESIフラグメント再利用を可能にします。 / サブ秒のレイテンシ、99.99%の可用性、PCI-DSS分離要件を満たす本番環境向けデプロイメントに焦点を当てています。 [実務示唆: Varnish Cache 7を利用している場合、Grace Mode、ESI Fragment Caching、X-Keyを導入し、高可用性と高速なキャッシュ無効化を実現することで、ユーザーエクスペリエンスとシステム安定性を向上させましょう。] (Source: Dev.to)</description>
+      <pubDate>Wed, 18 Nov 2026 03:01:48 +0000</pubDate>
     </item>
     <item>
-      <title>はじめてのAPIログ設計 — 「ログはあるのに調べられない」を防ぐには？</title>
-      <link>https://qiita.com/masashige0904/items/22f2836485ecc25ee527?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/masashige0904/items/22f2836485ecc25ee527?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] APIログ設計において、「ログはあるのに調べられない」という課題を解決するための考え方と具体的な設計方法を解説しています。 / 後から何を手がかりに調べたいかを考慮し、requestIdのような識別子をログに残すことで、複数のログを関連付けて追跡可能にすることが重要です。 / ログの出力項目、レベル、形式、ライブラリ選定、そしてCloudWatch Logs Insightsでの検索例まで、実践的な内容が網羅されています。 [実務示唆: APIログ設計時には、requestIdなどの一意な識別子を必ず含め、ログの出力ルールを統一することで、障害発生時の迅速な原因特定と調査を可能にするよう改善を推奨します。] (Source: Qiita)</description>
-      <pubDate>Mon, 16 Nov 2026 00:37:01 +0000</pubDate>
+      <title>GoogleのAI回答により検索トラフィックが40%減少</title>
+      <link>https://revscope.co/blog/search-seo-geo-2026/</link>
+      <guid isPermaLink="false">https://revscope.co/blog/search-seo-geo-2026/</guid>
+      <description>[Score: 85] GoogleのAI Overviewsが検索結果に表示されることで、外部ウェブサイトへのクリックが約40%減少していることが実験で明らかになりました。 / AI Overviewsは過去2年間で表示されるキーワードの割合が大幅に増加しており、SEO業界はGenerative Engine Optimization (GEO)で対応を模索しています。 / AIアシスタントからのトラフィックは依然として少なく、AI回答に引用されるためのコンテンツ戦略が重要になっています。 [実務示唆: ウェブサイト運営者は、AI回答に引用されやすいコンテンツ作成や、AI Overviewsの影響を考慮した新たなSEO戦略（GEO）の導入を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 18 Nov 2026 00:17:58 +0000</pubDate>
     </item>
     <item>
-      <title>Node.jsとnpmをWebブラウザ上で実行可能にする「OpenVessel」、神戸ソフトがオープンソースで公開</title>
-      <link>https://www.publickey1.jp/blog/26/nodejsnpmwebopenvessel.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/nodejsnpmwebopenvessel.html</guid>
-      <description>[Score: 80] 神戸ソフトが、Webブラウザ上でNode.jsとnpm、およびNode.js対応フレームワーク（Astroなど）を実行できる「OpenVessel」をオープンソースで公開しました。 / OpenVesselは、Webブラウザ上にインメモリのファイルシステムやプロセスなど、Node.jsを動かすための最小限のOSの仕組みを実装しています。 / Node.jsのテストの多くがブラウザ上でパスしており、デモサイトではAstroがブラウザ上で動作する様子が確認できます。 [実務示唆: Webブラウザ上でのNode.js開発環境構築や、インタラクティブな学習・デモ環境としてOpenVesselの活用を検討し、その可能性を探ると良いでしょう。] (Source: Publickey)</description>
-      <pubDate>Mon, 16 Nov 2026 15:23:28 +0000</pubDate>
+      <title>dbt + DuckDBでSQL集計をローカルで動かしてみる</title>
+      <link>https://qiita.com/take-yoda/items/e24e62ba5a4ad4d84c0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/take-yoda/items/e24e62ba5a4ad4d84c0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] dbtとDuckDBを組み合わせて、SQL集計処理をローカル環境で完結させる方法が解説されています。 / dbtでSQLモデルを管理し、DuckDBをバックエンドとして利用することで、手軽にデータ変換・集計パイプラインを構築できます。 / 記事では、ECショップの注文データを例に、具体的なセットアップ手順と実行方法が示されています。 [実務示唆: データ分析やETL処理をローカルで手軽に試したいエンジニアは、dbtとDuckDBの組み合わせを導入し、SQLベースのデータ変換パイプライン構築を実践することで、開発効率の向上と学習に役立てること。] (Source: Qiita)</description>
+      <pubDate>Tue, 17 Nov 2026 04:09:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>マイクロソフト、PostgreSQL互換のミッションクリティカル向けデータベースサービス「Azure HorizonDB」正式リリース</title>
+      <link>https://www.publickey1.jp/blog/26/postgresqlazure_horizondb.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresqlazure_horizondb.html</guid>
+      <description>[Score: 85] Microsoftが年次イベント「Microsoft Ignite 2026」で、PostgreSQL互換のミッションクリティカル向けデータベースサービス「Azure HorizonDB」を正式リリースしました。 / 最大3072vCPUまでスケールアウト可能で、ストレージは最大128TBまでオートスケールします。 / 複数アベイラビリティゾーンにレプリカを作成し、高可用性と低レイテンシを実現し、PgVectorによるベクトル検索もサポートします。 [実務示唆: ミッションクリティカルなPostgreSQLワークロードをAzureに移行する際、高可用性とスケーラビリティを求める場合はAzure HorizonDBの導入を検討すべきです。] (Source: Publickey)</description>
+      <pubDate>Tue, 17 Nov 2026 21:45:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>14年間使ってきたWordPressをやめて、個人ブログを作り直した話｜星影｜Tech Hunter</title>
+      <link>https://note.com/unsoluble_sugar/n/n58c97b4dee67</link>
+      <guid isPermaLink="false">https://note.com/unsoluble_sugar/n/n58c97b4dee67</guid>
+      <description>[Score: 80] 14年間運営してきたWordPressブログを、PHPの脆弱性やメンテナンスの手間を理由にリニューアルしました。 / 新しいブログは静的サイトジェネレーターのAstroとCloudflareを採用し、表示速度向上とセキュリティリスク低減を実現しています。 / 約2,000本の記事と3万枚の画像の移行作業は、AIエージェントのClaudeを活用することで1日で完了したとのことです。 [実務示唆: WordPressの運用負荷に悩む開発者は、Astroなどの静的サイトジェネレーターとCloudflareの組み合わせを検討し、AIツールを活用した移行を試みるべきです。] [GitHub: withastro/astro] (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 16 Nov 2026 01:04:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Azure SQL Databaseをローカルで実行する「Azure SQL Database local development container」パブリックプレビュー</title>
+      <link>https://www.publickey1.jp/blog/26/azure_sql_databaseazure_sql_database_local_development_container.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/azure_sql_databaseazure_sql_database_local_development_container.html</guid>
+      <description>[Score: 80] Microsoftは「Microsoft Ignite 2026」で、Azure SQL Databaseをローカル環境で実行できる「Azure SQL Database local development container」のパブリックプレビューを発表しました。 / これにより、開発者はクラウドと同じデータベースエンジン、T-SQL、システムビューなどをローカルで利用し、開発・デバッグ・テストが可能です。 / VS CodeのMSSQL拡張機能には、ローカルからクラウドへのデプロイを支援する「Local-to-Cloud Deployment Wizard」も追加されました。 [実務示唆: Azure SQL Databaseを利用する開発者は、ローカルコンテナを活用して開発サイクルを高速化し、クラウド環境との一貫性を保ちながらオフライン開発やテストを行うべきです。] (Source: Publickey)</description>
+      <pubDate>Tue, 17 Nov 2026 21:37:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>PostgreSQL互換のサーバレスでOLTPとOLAP両対応を実現する「Microsoft Fabric HorizonDB」パブリックプレビュー</title>
+      <link>https://www.publickey1.jp/blog/26/postgresqloltpolapmicrosoft_fabric_horizondb.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresqloltpolapmicrosoft_fabric_horizondb.html</guid>
+      <description>[Score: 78] Microsoftが「Microsoft Ignite 2026」で、PostgreSQL互換のサーバレスデータベース「Microsoft Fabric HorizonDB」のパブリックプレビューを発表しました。 / これは主にプロトタイプや開発環境を想定したサービスで、数秒でプロビジョニング可能です。 / 非アクティブ状態が5分続くとコンピュートが一時停止し、クエリが到着すると自動的に再開するサーバレス設計です。 [実務示唆: プロトタイプ開発やAIエージェントのデータストアとして、迅速なデータベース環境が必要な場合は、Fabric HorizonDBのサーバレス特性とOLTP/OLAP対応を検証する価値があります。] (Source: Publickey)</description>
+      <pubDate>Tue, 17 Nov 2026 21:43:09 +0000</pubDate>
     </item>
     <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
@@ -42,18 +70,18 @@
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
     </item>
     <item>
-      <title>行と列：実際どれくらい違うのか？</title>
-      <link>https://spiraldb.com/blog/rows-vs-columns</link>
-      <guid isPermaLink="false">https://spiraldb.com/blog/rows-vs-columns</guid>
-      <description>[Score: 75] 構造化データを考える際、通常は行指向で考えますが、列指向との違いについて解説しています。 / 行指向は個々のレコードの情報をまとめるのに適しており、多くのアプリケーションで利用されます。 / 一方、列指向は特定の属性に対する集計処理などに優れており、データウェアハウスなどで活用されます。 [実務示唆: データベース設計者は、アプリケーションのアクセスパターンやクエリの特性を考慮し、行指向と列指向のどちらがパフォーマンスとスケーラビリティに適しているかを慎重に選択すべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 12 Nov 2026 17:04:41 +0000</pubDate>
+      <title>Quad9のフランス撤退：炭鉱のカナリア</title>
+      <link>https://blog.cloudflare.com/quad9-withdrawal-from-france/</link>
+      <guid isPermaLink="false">https://blog.cloudflare.com/quad9-withdrawal-from-france/</guid>
+      <description>[Score: 75] スイスの非営利団体Quad9が、フランスでの無料パブリックDNSリゾルバサービスからの撤退を発表しました。 / これは、著作権侵害に関連するドメインのブロックを怠ったとして、フランスの裁判所から罰金を科されたことによるものです。 / Quad9の撤退は、インターネットの自由とオープン性、ユーザーのプライバシーとセキュリティを損なう可能性があり、他の国々への警告となるでしょう。 [実務示唆: DNSサービス提供者は、各国の法規制動向を注視し、サービス提供地域における法的リスクを評価するとともに、ユーザーは信頼できるDNSプロバイダの選択肢を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 22:13:34 +0000</pubDate>
     </item>
     <item>
-      <title>ORA-00054 Resource Busy: セッションの特定と待機するDDLの把握</title>
-      <link>https://dev.to/uptimearchitect/ora-00054-resource-busy-find-the-session-and-know-which-ddl-will-wait-5eee</link>
-      <guid isPermaLink="false">https://dev.to/uptimearchitect/ora-00054-resource-busy-find-the-session-and-know-which-ddl-will-wait-5eee</guid>
-      <description>[Score: 65] Oracleデータベースで発生する「ORA-00054: resource busy」エラーの原因と対処法について解説しています。 / このエラーは、未コミットのトランザクションがテーブルロックを保持している場合にDDLが実行できないことで発生します。 / エラーメッセージにセッションが特定されない場合の特定方法や、一部のDDLは待機する挙動、DDL_LOCK_TIMEOUTの影響などが説明されています。 [実務示唆: ORA-00054エラー発生時は、記事で紹介されているSQLクエリを用いてロックを保持しているセッションを特定し、適切な対処（コミット、ロールバック、セッション切断など）を行うべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 17 Nov 2026 14:44:56 +0000</pubDate>
+      <title>[AWS] S3Vectorsは全文検索エンジンとしてOpenSearchの代わりになるのか？ - Qiita</title>
+      <link>https://qiita.com/kikuziro/items/cd1389f6a1601494895f?utm_campaign=post_article&amp;utm_medium=twitter&amp;utm_source=twitter_share</link>
+      <guid isPermaLink="false">https://qiita.com/kikuziro/items/cd1389f6a1601494895f?utm_campaign=post_article&amp;utm_medium=twitter&amp;utm_source=twitter_share</guid>
+      <description>[Score: 75] S3Vectorsがハイブリッド検索に対応し、全文検索エンジンとしての利用可能性が検証されました。 / OpenSearchと比較し、LambdaからS3Vectorsを呼び出し、日本語アナライザーを設定して全文検索を実行する手順が示されています。 / 検証の結果、S3Vectorsは全文検索機能を持つものの、ベクトル検索が必須である点や、メタデータサイズに制限がある点など、OpenSearchとは異なる特性があることが示唆されています。 [実務示唆: S3Vectorsの全文検索機能は、OpenSearchの代替として検討可能ですが、ベクトルデータが必須である点やメタデータ制限を考慮し、ユースケースに応じた検証が推奨されます。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 17 Nov 2026 14:00:55 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Nov 2026 14:57:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 03:10:04 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
@@ -14,102 +14,74 @@
       <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Optimizelyが侵害され、ZoomやGitLabなどでマルウェアが配信される</title>
-      <link>https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</link>
-      <guid isPermaLink="false">https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</guid>
-      <description>[Score: 95] OptimizelyのWeb実験プラットフォームが侵害され、Zoom、BBC、CNN、GitLabなど178の組織の訪問者に悪意のあるJavaScriptが配信されました。 / このマルウェアは、仮想通貨ウォレットアドレスの書き換え、決済カード情報のスキミング、クッキー窃盗、iOSエクスプロイトキットの配信など、多目的な攻撃を行いました。 / サードパーティのJavaScriptが信頼できないものになるリスクを浮き彫りにし、CSPなどのセキュリティ対策の重要性を示しています。 [実務示唆: サードパーティスクリプトの脆弱性によるサプライチェーン攻撃のリスクを認識し、CSP (Content Security Policy) の厳格な適用や、Report URIのような監視ツールの導入を強く推奨します。] (Source: Hacker News)</description>
-      <pubDate>Mon, 16 Nov 2026 23:00:34 +0000</pubDate>
+      <title>Java4Shell: Base64処理時のOpenJDKにおけるRCE</title>
+      <link>https://calif.io/java4shell/</link>
+      <guid isPermaLink="false">https://calif.io/java4shell/</guid>
+      <description>[Score: 95] OpenJDKのBase64デコーダにメモリ破損の脆弱性「Java4Shell」（CVE-2026-114938）が発見されました。 / この脆弱性はCVSS 4.0で9.2のクリティカルなスコアを持ち、認証なしのリモート攻撃者がヒープメモリを上書きし、リモートコード実行に至る可能性があります。 / Javaは金融、航空、通信など多くの基幹システムで利用されており、この脆弱性は広範な影響を及ぼす恐れがあります。 [実務示唆: OpenJDKを使用しているシステムでは、速やかにセキュリティパッチを適用し、Base64デコード処理を含むアプリケーションのセキュリティレビューを強化してください。] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 21:11:28 +0000</pubDate>
     </item>
     <item>
-      <title>実践パスキー認証設計</title>
-      <link>https://zenn.dev/yasuakiomokawa/articles/89f5c46e8effe9</link>
-      <guid isPermaLink="false">https://zenn.dev/yasuakiomokawa/articles/89f5c46e8effe9</guid>
-      <description>[Score: 95] この記事は、パスキー認証をサービスに導入する際の設計上の考慮事項を、筆者の認証基盤taimei-authの事例を交えて解説しています。 / 単にログイン手段を追加するだけでなく、ビジネス要件、システム要件、運用要件の3層で事前に決めるべき事項を詳細に説明しています。 / 特にフィッシング耐性の仕組みや、ユーザー体験、開発・運用上の課題解決に焦点を当てた実践的な内容です。 [実務示唆: パスキー認証の導入を検討している開発者は、設計の3層（ビジネス、システム、運用）を考慮し、特にフィッシング対策や既存認証との共存、エラーハンドリングについて事前に詳細な設計を行うべきです。] [GitHub: yasuakiomokawa/taimei-auth] (Source: Zenn)</description>
-      <pubDate>Mon, 16 Nov 2026 12:53:34 +0000</pubDate>
+      <title>［速報］マイクロソフト、コーディング用AIモデルとして高性能かつ低価格「MAI Code 2」「MAI Code 2 Flash」発表</title>
+      <link>https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html</guid>
+      <description>[Score: 95] マイクロソフトが年次イベント「Microsoft Ignite 2026」で、コーディング用AIモデル「MAI Code 2」と「MAI Code 2 Flash」を発表しました。 / これらのモデルは、競合製品と同等の性能をより低価格で提供することを特徴としています。 / MAI Code 2は本番環境のコード生成やデバッグ、リポジトリ推論に優れ、MAI Code 2 Flashはコード説明や局所的な編集、ルーチンワークの修正に適しています。 [実務示唆: Microsoftの新しいコーディング用AIモデルは、既存のAIツールと比較してコストパフォーマンスが高いため、開発者はMAI Code 2/Flashを導入し、開発効率とコスト削減効果を検証すべきです。] (Source: Publickey)</description>
+      <pubDate>Tue, 17 Nov 2026 21:48:15 +0000</pubDate>
     </item>
     <item>
-      <title>お問い合わせの8割を、AIボットが解決するようになった話</title>
-      <link>https://zenn.dev/rimo/articles/701d18b7764669</link>
-      <guid isPermaLink="false">https://zenn.dev/rimo/articles/701d18b7764669</guid>
-      <description>[Score: 95] Rimo社が、増加するカスタマーサポート問い合わせに対応するため、AIボットを内製開発した事例を紹介しています。 / 既存のRAG（検索拡張生成）システムを応用し、ヘルプ記事を検索対象とすることで、問い合わせの8割を自動解決。 / 契約プランに応じた回答の出し分けや、記事にない運用上の暗黙知への対応など、実用的な工夫が凝らされています。 [実務示唆: カスタマーサポートの効率化を目指す企業は、既存のRAGシステムやヘルプ記事を活用したAIボットの内製を検討し、契約プランに応じた回答や暗黙知の取り込みで解決率向上を図るべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 17 Nov 2026 01:05:13 +0000</pubDate>
+      <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
+      <link>https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</guid>
+      <description>[Score: 95] AIは脆弱性の発見を高速化しましたが、修正には人間の判断が必要です。 / オープンソースのメンテナーは、AI生成のセキュリティレポート（重複や誤報を含む）に既に圧倒されています。 / GitHubとMicrosoftは、AIが修正を支援するパイロットプログラム「Codename MDASH」を実施し、検証済みの重要な発見のみをメンテナーに提供しました。 [実務示唆: AIツールで脆弱性を報告する際は、単なる発見だけでなく、具体的な修正案やプルリクエストを添えることで、オープンソースプロジェクトのメンテナーの負担を軽減し、より建設的な貢献を心がけましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>コード生成を超えて：エージェント指向エンジニアリング開発者ガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</guid>
-      <description>[Score: 90] GitHubのコミット数が大幅に増加する一方で、開発者の生産性がそれに比例して向上していない現状を指摘し、AIによるコード生成だけでは不十分であると述べています。 / AIエージェントは、ソフトウェア開発の計画、構築、検証、監視といった全ステージにおいて、開発者の効率を向上させる可能性を秘めています。 / 特に、散在する情報を集約し、API変更の計画立案を支援するなど、開発プロセスのボトルネックを解消する具体的な活用例が紹介されています。 [実務示唆: AIを単なるコード生成ツールとしてではなく、開発プロセスの計画、検証、監視といった広範なタスクを支援するエージェントとして活用することで、開発全体の生産性向上を目指しましょう。] (Source: GitHub Blog)</description>
-      <pubDate>Fri, 06 Nov 2026 22:15:59 +0000</pubDate>
+      <title>GPT-6.2 AstraとSolの紹介</title>
+      <link>https://openai.com/index/introducing-gpt-6-2-astra-sol/</link>
+      <guid isPermaLink="false">https://openai.com/index/introducing-gpt-6-2-astra-sol/</guid>
+      <description>[Score: 90] OpenAIが次世代モデル「GPT-6.2 Astra」と「Sol」を発表しました。 / これらのモデルは、既存のGPTシリーズをさらに進化させ、より高度な推論能力と多様なタスク処理能力を持つと期待されます。 / 具体的な機能や性能の詳細は不明ですが、AI技術の新たなブレークスルーとなる可能性があります。 [実務示唆: 最新のAIモデルの動向を注視し、公開され次第、その性能やAPIを評価し、自社のAI活用戦略やアプリケーション開発への導入可能性を探るべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 17:46:43 +0000</pubDate>
     </item>
     <item>
-      <title>GitHubの新しいGitストレージアーキテクチャの内部</title>
-      <link>https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/</guid>
-      <description>[Score: 90] GitHubは、毎秒数千の書き込みとオンデマンドでスケーリングする読み込みを処理できる新しいGitストレージアーキテクチャを発表しました。 / このアーキテクチャは、5,000の同時エージェントがリポジトリで作業し、毎秒7,200プッシュを送信しながら、低遅延で読み込みトラフィックを処理できることを実証しています。 / 最小限の調整とストレージとコンピューティングの分離という原則に基づき、Azure Blob Storageを活用した仮想レプリカが導入されています。 [実務示唆: GitHubの新しいGitストレージアーキテクチャは、大規模なエージェント開発をサポートするため、CI/CDパイプラインや自動化ツールの設計において、より高頻度なGit操作を前提とした設計が可能になる。] [GitHub: github/github] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 05 Nov 2026 20:23:21 +0000</pubDate>
+      <title>L40S 1台で社内RAGは何人まで使えるか</title>
+      <link>https://zenn.dev/epicai_techblog/articles/29b509117755af</link>
+      <guid isPermaLink="false">https://zenn.dev/epicai_techblog/articles/29b509117755af</guid>
+      <description>[Score: 90] L40S GPU 1台で社内RAG（検索拡張生成）システムが何人まで利用可能か、実測に基づき検証した記事です。 / 26B程度の日本語LLMと業務向けGPU 1枚での運用を想定し、量子化形式や推論基盤による利用人数の違いを詳細に比較しています。 / 正答率の評価も行い、実用的な導入におけるパフォーマンスと精度のバランスについて具体的なデータが示されています。 [実務示唆: 社内RAGシステム導入を検討する際は、L40Sでの検証結果を参考に、モデルの量子化形式や推論基盤（vLLM/llama.cpp）の選択が利用人数と正答率に与える影響を評価し、要件に合った構成を検討すること。] (Source: Zenn)</description>
+      <pubDate>Tue, 17 Nov 2026 10:00:06 +0000</pubDate>
     </item>
     <item>
-      <title>QA生産性を爆上げさせるためのQA AIプラットフォーム構築</title>
-      <link>https://zenn.dev/gatechnologies/articles/8bdea59269eb10</link>
-      <guid isPermaLink="false">https://zenn.dev/gatechnologies/articles/8bdea59269eb10</guid>
-      <description>[Score: 90] GA technologiesのQAチームが、AIエージェントを活用したQA AIプラットフォーム「GAQ」を構築し、QA生産性を向上させた事例を紹介しています。 / 開発スループットの向上に対しQAがボトルネックになっていた課題や、AI活用が進んでいなかった状況を改善するためにGAQを導入しました。 / GAQは「AIが工程を回し、人が判断する」ことを前提に設計され、テスト計画から品質レポートまでほぼ全ての工程をAIエージェントの「Skill」で自動化しています。 [実務示唆: QAエンジニアや開発チームは、AIエージェントを活用したQA自動化プラットフォームの導入を検討し、テスト計画、テストケース作成、品質レポート生成などの定型業務をAIに任せることで、QAのボトルネック解消と生産性向上を図るべきです。] (Source: Zenn)</description>
-      <pubDate>Mon, 16 Nov 2026 09:12:44 +0000</pubDate>
+      <title>ソフトウェアエンジニアの黄昏期をこう過ごそうと思う｜わかばめ</title>
+      <link>https://note.com/wakabame/n/nc76b65a187bb</link>
+      <guid isPermaLink="false">https://note.com/wakabame/n/nc76b65a187bb</guid>
+      <description>[Score: 90] AIによるコーディングエージェントの性能が飛躍的に向上し、ソフトウェアエンジニアの仕事が質的に変化している現状を考察しています。 / AIが仕様書作成から実装、テスト、レビューまでを高速かつ高品質にこなせるようになり、エンジニアはコードを書くこと自体よりも、プロダクトディレクションやアーキテクトのような上位レイヤーの仕事に価値を見出す必要が出てきています。 / 著者は、AIの成長速度に無力感を覚えつつも、この変化に適応し、自身のキャリアパスを再構築していく考えを述べています。 [実務示唆: AIによる自動化が進む中で、エンジニアはコード実装だけでなく、プロダクトの全体設計やビジネス要件の理解といった上位レイヤーのスキル習得を強化すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 17 Nov 2026 13:10:43 +0000</pubDate>
     </item>
     <item>
-      <title>毎月6,000 AI Agentsを捌くためにキーボードを捨てた話</title>
-      <link>https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce</link>
-      <guid isPermaLink="false">https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce</guid>
-      <description>[Score: 90] 開発統括者が、毎月6,000セッションものAI Agentを効率的に活用するため、開発スタイルを大幅に刷新した事例を紹介しています。 / 認知負荷と意思決定コスト、AI指示コストを極限まで減らすことを目的に、Orca ADEや自作のiOS/Apple Watchアプリを導入。 / Claude CodeのTask Toolsを活用し、AIが自律的にタスク進捗を出力する環境を構築することで、大量のAI Agentを管理しています。 [実務示唆: AIを活用した開発効率化を目指すエンジニアは、認知負荷軽減とAIとの連携コスト削減を意識し、Orca ADEやClaude CodeのTask Toolsのようなツール導入・自作を検討すべきです。] [GitHub: andoshin11/orca-milestone] (Source: Zenn)</description>
-      <pubDate>Tue, 17 Nov 2026 03:13:36 +0000</pubDate>
+      <title>AIがOracle DBからPostgreSQLへの移行を支援、「Azure Database Migration Service」プレビュー</title>
+      <link>https://www.publickey1.jp/blog/26/aioracle_dbpostgresqlazure_database_migration_service.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_dbpostgresqlazure_database_migration_service.html</guid>
+      <description>[Score: 90] Microsoftは「Microsoft Ignite 2026」で、Azure Database Migration Service (Azure DMS) にOracle DBからPostgreSQLへのデータ移行機能のプレビューを発表しました。 / この機能は、VS CodeのPostgreSQL拡張機能とAIサポートを組み合わせ、スキーマ変換やPL/SQLパッケージの移行を支援します。 / ダウンタイムを最小限に抑えつつ、OracleからAzure上のPostgreSQLサービスへの移行を効率化します。 [実務示唆: Oracle DBからPostgreSQLへの移行を検討している企業は、Azure DMSのAI支援機能を活用し、移行作業の複雑性とコスト削減の可能性を評価すべきです。] (Source: Publickey)</description>
+      <pubDate>Tue, 17 Nov 2026 21:40:32 +0000</pubDate>
     </item>
     <item>
-      <title>AI音楽会社がミュージシャン自身の録音に著作権を主張し、YouTube動画が削除される</title>
-      <link>https://www.reddit.com/r/technology/comments/1xyi3bu/ai_music_company_claims_copyright_over_musicians/</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/technology/comments/1xyi3bu/ai_music_company_claims_copyright_over_musicians/</guid>
-      <description>[Score: 90] AI音楽会社が、ミュージシャン自身のオリジナル録音に対して著作権を主張し、その結果YouTube動画が削除された事例が報告されました。 / これはAI生成コンテンツと既存著作物の権利関係における複雑な問題を示唆しています。 / AI技術の進化に伴い、著作権侵害や誤った権利主張のリスクが高まっている現状が浮き彫りになっています。 [実務示唆: AIツールを利用するクリエイターは、著作権侵害のリスクを理解し、自身の作品が不当に主張されないよう、プラットフォームのポリシーを確認しましょう。] (Source: Reddit)</description>
-      <pubDate>Tue, 17 Nov 2026 11:29:38 +0000</pubDate>
+      <title>Varnish Cache 7 VCLエンジニアリング: Grace Mode, ESI Fragment Caching &amp; XKey Instant Purging</title>
+      <link>https://dev.to/hostingpodium/varnish-cache-7-vcl-engineering-grace-mode-esi-fragment-caching-xkey-instant-purging-2h5f</link>
+      <guid isPermaLink="false">https://dev.to/hostingpodium/varnish-cache-7-vcl-engineering-grace-mode-esi-fragment-caching-xkey-instant-purging-2h5f</guid>
+      <description>[Score: 90] Varnish Cache 7の設定ガイドで、Grace Mode、ESI Fragment Caching、X-Keyによるミリ秒単位のキャッシュ無効化について解説しています。 / これらのVCL拡張機能により、バックエンド障害時のキャッシュミススパイクを排除し、きめ細かいESIフラグメント再利用を可能にします。 / サブ秒のレイテンシ、99.99%の可用性、PCI-DSS分離要件を満たす本番環境向けデプロイメントに焦点を当てています。 [実務示唆: Varnish Cache 7を利用している場合、Grace Mode、ESI Fragment Caching、X-Keyを導入し、高可用性と高速なキャッシュ無効化を実現することで、ユーザーエクスペリエンスとシステム安定性を向上させましょう。] (Source: Dev.to)</description>
+      <pubDate>Wed, 18 Nov 2026 03:01:48 +0000</pubDate>
     </item>
     <item>
-      <title>当社お客様の情報漏えいの可能性に関するお詫びとお知らせ:楽天証券</title>
-      <link>https://www.rakuten-sec.co.jp/web/info/info20261117-02.html</link>
-      <guid isPermaLink="false">https://www.rakuten-sec.co.jp/web/info/info20261117-02.html</guid>
-      <description>[Score: 90] 楽天証券は、第三者による不正アクセスを受け、お客様情報の一部が漏えいした可能性があることを発表しました。 / ログインパスワードや暗証番号の漏えいは確認されていませんが、お客様には注意を呼びかけています。 / 影響を受けたお客様には個別に連絡し、引き続き調査を進めるとしています。 [実務示唆: 楽天証券の利用者は、不審なメールやSMS、電話に注意し、パスキー認証の設定を推奨します。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 17 Nov 2026 08:41:53 +0000</pubDate>
+      <title>デバイス間で継続するセッションのためのAgent Host Protocolの構築</title>
+      <link>https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</guid>
+      <description>[Score: 90] AIエージェントのセッションをデバイス間で継続させるためのオープン標準「Agent Host Protocol (AHP)」がGitHubによって開発されました。 / GitHub Copilotでは、このAHPにより、VS Codeやモバイルアプリなど異なる環境でエージェントセッションを中断なく引き継ぐことが可能です。 / AHPは、エージェントのライフタイムを特定のアプリケーションに縛らず、作業の継続性を実現します。 [実務示唆: マルチデバイス環境でAIエージェントのセッション継続性を実現したい開発者は、GitHubが提唱するAgent Host Protocol (AHP)の仕様を調査し、自身のアプリケーションやワークフローへの導入を検討しましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
     </item>
     <item>
-      <title>楽天証券に不正アクセス 最大1125万口座の情報漏えい可能性</title>
-      <link>https://www.watch.impress.co.jp/docs/news/2157207.html</link>
-      <guid isPermaLink="false">https://www.watch.impress.co.jp/docs/news/2157207.html</guid>
-      <description>[Score: 90] 楽天証券が第三者による不正アクセスを受け、最大1125万口座のログインIDを含む顧客情報が漏えいした可能性があると発表しました。 / テスト環境のシステムから情報が流出したとみられ、氏名、住所、出金先口座情報なども含まれる可能性があります。 / パスワードや暗証番号の漏えいは確認されていませんが、同社はパスキー認証の利用を推奨しています。 [実務示唆: 楽天証券の利用者は、パスキー認証を設定し、不審な連絡には応じないよう注意喚起を徹底すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 17 Nov 2026 09:23:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>楽天証券に不正アクセス、最大1125万口座のログインIDなど漏えいのおそれ（CNET Japan） - Yahoo!ニュース</title>
-      <link>https://news.yahoo.co.jp/articles/141fe69b0f33952604cde710494bbdff584f269a</link>
-      <guid isPermaLink="false">https://news.yahoo.co.jp/articles/141fe69b0f33952604cde710494bbdff584f269a</guid>
-      <description>[Score: 90] 楽天証券が不正アクセスを受け、最大1125万口座のログインIDと、最大447万口座の氏名や住所、出金先口座情報などが漏えいした可能性があると発表しました。 / テスト環境からの情報流出が原因とみられ、退会者の情報も含まれています。 / パスワードの漏えいは確認されていませんが、パスキー認証の利用と不審な連絡への注意を呼びかけています。 [実務示唆: 楽天証券のユーザーは、パスキー認証を有効にし、フィッシング詐欺に警戒するとともに、自身の口座状況を定期的に確認することが重要です。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 17 Nov 2026 09:33:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google Antigravity、クラウド上でAIエージェントが働く「リモートエージェント」機能を搭載。就業時間外でもAIエージェントは働き続ける</title>
-      <link>https://www.publickey1.jp/blog/26/google_antigravityaiai.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_antigravityaiai.html</guid>
-      <description>[Score: 88] Googleが提供するAIエージェント開発環境「Antigravity」に、クラウド上でAIエージェントが動作する「リモートエージェント」機能が搭載されました。 / これにより、ユーザーのローカルPCの電源がオフでも、AIエージェントは独立したクラウド仮想マシン上でタスクを継続できます。 / 開発者は、AIエージェントに指示を出した後、PCを閉じても作業が進行し、テスト完了やプルリクエスト作成までを自動化できるようになります。 [実務示唆: AIエージェントを活用した開発プロセスを検討する際、Google Antigravityのリモートエージェント機能を利用し、開発効率の向上と継続的な作業自動化を試すことを推奨します。] (Source: Publickey)</description>
-      <pubDate>Thu, 12 Nov 2026 15:13:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>ランキングは維持されるか？小型・量子化・オンデバイスLLMにおける幻覚検出器の実践者向け監査</title>
-      <link>https://arxiv.org/abs/2611.17339</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.17339</guid>
-      <description>[Score: 88] この論文は、小型で量子化されたオンデバイスLLMにおける幻覚検出器の有効性について、実践的な観点から監査を行っています。 / 特に、リソースが限られた環境でのLLMの信頼性を評価し、幻覚（ハルシネーション）問題への対策を検討しています。 / arXivLabsのフレームワーク内で開発・共有される新しい機能に関する一般的な情報が記載されています。 [実務示唆: オンデバイスLLMを導入する際、幻覚検出器の性能を小型・量子化モデルの特性に合わせて厳密に評価し、実用環境での信頼性を確保するための対策を講じるべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 16 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>物理世界とAIをつなぐ：可視化で学ぶカメラ・座標系・運動制御入門</title>
-      <link>https://zenn.dev/turing_motors/articles/cea9e3c85611b2</link>
-      <guid isPermaLink="false">https://zenn.dev/turing_motors/articles/cea9e3c85611b2</guid>
-      <description>[Score: 88] この記事は、自動運転AIやフィジカルAI開発において、AIの予測をカメラ映像に重ねて可視化することの重要性を解説しています。 / 可視化にはカメラ、座標系、運動制御の理解が不可欠であり、これらがAIと物理世界をつなぐ技術力の指標となると述べています。 / End-to-End (E2E) 自動運転モデルやVLAモデルの台頭により、AIの内部状態がブラックボックス化する中で、可視化がデバッグや評価の要となることを強調しています。 [実務示唆: フィジカルAIや自動運転AIを開発するエンジニアは、AIの予測結果を物理世界（カメラ映像など）に正確に可視化する技術を習得し、デバッグ、評価、およびAIの振る舞い理解に活用することを推奨します。] (Source: Zenn)</description>
-      <pubDate>Mon, 16 Nov 2026 08:00:05 +0000</pubDate>
+      <title>ローカルLLM入門</title>
+      <link>https://zenn.dev/port_inc/articles/ff974c7456f4db</link>
+      <guid isPermaLink="false">https://zenn.dev/port_inc/articles/ff974c7456f4db</guid>
+      <description>[Score: 85] この記事は、手元のPCやブラウザでLLMを動かす仕組みについて解説しています。 / LLMの「重み」がモデルの正体であり、これをローカルで動かすことで情報漏洩リスクを低減できると説明。 / オープンウェイトモデルの性能向上が著しく、フロンティアモデルとの差が縮まっている現状も紹介しています。 [実務示唆: 情報セキュリティが重要なプロジェクトでは、ローカルLLMの導入を検討し、機密データを外部に送信せずにAIを活用する環境を構築すべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 17 Nov 2026 07:17:24 +0000</pubDate>
     </item>
     <item>
       <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
@@ -119,32 +91,60 @@
       <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
     </item>
     <item>
-      <title>Cloudflare、AI専用でタブやテーマや拡張などない軽量ヘッドレスブラウザ「Kitesurf」、オープンソースで公開</title>
-      <link>https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/cloudflareaikitesurf.html</guid>
-      <description>[Score: 85] CloudflareがAIエージェント向けに設計された軽量ヘッドレスブラウザ「Kitesurf」をオープンソースで公開しました。 / これは、AIがWebブラウザを操作して情報収集やWebアプリケーション処理を行うシナリオが増加していることに対応するものです。 / 人間用ブラウザとは異なり、タブやブックマーク、拡張機能などが不要で、軽量かつ高速な動作が求められるAIエージェントの要件を満たします。 [実務示唆: AIエージェントによるWeb操作を検討している開発者は、Kitesurfを導入し、AI専用の効率的なWebインタラクションを構築することで、パフォーマンス向上とリソース削減を図るべきです。] [GitHub: cloudflare/kitesurf] (Source: Publickey)</description>
-      <pubDate>Sun, 15 Nov 2026 15:30:19 +0000</pubDate>
+      <title>GoogleのAI回答により検索トラフィックが40%減少</title>
+      <link>https://revscope.co/blog/search-seo-geo-2026/</link>
+      <guid isPermaLink="false">https://revscope.co/blog/search-seo-geo-2026/</guid>
+      <description>[Score: 85] GoogleのAI Overviewsが検索結果に表示されることで、外部ウェブサイトへのクリックが約40%減少していることが実験で明らかになりました。 / AI Overviewsは過去2年間で表示されるキーワードの割合が大幅に増加しており、SEO業界はGenerative Engine Optimization (GEO)で対応を模索しています。 / AIアシスタントからのトラフィックは依然として少なく、AI回答に引用されるためのコンテンツ戦略が重要になっています。 [実務示唆: ウェブサイト運営者は、AI回答に引用されやすいコンテンツ作成や、AI Overviewsの影響を考慮した新たなSEO戦略（GEO）の導入を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 18 Nov 2026 00:17:58 +0000</pubDate>
     </item>
     <item>
-      <title>カーネギーメロン大学がコンピュータサイエンスのコースをYouTubeで無料公開</title>
-      <link>https://www.cs.cmu.edu/learn/</link>
-      <guid isPermaLink="false">https://www.cs.cmu.edu/learn/</guid>
-      <description>[Score: 85] カーネギーメロン大学がAI、ロボティクス、システム、生物学など、主要分野のコンピュータサイエンスコースをYouTubeで無料公開しました。 / これにより、世界中の誰もが最先端の教育コンテンツにアクセスできるようになります。 / 将来的には、AIチューター機能や公式の資格取得プログラムも提供される予定です。 [実務示唆: 最先端のコンピュータサイエンス教育に無料でアクセスできるため、自身のスキルアップや新しい技術分野の学習に積極的に活用することを推奨します。] (Source: Hacker News)</description>
-      <pubDate>Mon, 16 Nov 2026 20:43:36 +0000</pubDate>
+      <title>dbt + DuckDBでSQL集計をローカルで動かしてみる</title>
+      <link>https://qiita.com/take-yoda/items/e24e62ba5a4ad4d84c0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/take-yoda/items/e24e62ba5a4ad4d84c0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] dbtとDuckDBを組み合わせて、SQL集計処理をローカル環境で完結させる方法が解説されています。 / dbtでSQLモデルを管理し、DuckDBをバックエンドとして利用することで、手軽にデータ変換・集計パイプラインを構築できます。 / 記事では、ECショップの注文データを例に、具体的なセットアップ手順と実行方法が示されています。 [実務示唆: データ分析やETL処理をローカルで手軽に試したいエンジニアは、dbtとDuckDBの組み合わせを導入し、SQLベースのデータ変換パイプライン構築を実践することで、開発効率の向上と学習に役立てること。] (Source: Qiita)</description>
+      <pubDate>Tue, 17 Nov 2026 04:09:18 +0000</pubDate>
     </item>
     <item>
-      <title>Kotlin Fest 2026 参加記</title>
-      <link>https://zenn.dev/0st_ts/articles/d55862e1a134c2</link>
-      <guid isPermaLink="false">https://zenn.dev/0st_ts/articles/d55862e1a134c2</guid>
-      <description>[Score: 85] Kotlin Fest 2026の参加記で、Kotlin 2.5.0-RCで導入される実験的な新機能について解説しています。 / 特に、companion objectのインスタンスなしでクラスに紐づく関数を書く機能と、Value Classに複数のプロパティを持たせるFull Value Classに焦点が当てられています。 / Value ClassのIdentity（同一性）の概念や、JavaのProject Valhalla、不変性についても触れ、パフォーマンス改善の可能性を示唆しています。 [実務示唆: Kotlin開発者は、Kotlin 2.5.0-RCで導入されるValue Classや関連する新機能を早期に検証し、コードの安全性向上やパフォーマンス最適化に活用できるか評価することを推奨します。] (Source: Zenn)</description>
-      <pubDate>Mon, 16 Nov 2026 10:00:05 +0000</pubDate>
+      <title>Google「Gemini Notebook」、業務ツールを生成できる新機能</title>
+      <link>https://japan.cnet.com/article/35254996/</link>
+      <guid isPermaLink="false">https://japan.cnet.com/article/35254996/</guid>
+      <description>[Score: 85] GoogleのAIノートツール「Gemini Notebook」に、取り込んだ資料から操作可能なウェブサイトを生成する新機能が追加されました。 / この機能により、試験勉強教材、売上データダッシュボード、タスク管理ツールなどをチャットで指示するだけで自動生成できます。 / 生成されたサイトは新しいタブで操作可能で、他者との共有もサポートされており、モバイルアプリ版にも近日導入予定です。 [実務示唆: Gemini Notebookの新機能は、資料から業務ツールを迅速にプロトタイプ作成できるため、業務効率化や情報共有の新しいアプローチとして試用を推奨します。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 17 Nov 2026 07:22:06 +0000</pubDate>
     </item>
     <item>
-      <title>中編 LLM推論エンジンを作る</title>
-      <link>https://zenn.dev/shozotanaka/articles/632191056c62f4</link>
-      <guid isPermaLink="false">https://zenn.dev/shozotanaka/articles/632191056c62f4</guid>
-      <description>[Score: 85] 本記事では、Llamaの計算グラフを組み立てるLlamaArch::BuildGraphのコードを詳細に解説しています。 / LlamaはggmlLMが扱うモデルの中で最もシンプルな形をしており、Gemmaやgpt-ossもLlamaとの違いとして説明できるため、本章が本書の中心となります。 / 対応するソースはArch/LlamaArch.cppと共通部品を集めたGraphOps.cppで、Llamaのデコードにおける計算グラフの構造が示されています。 [実務示唆: LLMの推論エンジンの内部構造を理解することで、モデルの最適化やカスタム実装の際に具体的な改善点を見つけやすくなるため、関連コードを深く読み込むことを推奨します。] (Source: Zenn)</description>
-      <pubDate>Mon, 16 Nov 2026 07:46:05 +0000</pubDate>
+      <title>マイクロソフト、PostgreSQL互換のミッションクリティカル向けデータベースサービス「Azure HorizonDB」正式リリース</title>
+      <link>https://www.publickey1.jp/blog/26/postgresqlazure_horizondb.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresqlazure_horizondb.html</guid>
+      <description>[Score: 85] Microsoftが年次イベント「Microsoft Ignite 2026」で、PostgreSQL互換のミッションクリティカル向けデータベースサービス「Azure HorizonDB」を正式リリースしました。 / 最大3072vCPUまでスケールアウト可能で、ストレージは最大128TBまでオートスケールします。 / 複数アベイラビリティゾーンにレプリカを作成し、高可用性と低レイテンシを実現し、PgVectorによるベクトル検索もサポートします。 [実務示唆: ミッションクリティカルなPostgreSQLワークロードをAzureに移行する際、高可用性とスケーラビリティを求める場合はAzure HorizonDBの導入を検討すべきです。] (Source: Publickey)</description>
+      <pubDate>Tue, 17 Nov 2026 21:45:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>モーションプランニングとナビゲーション — 第10章: Navigation2 Stack [KR]</title>
+      <link>https://dev.to/richard_minsoogo/motion-planning-and-navigation-ch10-navigation2-stack-kr-54dg</link>
+      <guid isPermaLink="false">https://dev.to/richard_minsoogo/motion-planning-and-navigation-ch10-navigation2-stack-kr-54dg</guid>
+      <description>[Score: 85] Navigation2（Nav2）は、ROS 2ベースの自律移動ロボット向けナビゲーションフレームワークです。 / 単一アルゴリズムではなく、経路計画、制御、復旧などを担当する複数のサーバーが連携する分散型アーキテクチャを採用しています。 / 行動ツリー（Behavior Tree）によりナビゲーション動作を調整し、複雑なミッション動作を柔軟に設定・変更できます。 [実務示唆: ROS 2で自律移動ロボットを開発する際は、Nav2の分散アーキテクチャと行動ツリーによる柔軟なナビゲーションポリシー設計を検討し、GitHubリポジトリのサンプルコードを参考に実装を進めましょう。] [GitHub: Statera-Library/08_Vol_15_Motion_Planning_and_Navigation] (Source: Dev.to)</description>
+      <pubDate>Wed, 18 Nov 2026 03:01:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIを介したやり取りは、放っておくとAI Slopを加速させるかも</title>
+      <link>https://qiita.com/inukai-masanori/items/141e960b0bab8015bdae?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/inukai-masanori/items/141e960b0bab8015bdae?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] AIを使ったコミュニケーションが、読み手の認知負荷を高め「AI Slop」と呼ばれる質の低い文章を増やす可能性を指摘しています。 / AIが生成した文章をそのまま使うことで、書き手の工夫が失われ、読み手にとって本質が伝わりにくくなります。 / 人と人のやり取りにおいて、AI生成物を介する際の「ひと手間」の重要性を強調しています。 [実務示唆: AIで生成した文章を共有する際は、必ず自分の言葉で要点を加え、読み手の視点に立って内容を推敲する習慣をつけましょう。] (Source: Qiita)</description>
+      <pubDate>Mon, 16 Nov 2026 00:52:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
+      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>MicrosoftのONNX RuntimeがGitHubから消滅</title>
+      <link>https://github.com/microsoft/onnxruntime</link>
+      <guid isPermaLink="false">https://github.com/microsoft/onnxruntime</guid>
+      <description>[Score: 80] MicrosoftのONNX RuntimeリポジトリがGitHubから突然消滅したと報じられました。 / この動きは、ONNX Runtimeの将来性やMicrosoftのオープンソース戦略に疑問を投げかけています。 / 開発者コミュニティでは、その理由と今後の対応について懸念が広がっています。 [実務示唆: ONNX Runtimeを利用中のプロジェクトは、代替手段の検討や公式アナウンスの注視が必要。今後の動向に注意し、影響を評価すること。] [GitHub: microsoft/onnxruntime] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 23:18:49 +0000</pubDate>
     </item>
   </channel>
 </rss>
