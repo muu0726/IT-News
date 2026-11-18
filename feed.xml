@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 18 Nov 2026 03:10:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 14:37:17 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
@@ -33,6 +33,34 @@
       <guid isPermaLink="false">https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</guid>
       <description>[Score: 95] AIは脆弱性の発見を高速化しましたが、修正には人間の判断が必要です。 / オープンソースのメンテナーは、AI生成のセキュリティレポート（重複や誤報を含む）に既に圧倒されています。 / GitHubとMicrosoftは、AIが修正を支援するパイロットプログラム「Codename MDASH」を実施し、検証済みの重要な発見のみをメンテナーに提供しました。 [実務示唆: AIツールで脆弱性を報告する際は、単なる発見だけでなく、具体的な修正案やプルリクエストを添えることで、オープンソースプロジェクトのメンテナーの負担を軽減し、より建設的な貢献を心がけましょう。] (Source: GitHub Blog)</description>
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>部下がClaudeっぽいスライドしか出してこなくてウンザリしてる上司はこれを使わせなさい</title>
+      <link>https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 95] AIが生成するスライドが「Claudeっぽい」と見なされる理由を解説しています。 / これは生成AIの「分布収束」という仕組みによるもので、無難なデザインを生成しやすい傾向があります。 / AIに依存せず、聞き手や目的に合わせた資料作成スキルを部下に習得させる重要性を説いています。 [実務示唆: AI生成資料の品質向上には、目的やターゲットを明確にし、AIに具体的な指示を与えるプロンプトエンジニアリングスキルを習得させましょう。] (Source: Qiita)</description>
+      <pubDate>Tue, 17 Nov 2026 00:58:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>tsrsを導入したらoxlintのtype-aware lintingとtypecheckが爆速になった話</title>
+      <link>https://zenn.dev/dress_code/articles/6c179ae5129131</link>
+      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/6c179ae5129131</guid>
+      <description>[Score: 95] Zennの記事で、TypeScriptコンパイラをRustに移植したtsrsを導入することで、oxlintのtype-aware lintingとtypecheckが大幅に高速化された事例が紹介されています。 / 特にバックエンドのtypecheckは20倍以上高速化され、CIの実行時間が大幅に短縮されたとのことです。 / tsrsはTypeScript 7.1 betaに準拠しており、既存のtscやtsgolintからの置き換えで、指摘内容に大きな変更なく性能向上が実現されています。 [実務示唆: TypeScriptプロジェクトでCI/CDの型チェックやlintingの速度に課題がある場合、tsrsの導入を検討し、既存ツールからの置き換えによるパフォーマンス改善を検証すべきです。] [GitHub: oxc-project/tsrs] (Source: Zenn)</description>
+      <pubDate>Wed, 18 Nov 2026 07:00:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI も「一晩寝かせる」と考えがまとまる🥱 寝ている間に記憶を整理する Dreaming の仕組み</title>
+      <link>https://qiita.com/KYoshiyama/items/623e13ced9c119b614aa?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/KYoshiyama/items/623e13ced9c119b614aa?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 95] Anthropicが発表したAIの「Dreaming」は、AIが作業ログを夜間に見返し、間違ったメモを修正し、知識をWikiにまとめる記憶整理の仕組みです。 / 人間が睡眠中に記憶を整理するのと同様に、AIも日中のログを整理し、翌日の応答に活かします。 / Claude Codeでの追実装例や、メモの量とタスク達成度の関係を示すポケモンプレイ実験が紹介されています。 [実務示唆: AIエージェントの性能向上には、単に多くの情報を与えるだけでなく、Dreamingのような記憶整理メカニズムを導入し、効率的な知識管理を行うことが重要であるため、開発者はこの概念を設計に取り入れるべきです。] (Source: Qiita)</description>
+      <pubDate>Wed, 18 Nov 2026 02:13:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
+      <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</guid>
+      <description>[Score: 95] マイクロソフトは「Microsoft Ignite 2026」で、AIによるサイバー攻撃に対抗するための新サービス「Microsoft Perception」の提供開始を発表しました。 / このサービスは、レッドチーム、ブルーチーム、グリーンチームのAIエージェントが連携し、攻撃シミュレーション、脅威検出、修復を機械速度で実行します。 / AIによる攻撃の自動化が進む中、人間では対応が困難な速度での防御をAIエージェントが実現します。 [実務示唆: AIによるサイバー攻撃が高度化する中、Microsoft PerceptionのようなAI駆動型セキュリティソリューションの導入を検討し、セキュリティ対策の自動化と高速化を図るべきです。] (Source: Publickey)</description>
+      <pubDate>Wed, 18 Nov 2026 16:00:37 +0000</pubDate>
     </item>
     <item>
       <title>GPT-6.2 AstraとSolの紹介</title>
@@ -77,74 +105,46 @@
       <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
     </item>
     <item>
+      <title>エネルギーベース推論器：385倍効率的な推論</title>
+      <link>https://energy-based-reasoners.github.io/</link>
+      <guid isPermaLink="false">https://energy-based-reasoners.github.io/</guid>
+      <description>[Score: 90] Energy-Based Reasoners (EBRs)は、潜在推論状態に対するエネルギー関数を学習し、勾配降下法で反復更新を行う新しい推論モデルです。 / これにより、既存のループ型モデルが抱える進捗評価の難しさを克服し、推論の停止タイミングと改善方向を明確にします。 / EBRsは、数理的推論ベンチマークにおいて、既存モデルを凌駕する性能を達成し、特にSudoku-Extremeでは345倍少ない推論計算量で99.9%の精度を達成しました。 [実務示唆: AIモデルの推論効率向上に関心のある研究者や開発者は、EBRsの概念を理解し、自身のモデルにエネルギーベースの最適化手法を適用することを検討すべきです。] [GitHub: energy-based-reasoners/energy-based-reasoners.github.io] (Source: Hacker News)</description>
+      <pubDate>Wed, 18 Nov 2026 09:29:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>Museは「成長する相棒」になれるのか？ 記憶と改善の積み重ねを観察する</title>
+      <link>https://zenn.dev/daydream/articles/muse-observation-01-memory-and-boundaries</link>
+      <guid isPermaLink="false">https://zenn.dev/daydream/articles/muse-observation-01-memory-and-boundaries</guid>
+      <description>[Score: 90] MetaのパーソナルAIエージェント「Muse」が、ユーザーの目標を記憶し、先回りして考え、失敗を振り返り改善する可能性について検証しています。 / ベンチマークスコアだけでは分からない、記憶や自己改善の積み重ねが全体としてどう作用するかを長期観察する試みです。 / Museの記憶処理や自己改善の仕組み、権限管理について、エージェント自身への質問と実地調査を通じて考察しています。 [実務示唆: AIエージェントを業務に導入する際は、単一タスクの性能だけでなく、長期的な記憶の保持、自己改善の有効性、および権限管理の仕組みを深く理解し、その限界と可能性を把握することが重要です。] (Source: Zenn)</description>
+      <pubDate>Tue, 17 Nov 2026 11:31:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Geminiが電話も支払いも代行する「タスク」モード、日本でも無料で提供開始 | テクノエッジ TechnoEdge</title>
+      <link>https://www.techno-edge.net/article/2026/11/18/5756.html</link>
+      <guid isPermaLink="false">https://www.techno-edge.net/article/2026/11/18/5756.html</guid>
+      <description>[Score: 90] GoogleのGeminiアプリに、車の整備予約や電気料金分析、買い物などをAIが代行する「タスク」モードが日本を含む複数国で無料提供開始されました。 / Gemini 4 Hydrogenモデルを使用し、電話代行やGoogle Pay連携による決済も可能です。 / 作業は専用の仮想マシンで行われ、セキュリティとプライバシーに配慮しつつ、AIによる生活支援の可能性を広げます。 [実務示唆: GeminiのタスクモードはAIエージェントによる自動化の新たな一歩であり、開発者はAPI連携や自動化のユースケースを検討し、自社サービスへの応用可能性を探るべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 18 Nov 2026 00:39:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
+      <link>https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</guid>
+      <description>[Score: 90] Microsoftは「Microsoft Ignite 2026」で、次期サーバーOS「Windows Server 2028」のパブリックプレビューを公開しました。 / Windows Server 2028は、Microsoft Foundry、Windows ML、vLLM、Llama.cppなどを利用した企業内AI推論の実行基盤としての役割を強化します。 / セキュリティ機能の強化やストレージ機能の改善も含まれており、AI時代のサーバーOSとして進化を遂げています。 [実務示唆: Windows Server 2028のプレビューを検証し、AI推論ワークロードや強化されたセキュリティ機能が自社のインフラにどう影響するか評価しましょう。] (Source: Publickey)</description>
+      <pubDate>Wed, 18 Nov 2026 15:55:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>言語モデルは自身の重みを書き換えることができる</title>
+      <link>https://arxiv.org/abs/2611.21885</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.21885</guid>
+      <description>[Score: 90] 本記事は、大規模言語モデル（LLM）が自身の内部パラメータ（重み）を自己修正する能力を持つ可能性について探求しています。 / モデルが学習プロセス中に自身の構造や振る舞いを動的に変更できるという、メタ学習の新たな側面を示唆しています。 / これは、より自律的で適応性の高いAIシステムの開発に繋がる画期的な研究方向性です。 [実務示唆: 自己修正能力を持つLLMの登場に備え、モデルの挙動をより深く理解し、予期せぬ変化に対応できるような監視・制御メカニズムの研究開発に着手しましょう。] (Source: arXiv cs.AI)</description>
+      <pubDate>Wed, 18 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>ローカルLLM入門</title>
       <link>https://zenn.dev/port_inc/articles/ff974c7456f4db</link>
       <guid isPermaLink="false">https://zenn.dev/port_inc/articles/ff974c7456f4db</guid>
       <description>[Score: 85] この記事は、手元のPCやブラウザでLLMを動かす仕組みについて解説しています。 / LLMの「重み」がモデルの正体であり、これをローカルで動かすことで情報漏洩リスクを低減できると説明。 / オープンウェイトモデルの性能向上が著しく、フロンティアモデルとの差が縮まっている現状も紹介しています。 [実務示唆: 情報セキュリティが重要なプロジェクトでは、ローカルLLMの導入を検討し、機密データを外部に送信せずにAIを活用する環境を構築すべきです。] (Source: Zenn)</description>
       <pubDate>Tue, 17 Nov 2026 07:17:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
-      <link>https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AI開発が加速する現代において、セキュリティは後から追加するものではなく、設計段階で組み込むべきであると提唱されています。 / 従来の認証やファイアウォールといった防御策だけでなく、業務であり得ない操作を設計で許さないことが重要です。 / OpenAIやAnthropicの事例から、モデルの賢さだけでは安全が確保されず、設計による境界設定が被害の大きさを左右することが示されています。 [実務示唆: AIを活用した開発では、セキュリティを設計段階から考慮し、業務上あり得ない操作を許さないようなシステム設計を徹底することで、将来的な脆弱性リスクを低減すべきです。] (Source: Qiita)</description>
-      <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>GoogleのAI回答により検索トラフィックが40%減少</title>
-      <link>https://revscope.co/blog/search-seo-geo-2026/</link>
-      <guid isPermaLink="false">https://revscope.co/blog/search-seo-geo-2026/</guid>
-      <description>[Score: 85] GoogleのAI Overviewsが検索結果に表示されることで、外部ウェブサイトへのクリックが約40%減少していることが実験で明らかになりました。 / AI Overviewsは過去2年間で表示されるキーワードの割合が大幅に増加しており、SEO業界はGenerative Engine Optimization (GEO)で対応を模索しています。 / AIアシスタントからのトラフィックは依然として少なく、AI回答に引用されるためのコンテンツ戦略が重要になっています。 [実務示唆: ウェブサイト運営者は、AI回答に引用されやすいコンテンツ作成や、AI Overviewsの影響を考慮した新たなSEO戦略（GEO）の導入を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 18 Nov 2026 00:17:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>dbt + DuckDBでSQL集計をローカルで動かしてみる</title>
-      <link>https://qiita.com/take-yoda/items/e24e62ba5a4ad4d84c0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/take-yoda/items/e24e62ba5a4ad4d84c0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] dbtとDuckDBを組み合わせて、SQL集計処理をローカル環境で完結させる方法が解説されています。 / dbtでSQLモデルを管理し、DuckDBをバックエンドとして利用することで、手軽にデータ変換・集計パイプラインを構築できます。 / 記事では、ECショップの注文データを例に、具体的なセットアップ手順と実行方法が示されています。 [実務示唆: データ分析やETL処理をローカルで手軽に試したいエンジニアは、dbtとDuckDBの組み合わせを導入し、SQLベースのデータ変換パイプライン構築を実践することで、開発効率の向上と学習に役立てること。] (Source: Qiita)</description>
-      <pubDate>Tue, 17 Nov 2026 04:09:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google「Gemini Notebook」、業務ツールを生成できる新機能</title>
-      <link>https://japan.cnet.com/article/35254996/</link>
-      <guid isPermaLink="false">https://japan.cnet.com/article/35254996/</guid>
-      <description>[Score: 85] GoogleのAIノートツール「Gemini Notebook」に、取り込んだ資料から操作可能なウェブサイトを生成する新機能が追加されました。 / この機能により、試験勉強教材、売上データダッシュボード、タスク管理ツールなどをチャットで指示するだけで自動生成できます。 / 生成されたサイトは新しいタブで操作可能で、他者との共有もサポートされており、モバイルアプリ版にも近日導入予定です。 [実務示唆: Gemini Notebookの新機能は、資料から業務ツールを迅速にプロトタイプ作成できるため、業務効率化や情報共有の新しいアプローチとして試用を推奨します。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 17 Nov 2026 07:22:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>マイクロソフト、PostgreSQL互換のミッションクリティカル向けデータベースサービス「Azure HorizonDB」正式リリース</title>
-      <link>https://www.publickey1.jp/blog/26/postgresqlazure_horizondb.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresqlazure_horizondb.html</guid>
-      <description>[Score: 85] Microsoftが年次イベント「Microsoft Ignite 2026」で、PostgreSQL互換のミッションクリティカル向けデータベースサービス「Azure HorizonDB」を正式リリースしました。 / 最大3072vCPUまでスケールアウト可能で、ストレージは最大128TBまでオートスケールします。 / 複数アベイラビリティゾーンにレプリカを作成し、高可用性と低レイテンシを実現し、PgVectorによるベクトル検索もサポートします。 [実務示唆: ミッションクリティカルなPostgreSQLワークロードをAzureに移行する際、高可用性とスケーラビリティを求める場合はAzure HorizonDBの導入を検討すべきです。] (Source: Publickey)</description>
-      <pubDate>Tue, 17 Nov 2026 21:45:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>モーションプランニングとナビゲーション — 第10章: Navigation2 Stack [KR]</title>
-      <link>https://dev.to/richard_minsoogo/motion-planning-and-navigation-ch10-navigation2-stack-kr-54dg</link>
-      <guid isPermaLink="false">https://dev.to/richard_minsoogo/motion-planning-and-navigation-ch10-navigation2-stack-kr-54dg</guid>
-      <description>[Score: 85] Navigation2（Nav2）は、ROS 2ベースの自律移動ロボット向けナビゲーションフレームワークです。 / 単一アルゴリズムではなく、経路計画、制御、復旧などを担当する複数のサーバーが連携する分散型アーキテクチャを採用しています。 / 行動ツリー（Behavior Tree）によりナビゲーション動作を調整し、複雑なミッション動作を柔軟に設定・変更できます。 [実務示唆: ROS 2で自律移動ロボットを開発する際は、Nav2の分散アーキテクチャと行動ツリーによる柔軟なナビゲーションポリシー設計を検討し、GitHubリポジトリのサンプルコードを参考に実装を進めましょう。] [GitHub: Statera-Library/08_Vol_15_Motion_Planning_and_Navigation] (Source: Dev.to)</description>
-      <pubDate>Wed, 18 Nov 2026 03:01:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIを介したやり取りは、放っておくとAI Slopを加速させるかも</title>
-      <link>https://qiita.com/inukai-masanori/items/141e960b0bab8015bdae?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/inukai-masanori/items/141e960b0bab8015bdae?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] AIを使ったコミュニケーションが、読み手の認知負荷を高め「AI Slop」と呼ばれる質の低い文章を増やす可能性を指摘しています。 / AIが生成した文章をそのまま使うことで、書き手の工夫が失われ、読み手にとって本質が伝わりにくくなります。 / 人と人のやり取りにおいて、AI生成物を介する際の「ひと手間」の重要性を強調しています。 [実務示唆: AIで生成した文章を共有する際は、必ず自分の言葉で要点を加え、読み手の視点に立って内容を推敲する習慣をつけましょう。] (Source: Qiita)</description>
-      <pubDate>Mon, 16 Nov 2026 00:52:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
-      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>MicrosoftのONNX RuntimeがGitHubから消滅</title>
-      <link>https://github.com/microsoft/onnxruntime</link>
-      <guid isPermaLink="false">https://github.com/microsoft/onnxruntime</guid>
-      <description>[Score: 80] MicrosoftのONNX RuntimeリポジトリがGitHubから突然消滅したと報じられました。 / この動きは、ONNX Runtimeの将来性やMicrosoftのオープンソース戦略に疑問を投げかけています。 / 開発者コミュニティでは、その理由と今後の対応について懸念が広がっています。 [実務示唆: ONNX Runtimeを利用中のプロジェクトは、代替手段の検討や公式アナウンスの注視が必要。今後の動向に注意し、影響を評価すること。] [GitHub: microsoft/onnxruntime] (Source: Hacker News)</description>
-      <pubDate>Tue, 17 Nov 2026 23:18:49 +0000</pubDate>
     </item>
   </channel>
 </rss>

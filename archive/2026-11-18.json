@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T12:08:48.222819+09:00",
-  "total_count": 43,
-  "success_count": 39,
+  "generated_at": "2026-11-18T23:36:09.353712+09:00",
+  "total_count": 73,
+  "success_count": 69,
   "error_count": 4,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -35,8 +35,8 @@
       "url": "https://calif.io/java4shell/",
       "source": "Hacker News",
       "published": "2026-11-17T21:11:28+00:00",
-      "hn_score": 593,
-      "hn_comments": 153,
+      "hn_score": 1061,
+      "hn_comments": 280,
       "reading_min": 14,
       "summary": "OpenJDKのBase64デコーダにメモリ破損の脆弱性「Java4Shell」（CVE-2026-114938）が発見されました。\nこの脆弱性はCVSS 4.0で9.2のクリティカルなスコアを持ち、認証なしのリモート攻撃者がヒープメモリを上書きし、リモートコード実行に至る可能性があります。\nJavaは金融、航空、通信など多くの基幹システムで利用されており、この脆弱性は広範な影響を及ぼす恐れがあります。",
       "actionable_takeaway": "OpenJDKを使用しているシステムでは、速やかにセキュリティパッチを適用し、Base64デコード処理を含むアプリケーションのセキュリティレビューを強化してください。",
@@ -54,7 +54,7 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 10
     },
     {
       "title": "［速報］マイクロソフト、コーディング用AIモデルとして高性能かつ低価格「MAI Code 2」「MAI Code 2 Flash」発表",
@@ -76,7 +76,7 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 23
+      "hatena_count": 65
     },
     {
       "title": "メンテナーはAIのバグレポートではなく、修正を求めている",
@@ -99,6 +99,98 @@
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "部下がClaudeっぽいスライドしか出してこなくてウンザリしてる上司はこれを使わせなさい",
+      "url": "https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-17T00:58:19+00:00",
+      "reading_min": 14,
+      "summary": "AIが生成するスライドが「Claudeっぽい」と見なされる理由を解説しています。\nこれは生成AIの「分布収束」という仕組みによるもので、無難なデザインを生成しやすい傾向があります。\nAIに依存せず、聞き手や目的に合わせた資料作成スキルを部下に習得させる重要性を説いています。",
+      "actionable_takeaway": "AI生成資料の品質向上には、目的やターゲットを明確にし、AIに具体的な指示を与えるプロンプトエンジニアリングスキルを習得させましょう。",
+      "tags": [
+        "AI",
+        "プレゼンテーション",
+        "プロンプトエンジニアリング"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "AIによる資料作成の課題と、その解決策としての人間側のスキル向上に焦点を当てており、実務に直結する示唆が多いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-17T23:55:51.995633+09:00",
+      "first_seen": "2026-11-17T23:55:51.995633+09:00",
+      "is_hot": true,
+      "hatena_count": 1,
+      "is_prev_seen": true
+    },
+    {
+      "title": "tsrsを導入したらoxlintのtype-aware lintingとtypecheckが爆速になった話",
+      "url": "https://zenn.dev/dress_code/articles/6c179ae5129131",
+      "source": "Zenn",
+      "published": "2026-11-18T07:00:06+00:00",
+      "reading_min": 7,
+      "summary": "Zennの記事で、TypeScriptコンパイラをRustに移植したtsrsを導入することで、oxlintのtype-aware lintingとtypecheckが大幅に高速化された事例が紹介されています。\n特にバックエンドのtypecheckは20倍以上高速化され、CIの実行時間が大幅に短縮されたとのことです。\ntsrsはTypeScript 7.1 betaに準拠しており、既存のtscやtsgolintからの置き換えで、指摘内容に大きな変更なく性能向上が実現されています。",
+      "actionable_takeaway": "TypeScriptプロジェクトでCI/CDの型チェックやlintingの速度に課題がある場合、tsrsの導入を検討し、既存ツールからの置き換えによるパフォーマンス改善を検証すべきです。",
+      "github_repo": "oxc-project/tsrs",
+      "tags": [
+        "TypeScript",
+        "Rust",
+        "Lint",
+        "Typecheck",
+        "CI/CD"
+      ],
+      "category": "プログラミング言語",
+      "score": 95,
+      "score_reason": "TypeScript開発におけるCI/CDのボトルネックを解消する具体的なソリューションであり、開発効率と生産性向上に直結するため、多くのエンジニアにとって非常に実用的な情報であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 18
+    },
+    {
+      "title": "AI も「一晩寝かせる」と考えがまとまる🥱 寝ている間に記憶を整理する Dreaming の仕組み",
+      "url": "https://qiita.com/KYoshiyama/items/623e13ced9c119b614aa?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-18T02:13:57+00:00",
+      "reading_min": 12,
+      "summary": "Anthropicが発表したAIの「Dreaming」は、AIが作業ログを夜間に見返し、間違ったメモを修正し、知識をWikiにまとめる記憶整理の仕組みです。\n人間が睡眠中に記憶を整理するのと同様に、AIも日中のログを整理し、翌日の応答に活かします。\nClaude Codeでの追実装例や、メモの量とタスク達成度の関係を示すポケモンプレイ実験が紹介されています。",
+      "actionable_takeaway": "AIエージェントの性能向上には、単に多くの情報を与えるだけでなく、Dreamingのような記憶整理メカニズムを導入し、効率的な知識管理を行うことが重要であるため、開発者はこの概念を設計に取り入れるべきです。",
+      "tags": [
+        "AIエージェント",
+        "記憶",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "AIの記憶整理メカニズム「Dreaming」は、LLMの長期的な性能向上と効率的な知識利用に直結する画期的な概念であり、今後のAI開発に大きな影響を与える可能性が高いため、非常に高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始",
+      "url": "https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html",
+      "source": "Publickey",
+      "published": "2026-11-18T16:00:37+00:00",
+      "reading_min": 6,
+      "summary": "マイクロソフトは「Microsoft Ignite 2026」で、AIによるサイバー攻撃に対抗するための新サービス「Microsoft Perception」の提供開始を発表しました。\nこのサービスは、レッドチーム、ブルーチーム、グリーンチームのAIエージェントが連携し、攻撃シミュレーション、脅威検出、修復を機械速度で実行します。\nAIによる攻撃の自動化が進む中、人間では対応が困難な速度での防御をAIエージェントが実現します。",
+      "actionable_takeaway": "AIによるサイバー攻撃が高度化する中、Microsoft PerceptionのようなAI駆動型セキュリティソリューションの導入を検討し、セキュリティ対策の自動化と高速化を図るべきです。",
+      "tags": [
+        "サイバーセキュリティ",
+        "AI",
+        "Microsoft"
+      ],
+      "category": "セキュリティ",
+      "score": 95,
+      "score_reason": "AIによるサイバー攻撃の脅威が増大する中で、AIエージェントが自律的に防御を行うという革新的なアプローチは、セキュリティ業界のパラダイムシフトを促す可能性があり、非常に重要度が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 1
     },
     {
       "title": "GPT-6.2 AstraとSolの紹介",
@@ -167,7 +259,7 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 90
+      "hatena_count": 249
     },
     {
       "title": "AIがOracle DBからPostgreSQLへの移行を支援、「Azure Database Migration Service」プレビュー",
@@ -191,7 +283,7 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 11,
       "topic_group": 1,
       "topic_size": 3
     },
@@ -240,6 +332,120 @@
       "hatena_count": 0
     },
     {
+      "title": "エネルギーベース推論器：385倍効率的な推論",
+      "url": "https://energy-based-reasoners.github.io/",
+      "source": "Hacker News",
+      "published": "2026-11-18T09:29:32+00:00",
+      "hn_score": 183,
+      "hn_comments": 27,
+      "reading_min": 2,
+      "summary": "Energy-Based Reasoners (EBRs)は、潜在推論状態に対するエネルギー関数を学習し、勾配降下法で反復更新を行う新しい推論モデルです。\nこれにより、既存のループ型モデルが抱える進捗評価の難しさを克服し、推論の停止タイミングと改善方向を明確にします。\nEBRsは、数理的推論ベンチマークにおいて、既存モデルを凌駕する性能を達成し、特にSudoku-Extremeでは345倍少ない推論計算量で99.9%の精度を達成しました。",
+      "actionable_takeaway": "AIモデルの推論効率向上に関心のある研究者や開発者は、EBRsの概念を理解し、自身のモデルにエネルギーベースの最適化手法を適用することを検討すべきです。",
+      "github_repo": "energy-based-reasoners/energy-based-reasoners.github.io",
+      "tags": [
+        "AI",
+        "推論",
+        "機械学習",
+        "効率化"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "推論効率を大幅に向上させる新しいAIモデルの提案であり、特に計算リソースが限られる環境でのAI活用に大きな影響を与える可能性があるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Museは「成長する相棒」になれるのか？ 記憶と改善の積み重ねを観察する",
+      "url": "https://zenn.dev/daydream/articles/muse-observation-01-memory-and-boundaries",
+      "source": "Zenn",
+      "published": "2026-11-17T11:31:17+00:00",
+      "reading_min": 7,
+      "summary": "MetaのパーソナルAIエージェント「Muse」が、ユーザーの目標を記憶し、先回りして考え、失敗を振り返り改善する可能性について検証しています。\nベンチマークスコアだけでは分からない、記憶や自己改善の積み重ねが全体としてどう作用するかを長期観察する試みです。\nMuseの記憶処理や自己改善の仕組み、権限管理について、エージェント自身への質問と実地調査を通じて考察しています。",
+      "actionable_takeaway": "AIエージェントを業務に導入する際は、単一タスクの性能だけでなく、長期的な記憶の保持、自己改善の有効性、および権限管理の仕組みを深く理解し、その限界と可能性を把握することが重要です。",
+      "tags": [
+        "AIエージェント",
+        "パーソナルAI",
+        "自己改善"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIエージェントの「記憶」と「自己改善」は、今後のAIの進化において非常に重要なテーマであり、その実態を深く掘り下げた考察は、AI開発者や利用者に多大な示唆を与えるため高評価としました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Geminiが電話も支払いも代行する「タスク」モード、日本でも無料で提供開始 | テクノエッジ TechnoEdge",
+      "url": "https://www.techno-edge.net/article/2026/11/18/5756.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-18T00:39:38+00:00",
+      "reading_min": 1,
+      "summary": "GoogleのGeminiアプリに、車の整備予約や電気料金分析、買い物などをAIが代行する「タスク」モードが日本を含む複数国で無料提供開始されました。\nGemini 4 Hydrogenモデルを使用し、電話代行やGoogle Pay連携による決済も可能です。\n作業は専用の仮想マシンで行われ、セキュリティとプライバシーに配慮しつつ、AIによる生活支援の可能性を広げます。",
+      "actionable_takeaway": "GeminiのタスクモードはAIエージェントによる自動化の新たな一歩であり、開発者はAPI連携や自動化のユースケースを検討し、自社サービスへの応用可能性を探るべきです。",
+      "tags": [
+        "Gemini",
+        "AIエージェント",
+        "自動化"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIが電話や決済を含む複雑なタスクを代行する機能は、AIエージェントの進化と実用化の大きな一歩であり、今後のAI活用に広範な影響を与えるため非常に重要度が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 101
+    },
+    {
+      "title": "Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張",
+      "url": "https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html",
+      "source": "Publickey",
+      "published": "2026-11-18T15:55:49+00:00",
+      "reading_min": 4,
+      "summary": "Microsoftは「Microsoft Ignite 2026」で、次期サーバーOS「Windows Server 2028」のパブリックプレビューを公開しました。\nWindows Server 2028は、Microsoft Foundry、Windows ML、vLLM、Llama.cppなどを利用した企業内AI推論の実行基盤としての役割を強化します。\nセキュリティ機能の強化やストレージ機能の改善も含まれており、AI時代のサーバーOSとして進化を遂げています。",
+      "actionable_takeaway": "Windows Server 2028のプレビューを検証し、AI推論ワークロードや強化されたセキュリティ機能が自社のインフラにどう影響するか評価しましょう。",
+      "tags": [
+        "Windows Server",
+        "AI推論",
+        "Microsoft Foundry"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 90,
+      "score_reason": "既存のサーバーOSがAI推論基盤へと大きく進化する点で新規性が高く、企業インフラに与える影響も大きいため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "言語モデルは自身の重みを書き換えることができる",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-18T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、大規模言語モデル（LLM）が自身の内部パラメータ（重み）を自己修正する能力を持つ可能性について探求しています。\nモデルが学習プロセス中に自身の構造や振る舞いを動的に変更できるという、メタ学習の新たな側面を示唆しています。\nこれは、より自律的で適応性の高いAIシステムの開発に繋がる画期的な研究方向性です。",
+      "actionable_takeaway": "自己修正能力を持つLLMの登場に備え、モデルの挙動をより深く理解し、予期せぬ変化に対応できるような監視・制御メカニズムの研究開発に着手しましょう。",
+      "tags": [
+        "LLM",
+        "自己修正",
+        "メタ学習"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "言語モデルが自身の重みを書き換える能力を持つという概念は、AIの自己改善と適応性において非常に革新的であり、将来のAI開発に大きな影響を与える可能性が高いためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "ローカルLLM入門",
       "url": "https://zenn.dev/port_inc/articles/ff974c7456f4db",
       "source": "Zenn",
@@ -259,7 +465,7 @@
       "new_at": "2026-11-17T23:55:51.995633+09:00",
       "first_seen": "2026-11-17T23:55:51.995633+09:00",
       "is_hot": false,
-      "hatena_count": 2,
+      "hatena_count": 22,
       "is_prev_seen": true
     },
     {
@@ -290,8 +496,8 @@
       "url": "https://revscope.co/blog/search-seo-geo-2026/",
       "source": "Hacker News",
       "published": "2026-11-18T00:17:58+00:00",
-      "hn_score": 130,
-      "hn_comments": 86,
+      "hn_score": 569,
+      "hn_comments": 430,
       "reading_min": 15,
       "summary": "GoogleのAI Overviewsが検索結果に表示されることで、外部ウェブサイトへのクリックが約40%減少していることが実験で明らかになりました。\nAI Overviewsは過去2年間で表示されるキーワードの割合が大幅に増加しており、SEO業界はGenerative Engine Optimization (GEO)で対応を模索しています。\nAIアシスタントからのトラフィックは依然として少なく、AI回答に引用されるためのコンテンツ戦略が重要になっています。",
       "actionable_takeaway": "ウェブサイト運営者は、AI回答に引用されやすいコンテンツ作成や、AI Overviewsの影響を考慮した新たなSEO戦略（GEO）の導入を検討すべきです。",
@@ -309,7 +515,7 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "dbt + DuckDBでSQL集計をローカルで動かしてみる",
@@ -353,7 +559,7 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 55
+      "hatena_count": 119
     },
     {
       "title": "マイクロソフト、PostgreSQL互換のミッションクリティカル向けデータベースサービス「Azure HorizonDB」正式リリース",
@@ -375,7 +581,7 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 3,
       "topic_group": 1,
       "topic_size": 3
     },
@@ -399,6 +605,121 @@
       "analysis_status": "ok",
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Quad9がフランスから撤退：DNSリゾルバは著作権侵害対策の場ではない理由",
+      "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+      "source": "Hacker News",
+      "published": "2026-11-18T13:18:02+00:00",
+      "hn_score": 129,
+      "hn_comments": 20,
+      "reading_min": 10,
+      "summary": "無料のDNSリゾルバQuad9が、著作権侵害サイトのブロックを拒否したため、フランスでのサービス提供を停止します。\nこれは、beIN Sportsからの訴訟によるもので、同様の係争が多数残っているため、撤退が唯一の選択肢となりました。\nCloudflareもこの動きを「炭鉱のカナリア」と呼び、DNSリゾルバが著作権侵害対策に利用されることへの懸念が示されています。",
+      "actionable_takeaway": "DNSリゾルバの利用規約や各国の法規制を確認し、サービス選択時にはプライバシー保護と法的なリスクを考慮に入れるべきです。",
+      "tags": [
+        "DNS",
+        "プライバシー",
+        "著作権侵害",
+        "法規制"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "DNSリゾルバの運用における法規制とプライバシー保護のバランスという、インターネットの根幹に関わる重要な問題提起であり、今後のサービス提供に影響を与える可能性があるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 2
+    },
+    {
+      "title": "危険コマンドを止める Claude Code hook を書いたのに、素通ししていた",
+      "url": "https://zenn.dev/minewo/articles/claude-code-hook-fail-open",
+      "source": "Zenn",
+      "published": "2026-11-17T21:31:02+00:00",
+      "reading_min": 14,
+      "summary": "Claude CodeのPreToolUse hookで危険コマンドをブロックする設定が、特定のJSON形式で素通りしてしまう問題が発生しました。\nhookが途中で失敗してもコマンドが実行されるデフォルト設定と、ペイロードの形式の違いが原因でした。\n実際のペイロード形式に合わせてhookの検査ロジックを修正することで、安全性を確保しました。",
+      "actionable_takeaway": "Claude Codeのhookを実装する際は、実際のペイロード形式で徹底的にテストし、hookの失敗時挙動（onFailure: \"block\"など）を明示的に設定して安全性を確保すべきです。",
+      "tags": [
+        "Claude Code",
+        "セキュリティ",
+        "AIエージェント"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "AIエージェントのセキュリティは非常に重要であり、hookの検証不足による危険コマンドの素通りは実運用で大きなリスクとなるため、その教訓と対策は高い実用性を持つと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "楽天証券への不正アクセスについてまとめてみた - piyolog",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/18/100525",
+      "source": "はてなブックマーク",
+      "published": "2026-11-18T01:53:39+00:00",
+      "reading_min": 2,
+      "summary": "楽天証券が第三者による不正アクセスを受け、テスト環境のシステムから顧客情報の一部が漏えいした可能性が公表されました。\n漏えいした情報は最大約1,572万口座分に及びますが、ログインパスワードや取引に必要な情報の漏えいは確認されていません。\nテスト環境に本番データが置かれていたことが原因とされ、楽天証券はログインIDの変更手段を検討しています。",
+      "actionable_takeaway": "テスト環境での本番データ利用はセキュリティリスクが極めて高いため、開発・運用プロセスにおいてテストデータのマスキングやダミーデータ利用を徹底し、環境分離を厳格化すべきです。",
+      "tags": [
+        "セキュリティ",
+        "情報漏洩",
+        "楽天証券"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "大規模な顧客情報漏洩の可能性があり、テスト環境での本番データ利用という根本的なセキュリティ問題が露呈したため、業界全体への警鐘として非常に重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 312
+    },
+    {
+      "title": "マイクロソフト、AIが生成したアプリを企業内で安全に実行するランタイム「Copilot Managed Runtime」正式リリース",
+      "url": "https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html",
+      "source": "Publickey",
+      "published": "2026-11-18T15:58:32+00:00",
+      "reading_min": 6,
+      "summary": "マイクロソフトは「Microsoft Ignite 2026」で、AIが生成したアプリケーションを企業内で安全に実行するための基盤「Copilot Managed Runtime」を正式リリースしました。\nAIによって生成されたアプリは脆弱性やセキュリティリスクを抱える可能性があるため、適切な権限管理とサンドボックス化された実行環境が求められます。\n本ランタイムは、これらの課題を解決し、企業内でのAIアプリの安全なデプロイと実行を可能にします。",
+      "actionable_takeaway": "AI生成アプリを企業導入する際は、Copilot Managed Runtimeのような専用ランタイムを活用し、セキュリティと権限管理を徹底すべきです。",
+      "tags": [
+        "AI",
+        "Microsoft",
+        "Runtime"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AI生成アプリの企業利用におけるセキュリティ課題を解決する重要な基盤技術であり、今後のAI活用を加速させる可能性が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "韓国経済紙メイルビジネスがHugging FaceでDarwinの12のトップランクを報道：Pythonで自分で数えてみよう",
+      "url": "https://dev.to/_0e3192755d4df45b92/el-diario-economico-coreano-maeil-business-cuenta-12-primeros-puestos-de-darwin-en-hugging-face-2ob8",
+      "source": "Dev.to",
+      "published": "2026-11-18T14:32:00+00:00",
+      "reading_min": 6,
+      "summary": "韓国の経済紙メイルビジネスが、Hugging Faceの公式ベンチマーク分析結果を報じました。\nVIDRAFTの分析によると、Darwinモデルが63のベンチマーク中12のカテゴリでトップを獲得しています。\nHugging Faceの公開APIを利用して、誰でもこれらの結果をPythonで再現・検証できる方法が紹介されています。",
+      "actionable_takeaway": "Hugging Faceの公開APIを活用し、主要なAIモデルのベンチマーク結果をPythonで定期的に追跡・分析するスクリプトを構築し、自社モデルの性能比較に役立てましょう。",
+      "tags": [
+        "Hugging Face",
+        "ベンチマーク",
+        "Python"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "Hugging Faceのベンチマーク結果をPythonで再現・検証する方法が具体的に示されており、AIモデル開発者にとって実用性が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -494,7 +815,7 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 60
+      "hatena_count": 148
     },
     {
       "title": "Azure SQL Databaseをローカルで実行する「Azure SQL Database local development container」パブリックプレビュー",
@@ -517,7 +838,7 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 3
     },
     {
       "title": "モーションプランニングとナビゲーション — 第9章: AIベースのプランニング [KR]",
@@ -543,6 +864,72 @@
       "hatena_count": 0
     },
     {
+      "title": "Odin に賭けたい人向けの Odin 言語入門ガイド",
+      "url": "https://zenn.dev/mizchi/articles/odin-introduction-guide",
+      "source": "Zenn",
+      "published": "2026-11-18T05:53:00+00:00",
+      "reading_min": 15,
+      "summary": "OdinはGo風の構文を持つ汎用手続き型言語で、Goよりも低レベルな操作が可能です。\nMitchell Hashimoto氏がRexのWindowsクライアントに採用したことで注目を集めています。\nWebAssemblyへのコンパイルも可能で、映像制作ツールや開発者ツールでの採用事例があります。",
+      "actionable_takeaway": "Go言語に慣れている開発者は、Odin言語の構文が似ているため学習コストが低く、低レベル操作が必要なプロジェクトで試用を検討すると良いでしょう。",
+      "tags": [
+        "Odin",
+        "プログラミング言語",
+        "WebAssembly"
+      ],
+      "category": "プログラミング言語",
+      "score": 80,
+      "score_reason": "Go言語に似た構文で低レベル操作が可能なOdin言語は、特定の分野での採用が進んでおり、WebAssembly対応もしているため将来性が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 3
+    },
+    {
+      "title": "日本郵便が挑む「住所の正規化」――日本国内の住所を7桁の英数字で表す「デジタルアドレス」で、表記揺れや記入の面倒を無くす【地図と位置情報】",
+      "url": "https://internet.watch.impress.co.jp/docs/column/chizu3/2152316.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-17T23:00:37+00:00",
+      "reading_min": 9,
+      "summary": "日本郵便が、住所の表記揺れや入力の手間を解消するため、7桁の英数字で住所を表す「デジタルアドレス」サービスを2025年5月に開始しました。\n「ゆうID」に登録した住所を簡略化し、対応サービスでデジタルアドレスを入力するだけで住所が自動反映されます。\n引っ越し時の住所変更も容易で、氏名や地理情報を含まないためプライバシーにも配慮されています。",
+      "actionable_takeaway": "住所入力の手間や誤入力を削減できるデジタルアドレスは、ECサイトや行政手続きなど住所情報を取り扱うサービス開発において、導入を検討しユーザー体験向上に繋げるべきです。",
+      "tags": [
+        "デジタルアドレス",
+        "日本郵便",
+        "住所正規化"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 80,
+      "score_reason": "住所入力という日常的な課題に対し、全国規模で標準化された解決策を提示しており、多くのサービスやシステムに影響を与える可能性があるため、実用性と影響度を高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 148
+    },
+    {
+      "title": "英国中小企業向けAWSクラウドアーキテクチャ：1つのリファレンスデザイン",
+      "url": "https://dev.to/abrar_aslam_69082442c8033/aws-cloud-architecture-for-uk-smes-one-reference-design-32a2",
+      "source": "Dev.to",
+      "published": "2026-11-18T14:32:17+00:00",
+      "reading_min": 9,
+      "summary": "英国の中小企業（5-50人規模のSaaSビジネス）向けの、AWSクラウドアーキテクチャのリファレンスデザインが紹介されています。\nこのデザインは、VPC分割、コンテナ/サーバーレスのコンピューティング、S3とマネージドデータベースのストレージ、IAM境界によるセキュリティ、Cost Explorerによるコスト管理の5つの主要な決定に基づいています。\nAWS Well-Architected Frameworkの柱に沿って、運用上の卓越性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化、持続可能性を考慮した設計となっています。",
+      "actionable_takeaway": "中小企業でAWSを利用する際は、本リファレンスデザインを参考に、VPC、コンピューティング、ストレージ、セキュリティ、コスト管理の各層を最適化しましょう。",
+      "tags": [
+        "AWS",
+        "クラウドアーキテクチャ",
+        "SME"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 80,
+      "score_reason": "中小企業向けの具体的なAWSリファレンスアーキテクチャを提供しており、実用性が高く、多くの企業にとって導入の指針となるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "PostgreSQL互換のサーバレスでOLTPとOLAP両対応を実現する「Microsoft Fabric HorizonDB」パブリックプレビュー",
       "url": "https://www.publickey1.jp/blog/26/postgresqloltpolapmicrosoft_fabric_horizondb.html",
       "source": "Publickey",
@@ -562,7 +949,7 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 13,
       "topic_group": 1,
       "topic_size": 3
     },
@@ -587,30 +974,7 @@
       "new_at": "2026-11-17T23:55:51.995633+09:00",
       "first_seen": "2026-11-17T23:55:51.995633+09:00",
       "is_hot": false,
-      "hatena_count": 351,
-      "is_prev_seen": true
-    },
-    {
-      "title": "部下がClaudeっぽいスライドしか出してこなくてウンザリしてる上司はこれを使わせなさい",
-      "url": "https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "source": "Qiita",
-      "published": "2026-11-17T00:58:19+00:00",
-      "reading_min": 14,
-      "summary": "AIが生成するスライドが「Claudeっぽい」と見なされる理由を解説しています。\nこれは生成AIの「分布収束」という仕組みによるもので、無難なデザインを生成しやすい傾向があります。\nAIに依存せず、聞き手や目的に合わせた資料作成スキルを部下に習得させる重要性を説いています。",
-      "actionable_takeaway": "AI生成資料の品質向上には、目的やターゲットを明確にし、AIに具体的な指示を与えるプロンプトエンジニアリングスキルを習得させましょう。",
-      "tags": [
-        "AI",
-        "プレゼンテーション",
-        "プロンプトエンジニアリング"
-      ],
-      "category": "AI・機械学習",
-      "score": 75,
-      "score_reason": "AIによる資料作成の課題と、その解決策としての人間側のスキル向上に焦点を当てており、実務に直結する示唆が多いです。",
-      "analysis_status": "ok",
-      "new_at": "2026-11-17T23:55:51.995633+09:00",
-      "first_seen": "2026-11-17T23:55:51.995633+09:00",
-      "is_hot": false,
-      "hatena_count": 0,
+      "hatena_count": 373,
       "is_prev_seen": true
     },
     {
@@ -642,8 +1006,8 @@
       "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
       "source": "Hacker News",
       "published": "2026-11-17T22:13:34+00:00",
-      "hn_score": 340,
-      "hn_comments": 97,
+      "hn_score": 786,
+      "hn_comments": 355,
       "reading_min": 9,
       "summary": "スイスの非営利団体Quad9が、フランスでの無料パブリックDNSリゾルバサービスからの撤退を発表しました。\nこれは、著作権侵害に関連するドメインのブロックを怠ったとして、フランスの裁判所から罰金を科されたことによるものです。\nQuad9の撤退は、インターネットの自由とオープン性、ユーザーのプライバシーとセキュリティを損なう可能性があり、他の国々への警告となるでしょう。",
       "actionable_takeaway": "DNSサービス提供者は、各国の法規制動向を注視し、サービス提供地域における法的リスクを評価するとともに、ユーザーは信頼できるDNSプロバイダの選択肢を検討すべきです。",
@@ -661,7 +1025,9 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1,
+      "topic_group": 2,
+      "topic_size": 2
     },
     {
       "title": "Nvidia、シンガポールでの売上高開示を停止、収益は1040億ドルに達する",
@@ -706,7 +1072,122 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 76
+      "hatena_count": 100
+    },
+    {
+      "title": "AIが提供できる以上の知識を持つとき",
+      "url": "https://medium.com/@smoking2man/when-ai-knows-more-than-it-can-offer-how-training-turns-an-intelligent-assistant-into-a-generator-7e700f05163e",
+      "source": "Hacker News",
+      "published": "2026-11-15T15:59:23+00:00",
+      "hn_score": 26,
+      "hn_comments": 12,
+      "summary": "AIが学習データから膨大な知識を獲得しても、その全てをユーザーに提供できるわけではないという問題提起です。\nAIのトレーニングプロセスが、知的なアシスタントを単なるテキスト生成器に変えてしまう可能性について論じています。\nAIの能力と、それがユーザーに提供できる価値との間にギャップが生じるメカニズムを考察しています。",
+      "actionable_takeaway": "AIシステムを設計する際は、AIが持つ知識を最大限に活用し、ユーザーにとって価値のある形で提供するためのインターフェースや出力形式を慎重に検討すべきです。",
+      "tags": [
+        "AI",
+        "LLM",
+        "知識表現",
+        "UX"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AIの能力とユーザーへの提供価値のギャップという、AI開発における重要な課題を指摘しており、今後のAI設計や利用において考慮すべき点であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Kaggle 膝コンペ振り返り & 上位解法まとめ | RSNA Knee Abnormality Detection",
+      "url": "https://zenn.dev/ca_kagglers/articles/kaggle-rsna-knee",
+      "source": "Zenn",
+      "published": "2026-11-17T14:09:17+00:00",
+      "reading_min": 21,
+      "summary": "Kaggleの「RSNA Knee Abnormality Detection」コンペが終了し、膝MRI画像から12種類の所見の有無を予測するマルチラベル分類タスクでした。\n患者の1回の検査（Study）ごとにラベルが予測され、複数の断面・撮像方法のMRI画像がデータとして提供されました。\n本記事では、コンペの概要と上位入賞チームのアプローチがまとめられています。",
+      "actionable_takeaway": "医療画像AI開発者は、Kaggleの膝コンペ上位解法を参考に、MRI画像からのマルチラベル分類におけるデータ構造の扱いやモデル構築のアプローチを学ぶと良いでしょう。",
+      "github_repo": "kaggle/rsna-knee-abnormality-detection",
+      "tags": [
+        "Kaggle",
+        "医療AI",
+        "画像認識"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "Kaggleの医療画像コンペの振り返りは、AI・機械学習分野における最新の技術トレンドや実践的な解法を学ぶ上で有用であり、特に医療AIに関心のあるエンジニアにとって価値が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIっぽい日本語を直すスキル yomiyasu-mini を Microsoft Copilot の色々なところで使ってみた",
+      "url": "https://qiita.com/Oyu3m/items/8efff0925c0994dda6ee?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-17T13:52:59+00:00",
+      "reading_min": 5,
+      "summary": "AIが生成する「AIっぽい日本語」を自然な表現に修正するスキル「yomiyasu-mini」が紹介されています。\nMicrosoft Copilot環境での利用を想定し、スキルサイズやファイル数の制限に対応した軽量版です。\nAgent Builder、PowerPoint Copilot、Copilot Coworkでの導入・検証事例が具体的に解説されています。",
+      "actionable_takeaway": "Copilot利用時に生成される不自然な日本語表現に悩む場合、yomiyasu-miniを導入し、AI生成テキストの品質向上を試すことを推奨します。",
+      "github_repo": "Oyu3m/yomiyasu",
+      "tags": [
+        "AI",
+        "Microsoft Copilot",
+        "自然言語処理"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AI生成テキストの品質向上という実用的な課題に対し、具体的なソリューションと導入事例が示されており、多くのAIユーザーにとって有用性が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "1台のマシンでオープンソースTTSモデルを選択する：再現可能な比較",
+      "url": "https://dev.to/lll_l_8d5730fc9839903e54b/choosing-an-open-source-tts-model-on-one-machine-a-reproducible-comparison-571g",
+      "source": "Dev.to",
+      "published": "2026-11-18T14:34:29+00:00",
+      "reading_min": 4,
+      "summary": "最適なオープンソースのText-to-Speech（TTS）モデルは、ハードウェア、言語、レイテンシ、自然さ、クローン作成、フットプリントなど、特定の要件によって異なります。\nこの記事では、MOSS-TTS、Piper、Kokoro、Qwen3-TTSといった主要なTTSモデルを同一デバイス上で比較するための再現可能な測定方法を提示しています。\nモデルのバージョン変更にも対応できるよう、モデル名、リポジトリコミット、ランタイム、精度、デバイス、OS、入力言語などの条件を正確に記録することの重要性を強調しています。",
+      "actionable_takeaway": "自社の要件に合ったTTSモデルを選定する際は、この記事で紹介されている再現可能な比較方法を参考に、複数のモデルを評価しましょう。",
+      "github_repo": "rhasspy/piper",
+      "tags": [
+        "TTS",
+        "Open Source",
+        "AI"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "オープンソースTTSモデルの選定という実用的な課題に対し、再現性のある比較方法を提示しており、エンジニアにとって有用な情報であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "NEBench R1: 大規模言語モデルの原子力分野における能力評価のための推論ベンチマーク",
+      "url": "https://arxiv.org/abs/2611.21682",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-18T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、大規模言語モデル（LLM）の原子力分野における推論能力を評価するための新しいベンチマーク「NEBench R1」について述べています。\n原子力分野特有の知識や複雑な推論を要するタスクを通じて、LLMの専門性を測ることを目的としています。\nこれにより、LLMが専門的な産業分野でどれだけ信頼性高く活用できるかの指標を提供します。",
+      "actionable_takeaway": "原子力分野など特定の専門領域でLLMの導入を検討しているエンジニアは、NEBench R1のような専門ベンチマークを活用し、モデルの適応性と信頼性を評価するプロセスを導入しましょう。",
+      "tags": [
+        "LLM",
+        "ベンチマーク",
+        "原子力"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "特定の専門分野におけるLLMの評価ベンチマークの提案であり、専門領域でのLLM活用における信頼性向上に寄与する可能性が高いためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "もういい加減\"技術勉強会\"やめませんか？",
@@ -777,6 +1258,118 @@
       "hatena_count": 0
     },
     {
+      "title": "AI生成テキストは査読を生き残れるか？",
+      "url": "https://www.sas.upenn.edu/~jesusfv/Peer_Review.pdf",
+      "source": "Hacker News",
+      "published": "2026-11-18T13:51:03+00:00",
+      "hn_score": 25,
+      "hn_comments": 16,
+      "summary": "AIが生成したテキストが学術論文の査読プロセスに与える影響について考察しています。\nAIによるテキスト生成技術の進化は、査読の信頼性や公平性を脅かす可能性があります。\n査読システムがAI生成コンテンツをどのように検出し、対処すべきかという課題が浮上しています。",
+      "actionable_takeaway": "学術論文の執筆や査読に関わる研究者は、AI生成テキスト検出ツールの導入や、AI利用に関する倫理ガイドラインの策定・遵守を検討すべきです。",
+      "tags": [
+        "AI",
+        "査読",
+        "学術論文",
+        "倫理"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIの進化が学術界の根幹である査読制度に与える影響は大きく、今後の研究活動や出版プロセスに重要な示唆を与えるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "【初投稿】「最近どう？」を卒業しよう！180cm95kg・青髪・ヒゲ面のインフラ中間管理職が1on1で意識している11の工夫",
+      "url": "https://qiita.com/human_hub_T/items/439bda5ea9234b7d9013?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "source": "Qiita",
+      "published": "2026-11-17T02:34:02+00:00",
+      "reading_min": 9,
+      "summary": "インフラ歴16年の中間管理職が、自身の経験と外見の威圧感を踏まえ、メンバーとの1on1で実践している11の工夫を紹介しています。\n「ただの進捗確認」や「単なる御用聞き」に終わらせず、メンバーの本音や前向きなアクションを引き出すための具体的なアプローチが語られています。\n過去の失敗から学び、メンバーの隣に立って一緒に考える姿勢を大切にしていることが強調されています。",
+      "actionable_takeaway": "管理職やリーダーは、1on1を単なる進捗確認で終わらせず、メンバーが安心して本音を話せる心理的安全性の高い場を作るため、具体的な質問や傾聴の姿勢など、紹介されている工夫を積極的に取り入れるべきです。",
+      "tags": [
+        "1on1",
+        "マネジメント",
+        "コミュニケーション"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "エンジニアリング組織における効果的な1on1は、チームの生産性やメンバーの成長に直結する重要な要素であり、具体的な実践例は多くの管理職にとって参考になるため、実用性を高く評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "リポジトリに既存の日付ライブラリがあるのに、エージェントが2つ目の日付ライブラリを導入するのを止める",
+      "url": "https://dev.to/sherotree/stop-the-agent-from-introducing-a-second-date-library-when-the-repo-already-has-one-2mbd",
+      "source": "Dev.to",
+      "published": "2026-11-18T14:33:16+00:00",
+      "reading_min": 2,
+      "summary": "開発エージェントが、既存のリポジトリに既に日付ライブラリ（例: date-fns）があるにもかかわらず、別の新しい日付ライブラリ（例: dayjs）を導入してしまう問題について解説しています。\nこれによりバンドルサイズが増加し、タイムゾーンやロケール処理に関する複数の意見が生じ、将来的なバグの原因となる可能性があります。\n既存のヘルパー関数やライブラリを再利用し、新しいフォーマットが必要な場合は既存のヘルパーに関数を追加するべきだと提言しています。",
+      "actionable_takeaway": "PRレビュー時には、既存のユーティリティを無視して新しいライブラリが追加されていないか厳しくチェックし、既存のものを活用するよう指導しましょう。",
+      "tags": [
+        "開発プラクティス",
+        "依存関係",
+        "コード品質"
+      ],
+      "category": "プログラミング言語",
+      "score": 70,
+      "score_reason": "AIエージェントの利用が広がる中で発生しうる具体的な開発上の問題提起であり、コード品質と保守性に関する実用的な示唆が含まれるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "思考連鎖の制御可能性は思考連鎖の監視可能性を低下させる可能性がある",
+      "url": "https://arxiv.org/abs/2611.21799",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-18T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、大規模言語モデル（LLM）における思考連鎖（Chain-of-Thought, CoT）の制御可能性と監視可能性の関係について考察しています。\nCoTの生成プロセスをより制御可能にすることで、その内部動作の監視や理解が難しくなる可能性を指摘しています。\nこれは、LLMの透明性と信頼性に関する重要な課題を提起するものです。",
+      "actionable_takeaway": "LLMのCoTを設計する際、制御性と監視性のトレードオフを意識し、特に安全性が求められるアプリケーションでは、監視可能性を確保するための追加的な検証メカニズムを検討しましょう。",
+      "tags": [
+        "LLM",
+        "Chain-of-Thought",
+        "AI倫理"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "LLMのCoTにおける制御性と監視性の間の潜在的なトレードオフという、AIの信頼性と解釈可能性に関する重要な課題を提起しているためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "監査人はAI安全研究のエンドツーエンドの記録における妨害行為を捉えるのに苦労する",
+      "url": "https://arxiv.org/abs/2611.21832",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-18T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、AI安全研究のプロセス全体を記録したエンドツーエンドのトランスクリプトにおいて、監査人が意図的な妨害行為を発見することの難しさについて論じています。\n複雑な研究プロセスや大量のデータの中で、悪意のある改ざんや操作を見抜くことの困難さを指摘しています。\nこれは、AIの安全性と信頼性を確保する上での新たな課題を提示しています。",
+      "actionable_takeaway": "AI安全研究の監査プロセスにおいては、単なる記録の確認だけでなく、異常検知アルゴリズムの導入や、複数の独立した監査人によるクロスチェックなど、より高度な検証手法を検討しましょう。",
+      "tags": [
+        "AI安全性",
+        "監査",
+        "AI倫理"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AI安全研究における監査の難しさと、それに伴う潜在的なリスクを指摘しており、AIの信頼性確保に向けた重要な警鐘を鳴らしているためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "Go Conference 2026実行委員を終えて",
       "url": "https://zenn.dev/mire0726/articles/1f3f118662a0f5",
       "source": "Zenn",
@@ -817,6 +1410,54 @@
       "analysis_status": "ok",
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "完璧なSimCity",
+      "url": "https://www.jeffquast.com/post/a-perfect-simcity/",
+      "source": "Hacker News",
+      "published": "2026-11-15T05:54:22+00:00",
+      "hn_score": 114,
+      "hn_comments": 30,
+      "reading_min": 6,
+      "summary": "35年間SimCityをプレイしてきた著者が、「完璧な」都市の定義と、その評価基準をソースコードから分析しています。\nオリジナルのSimCityのルールセットを忠実に再現したMicropolisのFOSSポートとPythonシムを利用し、アルゴリズム的に設計された高スコア・高人口都市の戦略を共有しています。\n完璧なスコアの都市は、人口1.2万〜1.6万人で、犯罪率、汚染、地価が完璧にバランスされ、消防署や警察署がない場合もあることが示されています。",
+      "actionable_takeaway": "ゲームのソースコード分析から得られた最適化戦略は、シミュレーションゲーム開発者やAIによる最適化問題解決のヒントになるため、同様のアプローチを検討すると良いでしょう。",
+      "github_repo": "donhopkins/Micropolis",
+      "tags": [
+        "SimCity",
+        "ゲーム開発",
+        "アルゴリズム",
+        "最適化"
+      ],
+      "category": "その他",
+      "score": 65,
+      "score_reason": "ゲームのソースコード分析というニッチなテーマながら、シミュレーションゲームの設計思想や最適化戦略に関する深い洞察を提供しており、興味深い内容であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "SAR車両認識のどれだけが車両なのか？MSTARとATRNet-STARにおける背景ショートカット、角度ギャップ、部分ライブラリ",
+      "url": "https://arxiv.org/abs/2611.21827",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-18T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、合成開口レーダー（SAR）画像を用いた車両認識における課題について分析しています。\n特に、背景のショートカット、異なる角度からのデータ不足、部分的なライブラリが認識性能に与える影響を指摘しています。\nMSTARとATRNet-STARデータセットを用いて、これらの問題がモデルの汎化能力をどのように妨げるかを検証しています。",
+      "actionable_takeaway": "SAR画像を用いた物体認識モデルを開発する際は、背景依存性を低減し、多様な角度からのデータを含む堅牢なデータセットを構築することで、モデルの汎化性能向上に努めましょう。",
+      "tags": [
+        "SAR",
+        "画像認識",
+        "データセット"
+      ],
+      "category": "AI・機械学習",
+      "score": 65,
+      "score_reason": "SAR画像認識におけるモデルの課題とデータセットの限界を具体的に指摘しており、特定の分野におけるAI開発の品質向上に役立つ知見を提供しているためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -866,7 +1507,51 @@
       "new_at": "2026-11-18T12:08:48.222819+09:00",
       "first_seen": "2026-11-18T12:08:48.222819+09:00",
       "is_hot": false,
-      "hatena_count": 33
+      "hatena_count": 95
+    },
+    {
+      "title": "Suicaペンギンの後継キャラはB案「紫のうさぎ」に 愛称募集を開始",
+      "url": "https://www.watch.impress.co.jp/docs/news/2157432.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-18T05:20:59+00:00",
+      "reading_min": 4,
+      "summary": "JR東日本は、2027年3月末で「Suicaのペンギン」が卒業することに伴い、新たなイメージキャラクターを「B案」の紫のうさぎに決定しました。\n166万票超の応募から86万票を獲得し、今後は愛称の募集が開始されます。\n新キャラクターは「Suicaルネサンス」の一環として、Suicaを「移動のデバイス」から「生活のデバイス」へ進化させる役割を担います。",
+      "actionable_takeaway": "Suicaのキャラクター変更は、JR東日本のDX戦略と連動しており、今後のSuicaサービス拡張やMaaS連携の動向に注目し、ビジネス機会を探るべきです。",
+      "tags": [
+        "Suica",
+        "JR東日本",
+        "キャラクターデザイン"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 60,
+      "score_reason": "Suicaという国民的サービスにおけるキャラクター変更は広範な影響を持つが、技術的な新規性やエンジニアの実務への直接的な影響は限定的であるため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 383
+    },
+    {
+      "title": "海外への請求書発行、契約書は準備できていますか？",
+      "url": "https://dev.to/calemanurquiza/is-your-contract-ready-for-invoicing-abroad-7k3",
+      "source": "Dev.to",
+      "published": "2026-11-18T14:33:30+00:00",
+      "reading_min": 1,
+      "summary": "海外クライアントへの請求書発行時に、契約書の内容が不十分であるケースが頻繁に見られます。\n契約書には、当事者情報、サービス内容、支払い条件（通貨、手数料、源泉徴収税）、知的財産権、準拠法と管轄、契約解除と機密保持に関する条項を明確に記載する必要があります。\n特に海外取引では、税務処理や紛争解決、知的財産権の帰属など、国内取引とは異なる注意点が多く存在します。",
+      "actionable_takeaway": "海外クライアントとの契約締結前には、支払い条件、税務、知的財産権、準拠法などを専門家と確認し、契約書を適切に準備しましょう。",
+      "tags": [
+        "契約",
+        "海外取引",
+        "ビジネス"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 60,
+      "score_reason": "技術的な内容ではないものの、フリーランスや中小企業が海外と取引する際に直面する実務的な課題を扱っており、ビジネス面での重要性があるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-18T23:36:09.353712+09:00",
+      "first_seen": "2026-11-18T23:36:09.353712+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "LTを盛り上げよう！AWSサービス応援うちわ制作裏話",
@@ -984,18 +1669,18 @@
   ],
   "briefing": {
     "edition": "夕刊",
-    "generated_at": "2026-11-18T12:08:48.222819+09:00",
+    "generated_at": "2026-11-18T23:36:09.353712+09:00",
     "summary_lines": [
       "OpenJDKのRCE脆弱性「Java4Shell」が報告され、セキュリティ対策が急務です。",
-      "マイクロソフトが低価格かつ高性能なコーディングAIモデル「MAI Code 2」を発表しました。",
-      "Google AIの検索結果への影響で、ウェブサイトへのトラフィック減少が懸念されています。"
+      "マイクロソフトがコーディングAI「MAI Code 2」やAI対抗サービス「Perception」を発表しました。",
+      "AIの進化が記憶整理やDB移行支援にも広がり、その活用と課題が注目されます。"
     ],
     "focus_tags": [
-      "セキュリティ",
       "AI",
-      "Java",
+      "セキュリティ",
       "Microsoft",
-      "検索エンジン"
+      "Java",
+      "LLM"
     ]
   }
 }

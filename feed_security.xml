@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 18 Nov 2026 03:10:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 14:37:17 +0000</lastBuildDate>
     <item>
       <title>Gitのセキュリティ脆弱性が発表されました</title>
       <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
@@ -28,11 +28,39 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
+      <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
+      <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</guid>
+      <description>[Score: 95] マイクロソフトは「Microsoft Ignite 2026」で、AIによるサイバー攻撃に対抗するための新サービス「Microsoft Perception」の提供開始を発表しました。 / このサービスは、レッドチーム、ブルーチーム、グリーンチームのAIエージェントが連携し、攻撃シミュレーション、脅威検出、修復を機械速度で実行します。 / AIによる攻撃の自動化が進む中、人間では対応が困難な速度での防御をAIエージェントが実現します。 [実務示唆: AIによるサイバー攻撃が高度化する中、Microsoft PerceptionのようなAI駆動型セキュリティソリューションの導入を検討し、セキュリティ対策の自動化と高速化を図るべきです。] (Source: Publickey)</description>
+      <pubDate>Wed, 18 Nov 2026 16:00:37 +0000</pubDate>
+    </item>
+    <item>
       <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
       <link>https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 85] AI開発が加速する現代において、セキュリティは後から追加するものではなく、設計段階で組み込むべきであると提唱されています。 / 従来の認証やファイアウォールといった防御策だけでなく、業務であり得ない操作を設計で許さないことが重要です。 / OpenAIやAnthropicの事例から、モデルの賢さだけでは安全が確保されず、設計による境界設定が被害の大きさを左右することが示されています。 [実務示唆: AIを活用した開発では、セキュリティを設計段階から考慮し、業務上あり得ない操作を許さないようなシステム設計を徹底することで、将来的な脆弱性リスクを低減すべきです。] (Source: Qiita)</description>
       <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>Quad9がフランスから撤退：DNSリゾルバは著作権侵害対策の場ではない理由</title>
+      <link>https://techstackups.com/articles/quad9-leaves-france-dns-blocking/</link>
+      <guid isPermaLink="false">https://techstackups.com/articles/quad9-leaves-france-dns-blocking/</guid>
+      <description>[Score: 85] 無料のDNSリゾルバQuad9が、著作権侵害サイトのブロックを拒否したため、フランスでのサービス提供を停止します。 / これは、beIN Sportsからの訴訟によるもので、同様の係争が多数残っているため、撤退が唯一の選択肢となりました。 / Cloudflareもこの動きを「炭鉱のカナリア」と呼び、DNSリゾルバが著作権侵害対策に利用されることへの懸念が示されています。 [実務示唆: DNSリゾルバの利用規約や各国の法規制を確認し、サービス選択時にはプライバシー保護と法的なリスクを考慮に入れるべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 18 Nov 2026 13:18:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>危険コマンドを止める Claude Code hook を書いたのに、素通ししていた</title>
+      <link>https://zenn.dev/minewo/articles/claude-code-hook-fail-open</link>
+      <guid isPermaLink="false">https://zenn.dev/minewo/articles/claude-code-hook-fail-open</guid>
+      <description>[Score: 85] Claude CodeのPreToolUse hookで危険コマンドをブロックする設定が、特定のJSON形式で素通りしてしまう問題が発生しました。 / hookが途中で失敗してもコマンドが実行されるデフォルト設定と、ペイロードの形式の違いが原因でした。 / 実際のペイロード形式に合わせてhookの検査ロジックを修正することで、安全性を確保しました。 [実務示唆: Claude Codeのhookを実装する際は、実際のペイロード形式で徹底的にテストし、hookの失敗時挙動（onFailure: &quot;block&quot;など）を明示的に設定して安全性を確保すべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 17 Nov 2026 21:31:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>楽天証券への不正アクセスについてまとめてみた - piyolog</title>
+      <link>https://piyolog.hatenadiary.jp/entry/2026/11/18/100525</link>
+      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/11/18/100525</guid>
+      <description>[Score: 85] 楽天証券が第三者による不正アクセスを受け、テスト環境のシステムから顧客情報の一部が漏えいした可能性が公表されました。 / 漏えいした情報は最大約1,572万口座分に及びますが、ログインパスワードや取引に必要な情報の漏えいは確認されていません。 / テスト環境に本番データが置かれていたことが原因とされ、楽天証券はログインIDの変更手段を検討しています。 [実務示唆: テスト環境での本番データ利用はセキュリティリスクが極めて高いため、開発・運用プロセスにおいてテストデータのマスキングやダミーデータ利用を徹底し、環境分離を厳格化すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 18 Nov 2026 01:53:39 +0000</pubDate>
     </item>
   </channel>
 </rss>

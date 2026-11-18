@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 18 Nov 2026 03:10:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 14:37:17 +0000</lastBuildDate>
     <item>
       <title>AIがOracle DBからPostgreSQLへの移行を支援、「Azure Database Migration Service」プレビュー</title>
       <link>https://www.publickey1.jp/blog/26/aioracle_dbpostgresqlazure_database_migration_service.html</link>
@@ -19,6 +19,13 @@
       <guid isPermaLink="false">https://dev.to/hostingpodium/varnish-cache-7-vcl-engineering-grace-mode-esi-fragment-caching-xkey-instant-purging-2h5f</guid>
       <description>[Score: 90] Varnish Cache 7の設定ガイドで、Grace Mode、ESI Fragment Caching、X-Keyによるミリ秒単位のキャッシュ無効化について解説しています。 / これらのVCL拡張機能により、バックエンド障害時のキャッシュミススパイクを排除し、きめ細かいESIフラグメント再利用を可能にします。 / サブ秒のレイテンシ、99.99%の可用性、PCI-DSS分離要件を満たす本番環境向けデプロイメントに焦点を当てています。 [実務示唆: Varnish Cache 7を利用している場合、Grace Mode、ESI Fragment Caching、X-Keyを導入し、高可用性と高速なキャッシュ無効化を実現することで、ユーザーエクスペリエンスとシステム安定性を向上させましょう。] (Source: Dev.to)</description>
       <pubDate>Wed, 18 Nov 2026 03:01:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
+      <link>https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</guid>
+      <description>[Score: 90] Microsoftは「Microsoft Ignite 2026」で、次期サーバーOS「Windows Server 2028」のパブリックプレビューを公開しました。 / Windows Server 2028は、Microsoft Foundry、Windows ML、vLLM、Llama.cppなどを利用した企業内AI推論の実行基盤としての役割を強化します。 / セキュリティ機能の強化やストレージ機能の改善も含まれており、AI時代のサーバーOSとして進化を遂げています。 [実務示唆: Windows Server 2028のプレビューを検証し、AI推論ワークロードや強化されたセキュリティ機能が自社のインフラにどう影響するか評価しましょう。] (Source: Publickey)</description>
+      <pubDate>Wed, 18 Nov 2026 15:55:49 +0000</pubDate>
     </item>
     <item>
       <title>GoogleのAI回答により検索トラフィックが40%減少</title>
@@ -54,6 +61,13 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/azure_sql_databaseazure_sql_database_local_development_container.html</guid>
       <description>[Score: 80] Microsoftは「Microsoft Ignite 2026」で、Azure SQL Databaseをローカル環境で実行できる「Azure SQL Database local development container」のパブリックプレビューを発表しました。 / これにより、開発者はクラウドと同じデータベースエンジン、T-SQL、システムビューなどをローカルで利用し、開発・デバッグ・テストが可能です。 / VS CodeのMSSQL拡張機能には、ローカルからクラウドへのデプロイを支援する「Local-to-Cloud Deployment Wizard」も追加されました。 [実務示唆: Azure SQL Databaseを利用する開発者は、ローカルコンテナを活用して開発サイクルを高速化し、クラウド環境との一貫性を保ちながらオフライン開発やテストを行うべきです。] (Source: Publickey)</description>
       <pubDate>Tue, 17 Nov 2026 21:37:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>英国中小企業向けAWSクラウドアーキテクチャ：1つのリファレンスデザイン</title>
+      <link>https://dev.to/abrar_aslam_69082442c8033/aws-cloud-architecture-for-uk-smes-one-reference-design-32a2</link>
+      <guid isPermaLink="false">https://dev.to/abrar_aslam_69082442c8033/aws-cloud-architecture-for-uk-smes-one-reference-design-32a2</guid>
+      <description>[Score: 80] 英国の中小企業（5-50人規模のSaaSビジネス）向けの、AWSクラウドアーキテクチャのリファレンスデザインが紹介されています。 / このデザインは、VPC分割、コンテナ/サーバーレスのコンピューティング、S3とマネージドデータベースのストレージ、IAM境界によるセキュリティ、Cost Explorerによるコスト管理の5つの主要な決定に基づいています。 / AWS Well-Architected Frameworkの柱に沿って、運用上の卓越性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化、持続可能性を考慮した設計となっています。 [実務示唆: 中小企業でAWSを利用する際は、本リファレンスデザインを参考に、VPC、コンピューティング、ストレージ、セキュリティ、コスト管理の各層を最適化しましょう。] (Source: Dev.to)</description>
+      <pubDate>Wed, 18 Nov 2026 14:32:17 +0000</pubDate>
     </item>
     <item>
       <title>PostgreSQL互換のサーバレスでOLTPとOLAP両対応を実現する「Microsoft Fabric HorizonDB」パブリックプレビュー</title>
