@@ -5,34 +5,13 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 18 Nov 2026 14:37:17 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 02:50:41 +0000</lastBuildDate>
     <item>
-      <title>Gitのセキュリティ脆弱性が発表されました</title>
-      <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
-      <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
-      <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Java4Shell: Base64処理時のOpenJDKにおけるRCE</title>
-      <link>https://calif.io/java4shell/</link>
-      <guid isPermaLink="false">https://calif.io/java4shell/</guid>
-      <description>[Score: 95] OpenJDKのBase64デコーダにメモリ破損の脆弱性「Java4Shell」（CVE-2026-114938）が発見されました。 / この脆弱性はCVSS 4.0で9.2のクリティカルなスコアを持ち、認証なしのリモート攻撃者がヒープメモリを上書きし、リモートコード実行に至る可能性があります。 / Javaは金融、航空、通信など多くの基幹システムで利用されており、この脆弱性は広範な影響を及ぼす恐れがあります。 [実務示唆: OpenJDKを使用しているシステムでは、速やかにセキュリティパッチを適用し、Base64デコード処理を含むアプリケーションのセキュリティレビューを強化してください。] (Source: Hacker News)</description>
-      <pubDate>Tue, 17 Nov 2026 21:11:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>［速報］マイクロソフト、コーディング用AIモデルとして高性能かつ低価格「MAI Code 2」「MAI Code 2 Flash」発表</title>
-      <link>https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html</guid>
-      <description>[Score: 95] マイクロソフトが年次イベント「Microsoft Ignite 2026」で、コーディング用AIモデル「MAI Code 2」と「MAI Code 2 Flash」を発表しました。 / これらのモデルは、競合製品と同等の性能をより低価格で提供することを特徴としています。 / MAI Code 2は本番環境のコード生成やデバッグ、リポジトリ推論に優れ、MAI Code 2 Flashはコード説明や局所的な編集、ルーチンワークの修正に適しています。 [実務示唆: Microsoftの新しいコーディング用AIモデルは、既存のAIツールと比較してコストパフォーマンスが高いため、開発者はMAI Code 2/Flashを導入し、開発効率とコスト削減効果を検証すべきです。] (Source: Publickey)</description>
-      <pubDate>Tue, 17 Nov 2026 21:48:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
-      <link>https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</guid>
-      <description>[Score: 95] AIは脆弱性の発見を高速化しましたが、修正には人間の判断が必要です。 / オープンソースのメンテナーは、AI生成のセキュリティレポート（重複や誤報を含む）に既に圧倒されています。 / GitHubとMicrosoftは、AIが修正を支援するパイロットプログラム「Codename MDASH」を実施し、検証済みの重要な発見のみをメンテナーに提供しました。 [実務示唆: AIツールで脆弱性を報告する際は、単なる発見だけでなく、具体的な修正案やプルリクエストを添えることで、オープンソースプロジェクトのメンテナーの負担を軽減し、より建設的な貢献を心がけましょう。] (Source: GitHub Blog)</description>
-      <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
+      <title>tsrsを導入したらoxlintのtype-aware lintingとtypecheckが爆速になった話</title>
+      <link>https://zenn.dev/dress_code/articles/6c179ae5129131</link>
+      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/6c179ae5129131</guid>
+      <description>[Score: 95] Zennの記事で、TypeScriptコンパイラをRustに移植したtsrsを導入することで、oxlintのtype-aware lintingとtypecheckが大幅に高速化された事例が紹介されています。 / 特にバックエンドのtypecheckは20倍以上高速化され、CIの実行時間が大幅に短縮されたとのことです。 / tsrsはTypeScript 7.1 betaに準拠しており、既存のtscやtsgolintからの置き換えで、指摘内容に大きな変更なく性能向上が実現されています。 [実務示唆: TypeScriptプロジェクトでCI/CDの型チェックやlintingの速度に課題がある場合、tsrsの導入を検討し、既存ツールからの置き換えによるパフォーマンス改善を検証すべきです。] [GitHub: oxc-project/tsrs] (Source: Zenn)</description>
+      <pubDate>Wed, 18 Nov 2026 07:00:06 +0000</pubDate>
     </item>
     <item>
       <title>部下がClaudeっぽいスライドしか出してこなくてウンザリしてる上司はこれを使わせなさい</title>
@@ -40,13 +19,6 @@
       <guid isPermaLink="false">https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 95] AIが生成するスライドが「Claudeっぽい」と見なされる理由を解説しています。 / これは生成AIの「分布収束」という仕組みによるもので、無難なデザインを生成しやすい傾向があります。 / AIに依存せず、聞き手や目的に合わせた資料作成スキルを部下に習得させる重要性を説いています。 [実務示唆: AI生成資料の品質向上には、目的やターゲットを明確にし、AIに具体的な指示を与えるプロンプトエンジニアリングスキルを習得させましょう。] (Source: Qiita)</description>
       <pubDate>Tue, 17 Nov 2026 00:58:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>tsrsを導入したらoxlintのtype-aware lintingとtypecheckが爆速になった話</title>
-      <link>https://zenn.dev/dress_code/articles/6c179ae5129131</link>
-      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/6c179ae5129131</guid>
-      <description>[Score: 95] Zennの記事で、TypeScriptコンパイラをRustに移植したtsrsを導入することで、oxlintのtype-aware lintingとtypecheckが大幅に高速化された事例が紹介されています。 / 特にバックエンドのtypecheckは20倍以上高速化され、CIの実行時間が大幅に短縮されたとのことです。 / tsrsはTypeScript 7.1 betaに準拠しており、既存のtscやtsgolintからの置き換えで、指摘内容に大きな変更なく性能向上が実現されています。 [実務示唆: TypeScriptプロジェクトでCI/CDの型チェックやlintingの速度に課題がある場合、tsrsの導入を検討し、既存ツールからの置き換えによるパフォーマンス改善を検証すべきです。] [GitHub: oxc-project/tsrs] (Source: Zenn)</description>
-      <pubDate>Wed, 18 Nov 2026 07:00:06 +0000</pubDate>
     </item>
     <item>
       <title>AI も「一晩寝かせる」と考えがまとまる🥱 寝ている間に記憶を整理する Dreaming の仕組み</title>
@@ -63,67 +35,60 @@
       <pubDate>Wed, 18 Nov 2026 16:00:37 +0000</pubDate>
     </item>
     <item>
-      <title>GPT-6.2 AstraとSolの紹介</title>
-      <link>https://openai.com/index/introducing-gpt-6-2-astra-sol/</link>
-      <guid isPermaLink="false">https://openai.com/index/introducing-gpt-6-2-astra-sol/</guid>
-      <description>[Score: 90] OpenAIが次世代モデル「GPT-6.2 Astra」と「Sol」を発表しました。 / これらのモデルは、既存のGPTシリーズをさらに進化させ、より高度な推論能力と多様なタスク処理能力を持つと期待されます。 / 具体的な機能や性能の詳細は不明ですが、AI技術の新たなブレークスルーとなる可能性があります。 [実務示唆: 最新のAIモデルの動向を注視し、公開され次第、その性能やAPIを評価し、自社のAI活用戦略やアプリケーション開発への導入可能性を探るべきです。] (Source: Hacker News)</description>
-      <pubDate>Tue, 17 Nov 2026 17:46:43 +0000</pubDate>
+      <title>［速報］マイクロソフト、コーディング用AIモデルとして高性能かつ低価格「MAI Code 2」「MAI Code 2 Flash」発表</title>
+      <link>https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html</guid>
+      <description>[Score: 95] マイクロソフトが年次イベント「Microsoft Ignite 2026」で、コーディング用AIモデル「MAI Code 2」と「MAI Code 2 Flash」を発表しました。 / これらのモデルは、競合製品と同等の性能をより低価格で提供することを特徴としています。 / MAI Code 2は本番環境のコード生成やデバッグ、リポジトリ推論に優れ、MAI Code 2 Flashはコード説明や局所的な編集、ルーチンワークの修正に適しています。 [実務示唆: Microsoftの新しいコーディング用AIモデルは、既存のAIツールと比較してコストパフォーマンスが高いため、開発者はMAI Code 2/Flashを導入し、開発効率とコスト削減効果を検証すべきです。] (Source: Publickey)</description>
+      <pubDate>Tue, 17 Nov 2026 21:48:15 +0000</pubDate>
     </item>
     <item>
-      <title>L40S 1台で社内RAGは何人まで使えるか</title>
-      <link>https://zenn.dev/epicai_techblog/articles/29b509117755af</link>
-      <guid isPermaLink="false">https://zenn.dev/epicai_techblog/articles/29b509117755af</guid>
-      <description>[Score: 90] L40S GPU 1台で社内RAG（検索拡張生成）システムが何人まで利用可能か、実測に基づき検証した記事です。 / 26B程度の日本語LLMと業務向けGPU 1枚での運用を想定し、量子化形式や推論基盤による利用人数の違いを詳細に比較しています。 / 正答率の評価も行い、実用的な導入におけるパフォーマンスと精度のバランスについて具体的なデータが示されています。 [実務示唆: 社内RAGシステム導入を検討する際は、L40Sでの検証結果を参考に、モデルの量子化形式や推論基盤（vLLM/llama.cpp）の選択が利用人数と正答率に与える影響を評価し、要件に合った構成を検討すること。] (Source: Zenn)</description>
-      <pubDate>Tue, 17 Nov 2026 10:00:06 +0000</pubDate>
+      <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
+      <link>https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</guid>
+      <description>[Score: 95] AIは脆弱性の発見を高速化しましたが、修正には人間の判断が必要です。 / オープンソースのメンテナーは、AI生成のセキュリティレポート（重複や誤報を含む）に既に圧倒されています。 / GitHubとMicrosoftは、AIが修正を支援するパイロットプログラム「Codename MDASH」を実施し、検証済みの重要な発見のみをメンテナーに提供しました。 [実務示唆: AIツールで脆弱性を報告する際は、単なる発見だけでなく、具体的な修正案やプルリクエストを添えることで、オープンソースプロジェクトのメンテナーの負担を軽減し、より建設的な貢献を心がけましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>ソフトウェアエンジニアの黄昏期をこう過ごそうと思う｜わかばめ</title>
-      <link>https://note.com/wakabame/n/nc76b65a187bb</link>
-      <guid isPermaLink="false">https://note.com/wakabame/n/nc76b65a187bb</guid>
-      <description>[Score: 90] AIによるコーディングエージェントの性能が飛躍的に向上し、ソフトウェアエンジニアの仕事が質的に変化している現状を考察しています。 / AIが仕様書作成から実装、テスト、レビューまでを高速かつ高品質にこなせるようになり、エンジニアはコードを書くこと自体よりも、プロダクトディレクションやアーキテクトのような上位レイヤーの仕事に価値を見出す必要が出てきています。 / 著者は、AIの成長速度に無力感を覚えつつも、この変化に適応し、自身のキャリアパスを再構築していく考えを述べています。 [実務示唆: AIによる自動化が進む中で、エンジニアはコード実装だけでなく、プロダクトの全体設計やビジネス要件の理解といった上位レイヤーのスキル習得を強化すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 17 Nov 2026 13:10:43 +0000</pubDate>
+      <title>Gitのセキュリティ脆弱性が発表されました</title>
+      <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
+      <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>AIがOracle DBからPostgreSQLへの移行を支援、「Azure Database Migration Service」プレビュー</title>
-      <link>https://www.publickey1.jp/blog/26/aioracle_dbpostgresqlazure_database_migration_service.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_dbpostgresqlazure_database_migration_service.html</guid>
-      <description>[Score: 90] Microsoftは「Microsoft Ignite 2026」で、Azure Database Migration Service (Azure DMS) にOracle DBからPostgreSQLへのデータ移行機能のプレビューを発表しました。 / この機能は、VS CodeのPostgreSQL拡張機能とAIサポートを組み合わせ、スキーマ変換やPL/SQLパッケージの移行を支援します。 / ダウンタイムを最小限に抑えつつ、OracleからAzure上のPostgreSQLサービスへの移行を効率化します。 [実務示唆: Oracle DBからPostgreSQLへの移行を検討している企業は、Azure DMSのAI支援機能を活用し、移行作業の複雑性とコスト削減の可能性を評価すべきです。] (Source: Publickey)</description>
-      <pubDate>Tue, 17 Nov 2026 21:40:32 +0000</pubDate>
+      <title>Nginxにおける認証不要のリモートコード実行の脆弱性</title>
+      <link>https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities</link>
+      <guid isPermaLink="false">https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities</guid>
+      <description>[Score: 95] Nginxに2つの重大なリモートコード実行（RCE）脆弱性（CVE-2026-123633、CVE-2026-123007）が発見されました。 / これらの脆弱性はCVSS 4.0スコア9.2と評価され、HTTP/2が有効なNginxサーバーに影響を与えます。 / 攻撃者はこれらの脆弱性を悪用してサーバーを制御し、機密データを盗んだり、ウェブサイトを改ざんしたりする可能性があります。 [実務示唆: Nginxを使用している組織は、直ちに影響を受けるデプロイメントを特定し、F5からリリースされるセキュリティアップデートを適用して、HTTP/2を無効化するなどの対策を検討してください。] [GitHub: nginx/nginx] (Source: Hacker News)</description>
+      <pubDate>Wed, 18 Nov 2026 15:19:55 +0000</pubDate>
     </item>
     <item>
-      <title>Varnish Cache 7 VCLエンジニアリング: Grace Mode, ESI Fragment Caching &amp; XKey Instant Purging</title>
-      <link>https://dev.to/hostingpodium/varnish-cache-7-vcl-engineering-grace-mode-esi-fragment-caching-xkey-instant-purging-2h5f</link>
-      <guid isPermaLink="false">https://dev.to/hostingpodium/varnish-cache-7-vcl-engineering-grace-mode-esi-fragment-caching-xkey-instant-purging-2h5f</guid>
-      <description>[Score: 90] Varnish Cache 7の設定ガイドで、Grace Mode、ESI Fragment Caching、X-Keyによるミリ秒単位のキャッシュ無効化について解説しています。 / これらのVCL拡張機能により、バックエンド障害時のキャッシュミススパイクを排除し、きめ細かいESIフラグメント再利用を可能にします。 / サブ秒のレイテンシ、99.99%の可用性、PCI-DSS分離要件を満たす本番環境向けデプロイメントに焦点を当てています。 [実務示唆: Varnish Cache 7を利用している場合、Grace Mode、ESI Fragment Caching、X-Keyを導入し、高可用性と高速なキャッシュ無効化を実現することで、ユーザーエクスペリエンスとシステム安定性を向上させましょう。] (Source: Dev.to)</description>
-      <pubDate>Wed, 18 Nov 2026 03:01:48 +0000</pubDate>
+      <title>「PHP」に再び“致命的”な脆弱性、日本時間19日夜にセキュリティリリースへ／サポート中の全バージョンが対象</title>
+      <link>https://forest.watch.impress.co.jp/docs/news/2157690.html</link>
+      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2157690.html</guid>
+      <description>[Score: 95] スクリプト言語「PHP」のセキュリティチームが、サポート中の全バージョンに影響する“致命的”（Critical）な脆弱性に対処するため、日本時間11月19日夜にセキュリティリリースを行うと事前告知しました。 / この脆弱性は、既定ではない構成や一般的ではないセットアップでのみ影響するとされていますが、詳細はリリースと同時に公開される予定です。 / PHPでは10月にも「PHP2Shell」と呼ばれる2件の“致命的”な脆弱性が修正されており、迅速なアップデートが強く推奨されています。 [実務示唆: PHPを使用しているシステムでは、日本時間11月19日夜に予定されているセキュリティリリース後、速やかにサポート対象のPHPバージョンを最新版にアップデートし、脆弱性への対策を講じるべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 18 Nov 2026 23:15:44 +0000</pubDate>
     </item>
     <item>
-      <title>デバイス間で継続するセッションのためのAgent Host Protocolの構築</title>
-      <link>https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</guid>
-      <description>[Score: 90] AIエージェントのセッションをデバイス間で継続させるためのオープン標準「Agent Host Protocol (AHP)」がGitHubによって開発されました。 / GitHub Copilotでは、このAHPにより、VS Codeやモバイルアプリなど異なる環境でエージェントセッションを中断なく引き継ぐことが可能です。 / AHPは、エージェントのライフタイムを特定のアプリケーションに縛らず、作業の継続性を実現します。 [実務示唆: マルチデバイス環境でAIエージェントのセッション継続性を実現したい開発者は、GitHubが提唱するAgent Host Protocol (AHP)の仕様を調査し、自身のアプリケーションやワークフローへの導入を検討しましょう。] (Source: GitHub Blog)</description>
-      <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
+      <title>nginx2root の HTTP/2 脆弱性2件を AWS 構成ごとに整理してみた</title>
+      <link>https://dev.classmethod.jp/articles/nginx-http2-rce-aws-mitigation/</link>
+      <guid isPermaLink="false">https://dev.classmethod.jp/articles/nginx-http2-rce-aws-mitigation/</guid>
+      <description>[Score: 95] nginx 1.31.9と1.30.7で修正されたHTTP/2の脆弱性CVE-2026-123007とCVE-2026-123633について解説しています。 / これらの脆弱性はHTTP/2の送信窓の計算ミスに起因し、リモートコード実行（RCE）につながる可能性があるCriticalなものです。 / 記事では、AWS環境における緩和策や修正版の入手状況についても整理されています。 [実務示唆: nginxを使用しているシステムでは、速やかにバージョンを1.31.9または1.30.7以降にアップデートし、HTTP/2を無効化するなどの緩和策を適用して脆弱性に対応すべきです。] [GitHub: nginx/nginx] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 18 Nov 2026 21:41:35 +0000</pubDate>
     </item>
     <item>
-      <title>エネルギーベース推論器：385倍効率的な推論</title>
-      <link>https://energy-based-reasoners.github.io/</link>
-      <guid isPermaLink="false">https://energy-based-reasoners.github.io/</guid>
-      <description>[Score: 90] Energy-Based Reasoners (EBRs)は、潜在推論状態に対するエネルギー関数を学習し、勾配降下法で反復更新を行う新しい推論モデルです。 / これにより、既存のループ型モデルが抱える進捗評価の難しさを克服し、推論の停止タイミングと改善方向を明確にします。 / EBRsは、数理的推論ベンチマークにおいて、既存モデルを凌駕する性能を達成し、特にSudoku-Extremeでは345倍少ない推論計算量で99.9%の精度を達成しました。 [実務示唆: AIモデルの推論効率向上に関心のある研究者や開発者は、EBRsの概念を理解し、自身のモデルにエネルギーベースの最適化手法を適用することを検討すべきです。] [GitHub: energy-based-reasoners/energy-based-reasoners.github.io] (Source: Hacker News)</description>
-      <pubDate>Wed, 18 Nov 2026 09:29:32 +0000</pubDate>
+      <title>PyPI agent-framework 1.26.1–1.26.2 .pthクレデンシャル窃取マルウェアが起動リスクを生成; 影響を受ける環境を監査・隔離せよ。</title>
+      <link>https://dev.to/romdevin/pypi-agent-framework-1261-1262-pth-credential-stealer-creates-startup-risk-audit-and-isolate-41nj</link>
+      <guid isPermaLink="false">https://dev.to/romdevin/pypi-agent-framework-1261-1262-pth-credential-stealer-creates-startup-risk-audit-and-isolate-41nj</guid>
+      <description>[Score: 95] PyPIパッケージagent-frameworkのバージョン1.26.1と1.26.2に、.pthファイルに埋め込まれたクレデンシャル窃取マルウェアが含まれていました。 / このマルウェアは、パッケージインストール時にimportなしで即座に実行され、CI/CD環境やAIワーカーに深刻なリスクをもたらします。 / Pythonインタープリタの起動パス設定メカニズムが悪用され、環境変数やシークレットが窃取される可能性があります。 [実務示唆: agent-frameworkのユーザーは直ちにバージョン1.26.0以前または1.26.3以降へのダウングレード/アップグレードを行い、影響を受けた可能性のある環境の監査と隔離を徹底すべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 19 Nov 2026 02:43:59 +0000</pubDate>
     </item>
     <item>
-      <title>Museは「成長する相棒」になれるのか？ 記憶と改善の積み重ねを観察する</title>
-      <link>https://zenn.dev/daydream/articles/muse-observation-01-memory-and-boundaries</link>
-      <guid isPermaLink="false">https://zenn.dev/daydream/articles/muse-observation-01-memory-and-boundaries</guid>
-      <description>[Score: 90] MetaのパーソナルAIエージェント「Muse」が、ユーザーの目標を記憶し、先回りして考え、失敗を振り返り改善する可能性について検証しています。 / ベンチマークスコアだけでは分からない、記憶や自己改善の積み重ねが全体としてどう作用するかを長期観察する試みです。 / Museの記憶処理や自己改善の仕組み、権限管理について、エージェント自身への質問と実地調査を通じて考察しています。 [実務示唆: AIエージェントを業務に導入する際は、単一タスクの性能だけでなく、長期的な記憶の保持、自己改善の有効性、および権限管理の仕組みを深く理解し、その限界と可能性を把握することが重要です。] (Source: Zenn)</description>
-      <pubDate>Tue, 17 Nov 2026 11:31:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>Geminiが電話も支払いも代行する「タスク」モード、日本でも無料で提供開始 | テクノエッジ TechnoEdge</title>
-      <link>https://www.techno-edge.net/article/2026/11/18/5756.html</link>
-      <guid isPermaLink="false">https://www.techno-edge.net/article/2026/11/18/5756.html</guid>
-      <description>[Score: 90] GoogleのGeminiアプリに、車の整備予約や電気料金分析、買い物などをAIが代行する「タスク」モードが日本を含む複数国で無料提供開始されました。 / Gemini 4 Hydrogenモデルを使用し、電話代行やGoogle Pay連携による決済も可能です。 / 作業は専用の仮想マシンで行われ、セキュリティとプライバシーに配慮しつつ、AIによる生活支援の可能性を広げます。 [実務示唆: GeminiのタスクモードはAIエージェントによる自動化の新たな一歩であり、開発者はAPI連携や自動化のユースケースを検討し、自社サービスへの応用可能性を探るべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 18 Nov 2026 00:39:38 +0000</pubDate>
+      <title>RegexpとStringのケース変換における複数の脆弱性</title>
+      <link>https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/</link>
+      <guid isPermaLink="false">https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/</guid>
+      <description>[Score: 92] Rubyの正規表現エンジンと文字列のケース変換において、7つの脆弱性が発見されました。 / これらの脆弱性の中には、リモートコード実行（RCE）を引き起こす可能性のある概念実証（PoC）が確認されているものもあります。 / Ruby 4.0.10、3.4.13、3.3.14がリリースされ、これらの脆弱性が修正されているため、早急なアップグレードが強く推奨されています。 [実務示唆: Rubyを使用している開発者は、リモートコード実行の危険性があるため、直ちにRubyのバージョンを4.0.10、3.4.13、または3.3.14にアップグレードし、アプリケーションへの影響を確認してください。] [GitHub: ruby/ruby] (Source: Hacker News)</description>
+      <pubDate>Wed, 18 Nov 2026 23:52:50 +0000</pubDate>
     </item>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
@@ -133,6 +98,13 @@
       <pubDate>Wed, 18 Nov 2026 15:55:49 +0000</pubDate>
     </item>
     <item>
+      <title>デバイス間で継続するセッションのためのAgent Host Protocolの構築</title>
+      <link>https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</guid>
+      <description>[Score: 90] AIエージェントのセッションをデバイス間で継続させるためのオープン標準「Agent Host Protocol (AHP)」がGitHubによって開発されました。 / GitHub Copilotでは、このAHPにより、VS Codeやモバイルアプリなど異なる環境でエージェントセッションを中断なく引き継ぐことが可能です。 / AHPは、エージェントのライフタイムを特定のアプリケーションに縛らず、作業の継続性を実現します。 [実務示唆: マルチデバイス環境でAIエージェントのセッション継続性を実現したい開発者は、GitHubが提唱するAgent Host Protocol (AHP)の仕様を調査し、自身のアプリケーションやワークフローへの導入を検討しましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
+    </item>
+    <item>
       <title>言語モデルは自身の重みを書き換えることができる</title>
       <link>https://arxiv.org/abs/2611.21885</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.21885</guid>
@@ -140,11 +112,39 @@
       <pubDate>Wed, 18 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>ローカルLLM入門</title>
-      <link>https://zenn.dev/port_inc/articles/ff974c7456f4db</link>
-      <guid isPermaLink="false">https://zenn.dev/port_inc/articles/ff974c7456f4db</guid>
-      <description>[Score: 85] この記事は、手元のPCやブラウザでLLMを動かす仕組みについて解説しています。 / LLMの「重み」がモデルの正体であり、これをローカルで動かすことで情報漏洩リスクを低減できると説明。 / オープンウェイトモデルの性能向上が著しく、フロンティアモデルとの差が縮まっている現状も紹介しています。 [実務示唆: 情報セキュリティが重要なプロジェクトでは、ローカルLLMの導入を検討し、機密データを外部に送信せずにAIを活用する環境を構築すべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 17 Nov 2026 07:17:24 +0000</pubDate>
+      <title>Gemini 4 Neonの紹介</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/</guid>
+      <description>[Score: 90] Google DeepMindは、複雑なソフトウェアエンジニアリング、知識労働、科学ワークフローにおいて、高速なエンドツーエンドタスク完了を可能にする最先端のAIモデル「Gemini 4 Neon」を発表しました。 / NeonはArtificial Analysis Intelligence Indexで61点を獲得し、同等モデルを上回り、全体で3位にランクインしています。 / このモデルは、100万入力トークンあたり3ドル、100万出力トークンあたり15ドルで提供され、100万トークンのコンテキストウィンドウを特徴としています。 [実務示唆: Gemini 4 NeonのAPIが利用可能になったため、AI StudioやGemini for businessを通じて、その高速性と高い推論能力を既存のワークフローに組み込むことを検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 18 Nov 2026 21:34:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIエージェントがKPMGの会計士よりも監査で優れた質問をする</title>
+      <link>https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/</link>
+      <guid isPermaLink="false">https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/</guid>
+      <description>[Score: 90] KPMG UKの実験で、AIエージェントが主要な英国上場企業の監査において、人間の監査チームよりも深く財務問題を調査し、より良い質問をすることが判明しました。 / 100以上のAIエージェントが従来の監査チームと並行して作業し、財務サービス業界の労働集約的な分野におけるAIの応用で重要な進展を示しています。 / この結果は、機械が高度な分析作業を代替するにつれて、監査の経済性がどれほど速く変化するかという会計業界への問いを提起しています。 [実務示唆: AIによる監査業務の高度化は、財務分析やコンプライアンスチェックの効率と精度を向上させるため、自社の業務プロセスへのAI導入を検討し、その効果を検証すべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 18 Nov 2026 15:49:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>実質的無職になった</title>
+      <link>https://note.com/y_hirano/n/nc986ab18b90e</link>
+      <guid isPermaLink="false">https://note.com/y_hirano/n/nc986ab18b90e</guid>
+      <description>[Score: 90] 筆者は2026年10月末で仕事が減り、11月から実質的無職になったと報告しています。 / フリーランスを取り巻く環境の変化やAIの急速な実用化により、2023年頃から潮時を感じていたとのことです。 / 特に2025年以降はAIの進化により、ソフトウェアエンジニアの作業が不要になるほど状況が変化していると述べています。 [実務示唆: AIの進化による業務の変化に対応するため、自身のスキルセットを見直し、AIでは代替しにくい高付加価値な領域へのシフトを検討すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 18 Nov 2026 19:58:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Gemini 4 NeonはOpus 5.5の競合となりうる</title>
+      <link>https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/</link>
+      <guid isPermaLink="false">https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/</guid>
+      <description>[Score: 88] Gemini 4 Neonは、以前のGemini 4 Carbonと比較して、ベンチマーク性能の向上と大幅な速度改善を実現しました。 / OpenRouterでの提供速度は127トークン/秒とCarbonの46トークン/秒を大きく上回ります。 / Agent DuelリーダーボードのEloスコア予測では、NeonはOpus 5.5に匹敵する性能を持つ可能性が示唆されています。 [実務示唆: Gemini 4 Neonの高速性と高い性能は、リアルタイム性が求められるAIアプリケーションやエージェント開発において、Opus 5.5の代替または競合として積極的に評価・導入を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 19 Nov 2026 00:29:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>ESLint から oxlint へ。lint が 50 倍速くなるまでの移行の記録</title>
+      <link>https://zenn.dev/rimo/articles/12d6a7b1c58fcd</link>
+      <guid isPermaLink="false">https://zenn.dev/rimo/articles/12d6a7b1c58fcd</guid>
+      <description>[Score: 88] Rimo合同会社がフロントエンドのlinterをESLintからoxlintへ移行し、lint速度が約50倍に向上した事例を紹介しています。 / 移行はESLintのルール追加と並行して進められ、oxlintにないルールはESLintに残しつつ併用する形が取られました。 / CIのlintステップも146秒から32秒に短縮され、AIコーディング時のPostToolUseフックでの待ち時間も大幅に削減されました。 [実務示唆: フロントエンド開発においてlintの実行速度は開発体験に直結するため、oxlintのような高速linterへの移行を検討し、CI/CDパイプラインの高速化を図るべきです。] (Source: Zenn)</description>
+      <pubDate>Wed, 18 Nov 2026 00:51:16 +0000</pubDate>
     </item>
   </channel>
 </rss>

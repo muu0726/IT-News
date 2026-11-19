@@ -5,20 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 18 Nov 2026 14:37:17 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 02:50:41 +0000</lastBuildDate>
     <item>
-      <title>Gitのセキュリティ脆弱性が発表されました</title>
-      <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
-      <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
-      <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Java4Shell: Base64処理時のOpenJDKにおけるRCE</title>
-      <link>https://calif.io/java4shell/</link>
-      <guid isPermaLink="false">https://calif.io/java4shell/</guid>
-      <description>[Score: 95] OpenJDKのBase64デコーダにメモリ破損の脆弱性「Java4Shell」（CVE-2026-114938）が発見されました。 / この脆弱性はCVSS 4.0で9.2のクリティカルなスコアを持ち、認証なしのリモート攻撃者がヒープメモリを上書きし、リモートコード実行に至る可能性があります。 / Javaは金融、航空、通信など多くの基幹システムで利用されており、この脆弱性は広範な影響を及ぼす恐れがあります。 [実務示唆: OpenJDKを使用しているシステムでは、速やかにセキュリティパッチを適用し、Base64デコード処理を含むアプリケーションのセキュリティレビューを強化してください。] (Source: Hacker News)</description>
-      <pubDate>Tue, 17 Nov 2026 21:11:28 +0000</pubDate>
+      <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
+      <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</guid>
+      <description>[Score: 95] マイクロソフトは「Microsoft Ignite 2026」で、AIによるサイバー攻撃に対抗するための新サービス「Microsoft Perception」の提供開始を発表しました。 / このサービスは、レッドチーム、ブルーチーム、グリーンチームのAIエージェントが連携し、攻撃シミュレーション、脅威検出、修復を機械速度で実行します。 / AIによる攻撃の自動化が進む中、人間では対応が困難な速度での防御をAIエージェントが実現します。 [実務示唆: AIによるサイバー攻撃が高度化する中、Microsoft PerceptionのようなAI駆動型セキュリティソリューションの導入を検討し、セキュリティ対策の自動化と高速化を図るべきです。] (Source: Publickey)</description>
+      <pubDate>Wed, 18 Nov 2026 16:00:37 +0000</pubDate>
     </item>
     <item>
       <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
@@ -28,39 +21,46 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
-      <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</guid>
-      <description>[Score: 95] マイクロソフトは「Microsoft Ignite 2026」で、AIによるサイバー攻撃に対抗するための新サービス「Microsoft Perception」の提供開始を発表しました。 / このサービスは、レッドチーム、ブルーチーム、グリーンチームのAIエージェントが連携し、攻撃シミュレーション、脅威検出、修復を機械速度で実行します。 / AIによる攻撃の自動化が進む中、人間では対応が困難な速度での防御をAIエージェントが実現します。 [実務示唆: AIによるサイバー攻撃が高度化する中、Microsoft PerceptionのようなAI駆動型セキュリティソリューションの導入を検討し、セキュリティ対策の自動化と高速化を図るべきです。] (Source: Publickey)</description>
-      <pubDate>Wed, 18 Nov 2026 16:00:37 +0000</pubDate>
+      <title>Gitのセキュリティ脆弱性が発表されました</title>
+      <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
+      <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説</title>
-      <link>https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AI開発が加速する現代において、セキュリティは後から追加するものではなく、設計段階で組み込むべきであると提唱されています。 / 従来の認証やファイアウォールといった防御策だけでなく、業務であり得ない操作を設計で許さないことが重要です。 / OpenAIやAnthropicの事例から、モデルの賢さだけでは安全が確保されず、設計による境界設定が被害の大きさを左右することが示されています。 [実務示唆: AIを活用した開発では、セキュリティを設計段階から考慮し、業務上あり得ない操作を許さないようなシステム設計を徹底することで、将来的な脆弱性リスクを低減すべきです。] (Source: Qiita)</description>
-      <pubDate>Sun, 15 Nov 2026 08:03:34 +0000</pubDate>
+      <title>Nginxにおける認証不要のリモートコード実行の脆弱性</title>
+      <link>https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities</link>
+      <guid isPermaLink="false">https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities</guid>
+      <description>[Score: 95] Nginxに2つの重大なリモートコード実行（RCE）脆弱性（CVE-2026-123633、CVE-2026-123007）が発見されました。 / これらの脆弱性はCVSS 4.0スコア9.2と評価され、HTTP/2が有効なNginxサーバーに影響を与えます。 / 攻撃者はこれらの脆弱性を悪用してサーバーを制御し、機密データを盗んだり、ウェブサイトを改ざんしたりする可能性があります。 [実務示唆: Nginxを使用している組織は、直ちに影響を受けるデプロイメントを特定し、F5からリリースされるセキュリティアップデートを適用して、HTTP/2を無効化するなどの対策を検討してください。] [GitHub: nginx/nginx] (Source: Hacker News)</description>
+      <pubDate>Wed, 18 Nov 2026 15:19:55 +0000</pubDate>
     </item>
     <item>
-      <title>Quad9がフランスから撤退：DNSリゾルバは著作権侵害対策の場ではない理由</title>
-      <link>https://techstackups.com/articles/quad9-leaves-france-dns-blocking/</link>
-      <guid isPermaLink="false">https://techstackups.com/articles/quad9-leaves-france-dns-blocking/</guid>
-      <description>[Score: 85] 無料のDNSリゾルバQuad9が、著作権侵害サイトのブロックを拒否したため、フランスでのサービス提供を停止します。 / これは、beIN Sportsからの訴訟によるもので、同様の係争が多数残っているため、撤退が唯一の選択肢となりました。 / Cloudflareもこの動きを「炭鉱のカナリア」と呼び、DNSリゾルバが著作権侵害対策に利用されることへの懸念が示されています。 [実務示唆: DNSリゾルバの利用規約や各国の法規制を確認し、サービス選択時にはプライバシー保護と法的なリスクを考慮に入れるべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 18 Nov 2026 13:18:02 +0000</pubDate>
+      <title>「PHP」に再び“致命的”な脆弱性、日本時間19日夜にセキュリティリリースへ／サポート中の全バージョンが対象</title>
+      <link>https://forest.watch.impress.co.jp/docs/news/2157690.html</link>
+      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2157690.html</guid>
+      <description>[Score: 95] スクリプト言語「PHP」のセキュリティチームが、サポート中の全バージョンに影響する“致命的”（Critical）な脆弱性に対処するため、日本時間11月19日夜にセキュリティリリースを行うと事前告知しました。 / この脆弱性は、既定ではない構成や一般的ではないセットアップでのみ影響するとされていますが、詳細はリリースと同時に公開される予定です。 / PHPでは10月にも「PHP2Shell」と呼ばれる2件の“致命的”な脆弱性が修正されており、迅速なアップデートが強く推奨されています。 [実務示唆: PHPを使用しているシステムでは、日本時間11月19日夜に予定されているセキュリティリリース後、速やかにサポート対象のPHPバージョンを最新版にアップデートし、脆弱性への対策を講じるべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 18 Nov 2026 23:15:44 +0000</pubDate>
     </item>
     <item>
-      <title>危険コマンドを止める Claude Code hook を書いたのに、素通ししていた</title>
-      <link>https://zenn.dev/minewo/articles/claude-code-hook-fail-open</link>
-      <guid isPermaLink="false">https://zenn.dev/minewo/articles/claude-code-hook-fail-open</guid>
-      <description>[Score: 85] Claude CodeのPreToolUse hookで危険コマンドをブロックする設定が、特定のJSON形式で素通りしてしまう問題が発生しました。 / hookが途中で失敗してもコマンドが実行されるデフォルト設定と、ペイロードの形式の違いが原因でした。 / 実際のペイロード形式に合わせてhookの検査ロジックを修正することで、安全性を確保しました。 [実務示唆: Claude Codeのhookを実装する際は、実際のペイロード形式で徹底的にテストし、hookの失敗時挙動（onFailure: &quot;block&quot;など）を明示的に設定して安全性を確保すべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 17 Nov 2026 21:31:02 +0000</pubDate>
+      <title>nginx2root の HTTP/2 脆弱性2件を AWS 構成ごとに整理してみた</title>
+      <link>https://dev.classmethod.jp/articles/nginx-http2-rce-aws-mitigation/</link>
+      <guid isPermaLink="false">https://dev.classmethod.jp/articles/nginx-http2-rce-aws-mitigation/</guid>
+      <description>[Score: 95] nginx 1.31.9と1.30.7で修正されたHTTP/2の脆弱性CVE-2026-123007とCVE-2026-123633について解説しています。 / これらの脆弱性はHTTP/2の送信窓の計算ミスに起因し、リモートコード実行（RCE）につながる可能性があるCriticalなものです。 / 記事では、AWS環境における緩和策や修正版の入手状況についても整理されています。 [実務示唆: nginxを使用しているシステムでは、速やかにバージョンを1.31.9または1.30.7以降にアップデートし、HTTP/2を無効化するなどの緩和策を適用して脆弱性に対応すべきです。] [GitHub: nginx/nginx] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 18 Nov 2026 21:41:35 +0000</pubDate>
     </item>
     <item>
-      <title>楽天証券への不正アクセスについてまとめてみた - piyolog</title>
-      <link>https://piyolog.hatenadiary.jp/entry/2026/11/18/100525</link>
-      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/11/18/100525</guid>
-      <description>[Score: 85] 楽天証券が第三者による不正アクセスを受け、テスト環境のシステムから顧客情報の一部が漏えいした可能性が公表されました。 / 漏えいした情報は最大約1,572万口座分に及びますが、ログインパスワードや取引に必要な情報の漏えいは確認されていません。 / テスト環境に本番データが置かれていたことが原因とされ、楽天証券はログインIDの変更手段を検討しています。 [実務示唆: テスト環境での本番データ利用はセキュリティリスクが極めて高いため、開発・運用プロセスにおいてテストデータのマスキングやダミーデータ利用を徹底し、環境分離を厳格化すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 18 Nov 2026 01:53:39 +0000</pubDate>
+      <title>PyPI agent-framework 1.26.1–1.26.2 .pthクレデンシャル窃取マルウェアが起動リスクを生成; 影響を受ける環境を監査・隔離せよ。</title>
+      <link>https://dev.to/romdevin/pypi-agent-framework-1261-1262-pth-credential-stealer-creates-startup-risk-audit-and-isolate-41nj</link>
+      <guid isPermaLink="false">https://dev.to/romdevin/pypi-agent-framework-1261-1262-pth-credential-stealer-creates-startup-risk-audit-and-isolate-41nj</guid>
+      <description>[Score: 95] PyPIパッケージagent-frameworkのバージョン1.26.1と1.26.2に、.pthファイルに埋め込まれたクレデンシャル窃取マルウェアが含まれていました。 / このマルウェアは、パッケージインストール時にimportなしで即座に実行され、CI/CD環境やAIワーカーに深刻なリスクをもたらします。 / Pythonインタープリタの起動パス設定メカニズムが悪用され、環境変数やシークレットが窃取される可能性があります。 [実務示唆: agent-frameworkのユーザーは直ちにバージョン1.26.0以前または1.26.3以降へのダウングレード/アップグレードを行い、影響を受けた可能性のある環境の監査と隔離を徹底すべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 19 Nov 2026 02:43:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>六花亭、カード番号全桁＋セキュリティコード約8000件流出か　決済画面のプログラム改ざん</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/19/2000003316/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/19/2000003316/</guid>
+      <description>[Score: 85] 北海道の菓子メーカー六花亭の通販サイトが不正アクセスを受け、決済画面のプログラムが改ざんされました。 / これにより、約8000件のクレジットカード情報（全桁、名義人、有効期限、セキュリティコード）が流出した可能性があります。 / 六花亭はカード情報を保存していませんが、不正プログラムにより外部送信されたとみられ、サイトは停止し調査が進められています。 [実務示唆: ECサイト運営者は、決済画面のセキュリティを定期的に監査し、第三者によるプログラム改ざんがないか厳重にチェックするとともに、顧客への注意喚起と迅速な情報公開体制を確立すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 19 Nov 2026 00:18:40 +0000</pubDate>
     </item>
   </channel>
 </rss>

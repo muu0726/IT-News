@@ -5,21 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 18 Nov 2026 14:37:17 +0000</lastBuildDate>
-    <item>
-      <title>AIがOracle DBからPostgreSQLへの移行を支援、「Azure Database Migration Service」プレビュー</title>
-      <link>https://www.publickey1.jp/blog/26/aioracle_dbpostgresqlazure_database_migration_service.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aioracle_dbpostgresqlazure_database_migration_service.html</guid>
-      <description>[Score: 90] Microsoftは「Microsoft Ignite 2026」で、Azure Database Migration Service (Azure DMS) にOracle DBからPostgreSQLへのデータ移行機能のプレビューを発表しました。 / この機能は、VS CodeのPostgreSQL拡張機能とAIサポートを組み合わせ、スキーマ変換やPL/SQLパッケージの移行を支援します。 / ダウンタイムを最小限に抑えつつ、OracleからAzure上のPostgreSQLサービスへの移行を効率化します。 [実務示唆: Oracle DBからPostgreSQLへの移行を検討している企業は、Azure DMSのAI支援機能を活用し、移行作業の複雑性とコスト削減の可能性を評価すべきです。] (Source: Publickey)</description>
-      <pubDate>Tue, 17 Nov 2026 21:40:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>Varnish Cache 7 VCLエンジニアリング: Grace Mode, ESI Fragment Caching &amp; XKey Instant Purging</title>
-      <link>https://dev.to/hostingpodium/varnish-cache-7-vcl-engineering-grace-mode-esi-fragment-caching-xkey-instant-purging-2h5f</link>
-      <guid isPermaLink="false">https://dev.to/hostingpodium/varnish-cache-7-vcl-engineering-grace-mode-esi-fragment-caching-xkey-instant-purging-2h5f</guid>
-      <description>[Score: 90] Varnish Cache 7の設定ガイドで、Grace Mode、ESI Fragment Caching、X-Keyによるミリ秒単位のキャッシュ無効化について解説しています。 / これらのVCL拡張機能により、バックエンド障害時のキャッシュミススパイクを排除し、きめ細かいESIフラグメント再利用を可能にします。 / サブ秒のレイテンシ、99.99%の可用性、PCI-DSS分離要件を満たす本番環境向けデプロイメントに焦点を当てています。 [実務示唆: Varnish Cache 7を利用している場合、Grace Mode、ESI Fragment Caching、X-Keyを導入し、高可用性と高速なキャッシュ無効化を実現することで、ユーザーエクスペリエンスとシステム安定性を向上させましょう。] (Source: Dev.to)</description>
-      <pubDate>Wed, 18 Nov 2026 03:01:48 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 19 Nov 2026 02:50:41 +0000</lastBuildDate>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
       <link>https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</link>
@@ -28,18 +14,11 @@
       <pubDate>Wed, 18 Nov 2026 15:55:49 +0000</pubDate>
     </item>
     <item>
-      <title>GoogleのAI回答により検索トラフィックが40%減少</title>
-      <link>https://revscope.co/blog/search-seo-geo-2026/</link>
-      <guid isPermaLink="false">https://revscope.co/blog/search-seo-geo-2026/</guid>
-      <description>[Score: 85] GoogleのAI Overviewsが検索結果に表示されることで、外部ウェブサイトへのクリックが約40%減少していることが実験で明らかになりました。 / AI Overviewsは過去2年間で表示されるキーワードの割合が大幅に増加しており、SEO業界はGenerative Engine Optimization (GEO)で対応を模索しています。 / AIアシスタントからのトラフィックは依然として少なく、AI回答に引用されるためのコンテンツ戦略が重要になっています。 [実務示唆: ウェブサイト運営者は、AI回答に引用されやすいコンテンツ作成や、AI Overviewsの影響を考慮した新たなSEO戦略（GEO）の導入を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 18 Nov 2026 00:17:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>dbt + DuckDBでSQL集計をローカルで動かしてみる</title>
-      <link>https://qiita.com/take-yoda/items/e24e62ba5a4ad4d84c0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/take-yoda/items/e24e62ba5a4ad4d84c0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] dbtとDuckDBを組み合わせて、SQL集計処理をローカル環境で完結させる方法が解説されています。 / dbtでSQLモデルを管理し、DuckDBをバックエンドとして利用することで、手軽にデータ変換・集計パイプラインを構築できます。 / 記事では、ECショップの注文データを例に、具体的なセットアップ手順と実行方法が示されています。 [実務示唆: データ分析やETL処理をローカルで手軽に試したいエンジニアは、dbtとDuckDBの組み合わせを導入し、SQLベースのデータ変換パイプライン構築を実践することで、開発効率の向上と学習に役立てること。] (Source: Qiita)</description>
-      <pubDate>Tue, 17 Nov 2026 04:09:18 +0000</pubDate>
+      <title>ESLint から oxlint へ。lint が 50 倍速くなるまでの移行の記録</title>
+      <link>https://zenn.dev/rimo/articles/12d6a7b1c58fcd</link>
+      <guid isPermaLink="false">https://zenn.dev/rimo/articles/12d6a7b1c58fcd</guid>
+      <description>[Score: 88] Rimo合同会社がフロントエンドのlinterをESLintからoxlintへ移行し、lint速度が約50倍に向上した事例を紹介しています。 / 移行はESLintのルール追加と並行して進められ、oxlintにないルールはESLintに残しつつ併用する形が取られました。 / CIのlintステップも146秒から32秒に短縮され、AIコーディング時のPostToolUseフックでの待ち時間も大幅に削減されました。 [実務示唆: フロントエンド開発においてlintの実行速度は開発体験に直結するため、oxlintのような高速linterへの移行を検討し、CI/CDパイプラインの高速化を図るべきです。] (Source: Zenn)</description>
+      <pubDate>Wed, 18 Nov 2026 00:51:16 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、PostgreSQL互換のミッションクリティカル向けデータベースサービス「Azure HorizonDB」正式リリース</title>
@@ -49,32 +28,18 @@
       <pubDate>Tue, 17 Nov 2026 21:45:41 +0000</pubDate>
     </item>
     <item>
-      <title>14年間使ってきたWordPressをやめて、個人ブログを作り直した話｜星影｜Tech Hunter</title>
-      <link>https://note.com/unsoluble_sugar/n/n58c97b4dee67</link>
-      <guid isPermaLink="false">https://note.com/unsoluble_sugar/n/n58c97b4dee67</guid>
-      <description>[Score: 80] 14年間運営してきたWordPressブログを、PHPの脆弱性やメンテナンスの手間を理由にリニューアルしました。 / 新しいブログは静的サイトジェネレーターのAstroとCloudflareを採用し、表示速度向上とセキュリティリスク低減を実現しています。 / 約2,000本の記事と3万枚の画像の移行作業は、AIエージェントのClaudeを活用することで1日で完了したとのことです。 [実務示唆: WordPressの運用負荷に悩む開発者は、Astroなどの静的サイトジェネレーターとCloudflareの組み合わせを検討し、AIツールを活用した移行を試みるべきです。] [GitHub: withastro/astro] (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 16 Nov 2026 01:04:11 +0000</pubDate>
+      <title>JavaScriptを実行しない機械があなたの数字を読み取る</title>
+      <link>https://dev.to/minia2a/your-numbers-are-read-by-machines-that-do-not-run-your-javascript-32ko</link>
+      <guid isPermaLink="false">https://dev.to/minia2a/your-numbers-are-read-by-machines-that-do-not-run-your-javascript-32ko</guid>
+      <description>[Score: 80] ダッシュボードの数字は、JavaScriptを実行しない機械（LLMインデクサー、クローラーなど）とブラウザのJavaScriptによって二重に書き込まれます。 / 多くの開発者はJavaScriptによる動的な表示に注力しますが、静的に書き出されたHTMLの数字はQAループがないため、古い情報になるリスクがあります。 / 本記事は、この静的コンテンツの鮮度管理における失敗モードと、その対策について解説しています。 [実務示唆: Webサイトの重要な数値がJavaScriptに依存せず静的に表示される場合、LLMやクローラー向けにその鮮度を保証するQAプロセスを構築し、情報の正確性を維持すべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 19 Nov 2026 02:44:56 +0000</pubDate>
     </item>
     <item>
-      <title>Azure SQL Databaseをローカルで実行する「Azure SQL Database local development container」パブリックプレビュー</title>
-      <link>https://www.publickey1.jp/blog/26/azure_sql_databaseazure_sql_database_local_development_container.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/azure_sql_databaseazure_sql_database_local_development_container.html</guid>
-      <description>[Score: 80] Microsoftは「Microsoft Ignite 2026」で、Azure SQL Databaseをローカル環境で実行できる「Azure SQL Database local development container」のパブリックプレビューを発表しました。 / これにより、開発者はクラウドと同じデータベースエンジン、T-SQL、システムビューなどをローカルで利用し、開発・デバッグ・テストが可能です。 / VS CodeのMSSQL拡張機能には、ローカルからクラウドへのデプロイを支援する「Local-to-Cloud Deployment Wizard」も追加されました。 [実務示唆: Azure SQL Databaseを利用する開発者は、ローカルコンテナを活用して開発サイクルを高速化し、クラウド環境との一貫性を保ちながらオフライン開発やテストを行うべきです。] (Source: Publickey)</description>
-      <pubDate>Tue, 17 Nov 2026 21:37:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>英国中小企業向けAWSクラウドアーキテクチャ：1つのリファレンスデザイン</title>
-      <link>https://dev.to/abrar_aslam_69082442c8033/aws-cloud-architecture-for-uk-smes-one-reference-design-32a2</link>
-      <guid isPermaLink="false">https://dev.to/abrar_aslam_69082442c8033/aws-cloud-architecture-for-uk-smes-one-reference-design-32a2</guid>
-      <description>[Score: 80] 英国の中小企業（5-50人規模のSaaSビジネス）向けの、AWSクラウドアーキテクチャのリファレンスデザインが紹介されています。 / このデザインは、VPC分割、コンテナ/サーバーレスのコンピューティング、S3とマネージドデータベースのストレージ、IAM境界によるセキュリティ、Cost Explorerによるコスト管理の5つの主要な決定に基づいています。 / AWS Well-Architected Frameworkの柱に沿って、運用上の卓越性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化、持続可能性を考慮した設計となっています。 [実務示唆: 中小企業でAWSを利用する際は、本リファレンスデザインを参考に、VPC、コンピューティング、ストレージ、セキュリティ、コスト管理の各層を最適化しましょう。] (Source: Dev.to)</description>
-      <pubDate>Wed, 18 Nov 2026 14:32:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>PostgreSQL互換のサーバレスでOLTPとOLAP両対応を実現する「Microsoft Fabric HorizonDB」パブリックプレビュー</title>
-      <link>https://www.publickey1.jp/blog/26/postgresqloltpolapmicrosoft_fabric_horizondb.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresqloltpolapmicrosoft_fabric_horizondb.html</guid>
-      <description>[Score: 78] Microsoftが「Microsoft Ignite 2026」で、PostgreSQL互換のサーバレスデータベース「Microsoft Fabric HorizonDB」のパブリックプレビューを発表しました。 / これは主にプロトタイプや開発環境を想定したサービスで、数秒でプロビジョニング可能です。 / 非アクティブ状態が5分続くとコンピュートが一時停止し、クエリが到着すると自動的に再開するサーバレス設計です。 [実務示唆: プロトタイプ開発やAIエージェントのデータストアとして、迅速なデータベース環境が必要な場合は、Fabric HorizonDBのサーバレス特性とOLTP/OLAP対応を検証する価値があります。] (Source: Publickey)</description>
-      <pubDate>Tue, 17 Nov 2026 21:43:09 +0000</pubDate>
+      <title>[AWS] S3Vectorsは全文検索エンジンとしてOpenSearchの代わりになるのか？ - Qiita</title>
+      <link>https://qiita.com/kikuziro/items/cd1389f6a1601494895f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/kikuziro/items/cd1389f6a1601494895f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 75] S3Vectorsがハイブリッド検索に対応し、全文検索エンジンとしての利用可能性が検証されました。 / OpenSearchと比較し、LambdaからS3Vectorsを呼び出し、日本語アナライザーを設定して全文検索を実行する手順が示されています。 / 検証の結果、S3Vectorsは全文検索機能を持つものの、ベクトル検索が必須である点や、メタデータサイズに制限がある点など、OpenSearchとは異なる特性があることが示唆されています。 [実務示唆: S3Vectorsの全文検索機能は、OpenSearchの代替として検討可能ですが、ベクトルデータが必須である点やメタデータ制限を考慮し、ユースケースに応じた検証が推奨されます。] (Source: Qiita)</description>
+      <pubDate>Tue, 17 Nov 2026 12:55:43 +0000</pubDate>
     </item>
     <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
@@ -84,18 +49,25 @@
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
     </item>
     <item>
-      <title>Quad9のフランス撤退：炭鉱のカナリア</title>
-      <link>https://blog.cloudflare.com/quad9-withdrawal-from-france/</link>
-      <guid isPermaLink="false">https://blog.cloudflare.com/quad9-withdrawal-from-france/</guid>
-      <description>[Score: 75] スイスの非営利団体Quad9が、フランスでの無料パブリックDNSリゾルバサービスからの撤退を発表しました。 / これは、著作権侵害に関連するドメインのブロックを怠ったとして、フランスの裁判所から罰金を科されたことによるものです。 / Quad9の撤退は、インターネットの自由とオープン性、ユーザーのプライバシーとセキュリティを損なう可能性があり、他の国々への警告となるでしょう。 [実務示唆: DNSサービス提供者は、各国の法規制動向を注視し、サービス提供地域における法的リスクを評価するとともに、ユーザーは信頼できるDNSプロバイダの選択肢を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Tue, 17 Nov 2026 22:13:34 +0000</pubDate>
+      <title>リアルタイムInstagram DM自動化ダッシュボードの構築方法 (2026)</title>
+      <link>https://dev.to/peter11241342/how-to-build-a-real-time-instagram-dm-automation-dashboard-2026-1210</link>
+      <guid isPermaLink="false">https://dev.to/peter11241342/how-to-build-a-real-time-instagram-dm-automation-dashboard-2026-1210</guid>
+      <description>[Score: 75] Instagram DM自動化を導入している場合、ダッシュボードがないと現状を把握できません。 / 本ガイドでは、公式Instagram Graph APIを使用して、DMアクティビティをリアルタイムで表示するダッシュボードの構築方法を解説します。 / 会話の開始数、トリガーの発動状況、返信速度、会話の停滞箇所などを一元的に把握できます。 [実務示唆: Instagram DM自動化を運用している開発者は、公式Graph APIを活用してリアルタイムダッシュボードを構築し、DM運用状況の可視化と改善に役立てるべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 19 Nov 2026 02:45:33 +0000</pubDate>
     </item>
     <item>
-      <title>[AWS] S3Vectorsは全文検索エンジンとしてOpenSearchの代わりになるのか？ - Qiita</title>
-      <link>https://qiita.com/kikuziro/items/cd1389f6a1601494895f?utm_campaign=post_article&amp;utm_medium=twitter&amp;utm_source=twitter_share</link>
-      <guid isPermaLink="false">https://qiita.com/kikuziro/items/cd1389f6a1601494895f?utm_campaign=post_article&amp;utm_medium=twitter&amp;utm_source=twitter_share</guid>
-      <description>[Score: 75] S3Vectorsがハイブリッド検索に対応し、全文検索エンジンとしての利用可能性が検証されました。 / OpenSearchと比較し、LambdaからS3Vectorsを呼び出し、日本語アナライザーを設定して全文検索を実行する手順が示されています。 / 検証の結果、S3Vectorsは全文検索機能を持つものの、ベクトル検索が必須である点や、メタデータサイズに制限がある点など、OpenSearchとは異なる特性があることが示唆されています。 [実務示唆: S3Vectorsの全文検索機能は、OpenSearchの代替として検討可能ですが、ベクトルデータが必須である点やメタデータ制限を考慮し、ユースケースに応じた検証が推奨されます。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 17 Nov 2026 14:00:55 +0000</pubDate>
+      <title>Snowflake の managed access schema で COPY GRANTS 付き CLONE がなぜか初回だけ失敗した話</title>
+      <link>https://zenn.dev/finatext/articles/snowflake-managed-access-copy-grants</link>
+      <guid isPermaLink="false">https://zenn.dev/finatext/articles/snowflake-managed-access-copy-grants</guid>
+      <description>[Score: 70] Snowflakeのmanaged access schemaでCOPY GRANTS付きCLONEコマンドを初回実行した際に、権限エラーで失敗する事象が発生しました。 / 原因は、出力先に同じ名前のテーブルがない初回実行時のみ、CLONEによる権限コピーが新たな付与として扱われ、実行ロールの権限付与能力がチェックされるためでした。 / 解決策として、ジョブの実行ロールを出力先のschema ownerに設定することが安全であり、2回目以降は既存の権限を引き継ぐためチェックを受けないことが判明しました。 [実務示唆: Snowflakeのmanaged access schemaでCOPY GRANTS付きCLONEを使用する際は、初回実行時の権限エラーを避けるため、ジョブ実行ロールをschema ownerに設定することを推奨します。] (Source: Zenn)</description>
+      <pubDate>Wed, 18 Nov 2026 02:22:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>Handling Turso Platform API Discovery Delays on Cold Start in Next.js</title>
+      <link>https://dev.to/aditya_ekka_pulseroi/handling-turso-platform-api-discovery-delays-on-cold-start-in-nextjs-1fm8</link>
+      <guid isPermaLink="false">https://dev.to/aditya_ekka_pulseroi/handling-turso-platform-api-discovery-delays-on-cold-start-in-nextjs-1fm8</guid>
+      <description>[Score: 70] Next.jsのサーバーレスエッジ関数におけるコールドスタート時に、Tursoデータベースの接続確立が遅延し、エラーが発生する問題とその対処法について解説しています。 / 特にピーク時のVercelサーバーレス関数のコールドスタートで、Turso libSQLデータベースへの接続ハンドシェイクがタイムアウトする事象が確認されました。 / 記事では、トップレベルでのクライアント初期化がコールドスタート失敗の原因となることが示されています。 [実務示唆: Next.jsなどのサーバーレス環境でデータベースを利用する際、コールドスタート時の接続遅延を考慮し、接続プールの初期化タイミングやリトライ戦略を適切に設計することで、安定した動作を確保すべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 19 Nov 2026 02:45:52 +0000</pubDate>
     </item>
   </channel>
 </rss>
