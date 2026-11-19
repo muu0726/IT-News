@@ -5,13 +5,20 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Nov 2026 02:50:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 14:44:01 +0000</lastBuildDate>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
       <link>https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</guid>
       <description>[Score: 90] Microsoftは「Microsoft Ignite 2026」で、次期サーバーOS「Windows Server 2028」のパブリックプレビューを公開しました。 / Windows Server 2028は、Microsoft Foundry、Windows ML、vLLM、Llama.cppなどを利用した企業内AI推論の実行基盤としての役割を強化します。 / セキュリティ機能の強化やストレージ機能の改善も含まれており、AI時代のサーバーOSとして進化を遂げています。 [実務示唆: Windows Server 2028のプレビューを検証し、AI推論ワークロードや強化されたセキュリティ機能が自社のインフラにどう影響するか評価しましょう。] (Source: Publickey)</description>
       <pubDate>Wed, 18 Nov 2026 15:55:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>vue-tscの壁を越える：vizeとtsrsでVueの型検査を高速化した</title>
+      <link>https://zenn.dev/studio/articles/vue-typecheck-vize-tsrs</link>
+      <guid isPermaLink="false">https://zenn.dev/studio/articles/vue-typecheck-vize-tsrs</guid>
+      <description>[Score: 90] Vueプロジェクトの型検査において、従来のvue-tscがTypeScript 7に対応できず、CIでの待ち時間が長くなる問題がありました。 / tsrsとvizeを導入することで、型検査の中央値が570秒から123秒に短縮され、メモリ使用量も大幅に削減されました。 / これはTypeScript 7.1のcontent mapperを活用した新しいアプローチにより実現され、開発効率の向上に貢献します。 [実務示唆: Vueプロジェクトで型検査のボトルネックを感じている場合、tsrsとvizeの導入を検討し、CI/CDパイプラインの高速化を図るべきです。] [GitHub: vuejs/vue-tsc] (Source: Zenn)</description>
+      <pubDate>Wed, 18 Nov 2026 14:26:28 +0000</pubDate>
     </item>
     <item>
       <title>ESLint から oxlint へ。lint が 50 倍速くなるまでの移行の記録</title>
@@ -28,11 +35,32 @@
       <pubDate>Tue, 17 Nov 2026 21:45:41 +0000</pubDate>
     </item>
     <item>
+      <title>欧州委員会が4万人以上の職員にMatrixを導入した方法</title>
+      <link>https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/</link>
+      <guid isPermaLink="false">https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/</guid>
+      <description>[Score: 85] 欧州委員会は、2025年12月の概念実証から2026年9月までに4万人以上の職員にMatrixベースの通信ツールを展開しました。 / このツールはElementによって構築され、委員会自身が運用しており、主権、データ所有権、相互運用性を重視しています。 / MatrixのオープンプロトコルとElement Server Suite Proが、これらの要件を満たす成熟した実装として選ばれました。 [実務示唆: 組織内でセキュアな通信基盤を検討する際は、Matrixのようなオープンプロトコルと、データ主権や相互運用性を重視したソリューションを評価対象に含めるべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 19 Nov 2026 10:58:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>HardwareDx: データセンターマシン修理のための基盤グラフモデルシステム</title>
+      <link>https://arxiv.org/abs/2611.23398</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.23398</guid>
+      <description>[Score: 85] 本記事は、データセンターにおけるマシン修理のための基盤となるグラフモデルシステム「HardwareDx」について紹介しています。 / ハードウェアの故障診断と修理プロセスを効率化するためのAIベースのアプローチを提案していると推測されます。 / arXivLabsの紹介文が本文抜粋として提示されていますが、論文の内容自体はデータセンター運用におけるAI活用に関する研究と考えられます。 [実務示唆: データセンター運用者は、AIを活用したハードウェア故障診断システムを導入することで、修理プロセスの自動化と効率化を図り、ダウンタイムを削減できる可能性があります。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 19 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>JavaScriptを実行しない機械があなたの数字を読み取る</title>
       <link>https://dev.to/minia2a/your-numbers-are-read-by-machines-that-do-not-run-your-javascript-32ko</link>
       <guid isPermaLink="false">https://dev.to/minia2a/your-numbers-are-read-by-machines-that-do-not-run-your-javascript-32ko</guid>
       <description>[Score: 80] ダッシュボードの数字は、JavaScriptを実行しない機械（LLMインデクサー、クローラーなど）とブラウザのJavaScriptによって二重に書き込まれます。 / 多くの開発者はJavaScriptによる動的な表示に注力しますが、静的に書き出されたHTMLの数字はQAループがないため、古い情報になるリスクがあります。 / 本記事は、この静的コンテンツの鮮度管理における失敗モードと、その対策について解説しています。 [実務示唆: Webサイトの重要な数値がJavaScriptに依存せず静的に表示される場合、LLMやクローラー向けにその鮮度を保証するQAプロセスを構築し、情報の正確性を維持すべきです。] (Source: Dev.to)</description>
       <pubDate>Thu, 19 Nov 2026 02:44:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>マルチタブテスト: 同一SaaSレコードを二重に編集するよう同僚に依頼する</title>
+      <link>https://dev.to/urielbitton/multi-tab-testing-ask-a-peer-to-edit-the-same-saas-record-twice-2bc</link>
+      <guid isPermaLink="false">https://dev.to/urielbitton/multi-tab-testing-ask-a-peer-to-edit-the-same-saas-record-twice-2bc</guid>
+      <description>[Score: 80] この記事は、SaaSアプリケーションにおけるマルチタブテストの重要性について解説しています。 / ユーザーが同じレコードを複数のタブで開き、異なる変更を保存した場合の競合解決の振る舞いを検証するテスト計画を提示。 / 特に、一方のタブでの変更がもう一方のタブでの古いビューによって上書きされないかを確認する手順が詳細に説明されています。 [実務示唆: SaaS開発者は、マルチタブでの同時編集におけるデータ競合や上書きを防ぐためのテストシナリオを開発プロセスに組み込むべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 19 Nov 2026 14:39:40 +0000</pubDate>
     </item>
     <item>
       <title>[AWS] S3Vectorsは全文検索エンジンとしてOpenSearchの代わりになるのか？ - Qiita</title>
@@ -68,6 +96,13 @@
       <guid isPermaLink="false">https://dev.to/aditya_ekka_pulseroi/handling-turso-platform-api-discovery-delays-on-cold-start-in-nextjs-1fm8</guid>
       <description>[Score: 70] Next.jsのサーバーレスエッジ関数におけるコールドスタート時に、Tursoデータベースの接続確立が遅延し、エラーが発生する問題とその対処法について解説しています。 / 特にピーク時のVercelサーバーレス関数のコールドスタートで、Turso libSQLデータベースへの接続ハンドシェイクがタイムアウトする事象が確認されました。 / 記事では、トップレベルでのクライアント初期化がコールドスタート失敗の原因となることが示されています。 [実務示唆: Next.jsなどのサーバーレス環境でデータベースを利用する際、コールドスタート時の接続遅延を考慮し、接続プールの初期化タイミングやリトライ戦略を適切に設計することで、安定した動作を確保すべきです。] (Source: Dev.to)</description>
       <pubDate>Thu, 19 Nov 2026 02:45:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>ブラウザでA4用紙1枚から8ページの折りたたみ式Zineを作成</title>
+      <link>https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/</link>
+      <guid isPermaLink="false">https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/</guid>
+      <description>[Score: 65] A4用紙1枚から8ページの折りたたみ式Zineを簡単に作成できるWebアプリ「fanzines.app」が紹介されています。 / このアプリは、手動でのレイアウト作業の煩雑さを解消し、ブラウザ上で写真やテキストを配置するだけで、印刷用のPDFを生成します。 / すべての処理はブラウザ内で完結し、画像がサーバーにアップロードされることはありません。 [実務示唆: 手軽に小冊子やZineを作成したい個人や小規模プロジェクトでは、fanzines.appのようなブラウザベースのツールを活用し、印刷前のレイアウト作業を効率化することを推奨します。] (Source: Hacker News)</description>
+      <pubDate>Thu, 19 Nov 2026 13:18:11 +0000</pubDate>
     </item>
   </channel>
 </rss>

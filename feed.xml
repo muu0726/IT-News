@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Nov 2026 02:50:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 14:44:01 +0000</lastBuildDate>
     <item>
       <title>tsrsを導入したらoxlintのtype-aware lintingとtypecheckが爆速になった話</title>
       <link>https://zenn.dev/dress_code/articles/6c179ae5129131</link>
@@ -84,6 +84,20 @@
       <pubDate>Thu, 19 Nov 2026 02:43:59 +0000</pubDate>
     </item>
     <item>
+      <title>Ruby2ßhell: 標準Railsにおける認証前RCE</title>
+      <link>https://verialabs.com/ruby2shell/</link>
+      <guid isPermaLink="false">https://verialabs.com/ruby2shell/</guid>
+      <description>[Score: 95] Ruby 2.4.0以降の複数のバージョンに、認証前のリモートコード実行（RCE）脆弱性「Ruby2ßhell」が発見されました。 / この脆弱性は、特定のシングルバイトエンコーディングにおける文字列の大文字変換処理のバッファオーバーフローに起因します。 / Railsを含むデフォルト設定のフレームワークが影響を受け、Ruby 3.3.14、3.4.13、4.0.10へのアップグレードが推奨されています。 [実務示唆: Ruby on Railsを使用している場合、直ちにRubyを修正バージョン（3.3.14、3.4.13、4.0.10）にアップグレードし、ベンダーの修正リリースを適用してください。] (Source: Hacker News)</description>
+      <pubDate>Thu, 19 Nov 2026 05:09:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>美少女ゲーム「NIKKE」経由でマルウェア感染 北海道2自治体、委託先が認める</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/19/2000003351/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/19/2000003351/</guid>
+      <description>[Score: 95] 北海道の2自治体（岩見沢市、新得町）の業務再委託先が、人気ゲーム「勝利の女神：NIKKE」のPC版ランチャー経由でマルウェア「K2F」に感染しました。 / これにより、固定資産税情報や住民基本台帳データなど、最大1万件以上の個人情報が漏えいした可能性があります。 / マルウェアは感染PCを遠隔操作し、パスワードなどを盗み出す機能を持つとされており、ゲームの正規ランチャーが改ざんされたことが原因とされています。 [実務示唆: 業務PCでのゲーム利用は厳禁とし、ソフトウェアのダウンロード元や更新プログラムの信頼性を常に確認し、セキュリティ対策を徹底しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 19 Nov 2026 11:25:45 +0000</pubDate>
+    </item>
+    <item>
       <title>RegexpとStringのケース変換における複数の脆弱性</title>
       <link>https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/</link>
       <guid isPermaLink="false">https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/</guid>
@@ -131,20 +145,6 @@
       <guid isPermaLink="false">https://note.com/y_hirano/n/nc986ab18b90e</guid>
       <description>[Score: 90] 筆者は2026年10月末で仕事が減り、11月から実質的無職になったと報告しています。 / フリーランスを取り巻く環境の変化やAIの急速な実用化により、2023年頃から潮時を感じていたとのことです。 / 特に2025年以降はAIの進化により、ソフトウェアエンジニアの作業が不要になるほど状況が変化していると述べています。 [実務示唆: AIの進化による業務の変化に対応するため、自身のスキルセットを見直し、AIでは代替しにくい高付加価値な領域へのシフトを検討すべきです。] (Source: はてなブックマーク)</description>
       <pubDate>Wed, 18 Nov 2026 19:58:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>Gemini 4 NeonはOpus 5.5の競合となりうる</title>
-      <link>https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/</link>
-      <guid isPermaLink="false">https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/</guid>
-      <description>[Score: 88] Gemini 4 Neonは、以前のGemini 4 Carbonと比較して、ベンチマーク性能の向上と大幅な速度改善を実現しました。 / OpenRouterでの提供速度は127トークン/秒とCarbonの46トークン/秒を大きく上回ります。 / Agent DuelリーダーボードのEloスコア予測では、NeonはOpus 5.5に匹敵する性能を持つ可能性が示唆されています。 [実務示唆: Gemini 4 Neonの高速性と高い性能は、リアルタイム性が求められるAIアプリケーションやエージェント開発において、Opus 5.5の代替または競合として積極的に評価・導入を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 19 Nov 2026 00:29:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>ESLint から oxlint へ。lint が 50 倍速くなるまでの移行の記録</title>
-      <link>https://zenn.dev/rimo/articles/12d6a7b1c58fcd</link>
-      <guid isPermaLink="false">https://zenn.dev/rimo/articles/12d6a7b1c58fcd</guid>
-      <description>[Score: 88] Rimo合同会社がフロントエンドのlinterをESLintからoxlintへ移行し、lint速度が約50倍に向上した事例を紹介しています。 / 移行はESLintのルール追加と並行して進められ、oxlintにないルールはESLintに残しつつ併用する形が取られました。 / CIのlintステップも146秒から32秒に短縮され、AIコーディング時のPostToolUseフックでの待ち時間も大幅に削減されました。 [実務示唆: フロントエンド開発においてlintの実行速度は開発体験に直結するため、oxlintのような高速linterへの移行を検討し、CI/CDパイプラインの高速化を図るべきです。] (Source: Zenn)</description>
-      <pubDate>Wed, 18 Nov 2026 00:51:16 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Nov 2026 02:50:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 14:44:01 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -54,6 +54,27 @@
       <guid isPermaLink="false">https://dev.to/romdevin/pypi-agent-framework-1261-1262-pth-credential-stealer-creates-startup-risk-audit-and-isolate-41nj</guid>
       <description>[Score: 95] PyPIパッケージagent-frameworkのバージョン1.26.1と1.26.2に、.pthファイルに埋め込まれたクレデンシャル窃取マルウェアが含まれていました。 / このマルウェアは、パッケージインストール時にimportなしで即座に実行され、CI/CD環境やAIワーカーに深刻なリスクをもたらします。 / Pythonインタープリタの起動パス設定メカニズムが悪用され、環境変数やシークレットが窃取される可能性があります。 [実務示唆: agent-frameworkのユーザーは直ちにバージョン1.26.0以前または1.26.3以降へのダウングレード/アップグレードを行い、影響を受けた可能性のある環境の監査と隔離を徹底すべきです。] (Source: Dev.to)</description>
       <pubDate>Thu, 19 Nov 2026 02:43:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ruby2ßhell: 標準Railsにおける認証前RCE</title>
+      <link>https://verialabs.com/ruby2shell/</link>
+      <guid isPermaLink="false">https://verialabs.com/ruby2shell/</guid>
+      <description>[Score: 95] Ruby 2.4.0以降の複数のバージョンに、認証前のリモートコード実行（RCE）脆弱性「Ruby2ßhell」が発見されました。 / この脆弱性は、特定のシングルバイトエンコーディングにおける文字列の大文字変換処理のバッファオーバーフローに起因します。 / Railsを含むデフォルト設定のフレームワークが影響を受け、Ruby 3.3.14、3.4.13、4.0.10へのアップグレードが推奨されています。 [実務示唆: Ruby on Railsを使用している場合、直ちにRubyを修正バージョン（3.3.14、3.4.13、4.0.10）にアップグレードし、ベンダーの修正リリースを適用してください。] (Source: Hacker News)</description>
+      <pubDate>Thu, 19 Nov 2026 05:09:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>美少女ゲーム「NIKKE」経由でマルウェア感染 北海道2自治体、委託先が認める</title>
+      <link>https://www.itmedia.co.jp/news/article/2611/19/2000003351/</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/19/2000003351/</guid>
+      <description>[Score: 95] 北海道の2自治体（岩見沢市、新得町）の業務再委託先が、人気ゲーム「勝利の女神：NIKKE」のPC版ランチャー経由でマルウェア「K2F」に感染しました。 / これにより、固定資産税情報や住民基本台帳データなど、最大1万件以上の個人情報が漏えいした可能性があります。 / マルウェアは感染PCを遠隔操作し、パスワードなどを盗み出す機能を持つとされており、ゲームの正規ランチャーが改ざんされたことが原因とされています。 [実務示唆: 業務PCでのゲーム利用は厳禁とし、ソフトウェアのダウンロード元や更新プログラムの信頼性を常に確認し、セキュリティ対策を徹底しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 19 Nov 2026 11:25:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>Temporary HTTP/2 Mitigation for NGINX Before Patching</title>
+      <link>https://dev.to/stark_zhuang_df5076f35c68/temporary-http2-mitigation-for-nginx-before-patching-1alp</link>
+      <guid isPermaLink="false">https://dev.to/stark_zhuang_df5076f35c68/temporary-http2-mitigation-for-nginx-before-patching-1alp</guid>
+      <description>[Score: 90] NGINXのHTTP/2フロー制御整数オーバーフロー脆弱性（CVE-2026-123007）に対する一時的な緩和策が提示されました。 / パッチ適用が遅れる場合、HTTP/2を無効にすることでこの脆弱性の悪用を阻止できます。 / これは一時的な対策であり、最終的には修正版へのアップデートが推奨されます。 [実務示唆: NGINXユーザーは、CVE-2026-123007のパッチ適用が完了するまで、HTTP/2を無効にする一時的な緩和策を検討し、速やかにアップデート計画を立てるべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 19 Nov 2026 14:40:31 +0000</pubDate>
     </item>
     <item>
       <title>六花亭、カード番号全桁＋セキュリティコード約8000件流出か　決済画面のプログラム改ざん</title>
