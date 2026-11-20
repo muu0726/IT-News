@@ -5,7 +5,14 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Nov 2026 02:38:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 14:25:30 +0000</lastBuildDate>
+    <item>
+      <title>CDKからTerraformへ：所有権移譲による本番インフラ無停止のIaC移行</title>
+      <link>https://zenn.dev/levtech/articles/14befd8e727f32</link>
+      <guid isPermaLink="false">https://zenn.dev/levtech/articles/14befd8e727f32</guid>
+      <description>[Score: 95] 本記事では、CDKで管理されている本番インフラをTerraformへ無停止で移行する手法について解説しています。 / 「所有権を移譲する」アプローチにより、13スタックの本番インフラを停止させずにIaC移行を完遂しました。 / 具体的な手順として、CloudFormationのRemovalPolicy: RETAIN設定、CDKからのリソース定義削除、Terraformでのimportによる管理下への取り込み、差分確認と適用が示されています。 [実務示唆: 異なるIaCツールへの移行を検討する際は、本番環境の無停止移行を実現する「所有権移譲」の手法を参考に、RemovalPolicy: RETAIN設定とTerraform importを計画的に実施すべきです。] (Source: Zenn)</description>
+      <pubDate>Fri, 20 Nov 2026 01:26:30 +0000</pubDate>
+    </item>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
       <link>https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</link>
@@ -21,6 +28,13 @@
       <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
     </item>
     <item>
+      <title>【実験】Direct Connectの片系を落とすと、実際どれくらいで切り替わり、行きと戻りはどの回線を通るのか</title>
+      <link>https://qiita.com/sh_fukatsu/items/5a069f9fce99a86efb05?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/sh_fukatsu/items/5a069f9fce99a86efb05?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] AWS Direct Connectの冗長構成において、片系障害時の切り替わり時間と経路変化を検証した記事です。 / AWS Fault Injection Service (FIS) の利用を試みるも権限不足で断念し、Direct Connectコンソールからの障害テストを実施しました。 / pingによる通信監視で、切り替わり時間や行き・戻りの経路がどのように変化するかを詳細に追跡しています。 [実務示唆: Direct Connectの冗長構成を導入している場合、障害テスト機能を用いて切り替わり時間と経路を定期的に検証し、システムの可用性を確認しましょう。] (Source: Qiita)</description>
+      <pubDate>Wed, 18 Nov 2026 13:42:33 +0000</pubDate>
+    </item>
+    <item>
       <title>HardwareDx: データセンターマシン修理のための基盤グラフモデルシステム</title>
       <link>https://arxiv.org/abs/2611.23398</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.23398</guid>
@@ -28,11 +42,25 @@
       <pubDate>Thu, 19 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>Apache SeaTunnel 3.1.0 を用いたMySQL CDCからPostgreSQLへの再現可能なウォークスルー</title>
+      <link>https://dev.to/danielnadia/mysql-cdc-postgresql-with-apache-seatunnel-310-a-reproducible-walkthrough-1ik0</link>
+      <guid isPermaLink="false">https://dev.to/danielnadia/mysql-cdc-postgresql-with-apache-seatunnel-310-a-reproducible-walkthrough-1ik0</guid>
+      <description>[Score: 78] Apache SeaTunnel 3.1.0を使用してMySQLからPostgreSQLへのCDC（Change Data Capture）パイプラインを構築する詳細なウォークスルーが提供されています。 / 初期スナップショット、挿入、更新、削除、スキーマ変更、セーブポイントからの復元といった一連の操作を検証できます。 / Kafkaなどの中間コンポーネンスなしで、SeaTunnelのMySQL CDCコネクタとJDBCシンクを直接利用するシンプルな構成が特徴です。 [実務示唆: MySQLからPostgreSQLへのデータ連携を検討している場合、Apache SeaTunnel 3.1.0のCDC機能を試用し、本記事のウォークスルーを参考に再現性を検証してください。] [GitHub: apache/seatunnel] (Source: Dev.to)</description>
+      <pubDate>Fri, 20 Nov 2026 14:22:15 +0000</pubDate>
+    </item>
+    <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
       <link>https://github.blog/news-insights/company-news/github-availability-report-october-2026/</link>
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-october-2026/</guid>
       <description>[Score: 75] GitHubは2026年10月の稼働状況レポートを公開し、可用性と信頼性向上の取り組みを報告しました。 / Azure Central USへの大幅な容量追加と障害エスカレーション経路の削減を進めました。 / しかし、書き込み停止、データ移行中の監視ギャップ、地域ネットワーク障害が発生し、容量増強と並行して安全な運用と分離、地域復旧の検証の必要性が強調されました。 [実務示唆: 大規模なサービスを運用するエンジニアは、GitHubの事例から、容量増強だけでなく、運用手順の安全性、システムの分離、災害復旧計画の定期的な検証の重要性を学び、自社システムに適用すべきです。] [GitHub: github/docs] (Source: GitHub Blog)</description>
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenStreetMapデータのための高速で決定論的な自然言語検索</title>
+      <link>https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935</link>
+      <guid isPermaLink="false">https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935</guid>
+      <description>[Score: 70] Hippomapsは、OpenStreetMapデータを利用した無料の地図サービスです。 / 自然言語で場所を検索でき、写真や営業時間、経路案内、公共交通機関の情報を提供します。 / アカウント不要で、WebとAndroidアプリで利用可能です。 [実務示唆: OpenStreetMapデータを活用した自然言語検索機能は、地図サービス開発においてユーザー体験を向上させるヒントとなるため、類似機能の実装を検討する際は参考にすると良いでしょう。] (Source: Hacker News)</description>
+      <pubDate>Thu, 19 Nov 2026 15:16:02 +0000</pubDate>
     </item>
   </channel>
 </rss>

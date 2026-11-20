@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Nov 2026 02:38:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 14:25:30 +0000</lastBuildDate>
     <item>
       <title>OpenSSL: EVP_EncodeBlock()におけるバッファオーバーフロー (CVE-2026-121481, CVSS 9.8)</title>
       <link>https://github.com/openssl/openssl/pull/33652</link>
@@ -47,6 +47,34 @@
       <guid isPermaLink="false">https://www.anthropic.com/research/claude-black-hole-physics</guid>
       <description>[Score: 95] AnthropicのAI「Claude」がブラックホール物理学における2つの未解決問題を解決しました。 / 一般相対性理論と量子力学の統合を目指す「量子重力」の研究に貢献しています。 / ホログラフィック双対性という概念を用いて、重力に関する難しい問題を量子論に変換して解決しました。 [実務示唆: AIが基礎科学の未解決問題に貢献する事例として、AIの推論能力やシミュレーション能力の限界を再評価し、自社の研究開発にAIを導入する可能性を探るべきです。] (Source: Hacker News)</description>
       <pubDate>Thu, 19 Nov 2026 17:30:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>Frostbite: AIが発見、設計、検証した新しいCPUアーキテクチャ</title>
+      <link>https://architectlabs.com/blog/frostbite</link>
+      <guid isPermaLink="false">https://architectlabs.com/blog/frostbite</guid>
+      <description>[Score: 95] ArchitectLabsは、AIシステムが完全に新しい命令セットを持つ汎用CPUアーキテクチャ「Frostbite」を発見・設計・検証したと発表しました。 / Frostbiteは、インタラクションネットの特性を活用することで、既存のCPUと比較して性能/ワットで4.59倍の向上を達成しました。 / AIがコンパイラ、ISA、アーキテクチャ、RTL、検証、GDSまで自律的に反復し、人間では困難な新しいハードウェア実装を発見しました。 [実務示唆: AIによるハードウェア設計の可能性を探り、将来的なAI設計チップの性能向上やコスト削減の動向に注目し、自身のプロジェクトへの応用を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Fri, 20 Nov 2026 10:01:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>CDKからTerraformへ：所有権移譲による本番インフラ無停止のIaC移行</title>
+      <link>https://zenn.dev/levtech/articles/14befd8e727f32</link>
+      <guid isPermaLink="false">https://zenn.dev/levtech/articles/14befd8e727f32</guid>
+      <description>[Score: 95] 本記事では、CDKで管理されている本番インフラをTerraformへ無停止で移行する手法について解説しています。 / 「所有権を移譲する」アプローチにより、13スタックの本番インフラを停止させずにIaC移行を完遂しました。 / 具体的な手順として、CloudFormationのRemovalPolicy: RETAIN設定、CDKからのリソース定義削除、Terraformでのimportによる管理下への取り込み、差分確認と適用が示されています。 [実務示唆: 異なるIaCツールへの移行を検討する際は、本番環境の無停止移行を実現する「所有権移譲」の手法を参考に、RemovalPolicy: RETAIN設定とTerraform importを計画的に実施すべきです。] (Source: Zenn)</description>
+      <pubDate>Fri, 20 Nov 2026 01:26:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>【速報】三井住友銀で情報漏えい、最大1400万件</title>
+      <link>https://www.47news.jp/15262461.html</link>
+      <guid isPermaLink="false">https://www.47news.jp/15262461.html</guid>
+      <description>[Score: 95] 三井住友銀行が、業務委託先のプレイドのサービスが不正アクセスを受け、最大約1400万件の顧客情報が漏えいしたと発表しました。 / 不正アクセスの詳細や漏えいした情報の具体的な内容は、記事抜粋からは不明です。 / この事態は、金融機関における外部委託先のセキュリティ管理の重要性を改めて浮き彫りにしています。 [実務示唆: 外部サービスを利用する際は、委託先のセキュリティ体制を厳重に確認し、定期的な監査や契約内容の見直しを通じて情報漏えいリスクを最小限に抑えましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 20 Nov 2026 10:10:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>「httpS://」だと暗号化されず平文で送信……「PHP」に約20年潜んでいた脆弱性が解決／問題はいたってシンプル、なんともはや……【やじうまの杜】</title>
+      <link>https://forest.watch.impress.co.jp/docs/serial/yajiuma/2158241.html</link>
+      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/serial/yajiuma/2158241.html</guid>
+      <description>[Score: 95] PHPのHTTP/FTPストリームラッパーに、約20年間存在した脆弱性が修正された。 / URLスキームの「S」が大文字の場合、TLS暗号化がスキップされ平文で通信される問題。 / パスワードや認証トークンなどの情報漏洩リスクがあり、CVE-2026-128064として追跡されている。 [実務示唆: PHP利用者は直ちに修正版（v8.6.0等）へアップデートし、URLスキームの大文字・小文字を厳密に確認するよう徹底すること。] [GitHub: php/php-src] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 20 Nov 2026 09:26:32 +0000</pubDate>
     </item>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
@@ -91,6 +119,20 @@
       <pubDate>Fri, 20 Nov 2026 02:35:10 +0000</pubDate>
     </item>
     <item>
+      <title>日本のレシートを自宅PCでOCRする：15構成を実レシート11枚で比べた</title>
+      <link>https://zenn.dev/chaki/articles/4545be3475fdb4</link>
+      <guid isPermaLink="false">https://zenn.dev/chaki/articles/4545be3475fdb4</guid>
+      <description>[Score: 90] 自宅PCで日本のレシートをOCRする15構成を実レシート11枚で比較検証しました。 / YomiTokuの2段読みが商品名93%、金額100%の精度で最良でしたが、非商用ライセンスです。 / 商用利用ではNDLOCR-LiteやPP-OCRv6が現実的で、VLMは手書き領収書に強いが長いレシートでは課題が見られました。 [実務示唆: レシートOCRを自作する際は、YomiTokuの2段読みを参考にしつつ、商用利用ならNDLOCR-LiteやPP-OCRv6を検討し、手書き対応ならVLMの活用を試すのが良いでしょう。] (Source: Zenn)</description>
+      <pubDate>Fri, 20 Nov 2026 04:33:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>「あと10年もたないかもしれない」Rubyの父 まつもとゆきひろが危惧するOSS文化の消滅</title>
+      <link>https://type.jp/et/feature/32219/</link>
+      <guid isPermaLink="false">https://type.jp/et/feature/32219/</guid>
+      <description>[Score: 90] Ruby開発者のまつもとゆきひろ氏が、OSS文化の未来に強い危機感を表明。 / PHPやOpenJDKでの脆弱性発覚を例に、OSSのセキュリティ対応の困難さを指摘。 / 無償で利用されるOSS開発者の負担と、社会的責任を求める風潮への疑問を呈している。 [実務示唆: OSSの持続可能性を考慮し、企業はOSSプロジェクトへの貢献や開発者支援を積極的に検討すべきである。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 20 Nov 2026 04:31:59 +0000</pubDate>
+    </item>
+    <item>
       <title>TypeScript 7.1 の Content Mapper で型の生成コマンドをなくす</title>
       <link>https://zenn.dev/toiroakr/articles/typescript-content-mapper-codegen</link>
       <guid isPermaLink="false">https://zenn.dev/toiroakr/articles/typescript-content-mapper-codegen</guid>
@@ -103,48 +145,6 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
       <description>[Score: 88] マイクロソフトが「Microsoft Ignite 2026」で、クラウドやオンプレミスのデータベースを一元管理する「Database Hub in Fabric」を正式リリースしました。 / Azure SQL、PostgreSQL、Cosmos DB、SQL Serverなど多様なデータベースに対応し、統合データ分析基盤Microsoft Fabric上で動作します。 / AIエージェントによる運用監視の自動化機能も搭載し、リアルタイムのCPU、メモリ、ストレージトレンド追跡が可能です。 [実務示唆: 複数のデータベースを運用している企業は、Database Hubの導入を検討し、管理コスト削減と運用効率向上、AIによる監視自動化の恩恵を評価すべきです。] (Source: Publickey)</description>
       <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス</title>
-      <link>https://zenn.dev/nttdata_tech/articles/9562962cc181a1</link>
-      <guid isPermaLink="false">https://zenn.dev/nttdata_tech/articles/9562962cc181a1</guid>
-      <description>[Score: 85] 本記事では、Claude CodeとCodexを活用し、自律的に作業を進めるための個人用ハーネスの設計と運用について解説しています。 / Agentが過去の作業を記憶し、複数のセッションで並行して作業を進められるように、フォルダと概念の置き場を工夫しています。 / 賢いプロンプトに頼るのではなく、Agentが自分で読み書き検査できる環境を構築することで、自律的な作業を実現しています。 [実務示唆: AIエージェントの自律性を高めるため、プロンプトだけでなく、Agentが情報を読み書きし、作業履歴を追跡できるような環境設計（ハーネス）を検討し、導入を試みてください。] (Source: Zenn)</description>
-      <pubDate>Thu, 19 Nov 2026 07:28:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>人間がボトルネックになった時代のAIエージェント設計</title>
-      <link>https://qiita.com/Syoitu/items/5bb47c01a8513e52d1b5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Syoitu/items/5bb47c01a8513e52d1b5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AIエージェントが賢くなり、単一タスクは自動化できるようになった一方で、複数のエージェントを人間が管理する際にボトルネックが生じています。 / 本記事では、人間の注意力を消費しない「スーパーエージェント」の設計思想と、それを実現するための5つのパターンを紹介しています。 / セッションを仕事の単位から切り離し、文脈を保ちながら複数の仕事をこなす継続的なエージェントの重要性が説かれています。 [実務示唆: 複数のAIエージェントを運用する際は、人間がボトルネックにならないよう、スーパーエージェントの設計パターンを参考に自律的なエージェント連携を検討しましょう。] (Source: Qiita)</description>
-      <pubDate>Wed, 18 Nov 2026 05:37:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>マイクロソフト、AIが生成したアプリを企業内で安全に実行するランタイム「Copilot Managed Runtime」正式リリース</title>
-      <link>https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</guid>
-      <description>[Score: 85] マイクロソフトは「Microsoft Ignite 2026」で、AIが生成したアプリケーションを企業内で安全に実行するための基盤「Copilot Managed Runtime」を正式リリースしました。 / AIによって生成されたアプリは脆弱性やセキュリティリスクを抱える可能性があるため、適切な権限管理とサンドボックス化された実行環境が求められます。 / 本ランタイムは、これらの課題を解決し、企業内でのAIアプリの安全なデプロイと実行を可能にします。 [実務示唆: AI生成アプリを企業導入する際は、Copilot Managed Runtimeのような専用ランタイムを活用し、セキュリティと権限管理を徹底すべきです。] (Source: Publickey)</description>
-      <pubDate>Wed, 18 Nov 2026 15:58:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>HardwareDx: データセンターマシン修理のための基盤グラフモデルシステム</title>
-      <link>https://arxiv.org/abs/2611.23398</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.23398</guid>
-      <description>[Score: 85] 本記事は、データセンターにおけるマシン修理のための基盤となるグラフモデルシステム「HardwareDx」について紹介しています。 / ハードウェアの故障診断と修理プロセスを効率化するためのAIベースのアプローチを提案していると推測されます。 / arXivLabsの紹介文が本文抜粋として提示されていますが、論文の内容自体はデータセンター運用におけるAI活用に関する研究と考えられます。 [実務示唆: データセンター運用者は、AIを活用したハードウェア故障診断システムを導入することで、修理プロセスの自動化と効率化を図り、ダウンタイムを削減できる可能性があります。] (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 19 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>AnthropicのNasdaqデビュー</title>
-      <link>https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/</link>
-      <guid isPermaLink="false">https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/</guid>
-      <description>[Score: 85] AI企業AnthropicがNasdaqに上場しました。 / これはAI業界にとって歴史的な出来事であり、ウォール街でのAIの可能性が試されます。 / 今後のAI企業の評価や資金調達に大きな影響を与える可能性があります。 [実務示唆: AI関連企業の投資動向や市場評価の変化に注目し、自社のAI戦略や技術選定に反映させるべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 19 Nov 2026 17:02:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIが爆速で開発する時代の、自動テストとの向き合い方</title>
-      <link>https://zenn.dev/daiaoki/articles/webterm-ai-era-testing</link>
-      <guid isPermaLink="false">https://zenn.dev/daiaoki/articles/webterm-ai-era-testing</guid>
-      <description>[Score: 85] AIを活用した高速開発において、品質を維持しつつ開発速度を落とさないための自動テストの重要性が語られています。 / 筆者は個人開発サービス「WebTerm Learn」で、AIによる1日100コミット以上の開発を支えるため、1,800本のテストファイルと2.2万件の単体テストを構築しました。 / ブラウザ内ターミナルシミュレーターというユニークなアーキテクチャを採用し、コストとセキュリティを両立させています。 [実務示唆: AIを活用した開発では、テストコードの自動生成やテスト戦略の見直しにより、品質を維持しつつ開発速度を最大化するアプローチを検討すべきです。] (Source: Zenn)</description>
-      <pubDate>Thu, 19 Nov 2026 07:11:24 +0000</pubDate>
     </item>
   </channel>
 </rss>

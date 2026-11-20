@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Nov 2026 02:38:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 14:25:30 +0000</lastBuildDate>
     <item>
       <title>部下がClaudeっぽいスライドしか出してこなくてウンザリしてる上司はこれを使わせなさい</title>
       <link>https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
@@ -40,6 +40,27 @@
       <guid isPermaLink="false">https://git-aarvin.github.io/mei/</guid>
       <description>[Score: 90] Gemini 4 NeonがModels Engineering Indexでトップの評価を得ました。 / これはAIモデルの性能、コスト、トークン効率を比較する指標です。 / 他の主要モデルと比較して優れたパフォーマンスを示しています。 [実務示唆: 最新の高性能AIモデルのベンチマーク結果を参考に、自社のAI開発におけるモデル選定や最適化戦略を見直すべきです。] [GitHub: git-aarvin/mei] (Source: Hacker News)</description>
       <pubDate>Thu, 19 Nov 2026 23:35:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>日本のレシートを自宅PCでOCRする：15構成を実レシート11枚で比べた</title>
+      <link>https://zenn.dev/chaki/articles/4545be3475fdb4</link>
+      <guid isPermaLink="false">https://zenn.dev/chaki/articles/4545be3475fdb4</guid>
+      <description>[Score: 90] 自宅PCで日本のレシートをOCRする15構成を実レシート11枚で比較検証しました。 / YomiTokuの2段読みが商品名93%、金額100%の精度で最良でしたが、非商用ライセンスです。 / 商用利用ではNDLOCR-LiteやPP-OCRv6が現実的で、VLMは手書き領収書に強いが長いレシートでは課題が見られました。 [実務示唆: レシートOCRを自作する際は、YomiTokuの2段読みを参考にしつつ、商用利用ならNDLOCR-LiteやPP-OCRv6を検討し、手書き対応ならVLMの活用を試すのが良いでしょう。] (Source: Zenn)</description>
+      <pubDate>Fri, 20 Nov 2026 04:33:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>Show HN: オーディオ-MIDIモデルを60倍効率化しました</title>
+      <link>https://kobi.music/research/dettato</link>
+      <guid isPermaLink="false">https://kobi.music/research/dettato</guid>
+      <description>[Score: 88] Dettatoは、最先端のオーディオ-MIDI変換モデルであり、既存のオープンモデルMuScriptor 1.3Bを大幅に上回り、閉鎖型モデルMirelo A2M v1.1 Proと同等以上の精度を達成しました。 / このモデルはわずか20Mパラメータで、MuScriptorの約65分の1のサイズであり、著作権保護された録音を使用せずにトレーニングされています。 / オープンソースであり商用利用も可能ですが、楽器の分離や楽譜生成には課題があり、演奏用MIDIの生成に特化しています。 [実務示唆: オーディオ-MIDI変換が必要な開発者は、Dettatoを試用し、その効率性と精度を評価することで、既存のワークフロー改善や新しい音楽アプリケーション開発に活用できる可能性があります。] [GitHub: kobimusic/dettato] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 01:03:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>CLAUDE.md や SKILL.md のルールを Turtle で書き、ルールの書き間違いや矛盾を lint で検査してみた話</title>
+      <link>https://zenn.dev/hma2moto/articles/turtle-agent-rules-pros-cons</link>
+      <guid isPermaLink="false">https://zenn.dev/hma2moto/articles/turtle-agent-rules-pros-cons</guid>
+      <description>[Score: 88] Claude CodeのエージェントルールをMarkdownからTurtle構文に移行し、ルールの明確化と自動検査を実現しました。 / Turtleを使うことで、ルールの強さ、例外、理由を一箇所にまとめられ、人間が読みやすくなります。 / また、lintツールでルールの書き間違いや矛盾を検査でき、エージェントがルールをより遵守する効果も確認されました。 [実務示唆: 大規模なAIエージェントのルール管理において、Markdownの限界を感じたら、Turtleのようなオントロジー記述言語とlintツールを導入し、ルールの構造化と自動検査による品質向上を検討すべきです。] (Source: Zenn)</description>
+      <pubDate>Thu, 19 Nov 2026 14:13:57 +0000</pubDate>
     </item>
     <item>
       <title>自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス</title>
@@ -84,32 +105,11 @@
       <pubDate>Fri, 20 Nov 2026 02:34:51 +0000</pubDate>
     </item>
     <item>
-      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
-      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIトークノミクスは観測から始めよう - AIコーディングのコスト・無駄・成果を測る</title>
-      <link>https://qiita.com/kobadain/items/7ff26c584cd9b83f7a5a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kobadain/items/7ff26c584cd9b83f7a5a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] AIコーディングのコストと成果を定量的に評価する「AIトークノミクス」の重要性が高まっています。 / 記事では、New RelicがOSSとして提供する「Preflight」ツールを紹介し、AIコーディングのコスト、無駄、成果を観測する方法を解説しています。 / Preflightは、AIコーディングツールの呼び出しとトークン数を記録し、費用を作業単位で可視化することで、AI利用のROI最適化を支援します。 [実務示唆: AIコーディングのコストと効果を可視化するため、New RelicのPreflightのようなツールを導入し、トークン消費量や作業単位での費用対効果を定期的に測定・分析することを推奨します。] [GitHub: newrelic/preflight] (Source: Qiita)</description>
-      <pubDate>Thu, 19 Nov 2026 01:40:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIの返答が理解しづらいので、自分の認知特性をAIに分析させてSkillにした</title>
-      <link>https://blog.shibayu36.org/entry/2026/11/17/120000</link>
-      <guid isPermaLink="false">https://blog.shibayu36.org/entry/2026/11/17/120000</guid>
-      <description>[Score: 78] AIの返答が理解しづらいという課題に対し、筆者自身の認知特性をClaude Codeに分析させ、それに合わせた返答を生成するSkillを開発しました。 / 短期記憶力の低さや、離れた内容を覚えていられない特性を考慮し、必要な情報をその場で提示するようAIの出力を調整しています。 / このSkillにより、AIとのやり取りの理解度が大幅に向上し、効率的な情報収集が可能になったと報告されています。 [実務示唆: AIとの対話効率を上げるため、自身の認知特性をAIに学習させ、パーソナライズされた出力形式を試すことで生産性向上が期待できます。] [GitHub: shibayu36/writing-for-shibayu36] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 18 Nov 2026 03:37:49 +0000</pubDate>
-    </item>
-    <item>
-      <title>Microsoft-Decision-1.1公開！Microsoft-Decision-1との差はどれくらい？</title>
-      <link>https://zenn.dev/microsoft/articles/ms-decision-1-1</link>
-      <guid isPermaLink="false">https://zenn.dev/microsoft/articles/ms-decision-1-1</guid>
-      <description>[Score: 75] Microsoft純正のDecisionモデル「Microsoft-Decision-1.1」が一般提供され、前バージョン1と比較して2倍以上の高速化、精度とキャリブレーションの向上、画像入力対応が発表されました。 / 本記事では、実際に1と1.1をデプロイしてスピードと回答品質を比較検証しています。 / 検証結果では、1.1は1よりも高速であり、特に推論処理時間において改善が見られ、価格は据え置きとなっています。 [実務示唆: Microsoft-Decisionモデルを利用している場合、パフォーマンスと精度の向上、画像入力対応のため、既存のアプリケーションをMicrosoft-Decision-1.1へ移行することを検討してください。] (Source: Zenn)</description>
-      <pubDate>Thu, 19 Nov 2026 03:41:58 +0000</pubDate>
+      <title>Microsoft 365 CopilotがOneDriveのファイルを直接編集可能に！CoworkなしでGitHub Copilotのように使える件</title>
+      <link>https://qiita.com/yuyanz/items/c3bb4801c105d96fa79d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yuyanz/items/c3bb4801c105d96fa79d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] Microsoft 365 CopilotがOneDrive上のファイルを直接編集できるようになり、既存ファイルの更新が容易になりました。 / 「プロジェクト」機能と組み合わせることで、特定のフォルダを作業領域としたAI活用が可能になります。 / GPT系のモデルでは動作が確認されましたが、Claude系では挙動が異なる場合があるため注意が必要です。 [実務示唆: Microsoft 365 CopilotのOneDriveファイル直接編集機能とプロジェクト機能を活用し、AIによるドキュメント管理・更新の効率化を検討しましょう。] (Source: Qiita)</description>
+      <pubDate>Thu, 19 Nov 2026 03:56:02 +0000</pubDate>
     </item>
   </channel>
 </rss>
