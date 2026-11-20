@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Nov 2026 14:44:01 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 02:38:38 +0000</lastBuildDate>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
       <link>https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</link>
@@ -14,32 +14,11 @@
       <pubDate>Wed, 18 Nov 2026 15:55:49 +0000</pubDate>
     </item>
     <item>
-      <title>vue-tscの壁を越える：vizeとtsrsでVueの型検査を高速化した</title>
-      <link>https://zenn.dev/studio/articles/vue-typecheck-vize-tsrs</link>
-      <guid isPermaLink="false">https://zenn.dev/studio/articles/vue-typecheck-vize-tsrs</guid>
-      <description>[Score: 90] Vueプロジェクトの型検査において、従来のvue-tscがTypeScript 7に対応できず、CIでの待ち時間が長くなる問題がありました。 / tsrsとvizeを導入することで、型検査の中央値が570秒から123秒に短縮され、メモリ使用量も大幅に削減されました。 / これはTypeScript 7.1のcontent mapperを活用した新しいアプローチにより実現され、開発効率の向上に貢献します。 [実務示唆: Vueプロジェクトで型検査のボトルネックを感じている場合、tsrsとvizeの導入を検討し、CI/CDパイプラインの高速化を図るべきです。] [GitHub: vuejs/vue-tsc] (Source: Zenn)</description>
-      <pubDate>Wed, 18 Nov 2026 14:26:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>ESLint から oxlint へ。lint が 50 倍速くなるまでの移行の記録</title>
-      <link>https://zenn.dev/rimo/articles/12d6a7b1c58fcd</link>
-      <guid isPermaLink="false">https://zenn.dev/rimo/articles/12d6a7b1c58fcd</guid>
-      <description>[Score: 88] Rimo合同会社がフロントエンドのlinterをESLintからoxlintへ移行し、lint速度が約50倍に向上した事例を紹介しています。 / 移行はESLintのルール追加と並行して進められ、oxlintにないルールはESLintに残しつつ併用する形が取られました。 / CIのlintステップも146秒から32秒に短縮され、AIコーディング時のPostToolUseフックでの待ち時間も大幅に削減されました。 [実務示唆: フロントエンド開発においてlintの実行速度は開発体験に直結するため、oxlintのような高速linterへの移行を検討し、CI/CDパイプラインの高速化を図るべきです。] (Source: Zenn)</description>
-      <pubDate>Wed, 18 Nov 2026 00:51:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>マイクロソフト、PostgreSQL互換のミッションクリティカル向けデータベースサービス「Azure HorizonDB」正式リリース</title>
-      <link>https://www.publickey1.jp/blog/26/postgresqlazure_horizondb.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresqlazure_horizondb.html</guid>
-      <description>[Score: 85] Microsoftが年次イベント「Microsoft Ignite 2026」で、PostgreSQL互換のミッションクリティカル向けデータベースサービス「Azure HorizonDB」を正式リリースしました。 / 最大3072vCPUまでスケールアウト可能で、ストレージは最大128TBまでオートスケールします。 / 複数アベイラビリティゾーンにレプリカを作成し、高可用性と低レイテンシを実現し、PgVectorによるベクトル検索もサポートします。 [実務示唆: ミッションクリティカルなPostgreSQLワークロードをAzureに移行する際、高可用性とスケーラビリティを求める場合はAzure HorizonDBの導入を検討すべきです。] (Source: Publickey)</description>
-      <pubDate>Tue, 17 Nov 2026 21:45:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>欧州委員会が4万人以上の職員にMatrixを導入した方法</title>
-      <link>https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/</link>
-      <guid isPermaLink="false">https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/</guid>
-      <description>[Score: 85] 欧州委員会は、2025年12月の概念実証から2026年9月までに4万人以上の職員にMatrixベースの通信ツールを展開しました。 / このツールはElementによって構築され、委員会自身が運用しており、主権、データ所有権、相互運用性を重視しています。 / MatrixのオープンプロトコルとElement Server Suite Proが、これらの要件を満たす成熟した実装として選ばれました。 [実務示唆: 組織内でセキュアな通信基盤を検討する際は、Matrixのようなオープンプロトコルと、データ主権や相互運用性を重視したソリューションを評価対象に含めるべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 19 Nov 2026 10:58:29 +0000</pubDate>
+      <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
+      <link>https://www.publickey1.jp/blog/26/database_hubai.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
+      <description>[Score: 88] マイクロソフトが「Microsoft Ignite 2026」で、クラウドやオンプレミスのデータベースを一元管理する「Database Hub in Fabric」を正式リリースしました。 / Azure SQL、PostgreSQL、Cosmos DB、SQL Serverなど多様なデータベースに対応し、統合データ分析基盤Microsoft Fabric上で動作します。 / AIエージェントによる運用監視の自動化機能も搭載し、リアルタイムのCPU、メモリ、ストレージトレンド追跡が可能です。 [実務示唆: 複数のデータベースを運用している企業は、Database Hubの導入を検討し、管理コスト削減と運用効率向上、AIによる監視自動化の恩恵を評価すべきです。] (Source: Publickey)</description>
+      <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
     </item>
     <item>
       <title>HardwareDx: データセンターマシン修理のための基盤グラフモデルシステム</title>
@@ -49,60 +28,11 @@
       <pubDate>Thu, 19 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>JavaScriptを実行しない機械があなたの数字を読み取る</title>
-      <link>https://dev.to/minia2a/your-numbers-are-read-by-machines-that-do-not-run-your-javascript-32ko</link>
-      <guid isPermaLink="false">https://dev.to/minia2a/your-numbers-are-read-by-machines-that-do-not-run-your-javascript-32ko</guid>
-      <description>[Score: 80] ダッシュボードの数字は、JavaScriptを実行しない機械（LLMインデクサー、クローラーなど）とブラウザのJavaScriptによって二重に書き込まれます。 / 多くの開発者はJavaScriptによる動的な表示に注力しますが、静的に書き出されたHTMLの数字はQAループがないため、古い情報になるリスクがあります。 / 本記事は、この静的コンテンツの鮮度管理における失敗モードと、その対策について解説しています。 [実務示唆: Webサイトの重要な数値がJavaScriptに依存せず静的に表示される場合、LLMやクローラー向けにその鮮度を保証するQAプロセスを構築し、情報の正確性を維持すべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 19 Nov 2026 02:44:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>マルチタブテスト: 同一SaaSレコードを二重に編集するよう同僚に依頼する</title>
-      <link>https://dev.to/urielbitton/multi-tab-testing-ask-a-peer-to-edit-the-same-saas-record-twice-2bc</link>
-      <guid isPermaLink="false">https://dev.to/urielbitton/multi-tab-testing-ask-a-peer-to-edit-the-same-saas-record-twice-2bc</guid>
-      <description>[Score: 80] この記事は、SaaSアプリケーションにおけるマルチタブテストの重要性について解説しています。 / ユーザーが同じレコードを複数のタブで開き、異なる変更を保存した場合の競合解決の振る舞いを検証するテスト計画を提示。 / 特に、一方のタブでの変更がもう一方のタブでの古いビューによって上書きされないかを確認する手順が詳細に説明されています。 [実務示唆: SaaS開発者は、マルチタブでの同時編集におけるデータ競合や上書きを防ぐためのテストシナリオを開発プロセスに組み込むべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 19 Nov 2026 14:39:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>[AWS] S3Vectorsは全文検索エンジンとしてOpenSearchの代わりになるのか？ - Qiita</title>
-      <link>https://qiita.com/kikuziro/items/cd1389f6a1601494895f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/kikuziro/items/cd1389f6a1601494895f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 75] S3Vectorsがハイブリッド検索に対応し、全文検索エンジンとしての利用可能性が検証されました。 / OpenSearchと比較し、LambdaからS3Vectorsを呼び出し、日本語アナライザーを設定して全文検索を実行する手順が示されています。 / 検証の結果、S3Vectorsは全文検索機能を持つものの、ベクトル検索が必須である点や、メタデータサイズに制限がある点など、OpenSearchとは異なる特性があることが示唆されています。 [実務示唆: S3Vectorsの全文検索機能は、OpenSearchの代替として検討可能ですが、ベクトルデータが必須である点やメタデータ制限を考慮し、ユースケースに応じた検証が推奨されます。] (Source: Qiita)</description>
-      <pubDate>Tue, 17 Nov 2026 12:55:43 +0000</pubDate>
-    </item>
-    <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
       <link>https://github.blog/news-insights/company-news/github-availability-report-october-2026/</link>
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-october-2026/</guid>
       <description>[Score: 75] GitHubは2026年10月の稼働状況レポートを公開し、可用性と信頼性向上の取り組みを報告しました。 / Azure Central USへの大幅な容量追加と障害エスカレーション経路の削減を進めました。 / しかし、書き込み停止、データ移行中の監視ギャップ、地域ネットワーク障害が発生し、容量増強と並行して安全な運用と分離、地域復旧の検証の必要性が強調されました。 [実務示唆: 大規模なサービスを運用するエンジニアは、GitHubの事例から、容量増強だけでなく、運用手順の安全性、システムの分離、災害復旧計画の定期的な検証の重要性を学び、自社システムに適用すべきです。] [GitHub: github/docs] (Source: GitHub Blog)</description>
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>リアルタイムInstagram DM自動化ダッシュボードの構築方法 (2026)</title>
-      <link>https://dev.to/peter11241342/how-to-build-a-real-time-instagram-dm-automation-dashboard-2026-1210</link>
-      <guid isPermaLink="false">https://dev.to/peter11241342/how-to-build-a-real-time-instagram-dm-automation-dashboard-2026-1210</guid>
-      <description>[Score: 75] Instagram DM自動化を導入している場合、ダッシュボードがないと現状を把握できません。 / 本ガイドでは、公式Instagram Graph APIを使用して、DMアクティビティをリアルタイムで表示するダッシュボードの構築方法を解説します。 / 会話の開始数、トリガーの発動状況、返信速度、会話の停滞箇所などを一元的に把握できます。 [実務示唆: Instagram DM自動化を運用している開発者は、公式Graph APIを活用してリアルタイムダッシュボードを構築し、DM運用状況の可視化と改善に役立てるべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 19 Nov 2026 02:45:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>Snowflake の managed access schema で COPY GRANTS 付き CLONE がなぜか初回だけ失敗した話</title>
-      <link>https://zenn.dev/finatext/articles/snowflake-managed-access-copy-grants</link>
-      <guid isPermaLink="false">https://zenn.dev/finatext/articles/snowflake-managed-access-copy-grants</guid>
-      <description>[Score: 70] Snowflakeのmanaged access schemaでCOPY GRANTS付きCLONEコマンドを初回実行した際に、権限エラーで失敗する事象が発生しました。 / 原因は、出力先に同じ名前のテーブルがない初回実行時のみ、CLONEによる権限コピーが新たな付与として扱われ、実行ロールの権限付与能力がチェックされるためでした。 / 解決策として、ジョブの実行ロールを出力先のschema ownerに設定することが安全であり、2回目以降は既存の権限を引き継ぐためチェックを受けないことが判明しました。 [実務示唆: Snowflakeのmanaged access schemaでCOPY GRANTS付きCLONEを使用する際は、初回実行時の権限エラーを避けるため、ジョブ実行ロールをschema ownerに設定することを推奨します。] (Source: Zenn)</description>
-      <pubDate>Wed, 18 Nov 2026 02:22:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>Handling Turso Platform API Discovery Delays on Cold Start in Next.js</title>
-      <link>https://dev.to/aditya_ekka_pulseroi/handling-turso-platform-api-discovery-delays-on-cold-start-in-nextjs-1fm8</link>
-      <guid isPermaLink="false">https://dev.to/aditya_ekka_pulseroi/handling-turso-platform-api-discovery-delays-on-cold-start-in-nextjs-1fm8</guid>
-      <description>[Score: 70] Next.jsのサーバーレスエッジ関数におけるコールドスタート時に、Tursoデータベースの接続確立が遅延し、エラーが発生する問題とその対処法について解説しています。 / 特にピーク時のVercelサーバーレス関数のコールドスタートで、Turso libSQLデータベースへの接続ハンドシェイクがタイムアウトする事象が確認されました。 / 記事では、トップレベルでのクライアント初期化がコールドスタート失敗の原因となることが示されています。 [実務示唆: Next.jsなどのサーバーレス環境でデータベースを利用する際、コールドスタート時の接続遅延を考慮し、接続プールの初期化タイミングやリトライ戦略を適切に設計することで、安定した動作を確保すべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 19 Nov 2026 02:45:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>ブラウザでA4用紙1枚から8ページの折りたたみ式Zineを作成</title>
-      <link>https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/</link>
-      <guid isPermaLink="false">https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/</guid>
-      <description>[Score: 65] A4用紙1枚から8ページの折りたたみ式Zineを簡単に作成できるWebアプリ「fanzines.app」が紹介されています。 / このアプリは、手動でのレイアウト作業の煩雑さを解消し、ブラウザ上で写真やテキストを配置するだけで、印刷用のPDFを生成します。 / すべての処理はブラウザ内で完結し、画像がサーバーにアップロードされることはありません。 [実務示唆: 手軽に小冊子やZineを作成したい個人や小規模プロジェクトでは、fanzines.appのようなブラウザベースのツールを活用し、印刷前のレイアウト作業を効率化することを推奨します。] (Source: Hacker News)</description>
-      <pubDate>Thu, 19 Nov 2026 13:18:11 +0000</pubDate>
     </item>
   </channel>
 </rss>

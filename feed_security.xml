@@ -5,7 +5,14 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Nov 2026 14:44:01 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 02:38:38 +0000</lastBuildDate>
+    <item>
+      <title>OpenSSL: EVP_EncodeBlock()におけるバッファオーバーフロー (CVE-2026-121481, CVSS 9.8)</title>
+      <link>https://github.com/openssl/openssl/pull/33652</link>
+      <guid isPermaLink="false">https://github.com/openssl/openssl/pull/33652</guid>
+      <description>[Score: 98] OpenSSLのEVP_EncodeBlock()関数にバッファオーバーフローの脆弱性(CVE-2026-121481)が発見されました。 / 無効な入力（NULLバッファ、負の長さなど）に対して-1を返すことで修正されます。 / この脆弱性はCVSSスコア9.8と評価されており、深刻な影響を及ぼす可能性があります。 [実務示唆: OpenSSLを使用しているシステムは、速やかにパッチを適用し、EVP_EncodeBlock()およびEVP_DecodeBlock()の利用箇所で入力値の検証を強化すべきです。] [GitHub: openssl/openssl] (Source: Hacker News)</description>
+      <pubDate>Fri, 20 Nov 2026 02:01:09 +0000</pubDate>
+    </item>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -21,67 +28,32 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>Gitのセキュリティ脆弱性が発表されました</title>
-      <link>https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</guid>
-      <description>[Score: 95] Gitプロジェクトは、6つのセキュリティ脆弱性に対処する新しいバージョンをリリースしました。 / これには、悪意のあるリポジトリを再帰的にクローンする際の任意のコード実行、意図しないファイルへの書き込み、マージやバイナリパッチ処理時のメモリ破損が含まれます。 / Git 2.56.1およびそれ以前のメンテナンスシリーズのパッチ適用済みリリースへのアップデートが推奨されます。 [実務示唆: Gitのセキュリティ脆弱性に対処するため、直ちにGit 2.56.1または使用しているメンテナンスシリーズの最新パッチ適用済みリリースにアップデートし、Gitをバンドルしているアプリケーションも更新しましょう。] [GitHub: git/git] (Source: GitHub Blog)</description>
-      <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
+      <title>Synologyセキュリティアドバイザリ</title>
+      <link>https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21</link>
+      <guid isPermaLink="false">https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21</guid>
+      <description>[Score: 90] Synologyは、複数の製品に影響を与える重大なセキュリティ脆弱性に関するアドバイザリを公開しました。 / 特にDSM 7.4、7.3、7.2.2、7.2.1、7.1、およびBeeStation OS 1.5が影響を受けます。 / ユーザーは速やかに推奨されるバージョンへのアップグレード、またはOAuth Serviceパッケージの無効化が求められています。 [実務示唆: Synology NASユーザーは、速やかにDSMを推奨バージョン（7.4.1-90080-2以上など）にアップグレードし、OAuthサービスを無効化することを検討してください。] (Source: Hacker News)</description>
+      <pubDate>Thu, 19 Nov 2026 22:13:40 +0000</pubDate>
     </item>
     <item>
-      <title>Nginxにおける認証不要のリモートコード実行の脆弱性</title>
-      <link>https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities</link>
-      <guid isPermaLink="false">https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities</guid>
-      <description>[Score: 95] Nginxに2つの重大なリモートコード実行（RCE）脆弱性（CVE-2026-123633、CVE-2026-123007）が発見されました。 / これらの脆弱性はCVSS 4.0スコア9.2と評価され、HTTP/2が有効なNginxサーバーに影響を与えます。 / 攻撃者はこれらの脆弱性を悪用してサーバーを制御し、機密データを盗んだり、ウェブサイトを改ざんしたりする可能性があります。 [実務示唆: Nginxを使用している組織は、直ちに影響を受けるデプロイメントを特定し、F5からリリースされるセキュリティアップデートを適用して、HTTP/2を無効化するなどの対策を検討してください。] [GitHub: nginx/nginx] (Source: Hacker News)</description>
-      <pubDate>Wed, 18 Nov 2026 15:19:55 +0000</pubDate>
+      <title>11月に修正されたPHPの脆弱性についてまとめてみた</title>
+      <link>https://piyolog.hatenadiary.jp/entry/2026/11/20/003148</link>
+      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/11/20/003148</guid>
+      <description>[Score: 90] 2026年11月19日、PHP開発元が4系統のセキュリティリリースを公開し、複数の脆弱性を修正しました。 / 特に深刻度CRITICALの脆弱性が7件含まれており、一部はAI支援で報告されたものです。 / 10月の修正と関連する不完全な修正や、セッション処理中の致命的エラーに関する脆弱性も含まれています。 [実務示唆: PHPを使用しているシステムでは、速やかに最新バージョンへのアップデートを適用し、特にセッション処理に関連するアプリケーションの動作を確認してください。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 19 Nov 2026 15:54:08 +0000</pubDate>
     </item>
     <item>
-      <title>「PHP」に再び“致命的”な脆弱性、日本時間19日夜にセキュリティリリースへ／サポート中の全バージョンが対象</title>
-      <link>https://forest.watch.impress.co.jp/docs/news/2157690.html</link>
-      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2157690.html</guid>
-      <description>[Score: 95] スクリプト言語「PHP」のセキュリティチームが、サポート中の全バージョンに影響する“致命的”（Critical）な脆弱性に対処するため、日本時間11月19日夜にセキュリティリリースを行うと事前告知しました。 / この脆弱性は、既定ではない構成や一般的ではないセットアップでのみ影響するとされていますが、詳細はリリースと同時に公開される予定です。 / PHPでは10月にも「PHP2Shell」と呼ばれる2件の“致命的”な脆弱性が修正されており、迅速なアップデートが強く推奨されています。 [実務示唆: PHPを使用しているシステムでは、日本時間11月19日夜に予定されているセキュリティリリース後、速やかにサポート対象のPHPバージョンを最新版にアップデートし、脆弱性への対策を講じるべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 18 Nov 2026 23:15:44 +0000</pubDate>
+      <title>Java4ShellがAVX-512 VBMI CPU上のMinecraftサーバーを脅かす</title>
+      <link>https://dev.to/guiadeti/java4shell-ameaca-servidores-minecraft-em-cpus-avx-512-vbmi-5god</link>
+      <guid isPermaLink="false">https://dev.to/guiadeti/java4shell-ameaca-servidores-minecraft-em-cpus-avx-512-vbmi-5god</guid>
+      <description>[Score: 90] Java4Shell (CVE-2026-114938) は、特定のx86-64 CPU上のOpenJDKが使用するHotSpotのBase64デコーダに影響を与える脆弱性です。 / この脆弱性は、AVX-512F、AVX-512BW、AVX-512 VBMI、BMI2の各機能を持つCPUで発生し、Minecraftサーバーなどが影響を受ける可能性があります。 / Red Hatは深刻度9.8と評価しており、修正にはJVMを17.0.21.1、21.0.13.1、25.0.5.1以降にアップデートする必要があります。 [実務示唆: お使いのサーバーがAVX-512 VBMI対応CPUを使用している場合、MinecraftサーバーのJVMバージョンを直ちに確認し、推奨される修正バージョンにアップデートしてください。] (Source: Dev.to)</description>
+      <pubDate>Fri, 20 Nov 2026 02:35:10 +0000</pubDate>
     </item>
     <item>
-      <title>nginx2root の HTTP/2 脆弱性2件を AWS 構成ごとに整理してみた</title>
-      <link>https://dev.classmethod.jp/articles/nginx-http2-rce-aws-mitigation/</link>
-      <guid isPermaLink="false">https://dev.classmethod.jp/articles/nginx-http2-rce-aws-mitigation/</guid>
-      <description>[Score: 95] nginx 1.31.9と1.30.7で修正されたHTTP/2の脆弱性CVE-2026-123007とCVE-2026-123633について解説しています。 / これらの脆弱性はHTTP/2の送信窓の計算ミスに起因し、リモートコード実行（RCE）につながる可能性があるCriticalなものです。 / 記事では、AWS環境における緩和策や修正版の入手状況についても整理されています。 [実務示唆: nginxを使用しているシステムでは、速やかにバージョンを1.31.9または1.30.7以降にアップデートし、HTTP/2を無効化するなどの緩和策を適用して脆弱性に対応すべきです。] [GitHub: nginx/nginx] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 18 Nov 2026 21:41:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>PyPI agent-framework 1.26.1–1.26.2 .pthクレデンシャル窃取マルウェアが起動リスクを生成; 影響を受ける環境を監査・隔離せよ。</title>
-      <link>https://dev.to/romdevin/pypi-agent-framework-1261-1262-pth-credential-stealer-creates-startup-risk-audit-and-isolate-41nj</link>
-      <guid isPermaLink="false">https://dev.to/romdevin/pypi-agent-framework-1261-1262-pth-credential-stealer-creates-startup-risk-audit-and-isolate-41nj</guid>
-      <description>[Score: 95] PyPIパッケージagent-frameworkのバージョン1.26.1と1.26.2に、.pthファイルに埋め込まれたクレデンシャル窃取マルウェアが含まれていました。 / このマルウェアは、パッケージインストール時にimportなしで即座に実行され、CI/CD環境やAIワーカーに深刻なリスクをもたらします。 / Pythonインタープリタの起動パス設定メカニズムが悪用され、環境変数やシークレットが窃取される可能性があります。 [実務示唆: agent-frameworkのユーザーは直ちにバージョン1.26.0以前または1.26.3以降へのダウングレード/アップグレードを行い、影響を受けた可能性のある環境の監査と隔離を徹底すべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 19 Nov 2026 02:43:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>Ruby2ßhell: 標準Railsにおける認証前RCE</title>
-      <link>https://verialabs.com/ruby2shell/</link>
-      <guid isPermaLink="false">https://verialabs.com/ruby2shell/</guid>
-      <description>[Score: 95] Ruby 2.4.0以降の複数のバージョンに、認証前のリモートコード実行（RCE）脆弱性「Ruby2ßhell」が発見されました。 / この脆弱性は、特定のシングルバイトエンコーディングにおける文字列の大文字変換処理のバッファオーバーフローに起因します。 / Railsを含むデフォルト設定のフレームワークが影響を受け、Ruby 3.3.14、3.4.13、4.0.10へのアップグレードが推奨されています。 [実務示唆: Ruby on Railsを使用している場合、直ちにRubyを修正バージョン（3.3.14、3.4.13、4.0.10）にアップグレードし、ベンダーの修正リリースを適用してください。] (Source: Hacker News)</description>
-      <pubDate>Thu, 19 Nov 2026 05:09:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>美少女ゲーム「NIKKE」経由でマルウェア感染 北海道2自治体、委託先が認める</title>
-      <link>https://www.itmedia.co.jp/news/article/2611/19/2000003351/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/19/2000003351/</guid>
-      <description>[Score: 95] 北海道の2自治体（岩見沢市、新得町）の業務再委託先が、人気ゲーム「勝利の女神：NIKKE」のPC版ランチャー経由でマルウェア「K2F」に感染しました。 / これにより、固定資産税情報や住民基本台帳データなど、最大1万件以上の個人情報が漏えいした可能性があります。 / マルウェアは感染PCを遠隔操作し、パスワードなどを盗み出す機能を持つとされており、ゲームの正規ランチャーが改ざんされたことが原因とされています。 [実務示唆: 業務PCでのゲーム利用は厳禁とし、ソフトウェアのダウンロード元や更新プログラムの信頼性を常に確認し、セキュリティ対策を徹底しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 19 Nov 2026 11:25:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>Temporary HTTP/2 Mitigation for NGINX Before Patching</title>
-      <link>https://dev.to/stark_zhuang_df5076f35c68/temporary-http2-mitigation-for-nginx-before-patching-1alp</link>
-      <guid isPermaLink="false">https://dev.to/stark_zhuang_df5076f35c68/temporary-http2-mitigation-for-nginx-before-patching-1alp</guid>
-      <description>[Score: 90] NGINXのHTTP/2フロー制御整数オーバーフロー脆弱性（CVE-2026-123007）に対する一時的な緩和策が提示されました。 / パッチ適用が遅れる場合、HTTP/2を無効にすることでこの脆弱性の悪用を阻止できます。 / これは一時的な対策であり、最終的には修正版へのアップデートが推奨されます。 [実務示唆: NGINXユーザーは、CVE-2026-123007のパッチ適用が完了するまで、HTTP/2を無効にする一時的な緩和策を検討し、速やかにアップデート計画を立てるべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 19 Nov 2026 14:40:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>六花亭、カード番号全桁＋セキュリティコード約8000件流出か　決済画面のプログラム改ざん</title>
-      <link>https://www.itmedia.co.jp/news/article/2611/19/2000003316/</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/news/article/2611/19/2000003316/</guid>
-      <description>[Score: 85] 北海道の菓子メーカー六花亭の通販サイトが不正アクセスを受け、決済画面のプログラムが改ざんされました。 / これにより、約8000件のクレジットカード情報（全桁、名義人、有効期限、セキュリティコード）が流出した可能性があります。 / 六花亭はカード情報を保存していませんが、不正プログラムにより外部送信されたとみられ、サイトは停止し調査が進められています。 [実務示唆: ECサイト運営者は、決済画面のセキュリティを定期的に監査し、第三者によるプログラム改ざんがないか厳重にチェックするとともに、顧客への注意喚起と迅速な情報公開体制を確立すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 19 Nov 2026 00:18:40 +0000</pubDate>
+      <title>I let a cloud AI audit my server logs without showing it a single real IP, username or key</title>
+      <link>https://dev.to/mediblacksand_f0ea36c53fb/i-let-a-cloud-ai-audit-my-server-logs-without-showing-it-a-single-real-ip-username-or-key-3gcp</link>
+      <guid isPermaLink="false">https://dev.to/mediblacksand_f0ea36c53fb/i-let-a-cloud-ai-audit-my-server-logs-without-showing-it-a-single-real-ip-username-or-key-3gcp</guid>
+      <description>[Score: 82] 筆者は、サーバーログをクラウドAIに監査させる際、IPアドレスやユーザー名などの機密情報を一切開示せずに分析を行いました。 / PythonスクリプトとQwenモデルを組み合わせ、ログデータを匿名化・仮名化してからAIに渡すことで、セキュリティとプライバシーを確保しています。 / AIはログの書き換えは行わず、匿名化されたデータに基づいて分析結果を生成し、そのプロセスは手動で検証されました。 [実務示唆: 機密情報を含むログをAIで分析する際は、本記事の手法を参考に、厳格なデータ匿名化・仮名化プロセスを導入し、セキュリティリスクを最小限に抑えるべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 20 Nov 2026 02:35:23 +0000</pubDate>
     </item>
   </channel>
 </rss>
