@@ -76,7 +76,7 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 
 ### 4.2 重複除去
 
-`normalize_url()` で `scheme://netloc/path`（クエリ・フラグメント除去、小文字化、末尾 `/` 除去）に正規化し、最初に出現した記事を保持する。
+`normalize_url()` で `scheme://netloc/path`（末尾 `/` 除去・小文字化・トラッキングパラメータ等の除去、識別用パラメータ `id` / `v` / `p` は保持）に正規化し、最初に出現した記事を保持する。
 
 ### 4.3 記事本文の取得
 
@@ -91,7 +91,7 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 - 出力（記事ごと）: `id` / `title`（英語なら日本語訳）/ `summary`（3 行）/ `tags`（3 個）/ `category`（固定リストから 1 つ）/ `score`（0–100、クランプ済み）/ `score_reason`
 - カテゴリ固定リスト: AI・機械学習 / Web・フロントエンド / バックエンド・インフラ / セキュリティ / プログラミング言語 / モバイル / ハードウェア・ガジェット / ビジネス・業界動向 / その他
 - **解析状態は `analysis_status` フィールド**（`ok` / `error` / `skipped`）で管理（文字列マッチによる判定は廃止）。
-- レート制限対策: リクエスト間 4 秒、429/5xx は指数バックオフ（上限 30 秒）で最大 3 回リトライ。
+- レート制限対策: リクエスト間 4 秒、429/5xx は指数バックオフ（上限 60 秒、429 の `Retry-After` / `retryDelay` は最大 90 秒まで尊重）で最大 4 回試行（初回 + リトライ 3 回）。
 - 全体タイムアウト 840 秒。超過分は `analysis_status: "skipped"` で埋める。
 
 ### 4.5 HOT スコアリング
@@ -116,6 +116,12 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
   "success_count": 43,
   "error_count": 2,            // analysis_status が error/skipped の合計
   "gemini_model": "gemini-2.5-flash",
+  "briefing": {                // AI デイリーブリーフィング（朝刊/夕刊）
+    "edition": "朝刊",
+    "generated_at": "2026-07-05T07:58:33+09:00",
+    "summary_lines": ["…", "…", "…"],
+    "focus_tags": ["AI", "LLM"]
+  },
   "articles": [
     {
       "title": "…",             // 日本語化済みタイトル
@@ -124,6 +130,8 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
       "published": "…",         // ISO8601 (UTC) に正規化済み
       "hn_score": 48,           // HN のみ
       "hn_comments": 4,         // HN のみ
+      "hatena_count": 12,       // はてなブックマーク件数
+      "reading_min": 4,         // 推定読了時間（分）
       "summary": "1行目\n2行目\n3行目",
       "actionable_takeaway": "エンジニア実務への影響・実践的示唆",
       "github_repo": "owner/repo", // 該当記事のみ
@@ -133,7 +141,10 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
       "score_reason": "…",
       "analysis_status": "ok",  // ok | error | skipped
       "is_hot": false,
-      "topic_group": 1,         // 関連記事グループID（グループ所属時のみ）
+      "is_prev_seen": false,    // 過去アーカイブ既出フラグ
+      "first_seen": "…",        // 初回観測時刻 (JST)
+      "new_at": "…",            // 初回解析成功時刻 (JST)
+      "topic_group": 1,         // 関連記事グループID（search_index.json では YYYY-MM-DD#ID に名前空間化）
       "topic_size": 3           // グループ内の記事数（同上）
     }
   ]
@@ -155,11 +166,11 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 
 ### 4.10 通知（Discord / Slack / LINE）
 
-`analysis_status == "ok"` かつ score ≥ 80 の上位 5 件を対象に、設定済みのチャネルすべてへ送信（絵文字不使用）:
+`analysis_status == "ok"` かつ `new_at == generated_at`（今回新着）かつ score ≥ 80 の上位 5 件を対象に、設定済みのチャネルすべてへ送信（絵文字不使用）。`--notify-only` 実行時は `is_generated_today` により `data.json` が当日（JST）生成分であることを検証し、全ソース取得 0 件時は異常終了（`sys.exit(1)`）して前日分による再通知や無言失敗を防ぐ:
 
 | チャネル | 環境変数 | 形式 |
 |---|---|---|
-| Discord | `DISCORD_WEBHOOK_URL` | embeds（スコアで色分け: 90+ 赤 / 80+ 金） |
+| Discord | `DISCORD_WEBHOOK_URL` | embeds（スコアで色分け: 90+ 赤 / 80+ 金、総文字数上限ガード付き） |
 | Slack | `SLACK_WEBHOOK_URL` | Block Kit（mrkdwn セクション） |
 | LINE | `LINE_CHANNEL_ACCESS_TOKEN` | Messaging API broadcast（テキスト、上位 5 件）※LINE Notify は 2025 年 3 月終了のため Messaging API を使用 |
 
@@ -179,9 +190,9 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 | GIZMODO Japan | `www.gizmodo.jp/index.xml` |
 
 1. **収集**: 各フィード先頭 10 件のうち公開 48 時間以内のもの。
-2. **新着抽出**: `gadgets.json` で解析済み（`analysis_status: ok`）の URL は除外。前回失敗した記事は再解析。1 回あたり最大 48 件。
+2. **新着抽出・再解析**: `gadgets.json` で解析済み（`analysis_status: ok`）の URL は除外。前回失敗した記事（直近 3 日以内）は 48 時間窓から外れた分も含め残余枠（最大 18 件）で再解析。1 回あたり合計最大 48 件。
 3. **解析**: 6 件/リクエストのバッチで `title` / `summary` / `product_name` / `brand` / `category`（スマートフォン・PC・タブレット・ウェアラブル・オーディオ・カメラ・ゲーム・スマートホーム・その他）/ `is_new_product`（新製品の発表・発売・予約開始なら true。レビュー・セール・アップデート等は false）/ `price` / `release_date` / `score`（注目度）/ `score_reason` を生成。解析に初めて成功した記事に `new_at`（その実行の `generated_at`）を付与。
-4. **保存**: `gadgets.json`（`schema_version: 1`、`generated_at`、`items` 新着順）。`first_seen` から 30 日を超えた記事は削除。
+4. **保存**: `gadgets.json`（`schema_version: 1`、`generated_at`、`items` 新着順）。`analysis_status == "ok"` の記事は `first_seen` から 30 日、未解析失敗記事（`error` / `skipped`）は 3 日を超えたものを削除。
 5. **通知**: `new_at == generated_at` かつ `is_new_product` かつ `score >= 60` の記事を注目度順に最大 **3 件**（`product_name` を正規化して同一製品は 1 件に集約）。IT ニュースとは別メッセージで Discord / Slack / LINE に送信し、該当 0 件なら送らない。同日に再実行しても新着が無いため二重通知にならない。`generated_at` が今日（JST）でない `gadgets.json`（収集失敗日にリポジトリに残る前日分）からは通知しない。
 
 ## 5. フロントエンド仕様（index.html）
@@ -232,13 +243,17 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 | `itinfohub_briefing_open` | デイリーブリーフィング展開状態（bool） |
 | `itinfohub_notify` | 通知オプトイン（bool） |
 | `itinfohub_notified` | 通知済み URL の配列（上限 500） |
+| `itinfohub_density` | 表示密度（`"standard"` / `"compact"`） |
+| `itinfohub_gadget_favorites` | ガジェットお気に入り URL の配列 |
+| `itinfohub_gadget_read` | ガジェット既読 URL の配列（上限 3,000） |
+| `itinfohub_gadget_group` | ガジェット製品名寄せ表示フラグ（bool） |
 | `itinfohub_gadget_compare` | ガジェット比較選択 URL の配列（最大 4） |
 
 ### 5.4 PWA / Service Worker
 
-- キャッシュ名 `itinfohub-v10`。
-- **HTML（ナビゲーション）・JSON・XML**: Network First（クエリ文字列を除いた正規化 URL キーでキャッシュ管理） — フロント更新・データ更新が即時反映され、オフライン時のみキャッシュを返す。
-- その他静的アセット: Cache First。
+- キャッシュ名 `itinfohub-v11`。
+- **HTML（ナビゲーション）・JSON・XML**: Network First（クエリ文字列を除いた正規化 URL キーでキャッシュ管理、オフラインかつ未キャッシュ時は 503 応答。大容量の `archive/search_index.json` および個別 `archive/YYYY-MM-DD.json` はキャッシュ肥大防止のためキャッシュ対象外） — フロント更新・データ更新が即時反映され、オフライン時のみキャッシュを返す。
+- その他静的アセット: Cache First（オフライン時 503 フォールバック）。非 `GET` や非 `http(s)` リクエストは素通り。
 
 ### 5.5 最新ガジェット情報ページ（gadget.html）
 

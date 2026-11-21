@@ -214,3 +214,33 @@ def test_fetch_gadget_feeds_parallel_preserves_order(monkeypatch):
     assert [it["title"] for it in items] == ["Item A", "Item B"]
     assert all(timeout == 15 for _, timeout in calls)
 
+
+def test_merge_prunes_old_errors_earlier_than_ok_items():
+    now = datetime(2026, 11, 21, 12, 0, tzinfo=JST)
+    existing = [
+        {"url": "https://x.com/old-ok", "first_seen": (now - timedelta(days=10)).isoformat(), "analysis_status": "ok"},
+        {"url": "https://x.com/old-err", "first_seen": (now - timedelta(days=4)).isoformat(), "analysis_status": "error"},
+        {"url": "https://x.com/recent-err", "first_seen": (now - timedelta(days=1)).isoformat(), "analysis_status": "error"},
+    ]
+    items = gadget.merge_gadgets(existing, [], RUN_AT, now=now)
+    urls = {it["url"] for it in items}
+    assert "https://x.com/old-ok" in urls
+    assert "https://x.com/old-err" not in urls
+    assert "https://x.com/recent-err" in urls
+
+
+def test_collect_retry_gadgets_requeues_recent_errors_with_cap():
+    now = datetime(2026, 11, 21, 12, 0, tzinfo=JST)
+    existing = [
+        {"url": "https://x.com/ok", "first_seen": (now - timedelta(days=1)).isoformat(), "analysis_status": "ok", "published": "2026-11-20T10:00:00+00:00"},
+        {"url": "https://x.com/err-old", "first_seen": (now - timedelta(days=5)).isoformat(), "analysis_status": "error", "published": "2026-11-16T10:00:00+00:00"},
+        {"url": "https://x.com/err-1", "first_seen": (now - timedelta(days=1)).isoformat(), "analysis_status": "error", "published": "2026-11-20T11:00:00+00:00"},
+        {"url": "https://x.com/skip-2", "first_seen": (now - timedelta(days=1)).isoformat(), "analysis_status": "skipped", "published": "2026-11-20T12:00:00+00:00"},
+        {"url": "https://x.com/err-3", "first_seen": (now - timedelta(days=1)).isoformat(), "analysis_status": "error", "published": "2026-11-20T09:00:00+00:00"},
+    ]
+    already_queued = [{"url": "https://x.com/err-1?utm_source=rss"}]
+    retries = gadget.collect_retry_gadgets(existing, already_queued, now=now, max_retry=1)
+    assert [r["url"] for r in retries] == ["https://x.com/skip-2"]
+    assert "analysis_status" not in retries[0]
+
+

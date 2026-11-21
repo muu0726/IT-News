@@ -99,6 +99,9 @@ python -m http.server 8000
 ├── data.json                  # 最新の収集データ（自動生成・スコア降順）
 ├── gadgets.json               # ガジェット収集データ（直近30日分・自動生成）
 ├── feed.xml                   # ITニュース RSS 2.0 フィード（スコア上位20件・自動生成）
+├── feed_ai.xml                # AI・機械学習 RSS 2.0 フィード（自動生成）
+├── feed_security.xml          # セキュリティ RSS 2.0 フィード（自動生成）
+├── feed_web.xml               # Web & インフラ RSS 2.0 フィード（自動生成）
 ├── gadget_feed.xml            # ガジェット新製品 RSS 2.0 フィード（新製品上位20件・自動生成）
 ├── digest.json                # 週間ダイジェスト（毎週日曜に自動生成）
 ├── archive/                   # 日付別アーカイブ（自動生成・180日保持）
@@ -109,6 +112,7 @@ python -m http.server 8000
 ├── docs/
 │   └── SPEC.md                # 詳細仕様書
 ├── .github/workflows/
+│   ├── deploy.yml             # main プッシュ時・手動実行時の GitHub Pages デプロイ
 │   └── update.yml             # GitHub Actions 定期実行 & Pages デプロイ
 └── README.md                  # 本ファイル
 ```

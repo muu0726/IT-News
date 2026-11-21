@@ -65,7 +65,9 @@ GADGET_FETCH_PER_FEED = 10    # フィードごとの取得上限（ケータイ
 GADGET_MAX_AGE_HOURS = 48     # この時間より古い記事は収集しない
 GADGET_MAX_ANALYZE = 48       # 1回の実行で解析する最大件数（超過分は次回）
 GADGET_TIMEOUT_SEC = 360      # 解析の全体タイムアウト
-GADGET_KEEP_DAYS = 30         # gadgets.json の保持日数
+GADGET_KEEP_DAYS = 30         # gadgets.json の保持日数（成功記事）
+GADGET_ERROR_KEEP_DAYS = 3    # 解析失敗記事の保持日数（再解析猶予）
+GADGET_RETRY_MAX = 18         # 1回の実行で再解析する過去の失敗記事上限
 
 GADGET_NOTIFY_MAX = 3
 GADGET_NOTIFY_SCORE = 60
@@ -191,6 +193,60 @@ def select_new_articles(fetched: list[dict], existing_items: list[dict]) -> list
         if it.get("analysis_status") == "ok"
     }
     return [a for a in fetched if normalize_url(a.get("url", "")) not in analyzed_ok]
+
+
+def collect_retry_gadgets(
+    existing_items: list[dict],
+    already_queued: list[dict],
+    now: datetime | None = None,
+    max_retry: int = GADGET_RETRY_MAX,
+) -> list[dict]:
+    """直近の実行で失敗 (error/skipped) し、今回フィードから外れた記事を再解析対象として抽出する"""
+    if max_retry <= 0:
+        return []
+    now = now or datetime.now(JST)
+    cutoff = now - timedelta(days=GADGET_ERROR_KEEP_DAYS)
+    queued_norms = {
+        normalize_url(a.get("url", ""))
+        for a in already_queued
+        if normalize_url(a.get("url", ""))
+    }
+    candidates = [
+        it for it in existing_items
+        if it.get("analysis_status") in ("error", "skipped")
+    ]
+    candidates.sort(
+        key=lambda x: x.get("published") or x.get("first_seen") or "",
+        reverse=True,
+    )
+    retries: list[dict] = []
+    for it in candidates:
+        if len(retries) >= max_retry:
+            break
+        norm = normalize_url(it.get("url", ""))
+        if not norm or norm in queued_norms:
+            continue
+        try:
+            fs = it.get("first_seen", "")
+            if fs:
+                fs_dt = datetime.fromisoformat(str(fs).replace("Z", "+00:00"))
+                if fs_dt.tzinfo is None:
+                    fs_dt = fs_dt.replace(tzinfo=JST)
+                if fs_dt < cutoff:
+                    continue
+        except ValueError:
+            pass
+        queued_norms.add(norm)
+        item = {
+            "title": it.get("title", ""),
+            "url": it.get("url", ""),
+            "source": it.get("source", ""),
+            "published": it.get("published", ""),
+        }
+        if it.get("first_seen"):
+            item["first_seen"] = it["first_seen"]
+        retries.append(item)
+    return retries
 
 
 # ---------------------------------------------------------------------------
@@ -347,12 +403,19 @@ def merge_gadgets(existing_items: list[dict], analyzed: list[dict],
         art["first_seen"] = merged.get(key, {}).get("first_seen") or run_at
         merged[key] = art
 
-    cutoff = now - timedelta(days=GADGET_KEEP_DAYS)
+    ok_cutoff = now - timedelta(days=GADGET_KEEP_DAYS)
+    err_cutoff = now - timedelta(days=GADGET_ERROR_KEEP_DAYS)
     kept = []
     for it in merged.values():
+        cutoff = ok_cutoff if it.get("analysis_status") == "ok" else err_cutoff
         try:
-            if datetime.fromisoformat(it.get("first_seen", "")) < cutoff:
-                continue
+            fs_str = str(it.get("first_seen", ""))
+            if fs_str:
+                fs_dt = datetime.fromisoformat(fs_str.replace("Z", "+00:00"))
+                if fs_dt.tzinfo is None:
+                    fs_dt = fs_dt.replace(tzinfo=JST)
+                if fs_dt < cutoff:
+                    continue
         except ValueError:
             pass
         kept.append(it)
@@ -601,7 +664,8 @@ def send_gadget_notifications(data: dict) -> None:
 # メイン
 # ---------------------------------------------------------------------------
 def collect() -> dict:
-    run_at = datetime.now(JST).isoformat()
+    now = datetime.now(JST)
+    run_at = now.isoformat()
     data = load_gadgets()
     existing = data["items"]
 
@@ -613,12 +677,20 @@ def collect() -> dict:
         print(f"[INFO] Limiting analysis to {GADGET_MAX_ANALYZE} newest (rest next run)")
         targets.sort(key=lambda a: a.get("published", ""), reverse=True)
         targets = targets[:GADGET_MAX_ANALYZE]
+    else:
+        remaining = GADGET_MAX_ANALYZE - len(targets)
+        retries = collect_retry_gadgets(
+            existing, targets, now=now, max_retry=min(GADGET_RETRY_MAX, remaining)
+        )
+        if retries:
+            print(f"[INFO] Re-queueing {len(retries)} failed gadget articles for retry")
+            targets.extend(retries)
 
     if targets:
         fetch_article_bodies(targets)
         analyze_gadgets(targets, run_at)
 
-    items = merge_gadgets(existing, targets, run_at)
+    items = merge_gadgets(existing, targets, run_at, now=now)
     save_gadgets(items, run_at)
     generate_gadget_rss_feed(items)
     return load_gadgets()

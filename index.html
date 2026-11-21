@@ -2844,7 +2844,7 @@
           filtered = filtered.filter((a) => (a.tags || []).some((t) => t === currentTagFilter));
         }
         if (currentGroupFilter !== null) {
-          filtered = filtered.filter((a) => a.topic_group === currentGroupFilter);
+          filtered = filtered.filter((a) => a.topic_group != null && String(a.topic_group) === String(currentGroupFilter));
         }
         if (favFilterActive) {
           filtered = filtered.filter((a) => isFavorited(a.url));
@@ -2866,7 +2866,7 @@
         const collapsedList = [];
         const groupRepMap = new Map();
         filtered.forEach((art) => {
-          const gid = art.topic_group;
+          const gid = art.topic_group != null ? String(art.topic_group) : null;
           if (gid != null && (art.topic_size || 0) > 1) {
             if (!groupRepMap.has(gid)) {
               groupRepMap.set(gid, art);
@@ -2954,7 +2954,7 @@
           ? `<div class="score-reason-box">${esc(art.score_reason)}</div>`
           : '';
 
-        const children = (art.topic_group != null && threadChildrenMap.get(art.topic_group)) || [];
+        const children = (art.topic_group != null && threadChildrenMap.get(String(art.topic_group))) || [];
         const groupBadge = (art.topic_size || 0) > 1
           ? `<span class="badge badge-group" data-idx="${i}" title="同じ話題の記事を絞り込む">関連 ${art.topic_size}件</span>`
           : '';
@@ -3658,21 +3658,48 @@
       }
 
       // ── Global (all-archive) search (B-1: single index file with fallback) ──
+      function namespaceTopicGroup(art, fallbackDate = '') {
+        if (!art || art.topic_group == null) return art;
+        const rawGroup = String(art.topic_group);
+        if (rawGroup.includes('#')) return art;
+        if (fallbackDate) {
+          return { ...art, topic_group: `${fallbackDate}#${rawGroup}` };
+        }
+        const pubDate = String(art.published || '').slice(0, 10);
+        if (/^\d{4}-\d{2}-\d{2}$/.test(pubDate)) {
+          return { ...art, topic_group: `${pubDate}#${rawGroup}` };
+        }
+        const copy = { ...art };
+        delete copy.topic_group;
+        delete copy.topic_size;
+        return copy;
+      }
+
       async function ensureGlobalArticles() {
         $('#statScopeWrap').style.display = '';
         if (globalArticles) return;
         $('#statScope').textContent = '全期間インデックスを読み込み中…';
+        const todayDate = /^\d{4}-\d{2}-\d{2}/.test(latestGeneratedAt || '')
+          ? latestGeneratedAt.slice(0, 10)
+          : 'today';
 
         // Try unified lightweight index first (1 request instead of N archive requests)
         const idxData = await fetchData('archive/search_index.json');
         if (idxData && Array.isArray(idxData.articles)) {
           const seen = new Set();
           const merged = [];
-          [...allArticles, ...idxData.articles].forEach((a) => {
+          allArticles.forEach((a) => {
             const key = normalizeArticleUrl(a.url);
             if (!key || !seen.has(key)) {
               seen.add(key);
-              merged.push(a);
+              merged.push(namespaceTopicGroup(a, todayDate));
+            }
+          });
+          idxData.articles.forEach((a) => {
+            const key = normalizeArticleUrl(a.url);
+            if (!key || !seen.has(key)) {
+              seen.add(key);
+              merged.push(namespaceTopicGroup(a, ''));
             }
           });
           globalArticles = merged;
@@ -3685,12 +3712,19 @@
         const results = await Promise.all(archiveIndex.map((fn) => fetchArchive(fn)));
         const seen = new Set();
         const merged = [];
-        [{ articles: allArticles }, ...results].forEach((data) => {
-          (data?.articles || []).forEach((a) => {
+        const buckets = [
+          { date: todayDate, articles: allArticles },
+          ...results.map((data, idx) => ({
+            date: archiveIndex[idx].replace('.json', ''),
+            articles: data?.articles || [],
+          })),
+        ];
+        buckets.forEach((bucket) => {
+          bucket.articles.forEach((a) => {
             const key = normalizeArticleUrl(a.url);
             if (!key || !seen.has(key)) {
               seen.add(key);
-              merged.push(a);
+              merged.push(namespaceTopicGroup(a, bucket.date));
             }
           });
         });
@@ -3705,10 +3739,14 @@
           await ensureGlobalArticles();
           buildSourceTabs(currentDataset());
           buildCategorySelect(currentDataset());
-        } else if (!favFilterActive) {
-          $('#statScopeWrap').style.display = 'none';
-          buildSourceTabs(allArticles);
-          buildCategorySelect(allArticles);
+        } else {
+          currentGroupFilter = null;
+          activeGroupFilter.classList.remove('visible');
+          if (!favFilterActive) {
+            $('#statScopeWrap').style.display = 'none';
+            buildSourceTabs(allArticles);
+            buildCategorySelect(allArticles);
+          }
         }
         renderArticles();
       }
@@ -3925,21 +3963,60 @@
         return { daily, topTags, sources, categories };
       }
 
+      async function ensureTrendTargetAvailable(predicate) {
+        const ds = currentDataset();
+        if (ds.some(predicate)) return ds;
+        const wasGlobal = globalSearchActive;
+        if (!globalSearchActive) {
+          globalSearchActive = true;
+          globalSearchBtn.classList.add('active');
+        }
+        await ensureGlobalArticles();
+        const expanded = currentDataset();
+        if (expanded.some(predicate)) {
+          buildSourceTabs(expanded);
+          buildCategorySelect(expanded);
+          return expanded;
+        }
+        if (!wasGlobal) {
+          globalSearchActive = false;
+          globalSearchBtn.classList.remove('active');
+          if (!favFilterActive) $('#statScopeWrap').style.display = 'none';
+        }
+        return null;
+      }
+
       function renderTrendCharts() {
         if (!trendData) return;
         renderLineChart($('#chartDaily'), trendData.daily, '--viz-series-1');
-        renderHBarChart($('#chartTags'), trendData.topTags, '--viz-series-1', (tag) => {
+        renderHBarChart($('#chartTags'), trendData.topTags, '--viz-series-1', async (tag) => {
+          const ds = await ensureTrendTargetAvailable((a) => (a.tags || []).includes(tag));
+          if (!ds) {
+            showToast(`タグ「${tag}」に一致する記事が見つかりませんでした`);
+            return;
+          }
           setTagFilter(tag);
           showToast(`タグ「${tag}」で絞り込みました`);
         });
-        renderHBarChart($('#chartSources'), trendData.sources, '--viz-series-2', (src) => {
+        renderHBarChart($('#chartSources'), trendData.sources, '--viz-series-2', async (src) => {
+          const ds = await ensureTrendTargetAvailable((a) => (a.source || '不明') === src);
+          if (!ds) {
+            showToast(`ソース「${src}」の記事が見つかりませんでした`);
+            return;
+          }
           currentSourceFilter = src;
-          buildSourceTabs(currentDataset());
+          buildSourceTabs(ds);
           renderArticles();
           showToast(`ソース「${src}」で絞り込みました`);
         });
-        renderHBarChart($('#chartCategories'), trendData.categories, '--viz-series-3', (cat) => {
+        renderHBarChart($('#chartCategories'), trendData.categories, '--viz-series-3', async (cat) => {
+          const ds = await ensureTrendTargetAvailable((a) => (a.category || 'その他') === cat);
+          if (!ds) {
+            showToast(`カテゴリ「${cat}」の記事が見つかりませんでした`);
+            return;
+          }
           currentCategoryFilter = cat;
+          buildCategorySelect(ds);
           categorySelect.value = cat;
           renderArticles();
           showToast(`カテゴリ「${cat}」で絞り込みました`);
@@ -4167,13 +4244,32 @@
 
       archiveSelect.addEventListener('change', async (e) => {
         const file = e.target.value || 'data.json';
+        if (globalSearchActive) {
+          globalSearchActive = false;
+          globalSearchBtn.classList.remove('active');
+          if (!favFilterActive) $('#statScopeWrap').style.display = 'none';
+        }
+        currentGroupFilter = null;
+        activeGroupFilter.classList.remove('visible');
         cardList.innerHTML = `
           <div class="state-msg">
             <div class="spinner"></div>
             <div class="title">読み込み中…</div>
           </div>`;
         const data = await fetchData(file);
-        if (data) applyData(data);
+        if (!data) {
+          cardList.innerHTML = `
+            <div class="state-msg">
+              <div class="state-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <div class="title">データの読み込みに失敗しました</div>
+              <div class="desc">${esc(file)} を読み込めませんでした</div>
+            </div>`;
+          showToast('アーカイブの読み込みに失敗しました');
+          return;
+        }
+        applyData(data);
       });
 
       favFilterBtn.addEventListener('click', async () => {

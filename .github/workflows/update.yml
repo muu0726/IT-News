@@ -130,7 +130,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          sleep 5
+          sleep 10
           python gadget.py --no-notify
 
       - name: 通知用データを保存

@@ -423,9 +423,9 @@ def validate_analysis_item(item) -> bool:
             return False
     if not isinstance(item["tags"], list):
         return False
-    if not isinstance(item["score"], (int, float)):
+    if not isinstance(item["score"], (int, float)) or isinstance(item["score"], bool):
         return False
-    if not isinstance(item["id"], int):
+    if not isinstance(item["id"], int) or isinstance(item["id"], bool):
         return False
     return True
 
@@ -462,7 +462,11 @@ def _fetch_one_hn_item(sid: int) -> dict | None:
     item_resp = safe_get(HN_ITEM_URL.format(sid))
     if not item_resp:
         return None
-    item = item_resp.json()
+    try:
+        item = item_resp.json()
+    except ValueError as e:
+        print(f"[WARN] Hacker News item {sid} JSON parse failed: {e}")
+        return None
     if not isinstance(item, dict):
         return None
     return {
@@ -484,7 +488,15 @@ def fetch_hackernews() -> list[dict]:
     if not resp:
         return []
 
-    story_ids = resp.json()[:HN_FETCH_COUNT]
+    try:
+        raw_ids = resp.json()
+    except ValueError as e:
+        print(f"[WARN] Hacker News topstories JSON parse failed: {e}")
+        return []
+    if not isinstance(raw_ids, list):
+        print("[WARN] Hacker News topstories returned unexpected payload")
+        return []
+    story_ids = raw_ids[:HN_FETCH_COUNT]
     if not story_ids:
         return []
 
@@ -1211,16 +1223,27 @@ def analyze_with_gemini(
 def apply_hot_scoring(articles: list[dict]) -> list[dict]:
     """複数ソースに出現する URL を検知し、スコア加算 & is_hot フラグ付与"""
     url_map: dict[str, list[int]] = {}
+    url_sources: dict[str, set[str]] = {}
+    has_sources = False
     for idx, art in enumerate(articles):
         norm = normalize_url(art.get("url", ""))
-        if norm:
-            url_map.setdefault(norm, []).append(idx)
+        if not norm:
+            continue
+        url_map.setdefault(norm, []).append(idx)
+        src = str(art.get("source") or "").strip()
+        if src:
+            has_sources = True
+            url_sources.setdefault(norm, set()).add(src)
 
-    hot_urls = {url for url, indices in url_map.items() if len(indices) > 1}
+    if has_sources:
+        hot_urls = {url for url, srcs in url_sources.items() if len(srcs) >= 2}
+    else:
+        hot_urls = {url for url, indices in url_map.items() if len(indices) > 1}
 
     for art in articles:
         norm = normalize_url(art.get("url", ""))
-        if norm in hot_urls:
+        status = art.get("analysis_status", "ok")
+        if norm in hot_urls and status not in ("error", "skipped"):
             art["is_hot"] = True
             art["score"] = min(art.get("score", 50) + SCORE_HOT_BONUS, SCORE_MAX)
         else:
@@ -1251,6 +1274,7 @@ def fetch_embeddings(texts: list[str], api_key: str) -> list[list[float]] | None
     """Gemini batchEmbedContents で埋め込みベクトルを一括取得する（上限100件対策でチャンク分割）"""
     url = GEMINI_EMBED_URL.format(model=GEMINI_EMBED_MODEL, key=api_key)
     all_values: list[list[float]] = []
+    max_attempts = 4  # 初回 + 最大3回リトライ
     for i in range(0, len(texts), EMBED_BATCH_SIZE):
         chunk = texts[i:i + EMBED_BATCH_SIZE]
         payload = {
@@ -1263,19 +1287,44 @@ def fetch_embeddings(texts: list[str], api_key: str) -> list[list[float]] | None
                 for t in chunk
             ]
         }
-        try:
-            resp = requests.post(url, json=payload, timeout=120)
-            if resp.status_code != 200:
+        chunk_values: list[list[float]] | None = None
+        for attempt in range(1, max_attempts + 1):
+            try:
+                resp = requests.post(url, json=payload, timeout=120)
+                if resp.status_code == 200:
+                    embeddings = resp.json().get("embeddings", [])
+                    if len(embeddings) != len(chunk):
+                        print("[WARN] Embedding count mismatch")
+                        return None
+                    chunk_values = [e.get("values", []) for e in embeddings]
+                    break
+                if resp.status_code == 429 and attempt < max_attempts:
+                    exp_wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
+                    ra = _parse_retry_after(resp)
+                    base_wait = max(exp_wait, min(ra + 1.0, 90.0)) if ra is not None else exp_wait
+                    wait = base_wait + random.uniform(0, 2.0)
+                    print(f"[WARN] Embedding 429 (attempt {attempt}/{max_attempts}), waiting {wait:.1f}s ...")
+                    time.sleep(wait)
+                    continue
+                if resp.status_code >= 500 and attempt < max_attempts:
+                    wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC) + random.uniform(0, 2.0)
+                    print(f"[WARN] Embedding {resp.status_code} (attempt {attempt}/{max_attempts}), waiting {wait:.1f}s ...")
+                    time.sleep(wait)
+                    continue
                 print(f"[WARN] Embedding API returned {resp.status_code}: {resp.text[:120]}")
                 return None
-            embeddings = resp.json().get("embeddings", [])
-            if len(embeddings) != len(chunk):
-                print("[WARN] Embedding count mismatch")
+            except (requests.RequestException, ValueError) as e:
+                print(f"[WARN] Embedding request failed (attempt {attempt}/{max_attempts}): {e}")
+                if attempt < max_attempts:
+                    wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
+                    time.sleep(wait)
+                    continue
                 return None
-            all_values.extend(e.get("values", []) for e in embeddings)
-        except requests.RequestException as e:
-            print(f"[WARN] Embedding request failed: {e}")
+        if chunk_values is None:
             return None
+        all_values.extend(chunk_values)
+        if i + EMBED_BATCH_SIZE < len(texts):
+            time.sleep(GEMINI_SLEEP_SEC)
     return all_values
 
 
@@ -1363,6 +1412,15 @@ def pick_top_articles(articles: list[dict]) -> list[dict]:
     )[:NOTIFY_TOP_N]
 
 
+def _embed_char_count(embed: dict) -> int:
+    total = len(str(embed.get("title", ""))) + len(str(embed.get("description", "")))
+    footer = embed.get("footer") or {}
+    total += len(str(footer.get("text", "")))
+    for f in embed.get("fields", []):
+        total += len(str(f.get("name", ""))) + len(str(f.get("value", "")))
+    return total
+
+
 def send_discord_notification(articles: list[dict]) -> None:
     """スコア上位の重要記事を Discord Webhook で通知"""
     webhook_url = os.environ.get("DISCORD_WEBHOOK_URL", "")
@@ -1376,35 +1434,41 @@ def send_discord_notification(articles: list[dict]) -> None:
         return
 
     embeds = []
+    total_chars = 0
     for art in top_articles:
         score = art.get("score", 0)
         color = 0xFFD700 if score >= 80 else 0x8E8E93
         if score >= 90:
             color = 0xFF4500
 
-        tags_str = " / ".join(art.get("tags", []))
+        tags_str = (" / ".join(art.get("tags", [])))[:256]
         hot_prefix = "[HOT] " if art.get("is_hot") else ""
 
         fields = [
             {"name": "Score", "value": str(score), "inline": True},
             {"name": "Tags", "value": tags_str or "-", "inline": True},
-            {"name": "Source", "value": art.get("source", ""), "inline": True},
+            {"name": "Source", "value": str(art.get("source", "") or "-")[:256], "inline": True},
         ]
         if art.get("github_repo"):
-            fields.append({"name": "GitHub", "value": f"[{art['github_repo']}](https://github.com/{art['github_repo']})", "inline": True})
+            fields.append({"name": "GitHub", "value": f"[{art['github_repo']}](https://github.com/{art['github_repo']})"[:1024], "inline": True})
         if art.get("actionable_takeaway"):
-            fields.append({"name": "実務ポイント", "value": art["actionable_takeaway"][:1024], "inline": False})
-        fields.append({"name": "Reason", "value": art.get("score_reason", "")[:1024], "inline": False})
+            fields.append({"name": "実務ポイント", "value": str(art["actionable_takeaway"])[:500], "inline": False})
+        fields.append({"name": "Reason", "value": (str(art.get("score_reason", ""))[:500] or "-"), "inline": False})
 
-        embeds.append({
+        embed = {
             "title": f"{hot_prefix}{art.get('title', 'No Title')}"[:256],
             "url": art.get("url", ""),
             "color": color,
-            "description": art.get("summary", "").replace("\\n", "\n"),
+            "description": str(art.get("summary", "")).replace("\\n", "\n")[:800],
             "fields": fields,
             "footer": {"text": "IT Info Collector"},
             "timestamp": datetime.now(timezone.utc).isoformat(),
-        })
+        }
+        embed_len = _embed_char_count(embed)
+        if embeds and total_chars + embed_len > 5500:
+            break
+        embeds.append(embed)
+        total_chars += embed_len
 
     payload = {
         "username": "IT Info Collector",
@@ -1883,6 +1947,7 @@ def build_search_index(archive_dir: str = ARCHIVE_DIR, out_file: str | None = No
         "reading_min", "is_prev_seen", "actionable_takeaway", "github_repo",
     )
     for fn in date_files:
+        date_prefix = fn[:-5]
         fpath = os.path.join(archive_dir, fn)
         try:
             with open(fpath, encoding="utf-8") as f:
@@ -1895,6 +1960,8 @@ def build_search_index(archive_dir: str = ARCHIVE_DIR, out_file: str | None = No
                 continue
             seen.add(norm)
             compact = {k: art[k] for k in keep_keys if k in art}
+            if compact.get("topic_group") is not None and "#" not in str(compact["topic_group"]):
+                compact["topic_group"] = f"{date_prefix}#{compact['topic_group']}"
             merged.append(compact)
 
     payload = {
@@ -1985,6 +2052,11 @@ def save_results(
 ) -> str:
     """data.json と archive/YYYY-MM-DD.json を生成し、生成時刻 (ISO文字列) を返す"""
     now = datetime.now(JST)
+    target_dt = now
+    if run_at:
+        parsed_run_at = parse_iso_datetime(run_at)
+        if parsed_run_at is not None:
+            target_dt = parsed_run_at.astimezone(JST)
     generated_at = run_at or now.isoformat()
 
     # 一時フィールド (_body) を出力から除去
@@ -2013,7 +2085,7 @@ def save_results(
     print(f"[INFO] Saved {DATA_FILE} ({len(articles)} articles, {error_count} errors)")
 
     os.makedirs(ARCHIVE_DIR, exist_ok=True)
-    archive_file = os.path.join(ARCHIVE_DIR, f"{now.strftime('%Y-%m-%d')}.json")
+    archive_file = os.path.join(ARCHIVE_DIR, f"{target_dt.strftime('%Y-%m-%d')}.json")
     with open(archive_file, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"[INFO] Saved {archive_file}")
@@ -2039,7 +2111,16 @@ def save_results(
 # ---------------------------------------------------------------------------
 # メイン
 # ---------------------------------------------------------------------------
-def notify_from_saved() -> None:
+def is_generated_today(data: dict, now: datetime | None = None) -> bool:
+    """data.json が今日 (JST) 生成されたものか。
+
+    収集に失敗した日に、リポジトリに残る前日分で同じ通知を再送しないためのガード。
+    """
+    now = now or datetime.now(JST)
+    return str(data.get("generated_at", "")).startswith(now.strftime("%Y-%m-%d"))
+
+
+def notify_from_saved(now: datetime | None = None) -> None:
     """保存済みの data.json / digest.json から通知だけを行う（今回新規解析された記事のみ対象）"""
     try:
         with open(DATA_FILE, encoding="utf-8") as f:
@@ -2050,6 +2131,9 @@ def notify_from_saved() -> None:
 
     articles = data.get("articles", [])
     run_at = data.get("generated_at", "")
+    if run_at and not is_generated_today(data, now=now):
+        print(f"[WARN] {DATA_FILE} is not from today (generated_at: {run_at}) -- skipping notifications")
+        return
     # new_at がある場合は今回の実行 (run_at) で新規解析された記事のみ通知対象にする（旧形式は全件対象）
     fresh_articles = [
         a for a in articles
@@ -2097,11 +2181,18 @@ def main() -> None:
     print(f"\n[INFO] Total raw articles: {len(all_articles)}")
 
     if not all_articles:
-        print("[WARN] No articles fetched -- exiting")
-        return
+        print("[ERROR] No articles fetched from any source -- aborting")
+        sys.exit(1)
 
-    # 2. 複数ソース出現の検知用に生リストから HOT 判定 URL を抽出してから重複除去
-    raw_for_hot = list(all_articles)
+    # 2. 複数ソース出現の検知用に重複除去前のURL別ソース集合を記録してから重複除去
+    sources_by_url: dict[str, set[str]] = {}
+    for art in all_articles:
+        norm = normalize_url(art.get("url", ""))
+        src = str(art.get("source") or "").strip()
+        if norm and src:
+            sources_by_url.setdefault(norm, set()).add(src)
+    hot_norms = {u for u, srcs in sources_by_url.items() if len(srcs) >= 2}
+
     before_dedup = len(all_articles)
     all_articles = deduplicate_articles(all_articles)
     if before_dedup != len(all_articles):
@@ -2133,13 +2224,10 @@ def main() -> None:
     all_articles = merge_today_articles(existing_today, reused_articles + to_analyze, run_at)
 
     # 6. スコアリング（複数ソース出現の検知）& はてなブックマーク件数の一括取得
-    hot_norms = {
-        normalize_url(a.get("url", ""))
-        for a in apply_hot_scoring(raw_for_hot)
-        if a.get("is_hot")
-    }
     for art in all_articles:
-        if normalize_url(art.get("url", "")) in hot_norms and not art.get("is_hot"):
+        norm = normalize_url(art.get("url", ""))
+        status = art.get("analysis_status", "ok")
+        if norm in hot_norms and status == "ok" and not art.get("is_hot"):
             art["is_hot"] = True
             art["score"] = min(art.get("score", 50) + SCORE_HOT_BONUS, SCORE_MAX)
         elif "is_hot" not in art:

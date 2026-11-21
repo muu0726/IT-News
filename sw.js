@@ -4,7 +4,7 @@
  * その他静的アセット: Cache First
  */
 
-const CACHE_NAME = 'itinfohub-v10';
+const CACHE_NAME = 'itinfohub-v11';
 
 const PRECACHE_URLS = [
   './',
@@ -39,22 +39,35 @@ self.addEventListener('activate', (event) => {
 });
 
 // ネットワーク優先（クエリを除外したキーでキャッシュ更新、失敗時はキャッシュへフォールバック）
-function networkFirst(request) {
+function networkFirst(request, { skipCache = false } = {}) {
   const url = new URL(request.url);
   const cacheKey = new Request(url.origin + url.pathname);
   return fetch(request)
     .then((response) => {
-      if (response.ok) {
+      if (!skipCache && response.ok) {
         const clone = response.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(cacheKey, clone));
       }
       return response;
     })
-    .catch(() => caches.match(cacheKey));
+    .catch(async () => {
+      if (!skipCache) {
+        const cached = await caches.match(cacheKey);
+        if (cached) return cached;
+      }
+      return new Response('Offline', { status: 503, statusText: 'Service Unavailable' });
+    });
 }
 
 self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
+  if (!url.protocol.startsWith('http')) return;
+
+  // 大容量の全期間検索インデックス・日次個別アーカイブはキャッシュ肥大防止のため Network Only (skipCache)
+  const isLargeArchiveData =
+    url.pathname.endsWith('/archive/search_index.json') ||
+    /\/archive\/\d{4}-\d{2}-\d{2}\.json$/.test(url.pathname);
 
   // HTML（ナビゲーション）と JSON/XML データは Network First
   // → フロント更新やデータ更新が即時反映される
@@ -64,7 +77,7 @@ self.addEventListener('fetch', (event) => {
     url.pathname.endsWith('.json') ||
     url.pathname.endsWith('.xml')
   ) {
-    event.respondWith(networkFirst(event.request));
+    event.respondWith(networkFirst(event.request, { skipCache: isLargeArchiveData }));
     return;
   }
 
@@ -72,13 +85,15 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;
-      return fetch(event.request).then((response) => {
-        if (response.ok) {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
-        }
-        return response;
-      });
+      return fetch(event.request)
+        .then((response) => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          }
+          return response;
+        })
+        .catch(() => new Response('', { status: 503, statusText: 'Service Unavailable' }));
     })
   );
 });

@@ -1355,20 +1355,29 @@
         if (!priceStr) return null;
         const s = String(priceStr)
           .replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
-          .replace(/,/g, '');
-        const manMatch = s.match(/(\d+(?:\.\d+)?)\s*万\s*(\d+)?\s*円?/);
+          .replace(/[,、]/g, '');
+        const manMatch = s.match(/(\d+(?:\.\d+)?)\s*万\s*(?:(\d+)\s*千)?\s*(\d+)?\s*円/);
         if (manMatch) {
           const man = parseFloat(manMatch[1]) * 10000;
-          const rest = manMatch[2] ? parseInt(manMatch[2], 10) : 0;
-          return Math.round(man + rest);
+          const sen = manMatch[2] ? parseInt(manMatch[2], 10) * 1000 : 0;
+          const rest = manMatch[3] ? parseInt(manMatch[3], 10) : 0;
+          return Math.round(man + sen + rest);
         }
-        const yenMatch = s.match(/(?:¥|￥)?\s*(\d{3,8})\s*円?/);
+        const yenMatch = s.match(/(?:¥|￥)\s*(\d{2,8})|(\d{2,8})\s*円/);
         if (yenMatch) {
-          return parseInt(yenMatch[1], 10);
+          return parseInt(yenMatch[1] || yenMatch[2], 10);
         }
-        const usdMatch = s.match(/\$\s*(\d+(?:\.\d+)?)/);
-        if (usdMatch) {
-          return Math.round(parseFloat(usdMatch[1]) * 150);
+        const usdSymbolMatch = s.match(/(?:US\$|\$|USD\s*)\s*(\d+(?:\.\d+)?)/i);
+        if (usdSymbolMatch) {
+          return Math.round(parseFloat(usdSymbolMatch[1]) * 150);
+        }
+        const usdManMatch = s.match(/(\d+(?:\.\d+)?)\s*万\s*(?:米|US)?ドル/i);
+        if (usdManMatch) {
+          return Math.round(parseFloat(usdManMatch[1]) * 10000 * 150);
+        }
+        const usdWordMatch = s.match(/(\d+(?:\.\d+)?)\s*(?:米|US)?ドル/i);
+        if (usdWordMatch) {
+          return Math.round(parseFloat(usdWordMatch[1]) * 150);
         }
         return null;
       }
@@ -1480,7 +1489,7 @@
           rm.title = '比較から外す';
           rm.addEventListener('click', () => {
             toggleCompare(it.url);
-            render();
+            render({ resetLimit: false });
           });
           chip.appendChild(lbl);
           chip.appendChild(rm);
@@ -1531,7 +1540,7 @@
         $('#compareTableWrap').querySelectorAll('.rm-compare-col').forEach((btn) => {
           btn.addEventListener('click', () => {
             toggleCompare(btn.dataset.url);
-            render();
+            render({ resetLimit: false });
             renderCompareModal();
           });
         });
@@ -2211,7 +2220,7 @@
         compareUrls = [];
         store.set('itinfohub_gadget_compare', compareUrls);
         updateCompareBar();
-        render();
+        render({ resetLimit: false });
         showToast('比較リストをクリアしました');
       });
       $('#copyCompareMdBtn').addEventListener('click', copyCompareMarkdown);

@@ -300,7 +300,7 @@ def test_notify_from_saved_filters_only_latest_run(monkeypatch, tmp_path, sleeps
 
     sent = {}
     monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.setdefault("articles", arts))
-    gather.notify_from_saved()
+    gather.notify_from_saved(now=datetime(2026, 10, 29, 15, 0, tzinfo=JST))
     assert len(sent["articles"]) == 1
     assert sent["articles"][0]["title"] == "Afternoon Art"
 
@@ -432,7 +432,7 @@ def test_load_recent_past_articles_and_prev_seen_suppression(monkeypatch, tmp_pa
 
     sent = {}
     monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.setdefault("articles", arts))
-    gather.notify_from_saved()
+    gather.notify_from_saved(now=now)
     assert [a["title"] for a in sent["articles"]] == ["Brand New Today"]
 
 
@@ -676,7 +676,7 @@ def test_notify_from_saved_skips_error_articles(monkeypatch, tmp_path, sleeps):
 
     sent = {}
     monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.setdefault("articles", arts))
-    gather.notify_from_saved()
+    gather.notify_from_saved(now=datetime(2026, 11, 21, 7, 0, tzinfo=JST))
     assert [a["title"] for a in sent["articles"]] == ["OK Art"]
 
 
@@ -901,4 +901,145 @@ def test_build_trends_summary(tmp_path):
     assert summary["sources"][0] == {"label": "Zenn", "value": 85.0, "display": "85.0"}
     assert summary["categories"][0] == {"label": "AI・機械学習", "value": 2, "display": "2件"}
     assert out_file.exists()
+
+
+def test_notify_from_saved_skips_stale_data(monkeypatch, tmp_path, sleeps):
+    data_file = tmp_path / "data.json"
+    digest_file = tmp_path / "digest.json"
+    _write_json(
+        data_file,
+        {
+            "generated_at": "2026-11-20T14:45:00+09:00",
+            "articles": [{"title": "Yesterday", "score": 95, "new_at": "2026-11-20T14:45:00+09:00", "analysis_status": "ok"}],
+        },
+    )
+    monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
+    monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
+    monkeypatch.setenv("NOTIFY_AT_JST", "07:00")
+
+    sent = []
+    monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.append(arts))
+    gather.notify_from_saved(now=datetime(2026, 11, 21, 6, 50, tzinfo=JST))
+    assert sent == []
+    assert sleeps == []
+
+
+def test_build_search_index_namespaces_topic_group(tmp_path):
+    arch_dir = tmp_path / "archive"
+    arch_dir.mkdir()
+    _write_json(
+        arch_dir / "2026-11-20.json",
+        {"articles": [{"title": "Day1", "url": "https://example.com/d1", "score": 80, "topic_group": 1, "topic_size": 2}]},
+    )
+    _write_json(
+        arch_dir / "2026-11-21.json",
+        {"articles": [{"title": "Day2", "url": "https://example.com/d2", "score": 85, "topic_group": 1, "topic_size": 2}]},
+    )
+    payload = gather.build_search_index(str(arch_dir), str(arch_dir / "search_index.json"))
+    groups = {a["title"]: a["topic_group"] for a in payload["articles"]}
+    assert groups["Day1"] == "2026-11-20#1"
+    assert groups["Day2"] == "2026-11-21#1"
+
+
+def test_fetch_hackernews_handles_invalid_json(monkeypatch):
+    class _BadResp:
+        def json(self):
+            raise ValueError("invalid json")
+
+    monkeypatch.setattr(gather, "safe_get", lambda url, timeout=15: _BadResp())
+    assert gather.fetch_hackernews() == []
+    assert gather._fetch_one_hn_item(123) is None
+
+
+def test_apply_hot_scoring_requires_distinct_sources_and_skips_errors():
+    articles = [
+        {"url": "https://example.com/same-src", "source": "Zenn", "score": 70, "analysis_status": "ok"},
+        {"url": "https://example.com/same-src?utm_source=x", "source": "Zenn", "score": 70, "analysis_status": "ok"},
+        {"url": "https://example.com/cross-src", "source": "Zenn", "score": 75, "analysis_status": "ok"},
+        {"url": "https://example.com/cross-src", "source": "Hacker News", "score": 75, "analysis_status": "ok"},
+        {"url": "https://example.com/err-cross", "source": "Zenn", "score": 50, "analysis_status": "error"},
+        {"url": "https://example.com/err-cross", "source": "Hacker News", "score": 50, "analysis_status": "error"},
+    ]
+    gather.apply_hot_scoring(articles)
+    assert articles[0]["is_hot"] is False and articles[0]["score"] == 70
+    assert articles[2]["is_hot"] is True and articles[2]["score"] == 95
+    assert articles[4]["is_hot"] is False and articles[4]["score"] == 50
+
+
+def test_validate_analysis_item_rejects_bool():
+    ok = {"id": 0, "title": "t", "summary": "s", "tags": ["AI"], "score": 80}
+    assert gather.validate_analysis_item(ok) is True
+    assert gather.validate_analysis_item({**ok, "id": True}) is False
+    assert gather.validate_analysis_item({**ok, "score": True}) is False
+
+
+def test_send_discord_notification_truncates_and_caps_total_length(monkeypatch):
+    captured = []
+    monkeypatch.setenv("DISCORD_WEBHOOK_URL", "https://discord.example/hook")
+    monkeypatch.setattr(
+        gather,
+        "post_webhook",
+        lambda url, payload, name, headers=None, timeout=15: captured.append(payload) or True,
+    )
+    long_articles = [
+        {
+            "title": f"Article {i}",
+            "url": f"https://example.com/{i}",
+            "score": 95 - i,
+            "tags": ["AI", "LLM"],
+            "source": "Zenn",
+            "summary": "S" * 1500,
+            "actionable_takeaway": "A" * 800,
+            "score_reason": "R" * 800,
+            "analysis_status": "ok",
+        }
+        for i in range(5)
+    ]
+    gather.send_discord_notification(long_articles)
+    assert len(captured) == 1
+    embeds = captured[0]["embeds"]
+    assert 1 <= len(embeds) < 5  # 5500文字上限で途中打ち切り
+    assert len(embeds[0]["description"]) <= 800
+    total_chars = sum(gather._embed_char_count(e) for e in embeds)
+    assert total_chars <= 5500
+
+
+def test_fetch_embeddings_retries_on_429(monkeypatch, sleeps):
+    calls = {"n": 0}
+
+    class _Resp429:
+        status_code = 429
+        headers = {"Retry-After": "10"}
+        text = "rate limited"
+
+    class _Resp200:
+        status_code = 200
+
+        def json(self):
+            return {"embeddings": [{"values": [0.1, 0.2]}]}
+
+    def fake_post(url, json=None, timeout=None):
+        calls["n"] += 1
+        return _Resp429() if calls["n"] == 1 else _Resp200()
+
+    monkeypatch.setattr(gather.random, "uniform", lambda a, b: 0.0)
+    monkeypatch.setattr(gather.requests, "post", fake_post)
+    vecs = gather.fetch_embeddings(["hello"], "dummy-key")
+    assert vecs == [[0.1, 0.2]]
+    assert calls["n"] == 2
+    assert len(sleeps) == 1 and sleeps[0] == 11.0
+
+
+def test_save_results_uses_run_at_date_for_archive(monkeypatch, tmp_path):
+    data_file = tmp_path / "data.json"
+    arch_dir = tmp_path / "archive"
+    monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
+    monkeypatch.setattr(gather, "ARCHIVE_DIR", str(arch_dir))
+    monkeypatch.setattr(gather, "SEARCH_INDEX_FILE", str(arch_dir / "search_index.json"))
+    monkeypatch.setattr(gather, "TRENDS_FILE", str(arch_dir / "trends_30d.json"))
+
+    run_at = "2026-10-15T23:59:50+09:00"
+    gather.save_results([{"title": "Late Run", "url": "https://example.com/late", "score": 80, "analysis_status": "ok"}], run_at=run_at)
+    assert (arch_dir / "2026-10-15.json").exists()
+
 
