@@ -5,14 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 21 Nov 2026 02:51:34 +0000</lastBuildDate>
-    <item>
-      <title>CDKからTerraformへ：所有権移譲による本番インフラ無停止のIaC移行</title>
-      <link>https://zenn.dev/levtech/articles/14befd8e727f32</link>
-      <guid isPermaLink="false">https://zenn.dev/levtech/articles/14befd8e727f32</guid>
-      <description>[Score: 95] 本記事では、CDKで管理されている本番インフラをTerraformへ無停止で移行する手法について解説しています。 / 「所有権を移譲する」アプローチにより、13スタックの本番インフラを停止させずにIaC移行を完遂しました。 / 具体的な手順として、CloudFormationのRemovalPolicy: RETAIN設定、CDKからのリソース定義削除、Terraformでのimportによる管理下への取り込み、差分確認と適用が示されています。 [実務示唆: 異なるIaCツールへの移行を検討する際は、本番環境の無停止移行を実現する「所有権移譲」の手法を参考に、RemovalPolicy: RETAIN設定とTerraform importを計画的に実施すべきです。] (Source: Zenn)</description>
-      <pubDate>Fri, 20 Nov 2026 01:26:30 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 21 Nov 2026 21:46:35 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -35,32 +28,11 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>Valkeyがスキップリストを廃止し、ソート済みセットのオーバーヘッドを最大43%削減</title>
-      <link>https://valkey.io/blog/from-skiplist-to-b+tree/</link>
-      <guid isPermaLink="false">https://valkey.io/blog/from-skiplist-to-b+tree/</guid>
-      <description>[Score: 95] Valkey 9.2では、ソート済みセットの内部実装がスキップリストから高ファンアウトB+ツリーの派生形であるfbtreeに置き換えられました。 / fbtreeは、従来のB+ツリーの利点に加え、Valkeyのワークロードに最適化された様々な機能（SIMD検索、リンクされたリーフなど）を統合しています。 / この変更により、500万メンバーのテストで、メンバーあたりのメモリオーバーヘッドが36〜43%削減され、最大109MBのメモリを節約できることが示されました。 [実務示唆: Valkeyを利用している開発者は、9.2へのアップデートを検討し、ソート済みセットを多用するアプリケーションでのメモリ使用量とパフォーマンスの改善を検証してください。] [GitHub: valkey/valkey] (Source: Hacker News)</description>
-      <pubDate>Tue, 17 Nov 2026 16:58:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claudeを使い「リーマン予想」を証明か Anthropic数学者が発表 Lean検証も通過、数学界が精査へ</title>
-      <link>https://japan.cnet.com/article/35255245/</link>
-      <guid isPermaLink="false">https://japan.cnet.com/article/35255245/</guid>
-      <description>[Score: 95] 米アンソロピックの数学者Levent Alpöge氏が、生成AI「Claude」を使い167年間未解決の数学の難問「リーマン予想」の証明を見つけたと発表しました。 / 公開された証明は形式証明システム「Lean」による検証を通過しており、一般化リーマン予想も同様の手法で証明できたとしています。 / 数学界による精査が続いており、クレイ数学研究所のミレニアム懸賞問題の一つであるリーマン予想の解決が注目されています。 [実務示唆: AIが数学の未解決問題解決に貢献する可能性が示されたため、AIによる論理的推論や形式証明の技術動向を注視し、自社の研究開発や問題解決プロセスへの応用可能性を検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 20 Nov 2026 23:02:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>言語モデルは自身の重みを書き換えることができる</title>
-      <link>https://arxiv.org/abs/2611.21885</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.21885</guid>
-      <description>[Score: 90] 本記事は、大規模言語モデル（LLM）が自身の内部パラメータ（重み）を自己修正する能力を持つ可能性について探求しています。 / モデルが学習プロセス中に自身の構造や振る舞いを動的に変更できるという、メタ学習の新たな側面を示唆しています。 / これは、より自律的で適応性の高いAIシステムの開発に繋がる画期的な研究方向性です。 [実務示唆: 自己修正能力を持つLLMの登場に備え、モデルの挙動をより深く理解し、予期せぬ変化に対応できるような監視・制御メカニズムの研究開発に着手しましょう。] (Source: Hacker News)</description>
-      <pubDate>Fri, 20 Nov 2026 16:29:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>日本のレシートを自宅PCでOCRする：15構成を実レシート11枚で比べた</title>
-      <link>https://zenn.dev/chaki/articles/4545be3475fdb4</link>
-      <guid isPermaLink="false">https://zenn.dev/chaki/articles/4545be3475fdb4</guid>
-      <description>[Score: 90] 自宅PCで日本のレシートをOCRする15構成を実レシート11枚で比較検証しました。 / YomiTokuの2段読みが商品名93%、金額100%の精度で最良でしたが、非商用ライセンスです。 / 商用利用ではNDLOCR-LiteやPP-OCRv6が現実的で、VLMは手書き領収書に強いが長いレシートでは課題が見られました。 [実務示唆: レシートOCRを自作する際は、YomiTokuの2段読みを参考にしつつ、商用利用ならNDLOCR-LiteやPP-OCRv6を検討し、手書き対応ならVLMの活用を試すのが良いでしょう。] (Source: Zenn)</description>
-      <pubDate>Fri, 20 Nov 2026 04:33:15 +0000</pubDate>
+      <title>【TLA+】AIにテストケースを書かせるな。ルールを書け</title>
+      <link>https://zenn.dev/karamage/articles/73027ee36796dc</link>
+      <guid isPermaLink="false">https://zenn.dev/karamage/articles/73027ee36796dc</guid>
+      <description>[Score: 95] AIに実装とテストの両方を書かせると「自作自演の満点」となり、意味のあるテストにならないという問題提起がされています。 / Test Oracle Problemに触れ、AIが生成するテストケースの限界と、形式検証言語TLA+系のQuintを用いた解決策が提示されています。 / 人間が「採点基準（ルール）」を定義し、機械に問題（テストケース）を全て生成させるアプローチが推奨されています。 [実務示唆: AIによるテスト生成を活用する際は、AIにテストケースそのものを書かせるのではなく、TLA+のような形式検証ツールを用いて「システムの正しい振る舞いのルール」を定義し、そのルールに基づいてテストを自動生成させるアプローチを検討しましょう。] (Source: Zenn)</description>
+      <pubDate>Sat, 21 Nov 2026 02:12:39 +0000</pubDate>
     </item>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
@@ -77,39 +49,32 @@
       <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
     </item>
     <item>
-      <title>Inkling 2 Miniのリリース</title>
-      <link>https://thinkingmachines.ai/news/inkling-2-mini/</link>
-      <guid isPermaLink="false">https://thinkingmachines.ai/news/inkling-2-mini/</guid>
-      <description>[Score: 90] Thinking Machines AIが、ラップトップで動作する高速かつ強力な小型モデル「Inkling 2 Mini」をリリースしました。 / このモデルは、ループ型トランスフォーマーを採用し、中間層を複数回実行することで、少ないトークンで高い推論能力を発揮します。 / 特にエージェントコーディングなどの推論品質が重要なタスクにおいて、既存のオープンウェイトモデルを上回る性能を示しています。 [実務示唆: ラップトップで高性能なAIモデルを動かしたい開発者は、Inkling 2 Miniを試用し、エージェントコーディングや推論タスクでの性能を評価してください。] (Source: Hacker News)</description>
-      <pubDate>Fri, 20 Nov 2026 20:12:19 +0000</pubDate>
+      <title>5.4GBメモリでInkling-2-Miniを動かす</title>
+      <link>https://github.com/ShinMegamiBoson/lookatmyquant</link>
+      <guid isPermaLink="false">https://github.com/ShinMegamiBoson/lookatmyquant</guid>
+      <description>[Score: 90] LookAtMyQuantは、モデルの圧縮時の出力への影響を測定し、最小限のダメージでサイズ予算に収まるようにコードを選択する量子化コンパイラです。 / Gemma 4 E2Bでは、同じファイルサイズでQ4_K_Mよりも12倍低いKL値を達成しています。 / Qwen3.5-4Bを1.23GB、Qwen3.8-27Bを7.2GBに量子化し、高い性能を維持しています。 [実務示唆: 大規模言語モデルの効率的な運用を目指すエンジニアは、LookAtMyQuantのような量子化技術を導入し、メモリと計算資源の最適化を図るべきです。] [GitHub: ShinMegamiBoson/lookatmyquant] (Source: Hacker News)</description>
+      <pubDate>Sat, 21 Nov 2026 18:02:19 +0000</pubDate>
     </item>
     <item>
-      <title>1万円のシンセをAIで魔改造。電子楽器のファームウェア開放が始まった | ギズモード・ジャパン</title>
-      <link>https://www.gizmodo.jp/article/0b0516f2-94f8-442e-bdae-2987f090be13/</link>
-      <guid isPermaLink="false">https://www.gizmodo.jp/article/0b0516f2-94f8-442e-bdae-2987f090be13/</guid>
-      <description>[Score: 90] 中国M-VAVEの小型FMシンセ「FM-1」が、ユーザーによるカスタムファームウェア開発で話題になっています。 / AIコーディングツールを活用した改造が加速し、メーカー側も開発用SDKやソースコードを提供し、ユーザーによる機能拡張を後押しする姿勢を見せています。 / この動きはAKAI ProfessionalやBEHRINGERにも波及し、電子楽器業界でファームウェア開放の新しい可能性が模索されています。 [実務示唆: AIによるソフトウェア開発の民主化は、ハードウェア製品のユーザーコミュニティ形成と製品寿命延長に貢献するため、自社製品のファームウェアやAPI開放を検討し、ユーザー共創の可能性を探るべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 20 Nov 2026 14:31:09 +0000</pubDate>
+      <title>AIエージェントに堅牢なテストを書かせるには？</title>
+      <link>https://zenn.dev/yasuakiomokawa/articles/3ac970c3a3a1c7</link>
+      <guid isPermaLink="false">https://zenn.dev/yasuakiomokawa/articles/3ac970c3a3a1c7</guid>
+      <description>[Score: 90] AIコーディングエージェントにテストを書かせると、実装変更で壊れやすいテストが生成される問題があります。 / 筆者の15日間の検証に基づき、堅牢なテストを書かせるための4つの手順が紹介されています。 / テストの堅牢性は、受け入れ基準の書き方に大きく依存し、実装の詳細を基準に含めないことが重要です。 [実務示唆: AIにテストコードを生成させる際は、実装の詳細を含まない「受け入れ基準」を明確に定義し、AIにその基準に基づいてテストを作成させるように指示することで、堅牢性を高めましょう。] (Source: Zenn)</description>
+      <pubDate>Sat, 21 Nov 2026 09:09:12 +0000</pubDate>
     </item>
     <item>
-      <title>LLMの散文を正規表現で解析するのをやめよう</title>
-      <link>https://dev.to/phpboyscout/stop-regex-ing-the-llms-prose-53go</link>
-      <guid isPermaLink="false">https://dev.to/phpboyscout/stop-regex-ing-the-llms-prose-53go</guid>
-      <description>[Score: 90] LLMからの出力を正規表現で解析することは、出力形式の変動により信頼性が低く、保守が困難であると指摘しています。 / LLMに構造化されたデータ（JSONなど）を直接出力させることで、プログラミングによる処理が格段に容易になります。 / Go言語の例を挙げ、LLMに特定のGo構造体に対応するJSONを生成させることで、より堅牢なシステム構築が可能になることを示しています。 [実務示唆: LLMの出力をプログラムで利用する際は、正規表現によるパースではなく、プロンプトエンジニアリングでJSONなどの構造化データを直接出力させるように設計し、堅牢性と保守性を向上させましょう。] (Source: Dev.to)</description>
-      <pubDate>Sat, 21 Nov 2026 02:43:16 +0000</pubDate>
+      <title>リーマン予想の証明の検証は現在どこまで進んでいるか｜加藤文元</title>
+      <link>https://note.com/katobungen/n/n9c2bb939b9c7</link>
+      <guid isPermaLink="false">https://note.com/katobungen/n/n9c2bb939b9c7</guid>
+      <description>[Score: 90] Anthropicの数学者Levent Alpöge氏がClaudeと共にリーマン予想を証明したと発表し、Leanで書かれた膨大なコードが公開されました。 / MITのAndrew Sutherland氏らがClaude Codeを用いて検証を進めており、複数の独立した検証プログラムが証明全体を受理しています。 / 検証の焦点は、Leanカーネルが誤った証明を受理していないか、そして証明された命題が数学上のリーマン予想と一致しているかの2点です。 [実務示唆: AIによる数学的証明の進展は、証明支援系の信頼性と検証プロセスが重要であることを示唆しており、AIが生成したコードや証明の厳密な検証手法について関心を持つべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 21 Nov 2026 13:55:02 +0000</pubDate>
     </item>
     <item>
-      <title>CLAUDE.md や SKILL.md のルールを Turtle で書き、ルールの書き間違いや矛盾を lint で検査してみた話</title>
-      <link>https://zenn.dev/hma2moto/articles/turtle-agent-rules-pros-cons</link>
-      <guid isPermaLink="false">https://zenn.dev/hma2moto/articles/turtle-agent-rules-pros-cons</guid>
-      <description>[Score: 88] Claude CodeのエージェントルールをMarkdownからTurtle構文に移行し、ルールの明確化と自動検査を実現しました。 / Turtleを使うことで、ルールの強さ、例外、理由を一箇所にまとめられ、人間が読みやすくなります。 / また、lintツールでルールの書き間違いや矛盾を検査でき、エージェントがルールをより遵守する効果も確認されました。 [実務示唆: 大規模なAIエージェントのルール管理において、Markdownの限界を感じたら、Turtleのようなオントロジー記述言語とlintツールを導入し、ルールの構造化と自動検査による品質向上を検討すべきです。] (Source: Zenn)</description>
-      <pubDate>Thu, 19 Nov 2026 14:13:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>【実験】Direct Connectの片系を落とすと、実際どれくらいで切り替わり、行きと戻りはどの回線を通るのか</title>
-      <link>https://qiita.com/sh_fukatsu/items/5a069f9fce99a86efb05?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/sh_fukatsu/items/5a069f9fce99a86efb05?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] AWS Direct Connectの冗長構成において、片系障害時の切り替わり時間と経路変化を検証した記事です。 / AWS Fault Injection Service (FIS) の利用を試みるも権限不足で断念し、Direct Connectコンソールからの障害テストを実施しました。 / pingによる通信監視で、切り替わり時間や行き・戻りの経路がどのように変化するかを詳細に追跡しています。 [実務示唆: Direct Connectの冗長構成を導入している場合、障害テスト機能を用いて切り替わり時間と経路を定期的に検証し、システムの可用性を確認しましょう。] (Source: Qiita)</description>
-      <pubDate>Wed, 18 Nov 2026 13:42:33 +0000</pubDate>
+      <title>AIでアプリを構築しましたか？実際のユーザーがサインアップする前の10のセキュリティチェック</title>
+      <link>https://dev.to/vishall/built-your-app-with-ai-10-security-checks-before-real-users-sign-up-26o4</link>
+      <guid isPermaLink="false">https://dev.to/vishall/built-your-app-with-ai-10-security-checks-before-real-users-sign-up-26o4</guid>
+      <description>[Score: 90] AIを活用して構築されたアプリが、実際のユーザーが利用する前に実施すべき10のセキュリティチェックリストが紹介されています。 / AIによる開発は迅速ですが、セキュリティテストが疎かになりがちで、個人情報や機密情報がログインなしで読み取られる脆弱性が指摘されています。 / Next.jsのセキュリティアドバイザリ増加や、Supabaseのanon keyの扱いなど、具体的なリスクと対策が提示されています。 [実務示唆: AIで開発したアプリを公開する前に、必ず2つのテストアカウントでデータ分離を確認し、JavaScript内の秘密鍵の検索、ログアウト状態でのフォーム・アクション呼び出し、依存関係の更新など、10のセキュリティチェックを実施してください。] (Source: Dev.to)</description>
+      <pubDate>Sat, 21 Nov 2026 21:35:17 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
@@ -119,11 +84,11 @@
       <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
     </item>
     <item>
-      <title>RTKの走行データ収集でAndroidの記録アプリを外から監視する</title>
-      <link>https://zenn.dev/nauh_blog/articles/b60cd6973c8a3f</link>
-      <guid isPermaLink="false">https://zenn.dev/nauh_blog/articles/b60cd6973c8a3f</guid>
-      <description>[Score: 85] RTK受信機とAndroidアプリ「DroggerGPS」を用いた高精度な走行データ収集において、記録停止による再走行を防ぐため監視アプリを開発しました。 / 監視アプリは、DroggerGPSの記録サービス稼働状況やRTK補正情報の受信状態を外部から確認できるようにします。 / これにより、数cm単位の測位精度が維持されているかをリアルタイムで把握し、データ収集の信頼性を向上させます。 [実務示唆: 高精度な位置情報データを扱うシステム開発では、記録アプリの外部監視や測位状態のリアルタイム確認を実装し、データ品質と運用効率の向上を図るべきです。] (Source: Zenn)</description>
-      <pubDate>Fri, 20 Nov 2026 09:00:06 +0000</pubDate>
+      <title>AIアプリが実際のトラフィックでクラッシュする理由（そして2行で修正する方法）</title>
+      <link>https://dev.to/rohan9024/why-ai-apps-crash-under-real-traffic-and-how-to-fix-it-in-2-lines-43a1</link>
+      <guid isPermaLink="false">https://dev.to/rohan9024/why-ai-apps-crash-under-real-traffic-and-how-to-fix-it-in-2-lines-43a1</guid>
+      <description>[Score: 88] AIアプリが実際のトラフィック下でクラッシュする原因と、その解決策としてRetryKitが紹介されています。 / 一般的なリトライラッパー（p-retryなど）はLLM API向けに設計されておらず、SDKのリトライと重複してトラフィックを9～12倍に増加させたり、課金エラー時に無駄な待機をしたりする問題があります。 / RetryKitは、レート制限、マルチキーローテーション、サーキットブレーキング、ストリームリカバリなどを解決するTypeScript製の信頼性エンジンです。 [実務示唆: AIアプリでLLM APIを利用する際は、一般的なリトライロジックではなく、レート制限やエラーハンドリングに特化した@rohan9024/retrykitのようなライブラリを導入し、安定性と信頼性を向上させるべきです。] [GitHub: rohan9024/retrykit] (Source: Dev.to)</description>
+      <pubDate>Sat, 21 Nov 2026 21:35:06 +0000</pubDate>
     </item>
     <item>
       <title>Microsoft 365 CopilotがOneDriveのファイルを直接編集可能に！CoworkなしでGitHub Copilotのように使える件</title>
@@ -140,11 +105,46 @@
       <pubDate>Wed, 18 Nov 2026 15:58:32 +0000</pubDate>
     </item>
     <item>
-      <title>速報: アレッサンドロ・マスッロ氏によるGRHの証明</title>
-      <link>https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/</link>
-      <guid isPermaLink="false">https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/</guid>
-      <description>[Score: 85] スタンフォード大学のラヴィ・ヴァキル教授が、アレッサンドロ・マスッロ氏による一般リーマン予想（GRH）の証明案を公開しました。 / ブライアン・コンラッド氏が数ヶ月間詳細に検証し、好感触を得ているとのことです。 / AIは一切使用されておらず、人間による純粋な数学的成果として注目されています。 [実務示唆: 数学分野の進展に興味がある研究者や開発者は、公開された証明案を早期に確認し、その検証や形式化に貢献することを検討してください。] (Source: Hacker News)</description>
-      <pubDate>Fri, 20 Nov 2026 18:33:14 +0000</pubDate>
+      <title>膵臓がん治療薬「数十年来の最大のブレークスルー」と称賛</title>
+      <link>https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib</link>
+      <guid isPermaLink="false">https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib</guid>
+      <description>[Score: 85] 膵臓がん治療薬「ダラキソンラシブ」が、数十年来で最大のブレークスルーとして注目されています。 / 治験では、患者の12人に1人でがんが検出不能になり、ほぼ全員の腫瘍の増殖が停止しました。 / この薬は、進行した膵臓がん患者の生存期間を延ばす可能性があり、大きな期待が寄せられています。 [実務示唆: 医療技術の進歩はIT分野にも影響を与えるため、AI創薬や医療データ分析の動向に注目し、関連技術の学習を検討しましょう。] (Source: Hacker News)</description>
+      <pubDate>Fri, 20 Nov 2026 21:03:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>GoでPostgreSQL拡張機能を作成</title>
+      <link>https://jespino.github.io/gopgext/</link>
+      <guid isPermaLink="false">https://jespino.github.io/gopgext/</guid>
+      <description>[Score: 85] gopgextは、TinyGoを使用してGo言語のコードからPostgreSQL拡張機能を構築するツールです。 / Goの関数に特定のコメントを付与するだけでSQL関数として利用でき、C言語のグルーコードやインストールスクリプトが自動生成されます。 / 標準ライブラリの利用やカスタムデータ型の定義も可能で、PostgreSQLのcontribモジュールの移植もサポートしています。 [実務示唆: Go言語でのPostgreSQL拡張開発に興味がある開発者は、gopgextを試して、既存のGoコードをデータベース機能として活用できないか検討すると良いでしょう。] [GitHub: jespino/gopgext] (Source: Hacker News)</description>
+      <pubDate>Sat, 21 Nov 2026 17:08:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>【pre:Inventまとめ】AWSのAIエージェント認証がいろいろ進化！MCPサーバー構築を例に一挙解説</title>
+      <link>https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AWS re:Inventに先立ち、CognitoとAgentCoreにおけるAIエージェント認証のアップデートが発表されました。 / AIクライアントの認証管理を簡素化するCIMDとDCRの2つの新機能がCognitoに追加され、管理者の手間を削減します。 / AgentCore GatewayではJWTクレームを条件にリソースポリシーで細かくアクセス制御できるようになり、セキュリティと管理性が向上しました。 [実務示唆: AWSでAIエージェントを利用する際は、CognitoのCIMD/DCRやAgentCore GatewayのJWTクレームを活用し、認証・認可の管理を効率化しセキュリティを強化することを推奨します。] (Source: Qiita)</description>
+      <pubDate>Sat, 21 Nov 2026 04:03:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド</title>
+      <link>https://zenn.dev/canly/articles/ca6875cd79539f</link>
+      <guid isPermaLink="false">https://zenn.dev/canly/articles/ca6875cd79539f</guid>
+      <description>[Score: 85] AI開発者poteto氏が公開したCursor公式スキル集「pstack」の活用ガイドです。 / pstackは、AIが質の高いコードを生成するための58のスキルと22のプレイブックで構成されています。 / 本記事では、指示の組み立て方からツール実装、自動テスト、テスト検証までを約10分で完遂する手順が解説されています。 [実務示唆: AIエージェントによる開発効率化のため、Cursorのpstackプラグインを導入し、質の高いコード生成と自動テストのワークフローを試すことを推奨します。] [GitHub: cursor/plugins] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 20 Nov 2026 22:35:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>自己に嘘をつけないプルーフゲートキーパーを構築し、見えない唯一の罠を発見した</title>
+      <link>https://dev.to/savana_7d5672a4479a71c2f5/i-built-a-proof-gatekeeper-that-cant-lie-to-itself-and-found-the-one-trap-it-cant-see-2obm</link>
+      <guid isPermaLink="false">https://dev.to/savana_7d5672a4479a71c2f5/i-built-a-proof-gatekeeper-that-cant-lie-to-itself-and-found-the-one-trap-it-cant-see-2obm</guid>
+      <description>[Score: 85] 筆者は、zkVerifyの公式回路を用いて、ゼロ知識証明で意思決定を記録するプルーフゲートキーパーを構築しました。 / ゼロ知識証明は特定のアクションが検証可能であることを保証しますが、エージェントが正直であること自体を保証するものではありません。 / エージェントの意思決定が本当に正しいかを知るには、証明がカバーする範囲と、カバーしない範囲を正確に理解することが重要です。 [実務示唆: ゼロ知識証明をシステムに導入する際は、証明がカバーする具体的な「主張」を明確にし、証明が保証しない範囲を理解した上で設計することで、潜在的な脆弱性を回避できます。] (Source: Dev.to)</description>
+      <pubDate>Sat, 21 Nov 2026 21:34:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>オープンソースにおける最高のものは共に築かれる</title>
+      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
+      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

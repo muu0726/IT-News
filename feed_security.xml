@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 21 Nov 2026 02:51:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 21:46:35 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -21,11 +21,25 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>読者が求めたコントロールを実行した結果、間違ったモデルをベンチマークしていたことが判明した</title>
-      <link>https://dev.to/revhive/we-ran-the-control-a-reader-asked-for-it-also-turned-out-we-had-benchmarked-the-wrong-model-13bb</link>
-      <guid isPermaLink="false">https://dev.to/revhive/we-ran-the-control-a-reader-asked-for-it-also-turned-out-we-had-benchmarked-the-wrong-model-13bb</guid>
-      <description>[Score: 80] セキュリティエージェントの脆弱性検出能力に関するベンチマークで、読者からの指摘によりコントロール実験を実施しました。 / 当初10/10の検出率だったが、セキュリティ関連ではない同規模のコミットをリバートしたケースでコントロール実験を行った結果、エージェントが「ガードが削除された」パターンに反応している可能性が浮上しました。 / これにより、エージェントが実際に脆弱性を検出しているのではなく、単に削除されたチェックを認識しているだけかもしれないという、ベンチマークの根本的な問題が明らかになりました。 [実務示唆: セキュリティツールやAIモデルの評価を行う際は、ポジティブな結果だけでなく、コントロール群を用いた厳密な実験設計を行い、評価指標が本当に意図した能力を測っているか常に検証しましょう。] (Source: Dev.to)</description>
-      <pubDate>Sat, 21 Nov 2026 02:43:28 +0000</pubDate>
+      <title>AIでアプリを構築しましたか？実際のユーザーがサインアップする前の10のセキュリティチェック</title>
+      <link>https://dev.to/vishall/built-your-app-with-ai-10-security-checks-before-real-users-sign-up-26o4</link>
+      <guid isPermaLink="false">https://dev.to/vishall/built-your-app-with-ai-10-security-checks-before-real-users-sign-up-26o4</guid>
+      <description>[Score: 90] AIを活用して構築されたアプリが、実際のユーザーが利用する前に実施すべき10のセキュリティチェックリストが紹介されています。 / AIによる開発は迅速ですが、セキュリティテストが疎かになりがちで、個人情報や機密情報がログインなしで読み取られる脆弱性が指摘されています。 / Next.jsのセキュリティアドバイザリ増加や、Supabaseのanon keyの扱いなど、具体的なリスクと対策が提示されています。 [実務示唆: AIで開発したアプリを公開する前に、必ず2つのテストアカウントでデータ分離を確認し、JavaScript内の秘密鍵の検索、ログアウト状態でのフォーム・アクション呼び出し、依存関係の更新など、10のセキュリティチェックを実施してください。] (Source: Dev.to)</description>
+      <pubDate>Sat, 21 Nov 2026 21:35:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>自己に嘘をつけないプルーフゲートキーパーを構築し、見えない唯一の罠を発見した</title>
+      <link>https://dev.to/savana_7d5672a4479a71c2f5/i-built-a-proof-gatekeeper-that-cant-lie-to-itself-and-found-the-one-trap-it-cant-see-2obm</link>
+      <guid isPermaLink="false">https://dev.to/savana_7d5672a4479a71c2f5/i-built-a-proof-gatekeeper-that-cant-lie-to-itself-and-found-the-one-trap-it-cant-see-2obm</guid>
+      <description>[Score: 85] 筆者は、zkVerifyの公式回路を用いて、ゼロ知識証明で意思決定を記録するプルーフゲートキーパーを構築しました。 / ゼロ知識証明は特定のアクションが検証可能であることを保証しますが、エージェントが正直であること自体を保証するものではありません。 / エージェントの意思決定が本当に正しいかを知るには、証明がカバーする範囲と、カバーしない範囲を正確に理解することが重要です。 [実務示唆: ゼロ知識証明をシステムに導入する際は、証明がカバーする具体的な「主張」を明確にし、証明が保証しない範囲を理解した上で設計することで、潜在的な脆弱性を回避できます。] (Source: Dev.to)</description>
+      <pubDate>Sat, 21 Nov 2026 21:34:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>新宿駅で財布を忘れて家に帰れない女の子から「PayPay1000円分を現金で交換して貰えませんか？」とお願いされ、「返さなくていいよ」と1000円あげたら喜ばれず戸惑っていた</title>
+      <link>https://togetter.com/li/2773268</link>
+      <guid isPermaLink="false">https://togetter.com/li/2773268</guid>
+      <description>[Score: 70] 新宿駅で財布を忘れたという女性からPayPay1000円分の現金交換を求められた男性が、現金1000円を渡したところ女性が喜ばなかったという体験談です。 / この事象はPayPay情報を抜き取る詐欺の可能性が指摘されており、SNS上で議論が交わされています。 / 交番での交通費貸し出しについても、地域や警察署によって対応が異なることが示されています。 [実務示唆: 見知らぬ人からのPayPay現金交換依頼は詐欺の可能性が高いため、安易に応じず、交番への案内や個人情報のやり取りを避けるなど慎重に対応すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 21 Nov 2026 12:31:59 +0000</pubDate>
     </item>
   </channel>
 </rss>

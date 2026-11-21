@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-11-15T10:20:09.337857+09:00",
-  "week_start": "2026-11-09",
-  "week_end": "2026-11-15",
-  "article_count": 391,
-  "overview": "今週はAI技術の進化と活用が顕著で、特にAIエージェントやオンデバイスAIモデルの登場が目立ちました。一方で、セキュリティ脆弱性やクラウドサービスの障害、個人情報保護の動きなど、ITインフラの安定性と安全性が改めて問われる一週間でもありました。AIの進化とそれに伴うリスク管理が今後の重要なテーマとなるでしょう。",
+  "generated_at": "2026-11-22T06:45:23.716134+09:00",
+  "week_start": "2026-11-16",
+  "week_end": "2026-11-22",
+  "article_count": 347,
+  "overview": "今週は、OpenSSLやPHP、Nginx、Git、OpenJDK、Rubyなど主要なソフトウェアやフレームワークにおける深刻な脆弱性が多数報告され、セキュリティリスクへの警戒が改めて高まりました。同時に、AI技術の進化が目覚ましく、サイバーセキュリティ対策、コーディング支援、さらには数学や物理学の未解決問題解決にまで応用される事例が相次いでいます。しかし、AI生成コンテンツの品質や信頼性に関する課題も浮上しており、人間による検証や適切な活用が求められています。また、サプライチェーン攻撃や外部委託先からの情報漏洩といったインシデントも発生し、多層的なセキュリティ対策の重要性が浮き彫りになりました。",
   "trends": [
-    "AIエージェントの進化と活用",
-    "オンデバイスAIモデルの登場",
-    "クラウドサービスのセキュリティと安定性",
-    "個人情報保護の強化",
-    "ソフトウェアサプライチェーンの脆弱性"
+    "主要ソフトウェアの深刻な脆弱性多発",
+    "AI技術の急速な進化と多分野への応用",
+    "AI生成コンテンツの品質と信頼性への課題",
+    "サプライチェーン攻撃と外部委託先のセキュリティリスク",
+    "IaC移行とパフォーマンス改善の技術的進展"
   ],
   "highlights": [
     {
-      "title": "Claude Fable 5.2とMythos 5.2",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-      "comment": "Anthropicの最新モデルは、コーディングや推論能力の向上により、高度な技術的課題解決へのAI活用を加速させるでしょう。"
+      "title": "OpenSSL: EVP_EncodeBlock()におけるバッファオーバーフロー (CVE-2026-121481, CVSS 9.8)",
+      "url": "https://github.com/openssl/openssl/pull/33652",
+      "comment": "OpenSSLという基盤技術におけるCVSS 9.8の極めて深刻な脆弱性であり、広範なシステムに影響を与える可能性があるため最重要です。"
     },
     {
-      "title": "AWS、AIエージェント向けに強力な隔離環境とネイティブなEC2性能を備えた軽量VM「AWS Nitro Sandboxes」提供開始",
-      "url": "https://www.publickey1.jp/blog/26/awsaiec2vmaws_nitro_sandboxes.html",
-      "comment": "AIエージェントの普及に伴うセキュリティ課題に対し、AWSが提供する強力な隔離環境は、信頼性の高いAI活用を後押しします。"
+      "title": "Nginxにおける認証不要のリモートコード実行の脆弱性",
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "comment": "NginxのHTTP/2に認証不要のリモートコード実行脆弱性が発見され、多くのWebサーバーに影響を及ぼす可能性があるため、迅速な対応が求められます。"
     },
     {
-      "title": "Foundation Modelsフレームワーク",
-      "url": "https://developer.apple.com/foundation-models-framework/",
-      "comment": "AppleがLLMをアプリに統合するためのフレームワークを発表したことで、オンデバイスAIの普及と開発が加速する可能性が高いです。"
+      "title": "マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始",
+      "url": "https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html",
+      "comment": "AIがサイバー攻撃に利用される中、マイクロソフトがAIエージェントで対抗する新サービスを発表したことは、セキュリティの未来を示す重要な動きです。"
     },
     {
-      "title": "大規模なMicrosoft 365の障害がOutlook、Teams、Copilotに世界中で影響",
-      "url": "https://www.reddit.com/r/technology/comments/1xusd3p/massive_microsoft_365_outage_disrupts_outlook/",
-      "comment": "主要クラウドサービスの広範囲な障害は、ビジネスにおけるクラウド依存度の高まりと、安定運用への課題を浮き彫りにしました。"
+      "title": "Claudeを使い「リーマン予想」を証明か Anthropic数学者が発表 Lean検証も通過、数学界が精査へ",
+      "url": "https://japan.cnet.com/article/35255245/",
+      "comment": "AIが167年間未解決の数学の難問「リーマン予想」の証明に貢献した可能性は、AIの知的能力の飛躍的な進化を示す画期的なニュースです。"
     },
     {
-      "title": "Apache HTTP Serverに深刻なRCE脆弱性",
-      "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-      "comment": "広く利用されているApache HTTP Serverの深刻な脆弱性は、多くのシステムに影響を及ぼす可能性があり、迅速な対応が求められます。"
+      "title": "【速報】三井住友銀で情報漏えい、最大1400万件",
+      "url": "https://www.47news.jp/15262461.html",
+      "comment": "大手金融機関における大規模な情報漏洩は、外部委託先のセキュリティ管理の甘さが露呈した事例であり、企業にとって喫緊の課題であることを示しています。"
     }
   ]
 }
