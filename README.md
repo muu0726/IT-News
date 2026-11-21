@@ -87,8 +87,10 @@ python -m http.server 8000
 ```
 ├── gather.py                  # バックエンド（収集・本文取得・差分解析・グルーピング・保存・通知）
 ├── gadget.py                  # ガジェット新製品バックエンド（RSS収集・解析・30日蓄積・通知）
+├── wait_until.py              # JST 指定時刻までの共通待機モジュール（日またぎ・2段階分割対応）
 ├── test_gather.py             # gather.py ユニットテスト
 ├── test_gadget.py             # gadget.py ユニットテスト
+├── test_wait_until.py         # wait_until.py ユニットテスト
 ├── index.html                 # IT News フロントエンド（PWA SPA、バニラJS）
 ├── gadget.html                # Gadget Hub フロントエンド（名寄せ・価格帯フィルタ対応）
 ├── manifest.json              # PWA マニフェスト
@@ -102,6 +104,7 @@ python -m http.server 8000
 ├── archive/                   # 日付別アーカイブ（自動生成・180日保持）
 │   ├── index.json             # アーカイブ一覧
 │   ├── search_index.json      # 全期間横断検索用統合インデックス
+│   ├── trends_30d.json        # 直近30日トレンド統計事前集計データ
 │   └── YYYY-MM-DD.json
 ├── docs/
 │   └── SPEC.md                # 詳細仕様書
@@ -112,15 +115,17 @@ python -m http.server 8000
 
 ## 自動実行スケジュール
 - **毎日 2回（JST 7:00 / 15:00）** に定期実行・通知を行います。
-  - 朝の部: **JST 6:45（UTC 21:45）** に GitHub Actions が前倒し起動 → **JST 7:00** に通知送信（待機時間を約10分に短縮しランナー時間を約75%削減）
-  - 昼の部: **JST 14:45（UTC 5:45）** に GitHub Actions が前倒し起動 → **JST 15:00** に通知送信
+  - GitHub Actions `schedule` の大きな起動遅延（数時間規模）を吸収するため、混雑帯（`:00/:15/:30/:45`）を避けた約 8 時間 23 分前に起動し、収集直前（06:45 / 14:45 JST）まで `wait_1` → `wait_2` の 2 段階で待機してから収集を実行します。
+  - 朝の部: **前日 JST 22:37（UTC 13:37）** 起動 → **JST 6:45** 収集 → **JST 7:00** 通知送信
+  - 昼の部: **当日 JST 6:37（UTC 21:37）** 起動 → **JST 14:45** 収集 → **JST 15:00** 通知送信
 - 実行フロー:
-  1. collect ジョブ: `pytest` → `gather.py --no-notify`（9 ソース並列収集・差分解析・既出抑制・ブリーフィング生成・カテゴリ別RSS生成）→ `gadget.py --no-notify`（ガジェット収集・専用RSS生成）
-  2. 生成データ (`data.json`, `archive/`, `feed.xml`, `feed_*.xml`, `gadgets.json`, `gadget_feed.xml` 等) を Git コミット & プッシュし、GitHub Pages へデプロイ
-  3. notify ジョブ: 7:00 または 15:00 まで待機して今回新着の IT ニュース通知 → ガジェット通知（最大3件、別メッセージ）
-  4. 実行失敗・タイムアウト時は Discord Webhook へ失敗アラートを通知
-- **毎週日曜** は週間ダイジェスト (`digest.json`) を自動生成し Discord へ投稿。
-- **手動実行**: GitHub の Actions タブ → `IT Info Collector - 定期実行` → `Run workflow`
+  1. wait_1 / wait_2 ジョブ: `wait_until.py` で目標収集時刻（`06:45` または `14:45` JST）まで待機（遅延が 4 時間以上の日は `wait_1` のみで完了し `wait_2` はスキップ、収集時刻超過時は待機せず即時進行）
+  2. collect ジョブ: 最新 `main` をチェックアウトし `pytest` → `gather.py --no-notify`（9 ソース並列収集・差分解析・当日失敗記事再解析・既出抑制・ブリーフィング生成・30日統計生成・カテゴリ別RSS生成）→ `gadget.py --no-notify`（ガジェット収集・専用RSS生成、個別タイムアウト 8 分）
+  3. 生成データ (`data.json`, `archive/`, `feed.xml`, `feed_*.xml`, `gadgets.json`, `gadget_feed.xml` 等) を Git コミット・`pull --rebase -X theirs`・プッシュし、公開用静的ファイルのみ `_site/` にまとめて GitHub Pages へデプロイ（アクションは Node 24 対応版）
+  4. notify ジョブ: `wait_1` が解決した枠別時刻（`07:00` または `15:00` JST）まで最大 30 分待機して今回新着の IT ニュース通知 → ガジェット通知（最大3件、別メッセージ）（目標超過時は即時送信）
+  5. wait_1 / wait_2 / collect / notify の失敗・タイムアウト時は Discord Webhook へ失敗アラートを通知
+- **毎週日曜** は週間ダイジェスト (`digest.json`) を自動生成し、生成回に限り Discord へ 1 回投稿。
+- **手動実行・外部トリガー**: GitHub の Actions タブ → `IT Info Collector - 定期実行` → `Run workflow`（`notify_at_jst` 空欄なら即時通知）。外部の cron サービス等からさらに厳密な時刻に起動したい場合は、GitHub REST API の `workflow_dispatch`（`POST /repos/muu0726/IT-News/actions/workflows/update.yml/dispatches` に `{"ref": "main", "inputs": {"notify_at_jst": "07:00"}}` 等）を 06:50 / 14:50 JST に呼び出すことで通知時刻を厳密に揃えることも可能です。
 
 ## デプロイ互換性
 - **GitHub Pages**: GitHub Actions 連携による即時自動デプロイ（推奨）

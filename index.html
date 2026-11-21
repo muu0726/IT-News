@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="IT技術情報を自動収集・AI分析し、重要度スコア付きで一覧表示するインテリジェントニュースダッシュボード">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IT Info Hub — AI技術ニュースダッシュボード">
+  <meta property="og:description" content="IT技術情報を自動収集・AI分析し、重要度スコア付きで一覧表示するインテリジェントニュースダッシュボード">
+  <meta property="og:url" content="https://muu0726.github.io/IT-News/">
+  <meta name="twitter:card" content="summary">
   <title>IT Info Hub — AI技術ニュースダッシュボード</title>
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#141413">
@@ -875,6 +880,14 @@
     }
     .card-list.compact {
       gap: 3px;
+    }
+    .load-more-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px;
+      padding: 8px 0;
     }
 
     .card {
@@ -2123,6 +2136,8 @@
       let archiveIndex = [];
       const archiveCache = new Map();
       let globalArticles = null;
+      const PAGE_SIZE = 100;
+      let renderLimit = PAGE_SIZE;
 
       // ── localStorage ──
       const store = {
@@ -2381,20 +2396,21 @@
         return `- **[${title}](${url})** (${src}${cat} / Score: ${score})${tags}${summaryLines ? '\n' + summaryLines : ''}${takeawayLine}${ghLine}${memoLine}`;
       }
 
+      function visibleRendered() {
+        return lastRendered.slice(0, renderLimit);
+      }
+
       function exportVisibleToMarkdown() {
-        if (!lastRendered.length) {
+        const visible = visibleRendered();
+        if (!visible.length) {
           showToast('出力対象の記事がありません');
           return;
         }
         const dateStr = new Date().toLocaleDateString('ja-JP');
-        const header = `## IT Info Hub 記事まとめ (${dateStr} / ${lastRendered.length}件)\n\n`;
-        const body = lastRendered.map((a) => articleToMarkdown(a)).join('\n');
+        const header = `## IT Info Hub 記事まとめ (${dateStr} / ${visible.length}件)\n\n`;
+        const body = visible.map((a) => articleToMarkdown(a)).join('\n');
         const md = header + body + '\n';
-        if (navigator.clipboard) {
-          navigator.clipboard.writeText(md).then(() =>
-            showToast(`表示中の ${lastRendered.length} 件をMarkdownでコピーしました`)
-          );
-        }
+        copyToClipboard(md, `表示中の ${visible.length} 件をMarkdownでコピーしました`);
       }
 
       // ── Favorites / Read / Keywords ──
@@ -2439,7 +2455,7 @@
       }
 
       function markVisibleAsRead() {
-        const unreadInView = lastRendered.filter((a) => a.url && !readUrls.has(a.url)).map((a) => a.url);
+        const unreadInView = visibleRendered().filter((a) => a.url && !readUrls.has(a.url)).map((a) => a.url);
         if (!unreadInView.length) {
           showToast('表示中の未読記事はありません');
           return;
@@ -2447,12 +2463,12 @@
         unreadInView.forEach((u) => readUrls.add(u));
         saveReadSet();
         updateFilterBadges();
-        renderArticles();
+        renderArticles({ resetLimit: false });
         showToast(`${unreadInView.length}件を既読にしました`, '元に戻す', () => {
           unreadInView.forEach((u) => readUrls.delete(u));
           saveReadSet();
           updateFilterBadges();
-          renderArticles();
+          renderArticles({ resetLimit: false });
         });
       }
 
@@ -2481,7 +2497,7 @@
       // ── Data Fetch ──
       async function fetchData(file = 'data.json') {
         try {
-          const resp = await fetch(file + '?t=' + Date.now());
+          const resp = await fetch(file, { cache: 'no-cache' });
           if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
           return await resp.json();
         } catch (e) {
@@ -2499,7 +2515,7 @@
 
       async function loadArchiveIndex() {
         try {
-          const resp = await fetch('archive/index.json?t=' + Date.now());
+          const resp = await fetch('archive/index.json', { cache: 'no-cache' });
           if (!resp.ok) return;
           const files = await resp.json();
           archiveIndex = files.filter((fn) => /^[\w.-]+\.json$/.test(fn));
@@ -2629,14 +2645,94 @@
         return { include, exclude };
       }
 
-      function highlightEscapedText(escapedText, terms) {
-        if (!terms.length || !escapedText) return escapedText;
+      function highlightText(rawText, terms) {
+        const str = String(rawText ?? '');
+        if (!terms || !terms.length || !str) return esc(str);
         const safeTerms = terms
-          .map((t) => esc(t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+          .map((t) => String(t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
           .filter(Boolean);
-        if (!safeTerms.length) return escapedText;
+        if (!safeTerms.length) return esc(str);
         const re = new RegExp(`(${safeTerms.join('|')})`, 'gi');
-        return escapedText.replace(re, '<mark class="hl">$1</mark>');
+        let out = '';
+        let lastIndex = 0;
+        let match;
+        while ((match = re.exec(str)) !== null) {
+          if (match[0].length === 0) {
+            re.lastIndex += 1;
+            continue;
+          }
+          if (match.index > lastIndex) {
+            out += esc(str.slice(lastIndex, match.index));
+          }
+          out += `<mark class="hl">${esc(match[0])}</mark>`;
+          lastIndex = re.lastIndex;
+        }
+        if (lastIndex < str.length) {
+          out += esc(str.slice(lastIndex));
+        }
+        return out;
+      }
+
+      function debounce(fn, delay = 150) {
+        let timer = null;
+        const wrapped = (...args) => {
+          clearTimeout(timer);
+          timer = setTimeout(() => { timer = null; fn(...args); }, delay);
+        };
+        wrapped.cancel = () => {
+          clearTimeout(timer);
+          timer = null;
+        };
+        return wrapped;
+      }
+
+      function copyToClipboard(text, successMsg) {
+        if (!navigator.clipboard) {
+          showToast('クリップボードへのコピーが利用できません');
+          return;
+        }
+        navigator.clipboard.writeText(text)
+          .then(() => showToast(successMsg))
+          .catch(() => showToast('クリップボードへのコピーに失敗しました'));
+      }
+
+      function normalizeArticleUrl(url) {
+        if (!url) return '';
+        try {
+          const u = new URL(url);
+          const base = `${u.protocol}//${u.host}${u.pathname}`.replace(/\/+$/, '').toLowerCase();
+          const keep = ['id', 'v', 'p'];
+          const kept = [];
+          u.searchParams.forEach((val, key) => {
+            const lk = key.toLowerCase();
+            if (keep.includes(lk) && val) kept.push([lk, val]);
+          });
+          if (kept.length) {
+            kept.sort((a, b) => a[0].localeCompare(b[0]) || a[1].localeCompare(b[1]));
+            return `${base}?${new URLSearchParams(kept).toString()}`;
+          }
+          return base;
+        } catch {
+          return String(url).trim().toLowerCase();
+        }
+      }
+
+      function toBase64Utf8(str) {
+        const bytes = new TextEncoder().encode(str);
+        let bin = '';
+        for (let i = 0; i < bytes.length; i += 0x8000) {
+          bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+        }
+        return btoa(bin);
+      }
+
+      function fromBase64Utf8(b64) {
+        const bin = atob(b64);
+        const bytes = new Uint8Array(bin.length);
+        for (let i = 0; i < bin.length; i++) {
+          bytes[i] = bin.charCodeAt(i);
+        }
+        return new TextDecoder().decode(bytes);
       }
 
       // ── Badge Counts & Reset State ──
@@ -2670,6 +2766,7 @@
       }
 
       function resetAllFilters() {
+        debouncedRenderArticles.cancel();
         currentSearch = '';
         searchInput.value = '';
         searchClearBtn.classList.remove('visible');
@@ -2835,7 +2932,7 @@
         const isNewRun = Boolean(art.new_at && latestGeneratedAt && art.new_at === latestGeneratedAt);
 
         const cardHlTerms = matchedKw ? [...new Set([...hlTerms, matchedKw])] : hlTerms;
-        const titleHtml = highlightEscapedText(esc(art.title || 'No Title'), cardHlTerms);
+        const titleHtml = highlightText(art.title || 'No Title', cardHlTerms);
 
         const summaryLines = String(art.summary || '')
           .replace(/\\n/g, '\n')
@@ -2843,7 +2940,7 @@
           .map((l) => l.trim())
           .filter(Boolean);
         const summaryHtml = summaryLines
-          .map((line) => `<div class="summary-line">${highlightEscapedText(esc(line), cardHlTerms)}</div>`)
+          .map((line) => `<div class="summary-line">${highlightText(line, cardHlTerms)}</div>`)
           .join('');
 
         const tagsHtml = (art.tags || [])
@@ -2906,7 +3003,7 @@
         const isEditingMemo = Boolean(editingMemoUrl && art.url && editingMemoUrl === art.url);
         const memoBoxHtml = memoText && !isEditingMemo
           ? `<div class="card-memo-box">
-              <div><span class="card-memo-label">MEMO</span>${highlightEscapedText(esc(memoText), cardHlTerms)}</div>
+              <div><span class="card-memo-label">MEMO</span>${highlightText(memoText, cardHlTerms)}</div>
             </div>`
           : '';
         const memoEditorHtml = `
@@ -2930,7 +3027,7 @@
         const takeawayHtml = art.actionable_takeaway
           ? `<div class="card-takeaway-box">
               <span class="card-takeaway-label">実務示唆</span>
-              <span class="card-takeaway-text">${highlightEscapedText(esc(art.actionable_takeaway), cardHlTerms)}</span>
+              <span class="card-takeaway-text">${highlightText(art.actionable_takeaway, cardHlTerms)}</span>
             </div>`
           : '';
 
@@ -3005,164 +3102,179 @@
           </article>`;
       }
 
-      function attachCardEventListeners() {
-        // Tag click
-        cardList.querySelectorAll('.tag').forEach((el) => {
-          el.addEventListener('click', (e) => {
+      function setupCardEventDelegation() {
+        cardList.addEventListener('click', (e) => {
+          const loadMoreBtn = e.target.closest('.load-more-btn');
+          if (loadMoreBtn) {
+            renderLimit += PAGE_SIZE;
+            renderArticles({ resetLimit: false });
+            return;
+          }
+          const loadAllBtn = e.target.closest('.load-all-btn');
+          if (loadAllBtn) {
+            renderLimit = lastRendered.length;
+            renderArticles({ resetLimit: false });
+            return;
+          }
+
+          const tagEl = e.target.closest('.tag');
+          if (tagEl) {
             e.stopPropagation();
-            const art = lastRendered[+el.dataset.idx];
-            const tag = (art?.tags || [])[+el.dataset.tagIdx];
+            const art = lastRendered[+tagEl.dataset.idx];
+            const tag = (art?.tags || [])[+tagEl.dataset.tagIdx];
             if (tag) setTagFilter(tag);
-          });
-        });
-        // Favorite click
-        cardList.querySelectorAll('.card-fav').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            return;
+          }
+
+          const favEl = e.target.closest('.card-fav');
+          if (favEl) {
             e.stopPropagation();
-            const art = lastRendered[+el.dataset.idx];
+            const art = lastRendered[+favEl.dataset.idx];
             if (!art) return;
             toggleFavorite(art.url);
-            renderArticles();
-          });
-        });
-        // Group badge click
-        cardList.querySelectorAll('.badge-group').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            renderArticles({ resetLimit: false });
+            return;
+          }
+
+          const groupEl = e.target.closest('.badge-group');
+          if (groupEl) {
             e.stopPropagation();
-            const art = lastRendered[+el.dataset.idx];
+            const art = lastRendered[+groupEl.dataset.idx];
             if (art?.topic_group != null) setGroupFilter(art.topic_group);
-          });
-        });
-        // Topic thread toggle & link read tracking
-        cardList.querySelectorAll('[data-thread-toggle]').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            return;
+          }
+
+          const threadToggle = e.target.closest('[data-thread-toggle]');
+          if (threadToggle) {
             e.stopPropagation();
-            el.closest('.topic-thread-box')?.classList.toggle('open');
-          });
-        });
-        cardList.querySelectorAll('.thread-link').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            threadToggle.closest('.topic-thread-box')?.classList.toggle('open');
+            return;
+          }
+
+          const threadLink = e.target.closest('.thread-link');
+          if (threadLink) {
             e.stopPropagation();
-            if (el.dataset.url) markRead(el.dataset.url);
-          });
-        });
-        // Read tracking on article link click
-        cardList.querySelectorAll('.article-link').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            if (threadLink.dataset.url) markRead(threadLink.dataset.url);
+            return;
+          }
+
+          const articleLink = e.target.closest('.article-link');
+          if (articleLink) {
             e.stopPropagation();
-            const art = lastRendered[+el.dataset.idx];
+            const art = lastRendered[+articleLink.dataset.idx];
             if (!art) return;
             markRead(art.url);
-            setTimeout(renderArticles, 250);
-          });
-        });
-        // Manual Read/Unread toggle
-        cardList.querySelectorAll('.toggle-read-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            setTimeout(() => renderArticles({ resetLimit: false }), 250);
+            return;
+          }
+
+          const readBtn = e.target.closest('.toggle-read-btn');
+          if (readBtn) {
             e.stopPropagation();
-            const art = lastRendered[+el.dataset.idx];
+            const art = lastRendered[+readBtn.dataset.idx];
             if (!art) return;
             toggleReadState(art.url);
-            renderArticles();
-          });
-        });
-        // Copy URL
-        cardList.querySelectorAll('.copy-url-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            renderArticles({ resetLimit: false });
+            return;
+          }
+
+          const copyUrlBtn = e.target.closest('.copy-url-btn');
+          if (copyUrlBtn) {
             e.stopPropagation();
-            const art = lastRendered[+el.dataset.idx];
-            if (!art?.url) return;
-            if (navigator.clipboard) {
-              navigator.clipboard.writeText(art.url).then(() => showToast('URLをクリップボードにコピーしました'));
+            const art = lastRendered[+copyUrlBtn.dataset.idx];
+            if (art?.url) {
+              copyToClipboard(art.url, 'URLをクリップボードにコピーしました');
             }
-          });
-        });
-        // Copy Markdown (B-4)
-        cardList.querySelectorAll('.copy-md-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            return;
+          }
+
+          const copyMdBtn = e.target.closest('.copy-md-btn');
+          if (copyMdBtn) {
             e.stopPropagation();
-            const art = lastRendered[+el.dataset.idx];
-            if (!art || !navigator.clipboard) return;
-            navigator.clipboard.writeText(articleToMarkdown(art)).then(() =>
-              showToast('記事をMarkdown形式でコピーしました')
-            );
-          });
-        });
-        // Memo actions (A-3)
-        cardList.querySelectorAll('.edit-memo-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            const art = lastRendered[+copyMdBtn.dataset.idx];
+            if (art) {
+              copyToClipboard(articleToMarkdown(art), '記事をMarkdown形式でコピーしました');
+            }
+            return;
+          }
+
+          const editMemoBtn = e.target.closest('.edit-memo-btn');
+          if (editMemoBtn) {
             e.stopPropagation();
-            const art = lastRendered[+el.dataset.idx];
+            const art = lastRendered[+editMemoBtn.dataset.idx];
             if (!art?.url) return;
             editingMemoUrl = editingMemoUrl === art.url ? null : art.url;
-            renderArticles();
+            renderArticles({ resetLimit: false });
             if (editingMemoUrl) {
-              const inp = cardList.querySelector(`[data-memo-input="${el.dataset.idx}"]`);
+              const inp = cardList.querySelector(`[data-memo-input="${editMemoBtn.dataset.idx}"]`);
               inp?.focus();
             }
-          });
-        });
-        cardList.querySelectorAll('.save-memo-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            return;
+          }
+
+          const saveMemoBtn = e.target.closest('.save-memo-btn');
+          if (saveMemoBtn) {
             e.stopPropagation();
-            const art = lastRendered[+el.dataset.idx];
-            const inp = cardList.querySelector(`[data-memo-input="${el.dataset.idx}"]`);
+            const art = lastRendered[+saveMemoBtn.dataset.idx];
+            const inp = cardList.querySelector(`[data-memo-input="${saveMemoBtn.dataset.idx}"]`);
             if (!art?.url || !inp) return;
             setMemo(art.url, inp.value);
             editingMemoUrl = null;
-            renderArticles();
+            renderArticles({ resetLimit: false });
             showToast(getMemo(art.url) ? 'メモを保存しました' : 'メモを削除しました');
-          });
-        });
-        cardList.querySelectorAll('.delete-memo-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            return;
+          }
+
+          const deleteMemoBtn = e.target.closest('.delete-memo-btn');
+          if (deleteMemoBtn) {
             e.stopPropagation();
-            const art = lastRendered[+el.dataset.idx];
+            const art = lastRendered[+deleteMemoBtn.dataset.idx];
             if (!art?.url) return;
             setMemo(art.url, '');
             editingMemoUrl = null;
-            renderArticles();
+            renderArticles({ resetLimit: false });
             showToast('メモを削除しました');
-          });
-        });
-        cardList.querySelectorAll('.cancel-memo-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            return;
+          }
+
+          const cancelMemoBtn = e.target.closest('.cancel-memo-btn');
+          if (cancelMemoBtn) {
             e.stopPropagation();
             editingMemoUrl = null;
-            renderArticles();
-          });
-        });
-        cardList.querySelectorAll('.card-memo-input').forEach((inp) => {
-          inp.addEventListener('click', (e) => e.stopPropagation());
-          inp.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-              e.preventDefault();
-              const idx = inp.dataset.memoInput;
-              const art = lastRendered[+idx];
-              if (!art?.url) return;
-              setMemo(art.url, inp.value);
-              editingMemoUrl = null;
-              renderArticles();
-              showToast(getMemo(art.url) ? 'メモを保存しました' : 'メモを削除しました');
-            } else if (e.key === 'Escape') {
-              e.stopPropagation();
-              editingMemoUrl = null;
-              renderArticles();
+            renderArticles({ resetLimit: false });
+            return;
+          }
+
+          if (cardList.classList.contains('compact')) {
+            const cardEl = e.target.closest('.card');
+            if (cardEl && !e.target.closest('a, button, input, .tag, .badge-group, .topic-thread-box, .card-memo-editor')) {
+              cardEl.classList.toggle('expanded');
             }
-          });
+          }
         });
-        // Compact mode card click to expand/collapse details
-        cardList.querySelectorAll('.card').forEach((cardEl) => {
-          cardEl.addEventListener('click', (e) => {
-            if (!cardList.classList.contains('compact')) return;
-            if (e.target.closest('a, button, input, .tag, .badge-group, .topic-thread-box, .card-memo-editor')) return;
-            cardEl.classList.toggle('expanded');
-          });
+
+        cardList.addEventListener('keydown', (e) => {
+          if (!e.target.matches('.card-memo-input')) return;
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            const idx = e.target.dataset.memoInput;
+            const art = lastRendered[+idx];
+            if (!art?.url) return;
+            setMemo(art.url, e.target.value);
+            editingMemoUrl = null;
+            renderArticles({ resetLimit: false });
+            showToast(getMemo(art.url) ? 'メモを保存しました' : 'メモを削除しました');
+          } else if (e.key === 'Escape') {
+            e.stopPropagation();
+            editingMemoUrl = null;
+            renderArticles({ resetLimit: false });
+          }
         });
       }
 
       // ── Render ──
-      function renderArticles() {
+      function renderArticles({ resetLimit = true } = {}) {
+        if (resetLimit) renderLimit = PAGE_SIZE;
         const dataset = currentDataset();
         let filtered = applyFilters(dataset);
 
@@ -3185,10 +3297,18 @@
         const { include } = parseSearchQuery(currentSearch);
         const hlTerms = [...include];
 
-        cardList.innerHTML = filtered
+        const visible = filtered.slice(0, renderLimit);
+        const remaining = filtered.length - visible.length;
+        const loadMoreHtml = remaining > 0
+          ? `<div class="load-more-wrap">
+              <button type="button" class="btn load-more-btn">さらに表示（残り ${remaining} 件）</button>
+              <button type="button" class="btn load-all-btn">すべて表示</button>
+            </div>`
+          : '';
+
+        cardList.innerHTML = visible
           .map((art, i) => renderCard(art, i, hlTerms, threadChildrenMap, affinityProfile))
-          .join('');
-        attachCardEventListeners();
+          .join('') + loadMoreHtml;
       }
 
       function setTagFilter(tag) {
@@ -3352,7 +3472,7 @@
           favorites, keywords, muted: mutedTerms, memos: memoMap, read: [...readUrls],
           exported_at: new Date().toISOString(),
         };
-        const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
+        const encoded = toBase64Utf8(JSON.stringify(payload));
         if (navigator.clipboard) {
           navigator.clipboard.writeText(encoded)
             .then(() => showToast('設定コードをクリップボードにコピーしました'))
@@ -3372,7 +3492,7 @@
         const code = $('#importCodeInput').value.trim();
         if (!code) return;
         try {
-          const payload = JSON.parse(decodeURIComponent(escape(atob(code))));
+          const payload = JSON.parse(fromBase64Utf8(code));
           if (Array.isArray(payload.favorites)) {
             favorites = [...new Set([...favorites, ...payload.favorites])];
             store.set('itinfohub_favorites', favorites);
@@ -3549,7 +3669,7 @@
           const seen = new Set();
           const merged = [];
           [...allArticles, ...idxData.articles].forEach((a) => {
-            const key = (a.url || '').toLowerCase();
+            const key = normalizeArticleUrl(a.url);
             if (!key || !seen.has(key)) {
               seen.add(key);
               merged.push(a);
@@ -3567,7 +3687,7 @@
         const merged = [];
         [{ articles: allArticles }, ...results].forEach((data) => {
           (data?.articles || []).forEach((a) => {
-            const key = (a.url || '').toLowerCase();
+            const key = normalizeArticleUrl(a.url);
             if (!key || !seen.has(key)) {
               seen.add(key);
               merged.push(a);
@@ -3760,6 +3880,10 @@
       }
 
       async function loadTrendData() {
+        const prebuilt = await fetchData('archive/trends_30d.json');
+        if (prebuilt && Array.isArray(prebuilt.daily) && Array.isArray(prebuilt.topTags)) {
+          return prebuilt;
+        }
         const files = archiveIndex.slice(0, 30).reverse();
         const results = await Promise.all(files.map((fn) => fetchArchive(fn)));
         const daily = [];
@@ -3898,10 +4022,11 @@
           e.preventDefault();
           const art = lastRendered[focusedCardIdx];
           if (art?.url) {
+            const keepIdx = focusedCardIdx;
             markRead(art.url);
             window.open(safeUrl(art.url), '_blank', 'noopener,noreferrer');
-            renderArticles();
-            updateCardFocus(focusedCardIdx);
+            renderArticles({ resetLimit: false });
+            updateCardFocus(keepIdx);
           }
         } else if (e.key === 'f' && focusedCardIdx >= 0) {
           e.preventDefault();
@@ -3909,7 +4034,7 @@
           if (art) {
             const keepIdx = focusedCardIdx;
             toggleFavorite(art.url);
-            renderArticles();
+            renderArticles({ resetLimit: false });
             updateCardFocus(keepIdx);
           }
         } else if (e.key === 'm' && focusedCardIdx >= 0) {
@@ -3918,20 +4043,20 @@
           if (art) {
             const keepIdx = focusedCardIdx;
             toggleReadState(art.url);
-            renderArticles();
+            renderArticles({ resetLimit: false });
             updateCardFocus(keepIdx);
           }
         } else if (e.key === 'c' && focusedCardIdx >= 0) {
           e.preventDefault();
           const art = lastRendered[focusedCardIdx];
-          if (art?.url && navigator.clipboard) {
-            navigator.clipboard.writeText(art.url).then(() => showToast('URLをコピーしました'));
+          if (art?.url) {
+            copyToClipboard(art.url, 'URLをコピーしました');
           }
         } else if (e.key === 'y' && focusedCardIdx >= 0) {
           e.preventDefault();
           const art = lastRendered[focusedCardIdx];
-          if (art && navigator.clipboard) {
-            navigator.clipboard.writeText(articleToMarkdown(art)).then(() => showToast('Markdown形式でコピーしました'));
+          if (art) {
+            copyToClipboard(articleToMarkdown(art), 'Markdown形式でコピーしました');
           }
         } else if (e.key === 'n' && focusedCardIdx >= 0) {
           e.preventDefault();
@@ -3943,7 +4068,7 @@
               viewDensity = 'standard';
               applyDensityUI();
             }
-            renderArticles();
+            renderArticles({ resetLimit: false });
             updateCardFocus(keepIdx);
             const inp = cardList.querySelector(`[data-memo-input="${keepIdx}"]`);
             inp?.focus();
@@ -4015,14 +4140,23 @@
       $('#exportMdBtn').addEventListener('click', exportVisibleToMarkdown);
       resetAllFiltersBtn.addEventListener('click', resetAllFilters);
 
+      const debouncedRenderArticles = debounce(() => renderArticles(), 150);
+
       searchInput.addEventListener('input', (e) => {
         currentSearch = e.target.value.trim();
         searchClearBtn.classList.toggle('visible', currentSearch.length > 0);
         searchKbd.style.display = currentSearch.length > 0 ? 'none' : '';
-        renderArticles();
+        debouncedRenderArticles();
+      });
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          debouncedRenderArticles.cancel();
+          renderArticles();
+        }
       });
 
       searchClearBtn.addEventListener('click', () => {
+        debouncedRenderArticles.cancel();
         currentSearch = '';
         searchInput.value = '';
         searchClearBtn.classList.remove('visible');
@@ -4046,9 +4180,16 @@
         favFilterActive = !favFilterActive;
         favFilterBtn.classList.toggle('active', favFilterActive);
         if (favFilterActive) {
-          await ensureGlobalArticles();
-          buildSourceTabs(currentDataset());
-          buildCategorySelect(currentDataset());
+          const todayNorms = new Set(allArticles.map((a) => normalizeArticleUrl(a.url)).filter(Boolean));
+          const needsArchive = favorites.some((u) => {
+            const nu = normalizeArticleUrl(u);
+            return nu && !todayNorms.has(nu);
+          });
+          if (needsArchive) {
+            await ensureGlobalArticles();
+            buildSourceTabs(currentDataset());
+            buildCategorySelect(currentDataset());
+          }
         } else if (!globalSearchActive) {
           $('#statScopeWrap').style.display = 'none';
           buildSourceTabs(allArticles);
@@ -4162,6 +4303,7 @@
         } catch { /* ignore */ }
       });
 
+      setupCardEventDelegation();
       init();
 
       if ('serviceWorker' in navigator) {

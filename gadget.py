@@ -44,6 +44,7 @@ from gather import (
     normalize_url,
     parse_published,
     post_webhook,
+    safe_get,
     wait_until_notify_time,
     xml_escape,
 )
@@ -128,9 +129,10 @@ def _fetch_one_gadget_feed(item: tuple[str, str], now: datetime) -> list[dict]:
     print(f"[INFO] Fetching gadget RSS: {source_name} ...")
     fetched: list[dict] = []
     try:
-        feed = feedparser.parse(
-            feed_url, agent="IT-Info-Collector/1.0 (GitHub Actions Bot)"
-        )
+        resp = safe_get(feed_url, timeout=15)
+        if not resp:
+            return fetched
+        feed = feedparser.parse(resp.content)
         if feed.bozo and not feed.entries:
             print(f"[WARN] RSS feed error ({source_name}): {feed.bozo_exception}")
             return fetched
@@ -366,7 +368,7 @@ def save_gadgets(items: list[dict], run_at: str, path: str = GADGET_FILE) -> Non
         "items": items,
     }
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+        json.dump(output, f, ensure_ascii=False, separators=(",", ":"))
     print(f"[INFO] Saved {path} ({len(items)} items)")
 
 

@@ -16,18 +16,19 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │ GitHub Actions (.github/workflows/update.yml)                 │
-│   毎日2回（JST 06:45→07:00通知 / 14:45→15:00通知）+ dispatch │
+│   毎日2回（前日22:37/当日06:37起動 → 06:45/14:45収集 →       │
+│            07:00/15:00通知）+ workflow_dispatch              │
 │                                                               │
 │  gather.py                                                    │
 │   1. 並列収集   Hacker News API + RSS×8 (ThreadPoolExecutor)  │
 │   2. 重複除去   URL正規化（トラッキング除去・IDクエリ保持）     │
-│   3. 差分再利用 当日分 + 過去3日分の解析済み記事を再利用        │
+│   3. 差分再利用 当日分 + 過去3日分の解析済み記事を再利用（当日失敗分は再解析） │
 │   4. 本文取得   並列8ワーカーでHTML・OGP・読了時間を抽出        │
 │   5. AI解析     Gemini バッチ解析（要約・実務示唆・GitHub連携） │
 │   6. 指標付加   複数ソースHOT加点 + はてなブックマーク一括取得  │
 │   7. 関連記事   埋め込みベクトルで同一話題をグルーピング        │
 │   8. 総括生成   朝刊/夕刊 AIデイリーブリーフィング生成          │
-│   9. 保存       data.json / archive/ / search_index / 各種RSS │
+│   9. 保存       data.json / archive/ / search_index / trends_30d / 各種RSS │
 │  10. 通知       Discord / Slack / LINE（新規かつ score>=80）   │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -49,6 +50,7 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 | `gadget.py` | 最新ガジェット情報の収集・解析・保存・通知（§4.12） |
 | `gadget.html` | 最新ガジェット情報ページ（§5.5） |
 | `gadgets.json` | ガジェット情報（直近30日分を蓄積、自動生成・コミット） |
+| `wait_until.py` | JST 指定時刻までの共通待機モジュール（日またぎ・2段階分割・ドリフト補正） |
 | `.github/workflows/update.yml` | 定期実行ワークフロー |
 | `docs/SPEC.md` | 本仕様書 |
 
@@ -149,11 +151,11 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 - **毎週日曜（JST）** に生成（ローカル検証用に `FORCE_DIGEST=1` で強制実行可）。
 - 直近 7 日分のアーカイブ＋当日分をマージ・重複除去し、スコア 70 以上の上位 25 件を Gemini に渡して総括を生成。
 - 出力: `overview`（3〜4 文の総括）/ `trends`（3〜5 個）/ `highlights`（5 件、選定理由付き）/ 期間・件数メタデータ。
-- Discord にも同内容を embed 投稿。
+- 今回実行で生成された場合（`generated_at == run_at`）のみ Discord にも同内容を embed 投稿（同日 2 回目以降の実行での重複通知を防止）。
 
 ### 4.10 通知（Discord / Slack / LINE）
 
-score ≥ 80 の上位 10 件を対象に、設定済みのチャネルすべてへ送信:
+`analysis_status == "ok"` かつ score ≥ 80 の上位 5 件を対象に、設定済みのチャネルすべてへ送信（絵文字不使用）:
 
 | チャネル | 環境変数 | 形式 |
 |---|---|---|
@@ -234,8 +236,8 @@ score ≥ 80 の上位 10 件を対象に、設定済みのチャネルすべて
 
 ### 5.4 PWA / Service Worker
 
-- キャッシュ名 `itinfohub-v7`。
-- **HTML（ナビゲーション）・JSON・XML**: Network First — フロント更新・データ更新が即時反映され、オフライン時のみキャッシュを返す。
+- キャッシュ名 `itinfohub-v10`。
+- **HTML（ナビゲーション）・JSON・XML**: Network First（クエリ文字列を除いた正規化 URL キーでキャッシュ管理） — フロント更新・データ更新が即時反映され、オフライン時のみキャッシュを返す。
 - その他静的アセット: Cache First。
 
 ### 5.5 最新ガジェット情報ページ（gadget.html）
@@ -248,12 +250,16 @@ score ≥ 80 の上位 10 件を対象に、設定済みのチャネルすべて
 
 ## 6. CI/CD（.github/workflows/update.yml）
 
-- トリガー: cron `45 21 * * *`（JST 06:45 起動 → 07:00 通知）および `45 5 * * *`（JST 14:45 起動 → 15:00 通知）の 1 日 2 回 + `workflow_dispatch`
-- Python 3.12、pip キャッシュあり。3 ジョブ構成:
-  - **collect**（timeout 20 分、concurrency `pages`）: `pytest` → `gather.py --no-notify` → `gadget.py --no-notify`（continue-on-error）→ 通知用データを artifact 保存 → `data.json` / `archive/` / `feed.xml` / `feed_*.xml` / `digest.json` / `gadgets.json` / `gadget_feed.xml` を自動コミット & push → Pages デプロイ
-  - **notify**（timeout 35 分）: artifact を取得 → `gather.py --notify-only`（定期実行時は `NOTIFY_AT_JST=07:00,15:00` かつ待機時間を約10分に抑えて実行。遅延時は即時送信）→ `gadget.py --notify-only`（二重待機なし即時送信・continue-on-error）
-  - **alert**: collect / notify のいずれかが失敗またはキャンセルされた場合に確実に Discord アラート送信
+- トリガー: cron `37 13 * * *`（前日 JST 22:37 起動 → `06:45` 収集 → `07:00` 通知）および `37 21 * * *`（当日 JST 06:37 起動 → `14:45` 収集 → `15:00` 通知）の 1 日 2 回 + `workflow_dispatch`（任意入力 `notify_at_jst`）
+  - GitHub Actions `schedule` の実測遅延（3〜9 時間）を吸収するため約 8 時間 23 分前倒しし、混雑帯（`:00/:15/:30/:45`）を避けた奇数分に設定している。
+- Python 3.12、pip キャッシュあり、全公式アクションは Node 24 対応版を使用。5 ジョブ構成:
+  - **wait_1**（`schedule` 時のみ、timeout 270 分）: `wait_until.py` で収集目標時刻（`06:45` / `14:45` JST）まで最大 250 分（15,000 秒）待機（`max-wait: 30600` 秒超過の大幅遅延時は即時完了）。`collect_at` と `notify_at` をジョブ出力として引き渡す。
+  - **wait_2**（`wait_1` の `done != 'true'` 時のみ、timeout 280 分）: 残りの待機時間を最大 260 分（15,600 秒）待機して `06:45` / `14:45` JST に収束させる。
+  - **collect**（timeout 30 分、concurrency `pages`、`ref: main` 明示チェックアウト）: `pytest` → `gather.py --no-notify`（本文取得 512KB 上限・日本語文字コード補正・埋め込み 80 件チャンク分割・当日失敗記事の再解析回収・`trends_30d.json` 生成）→ `gadget.py --no-notify`（timeout 8 分・continue-on-error）→ 通知用データを artifact 保存 → `git commit` 後に `git pull --rebase -X theirs origin main` & `git push` → 静的配信ファイルのみ `_site/` にステージングして Pages デプロイ
+  - **notify**（`needs: [wait_1, collect]`、timeout 45 分、`ref: main` 明示チェックアウト）: artifact を取得 → `gather.py --notify-only`（`schedule` 時は `wait_1` が出力した枠ごとの `notify_at` を `NOTIFY_AT_JST` に指定、`NOTIFY_MAX_WAIT_SEC=1800` 秒で大幅遅延時は即時送信）→ `gadget.py --notify-only`（二重待機なし即時送信・continue-on-error）
+  - **alert**: `wait_1` / `wait_2` / `collect` / `notify` のいずれかが失敗またはキャンセルされた場合に確実に Discord アラート送信
 - Secrets: `GEMINI_API_KEY`（必須）, `DISCORD_WEBHOOK_URL` / `SLACK_WEBHOOK_URL` / `LINE_CHANNEL_ACCESS_TOKEN`（任意）
+- **外部スケジューラとの併用（任意）**: より厳密な定時配信を行いたい場合は、任意の外部 cron サービスから `POST https://api.github.com/repos/muu0726/IT-News/actions/workflows/update.yml/dispatches` へ `{"ref": "main", "inputs": {"notify_at_jst": "07:00"}}`（または `"15:00"`）を 06:50 / 14:50 JST 等に送信できる。
 
 ## 7. 残存する制約
 

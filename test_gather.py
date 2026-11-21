@@ -123,6 +123,13 @@ def test_wait_until_notify_time_multiple_slots(monkeypatch, sleeps):
     assert wait_until_notify_time(now_evening) == 0.0
     assert sleeps == [45 * 60, 45 * 60]
 
+
+def test_wait_until_notify_time_cross_day(monkeypatch, sleeps):
+    monkeypatch.setenv("NOTIFY_AT_JST", "00:00")
+    now = datetime(2026, 9, 14, 23, 50, tzinfo=JST)
+    assert wait_until_notify_time(now) == 10 * 60
+    assert sleeps == [10 * 60]
+
 class _FakeResp:
     status_code = 200
     def json(self):
@@ -164,9 +171,10 @@ def test_load_today_digest(monkeypatch, tmp_path):
 def test_notify_from_saved(monkeypatch, tmp_path, sleeps):
     data_file = tmp_path / "data.json"
     digest_file = tmp_path / "digest.json"
-    _write_json(data_file, {"generated_at": "2026-09-14T04:20:00+09:00",
+    run_at = datetime.now(JST).isoformat()
+    _write_json(data_file, {"generated_at": run_at,
                             "articles": [{"title": "A", "score": 90}]})
-    _write_json(digest_file, {"generated_at": datetime.now(JST).isoformat()})
+    _write_json(digest_file, {"generated_at": run_at})
     monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
     monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
     monkeypatch.delenv("NOTIFY_AT_JST", raising=False)
@@ -624,4 +632,273 @@ def test_post_webhook_failure(monkeypatch):
 
     # 空 URL の場合はリクエストせず False
     assert gather.post_webhook("", {}, "EmptyUrl") is False
+
+
+def test_notify_from_saved_skips_digest_from_earlier_run(monkeypatch, tmp_path, sleeps):
+    data_file = tmp_path / "data.json"
+    digest_file = tmp_path / "digest.json"
+    today = datetime.now(JST).date()
+    morning_run = datetime(today.year, today.month, today.day, 6, 45, tzinfo=JST).isoformat()
+    afternoon_run = datetime(today.year, today.month, today.day, 14, 45, tzinfo=JST).isoformat()
+    _write_json(data_file, {"generated_at": afternoon_run, "articles": [{"title": "A", "score": 90, "new_at": afternoon_run, "analysis_status": "ok"}]})
+    _write_json(digest_file, {"generated_at": morning_run, "overview": "morning digest"})
+    monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
+    monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
+    monkeypatch.delenv("NOTIFY_AT_JST", raising=False)
+
+    sent = {}
+    monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.setdefault("articles", arts))
+    monkeypatch.setattr(gather, "send_digest_notification", lambda d: sent.setdefault("digest", d))
+
+    gather.notify_from_saved()
+    assert len(sent["articles"]) == 1
+    assert "digest" not in sent
+
+
+def test_notify_from_saved_skips_error_articles(monkeypatch, tmp_path, sleeps):
+    data_file = tmp_path / "data.json"
+    digest_file = tmp_path / "digest.json"
+    run_at = "2026-11-21T06:45:00+09:00"
+    _write_json(
+        data_file,
+        {
+            "generated_at": run_at,
+            "articles": [
+                {"title": "OK Art", "score": 90, "new_at": run_at, "analysis_status": "ok"},
+                {"title": "Err Art", "score": 95, "new_at": run_at, "analysis_status": "error"},
+                {"title": "Skip Art", "score": 92, "new_at": run_at, "analysis_status": "skipped"},
+            ],
+        },
+    )
+    monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
+    monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
+    monkeypatch.delenv("NOTIFY_AT_JST", raising=False)
+
+    sent = {}
+    monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.setdefault("articles", arts))
+    gather.notify_from_saved()
+    assert [a["title"] for a in sent["articles"]] == ["OK Art"]
+
+
+def test_parse_json_safely_repairs_invalid_backslash_escape(capsys):
+    raw = '[{"id": 0, "summary": "path foo\\_bar and \\(test\\) \\n line2"}]'
+    res = parse_json_safely(raw)
+    assert res == [{"id": 0, "summary": "path foo\\_bar and \\(test\\) \n line2"}]
+
+    # quiet=True で失敗時の [WARN] を抑制
+    assert parse_json_safely("not json at all", quiet=True) is None
+    assert capsys.readouterr().out == ""
+
+
+def test_call_gemini_rest_retries_on_json_parse_failure(monkeypatch, sleeps):
+    responses = [
+        {"candidates": [{"finishReason": "STOP", "content": {"parts": [{"text": "broken {json"}]}}]},
+        {"candidates": [{"finishReason": "STOP", "content": {"parts": [{"text": '[{"id": 0}]'}]}}]},
+    ]
+
+    class _Resp:
+        status_code = 200
+
+        def __init__(self, payload):
+            self._payload = payload
+
+        def json(self):
+            return self._payload
+
+    idx = {"i": 0}
+
+    def fake_post(url, json=None, timeout=None):
+        r = _Resp(responses[idx["i"]])
+        idx["i"] += 1
+        return r
+
+    monkeypatch.setattr(gather.requests, "post", fake_post)
+    res = gather.call_gemini_rest("prompt", "dummy-key")
+    assert res == [{"id": 0}]
+    assert idx["i"] == 2
+    assert sleeps == [gather.GEMINI_SLEEP_SEC]
+
+
+def test_call_gemini_rest_429_respects_retry_after_and_no_sleep_on_last(monkeypatch, sleeps):
+    class _Resp429:
+        status_code = 429
+        headers = {"Retry-After": "42"}
+        text = '{"error": "rate limit"}'
+
+    monkeypatch.setattr(gather.random, "uniform", lambda a, b: 0.5)
+    monkeypatch.setattr(gather.requests, "post", lambda *a, **kw: _Resp429())
+    res = gather.call_gemini_rest("prompt", "dummy-key")
+    assert res == {"error": "All retries exhausted"}
+    # 試行回数は GEMINI_MAX_RETRIES (4回)、最終回は sleep しないため 3 回待機
+    assert len(sleeps) == gather.GEMINI_MAX_RETRIES - 1
+    # 1回目は Retry-After (42) + 1.0 + jitter (0.5) = 43.5 > 指数バックオフ 8
+    assert sleeps[0] == 43.5
+    # 3回目は exp_wait (4 * 2^3 = 32) < 43.0 のため 43.5
+    assert sleeps[2] == 43.5
+
+
+def test_fetch_rss_feeds_uses_safe_get_with_timeout(monkeypatch):
+    calls = []
+
+    class _Resp:
+        content = (
+            b'<?xml version="1.0" encoding="UTF-8"?>'
+            b'<rss version="2.0"><channel><item>'
+            b'<title>Feed Story</title><link>https://example.com/story</link>'
+            b'<pubDate>Sat, 21 Nov 2026 01:00:00 +0000</pubDate>'
+            b'</item></channel></rss>'
+        )
+
+    def fake_safe_get(url, timeout=15):
+        calls.append((url, timeout))
+        return _Resp()
+
+    monkeypatch.setattr(gather, "safe_get", fake_safe_get)
+    articles = gather._fetch_one_rss_feed(("TestFeed", "https://example.com/rss"))
+    assert len(articles) == 1
+    assert articles[0]["title"] == "Feed Story"
+    assert calls == [("https://example.com/rss", 15)]
+
+
+def test_slack_and_line_notifications_contain_no_emoji(monkeypatch):
+    payloads = []
+    monkeypatch.setenv("SLACK_WEBHOOK_URL", "https://hooks.slack.example/test")
+    monkeypatch.setenv("LINE_CHANNEL_ACCESS_TOKEN", "line-token")
+    monkeypatch.setattr(gather, "post_webhook", lambda url, payload, name, headers=None, timeout=15: payloads.append((name, payload)) or True)
+
+    arts = [{
+        "title": "Test Article",
+        "url": "https://example.com/test",
+        "score": 90,
+        "summary": "s1\ns2\ns3",
+        "actionable_takeaway": "Upgrade dependencies",
+        "tags": ["Python"],
+        "source": "Zenn",
+    }]
+    gather.send_slack_notification(arts)
+    gather.send_line_notification(arts)
+    assert len(payloads) == 2
+    serialized = json.dumps(payloads, ensure_ascii=False)
+    assert "\U0001f4a1" not in serialized  # 💡 絵文字なし
+    assert "実務示唆" in serialized
+
+
+def test_collect_today_retry_articles_requeues_failed_with_cap():
+    existing_today = [
+        {"title": "OK", "url": "https://example.com/ok", "analysis_status": "ok"},
+        {"title": "Err1", "url": "https://example.com/e1", "source": "Zenn", "published": "2026-11-21T00:00:00Z", "analysis_status": "error", "first_seen": "2026-11-21T06:45:00+09:00"},
+        {"title": "Skip2", "url": "https://example.com/e2", "source": "Qiita", "published": "2026-11-21T00:00:00Z", "analysis_status": "skipped", "hn_score": 42},
+        {"title": "Err3-Queued", "url": "https://example.com/e3", "source": "Dev.to", "analysis_status": "error"},
+        {"title": "Err4-OverCap", "url": "https://example.com/e4", "source": "Dev.to", "analysis_status": "error"},
+    ]
+    already_queued = [{"url": "https://example.com/e3?utm_source=rss"}]
+    retries = gather.collect_today_retry_articles(existing_today, already_queued, max_retry=2)
+    assert [r["url"] for r in retries] == ["https://example.com/e1", "https://example.com/e2"]
+    assert "analysis_status" not in retries[0]
+    assert retries[0]["first_seen"] == "2026-11-21T06:45:00+09:00"
+    assert retries[1]["hn_score"] == 42
+
+
+def test_fetch_embeddings_chunks_over_batch_limit(monkeypatch):
+    batch_sizes = []
+
+    class _EmbedResp:
+        status_code = 200
+
+        def __init__(self, n):
+            self._n = n
+
+        def json(self):
+            return {"embeddings": [{"values": [1.0, 0.0]} for _ in range(self._n)]}
+
+    def fake_post(url, json=None, timeout=None):
+        n = len(json["requests"])
+        batch_sizes.append(n)
+        return _EmbedResp(n)
+
+    monkeypatch.setattr(gather, "EMBED_BATCH_SIZE", 50)
+    monkeypatch.setattr(gather.requests, "post", fake_post)
+    texts = [f"text-{i}" for i in range(120)]
+    vecs = gather.fetch_embeddings(texts, "dummy-key")
+    assert vecs is not None
+    assert len(vecs) == 120
+    assert batch_sizes == [50, 50, 20]
+
+
+def test_fetch_one_body_caps_size_and_detects_japanese_encoding(monkeypatch):
+    # 1. Shift_JIS + Content-Type に charset なし + <meta charset="shift_jis"> の読み取り
+    sjis_html = (
+        '<html><head><meta charset="shift_jis"></head>'
+        '<body><article><p>' + ("日本語の技術記事テストです。" * 25) + '</p></article></body></html>'
+    ).encode("cp932")
+
+    class _StreamResp:
+        ok = True
+        headers = {"Content-Type": "text/html"}
+        closed = False
+
+        def iter_content(self, chunk_size=16384):
+            for i in range(0, len(sjis_html), 64):
+                yield sjis_html[i:i + 64]
+
+        def close(self):
+            self.closed = True
+
+    resp_obj = _StreamResp()
+    monkeypatch.setattr(gather.requests, "get", lambda *a, **kw: resp_obj)
+    art = {"url": "https://example.com/sjis"}
+    gather._fetch_one_body(art)
+    assert resp_obj.closed is True
+    assert "日本語の技術記事テストです" in art["_body"]
+
+    # 2. 上限バイト数超過で途中打ち切り
+    big_chunk = b"a" * 20000
+
+    class _BigResp:
+        ok = True
+        headers = {"Content-Type": "text/html; charset=utf-8"}
+        read_chunks = 0
+        closed = False
+
+        def iter_content(self, chunk_size=16384):
+            for _ in range(100):
+                self.read_chunks += 1
+                yield big_chunk
+
+        def close(self):
+            self.closed = True
+
+    big = _BigResp()
+    monkeypatch.setattr(gather, "BODY_FETCH_MAX_BYTES", 50000)
+    monkeypatch.setattr(gather.requests, "get", lambda *a, **kw: big)
+    html_out = gather._read_response_html(big, max_bytes=50000)
+    assert len(html_out) == 50000
+    assert big.read_chunks == 3
+    assert big.closed is True
+
+
+def test_build_trends_summary(tmp_path):
+    arch_dir = tmp_path / "archive"
+    arch_dir.mkdir()
+    _write_json(
+        arch_dir / "2026-11-20.json",
+        {"articles": [
+            {"title": "A", "source": "Zenn", "category": "AI・機械学習", "score": 80, "tags": ["AI", "LLM"]},
+        ]},
+    )
+    _write_json(
+        arch_dir / "2026-11-21.json",
+        {"articles": [
+            {"title": "B", "source": "Zenn", "category": "AI・機械学習", "score": 90, "tags": ["AI"]},
+            {"title": "C", "source": "Hacker News", "category": "セキュリティ", "score": 70, "tags": ["Sec"]},
+        ]},
+    )
+    out_file = arch_dir / "trends_30d.json"
+    summary = gather.build_trends_summary(str(arch_dir), str(out_file), days=30)
+    assert summary["days_count"] == 2
+    assert summary["daily"] == [{"label": "11-20", "value": 1}, {"label": "11-21", "value": 2}]
+    assert summary["topTags"][0] == {"label": "AI", "value": 2}
+    assert summary["sources"][0] == {"label": "Zenn", "value": 85.0, "display": "85.0"}
+    assert summary["categories"][0] == {"label": "AI・機械学習", "value": 2, "display": "2件"}
+    assert out_file.exists()
 

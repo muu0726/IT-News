@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="国内ガジェットメディアから新製品情報を自動収集・AI分析した最新ガジェット情報">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gadget Hub — 最新ガジェット情報">
+  <meta property="og:description" content="国内ガジェットメディアから新製品情報を自動収集・AI分析した最新ガジェット情報">
+  <meta property="og:url" content="https://muu0726.github.io/IT-News/gadget.html">
+  <meta name="twitter:card" content="summary">
   <title>Gadget Hub — 最新ガジェット情報</title>
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#141413">
@@ -769,6 +774,14 @@
     .card-list.compact .card.expanded { align-items: flex-start; }
     .card-list.compact .card.expanded .card-details { display: block; }
     .card-list.compact .card-product { margin-bottom: 0; }
+    .load-more-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px;
+      padding: 8px 0;
+    }
 
     .state-msg {
       text-align: center;
@@ -1197,6 +1210,8 @@
       let compareUrls = store.get('itinfohub_gadget_compare', []);
       let lastRendered = [];
       let focusedIdx = -1;
+      const PAGE_SIZE = 100;
+      let renderLimit = PAGE_SIZE;
 
       const state = {
         items: [],
@@ -1306,19 +1321,23 @@
         else readUrls.add(url);
         saveReadSet();
       }
+      function visibleRendered() {
+        return lastRendered.slice(0, renderLimit);
+      }
+
       function markVisibleAsRead() {
-        const unreadInView = lastRendered.filter((it) => it.url && !readUrls.has(it.url)).map((it) => it.url);
+        const unreadInView = visibleRendered().filter((it) => it.url && !readUrls.has(it.url)).map((it) => it.url);
         if (!unreadInView.length) {
           showToast('表示中の未読記事はありません');
           return;
         }
         unreadInView.forEach((u) => readUrls.add(u));
         saveReadSet();
-        render();
+        render({ resetLimit: false });
         showToast(`${unreadInView.length}件を既読にしました`, '元に戻す', () => {
           unreadInView.forEach((u) => readUrls.delete(u));
           saveReadSet();
-          render();
+          render({ resetLimit: false });
         });
       }
 
@@ -1396,19 +1415,16 @@
       }
 
       function exportVisibleToMarkdown() {
-        if (!lastRendered.length) {
+        const visible = visibleRendered();
+        if (!visible.length) {
           showToast('出力対象のガジェット記事がありません');
           return;
         }
         const dateStr = new Date().toLocaleDateString('ja-JP');
-        const header = `## Gadget Hub 新製品まとめ (${dateStr} / ${lastRendered.length}件)\n\n`;
-        const body = lastRendered.map((it) => itemToMarkdown(it)).join('\n');
+        const header = `## Gadget Hub 新製品まとめ (${dateStr} / ${visible.length}件)\n\n`;
+        const body = visible.map((it) => itemToMarkdown(it)).join('\n');
         const md = header + body + '\n';
-        if (navigator.clipboard) {
-          navigator.clipboard.writeText(md).then(() =>
-            showToast(`表示中の ${lastRendered.length} 件をMarkdownでコピーしました`)
-          );
-        }
+        copyToClipboard(md, `表示中の ${visible.length} 件をMarkdownでコピーしました`);
       }
 
       // ── Side-by-Side Spec Comparison (A-4) ──
@@ -1524,7 +1540,7 @@
 
       function copyCompareMarkdown() {
         const items = getCompareItems();
-        if (!items.length || !navigator.clipboard) return;
+        if (!items.length) return;
         const cleanCell = (v) => String(v ?? '—').replace(/\\n/g, ' ').replace(/\r?\n/g, ' ').replace(/\|/g, '\\|').trim() || '—';
         const headers = ['項目', ...items.map((it) => `[${cleanCell(it.product_name || it.title)}](${safeUrl(it.url)})`)];
         const sep = headers.map(() => '---');
@@ -1542,9 +1558,7 @@
           `| ${sep.join(' | ')} |`,
           ...rows.map((r) => `| ${r.join(' | ')} |`),
         ].join('\n') + '\n';
-        navigator.clipboard.writeText(md).then(() =>
-          showToast('スペック比較表をMarkdown形式でコピーしました')
-        );
+        copyToClipboard(md, 'スペック比較表をMarkdown形式でコピーしました');
       }
 
       function parseSearchQuery(raw) {
@@ -1558,14 +1572,55 @@
         return { include, exclude };
       }
 
-      function highlightEscapedText(escapedText, terms) {
-        if (!terms.length || !escapedText) return escapedText;
+      function highlightText(rawText, terms) {
+        const str = String(rawText ?? '');
+        if (!terms || !terms.length || !str) return esc(str);
         const safeTerms = terms
-          .map((t) => esc(t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+          .map((t) => String(t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
           .filter(Boolean);
-        if (!safeTerms.length) return escapedText;
+        if (!safeTerms.length) return esc(str);
         const re = new RegExp(`(${safeTerms.join('|')})`, 'gi');
-        return escapedText.replace(re, '<mark class="hl">$1</mark>');
+        let out = '';
+        let lastIndex = 0;
+        let match;
+        while ((match = re.exec(str)) !== null) {
+          if (match[0].length === 0) {
+            re.lastIndex += 1;
+            continue;
+          }
+          if (match.index > lastIndex) {
+            out += esc(str.slice(lastIndex, match.index));
+          }
+          out += `<mark class="hl">${esc(match[0])}</mark>`;
+          lastIndex = re.lastIndex;
+        }
+        if (lastIndex < str.length) {
+          out += esc(str.slice(lastIndex));
+        }
+        return out;
+      }
+
+      function debounce(fn, delay = 150) {
+        let timer = null;
+        const wrapped = (...args) => {
+          clearTimeout(timer);
+          timer = setTimeout(() => { timer = null; fn(...args); }, delay);
+        };
+        wrapped.cancel = () => {
+          clearTimeout(timer);
+          timer = null;
+        };
+        return wrapped;
+      }
+
+      function copyToClipboard(text, successMsg) {
+        if (!navigator.clipboard) {
+          showToast('クリップボードへのコピーが利用できません');
+          return;
+        }
+        navigator.clipboard.writeText(text)
+          .then(() => showToast(successMsg))
+          .catch(() => showToast('クリップボードへのコピーに失敗しました'));
       }
 
       function baseItems() {
@@ -1711,6 +1766,7 @@
       }
 
       function resetAllFilters() {
+        debouncedRender.cancel();
         state.category = 'all';
         state.brand = '';
         state.priceRange = '';
@@ -1749,16 +1805,24 @@
         }
 
         const { include } = parseSearchQuery(state.query);
+        const visible = list.slice(0, renderLimit);
+        const remaining = list.length - visible.length;
+        const loadMoreHtml = remaining > 0
+          ? `<div class="load-more-wrap">
+              <button type="button" class="btn load-more-btn">さらに表示（残り ${remaining} 件）</button>
+              <button type="button" class="btn load-all-btn">すべて表示</button>
+            </div>`
+          : '';
 
-        cardList.innerHTML = list.map((it, i) => {
+        cardList.innerHTML = visible.map((it, i) => {
           const score = Number(it.score) || 0;
           const scoreCls = score >= 80 ? 'high' : score >= 60 ? 'mid' : '';
           const isToday = it.new_at && it.new_at === state.generatedAt;
           const isRead = readUrls.has(it.url);
           const fav = isFavorited(it.url);
           const name = it.product_name || it.title || '';
-          const nameHtml = highlightEscapedText(esc(name), include);
-          const titleHtml = it.product_name ? highlightEscapedText(esc(it.title || ''), include) : '';
+          const nameHtml = highlightText(name, include);
+          const titleHtml = it.product_name ? highlightText(it.title || '', include) : '';
           const otherArts = it._otherArticles || [];
 
           const summaryLines = String(it.summary || '')
@@ -1767,12 +1831,12 @@
             .map((l) => l.trim())
             .filter(Boolean);
           const summaryHtml = summaryLines
-            .map((line) => `<div class="summary-line">${highlightEscapedText(esc(line), include)}</div>`)
+            .map((line) => `<div class="summary-line">${highlightText(line, include)}</div>`)
             .join('');
 
           const specs = [
             it.category ? `<span class="spec"><span class="spec-label">分類</span>${esc(it.category)}</span>` : '',
-            it.brand ? `<span class="spec clickable brand-spec" data-brand="${esc(it.brand)}" title="このブランドで絞り込む"><span class="spec-label">メーカー</span>${ highlightEscapedText(esc(it.brand), include) }</span>` : '',
+            it.brand ? `<span class="spec clickable brand-spec" data-brand="${esc(it.brand)}" title="このブランドで絞り込む"><span class="spec-label">メーカー</span>${highlightText(it.brand, include)}</span>` : '',
             it.price ? `<span class="spec"><span class="spec-label">価格</span>${esc(it.price)}</span>` : '',
             it.release_date ? `<span class="spec"><span class="spec-label">発売</span>${esc(it.release_date)}</span>` : '',
           ].filter(Boolean).join('');
@@ -1837,83 +1901,103 @@
                 </div>
               </div>
             </article>`;
-        }).join('');
+        }).join('') + loadMoreHtml;
 
-        // Event bindings
-        cardList.querySelectorAll('.card-fav').forEach((el) => {
-          el.addEventListener('click', (e) => {
+      }
+
+      function setupCardEventDelegation() {
+        cardList.addEventListener('click', (e) => {
+          const loadMoreBtn = e.target.closest('.load-more-btn');
+          if (loadMoreBtn) {
+            renderLimit += PAGE_SIZE;
+            render({ resetLimit: false });
+            return;
+          }
+          const loadAllBtn = e.target.closest('.load-all-btn');
+          if (loadAllBtn) {
+            renderLimit = lastRendered.length;
+            render({ resetLimit: false });
+            return;
+          }
+
+          const favBtn = e.target.closest('.card-fav');
+          if (favBtn) {
             e.stopPropagation();
-            const it = lastRendered[+el.dataset.idx];
+            const it = lastRendered[+favBtn.dataset.idx];
             if (!it) return;
             toggleFavorite(it.url);
-            render();
-          });
-        });
-        cardList.querySelectorAll('.gadget-link').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            render({ resetLimit: false });
+            return;
+          }
+
+          const gLink = e.target.closest('.gadget-link');
+          if (gLink) {
             e.stopPropagation();
-            const it = lastRendered[+el.dataset.idx];
+            const it = lastRendered[+gLink.dataset.idx];
             if (!it) return;
             markRead(it.url);
-            setTimeout(render, 250);
-          });
-        });
-        cardList.querySelectorAll('.coverage-link').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            setTimeout(() => render({ resetLimit: false }), 250);
+            return;
+          }
+
+          const covLink = e.target.closest('.coverage-link');
+          if (covLink) {
             e.stopPropagation();
-            if (el.dataset.url) markRead(el.dataset.url);
-          });
-        });
-        cardList.querySelectorAll('.compare-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            if (covLink.dataset.url) markRead(covLink.dataset.url);
+            return;
+          }
+
+          const cmpBtn = e.target.closest('.compare-btn');
+          if (cmpBtn) {
             e.stopPropagation();
-            const it = lastRendered[+el.dataset.idx];
+            const it = lastRendered[+cmpBtn.dataset.idx];
             if (!it?.url) return;
             toggleCompare(it.url);
-            render();
-          });
-        });
-        cardList.querySelectorAll('.toggle-read-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            render({ resetLimit: false });
+            return;
+          }
+
+          const readBtn = e.target.closest('.toggle-read-btn');
+          if (readBtn) {
             e.stopPropagation();
-            const it = lastRendered[+el.dataset.idx];
+            const it = lastRendered[+readBtn.dataset.idx];
             if (!it) return;
             toggleReadState(it.url);
-            render();
-          });
-        });
-        cardList.querySelectorAll('.copy-url-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            render({ resetLimit: false });
+            return;
+          }
+
+          const copyUrlBtn = e.target.closest('.copy-url-btn');
+          if (copyUrlBtn) {
             e.stopPropagation();
-            const it = lastRendered[+el.dataset.idx];
-            if (!it?.url || !navigator.clipboard) return;
-            navigator.clipboard.writeText(it.url).then(() => showToast('URLをクリップボードにコピーしました'));
-          });
-        });
-        cardList.querySelectorAll('.copy-md-btn').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            const it = lastRendered[+copyUrlBtn.dataset.idx];
+            if (it?.url) copyToClipboard(it.url, 'URLをクリップボードにコピーしました');
+            return;
+          }
+
+          const copyMdBtn = e.target.closest('.copy-md-btn');
+          if (copyMdBtn) {
             e.stopPropagation();
-            const it = lastRendered[+el.dataset.idx];
-            if (!it || !navigator.clipboard) return;
-            navigator.clipboard.writeText(itemToMarkdown(it)).then(() =>
-              showToast('製品情報をMarkdown形式でコピーしました')
-            );
-          });
-        });
-        cardList.querySelectorAll('.brand-spec').forEach((el) => {
-          el.addEventListener('click', (e) => {
+            const it = lastRendered[+copyMdBtn.dataset.idx];
+            if (it) copyToClipboard(itemToMarkdown(it), '製品情報をMarkdown形式でコピーしました');
+            return;
+          }
+
+          const brandSpec = e.target.closest('.brand-spec');
+          if (brandSpec) {
             e.stopPropagation();
-            const b = el.dataset.brand;
+            const b = brandSpec.dataset.brand;
             state.brand = state.brand === b ? '' : b;
             render();
-          });
-        });
-        cardList.querySelectorAll('.card').forEach((cardEl) => {
-          cardEl.addEventListener('click', (e) => {
-            if (!cardList.classList.contains('compact')) return;
-            if (e.target.closest('a, button, .brand-spec, .product-coverage-box')) return;
-            cardEl.classList.toggle('expanded');
-          });
+            return;
+          }
+
+          if (cardList.classList.contains('compact')) {
+            const cardEl = e.target.closest('.card');
+            if (cardEl && !e.target.closest('a, button, .brand-spec, .product-coverage-box')) {
+              cardEl.classList.toggle('expanded');
+            }
+          }
         });
       }
 
@@ -1947,7 +2031,8 @@
         });
       }
 
-      function render() {
+      function render({ resetLimit = true } = {}) {
+        if (resetLimit) renderLimit = PAGE_SIZE;
         buildDropdowns();
         renderTabs();
         const list = filteredItems();
@@ -2007,10 +2092,11 @@
           e.preventDefault();
           const it = lastRendered[focusedIdx];
           if (it?.url) {
+            const keep = focusedIdx;
             markRead(it.url);
             window.open(safeUrl(it.url), '_blank', 'noopener,noreferrer');
-            render();
-            updateCardFocus(focusedIdx);
+            render({ resetLimit: false });
+            updateCardFocus(keep);
           }
         } else if (e.key === 'f' && focusedIdx >= 0) {
           e.preventDefault();
@@ -2018,7 +2104,7 @@
           if (it) {
             const keep = focusedIdx;
             toggleFavorite(it.url);
-            render();
+            render({ resetLimit: false });
             updateCardFocus(keep);
           }
         } else if (e.key === 'b' && focusedIdx >= 0) {
@@ -2027,7 +2113,7 @@
           if (it?.url) {
             const keep = focusedIdx;
             toggleCompare(it.url);
-            render();
+            render({ resetLimit: false });
             updateCardFocus(keep);
           }
         } else if (e.key === 'm' && focusedIdx >= 0) {
@@ -2036,20 +2122,20 @@
           if (it) {
             const keep = focusedIdx;
             toggleReadState(it.url);
-            render();
+            render({ resetLimit: false });
             updateCardFocus(keep);
           }
         } else if (e.key === 'c' && focusedIdx >= 0) {
           e.preventDefault();
           const it = lastRendered[focusedIdx];
-          if (it?.url && navigator.clipboard) {
-            navigator.clipboard.writeText(it.url).then(() => showToast('URLをコピーしました'));
+          if (it?.url) {
+            copyToClipboard(it.url, 'URLをコピーしました');
           }
         } else if (e.key === 'y' && focusedIdx >= 0) {
           e.preventDefault();
           const it = lastRendered[focusedIdx];
-          if (it && navigator.clipboard) {
-            navigator.clipboard.writeText(itemToMarkdown(it)).then(() => showToast('Markdown形式でコピーしました'));
+          if (it) {
+            copyToClipboard(itemToMarkdown(it), 'Markdown形式でコピーしました');
           }
         } else if (e.key === 'x' && focusedIdx >= 0) {
           e.preventDefault();
@@ -2067,13 +2153,22 @@
       });
 
       // ── Events ──
+      const debouncedRender = debounce(() => render(), 150);
+
       searchInput.addEventListener('input', () => {
         state.query = searchInput.value.trim();
         searchClearBtn.classList.toggle('visible', state.query.length > 0);
         searchKbd.style.display = state.query.length > 0 ? 'none' : '';
-        render();
+        debouncedRender();
+      });
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          debouncedRender.cancel();
+          render();
+        }
       });
       searchClearBtn.addEventListener('click', () => {
+        debouncedRender.cancel();
         state.query = '';
         searchInput.value = '';
         searchClearBtn.classList.remove('visible');
@@ -2144,7 +2239,7 @@
         applyDensityUI();
         groupProductBtn.classList.toggle('active', Boolean(state.groupByProduct));
         try {
-          const resp = await fetch('gadgets.json?t=' + Date.now());
+          const resp = await fetch('gadgets.json', { cache: 'no-cache' });
           if (!resp.ok) throw new Error('HTTP ' + resp.status);
           const data = await resp.json();
           state.items = Array.isArray(data.items) ? data.items : [];
@@ -2161,6 +2256,7 @@
         }
       }
 
+      setupCardEventDelegation();
       init();
 
       if ('serviceWorker' in navigator) {

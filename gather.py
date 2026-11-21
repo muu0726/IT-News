@@ -27,6 +27,7 @@ import html as html_module
 import json
 import math
 import os
+import random
 import sys
 import io
 import time
@@ -38,6 +39,8 @@ from urllib.parse import parse_qsl, urlencode, urlparse
 
 import feedparser
 import requests
+
+from wait_until import wait_until_jst
 
 
 # ---------------------------------------------------------------------------
@@ -86,15 +89,18 @@ GEMINI_EMBED_URL = (
 # collect ジョブが時間切れになり得るため無効化する
 GEMINI_THINKING_BUDGET = 0
 GEMINI_SLEEP_SEC = 4          # リクエスト間隔（15 RPM対応）
-GEMINI_MAX_RETRIES = 3        # リトライ上限
-GEMINI_BACKOFF_MAX_SEC = 30   # バックオフ上限秒数
+GEMINI_MAX_RETRIES = 4        # リトライ上限
+GEMINI_BACKOFF_MAX_SEC = 60   # バックオフ上限秒数
 GLOBAL_TIMEOUT_SEC = 840      # 全体タイムアウト: 14分
 
 ANALYSIS_BATCH_SIZE = 6       # 1リクエストで解析する記事数
 
 BODY_FETCH_WORKERS = 8        # 本文取得の並列数
 BODY_FETCH_TIMEOUT = 10       # 本文取得タイムアウト秒
+BODY_FETCH_MAX_BYTES = 512 * 1024  # 本文取得の最大受信バイト数 (512KB)
 BODY_MAX_CHARS = 1500         # Gemini に渡す本文抜粋の最大文字数
+EMBED_BATCH_SIZE = 80         # batchEmbedContents 1リクエストあたりの上限対策
+RETRY_FAILED_TODAY_MAX = 18   # 当日失敗記事の同日再解析上限
 
 CATEGORIES = [
     "AI・機械学習",
@@ -125,6 +131,7 @@ HATENA_BATCH_SIZE = 50
 DATA_FILE = "data.json"
 ARCHIVE_DIR = "archive"
 SEARCH_INDEX_FILE = os.path.join(ARCHIVE_DIR, "search_index.json")
+TRENDS_FILE = os.path.join(ARCHIVE_DIR, "trends_30d.json")
 FEED_FILE = "feed.xml"
 DIGEST_FILE = "digest.json"
 FEED_TOP_N = 20
@@ -377,8 +384,8 @@ def extract_text_from_gemini_response(data: dict) -> str | None:
     return None
 
 
-def parse_json_safely(text: str):
-    """JSON テキストを安全にパースする（コードフェンス・BOM 除去付き）"""
+def parse_json_safely(text: str, quiet: bool = False):
+    """JSON テキストを安全にパースする（コードフェンス・BOM・不正エスケープ除去付き）"""
     if not text:
         return None
     text = text.strip().lstrip("﻿")
@@ -394,8 +401,16 @@ def parse_json_safely(text: str):
     try:
         return json.loads(text)
     except json.JSONDecodeError as e:
-        print(f"[WARN] JSON parse failed: {e}")
-        print(f"[DEBUG] Raw text (first 200 chars): {text[:200]}")
+        # JSON 仕様外のバックスラッシュエスケープ (\_, \( 等) を補修して再試行
+        repaired = re.sub(r'\\(?!["\\/bfnrt]|u[0-9a-fA-F]{4})', r"\\\\", text)
+        if repaired != text:
+            try:
+                return json.loads(repaired)
+            except json.JSONDecodeError:
+                pass
+        if not quiet:
+            print(f"[WARN] JSON parse failed: {e}")
+            print(f"[DEBUG] Raw text (first 200 chars): {text[:200]}")
         return None
 
 
@@ -487,10 +502,10 @@ def _fetch_one_rss_feed(item: tuple[str, str]) -> list[dict]:
     print(f"[INFO] Fetching RSS: {source_name} ...")
     fetched: list[dict] = []
     try:
-        feed = feedparser.parse(
-            feed_url,
-            agent="IT-Info-Collector/1.0 (GitHub Actions Bot)"
-        )
+        resp = safe_get(feed_url, timeout=15)
+        if not resp:
+            return fetched
+        feed = feedparser.parse(resp.content)
         if feed.bozo and not feed.entries:
             print(f"[WARN] RSS feed error ({source_name}): {feed.bozo_exception}")
             return fetched
@@ -605,7 +620,7 @@ def _extract_meta_and_ld_text(html: str) -> str:
         re.IGNORECASE | re.DOTALL,
     ):
         raw_ld = m.group(1).strip()
-        parsed_ld = parse_json_safely(raw_ld)
+        parsed_ld = parse_json_safely(raw_ld, quiet=True)
         items = parsed_ld if isinstance(parsed_ld, list) else [parsed_ld] if isinstance(parsed_ld, dict) else []
         for obj in items:
             if not isinstance(obj, dict):
@@ -667,6 +682,70 @@ def estimate_reading_minutes(text: str) -> int:
     return max(1, min(60, minutes))
 
 
+def _read_response_html(resp, max_bytes: int = BODY_FETCH_MAX_BYTES) -> str:
+    """HTTP レスポンスをサイズ上限付きで読み込み、charset 未指定の日本語サイトも文字化けなくデコードする"""
+    if not hasattr(resp, "iter_content"):
+        return getattr(resp, "text", "") or ""
+    chunks: list[bytes] = []
+    total = 0
+    try:
+        for chunk in resp.iter_content(chunk_size=16384):
+            if not chunk:
+                continue
+            remain = max_bytes - total
+            if len(chunk) >= remain:
+                chunks.append(chunk[:remain])
+                break
+            chunks.append(chunk)
+            total += len(chunk)
+    finally:
+        close_fn = getattr(resp, "close", None)
+        if callable(close_fn):
+            close_fn()
+
+    raw = b"".join(chunks)
+    if not raw:
+        return ""
+
+    content_type = (getattr(resp, "headers", None) or {}).get("Content-Type", "")
+    enc: str | None = None
+    m_ct = re.search(r"charset=([^\s;\"']+)", content_type, re.IGNORECASE)
+    if m_ct:
+        cand = m_ct.group(1).strip()
+        if cand.lower() not in ("iso-8859-1", "latin-1", "latin1"):
+            enc = cand
+
+    if not enc:
+        m_meta = re.search(
+            rb'<meta[^>]+charset=["\']?\s*([A-Za-z0-9_.:-]+)',
+            raw[:2048],
+            re.IGNORECASE,
+        )
+        if m_meta:
+            enc = m_meta.group(1).decode("ascii", "ignore").strip()
+
+    if not enc:
+        try:
+            app_enc = getattr(resp, "apparent_encoding", None)
+            if app_enc and str(app_enc).lower() not in ("iso-8859-1", "latin-1", "latin1", "ascii"):
+                enc = str(app_enc)
+        except Exception:
+            pass
+
+    if enc:
+        try:
+            return raw.decode(enc, errors="replace")
+        except LookupError:
+            pass
+
+    for candidate in ("utf-8", "cp932", "euc_jp"):
+        try:
+            return raw.decode(candidate)
+        except UnicodeDecodeError:
+            continue
+    return raw.decode("utf-8", errors="replace")
+
+
 def _fetch_one_body(art: dict) -> None:
     """1記事の本文を取得して art['_body'] および推定読了時間 art['reading_min'] に格納する"""
     url = art.get("url", "")
@@ -677,13 +756,17 @@ def _fetch_one_body(art: dict) -> None:
             url,
             headers={"User-Agent": "Mozilla/5.0 (compatible; IT-Info-Collector/1.0)"},
             timeout=BODY_FETCH_TIMEOUT,
+            stream=True,
         )
-        content_type = resp.headers.get("Content-Type", "")
+        content_type = (getattr(resp, "headers", None) or {}).get("Content-Type", "")
         if resp.ok and "html" in content_type.lower():
-            full_text = _extract_clean_text_full(resp.text)
+            html_text = _read_response_html(resp)
+            full_text = _extract_clean_text_full(html_text)
             art["_body"] = full_text[:BODY_MAX_CHARS]
             if len(full_text) >= 200:
                 art["reading_min"] = estimate_reading_minutes(full_text)
+        elif hasattr(resp, "close"):
+            resp.close()
     except requests.RequestException:
         pass  # 本文が取れなくてもタイトルベースで解析を続行
 
@@ -742,6 +825,29 @@ def build_batch_prompt(chunk: list[dict]) -> str:
     )
 
 
+def _parse_retry_after(resp: requests.Response) -> float | None:
+    """429 レスポンスの Retry-After ヘッダーや retryDelay フィールドから待機秒数を取得する"""
+    headers = getattr(resp, "headers", None) or {}
+    ra = headers.get("Retry-After") or headers.get("retry-after")
+    if ra is not None:
+        try:
+            val = float(str(ra).strip())
+            if val > 0:
+                return min(val, 120.0)
+        except ValueError:
+            pass
+    text = getattr(resp, "text", "") or ""
+    m = re.search(r'"retryDelay"\s*:\s*"(\d+(?:\.\d+)?)s"', text)
+    if m:
+        try:
+            val = float(m.group(1))
+            if val > 0:
+                return min(val, 120.0)
+        except ValueError:
+            pass
+    return None
+
+
 def call_gemini_rest(
     prompt: str,
     api_key: str,
@@ -773,22 +879,35 @@ def call_gemini_rest(
                 data = resp.json()
                 text = extract_text_from_gemini_response(data)
                 if text is None:
+                    if attempt < GEMINI_MAX_RETRIES:
+                        print(f"[WARN] Gemini returned no usable text (attempt {attempt}/{GEMINI_MAX_RETRIES}), retrying in {GEMINI_SLEEP_SEC}s ...")
+                        time.sleep(GEMINI_SLEEP_SEC)
+                        continue
                     return {"error": "Gemini returned no usable text"}
                 result = parse_json_safely(text)
                 if result is None:
+                    if attempt < GEMINI_MAX_RETRIES:
+                        print(f"[WARN] Gemini JSON parse failed (attempt {attempt}/{GEMINI_MAX_RETRIES}), retrying in {GEMINI_SLEEP_SEC}s ...")
+                        time.sleep(GEMINI_SLEEP_SEC)
+                        continue
                     return {"error": f"JSON parse failed: {text[:100]}"}
                 return result
 
             elif resp.status_code == 429:
-                wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
-                print(f"[WARN] 429 Rate limited (attempt {attempt}/{GEMINI_MAX_RETRIES}), waiting {wait}s ...")
-                time.sleep(wait)
+                if attempt < GEMINI_MAX_RETRIES:
+                    exp_wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
+                    ra = _parse_retry_after(resp)
+                    base_wait = max(exp_wait, min(ra + 1.0, 90.0)) if ra is not None else exp_wait
+                    wait = base_wait + random.uniform(0, 2.0)
+                    print(f"[WARN] 429 Rate limited (attempt {attempt}/{GEMINI_MAX_RETRIES}), waiting {wait:.1f}s ...")
+                    time.sleep(wait)
                 continue
 
             elif resp.status_code >= 500:
-                wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
-                print(f"[WARN] {resp.status_code} Server error (attempt {attempt}/{GEMINI_MAX_RETRIES}), waiting {wait}s ...")
-                time.sleep(wait)
+                if attempt < GEMINI_MAX_RETRIES:
+                    wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC) + random.uniform(0, 2.0)
+                    print(f"[WARN] {resp.status_code} Server error (attempt {attempt}/{GEMINI_MAX_RETRIES}), waiting {wait:.1f}s ...")
+                    time.sleep(wait)
                 continue
 
             else:
@@ -921,6 +1040,40 @@ def reuse_analyzed_articles(
         else:
             to_analyze.append(art)
     return reused, to_analyze
+
+
+def collect_today_retry_articles(
+    existing_today: list[dict],
+    already_queued: list[dict],
+    max_retry: int = RETRY_FAILED_TODAY_MAX,
+) -> list[dict]:
+    """当日の前回実行で失敗 (error/skipped) したが今回フィードから外れた記事を再解析キューに戻す"""
+    queued_norms = {
+        normalize_url(a.get("url", ""))
+        for a in already_queued
+        if normalize_url(a.get("url", ""))
+    }
+    retries: list[dict] = []
+    for art in existing_today:
+        if len(retries) >= max_retry:
+            break
+        if art.get("analysis_status") not in ("error", "skipped"):
+            continue
+        norm = normalize_url(art.get("url", ""))
+        if not norm or norm in queued_norms:
+            continue
+        queued_norms.add(norm)
+        item = {
+            "title": art.get("title", ""),
+            "url": art.get("url", ""),
+            "source": art.get("source", ""),
+            "published": art.get("published", ""),
+        }
+        for k in ("hn_score", "hn_comments", "first_seen"):
+            if k in art:
+                item[k] = art[k]
+        retries.append(item)
+    return retries
 
 
 def merge_today_articles(
@@ -1095,31 +1248,35 @@ def _title_tokens(title: str) -> set[str]:
 
 
 def fetch_embeddings(texts: list[str], api_key: str) -> list[list[float]] | None:
-    """Gemini batchEmbedContents で埋め込みベクトルを一括取得する"""
+    """Gemini batchEmbedContents で埋め込みベクトルを一括取得する（上限100件対策でチャンク分割）"""
     url = GEMINI_EMBED_URL.format(model=GEMINI_EMBED_MODEL, key=api_key)
-    payload = {
-        "requests": [
-            {
-                "model": f"models/{GEMINI_EMBED_MODEL}",
-                "content": {"parts": [{"text": t[:1000]}]},
-                "outputDimensionality": EMBED_DIMENSIONS,
-            }
-            for t in texts
-        ]
-    }
-    try:
-        resp = requests.post(url, json=payload, timeout=120)
-        if resp.status_code != 200:
-            print(f"[WARN] Embedding API returned {resp.status_code}: {resp.text[:120]}")
+    all_values: list[list[float]] = []
+    for i in range(0, len(texts), EMBED_BATCH_SIZE):
+        chunk = texts[i:i + EMBED_BATCH_SIZE]
+        payload = {
+            "requests": [
+                {
+                    "model": f"models/{GEMINI_EMBED_MODEL}",
+                    "content": {"parts": [{"text": t[:1000]}]},
+                    "outputDimensionality": EMBED_DIMENSIONS,
+                }
+                for t in chunk
+            ]
+        }
+        try:
+            resp = requests.post(url, json=payload, timeout=120)
+            if resp.status_code != 200:
+                print(f"[WARN] Embedding API returned {resp.status_code}: {resp.text[:120]}")
+                return None
+            embeddings = resp.json().get("embeddings", [])
+            if len(embeddings) != len(chunk):
+                print("[WARN] Embedding count mismatch")
+                return None
+            all_values.extend(e.get("values", []) for e in embeddings)
+        except requests.RequestException as e:
+            print(f"[WARN] Embedding request failed: {e}")
             return None
-        embeddings = resp.json().get("embeddings", [])
-        if len(embeddings) != len(texts):
-            print("[WARN] Embedding count mismatch")
-            return None
-        return [e.get("values", []) for e in embeddings]
-    except requests.RequestException as e:
-        print(f"[WARN] Embedding request failed: {e}")
-        return None
+    return all_values
 
 
 def apply_topic_grouping(articles: list[dict]) -> list[dict]:
@@ -1276,7 +1433,7 @@ def send_slack_notification(articles: list[dict]) -> None:
     for art in top_articles:
         hot = "[HOT] " if art.get("is_hot") else ""
         summary = art.get("summary", "").replace("\\n", "\n")
-        takeaway_line = f"\n💡 *実務示唆*: {art['actionable_takeaway']}" if art.get("actionable_takeaway") else ""
+        takeaway_line = f"\n*実務示唆*: {art['actionable_takeaway']}" if art.get("actionable_takeaway") else ""
         gh_line = f" · <https://github.com/{art['github_repo']}|GitHub: {art['github_repo']}>" if art.get("github_repo") else ""
         blocks.append({
             "type": "section",
@@ -1312,7 +1469,7 @@ def send_line_notification(articles: list[dict]) -> None:
         hot = "[HOT]" if art.get("is_hot") else "・"
         lines.append(f"{hot} [{art.get('score', 0)}点] {art.get('title', '')}")
         if art.get("actionable_takeaway"):
-            lines.append(f"💡 {art['actionable_takeaway']}")
+            lines.append(f"実務示唆: {art['actionable_takeaway']}")
         if art.get("github_repo"):
             lines.append(f"GH: https://github.com/{art['github_repo']}")
         lines.append(art.get("url", ""))
@@ -1337,7 +1494,7 @@ def wait_until_notify_time(
     複数指定時は現在時刻以降の最も近い目標時刻まで待機する。
     ただし、目標時刻までの待機時間が max_wait_sec (環境変数 NOTIFY_MAX_WAIT_SEC、
     デフォルト 3600秒 = 1時間) を超える場合は、遅延起動や時間外実行と判断して待たずに即時通知する。
-    未設定なら待たない。全目標時刻を過ぎていれば即時通知。戻り値は待機秒数。
+    未設定なら待たない。戻り値は待機秒数。
     """
     notify_at = os.environ.get("NOTIFY_AT_JST", "").strip()
     if not notify_at:
@@ -1349,45 +1506,13 @@ def wait_until_notify_time(
         except ValueError:
             max_wait_sec = 3600.0
 
-    slots: list[tuple[int, int]] = []
-    for raw in notify_at.split(","):
-        part = raw.strip()
-        if not part:
-            continue
-        try:
-            hour, minute = (int(x) for x in part.split(":"))
-            if not (0 <= hour <= 23 and 0 <= minute <= 59):
-                raise ValueError
-            slots.append((hour, minute))
-        except ValueError:
-            print(f"[WARN] Invalid NOTIFY_AT_JST: {notify_at!r} -- notifying now")
-            return 0.0
-
-    if not slots:
-        return 0.0
-
-    now = now or datetime.now(JST)
-    upcoming = [
-        now.replace(hour=h, minute=m, second=0, microsecond=0)
-        for h, m in sorted(slots)
-    ]
-    future_targets = [t for t in upcoming if (t - now).total_seconds() > 0]
-    if not future_targets:
-        print(f"[INFO] Notify time {notify_at} JST already passed -- notifying now")
-        return 0.0
-
-    target = future_targets[0]
-    wait_sec = (target - now).total_seconds()
-    if wait_sec > max_wait_sec:
-        print(
-            f"[INFO] Target time {target.strftime('%H:%M')} is {wait_sec:.0f}s away (> max {max_wait_sec:.0f}s) "
-            f"-- likely delayed or out of schedule window. Notifying immediately."
-        )
-        return 0.0
-
-    print(f"[INFO] Waiting {wait_sec:.0f}s until {target.isoformat()} to notify")
-    time.sleep(wait_sec)
-    return wait_sec
+    slept, _ = wait_until_jst(
+        notify_at,
+        now=now,
+        max_wait_sec=max_wait_sec,
+        sleep_fn=time.sleep,
+    )
+    return slept
 
 
 def send_notifications(articles: list[dict]) -> None:
@@ -1502,15 +1627,18 @@ def generate_weekly_digest(
     return digest
 
 
-def load_today_digest() -> dict | None:
-    """digest.json が今日 (JST) 生成されたものなら返す"""
+def load_today_digest(run_at: str | None = None) -> dict | None:
+    """digest.json が今日 (JST) 生成されたものなら返す（run_at 指定時は該当実行分のみ）"""
     try:
         with open(DIGEST_FILE, encoding="utf-8") as f:
             digest = json.load(f)
     except (OSError, ValueError):
         return None
     today = datetime.now(JST).strftime("%Y-%m-%d")
-    if not str(digest.get("generated_at", "")).startswith(today):
+    gen_at = str(digest.get("generated_at", ""))
+    if not gen_at.startswith(today):
+        return None
+    if run_at and gen_at != run_at:
         return None
     return digest
 
@@ -1553,14 +1681,7 @@ def _format_rss_channel(
     """RSS 2.0 XML チャンネル文字列を構築する"""
     items = []
     for art in articles:
-        pub_date = ""
-        published = art.get("published", "")
-        if published:
-            try:
-                dt = datetime.fromisoformat(published.replace("Z", "+00:00"))
-                pub_date = f"      <pubDate>{format_datetime(dt)}</pubDate>\n"
-            except ValueError:
-                pass
+        pub_date = format_pub_date(art.get("published", ""))
         summary = (art.get("summary") or "").replace("\\n", " / ").replace("\n", " / ")
         takeaway = f" [実務示唆: {art['actionable_takeaway']}]" if art.get("actionable_takeaway") else ""
         repo = f" [GitHub: {art['github_repo']}]" if art.get("github_repo") else ""
@@ -1664,6 +1785,7 @@ def _strip_emojis(text: str) -> str:
 def generate_daily_briefing(
     articles: list[dict],
     run_at: str | None = None,
+    sleep_before: bool = False,
 ) -> dict | None:
     """当日の上位記事から3行ブリーフィングと注目トピックタグを生成する"""
     ok_articles = sorted(
@@ -1701,6 +1823,8 @@ def generate_daily_briefing(
 
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if api_key:
+        if sleep_before:
+            time.sleep(GEMINI_SLEEP_SEC)
         blocks = [
             f"- [{a.get('score', 0)}点 / {a.get('category', '')}] {a.get('title', '')} "
             f"(タグ: {', '.join(str(t) for t in a.get('tags', []))})"
@@ -1785,6 +1909,75 @@ def build_search_index(archive_dir: str = ARCHIVE_DIR, out_file: str | None = No
     return payload
 
 
+def build_trends_summary(
+    archive_dir: str = ARCHIVE_DIR,
+    out_file: str | None = None,
+    days: int = 30,
+) -> dict:
+    """直近 N 日分のトレンド統計 (archive/trends_30d.json) を事前生成する"""
+    out_file = out_file or os.path.join(archive_dir, "trends_30d.json")
+    if not os.path.exists(archive_dir):
+        return {"days_count": 0, "daily": [], "topTags": [], "sources": [], "categories": []}
+
+    date_files = sorted(
+        [fn for fn in os.listdir(archive_dir) if re.match(r"^\d{4}-\d{2}-\d{2}\.json$", fn)],
+        reverse=True,
+    )[:days]
+    date_files.reverse()  # 古い順
+
+    daily: list[dict] = []
+    tag_counts: dict[str, int] = {}
+    source_stats: dict[str, list[float]] = {}  # [sum, count]
+    cat_counts: dict[str, int] = {}
+
+    for fn in date_files:
+        fpath = os.path.join(archive_dir, fn)
+        try:
+            with open(fpath, encoding="utf-8") as f:
+                data = json.load(f)
+        except (OSError, ValueError):
+            continue
+        articles = data.get("articles", [])
+        daily.append({"label": fn[:-5][5:], "value": len(articles)})
+        for a in articles:
+            for t in a.get("tags", []):
+                key = str(t).strip()
+                if key:
+                    tag_counts[key] = tag_counts.get(key, 0) + 1
+            src = a.get("source") or "不明"
+            st = source_stats.setdefault(src, [0.0, 0.0])
+            st[0] += float(a.get("score") or 0)
+            st[1] += 1.0
+            cat = a.get("category") or "その他"
+            cat_counts[cat] = cat_counts.get(cat, 0) + 1
+
+    top_tags = [
+        {"label": k, "value": v}
+        for k, v in sorted(tag_counts.items(), key=lambda kv: (-kv[1], kv[0]))[:10]
+    ]
+    sources = [
+        {"label": k, "value": round(s[0] / s[1], 2), "display": f"{s[0] / s[1]:.1f}"}
+        for k, s in sorted(source_stats.items(), key=lambda kv: -(kv[1][0] / kv[1][1]))
+        if s[1] > 0
+    ]
+    categories = [
+        {"label": k, "value": v, "display": f"{v}件"}
+        for k, v in sorted(cat_counts.items(), key=lambda kv: (-kv[1], kv[0]))
+    ]
+    payload = {
+        "generated_at": datetime.now(JST).isoformat(),
+        "days_count": len(date_files),
+        "daily": daily,
+        "topTags": top_tags,
+        "sources": sources,
+        "categories": categories,
+    }
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"[INFO] Updated {out_file} ({len(daily)} days)")
+    return payload
+
+
 def save_results(
     articles: list[dict],
     run_at: str | None = None,
@@ -1839,6 +2032,7 @@ def save_results(
     print(f"[INFO] Updated archive/index.json ({len(archive_files)} files)")
 
     build_search_index(ARCHIVE_DIR, SEARCH_INDEX_FILE)
+    build_trends_summary(ARCHIVE_DIR, TRENDS_FILE)
     return generated_at
 
 
@@ -1859,14 +2053,15 @@ def notify_from_saved() -> None:
     # new_at がある場合は今回の実行 (run_at) で新規解析された記事のみ通知対象にする（旧形式は全件対象）
     fresh_articles = [
         a for a in articles
-        if not run_at or not a.get("new_at") or a.get("new_at") == run_at
+        if (not run_at or not a.get("new_at") or a.get("new_at") == run_at)
+        and a.get("analysis_status", "ok") == "ok"
     ]
     print(f"[INFO] Loaded {len(articles)} articles ({len(fresh_articles)} new in this run, "
           f"generated_at: {run_at or '?'})")
 
     wait_until_notify_time()
     send_notifications(fresh_articles)
-    digest = load_today_digest()
+    digest = load_today_digest(run_at=run_at or None)
     if digest:
         send_digest_notification(digest)
 
@@ -1918,6 +2113,12 @@ def main() -> None:
     reused_articles, to_analyze = reuse_analyzed_articles(
         all_articles, existing_today, past_seen_map
     )
+    retry_failed = collect_today_retry_articles(
+        existing_today, reused_articles + to_analyze
+    )
+    if retry_failed:
+        print(f"[INFO] Re-queueing {len(retry_failed)} previously failed articles from today")
+        to_analyze.extend(retry_failed)
     if reused_articles:
         prev_cnt = sum(1 for a in reused_articles if a.get("is_prev_seen"))
         print(f"[INFO] Reused {len(reused_articles)} already-analyzed articles "
@@ -1948,7 +2149,7 @@ def main() -> None:
 
     # 7. 関連記事グルーピング & デイリーブリーフィング生成
     all_articles = apply_topic_grouping(all_articles)
-    briefing = generate_daily_briefing(all_articles, run_at=run_at)
+    briefing = generate_daily_briefing(all_articles, run_at=run_at, sleep_before=True)
 
     # 8. 保存 + RSS フィード出力
     save_results(all_articles, run_at=run_at, briefing=briefing)
@@ -1962,7 +2163,10 @@ def main() -> None:
         print("[INFO] --no-notify: skipping notifications")
     else:
         wait_until_notify_time()
-        fresh = [a for a in all_articles if a.get("new_at") == run_at]
+        fresh = [
+            a for a in all_articles
+            if a.get("new_at") == run_at and a.get("analysis_status", "ok") == "ok"
+        ]
         send_notifications(fresh)
         if digest:
             send_digest_notification(digest)

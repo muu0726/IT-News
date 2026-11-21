@@ -3,12 +3,19 @@ name: IT Info Collector - 定期実行
 on:
   schedule:
     # 1日2回（JST 07:00 / 15:00 通知）
-    # GitHub Actions schedule の遅延を吸収しつつランナー待機時間を抑えるため約15分前倒し起動
-    # ① UTC 21:45 = JST 06:45 起動 → JST 07:00 通知
-    - cron: '45 21 * * *'
-    # ② UTC 05:45 = JST 14:45 起動 → JST 15:00 通知
-    - cron: '45 5 * * *'
+    # GitHub Actions schedule の実測遅延（3〜9時間）を吸収するため約8時間23分前倒しし、
+    # 混雑帯 (:00/:15/:30/:45) を避けた奇数分に起動 → 収集直前 (06:45 / 14:45 JST) まで2段階で待機する
+    # ① UTC 13:37 = 前日 JST 22:37 起動 → 06:45 収集 → JST 07:00 通知
+    - cron: '37 13 * * *'
+    # ② UTC 21:37 = 当日 JST 06:37 起動 → 14:45 収集 → JST 15:00 通知
+    - cron: '37 21 * * *'
   workflow_dispatch:
+    inputs:
+      notify_at_jst:
+        description: '通知目標時刻 (JST HH:MM / 省略時は即時通知)'
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: write
@@ -16,11 +23,78 @@ permissions:
   id-token: write
 
 jobs:
+  wait_1:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 270
+    permissions:
+      contents: read
+    outputs:
+      done: ${{ steps.wait.outputs.done }}
+      collect_at: ${{ steps.wait.outputs.collect_at }}
+      notify_at: ${{ steps.wait.outputs.notify_at }}
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: 第1段階待機（目標収集時刻または最大250分まで）
+        id: wait
+        env:
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          if [ "$EVENT_SCHEDULE" = "37 13 * * *" ]; then
+            COLLECT_AT="06:45"
+            NOTIFY_AT="07:00"
+          elif [ "$EVENT_SCHEDULE" = "37 21 * * *" ]; then
+            COLLECT_AT="14:45"
+            NOTIFY_AT="15:00"
+          else
+            COLLECT_AT="06:45,14:45"
+            NOTIFY_AT="07:00,15:00"
+          fi
+          echo "collect_at=$COLLECT_AT" >> "$GITHUB_OUTPUT"
+          echo "notify_at=$NOTIFY_AT" >> "$GITHUB_OUTPUT"
+          python3 wait_until.py \
+            --target "$COLLECT_AT" \
+            --max-wait 30600 \
+            --max-sleep 15000 \
+            --heartbeat 600 \
+            --github-output "$GITHUB_OUTPUT"
+
+  wait_2:
+    needs: wait_1
+    if: github.event_name == 'schedule' && needs.wait_1.result == 'success' && needs.wait_1.outputs.done != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 280
+    permissions:
+      contents: read
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: 第2段階待機（目標収集時刻まで残り時間待機）
+        env:
+          COLLECT_AT: ${{ needs.wait_1.outputs.collect_at }}
+        run: |
+          python3 wait_until.py \
+            --target "$COLLECT_AT" \
+            --max-wait 30600 \
+            --max-sleep 15600 \
+            --heartbeat 600
+
   collect:
+    needs: [wait_1, wait_2]
+    if: always() && !cancelled() && (needs.wait_1.result == 'success' || needs.wait_1.result == 'skipped') && (needs.wait_2.result == 'success' || needs.wait_2.result == 'skipped')
     environment:
       name: github-pages
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     # deploy.yml と同じグループ。待機を含まないこのジョブだけに掛ける
     concurrency:
       group: "pages"
@@ -28,10 +102,12 @@ jobs:
 
     steps:
       - name: チェックアウト
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+        with:
+          ref: main
 
       - name: Python 3.12 セットアップ
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
           cache: 'pip'
@@ -50,12 +126,15 @@ jobs:
       - name: gadget.py 実行（通知なし）
         # ガジェット側の失敗で IT ニュースの更新・通知を止めない
         continue-on-error: true
+        timeout-minutes: 8
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python gadget.py --no-notify
+        run: |
+          sleep 5
+          python gadget.py --no-notify
 
       - name: 通知用データを保存
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: notify-data
           path: |
@@ -73,36 +152,50 @@ jobs:
           for f in feed_*.xml digest.json gadgets.json gadget_feed.xml; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
-          git pull --rebase origin main || true
-          git diff --cached --quiet || git commit -m "chore: データ更新 $(date +'%Y-%m-%d %H:%M UTC')"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: データ更新 $(date +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase -X theirs origin main
+            git push
+          fi
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
+
+      - name: 公開用ディレクトリ生成 (_site)
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          for f in index.html gadget.html sw.js manifest.json .nojekyll data.json gadgets.json digest.json feed.xml gadget_feed.xml feed_*.xml; do
+            if [ -f "$f" ]; then cp "$f" _site/; fi
+          done
+          if [ -d archive ]; then cp -r archive _site/; fi
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
-          path: '.'
+          path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   notify:
-    needs: collect
+    needs: [wait_1, collect]
+    if: always() && !cancelled() && needs.collect.result == 'success'
     runs-on: ubuntu-latest
-    # 07:00 / 15:00 JST までの待機を含む（約10〜15分＋バッファ）
-    timeout-minutes: 35
+    # 07:00 / 15:00 JST までの待機上限 30分 (1800秒) ＋ 通知送信バッファ
+    timeout-minutes: 45
     permissions:
       contents: read
 
     steps:
       - name: チェックアウト
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+        with:
+          ref: main
 
       - name: Python 3.12 セットアップ
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
           cache: 'pip'
@@ -111,7 +204,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 通知用データを取得
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: notify-data
 
@@ -120,8 +213,9 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
-          # 定期実行時のみ 07:00 または 15:00 JST まで待って通知（手動実行は即時）
-          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && '07:00,15:00' || '' }}
+          # スケジュール枠ごとに目標時刻を分離し、朝枠の大幅遅延時に 15:00 枠へ誤待機しないようにする
+          NOTIFY_AT_JST: ${{ github.event_name == 'schedule' && (needs.wait_1.outputs.notify_at || '07:00,15:00') || inputs.notify_at_jst || '' }}
+          NOTIFY_MAX_WAIT_SEC: '1800'
         run: python gather.py --notify-only
 
       - name: ガジェット通知送信
@@ -135,9 +229,9 @@ jobs:
         run: python gadget.py --notify-only
 
   alert:
-    needs: [collect, notify]
-    # collect または notify が失敗・キャンセル（タイムアウト含む）された場合に確実に実行
-    if: always() && (needs.collect.result == 'failure' || needs.collect.result == 'cancelled' || needs.notify.result == 'failure' || needs.notify.result == 'cancelled')
+    needs: [wait_1, wait_2, collect, notify]
+    # wait_1 / wait_2 / collect / notify が失敗・キャンセル（タイムアウト含む）された場合に確実に実行
+    if: always() && (needs.wait_1.result == 'failure' || needs.wait_1.result == 'cancelled' || needs.wait_2.result == 'failure' || needs.wait_2.result == 'cancelled' || needs.collect.result == 'failure' || needs.collect.result == 'cancelled' || needs.notify.result == 'failure' || needs.notify.result == 'cancelled')
     runs-on: ubuntu-latest
     permissions: {}
 
@@ -145,9 +239,13 @@ jobs:
       - name: 失敗時 Discord アラート
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          WAIT1_RESULT: ${{ needs.wait_1.result }}
+          WAIT2_RESULT: ${{ needs.wait_2.result }}
+          COLLECT_RESULT: ${{ needs.collect.result }}
+          NOTIFY_RESULT: ${{ needs.notify.result }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           if [ -n "$DISCORD_WEBHOOK_URL" ]; then
-            curl -H "Content-Type: application/json" \
-              -d "{\"username\": \"GitHub Actions Alert\", \"content\": \"**[ERROR] IT Info Collector** のワークフローが失敗しました（collect: ${{ needs.collect.result }} / notify: ${{ needs.notify.result }}）。\\n[ログを確認](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})\"}" \
-              "$DISCORD_WEBHOOK_URL"
+            python3 -c 'import json, os; w1, w2, col, ntf, url = (os.environ[k] for k in ("WAIT1_RESULT", "WAIT2_RESULT", "COLLECT_RESULT", "NOTIFY_RESULT", "RUN_URL")); print(json.dumps({"username": "GitHub Actions Alert", "content": f"**[ERROR] IT Info Collector** のワークフローが失敗しました（wait_1: {w1} / wait_2: {w2} / collect: {col} / notify: {ntf}）。\n[ログを確認]({url})"}, ensure_ascii=False))' \
+              | curl --fail-with-body -sS -H "Content-Type: application/json" -d @- "$DISCORD_WEBHOOK_URL"
           fi

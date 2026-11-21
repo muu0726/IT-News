@@ -4,7 +4,7 @@
  * その他静的アセット: Cache First
  */
 
-const CACHE_NAME = 'itinfohub-v9';
+const CACHE_NAME = 'itinfohub-v10';
 
 const PRECACHE_URLS = [
   './',
@@ -38,17 +38,19 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// ネットワーク優先（成功時はキャッシュ更新、失敗時はキャッシュへフォールバック）
+// ネットワーク優先（クエリを除外したキーでキャッシュ更新、失敗時はキャッシュへフォールバック）
 function networkFirst(request) {
+  const url = new URL(request.url);
+  const cacheKey = new Request(url.origin + url.pathname);
   return fetch(request)
     .then((response) => {
       if (response.ok) {
         const clone = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+        caches.open(CACHE_NAME).then((cache) => cache.put(cacheKey, clone));
       }
       return response;
     })
-    .catch(() => caches.match(request));
+    .catch(() => caches.match(cacheKey));
 }
 
 self.addEventListener('fetch', (event) => {

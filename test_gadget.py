@@ -132,6 +132,8 @@ def test_stale_file_is_not_notified(monkeypatch):
 def test_notify_only_uses_saved_file(monkeypatch, tmp_path):
     path = tmp_path / "gadgets.json"
     gadget.save_gadgets([_item("a", score=90)], RUN_AT, path=str(path))
+    raw = path.read_text(encoding="utf-8")
+    assert "\n" not in raw  # コンパクト JSON 出力
     data = gadget.load_gadgets(str(path))
     assert [it["url"] for it in pick_gadget_notifications(data)] == ["a"]
 
@@ -181,18 +183,34 @@ def test_fetch_gadget_feeds_parallel_preserves_order(monkeypatch):
         {"FeedA": "https://a.example/rss", "FeedB": "https://b.example/rss"},
     )
 
-    class _FakeFeed:
-        bozo = False
+    class _FakeResp:
+        def __init__(self, content):
+            self.content = content
 
-        def __init__(self, entries):
-            self.entries = entries
+    calls = []
 
-    def fake_parse(url, agent=None):
+    def fake_safe_get(url, timeout=15):
+        calls.append((url, timeout))
         if "a.example" in url:
-            return _FakeFeed([{"title": "Item A", "link": "https://a.example/1", "published": "2026-10-29T01:00:00+00:00"}])
-        return _FakeFeed([{"title": "Item B", "link": "https://b.example/1", "published": "2026-10-29T02:00:00+00:00"}])
+            xml = (
+                b'<?xml version="1.0" encoding="UTF-8"?>'
+                b'<rss version="2.0"><channel><item>'
+                b'<title>Item A</title><link>https://a.example/1</link>'
+                b'<pubDate>Thu, 29 Oct 2026 01:00:00 +0000</pubDate>'
+                b'</item></channel></rss>'
+            )
+            return _FakeResp(xml)
+        xml = (
+            b'<?xml version="1.0" encoding="UTF-8"?>'
+            b'<rss version="2.0"><channel><item>'
+            b'<title>Item B</title><link>https://b.example/1</link>'
+            b'<pubDate>Thu, 29 Oct 2026 02:00:00 +0000</pubDate>'
+            b'</item></channel></rss>'
+        )
+        return _FakeResp(xml)
 
-    monkeypatch.setattr(gadget.feedparser, "parse", fake_parse)
+    monkeypatch.setattr(gadget, "safe_get", fake_safe_get)
     items = gadget.fetch_gadget_feeds(now)
     assert [it["title"] for it in items] == ["Item A", "Item B"]
+    assert all(timeout == 15 for _, timeout in calls)
 
