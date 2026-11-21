@@ -5,20 +5,13 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Nov 2026 14:25:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 02:51:34 +0000</lastBuildDate>
     <item>
-      <title>OpenSSL: EVP_EncodeBlock()におけるバッファオーバーフロー (CVE-2026-121481, CVSS 9.8)</title>
-      <link>https://github.com/openssl/openssl/pull/33652</link>
-      <guid isPermaLink="false">https://github.com/openssl/openssl/pull/33652</guid>
-      <description>[Score: 98] OpenSSLのEVP_EncodeBlock()関数にバッファオーバーフローの脆弱性(CVE-2026-121481)が発見されました。 / 無効な入力（NULLバッファ、負の長さなど）に対して-1を返すことで修正されます。 / この脆弱性はCVSSスコア9.8と評価されており、深刻な影響を及ぼす可能性があります。 [実務示唆: OpenSSLを使用しているシステムは、速やかにパッチを適用し、EVP_EncodeBlock()およびEVP_DecodeBlock()の利用箇所で入力値の検証を強化すべきです。] [GitHub: openssl/openssl] (Source: Hacker News)</description>
-      <pubDate>Fri, 20 Nov 2026 02:01:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>部下がClaudeっぽいスライドしか出してこなくてウンザリしてる上司はこれを使わせなさい</title>
-      <link>https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/nuco_d/items/b279477cbcdbe5921abd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 95] AIが生成するスライドが「Claudeっぽい」と見なされる理由を解説しています。 / これは生成AIの「分布収束」という仕組みによるもので、無難なデザインを生成しやすい傾向があります。 / AIに依存せず、聞き手や目的に合わせた資料作成スキルを部下に習得させる重要性を説いています。 [実務示唆: AI生成資料の品質向上には、目的やターゲットを明確にし、AIに具体的な指示を与えるプロンプトエンジニアリングスキルを習得させましょう。] (Source: Qiita)</description>
-      <pubDate>Tue, 17 Nov 2026 00:58:19 +0000</pubDate>
+      <title>CDKからTerraformへ：所有権移譲による本番インフラ無停止のIaC移行</title>
+      <link>https://zenn.dev/levtech/articles/14befd8e727f32</link>
+      <guid isPermaLink="false">https://zenn.dev/levtech/articles/14befd8e727f32</guid>
+      <description>[Score: 95] 本記事では、CDKで管理されている本番インフラをTerraformへ無停止で移行する手法について解説しています。 / 「所有権を移譲する」アプローチにより、13スタックの本番インフラを停止させずにIaC移行を完遂しました。 / 具体的な手順として、CloudFormationのRemovalPolicy: RETAIN設定、CDKからのリソース定義削除、Terraformでのimportによる管理下への取り込み、差分確認と適用が示されています。 [実務示唆: 異なるIaCツールへの移行を検討する際は、本番環境の無停止移行を実現する「所有権移譲」の手法を参考に、RemovalPolicy: RETAIN設定とTerraform importを計画的に実施すべきです。] (Source: Zenn)</description>
+      <pubDate>Fri, 20 Nov 2026 01:26:30 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
@@ -42,39 +35,32 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>Claudeがブラックホール物理学の2つの未解決問題を解決</title>
-      <link>https://www.anthropic.com/research/claude-black-hole-physics</link>
-      <guid isPermaLink="false">https://www.anthropic.com/research/claude-black-hole-physics</guid>
-      <description>[Score: 95] AnthropicのAI「Claude」がブラックホール物理学における2つの未解決問題を解決しました。 / 一般相対性理論と量子力学の統合を目指す「量子重力」の研究に貢献しています。 / ホログラフィック双対性という概念を用いて、重力に関する難しい問題を量子論に変換して解決しました。 [実務示唆: AIが基礎科学の未解決問題に貢献する事例として、AIの推論能力やシミュレーション能力の限界を再評価し、自社の研究開発にAIを導入する可能性を探るべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 19 Nov 2026 17:30:44 +0000</pubDate>
+      <title>Valkeyがスキップリストを廃止し、ソート済みセットのオーバーヘッドを最大43%削減</title>
+      <link>https://valkey.io/blog/from-skiplist-to-b+tree/</link>
+      <guid isPermaLink="false">https://valkey.io/blog/from-skiplist-to-b+tree/</guid>
+      <description>[Score: 95] Valkey 9.2では、ソート済みセットの内部実装がスキップリストから高ファンアウトB+ツリーの派生形であるfbtreeに置き換えられました。 / fbtreeは、従来のB+ツリーの利点に加え、Valkeyのワークロードに最適化された様々な機能（SIMD検索、リンクされたリーフなど）を統合しています。 / この変更により、500万メンバーのテストで、メンバーあたりのメモリオーバーヘッドが36〜43%削減され、最大109MBのメモリを節約できることが示されました。 [実務示唆: Valkeyを利用している開発者は、9.2へのアップデートを検討し、ソート済みセットを多用するアプリケーションでのメモリ使用量とパフォーマンスの改善を検証してください。] [GitHub: valkey/valkey] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 16:58:30 +0000</pubDate>
     </item>
     <item>
-      <title>Frostbite: AIが発見、設計、検証した新しいCPUアーキテクチャ</title>
-      <link>https://architectlabs.com/blog/frostbite</link>
-      <guid isPermaLink="false">https://architectlabs.com/blog/frostbite</guid>
-      <description>[Score: 95] ArchitectLabsは、AIシステムが完全に新しい命令セットを持つ汎用CPUアーキテクチャ「Frostbite」を発見・設計・検証したと発表しました。 / Frostbiteは、インタラクションネットの特性を活用することで、既存のCPUと比較して性能/ワットで4.59倍の向上を達成しました。 / AIがコンパイラ、ISA、アーキテクチャ、RTL、検証、GDSまで自律的に反復し、人間では困難な新しいハードウェア実装を発見しました。 [実務示唆: AIによるハードウェア設計の可能性を探り、将来的なAI設計チップの性能向上やコスト削減の動向に注目し、自身のプロジェクトへの応用を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Fri, 20 Nov 2026 10:01:41 +0000</pubDate>
+      <title>Claudeを使い「リーマン予想」を証明か Anthropic数学者が発表 Lean検証も通過、数学界が精査へ</title>
+      <link>https://japan.cnet.com/article/35255245/</link>
+      <guid isPermaLink="false">https://japan.cnet.com/article/35255245/</guid>
+      <description>[Score: 95] 米アンソロピックの数学者Levent Alpöge氏が、生成AI「Claude」を使い167年間未解決の数学の難問「リーマン予想」の証明を見つけたと発表しました。 / 公開された証明は形式証明システム「Lean」による検証を通過しており、一般化リーマン予想も同様の手法で証明できたとしています。 / 数学界による精査が続いており、クレイ数学研究所のミレニアム懸賞問題の一つであるリーマン予想の解決が注目されています。 [実務示唆: AIが数学の未解決問題解決に貢献する可能性が示されたため、AIによる論理的推論や形式証明の技術動向を注視し、自社の研究開発や問題解決プロセスへの応用可能性を検討すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 20 Nov 2026 23:02:01 +0000</pubDate>
     </item>
     <item>
-      <title>CDKからTerraformへ：所有権移譲による本番インフラ無停止のIaC移行</title>
-      <link>https://zenn.dev/levtech/articles/14befd8e727f32</link>
-      <guid isPermaLink="false">https://zenn.dev/levtech/articles/14befd8e727f32</guid>
-      <description>[Score: 95] 本記事では、CDKで管理されている本番インフラをTerraformへ無停止で移行する手法について解説しています。 / 「所有権を移譲する」アプローチにより、13スタックの本番インフラを停止させずにIaC移行を完遂しました。 / 具体的な手順として、CloudFormationのRemovalPolicy: RETAIN設定、CDKからのリソース定義削除、Terraformでのimportによる管理下への取り込み、差分確認と適用が示されています。 [実務示唆: 異なるIaCツールへの移行を検討する際は、本番環境の無停止移行を実現する「所有権移譲」の手法を参考に、RemovalPolicy: RETAIN設定とTerraform importを計画的に実施すべきです。] (Source: Zenn)</description>
-      <pubDate>Fri, 20 Nov 2026 01:26:30 +0000</pubDate>
+      <title>言語モデルは自身の重みを書き換えることができる</title>
+      <link>https://arxiv.org/abs/2611.21885</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.21885</guid>
+      <description>[Score: 90] 本記事は、大規模言語モデル（LLM）が自身の内部パラメータ（重み）を自己修正する能力を持つ可能性について探求しています。 / モデルが学習プロセス中に自身の構造や振る舞いを動的に変更できるという、メタ学習の新たな側面を示唆しています。 / これは、より自律的で適応性の高いAIシステムの開発に繋がる画期的な研究方向性です。 [実務示唆: 自己修正能力を持つLLMの登場に備え、モデルの挙動をより深く理解し、予期せぬ変化に対応できるような監視・制御メカニズムの研究開発に着手しましょう。] (Source: Hacker News)</description>
+      <pubDate>Fri, 20 Nov 2026 16:29:06 +0000</pubDate>
     </item>
     <item>
-      <title>【速報】三井住友銀で情報漏えい、最大1400万件</title>
-      <link>https://www.47news.jp/15262461.html</link>
-      <guid isPermaLink="false">https://www.47news.jp/15262461.html</guid>
-      <description>[Score: 95] 三井住友銀行が、業務委託先のプレイドのサービスが不正アクセスを受け、最大約1400万件の顧客情報が漏えいしたと発表しました。 / 不正アクセスの詳細や漏えいした情報の具体的な内容は、記事抜粋からは不明です。 / この事態は、金融機関における外部委託先のセキュリティ管理の重要性を改めて浮き彫りにしています。 [実務示唆: 外部サービスを利用する際は、委託先のセキュリティ体制を厳重に確認し、定期的な監査や契約内容の見直しを通じて情報漏えいリスクを最小限に抑えましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 20 Nov 2026 10:10:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>「httpS://」だと暗号化されず平文で送信……「PHP」に約20年潜んでいた脆弱性が解決／問題はいたってシンプル、なんともはや……【やじうまの杜】</title>
-      <link>https://forest.watch.impress.co.jp/docs/serial/yajiuma/2158241.html</link>
-      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/serial/yajiuma/2158241.html</guid>
-      <description>[Score: 95] PHPのHTTP/FTPストリームラッパーに、約20年間存在した脆弱性が修正された。 / URLスキームの「S」が大文字の場合、TLS暗号化がスキップされ平文で通信される問題。 / パスワードや認証トークンなどの情報漏洩リスクがあり、CVE-2026-128064として追跡されている。 [実務示唆: PHP利用者は直ちに修正版（v8.6.0等）へアップデートし、URLスキームの大文字・小文字を厳密に確認するよう徹底すること。] [GitHub: php/php-src] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 20 Nov 2026 09:26:32 +0000</pubDate>
+      <title>日本のレシートを自宅PCでOCRする：15構成を実レシート11枚で比べた</title>
+      <link>https://zenn.dev/chaki/articles/4545be3475fdb4</link>
+      <guid isPermaLink="false">https://zenn.dev/chaki/articles/4545be3475fdb4</guid>
+      <description>[Score: 90] 自宅PCで日本のレシートをOCRする15構成を実レシート11枚で比較検証しました。 / YomiTokuの2段読みが商品名93%、金額100%の精度で最良でしたが、非商用ライセンスです。 / 商用利用ではNDLOCR-LiteやPP-OCRv6が現実的で、VLMは手書き領収書に強いが長いレシートでは課題が見られました。 [実務示唆: レシートOCRを自作する際は、YomiTokuの2段読みを参考にしつつ、商用利用ならNDLOCR-LiteやPP-OCRv6を検討し、手書き対応ならVLMの活用を試すのが良いでしょう。] (Source: Zenn)</description>
+      <pubDate>Fri, 20 Nov 2026 04:33:15 +0000</pubDate>
     </item>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
@@ -91,53 +77,39 @@
       <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
     </item>
     <item>
-      <title>Gemini 4 NeonがModels Engineering Indexで新しく1位を獲得</title>
-      <link>https://git-aarvin.github.io/mei/</link>
-      <guid isPermaLink="false">https://git-aarvin.github.io/mei/</guid>
-      <description>[Score: 90] Gemini 4 NeonがModels Engineering Indexでトップの評価を得ました。 / これはAIモデルの性能、コスト、トークン効率を比較する指標です。 / 他の主要モデルと比較して優れたパフォーマンスを示しています。 [実務示唆: 最新の高性能AIモデルのベンチマーク結果を参考に、自社のAI開発におけるモデル選定や最適化戦略を見直すべきです。] [GitHub: git-aarvin/mei] (Source: Hacker News)</description>
-      <pubDate>Thu, 19 Nov 2026 23:35:35 +0000</pubDate>
+      <title>Inkling 2 Miniのリリース</title>
+      <link>https://thinkingmachines.ai/news/inkling-2-mini/</link>
+      <guid isPermaLink="false">https://thinkingmachines.ai/news/inkling-2-mini/</guid>
+      <description>[Score: 90] Thinking Machines AIが、ラップトップで動作する高速かつ強力な小型モデル「Inkling 2 Mini」をリリースしました。 / このモデルは、ループ型トランスフォーマーを採用し、中間層を複数回実行することで、少ないトークンで高い推論能力を発揮します。 / 特にエージェントコーディングなどの推論品質が重要なタスクにおいて、既存のオープンウェイトモデルを上回る性能を示しています。 [実務示唆: ラップトップで高性能なAIモデルを動かしたい開発者は、Inkling 2 Miniを試用し、エージェントコーディングや推論タスクでの性能を評価してください。] (Source: Hacker News)</description>
+      <pubDate>Fri, 20 Nov 2026 20:12:19 +0000</pubDate>
     </item>
     <item>
-      <title>Synologyセキュリティアドバイザリ</title>
-      <link>https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21</link>
-      <guid isPermaLink="false">https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21</guid>
-      <description>[Score: 90] Synologyは、複数の製品に影響を与える重大なセキュリティ脆弱性に関するアドバイザリを公開しました。 / 特にDSM 7.4、7.3、7.2.2、7.2.1、7.1、およびBeeStation OS 1.5が影響を受けます。 / ユーザーは速やかに推奨されるバージョンへのアップグレード、またはOAuth Serviceパッケージの無効化が求められています。 [実務示唆: Synology NASユーザーは、速やかにDSMを推奨バージョン（7.4.1-90080-2以上など）にアップグレードし、OAuthサービスを無効化することを検討してください。] (Source: Hacker News)</description>
-      <pubDate>Thu, 19 Nov 2026 22:13:40 +0000</pubDate>
+      <title>1万円のシンセをAIで魔改造。電子楽器のファームウェア開放が始まった | ギズモード・ジャパン</title>
+      <link>https://www.gizmodo.jp/article/0b0516f2-94f8-442e-bdae-2987f090be13/</link>
+      <guid isPermaLink="false">https://www.gizmodo.jp/article/0b0516f2-94f8-442e-bdae-2987f090be13/</guid>
+      <description>[Score: 90] 中国M-VAVEの小型FMシンセ「FM-1」が、ユーザーによるカスタムファームウェア開発で話題になっています。 / AIコーディングツールを活用した改造が加速し、メーカー側も開発用SDKやソースコードを提供し、ユーザーによる機能拡張を後押しする姿勢を見せています。 / この動きはAKAI ProfessionalやBEHRINGERにも波及し、電子楽器業界でファームウェア開放の新しい可能性が模索されています。 [実務示唆: AIによるソフトウェア開発の民主化は、ハードウェア製品のユーザーコミュニティ形成と製品寿命延長に貢献するため、自社製品のファームウェアやAPI開放を検討し、ユーザー共創の可能性を探るべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 20 Nov 2026 14:31:09 +0000</pubDate>
     </item>
     <item>
-      <title>11月に修正されたPHPの脆弱性についてまとめてみた</title>
-      <link>https://piyolog.hatenadiary.jp/entry/2026/11/20/003148</link>
-      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/11/20/003148</guid>
-      <description>[Score: 90] 2026年11月19日、PHP開発元が4系統のセキュリティリリースを公開し、複数の脆弱性を修正しました。 / 特に深刻度CRITICALの脆弱性が7件含まれており、一部はAI支援で報告されたものです。 / 10月の修正と関連する不完全な修正や、セッション処理中の致命的エラーに関する脆弱性も含まれています。 [実務示唆: PHPを使用しているシステムでは、速やかに最新バージョンへのアップデートを適用し、特にセッション処理に関連するアプリケーションの動作を確認してください。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 19 Nov 2026 15:54:08 +0000</pubDate>
+      <title>LLMの散文を正規表現で解析するのをやめよう</title>
+      <link>https://dev.to/phpboyscout/stop-regex-ing-the-llms-prose-53go</link>
+      <guid isPermaLink="false">https://dev.to/phpboyscout/stop-regex-ing-the-llms-prose-53go</guid>
+      <description>[Score: 90] LLMからの出力を正規表現で解析することは、出力形式の変動により信頼性が低く、保守が困難であると指摘しています。 / LLMに構造化されたデータ（JSONなど）を直接出力させることで、プログラミングによる処理が格段に容易になります。 / Go言語の例を挙げ、LLMに特定のGo構造体に対応するJSONを生成させることで、より堅牢なシステム構築が可能になることを示しています。 [実務示唆: LLMの出力をプログラムで利用する際は、正規表現によるパースではなく、プロンプトエンジニアリングでJSONなどの構造化データを直接出力させるように設計し、堅牢性と保守性を向上させましょう。] (Source: Dev.to)</description>
+      <pubDate>Sat, 21 Nov 2026 02:43:16 +0000</pubDate>
     </item>
     <item>
-      <title>Java4ShellがAVX-512 VBMI CPU上のMinecraftサーバーを脅かす</title>
-      <link>https://dev.to/guiadeti/java4shell-ameaca-servidores-minecraft-em-cpus-avx-512-vbmi-5god</link>
-      <guid isPermaLink="false">https://dev.to/guiadeti/java4shell-ameaca-servidores-minecraft-em-cpus-avx-512-vbmi-5god</guid>
-      <description>[Score: 90] Java4Shell (CVE-2026-114938) は、特定のx86-64 CPU上のOpenJDKが使用するHotSpotのBase64デコーダに影響を与える脆弱性です。 / この脆弱性は、AVX-512F、AVX-512BW、AVX-512 VBMI、BMI2の各機能を持つCPUで発生し、Minecraftサーバーなどが影響を受ける可能性があります。 / Red Hatは深刻度9.8と評価しており、修正にはJVMを17.0.21.1、21.0.13.1、25.0.5.1以降にアップデートする必要があります。 [実務示唆: お使いのサーバーがAVX-512 VBMI対応CPUを使用している場合、MinecraftサーバーのJVMバージョンを直ちに確認し、推奨される修正バージョンにアップデートしてください。] (Source: Dev.to)</description>
-      <pubDate>Fri, 20 Nov 2026 02:35:10 +0000</pubDate>
+      <title>CLAUDE.md や SKILL.md のルールを Turtle で書き、ルールの書き間違いや矛盾を lint で検査してみた話</title>
+      <link>https://zenn.dev/hma2moto/articles/turtle-agent-rules-pros-cons</link>
+      <guid isPermaLink="false">https://zenn.dev/hma2moto/articles/turtle-agent-rules-pros-cons</guid>
+      <description>[Score: 88] Claude CodeのエージェントルールをMarkdownからTurtle構文に移行し、ルールの明確化と自動検査を実現しました。 / Turtleを使うことで、ルールの強さ、例外、理由を一箇所にまとめられ、人間が読みやすくなります。 / また、lintツールでルールの書き間違いや矛盾を検査でき、エージェントがルールをより遵守する効果も確認されました。 [実務示唆: 大規模なAIエージェントのルール管理において、Markdownの限界を感じたら、Turtleのようなオントロジー記述言語とlintツールを導入し、ルールの構造化と自動検査による品質向上を検討すべきです。] (Source: Zenn)</description>
+      <pubDate>Thu, 19 Nov 2026 14:13:57 +0000</pubDate>
     </item>
     <item>
-      <title>日本のレシートを自宅PCでOCRする：15構成を実レシート11枚で比べた</title>
-      <link>https://zenn.dev/chaki/articles/4545be3475fdb4</link>
-      <guid isPermaLink="false">https://zenn.dev/chaki/articles/4545be3475fdb4</guid>
-      <description>[Score: 90] 自宅PCで日本のレシートをOCRする15構成を実レシート11枚で比較検証しました。 / YomiTokuの2段読みが商品名93%、金額100%の精度で最良でしたが、非商用ライセンスです。 / 商用利用ではNDLOCR-LiteやPP-OCRv6が現実的で、VLMは手書き領収書に強いが長いレシートでは課題が見られました。 [実務示唆: レシートOCRを自作する際は、YomiTokuの2段読みを参考にしつつ、商用利用ならNDLOCR-LiteやPP-OCRv6を検討し、手書き対応ならVLMの活用を試すのが良いでしょう。] (Source: Zenn)</description>
-      <pubDate>Fri, 20 Nov 2026 04:33:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>「あと10年もたないかもしれない」Rubyの父 まつもとゆきひろが危惧するOSS文化の消滅</title>
-      <link>https://type.jp/et/feature/32219/</link>
-      <guid isPermaLink="false">https://type.jp/et/feature/32219/</guid>
-      <description>[Score: 90] Ruby開発者のまつもとゆきひろ氏が、OSS文化の未来に強い危機感を表明。 / PHPやOpenJDKでの脆弱性発覚を例に、OSSのセキュリティ対応の困難さを指摘。 / 無償で利用されるOSS開発者の負担と、社会的責任を求める風潮への疑問を呈している。 [実務示唆: OSSの持続可能性を考慮し、企業はOSSプロジェクトへの貢献や開発者支援を積極的に検討すべきである。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 20 Nov 2026 04:31:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>TypeScript 7.1 の Content Mapper で型の生成コマンドをなくす</title>
-      <link>https://zenn.dev/toiroakr/articles/typescript-content-mapper-codegen</link>
-      <guid isPermaLink="false">https://zenn.dev/toiroakr/articles/typescript-content-mapper-codegen</guid>
-      <description>[Score: 88] TypeScript 7.1で導入されるContent Mapperは、TypeScriptが直接読めないファイルをプログラムに含め、型チェック時にTypeScriptのテキストに変換する仕組みです。 / これにより、これまで必要だった型定義ファイルの生成コマンドを不要にし、開発体験を向上させることが期待されます。 / 記事では、CLIフレームワークの例を用いて、ユーザーのコードや設定ファイルに合わせてライブラリ側の型を動的に変更する応用例が紹介されています。 [実務示唆: TypeScript 7.1のContent Mapperを活用することで、型定義ファイルの生成コマンドを廃止し、開発ワークフローを簡素化できるため、ライブラリ開発者は導入を検討すべきです。] [GitHub: microsoft/TypeScript] (Source: Zenn)</description>
-      <pubDate>Thu, 19 Nov 2026 02:10:13 +0000</pubDate>
+      <title>【実験】Direct Connectの片系を落とすと、実際どれくらいで切り替わり、行きと戻りはどの回線を通るのか</title>
+      <link>https://qiita.com/sh_fukatsu/items/5a069f9fce99a86efb05?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/sh_fukatsu/items/5a069f9fce99a86efb05?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] AWS Direct Connectの冗長構成において、片系障害時の切り替わり時間と経路変化を検証した記事です。 / AWS Fault Injection Service (FIS) の利用を試みるも権限不足で断念し、Direct Connectコンソールからの障害テストを実施しました。 / pingによる通信監視で、切り替わり時間や行き・戻りの経路がどのように変化するかを詳細に追跡しています。 [実務示唆: Direct Connectの冗長構成を導入している場合、障害テスト機能を用いて切り替わり時間と経路を定期的に検証し、システムの可用性を確認しましょう。] (Source: Qiita)</description>
+      <pubDate>Wed, 18 Nov 2026 13:42:33 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
@@ -145,6 +117,34 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
       <description>[Score: 88] マイクロソフトが「Microsoft Ignite 2026」で、クラウドやオンプレミスのデータベースを一元管理する「Database Hub in Fabric」を正式リリースしました。 / Azure SQL、PostgreSQL、Cosmos DB、SQL Serverなど多様なデータベースに対応し、統合データ分析基盤Microsoft Fabric上で動作します。 / AIエージェントによる運用監視の自動化機能も搭載し、リアルタイムのCPU、メモリ、ストレージトレンド追跡が可能です。 [実務示唆: 複数のデータベースを運用している企業は、Database Hubの導入を検討し、管理コスト削減と運用効率向上、AIによる監視自動化の恩恵を評価すべきです。] (Source: Publickey)</description>
       <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>RTKの走行データ収集でAndroidの記録アプリを外から監視する</title>
+      <link>https://zenn.dev/nauh_blog/articles/b60cd6973c8a3f</link>
+      <guid isPermaLink="false">https://zenn.dev/nauh_blog/articles/b60cd6973c8a3f</guid>
+      <description>[Score: 85] RTK受信機とAndroidアプリ「DroggerGPS」を用いた高精度な走行データ収集において、記録停止による再走行を防ぐため監視アプリを開発しました。 / 監視アプリは、DroggerGPSの記録サービス稼働状況やRTK補正情報の受信状態を外部から確認できるようにします。 / これにより、数cm単位の測位精度が維持されているかをリアルタイムで把握し、データ収集の信頼性を向上させます。 [実務示唆: 高精度な位置情報データを扱うシステム開発では、記録アプリの外部監視や測位状態のリアルタイム確認を実装し、データ品質と運用効率の向上を図るべきです。] (Source: Zenn)</description>
+      <pubDate>Fri, 20 Nov 2026 09:00:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Microsoft 365 CopilotがOneDriveのファイルを直接編集可能に！CoworkなしでGitHub Copilotのように使える件</title>
+      <link>https://qiita.com/yuyanz/items/c3bb4801c105d96fa79d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/yuyanz/items/c3bb4801c105d96fa79d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] Microsoft 365 CopilotがOneDrive上のファイルを直接編集できるようになり、既存ファイルの更新が容易になりました。 / 「プロジェクト」機能と組み合わせることで、特定のフォルダを作業領域としたAI活用が可能になります。 / GPT系のモデルでは動作が確認されましたが、Claude系では挙動が異なる場合があるため注意が必要です。 [実務示唆: Microsoft 365 CopilotのOneDriveファイル直接編集機能とプロジェクト機能を活用し、AIによるドキュメント管理・更新の効率化を検討しましょう。] (Source: Qiita)</description>
+      <pubDate>Thu, 19 Nov 2026 03:56:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>マイクロソフト、AIが生成したアプリを企業内で安全に実行するランタイム「Copilot Managed Runtime」正式リリース</title>
+      <link>https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</guid>
+      <description>[Score: 85] マイクロソフトは「Microsoft Ignite 2026」で、AIが生成したアプリケーションを企業内で安全に実行するための基盤「Copilot Managed Runtime」を正式リリースしました。 / AIによって生成されたアプリは脆弱性やセキュリティリスクを抱える可能性があるため、適切な権限管理とサンドボックス化された実行環境が求められます。 / 本ランタイムは、これらの課題を解決し、企業内でのAIアプリの安全なデプロイと実行を可能にします。 [実務示唆: AI生成アプリを企業導入する際は、Copilot Managed Runtimeのような専用ランタイムを活用し、セキュリティと権限管理を徹底すべきです。] (Source: Publickey)</description>
+      <pubDate>Wed, 18 Nov 2026 15:58:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>速報: アレッサンドロ・マスッロ氏によるGRHの証明</title>
+      <link>https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/</link>
+      <guid isPermaLink="false">https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/</guid>
+      <description>[Score: 85] スタンフォード大学のラヴィ・ヴァキル教授が、アレッサンドロ・マスッロ氏による一般リーマン予想（GRH）の証明案を公開しました。 / ブライアン・コンラッド氏が数ヶ月間詳細に検証し、好感触を得ているとのことです。 / AIは一切使用されておらず、人間による純粋な数学的成果として注目されています。 [実務示唆: 数学分野の進展に興味がある研究者や開発者は、公開された証明案を早期に確認し、その検証や形式化に貢献することを検討してください。] (Source: Hacker News)</description>
+      <pubDate>Fri, 20 Nov 2026 18:33:14 +0000</pubDate>
     </item>
   </channel>
 </rss>

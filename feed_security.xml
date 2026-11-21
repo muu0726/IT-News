@@ -5,14 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Nov 2026 14:25:30 +0000</lastBuildDate>
-    <item>
-      <title>OpenSSL: EVP_EncodeBlock()におけるバッファオーバーフロー (CVE-2026-121481, CVSS 9.8)</title>
-      <link>https://github.com/openssl/openssl/pull/33652</link>
-      <guid isPermaLink="false">https://github.com/openssl/openssl/pull/33652</guid>
-      <description>[Score: 98] OpenSSLのEVP_EncodeBlock()関数にバッファオーバーフローの脆弱性(CVE-2026-121481)が発見されました。 / 無効な入力（NULLバッファ、負の長さなど）に対して-1を返すことで修正されます。 / この脆弱性はCVSSスコア9.8と評価されており、深刻な影響を及ぼす可能性があります。 [実務示唆: OpenSSLを使用しているシステムは、速やかにパッチを適用し、EVP_EncodeBlock()およびEVP_DecodeBlock()の利用箇所で入力値の検証を強化すべきです。] [GitHub: openssl/openssl] (Source: Hacker News)</description>
-      <pubDate>Fri, 20 Nov 2026 02:01:09 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 21 Nov 2026 02:51:34 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -28,53 +21,11 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>【速報】三井住友銀で情報漏えい、最大1400万件</title>
-      <link>https://www.47news.jp/15262461.html</link>
-      <guid isPermaLink="false">https://www.47news.jp/15262461.html</guid>
-      <description>[Score: 95] 三井住友銀行が、業務委託先のプレイドのサービスが不正アクセスを受け、最大約1400万件の顧客情報が漏えいしたと発表しました。 / 不正アクセスの詳細や漏えいした情報の具体的な内容は、記事抜粋からは不明です。 / この事態は、金融機関における外部委託先のセキュリティ管理の重要性を改めて浮き彫りにしています。 [実務示唆: 外部サービスを利用する際は、委託先のセキュリティ体制を厳重に確認し、定期的な監査や契約内容の見直しを通じて情報漏えいリスクを最小限に抑えましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 20 Nov 2026 10:10:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>Synologyセキュリティアドバイザリ</title>
-      <link>https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21</link>
-      <guid isPermaLink="false">https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21</guid>
-      <description>[Score: 90] Synologyは、複数の製品に影響を与える重大なセキュリティ脆弱性に関するアドバイザリを公開しました。 / 特にDSM 7.4、7.3、7.2.2、7.2.1、7.1、およびBeeStation OS 1.5が影響を受けます。 / ユーザーは速やかに推奨されるバージョンへのアップグレード、またはOAuth Serviceパッケージの無効化が求められています。 [実務示唆: Synology NASユーザーは、速やかにDSMを推奨バージョン（7.4.1-90080-2以上など）にアップグレードし、OAuthサービスを無効化することを検討してください。] (Source: Hacker News)</description>
-      <pubDate>Thu, 19 Nov 2026 22:13:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>11月に修正されたPHPの脆弱性についてまとめてみた</title>
-      <link>https://piyolog.hatenadiary.jp/entry/2026/11/20/003148</link>
-      <guid isPermaLink="false">https://piyolog.hatenadiary.jp/entry/2026/11/20/003148</guid>
-      <description>[Score: 90] 2026年11月19日、PHP開発元が4系統のセキュリティリリースを公開し、複数の脆弱性を修正しました。 / 特に深刻度CRITICALの脆弱性が7件含まれており、一部はAI支援で報告されたものです。 / 10月の修正と関連する不完全な修正や、セッション処理中の致命的エラーに関する脆弱性も含まれています。 [実務示唆: PHPを使用しているシステムでは、速やかに最新バージョンへのアップデートを適用し、特にセッション処理に関連するアプリケーションの動作を確認してください。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 19 Nov 2026 15:54:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>Java4ShellがAVX-512 VBMI CPU上のMinecraftサーバーを脅かす</title>
-      <link>https://dev.to/guiadeti/java4shell-ameaca-servidores-minecraft-em-cpus-avx-512-vbmi-5god</link>
-      <guid isPermaLink="false">https://dev.to/guiadeti/java4shell-ameaca-servidores-minecraft-em-cpus-avx-512-vbmi-5god</guid>
-      <description>[Score: 90] Java4Shell (CVE-2026-114938) は、特定のx86-64 CPU上のOpenJDKが使用するHotSpotのBase64デコーダに影響を与える脆弱性です。 / この脆弱性は、AVX-512F、AVX-512BW、AVX-512 VBMI、BMI2の各機能を持つCPUで発生し、Minecraftサーバーなどが影響を受ける可能性があります。 / Red Hatは深刻度9.8と評価しており、修正にはJVMを17.0.21.1、21.0.13.1、25.0.5.1以降にアップデートする必要があります。 [実務示唆: お使いのサーバーがAVX-512 VBMI対応CPUを使用している場合、MinecraftサーバーのJVMバージョンを直ちに確認し、推奨される修正バージョンにアップデートしてください。] (Source: Dev.to)</description>
-      <pubDate>Fri, 20 Nov 2026 02:35:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>政府の内部資料流出か、基幹システムに不正アクセス デジタル庁発表：朝日新聞</title>
-      <link>https://www.asahi.com/articles/ASVCN30WCVCNULFA01NM.html</link>
-      <guid isPermaLink="false">https://www.asahi.com/articles/ASVCN30WCVCNULFA01NM.html</guid>
-      <description>[Score: 85] デジタル庁が、政府の基幹システムへの不正アクセスにより内部資料が流出した可能性を発表した。 / 詳細な被害状況や原因については、現在調査が進められていると推測される。 / 政府機関のセキュリティ対策の重要性が改めて浮き彫りになる事態である。 [実務示唆: 政府機関や重要インフラに関わるシステム開発者は、多層防御やゼロトラスト原則に基づいた厳格なセキュリティ対策を再確認し、実装を徹底すること。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 20 Nov 2026 09:31:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>PHPの書き込み中断時にセッションの整合性を保護する</title>
-      <link>https://dev.to/jeffreyciend/protecting-session-integrity-when-php-writes-are-interrupted-3mmc</link>
-      <guid isPermaLink="false">https://dev.to/jeffreyciend/protecting-session-integrity-when-php-writes-are-interrupted-3mmc</guid>
-      <description>[Score: 85] PHPのセッションファイル書き込みが中断されると、ファイルが破損し、2つのセッションのデータが混在する可能性があるCVE-2026-126714が公開されました。 / この脆弱性はCVSS v4.0で9.2と評価され、PHPプロジェクトは修正をリリースしています。 / セッションの破損は認証状態の無効化やコード実行につながる可能性があり、セキュリティと信頼性の両面でレビューが必要です。 [実務示唆: PHPを使用しているシステムでは、CVE-2026-126714の修正パッチを速やかに適用し、セッションの整合性に関する潜在的なリスクを評価してください。] (Source: Dev.to)</description>
-      <pubDate>Fri, 20 Nov 2026 14:22:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>I let a cloud AI audit my server logs without showing it a single real IP, username or key</title>
-      <link>https://dev.to/mediblacksand_f0ea36c53fb/i-let-a-cloud-ai-audit-my-server-logs-without-showing-it-a-single-real-ip-username-or-key-3gcp</link>
-      <guid isPermaLink="false">https://dev.to/mediblacksand_f0ea36c53fb/i-let-a-cloud-ai-audit-my-server-logs-without-showing-it-a-single-real-ip-username-or-key-3gcp</guid>
-      <description>[Score: 82] 筆者は、サーバーログをクラウドAIに監査させる際、IPアドレスやユーザー名などの機密情報を一切開示せずに分析を行いました。 / PythonスクリプトとQwenモデルを組み合わせ、ログデータを匿名化・仮名化してからAIに渡すことで、セキュリティとプライバシーを確保しています。 / AIはログの書き換えは行わず、匿名化されたデータに基づいて分析結果を生成し、そのプロセスは手動で検証されました。 [実務示唆: 機密情報を含むログをAIで分析する際は、本記事の手法を参考に、厳格なデータ匿名化・仮名化プロセスを導入し、セキュリティリスクを最小限に抑えるべきです。] (Source: Dev.to)</description>
-      <pubDate>Fri, 20 Nov 2026 02:35:23 +0000</pubDate>
+      <title>読者が求めたコントロールを実行した結果、間違ったモデルをベンチマークしていたことが判明した</title>
+      <link>https://dev.to/revhive/we-ran-the-control-a-reader-asked-for-it-also-turned-out-we-had-benchmarked-the-wrong-model-13bb</link>
+      <guid isPermaLink="false">https://dev.to/revhive/we-ran-the-control-a-reader-asked-for-it-also-turned-out-we-had-benchmarked-the-wrong-model-13bb</guid>
+      <description>[Score: 80] セキュリティエージェントの脆弱性検出能力に関するベンチマークで、読者からの指摘によりコントロール実験を実施しました。 / 当初10/10の検出率だったが、セキュリティ関連ではない同規模のコミットをリバートしたケースでコントロール実験を行った結果、エージェントが「ガードが削除された」パターンに反応している可能性が浮上しました。 / これにより、エージェントが実際に脆弱性を検出しているのではなく、単に削除されたチェックを認識しているだけかもしれないという、ベンチマークの根本的な問題が明らかになりました。 [実務示唆: セキュリティツールやAIモデルの評価を行う際は、ポジティブな結果だけでなく、コントロール群を用いた厳密な実験設計を行い、評価指標が本当に意図した能力を測っているか常に検証しましょう。] (Source: Dev.to)</description>
+      <pubDate>Sat, 21 Nov 2026 02:43:28 +0000</pubDate>
     </item>
   </channel>
 </rss>

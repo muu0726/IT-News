@@ -5,13 +5,20 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Nov 2026 14:25:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 02:51:34 +0000</lastBuildDate>
     <item>
       <title>CDKからTerraformへ：所有権移譲による本番インフラ無停止のIaC移行</title>
       <link>https://zenn.dev/levtech/articles/14befd8e727f32</link>
       <guid isPermaLink="false">https://zenn.dev/levtech/articles/14befd8e727f32</guid>
       <description>[Score: 95] 本記事では、CDKで管理されている本番インフラをTerraformへ無停止で移行する手法について解説しています。 / 「所有権を移譲する」アプローチにより、13スタックの本番インフラを停止させずにIaC移行を完遂しました。 / 具体的な手順として、CloudFormationのRemovalPolicy: RETAIN設定、CDKからのリソース定義削除、Terraformでのimportによる管理下への取り込み、差分確認と適用が示されています。 [実務示唆: 異なるIaCツールへの移行を検討する際は、本番環境の無停止移行を実現する「所有権移譲」の手法を参考に、RemovalPolicy: RETAIN設定とTerraform importを計画的に実施すべきです。] (Source: Zenn)</description>
       <pubDate>Fri, 20 Nov 2026 01:26:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Valkeyがスキップリストを廃止し、ソート済みセットのオーバーヘッドを最大43%削減</title>
+      <link>https://valkey.io/blog/from-skiplist-to-b+tree/</link>
+      <guid isPermaLink="false">https://valkey.io/blog/from-skiplist-to-b+tree/</guid>
+      <description>[Score: 95] Valkey 9.2では、ソート済みセットの内部実装がスキップリストから高ファンアウトB+ツリーの派生形であるfbtreeに置き換えられました。 / fbtreeは、従来のB+ツリーの利点に加え、Valkeyのワークロードに最適化された様々な機能（SIMD検索、リンクされたリーフなど）を統合しています。 / この変更により、500万メンバーのテストで、メンバーあたりのメモリオーバーヘッドが36〜43%削減され、最大109MBのメモリを節約できることが示されました。 [実務示唆: Valkeyを利用している開発者は、9.2へのアップデートを検討し、ソート済みセットを多用するアプリケーションでのメモリ使用量とパフォーマンスの改善を検証してください。] [GitHub: valkey/valkey] (Source: Hacker News)</description>
+      <pubDate>Tue, 17 Nov 2026 16:58:30 +0000</pubDate>
     </item>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
@@ -21,13 +28,6 @@
       <pubDate>Wed, 18 Nov 2026 15:55:49 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
-      <link>https://www.publickey1.jp/blog/26/database_hubai.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
-      <description>[Score: 88] マイクロソフトが「Microsoft Ignite 2026」で、クラウドやオンプレミスのデータベースを一元管理する「Database Hub in Fabric」を正式リリースしました。 / Azure SQL、PostgreSQL、Cosmos DB、SQL Serverなど多様なデータベースに対応し、統合データ分析基盤Microsoft Fabric上で動作します。 / AIエージェントによる運用監視の自動化機能も搭載し、リアルタイムのCPU、メモリ、ストレージトレンド追跡が可能です。 [実務示唆: 複数のデータベースを運用している企業は、Database Hubの導入を検討し、管理コスト削減と運用効率向上、AIによる監視自動化の恩恵を評価すべきです。] (Source: Publickey)</description>
-      <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
-    </item>
-    <item>
       <title>【実験】Direct Connectの片系を落とすと、実際どれくらいで切り替わり、行きと戻りはどの回線を通るのか</title>
       <link>https://qiita.com/sh_fukatsu/items/5a069f9fce99a86efb05?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/sh_fukatsu/items/5a069f9fce99a86efb05?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
@@ -35,18 +35,18 @@
       <pubDate>Wed, 18 Nov 2026 13:42:33 +0000</pubDate>
     </item>
     <item>
-      <title>HardwareDx: データセンターマシン修理のための基盤グラフモデルシステム</title>
-      <link>https://arxiv.org/abs/2611.23398</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.23398</guid>
-      <description>[Score: 85] 本記事は、データセンターにおけるマシン修理のための基盤となるグラフモデルシステム「HardwareDx」について紹介しています。 / ハードウェアの故障診断と修理プロセスを効率化するためのAIベースのアプローチを提案していると推測されます。 / arXivLabsの紹介文が本文抜粋として提示されていますが、論文の内容自体はデータセンター運用におけるAI活用に関する研究と考えられます。 [実務示唆: データセンター運用者は、AIを活用したハードウェア故障診断システムを導入することで、修理プロセスの自動化と効率化を図り、ダウンタイムを削減できる可能性があります。] (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 19 Nov 2026 05:00:00 +0000</pubDate>
+      <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
+      <link>https://www.publickey1.jp/blog/26/database_hubai.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
+      <description>[Score: 88] マイクロソフトが「Microsoft Ignite 2026」で、クラウドやオンプレミスのデータベースを一元管理する「Database Hub in Fabric」を正式リリースしました。 / Azure SQL、PostgreSQL、Cosmos DB、SQL Serverなど多様なデータベースに対応し、統合データ分析基盤Microsoft Fabric上で動作します。 / AIエージェントによる運用監視の自動化機能も搭載し、リアルタイムのCPU、メモリ、ストレージトレンド追跡が可能です。 [実務示唆: 複数のデータベースを運用している企業は、Database Hubの導入を検討し、管理コスト削減と運用効率向上、AIによる監視自動化の恩恵を評価すべきです。] (Source: Publickey)</description>
+      <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
     </item>
     <item>
-      <title>Apache SeaTunnel 3.1.0 を用いたMySQL CDCからPostgreSQLへの再現可能なウォークスルー</title>
-      <link>https://dev.to/danielnadia/mysql-cdc-postgresql-with-apache-seatunnel-310-a-reproducible-walkthrough-1ik0</link>
-      <guid isPermaLink="false">https://dev.to/danielnadia/mysql-cdc-postgresql-with-apache-seatunnel-310-a-reproducible-walkthrough-1ik0</guid>
-      <description>[Score: 78] Apache SeaTunnel 3.1.0を使用してMySQLからPostgreSQLへのCDC（Change Data Capture）パイプラインを構築する詳細なウォークスルーが提供されています。 / 初期スナップショット、挿入、更新、削除、スキーマ変更、セーブポイントからの復元といった一連の操作を検証できます。 / Kafkaなどの中間コンポーネンスなしで、SeaTunnelのMySQL CDCコネクタとJDBCシンクを直接利用するシンプルな構成が特徴です。 [実務示唆: MySQLからPostgreSQLへのデータ連携を検討している場合、Apache SeaTunnel 3.1.0のCDC機能を試用し、本記事のウォークスルーを参考に再現性を検証してください。] [GitHub: apache/seatunnel] (Source: Dev.to)</description>
-      <pubDate>Fri, 20 Nov 2026 14:22:15 +0000</pubDate>
+      <title>「Windows Server 2028」で「WSUS」や「SMB 1.0」、「VBScript」などが削除へ／「Windows PowerShell 5.1」「WDS」は非推奨に、レガシーBIOSでの起動も不可</title>
+      <link>https://forest.watch.impress.co.jp/docs/news/2158261.html</link>
+      <guid isPermaLink="false">https://forest.watch.impress.co.jp/docs/news/2158261.html</guid>
+      <description>[Score: 85] 次期サーバーOS「Windows Server 2028」で、WSUS、SMB 1.0、VBScriptなどの機能が削除されることが発表されました。 / Windows PowerShell 5.1とWDSは非推奨となり、レガシーBIOSでの起動もサポートされなくなります。 / これらの変更はプレビュー段階であり、リリースまでに変更される可能性もありますが、早期の移行計画が推奨されます。 [実務示唆: Windows Server 2028への移行を検討している場合、WSUSやSMB 1.0などの削除機能、およびPowerShell 5.1などの非推奨機能への依存がないか確認し、代替策を計画しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 20 Nov 2026 11:11:54 +0000</pubDate>
     </item>
     <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
@@ -54,13 +54,6 @@
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-october-2026/</guid>
       <description>[Score: 75] GitHubは2026年10月の稼働状況レポートを公開し、可用性と信頼性向上の取り組みを報告しました。 / Azure Central USへの大幅な容量追加と障害エスカレーション経路の削減を進めました。 / しかし、書き込み停止、データ移行中の監視ギャップ、地域ネットワーク障害が発生し、容量増強と並行して安全な運用と分離、地域復旧の検証の必要性が強調されました。 [実務示唆: 大規模なサービスを運用するエンジニアは、GitHubの事例から、容量増強だけでなく、運用手順の安全性、システムの分離、災害復旧計画の定期的な検証の重要性を学び、自社システムに適用すべきです。] [GitHub: github/docs] (Source: GitHub Blog)</description>
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>OpenStreetMapデータのための高速で決定論的な自然言語検索</title>
-      <link>https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935</link>
-      <guid isPermaLink="false">https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935</guid>
-      <description>[Score: 70] Hippomapsは、OpenStreetMapデータを利用した無料の地図サービスです。 / 自然言語で場所を検索でき、写真や営業時間、経路案内、公共交通機関の情報を提供します。 / アカウント不要で、WebとAndroidアプリで利用可能です。 [実務示唆: OpenStreetMapデータを活用した自然言語検索機能は、地図サービス開発においてユーザー体験を向上させるヒントとなるため、類似機能の実装を検討する際は参考にすると良いでしょう。] (Source: Hacker News)</description>
-      <pubDate>Thu, 19 Nov 2026 15:16:02 +0000</pubDate>
     </item>
   </channel>
 </rss>
