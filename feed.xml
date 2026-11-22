@@ -5,7 +5,14 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 21 Nov 2026 21:46:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 05:45:55 +0000</lastBuildDate>
+    <item>
+      <title>寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド</title>
+      <link>https://zenn.dev/canly/articles/ca6875cd79539f</link>
+      <guid isPermaLink="false">https://zenn.dev/canly/articles/ca6875cd79539f</guid>
+      <description>[Score: 100] AI開発者poteto氏が公開したCursor公式スキル集「pstack」の活用ガイドです。 / pstackは、AIが質の高いコードを生成するための58のスキルと22のプレイブックで構成されています。 / 本記事では、指示の組み立て方からツール実装、自動テスト、テスト検証までを約10分で完遂する手順が解説されています。 [実務示唆: AIエージェントによる開発効率化のため、Cursorのpstackプラグインを導入し、質の高いコード生成と自動テストのワークフローを試すことを推奨します。] [GitHub: cursor/plugins] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 20 Nov 2026 09:04:40 +0000</pubDate>
+    </item>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -77,6 +84,20 @@
       <pubDate>Sat, 21 Nov 2026 21:35:17 +0000</pubDate>
     </item>
     <item>
+      <title>日本のレシートを自宅PCでOCRする：15構成を実レシート11枚で比べた</title>
+      <link>https://zenn.dev/chaki/articles/4545be3475fdb4</link>
+      <guid isPermaLink="false">https://zenn.dev/chaki/articles/4545be3475fdb4</guid>
+      <description>[Score: 90] 自宅PCで日本のレシートをOCRする15構成を実レシート11枚で比較検証しました。 / YomiTokuの2段読みが商品名93%、金額100%の精度で最良でしたが、非商用ライセンスです。 / 商用利用ではNDLOCR-LiteやPP-OCRv6が現実的で、VLMは手書き領収書に強いが長いレシートでは課題が見られました。 [実務示唆: レシートOCRを自作する際は、YomiTokuの2段読みを参考にしつつ、商用利用ならNDLOCR-LiteやPP-OCRv6を検討し、手書き対応ならVLMの活用を試すのが良いでしょう。] (Source: Zenn)</description>
+      <pubDate>Fri, 20 Nov 2026 04:33:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>Orca Botsが良さそう、何ができるのか</title>
+      <link>https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro</link>
+      <guid isPermaLink="false">https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro</guid>
+      <description>[Score: 90] AI Agentを活用した開発IDE「Orca」に、役割と記憶を持つBotを常設できる「Orca Bots」がベータ版として追加されました。 / Orca Botsは、Slack連携やGitHubのIssue/PR確認、CI失敗時の原因調査など、日常業務を継続的にAIに任せることを可能にします。 / Git worktreeと連携し、AIが生成したコード修正を人間が容易に確認・引き継げる点が特徴です。 [実務示唆: AI Agentを活用した開発に興味のあるエンジニアは、Orca Botsを試用し、日常業務へのAI組み込みによる開発効率向上を検証することを推奨します。] [GitHub: orca-dev/orca] (Source: Zenn)</description>
+      <pubDate>Sat, 21 Nov 2026 15:14:13 +0000</pubDate>
+    </item>
+    <item>
       <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
       <link>https://www.publickey1.jp/blog/26/database_hubai.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
@@ -124,27 +145,6 @@
       <guid isPermaLink="false">https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 85] AWS re:Inventに先立ち、CognitoとAgentCoreにおけるAIエージェント認証のアップデートが発表されました。 / AIクライアントの認証管理を簡素化するCIMDとDCRの2つの新機能がCognitoに追加され、管理者の手間を削減します。 / AgentCore GatewayではJWTクレームを条件にリソースポリシーで細かくアクセス制御できるようになり、セキュリティと管理性が向上しました。 [実務示唆: AWSでAIエージェントを利用する際は、CognitoのCIMD/DCRやAgentCore GatewayのJWTクレームを活用し、認証・認可の管理を効率化しセキュリティを強化することを推奨します。] (Source: Qiita)</description>
       <pubDate>Sat, 21 Nov 2026 04:03:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド</title>
-      <link>https://zenn.dev/canly/articles/ca6875cd79539f</link>
-      <guid isPermaLink="false">https://zenn.dev/canly/articles/ca6875cd79539f</guid>
-      <description>[Score: 85] AI開発者poteto氏が公開したCursor公式スキル集「pstack」の活用ガイドです。 / pstackは、AIが質の高いコードを生成するための58のスキルと22のプレイブックで構成されています。 / 本記事では、指示の組み立て方からツール実装、自動テスト、テスト検証までを約10分で完遂する手順が解説されています。 [実務示唆: AIエージェントによる開発効率化のため、Cursorのpstackプラグインを導入し、質の高いコード生成と自動テストのワークフローを試すことを推奨します。] [GitHub: cursor/plugins] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 20 Nov 2026 22:35:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>自己に嘘をつけないプルーフゲートキーパーを構築し、見えない唯一の罠を発見した</title>
-      <link>https://dev.to/savana_7d5672a4479a71c2f5/i-built-a-proof-gatekeeper-that-cant-lie-to-itself-and-found-the-one-trap-it-cant-see-2obm</link>
-      <guid isPermaLink="false">https://dev.to/savana_7d5672a4479a71c2f5/i-built-a-proof-gatekeeper-that-cant-lie-to-itself-and-found-the-one-trap-it-cant-see-2obm</guid>
-      <description>[Score: 85] 筆者は、zkVerifyの公式回路を用いて、ゼロ知識証明で意思決定を記録するプルーフゲートキーパーを構築しました。 / ゼロ知識証明は特定のアクションが検証可能であることを保証しますが、エージェントが正直であること自体を保証するものではありません。 / エージェントの意思決定が本当に正しいかを知るには、証明がカバーする範囲と、カバーしない範囲を正確に理解することが重要です。 [実務示唆: ゼロ知識証明をシステムに導入する際は、証明がカバーする具体的な「主張」を明確にし、証明が保証しない範囲を理解した上で設計することで、潜在的な脆弱性を回避できます。] (Source: Dev.to)</description>
-      <pubDate>Sat, 21 Nov 2026 21:34:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>オープンソースにおける最高のものは共に築かれる</title>
-      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
-      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

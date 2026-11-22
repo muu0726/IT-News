@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 21 Nov 2026 21:46:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 05:45:55 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -33,6 +33,27 @@
       <guid isPermaLink="false">https://dev.to/savana_7d5672a4479a71c2f5/i-built-a-proof-gatekeeper-that-cant-lie-to-itself-and-found-the-one-trap-it-cant-see-2obm</guid>
       <description>[Score: 85] 筆者は、zkVerifyの公式回路を用いて、ゼロ知識証明で意思決定を記録するプルーフゲートキーパーを構築しました。 / ゼロ知識証明は特定のアクションが検証可能であることを保証しますが、エージェントが正直であること自体を保証するものではありません。 / エージェントの意思決定が本当に正しいかを知るには、証明がカバーする範囲と、カバーしない範囲を正確に理解することが重要です。 [実務示唆: ゼロ知識証明をシステムに導入する際は、証明がカバーする具体的な「主張」を明確にし、証明が保証しない範囲を理解した上で設計することで、潜在的な脆弱性を回避できます。] (Source: Dev.to)</description>
       <pubDate>Sat, 21 Nov 2026 21:34:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>推論プロバイダーにおけるデータ処理インシデント</title>
+      <link>https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/</link>
+      <guid isPermaLink="false">https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/</guid>
+      <description>[Score: 85] OpenRouterは、一部の推論プロバイダーでデータが侵害された、またはデータポリシーが遵守されていない証拠が見つかったことを報告しました。 / OpenRouter自体への不正アクセスやデータ侵害は確認されていませんが、影響を受けたユーザーには通知済みです。 / 同社は、データポリシーの執行を強化し、プロバイダーにインシデント報告書の作成を促しています。 [実務示唆: AIモデルを利用する開発者は、利用する推論プロバイダーのデータポリシーとセキュリティ対策を再確認し、機密データの取り扱いには特に注意を払うべきです。] (Source: Hacker News)</description>
+      <pubDate>Sun, 22 Nov 2026 02:14:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>PebbleOSがカーネルシステムコールプリミティブをアプリストアソフトウェアに公開していた</title>
+      <link>https://dev.to/andreagomez/pebbleos-exposed-kernel-syscall-primitives-to-app-store-software-15ep</link>
+      <guid isPermaLink="false">https://dev.to/andreagomez/pebbleos-exposed-kernel-syscall-primitives-to-app-store-software-15ep</guid>
+      <description>[Score: 85] PebbleOSは、SDKアプリケーションから到達可能な複数のシステムコールを通じて、カーネルシステムコールプリミティブをアプリストアソフトウェアに公開していました。 / これらのシステムコールは引数を検証せず、アプリがカーネル権限を取得し、任意のメモリの読み書き、マイクによる盗聴、ウォッチの動作不能化を可能にする脆弱性がありました。 / 影響を受けるファームウェアは4.9.177未満で、このバージョンで修正されています。 [実務示唆: 組み込みシステムやOS開発に携わるエンジニアは、システムコールや特権的なインターフェースの引数検証を徹底し、アプリからの不正アクセスを防ぐためのセキュリティ設計を再確認しましょう。] (Source: Dev.to)</description>
+      <pubDate>Sun, 22 Nov 2026 05:40:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>情報漏えいを公表しないリスクの要点整理</title>
+      <link>https://qiita.com/Maruo110/items/385b2c7ef5fbd074e6e2</link>
+      <guid isPermaLink="false">https://qiita.com/Maruo110/items/385b2c7ef5fbd074e6e2</guid>
+      <description>[Score: 80] 情報漏えいに関する個人情報保護委員会への報告義務は増加しているが、報道発表の義務はないため、公表されないケースも多いです。 / ランサムウェア攻撃の手口が変化し、攻撃者が窃取データをリークサイトで公開するようになったことで、「公表しない」選択のリスクが高まっています。 / 情報漏えいの公表判断は、CSIRTだけでなく広報・法務・経営層を含めた合意形成が重要であり、攻撃者による公開のタイミングと形を委ねるリスクを認識すべきです。 [実務示唆: 企業は、情報漏えい発生時の公表基準とフローを事前に明確化し、攻撃者によるデータ公開リスクを考慮した上で、広報・法務・経営層を含むCSIRT体制を強化すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sat, 21 Nov 2026 22:25:07 +0000</pubDate>
     </item>
     <item>
       <title>新宿駅で財布を忘れて家に帰れない女の子から「PayPay1000円分を現金で交換して貰えませんか？」とお願いされ、「返さなくていいよ」と1000円あげたら喜ばれず戸惑っていた</title>

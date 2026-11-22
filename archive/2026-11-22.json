@@ -1,11 +1,34 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-22T06:45:23.716134+09:00",
-  "total_count": 38,
-  "success_count": 38,
+  "generated_at": "2026-11-22T14:45:25.750271+09:00",
+  "total_count": 51,
+  "success_count": 51,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
+    {
+      "title": "寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド",
+      "url": "https://zenn.dev/canly/articles/ca6875cd79539f",
+      "source": "はてなブックマーク",
+      "published": "2026-11-20T09:04:40+00:00",
+      "reading_min": 11,
+      "summary": "AI開発者poteto氏が公開したCursor公式スキル集「pstack」の活用ガイドです。\npstackは、AIが質の高いコードを生成するための58のスキルと22のプレイブックで構成されています。\n本記事では、指示の組み立て方からツール実装、自動テスト、テスト検証までを約10分で完遂する手順が解説されています。",
+      "actionable_takeaway": "AIエージェントによる開発効率化のため、Cursorのpstackプラグインを導入し、質の高いコード生成と自動テストのワークフローを試すことを推奨します。",
+      "github_repo": "cursor/plugins",
+      "tags": [
+        "AI",
+        "開発効率化",
+        "自動テスト"
+      ],
+      "category": "AI・機械学習",
+      "score": 100,
+      "score_reason": "AIを活用した開発自動化の具体的な手法とツールが紹介されており、開発者の生産性向上に直結する可能性が高いため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T06:45:23.716134+09:00",
+      "first_seen": "2026-11-22T06:45:23.716134+09:00",
+      "is_hot": true,
+      "hatena_count": 384
+    },
     {
       "title": "マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始",
       "url": "https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html",
@@ -97,7 +120,7 @@
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 2
     },
     {
       "title": "Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張",
@@ -150,8 +173,8 @@
       "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
       "source": "Hacker News",
       "published": "2026-11-21T18:02:19+00:00",
-      "hn_score": 254,
-      "hn_comments": 54,
+      "hn_score": 413,
+      "hn_comments": 103,
       "reading_min": 12,
       "summary": "LookAtMyQuantは、モデルの圧縮時の出力への影響を測定し、最小限のダメージでサイズ予算に収まるようにコードを選択する量子化コンパイラです。\nGemma 4 E2Bでは、同じファイルサイズでQ4_K_Mよりも12倍低いKL値を達成しています。\nQwen3.5-4Bを1.23GB、Qwen3.8-27Bを7.2GBに量子化し、高い性能を維持しています。",
       "actionable_takeaway": "大規模言語モデルの効率的な運用を目指すエンジニアは、LookAtMyQuantのような量子化技術を導入し、メモリと計算資源の最適化を図るべきです。",
@@ -212,7 +235,7 @@
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
       "is_hot": false,
-      "hatena_count": 41,
+      "hatena_count": 199,
       "topic_group": 1,
       "topic_size": 2
     },
@@ -237,6 +260,52 @@
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "日本のレシートを自宅PCでOCRする：15構成を実レシート11枚で比べた",
+      "url": "https://zenn.dev/chaki/articles/4545be3475fdb4",
+      "source": "Zenn",
+      "published": "2026-11-20T04:33:15+00:00",
+      "reading_min": 6,
+      "summary": "自宅PCで日本のレシートをOCRする15構成を実レシート11枚で比較検証しました。\nYomiTokuの2段読みが商品名93%、金額100%の精度で最良でしたが、非商用ライセンスです。\n商用利用ではNDLOCR-LiteやPP-OCRv6が現実的で、VLMは手書き領収書に強いが長いレシートでは課題が見られました。",
+      "actionable_takeaway": "レシートOCRを自作する際は、YomiTokuの2段読みを参考にしつつ、商用利用ならNDLOCR-LiteやPP-OCRv6を検討し、手書き対応ならVLMの活用を試すのが良いでしょう。",
+      "tags": [
+        "OCR",
+        "レシート",
+        "AI"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "実用的な課題（レシートOCR）に対して多角的な検証を行い、具体的な性能比較と商用・非商用での選択肢を提示しており、非常に実践的で価値が高いと判断したため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-20T23:24:08.736115+09:00",
+      "first_seen": "2026-11-20T23:24:08.736115+09:00",
+      "is_hot": false,
+      "hatena_count": 1,
+      "is_prev_seen": true
+    },
+    {
+      "title": "Orca Botsが良さそう、何ができるのか",
+      "url": "https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro",
+      "source": "Zenn",
+      "published": "2026-11-21T15:14:13+00:00",
+      "reading_min": 3,
+      "summary": "AI Agentを活用した開発IDE「Orca」に、役割と記憶を持つBotを常設できる「Orca Bots」がベータ版として追加されました。\nOrca Botsは、Slack連携やGitHubのIssue/PR確認、CI失敗時の原因調査など、日常業務を継続的にAIに任せることを可能にします。\nGit worktreeと連携し、AIが生成したコード修正を人間が容易に確認・引き継げる点が特徴です。",
+      "actionable_takeaway": "AI Agentを活用した開発に興味のあるエンジニアは、Orca Botsを試用し、日常業務へのAI組み込みによる開発効率向上を検証することを推奨します。",
+      "github_repo": "orca-dev/orca",
+      "tags": [
+        "AI Agent",
+        "IDE",
+        "ソフトウェア開発"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AI Agent中心の開発パラダイムを推進するOrca Botsは、開発プロセスの自動化と効率化に大きな可能性を秘めており、今後のソフトウェア開発に影響を与えるでしょう。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
+      "is_hot": false,
+      "hatena_count": 2
     },
     {
       "title": "マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も",
@@ -335,8 +404,8 @@
       "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
       "source": "Hacker News",
       "published": "2026-11-20T21:03:12+00:00",
-      "hn_score": 216,
-      "hn_comments": 61,
+      "hn_score": 829,
+      "hn_comments": 192,
       "reading_min": 3,
       "summary": "膵臓がん治療薬「ダラキソンラシブ」が、数十年来で最大のブレークスルーとして注目されています。\n治験では、患者の12人に1人でがんが検出不能になり、ほぼ全員の腫瘍の増殖が停止しました。\nこの薬は、進行した膵臓がん患者の生存期間を延ばす可能性があり、大きな期待が寄せられています。",
       "actionable_takeaway": "医療技術の進歩はIT分野にも影響を与えるため、AI創薬や医療データ分析の動向に注目し、関連技術の学習を検討しましょう。",
@@ -377,7 +446,7 @@
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "【pre:Inventまとめ】AWSのAIエージェント認証がいろいろ進化！MCPサーバー構築を例に一挙解説",
@@ -402,29 +471,6 @@
       "hatena_count": 0
     },
     {
-      "title": "寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド",
-      "url": "https://zenn.dev/canly/articles/ca6875cd79539f",
-      "source": "はてなブックマーク",
-      "published": "2026-11-20T22:35:55+00:00",
-      "reading_min": 11,
-      "summary": "AI開発者poteto氏が公開したCursor公式スキル集「pstack」の活用ガイドです。\npstackは、AIが質の高いコードを生成するための58のスキルと22のプレイブックで構成されています。\n本記事では、指示の組み立て方からツール実装、自動テスト、テスト検証までを約10分で完遂する手順が解説されています。",
-      "actionable_takeaway": "AIエージェントによる開発効率化のため、Cursorのpstackプラグインを導入し、質の高いコード生成と自動テストのワークフローを試すことを推奨します。",
-      "github_repo": "cursor/plugins",
-      "tags": [
-        "AI",
-        "開発効率化",
-        "自動テスト"
-      ],
-      "category": "AI・機械学習",
-      "score": 85,
-      "score_reason": "AIを活用した開発自動化の具体的な手法とツールが紹介されており、開発者の生産性向上に直結する可能性が高いため高スコアとしました。",
-      "analysis_status": "ok",
-      "new_at": "2026-11-22T06:45:23.716134+09:00",
-      "first_seen": "2026-11-22T06:45:23.716134+09:00",
-      "is_hot": false,
-      "hatena_count": 25
-    },
-    {
       "title": "自己に嘘をつけないプルーフゲートキーパーを構築し、見えない唯一の罠を発見した",
       "url": "https://dev.to/savana_7d5672a4479a71c2f5/i-built-a-proof-gatekeeper-that-cant-lie-to-itself-and-found-the-one-trap-it-cant-see-2obm",
       "source": "Dev.to",
@@ -443,6 +489,52 @@
       "analysis_status": "ok",
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "推論プロバイダーにおけるデータ処理インシデント",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "source": "Hacker News",
+      "published": "2026-11-22T02:14:14+00:00",
+      "hn_score": 70,
+      "hn_comments": 28,
+      "reading_min": 1,
+      "summary": "OpenRouterは、一部の推論プロバイダーでデータが侵害された、またはデータポリシーが遵守されていない証拠が見つかったことを報告しました。\nOpenRouter自体への不正アクセスやデータ侵害は確認されていませんが、影響を受けたユーザーには通知済みです。\n同社は、データポリシーの執行を強化し、プロバイダーにインシデント報告書の作成を促しています。",
+      "actionable_takeaway": "AIモデルを利用する開発者は、利用する推論プロバイダーのデータポリシーとセキュリティ対策を再確認し、機密データの取り扱いには特に注意を払うべきです。",
+      "tags": [
+        "セキュリティ",
+        "データプライバシー",
+        "AIインフラ"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "AI推論プロバイダーにおけるデータ処理インシデントは、AI利用におけるセキュリティとプライバシーの重要性を再認識させ、業界全体に影響を与える可能性があります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "PebbleOSがカーネルシステムコールプリミティブをアプリストアソフトウェアに公開していた",
+      "url": "https://dev.to/andreagomez/pebbleos-exposed-kernel-syscall-primitives-to-app-store-software-15ep",
+      "source": "Dev.to",
+      "published": "2026-11-22T05:40:39+00:00",
+      "reading_min": 3,
+      "summary": "PebbleOSは、SDKアプリケーションから到達可能な複数のシステムコールを通じて、カーネルシステムコールプリミティブをアプリストアソフトウェアに公開していました。\nこれらのシステムコールは引数を検証せず、アプリがカーネル権限を取得し、任意のメモリの読み書き、マイクによる盗聴、ウォッチの動作不能化を可能にする脆弱性がありました。\n影響を受けるファームウェアは4.9.177未満で、このバージョンで修正されています。",
+      "actionable_takeaway": "組み込みシステムやOS開発に携わるエンジニアは、システムコールや特権的なインターフェースの引数検証を徹底し、アプリからの不正アクセスを防ぐためのセキュリティ設計を再確認しましょう。",
+      "tags": [
+        "セキュリティ",
+        "OS",
+        "スマートウォッチ"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "スマートウォッチOSにおけるカーネルレベルの深刻な脆弱性であり、組み込みシステム開発におけるセキュリティ設計の重要性を再認識させる点で非常に重要度が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -499,8 +591,8 @@
       "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
       "source": "Hacker News",
       "published": "2026-11-21T14:36:45+00:00",
-      "hn_score": 669,
-      "hn_comments": 532,
+      "hn_score": 928,
+      "hn_comments": 791,
       "reading_min": 1,
       "summary": "LeanとMathlibコミュニティが、Levent Alpöge氏によるリーマン予想の証明をLeanライブラリとして検証しました。\n1700万行のコードからなる証明は、Mathlibにのみ依存しており、コミュニティによってその正しさが確認されました。\nこれにより、リーマン予想の証明が正式に認定され、数学界に大きな影響を与えることが期待されます。",
       "actionable_takeaway": "形式検証ツールLeanの活用は、複雑なアルゴリズムやプロトコルの信頼性向上に役立つため、高信頼性システム開発者はその導入を検討すべきです。",
@@ -517,7 +609,7 @@
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 39,
       "topic_group": 1,
       "topic_size": 2
     },
@@ -564,7 +656,7 @@
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
       "is_hot": false,
-      "hatena_count": 92
+      "hatena_count": 168
     },
     {
       "title": "GitHub - fkubota/understand-mode: Claude Code の出力・PR・コードを、付箋のホワイトボードで寄り道しながら理解する /understand スキル",
@@ -587,7 +679,51 @@
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
       "is_hot": false,
-      "hatena_count": 30
+      "hatena_count": 94
+    },
+    {
+      "title": "情報漏えいを公表しないリスクの要点整理",
+      "url": "https://qiita.com/Maruo110/items/385b2c7ef5fbd074e6e2",
+      "source": "はてなブックマーク",
+      "published": "2026-11-21T22:25:07+00:00",
+      "reading_min": 2,
+      "summary": "情報漏えいに関する個人情報保護委員会への報告義務は増加しているが、報道発表の義務はないため、公表されないケースも多いです。\nランサムウェア攻撃の手口が変化し、攻撃者が窃取データをリークサイトで公開するようになったことで、「公表しない」選択のリスクが高まっています。\n情報漏えいの公表判断は、CSIRTだけでなく広報・法務・経営層を含めた合意形成が重要であり、攻撃者による公開のタイミングと形を委ねるリスクを認識すべきです。",
+      "actionable_takeaway": "企業は、情報漏えい発生時の公表基準とフローを事前に明確化し、攻撃者によるデータ公開リスクを考慮した上で、広報・法務・経営層を含むCSIRT体制を強化すべきです。",
+      "tags": [
+        "セキュリティ",
+        "情報漏えい",
+        "リスクマネジメント"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "情報漏えいの公表に関する現状と、ランサムウェア攻撃の変化による新たなリスクを整理しており、企業の情報セキュリティ戦略に直接的な影響を与える重要な内容です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
+      "is_hot": false,
+      "hatena_count": 61
+    },
+    {
+      "title": "なぜCOBOLのCOMP-3はPixやISO 20022との連携を未だに阻害するのか（そしてオープンソースツール）",
+      "url": "https://dev.to/digbijoylabs/por-que-o-comp-3-do-cobol-ainda-derruba-integracoes-com-pix-e-iso-20022-e-uma-ferramenta-3i2c",
+      "source": "Dev.to",
+      "published": "2026-11-22T05:41:51+00:00",
+      "reading_min": 1,
+      "summary": "ブラジルの銀行やフィンテック業界では、PixやISO 20022といった最新の決済システムと、COBOLメインフレームのレガシーシステムとの連携が課題となっています。\n特に、COBOLのバイナリデータ形式であるCOMP-3（Packed Decimal）のデータ変換が、統合におけるサイレントな障害となることが多いです。\nDigbijoy Labsは、このCOMP-3ペイロードをブラウザ上でエンコード・デコード・可視化できるオープンソースツールを開発しました。",
+      "actionable_takeaway": "COBOLレガシーシステムとの連携でCOMP-3データ変換に課題を抱えているエンジニアは、紹介されているオープンソースツールを活用し、データ構造の理解とデバッグ効率の向上を図りましょう。",
+      "tags": [
+        "COBOL",
+        "レガシーシステム",
+        "データ変換"
+      ],
+      "category": "プログラミング言語",
+      "score": 80,
+      "score_reason": "金融業界のレガシーシステムと最新技術の連携における具体的な課題（COMP-3）を指摘し、その解決策としてオープンソースツールを提供している点が非常に実用的で重要と評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "Part 5 — 並行処理とNode.jsの内部: `async/await`の裏側で実際に何が起きているのか？",
@@ -608,6 +744,28 @@
       "analysis_status": "ok",
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Limn Engineの内部: 360レベルのレイトレースFPSが単一のHTMLファイルで動作する仕組み",
+      "url": "https://dev.to/kehinde_owolabi_e2e54567a/inside-limn-engine-how-a-360-level-raycast-fps-runs-in-a-single-html-file-2ofl",
+      "source": "Dev.to",
+      "published": "2026-11-22T05:40:50+00:00",
+      "reading_min": 4,
+      "summary": "NULLPOINTというレトロスタイルのブラウザFPSゲームは、ビルドツールやnpm、複雑なバンドラーを使わず、単一のHTMLファイルで動作します。\nこれを可能にしているのが、ミニマリストなHTML5 CanvasラッパーであるLimn Engine（epic.js）です。\nLimnは、静的要素をオフスクリーンキャンバスに一度だけ描画しキャッシュするデュアルレンダラーシステムにより、低スペック環境でも60FPSのパフォーマンスを実現しています。",
+      "actionable_takeaway": "Webベースのゲームやインタラクティブコンテンツ開発において、パフォーマンスとシンプルさを両立させたい場合、Limn Engineのデュアルレンダラーのようなキャッシュ戦略を検討し、単一HTMLファイルでの開発手法を試してみましょう。",
+      "tags": [
+        "HTML5 Canvas",
+        "ゲーム開発",
+        "パフォーマンス最適化"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 78,
+      "score_reason": "単一HTMLファイルで360レベルのFPSを実現する技術は、Webゲーム開発におけるパフォーマンスとシンプルさの追求において新規性と実用性が高く評価できます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -725,6 +883,50 @@
       "hatena_count": 0
     },
     {
+      "title": "KARTEを選んだのは顧客の私じゃない｜しがないサラリーマン",
+      "url": "https://note.com/kochan34123412/n/nf37511e42de9",
+      "source": "はてなブックマーク",
+      "published": "2026-11-20T22:36:49+00:00",
+      "reading_min": 3,
+      "summary": "KARTEの情報漏えいに関する利用企業の発表を読み、顧客の立場から「なぜ自分の情報がそこにあったのか」という疑問が提示されています。\n企業が外部サービスを選定し、顧客情報を連携する際の責任と、その情報管理のあり方について問題提起しています。\n事故発生時、企業は外部サービスの責任だけでなく、自社の選定理由や情報連携の目的、管理体制について顧客に説明する責任があることを強調しています。",
+      "actionable_takeaway": "外部サービスを利用する企業は、顧客情報の連携範囲と目的を明確にし、選定責任と情報管理体制について顧客へ説明責任を果たす準備を整えるべきです。",
+      "tags": [
+        "データプライバシー",
+        "顧客体験",
+        "SaaS"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 75,
+      "score_reason": "情報漏えいにおける企業の責任と顧客への説明責任について深く考察しており、SaaS利用企業の情報管理と顧客コミュニケーションのあり方に重要な示唆を与えます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
+      "is_hot": false,
+      "hatena_count": 92
+    },
+    {
+      "title": "PulseFlow: ウェブカメラをリアルタイムの人間センシング体験に変える",
+      "url": "https://dev.to/ezequie1sc/pulseflow-turning-a-webcam-into-a-real-time-human-sensing-experience-2hj6",
+      "source": "Dev.to",
+      "published": "2026-11-22T05:43:52+00:00",
+      "reading_min": 7,
+      "summary": "PulseFlowは、Presage SmartSpectra SDKを活用し、通常のウェブカメラ入力をリアルタイムの人間センシング体験に変えるWindowsデスクトップアプリケーションです。\nスマートウォッチや専用ハードウェアなしで、非接触の心拍数と呼吸数を推定し、ライブチャートで表示します。\nElectron、Node.js、TypeScriptで開発され、シンプルでプライバシーに配慮したインターフェースを提供します。",
+      "actionable_takeaway": "非接触生体センシング技術に関心がある開発者は、Presage SmartSpectra SDKとPulseFlowの事例を参考に、ウェブカメラを活用した新たなアプリケーション開発の可能性を探ってみましょう。",
+      "tags": [
+        "生体センシング",
+        "ウェブカメラ",
+        "Electron"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "ウェブカメラのみで非接触の生体センシングを実現する技術は新規性が高く、ヘルスケアやUX分野での応用可能性が期待できるため高評価としました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "Muse の VM は約2時間で入れ替わる（実測と対策）",
       "url": "https://qiita.com/mryo0826/items/c05efd7ac228fe85ab44?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
@@ -815,6 +1017,53 @@
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
       "is_hot": false,
+      "hatena_count": 107
+    },
+    {
+      "title": "トヨタ、日産、ホンダがコスト削減のため部品を標準化へ",
+      "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+      "source": "Hacker News",
+      "published": "2026-11-22T04:04:56+00:00",
+      "hn_score": 154,
+      "hn_comments": 77,
+      "reading_min": 3,
+      "summary": "日本の主要自動車メーカーであるトヨタ、日産、ホンダが、生産コスト削減のため一部の車両部品の標準化を開始します。\n初期段階では、鋼材の品質基準、プラスチックのプロトコル、ワイヤーハーネスの色分けスキームが統一されます。\n将来的には、より多くの部品で標準化を進め、国際的なサプライヤーも巻き込む予定です。",
+      "actionable_takeaway": "自動車業界のサプライヤーは、部品の標準化動向を注視し、品質基準やプロトコルの変更に対応できるよう準備を進めるべきです。",
+      "tags": [
+        "自動車産業",
+        "標準化",
+        "コスト削減"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "大手自動車メーカーによる部品標準化は、サプライチェーン全体に大きな影響を与え、コスト削減と効率化を促進する可能性があるため重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "無料でセルフホストできWindows・macOS・LinuxアプリもあるRSSリーダー「WyrmRSS」、YouTube動画の再生やDiscord・Slackへの新着通知も可能",
+      "url": "https://gigazine.net/news/20261121-wyrmrss/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-21T14:01:09+00:00",
+      "reading_min": 7,
+      "summary": "WyrmRSSは、ニュースサイトやブログの更新情報をまとめて取得できる無料のオープンソースRSSリーダーです。\nセルフホストに加え、Windows・macOS・Linux用のデスクトップアプリも提供されています。\nYouTubeチャンネルの購読や動画再生、Discord・Slackへの新着通知機能も備えています。",
+      "actionable_takeaway": "既存のRSSリーダーに不満がある場合や、YouTubeチャンネルの更新も一元管理したい場合は、WyrmRSSの導入を検討し、セルフホストまたはデスクトップアプリを試用してみましょう。",
+      "github_repo": "kryoseu/WyrmRSS",
+      "tags": [
+        "RSS",
+        "オープンソース",
+        "セルフホスト"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 70,
+      "score_reason": "既存のRSSリーダー市場に新たな選択肢を提供するオープンソースツールであり、YouTube連携やマルチプラットフォーム対応が実用性高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
+      "is_hot": false,
       "hatena_count": 53
     },
     {
@@ -840,12 +1089,34 @@
       "hatena_count": 0
     },
     {
+      "title": "エージェントのルールパックはインストールスクリプトの品質に依存する",
+      "url": "https://dev.to/the_movie_9b1357e8c99cfaa/your-agents-rule-pack-is-only-as-good-as-its-install-script-3l3o",
+      "source": "Dev.to",
+      "published": "2026-11-22T05:42:26+00:00",
+      "reading_min": 5,
+      "summary": "本記事は、複数のコーディングエージェントを運用する際の「ルールパック」の品質、特にそのインストールスクリプトの重要性について論じています。\nRulePortというルールパックを例に、ドライラン、冪等性、手動ファイルへの上書き、エージェント不在環境、意図的なドリフトなど、6つの方法でインストーラーをテストした結果を報告しています。\nコンパイラのバイト安定性やドライランの正確性など、インストーラーの信頼性がシステム運用に不可欠であることを示唆しています。",
+      "actionable_takeaway": "自動化エージェントや設定管理ツールを導入する際は、提供されるルールパックやスクリプトのインストーラーが、様々なシナリオで冪等性や正確性を保つか検証し、信頼性を確保しましょう。",
+      "tags": [
+        "自動化",
+        "エージェント",
+        "インストールスクリプト"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 65,
+      "score_reason": "エージェントのルールパックのインストールスクリプトの重要性を指摘しており、実務における設定管理の信頼性向上に役立つ示唆があるため評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "心を操り、体を操り、自分を操る",
       "url": "https://notnottalmud.substack.com/p/getting-the-mind-to-steer-the-body",
       "source": "Hacker News",
       "published": "2026-11-20T22:11:05+00:00",
-      "hn_score": 42,
-      "hn_comments": 18,
+      "hn_score": 213,
+      "hn_comments": 67,
       "summary": "この記事は、心と体の関係性、そして自己制御の重要性について考察しているようです。\n精神的な状態が身体的な行動にどう影響するか、またその逆も然りというテーマが考えられます。\n自己啓発や心理学的な視点から、より良い自己管理の方法を探る内容と推測されます。",
       "actionable_takeaway": "エンジニアはメンタルヘルスと身体的健康が生産性に直結するため、自己管理技術を習得し、ストレス軽減や集中力向上に役立てるべきです。",
       "tags": [
@@ -863,12 +1134,36 @@
       "hatena_count": 0
     },
     {
+      "title": "サンドイッチシミュレーター",
+      "url": "https://stulle.app/",
+      "source": "Hacker News",
+      "published": "2026-11-22T00:07:59+00:00",
+      "hn_score": 124,
+      "hn_comments": 50,
+      "reading_min": 1,
+      "summary": "「Stulle」は、サンドイッチを作るインタラクティブなシミュレーターです。\nパンにスプレッドを塗り、様々な具材をドラッグ＆ドロップで配置してサンドイッチを作成できます。\n完成したサンドイッチは写真として保存し、リンクを共有することが可能です。",
+      "actionable_takeaway": "Web開発者は、ユーザーエンゲージメントを高めるためのインタラクティブなUI/UXデザインの参考として、本シミュレーターの技術や表現方法を分析してみることを推奨します。",
+      "tags": [
+        "Webアプリケーション",
+        "シミュレーター",
+        "UI/UX"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 45,
+      "score_reason": "技術的な新規性や業界への影響は限定的ですが、インタラクティブなWebコンテンツの事例として一定の興味深さがあります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-22T14:45:25.750271+09:00",
+      "first_seen": "2026-11-22T14:45:25.750271+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "アジ化鉛の山を爆破する",
       "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
       "source": "Hacker News",
       "published": "2026-11-21T13:23:14+00:00",
-      "hn_score": 446,
-      "hn_comments": 298,
+      "hn_score": 578,
+      "hn_comments": 375,
       "summary": "この記事は、アジ化鉛という非常に不安定な化合物の爆破に関するものです。\nタイトルから推測すると、その危険性や爆発のメカニズム、あるいは実験の様子が記述されていると考えられます。\n科学的な興味や安全管理の重要性について言及されている可能性があります。",
       "actionable_takeaway": "危険物を取り扱う研究や開発においては、厳格な安全プロトコルとリスク評価が不可欠であることを再認識し、常に最新の安全基準を確認しましょう。",
       "tags": [
@@ -887,19 +1182,19 @@
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-22T06:45:23.716134+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-22T14:45:25.750271+09:00",
     "summary_lines": [
-      "AIのテストと信頼性に関する課題解決が今日の主要テーマです。",
-      "AIエージェントの堅牢な開発とセキュリティ対策が注目されています。",
-      "LLMの推論最適化やAWSのAIエージェント認証も進化を見せています。"
+      "AIエージェント開発の効率化と堅牢なテスト手法が注目されています。",
+      "AIアプリの信頼性向上とセキュリティ対策が喫緊の課題です。",
+      "LLMの推論最適化や形式検証によるAIの品質保証が進展しています。"
     ],
     "focus_tags": [
       "AI",
+      "AIエージェント",
       "テスト",
       "セキュリティ",
-      "LLM",
-      "AIエージェント"
+      "LLM"
     ]
   }
 }
