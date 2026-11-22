@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 22 Nov 2026 05:45:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 21:46:18 +0000</lastBuildDate>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
       <link>https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</link>
@@ -21,25 +21,32 @@
       <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
     </item>
     <item>
-      <title>GoでPostgreSQL拡張機能を作成</title>
-      <link>https://jespino.github.io/gopgext/</link>
-      <guid isPermaLink="false">https://jespino.github.io/gopgext/</guid>
-      <description>[Score: 85] gopgextは、TinyGoを使用してGo言語のコードからPostgreSQL拡張機能を構築するツールです。 / Goの関数に特定のコメントを付与するだけでSQL関数として利用でき、C言語のグルーコードやインストールスクリプトが自動生成されます。 / 標準ライブラリの利用やカスタムデータ型の定義も可能で、PostgreSQLのcontribモジュールの移植もサポートしています。 [実務示唆: Go言語でのPostgreSQL拡張開発に興味がある開発者は、gopgextを試して、既存のGoコードをデータベース機能として活用できないか検討すると良いでしょう。] [GitHub: jespino/gopgext] (Source: Hacker News)</description>
-      <pubDate>Sat, 21 Nov 2026 17:08:04 +0000</pubDate>
+      <title>Next.jsのストリーミングはLambda Web Functionsで動くか</title>
+      <link>https://zenn.dev/ryota_09/articles/nextjs-suspense-streaming-lambda-web-functions</link>
+      <guid isPermaLink="false">https://zenn.dev/ryota_09/articles/nextjs-suspense-streaming-lambda-web-functions</guid>
+      <description>[Score: 85] Lambda Web FunctionsでNext.jsのSuspenseストリーミングが追加設定なしで動作し、Vercelとほぼ同等の挙動を示すことが実測で確認されました。 / 以前のLambda Web Adapterではストリーミングの段階表示がうまくいかなかった問題が、Web Functionsでは解決されています。 / コールドスタート時のみVercelとの差が見られましたが、それ以外は高速なレスポンスと段階表示を実現しています。 [実務示唆: Next.jsのSuspenseストリーミングをAWS Lambdaで利用する際は、Lambda Web Functionsの採用を検討し、コールドスタート時のパフォーマンスを評価しましょう。] (Source: Zenn)</description>
+      <pubDate>Sun, 22 Nov 2026 02:30:19 +0000</pubDate>
     </item>
     <item>
-      <title>Part 5 — 並行処理とNode.jsの内部: `async/await`の裏側で実際に何が起きているのか？</title>
-      <link>https://dev.to/heyitsalok/part-5-concurrency-nodejs-internals-whats-actually-happening-behind-asyncawait-2g2f</link>
-      <guid isPermaLink="false">https://dev.to/heyitsalok/part-5-concurrency-nodejs-internals-whats-actually-happening-behind-asyncawait-2g2f</guid>
-      <description>[Score: 78] 本記事は、Node.jsにおける並行処理、イベントループ、libuvの仕組みを解説し、`async/await`の背後にある動作を深掘りします。 / JavaScriptがシングルスレッドであるにもかかわらず、Node.jsが多数のリクエストを処理できるのは、並行処理と非同期I/Oのおかげです。 / 並行処理と並列処理の違いを明確にし、Node.jsがV8とlibuvで構成されていることを説明しています。 [実務示唆: Node.jsアプリケーションのパフォーマンス最適化やデバッグを行う際は、イベントループとlibuvの動作原理を理解し、CPU負荷の高い処理を適切にオフロードする設計を検討しましょう。] (Source: Dev.to)</description>
-      <pubDate>Sat, 21 Nov 2026 21:33:33 +0000</pubDate>
+      <title>Google が実践する最先端の SRE</title>
+      <link>https://sre-magazine.net/articles/7/aoto/</link>
+      <guid isPermaLink="false">https://sre-magazine.net/articles/7/aoto/</guid>
+      <description>[Score: 85] GoogleがSREのアプローチにシステム理論を用いた安全分析手法「STAMP/STPA」を適用し、SREの未来を象徴するものとして推進していることが紹介されています。 / STAMPは、システムをコントローラーと非コントロールプロセスの相互作用に着目し、アクシデントの原因を安全制御の不備と捉える事故モデルです。 / STPAはSTAMPモデルに基づき、ハザードにつながる「安全のための制御」の不備（UCA）を解析し、事故発生前にリスクを特定する手法です。 [実務示唆: Googleが採用するSTAMP/STPAのような先進的な安全分析手法をSREプラクティスに取り入れることで、システムの複雑化に伴う潜在的な事故原因を事前に特定し、より堅牢なシステム運用体制を構築するための検討を始めるべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 24 Mar 2025 09:45:20 +0000</pubDate>
     </item>
     <item>
-      <title>Limn Engineの内部: 360レベルのレイトレースFPSが単一のHTMLファイルで動作する仕組み</title>
-      <link>https://dev.to/kehinde_owolabi_e2e54567a/inside-limn-engine-how-a-360-level-raycast-fps-runs-in-a-single-html-file-2ofl</link>
-      <guid isPermaLink="false">https://dev.to/kehinde_owolabi_e2e54567a/inside-limn-engine-how-a-360-level-raycast-fps-runs-in-a-single-html-file-2ofl</guid>
-      <description>[Score: 78] NULLPOINTというレトロスタイルのブラウザFPSゲームは、ビルドツールやnpm、複雑なバンドラーを使わず、単一のHTMLファイルで動作します。 / これを可能にしているのが、ミニマリストなHTML5 CanvasラッパーであるLimn Engine（epic.js）です。 / Limnは、静的要素をオフスクリーンキャンバスに一度だけ描画しキャッシュするデュアルレンダラーシステムにより、低スペック環境でも60FPSのパフォーマンスを実現しています。 [実務示唆: Webベースのゲームやインタラクティブコンテンツ開発において、パフォーマンスとシンプルさを両立させたい場合、Limn Engineのデュアルレンダラーのようなキャッシュ戦略を検討し、単一HTMLファイルでの開発手法を試してみましょう。] (Source: Dev.to)</description>
-      <pubDate>Sun, 22 Nov 2026 05:40:50 +0000</pubDate>
+      <title>月額300ドルの写真アプリを置き換える：Cloudflare Pagesで定額制ビフォーアフター顧客ギャラリーを構築</title>
+      <link>https://dev.to/kreqwaii/replacing-300mo-per-seat-photo-apps-building-a-flat-rate-beforeafter-client-gallery-on-44dj</link>
+      <guid isPermaLink="false">https://dev.to/kreqwaii/replacing-300mo-per-seat-photo-apps-building-a-flat-rate-beforeafter-client-gallery-on-44dj</guid>
+      <description>[Score: 80] フィールドサービスチーム向けの、高額な従量課金制写真アプリを代替するソリューションが紹介されています。 / Cloudflare Pages、D1、KVを活用し、インフラコストをほぼゼロに抑え、定額制のチーム課金を実現しています。 / これにより、15人のチームで月額585ドルかかる費用を、月額15ドルに削減できる可能性が示されています。 [実務示唆: 従量課金制SaaSのコスト削減のため、Cloudflare PagesやD1、KVなどのサーバーレス技術を活用した自社開発ソリューションの検討を推奨します。] (Source: Dev.to)</description>
+      <pubDate>Sun, 22 Nov 2026 21:34:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>Node.js Webhook Subscribe: HTTPS Push, Rate Limits, Ack/Nack, Dead Letters</title>
+      <link>https://dev.to/ottoneumann8425/nodejs-webhook-subscribe-https-push-rate-limits-acknack-dead-letters-520l</link>
+      <guid isPermaLink="false">https://dev.to/ottoneumann8425/nodejs-webhook-subscribe-https-push-rate-limits-acknack-dead-letters-520l</guid>
+      <description>[Score: 78] Node.jsで堅牢なWebhookサブスクリプションシステムを構築するためのアーキテクチャが解説されています。 / HTTPS Webhookエンドポイントの背後に永続的なキューを配置し、エンキューがコミットされた後にのみ応答を返すことが推奨されています。 / これにより、配信速度と財務的正確性という異なる失敗境界を持つ決済・台帳システムにおいて、ビジネスリトライ、Nack、デッドレター処理をNode.jsコンシューマが所有する有用なアーキテクチャが実現します。 [実務示唆: Webhookを利用するシステムを設計する際は、記事で示されたように永続的なキューと非同期処理を導入し、Ack/Nack、リトライ、デッドレターキューのメカニズムを明確に定義することで、堅牢性と信頼性の高いデータ連携を実現すべきです。] (Source: Dev.to)</description>
+      <pubDate>Sun, 22 Nov 2026 21:35:14 +0000</pubDate>
     </item>
     <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
@@ -49,32 +56,32 @@
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
     </item>
     <item>
-      <title>静的サイトのキャッシュヘッダーを文書化したが、curl -Iは異なる結果を示した</title>
-      <link>https://dev.to/nabeelbaghoor/i-documented-my-static-sites-cache-headers-curl-i-says-otherwise-1oij</link>
-      <guid isPermaLink="false">https://dev.to/nabeelbaghoor/i-documented-my-static-sites-cache-headers-curl-i-says-otherwise-1oij</guid>
-      <description>[Score: 75] 筆者が静的Next.jsサイトのキャッシュポリシーをFirebase Hostingで設定した際、文書化したヘッダーと実際のcurl -Iの結果が異なる問題に直面しました。 / HTMLはmax-age=0, must-revalidate、ハッシュ化されたアセットは1年間キャッシュされるはずが、実際にはすべてmax-age=3600が返されました。 / これはFirebaseのデフォルト設定が適用されていたためであり、設定ファイルだけでなく実際の出力を検証することの重要性が強調されています。 [実務示唆: Webサイトのキャッシュ設定を行う際は、設定ファイルだけでなく、curl -Iなどのコマンドで実際に適用されているヘッダーを必ず検証し、意図通りのキャッシュ動作になっているか確認すべきです。] (Source: Dev.to)</description>
-      <pubDate>Sat, 21 Nov 2026 21:36:09 +0000</pubDate>
+      <title>ライブのバス、飛行機、ボートがあるミニチュアのサンフランシスコ</title>
+      <link>https://smallsf.com/</link>
+      <guid isPermaLink="false">https://smallsf.com/</guid>
+      <description>[Score: 75] Small SFは、サンフランシスコのイラスト化されたアイソメトリックマップで、ドラッグやズームが可能です。 / Muni、BART、フェリー、飛行機、シミュレートされた交通、実際の空の様子がリアルタイムで表示されます。 / ライブデータとイラストを組み合わせることで、ユニークな都市体験を提供しています。 [実務示唆: リアルタイムデータとインタラクティブな視覚化を組み合わせることで、ユーザーエンゲージメントを高める新しい地図サービスや情報提供の可能性を探るべきです。] (Source: Hacker News)</description>
+      <pubDate>Sun, 22 Nov 2026 20:33:23 +0000</pubDate>
     </item>
     <item>
-      <title>無料でセルフホストできWindows・macOS・LinuxアプリもあるRSSリーダー「WyrmRSS」、YouTube動画の再生やDiscord・Slackへの新着通知も可能</title>
-      <link>https://gigazine.net/news/20261121-wyrmrss/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261121-wyrmrss/</guid>
-      <description>[Score: 70] WyrmRSSは、ニュースサイトやブログの更新情報をまとめて取得できる無料のオープンソースRSSリーダーです。 / セルフホストに加え、Windows・macOS・Linux用のデスクトップアプリも提供されています。 / YouTubeチャンネルの購読や動画再生、Discord・Slackへの新着通知機能も備えています。 [実務示唆: 既存のRSSリーダーに不満がある場合や、YouTubeチャンネルの更新も一元管理したい場合は、WyrmRSSの導入を検討し、セルフホストまたはデスクトップアプリを試用してみましょう。] [GitHub: kryoseu/WyrmRSS] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 21 Nov 2026 14:01:09 +0000</pubDate>
+      <title>Databricks SQLステートメントタイムアウト：私がテストしたこと</title>
+      <link>https://dev.to/nagaraju_bondala/databricks-sql-statement-timeout-what-i-tested-50de</link>
+      <guid isPermaLink="false">https://dev.to/nagaraju_bondala/databricks-sql-statement-timeout-what-i-tested-50de</guid>
+      <description>[Score: 75] Databricks SQLのステートメントタイムアウト機能が一般提供され、SQLステートメントの実行時間制限が可能になりました。 / タイムアウトはセッション、SQLウェアハウス、ワークスペースの3つのレベルで設定でき、セッションレベルが最も優先されます。 / 筆者はDatabricks Free Editionでセッションレベルのタイムアウトをテストし、設定通りにクエリが停止することを確認しました。 [実務示唆: Databricksで長時間実行されるSQLクエリによるリソース枯渇やコスト増を防ぐため、SQLステートメントタイムアウト機能を積極的に活用し、適切な制限時間を設定することを推奨します。] (Source: Dev.to)</description>
+      <pubDate>Sun, 22 Nov 2026 21:32:58 +0000</pubDate>
     </item>
     <item>
-      <title>エージェントのルールパックはインストールスクリプトの品質に依存する</title>
-      <link>https://dev.to/the_movie_9b1357e8c99cfaa/your-agents-rule-pack-is-only-as-good-as-its-install-script-3l3o</link>
-      <guid isPermaLink="false">https://dev.to/the_movie_9b1357e8c99cfaa/your-agents-rule-pack-is-only-as-good-as-its-install-script-3l3o</guid>
-      <description>[Score: 65] 本記事は、複数のコーディングエージェントを運用する際の「ルールパック」の品質、特にそのインストールスクリプトの重要性について論じています。 / RulePortというルールパックを例に、ドライラン、冪等性、手動ファイルへの上書き、エージェント不在環境、意図的なドリフトなど、6つの方法でインストーラーをテストした結果を報告しています。 / コンパイラのバイト安定性やドライランの正確性など、インストーラーの信頼性がシステム運用に不可欠であることを示唆しています。 [実務示唆: 自動化エージェントや設定管理ツールを導入する際は、提供されるルールパックやスクリプトのインストーラーが、様々なシナリオで冪等性や正確性を保つか検証し、信頼性を確保しましょう。] (Source: Dev.to)</description>
-      <pubDate>Sun, 22 Nov 2026 05:42:26 +0000</pubDate>
+      <title>Nyx、最古のインターネットサービスプロバイダ</title>
+      <link>https://nyx.net/</link>
+      <guid isPermaLink="false">https://nyx.net/</guid>
+      <description>[Score: 70] Nyxは、世界最古の無料パブリックアクセスISPであり、ボランティアによって運営されています。 / 無料のEメール、ウェブスペース、Usenetニュースフィード、Linuxシェルアカウントなどを提供しています。 / 寄付によって支えられており、最近のシステムアップデートではSSHホストキーの変更などが行われました。 [実務示唆: 古いシステムや非営利のサービスを運用する際は、継続的なセキュリティアップデート（SSHホストキーの変更など）とコミュニティによるサポートの重要性を認識すべきです。] (Source: Hacker News)</description>
+      <pubDate>Sun, 22 Nov 2026 20:15:59 +0000</pubDate>
     </item>
     <item>
-      <title>サンドイッチシミュレーター</title>
-      <link>https://stulle.app/</link>
-      <guid isPermaLink="false">https://stulle.app/</guid>
-      <description>[Score: 45] 「Stulle」は、サンドイッチを作るインタラクティブなシミュレーターです。 / パンにスプレッドを塗り、様々な具材をドラッグ＆ドロップで配置してサンドイッチを作成できます。 / 完成したサンドイッチは写真として保存し、リンクを共有することが可能です。 [実務示唆: Web開発者は、ユーザーエンゲージメントを高めるためのインタラクティブなUI/UXデザインの参考として、本シミュレーターの技術や表現方法を分析してみることを推奨します。] (Source: Hacker News)</description>
-      <pubDate>Sun, 22 Nov 2026 00:07:59 +0000</pubDate>
+      <title>NTP Poolに参加したが、Stratum 1のRaspberry Piは使わなかった</title>
+      <link>https://www.jeffgeerling.com/blog/2026/i-joined-the-ntp-pool/</link>
+      <guid isPermaLink="false">https://www.jeffgeerling.com/blog/2026/i-joined-the-ntp-pool/</guid>
+      <description>[Score: 65] 著者は自身のスタジオにあるStratum 1 NTPサーバー（GNSSアンテナとu-blox ZED-F9Tを使用）から時刻を取得するStratum 2 NTPサーバーをNTP Poolに提供開始しました。 / NTP Poolへの貢献は、必ずしも高精度なGNSSモジュールを必要とせず、基本的な要件を満たせば参加可能です。 / ただし、NTP Poolは共有リソースであり、テスト目的での参加はリソースの無駄になるため、長期的なコミットメントが必要です。 [実務示唆: NTP Poolへの貢献を検討する際は、長期的な運用を前提とし、DDoS攻撃対策などセキュリティ面も考慮して計画しましょう。] (Source: Hacker News)</description>
+      <pubDate>Sun, 22 Nov 2026 15:35:24 +0000</pubDate>
     </item>
   </channel>
 </rss>

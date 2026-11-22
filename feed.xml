@@ -5,13 +5,20 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 22 Nov 2026 05:45:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 21:46:18 +0000</lastBuildDate>
     <item>
       <title>寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド</title>
       <link>https://zenn.dev/canly/articles/ca6875cd79539f</link>
       <guid isPermaLink="false">https://zenn.dev/canly/articles/ca6875cd79539f</guid>
-      <description>[Score: 100] AI開発者poteto氏が公開したCursor公式スキル集「pstack」の活用ガイドです。 / pstackは、AIが質の高いコードを生成するための58のスキルと22のプレイブックで構成されています。 / 本記事では、指示の組み立て方からツール実装、自動テスト、テスト検証までを約10分で完遂する手順が解説されています。 [実務示唆: AIエージェントによる開発効率化のため、Cursorのpstackプラグインを導入し、質の高いコード生成と自動テストのワークフローを試すことを推奨します。] [GitHub: cursor/plugins] (Source: はてなブックマーク)</description>
+      <description>[Score: 100] AI開発者poteto氏が公開したCursor公式スキル集「pstack」の活用ガイドです。 / pstackは、AIが質の高いコードを生成するための58のスキルと22のプレイブックで構成されています。 / 本記事では、指示の組み立て方からツール実装、自動テスト、テスト検証までを約10分で完遂する手順が解説されています。 [実務示唆: AIエージェントによる開発効率化のため、Cursorのpstackプラグインを導入し、質の高いコード生成と自動テストのワークフローを試すことを推奨します。] [GitHub: cursor/plugins] (Source: Zenn)</description>
       <pubDate>Fri, 20 Nov 2026 09:04:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>【TLA+】AIにテストケースを書かせるな。ルールを書け</title>
+      <link>https://zenn.dev/karamage/articles/73027ee36796dc</link>
+      <guid isPermaLink="false">https://zenn.dev/karamage/articles/73027ee36796dc</guid>
+      <description>[Score: 95] AIに実装とテストの両方を書かせると「自作自演の満点」となり、意味のあるテストにならないという問題提起がされています。 / Test Oracle Problemに触れ、AIが生成するテストケースの限界と、形式検証言語TLA+系のQuintを用いた解決策が提示されています。 / 人間が「採点基準（ルール）」を定義し、機械に問題（テストケース）を全て生成させるアプローチが推奨されています。 [実務示唆: AIによるテスト生成を活用する際は、AIにテストケースそのものを書かせるのではなく、TLA+のような形式検証ツールを用いて「システムの正しい振る舞いのルール」を定義し、そのルールに基づいてテストを自動生成させるアプローチを検討しましょう。] (Source: Zenn)</description>
+      <pubDate>Sat, 21 Nov 2026 02:12:39 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
@@ -35,11 +42,18 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>【TLA+】AIにテストケースを書かせるな。ルールを書け</title>
-      <link>https://zenn.dev/karamage/articles/73027ee36796dc</link>
-      <guid isPermaLink="false">https://zenn.dev/karamage/articles/73027ee36796dc</guid>
-      <description>[Score: 95] AIに実装とテストの両方を書かせると「自作自演の満点」となり、意味のあるテストにならないという問題提起がされています。 / Test Oracle Problemに触れ、AIが生成するテストケースの限界と、形式検証言語TLA+系のQuintを用いた解決策が提示されています。 / 人間が「採点基準（ルール）」を定義し、機械に問題（テストケース）を全て生成させるアプローチが推奨されています。 [実務示唆: AIによるテスト生成を活用する際は、AIにテストケースそのものを書かせるのではなく、TLA+のような形式検証ツールを用いて「システムの正しい振る舞いのルール」を定義し、そのルールに基づいてテストを自動生成させるアプローチを検討しましょう。] (Source: Zenn)</description>
-      <pubDate>Sat, 21 Nov 2026 02:12:39 +0000</pubDate>
+      <title>2026年11月21日をもって世界はシンギュラリティに突入した</title>
+      <link>https://note.com/cgbeginner/n/n5856d402f125</link>
+      <guid isPermaLink="false">https://note.com/cgbeginner/n/n5856d402f125</guid>
+      <description>[Score: 95] 2026年11月21日、AnthropicのAI「Claude」と共同で書かれた「リーマン予想の証明」が検証コミュニティに「正しい」と認定されました。 / これは167年間未解決だった数学界の超難問であり、Leanという証明支援系言語で書かれた約1,700万行のコードが公開され、世界中の数学者によって徹底的に検証されました。 / AIが人間を介さずに論理的証明の正しさを確定させたことで、シンギュラリティへの突入が示唆されています。 [実務示唆: AIによる高度な数学的証明の自動検証は、将来的に科学研究やソフトウェア開発における検証プロセスの自動化・高速化に繋がる可能性があり、その動向を注視し、自身の業務への応用可能性を検討すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 22 Nov 2026 13:51:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>Orca Botsが良さそう、何ができるのか</title>
+      <link>https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro</link>
+      <guid isPermaLink="false">https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro</guid>
+      <description>[Score: 90] AI Agentを活用した開発IDE「Orca」に、役割と記憶を持つBotを常設できる「Orca Bots」がベータ版として追加されました。 / Orca Botsは、Slack連携やGitHubのIssue/PR確認、CI失敗時の原因調査など、日常業務を継続的にAIに任せることを可能にします。 / Git worktreeと連携し、AIが生成したコード修正を人間が容易に確認・引き継げる点が特徴です。 [実務示唆: AI Agentを活用した開発に興味のあるエンジニアは、Orca Botsを試用し、日常業務へのAI組み込みによる開発効率向上を検証することを推奨します。] [GitHub: orca-dev/orca] (Source: Zenn)</description>
+      <pubDate>Sat, 21 Nov 2026 15:14:13 +0000</pubDate>
     </item>
     <item>
       <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
@@ -56,46 +70,25 @@
       <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
     </item>
     <item>
-      <title>5.4GBメモリでInkling-2-Miniを動かす</title>
-      <link>https://github.com/ShinMegamiBoson/lookatmyquant</link>
-      <guid isPermaLink="false">https://github.com/ShinMegamiBoson/lookatmyquant</guid>
-      <description>[Score: 90] LookAtMyQuantは、モデルの圧縮時の出力への影響を測定し、最小限のダメージでサイズ予算に収まるようにコードを選択する量子化コンパイラです。 / Gemma 4 E2Bでは、同じファイルサイズでQ4_K_Mよりも12倍低いKL値を達成しています。 / Qwen3.5-4Bを1.23GB、Qwen3.8-27Bを7.2GBに量子化し、高い性能を維持しています。 [実務示唆: 大規模言語モデルの効率的な運用を目指すエンジニアは、LookAtMyQuantのような量子化技術を導入し、メモリと計算資源の最適化を図るべきです。] [GitHub: ShinMegamiBoson/lookatmyquant] (Source: Hacker News)</description>
-      <pubDate>Sat, 21 Nov 2026 18:02:19 +0000</pubDate>
+      <title>パープレキシティと知能</title>
+      <link>https://openai.com/index/perplexity-and-intelligence/</link>
+      <guid isPermaLink="false">https://openai.com/index/perplexity-and-intelligence/</guid>
+      <description>[Score: 90] OpenAIのチーフサイエンティストが、AIの進歩を理解する上で「パープレキシティ（または交差エントロピー損失）」が重要であると主張しています。 / AI開発は、大規模なデータセットでコンプレッサー（予測器）を訓練するシンプルなプロセスに集約されると説明。 / 業界全体の安全性基準確立のため、OpenAIの内部的な事前学習進捗（パープレキシティ測定値）を公開する意向を示しています。 [実務示唆: AIモデルの性能評価と安全性基準の共通化に向けて、パープレキシティを主要な指標として追跡し、業界標準の確立に貢献する動向に注目すべきです。] (Source: Hacker News)</description>
+      <pubDate>Sun, 22 Nov 2026 17:06:27 +0000</pubDate>
     </item>
     <item>
-      <title>AIエージェントに堅牢なテストを書かせるには？</title>
-      <link>https://zenn.dev/yasuakiomokawa/articles/3ac970c3a3a1c7</link>
-      <guid isPermaLink="false">https://zenn.dev/yasuakiomokawa/articles/3ac970c3a3a1c7</guid>
-      <description>[Score: 90] AIコーディングエージェントにテストを書かせると、実装変更で壊れやすいテストが生成される問題があります。 / 筆者の15日間の検証に基づき、堅牢なテストを書かせるための4つの手順が紹介されています。 / テストの堅牢性は、受け入れ基準の書き方に大きく依存し、実装の詳細を基準に含めないことが重要です。 [実務示唆: AIにテストコードを生成させる際は、実装の詳細を含まない「受け入れ基準」を明確に定義し、AIにその基準に基づいてテストを作成させるように指示することで、堅牢性を高めましょう。] (Source: Zenn)</description>
-      <pubDate>Sat, 21 Nov 2026 09:09:12 +0000</pubDate>
+      <title>脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する</title>
+      <link>https://qiita.com/heki-dm/items/77ecaacd592d1c4459df?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/heki-dm/items/77ecaacd592d1c4459df?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] CVSS（共通脆弱性評価システム）は、脆弱性の深刻度を0.0〜10.0の数値で表すベンダー非依存の共通評価方法です。 / スコアだけでなく、ベクタ文字列（例: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H）を読み解くことで、脆弱性の具体的な攻撃経路や影響範囲を理解できます。 / v3.1とv4.0の違いや、CVSSスコアだけで対応優先度を決めず、自社の環境におけるリスクを考慮することの重要性が解説されています。 [実務示唆: 脆弱性対応の際はCVSSスコアだけでなくベクタ文字列を読み解き、自社システムへの影響度を評価して優先順位を決定しましょう。] (Source: Qiita)</description>
+      <pubDate>Sun, 22 Nov 2026 03:42:52 +0000</pubDate>
     </item>
     <item>
-      <title>リーマン予想の証明の検証は現在どこまで進んでいるか｜加藤文元</title>
-      <link>https://note.com/katobungen/n/n9c2bb939b9c7</link>
-      <guid isPermaLink="false">https://note.com/katobungen/n/n9c2bb939b9c7</guid>
-      <description>[Score: 90] Anthropicの数学者Levent Alpöge氏がClaudeと共にリーマン予想を証明したと発表し、Leanで書かれた膨大なコードが公開されました。 / MITのAndrew Sutherland氏らがClaude Codeを用いて検証を進めており、複数の独立した検証プログラムが証明全体を受理しています。 / 検証の焦点は、Leanカーネルが誤った証明を受理していないか、そして証明された命題が数学上のリーマン予想と一致しているかの2点です。 [実務示唆: AIによる数学的証明の進展は、証明支援系の信頼性と検証プロセスが重要であることを示唆しており、AIが生成したコードや証明の厳密な検証手法について関心を持つべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 21 Nov 2026 13:55:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIでアプリを構築しましたか？実際のユーザーがサインアップする前の10のセキュリティチェック</title>
-      <link>https://dev.to/vishall/built-your-app-with-ai-10-security-checks-before-real-users-sign-up-26o4</link>
-      <guid isPermaLink="false">https://dev.to/vishall/built-your-app-with-ai-10-security-checks-before-real-users-sign-up-26o4</guid>
-      <description>[Score: 90] AIを活用して構築されたアプリが、実際のユーザーが利用する前に実施すべき10のセキュリティチェックリストが紹介されています。 / AIによる開発は迅速ですが、セキュリティテストが疎かになりがちで、個人情報や機密情報がログインなしで読み取られる脆弱性が指摘されています。 / Next.jsのセキュリティアドバイザリ増加や、Supabaseのanon keyの扱いなど、具体的なリスクと対策が提示されています。 [実務示唆: AIで開発したアプリを公開する前に、必ず2つのテストアカウントでデータ分離を確認し、JavaScript内の秘密鍵の検索、ログアウト状態でのフォーム・アクション呼び出し、依存関係の更新など、10のセキュリティチェックを実施してください。] (Source: Dev.to)</description>
-      <pubDate>Sat, 21 Nov 2026 21:35:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>日本のレシートを自宅PCでOCRする：15構成を実レシート11枚で比べた</title>
-      <link>https://zenn.dev/chaki/articles/4545be3475fdb4</link>
-      <guid isPermaLink="false">https://zenn.dev/chaki/articles/4545be3475fdb4</guid>
-      <description>[Score: 90] 自宅PCで日本のレシートをOCRする15構成を実レシート11枚で比較検証しました。 / YomiTokuの2段読みが商品名93%、金額100%の精度で最良でしたが、非商用ライセンスです。 / 商用利用ではNDLOCR-LiteやPP-OCRv6が現実的で、VLMは手書き領収書に強いが長いレシートでは課題が見られました。 [実務示唆: レシートOCRを自作する際は、YomiTokuの2段読みを参考にしつつ、商用利用ならNDLOCR-LiteやPP-OCRv6を検討し、手書き対応ならVLMの活用を試すのが良いでしょう。] (Source: Zenn)</description>
-      <pubDate>Fri, 20 Nov 2026 04:33:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Orca Botsが良さそう、何ができるのか</title>
-      <link>https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro</link>
-      <guid isPermaLink="false">https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro</guid>
-      <description>[Score: 90] AI Agentを活用した開発IDE「Orca」に、役割と記憶を持つBotを常設できる「Orca Bots」がベータ版として追加されました。 / Orca Botsは、Slack連携やGitHubのIssue/PR確認、CI失敗時の原因調査など、日常業務を継続的にAIに任せることを可能にします。 / Git worktreeと連携し、AIが生成したコード修正を人間が容易に確認・引き継げる点が特徴です。 [実務示唆: AI Agentを活用した開発に興味のあるエンジニアは、Orca Botsを試用し、日常業務へのAI組み込みによる開発効率向上を検証することを推奨します。] [GitHub: orca-dev/orca] (Source: Zenn)</description>
-      <pubDate>Sat, 21 Nov 2026 15:14:13 +0000</pubDate>
+      <title>なぜ大規模コンテキストウィンドウは失敗するのか（そしてAIプロンプトを修正する方法）</title>
+      <link>https://dev.to/tanmay2627/why-large-context-windows-fail-and-how-to-fix-your-ai-prompts-e8j</link>
+      <guid isPermaLink="false">https://dev.to/tanmay2627/why-large-context-windows-fail-and-how-to-fix-your-ai-prompts-e8j</guid>
+      <description>[Score: 90] LLMの大規模コンテキストウィンドウに大量のデータを投入すると、レイテンシ増加、APIコスト増大、出力品質低下を招く問題が指摘されています。 / これは、Transformerモデルがコンテキストの最初と最後に高い注意を払う「U字型リコール曲線」を示すため、中間部分の重要な情報が見落とされがちであるためです。 / 本記事では、大規模コンテキストウィンドウをデフォルトとせず、構造化されたコンテキストパイプラインを構築することで、高品質な出力を得る方法を提案しています。 [実務示唆: LLMのプロンプト作成では、重要な情報をコンテキストの最初や最後に配置し、関連性の高い情報を厳選して渡すなど、U字型リコール曲線を意識した構造化を試すべきです。] (Source: Dev.to)</description>
+      <pubDate>Sun, 22 Nov 2026 21:33:24 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
@@ -105,18 +98,18 @@
       <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
     </item>
     <item>
-      <title>AIアプリが実際のトラフィックでクラッシュする理由（そして2行で修正する方法）</title>
-      <link>https://dev.to/rohan9024/why-ai-apps-crash-under-real-traffic-and-how-to-fix-it-in-2-lines-43a1</link>
-      <guid isPermaLink="false">https://dev.to/rohan9024/why-ai-apps-crash-under-real-traffic-and-how-to-fix-it-in-2-lines-43a1</guid>
-      <description>[Score: 88] AIアプリが実際のトラフィック下でクラッシュする原因と、その解決策としてRetryKitが紹介されています。 / 一般的なリトライラッパー（p-retryなど）はLLM API向けに設計されておらず、SDKのリトライと重複してトラフィックを9～12倍に増加させたり、課金エラー時に無駄な待機をしたりする問題があります。 / RetryKitは、レート制限、マルチキーローテーション、サーキットブレーキング、ストリームリカバリなどを解決するTypeScript製の信頼性エンジンです。 [実務示唆: AIアプリでLLM APIを利用する際は、一般的なリトライロジックではなく、レート制限やエラーハンドリングに特化した@rohan9024/retrykitのようなライブラリを導入し、安定性と信頼性を向上させるべきです。] [GitHub: rohan9024/retrykit] (Source: Dev.to)</description>
-      <pubDate>Sat, 21 Nov 2026 21:35:06 +0000</pubDate>
+      <title>「委託したとこ全部漏洩してんじゃんよ💢」プレイド『KARTE』の不正アクセスで、ZOZOTOWNや三菱UFJ銀行など影響を受けた企業が次々判明…不安や警戒の声が広がる</title>
+      <link>https://togetter.com/li/2773732</link>
+      <guid isPermaLink="false">https://togetter.com/li/2773732</guid>
+      <description>[Score: 88] プレイドが提供する顧客データ分析サービス『KARTE』への不正アクセスにより、ZOZOTOWN、三菱UFJ銀行、東京ガス、しまむらなど多数の大手企業で顧客情報漏洩が判明しました。 / 漏洩した情報には氏名、生年月日、性別、住所などが含まれ、退会者情報も対象となっています。 / この事態を受け、委託先のセキュリティ対策の重要性が改めて浮き彫りになり、企業やユーザーの間で不安と警戒が広がっています。 [実務示唆: 自社が利用する外部サービスやSaaSのセキュリティ対策状況を定期的に確認し、契約内容に情報漏洩時の責任範囲や対応プロトコルが明確に記載されているか再確認するとともに、顧客への情報開示準備を怠らないようにすべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 22 Nov 2026 14:51:25 +0000</pubDate>
     </item>
     <item>
-      <title>Microsoft 365 CopilotがOneDriveのファイルを直接編集可能に！CoworkなしでGitHub Copilotのように使える件</title>
-      <link>https://qiita.com/yuyanz/items/c3bb4801c105d96fa79d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/yuyanz/items/c3bb4801c105d96fa79d?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] Microsoft 365 CopilotがOneDrive上のファイルを直接編集できるようになり、既存ファイルの更新が容易になりました。 / 「プロジェクト」機能と組み合わせることで、特定のフォルダを作業領域としたAI活用が可能になります。 / GPT系のモデルでは動作が確認されましたが、Claude系では挙動が異なる場合があるため注意が必要です。 [実務示唆: Microsoft 365 CopilotのOneDriveファイル直接編集機能とプロジェクト機能を活用し、AIによるドキュメント管理・更新の効率化を検討しましょう。] (Source: Qiita)</description>
-      <pubDate>Thu, 19 Nov 2026 03:56:02 +0000</pubDate>
+      <title>【pre:Inventまとめ】AWSのAIエージェント認証がいろいろ進化！MCPサーバー構築を例に一挙解説</title>
+      <link>https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] AWS re:Inventに先立ち、CognitoとAgentCoreにおけるAIエージェント認証のアップデートが発表されました。 / AIクライアントの認証管理を簡素化するCIMDとDCRの2つの新機能がCognitoに追加され、管理者の手間を削減します。 / AgentCore GatewayではJWTクレームを条件にリソースポリシーで細かくアクセス制御できるようになり、セキュリティと管理性が向上しました。 [実務示唆: AWSでAIエージェントを利用する際は、CognitoのCIMD/DCRやAgentCore GatewayのJWTクレームを活用し、認証・認可の管理を効率化しセキュリティを強化することを推奨します。] (Source: Qiita)</description>
+      <pubDate>Sat, 21 Nov 2026 04:03:14 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、AIが生成したアプリを企業内で安全に実行するランタイム「Copilot Managed Runtime」正式リリース</title>
@@ -126,25 +119,32 @@
       <pubDate>Wed, 18 Nov 2026 15:58:32 +0000</pubDate>
     </item>
     <item>
-      <title>膵臓がん治療薬「数十年来の最大のブレークスルー」と称賛</title>
-      <link>https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib</link>
-      <guid isPermaLink="false">https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib</guid>
-      <description>[Score: 85] 膵臓がん治療薬「ダラキソンラシブ」が、数十年来で最大のブレークスルーとして注目されています。 / 治験では、患者の12人に1人でがんが検出不能になり、ほぼ全員の腫瘍の増殖が停止しました。 / この薬は、進行した膵臓がん患者の生存期間を延ばす可能性があり、大きな期待が寄せられています。 [実務示唆: 医療技術の進歩はIT分野にも影響を与えるため、AI創薬や医療データ分析の動向に注目し、関連技術の学習を検討しましょう。] (Source: Hacker News)</description>
-      <pubDate>Fri, 20 Nov 2026 21:03:12 +0000</pubDate>
+      <title>シリコンバレーに何が起こったのか？</title>
+      <link>https://www.oreilly.com/radar/what-happened-to-silicon-valley/</link>
+      <guid isPermaLink="false">https://www.oreilly.com/radar/what-happened-to-silicon-valley/</guid>
+      <description>[Score: 85] ティム・オライリーが、シリコンバレーの政治経済が「価値創造」から「価値抽出」へと変化したと論じています。 / 40年以上のキャリアを振り返り、協力システムがその役割を果たさなくなった現状を指摘。 / かつて集団的知性を推進した業界が、現在直面している課題について考察しています。 [実務示唆: テクノロジー業界のリーダーは、短期的な利益追求だけでなく、長期的な価値創造と社会貢献のバランスを再考し、協力的なエコシステムを再構築する視点を持つべきです。] (Source: Hacker News)</description>
+      <pubDate>Sun, 22 Nov 2026 19:20:15 +0000</pubDate>
     </item>
     <item>
-      <title>GoでPostgreSQL拡張機能を作成</title>
-      <link>https://jespino.github.io/gopgext/</link>
-      <guid isPermaLink="false">https://jespino.github.io/gopgext/</guid>
-      <description>[Score: 85] gopgextは、TinyGoを使用してGo言語のコードからPostgreSQL拡張機能を構築するツールです。 / Goの関数に特定のコメントを付与するだけでSQL関数として利用でき、C言語のグルーコードやインストールスクリプトが自動生成されます。 / 標準ライブラリの利用やカスタムデータ型の定義も可能で、PostgreSQLのcontribモジュールの移植もサポートしています。 [実務示唆: Go言語でのPostgreSQL拡張開発に興味がある開発者は、gopgextを試して、既存のGoコードをデータベース機能として活用できないか検討すると良いでしょう。] [GitHub: jespino/gopgext] (Source: Hacker News)</description>
-      <pubDate>Sat, 21 Nov 2026 17:08:04 +0000</pubDate>
+      <title>Next.jsのストリーミングはLambda Web Functionsで動くか</title>
+      <link>https://zenn.dev/ryota_09/articles/nextjs-suspense-streaming-lambda-web-functions</link>
+      <guid isPermaLink="false">https://zenn.dev/ryota_09/articles/nextjs-suspense-streaming-lambda-web-functions</guid>
+      <description>[Score: 85] Lambda Web FunctionsでNext.jsのSuspenseストリーミングが追加設定なしで動作し、Vercelとほぼ同等の挙動を示すことが実測で確認されました。 / 以前のLambda Web Adapterではストリーミングの段階表示がうまくいかなかった問題が、Web Functionsでは解決されています。 / コールドスタート時のみVercelとの差が見られましたが、それ以外は高速なレスポンスと段階表示を実現しています。 [実務示唆: Next.jsのSuspenseストリーミングをAWS Lambdaで利用する際は、Lambda Web Functionsの採用を検討し、コールドスタート時のパフォーマンスを評価しましょう。] (Source: Zenn)</description>
+      <pubDate>Sun, 22 Nov 2026 02:30:19 +0000</pubDate>
     </item>
     <item>
-      <title>【pre:Inventまとめ】AWSのAIエージェント認証がいろいろ進化！MCPサーバー構築を例に一挙解説</title>
-      <link>https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AWS re:Inventに先立ち、CognitoとAgentCoreにおけるAIエージェント認証のアップデートが発表されました。 / AIクライアントの認証管理を簡素化するCIMDとDCRの2つの新機能がCognitoに追加され、管理者の手間を削減します。 / AgentCore GatewayではJWTクレームを条件にリソースポリシーで細かくアクセス制御できるようになり、セキュリティと管理性が向上しました。 [実務示唆: AWSでAIエージェントを利用する際は、CognitoのCIMD/DCRやAgentCore GatewayのJWTクレームを活用し、認証・認可の管理を効率化しセキュリティを強化することを推奨します。] (Source: Qiita)</description>
-      <pubDate>Sat, 21 Nov 2026 04:03:14 +0000</pubDate>
+      <title>Google が実践する最先端の SRE</title>
+      <link>https://sre-magazine.net/articles/7/aoto/</link>
+      <guid isPermaLink="false">https://sre-magazine.net/articles/7/aoto/</guid>
+      <description>[Score: 85] GoogleがSREのアプローチにシステム理論を用いた安全分析手法「STAMP/STPA」を適用し、SREの未来を象徴するものとして推進していることが紹介されています。 / STAMPは、システムをコントローラーと非コントロールプロセスの相互作用に着目し、アクシデントの原因を安全制御の不備と捉える事故モデルです。 / STPAはSTAMPモデルに基づき、ハザードにつながる「安全のための制御」の不備（UCA）を解析し、事故発生前にリスクを特定する手法です。 [実務示唆: Googleが採用するSTAMP/STPAのような先進的な安全分析手法をSREプラクティスに取り入れることで、システムの複雑化に伴う潜在的な事故原因を事前に特定し、より堅牢なシステム運用体制を構築するための検討を始めるべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 24 Mar 2025 09:45:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>誰もがソフトウェアを構築できる時代：特注品の台頭と製品の永続性</title>
+      <link>https://dev.to/networknerd1337/when-everyone-can-build-software-the-rise-of-the-bespoke-and-the-persistence-of-products-f92</link>
+      <guid isPermaLink="false">https://dev.to/networknerd1337/when-everyone-can-build-software-the-rise-of-the-bespoke-and-the-persistence-of-products-f92</guid>
+      <description>[Score: 85] AIが明確な記述から動作するソフトウェアを生成できるようになると、ソフトウェア開発の障壁が崩壊すると予測されています。 / これにより、短命な特注ツールが爆発的に増加する一方で、責任の所在が重要な製品は存続すると論じています。 / 将来的に、ソフトウェアを「構築する」ことと「使用する」ことの境界がより明確になり、判断力が希少なスキルとなると提言しています。 [実務示唆: AIによるソフトウェア生成の進化を見据え、プロンプトエンジニアリング能力や、要件定義・判断力といった上流工程のスキルを強化することが重要です。] (Source: Dev.to)</description>
+      <pubDate>Sun, 22 Nov 2026 21:34:13 +0000</pubDate>
     </item>
   </channel>
 </rss>

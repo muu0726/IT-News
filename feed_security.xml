@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 22 Nov 2026 05:45:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 21:46:18 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -21,46 +21,25 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>AIでアプリを構築しましたか？実際のユーザーがサインアップする前の10のセキュリティチェック</title>
-      <link>https://dev.to/vishall/built-your-app-with-ai-10-security-checks-before-real-users-sign-up-26o4</link>
-      <guid isPermaLink="false">https://dev.to/vishall/built-your-app-with-ai-10-security-checks-before-real-users-sign-up-26o4</guid>
-      <description>[Score: 90] AIを活用して構築されたアプリが、実際のユーザーが利用する前に実施すべき10のセキュリティチェックリストが紹介されています。 / AIによる開発は迅速ですが、セキュリティテストが疎かになりがちで、個人情報や機密情報がログインなしで読み取られる脆弱性が指摘されています。 / Next.jsのセキュリティアドバイザリ増加や、Supabaseのanon keyの扱いなど、具体的なリスクと対策が提示されています。 [実務示唆: AIで開発したアプリを公開する前に、必ず2つのテストアカウントでデータ分離を確認し、JavaScript内の秘密鍵の検索、ログアウト状態でのフォーム・アクション呼び出し、依存関係の更新など、10のセキュリティチェックを実施してください。] (Source: Dev.to)</description>
-      <pubDate>Sat, 21 Nov 2026 21:35:17 +0000</pubDate>
+      <title>脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する</title>
+      <link>https://qiita.com/heki-dm/items/77ecaacd592d1c4459df?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/heki-dm/items/77ecaacd592d1c4459df?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] CVSS（共通脆弱性評価システム）は、脆弱性の深刻度を0.0〜10.0の数値で表すベンダー非依存の共通評価方法です。 / スコアだけでなく、ベクタ文字列（例: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H）を読み解くことで、脆弱性の具体的な攻撃経路や影響範囲を理解できます。 / v3.1とv4.0の違いや、CVSSスコアだけで対応優先度を決めず、自社の環境におけるリスクを考慮することの重要性が解説されています。 [実務示唆: 脆弱性対応の際はCVSSスコアだけでなくベクタ文字列を読み解き、自社システムへの影響度を評価して優先順位を決定しましょう。] (Source: Qiita)</description>
+      <pubDate>Sun, 22 Nov 2026 03:42:52 +0000</pubDate>
     </item>
     <item>
-      <title>自己に嘘をつけないプルーフゲートキーパーを構築し、見えない唯一の罠を発見した</title>
-      <link>https://dev.to/savana_7d5672a4479a71c2f5/i-built-a-proof-gatekeeper-that-cant-lie-to-itself-and-found-the-one-trap-it-cant-see-2obm</link>
-      <guid isPermaLink="false">https://dev.to/savana_7d5672a4479a71c2f5/i-built-a-proof-gatekeeper-that-cant-lie-to-itself-and-found-the-one-trap-it-cant-see-2obm</guid>
-      <description>[Score: 85] 筆者は、zkVerifyの公式回路を用いて、ゼロ知識証明で意思決定を記録するプルーフゲートキーパーを構築しました。 / ゼロ知識証明は特定のアクションが検証可能であることを保証しますが、エージェントが正直であること自体を保証するものではありません。 / エージェントの意思決定が本当に正しいかを知るには、証明がカバーする範囲と、カバーしない範囲を正確に理解することが重要です。 [実務示唆: ゼロ知識証明をシステムに導入する際は、証明がカバーする具体的な「主張」を明確にし、証明が保証しない範囲を理解した上で設計することで、潜在的な脆弱性を回避できます。] (Source: Dev.to)</description>
-      <pubDate>Sat, 21 Nov 2026 21:34:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>推論プロバイダーにおけるデータ処理インシデント</title>
-      <link>https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/</link>
-      <guid isPermaLink="false">https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/</guid>
-      <description>[Score: 85] OpenRouterは、一部の推論プロバイダーでデータが侵害された、またはデータポリシーが遵守されていない証拠が見つかったことを報告しました。 / OpenRouter自体への不正アクセスやデータ侵害は確認されていませんが、影響を受けたユーザーには通知済みです。 / 同社は、データポリシーの執行を強化し、プロバイダーにインシデント報告書の作成を促しています。 [実務示唆: AIモデルを利用する開発者は、利用する推論プロバイダーのデータポリシーとセキュリティ対策を再確認し、機密データの取り扱いには特に注意を払うべきです。] (Source: Hacker News)</description>
-      <pubDate>Sun, 22 Nov 2026 02:14:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>PebbleOSがカーネルシステムコールプリミティブをアプリストアソフトウェアに公開していた</title>
-      <link>https://dev.to/andreagomez/pebbleos-exposed-kernel-syscall-primitives-to-app-store-software-15ep</link>
-      <guid isPermaLink="false">https://dev.to/andreagomez/pebbleos-exposed-kernel-syscall-primitives-to-app-store-software-15ep</guid>
-      <description>[Score: 85] PebbleOSは、SDKアプリケーションから到達可能な複数のシステムコールを通じて、カーネルシステムコールプリミティブをアプリストアソフトウェアに公開していました。 / これらのシステムコールは引数を検証せず、アプリがカーネル権限を取得し、任意のメモリの読み書き、マイクによる盗聴、ウォッチの動作不能化を可能にする脆弱性がありました。 / 影響を受けるファームウェアは4.9.177未満で、このバージョンで修正されています。 [実務示唆: 組み込みシステムやOS開発に携わるエンジニアは、システムコールや特権的なインターフェースの引数検証を徹底し、アプリからの不正アクセスを防ぐためのセキュリティ設計を再確認しましょう。] (Source: Dev.to)</description>
-      <pubDate>Sun, 22 Nov 2026 05:40:39 +0000</pubDate>
+      <title>「委託したとこ全部漏洩してんじゃんよ💢」プレイド『KARTE』の不正アクセスで、ZOZOTOWNや三菱UFJ銀行など影響を受けた企業が次々判明…不安や警戒の声が広がる</title>
+      <link>https://togetter.com/li/2773732</link>
+      <guid isPermaLink="false">https://togetter.com/li/2773732</guid>
+      <description>[Score: 88] プレイドが提供する顧客データ分析サービス『KARTE』への不正アクセスにより、ZOZOTOWN、三菱UFJ銀行、東京ガス、しまむらなど多数の大手企業で顧客情報漏洩が判明しました。 / 漏洩した情報には氏名、生年月日、性別、住所などが含まれ、退会者情報も対象となっています。 / この事態を受け、委託先のセキュリティ対策の重要性が改めて浮き彫りになり、企業やユーザーの間で不安と警戒が広がっています。 [実務示唆: 自社が利用する外部サービスやSaaSのセキュリティ対策状況を定期的に確認し、契約内容に情報漏洩時の責任範囲や対応プロトコルが明確に記載されているか再確認するとともに、顧客への情報開示準備を怠らないようにすべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 22 Nov 2026 14:51:25 +0000</pubDate>
     </item>
     <item>
       <title>情報漏えいを公表しないリスクの要点整理</title>
-      <link>https://qiita.com/Maruo110/items/385b2c7ef5fbd074e6e2</link>
-      <guid isPermaLink="false">https://qiita.com/Maruo110/items/385b2c7ef5fbd074e6e2</guid>
-      <description>[Score: 80] 情報漏えいに関する個人情報保護委員会への報告義務は増加しているが、報道発表の義務はないため、公表されないケースも多いです。 / ランサムウェア攻撃の手口が変化し、攻撃者が窃取データをリークサイトで公開するようになったことで、「公表しない」選択のリスクが高まっています。 / 情報漏えいの公表判断は、CSIRTだけでなく広報・法務・経営層を含めた合意形成が重要であり、攻撃者による公開のタイミングと形を委ねるリスクを認識すべきです。 [実務示唆: 企業は、情報漏えい発生時の公表基準とフローを事前に明確化し、攻撃者によるデータ公開リスクを考慮した上で、広報・法務・経営層を含むCSIRT体制を強化すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 21 Nov 2026 22:25:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>新宿駅で財布を忘れて家に帰れない女の子から「PayPay1000円分を現金で交換して貰えませんか？」とお願いされ、「返さなくていいよ」と1000円あげたら喜ばれず戸惑っていた</title>
-      <link>https://togetter.com/li/2773268</link>
-      <guid isPermaLink="false">https://togetter.com/li/2773268</guid>
-      <description>[Score: 70] 新宿駅で財布を忘れたという女性からPayPay1000円分の現金交換を求められた男性が、現金1000円を渡したところ女性が喜ばなかったという体験談です。 / この事象はPayPay情報を抜き取る詐欺の可能性が指摘されており、SNS上で議論が交わされています。 / 交番での交通費貸し出しについても、地域や警察署によって対応が異なることが示されています。 [実務示唆: 見知らぬ人からのPayPay現金交換依頼は詐欺の可能性が高いため、安易に応じず、交番への案内や個人情報のやり取りを避けるなど慎重に対応すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sat, 21 Nov 2026 12:31:59 +0000</pubDate>
+      <link>https://qiita.com/Maruo110/items/385b2c7ef5fbd074e6e2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/Maruo110/items/385b2c7ef5fbd074e6e2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] 情報漏えいに関する個人情報保護委員会への報告義務は増加しているが、報道発表の義務はないため、公表されないケースも多いです。 / ランサムウェア攻撃の手口が変化し、攻撃者が窃取データをリークサイトで公開するようになったことで、「公表しない」選択のリスクが高まっています。 / 情報漏えいの公表判断は、CSIRTだけでなく広報・法務・経営層を含めた合意形成が重要であり、攻撃者による公開のタイミングと形を委ねるリスクを認識すべきです。 [実務示唆: 企業は、情報漏えい発生時の公表基準とフローを事前に明確化し、攻撃者によるデータ公開リスクを考慮した上で、広報・法務・経営層を含むCSIRT体制を強化すべきです。] (Source: Qiita)</description>
+      <pubDate>Sat, 21 Nov 2026 11:51:38 +0000</pubDate>
     </item>
   </channel>
 </rss>
