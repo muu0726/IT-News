@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 22 Nov 2026 21:46:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 05:46:28 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -40,6 +40,20 @@
       <guid isPermaLink="false">https://qiita.com/Maruo110/items/385b2c7ef5fbd074e6e2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 80] 情報漏えいに関する個人情報保護委員会への報告義務は増加しているが、報道発表の義務はないため、公表されないケースも多いです。 / ランサムウェア攻撃の手口が変化し、攻撃者が窃取データをリークサイトで公開するようになったことで、「公表しない」選択のリスクが高まっています。 / 情報漏えいの公表判断は、CSIRTだけでなく広報・法務・経営層を含めた合意形成が重要であり、攻撃者による公開のタイミングと形を委ねるリスクを認識すべきです。 [実務示唆: 企業は、情報漏えい発生時の公表基準とフローを事前に明確化し、攻撃者によるデータ公開リスクを考慮した上で、広報・法務・経営層を含むCSIRT体制を強化すべきです。] (Source: Qiita)</description>
       <pubDate>Sat, 21 Nov 2026 11:51:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>EveBoxエージェントキーとブラウザセッションが異なる証拠パスを保護する</title>
+      <link>https://dev.to/bianliang/evebox-agent-keys-and-browser-sessions-protect-different-evidence-paths-9ep</link>
+      <guid isPermaLink="false">https://dev.to/bianliang/evebox-agent-keys-and-browser-sessions-protect-different-evidence-paths-9ep</guid>
+      <description>[Score: 75] EveBoxのサーバーUI、API、エージェント接続型パケットキャプチャワークフローにおける認証メカニズムについて解説しています。 / ブラウザセッション、HTTP基本認証、エージェントキー、Elasticsearch/OpenSearchの認証情報がそれぞれ異なる目的を持ち、相互に独立していることを強調しています。 / 特に、エージェントキーはWebインターフェースの認証設定とは独立しており、セキュリティを確保するために各認証パスの適切な管理と設定の重要性を指摘しています。 [実務示唆: EveBoxを利用する際は、エージェントキーとブラウザセッションの認証が独立していることを理解し、各証拠パスのセキュリティ設定を適切に行いましょう。] [GitHub: jasonish/evebox] (Source: Dev.to)</description>
+      <pubDate>Mon, 23 Nov 2026 05:41:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>構成による一貫性：CTIナレッジグラフの合成と一貫性検証の形式的限界</title>
+      <link>https://arxiv.org/abs/2611.26717</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.26717</guid>
+      <description>[Score: 75] 本記事は、CTI（脅威インテリジェンス）ナレッジグラフの構築における一貫性の問題に焦点を当てています。 / ナレッジグラフの合成方法と、その一貫性を検証する際の形式的な限界について論じています。 / サイバーセキュリティ分野における情報整理と分析の課題解決に貢献する研究です。 [実務示唆: CTIナレッジグラフを構築する際は、情報の整合性を確保するための設計原則を初期段階から導入し、一貫性検証の限界を理解した上で運用計画を立てるべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

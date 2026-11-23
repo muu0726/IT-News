@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23T06:45:24.364706+09:00",
-  "total_count": 38,
-  "success_count": 38,
+  "generated_at": "2026-11-23T14:45:34.151541+09:00",
+  "total_count": 62,
+  "success_count": 62,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -27,7 +27,7 @@
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
       "is_hot": true,
-      "hatena_count": 551,
+      "hatena_count": 561,
       "is_prev_seen": true
     },
     {
@@ -50,7 +50,7 @@
       "new_at": "2026-11-22T06:45:23.716134+09:00",
       "first_seen": "2026-11-22T06:45:23.716134+09:00",
       "is_hot": false,
-      "hatena_count": 139,
+      "hatena_count": 153,
       "is_prev_seen": true
     },
     {
@@ -144,7 +144,7 @@
       "new_at": "2026-11-23T06:45:24.364706+09:00",
       "first_seen": "2026-11-23T06:45:24.364706+09:00",
       "is_hot": false,
-      "hatena_count": 85
+      "hatena_count": 294
     },
     {
       "title": "Orca Botsが良さそう、何ができるのか",
@@ -238,7 +238,7 @@
       "new_at": "2026-11-23T06:45:24.364706+09:00",
       "first_seen": "2026-11-23T06:45:24.364706+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する",
@@ -285,6 +285,98 @@
       "hatena_count": 0
     },
     {
+      "title": "XNU Linux: Linux上で完全なOS X GUIユーザースペースを実現",
+      "url": "https://github.com/AFK-surf/xnulinux",
+      "source": "Hacker News",
+      "published": "2026-11-23T03:49:24+00:00",
+      "hn_score": 83,
+      "hn_comments": 29,
+      "reading_min": 3,
+      "summary": "XNU Linuxは、macOSのオープンソースカーネルであるXNUをLinuxカーネルモジュールとしてロードし、Linux上でmacOSのユーザースペースをネイティブに実行するプロジェクトです。\nこれにより、macOSプロセスとLinuxプロセスが同じCPU上でハイパーバイザーなしで並行動作し、メモリ、タイマー、ファイル、ネットワーク、GPUをLinuxから借用します。\nUbuntuカーネル上でmacOSのシステムディスクを起動し、ログインウィンドウ、WindowServer、Dock、Finder、Safari、Chromeなどが動作する様子が確認されています。",
+      "actionable_takeaway": "macOSアプリケーションのLinux上での動作検証や、異なるOSカーネル間の連携技術に興味があるエンジニアは、XNU LinuxのGitHubリポジトリを調査し、その実装やパフォーマンスを評価することで、クロスプラットフォーム開発の新たな可能性を探るべきです。",
+      "github_repo": "AFK-surf/xnulinux",
+      "tags": [
+        "XNU",
+        "macOS",
+        "Linux",
+        "カーネル"
+      ],
+      "category": "プログラミング言語",
+      "score": 90,
+      "score_reason": "異なるOSのカーネルを統合し、ネイティブなユーザースペース実行を実現するという点で、非常に高い技術的新規性と実用性を持つため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Claude Code を安全に「自走」させるなら、もう Docker Sandboxes 一択でよくない？と思った話。",
+      "url": "https://note.com/yamac_/n/n198bdc344c64",
+      "source": "はてなブックマーク",
+      "published": "2026-11-22T10:08:35+00:00",
+      "reading_min": 9,
+      "summary": "AIコーディングエージェント（Claude Codeなど）を安全に自律動作させるための課題と、その解決策としてDocker Sandboxes（sbx）を推奨する記事です。\nsbxはMicroVMでカーネルごと隔離し、デフォルト拒否の通信制限や認証情報の管理など、エンタープライズレベルのセキュリティ機能を標準装備しています。\nWindows環境での導入手順と、商用利用を含むローカル実行が無料である点も強調されています。",
+      "actionable_takeaway": "AIコーディングエージェントを安全に利用するため、Docker Sandboxesの導入を検討し、MicroVMによる隔離や通信制限などのセキュリティ機能を活用して開発環境を強化しましょう。",
+      "tags": [
+        "AI",
+        "Docker",
+        "セキュリティ"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIエージェントの安全な利用は喫緊の課題であり、Docker Sandboxesが提供する強力な隔離機能とセキュリティは、実務におけるAI活用を加速させる重要なソリューションです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 305
+    },
+    {
+      "title": "AIが15分で牛検出器を構築できると言ったので、時間を計ってみた",
+      "url": "https://dev.to/xmkx/i-said-ai-could-build-a-cow-detector-in-15-minutes-so-i-timed-it-3j4e",
+      "source": "Dev.to",
+      "published": "2026-11-23T05:41:12+00:00",
+      "reading_min": 14,
+      "summary": "筆者が「AIを使えば15分で牛検出器を構築できる」と主張し、実際にその時間を計測した実験について報告しています。\nClaude CodeとGPTを利用し、手書きの検出コードやカスタムトレーニングセットなしで、YOLOなどの既存の事前学習済みモデルを活用しました。\n結果として、CLI、バウンディングボックス、JSON出力を含む牛検出プロジェクトを20分6秒で構築できたことを示し、AIによる開発の迅速性を実証しました。",
+      "actionable_takeaway": "AIエージェントと既存の事前学習モデルを活用することで、短時間で特定の物体検出システムを構築できるため、プロトタイプ開発やPoCに積極的にAIを導入しましょう。",
+      "tags": [
+        "AI",
+        "物体検出",
+        "YOLO"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIによる開発の迅速性と効率性を示す具体的な事例であり、AIの活用が開発プロセスを劇的に変える可能性を示唆しているため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "最終回答を超えて：H&EおよびmIFからの解釈可能な腫瘍免疫微小環境推論",
+      "url": "https://arxiv.org/abs/2611.26794",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-23T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、H&E染色およびmIF画像から腫瘍免疫微小環境を解釈可能な形で推論する手法を提案しています。\n単なる最終結果だけでなく、その推論過程を可視化・説明することで、医師の診断支援に貢献します。\nAIの医療応用における「説明可能性」の重要性を示す研究です。",
+      "actionable_takeaway": "医療AI開発者は、診断支援システムにおいて、単に高い精度を追求するだけでなく、医師が理解・信頼できるような「解釈可能性」を持つ推論メカニズムの実装を重視すべきです。",
+      "tags": [
+        "医療AI",
+        "画像診断",
+        "説明可能性"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "医療分野におけるAIの「説明可能性」は、実用化と信頼性確保の最重要課題であり、本研究は具体的な手法を提示しているため、非常に高い価値と影響力を持つと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も",
       "url": "https://www.publickey1.jp/blog/26/database_hubai.html",
       "source": "Publickey",
@@ -327,7 +419,31 @@
       "new_at": "2026-11-23T06:45:24.364706+09:00",
       "first_seen": "2026-11-23T06:45:24.364706+09:00",
       "is_hot": false,
-      "hatena_count": 53
+      "hatena_count": 148
+    },
+    {
+      "title": "Agent Harnessを理解するために、150行ほどのPythonで自作してみた",
+      "url": "https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962",
+      "source": "はてなブックマーク",
+      "published": "2026-11-22T08:32:43+00:00",
+      "reading_min": 14,
+      "summary": "AI Coding Agentの精度や使い勝手の違いは、LLMの周囲にある「Agent Harness」という仕組みに起因すると説明しています。\nHarnessは、LLMの出力を実際の行動（ファイル編集、テスト実行など）につなげる実行・制御の仕組みであり、ツール、ガードレール、可観測性、コンテキスト保護などの機能を含みます。\nこの記事では、Pythonで約150行のHarnessを自作し、その役割と動作原理を具体的に解説しています。",
+      "actionable_takeaway": "AIエージェントの性能を最大限に引き出すため、Agent Harnessの概念を理解し、必要に応じて自作やカスタマイズを試みることで、より効果的なAI活用を実現しましょう。",
+      "tags": [
+        "AI",
+        "LLM",
+        "Python"
+      ],
+      "category": "AI・機械学習",
+      "score": 88,
+      "score_reason": "AIエージェントの性能を左右するHarnessの概念を、実践的なコード例で解説しており、AI開発者にとって非常に有用な知見を提供します。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 152,
+      "topic_group": 1,
+      "topic_size": 2
     },
     {
       "title": "【pre:Inventまとめ】AWSのAIエージェント認証がいろいろ進化！MCPサーバー構築を例に一挙解説",
@@ -441,7 +557,7 @@
       "new_at": "2026-11-23T06:45:24.364706+09:00",
       "first_seen": "2026-11-23T06:45:24.364706+09:00",
       "is_hot": false,
-      "hatena_count": 47
+      "hatena_count": 107
     },
     {
       "title": "誰もがソフトウェアを構築できる時代：特注品の台頭と製品の永続性",
@@ -462,6 +578,125 @@
       "analysis_status": "ok",
       "new_at": "2026-11-23T06:45:24.364706+09:00",
       "first_seen": "2026-11-23T06:45:24.364706+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス",
+      "url": "https://zenn.dev/nttdata_tech/articles/9562962cc181a1",
+      "source": "Zenn",
+      "published": "2026-11-19T07:28:27+00:00",
+      "reading_min": 23,
+      "summary": "本記事では、Claude CodeとCodexを活用し、自律的に作業を進めるための個人用ハーネスの設計と運用について解説しています。\nAgentが過去の作業を記憶し、複数のセッションで並行して作業を進められるように、フォルダと概念の置き場を工夫しています。\n賢いプロンプトに頼るのではなく、Agentが自分で読み書き検査できる環境を構築することで、自律的な作業を実現しています。",
+      "actionable_takeaway": "AIエージェントの自律性を高めるため、プロンプトだけでなく、Agentが情報を読み書きし、作業履歴を追跡できるような環境設計（ハーネス）を検討し、導入を試みてください。",
+      "tags": [
+        "AI Agent",
+        "Claude Code",
+        "Codex"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIエージェントの自律性を高めるための具体的なシステム設計と実践例が示されており、今後のAI開発における重要な示唆を与えるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-19T23:42:44.938201+09:00",
+      "first_seen": "2026-11-19T23:42:44.938201+09:00",
+      "is_hot": false,
+      "hatena_count": 319,
+      "is_prev_seen": true,
+      "topic_group": 1,
+      "topic_size": 2
+    },
+    {
+      "title": "Inkling、Qwen、Unslothを使ったローカルAIの初心者向けガイド",
+      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "source": "Hacker News",
+      "published": "2026-11-22T21:01:16+00:00",
+      "hn_score": 370,
+      "hn_comments": 149,
+      "reading_min": 10,
+      "summary": "このガイドは、Unsloth、Inkling、Qwenなどのオープンウェイトモデルを使用して、自宅のPCでパーソナルなChatGPTのようなローカルAIをセットアップする方法を解説しています。\nクラウドベースのLLMプロバイダーのコスト増大やプライバシー懸念から、ローカルAIの需要が高まっている背景があります。\nWindows環境での簡単なセットアップ手順が示されており、GPUのVRAMに合わせたモデルのダウンロード、コンテキストサイズの設定、LANアクセス有効化などが含まれます。",
+      "actionable_takeaway": "クラウドLLMのコストとプライバシーに懸念がある場合、Unsloth Desktopを導入し、Qwenなどのオープンウェイトモデルをローカル環境で試用することで、プライベートかつコスト効率の良いAI環境を構築できるか検証すべきです。",
+      "tags": [
+        "ローカルAI",
+        "LLM",
+        "Unsloth",
+        "Qwen"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "ローカルAIの構築は、プライバシー保護とコスト削減の観点から実用性が高く、オープンソースモデルの活用方法を示すため、高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "新しいDocker: 信頼に基づいて構築",
+      "url": "https://www.docker.com/blog/meet-the-new-docker-built-to-run-on-trust/",
+      "source": "Hacker News",
+      "published": "2026-11-23T03:34:29+00:00",
+      "hn_score": 23,
+      "hn_comments": 32,
+      "reading_min": 5,
+      "summary": "Dockerは新しいブランドを公式に発表しました。\nAIがもたらす変革期において、セキュリティ、ガバナンス、制御を損なうことなくAIの力を活用する方法、つまり「エージェントを信頼できるか」という問いに焦点を当てています。\nこれは、かつてDockerがソフトウェアのポータビリティと再現性を提供し、開発者に信頼されてきた歴史と重なるものです。",
+      "actionable_takeaway": "Dockerの新しいビジョンはAI時代のセキュリティと信頼性に重点を置くため、今後のコンテナ技術の進化に注目し、AIエージェントの安全な利用方法を検討しましょう。",
+      "tags": [
+        "Docker",
+        "AI",
+        "セキュリティ"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "Dockerのブランド刷新とAI時代の信頼性への注力は、コンテナ技術の将来と開発者のワークフローに大きな影響を与える可能性が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "一つのbase_urlで複数のモデルを扱う：OpenAI互換エンドポイントへの切り替え",
+      "url": "https://dev.to/batonyzengsketch/one-baseurl-many-models-switching-to-an-openai-compatible-endpoint-25pf",
+      "source": "Dev.to",
+      "published": "2026-11-23T05:44:40+00:00",
+      "reading_min": 1,
+      "summary": "OpenAI互換のエンドポイントを利用することで、複数のAIモデルプロバイダーを単一のSDKとAPIキーで管理できるという記事です。\nこれにより、異なる言語モデルやコスト効率の良いタスク用モデルなど、複数のモデルを簡単に切り替えて利用することが可能になります。\n既存のOpenAIプロトコルを使用しているアプリケーションであれば、base_urlとAPIキーを変更するだけで移行が完了し、開発の複雑さを大幅に軽減できます。",
+      "actionable_takeaway": "複数のAIモデルを扱う際は、OpenAI互換エンドポイントの導入を検討し、API管理の簡素化と開発効率の向上を図りましょう。",
+      "github_repo": "aiokeys/aiokeys",
+      "tags": [
+        "AI",
+        "API",
+        "OpenAI"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "複数のAIモデルを効率的に管理する手法は、AI開発の現場で非常に実用性が高く、開発効率向上に直結するため高評価です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ChatAtom: 分子動力学シミュレーションと可視化のためのマルチエージェントLLMシステム",
+      "url": "https://arxiv.org/abs/2611.26782",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-23T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、分子動力学シミュレーションと可視化を行うマルチエージェントLLMシステム「ChatAtom」を提案しています。\nChatAtomは、複数のAIエージェントが連携し、複雑な科学計算タスクを自動化します。\n化学・材料科学分野における研究効率の大幅な向上に貢献する可能性があります。",
+      "actionable_takeaway": "分子動力学シミュレーションや材料科学の研究者は、ChatAtomのようなマルチエージェントLLMシステムを導入することで、シミュレーションの自動化と解析効率の向上を図るべきです。",
+      "tags": [
+        "LLM",
+        "分子動力学",
+        "マルチエージェント"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "LLMを科学計算、特に分子動力学シミュレーションに応用するマルチエージェントシステムは、研究開発のパラダイムを変える可能性があり、非常に高い新規性と実用性を持つため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -581,7 +816,7 @@
       "new_at": "2026-11-23T06:45:24.364706+09:00",
       "first_seen": "2026-11-23T06:45:24.364706+09:00",
       "is_hot": false,
-      "hatena_count": 352
+      "hatena_count": 412
     },
     {
       "title": "月額300ドルの写真アプリを置き換える：Cloudflare Pagesで定額制ビフォーアフター顧客ギャラリーを構築",
@@ -606,6 +841,72 @@
       "hatena_count": 0
     },
     {
+      "title": "Webメール開発を大幅に変えたJMAPというゲームチェンジャー",
+      "url": "https://speakerdeck.com/tascript/jmap-is-game-changer",
+      "source": "はてなブックマーク",
+      "published": "2026-11-22T15:40:52+00:00",
+      "reading_min": 15,
+      "summary": "JMAP（JSON Meta Application Protocol）は、従来のIMAP+SMTPに代わり、JSONとHTTP APIを用いてメール、カレンダー、アドレス帳などのデータを効率的に同期・操作するプロトコルです。\nJMAPは仕様がシンプルで、ブラウザから直接扱えるため、Webメール開発の複雑さを大幅に軽減し、リアルタイム同期やキャッシュ戦略、オフライン対応、AI機能との親和性も高めます。\nこの記事はJSConfJP 2026での登壇資料であり、JMAPの基礎知識から実践知までを解説しています。",
+      "actionable_takeaway": "Webメールや関連アプリケーションの開発者は、JMAPの導入を検討し、HTTP/JSONベースの効率的なデータ同期と操作により、開発コスト削減と機能強化を図りましょう。",
+      "tags": [
+        "JMAP",
+        "Webメール",
+        "プロトコル"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 80,
+      "score_reason": "JMAPはWebメール開発の複雑性を大幅に軽減し、現代のWeb技術スタックに適合する新しい標準として、今後のWebアプリケーション開発に大きな影響を与える可能性があります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 89
+    },
+    {
+      "title": "ストレージオブジェクトAPI診断：画像サイズ変更後の不正な応答の検証",
+      "url": "https://dev.to/urbandonovan1576/storage-object-api-diagnostics-validating-malformed-replies-after-resizing-images-4jla",
+      "source": "Dev.to",
+      "published": "2026-11-23T05:39:15+00:00",
+      "reading_min": 8,
+      "summary": "画像サイズ変更後のアップロードにおいて、APIからの応答が不正な形式である場合の診断と検証の重要性について論じています。\n特にB2B SaaS製品で署名済みドキュメントを保持する場合、サムネイル生成と永続的なアップロードを分離し、アップロード応答を契約として扱うべきだと提言しています。\nHTTPステータスの成功、ボディのパース可能性、リクエストコンテキストの保持を検証することで、不正なデータ記録を防ぎ、診断を容易にすることが強調されています。",
+      "actionable_takeaway": "画像リサイズ後のストレージAPI応答は、HTTPステータス、ボディの形式、リクエストコンテキストを必ず検証し、不正なデータ記録や診断の困難さを未然に防ぎましょう。",
+      "tags": [
+        "API",
+        "ストレージ",
+        "エラーハンドリング"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 80,
+      "score_reason": "ストレージAPIの堅牢なエラーハンドリングとデータ検証は、SaaS製品の信頼性とデータ整合性を保つ上で非常に重要であり、実務的な示唆に富んでいます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "TOUMAII: 450万ペアのツール呼び出し選好データセットとそのソース非依存ジェネレーター",
+      "url": "https://arxiv.org/abs/2611.26722",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-23T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、大規模なツール呼び出し選好データセット「TOUMAII」とその生成器について紹介しています。\n450万ペアものデータは、AIが外部ツールを効果的に利用するための学習に役立ちます。\nソースに依存しないジェネレーターは、多様なツール呼び出しシナリオに対応可能です。",
+      "actionable_takeaway": "大規模言語モデル（LLM）に外部ツール連携機能を実装する開発者は、TOUMAIIデータセットを活用してモデルのツール利用能力を向上させるための学習データとして検討すべきです。",
+      "tags": [
+        "LLM",
+        "ツール呼び出し",
+        "データセット"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "LLMのツール利用能力は今後のAI応用の鍵であり、大規模な選好データセットとその生成器は、この分野の研究開発を大きく加速させる可能性が高いため、非常に重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "作れるエンジニアから、価値を届けるエンジニアへ",
       "url": "https://zenn.dev/kubell/articles/3c3490a3592bb1",
       "source": "Zenn",
@@ -625,7 +926,7 @@
       "new_at": "2026-11-23T06:45:24.364706+09:00",
       "first_seen": "2026-11-23T06:45:24.364706+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "Node.js Webhook Subscribe: HTTPS Push, Rate Limits, Ack/Nack, Dead Letters",
@@ -742,6 +1043,76 @@
       "hatena_count": 0
     },
     {
+      "title": "C言語の部分評価器",
+      "url": "https://phoenix.labri.fr/software/tempo/",
+      "source": "Hacker News",
+      "published": "2026-11-23T04:51:48+00:00",
+      "hn_score": 6,
+      "hn_comments": 0,
+      "reading_min": 7,
+      "summary": "Tempoは、C言語プログラムのための部分評価器（Partial Evaluator）です。\n部分評価とは、プログラムの特殊化プロセスを自動化するプログラム変換技術であり、既知の入力に基づいてプログラムを最適化します。\nTempoは、オペレーティングシステム、ネットワーキング、コンピュータグラフィックス、科学計算など、様々な分野で応用されてきました。",
+      "actionable_takeaway": "C言語で記述されたパフォーマンスが重要なシステムを開発している場合、Tempoのような部分評価器を導入することで、特定の入力パターンに対するコードを事前に最適化し、実行時性能を向上させる可能性を検討すべきです。",
+      "tags": [
+        "C言語",
+        "部分評価",
+        "プログラム最適化",
+        "コンパイラ"
+      ],
+      "category": "プログラミング言語",
+      "score": 75,
+      "score_reason": "C言語のパフォーマンス最適化に直接寄与する技術であり、幅広い分野での応用実績があるため、高い実用性を持つと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "EveBoxエージェントキーとブラウザセッションが異なる証拠パスを保護する",
+      "url": "https://dev.to/bianliang/evebox-agent-keys-and-browser-sessions-protect-different-evidence-paths-9ep",
+      "source": "Dev.to",
+      "published": "2026-11-23T05:41:59+00:00",
+      "reading_min": 3,
+      "summary": "EveBoxのサーバーUI、API、エージェント接続型パケットキャプチャワークフローにおける認証メカニズムについて解説しています。\nブラウザセッション、HTTP基本認証、エージェントキー、Elasticsearch/OpenSearchの認証情報がそれぞれ異なる目的を持ち、相互に独立していることを強調しています。\n特に、エージェントキーはWebインターフェースの認証設定とは独立しており、セキュリティを確保するために各認証パスの適切な管理と設定の重要性を指摘しています。",
+      "actionable_takeaway": "EveBoxを利用する際は、エージェントキーとブラウザセッションの認証が独立していることを理解し、各証拠パスのセキュリティ設定を適切に行いましょう。",
+      "github_repo": "jasonish/evebox",
+      "tags": [
+        "セキュリティ",
+        "Suricata",
+        "ログ管理"
+      ],
+      "category": "セキュリティ",
+      "score": 75,
+      "score_reason": "セキュリティツールにおける認証メカニズムの理解は、システムの安全な運用に不可欠であり、実務的な注意喚起が含まれるため重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "構成による一貫性：CTIナレッジグラフの合成と一貫性検証の形式的限界",
+      "url": "https://arxiv.org/abs/2611.26717",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-23T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、CTI（脅威インテリジェンス）ナレッジグラフの構築における一貫性の問題に焦点を当てています。\nナレッジグラフの合成方法と、その一貫性を検証する際の形式的な限界について論じています。\nサイバーセキュリティ分野における情報整理と分析の課題解決に貢献する研究です。",
+      "actionable_takeaway": "CTIナレッジグラフを構築する際は、情報の整合性を確保するための設計原則を初期段階から導入し、一貫性検証の限界を理解した上で運用計画を立てるべきです。",
+      "tags": [
+        "CTI",
+        "ナレッジグラフ",
+        "サイバーセキュリティ"
+      ],
+      "category": "セキュリティ",
+      "score": 75,
+      "score_reason": "サイバーセキュリティ分野における脅威インテリジェンスの構造化と分析は喫緊の課題であり、ナレッジグラフの一貫性に関する研究は実用性が高いため、高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "トヨタ、日産、ホンダがコスト削減のため部品を標準化へ",
       "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
       "source": "Hacker News",
@@ -814,6 +1185,98 @@
       "hatena_count": 0
     },
     {
+      "title": "リーマン予想に関するマスッロの論文",
+      "url": "https://johncarlosbaez.wordpress.com/2026/11/22/masullo-on-the-riemann-hypothesis/",
+      "source": "Hacker News",
+      "published": "2026-11-22T10:59:56+00:00",
+      "hn_score": 145,
+      "hn_comments": 63,
+      "reading_min": 18,
+      "summary": "2026年11月20日、リーマン予想の証明を試みる2つの論文が登場しました。1つはLevent AlpögeとClaudeによるLeanコード1700万行、もう1つはAlessandro Masulloによる940ページの手書き原稿です。\nこの記事では、Masulloの証明戦略を簡略化して解説し、指摘されている問題点にも触れています。\n筆者は数論の専門家ではないため、内容は暫定的なものとしています。",
+      "actionable_takeaway": "リーマン予想のような数学的難問に対する最新のアプローチ（特にLeanのような形式的証明システムの使用）を追跡し、その手法や課題を理解することは、計算機科学における証明支援技術の進化を把握する上で重要です。",
+      "tags": [
+        "リーマン予想",
+        "数論",
+        "数学",
+        "Lean"
+      ],
+      "category": "その他",
+      "score": 70,
+      "score_reason": "数学の未解決問題に関する記事であり、直接的なIT技術の実務への影響は少ないものの、形式的証明システムなど関連技術への示唆があるため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ここ1か月くらい、PCに勝手に Adobe Express Photos が勝手にインストールされたっていう問い合わせが多発してるんですが、さすがにこれはAdobeさんやりすぎじゃないでしょうか・・・？ しかも、Windows+Shift+Sを勝手に上書きして、機能劣化版のスクショツールに置き換わるんですよ…→「これマジでクソ過ぎてAdobe系製品全部消したい」",
+      "url": "https://posfie.com/@petaritape/p/tgzVdbL",
+      "source": "はてなブックマーク",
+      "published": "2026-11-22T22:04:53+00:00",
+      "reading_min": 3,
+      "summary": "Adobe Acrobat Readerの利用者に、Adobe Express Photosが意図せずインストールされ、Windowsの標準スクリーンショット機能（Win+Shift+S）が上書きされる問題が多発しています。\nこの変更により、スクショツールの機能劣化やUIの混乱、起動の遅延、ストレージ消費などの影響が出ています。\nユーザーは「勝手に」インストールされたと感じており、Adobe製品への不満が高まっています。",
+      "actionable_takeaway": "Adobe Acrobat Readerの更新時には、インストールオプションを注意深く確認し、不要なバンドルソフトウェアのインストールを拒否するとともに、Win+Shift+Sが上書きされた場合は設定から元に戻す方法を確認しましょう。",
+      "tags": [
+        "Adobe",
+        "Windows",
+        "UX"
+      ],
+      "category": "その他",
+      "score": 70,
+      "score_reason": "多くのユーザーに影響を与えるUX上の問題であり、ソフトウェアのインストールプロセスにおける透明性の欠如は、企業イメージとユーザー体験に悪影響を及ぼします。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 218
+    },
+    {
+      "title": "数学を見せて：Telegramエアドロップスコアが再現可能である方法",
+      "url": "https://dev.to/novapointsapp/show-me-the-math-how-a-telegram-airdrop-score-stays-reproducible-l",
+      "source": "Dev.to",
+      "published": "2026-11-23T05:38:45+00:00",
+      "reading_min": 2,
+      "summary": "Telegramのエアドロッププログラム「NovaPoints」のスコア計算が、いかに再現可能であるかを数学的に説明しています。\n最終スコアは、活動、保持、ミッション、紹介、評判、イベントなどの要素に重みを付けて計算され、各入力は正規化され上限が設定されています。\nすべての入力データと計算式が公開され、SHA-256ハッシュによって監査可能であるため、誰でもスコアを再計算し検証できる透明性の高いシステムであることを強調しています。",
+      "actionable_takeaway": "ブロックチェーン関連のスコアリングシステムを設計する際は、NovaPointsのように計算ロジックと入力データを完全に公開し、再現性と監査可能性を確保することで信頼性を高めましょう。",
+      "github_repo": "novapointsapp/nova-score-v3",
+      "tags": [
+        "ブロックチェーン",
+        "暗号通貨",
+        "アルゴリズム"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "ブロックチェーンやエアドロップにおけるスコアの透明性と再現性は、ユーザーの信頼を得る上で重要であり、その実装方法が具体的に示されているため評価できます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIチームの規模と構成が人間とAIのブレインストーミングチームにおける生産性と多様性をどのように形成するか",
+      "url": "https://arxiv.org/abs/2611.26663",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-23T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "本記事は、AIチームの規模と構成が人間とAIのブレインストーミングに与える影響を分析しています。\n生産性と多様性の両面から、最適なチーム編成について考察を深めています。\nAIと人間の協調作業における効果的なチーム設計のヒントを提供します。",
+      "actionable_takeaway": "AIを活用したブレインストーミングや共同作業を行う際は、AIエージェントの数や役割分担を考慮し、多様な視点を取り入れるチーム構成を検討すべきです。",
+      "tags": [
+        "AI",
+        "チームコラボレーション",
+        "ブレインストーミング"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIと人間の協調作業におけるチーム編成の最適化は、実務におけるAI導入の成功に直結するため、重要度が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "NTP Poolに参加したが、Stratum 1のRaspberry Piは使わなかった",
       "url": "https://www.jeffgeerling.com/blog/2026/i-joined-the-ntp-pool/",
       "source": "Hacker News",
@@ -838,12 +1301,59 @@
       "hatena_count": 0
     },
     {
+      "title": "インターネットアーカイブの忘れられた動画から構築された無料の代替TVネットワーク",
+      "url": "https://spelunkr.tv",
+      "source": "Hacker News",
+      "published": "2026-11-23T01:13:51+00:00",
+      "hn_score": 307,
+      "hn_comments": 48,
+      "reading_min": 1,
+      "summary": "SPELUNKRは、インターネットアーカイブの膨大な動画ライブラリを活用し、ユニークなケーブルTV体験を提供するウェブサイトです。\n従来のTVとは異なる、より奇妙で多様なコンテンツを無料で楽しむことができます。\nサイトのContent-Security-Policyはフレームの祖先のみを制限し、スクリプトの制限はありません。",
+      "actionable_takeaway": "インターネットアーカイブのコンテンツを活用した新しいメディア体験として、SPELUNKRを試用し、そのコンテンツキュレーションや技術的実装（CSPなど）を分析することで、自身のプロジェクトへの応用可能性を探るべきです。",
+      "tags": [
+        "インターネットアーカイブ",
+        "メディア",
+        "コンテンツキュレーション"
+      ],
+      "category": "その他",
+      "score": 65,
+      "score_reason": "既存のコンテンツを再活用したユニークなサービスであり、技術的な新規性よりもコンテンツのキュレーションと提供方法に面白みがあるため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "SideLoadをしよう！〜SideStoreをiPhone単体で入れる〜(SideInstaller編)",
+      "url": "https://zenn.dev/l_port8000/articles/7550549e6e9970",
+      "source": "Zenn",
+      "published": "2026-11-22T03:46:17+00:00",
+      "reading_min": 1,
+      "summary": "この記事は、非公式アプリのインストールを助長するものではなく、SideStoreをiPhone単体で導入する「SideInstaller」の手順を解説しています。\niOS 17以上が必要で、アプリの出どころをGitHubなどに限定し、DNSプロファイルの確認や証明書のエクスポート・インポートによるエラー解決方法も紹介されています。\nSideInstallerの公式サイトはsideinstaller.netであり、sideinstaller.comは偽物であると注意喚起しています。",
+      "actionable_takeaway": "SideStoreをiPhoneに単体でインストールする際は、公式サイト(sideinstaller.net)を必ず確認し、DNS設定や証明書管理に注意してトラブルシューティングを行いましょう。",
+      "github_repo": "FrizzleM/SideInstaller",
+      "tags": [
+        "iOS",
+        "SideLoad",
+        "SideStore"
+      ],
+      "category": "モバイル",
+      "score": 65,
+      "score_reason": "特定の非公式アプリストアの導入方法に関する記事であり、技術的な新規性よりも特定のユーザー層への実用性が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "GTA 6の鳥たち：バイスシティとレオニダの野生生物フィールドガイド",
       "url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
       "source": "Hacker News",
       "published": "2026-11-22T19:10:34+00:00",
-      "hn_score": 165,
-      "hn_comments": 45,
+      "hn_score": 424,
+      "hn_comments": 212,
       "reading_min": 8,
       "summary": "Grand Theft Auto VI（GTA 6）は、広大なオープンワールドと緻密な野生生物の描写が特徴です。\n特にバイスシティ（マイアミがモデル）には、数十種類の鳥類、爬虫類、両生類などが生息しています。\nこの記事は、ゲーム内の生態系に焦点を当て、その詳細な作り込みを紹介しています。",
       "actionable_takeaway": "ゲーム開発者は、オープンワールドゲームにおける環境描写のリアリティを高めるために、生態系の詳細な再現がユーザー体験を向上させることを考慮すべきです。",
@@ -881,23 +1391,68 @@
       "new_at": "2026-11-23T06:45:24.364706+09:00",
       "first_seen": "2026-11-23T06:45:24.364706+09:00",
       "is_hot": false,
-      "hatena_count": 69
+      "hatena_count": 306
+    },
+    {
+      "title": "スーダンで大聖堂の床が出現、中世最大の教会の1つが明らかに",
+      "url": "https://apnews.com/article/sudan-antiquities-nubia-cathedral-1b16f67da881ee5592de4481ee55c527",
+      "source": "Hacker News",
+      "published": "2026-11-18T15:43:29+00:00",
+      "hn_score": 167,
+      "hn_comments": 29,
+      "summary": "スーダンで発掘調査が行われ、中世の大聖堂の床が発見されました。\nこれは、これまで知られている中世の教会の中でも最大級のものの1つであるとされています。\nこの発見は、スーダンの古代史やキリスト教の歴史に関する新たな知見をもたらす可能性があります。",
+      "actionable_takeaway": "このニュースはIT技術とは直接関係ありませんが、考古学における最新の発見は、文化遺産のデジタルアーカイブ化や3Dモデリング技術の応用など、IT技術が貢献できる分野の可能性を示唆しています。",
+      "tags": [
+        "考古学",
+        "歴史",
+        "スーダン"
+      ],
+      "category": "その他",
+      "score": 10,
+      "score_reason": "IT技術ニュースではないため、スコアは低いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "大阪のホテルに宿泊、食事で外出しようとしたらギャルみたいな女性に「ご飯行きませんか？」と誘われ、怖くて無視してホテルの部屋へ戻ってUberで注文した「都会怖いよ」",
+      "url": "https://togetter.com/li/2773878",
+      "source": "はてなブックマーク",
+      "published": "2026-11-22T23:49:37+00:00",
+      "reading_min": 2,
+      "summary": "大阪のホテルに宿泊中の投稿者が、食事に出ようとした際にギャル風の女性に声をかけられ、恐怖を感じて部屋に戻りUber Eatsを利用したという体験談です。\nこの出来事に対し、他のユーザーからは美人局やぼったくりバーへの勧誘、夜の梅田周辺の危険性について注意喚起が寄せられました。\n特に阪急三番街や曽根崎、堂山方面の夜間は危険な場所が多く、安易に誘いに乗らないよう忠告されています。",
+      "actionable_takeaway": "見知らぬ人からの誘いは美人局やぼったくりバーの可能性が高いため、特に繁華街では安易に応じず、安全を最優先に行動しましょう。",
+      "tags": [
+        "社会問題",
+        "防犯",
+        "大阪"
+      ],
+      "category": "その他",
+      "score": 10,
+      "score_reason": "IT技術とは直接関係なく、個人の体験談と注意喚起が主であるため、技術的な重要度は低いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-23T14:45:34.151541+09:00",
+      "first_seen": "2026-11-23T14:45:34.151541+09:00",
+      "is_hot": false,
+      "hatena_count": 57
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-23T06:45:24.364706+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-23T14:45:34.151541+09:00",
     "summary_lines": [
-      "AIと機械学習の進化が加速し、シンギュラリティへの関心が高まっています。",
-      "セキュリティ分野では、情報漏洩と脆弱性評価の理解が喫緊の課題です。",
-      "LLMのプロンプトエンジニアリングと大規模コンテキストウィンドウの課題が浮上しています。"
+      "AIと機械学習の進化が加速し、シンギュラリティへの議論が活発化しています。",
+      "セキュリティ分野では、CVSSスコアの理解と情報漏洩対策が喫緊の課題です。",
+      "大規模言語モデルの課題とプロンプトエンジニアリングの重要性が浮上しています。"
     ],
     "focus_tags": [
       "AI",
       "セキュリティ",
       "LLM",
-      "シンギュラリティ",
-      "情報漏洩"
+      "機械学習",
+      "脆弱性"
     ]
   }
 }

@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 22 Nov 2026 21:46:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 05:46:28 +0000</lastBuildDate>
     <item>
       <title>寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド</title>
       <link>https://zenn.dev/canly/articles/ca6875cd79539f</link>
@@ -91,6 +91,34 @@
       <pubDate>Sun, 22 Nov 2026 21:33:24 +0000</pubDate>
     </item>
     <item>
+      <title>XNU Linux: Linux上で完全なOS X GUIユーザースペースを実現</title>
+      <link>https://github.com/AFK-surf/xnulinux</link>
+      <guid isPermaLink="false">https://github.com/AFK-surf/xnulinux</guid>
+      <description>[Score: 90] XNU Linuxは、macOSのオープンソースカーネルであるXNUをLinuxカーネルモジュールとしてロードし、Linux上でmacOSのユーザースペースをネイティブに実行するプロジェクトです。 / これにより、macOSプロセスとLinuxプロセスが同じCPU上でハイパーバイザーなしで並行動作し、メモリ、タイマー、ファイル、ネットワーク、GPUをLinuxから借用します。 / Ubuntuカーネル上でmacOSのシステムディスクを起動し、ログインウィンドウ、WindowServer、Dock、Finder、Safari、Chromeなどが動作する様子が確認されています。 [実務示唆: macOSアプリケーションのLinux上での動作検証や、異なるOSカーネル間の連携技術に興味があるエンジニアは、XNU LinuxのGitHubリポジトリを調査し、その実装やパフォーマンスを評価することで、クロスプラットフォーム開発の新たな可能性を探るべきです。] [GitHub: AFK-surf/xnulinux] (Source: Hacker News)</description>
+      <pubDate>Mon, 23 Nov 2026 03:49:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Code を安全に「自走」させるなら、もう Docker Sandboxes 一択でよくない？と思った話。</title>
+      <link>https://note.com/yamac_/n/n198bdc344c64</link>
+      <guid isPermaLink="false">https://note.com/yamac_/n/n198bdc344c64</guid>
+      <description>[Score: 90] AIコーディングエージェント（Claude Codeなど）を安全に自律動作させるための課題と、その解決策としてDocker Sandboxes（sbx）を推奨する記事です。 / sbxはMicroVMでカーネルごと隔離し、デフォルト拒否の通信制限や認証情報の管理など、エンタープライズレベルのセキュリティ機能を標準装備しています。 / Windows環境での導入手順と、商用利用を含むローカル実行が無料である点も強調されています。 [実務示唆: AIコーディングエージェントを安全に利用するため、Docker Sandboxesの導入を検討し、MicroVMによる隔離や通信制限などのセキュリティ機能を活用して開発環境を強化しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 22 Nov 2026 10:08:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIが15分で牛検出器を構築できると言ったので、時間を計ってみた</title>
+      <link>https://dev.to/xmkx/i-said-ai-could-build-a-cow-detector-in-15-minutes-so-i-timed-it-3j4e</link>
+      <guid isPermaLink="false">https://dev.to/xmkx/i-said-ai-could-build-a-cow-detector-in-15-minutes-so-i-timed-it-3j4e</guid>
+      <description>[Score: 90] 筆者が「AIを使えば15分で牛検出器を構築できる」と主張し、実際にその時間を計測した実験について報告しています。 / Claude CodeとGPTを利用し、手書きの検出コードやカスタムトレーニングセットなしで、YOLOなどの既存の事前学習済みモデルを活用しました。 / 結果として、CLI、バウンディングボックス、JSON出力を含む牛検出プロジェクトを20分6秒で構築できたことを示し、AIによる開発の迅速性を実証しました。 [実務示唆: AIエージェントと既存の事前学習モデルを活用することで、短時間で特定の物体検出システムを構築できるため、プロトタイプ開発やPoCに積極的にAIを導入しましょう。] (Source: Dev.to)</description>
+      <pubDate>Mon, 23 Nov 2026 05:41:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>最終回答を超えて：H&amp;EおよびmIFからの解釈可能な腫瘍免疫微小環境推論</title>
+      <link>https://arxiv.org/abs/2611.26794</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.26794</guid>
+      <description>[Score: 90] 本記事は、H&amp;E染色およびmIF画像から腫瘍免疫微小環境を解釈可能な形で推論する手法を提案しています。 / 単なる最終結果だけでなく、その推論過程を可視化・説明することで、医師の診断支援に貢献します。 / AIの医療応用における「説明可能性」の重要性を示す研究です。 [実務示唆: 医療AI開発者は、診断支援システムにおいて、単に高い精度を追求するだけでなく、医師が理解・信頼できるような「解釈可能性」を持つ推論メカニズムの実装を重視すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
       <link>https://www.publickey1.jp/blog/26/database_hubai.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
@@ -105,46 +133,18 @@
       <pubDate>Sun, 22 Nov 2026 14:51:25 +0000</pubDate>
     </item>
     <item>
+      <title>Agent Harnessを理解するために、150行ほどのPythonで自作してみた</title>
+      <link>https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962</link>
+      <guid isPermaLink="false">https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962</guid>
+      <description>[Score: 88] AI Coding Agentの精度や使い勝手の違いは、LLMの周囲にある「Agent Harness」という仕組みに起因すると説明しています。 / Harnessは、LLMの出力を実際の行動（ファイル編集、テスト実行など）につなげる実行・制御の仕組みであり、ツール、ガードレール、可観測性、コンテキスト保護などの機能を含みます。 / この記事では、Pythonで約150行のHarnessを自作し、その役割と動作原理を具体的に解説しています。 [実務示唆: AIエージェントの性能を最大限に引き出すため、Agent Harnessの概念を理解し、必要に応じて自作やカスタマイズを試みることで、より効果的なAI活用を実現しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 22 Nov 2026 08:32:43 +0000</pubDate>
+    </item>
+    <item>
       <title>【pre:Inventまとめ】AWSのAIエージェント認証がいろいろ進化！MCPサーバー構築を例に一挙解説</title>
       <link>https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 85] AWS re:Inventに先立ち、CognitoとAgentCoreにおけるAIエージェント認証のアップデートが発表されました。 / AIクライアントの認証管理を簡素化するCIMDとDCRの2つの新機能がCognitoに追加され、管理者の手間を削減します。 / AgentCore GatewayではJWTクレームを条件にリソースポリシーで細かくアクセス制御できるようになり、セキュリティと管理性が向上しました。 [実務示唆: AWSでAIエージェントを利用する際は、CognitoのCIMD/DCRやAgentCore GatewayのJWTクレームを活用し、認証・認可の管理を効率化しセキュリティを強化することを推奨します。] (Source: Qiita)</description>
       <pubDate>Sat, 21 Nov 2026 04:03:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>マイクロソフト、AIが生成したアプリを企業内で安全に実行するランタイム「Copilot Managed Runtime」正式リリース</title>
-      <link>https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</guid>
-      <description>[Score: 85] マイクロソフトは「Microsoft Ignite 2026」で、AIが生成したアプリケーションを企業内で安全に実行するための基盤「Copilot Managed Runtime」を正式リリースしました。 / AIによって生成されたアプリは脆弱性やセキュリティリスクを抱える可能性があるため、適切な権限管理とサンドボックス化された実行環境が求められます。 / 本ランタイムは、これらの課題を解決し、企業内でのAIアプリの安全なデプロイと実行を可能にします。 [実務示唆: AI生成アプリを企業導入する際は、Copilot Managed Runtimeのような専用ランタイムを活用し、セキュリティと権限管理を徹底すべきです。] (Source: Publickey)</description>
-      <pubDate>Wed, 18 Nov 2026 15:58:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>シリコンバレーに何が起こったのか？</title>
-      <link>https://www.oreilly.com/radar/what-happened-to-silicon-valley/</link>
-      <guid isPermaLink="false">https://www.oreilly.com/radar/what-happened-to-silicon-valley/</guid>
-      <description>[Score: 85] ティム・オライリーが、シリコンバレーの政治経済が「価値創造」から「価値抽出」へと変化したと論じています。 / 40年以上のキャリアを振り返り、協力システムがその役割を果たさなくなった現状を指摘。 / かつて集団的知性を推進した業界が、現在直面している課題について考察しています。 [実務示唆: テクノロジー業界のリーダーは、短期的な利益追求だけでなく、長期的な価値創造と社会貢献のバランスを再考し、協力的なエコシステムを再構築する視点を持つべきです。] (Source: Hacker News)</description>
-      <pubDate>Sun, 22 Nov 2026 19:20:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Next.jsのストリーミングはLambda Web Functionsで動くか</title>
-      <link>https://zenn.dev/ryota_09/articles/nextjs-suspense-streaming-lambda-web-functions</link>
-      <guid isPermaLink="false">https://zenn.dev/ryota_09/articles/nextjs-suspense-streaming-lambda-web-functions</guid>
-      <description>[Score: 85] Lambda Web FunctionsでNext.jsのSuspenseストリーミングが追加設定なしで動作し、Vercelとほぼ同等の挙動を示すことが実測で確認されました。 / 以前のLambda Web Adapterではストリーミングの段階表示がうまくいかなかった問題が、Web Functionsでは解決されています。 / コールドスタート時のみVercelとの差が見られましたが、それ以外は高速なレスポンスと段階表示を実現しています。 [実務示唆: Next.jsのSuspenseストリーミングをAWS Lambdaで利用する際は、Lambda Web Functionsの採用を検討し、コールドスタート時のパフォーマンスを評価しましょう。] (Source: Zenn)</description>
-      <pubDate>Sun, 22 Nov 2026 02:30:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Google が実践する最先端の SRE</title>
-      <link>https://sre-magazine.net/articles/7/aoto/</link>
-      <guid isPermaLink="false">https://sre-magazine.net/articles/7/aoto/</guid>
-      <description>[Score: 85] GoogleがSREのアプローチにシステム理論を用いた安全分析手法「STAMP/STPA」を適用し、SREの未来を象徴するものとして推進していることが紹介されています。 / STAMPは、システムをコントローラーと非コントロールプロセスの相互作用に着目し、アクシデントの原因を安全制御の不備と捉える事故モデルです。 / STPAはSTAMPモデルに基づき、ハザードにつながる「安全のための制御」の不備（UCA）を解析し、事故発生前にリスクを特定する手法です。 [実務示唆: Googleが採用するSTAMP/STPAのような先進的な安全分析手法をSREプラクティスに取り入れることで、システムの複雑化に伴う潜在的な事故原因を事前に特定し、より堅牢なシステム運用体制を構築するための検討を始めるべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 24 Mar 2025 09:45:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>誰もがソフトウェアを構築できる時代：特注品の台頭と製品の永続性</title>
-      <link>https://dev.to/networknerd1337/when-everyone-can-build-software-the-rise-of-the-bespoke-and-the-persistence-of-products-f92</link>
-      <guid isPermaLink="false">https://dev.to/networknerd1337/when-everyone-can-build-software-the-rise-of-the-bespoke-and-the-persistence-of-products-f92</guid>
-      <description>[Score: 85] AIが明確な記述から動作するソフトウェアを生成できるようになると、ソフトウェア開発の障壁が崩壊すると予測されています。 / これにより、短命な特注ツールが爆発的に増加する一方で、責任の所在が重要な製品は存続すると論じています。 / 将来的に、ソフトウェアを「構築する」ことと「使用する」ことの境界がより明確になり、判断力が希少なスキルとなると提言しています。 [実務示唆: AIによるソフトウェア生成の進化を見据え、プロンプトエンジニアリング能力や、要件定義・判断力といった上流工程のスキルを強化することが重要です。] (Source: Dev.to)</description>
-      <pubDate>Sun, 22 Nov 2026 21:34:13 +0000</pubDate>
     </item>
   </channel>
 </rss>

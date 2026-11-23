@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 22 Nov 2026 21:46:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 05:46:28 +0000</lastBuildDate>
     <item>
       <title>寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド</title>
       <link>https://zenn.dev/canly/articles/ca6875cd79539f</link>
@@ -63,6 +63,34 @@
       <pubDate>Sun, 22 Nov 2026 21:33:24 +0000</pubDate>
     </item>
     <item>
+      <title>Claude Code を安全に「自走」させるなら、もう Docker Sandboxes 一択でよくない？と思った話。</title>
+      <link>https://note.com/yamac_/n/n198bdc344c64</link>
+      <guid isPermaLink="false">https://note.com/yamac_/n/n198bdc344c64</guid>
+      <description>[Score: 90] AIコーディングエージェント（Claude Codeなど）を安全に自律動作させるための課題と、その解決策としてDocker Sandboxes（sbx）を推奨する記事です。 / sbxはMicroVMでカーネルごと隔離し、デフォルト拒否の通信制限や認証情報の管理など、エンタープライズレベルのセキュリティ機能を標準装備しています。 / Windows環境での導入手順と、商用利用を含むローカル実行が無料である点も強調されています。 [実務示唆: AIコーディングエージェントを安全に利用するため、Docker Sandboxesの導入を検討し、MicroVMによる隔離や通信制限などのセキュリティ機能を活用して開発環境を強化しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 22 Nov 2026 10:08:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIが15分で牛検出器を構築できると言ったので、時間を計ってみた</title>
+      <link>https://dev.to/xmkx/i-said-ai-could-build-a-cow-detector-in-15-minutes-so-i-timed-it-3j4e</link>
+      <guid isPermaLink="false">https://dev.to/xmkx/i-said-ai-could-build-a-cow-detector-in-15-minutes-so-i-timed-it-3j4e</guid>
+      <description>[Score: 90] 筆者が「AIを使えば15分で牛検出器を構築できる」と主張し、実際にその時間を計測した実験について報告しています。 / Claude CodeとGPTを利用し、手書きの検出コードやカスタムトレーニングセットなしで、YOLOなどの既存の事前学習済みモデルを活用しました。 / 結果として、CLI、バウンディングボックス、JSON出力を含む牛検出プロジェクトを20分6秒で構築できたことを示し、AIによる開発の迅速性を実証しました。 [実務示唆: AIエージェントと既存の事前学習モデルを活用することで、短時間で特定の物体検出システムを構築できるため、プロトタイプ開発やPoCに積極的にAIを導入しましょう。] (Source: Dev.to)</description>
+      <pubDate>Mon, 23 Nov 2026 05:41:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>最終回答を超えて：H&amp;EおよびmIFからの解釈可能な腫瘍免疫微小環境推論</title>
+      <link>https://arxiv.org/abs/2611.26794</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.26794</guid>
+      <description>[Score: 90] 本記事は、H&amp;E染色およびmIF画像から腫瘍免疫微小環境を解釈可能な形で推論する手法を提案しています。 / 単なる最終結果だけでなく、その推論過程を可視化・説明することで、医師の診断支援に貢献します。 / AIの医療応用における「説明可能性」の重要性を示す研究です。 [実務示唆: 医療AI開発者は、診断支援システムにおいて、単に高い精度を追求するだけでなく、医師が理解・信頼できるような「解釈可能性」を持つ推論メカニズムの実装を重視すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Agent Harnessを理解するために、150行ほどのPythonで自作してみた</title>
+      <link>https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962</link>
+      <guid isPermaLink="false">https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962</guid>
+      <description>[Score: 88] AI Coding Agentの精度や使い勝手の違いは、LLMの周囲にある「Agent Harness」という仕組みに起因すると説明しています。 / Harnessは、LLMの出力を実際の行動（ファイル編集、テスト実行など）につなげる実行・制御の仕組みであり、ツール、ガードレール、可観測性、コンテキスト保護などの機能を含みます。 / この記事では、Pythonで約150行のHarnessを自作し、その役割と動作原理を具体的に解説しています。 [実務示唆: AIエージェントの性能を最大限に引き出すため、Agent Harnessの概念を理解し、必要に応じて自作やカスタマイズを試みることで、より効果的なAI活用を実現しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Sun, 22 Nov 2026 08:32:43 +0000</pubDate>
+    </item>
+    <item>
       <title>【pre:Inventまとめ】AWSのAIエージェント認証がいろいろ進化！MCPサーバー構築を例に一挙解説</title>
       <link>https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
@@ -77,39 +105,11 @@
       <pubDate>Wed, 18 Nov 2026 15:58:32 +0000</pubDate>
     </item>
     <item>
-      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
-      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>Show HN: LLMのサブエージェントになるゲームを作った</title>
-      <link>https://github.com/gulivan/worker755</link>
-      <guid isPermaLink="false">https://github.com/gulivan/worker755</guid>
-      <description>[Score: 80] このブラウザゲームでは、プレイヤーはAIエージェント（LLM）のサブエージェントとしてタスクを実行します。 / マネージャーであるLLMは、タスクキュー、マシンへの読み取り専用アクセス、サブエージェントを生成するツールを持っています。 / プレイヤーは90秒以内に指示を実行し、その結果がLLMに報告され、評価や修正が行われます。 [実務示唆: LLMをマネージャーとするゲームは、AIと人間の協調作業のシミュレーションとして、AIエージェントの設計やタスク管理の課題を理解するのに役立つため、試してみる価値があります。] [GitHub: gulivan/worker755] (Source: Hacker News)</description>
-      <pubDate>Sun, 22 Nov 2026 13:56:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>MetaのAIエージェント「Muse」は何ができる？ ChatGPTやGeminiとの違い、注意点を解説</title>
-      <link>https://www.itmedia.co.jp/mobile/articles/2611/22/news005.html</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/mobile/articles/2611/22/news005.html</guid>
-      <description>[Score: 80] Metaが日本でパーソナルAIエージェント「Muse」の提供を開始しました。これはiOS/AndroidアプリとWebサイトから利用可能です。 / Museは、ユーザーごとにクラウド上に独立した仮想環境を持ち、作成したファイルや作業の途中経過を保持できる点が特徴です。 / また、ユーザーが操作していない間も定期的なタスクを実行できるため、「調べる」「作る」「続ける」という一連の作業を継続的に支援するAIエージェントとして設計されています。 [実務示唆: Meta Museのような常時稼働型AIエージェントは、日常業務の自動化や情報収集の効率化に大きく貢献する可能性があるため、その機能を検証し、自身のワークフローへの導入可能性を検討することで生産性向上を図るべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 22 Nov 2026 02:46:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>Jevって高速らしい。じゃあ、一文字ずつ文章を書かせてもLLMより速いのけ？</title>
-      <link>https://qiita.com/ryosuke_ohori/items/532719a37f9a1965b1c8?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/ryosuke_ohori/items/532719a37f9a1965b1c8?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 75] TypeSafeの意思決定モデルJevは高速とされていますが、一文字ずつ文章を生成させる方式では、通常のLLMの全文生成方式よりも大幅に時間がかかることが実験で判明しました。 / Jevは候補の中から選択する分類器であり、一文字ずつ生成する用途には向いておらず、API通信回数が非常に多くなるため遅延が発生します。 / チャットボットの応答速度を評価する際には、API通信回数や候補選択のメカニズムを考慮する必要があることが示唆されています。 [実務示唆: LLMや意思決定モデルの応答速度を評価する際は、単なるTTFBだけでなく、API通信回数や生成メカニズムが全体応答時間に与える影響を考慮しましょう。] (Source: Qiita)</description>
-      <pubDate>Sun, 22 Nov 2026 09:14:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>手書きをやめた途端、ブログが全部AI臭くなったあなたへ！ マシにする方法教えます</title>
-      <link>https://qiita.com/minorun365/items/faa50b7662b86e1df29c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/minorun365/items/faa50b7662b86e1df29c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 70] AIによるブログ執筆が増える中、情報量過多でAI臭い記事を避けるための具体的な方法が紹介されています。 / Claude CodeやOpus 5.5などの高性能AIモデルと、独自のスキル設定（CLAUDE.md）を活用し、AI特有の表現を抑制します。 / 音声入力での指示とHTMLプレビューでの細かなレビューを繰り返すことで、人間らしい自然な文章に仕上げるプロセスが示されています。 [実務示唆: AIで記事を作成する際は、AIの特性を理解し、スキル設定や詳細な指示、複数回のレビューを通じて人間らしい表現に調整するプロセスを取り入れましょう。] [GitHub: minorun365/html-share-kun] (Source: Qiita)</description>
-      <pubDate>Sun, 22 Nov 2026 11:56:55 +0000</pubDate>
+      <title>自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス</title>
+      <link>https://zenn.dev/nttdata_tech/articles/9562962cc181a1</link>
+      <guid isPermaLink="false">https://zenn.dev/nttdata_tech/articles/9562962cc181a1</guid>
+      <description>[Score: 85] 本記事では、Claude CodeとCodexを活用し、自律的に作業を進めるための個人用ハーネスの設計と運用について解説しています。 / Agentが過去の作業を記憶し、複数のセッションで並行して作業を進められるように、フォルダと概念の置き場を工夫しています。 / 賢いプロンプトに頼るのではなく、Agentが自分で読み書き検査できる環境を構築することで、自律的な作業を実現しています。 [実務示唆: AIエージェントの自律性を高めるため、プロンプトだけでなく、Agentが情報を読み書きし、作業履歴を追跡できるような環境設計（ハーネス）を検討し、導入を試みてください。] (Source: Zenn)</description>
+      <pubDate>Thu, 19 Nov 2026 07:28:27 +0000</pubDate>
     </item>
   </channel>
 </rss>
