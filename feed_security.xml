@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 23 Nov 2026 05:46:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 01:12:51 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -28,25 +28,11 @@
       <pubDate>Sun, 22 Nov 2026 03:42:52 +0000</pubDate>
     </item>
     <item>
-      <title>「委託したとこ全部漏洩してんじゃんよ💢」プレイド『KARTE』の不正アクセスで、ZOZOTOWNや三菱UFJ銀行など影響を受けた企業が次々判明…不安や警戒の声が広がる</title>
-      <link>https://togetter.com/li/2773732</link>
-      <guid isPermaLink="false">https://togetter.com/li/2773732</guid>
-      <description>[Score: 88] プレイドが提供する顧客データ分析サービス『KARTE』への不正アクセスにより、ZOZOTOWN、三菱UFJ銀行、東京ガス、しまむらなど多数の大手企業で顧客情報漏洩が判明しました。 / 漏洩した情報には氏名、生年月日、性別、住所などが含まれ、退会者情報も対象となっています。 / この事態を受け、委託先のセキュリティ対策の重要性が改めて浮き彫りになり、企業やユーザーの間で不安と警戒が広がっています。 [実務示唆: 自社が利用する外部サービスやSaaSのセキュリティ対策状況を定期的に確認し、契約内容に情報漏洩時の責任範囲や対応プロトコルが明確に記載されているか再確認するとともに、顧客への情報開示準備を怠らないようにすべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 22 Nov 2026 14:51:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>情報漏えいを公表しないリスクの要点整理</title>
-      <link>https://qiita.com/Maruo110/items/385b2c7ef5fbd074e6e2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/Maruo110/items/385b2c7ef5fbd074e6e2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] 情報漏えいに関する個人情報保護委員会への報告義務は増加しているが、報道発表の義務はないため、公表されないケースも多いです。 / ランサムウェア攻撃の手口が変化し、攻撃者が窃取データをリークサイトで公開するようになったことで、「公表しない」選択のリスクが高まっています。 / 情報漏えいの公表判断は、CSIRTだけでなく広報・法務・経営層を含めた合意形成が重要であり、攻撃者による公開のタイミングと形を委ねるリスクを認識すべきです。 [実務示唆: 企業は、情報漏えい発生時の公表基準とフローを事前に明確化し、攻撃者によるデータ公開リスクを考慮した上で、広報・法務・経営層を含むCSIRT体制を強化すべきです。] (Source: Qiita)</description>
-      <pubDate>Sat, 21 Nov 2026 11:51:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>EveBoxエージェントキーとブラウザセッションが異なる証拠パスを保護する</title>
-      <link>https://dev.to/bianliang/evebox-agent-keys-and-browser-sessions-protect-different-evidence-paths-9ep</link>
-      <guid isPermaLink="false">https://dev.to/bianliang/evebox-agent-keys-and-browser-sessions-protect-different-evidence-paths-9ep</guid>
-      <description>[Score: 75] EveBoxのサーバーUI、API、エージェント接続型パケットキャプチャワークフローにおける認証メカニズムについて解説しています。 / ブラウザセッション、HTTP基本認証、エージェントキー、Elasticsearch/OpenSearchの認証情報がそれぞれ異なる目的を持ち、相互に独立していることを強調しています。 / 特に、エージェントキーはWebインターフェースの認証設定とは独立しており、セキュリティを確保するために各認証パスの適切な管理と設定の重要性を指摘しています。 [実務示唆: EveBoxを利用する際は、エージェントキーとブラウザセッションの認証が独立していることを理解し、各証拠パスのセキュリティ設定を適切に行いましょう。] [GitHub: jasonish/evebox] (Source: Dev.to)</description>
-      <pubDate>Mon, 23 Nov 2026 05:41:59 +0000</pubDate>
+      <title>[2026版]セキュリティ情報 406 件を「脆弱性-事故-対策」の1枚の分類図にまとめてから読めたこと</title>
+      <link>https://qiita.com/songchong/items/4ad36f1857ba2b4ee4f1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/4ad36f1857ba2b4ee4f1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] IT連携マップが2026年版のセキュリティ情報406件を「事前対策→脆弱性→攻撃の手口→被害→事後対策」の5層に分類した図を公開しました。 / この分類図により、膨大なセキュリティ情報から「自分は何をすべきか」を効率的に把握できるようになります。 / 特にVPN機器、認証・認可の不備、インジェクション、XSSなどの脆弱性が悪用される割合が高いことが示されています。 [実務示唆: IT連携マップの分類図を活用し、自社のシステムに関連する脆弱性や攻撃手法を効率的に把握し、優先度の高い対策から実施することを推奨します。] (Source: Qiita)</description>
+      <pubDate>Sun, 22 Nov 2026 22:01:05 +0000</pubDate>
     </item>
     <item>
       <title>構成による一貫性：CTIナレッジグラフの合成と一貫性検証の形式的限界</title>

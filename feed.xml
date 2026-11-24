@@ -5,34 +5,13 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 23 Nov 2026 05:46:28 +0000</lastBuildDate>
-    <item>
-      <title>寝てる間に自動で動くAIエージェントを誰でも作れる：10分でわかる pstack 実践ガイド</title>
-      <link>https://zenn.dev/canly/articles/ca6875cd79539f</link>
-      <guid isPermaLink="false">https://zenn.dev/canly/articles/ca6875cd79539f</guid>
-      <description>[Score: 100] AI開発者poteto氏が公開したCursor公式スキル集「pstack」の活用ガイドです。 / pstackは、AIが質の高いコードを生成するための58のスキルと22のプレイブックで構成されています。 / 本記事では、指示の組み立て方からツール実装、自動テスト、テスト検証までを約10分で完遂する手順が解説されています。 [実務示唆: AIエージェントによる開発効率化のため、Cursorのpstackプラグインを導入し、質の高いコード生成と自動テストのワークフローを試すことを推奨します。] [GitHub: cursor/plugins] (Source: Zenn)</description>
-      <pubDate>Fri, 20 Nov 2026 09:04:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>【TLA+】AIにテストケースを書かせるな。ルールを書け</title>
-      <link>https://zenn.dev/karamage/articles/73027ee36796dc</link>
-      <guid isPermaLink="false">https://zenn.dev/karamage/articles/73027ee36796dc</guid>
-      <description>[Score: 95] AIに実装とテストの両方を書かせると「自作自演の満点」となり、意味のあるテストにならないという問題提起がされています。 / Test Oracle Problemに触れ、AIが生成するテストケースの限界と、形式検証言語TLA+系のQuintを用いた解決策が提示されています。 / 人間が「採点基準（ルール）」を定義し、機械に問題（テストケース）を全て生成させるアプローチが推奨されています。 [実務示唆: AIによるテスト生成を活用する際は、AIにテストケースそのものを書かせるのではなく、TLA+のような形式検証ツールを用いて「システムの正しい振る舞いのルール」を定義し、そのルールに基づいてテストを自動生成させるアプローチを検討しましょう。] (Source: Zenn)</description>
-      <pubDate>Sat, 21 Nov 2026 02:12:39 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 24 Nov 2026 01:12:51 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</guid>
       <description>[Score: 95] マイクロソフトは「Microsoft Ignite 2026」で、AIによるサイバー攻撃に対抗するための新サービス「Microsoft Perception」の提供開始を発表しました。 / このサービスは、レッドチーム、ブルーチーム、グリーンチームのAIエージェントが連携し、攻撃シミュレーション、脅威検出、修復を機械速度で実行します。 / AIによる攻撃の自動化が進む中、人間では対応が困難な速度での防御をAIエージェントが実現します。 [実務示唆: AIによるサイバー攻撃が高度化する中、Microsoft PerceptionのようなAI駆動型セキュリティソリューションの導入を検討し、セキュリティ対策の自動化と高速化を図るべきです。] (Source: Publickey)</description>
       <pubDate>Wed, 18 Nov 2026 16:00:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>［速報］マイクロソフト、コーディング用AIモデルとして高性能かつ低価格「MAI Code 2」「MAI Code 2 Flash」発表</title>
-      <link>https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html</guid>
-      <description>[Score: 95] マイクロソフトが年次イベント「Microsoft Ignite 2026」で、コーディング用AIモデル「MAI Code 2」と「MAI Code 2 Flash」を発表しました。 / これらのモデルは、競合製品と同等の性能をより低価格で提供することを特徴としています。 / MAI Code 2は本番環境のコード生成やデバッグ、リポジトリ推論に優れ、MAI Code 2 Flashはコード説明や局所的な編集、ルーチンワークの修正に適しています。 [実務示唆: Microsoftの新しいコーディング用AIモデルは、既存のAIツールと比較してコストパフォーマンスが高いため、開発者はMAI Code 2/Flashを導入し、開発効率とコスト削減効果を検証すべきです。] (Source: Publickey)</description>
-      <pubDate>Tue, 17 Nov 2026 21:48:15 +0000</pubDate>
     </item>
     <item>
       <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
@@ -42,39 +21,25 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>2026年11月21日をもって世界はシンギュラリティに突入した</title>
-      <link>https://note.com/cgbeginner/n/n5856d402f125</link>
-      <guid isPermaLink="false">https://note.com/cgbeginner/n/n5856d402f125</guid>
-      <description>[Score: 95] 2026年11月21日、AnthropicのAI「Claude」と共同で書かれた「リーマン予想の証明」が検証コミュニティに「正しい」と認定されました。 / これは167年間未解決だった数学界の超難問であり、Leanという証明支援系言語で書かれた約1,700万行のコードが公開され、世界中の数学者によって徹底的に検証されました。 / AIが人間を介さずに論理的証明の正しさを確定させたことで、シンギュラリティへの突入が示唆されています。 [実務示唆: AIによる高度な数学的証明の自動検証は、将来的に科学研究やソフトウェア開発における検証プロセスの自動化・高速化に繋がる可能性があり、その動向を注視し、自身の業務への応用可能性を検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 22 Nov 2026 13:51:31 +0000</pubDate>
+      <title>iOSエンジニアのための OAuth 2.0 + PKCE 入門 ― 仕組みを理解してから、Swiftで実装する</title>
+      <link>https://zenn.dev/mobile_app_tec/articles/ios-oauth2-pkce-native-app</link>
+      <guid isPermaLink="false">https://zenn.dev/mobile_app_tec/articles/ios-oauth2-pkce-native-app</guid>
+      <description>[Score: 95] iOSエンジニア向けにOAuth 2.0 + PKCEの仕組みとSwiftでの実装方法を解説する記事です。 / ROPC（Resource Owner Password Credentials）フローが非推奨とされている現状を踏まえ、認可コードフローとPKCEの重要性を強調しています。 / アクセストークンの発行、リフレッシュトークン、stateパラメータの役割、そしてASWebAuthenticationSessionなどの外部ブラウザ利用の必要性について詳細に説明されています。 [実務示唆: iOSアプリでOAuth 2.0を実装する際は、ROPCではなく認可コードフローとPKCEを必須とし、ASWebAuthenticationSessionを用いてセキュアな認証フローを構築すべきです。] (Source: Zenn)</description>
+      <pubDate>Mon, 23 Nov 2026 13:56:35 +0000</pubDate>
     </item>
     <item>
-      <title>Orca Botsが良さそう、何ができるのか</title>
-      <link>https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro</link>
-      <guid isPermaLink="false">https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro</guid>
-      <description>[Score: 90] AI Agentを活用した開発IDE「Orca」に、役割と記憶を持つBotを常設できる「Orca Bots」がベータ版として追加されました。 / Orca Botsは、Slack連携やGitHubのIssue/PR確認、CI失敗時の原因調査など、日常業務を継続的にAIに任せることを可能にします。 / Git worktreeと連携し、AIが生成したコード修正を人間が容易に確認・引き継げる点が特徴です。 [実務示唆: AI Agentを活用した開発に興味のあるエンジニアは、Orca Botsを試用し、日常業務へのAI組み込みによる開発効率向上を検証することを推奨します。] [GitHub: orca-dev/orca] (Source: Zenn)</description>
-      <pubDate>Sat, 21 Nov 2026 15:14:13 +0000</pubDate>
+      <title>AWS Emulator を使用してローカルで AWS に対してアプリケーションをテストする | Amazon Web Services</title>
+      <link>https://aws.amazon.com/jp/blogs/news/test-your-applications-against-aws-locally-with-aws-emulator/</link>
+      <guid isPermaLink="false">https://aws.amazon.com/jp/blogs/news/test-your-applications-against-aws-locally-with-aws-emulator/</guid>
+      <description>[Score: 95] AWSが、アプリケーションをローカル環境でAWSサービスに対してテストできる「AWS Emulator」を発表しました。 / これにより、開発者はクラウド環境にデプロイすることなく、ローカルでAWSサービスとの連携を検証できます。 / 開発サイクルを高速化し、コストを削減しながら、より効率的なテストが可能になります。 [実務示唆: AWS環境で開発を行うエンジニアは、AWS Emulatorを導入し、ローカルでのテストを積極的に行うことで、開発効率とコスト効率の向上を図るべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 13 Nov 2026 02:20:46 +0000</pubDate>
     </item>
     <item>
-      <title>Windows Server 2028がパブリックプレビュー公開。Microsoft FoundryなどAIによる推論の実行基盤へと拡張</title>
-      <link>https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/windows_server_2028microsoft_foundryai.html</guid>
-      <description>[Score: 90] Microsoftは「Microsoft Ignite 2026」で、次期サーバーOS「Windows Server 2028」のパブリックプレビューを公開しました。 / Windows Server 2028は、Microsoft Foundry、Windows ML、vLLM、Llama.cppなどを利用した企業内AI推論の実行基盤としての役割を強化します。 / セキュリティ機能の強化やストレージ機能の改善も含まれており、AI時代のサーバーOSとして進化を遂げています。 [実務示唆: Windows Server 2028のプレビューを検証し、AI推論ワークロードや強化されたセキュリティ機能が自社のインフラにどう影響するか評価しましょう。] (Source: Publickey)</description>
-      <pubDate>Wed, 18 Nov 2026 15:55:49 +0000</pubDate>
-    </item>
-    <item>
-      <title>デバイス間で継続するセッションのためのAgent Host Protocolの構築</title>
-      <link>https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</guid>
-      <description>[Score: 90] AIエージェントのセッションをデバイス間で継続させるためのオープン標準「Agent Host Protocol (AHP)」がGitHubによって開発されました。 / GitHub Copilotでは、このAHPにより、VS Codeやモバイルアプリなど異なる環境でエージェントセッションを中断なく引き継ぐことが可能です。 / AHPは、エージェントのライフタイムを特定のアプリケーションに縛らず、作業の継続性を実現します。 [実務示唆: マルチデバイス環境でAIエージェントのセッション継続性を実現したい開発者は、GitHubが提唱するAgent Host Protocol (AHP)の仕様を調査し、自身のアプリケーションやワークフローへの導入を検討しましょう。] (Source: GitHub Blog)</description>
-      <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>パープレキシティと知能</title>
-      <link>https://openai.com/index/perplexity-and-intelligence/</link>
-      <guid isPermaLink="false">https://openai.com/index/perplexity-and-intelligence/</guid>
-      <description>[Score: 90] OpenAIのチーフサイエンティストが、AIの進歩を理解する上で「パープレキシティ（または交差エントロピー損失）」が重要であると主張しています。 / AI開発は、大規模なデータセットでコンプレッサー（予測器）を訓練するシンプルなプロセスに集約されると説明。 / 業界全体の安全性基準確立のため、OpenAIの内部的な事前学習進捗（パープレキシティ測定値）を公開する意向を示しています。 [実務示唆: AIモデルの性能評価と安全性基準の共通化に向けて、パープレキシティを主要な指標として追跡し、業界標準の確立に貢献する動向に注目すべきです。] (Source: Hacker News)</description>
-      <pubDate>Sun, 22 Nov 2026 17:06:27 +0000</pubDate>
+      <title>DHH氏が開発する「Omarchy 4.5」リリース。一般的なマルチウィンドウをサポート。最速7秒で導入、Appleシリコン対応、Webアプリ版MS Office用ランチャーなど新機能</title>
+      <link>https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</guid>
+      <description>[Score: 95] Ruby on Railsの作者DHH氏が開発するLinux OS「Omarchy 4.5」がリリースされました。 / 本バージョンでは、従来のタイル型に加え、一般的なフローティング型マルチウィンドウをサポート。 / Appleシリコン搭載Macへの対応や、Web版MS Office用ランチャー機能も追加されています。 [実務示唆: AppleシリコンMacユーザーは、Omarchy 4.5をデュアルブートで試すことで、AIエージェント統合型Linux環境を体験できる。] (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 23 Nov 2026 15:39:27 +0000</pubDate>
     </item>
     <item>
       <title>脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する</title>
@@ -84,32 +49,11 @@
       <pubDate>Sun, 22 Nov 2026 03:42:52 +0000</pubDate>
     </item>
     <item>
-      <title>なぜ大規模コンテキストウィンドウは失敗するのか（そしてAIプロンプトを修正する方法）</title>
-      <link>https://dev.to/tanmay2627/why-large-context-windows-fail-and-how-to-fix-your-ai-prompts-e8j</link>
-      <guid isPermaLink="false">https://dev.to/tanmay2627/why-large-context-windows-fail-and-how-to-fix-your-ai-prompts-e8j</guid>
-      <description>[Score: 90] LLMの大規模コンテキストウィンドウに大量のデータを投入すると、レイテンシ増加、APIコスト増大、出力品質低下を招く問題が指摘されています。 / これは、Transformerモデルがコンテキストの最初と最後に高い注意を払う「U字型リコール曲線」を示すため、中間部分の重要な情報が見落とされがちであるためです。 / 本記事では、大規模コンテキストウィンドウをデフォルトとせず、構造化されたコンテキストパイプラインを構築することで、高品質な出力を得る方法を提案しています。 [実務示唆: LLMのプロンプト作成では、重要な情報をコンテキストの最初や最後に配置し、関連性の高い情報を厳選して渡すなど、U字型リコール曲線を意識した構造化を試すべきです。] (Source: Dev.to)</description>
-      <pubDate>Sun, 22 Nov 2026 21:33:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>XNU Linux: Linux上で完全なOS X GUIユーザースペースを実現</title>
-      <link>https://github.com/AFK-surf/xnulinux</link>
-      <guid isPermaLink="false">https://github.com/AFK-surf/xnulinux</guid>
-      <description>[Score: 90] XNU Linuxは、macOSのオープンソースカーネルであるXNUをLinuxカーネルモジュールとしてロードし、Linux上でmacOSのユーザースペースをネイティブに実行するプロジェクトです。 / これにより、macOSプロセスとLinuxプロセスが同じCPU上でハイパーバイザーなしで並行動作し、メモリ、タイマー、ファイル、ネットワーク、GPUをLinuxから借用します。 / Ubuntuカーネル上でmacOSのシステムディスクを起動し、ログインウィンドウ、WindowServer、Dock、Finder、Safari、Chromeなどが動作する様子が確認されています。 [実務示唆: macOSアプリケーションのLinux上での動作検証や、異なるOSカーネル間の連携技術に興味があるエンジニアは、XNU LinuxのGitHubリポジトリを調査し、その実装やパフォーマンスを評価することで、クロスプラットフォーム開発の新たな可能性を探るべきです。] [GitHub: AFK-surf/xnulinux] (Source: Hacker News)</description>
-      <pubDate>Mon, 23 Nov 2026 03:49:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Code を安全に「自走」させるなら、もう Docker Sandboxes 一択でよくない？と思った話。</title>
-      <link>https://note.com/yamac_/n/n198bdc344c64</link>
-      <guid isPermaLink="false">https://note.com/yamac_/n/n198bdc344c64</guid>
-      <description>[Score: 90] AIコーディングエージェント（Claude Codeなど）を安全に自律動作させるための課題と、その解決策としてDocker Sandboxes（sbx）を推奨する記事です。 / sbxはMicroVMでカーネルごと隔離し、デフォルト拒否の通信制限や認証情報の管理など、エンタープライズレベルのセキュリティ機能を標準装備しています。 / Windows環境での導入手順と、商用利用を含むローカル実行が無料である点も強調されています。 [実務示唆: AIコーディングエージェントを安全に利用するため、Docker Sandboxesの導入を検討し、MicroVMによる隔離や通信制限などのセキュリティ機能を活用して開発環境を強化しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 22 Nov 2026 10:08:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIが15分で牛検出器を構築できると言ったので、時間を計ってみた</title>
-      <link>https://dev.to/xmkx/i-said-ai-could-build-a-cow-detector-in-15-minutes-so-i-timed-it-3j4e</link>
-      <guid isPermaLink="false">https://dev.to/xmkx/i-said-ai-could-build-a-cow-detector-in-15-minutes-so-i-timed-it-3j4e</guid>
-      <description>[Score: 90] 筆者が「AIを使えば15分で牛検出器を構築できる」と主張し、実際にその時間を計測した実験について報告しています。 / Claude CodeとGPTを利用し、手書きの検出コードやカスタムトレーニングセットなしで、YOLOなどの既存の事前学習済みモデルを活用しました。 / 結果として、CLI、バウンディングボックス、JSON出力を含む牛検出プロジェクトを20分6秒で構築できたことを示し、AIによる開発の迅速性を実証しました。 [実務示唆: AIエージェントと既存の事前学習モデルを活用することで、短時間で特定の物体検出システムを構築できるため、プロトタイプ開発やPoCに積極的にAIを導入しましょう。] (Source: Dev.to)</description>
-      <pubDate>Mon, 23 Nov 2026 05:41:12 +0000</pubDate>
+      <title>デバイス間で継続するセッションのためのAgent Host Protocolの構築</title>
+      <link>https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</link>
+      <guid isPermaLink="false">https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</guid>
+      <description>[Score: 90] AIエージェントのセッションをデバイス間で継続させるためのオープン標準「Agent Host Protocol (AHP)」がGitHubによって開発されました。 / GitHub Copilotでは、このAHPにより、VS Codeやモバイルアプリなど異なる環境でエージェントセッションを中断なく引き継ぐことが可能です。 / AHPは、エージェントのライフタイムを特定のアプリケーションに縛らず、作業の継続性を実現します。 [実務示唆: マルチデバイス環境でAIエージェントのセッション継続性を実現したい開発者は、GitHubが提唱するAgent Host Protocol (AHP)の仕様を調査し、自身のアプリケーションやワークフローへの導入を検討しましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
     </item>
     <item>
       <title>最終回答を超えて：H&amp;EおよびmIFからの解釈可能な腫瘍免疫微小環境推論</title>
@@ -119,6 +63,20 @@
       <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>コーディングエージェントが変えたOSS開発のプロセスと喜び</title>
+      <link>https://zenn.dev/cybergarage/articles/5ee7ac6b3b0565</link>
+      <guid isPermaLink="false">https://zenn.dev/cybergarage/articles/5ee7ac6b3b0565</guid>
+      <description>[Score: 90] 著者はコーディングエージェント（Codex、Claude）の活用により、OSS開発のプロセスと喜びが大きく変化したと報告しています。 / エージェントに実装を任せることで、著者は「次に何をすべきか決定し、テストを用意し、結果を確認する」ことに時間を費やすようになり、複数のプロジェクトを並行して進められるようになりました。 / 特にMatter開発の再開とESP32への移植において、エージェントが調査・実装・テストサイクルを担い、開発が飛躍的に進んだ具体例が挙げられています。 [実務示唆: AIコーディングエージェントを導入する際は、単にコード生成だけでなく、エージェントが調査・検証できる環境（ログ、テストツール、実機など）を整備することで、開発効率を最大化できるか検証すべきです。] [GitHub: cybergarage/go-matter] (Source: Zenn)</description>
+      <pubDate>Mon, 23 Nov 2026 17:37:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>コードを書くコストが下がった今、ソフトウェアエンジニアリングの価値はどこにあるのか</title>
+      <link>https://qiita.com/figueiredoluiz/items/1d6751643b84db67812e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/1d6751643b84db67812e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AIによるコード生成の進化でコードを書くコストは下がったが、ソフトウェア開発全体の生産性向上には課題があることが指摘されています。 / AIツールの利用はコミット数を大幅に増加させるものの、リリース数の増加は限定的であるという研究結果が紹介されています。 / AI時代のエンジニアは、問題理解、設計、品質改善、そして実際に使われる価値の提供に注力すべきだと論じています。 [実務示唆: AIによるコード生成を活用しつつも、エンジニアは問題定義、システム設計、品質保証、そしてユーザー価値の創出といった上流工程や非コーディング領域に注力し、自身の専門性を高めるべきです。] (Source: Qiita)</description>
+      <pubDate>Sat, 21 Nov 2026 20:37:17 +0000</pubDate>
+    </item>
+    <item>
       <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
       <link>https://www.publickey1.jp/blog/26/database_hubai.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
@@ -126,25 +84,67 @@
       <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
     </item>
     <item>
-      <title>「委託したとこ全部漏洩してんじゃんよ💢」プレイド『KARTE』の不正アクセスで、ZOZOTOWNや三菱UFJ銀行など影響を受けた企業が次々判明…不安や警戒の声が広がる</title>
-      <link>https://togetter.com/li/2773732</link>
-      <guid isPermaLink="false">https://togetter.com/li/2773732</guid>
-      <description>[Score: 88] プレイドが提供する顧客データ分析サービス『KARTE』への不正アクセスにより、ZOZOTOWN、三菱UFJ銀行、東京ガス、しまむらなど多数の大手企業で顧客情報漏洩が判明しました。 / 漏洩した情報には氏名、生年月日、性別、住所などが含まれ、退会者情報も対象となっています。 / この事態を受け、委託先のセキュリティ対策の重要性が改めて浮き彫りになり、企業やユーザーの間で不安と警戒が広がっています。 [実務示唆: 自社が利用する外部サービスやSaaSのセキュリティ対策状況を定期的に確認し、契約内容に情報漏洩時の責任範囲や対応プロトコルが明確に記載されているか再確認するとともに、顧客への情報開示準備を怠らないようにすべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 22 Nov 2026 14:51:25 +0000</pubDate>
+      <title>マイクロソフト、AIが生成したアプリを企業内で安全に実行するランタイム「Copilot Managed Runtime」正式リリース</title>
+      <link>https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</guid>
+      <description>[Score: 85] マイクロソフトは「Microsoft Ignite 2026」で、AIが生成したアプリケーションを企業内で安全に実行するための基盤「Copilot Managed Runtime」を正式リリースしました。 / AIによって生成されたアプリは脆弱性やセキュリティリスクを抱える可能性があるため、適切な権限管理とサンドボックス化された実行環境が求められます。 / 本ランタイムは、これらの課題を解決し、企業内でのAIアプリの安全なデプロイと実行を可能にします。 [実務示唆: AI生成アプリを企業導入する際は、Copilot Managed Runtimeのような専用ランタイムを活用し、セキュリティと権限管理を徹底すべきです。] (Source: Publickey)</description>
+      <pubDate>Wed, 18 Nov 2026 15:58:32 +0000</pubDate>
     </item>
     <item>
-      <title>Agent Harnessを理解するために、150行ほどのPythonで自作してみた</title>
-      <link>https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962</link>
-      <guid isPermaLink="false">https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962</guid>
-      <description>[Score: 88] AI Coding Agentの精度や使い勝手の違いは、LLMの周囲にある「Agent Harness」という仕組みに起因すると説明しています。 / Harnessは、LLMの出力を実際の行動（ファイル編集、テスト実行など）につなげる実行・制御の仕組みであり、ツール、ガードレール、可観測性、コンテキスト保護などの機能を含みます。 / この記事では、Pythonで約150行のHarnessを自作し、その役割と動作原理を具体的に解説しています。 [実務示唆: AIエージェントの性能を最大限に引き出すため、Agent Harnessの概念を理解し、必要に応じて自作やカスタマイズを試みることで、より効果的なAI活用を実現しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Sun, 22 Nov 2026 08:32:43 +0000</pubDate>
+      <title>ChatAtom: 分子動力学シミュレーションと可視化のためのマルチエージェントLLMシステム</title>
+      <link>https://arxiv.org/abs/2611.26782</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.26782</guid>
+      <description>[Score: 85] 本記事は、分子動力学シミュレーションと可視化を行うマルチエージェントLLMシステム「ChatAtom」を提案しています。 / ChatAtomは、複数のAIエージェントが連携し、複雑な科学計算タスクを自動化します。 / 化学・材料科学分野における研究効率の大幅な向上に貢献する可能性があります。 [実務示唆: 分子動力学シミュレーションや材料科学の研究者は、ChatAtomのようなマルチエージェントLLMシステムを導入することで、シミュレーションの自動化と解析効率の向上を図るべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>【pre:Inventまとめ】AWSのAIエージェント認証がいろいろ進化！MCPサーバー構築を例に一挙解説</title>
-      <link>https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/minorun365/items/bd6091f2599a0f37326b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] AWS re:Inventに先立ち、CognitoとAgentCoreにおけるAIエージェント認証のアップデートが発表されました。 / AIクライアントの認証管理を簡素化するCIMDとDCRの2つの新機能がCognitoに追加され、管理者の手間を削減します。 / AgentCore GatewayではJWTクレームを条件にリソースポリシーで細かくアクセス制御できるようになり、セキュリティと管理性が向上しました。 [実務示唆: AWSでAIエージェントを利用する際は、CognitoのCIMD/DCRやAgentCore GatewayのJWTクレームを活用し、認証・認可の管理を効率化しセキュリティを強化することを推奨します。] (Source: Qiita)</description>
-      <pubDate>Sat, 21 Nov 2026 04:03:14 +0000</pubDate>
+      <title>StalwartがMicrosoft Exchangeのドロップイン代替として利用可能に</title>
+      <link>https://stalw.art/blog/microsoft-exchange-replacement/</link>
+      <guid isPermaLink="false">https://stalw.art/blog/microsoft-exchange-replacement/</guid>
+      <description>[Score: 85] Stalwart 1.2.0がリリースされ、Microsoft Exchangeのドロップイン代替として機能するようになりました。 / MAPI over HTTP、EWS、Exchange ActiveSyncなどのプロトコルを実装し、Outlookなどの既存クライアントがそのまま利用可能です。 / MicrosoftがExchange Onlineへの移行を推進する中、オンプレミス環境を維持したい組織にとって魅力的な選択肢となります。 [実務示唆: オンプレミスExchangeの代替を検討している組織は、Stalwartの導入を評価し、既存のメールシステムとの互換性や移行手順を確認すること。] [GitHub: stalwartlabs/stalwart-mail-server] (Source: Hacker News)</description>
+      <pubDate>Mon, 23 Nov 2026 22:32:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>ダリオはオープンソースモデルが違法になり、彼がコントロールを維持できるように危険を煽っている</title>
+      <link>https://twitter.com/ylecun/status/2124550037912920090</link>
+      <guid isPermaLink="false">https://twitter.com/ylecun/status/2124550037912920090</guid>
+      <description>[Score: 85] Yann LeCunは、Dario AmodeiがオープンソースAIの危険性を誇張し、規制を通じてAIのコントロールを自身に集中させようとしていると批判しています。 / Amodeiは、オープンモデルでは監視や制御が不可能になると主張し、AIの安全性を確保するためにはモデルを管理下に置く必要があると議会で証言しました。 / LeCunはこれを、知識への自由なアクセスを妨げる「中世の蒙昧主義」になぞらえ、オープンソースAIの発展を阻害する動きだと警鐘を鳴らしています。 [実務示唆: AI開発者は、オープンソースAIの規制に関する議論の動向を注視し、自身の開発活動やビジネスモデルへの潜在的な影響を評価する必要があります。] (Source: Hacker News)</description>
+      <pubDate>Mon, 23 Nov 2026 17:07:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>[2026版]セキュリティ情報 406 件を「脆弱性-事故-対策」の1枚の分類図にまとめてから読めたこと</title>
+      <link>https://qiita.com/songchong/items/4ad36f1857ba2b4ee4f1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/songchong/items/4ad36f1857ba2b4ee4f1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 85] IT連携マップが2026年版のセキュリティ情報406件を「事前対策→脆弱性→攻撃の手口→被害→事後対策」の5層に分類した図を公開しました。 / この分類図により、膨大なセキュリティ情報から「自分は何をすべきか」を効率的に把握できるようになります。 / 特にVPN機器、認証・認可の不備、インジェクション、XSSなどの脆弱性が悪用される割合が高いことが示されています。 [実務示唆: IT連携マップの分類図を活用し、自社のシステムに関連する脆弱性や攻撃手法を効率的に把握し、優先度の高い対策から実施することを推奨します。] (Source: Qiita)</description>
+      <pubDate>Sun, 22 Nov 2026 22:01:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>PostgreSQL 19正式リリース。ノンブロッキングなREPACKやI/Oワーカーのオートスケールなど新機能</title>
+      <link>https://www.publickey1.jp/blog/26/postgresql_19repackio.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresql_19repackio.html</guid>
+      <description>[Score: 85] PostgreSQL 19が正式リリースされ、Autovacuumのパラレルワーカー利用による高速化が実現しました。 / ノンブロッキングなREPACK (CONCURRENTLY) コマンドが導入され、稼働中でもテーブル再編成が可能に。 / I/Oワーカーのオートスケール機能や外部キー検査のパフォーマンス改善も含まれています。 [実務示唆: PostgreSQL 19へのアップグレードを検討し、ノンブロッキングREPACKやI/Oワーカーのオートスケール機能を活用して、データベース運用効率とパフォーマンス向上を図るべきです。] [GitHub: postgres/postgres] (Source: Publickey)</description>
+      <pubDate>Mon, 23 Nov 2026 15:45:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>データシフトレフト：データをプロダクトチームに近づける</title>
+      <link>https://dev.to/ricardo_vano_25ad2fa57d1f/the-data-shift-left-bringing-data-closer-to-product-teams-41l9</link>
+      <guid isPermaLink="false">https://dev.to/ricardo_vano_25ad2fa57d1f/the-data-shift-left-bringing-data-closer-to-product-teams-41l9</guid>
+      <description>[Score: 85] 従来の組織では、プロダクト、エンジニアリング、データチームが分離され、データが重要な意思決定後にしか関与しない問題がありました。 / 「データシフトレフト」は、データ分析、計測、実験をプロダクト開発ライフサイクルの早期に組み込むアプローチです。 / これにより、プロダクトチームが自らデータの理解、測定、改善を行えるようになり、組織文化やエンジニアリングプラクティスの変革を促します。 [実務示唆: プロダクト開発において、データ分析と計測を早期に組み込む「データシフトレフト」を導入し、プロダクトチームがデータに基づいた意思決定を自律的に行えるよう組織体制を見直しましょう。] (Source: Dev.to)</description>
+      <pubDate>Tue, 24 Nov 2026 01:06:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>オープンソースにおける最高のものは共に築かれる</title>
+      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
+      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
+      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
     </item>
   </channel>
 </rss>
