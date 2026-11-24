@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 01:12:51 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 05:45:55 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -39,7 +39,7 @@
       <link>https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</guid>
       <description>[Score: 95] Ruby on Railsの作者DHH氏が開発するLinux OS「Omarchy 4.5」がリリースされました。 / 本バージョンでは、従来のタイル型に加え、一般的なフローティング型マルチウィンドウをサポート。 / Appleシリコン搭載Macへの対応や、Web版MS Office用ランチャー機能も追加されています。 [実務示唆: AppleシリコンMacユーザーは、Omarchy 4.5をデュアルブートで試すことで、AIエージェント統合型Linux環境を体験できる。] (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 23 Nov 2026 15:39:27 +0000</pubDate>
+      <pubDate>Mon, 23 Nov 2026 15:49:45 +0000</pubDate>
     </item>
     <item>
       <title>脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する</title>
@@ -75,6 +75,20 @@
       <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/1d6751643b84db67812e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 90] AIによるコード生成の進化でコードを書くコストは下がったが、ソフトウェア開発全体の生産性向上には課題があることが指摘されています。 / AIツールの利用はコミット数を大幅に増加させるものの、リリース数の増加は限定的であるという研究結果が紹介されています。 / AI時代のエンジニアは、問題理解、設計、品質改善、そして実際に使われる価値の提供に注力すべきだと論じています。 [実務示唆: AIによるコード生成を活用しつつも、エンジニアは問題定義、システム設計、品質保証、そしてユーザー価値の創出といった上流工程や非コーディング領域に注力し、自身の専門性を高めるべきです。] (Source: Qiita)</description>
       <pubDate>Sat, 21 Nov 2026 20:37:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Museに後れを取るアップルとグーグル AIエージェント戦争のジレンマ【西田宗千佳のイマトミライ】</title>
+      <link>https://www.watch.impress.co.jp/docs/series/nishida/2158551.html</link>
+      <guid isPermaLink="false">https://www.watch.impress.co.jp/docs/series/nishida/2158551.html</guid>
+      <description>[Score: 90] MetaのパーソナルAIエージェント「Muse」が急速にユーザー数を伸ばし、AppleやGoogleをリードしています。 / Appleは「Apple Intelligence」を、Googleは「Gemini Intelligence」を展開していますが、Museほどの勢いはありません。 / スマートフォンプラットフォーマーがAIエージェント市場でどのように立ち回るか、今後の動向が注目されます。 [実務示唆: パーソナルAIエージェントの進化は、スマートフォンの利用体験を大きく変えるため、各社のAI戦略や新機能の動向を注視し、自身の開発やサービスにどう組み込めるか検討しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 24 Nov 2026 00:16:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>AirLLM解説: 4GB GPUで2.8兆パラメータモデルを動かす方法とトークンあたりのコスト</title>
+      <link>https://dev.to/jamilxt/airllm-explained-how-a-4gb-gpu-runs-a-28t-model-and-what-each-token-costs-44ad</link>
+      <guid isPermaLink="false">https://dev.to/jamilxt/airllm-explained-how-a-4gb-gpu-runs-a-28t-model-and-what-each-token-costs-44ad</guid>
+      <description>[Score: 90] AirLLMは、従来の常識を覆し、4GBのGPUメモリで70Bや2.8兆パラメータのLLMを量子化なしで実行できる技術です。 / この技術の核となるのは、モデルの各レイヤーを必要な時にのみVRAMにロードし、処理が終わったらアンロードするという「レイヤーごとのロード」戦略です。 / これにより、GPUメモリの制約が厳しい環境でも大規模モデルの実行が可能になりますが、メモリと引き換えに速度が犠牲になるため、用途に応じた検討が必要です。 [実務示唆: GPUメモリが限られた環境で大規模言語モデルを動かしたい場合、AirLLMを試すことで、量子化なしでモデルを実行できる可能性を探り、その性能とコストを評価すべきです。] [GitHub: AirLLM/AirLLM] (Source: Dev.to)</description>
+      <pubDate>Tue, 24 Nov 2026 05:41:56 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
@@ -131,20 +145,6 @@
       <guid isPermaLink="false">https://dev.to/ricardo_vano_25ad2fa57d1f/the-data-shift-left-bringing-data-closer-to-product-teams-41l9</guid>
       <description>[Score: 85] 従来の組織では、プロダクト、エンジニアリング、データチームが分離され、データが重要な意思決定後にしか関与しない問題がありました。 / 「データシフトレフト」は、データ分析、計測、実験をプロダクト開発ライフサイクルの早期に組み込むアプローチです。 / これにより、プロダクトチームが自らデータの理解、測定、改善を行えるようになり、組織文化やエンジニアリングプラクティスの変革を促します。 [実務示唆: プロダクト開発において、データ分析と計測を早期に組み込む「データシフトレフト」を導入し、プロダクトチームがデータに基づいた意思決定を自律的に行えるよう組織体制を見直しましょう。] (Source: Dev.to)</description>
       <pubDate>Tue, 24 Nov 2026 01:06:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>オープンソースにおける最高のものは共に築かれる</title>
-      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
-      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
-      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
     </item>
   </channel>
 </rss>

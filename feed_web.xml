@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 01:12:51 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 05:45:55 +0000</lastBuildDate>
     <item>
       <title>AWS Emulator を使用してローカルで AWS に対してアプリケーションをテストする | Amazon Web Services</title>
       <link>https://aws.amazon.com/jp/blogs/news/test-your-applications-against-aws-locally-with-aws-emulator/</link>
@@ -47,6 +47,13 @@
       <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-october-2026/</guid>
       <description>[Score: 75] GitHubは2026年10月の稼働状況レポートを公開し、可用性と信頼性向上の取り組みを報告しました。 / Azure Central USへの大幅な容量追加と障害エスカレーション経路の削減を進めました。 / しかし、書き込み停止、データ移行中の監視ギャップ、地域ネットワーク障害が発生し、容量増強と並行して安全な運用と分離、地域復旧の検証の必要性が強調されました。 [実務示唆: 大規模なサービスを運用するエンジニアは、GitHubの事例から、容量増強だけでなく、運用手順の安全性、システムの分離、災害復旧計画の定期的な検証の重要性を学び、自社システムに適用すべきです。] [GitHub: github/docs] (Source: GitHub Blog)</description>
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>iperf/iperf3の最新化とfireperfの導入</title>
+      <link>https://blog.daniel-baumann.ch/posts/20261122-1.html</link>
+      <guid isPermaLink="false">https://blog.daniel-baumann.ch/posts/20261122-1.html</guid>
+      <description>[Score: 75] Debianにおけるiperfおよびiperf3のパッケージングが現代化されました。 / iperf-clientとiperf-serverに分割され、systemdやufwとの統合が強化されています。 / fireperfもDebianにアップロードされ、ネットワーク帯域測定ツールの利用がより容易になります。 [実務示唆: Debian環境でiperfを利用している場合、新しいiperf-client/serverパッケージへの移行を検討し、systemd統合による運用効率向上を確認しましょう。] (Source: Hacker News)</description>
+      <pubDate>Sun, 22 Nov 2026 22:37:51 +0000</pubDate>
     </item>
     <item>
       <title>JSConf JP 2026に参加記録・初登壇の反省など</title>

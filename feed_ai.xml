@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 01:12:51 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 05:45:55 +0000</lastBuildDate>
     <item>
       <title>デバイス間で継続するセッションのためのAgent Host Protocolの構築</title>
       <link>https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</link>
@@ -26,6 +26,20 @@
       <guid isPermaLink="false">https://zenn.dev/cybergarage/articles/5ee7ac6b3b0565</guid>
       <description>[Score: 90] 著者はコーディングエージェント（Codex、Claude）の活用により、OSS開発のプロセスと喜びが大きく変化したと報告しています。 / エージェントに実装を任せることで、著者は「次に何をすべきか決定し、テストを用意し、結果を確認する」ことに時間を費やすようになり、複数のプロジェクトを並行して進められるようになりました。 / 特にMatter開発の再開とESP32への移植において、エージェントが調査・実装・テストサイクルを担い、開発が飛躍的に進んだ具体例が挙げられています。 [実務示唆: AIコーディングエージェントを導入する際は、単にコード生成だけでなく、エージェントが調査・検証できる環境（ログ、テストツール、実機など）を整備することで、開発効率を最大化できるか検証すべきです。] [GitHub: cybergarage/go-matter] (Source: Zenn)</description>
       <pubDate>Mon, 23 Nov 2026 17:37:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Museに後れを取るアップルとグーグル AIエージェント戦争のジレンマ【西田宗千佳のイマトミライ】</title>
+      <link>https://www.watch.impress.co.jp/docs/series/nishida/2158551.html</link>
+      <guid isPermaLink="false">https://www.watch.impress.co.jp/docs/series/nishida/2158551.html</guid>
+      <description>[Score: 90] MetaのパーソナルAIエージェント「Muse」が急速にユーザー数を伸ばし、AppleやGoogleをリードしています。 / Appleは「Apple Intelligence」を、Googleは「Gemini Intelligence」を展開していますが、Museほどの勢いはありません。 / スマートフォンプラットフォーマーがAIエージェント市場でどのように立ち回るか、今後の動向が注目されます。 [実務示唆: パーソナルAIエージェントの進化は、スマートフォンの利用体験を大きく変えるため、各社のAI戦略や新機能の動向を注視し、自身の開発やサービスにどう組み込めるか検討しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 24 Nov 2026 00:16:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>AirLLM解説: 4GB GPUで2.8兆パラメータモデルを動かす方法とトークンあたりのコスト</title>
+      <link>https://dev.to/jamilxt/airllm-explained-how-a-4gb-gpu-runs-a-28t-model-and-what-each-token-costs-44ad</link>
+      <guid isPermaLink="false">https://dev.to/jamilxt/airllm-explained-how-a-4gb-gpu-runs-a-28t-model-and-what-each-token-costs-44ad</guid>
+      <description>[Score: 90] AirLLMは、従来の常識を覆し、4GBのGPUメモリで70Bや2.8兆パラメータのLLMを量子化なしで実行できる技術です。 / この技術の核となるのは、モデルの各レイヤーを必要な時にのみVRAMにロードし、処理が終わったらアンロードするという「レイヤーごとのロード」戦略です。 / これにより、GPUメモリの制約が厳しい環境でも大規模モデルの実行が可能になりますが、メモリと引き換えに速度が犠牲になるため、用途に応じた検討が必要です。 [実務示唆: GPUメモリが限られた環境で大規模言語モデルを動かしたい場合、AirLLMを試すことで、量子化なしでモデルを実行できる可能性を探り、その性能とコストを評価すべきです。] [GitHub: AirLLM/AirLLM] (Source: Dev.to)</description>
+      <pubDate>Tue, 24 Nov 2026 05:41:56 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、AIが生成したアプリを企業内で安全に実行するランタイム「Copilot Managed Runtime」正式リリース</title>
@@ -84,32 +98,18 @@
       <pubDate>Tue, 24 Nov 2026 01:07:25 +0000</pubDate>
     </item>
     <item>
+      <title>月額1000円台のVPSで“自分専用AIテスト環境”を作れる！ さくらのVPS＋さくらのAI Engine＋OpenCodeでゲーム開発に挑戦【イニシャルB【特別編】】[Sponsored]</title>
+      <link>https://internet.watch.impress.co.jp/docs/topic/shimizu_sp/2126965.html</link>
+      <guid isPermaLink="false">https://internet.watch.impress.co.jp/docs/topic/shimizu_sp/2126965.html</guid>
+      <description>[Score: 75] さくらのVPSとさくらのAI Engine、OpenCodeを活用し、月額1000円台で自分専用のAIテスト環境を構築する方法が紹介されています。 / AIエージェント「OpenCode」を使って簡単なブラウザゲームを開発する手順がステップバイステップで解説されており、プログラミング未経験者でもAIを活用した開発に挑戦できることを示しています。 / AIエージェントの実行環境としてVPSを利用するメリット（プライベートデータへのアクセスリスク回避、手軽な環境構築）が強調されています。 [実務示唆: AIエージェントの検証環境として、さくらのVPSとさくらのAI Engineを組み合わせることで、低コストかつ安全に開発・テストが可能か試すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 24 Nov 2026 00:27:02 +0000</pubDate>
+    </item>
+    <item>
       <title>手書きをやめた途端、ブログが全部AI臭くなったあなたへ！ マシにする方法教えます</title>
       <link>https://qiita.com/minorun365/items/faa50b7662b86e1df29c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/minorun365/items/faa50b7662b86e1df29c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 70] AIによるブログ執筆が増える中、情報量過多でAI臭い記事を避けるための具体的な方法が紹介されています。 / Claude CodeやOpus 5.5などの高性能AIモデルと、独自のスキル設定（CLAUDE.md）を活用し、AI特有の表現を抑制します。 / 音声入力での指示とHTMLプレビューでの細かなレビューを繰り返すことで、人間らしい自然な文章に仕上げるプロセスが示されています。 [実務示唆: AIで記事を作成する際は、AIの特性を理解し、スキル設定や詳細な指示、複数回のレビューを通じて人間らしい表現に調整するプロセスを取り入れましょう。] [GitHub: minorun365/html-share-kun] (Source: Qiita)</description>
       <pubDate>Sun, 22 Nov 2026 11:56:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIチームの規模と構成が人間とAIのブレインストーミングチームにおける生産性と多様性をどのように形成するか</title>
-      <link>https://arxiv.org/abs/2611.26663</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.26663</guid>
-      <description>[Score: 70] 本記事は、AIチームの規模と構成が人間とAIのブレインストーミングに与える影響を分析しています。 / 生産性と多様性の両面から、最適なチーム編成について考察を深めています。 / AIと人間の協調作業における効果的なチーム設計のヒントを提供します。 [実務示唆: AIを活用したブレインストーミングや共同作業を行う際は、AIエージェントの数や役割分担を考慮し、多様な視点を取り入れるチーム構成を検討すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>【技術書典21】17人の開発者と作った合同誌『AI キャラクター開発 十人十色』、会場50部が完売しました！！！</title>
-      <link>https://zenn.dev/mei999/articles/33f2965b3c021c</link>
-      <guid isPermaLink="false">https://zenn.dev/mei999/articles/33f2965b3c021c</guid>
-      <description>[Score: 70] 技術書典21で、AIキャラクター開発者17人による合同誌『AI キャラクター開発 十人十色』が完売しました。 / 約8年半ぶりの技術書典参加で、決済システムの進化やAI時代における技術交流の重要性を実感したと筆者は述べています。 / この同人誌はAI学習を前提に作られており、AIに読み込ませて開発に活用することも推奨されています。 [実務示唆: AIキャラクター開発に興味があるエンジニアは、AI学習を前提とした同人誌を参考に、AIを活用した開発手法を試すことを推奨します。] (Source: Zenn)</description>
-      <pubDate>Mon, 23 Nov 2026 12:52:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>かつて数学を学んでいたエンジニアがAIと数学について思うこと</title>
-      <link>https://zenn.dev/339/articles/8efd1f1baec355</link>
-      <guid isPermaLink="false">https://zenn.dev/339/articles/8efd1f1baec355</guid>
-      <description>[Score: 70] フィールズ賞受賞者らがAIの濫用への懸念を表明しており、筆者もこれを支持しています。 / 数学理論は天才がゼロから生み出すものではなく、問題を解き洞察を重ねて何世代も積み重ねてきたものです。 / AIは計算能力を高めるが、人間が理解検証できる理論を自発的に作り出すことは現時点では難しいと筆者は考えています。 [実務示唆: AIが生成する数学的解法や理論を盲信せず、人間が理解・検証できる形で理論構築や問題解決に取り組む姿勢を維持することが重要です。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 16 Sep 2026 02:22:40 +0000</pubDate>
     </item>
   </channel>
 </rss>

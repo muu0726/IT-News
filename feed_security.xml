@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 01:12:51 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 05:45:55 +0000</lastBuildDate>
     <item>
       <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
       <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
@@ -33,6 +33,20 @@
       <guid isPermaLink="false">https://qiita.com/songchong/items/4ad36f1857ba2b4ee4f1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 85] IT連携マップが2026年版のセキュリティ情報406件を「事前対策→脆弱性→攻撃の手口→被害→事後対策」の5層に分類した図を公開しました。 / この分類図により、膨大なセキュリティ情報から「自分は何をすべきか」を効率的に把握できるようになります。 / 特にVPN機器、認証・認可の不備、インジェクション、XSSなどの脆弱性が悪用される割合が高いことが示されています。 [実務示唆: IT連携マップの分類図を活用し、自社のシステムに関連する脆弱性や攻撃手法を効率的に把握し、優先度の高い対策から実施することを推奨します。] (Source: Qiita)</description>
       <pubDate>Sun, 22 Nov 2026 22:01:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>開発者のためのサイバーセキュリティガバナンス：ツールだけでは救われない理由</title>
+      <link>https://dev.to/zianetworksinsight/cybersecurity-governance-for-developers-why-tools-alone-wont-save-you-5dae</link>
+      <guid isPermaLink="false">https://dev.to/zianetworksinsight/cybersecurity-governance-for-developers-why-tools-alone-wont-save-you-5dae</guid>
+      <description>[Score: 85] サイバーセキュリティガバナンスは、ツールだけでなく、リーダーシップ、ポリシー、責任のフレームワークが不可欠であると強調しています。 / ツールはドアの鍵に過ぎず、どのドアに鍵が必要か、誰が鍵を持つか、侵入された場合にどうするかを決めるのがガバナンスの役割です。 / CODEOWNERS、SECURITY.md、CI/CDパイプラインでの自動化を通じて、ガバナンスをコードベースに組み込む具体的な方法が示されています。 [実務示唆: 開発チームは、セキュリティツールを導入するだけでなく、CODEOWNERSやSECURITY.mdの活用、CI/CDでの自動化を通じて、セキュリティガバナンスを開発プロセスに統合し、組織全体のセキュリティ体制を強化すべきです。] (Source: Dev.to)</description>
+      <pubDate>Tue, 24 Nov 2026 05:41:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>ネストされた仮想化を安全に無効化してCVE-2026-99312を閉じる方法</title>
+      <link>https://dev.to/bianliang/how-to-close-cve-2026-99312-by-disabling-nested-virtualization-safely-18pj</link>
+      <guid isPermaLink="false">https://dev.to/bianliang/how-to-close-cve-2026-99312-by-disabling-nested-virtualization-safely-18pj</guid>
+      <description>[Score: 80] CVE-2026-99312の恒久的な修正はハイパーバイザーのパッチですが、即時再起動できない場合はネストされた仮想化の無効化が緩和策として有効です。 / この脆弱性はAMD KVMホストでL2仮想マシンが実行され、ページングが無効な状態でネストされたページテーブルポインタが誤って処理される場合に発生します。 / 緩和策として、AMDプロセッサとKVMを使用していることを確認し、/sys/module/kvm_amd/parameters/nestedの値を変更してネストされた仮想化を無効にする手順が示されています。 [実務示唆: AMD KVMホストを使用している場合、CVE-2026-99312の緩和策として、本番環境でネストされた仮想化が有効になっていないか確認し、必要に応じて安全に無効化する手順を検証すべきです。] (Source: Dev.to)</description>
+      <pubDate>Tue, 24 Nov 2026 05:43:15 +0000</pubDate>
     </item>
     <item>
       <title>構成による一貫性：CTIナレッジグラフの合成と一貫性検証の形式的限界</title>

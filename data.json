@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-24T10:10:41.946804+09:00",
-  "total_count": 42,
-  "success_count": 42,
+  "generated_at": "2026-11-24T14:45:24.393448+09:00",
+  "total_count": 54,
+  "success_count": 54,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -72,7 +72,7 @@
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "AWS Emulator を使用してローカルで AWS に対してアプリケーションをテストする | Amazon Web Services",
@@ -94,13 +94,13 @@
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": false,
-      "hatena_count": 61
+      "hatena_count": 96
     },
     {
       "title": "DHH氏が開発する「Omarchy 4.5」リリース。一般的なマルチウィンドウをサポート。最速7秒で導入、Appleシリコン対応、Webアプリ版MS Office用ランチャーなど新機能",
       "url": "https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html",
       "source": "はてなブックマーク",
-      "published": "2026-11-23T15:39:27+00:00",
+      "published": "2026-11-23T15:49:45+00:00",
       "reading_min": 4,
       "summary": "Ruby on Railsの作者DHH氏が開発するLinux OS「Omarchy 4.5」がリリースされました。\n本バージョンでは、従来のタイル型に加え、一般的なフローティング型マルチウィンドウをサポート。\nAppleシリコン搭載Macへの対応や、Web版MS Office用ランチャー機能も追加されています。",
       "actionable_takeaway": "AppleシリコンMacユーザーは、Omarchy 4.5をデュアルブートで試すことで、AIエージェント統合型Linux環境を体験できる。",
@@ -116,7 +116,7 @@
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": true,
-      "hatena_count": 28
+      "hatena_count": 86
     },
     {
       "title": "脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する",
@@ -233,6 +233,52 @@
       "hatena_count": 0
     },
     {
+      "title": "Museに後れを取るアップルとグーグル AIエージェント戦争のジレンマ【西田宗千佳のイマトミライ】",
+      "url": "https://www.watch.impress.co.jp/docs/series/nishida/2158551.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-24T00:16:14+00:00",
+      "reading_min": 11,
+      "summary": "MetaのパーソナルAIエージェント「Muse」が急速にユーザー数を伸ばし、AppleやGoogleをリードしています。\nAppleは「Apple Intelligence」を、Googleは「Gemini Intelligence」を展開していますが、Museほどの勢いはありません。\nスマートフォンプラットフォーマーがAIエージェント市場でどのように立ち回るか、今後の動向が注目されます。",
+      "actionable_takeaway": "パーソナルAIエージェントの進化は、スマートフォンの利用体験を大きく変えるため、各社のAI戦略や新機能の動向を注視し、自身の開発やサービスにどう組み込めるか検討しましょう。",
+      "tags": [
+        "AIエージェント",
+        "Meta Muse",
+        "Apple Intelligence"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "パーソナルAIエージェント市場における主要企業の競争状況を詳細に分析しており、今後のAI技術の方向性やビジネス戦略に大きな影響を与えるため、非常に重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
+      "is_hot": false,
+      "hatena_count": 79
+    },
+    {
+      "title": "AirLLM解説: 4GB GPUで2.8兆パラメータモデルを動かす方法とトークンあたりのコスト",
+      "url": "https://dev.to/jamilxt/airllm-explained-how-a-4gb-gpu-runs-a-28t-model-and-what-each-token-costs-44ad",
+      "source": "Dev.to",
+      "published": "2026-11-24T05:41:56+00:00",
+      "reading_min": 5,
+      "summary": "AirLLMは、従来の常識を覆し、4GBのGPUメモリで70Bや2.8兆パラメータのLLMを量子化なしで実行できる技術です。\nこの技術の核となるのは、モデルの各レイヤーを必要な時にのみVRAMにロードし、処理が終わったらアンロードするという「レイヤーごとのロード」戦略です。\nこれにより、GPUメモリの制約が厳しい環境でも大規模モデルの実行が可能になりますが、メモリと引き換えに速度が犠牲になるため、用途に応じた検討が必要です。",
+      "actionable_takeaway": "GPUメモリが限られた環境で大規模言語モデルを動かしたい場合、AirLLMを試すことで、量子化なしでモデルを実行できる可能性を探り、その性能とコストを評価すべきです。",
+      "github_repo": "AirLLM/AirLLM",
+      "tags": [
+        "LLM",
+        "GPU",
+        "メモリ最適化",
+        "AIモデル"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "GPUメモリの制約を打破し、低スペック環境での大規模LLM実行を可能にする画期的な技術であり、AI開発の民主化に貢献する可能性が高いため非常に高いスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も",
       "url": "https://www.publickey1.jp/blog/26/database_hubai.html",
       "source": "Publickey",
@@ -306,8 +352,8 @@
       "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
       "source": "Hacker News",
       "published": "2026-11-23T22:32:29+00:00",
-      "hn_score": 173,
-      "hn_comments": 95,
+      "hn_score": 335,
+      "hn_comments": 164,
       "reading_min": 8,
       "summary": "Stalwart 1.2.0がリリースされ、Microsoft Exchangeのドロップイン代替として機能するようになりました。\nMAPI over HTTP、EWS、Exchange ActiveSyncなどのプロトコルを実装し、Outlookなどの既存クライアントがそのまま利用可能です。\nMicrosoftがExchange Onlineへの移行を推進する中、オンプレミス環境を維持したい組織にとって魅力的な選択肢となります。",
       "actionable_takeaway": "オンプレミスExchangeの代替を検討している組織は、Stalwartの導入を評価し、既存のメールシステムとの互換性や移行手順を確認すること。",
@@ -393,7 +439,7 @@
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": false,
-      "hatena_count": 10
+      "hatena_count": 20
     },
     {
       "title": "データシフトレフト：データをプロダクトチームに近づける",
@@ -414,6 +460,29 @@
       "analysis_status": "ok",
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "開発者のためのサイバーセキュリティガバナンス：ツールだけでは救われない理由",
+      "url": "https://dev.to/zianetworksinsight/cybersecurity-governance-for-developers-why-tools-alone-wont-save-you-5dae",
+      "source": "Dev.to",
+      "published": "2026-11-24T05:41:37+00:00",
+      "reading_min": 1,
+      "summary": "サイバーセキュリティガバナンスは、ツールだけでなく、リーダーシップ、ポリシー、責任のフレームワークが不可欠であると強調しています。\nツールはドアの鍵に過ぎず、どのドアに鍵が必要か、誰が鍵を持つか、侵入された場合にどうするかを決めるのがガバナンスの役割です。\nCODEOWNERS、SECURITY.md、CI/CDパイプラインでの自動化を通じて、ガバナンスをコードベースに組み込む具体的な方法が示されています。",
+      "actionable_takeaway": "開発チームは、セキュリティツールを導入するだけでなく、CODEOWNERSやSECURITY.mdの活用、CI/CDでの自動化を通じて、セキュリティガバナンスを開発プロセスに統合し、組織全体のセキュリティ体制を強化すべきです。",
+      "tags": [
+        "セキュリティガバナンス",
+        "DevSecOps",
+        "CODEOWNERS",
+        "CI/CD"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "セキュリティ対策がツール導入に偏りがちな現状に対し、ガバナンスの重要性を説き、具体的な実践方法まで提示しているため、開発組織にとって非常に価値のある情報と評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -509,7 +578,7 @@
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 2
     },
     {
       "title": "S3 Vectors は RAG のベクトルストアに使えるか（40問で検証＋ハイブリッド検索に関する追記）",
@@ -553,15 +622,60 @@
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": false,
-      "hatena_count": 36
+      "hatena_count": 98
+    },
+    {
+      "title": "NTT研究所の正体 - IOWNとNTTの研究所",
+      "url": "https://endecl.hatenablog.com/entry/2026/05/04/223141",
+      "source": "はてなブックマーク",
+      "published": "2026-11-23T13:46:51+00:00",
+      "reading_min": 7,
+      "summary": "NTTの株価低迷と、IOWNプロジェクトの現状について分析しています。\nIOWNの中核技術である光電融合技術の迷走と、その競争力の欠如が指摘されています。\nNTT研究所の組織体制や研究開発の方向性に対する疑問が呈されています。",
+      "actionable_takeaway": "IOWNのような大規模プロジェクトの技術選定や戦略について、公開情報だけでなく、技術的背景や市場競争力を多角的に評価する視点を持つことが重要です。",
+      "tags": [
+        "NTT",
+        "IOWN",
+        "光電融合"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 80,
+      "score_reason": "NTTという大手企業の主要プロジェクトに関する詳細な分析であり、技術の方向性やビジネス戦略の課題を浮き彫りにしているため、業界への影響度が大きいです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
+      "is_hot": false,
+      "hatena_count": 51
+    },
+    {
+      "title": "ネストされた仮想化を安全に無効化してCVE-2026-99312を閉じる方法",
+      "url": "https://dev.to/bianliang/how-to-close-cve-2026-99312-by-disabling-nested-virtualization-safely-18pj",
+      "source": "Dev.to",
+      "published": "2026-11-24T05:43:15+00:00",
+      "reading_min": 3,
+      "summary": "CVE-2026-99312の恒久的な修正はハイパーバイザーのパッチですが、即時再起動できない場合はネストされた仮想化の無効化が緩和策として有効です。\nこの脆弱性はAMD KVMホストでL2仮想マシンが実行され、ページングが無効な状態でネストされたページテーブルポインタが誤って処理される場合に発生します。\n緩和策として、AMDプロセッサとKVMを使用していることを確認し、/sys/module/kvm_amd/parameters/nestedの値を変更してネストされた仮想化を無効にする手順が示されています。",
+      "actionable_takeaway": "AMD KVMホストを使用している場合、CVE-2026-99312の緩和策として、本番環境でネストされた仮想化が有効になっていないか確認し、必要に応じて安全に無効化する手順を検証すべきです。",
+      "tags": [
+        "CVE",
+        "KVM",
+        "仮想化",
+        "セキュリティ"
+      ],
+      "category": "セキュリティ",
+      "score": 80,
+      "score_reason": "特定の脆弱性に対する具体的な緩和策が提示されており、システム管理者にとって直接的な行動を促す重要な情報であるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "Ladybirdがアルファ版に突入",
       "url": "https://ladybird.org/posts/alpha/",
       "source": "Hacker News",
       "published": "2026-11-23T16:13:12+00:00",
-      "hn_score": 1391,
-      "hn_comments": 328,
+      "hn_score": 1640,
+      "hn_comments": 382,
       "reading_min": 1,
       "summary": "Ladybirdブラウザがアルファ版としてリリースされ、macOSとLinuxでダウンロード可能になりました。\n独自の新しいエンジンをゼロから構築しており、WebDriverやFirefox DevToolsプロトコルをサポートしています。\nまだ開発途上であり、セキュリティの保証はないものの、自動更新を通じて迅速な改善が期待されます。",
       "actionable_takeaway": "Web開発者は、Ladybirdブラウザで自身のウェブサイトをテストし、互換性の問題やバグを報告することで、新しいブラウザエンジンの発展に貢献すること。",
@@ -578,7 +692,7 @@
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": false,
-      "hatena_count": 6
+      "hatena_count": 18
     },
     {
       "title": "面接でプロンプトエンジニアリングにどうアプローチするか",
@@ -654,8 +768,8 @@
       "url": "https://github.com/zed-industries/gpui",
       "source": "Hacker News",
       "published": "2026-11-23T20:52:54+00:00",
-      "hn_score": 112,
-      "hn_comments": 29,
+      "hn_score": 202,
+      "hn_comments": 71,
       "reading_min": 1,
       "summary": "Rust製のGPUアクセラレーション対応UIフレームワークであるGPUIが、独自のGitHubリポジトリを持つことになりました。\n即時モードと保持モードを組み合わせたクロスプラットフォームのデスクトップUIフレームワークです。\nこれにより、Rustでの高性能なGUIアプリケーション開発がさらに促進される可能性があります。",
       "actionable_takeaway": "Rustで高性能なデスクトップアプリケーション開発を検討しているエンジニアは、GPUIの動向を注視し、そのパフォーマンスと開発体験を評価すること。",
@@ -673,6 +787,52 @@
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "iperf/iperf3の最新化とfireperfの導入",
+      "url": "https://blog.daniel-baumann.ch/posts/20261122-1.html",
+      "source": "Hacker News",
+      "published": "2026-11-22T22:37:51+00:00",
+      "hn_score": 42,
+      "hn_comments": 1,
+      "reading_min": 3,
+      "summary": "Debianにおけるiperfおよびiperf3のパッケージングが現代化されました。\niperf-clientとiperf-serverに分割され、systemdやufwとの統合が強化されています。\nfireperfもDebianにアップロードされ、ネットワーク帯域測定ツールの利用がより容易になります。",
+      "actionable_takeaway": "Debian環境でiperfを利用している場合、新しいiperf-client/serverパッケージへの移行を検討し、systemd統合による運用効率向上を確認しましょう。",
+      "tags": [
+        "iperf",
+        "Debian",
+        "ネットワーク測定"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 75,
+      "score_reason": "ネットワーク帯域測定ツールのパッケージング改善は、システム管理者や開発者にとって実用性が高く、運用効率向上に寄与するため重要です。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "月額1000円台のVPSで“自分専用AIテスト環境”を作れる！ さくらのVPS＋さくらのAI Engine＋OpenCodeでゲーム開発に挑戦【イニシャルB【特別編】】[Sponsored]",
+      "url": "https://internet.watch.impress.co.jp/docs/topic/shimizu_sp/2126965.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-24T00:27:02+00:00",
+      "reading_min": 10,
+      "summary": "さくらのVPSとさくらのAI Engine、OpenCodeを活用し、月額1000円台で自分専用のAIテスト環境を構築する方法が紹介されています。\nAIエージェント「OpenCode」を使って簡単なブラウザゲームを開発する手順がステップバイステップで解説されており、プログラミング未経験者でもAIを活用した開発に挑戦できることを示しています。\nAIエージェントの実行環境としてVPSを利用するメリット（プライベートデータへのアクセスリスク回避、手軽な環境構築）が強調されています。",
+      "actionable_takeaway": "AIエージェントの検証環境として、さくらのVPSとさくらのAI Engineを組み合わせることで、低コストかつ安全に開発・テストが可能か試すべきです。",
+      "tags": [
+        "AIエージェント",
+        "VPS",
+        "さくらのAI Engine"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AIエージェントの活用が広がる中で、手軽かつ安全に検証環境を構築できる具体的な方法が示されており、実用性が高いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
+      "is_hot": false,
+      "hatena_count": 63
     },
     {
       "title": "手書きをやめた途端、ブログが全部AI臭くなったあなたへ！ マシにする方法教えます",
@@ -726,8 +886,8 @@
       "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
       "source": "Hacker News",
       "published": "2026-11-23T14:00:18+00:00",
-      "hn_score": 2050,
-      "hn_comments": 3118,
+      "hn_score": 2369,
+      "hn_comments": 3342,
       "reading_min": 38,
       "summary": "NvidiaのCEOとしてジェンスン・フアン氏が再任されたというニュースです。\n記事本文はCSSの抜粋であり、具体的な再任の背景や詳細については触れられていません。\nしかし、Nvidiaの経営体制に関する重要な発表であると推測されます。",
       "actionable_takeaway": "Nvidiaの経営戦略や製品ロードマップに大きな変更がないか、今後の公式発表に注目し、関連技術の動向を注視すること。",
@@ -811,7 +971,7 @@
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": false,
-      "hatena_count": 27
+      "hatena_count": 59
     },
     {
       "title": "Tulipのノーコードプラットフォームは中小製造業者にとって価値があるか？",
@@ -832,6 +992,52 @@
       "analysis_status": "ok",
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "カップヌードルミュージアムの報告をXにアップしたら12時間ロック、「合意のない裸の描写を禁止するルールに違反しています」とのこと…「ヌード」ルがダメらしい",
+      "url": "https://togetter.com/li/2774298",
+      "source": "はてなブックマーク",
+      "published": "2026-11-24T02:51:04+00:00",
+      "reading_min": 2,
+      "summary": "X（旧Twitter）で「カップヌードルミュージアム」に行った報告を投稿したところ、アカウントが12時間ロックされました。\nロックの理由は「合意のない裸の描写を禁止するルールに違反」したためとされ、「ヌード」ルという単語がAIに誤検知された可能性が指摘されています。\nAIによるコンテンツモデレーションの課題と、その運用における問題点が浮き彫りになっています。",
+      "actionable_takeaway": "AIによるコンテンツモデレーションの誤検知リスクを認識し、特に固有名詞や文脈に依存する表現を使用する際は、プラットフォームのルールとAIの限界を考慮した表現を心がけましょう。",
+      "tags": [
+        "AI",
+        "コンテンツモデレーション",
+        "X"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIによるコンテンツモデレーションの誤検知という、AI技術の実運用における具体的な課題を示しており、AI開発者やプラットフォーム運営者にとって重要な示唆を与えるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
+      "is_hot": false,
+      "hatena_count": 51
+    },
+    {
+      "title": "OpenAI Python SDKのストリームがbase_url切り替え時にハングする問題",
+      "url": "https://dev.to/paipizze/openai-python-sdk-stream-hangs-on-baseurl-switch-333j",
+      "source": "Dev.to",
+      "published": "2026-11-24T05:42:24+00:00",
+      "reading_min": 8,
+      "summary": "OpenAI Python SDKでbase_urlを切り替えた際に、ブロッキング呼び出しは成功するものの、ストリーミング呼び出しがハングしたり、途中で途切れたり、IndexErrorで終了する問題について診断しています。\nこの問題は、base_urlの変更がホスト名だけでなく、TLSターミネーター、HTTPサーバー、プロキシなど、異なるバッファリング設定やタイムアウトを持つ異なるスタックに影響を与えるため発生します。\n診断の順序として、実際にアクセスしているホストの確認、トランスポートがバッファリングしていないことの証明、SDKレベルのリトライと独自のリトライの分離などが提案されています。",
+      "actionable_takeaway": "OpenAI Python SDKでbase_urlを変更してストリーミングAPIを利用する際は、ネットワーク経路上のプロキシやゲートウェイのバッファリング設定、アイドルタイムアウトを確認し、SDKのチューニングだけでなくインフラ側の設定も考慮すべきです。",
+      "github_repo": "openai/openai-python",
+      "tags": [
+        "OpenAI SDK",
+        "Python",
+        "APIストリーミング",
+        "トラブルシューティング"
+      ],
+      "category": "プログラミング言語",
+      "score": 70,
+      "score_reason": "OpenAI APIの利用が広がる中で、特定の条件下で発生する具体的な問題とその診断・解決策が提示されており、開発者にとって非常に役立つ情報であるため評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -924,12 +1130,58 @@
       "hatena_count": 0
     },
     {
+      "title": "「賢すぎない」テレビをちょうど良いスマートさに",
+      "url": "https://qsantos.fr/2026/11/19/making-a-dumb-tv-just-smart-enough/",
+      "source": "Hacker News",
+      "published": "2026-11-24T02:46:54+00:00",
+      "hn_score": 30,
+      "hn_comments": 13,
+      "reading_min": 3,
+      "summary": "筆者は古いテレビを、IRトランスミッターとESP32-C3 Miniを使ってスマート化しました。\nこれにより、テレビのリモコン一つでPCの操作や動画再生を自動化できるようになりました。\nAIアシスタントの助けを借りてIRコードを特定し、効率的なシステムを構築しています。",
+      "actionable_takeaway": "ESP32などのマイコンとIR通信を活用し、既存の家電をスマート化することで、日々のルーティン作業を自動化し、生活の質を向上させるDIYプロジェクトを試してみましょう。",
+      "tags": [
+        "ESP32",
+        "IoT",
+        "ホームオートメーション"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 65,
+      "score_reason": "既存のハードウェアをDIYでスマート化するアイデアは、技術的な応用可能性と実用性があり、多くのエンジニアにとって参考になるためです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ホームページを変更するには一行のリクエストだけでは不十分",
+      "url": "https://dev.to/sam_novak_574b07811e18495/a-one-line-request-is-not-enough-to-change-a-homepage-3c1m",
+      "source": "Dev.to",
+      "published": "2026-11-24T05:43:27+00:00",
+      "reading_min": 3,
+      "summary": "ホームページの変更依頼は、単なる「ワークフローを明確にする」といった一行のリクエストでは不十分であると指摘しています。\n開発者やAIエージェントが安全に実装するためには、「初回訪問者」や「理解する」といった曖昧な言葉の具体的な定義が必要です。\nWaggletのガイドを参考に、スコープ、情報源、担当者、受け入れ基準を明確にすることで、あいまいなアイデアを実行可能なタスクに変換する方法を提案しています。",
+      "actionable_takeaway": "開発タスクを依頼する際は、ターゲット読者、期待される行動、具体的な成果物を明確に定義し、決定事項を文書化することで手戻りを減らすべきです。",
+      "tags": [
+        "要件定義",
+        "プロジェクト管理",
+        "コミュニケーション"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 65,
+      "score_reason": "開発プロジェクトにおける要件定義の重要性を再認識させる内容であり、特にAIエージェントとの協業が増える中で、明確な指示の必要性を説いている点が評価できます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "Bored.com: 退屈な時に探索する楽しくて面白いクールなウェブサイト",
       "url": "https://www.bored.com/",
       "source": "Hacker News",
       "published": "2026-11-23T21:01:16+00:00",
-      "hn_score": 93,
-      "hn_comments": 22,
+      "hn_score": 184,
+      "hn_comments": 42,
       "reading_min": 11,
       "summary": "Bored.comは、退屈な時に楽しめる様々なウェブサイトやアクティビティをまとめたサイトです。\n「無駄だが中毒性がある」「5分間のブラウザゲーム」「生成AIツール」など、多岐にわたるコンテンツが紹介されています。\nインターネットの多様な楽しみ方を再発見できるような、エンターテイメント性の高いプラットフォームです。",
       "actionable_takeaway": "気分転換やアイデア出しに行き詰まった際にBored.comを訪れ、新しいウェブ体験やインスピレーションを得ることで、創造性を刺激すること。",
@@ -967,23 +1219,46 @@
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": false,
-      "hatena_count": 66
+      "hatena_count": 255
+    },
+    {
+      "title": "廃品置き場のドローンマップ",
+      "url": "https://salvageyarddrone.wordpress.com/",
+      "source": "Hacker News",
+      "published": "2026-11-24T04:00:28+00:00",
+      "hn_score": 28,
+      "hn_comments": 11,
+      "summary": "この記事は、廃品置き場のドローンマップに関するものです。\n具体的な内容については本文抜粋が短いため詳細不明です。\nドローン技術の応用事例として興味深いテーマです。",
+      "actionable_takeaway": "ドローンによるマッピング技術は、物流、建設、災害対応など様々な分野に応用可能であるため、自社の業務効率化に活用できないか検討してみましょう。",
+      "tags": [
+        "ドローン",
+        "マッピング",
+        "地理空間情報"
+      ],
+      "category": "その他",
+      "score": 40,
+      "score_reason": "記事内容が非常に短く、具体的な技術的詳細や新規性が不明なため、スコアは低めです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-24T14:45:24.393448+09:00",
+      "first_seen": "2026-11-24T14:45:24.393448+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-24T10:10:41.946804+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-24T14:45:24.393448+09:00",
     "summary_lines": [
-      "iOS開発者はOAuth 2.0 + PKCEの仕組みとSwiftでの実装を習得できます。",
-      "AWSエミュレータやPostgreSQL 19など、開発・テスト環境の進化が目立ちます。",
-      "AIエージェントがOSS開発を変革し、ソフトウェアエンジニアの価値が再定義されています。"
+      "モバイル開発者向けにOAuth 2.0 + PKCEのSwift実装が解説され、セキュリティ強化の重要性が示されました。",
+      "AWSエミュレータの活用により、ローカル環境でのアプリケーションテストが効率化され、開発サイクルが加速します。",
+      "AIエージェントがOSS開発プロセスを変革し、ソフトウェアエンジニアリングの価値が再定義されつつあります。"
     ],
     "focus_tags": [
-      "iOS",
+      "OAuth 2.0",
       "AWS",
       "AIエージェント",
-      "PostgreSQL",
-      "ソフトウェアエンジニアリング"
+      "ソフトウェアエンジニアリング",
+      "モバイル開発"
     ]
   }
 }
