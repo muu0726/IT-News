@@ -5,13 +5,13 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 05:45:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 23:16:07 +0000</lastBuildDate>
     <item>
-      <title>AWS Emulator を使用してローカルで AWS に対してアプリケーションをテストする | Amazon Web Services</title>
-      <link>https://aws.amazon.com/jp/blogs/news/test-your-applications-against-aws-locally-with-aws-emulator/</link>
-      <guid isPermaLink="false">https://aws.amazon.com/jp/blogs/news/test-your-applications-against-aws-locally-with-aws-emulator/</guid>
-      <description>[Score: 95] AWSが、アプリケーションをローカル環境でAWSサービスに対してテストできる「AWS Emulator」を発表しました。 / これにより、開発者はクラウド環境にデプロイすることなく、ローカルでAWSサービスとの連携を検証できます。 / 開発サイクルを高速化し、コストを削減しながら、より効率的なテストが可能になります。 [実務示唆: AWS環境で開発を行うエンジニアは、AWS Emulatorを導入し、ローカルでのテストを積極的に行うことで、開発効率とコスト効率の向上を図るべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 02:20:46 +0000</pubDate>
+      <title>AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達</title>
+      <link>https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</guid>
+      <description>[Score: 90] AWSが、NoSQLデータベース「Amazon DynamoDB」と互換性のあるオープンソース「ExtendDB」のバージョン1.0リリースを発表しました。 / ExtendDBはWindows、Linux、macOSなどのローカル環境でDynamoDB互換データベースを構築でき、PostgreSQLなどをプラグインとして利用します。 / これにより、DynamoDBアプリケーションのローカル開発・テストや、クラウドとオンプレミスでの同一アプリケーション運用、既存スキル活用が可能になります。 [実務示唆: DynamoDBを利用している開発者は、ExtendDBを導入してローカル開発環境を構築し、開発効率とテストの再現性を向上させるべきです。] [GitHub: awslabs/extenddb] (Source: Publickey)</description>
+      <pubDate>Tue, 24 Nov 2026 15:19:30 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
@@ -21,25 +21,11 @@
       <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
     </item>
     <item>
-      <title>StalwartがMicrosoft Exchangeのドロップイン代替として利用可能に</title>
-      <link>https://stalw.art/blog/microsoft-exchange-replacement/</link>
-      <guid isPermaLink="false">https://stalw.art/blog/microsoft-exchange-replacement/</guid>
-      <description>[Score: 85] Stalwart 1.2.0がリリースされ、Microsoft Exchangeのドロップイン代替として機能するようになりました。 / MAPI over HTTP、EWS、Exchange ActiveSyncなどのプロトコルを実装し、Outlookなどの既存クライアントがそのまま利用可能です。 / MicrosoftがExchange Onlineへの移行を推進する中、オンプレミス環境を維持したい組織にとって魅力的な選択肢となります。 [実務示唆: オンプレミスExchangeの代替を検討している組織は、Stalwartの導入を評価し、既存のメールシステムとの互換性や移行手順を確認すること。] [GitHub: stalwartlabs/stalwart-mail-server] (Source: Hacker News)</description>
-      <pubDate>Mon, 23 Nov 2026 22:32:29 +0000</pubDate>
-    </item>
-    <item>
       <title>PostgreSQL 19正式リリース。ノンブロッキングなREPACKやI/Oワーカーのオートスケールなど新機能</title>
       <link>https://www.publickey1.jp/blog/26/postgresql_19repackio.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresql_19repackio.html</guid>
       <description>[Score: 85] PostgreSQL 19が正式リリースされ、Autovacuumのパラレルワーカー利用による高速化が実現しました。 / ノンブロッキングなREPACK (CONCURRENTLY) コマンドが導入され、稼働中でもテーブル再編成が可能に。 / I/Oワーカーのオートスケール機能や外部キー検査のパフォーマンス改善も含まれています。 [実務示唆: PostgreSQL 19へのアップグレードを検討し、ノンブロッキングREPACKやI/Oワーカーのオートスケール機能を活用して、データベース運用効率とパフォーマンス向上を図るべきです。] [GitHub: postgres/postgres] (Source: Publickey)</description>
       <pubDate>Mon, 23 Nov 2026 15:45:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>Ladybirdがアルファ版に突入</title>
-      <link>https://ladybird.org/posts/alpha/</link>
-      <guid isPermaLink="false">https://ladybird.org/posts/alpha/</guid>
-      <description>[Score: 78] Ladybirdブラウザがアルファ版としてリリースされ、macOSとLinuxでダウンロード可能になりました。 / 独自の新しいエンジンをゼロから構築しており、WebDriverやFirefox DevToolsプロトコルをサポートしています。 / まだ開発途上であり、セキュリティの保証はないものの、自動更新を通じて迅速な改善が期待されます。 [実務示唆: Web開発者は、Ladybirdブラウザで自身のウェブサイトをテストし、互換性の問題やバグを報告することで、新しいブラウザエンジンの発展に貢献すること。] [GitHub: SerenityOS/serenity] (Source: Hacker News)</description>
-      <pubDate>Mon, 23 Nov 2026 16:13:12 +0000</pubDate>
     </item>
     <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
@@ -49,25 +35,25 @@
       <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
     </item>
     <item>
-      <title>iperf/iperf3の最新化とfireperfの導入</title>
-      <link>https://blog.daniel-baumann.ch/posts/20261122-1.html</link>
-      <guid isPermaLink="false">https://blog.daniel-baumann.ch/posts/20261122-1.html</guid>
-      <description>[Score: 75] Debianにおけるiperfおよびiperf3のパッケージングが現代化されました。 / iperf-clientとiperf-serverに分割され、systemdやufwとの統合が強化されています。 / fireperfもDebianにアップロードされ、ネットワーク帯域測定ツールの利用がより容易になります。 [実務示唆: Debian環境でiperfを利用している場合、新しいiperf-client/serverパッケージへの移行を検討し、systemd統合による運用効率向上を確認しましょう。] (Source: Hacker News)</description>
-      <pubDate>Sun, 22 Nov 2026 22:37:51 +0000</pubDate>
+      <title>jQuery 4.1正式版がリリース、内部実装をquerySelectorAllに統一でより高速に。jQuery 3.x系最後となるjQuery 3.8も同時リリース</title>
+      <link>https://www.publickey1.jp/blog/26/jquery_41queryselectoralljquery_3xjquery_38.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/jquery_41queryselectoralljquery_3xjquery_38.html</guid>
+      <description>[Score: 75] jQuery開発チームが、最新版「jQuery 4.1」と3.x系最後の「jQuery 3.8」を同時リリースしました。 / jQuery 4.1は内部実装をquerySelectorAllに統一し、高速化とIE10以前のサポート終了、IE11は次期バージョンで削除予定です。 / 新機能としてjqXHR.responseURLの追加やuniqueSort()の性能向上、3.8ではReDoS脆弱性修正やバグ修正が行われ、今後は4.x系に開発が一本化されます。 [実務示唆: jQuery 3.x系を利用中のプロジェクトは、セキュリティ修正のため3.8へのアップデートを検討し、モダンブラウザ対応を進める場合は4.1への移行計画を立てるべきです。] [GitHub: jquery/jquery] (Source: Publickey)</description>
+      <pubDate>Tue, 24 Nov 2026 15:15:39 +0000</pubDate>
     </item>
     <item>
-      <title>JSConf JP 2026に参加記録・初登壇の反省など</title>
-      <link>https://zenn.dev/igrep/articles/2026-11-jsconfjp</link>
-      <guid isPermaLink="false">https://zenn.dev/igrep/articles/2026-11-jsconfjp</guid>
-      <description>[Score: 65] JSConf JP 2026への参加と初登壇の記録で、Wasm Component Modelにおける所有権の概念をRustを使わずに説明した発表内容が紹介されています。 / 登壇では、発表時間の調整は成功したものの、スライドの視認性や質問への回答精度に課題があったと反省点が述べられています。 / 特に、スライド作成におけるAIコーディングエージェントの活用について、ツールの自作に時間をかけすぎたことや、AIに任せた部分の修正に追われた経験から、AIの適切な活用方法について考察が示されています。 [実務示唆: 技術カンファレンスで登壇する際は、スライドの視認性（特に文字サイズやレイアウト）を会場のプロジェクター環境に合わせて最適化し、AIツールは図の生成など特定のタスクに絞って活用することで効率を高めるべきです。] (Source: Zenn)</description>
-      <pubDate>Mon, 23 Nov 2026 15:08:26 +0000</pubDate>
+      <title>JSConf JP 2026 参加ログ</title>
+      <link>https://zenn.dev/aishift/articles/b6dbe1c0acc505</link>
+      <guid isPermaLink="false">https://zenn.dev/aishift/articles/b6dbe1c0acc505</guid>
+      <description>[Score: 70] JSConf JP 2026の参加ログとして、筆者が聞いたセッションのメモが時系列でまとめられています。 / Brendan Eich氏のインタビューやJosh Junon氏の講演を含む、多様なトラックのセッション内容が紹介されています。 / スライドが公開されているものは埋め込まれており、フロントエンド技術の最新動向を概観できます。 [実務示唆: フロントエンドエンジニアは、JSConf JP 2026で発表された最新のJavaScript技術やWeb開発トレンドを把握し、自身のプロジェクトへの導入可能性を検討すべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 24 Nov 2026 08:53:31 +0000</pubDate>
     </item>
     <item>
-      <title>オンライン寺院は香炉を画面に載せるだけではない：32の殿堂、108の数珠の設計思想</title>
-      <link>https://dev.to/datingguide/xian-shang-si-yuan-bu-shi-ba-xiang-lu-ban-shang-ying-mu-san-shi-er-zuo-dian-bai-ling-ba-ke-nian-zhu-de-she-ji-si-kao-183</link>
-      <guid isPermaLink="false">https://dev.to/datingguide/xian-shang-si-yuan-bu-shi-ba-xiang-lu-ban-shang-ying-mu-san-shi-er-zuo-dian-bai-ling-ba-ke-nian-zhu-de-she-ji-si-kao-183</guid>
-      <description>[Score: 65] オンライン寺院「寒露寺」の設計思想は、物理的な寺院の「リズム」をデジタルで再現することにあります。 / 移動自体を儀式とし、礼拝回数を3回に設定するなど、ユーザーを急がせない工夫が凝らされています。 / アカウント、チャット、タスクを排除し、静かで邪魔されない空間を提供することを目指しています。 [実務示唆: デジタルプロダクト設計において、ユーザーの行動をKPIで測るだけでなく、体験の「リズム」や「静けさ」といった非効率に見える要素が、深いエンゲージメントを生む可能性を考慮すべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 24 Nov 2026 01:08:03 +0000</pubDate>
+      <title>都市に必要なメッシュ無線ノード数を計算する</title>
+      <link>https://meshcoveragecalculator.lalala.ing/</link>
+      <guid isPermaLink="false">https://meshcoveragecalculator.lalala.ing/</guid>
+      <description>[Score: 60] このウェブサイトは、都市に必要なメッシュ無線ノード数を計算するツールを提供しています。 / アクセスにはProof of Work（計算タスク）をブラウザで解決する必要があります。 / これはボット対策であり、数秒で計算が完了しサイトにアクセスできます。 [実務示唆: メッシュネットワークの導入を検討しているエンジニアは、このツールで必要なノード数を試算し、計画の参考にすると良いでしょう。] (Source: Hacker News)</description>
+      <pubDate>Mon, 23 Nov 2026 09:46:57 +0000</pubDate>
     </item>
   </channel>
 </rss>

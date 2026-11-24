@@ -5,13 +5,13 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 05:45:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 23:16:07 +0000</lastBuildDate>
     <item>
-      <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
-      <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</guid>
-      <description>[Score: 95] マイクロソフトは「Microsoft Ignite 2026」で、AIによるサイバー攻撃に対抗するための新サービス「Microsoft Perception」の提供開始を発表しました。 / このサービスは、レッドチーム、ブルーチーム、グリーンチームのAIエージェントが連携し、攻撃シミュレーション、脅威検出、修復を機械速度で実行します。 / AIによる攻撃の自動化が進む中、人間では対応が困難な速度での防御をAIエージェントが実現します。 [実務示唆: AIによるサイバー攻撃が高度化する中、Microsoft PerceptionのようなAI駆動型セキュリティソリューションの導入を検討し、セキュリティ対策の自動化と高速化を図るべきです。] (Source: Publickey)</description>
-      <pubDate>Wed, 18 Nov 2026 16:00:37 +0000</pubDate>
+      <title>DHH氏が開発する「Omarchy 4.5」リリース。一般的なマルチウィンドウをサポート。最速7秒で導入、Appleシリコン対応、Webアプリ版MS Office用ランチャーなど新機能</title>
+      <link>https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</guid>
+      <description>[Score: 95] Ruby on Railsの作者DHH氏が開発するLinux OS「Omarchy 4.5」がリリースされました。 / 本バージョンでは、従来のタイル型に加え、一般的なフローティング型マルチウィンドウをサポート。 / Appleシリコン搭載Macへの対応や、Web版MS Office用ランチャー機能も追加されています。 [実務示唆: AppleシリコンMacユーザーは、Omarchy 4.5をデュアルブートで試すことで、AIエージェント統合型Linux環境を体験できる。] (Source: Publickey)</description>
+      <pubDate>Mon, 23 Nov 2026 15:49:45 +0000</pubDate>
     </item>
     <item>
       <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
@@ -21,25 +21,18 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>iOSエンジニアのための OAuth 2.0 + PKCE 入門 ― 仕組みを理解してから、Swiftで実装する</title>
-      <link>https://zenn.dev/mobile_app_tec/articles/ios-oauth2-pkce-native-app</link>
-      <guid isPermaLink="false">https://zenn.dev/mobile_app_tec/articles/ios-oauth2-pkce-native-app</guid>
-      <description>[Score: 95] iOSエンジニア向けにOAuth 2.0 + PKCEの仕組みとSwiftでの実装方法を解説する記事です。 / ROPC（Resource Owner Password Credentials）フローが非推奨とされている現状を踏まえ、認可コードフローとPKCEの重要性を強調しています。 / アクセストークンの発行、リフレッシュトークン、stateパラメータの役割、そしてASWebAuthenticationSessionなどの外部ブラウザ利用の必要性について詳細に説明されています。 [実務示唆: iOSアプリでOAuth 2.0を実装する際は、ROPCではなく認可コードフローとPKCEを必須とし、ASWebAuthenticationSessionを用いてセキュアな認証フローを構築すべきです。] (Source: Zenn)</description>
-      <pubDate>Mon, 23 Nov 2026 13:56:35 +0000</pubDate>
+      <title>GPT-6モデルが固有のタンパク質設計能力を実証</title>
+      <link>https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</link>
+      <guid isPermaLink="false">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</guid>
+      <description>[Score: 95] OpenAIのGPT-6モデルファミリーが、専門の生物学モデルに頼らず、推論とコードのみで新しいタンパク質の形状と配列を設計できることを示しました。 / 内部研究モデルは、多くのタンパク質設計タスクで専門モデルと同等かそれ以上の性能を発揮し、結合部位や形状を指定して設計を誘導することも可能です。 / GPT-6.2の設計に基づいたタンパク質は、実験室試験で複数のターゲットへの結合が確認され、数学、物理学、化学、生物学の知識を統合してタンパク質を設計していることが示唆されています。 [実務示唆: 生物学や創薬分野のAI研究者は、GPT-6のような汎用モデルがタンパク質設計に活用できる可能性を探り、専門モデルとの連携や新たな設計アプローチを検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 24 Nov 2026 21:02:22 +0000</pubDate>
     </item>
     <item>
-      <title>AWS Emulator を使用してローカルで AWS に対してアプリケーションをテストする | Amazon Web Services</title>
-      <link>https://aws.amazon.com/jp/blogs/news/test-your-applications-against-aws-locally-with-aws-emulator/</link>
-      <guid isPermaLink="false">https://aws.amazon.com/jp/blogs/news/test-your-applications-against-aws-locally-with-aws-emulator/</guid>
-      <description>[Score: 95] AWSが、アプリケーションをローカル環境でAWSサービスに対してテストできる「AWS Emulator」を発表しました。 / これにより、開発者はクラウド環境にデプロイすることなく、ローカルでAWSサービスとの連携を検証できます。 / 開発サイクルを高速化し、コストを削減しながら、より効率的なテストが可能になります。 [実務示唆: AWS環境で開発を行うエンジニアは、AWS Emulatorを導入し、ローカルでのテストを積極的に行うことで、開発効率とコスト効率の向上を図るべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 13 Nov 2026 02:20:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>DHH氏が開発する「Omarchy 4.5」リリース。一般的なマルチウィンドウをサポート。最速7秒で導入、Appleシリコン対応、Webアプリ版MS Office用ランチャーなど新機能</title>
-      <link>https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</guid>
-      <description>[Score: 95] Ruby on Railsの作者DHH氏が開発するLinux OS「Omarchy 4.5」がリリースされました。 / 本バージョンでは、従来のタイル型に加え、一般的なフローティング型マルチウィンドウをサポート。 / Appleシリコン搭載Macへの対応や、Web版MS Office用ランチャー機能も追加されています。 [実務示唆: AppleシリコンMacユーザーは、Omarchy 4.5をデュアルブートで試すことで、AIエージェント統合型Linux環境を体験できる。] (Source: はてなブックマーク)</description>
-      <pubDate>Mon, 23 Nov 2026 15:49:45 +0000</pubDate>
+      <title>コードを書くコストが下がった今、ソフトウェアエンジニアリングの価値はどこにあるのか</title>
+      <link>https://qiita.com/figueiredoluiz/items/1d6751643b84db67812e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/1d6751643b84db67812e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 90] AIによるコード生成の進化でコードを書くコストは下がったが、ソフトウェア開発全体の生産性向上には課題があることが指摘されています。 / AIツールの利用はコミット数を大幅に増加させるものの、リリース数の増加は限定的であるという研究結果が紹介されています。 / AI時代のエンジニアは、問題理解、設計、品質改善、そして実際に使われる価値の提供に注力すべきだと論じています。 [実務示唆: AIによるコード生成を活用しつつも、エンジニアは問題定義、システム設計、品質保証、そしてユーザー価値の創出といった上流工程や非コーディング領域に注力し、自身の専門性を高めるべきです。] (Source: Qiita)</description>
+      <pubDate>Sat, 21 Nov 2026 20:37:17 +0000</pubDate>
     </item>
     <item>
       <title>脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する</title>
@@ -56,39 +49,53 @@
       <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
     </item>
     <item>
-      <title>最終回答を超えて：H&amp;EおよびmIFからの解釈可能な腫瘍免疫微小環境推論</title>
-      <link>https://arxiv.org/abs/2611.26794</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.26794</guid>
-      <description>[Score: 90] 本記事は、H&amp;E染色およびmIF画像から腫瘍免疫微小環境を解釈可能な形で推論する手法を提案しています。 / 単なる最終結果だけでなく、その推論過程を可視化・説明することで、医師の診断支援に貢献します。 / AIの医療応用における「説明可能性」の重要性を示す研究です。 [実務示唆: 医療AI開発者は、診断支援システムにおいて、単に高い精度を追求するだけでなく、医師が理解・信頼できるような「解釈可能性」を持つ推論メカニズムの実装を重視すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
+      <title>Check Pointセキュリティ管理サーバーに対する活発な侵入キャンペーン</title>
+      <link>https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign</link>
+      <guid isPermaLink="false">https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign</guid>
+      <description>[Score: 90] GreyNoiseは、Check Pointセキュリティ管理サーバーを標的とした活発な侵入キャンペーンを追跡しています。 / GT13という脅威アクターが、ExpressVPNの出口IPや侵害されたCheck Pointデバイスを含む99のIPアドレスを使用し、CVE-2026-61500を悪用してHFSサーバーを侵害しています。 / このキャンペーンでは、1400以上のネットワークセッション、800以上のコマンドラインアーティファクト、1200以上のファイル操作が観測されており、攻撃者の高度な手口が明らかになっています。 [実務示唆: Check Pointセキュリティ管理サーバーを利用している組織は、CVE-2026-61500のパッチ適用状況を確認し、不審なネットワークアクティビティやログを徹底的に監視して、速やかに対応策を講じるべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 24 Nov 2026 16:32:17 +0000</pubDate>
     </item>
     <item>
-      <title>コーディングエージェントが変えたOSS開発のプロセスと喜び</title>
-      <link>https://zenn.dev/cybergarage/articles/5ee7ac6b3b0565</link>
-      <guid isPermaLink="false">https://zenn.dev/cybergarage/articles/5ee7ac6b3b0565</guid>
-      <description>[Score: 90] 著者はコーディングエージェント（Codex、Claude）の活用により、OSS開発のプロセスと喜びが大きく変化したと報告しています。 / エージェントに実装を任せることで、著者は「次に何をすべきか決定し、テストを用意し、結果を確認する」ことに時間を費やすようになり、複数のプロジェクトを並行して進められるようになりました。 / 特にMatter開発の再開とESP32への移植において、エージェントが調査・実装・テストサイクルを担い、開発が飛躍的に進んだ具体例が挙げられています。 [実務示唆: AIコーディングエージェントを導入する際は、単にコード生成だけでなく、エージェントが調査・検証できる環境（ログ、テストツール、実機など）を整備することで、開発効率を最大化できるか検証すべきです。] [GitHub: cybergarage/go-matter] (Source: Zenn)</description>
-      <pubDate>Mon, 23 Nov 2026 17:37:18 +0000</pubDate>
+      <title>Gemini 4 Neon を API で叩いて Claude Code・Codex CLI と比べた：65万トークンの超長文、費用、失敗</title>
+      <link>https://zenn.dev/canly/articles/40e773759da8f8</link>
+      <guid isPermaLink="false">https://zenn.dev/canly/articles/40e773759da8f8</guid>
+      <description>[Score: 90] GoogleのGemini 4 NeonをAPI経由で利用し、Claude Opus 5.5（Claude Code経由）とGPT-6.2 Sol（Codex CLI経由）と比較検証した記事です。 / 8つの課題で超長文処理能力、費用、失敗事例を詳細に分析し、プロンプト全文や採点方法も公開されています。 / Gemini 4 Neonはベンチマークで高い性能を示す一方、Terminal-BenchやChartographyでは他モデルに劣る点も指摘されています。 [実務示唆: 大規模言語モデルを選定するエンジニアは、Gemini 4 Neonの長文処理能力とコスト効率を理解し、特定のタスクにおけるClaude OpusやGPT-6.2 Solとの性能差を考慮して最適なモデルを選択すべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 24 Nov 2026 08:51:41 +0000</pubDate>
     </item>
     <item>
-      <title>コードを書くコストが下がった今、ソフトウェアエンジニアリングの価値はどこにあるのか</title>
-      <link>https://qiita.com/figueiredoluiz/items/1d6751643b84db67812e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/1d6751643b84db67812e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AIによるコード生成の進化でコードを書くコストは下がったが、ソフトウェア開発全体の生産性向上には課題があることが指摘されています。 / AIツールの利用はコミット数を大幅に増加させるものの、リリース数の増加は限定的であるという研究結果が紹介されています。 / AI時代のエンジニアは、問題理解、設計、品質改善、そして実際に使われる価値の提供に注力すべきだと論じています。 [実務示唆: AIによるコード生成を活用しつつも、エンジニアは問題定義、システム設計、品質保証、そしてユーザー価値の創出といった上流工程や非コーディング領域に注力し、自身の専門性を高めるべきです。] (Source: Qiita)</description>
-      <pubDate>Sat, 21 Nov 2026 20:37:17 +0000</pubDate>
+      <title>当社お客様の情報漏えいに関するお詫びとお知らせ（第2報）:楽天証券</title>
+      <link>https://www.rakuten-sec.co.jp/web/info/info20261124-04.html</link>
+      <guid isPermaLink="false">https://www.rakuten-sec.co.jp/web/info/info20261124-04.html</guid>
+      <description>[Score: 90] 楽天証券は、お客様の情報漏えいに関する第2報として、約441万件の個人情報が外部に持ち出されたことを発表しました。 / 漏えいした情報には、氏名、生年月日、住所、電話番号に加え、性別、国籍、FAX番号、入金先口座情報などが含まれます。 / 現時点では、ログインパスワードや取引に必要な情報の漏えいは確認されておらず、不正アクセスや不正取引も確認されていないとのことです。 [実務示唆: 企業は、顧客情報の取り扱いについて改めてセキュリティ対策を徹底し、定期的な脆弱性診断と従業員へのセキュリティ教育を強化すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 24 Nov 2026 13:06:22 +0000</pubDate>
     </item>
     <item>
-      <title>Museに後れを取るアップルとグーグル AIエージェント戦争のジレンマ【西田宗千佳のイマトミライ】</title>
-      <link>https://www.watch.impress.co.jp/docs/series/nishida/2158551.html</link>
-      <guid isPermaLink="false">https://www.watch.impress.co.jp/docs/series/nishida/2158551.html</guid>
-      <description>[Score: 90] MetaのパーソナルAIエージェント「Muse」が急速にユーザー数を伸ばし、AppleやGoogleをリードしています。 / Appleは「Apple Intelligence」を、Googleは「Gemini Intelligence」を展開していますが、Museほどの勢いはありません。 / スマートフォンプラットフォーマーがAIエージェント市場でどのように立ち回るか、今後の動向が注目されます。 [実務示唆: パーソナルAIエージェントの進化は、スマートフォンの利用体験を大きく変えるため、各社のAI戦略や新機能の動向を注視し、自身の開発やサービスにどう組み込めるか検討しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 24 Nov 2026 00:16:14 +0000</pubDate>
+      <title>GoogleがAIの性能測定ツール「gBench」をオープンソース化</title>
+      <link>https://gigazine.net/news/20261124-google-gbench-benchmarking-framework/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20261124-google-gbench-benchmarking-framework/</guid>
+      <description>[Score: 90] GoogleがAIモデルの性能を測定するベンチマークフレームワーク「gBench」をオープンソース化しました。 / gBenchは大規模言語モデル(LLM)と視覚言語モデル(VLM)に対応し、86の評価スイートやエージェントベンチマークを含み、OpenAI互換APIのエンドポイントで動作します。 / Pythonパッケージとして提供され、GitHubでソースコードが公開されており、AIモデルの客観的な性能評価に貢献します。 [実務示唆: gBenchを活用して自社開発または利用中のAIモデルの性能を客観的に評価し、モデル選定や改善の意思決定に役立てることを推奨します。] [GitHub: google-deepmind/gbench] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 24 Nov 2026 03:53:34 +0000</pubDate>
     </item>
     <item>
-      <title>AirLLM解説: 4GB GPUで2.8兆パラメータモデルを動かす方法とトークンあたりのコスト</title>
-      <link>https://dev.to/jamilxt/airllm-explained-how-a-4gb-gpu-runs-a-28t-model-and-what-each-token-costs-44ad</link>
-      <guid isPermaLink="false">https://dev.to/jamilxt/airllm-explained-how-a-4gb-gpu-runs-a-28t-model-and-what-each-token-costs-44ad</guid>
-      <description>[Score: 90] AirLLMは、従来の常識を覆し、4GBのGPUメモリで70Bや2.8兆パラメータのLLMを量子化なしで実行できる技術です。 / この技術の核となるのは、モデルの各レイヤーを必要な時にのみVRAMにロードし、処理が終わったらアンロードするという「レイヤーごとのロード」戦略です。 / これにより、GPUメモリの制約が厳しい環境でも大規模モデルの実行が可能になりますが、メモリと引き換えに速度が犠牲になるため、用途に応じた検討が必要です。 [実務示唆: GPUメモリが限られた環境で大規模言語モデルを動かしたい場合、AirLLMを試すことで、量子化なしでモデルを実行できる可能性を探り、その性能とコストを評価すべきです。] [GitHub: AirLLM/AirLLM] (Source: Dev.to)</description>
-      <pubDate>Tue, 24 Nov 2026 05:41:56 +0000</pubDate>
+      <title>AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達</title>
+      <link>https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</guid>
+      <description>[Score: 90] AWSが、NoSQLデータベース「Amazon DynamoDB」と互換性のあるオープンソース「ExtendDB」のバージョン1.0リリースを発表しました。 / ExtendDBはWindows、Linux、macOSなどのローカル環境でDynamoDB互換データベースを構築でき、PostgreSQLなどをプラグインとして利用します。 / これにより、DynamoDBアプリケーションのローカル開発・テストや、クラウドとオンプレミスでの同一アプリケーション運用、既存スキル活用が可能になります。 [実務示唆: DynamoDBを利用している開発者は、ExtendDBを導入してローカル開発環境を構築し、開発効率とテストの再現性を向上させるべきです。] [GitHub: awslabs/extenddb] (Source: Publickey)</description>
+      <pubDate>Tue, 24 Nov 2026 15:19:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Netflix、AIエージェント向けにソフトウェア開発を適応</title>
+      <link>https://dev.to/guiadeti/netflix-adapta-o-desenvolvimento-de-software-para-agentes-de-ia-2gn2</link>
+      <guid isPermaLink="false">https://dev.to/guiadeti/netflix-adapta-o-desenvolvimento-de-software-para-agentes-de-ia-2gn2</guid>
+      <description>[Score: 90] Netflixのコマースチームは、エンジニアとAIコーディングエージェントが協働できるよう開発サイクルを適応させました。 / 彼らは、人間とAIエージェントの両方のために書かれた45のアーキテクチャ決定記録を作成し、文書化と一貫性を重視しています。 / これにより、AIエージェントが適切なコンテキストとガイダンスを得て、テスト移行などのタスクを効率的に実行できるようになりました。 [実務示唆: AIを開発プロセスに導入する企業は、Netflixの事例を参考に、AIエージェント向けの明確なドキュメントとコンテキストエンジニアリングを構築すべきです。] (Source: Dev.to)</description>
+      <pubDate>Tue, 24 Nov 2026 23:08:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>COLDCARD事後分析: 脆弱なシードがオフライン窃盗を可能にした</title>
+      <link>https://dev.to/pandasecurity/coldcard-postmortem-weak-seeds-enabled-offline-theft-2e1</link>
+      <guid isPermaLink="false">https://dev.to/pandasecurity/coldcard-postmortem-weak-seeds-enabled-offline-theft-2e1</guid>
+      <description>[Score: 90] ハードウェアウォレットCOLDCARDのファームウェアに欠陥があり、意図せずソフトウェア乱数生成器が使用され、ウォレットシードが脆弱になっていたことが判明しました。 / この欠陥により、一部のユーザーのビットコインがオフラインで不正に引き出される被害が発生しました。 / Coinkiteは迅速に修正ファームウェアをリリースし、独立機関によるレビューも公開しています。 [実務示唆: ハードウェアウォレットのファームウェアは常に最新の状態に保ち、セキュリティに関する公式アナウンスを定期的に確認することが重要です。] (Source: Dev.to)</description>
+      <pubDate>Tue, 24 Nov 2026 23:08:10 +0000</pubDate>
     </item>
     <item>
       <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
@@ -98,41 +105,6 @@
       <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフト、AIが生成したアプリを企業内で安全に実行するランタイム「Copilot Managed Runtime」正式リリース</title>
-      <link>https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</guid>
-      <description>[Score: 85] マイクロソフトは「Microsoft Ignite 2026」で、AIが生成したアプリケーションを企業内で安全に実行するための基盤「Copilot Managed Runtime」を正式リリースしました。 / AIによって生成されたアプリは脆弱性やセキュリティリスクを抱える可能性があるため、適切な権限管理とサンドボックス化された実行環境が求められます。 / 本ランタイムは、これらの課題を解決し、企業内でのAIアプリの安全なデプロイと実行を可能にします。 [実務示唆: AI生成アプリを企業導入する際は、Copilot Managed Runtimeのような専用ランタイムを活用し、セキュリティと権限管理を徹底すべきです。] (Source: Publickey)</description>
-      <pubDate>Wed, 18 Nov 2026 15:58:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>ChatAtom: 分子動力学シミュレーションと可視化のためのマルチエージェントLLMシステム</title>
-      <link>https://arxiv.org/abs/2611.26782</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.26782</guid>
-      <description>[Score: 85] 本記事は、分子動力学シミュレーションと可視化を行うマルチエージェントLLMシステム「ChatAtom」を提案しています。 / ChatAtomは、複数のAIエージェントが連携し、複雑な科学計算タスクを自動化します。 / 化学・材料科学分野における研究効率の大幅な向上に貢献する可能性があります。 [実務示唆: 分子動力学シミュレーションや材料科学の研究者は、ChatAtomのようなマルチエージェントLLMシステムを導入することで、シミュレーションの自動化と解析効率の向上を図るべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>StalwartがMicrosoft Exchangeのドロップイン代替として利用可能に</title>
-      <link>https://stalw.art/blog/microsoft-exchange-replacement/</link>
-      <guid isPermaLink="false">https://stalw.art/blog/microsoft-exchange-replacement/</guid>
-      <description>[Score: 85] Stalwart 1.2.0がリリースされ、Microsoft Exchangeのドロップイン代替として機能するようになりました。 / MAPI over HTTP、EWS、Exchange ActiveSyncなどのプロトコルを実装し、Outlookなどの既存クライアントがそのまま利用可能です。 / MicrosoftがExchange Onlineへの移行を推進する中、オンプレミス環境を維持したい組織にとって魅力的な選択肢となります。 [実務示唆: オンプレミスExchangeの代替を検討している組織は、Stalwartの導入を評価し、既存のメールシステムとの互換性や移行手順を確認すること。] [GitHub: stalwartlabs/stalwart-mail-server] (Source: Hacker News)</description>
-      <pubDate>Mon, 23 Nov 2026 22:32:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>ダリオはオープンソースモデルが違法になり、彼がコントロールを維持できるように危険を煽っている</title>
-      <link>https://twitter.com/ylecun/status/2124550037912920090</link>
-      <guid isPermaLink="false">https://twitter.com/ylecun/status/2124550037912920090</guid>
-      <description>[Score: 85] Yann LeCunは、Dario AmodeiがオープンソースAIの危険性を誇張し、規制を通じてAIのコントロールを自身に集中させようとしていると批判しています。 / Amodeiは、オープンモデルでは監視や制御が不可能になると主張し、AIの安全性を確保するためにはモデルを管理下に置く必要があると議会で証言しました。 / LeCunはこれを、知識への自由なアクセスを妨げる「中世の蒙昧主義」になぞらえ、オープンソースAIの発展を阻害する動きだと警鐘を鳴らしています。 [実務示唆: AI開発者は、オープンソースAIの規制に関する議論の動向を注視し、自身の開発活動やビジネスモデルへの潜在的な影響を評価する必要があります。] (Source: Hacker News)</description>
-      <pubDate>Mon, 23 Nov 2026 17:07:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>[2026版]セキュリティ情報 406 件を「脆弱性-事故-対策」の1枚の分類図にまとめてから読めたこと</title>
-      <link>https://qiita.com/songchong/items/4ad36f1857ba2b4ee4f1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/4ad36f1857ba2b4ee4f1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] IT連携マップが2026年版のセキュリティ情報406件を「事前対策→脆弱性→攻撃の手口→被害→事後対策」の5層に分類した図を公開しました。 / この分類図により、膨大なセキュリティ情報から「自分は何をすべきか」を効率的に把握できるようになります。 / 特にVPN機器、認証・認可の不備、インジェクション、XSSなどの脆弱性が悪用される割合が高いことが示されています。 [実務示唆: IT連携マップの分類図を活用し、自社のシステムに関連する脆弱性や攻撃手法を効率的に把握し、優先度の高い対策から実施することを推奨します。] (Source: Qiita)</description>
-      <pubDate>Sun, 22 Nov 2026 22:01:05 +0000</pubDate>
-    </item>
-    <item>
       <title>PostgreSQL 19正式リリース。ノンブロッキングなREPACKやI/Oワーカーのオートスケールなど新機能</title>
       <link>https://www.publickey1.jp/blog/26/postgresql_19repackio.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresql_19repackio.html</guid>
@@ -140,11 +112,39 @@
       <pubDate>Mon, 23 Nov 2026 15:45:37 +0000</pubDate>
     </item>
     <item>
-      <title>データシフトレフト：データをプロダクトチームに近づける</title>
-      <link>https://dev.to/ricardo_vano_25ad2fa57d1f/the-data-shift-left-bringing-data-closer-to-product-teams-41l9</link>
-      <guid isPermaLink="false">https://dev.to/ricardo_vano_25ad2fa57d1f/the-data-shift-left-bringing-data-closer-to-product-teams-41l9</guid>
-      <description>[Score: 85] 従来の組織では、プロダクト、エンジニアリング、データチームが分離され、データが重要な意思決定後にしか関与しない問題がありました。 / 「データシフトレフト」は、データ分析、計測、実験をプロダクト開発ライフサイクルの早期に組み込むアプローチです。 / これにより、プロダクトチームが自らデータの理解、測定、改善を行えるようになり、組織文化やエンジニアリングプラクティスの変革を促します。 [実務示唆: プロダクト開発において、データ分析と計測を早期に組み込む「データシフトレフト」を導入し、プロダクトチームがデータに基づいた意思決定を自律的に行えるよう組織体制を見直しましょう。] (Source: Dev.to)</description>
-      <pubDate>Tue, 24 Nov 2026 01:06:55 +0000</pubDate>
+      <title>Ternary Bonsai 2.5 27B</title>
+      <link>https://prismml.com/news/bonsai-2-5-27b</link>
+      <guid isPermaLink="false">https://prismml.com/news/bonsai-2-5-27b</guid>
+      <description>[Score: 85] Ternary Bonsai 2.5 27Bは、Qwen3.8 27Bをベースにしたエージェント型AIモデルのアップグレード版です。 / 5.9GBのモデルサイズを維持しつつ、エージェントコーディング、マルチターンのツール利用、マルチステップタスク実行能力が大幅に向上しました。 / これにより、プライベートファイルやオンデバイスツールと連携するエージェント構築において、より高速かつ正確な結果を提供します。 [実務示唆: オンデバイスでのエージェント開発を検討しているエンジニアは、Ternary Bonsai 2.5 27Bのコンパクトなフットプリントと強化されたエージェント能力を評価し、導入を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 24 Nov 2026 20:08:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>CUDAとJaxからTorchTPUへ：ケイリーグラフソルバーからの教訓</title>
+      <link>https://andlukyane.com/blog/cayley-graphs-and-torchtpu</link>
+      <guid isPermaLink="false">https://andlukyane.com/blog/cayley-graphs-and-torchtpu</guid>
+      <description>[Score: 85] 本記事は、ケイリーグラフソルバーにおけるPyTorch/A100、JAX/TPU、そして新登場のTorchTPUの性能比較を詳述しています。 / 初期のTorchTPUはA100やJAXに劣る結果でしたが、最適化によりA100と同等、JAXより25%高速なビームサーチを実現しました。 / この調査はソルバー自体の改善にも繋がり、TorchTPUのGitHubイシューでアテンションルーティングの修正に貢献しました。 [実務示唆: PyTorchとTPUを利用する開発者は、TorchTPUの最適化手法（Eager Execution、動的テンソル形状の排除など）を参考に、自身のモデルで性能改善を試みるべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 24 Nov 2026 19:40:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Code の /ship を図解する</title>
+      <link>https://zenn.dev/peoplex_blog/articles/claude-code-ship</link>
+      <guid isPermaLink="false">https://zenn.dev/peoplex_blog/articles/claude-code-ship</guid>
+      <description>[Score: 85] Claude Codeにベータ版としてリリースされた新スキル「/ship」は、コミットからPR作成、レビュー、修正、マージまたはクローズまでの一連のプロセスを1つのセッションで自動化します。 / このスキルは、PRの状態を2分ごとに確認し、CIの失敗やコメントなどの変化があった場合にのみClaudeを起動するため、使用量を抑えつつ最長7日間PRを見張ることが可能です。 / また、コメントの読み込み範囲やpush回数、使用可能なコマンドが制限されており、PRを荒らすリスクを低減する仕組みが組み込まれています。 [実務示唆: Claude Codeの/shipスキルを活用し、PR作成からマージまでの開発ワークフローを自動化することで、開発効率の向上とAIによるレビュープロセスの最適化を検討しましょう。] (Source: Zenn)</description>
+      <pubDate>Tue, 24 Nov 2026 06:30:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Rails: 37signalsのコード品質を支える独自のエンジニアリング戦略（翻訳）｜TechRacho by BPS株式会社</title>
+      <link>https://techracho.bpsinc.jp/hachi8833/2026_11_24/161424</link>
+      <guid isPermaLink="false">https://techracho.bpsinc.jp/hachi8833/2026_11_24/161424</guid>
+      <description>[Score: 85] 37signalsのコード品質が高いのは、企業規模を無意味に拡大せず、機能を容赦なく絞り込み、優秀な人材確保に注力するという独自のエンジニアリング戦略によるものです。 / 多くの企業が「機能増加=利益増加」という先入観からこの戦略を採用できない中、37signalsは運用中の多くのプロダクトをオープンソース化し、その高品質なコードを公開しています。 / これにより、これまで見ることができなかった「本家本元のRailsスタイル」のコードが誰でも読めるようになり、その行数の少なさに驚きが広がっています。 [実務示唆: 自社開発の戦略を見直し、機能の絞り込みや少数精鋭チームでの開発を検討し、コード品質向上と効率化を図るべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 24 Nov 2026 08:35:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>オープンソースにおける最高のものは共に築かれる</title>
+      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
+      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,14 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 05:45:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 23:16:07 +0000</lastBuildDate>
+    <item>
+      <title>GPT-6モデルが固有のタンパク質設計能力を実証</title>
+      <link>https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</link>
+      <guid isPermaLink="false">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</guid>
+      <description>[Score: 95] OpenAIのGPT-6モデルファミリーが、専門の生物学モデルに頼らず、推論とコードのみで新しいタンパク質の形状と配列を設計できることを示しました。 / 内部研究モデルは、多くのタンパク質設計タスクで専門モデルと同等かそれ以上の性能を発揮し、結合部位や形状を指定して設計を誘導することも可能です。 / GPT-6.2の設計に基づいたタンパク質は、実験室試験で複数のターゲットへの結合が確認され、数学、物理学、化学、生物学の知識を統合してタンパク質を設計していることが示唆されています。 [実務示唆: 生物学や創薬分野のAI研究者は、GPT-6のような汎用モデルがタンパク質設計に活用できる可能性を探り、専門モデルとの連携や新たな設計アプローチを検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 24 Nov 2026 21:02:22 +0000</pubDate>
+    </item>
     <item>
       <title>デバイス間で継続するセッションのためのAgent Host Protocolの構築</title>
       <link>https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</link>
@@ -14,102 +21,95 @@
       <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
     </item>
     <item>
-      <title>最終回答を超えて：H&amp;EおよびmIFからの解釈可能な腫瘍免疫微小環境推論</title>
-      <link>https://arxiv.org/abs/2611.26794</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.26794</guid>
-      <description>[Score: 90] 本記事は、H&amp;E染色およびmIF画像から腫瘍免疫微小環境を解釈可能な形で推論する手法を提案しています。 / 単なる最終結果だけでなく、その推論過程を可視化・説明することで、医師の診断支援に貢献します。 / AIの医療応用における「説明可能性」の重要性を示す研究です。 [実務示唆: 医療AI開発者は、診断支援システムにおいて、単に高い精度を追求するだけでなく、医師が理解・信頼できるような「解釈可能性」を持つ推論メカニズムの実装を重視すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
+      <title>Gemini 4 Neon を API で叩いて Claude Code・Codex CLI と比べた：65万トークンの超長文、費用、失敗</title>
+      <link>https://zenn.dev/canly/articles/40e773759da8f8</link>
+      <guid isPermaLink="false">https://zenn.dev/canly/articles/40e773759da8f8</guid>
+      <description>[Score: 90] GoogleのGemini 4 NeonをAPI経由で利用し、Claude Opus 5.5（Claude Code経由）とGPT-6.2 Sol（Codex CLI経由）と比較検証した記事です。 / 8つの課題で超長文処理能力、費用、失敗事例を詳細に分析し、プロンプト全文や採点方法も公開されています。 / Gemini 4 Neonはベンチマークで高い性能を示す一方、Terminal-BenchやChartographyでは他モデルに劣る点も指摘されています。 [実務示唆: 大規模言語モデルを選定するエンジニアは、Gemini 4 Neonの長文処理能力とコスト効率を理解し、特定のタスクにおけるClaude OpusやGPT-6.2 Solとの性能差を考慮して最適なモデルを選択すべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 24 Nov 2026 08:51:41 +0000</pubDate>
     </item>
     <item>
-      <title>コーディングエージェントが変えたOSS開発のプロセスと喜び</title>
-      <link>https://zenn.dev/cybergarage/articles/5ee7ac6b3b0565</link>
-      <guid isPermaLink="false">https://zenn.dev/cybergarage/articles/5ee7ac6b3b0565</guid>
-      <description>[Score: 90] 著者はコーディングエージェント（Codex、Claude）の活用により、OSS開発のプロセスと喜びが大きく変化したと報告しています。 / エージェントに実装を任せることで、著者は「次に何をすべきか決定し、テストを用意し、結果を確認する」ことに時間を費やすようになり、複数のプロジェクトを並行して進められるようになりました。 / 特にMatter開発の再開とESP32への移植において、エージェントが調査・実装・テストサイクルを担い、開発が飛躍的に進んだ具体例が挙げられています。 [実務示唆: AIコーディングエージェントを導入する際は、単にコード生成だけでなく、エージェントが調査・検証できる環境（ログ、テストツール、実機など）を整備することで、開発効率を最大化できるか検証すべきです。] [GitHub: cybergarage/go-matter] (Source: Zenn)</description>
-      <pubDate>Mon, 23 Nov 2026 17:37:18 +0000</pubDate>
+      <title>GoogleがAIの性能測定ツール「gBench」をオープンソース化</title>
+      <link>https://gigazine.net/news/20261124-google-gbench-benchmarking-framework/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20261124-google-gbench-benchmarking-framework/</guid>
+      <description>[Score: 90] GoogleがAIモデルの性能を測定するベンチマークフレームワーク「gBench」をオープンソース化しました。 / gBenchは大規模言語モデル(LLM)と視覚言語モデル(VLM)に対応し、86の評価スイートやエージェントベンチマークを含み、OpenAI互換APIのエンドポイントで動作します。 / Pythonパッケージとして提供され、GitHubでソースコードが公開されており、AIモデルの客観的な性能評価に貢献します。 [実務示唆: gBenchを活用して自社開発または利用中のAIモデルの性能を客観的に評価し、モデル選定や改善の意思決定に役立てることを推奨します。] [GitHub: google-deepmind/gbench] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 24 Nov 2026 03:53:34 +0000</pubDate>
     </item>
     <item>
-      <title>Museに後れを取るアップルとグーグル AIエージェント戦争のジレンマ【西田宗千佳のイマトミライ】</title>
-      <link>https://www.watch.impress.co.jp/docs/series/nishida/2158551.html</link>
-      <guid isPermaLink="false">https://www.watch.impress.co.jp/docs/series/nishida/2158551.html</guid>
-      <description>[Score: 90] MetaのパーソナルAIエージェント「Muse」が急速にユーザー数を伸ばし、AppleやGoogleをリードしています。 / Appleは「Apple Intelligence」を、Googleは「Gemini Intelligence」を展開していますが、Museほどの勢いはありません。 / スマートフォンプラットフォーマーがAIエージェント市場でどのように立ち回るか、今後の動向が注目されます。 [実務示唆: パーソナルAIエージェントの進化は、スマートフォンの利用体験を大きく変えるため、各社のAI戦略や新機能の動向を注視し、自身の開発やサービスにどう組み込めるか検討しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 24 Nov 2026 00:16:14 +0000</pubDate>
+      <title>Netflix、AIエージェント向けにソフトウェア開発を適応</title>
+      <link>https://dev.to/guiadeti/netflix-adapta-o-desenvolvimento-de-software-para-agentes-de-ia-2gn2</link>
+      <guid isPermaLink="false">https://dev.to/guiadeti/netflix-adapta-o-desenvolvimento-de-software-para-agentes-de-ia-2gn2</guid>
+      <description>[Score: 90] Netflixのコマースチームは、エンジニアとAIコーディングエージェントが協働できるよう開発サイクルを適応させました。 / 彼らは、人間とAIエージェントの両方のために書かれた45のアーキテクチャ決定記録を作成し、文書化と一貫性を重視しています。 / これにより、AIエージェントが適切なコンテキストとガイダンスを得て、テスト移行などのタスクを効率的に実行できるようになりました。 [実務示唆: AIを開発プロセスに導入する企業は、Netflixの事例を参考に、AIエージェント向けの明確なドキュメントとコンテキストエンジニアリングを構築すべきです。] (Source: Dev.to)</description>
+      <pubDate>Tue, 24 Nov 2026 23:08:32 +0000</pubDate>
     </item>
     <item>
-      <title>AirLLM解説: 4GB GPUで2.8兆パラメータモデルを動かす方法とトークンあたりのコスト</title>
-      <link>https://dev.to/jamilxt/airllm-explained-how-a-4gb-gpu-runs-a-28t-model-and-what-each-token-costs-44ad</link>
-      <guid isPermaLink="false">https://dev.to/jamilxt/airllm-explained-how-a-4gb-gpu-runs-a-28t-model-and-what-each-token-costs-44ad</guid>
-      <description>[Score: 90] AirLLMは、従来の常識を覆し、4GBのGPUメモリで70Bや2.8兆パラメータのLLMを量子化なしで実行できる技術です。 / この技術の核となるのは、モデルの各レイヤーを必要な時にのみVRAMにロードし、処理が終わったらアンロードするという「レイヤーごとのロード」戦略です。 / これにより、GPUメモリの制約が厳しい環境でも大規模モデルの実行が可能になりますが、メモリと引き換えに速度が犠牲になるため、用途に応じた検討が必要です。 [実務示唆: GPUメモリが限られた環境で大規模言語モデルを動かしたい場合、AirLLMを試すことで、量子化なしでモデルを実行できる可能性を探り、その性能とコストを評価すべきです。] [GitHub: AirLLM/AirLLM] (Source: Dev.to)</description>
-      <pubDate>Tue, 24 Nov 2026 05:41:56 +0000</pubDate>
+      <title>Ternary Bonsai 2.5 27B</title>
+      <link>https://prismml.com/news/bonsai-2-5-27b</link>
+      <guid isPermaLink="false">https://prismml.com/news/bonsai-2-5-27b</guid>
+      <description>[Score: 85] Ternary Bonsai 2.5 27Bは、Qwen3.8 27Bをベースにしたエージェント型AIモデルのアップグレード版です。 / 5.9GBのモデルサイズを維持しつつ、エージェントコーディング、マルチターンのツール利用、マルチステップタスク実行能力が大幅に向上しました。 / これにより、プライベートファイルやオンデバイスツールと連携するエージェント構築において、より高速かつ正確な結果を提供します。 [実務示唆: オンデバイスでのエージェント開発を検討しているエンジニアは、Ternary Bonsai 2.5 27Bのコンパクトなフットプリントと強化されたエージェント能力を評価し、導入を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 24 Nov 2026 20:08:03 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフト、AIが生成したアプリを企業内で安全に実行するランタイム「Copilot Managed Runtime」正式リリース</title>
-      <link>https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html</guid>
-      <description>[Score: 85] マイクロソフトは「Microsoft Ignite 2026」で、AIが生成したアプリケーションを企業内で安全に実行するための基盤「Copilot Managed Runtime」を正式リリースしました。 / AIによって生成されたアプリは脆弱性やセキュリティリスクを抱える可能性があるため、適切な権限管理とサンドボックス化された実行環境が求められます。 / 本ランタイムは、これらの課題を解決し、企業内でのAIアプリの安全なデプロイと実行を可能にします。 [実務示唆: AI生成アプリを企業導入する際は、Copilot Managed Runtimeのような専用ランタイムを活用し、セキュリティと権限管理を徹底すべきです。] (Source: Publickey)</description>
-      <pubDate>Wed, 18 Nov 2026 15:58:32 +0000</pubDate>
+      <title>CUDAとJaxからTorchTPUへ：ケイリーグラフソルバーからの教訓</title>
+      <link>https://andlukyane.com/blog/cayley-graphs-and-torchtpu</link>
+      <guid isPermaLink="false">https://andlukyane.com/blog/cayley-graphs-and-torchtpu</guid>
+      <description>[Score: 85] 本記事は、ケイリーグラフソルバーにおけるPyTorch/A100、JAX/TPU、そして新登場のTorchTPUの性能比較を詳述しています。 / 初期のTorchTPUはA100やJAXに劣る結果でしたが、最適化によりA100と同等、JAXより25%高速なビームサーチを実現しました。 / この調査はソルバー自体の改善にも繋がり、TorchTPUのGitHubイシューでアテンションルーティングの修正に貢献しました。 [実務示唆: PyTorchとTPUを利用する開発者は、TorchTPUの最適化手法（Eager Execution、動的テンソル形状の排除など）を参考に、自身のモデルで性能改善を試みるべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 24 Nov 2026 19:40:43 +0000</pubDate>
     </item>
     <item>
-      <title>ChatAtom: 分子動力学シミュレーションと可視化のためのマルチエージェントLLMシステム</title>
-      <link>https://arxiv.org/abs/2611.26782</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.26782</guid>
-      <description>[Score: 85] 本記事は、分子動力学シミュレーションと可視化を行うマルチエージェントLLMシステム「ChatAtom」を提案しています。 / ChatAtomは、複数のAIエージェントが連携し、複雑な科学計算タスクを自動化します。 / 化学・材料科学分野における研究効率の大幅な向上に貢献する可能性があります。 [実務示唆: 分子動力学シミュレーションや材料科学の研究者は、ChatAtomのようなマルチエージェントLLMシステムを導入することで、シミュレーションの自動化と解析効率の向上を図るべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
+      <title>Claude Code の /ship を図解する</title>
+      <link>https://zenn.dev/peoplex_blog/articles/claude-code-ship</link>
+      <guid isPermaLink="false">https://zenn.dev/peoplex_blog/articles/claude-code-ship</guid>
+      <description>[Score: 85] Claude Codeにベータ版としてリリースされた新スキル「/ship」は、コミットからPR作成、レビュー、修正、マージまたはクローズまでの一連のプロセスを1つのセッションで自動化します。 / このスキルは、PRの状態を2分ごとに確認し、CIの失敗やコメントなどの変化があった場合にのみClaudeを起動するため、使用量を抑えつつ最長7日間PRを見張ることが可能です。 / また、コメントの読み込み範囲やpush回数、使用可能なコマンドが制限されており、PRを荒らすリスクを低減する仕組みが組み込まれています。 [実務示唆: Claude Codeの/shipスキルを活用し、PR作成からマージまでの開発ワークフローを自動化することで、開発効率の向上とAIによるレビュープロセスの最適化を検討しましょう。] (Source: Zenn)</description>
+      <pubDate>Tue, 24 Nov 2026 06:30:06 +0000</pubDate>
     </item>
     <item>
-      <title>ダリオはオープンソースモデルが違法になり、彼がコントロールを維持できるように危険を煽っている</title>
-      <link>https://twitter.com/ylecun/status/2124550037912920090</link>
-      <guid isPermaLink="false">https://twitter.com/ylecun/status/2124550037912920090</guid>
-      <description>[Score: 85] Yann LeCunは、Dario AmodeiがオープンソースAIの危険性を誇張し、規制を通じてAIのコントロールを自身に集中させようとしていると批判しています。 / Amodeiは、オープンモデルでは監視や制御が不可能になると主張し、AIの安全性を確保するためにはモデルを管理下に置く必要があると議会で証言しました。 / LeCunはこれを、知識への自由なアクセスを妨げる「中世の蒙昧主義」になぞらえ、オープンソースAIの発展を阻害する動きだと警鐘を鳴らしています。 [実務示唆: AI開発者は、オープンソースAIの規制に関する議論の動向を注視し、自身の開発活動やビジネスモデルへの潜在的な影響を評価する必要があります。] (Source: Hacker News)</description>
-      <pubDate>Mon, 23 Nov 2026 17:07:26 +0000</pubDate>
+      <title>Playbook - .Net MCP to keep your agents using the latest language features</title>
+      <link>https://dev.to/pingu2k4/playbook-net-mcp-to-keep-your-agents-using-the-latest-language-features-2nfg</link>
+      <guid isPermaLink="false">https://dev.to/pingu2k4/playbook-net-mcp-to-keep-your-agents-using-the-latest-language-features-2nfg</guid>
+      <description>[Score: 80] オープンソースプロジェクト「Playbook」がリリースされ、AIモデルが最新の.Net 11言語機能を活用できない問題を解決します。 / Playbookは491のレシピと24のカテゴリ（Blazor関連70）をカバーするMCP（Model Card Protocol）を提供し、エージェントがターゲットフレームワークの最新のやり方を理解できるよう支援します。 / これにより、プロンプトを変更することなく、AIエージェントが.Net 11の新しい標準に沿ったアプリケーションを効率的に作成できるようになります。 [実務示唆: .Net 11を使用するAI開発者は、Playbookを導入してAIエージェントが最新の言語機能を活用できるようにし、開発効率とコード品質を向上させるべきです。] [GitHub: pingu2k4/Playbook] (Source: Dev.to)</description>
+      <pubDate>Tue, 24 Nov 2026 23:08:44 +0000</pubDate>
     </item>
     <item>
-      <title>一度構築すれば、あらゆるエージェントで実行可能：エージェントスキル実践ガイド</title>
-      <link>https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</link>
-      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</guid>
-      <description>[Score: 80] GitHub Copilotは、エージェントスキルを通じて、繰り返し可能な指示をキャプチャし、複数のエージェント間で再利用する仕組みを提供します。 / スキルはSKILL.mdファイルを中心としたバージョン管理されたディレクトリで構成され、タスクの実行方法を記述します。 / これにより、チーム全体で知識を共有し、エージェントの作業を標準化・効率化することが可能になります。 [実務示唆: AIエージェントを活用した開発を行っているチームは、エージェントスキルを導入し、共通のタスクや知識をスキルとして定義・共有することで、エージェントの再利用性とチーム全体の生産性を向上させるべきです。] [GitHub: github/copilot] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 12 Nov 2026 22:54:52 +0000</pubDate>
+      <title>torchtsetlin: PyTorch向け高速で解釈可能なTsetlinマシン</title>
+      <link>https://arxiv.org/abs/2611.28195</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.28195</guid>
+      <description>[Score: 80] 本論文は、PyTorch上で動作する高速で解釈可能なTsetlinマシンライブラリ「torchtsetlin」を紹介しています。 / Tsetlinマシンは、ルールベースの機械学習モデルであり、高い解釈性を持つことが特徴です。 / arXivLabsを通じて公開されており、AI研究コミュニティへの貢献を目指しています。 [実務示唆: 解釈可能なAIモデルの構築に関心のある開発者は、torchtsetlinを試用し、既存のPyTorchワークフローに組み込むことで、モデルの透明性を高めることができます。] (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>TOUMAII: 450万ペアのツール呼び出し選好データセットとそのソース非依存ジェネレーター</title>
-      <link>https://arxiv.org/abs/2611.26722</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.26722</guid>
-      <description>[Score: 80] 本記事は、大規模なツール呼び出し選好データセット「TOUMAII」とその生成器について紹介しています。 / 450万ペアものデータは、AIが外部ツールを効果的に利用するための学習に役立ちます。 / ソースに依存しないジェネレーターは、多様なツール呼び出しシナリオに対応可能です。 [実務示唆: 大規模言語モデル（LLM）に外部ツール連携機能を実装する開発者は、TOUMAIIデータセットを活用してモデルのツール利用能力を向上させるための学習データとして検討すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
+      <title>追記型記録ツールで訂正時に重複が残る問題とAIの挙動：Claude Codeによる検証</title>
+      <link>https://zenn.dev/kentaro_tak/articles/mcp-logger-append-only-corrections</link>
+      <guid isPermaLink="false">https://zenn.dev/kentaro_tak/articles/mcp-logger-append-only-corrections</guid>
+      <description>[Score: 78] 追記型記録ツールで訂正を行うと、古い情報が残り重複が発生する問題について検証しています。 / Claude Codeに訂正作業を依頼した結果、AIは「消せない」と正直に伝えるものの、集計を誤るケースがありました。 / SQLiteと3つの書き方、3つのClaudeモデルで27回の試行を行い、AIの挙動と限界を詳細に分析しています。 [実務示唆: AIエージェントにデータ操作を任せる際は、追記型システムでの訂正処理の限界を理解し、AIが提供する情報だけでなく、実際のデータ状態を必ず確認する仕組みを導入すべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 24 Nov 2026 14:04:27 +0000</pubDate>
     </item>
     <item>
-      <title>GLM-5.4: 初のループトランスフォーマーによる汎用コーディングに向けて</title>
-      <link>https://z.ai/blog/glm-5.4</link>
-      <guid isPermaLink="false">https://z.ai/blog/glm-5.4</guid>
-      <description>[Score: 80] GLM-5.4がリリースされ、初のループトランスフォーマーを導入したと報じられています。 / これにより、汎用的なコーディング能力の向上を目指していると推測されます。 / AIによるコード生成や理解の分野で新たな進展があったことを示唆しています。 [実務示唆: AIによるコード生成ツールの進化を追跡し、GLM-5.4のような新しいモデルが開発ワークフローにどのように統合できるかを検証すること。] (Source: Hacker News)</description>
-      <pubDate>Mon, 23 Nov 2026 10:06:43 +0000</pubDate>
+      <title>点群からエンジニアリングモデルへ: 建築環境におけるエージェント型3D再構築のベンチマーク</title>
+      <link>https://arxiv.org/abs/2611.28197</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.28197</guid>
+      <description>[Score: 78] 本論文は、建築環境におけるエージェント型3D再構築のベンチマークに関する研究です。 / 点群データからエンジニアリングモデルを生成するプロセスに焦点を当てています。 / arXivLabsのフレームワークを通じて公開されており、関連分野の研究者や開発者に情報を提供します。 [実務示唆: 建築・建設分野で3Dスキャンデータや点群データを扱うエンジニアは、本研究のベンチマーク結果を参考に、エージェント型3D再構築技術の導入や評価を進めることができます。] (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>S3 Vectors は RAG のベクトルストアに使えるか（40問で検証＋ハイブリッド検索に関する追記）</title>
-      <link>https://zenn.dev/shino_i/articles/faeef70f08124c</link>
-      <guid isPermaLink="false">https://zenn.dev/shino_i/articles/faeef70f08124c</guid>
-      <description>[Score: 80] Amazon S3 VectorsがRAGのベクトルストアとして利用可能かを検証した記事で、特にOpenSearch Serverlessの課題（費用、待ち時間）を解決する代替案として注目されています。 / 検証の結果、S3 Vectorsはメタデータの上限に注意が必要であり、インデックス作成時にnon-filterableなキーを指定することで取り込み失敗を回避できることが判明しました。 / ハイブリッド検索への対応も追記され、S3 VectorsがRAGのベクトルストアとして実用的な選択肢になりうることが示唆されています。 [実務示唆: S3 VectorsをRAGのベクトルストアとして検討する際は、メタデータの上限とnon-filterableキーの設定に注意し、事前に小規模な検証で取り込み成功を確認すべきです。] (Source: Zenn)</description>
-      <pubDate>Mon, 23 Nov 2026 15:57:58 +0000</pubDate>
+      <title>Copilot Studioのエージェント開発をClaude Codeにどこまで任せられるか試した</title>
+      <link>https://zenn.dev/upgradetech/articles/a9a1637d3071c1</link>
+      <guid isPermaLink="false">https://zenn.dev/upgradetech/articles/a9a1637d3071c1</guid>
+      <description>[Score: 75] Copilot Studioでのエージェント開発において、Claude Codeがどこまで自動化できるかを検証した記事です。 / 画面操作の代わりに自然言語でClaude Codeに指示し、PAC CLIやPower Automateプラグインなどを利用してエージェントを構築しました。 / 社内図書コーナー案内アシスタントを題材に、依頼文やファイル内容も公開されており、再現性が高い検証となっています。 [実務示唆: Copilot StudioやPower Automateを利用する開発者は、Claude CodeのようなAIエージェントを活用して、設定ファイルの編集や自動処理の構築を効率化できる可能性を探るべきです。] (Source: Zenn)</description>
+      <pubDate>Tue, 24 Nov 2026 09:24:58 +0000</pubDate>
     </item>
     <item>
-      <title>面接でプロンプトエンジニアリングにどうアプローチするか</title>
-      <link>https://dev.to/jacobsimon/how-to-approach-prompt-engineering-in-interviews-56bl</link>
-      <guid isPermaLink="false">https://dev.to/jacobsimon/how-to-approach-prompt-engineering-in-interviews-56bl</guid>
-      <description>[Score: 78] プロンプトエンジニアリングは、言語モデルに特定のタスクを確実に実行させるための作業です。 / まずタスクと評価基準を明確にし、次に10〜20個の実際の入力例でプロンプトをテストします。 / 失敗した場合は原因を推測し、プロンプトの一部を変更して再度テストするデバッグサイクルを繰り返します。 [実務示唆: プロンプトエンジニアリングの面接では、タスク定義、評価基準設定、テストデータを用いた反復的なデバッグプロセスを具体的に説明し、問題解決能力を示すべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 24 Nov 2026 01:07:25 +0000</pubDate>
+      <title>SAMA: 5つの公開データセットにおけるカメラベース心拍数推定のためのトレーニング不要なコンセンサスリッジトラッキング</title>
+      <link>https://arxiv.org/abs/2611.28185</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.28185</guid>
+      <description>[Score: 75] 本論文は、カメラベースの心拍数推定に関する新しい手法「SAMA」を提案しています。 / SAMAは、トレーニング不要なコンセンサスリッジトラッキングを利用しており、5つの公開データセットで評価されています。 / arXivLabsのフレームワークを通じて公開されており、オープンな研究開発を促進するものです。 [実務示唆: カメラを用いた非接触型生体情報計測に関心のある開発者は、SAMAの手法を参考に、既存のシステムへの応用や性能改善を検討できます。] (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>月額1000円台のVPSで“自分専用AIテスト環境”を作れる！ さくらのVPS＋さくらのAI Engine＋OpenCodeでゲーム開発に挑戦【イニシャルB【特別編】】[Sponsored]</title>
-      <link>https://internet.watch.impress.co.jp/docs/topic/shimizu_sp/2126965.html</link>
-      <guid isPermaLink="false">https://internet.watch.impress.co.jp/docs/topic/shimizu_sp/2126965.html</guid>
-      <description>[Score: 75] さくらのVPSとさくらのAI Engine、OpenCodeを活用し、月額1000円台で自分専用のAIテスト環境を構築する方法が紹介されています。 / AIエージェント「OpenCode」を使って簡単なブラウザゲームを開発する手順がステップバイステップで解説されており、プログラミング未経験者でもAIを活用した開発に挑戦できることを示しています。 / AIエージェントの実行環境としてVPSを利用するメリット（プライベートデータへのアクセスリスク回避、手軽な環境構築）が強調されています。 [実務示唆: AIエージェントの検証環境として、さくらのVPSとさくらのAI Engineを組み合わせることで、低コストかつ安全に開発・テストが可能か試すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 24 Nov 2026 00:27:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>手書きをやめた途端、ブログが全部AI臭くなったあなたへ！ マシにする方法教えます</title>
-      <link>https://qiita.com/minorun365/items/faa50b7662b86e1df29c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/minorun365/items/faa50b7662b86e1df29c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 70] AIによるブログ執筆が増える中、情報量過多でAI臭い記事を避けるための具体的な方法が紹介されています。 / Claude CodeやOpus 5.5などの高性能AIモデルと、独自のスキル設定（CLAUDE.md）を活用し、AI特有の表現を抑制します。 / 音声入力での指示とHTMLプレビューでの細かなレビューを繰り返すことで、人間らしい自然な文章に仕上げるプロセスが示されています。 [実務示唆: AIで記事を作成する際は、AIの特性を理解し、スキル設定や詳細な指示、複数回のレビューを通じて人間らしい表現に調整するプロセスを取り入れましょう。] [GitHub: minorun365/html-share-kun] (Source: Qiita)</description>
-      <pubDate>Sun, 22 Nov 2026 11:56:55 +0000</pubDate>
+      <title>FinEvo: 長期的な金融モデリングのための再帰的自己改善</title>
+      <link>https://arxiv.org/abs/2611.28239</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.28239</guid>
+      <description>[Score: 75] FinEvoは、長期的な金融モデリングにおける再帰的自己改善手法に関する研究です。 / 金融市場の予測精度向上を目指し、AIエージェントが自己学習を繰り返すアプローチを提案しています。 / arXivLabsのフレームワーク上で開発・共有される可能性のあるプロジェクトの一つです。 [実務示唆: 金融モデリングに携わるエンジニアは、再帰的自己改善アルゴリズムを既存の予測モデルに適用し、長期的な予測精度向上への寄与を検証すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

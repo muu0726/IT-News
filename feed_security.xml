@@ -5,14 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 05:45:55 +0000</lastBuildDate>
-    <item>
-      <title>マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始</title>
-      <link>https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html</guid>
-      <description>[Score: 95] マイクロソフトは「Microsoft Ignite 2026」で、AIによるサイバー攻撃に対抗するための新サービス「Microsoft Perception」の提供開始を発表しました。 / このサービスは、レッドチーム、ブルーチーム、グリーンチームのAIエージェントが連携し、攻撃シミュレーション、脅威検出、修復を機械速度で実行します。 / AIによる攻撃の自動化が進む中、人間では対応が困難な速度での防御をAIエージェントが実現します。 [実務示唆: AIによるサイバー攻撃が高度化する中、Microsoft PerceptionのようなAI駆動型セキュリティソリューションの導入を検討し、セキュリティ対策の自動化と高速化を図るべきです。] (Source: Publickey)</description>
-      <pubDate>Wed, 18 Nov 2026 16:00:37 +0000</pubDate>
-    </item>
+    <lastBuildDate>Tue, 24 Nov 2026 23:16:07 +0000</lastBuildDate>
     <item>
       <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
       <link>https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</link>
@@ -28,32 +21,32 @@
       <pubDate>Sun, 22 Nov 2026 03:42:52 +0000</pubDate>
     </item>
     <item>
-      <title>[2026版]セキュリティ情報 406 件を「脆弱性-事故-対策」の1枚の分類図にまとめてから読めたこと</title>
-      <link>https://qiita.com/songchong/items/4ad36f1857ba2b4ee4f1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/songchong/items/4ad36f1857ba2b4ee4f1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 85] IT連携マップが2026年版のセキュリティ情報406件を「事前対策→脆弱性→攻撃の手口→被害→事後対策」の5層に分類した図を公開しました。 / この分類図により、膨大なセキュリティ情報から「自分は何をすべきか」を効率的に把握できるようになります。 / 特にVPN機器、認証・認可の不備、インジェクション、XSSなどの脆弱性が悪用される割合が高いことが示されています。 [実務示唆: IT連携マップの分類図を活用し、自社のシステムに関連する脆弱性や攻撃手法を効率的に把握し、優先度の高い対策から実施することを推奨します。] (Source: Qiita)</description>
-      <pubDate>Sun, 22 Nov 2026 22:01:05 +0000</pubDate>
+      <title>Check Pointセキュリティ管理サーバーに対する活発な侵入キャンペーン</title>
+      <link>https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign</link>
+      <guid isPermaLink="false">https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign</guid>
+      <description>[Score: 90] GreyNoiseは、Check Pointセキュリティ管理サーバーを標的とした活発な侵入キャンペーンを追跡しています。 / GT13という脅威アクターが、ExpressVPNの出口IPや侵害されたCheck Pointデバイスを含む99のIPアドレスを使用し、CVE-2026-61500を悪用してHFSサーバーを侵害しています。 / このキャンペーンでは、1400以上のネットワークセッション、800以上のコマンドラインアーティファクト、1200以上のファイル操作が観測されており、攻撃者の高度な手口が明らかになっています。 [実務示唆: Check Pointセキュリティ管理サーバーを利用している組織は、CVE-2026-61500のパッチ適用状況を確認し、不審なネットワークアクティビティやログを徹底的に監視して、速やかに対応策を講じるべきです。] (Source: Hacker News)</description>
+      <pubDate>Tue, 24 Nov 2026 16:32:17 +0000</pubDate>
     </item>
     <item>
-      <title>開発者のためのサイバーセキュリティガバナンス：ツールだけでは救われない理由</title>
-      <link>https://dev.to/zianetworksinsight/cybersecurity-governance-for-developers-why-tools-alone-wont-save-you-5dae</link>
-      <guid isPermaLink="false">https://dev.to/zianetworksinsight/cybersecurity-governance-for-developers-why-tools-alone-wont-save-you-5dae</guid>
-      <description>[Score: 85] サイバーセキュリティガバナンスは、ツールだけでなく、リーダーシップ、ポリシー、責任のフレームワークが不可欠であると強調しています。 / ツールはドアの鍵に過ぎず、どのドアに鍵が必要か、誰が鍵を持つか、侵入された場合にどうするかを決めるのがガバナンスの役割です。 / CODEOWNERS、SECURITY.md、CI/CDパイプラインでの自動化を通じて、ガバナンスをコードベースに組み込む具体的な方法が示されています。 [実務示唆: 開発チームは、セキュリティツールを導入するだけでなく、CODEOWNERSやSECURITY.mdの活用、CI/CDでの自動化を通じて、セキュリティガバナンスを開発プロセスに統合し、組織全体のセキュリティ体制を強化すべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 24 Nov 2026 05:41:37 +0000</pubDate>
+      <title>当社お客様の情報漏えいに関するお詫びとお知らせ（第2報）:楽天証券</title>
+      <link>https://www.rakuten-sec.co.jp/web/info/info20261124-04.html</link>
+      <guid isPermaLink="false">https://www.rakuten-sec.co.jp/web/info/info20261124-04.html</guid>
+      <description>[Score: 90] 楽天証券は、お客様の情報漏えいに関する第2報として、約441万件の個人情報が外部に持ち出されたことを発表しました。 / 漏えいした情報には、氏名、生年月日、住所、電話番号に加え、性別、国籍、FAX番号、入金先口座情報などが含まれます。 / 現時点では、ログインパスワードや取引に必要な情報の漏えいは確認されておらず、不正アクセスや不正取引も確認されていないとのことです。 [実務示唆: 企業は、顧客情報の取り扱いについて改めてセキュリティ対策を徹底し、定期的な脆弱性診断と従業員へのセキュリティ教育を強化すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 24 Nov 2026 13:06:22 +0000</pubDate>
     </item>
     <item>
-      <title>ネストされた仮想化を安全に無効化してCVE-2026-99312を閉じる方法</title>
-      <link>https://dev.to/bianliang/how-to-close-cve-2026-99312-by-disabling-nested-virtualization-safely-18pj</link>
-      <guid isPermaLink="false">https://dev.to/bianliang/how-to-close-cve-2026-99312-by-disabling-nested-virtualization-safely-18pj</guid>
-      <description>[Score: 80] CVE-2026-99312の恒久的な修正はハイパーバイザーのパッチですが、即時再起動できない場合はネストされた仮想化の無効化が緩和策として有効です。 / この脆弱性はAMD KVMホストでL2仮想マシンが実行され、ページングが無効な状態でネストされたページテーブルポインタが誤って処理される場合に発生します。 / 緩和策として、AMDプロセッサとKVMを使用していることを確認し、/sys/module/kvm_amd/parameters/nestedの値を変更してネストされた仮想化を無効にする手順が示されています。 [実務示唆: AMD KVMホストを使用している場合、CVE-2026-99312の緩和策として、本番環境でネストされた仮想化が有効になっていないか確認し、必要に応じて安全に無効化する手順を検証すべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 24 Nov 2026 05:43:15 +0000</pubDate>
+      <title>COLDCARD事後分析: 脆弱なシードがオフライン窃盗を可能にした</title>
+      <link>https://dev.to/pandasecurity/coldcard-postmortem-weak-seeds-enabled-offline-theft-2e1</link>
+      <guid isPermaLink="false">https://dev.to/pandasecurity/coldcard-postmortem-weak-seeds-enabled-offline-theft-2e1</guid>
+      <description>[Score: 90] ハードウェアウォレットCOLDCARDのファームウェアに欠陥があり、意図せずソフトウェア乱数生成器が使用され、ウォレットシードが脆弱になっていたことが判明しました。 / この欠陥により、一部のユーザーのビットコインがオフラインで不正に引き出される被害が発生しました。 / Coinkiteは迅速に修正ファームウェアをリリースし、独立機関によるレビューも公開しています。 [実務示唆: ハードウェアウォレットのファームウェアは常に最新の状態に保ち、セキュリティに関する公式アナウンスを定期的に確認することが重要です。] (Source: Dev.to)</description>
+      <pubDate>Tue, 24 Nov 2026 23:08:10 +0000</pubDate>
     </item>
     <item>
-      <title>構成による一貫性：CTIナレッジグラフの合成と一貫性検証の形式的限界</title>
-      <link>https://arxiv.org/abs/2611.26717</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.26717</guid>
-      <description>[Score: 75] 本記事は、CTI（脅威インテリジェンス）ナレッジグラフの構築における一貫性の問題に焦点を当てています。 / ナレッジグラフの合成方法と、その一貫性を検証する際の形式的な限界について論じています。 / サイバーセキュリティ分野における情報整理と分析の課題解決に貢献する研究です。 [実務示唆: CTIナレッジグラフを構築する際は、情報の整合性を確保するための設計原則を初期段階から導入し、一貫性検証の限界を理解した上で運用計画を立てるべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Mon, 23 Nov 2026 05:00:00 +0000</pubDate>
+      <title>ロシア軍の死者４９万人超か、サイバー攻撃による流出データは「本物」と英報道…「５分に１人」戦死の計算</title>
+      <link>https://www.yomiuri.co.jp/world/20261124-GYT1T00383/</link>
+      <guid isPermaLink="false">https://www.yomiuri.co.jp/world/20261124-GYT1T00383/</guid>
+      <description>[Score: 75] 英BBCは、サイバー攻撃で流出したロシア統計局のデータを検証し、ロシア軍の死者が少なくとも49万334人に上ると報じました。 / このデータは、ハッカー集団サイレントクロウが提供したもので、侵略開始から今年9月までの死亡記録が含まれています。 / 約5分に1人が戦死している計算となり、プーチン政権が多大な犠牲を顧みずに侵略を続けている実態が浮き彫りになりました。 [実務示唆: サイバー攻撃による情報流出が国際情勢に与える影響は大きく、国家レベルでのサイバーセキュリティ対策の強化が喫緊の課題であることを認識すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 24 Nov 2026 15:56:25 +0000</pubDate>
     </item>
   </channel>
 </rss>
