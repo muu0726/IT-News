@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Nov 2026 05:46:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 22:43:52 +0000</lastBuildDate>
     <item>
       <title>AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達</title>
       <link>https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</link>
@@ -14,39 +14,25 @@
       <pubDate>Tue, 24 Nov 2026 15:19:30 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
-      <link>https://www.publickey1.jp/blog/26/database_hubai.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
-      <description>[Score: 88] マイクロソフトが「Microsoft Ignite 2026」で、クラウドやオンプレミスのデータベースを一元管理する「Database Hub in Fabric」を正式リリースしました。 / Azure SQL、PostgreSQL、Cosmos DB、SQL Serverなど多様なデータベースに対応し、統合データ分析基盤Microsoft Fabric上で動作します。 / AIエージェントによる運用監視の自動化機能も搭載し、リアルタイムのCPU、メモリ、ストレージトレンド追跡が可能です。 [実務示唆: 複数のデータベースを運用している企業は、Database Hubの導入を検討し、管理コスト削減と運用効率向上、AIによる監視自動化の恩恵を評価すべきです。] (Source: Publickey)</description>
-      <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
+      <title>SSHはGUIフレームワークである</title>
+      <link>https://zydra.sh/articles/ssh-is-a-gui-framework/</link>
+      <guid isPermaLink="false">https://zydra.sh/articles/ssh-is-a-gui-framework/</guid>
+      <description>[Score: 85] SSHは単なるリモート接続ツールではなく、マルチプレックス化された暗号化バイトストリームであり、クロスプラットフォームのレンダリングエンジンとして機能します。 / Kitty Graphics Protocolなどの新しいターミナルプロトコルは、グラフィックス、クリップボード共有、通知、マウスサポートなどをSSH上で実現しています。 / 著者は、SSH経由でネイティブにレンダリングされるデスクトップ環境を持つマイクロVMを作成し、その可能性を示しています。 [実務示唆: SSHの新たな可能性を探るため、記事で紹介されているマイクロVMを試用し、SSH経由でのGUIアプリケーション開発の検討を推奨します。] (Source: Hacker News)</description>
+      <pubDate>Sat, 21 Nov 2026 14:52:41 +0000</pubDate>
     </item>
     <item>
-      <title>PostgreSQL 19正式リリース。ノンブロッキングなREPACKやI/Oワーカーのオートスケールなど新機能</title>
-      <link>https://www.publickey1.jp/blog/26/postgresql_19repackio.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresql_19repackio.html</guid>
-      <description>[Score: 85] PostgreSQL 19が正式リリースされ、Autovacuumのパラレルワーカー利用による高速化が実現しました。 / ノンブロッキングなREPACK (CONCURRENTLY) コマンドが導入され、稼働中でもテーブル再編成が可能に。 / I/Oワーカーのオートスケール機能や外部キー検査のパフォーマンス改善も含まれています。 [実務示唆: PostgreSQL 19へのアップグレードを検討し、ノンブロッキングREPACKやI/Oワーカーのオートスケール機能を活用して、データベース運用効率とパフォーマンス向上を図るべきです。] [GitHub: postgres/postgres] (Source: Publickey)</description>
-      <pubDate>Mon, 23 Nov 2026 15:45:37 +0000</pubDate>
+      <title>アプリケーションのモダナイゼーションにおける次の安全なステップを選択する方法</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/</guid>
+      <description>[Score: 85] アプリケーションのモダナイゼーションを安全に進めるための「エビデンスファースト」なアプローチを提案しています。 / 既存システムの動作を検証し、回帰テストの網羅性を確保するための証拠収集の重要性を強調。 / GitHub Copilotエージェントスキルにこの手順をエンコードする方法も示唆されており、AIを活用したモダナイゼーションの可能性に言及しています。 [実務示唆: アプリケーションのモダナイゼーションに着手する際は、まず既存システムの挙動に関するエビデンスを徹底的に収集し、それを基に段階的な変更計画を立てることで、リスクを最小限に抑えましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Wed, 25 Nov 2026 15:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>なぜNext.js 16のSaaSダッシュボードはまだ遅く感じるのか</title>
-      <link>https://dev.to/vladzoff/why-your-nextjs-16-saas-dashboard-still-feels-slow-1p6j</link>
-      <guid isPermaLink="false">https://dev.to/vladzoff/why-your-nextjs-16-saas-dashboard-still-feels-slow-1p6j</guid>
-      <description>[Score: 85] Next.js 16のSaaSダッシュボードが遅く感じる原因と、その解決策について解説しています。 / 個々のリクエストは速くても、ページ全体の表示が遅れる原因として、キャッシュコンポーネント、部分的なプリフェッチ、ストリーミングの活用不足を挙げています。 / ユーザーが実際に何を待っているのかを特定し、不必要なサーバー処理を削減することが重要であると強調しています。 [実務示唆: Next.js 16のSaaSダッシュボードのパフォーマンス改善には、Cache ComponentsとPartial Prefetchingを明示的に有効にし、ユーザーが待つボトルネックを特定して最適化することが効果的です。] [GitHub: vercel/next.js] (Source: Dev.to)</description>
-      <pubDate>Wed, 25 Nov 2026 05:40:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>スカッシュマージ：semantic-releaseはコミットではなくPRタイトルを読み込む</title>
-      <link>https://dev.to/roalcantara/squash-merges-semantic-release-reads-the-pr-title-not-your-commits-2g1i</link>
-      <guid isPermaLink="false">https://dev.to/roalcantara/squash-merges-semantic-release-reads-the-pr-title-not-your-commits-2g1i</guid>
-      <description>[Score: 80] semantic-releaseがConventional Commitsに基づいてバージョンをカットする際、スカッシュマージされたPRではコミットメッセージではなくPRタイトルが参照されます。 / これにより、PR内の個々のコミットがConventional Commitsの規約に従っていても、PRタイトルが不適切だとバージョンリリースが行われない問題が発生します。 / 筆者はこの問題により、多数のfeat/fixコミットがリリースに反映されなかった経験を共有しています。 [実務示唆: semantic-releaseを使用しスカッシュマージを行う場合、PRタイトルがConventional Commits規約に準拠しているか確認し、自動生成されるPRタイトルに注意して手動で修正することを推奨します。] [GitHub: semantic-release/semantic-release] (Source: Dev.to)</description>
-      <pubDate>Wed, 25 Nov 2026 05:40:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>GitHub稼働状況レポート: 2026年10月</title>
-      <link>https://github.blog/news-insights/company-news/github-availability-report-october-2026/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/company-news/github-availability-report-october-2026/</guid>
-      <description>[Score: 75] GitHubは2026年10月の稼働状況レポートを公開し、可用性と信頼性向上の取り組みを報告しました。 / Azure Central USへの大幅な容量追加と障害エスカレーション経路の削減を進めました。 / しかし、書き込み停止、データ移行中の監視ギャップ、地域ネットワーク障害が発生し、容量増強と並行して安全な運用と分離、地域復旧の検証の必要性が強調されました。 [実務示唆: 大規模なサービスを運用するエンジニアは、GitHubの事例から、容量増強だけでなく、運用手順の安全性、システムの分離、災害復旧計画の定期的な検証の重要性を学び、自社システムに適用すべきです。] [GitHub: github/docs] (Source: GitHub Blog)</description>
-      <pubDate>Fri, 13 Nov 2026 00:20:16 +0000</pubDate>
+      <title>Rails（Sidekiq＋Selenium）経験者向け：Node.jsのBullMQ＋Playwrightでバッチ処理を組むときのハマりどころ</title>
+      <link>https://qiita.com/jinxin4869/items/7771db4dccb7ddf3ac4a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/jinxin4869/items/7771db4dccb7ddf3ac4a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] RailsのSidekiqとSeleniumを使ったバッチ処理経験者向けに、Node.jsでBullMQとPlaywrightを組み合わせたバッチ処理の構築方法が解説されています。 / RailsとNode.jsのアーキテクチャの違いや、各役割に対応するライブラリの選定ポイントを詳細に説明。 / BullMQとPlaywrightの導入手順や設定のベストプラクティス、ハマりどころが具体的に示されています。 [実務示唆: RailsからNode.jsへの移行を検討する際は、SidekiqとSeleniumの代替としてBullMQとPlaywrightの組み合わせを考慮し、ioredisのインストール忘れや役割ごとの部品選定に注意すること。] [GitHub: OptimalBits/bullmq] (Source: Qiita)</description>
+      <pubDate>Tue, 24 Nov 2026 15:37:54 +0000</pubDate>
     </item>
     <item>
       <title>jQuery 4.1正式版がリリース、内部実装をquerySelectorAllに統一でより高速に。jQuery 3.x系最後となるjQuery 3.8も同時リリース</title>
@@ -56,25 +42,11 @@
       <pubDate>Tue, 24 Nov 2026 15:15:39 +0000</pubDate>
     </item>
     <item>
-      <title>JSConf JP 2026 参加ログ</title>
-      <link>https://zenn.dev/aishift/articles/b6dbe1c0acc505</link>
-      <guid isPermaLink="false">https://zenn.dev/aishift/articles/b6dbe1c0acc505</guid>
-      <description>[Score: 70] JSConf JP 2026の参加ログとして、筆者が聞いたセッションのメモが時系列でまとめられています。 / Brendan Eich氏のインタビューやJosh Junon氏の講演を含む、多様なトラックのセッション内容が紹介されています。 / スライドが公開されているものは埋め込まれており、フロントエンド技術の最新動向を概観できます。 [実務示唆: フロントエンドエンジニアは、JSConf JP 2026で発表された最新のJavaScript技術やWeb開発トレンドを把握し、自身のプロジェクトへの導入可能性を検討すべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 24 Nov 2026 08:53:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>都市に必要なメッシュ無線ノード数を計算する</title>
-      <link>https://meshcoveragecalculator.lalala.ing/</link>
-      <guid isPermaLink="false">https://meshcoveragecalculator.lalala.ing/</guid>
-      <description>[Score: 60] このウェブサイトは、都市に必要なメッシュ無線ノード数を計算するツールを提供しています。 / アクセスにはProof of Work（計算タスク）をブラウザで解決する必要があります。 / これはボット対策であり、数秒で計算が完了しサイトにアクセスできます。 [実務示唆: メッシュネットワークの導入を検討しているエンジニアは、このツールで必要なノード数を試算し、計画の参考にすると良いでしょう。] (Source: Hacker News)</description>
-      <pubDate>Mon, 23 Nov 2026 09:46:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>ボタンサウンド – プロが録音したボタンクリック音とプレス音のコレクション</title>
-      <link>https://buttons.joshwcomeau.com/</link>
-      <guid isPermaLink="false">https://buttons.joshwcomeau.com/</guid>
-      <description>[Score: 60] プロが録音した50種類以上のボタンクリック音とトグル音の無料コレクションが公開されました。 / これらのサウンドエフェクトは、UIに触覚的なフィードバックを追加するために利用できます。 / NPM経由で配布されており、簡単にプロジェクトに組み込むことが可能です。 [実務示唆: ユーザーインターフェースのUX向上を目指す開発者は、この高品質なボタンサウンドコレクションをUIに導入し、ユーザー体験を向上させることを検討してください。] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 03:23:07 +0000</pubDate>
+      <title>MakeとBufferでブログから毎日ソーシャル投稿を無料で行う</title>
+      <link>https://dev.to/shikakeworks/free-daily-social-posts-from-my-blog-with-make-and-buffer-2egl</link>
+      <guid isPermaLink="false">https://dev.to/shikakeworks/free-daily-social-posts-from-my-blog-with-make-and-buffer-2egl</guid>
+      <description>[Score: 70] ブログ記事のソーシャルメディア告知を自動化するワークフローが紹介されています。 / MakeとBufferの無料プランを活用し、X、Bluesky、Threadsへの投稿をスケジュールします。 / 記事公開時に生成されるキューファイルをMakeが読み込み、BufferのGraphQL APIを通じて自動投稿する仕組みです。 [実務示唆: ブログやコンテンツのソーシャルメディア告知を効率化するため、MakeとBufferの無料プランを活用した自動投稿システムを構築し、運用コストを削減することを検討しましょう。] (Source: Dev.to)</description>
+      <pubDate>Wed, 25 Nov 2026 22:40:39 +0000</pubDate>
     </item>
   </channel>
 </rss>

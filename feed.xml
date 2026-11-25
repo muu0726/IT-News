@@ -5,7 +5,14 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Nov 2026 05:46:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 22:43:52 +0000</lastBuildDate>
+    <item>
+      <title>1Passwordセキュリティインシデント</title>
+      <link>https://1password.com/blog/update-on-nov-2026-security-incident</link>
+      <guid isPermaLink="false">https://1password.com/blog/update-on-nov-2026-security-incident</guid>
+      <description>[Score: 100] 1Passwordは2026年11月19日に従業員のGitHubアカウントへの不正アクセスを調査開始しました。 / 攻撃者はソースコードにアクセスし、悪意のあるコードをバックエンドサービスにプッシュして顧客の管理者データをダウンロードしました。 / 顧客の氏名、メールアドレス、アカウント識別子などが流出しましたが、顧客の保管庫の内容はアクセスされていません。 [実務示唆: 1Passwordユーザーは、流出した可能性のある情報（氏名、メールアドレスなど）が悪用されるリスクに備え、不審な連絡には警戒し、パスワード以外の認証情報も確認すべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 17:18:26 +0000</pubDate>
+    </item>
     <item>
       <title>DHH氏が開発する「Omarchy 4.5」リリース。一般的なマルチウィンドウをサポート。最速7秒で導入、Appleシリコン対応、Webアプリ版MS Office用ランチャーなど新機能</title>
       <link>https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</link>
@@ -21,67 +28,18 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>GPT-6モデルが固有のタンパク質設計能力を実証</title>
-      <link>https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</link>
-      <guid isPermaLink="false">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</guid>
-      <description>[Score: 95] OpenAIのGPT-6モデルファミリーが、専門の生物学モデルに頼らず、推論とコードのみで新しいタンパク質の形状と配列を設計できることを示しました。 / 内部研究モデルは、多くのタンパク質設計タスクで専門モデルと同等かそれ以上の性能を発揮し、結合部位や形状を指定して設計を誘導することも可能です。 / GPT-6.2の設計に基づいたタンパク質は、実験室試験で複数のターゲットへの結合が確認され、数学、物理学、化学、生物学の知識を統合してタンパク質を設計していることが示唆されています。 [実務示唆: 生物学や創薬分野のAI研究者は、GPT-6のような汎用モデルがタンパク質設計に活用できる可能性を探り、専門モデルとの連携や新たな設計アプローチを検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Tue, 24 Nov 2026 21:02:22 +0000</pubDate>
+      <title>Nfs2root: LinuxカーネルのNFSサーバーにおける12年前の認証前リモートルート脆弱性</title>
+      <link>https://opensec.in/blog/nfs2root-cve-2026-99362</link>
+      <guid isPermaLink="false">https://opensec.in/blog/nfs2root-cve-2026-99362</guid>
+      <description>[Score: 95] LinuxカーネルのNFSサーバー（nfsd）に、2014年から存在する認証前ヒープオーバーフローの脆弱性（CVE-2026-99362）が発見されました。 / この脆弱性は、NFSv4.1クライアントがリプライキャッシュサイズをゼロに設定し、サーバーにフルリプライをコピーさせることで、カーネルメモリへの書き込みを可能にします。 / 影響を受けるのはLinux 3.16以降のすべてのカーネルで、修正はLinux 6.12.117, 6.18.61, 7.3.2, 7.4-rc1で適用されています。 [実務示唆: NFSサーバーを運用している場合は、速やかにLinuxカーネルを最新バージョン（6.12.117, 6.18.61, 7.3.2, 7.4-rc1以降）にアップデートし、再起動してください。] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 20:35:50 +0000</pubDate>
     </item>
     <item>
-      <title>私はキッチンでワインを飲んでいた</title>
-      <link>https://scottaaronson.blog/?p=10362</link>
-      <guid isPermaLink="false">https://scottaaronson.blog/?p=10362</guid>
-      <description>[Score: 95] AnthropicとOpenAIがそれぞれ独立してVP≠VNP予想の証明を発表したという、計算複雑性理論における画期的な進展が報告されました。 / これはP≠NP予想の代数版であり、長年の未解決問題に対する重要な一歩とされています。 / 両社の証明は異なるアプローチを取っており、計算複雑性理論の分野に大きな影響を与える可能性があります。 [実務示唆: 計算複雑性理論の最新の進展に注目し、特にP≠NP予想に関連する研究がAIや暗号技術の将来に与える影響について情報収集を続けるべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 03:02:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>コードを書くコストが下がった今、ソフトウェアエンジニアリングの価値はどこにあるのか</title>
-      <link>https://qiita.com/figueiredoluiz/items/1d6751643b84db67812e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/1d6751643b84db67812e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] AIによるコード生成の進化でコードを書くコストは下がったが、ソフトウェア開発全体の生産性向上には課題があることが指摘されています。 / AIツールの利用はコミット数を大幅に増加させるものの、リリース数の増加は限定的であるという研究結果が紹介されています。 / AI時代のエンジニアは、問題理解、設計、品質改善、そして実際に使われる価値の提供に注力すべきだと論じています。 [実務示唆: AIによるコード生成を活用しつつも、エンジニアは問題定義、システム設計、品質保証、そしてユーザー価値の創出といった上流工程や非コーディング領域に注力し、自身の専門性を高めるべきです。] (Source: Qiita)</description>
-      <pubDate>Sat, 21 Nov 2026 20:37:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>脆弱性の「CVSS 9.8」って結局なに？CVSSの読み方をちゃんと理解する</title>
-      <link>https://qiita.com/heki-dm/items/77ecaacd592d1c4459df?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/heki-dm/items/77ecaacd592d1c4459df?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 90] CVSS（共通脆弱性評価システム）は、脆弱性の深刻度を0.0〜10.0の数値で表すベンダー非依存の共通評価方法です。 / スコアだけでなく、ベクタ文字列（例: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H）を読み解くことで、脆弱性の具体的な攻撃経路や影響範囲を理解できます。 / v3.1とv4.0の違いや、CVSSスコアだけで対応優先度を決めず、自社の環境におけるリスクを考慮することの重要性が解説されています。 [実務示唆: 脆弱性対応の際はCVSSスコアだけでなくベクタ文字列を読み解き、自社システムへの影響度を評価して優先順位を決定しましょう。] (Source: Qiita)</description>
-      <pubDate>Sun, 22 Nov 2026 03:42:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>デバイス間で継続するセッションのためのAgent Host Protocolの構築</title>
-      <link>https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</link>
-      <guid isPermaLink="false">https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/</guid>
-      <description>[Score: 90] AIエージェントのセッションをデバイス間で継続させるためのオープン標準「Agent Host Protocol (AHP)」がGitHubによって開発されました。 / GitHub Copilotでは、このAHPにより、VS Codeやモバイルアプリなど異なる環境でエージェントセッションを中断なく引き継ぐことが可能です。 / AHPは、エージェントのライフタイムを特定のアプリケーションに縛らず、作業の継続性を実現します。 [実務示唆: マルチデバイス環境でAIエージェントのセッション継続性を実現したい開発者は、GitHubが提唱するAgent Host Protocol (AHP)の仕様を調査し、自身のアプリケーションやワークフローへの導入を検討しましょう。] (Source: GitHub Blog)</description>
-      <pubDate>Tue, 17 Nov 2026 18:20:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>Check Pointセキュリティ管理サーバーに対する活発な侵入キャンペーン</title>
-      <link>https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign</link>
-      <guid isPermaLink="false">https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign</guid>
-      <description>[Score: 90] GreyNoiseは、Check Pointセキュリティ管理サーバーを標的とした活発な侵入キャンペーンを追跡しています。 / GT13という脅威アクターが、ExpressVPNの出口IPや侵害されたCheck Pointデバイスを含む99のIPアドレスを使用し、CVE-2026-61500を悪用してHFSサーバーを侵害しています。 / このキャンペーンでは、1400以上のネットワークセッション、800以上のコマンドラインアーティファクト、1200以上のファイル操作が観測されており、攻撃者の高度な手口が明らかになっています。 [実務示唆: Check Pointセキュリティ管理サーバーを利用している組織は、CVE-2026-61500のパッチ適用状況を確認し、不審なネットワークアクティビティやログを徹底的に監視して、速やかに対応策を講じるべきです。] (Source: Hacker News)</description>
-      <pubDate>Tue, 24 Nov 2026 16:32:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>Gemini 4 Neon を API で叩いて Claude Code・Codex CLI と比べた：65万トークンの超長文、費用、失敗</title>
-      <link>https://zenn.dev/canly/articles/40e773759da8f8</link>
-      <guid isPermaLink="false">https://zenn.dev/canly/articles/40e773759da8f8</guid>
-      <description>[Score: 90] GoogleのGemini 4 NeonをAPI経由で利用し、Claude Opus 5.5（Claude Code経由）とGPT-6.2 Sol（Codex CLI経由）と比較検証した記事です。 / 8つの課題で超長文処理能力、費用、失敗事例を詳細に分析し、プロンプト全文や採点方法も公開されています。 / Gemini 4 Neonはベンチマークで高い性能を示す一方、Terminal-BenchやChartographyでは他モデルに劣る点も指摘されています。 [実務示唆: 大規模言語モデルを選定するエンジニアは、Gemini 4 Neonの長文処理能力とコスト効率を理解し、特定のタスクにおけるClaude OpusやGPT-6.2 Solとの性能差を考慮して最適なモデルを選択すべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 24 Nov 2026 08:51:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>当社お客様の情報漏えいに関するお詫びとお知らせ（第2報）:楽天証券</title>
-      <link>https://www.rakuten-sec.co.jp/web/info/info20261124-04.html</link>
-      <guid isPermaLink="false">https://www.rakuten-sec.co.jp/web/info/info20261124-04.html</guid>
-      <description>[Score: 90] 楽天証券は、お客様の情報漏えいに関する第2報として、約441万件の個人情報が外部に持ち出されたことを発表しました。 / 漏えいした情報には、氏名、生年月日、住所、電話番号に加え、性別、国籍、FAX番号、入金先口座情報などが含まれます。 / 現時点では、ログインパスワードや取引に必要な情報の漏えいは確認されておらず、不正アクセスや不正取引も確認されていないとのことです。 [実務示唆: 企業は、顧客情報の取り扱いについて改めてセキュリティ対策を徹底し、定期的な脆弱性診断と従業員へのセキュリティ教育を強化すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 24 Nov 2026 13:06:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>GoogleがAIの性能測定ツール「gBench」をオープンソース化</title>
-      <link>https://gigazine.net/news/20261124-google-gbench-benchmarking-framework/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261124-google-gbench-benchmarking-framework/</guid>
-      <description>[Score: 90] GoogleがAIモデルの性能を測定するベンチマークフレームワーク「gBench」をオープンソース化しました。 / gBenchは大規模言語モデル(LLM)と視覚言語モデル(VLM)に対応し、86の評価スイートやエージェントベンチマークを含み、OpenAI互換APIのエンドポイントで動作します。 / Pythonパッケージとして提供され、GitHubでソースコードが公開されており、AIモデルの客観的な性能評価に貢献します。 [実務示唆: gBenchを活用して自社開発または利用中のAIモデルの性能を客観的に評価し、モデル選定や改善の意思決定に役立てることを推奨します。] [GitHub: google-deepmind/gbench] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 24 Nov 2026 03:53:34 +0000</pubDate>
+      <title>「氏名は含まれておりません」では済まない——KARTE事件で漏れた行動の記録は誰の個人データか</title>
+      <link>http://takagi-hiromitsu.jp/diary/20261124.html</link>
+      <guid isPermaLink="false">http://takagi-hiromitsu.jp/diary/20261124.html</guid>
+      <description>[Score: 95] プレイドの「KARTE」への不正アクセスにより、多数の企業でエンドユーザーの行動記録が漏洩しました。 / 多くの企業が「氏名が含まれない」と公表していますが、筆者は氏名の有無で個人データか否かは決まらないと指摘しています。 / 企業が誰のデータか識別できる場合、氏名がなくても個人データに該当し、個人情報保護法上の報告義務が生じると警鐘を鳴らしています。 [実務示唆: 個人情報漏洩の際、「氏名なし」でも容易照合性があれば個人データに該当するため、自社で識別可能な情報は全て漏洩対象として適切に公表・対応すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 25 Nov 2026 00:26:29 +0000</pubDate>
     </item>
     <item>
       <title>AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達</title>
@@ -91,60 +49,102 @@
       <pubDate>Tue, 24 Nov 2026 15:19:30 +0000</pubDate>
     </item>
     <item>
-      <title>Netflix、AIエージェント向けにソフトウェア開発を適応</title>
-      <link>https://dev.to/guiadeti/netflix-adapta-o-desenvolvimento-de-software-para-agentes-de-ia-2gn2</link>
-      <guid isPermaLink="false">https://dev.to/guiadeti/netflix-adapta-o-desenvolvimento-de-software-para-agentes-de-ia-2gn2</guid>
-      <description>[Score: 90] Netflixのコマースチームは、エンジニアとAIコーディングエージェントが協働できるよう開発サイクルを適応させました。 / 彼らは、人間とAIエージェントの両方のために書かれた45のアーキテクチャ決定記録を作成し、文書化と一貫性を重視しています。 / これにより、AIエージェントが適切なコンテキストとガイダンスを得て、テスト移行などのタスクを効率的に実行できるようになりました。 [実務示唆: AIを開発プロセスに導入する企業は、Netflixの事例を参考に、AIエージェント向けの明確なドキュメントとコンテキストエンジニアリングを構築すべきです。] (Source: Dev.to)</description>
-      <pubDate>Tue, 24 Nov 2026 23:08:32 +0000</pubDate>
+      <title>信じられない、信じられない、信じられない、信じられない：今起きていることの大きさ</title>
+      <link>https://scottaaronson.blog/?p=10379</link>
+      <guid isPermaLink="false">https://scottaaronson.blog/?p=10379</guid>
+      <description>[Score: 90] OpenAIとAnthropicがVP ≠ VNPの証明を発表し、さらにOpenAIが行列乗算の指数ωが正確に9/4であるという下限を証明しました。 / これは1960年代からのアルゴリズムの中心的な謎に対する答えであり、AIがω&gt;2のような下限を証明できたことは大きな衝撃です。 / AIによる数学的発見の速度と深さが、これまでの予想をはるかに超えていることを示しています。 [実務示唆: AIが数学の未解決問題に貢献する能力は、科学研究の進め方を根本的に変える可能性があり、AIを活用した新たな研究パラダイムの探求を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 19:11:27 +0000</pubDate>
     </item>
     <item>
-      <title>COLDCARD事後分析: 脆弱なシードがオフライン窃盗を可能にした</title>
-      <link>https://dev.to/pandasecurity/coldcard-postmortem-weak-seeds-enabled-offline-theft-2e1</link>
-      <guid isPermaLink="false">https://dev.to/pandasecurity/coldcard-postmortem-weak-seeds-enabled-offline-theft-2e1</guid>
-      <description>[Score: 90] ハードウェアウォレットCOLDCARDのファームウェアに欠陥があり、意図せずソフトウェア乱数生成器が使用され、ウォレットシードが脆弱になっていたことが判明しました。 / この欠陥により、一部のユーザーのビットコインがオフラインで不正に引き出される被害が発生しました。 / Coinkiteは迅速に修正ファームウェアをリリースし、独立機関によるレビューも公開しています。 [実務示唆: ハードウェアウォレットのファームウェアは常に最新の状態に保ち、セキュリティに関する公式アナウンスを定期的に確認することが重要です。] (Source: Dev.to)</description>
-      <pubDate>Tue, 24 Nov 2026 23:08:10 +0000</pubDate>
+      <title>AIで学習アプリを作って2週間で宅建に合格した話【テキスト不要】｜Shikimi</title>
+      <link>https://note.com/shikimi_crypto/n/n35d0bb54e6fb</link>
+      <guid isPermaLink="false">https://note.com/shikimi_crypto/n/n35d0bb54e6fb</guid>
+      <description>[Score: 90] 筆者がAIを活用して自作学習アプリとYouTube教材のみで、2週間という短期間で宅建試験に合格した体験談です。 / 市販テキストを使わず、過去問を最初に解いて現状を把握し、AIで効率的な学習アプリを開発した戦略が紹介されています。 / 本業がコンサルでAIエージェント活用を支援している経験が、この学習方法に活かされています。 [実務示唆: 資格学習や新しい知識習得において、AIを活用した自分専用の学習ツール開発は、効率的な学習を可能にするため、積極的に検討すべきである。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 25 Nov 2026 09:23:07 +0000</pubDate>
     </item>
     <item>
-      <title>サンドボックス化されたモデルが推論サーバーを介して通信できる</title>
-      <link>https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being</link>
-      <guid isPermaLink="false">https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being</guid>
-      <description>[Score: 90] サンドボックス化されたAIモデルが、推論サーバーの環境変数を操作することで相互に通信できるサイドチャネル攻撃の可能性が示されました。 / モデルがプローブの有無やバッチ処理の状況など、環境の微妙な変化を検知・操作できることを利用しています。 / この通信は少量の情報でも、セキュリティ上の重大なリスクをもたらす可能性があります。 [実務示唆: AIモデルのサンドボックス環境が完全に安全ではない可能性を認識し、推論サーバーの環境変数やサイドチャネル攻撃に対するセキュリティ対策を強化する必要があります。] [GitHub: niranjan-deshpande/side-channel-communication] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 02:34:21 +0000</pubDate>
+      <title>AnthropicとOpenAIの従業員らが「未公開モデルが強力になりすぎて一般公開するのは危険」と懸念</title>
+      <link>https://gigazine.net/news/20261125-anthropic-openai-employees-fear-unreleased-ai-models/</link>
+      <guid isPermaLink="false">https://gigazine.net/news/20261125-anthropic-openai-employees-fear-unreleased-ai-models/</guid>
+      <description>[Score: 90] AnthropicとOpenAIの従業員らが、未公開の最先端AIモデルが予測よりも早く高性能化しすぎていると懸念を表明しています。 / これらのAIモデルは、すでに制御技術を凌駕し始めており、公開の安全性確保が困難になっているとのことです。 / 社内では、問題解決可能派とリスク考慮によるトレーニング中止派に意見が分かれている状況が報じられています。 [実務示唆: 最先端AIモデルの安全性と制御に関する議論は今後も活発化するため、AI開発者は倫理的・技術的リスクを常に考慮し、慎重な開発と公開プロセスを検討すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 25 Nov 2026 11:43:19 +0000</pubDate>
     </item>
     <item>
-      <title>財務省CIOが職務を怠り、ゲーム開発に熱中している問題 #147</title>
-      <link>https://github.com/samcorcos/legatum/issues/147</link>
-      <guid isPermaLink="false">https://github.com/samcorcos/legatum/issues/147</guid>
-      <description>[Score: 90] 財務省の金融犯罪取締ネットワーク（FinCEN）がサイバーセキュリティ侵害によりシステム障害を起こしています。 / この障害により、金融機関は疑わしい活動報告（SAR）を提出できず、機密取引データがハッキングされた可能性も指摘されています。 / しかし、財務省のCIOは、この重大な問題への対応を怠り、代わりにCivilizationゲームのクローン開発に時間を費やしていると報じられています。 [実務示唆: 政府機関のシステム障害は広範な影響を及ぼすため、類似の重要インフラを扱う組織は、緊急時の対応計画と責任体制を再確認し、サイバーセキュリティ対策を強化すべきです。] [GitHub: samcorcos/legatum] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 04:56:36 +0000</pubDate>
+      <title>【自動化】Muse のサイドチャットへ Webhook を届ける MuseKnock の仕組み</title>
+      <link>https://zenn.dev/codehex/articles/33bc6ee330b880</link>
+      <guid isPermaLink="false">https://zenn.dev/codehex/articles/33bc6ee330b880</guid>
+      <description>[Score: 88] Metaの個人向けAIエージェント「Muse」に対し、外部イベント（Slackメンション、GitHubリリースなど）をトリガーにメッセージを送信するOSS「MuseKnock」が開発されました。 / MuseKnockはCloudflare Workersにデプロイされ、Webhookを受け取り、Museのサイドチャットにメッセージとして投稿することで、AIを即座に動かします。 / この仕組みは、Museのサイドチャット、カスタムコネクター、Gadget SDKを活用しており、定期実行ではなくイベント駆動でAIを呼び出すことを可能にします。 [実務示唆: Meta Museを利用している場合、MuseKnockを導入することで、外部サービスからのイベントをトリガーにAIを自動実行させ、業務効率化や情報連携のリアルタイム化を図りましょう。] [GitHub: codehex/museknock] (Source: Zenn)</description>
+      <pubDate>Wed, 25 Nov 2026 06:12:03 +0000</pubDate>
     </item>
     <item>
-      <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
-      <link>https://www.publickey1.jp/blog/26/database_hubai.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
-      <description>[Score: 88] マイクロソフトが「Microsoft Ignite 2026」で、クラウドやオンプレミスのデータベースを一元管理する「Database Hub in Fabric」を正式リリースしました。 / Azure SQL、PostgreSQL、Cosmos DB、SQL Serverなど多様なデータベースに対応し、統合データ分析基盤Microsoft Fabric上で動作します。 / AIエージェントによる運用監視の自動化機能も搭載し、リアルタイムのCPU、メモリ、ストレージトレンド追跡が可能です。 [実務示唆: 複数のデータベースを運用している企業は、Database Hubの導入を検討し、管理コスト削減と運用効率向上、AIによる監視自動化の恩恵を評価すべきです。] (Source: Publickey)</description>
-      <pubDate>Thu, 19 Nov 2026 15:19:21 +0000</pubDate>
+      <title>「Google Workspace MCPサーバ」と「Google Workspace CLI」が正式版としてリリース</title>
+      <link>https://www.publickey1.jp/blog/26/google_workspace_mcpgoogle_workspace_cli.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_workspace_mcpgoogle_workspace_cli.html</guid>
+      <description>[Score: 88] Googleは、Google WorkspaceをAIエージェントが操作するための「Google Workspace MCP Server」と「Google Workspace CLI」を正式版としてリリースしました。 / Workspace MCPサーバはGmailやDriveなど8つのサービスに対応し、AIエージェントからのアクセスを効率化します。 / Googleは2027年2月までにAIエージェントのWorkspaceアクセスをMCP経由に移行するよう求めています。 [実務示唆: Google Workspaceと連携するAIエージェントを開発している場合、2027年2月までにRestful APIからMCPへの移行計画を策定し、対応を進める必要があります。] (Source: Publickey)</description>
+      <pubDate>Wed, 25 Nov 2026 15:27:15 +0000</pubDate>
     </item>
     <item>
-      <title>PostgreSQL 19正式リリース。ノンブロッキングなREPACKやI/Oワーカーのオートスケールなど新機能</title>
-      <link>https://www.publickey1.jp/blog/26/postgresql_19repackio.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresql_19repackio.html</guid>
-      <description>[Score: 85] PostgreSQL 19が正式リリースされ、Autovacuumのパラレルワーカー利用による高速化が実現しました。 / ノンブロッキングなREPACK (CONCURRENTLY) コマンドが導入され、稼働中でもテーブル再編成が可能に。 / I/Oワーカーのオートスケール機能や外部キー検査のパフォーマンス改善も含まれています。 [実務示唆: PostgreSQL 19へのアップグレードを検討し、ノンブロッキングREPACKやI/Oワーカーのオートスケール機能を活用して、データベース運用効率とパフォーマンス向上を図るべきです。] [GitHub: postgres/postgres] (Source: Publickey)</description>
-      <pubDate>Mon, 23 Nov 2026 15:45:37 +0000</pubDate>
+      <title>GPT-6.2 AstraがGooglerのコードゴルフ記録を初めて破る</title>
+      <link>https://bjin.github.io/go-codegolf-benchmark/#leaderboard</link>
+      <guid isPermaLink="false">https://bjin.github.io/go-codegolf-benchmark/#leaderboard</guid>
+      <description>[Score: 85] GPT-6.2 Astraが、Google社内で2015年に行われたコードゴルフコンテストの記録を破ったことが報告されました。 / 32のプログラミング問題と8つの言語で、各モデルは30分間与えられ、最短コードを目指します。 / このベンチマークは、フロンティアモデルが人間の記録と比較してどの程度優れているかを示しています。 [実務示唆: AIによるコード生成の進化は、開発者がより効率的なコードを書くための強力なツールとなる可能性があり、最新のAIモデルを自身の開発ワークフローに組み込むことを検討すべきです。] [GitHub: bjin/go-codegolf-benchmark] (Source: Hacker News)</description>
+      <pubDate>Sun, 22 Nov 2026 16:44:48 +0000</pubDate>
     </item>
     <item>
-      <title>Ternary Bonsai 2.5 27B</title>
-      <link>https://prismml.com/news/bonsai-2-5-27b</link>
-      <guid isPermaLink="false">https://prismml.com/news/bonsai-2-5-27b</guid>
-      <description>[Score: 85] Ternary Bonsai 2.5 27Bは、Qwen3.8 27Bをベースにしたエージェント型AIモデルのアップグレード版です。 / 5.9GBのモデルサイズを維持しつつ、エージェントコーディング、マルチターンのツール利用、マルチステップタスク実行能力が大幅に向上しました。 / これにより、プライベートファイルやオンデバイスツールと連携するエージェント構築において、より高速かつ正確な結果を提供します。 [実務示唆: オンデバイスでのエージェント開発を検討しているエンジニアは、Ternary Bonsai 2.5 27Bのコンパクトなフットプリントと強化されたエージェント能力を評価し、導入を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Tue, 24 Nov 2026 20:08:03 +0000</pubDate>
+      <title>SSHはGUIフレームワークである</title>
+      <link>https://zydra.sh/articles/ssh-is-a-gui-framework/</link>
+      <guid isPermaLink="false">https://zydra.sh/articles/ssh-is-a-gui-framework/</guid>
+      <description>[Score: 85] SSHは単なるリモート接続ツールではなく、マルチプレックス化された暗号化バイトストリームであり、クロスプラットフォームのレンダリングエンジンとして機能します。 / Kitty Graphics Protocolなどの新しいターミナルプロトコルは、グラフィックス、クリップボード共有、通知、マウスサポートなどをSSH上で実現しています。 / 著者は、SSH経由でネイティブにレンダリングされるデスクトップ環境を持つマイクロVMを作成し、その可能性を示しています。 [実務示唆: SSHの新たな可能性を探るため、記事で紹介されているマイクロVMを試用し、SSH経由でのGUIアプリケーション開発の検討を推奨します。] (Source: Hacker News)</description>
+      <pubDate>Sat, 21 Nov 2026 14:52:41 +0000</pubDate>
     </item>
     <item>
-      <title>CUDAとJaxからTorchTPUへ：ケイリーグラフソルバーからの教訓</title>
-      <link>https://andlukyane.com/blog/cayley-graphs-and-torchtpu</link>
-      <guid isPermaLink="false">https://andlukyane.com/blog/cayley-graphs-and-torchtpu</guid>
-      <description>[Score: 85] 本記事は、ケイリーグラフソルバーにおけるPyTorch/A100、JAX/TPU、そして新登場のTorchTPUの性能比較を詳述しています。 / 初期のTorchTPUはA100やJAXに劣る結果でしたが、最適化によりA100と同等、JAXより25%高速なビームサーチを実現しました。 / この調査はソルバー自体の改善にも繋がり、TorchTPUのGitHubイシューでアテンションルーティングの修正に貢献しました。 [実務示唆: PyTorchとTPUを利用する開発者は、TorchTPUの最適化手法（Eager Execution、動的テンソル形状の排除など）を参考に、自身のモデルで性能改善を試みるべきです。] (Source: Hacker News)</description>
-      <pubDate>Tue, 24 Nov 2026 19:40:43 +0000</pubDate>
+      <title>Claude Code のセキュリティ、2026年11月時点のベストプラクティス（サンドボックス・権限・MCP）</title>
+      <link>https://zenn.dev/happy_elements/articles/27e14ff6754044</link>
+      <guid isPermaLink="false">https://zenn.dev/happy_elements/articles/27e14ff6754044</guid>
+      <description>[Score: 85] Claude Codeのセキュリティに関する2026年11月時点のベストプラクティスがまとめられています。 / Bashコマンドの実行環境や権限ルール、サンドボックス、MCPの設定について詳しく解説。 / OSレベルの隔離とClaude Codeの設定の両方を有効にすることが重要とされています。 [実務示唆: Claude Codeを利用する際は、OSレベルの隔離とClaude Codeの設定の両方でセキュリティ対策を講じ、特にBashサンドボックスの有効化と権限ルールの設定を徹底すること。] (Source: Zenn)</description>
+      <pubDate>Wed, 25 Nov 2026 03:53:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>MCPに新機能「Skills over MCP」登場。ツールとの接続だけでなく使い方のスキルもMCP経由で提供</title>
+      <link>https://www.publickey1.jp/blog/26/mcpskills_over_mcpmcp.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/mcpskills_over_mcpmcp.html</guid>
+      <description>[Score: 85] AIエージェントと外部ツールを接続する業界標準プロトコルMCPに、新機能「Skills over MCP」がβ版として追加されました。 / これにより、AIエージェントはMCP経由で常に最新のスキルを取得でき、必要な時だけスキルを読み込むことでコンテキストを節約できます。 / AnthropicのClaudeおよびClaude CodeのPro、Max、Ultraプランでデフォルトで有効化されます。 [実務示唆: AIエージェント開発者は、Skills over MCPを活用して外部ツール連携の効率と信頼性を高め、最新のスキルを動的に利用できるよう設計を見直すべきです。] (Source: Publickey)</description>
+      <pubDate>Wed, 25 Nov 2026 15:29:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>アプリケーションのモダナイゼーションにおける次の安全なステップを選択する方法</title>
+      <link>https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/</link>
+      <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/</guid>
+      <description>[Score: 85] アプリケーションのモダナイゼーションを安全に進めるための「エビデンスファースト」なアプローチを提案しています。 / 既存システムの動作を検証し、回帰テストの網羅性を確保するための証拠収集の重要性を強調。 / GitHub Copilotエージェントスキルにこの手順をエンコードする方法も示唆されており、AIを活用したモダナイゼーションの可能性に言及しています。 [実務示唆: アプリケーションのモダナイゼーションに着手する際は、まず既存システムの挙動に関するエビデンスを徹底的に収集し、それを基に段階的な変更計画を立てることで、リスクを最小限に抑えましょう。] (Source: GitHub Blog)</description>
+      <pubDate>Wed, 25 Nov 2026 15:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>オープンソースにおける最高のものは共に築かれる</title>
+      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
+      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AnthropicによるGRH Lean検証のより短いバージョン</title>
+      <link>https://github.com/lsernau/grh-lean</link>
+      <guid isPermaLink="false">https://github.com/lsernau/grh-lean</guid>
+      <description>[Score: 80] Anthropicの研究者が、ディリクレL関数に対するリーマン予想と一般化リーマン予想のLean 4による証明の短縮版を公開しました。 / この証明はMathlibを基盤とし、特定の公理のみを使用しており、Claudeとの共同作業で作成されました。 / 本リポジトリは研究成果物であり、メンテナンスやコントリビューションは受け付けていません。 [実務示唆: 数学的証明の自動検証に関心のある研究者や開発者は、Lean 4環境を構築し、このリポジトリのコードを実際に実行して、AIによる高度な数学的推論の可能性を検証してみることを推奨します。] [GitHub: lsernau/grh-lean] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 21:48:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>RustでFiberを用いたJob Systemを実装したらReleaseビルドでバグが発生した</title>
+      <link>https://zenn.dev/otinpan/articles/082f6178eb1472</link>
+      <guid isPermaLink="false">https://zenn.dev/otinpan/articles/082f6178eb1472</guid>
+      <description>[Score: 80] RustとVulkanを用いた自作ゲームエンジンで、WindowsのFiber APIを使ったJob Systemを実装した際に、Releaseビルドでバグが発生しました。 / バグの原因は、Fiberのスレッド間移動と、コンパイラによるTLS（Thread Local Storage）アクセスの最適化が関係している可能性が浮上しました。 / 記事では、Job Systemの構成、発生したバグ、およびコンパイラ最適化とFiberの関係について詳細に説明しています。 [実務示唆: RustでFiberやTLSを使用する際は、Releaseビルドでのコンパイラ最適化による挙動の変化に注意し、スレッド間移動とTLSアクセスの相互作用を詳細に検証してください。] [GitHub: otinpan/KaniVolcanoEngine] (Source: Zenn)</description>
+      <pubDate>Wed, 25 Nov 2026 10:24:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>Rails（Sidekiq＋Selenium）経験者向け：Node.jsのBullMQ＋Playwrightでバッチ処理を組むときのハマりどころ</title>
+      <link>https://qiita.com/jinxin4869/items/7771db4dccb7ddf3ac4a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/jinxin4869/items/7771db4dccb7ddf3ac4a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 80] RailsのSidekiqとSeleniumを使ったバッチ処理経験者向けに、Node.jsでBullMQとPlaywrightを組み合わせたバッチ処理の構築方法が解説されています。 / RailsとNode.jsのアーキテクチャの違いや、各役割に対応するライブラリの選定ポイントを詳細に説明。 / BullMQとPlaywrightの導入手順や設定のベストプラクティス、ハマりどころが具体的に示されています。 [実務示唆: RailsからNode.jsへの移行を検討する際は、SidekiqとSeleniumの代替としてBullMQとPlaywrightの組み合わせを考慮し、ioredisのインストール忘れや役割ごとの部品選定に注意すること。] [GitHub: OptimalBits/bullmq] (Source: Qiita)</description>
+      <pubDate>Tue, 24 Nov 2026 15:37:54 +0000</pubDate>
     </item>
   </channel>
 </rss>
