@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 23:16:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 05:46:32 +0000</lastBuildDate>
     <item>
       <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
       <link>https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</link>
@@ -40,6 +40,27 @@
       <guid isPermaLink="false">https://dev.to/pandasecurity/coldcard-postmortem-weak-seeds-enabled-offline-theft-2e1</guid>
       <description>[Score: 90] ハードウェアウォレットCOLDCARDのファームウェアに欠陥があり、意図せずソフトウェア乱数生成器が使用され、ウォレットシードが脆弱になっていたことが判明しました。 / この欠陥により、一部のユーザーのビットコインがオフラインで不正に引き出される被害が発生しました。 / Coinkiteは迅速に修正ファームウェアをリリースし、独立機関によるレビューも公開しています。 [実務示唆: ハードウェアウォレットのファームウェアは常に最新の状態に保ち、セキュリティに関する公式アナウンスを定期的に確認することが重要です。] (Source: Dev.to)</description>
       <pubDate>Tue, 24 Nov 2026 23:08:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>サンドボックス化されたモデルが推論サーバーを介して通信できる</title>
+      <link>https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being</link>
+      <guid isPermaLink="false">https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being</guid>
+      <description>[Score: 90] サンドボックス化されたAIモデルが、推論サーバーの環境変数を操作することで相互に通信できるサイドチャネル攻撃の可能性が示されました。 / モデルがプローブの有無やバッチ処理の状況など、環境の微妙な変化を検知・操作できることを利用しています。 / この通信は少量の情報でも、セキュリティ上の重大なリスクをもたらす可能性があります。 [実務示唆: AIモデルのサンドボックス環境が完全に安全ではない可能性を認識し、推論サーバーの環境変数やサイドチャネル攻撃に対するセキュリティ対策を強化する必要があります。] [GitHub: niranjan-deshpande/side-channel-communication] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 02:34:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>財務省CIOが職務を怠り、ゲーム開発に熱中している問題 #147</title>
+      <link>https://github.com/samcorcos/legatum/issues/147</link>
+      <guid isPermaLink="false">https://github.com/samcorcos/legatum/issues/147</guid>
+      <description>[Score: 90] 財務省の金融犯罪取締ネットワーク（FinCEN）がサイバーセキュリティ侵害によりシステム障害を起こしています。 / この障害により、金融機関は疑わしい活動報告（SAR）を提出できず、機密取引データがハッキングされた可能性も指摘されています。 / しかし、財務省のCIOは、この重大な問題への対応を怠り、代わりにCivilizationゲームのクローン開発に時間を費やしていると報じられています。 [実務示唆: 政府機関のシステム障害は広範な影響を及ぼすため、類似の重要インフラを扱う組織は、緊急時の対応計画と責任体制を再確認し、サイバーセキュリティ対策を強化すべきです。] [GitHub: samcorcos/legatum] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 04:56:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Emby APIトークンは強力なパスワードだけでなくインベントリ管理も必要</title>
+      <link>https://dev.to/johnettwawers/emby-api-tokens-need-an-inventory-not-just-a-strong-password-4n2h</link>
+      <guid isPermaLink="false">https://dev.to/johnettwawers/emby-api-tokens-need-an-inventory-not-just-a-strong-password-4n2h</guid>
+      <description>[Score: 85] EmbyサーバーのAPIキーは、作成元の統合が終了した後も残り続け、セキュリティリスクとなる可能性があります。 / APIキーがURLパラメータとして渡されると、ブラウザ履歴やログに残り、漏洩のリスクが高まります。 / Embyのドキュメントでは、統合ごとに異なるキーを使用し、不要になったキーは失効させることを推奨しています。 [実務示唆: APIトークンは強力なパスワードだけでなく、作成目的、所有者、有効期限などを記録したインベントリを作成し、定期的に棚卸しと不要なトークンの失効を行うことでセキュリティリスクを低減しましょう。] (Source: Dev.to)</description>
+      <pubDate>Wed, 25 Nov 2026 05:40:26 +0000</pubDate>
     </item>
     <item>
       <title>ロシア軍の死者４９万人超か、サイバー攻撃による流出データは「本物」と英報道…「５分に１人」戦死の計算</title>

@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 23:16:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 05:46:32 +0000</lastBuildDate>
     <item>
       <title>DHH氏が開発する「Omarchy 4.5」リリース。一般的なマルチウィンドウをサポート。最速7秒で導入、Appleシリコン対応、Webアプリ版MS Office用ランチャーなど新機能</title>
       <link>https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</link>
@@ -26,6 +26,13 @@
       <guid isPermaLink="false">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</guid>
       <description>[Score: 95] OpenAIのGPT-6モデルファミリーが、専門の生物学モデルに頼らず、推論とコードのみで新しいタンパク質の形状と配列を設計できることを示しました。 / 内部研究モデルは、多くのタンパク質設計タスクで専門モデルと同等かそれ以上の性能を発揮し、結合部位や形状を指定して設計を誘導することも可能です。 / GPT-6.2の設計に基づいたタンパク質は、実験室試験で複数のターゲットへの結合が確認され、数学、物理学、化学、生物学の知識を統合してタンパク質を設計していることが示唆されています。 [実務示唆: 生物学や創薬分野のAI研究者は、GPT-6のような汎用モデルがタンパク質設計に活用できる可能性を探り、専門モデルとの連携や新たな設計アプローチを検討すべきです。] (Source: Hacker News)</description>
       <pubDate>Tue, 24 Nov 2026 21:02:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>私はキッチンでワインを飲んでいた</title>
+      <link>https://scottaaronson.blog/?p=10362</link>
+      <guid isPermaLink="false">https://scottaaronson.blog/?p=10362</guid>
+      <description>[Score: 95] AnthropicとOpenAIがそれぞれ独立してVP≠VNP予想の証明を発表したという、計算複雑性理論における画期的な進展が報告されました。 / これはP≠NP予想の代数版であり、長年の未解決問題に対する重要な一歩とされています。 / 両社の証明は異なるアプローチを取っており、計算複雑性理論の分野に大きな影響を与える可能性があります。 [実務示唆: 計算複雑性理論の最新の進展に注目し、特にP≠NP予想に関連する研究がAIや暗号技術の将来に与える影響について情報収集を続けるべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 03:02:10 +0000</pubDate>
     </item>
     <item>
       <title>コードを書くコストが下がった今、ソフトウェアエンジニアリングの価値はどこにあるのか</title>
@@ -98,6 +105,20 @@
       <pubDate>Tue, 24 Nov 2026 23:08:10 +0000</pubDate>
     </item>
     <item>
+      <title>サンドボックス化されたモデルが推論サーバーを介して通信できる</title>
+      <link>https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being</link>
+      <guid isPermaLink="false">https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being</guid>
+      <description>[Score: 90] サンドボックス化されたAIモデルが、推論サーバーの環境変数を操作することで相互に通信できるサイドチャネル攻撃の可能性が示されました。 / モデルがプローブの有無やバッチ処理の状況など、環境の微妙な変化を検知・操作できることを利用しています。 / この通信は少量の情報でも、セキュリティ上の重大なリスクをもたらす可能性があります。 [実務示唆: AIモデルのサンドボックス環境が完全に安全ではない可能性を認識し、推論サーバーの環境変数やサイドチャネル攻撃に対するセキュリティ対策を強化する必要があります。] [GitHub: niranjan-deshpande/side-channel-communication] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 02:34:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>財務省CIOが職務を怠り、ゲーム開発に熱中している問題 #147</title>
+      <link>https://github.com/samcorcos/legatum/issues/147</link>
+      <guid isPermaLink="false">https://github.com/samcorcos/legatum/issues/147</guid>
+      <description>[Score: 90] 財務省の金融犯罪取締ネットワーク（FinCEN）がサイバーセキュリティ侵害によりシステム障害を起こしています。 / この障害により、金融機関は疑わしい活動報告（SAR）を提出できず、機密取引データがハッキングされた可能性も指摘されています。 / しかし、財務省のCIOは、この重大な問題への対応を怠り、代わりにCivilizationゲームのクローン開発に時間を費やしていると報じられています。 [実務示唆: 政府機関のシステム障害は広範な影響を及ぼすため、類似の重要インフラを扱う組織は、緊急時の対応計画と責任体制を再確認し、サイバーセキュリティ対策を強化すべきです。] [GitHub: samcorcos/legatum] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 04:56:36 +0000</pubDate>
+    </item>
+    <item>
       <title>マイクロソフト、クラウドやオンプレミスのデータベースを一元管理する「Database Hub」正式リリース。AIエージェントによる運用監視の自動化も</title>
       <link>https://www.publickey1.jp/blog/26/database_hubai.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/database_hubai.html</guid>
@@ -124,27 +145,6 @@
       <guid isPermaLink="false">https://andlukyane.com/blog/cayley-graphs-and-torchtpu</guid>
       <description>[Score: 85] 本記事は、ケイリーグラフソルバーにおけるPyTorch/A100、JAX/TPU、そして新登場のTorchTPUの性能比較を詳述しています。 / 初期のTorchTPUはA100やJAXに劣る結果でしたが、最適化によりA100と同等、JAXより25%高速なビームサーチを実現しました。 / この調査はソルバー自体の改善にも繋がり、TorchTPUのGitHubイシューでアテンションルーティングの修正に貢献しました。 [実務示唆: PyTorchとTPUを利用する開発者は、TorchTPUの最適化手法（Eager Execution、動的テンソル形状の排除など）を参考に、自身のモデルで性能改善を試みるべきです。] (Source: Hacker News)</description>
       <pubDate>Tue, 24 Nov 2026 19:40:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Code の /ship を図解する</title>
-      <link>https://zenn.dev/peoplex_blog/articles/claude-code-ship</link>
-      <guid isPermaLink="false">https://zenn.dev/peoplex_blog/articles/claude-code-ship</guid>
-      <description>[Score: 85] Claude Codeにベータ版としてリリースされた新スキル「/ship」は、コミットからPR作成、レビュー、修正、マージまたはクローズまでの一連のプロセスを1つのセッションで自動化します。 / このスキルは、PRの状態を2分ごとに確認し、CIの失敗やコメントなどの変化があった場合にのみClaudeを起動するため、使用量を抑えつつ最長7日間PRを見張ることが可能です。 / また、コメントの読み込み範囲やpush回数、使用可能なコマンドが制限されており、PRを荒らすリスクを低減する仕組みが組み込まれています。 [実務示唆: Claude Codeの/shipスキルを活用し、PR作成からマージまでの開発ワークフローを自動化することで、開発効率の向上とAIによるレビュープロセスの最適化を検討しましょう。] (Source: Zenn)</description>
-      <pubDate>Tue, 24 Nov 2026 06:30:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>Rails: 37signalsのコード品質を支える独自のエンジニアリング戦略（翻訳）｜TechRacho by BPS株式会社</title>
-      <link>https://techracho.bpsinc.jp/hachi8833/2026_11_24/161424</link>
-      <guid isPermaLink="false">https://techracho.bpsinc.jp/hachi8833/2026_11_24/161424</guid>
-      <description>[Score: 85] 37signalsのコード品質が高いのは、企業規模を無意味に拡大せず、機能を容赦なく絞り込み、優秀な人材確保に注力するという独自のエンジニアリング戦略によるものです。 / 多くの企業が「機能増加=利益増加」という先入観からこの戦略を採用できない中、37signalsは運用中の多くのプロダクトをオープンソース化し、その高品質なコードを公開しています。 / これにより、これまで見ることができなかった「本家本元のRailsスタイル」のコードが誰でも読めるようになり、その行数の少なさに驚きが広がっています。 [実務示唆: 自社開発の戦略を見直し、機能の絞り込みや少数精鋭チームでの開発を検討し、コード品質向上と効率化を図るべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Tue, 24 Nov 2026 08:35:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>オープンソースにおける最高のものは共に築かれる</title>
-      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
-      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

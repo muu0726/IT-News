@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 23:16:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 05:46:32 +0000</lastBuildDate>
     <item>
       <title>AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達</title>
       <link>https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</link>
@@ -26,6 +26,20 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/postgresql_19repackio.html</guid>
       <description>[Score: 85] PostgreSQL 19が正式リリースされ、Autovacuumのパラレルワーカー利用による高速化が実現しました。 / ノンブロッキングなREPACK (CONCURRENTLY) コマンドが導入され、稼働中でもテーブル再編成が可能に。 / I/Oワーカーのオートスケール機能や外部キー検査のパフォーマンス改善も含まれています。 [実務示唆: PostgreSQL 19へのアップグレードを検討し、ノンブロッキングREPACKやI/Oワーカーのオートスケール機能を活用して、データベース運用効率とパフォーマンス向上を図るべきです。] [GitHub: postgres/postgres] (Source: Publickey)</description>
       <pubDate>Mon, 23 Nov 2026 15:45:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>なぜNext.js 16のSaaSダッシュボードはまだ遅く感じるのか</title>
+      <link>https://dev.to/vladzoff/why-your-nextjs-16-saas-dashboard-still-feels-slow-1p6j</link>
+      <guid isPermaLink="false">https://dev.to/vladzoff/why-your-nextjs-16-saas-dashboard-still-feels-slow-1p6j</guid>
+      <description>[Score: 85] Next.js 16のSaaSダッシュボードが遅く感じる原因と、その解決策について解説しています。 / 個々のリクエストは速くても、ページ全体の表示が遅れる原因として、キャッシュコンポーネント、部分的なプリフェッチ、ストリーミングの活用不足を挙げています。 / ユーザーが実際に何を待っているのかを特定し、不必要なサーバー処理を削減することが重要であると強調しています。 [実務示唆: Next.js 16のSaaSダッシュボードのパフォーマンス改善には、Cache ComponentsとPartial Prefetchingを明示的に有効にし、ユーザーが待つボトルネックを特定して最適化することが効果的です。] [GitHub: vercel/next.js] (Source: Dev.to)</description>
+      <pubDate>Wed, 25 Nov 2026 05:40:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>スカッシュマージ：semantic-releaseはコミットではなくPRタイトルを読み込む</title>
+      <link>https://dev.to/roalcantara/squash-merges-semantic-release-reads-the-pr-title-not-your-commits-2g1i</link>
+      <guid isPermaLink="false">https://dev.to/roalcantara/squash-merges-semantic-release-reads-the-pr-title-not-your-commits-2g1i</guid>
+      <description>[Score: 80] semantic-releaseがConventional Commitsに基づいてバージョンをカットする際、スカッシュマージされたPRではコミットメッセージではなくPRタイトルが参照されます。 / これにより、PR内の個々のコミットがConventional Commitsの規約に従っていても、PRタイトルが不適切だとバージョンリリースが行われない問題が発生します。 / 筆者はこの問題により、多数のfeat/fixコミットがリリースに反映されなかった経験を共有しています。 [実務示唆: semantic-releaseを使用しスカッシュマージを行う場合、PRタイトルがConventional Commits規約に準拠しているか確認し、自動生成されるPRタイトルに注意して手動で修正することを推奨します。] [GitHub: semantic-release/semantic-release] (Source: Dev.to)</description>
+      <pubDate>Wed, 25 Nov 2026 05:40:17 +0000</pubDate>
     </item>
     <item>
       <title>GitHub稼働状況レポート: 2026年10月</title>
@@ -54,6 +68,13 @@
       <guid isPermaLink="false">https://meshcoveragecalculator.lalala.ing/</guid>
       <description>[Score: 60] このウェブサイトは、都市に必要なメッシュ無線ノード数を計算するツールを提供しています。 / アクセスにはProof of Work（計算タスク）をブラウザで解決する必要があります。 / これはボット対策であり、数秒で計算が完了しサイトにアクセスできます。 [実務示唆: メッシュネットワークの導入を検討しているエンジニアは、このツールで必要なノード数を試算し、計画の参考にすると良いでしょう。] (Source: Hacker News)</description>
       <pubDate>Mon, 23 Nov 2026 09:46:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>ボタンサウンド – プロが録音したボタンクリック音とプレス音のコレクション</title>
+      <link>https://buttons.joshwcomeau.com/</link>
+      <guid isPermaLink="false">https://buttons.joshwcomeau.com/</guid>
+      <description>[Score: 60] プロが録音した50種類以上のボタンクリック音とトグル音の無料コレクションが公開されました。 / これらのサウンドエフェクトは、UIに触覚的なフィードバックを追加するために利用できます。 / NPM経由で配布されており、簡単にプロジェクトに組み込むことが可能です。 [実務示唆: ユーザーインターフェースのUX向上を目指す開発者は、この高品質なボタンサウンドコレクションをUIに導入し、ユーザー体験を向上させることを検討してください。] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 03:23:07 +0000</pubDate>
     </item>
   </channel>
 </rss>

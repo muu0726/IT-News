@@ -5,13 +5,20 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 23:16:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 05:46:32 +0000</lastBuildDate>
     <item>
       <title>GPT-6モデルが固有のタンパク質設計能力を実証</title>
       <link>https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</link>
       <guid isPermaLink="false">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/</guid>
       <description>[Score: 95] OpenAIのGPT-6モデルファミリーが、専門の生物学モデルに頼らず、推論とコードのみで新しいタンパク質の形状と配列を設計できることを示しました。 / 内部研究モデルは、多くのタンパク質設計タスクで専門モデルと同等かそれ以上の性能を発揮し、結合部位や形状を指定して設計を誘導することも可能です。 / GPT-6.2の設計に基づいたタンパク質は、実験室試験で複数のターゲットへの結合が確認され、数学、物理学、化学、生物学の知識を統合してタンパク質を設計していることが示唆されています。 [実務示唆: 生物学や創薬分野のAI研究者は、GPT-6のような汎用モデルがタンパク質設計に活用できる可能性を探り、専門モデルとの連携や新たな設計アプローチを検討すべきです。] (Source: Hacker News)</description>
       <pubDate>Tue, 24 Nov 2026 21:02:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>私はキッチンでワインを飲んでいた</title>
+      <link>https://scottaaronson.blog/?p=10362</link>
+      <guid isPermaLink="false">https://scottaaronson.blog/?p=10362</guid>
+      <description>[Score: 95] AnthropicとOpenAIがそれぞれ独立してVP≠VNP予想の証明を発表したという、計算複雑性理論における画期的な進展が報告されました。 / これはP≠NP予想の代数版であり、長年の未解決問題に対する重要な一歩とされています。 / 両社の証明は異なるアプローチを取っており、計算複雑性理論の分野に大きな影響を与える可能性があります。 [実務示唆: 計算複雑性理論の最新の進展に注目し、特にP≠NP予想に関連する研究がAIや暗号技術の将来に与える影響について情報収集を続けるべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 03:02:10 +0000</pubDate>
     </item>
     <item>
       <title>デバイス間で継続するセッションのためのAgent Host Protocolの構築</title>
@@ -63,6 +70,13 @@
       <pubDate>Tue, 24 Nov 2026 06:30:06 +0000</pubDate>
     </item>
     <item>
+      <title>行列の乗算はΘ(n^2.25)である</title>
+      <link>https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf</link>
+      <guid isPermaLink="false">https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf</guid>
+      <description>[Score: 85] 行列乗算の計算複雑度がΘ(n^2.25)であるという研究論文が公開されました。 / これは、行列乗算の理論的な下限に関する重要な進展を示唆しています。 / OpenAIのGitHubリポジトリでPDF形式で提供されています。 [実務示唆: 行列乗算の計算複雑度に関する最新の研究動向を把握し、アルゴリズム最適化の可能性について検討することが推奨されます。] [GitHub: openai/math] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 01:19:26 +0000</pubDate>
+    </item>
+    <item>
       <title>Playbook - .Net MCP to keep your agents using the latest language features</title>
       <link>https://dev.to/pingu2k4/playbook-net-mcp-to-keep-your-agents-using-the-latest-language-features-2nfg</link>
       <guid isPermaLink="false">https://dev.to/pingu2k4/playbook-net-mcp-to-keep-your-agents-using-the-latest-language-features-2nfg</guid>
@@ -77,39 +91,25 @@
       <pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>PenGPT: 手書きとスケッチのための生成Transformer</title>
+      <link>https://greydanus.github.io/2026/11/12/pengpt/</link>
+      <guid isPermaLink="false">https://greydanus.github.io/2026/11/12/pengpt/</guid>
+      <description>[Score: 80] PenGPTは、テキストから手書き文字やスケッチを生成する小型のTransformerモデルです。 / 少量のデータで多様な手書きスタイルを学習し、未見の筆跡も再現できる6Mパラメータモデルと、テキストプロンプトから描画する54Mパラメータモデルがあります。 / データセットの構築と効率的な学習が成功の鍵であり、モデルのアーキテクチャ自体はシンプルであることが示されています。 [実務示唆: 手書き認識や生成、デザインツール開発に携わるエンジニアは、PenGPTのデータ中心のアプローチを参考に、少量のデータで多様なスタイルを学習させる手法を検討してください。] [GitHub: greydanus/greydanus.github.io] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 00:54:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI時代の実践・形式検証入門</title>
+      <link>https://docs.google.com/presentation/d/1s-ie7b1rD47NUkwSIvdDYCJfrHzWOl-rt1c2hSgeerM/mobilepresent?slide=id.p1</link>
+      <guid isPermaLink="false">https://docs.google.com/presentation/d/1s-ie7b1rD47NUkwSIvdDYCJfrHzWOl-rt1c2hSgeerM/mobilepresent?slide=id.p1</guid>
+      <description>[Score: 80] 本記事は「AI時代の実践・形式検証入門」と題されたGoogle Slidesのプレゼンテーションです。 / AI技術が進化する現代において、ソフトウェアやシステムの信頼性を確保するための形式検証の重要性を解説しています。 / 具体的な手法や実践的なアプローチについて、入門者向けに分かりやすく説明されていると推測されます。 [実務示唆: AIが生成するコードや複雑なシステムの信頼性確保のため、形式検証の基礎を学び、開発プロセスに導入することで、潜在的なバグや脆弱性を早期に発見し品質向上に繋げましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Tue, 24 Nov 2026 21:16:53 +0000</pubDate>
+    </item>
+    <item>
       <title>追記型記録ツールで訂正時に重複が残る問題とAIの挙動：Claude Codeによる検証</title>
       <link>https://zenn.dev/kentaro_tak/articles/mcp-logger-append-only-corrections</link>
       <guid isPermaLink="false">https://zenn.dev/kentaro_tak/articles/mcp-logger-append-only-corrections</guid>
       <description>[Score: 78] 追記型記録ツールで訂正を行うと、古い情報が残り重複が発生する問題について検証しています。 / Claude Codeに訂正作業を依頼した結果、AIは「消せない」と正直に伝えるものの、集計を誤るケースがありました。 / SQLiteと3つの書き方、3つのClaudeモデルで27回の試行を行い、AIの挙動と限界を詳細に分析しています。 [実務示唆: AIエージェントにデータ操作を任せる際は、追記型システムでの訂正処理の限界を理解し、AIが提供する情報だけでなく、実際のデータ状態を必ず確認する仕組みを導入すべきです。] (Source: Zenn)</description>
       <pubDate>Tue, 24 Nov 2026 14:04:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>点群からエンジニアリングモデルへ: 建築環境におけるエージェント型3D再構築のベンチマーク</title>
-      <link>https://arxiv.org/abs/2611.28197</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.28197</guid>
-      <description>[Score: 78] 本論文は、建築環境におけるエージェント型3D再構築のベンチマークに関する研究です。 / 点群データからエンジニアリングモデルを生成するプロセスに焦点を当てています。 / arXivLabsのフレームワークを通じて公開されており、関連分野の研究者や開発者に情報を提供します。 [実務示唆: 建築・建設分野で3Dスキャンデータや点群データを扱うエンジニアは、本研究のベンチマーク結果を参考に、エージェント型3D再構築技術の導入や評価を進めることができます。] (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Copilot Studioのエージェント開発をClaude Codeにどこまで任せられるか試した</title>
-      <link>https://zenn.dev/upgradetech/articles/a9a1637d3071c1</link>
-      <guid isPermaLink="false">https://zenn.dev/upgradetech/articles/a9a1637d3071c1</guid>
-      <description>[Score: 75] Copilot Studioでのエージェント開発において、Claude Codeがどこまで自動化できるかを検証した記事です。 / 画面操作の代わりに自然言語でClaude Codeに指示し、PAC CLIやPower Automateプラグインなどを利用してエージェントを構築しました。 / 社内図書コーナー案内アシスタントを題材に、依頼文やファイル内容も公開されており、再現性が高い検証となっています。 [実務示唆: Copilot StudioやPower Automateを利用する開発者は、Claude CodeのようなAIエージェントを活用して、設定ファイルの編集や自動処理の構築を効率化できる可能性を探るべきです。] (Source: Zenn)</description>
-      <pubDate>Tue, 24 Nov 2026 09:24:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>SAMA: 5つの公開データセットにおけるカメラベース心拍数推定のためのトレーニング不要なコンセンサスリッジトラッキング</title>
-      <link>https://arxiv.org/abs/2611.28185</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.28185</guid>
-      <description>[Score: 75] 本論文は、カメラベースの心拍数推定に関する新しい手法「SAMA」を提案しています。 / SAMAは、トレーニング不要なコンセンサスリッジトラッキングを利用しており、5つの公開データセットで評価されています。 / arXivLabsのフレームワークを通じて公開されており、オープンな研究開発を促進するものです。 [実務示唆: カメラを用いた非接触型生体情報計測に関心のある開発者は、SAMAの手法を参考に、既存のシステムへの応用や性能改善を検討できます。] (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>FinEvo: 長期的な金融モデリングのための再帰的自己改善</title>
-      <link>https://arxiv.org/abs/2611.28239</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.28239</guid>
-      <description>[Score: 75] FinEvoは、長期的な金融モデリングにおける再帰的自己改善手法に関する研究です。 / 金融市場の予測精度向上を目指し、AIエージェントが自己学習を繰り返すアプローチを提案しています。 / arXivLabsのフレームワーク上で開発・共有される可能性のあるプロジェクトの一つです。 [実務示唆: 金融モデリングに携わるエンジニアは、再帰的自己改善アルゴリズムを既存の予測モデルに適用し、長期的な予測精度向上への寄与を検証すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Tue, 24 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

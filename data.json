@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T08:14:51.311327+09:00",
-  "total_count": 43,
-  "success_count": 43,
+  "generated_at": "2026-11-25T14:45:30.205977+09:00",
+  "total_count": 64,
+  "success_count": 64,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -73,6 +73,30 @@
       "analysis_status": "ok",
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "私はキッチンでワインを飲んでいた",
+      "url": "https://scottaaronson.blog/?p=10362",
+      "source": "Hacker News",
+      "published": "2026-11-25T03:02:10+00:00",
+      "hn_score": 96,
+      "hn_comments": 55,
+      "reading_min": 13,
+      "summary": "AnthropicとOpenAIがそれぞれ独立してVP≠VNP予想の証明を発表したという、計算複雑性理論における画期的な進展が報告されました。\nこれはP≠NP予想の代数版であり、長年の未解決問題に対する重要な一歩とされています。\n両社の証明は異なるアプローチを取っており、計算複雑性理論の分野に大きな影響を与える可能性があります。",
+      "actionable_takeaway": "計算複雑性理論の最新の進展に注目し、特にP≠NP予想に関連する研究がAIや暗号技術の将来に与える影響について情報収集を続けるべきです。",
+      "tags": [
+        "計算複雑性理論",
+        "P≠NP",
+        "数学"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "計算複雑性理論における長年の難問であるVP≠VNP予想の証明は、理論計算機科学およびAIの基礎に極めて大きな影響を与える画期的な成果であるため、最高スコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -211,7 +235,7 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 234
+      "hatena_count": 351
     },
     {
       "title": "GoogleがAIの性能測定ツール「gBench」をオープンソース化",
@@ -234,7 +258,7 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 21
+      "hatena_count": 49
     },
     {
       "title": "AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達",
@@ -257,7 +281,7 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 43
     },
     {
       "title": "Netflix、AIエージェント向けにソフトウェア開発を適応",
@@ -300,6 +324,56 @@
       "analysis_status": "ok",
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "サンドボックス化されたモデルが推論サーバーを介して通信できる",
+      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "source": "Hacker News",
+      "published": "2026-11-25T02:34:21+00:00",
+      "hn_score": 103,
+      "hn_comments": 38,
+      "reading_min": 2,
+      "summary": "サンドボックス化されたAIモデルが、推論サーバーの環境変数を操作することで相互に通信できるサイドチャネル攻撃の可能性が示されました。\nモデルがプローブの有無やバッチ処理の状況など、環境の微妙な変化を検知・操作できることを利用しています。\nこの通信は少量の情報でも、セキュリティ上の重大なリスクをもたらす可能性があります。",
+      "actionable_takeaway": "AIモデルのサンドボックス環境が完全に安全ではない可能性を認識し、推論サーバーの環境変数やサイドチャネル攻撃に対するセキュリティ対策を強化する必要があります。",
+      "github_repo": "niranjan-deshpande/side-channel-communication",
+      "tags": [
+        "AIセキュリティ",
+        "サイドチャネル攻撃",
+        "LLM"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "AIモデルのサンドボックス化の限界と新たなセキュリティ脆弱性を示しており、AIシステムの設計と運用に大きな影響を与えるため高スコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "財務省CIOが職務を怠り、ゲーム開発に熱中している問題 #147",
+      "url": "https://github.com/samcorcos/legatum/issues/147",
+      "source": "Hacker News",
+      "published": "2026-11-25T04:56:36+00:00",
+      "hn_score": 20,
+      "hn_comments": 2,
+      "reading_min": 2,
+      "summary": "財務省の金融犯罪取締ネットワーク（FinCEN）がサイバーセキュリティ侵害によりシステム障害を起こしています。\nこの障害により、金融機関は疑わしい活動報告（SAR）を提出できず、機密取引データがハッキングされた可能性も指摘されています。\nしかし、財務省のCIOは、この重大な問題への対応を怠り、代わりにCivilizationゲームのクローン開発に時間を費やしていると報じられています。",
+      "actionable_takeaway": "政府機関のシステム障害は広範な影響を及ぼすため、類似の重要インフラを扱う組織は、緊急時の対応計画と責任体制を再確認し、サイバーセキュリティ対策を強化すべきです。",
+      "github_repo": "samcorcos/legatum",
+      "tags": [
+        "サイバーセキュリティ",
+        "政府機関",
+        "システム障害"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "政府機関のシステム障害とCIOの職務怠慢という、セキュリティとガバナンスにおける重大な問題提起であり、社会的な影響が大きいと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -355,8 +429,8 @@
       "url": "https://prismml.com/news/bonsai-2-5-27b",
       "source": "Hacker News",
       "published": "2026-11-24T20:08:03+00:00",
-      "hn_score": 242,
-      "hn_comments": 77,
+      "hn_score": 395,
+      "hn_comments": 129,
       "reading_min": 3,
       "summary": "Ternary Bonsai 2.5 27Bは、Qwen3.8 27Bをベースにしたエージェント型AIモデルのアップグレード版です。\n5.9GBのモデルサイズを維持しつつ、エージェントコーディング、マルチターンのツール利用、マルチステップタスク実行能力が大幅に向上しました。\nこれにより、プライベートファイルやオンデバイスツールと連携するエージェント構築において、より高速かつ正確な結果を提供します。",
       "actionable_takeaway": "オンデバイスでのエージェント開発を検討しているエンジニアは、Ternary Bonsai 2.5 27Bのコンパクトなフットプリントと強化されたエージェント能力を評価し、導入を検討すべきです。",
@@ -418,7 +492,7 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 3
     },
     {
       "title": "Rails: 37signalsのコード品質を支える独自のエンジニアリング戦略（翻訳）｜TechRacho by BPS株式会社",
@@ -440,7 +514,77 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 22
+      "hatena_count": 43
+    },
+    {
+      "title": "行列の乗算はΘ(n^2.25)である",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "source": "Hacker News",
+      "published": "2026-11-25T01:19:26+00:00",
+      "hn_score": 374,
+      "hn_comments": 190,
+      "reading_min": 1,
+      "summary": "行列乗算の計算複雑度がΘ(n^2.25)であるという研究論文が公開されました。\nこれは、行列乗算の理論的な下限に関する重要な進展を示唆しています。\nOpenAIのGitHubリポジトリでPDF形式で提供されています。",
+      "actionable_takeaway": "行列乗算の計算複雑度に関する最新の研究動向を把握し、アルゴリズム最適化の可能性について検討することが推奨されます。",
+      "github_repo": "openai/math",
+      "tags": [
+        "計算複雑性理論",
+        "アルゴリズム",
+        "数学"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "行列乗算の計算複雑度に関する理論的なブレークスルーであり、AIや科学計算の基盤技術に長期的な影響を与える可能性があるため高スコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Emby APIトークンは強力なパスワードだけでなくインベントリ管理も必要",
+      "url": "https://dev.to/johnettwawers/emby-api-tokens-need-an-inventory-not-just-a-strong-password-4n2h",
+      "source": "Dev.to",
+      "published": "2026-11-25T05:40:26+00:00",
+      "reading_min": 2,
+      "summary": "EmbyサーバーのAPIキーは、作成元の統合が終了した後も残り続け、セキュリティリスクとなる可能性があります。\nAPIキーがURLパラメータとして渡されると、ブラウザ履歴やログに残り、漏洩のリスクが高まります。\nEmbyのドキュメントでは、統合ごとに異なるキーを使用し、不要になったキーは失効させることを推奨しています。",
+      "actionable_takeaway": "APIトークンは強力なパスワードだけでなく、作成目的、所有者、有効期限などを記録したインベントリを作成し、定期的に棚卸しと不要なトークンの失効を行うことでセキュリティリスクを低減しましょう。",
+      "tags": [
+        "APIセキュリティ",
+        "トークン管理",
+        "Emby"
+      ],
+      "category": "セキュリティ",
+      "score": 85,
+      "score_reason": "APIトークンの適切な管理は現代のシステムセキュリティにおいて非常に重要であり、具体的なリスクと対策が示されているため、実用性と重要性が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "なぜNext.js 16のSaaSダッシュボードはまだ遅く感じるのか",
+      "url": "https://dev.to/vladzoff/why-your-nextjs-16-saas-dashboard-still-feels-slow-1p6j",
+      "source": "Dev.to",
+      "published": "2026-11-25T05:40:12+00:00",
+      "reading_min": 23,
+      "summary": "Next.js 16のSaaSダッシュボードが遅く感じる原因と、その解決策について解説しています。\n個々のリクエストは速くても、ページ全体の表示が遅れる原因として、キャッシュコンポーネント、部分的なプリフェッチ、ストリーミングの活用不足を挙げています。\nユーザーが実際に何を待っているのかを特定し、不必要なサーバー処理を削減することが重要であると強調しています。",
+      "actionable_takeaway": "Next.js 16のSaaSダッシュボードのパフォーマンス改善には、Cache ComponentsとPartial Prefetchingを明示的に有効にし、ユーザーが待つボトルネックを特定して最適化することが効果的です。",
+      "github_repo": "vercel/next.js",
+      "tags": [
+        "Next.js",
+        "Performance",
+        "Web Development"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 85,
+      "score_reason": "Next.jsの最新機能を使ったSaaSダッシュボードのパフォーマンス最適化は多くの開発者にとって関心が高く、具体的な解決策が提示されているため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "オープンソースにおける最高のものは共に築かれる",
@@ -534,6 +678,76 @@
       "hatena_count": 0
     },
     {
+      "title": "PenGPT: 手書きとスケッチのための生成Transformer",
+      "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+      "source": "Hacker News",
+      "published": "2026-11-25T00:54:49+00:00",
+      "hn_score": 153,
+      "hn_comments": 25,
+      "reading_min": 5,
+      "summary": "PenGPTは、テキストから手書き文字やスケッチを生成する小型のTransformerモデルです。\n少量のデータで多様な手書きスタイルを学習し、未見の筆跡も再現できる6Mパラメータモデルと、テキストプロンプトから描画する54Mパラメータモデルがあります。\nデータセットの構築と効率的な学習が成功の鍵であり、モデルのアーキテクチャ自体はシンプルであることが示されています。",
+      "actionable_takeaway": "手書き認識や生成、デザインツール開発に携わるエンジニアは、PenGPTのデータ中心のアプローチを参考に、少量のデータで多様なスタイルを学習させる手法を検討してください。",
+      "github_repo": "greydanus/greydanus.github.io",
+      "tags": [
+        "生成AI",
+        "手書き認識",
+        "Transformer"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "手書きとスケッチの生成というニッチながらも実用的な応用を持ち、データセット構築の重要性を示す点で新規性と実用性が高いと評価した。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "AI時代の実践・形式検証入門",
+      "url": "https://docs.google.com/presentation/d/1s-ie7b1rD47NUkwSIvdDYCJfrHzWOl-rt1c2hSgeerM/mobilepresent?slide=id.p1",
+      "source": "はてなブックマーク",
+      "published": "2026-11-24T21:16:53+00:00",
+      "reading_min": 60,
+      "summary": "本記事は「AI時代の実践・形式検証入門」と題されたGoogle Slidesのプレゼンテーションです。\nAI技術が進化する現代において、ソフトウェアやシステムの信頼性を確保するための形式検証の重要性を解説しています。\n具体的な手法や実践的なアプローチについて、入門者向けに分かりやすく説明されていると推測されます。",
+      "actionable_takeaway": "AIが生成するコードや複雑なシステムの信頼性確保のため、形式検証の基礎を学び、開発プロセスに導入することで、潜在的なバグや脆弱性を早期に発見し品質向上に繋げましょう。",
+      "tags": [
+        "形式検証",
+        "AI",
+        "ソフトウェア品質"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AI時代におけるソフトウェアの信頼性確保という重要なテーマを扱っており、形式検証の入門として実用的な知識を提供すると期待されるため、高いスコアを付けました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 101
+    },
+    {
+      "title": "スカッシュマージ：semantic-releaseはコミットではなくPRタイトルを読み込む",
+      "url": "https://dev.to/roalcantara/squash-merges-semantic-release-reads-the-pr-title-not-your-commits-2g1i",
+      "source": "Dev.to",
+      "published": "2026-11-25T05:40:17+00:00",
+      "reading_min": 4,
+      "summary": "semantic-releaseがConventional Commitsに基づいてバージョンをカットする際、スカッシュマージされたPRではコミットメッセージではなくPRタイトルが参照されます。\nこれにより、PR内の個々のコミットがConventional Commitsの規約に従っていても、PRタイトルが不適切だとバージョンリリースが行われない問題が発生します。\n筆者はこの問題により、多数のfeat/fixコミットがリリースに反映されなかった経験を共有しています。",
+      "actionable_takeaway": "semantic-releaseを使用しスカッシュマージを行う場合、PRタイトルがConventional Commits規約に準拠しているか確認し、自動生成されるPRタイトルに注意して手動で修正することを推奨します。",
+      "github_repo": "semantic-release/semantic-release",
+      "tags": [
+        "Git",
+        "Semantic Release",
+        "CI/CD"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 80,
+      "score_reason": "CI/CDとバージョン管理における一般的な落とし穴を指摘しており、多くの開発者にとって実務上の重要な注意点となるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "追記型記録ツールで訂正時に重複が残る問題とAIの挙動：Claude Codeによる検証",
       "url": "https://zenn.dev/kentaro_tak/articles/mcp-logger-append-only-corrections",
       "source": "Zenn",
@@ -574,6 +788,28 @@
       "analysis_status": "ok",
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "静的チャートを超えて: MLLM向けインタラクティブなチャートからコード生成のベンチマーク",
+      "url": "https://arxiv.org/abs/2611.31345",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-25T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、マルチモーダル大規模言語モデル（MLLM）がインタラクティブなチャートからコードを生成する能力を評価する新しいベンチマークを提案しています。\n静的なチャートだけでなく、ユーザーとの対話を通じて動的に変化するチャートの理解とコード生成の課題に焦点を当てています。\nこれにより、より高度なデータ可視化ツールや自動レポート生成システムの開発に貢献する可能性があります。",
+      "actionable_takeaway": "インタラクティブなデータ可視化ツールを開発するエンジニアは、MLLMを活用したチャートからコード生成の可能性を探り、ユーザー体験の向上や開発効率化の機会を検討すべきです。",
+      "tags": [
+        "MLLM",
+        "コード生成",
+        "データ可視化"
+      ],
+      "category": "AI・機械学習",
+      "score": 78,
+      "score_reason": "MLLMの応用範囲を広げる研究であり、データ分析やBIツールの自動化に大きな影響を与える可能性があり、実用性が高いと評価できます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -621,7 +857,7 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 2
     },
     {
       "title": "ロシア軍の死者４９万人超か、サイバー攻撃による流出データは「本物」と英報道…「５分に１人」戦死の計算",
@@ -643,7 +879,7 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 40
+      "hatena_count": 206
     },
     {
       "title": "jQuery 4.1正式版がリリース、内部実装をquerySelectorAllに統一でより高速に。jQuery 3.x系最後となるjQuery 3.8も同時リリース",
@@ -666,7 +902,7 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 45
     },
     {
       "title": "SAMA: 5つの公開データセットにおけるカメラベース心拍数推定のためのトレーニング不要なコンセンサスリッジトラッキング",
@@ -709,6 +945,73 @@
       "analysis_status": "ok",
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AIを活用した個人開発",
+      "url": "https://zenn.dev/holygrail/scraps/dec6ae85d06b4f",
+      "source": "はてなブックマーク",
+      "published": "2026-11-24T22:02:28+00:00",
+      "reading_min": 4,
+      "summary": "AI（Claude）との協業において、ユーザーへの報告を最適化するための具体的なガイドラインが示されています。\n報告の冒頭で現在地と完了状況を明確にし、ユーザーの作業が残っているかを一目でわかるようにする工夫が重要です。\nまた、判断依頼は1回1問に絞り、選択肢と推奨を明記するなど、AIとの効果的なコミュニケーション方法が提案されています。",
+      "actionable_takeaway": "AIとの協業では、明確な指示とフィードバックが生産性向上に不可欠なため、本記事の報告ガイドラインを参考に、自身のAIプロンプトやコミュニケーションフローを改善することを推奨します。",
+      "github_repo": "HolyGrail/claude-mods",
+      "tags": [
+        "AI",
+        "個人開発",
+        "プロンプトエンジニアリング"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AIとの協業における具体的なコミュニケーション改善策が提示されており、個人開発者やAI活用を検討するエンジニアにとって実用的な示唆が多いと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 292
+    },
+    {
+      "title": "エージェントのフォールトインジェクションハーネスが最初の実運用前に抱えていた5つの問題",
+      "url": "https://dev.to/rollsolo/five-problems-my-agent-fault-injection-harness-had-before-its-first-real-trial-4j83",
+      "source": "Dev.to",
+      "published": "2026-11-25T05:40:25+00:00",
+      "reading_min": 2,
+      "summary": "この記事は、AIエージェントのフォールトインジェクションハーネス構築中に発生した5つの問題について詳述しています。\nファイルシステムやGitなどのツールを呼び出すエージェントに対し、フォールトインジェクターが意図的に失敗やタイムアウトを発生させます。\nこれにより、エージェントの応答を評価し、プロトコル障害を記録することで、エージェントの堅牢性を測定する試みです。",
+      "actionable_takeaway": "AIエージェントの堅牢性テストでは、フォールトインジェクションによる多様な障害シナリオを考慮し、結果の解釈に影響を与える可能性のある潜在的な問題を事前に特定・対処することが重要です。",
+      "tags": [
+        "AI",
+        "Fault Injection",
+        "Testing"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "AIエージェントの信頼性向上に不可欠なフォールトインジェクションテストの具体的な課題と解決策を提示しており、実用性が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "人々が言わないことを選択するもの: 会話におけるきめ細かい情報操作のためのマルチモーダルベンチマーク",
+      "url": "https://arxiv.org/abs/2611.31346",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-25T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、会話において人々が意図的に情報を隠したり操作したりする現象を分析するためのマルチモーダルベンチマークを提案しています。\nテキスト情報だけでなく、非言語的な手がかり（表情、声のトーンなど）も考慮に入れ、きめ細かい情報操作を検出・理解することを目指しています。\nこれにより、より高度な対話システムや、フェイクニュース検出などの応用分野での進展が期待されます。",
+      "actionable_takeaway": "対話型AIやコンテンツモデレーションシステムを開発するエンジニアは、このベンチマークを活用して、情報操作の検出精度向上や、より人間らしい対話理解の実現に取り組むべきです。",
+      "tags": [
+        "マルチモーダルAI",
+        "情報操作",
+        "自然言語処理"
+      ],
+      "category": "AI・機械学習",
+      "score": 72,
+      "score_reason": "AIが人間の複雑なコミュニケーションを理解する上で重要な課題に取り組んでおり、倫理的なAI開発やセキュリティ分野への応用が期待されます。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -848,6 +1151,97 @@
       "hatena_count": 0
     },
     {
+      "title": "Geminiが「きらきら星」の歌詞を提供することを拒否した",
+      "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
+      "source": "Hacker News",
+      "published": "2026-11-25T04:03:33+00:00",
+      "hn_score": 64,
+      "hn_comments": 44,
+      "reading_min": 1,
+      "summary": "GoogleのAIモデルGeminiが、著作権の問題を理由に「きらきら星」の歌詞の提供を拒否した事例が報告されました。\nパブリックドメインのコンテンツであっても、AIが過度に慎重な対応を取る可能性があることを示しています。\nLLMのコンテンツ生成における倫理的・法的ガイドラインの課題が浮き彫りになっています。",
+      "actionable_takeaway": "AIモデルを利用する際は、生成されるコンテンツが著作権や倫理的ガイドラインに準拠しているか、特にパブリックドメインのコンテンツでも予期せぬ制限がないか検証することが重要です。",
+      "tags": [
+        "AI倫理",
+        "LLM",
+        "著作権"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIの倫理的・法的課題、特に著作権に関する問題提起として重要であり、今後のAI開発や利用における考慮点を示すためこのスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "34年目の秀丸エディタと、AIの距離感 「正直皆どんな目的で使ってるかよく分かりません」 - レバテックLAB",
+      "url": "https://levtech.jp/media/detail_973/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-25T00:58:54+00:00",
+      "reading_min": 11,
+      "summary": "34年目を迎える秀丸エディタは、本体にAI機能を直接組み込むことには慎重な姿勢を見せています。\nしかし、秀丸メールの迷惑メール判定にGeminiを利用したり、公式サイトにAIチャットを設置するなど、シリーズ全体ではAIを活用しています。\n開発者は、AIの活用についてまだ手探りの状態であり、特に既存の30年分のソースコードのバグ発見にClaudeを活用していることが明かされました。",
+      "actionable_takeaway": "レガシーコードベースを持つ開発者は、秀丸エディタの事例を参考に、AIをコード解析やバグ発見の補助ツールとして活用し、既存システムの品質向上を図ることを検討すべきです。",
+      "tags": [
+        "テキストエディタ",
+        "AI活用",
+        "レガシーコード"
+      ],
+      "category": "プログラミング言語",
+      "score": 70,
+      "score_reason": "長年の歴史を持つソフトウェアがAIとどのように向き合っているかという興味深い事例であり、特にレガシーコードのAIによる解析は多くの開発者にとって参考になると評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 126
+    },
+    {
+      "title": "修正：Gemini CLIが128以上のツールで400 Bad Requestを返す問題",
+      "url": "https://dev.to/debugradar/fix-gemini-cli-400-bad-request-with-128-tools-1j9n",
+      "source": "Dev.to",
+      "published": "2026-11-25T05:40:06+00:00",
+      "reading_min": 3,
+      "summary": "Gemini CLIが128以上のツールを有効にするとHTTP 400エラーを返す問題について解説しています。\nこれはGemini APIのツール数制限に引っかかることが原因であり、一時的な解決策として不要なMCPサーバーや拡張機能を無効にすることが提案されています。\n現在、ツール数を自動的に制限する修正がプルリクエストとして進行中であることも言及されています。",
+      "actionable_takeaway": "Gemini CLIで400 Bad Requestが発生した場合、有効なMCPサーバーや拡張機能の数を確認し、不要なものを無効にしてツール数をAPI制限以下に減らすことで問題を回避できます。",
+      "github_repo": "google/generative-ai-docs",
+      "tags": [
+        "Gemini API",
+        "CLI",
+        "Error Handling"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "Gemini CLIの具体的なバグとその回避策を提供しており、Gemini APIを利用する開発者にとって直接的な役立つ情報であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "MOZAIC: ディープフェイクを識別するためのオーディオ・ビデオディープフェイクベンチマーク",
+      "url": "https://arxiv.org/abs/2611.31301",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-25T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、オーディオとビデオのディープフェイクを識別するための新しいベンチマーク「MOZAIC」を提案しています。\nディープフェイク技術の進化に伴い、その検出はますます重要になっています。\narXivLabsの紹介文のみで、具体的なベンチマークの内容は抜粋からは不明です。",
+      "actionable_takeaway": "ディープフェイク検出技術の評価には、オーディオとビデオの両方を含む包括的なベンチマークが不可欠であり、MOZAICのような新しいベンチマークの動向を注視し、その手法を理解することが重要です。",
+      "tags": [
+        "Deepfake",
+        "Audio-Video",
+        "Benchmark"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "ディープフェイク検出は社会的に重要性が高く、その評価のためのベンチマークはAI研究の進展に貢献するため、高いスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "登壇時、画面共有時にモザイクをかける方法について",
       "url": "https://qiita.com/Takashi_Masumori/items/ffaa4a7e8008481a1d14?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
       "source": "Qiita",
@@ -890,7 +1284,29 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 120
+      "hatena_count": 158
+    },
+    {
+      "title": "不完全データのための保守的なオーバーラップファジーラフ集合",
+      "url": "https://arxiv.org/abs/2611.31329",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-25T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、不完全なデータセットを扱うための新しい数学的アプローチである「保守的なオーバーラップファジーラフ集合」について論じています。\n従来のファジーラフ集合の概念を拡張し、データに欠損値がある場合でもロバストな分析を可能にすることを目指しています。\nこれにより、データマイニングやパターン認識における不確実性への対処能力が向上すると期待されます。",
+      "actionable_takeaway": "不完全なデータセットを扱うデータ分析プロジェクトでは、この新しいファジーラフ集合の概念を検討し、データの前処理や特徴選択の精度向上に役立てるべきです。",
+      "tags": [
+        "ファジー論理",
+        "データマイニング",
+        "不完全データ"
+      ],
+      "category": "AI・機械学習",
+      "score": 65,
+      "score_reason": "理論的な研究であり、実用化にはさらなる検証が必要ですが、不完全データ処理の課題解決に貢献する可能性を秘めています。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "ゲーデルの謎",
@@ -941,6 +1357,73 @@
       "hatena_count": 0
     },
     {
+      "title": "ボタンサウンド – プロが録音したボタンクリック音とプレス音のコレクション",
+      "url": "https://buttons.joshwcomeau.com/",
+      "source": "Hacker News",
+      "published": "2026-11-25T03:23:07+00:00",
+      "hn_score": 122,
+      "hn_comments": 11,
+      "summary": "プロが録音した50種類以上のボタンクリック音とトグル音の無料コレクションが公開されました。\nこれらのサウンドエフェクトは、UIに触覚的なフィードバックを追加するために利用できます。\nNPM経由で配布されており、簡単にプロジェクトに組み込むことが可能です。",
+      "actionable_takeaway": "ユーザーインターフェースのUX向上を目指す開発者は、この高品質なボタンサウンドコレクションをUIに導入し、ユーザー体験を向上させることを検討してください。",
+      "tags": [
+        "UI/UX",
+        "サウンドデザイン",
+        "NPM"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 60,
+      "score_reason": "UI/UXの改善に役立つリソースであり、開発者が手軽に利用できる点で実用性があるが、技術的な新規性は限定的であるためこのスコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "ずっしり重い新型ウォークマン 歴代最高65万円なぜここまで高級化：朝日新聞",
+      "url": "https://www.asahi.com/articles/ASVCN2QXSVCNULFA01XM.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-24T23:35:54+00:00",
+      "reading_min": 1,
+      "summary": "ソニーが新型ウォークマンを発表し、旗艦モデルが約65万5千円と歴代最高額になりました。\n高価格化の要因は、音質向上のための高価な銅素材の使用比率増加や、電力供給用コンデンサーの増設など、細部へのこだわりです。\n材料費や人件費の増加、急速な円安も価格上昇に複合的に影響しています。",
+      "actionable_takeaway": "高音質オーディオ市場の動向として、高価格帯製品の需要と技術的追求が続いていることを理解し、他分野での高級化戦略やサプライチェーンのコスト変動要因を分析する参考にできます。",
+      "tags": [
+        "オーディオ",
+        "ウォークマン",
+        "高級化"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 60,
+      "score_reason": "特定の製品の高級化に関するニュースであり、IT技術全体への直接的な影響は限定的ですが、ハードウェアのトレンドとして一定の関心は持てると判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 141
+    },
+    {
+      "title": "自律エージェントシステムのための還元不可能なガバナンス構造：公正な配分、戦略耐性、マルチスケール構成",
+      "url": "https://arxiv.org/abs/2611.31284",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-25T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "この論文は、自律エージェントシステムにおけるガバナンス構造の設計に関する研究です。\n公正なリソース配分、戦略耐性（エージェントが不正な行動をしないこと）、およびマルチスケールでの構成可能性に焦点を当てています。\narXivLabsの紹介文のみで、具体的な研究内容は抜粋からは不明です。",
+      "actionable_takeaway": "自律エージェントシステムを設計する際は、公正なリソース配分、エージェントの戦略耐性、およびシステムのスケーラビリティを考慮したガバナンス構造の構築が重要です。",
+      "tags": [
+        "Autonomous Agents",
+        "Governance",
+        "AI Ethics"
+      ],
+      "category": "AI・機械学習",
+      "score": 60,
+      "score_reason": "自律エージェントのガバナンスという重要なテーマを扱っているが、抜粋が抽象的で具体的な内容が不明なため、スコアは控えめ。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-25T14:45:30.205977+09:00",
+      "first_seen": "2026-11-25T14:45:30.205977+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "スプレーボトル",
       "url": "https://mechanical-pencil.com/products/spray-bottle",
       "source": "Hacker News",
@@ -962,7 +1445,7 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1
     },
     {
       "title": "開発者が本当に欲しがるギフトとは",
@@ -988,19 +1471,19 @@
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-25T08:14:51.311327+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-25T14:45:30.205977+09:00",
     "summary_lines": [
       "GPT-6がタンパク質設計能力を実証し、AIの応用範囲が拡大。",
-      "Check Pointサーバーへの攻撃や楽天証券の情報漏えいなど、セキュリティ脅威が顕在化。",
-      "GoogleのgBenchオープンソース化やAWS ExtendDBのリリースで開発環境が進化。"
+      "セキュリティ分野ではCheck Pointへの攻撃や情報漏えいが報告。",
+      "GoogleのAIベンチマークツールgBenchやAWS ExtendDBが注目。"
     ],
     "focus_tags": [
       "AI",
       "セキュリティ",
       "LLM",
-      "クラウド",
-      "情報漏えい"
+      "Vulnerability",
+      "AWS"
     ]
   }
 }
