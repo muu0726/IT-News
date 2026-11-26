@@ -26,10 +26,8 @@ import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
-from email.utils import format_datetime
 
 import feedparser
-import requests
 
 from gather import (
     ANALYSIS_BATCH_SIZE,
@@ -37,16 +35,17 @@ from gather import (
     GEMINI_SLEEP_SEC,
     JST,
     SITE_URL,
+    build_rss_feed_xml,
     call_gemini_rest,
     deduplicate_articles,
     fetch_article_bodies,
-    format_pub_date,
+    is_generated_today,
     normalize_url,
+    parse_iso_datetime,
     parse_published,
     post_webhook,
     safe_get,
     wait_until_notify_time,
-    xml_escape,
 )
 
 
@@ -116,12 +115,9 @@ GADGET_ANALYSIS_SCHEMA = {
 # ---------------------------------------------------------------------------
 def is_recent(published: str, now: datetime, hours: int = GADGET_MAX_AGE_HOURS) -> bool:
     """公開日時が指定時間以内か。日時が読めない記事は URL 重複除去に任せて残す"""
-    try:
-        dt = datetime.fromisoformat(str(published).replace("Z", "+00:00"))
-    except ValueError:
+    dt = parse_iso_datetime(published, default_tz=timezone.utc)
+    if dt is None:
         return True
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
     return now - dt <= timedelta(hours=hours)
 
 
@@ -226,16 +222,9 @@ def collect_retry_gadgets(
         norm = normalize_url(it.get("url", ""))
         if not norm or norm in queued_norms:
             continue
-        try:
-            fs = it.get("first_seen", "")
-            if fs:
-                fs_dt = datetime.fromisoformat(str(fs).replace("Z", "+00:00"))
-                if fs_dt.tzinfo is None:
-                    fs_dt = fs_dt.replace(tzinfo=JST)
-                if fs_dt < cutoff:
-                    continue
-        except ValueError:
-            pass
+        fs_dt = parse_iso_datetime(it.get("first_seen", ""), default_tz=JST)
+        if fs_dt is not None and fs_dt < cutoff:
+            continue
         queued_norms.add(norm)
         item = {
             "title": it.get("title", ""),
@@ -352,6 +341,7 @@ def analyze_gadgets(articles: list[dict], run_at: str) -> list[dict]:
         for i in range(0, len(articles), ANALYSIS_BATCH_SIZE)
     ]
     start = time.monotonic()
+    deadline = start + GADGET_TIMEOUT_SEC
     for ci, chunk in enumerate(chunks):
         if time.monotonic() - start > GADGET_TIMEOUT_SEC:
             print(f"[WARN] Gadget analysis timeout ({GADGET_TIMEOUT_SEC}s) -- skipping rest")
@@ -365,6 +355,7 @@ def analyze_gadgets(articles: list[dict], run_at: str) -> list[dict]:
             build_gadget_prompt(chunk),
             api_key,
             response_schema=GADGET_ANALYSIS_SCHEMA,
+            deadline=deadline,
         )
         if isinstance(result, list):
             by_id = {it["id"]: it for it in result if validate_gadget_item(it)}
@@ -378,7 +369,7 @@ def analyze_gadgets(articles: list[dict], run_at: str) -> list[dict]:
             for art in chunk:
                 _mark_failed(art, f"解析エラー: {detail}")
 
-        if ci < len(chunks) - 1:
+        if ci < len(chunks) - 1 and time.monotonic() + GEMINI_SLEEP_SEC < deadline:
             time.sleep(GEMINI_SLEEP_SEC)
 
     ok = sum(1 for a in articles if a.get("analysis_status") == "ok")
@@ -408,16 +399,9 @@ def merge_gadgets(existing_items: list[dict], analyzed: list[dict],
     kept = []
     for it in merged.values():
         cutoff = ok_cutoff if it.get("analysis_status") == "ok" else err_cutoff
-        try:
-            fs_str = str(it.get("first_seen", ""))
-            if fs_str:
-                fs_dt = datetime.fromisoformat(fs_str.replace("Z", "+00:00"))
-                if fs_dt.tzinfo is None:
-                    fs_dt = fs_dt.replace(tzinfo=JST)
-                if fs_dt < cutoff:
-                    continue
-        except ValueError:
-            pass
+        fs_dt = parse_iso_datetime(it.get("first_seen", ""), default_tz=JST)
+        if fs_dt is not None and fs_dt < cutoff:
+            continue
         kept.append(it)
     return sorted(kept, key=lambda x: x.get("published") or x.get("first_seen", ""), reverse=True)
 
@@ -447,10 +431,8 @@ def generate_gadget_rss_feed(items: list[dict], path: str = GADGET_FEED_FILE) ->
         reverse=True,
     )[:GADGET_FEED_TOP_N]
 
-    rss_items: list[str] = []
+    rss_items: list[dict] = []
     for it in new_products:
-        pub_date = format_pub_date(it.get("published") or it.get("first_seen") or "")
-
         product = it.get("product_name")
         brand = it.get("brand")
         base_title = it.get("title", "")
@@ -470,36 +452,21 @@ def generate_gadget_rss_feed(items: list[dict], path: str = GADGET_FEED_FILE) ->
         if summary:
             desc_parts.append(summary)
         desc_parts.append(f"(Source: {it.get('source', '')})")
-        desc = " ".join(desc_parts)
 
-        url = xml_escape(it.get("url", ""))
-        cat_tag = (
-            f"      <category>{xml_escape(str(it.get('category')))}</category>\n"
-            if it.get("category") else ""
-        )
-        rss_items.append(
-            "    <item>\n"
-            f"      <title>{xml_escape(full_title)}</title>\n"
-            f"      <link>{url}</link>\n"
-            f"      <guid isPermaLink=\"false\">{url}</guid>\n"
-            f"{cat_tag}"
-            f"      <description>{xml_escape(desc)}</description>\n"
-            f"{pub_date}"
-            "    </item>"
-        )
+        rss_items.append({
+            "title": full_title,
+            "url": it.get("url", ""),
+            "description": " ".join(desc_parts),
+            "published": it.get("published") or it.get("first_seen") or "",
+            "category": it.get("category") or "",
+        })
 
-    feed_xml = (
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<rss version="2.0">\n'
-        "  <channel>\n"
-        "    <title>IT Info Hub — 最新ガジェット新製品フィード</title>\n"
-        f"    <link>{xml_escape(GADGET_PAGE_URL)}</link>\n"
-        "    <description>国内ガジェットメディアから新製品の発表・発売情報をAIで抽出して配信</description>\n"
-        "    <language>ja</language>\n"
-        f"    <lastBuildDate>{format_datetime(now)}</lastBuildDate>\n"
-        + ("\n".join(rss_items) + "\n" if rss_items else "")
-        + "  </channel>\n"
-        "</rss>\n"
+    feed_xml = build_rss_feed_xml(
+        title="IT Info Hub — 最新ガジェット新製品フィード",
+        description="国内ガジェットメディアから新製品の発表・発売情報をAIで抽出して配信",
+        feed_url=GADGET_PAGE_URL,
+        items=rss_items,
+        now=now,
     )
     with open(path, "w", encoding="utf-8") as f:
         f.write(feed_xml)
@@ -635,15 +602,6 @@ def send_gadget_line(items: list[dict]) -> None:
         f"Gadget LINE notification ({len(items)} items)",
         headers={"Authorization": f"Bearer {token}"},
     )
-
-
-def is_generated_today(data: dict, now: datetime | None = None) -> bool:
-    """gadgets.json が今日 (JST) 生成されたものか。
-
-    収集に失敗した日に、リポジトリに残る前日分で同じ通知を再送しないためのガード。
-    """
-    now = now or datetime.now(JST)
-    return str(data.get("generated_at", "")).startswith(now.strftime("%Y-%m-%d"))
 
 
 def send_gadget_notifications(data: dict) -> None:

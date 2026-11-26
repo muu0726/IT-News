@@ -1,0 +1,22 @@
+name: "Upload Pages Site Artifact"
+description: "静的配信ファイルのみを _site/ にステージングし、GitHub Pages アーティファクトとしてアップロードする"
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Pages
+      uses: actions/configure-pages@v6
+
+    - name: 公開用ディレクトリ生成 (_site)
+      shell: bash
+      run: |
+        rm -rf _site
+        mkdir -p _site
+        for f in index.html gadget.html shared.css shared.js sw.js manifest.json .nojekyll data.json gadgets.json digest.json feed.xml gadget_feed.xml feed_*.xml; do
+          if [ -f "$f" ]; then cp "$f" _site/; fi
+        done
+        if [ -d archive ]; then cp -r archive _site/; fi
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v5
+      with:
+        path: '_site'

@@ -1,0 +1,14 @@
+name: "Setup Python Environment"
+description: "Python 3.12 をセットアップし、requirements.txt の依存パッケージをインストールする"
+runs:
+  using: "composite"
+  steps:
+    - name: Python 3.12 セットアップ
+      uses: actions/setup-python@v7
+      with:
+        python-version: '3.12'
+        cache: 'pip'
+
+    - name: 依存パッケージ インストール
+      shell: bash
+      run: pip install -r requirements.txt

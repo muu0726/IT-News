@@ -38,8 +38,10 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 | パス | 役割 |
 |---|---|
 | `gather.py` | バックエンド一式（収集・本文取得・解析・グルーピング・保存・通知） |
-| `index.html` | フロントエンド SPA（HTML/CSS/JS 単一ファイル、フレームワークなし） |
-| `sw.js` | Service Worker（HTML/JSON は Network First、静的アセットは Cache First） |
+| `index.html` | フロントエンド SPA（Vanilla JS、共通部分は `shared.css` / `shared.js` を利用） |
+| `shared.css` | `index.html` / `gadget.html` 共通のデザイントークン・ベースコンポーネント CSS |
+| `shared.js` | `index.html` / `gadget.html` 共通のユーティリティ JS（`window.ITInfoHub`） |
+| `sw.js` | Service Worker（HTML/CSS/JS/JSON/XML は Network First、その他静的アセットは Cache First） |
 | `manifest.json` | PWA マニフェスト |
 | `requirements.txt` | Python 依存（feedparser, requests） |
 | `data.json` | 最新の収集結果（自動生成・コミット、スキーマ v2） |
@@ -52,6 +54,10 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 | `gadgets.json` | ガジェット情報（直近30日分を蓄積、自動生成・コミット） |
 | `wait_until.py` | JST 指定時刻までの共通待機モジュール（日またぎ・2段階分割・ドリフト補正） |
 | `.github/workflows/update.yml` | 定期実行ワークフロー |
+| `.github/workflows/deploy.yml` | `main` プッシュ時・手動実行時の GitHub Pages デプロイワークフロー |
+| `.github/workflows/deploy-pages.yml` | GitHub Pages デプロイ用再利用ワークフロー（`workflow_call`） |
+| `.github/actions/setup-python-env` | Python 3.12＋依存インストール共通 Composite Action |
+| `.github/actions/upload-pages-site` | `_site/` ステージング＋Pages アーティファクトアップロード共通 Composite Action |
 | `docs/SPEC.md` | 本仕様書 |
 
 ## 4. バックエンド仕様（gather.py）
@@ -251,13 +257,13 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 
 ### 5.4 PWA / Service Worker
 
-- キャッシュ名 `itinfohub-v11`。
-- **HTML（ナビゲーション）・JSON・XML**: Network First（クエリ文字列を除いた正規化 URL キーでキャッシュ管理、オフラインかつ未キャッシュ時は 503 応答。大容量の `archive/search_index.json` および個別 `archive/YYYY-MM-DD.json` はキャッシュ肥大防止のためキャッシュ対象外） — フロント更新・データ更新が即時反映され、オフライン時のみキャッシュを返す。
+- キャッシュ名 `itinfohub-v12`。
+- **HTML（ナビゲーション）・CSS・JS・JSON・XML**: Network First（クエリ文字列を除いた正規化 URL キーでキャッシュ管理、オフラインかつ未キャッシュ時は 503 応答。大容量の `archive/search_index.json` および個別 `archive/YYYY-MM-DD.json` はキャッシュ肥大防止のためキャッシュ対象外） — フロント更新・データ更新が即時反映され、オフライン時のみキャッシュを返す。
 - その他静的アセット: Cache First（オフライン時 503 フォールバック）。非 `GET` や非 `http(s)` リクエストは素通り。
 
 ### 5.5 最新ガジェット情報ページ（gadget.html）
 
-- `gadgets.json` を読み込む単一ファイルの Vanilla JS ページ。テーマは `itinfohub_theme` を index.html と共有し、XSS 対策（`esc()` / `safeUrl()`）も同方式。
+- `gadgets.json` を読み込む Vanilla JS ページ。`shared.css` / `shared.js`（`window.ITInfoHub`）およびテーマ `itinfohub_theme` を `index.html` と共有。
 - カード: 注目度バッジ、製品名（記事リンク）、新製品 / 関連記事 バッジ、今回の新着に NEW、カテゴリ・ブランド・価格・発売日、3 行要約、複数メディア記事の名寄せ表示。
 - 横並びスペック比較: 最大 4 製品を選択し、メーカー・分類・価格・発売日・注目度・メディア・要約をモーダル表で比較＆Markdownテーブルとしてコピー可能。
 - 絞り込み・ソート: カテゴリタブ、「新製品のみ」、「製品名寄せ」、ブランド・価格帯・メディアフィルタ、新着順 / 注目度順 / ブランド順 / 価格順ソート。専用 RSS (`gadget_feed.xml`) 配信対応。
@@ -267,12 +273,13 @@ IT 技術ニュースを 9 ソースから1日2回（朝・昼）並列自動収
 
 - トリガー: cron `37 13 * * *`（前日 JST 22:37 起動 → `06:45` 収集 → `07:00` 通知）および `37 21 * * *`（当日 JST 06:37 起動 → `14:45` 収集 → `15:00` 通知）の 1 日 2 回 + `workflow_dispatch`（任意入力 `notify_at_jst`）
   - GitHub Actions `schedule` の実測遅延（3〜9 時間）を吸収するため約 8 時間 23 分前倒しし、混雑帯（`:00/:15/:30/:45`）を避けた奇数分に設定している。
-- Python 3.12、pip キャッシュあり、全公式アクションは Node 24 対応版を使用。5 ジョブ構成:
+- Python 3.12、pip キャッシュあり、全公式アクションは Node 24 対応版を使用。6 ジョブ構成:
   - **wait_1**（`schedule` 時のみ、timeout 270 分）: `wait_until.py` で収集目標時刻（`06:45` / `14:45` JST）まで最大 250 分（15,000 秒）待機（`max-wait: 30600` 秒超過の大幅遅延時は即時完了）。`collect_at` と `notify_at` をジョブ出力として引き渡す。
   - **wait_2**（`wait_1` の `done != 'true'` 時のみ、timeout 280 分）: 残りの待機時間を最大 260 分（15,600 秒）待機して `06:45` / `14:45` JST に収束させる。
-  - **collect**（timeout 30 分、concurrency `pages`、`ref: main` 明示チェックアウト）: `pytest` → `gather.py --no-notify`（本文取得 512KB 上限・日本語文字コード補正・埋め込み 80 件チャンク分割・当日失敗記事の再解析回収・`trends_30d.json` 生成）→ `gadget.py --no-notify`（timeout 8 分・continue-on-error）→ 通知用データを artifact 保存 → `git commit` 後に `git pull --rebase -X theirs origin main` & `git push` → 静的配信ファイルのみ `_site/` にステージングして Pages デプロイ
-  - **notify**（`needs: [wait_1, collect]`、timeout 45 分、`ref: main` 明示チェックアウト）: artifact を取得 → `gather.py --notify-only`（`schedule` 時は `wait_1` が出力した枠ごとの `notify_at` を `NOTIFY_AT_JST` に指定、`NOTIFY_MAX_WAIT_SEC=1800` 秒で大幅遅延時は即時送信）→ `gadget.py --notify-only`（二重待機なし即時送信・continue-on-error）
-  - **alert**: `wait_1` / `wait_2` / `collect` / `notify` のいずれかが失敗またはキャンセルされた場合に確実に Discord アラート送信
+  - **collect**（timeout 30 分、concurrency `collect`、`ref: main` 明示チェックアウト）: `./.github/actions/setup-python-env` → `pytest` → `gather.py --no-notify`（本文取得 512KB 上限・日本語文字コード補正・埋め込み 80 件チャンク分割・当日失敗記事の再解析回収・`trends_30d.json` 生成）→ `gadget.py --no-notify`（timeout 8 分・continue-on-error）→ 通知用データを artifact 保存 → `git commit` 後に `git pull --rebase -X theirs origin main` & `git push` → `./.github/actions/upload-pages-site` で静的配信ファイルのみ `_site/` にステージングして Pages artifact をアップロード
+  - **deploy**（`needs: collect`、`.github/workflows/deploy-pages.yml` を呼び出し、timeout 15 分、concurrency `pages`）: `github-pages` artifact の反映を待機後、`actions/deploy-pages` で GitHub Pages へデプロイ
+  - **notify**（`needs: [wait_1, collect, deploy]`、timeout 45 分、`ref: main` 明示チェックアウト）: artifact を取得 → `gather.py --notify-only`（`schedule` 時は `wait_1` が出力した枠ごとの `notify_at` を `NOTIFY_AT_JST` に指定、`NOTIFY_MAX_WAIT_SEC=1800` 秒で大幅遅延時は即時送信）→ `gadget.py --notify-only`（二重待機なし即時送信・continue-on-error）
+  - **alert**: `wait_1` / `wait_2` / `collect` / `deploy` / `notify` のいずれかが失敗またはキャンセルされた場合に確実に Discord アラート送信
 - Secrets: `GEMINI_API_KEY`（必須）, `DISCORD_WEBHOOK_URL` / `SLACK_WEBHOOK_URL` / `LINE_CHANNEL_ACCESS_TOKEN`（任意）
 - **外部スケジューラとの併用（任意）**: より厳密な定時配信を行いたい場合は、任意の外部 cron サービスから `POST https://api.github.com/repos/muu0726/IT-News/actions/workflows/update.yml/dispatches` へ `{"ref": "main", "inputs": {"notify_at_jst": "07:00"}}`（または `"15:00"`）を 06:50 / 14:50 JST 等に送信できる。
 

@@ -4,12 +4,14 @@
  * その他静的アセット: Cache First
  */
 
-const CACHE_NAME = 'itinfohub-v11';
+const CACHE_NAME = 'itinfohub-v12';
 
 const PRECACHE_URLS = [
   './',
   './index.html',
   './gadget.html',
+  './shared.css',
+  './shared.js',
   './manifest.json',
 ];
 
@@ -69,13 +71,18 @@ self.addEventListener('fetch', (event) => {
     url.pathname.endsWith('/archive/search_index.json') ||
     /\/archive\/\d{4}-\d{2}-\d{2}\.json$/.test(url.pathname);
 
-  // HTML（ナビゲーション）と JSON/XML データは Network First
+  // HTML（ナビゲーション）・同一オリジンの CSS/JS/JSON/XML データは Network First
   // → フロント更新やデータ更新が即時反映される
+  const isSameOrigin = url.origin === self.location.origin;
   if (
     event.request.mode === 'navigate' ||
-    url.pathname.endsWith('.html') ||
-    url.pathname.endsWith('.json') ||
-    url.pathname.endsWith('.xml')
+    (isSameOrigin && (
+      url.pathname.endsWith('.html') ||
+      url.pathname.endsWith('.css') ||
+      url.pathname.endsWith('.js') ||
+      url.pathname.endsWith('.json') ||
+      url.pathname.endsWith('.xml')
+    ))
   ) {
     event.respondWith(networkFirst(event.request, { skipCache: isLargeArchiveData }));
     return;

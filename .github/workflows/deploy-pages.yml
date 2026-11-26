@@ -1,0 +1,48 @@
+name: Deploy GitHub Pages (Reusable)
+
+on:
+  workflow_call:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # Pages デプロイ専用の直列化グループ（呼び出し元では設定しないこと）
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+
+    steps:
+      - name: Pages アーティファクトの反映待機
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 12); do
+            count=$(curl -fsSL \
+              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?name=github-pages" \
+              2>/dev/null \
+              | python3 -c "import json,sys; print(json.load(sys.stdin).get('total_count', 0))" 2>/dev/null || echo 0)
+            if [ "$count" -ge 1 ] 2>/dev/null; then
+              echo "Artifact 'github-pages' is ready (attempt $i, count=$count)"
+              exit 0
+            fi
+            echo "Waiting for artifact 'github-pages' to be indexed (attempt $i/12)..."
+            if [ "$i" -lt 12 ]; then
+              sleep 5
+            fi
+          done
+          echo "::warning::Artifact 'github-pages' was not listed within 60s; proceeding to deploy-pages"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -1043,3 +1043,46 @@ def test_save_results_uses_run_at_date_for_archive(monkeypatch, tmp_path):
     assert (arch_dir / "2026-10-15.json").exists()
 
 
+def test_load_recent_archives_skips_missing_without_warn(monkeypatch, tmp_path, capsys):
+    arch_dir = tmp_path / "archive"
+    arch_dir.mkdir()
+    today_str = datetime.now(JST).date().strftime("%Y-%m-%d")
+    (arch_dir / f"{today_str}.json").write_text("{broken json", encoding="utf-8")
+    monkeypatch.setattr(gather, "ARCHIVE_DIR", str(arch_dir))
+
+    articles = gather.load_recent_archives(days=3)
+    assert articles == []
+    out = capsys.readouterr().out
+    # 存在しない過去日では警告を出さず、破損ファイルのみ警告する
+    assert out.count("[WARN] Failed to read archive") == 1
+    assert f"{today_str}.json" in out
+
+
+def test_call_gemini_rest_stops_retry_when_deadline_exceeded(monkeypatch, sleeps):
+    class _Resp429:
+        status_code = 429
+        headers = {"Retry-After": "30"}
+        text = "rate limited"
+
+    monkeypatch.setattr(gather.random, "uniform", lambda a, b: 0.0)
+    monkeypatch.setattr(gather.requests, "post", lambda *a, **kw: _Resp429())
+
+    deadline = gather.time.monotonic() + 5.0
+    res = gather.call_gemini_rest("prompt", "dummy-key", deadline=deadline)
+    assert res == {"error": "Retry deadline exceeded"}
+    assert sleeps == []
+
+
+def test_detect_hot_urls_across_existing_and_new_runs():
+    existing_today = [
+        {"url": "https://example.com/cross-run?utm_source=morning", "source": "Zenn"},
+    ]
+    new_fetched = [
+        {"url": "https://example.com/cross-run", "source": "Hacker News"},
+        {"url": "https://example.com/same-src", "source": "Zenn"},
+    ]
+    hot = gather._detect_hot_urls(existing_today + new_fetched)
+    assert hot == {"https://example.com/cross-run"}
+
+
+

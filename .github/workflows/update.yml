@@ -18,6 +18,7 @@ on:
         type: string
 
 permissions:
+  actions: read
   contents: write
   pages: write
   id-token: write
@@ -91,13 +92,14 @@ jobs:
   collect:
     needs: [wait_1, wait_2]
     if: always() && !cancelled() && (needs.wait_1.result == 'success' || needs.wait_1.result == 'skipped') && (needs.wait_2.result == 'success' || needs.wait_2.result == 'skipped')
-    environment:
-      name: github-pages
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    # deploy.yml と同じグループ。待機を含まないこのジョブだけに掛ける
+    permissions:
+      contents: write
+      pages: write
+    # 収集・git push の競合防止用。Pages デプロイの直列化は後続の deploy ジョブ ("pages") で行う
     concurrency:
-      group: "pages"
+      group: "collect"
       cancel-in-progress: false
 
     steps:
@@ -105,18 +107,19 @@ jobs:
         uses: actions/checkout@v7
         with:
           ref: main
+          fetch-depth: 20
 
-      - name: Python 3.12 セットアップ
-        uses: actions/setup-python@v7
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-
-      - name: 依存パッケージ インストール
-        run: pip install -r requirements.txt
+      - name: Python 環境セットアップ
+        uses: ./.github/actions/setup-python-env
 
       - name: テスト実行 (pytest)
         run: pytest
+
+      - name: フロントエンド構文・テスト実行 (node)
+        run: |
+          node --check shared.js
+          node --check sw.js
+          node --test test_frontend.mjs
 
       - name: gather.py 実行（通知なし）
         env:
@@ -158,30 +161,21 @@ jobs:
             git push
           fi
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
+      - name: Pages アーティファクト作成・アップロード
+        uses: ./.github/actions/upload-pages-site
 
-      - name: 公開用ディレクトリ生成 (_site)
-        run: |
-          rm -rf _site
-          mkdir -p _site
-          for f in index.html gadget.html sw.js manifest.json .nojekyll data.json gadgets.json digest.json feed.xml gadget_feed.xml feed_*.xml; do
-            if [ -f "$f" ]; then cp "$f" _site/; fi
-          done
-          if [ -d archive ]; then cp -r archive _site/; fi
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: '_site'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+  deploy:
+    needs: collect
+    if: needs.collect.result == 'success'
+    uses: ./.github/workflows/deploy-pages.yml
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
 
   notify:
-    needs: [wait_1, collect]
-    if: always() && !cancelled() && needs.collect.result == 'success'
+    needs: [wait_1, collect, deploy]
+    if: always() && !cancelled() && needs.collect.result == 'success' && needs.deploy.result == 'success'
     runs-on: ubuntu-latest
     # 07:00 / 15:00 JST までの待機上限 30分 (1800秒) ＋ 通知送信バッファ
     timeout-minutes: 45
@@ -194,14 +188,8 @@ jobs:
         with:
           ref: main
 
-      - name: Python 3.12 セットアップ
-        uses: actions/setup-python@v7
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-
-      - name: 依存パッケージ インストール
-        run: pip install -r requirements.txt
+      - name: Python 環境セットアップ
+        uses: ./.github/actions/setup-python-env
 
       - name: 通知用データを取得
         uses: actions/download-artifact@v8
@@ -229,9 +217,9 @@ jobs:
         run: python gadget.py --notify-only
 
   alert:
-    needs: [wait_1, wait_2, collect, notify]
-    # wait_1 / wait_2 / collect / notify が失敗・キャンセル（タイムアウト含む）された場合に確実に実行
-    if: always() && (needs.wait_1.result == 'failure' || needs.wait_1.result == 'cancelled' || needs.wait_2.result == 'failure' || needs.wait_2.result == 'cancelled' || needs.collect.result == 'failure' || needs.collect.result == 'cancelled' || needs.notify.result == 'failure' || needs.notify.result == 'cancelled')
+    needs: [wait_1, wait_2, collect, deploy, notify]
+    # wait_1 / wait_2 / collect / deploy / notify が失敗・キャンセル（タイムアウト含む）された場合に確実に実行
+    if: always() && (needs.wait_1.result == 'failure' || needs.wait_1.result == 'cancelled' || needs.wait_2.result == 'failure' || needs.wait_2.result == 'cancelled' || needs.collect.result == 'failure' || needs.collect.result == 'cancelled' || needs.deploy.result == 'failure' || needs.deploy.result == 'cancelled' || needs.notify.result == 'failure' || needs.notify.result == 'cancelled')
     runs-on: ubuntu-latest
     permissions: {}
 
@@ -242,10 +230,11 @@ jobs:
           WAIT1_RESULT: ${{ needs.wait_1.result }}
           WAIT2_RESULT: ${{ needs.wait_2.result }}
           COLLECT_RESULT: ${{ needs.collect.result }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
           NOTIFY_RESULT: ${{ needs.notify.result }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           if [ -n "$DISCORD_WEBHOOK_URL" ]; then
-            python3 -c 'import json, os; w1, w2, col, ntf, url = (os.environ[k] for k in ("WAIT1_RESULT", "WAIT2_RESULT", "COLLECT_RESULT", "NOTIFY_RESULT", "RUN_URL")); print(json.dumps({"username": "GitHub Actions Alert", "content": f"**[ERROR] IT Info Collector** のワークフローが失敗しました（wait_1: {w1} / wait_2: {w2} / collect: {col} / notify: {ntf}）。\n[ログを確認]({url})"}, ensure_ascii=False))' \
+            python3 -c 'import json, os; w1, w2, col, dep, ntf, url = (os.environ[k] for k in ("WAIT1_RESULT", "WAIT2_RESULT", "COLLECT_RESULT", "DEPLOY_RESULT", "NOTIFY_RESULT", "RUN_URL")); print(json.dumps({"username": "GitHub Actions Alert", "content": f"**[ERROR] IT Info Collector** のワークフローが失敗しました（wait_1: {w1} / wait_2: {w2} / collect: {col} / deploy: {dep} / notify: {ntf}）。\n[ログを確認]({url})"}, ensure_ascii=False))' \
               | curl --fail-with-body -sS -H "Content-Type: application/json" -d @- "$DISCORD_WEBHOOK_URL"
           fi

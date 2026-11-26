@@ -229,6 +229,25 @@ _GITHUB_RESERVED_PATHS = {
 }
 
 
+def _normalize_github_repo(owner: str, repo: str) -> str | None:
+    """owner / repo 文字列を検証・正規化して 'owner/repo' 形式で返す"""
+    owner = (owner or "").strip()
+    repo = (repo or "").strip()
+    if repo.endswith(".git"):
+        repo = repo[:-4]
+    repo = repo.rstrip(".,;)\"'>")
+    if (
+        owner
+        and owner.lower() not in _GITHUB_RESERVED_PATHS
+        and repo
+        and not repo.endswith((".html", ".xml", ".png", ".jpg", ".md"))
+        and re.match(r"^[a-zA-Z0-9_.-]+$", owner)
+        and re.match(r"^[a-zA-Z0-9_.-]+$", repo)
+    ):
+        return f"{owner}/{repo}"
+    return None
+
+
 def extract_github_repo(url: str, text: str = "") -> str | None:
     """記事URLまたは本文抜粋から関連する GitHub リポジトリ名 (owner/repo) を抽出する (A-2)"""
     # 1. 記事URL自体の検証
@@ -237,18 +256,9 @@ def extract_github_repo(url: str, text: str = "") -> str | None:
         if "github.com" in parsed.netloc.lower():
             parts = [p for p in parsed.path.strip("/").split("/") if p]
             if len(parts) >= 2:
-                owner, repo = parts[0], parts[1]
-                if repo.endswith(".git"):
-                    repo = repo[:-4]
-                repo = repo.rstrip(".,;)\"'>")
-                if (
-                    owner.lower() not in _GITHUB_RESERVED_PATHS
-                    and repo
-                    and not repo.endswith((".html", ".xml", ".png", ".jpg", ".md"))
-                    and re.match(r"^[a-zA-Z0-9_.-]+$", owner)
-                    and re.match(r"^[a-zA-Z0-9_.-]+$", repo)
-                ):
-                    return f"{owner}/{repo}"
+                normalized = _normalize_github_repo(parts[0], parts[1])
+                if normalized:
+                    return normalized
 
     # 2. 本文またはURLテキスト内の github.com/owner/repo パターン検索
     combined = f"{url} {text}"
@@ -257,18 +267,9 @@ def extract_github_repo(url: str, text: str = "") -> str | None:
         combined,
     )
     for owner, repo in matches:
-        if owner.lower() in _GITHUB_RESERVED_PATHS:
-            continue
-        if repo.endswith(".git"):
-            repo = repo[:-4]
-        repo = repo.rstrip(".,;)\"'>")
-        if (
-            repo
-            and not repo.endswith((".html", ".xml", ".png", ".jpg", ".md"))
-            and re.match(r"^[a-zA-Z0-9_.-]+$", owner)
-            and re.match(r"^[a-zA-Z0-9_.-]+$", repo)
-        ):
-            return f"{owner}/{repo}"
+        normalized = _normalize_github_repo(owner, repo)
+        if normalized:
+            return normalized
 
     return None
 
@@ -305,17 +306,47 @@ def safe_get(url: str, timeout: int = 15) -> requests.Response | None:
         return None
 
 
-def parse_iso_datetime(dt_str: str) -> datetime | None:
-    """ISO8601 文字列を UTC の aware な datetime に安全に変換する"""
+def parse_iso_datetime(
+    dt_str: str,
+    default_tz: timezone = timezone.utc,
+) -> datetime | None:
+    """ISO8601 文字列を aware な datetime に安全に変換する"""
     if not dt_str:
         return None
     try:
         dt = datetime.fromisoformat(str(dt_str).replace("Z", "+00:00"))
         if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
+            dt = dt.replace(tzinfo=default_tz)
         return dt
     except (ValueError, TypeError):
         return None
+
+
+_ARCHIVE_DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.json$")
+
+
+def _load_json_file(path: str, warn_prefix: str = "") -> dict | None:
+    """JSON ファイルを安全に読み込み、dict のみ返す（未存在ファイルは静かに None）"""
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else None
+    except FileNotFoundError:
+        return None
+    except (OSError, ValueError) as e:
+        if warn_prefix:
+            print(f"[WARN] {warn_prefix} {path}: {e}")
+        return None
+
+
+def _list_archive_date_files(archive_dir: str = ARCHIVE_DIR, reverse: bool = True) -> list[str]:
+    """アーカイブディレクトリ内の YYYY-MM-DD.json ファイル名一覧を返す"""
+    if not os.path.exists(archive_dir):
+        return []
+    return sorted(
+        [fn for fn in os.listdir(archive_dir) if _ARCHIVE_DATE_RE.match(fn)],
+        reverse=reverse,
+    )
 
 
 def format_pub_date(dt_str: str) -> str:
@@ -860,12 +891,28 @@ def _parse_retry_after(resp: requests.Response) -> float | None:
     return None
 
 
+def _calc_gemini_retry_wait(resp: requests.Response, attempt: int) -> float:
+    """429 / 5xx 応答に対するバックオフ待機秒数（ジッター付き）を算出する"""
+    exp_wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
+    if resp.status_code == 429:
+        ra = _parse_retry_after(resp)
+        if ra is not None:
+            exp_wait = max(exp_wait, min(ra + 1.0, 90.0))
+    return exp_wait + random.uniform(0, 2.0)
+
+
+def _can_retry_before_deadline(wait_sec: float, deadline: float | None) -> bool:
+    """待機後の時刻が deadline 未満に収まるかを判定する"""
+    return True if deadline is None else (time.monotonic() + wait_sec) < deadline
+
+
 def call_gemini_rest(
     prompt: str,
     api_key: str,
     response_schema: dict | None = None,
+    deadline: float | None = None,
 ) -> list | dict | None:
-    """Gemini REST API を直接呼び出し (リトライ・responseSchema 対応)"""
+    """Gemini REST API を直接呼び出し (リトライ・responseSchema・全体期限対応)"""
     url = GEMINI_API_URL.format(model=GEMINI_MODEL, key=api_key)
     gen_config: dict = {
         "responseMimeType": "application/json",
@@ -884,14 +931,25 @@ def call_gemini_rest(
     }
 
     for attempt in range(1, GEMINI_MAX_RETRIES + 1):
+        req_timeout = 120
+        if deadline is not None:
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                print("[WARN] Gemini API deadline reached -- aborting retries")
+                return {"error": "Retry deadline exceeded"}
+            req_timeout = min(120, max(10, remaining))
+
         try:
-            resp = requests.post(url, json=payload, timeout=120)
+            resp = requests.post(url, json=payload, timeout=req_timeout)
 
             if resp.status_code == 200:
                 data = resp.json()
                 text = extract_text_from_gemini_response(data)
                 if text is None:
                     if attempt < GEMINI_MAX_RETRIES:
+                        if not _can_retry_before_deadline(GEMINI_SLEEP_SEC, deadline):
+                            print(f"[WARN] Gemini retry skipped (wait {GEMINI_SLEEP_SEC}s would exceed deadline)")
+                            return {"error": "Retry deadline exceeded"}
                         print(f"[WARN] Gemini returned no usable text (attempt {attempt}/{GEMINI_MAX_RETRIES}), retrying in {GEMINI_SLEEP_SEC}s ...")
                         time.sleep(GEMINI_SLEEP_SEC)
                         continue
@@ -899,6 +957,9 @@ def call_gemini_rest(
                 result = parse_json_safely(text)
                 if result is None:
                     if attempt < GEMINI_MAX_RETRIES:
+                        if not _can_retry_before_deadline(GEMINI_SLEEP_SEC, deadline):
+                            print(f"[WARN] Gemini retry skipped (wait {GEMINI_SLEEP_SEC}s would exceed deadline)")
+                            return {"error": "Retry deadline exceeded"}
                         print(f"[WARN] Gemini JSON parse failed (attempt {attempt}/{GEMINI_MAX_RETRIES}), retrying in {GEMINI_SLEEP_SEC}s ...")
                         time.sleep(GEMINI_SLEEP_SEC)
                         continue
@@ -907,17 +968,20 @@ def call_gemini_rest(
 
             elif resp.status_code == 429:
                 if attempt < GEMINI_MAX_RETRIES:
-                    exp_wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
-                    ra = _parse_retry_after(resp)
-                    base_wait = max(exp_wait, min(ra + 1.0, 90.0)) if ra is not None else exp_wait
-                    wait = base_wait + random.uniform(0, 2.0)
+                    wait = _calc_gemini_retry_wait(resp, attempt)
+                    if not _can_retry_before_deadline(wait, deadline):
+                        print(f"[WARN] 429 retry skipped (wait {wait:.1f}s would exceed deadline)")
+                        return {"error": "Retry deadline exceeded"}
                     print(f"[WARN] 429 Rate limited (attempt {attempt}/{GEMINI_MAX_RETRIES}), waiting {wait:.1f}s ...")
                     time.sleep(wait)
                 continue
 
             elif resp.status_code >= 500:
                 if attempt < GEMINI_MAX_RETRIES:
-                    wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC) + random.uniform(0, 2.0)
+                    wait = _calc_gemini_retry_wait(resp, attempt)
+                    if not _can_retry_before_deadline(wait, deadline):
+                        print(f"[WARN] {resp.status_code} retry skipped (wait {wait:.1f}s would exceed deadline)")
+                        return {"error": "Retry deadline exceeded"}
                     print(f"[WARN] {resp.status_code} Server error (attempt {attempt}/{GEMINI_MAX_RETRIES}), waiting {wait:.1f}s ...")
                     time.sleep(wait)
                 continue
@@ -931,6 +995,9 @@ def call_gemini_rest(
             print(f"[ERROR] Gemini API request failed: {e}")
             if attempt < GEMINI_MAX_RETRIES:
                 wait = min(GEMINI_SLEEP_SEC * attempt, GEMINI_BACKOFF_MAX_SEC)
+                if not _can_retry_before_deadline(wait, deadline):
+                    print(f"[WARN] Gemini retry skipped (wait {wait}s would exceed deadline)")
+                    return {"error": "Retry deadline exceeded"}
                 print(f"[WARN] Retrying in {wait}s (attempt {attempt}/{GEMINI_MAX_RETRIES}) ...")
                 time.sleep(wait)
             continue
@@ -960,17 +1027,13 @@ def load_today_existing_articles(now: datetime | None = None) -> list[dict]:
 
     archive_file = os.path.join(ARCHIVE_DIR, f"{today_prefix}.json")
     for path in (DATA_FILE, archive_file):
-        if not os.path.exists(path):
+        data = _load_json_file(path)
+        if not data:
             continue
-        try:
-            with open(path, encoding="utf-8") as f:
-                data = json.load(f)
-            if path == DATA_FILE and not str(data.get("generated_at", "")).startswith(today_prefix):
-                continue
-            if isinstance(data.get("articles"), list):
-                collected.extend(data["articles"])
-        except (OSError, ValueError):
-            pass
+        if path == DATA_FILE and not str(data.get("generated_at", "")).startswith(today_prefix):
+            continue
+        if isinstance(data.get("articles"), list):
+            collected.extend(data["articles"])
     return deduplicate_articles(collected)
 
 
@@ -987,13 +1050,8 @@ def load_recent_past_articles(
 
     for d in range(1, days + 1):
         target_date = (today - timedelta(days=d)).strftime("%Y-%m-%d")
-        fpath = os.path.join(ARCHIVE_DIR, f"{target_date}.json")
-        if not os.path.exists(fpath):
-            continue
-        try:
-            with open(fpath, encoding="utf-8") as f:
-                data = json.load(f)
-        except (OSError, ValueError):
+        data = _load_json_file(os.path.join(ARCHIVE_DIR, f"{target_date}.json"))
+        if not data:
             continue
         fallback_ts = str(data.get("generated_at") or f"{target_date}T00:00:00+09:00")
         for art in data.get("articles", []):
@@ -1006,6 +1064,14 @@ def load_recent_past_articles(
                     copied["new_at"] = fallback_ts
                 past_map[norm] = copied
     return past_map
+
+
+def _backfill_github_repo(art: dict) -> None:
+    """記事に github_repo が未設定なら URL / 本文から補完する"""
+    if not art.get("github_repo"):
+        extracted = extract_github_repo(art.get("url", ""), art.get("_body", ""))
+        if extracted:
+            art["github_repo"] = extracted
 
 
 def reuse_analyzed_articles(
@@ -1031,10 +1097,7 @@ def reuse_analyzed_articles(
             for k in ("hn_score", "hn_comments", "published"):
                 if k in art:
                     merged[k] = art[k]
-            if not merged.get("github_repo"):
-                extracted = extract_github_repo(merged.get("url", ""))
-                if extracted:
-                    merged["github_repo"] = extracted
+            _backfill_github_repo(merged)
             reused.append(merged)
         elif norm in past_map:
             past_art = past_map[norm]
@@ -1044,10 +1107,7 @@ def reuse_analyzed_articles(
                     merged[k] = art[k]
             merged["is_prev_seen"] = True
             merged["new_at"] = past_art.get("new_at") or past_art.get("first_seen") or "past"
-            if not merged.get("github_repo"):
-                extracted = extract_github_repo(merged.get("url", ""))
-                if extracted:
-                    merged["github_repo"] = extracted
+            _backfill_github_repo(merged)
             reused.append(merged)
         else:
             to_analyze.append(art)
@@ -1122,6 +1182,30 @@ def merge_today_articles(
     return list(by_url.values())
 
 
+def _apply_article_analysis(art: dict, item: dict, run_at: str | None) -> None:
+    """検証済みのバッチ解析結果1件分を記事辞書へ反映する"""
+    if item.get("title"):
+        art["title"] = str(item["title"])
+    art["summary"] = str(item.get("summary", ""))
+    if item.get("actionable_takeaway"):
+        art["actionable_takeaway"] = str(item["actionable_takeaway"]).strip()
+    gh_repo = str(item.get("github_repo", "")).strip()
+    if "/" in gh_repo:
+        owner, repo = gh_repo.split("/", 1)
+        normalized_repo = _normalize_github_repo(owner, repo)
+        if normalized_repo:
+            art["github_repo"] = normalized_repo
+    _backfill_github_repo(art)
+    art["tags"] = [str(t) for t in item.get("tags", [])][:5]
+    category = str(item.get("category", ""))
+    art["category"] = category if category in CATEGORIES else "その他"
+    art["score"] = max(0, min(int(item.get("score", 50)), SCORE_MAX))
+    art["score_reason"] = str(item.get("score_reason", ""))
+    art["analysis_status"] = "ok"
+    if run_at:
+        art["new_at"] = run_at
+
+
 def analyze_with_gemini(
     articles: list[dict],
     start_time: float = 0,
@@ -1150,6 +1234,8 @@ def analyze_with_gemini(
         for i in range(0, len(articles), ANALYSIS_BATCH_SIZE)
     ]
 
+    deadline = (start_time + GLOBAL_TIMEOUT_SEC) if start_time else None
+
     for ci, chunk in enumerate(chunks):
         # 全体タイムアウトチェック
         if start_time and (time.monotonic() - start_time) > GLOBAL_TIMEOUT_SEC:
@@ -1168,6 +1254,7 @@ def analyze_with_gemini(
             build_batch_prompt(chunk),
             api_key,
             response_schema=BATCH_ANALYSIS_SCHEMA,
+            deadline=deadline,
         )
 
         if isinstance(result, list):
@@ -1178,28 +1265,7 @@ def analyze_with_gemini(
             for i, art in enumerate(chunk):
                 item = by_id.get(i)
                 if item:
-                    if item.get("title"):
-                        art["title"] = str(item["title"])
-                    art["summary"] = str(item.get("summary", ""))
-                    if item.get("actionable_takeaway"):
-                        art["actionable_takeaway"] = str(item["actionable_takeaway"]).strip()
-                    gh_repo = str(item.get("github_repo", "")).strip()
-                    if gh_repo and re.match(r"^[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+$", gh_repo):
-                        owner = gh_repo.split("/")[0].lower()
-                        if owner not in _GITHUB_RESERVED_PATHS:
-                            art["github_repo"] = gh_repo
-                    if not art.get("github_repo"):
-                        extracted = extract_github_repo(art.get("url", ""), art.get("_body", ""))
-                        if extracted:
-                            art["github_repo"] = extracted
-                    art["tags"] = [str(t) for t in item.get("tags", [])][:5]
-                    category = str(item.get("category", ""))
-                    art["category"] = category if category in CATEGORIES else "その他"
-                    art["score"] = max(0, min(int(item.get("score", 50)), SCORE_MAX))
-                    art["score_reason"] = str(item.get("score_reason", ""))
-                    art["analysis_status"] = "ok"
-                    if run_at:
-                        art["new_at"] = run_at
+                    _apply_article_analysis(art, item, run_at)
                 else:
                     _mark_analysis_failed(art, "解析エラー: バッチ応答に含まれず")
         else:
@@ -1220,35 +1286,46 @@ def analyze_with_gemini(
 # ---------------------------------------------------------------------------
 # インテリジェント・スコアリング
 # ---------------------------------------------------------------------------
-def apply_hot_scoring(articles: list[dict]) -> list[dict]:
-    """複数ソースに出現する URL を検知し、スコア加算 & is_hot フラグ付与"""
-    url_map: dict[str, list[int]] = {}
+def _detect_hot_urls(articles: list[dict]) -> set[str]:
+    """複数ソースに出現した正規化 URL 集合を返す（ソース未設定時は重複出現で判定）"""
+    url_counts: dict[str, int] = {}
     url_sources: dict[str, set[str]] = {}
     has_sources = False
-    for idx, art in enumerate(articles):
+    for art in articles:
         norm = normalize_url(art.get("url", ""))
         if not norm:
             continue
-        url_map.setdefault(norm, []).append(idx)
+        url_counts[norm] = url_counts.get(norm, 0) + 1
         src = str(art.get("source") or "").strip()
         if src:
             has_sources = True
             url_sources.setdefault(norm, set()).add(src)
-
     if has_sources:
-        hot_urls = {url for url, srcs in url_sources.items() if len(srcs) >= 2}
-    else:
-        hot_urls = {url for url, indices in url_map.items() if len(indices) > 1}
+        return {url for url, srcs in url_sources.items() if len(srcs) >= 2}
+    return {url for url, cnt in url_counts.items() if cnt > 1}
 
+
+def _apply_hot_flags(
+    articles: list[dict],
+    hot_urls: set[str],
+    preserve_existing: bool = False,
+) -> None:
+    """HOT 対象 URL に該当する記事へ is_hot フラグ付与およびスコア加算を行う"""
     for art in articles:
         norm = normalize_url(art.get("url", ""))
         status = art.get("analysis_status", "ok")
-        if norm in hot_urls and status not in ("error", "skipped"):
+        eligible = (status == "ok" and not art.get("is_hot")) if preserve_existing else (status not in ("error", "skipped"))
+        if norm in hot_urls and eligible:
             art["is_hot"] = True
             art["score"] = min(art.get("score", 50) + SCORE_HOT_BONUS, SCORE_MAX)
-        else:
+        elif not preserve_existing or "is_hot" not in art:
             art["is_hot"] = False
 
+
+def apply_hot_scoring(articles: list[dict]) -> list[dict]:
+    """複数ソースに出現する URL を検知し、スコア加算 & is_hot フラグ付与"""
+    hot_urls = _detect_hot_urls(articles)
+    _apply_hot_flags(articles, hot_urls, preserve_existing=False)
     return articles
 
 
@@ -1299,15 +1376,12 @@ def fetch_embeddings(texts: list[str], api_key: str) -> list[list[float]] | None
                     chunk_values = [e.get("values", []) for e in embeddings]
                     break
                 if resp.status_code == 429 and attempt < max_attempts:
-                    exp_wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC)
-                    ra = _parse_retry_after(resp)
-                    base_wait = max(exp_wait, min(ra + 1.0, 90.0)) if ra is not None else exp_wait
-                    wait = base_wait + random.uniform(0, 2.0)
+                    wait = _calc_gemini_retry_wait(resp, attempt)
                     print(f"[WARN] Embedding 429 (attempt {attempt}/{max_attempts}), waiting {wait:.1f}s ...")
                     time.sleep(wait)
                     continue
                 if resp.status_code >= 500 and attempt < max_attempts:
-                    wait = min(GEMINI_SLEEP_SEC * (2 ** attempt), GEMINI_BACKOFF_MAX_SEC) + random.uniform(0, 2.0)
+                    wait = _calc_gemini_retry_wait(resp, attempt)
                     print(f"[WARN] Embedding {resp.status_code} (attempt {attempt}/{max_attempts}), waiting {wait:.1f}s ...")
                     time.sleep(wait)
                     continue
@@ -1612,14 +1686,9 @@ def load_recent_archives(days: int = 7) -> list[dict]:
         fname = os.path.join(
             ARCHIVE_DIR, f"{(today - timedelta(days=d)).strftime('%Y-%m-%d')}.json"
         )
-        if not os.path.exists(fname):
-            continue
-        try:
-            with open(fname, encoding="utf-8") as f:
-                data = json.load(f)
+        data = _load_json_file(fname, warn_prefix="Failed to read archive")
+        if data:
             collected.extend(data.get("articles", []))
-        except (json.JSONDecodeError, OSError) as e:
-            print(f"[WARN] Failed to read archive {fname}: {e}")
     return deduplicate_articles(collected)
 
 
@@ -1693,10 +1762,8 @@ def generate_weekly_digest(
 
 def load_today_digest(run_at: str | None = None) -> dict | None:
     """digest.json が今日 (JST) 生成されたものなら返す（run_at 指定時は該当実行分のみ）"""
-    try:
-        with open(DIGEST_FILE, encoding="utf-8") as f:
-            digest = json.load(f)
-    except (OSError, ValueError):
+    digest = _load_json_file(DIGEST_FILE)
+    if not digest:
         return None
     today = datetime.now(JST).strftime("%Y-%m-%d")
     gen_at = str(digest.get("generated_at", ""))
@@ -1735,33 +1802,32 @@ def send_digest_notification(digest: dict) -> None:
 # ---------------------------------------------------------------------------
 # RSS フィード出力
 # ---------------------------------------------------------------------------
-def _format_rss_channel(
+def build_rss_feed_xml(
     title: str,
     description: str,
     feed_url: str,
-    articles: list[dict],
+    items: list[dict],
     now: datetime,
 ) -> str:
-    """RSS 2.0 XML チャンネル文字列を構築する"""
-    items = []
-    for art in articles:
-        pub_date = format_pub_date(art.get("published", ""))
-        summary = (art.get("summary") or "").replace("\\n", " / ").replace("\n", " / ")
-        takeaway = f" [実務示唆: {art['actionable_takeaway']}]" if art.get("actionable_takeaway") else ""
-        repo = f" [GitHub: {art['github_repo']}]" if art.get("github_repo") else ""
-        desc = (f"[Score: {art.get('score', 0)}] {summary}{takeaway}{repo} "
-                f"(Source: {art.get('source', '')})")
-        url = xml_escape(art.get("url", ""))
-        items.append(
+    """RSS 2.0 XML 文字列を構築する（title/url/description/published/category を受け取る）"""
+    rss_items: list[str] = []
+    for item in items:
+        pub_date = format_pub_date(item.get("published", ""))
+        url = xml_escape(item.get("url", ""))
+        cat = item.get("category")
+        cat_tag = f"      <category>{xml_escape(str(cat))}</category>\n" if cat else ""
+        rss_items.append(
             "    <item>\n"
-            f"      <title>{xml_escape(art.get('title', ''))}</title>\n"
+            f"      <title>{xml_escape(item.get('title', ''))}</title>\n"
             f"      <link>{url}</link>\n"
             f"      <guid isPermaLink=\"false\">{url}</guid>\n"
-            f"      <description>{xml_escape(desc)}</description>\n"
+            f"{cat_tag}"
+            f"      <description>{xml_escape(item.get('description', ''))}</description>\n"
             f"{pub_date}"
             "    </item>"
         )
 
+    items_block = "\n".join(rss_items) + "\n" if rss_items else ""
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<rss version="2.0">\n'
@@ -1771,10 +1837,32 @@ def _format_rss_channel(
         f"    <description>{xml_escape(description)}</description>\n"
         "    <language>ja</language>\n"
         f"    <lastBuildDate>{format_datetime(now)}</lastBuildDate>\n"
-        + "\n".join(items) + "\n"
+        f"{items_block}"
         "  </channel>\n"
         "</rss>\n"
     )
+
+
+def _format_rss_channel(
+    title: str,
+    description: str,
+    feed_url: str,
+    articles: list[dict],
+    now: datetime,
+) -> str:
+    """RSS 2.0 XML チャンネル文字列を構築する"""
+    items: list[dict] = []
+    for art in articles:
+        summary = (art.get("summary") or "").replace("\\n", " / ").replace("\n", " / ")
+        takeaway = f" [実務示唆: {art['actionable_takeaway']}]" if art.get("actionable_takeaway") else ""
+        repo = f" [GitHub: {art['github_repo']}]" if art.get("github_repo") else ""
+        items.append({
+            "title": art.get("title", ""),
+            "url": art.get("url", ""),
+            "description": f"[Score: {art.get('score', 0)}] {summary}{takeaway}{repo} (Source: {art.get('source', '')})",
+            "published": art.get("published", ""),
+        })
+    return build_rss_feed_xml(title, description, feed_url, items, now)
 
 
 def generate_rss_feed(articles: list[dict]) -> None:
@@ -1821,8 +1909,8 @@ def rotate_archives() -> None:
     """保持期間を超えた古いアーカイブを削除する"""
     cutoff = datetime.now(JST).date() - timedelta(days=ARCHIVE_KEEP_DAYS)
     removed = 0
-    for fn in os.listdir(ARCHIVE_DIR):
-        m = re.match(r"^(\d{4}-\d{2}-\d{2})\.json$", fn)
+    for fn in _list_archive_date_files(ARCHIVE_DIR, reverse=False):
+        m = _ARCHIVE_DATE_RE.match(fn)
         if not m:
             continue
         try:
@@ -1868,10 +1956,9 @@ def generate_daily_briefing(
 
     now_dt = datetime.now(JST)
     if run_at:
-        try:
-            now_dt = datetime.fromisoformat(run_at.replace("Z", "+00:00")).astimezone(JST)
-        except ValueError:
-            pass
+        parsed_run_at = parse_iso_datetime(run_at, default_tz=JST)
+        if parsed_run_at is not None:
+            now_dt = parsed_run_at.astimezone(JST)
     edition = "朝刊" if now_dt.hour < 12 else "夕刊"
 
     # 頻出タグ上位をフォールバック用に集計
@@ -1931,13 +2018,10 @@ def generate_daily_briefing(
 def build_search_index(archive_dir: str = ARCHIVE_DIR, out_file: str | None = None) -> dict:
     """全アーカイブを重複除去して1つにまとめた軽量検索インデックス (archive/search_index.json) を生成する"""
     out_file = out_file or os.path.join(archive_dir, "search_index.json")
-    if not os.path.exists(archive_dir):
+    date_files = _list_archive_date_files(archive_dir, reverse=True)
+    if not date_files and not os.path.exists(archive_dir):
         return {"days_count": 0, "total_count": 0, "articles": []}
 
-    date_files = sorted(
-        [fn for fn in os.listdir(archive_dir) if re.match(r"^\d{4}-\d{2}-\d{2}\.json$", fn)],
-        reverse=True,
-    )
     seen: set[str] = set()
     merged: list[dict] = []
     keep_keys = (
@@ -1948,11 +2032,8 @@ def build_search_index(archive_dir: str = ARCHIVE_DIR, out_file: str | None = No
     )
     for fn in date_files:
         date_prefix = fn[:-5]
-        fpath = os.path.join(archive_dir, fn)
-        try:
-            with open(fpath, encoding="utf-8") as f:
-                data = json.load(f)
-        except (OSError, ValueError):
+        data = _load_json_file(os.path.join(archive_dir, fn))
+        if not data:
             continue
         for art in data.get("articles", []):
             norm = normalize_url(art.get("url", ""))
@@ -1986,10 +2067,7 @@ def build_trends_summary(
     if not os.path.exists(archive_dir):
         return {"days_count": 0, "daily": [], "topTags": [], "sources": [], "categories": []}
 
-    date_files = sorted(
-        [fn for fn in os.listdir(archive_dir) if re.match(r"^\d{4}-\d{2}-\d{2}\.json$", fn)],
-        reverse=True,
-    )[:days]
+    date_files = _list_archive_date_files(archive_dir, reverse=True)[:days]
     date_files.reverse()  # 古い順
 
     daily: list[dict] = []
@@ -1998,11 +2076,8 @@ def build_trends_summary(
     cat_counts: dict[str, int] = {}
 
     for fn in date_files:
-        fpath = os.path.join(archive_dir, fn)
-        try:
-            with open(fpath, encoding="utf-8") as f:
-                data = json.load(f)
-        except (OSError, ValueError):
+        data = _load_json_file(os.path.join(archive_dir, fn))
+        if not data:
             continue
         articles = data.get("articles", [])
         daily.append({"label": fn[:-5][5:], "value": len(articles)})
@@ -2092,13 +2167,7 @@ def save_results(
 
     rotate_archives()
 
-    archive_files = sorted(
-        [
-            fn for fn in os.listdir(ARCHIVE_DIR)
-            if re.match(r"^\d{4}-\d{2}-\d{2}\.json$", fn)
-        ],
-        reverse=True,
-    )
+    archive_files = _list_archive_date_files(ARCHIVE_DIR, reverse=True)
     with open(os.path.join(ARCHIVE_DIR, "index.json"), "w", encoding="utf-8") as f:
         json.dump(archive_files, f, ensure_ascii=False, indent=2)
     print(f"[INFO] Updated archive/index.json ({len(archive_files)} files)")
@@ -2184,14 +2253,9 @@ def main() -> None:
         print("[ERROR] No articles fetched from any source -- aborting")
         sys.exit(1)
 
-    # 2. 複数ソース出現の検知用に重複除去前のURL別ソース集合を記録してから重複除去
-    sources_by_url: dict[str, set[str]] = {}
-    for art in all_articles:
-        norm = normalize_url(art.get("url", ""))
-        src = str(art.get("source") or "").strip()
-        if norm and src:
-            sources_by_url.setdefault(norm, set()).add(src)
-    hot_norms = {u for u, srcs in sources_by_url.items() if len(srcs) >= 2}
+    # 2. 複数ソース出現の検知用に当日既存分＋今回取得分で重複除去前 URL 別ソース集合を記録
+    existing_today = load_today_existing_articles(now)
+    hot_norms = _detect_hot_urls(existing_today + all_articles)
 
     before_dedup = len(all_articles)
     all_articles = deduplicate_articles(all_articles)
@@ -2199,7 +2263,6 @@ def main() -> None:
         print(f"[INFO] Deduplicated: {before_dedup} -> {len(all_articles)} articles")
 
     # 3. 当日および直近数日間に解析済みの記事があれば再利用（1日2回実行時の差分解析・既出抑制）
-    existing_today = load_today_existing_articles(now)
     past_seen_map = load_recent_past_articles(now)
     reused_articles, to_analyze = reuse_analyzed_articles(
         all_articles, existing_today, past_seen_map
@@ -2224,14 +2287,7 @@ def main() -> None:
     all_articles = merge_today_articles(existing_today, reused_articles + to_analyze, run_at)
 
     # 6. スコアリング（複数ソース出現の検知）& はてなブックマーク件数の一括取得
-    for art in all_articles:
-        norm = normalize_url(art.get("url", ""))
-        status = art.get("analysis_status", "ok")
-        if norm in hot_norms and status == "ok" and not art.get("is_hot"):
-            art["is_hot"] = True
-            art["score"] = min(art.get("score", 50) + SCORE_HOT_BONUS, SCORE_MAX)
-        elif "is_hot" not in art:
-            art["is_hot"] = False
+    _apply_hot_flags(all_articles, hot_norms, preserve_existing=True)
 
     fetch_hatena_counts(all_articles)
 
