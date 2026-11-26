@@ -168,20 +168,29 @@ def test_load_today_digest(monkeypatch, tmp_path):
     _write_json(digest_file, {"generated_at": today, "overview": "x"})
     assert gather.load_today_digest()["overview"] == "x"
 
-def test_notify_from_saved(monkeypatch, tmp_path, sleeps):
+def _setup_notify_env(monkeypatch, tmp_path, data_obj, digest_obj=None):
     data_file = tmp_path / "data.json"
     digest_file = tmp_path / "digest.json"
-    run_at = datetime.now(JST).isoformat()
-    _write_json(data_file, {"generated_at": run_at,
-                            "articles": [{"title": "A", "score": 90}]})
-    _write_json(digest_file, {"generated_at": run_at})
+    _write_json(data_file, data_obj)
+    if digest_obj is not None:
+        _write_json(digest_file, digest_obj)
     monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
     monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
     monkeypatch.delenv("NOTIFY_AT_JST", raising=False)
-
     sent = {}
     monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.setdefault("articles", arts))
     monkeypatch.setattr(gather, "send_digest_notification", lambda d: sent.setdefault("digest", d))
+    return sent
+
+
+def test_notify_from_saved(monkeypatch, tmp_path, sleeps):
+    run_at = datetime.now(JST).isoformat()
+    sent = _setup_notify_env(
+        monkeypatch,
+        tmp_path,
+        {"generated_at": run_at, "articles": [{"title": "A", "score": 90}]},
+        digest_obj={"generated_at": run_at},
+    )
 
     gather.notify_from_saved()
     assert sent["articles"] == [{"title": "A", "score": 90}]
@@ -282,10 +291,9 @@ def test_reuse_and_merge_today_articles():
 
 
 def test_notify_from_saved_filters_only_latest_run(monkeypatch, tmp_path, sleeps):
-    data_file = tmp_path / "data.json"
-    digest_file = tmp_path / "digest.json"
-    _write_json(
-        data_file,
+    sent = _setup_notify_env(
+        monkeypatch,
+        tmp_path,
         {
             "generated_at": "2026-10-29T15:00:00+09:00",
             "articles": [
@@ -294,12 +302,6 @@ def test_notify_from_saved_filters_only_latest_run(monkeypatch, tmp_path, sleeps
             ],
         },
     )
-    monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
-    monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
-    monkeypatch.delenv("NOTIFY_AT_JST", raising=False)
-
-    sent = {}
-    monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.setdefault("articles", arts))
     gather.notify_from_saved(now=datetime(2026, 10, 29, 15, 0, tzinfo=JST))
     assert len(sent["articles"]) == 1
     assert sent["articles"][0]["title"] == "Afternoon Art"
@@ -635,20 +637,15 @@ def test_post_webhook_failure(monkeypatch):
 
 
 def test_notify_from_saved_skips_digest_from_earlier_run(monkeypatch, tmp_path, sleeps):
-    data_file = tmp_path / "data.json"
-    digest_file = tmp_path / "digest.json"
     today = datetime.now(JST).date()
     morning_run = datetime(today.year, today.month, today.day, 6, 45, tzinfo=JST).isoformat()
     afternoon_run = datetime(today.year, today.month, today.day, 14, 45, tzinfo=JST).isoformat()
-    _write_json(data_file, {"generated_at": afternoon_run, "articles": [{"title": "A", "score": 90, "new_at": afternoon_run, "analysis_status": "ok"}]})
-    _write_json(digest_file, {"generated_at": morning_run, "overview": "morning digest"})
-    monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
-    monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
-    monkeypatch.delenv("NOTIFY_AT_JST", raising=False)
-
-    sent = {}
-    monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.setdefault("articles", arts))
-    monkeypatch.setattr(gather, "send_digest_notification", lambda d: sent.setdefault("digest", d))
+    sent = _setup_notify_env(
+        monkeypatch,
+        tmp_path,
+        {"generated_at": afternoon_run, "articles": [{"title": "A", "score": 90, "new_at": afternoon_run, "analysis_status": "ok"}]},
+        digest_obj={"generated_at": morning_run, "overview": "morning digest"},
+    )
 
     gather.notify_from_saved()
     assert len(sent["articles"]) == 1
@@ -656,11 +653,10 @@ def test_notify_from_saved_skips_digest_from_earlier_run(monkeypatch, tmp_path, 
 
 
 def test_notify_from_saved_skips_error_articles(monkeypatch, tmp_path, sleeps):
-    data_file = tmp_path / "data.json"
-    digest_file = tmp_path / "digest.json"
     run_at = "2026-11-21T06:45:00+09:00"
-    _write_json(
-        data_file,
+    sent = _setup_notify_env(
+        monkeypatch,
+        tmp_path,
         {
             "generated_at": run_at,
             "articles": [
@@ -670,12 +666,6 @@ def test_notify_from_saved_skips_error_articles(monkeypatch, tmp_path, sleeps):
             ],
         },
     )
-    monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
-    monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
-    monkeypatch.delenv("NOTIFY_AT_JST", raising=False)
-
-    sent = {}
-    monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.setdefault("articles", arts))
     gather.notify_from_saved(now=datetime(2026, 11, 21, 7, 0, tzinfo=JST))
     assert [a["title"] for a in sent["articles"]] == ["OK Art"]
 
@@ -799,7 +789,7 @@ def test_collect_today_retry_articles_requeues_failed_with_cap():
     assert retries[1]["hn_score"] == 42
 
 
-def test_fetch_embeddings_chunks_over_batch_limit(monkeypatch):
+def test_fetch_embeddings_chunks_over_batch_limit(monkeypatch, sleeps):
     batch_sizes = []
 
     class _EmbedResp:
@@ -823,6 +813,7 @@ def test_fetch_embeddings_chunks_over_batch_limit(monkeypatch):
     assert vecs is not None
     assert len(vecs) == 120
     assert batch_sizes == [50, 50, 20]
+    assert sleeps == [gather.GEMINI_SLEEP_SEC, gather.GEMINI_SLEEP_SEC]
 
 
 def test_fetch_one_body_caps_size_and_detects_japanese_encoding(monkeypatch):
@@ -904,23 +895,18 @@ def test_build_trends_summary(tmp_path):
 
 
 def test_notify_from_saved_skips_stale_data(monkeypatch, tmp_path, sleeps):
-    data_file = tmp_path / "data.json"
-    digest_file = tmp_path / "digest.json"
-    _write_json(
-        data_file,
+    sent = _setup_notify_env(
+        monkeypatch,
+        tmp_path,
         {
             "generated_at": "2026-11-20T14:45:00+09:00",
             "articles": [{"title": "Yesterday", "score": 95, "new_at": "2026-11-20T14:45:00+09:00", "analysis_status": "ok"}],
         },
     )
-    monkeypatch.setattr(gather, "DATA_FILE", str(data_file))
-    monkeypatch.setattr(gather, "DIGEST_FILE", str(digest_file))
     monkeypatch.setenv("NOTIFY_AT_JST", "07:00")
 
-    sent = []
-    monkeypatch.setattr(gather, "send_notifications", lambda arts: sent.append(arts))
     gather.notify_from_saved(now=datetime(2026, 11, 21, 6, 50, tzinfo=JST))
-    assert sent == []
+    assert "articles" not in sent
     assert sleeps == []
 
 
@@ -1083,6 +1069,129 @@ def test_detect_hot_urls_across_existing_and_new_runs():
     ]
     hot = gather._detect_hot_urls(existing_today + new_fetched)
     assert hot == {"https://example.com/cross-run"}
+
+
+def test_apply_topic_grouping_embeddings_and_jaccard_fallback(monkeypatch):
+    # 1. 埋め込み類似度によるグルーピング
+    monkeypatch.setenv("GEMINI_API_KEY", "dummy-key")
+    monkeypatch.setattr(
+        gather,
+        "fetch_embeddings",
+        lambda texts, key: [[1.0, 0.0], [0.99, 0.05], [0.0, 1.0]],
+    )
+    arts_emb = [
+        {"title": "Topic A1", "summary": "s1"},
+        {"title": "Topic A2", "summary": "s2"},
+        {"title": "Different B", "summary": "s3"},
+    ]
+    gather.apply_topic_grouping(arts_emb)
+    assert arts_emb[0]["topic_group"] == arts_emb[1]["topic_group"]
+    assert arts_emb[0]["topic_size"] == 2
+    assert "topic_group" not in arts_emb[2]
+
+    # 2. API キー未設定時はタイトルトークン Jaccard へフォールバック
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    arts_jac = [
+        {"title": "Rust 2.0 release notes"},
+        {"title": "Rust 2.0 release overview"},
+        {"title": "PostgreSQL indexing guide"},
+    ]
+    gather.apply_topic_grouping(arts_jac)
+    assert arts_jac[0]["topic_group"] == arts_jac[1]["topic_group"]
+    assert arts_jac[0]["topic_size"] == 2
+    assert "topic_group" not in arts_jac[2]
+
+
+def test_rotate_archives_removes_only_expired_date_files(monkeypatch, tmp_path):
+    arch_dir = tmp_path / "archive"
+    arch_dir.mkdir()
+    monkeypatch.setattr(gather, "ARCHIVE_DIR", str(arch_dir))
+    monkeypatch.setattr(gather, "ARCHIVE_KEEP_DAYS", 30)
+
+    today = datetime.now(JST).date()
+    from datetime import timedelta
+    expired = (today - timedelta(days=31)).strftime("%Y-%m-%d") + ".json"
+    recent = (today - timedelta(days=5)).strftime("%Y-%m-%d") + ".json"
+    for fn in (expired, recent, "index.json", "search_index.json", "trends_30d.json"):
+        (arch_dir / fn).write_text("{}", encoding="utf-8")
+
+    gather.rotate_archives()
+    assert not (arch_dir / expired).exists()
+    assert (arch_dir / recent).exists()
+    assert (arch_dir / "index.json").exists()
+    assert (arch_dir / "search_index.json").exists()
+    assert (arch_dir / "trends_30d.json").exists()
+
+
+def test_analyze_with_gemini_maps_fields_handles_missing_and_timeout(monkeypatch, sleeps):
+    run_at = "2026-11-26T07:00:00+09:00"
+
+    # 1. API キー未設定時は全件 skipped
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    no_key_arts = [{"title": "A", "url": "https://example.com/a"}]
+    gather.analyze_with_gemini(no_key_arts, run_at=run_at)
+    assert no_key_arts[0]["analysis_status"] == "skipped"
+
+    # 2. 正常マッピング + 応答欠落エラー + タイムアウトスキップ
+    monkeypatch.setenv("GEMINI_API_KEY", "dummy-key")
+    monkeypatch.setattr(gather, "ANALYSIS_BATCH_SIZE", 2)
+    monkeypatch.setattr(gather, "GLOBAL_TIMEOUT_SEC", 10)
+    t_state = {"now": 100.0}
+    monkeypatch.setattr(gather.time, "monotonic", lambda: t_state["now"])
+
+    def fake_gemini(prompt, key, response_schema=None, deadline=None):
+        t_state["now"] = 120.0  # 1バッチ後に全体タイムアウト超過させる
+        return [{
+            "id": 0,
+            "title": "日本語タイトル",
+            "summary": "1行目\n2行目\n3行目",
+            "actionable_takeaway": "アップデートを確認する",
+            "github_repo": "owner/repo.git",
+            "tags": ["AI", "LLM"],
+            "category": "AI・機械学習",
+            "score": 120,
+            "score_reason": "重要",
+        }]  # id=1 は意図的に欠落
+
+    monkeypatch.setattr(gather, "call_gemini_rest", fake_gemini)
+    arts = [
+        {"title": "Raw 0", "url": "https://example.com/0"},
+        {"title": "Raw 1", "url": "https://example.com/1"},
+        {"title": "Raw 2", "url": "https://example.com/2"},
+    ]
+    gather.analyze_with_gemini(arts, start_time=100.0, run_at=run_at)
+    assert arts[0]["analysis_status"] == "ok"
+    assert arts[0]["github_repo"] == "owner/repo"
+    assert arts[0]["score"] == gather.SCORE_MAX
+    assert arts[0]["new_at"] == run_at
+    assert arts[1]["analysis_status"] == "error"
+    assert arts[2]["analysis_status"] == "skipped"
+
+
+def test_build_rss_feed_xml_empty_and_category():
+    from datetime import timezone
+    now = datetime(2026, 11, 26, 0, 0, tzinfo=timezone.utc)
+    empty_xml = gather.build_rss_feed_xml("Title", "Desc", "https://example.com/", [], now)
+    assert "<channel>" in empty_xml and "<item>" not in empty_xml
+
+    xml_with_cat = gather.build_rss_feed_xml(
+        "Feed & Title",
+        "Desc <1>",
+        "https://example.com/",
+        [{
+            "title": "Item <A>",
+            "url": "https://example.com/a?x=1&y=2",
+            "description": "Body & Notes",
+            "published": "2026-11-26T00:00:00Z",
+            "category": "AI & ML",
+        }],
+        now,
+    )
+    assert "<title>Feed &amp; Title</title>" in xml_with_cat
+    assert "<title>Item &lt;A&gt;</title>" in xml_with_cat
+    assert "<category>AI &amp; ML</category>" in xml_with_cat
+    assert "https://example.com/a?x=1&amp;y=2" in xml_with_cat
+
 
 
 

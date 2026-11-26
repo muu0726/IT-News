@@ -2370,7 +2370,7 @@
           : '';
         const memoEditorHtml = `
           <div class="card-memo-editor${isEditingMemo ? ' visible' : ''}" data-memo-editor="${i}">
-            <input type="text" class="card-memo-input" data-memo-input="${i}" maxlength="300" placeholder="この記事への一言メモ（検索・MD出力にも反映）" value="${esc(memoText)}">
+            <input type="text" name="memo" autocomplete="off" class="card-memo-input" data-memo-input="${i}" maxlength="300" placeholder="この記事への一言メモ（検索・MD出力にも反映）" value="${esc(memoText)}">
             <button type="button" class="btn save-memo-btn" data-idx="${i}">保存</button>
             ${memoText ? `<button type="button" class="btn delete-memo-btn" data-idx="${i}">削除</button>` : ''}
             <button type="button" class="btn cancel-memo-btn" data-idx="${i}">閉じる</button>

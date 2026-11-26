@@ -3,16 +3,60 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 
-function loadShared({ matchesDark = false } = {}) {
-  const storage = new Map();
-  let mediaChangeHandler = null;
+function makeClassList() {
+  const classes = new Set();
+  return {
+    add: (...c) => c.forEach((x) => classes.add(x)),
+    remove: (...c) => c.forEach((x) => classes.delete(x)),
+    toggle: (c, force) => {
+      if (force === undefined) {
+        if (classes.has(c)) { classes.delete(c); return false; }
+        classes.add(c);
+        return true;
+      }
+      if (force) classes.add(c);
+      else classes.delete(c);
+      return force;
+    },
+    contains: (c) => classes.has(c),
+  };
+}
+
+function makeElement(tag = 'div') {
   const listeners = new Map();
-  const toggleBtn = {
+  const el = {
+    tagName: tag.toUpperCase(),
+    className: '',
+    textContent: '',
     innerHTML: '',
+    type: '',
+    children: [],
+    parentNode: null,
+    classList: makeClassList(),
+    appendChild(child) {
+      child.parentNode = el;
+      el.children.push(child);
+      return child;
+    },
+    remove() {
+      if (!el.parentNode) return;
+      el.parentNode.children = el.parentNode.children.filter((c) => c !== el);
+      el.parentNode = null;
+    },
     addEventListener(type, fn) {
       listeners.set(type, fn);
     },
+    trigger(type, event = {}) {
+      listeners.get(type)?.({ target: el, ...event });
+    },
   };
+  return el;
+}
+
+function loadShared({ matchesDark = false, clipboard = null } = {}) {
+  const storage = new Map();
+  let mediaChangeHandler = null;
+  const toggleBtn = makeElement('button');
   const docAttrs = {};
   const sandbox = {
     window: {
@@ -24,6 +68,7 @@ function loadShared({ matchesDark = false } = {}) {
       }),
     },
     document: {
+      createElement: (tag) => makeElement(tag),
       documentElement: {
         setAttribute(k, v) {
           docAttrs[k] = v;
@@ -37,7 +82,7 @@ function loadShared({ matchesDark = false } = {}) {
       getItem: (k) => (storage.has(k) ? storage.get(k) : null),
       setItem: (k, v) => storage.set(k, String(v)),
     },
-    navigator: {},
+    navigator: clipboard ? { clipboard } : {},
     console,
     setTimeout,
     clearTimeout,
@@ -48,9 +93,11 @@ function loadShared({ matchesDark = false } = {}) {
     docAttrs,
     toggleBtn,
     triggerMediaChange: (matches) => mediaChangeHandler?.({ matches }),
-    clickToggle: () => listeners.get('click')?.(),
+    clickToggle: () => toggleBtn.trigger('click'),
   };
 }
+
+const clone = (v) => JSON.parse(JSON.stringify(v));
 
 test('esc and safeUrl sanitize untrusted inputs', () => {
   const { api } = loadShared();
@@ -58,8 +105,6 @@ test('esc and safeUrl sanitize untrusted inputs', () => {
   assert.equal(api.safeUrl('javascript:alert(1)'), '#');
   assert.equal(api.safeUrl('https://example.com/a?b=1'), 'https://example.com/a?b=1');
 });
-
-const clone = (v) => JSON.parse(JSON.stringify(v));
 
 test('parseSearchQuery and highlightText handle include/exclude and HTML escaping', () => {
   const { api } = loadShared();
@@ -118,14 +163,90 @@ test('createThemeController handles toggle and OS theme change callback', () => 
   assert.deepEqual(changes, ['dark', 'light']);
 });
 
-test('index.html and gadget.html link shared assets and have valid inline JS', () => {
+test('createToaster renders message and handles action button click', () => {
+  const { api } = loadShared();
+  const wrap = makeElement('div');
+  const showToast = api.createToaster(wrap);
+  let undone = false;
+  showToast('2件を既読にしました', '元に戻す', () => {
+    undone = true;
+  });
+  assert.equal(wrap.children.length, 1);
+  const toast = wrap.children[0];
+  assert.equal(toast.children[0].textContent, '2件を既読にしました');
+  toast.children[1].trigger('click');
+  assert.equal(undone, true);
+  assert.equal(wrap.children.length, 0);
+});
+
+test('bindModal opens, closes on button, and closes only on backdrop click', () => {
+  const { api } = loadShared();
+  const modal = makeElement('div');
+  const openBtn = makeElement('button');
+  const closeBtn = makeElement('button');
+  const inner = makeElement('div');
+  api.bindModal({ modal, openBtn, closeBtn });
+
+  openBtn.trigger('click');
+  assert.equal(modal.classList.contains('visible'), true);
+
+  // 内側要素クリックでは閉じない
+  modal.trigger('click', { target: inner });
+  assert.equal(modal.classList.contains('visible'), true);
+
+  // 背景クリックで閉じる
+  modal.trigger('click', { target: modal });
+  assert.equal(modal.classList.contains('visible'), false);
+
+  openBtn.trigger('click');
+  closeBtn.trigger('click');
+  assert.equal(modal.classList.contains('visible'), false);
+});
+
+test('copyToClipboard handles success, rejection, and missing clipboard API', async () => {
+  const msgs = [];
+  const noClip = loadShared();
+  noClip.api.copyToClipboard('x', 'OK', (m) => msgs.push(m));
+  assert.deepEqual(msgs, ['クリップボードへのコピーが利用できません']);
+
+  const okMsgs = [];
+  const okClip = loadShared({ clipboard: { writeText: async () => {} } });
+  okClip.api.copyToClipboard('x', 'Copied!', (m) => okMsgs.push(m));
+  await new Promise((r) => setTimeout(r, 10));
+  assert.deepEqual(okMsgs, ['Copied!']);
+
+  const errMsgs = [];
+  const errClip = loadShared({ clipboard: { writeText: async () => { throw new Error('denied'); } } });
+  errClip.api.copyToClipboard('x', 'Copied!', (m) => errMsgs.push(m));
+  await new Promise((r) => setTimeout(r, 10));
+  assert.deepEqual(errMsgs, ['クリップボードへのコピーに失敗しました']);
+});
+
+test('sw.js compiles, precaches shared assets, and guards same-origin Network First', () => {
+  const swSource = fs.readFileSync('sw.js', 'utf8');
+  new vm.Script(swSource, { filename: 'sw.js' });
+  for (const asset of ['./index.html', './gadget.html', './shared.css', './shared.js', './manifest.json']) {
+    assert.ok(swSource.includes(`'${asset}'`), `sw.js missing precache asset ${asset}`);
+  }
+  assert.ok(swSource.includes('url.origin === self.location.origin'), 'sw.js missing same-origin guard');
+});
+
+test('index.html and gadget.html link shared assets, have valid inline JS, and have unique static IDs', () => {
   for (const fn of ['index.html', 'gadget.html']) {
     const html = fs.readFileSync(fn, 'utf8');
     assert.ok(html.includes('<link rel="stylesheet" href="shared.css">'), `${fn} missing shared.css`);
     assert.ok(html.includes('<script src="shared.js"></script>'), `${fn} missing shared.js`);
+
+    const staticMarkup = html.split('<script')[0];
+    const ids = [...staticMarkup.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1]);
+    const dups = ids.filter((id, i) => ids.indexOf(id) !== i);
+    assert.deepEqual(dups, [], `${fn} has duplicate static IDs: ${dups}`);
+
     const match = html.match(/<script>\s*\(\(\)\s*=>\s*\{[\s\S]*?<\/script>/);
     assert.ok(match, `${fn} missing inline script`);
     const code = match[0].slice('<script>'.length, -'</script>'.length);
     new vm.Script(code, { filename: `${fn}:inline.js` });
   }
+  const indexHtml = fs.readFileSync('index.html', 'utf8');
+  assert.ok(indexHtml.includes('name="memo"'), 'index.html memo input missing name attribute');
 });

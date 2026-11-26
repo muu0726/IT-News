@@ -244,3 +244,89 @@ def test_collect_retry_gadgets_requeues_recent_errors_with_cap():
     assert "analysis_status" not in retries[0]
 
 
+def test_analyze_gadgets_handles_no_key_missing_item_and_timeout(monkeypatch):
+    # 1. API キー未設定時は skipped
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    no_key = [{"title": "G0", "url": "https://x.com/g0"}]
+    gadget.analyze_gadgets(no_key, RUN_AT)
+    assert no_key[0]["analysis_status"] == "skipped"
+
+    # 2. 部分成功 + バッチ欠落 error + タイムアウト skipped
+    monkeypatch.setenv("GEMINI_API_KEY", "dummy-key")
+    monkeypatch.setattr(gadget, "ANALYSIS_BATCH_SIZE", 2)
+    monkeypatch.setattr(gadget, "GADGET_TIMEOUT_SEC", 10)
+    t_state = {"now": 50.0}
+    monkeypatch.setattr(gadget.time, "monotonic", lambda: t_state["now"])
+    monkeypatch.setattr(gadget.time, "sleep", lambda s: None)
+
+    def fake_gemini(prompt, key, response_schema=None, deadline=None):
+        assert deadline == 60.0
+        t_state["now"] = 70.0  # 1バッチ目でタイムアウト超過
+        return [{
+            "id": 0,
+            "title": "新型タブレット発売",
+            "summary": "s1\ns2\ns3",
+            "product_name": "Tab Pro",
+            "brand": "Acme",
+            "category": "タブレット",
+            "is_new_product": True,
+            "price": "9万8000円",
+            "release_date": "2026年12月",
+            "score": 88,
+            "score_reason": "注目",
+        }]
+
+    monkeypatch.setattr(gadget, "call_gemini_rest", fake_gemini)
+    items = [
+        {"title": "raw0", "url": "https://x.com/0"},
+        {"title": "raw1", "url": "https://x.com/1"},
+        {"title": "raw2", "url": "https://x.com/2"},
+    ]
+    gadget.analyze_gadgets(items, RUN_AT)
+    assert items[0]["analysis_status"] == "ok" and items[0]["new_at"] == RUN_AT
+    assert items[1]["analysis_status"] == "error"
+    assert items[2]["analysis_status"] == "skipped"
+
+
+def test_send_gadget_channels_and_env_guards(monkeypatch):
+    posted = []
+    monkeypatch.setattr(
+        gadget,
+        "post_webhook",
+        lambda url, payload, name, headers=None, timeout=15: posted.append((url, name, payload, headers)) or True,
+    )
+    sample = [{
+        "url": "https://x.com/p1",
+        "title": "新型カメラ発表",
+        "product_name": "Cam X1",
+        "brand": "BrandA",
+        "category": "カメラ",
+        "price": "15万円",
+        "release_date": "2026年12月",
+        "score": 90,
+        "summary": "行1\n行2",
+        "source": "AV Watch",
+    }]
+
+    # 環境変数未設定時は送信しない
+    for env_key in ("DISCORD_WEBHOOK_URL", "SLACK_WEBHOOK_URL", "LINE_CHANNEL_ACCESS_TOKEN"):
+        monkeypatch.delenv(env_key, raising=False)
+    gadget.send_gadget_discord(sample)
+    gadget.send_gadget_slack(sample)
+    gadget.send_gadget_line(sample)
+    assert posted == []
+
+    # 設定時は3チャネルすべてへ整形済みペイロードを送信
+    monkeypatch.setenv("DISCORD_WEBHOOK_URL", "https://discord.example/hook")
+    monkeypatch.setenv("SLACK_WEBHOOK_URL", "https://slack.example/hook")
+    monkeypatch.setenv("LINE_CHANNEL_ACCESS_TOKEN", "line-tok")
+    gadget.send_gadget_discord(sample)
+    gadget.send_gadget_slack(sample)
+    gadget.send_gadget_line(sample)
+    assert len(posted) == 3
+    assert posted[0][2]["embeds"][0]["title"] == "Cam X1"
+    assert "blocks" in posted[1][2]
+    assert posted[2][3] == {"Authorization": "Bearer line-tok"}
+
+
+
