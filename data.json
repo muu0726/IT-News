@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T07:42:45.266041+09:00",
-  "total_count": 42,
-  "success_count": 42,
+  "generated_at": "2026-11-26T14:45:19.686229+09:00",
+  "total_count": 64,
+  "success_count": 64,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -11,8 +11,8 @@
       "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
       "source": "Hacker News",
       "published": "2026-11-25T17:18:26+00:00",
-      "hn_score": 928,
-      "hn_comments": 394,
+      "hn_score": 1294,
+      "hn_comments": 546,
       "reading_min": 3,
       "summary": "1Passwordは2026年11月19日に従業員のGitHubアカウントへの不正アクセスを調査開始しました。\n攻撃者はソースコードにアクセスし、悪意のあるコードをバックエンドサービスにプッシュして顧客の管理者データをダウンロードしました。\n顧客の氏名、メールアドレス、アカウント識別子などが流出しましたが、顧客の保管庫の内容はアクセスされていません。",
       "actionable_takeaway": "1Passwordユーザーは、流出した可能性のある情報（氏名、メールアドレスなど）が悪用されるリスクに備え、不審な連絡には警戒し、パスワード以外の認証情報も確認すべきです。",
@@ -28,7 +28,9 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": true,
-      "hatena_count": 19
+      "hatena_count": 73,
+      "topic_group": 1,
+      "topic_size": 2
     },
     {
       "title": "DHH氏が開発する「Omarchy 4.5」リリース。一般的なマルチウィンドウをサポート。最速7秒で導入、Appleシリコン対応、Webアプリ版MS Office用ランチャーなど新機能",
@@ -50,7 +52,7 @@
       "new_at": "2026-11-24T10:10:41.946804+09:00",
       "first_seen": "2026-11-24T10:10:41.946804+09:00",
       "is_hot": true,
-      "hatena_count": 116,
+      "hatena_count": 118,
       "is_prev_seen": true
     },
     {
@@ -120,7 +122,31 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 154
+      "hatena_count": 263
+    },
+    {
+      "title": "なぜAIにとってリーマン予想よりもOmega=9/4が重要なのか",
+      "url": "https://dev.to/max_quimby/why-omega94-matters-more-than-riemann-for-ai-3534",
+      "source": "Dev.to",
+      "published": "2026-11-26T05:38:32+00:00",
+      "reading_min": 9,
+      "summary": "OpenAIが発表した行列乗算の指数オメガが正確に9/4であるという証明が、AI推論コストに大きな影響を与えると解説しています。\n行列乗算はAI推論の80-90%を占めるため、その高速化は推論コストの削減に直結します。\nこれまでの上限値2.371から2.25への改善は、AIの計算効率を劇的に向上させる可能性を秘めています。",
+      "actionable_takeaway": "行列乗算の計算効率向上はAIモデルの推論コストに直接影響するため、今後のAIハードウェアやライブラリの進化に注目し、より効率的なモデル運用を検討しましょう。",
+      "tags": [
+        "AI",
+        "行列乗算",
+        "計算複雑性"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "AIの基盤技術である行列乗算の計算効率に関する画期的な進展であり、将来のAIコストと性能に直接的な影響を与える可能性が非常に高いため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 3
     },
     {
       "title": "AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達",
@@ -143,7 +169,7 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 54,
+      "hatena_count": 55,
       "is_prev_seen": true
     },
     {
@@ -151,8 +177,8 @@
       "url": "https://scottaaronson.blog/?p=10379",
       "source": "Hacker News",
       "published": "2026-11-25T19:11:27+00:00",
-      "hn_score": 694,
-      "hn_comments": 525,
+      "hn_score": 1200,
+      "hn_comments": 1051,
       "reading_min": 29,
       "summary": "OpenAIとAnthropicがVP ≠ VNPの証明を発表し、さらにOpenAIが行列乗算の指数ωが正確に9/4であるという下限を証明しました。\nこれは1960年代からのアルゴリズムの中心的な謎に対する答えであり、AIがω>2のような下限を証明できたことは大きな衝撃です。\nAIによる数学的発見の速度と深さが、これまでの予想をはるかに超えていることを示しています。",
       "actionable_takeaway": "AIが数学の未解決問題に貢献する能力は、科学研究の進め方を根本的に変える可能性があり、AIを活用した新たな研究パラダイムの探求を検討すべきです。",
@@ -168,7 +194,9 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 1,
+      "topic_group": 2,
+      "topic_size": 3
     },
     {
       "title": "AIで学習アプリを作って2週間で宅建に合格した話【テキスト不要】｜Shikimi",
@@ -190,7 +218,7 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 450
+      "hatena_count": 608
     },
     {
       "title": "AnthropicとOpenAIの従業員らが「未公開モデルが強力になりすぎて一般公開するのは危険」と懸念",
@@ -212,7 +240,55 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 51
+      "hatena_count": 93
+    },
+    {
+      "title": "Ubuntuのセキュリティ対応の遅さ",
+      "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+      "source": "Hacker News",
+      "published": "2026-11-25T20:38:00+00:00",
+      "hn_score": 217,
+      "hn_comments": 101,
+      "reading_min": 2,
+      "summary": "Ubuntuのセキュリティ対応が遅いという懸念が、oss-securityメーリングリストで報告されています。\n特に、LinuxカーネルのTCPスタックにおけるリモートメモリ破損の脆弱性「NoisyTCP (CVE-2026-99288)」が公開されてから9日経ってもUbuntuからのパッチが提供されていない点が指摘されています。\nこれは、Ubuntuユーザーにとって重大なセキュリティリスクとなり得ます。",
+      "actionable_takeaway": "Ubuntuユーザーは、重要なセキュリティアップデートの適用状況を常に確認し、必要に応じて他のディストリビューションへの移行や、代替のセキュリティ対策を検討すべきです。",
+      "tags": [
+        "Ubuntu",
+        "セキュリティ",
+        "脆弱性"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "OSのセキュリティ対応の遅延は、システム全体のセキュリティリスクに直結するため、非常に重要度が高いと判断し高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "1Password、従業員のGitHubアカウント経由で顧客の氏名とメールアドレスが流出したと発表 — BigGo ファイナンス",
+      "url": "https://finance.biggo.jp/news/86bd3431-ad2e-4b18-b885-4fb6393beb46",
+      "source": "はてなブックマーク",
+      "published": "2026-11-25T20:50:44+00:00",
+      "reading_min": 4,
+      "summary": "1Passwordが従業員のGitHubアカウント経由で顧客の氏名とメールアドレスが流出したことを発表した。\n攻撃者はGitHubからバックエンドサービスに悪意あるコードを送り込み、顧客データを窃取したが、ユーザーのパスワードボールトは安全だった。\n同社は侵害されたアカウントの無効化や認証情報のローテーションなどの対策を講じたことを報告している。",
+      "actionable_takeaway": "GitHubアカウントのセキュリティ強化は必須であり、多要素認証の徹底やアクセス権限の最小化、定期的な認証情報ローテーションを組織全体で実施し、同様のインシデントを未然に防ぎましょう。",
+      "tags": [
+        "セキュリティ",
+        "情報漏洩",
+        "GitHub"
+      ],
+      "category": "セキュリティ",
+      "score": 90,
+      "score_reason": "パスワードマネージャーという機密情報を扱うサービスでの情報漏洩は影響が大きく、GitHubアカウントのセキュリティ対策の重要性を再認識させるため、非常に重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 218,
+      "topic_group": 1,
+      "topic_size": 2
     },
     {
       "title": "【自動化】Muse のサイドチャットへ Webhook を届ける MuseKnock の仕組み",
@@ -235,7 +311,7 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 15
+      "hatena_count": 55
     },
     {
       "title": "「Google Workspace MCPサーバ」と「Google Workspace CLI」が正式版としてリリース",
@@ -257,7 +333,29 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 2
+      "hatena_count": 48
+    },
+    {
+      "title": "「AI検索に電話番号が……」鳴りやまぬコールセンター　バッファローは壊れた「顧客導線」をどう改善した？",
+      "url": "https://www.itmedia.co.jp/business/articles/2611/26/news015.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-25T22:50:37+00:00",
+      "reading_min": 2,
+      "summary": "2025年夏、バッファローのコールセンターでAI検索による電話番号表示が原因で問い合わせが急増した事例。\n同社はAIを「敵」ではなく「味方」と捉え直し、AI検索を前提とした自社サイトの再設計に着手。\nユーザーが自己解決できるようなFAQの強化やチャット・メールへの導線改善により、ノンボイス化を推進した。",
+      "actionable_takeaway": "AI検索が顧客導線に与える影響を認識し、FAQの最適化やチャットボット導入など、AI検索を前提とした自己解決型サポート体制を構築し、コールセンターの負荷軽減を図りましょう。",
+      "tags": [
+        "AI検索",
+        "カスタマーサポート",
+        "Webサイト改善"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 88,
+      "score_reason": "AIの普及がビジネスプロセスに与える具体的な影響と、それに対する企業の対応策が示されており、多くの企業にとって喫緊の課題解決に役立つ情報であるため高スコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 129
     },
     {
       "title": "GPT-6.2 AstraがGooglerのコードゴルフ記録を初めて破る",
@@ -350,7 +448,7 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 3
+      "hatena_count": 100
     },
     {
       "title": "アプリケーションのモダナイゼーションにおける次の安全なステップを選択する方法",
@@ -373,6 +471,98 @@
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "VP ≠ VNPの意味（3分でわかる）",
+      "url": "https://www.friedgil.com/vpvnp",
+      "source": "Hacker News",
+      "published": "2026-11-24T10:56:56+00:00",
+      "hn_score": 59,
+      "hn_comments": 1,
+      "reading_min": 1,
+      "summary": "Anthropicが発表したVP ≠ VNPの証明は、P vs NP問題に関連する重要な進展です。\nこれは、特定の算術回路のサイズが入力サイズに対して多項式である場合、パーマネントを多項式時間で計算する方法がないことを意味します。\nP=NPであるためには、AND/OR/NOTのようなブール演算子を使った、加算や乗算よりも優れたパーマネント計算トリックが必要となります。",
+      "actionable_takeaway": "P vs NP問題の最新動向として、AnthropicのVP ≠ VNP証明を理解し、計算複雑性理論の基礎知識を再確認することが推奨されます。",
+      "tags": [
+        "計算複雑性理論",
+        "P vs NP",
+        "Anthropic"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "P vs NP問題という計算機科学の根幹に関わる未解決問題に対するAnthropicの重要な進展であり、理論計算機科学に大きな影響を与えるため高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0,
+      "topic_group": 2,
+      "topic_size": 3
+    },
+    {
+      "title": "AIを使った開発に「敵対的検証」を取り入れてみた",
+      "url": "https://zenn.dev/visionarray/articles/26b316ff128513",
+      "source": "Zenn",
+      "published": "2026-11-25T06:55:45+00:00",
+      "reading_min": 11,
+      "summary": "AIを活用した開発において、生成コードの品質担保に「敵対的検証」を取り入れた事例を紹介。\n通常のコードレビュー後に、意図的にソフトウェアが破綻する条件を探す検証を追加することで、新たな問題を発見。\n実装時とは異なるチャットセッションで検証を行うことで、前提に囚われずにコードを評価する重要性を指摘している。",
+      "actionable_takeaway": "AI生成コードの品質向上には、通常のレビューに加え、独立したセッションで「壊す側」の視点から敵対的検証を導入し、潜在的な脆弱性を早期に発見すべきです。",
+      "tags": [
+        "AI開発",
+        "コードレビュー",
+        "品質保証"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AI開発における品質担保は喫緊の課題であり、敵対的検証という新しいアプローチは実用性が高く、多くの開発者に示唆を与えるため高スコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "2027年の欧州アクセシビリティ法：WooCommerceストア向けアクセシビリティガイド",
+      "url": "https://dev.to/dmytro_cian/european-accessibility-act-in-2027-an-accessibility-guide-for-woocommerce-stores-322o",
+      "source": "Dev.to",
+      "published": "2026-11-26T05:37:39+00:00",
+      "reading_min": 11,
+      "summary": "2025年6月28日に適用開始された欧州アクセシビリティ法（EAA）が、2027年にはWooCommerceストアに与える影響について解説しています。\nキーボード操作、スクリーンリーダー対応、エラーメッセージの表示など、ECサイトのアクセシビリティ要件を具体的に説明しています。\nWordPressおよびWooCommerceストア運営者向けに、技術的・商業的なガイダンスと実践的な改善策を提供しています。",
+      "actionable_takeaway": "EU圏に商品を販売するWooCommerceストア運営者は、欧州アクセシビリティ法に準拠するため、キーボード操作やスクリーンリーダーでのテストを実施し、決済プロセスを含む顧客体験全体のアクセシビリティを確保しましょう。",
+      "tags": [
+        "アクセシビリティ",
+        "WooCommerce",
+        "ECサイト"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 85,
+      "score_reason": "ECサイト運営者にとって法的義務となるアクセシビリティ対応について、具体的なガイドラインと実践的な示唆を提供しており、ビジネスへの影響が大きいため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Amazon Bedrockの存在意義がようやくわかったのに、新参者だと使えない話 - Sweet Escape",
+      "url": "https://www.keisuke69.net/entry/2026/11/26/085248",
+      "source": "はてなブックマーク",
+      "published": "2026-11-26T00:25:15+00:00",
+      "reading_min": 8,
+      "summary": "筆者がこれまで利用価値を感じていなかったAmazon Bedrockを、エンタープライズ向けHR SaaS開発で採用した経緯を解説。\n人事情報という機微なデータを扱うため、高いセキュリティ水準と国内データセンター要件を満たす必要があり、AWSインフラへの移行を決断。\nプロバイダ直のAPI利用と比較し、セキュリティチェックシート対応の手間を考慮するとBedrockの存在意義が明確になったと述べている。",
+      "actionable_takeaway": "エンタープライズ向けシステムでLLMを利用する際は、セキュリティ要件やデータ所在地、IAM連携の容易さを考慮し、Amazon Bedrockのようなマネージドサービスを積極的に検討しましょう。",
+      "tags": [
+        "Amazon Bedrock",
+        "LLM",
+        "AWS"
+      ],
+      "category": "AI・機械学習",
+      "score": 82,
+      "score_reason": "エンタープライズにおけるLLM導入の際の具体的な課題（セキュリティ、コンプライアンス）と、それに対するAmazon Bedrockの有効性が示されており、実務的な示唆に富むため高スコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 76
     },
     {
       "title": "オープンソースにおける最高のものは共に築かれる",
@@ -403,8 +593,8 @@
       "url": "https://github.com/lsernau/grh-lean",
       "source": "Hacker News",
       "published": "2026-11-25T21:48:10+00:00",
-      "hn_score": 83,
-      "hn_comments": 20,
+      "hn_score": 371,
+      "hn_comments": 186,
       "reading_min": 1,
       "summary": "Anthropicの研究者が、ディリクレL関数に対するリーマン予想と一般化リーマン予想のLean 4による証明の短縮版を公開しました。\nこの証明はMathlibを基盤とし、特定の公理のみを使用しており、Claudeとの共同作業で作成されました。\n本リポジトリは研究成果物であり、メンテナンスやコントリビューションは受け付けていません。",
       "actionable_takeaway": "数学的証明の自動検証に関心のある研究者や開発者は、Lean 4環境を構築し、このリポジトリのコードを実際に実行して、AIによる高度な数学的推論の可能性を検証してみることを推奨します。",
@@ -421,7 +611,7 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 0
+      "hatena_count": 2
     },
     {
       "title": "RustでFiberを用いたJob Systemを実装したらReleaseビルドでバグが発生した",
@@ -493,6 +683,73 @@
       "hatena_count": 0
     },
     {
+      "title": "specは実装後に8割削除しよう",
+      "url": "https://zenn.dev/ruri/articles/distill-specs-after-implementation",
+      "source": "Zenn",
+      "published": "2026-11-25T11:33:06+00:00",
+      "reading_min": 10,
+      "summary": "仕様書（spec）は実装前の思考ツールであり、実装完了後はその8割以上を削除または他の場所へ移動すべきだという提案です。\n真実はコードにあり、機能要件はテストへ、用語は型やコメントへ、動機や設計判断はADR（Architecture Decision Record）へ移すべきとされています。\n最終的にspecとして残すべきは、意図、スコープの境界、外部世界に関する前提の3種類のみであり、これらはコードで表現できないプロダクトの正として扱われます。",
+      "actionable_takeaway": "仕様書は実装後に見直し、不要な情報を削除または適切な場所へ移動させることで、ドキュメントの鮮度を保ち、開発効率と保守性を向上させることができます。",
+      "tags": [
+        "仕様書",
+        "ドキュメンテーション",
+        "開発プロセス"
+      ],
+      "category": "その他",
+      "score": 80,
+      "score_reason": "開発プロセスにおけるドキュメンテーションのあり方について実践的な示唆を与え、コードの真実性を重視する現代的な開発手法に合致するため、高スコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "コードを実行するエージェントツールの統合テスト：フィクスチャ、クリーンアップ、ラベル、予算",
+      "url": "https://dev.to/sandscale/integration-tests-for-agent-tools-that-run-code-fixtures-cleanup-labels-and-budgets-538k",
+      "source": "Dev.to",
+      "published": "2026-11-26T05:38:51+00:00",
+      "reading_min": 5,
+      "summary": "AIエージェントの`run_code`ツールに対する統合テストの重要性と構築方法について解説しています。\nモックテストでは捉えられない本番環境でのバグ（出力の切り捨て、タイムアウト処理など）を統合テストで検出します。\nVitestとSandscale TypeScript SDKを用いたテスト構造（ファイルごとのサンドボックス利用など）を具体的に示しています。",
+      "actionable_takeaway": "AIエージェントの`run_code`ツールを開発する際は、モックだけでなく実際のサンドボックス環境を用いた統合テストを導入し、本番環境での予期せぬ動作を防ぎましょう。",
+      "github_repo": "sandscale/sdk",
+      "tags": [
+        "AIエージェント",
+        "統合テスト",
+        "Vitest"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AIエージェント開発における品質保証の重要な側面である統合テストに焦点を当て、具体的な実装方法を提示しているため、実務への貢献度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AI構成チューニングのための汎用決定モデル",
+      "url": "https://arxiv.org/abs/2611.33190",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-26T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "AIの構成チューニングを効率化するための汎用的な決定モデルが提案されています。\nこのモデルは、様々なAIシステムにおいて最適な設定を見つけるプロセスを自動化することを目的としています。\n手動でのチューニングにかかる時間と労力を大幅に削減できる可能性があります。",
+      "actionable_takeaway": "AIモデルのハイパーパラメータチューニングに課題を抱える開発者は、本決定モデルの概念を参考に、自動化されたチューニング戦略を検討すべきです。",
+      "tags": [
+        "AIチューニング",
+        "決定モデル",
+        "最適化"
+      ],
+      "category": "AI・機械学習",
+      "score": 80,
+      "score_reason": "AI開発における重要な課題である構成チューニングの効率化に直接貢献し、多くのプロジェクトで実用的な価値が見込まれるため高評価としました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "静的チャートを超えて: MLLM向けインタラクティブなチャートからコード生成のベンチマーク",
       "url": "https://arxiv.org/abs/2611.31345",
       "source": "arXiv cs.AI",
@@ -539,6 +796,50 @@
       "hatena_count": 0
     },
     {
+      "title": "日本語サイトで指定しておきたいCSS 2026年版 - Qiita",
+      "url": "https://qiita.com/tofu_frontend/items/6a1bb7d80a58736eef0e",
+      "source": "はてなブックマーク",
+      "published": "2026-11-23T10:33:25+00:00",
+      "reading_min": 8,
+      "summary": "日本語サイトの組版を美しくするためのCSS設定について、2026年版として整理された記事。\n特に和欧間の自動スペース挿入を制御する`text-autospace`プロパティの重要性と、その初期値が`normal`ではない経緯を解説。\n非対応ブラウザでもレイアウトが壊れないプログレッシブエンハンスメントとして導入できるCSSスニペットも提供されている。",
+      "actionable_takeaway": "日本語サイトの組版品質向上のため、`text-autospace: normal`を明示的に指定し、和欧間の適切なスペースを自動挿入することで、ユーザー体験を改善しましょう。",
+      "tags": [
+        "CSS",
+        "日本語組版",
+        "Webフロントエンド"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 78,
+      "score_reason": "日本語サイトの品質向上に直結する実用的なCSS情報であり、プログレッシブエンハンスメントとして導入しやすい点が評価できるため高スコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 320
+    },
+    {
+      "title": "何が、誰が、いつ：短い推論によるメンタルヘルス安全のための構造化された危害評価",
+      "url": "https://arxiv.org/abs/2611.33263",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-26T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "メンタルヘルスに関する安全性を評価するための、構造化された危害評価フレームワークが提案されています。\n「何が、誰が、いつ」という観点から、短い推論を用いて危害を特定・評価します。\nAIが生成するコンテンツや対話システムにおける倫理的課題への対応に役立つ可能性があります。",
+      "actionable_takeaway": "AIシステムがメンタルヘルスに影響を与える可能性のあるコンテンツを扱う場合、本フレームワークを参考に危害評価プロセスを導入し、倫理的リスクを軽減すべきです。",
+      "tags": [
+        "メンタルヘルス",
+        "危害評価",
+        "AI倫理"
+      ],
+      "category": "AI・機械学習",
+      "score": 78,
+      "score_reason": "AIの社会実装が進む中で、メンタルヘルスへの影響という倫理的側面は非常に重要であり、その評価手法を提案する点で高い実用性と社会貢献性があります。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "jQuery 4.1正式版がリリース、内部実装をquerySelectorAllに統一でより高速に。jQuery 3.x系最後となるjQuery 3.8も同時リリース",
       "url": "https://www.publickey1.jp/blog/26/jquery_41queryselectoralljquery_3xjquery_38.html",
       "source": "Publickey",
@@ -559,7 +860,7 @@
       "new_at": "2026-11-25T08:14:51.311327+09:00",
       "first_seen": "2026-11-25T08:14:51.311327+09:00",
       "is_hot": false,
-      "hatena_count": 59,
+      "hatena_count": 62,
       "is_prev_seen": true
     },
     {
@@ -626,6 +927,97 @@
       "analysis_status": "ok",
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "保存されたUIスタイルガイドのコレクション",
+      "url": "https://aresluna.org/ui-style-guides/",
+      "source": "Hacker News",
+      "published": "2026-11-26T00:40:00+00:00",
+      "hn_score": 79,
+      "hn_comments": 7,
+      "reading_min": 3,
+      "summary": "1980年代初頭から現在までの様々な企業のUIスタイルガイド（インターフェースガイドライン）を収集したリポジトリです。\nAmiga Workbench、Android、BlackBerry、CDE、CUA、GEM、GNOME、iOS、Java Swing、Apple Mac OSなど、多岐にわたるプラットフォームのガイドラインが含まれています。\nこれらのスタイルガイドは、UI/UXデザインの歴史的変遷と進化を理解するための貴重な資料となります。",
+      "actionable_takeaway": "過去のUIスタイルガイドを参考に、現在のデザインシステムやUI/UX設計のベストプラクティスを再評価し、よりユーザーフレンドリーなインターフェース設計に活かすことができます。",
+      "github_repo": "aresluna/ui-style-guides",
+      "tags": [
+        "UI/UX",
+        "デザインシステム",
+        "歴史"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 75,
+      "score_reason": "UI/UXデザインの歴史と進化を体系的に学べる貴重なリソースであり、現代のデザインシステム構築にも示唆を与えるため、高めのスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "MetaのAIエージェント Museを1ヶ月使い倒してわかったこと | kinoko dev",
+      "url": "https://dev.sin5d.com/meta-muse-usage",
+      "source": "はてなブックマーク",
+      "published": "2026-11-25T22:53:15+00:00",
+      "reading_min": 12,
+      "summary": "MetaのAIエージェント「Muse」を1ヶ月間利用したレビュー記事で、その機能や特徴、他社AIとの比較がされている。\nMuseはVMが割り当てられ、Instagramからの情報収集やSQLを使った動的ページ公開が可能である点が特筆される。\nメインチャットとサイドチャットの概念や、MEMORY.mdをデータベースとして長期記憶を実現する仕組みについても解説されている。",
+      "actionable_takeaway": "Meta MuseのようなクラウドエージェントAIを導入する際は、Instagram連携やSQLによる動的ページ公開機能に注目し、長期記憶の仕組みを理解して効果的な活用を検討しましょう。",
+      "tags": [
+        "AIエージェント",
+        "Meta",
+        "LLM"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "MetaのAIエージェントの具体的な使用感や特徴が詳細に解説されており、AIエージェントの選定や活用を検討する上で参考になる情報であるため、高スコアとした。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 149
+    },
+    {
+      "title": "AIアプリビルダーの比較において、クレジットあたりの価格は間違った方法である",
+      "url": "https://dev.to/durim255/price-per-credit-is-the-wrong-way-to-compare-ai-app-builders-2ga4",
+      "source": "Dev.to",
+      "published": "2026-11-26T05:40:06+00:00",
+      "reading_min": 1,
+      "summary": "AIアプリビルダーの料金プランを比較する際、「クレジットあたりの価格」だけでは不十分であると指摘しています。\n各プラットフォームで「1クレジット」が意味するものが異なるため、単純な数値比較では実態を把握できません。\n実際に小さなアプリを構築し、無料クレジットで試用して残高を確認することが最も有効な比較方法だと提案しています。",
+      "actionable_takeaway": "AIアプリビルダーを選定する際は、料金ページのクレジット単価だけでなく、実際に試用して特定のタスクにかかるクレジット消費量を評価し、実質的なコストを把握しましょう。",
+      "tags": [
+        "AI",
+        "料金モデル",
+        "SaaS"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 75,
+      "score_reason": "AIサービスの利用が広がる中で、料金体系の複雑さを指摘し、実用的な比較方法を提示しているため、多くのユーザーにとって有益な情報である。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "LLMおよびVLM候補選択のための制約認識型テスト時スコアリング",
+      "url": "https://arxiv.org/abs/2611.33161",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-26T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "大規模言語モデル（LLM）と視覚言語モデル（VLM）の候補選択において、制約を考慮したテスト時スコアリング手法を提案しています。\nこれにより、モデルの出力品質と関連性を向上させることが期待されます。\n特に、特定の要件や制約があるタスクでのモデル選択に有効です。",
+      "actionable_takeaway": "LLM/VLMの選定や評価を行う際は、本手法を参考に制約条件を考慮したスコアリングを導入し、モデルの性能向上を図るべきです。",
+      "tags": [
+        "LLM",
+        "VLM",
+        "スコアリング"
+      ],
+      "category": "AI・機械学習",
+      "score": 75,
+      "score_reason": "LLM/VLMの性能向上に直結する評価・選択手法であり、実用性が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -741,7 +1133,7 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 5
+      "hatena_count": 28
     },
     {
       "title": "海外で話題！「VS Codeが重い」を軽くする方法。まず測って、効く順に削る（2026年11月版）",
@@ -786,7 +1178,7 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 30
+      "hatena_count": 146
     },
     {
       "title": "MakeとBufferでブログから毎日ソーシャル投稿を無料で行う",
@@ -807,6 +1199,51 @@
       "analysis_status": "ok",
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "偉大なる自動文法生成機（ロアルド・ダール作）、1954年",
+      "url": "https://gwern.net/doc/fiction/science-fiction/1953-dahl-thegreatautomaticgrammatizator.pdf",
+      "source": "Hacker News",
+      "published": "2026-11-22T11:29:44+00:00",
+      "hn_score": 43,
+      "hn_comments": 8,
+      "summary": "ロアルド・ダールが1954年に発表した短編小説「偉大なる自動文法生成機」は、AIによる文章生成の概念を先駆的に描いています。\nこの物語は、機械が人間を凌駕する文章を作成する可能性と、それに伴う倫理的・社会的問題を提起しています。\n現代のAI技術、特に大規模言語モデルの発展を鑑みると、その予見性は非常に高く評価されます。",
+      "actionable_takeaway": "AIによるコンテンツ生成の倫理的側面や著作権について、古典的な視点から再考し、現代のAI開発におけるガイドライン策定に役立てるべきです。",
+      "tags": [
+        "AI",
+        "SF",
+        "倫理"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 70,
+      "score_reason": "現代のAI技術の発展を予見した古典的なSF作品であり、AIの倫理的側面を考える上で示唆に富むため、中程度のスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "AutoformBench: 高度な数学のための軽量な形式化ベンチマーク",
+      "url": "https://arxiv.org/abs/2611.33165",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-26T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "高度な数学の形式化を目的とした、軽量なベンチマーク「AutoformBench」が提案されています。\nこのベンチマークは、自動形式化システムの評価と開発を促進することを意図しています。\n数学的推論や証明の自動化における進展に貢献する可能性があります。",
+      "actionable_takeaway": "数学的推論や形式化を扱うAI開発者は、AutoformBenchを活用してシステムの性能を評価し、改善点を見つけるべきです。",
+      "tags": [
+        "形式化",
+        "数学",
+        "ベンチマーク"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "高度な数学の形式化というニッチながらも重要な分野におけるAIの進歩に貢献する可能性があり、学術的価値が高いです。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -852,6 +1289,28 @@
       "analysis_status": "ok",
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "検証待ちの作業に対するPlaneの状態グループの選択",
+      "url": "https://dev.to/hirodeath/choosing-a-plane-state-group-for-work-that-is-waiting-for-verification-3563",
+      "source": "Dev.to",
+      "published": "2026-11-26T05:40:22+00:00",
+      "reading_min": 3,
+      "summary": "プロジェクト管理ツールPlaneで「検証準備完了」のような状態を追加する際の適切なグループ分けについて考察しています。\n作業が完了しているかどうかに基づいて状態を分類し、表示名変更後も未完了グループに留めるべきか検討します。\n3つの個人プロジェクトの状態設定を比較し、検証状態の分類方法に関する提案を行っています。",
+      "actionable_takeaway": "Planeなどのプロジェクト管理ツールでカスタム状態を導入する際は、その状態が「完了」と見なされるべきか慎重に判断し、適切なグループに配置することでワークフローの混乱を防ぎましょう。",
+      "tags": [
+        "プロジェクト管理",
+        "Plane",
+        "ワークフロー"
+      ],
+      "category": "その他",
+      "score": 65,
+      "score_reason": "特定のツールにおける状態管理の考察であり、汎用的な技術トレンドではないが、プロジェクト管理の実務に役立つ示唆があるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -923,6 +1382,28 @@
       "hatena_count": 0
     },
     {
+      "title": "コンテキストスケーリング：AIスケーリングの新たなフロンティア",
+      "url": "https://arxiv.org/abs/2611.33160",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-26T05:00:00+00:00",
+      "reading_min": 1,
+      "summary": "arXivLabsに関する一般的な説明であり、コラボレーターが新しいarXiv機能の開発と共有を可能にするフレームワークであることを述べています。\narXivの価値観（オープン性、コミュニティ、卓越性、ユーザーデータプライバシー）と、それに従うパートナーシップについて触れています。\n「コンテキストスケーリング」というタイトルとは裏腹に、具体的な技術内容の抜粋は含まれていません。",
+      "actionable_takeaway": "記事本文の抜粋からは具体的な技術的示唆は得られませんが、arXivLabsのようなオープンなプラットフォームを活用し、研究成果やツールの共有を通じてコミュニティに貢献することを検討しましょう。",
+      "tags": [
+        "AI",
+        "スケーリング",
+        "研究プラットフォーム"
+      ],
+      "category": "AI・機械学習",
+      "score": 50,
+      "score_reason": "タイトルはAIの重要なテーマを扱っているが、提供された本文抜粋がarXivLabsの一般的な紹介に終始しており、具体的な技術内容や新規性が不明なため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "開発者が本当に欲しがるギフトとは",
       "url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/",
       "source": "GitHub Blog",
@@ -944,6 +1425,29 @@
       "is_hot": false,
       "hatena_count": 0,
       "is_prev_seen": true
+    },
+    {
+      "title": "HNにまたAsk HNが増えている",
+      "url": "https://news.ycombinator.com/item?id=50649864",
+      "source": "Hacker News",
+      "published": "2026-11-26T00:43:34+00:00",
+      "hn_score": 184,
+      "hn_comments": 74,
+      "summary": "Hacker Newsで「Ask HN」形式の投稿が再び増加しているというユーザーからの報告です。\nこれは、Hacker Newsコミュニティが質問や議論を活発に行う場として機能していることを示唆しています。\nユーザー間のインタラクションの増加は、コミュニティの活性化に繋がる可能性があります。",
+      "actionable_takeaway": "Hacker Newsのトレンドを把握し、コミュニティの動向を観察することで、技術コミュニティにおける情報収集やネットワーキングの機会を増やすことができます。",
+      "tags": [
+        "Hacker News",
+        "コミュニティ",
+        "トレンド"
+      ],
+      "category": "その他",
+      "score": 40,
+      "score_reason": "Hacker Newsのコミュニティ内の動向に関するものであり、特定の技術的進展や実務への直接的な影響は限定的であるため、低めのスコアとしました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-26T14:45:19.686229+09:00",
+      "first_seen": "2026-11-26T14:45:19.686229+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "ホームデポの調整池でシュノーケリングした男性へのいくつかの質問",
@@ -971,19 +1475,19 @@
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-26T07:42:45.266041+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-26T14:45:19.686229+09:00",
     "summary_lines": [
-      "セキュリティ分野では、1Passwordのデータ漏洩やLinuxカーネルのNFS脆弱性、KARTE事件における個人データ漏洩が注目されています。",
-      "AI・機械学習分野では、未公開モデルの安全性懸念、学習アプリによる宅建合格、Google WorkspaceのAI連携が話題です。",
-      "GPT-6.2 Astraがコードゴルフ記録を更新し、AIのコード生成能力の進化が示されました。"
+      "1Passwordのセキュリティインシデントが複数報告され、情報漏洩への懸念が高まっています。",
+      "LinuxカーネルのNFSサーバーに12年前の深刻な脆弱性が発見され、対応が急務です。",
+      "AI分野では、未公開モデルの安全性に関する議論が活発化し、倫理的な課題が浮上しています。"
     ],
     "focus_tags": [
       "セキュリティ",
       "AI",
       "データ漏洩",
-      "Vulnerability",
-      "大規模言語モデル"
+      "脆弱性",
+      "AI倫理"
     ]
   }
 }

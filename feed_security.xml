@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Nov 2026 22:43:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 05:46:17 +0000</lastBuildDate>
     <item>
       <title>1Passwordセキュリティインシデント</title>
       <link>https://1password.com/blog/update-on-nov-2026-security-incident</link>
@@ -33,6 +33,20 @@
       <guid isPermaLink="false">http://takagi-hiromitsu.jp/diary/20261124.html</guid>
       <description>[Score: 95] プレイドの「KARTE」への不正アクセスにより、多数の企業でエンドユーザーの行動記録が漏洩しました。 / 多くの企業が「氏名が含まれない」と公表していますが、筆者は氏名の有無で個人データか否かは決まらないと指摘しています。 / 企業が誰のデータか識別できる場合、氏名がなくても個人データに該当し、個人情報保護法上の報告義務が生じると警鐘を鳴らしています。 [実務示唆: 個人情報漏洩の際、「氏名なし」でも容易照合性があれば個人データに該当するため、自社で識別可能な情報は全て漏洩対象として適切に公表・対応すべきです。] (Source: はてなブックマーク)</description>
       <pubDate>Wed, 25 Nov 2026 00:26:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ubuntuのセキュリティ対応の遅さ</title>
+      <link>https://www.openwall.com/lists/oss-security/2026/11/25/9</link>
+      <guid isPermaLink="false">https://www.openwall.com/lists/oss-security/2026/11/25/9</guid>
+      <description>[Score: 90] Ubuntuのセキュリティ対応が遅いという懸念が、oss-securityメーリングリストで報告されています。 / 特に、LinuxカーネルのTCPスタックにおけるリモートメモリ破損の脆弱性「NoisyTCP (CVE-2026-99288)」が公開されてから9日経ってもUbuntuからのパッチが提供されていない点が指摘されています。 / これは、Ubuntuユーザーにとって重大なセキュリティリスクとなり得ます。 [実務示唆: Ubuntuユーザーは、重要なセキュリティアップデートの適用状況を常に確認し、必要に応じて他のディストリビューションへの移行や、代替のセキュリティ対策を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 20:38:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>1Password、従業員のGitHubアカウント経由で顧客の氏名とメールアドレスが流出したと発表 — BigGo ファイナンス</title>
+      <link>https://finance.biggo.jp/news/86bd3431-ad2e-4b18-b885-4fb6393beb46</link>
+      <guid isPermaLink="false">https://finance.biggo.jp/news/86bd3431-ad2e-4b18-b885-4fb6393beb46</guid>
+      <description>[Score: 90] 1Passwordが従業員のGitHubアカウント経由で顧客の氏名とメールアドレスが流出したことを発表した。 / 攻撃者はGitHubからバックエンドサービスに悪意あるコードを送り込み、顧客データを窃取したが、ユーザーのパスワードボールトは安全だった。 / 同社は侵害されたアカウントの無効化や認証情報のローテーションなどの対策を講じたことを報告している。 [実務示唆: GitHubアカウントのセキュリティ強化は必須であり、多要素認証の徹底やアクセス権限の最小化、定期的な認証情報ローテーションを組織全体で実施し、同様のインシデントを未然に防ぎましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 25 Nov 2026 20:50:44 +0000</pubDate>
     </item>
     <item>
       <title>Macセキュリティモニターを停止させにくくする方法</title>

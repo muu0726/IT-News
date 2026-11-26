@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Nov 2026 22:43:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 05:46:17 +0000</lastBuildDate>
     <item>
       <title>1Passwordセキュリティインシデント</title>
       <link>https://1password.com/blog/update-on-nov-2026-security-incident</link>
@@ -42,6 +42,13 @@
       <pubDate>Wed, 25 Nov 2026 00:26:29 +0000</pubDate>
     </item>
     <item>
+      <title>なぜAIにとってリーマン予想よりもOmega=9/4が重要なのか</title>
+      <link>https://dev.to/max_quimby/why-omega94-matters-more-than-riemann-for-ai-3534</link>
+      <guid isPermaLink="false">https://dev.to/max_quimby/why-omega94-matters-more-than-riemann-for-ai-3534</guid>
+      <description>[Score: 95] OpenAIが発表した行列乗算の指数オメガが正確に9/4であるという証明が、AI推論コストに大きな影響を与えると解説しています。 / 行列乗算はAI推論の80-90%を占めるため、その高速化は推論コストの削減に直結します。 / これまでの上限値2.371から2.25への改善は、AIの計算効率を劇的に向上させる可能性を秘めています。 [実務示唆: 行列乗算の計算効率向上はAIモデルの推論コストに直接影響するため、今後のAIハードウェアやライブラリの進化に注目し、より効率的なモデル運用を検討しましょう。] (Source: Dev.to)</description>
+      <pubDate>Thu, 26 Nov 2026 05:38:32 +0000</pubDate>
+    </item>
+    <item>
       <title>AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達</title>
       <link>https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</guid>
@@ -70,6 +77,20 @@
       <pubDate>Wed, 25 Nov 2026 11:43:19 +0000</pubDate>
     </item>
     <item>
+      <title>Ubuntuのセキュリティ対応の遅さ</title>
+      <link>https://www.openwall.com/lists/oss-security/2026/11/25/9</link>
+      <guid isPermaLink="false">https://www.openwall.com/lists/oss-security/2026/11/25/9</guid>
+      <description>[Score: 90] Ubuntuのセキュリティ対応が遅いという懸念が、oss-securityメーリングリストで報告されています。 / 特に、LinuxカーネルのTCPスタックにおけるリモートメモリ破損の脆弱性「NoisyTCP (CVE-2026-99288)」が公開されてから9日経ってもUbuntuからのパッチが提供されていない点が指摘されています。 / これは、Ubuntuユーザーにとって重大なセキュリティリスクとなり得ます。 [実務示唆: Ubuntuユーザーは、重要なセキュリティアップデートの適用状況を常に確認し、必要に応じて他のディストリビューションへの移行や、代替のセキュリティ対策を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 20:38:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>1Password、従業員のGitHubアカウント経由で顧客の氏名とメールアドレスが流出したと発表 — BigGo ファイナンス</title>
+      <link>https://finance.biggo.jp/news/86bd3431-ad2e-4b18-b885-4fb6393beb46</link>
+      <guid isPermaLink="false">https://finance.biggo.jp/news/86bd3431-ad2e-4b18-b885-4fb6393beb46</guid>
+      <description>[Score: 90] 1Passwordが従業員のGitHubアカウント経由で顧客の氏名とメールアドレスが流出したことを発表した。 / 攻撃者はGitHubからバックエンドサービスに悪意あるコードを送り込み、顧客データを窃取したが、ユーザーのパスワードボールトは安全だった。 / 同社は侵害されたアカウントの無効化や認証情報のローテーションなどの対策を講じたことを報告している。 [実務示唆: GitHubアカウントのセキュリティ強化は必須であり、多要素認証の徹底やアクセス権限の最小化、定期的な認証情報ローテーションを組織全体で実施し、同様のインシデントを未然に防ぎましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 25 Nov 2026 20:50:44 +0000</pubDate>
+    </item>
+    <item>
       <title>【自動化】Muse のサイドチャットへ Webhook を届ける MuseKnock の仕組み</title>
       <link>https://zenn.dev/codehex/articles/33bc6ee330b880</link>
       <guid isPermaLink="false">https://zenn.dev/codehex/articles/33bc6ee330b880</guid>
@@ -82,6 +103,13 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_workspace_mcpgoogle_workspace_cli.html</guid>
       <description>[Score: 88] Googleは、Google WorkspaceをAIエージェントが操作するための「Google Workspace MCP Server」と「Google Workspace CLI」を正式版としてリリースしました。 / Workspace MCPサーバはGmailやDriveなど8つのサービスに対応し、AIエージェントからのアクセスを効率化します。 / Googleは2027年2月までにAIエージェントのWorkspaceアクセスをMCP経由に移行するよう求めています。 [実務示唆: Google Workspaceと連携するAIエージェントを開発している場合、2027年2月までにRestful APIからMCPへの移行計画を策定し、対応を進める必要があります。] (Source: Publickey)</description>
       <pubDate>Wed, 25 Nov 2026 15:27:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>「AI検索に電話番号が……」鳴りやまぬコールセンター　バッファローは壊れた「顧客導線」をどう改善した？</title>
+      <link>https://www.itmedia.co.jp/business/articles/2611/26/news015.html</link>
+      <guid isPermaLink="false">https://www.itmedia.co.jp/business/articles/2611/26/news015.html</guid>
+      <description>[Score: 88] 2025年夏、バッファローのコールセンターでAI検索による電話番号表示が原因で問い合わせが急増した事例。 / 同社はAIを「敵」ではなく「味方」と捉え直し、AI検索を前提とした自社サイトの再設計に着手。 / ユーザーが自己解決できるようなFAQの強化やチャット・メールへの導線改善により、ノンボイス化を推進した。 [実務示唆: AI検索が顧客導線に与える影響を認識し、FAQの最適化やチャットボット導入など、AI検索を前提とした自己解決型サポート体制を構築し、コールセンターの負荷軽減を図りましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Wed, 25 Nov 2026 22:50:37 +0000</pubDate>
     </item>
     <item>
       <title>GPT-6.2 AstraがGooglerのコードゴルフ記録を初めて破る</title>
@@ -117,34 +145,6 @@
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/</guid>
       <description>[Score: 85] アプリケーションのモダナイゼーションを安全に進めるための「エビデンスファースト」なアプローチを提案しています。 / 既存システムの動作を検証し、回帰テストの網羅性を確保するための証拠収集の重要性を強調。 / GitHub Copilotエージェントスキルにこの手順をエンコードする方法も示唆されており、AIを活用したモダナイゼーションの可能性に言及しています。 [実務示唆: アプリケーションのモダナイゼーションに着手する際は、まず既存システムの挙動に関するエビデンスを徹底的に収集し、それを基に段階的な変更計画を立てることで、リスクを最小限に抑えましょう。] (Source: GitHub Blog)</description>
       <pubDate>Wed, 25 Nov 2026 15:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>オープンソースにおける最高のものは共に築かれる</title>
-      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
-      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>AnthropicによるGRH Lean検証のより短いバージョン</title>
-      <link>https://github.com/lsernau/grh-lean</link>
-      <guid isPermaLink="false">https://github.com/lsernau/grh-lean</guid>
-      <description>[Score: 80] Anthropicの研究者が、ディリクレL関数に対するリーマン予想と一般化リーマン予想のLean 4による証明の短縮版を公開しました。 / この証明はMathlibを基盤とし、特定の公理のみを使用しており、Claudeとの共同作業で作成されました。 / 本リポジトリは研究成果物であり、メンテナンスやコントリビューションは受け付けていません。 [実務示唆: 数学的証明の自動検証に関心のある研究者や開発者は、Lean 4環境を構築し、このリポジトリのコードを実際に実行して、AIによる高度な数学的推論の可能性を検証してみることを推奨します。] [GitHub: lsernau/grh-lean] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 21:48:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>RustでFiberを用いたJob Systemを実装したらReleaseビルドでバグが発生した</title>
-      <link>https://zenn.dev/otinpan/articles/082f6178eb1472</link>
-      <guid isPermaLink="false">https://zenn.dev/otinpan/articles/082f6178eb1472</guid>
-      <description>[Score: 80] RustとVulkanを用いた自作ゲームエンジンで、WindowsのFiber APIを使ったJob Systemを実装した際に、Releaseビルドでバグが発生しました。 / バグの原因は、Fiberのスレッド間移動と、コンパイラによるTLS（Thread Local Storage）アクセスの最適化が関係している可能性が浮上しました。 / 記事では、Job Systemの構成、発生したバグ、およびコンパイラ最適化とFiberの関係について詳細に説明しています。 [実務示唆: RustでFiberやTLSを使用する際は、Releaseビルドでのコンパイラ最適化による挙動の変化に注意し、スレッド間移動とTLSアクセスの相互作用を詳細に検証してください。] [GitHub: otinpan/KaniVolcanoEngine] (Source: Zenn)</description>
-      <pubDate>Wed, 25 Nov 2026 10:24:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>Rails（Sidekiq＋Selenium）経験者向け：Node.jsのBullMQ＋Playwrightでバッチ処理を組むときのハマりどころ</title>
-      <link>https://qiita.com/jinxin4869/items/7771db4dccb7ddf3ac4a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/jinxin4869/items/7771db4dccb7ddf3ac4a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 80] RailsのSidekiqとSeleniumを使ったバッチ処理経験者向けに、Node.jsでBullMQとPlaywrightを組み合わせたバッチ処理の構築方法が解説されています。 / RailsとNode.jsのアーキテクチャの違いや、各役割に対応するライブラリの選定ポイントを詳細に説明。 / BullMQとPlaywrightの導入手順や設定のベストプラクティス、ハマりどころが具体的に示されています。 [実務示唆: RailsからNode.jsへの移行を検討する際は、SidekiqとSeleniumの代替としてBullMQとPlaywrightの組み合わせを考慮し、ioredisのインストール忘れや役割ごとの部品選定に注意すること。] [GitHub: OptimalBits/bullmq] (Source: Qiita)</description>
-      <pubDate>Tue, 24 Nov 2026 15:37:54 +0000</pubDate>
     </item>
   </channel>
 </rss>

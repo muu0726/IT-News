@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Nov 2026 22:43:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 05:46:17 +0000</lastBuildDate>
     <item>
       <title>AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達</title>
       <link>https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</link>
@@ -28,6 +28,13 @@
       <pubDate>Wed, 25 Nov 2026 15:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>2027年の欧州アクセシビリティ法：WooCommerceストア向けアクセシビリティガイド</title>
+      <link>https://dev.to/dmytro_cian/european-accessibility-act-in-2027-an-accessibility-guide-for-woocommerce-stores-322o</link>
+      <guid isPermaLink="false">https://dev.to/dmytro_cian/european-accessibility-act-in-2027-an-accessibility-guide-for-woocommerce-stores-322o</guid>
+      <description>[Score: 85] 2025年6月28日に適用開始された欧州アクセシビリティ法（EAA）が、2027年にはWooCommerceストアに与える影響について解説しています。 / キーボード操作、スクリーンリーダー対応、エラーメッセージの表示など、ECサイトのアクセシビリティ要件を具体的に説明しています。 / WordPressおよびWooCommerceストア運営者向けに、技術的・商業的なガイダンスと実践的な改善策を提供しています。 [実務示唆: EU圏に商品を販売するWooCommerceストア運営者は、欧州アクセシビリティ法に準拠するため、キーボード操作やスクリーンリーダーでのテストを実施し、決済プロセスを含む顧客体験全体のアクセシビリティを確保しましょう。] (Source: Dev.to)</description>
+      <pubDate>Thu, 26 Nov 2026 05:37:39 +0000</pubDate>
+    </item>
+    <item>
       <title>Rails（Sidekiq＋Selenium）経験者向け：Node.jsのBullMQ＋Playwrightでバッチ処理を組むときのハマりどころ</title>
       <link>https://qiita.com/jinxin4869/items/7771db4dccb7ddf3ac4a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
       <guid isPermaLink="false">https://qiita.com/jinxin4869/items/7771db4dccb7ddf3ac4a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
@@ -35,11 +42,25 @@
       <pubDate>Tue, 24 Nov 2026 15:37:54 +0000</pubDate>
     </item>
     <item>
+      <title>日本語サイトで指定しておきたいCSS 2026年版 - Qiita</title>
+      <link>https://qiita.com/tofu_frontend/items/6a1bb7d80a58736eef0e</link>
+      <guid isPermaLink="false">https://qiita.com/tofu_frontend/items/6a1bb7d80a58736eef0e</guid>
+      <description>[Score: 78] 日本語サイトの組版を美しくするためのCSS設定について、2026年版として整理された記事。 / 特に和欧間の自動スペース挿入を制御する`text-autospace`プロパティの重要性と、その初期値が`normal`ではない経緯を解説。 / 非対応ブラウザでもレイアウトが壊れないプログレッシブエンハンスメントとして導入できるCSSスニペットも提供されている。 [実務示唆: 日本語サイトの組版品質向上のため、`text-autospace: normal`を明示的に指定し、和欧間の適切なスペースを自動挿入することで、ユーザー体験を改善しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Mon, 23 Nov 2026 10:33:25 +0000</pubDate>
+    </item>
+    <item>
       <title>jQuery 4.1正式版がリリース、内部実装をquerySelectorAllに統一でより高速に。jQuery 3.x系最後となるjQuery 3.8も同時リリース</title>
       <link>https://www.publickey1.jp/blog/26/jquery_41queryselectoralljquery_3xjquery_38.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/jquery_41queryselectoralljquery_3xjquery_38.html</guid>
       <description>[Score: 75] jQuery開発チームが、最新版「jQuery 4.1」と3.x系最後の「jQuery 3.8」を同時リリースしました。 / jQuery 4.1は内部実装をquerySelectorAllに統一し、高速化とIE10以前のサポート終了、IE11は次期バージョンで削除予定です。 / 新機能としてjqXHR.responseURLの追加やuniqueSort()の性能向上、3.8ではReDoS脆弱性修正やバグ修正が行われ、今後は4.x系に開発が一本化されます。 [実務示唆: jQuery 3.x系を利用中のプロジェクトは、セキュリティ修正のため3.8へのアップデートを検討し、モダンブラウザ対応を進める場合は4.1への移行計画を立てるべきです。] [GitHub: jquery/jquery] (Source: Publickey)</description>
       <pubDate>Tue, 24 Nov 2026 15:15:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>保存されたUIスタイルガイドのコレクション</title>
+      <link>https://aresluna.org/ui-style-guides/</link>
+      <guid isPermaLink="false">https://aresluna.org/ui-style-guides/</guid>
+      <description>[Score: 75] 1980年代初頭から現在までの様々な企業のUIスタイルガイド（インターフェースガイドライン）を収集したリポジトリです。 / Amiga Workbench、Android、BlackBerry、CDE、CUA、GEM、GNOME、iOS、Java Swing、Apple Mac OSなど、多岐にわたるプラットフォームのガイドラインが含まれています。 / これらのスタイルガイドは、UI/UXデザインの歴史的変遷と進化を理解するための貴重な資料となります。 [実務示唆: 過去のUIスタイルガイドを参考に、現在のデザインシステムやUI/UX設計のベストプラクティスを再評価し、よりユーザーフレンドリーなインターフェース設計に活かすことができます。] [GitHub: aresluna/ui-style-guides] (Source: Hacker News)</description>
+      <pubDate>Thu, 26 Nov 2026 00:40:00 +0000</pubDate>
     </item>
     <item>
       <title>MakeとBufferでブログから毎日ソーシャル投稿を無料で行う</title>
