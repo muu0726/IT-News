@@ -5,14 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 05:46:17 +0000</lastBuildDate>
-    <item>
-      <title>1Passwordセキュリティインシデント</title>
-      <link>https://1password.com/blog/update-on-nov-2026-security-incident</link>
-      <guid isPermaLink="false">https://1password.com/blog/update-on-nov-2026-security-incident</guid>
-      <description>[Score: 100] 1Passwordは2026年11月19日に従業員のGitHubアカウントへの不正アクセスを調査開始しました。 / 攻撃者はソースコードにアクセスし、悪意のあるコードをバックエンドサービスにプッシュして顧客の管理者データをダウンロードしました。 / 顧客の氏名、メールアドレス、アカウント識別子などが流出しましたが、顧客の保管庫の内容はアクセスされていません。 [実務示唆: 1Passwordユーザーは、流出した可能性のある情報（氏名、メールアドレスなど）が悪用されるリスクに備え、不審な連絡には警戒し、パスワード以外の認証情報も確認すべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 17:18:26 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 26 Nov 2026 22:34:32 +0000</lastBuildDate>
     <item>
       <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
       <link>https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</link>
@@ -21,39 +14,25 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>Nfs2root: LinuxカーネルのNFSサーバーにおける12年前の認証前リモートルート脆弱性</title>
-      <link>https://opensec.in/blog/nfs2root-cve-2026-99362</link>
-      <guid isPermaLink="false">https://opensec.in/blog/nfs2root-cve-2026-99362</guid>
-      <description>[Score: 95] LinuxカーネルのNFSサーバー（nfsd）に、2014年から存在する認証前ヒープオーバーフローの脆弱性（CVE-2026-99362）が発見されました。 / この脆弱性は、NFSv4.1クライアントがリプライキャッシュサイズをゼロに設定し、サーバーにフルリプライをコピーさせることで、カーネルメモリへの書き込みを可能にします。 / 影響を受けるのはLinux 3.16以降のすべてのカーネルで、修正はLinux 6.12.117, 6.18.61, 7.3.2, 7.4-rc1で適用されています。 [実務示唆: NFSサーバーを運用している場合は、速やかにLinuxカーネルを最新バージョン（6.12.117, 6.18.61, 7.3.2, 7.4-rc1以降）にアップデートし、再起動してください。] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 20:35:50 +0000</pubDate>
+      <title>「RansomwareHelp」のCTOが電信詐欺で起訴される</title>
+      <link>https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/</link>
+      <guid isPermaLink="false">https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/</guid>
+      <description>[Score: 90] ランサムウェア被害者のデータ復旧を謳っていた「RansomwareHelp」のCTOが電信詐欺で起訴されました。 / 同社は高度な暗号ツールを使用すると偽り、実際には攻撃者に身代金を支払い、被害者には高額な手数料を請求していました。 / FBIの潜入捜査により、その詐欺行為が明らかになりました。 [実務示唆: ランサムウェア被害に遭った際、データ復旧サービスを利用する際は、その信頼性と実績を徹底的に調査し、透明性の高いサービス提供者を選ぶべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 26 Nov 2026 17:47:45 +0000</pubDate>
     </item>
     <item>
-      <title>「氏名は含まれておりません」では済まない——KARTE事件で漏れた行動の記録は誰の個人データか</title>
-      <link>http://takagi-hiromitsu.jp/diary/20261124.html</link>
-      <guid isPermaLink="false">http://takagi-hiromitsu.jp/diary/20261124.html</guid>
-      <description>[Score: 95] プレイドの「KARTE」への不正アクセスにより、多数の企業でエンドユーザーの行動記録が漏洩しました。 / 多くの企業が「氏名が含まれない」と公表していますが、筆者は氏名の有無で個人データか否かは決まらないと指摘しています。 / 企業が誰のデータか識別できる場合、氏名がなくても個人データに該当し、個人情報保護法上の報告義務が生じると警鐘を鳴らしています。 [実務示唆: 個人情報漏洩の際、「氏名なし」でも容易照合性があれば個人データに該当するため、自社で識別可能な情報は全て漏洩対象として適切に公表・対応すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 25 Nov 2026 00:26:29 +0000</pubDate>
+      <title>迷惑メール対策をしているのに、なぜ詐欺メールは届くのか</title>
+      <link>https://zenn.dev/akagumi/articles/catch-all-phishing-invisible-chars</link>
+      <guid isPermaLink="false">https://zenn.dev/akagumi/articles/catch-all-phishing-invisible-chars</guid>
+      <description>[Score: 90] キャッチオール設定のメールアドレスに届いた詐欺メールが、SPF/DKIM/DMARC認証をすり抜けてしまう事例が紹介されています。 / 攻撃者は正規の認証設定を持つドメインを使用し、表示名でAmazonなどを詐称することで、認証だけでは防ぎきれない手口を使っています。 / さらに、本文中に目に見えない文字を挿入することで、キーワードフィルターを回避する巧妙な手法が用いられていることが明らかになりました。 [実務示唆: メールフィルターのロジックを見直し、表示名と送信元ドメインの乖離チェックや、不可視文字を考慮した本文解析を導入し、多層的な対策を検討することを推奨します。] (Source: Zenn)</description>
+      <pubDate>Thu, 26 Nov 2026 14:08:33 +0000</pubDate>
     </item>
     <item>
-      <title>Ubuntuのセキュリティ対応の遅さ</title>
-      <link>https://www.openwall.com/lists/oss-security/2026/11/25/9</link>
-      <guid isPermaLink="false">https://www.openwall.com/lists/oss-security/2026/11/25/9</guid>
-      <description>[Score: 90] Ubuntuのセキュリティ対応が遅いという懸念が、oss-securityメーリングリストで報告されています。 / 特に、LinuxカーネルのTCPスタックにおけるリモートメモリ破損の脆弱性「NoisyTCP (CVE-2026-99288)」が公開されてから9日経ってもUbuntuからのパッチが提供されていない点が指摘されています。 / これは、Ubuntuユーザーにとって重大なセキュリティリスクとなり得ます。 [実務示唆: Ubuntuユーザーは、重要なセキュリティアップデートの適用状況を常に確認し、必要に応じて他のディストリビューションへの移行や、代替のセキュリティ対策を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 20:38:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>1Password、従業員のGitHubアカウント経由で顧客の氏名とメールアドレスが流出したと発表 — BigGo ファイナンス</title>
-      <link>https://finance.biggo.jp/news/86bd3431-ad2e-4b18-b885-4fb6393beb46</link>
-      <guid isPermaLink="false">https://finance.biggo.jp/news/86bd3431-ad2e-4b18-b885-4fb6393beb46</guid>
-      <description>[Score: 90] 1Passwordが従業員のGitHubアカウント経由で顧客の氏名とメールアドレスが流出したことを発表した。 / 攻撃者はGitHubからバックエンドサービスに悪意あるコードを送り込み、顧客データを窃取したが、ユーザーのパスワードボールトは安全だった。 / 同社は侵害されたアカウントの無効化や認証情報のローテーションなどの対策を講じたことを報告している。 [実務示唆: GitHubアカウントのセキュリティ強化は必須であり、多要素認証の徹底やアクセス権限の最小化、定期的な認証情報ローテーションを組織全体で実施し、同様のインシデントを未然に防ぎましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 25 Nov 2026 20:50:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>Macセキュリティモニターを停止させにくくする方法</title>
-      <link>https://dev.to/mikevu/making-a-mac-security-monitor-hard-to-silence-4hn</link>
-      <guid isPermaLink="false">https://dev.to/mikevu/making-a-mac-security-monitor-hard-to-silence-4hn</guid>
-      <description>[Score: 78] オープンソースのMacセキュリティモニター「MacSentry」が、不正な停止を検知し報告する仕組みについて解説しています。 / 再起動とkill -9の区別、相互監視プロセス、追記専用ログ、デッドマンズスイッチなどの技術が紹介されています。 / 特に、Telegram Bot APIのdeleteMessage機能によるアラート削除を防ぐため、2つの異なるボットを使用する工夫が述べられています。 [実務示唆: セキュリティモニターを実装する際は、単に監視するだけでなく、不正な停止や改ざんを検知し、外部に通知する仕組みを多層的に組み込むことで耐障害性を高めるべきです。] [GitHub: mikevu/MacSentry] (Source: Dev.to)</description>
-      <pubDate>Wed, 25 Nov 2026 22:41:39 +0000</pubDate>
+      <title>Sandscale MCPサーバーをCodexに追加する: config.toml、OAuthログイン、承認モード</title>
+      <link>https://dev.to/sandscale/adding-the-sandscale-mcp-server-to-codex-configtoml-oauth-login-and-approval-modes-36b</link>
+      <guid isPermaLink="false">https://dev.to/sandscale/adding-the-sandscale-mcp-server-to-codex-configtoml-oauth-login-and-approval-modes-36b</guid>
+      <description>[Score: 65] CodexにSandscale MCPサーバーを追加する方法について解説しています。 / これにより、コマンドをローカルマシンではなくFirecrackerマイクロVM上で実行し、セキュリティと監査ログを強化できます。 / config.tomlでの設定、OAuthによるログイン、承認モードについて具体的に説明されています。 [実務示唆: Codexユーザーは、Sandscale MCPサーバーを導入することで、開発環境のセキュリティを向上させ、コマンド実行の監査ログを確保できるため、設定方法を確認し導入を検討すべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 26 Nov 2026 22:31:10 +0000</pubDate>
     </item>
   </channel>
 </rss>

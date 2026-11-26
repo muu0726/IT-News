@@ -5,62 +5,20 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 05:46:17 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 22:34:32 +0000</lastBuildDate>
     <item>
-      <title>なぜAIにとってリーマン予想よりもOmega=9/4が重要なのか</title>
-      <link>https://dev.to/max_quimby/why-omega94-matters-more-than-riemann-for-ai-3534</link>
-      <guid isPermaLink="false">https://dev.to/max_quimby/why-omega94-matters-more-than-riemann-for-ai-3534</guid>
-      <description>[Score: 95] OpenAIが発表した行列乗算の指数オメガが正確に9/4であるという証明が、AI推論コストに大きな影響を与えると解説しています。 / 行列乗算はAI推論の80-90%を占めるため、その高速化は推論コストの削減に直結します。 / これまでの上限値2.371から2.25への改善は、AIの計算効率を劇的に向上させる可能性を秘めています。 [実務示唆: 行列乗算の計算効率向上はAIモデルの推論コストに直接影響するため、今後のAIハードウェアやライブラリの進化に注目し、より効率的なモデル運用を検討しましょう。] (Source: Dev.to)</description>
-      <pubDate>Thu, 26 Nov 2026 05:38:32 +0000</pubDate>
+      <title>Jev で実現する Generative UI</title>
+      <link>https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07</link>
+      <guid isPermaLink="false">https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07</guid>
+      <description>[Score: 90] Generative UIとは、AIが文脈に応じてUIを生成する技術であり、ChatGPTやClaudeもUIを返すようになっています。 / プロダクトに組み込む際の課題として、生成されたUIを既存のデザインシステムに合わせる必要性が挙げられます。 / Jevのようなライブラリは、デザインシステムのコンポーネントを返すことを前提に作られており、LLMにルールを渡してUIを生成させることが可能です。 [実務示唆: Generative UIを導入する際は、既存のデザインシステムとの連携を考慮し、Jevなどのライブラリを活用してコンポーネント定義からプロンプトを生成するアプローチを検討しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 26 Nov 2026 12:42:06 +0000</pubDate>
     </item>
     <item>
-      <title>信じられない、信じられない、信じられない、信じられない：今起きていることの大きさ</title>
-      <link>https://scottaaronson.blog/?p=10379</link>
-      <guid isPermaLink="false">https://scottaaronson.blog/?p=10379</guid>
-      <description>[Score: 90] OpenAIとAnthropicがVP ≠ VNPの証明を発表し、さらにOpenAIが行列乗算の指数ωが正確に9/4であるという下限を証明しました。 / これは1960年代からのアルゴリズムの中心的な謎に対する答えであり、AIがω&gt;2のような下限を証明できたことは大きな衝撃です。 / AIによる数学的発見の速度と深さが、これまでの予想をはるかに超えていることを示しています。 [実務示唆: AIが数学の未解決問題に貢献する能力は、科学研究の進め方を根本的に変える可能性があり、AIを活用した新たな研究パラダイムの探求を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 19:11:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIで学習アプリを作って2週間で宅建に合格した話【テキスト不要】｜Shikimi</title>
-      <link>https://note.com/shikimi_crypto/n/n35d0bb54e6fb</link>
-      <guid isPermaLink="false">https://note.com/shikimi_crypto/n/n35d0bb54e6fb</guid>
-      <description>[Score: 90] 筆者がAIを活用して自作学習アプリとYouTube教材のみで、2週間という短期間で宅建試験に合格した体験談です。 / 市販テキストを使わず、過去問を最初に解いて現状を把握し、AIで効率的な学習アプリを開発した戦略が紹介されています。 / 本業がコンサルでAIエージェント活用を支援している経験が、この学習方法に活かされています。 [実務示唆: 資格学習や新しい知識習得において、AIを活用した自分専用の学習ツール開発は、効率的な学習を可能にするため、積極的に検討すべきである。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 25 Nov 2026 09:23:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>AnthropicとOpenAIの従業員らが「未公開モデルが強力になりすぎて一般公開するのは危険」と懸念</title>
-      <link>https://gigazine.net/news/20261125-anthropic-openai-employees-fear-unreleased-ai-models/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261125-anthropic-openai-employees-fear-unreleased-ai-models/</guid>
-      <description>[Score: 90] AnthropicとOpenAIの従業員らが、未公開の最先端AIモデルが予測よりも早く高性能化しすぎていると懸念を表明しています。 / これらのAIモデルは、すでに制御技術を凌駕し始めており、公開の安全性確保が困難になっているとのことです。 / 社内では、問題解決可能派とリスク考慮によるトレーニング中止派に意見が分かれている状況が報じられています。 [実務示唆: 最先端AIモデルの安全性と制御に関する議論は今後も活発化するため、AI開発者は倫理的・技術的リスクを常に考慮し、慎重な開発と公開プロセスを検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 25 Nov 2026 11:43:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>【自動化】Muse のサイドチャットへ Webhook を届ける MuseKnock の仕組み</title>
-      <link>https://zenn.dev/codehex/articles/33bc6ee330b880</link>
-      <guid isPermaLink="false">https://zenn.dev/codehex/articles/33bc6ee330b880</guid>
-      <description>[Score: 88] Metaの個人向けAIエージェント「Muse」に対し、外部イベント（Slackメンション、GitHubリリースなど）をトリガーにメッセージを送信するOSS「MuseKnock」が開発されました。 / MuseKnockはCloudflare Workersにデプロイされ、Webhookを受け取り、Museのサイドチャットにメッセージとして投稿することで、AIを即座に動かします。 / この仕組みは、Museのサイドチャット、カスタムコネクター、Gadget SDKを活用しており、定期実行ではなくイベント駆動でAIを呼び出すことを可能にします。 [実務示唆: Meta Museを利用している場合、MuseKnockを導入することで、外部サービスからのイベントをトリガーにAIを自動実行させ、業務効率化や情報連携のリアルタイム化を図りましょう。] [GitHub: codehex/museknock] (Source: Zenn)</description>
-      <pubDate>Wed, 25 Nov 2026 06:12:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>「Google Workspace MCPサーバ」と「Google Workspace CLI」が正式版としてリリース</title>
-      <link>https://www.publickey1.jp/blog/26/google_workspace_mcpgoogle_workspace_cli.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_workspace_mcpgoogle_workspace_cli.html</guid>
-      <description>[Score: 88] Googleは、Google WorkspaceをAIエージェントが操作するための「Google Workspace MCP Server」と「Google Workspace CLI」を正式版としてリリースしました。 / Workspace MCPサーバはGmailやDriveなど8つのサービスに対応し、AIエージェントからのアクセスを効率化します。 / Googleは2027年2月までにAIエージェントのWorkspaceアクセスをMCP経由に移行するよう求めています。 [実務示唆: Google Workspaceと連携するAIエージェントを開発している場合、2027年2月までにRestful APIからMCPへの移行計画を策定し、対応を進める必要があります。] (Source: Publickey)</description>
-      <pubDate>Wed, 25 Nov 2026 15:27:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>GPT-6.2 AstraがGooglerのコードゴルフ記録を初めて破る</title>
-      <link>https://bjin.github.io/go-codegolf-benchmark/#leaderboard</link>
-      <guid isPermaLink="false">https://bjin.github.io/go-codegolf-benchmark/#leaderboard</guid>
-      <description>[Score: 85] GPT-6.2 Astraが、Google社内で2015年に行われたコードゴルフコンテストの記録を破ったことが報告されました。 / 32のプログラミング問題と8つの言語で、各モデルは30分間与えられ、最短コードを目指します。 / このベンチマークは、フロンティアモデルが人間の記録と比較してどの程度優れているかを示しています。 [実務示唆: AIによるコード生成の進化は、開発者がより効率的なコードを書くための強力なツールとなる可能性があり、最新のAIモデルを自身の開発ワークフローに組み込むことを検討すべきです。] [GitHub: bjin/go-codegolf-benchmark] (Source: Hacker News)</description>
-      <pubDate>Sun, 22 Nov 2026 16:44:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Code のセキュリティ、2026年11月時点のベストプラクティス（サンドボックス・権限・MCP）</title>
-      <link>https://zenn.dev/happy_elements/articles/27e14ff6754044</link>
-      <guid isPermaLink="false">https://zenn.dev/happy_elements/articles/27e14ff6754044</guid>
-      <description>[Score: 85] Claude Codeのセキュリティに関する2026年11月時点のベストプラクティスがまとめられています。 / Bashコマンドの実行環境や権限ルール、サンドボックス、MCPの設定について詳しく解説。 / OSレベルの隔離とClaude Codeの設定の両方を有効にすることが重要とされています。 [実務示唆: Claude Codeを利用する際は、OSレベルの隔離とClaude Codeの設定の両方でセキュリティ対策を講じ、特にBashサンドボックスの有効化と権限ルールの設定を徹底すること。] (Source: Zenn)</description>
-      <pubDate>Wed, 25 Nov 2026 03:53:12 +0000</pubDate>
+      <title>AIコーディングで再び出会うTDD・BDD・仕様駆動開発</title>
+      <link>https://qiita.com/figueiredoluiz/items/be77af87766215ef1055?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/be77af87766215ef1055?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] AIコーディングエージェントの活用により、TDD、BDD、仕様駆動開発といった既存の開発手法が再評価されている現象「Great Rollback」について論じています。 / AnthropicがClaudeにテストを書かせるTDD手順を推奨していることや、OpenSpec、Spec Kit、Kiroといったツールが仕様中心の開発フローを取り入れていることを紹介。 / AI時代においても、開発の意図を残し、変更を調整し、品質を確保するエンジニアリングの仕事の重要性を強調しています。 [実務示唆: AIコーディングを活用する際も、TDDやBDD、仕様駆動開発といった既存の品質保証手法を再認識し、AIと連携させて開発プロセスに組み込む。] (Source: Qiita)</description>
+      <pubDate>Thu, 26 Nov 2026 06:47:52 +0000</pubDate>
     </item>
     <item>
       <title>MCPに新機能「Skills over MCP」登場。ツールとの接続だけでなく使い方のスキルもMCP経由で提供</title>
@@ -70,32 +28,32 @@
       <pubDate>Wed, 25 Nov 2026 15:29:05 +0000</pubDate>
     </item>
     <item>
-      <title>VP ≠ VNPの意味（3分でわかる）</title>
-      <link>https://www.friedgil.com/vpvnp</link>
-      <guid isPermaLink="false">https://www.friedgil.com/vpvnp</guid>
-      <description>[Score: 85] Anthropicが発表したVP ≠ VNPの証明は、P vs NP問題に関連する重要な進展です。 / これは、特定の算術回路のサイズが入力サイズに対して多項式である場合、パーマネントを多項式時間で計算する方法がないことを意味します。 / P=NPであるためには、AND/OR/NOTのようなブール演算子を使った、加算や乗算よりも優れたパーマネント計算トリックが必要となります。 [実務示唆: P vs NP問題の最新動向として、AnthropicのVP ≠ VNP証明を理解し、計算複雑性理論の基礎知識を再確認することが推奨されます。] (Source: Hacker News)</description>
-      <pubDate>Tue, 24 Nov 2026 10:56:56 +0000</pubDate>
+      <title>llama.cppのAMD特化フォーク</title>
+      <link>https://devnull.land/amd-specific-llama-cpp</link>
+      <guid isPermaLink="false">https://devnull.land/amd-specific-llama-cpp</guid>
+      <description>[Score: 85] AMDグラフィックカード向けに最適化されたllama.cppのフォーク「llama-cpp-rdna-boosts」が紹介されています。 / これにより、トークン生成速度が35から55トークン/秒、プリフィル速度が700から1300トークン/秒に向上したと報告されています。 / LLM推論エンジンの開発が加速し、ハードウェア特化型のアプローチが注目されています。 [実務示唆: AMD GPUユーザーはllama-cpp-rdna-boostsを試すことで、LLMの推論パフォーマンスが大幅に向上する可能性があるため、導入を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 26 Nov 2026 17:11:29 +0000</pubDate>
     </item>
     <item>
-      <title>AIを使った開発に「敵対的検証」を取り入れてみた</title>
-      <link>https://zenn.dev/visionarray/articles/26b316ff128513</link>
-      <guid isPermaLink="false">https://zenn.dev/visionarray/articles/26b316ff128513</guid>
-      <description>[Score: 85] AIを活用した開発において、生成コードの品質担保に「敵対的検証」を取り入れた事例を紹介。 / 通常のコードレビュー後に、意図的にソフトウェアが破綻する条件を探す検証を追加することで、新たな問題を発見。 / 実装時とは異なるチャットセッションで検証を行うことで、前提に囚われずにコードを評価する重要性を指摘している。 [実務示唆: AI生成コードの品質向上には、通常のレビューに加え、独立したセッションで「壊す側」の視点から敵対的検証を導入し、潜在的な脆弱性を早期に発見すべきです。] (Source: Zenn)</description>
-      <pubDate>Wed, 25 Nov 2026 06:55:45 +0000</pubDate>
+      <title>OpenAIはコスト削減モードに入っている可能性がある</title>
+      <link>https://micjm.com/blog/openai-is-in-cost-control-mode/</link>
+      <guid isPermaLink="false">https://micjm.com/blog/openai-is-in-cost-control-mode/</guid>
+      <description>[Score: 85] OpenAIの最新モデルAstra 6.2とSol 6.2が、コスト削減のためにチューニングされている可能性が指摘されています。 / データ分析によると、これらのモデルは以前のバージョンと比較して、タスクあたりの出力トークン数と推論トークン数が減少しています。 / この変更により、モデルの推論能力が低下し、一部のタスクで性能が劣る「underthinking outliers」になっていると結論付けられています。 [実務示唆: OpenAIの最新モデルを利用する際は、コスト削減による性能低下の可能性を考慮し、既存のアプリケーションへの影響を検証することを推奨します。] (Source: Hacker News)</description>
+      <pubDate>Thu, 26 Nov 2026 07:33:12 +0000</pubDate>
     </item>
     <item>
-      <title>Amazon Bedrockの存在意義がようやくわかったのに、新参者だと使えない話 - Sweet Escape</title>
-      <link>https://www.keisuke69.net/entry/2026/11/26/085248</link>
-      <guid isPermaLink="false">https://www.keisuke69.net/entry/2026/11/26/085248</guid>
-      <description>[Score: 82] 筆者がこれまで利用価値を感じていなかったAmazon Bedrockを、エンタープライズ向けHR SaaS開発で採用した経緯を解説。 / 人事情報という機微なデータを扱うため、高いセキュリティ水準と国内データセンター要件を満たす必要があり、AWSインフラへの移行を決断。 / プロバイダ直のAPI利用と比較し、セキュリティチェックシート対応の手間を考慮するとBedrockの存在意義が明確になったと述べている。 [実務示唆: エンタープライズ向けシステムでLLMを利用する際は、セキュリティ要件やデータ所在地、IAM連携の容易さを考慮し、Amazon Bedrockのようなマネージドサービスを積極的に検討しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 26 Nov 2026 00:25:15 +0000</pubDate>
+      <title>OpenAI Agents API: ハーネスとは何か、そしてその周りにエージェントを構築する方法</title>
+      <link>https://dev.to/julian_cardozo_dev/openai-agents-api-que-es-el-harness-y-como-se-arma-un-agente-alrededor-de-el-3kmj</link>
+      <guid isPermaLink="false">https://dev.to/julian_cardozo_dev/openai-agents-api-que-es-el-harness-y-como-se-arma-un-agente-alrededor-de-el-3kmj</guid>
+      <description>[Score: 85] OpenAI Agents APIは、AIエージェントの実行サイクル（ハーネス）をサービスとして提供します。 / これにより、開発者はエージェントのコアロジックに集中でき、サイクル管理のプログラミングが不要になります。 / セッションとターンを単位として、モデル、指示、環境を設定し、イベントストリームを購読して結果を受け取ります。 [実務示唆: OpenAI Agents APIのベータ版を試用し、AIエージェント開発におけるハーネスの自動化がワークフローにどう影響するか検証することを推奨します。] (Source: Dev.to)</description>
+      <pubDate>Thu, 26 Nov 2026 22:29:50 +0000</pubDate>
     </item>
     <item>
-      <title>AnthropicによるGRH Lean検証のより短いバージョン</title>
-      <link>https://github.com/lsernau/grh-lean</link>
-      <guid isPermaLink="false">https://github.com/lsernau/grh-lean</guid>
-      <description>[Score: 80] Anthropicの研究者が、ディリクレL関数に対するリーマン予想と一般化リーマン予想のLean 4による証明の短縮版を公開しました。 / この証明はMathlibを基盤とし、特定の公理のみを使用しており、Claudeとの共同作業で作成されました。 / 本リポジトリは研究成果物であり、メンテナンスやコントリビューションは受け付けていません。 [実務示唆: 数学的証明の自動検証に関心のある研究者や開発者は、Lean 4環境を構築し、このリポジトリのコードを実際に実行して、AIによる高度な数学的推論の可能性を検証してみることを推奨します。] [GitHub: lsernau/grh-lean] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 21:48:10 +0000</pubDate>
+      <title>【Claude Code】鹿野さんが実践するエンジニアの日常業務を爆速にする最新推しツール 大公開</title>
+      <link>https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</link>
+      <guid isPermaLink="false">https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</guid>
+      <description>[Score: 82] 本記事は、エンジニアの日常業務を効率化する最新ツールとして「Claude Code」の活用事例を紹介するプレゼンテーション資料です。 / 資料では、Claude Codeがいかにエンジニアの作業を高速化し、生産性を向上させるかに焦点を当てています。 / 具体的なツールの使い方や、実務への応用例が示唆されており、AIを活用した開発ワークフローの最適化に関心のあるエンジニア向けの内容です。 [実務示唆: Claude CodeのようなAIツールを日常業務に積極的に取り入れ、コード生成、デバッグ、ドキュメント作成などのタスクを自動化・効率化する。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 26 Nov 2026 12:31:47 +0000</pubDate>
     </item>
     <item>
       <title>AI時代の遊びの芸術</title>
@@ -105,11 +63,53 @@
       <pubDate>Wed, 25 Nov 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>コードを実行するエージェントツールの統合テスト：フィクスチャ、クリーンアップ、ラベル、予算</title>
-      <link>https://dev.to/sandscale/integration-tests-for-agent-tools-that-run-code-fixtures-cleanup-labels-and-budgets-538k</link>
-      <guid isPermaLink="false">https://dev.to/sandscale/integration-tests-for-agent-tools-that-run-code-fixtures-cleanup-labels-and-budgets-538k</guid>
-      <description>[Score: 80] AIエージェントの`run_code`ツールに対する統合テストの重要性と構築方法について解説しています。 / モックテストでは捉えられない本番環境でのバグ（出力の切り捨て、タイムアウト処理など）を統合テストで検出します。 / VitestとSandscale TypeScript SDKを用いたテスト構造（ファイルごとのサンドボックス利用など）を具体的に示しています。 [実務示唆: AIエージェントの`run_code`ツールを開発する際は、モックだけでなく実際のサンドボックス環境を用いた統合テストを導入し、本番環境での予期せぬ動作を防ぎましょう。] [GitHub: sandscale/sdk] (Source: Dev.to)</description>
-      <pubDate>Thu, 26 Nov 2026 05:38:51 +0000</pubDate>
+      <title>AI構成チューニングのための汎用決定モデル</title>
+      <link>https://arxiv.org/abs/2611.33190</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33190</guid>
+      <description>[Score: 80] AIの構成チューニングを効率化するための汎用的な決定モデルが提案されています。 / このモデルは、様々なAIシステムにおいて最適な設定を見つけるプロセスを自動化することを目的としています。 / 手動でのチューニングにかかる時間と労力を大幅に削減できる可能性があります。 [実務示唆: AIモデルのハイパーパラメータチューニングに課題を抱える開発者は、本決定モデルの概念を参考に、自動化されたチューニング戦略を検討すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 26 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Quadro P2200(VRAM 5GB)でMoE LLMを2種類動かしてみた</title>
+      <link>https://zenn.dev/nooop/articles/00cde2e1a825ad</link>
+      <guid isPermaLink="false">https://zenn.dev/nooop/articles/00cde2e1a825ad</guid>
+      <description>[Score: 80] llama.cppがMoEモデルに対応し、エキスパートの一部をCPU RAMに配置することで、VRAM 5GBのQuadro P2200でも35B級のMoE LLMが動作することが検証されました。 / Qwen3.6-35B-A3BとGemma-4-26B-A4Bの2種類のモデルを動かし、実用的な速度で推論が可能であることを示しています。 / ただし、200kコンテキスト長ではVRAMがほぼ限界となり、KVキャッシュの調整が必要になるなどの課題も指摘されています。 [実務示唆: 低VRAM環境で大規模MoE LLMの実行を検討しているエンジニアは、llama.cppとCPU RAMを活用したMoEモデルの実行を試す価値があります。] [GitHub: g667300/llm-p2200] (Source: Zenn)</description>
+      <pubDate>Thu, 26 Nov 2026 11:41:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>TenkaCloudSimulator 開発日記：ChatGPTのDotで開発が自律的に続く仕組みをつくる</title>
+      <link>https://zenn.dev/bull/articles/tenkacloud-simulator-devlog-20261126</link>
+      <guid isPermaLink="false">https://zenn.dev/bull/articles/tenkacloud-simulator-devlog-20261126</guid>
+      <description>[Score: 80] TenkaCloudSimulatorの開発において、ChatGPTのDotとサブエージェントを活用し、Issueから実装、レビュー、マージまでを自律的に回す仕組みを構築しています。 / AWS公式エミュレーターでは不足する、EC2ゲスト内でコマンド実行や障害対応を採点できる環境を目指し、QEMUによる実行経路を独自に用意。 / 将来的にはブラウザ内LinuxとWebAssemblyで動くシミュレーターを組み合わせ、参加者の端末で完結するクラウド操作練習環境の提供を計画しています。 [実務示唆: AIエージェントを活用した開発プロセスの自動化を検討するチームは、Issue駆動開発におけるAIの役割分担や、公式エミュレーターと自作シミュレーターの連携方法を参考にすべきです。] (Source: Zenn)</description>
+      <pubDate>Thu, 26 Nov 2026 03:59:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>さくらインターネット、AIを月額固定料金で提供する「シンプルAI」発表、システムへの組み込み用途を想定</title>
+      <link>https://www.publickey1.jp/blog/26/aiai_1.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiai_1.html</guid>
+      <description>[Score: 80] さくらインターネットが、月額固定料金でAIを提供する新サービス「シンプルAI」を発表しました。 / このサービスは、システムやサービスへのAI組み込み用途を想定しており、長期安定したAIモデルの提供を重視しています。 / ISMAP登録申請や国産LLMの提供も視野に入れ、2026年12月10日に提供開始予定です。 [実務示唆: システムにAIを組み込む開発者は、月額固定料金で安定したAIモデルを利用できる「シンプルAI」の導入を検討し、コストと運用安定性を評価すべきです。] (Source: Publickey)</description>
+      <pubDate>Thu, 26 Nov 2026 15:45:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>何が、誰が、いつ：短い推論によるメンタルヘルス安全のための構造化された危害評価</title>
+      <link>https://arxiv.org/abs/2611.33263</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33263</guid>
+      <description>[Score: 78] メンタルヘルスに関する安全性を評価するための、構造化された危害評価フレームワークが提案されています。 / 「何が、誰が、いつ」という観点から、短い推論を用いて危害を特定・評価します。 / AIが生成するコンテンツや対話システムにおける倫理的課題への対応に役立つ可能性があります。 [実務示唆: AIシステムがメンタルヘルスに影響を与える可能性のあるコンテンツを扱う場合、本フレームワークを参考に危害評価プロセスを導入し、倫理的リスクを軽減すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 26 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>LLMおよびVLM候補選択のための制約認識型テスト時スコアリング</title>
+      <link>https://arxiv.org/abs/2611.33161</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33161</guid>
+      <description>[Score: 75] 大規模言語モデル（LLM）と視覚言語モデル（VLM）の候補選択において、制約を考慮したテスト時スコアリング手法を提案しています。 / これにより、モデルの出力品質と関連性を向上させることが期待されます。 / 特に、特定の要件や制約があるタスクでのモデル選択に有効です。 [実務示唆: LLM/VLMの選定や評価を行う際は、本手法を参考に制約条件を考慮したスコアリングを導入し、モデルの性能向上を図るべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 26 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>自動運転の予測軌跡の可視化動画を誰でも高速に作れるようにする</title>
+      <link>https://zenn.dev/turing_motors/articles/cbf9872ca90166</link>
+      <guid isPermaLink="false">https://zenn.dev/turing_motors/articles/cbf9872ca90166</guid>
+      <description>[Score: 75] チューリング社が、自動運転モデルの予測軌跡を走行映像に重ねた可視化動画の生成プロセスを高速化・自動化しました。 / AWS Step FunctionsとAWS Batchを活用し、手動だったスクリプト実行やGPU環境の依存を解消し、社内ビューアからリクエストするだけでSlackに動画が届く仕組みを構築。 / これにより、モデル開発の振り返りや広報活動における動画作成が、一部のエンジニアだけでなく誰でも簡単に行えるようになりました。 [実務示唆: MLOpsチームは、自動運転モデルの可視化プロセスをAWS Step FunctionsとBatchで自動化し、開発者や関係者が容易に利用できる環境を構築することを検討すべきです。] (Source: Zenn)</description>
+      <pubDate>Thu, 26 Nov 2026 08:00:08 +0000</pubDate>
     </item>
   </channel>
 </rss>

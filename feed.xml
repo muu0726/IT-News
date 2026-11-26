@@ -5,21 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 05:46:17 +0000</lastBuildDate>
-    <item>
-      <title>1Passwordセキュリティインシデント</title>
-      <link>https://1password.com/blog/update-on-nov-2026-security-incident</link>
-      <guid isPermaLink="false">https://1password.com/blog/update-on-nov-2026-security-incident</guid>
-      <description>[Score: 100] 1Passwordは2026年11月19日に従業員のGitHubアカウントへの不正アクセスを調査開始しました。 / 攻撃者はソースコードにアクセスし、悪意のあるコードをバックエンドサービスにプッシュして顧客の管理者データをダウンロードしました。 / 顧客の氏名、メールアドレス、アカウント識別子などが流出しましたが、顧客の保管庫の内容はアクセスされていません。 [実務示唆: 1Passwordユーザーは、流出した可能性のある情報（氏名、メールアドレスなど）が悪用されるリスクに備え、不審な連絡には警戒し、パスワード以外の認証情報も確認すべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 17:18:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>DHH氏が開発する「Omarchy 4.5」リリース。一般的なマルチウィンドウをサポート。最速7秒で導入、Appleシリコン対応、Webアプリ版MS Office用ランチャーなど新機能</title>
-      <link>https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/dhhomarchy_457applewebms_office.html</guid>
-      <description>[Score: 95] Ruby on Railsの作者DHH氏が開発するLinux OS「Omarchy 4.5」がリリースされました。 / 本バージョンでは、従来のタイル型に加え、一般的なフローティング型マルチウィンドウをサポート。 / Appleシリコン搭載Macへの対応や、Web版MS Office用ランチャー機能も追加されています。 [実務示唆: AppleシリコンMacユーザーは、Omarchy 4.5をデュアルブートで試すことで、AIエージェント統合型Linux環境を体験できる。] (Source: Publickey)</description>
-      <pubDate>Mon, 23 Nov 2026 15:49:45 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 26 Nov 2026 22:34:32 +0000</lastBuildDate>
     <item>
       <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
       <link>https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</link>
@@ -28,109 +14,46 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>Nfs2root: LinuxカーネルのNFSサーバーにおける12年前の認証前リモートルート脆弱性</title>
-      <link>https://opensec.in/blog/nfs2root-cve-2026-99362</link>
-      <guid isPermaLink="false">https://opensec.in/blog/nfs2root-cve-2026-99362</guid>
-      <description>[Score: 95] LinuxカーネルのNFSサーバー（nfsd）に、2014年から存在する認証前ヒープオーバーフローの脆弱性（CVE-2026-99362）が発見されました。 / この脆弱性は、NFSv4.1クライアントがリプライキャッシュサイズをゼロに設定し、サーバーにフルリプライをコピーさせることで、カーネルメモリへの書き込みを可能にします。 / 影響を受けるのはLinux 3.16以降のすべてのカーネルで、修正はLinux 6.12.117, 6.18.61, 7.3.2, 7.4-rc1で適用されています。 [実務示唆: NFSサーバーを運用している場合は、速やかにLinuxカーネルを最新バージョン（6.12.117, 6.18.61, 7.3.2, 7.4-rc1以降）にアップデートし、再起動してください。] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 20:35:50 +0000</pubDate>
+      <title>「RansomwareHelp」のCTOが電信詐欺で起訴される</title>
+      <link>https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/</link>
+      <guid isPermaLink="false">https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/</guid>
+      <description>[Score: 90] ランサムウェア被害者のデータ復旧を謳っていた「RansomwareHelp」のCTOが電信詐欺で起訴されました。 / 同社は高度な暗号ツールを使用すると偽り、実際には攻撃者に身代金を支払い、被害者には高額な手数料を請求していました。 / FBIの潜入捜査により、その詐欺行為が明らかになりました。 [実務示唆: ランサムウェア被害に遭った際、データ復旧サービスを利用する際は、その信頼性と実績を徹底的に調査し、透明性の高いサービス提供者を選ぶべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 26 Nov 2026 17:47:45 +0000</pubDate>
     </item>
     <item>
-      <title>「氏名は含まれておりません」では済まない——KARTE事件で漏れた行動の記録は誰の個人データか</title>
-      <link>http://takagi-hiromitsu.jp/diary/20261124.html</link>
-      <guid isPermaLink="false">http://takagi-hiromitsu.jp/diary/20261124.html</guid>
-      <description>[Score: 95] プレイドの「KARTE」への不正アクセスにより、多数の企業でエンドユーザーの行動記録が漏洩しました。 / 多くの企業が「氏名が含まれない」と公表していますが、筆者は氏名の有無で個人データか否かは決まらないと指摘しています。 / 企業が誰のデータか識別できる場合、氏名がなくても個人データに該当し、個人情報保護法上の報告義務が生じると警鐘を鳴らしています。 [実務示唆: 個人情報漏洩の際、「氏名なし」でも容易照合性があれば個人データに該当するため、自社で識別可能な情報は全て漏洩対象として適切に公表・対応すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 25 Nov 2026 00:26:29 +0000</pubDate>
+      <title>迷惑メール対策をしているのに、なぜ詐欺メールは届くのか</title>
+      <link>https://zenn.dev/akagumi/articles/catch-all-phishing-invisible-chars</link>
+      <guid isPermaLink="false">https://zenn.dev/akagumi/articles/catch-all-phishing-invisible-chars</guid>
+      <description>[Score: 90] キャッチオール設定のメールアドレスに届いた詐欺メールが、SPF/DKIM/DMARC認証をすり抜けてしまう事例が紹介されています。 / 攻撃者は正規の認証設定を持つドメインを使用し、表示名でAmazonなどを詐称することで、認証だけでは防ぎきれない手口を使っています。 / さらに、本文中に目に見えない文字を挿入することで、キーワードフィルターを回避する巧妙な手法が用いられていることが明らかになりました。 [実務示唆: メールフィルターのロジックを見直し、表示名と送信元ドメインの乖離チェックや、不可視文字を考慮した本文解析を導入し、多層的な対策を検討することを推奨します。] (Source: Zenn)</description>
+      <pubDate>Thu, 26 Nov 2026 14:08:33 +0000</pubDate>
     </item>
     <item>
-      <title>なぜAIにとってリーマン予想よりもOmega=9/4が重要なのか</title>
-      <link>https://dev.to/max_quimby/why-omega94-matters-more-than-riemann-for-ai-3534</link>
-      <guid isPermaLink="false">https://dev.to/max_quimby/why-omega94-matters-more-than-riemann-for-ai-3534</guid>
-      <description>[Score: 95] OpenAIが発表した行列乗算の指数オメガが正確に9/4であるという証明が、AI推論コストに大きな影響を与えると解説しています。 / 行列乗算はAI推論の80-90%を占めるため、その高速化は推論コストの削減に直結します。 / これまでの上限値2.371から2.25への改善は、AIの計算効率を劇的に向上させる可能性を秘めています。 [実務示唆: 行列乗算の計算効率向上はAIモデルの推論コストに直接影響するため、今後のAIハードウェアやライブラリの進化に注目し、より効率的なモデル運用を検討しましょう。] (Source: Dev.to)</description>
-      <pubDate>Thu, 26 Nov 2026 05:38:32 +0000</pubDate>
+      <title>Jev で実現する Generative UI</title>
+      <link>https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07</link>
+      <guid isPermaLink="false">https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07</guid>
+      <description>[Score: 90] Generative UIとは、AIが文脈に応じてUIを生成する技術であり、ChatGPTやClaudeもUIを返すようになっています。 / プロダクトに組み込む際の課題として、生成されたUIを既存のデザインシステムに合わせる必要性が挙げられます。 / Jevのようなライブラリは、デザインシステムのコンポーネントを返すことを前提に作られており、LLMにルールを渡してUIを生成させることが可能です。 [実務示唆: Generative UIを導入する際は、既存のデザインシステムとの連携を考慮し、Jevなどのライブラリを活用してコンポーネント定義からプロンプトを生成するアプローチを検討しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 26 Nov 2026 12:42:06 +0000</pubDate>
     </item>
     <item>
-      <title>AWS、DynamoDB互換データベースをローカルマシンで構築可能にするオープンソース「ExtendDB」がバージョン1.0に到達</title>
-      <link>https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsdynamodbextenddb10.html</guid>
-      <description>[Score: 90] AWSが、NoSQLデータベース「Amazon DynamoDB」と互換性のあるオープンソース「ExtendDB」のバージョン1.0リリースを発表しました。 / ExtendDBはWindows、Linux、macOSなどのローカル環境でDynamoDB互換データベースを構築でき、PostgreSQLなどをプラグインとして利用します。 / これにより、DynamoDBアプリケーションのローカル開発・テストや、クラウドとオンプレミスでの同一アプリケーション運用、既存スキル活用が可能になります。 [実務示唆: DynamoDBを利用している開発者は、ExtendDBを導入してローカル開発環境を構築し、開発効率とテストの再現性を向上させるべきです。] [GitHub: awslabs/extenddb] (Source: Publickey)</description>
-      <pubDate>Tue, 24 Nov 2026 15:19:30 +0000</pubDate>
+      <title>さくらのクラウド、新ネットワーク基盤、新データベースサービスなど投入。東京リージョン第三ゾーン新設も発表</title>
+      <link>https://www.publickey1.jp/blog/26/post_310.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/post_310.html</guid>
+      <description>[Score: 90] さくらインターネットは「SAKURA DEKIRU Conference 2026」で、さくらのクラウドの強化を発表しました。 / 東京リージョンに第三ゾーンを新設し、石狩・東京ともに3ゾーン体制となります。 / 物理機器を意識しない抽象化された「ネットワークスイート」や、証明書管理サービス、L7ロードバランサー、新データベーススイートなどが投入されます。 [実務示唆: さくらのクラウド利用者は、新設された東京リージョン第三ゾーンやネットワークスイートを活用し、より可用性の高いシステム構築やネットワーク管理の効率化を図りましょう。] (Source: Publickey)</description>
+      <pubDate>Thu, 26 Nov 2026 15:47:22 +0000</pubDate>
     </item>
     <item>
-      <title>信じられない、信じられない、信じられない、信じられない：今起きていることの大きさ</title>
-      <link>https://scottaaronson.blog/?p=10379</link>
-      <guid isPermaLink="false">https://scottaaronson.blog/?p=10379</guid>
-      <description>[Score: 90] OpenAIとAnthropicがVP ≠ VNPの証明を発表し、さらにOpenAIが行列乗算の指数ωが正確に9/4であるという下限を証明しました。 / これは1960年代からのアルゴリズムの中心的な謎に対する答えであり、AIがω&gt;2のような下限を証明できたことは大きな衝撃です。 / AIによる数学的発見の速度と深さが、これまでの予想をはるかに超えていることを示しています。 [実務示唆: AIが数学の未解決問題に貢献する能力は、科学研究の進め方を根本的に変える可能性があり、AIを活用した新たな研究パラダイムの探求を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 19:11:27 +0000</pubDate>
+      <title>Rvoip 0.5 Rustで書かれた完全なVoIPスタック</title>
+      <link>https://github.com/eisenzopf/rvoip</link>
+      <guid isPermaLink="false">https://github.com/eisenzopf/rvoip</guid>
+      <description>[Score: 88] Rustで書かれたVoIP通信アプリケーション構築のためのライブラリ「Rvoip 0.5」がリリースされました。 / SIP、RTP、WebRTC、QUIC/WebTransport/WebSocketなど、VoIPに必要な全てのスタックを内包し、外部サーバーなしで動作します。 / 高いパフォーマンスと相互運用性を持ち、キャリアグレードの通信アプリケーション開発を可能にします。 [実務示唆: RustでVoIPアプリケーションを開発するエンジニアは、Rvoip 0.5を評価し、その統合されたスタックとパフォーマンスを活用して開発効率と信頼性を向上させるべきです。] [GitHub: eisenzopf/rvoip] (Source: Hacker News)</description>
+      <pubDate>Thu, 26 Nov 2026 19:18:09 +0000</pubDate>
     </item>
     <item>
-      <title>AIで学習アプリを作って2週間で宅建に合格した話【テキスト不要】｜Shikimi</title>
-      <link>https://note.com/shikimi_crypto/n/n35d0bb54e6fb</link>
-      <guid isPermaLink="false">https://note.com/shikimi_crypto/n/n35d0bb54e6fb</guid>
-      <description>[Score: 90] 筆者がAIを活用して自作学習アプリとYouTube教材のみで、2週間という短期間で宅建試験に合格した体験談です。 / 市販テキストを使わず、過去問を最初に解いて現状を把握し、AIで効率的な学習アプリを開発した戦略が紹介されています。 / 本業がコンサルでAIエージェント活用を支援している経験が、この学習方法に活かされています。 [実務示唆: 資格学習や新しい知識習得において、AIを活用した自分専用の学習ツール開発は、効率的な学習を可能にするため、積極的に検討すべきである。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 25 Nov 2026 09:23:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>AnthropicとOpenAIの従業員らが「未公開モデルが強力になりすぎて一般公開するのは危険」と懸念</title>
-      <link>https://gigazine.net/news/20261125-anthropic-openai-employees-fear-unreleased-ai-models/</link>
-      <guid isPermaLink="false">https://gigazine.net/news/20261125-anthropic-openai-employees-fear-unreleased-ai-models/</guid>
-      <description>[Score: 90] AnthropicとOpenAIの従業員らが、未公開の最先端AIモデルが予測よりも早く高性能化しすぎていると懸念を表明しています。 / これらのAIモデルは、すでに制御技術を凌駕し始めており、公開の安全性確保が困難になっているとのことです。 / 社内では、問題解決可能派とリスク考慮によるトレーニング中止派に意見が分かれている状況が報じられています。 [実務示唆: 最先端AIモデルの安全性と制御に関する議論は今後も活発化するため、AI開発者は倫理的・技術的リスクを常に考慮し、慎重な開発と公開プロセスを検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 25 Nov 2026 11:43:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Ubuntuのセキュリティ対応の遅さ</title>
-      <link>https://www.openwall.com/lists/oss-security/2026/11/25/9</link>
-      <guid isPermaLink="false">https://www.openwall.com/lists/oss-security/2026/11/25/9</guid>
-      <description>[Score: 90] Ubuntuのセキュリティ対応が遅いという懸念が、oss-securityメーリングリストで報告されています。 / 特に、LinuxカーネルのTCPスタックにおけるリモートメモリ破損の脆弱性「NoisyTCP (CVE-2026-99288)」が公開されてから9日経ってもUbuntuからのパッチが提供されていない点が指摘されています。 / これは、Ubuntuユーザーにとって重大なセキュリティリスクとなり得ます。 [実務示唆: Ubuntuユーザーは、重要なセキュリティアップデートの適用状況を常に確認し、必要に応じて他のディストリビューションへの移行や、代替のセキュリティ対策を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Wed, 25 Nov 2026 20:38:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>1Password、従業員のGitHubアカウント経由で顧客の氏名とメールアドレスが流出したと発表 — BigGo ファイナンス</title>
-      <link>https://finance.biggo.jp/news/86bd3431-ad2e-4b18-b885-4fb6393beb46</link>
-      <guid isPermaLink="false">https://finance.biggo.jp/news/86bd3431-ad2e-4b18-b885-4fb6393beb46</guid>
-      <description>[Score: 90] 1Passwordが従業員のGitHubアカウント経由で顧客の氏名とメールアドレスが流出したことを発表した。 / 攻撃者はGitHubからバックエンドサービスに悪意あるコードを送り込み、顧客データを窃取したが、ユーザーのパスワードボールトは安全だった。 / 同社は侵害されたアカウントの無効化や認証情報のローテーションなどの対策を講じたことを報告している。 [実務示唆: GitHubアカウントのセキュリティ強化は必須であり、多要素認証の徹底やアクセス権限の最小化、定期的な認証情報ローテーションを組織全体で実施し、同様のインシデントを未然に防ぎましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 25 Nov 2026 20:50:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>【自動化】Muse のサイドチャットへ Webhook を届ける MuseKnock の仕組み</title>
-      <link>https://zenn.dev/codehex/articles/33bc6ee330b880</link>
-      <guid isPermaLink="false">https://zenn.dev/codehex/articles/33bc6ee330b880</guid>
-      <description>[Score: 88] Metaの個人向けAIエージェント「Muse」に対し、外部イベント（Slackメンション、GitHubリリースなど）をトリガーにメッセージを送信するOSS「MuseKnock」が開発されました。 / MuseKnockはCloudflare Workersにデプロイされ、Webhookを受け取り、Museのサイドチャットにメッセージとして投稿することで、AIを即座に動かします。 / この仕組みは、Museのサイドチャット、カスタムコネクター、Gadget SDKを活用しており、定期実行ではなくイベント駆動でAIを呼び出すことを可能にします。 [実務示唆: Meta Museを利用している場合、MuseKnockを導入することで、外部サービスからのイベントをトリガーにAIを自動実行させ、業務効率化や情報連携のリアルタイム化を図りましょう。] [GitHub: codehex/museknock] (Source: Zenn)</description>
-      <pubDate>Wed, 25 Nov 2026 06:12:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>「Google Workspace MCPサーバ」と「Google Workspace CLI」が正式版としてリリース</title>
-      <link>https://www.publickey1.jp/blog/26/google_workspace_mcpgoogle_workspace_cli.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/google_workspace_mcpgoogle_workspace_cli.html</guid>
-      <description>[Score: 88] Googleは、Google WorkspaceをAIエージェントが操作するための「Google Workspace MCP Server」と「Google Workspace CLI」を正式版としてリリースしました。 / Workspace MCPサーバはGmailやDriveなど8つのサービスに対応し、AIエージェントからのアクセスを効率化します。 / Googleは2027年2月までにAIエージェントのWorkspaceアクセスをMCP経由に移行するよう求めています。 [実務示唆: Google Workspaceと連携するAIエージェントを開発している場合、2027年2月までにRestful APIからMCPへの移行計画を策定し、対応を進める必要があります。] (Source: Publickey)</description>
-      <pubDate>Wed, 25 Nov 2026 15:27:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>「AI検索に電話番号が……」鳴りやまぬコールセンター　バッファローは壊れた「顧客導線」をどう改善した？</title>
-      <link>https://www.itmedia.co.jp/business/articles/2611/26/news015.html</link>
-      <guid isPermaLink="false">https://www.itmedia.co.jp/business/articles/2611/26/news015.html</guid>
-      <description>[Score: 88] 2025年夏、バッファローのコールセンターでAI検索による電話番号表示が原因で問い合わせが急増した事例。 / 同社はAIを「敵」ではなく「味方」と捉え直し、AI検索を前提とした自社サイトの再設計に着手。 / ユーザーが自己解決できるようなFAQの強化やチャット・メールへの導線改善により、ノンボイス化を推進した。 [実務示唆: AI検索が顧客導線に与える影響を認識し、FAQの最適化やチャットボット導入など、AI検索を前提とした自己解決型サポート体制を構築し、コールセンターの負荷軽減を図りましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Wed, 25 Nov 2026 22:50:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>GPT-6.2 AstraがGooglerのコードゴルフ記録を初めて破る</title>
-      <link>https://bjin.github.io/go-codegolf-benchmark/#leaderboard</link>
-      <guid isPermaLink="false">https://bjin.github.io/go-codegolf-benchmark/#leaderboard</guid>
-      <description>[Score: 85] GPT-6.2 Astraが、Google社内で2015年に行われたコードゴルフコンテストの記録を破ったことが報告されました。 / 32のプログラミング問題と8つの言語で、各モデルは30分間与えられ、最短コードを目指します。 / このベンチマークは、フロンティアモデルが人間の記録と比較してどの程度優れているかを示しています。 [実務示唆: AIによるコード生成の進化は、開発者がより効率的なコードを書くための強力なツールとなる可能性があり、最新のAIモデルを自身の開発ワークフローに組み込むことを検討すべきです。] [GitHub: bjin/go-codegolf-benchmark] (Source: Hacker News)</description>
-      <pubDate>Sun, 22 Nov 2026 16:44:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>SSHはGUIフレームワークである</title>
-      <link>https://zydra.sh/articles/ssh-is-a-gui-framework/</link>
-      <guid isPermaLink="false">https://zydra.sh/articles/ssh-is-a-gui-framework/</guid>
-      <description>[Score: 85] SSHは単なるリモート接続ツールではなく、マルチプレックス化された暗号化バイトストリームであり、クロスプラットフォームのレンダリングエンジンとして機能します。 / Kitty Graphics Protocolなどの新しいターミナルプロトコルは、グラフィックス、クリップボード共有、通知、マウスサポートなどをSSH上で実現しています。 / 著者は、SSH経由でネイティブにレンダリングされるデスクトップ環境を持つマイクロVMを作成し、その可能性を示しています。 [実務示唆: SSHの新たな可能性を探るため、記事で紹介されているマイクロVMを試用し、SSH経由でのGUIアプリケーション開発の検討を推奨します。] (Source: Hacker News)</description>
-      <pubDate>Sat, 21 Nov 2026 14:52:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude Code のセキュリティ、2026年11月時点のベストプラクティス（サンドボックス・権限・MCP）</title>
-      <link>https://zenn.dev/happy_elements/articles/27e14ff6754044</link>
-      <guid isPermaLink="false">https://zenn.dev/happy_elements/articles/27e14ff6754044</guid>
-      <description>[Score: 85] Claude Codeのセキュリティに関する2026年11月時点のベストプラクティスがまとめられています。 / Bashコマンドの実行環境や権限ルール、サンドボックス、MCPの設定について詳しく解説。 / OSレベルの隔離とClaude Codeの設定の両方を有効にすることが重要とされています。 [実務示唆: Claude Codeを利用する際は、OSレベルの隔離とClaude Codeの設定の両方でセキュリティ対策を講じ、特にBashサンドボックスの有効化と権限ルールの設定を徹底すること。] (Source: Zenn)</description>
-      <pubDate>Wed, 25 Nov 2026 03:53:12 +0000</pubDate>
+      <title>AIコーディングで再び出会うTDD・BDD・仕様駆動開発</title>
+      <link>https://qiita.com/figueiredoluiz/items/be77af87766215ef1055?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
+      <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/be77af87766215ef1055?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
+      <description>[Score: 88] AIコーディングエージェントの活用により、TDD、BDD、仕様駆動開発といった既存の開発手法が再評価されている現象「Great Rollback」について論じています。 / AnthropicがClaudeにテストを書かせるTDD手順を推奨していることや、OpenSpec、Spec Kit、Kiroといったツールが仕様中心の開発フローを取り入れていることを紹介。 / AI時代においても、開発の意図を残し、変更を調整し、品質を確保するエンジニアリングの仕事の重要性を強調しています。 [実務示唆: AIコーディングを活用する際も、TDDやBDD、仕様駆動開発といった既存の品質保証手法を再認識し、AIと連携させて開発プロセスに組み込む。] (Source: Qiita)</description>
+      <pubDate>Thu, 26 Nov 2026 06:47:52 +0000</pubDate>
     </item>
     <item>
       <title>MCPに新機能「Skills over MCP」登場。ツールとの接続だけでなく使い方のスキルもMCP経由で提供</title>
@@ -145,6 +68,83 @@
       <guid isPermaLink="false">https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/</guid>
       <description>[Score: 85] アプリケーションのモダナイゼーションを安全に進めるための「エビデンスファースト」なアプローチを提案しています。 / 既存システムの動作を検証し、回帰テストの網羅性を確保するための証拠収集の重要性を強調。 / GitHub Copilotエージェントスキルにこの手順をエンコードする方法も示唆されており、AIを活用したモダナイゼーションの可能性に言及しています。 [実務示唆: アプリケーションのモダナイゼーションに着手する際は、まず既存システムの挙動に関するエビデンスを徹底的に収集し、それを基に段階的な変更計画を立てることで、リスクを最小限に抑えましょう。] (Source: GitHub Blog)</description>
       <pubDate>Wed, 25 Nov 2026 15:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>llama.cppのAMD特化フォーク</title>
+      <link>https://devnull.land/amd-specific-llama-cpp</link>
+      <guid isPermaLink="false">https://devnull.land/amd-specific-llama-cpp</guid>
+      <description>[Score: 85] AMDグラフィックカード向けに最適化されたllama.cppのフォーク「llama-cpp-rdna-boosts」が紹介されています。 / これにより、トークン生成速度が35から55トークン/秒、プリフィル速度が700から1300トークン/秒に向上したと報告されています。 / LLM推論エンジンの開発が加速し、ハードウェア特化型のアプローチが注目されています。 [実務示唆: AMD GPUユーザーはllama-cpp-rdna-boostsを試すことで、LLMの推論パフォーマンスが大幅に向上する可能性があるため、導入を検討すべきです。] (Source: Hacker News)</description>
+      <pubDate>Thu, 26 Nov 2026 17:11:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenAIはコスト削減モードに入っている可能性がある</title>
+      <link>https://micjm.com/blog/openai-is-in-cost-control-mode/</link>
+      <guid isPermaLink="false">https://micjm.com/blog/openai-is-in-cost-control-mode/</guid>
+      <description>[Score: 85] OpenAIの最新モデルAstra 6.2とSol 6.2が、コスト削減のためにチューニングされている可能性が指摘されています。 / データ分析によると、これらのモデルは以前のバージョンと比較して、タスクあたりの出力トークン数と推論トークン数が減少しています。 / この変更により、モデルの推論能力が低下し、一部のタスクで性能が劣る「underthinking outliers」になっていると結論付けられています。 [実務示唆: OpenAIの最新モデルを利用する際は、コスト削減による性能低下の可能性を考慮し、既存のアプリケーションへの影響を検証することを推奨します。] (Source: Hacker News)</description>
+      <pubDate>Thu, 26 Nov 2026 07:33:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>型チェックが重かったので、クエリの型推論を手放してみた</title>
+      <link>https://zenn.dev/dress_code/articles/88b55221eea4e0</link>
+      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/88b55221eea4e0</guid>
+      <description>[Score: 85] TypeScriptの型チェックが重く、特にPrismaとKyselyを併用したクエリの型推論が原因でメモリ不足が発生していました。 / 筆者はAI（Claude Code）を活用し、特定のクエリの型推論を抑制することで、型チェックの負荷を大幅に軽減しました。 / InstantiationsとMemory usedを指標に改善効果を測定し、開発環境のパフォーマンス向上に成功した事例です。 [実務示唆: TypeScriptの型チェックが重い場合、--diagnosticsオプションでInstantiationsとMemory usedを測定し、特定のクエリの型推論抑制を検討する。] (Source: Zenn)</description>
+      <pubDate>Thu, 26 Nov 2026 02:15:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>さくらインターネットが大規模イベント開催。田中社長「日本から世界へ挑戦するためのデジタル基盤を支える」</title>
+      <link>https://www.publickey1.jp/blog/26/post_311.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/post_311.html</guid>
+      <description>[Score: 85] さくらインターネットが「SAKURA DEKIRU Conference 2026」を開催し、田中社長が日本のデジタル基盤強化への意欲を表明しました。 / 過去の「デジタル敗戦」を乗り越え、AI時代には「つくる力」「使いこなす力」「選べる力」の3つの力が重要だと指摘しています。 / 同社はガバメントクラウド採択やGPUインフラ投資を通じて、日本から世界へ挑戦するデジタル基盤を支えることを使命としています。 [実務示唆: さくらインターネットのクラウドサービスやGPUインフラは、AI開発や大規模なデジタル基盤構築において国産の選択肢として有力であり、今後の動向に注目し活用を検討しましょう。] (Source: Publickey)</description>
+      <pubDate>Thu, 26 Nov 2026 15:50:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>お金や信頼を燃やさないGitHub Actions CI/CDの構築方法</title>
+      <link>https://dev.to/mango7777/how-to-build-github-actions-cicd-that-doesnt-burn-money-or-trust-3j5l</link>
+      <guid isPermaLink="false">https://dev.to/mango7777/how-to-build-github-actions-cicd-that-doesnt-burn-money-or-trust-3j5l</guid>
+      <description>[Score: 85] GitHub Actionsでコスト効率が良く信頼性の高いCI/CDパイプラインを構築する方法について解説しています。 / 初期の非効率なパイプラインが多額の費用を発生させた経験から、キャッシュの活用、不要なジョブの削減、適切なランナーの選択など、15の具体的な改善点を提示しています。 / ビルド、テスト、セキュリティスキャン、Dockerイメージ構築、デプロイを含む実践的なパイプライン構築例が示されています。 [実務示唆: GitHub Actionsを利用する開発者は、キャッシュの最適化、適切なランナー選択、イベントトリガーの精査を行い、CI/CDコストを削減しつつ効率的なパイプラインを構築すべきです。] (Source: Dev.to)</description>
+      <pubDate>Thu, 26 Nov 2026 22:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>OpenAI Agents API: ハーネスとは何か、そしてその周りにエージェントを構築する方法</title>
+      <link>https://dev.to/julian_cardozo_dev/openai-agents-api-que-es-el-harness-y-como-se-arma-un-agente-alrededor-de-el-3kmj</link>
+      <guid isPermaLink="false">https://dev.to/julian_cardozo_dev/openai-agents-api-que-es-el-harness-y-como-se-arma-un-agente-alrededor-de-el-3kmj</guid>
+      <description>[Score: 85] OpenAI Agents APIは、AIエージェントの実行サイクル（ハーネス）をサービスとして提供します。 / これにより、開発者はエージェントのコアロジックに集中でき、サイクル管理のプログラミングが不要になります。 / セッションとターンを単位として、モデル、指示、環境を設定し、イベントストリームを購読して結果を受け取ります。 [実務示唆: OpenAI Agents APIのベータ版を試用し、AIエージェント開発におけるハーネスの自動化がワークフローにどう影響するか検証することを推奨します。] (Source: Dev.to)</description>
+      <pubDate>Thu, 26 Nov 2026 22:29:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>【Claude Code】鹿野さんが実践するエンジニアの日常業務を爆速にする最新推しツール 大公開</title>
+      <link>https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</link>
+      <guid isPermaLink="false">https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</guid>
+      <description>[Score: 82] 本記事は、エンジニアの日常業務を効率化する最新ツールとして「Claude Code」の活用事例を紹介するプレゼンテーション資料です。 / 資料では、Claude Codeがいかにエンジニアの作業を高速化し、生産性を向上させるかに焦点を当てています。 / 具体的なツールの使い方や、実務への応用例が示唆されており、AIを活用した開発ワークフローの最適化に関心のあるエンジニア向けの内容です。 [実務示唆: Claude CodeのようなAIツールを日常業務に積極的に取り入れ、コード生成、デバッグ、ドキュメント作成などのタスクを自動化・効率化する。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 26 Nov 2026 12:31:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI時代の遊びの芸術</title>
+      <link>https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/</guid>
+      <description>[Score: 80] AI時代における「遊び」の重要性、特にGitHub Universeのハッカブルなカンファレンスバッジを例に挙げています。 / 子供の頃の遊びが問題解決能力やエンジニアリングスキルを育むように、AI時代も試行錯誤の機会が増えていると指摘。 / GitHubのOctoverseレポートでは、プルリクエストの40%がAIエージェントによって開始されていることが示され、AIとの協調開発の進展が語られています。 [実務示唆: AIが開発プロセスに深く関与する現代において、遊び心を持って新しい技術やツールを試行錯誤し、創造的な問題解決能力を養うことが、エンジニアとしての成長に不可欠であることを認識しましょう。] [GitHub: github/universe-badge] (Source: GitHub Blog)</description>
+      <pubDate>Wed, 25 Nov 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>オープンソースにおける最高のものは共に築かれる</title>
+      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
+      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI構成チューニングのための汎用決定モデル</title>
+      <link>https://arxiv.org/abs/2611.33190</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33190</guid>
+      <description>[Score: 80] AIの構成チューニングを効率化するための汎用的な決定モデルが提案されています。 / このモデルは、様々なAIシステムにおいて最適な設定を見つけるプロセスを自動化することを目的としています。 / 手動でのチューニングにかかる時間と労力を大幅に削減できる可能性があります。 [実務示唆: AIモデルのハイパーパラメータチューニングに課題を抱える開発者は、本決定モデルの概念を参考に、自動化されたチューニング戦略を検討すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Thu, 26 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Quadro P2200(VRAM 5GB)でMoE LLMを2種類動かしてみた</title>
+      <link>https://zenn.dev/nooop/articles/00cde2e1a825ad</link>
+      <guid isPermaLink="false">https://zenn.dev/nooop/articles/00cde2e1a825ad</guid>
+      <description>[Score: 80] llama.cppがMoEモデルに対応し、エキスパートの一部をCPU RAMに配置することで、VRAM 5GBのQuadro P2200でも35B級のMoE LLMが動作することが検証されました。 / Qwen3.6-35B-A3BとGemma-4-26B-A4Bの2種類のモデルを動かし、実用的な速度で推論が可能であることを示しています。 / ただし、200kコンテキスト長ではVRAMがほぼ限界となり、KVキャッシュの調整が必要になるなどの課題も指摘されています。 [実務示唆: 低VRAM環境で大規模MoE LLMの実行を検討しているエンジニアは、llama.cppとCPU RAMを活用したMoEモデルの実行を試す価値があります。] [GitHub: g667300/llm-p2200] (Source: Zenn)</description>
+      <pubDate>Thu, 26 Nov 2026 11:41:19 +0000</pubDate>
     </item>
   </channel>
 </rss>
