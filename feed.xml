@@ -5,7 +5,14 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 22:34:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 05:45:57 +0000</lastBuildDate>
+    <item>
+      <title>さくらインターネット、AIを月額固定料金で提供する「シンプルAI」発表、システムへの組み込み用途を想定</title>
+      <link>https://www.publickey1.jp/blog/26/aiai_1.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiai_1.html</guid>
+      <description>[Score: 100] さくらインターネットが、月額固定料金でAIを提供する新サービス「シンプルAI」を発表しました。 / このサービスは、システムやサービスへのAI組み込み用途を想定しており、長期安定したAIモデルの提供を重視しています。 / ISMAP登録申請や国産LLMの提供も視野に入れ、2026年12月10日に提供開始予定です。 [実務示唆: システムにAIを組み込む開発者は、月額固定料金で安定したAIモデルを利用できる「シンプルAI」の導入を検討し、コストと運用安定性を評価すべきです。] (Source: Publickey)</description>
+      <pubDate>Thu, 26 Nov 2026 23:09:25 +0000</pubDate>
+    </item>
     <item>
       <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
       <link>https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</link>
@@ -40,6 +47,13 @@
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/post_310.html</guid>
       <description>[Score: 90] さくらインターネットは「SAKURA DEKIRU Conference 2026」で、さくらのクラウドの強化を発表しました。 / 東京リージョンに第三ゾーンを新設し、石狩・東京ともに3ゾーン体制となります。 / 物理機器を意識しない抽象化された「ネットワークスイート」や、証明書管理サービス、L7ロードバランサー、新データベーススイートなどが投入されます。 [実務示唆: さくらのクラウド利用者は、新設された東京リージョン第三ゾーンやネットワークスイートを活用し、より可用性の高いシステム構築やネットワーク管理の効率化を図りましょう。] (Source: Publickey)</description>
       <pubDate>Thu, 26 Nov 2026 15:47:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>米、スペースXに衛星100万基の配備承認 宇宙にAIデータセンター構築へ</title>
+      <link>https://www.cnn.co.jp/usa/35255487.html</link>
+      <guid isPermaLink="false">https://www.cnn.co.jp/usa/35255487.html</guid>
+      <description>[Score: 90] 米連邦通信委員会（FCC）は、スペースXが宇宙空間に100万基の衛星を配備し、AIデータセンターを構築することを承認しました。 / この「スターマインド」と呼ばれる衛星コンステレーションは、AIの計算能力に対する需要を満たし、地球上の膨大なデータを処理する役割を担います。 / スペースXは、太陽エネルギーを活用することで、運用コストとエネルギー効率を大幅に向上させ、地上データセンターの環境負荷を軽減できると説明しています。 [実務示唆: 宇宙空間でのAIデータセンター構築は、将来的なデータ処理インフラの選択肢として注目し、関連技術の動向を継続的に追跡することが推奨されます。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 27 Nov 2026 01:03:08 +0000</pubDate>
     </item>
     <item>
       <title>Rvoip 0.5 Rustで書かれた完全なVoIPスタック</title>
@@ -112,39 +126,25 @@
       <pubDate>Thu, 26 Nov 2026 22:29:50 +0000</pubDate>
     </item>
     <item>
+      <title>作業を止めずに進めるClaude Codeの/btw・/fork・/rewindなどの使い分け</title>
+      <link>https://zenn.dev/nextbeat/articles/b0ccca979da06b</link>
+      <guid isPermaLink="false">https://zenn.dev/nextbeat/articles/b0ccca979da06b</guid>
+      <description>[Score: 85] Claude Codeにおける/btw、/branch、/fork、/rewindコマンドの使い分けを解説。 / /btwはメイン作業を中断せずに軽い質問をする際に便利で、文脈を汚さない。 / /branchは現在の会話を複製して別の方針を試す際に、/forkは複数の案を並行して検証する際に有効。 / /rewindは会話やコードを前の状態に戻すことで、誤った方向への進行を防ぐ。 [実務示唆: Claude Codeを利用するエンジニアは、これらのコマンドを適切に使い分けることで、開発効率を大幅に向上させ、試行錯誤のプロセスをスムーズに進めることができる。] (Source: Zenn)</description>
+      <pubDate>Thu, 26 Nov 2026 07:01:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>初期段階のスタートアップマーケティング: 技術系創業者が最初にすべきこと</title>
+      <link>https://dev.to/mayur_rathore_b735983a686/early-stage-startup-marketing-what-a-technical-founder-should-do-first-9bb</link>
+      <guid isPermaLink="false">https://dev.to/mayur_rathore_b735983a686/early-stage-startup-marketing-what-a-technical-founder-should-do-first-9bb</guid>
+      <description>[Score: 85] 技術系創業者は製品開発に集中しがちですが、初期段階のマーケティングは市場のニーズを見つけ、製品を届けることが重要です。 / 最初のユーザーを見つけ、簡潔なピッチで製品を説明し、効果的なチャネルをテストすることが成功の鍵となります。 / ブランドキャンペーンや広告予算ではなく、デバッグのように仮説検証を繰り返すアプローチが推奨されます。 [実務示唆: 技術系創業者は、製品開発と並行して、初期ユーザーの獲得と市場ニーズの検証に注力し、デバッグのようにマーケティングを反復試行すべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 27 Nov 2026 05:36:12 +0000</pubDate>
+    </item>
+    <item>
       <title>【Claude Code】鹿野さんが実践するエンジニアの日常業務を爆速にする最新推しツール 大公開</title>
       <link>https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</link>
       <guid isPermaLink="false">https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</guid>
       <description>[Score: 82] 本記事は、エンジニアの日常業務を効率化する最新ツールとして「Claude Code」の活用事例を紹介するプレゼンテーション資料です。 / 資料では、Claude Codeがいかにエンジニアの作業を高速化し、生産性を向上させるかに焦点を当てています。 / 具体的なツールの使い方や、実務への応用例が示唆されており、AIを活用した開発ワークフローの最適化に関心のあるエンジニア向けの内容です。 [実務示唆: Claude CodeのようなAIツールを日常業務に積極的に取り入れ、コード生成、デバッグ、ドキュメント作成などのタスクを自動化・効率化する。] (Source: はてなブックマーク)</description>
       <pubDate>Thu, 26 Nov 2026 12:31:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI時代の遊びの芸術</title>
-      <link>https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/</guid>
-      <description>[Score: 80] AI時代における「遊び」の重要性、特にGitHub Universeのハッカブルなカンファレンスバッジを例に挙げています。 / 子供の頃の遊びが問題解決能力やエンジニアリングスキルを育むように、AI時代も試行錯誤の機会が増えていると指摘。 / GitHubのOctoverseレポートでは、プルリクエストの40%がAIエージェントによって開始されていることが示され、AIとの協調開発の進展が語られています。 [実務示唆: AIが開発プロセスに深く関与する現代において、遊び心を持って新しい技術やツールを試行錯誤し、創造的な問題解決能力を養うことが、エンジニアとしての成長に不可欠であることを認識しましょう。] [GitHub: github/universe-badge] (Source: GitHub Blog)</description>
-      <pubDate>Wed, 25 Nov 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>オープンソースにおける最高のものは共に築かれる</title>
-      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
-      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI構成チューニングのための汎用決定モデル</title>
-      <link>https://arxiv.org/abs/2611.33190</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.33190</guid>
-      <description>[Score: 80] AIの構成チューニングを効率化するための汎用的な決定モデルが提案されています。 / このモデルは、様々なAIシステムにおいて最適な設定を見つけるプロセスを自動化することを目的としています。 / 手動でのチューニングにかかる時間と労力を大幅に削減できる可能性があります。 [実務示唆: AIモデルのハイパーパラメータチューニングに課題を抱える開発者は、本決定モデルの概念を参考に、自動化されたチューニング戦略を検討すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 26 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Quadro P2200(VRAM 5GB)でMoE LLMを2種類動かしてみた</title>
-      <link>https://zenn.dev/nooop/articles/00cde2e1a825ad</link>
-      <guid isPermaLink="false">https://zenn.dev/nooop/articles/00cde2e1a825ad</guid>
-      <description>[Score: 80] llama.cppがMoEモデルに対応し、エキスパートの一部をCPU RAMに配置することで、VRAM 5GBのQuadro P2200でも35B級のMoE LLMが動作することが検証されました。 / Qwen3.6-35B-A3BとGemma-4-26B-A4Bの2種類のモデルを動かし、実用的な速度で推論が可能であることを示しています。 / ただし、200kコンテキスト長ではVRAMがほぼ限界となり、KVキャッシュの調整が必要になるなどの課題も指摘されています。 [実務示唆: 低VRAM環境で大規模MoE LLMの実行を検討しているエンジニアは、llama.cppとCPU RAMを活用したMoEモデルの実行を試す価値があります。] [GitHub: g667300/llm-p2200] (Source: Zenn)</description>
-      <pubDate>Thu, 26 Nov 2026 11:41:19 +0000</pubDate>
     </item>
   </channel>
 </rss>

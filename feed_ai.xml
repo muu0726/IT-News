@@ -5,13 +5,27 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 22:34:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 05:45:57 +0000</lastBuildDate>
+    <item>
+      <title>さくらインターネット、AIを月額固定料金で提供する「シンプルAI」発表、システムへの組み込み用途を想定</title>
+      <link>https://www.publickey1.jp/blog/26/aiai_1.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiai_1.html</guid>
+      <description>[Score: 100] さくらインターネットが、月額固定料金でAIを提供する新サービス「シンプルAI」を発表しました。 / このサービスは、システムやサービスへのAI組み込み用途を想定しており、長期安定したAIモデルの提供を重視しています。 / ISMAP登録申請や国産LLMの提供も視野に入れ、2026年12月10日に提供開始予定です。 [実務示唆: システムにAIを組み込む開発者は、月額固定料金で安定したAIモデルを利用できる「シンプルAI」の導入を検討し、コストと運用安定性を評価すべきです。] (Source: Publickey)</description>
+      <pubDate>Thu, 26 Nov 2026 23:09:25 +0000</pubDate>
+    </item>
     <item>
       <title>Jev で実現する Generative UI</title>
       <link>https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07</link>
       <guid isPermaLink="false">https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07</guid>
       <description>[Score: 90] Generative UIとは、AIが文脈に応じてUIを生成する技術であり、ChatGPTやClaudeもUIを返すようになっています。 / プロダクトに組み込む際の課題として、生成されたUIを既存のデザインシステムに合わせる必要性が挙げられます。 / Jevのようなライブラリは、デザインシステムのコンポーネントを返すことを前提に作られており、LLMにルールを渡してUIを生成させることが可能です。 [実務示唆: Generative UIを導入する際は、既存のデザインシステムとの連携を考慮し、Jevなどのライブラリを活用してコンポーネント定義からプロンプトを生成するアプローチを検討しましょう。] (Source: はてなブックマーク)</description>
       <pubDate>Thu, 26 Nov 2026 12:42:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>米、スペースXに衛星100万基の配備承認 宇宙にAIデータセンター構築へ</title>
+      <link>https://www.cnn.co.jp/usa/35255487.html</link>
+      <guid isPermaLink="false">https://www.cnn.co.jp/usa/35255487.html</guid>
+      <description>[Score: 90] 米連邦通信委員会（FCC）は、スペースXが宇宙空間に100万基の衛星を配備し、AIデータセンターを構築することを承認しました。 / この「スターマインド」と呼ばれる衛星コンステレーションは、AIの計算能力に対する需要を満たし、地球上の膨大なデータを処理する役割を担います。 / スペースXは、太陽エネルギーを活用することで、運用コストとエネルギー効率を大幅に向上させ、地上データセンターの環境負荷を軽減できると説明しています。 [実務示唆: 宇宙空間でのAIデータセンター構築は、将来的なデータ処理インフラの選択肢として注目し、関連技術の動向を継続的に追跡することが推奨されます。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 27 Nov 2026 01:03:08 +0000</pubDate>
     </item>
     <item>
       <title>AIコーディングで再び出会うTDD・BDD・仕様駆動開発</title>
@@ -49,6 +63,13 @@
       <pubDate>Thu, 26 Nov 2026 22:29:50 +0000</pubDate>
     </item>
     <item>
+      <title>作業を止めずに進めるClaude Codeの/btw・/fork・/rewindなどの使い分け</title>
+      <link>https://zenn.dev/nextbeat/articles/b0ccca979da06b</link>
+      <guid isPermaLink="false">https://zenn.dev/nextbeat/articles/b0ccca979da06b</guid>
+      <description>[Score: 85] Claude Codeにおける/btw、/branch、/fork、/rewindコマンドの使い分けを解説。 / /btwはメイン作業を中断せずに軽い質問をする際に便利で、文脈を汚さない。 / /branchは現在の会話を複製して別の方針を試す際に、/forkは複数の案を並行して検証する際に有効。 / /rewindは会話やコードを前の状態に戻すことで、誤った方向への進行を防ぐ。 [実務示唆: Claude Codeを利用するエンジニアは、これらのコマンドを適切に使い分けることで、開発効率を大幅に向上させ、試行錯誤のプロセスをスムーズに進めることができる。] (Source: Zenn)</description>
+      <pubDate>Thu, 26 Nov 2026 07:01:54 +0000</pubDate>
+    </item>
+    <item>
       <title>【Claude Code】鹿野さんが実践するエンジニアの日常業務を爆速にする最新推しツール 大公開</title>
       <link>https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</link>
       <guid isPermaLink="false">https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</guid>
@@ -67,7 +88,7 @@
       <link>https://arxiv.org/abs/2611.33190</link>
       <guid isPermaLink="false">https://arxiv.org/abs/2611.33190</guid>
       <description>[Score: 80] AIの構成チューニングを効率化するための汎用的な決定モデルが提案されています。 / このモデルは、様々なAIシステムにおいて最適な設定を見つけるプロセスを自動化することを目的としています。 / 手動でのチューニングにかかる時間と労力を大幅に削減できる可能性があります。 [実務示唆: AIモデルのハイパーパラメータチューニングに課題を抱える開発者は、本決定モデルの概念を参考に、自動化されたチューニング戦略を検討すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 26 Nov 2026 05:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Quadro P2200(VRAM 5GB)でMoE LLMを2種類動かしてみた</title>
@@ -84,32 +105,11 @@
       <pubDate>Thu, 26 Nov 2026 03:59:02 +0000</pubDate>
     </item>
     <item>
-      <title>さくらインターネット、AIを月額固定料金で提供する「シンプルAI」発表、システムへの組み込み用途を想定</title>
-      <link>https://www.publickey1.jp/blog/26/aiai_1.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiai_1.html</guid>
-      <description>[Score: 80] さくらインターネットが、月額固定料金でAIを提供する新サービス「シンプルAI」を発表しました。 / このサービスは、システムやサービスへのAI組み込み用途を想定しており、長期安定したAIモデルの提供を重視しています。 / ISMAP登録申請や国産LLMの提供も視野に入れ、2026年12月10日に提供開始予定です。 [実務示唆: システムにAIを組み込む開発者は、月額固定料金で安定したAIモデルを利用できる「シンプルAI」の導入を検討し、コストと運用安定性を評価すべきです。] (Source: Publickey)</description>
-      <pubDate>Thu, 26 Nov 2026 15:45:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>何が、誰が、いつ：短い推論によるメンタルヘルス安全のための構造化された危害評価</title>
-      <link>https://arxiv.org/abs/2611.33263</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.33263</guid>
-      <description>[Score: 78] メンタルヘルスに関する安全性を評価するための、構造化された危害評価フレームワークが提案されています。 / 「何が、誰が、いつ」という観点から、短い推論を用いて危害を特定・評価します。 / AIが生成するコンテンツや対話システムにおける倫理的課題への対応に役立つ可能性があります。 [実務示唆: AIシステムがメンタルヘルスに影響を与える可能性のあるコンテンツを扱う場合、本フレームワークを参考に危害評価プロセスを導入し、倫理的リスクを軽減すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 26 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>LLMおよびVLM候補選択のための制約認識型テスト時スコアリング</title>
-      <link>https://arxiv.org/abs/2611.33161</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.33161</guid>
-      <description>[Score: 75] 大規模言語モデル（LLM）と視覚言語モデル（VLM）の候補選択において、制約を考慮したテスト時スコアリング手法を提案しています。 / これにより、モデルの出力品質と関連性を向上させることが期待されます。 / 特に、特定の要件や制約があるタスクでのモデル選択に有効です。 [実務示唆: LLM/VLMの選定や評価を行う際は、本手法を参考に制約条件を考慮したスコアリングを導入し、モデルの性能向上を図るべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Thu, 26 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>自動運転の予測軌跡の可視化動画を誰でも高速に作れるようにする</title>
-      <link>https://zenn.dev/turing_motors/articles/cbf9872ca90166</link>
-      <guid isPermaLink="false">https://zenn.dev/turing_motors/articles/cbf9872ca90166</guid>
-      <description>[Score: 75] チューリング社が、自動運転モデルの予測軌跡を走行映像に重ねた可視化動画の生成プロセスを高速化・自動化しました。 / AWS Step FunctionsとAWS Batchを活用し、手動だったスクリプト実行やGPU環境の依存を解消し、社内ビューアからリクエストするだけでSlackに動画が届く仕組みを構築。 / これにより、モデル開発の振り返りや広報活動における動画作成が、一部のエンジニアだけでなく誰でも簡単に行えるようになりました。 [実務示唆: MLOpsチームは、自動運転モデルの可視化プロセスをAWS Step FunctionsとBatchで自動化し、開発者や関係者が容易に利用できる環境を構築することを検討すべきです。] (Source: Zenn)</description>
-      <pubDate>Thu, 26 Nov 2026 08:00:08 +0000</pubDate>
+      <title>Skills over MCP、めっちゃよさそう</title>
+      <link>https://ashunar0.dev/posts/skills-over-mcp/</link>
+      <guid isPermaLink="false">https://ashunar0.dev/posts/skills-over-mcp/</guid>
+      <description>[Score: 80] Anthropicが発表したClaudeのアップデート「Skills over MCP」は、MCPサーバーがスキルを自動的に配布する機能です。 / これにより、Claudeが外部サービスと連携する際に、ツールの使い方マニュアル（スキル）が自動で提供・更新されるため、利用者の手間が大幅に削減されます。 / スキルは必要な時にのみ読み込まれるため、コンテキストの肥大化を防ぎ、より効率的なAIアシスタントの活用が可能になります。 [実務示唆: ClaudeのMCP連携を利用している場合、Skills over MCPの導入により、ツールの利用効率と保守性が向上するため、積極的に活用を検討すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Thu, 26 Nov 2026 22:15:24 +0000</pubDate>
     </item>
   </channel>
 </rss>

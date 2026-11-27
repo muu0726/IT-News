@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 22:34:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 05:45:57 +0000</lastBuildDate>
     <item>
       <title>さくらのクラウド、新ネットワーク基盤、新データベースサービスなど投入。東京リージョン第三ゾーン新設も発表</title>
       <link>https://www.publickey1.jp/blog/26/post_310.html</link>
@@ -35,6 +35,13 @@
       <pubDate>Thu, 26 Nov 2026 10:02:29 +0000</pubDate>
     </item>
     <item>
+      <title>週刊Cloudflare - 2026/11/22週</title>
+      <link>https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1115-1121</link>
+      <guid isPermaLink="false">https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1115-1121</guid>
+      <description>[Score: 80] Cloudflareの週次アップデート情報で、wrangler CLIの機能強化が中心。 / wrangler cert uploadコマンドでCA証明書やmTLS証明書のアップロードが可能になり、VPCサービス作成時に利用できる。 / wrangler d1 migrations applyに--forceフラグが追加され、CI/CDでのD1マイグレーションが容易になった。 / その他、依存関係の更新、miniflareの修正、.dev.vars/.envファイルのUTF-8チェック強化などが含まれる。 [実務示唆: Cloudflare Workers/Pagesを利用する開発者は、wrangler CLIの最新アップデートを確認し、特にD1マイグレーションの自動化やVPCサービス設定の強化を活用して開発・デプロイプロセスを効率化すべき。] [GitHub: cloudflare/workers-sdk] (Source: Zenn)</description>
+      <pubDate>Thu, 26 Nov 2026 05:00:05 +0000</pubDate>
+    </item>
+    <item>
       <title>AIがセルフホスティングを再び楽しくした</title>
       <link>https://janlukas.blog/posts/ai-self-hosting</link>
       <guid isPermaLink="false">https://janlukas.blog/posts/ai-self-hosting</guid>
@@ -54,6 +61,13 @@
       <guid isPermaLink="false">https://qiita.com/Yuzuki-ki/items/b23e578d820d411bcb92?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
       <description>[Score: 70] 本記事は、SSHコマンドをコピペで使っていた初心者が、SSHの基本的な仕組みと使い方を学び直すための解説です。 / SSHがネットワーク越しに安全にサーバーへログインする仕組みであること、通信が暗号化されることなどを説明しています。 / 接続に必要な情報（ユーザー名、ホスト、パスワード/鍵）や、シンプルな接続コマンド、初回接続時の確認メッセージについても触れています。 [実務示唆: SSHの基本を理解し、ユーザー名@ホスト形式のコマンドや-pオプションでのポート指定を習得し、安全なサーバー接続を実践する。] (Source: Qiita)</description>
       <pubDate>Wed, 25 Nov 2026 03:08:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>ClaudeのMCP経由でShopifyページを構築する</title>
+      <link>https://dev.to/merizindge20501/building-shopify-pages-via-mcp-from-claude-3bk6</link>
+      <guid isPermaLink="false">https://dev.to/merizindge20501/building-shopify-pages-via-mcp-from-claude-3bk6</guid>
+      <description>[Score: 70] この記事は、AIアシスタントClaudeとMCP（Model Context Protocol）サーバーを利用してShopifyのランディングページを効率的に作成するワークフローを紹介しています。 / ClaudeがCROVIOのMCPサーバーを介してShopifyページのドラフトを生成し、その後ビジュアルエディタでレビュー・修正する手順を説明しています。 / これにより、ブリーフからデザイン、テーマテンプレートへの引き渡しで発生しがちな停滞を解消し、迅速なページ作成が可能になります。 [実務示唆: Shopifyサイト構築において、AIアシスタントとMCP連携を活用することで、ページ作成の初期ドラフトを効率化し、開発サイクルを短縮できるため、導入を検討すべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 27 Nov 2026 05:36:32 +0000</pubDate>
     </item>
     <item>
       <title>YouTube Ad Punisher – 広告再生時にYouTubeページを自動リロード</title>
