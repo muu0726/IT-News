@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_security.xml</link>
     <description>セキュリティ・脆弱性・CI/CD保護に関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 05:45:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 22:19:10 +0000</lastBuildDate>
     <item>
       <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
       <link>https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</link>
@@ -14,25 +14,46 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>「RansomwareHelp」のCTOが電信詐欺で起訴される</title>
-      <link>https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/</link>
-      <guid isPermaLink="false">https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/</guid>
-      <description>[Score: 90] ランサムウェア被害者のデータ復旧を謳っていた「RansomwareHelp」のCTOが電信詐欺で起訴されました。 / 同社は高度な暗号ツールを使用すると偽り、実際には攻撃者に身代金を支払い、被害者には高額な手数料を請求していました。 / FBIの潜入捜査により、その詐欺行為が明らかになりました。 [実務示唆: ランサムウェア被害に遭った際、データ復旧サービスを利用する際は、その信頼性と実績を徹底的に調査し、透明性の高いサービス提供者を選ぶべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 26 Nov 2026 17:47:45 +0000</pubDate>
+      <title>「ロリポップ！レンタルサーバー」の平文パスワード情報などが漏えい。GMOペパボの内部システムに不正アクセス 顧客情報51万6564件が漏えいの可能性、対象者に個別メール連絡</title>
+      <link>https://internet.watch.impress.co.jp/docs/news/2160136.html</link>
+      <guid isPermaLink="false">https://internet.watch.impress.co.jp/docs/news/2160136.html</guid>
+      <description>[Score: 95] GMOペパボの内部システムへの不正アクセスにより、「ロリポップ！レンタルサーバー」など51万件超の顧客情報が漏えいした可能性があります。 / 一部顧客のパスワードが平文で保存されており、これも漏えいしたことが確認されています。 / 該当するパスワードは強制リセットされ、ユーザーには再設定と他サービスでのパスワード変更が呼びかけられています。 [実務示唆: 自社サービスでパスワードを平文で保存していないか、改めてセキュリティポリシーと実装を確認し、ハッシュ化やソルト処理を徹底すること。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 27 Nov 2026 12:29:54 +0000</pubDate>
     </item>
     <item>
-      <title>迷惑メール対策をしているのに、なぜ詐欺メールは届くのか</title>
-      <link>https://zenn.dev/akagumi/articles/catch-all-phishing-invisible-chars</link>
-      <guid isPermaLink="false">https://zenn.dev/akagumi/articles/catch-all-phishing-invisible-chars</guid>
-      <description>[Score: 90] キャッチオール設定のメールアドレスに届いた詐欺メールが、SPF/DKIM/DMARC認証をすり抜けてしまう事例が紹介されています。 / 攻撃者は正規の認証設定を持つドメインを使用し、表示名でAmazonなどを詐称することで、認証だけでは防ぎきれない手口を使っています。 / さらに、本文中に目に見えない文字を挿入することで、キーワードフィルターを回避する巧妙な手法が用いられていることが明らかになりました。 [実務示唆: メールフィルターのロジックを見直し、表示名と送信元ドメインの乖離チェックや、不可視文字を考慮した本文解析を導入し、多層的な対策を検討することを推奨します。] (Source: Zenn)</description>
-      <pubDate>Thu, 26 Nov 2026 14:08:33 +0000</pubDate>
+      <title>人気ショッピングサイトでWebRTCを利用したクレジットカードスキミングスクリプトが発見される</title>
+      <link>https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer</link>
+      <guid isPermaLink="false">https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer</guid>
+      <description>[Score: 88] ブラックフライデー前に、Lascana、Samsonite、American Touristerなどの人気オンラインストアでWebRTCを利用したカードスキミングスクリプトが仕掛けられました。 / このスクリプトは、ユーザーが支払い情報を入力する前にカード番号、有効期限、セキュリティコード、個人情報などを窃取し、第三者に送信していました。 / 報告後、影響を受けた全サイトでスクリプトは削除されましたが、広範な消費者向けウェブエコシステムはこれらの攻撃ベクトルへの対策を講じる必要があります。 [実務示唆: WebRTCを悪用したスキミング攻撃は巧妙化しており、ECサイト運営者は決済フローのセキュリティ監査を強化し、サードパーティスクリプトの厳格な管理と監視を徹底すべきです。] (Source: Hacker News)</description>
+      <pubDate>Fri, 27 Nov 2026 15:40:31 +0000</pubDate>
     </item>
     <item>
-      <title>Sandscale MCPサーバーをCodexに追加する: config.toml、OAuthログイン、承認モード</title>
-      <link>https://dev.to/sandscale/adding-the-sandscale-mcp-server-to-codex-configtoml-oauth-login-and-approval-modes-36b</link>
-      <guid isPermaLink="false">https://dev.to/sandscale/adding-the-sandscale-mcp-server-to-codex-configtoml-oauth-login-and-approval-modes-36b</guid>
-      <description>[Score: 65] CodexにSandscale MCPサーバーを追加する方法について解説しています。 / これにより、コマンドをローカルマシンではなくFirecrackerマイクロVM上で実行し、セキュリティと監査ログを強化できます。 / config.tomlでの設定、OAuthによるログイン、承認モードについて具体的に説明されています。 [実務示唆: Codexユーザーは、Sandscale MCPサーバーを導入することで、開発環境のセキュリティを向上させ、コマンド実行の監査ログを確保できるため、設定方法を確認し導入を検討すべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 26 Nov 2026 22:31:10 +0000</pubDate>
+      <title>Convexスキルがユーザーのアプリアイデアを無断でリモートサーバーに送信</title>
+      <link>https://github.com/convex/convex-backend-skill/issues/64</link>
+      <guid isPermaLink="false">https://github.com/convex/convex-backend-skill/issues/64</guid>
+      <description>[Score: 80] Convexの3つのスキルが、ユーザーに通知せずアプリのアイデアをリモートサーバーに送信しているという懸念が提起されました。 / これらのスキルは、ユーザーの安全ツールに検知されないようコマンドの形状を変更する指示を含んでおり、ユーザーのレビューを困難にしています。 / 提案として、アイデア送信前のユーザーへの通知とオプション化、スクリプトのプラグイン内での提供またはハッシュによる固定、分類器に関する指示の削除が挙げられています。 [実務示唆: AIエージェントやプラグインを利用する際は、その動作がユーザーの意図しないデータ送信やセキュリティリスクを伴わないか、提供元の信頼性とコードの透明性を厳しく確認すべきです。] [GitHub: convex/convex-backend-skill] (Source: Hacker News)</description>
+      <pubDate>Fri, 27 Nov 2026 18:02:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>Healthtech Identity Cutover Passwordless Login Optional OTP Social Sign In</title>
+      <link>https://dev.to/garrisonsterling2693/healthtech-identity-cutover-passwordless-login-optional-otp-social-sign-in-469n</link>
+      <guid isPermaLink="false">https://dev.to/garrisonsterling2693/healthtech-identity-cutover-passwordless-login-optional-otp-social-sign-in-469n</guid>
+      <description>[Score: 78] ヘルスケア技術製品におけるIDプロバイダー移行時の認証戦略について議論されています。 / パスワードレス認証はフィッシングリスクを低減するが、アカウントリカバリを考慮する必要があります。 / パスワードとオプションのOTP、ソーシャルサインインを組み合わせることで、より広範なリカバリ手段を提供できます。 [実務示唆: ヘルスケア分野などセキュリティが重要なシステムでは、パスキーを推奨しつつ、パスワードとOTPを組み合わせた多要素認証や、堅牢なアカウントリカバリプロセスを設計・テストすべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 27 Nov 2026 22:14:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>GMO熊谷氏「ハッカーを丸裸に」 サイバー攻撃の可視化サイト開設 - 日本経済新聞</title>
+      <link>https://www.nikkei.com/article/DGXZQOUC271FH0X21C26A1000000/</link>
+      <guid isPermaLink="false">https://www.nikkei.com/article/DGXZQOUC271FH0X21C26A1000000/</guid>
+      <description>[Score: 75] GMOインターネットグループの熊谷正寿会長兼社長は、サイバー攻撃を可視化するサイトを開設したと発表しました。 / このサイトでは、攻撃者の侵入後の行動やAIを使った攻撃数を確認できるとのことです。 / 熊谷氏は「ハッカーを丸裸にする」と述べ、独自の防御サービスを展開する考えも示しています。 [実務示唆: GMOが提供するサイバー攻撃可視化サイトを参考に、自社のセキュリティ対策の現状を評価し、潜在的な脅威に対する理解を深めるべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 27 Nov 2026 08:16:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>誤ったコンピュータ検証済み証明</title>
+      <link>https://cr.yp.to/proofs/falseccp.html</link>
+      <guid isPermaLink="false">https://cr.yp.to/proofs/falseccp.html</guid>
+      <description>[Score: 70] コンピュータによる証明検証プログラムには「健全性バグ」が存在し、誤った記述を見過ごす可能性があります。 / これらのバグは悪用可能であることが示されており、多くの重要な証明検証プログラムで報告されています。 / 信頼できるコンピューティングベースの複雑さを最小限に抑えることがセキュリティ向上への道とされています。 [実務示唆: 形式検証ツールを使用する際は、健全性バグの存在を認識し、ツールの選定や検証結果の解釈に慎重な姿勢が求められます。] (Source: Hacker News)</description>
+      <pubDate>Fri, 27 Nov 2026 15:26:09 +0000</pubDate>
     </item>
   </channel>
 </rss>

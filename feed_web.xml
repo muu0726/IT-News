@@ -5,13 +5,20 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 05:45:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 22:19:10 +0000</lastBuildDate>
     <item>
       <title>さくらのクラウド、新ネットワーク基盤、新データベースサービスなど投入。東京リージョン第三ゾーン新設も発表</title>
       <link>https://www.publickey1.jp/blog/26/post_310.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/post_310.html</guid>
       <description>[Score: 90] さくらインターネットは「SAKURA DEKIRU Conference 2026」で、さくらのクラウドの強化を発表しました。 / 東京リージョンに第三ゾーンを新設し、石狩・東京ともに3ゾーン体制となります。 / 物理機器を意識しない抽象化された「ネットワークスイート」や、証明書管理サービス、L7ロードバランサー、新データベーススイートなどが投入されます。 [実務示唆: さくらのクラウド利用者は、新設された東京リージョン第三ゾーンやネットワークスイートを活用し、より可用性の高いシステム構築やネットワーク管理の効率化を図りましょう。] (Source: Publickey)</description>
       <pubDate>Thu, 26 Nov 2026 15:47:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitHub ActionsからPATもGitHub App Private Keyも駆逐する</title>
+      <link>https://zenn.dev/tmknom/articles/github-app-token-exchange-system</link>
+      <guid isPermaLink="false">https://zenn.dev/tmknom/articles/github-app-token-exchange-system</guid>
+      <description>[Score: 90] GitHub ActionsでPATやGitHub App Private Keyの管理課題を解決するため、GATESというソフトウェアが開発されました。 / GATESはGitHub OIDCとAWS KMSを活用し、Private KeyをGitHub Actionsから参照せずにGitHub App Tokenを払い出します。 / これにより、長命なクレデンシャルの漏えいリスクを排除し、セキュリティを向上させることが可能です。 [実務示唆: GitHub Actionsのセキュリティ強化のため、GATESのようなキーレスなGitHub App Token払い出しシステムを導入し、PATやPrivate Keyの直接利用を避けるべきです。] [GitHub: tmknom/gates] (Source: Zenn)</description>
+      <pubDate>Fri, 27 Nov 2026 02:51:13 +0000</pubDate>
     </item>
     <item>
       <title>アプリケーションのモダナイゼーションにおける次の安全なステップを選択する方法</title>
@@ -21,32 +28,25 @@
       <pubDate>Wed, 25 Nov 2026 15:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>お金や信頼を燃やさないGitHub Actions CI/CDの構築方法</title>
-      <link>https://dev.to/mango7777/how-to-build-github-actions-cicd-that-doesnt-burn-money-or-trust-3j5l</link>
-      <guid isPermaLink="false">https://dev.to/mango7777/how-to-build-github-actions-cicd-that-doesnt-burn-money-or-trust-3j5l</guid>
-      <description>[Score: 85] GitHub Actionsでコスト効率が良く信頼性の高いCI/CDパイプラインを構築する方法について解説しています。 / 初期の非効率なパイプラインが多額の費用を発生させた経験から、キャッシュの活用、不要なジョブの削減、適切なランナーの選択など、15の具体的な改善点を提示しています。 / ビルド、テスト、セキュリティスキャン、Dockerイメージ構築、デプロイを含む実践的なパイプライン構築例が示されています。 [実務示唆: GitHub Actionsを利用する開発者は、キャッシュの最適化、適切なランナー選択、イベントトリガーの精査を行い、CI/CDコストを削減しつつ効率的なパイプラインを構築すべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 26 Nov 2026 22:30:00 +0000</pubDate>
+      <title>Leanで安全制約を書くと、ハザード候補がビルドエラーとして見つかる</title>
+      <link>https://zenn.dev/kokeshim0chi/articles/lean-safety-constraint-build-error</link>
+      <guid isPermaLink="false">https://zenn.dev/kokeshim0chi/articles/lean-safety-constraint-build-error</guid>
+      <description>[Score: 85] GoogleのSREで採用されているSTAMP/STPAの考え方を、定理証明支援系Leanで形式化する試みです。 / Leanで安全制約を定理として記述することで、部品は正常でも組み合わせで事故が起きるハザード候補をビルドエラーとして検出できます。 / これにより、実行順や入力の組み合わせを網羅的に試すことなく、潜在的な問題を早期に発見できるメリットがあります。 [実務示唆: 高信頼性システム開発において、定理証明支援系Leanを活用し、安全制約をコードとして記述することで、ハザード候補をビルド時に検出する手法を検討すべきです。] [GitHub: kokeshiM0chi/lean-experiments] (Source: Zenn)</description>
+      <pubDate>Fri, 27 Nov 2026 04:40:24 +0000</pubDate>
     </item>
     <item>
-      <title>デジタル庁デザインシステムをどう使うか：導入先に合わせた「ローカルデザインシステム」を作る</title>
-      <link>https://digital-agency-news.digital.go.jp/articles/2026-11-26</link>
-      <guid isPermaLink="false">https://digital-agency-news.digital.go.jp/articles/2026-11-26</guid>
-      <description>[Score: 80] デジタル庁は、行政分野や公共分野で利用することを想定した「デジタル庁デザインシステム」を提供しています。 / これはプラットフォーム型であり、導入先のブランドやコミュニケーション方針に合わせて「ローカルデザインシステム」を作成し適用することを推奨しています。 / デザイントークンを編集することで、カラーやタイポグラフィなどを導入先の方針に沿って定義し直すことが可能です。 [実務示唆: デジタル庁デザインシステムを導入する際は、そのまま利用せず、自組織のブランドに合わせてローカルデザインシステムを構築し、デザイントークンをカスタマイズすることを検討しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 26 Nov 2026 10:02:29 +0000</pubDate>
+      <title>Meta Descriptions Are Not a Reliable Lever for AI Visibility</title>
+      <link>https://dev.to/alifar/meta-descriptions-are-not-a-reliable-lever-for-ai-visibility-5hd1</link>
+      <guid isPermaLink="false">https://dev.to/alifar/meta-descriptions-are-not-a-reliable-lever-for-ai-visibility-5hd1</guid>
+      <description>[Score: 85] メタディスクリプションは、AI生成の回答や引用における可視性を向上させる信頼できる手段ではないことが示されました。 / SEOにおけるメタディスクリプションの役割は、人間がクリックしたくなるようなオーガニック検索結果のスニペットを形成することに限定されます。 / AIの可視性向上には、ページタイトルや有用なオンページ情報に最適化時間を費やすべきです。 [実務示唆: AI時代のSEO戦略では、メタディスクリプションの最適化に過度な労力を割かず、ページタイトルやコンテンツの質向上に注力し、AIが情報を正確に理解できる構造化データを検討すべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 27 Nov 2026 22:15:31 +0000</pubDate>
     </item>
     <item>
-      <title>週刊Cloudflare - 2026/11/22週</title>
-      <link>https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1115-1121</link>
-      <guid isPermaLink="false">https://zenn.dev/gemcook/articles/weekly-cloudflare_2026_1115-1121</guid>
-      <description>[Score: 80] Cloudflareの週次アップデート情報で、wrangler CLIの機能強化が中心。 / wrangler cert uploadコマンドでCA証明書やmTLS証明書のアップロードが可能になり、VPCサービス作成時に利用できる。 / wrangler d1 migrations applyに--forceフラグが追加され、CI/CDでのD1マイグレーションが容易になった。 / その他、依存関係の更新、miniflareの修正、.dev.vars/.envファイルのUTF-8チェック強化などが含まれる。 [実務示唆: Cloudflare Workers/Pagesを利用する開発者は、wrangler CLIの最新アップデートを確認し、特にD1マイグレーションの自動化やVPCサービス設定の強化を活用して開発・デプロイプロセスを効率化すべき。] [GitHub: cloudflare/workers-sdk] (Source: Zenn)</description>
-      <pubDate>Thu, 26 Nov 2026 05:00:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIがセルフホスティングを再び楽しくした</title>
-      <link>https://janlukas.blog/posts/ai-self-hosting</link>
-      <guid isPermaLink="false">https://janlukas.blog/posts/ai-self-hosting</guid>
-      <description>[Score: 78] 長年セルフホスティングを行ってきた筆者が、AIの活用によりその楽しさを再発見したという記事です。 / AIコーディングエージェントがDocker Composeファイルなどのインフラ設定作業を効率化し、新しいサービスの試行や設定調整の手間を大幅に削減しました。 / これにより、以前は面倒だった作業が容易になり、セルフホスティングへの意欲が再び高まっています。 [実務示唆: AIコーディングエージェントをインフラ管理に導入することで、セルフホスティングやDevOps作業の効率化と楽しさの向上を図るべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 26 Nov 2026 21:47:45 +0000</pubDate>
+      <title>止められないDBをAWS DMSで移行してハマったこと（RDS for Oracle）</title>
+      <link>https://zenn.dev/kiri0728/articles/c8d5f349b047dd</link>
+      <guid isPermaLink="false">https://zenn.dev/kiri0728/articles/c8d5f349b047dd</guid>
+      <description>[Score: 80] AWS DMSを使ってRDS for Oracleを移行する際に遭遇した2つの課題と解決策が共有されています。 / 1つ目は、CDC（変更データキャプチャ）が同期されない問題で、移行元RDS for Oracleのサプリメンタルロギングとアーカイブログ保持設定が原因でした。 / 2つ目は、DMSエンドポイント接続テストでのORA-12545エラーで、これはネットワーク設定やセキュリティグループの問題が考えられます。 [実務示唆: AWS DMSでRDS for Oracleを移行する際は、CDCのために移行元DBのサプリメンタルロギングとアーカイブログ保持設定を必ず確認し、ストレージ容量も考慮して事前に設定してください。] (Source: Zenn)</description>
+      <pubDate>Fri, 27 Nov 2026 02:37:34 +0000</pubDate>
     </item>
     <item>
       <title>さくらインターネット、AWSやAzureなど他クラウドでバックアップ可能な新ストレージ「Object Storage Suite」（OS2）発表</title>
@@ -63,25 +63,11 @@
       <pubDate>Wed, 25 Nov 2026 03:08:11 +0000</pubDate>
     </item>
     <item>
-      <title>ClaudeのMCP経由でShopifyページを構築する</title>
-      <link>https://dev.to/merizindge20501/building-shopify-pages-via-mcp-from-claude-3bk6</link>
-      <guid isPermaLink="false">https://dev.to/merizindge20501/building-shopify-pages-via-mcp-from-claude-3bk6</guid>
-      <description>[Score: 70] この記事は、AIアシスタントClaudeとMCP（Model Context Protocol）サーバーを利用してShopifyのランディングページを効率的に作成するワークフローを紹介しています。 / ClaudeがCROVIOのMCPサーバーを介してShopifyページのドラフトを生成し、その後ビジュアルエディタでレビュー・修正する手順を説明しています。 / これにより、ブリーフからデザイン、テーマテンプレートへの引き渡しで発生しがちな停滞を解消し、迅速なページ作成が可能になります。 [実務示唆: Shopifyサイト構築において、AIアシスタントとMCP連携を活用することで、ページ作成の初期ドラフトを効率化し、開発サイクルを短縮できるため、導入を検討すべきです。] (Source: Dev.to)</description>
-      <pubDate>Fri, 27 Nov 2026 05:36:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>YouTube Ad Punisher – 広告再生時にYouTubeページを自動リロード</title>
-      <link>https://github.com/antonpictures/youtube-punisher</link>
-      <guid isPermaLink="false">https://github.com/antonpictures/youtube-punisher</guid>
-      <description>[Score: 65] YouTubeの広告再生時にページを自動的にリロードし、広告を回避するChrome拡張機能です。 / 再生位置を保持したままリロードすることで、広告なしで動画を視聴できます。 / YouTubeの広告ブロック対策を回避しつつ、ユーザー体験を向上させることを目的としています。 [実務示唆: YouTubeの広告に悩まされているユーザーは、この拡張機能（または同様の原理のツール）を試すことで、広告なしの視聴体験を得られる可能性があります。] [GitHub: antonpictures/youtube-punisher] (Source: Hacker News)</description>
-      <pubDate>Thu, 26 Nov 2026 17:36:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>認証とスケール・トゥ・ゼロを備えたPython FastMCPリモートMCPサーバーをホストする場所</title>
-      <link>https://dev.to/hpoyrazk/where-to-host-a-python-fastmcp-remote-mcp-server-with-auth-and-scale-to-zero-35bf</link>
-      <guid isPermaLink="false">https://dev.to/hpoyrazk/where-to-host-a-python-fastmcp-remote-mcp-server-with-auth-and-scale-to-zero-35bf</guid>
-      <description>[Score: 60] Python FastMCPまたはStreamable HTTP MCPサーバーをGregaleにホストする方法について解説しています。 / Gregaleは、CPython 3.13互換性、ネイティブCパッケージ、ツール許可リスト、アイドル時のスケール・トゥ・ゼロ課金を提供します。 / Cloudflare Workersなどのエッジ環境の制約や、常時稼働コンテナのコスト問題を解決する選択肢として提示されています。 [実務示唆: PythonベースのMCPサーバーを運用する開発者は、Gregaleのようなサービスを検討し、CPython互換性、ネイティブパッケージサポート、コスト効率の良いスケール・トゥ・ゼロ機能を活用すべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 26 Nov 2026 22:30:00 +0000</pubDate>
+      <title>DevOps from Zero #1: Linuxとターミナル、シンプルに解説</title>
+      <link>https://dev.to/mkhizerkhan208/devops-from-zero-1-linux-and-the-terminal-explained-simply-5h98</link>
+      <guid isPermaLink="false">https://dev.to/mkhizerkhan208/devops-from-zero-1-linux-and-the-terminal-explained-simply-5h98</guid>
+      <description>[Score: 70] 本記事は、DevOpsの基礎を学ぶ初心者向けシリーズの第1回です。 / DevOpsの概念、開発と運用の統合、自動化の重要性を解説しています。 / 特に、Linuxの基本操作とターミナルの使い方に焦点を当て、実践的なコマンドを紹介しています。 [実務示唆: DevOpsの学習を始めるエンジニアは、Linuxのファイルシステム構造と基本的なターミナルコマンド（ls, cd, pwd, mkdir, touch）を習得し、サーバー環境での作業に慣れることを推奨します。] (Source: Dev.to)</description>
+      <pubDate>Fri, 27 Nov 2026 22:13:17 +0000</pubDate>
     </item>
   </channel>
 </rss>

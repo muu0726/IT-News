@@ -5,13 +5,13 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 05:45:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 22:19:10 +0000</lastBuildDate>
     <item>
       <title>さくらインターネット、AIを月額固定料金で提供する「シンプルAI」発表、システムへの組み込み用途を想定</title>
       <link>https://www.publickey1.jp/blog/26/aiai_1.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiai_1.html</guid>
       <description>[Score: 100] さくらインターネットが、月額固定料金でAIを提供する新サービス「シンプルAI」を発表しました。 / このサービスは、システムやサービスへのAI組み込み用途を想定しており、長期安定したAIモデルの提供を重視しています。 / ISMAP登録申請や国産LLMの提供も視野に入れ、2026年12月10日に提供開始予定です。 [実務示唆: システムにAIを組み込む開発者は、月額固定料金で安定したAIモデルを利用できる「シンプルAI」の導入を検討し、コストと運用安定性を評価すべきです。] (Source: Publickey)</description>
-      <pubDate>Thu, 26 Nov 2026 23:09:25 +0000</pubDate>
+      <pubDate>Thu, 26 Nov 2026 15:45:31 +0000</pubDate>
     </item>
     <item>
       <title>メンテナーはAIのバグレポートではなく、修正を求めている</title>
@@ -21,25 +21,18 @@
       <pubDate>Tue, 17 Nov 2026 18:29:29 +0000</pubDate>
     </item>
     <item>
-      <title>「RansomwareHelp」のCTOが電信詐欺で起訴される</title>
-      <link>https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/</link>
-      <guid isPermaLink="false">https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/</guid>
-      <description>[Score: 90] ランサムウェア被害者のデータ復旧を謳っていた「RansomwareHelp」のCTOが電信詐欺で起訴されました。 / 同社は高度な暗号ツールを使用すると偽り、実際には攻撃者に身代金を支払い、被害者には高額な手数料を請求していました。 / FBIの潜入捜査により、その詐欺行為が明らかになりました。 [実務示唆: ランサムウェア被害に遭った際、データ復旧サービスを利用する際は、その信頼性と実績を徹底的に調査し、透明性の高いサービス提供者を選ぶべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 26 Nov 2026 17:47:45 +0000</pubDate>
+      <title>GPT 6.2 Astraが歴史的謎を解明</title>
+      <link>https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical</link>
+      <guid isPermaLink="false">https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical</guid>
+      <description>[Score: 95] AIコミュニティでは、予測をはるかに超える速度で知能爆発が近づいているという認識が高まっています。 / LLMはわずか数週間で、数学分野の最も困難な問題数百を解決し、数十年の進歩を2ヶ月に圧縮しました。 / OpenAIの新しいモデルGPT-6.2 Astraが歴史分野でも重要な発見をした証拠が提示されています。 [実務示唆: 最新のLLMが数学だけでなく歴史のような非決定論的領域でも発見を始めているため、AIの応用範囲と能力の進化を注視し、自社の業務への導入可能性を再評価すべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 15:16:53 +0000</pubDate>
     </item>
     <item>
-      <title>迷惑メール対策をしているのに、なぜ詐欺メールは届くのか</title>
-      <link>https://zenn.dev/akagumi/articles/catch-all-phishing-invisible-chars</link>
-      <guid isPermaLink="false">https://zenn.dev/akagumi/articles/catch-all-phishing-invisible-chars</guid>
-      <description>[Score: 90] キャッチオール設定のメールアドレスに届いた詐欺メールが、SPF/DKIM/DMARC認証をすり抜けてしまう事例が紹介されています。 / 攻撃者は正規の認証設定を持つドメインを使用し、表示名でAmazonなどを詐称することで、認証だけでは防ぎきれない手口を使っています。 / さらに、本文中に目に見えない文字を挿入することで、キーワードフィルターを回避する巧妙な手法が用いられていることが明らかになりました。 [実務示唆: メールフィルターのロジックを見直し、表示名と送信元ドメインの乖離チェックや、不可視文字を考慮した本文解析を導入し、多層的な対策を検討することを推奨します。] (Source: Zenn)</description>
-      <pubDate>Thu, 26 Nov 2026 14:08:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>Jev で実現する Generative UI</title>
-      <link>https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07</link>
-      <guid isPermaLink="false">https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07</guid>
-      <description>[Score: 90] Generative UIとは、AIが文脈に応じてUIを生成する技術であり、ChatGPTやClaudeもUIを返すようになっています。 / プロダクトに組み込む際の課題として、生成されたUIを既存のデザインシステムに合わせる必要性が挙げられます。 / Jevのようなライブラリは、デザインシステムのコンポーネントを返すことを前提に作られており、LLMにルールを渡してUIを生成させることが可能です。 [実務示唆: Generative UIを導入する際は、既存のデザインシステムとの連携を考慮し、Jevなどのライブラリを活用してコンポーネント定義からプロンプトを生成するアプローチを検討しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 26 Nov 2026 12:42:06 +0000</pubDate>
+      <title>「ロリポップ！レンタルサーバー」の平文パスワード情報などが漏えい。GMOペパボの内部システムに不正アクセス 顧客情報51万6564件が漏えいの可能性、対象者に個別メール連絡</title>
+      <link>https://internet.watch.impress.co.jp/docs/news/2160136.html</link>
+      <guid isPermaLink="false">https://internet.watch.impress.co.jp/docs/news/2160136.html</guid>
+      <description>[Score: 95] GMOペパボの内部システムへの不正アクセスにより、「ロリポップ！レンタルサーバー」など51万件超の顧客情報が漏えいした可能性があります。 / 一部顧客のパスワードが平文で保存されており、これも漏えいしたことが確認されています。 / 該当するパスワードは強制リセットされ、ユーザーには再設定と他サービスでのパスワード変更が呼びかけられています。 [実務示唆: 自社サービスでパスワードを平文で保存していないか、改めてセキュリティポリシーと実装を確認し、ハッシュ化やソルト処理を徹底すること。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 27 Nov 2026 12:29:54 +0000</pubDate>
     </item>
     <item>
       <title>さくらのクラウド、新ネットワーク基盤、新データベースサービスなど投入。東京リージョン第三ゾーン新設も発表</title>
@@ -49,25 +42,32 @@
       <pubDate>Thu, 26 Nov 2026 15:47:22 +0000</pubDate>
     </item>
     <item>
-      <title>米、スペースXに衛星100万基の配備承認 宇宙にAIデータセンター構築へ</title>
-      <link>https://www.cnn.co.jp/usa/35255487.html</link>
-      <guid isPermaLink="false">https://www.cnn.co.jp/usa/35255487.html</guid>
-      <description>[Score: 90] 米連邦通信委員会（FCC）は、スペースXが宇宙空間に100万基の衛星を配備し、AIデータセンターを構築することを承認しました。 / この「スターマインド」と呼ばれる衛星コンステレーションは、AIの計算能力に対する需要を満たし、地球上の膨大なデータを処理する役割を担います。 / スペースXは、太陽エネルギーを活用することで、運用コストとエネルギー効率を大幅に向上させ、地上データセンターの環境負荷を軽減できると説明しています。 [実務示唆: 宇宙空間でのAIデータセンター構築は、将来的なデータ処理インフラの選択肢として注目し、関連技術の動向を継続的に追跡することが推奨されます。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 27 Nov 2026 01:03:08 +0000</pubDate>
+      <title>GitHub ActionsからPATもGitHub App Private Keyも駆逐する</title>
+      <link>https://zenn.dev/tmknom/articles/github-app-token-exchange-system</link>
+      <guid isPermaLink="false">https://zenn.dev/tmknom/articles/github-app-token-exchange-system</guid>
+      <description>[Score: 90] GitHub ActionsでPATやGitHub App Private Keyの管理課題を解決するため、GATESというソフトウェアが開発されました。 / GATESはGitHub OIDCとAWS KMSを活用し、Private KeyをGitHub Actionsから参照せずにGitHub App Tokenを払い出します。 / これにより、長命なクレデンシャルの漏えいリスクを排除し、セキュリティを向上させることが可能です。 [実務示唆: GitHub Actionsのセキュリティ強化のため、GATESのようなキーレスなGitHub App Token払い出しシステムを導入し、PATやPrivate Keyの直接利用を避けるべきです。] [GitHub: tmknom/gates] (Source: Zenn)</description>
+      <pubDate>Fri, 27 Nov 2026 02:51:13 +0000</pubDate>
     </item>
     <item>
-      <title>Rvoip 0.5 Rustで書かれた完全なVoIPスタック</title>
-      <link>https://github.com/eisenzopf/rvoip</link>
-      <guid isPermaLink="false">https://github.com/eisenzopf/rvoip</guid>
-      <description>[Score: 88] Rustで書かれたVoIP通信アプリケーション構築のためのライブラリ「Rvoip 0.5」がリリースされました。 / SIP、RTP、WebRTC、QUIC/WebTransport/WebSocketなど、VoIPに必要な全てのスタックを内包し、外部サーバーなしで動作します。 / 高いパフォーマンスと相互運用性を持ち、キャリアグレードの通信アプリケーション開発を可能にします。 [実務示唆: RustでVoIPアプリケーションを開発するエンジニアは、Rvoip 0.5を評価し、その統合されたスタックとパフォーマンスを活用して開発効率と信頼性を向上させるべきです。] [GitHub: eisenzopf/rvoip] (Source: Hacker News)</description>
-      <pubDate>Thu, 26 Nov 2026 19:18:09 +0000</pubDate>
+      <title>CLIPとPythonでセマンティック画像検索エンジンを構築する方法</title>
+      <link>https://dev.to/techwithpraisejames/how-to-build-a-semantic-image-search-engine-with-clip-and-python-4d06</link>
+      <guid isPermaLink="false">https://dev.to/techwithpraisejames/how-to-build-a-semantic-image-search-engine-with-clip-and-python-4d06</guid>
+      <description>[Score: 90] 本記事では、CLIPとPythonを使用してセマンティック画像検索エンジンを構築するチュートリアルを提供します。 / ファイル名ではなく、画像の内容に基づいて検索できるシステムを構築し、テキストクエリと画像クエリの両方に対応します。 / PyTorchを用いて画像埋め込みを生成し、コサイン類似度で検索、Matplotlibで結果を表示する手順を解説しています。 [実務示唆: 画像検索の精度向上を目指す開発者は、CLIPとPythonを活用してセマンティック画像検索エンジンを構築し、ファイル名に依存しない直感的な画像検索機能をアプリケーションに組み込むことを検討してください。] (Source: Dev.to)</description>
+      <pubDate>Fri, 27 Nov 2026 22:10:35 +0000</pubDate>
     </item>
     <item>
-      <title>AIコーディングで再び出会うTDD・BDD・仕様駆動開発</title>
-      <link>https://qiita.com/figueiredoluiz/items/be77af87766215ef1055?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/be77af87766215ef1055?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] AIコーディングエージェントの活用により、TDD、BDD、仕様駆動開発といった既存の開発手法が再評価されている現象「Great Rollback」について論じています。 / AnthropicがClaudeにテストを書かせるTDD手順を推奨していることや、OpenSpec、Spec Kit、Kiroといったツールが仕様中心の開発フローを取り入れていることを紹介。 / AI時代においても、開発の意図を残し、変更を調整し、品質を確保するエンジニアリングの仕事の重要性を強調しています。 [実務示唆: AIコーディングを活用する際も、TDDやBDD、仕様駆動開発といった既存の品質保証手法を再認識し、AIと連携させて開発プロセスに組み込む。] (Source: Qiita)</description>
-      <pubDate>Thu, 26 Nov 2026 06:47:52 +0000</pubDate>
+      <title>人気ショッピングサイトでWebRTCを利用したクレジットカードスキミングスクリプトが発見される</title>
+      <link>https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer</link>
+      <guid isPermaLink="false">https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer</guid>
+      <description>[Score: 88] ブラックフライデー前に、Lascana、Samsonite、American Touristerなどの人気オンラインストアでWebRTCを利用したカードスキミングスクリプトが仕掛けられました。 / このスクリプトは、ユーザーが支払い情報を入力する前にカード番号、有効期限、セキュリティコード、個人情報などを窃取し、第三者に送信していました。 / 報告後、影響を受けた全サイトでスクリプトは削除されましたが、広範な消費者向けウェブエコシステムはこれらの攻撃ベクトルへの対策を講じる必要があります。 [実務示唆: WebRTCを悪用したスキミング攻撃は巧妙化しており、ECサイト運営者は決済フローのセキュリティ監査を強化し、サードパーティスクリプトの厳格な管理と監視を徹底すべきです。] (Source: Hacker News)</description>
+      <pubDate>Fri, 27 Nov 2026 15:40:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>さくらインターネットが大規模イベント開催。田中社長「日本から世界へ挑戦するためのデジタル基盤を支える」</title>
+      <link>https://www.publickey1.jp/blog/26/post_311.html</link>
+      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/post_311.html</guid>
+      <description>[Score: 85] さくらインターネットが「SAKURA DEKIRU Conference 2026」を開催し、田中社長が日本のデジタル基盤強化への意欲を表明しました。 / 過去の「デジタル敗戦」を乗り越え、AI時代には「つくる力」「使いこなす力」「選べる力」の3つの力が重要だと指摘しています。 / 同社はガバメントクラウド採択やGPUインフラ投資を通じて、日本から世界へ挑戦するデジタル基盤を支えることを使命としています。 [実務示唆: さくらインターネットのクラウドサービスやGPUインフラは、AI開発や大規模なデジタル基盤構築において国産の選択肢として有力であり、今後の動向に注目し活用を検討しましょう。] (Source: Publickey)</description>
+      <pubDate>Thu, 26 Nov 2026 15:50:16 +0000</pubDate>
     </item>
     <item>
       <title>MCPに新機能「Skills over MCP」登場。ツールとの接続だけでなく使い方のスキルもMCP経由で提供</title>
@@ -84,67 +84,67 @@
       <pubDate>Wed, 25 Nov 2026 15:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>llama.cppのAMD特化フォーク</title>
-      <link>https://devnull.land/amd-specific-llama-cpp</link>
-      <guid isPermaLink="false">https://devnull.land/amd-specific-llama-cpp</guid>
-      <description>[Score: 85] AMDグラフィックカード向けに最適化されたllama.cppのフォーク「llama-cpp-rdna-boosts」が紹介されています。 / これにより、トークン生成速度が35から55トークン/秒、プリフィル速度が700から1300トークン/秒に向上したと報告されています。 / LLM推論エンジンの開発が加速し、ハードウェア特化型のアプローチが注目されています。 [実務示唆: AMD GPUユーザーはllama-cpp-rdna-boostsを試すことで、LLMの推論パフォーマンスが大幅に向上する可能性があるため、導入を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 26 Nov 2026 17:11:29 +0000</pubDate>
+      <title>Michael Nielsenがニューラルネットに関する著書を削除</title>
+      <link>https://twitter.com/michael_nielsen/status/2126359767362748777</link>
+      <guid isPermaLink="false">https://twitter.com/michael_nielsen/status/2126359767362748777</guid>
+      <description>[Score: 85] Michael Nielsen氏が、自身のニューラルネットワークに関する古い著書「neuralnetworksanddeeplearning.com」を削除したことをX（旧Twitter）で発表しました。 / 削除の理由として、ASI（人工超知能）後の技術進歩が生物学的ヒトにとって壊滅的である可能性に言及しています。 / 彼は、フロンティアAIに取り組むことの正当性やリスクの性質についてもコメントしています。 [実務示唆: AI研究の第一人者が過去の著作を削除する背景には、AIの急速な進化とそれに伴う倫理的・社会的なリスクへの深い懸念があるため、AI開発者は技術的進歩だけでなく、その社会的影響についても常に考慮し、議論に参加すべきです。] (Source: Hacker News)</description>
+      <pubDate>Fri, 27 Nov 2026 19:31:01 +0000</pubDate>
     </item>
     <item>
-      <title>OpenAIはコスト削減モードに入っている可能性がある</title>
-      <link>https://micjm.com/blog/openai-is-in-cost-control-mode/</link>
-      <guid isPermaLink="false">https://micjm.com/blog/openai-is-in-cost-control-mode/</guid>
-      <description>[Score: 85] OpenAIの最新モデルAstra 6.2とSol 6.2が、コスト削減のためにチューニングされている可能性が指摘されています。 / データ分析によると、これらのモデルは以前のバージョンと比較して、タスクあたりの出力トークン数と推論トークン数が減少しています。 / この変更により、モデルの推論能力が低下し、一部のタスクで性能が劣る「underthinking outliers」になっていると結論付けられています。 [実務示唆: OpenAIの最新モデルを利用する際は、コスト削減による性能低下の可能性を考慮し、既存のアプリケーションへの影響を検証することを推奨します。] (Source: Hacker News)</description>
-      <pubDate>Thu, 26 Nov 2026 07:33:12 +0000</pubDate>
+      <title>Leanで安全制約を書くと、ハザード候補がビルドエラーとして見つかる</title>
+      <link>https://zenn.dev/kokeshim0chi/articles/lean-safety-constraint-build-error</link>
+      <guid isPermaLink="false">https://zenn.dev/kokeshim0chi/articles/lean-safety-constraint-build-error</guid>
+      <description>[Score: 85] GoogleのSREで採用されているSTAMP/STPAの考え方を、定理証明支援系Leanで形式化する試みです。 / Leanで安全制約を定理として記述することで、部品は正常でも組み合わせで事故が起きるハザード候補をビルドエラーとして検出できます。 / これにより、実行順や入力の組み合わせを網羅的に試すことなく、潜在的な問題を早期に発見できるメリットがあります。 [実務示唆: 高信頼性システム開発において、定理証明支援系Leanを活用し、安全制約をコードとして記述することで、ハザード候補をビルド時に検出する手法を検討すべきです。] [GitHub: kokeshiM0chi/lean-experiments] (Source: Zenn)</description>
+      <pubDate>Fri, 27 Nov 2026 04:40:24 +0000</pubDate>
     </item>
     <item>
-      <title>型チェックが重かったので、クエリの型推論を手放してみた</title>
-      <link>https://zenn.dev/dress_code/articles/88b55221eea4e0</link>
-      <guid isPermaLink="false">https://zenn.dev/dress_code/articles/88b55221eea4e0</guid>
-      <description>[Score: 85] TypeScriptの型チェックが重く、特にPrismaとKyselyを併用したクエリの型推論が原因でメモリ不足が発生していました。 / 筆者はAI（Claude Code）を活用し、特定のクエリの型推論を抑制することで、型チェックの負荷を大幅に軽減しました。 / InstantiationsとMemory usedを指標に改善効果を測定し、開発環境のパフォーマンス向上に成功した事例です。 [実務示唆: TypeScriptの型チェックが重い場合、--diagnosticsオプションでInstantiationsとMemory usedを測定し、特定のクエリの型推論抑制を検討する。] (Source: Zenn)</description>
-      <pubDate>Thu, 26 Nov 2026 02:15:05 +0000</pubDate>
+      <title>日本語のFull-duplex音声対話モデルを実際に動かしてみた話</title>
+      <link>https://zenn.dev/knowledgework/articles/12a80d8cd4b21f</link>
+      <guid isPermaLink="false">https://zenn.dev/knowledgework/articles/12a80d8cd4b21f</guid>
+      <description>[Score: 85] 音声対話において「いつ話すか」が重要であり、人間らしい柔軟な対話を実現するFull-duplex（全二重）音声対話技術が注目されています。 / arXivの論文調査から研究の活発化が伺え、特にKyutaiのMoshiのような統合型S2Sモデルが代表的です。 / 本記事では、Moshiの日本語適応モデル「J-Moshi-ext」を実際に動かし、その挙動を検証した結果が紹介されています。 [実務示唆: Full-duplex音声対話モデルは、より自然なAI対話システム構築に不可欠なため、最新の日本語対応モデルの挙動を検証し、自社サービスへの応用可能性を検討すべきです。] [GitHub: kyutai/moshi] (Source: Zenn)</description>
+      <pubDate>Fri, 27 Nov 2026 02:27:39 +0000</pubDate>
     </item>
     <item>
-      <title>さくらインターネットが大規模イベント開催。田中社長「日本から世界へ挑戦するためのデジタル基盤を支える」</title>
-      <link>https://www.publickey1.jp/blog/26/post_311.html</link>
-      <guid isPermaLink="false">https://www.publickey1.jp/blog/26/post_311.html</guid>
-      <description>[Score: 85] さくらインターネットが「SAKURA DEKIRU Conference 2026」を開催し、田中社長が日本のデジタル基盤強化への意欲を表明しました。 / 過去の「デジタル敗戦」を乗り越え、AI時代には「つくる力」「使いこなす力」「選べる力」の3つの力が重要だと指摘しています。 / 同社はガバメントクラウド採択やGPUインフラ投資を通じて、日本から世界へ挑戦するデジタル基盤を支えることを使命としています。 [実務示唆: さくらインターネットのクラウドサービスやGPUインフラは、AI開発や大規模なデジタル基盤構築において国産の選択肢として有力であり、今後の動向に注目し活用を検討しましょう。] (Source: Publickey)</description>
-      <pubDate>Thu, 26 Nov 2026 15:50:16 +0000</pubDate>
+      <title>Meta Descriptions Are Not a Reliable Lever for AI Visibility</title>
+      <link>https://dev.to/alifar/meta-descriptions-are-not-a-reliable-lever-for-ai-visibility-5hd1</link>
+      <guid isPermaLink="false">https://dev.to/alifar/meta-descriptions-are-not-a-reliable-lever-for-ai-visibility-5hd1</guid>
+      <description>[Score: 85] メタディスクリプションは、AI生成の回答や引用における可視性を向上させる信頼できる手段ではないことが示されました。 / SEOにおけるメタディスクリプションの役割は、人間がクリックしたくなるようなオーガニック検索結果のスニペットを形成することに限定されます。 / AIの可視性向上には、ページタイトルや有用なオンページ情報に最適化時間を費やすべきです。 [実務示唆: AI時代のSEO戦略では、メタディスクリプションの最適化に過度な労力を割かず、ページタイトルやコンテンツの質向上に注力し、AIが情報を正確に理解できる構造化データを検討すべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 27 Nov 2026 22:15:31 +0000</pubDate>
     </item>
     <item>
-      <title>お金や信頼を燃やさないGitHub Actions CI/CDの構築方法</title>
-      <link>https://dev.to/mango7777/how-to-build-github-actions-cicd-that-doesnt-burn-money-or-trust-3j5l</link>
-      <guid isPermaLink="false">https://dev.to/mango7777/how-to-build-github-actions-cicd-that-doesnt-burn-money-or-trust-3j5l</guid>
-      <description>[Score: 85] GitHub Actionsでコスト効率が良く信頼性の高いCI/CDパイプラインを構築する方法について解説しています。 / 初期の非効率なパイプラインが多額の費用を発生させた経験から、キャッシュの活用、不要なジョブの削減、適切なランナーの選択など、15の具体的な改善点を提示しています。 / ビルド、テスト、セキュリティスキャン、Dockerイメージ構築、デプロイを含む実践的なパイプライン構築例が示されています。 [実務示唆: GitHub Actionsを利用する開発者は、キャッシュの最適化、適切なランナー選択、イベントトリガーの精査を行い、CI/CDコストを削減しつつ効率的なパイプラインを構築すべきです。] (Source: Dev.to)</description>
-      <pubDate>Thu, 26 Nov 2026 22:30:00 +0000</pubDate>
+      <title>AIデイリーダイジェスト · 2026年11月28日: Claudeの透かしがキャンセルを招く、OS-Omniがコンピューターエージェントを評価、ヒューマノイドがシーメンスラインに供給</title>
+      <link>https://dev.to/hiroki-ii-ai/ai-daily-digest-november-28-2026-claude-watermarks-draw-cancellations-os-omni-scores-computer-36bk</link>
+      <guid isPermaLink="false">https://dev.to/hiroki-ii-ai/ai-daily-digest-november-28-2026-claude-watermarks-draw-cancellations-os-omni-scores-computer-36bk</guid>
+      <description>[Score: 85] AnthropicのClaudeがEU AI Actに準拠したテキスト透かし技術を公開しましたが、編集によって透かしが消える可能性が指摘されています。 / OS-Omniは6つのOSでエージェントを評価するベンチマークであり、Pydanticチームはターミナルコーディングエージェントを開発しました。 / NVIDIAはピクセルをコードと見なす画像モデルを発表し、AIメガネ企業が1億ドルを調達するなど、AI分野の多様な進展が報告されています。 [実務示唆: AI生成テキストの信頼性確保のため、AnthropicのClaudeに導入されたテキスト透かし技術の限界を理解し、コンテンツの真正性検証には複数の手段を組み合わせるべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 27 Nov 2026 22:11:09 +0000</pubDate>
     </item>
     <item>
-      <title>OpenAI Agents API: ハーネスとは何か、そしてその周りにエージェントを構築する方法</title>
-      <link>https://dev.to/julian_cardozo_dev/openai-agents-api-que-es-el-harness-y-como-se-arma-un-agente-alrededor-de-el-3kmj</link>
-      <guid isPermaLink="false">https://dev.to/julian_cardozo_dev/openai-agents-api-que-es-el-harness-y-como-se-arma-un-agente-alrededor-de-el-3kmj</guid>
-      <description>[Score: 85] OpenAI Agents APIは、AIエージェントの実行サイクル（ハーネス）をサービスとして提供します。 / これにより、開発者はエージェントのコアロジックに集中でき、サイクル管理のプログラミングが不要になります。 / セッションとターンを単位として、モデル、指示、環境を設定し、イベントストリームを購読して結果を受け取ります。 [実務示唆: OpenAI Agents APIのベータ版を試用し、AIエージェント開発におけるハーネスの自動化がワークフローにどう影響するか検証することを推奨します。] (Source: Dev.to)</description>
-      <pubDate>Thu, 26 Nov 2026 22:29:50 +0000</pubDate>
+      <title>AI時代の遊びの芸術</title>
+      <link>https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/</link>
+      <guid isPermaLink="false">https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/</guid>
+      <description>[Score: 80] AI時代における「遊び」の重要性、特にGitHub Universeのハッカブルなカンファレンスバッジを例に挙げています。 / 子供の頃の遊びが問題解決能力やエンジニアリングスキルを育むように、AI時代も試行錯誤の機会が増えていると指摘。 / GitHubのOctoverseレポートでは、プルリクエストの40%がAIエージェントによって開始されていることが示され、AIとの協調開発の進展が語られています。 [実務示唆: AIが開発プロセスに深く関与する現代において、遊び心を持って新しい技術やツールを試行錯誤し、創造的な問題解決能力を養うことが、エンジニアとしての成長に不可欠であることを認識しましょう。] [GitHub: github/universe-badge] (Source: GitHub Blog)</description>
+      <pubDate>Wed, 25 Nov 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>作業を止めずに進めるClaude Codeの/btw・/fork・/rewindなどの使い分け</title>
-      <link>https://zenn.dev/nextbeat/articles/b0ccca979da06b</link>
-      <guid isPermaLink="false">https://zenn.dev/nextbeat/articles/b0ccca979da06b</guid>
-      <description>[Score: 85] Claude Codeにおける/btw、/branch、/fork、/rewindコマンドの使い分けを解説。 / /btwはメイン作業を中断せずに軽い質問をする際に便利で、文脈を汚さない。 / /branchは現在の会話を複製して別の方針を試す際に、/forkは複数の案を並行して検証する際に有効。 / /rewindは会話やコードを前の状態に戻すことで、誤った方向への進行を防ぐ。 [実務示唆: Claude Codeを利用するエンジニアは、これらのコマンドを適切に使い分けることで、開発効率を大幅に向上させ、試行錯誤のプロセスをスムーズに進めることができる。] (Source: Zenn)</description>
-      <pubDate>Thu, 26 Nov 2026 07:01:54 +0000</pubDate>
+      <title>オープンソースにおける最高のものは共に築かれる</title>
+      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
+      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
+      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>初期段階のスタートアップマーケティング: 技術系創業者が最初にすべきこと</title>
-      <link>https://dev.to/mayur_rathore_b735983a686/early-stage-startup-marketing-what-a-technical-founder-should-do-first-9bb</link>
-      <guid isPermaLink="false">https://dev.to/mayur_rathore_b735983a686/early-stage-startup-marketing-what-a-technical-founder-should-do-first-9bb</guid>
-      <description>[Score: 85] 技術系創業者は製品開発に集中しがちですが、初期段階のマーケティングは市場のニーズを見つけ、製品を届けることが重要です。 / 最初のユーザーを見つけ、簡潔なピッチで製品を説明し、効果的なチャネルをテストすることが成功の鍵となります。 / ブランドキャンペーンや広告予算ではなく、デバッグのように仮説検証を繰り返すアプローチが推奨されます。 [実務示唆: 技術系創業者は、製品開発と並行して、初期ユーザーの獲得と市場ニーズの検証に注力し、デバッグのようにマーケティングを反復試行すべきです。] (Source: Dev.to)</description>
-      <pubDate>Fri, 27 Nov 2026 05:36:12 +0000</pubDate>
+      <title>AI構成チューニングのための汎用決定モデル</title>
+      <link>https://arxiv.org/abs/2611.33190</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33190</guid>
+      <description>[Score: 80] AIの構成チューニングを効率化するための汎用的な決定モデルが提案されています。 / このモデルは、様々なAIシステムにおいて最適な設定を見つけるプロセスを自動化することを目的としています。 / 手動でのチューニングにかかる時間と労力を大幅に削減できる可能性があります。 [実務示唆: AIモデルのハイパーパラメータチューニングに課題を抱える開発者は、本決定モデルの概念を参考に、自動化されたチューニング戦略を検討すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Fri, 27 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>【Claude Code】鹿野さんが実践するエンジニアの日常業務を爆速にする最新推しツール 大公開</title>
-      <link>https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</link>
-      <guid isPermaLink="false">https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</guid>
-      <description>[Score: 82] 本記事は、エンジニアの日常業務を効率化する最新ツールとして「Claude Code」の活用事例を紹介するプレゼンテーション資料です。 / 資料では、Claude Codeがいかにエンジニアの作業を高速化し、生産性を向上させるかに焦点を当てています。 / 具体的なツールの使い方や、実務への応用例が示唆されており、AIを活用した開発ワークフローの最適化に関心のあるエンジニア向けの内容です。 [実務示唆: Claude CodeのようなAIツールを日常業務に積極的に取り入れ、コード生成、デバッグ、ドキュメント作成などのタスクを自動化・効率化する。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 26 Nov 2026 12:31:47 +0000</pubDate>
+      <title>Convexスキルがユーザーのアプリアイデアを無断でリモートサーバーに送信</title>
+      <link>https://github.com/convex/convex-backend-skill/issues/64</link>
+      <guid isPermaLink="false">https://github.com/convex/convex-backend-skill/issues/64</guid>
+      <description>[Score: 80] Convexの3つのスキルが、ユーザーに通知せずアプリのアイデアをリモートサーバーに送信しているという懸念が提起されました。 / これらのスキルは、ユーザーの安全ツールに検知されないようコマンドの形状を変更する指示を含んでおり、ユーザーのレビューを困難にしています。 / 提案として、アイデア送信前のユーザーへの通知とオプション化、スクリプトのプラグイン内での提供またはハッシュによる固定、分類器に関する指示の削除が挙げられています。 [実務示唆: AIエージェントやプラグインを利用する際は、その動作がユーザーの意図しないデータ送信やセキュリティリスクを伴わないか、提供元の信頼性とコードの透明性を厳しく確認すべきです。] [GitHub: convex/convex-backend-skill] (Source: Hacker News)</description>
+      <pubDate>Fri, 27 Nov 2026 18:02:45 +0000</pubDate>
     </item>
   </channel>
 </rss>

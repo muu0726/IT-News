@@ -5,34 +5,27 @@
     <link>https://muu0726.github.io/IT-News/feed_ai.xml</link>
     <description>AI・機械学習・LLMに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 05:45:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 22:19:10 +0000</lastBuildDate>
     <item>
       <title>さくらインターネット、AIを月額固定料金で提供する「シンプルAI」発表、システムへの組み込み用途を想定</title>
       <link>https://www.publickey1.jp/blog/26/aiai_1.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/aiai_1.html</guid>
       <description>[Score: 100] さくらインターネットが、月額固定料金でAIを提供する新サービス「シンプルAI」を発表しました。 / このサービスは、システムやサービスへのAI組み込み用途を想定しており、長期安定したAIモデルの提供を重視しています。 / ISMAP登録申請や国産LLMの提供も視野に入れ、2026年12月10日に提供開始予定です。 [実務示唆: システムにAIを組み込む開発者は、月額固定料金で安定したAIモデルを利用できる「シンプルAI」の導入を検討し、コストと運用安定性を評価すべきです。] (Source: Publickey)</description>
-      <pubDate>Thu, 26 Nov 2026 23:09:25 +0000</pubDate>
+      <pubDate>Thu, 26 Nov 2026 15:45:31 +0000</pubDate>
     </item>
     <item>
-      <title>Jev で実現する Generative UI</title>
-      <link>https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07</link>
-      <guid isPermaLink="false">https://speakerdeck.com/azukiazusa1/slide-efc59f7e-336f-4e6c-8919-27211ebc3d07</guid>
-      <description>[Score: 90] Generative UIとは、AIが文脈に応じてUIを生成する技術であり、ChatGPTやClaudeもUIを返すようになっています。 / プロダクトに組み込む際の課題として、生成されたUIを既存のデザインシステムに合わせる必要性が挙げられます。 / Jevのようなライブラリは、デザインシステムのコンポーネントを返すことを前提に作られており、LLMにルールを渡してUIを生成させることが可能です。 [実務示唆: Generative UIを導入する際は、既存のデザインシステムとの連携を考慮し、Jevなどのライブラリを活用してコンポーネント定義からプロンプトを生成するアプローチを検討しましょう。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 26 Nov 2026 12:42:06 +0000</pubDate>
+      <title>GPT 6.2 Astraが歴史的謎を解明</title>
+      <link>https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical</link>
+      <guid isPermaLink="false">https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical</guid>
+      <description>[Score: 95] AIコミュニティでは、予測をはるかに超える速度で知能爆発が近づいているという認識が高まっています。 / LLMはわずか数週間で、数学分野の最も困難な問題数百を解決し、数十年の進歩を2ヶ月に圧縮しました。 / OpenAIの新しいモデルGPT-6.2 Astraが歴史分野でも重要な発見をした証拠が提示されています。 [実務示唆: 最新のLLMが数学だけでなく歴史のような非決定論的領域でも発見を始めているため、AIの応用範囲と能力の進化を注視し、自社の業務への導入可能性を再評価すべきです。] (Source: Hacker News)</description>
+      <pubDate>Wed, 25 Nov 2026 15:16:53 +0000</pubDate>
     </item>
     <item>
-      <title>米、スペースXに衛星100万基の配備承認 宇宙にAIデータセンター構築へ</title>
-      <link>https://www.cnn.co.jp/usa/35255487.html</link>
-      <guid isPermaLink="false">https://www.cnn.co.jp/usa/35255487.html</guid>
-      <description>[Score: 90] 米連邦通信委員会（FCC）は、スペースXが宇宙空間に100万基の衛星を配備し、AIデータセンターを構築することを承認しました。 / この「スターマインド」と呼ばれる衛星コンステレーションは、AIの計算能力に対する需要を満たし、地球上の膨大なデータを処理する役割を担います。 / スペースXは、太陽エネルギーを活用することで、運用コストとエネルギー効率を大幅に向上させ、地上データセンターの環境負荷を軽減できると説明しています。 [実務示唆: 宇宙空間でのAIデータセンター構築は、将来的なデータ処理インフラの選択肢として注目し、関連技術の動向を継続的に追跡することが推奨されます。] (Source: はてなブックマーク)</description>
-      <pubDate>Fri, 27 Nov 2026 01:03:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>AIコーディングで再び出会うTDD・BDD・仕様駆動開発</title>
-      <link>https://qiita.com/figueiredoluiz/items/be77af87766215ef1055?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</link>
-      <guid isPermaLink="false">https://qiita.com/figueiredoluiz/items/be77af87766215ef1055?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items</guid>
-      <description>[Score: 88] AIコーディングエージェントの活用により、TDD、BDD、仕様駆動開発といった既存の開発手法が再評価されている現象「Great Rollback」について論じています。 / AnthropicがClaudeにテストを書かせるTDD手順を推奨していることや、OpenSpec、Spec Kit、Kiroといったツールが仕様中心の開発フローを取り入れていることを紹介。 / AI時代においても、開発の意図を残し、変更を調整し、品質を確保するエンジニアリングの仕事の重要性を強調しています。 [実務示唆: AIコーディングを活用する際も、TDDやBDD、仕様駆動開発といった既存の品質保証手法を再認識し、AIと連携させて開発プロセスに組み込む。] (Source: Qiita)</description>
-      <pubDate>Thu, 26 Nov 2026 06:47:52 +0000</pubDate>
+      <title>CLIPとPythonでセマンティック画像検索エンジンを構築する方法</title>
+      <link>https://dev.to/techwithpraisejames/how-to-build-a-semantic-image-search-engine-with-clip-and-python-4d06</link>
+      <guid isPermaLink="false">https://dev.to/techwithpraisejames/how-to-build-a-semantic-image-search-engine-with-clip-and-python-4d06</guid>
+      <description>[Score: 90] 本記事では、CLIPとPythonを使用してセマンティック画像検索エンジンを構築するチュートリアルを提供します。 / ファイル名ではなく、画像の内容に基づいて検索できるシステムを構築し、テキストクエリと画像クエリの両方に対応します。 / PyTorchを用いて画像埋め込みを生成し、コサイン類似度で検索、Matplotlibで結果を表示する手順を解説しています。 [実務示唆: 画像検索の精度向上を目指す開発者は、CLIPとPythonを活用してセマンティック画像検索エンジンを構築し、ファイル名に依存しない直感的な画像検索機能をアプリケーションに組み込むことを検討してください。] (Source: Dev.to)</description>
+      <pubDate>Fri, 27 Nov 2026 22:10:35 +0000</pubDate>
     </item>
     <item>
       <title>MCPに新機能「Skills over MCP」登場。ツールとの接続だけでなく使い方のスキルもMCP経由で提供</title>
@@ -42,39 +35,25 @@
       <pubDate>Wed, 25 Nov 2026 15:29:05 +0000</pubDate>
     </item>
     <item>
-      <title>llama.cppのAMD特化フォーク</title>
-      <link>https://devnull.land/amd-specific-llama-cpp</link>
-      <guid isPermaLink="false">https://devnull.land/amd-specific-llama-cpp</guid>
-      <description>[Score: 85] AMDグラフィックカード向けに最適化されたllama.cppのフォーク「llama-cpp-rdna-boosts」が紹介されています。 / これにより、トークン生成速度が35から55トークン/秒、プリフィル速度が700から1300トークン/秒に向上したと報告されています。 / LLM推論エンジンの開発が加速し、ハードウェア特化型のアプローチが注目されています。 [実務示唆: AMD GPUユーザーはllama-cpp-rdna-boostsを試すことで、LLMの推論パフォーマンスが大幅に向上する可能性があるため、導入を検討すべきです。] (Source: Hacker News)</description>
-      <pubDate>Thu, 26 Nov 2026 17:11:29 +0000</pubDate>
+      <title>Michael Nielsenがニューラルネットに関する著書を削除</title>
+      <link>https://twitter.com/michael_nielsen/status/2126359767362748777</link>
+      <guid isPermaLink="false">https://twitter.com/michael_nielsen/status/2126359767362748777</guid>
+      <description>[Score: 85] Michael Nielsen氏が、自身のニューラルネットワークに関する古い著書「neuralnetworksanddeeplearning.com」を削除したことをX（旧Twitter）で発表しました。 / 削除の理由として、ASI（人工超知能）後の技術進歩が生物学的ヒトにとって壊滅的である可能性に言及しています。 / 彼は、フロンティアAIに取り組むことの正当性やリスクの性質についてもコメントしています。 [実務示唆: AI研究の第一人者が過去の著作を削除する背景には、AIの急速な進化とそれに伴う倫理的・社会的なリスクへの深い懸念があるため、AI開発者は技術的進歩だけでなく、その社会的影響についても常に考慮し、議論に参加すべきです。] (Source: Hacker News)</description>
+      <pubDate>Fri, 27 Nov 2026 19:31:01 +0000</pubDate>
     </item>
     <item>
-      <title>OpenAIはコスト削減モードに入っている可能性がある</title>
-      <link>https://micjm.com/blog/openai-is-in-cost-control-mode/</link>
-      <guid isPermaLink="false">https://micjm.com/blog/openai-is-in-cost-control-mode/</guid>
-      <description>[Score: 85] OpenAIの最新モデルAstra 6.2とSol 6.2が、コスト削減のためにチューニングされている可能性が指摘されています。 / データ分析によると、これらのモデルは以前のバージョンと比較して、タスクあたりの出力トークン数と推論トークン数が減少しています。 / この変更により、モデルの推論能力が低下し、一部のタスクで性能が劣る「underthinking outliers」になっていると結論付けられています。 [実務示唆: OpenAIの最新モデルを利用する際は、コスト削減による性能低下の可能性を考慮し、既存のアプリケーションへの影響を検証することを推奨します。] (Source: Hacker News)</description>
-      <pubDate>Thu, 26 Nov 2026 07:33:12 +0000</pubDate>
+      <title>日本語のFull-duplex音声対話モデルを実際に動かしてみた話</title>
+      <link>https://zenn.dev/knowledgework/articles/12a80d8cd4b21f</link>
+      <guid isPermaLink="false">https://zenn.dev/knowledgework/articles/12a80d8cd4b21f</guid>
+      <description>[Score: 85] 音声対話において「いつ話すか」が重要であり、人間らしい柔軟な対話を実現するFull-duplex（全二重）音声対話技術が注目されています。 / arXivの論文調査から研究の活発化が伺え、特にKyutaiのMoshiのような統合型S2Sモデルが代表的です。 / 本記事では、Moshiの日本語適応モデル「J-Moshi-ext」を実際に動かし、その挙動を検証した結果が紹介されています。 [実務示唆: Full-duplex音声対話モデルは、より自然なAI対話システム構築に不可欠なため、最新の日本語対応モデルの挙動を検証し、自社サービスへの応用可能性を検討すべきです。] [GitHub: kyutai/moshi] (Source: Zenn)</description>
+      <pubDate>Fri, 27 Nov 2026 02:27:39 +0000</pubDate>
     </item>
     <item>
-      <title>OpenAI Agents API: ハーネスとは何か、そしてその周りにエージェントを構築する方法</title>
-      <link>https://dev.to/julian_cardozo_dev/openai-agents-api-que-es-el-harness-y-como-se-arma-un-agente-alrededor-de-el-3kmj</link>
-      <guid isPermaLink="false">https://dev.to/julian_cardozo_dev/openai-agents-api-que-es-el-harness-y-como-se-arma-un-agente-alrededor-de-el-3kmj</guid>
-      <description>[Score: 85] OpenAI Agents APIは、AIエージェントの実行サイクル（ハーネス）をサービスとして提供します。 / これにより、開発者はエージェントのコアロジックに集中でき、サイクル管理のプログラミングが不要になります。 / セッションとターンを単位として、モデル、指示、環境を設定し、イベントストリームを購読して結果を受け取ります。 [実務示唆: OpenAI Agents APIのベータ版を試用し、AIエージェント開発におけるハーネスの自動化がワークフローにどう影響するか検証することを推奨します。] (Source: Dev.to)</description>
-      <pubDate>Thu, 26 Nov 2026 22:29:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>作業を止めずに進めるClaude Codeの/btw・/fork・/rewindなどの使い分け</title>
-      <link>https://zenn.dev/nextbeat/articles/b0ccca979da06b</link>
-      <guid isPermaLink="false">https://zenn.dev/nextbeat/articles/b0ccca979da06b</guid>
-      <description>[Score: 85] Claude Codeにおける/btw、/branch、/fork、/rewindコマンドの使い分けを解説。 / /btwはメイン作業を中断せずに軽い質問をする際に便利で、文脈を汚さない。 / /branchは現在の会話を複製して別の方針を試す際に、/forkは複数の案を並行して検証する際に有効。 / /rewindは会話やコードを前の状態に戻すことで、誤った方向への進行を防ぐ。 [実務示唆: Claude Codeを利用するエンジニアは、これらのコマンドを適切に使い分けることで、開発効率を大幅に向上させ、試行錯誤のプロセスをスムーズに進めることができる。] (Source: Zenn)</description>
-      <pubDate>Thu, 26 Nov 2026 07:01:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>【Claude Code】鹿野さんが実践するエンジニアの日常業務を爆速にする最新推しツール 大公開</title>
-      <link>https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</link>
-      <guid isPermaLink="false">https://speakerdeck.com/tonkotsuboy_com/index-1f2ed0d2-597d-459d-abf2-db8db109c5d6</guid>
-      <description>[Score: 82] 本記事は、エンジニアの日常業務を効率化する最新ツールとして「Claude Code」の活用事例を紹介するプレゼンテーション資料です。 / 資料では、Claude Codeがいかにエンジニアの作業を高速化し、生産性を向上させるかに焦点を当てています。 / 具体的なツールの使い方や、実務への応用例が示唆されており、AIを活用した開発ワークフローの最適化に関心のあるエンジニア向けの内容です。 [実務示唆: Claude CodeのようなAIツールを日常業務に積極的に取り入れ、コード生成、デバッグ、ドキュメント作成などのタスクを自動化・効率化する。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 26 Nov 2026 12:31:47 +0000</pubDate>
+      <title>AIデイリーダイジェスト · 2026年11月28日: Claudeの透かしがキャンセルを招く、OS-Omniがコンピューターエージェントを評価、ヒューマノイドがシーメンスラインに供給</title>
+      <link>https://dev.to/hiroki-ii-ai/ai-daily-digest-november-28-2026-claude-watermarks-draw-cancellations-os-omni-scores-computer-36bk</link>
+      <guid isPermaLink="false">https://dev.to/hiroki-ii-ai/ai-daily-digest-november-28-2026-claude-watermarks-draw-cancellations-os-omni-scores-computer-36bk</guid>
+      <description>[Score: 85] AnthropicのClaudeがEU AI Actに準拠したテキスト透かし技術を公開しましたが、編集によって透かしが消える可能性が指摘されています。 / OS-Omniは6つのOSでエージェントを評価するベンチマークであり、Pydanticチームはターミナルコーディングエージェントを開発しました。 / NVIDIAはピクセルをコードと見なす画像モデルを発表し、AIメガネ企業が1億ドルを調達するなど、AI分野の多様な進展が報告されています。 [実務示唆: AI生成テキストの信頼性確保のため、AnthropicのClaudeに導入されたテキスト透かし技術の限界を理解し、コンテンツの真正性検証には複数の手段を組み合わせるべきです。] (Source: Dev.to)</description>
+      <pubDate>Fri, 27 Nov 2026 22:11:09 +0000</pubDate>
     </item>
     <item>
       <title>AI時代の遊びの芸術</title>
@@ -91,25 +70,46 @@
       <pubDate>Fri, 27 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Quadro P2200(VRAM 5GB)でMoE LLMを2種類動かしてみた</title>
-      <link>https://zenn.dev/nooop/articles/00cde2e1a825ad</link>
-      <guid isPermaLink="false">https://zenn.dev/nooop/articles/00cde2e1a825ad</guid>
-      <description>[Score: 80] llama.cppがMoEモデルに対応し、エキスパートの一部をCPU RAMに配置することで、VRAM 5GBのQuadro P2200でも35B級のMoE LLMが動作することが検証されました。 / Qwen3.6-35B-A3BとGemma-4-26B-A4Bの2種類のモデルを動かし、実用的な速度で推論が可能であることを示しています。 / ただし、200kコンテキスト長ではVRAMがほぼ限界となり、KVキャッシュの調整が必要になるなどの課題も指摘されています。 [実務示唆: 低VRAM環境で大規模MoE LLMの実行を検討しているエンジニアは、llama.cppとCPU RAMを活用したMoEモデルの実行を試す価値があります。] [GitHub: g667300/llm-p2200] (Source: Zenn)</description>
-      <pubDate>Thu, 26 Nov 2026 11:41:19 +0000</pubDate>
+      <title>【資料公開】コードを書くAI、アーキテクチャーを決める組織</title>
+      <link>https://www.ryuzee.com/contents/blog/14629</link>
+      <guid isPermaLink="false">https://www.ryuzee.com/contents/blog/14629</guid>
+      <description>[Score: 80] AIがコード生成を加速する現代において、アーキテクチャ設計と組織構造の重要性が増しています。 / AIはコードレベルのアーキテクチャに直接影響を与え、チームの境界設定がシステムレベルのアーキテクチャに大きく作用します。 / プロダクトの進化が加速するため、チームや組織構造を迅速に変更できる柔軟な体制を構築することが求められます。 [実務示唆: AI活用を前提とした開発組織では、チームの境界を明確にし、必要に応じて迅速に組織構造を変更できるような技術基盤とプロセスを整備すべきです。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 27 Nov 2026 11:42:28 +0000</pubDate>
     </item>
     <item>
-      <title>TenkaCloudSimulator 開発日記：ChatGPTのDotで開発が自律的に続く仕組みをつくる</title>
-      <link>https://zenn.dev/bull/articles/tenkacloud-simulator-devlog-20261126</link>
-      <guid isPermaLink="false">https://zenn.dev/bull/articles/tenkacloud-simulator-devlog-20261126</guid>
-      <description>[Score: 80] TenkaCloudSimulatorの開発において、ChatGPTのDotとサブエージェントを活用し、Issueから実装、レビュー、マージまでを自律的に回す仕組みを構築しています。 / AWS公式エミュレーターでは不足する、EC2ゲスト内でコマンド実行や障害対応を採点できる環境を目指し、QEMUによる実行経路を独自に用意。 / 将来的にはブラウザ内LinuxとWebAssemblyで動くシミュレーターを組み合わせ、参加者の端末で完結するクラウド操作練習環境の提供を計画しています。 [実務示唆: AIエージェントを活用した開発プロセスの自動化を検討するチームは、Issue駆動開発におけるAIの役割分担や、公式エミュレーターと自作シミュレーターの連携方法を参考にすべきです。] (Source: Zenn)</description>
-      <pubDate>Thu, 26 Nov 2026 03:59:02 +0000</pubDate>
+      <title>何が、誰が、いつ：短い推論によるメンタルヘルス安全のための構造化された危害評価</title>
+      <link>https://arxiv.org/abs/2611.33263</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33263</guid>
+      <description>[Score: 78] メンタルヘルスに関する安全性を評価するための、構造化された危害評価フレームワークが提案されています。 / 「何が、誰が、いつ」という観点から、短い推論を用いて危害を特定・評価します。 / AIが生成するコンテンツや対話システムにおける倫理的課題への対応に役立つ可能性があります。 [実務示唆: AIシステムがメンタルヘルスに影響を与える可能性のあるコンテンツを扱う場合、本フレームワークを参考に危害評価プロセスを導入し、倫理的リスクを軽減すべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Fri, 27 Nov 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Skills over MCP、めっちゃよさそう</title>
-      <link>https://ashunar0.dev/posts/skills-over-mcp/</link>
-      <guid isPermaLink="false">https://ashunar0.dev/posts/skills-over-mcp/</guid>
-      <description>[Score: 80] Anthropicが発表したClaudeのアップデート「Skills over MCP」は、MCPサーバーがスキルを自動的に配布する機能です。 / これにより、Claudeが外部サービスと連携する際に、ツールの使い方マニュアル（スキル）が自動で提供・更新されるため、利用者の手間が大幅に削減されます。 / スキルは必要な時にのみ読み込まれるため、コンテキストの肥大化を防ぎ、より効率的なAIアシスタントの活用が可能になります。 [実務示唆: ClaudeのMCP連携を利用している場合、Skills over MCPの導入により、ツールの利用効率と保守性が向上するため、積極的に活用を検討すべきです。] (Source: はてなブックマーク)</description>
-      <pubDate>Thu, 26 Nov 2026 22:15:24 +0000</pubDate>
+      <title>禁止しても止まらないClaudeの「欲」を飼いならしてみる</title>
+      <link>https://zenn.dev/rescuenow/articles/9d1e89a941f4f1</link>
+      <guid isPermaLink="false">https://zenn.dev/rescuenow/articles/9d1e89a941f4f1</guid>
+      <description>[Score: 78] Claudeがプロンプトで禁止しても頼まれていない挙動を追加する「欲」について、肯定的な指示で制御する実験が行われました。 / 「頼まれていないことはやるな」という禁止よりも、「思いついたことはSUGGESTIONS.mdやIssueに書け」という肯定的な指示の方が、本体コードへの不要な追加を減らす効果があることが示唆されました。 / ただし、完全に不要な挙動をなくすことは難しく、AIの特性を理解したプロンプトエンジニアリングの重要性が浮き彫りになりました。 [実務示唆: 大規模言語モデルにコード生成を依頼する際は、禁止表現だけでなく、肯定的な指示で「欲」の捌け口を用意するプロンプト設計を試み、生成物の品質向上を図るべきです。] (Source: Zenn)</description>
+      <pubDate>Fri, 27 Nov 2026 02:47:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>LLMおよびVLM候補選択のための制約認識型テスト時スコアリング</title>
+      <link>https://arxiv.org/abs/2611.33161</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33161</guid>
+      <description>[Score: 75] 大規模言語モデル（LLM）と視覚言語モデル（VLM）の候補選択において、制約を考慮したテスト時スコアリング手法を提案しています。 / これにより、モデルの出力品質と関連性を向上させることが期待されます。 / 特に、特定の要件や制約があるタスクでのモデル選択に有効です。 [実務示唆: LLM/VLMの選定や評価を行う際は、本手法を参考に制約条件を考慮したスコアリングを導入し、モデルの性能向上を図るべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Fri, 27 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AutoformBench: 高度な数学のための軽量な形式化ベンチマーク</title>
+      <link>https://arxiv.org/abs/2611.33165</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33165</guid>
+      <description>[Score: 70] 高度な数学の形式化を目的とした、軽量なベンチマーク「AutoformBench」が提案されています。 / このベンチマークは、自動形式化システムの評価と開発を促進することを意図しています。 / 数学的推論や証明の自動化における進展に貢献する可能性があります。 [実務示唆: 数学的推論や形式化を扱うAI開発者は、AutoformBenchを活用してシステムの性能を評価し、改善点を見つけるべきです。] (Source: arXiv cs.AI)</description>
+      <pubDate>Fri, 27 Nov 2026 05:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>コンテキストスケーリング：AIスケーリングの新たなフロンティア</title>
+      <link>https://arxiv.org/abs/2611.33160</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33160</guid>
+      <description>[Score: 50] arXivLabsに関する一般的な説明であり、コラボレーターが新しいarXiv機能の開発と共有を可能にするフレームワークであることを述べています。 / arXivの価値観（オープン性、コミュニティ、卓越性、ユーザーデータプライバシー）と、それに従うパートナーシップについて触れています。 / 「コンテキストスケーリング」というタイトルとは裏腹に、具体的な技術内容の抜粋は含まれていません。 [実務示唆: 記事本文の抜粋からは具体的な技術的示唆は得られませんが、arXivLabsのようなオープンなプラットフォームを活用し、研究成果やツールの共有を通じてコミュニティに貢献することを検討しましょう。] (Source: arXiv cs.AI)</description>
+      <pubDate>Fri, 27 Nov 2026 05:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
