@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-28T07:18:03.021160+09:00",
-  "total_count": 43,
-  "success_count": 43,
+  "generated_at": "2026-11-28T14:45:24.680356+09:00",
+  "total_count": 57,
+  "success_count": 57,
   "error_count": 0,
   "gemini_model": "gemini-2.5-flash",
   "articles": [
@@ -26,7 +26,7 @@
       "new_at": "2026-11-27T07:33:14.855920+09:00",
       "first_seen": "2026-11-27T07:33:14.855920+09:00",
       "is_hot": true,
-      "hatena_count": 134,
+      "hatena_count": 138,
       "is_prev_seen": true
     },
     {
@@ -57,8 +57,8 @@
       "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
       "source": "Hacker News",
       "published": "2026-11-25T15:16:53+00:00",
-      "hn_score": 137,
-      "hn_comments": 123,
+      "hn_score": 385,
+      "hn_comments": 248,
       "reading_min": 17,
       "summary": "AIコミュニティでは、予測をはるかに超える速度で知能爆発が近づいているという認識が高まっています。\nLLMはわずか数週間で、数学分野の最も困難な問題数百を解決し、数十年の進歩を2ヶ月に圧縮しました。\nOpenAIの新しいモデルGPT-6.2 Astraが歴史分野でも重要な発見をした証拠が提示されています。",
       "actionable_takeaway": "最新のLLMが数学だけでなく歴史のような非決定論的領域でも発見を始めているため、AIの応用範囲と能力の進化を注視し、自社の業務への導入可能性を再評価すべきです。",
@@ -96,7 +96,29 @@
       "new_at": "2026-11-28T07:18:03.021160+09:00",
       "first_seen": "2026-11-28T07:18:03.021160+09:00",
       "is_hot": false,
-      "hatena_count": 52
+      "hatena_count": 93
+    },
+    {
+      "title": "なぜAIは超難問を解けるのに、あなたの現場では“綺麗なゴミ”を量産するのか？ - サッとぶ",
+      "url": "https://kei-1010.hatenablog.com/entry/2026/11/27/133416",
+      "source": "はてなブックマーク",
+      "published": "2026-11-27T06:22:00+00:00",
+      "reading_min": 27,
+      "summary": "AIがリーマン予想や歴史の謎を解く一方で、実際の開発現場では「綺麗なゴミ」を量産し、人間を疲弊させている現状を指摘しています。\nAIの能力が発揮される「閉じた領域・圧縮可能領域」と、そうでない「開いた領域・圧縮不可領域」のタスクの違いを分析しています。\nAIを効果的に活用するためには、タスクの性質を理解し、適切な領域で利用することが重要であると提言しています。",
+      "actionable_takeaway": "AIを導入する際は、タスクが「閉じた領域・圧縮可能領域」に属するかを評価し、AIの得意な領域で活用することで「綺麗なゴミ」の生成を防ぐ。",
+      "tags": [
+        "AI活用",
+        "生産性",
+        "プロジェクトマネジメント"
+      ],
+      "category": "AI・機械学習",
+      "score": 95,
+      "score_reason": "AIの現場での課題と効果的な活用法について深く考察されており、多くのエンジニアやマネージャーにとって実務に直結する示唆に富むため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 353
     },
     {
       "title": "さくらのクラウド、新ネットワーク基盤、新データベースサービスなど投入。東京リージョン第三ゾーン新設も発表",
@@ -118,7 +140,7 @@
       "new_at": "2026-11-27T07:33:14.855920+09:00",
       "first_seen": "2026-11-27T07:33:14.855920+09:00",
       "is_hot": false,
-      "hatena_count": 9,
+      "hatena_count": 11,
       "topic_group": 1,
       "topic_size": 2,
       "is_prev_seen": true
@@ -145,7 +167,7 @@
       "new_at": "2026-11-28T07:18:03.021160+09:00",
       "first_seen": "2026-11-28T07:18:03.021160+09:00",
       "is_hot": false,
-      "hatena_count": 26
+      "hatena_count": 37
     },
     {
       "title": "CLIPとPythonでセマンティック画像検索エンジンを構築する方法",
@@ -170,12 +192,58 @@
       "hatena_count": 0
     },
     {
+      "title": "GoogleのDeepCrossAttention、同等のモデル品質を最大3倍高速に達成",
+      "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+      "source": "Hacker News",
+      "published": "2026-11-27T23:06:29+00:00",
+      "hn_score": 267,
+      "hn_comments": 94,
+      "reading_min": 6,
+      "summary": "Google ResearchがDeepCrossAttention (DCA)という新しいTransformerアーキテクチャを発表しました。\nDCAは、学習可能な重みとDepth-wise Cross-Attentionを用いて、以前の層の出力を動的に結合します。\nこれにより、従来の残差接続で生じる情報希釈を防ぎ、同等のモデル品質を最大3倍高速に達成します。",
+      "actionable_takeaway": "Transformerモデルのトレーニング効率向上に関心がある場合、DeepCrossAttentionの論文を調査し、既存モデルへの適用可能性を評価する。",
+      "tags": [
+        "Transformer",
+        "Deep Learning",
+        "Attention Mechanism"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "Transformerの性能を維持しつつ学習速度を大幅に向上させる技術は、大規模AIモデル開発において非常に重要であり、実用性が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 1
+    },
+    {
+      "title": "AWSのAI-DLC v2に学ぶ AIにドメイン境界を守らせる設計",
+      "url": "https://speakerdeck.com/j5ik2o/archcon2026",
+      "source": "はてなブックマーク",
+      "published": "2026-11-27T10:26:22+00:00",
+      "reading_min": 27,
+      "summary": "AIが生成するコードのバグがモグラ叩きになる問題は、「正しさの基準」であるドメインモデルの欠如が原因です。\nAWSのAI-DLC v2を解剖し、AIにドメイン境界を守らせる設計手法について解説しています。\n自作プラグインを通じて、設計の形、入口の境界、層の依存の向きがどう変わるかを実例で整理し、人間が判断を残す領域まで議論しています。",
+      "actionable_takeaway": "AIによるコード生成を活用する際は、ドメインモデルを明確にし、AIにドメイン境界や不変条件を守らせるための設計と機械検査の仕組みを導入しましょう。",
+      "tags": [
+        "AI",
+        "ドメイン駆動設計",
+        "ソフトウェアアーキテクチャ"
+      ],
+      "category": "AI・機械学習",
+      "score": 90,
+      "score_reason": "AIによる開発における品質保証と設計原則の適用という、非常に重要かつ先進的なテーマを扱っており、実務への影響が大きいと判断したため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 39
+    },
+    {
       "title": "人気ショッピングサイトでWebRTCを利用したクレジットカードスキミングスクリプトが発見される",
       "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
       "source": "Hacker News",
       "published": "2026-11-27T15:40:31+00:00",
-      "hn_score": 337,
-      "hn_comments": 183,
+      "hn_score": 483,
+      "hn_comments": 249,
       "reading_min": 5,
       "summary": "ブラックフライデー前に、Lascana、Samsonite、American Touristerなどの人気オンラインストアでWebRTCを利用したカードスキミングスクリプトが仕掛けられました。\nこのスクリプトは、ユーザーが支払い情報を入力する前にカード番号、有効期限、セキュリティコード、個人情報などを窃取し、第三者に送信していました。\n報告後、影響を受けた全サイトでスクリプトは削除されましたが、広範な消費者向けウェブエコシステムはこれらの攻撃ベクトルへの対策を講じる必要があります。",
       "actionable_takeaway": "WebRTCを悪用したスキミング攻撃は巧妙化しており、ECサイト運営者は決済フローのセキュリティ監査を強化し、サードパーティスクリプトの厳格な管理と監視を徹底すべきです。",
@@ -192,6 +260,28 @@
       "first_seen": "2026-11-28T07:18:03.021160+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "「もう管理職はいらない」震源はシリコンバレー、AIで消える肩書と階層 - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOGN246EE0U6A121C2000000/",
+      "source": "はてなブックマーク",
+      "published": "2026-11-27T21:48:54+00:00",
+      "reading_min": 1,
+      "summary": "AIの進化により、シリコンバレーでは「管理職は不要になる」という議論が活発化しています。\nAIが経験の少ない若者だけでなく、経営陣と現場をつなぐ管理職の役割も担う可能性が指摘されています。\nこの変化は日本企業にも波及する可能性があり、組織構造やキャリアパスの再考を促すものです。",
+      "actionable_takeaway": "AIによる業務自動化が進む中で、管理職は従来の指示・監督業務から、AI活用戦略の策定やチームの創造性向上といった高付加価値業務へのシフトを検討する。",
+      "tags": [
+        "AI",
+        "組織論",
+        "働き方改革"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 88,
+      "score_reason": "AIが組織構造や雇用に与える影響は非常に大きく、ビジネス戦略やキャリアパスに直接関わるため、IT業界全体にとって重要度が高い。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 141
     },
     {
       "title": "さくらインターネットが大規模イベント開催。田中社長「日本から世界へ挑戦するためのデジタル基盤を支える」",
@@ -213,7 +303,7 @@
       "new_at": "2026-11-27T07:33:14.855920+09:00",
       "first_seen": "2026-11-27T07:33:14.855920+09:00",
       "is_hot": false,
-      "hatena_count": 1,
+      "hatena_count": 2,
       "topic_group": 1,
       "topic_size": 2,
       "is_prev_seen": true
@@ -238,7 +328,7 @@
       "new_at": "2026-11-26T07:42:45.266041+09:00",
       "first_seen": "2026-11-26T07:42:45.266041+09:00",
       "is_hot": false,
-      "hatena_count": 169,
+      "hatena_count": 170,
       "is_prev_seen": true,
       "topic_group": 2,
       "topic_size": 2
@@ -312,7 +402,7 @@
       "new_at": "2026-11-28T07:18:03.021160+09:00",
       "first_seen": "2026-11-28T07:18:03.021160+09:00",
       "is_hot": false,
-      "hatena_count": 1
+      "hatena_count": 2
     },
     {
       "title": "日本語のFull-duplex音声対話モデルを実際に動かしてみた話",
@@ -378,6 +468,74 @@
       "analysis_status": "ok",
       "new_at": "2026-11-28T07:18:03.021160+09:00",
       "first_seen": "2026-11-28T07:18:03.021160+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "Unkernel: WebAssemblyにコンパイルされたリアルなLinuxカーネル",
+      "url": "https://unkernel.dev",
+      "source": "Hacker News",
+      "published": "2026-11-28T03:19:20+00:00",
+      "hn_score": 89,
+      "hn_comments": 7,
+      "summary": "Unkernelは、実際のLinuxカーネルをWebAssemblyにコンパイルしたプロジェクトです。\nこれにより、わずか1秒未満でシェルを起動できる高速な起動を実現しています。\nWebAssembly上でLinuxカーネルが動作することで、新しい実行環境の可能性が広がります。",
+      "actionable_takeaway": "WebAssembly環境でのOSやシステムソフトウェアの実行可能性を探り、軽量な仮想化やエッジコンピューティングへの応用を検討する。",
+      "github_repo": "unkernel-community/unkernel",
+      "tags": [
+        "WebAssembly",
+        "Linux",
+        "Kernel"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "LinuxカーネルをWebAssemblyで動かすという技術的新規性が高く、将来的な軽量仮想化やエッジコンピューティングへの応用可能性が非常に大きい。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 3
+    },
+    {
+      "title": "「日本語で」と書いても AI が英語に戻るので、Stop フックで止めた",
+      "url": "https://zenn.dev/hitori_pm/articles/cc955887656339",
+      "source": "はてなブックマーク",
+      "published": "2026-11-27T13:49:22+00:00",
+      "reading_min": 4,
+      "summary": "AI（Claude Code）に日本語での返答を指示しても、作業を進めるうちに英語が混じる問題が発生しました。\n指示を強化するだけでは不十分だったため、Claude CodeのStopフックを活用し、AIの返答が英語でないかをチェックする仕組みを導入しました。\n英語と判定された場合は、AIに日本語で書き直させることで、指示の遵守を強制的に実現しています。",
+      "actionable_takeaway": "AIの指示遵守に課題がある場合、単なるプロンプト修正だけでなく、Stopフックなどの仕組みを導入し、出力の自動検証と修正を組み込むことを検討しましょう。",
+      "tags": [
+        "AI",
+        "プロンプトエンジニアリング",
+        "Claude"
+      ],
+      "category": "AI・機械学習",
+      "score": 85,
+      "score_reason": "AIの出力制御における実践的な課題とその解決策が具体的に示されており、AI開発や利用における実用性が非常に高いため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 39
+    },
+    {
+      "title": "AIがセルフホスティングを再び楽しくした（ちょうど良いタイミングで）",
+      "url": "https://dev.to/max_quimby/ai-made-self-hosting-fun-again-just-in-time-1l7k",
+      "source": "Dev.to",
+      "published": "2026-11-28T05:33:41+00:00",
+      "reading_min": 8,
+      "summary": "AIエージェントがDocker ComposeやNixOSなどのサーバー設定をコード問題として扱い、セルフホスティングの複雑さを大幅に軽減しました。\nこれにより、これまで週末を要した作業がAIとの対話で半日程度に短縮され、セルフホスティングが実用的な戦略として再評価されています。\n同時に、米空軍のクラウドプラットフォームがハッキングされた事例が報じられ、単一クラウドプロバイダーへの依存リスクが浮き彫りになり、セルフホスティングの重要性が増しています。",
+      "actionable_takeaway": "AIを活用したインフラ設定自動化ツールを積極的に導入し、セルフホスティングの効率化とセキュリティ強化を検討することで、クラウド依存リスクを分散すべきです。",
+      "tags": [
+        "セルフホスティング",
+        "AIエージェント",
+        "DevOps"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 85,
+      "score_reason": "AIによるインフラ設定の簡素化は、セルフホスティングの敷居を下げ、クラウド依存リスク分散という時流に合致しており、実務への影響が大きいと評価しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
       "is_hot": false,
       "hatena_count": 0
     },
@@ -457,8 +615,8 @@
       "url": "https://github.com/convex/convex-backend-skill/issues/64",
       "source": "Hacker News",
       "published": "2026-11-27T18:02:45+00:00",
-      "hn_score": 170,
-      "hn_comments": 51,
+      "hn_score": 264,
+      "hn_comments": 87,
       "reading_min": 1,
       "summary": "Convexの3つのスキルが、ユーザーに通知せずアプリのアイデアをリモートサーバーに送信しているという懸念が提起されました。\nこれらのスキルは、ユーザーの安全ツールに検知されないようコマンドの形状を変更する指示を含んでおり、ユーザーのレビューを困難にしています。\n提案として、アイデア送信前のユーザーへの通知とオプション化、スクリプトのプラグイン内での提供またはハッシュによる固定、分類器に関する指示の削除が挙げられています。",
       "actionable_takeaway": "AIエージェントやプラグインを利用する際は、その動作がユーザーの意図しないデータ送信やセキュリティリスクを伴わないか、提供元の信頼性とコードの透明性を厳しく確認すべきです。",
@@ -542,7 +700,29 @@
       "new_at": "2026-11-28T07:18:03.021160+09:00",
       "first_seen": "2026-11-28T07:18:03.021160+09:00",
       "is_hot": false,
-      "hatena_count": 21
+      "hatena_count": 73
+    },
+    {
+      "title": "zyvop.comで監視していること、そして目覚める価値のあるアラート",
+      "url": "https://dev.to/sanjay_singh_1/what-i-monitor-on-zyvopcom-and-the-alerts-worth-waking-up-for-31l9",
+      "source": "Dev.to",
+      "published": "2026-11-28T05:34:57+00:00",
+      "reading_min": 14,
+      "summary": "ウェブサービスの健全性を確保するため、レイテンシ、トラフィック、エラー、飽和度の4つのゴールデンシグナルを監視しています。\nPrometheus、Alertmanager、Grafanaを独立したサーバーで運用し、プライベートネットワーク内に配置することで監視システムの堅牢性を高めています。\nアラートは訪問者が体感する症状に基づいて設定し、緊急かつ対応が必要な問題のみで通知することで、不必要な覚醒を避けています。",
+      "actionable_takeaway": "ウェブサービスの監視においては、ゴールデンシグナルを重視し、Prometheus/Grafanaなどのツールで独立した監視基盤を構築し、緊急性の高い問題に絞ったアラート設定を行いましょう。",
+      "tags": [
+        "監視",
+        "SRE",
+        "Prometheus"
+      ],
+      "category": "バックエンド・インフラ",
+      "score": 80,
+      "score_reason": "ウェブサービスの安定運用に不可欠な監視のベストプラクティスが具体的に示されており、多くのエンジニアにとって実用的な情報であるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "何が、誰が、いつ：短い推論によるメンタルヘルス安全のための構造化された危害評価",
@@ -632,7 +812,7 @@
       "new_at": "2026-11-27T07:33:14.855920+09:00",
       "first_seen": "2026-11-27T07:33:14.855920+09:00",
       "is_hot": false,
-      "hatena_count": 31,
+      "hatena_count": 33,
       "is_prev_seen": true
     },
     {
@@ -726,7 +906,29 @@
       "new_at": "2026-11-28T07:18:03.021160+09:00",
       "first_seen": "2026-11-28T07:18:03.021160+09:00",
       "is_hot": false,
-      "hatena_count": 81
+      "hatena_count": 100
+    },
+    {
+      "title": "SerpBaseとのGoogle SERP API統合：JSONからドロップインまで",
+      "url": "https://dev.to/mastel_liggin_c1ae9b6af78/google-serp-api-integration-with-serpbase-json-to-drop-in-477b",
+      "source": "Dev.to",
+      "published": "2026-11-28T05:34:17+00:00",
+      "reading_min": 3,
+      "summary": "SerpBaseは、Google検索結果（SERP）をJSON、Markdown、Rawの3形式で取得できるAPIを提供しています。\nAIエージェントやRAGパイプラインへのライブGoogle検索の組み込み、または既存のSEO/eコマーススクレイパーのコスト削減に活用できます。\nAPIキーをヘッダーに含め、タイムアウト設定を行うことで、Google SERPデータを効率的に取得・処理する具体的な統合方法が示されています。",
+      "actionable_takeaway": "Google SERPデータを活用するAIアプリケーションやSEOツールを開発する際は、SerpBaseのようなAPIを利用し、効率的なデータ取得と既存システムへの統合を検討しましょう。",
+      "tags": [
+        "API",
+        "SEO",
+        "AI"
+      ],
+      "category": "Web・フロントエンド",
+      "score": 75,
+      "score_reason": "AIやSEO分野で需要の高いGoogle SERPデータへのアクセス方法を提供しており、具体的なコード例も示されているため、実用性が高いと判断した。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     },
     {
       "title": "コピペでSSHしていた初心者が、仕組みから学び直してみる",
@@ -866,7 +1068,7 @@
       "new_at": "2026-11-28T07:18:03.021160+09:00",
       "first_seen": "2026-11-28T07:18:03.021160+09:00",
       "is_hot": false,
-      "hatena_count": 13
+      "hatena_count": 79
     },
     {
       "title": "DevOps from Zero #1: Linuxとターミナル、シンプルに解説",
@@ -891,6 +1093,50 @@
       "hatena_count": 0
     },
     {
+      "title": "決して修正できないスペルミス",
+      "url": "https://dev.to/ambi_bambi/the-misspelling-you-can-never-fix-511j",
+      "source": "Dev.to",
+      "published": "2026-11-28T05:34:43+00:00",
+      "reading_min": 2,
+      "summary": "HTTPの「Referer」ヘッダーフィールドは、RFC 9110でスペルミス（referrerが正しい）と認識されつつも、互換性のためそのまま定義されています。\nMySQLの「utf8」文字セットも、実際にはUTF-8の全範囲をサポートしないにもかかわらず、長年の利用実績から修正が困難な状況です。\nこれらの事例は、一度広く普及した技術仕様におけるスペルミスや不正確な命名が、互換性の問題から修正不可能になるという課題を示しています。",
+      "actionable_takeaway": "既存の技術仕様や命名に不正確な点があっても、互換性のために修正が難しい場合があることを理解し、新規開発では正確な命名と標準に準拠するよう注意しましょう。",
+      "tags": [
+        "HTTP",
+        "MySQL",
+        "標準化"
+      ],
+      "category": "プログラミング言語",
+      "score": 70,
+      "score_reason": "技術仕様の歴史的経緯と互換性の重要性について興味深い洞察を提供しており、エンジニアの教養として価値があるため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
+      "title": "思考のパズル：機械は本当に考えるのかを問う14章",
+      "url": "https://dev.to/zergskj/the-thinking-puzzle-14-chapters-asking-whether-machines-actually-think-1mmh",
+      "source": "Dev.to",
+      "published": "2026-11-28T05:33:44+00:00",
+      "reading_min": 12,
+      "summary": "AIモデルの推論過程に疑問を抱き、機械が「思考」しているとはどういうことかを問い直す書籍「The Thinking Puzzle」がKindleでリリースされました。\n著者は、AIが自律的な計画や思考を示すと表現される際に、その言葉の意味を本当に理解しているのかという根本的な問いに焦点を当てています。\n本書は、プロンプトのトリックやベンチマークの改善方法ではなく、AIの推論が何を明らかにし、何を証明できないのかを探求する内容です。",
+      "actionable_takeaway": "AIの「思考」や「推論」といった言葉の定義を再考し、モデルの振る舞いを過度に解釈しないよう注意深く評価する視点を持つべきです。",
+      "tags": [
+        "AI倫理",
+        "機械学習",
+        "哲学"
+      ],
+      "category": "AI・機械学習",
+      "score": 70,
+      "score_reason": "AIの根本的な理解と倫理に関する深い議論を促すものであり、技術の進展だけでなくその本質を問う点で重要性が高いと判断しました。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 0
+    },
+    {
       "title": "はじめての Lean",
       "url": "https://unaoya.github.io/lean-intro/",
       "source": "はてなブックマーク",
@@ -911,15 +1157,15 @@
       "new_at": "2026-11-28T07:18:03.021160+09:00",
       "first_seen": "2026-11-28T07:18:03.021160+09:00",
       "is_hot": false,
-      "hatena_count": 135
+      "hatena_count": 259
     },
     {
       "title": "シトロエンのハイドロニューマチックシステム",
       "url": "https://www.citroenet.org.uk/miscellaneous/hydraulics/hydraulics-1.html",
       "source": "Hacker News",
       "published": "2026-11-27T03:10:19+00:00",
-      "hn_score": 75,
-      "hn_comments": 35,
+      "hn_score": 159,
+      "hn_comments": 52,
       "reading_min": 12,
       "summary": "シトロエンのハイドロニューマチックサスペンションは、複雑という評判に反し、実際には非常にシンプルで信頼性が高く、比類ない乗り心地と優れたハンドリングを提供します。\nこのシステムは、ガスをスプリング媒体とし、油圧流体がダンピングとレベリングを行うことで、ガスは圧縮可能で液体は圧縮できないという特性を利用しています。\nエンジン駆動ポンプで油圧システムを加圧し、セルフレベリング、車高調整、パワーステアリング、ブレーキシステムなどを実現しています。",
       "actionable_takeaway": "現代の自動車技術者やメカニックは、過去の革新的な技術から設計思想や問題解決のアプローチを学び、現在のシステム設計やメンテナンスに応用する視点を持つべきです。",
@@ -936,6 +1182,52 @@
       "first_seen": "2026-11-28T07:18:03.021160+09:00",
       "is_hot": false,
       "hatena_count": 0
+    },
+    {
+      "title": "Balatro開発のタイムライン",
+      "url": "https://localthunk.com/blog/balatro-timeline-3aarh",
+      "source": "Hacker News",
+      "published": "2026-11-26T17:20:27+00:00",
+      "hn_score": 206,
+      "hn_comments": 44,
+      "reading_min": 25,
+      "summary": "人気ゲームBalatroの開発者が、約3年間の開発過程を振り返るタイムラインを公開しました。\n開発初期のアイデアからローンチまでの主要な出来事やマイルストーンが詳細に記録されています。\n自身の記憶の整理と、将来の参照源として役立てることを目的としています。",
+      "actionable_takeaway": "自身のプロジェクト開発においても、重要な意思決定やマイルストーンを定期的に記録し、将来の振り返りや教訓に役立てる習慣をつける。",
+      "tags": [
+        "Game Development",
+        "Indie Game",
+        "Project Management"
+      ],
+      "category": "その他",
+      "score": 60,
+      "score_reason": "特定のゲーム開発の個人的な記録であり、技術的な新規性や業界への直接的な影響は限定的だが、開発プロセスの参考にはなる。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 34
+    },
+    {
+      "title": "ノンフライヤーはからあげだけじゃない 夕飯作りラクにしてくれるかも",
+      "url": "https://kaden.watch.impress.co.jp/docs/column/iikoto/2160002.html",
+      "source": "はてなブックマーク",
+      "published": "2026-11-27T07:00:16+00:00",
+      "reading_min": 2,
+      "summary": "ノンフライヤーは「揚げないからあげ」だけでなく、焼き魚やハンバーグなど多様な料理に活用できる万能調理器具です。\n熱風循環によりムラなく火が通り、調理中に見張る必要がないため、他の家事と並行して効率的に夕食準備が可能です。\nバスケットタイプとガラスコンテナタイプがあり、ガラスコンテナは調理中の様子が見やすく、そのまま食卓に出せる利点があります。",
+      "actionable_takeaway": "ノンフライヤーの導入を検討し、公式レシピやSNSでの活用事例を参考に、日々の料理の効率化とレパートリー拡大に役立てましょう。",
+      "tags": [
+        "家電",
+        "調理器具",
+        "時短料理"
+      ],
+      "category": "ハードウェア・ガジェット",
+      "score": 60,
+      "score_reason": "ノンフライヤーの多機能性と家事効率化への貢献は評価できるが、IT技術ニュースとしての新規性や影響度は低いと判断したため。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 72
     },
     {
       "title": "Show HN: bouncemarket – 跳ねるボールのライブ予測市場ゲーム",
@@ -1006,22 +1298,46 @@
       "is_hot": false,
       "hatena_count": 0,
       "is_prev_seen": true
+    },
+    {
+      "title": "シドニーのヒアリ侵入",
+      "url": "https://www.abc.net.au/news/2026-11-25/nsw-government-ramps-up-efforts-to-respond-to-fire-ants-/107424812",
+      "source": "Hacker News",
+      "published": "2026-11-26T01:33:02+00:00",
+      "hn_score": 19,
+      "hn_comments": 8,
+      "reading_min": 2,
+      "summary": "シドニーのオーバーンでヒアリの巣が発見され、当初の想定よりも大規模な侵入が判明しました。\n当局は、より広範なバイオセキュリティ対策と集中的な駆除活動を強化しています。\n輸入貨物が侵入源と疑われており、タスクフォースが結成され発生源の特定が進められています。",
+      "actionable_takeaway": "IT業界とは直接関係ないが、サプライチェーンに関わる企業は、国際物流における生物多様性リスクにも注意を払い、関連規制の遵守を確認する。",
+      "tags": [
+        "環境問題",
+        "バイオセキュリティ",
+        "物流"
+      ],
+      "category": "ビジネス・業界動向",
+      "score": 40,
+      "score_reason": "IT技術ニュースではないため、IT業界への直接的な影響は低いが、サプライチェーンや国際貿易に関わるビジネスには間接的な影響がある。",
+      "analysis_status": "ok",
+      "new_at": "2026-11-28T14:45:24.680356+09:00",
+      "first_seen": "2026-11-28T14:45:24.680356+09:00",
+      "is_hot": false,
+      "hatena_count": 0
     }
   ],
   "briefing": {
-    "edition": "朝刊",
-    "generated_at": "2026-11-28T07:18:03.021160+09:00",
+    "edition": "夕刊",
+    "generated_at": "2026-11-28T14:45:24.680356+09:00",
     "summary_lines": [
-      "GPT 6.2 Astraが歴史的謎を解明し、AIの進化が注目されます。",
-      "GMOペパボの顧客情報漏えいなど、セキュリティ問題が多発しています。",
-      "GitHub Actionsのセキュリティ強化や画像検索技術も進展しています。"
+      "GPT 6.2 Astraが歴史的謎を解明、AIの進化が加速しています。",
+      "GMOペパボで大規模情報漏えい、セキュリティ対策が急務です。",
+      "AI活用における課題と組織変革の可能性が議論されています。"
     ],
     "focus_tags": [
       "AI",
       "セキュリティ",
       "情報漏えい",
-      "GitHub Actions",
-      "LLM"
+      "AI活用",
+      "組織論"
     ]
   }
 }

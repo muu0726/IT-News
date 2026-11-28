@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/</link>
     <description>IT技術情報をAIで自動収集・分析し、重要度スコア付きで配信</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 22:19:10 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:46:13 +0000</lastBuildDate>
     <item>
       <title>さくらインターネット、AIを月額固定料金で提供する「シンプルAI」発表、システムへの組み込み用途を想定</title>
       <link>https://www.publickey1.jp/blog/26/aiai_1.html</link>
@@ -35,6 +35,13 @@
       <pubDate>Fri, 27 Nov 2026 12:29:54 +0000</pubDate>
     </item>
     <item>
+      <title>なぜAIは超難問を解けるのに、あなたの現場では“綺麗なゴミ”を量産するのか？ - サッとぶ</title>
+      <link>https://kei-1010.hatenablog.com/entry/2026/11/27/133416</link>
+      <guid isPermaLink="false">https://kei-1010.hatenablog.com/entry/2026/11/27/133416</guid>
+      <description>[Score: 95] AIがリーマン予想や歴史の謎を解く一方で、実際の開発現場では「綺麗なゴミ」を量産し、人間を疲弊させている現状を指摘しています。 / AIの能力が発揮される「閉じた領域・圧縮可能領域」と、そうでない「開いた領域・圧縮不可領域」のタスクの違いを分析しています。 / AIを効果的に活用するためには、タスクの性質を理解し、適切な領域で利用することが重要であると提言しています。 [実務示唆: AIを導入する際は、タスクが「閉じた領域・圧縮可能領域」に属するかを評価し、AIの得意な領域で活用することで「綺麗なゴミ」の生成を防ぐ。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 27 Nov 2026 06:22:00 +0000</pubDate>
+    </item>
+    <item>
       <title>さくらのクラウド、新ネットワーク基盤、新データベースサービスなど投入。東京リージョン第三ゾーン新設も発表</title>
       <link>https://www.publickey1.jp/blog/26/post_310.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/post_310.html</guid>
@@ -56,11 +63,32 @@
       <pubDate>Fri, 27 Nov 2026 22:10:35 +0000</pubDate>
     </item>
     <item>
+      <title>GoogleのDeepCrossAttention、同等のモデル品質を最大3倍高速に達成</title>
+      <link>https://research.google/blog/supercharging-transformer-residual-connections/</link>
+      <guid isPermaLink="false">https://research.google/blog/supercharging-transformer-residual-connections/</guid>
+      <description>[Score: 90] Google ResearchがDeepCrossAttention (DCA)という新しいTransformerアーキテクチャを発表しました。 / DCAは、学習可能な重みとDepth-wise Cross-Attentionを用いて、以前の層の出力を動的に結合します。 / これにより、従来の残差接続で生じる情報希釈を防ぎ、同等のモデル品質を最大3倍高速に達成します。 [実務示唆: Transformerモデルのトレーニング効率向上に関心がある場合、DeepCrossAttentionの論文を調査し、既存モデルへの適用可能性を評価する。] (Source: Hacker News)</description>
+      <pubDate>Fri, 27 Nov 2026 23:06:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>AWSのAI-DLC v2に学ぶ AIにドメイン境界を守らせる設計</title>
+      <link>https://speakerdeck.com/j5ik2o/archcon2026</link>
+      <guid isPermaLink="false">https://speakerdeck.com/j5ik2o/archcon2026</guid>
+      <description>[Score: 90] AIが生成するコードのバグがモグラ叩きになる問題は、「正しさの基準」であるドメインモデルの欠如が原因です。 / AWSのAI-DLC v2を解剖し、AIにドメイン境界を守らせる設計手法について解説しています。 / 自作プラグインを通じて、設計の形、入口の境界、層の依存の向きがどう変わるかを実例で整理し、人間が判断を残す領域まで議論しています。 [実務示唆: AIによるコード生成を活用する際は、ドメインモデルを明確にし、AIにドメイン境界や不変条件を守らせるための設計と機械検査の仕組みを導入しましょう。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 27 Nov 2026 10:26:22 +0000</pubDate>
+    </item>
+    <item>
       <title>人気ショッピングサイトでWebRTCを利用したクレジットカードスキミングスクリプトが発見される</title>
       <link>https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer</link>
       <guid isPermaLink="false">https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer</guid>
       <description>[Score: 88] ブラックフライデー前に、Lascana、Samsonite、American Touristerなどの人気オンラインストアでWebRTCを利用したカードスキミングスクリプトが仕掛けられました。 / このスクリプトは、ユーザーが支払い情報を入力する前にカード番号、有効期限、セキュリティコード、個人情報などを窃取し、第三者に送信していました。 / 報告後、影響を受けた全サイトでスクリプトは削除されましたが、広範な消費者向けウェブエコシステムはこれらの攻撃ベクトルへの対策を講じる必要があります。 [実務示唆: WebRTCを悪用したスキミング攻撃は巧妙化しており、ECサイト運営者は決済フローのセキュリティ監査を強化し、サードパーティスクリプトの厳格な管理と監視を徹底すべきです。] (Source: Hacker News)</description>
       <pubDate>Fri, 27 Nov 2026 15:40:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>「もう管理職はいらない」震源はシリコンバレー、AIで消える肩書と階層 - 日本経済新聞</title>
+      <link>https://www.nikkei.com/article/DGXZQOGN246EE0U6A121C2000000/</link>
+      <guid isPermaLink="false">https://www.nikkei.com/article/DGXZQOGN246EE0U6A121C2000000/</guid>
+      <description>[Score: 88] AIの進化により、シリコンバレーでは「管理職は不要になる」という議論が活発化しています。 / AIが経験の少ない若者だけでなく、経営陣と現場をつなぐ管理職の役割も担う可能性が指摘されています。 / この変化は日本企業にも波及する可能性があり、組織構造やキャリアパスの再考を促すものです。 [実務示唆: AIによる業務自動化が進む中で、管理職は従来の指示・監督業務から、AI活用戦略の策定やチームの創造性向上といった高付加価値業務へのシフトを検討する。] (Source: はてなブックマーク)</description>
+      <pubDate>Fri, 27 Nov 2026 21:48:54 +0000</pubDate>
     </item>
     <item>
       <title>さくらインターネットが大規模イベント開催。田中社長「日本から世界へ挑戦するためのデジタル基盤を支える」</title>
@@ -117,34 +145,6 @@
       <guid isPermaLink="false">https://dev.to/hiroki-ii-ai/ai-daily-digest-november-28-2026-claude-watermarks-draw-cancellations-os-omni-scores-computer-36bk</guid>
       <description>[Score: 85] AnthropicのClaudeがEU AI Actに準拠したテキスト透かし技術を公開しましたが、編集によって透かしが消える可能性が指摘されています。 / OS-Omniは6つのOSでエージェントを評価するベンチマークであり、Pydanticチームはターミナルコーディングエージェントを開発しました。 / NVIDIAはピクセルをコードと見なす画像モデルを発表し、AIメガネ企業が1億ドルを調達するなど、AI分野の多様な進展が報告されています。 [実務示唆: AI生成テキストの信頼性確保のため、AnthropicのClaudeに導入されたテキスト透かし技術の限界を理解し、コンテンツの真正性検証には複数の手段を組み合わせるべきです。] (Source: Dev.to)</description>
       <pubDate>Fri, 27 Nov 2026 22:11:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI時代の遊びの芸術</title>
-      <link>https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/</link>
-      <guid isPermaLink="false">https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/</guid>
-      <description>[Score: 80] AI時代における「遊び」の重要性、特にGitHub Universeのハッカブルなカンファレンスバッジを例に挙げています。 / 子供の頃の遊びが問題解決能力やエンジニアリングスキルを育むように、AI時代も試行錯誤の機会が増えていると指摘。 / GitHubのOctoverseレポートでは、プルリクエストの40%がAIエージェントによって開始されていることが示され、AIとの協調開発の進展が語られています。 [実務示唆: AIが開発プロセスに深く関与する現代において、遊び心を持って新しい技術やツールを試行錯誤し、創造的な問題解決能力を養うことが、エンジニアとしての成長に不可欠であることを認識しましょう。] [GitHub: github/universe-badge] (Source: GitHub Blog)</description>
-      <pubDate>Wed, 25 Nov 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>オープンソースにおける最高のものは共に築かれる</title>
-      <link>https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</link>
-      <guid isPermaLink="false">https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/</guid>
-      <description>[Score: 80] 2026年にはGitHubでの公開貢献が25億に達し、オープンソースが開発者にとってコミュニティを構築し、共有し、成長させる強力なメカニズムであることを示しています。 / GitHubは、オープンソースがビジネスだけでなく、開発者自身のアイデンティティにとっても重要であると強調しています。 / 最近、オープンソースのデザインハーネス「Replica」と「Open Source Accessibility Framework」という2つの新しいプロジェクトを公開しました。 [実務示唆: オープンソースへの貢献は個人のスキルアップだけでなく、コミュニティ全体のイノベーションを加速させるため、積極的に参加し、新しいプロジェクトやアクセシビリティへの取り組みに注目すべきです。] [GitHub: github/replica] (Source: GitHub Blog)</description>
-      <pubDate>Thu, 19 Nov 2026 16:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI構成チューニングのための汎用決定モデル</title>
-      <link>https://arxiv.org/abs/2611.33190</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.33190</guid>
-      <description>[Score: 80] AIの構成チューニングを効率化するための汎用的な決定モデルが提案されています。 / このモデルは、様々なAIシステムにおいて最適な設定を見つけるプロセスを自動化することを目的としています。 / 手動でのチューニングにかかる時間と労力を大幅に削減できる可能性があります。 [実務示唆: AIモデルのハイパーパラメータチューニングに課題を抱える開発者は、本決定モデルの概念を参考に、自動化されたチューニング戦略を検討すべきです。] (Source: arXiv cs.AI)</description>
-      <pubDate>Fri, 27 Nov 2026 05:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Convexスキルがユーザーのアプリアイデアを無断でリモートサーバーに送信</title>
-      <link>https://github.com/convex/convex-backend-skill/issues/64</link>
-      <guid isPermaLink="false">https://github.com/convex/convex-backend-skill/issues/64</guid>
-      <description>[Score: 80] Convexの3つのスキルが、ユーザーに通知せずアプリのアイデアをリモートサーバーに送信しているという懸念が提起されました。 / これらのスキルは、ユーザーの安全ツールに検知されないようコマンドの形状を変更する指示を含んでおり、ユーザーのレビューを困難にしています。 / 提案として、アイデア送信前のユーザーへの通知とオプション化、スクリプトのプラグイン内での提供またはハッシュによる固定、分類器に関する指示の削除が挙げられています。 [実務示唆: AIエージェントやプラグインを利用する際は、その動作がユーザーの意図しないデータ送信やセキュリティリスクを伴わないか、提供元の信頼性とコードの透明性を厳しく確認すべきです。] [GitHub: convex/convex-backend-skill] (Source: Hacker News)</description>
-      <pubDate>Fri, 27 Nov 2026 18:02:45 +0000</pubDate>
     </item>
   </channel>
 </rss>

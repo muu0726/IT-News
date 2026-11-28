@@ -5,7 +5,7 @@
     <link>https://muu0726.github.io/IT-News/feed_web.xml</link>
     <description>Web・フロントエンド・バックエンド・インフラに関する最新技術ニュース（スコア上位）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 22:19:10 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:46:13 +0000</lastBuildDate>
     <item>
       <title>さくらのクラウド、新ネットワーク基盤、新データベースサービスなど投入。東京リージョン第三ゾーン新設も発表</title>
       <link>https://www.publickey1.jp/blog/26/post_310.html</link>
@@ -42,6 +42,20 @@
       <pubDate>Fri, 27 Nov 2026 22:15:31 +0000</pubDate>
     </item>
     <item>
+      <title>Unkernel: WebAssemblyにコンパイルされたリアルなLinuxカーネル</title>
+      <link>https://unkernel.dev</link>
+      <guid isPermaLink="false">https://unkernel.dev</guid>
+      <description>[Score: 85] Unkernelは、実際のLinuxカーネルをWebAssemblyにコンパイルしたプロジェクトです。 / これにより、わずか1秒未満でシェルを起動できる高速な起動を実現しています。 / WebAssembly上でLinuxカーネルが動作することで、新しい実行環境の可能性が広がります。 [実務示唆: WebAssembly環境でのOSやシステムソフトウェアの実行可能性を探り、軽量な仮想化やエッジコンピューティングへの応用を検討する。] [GitHub: unkernel-community/unkernel] (Source: Hacker News)</description>
+      <pubDate>Sat, 28 Nov 2026 03:19:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>AIがセルフホスティングを再び楽しくした（ちょうど良いタイミングで）</title>
+      <link>https://dev.to/max_quimby/ai-made-self-hosting-fun-again-just-in-time-1l7k</link>
+      <guid isPermaLink="false">https://dev.to/max_quimby/ai-made-self-hosting-fun-again-just-in-time-1l7k</guid>
+      <description>[Score: 85] AIエージェントがDocker ComposeやNixOSなどのサーバー設定をコード問題として扱い、セルフホスティングの複雑さを大幅に軽減しました。 / これにより、これまで週末を要した作業がAIとの対話で半日程度に短縮され、セルフホスティングが実用的な戦略として再評価されています。 / 同時に、米空軍のクラウドプラットフォームがハッキングされた事例が報じられ、単一クラウドプロバイダーへの依存リスクが浮き彫りになり、セルフホスティングの重要性が増しています。 [実務示唆: AIを活用したインフラ設定自動化ツールを積極的に導入し、セルフホスティングの効率化とセキュリティ強化を検討することで、クラウド依存リスクを分散すべきです。] (Source: Dev.to)</description>
+      <pubDate>Sat, 28 Nov 2026 05:33:41 +0000</pubDate>
+    </item>
+    <item>
       <title>止められないDBをAWS DMSで移行してハマったこと（RDS for Oracle）</title>
       <link>https://zenn.dev/kiri0728/articles/c8d5f349b047dd</link>
       <guid isPermaLink="false">https://zenn.dev/kiri0728/articles/c8d5f349b047dd</guid>
@@ -49,11 +63,25 @@
       <pubDate>Fri, 27 Nov 2026 02:37:34 +0000</pubDate>
     </item>
     <item>
+      <title>zyvop.comで監視していること、そして目覚める価値のあるアラート</title>
+      <link>https://dev.to/sanjay_singh_1/what-i-monitor-on-zyvopcom-and-the-alerts-worth-waking-up-for-31l9</link>
+      <guid isPermaLink="false">https://dev.to/sanjay_singh_1/what-i-monitor-on-zyvopcom-and-the-alerts-worth-waking-up-for-31l9</guid>
+      <description>[Score: 80] ウェブサービスの健全性を確保するため、レイテンシ、トラフィック、エラー、飽和度の4つのゴールデンシグナルを監視しています。 / Prometheus、Alertmanager、Grafanaを独立したサーバーで運用し、プライベートネットワーク内に配置することで監視システムの堅牢性を高めています。 / アラートは訪問者が体感する症状に基づいて設定し、緊急かつ対応が必要な問題のみで通知することで、不必要な覚醒を避けています。 [実務示唆: ウェブサービスの監視においては、ゴールデンシグナルを重視し、Prometheus/Grafanaなどのツールで独立した監視基盤を構築し、緊急性の高い問題に絞ったアラート設定を行いましょう。] (Source: Dev.to)</description>
+      <pubDate>Sat, 28 Nov 2026 05:34:57 +0000</pubDate>
+    </item>
+    <item>
       <title>さくらインターネット、AWSやAzureなど他クラウドでバックアップ可能な新ストレージ「Object Storage Suite」（OS2）発表</title>
       <link>https://www.publickey1.jp/blog/26/awsazureobject_storage_suiteos2.html</link>
       <guid isPermaLink="false">https://www.publickey1.jp/blog/26/awsazureobject_storage_suiteos2.html</guid>
       <description>[Score: 75] さくらインターネットが、マルチクラウドバックアップに対応する大容量ストレージサービス「Object Storage Suite」（OS2）を発表しました。 / ペタバイトクラスのデータに対応し、AWS、Google Cloud、Microsoft Azureなどへのバックアップが可能です。 / データソブリンティやランサムウェア対策を考慮し、2027年中のリリースを目指しています。 [実務示唆: マルチクラウド環境で大容量データのバックアップを検討している企業は、OS2の料金体系や機能詳細を注視し、データ保全戦略への組み込みを検討すべきです。] (Source: Publickey)</description>
       <pubDate>Thu, 26 Nov 2026 15:42:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>SerpBaseとのGoogle SERP API統合：JSONからドロップインまで</title>
+      <link>https://dev.to/mastel_liggin_c1ae9b6af78/google-serp-api-integration-with-serpbase-json-to-drop-in-477b</link>
+      <guid isPermaLink="false">https://dev.to/mastel_liggin_c1ae9b6af78/google-serp-api-integration-with-serpbase-json-to-drop-in-477b</guid>
+      <description>[Score: 75] SerpBaseは、Google検索結果（SERP）をJSON、Markdown、Rawの3形式で取得できるAPIを提供しています。 / AIエージェントやRAGパイプラインへのライブGoogle検索の組み込み、または既存のSEO/eコマーススクレイパーのコスト削減に活用できます。 / APIキーをヘッダーに含め、タイムアウト設定を行うことで、Google SERPデータを効率的に取得・処理する具体的な統合方法が示されています。 [実務示唆: Google SERPデータを活用するAIアプリケーションやSEOツールを開発する際は、SerpBaseのようなAPIを利用し、効率的なデータ取得と既存システムへの統合を検討しましょう。] (Source: Dev.to)</description>
+      <pubDate>Sat, 28 Nov 2026 05:34:17 +0000</pubDate>
     </item>
     <item>
       <title>コピペでSSHしていた初心者が、仕組みから学び直してみる</title>
